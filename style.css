@@ -3,39 +3,56 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Header */
+/* SIDE NAV */
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    border-bottom: 0.5px solid blue;
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+
+  /* PRESENTATION */
+
+  .presentation {
+    height: 100vh;
+    margin-left: 20px;
+    margin-top: 200px;
+    position: relative;
+  }
+
+ .title {
+      text-align: left;
+  }
+
+ .undertext {
+    text-align: left;
 }
 
-.logo img {
-    border-radius: 50%;
-    width: 200px;
-    margin: 50px;
+.name {
+    color: red;
+    font-weight: 800;
 }
 
-.navbar {
-    border-bottom: 0.5px solid blue;
+.fa-bars {
+    position: absolute;
+    top: -179px;
+    right: 18px;
+    width: 20px;
 }
 
-.navbar a {
-    text-decoration: none;
-}
-
-/* PORTFOLIO CONTAINER */
-
-.portfolio-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.portfolio-card {
-
-}
+/* CONTACT BUTTON */
+ .contact-btn {
+     border: 0.5px solid blue;
+     border-radius: 5px;
+     background-color: transparent;
+     padding: 10px;
+     margin-top: 30px;
+ }
