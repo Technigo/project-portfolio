@@ -7,10 +7,10 @@ const sideNav = document.getElementById("sidenav");
 
 const hamburgerToggle = (hamburgerIcon) => {
     hamburgerIcon.classList.toggle("fa-times");
-    if (hamburgerIcon === "fa-bars") {
-        sideNav.style.display = "none";
-    } else {
+    if (sideNav.style.display === "none") {
         sideNav.style.display = "block";
+    } else {
+        sideNav.style.display = "none";
     }
 }
 
