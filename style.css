@@ -1,0 +1,41 @@
+header {
+    height: 500px;
+    background-color: blue;
+    padding: 40px 36px 0 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.icon {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.header-text {
+    align-self: flex-start;
+}
+
+.profile-pic {
+    background-image: url(/assets/linkedin.svg);
+    border: 3px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -30px;
+}
+
+@media (min-width: 700px) {
+    header {
+        padding: 100px 100px 0 100px;
+    }
+    .profile-pic {
+        width: 330px;
+        height: 330px;
+    }
+}
