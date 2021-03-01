@@ -1,351 +1,64 @@
+/* GENERIC STYLING */
+
 body {
     margin: 0;
+}
+
+h1 {
     font-family: 'Roboto', sans-serif;
-    background-color: #1d1d1d;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    background-color: #fb4036;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+    padding: 3px;
+}
+
+/* HEADER */
+
+.welcome {
+    height: 100vh;
+}
+
+.header-img {
+    height: 60vh;
     position: relative;
 }
 
-/* GENERIC STYLING   */
-.h1-text {
-    text-align: left;
-    padding-top: 150px;
-    padding-left: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
+.header-text {
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
-.h1-text .typewriter {
-   font-weight: 900;
-   font-size: 3.5em;
-}
-
-.h1-text .typewriter .letter {
-   display: inline-block;
-   line-height: 1em;
-}
- 
- .name {
-   display: inline-block;
-   line-height: 1em;
-   font-family: 'Shadows Into Light', cursive;
- }
- 
-
-.p-text {
-    text-align: left;
-    padding: 20px;
-    color: white;
- }
-
-
-.fa-bars {
+.header-h1 {
     position: absolute;
-    top: 20px;
-    right: 35px;
-    width: 20px;
-    font-size: 35px;
+    top: 20%;
+    left: 8%;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+.header-h3 {
     color: white;
-}
-
-.fa-times {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    width: 20px;
-    font-size: 35px;
-}
-
-.hamburger {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-/* SIDE NAV */
-
-.sidenav {
-    padding-top: 30px;
-    height: 100vh;
-    display: none;
-    background-color: black;
-    width: 100%;
-    z-index: 100;
-    position: fixed;
-  }
-
-.sidenav img {
-    border-radius: 50%;
-    height: 33%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.logo {
-    padding-bottom: 30px;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    /* background-color: #181818; */
-    padding-bottom: 30px;
-}
-
-.navbar a {
-    text-decoration: none;
     font-size: 25px;
-    margin-top: 32px;
-    color: white;
-    border-bottom: 0.1px solid rgb(104, 101, 101);
-}
-
-/* PRESENTATION */
-
-.presentation {
-    height: 100vh;
-    position: relative;
-    background-color: black;
-}
-
-.name {
-    color: red;
-    font-weight: 800;
-}
-
-/* PRESENTATION BUTTONS */
-
-.button-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
- .presentation-btn {
-    border: 0.5px solid red;
-    background-color: transparent;
-    padding: 10px 10px;
     position: absolute;
-    top: 400px;
-    left: 20px;
+    top: 45%;
+    left: 8%; 
+}
+
+.header-h5 {
     color: white;
- }
-
- .presentation-btn:last-child {
-    left: 165px;
- }
-
- /* PORTFOLIO-CONTAINER */
-
- .portfolio-container {
-    height: 100vh;
-    background-color: #343434;
-    position: relative;
-    margin: 0;
- }
-
- /* SEE MORE BUTTON */
- .portfolio-btn {
-    border: 0.5px solid red;
-    background-color: transparent;
-    padding: 10px 20px;
+    font-size: 20px;
     position: absolute;
-    top: 400px;
-    left: 20px;
-    color: white;
- }
-
- /* GALLERY SECTION */
-
- .gallery {
-   height: 100vh;
-   background-color: gray;
-   position: relative;
-   margin: 0;
+    top: 18%;
+    left: 8%;
 }
 
-.gallery h1 {
-   padding-top: 80px;
-   padding-bottom: 20px;
-}
+/* TECH SECTION */
 
-.gallery-images {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-.gallery-images img {
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;
-}
-
- /* SKILLS SECTION */
-
- .skills {
-    height: 100vh;
-    background-color: black;
- }
-
- .skills-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
- }
-
- .skills-icons .fab {
-    font-size: 40px;
-    color: #e5eef5;
- }
-
- /* ABOUT SECTION */
-
- .about {
-    height: 100vh;
-    background-color: #343434;
- }
- 
- /* CONTACT SECTION */
-
- .contact-section {
-    height: 100vh;
-    background-color: black;
- }
-
- .contact-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
- }
-
- .contact-info .fab {
-    font-size: 40px;
-    color: #e5eef5;
- }
-
- /* MEDIA QUERIES */
-
- /* Mobile */
-
- @media (min-width: 414px) and (max-width: 768px) {
-    .h1-text {
-        padding-left: 40px;
-    }
-    
-    .p-text {
-        padding: 40px;
-     }
-
-     .presentation-btn {
-        left: 40px;
-     }
-    
-     .presentation-btn:last-child {
-        left: 180px;
-     }
-
-     .portfolio-btn {
-        left: 40px;
-     }
- }
-
- /* Tablet */
- @media (min-width: 768px) and (max-width: 1024px) {
-    .h1-text {
-        padding-left: 40px;
-        font-size: 40px;
-    }
-    
-    .p-text {
-        padding: 40px;
-        font-size: 30px;
-     }
-
-     .presentation-btn {
-        padding: 20px 20px;
-        top: 580px;
-        left: 45px;
-        font-size: 20px;
-     }
-    
-     .presentation-btn:last-child {
-        left: 340px;
-        font-size: 20px;
-     }
-
-     .portfolio-btn {
-        padding: 20px 20px;
-        left: 40px;
-        font-size: 20px;
-        top: 530px;
-     }
-
-     .skills-icons .fab {
-        font-size: 60px;
-        padding-top: 70px;
-     }
-
-     .contact-info .fab {
-        font-size: 60px;
-        padding-top: 70px;
-     }
- }
-
- /* Desktop */
-
- @media (min-width: 1025px) {
-     .fa-bars {
-        display: none;
-    }
-    
-    .fa-times {
-        display: none;
-    }
-
-    .sidenav {
-        display: block;
-    }
-
-     .h1-text {
-        padding-left: 80px;
-        font-size: 40px;
-    }
-    
-    .p-text {
-        padding: 80px;
-        font-size: 30px;
-     }
-
-     .presentation-btn {
-        padding: 20px 20px;
-        top: 580px;
-        left: 80px;
-        font-size: 20px;
-     }
-    
-     .presentation-btn:last-child {
-        left: 340px;
-        font-size: 20px;
-     }
-
-     .portfolio-btn {
-        padding: 20px 20px;
-        left: 80px;
-        font-size: 20px;
-        top: 530px;
-     }
-
-     .skills-icons .fab {
-        font-size: 60px;
-        padding-top: 70px;
-     }
-
-     .contact-info .fab {
-        font-size: 60px;
-        padding-top: 70px;
-     }
- }
