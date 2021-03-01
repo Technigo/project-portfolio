@@ -1,18 +1,19 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
     margin: 0;
-    width: 100%;
-    
 }
+
 
 /*****TOP SECTION*****/
 header{
     display: flex;
     position: relative; 
-    background-color: pink;
-    width:100%; 
+    background-color: pink; 
     height: 500px;
+    width:100%;
+    border: solid 2px;
 }
 
 .top-media-links{
@@ -23,12 +24,49 @@ header{
     right: 15%;
 }
 
+.header-icon{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.icon-linkedin{
+    cursor: pointer;
+    border: #ffffff solid 3px;
+    border-radius: 50%;
+}
 .top-name-description{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     position: absolute;
-    top:40%;
+    top:35%;
     left: 20%;
+    color: white;
+    
+}
+
+.full-name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.full-name h2{
+    font-weight: 400; 
+}
+
+.full-name span{
+    font-weight: 700;
+}
+.job-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.job-title h2{
+    margin-top:0;
+    margin-bottom:10px;
 }
 
 .top-profile-picture{
@@ -49,6 +87,10 @@ header{
     align-items: center;
     background-color: gray;
     width:100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    line-height:29px;
+    font-size:17px;
 }
 
 .summary{
@@ -56,6 +98,15 @@ header{
     margin: 30px;
     padding: 10px;
 }
+
+.start-image{
+    width: 55px;
+    height: 11px;
+    color: white;
+}
+
+
+/******TECH SECTION*******/
 
 .tech-section{
    display: flex;
@@ -69,13 +120,129 @@ header{
 
 .featured-projects-container{
     display: grid; 
-    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 10px; 
-    margin: 10%;
+    margin: 2%;
+    border: solid 2px;
+    justify-items: center;
+}
+.featured-projects-section h4{
+ text-align: center;
+}
+
+.project-card{
+    width: 327px;
+    border: solid 2px;
+}
+
+.project-card a{
+        text-decoration: none;
+        color: black;
+}
+
+
+.picture {
+    width: 100%;
+    height: 212px;
+}
+
+.tech-attributes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 9px;
+}
+
+.tech-attributes div{
+    margin: 3px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: gray;
+}
+/*********OTHER PROJECTS******/
+
+.other-projects-section{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    border: solid 2px;
+}
+.another-project-card{
+    width: 327px;
+    border: solid 2px;
+}
+
+/*******MY THOUGHTS SECTION*****/
+.my-thoughts-section {
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-gap: 10px; 
+    margin: 2%;
+    border: solid 2px;
+    justify-items: center;
+}
+
+.my-thoughts-card {
+    width: 327px;
+    border: solid 2px;
+}
+
+/*******MORE THOUGHTS SECTION*****/
+.more-thoughts-section{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    border: solid 2px;
+}
+.more-thoughts-card{
+    width: 327px;
+    border: solid 2px;
+}
+
+/********MY SKILLS SECTION*****/
+.my-skills-section{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px;
+    margin:2%;
+}
+
+.skills-container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/********FOR MORE********/
+.for-more-section{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    border: solid 2px;
+}
+
+/********FOOTER********/
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: red;
     width: 100%;
 }
 
-/* .project-card{
-    height: 200px;
-    max-width: 200px;
-} */
+footer p{
+    margin:0;
+}
