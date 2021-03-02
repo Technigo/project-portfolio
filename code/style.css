@@ -82,11 +82,12 @@ body{
 }
 
 .content-container{
-  max-width: 1100px; 
+  max-width: 1100px;
+  padding: 20px; 
 }
 
 .intro-section{
-  padding: 30px 10px;
+  padding: 30px 20px;
 }
 .fas {
   margin: 0;
@@ -97,9 +98,11 @@ body{
   display: inline;
   width: 100%;
 }
-
-.tech{
-  padding: 10px;
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 .tech-section{
   display: flex;
@@ -119,17 +122,11 @@ body{
 .tech-text{
   text-align: center;
 }
-.section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
+
 .featured {
   background-color: #F4F4F4;
 }
 .featured-projects{
-  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -215,7 +212,6 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10px;
 }
 .red{
   color: #FA382F;
@@ -235,6 +231,63 @@ body{
 .tags-container{
   width: 60%;
   margin-top: 10px;
+}
+
+/* Thoughts section */
+.thoughts-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.thought-card{
+  width: 100%;
+  text-decoration: none;
+  line-height: 1.5em;
+  color: black;
+  flex-wrap: wrap;
+}
+.thought-image {
+  width: 100%;
+  height: 210px;
+  margin-bottom: 30px;
+}
+.date, .thought-title {
+  font-family: Roboto;
+}
+.date {
+  font-size: 17px;
+  color:#FA382F;
+  font-weight: 400;
+  margin: 0;
+}
+.thought-title {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+}
+.thought-description {
+  font-size: 17px;
+  margin: 0 0 20px 0;
+}
+/* More thoughts */
+
+.more{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.more-cards{
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.more-cards .date, .thought-title {
+  font-size: 17px;
+  text-decoration: underline;
+  line-height: 1.5em;
 }
 /* Mobile devices  */
 @media(min-width: 350px) {
@@ -313,17 +366,29 @@ body{
     padding: 7px;
     width: 30px;
   }
-  .project-card{
+  .section-header {
+    font-size: 36px;
+  }
+  .project-subtitle, .project-description{
+    font-size: 20px;
+  }
+  .project-tag{
+    font-size: 16px;
+  }
+  .project-card, .thought-card {
     width: 47%;
   }
   .last {
     display: flex;
   }
-  .project-image {
+  .project-image, .thought-image {
     height: 250px;
   }
   .other-card {
     width: 100%;
+  }
+  .more-cards .date, .thought-title{
+    font-size: 25px;
   }
 }
 /* iPadPro, small screen, laptop  */
@@ -362,7 +427,16 @@ body{
     top: 330px;
     left: 60vw;
   }
-  .project-image {
+  .section-header {
+    font-size: 48px;
+  }
+  .project-subtitle, .project-description{
+    font-size: 25px;
+  }
+  .project-tag {
+    font-size: 18px;
+  }
+  .project-image, .thought-image {
     height: 310px;
   }
 
