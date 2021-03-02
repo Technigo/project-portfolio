@@ -11,7 +11,12 @@ h1, h3, h5 {
 
 p {
     font-family: 'Montserrat', sans-serif;
-    padding-left: 10px;
+    padding: 0 24px;
+}
+
+.text {
+    font-size: 17px;
+    line-height: 1.5;
 }
 
 .title {
@@ -28,13 +33,14 @@ p {
 /* HEADER */
 
 .welcome {
-    height: 100vh;
     background-color: #F4F4F4;
 }
 
 .header-img {
     height: 70vh;
     position: relative;
+    overflow: hidden;
+    width: 100vw;
 }
 
 .header-text {
@@ -47,12 +53,12 @@ p {
     top: 20%;
     left: 8%;
     font-weight: 400;
-    font-size: 65px;
+    font-size: 50px;
 }
 
 .header-h3 {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
     top: 45%;
     left: 8%; 
@@ -64,47 +70,34 @@ p {
 
 .header-h5 {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     position: absolute;
     top: 18%;
     left: 8%;
 }
 
-.text {
-    font-size: 22px;
-}
-
-.link-container {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 30px;
-    width: 30%;
+.icons-svg {
     position: absolute;
-    top: 37;
-    right: 16;
-}
-
-.link-header {
-    border: 0.5 solid black;
-    padding: 5px;
-}
-
-.link-header .fab {
-    color: black;
+    top: 48px;
+    right: 28px;
 }
 
 .portrait {
     border-radius: 50%;
     width: 30%;
     position: absolute;
-    bottom: 210px;
+    bottom: 155px;
     right: 25px;
+}
+
+.welcome .text {
+    padding: 49px 24px 43px 24px;
 }
 
 /* TECH SECTION */
 
 .tech {
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .tech p {
@@ -115,7 +108,10 @@ p {
 
 .projects {
     background-color: #F4F4F4;
-    height: 100vh;
+}
+
+.project-div {
+    padding-bottom: 30px;
 }
 
 .project-div img {
@@ -124,6 +120,11 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
+.project-div h3 {
+    color: red;
+}
+
 
 .tag-container {
     display: flex;
@@ -134,7 +135,6 @@ p {
 .code-tag {
     background-color: #fde3ea;
     font-size: 10px;
-    padding-right: 10px;
     margin-left: 10px;
 }
 
@@ -142,38 +142,66 @@ p {
 
 .other {
     background-color: #F4F4F4;
-    height: 100vh;
+    /* height: 100vh; */
+    padding-bottom: 40px;
+}
+
+.other .other-h3 {
+    color: red;
+    text-align: center;
 }
 
 /* MY THOUGHTS SECTION */
 
 .my-thoughts {
-    height: 100vh;
+    /* height: 100vh; */
+}
+
+.my-thougths-img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.read-more-arrow {
+    color: red;
+    font-weight: bold;
 }
 
 /* MORE THOUGHTS SECTION */
 
+.date-style {
+    color: red;
+}
 
 /* SKILLS SECTION */
 
 .skills {
     background-color: #F4F4F4;
-    height: 100vh;
+    /* height: 100vh; */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-box {
+    display: inline-block;
 }
 
 /* FOR MORE SECTION */
 
 .for-more {
-    height: 100vh;
+    /* height: 100vh; */
 }
 
-.link {
-    border: 0.5 solid red;
-    padding: 5px;
-}
-
-.fab {
-    color: red;
+.link-div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 60px 0;
 }
 
 /* CONTACT */
@@ -181,5 +209,8 @@ p {
 .contact {
     background-color: blue;
     color: white;
+    text-align: center;
+    padding: 60px 24px 84px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
 }
-
