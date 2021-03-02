@@ -1,10 +1,18 @@
 /*Mobile*/
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   margin: 0;
 }
 
 .header-section {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .logo-section {
   position: absolute;
@@ -12,13 +20,17 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: 80px 25px;
 }
 
 .logo {
   width: 30px;
+  margin: 5px;
 }
 .text-in-header-container {
-  margin: 0;
+  margin: 0 0 0 30px;
   position: absolute;
   top: 0;
   left: 0;
@@ -26,23 +38,34 @@ body {
   right: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   color: white;
 }
 
 .name-text {
+  display: flex;
+  margin: 0;
+}
+.portfolio {
+  font-size: 14px;
+}
+.surname {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
-/*.profession-text {
+.profession-text {
   margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  display: flex;
+  flex-direction: column;
 }
-*/
+
+.profession-frontend {
+  display: flex;
+}
+.profession-developer {
+  display: flex;
+}
 .picture-in-header-container {
   position: absolute;
   top: 0;
@@ -53,17 +76,59 @@ body {
   align-items: flex-end;
   justify-content: flex-end;
   margin-right: 25px;
+  margin-bottom: -20px;
 }
 .self-portait {
   width: 140px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 2px solid white;
 }
 .header-image {
   width: 100vw;
-  height: 60vh;
+  height: 50vh;
   object-fit: cover;
 }
+/*Main*/
+/*Section 1 about me*/
+.grey-container-1 {
+  width: 100vw;
+  height: 40vh;
+  background-color: rgb(238, 236, 236);
+}
+
+.text-about-me {
+  margin-top: 0;
+  padding: 30px 20px;
+}
+
+/*Section 2 Tech skills*/
+
+.white-container-1 {
+  width: 100vw;
+  height: 30vh;
+}
+
+/*Section 3 Featured Projects*/
+.grey-container-2 {
+  width: 100vh;
+  background-color: rgb(238, 236, 236);
+}
+
+/*Section 4 Skills*/
+
+.skills-container {
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
 
 /*Tablet*/
 
