@@ -1,52 +1,154 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 /**********Header**********/
 .header-section {
-/*position: absolute;*/
+/* position: absolute; */
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-gap: 1em;
 height: 520px;
-width: 375px;
-left: 0px;
-top: 0px;
-border-radius: 0px;
-background-color: cornflowerblue;
+width: 100%;
+/* left: 0px;
+top: 0px; */
+/* background-image: url(./images/portfolio-header.jpg); */
+background-size: cover;
+background-color: darkslateblue;
+color: white;
 }
 
 .nav-icons {
+border: #999 solid 2px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-column: 6;
+grid-row: 1;
+padding: 1em;
+align-content: baseline;
+}
 
+.nav-icons div {
+  border: #999 solid 2px;
 }
 
 .header-text {
+  border: #999 solid 2px;
+  grid-row: 3/4;
+  grid-column: 2/5;
+}
 
+.profile-pic {
+  border-radius: 50%;
+  grid-column: 6;
+  grid-row: 4;
+  position: relative;
+  top: 20px;
 }
 
 /**********Main***********/
-.main-content {
+.main-content section:nth-child(odd) {
+background-color: whitesmoke;
+}
 
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding: 1em;
 }
 
 .intro {
-
+  border: #999 solid 2px;
 }
 
 .tech {
-
+ text-align: center;
 }
 
-.featured-projects {
-  
+.projects {
+  border: #999999 solid 2px;
 }
-
-.other-projects {
-
+.project-article img {
+ width: 327px;
+ height: auto;
 }
 
 .my-thoughts {
-
+  border: #999 solid 2px;
 }
 
 .my-skills {
+  border: #999 solid 2px;
+}
 
+.for-more {
+  border: #999 solid 2px;
 }
 
 /**********Footer**********/
 .contact {
+  border: #999 solid 2px;
+}
 
+/**********Text styling**********/
+h4 {
+  color: darkslateblue;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+h4 span {
+  background-color: darkslateblue;
+  color: white;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+p span {
+  color: darkslateblue;
+  font-weight: bold;
+}
+
+/**********Media**********/
+@media (min-width: 992px) {
+
+/**********Header**********/  
+  .profile-pic {
+    width: 250px;
+  }
+
+  /**********Text styling**********/
+  h4 {
+    font-size: 48px;
+  }
+    
+  h3 {
+    font-size: 38px;
+  }
+
+  p {
+    font-size: 30px;
+  }
 }
