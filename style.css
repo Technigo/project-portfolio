@@ -4,6 +4,19 @@ body {
   margin: 0;
 }
 
+.main-container {
+  max-width: 1200px;
+}
+
+
+*, *:before, *::after {
+  box-sizing: border-box;
+}
+
+
+/**HEADER**/
+
+
 .header {
   display: flex;
   /* height: 360px; */
@@ -26,9 +39,7 @@ body {
   height: 500px;*/
 /*} */
 
-*, *:before, *::after {
-  box-sizing: border-box;
-}
+
 
 .profile-img {
   width: 140px;
@@ -50,8 +61,8 @@ body {
   right: 10%;*/
 
   align-self: flex-end;
-  margin: 0px 200px;
-  margin-bottom: -50px;
+  /* margin: 0px 200px;
+  margin-bottom: -50px; */
 }
 
 .header-name-description {
@@ -78,8 +89,18 @@ h2 {
 
 h3 {
   margin-left: 10px;
+  text-transform: uppercase;
 }
 
+/* h4 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  font-weight:bolder;
+  background-color: rgb(140, 168, 187);
+  width: fit-content;
+} */
 h4 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -87,8 +108,13 @@ h4 {
   font-size: 25px;
   font-weight:bolder;
   background-color: rgb(140, 168, 187);
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #69aeb3;
+  color: white;
 }
 
+/**ABOUT ME SECTION**/
 .about-me {
   background-color: rgb(224, 216, 224);
   margin: 15px;
@@ -115,6 +141,21 @@ h4 {
   margin: 15px;
 } */
 
+
+/**TECH SECTION**/
+.tech-section-container {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
 .tech-section {
   margin-left: 15px;
   margin-right: 15px;
@@ -138,28 +179,68 @@ h4 {
   width: 300px;
 }
 .featured-img {
-  width: 230px;
+  width: 350px;
+  height: 205px;
+
 }
 
 .featured-projects {
   text-transform: uppercase;
   text-align: center;
 }
- .featured-projects-container {
-   /* width: 80%; */
-   display: flex;
-   flex-direction: column;
+
+.featured-projects-container {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
   justify-content: center;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+ /* .featured-projects-container {
+   /* width: 80%; */
+   /* display: flex; */
+   /* flex-direction: column;
+  justify-content: center; */
   /* align-content: center; */
-  align-items: center;
- }
+  /* align-items: center;
+ } */ */
 
 .other-projects {
   text-transform: uppercase;
   text-align: center;
 }
 
-.my-thoughts-section {
+.other-projects-container {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.thoughts-container {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* .my-thoughts-section {
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -167,7 +248,7 @@ h4 {
 .my-thoughts {
   text-transform: uppercase;
   text-align: center;
-}
+} */
 
 /* .skills-section {
   display: flex;
@@ -196,27 +277,73 @@ h4 {
   margin: 10px 10px 10px 10px;
 }
 
-.footer {
+/* .footer {
   display: flex;
   flex-direction: column;
   text-align: center;
   height: 250px;
   justify-content: center;
   background-color: #69aeb3;
-  /* background-color:  #5ca4a9;; */
 
-  /* margin-top: 10px;
-  padding: 5px; */
+} */
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #69aeb3;
+  width: 100%;
+  text-align: center;
+
 
 }
 
- /* .contact {
-  text-align: center;
-}  */
-
-.footer h2 {
+.footer h4 {
+font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  /* text-align: center; */
+  text-align: center;
+  font-size: 25px;
+  font-weight:bolder;
+  border-radius: 8px;
+  padding: 3px;
+  color:white;
+
+}
+
+
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #69aeb3;
+}
+
+.contact-container h4 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  font-weight:bolder;
+  border-radius: 8px;
+  padding: 3px;
+  color:white;
+}
+
+.contact-text {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+
 }
 
 /**** MEDIA QUERIES ***/
