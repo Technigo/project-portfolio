@@ -3,16 +3,21 @@
   --secondary:#E5C2A6;
   --third: #684853;
   --fourth:#A8AEC4;
+  --fifth: #EDE3DA;
 }
 
 body,html {
   margin: 0;
-  background-color: var(--primary);
+  background-color: var(--fifth);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
 .hero {
   position: relative;
   height: 45vh;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image {
@@ -23,17 +28,44 @@ body,html {
 }
 
 .hero-selfpic {
-  width: 100px;
-  height: 120px;
+  width: 80px;
+  height: 100px;
   z-index:1;
   border-radius: 50%;
   border: var(--secondary) solid 2px;
   position: absolute;
-  top:40%;
-  bottom: 10%;
-  left: 10%;
+  top:5%;
+  bottom: 0;
+  left: 5%;
   right: 0;
 }
+
+.hero-info {
+  position: absolute;
+  top: 45%;
+  bottom: 0;
+  left: 20%;
+  right: 0;
+  border: white solid;
+  padding: 10px;
+  text-align: left;
+  display: table;
+  color: var(--fifth);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
 
 .summary {
   text-align: center;
@@ -49,16 +81,21 @@ body,html {
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   border: solid black;
+  align-items: center;
 }
 
 .top-project {
   border: solid white;
-  width: 40%;
+  width: 60%;
+  margin: 20px;
+  padding: 15px;
+}
 
+a {
+  text-decoration: none;
 }
 
 .other-projects {
@@ -72,6 +109,15 @@ body,html {
 }
 
 .skills {
+  text-align: center;
+  border: solid white;
+}
+
+ul {
+  list-style-type:none;
+}
+
+.skill-list {
   text-align: center;
   border: solid white;
 }
