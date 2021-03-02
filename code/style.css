@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); */
 /* Bold 700 Montserrat for HEADER: font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* Medium 500 Montserrat font-family: 'Montserrat', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 /* Roboto Medium 500 as a default fallback? font-family: 'Roboto', sans-serif; */
 
@@ -34,16 +36,24 @@ Render the `main` element consistently in IE.
 }
 
 .header-mobile .icons {
+  margin-top: 40px;
+  margin-right: 25px; 
   display: flex; 
   justify-content: flex-end; 
+  padding: 5px;
+}
+
+.icons .fab, .fa {
+  margin: 5px; 
+  border-radius: 50%;
 }
 
 .profession {
   font-size: 35px;
-  word-break: keep-all;
+  word-break: keep-all; /*jag vill få orden att aligna under varandra i desktop, tablet och mobile*/
 }
 
-.caroline {
+.caroline-image {
   position: absolute; 
   right: 25px;
   top: 180px; 
@@ -52,36 +62,62 @@ Render the `main` element consistently in IE.
 }
 
 .bold-position {
+  font-size: 20px;
+}
 
+.main-section {
+  right: 25px;
+  color: whitesmoke; 
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .summary-text {
-  color: whitesmoke; 
 }
 
 .tech {
-  color: whitesmoke;
 }
 
-.featured-projects {
-  color: whitesmoke;
+.header-tech {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  background-color: #393E46; 
+  margin: 0px 150px; 
+  color: #FFD369; 
 }
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.skills-list .skill {
+  background-color: #393E46; 
+  color: #FFD369;
+}
+.featured-projects .weather-app {
+  object-fit: cover; /*Don't seem to do anything right now*/
+}
+
 
 .other-projects {
-  color: whitesmoke;
 }
 
 .my-thoughts {
-  color: whitesmoke;
 }
 
 .skills {
-  color: whitesmoke;
 }
 
 .footer {
-  color: whitesmoke;
 }
+
+
 /*
 main {
   display: block;
@@ -93,5 +129,4 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-
 
