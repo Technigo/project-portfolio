@@ -37,7 +37,7 @@ body {
 
 /* Section for links to my profiles */
 
-.links {
+.links-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -52,17 +52,24 @@ body {
     border-radius: 50%;
     border: 2px solid white;
     margin: 5px;
+    padding: 3px;
     cursor: pointer;
+    outline: none;
+    color: white;
+    text-decoration: none;
 }
 
 .link-header:hover {
     opacity: 0.5;
 }
 
+.link-header:focus {
+    color: rgb(61, 8, 61);
+    border: 4px solid rgb(61, 8, 61);
+}
+
 .link-header .fa {
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 22px;
 }
 
 /* My image */
@@ -141,7 +148,7 @@ body {
     padding: 40px 10px;
 }
 
-.featured-projects-header {
+.featured-projects-header, .thoughts-header {
     background-color: black;
     color: white;
     padding: 10px;
@@ -159,30 +166,46 @@ body {
     flex-direction: column;
     margin-bottom: 30px;
     width: 100%;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    opacity: 0.8;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
 }
 
 img {
     width: 100%;
     height: 320px;
     object-fit: cover;
-    position: relative;
     text-align: center;
-}
-
-img .text {
-    position: absolute;
-    LEFT: 50%;
-    top: 50%;
 }
 
 .project-title {
     margin-bottom: 5px;
     color: rgb(61, 8, 61);
+    font-size: 18px;
 }
 
 .project-paragraph {
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
+}
+
+.used-tech {
+    display: flex;
+}
+
+.tech-knowledge {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    margin-right: 5px;
+    font-size: 14px;
 }
 
 /* Section with my other projects */
@@ -198,29 +221,44 @@ img .text {
     flex-direction: column;
 }
 
+.other-projects-link {
+    color: black;
+}
+
+.other-projects-link:hover {
+    opacity: 0.8;
+}
+
 .other-projects-title {
     text-align: center;
+    font-size: 24px;
 }
+
 .other-projects-info {
-    font-size: 16px;
+    font-size: 18px;
     margin: 0px;
+}
+
+.fas {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: rgb(61, 8, 61);
+    cursor: pointer;
+    outline: none;
+}
+
+.fas:hover {
+    opacity: 0.6;
+}
+
+.fas:focus {
+    color: #f9f3f3;
 }
 
 .title {
     color: rgb(61, 8, 61);
     font-weight: bold;
-}
-
-.used-tech {
-    display: flex;
-}
-
-.tech-knowledge {
-    background-color: black;
-    color: white;
-    padding: 7px;
-    margin-right: 5px;
-    font-size: 12px;
 }
 
 /* Section with my thoughts about code */
@@ -233,6 +271,14 @@ img .text {
     padding: 40px 10px;
 }
 
+.thoughts {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.thoughts:hover {
+    opacity: 0.8;
+}
 /* Section with my skills */
 
 .skills-container {
@@ -287,14 +333,21 @@ img .text {
     border: 2px solid black;
     margin: 20px 5px;
     cursor: pointer;
+    color: black;
+    outline: none;
+    text-decoration: none;
 }
 
 .link:hover {
     opacity: 0.5;
 }
+
+.link:focus {
+    color: rgb(61, 8, 61);
+    border: 4px solid rgb(61, 8, 61);
+}
 .link .fa {
-    color: black;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 800;
 }
 
