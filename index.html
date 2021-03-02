@@ -4,41 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/b6e50c11f2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- HEADER-->
-  <header>
-    <div class="header-container">
-      <div class="header-image"></div>
-      <div class="social-media"></div>
-      <div class="header-message">
-        <h1>PORTFOLIO NAME: IRINA JEKABSONE</h1>
-        <P>frontend developer with 10 years experience in financial services</P>
+  <!-- Header -->
+  <header class="header-container" >
+    <!-- Background image -->
+    <picture>
+      <source srcset="./assets/background-image.jpg"media="(max-width: 667px)">
+      <img class="hero-image" src="./assets/background-image.jpg" alt="Background image"/> 
+    </picture>
+    <!-- Header content -->
+    <div class="header-content">
+      <!--- Social media icons -->
+      <div class="header-icons">
+        <a href="https://www.linkedin.com/in/irina-j%C4%93kabsone-79742243/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Irina-web-dev">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://stackoverflow.com/c/technigo/users/196/?tab=profile">
+          <i class="fab fa-stack-overflow"></i>
+        </a>
       </div>
-      <div class="profile-picture-container">
-        <img class="profile-picture" src="./assets/profile-picture.jpg" alt="Profile picture"/>
+      <!-- Header text -->
+      <div class="header-text">
+        <div class="flex-item-1">PORTFOLIO: <strong>IRINA JEKABSONE</strong></div>
+        <div class="flex-item-2">frontend</div>
+        <div class="flex-item-3">developer</div>
+        <div class="flex-item-4">with 10 years experience in financial services</div>    
       </div>
+      <!-- Profile picture -->
+      <img class="profile-picture" src="./assets/profile-picture.jfif" alt="Profile picture"/>
     </div>
   </header>
-  <!-- OTHER SECTIONS-->
-  <div class="sections-container">
+  <!-- Main sections -->
+  <main class="main-section" >
     <section class="intro-container">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quod aut fugiat perspiciatis veniam odio quas aspernatur sit, nisi impedit assumenda laudantium ipsum non ad vel officiis, deserunt rem magni.</p>
+      <p>
+        <span class="cylinder"></span>
+        <span class="circle"></span>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quod aut fugiat perspiciatis veniam odio quas aspernatur sit, nisi impedit assumenda laudantium ipsum non ad vel officiis, deserunt rem magni.
+      </p>
     </section>
     <section class="tech-section">
+      <h1 class="title">TECH</h1>
       <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
     </section>
     <section class="projects">
       <div class="featured-projects">
+        <h1 class="title">FEATURED PROJECTS</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda officiis quis harum odit pariatur sint consectetur, sed aliquam cupiditate sit, similique animi porro quibusdam debitis nulla! Qui cupiditate doloremque dolorum!</p>
       </div>
       <div class="other-projects">
+        <h1 class="title">OTHER PROJECTS</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tenetur soluta iste reprehenderit amet libero molestias, ipsum delectus sit sequi perspiciatis esse, veritatis ad, non eius laborum in quaerat dolorum.</p>
       </div>
     </section>
     <section class="my-thoughts">
+      <h1 class="title">MY THOUGHTS</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis odit, numquam soluta fuga, perspiciatis voluptate nemo mollitia quidem esse doloremque ipsa repellendus! Inventore impedit soluta quibusdam amet sequi esse adipisci.</p>
     </section>
     <section class="skills">
@@ -51,8 +82,8 @@
         <span>STACK OVERFLOW</span>
       </p>
     </section>
-  </div>
-  <!-- FOOTER-->
+  </main>
+  <!-- Footer with contact information-->
   <footer class="footer-container" >
     <h1>CONTACT</h1>
     <p>
