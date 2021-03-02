@@ -6,43 +6,119 @@
   --fifth: #ffffff;
 }
 
-body {
+body, html {
   background: var(--fifth);
   margin: 0;
-  /* font-family: 'Montserrat', sans-serif;
-  font-family: 'Roboto', sans-serif; */
+  height: 100%;
+}
 
+h1 {
+  margin: 0%;
+}
+
+p {
+  margin: 0%;
+}
+
+/*** SUB HEADINGS ***/
+.sub-heading-container {
+  height: 26px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.sub-heading-container h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--fifth);
+  background: var(--secondary);
+  display: inline;
+  padding: 0px 4px;
 }
 
 
-
-.header-image-container {
+/*** HEADER ***/
+.header {
+  background-image: url(./assets/header-pic.jpg);
+  background-size: cover;  
+  height: 64%;
   width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: scale-down;
+  color: var(--fifth);
+  display: flex;
+  flex-direction: column;
 }
 
-.header-image {
-  width: 100vw;
-  height: 55vh;
-  object-fit: cover;
+.social-media-container {
+  position: absolute;
+  height: 40px;
+  left: 220px;
+  top: 48px;
+  width: 130px;
+  text-align: center;
 }
 
-
-
-.intro-section {
-  background: var(--fourth);
-  height: 250px;
-  width: auto;
+.fab {
+  padding: 8px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border: solid 2px var(--fifth);
+  border-radius: 50%;
+  color: var(--fifth); 
 }
 
+.headings-container {
+  position: absolute;
+  width: 220px;
+  height: 202px;
+  top: 121px;
+  left: 24px;
+  margin: 0;
+}
 
+.portfolio {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
 
+.portfolio-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+}
 
+.frontend {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+}
+
+.lawyer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+}
 
 .profile-pic-container {
-  width: 333px;
-  height: 333px;
-  position: relative;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  left: 171px; /**/
+  top: 356px;
   overflow: hidden;
+  border: solid 2px var(--fifth);
   border-radius: 50%;
 }
 
@@ -56,9 +132,86 @@ body {
 }
 
 
+/*** INTRO SECTION ***/
+.intro-section {
+  background: var(--fourth);
+  height: 232px;
+  width: auto;
+  padding: 40px 20px;
+}
+
+.intro-section p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+}
 
 
+/*** TECH SECTION ***/
+.tech-text {
+  width: 327px;
+  height: 147px;
+  padding: 40px 20px;
+}
+
+.tech-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+}
+
+
+/*** PROJECTS SECTION ***/
+.projects-section {
+
+}
+
+.project-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.project-card {
+  height: 341px;
+  padding: 40px 25px 25px 25px;
+  position: relative;
+}
+
+.project-card a {
+  text-decoration: none;
+}
+
+.project-card-image {
+  height: 212px;
+  width: 100%;
+}
+
+.project-card-title {
+  position: absolute;
+  top: 30%; /**/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--fifth);
+}
+
+
+
+
+
+
+/*** FOOTER ***/
 .footer {
+  position: absolute;
   height: 300px;
   width: auto;
   background: var(--primary);
@@ -76,6 +229,35 @@ body {
 
 /** DESKTOP **/
  @media (min-width: 992px) { 
+  /*   
+  .headings-container {
+    position: absolute;
+    width: 607px;
+    height: 339px;
+    left: 410px;
+    top: 206px;
+    font: var(--fifth);
+  }
 
+  .profile-pic-container {
+    width: 333px;
+    height: 333px;
+    position: absolute;
+    left: 900px;
+    top: 378px;
+    overflow: hidden;
+    border: solid 4px var(--fifth);
+    border-radius: 50%;
+  }
+  
+  .profile-pic {
+    display: inline;
+    margin-top: 0px;
+    margin-left: -20%; 
+    margin-bottom: -10px;
+    height: 100%;
+    width: auto;
+  }
+   */
 
  }
