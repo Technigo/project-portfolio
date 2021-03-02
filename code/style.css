@@ -100,8 +100,6 @@ body{
 
 .tech{
   padding: 10px;
-  display: flex;
-  justify-content: center;
 }
 .tech-section{
   display: flex;
@@ -121,10 +119,13 @@ body{
 .tech-text{
   text-align: center;
 }
-.featured {
+.section {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 0;
+}
+.featured {
   background-color: #F4F4F4;
 }
 .featured-projects{
@@ -154,7 +155,9 @@ body{
   margin-bottom: 10px;
   width: 100%;
 }
-
+.last {
+  display: none;
+}
 .project-title{
   position: absolute;
   top: 0;
@@ -182,7 +185,7 @@ body{
   font-family: Roboto;
   font-size: 16px;
   letter-spacing: 1px;
-  line-height: 145%;
+  line-height: 1.5em;
   margin: 0;
 } 
 .project-subtitle{
@@ -202,6 +205,37 @@ body{
   font-weight: 300;
 }
 
+/* Other projects section */
+.other-projects {
+  flex-wrap: wrap;
+  background-color: #F4F4F4;
+}
+.other{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+.red{
+  color: #FA382F;
+  background: none;
+}
+.other-subtitle{
+  text-decoration: underline;
+}
+
+.other-description {
+  text-decoration: underline;
+}
+.arrow{
+  color: #FA382F;
+  text-decoration: #FA382F;
+}
+.tags-container{
+  width: 60%;
+  margin-top: 10px;
+}
 /* Mobile devices  */
 @media(min-width: 350px) {
   .header{
@@ -280,10 +314,16 @@ body{
     width: 30px;
   }
   .project-card{
-    width: 45%;
+    width: 47%;
+  }
+  .last {
+    display: flex;
   }
   .project-image {
     height: 250px;
+  }
+  .other-card {
+    width: 100%;
   }
 }
 /* iPadPro, small screen, laptop  */
