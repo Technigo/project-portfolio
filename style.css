@@ -6,6 +6,17 @@ header {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    background-image: url(/assets/main.jpeg);
+}
+
+.section-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: #F5382F;
+    color: #ffff;
+    text-transform: uppercase;  
+    padding: 0 3px;
 }
 
 .icon {
@@ -15,12 +26,44 @@ header {
     height: 40px;
 }
 
+/* TEXT */
+
 .header-text {
     align-self: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.paragraph-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+    margin-bottom: 0;
+    margin: 0;
+    font-weight: 400;
+    color: black;
+}
+
+.project-heading, .skill-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #F5382F;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.other-projects-header {
+    font-family: 'Montserrat', sans-serif;
+    color: #F5382F;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 21px;
 }
 
 .profile-pic {
-    background-image: url(/assets/linkedin.svg);
+    background-image: url(/assets/profile.jpg);
     border: 3px solid white;
     width: 150px;
     height: 150px;
@@ -30,35 +73,174 @@ header {
     margin-bottom: -30px;
 }
 
+/* Decoration symbol */
+
 .decoration {
     display: flex;
     align-items: center;
-    
-    
+    float: left;
+    padding-top: 10px;
+    margin-right: 10px;
 }
 
 .line {
-    width: 70px;
-    height: 6px;
+    width: 50px;
+    height: 2px;
     background: red;
 }
 
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
     background: red;
     border-radius: 50px;
     margin-left: -3px;
 }
 
+.arrow {
+    font-weight: 600;
+    color: #F5382F;
+}
+
+/*Portfolio sections */
+
 .portfolio-section {
-    height: 300px;
+
     padding: 10px 36px;  
 }
 
 .grey {
-    background-color: grey;
+    background-color: #FCFCFC;
 }
+
+
+/* Project card */
+
+.project-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.image-title-wrapper{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    width: 100%;
+    filter: brightness(60%);
+    z-index: 2;
+}
+
+.project-title{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    z-index: 1;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .languages-used {
+    display: flex; 
+}
+
+.language {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    text-align: center;
+    background-color: #FCDFE7;
+    color: black;
+    padding: 5px 15px;
+    margin: 0 5px 0 0;
+}
+
+.project-card-paragraph {
+    margin: 0;
+}
+
+/* My toughts section */
+.my-toughts-section {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.my-thoughts-image{
+    width: 100%;
+}
+.my-thoughts-date {
+    color: #F5382F;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.my-thoughts-heading {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+}
+
+.my-thoughts-paragraph {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+.more-toughts {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+    line-height: 27px;
+}
+
+.more-toughts-date {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #F5382F;
+}
+
+/* Skills section */
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.skills-list {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+}
+
+
+
 
 @media (min-width: 700px) {
     header {
