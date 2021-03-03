@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-/* Header background-color: #CBB3BF; background-color: #685F74;*/
+/* Header background-color: #CBB3BF; background-color: #685F74; #A0AD99; #99AD9E; #0F1123; #505B61; #AD9999; */
 
 .header {
     height: 40vh;
@@ -11,7 +11,7 @@ body {
     padding: 20px;
     justify-content: space-around;
     position: relative;
-    background-color: rgb(0, 0, 0);
+    background-color: #0F1123;
 }
 
 .header-container-text {
@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     justify-content: center;
     color: white;
+    z-index: 1;
 }
 
 .h1 {
@@ -56,6 +57,7 @@ body {
     cursor: pointer;
     outline: none;
     color: white;
+    font-size: 22px;
     text-decoration: none;
 }
 
@@ -64,12 +66,8 @@ body {
 }
 
 .link-header:focus {
-    color: rgb(61, 8, 61);
-    border: 4px solid rgb(61, 8, 61);
-}
-
-.link-header .fa {
-    font-size: 22px;
+    color: #a98b98;
+    border: 4px solid #a98b98;
 }
 
 /* My image */
@@ -97,7 +95,7 @@ body {
 
 .line {
     width: 5%;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #4e3d53;
     margin-bottom: 5px;
     display: inline-block;
 }
@@ -105,7 +103,7 @@ body {
 .circle {
     width: 12px;
     height: 12px;
-    background-color: black;
+    background-color: #4e3d53;
     border-radius: 50%;
     display: inline-block;
     margin-right: 5px;
@@ -125,43 +123,36 @@ body {
     flex-direction: column;
 }
 
-.tech-header {
-    background-color: black;
+.section-header {
+    background-color: #4e3d53;
     color: white;
     padding: 10px;
     font-size: 20px;
 }
 
-.tech-header .paragraph {
+.paragraph {
     font-size: 18px;
-    text-align: center;
 }
 
 /* Section with my featured projects */
 
-.featured-projects-container {
+.projects-container {
     background-color: #f9f3f3;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 40px 10px;
 }
 
-.featured-projects-header, .thoughts-header {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-}
-
-.projects {
+.featured-projects, .all-thoughts {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.project-card {
+.project-card, .thoughts-card {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
@@ -169,39 +160,46 @@ body {
     cursor: pointer;
 }
 
-.project-card:hover {
-    opacity: 0.8;
-}
-
 .project-link {
     text-decoration: none;
     color: black;
+    outline: none;
+    padding: 5px;
 }
 
-img {
+.project-link:hover, .thoughts-card:hover {
+    opacity: 0.8;
+}
+
+.project-link:focus {
+    background-color: #c5b7b7;
+    color: white;
+}
+
+.project-image {
     width: 100%;
-    height: 320px;
+    height: 200px;
     object-fit: cover;
-    text-align: center;
 }
 
 .project-title {
     margin-bottom: 5px;
-    color: rgb(61, 8, 61);
     font-size: 18px;
+    color: #0F1123;
 }
 
 .project-paragraph {
     font-size: 18px;
     margin: 0;
+    color: #0F1123;
 }
 
-.used-tech {
+.used-tech-container {
     display: flex;
 }
 
-.tech-knowledge {
-    background-color: black;
+.used-tech {
+    background-color: #a98b98;
     color: white;
     padding: 7px;
     margin-right: 5px;
@@ -222,6 +220,9 @@ img {
 }
 
 .other-projects-link {
+    text-decoration: none;
+    outline: none;
+    padding: 5px;
     color: black;
 }
 
@@ -229,36 +230,36 @@ img {
     opacity: 0.8;
 }
 
+.other-projects-link:focus {
+    background-color:  #c5b7b7;
+    color: white;
+}
+
 .other-projects-title {
     text-align: center;
     font-size: 24px;
+    color: #0F1123;
 }
 
 .other-projects-info {
     font-size: 18px;
     margin: 0px;
+    text-decoration: underline;
 }
 
-.fas {
+.fa-angle-double-right {
     background-color: transparent;
     border: none;
-    font-size: 16px;
-    color: rgb(61, 8, 61);
+    font-size: 20px;
+    margin-left: 5px;
     cursor: pointer;
     outline: none;
-}
-
-.fas:hover {
-    opacity: 0.6;
-}
-
-.fas:focus {
-    color: #f9f3f3;
+    color: #0F1123;
 }
 
 .title {
-    color: rgb(61, 8, 61);
     font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Section with my thoughts about code */
@@ -271,14 +272,21 @@ img {
     padding: 40px 10px;
 }
 
-.thoughts {
-    margin-bottom: 8px;
-    cursor: pointer;
-}
-
-.thoughts:hover {
+.thoughts-card:hover {
     opacity: 0.8;
 }
+
+.thought-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.thoughts {
+    margin: 4px;
+}
+
 /* Section with my skills */
 
 .skills-container {
@@ -303,7 +311,6 @@ img {
 }
 
 .h5 {
-    color: rgb(61, 8, 61);
     font-weight: bold;
     margin: 0;
     font-size: 18px;
@@ -330,12 +337,14 @@ img {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 3px solid #4e3d53;
     margin: 20px 5px;
     cursor: pointer;
-    color: black;
+    color: #4e3d53;
     outline: none;
     text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
 }
 
 .link:hover {
@@ -343,18 +352,15 @@ img {
 }
 
 .link:focus {
-    color: rgb(61, 8, 61);
-    border: 4px solid rgb(61, 8, 61);
+    color: #a98b98;
+    border: 4px solid #a98b98;
 }
-.link .fa {
-    font-size: 30px;
-    font-weight: 800;
-}
+
 
 /* Footer */
 
 .footer {
-    background-color: black;
+    background-color: #505B61;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,7 +375,7 @@ img {
 
 .contact-info {
     margin: 5px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 
@@ -384,44 +390,94 @@ img {
         font-size: 26px;
     }
 
-    .fa {
-        font-size: 30px;
+    .link-header {
+        height: 55px;
+        width: 55px;
+        font-size: 36px;
     }
+
     .image {
         width: 250px;
         height: 250px;
     }
 
     .info-about-me .paragraph {
-        width: 50%;
+        width: 80%;
     }
 
-    .featured-projects-container {
+    /* .projects-container {
         flex-direction: column;
         flex-wrap: wrap;
         padding: 10px;
+    } */
+
+    .featured-projects, .all-thoughts {
+        width: 90%;
     }
 
-    .projects {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 70%;
+    .project-card, .thoughts-card {
+        width: 45%;
+        margin: 10px;
     }
 
-    .project-card {
-        width: 40%;
-        margin: 20px;
+    .project-image {
+        height: 230px;
     }
 
-    .other-projects-container {
+    .other-projects-container, .other-thoughts {
         justify-content: flex-start;
-        width: 58%;
+        width: 83%;
         margin-top: 40px;
     }
 
     .other-thoughts {
-        width: 83%;
+        width: 93%;
+    }
+
+    .link {
+        font-size: 50px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .info-about-me .paragraph {
+        width: 60%;
+    }
+
+    /* .projects-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+    } */
+
+    .featured-projects, .all-thoughts {
+        width: 70%;
+    }
+
+    .project-card, .thoughts-card {
+        width: 45%;
+        margin: 20px;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 350px;
+    }
+
+    .project-title {
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    .other-projects-container {
+        width: 65%;
+    }
+
+    .other-thoughts {
+        width: 94%;
         margin-top: 40px;
     }
+
 }
