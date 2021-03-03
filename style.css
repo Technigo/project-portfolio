@@ -1,6 +1,27 @@
+/* MAIN */
+
 body {
     margin: 0;
 }
+
+/* SECTION STYLING */
+
+.portfolio-section {
+    padding: 30px 36px 50px;  
+    display: flex;
+    flex-direction: column;
+}
+
+.grey {
+    background-color: #FCFCFC;
+}
+
+.intro-section {
+    padding-top: 60px;
+    display: block;
+}
+
+/* HEADER */
 
 header {
     height: 500px;
@@ -10,7 +31,8 @@ header {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    background-image: url(/assets/main.jpeg);
+    background-image: url(/assets/main.jpg);
+    background-repeat: no-repeat;
 }
 
 .section-header {
@@ -35,8 +57,16 @@ header {
     text-decoration: none;
 }
 
-
-/* TEXT */
+.profile-picture {
+    background-image: url(/assets/prof.jpg);
+    border: 3px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -30px;
+}
 
 .header-text {
     align-self: flex-start;
@@ -65,6 +95,11 @@ header {
     font-size: 40px;
 }
 
+
+
+
+/* INTRO SECTION */
+
 .paragraph-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
@@ -73,35 +108,6 @@ header {
     margin: 0;
     font-weight: 400;
     color: black;
-}
-
-.project-heading, .skill-heading {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    color: #F5382F;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-.other-projects-header {
-    font-family: 'Montserrat', sans-serif;
-    color: #F5382F;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 21px;
-    margin-top: 70px;
-    text-align: center;
-}
-
-.profile-pic {
-    background-image: url(/assets/profile.jpg);
-    border: 3px solid white;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: -30px;
 }
 
 /* Decoration symbol */
@@ -134,24 +140,34 @@ header {
     color: #F5382F;
 }
 
-/*Portfolio sections */
+/* TECH */
 
-.portfolio-section {
-
-    padding: 10px 36px;  
-    display: flex;
-    flex-direction: column;
+.paragraph-skills {
+    text-align: center;
 }
 
-.grey {
-    background-color: #FCFCFC;
+
+/* PROJECTS SECTION */
+
+.project-heading, .skill-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #F5382F;
+    text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
-.intro-section {
-    padding-top: 60px;
-    display: block;
-}
 
+.other-projects-header, .header-more {
+    font-family: 'Montserrat', sans-serif;
+    color: #F5382F;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 21px;
+    margin-top: 70px;
+    text-align: center;
+}
 
 /* Project card */
 
@@ -212,12 +228,21 @@ header {
     margin: 0;
 }
 
-/* My toughts section */
+
+/* MY TOUGHTS SECTION */
 .my-toughts-section {
     text-decoration: none;
     color: black;
     font-family: 'Roboto', sans-serif;
 }
+
+.my-toughts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
 
 .my-thoughts-image{
     width: 100%;
@@ -263,7 +288,7 @@ header {
     text-decoration: underline;
 }
 
-/* Skills section */
+/* SKILLS SECTION */
 
 .skills {
     display: flex;
@@ -287,13 +312,196 @@ ul {
 
 
 
+/* TABLET VIEW */
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
+
+    .portfolio-section {
+        padding: 40px 100px;  
+    }
+
+    .grey {
+        background-color: #F4F4F4;
+        padding-bottom: 60px;
+    }
+
+    .intro-section {
+        padding-top: 60px;
+    }
+
+    /* HEADER */
+
     header {
         padding: 100px 100px 0 100px;
     }
-    .profile-pic {
-        width: 330px;
-        height: 330px;
+
+    .icon {
+        width: 60px;
+        height: 60px;
     }
+    
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .header-text {
+        font-size: 24px;
+        line-height: 49px;
+    }
+    
+    .header-text-name {
+        font-size: 17px;
+    }
+    
+    .header-text-portfolio {
+        font-size: 17px;
+    }
+    
+    .header-text-developer {
+        font-size: 55px;
+    }
+
+    /* CARDS */
+
+    .all-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 270px;
+    }
+
+    .my-toughts-card{
+        width: 270px;
+    }
+
 }
+
+/* SMALL DESKTOP VIEW */
+
+@media (min-width: 992px) {
+    .portfolio-section {
+        padding: 40px 130px;  
+    }
+    
+ /* HEADER */
+
+    header {
+        padding: 100px 130px 0 130px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .profile-picture {
+        width: 220px;
+        height: 220px;
+    }
+    
+/* LANGUAGE CARDS */
+    .language {
+        font-size: 10px;
+    }
+
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 1150px) {
+
+    .portfolio-section {
+        padding: 60px 250px 60px;  
+        margin-bottom: 20px;
+    }
+
+    .grey {
+        background-color: #F4F4F4;
+        padding-bottom: 60px;
+    }
+
+    .intro-section {
+        padding-top: 70px;
+    }
+
+    
+    /* HEADER */
+
+    header {
+        padding: 20px 250px 0px 250px;
+        height: 400px;
+    }
+
+    .icon {
+        margin-top: 50px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        margin-top: -120px;
+    }
+    
+    .header-text {
+        font-size: 24px;
+        line-height: 49px;
+    }
+    
+    .header-text-name {
+        font-size: 17px;
+    }
+    
+    .header-text-portfolio {
+        font-size: 17px;
+    }
+    
+    .header-text-developer {
+        font-size: 55px;
+    }
+
+    .paragraph-text {
+        font-size: 20px;
+        line-height: 35px;
+
+    }
+
+    .section-header {
+        font-size: 30px;
+
+    }
+
+    .card {
+        width: 350px;
+    }
+
+    .my-toughts-card{
+        width: 350px;
+    }
+
+    .featured-text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .my-thoughts-heading {
+        font-size: 17px;
+        line-height: 25px;
+
+    }
+    
+    .my-thoughts-paragraph {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+
+
