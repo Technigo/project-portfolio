@@ -128,6 +128,7 @@ body {
 .row-3 {
     background-color: turquoise;
     padding: 49px 24px;
+    font-family: 'Montserrat', sans-serif;
 }
 .project-section { /* du kan använda gemensam class på denna samt tech delen precis under */
     
@@ -135,7 +136,7 @@ body {
     justify-content: center;
     align-items: center;
     /*text-align: center;*/
-    font-family: 'Montserrat', sans-serif;
+    
     display: grid; 
     grid-template-columns: 1fr  ;
     text-align: left;
@@ -162,11 +163,19 @@ body {
     margin: 15px;
 }
 
+
 .project-section-content h4 span {
     color: #FA382F;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 17px;
+    
+}
+
+.project-section-content h4 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+    
 }
 
 .project-section-content p{
@@ -174,6 +183,7 @@ body {
     font-family: 'Roboto',sans-serif;
     font-weight: normal;
     font-size: 17px;
+    margin:0px;
 
 }
 
@@ -182,8 +192,10 @@ body {
 }
 
 .tags p{
-    margin: 2px;
+    margin-right: 5px;
     background-color: #FDDFE7;
+    font-size: 9px;
+    font-family: 'Roboto',sans-serif;
 }
 
 .other-project-mobile {
@@ -211,7 +223,7 @@ body {
 }
 
 .thoughts-section-text {
-    padding: 48px 24px;
+    padding: 24px 24px; /* det var 48px 24px */
     /*width: 50%; HÄR ÄNDRAR DU STORLEKEN NÄR DU ÄNDRAR DEVICE*/
 
 }
@@ -248,8 +260,18 @@ body {
     width: 100%;
 }
 
+.other-thoughts h2 {
+    text-align: center;
+
+} /*JÖÖ */
+
+.other-thoughts span {
+    color:#FA382F;
+} /*JÖÖ */
+
 .thoughts-section-text2 {
     display: none;
+    padding: 24px 24px;
 }
 
 /* Test */
@@ -335,6 +357,10 @@ body {
         display: grid; 
         grid-template-columns: 1fr 1fr  ;
         text-align: left;
+    }
+
+    .other-thoughts {
+        display: none;
     }
 
     .other-project-mobile {
