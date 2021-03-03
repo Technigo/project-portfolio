@@ -12,9 +12,10 @@ body {
     font-weight: normal;
     color: #252429;
     letter-spacing: 0.5px;
-    line-height: 20px;
+    line-height: 1.5;
     word-break: normal;
 }
+
 
 .section-title {
     font-family: 'Montserrat', sans-serif;
@@ -97,15 +98,16 @@ a:visited {
 
 /* Role/about */
 
-.portfolio {
+.owner {
     font-weight: normal;
-    font-size: 12px;
+    font-size: 11px;
+    line-height: 1;
     margin: 0;
 }
 
 .name{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 11px;
     margin: 0;
 }
 
@@ -335,8 +337,8 @@ margin-left: 10px;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    width: 100%;
-    margin-top: 30px;
+    width: 90%;
+    margin: auto;
 }
 
 .skill-box {
@@ -348,6 +350,7 @@ margin-left: 10px;
     background-color: white;
     border: dashed 1px black;
     border-radius: 10px;
+    margin-top: 30px;
     padding: 10px 0;
 }
 
@@ -370,7 +373,7 @@ margin-left: 10px;
     margin: 0;
 }
 
-.skill-title-upcoming {
+.skill-title-extra {
     font-size: 18px;
     padding-bottom: 10px;
     margin: 0;
@@ -429,7 +432,320 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    /* GENERAL */
 
+    body {
+        letter-spacing: 0.5px;
+        line-height: 30px;
+    }
+    
+    .section-title {
+        font-size: 35px;
+        padding: 5px 10px;
+    }
+    
+    .mini-title {
+        font-size: 25px;
+        margin: 40px 0;
+    }
+    
+    .content {
+        font-size: 20px;
+    }
+    
+    /*Skill stamp*/
+    
+    .skill {
+        font-size: 16px;
+        padding: 0 5px;
+        margin-top: 20px;
+    }
+    
+    .fas.fa-chevron-right {
+        font-size: 16px;
+    }
+    
+    /* HEADER */
+    
+    .header-img {
+        height: 370px;
+    }
+    
+    .about {
+        bottom: 35px;
+        left: 60px;
+        width: 50vw;
+    }
+    
+    /* Role/about */
+    
+    .owner {
+        font-size: 22px;
+    }
+    
+    .name{
+        font-size: 22px;
+    }
+    
+    .title{
+        font-size: 68px;
+        line-height: 72px;
+    }
+    
+    .extra-title {
+        font-size: 22px;
+        margin-top: 8px;
+    }
+    
+    /*Header icons*/
+    
+    .container-icons-header {
+        top: 25px;
+        right: 50px;
+    }
+    
+    .icon-header {
+    margin-left: 20px;
+    } 
+    
+    .icon-header i {
+        font-size: 35px;
+    }
+    
+    /* Picture */
+    
+    .img-darcy {
+        position:absolute;
+        right: 60px;
+        top: 200px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* SUMMARY */
+    
+    .section-intro {
+        padding: 50px 0;
+    }
+    
+    .intro-text {
+        font-size: 22px;
+        width: 70%;
+        margin-left: 60px;
+        padding: 0;
+    }
+    
+    /* TECH SKILLS */
+    
+    .section-tech {
+        padding: 50px 0;
+    }
+    
+    .tech-skills {
+        font-size: 22px;
+        width: 700px;
+        margin-top: 50px;
+    }
+    
+    /* PROJECTS */
+    
+    .section-projects {
+        padding: 50px 0;
+    }
+    
+    .container-featured-projects {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        width: 700px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    .project {
+        width: 45%;
+        padding: 15px;
+        margin-bottom: 45px;
+    }
+    
+/*     .project-hidden {
+        display: inline;
+    
+        background-color: white;
+        width: 45%;
+        padding: 15px;
+        margin-bottom: 10px;
+    } */
+    
+    .project-img {
+        background-size: cover;
+        height: 250px;
+        margin-bottom: 15px;
+    }
+    
+    .project-name {
+        font-size: 30px;
+    }
+    
+    .project-name-description {
+        font-size: 24px;
+    }
+    
+    .container-other-projects {
+        width: 700px;
+        margin: auto;
+    
+    }
+    .other-projects {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
+    /* .other-projects-hidden {
+        display: inline-block;
+    
+        width: 100%;
+        background-color: white;
+        padding: 15px;
+        margin-bottom: 10px;
+    } */
+    
+    /*MY THOUGHTS*/
+    
+    .section-my-thoughts {
+        padding-top: 50px;
+    }
+    
+    .container-code-thoughts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        width: 700px;
+        margin-top: 50px;
+    }
+    
+    .code-thoughts {
+        width: 45%;
+        padding: 15px;
+        margin: 0;
+    }
+    
+    .code-thoughts-hidden {
+        display: inline-block;
+    
+        width: 45%;
+        background-color: #faf3dd;
+        font-weight: normal;
+        padding: 15px;
+        margin: 0;
+    }
+    
+    .section-my-thoughts img {
+        height: 250px;
+        /* width: 100%; */
+        margin: auto;
+    }
+    
+    .date {
+        font-size: 18px;
+        color: #f87760;
+    }
+    
+    .thoughts-name {
+        font-size: 26px;
+    }
+    
+    .other-thoughts {
+        padding-bottom: 60px;
+    }
+    
+    .container-other-thoughts {
+        width: 700px;
+        padding: 10px 5px;
+    }
+    
+    .other-thoughts-name {
+        font-size: 24px;
+    }
+    
+    /*SKILLS*/
+    
+    .section-skills {
+        padding: 50px 0;
+    }
+    
+    .skills-and-experience {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+    
+        width: 700px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    .skill-box {
+        width: 30%;
+        margin-top: 0;
+        padding: 10px 5px;
+    }
+    
+    .skill-box-more {
+         width: 30%;
+         padding: 10px 5px;
+         margin-top: 0;
+    }
+    
+    .skill-title {
+        font-size: 22px;
+    }
+    
+    .skill-title-extra {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    
+    /*SOCIAL LINKS*/
+    
+    .section-social-links {
+        padding: 50px 0;
+    }
+    
+    .container-icons {
+        width: 700px;
+        padding-top: 50px;
+        margin: auto;
+    }
+    
+    .icon {
+        width: 30%;
+    }
+    
+    i {
+        font-size: 55px;
+    }
+    
+    .icon-name {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+    /*FOOTER*/
+    
+    footer {
+        padding: 80px 0;
+    }
+    
+    .mini-title-contact {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -481,7 +797,7 @@ body {
 
 /* Role/about */
 
-.portfolio {
+.owner {
     font-size: 24px;
 }
 
@@ -694,6 +1010,7 @@ margin-left: 20px;
 
 .skill-box {
     width: 30%;
+    margin-top: 0;
     padding: 15px 0;
 }
 
@@ -707,7 +1024,7 @@ margin-left: 20px;
     font-size: 22px;
 }
 
-.skill-title-upcoming {
+.skill-title-extra {
     font-size: 22px;
     margin-top: 30px;
 }
