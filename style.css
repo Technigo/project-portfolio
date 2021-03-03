@@ -54,6 +54,44 @@ a{
     font-size:17px;
 }
 
+.standard-projects-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: solid 2px blue;
+}
+
+.standard-projects-container{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    border: solid 2px;
+    margin: 0px 20px 0px 20px;
+}
+
+.other-projects-section-standard{
+    display: flex;
+    flex-direction: column;
+    font-family: roboto;
+    border: red 2px solid;
+}
+
+.other-projects-container-standard{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;  
+    margin: 0px 20px 0px 20px;
+}
+
+.another-project-card{
+    border: solid 2px;
+    display: flex;
+    flex-direction: column;
+}
+
 /*****TOP SECTION*****/
 header{
     display: flex;
@@ -158,20 +196,8 @@ header{
     text-align: center;
 }
 /*****FEATURED PROJECTS*****/
-.featured-projects-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    border: solid 2px blue;
-}
 
-.featured-projects-container{
-    display: grid; 
-    grid-template-columns: 1fr; 
-    gap: 20px;
-    border: solid 2px;
-}
+
 
 .project-card{
     border: solid 2px;
@@ -203,25 +229,6 @@ header{
 }
 /*********OTHER PROJECTS******/
 
-.other-projects-section{
-    display: flex;
-    flex-direction: column;
-    font-family: roboto;
-    border: red 2px solid;
-}
-
-.other-projects-container{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;  
-}
-.another-project-card{
-    border: solid 2px;
-    display: flex;
-    flex-direction: column;
-}
 
 /*******MY THOUGHTS SECTION*****/
 .my-thoughts-section {
@@ -322,7 +329,7 @@ footer p{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    .featured-projects-container{
+    .standard-projects-container{
         grid-template-columns: repeat(2, 1fr); 
         gap: 20px;
     }
@@ -339,7 +346,7 @@ footer p{
 }
 
 @media screen and (min-width: 1024px) {
-    .featured-projects-container{
+    .standard-projects-container{
         grid-template-columns: repeat(2, 1fr);
         }
  
