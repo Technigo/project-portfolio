@@ -125,14 +125,16 @@ body {
 
 
 /* ***FEATURED PROJECT SECTION *** */
-
-.project-section { /* du kan använda gemensam class på denna samt tech delen precis under */
+.row-3 {
     background-color: turquoise;
+    padding: 49px 24px;
+}
+.project-section { /* du kan använda gemensam class på denna samt tech delen precis under */
+    
     /*height: 520px; /* Denna kan du ändra och lägga till padding som mellanrum */
     justify-content: center;
     align-items: center;
     /*text-align: center;*/
-    padding: 49px 24px;
     font-family: 'Montserrat', sans-serif;
     display: grid; 
     grid-template-columns: 1fr  ;
@@ -153,6 +155,7 @@ body {
     color: #FFFFFF;
     font-weight: bold;
     font-size: 22px;
+    
 }
 
 .project-section-content {
@@ -266,7 +269,7 @@ body {
 
 
 /* *** Skills Section *** */
-.skill-section {
+/*.skill-section {
     display: grid;
     grid-template-columns: 1fr  1fr;
     text-align: center;
@@ -274,7 +277,7 @@ body {
 
     height: 520px;
     background-color:lightseagreen;
-}
+} */
 
 
 
@@ -288,9 +291,15 @@ body {
 
 /* Måste jobba pp */
 @media (min-width:768px) {
+ 
+    
     .project-section { /* du kan använda gemensam class på denna samt tech delen precis under */
         display: grid; 
         grid-template-columns: 1fr 1fr  ;
         text-align: left;
+    }
+
+    .other-project-mobile {
+        display: block;
     }
 }
