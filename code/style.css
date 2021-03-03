@@ -102,14 +102,16 @@ h1 {
 .intro p {
     font-size: 17px;
     line-height: 29px;
-    padding: 49px 24px 60px;
 }
 
 /* MAIN */
 
-main {    
-    padding: 0 24px;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 /* HEADINGS */
 
@@ -138,6 +140,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px 24px;
 }
 
 /* TECH */
@@ -146,12 +149,13 @@ section {
     font-size: 17px;
     line-height: 29px;
     text-align: center;
-    margin: 0 0 50px;
 }
 
 /* PROJECTS */
-.project {
-    margin-bottom: 32px;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 /* PROJECTS --- IMAGE */
@@ -162,6 +166,7 @@ section {
 
 .project-image {
     width: 100%;
+    margin-top: 16px;
 }
 
 .on-top-project-image {
@@ -218,7 +223,6 @@ h4 {
 
 .thoughts-image {
     width: 100%;
-    margin: 16px 0;
 }
 
 .date {
@@ -340,7 +344,6 @@ footer {
     color: white;
     text-align: center;
     padding: 60px 24px 84px;
-    margin-top: 60px;
 }
 
 footer h2 {
@@ -355,4 +358,137 @@ footer h2 {
 footer p {
     font-size: 17px;
     line-height: 25px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 667px) {
+
+    .hero,
+    main {
+        padding: 0;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section > * {
+        width: 60%;
+    }
+
+    .icons-top {
+        width: 260px
+    }
+    
+    .icons-top .circle {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .icons-top img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .title p,
+    .title-name {
+        font-size: 28px;
+        line-height: 37px;
+    }
+    
+    h1 {
+        font-size: 82px;
+        line-height: 100px;
+    }
+    
+    .inside-h1 {
+        display: block;  
+        font-size: 50px;
+        line-height: 78px;
+    }
+
+    .intro,
+    .projects,
+    .skills {
+        background-color: #F4F4F4;
+    }
+
+    .intro p,
+    .tech,
+    footer p {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 59px;
+        width: fit-content;
+    }
+    
+    h3,
+    footer h2 {
+        font-size: 38px;
+        line-height: 47px;
+    }
+  
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px
+    }
+
+    h4,
+    .project-description,
+    .article-text,
+    h6,
+    ul,
+    .icon p {
+        font-size: 25px;
+        line-height: 41px;
+    }
+
+    h5 {
+        font-size: 30px;
+        line-height: 41px;
+    }
+    
+    .read-more,
+    .date,
+    a h5 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    
+    .tag {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    
+    .thoughts-image {
+        width: 100%;
+        margin: 16px 0;
+    }
+    
+    .icons-bottom .circle {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .icons-bottom img {
+        width: 58px;
+        height: 58px;
+    }
+    
+    .icon {
+        width: 220px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+    }
+    
 }
