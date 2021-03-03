@@ -1,11 +1,9 @@
 body {
     font-family: "Montserrat", sans-serif;
-
     margin: 0;
     background:rgb(211, 226, 251);
     color: navy;
 }
-
 
 /********** HERO-IMAGE  ************/
 .hero {
@@ -23,9 +21,13 @@ body {
     top: 70px;
     left: 20px;
     font-size: 20px;
-    color: rgb(101, 9, 248);
+    color: rgb(78, 4, 195);
 }
   
+.hero-title span {
+    font-weight:500; 
+}
+
 .hero-subtitle1 {
     position: absolute;
     top: 120px;
@@ -44,37 +46,27 @@ body {
     color: rgb(152, 9, 248);
 }
 
-
-
-.linkedin {
+.logos {
     position: absolute;
-    top: 5%;
+    top: 3%;
     left: 70%;
-    width: 30px;
-    height: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
 }
 
-.github {
-    position: absolute;
-
-    top: 5%;
-    left: 80%;
+.logos img {
     width: 30px;
     height: 30px;
 }
 
 .stack {
-    position: absolute;
-
-    top: 5%;
-    left: 90%;
-    width: 30px;
-    height: 30px;
     border-radius: 50%;
 }
 
-
-
+a:link {
+    text-decoration: none;
+}
 
 .my-photo {
     position: absolute;
@@ -83,55 +75,149 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-
 }
 
 .introduction {
     display: flex;
     background-color: rgb(234, 234, 250);
-    padding-top: 10px;
+    padding: 10px;
     margin-top: -5px;
 }
+
 .skills-summary {
     display: flex;
     flex-direction: column;
     background-color: rgb(247, 247, 251);
-    
-    /*justify-content: center;*/
-    
-    
 }
   
 p.skills {
     text-align: center;
 }
 
-h4 {
+h3 {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom:0;
 }
 
-h4 span {
+h3 span {
     color: white;
     background-color: red;
+    padding: 5px;
     
 }
 
+h4 {
+    color: red;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+
 h5 {
+    font-size: 20px;
     color: red;
     text-align: center;
-    
-    
+    margin-bottom: 5px;
 }  
   
 p {
     display: flex;
     text-align: justify;
+    text-decoration: none;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+/*************** FEATURED PROJECTS *************/
+
+.featured-projects-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(234, 234, 250);
+    padding: 10px;
+}
+
+.featured-projects-container img {
+    width: 100%;
     padding: 10px;
     margin: 5px;
-
 }
+
+.pic-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.project-img-title {
+    position: absolute;
+    top: 40%;
+    font-family: "Roboto"; 
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(33, 5, 78);
+    background-color: rgba(253, 253, 253, 0.342);
+    padding: 5px;
+}
+h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h6 span {
+    color: black;
+    background-color: rgb(248, 169, 202);
+    padding: 5px;
+    margin-left: 0px;
+    margin-bottom: 0;
+}
+
+/******************** OTHER PROJECTS ****************/
+.other-projects {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 234, 250);
+    padding: 10px;
+}
+
+.other {
+    margin-left: 0px;
+    padding-left: 0px;
+    font-family: "Roboto";
+    text-decoration: underline;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.other span {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline red;
+}
+
+/*************** MY THOUGHTS ************************/
+.my-thoughts {
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 247, 251);
+    padding: 10px;
+}
+
+/*************** MORE THOUGHTS ********************/
+.more-thoughts {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 247, 251);
+    padding: 10px;
+}
+
+
 
 .all-skills {
     display: grid;
@@ -149,6 +235,7 @@ p.description-skills {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
   
+
 
   /*********** MEDIA QUERIES  *************/
 @media(min-width: 768px) {
