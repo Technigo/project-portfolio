@@ -18,13 +18,15 @@ p {
 
 /* HEADER */
 
-header {
+.hero {
     background-color: teal;
     color: white;
+    padding: 0 24px;
     display: flex;
     flex-direction: column;
-    padding: 0 24px;
 }
+
+/* ICONS */
 
 .icons-top {
     align-self: flex-end;
@@ -63,7 +65,7 @@ header {
     letter-spacing: 0.04em;
 }
 
-.title span {
+.title-name {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 13px;
@@ -79,12 +81,10 @@ h1 {
     margin: 0;
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;    
+.inside-h1 {
+    display: block;  
     font-size: 24px;
     line-height: 40px;
-    margin: 0;
 }
 
 .round-image {
@@ -97,6 +97,14 @@ h2 {
     top: 12px;
 }
 
+/* INTRO */
+
+.intro p {
+    font-size: 17px;
+    line-height: 29px;
+    padding: 49px 24px;
+}
+
 /* MAIN */
 
 main {    
@@ -105,7 +113,7 @@ main {
 
 /* HEADINGS */
 
-h3 {
+h2 {
     font-size: 22px;
     line-height: 27px;
     text-align: center;
@@ -114,20 +122,13 @@ h3 {
     padding: 0 2px;
 }
 
-h4 {
+h3 {
     font-size: 21px;
     line-height: 25px;
     text-align: center;
     color: #FA382F;
 }
 
-h5 {
-    font-size: 17px;
-    line-height: 41px;
-    letter-spacing: 0.01em;
-    color: #FA382F;
-    margin: 0;
-}
 
 /* SECTIONS */
 
@@ -137,15 +138,22 @@ section {
     align-items: center;
 }
 
-.intro p {
-    font-size: 17px;
-    line-height: 29px;
-}
+/* TECH */
 
 .tech {
     font-size: 17px;
     line-height: 29px;
     text-align: center;
+    margin: 0;
+}
+
+/* PROJECTS */
+
+h4 {
+    font-size: 17px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    color: #FA382F;
     margin: 0;
 }
 
@@ -177,6 +185,8 @@ section {
     padding: 5px;
 }
 
+/* THOUGHTS */
+
 .date {
     color: #FA382F;
     font-weight: 400;
@@ -184,10 +194,11 @@ section {
     line-height: 29px;
 }
 
-.article-heading {
+h5 {
     font-weight: 700;
     font-size: 21px;
     line-height: 30px;
+    margin: 0;
 }
 
 .article-text {
@@ -206,11 +217,12 @@ a .date {
     text-decoration-line: underline;
 }
 
-a .article-heading {    
+a h5 {    
     font-size: 17px;
     font-weight: 700;
     line-height: 29px;
     text-decoration-line: underline;
+    display: inline;
 }
 
 a .read-more {    
@@ -220,10 +232,15 @@ a .read-more {
 
 /* SKILLS */
 
-.skills div {
+.list-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.list-with-header {
+    padding: 20px;
+    text-align: center;
 }
 
 h6 {
@@ -238,8 +255,7 @@ ul {
     font-size: 17px;
     line-height: 29px;
     list-style: none;
-    text-align: center;
-    padding: 20px;
+    padding: 0;
     margin: 0;
 }
 
@@ -292,7 +308,7 @@ footer {
     padding: 60px 24px 84px;
 }
 
-footer h5 {
+footer h4 {
     font-weight: bold;
     font-size: 21px;
     line-height: 25px;
