@@ -22,7 +22,7 @@ body {
 .header-mobile {
   /* background-color: #222831; */
   background-image: url("./assets/img/caroline\ bystrom-min.jpg");
-  width: 100vw;
+  width: 100%;
   height: 40vh; /*should be changed with mobile view first thinking*/
   object-fit: cover;  /*does this do anything on a background image?*/
   /*  color: #FFD369; first yellow*/
@@ -127,9 +127,6 @@ top: 102px;
 .summary {
   width: 100%;
 }
-.summary-text {
-  width: 100%;
-}
 
 .tech {
   width: 100%;
@@ -141,7 +138,7 @@ top: 102px;
 
 /* repetition something really weird is going on */
 .header-tech {
-  display: inline-block; /*display: inline-flex; */
+  display: inline-flex; /*display: inline-flex; */
   background-color: #393E46; 
   margin: 0px 650px; /* How can I do this in an easier way? */
   color: #FFD369; 
@@ -151,6 +148,7 @@ top: 102px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 5px;
 }
 
@@ -169,12 +167,20 @@ top: 102px;
 
 .weather-app, .chatbot, .business-site, .guess-who-game {
   width: 100%; 
-  object-fit: cover; /*kolla upp hur bilden inte blir utstretchad - is this needed here?*/
+  position: relative;
+  /* object-fit: cover; Is this needed here? */
 }
 
 .header-featured-projects {
-  display: inline-block;
+  display: inline-flex;
   color: #FFD369;
+}
+
+.header-three {
+  position: absolute;
+  top: 250px; 
+  left: 200px;
+  color: white; 
 }
 
 /* has a box shadow on the title */
@@ -192,15 +198,16 @@ top: 102px;
 
 /* footer mobile too? or not */
 .footer {
-font-family: Montserrat;
+  width: 100%;
+  font-family: Montserrat;
 /* font-weight: bold; */
-font-size: 21px;
-line-height: 25px;
-color: #f5b825;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+  font-size: 21px;
+  line-height: 25px; /* CHECK - does this do something now? */
+  color: #f5b825;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contact-information {
@@ -223,7 +230,7 @@ a:hover, .footer {
     line-height: 1.2em KEEP but minimize the font-sixe a bit ? 
 */
   }
-  
+
 .weather-app, .chatbot, .guess-who-game, .business-site {
   width: 523px; /* is it good to set a width here ? */
   height: 600px; 
@@ -240,6 +247,18 @@ a:hover, .footer {
 }
 
 }
+
+/* PROJECT TITLE för featured projects */
+/*
+font-family: Montserrat;
+font-size: 28px;
+line-height: 34px;
+display: flex;
+align-items: center;
+text-align: center;
+*/
+
+
 
 
 
