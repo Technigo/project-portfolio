@@ -99,7 +99,11 @@ h2 {
     height: 324px;
     left: 0px;
     top: 520px;
-    z-index: -1;
+}
+
+.start-figure {
+    filter: invert(29%) sepia(86%) saturate(1663%) hue-rotate(163deg) brightness(91%) contrast(101%);
+    margin-right: 6px;
 }
 
 h3 {
@@ -154,7 +158,7 @@ h5 {
 .featured-projects {
     position: absolute;
     width: 100%;
-    height: 1800px;
+    height: 2100px;
     left: 0px;
     top: 1115px;
     background: #f6f5f5;
@@ -264,6 +268,7 @@ h5 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    border-radius: 3px;
 }
 
 .css-tag {
@@ -276,6 +281,7 @@ h5 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    border-radius: 3px;
 }
 
 .js-tag {
@@ -288,12 +294,23 @@ h5 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    border-radius: 3px;
 }
 
 
 /*********** OTHER PROJECTS ********/
 
-.other-projects-heading {
+.more-projects {
+    position: absolute;
+    width: 100%;
+    top: 2797px;
+}
+
+.more-projects-box {
+    /* width: 327px; */
+}
+
+.more-projects-heading {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -301,12 +318,13 @@ h5 {
     line-height: 27px;
     text-align: center;
     color: #048998;
-    width: 256px;
-    margin-top: 18%;
+    margin-top: 10%;
     margin-bottom: 0;
+    text-decoration: none;
+    /*why is this not working?!??!*/
 }
 
-.additional-project-headings {
+.more-project-cards-heading {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -314,9 +332,73 @@ h5 {
     line-height: 29px;
     letter-spacing: 0.01em;
     color: #048998;
-    margin-top: 12%;
+    text-decoration: none;
+    margin-top: 33px;
     margin-bottom: 0;
 }
+
+
+/*********** MY THOUGHTS SECTION ********/
+
+.my-thoughts {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 3243px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-thoughts-heading {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #048998;
+    width: 180px;
+    margin-bottom: 0;
+}
+
+.article-card img {
+    width: 327px;
+    height: 205px;
+    margin-top: 12%;
+}
+
+.article-card-date {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    color: #048998;
+    margin-top: 9%;
+    margin-bottom: 0;
+}
+
+.article-card-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.acticle-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 0;
+}
+
+.more-thoughts-heading {}
 
 
 /*********** MEDIA QUARIES ********/
