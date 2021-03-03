@@ -1,202 +1,279 @@
+body {
+    margin: 0;
+}
 
 
-.top-image {
-    /*height: 100vh; */
-    position: absolute;
+
+.header {
+    background-color: red;
     height: 520px;
-    width: 100vw;
-    left: 0px;
-    top: 0px;
-    background: url('/pics/1.jpg');
+    background: url('./assets/1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 4;
-} 
+    width: 100%; /*100vw */
+    /*left: -8px; /* Fråga Imorgon */
+    /*top: -8px; /* Fråga Imorgon */
+    position: relative;
+}
 
-.profile-pic {
+
+
+.header-profile-pic {
     position: absolute;
     width: 180px;
     height: 180px;
-    left: 180px; /* 180px */
-    top: 356px; /* 356 */ 
+    left: 45%; /* 180px */
+    top: 67%; /* 356 */ 
     border-radius: 50%;
     border: 4px solid white; 
     z-index: 5;
- 
+    /*background: url('./assets/profile-pic.jpg');*/
 }
 
-.intro-section {
-    background-color: blue /* #F4F4F4; */;
+.icons{
     position: absolute;
-    width: 100vw;
-    left: 0;
-    top: 520px;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-} 
-
-.intro-section-text {
-    text-align: center;
-    padding: 49px 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 17px;
-    line-height: 29px;
-    width: 58%;
-
-} 
-
-
-/* TEST */
-
-
-.tech-section {
-    background-color: red; /* ändra till White sen */
-    position: absolute;
-    width: 100vw;
-    /*height: 324px; */
-    left: 0;
-    top: 913px; 
-    display: flex;
-    justify-content: center;
-} 
-
-.tech-section-text {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    size: 30px;
-    line-height: 24px; 
-    letter-spacing: 1%;
-    padding: 49px 24px;
-    width: 58%;
-
-} 
-
-
-/* TEST */
-
-
-
-.figure {
-    background-color: green; /* ändra till White sen */
-    position: absolute;
-    width: 100vw;
-    height: 800px; 
-    left: 0;
-    top: 1256.44px; 
-    justify-content: center;
-} 
-
-.figure img {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+    left: 60%;
+    top: 10%;
 }
 
-.project {
-    border: 6px solid black;
-    align-items: center;
+.header-icon{
+    z-index: 15;
+    width: 25%;
+}
+
+.header-profile-description {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    left: 10%;
+    top: 30%;
     
 }
 
-
-
-
-
-@media (min-width: 402px) {
-    .tech-section {
-        top: 913px;
-    }
+.header-profile-description p {
+    font-family: 'Roboto' sans-serif;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0px;
 }
 
-@media (min-width: 424px) {
-    .tech-section {
-        top: 884px;
-    }
+.header-profile-description p span {
+    font-weight: bold;
+
 }
 
-
-@media (min-width: 445px) {
-    .tech-section {
-        top: 855px;
-    }
+.header-profile-description h3 {
+    color: #FFFFFF;
+    font-size: 40px;
+    margin: 0px;
 }
 
-
-@media (min-width: 522px) {
-    .tech-section {
-        top: 826px;
-    }
+.header-profile-description h4 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 0px;
 }
 
 
+/* *** TOP SECTION *** */
 
-@media (min-width: 647px) {
-    .tech-section {
-        top: 797px;
-    }
+.top-section { /* du kan använda gemensam class på denna samt tech delen precis under */
+    background-color: red;
+    /*height: 520px; /* Denna kan du ändra och lägga till padding som mellanrum */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+    padding: 49px 24px;
 }
 
-@media (min-width: 760px) {
-    .tech-section {
-        top: 768px;
-    }
-}
+.top-section-text {
 
-/* **** Small Desktop Device *** */
-@media (min-width: 1024px) {
-    .intro-section-text {
-        font-size: 30px;
-        line-height: 50px;
-    } 
-
-    .tech-section {
-        top: 978px;
-        
-    }
-
-    .tech-section-text {
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 50px; 
-        
-    }  
-}
-
-@media (min-width: 1142px) {
-    .tech-section {
-        top: 928px;
-    }
-}
-
-@media (min-width: 1340px) {
-    .tech-section {
-        top: 878px;
-    }
+    font-weight: normal; /* Ta bort denna sen */
+    /* width:50%  DETTA SKA DU GÖRA SEN NÄR DU ANPASSAR DIN KOD TILL OLIKA DEVICES*/
 }
 
 
+/* *** TECH SECTION *** */
 
-
-
-/* **** Big Desktop Device *** */
-@media (min-width: 1670px) {
-    .tech-section {
-        top: 878px;
-    }
+.tech-section { /* du kan använda gemensam class på denna samt tech delen precis under */
+    background-color: blue;
+    /*height: 520px; /* Denna kan du ändra och lägga till padding som mellanrum */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+    padding: 49px 24px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-@media (min-width: 1855px) {
-    .tech-section {
-        top: 828px;
-    }
+.tech-section-text {
+    font-weight: normal; /* Ta bort denna sen */
+    /* width:50%  DETTA SKA DU GÖRA SEN NÄR DU ANPASSAR DIN KOD TILL OLIKA DEVICES*/
+}
+
+.tech-section-text h4{
+    text-align: center;
+}
+
+.tech-section-text h4 span {
+    background-color: green;
+    font-weight: bold;
+}
+
+
+/* ***FEATURED PROJECT SECTION *** */
+
+.project-section { /* du kan använda gemensam class på denna samt tech delen precis under */
+    background-color: turquoise;
+    /*height: 520px; /* Denna kan du ändra och lägga till padding som mellanrum */
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+    padding: 49px 24px;
+    font-family: 'Montserrat', sans-serif;
+    display: grid; 
+    grid-template-columns: 1fr  ;
+    text-align: left;
+   
+}
+
+.project-section img {
+    width: 100%;
+}
+
+.highlight {
+    text-align: center;
+}
+
+.highlight span{
+    background-color: #FA382F;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.project-section-content {
+    margin: 15px;
+}
+
+.project-section-content h4 span {
+    color: #FA382F;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.project-section-content p{
+    color: #000000;
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+
+}
+
+.tags {
+    display: flex;
+}
+
+.tags p{
+    margin: 2px;
+    background-color: #FDDFE7;
+}
+
+.other-project-mobile {
+    display: none;
+}
+
+
+
+
+/* ** Thoughts Section *** */
+.thoughts-section {
+    background-color: khaki;
+    font-family: 'Montserrat', sans-serif;
+    /*display: flex; HÖÖÖÖÖÖÖÖ DESSA SKA DU LÄGGA SEN FÖR ATT CENTRERA TEXTEN NÄR U FÖRSTORAR DEVICEN
+    justify-content: center; */
+    
+
+}
+
+.thoughts-section-text {
+    padding: 48px 24px;
+    /*width: 50%; HÄR ÄNDRAR DU STORLEKEN NÄR DU ÄNDRAR DEVICE*/
+
+}
+
+.thoughts-section-text h2{
+    text-align: center;
+}
+
+.thoughts-section-text h2 span {
+    background-color: lawngreen;
+}
+
+.thoughts-section-text img {
+    width: 100%;
+}
+
+.date {
+    font-family: 'Roboto',sans-serif;
+    font-size: 17px;
+    color: #FA382F;
+    font-weight: normal;
+}
+
+.article-description {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.article-text {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.read-more {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: #FA382F;
+}
+
+
+.more-thoughts h2 span{
+    background-color: khaki;
+    text-decoration:none
+}
+
+.more-thoughts span {
+    color:#FA382F;
+    text-decoration: underline;
+}
+
+.more-thoughts h3{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+/* *** Skills Section *** */
+.skill-section {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    text-align: center;
+
+
+    height: 520px;
+    background-color:lightseagreen;
 }
 
 
@@ -209,17 +286,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Måste jobba pp */
+@media (min-width:768px) {
+    .project-section { /* du kan använda gemensam class på denna samt tech delen precis under */
+        display: grid; 
+        grid-template-columns: 1fr 1fr  ;
+        text-align: left;
+    }
+}
