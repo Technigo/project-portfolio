@@ -1,6 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
+    color: #0F1123;
 }
 
 /* Header background-color: #CBB3BF; background-color: #685F74; #A0AD99; #99AD9E; #0F1123; #505B61; #AD9999; */
@@ -95,7 +96,7 @@ body {
 
 .line {
     width: 5%;
-    border-bottom: 2px solid #4e3d53;
+    border-bottom: 2px solid #0f1123;
     margin-bottom: 5px;
     display: inline-block;
 }
@@ -103,13 +104,13 @@ body {
 .circle {
     width: 12px;
     height: 12px;
-    background-color: #4e3d53;
+    background-color: #0f1123;
     border-radius: 50%;
     display: inline-block;
     margin-right: 5px;
 }
 
-.info-about-me .paragraph {
+.paragraph {
     font-size: 18px;
 }
 
@@ -124,14 +125,10 @@ body {
 }
 
 .section-header {
-    background-color: #4e3d53;
+    background-color: #0F1123;
     color: white;
     padding: 10px;
     font-size: 20px;
-}
-
-.paragraph {
-    font-size: 18px;
 }
 
 /* Section with my featured projects */
@@ -149,7 +146,7 @@ body {
 .featured-projects, .all-thoughts {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .project-card, .thoughts-card {
@@ -160,19 +157,19 @@ body {
     cursor: pointer;
 }
 
-.project-link {
+.project-link, .thoughts-link {
     text-decoration: none;
-    color: black;
+    color: #0F1123;
     outline: none;
     padding: 5px;
 }
 
-.project-link:hover, .thoughts-card:hover {
+.project-link:hover, .thoughts-link:hover {
     opacity: 0.8;
 }
 
-.project-link:focus {
-    background-color: #c5b7b7;
+.project-link:focus, .thoughts-link:focus {
+    background-color: #0F1123;
     color: white;
 }
 
@@ -185,13 +182,11 @@ body {
 .project-title {
     margin-bottom: 5px;
     font-size: 18px;
-    color: #0F1123;
 }
 
 .project-paragraph {
     font-size: 18px;
     margin: 0;
-    color: #0F1123;
 }
 
 .used-tech-container {
@@ -219,26 +214,25 @@ body {
     flex-direction: column;
 }
 
-.other-projects-link {
+.other-projects-link, .other-thoughts-link {
     text-decoration: none;
     outline: none;
+    color: #0F1123;
     padding: 5px;
-    color: black;
 }
 
-.other-projects-link:hover {
+.other-projects-link:hover, .other-thoughts-link:hover {
     opacity: 0.8;
 }
 
-.other-projects-link:focus {
-    background-color:  #c5b7b7;
+.other-projects-link:focus, .other-thoughts-link:focus {
+    background-color:  #0F1123;
     color: white;
 }
 
 .other-projects-title {
     text-align: center;
     font-size: 24px;
-    color: #0F1123;
 }
 
 .other-projects-info {
@@ -248,13 +242,8 @@ body {
 }
 
 .fa-angle-double-right {
-    background-color: transparent;
-    border: none;
     font-size: 20px;
-    margin-left: 5px;
-    cursor: pointer;
-    outline: none;
-    color: #0F1123;
+    margin-left: 5px;  
 }
 
 .title {
@@ -337,10 +326,10 @@ body {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    border: 3px solid #4e3d53;
+    border: 3px solid #0F1123;
     margin: 20px 5px;
     cursor: pointer;
-    color: #4e3d53;
+    color: #0F1123;
     outline: none;
     text-decoration: none;
     font-size: 30px;
@@ -360,7 +349,7 @@ body {
 /* Footer */
 
 .footer {
-    background-color: #505B61;
+    background-color: #0F1123;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,19 +394,12 @@ body {
         width: 80%;
     }
 
-    /* .projects-container {
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 10px;
-    } */
-
     .featured-projects, .all-thoughts {
         width: 90%;
     }
 
     .project-card, .thoughts-card {
         width: 45%;
-        margin: 10px;
     }
 
     .project-image {
@@ -426,7 +408,7 @@ body {
 
     .other-projects-container, .other-thoughts {
         justify-content: flex-start;
-        width: 83%;
+        width: 90%;
         margin-top: 40px;
     }
 
@@ -446,19 +428,12 @@ body {
         width: 60%;
     }
 
-    /* .projects-container {
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 10px;
-    } */
-
     .featured-projects, .all-thoughts {
         width: 70%;
     }
 
     .project-card, .thoughts-card {
         width: 45%;
-        margin: 20px;
     }
 
     .project-image {
@@ -472,7 +447,7 @@ body {
     }
 
     .other-projects-container {
-        width: 65%;
+        width: 70%;
     }
 
     .other-thoughts {
