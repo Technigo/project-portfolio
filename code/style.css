@@ -1,13 +1,14 @@
 :root {
-  --primary: #303960;
+  --primary: #ffffff; 
   --secondary: #ea9a96;
-  --third: #f8b24f;
-  --fourth: #e5e5e5; 
-  --fifth: #ffffff;
+  --third: #e5e5e5; 
+  --fourth: #303960; 
+  --fifth: rgb(248, 178, 79); 
+  --fifth-opacity: rgb(248, 178, 79, 0.6);
 }
 
 body, html {
-  background: var(--fifth);
+  background: var(--primary);
   margin: 0;
   height: 100%;
 }
@@ -20,23 +21,42 @@ p {
   margin: 0%;
 }
 
+
 /*** SUB HEADINGS ***/
-.sub-heading-container {
+.sub-headings-container {
   height: 26px;
   text-align: center;
   padding-top: 40px;
 }
 
-.sub-heading-container h3 {
+.sub-headings-container h2 {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 27px;
-  color: var(--fifth);
+  color: var(--primary);
   background: var(--secondary);
   display: inline;
   padding: 0px 4px;
+}
+
+
+/*** PROJECT TAGS ***/
+.project-tags {
+  margin-top: 10px;
+}
+
+.tag {
+  font-family: 'Roboto', sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 11px;
+  text-align: center;
+  color: #000000;
+  background: var(--fifth-opacity); 
+  display: inline;
+  padding: 5px 6px;
+  margin-right: 5px;
 }
 
 
@@ -49,7 +69,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: scale-down;
-  color: var(--fifth);
+  color: var(--primary);
   display: flex;
   flex-direction: column;
 }
@@ -63,15 +83,15 @@ p {
   text-align: center;
 }
 
-.fab {
+.social-media-top {
   padding: 8px;
   font-size: 20px;
   width: 20px;
   text-align: center;
   text-decoration: none;
-  border: solid 2px var(--fifth);
+  border: solid 2px var(--primary);
   border-radius: 50%;
-  color: var(--fifth); 
+  color: var(--primary); 
 }
 
 .headings-container {
@@ -118,7 +138,7 @@ p {
   left: 171px; /**/
   top: 356px;
   overflow: hidden;
-  border: solid 2px var(--fifth);
+  border: solid 2px var(--primary);
   border-radius: 50%;
 }
 
@@ -134,7 +154,7 @@ p {
 
 /*** INTRO SECTION ***/
 .intro-section {
-  background: var(--fourth);
+  background: var(--third);
   height: 232px;
   width: auto;
   padding: 40px 20px;
@@ -177,7 +197,7 @@ p {
 
 .project-card {
   height: 341px;
-  padding: 40px 25px 25px 25px;
+  padding: 40px 25px 15px 25px;
   position: relative;
 }
 
@@ -188,6 +208,7 @@ p {
 .project-card-image {
   height: 212px;
   width: 100%;
+  filter: brightness(70%);
 }
 
 .project-card-title {
@@ -201,11 +222,227 @@ p {
   line-height: 34px;
   text-align: center;
   text-decoration: none;
-  color: var(--fifth);
+  color: var(--primary);
+}
+
+.project-card-short-info {
+
+}
+
+.short-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 29px;
+  color: var(--secondary);
+  padding-top: 20px;
+}
+
+.short-info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #000000;
+  padding-top: 10px;
+}
+
+/*** Other projects ***/
+.other-projects {
+  padding: 30px 25px 70px 25px;
+}
+
+.other-projects h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--secondary);
+}
+
+.other-projects a {
+  text-decoration: none;
+}
+
+.other-projects-short-info {
+
+}
+
+.arrow {
+  color: var(--secondary);
+  font-weight: 700;
 }
 
 
+/*** MY THOUGHTS SECTION ***/
+.my-thoughts-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 
+.my-thoughts-card {
+  height: 341px;
+  padding: 40px 25px 15px 25px;
+  position: relative;
+}
+
+.my-thoughts-card a {
+  text-decoration: none;
+}
+
+.my-thoughts-card-image {
+  height: 212px;
+  width: 100%;
+  filter: brightness(70%);
+}
+
+.my-thoughts-card-info {
+  height: 110px;
+}
+
+.my-thoughts-date {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--secondary);
+  padding-top: 20px;
+}
+
+.my-thoughts-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  margin: 0;
+}
+
+.my-thoughts-summary {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000;
+}
+
+.more-thoughts {
+  padding: 30px 25px 60px 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.more-thoughts h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--secondary);
+}
+
+.more-thoughts-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  color: #000000;
+  padding-top: 30px;
+}
+
+.link-date {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+.link-arrow {
+  color: var(--secondary);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/*** SKILLS SECTION ***/
+.skills-section {
+
+}
+
+.skills-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px 0px 30px 0px;
+}
+
+.skills-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px 10px 0px;
+  width: 40%;
+}
+
+.skills-stack h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  color: var(--secondary);
+  margin: 0;
+}
+
+.skills-stack span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  color: #000000;
+}
+
+
+/*** FOR MORE SECTION ***/
+.for-more-section {
+
+}
+
+.for-more-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0px 30px 0px;
+}
+
+.for-more-social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px 40px 0px;
+  width: 40%;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  color: var(--secondary);
+}
+
+.for-more-social-media span {
+  padding-top: 15px;
+}
+
+.social-media-bottom {
+  padding: 8px;
+  font-size: 40px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border: solid 2px var(--secondary);
+  border-radius: 50%;
+  color: var(--secondary); 
+}
 
 
 
@@ -213,8 +450,30 @@ p {
 .footer {
   position: absolute;
   height: 300px;
-  width: auto;
-  background: var(--primary);
+  width: 100%;
+  background: var(--fourth);
+}
+
+.footer h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 41px;
+  text-align: center;
+  color: var(--primary);
+}
+
+.footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--primary);
+}
+
+.footer-container {
+  padding: 40px 25px 40px 25px;
 }
 
 
