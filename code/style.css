@@ -7,9 +7,6 @@
   border: 1px solid white; 
 } 
 
-:root {
-}
-
 /*Remove the margin in all browsers.*/
 body {
   margin: 0;
@@ -32,11 +29,20 @@ body {
   /* color: #f5b418; second yellow */ 
   color: #f5b825;  
   letter-spacing: 2px; 
+  line-height: 200%;
   position: relative;
   display: flex;
   flex-direction: column;
+/*
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+*/  
 }
 
+.profession {
+    font-family: 'Montserrat', sans-serif; /*take away om fungerar att bara ändra där det ska vara Roboto*/
+}
 /* DESKTOP and TABLET header */
 /* image 9 */
 /*
@@ -108,7 +114,7 @@ top: 102px;
 /* Main container */
 
 .main-container {
-  width: 100vw; /* or: 100 %  ?? */
+  width: 100%; 
   right: 25px;
   color: whitesmoke; 
   letter-spacing: 2px;
@@ -118,10 +124,15 @@ top: 102px;
   flex-wrap: wrap;
 }
 
+.summary {
+  width: 100%;
+}
 .summary-text {
+  width: 100%;
 }
 
 .tech {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -130,7 +141,7 @@ top: 102px;
 
 /* repetition something really weird is going on */
 .header-tech {
-  display: inline-block;
+  display: inline-block; /*display: inline-flex; */
   background-color: #393E46; 
   margin: 0px 650px; /* How can I do this in an easier way? */
   color: #FFD369; 
@@ -146,10 +157,10 @@ top: 102px;
 .skill {
   background-color: #393E46; 
   color: #FFD369;
-  margin: 20px; 
 }
 
 .featured-projects {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,10 +168,8 @@ top: 102px;
 }
 
 .weather-app, .chatbot, .business-site, .guess-who-game {
-  /* width: 100%; */
+  width: 100%; 
   object-fit: cover; /*kolla upp hur bilden inte blir utstretchad - is this needed here?*/
-  width: 523px; /* is it good to set a width here ? */
-  height: 600px; 
 }
 
 .header-featured-projects {
@@ -170,12 +179,15 @@ top: 102px;
 
 /* has a box shadow on the title */
 .other-projects {
+  width: 100%;
 }
 
 .my-thoughts {
+  width: 100%;
 }
 
 .skills {
+  width: 100%;
 }
 
 /* footer mobile too? or not */
@@ -206,6 +218,20 @@ a:hover, .footer {
 
 /* Media queries */
 @media (min-width: 768px) {
+  .profession {
+ /*   font-size: 82px;
+    line-height: 1.2em KEEP but minimize the font-sixe a bit ? 
+*/
+  }
+  
+.weather-app, .chatbot, .guess-who-game, .business-site {
+  width: 523px; /* is it good to set a width here ? */
+  height: 600px; 
+}
+  .skill {
+    margin: 20px; 
+  }
+
   .feat-projects {
       width: 100%; /* Does not do much since I've set them to a default width? */
       display: flex;
@@ -214,6 +240,7 @@ a:hover, .footer {
 }
 
 }
+
 
 
 /*
