@@ -60,12 +60,14 @@ a:visited {
 
 .container-skills {
     display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
 }
 
 .skill {
     font-size: 14px;
     background-color: #faf395;
-    margin: 10px 10px 5px 0;
+    margin: 5px 10px 0 0;
     padding: 2px 5px;
 }
 
@@ -172,6 +174,10 @@ margin-left: 10px;
     padding: 25px 0;
 }
 
+.fas.fa-arrow-right {
+    font-size: 14px;
+}
+
 .intro-text {
     font-size: 16px;
     width: 70%;
@@ -191,6 +197,10 @@ margin-left: 10px;
     text-align: center;
     margin: auto;
     margin-top: 25px;
+}
+
+.highlight {
+    font-weight: bold;
 }
 
 /* PROJECTS */
@@ -220,24 +230,28 @@ margin-left: 10px;
     display: none;
 }
 
-
-.project-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-image: url('./images/projects/example.png');
-    background-size: cover;
-    height: 250px;
-    margin-bottom: 5px;
+.img-container {
+    position: relative;
     text-align: center;
 }
 
+.img-container img {
+    height: auto;
+    width: 100%;
+    filter: brightness(50%);
+}
+
 .project-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    color: white;
     font-size: 20px;
+    color: white;
+    margin: 0;
+    width: 80%;
 }
 
 .project-name-description {
@@ -289,14 +303,17 @@ margin-left: 10px;
 }
 /**/
 
+
 .section-my-thoughts img {
-    height: 250px;
+    position: relative;
+    height: auto;
     width: 100%;
-    margin: auto;
+    
 }
 
 .date {
     font-size: 16px;
+    color: #f87760;
     margin: 0;
 }
 
@@ -351,7 +368,7 @@ margin-left: 10px;
     border: dashed 1px black;
     border-radius: 10px;
     margin-top: 30px;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .skill-box-more {
@@ -363,7 +380,7 @@ margin-left: 10px;
     background-color: white;
     border: dashed 1px black;
     border-radius: 10px;
-    padding: 10px 0;
+    padding: 15px 0;
     margin-top: 15px;
 }
 
@@ -454,11 +471,11 @@ footer {
     }
     
     /*Skill stamp*/
-    
+
     .skill {
         font-size: 16px;
+        margin-top: 5px;
         padding: 0 5px;
-        margin-top: 20px;
     }
     
     .fas.fa-chevron-right {
@@ -528,6 +545,10 @@ footer {
         padding: 50px 0;
     }
     
+    .fas.fa-arrow-right {
+        font-size: 20px;
+    }
+
     .intro-text {
         font-size: 22px;
         width: 70%;
@@ -555,7 +576,7 @@ footer {
     
     .container-featured-projects {
         flex-direction: row;
-        align-items: center;
+        align-items: stretch;
         flex-wrap: wrap;
         justify-content: space-between;
     
@@ -570,21 +591,6 @@ footer {
         margin-bottom: 45px;
     }
     
-/*     .project-hidden {
-        display: inline;
-    
-        background-color: white;
-        width: 45%;
-        padding: 15px;
-        margin-bottom: 10px;
-    } */
-    
-    .project-img {
-        background-size: cover;
-        height: 250px;
-        margin-bottom: 15px;
-    }
-    
     .project-name {
         font-size: 30px;
     }
@@ -594,7 +600,7 @@ footer {
     }
     
     .container-other-projects {
-        width: 700px;
+        width: 670px;
         margin: auto;
     
     }
@@ -603,15 +609,6 @@ footer {
         padding: 15px;
         margin-bottom: 10px;
     }
-    
-    /* .other-projects-hidden {
-        display: inline-block;
-    
-        width: 100%;
-        background-color: white;
-        padding: 15px;
-        margin-bottom: 10px;
-    } */
     
     /*MY THOUGHTS*/
     
@@ -622,6 +619,7 @@ footer {
     .container-code-thoughts {
         display: flex;
         flex-direction: row;
+        align-items: stretch;
         justify-content: space-between;
     
         width: 700px;
@@ -644,15 +642,8 @@ footer {
         margin: 0;
     }
     
-    .section-my-thoughts img {
-        height: 250px;
-        /* width: 100%; */
-        margin: auto;
-    }
-    
     .date {
         font-size: 18px;
-        color: #f87760;
     }
     
     .thoughts-name {
@@ -693,12 +684,12 @@ footer {
     .skill-box {
         width: 30%;
         margin-top: 0;
-        padding: 10px 5px;
+        padding: 20px 5px;
     }
     
     .skill-box-more {
          width: 30%;
-         padding: 10px 5px;
+         padding: 20px 5px;
          margin-top: 0;
     }
     
@@ -846,6 +837,10 @@ margin-left: 20px;
     padding: 50px 0;
 }
 
+.fas.fa-arrow-right {
+    font-size: 22px;
+}
+
 .intro-text {
     font-size: 22px;
     width: 55%;
@@ -873,7 +868,7 @@ margin-left: 20px;
 
 .container-featured-projects {
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -897,12 +892,6 @@ margin-left: 20px;
     margin-bottom: 10px;
 }
 
-.project-img {
-    background-size: cover;
-    height: 400px;
-    margin-bottom: 15px;
-}
-
 .project-name {
     font-size: 30px;
 }
@@ -912,7 +901,7 @@ margin-left: 20px;
 }
 
 .container-other-projects {
-    width: 1000px;
+    width: 970px;
     margin: auto;
 
 }
@@ -940,6 +929,7 @@ margin-left: 20px;
 .container-code-thoughts {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     justify-content: space-between;
 
     width: 1000px;
@@ -962,15 +952,9 @@ margin-left: 20px;
     margin: 0;
 }
 
-.section-my-thoughts img {
-    height: 250px;
-    width: 100%;
-    margin: auto;
-}
 
 .date {
     font-size: 18px;
-    color: #f87760;
 }
 
 .thoughts-name {
@@ -1011,12 +995,12 @@ margin-left: 20px;
 .skill-box {
     width: 30%;
     margin-top: 0;
-    padding: 15px 0;
+    padding: 20px 5px;
 }
 
 .skill-box-more {
      width: 30%;
-     padding: 15px 0;
+     padding: 20px 5px;
      margin-top: 0;
 }
 
