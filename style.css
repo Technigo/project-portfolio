@@ -1,63 +1,37 @@
 body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   background-color: rgb(170, 166, 206);
 }
 
 .header-container {
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(177,114,229,1) 100%);
-  heigth: 500px;
   color: white;
   display: flex;
   flex-direction: column;
-  flex-items: flex-end;
-  justify-content: space-between;
+  
 }
 
 .header-text {
-position: absolute;
-width: 607px;
-height: 339px;
-left: 410px;
-top: 206px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 28px;
-line-height: 37px;
-/* or 132% */
-
-letter-spacing: 0.04em;
+align-self: flex-start;
 }
 
 .profile-img {
   border-radius: 50%;
-  border: 4px solid rgb(170, 34, 170);
+  border: 4px solid white;
   width: 200px;
   height: 200px;
   margin-right: 60px;
   margin-bottom: -30px;
   
+  
 }
 
-.info-section {
-  position: absolute;
-width: 1100px;
-height: 200px;
-left: 410px;
-top: 791px;
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 50px;
-/* or 167% */
-
-
-color: #000000;
+.icons {
+  text-align: right;
+  margin: 0 10px 0 0;
 }
-
 
 ul {
   list-style: none;
@@ -68,21 +42,23 @@ li {
 }
 
 li a {
-  display: table-cell;
-  verticle-align: middle;
   text-align: center;
   height: 40px;
   width: 40px;
 }
 
+
+
 h1 {
   font-family: Montserrat;
   font-size: 60px;
-  font-weight: 400;
+  margin: 0;
+  
 }
 
 h2 {
   font-family: Montserrat;
+  margin: 0;
 }
 
 h3 {
@@ -91,7 +67,6 @@ h3 {
   padding: 4px;
   text-align: center;
   box-sizing: border-box;
-
 }
 
 h4 {
@@ -112,21 +87,49 @@ h4 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
 }
 
-.project-section {
-position: absolute;
-width: 1920px;
-height: 2222px;
-left: 0px;
-top: 1640px;
-
-background: #F4F4F4;
+.project-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: #3daa13;
 }
 
-footer {
-  text-align: center;
+.projects {
   display: flex;
   flex-direction: column;
+}
 
+
+.project-container a {
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-items: center;
+}
+
+.tech-tags {
+display: flex;
+flex-flow: row-wrap;
+margin-left: 10%;
+}
+
+.tag {
+background-color: pink;
+margin: 10px 5px 0 0 ;
+padding: 3px 10px 1px 10px;
+align-items: center;
+}
+
+.contact-info {
+display: flex;
+flex-direction:column;
+}
+
+h5 {
+  margin: 0;
+  padding: 10px 0 0  10px;
 }
