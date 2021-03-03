@@ -194,8 +194,15 @@ body {
 
 
 /* ** Thoughts Section *** */
-.thoughts-section {
+
+.row-4 {
     background-color: khaki;
+    padding: 49px 24px;
+}
+
+.thoughts-section {
+    display: grid; 
+    grid-template-columns: 1fr  ;
     font-family: 'Montserrat', sans-serif;
     /*display: flex; HÖÖÖÖÖÖÖÖ DESSA SKA DU LÄGGA SEN FÖR ATT CENTRERA TEXTEN NÄR U FÖRSTORAR DEVICEN
     justify-content: center; */
@@ -257,7 +264,11 @@ body {
 
 .more-thoughts h2 span{
     background-color: khaki;
-    text-decoration:none
+    text-decoration:none;
+}
+
+.more-thoughts h2 {
+    text-align: center;
 }
 
 .more-thoughts span {
@@ -307,7 +318,16 @@ body {
         display: block;
     }
 
+    .thoughts-section { /*Måste jobba på denna */
+        display: grid; 
+        grid-template-columns: 1fr  1fr;}
+
     .second-thought {
         display: block;
     }
+
+    .more-thoughts {
+        text-align: center;
+    }
+   
 }
