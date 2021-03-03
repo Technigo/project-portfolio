@@ -1,41 +1,63 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); */
-/* Bold 700 Montserrat for HEADER: font-family: 'Montserrat', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 /* Medium 500 Montserrat font-family: 'Montserrat', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 /* Roboto Medium 500 as a default fallback? font-family: 'Roboto', sans-serif; */
 
-* { /*Shows boxes for everything for easier placement */
-  border: 1px solid white;
+* { /* Boxes for everything - placement */
+  border: 1px solid white; 
+} 
+
+:root {
 }
 
 /*Remove the margin in all browsers.*/
 body {
   margin: 0;
-  /* background-color: #393E46; */
-  background-color: #222831;
-  font-family: 'Montserrat', sans-serif;
-}
-
 /*
-Render the `main` element consistently in IE.
-*/
+  box-sizing: border-box;
+  width: 100%;
+*/  
+  background: #222831;
+  /* background-color: #393E46; */
+  font-family: 'Montserrat', sans-serif; /* Change this locally to sections later? or keep if most is using Montserrat */
+}
 
 .header-mobile {
   /* background-color: #222831; */
   background-image: url("./assets/img/caroline\ bystrom-min.jpg");
+  width: 100vw;
+  height: 40vh; /*should be changed with mobile view first thinking*/
   object-fit: cover;  /*does this do anything on a background image?*/
   /*  color: #FFD369; first yellow*/
   /* color: #f5b418; second yellow */ 
   color: #f5b825;  
   letter-spacing: 2px; 
-  height: 40vh;  /*should be changed with mobile view first thinking*/
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
+/* DESKTOP and TABLET header */
+/* image 9 */
+/*
+.desktop-header .icons, .icon-9 {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 1430px;
+top: 102px;
+}
+*/
+
 .header-mobile .icons {
+  /* SoMe-white */
+  /*
+  position: absolute;
+  width: 130.5px;
+  height: 40px;
+  left: 220px;
+  top: 48px;
+  */
   margin-top: 40px;
   margin-right: 25px; 
   display: flex; 
@@ -43,29 +65,50 @@ Render the `main` element consistently in IE.
   padding: 5px;
 }
 
-.icons .fab, .fa {
-  margin: 5px; 
+.icon-10, .icon-13, .icon-8 {
   border-radius: 50%;
-}
-
-.profession {
-  font-size: 35px;
-  word-break: keep-all; /*jag vill få orden att aligna under varandra i desktop, tablet och mobile*/
+  margin: 5px;
 }
 
 .caroline-image {
   position: absolute; 
   right: 25px;
   top: 180px; 
-  height: 160px; 
+  height: 160px;
   border-radius: 50%;
 }
 
 .bold-position {
   font-size: 20px;
+  /* PORTFOLIO: NAME SURNAME frontend developer + digital designer */
+  position: absolute;
+  left: 24px;
+  top: 121px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
 }
 
-.main-section {
+.profession {
+  position: absolute;
+  left: 24px;
+  top: 160px;
+  font-size: 35px;
+  line-height: 37px;
+  word-break: keep-all; /*jag vill få orden att aligna under varandra i desktop, tablet och mobile*/
+  /*
+  position: absolute;
+  width: 607px;
+  height: 339px;
+  left: 410px;
+  top: 206px;
+  */
+}
+
+/* Main container */
+
+.main-container {
+  width: 100vw; /* or: 100 %  ?? */
   right: 25px;
   color: whitesmoke; 
   letter-spacing: 2px;
@@ -79,32 +122,53 @@ Render the `main` element consistently in IE.
 }
 
 .tech {
-}
-
-.header-tech {
-  display: inline-block;
   display: flex;
   justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+}
+
+/* repetition something really weird is going on */
+.header-tech {
+  display: inline-block;
   background-color: #393E46; 
-  margin: 0px 150px; 
+  margin: 0px 650px; /* How can I do this in an easier way? */
   color: #FFD369; 
 }
 
 .skills-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 5px;
 }
 
-.skills-list .skill {
+.skill {
   background-color: #393E46; 
   color: #FFD369;
-}
-.featured-projects .weather-app {
-  object-fit: cover; /*Don't seem to do anything right now*/
+  margin: 20px; 
 }
 
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.weather-app, .chatbot, .business-site, .guess-who-game {
+  /* width: 100%; */
+  object-fit: cover; /*kolla upp hur bilden inte blir utstretchad - is this needed here?*/
+  width: 523px; /* is it good to set a width here ? */
+  height: 600px; 
+}
+
+.header-featured-projects {
+  display: inline-block;
+  color: #FFD369;
+}
+
+/* has a box shadow on the title */
 .other-projects {
 }
 
@@ -114,7 +178,41 @@ Render the `main` element consistently in IE.
 .skills {
 }
 
+/* footer mobile too? or not */
 .footer {
+font-family: Montserrat;
+/* font-weight: bold; */
+font-size: 21px;
+line-height: 25px;
+color: #f5b825;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.contact-information {
+
+}
+
+a, .footer {
+  text-decoration: none;
+  color: #f5b825; 
+}
+
+a:hover, .footer {
+  border-bottom:2px solid #f5b825;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  .feat-projects {
+      width: 100%; /* Does not do much since I've set them to a default width? */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+}
+
 }
 
 
