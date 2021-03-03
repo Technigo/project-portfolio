@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
     <title>Bellsibub</title>
+    <!-- A custom build of Modernizr to test if the current browser is supporting webp -->
+    <script src="./modernizr-custom.js" /></script>
   </head>
   <body>
     <header class="hero">
       <p>PORTFOLIO: <b>Isabella Billgren </b></p>
       <h1>frontend developer</h1>
       <h2>+ experienced QA Engineer</h2>
-      <img
-        class="hero__avatar"
-        src="./assets/avatar.webp"
-        alt="selfie image of Isabella Billgren"
-      />
+      <picture>
+        <source srcset="./assets/avatar.webp">
+        <source srcset="./assets/avatar.jpg">
+        <img
+          class="hero__avatar"
+          src="./assets/avatar.webp"
+          alt="selfie image of Isabella Billgren"
+        />        
+      </picture>
     </header>
     <section class="section--alt-background" aria-label="description about me">
       <!-- accoridng to: https://www.w3.org/WAI/tutorials/images/decorative/ we should leave alt empty if the image is decorative -->
