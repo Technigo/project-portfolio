@@ -1,7 +1,9 @@
+/* New sizing for typography */
 h1 {
   font-size: 82px;
 }
-h1.primary {
+h1.primary,
+h1.secondary {
   font-size: 48px;
   padding: 10px;
   margin-bottom: 80px;
@@ -9,19 +11,33 @@ h1.primary {
 h2 {
   font-size: 50px;
 }
+h2.project {
+  font-size: 28px;
+}
 p {
   font-size: 30px;
   line-height: 50px;
 }
+p.project__description,
+p.project__text,
+p.object__other--link {
+  font-size: 25px;
+  line-height: 41px;
+}
 .hero__wrapper > p {
   font-size: 28px;
 }
+li {
+  font-size: 16px;
+}
 
+/* New sizing for general sections */
 .wrapper {
   padding: 80px 0;
   max-width: 900px;
 }
 
+/* New sizing for specific elements*/
 .hero__avatar {
   width: 333px;
   height: 333px;
@@ -29,7 +45,26 @@ p {
   top: 50px;
 }
 
-.project__title {
+.project--feature {
   width: 523px;
+}
+
+.project__title {
   height: 306px;
+  margin-bottom: 45px;
+}
+
+.project__languages {
+  margin-top: 24px;
+}
+
+/* Makes sure that the other project links are udnerlined in desktop view */
+p.object__other--link {
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  color: black;
+}
+p.object__other--link > span {
+  color: black;
+  text-decoration-line: underline;
 }

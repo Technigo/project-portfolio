@@ -18,16 +18,31 @@ p {
   font-size: 17px;
 }
 
+li {
+  font-size: 9px;
+  font-weight: normal;
+}
+
+/* Any link should start with style:none */
+a {
+  text-decoration: none;
+}
+
 /* Any bold text should have the primary color */
 b {
   color: var(--primary);
 }
 
+/* Any list should start as style:none */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 /* Styles the primary section header 1 titles */
-h1.primary {
-  background-color: var(--primary);
+h1.primary,
+h1.secondary {
   font-size: 22px;
-  color: white;
   width: fit-content;
   align-self: center;
   margin-bottom: 24px;
@@ -35,9 +50,28 @@ h1.primary {
   letter-spacing: 0.1em;
 }
 
-/* Makes sure that the project titles are always in 24px */
+h1.primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+h1.secondary {
+  color: var(--primary);
+}
+
 h2.project {
-  font-size: 24px !important;
+  color: white;
+  font-size: 28px;
+}
+
+/* Changes the color and weight of projects descriptions to primary */
+p.project__description {
+  color: var(--primary) !important;
+  font-weight: 700;
+}
+/* Makes sure that text within project is colored the same if the link was visitied */
+a:visited > * {
+  color: black;
 }
 
 /* Adds hero specific styles for the typography */

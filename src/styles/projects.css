@@ -1,32 +1,44 @@
-.projects__wrapper {
+.projects__flexbox {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-  text-align: center;
+}
+.projects__flexbox--other {
+  flex-flow: column wrap;
 }
 
 .project {
   margin: 13px;
 }
+.project--feature {
+  width: 327px;
+}
 
 .project__title {
   position: relative;
-  width: 327px;
+  text-align: center;
   height: 212px;
   background-size: cover;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
   background-image: url("../assets/project-alex.png");
 }
 .project__title > h2 {
   position: absolute;
 }
 
-.projects__flexbox {
+.project__languages {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  margin-top: 10px;
+}
+
+.project__languages--item {
+  background-color: var(--secondary);
+  color: black;
+  padding: 5px;
+  margin-right: 8px;
 }
