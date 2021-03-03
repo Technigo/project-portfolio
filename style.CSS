@@ -77,11 +77,14 @@ body,html {
   margin: 0px 2px;
   display: inline-block;
   font-size: 15px;
-  color: var(--fifth);
-  padding: 10px 10px;
+  /* color: var(--fifth); */
+  padding: 5px 5px;
   border: solid 2px var(--fifth);
   border-radius: 50%;
   transition: 1s;
+  height: 15px;
+  width: 15px;
+  color: white;
 }
 
 .icon:hover {
@@ -100,6 +103,7 @@ h1 {
 h2 {
   font-size: 20px;
 }
+
 h2:last-child {
   color: var(--fifth);
 }
@@ -116,6 +120,7 @@ h4 {
 mark {
   background-color: var(--third);
   color: var(--fifth);
+  padding: 0 5px;
 }
 
 span {
@@ -137,6 +142,12 @@ span {
   border: solid white;
 }
 
+.container-projects {
+  text-align: center;
+  border: solid black;
+
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -156,6 +167,7 @@ span {
 
 .top-project img {
   width:70%;
+  height:100px;
   margin: 10px 30px;
   border: solid 2px var(--fourth);
 }
@@ -212,3 +224,72 @@ footer {
   color: var(--fourth);
 }
 
+/*** MEDIA QUERIES TABLETT ***/
+
+@media (min-width: 667px) {
+ 
+  .icons-top {
+    left: 78%;
+  }
+
+  .hero-selfpic {
+    width: 100px;
+    height: 120px;
+    top:10%;
+    left: 5%;
+  }
+
+  .hero-info {
+    position: absolute;
+    top: 48%;
+    bottom: 0;
+    left: 32%;
+    right: 0;
+  }
+
+  .summary {
+   padding: 35px;
+
+  }
+
+  .tech {
+    padding: 35px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-project {
+    width: 35%;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .other-projects{
+    padding: 35px;
+  }
+
+  .skills {
+    text-align: center;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+
+  .skill-list {
+    text-align: center;
+    width: 30%;
+    border: solid white;
+    margin: 20px;
+  }
+
+
+  
+}
