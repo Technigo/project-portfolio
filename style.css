@@ -5,9 +5,8 @@
 body {
     font-size: 24px;
     color: #000000;
-    margin: 0;
+    margin: 0 auto;
     font-family: Montserrat;
-
 }
 
 .header {
@@ -80,6 +79,23 @@ body {
     text-shadow: 2px 2px 2px rgb(71, 71, 101);
 
 }
+.intro-text-line {
+    width: 50px;
+    height: 3px;
+    background: coral;
+    display: inline-block;
+    margin-bottom: 5px;
+
+}
+
+.intro-text-circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: coral;
+    display: inline-block;
+    margin-left: -5px;;
+}
 
 .title-text {
     margin: 0;
@@ -145,6 +161,7 @@ body {
 
 .secound-headline{
     color: coral;
+    width: 100%;
 }
 
 .two-column-container {
@@ -174,50 +191,41 @@ body {
     flex-direction: column;
     width: 100%;
     max-width: 1100px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin: 0 auto;
 }
 
-.two-column,
-.two-column-no-mobile {
+.two-column {
     width: 100%;
     cursor: pointer;
     text-align: left;
 }
-/* .projects-headlines-3 {
-    text-transform: uppercase;
-    text-align: center;
-    font: bold 'Montserrat',
-    sans-serif;
-    font-size: 22px;
-} */
 
-.project-imgae {
+.project-image {
     width: 100%;
     height: 212px;
     object-fit: cover;
 }
 
-.project-text{
+.project-text {
     font: 17px 'Roboto';
     letter-spacing: 0;
     line-height: 29px;
     width: 100%;
-    
 }
 
 .project-text:hover {
     text-decoration: underline;
 }
 
-.project-span{
+.project-span {
     text-transform: uppercase;
     font-weight: bold;
     color: coral;
 }
 
-.other-projects-line {
+.other-projects-text-only {
     text-align: left;
 }
 
@@ -247,10 +255,12 @@ body {
     padding-top: 5px;
 
 }
+
+
 .more-thoughts-container {
     width: 100%;
-    max-width: 1100px;
     text-align: left;
+    padding-bottom: 40px;
 }
 
 .more-thoughts-text {
@@ -269,10 +279,12 @@ body {
     font-family: Roboto;
     line-height: 29px;
     text-align: center;
+    padding-bottom: 30px;
+    margin: 0 auto;
 }
 
 .footer-nav-container {
-    display: block;
+
     width: 100%;
     max-width: 1100px;
     align-content: space-around;
@@ -298,6 +310,7 @@ body {
 }
 
 @media (min-width: 768px){
+
     .hide-desktop {
         display: none;
     }
@@ -308,6 +321,11 @@ body {
     
     .intro-text {
         padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .backgroud-color {
+        background: rgb(244, 239, 238);
     }
 
     .header-text {
@@ -316,41 +334,43 @@ body {
 
     .title-text {
         font-size: 50px;
+        
     }
 
     .secound-title-text {
         font-size: 30px;
     }
 
-    .main-wrapper{
+    .main-wrapper {
         padding-top: 700px;
+        width: 100%;
     }
 
-    .profil-pics{
+
+    .profil-pics {
         top: 440px;
         width: 270px;
         height: 270px;
         margin-right: 5%;
     }
 
-    .project-grid{
+    .project-grid {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         
     }
 
-    .project-imgae{
+    .project-image {
         height: 306px;
     }
 
     
-    .two-column{
-        width: 45%;
-        
+    .two-column {
+        width: 45%;  
     }
     
-    .other-projects-line {
+    .other-projects-text-only {
         text-decoration: underline;
     }
     .first-headline {
@@ -368,17 +388,17 @@ body {
 
 @media (min-width: 1200px) {
 
-    .header-text{
+    .header-text {
         font-size: 28px;
     }
-    .title-text{
+    .title-text {
         font-size: 60px;
     }
 
-    .secound-title-text{
+    .secound-title-text {
         font-size: 40px;
     }
-    .profil-pics{
+    .profil-pics {
         top: 380px;
         margin-right: 15%;
         width: 333px;
