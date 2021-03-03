@@ -2,7 +2,7 @@
 body{
   font-family: Montserrat;
   margin: 0;
-  width: 100vw;
+  /* width: 100vw; */
 }
 .header {
     background-image: url('./assets/books_mobile1.jpg');
@@ -11,13 +11,13 @@ body{
     background-size: cover;
     background-position: center;
     height: 400px;
-    width: 100vw;
+    /* width: 100vw; */
 
 }
 .media-icons{
     position: absolute;
     top: 30px;
-    left: 60vw;
+    right: 24.5px;
 }
 .fab {
     font-size: 20px;
@@ -36,7 +36,7 @@ body{
     position: absolute;
     width: 75%;
     top: 100px;
-    left: 3vw;
+    left: 24px;
     color: white;
 
 }
@@ -61,7 +61,7 @@ body{
     border-radius: 50%;
     position: absolute;
     top: 270px;
-    left: 45vw;
+    right: 24px;
 }
 .intro {
   width: 100%;
@@ -73,7 +73,8 @@ body{
 
 .content-container{
   max-width: 1100px;
-  padding: 20px; 
+  padding: 20px;
+  width: 100%; 
 }
 
 .intro-section{
@@ -107,7 +108,8 @@ body{
  display: inline;
  text-transform: uppercase;
  text-align: center;
- padding: 2px; 
+ padding: 2px;
+ font-size: 22px;
 }
 .tech-text{
   text-align: center;
@@ -120,6 +122,8 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 0;
+  border: none;
 }
 .cards-wrapper {
   width: 100%;
@@ -135,12 +139,14 @@ body{
   flex-wrap: wrap;
   text-decoration: none;
   margin-bottom: 20px;
+  align-content: flex-start;
   
 }
 .image-title-wrapper{
   position: relative;
   margin-bottom: 10px;
   width: 100%;
+  margin-bottom: 20px;
 }
 .last {
   display: none;
@@ -196,6 +202,8 @@ body{
 .other-projects {
   flex-wrap: wrap;
   background-color: #F4F4F4;
+  margin-top: 0;
+  border: none;
 }
 .other{
   width: 100%;
@@ -216,7 +224,7 @@ body{
 }
 .arrow{
   color: #FA382F;
-  text-decoration: #FA382F;
+  text-decoration: #FA382F underline;
 }
 .tags-container{
   width: 60%;
@@ -236,6 +244,7 @@ body{
   line-height: 1.5em;
   color: black;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 .thought-image {
   width: 100%;
@@ -269,18 +278,23 @@ body{
   justify-content: center;
 }
 .more-cards{
-  justify-content: flex-start;
-  align-items: center;
   width: 100%;
   margin-bottom: 20px;
-}
-.more-cards .date, .thought-title {
   font-size: 17px;
   text-decoration: underline;
   line-height: 1.5em;
+  font-family: Roboto;
+}
+.date-more, .arrow-more{
+  color: #FA382F;
+  text-decoration: #FA382F underline;
 }
 
 /* Skills */
+.withskills {
+  text-align: center;
+  padding-top: 40px;
+}
 .skills {
   flex-wrap: wrap;
   background-color: #F4F4F4;
@@ -291,6 +305,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 30px;
 
 }
 .skill-wrapper {
@@ -300,6 +315,9 @@ body{
   align-items: center;
   font-size: 17px;
   margin-bottom: 20px;
+}
+.last-skill {
+  display: none;
 }
 .skill-wrapper .red {
   width: 100%;
@@ -315,6 +333,61 @@ body{
   margin: 0;
 }
 
+/* For more */
+.withmore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons-container {
+  display: flex;
+  justify-content: center;
+  
+}
+.icon-link{
+  text-decoration: none;
+  margin: 30px 10px;
+  color: #FA382F;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-link .fab{
+  color: #FA382F;
+  margin-top: 30px;
+  border: 1px solid  #FA382F;
+  font-size: 40px;
+  width: 40px;
+  padding: 20px;
+
+}
+.icon-title {
+  font-size: 11px;
+  text-align: center;
+}
+.footer {
+  height: 300px;
+  background: #072BCE;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-info-header {
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin:0;
+}
+
+
 /* Mobile devices  */
 @media(min-width: 350px) {
   .header{
@@ -323,7 +396,6 @@ body{
   .name-title{
       width: 70%;
       top: 120px;
-      left: 5vw;
   }
   .name-surname{
     font-size: 14px;
@@ -335,7 +407,6 @@ body{
       width: 180px;
       height: 180px;
       top: 290px;
-      left: 45vw;
   }
 }
 
@@ -345,11 +416,14 @@ body{
   .header{
     height: 470px;
   }
+  .media-icons{
+    right: 44.5px;
+  }
   .my-image{
     width: 180px;
     height: 180px;
     top: 310px;
-    left: 45vw;
+    right: 45px;
   }
   .name-surname{
     font-size: 16px;
@@ -357,24 +431,34 @@ body{
   .title {
     font-size: 45px;
   }
+  .project-image{
+    height: 330px;
+  }
+  .thought-image{
+    height: 330px;
+  }
 }
 /* Tablet  */
 @media(min-width: 768px) {
   .header {
     background-image: url('./assets/books.jpg');
     height: 500px;
-    width: 100vw;
+    /* width: 100vw; */
+  }
+  .media-icons{
+    top: 50px;
+    right: 60px;
   }
   .my-image{
     width: 200px;
     height: 200px;
     top: 320px;
-    left: 65vw;
+    right: 60px;
   }
   .name-title{
     width: 50%;
     top: 150px;
-    left: 10vw;
+    left: 80px;
     color: white;
   }
   .name-surname{
@@ -383,14 +467,13 @@ body{
   .title {
     font-size: 50px;
   }
-  .media-icons{
-    top: 50px;
-    left: 70vw;
-  }
   .fab {
     font-size: 30px;
     padding: 7px;
     width: 30px;
+  }
+  .content-container{
+    padding: 30px
   }
   .section-header {
     font-size: 36px;
@@ -413,20 +496,33 @@ body{
   .other-card {
     width: 100%;
   }
-  .more-cards .date, .thought-title{
+  .more-cards {
     font-size: 25px;
   }
+  .skill-wrapper{
+    font-size: 20px;
+    width: 30%;
+  }
+  .last-skill{
+    display: flex;
+  }
+  .skill-wrapper .red {
+    font-size: 20px;
+  }
+  .icon-link {
+    margin: 30px 36px;
+  }
+  .icon-title{
+    font-size: 12px;
+  }
+
 }
 /* iPadPro, small screen, laptop  */
 @media(min-width: 1024px){
   .header{
     background-image: url('./assets/books_desktop.jpg');
     height: 600px;
-    width: 100vw;
-  }
-  .media-icons{
-    top: 80px;
-    left: 70vw;
+    /* width: 100vw; */
   }
   .fab {
     font-size: 40px;
@@ -435,23 +531,17 @@ body{
     background:none;
     border: 3px solid white;
   }
-  .name-title{
-    width: 45%;
-    top: 200px;
-    left: 12vw;
-    color: white;
-  }
+  
   .name-surname{
-    font-size: 22px;
+    font-size: 28px;
   }
   .title {
     font-size: 70px;
   }
   .my-image{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     top: 330px;
-    left: 60vw;
   }
   .section-header {
     font-size: 48px;
@@ -465,18 +555,80 @@ body{
   .project-image, .thought-image {
     height: 310px;
   }
-
+  .icons-container {
+    justify-content: space-evenly;
+  }
+  .icon-link .fab{
+    font-size: 80px;
+    width: 80px;
+    padding: 20px;
+  }
+  .icon-link {
+    margin: 30px 30px;
+  }
+  .icon-title{
+    font-size: 20px;
+  }
 }
-@media(min-width: 1200px){
-  .header{
-    height: 600px;
-    width: 100vw;
+/* iPad Pro horizontaly */
+@media (min-width: 1300px){
+  
+  .media-icons{
+    top: 80px;
+    right: 250px;
+  }
+  .name-title{
+    width: 35%;
+    top: 200px;
+    left: 200px;
   }
   .my-image{
-    width: 330px;
-    height: 330px;
-    top: 300px;
+    width: 300px;
+    height: 300px;
+    top: 330px;
+    right: 250px;
   }
+}
 
+@media(min-width: 1500px){
+  .header{
+    height: 600px;
+    /* width: 100vw; */
+  }
+  .media-icons{
+    top: 80px;
+    right: 410px;
+  }
+  .my-image{
+    width: 300px;
+    height: 300px;
+    top: 330px;
+    right: 410px;
+  }
+  .name-title{
+    width: 35%;
+    max-width: 710px;
+    top: 200px;
+    left: 426px;
+  }
+  .fab {
+    font-size: 40px;
+    padding: 7px;
+    width: 40px;
+    background:none;
+    border: 3px solid white;
+  }
+  .icon-link .fab{
+    font-size: 100px;
+    width: 100px;
+    padding: 40px;
+  }
+  .icon-link {
+    margin: 30px 40px;
+  }
+  .icon-title{
+    font-size: 25px;
+    font-weight: 700;
+  }
 }
 
