@@ -7,9 +7,9 @@ body {
 /* Header background-color: #CBB3BF; background-color: #685F74; #A0AD99; #99AD9E; #0F1123; #505B61; #AD9999; */
 
 .header {
-    height: 40vh;
+    height: 440px;
     display: flex;
-    padding: 20px;
+    padding: 40px;
     justify-content: space-around;
     position: relative;
     background-color: #0F1123;
@@ -21,10 +21,12 @@ body {
     justify-content: center;
     color: white;
     z-index: 1;
+    max-width: 607px;
+    padding-left: 10px;
 }
 
 .h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin: 0;
 }
 
@@ -39,13 +41,12 @@ body {
 
 /* Section for links to my profiles */
 
-.links-container {
+.social-media-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
 }
 
-.link-header {
+.social-media-white {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,11 +63,11 @@ body {
     text-decoration: none;
 }
 
-.link-header:hover {
+.social-media-white:hover {
     opacity: 0.5;
 }
 
-.link-header:focus {
+.social-media-white:focus {
     color: #a98b98;
     border: 4px solid #a98b98;
 }
@@ -74,28 +75,29 @@ body {
 /* My image */
 
 .image {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     border: 3px solid white;
     position: absolute;
-    right: 10%;
-    bottom: -5%;
+    right: 6%;
+    bottom: -4%;
 }
 
 /* Section with information about me */
 
 .info-about-me {
     background-color: #f9f3f3;
-    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 50px 24px 40px 24px;
 }
 
+/* start-figure */
+
 .line {
-    width: 5%;
+    width: 55px;
     border-bottom: 2px solid #0f1123;
     margin-bottom: 5px;
     display: inline-block;
@@ -107,11 +109,12 @@ body {
     background-color: #0f1123;
     border-radius: 50%;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .paragraph {
     font-size: 18px;
+    line-height: 29px;
 }
 
 /* Section with my tech-skills */
@@ -122,13 +125,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .section-header {
+    font-family: "Montserrat", sans-serif;
     background-color: #0F1123;
     color: white;
-    padding: 10px;
-    font-size: 20px;
+    padding: 5px 15px;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 /* Section with my featured projects */
@@ -203,7 +209,7 @@ body {
 
 /* Section with my other projects */
 
-.other-projects-container {
+.other-projects-section {
     width: 100%;
 }
 
@@ -230,30 +236,31 @@ body {
     color: white;
 }
 
-.other-projects-title {
+.other-projects-title, .other-thoughts-title {
     text-align: center;
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 21px;
+    font-family: "Montserrat", sans-serif;
 }
 
-.other-projects-info {
-    font-size: 18px;
-    margin: 0px;
+.other-projects-info, .thoughts-info {
+    font-size: 17px;
+    margin: 4px;
     text-decoration: underline;
 }
 
 .fa-angle-double-right {
-    font-size: 20px;
     margin-left: 5px;  
 }
 
 .title {
-    font-weight: bold;
     text-decoration: underline;
+    font-weight: 700;
 }
 
 /* Section with my thoughts about code */
 
-.thoughts-container {
+.thoughts-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,7 +279,7 @@ body {
     text-align: center;
 }
 
-.thoughts {
+.thoughts-info {
     margin: 4px;
 }
 
@@ -292,26 +299,32 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .skills {
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.h5 {
-    font-weight: bold;
-    margin: 0;
+.skill-title {
+    font-weight: 700;
+    margin: 5px;
     font-size: 18px;
 }
 
 .skill {
-    margin: 10px;
+    line-height: 29px;
+    font-size: 18px;
+    margin: 0;
 }
 
 /* Section with links to my profiles */
 
-.for-more-container {
+.for-more-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,7 +332,18 @@ body {
     padding: 40px 10px;
 }
 
-.link {
+.link-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialmedia-text {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.social-media-blue {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,20 +351,20 @@ body {
     width: 60px;
     border-radius: 50%;
     border: 3px solid #0F1123;
-    margin: 20px 5px;
+    margin: 20px 15px 5px 15px;
     cursor: pointer;
     color: #0F1123;
     outline: none;
     text-decoration: none;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
-.link:hover {
+.social-media-blue:hover {
     opacity: 0.5;
 }
 
-.link:focus {
+.social-media-blue:focus {
     color: #a98b98;
     border: 4px solid #a98b98;
 }
@@ -350,21 +374,24 @@ body {
 
 .footer {
     background-color: #0F1123;
+    height: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px 10px;
+    padding: 40px 0px 80px 0px;
     color: white;
+    font-family: "Montserrat", sans-serif;
 }
 
 .contact-title {
-    font-size: 18px;
+    font-size: 38px;
+    font-weight: 700;
 }
 
 .contact-info {
     margin: 5px;
-    font-size: 16px;
+    font-size: 21px;
 }
 
 
@@ -372,68 +399,136 @@ body {
 
 @media (min-width: 768px) {
     .h1 {
-        font-size: 50px;
+        font-size: 82px;
     }
 
     .h2 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
-    .link-header {
-        height: 55px;
-        width: 55px;
+    .social-media-white {
+        height: 70px;
+        width: 70px;
         font-size: 36px;
     }
 
     .image {
         width: 250px;
         height: 250px;
+        right: 11%;
     }
 
-    .info-about-me .paragraph {
-        width: 80%;
+    .paragraph {
+        width: 60%;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .line {
+        width: 98px;
+        border-bottom: 3px solid #0f1123;
+        margin-bottom: 8px;
+    }
+    
+    .circle {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
     }
 
     .featured-projects, .all-thoughts {
-        width: 90%;
+        width: 75%;
+    }
+
+    .section-header {
+        font-size: 48px;
     }
 
     .project-card, .thoughts-card {
-        width: 45%;
+        width: 49%;
     }
 
     .project-image {
         height: 230px;
     }
 
-    .other-projects-container, .other-thoughts {
+    .project-title, .project-paragraph {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .other-projects-section, .other-thoughts {
         justify-content: flex-start;
-        width: 90%;
+        width: 75%;
         margin-top: 40px;
+    }
+
+    .other-projects-title, .other-thoughts-title {
+        font-size: 38px;
+    }
+
+    .other-projects-info, .thoughts-info {
+        font-size: 25px;
     }
 
     .other-thoughts {
         width: 93%;
     }
 
-    .link {
-        font-size: 50px;
-        width: 80px;
-        height: 80px;
+    .skill-title {
+        font-size: 25px; 
+    }
+
+    .skill {
+        font-size: 25px;
+        line-height: 41px;
+    }
+
+    .social-media-blue {
+        font-size: 60px;
+        width: 160px;
+        height: 160px;
+        margin: 20px 30px 5px 30px;
+    }
+
+    .socialmedia-text {
+        font-size: 25px;
+    }
+
+    .footer {
+        height: 490px;
+    }
+    .contact-info {
+        font-size: 30px;
     }
 }
 
 @media (min-width: 1025px) {
-    .info-about-me .paragraph {
+    .header {
+        height: 481px;
+        padding: 100px 300px;
+        
+    }
+    .h1 {
+        font-size: 82px;
+    }
+
+    .h2 {
+        font-size: 28px;
+    }
+
+    .image {
+        width: 333px;
+        height: 333px;
+        right: 20%;
+    }
+    
+    .featured-projects, .all-thoughts {
         width: 60%;
     }
 
-    .featured-projects, .all-thoughts {
-        width: 70%;
-    }
-
     .project-card, .thoughts-card {
-        width: 45%;
+        width: 49%;
     }
 
     .project-image {
@@ -441,13 +536,8 @@ body {
         height: 350px;
     }
 
-    .project-title {
-        margin: 5px 0;
-        font-size: 18px;
-    }
-
-    .other-projects-container {
-        width: 70%;
+    .other-projects-section {
+        width: 60%;
     }
 
     .other-thoughts {
