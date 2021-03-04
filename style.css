@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
 .highlighted-headline{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     Font-family:  'Montserrat', sans-serif;
     Font-size: 22px;
     font-weight: 700;
@@ -18,6 +16,7 @@ body{
     padding: 15px;
     height: 26px;
     border-radius: 5px;
+    width: fit-content;
 }
 
 .standard-headline{
@@ -32,6 +31,17 @@ body{
     height: 26px;
     border-radius: 5px;
 }
+.standard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 324px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height:29px;
+    font-size:17px;
+}
+
 .highlight{
     color: #FF484C;
     font-weight: 700;
@@ -42,54 +52,60 @@ a{
     color: black;
 }
 
-.standard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height: 324px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    line-height:29px;
-    font-size:17px;
-}
 
 .standard-projects-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    border: solid 2px blue;
+    align-items: center;
+    /* border: solid 2px blue; */
 }
 
 .standard-projects-container{
     display: grid; 
     grid-template-columns: 1fr; 
-    gap: 20px;
-    border: solid 2px;
-    margin: 0px 20px 0px 20px;
+    /* border: pink solid 2px; */
+    justify-items: center;
 }
 
 .other-projects-section-standard{
     display: flex;
     flex-direction: column;
     font-family: roboto;
-    border: red 2px solid;
+    /* border: red 2px solid; */
 }
 
 .other-projects-container-standard{
     display: flex;
+    align-items: flex-start;;
+    flex-direction: column;
+    margin-bottom: 30px;  
+}
+
+.project-card{
+    /* border: solid 2px; */
+    width: 300px;
+    margin-bottom: 40px;
+
+}
+
+.picture {
     width: 100%;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;  
-    margin: 0px 20px 0px 20px;
+    height: 212px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.picture:hover {
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .another-project-card{
-    border: solid 2px;
+    /* border: solid 2px; */
     display: flex;
     flex-direction: column;
+    width:100%;
+    
 }
 
 /*****TOP SECTION*****/
@@ -97,10 +113,9 @@ header{
     display: flex;
     position: relative; 
     height: 500px;
-    width:100%;
+    width: 100%;
     background-image: url(./assets/grafic\ background.png);
     background-size: cover;
-    background-position: center;
 }
 
 .top-media-links{
@@ -125,8 +140,8 @@ header{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top:35%;
-    left: 20%;
+    top:30%;
+    left: 15%;
     color: white;
 }
 
@@ -184,11 +199,11 @@ header{
 /******TECH SECTION*******/
 
 .tech-section{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-items: center; 
-   background-color: #f8f1f1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-items: center; 
+background-color: #f8f1f1;
 }
 
 .tech-description{
@@ -197,21 +212,9 @@ header{
 }
 /*****FEATURED PROJECTS*****/
 
-
-
-.project-card{
-    border: solid 2px;
-    position: relative;
-}
-
 .project-card a{
     text-decoration: none;
     color: black;
-}
-
-.picture {
-    width: 100%;
-    height: 212px;
 }
 
 .tech-attributes{
@@ -231,7 +234,7 @@ header{
 
 
 /*******MY THOUGHTS SECTION*****/
-.my-thoughts-section {
+/* .my-thoughts-section {
     display: grid; 
     grid-template-columns: 1fr;
     grid-gap: 10px; 
@@ -244,10 +247,10 @@ header{
 .my-thoughts-card {
     width: 327px;
     border: solid 2px;
-}
+} */
 
 /*******MORE THOUGHTS SECTION*****/
-.more-thoughts-section{
+/* .more-thoughts-section{
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -258,7 +261,7 @@ header{
 .more-thoughts-card{
     width: 327px;
     border: solid 2px;
-}
+} */
 
 /********MY SKILLS SECTION*****/
 .my-skills-section{
@@ -276,7 +279,7 @@ header{
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px; 
-    border: black solid;
+    /* border: black solid; */
 }
 
 
@@ -287,8 +290,7 @@ header{
     justify-content: center;
     align-items: center;
     margin: 2%;
-    border: solid 2px;
-    border: black solid;
+    /* border: black solid; */
 }
 
 .links-container
@@ -297,8 +299,7 @@ header{
     justify-content: space-evenly;
     align-items: center;
     margin: 2%;
-    border: solid 2px;
-    border: black solid;
+    /* border: black solid; */
 }
 
 .border-more{
@@ -328,29 +329,29 @@ footer p{
     margin:0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    .standard-projects-container{
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 20px;
-    }
-
-    .my-thoughts-section {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px; 
-    }
-
-    .skills-container{
-        grid-template-columns: repeat(4, 1fr); 
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-    .standard-projects-container{
-        grid-template-columns: repeat(2, 1fr);
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        .standard-projects-container{
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 10px;
         }
- 
-    .skills-container{
-        grid-template-columns: repeat(4, 1fr); 
+
+        .my-thoughts-section {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px; 
         }
-}
+
+        .skills-container{
+            grid-template-columns: repeat(4, 1fr); 
+        }
+
+    }
+
+    @media screen and (min-width: 1024px) {
+        .standard-projects-container{
+            grid-template-columns: repeat(2, 1fr);
+            }
+    
+        .skills-container{
+            grid-template-columns: repeat(4, 1fr); 
+            }
+    }
