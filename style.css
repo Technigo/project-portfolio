@@ -3,6 +3,11 @@
 
 :root {
   --grey-background: #F4F4F4;
+  --orange: #f58634;
+  --yellow: #ffcc29;
+  --light-turquoise: #00af91;
+  --turquoise: #007965;
+
 }
 
 * {
@@ -11,12 +16,37 @@
   box-sizing: border-box;
 }
 
-/* p {
+p {
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 29px;
-} */
+}
+
+.h1-background {
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  background-color: var(--orange);
+  display: inline-block;
+  color:#fff;
+  padding: 2px;
+}
+
+.h1-normal {
+font-weight: bold;
+font-size: 21px;
+line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
 
 .header {
   background-image: url("./assets/header-image.jpg");
@@ -28,12 +58,13 @@
   margin: 0 auto;
   width: 90%;
   max-width: 327px;
+  padding: 49px 0;
 }
 
 .header-container {
   display: flex;
   flex-direction: column;
-  padding-top: 48px;
+  padding-bottom: 0px;
 }
 
 .header-links-wrapper {
@@ -94,9 +125,33 @@
   background-color: var(--grey-background);
 }
 
+.about-container {
+  
+}
+
+.line {
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: var(--orange);
+  margin-bottom: 4px;
+}
+
+.circle {
+  display: inline-block;
+  background-color: var(--orange);
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-left: -5px; /*so there is no margin between the line and the dot*/
+}  
 /* TECH SKILLS */
 
 /* FEATURED PROJECTS SECTION */
+.tech-container {
+  text-align: center;
+}
+
 .project-img {
   background-image: url("./assets/pizza.jpg");
   width: 327px;
@@ -113,4 +168,16 @@
 .footer {
   background-color: #072BCE;
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 430px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 800px;
+  }
 }
