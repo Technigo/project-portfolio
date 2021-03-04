@@ -1,6 +1,7 @@
 :root {
-    --primary: #d46904;
+    --primary: #d26804;
     --secondary: #fad9b3;
+    --tertiary: #0e3f4f;
 }
 
 h2,
@@ -59,6 +60,7 @@ p {
 
 .title {
     margin-top: 33px;
+    /* max-width: 500px; */
 }
 
 .title p {
@@ -83,6 +85,7 @@ h1 {
     font-size: 40px;
     line-height: 49px;
     margin: 0;
+    max-width: 400px;
 }
 
 .inside-h1 {
@@ -125,7 +128,7 @@ h2 {
     text-align: center;
     background-color: var(--primary);
     color: white;
-    padding: 0 5px;
+    padding: 0 8px;
     margin: 0 0 32px;
 }
 
@@ -191,6 +194,11 @@ section {
     font-size: 28px;
     letter-spacing: 0.01em;
     color: #FFFFFF;
+}
+
+.on-top-project-image p {
+    background-color: #0e3f4f9b;
+    padding: 0 8px;
 }
 
 /* PROJECTS --- TEXT */
@@ -262,12 +270,16 @@ a {
     text-decoration: none;
 }
 
-a .date {
+.more-thoughts {
+    margin: 8px 0;
+}
+
+.more-thoughts .date {
     display: inline;
     text-decoration-line: underline;
 }
 
-a h5 {    
+.more-thoughts h5 {    
     font-size: 17px;
     font-weight: 700;
     line-height: 29px;
@@ -275,7 +287,7 @@ a h5 {
     display: inline;
 }
 
-a .read-more {    
+.more-thoughts .read-more {    
     text-decoration-line: underline;
 }
 
@@ -285,7 +297,6 @@ a .read-more {
 .list-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 10px;
     justify-items: center;
 }
 
@@ -360,7 +371,7 @@ ul {
 /* FOOTER */
 
 footer {
-    background-color: #072BCE;
+    background-color: var(--tertiary);
     color: white;
     text-align: center;
     padding: 60px 24px 84px;
@@ -462,16 +473,24 @@ footer p {
         margin: 0 0 48px;
     }
     
-    
+
     h3,
     footer h2 {
         font-size: 38px;
         line-height: 47px;
     }
-  
+    
     .grid-container {
         grid-template-columns: 1fr 1fr;
         column-gap: 30px
+    }
+
+    .other-project h4 {
+        display: inline;
+    }
+
+    .other-project .project-description {
+        display: inline;
     }
 
     h4,
@@ -491,7 +510,7 @@ footer p {
     
     .read-more,
     .date,
-    a h5 {
+    .more-thoughts h5 {
         font-size: 25px;
         line-height: 33px;
     }
@@ -507,7 +526,7 @@ footer p {
     }
     
     .list-container {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 30px;
     }
     
@@ -551,19 +570,25 @@ footer p {
     section > * {
         width: 60%;
     }
+
     h2 {
         width: -moz-fit-content;
         width: fit-content;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero {
+        background-position: center;
     }
 
     .thoughts-header-mobile {
         display: none;
     }
-
+    
     .thoughts-header-desktop {
         display: block;
     }
-
 }
 
 @media (min-width: 1920px) {
