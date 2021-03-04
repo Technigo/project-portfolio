@@ -21,6 +21,7 @@ h1 {
 
 h2 {
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 h2:last-child {
@@ -33,6 +34,11 @@ h3 {
 
 h4 {
   font-size: 16px;
+}
+
+h5 {
+  margin-bottom: 0px;
+  text-transform: uppercase;
 }
 
 mark {
@@ -72,10 +78,8 @@ mark {
 
 .hero-info {
   position: absolute;
-  top: 140px;
-  bottom: 0;
+  top: 150px;
   left: 70px;
-  right: 0;
   border: white solid;
   padding: 10px;
   text-align: left;
@@ -108,17 +112,15 @@ mark {
   /* transition: 1s; */
   height: 25px;
   width: 25px;
-  /* color: white; */
+  /* color: white;  */
   /* object-fit: fill; */
 }
 
 .icon:hover {
 color: var(--third);
-border: solid 2px var(--third);
+border: solid 2px var(--third); 
 /* transition: 1s; */
 }
-
-
 
 
 
@@ -136,6 +138,7 @@ border: solid 2px var(--third);
   text-align: left;
   padding: 20px;
   border: solid black;
+  margin-top: 10px;
 }
 
 .tech {
@@ -163,6 +166,7 @@ border: solid 2px var(--third);
 }
 
 .top-project {
+  text-align: left;
   border: solid white;
   width: 220px;
   margin: 20px;
@@ -174,6 +178,9 @@ border: solid 2px var(--third);
   border: solid 2px var(--fourth);
 }
 
+.top-project p {
+  margin: 5px 0px 5px 0px;
+}
 a {
   text-decoration: none;
   color: black;
@@ -214,12 +221,15 @@ a {
 
 .more-thoughts-container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .more-thoughts {
   text-align: left;
   width: 300px;
-  height: 65px;
+  height: 75px;
   margin-left: 10px;
 }
 
@@ -254,6 +264,20 @@ ul {
   border: solid black;
 }
 
+.more-icons {
+  padding: 20px;
+}
+
+.more-icons img {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+
+.more-icons img:hover {
+color: var(--secondary);
+transition:1s;
+}
 /*** FOOTER ***/
 
 footer {
@@ -271,8 +295,13 @@ footer {
 @media (min-width: 667px) {
  
   .icons-top {
-    left: 580px;
-    
+    left: 550px;
+    top: 40px;
+  }
+
+  .icon {
+    height: 35px;
+    width: 35px;
   }
 
   .hero-selfpic {
@@ -284,8 +313,8 @@ footer {
 
   .hero-info {
     position: absolute;
-    top: 150px;
-    left: 250px;
+    top: 160px;
+    left: 220px;
   }
 
   .summary {
@@ -322,13 +351,13 @@ footer {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
   }
   
   .other-projects {
     width: 500px;
     text-align: left;
-    padding: 20px;
+    padding: 0px;
     border: solid white;
   }
 
@@ -362,7 +391,6 @@ footer {
     width: 500px;
     height: 65px;
     justify-content: center;
-    
   }
 
   .skills {
@@ -382,5 +410,98 @@ footer {
     margin: 20px;
   }
 
+  .more-icons img {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+  }
+}
+
+/*** DESKTOP MEDIA QUERIES ***/
+
+@media (min-width:1025px){
+
+  .icons-top {
+    left: 850px;
+    top: 50px;
+  }
+
+  .icon {
+    height: 55px;
+    width: 55px;
+  }
+
+  .hero-selfpic {
+    width: 130px;
+    height: 150px;
+    top:130px;
+    left: 100px;
+  }
+
+  .hero-info {
+    position: absolute;
+    top: 150px;
+    left: 380px;
+    width: 300px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .summary {
+    padding: 0;
+    width: 700px;
+ 
+   }
+ 
+   .tech {
+     padding:0;
+     width: 700px;
+   }
+
+
+  .top-project {
+    width: 300px;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .top-project img {
+    width: 300px;
+    height: 210px;
+  }
+  .other-projects {
+    width: 700px;
+  }
+
+  .my-thoughts {
+    width: 300px;
+  }
+
+  .my-thoughts img {
+    width: 300px;
+    height: 230px;
+  }
+
+  .more-thoughts {
+    width: 700px;
+    height: 65px;
+  }
+
+  .skill-list {
+    width: 200px;
+    height: 230px;
+    margin: 20px;
+  }
+
+  .more-icons img {
+    height: 70px;
+    width: 70px;
+    padding: 5px;
+  }
   
+
+
 }
