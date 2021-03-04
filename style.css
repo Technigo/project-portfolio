@@ -17,7 +17,7 @@ a{
     color: #FF484C;
 }
 
-/*******STANDARD SECTION FOR SUMMARY, TECH AND SKILLS SECTION*****/
+/*******STANDARD SECTION FOR SUMMARY, TECH AND MORE SECTION*****/
 .standard-section{
     display: flex;
     justify-content: center;
@@ -361,23 +361,26 @@ footer p{
 }
 
     @media screen and (min-width: 768px) and (max-width: 1023px){
+        .standard-section{
+            height: 250px;
+        }
+       
         .standard-projects-container{
             grid-template-columns: repeat(2, 1fr); 
             gap: 15px;
         }
 
-        /* .my-thoughts-section {
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px; 
-        } */
-
         .skills-container{
             grid-template-columns: repeat(4, 1fr); 
         }
-
+ 
     }
 
     @media screen and (min-width: 1024px) {
+
+        .standard-section{
+            height: 200px;
+        }
         .standard-projects-container{
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
@@ -386,4 +389,8 @@ footer p{
         .skills-container{
             grid-template-columns: repeat(4, 1fr); 
             }
+
+        .project-card{
+            width: 400px;
+        }
     }
