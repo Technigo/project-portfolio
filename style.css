@@ -99,9 +99,9 @@ h4 {
   right: 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
   
-  padding: 50px 24px 0 0;
+  padding: 50px 24px 0 200px;
  
 }
 
@@ -173,6 +173,10 @@ h4 {
   padding: 24px;
 }
 
+.featured-projects h3 {
+  margin-bottom: 39px;
+}
+
 .project {
   padding-bottom: 30px;
   width: 100%;
@@ -181,6 +185,22 @@ h4 {
 .project img {
   object-fit: cover;
   height: 212px;
+  filter: opacity(30%);
+}
+
+.project-img-container {
+  position: relative;
+  text-align: center;
+}
+
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #276678;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .project p {
@@ -242,7 +262,7 @@ h4 {
 }
 
 .thoughts-date {
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -279,7 +299,7 @@ h4 {
 }
 
 .more-thoughts-title {
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -291,7 +311,7 @@ h4 {
 
 .more-thoughts-links {
   padding: 20px 0;
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -304,23 +324,99 @@ h4 {
 .skills {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
   padding: 24px;
+  background-color: #f6f5f5;
+  align-items: center;
 }
 
 .skills-all {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .skills-group {
   width: 40%;
+  
+}
+
+.skills-group p {
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  margin: 5px 0;
 }
 
 .skills-title {
   color: #276678;
+  font-weight: 800;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 17px;
+  line-height: 29px;
+  margin: 5px 0;
+}
+
+.for-more {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.for-more-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.for-more-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+
+.for-more-icons i {
+  padding: 12px;
+  /* height: 50px;  */
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 58px;
+  align-items: center;
+
+  /* border: 1px solid #000;
+  border-radius: 50%; */
+}
+
+.footer {
+  background-color: #276678;
+  color: #fff;
+}
+
+.contact-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  margin: 60px 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.contact-info p {
+  margin: 5px 0;
 }
 
 /**** TABLET SIZE ****/
