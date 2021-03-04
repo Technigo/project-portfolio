@@ -1,36 +1,47 @@
 
 /* font-family: 'Roboto', sans-serif; */
 
+:root {
+  --grey-background: #F4F4F4;
+}
+
 * {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
 
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+}
+
 .header {
   background-image: url("./assets/header-image.png");
   background-size: cover;
-  color: #fff;
 }
 
 /* Same basic positioning for all containers */
 .container {
   margin: 0 auto;
   width: 90%;
-  max-width: 220px;
+  max-width: 327px;
 }
 
-.hero {
-  height: 100vh;
-}
-
-
-.header-wrapper {
-  /* position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; */
+.name-wrapper {
+  /* position: absolute; */
+  width: 220px;
+  height: 202px;
+  /* left: 24px;
+  top: 121px; */
+  color: #fff;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 13px;
+  /* line-height: 138%; */
+  letter-spacing: 0.04em;
 }
 
 .avatar {
@@ -41,4 +52,29 @@
   object-fit: cover;
   /* position: relative;
   top: 20px; */
+}
+
+.grey-background {
+  background-color: var(--grey-background);
+}
+
+/* TECH SKILLS */
+
+/* FEATURED PROJECTS SECTION */
+.project-img {
+  background-image: url("./assets/pizza.jpg");
+  width: 327px;
+  height: 212px;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MY THOUHGTS */
+
+/* FOOTER */
+.footer {
+  background-color: #072BCE;
+  color: #fff;
 }
