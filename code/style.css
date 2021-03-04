@@ -3,13 +3,14 @@
 * {
     padding: 0;
     margin: 0;
-    
 }
+
 :root {
     --main-color: #25afc2;
     --secondary-color: #5fcbe5;
     --third-color: #0e0779;
-  }
+    --bg-color: #e7f0f1;
+}
 
 h1,
 h2 {
@@ -18,12 +19,11 @@ h2 {
 
 p {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.5em;
 }
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -35,8 +35,9 @@ p {
 
 .header {
     grid-area: header;
-    height: 840px;
+    height: 800px;
     position: relative;
+    background-color: var(--bg-color);
 }
 
 .header-bg {
@@ -81,11 +82,10 @@ p {
 
 .header-icons {
     display: flex;
-    width: 100%;
+    width: fit-content;
     position: absolute;
     left: 220px;
     top: 50px;
-
 }
 
 .header-icons__container {
@@ -122,11 +122,10 @@ p {
 
 .header-about-me {
     position: absolute;
-    width: 327px;
-    height: 232px;
-    left: 24px;
+    height: 200px;
     top: 569px;
     display: flex;
+    padding: 24px;
 }
 
 .header-about-me img {
@@ -138,31 +137,11 @@ p {
 
 .main {
     width: 100%;
+    height: 100%;
     grid-area: main;
     display: grid;
-    grid-template-columns: [first] 15% [line2] 1fr [line3] 1fr [line4] 15% [end];
-    grid-template-rows: auto;
-    gap: 15px 10px;
+    grid-template-columns: [first] 20px [line2] 1fr [line3] 1fr [line4] 20px [end];
     background-color: rgb(255, 255, 255);
-}
-
-.tech,
-.projects,
-.thoughts,
-.skills,
-.social {
-    grid-column-start: first;
-    grid-column-end: end;
-}
-
-.tech {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 324px;
 }
 
 .heading {
@@ -171,68 +150,75 @@ p {
     padding: 2px;
     background-color: var(--main-color);
     color: white;
+    margin-top: 40px;
+    justify-self: center;
 }
 
 .sub-heading {
     color: var(--main-color);
-}
-
-.tech-text {
-    text-align: center;
-    margin: 24px;
-}
-
-.tech-text p {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.projects {
-    grid-column-start: first;
-    grid-column-end: end;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px;
-}
-
-.projects h2 {
-    font-size: 17px;
-}
-
-.project-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-}
-
-.project-container:nth-of-type(4),
-.project-container:nth-of-type(5) {
-    display: none;
-}
-
-.projects .heading,
-.projects .sub-heading {
-    grid-column-start: 1;
-    grid-column-end: end;
     justify-self: center;
 }
 
+.heading,
+.sub-heading,
+.tech,
+.projects,
+.thoughts,
+.skills,
+.social {
+    grid-column-start: 1;
+    grid-column-end: end;
+}
+
+.tech {
+    display: grid;
+    grid-template-columns: inherit;
+    grid-template-rows: 1fr 2fr;
+    height: 324px;
+    justify-content: center;
+}
+
+.tech-text {
+    grid-column: 2/ span 2;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    justify-self: center;
+}
+
+.projects {
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: inherit;
+    background-color: var(--bg-color);
+}
+
+.project-container,
+.project-container--mobile {
+    grid-column: 2 / span 2;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.project-container--desktop {
+    display: none;
+}
+
 .projects .sub-heading {
-    margin: 60px 0 20px 0;
+    margin-top: 80px;
 }
 
 .projects-image {
-    grid-column-start: 1;
-    grid-column-end: end;
     position: relative;
+    width: 100%;
     height: 220px;
     overflow: hidden;
-    margin-top: 20px;
     background-color: var(--third-color);
 }
 
 .projects-image img {
+    top: 0;
     position: absolute;
     width: 100%;
     min-height: 100%;
@@ -256,50 +242,137 @@ p {
 }
 
 .projects-image__text {
-    grid-column-start: 1;
-    grid-column-end: end;
-    height: 100px;
     font-size: 17px;
-}
-
-.projects-image__text h2 {
     color: var(--main-color);
+    margin-top: 20px;
 }
 
+.projects-image__text p,
+.link-text p,
 .projects-image__techniques {
+    color: black;
+    margin-top: 20px;
+}
+
+.projects-image__techniques p {
+    font-family: 'Roboto', sans-serif;
     line-height: 11px;
     font-size: 9px;
     padding: 5px;
-    font-family: 'Roboto', sans-serif;
-    grid-column: span 1;
-    width: 80%;
-    justify-self: center;
-    text-align: center;
+    display: inline;
+    width: fit-content;
     background-color: var(--secondary-color);
 }
 
+.link-text {
+    grid-column: 2/span 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--main-color);
+}
+
+.link-text__description {
+    display: flex;
+}
+
+.link-text p:nth-of-type(2n) {
+    color: var(--main-color);
+}
+
+.link-text p {
+    margin-right: 10px;
+    align-self: center;
+}
+
 .thoughts {
-    grid-row-start: 3;
-    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: inherit;
+    padding-bottom: 50px;
+}
+
+.thoughts-container,
+.thoughts--mobile{
+    grid-column: 2/ span 2;
+}
+
+.thoughts-image {
+    height: 205px;
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+.thoughts-image__date {
+    font-size: 17px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-color);
+    margin-right: 10px;
+}
+
+.thoughts-container h2 {
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.thoughts-container p {
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.thoughts--desktop {
+    display: none;
+}
+
+.thoughts-image img {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.thoughts .link-text {
+    flex-direction: row;
 }
 
 .skills {
-    grid-row-start: 4;
-    grid-row-end: 5;
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: 25px 1fr 1fr 25px;
+}
+
+.skills-col {
+    grid-column: 2/span 1;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 40px;
+}
+
+.skills-col:nth-of-type(3) {
+    grid-column-start: 3;
+}
+
+.skills-col:nth-of-type(4) {
+    display: none;
+}
+
+dt {
+    color: var(--main-color);
+    font-weight: 700;
+    margin: 30px 0 5px 0;
+}
+
+dd {
+    margin: 5px 0;
 }
 
 .social {
-    grid-row-start: 5;
-    grid-row-end: 6;
     display: grid;
-    grid-template-columns: 40px 1fr 1fr 1fr 40px;
-    margin: 40px 0;
-    row-gap: 40px;
-}
-
-.social .heading {
-    grid-column: span 5;
-    justify-self: center;
+    grid-template-columns: 20px 1fr 1fr 1fr 20px;
+    margin-bottom: 40px;
 }
 
 .social-icon {
@@ -311,6 +384,7 @@ p {
     height: 100px;
     font-size: 11px;
     color: #25afc2;
+    margin-top: 40px;
 }
 
 .social-icon:nth-of-type(3) {
@@ -327,7 +401,6 @@ p {
     border-radius: 50%;
     border: solid #25afc2;
     position: relative;
-    justify-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,9 +438,54 @@ p {
 }
 
 @media screen and (min-width: 700px) {
+    .main {
+        grid-template-columns: [first] 120px [line2] 1fr [line3] 1fr [line4] 120px [end];
+    }
+
+    .header-portrait,
+    .header-icons {
+        left: auto;
+        right: 120px;
+    }
+
+    .header-bg__heading {
+        padding-left: 120px;
+        width: 400px;
+    }
+
+    .header-about-me {
+        padding: 0 120px;
+    }
+
+    .projects-image,
+    .thoughts-image {
+        height: 310px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .main {
+        grid-template-columns: 17% 31% 1fr 31% 17%;
+    }
+
+    .skills, 
+    .social {
+        grid-template-columns: 17% 1fr 1fr 1fr 17%;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2,
+    p {
+        font-size: 25px;
+        line-height: 41px;
+    }
 
     .header {
-        height: 1000px;
+        height: 1060px;
     }
 
     .header-bg {
@@ -376,7 +494,8 @@ p {
 
     .header-bg__heading {
         width: 600px;
-        left: 426px;
+        left: 17%;
+        padding: 0;
     }
 
     .header h1 {
@@ -392,8 +511,10 @@ p {
         font-size: 28px;
     }
 
-    .header-icons {
-        left: 70%;
+    .header-icons,
+    .header-portrait {
+        left: auto;
+        right: 410px;
     }
 
     .header-icons__container {
@@ -402,7 +523,6 @@ p {
     }
 
     .header-portrait {
-        left: 65%;
         height: 333px;
         width: 333px;
     }
@@ -410,90 +530,132 @@ p {
     .header-about-me {
         top: 640px;
         height: 420px;
-        width: 100%;
-        justify-content: center;
+        width: 66%;
+        display: flex;
         align-items: center;
+        padding: 0 17%;
     }
 
     .header-about-me p {
+        height: fit-content;
         font-size: 30px;
         line-height: 50px;
-        width: 1100px;
+        width: 100%;
     }
 
     .header-about-me img {
         padding-top: 20px;
     }
 
-    .tech {
-        grid-column-start: line2;
-        grid-column-end: line4;
-        height: 500px;
-        font-size: 30px;
-        line-height: 50px;
-    }
-
-    .projects {
-        grid-column-start: line2;
-        grid-column-end: line4;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 50px;
-        margin-left: 70px;
-    }
-
-    .projects h2 {
-        font-size: 28px;
-        line-height: 41px;
-    }
-
-    .project-container:nth-of-type(4),
-    .project-container:nth-of-type(5),
-    .project-container {
-        display: grid;
-        grid-column: span 2;
-        grid-template-columns: subgrid;
-        row-gap: 20px;
-    }
-
-    .projects-image {
-        height: 300px;
-    }
-
-    .projects-image__text,
-    .projects-image {
-        grid-column: span 4;
-        font-size: 25px;
-    }
-
-    .projects-image__techniques {
-        font-size: 16px;
-    }
-
-    .social {
-        grid-template-columns: 600px 1fr 1fr 1fr 600px;
-        height: 500px;
-    }
-
-    .social-icon__img {
-        height: 160px;
-        width: 160px;
-    }
-
     .heading {
         font-size: 48px;
-        line-height: 58.51px;
+        line-height: 58px;
         font-weight: 700;
         padding: 0 5px;
     }
 
     .sub-heading h1 {
         font-size: 38px;
-
     }
 
-    .social-icon img {
+    .tech {
+        height: 500px;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .tech-text{
+        grid-column: 2/ span 3;
+    }
+
+    .projects {
+        padding-bottom: 300px;
+        row-gap: 50px;
+    }
+
+    .project-container--desktop {
+        display: flex;
+    }
+
+    .project-container:nth-of-type(4),
+    .project-container {
+        grid-column: 2/ span 1;
+    }
+
+    .project-container:nth-of-type(3),
+    .project-container:nth-of-type(5) {
+        grid-column: 4/ span 1;
+    }
+
+    .projects-image h1 {
+        font-size: 28px;
+    }
+
+    .projects-image__text h2 {
+        font-size: 25px;
+        line-height: 41px;
+    }
+
+    .projects-image__text,
+    .projects-image {
+        grid-column: span 4;
+    }
+
+    .projects-image__techniques p {
+        line-height: 11px;
+        font-size: 21px;
+    }
+
+    .project-container--mobile {
+        display: none;
+    }
+
+    .thoughts {
+        padding-bottom: 200px;
+    }
+
+    .thoughts--mobile {
+        grid-column: 2/ span 1;
+    }
+
+    .thoughts--desktop {
+        display: block;
+        grid-column: 4/ span 1;
+    }
+
+    .thoughts-image__date {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .thoughts .link-text {
+        grid-column: 2 /span 4;
+    }
+
+    dt {
+        font-size: 25px;
+        line-height: 41px;
+    }
+
+    .skills-col:nth-of-type(4) {
+        display: block;
+        grid-column-start: 4;
+    }
+
+    .social-icon {
+        height: fit-content;
+    }
+
+    .social-icon__img {
+        width: 160px;
+        height: 160px;
+        margin: 0;
+    }
+
+    .social-icon__img img {
         width: 35%;
+        height: 35%;
     }
 
     .footer {
