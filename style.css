@@ -11,12 +11,12 @@ h1, h3, h5 {
 
 p {
     font-family: 'Montserrat', sans-serif;
-    padding: 0 24px;
 }
 
 .text {
     font-size: 17px;
     line-height: 1.5;
+    padding: 0 24px 30px;
 }
 
 .title {
@@ -26,8 +26,12 @@ p {
     display: inline-block;
     padding: 3px;
     margin-top: 20px;
-    margin-left:auto;
-    margin-right:auto;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 /* HEADER */
@@ -58,9 +62,9 @@ p {
 
 .header-h3 {
     color: white;
-    font-size: 20px;
+    font-size: 26px;
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 8%; 
 }
 
@@ -70,7 +74,7 @@ p {
 
 .header-h5 {
     color: white;
-    font-size: 16px;
+    font-size: 13px;
     position: absolute;
     top: 18%;
     left: 8%;
@@ -142,6 +146,7 @@ p {
     background-color: #fde3ea;
     font-size: 10px;
     margin-left: 10px;
+    padding: 5px 10px;
 }
 
 /* OTHER SECTION */
@@ -163,12 +168,12 @@ p {
 
 /* MY THOUGHTS SECTION */
 
-.my-thoughts {
-    /* height: 100vh; */
+.thought {
+    width: 80%;
 }
 
 .my-thougths-img {
-    width: 80%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -179,10 +184,18 @@ p {
     font-weight: bold;
 }
 
+.date {
+    color: red;
+}
+
 /* MORE THOUGHTS SECTION */
 
 .more-thoughts-article {
     text-align: center;
+}
+
+.more-thoughts-article p {
+    font-weight: bold;
 }
 
 .date-style {
@@ -216,9 +229,6 @@ p {
 
 /* FOR MORE SECTION */
 
-.for-more {
-    /* height: 100vh; */
-}
 
 .link-div {
     display: flex;
@@ -255,15 +265,54 @@ p {
     }
 
     .header-h3 {
-        font-size: 28px;
+        font-size: 45px;
+        top: 46%;
     }
 
     .header-h5 {
         font-size: 21px;
     }
+
+    .project-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .project-div {
+        width: 60%;
+    }
+
+    .tag-container {
+        margin-left: 10%;
+    }
+
+    .thoughts-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .thought {
+        width: 30%;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 5% 12% 5% 12%;
+    }
+
+    .more-thoughts-article {
+        padding-bottom: 25px;
+    }
 }
 
-@media (min-width: 1001px) and (max-width: 1200px){
+@media (min-width: 1001px) {
     .icons-svg {
         position: absolute;
         top: 48px;
@@ -287,15 +336,63 @@ p {
         font-size: 21px;
     }
 
+    .project-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .skills-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        padding: 0 12% 0 12%;
     }
 
-    .code-tag {
-        margin-left: 110px;
+    .text {
+        margin: 0 110px;
+    }
+
+    .project-div {
+        width: 60%;
+    }
+
+    .tag-container {
+        margin-left: 10%;
+    }
+
+    .thoughts--grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+
+    .thoughts-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .thought {
+        width: 30%;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0 12% 5% 12%;
+    }
+
+    .more-thoughts-article {
+        padding-bottom: 25px;
     }
 }
