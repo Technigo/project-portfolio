@@ -13,6 +13,34 @@ body,html {
   font-size: 16px;
 }
 
+/*** HEADINGS ***/
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h2:last-child {
+  color: var(--fifth);
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+mark {
+  background-color: var(--third);
+  color: var(--fifth);
+  padding: 0 5px;
+}
+
 /*** HERO-PART ***/
 
 .hero {
@@ -36,17 +64,17 @@ body,html {
   border-radius: 50%;
   border: var(--secondary) solid 2px;
   position: absolute;
-  top:5%;
+  top:20px;
   bottom: 0;
-  left: 5%;
+  left: 20px;
   right: 0;
 }
 
 .hero-info {
   position: absolute;
-  top: 45%;
+  top: 140px;
   bottom: 0;
-  left: 20%;
+  left: 70px;
   right: 0;
   border: white solid;
   padding: 10px;
@@ -58,89 +86,69 @@ body,html {
 
 .icons-top {
   position: absolute;
-  top: 5%;
+  top: 20px;
   bottom: 0;
-  left: 70%;
+  left: 280px;
   right: 0;
   border: solid black;
   display: table;
   justify-content: center;
-  
+  align-items: center;
 }
 
 
 .icon {
-  list-style: none;
+  /* list-style: none; */
   margin: 0px 2px;
   display: inline-block;
-  font-size: 10px;
-  /* color: var(--fifth); */
-  padding: 5px 5px;
-  border: solid 2px var(--fifth);
-  border-radius: 50%;
-  transition: 1s;
-  height: 15px;
-  width: 15px;
-  color: white;
-  object-fit: fill;
+  font-size: 15px;
+  /* padding: 5px 5px; */
+  /* border: solid 2px var(--fifth); */
+  /* border-radius: 50%; */
+  /* transition: 1s; */
+  height: 25px;
+  width: 25px;
+  /* color: white; */
+  /* object-fit: fill; */
 }
 
 .icon:hover {
 color: var(--third);
 border: solid 2px var(--third);
-transition: 1s;
+/* transition: 1s; */
 }
 
 
-/*** HEADINGS ***/
 
-h1 {
-  font-size: 25px;
-}
 
-h2 {
-  font-size: 20px;
-}
-
-h2:last-child {
-  color: var(--fifth);
-}
-
-h3 {
-  font-size: 18px;
-}
-
-h4 {
-  font-size: 16px;
-}
-
-/* What to use? Mark or Span?*/
-mark {
-  background-color: var(--third);
-  color: var(--fifth);
-  padding: 0 5px;
-}
-
-span {
-  background-color: var(--third);
-  color: var(--fifth); 
-}
 
 /*** INFO-PART ***/
 
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .summary {
+  width: 310px;
+  height: 235px;
   text-align: left;
   padding: 20px;
   border: solid black;
 }
 
 .tech {
+  width: 310px;
+  height: 235px;
   text-align: center;
   padding: 20px;
   border: solid white;
 }
 
-.container-projects {
+/*** PROJECTS PART ***/
+
+.projects-container {
   text-align: center;
   border: solid black;
 
@@ -156,17 +164,13 @@ span {
 
 .top-project {
   border: solid white;
-  width: 60%;
+  width: 220px;
   margin: 20px;
-  padding: 15px;
-  
-
 }
 
 .top-project img {
-  width:70%;
-  height:100px;
-  margin: 10px 30px;
+  width:220px;
+  height:150px;
   border: solid 2px var(--fourth);
 }
 
@@ -175,16 +179,52 @@ a {
   color: black;
 }
 
-.other-projects {
+.other-projects-container {
   text-align: center;
+}
+
+.other-projects {
+  text-align: left;
   padding: 20px;
   border: solid white;
 }
 
+/*** THOUGTS & SKILLS***/
+
+.my-thoughts-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .my-thoughts {
   text-align: center;
-  padding: 20px;
-  border: solid black;
+  padding: 0;
+  border: solid black;  border: solid white;
+  width: 220px;
+  margin: 20px;
+}
+
+.my-thoughts img {
+  width:220px;
+  height:150px;
+  border: solid 2px var(--fourth);
+}
+
+.more-thoughts-container {
+  text-align: center;
+}
+
+.more-thoughts {
+  text-align: left;
+  width: 300px;
+  height: 65px;
+  margin-left: 10px;
+}
+
+.skills-container {
+text-align: center;
 }
 
 .skills {
@@ -203,7 +243,8 @@ ul {
 
 .skill-list {
   text-align: center;
-  width: 70%;
+  width: 150px;
+  height: 200px;
   border: solid white;
   margin: 20px;
 }
@@ -217,41 +258,45 @@ ul {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center;
   background-color: var(--third);
   color: var(--fourth);
 }
+
 
 /*** MEDIA QUERIES TABLETT ***/
 
 @media (min-width: 667px) {
  
   .icons-top {
-    left: 78%;
+    left: 580px;
+    
   }
 
   .hero-selfpic {
     width: 100px;
     height: 120px;
-    top:10%;
-    left: 5%;
+    top:50px;
+    left: 50px;
   }
 
   .hero-info {
     position: absolute;
-    top: 48%;
-    bottom: 0;
-    left: 32%;
-    right: 0;
+    top: 150px;
+    left: 250px;
   }
 
   .summary {
-   padding: 35px;
+   padding: 0;
+   width: 500px;
 
   }
 
   .tech {
-    padding: 35px;
+    padding:0;
+    width: 500px;
   }
 
   .projects {
@@ -263,13 +308,61 @@ footer {
   }
 
   .top-project {
-    width: 35%;
+    width: 250px;
     margin: 20px;
-    padding: 15px;
+    padding: 0;
   }
 
-  .other-projects{
-    padding: 35px;
+  .top-project img {
+    width: 250px;
+    height: 180px;
+  }
+
+  .other-projects-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .other-projects {
+    width: 500px;
+    text-align: left;
+    padding: 20px;
+    border: solid white;
+  }
+
+  .my-thoughts {
+    width: 250px;
+  }
+  
+  .my-thoughts-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .my-thoughts img {
+    width: 250px;
+    height: 180px;
+  }
+
+  .more-thoughts-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .more-thoughts {
+    text-align: left;
+    width: 500px;
+    height: 65px;
+    justify-content: center;
+    
   }
 
   .skills {
@@ -277,17 +370,17 @@ footer {
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     
   }
 
   .skill-list {
     text-align: center;
-    width: 30%;
+    width: 150px;
+    height: 200px;
     border: solid white;
     margin: 20px;
   }
-
 
   
 }
