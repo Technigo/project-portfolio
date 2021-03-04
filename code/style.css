@@ -24,7 +24,6 @@ p {
 
 /*** SUB HEADINGS ***/
 .sub-headings-container {
-  height: 26px;
   text-align: center;
   padding-top: 40px;
 }
@@ -60,6 +59,17 @@ p {
 }
 
 
+/*** SCREEN READER ONLY ***/
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
 /*** HEADER ***/
 .header {
   background-image: url(./assets/header-pic.jpg);
@@ -76,10 +86,8 @@ p {
 
 .social-media-container {
   position: absolute;
-  height: 40px;
   left: 220px;
   top: 48px;
-  width: 130px;
   text-align: center;
 }
 
@@ -89,18 +97,15 @@ p {
   width: 20px;
   text-align: center;
   text-decoration: none;
-  border: solid 2px var(--primary);
+  border: solid 1px var(--primary);
   border-radius: 50%;
   color: var(--primary); 
 }
 
 .headings-container {
   position: absolute;
-  width: 220px;
-  height: 202px;
   top: 121px;
   left: 24px;
-  margin: 0;
 }
 
 .portfolio {
@@ -118,6 +123,7 @@ p {
 }
 
 .frontend {
+  display: block;
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -125,6 +131,7 @@ p {
 }
 
 .lawyer {
+  display: block;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -155,7 +162,6 @@ p {
 /*** INTRO SECTION ***/
 .intro-section {
   background: var(--third);
-  height: 232px;
   width: auto;
   padding: 40px 20px;
 }
@@ -167,12 +173,28 @@ p {
   line-height: 29px;
 }
 
+.line {
+  display: inline-block;
+  width: 55px;
+  height: 2px;
+  background-color: var(--secondary);
+  margin-bottom: 5px;
+}
+
+.circle {
+  display: inline-block;
+  background-color: var(--secondary);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: -10px; 
+} 
+
 
 /*** TECH SECTION ***/
 .tech-text {
-  width: 327px;
-  height: 147px;
-  padding: 40px 20px;
+  padding: 40px 35px;
+  text-align: center;
 }
 
 .tech-text p {
@@ -196,7 +218,6 @@ p {
 }
 
 .project-card {
-  height: 341px;
   padding: 40px 25px 15px 25px;
   position: relative;
 }
@@ -206,7 +227,6 @@ p {
 }
 
 .project-card-image {
-  height: 212px;
   width: 100%;
   filter: brightness(70%);
 }
@@ -242,14 +262,14 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 400;
-  line-height: 17px;
+  line-height: 29px;
   color: #000000;
   padding-top: 10px;
 }
 
 /*** Other projects ***/
 .other-projects {
-  padding: 30px 25px 70px 25px;
+  padding: 40px 25px 70px 25px;
 }
 
 .other-projects h3 {
@@ -283,7 +303,6 @@ p {
 }
 
 .my-thoughts-card {
-  height: 341px;
   padding: 40px 25px 15px 25px;
   position: relative;
 }
@@ -293,13 +312,12 @@ p {
 }
 
 .my-thoughts-card-image {
-  height: 212px;
   width: 100%;
   filter: brightness(70%);
 }
 
 .my-thoughts-card-info {
-  height: 110px;
+
 }
 
 .my-thoughts-date {
@@ -412,7 +430,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 20px 0px 30px 0px;
+  padding: 20px 25px 30px 25px;
 }
 
 .for-more-social-media {
@@ -434,24 +452,21 @@ p {
 }
 
 .social-media-bottom {
-  padding: 8px;
-  font-size: 40px;
-  width: 40px;
+  padding: 15px;
+  font-size: 25px;
+  width: 25px;
   text-align: center;
   text-decoration: none;
-  border: solid 2px var(--secondary);
+  border: solid 1px var(--secondary);
   border-radius: 50%;
   color: var(--secondary); 
 }
 
 
-
 /*** FOOTER ***/
 .footer {
-  position: absolute;
-  height: 300px;
-  width: 100%;
   background: var(--fourth);
+  padding: 70px 0px;
 }
 
 .footer h2 {
@@ -461,6 +476,7 @@ p {
   line-height: 41px;
   text-align: center;
   color: var(--primary);
+  padding-bottom: 20px;
 }
 
 .footer p {
@@ -472,15 +488,117 @@ p {
   color: var(--primary);
 }
 
-.footer-container {
-  padding: 40px 25px 40px 25px;
-}
-
 
 /*** MEDIA QUERIES ***/
 
 /** TABLET **/
 @media (min-width: 768px) {
+  
+  /*** Sub headings ***/
+  .sub-headings-container {
+    padding-top: 70px;
+  }
+
+  .sub-headings-container h2 {
+    font-size: 33px;
+    line-height: 38px;
+    padding: 2px 10px;
+  }
+
+
+  /*** Project tags ***/
+  .project-tags {
+    margin-top: 14px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 8px 9px;
+    margin-right: 7px;
+  }
+
+
+  /** Header **/
+  .social-media-container {
+    left: 500px;
+    top: 50px;
+  }
+  
+  .social-media-top {
+    padding: 10px;
+    font-size: 32px;
+    width: 32px;
+    border: solid 2px var(--primary);
+    margin-right: 7px;
+  }
+  
+  .headings-container {
+    position: absolute;
+    top: 165px;
+    left: 48px;
+  }
+  
+  .portfolio {
+    font-size: 17px;
+  }
+  
+  .portfolio-name {
+    font-size: 17px;
+  }
+  
+  .frontend {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  
+  .lawyer {
+    font-size: 34px;
+    line-height: 45px;
+  }
+  
+  .profile-pic-container {
+    width: 233px;
+    height: 233px;
+    left: 480px;
+    top: 455px;
+    border: solid 3px var(--primary);
+  }
+  
+  /*** Intro section ***/
+  .intro-section {
+    padding: 70px 50px;
+  }
+
+  .intro-section p {
+    font-size: 23px;
+    line-height: 40px;
+  }
+
+  .line {
+    width: 60px;
+    height: 3px;
+    margin-bottom: 6px;
+  }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+  } 
+
+
+  /*** Tech section ***/
+  .tech-text {
+    padding: 90px 130px;
+  }
+
+  .tech-text p {
+    font-size: 23px;
+    line-height: 40px;
+  }
+
+
+
+
 
 } 
 
@@ -517,6 +635,28 @@ p {
     height: 100%;
     width: auto;
   }
+
+
+
+
+  .line {
+    display: inline-block;
+    width: 70px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 8px;
+  }
+
+  .circle {
+    display: inline-block;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -10px; 
+  } 
+
+
    */
 
  }
