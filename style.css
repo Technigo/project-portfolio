@@ -1,12 +1,37 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/*****STANDARD SECTIONS THAT APPLY TO MORE THAN ONE HTML ELEMENT*****/
 body{
     margin: 0;
+    font-size: 17px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.highlight{
+    color: #FF484C;
+}
+
+/*******STANDARD SECTION FOR SUMMARY, TECH AND SKILLS SECTION*****/
+.standard-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 324px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height:29px;
+    font-size:17px;
+}
+
+/*******HEAD-LINES FOR THE DIFFERENT TWO DIFFERENT HEADERS******/
 .highlighted-headline{
     Font-family:  'Montserrat', sans-serif;
     Font-size: 22px;
@@ -29,30 +54,10 @@ body{
     color: #FF484C;
     padding: 15px;
     height: 26px;
-    border-radius: 5px;
-}
-.standard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 324px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    line-height:29px;
-    font-size:17px;
+    margin: 0;
 }
 
-.highlight{
-    color: #FF484C;
-    font-weight: 700;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-
+/**********STANDARD PROJECT SECTION FOR MY PROJECTS AND MY THOUGHTS****/
 .standard-projects-section{
     display: flex;
     flex-direction: column;
@@ -79,14 +84,25 @@ a{
     display: flex;
     align-items: flex-start;;
     flex-direction: column;
-    margin-bottom: 30px;  
+    margin: 0px 20px 30px 20px;
 }
 
+/*******GENERAL PROJECT CARD ELEMENTS******/
 .project-card{
     /* border: solid 2px; */
     width: 300px;
     margin-bottom: 40px;
 
+}
+
+.project-card-title{
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.project-card-paragraph{
+    margin-top:0;
+    margin-bottom: 5px;
 }
 
 .picture {
@@ -97,7 +113,7 @@ a{
 }
 
 .picture:hover {
-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .another-project-card{
@@ -105,8 +121,11 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     display: flex;
     flex-direction: column;
     width:100%;
-    
 }
+
+/******************************************
+FROM TOP -BOTTOM OF WEB PAGE. CODE BEGINS HERE
+*******************************************/
 
 /*****TOP SECTION*****/
 header{
@@ -212,11 +231,6 @@ background-color: #f8f1f1;
 }
 /*****FEATURED PROJECTS*****/
 
-.project-card a{
-    text-decoration: none;
-    color: black;
-}
-
 .tech-attributes{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -230,38 +244,28 @@ background-color: #f8f1f1;
     border-radius: 5px;
     background-color: #f8f1f1;
 }
-/*********OTHER PROJECTS******/
+/*********OTHER PROJECTS SECTION******/
 
 
 /*******MY THOUGHTS SECTION*****/
-/* .my-thoughts-section {
-    display: grid; 
-    grid-template-columns: 1fr;
-    grid-gap: 10px; 
-    margin: 2%;
-    border: solid 2px;
-    justify-items: center;
-    background-color: #f8f1f1;
+.more-thoughts-section
+{
+    background: #f8f1f1;
 }
 
-.my-thoughts-card {
-    width: 327px;
-    border: solid 2px;
-} */
-
-/*******MORE THOUGHTS SECTION*****/
-/* .more-thoughts-section{
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2%;
-    border: solid 2px;
+.article-date{
+    margin-bottom: 0px;
 }
-.more-thoughts-card{
-    width: 327px;
-    border: solid 2px;
-} */
+
+.article-title{
+    margin: 0px;
+}
+
+/*********MORE THOUGHTS SECTION******/
+
+.more-thoughts-paragraph {
+    text-decoration: underline;
+}
 
 /********MY SKILLS SECTION*****/
 .my-skills-section{
@@ -269,10 +273,9 @@ background-color: #f8f1f1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:2%;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    line-height: 30px;;
+    line-height: 30px;
+    margin-bottom: 10px;
 }
 
 .skills-container{
@@ -282,6 +285,11 @@ background-color: #f8f1f1;
     /* border: black solid; */
 }
 
+.skills-header{
+    font-size: 17px;
+    margin: 0;
+    color:#FF484C;
+}
 
 /********FOR MORE********/
 .for-more-section{
@@ -290,6 +298,8 @@ background-color: #f8f1f1;
     justify-content: center;
     align-items: center;
     margin: 2%;
+    background-color: #f8f1f1;
+    margin: 0;
     /* border: black solid; */
 }
 
