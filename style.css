@@ -14,15 +14,29 @@ body {
 }
 
 .header-text {
+width: 220px;
+height: 202px;
+font-family: Roboto;
 align-self: flex-start;
+margin: 121px 0 0 24px;
+font-size: 13px;
 }
 
-.profile-img {
+.profile-image {
+width: 96%;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+padding-top: 20px;
+margin-bottom: -5%;
+}
+
+.profile-image img {
   border-radius: 50%;
   border: 4px solid white;
   width: 200px;
   height: 200px;
-  margin-right: 60px;
+  margin-right: 20px;
   margin-bottom: -30px;
   
   
@@ -65,12 +79,13 @@ h3 {
   color: white;
   display: inline-block;
   padding: 4px;
+  margin-top: 60px;
   text-align: center;
   box-sizing: border-box;
 }
 
 h4 {
-  color: white;
+  color: red;
   display: inline-block;
   padding: 4px;
   text-align: center;
@@ -81,7 +96,6 @@ h4 {
 .main-section {
   text-align: center;
   font-family: Montserrat;
-  width: 90%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -90,12 +104,18 @@ h4 {
   width: 100%;
 }
 
+.text {
+  margin: 20px;
+}
+
 .project-container {
 display: flex;
+flex-wrap: wrap;
 flex-direction: column;
 align-items: center;
+width: 100%;
 justify-content: center;
-background: #3daa13;
+background: #8c13aa;
 }
 
 .projects {
@@ -103,22 +123,30 @@ background: #3daa13;
   flex-direction: column;
 }
 
+.project-container p {
+  color: black;
+}
 
 .project-container a {
- display: flex;
- flex-wrap: wrap;
+ display: flex; 
+ flex-direction: row;
  flex-direction: column;
  align-items: center;
+ margin: 20px 0 20px 0;
+ text-decoration: none;
 }
 
 .tech-tags {
 display: flex;
-flex-flow: row-wrap;
-margin-left: 10%;
+}
+
+.red {
+  background-color: red;
 }
 
 .tag {
 background-color: pink;
+color: black;
 margin: 10px 5px 0 0 ;
 padding: 3px 10px 1px 10px;
 align-items: center;
@@ -132,4 +160,33 @@ flex-direction:column;
 h5 {
   margin: 0;
   padding: 10px 0 0  10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contact-info {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(122, 54, 122);
+  padding: 10px 0 20px 0;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  
+    } 
+
+
+@media (min-width: 1024px) {
+  
+  
 }
