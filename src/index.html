@@ -16,17 +16,17 @@
         <ul class="link__list link__list--header" aria-label="list of links to my social media profiles">
           <li aria-label="linkedin">
             <a class="link__icon link__icon--small" href="#">
-              <img src="./assets/icon-linkedin-white.svg" alt="Isabella Billgrens linkedin account" />
+              <img src="./assets/icons/icon-linkedin-white.svg" alt="Isabella Billgrens linkedin account" />
             </a>
           </li>
           <li aria-label="github">
             <a class="link__icon link__icon--small" href="#">
-              <img src="./assets/icon-github-white.svg" alt="Isabella Billgrens Github account" />
+              <img src="./assets/icons/icon-github-white.svg" alt="Isabella Billgrens Github account" />
             </a>
           </li>
           <li aria-label="stackoverflow">
             <a class="link__icon link__icon--small" href="#">
-              <img src="./assets/icon-stackoverflow-white.svg" alt="Isabella Billgrens Stack Overflow account" />
+              <img src="./assets/icons/icon-stackoverflow-white.svg" alt="Isabella Billgrens Stack Overflow account" />
             </a>
           </li>
         </ul>
@@ -74,22 +74,8 @@
       <div class="wrapper">
         <h1 class="primary" id="featuredProjects">FEATURED PROJECTS</h1>
         <div class="cards">
-          <ul class="cards__list" aria-label="List of Featured Projects">
-            <li class="card" aria-labelledby="projectID">
-              <div class="card__title--featured">
-                <img src="./assets/project-alex.png" alt="screenshot from the game" />
-                <h2 class="featured">
-                  <a href="https://google.com" target="_blank" id="projectID">MY TITLE</a>
-                </h2>
-              </div>
-              <p class="primary primary--bold">DESCRIPTION OF TITLE.</p>
-              <p>Write short what the project is about and what technoglogies you’ve used.</p>
-              <ul class="card__pills" aria-label="list of languages used in the project">
-                <li class="card__pills--item">HTML5</li>
-                <li class="card__pills--item">CSS3</li>
-                <li class="card__pills--item">JavaScript ES6</li>
-              </ul>
-            </li>
+          <ul class="cards__list" aria-label="List of Featured Projects" id="featuredProjectsList">
+            <!-- Projects will be loaded in here -->
           </ul>
         </div>
         <!-- 
@@ -119,23 +105,8 @@
       <div class="wrapper">
         <h1 class="secondary" id="otherProjects">OTHER PROJECTS</h1>
         <div class="cards">
-          <ul class="cards__list cards__list--other" aria-label="List of Other Projects">
-            <li class="card" aria-labelledby="projectID1">
-              <div class="card__text-inline">
-                <h2>
-                  <a href="https://google.com" target="_blank" id="projectID1" class="primary">MY TITLE</a>
-                </h2>
-                <p>
-                  Write short what the project is about and what technoglogies you’ve used.
-                  <span class="primary primary--bold"> >></span>
-                </p>
-              </div>
-              <ul class="card__pills" aria-label="list of languages used in the project">
-                <li class="card__pills--item">HTML5</li>
-                <li class="card__pills--item">CSS3</li>
-                <li class="card__pills--item">JavaScript ES6</li>
-              </ul>
-            </li>
+          <ul class="cards__list cards__list--other" aria-label="List of Other Projects" id="otherProjectsList">
+            <!-- Other projects will be loaded here  -->
           </ul>
         </div>
       </div>
@@ -146,22 +117,8 @@
       <div class="wrapper">
         <h1 class="primary" id="myThoughts">MY THOUGHTS ABOUT CODE</h1>
         <div class="cards">
-          <ul class="cards__list" aria-label="List of links to featured blog posts">
-            <li class="card" aria-labelledby="blogID">
-              <div class="card__title--featured">
-                <img src="./assets/project-alex.png" alt="" />
-              </div>
-              <p class="primary">JAN 2021</p>
-              <h2 class="blog-title blog-title--featured">
-                <a href="https://google.com" target="_blank" id="blogID">
-                  Nulla quis lorem ut libero malesuada feugiat.
-                </a>
-              </h2>
-              <p>
-                Proin eget tortor risus. Donec sollicitudin molestie malesuada. Quisque velit nisi, pretium ut lacinia
-                in, elementum id enim.<span class="primary"> >></span>
-              </p>
-            </li>
+          <ul class="cards__list" aria-label="List of links to featured blog posts" id="featuredBlogsList">
+            <!-- Featured blog posts will be loaded here -->
           </ul>
         </div>
       </div>
@@ -172,19 +129,8 @@
       <div class="wrapper">
         <h1 class="secondary" id="otherThoughts">MORE THOUGHTS</h1>
         <div class="cards">
-          <ul class="cards__list cards__list--other" aria-label="List of links to other blog posts">
-            <li class="card" aria-labelledby="blogID1">
-              <div class="card__text-inline card__text-inline--blog">
-                <p class="primary">JAN 2021</p>
-                <h2 class="blog-title">
-                  <a href="https://google.com" target="_blank" id="blogID1">5 Apps that will make coding easier.</a>
-                </h2>
-                <p>
-                  Write short what the project is about and what technoglogies you’ve used.
-                  <span class="primary primary--bold"> >></span>
-                </p>
-              </div>
-            </li>
+          <ul class="cards__list cards__list--other" aria-label="List of links to other blog posts" id="otherBlogsList">
+            <!-- Other blog posts will be loaded here -->
           </ul>
         </div>
       </div>
@@ -194,15 +140,7 @@
     <section class="section--alt-background" aria-label="Skills divided into categories">
       <div class="wrapper">
         <h1 class="primary">SKILLS</h1>
-        <div class="skills__wrapper">
-          <ul class="skills__category" aria-labelledby="category1">
-            <h2 class="primary" id="category1">CODE</h2>
-            <li>HTML5</li>
-            <li>JavaScript</li>
-            <li>Styled Components</li>
-            <li>HTML5</li>
-          </ul>
-        </div>
+        <div class="skills__wrapper" id="skillsList"></div>
       </div>
     </section>
 
@@ -213,19 +151,19 @@
         <ul class="link__list" aria-label="list of links to my social media profiles">
           <li aria-labelledby="link1">
             <a class="link__icon" href="#">
-              <img src="./assets/icon-linkedin.svg" alt="Isabella Billgrens linkedin account" />
+              <img src="./assets/icons/icon-linkedin.svg" alt="Isabella Billgrens linkedin account" />
             </a>
             <small id="link1">LINKEDIN</small>
           </li>
           <li aria-labelledby="link2">
             <a class="link__icon" href="#">
-              <img src="./assets/icon-github.svg" alt="Isabella Billgrens github account" />
+              <img src="./assets/icons/icon-github.svg" alt="Isabella Billgrens github account" />
             </a>
             <small id="link2">GITHUB</small>
           </li>
           <li aria-labelledby="link3">
             <a class="link__icon" href="#">
-              <img src="./assets/icon-stackoverflow.svg" alt="Isabella Billgrens stack overflow account" />
+              <img src="./assets/icons/icon-stackoverflow.svg" alt="Isabella Billgrens stack overflow account" />
             </a>
             <small id="link3">STACK</small>
           </li>
@@ -243,5 +181,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./app.js" type="module"></script>
   </body>
 </html>
