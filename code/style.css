@@ -1,0 +1,565 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/ 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+}
+
+/*** HEADER ***/
+.header {
+  background-image: linear-gradient(rgba(32, 14, 50, 0.8),rgba(61, 32, 90, 0.6)),url("./images/desktop.jpeg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 520px;
+}
+
+.header__icons-wrapper {
+  position: absolute;
+  width: 130.5px;
+  height: 40px;
+  top: 48px;
+  right: 24.5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header__icon {
+  width: 35px;
+  height: 35px;
+  border: 1.7px solid #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__content {
+  position: absolute;
+  width: 220px;
+  left: 24px;
+  top: 121px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  line-height: 18px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  padding: 10px 0;
+}
+
+.header__name {
+  font-weight: 700;
+}
+
+.header__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 49px;
+  margin: 10px 0;
+  letter-spacing: 0;
+}
+
+.header__title-two {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0;
+  margin-top: 5px;
+}
+
+.header__portrait {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: 24px;
+  top: 356px;
+}
+
+.header__portrait-img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+}
+
+/*** GENERAL ***/
+.main-wrapper { /*TA UPP DEN!!!!*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  padding: 15px 0;
+}
+
+.main-background { /*TA UPP DEN!!!!*/
+  background-color: #F4F4F4;
+}
+
+.content-container {  /*Behövs den??!!!*//*TA UPP DEN!!!!*/
+  width: 327px;
+  line-height: 29px;
+  font-size: 17px; 
+}
+
+.header-box { /*TA UPP DEN!!!!*/
+  background-color: #3C096C;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 27px;
+  padding: 2px;  
+}
+
+/*** SUMMARY SECTION ***/
+.summary-line {
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #3C096C;
+  margin-bottom: 3px;
+}
+
+.summary-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3C096C;
+  margin-left: -5px;
+}
+
+/*** TECH SECTION ***/
+.tech-content {
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/*** PROJECT SECTION ***/
+.card {
+  font-family: 'Roboto', sans-serif;
+  height: 361px;
+  margin: 30px 0;
+}
+
+.card a, 
+.card-two a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.card__item { 
+  position: relative;
+  height: 212px;
+}
+
+.card__image {
+  height: 100%;
+  width: 100%;
+  filter: brightness(70%);
+}
+
+.card__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
+} 
+
+.card__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.01em;
+}
+
+.card__content {
+  height: 100px;
+  letter-spacing: 0.01em;
+}
+
+.card__header {
+  color: #3C096C;
+  font-weight: 700;
+  margin: 25px 0 5px;
+}
+
+.card__content-two {
+  margin: 0;
+}
+
+.card__tech-info {
+  position: absolute;
+  height: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card__tech-box {
+  background-color: #FDDFE7;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  margin-right: 6px;
+  height: 21px;
+  padding: 6px;
+}
+
+ .text-box-transparent { /*TA UPP DEN*/
+   color: #3C096C;
+   font-size: 21px;
+   margin-top: 0;
+ }
+
+ .card__hidden {
+   display: none;
+ }
+
+ /*** OTHER PROJECT SECTION ***/
+ .card-two {
+  font-family: 'Roboto', sans-serif;
+  margin: 30px 0 50px 0;
+}
+
+/***  MY TOUGHTS ***/
+.card__tought { /**BYT NAMN PÅ CLASS!**/
+  height: 556px;
+  margin-bottom: 10px;
+}
+
+.card__toughts {
+  width: 320px;
+  height: 319px;
+  line-height: 32px;
+}
+
+.card__link-toughts {
+  color: #000000;
+  text-decoration: 1px solid red;
+  margin-right: -5px;
+}
+
+.card__date {
+  color: red;
+  margin-bottom: 0;
+}
+
+.card__tought-header {
+  font-size: 21px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.card__toughts-content {
+  margin: 0;
+}
+
+/** MORE TOUGHTS ***/
+.card-toughts-1 {
+  height: 200px;
+}
+
+.card__link-toughts-1 {
+  display: flex;
+  height: 64px;
+  line-height: 29px;
+  width: 327px; 
+  margin: 10px 0;
+}
+
+.card__links {
+  text-decoration: none;
+  text-decoration-line: underline;
+  color: red;
+}
+
+.card__link-2 {
+  text-decoration: none;
+  text-decoration-line: underline;
+  font-weight: bold;
+  color: #000000;
+}
+/*** SKILLS ***/
+.skills {
+  height: 474px;
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  gap: 42px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.skills__container {
+  text-align: center;
+}
+
+.skills__title {
+  color: red;
+  font-weight: bold;
+}
+
+.skills__upcoming {
+  margin-top: 50px;
+}
+
+/*** FOR MORE ***/
+.icons {
+  height: 302px;
+}
+
+.icons__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 150px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #3C096C;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon__img {
+  border: 1.7px solid #3C096C;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*** FOOTER ***/
+.footer {
+  background: #072BCE;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  height: 302px;
+}
+
+.footer__content {
+  margin-top: 20px;
+}
+
+.footer__content p {
+  text-align: center;
+  line-height: 25px;
+  margin: 0;
+}
+
+/*** MEDIA QUERIES ***/
+@media (min-width: 768px) {
+
+  body {
+    font-size: 20px;
+  }
+
+  .header__icons-wrapper {
+    width: 180px;
+    right: 100.5px;
+  }
+
+  .header__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header__content {
+    width: 300px;
+    left: 100px;
+  }
+
+  .header__content {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .header__title {
+    font-size: 50px;
+    line-height: 59px;
+  }
+
+  .header__title-two {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .header__portrait {
+    top: 330px;
+    right: 100px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .main-wrapper {  
+    padding: 35px 0;
+  }
+
+  .content-container {
+    width: 90%;
+    line-height: 33px;
+    font-size: 20px;
+  }
+
+  .header-box { 
+    font-size: 25px;
+    padding: 4px;  
+  }
+ 
+  .summary-circle {
+    margin-left: -8px;
+  }
+
+  .content-grid  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    height: 410px;
+  }
+
+  .card__tech-info {
+    height: 100px;
+  }
+
+  .card__hidden {
+    display: block;
+  }
+
+  .content-container-two {
+   width: 700px;
+  }
+
+  .card-two {
+    height: 100px;
+  }
+
+  .card__tech-info-two {
+    height: 0;
+  }
+
+  .card__tought-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 700px;
+  }
+
+  .skills {
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 42px;
+  }
+
+  .icons__wrapper {
+    gap: 15px;
+  }
+
+  .icon__img {
+    border: 2px solid #3C096C;
+    width: 90px;
+    height: 90px;
+  }
+
+  .card-toughts-1 {
+    height: 200px;
+  }
+
+  .card__link-toughts-1 {
+    width: 700px;
+  }
+
+  .svg {
+    height: 60px;
+    width: 60px;
+  }
+ 
+}
+
+@media (min-width: 1200px) {
+ 
+  .header__icons-wrapper {
+    width: 260px;
+    top: 102px;
+    right: 410px;
+  }
+
+  .header__icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 6px;
+  }
+
+  .header_icons-img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .header__content {
+    width: 607px;
+    height: 339px;
+    top: 206px;
+    left: 426px;
+  }
+
+  .header__content p {
+    font-size: 20px;
+    letter-spacing: 0.3px; 
+  }
+
+  .header__content h1 {
+    font-size: 62px;
+  }
+
+  .header__content h2 {
+    font-size: 34px;
+  }
+
+  .header__portrait {
+    width: 260px;
+    right: 210px;
+    top: 438px;
+  }
+
+  .header__portrait-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  
+
+  .text-box { /*TA UPP DEN!!!!*/ 
+    font-size: 48px;
+  }
+
+  .summary-line {
+    height: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .summary-circle {
+    width: 15px;
+    height: 15px;
+    margin-left: -10px;
+  }
+
+}
