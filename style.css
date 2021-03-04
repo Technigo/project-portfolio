@@ -86,8 +86,9 @@ p {
     border-radius: 50%;
     width: 30%;
     position: absolute;
-    bottom: 155px;
-    right: 25px;
+    bottom: 28%;
+    right: 8%;
+    border: 1.5px solid white;
 }
 
 .welcome .text {
@@ -171,6 +172,10 @@ p {
 
 /* MORE THOUGHTS SECTION */
 
+.more-thoughts-article {
+    text-align: center;
+}
+
 .date-style {
     color: red;
 }
@@ -183,12 +188,20 @@ p {
 }
 
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-bottom: 40px;
 }
 
 .skills-box {
     display: inline-block;
+}
+
+.skills-box h5 {
+    color: red;
 }
 
 /* FOR MORE SECTION */
@@ -213,4 +226,21 @@ p {
     padding: 60px 24px 84px 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    .header-text {
+        font-size: 80px;
+    }
+    
+    .icons-svg {
+        position: absolute;
+        top: 48px;
+        right: 70px;
+        width: 190px;
+    }
+
+    .portrait {
+        width: 25%;
+    }
 }
