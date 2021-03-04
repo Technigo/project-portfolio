@@ -6,10 +6,10 @@
 }
 
 :root {
-    --main-color: #25afc2;
-    --secondary-color: #5fcbe5;
-    --third-color: #0e0779;
-    --bg-color: #e7f0f1;
+    --main-color: #9b0461;
+    --secondary-color: #c9fcf5;
+    --third-color: #024255;
+    --bg-color: #f7f7f7;
 }
 
 h1,
@@ -17,8 +17,17 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
 }
 
 .container {
@@ -43,16 +52,16 @@ p {
 .header-bg {
     position: relative;
     height: 520px;
-    background-image: url("./assets/jr-korpa-baiXRjt912U-unsplash\ \(1\).jpg");
+    background-image: url("https://images.unsplash.com/photo-1602407068040-5e95d2abe191?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .header-bg__heading {
-    line-height: 18px;
+    line-height: 49px;
     position: absolute;
-    left: 24px;
+    left: 10%;
     top: 121px;
     display: flex;
     flex-direction: column;
@@ -63,12 +72,10 @@ p {
 
 .header-bg__heading h1 {
     font-size: 40px;
-    line-height: 49px;
 }
 
 .header-bg__heading h2 {
     font-size: 24px;
-    line-height: 49px;
 }
 
 .header-bg__heading span {
@@ -77,14 +84,13 @@ p {
 
 .header-bg__heading p {
     font-size: 13px;
-    line-height: 49px;
 }
 
 .header-icons {
     display: flex;
     width: fit-content;
     position: absolute;
-    left: 220px;
+    right: 10%;
     top: 50px;
 }
 
@@ -112,7 +118,7 @@ p {
     width: 180px;
     height: 180px;
     top: 356px;
-    left: 170px;
+    right: 10%;
     border-radius: 50%;
     border: solid white 3px;
     background-image: url("./assets/portrait.jpg");
@@ -125,7 +131,7 @@ p {
     height: 200px;
     top: 569px;
     display: flex;
-    padding: 24px;
+    padding: 0 10%;
 }
 
 .header-about-me img {
@@ -140,7 +146,7 @@ p {
     height: 100%;
     grid-area: main;
     display: grid;
-    grid-template-columns: [first] 20px [line2] 1fr [line3] 1fr [line4] 20px [end];
+    grid-template-columns: [first] 10% [line2] 1fr [line3] 1fr [line4] 10% [end];
     background-color: rgb(255, 255, 255);
 }
 
@@ -157,6 +163,10 @@ p {
 .sub-heading {
     color: var(--main-color);
     justify-self: center;
+}
+
+.sub-heading h1 {
+    font-size: 21px;
 }
 
 .heading,
@@ -199,6 +209,7 @@ p {
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: space-between;
 }
 
 .project-container--desktop {
@@ -214,7 +225,7 @@ p {
     width: 100%;
     height: 220px;
     overflow: hidden;
-    background-color: var(--third-color);
+    background-color: black;
 }
 
 .projects-image img {
@@ -223,7 +234,7 @@ p {
     width: 100%;
     min-height: 100%;
     object-fit: cover;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .projects-image__title {
@@ -283,6 +294,7 @@ p {
 .link-text p {
     margin-right: 10px;
     align-self: center;
+    line-height: 30px;
 }
 
 .thoughts {
@@ -308,7 +320,7 @@ p {
     line-height: 30px;
     font-family: 'Montserrat', sans-serif;
     color: var(--main-color);
-    margin-right: 10px;
+    margin: 20px 10px 0 0;
 }
 
 .thoughts-container h2 {
@@ -383,7 +395,7 @@ dd {
     align-items: center;
     height: 100px;
     font-size: 11px;
-    color: #25afc2;
+    color: var(--main-color);
     margin-top: 40px;
 }
 
@@ -399,7 +411,7 @@ dd {
     height: 55px;
     width: 55px;
     border-radius: 50%;
-    border: solid #25afc2;
+    border: solid var(--main-color);
     position: relative;
     display: flex;
     justify-content: center;
@@ -410,7 +422,7 @@ dd {
     position: absolute;
     width: 50%;
     object-fit: contain;
-    filter: invert(71%) sepia(86%) saturate(1412%) hue-rotate(144deg) brightness(81%) contrast(84%);
+    filter: invert(8%) sepia(95%) saturate(4778%) hue-rotate(320deg) brightness(83%) contrast(112%);
 }
 
 .footer {
@@ -438,50 +450,66 @@ dd {
 }
 
 @media screen and (min-width: 700px) {
-    .main {
-        grid-template-columns: [first] 120px [line2] 1fr [line3] 1fr [line4] 120px [end];
-    }
-
-    .header-portrait,
-    .header-icons {
-        left: auto;
-        right: 120px;
-    }
-
-    .header-bg__heading {
-        padding-left: 120px;
-        width: 400px;
-    }
-
-    .header-about-me {
-        padding: 0 120px;
-    }
-
-    .projects-image,
-    .thoughts-image {
-        height: 310px;
-    }
-
-}
-
-@media screen and (min-width: 1000px) {
-    .main {
-        grid-template-columns: 17% 31% 1fr 31% 17%;
-    }
-
-    .skills, 
-    .social {
-        grid-template-columns: 17% 1fr 1fr 1fr 17%;
-    }
-
     h1 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     h2,
     p {
-        font-size: 25px;
+        font-size: 21px;
         line-height: 41px;
+    }
+
+    .header h1 {
+        font-size: 62px;
+        line-height: 1.2em;
+    }
+
+    .header h2 {
+        font-size: 35px;
+    }
+
+    .header p {
+        font-size: 22px;
+    }
+  
+    .header-icons__container {
+        height: 60px;
+        width: 60px;
+    }
+
+    .header-portrait {
+        height: 220px;
+        width: 220px;
+    }
+
+    .header-about-me p {
+        height: fit-content;
+        font-size: 22px;
+        line-height: 40px;
+        width: 100%;
+    }
+    
+    .heading {
+        line-height: 58px;
+        font-weight: 700;
+        padding: 0 5px;
+    }
+
+    .sub-heading h1 {
+        font-size: 34px;
+    }
+
+    .main {
+        grid-template-columns: [first] 15% [line2] 1fr [line3] 1fr [line4] 15%[end];
+    }
+
+    .skills {
+        grid-template-columns: 15% 1fr 1fr 15%;
+    }
+
+    .social {
+        grid-template-columns: 15% 1fr 1fr 1fr 15%;
     }
 
     .header {
@@ -492,76 +520,132 @@ dd {
         height: 640px;
     }
 
+    .header-about-me {
+        top: 640px;
+        height: 420px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-portrait,
+    .header-icons {
+        right: 15%;
+    }
+
+    .header-portrait {
+        top: 450px;
+    }
+
+    .header-bg__heading {
+        top: 200px;
+        left: 15%;
+        width: 400px;
+    }
+
+    .header-about-me {
+        padding: 0 15%;
+    }
+
+    .tech {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .projects {
+        padding-bottom: 200px;
+        row-gap: 30px;
+    }
+
+    .projects-image,
+    .thoughts-image {
+        height: 310px;
+    }
+
+    .projects-image h1 {
+        font-size: 24px;
+    }
+
+    .projects-image__text h2 {
+        font-size: 21px;
+        line-height: 31px;
+    }
+
+    .projects-image__techniques p {
+        line-height: 11px;
+        font-size:  18px;
+    }
+
+    .thoughts {
+        padding-bottom: 100px;
+    }
+
+    .thoughts-image__date {
+        font-size: 21px;
+        display: flex;
+        align-items: center;
+    }
+
+    dt {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .social-icon {
+        height: fit-content;
+        margin-top: 40px;
+    }
+
+    .social-icon__img {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .social-icon__img img {
+        width: 35%;
+        height: 35%;
+    }
+
+    .footer {
+        height: 500px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .contact-info p {
+        font-size: 26px;
+        line-height: 1.8em;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .main {
+        grid-template-columns: 10% 38% 1fr 38% 10%;
+    }
+
+    .skills, 
+    .social {
+        grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    }
+
     .header-bg__heading {
         width: 600px;
-        left: 17%;
+        left: 10%;
         padding: 0;
-    }
-
-    .header h1 {
-        font-size: 82px;
-        line-height: 1.2em;
-    }
-
-    .header h2 {
-        font-size: 50px;
-    }
-
-    .header p {
-        font-size: 28px;
     }
 
     .header-icons,
     .header-portrait {
-        left: auto;
-        right: 410px;
-    }
-
-    .header-icons__container {
-        height: 80px;
-        width: 80px;
-    }
-
-    .header-portrait {
-        height: 333px;
-        width: 333px;
+        right: 10%;
     }
 
     .header-about-me {
-        top: 640px;
-        height: 420px;
         width: 66%;
-        display: flex;
-        align-items: center;
         padding: 0 17%;
-    }
-
-    .header-about-me p {
-        height: fit-content;
-        font-size: 30px;
-        line-height: 50px;
-        width: 100%;
     }
 
     .header-about-me img {
         padding-top: 20px;
-    }
-
-    .heading {
-        font-size: 48px;
-        line-height: 58px;
-        font-weight: 700;
-        padding: 0 5px;
-    }
-
-    .sub-heading h1 {
-        font-size: 38px;
-    }
-
-    .tech {
-        height: 500px;
-        font-size: 30px;
-        line-height: 50px;
     }
 
     .tech-text{
@@ -587,23 +671,9 @@ dd {
         grid-column: 4/ span 1;
     }
 
-    .projects-image h1 {
-        font-size: 28px;
-    }
-
-    .projects-image__text h2 {
-        font-size: 25px;
-        line-height: 41px;
-    }
-
     .projects-image__text,
     .projects-image {
         grid-column: span 4;
-    }
-
-    .projects-image__techniques p {
-        line-height: 11px;
-        font-size: 21px;
     }
 
     .project-container--mobile {
@@ -623,19 +693,8 @@ dd {
         grid-column: 4/ span 1;
     }
 
-    .thoughts-image__date {
-        font-size: 25px;
-        display: flex;
-        align-items: center;
-    }
-
     .thoughts .link-text {
         grid-column: 2 /span 4;
-    }
-
-    dt {
-        font-size: 25px;
-        line-height: 41px;
     }
 
     .skills-col:nth-of-type(4) {
@@ -643,19 +702,110 @@ dd {
         grid-column-start: 4;
     }
 
-    .social-icon {
-        height: fit-content;
+}
+
+@media screen and (min-width: 1500px) {
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2,
+    p {
+        font-size: 25px;
+        line-height: 41px;
+    }
+        
+    .header {
+        height: 1190px;
+    }
+
+    .header-about-me {
+      height: 500px;
+    }
+
+    .header-icons__container {
+        height: 80px;
+        width: 80px;
+    }
+
+    .header h1 {
+        font-size: 82px;
+        line-height: 1.2em;
+    }
+
+    .header h2 {
+        font-size: 50px;
+    }
+
+    .header p {
+        font-size: 28px;
+    }
+
+    .header-portrait {
+        height: 333px;
+        width: 333px;
+    }
+
+    .main {
+        grid-template-columns: 17% 31% 1fr 31% 17%;
+    }
+
+    .sub-heading h1 {
+        font-size: 38px;
+    }
+    
+    .skills, 
+    .social {
+        grid-template-columns: 17% 1fr 1fr 1fr 17%;
+    }
+
+    .header-bg__heading {
+        left: 17%;
+    }
+
+    .header-icons,
+    .header-portrait {
+        right: 17%;
+    }
+
+    .header-about-me p {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .tech {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .projects-image h1 {
+        font-size: 28px;
+    }
+
+    .projects-image__text h2 {
+        font-size: 25px;
+        line-height: 41px;
+    }
+
+    .projects-image__techniques p {
+        line-height: 11px;
+        font-size:  21px;
+    }
+
+    .thoughts-image__date {
+        font-size: 25px; 
+    }
+
+    dt {
+        font-size: 25px;
+        line-height: 41px;
     }
 
     .social-icon__img {
         width: 160px;
         height: 160px;
         margin: 0;
-    }
-
-    .social-icon__img img {
-        width: 35%;
-        height: 35%;
     }
 
     .footer {
@@ -668,4 +818,5 @@ dd {
         font-size: 30px;
         line-height: 2em;
     }
+   
 }
