@@ -255,10 +255,12 @@ background-color: #f8f1f1;
 
 .article-date{
     margin-bottom: 0px;
+    font-size:17;
 }
 
 .article-title{
     margin: 0px;
+    font-size:17;
 }
 
 /*********MORE THOUGHTS SECTION******/
@@ -269,22 +271,27 @@ background-color: #f8f1f1;
 
 /********MY SKILLS SECTION*****/
 .my-skills-section{
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    line-height: 30px;
     margin-bottom: 10px;
 }
 
 .skills-container{
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px; 
+    align-items: stretch;
     /* border: black solid; */
 }
-
+.skills-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    line-height: 30px;
+}
 .skills-header{
     font-size: 17px;
     margin: 0;
@@ -333,6 +340,7 @@ footer{
     padding-bottom: 50px;
     background-color: #FF484C;
     width: 100%;
+    color: #ffff;
 }
 
 footer p{
@@ -342,13 +350,13 @@ footer p{
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .standard-projects-container{
             grid-template-columns: repeat(2, 1fr); 
-            gap: 10px;
+            gap: 15px;
         }
 
-        .my-thoughts-section {
+        /* .my-thoughts-section {
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px; 
-        }
+            grid-gap: 20px; 
+        } */
 
         .skills-container{
             grid-template-columns: repeat(4, 1fr); 
@@ -359,6 +367,7 @@ footer p{
     @media screen and (min-width: 1024px) {
         .standard-projects-container{
             grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
             }
     
         .skills-container{
