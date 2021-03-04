@@ -12,9 +12,28 @@
   <body>
     <header class="hero" aria-label="header with titles and image">
       <div class="wrapper hero__wrapper">
+        <ul class="link__list link__list--header" aria-label="list of links to my social media profiles">
+          <li aria-label="linkedin">
+            <a class="link__icon link__icon--small" href="#">
+              <img src="./assets/icon-linkedin-white.svg" alt="Isabella Billgrens linkedin account" />
+            </a>
+          </li>
+          <li aria-label="github">
+            <a class="link__icon link__icon--small" href="#">
+              <img src="./assets/icon-github-white.svg" alt="Isabella Billgrens Github account" />
+            </a>
+          </li>
+          <li aria-label="stackoverflow">
+            <a class="link__icon link__icon--small" href="#">
+              <img src="./assets/icon-stackoverflow-white.svg" alt="Isabella Billgrens Stack Overflow account" />
+            </a>
+          </li>
+        </ul>
         <p>PORTFOLIO: <b>Isabella Billgren </b></p>
-        <h1>frontend developer</h1>
-        <h2>+ experienced QA Engineer</h2>
+        <div class="test">
+          <h1>frontend developer</h1>
+          <h2>+ experienced QA Engineer</h2>
+        </div>
         <picture>
           <source srcset="./assets/avatar.webp" type="image/webp" />
           <source srcset="./assets/avatar.jpg" type="image/jpg" />
@@ -100,8 +119,8 @@
           <ul class="cards__list cards__list--other" aria-label="List of Other Projects">
             <li class="card" aria-labelledby="projectID1">
               <div class="card__text-inline">
-                <h2 class="other other--project">
-                  <a href="https://google.com" target="_blank" id="projectID1">MY TITLE</a>
+                <h2>
+                  <a href="https://google.com" target="_blank" id="projectID1" class="primary">MY TITLE</a>
                 </h2>
                 <p>
                   Write short what the project is about and what technoglogies you’ve used.
@@ -130,7 +149,7 @@
                 <img src="./assets/project-alex.png" alt="" />
               </div>
               <p class="primary">JAN 2021</p>
-              <h2 class="featured--blog">
+              <h2 class="blog-title blog-title--featured">
                 <a href="https://google.com" target="_blank" id="blogID">
                   Nulla quis lorem ut libero malesuada feugiat.
                 </a>
@@ -152,9 +171,9 @@
         <div class="cards">
           <ul class="cards__list cards__list--other" aria-label="List of links to other blog posts">
             <li class="card" aria-labelledby="blogID1">
-              <div class="card__text-inline">
+              <div class="card__text-inline card__text-inline--blog">
                 <p class="primary">JAN 2021</p>
-                <h2 class="other other--blog">
+                <h2 class="blog-title">
                   <a href="https://google.com" target="_blank" id="blogID1">5 Apps that will make coding easier.</a>
                 </h2>
                 <p>
@@ -169,9 +188,45 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="section--alt-background" aria-label="Skills I have divided into categories">
+    <section class="section--alt-background" aria-label="Skills divided into categories">
       <div class="wrapper">
         <h1 class="primary">SKILLS</h1>
+        <div class="skills__wrapper">
+          <ul class="skills__category" aria-labelledby="category1">
+            <h2 class="primary" id="category1">CODE</h2>
+            <li>HTML5</li>
+            <li>JavaScript</li>
+            <li>Styled Components</li>
+            <li>HTML5</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOR MORE -->
+    <section aria-label="Social Links">
+      <div class="wrapper">
+        <h1 class="primary">FOR MORE</h1>
+        <ul class="link__list" aria-label="list of links to my social media profiles">
+          <li aria-labelledby="link1">
+            <a class="link__icon" href="#">
+              <img src="./assets/icon-linkedin.svg" alt="Isabella Billgrens linkedin account" />
+            </a>
+            <small id="link1">LINKEDIN</small>
+          </li>
+          <li aria-labelledby="link2">
+            <a class="link__icon" href="#">
+              <img src="./assets/icon-github.svg" alt="Isabella Billgrens github account" />
+            </a>
+            <small id="link2">GITHUB</small>
+          </li>
+          <li aria-labelledby="link3">
+            <a class="link__icon" href="#">
+              <img src="./assets/icon-stackoverflow.svg" alt="Isabella Billgrens stack overflow account" />
+            </a>
+            <small id="link3">STACK</small>
+          </li>
+        </ul>
       </div>
     </section>
 
