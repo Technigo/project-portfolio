@@ -25,16 +25,16 @@ body {
     left: 45%; /* 180px */
     top: 67%; /* 356 */ 
     border-radius: 50%;
-    border: 4px solid white; 
+    border: 2px solid white; 
     z-index: 5;
     /*background: url('./assets/profile-pic.jpg');*/
 }
 
 .icons{
     position: absolute;
-    left: 60%;
+    left: 50%;
     top: 10%;
-    width: 30%;
+    width: 100%;
 }
 
 
@@ -97,37 +97,44 @@ body {
 /* *** TOP SECTION *** */
 
 .top-section { /* du kan använda gemensam class på denna samt tech delen precis under */
-    background-color: red;
+    background-color: #F4F4F4;
     /*height: 520px; /* Denna kan du ändra och lägga till padding som mellanrum */
     display: flex;
     justify-content: center;
     align-items: center;
     /*text-align: center;*/
-    padding: 49px 24px;
+    padding: 48px 24px;
+
 }
 
 .top-section-text {
 
     font-weight: normal; /* Ta bort denna sen */
     /* width:50%  DETTA SKA DU GÖRA SEN NÄR DU ANPASSAR DIN KOD TILL OLIKA DEVICES*/
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
 }
+
 
 
 /* *** TECH SECTION *** */
 
 .tech-section { /* du kan använda gemensam class på denna samt tech delen precis under */
-    background-color: blue;
+    background-color: #FFFFFF;
     /*height: 520px; /* Denna kan du ändra och lägga till padding som mellanrum */
     display: flex;
     justify-content: center;
     align-items: center;
     /*text-align: center;*/
-    padding: 49px 24px;
+    padding: 48px 24px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .tech-section-text {
     font-weight: normal; /* Ta bort denna sen */
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
     /* width:50%  DETTA SKA DU GÖRA SEN NÄR DU ANPASSAR DIN KOD TILL OLIKA DEVICES*/
 }
 
@@ -136,15 +143,18 @@ body {
 }
 
 .tech-section-text h4 span {
-    background-color: green;
+    background-color: #FA382F;
+    color: white;
     font-weight: bold;
+    padding: 4px;
+    font-size: 22px;
 }
 
 
 /* ***FEATURED PROJECT SECTION *** */
 .row-3 {
-    background-color: turquoise;
-    padding: 49px 24px;
+    background-color: #F4F4F4;
+    padding: 48px 24px;
     font-family: 'Montserrat', sans-serif;
 }
 .project-section { /* du kan använda gemensam class på denna samt tech delen precis under */
@@ -173,12 +183,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: red;
+
   }
 
   .container .centered p {
     color: white;
     font-weight: bold;
+    font-size: 28px;
     
   }
 
@@ -207,6 +218,8 @@ body {
     color: #FFFFFF;
     font-weight: bold;
     font-size: 22px;
+    padding: 4px;
+
     
 }
 
@@ -215,7 +228,7 @@ body {
 }
 
 .project-section-content img{
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .project-section-content img:hover {
@@ -229,12 +242,14 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 17px;
+   
     
 }
 
 .project-section-content h4 {
     margin-bottom: 5px;
     margin-top: 0px;
+    padding-top: 20px;
     
 }
 
@@ -247,6 +262,7 @@ body {
 
 }
 
+
 .tags {
     display: flex;
 }
@@ -256,6 +272,7 @@ body {
     background-color: #FDDFE7;
     font-size: 9px;
     font-family: 'Roboto',sans-serif;
+    padding: 3px;
 }
 
 .mobile {
@@ -268,8 +285,8 @@ body {
 /* ** Thoughts Section *** */
 
 .row-4 {
-    background-color: khaki;
-    padding: 49px 24px;
+    background-color: #FFFFFF;
+    padding: 48px 24px;
 }
 
 .thoughts-section {
@@ -321,6 +338,9 @@ body {
 
 .other-thoughts h2 {
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 21px;
 
 } /*JÖÖ */
 
@@ -367,12 +387,14 @@ body {
 
 
 .more-thoughts h2 span{
-    background-color: khaki;
     text-decoration:none;
 }
 
 .more-thoughts h2 {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .more-thoughts span {
@@ -391,12 +413,16 @@ body {
 .row-5 {
 
     text-align: center;
+    padding: 48px;
+    /*
     padding-top: 24px;
     padding-bottom: 24px;
+    */
 
-
-    background-color:lightseagreen;
+    background-color:#F4F4F4;
+    font-family: 'Montserrat', sans-serif;
 } 
+
 
 .skills {
     display: flex;
@@ -407,6 +433,26 @@ body {
 .my-skills {
     display: grid;
     grid-template-columns: 1fr  1fr;
+    font-family: 'Roboto', sans-serif;
+}
+
+.my-skills p {
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+
+
+}
+
+.my-skills h6 span {
+    font-weight: bold;
+    font-size: 17px;
+    color: #FA382F;
+
+}
+
+.my-skills h6 {
+    margin-bottom: 5px;
 }
 
 .my-skills-more {
@@ -416,7 +462,7 @@ body {
 /* *** FOR MORE SECTION *** */
 
 .row-6 {
-    background-color:red;
+    background-color:red; /*#FFFFFF*/
     padding: 24px;
     text-align: center;
 }
@@ -432,16 +478,34 @@ body {
 }
 
 
+.fab {
+    font-size: 40px; /* 160px in dekstop */
+    width: 40px; /*160px in desktop */
+    border: 2px solid white;
+    padding: 5px; /* this one will also have to change depending on device */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.926);
+    background:rgba(245, 245, 245, 0.44);
+}
+
+
+
+
+
+
 /* ***Contact section starts here*** */
 
 .contact-section { /* du kan använda gemensam class på denna samt tech delen precis under */
-    background-color: blue;
+    background-color: #072BCE;
     /*height: 520px; /* Denna kan du ändra och lägga till padding som mellanrum */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 49px 24px;
+    padding: 48px 24px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -453,27 +517,20 @@ body {
 
 .contact-section-text h4{
     text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
 .contact-section-text h4 span {
-    background-color: green;
     font-weight: bold;
 }
 
-/*TEST DEL MED ICON OCH CIRKEL */
-
-
-
-.test2 {
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 100%;
+.contact-section-text p {
+    margin: 0px;
+    font-size: 17px;
+    color: #FFFFFF;
 }
-
-
-
-/* TEST DEL MED ICON OCH CIRKEL */
-
 
 
 
@@ -483,7 +540,16 @@ body {
 
 /* Måste jobba pp */
 @media (min-width:768px) {
- 
+    
+    .icons{
+        left: 60%;
+        top: 10%;
+    }
+
+    .header-profile-pic {
+        left: 60%; /* 180px */
+        top: 67%; /* 356 */ }
+
     
     .project-section { /* du kan använda gemensam class på denna samt tech delen precis under */
         display: grid; 
@@ -529,7 +595,7 @@ body {
     .my-skills {
         display: grid;
         grid-template-columns: 1fr  1fr 1fr;
-        width: 50%; /* Denna kan ändras allt eftersom i bredd beroende på hur stort vi vill ha det */
+        width: 100%; /* Denna kan ändras allt eftersom i bredd beroende på hur stort vi vill ha det */
     }
 
     .my-skills-more {
