@@ -49,7 +49,7 @@ body {
 .logos {
     position: absolute;
     top: 3%;
-    left: 70%;
+    left: 60%;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: auto auto auto;
@@ -59,9 +59,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-
     box-shadow: 1px 2px 1px 1px rgba(17, 75, 98, 0.4);
-
 }
 
 a:link {
@@ -76,13 +74,12 @@ a:link {
     height: 120px;
     border-radius: 50%;
     box-shadow: 1px 2px 1px 1px rgba(17, 75, 98, 0.4);
-
 }
 
 .introduction {
     display: flex;
     background-color: rgb(234, 234, 250);
-    padding: 10px;
+    padding: 20px;
     margin-top: -5px;
 }
 
@@ -90,6 +87,8 @@ a:link {
     display: flex;
     flex-direction: column;
     background-color: rgb(247, 247, 251);
+    align-items: center;
+    padding: 20px;
 }
   
 p.skills {
@@ -99,14 +98,13 @@ p.skills {
 h3 {
     text-align: center;
     margin-top: 10px;
-    margin-bottom:0;
+    margin-bottom:5px;
 }
 
 h3 span {
     color: white;
     background-color: red;
     padding: 5px;
-    
 }
 
 h4 {
@@ -135,6 +133,7 @@ p {
 
 /*************** FEATURED PROJECTS *************/
 
+
 .featured-projects-container {
     display: grid;
     grid-gap: 5px;
@@ -142,13 +141,14 @@ p {
     justify-content: center;
     align-content: center;
     background-color: rgb(234, 234, 250);
-    padding: 10px;
+    padding: 20px;
 }
 
 .featured-projects-container img {
     width: 100%;
-    padding: 10px;
-    margin: 5px;
+    padding-top: 10px;
+    
+    
 }
 
 .pic-container {
@@ -169,25 +169,47 @@ p {
     background-color: rgba(253, 253, 253, 0.342);
     padding: 5px;
 }
+
 h6 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 h6 span {
+    
+    
+    font-weight: 600;
     color: black;
     background-color: rgb(248, 169, 202);
-    padding: 5px;
+    font-size: 9px;
+    padding: 3px;
     margin-left: 0px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
+
+
+
+/*
+.skill-labels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+*/
+
+
 
 /******************** OTHER PROJECTS ****************/
 .other-projects {
     display: flex;
     flex-direction: column;
     background-color: rgb(234, 234, 250);
-    padding: 10px;
+    padding: 20px;
 }
 
 .other {
@@ -201,17 +223,19 @@ h6 span {
 }
 .other span {
     color: rgb(208 27 27);
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: underline rgb(208 27 27);
 }
 
 /*************** MY THOUGHTS ************************/
 .my-thoughts {
-
     display: flex;
     flex-direction: column;
     background-color: rgb(247, 247, 251);
-    padding: 10px;
+    padding: 5px 20px 5px 20px;
+    
+    
+    
 }
 
 /*************** MORE THOUGHTS ********************/
@@ -219,24 +243,22 @@ h6 span {
     display: flex;
     flex-direction: column;
     background-color: rgb(247, 247, 251);
-    padding: 10px;
-     
+    padding: 5px 20px 5px 20px;
 }
 
 /****************** SKILLS ***********************/
 
 .all-skills {
     display: grid;
-    
     background-color: rgb(234, 234, 250);
-    padding: 10px;
+    padding: 20px;
     margin-top: 10px;
-
 }
 
 ul {
     list-style-type: none;
     text-align: center;
+    padding-inline-start: 0px;
 }
 
 
@@ -249,11 +271,9 @@ p.description-skills {
     padding: 10px;  
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    
 }
 
 /***************** FOR MORE *****************/
-
 .logos-more {
     padding: 25px;
     display: grid;
@@ -267,7 +287,6 @@ p.description-skills {
     height: 60px;
     border-radius: 50%;
     box-shadow: 1px 2px 1px 1px rgba(7, 74, 100, 0.4);
-
 }
 
 /************** CONTACT*********************/
@@ -275,31 +294,24 @@ p.description-skills {
     display: flex;
     background-color: rgb(97, 97, 245);
     flex-direction: column;
-    
     align-items: center;
-    
-    
     font-family: "Montserrat";
     font-size: 20px;
-    
     color: white;
     padding-top: 20px;
-    
-
+    padding-bottom: 20px;
 }
+
 .contact h5 {
     color: white;
     font-family: "Roboto";
     padding: 20px;
-    
 }
 
 .contact h6 {
     margin: 5px;
     font-weight: lighter;
 }
-
-
 
   /*********** MEDIA QUERIES  *************/
 @media(min-width: 768px) {
@@ -308,7 +320,6 @@ p.description-skills {
         top: 50px;
         left: 50px;
         font-size: 40px;
-        
     }
       
     .hero-subtitle1 {
@@ -316,7 +327,6 @@ p.description-skills {
         top: 130px;
         left: 50px;
         font-size: 60px;
-        
     }
     
     .hero-subtitle2 {
@@ -324,11 +334,21 @@ p.description-skills {
         top: 200px;
         left: 50px;
         font-size: 60px;
-        
     }
+
+    .my-photo {
+        position: absolute;
+        top: 84%;
+        left: 60%;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        box-shadow: 1px 2px 1px 1px rgba(17, 75, 98, 0.4);
+    }
+    
     .featured-projects-container {
         display: grid;
-        grid-gap: 5px;
+        grid-gap: 15px;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-content: center;
@@ -336,5 +356,81 @@ p.description-skills {
         padding: 10px;
     }
     
+    .skills-summary {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(247, 247, 251);
+        align-items: center;
+        padding: 30px;
+    }
+    
+
+    .all-skills-grid-wrapper {
+        display: grid;
+        padding: 10px;  
+        grid-gap: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}    
+
+@media(min-width: 1200px) {
+    .hero-title {
+        position: absolute;
+        top: 60px;
+        left: 30px;
+        font-size: 35px;
+        color: rgb(78, 4, 195);
+    }
+      
+    .hero-title span {
+        font-weight:500; 
+    }
+    
+    .hero-subtitle1 {
+        position: absolute;
+        top: 120px;
+        left: 20px;
+        font-size: 50px;
+        font-weight: 900;
+        color: rgb(78, 9, 206);
+    }
+    
+    .hero-subtitle2 {
+        position: absolute;
+        top: 180px;
+        left: 20px;
+        font-weight: 900;
+        font-size: 50px;
+        color: rgb(152, 9, 248);
+    }
+    
+    .logos {
+        position: absolute;
+        top: 5%;
+        left: 80%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto auto auto;
+    }
+    
+    .logos img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 1px 2px 1px 1px rgba(17, 75, 98, 0.4);
+    }
+    
+    .my-photo {
+        position: absolute;
+        top: 79%;
+        left: 70%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .logos-more img {
+        width: 80px;
+        height: 80px;
+    }
     
 }    
