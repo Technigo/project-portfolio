@@ -140,11 +140,49 @@ body {
     display: grid; 
     grid-template-columns: 1fr  ;
     text-align: left;
-   
 }
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+
+
+  }
+
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+  }
+
+
+
+
+
+  .container .centered p {
+    color: white;
+    font-weight: bold;
+    
+  }
 
 .project-section img {
     width: 100%;
+}
+
+.project-section img::after { /* Nytt men funkar ej*/
+    content: "";
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
 
 .highlight {
@@ -225,7 +263,6 @@ body {
 .thoughts-section-text {
     padding: 24px 24px; /* det var 48px 24px */
     /*width: 50%; HÄR ÄNDRAR DU STORLEKEN NÄR DU ÄNDRAR DEVICE*/
-
 }
 
 .thoughts-section-text h2{
@@ -363,9 +400,15 @@ body {
         display: none;
     }
 
-    .other-project-mobile {
+    .other-project-mobile { /* OPACITY */
         display: block;
+        opacity: 0.5;
     }
+
+    .other-project-mobile:hover {
+        opacity: 1.0; /*OPACITY*/
+
+      }
 
     .thoughts-section { /*Måste jobba på denna */
         display: grid; 
