@@ -1,7 +1,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
-    background:rgb(211, 226, 251);
+    background-color: rgb(234, 234, 250);
     color: navy;
 }
 
@@ -58,10 +58,10 @@ body {
 .logos img {
     width: 30px;
     height: 30px;
-}
-
-.stack {
     border-radius: 50%;
+
+    box-shadow: 1px 2px 1px 1px rgba(17, 75, 98, 0.4);
+
 }
 
 a:link {
@@ -75,6 +75,8 @@ a:link {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    box-shadow: 1px 2px 1px 1px rgba(17, 75, 98, 0.4);
+
 }
 
 .introduction {
@@ -108,23 +110,25 @@ h3 span {
 }
 
 h4 {
-    color: red;
+    color: rgb(208 27 27);
     text-align: left;
     padding: 0px;
     margin: 0px;
 }
 
 h5 {
-    font-size: 20px;
-    color: red;
+    font-size: 18px;
+    color: rgb(208 27 27);
     text-align: center;
     margin-bottom: 5px;
+    margin-top: 0px;
 }  
   
 p {
     display: flex;
     text-align: justify;
     text-decoration: none;
+    color: navy;
     padding: 0px;
     margin-top: 10px;
 }
@@ -190,14 +194,15 @@ h6 span {
     margin-left: 0px;
     padding-left: 0px;
     font-family: "Roboto";
+    color: navy;
     text-decoration: underline;
     margin-bottom: 0px;
     margin-top: 10px;
 }
 .other span {
-    color: red;
+    color: rgb(208 27 27);
     font-weight: bold;
-    text-decoration: underline red;
+    text-decoration: underline rgb(208 27 27);
 }
 
 /*************** MY THOUGHTS ************************/
@@ -215,14 +220,25 @@ h6 span {
     flex-direction: column;
     background-color: rgb(247, 247, 251);
     padding: 10px;
+     
 }
 
-
+/****************** SKILLS ***********************/
 
 .all-skills {
     display: grid;
-    margin: 5px;
+    
+    background-color: rgb(234, 234, 250);
+    padding: 10px;
+    margin-top: 10px;
+
 }
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
 
 p.description-skills {
     text-align: center;
@@ -230,11 +246,59 @@ p.description-skills {
 
 .all-skills-grid-wrapper {
     display: grid;
-      
-    grid-gap: 30px;
+    padding: 10px;  
+    grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    
 }
-  
+
+/***************** FOR MORE *****************/
+
+.logos-more {
+    padding: 25px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.logos-more img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 1px 1px rgba(7, 74, 100, 0.4);
+
+}
+
+/************** CONTACT*********************/
+.contact {
+    display: flex;
+    background-color: rgb(97, 97, 245);
+    flex-direction: column;
+    
+    align-items: center;
+    
+    
+    font-family: "Montserrat";
+    font-size: 20px;
+    
+    color: white;
+    padding-top: 20px;
+    
+
+}
+.contact h5 {
+    color: white;
+    font-family: "Roboto";
+    padding: 20px;
+    
+}
+
+.contact h6 {
+    margin: 5px;
+    font-weight: lighter;
+}
+
 
 
   /*********** MEDIA QUERIES  *************/
@@ -262,5 +326,15 @@ p.description-skills {
         font-size: 60px;
         
     }
+    .featured-projects-container {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        background-color: rgb(234, 234, 250);
+        padding: 10px;
+    }
+    
     
 }    
