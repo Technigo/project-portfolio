@@ -10,10 +10,6 @@
 /*Remove the margin in all browsers.*/
 body {
   margin: 0;
-/*
-  box-sizing: border-box;
-  width: 100%;
-*/  
   background: #222831;
 /* background: #393E46; */
   font-family: 'Montserrat', sans-serif; /* Change this locally to sections later? or keep if most is using Montserrat */
@@ -44,7 +40,8 @@ body {
 }
 
 .profession {
-  font-size: 35px;
+  font-size: 45px;
+  line-height: 40px;
 }
 
 /*
@@ -69,17 +66,6 @@ body {
 }
 */
 
-/* DESKTOP and TABLET header */
-/* image 9 */
-/*
-.desktop-header .icons, .icon-9 {
-position: absolute;
-width: 80px;
-height: 80px;
-left: 1430px;
-top: 102px;
-}
-*/
 
 .header-mobile .icons {
   margin-top: 40px;
@@ -90,7 +76,6 @@ top: 102px;
 }
 
 .icon-10, .icon-13, .icon-8 {
-  border-radius: 50%;
   margin: 5px;
 }
 
@@ -117,6 +102,14 @@ top: 102px;
 
 .summary {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-text {
+
 }
 
 .tech {
@@ -127,11 +120,10 @@ top: 102px;
   flex-direction: column;
 }
 
-/* repetition something really weird is going on */
+
 .header-tech {
-  display: inline-flex; /*display: inline-flex; */
+  display: inline-flex;
   background-color: #393E46; 
-/*  margin: 0px 650px;*/ /* How can I do this in an easier way? */
   color: #FFD369; 
 }
 
@@ -148,8 +140,15 @@ top: 102px;
   color: #FFD369;
 }
 
+.featured-projects {
+  width: 100%;
+}
+
 .header-featured-projects {
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .featured-projects-one {
@@ -160,19 +159,21 @@ top: 102px;
   flex-direction: column;
 }
 
-.chatbot, .business-site, .weather-app, .guess-who-game {
-  min-width: 300px; 
-  max-width: 350px;
-  padding: 10px 0 0 10px; /*change to 5px later ? */
+.image-container {
+  width: 100%; 
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* dkjhdfjgfdjgfhdglfdhglsdjghflsgfhdglsfghdkfghksdf hg BESTÄM VAD GÖRA MED DE TVÅ ÖVRIGA FEATURED PROJECTS HERE.... de göms INTE */
-
-.featured-projects-two { /*check why this is not working - it does not hide in mobile view*/
+.featured-projects-two { 
   display: none;
 }
 
-/*
+p { /*this one creates a lot of problem*/
+  padding: 10px; 
+}
+
 .project-container {
   position: relative;
   width: 100%; 
@@ -181,24 +182,31 @@ top: 102px;
   justify-content: center;
   align-items: center;
 }
-*/
+
 .header-two {
   display: inline-flex;
   color: #FFD369;
+  background-color: #393E46;
 }
 
 .header-three {
   position: absolute;
-  top: 150px; 
-  left: 150px;
-  color:#e5493c;
+  top: 130px; 
+  left: 130px;
+  color: #e03022;
   font-size: 30px;
+  font-weight: 900; 
+  font-family: 'Roboto';
+  letter-spacing: 2px;
 }
 
 .header-four {
   display: inline-flex;
   color: #FFD369; 
   text-align: center; /*does not do anything!! */
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 900;
 }
 
 .project-techniques {
@@ -210,13 +218,24 @@ top: 102px;
   color: #FFD369;
 }
 
-/* has a box shadow on the title */
 .other-projects {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-projects-header {
+  display: inline-flex;
+  color: #FFD369;
 }
 
 .my-thoughts {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .technical-skills {
@@ -224,8 +243,8 @@ top: 102px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: column; /*lyssnas inte på*/
+  flex-wrap: wrap;
 }
 
 .header-technical-skills {
@@ -234,9 +253,24 @@ top: 102px;
   color: #FFD369; 
 }
 
-mark.red {
-  color: #e5493c; /*#ff0000; klar-röd också bra*/
-  background: none;
+.tech-skills {
+
+}
+
+.skills-and-toolbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.red {
+  color: #e5493c;
+}
+
+.red-bold {
+  color: #e5493c;
+  font-weight: bold;
 }
 
 .for-more {
@@ -244,20 +278,27 @@ mark.red {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 5px;
   font-family: 'Roboto', sans-serif;
 }
 
+.for-more-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icons-for-more {
-  margin: 20px 100px;
-  border-radius: 50%;
+  margin: 20px 30px;
 }
 
 /* footer mobile too? or not */
 .footer {
   width: 100%;
+  height: 50vh;
   font-family: Montserrat;
-/* font-weight: bold; */
   font-size: 21px;
   line-height: 25px; /* CHECK - does this do something now? */
   color: #f5b825;
@@ -265,12 +306,12 @@ mark.red {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url("./assets/img/footer.jpg");
 }
 
 .contact-information {
   font-weight: 900;
   font-size: 28px;
-
 }
 
 a, .footer {
@@ -284,19 +325,17 @@ a:hover, .footer {
 
 /* IT IS HERE THAT THE PROBLEMS START */
 /* Media queries */
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .main-container {
-    width: 768px;
+    width: 700px;
     }
 
-  .header-mobile { /*change to desktop later*/
-    width: 768px; 
+  .header-mobile { /*change to header */
+    width: 700px; 
   }
 
-  .profession {
- /*   font-size: 82px;
-    line-height: 1.2em KEEP but minimize the font-sixe a bit ? 
-*/
+  .footer {
+    width: 700px;
   }
 
   .featured-projects {
@@ -305,6 +344,7 @@ a:hover, .footer {
     line-height: 34px;
     text-align: center;
   }
+
   .image-container {
     width: 100%;
   }
@@ -330,11 +370,16 @@ a:hover, .footer {
     width: 45%;
   }
 
-  /* kan tas bort senare när jag fått allt på plats */
+  .chatbot, .business-site, .weather-app, .guess-who-game {
+    max-width: 300px; 
+    height: 300px;
+    margin: 10px 0 0 10px; /*change to 5px later ? */
+  }
+  /* kan tas bort senare när jag fått allt på plats 
   .weather-app, .chatbot, .guess-who-game, .business-site {
     width: 100%;
 }
-
+*/
   .skill {
     margin: 20px; 
   }
@@ -371,6 +416,12 @@ a:hover, .footer {
   }
 }
 
+.chatbot, .business-site, .weather-app, .guess-who-game {
+  max-width: 300px; 
+  height: 300px;
+  margin: 10px 0 0 10px; /*change to 5px later ? */
+}
+
 @media (min-width: 1200px) {
   .main-container {
     width: 1200px;
@@ -378,6 +429,16 @@ a:hover, .footer {
 
   .header-mobile { /*change to desktop later*/
     width: 1200px; 
+  }
+
+  .chatbot, .business-site, .weather-app, .guess-who-game {
+    max-width: 300px; 
+    height: 300px;
+    margin: 10px 0 0 10px; /*change to 5px later ? */
+  }
+
+  .footer {
+    width: 1200px;
   }
 
 }
