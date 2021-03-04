@@ -159,10 +159,6 @@ body {
     background-color: red;
   }
 
-
-
-
-
   .container .centered p {
     color: white;
     font-weight: bold;
@@ -245,7 +241,7 @@ body {
     font-family: 'Roboto',sans-serif;
 }
 
-.container .other-project-mobile, .centered {
+.mobile {
     display: none;
 }
 
@@ -375,18 +371,77 @@ body {
 
 
 /* *** Skills Section *** */
-/*.skill-section {
+.row-5 {
+
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+
+    background-color:lightseagreen;
+} 
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-skills {
     display: grid;
     grid-template-columns: 1fr  1fr;
+}
+
+.my-skills-more {
+    display: none;
+}
+
+/* *** FOR MORE SECTION *** */
+
+.row-6 {
+    background-color:red;
+    padding: 24px;
     text-align: center;
+}
+
+.for-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.for-more-tags {
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr;
+}
 
 
-    height: 520px;
-    background-color:lightseagreen;
-} */
+/* ***Contact section starts here*** */
 
+.contact-section { /* du kan använda gemensam class på denna samt tech delen precis under */
+    background-color: blue;
+    /*height: 520px; /* Denna kan du ändra och lägga till padding som mellanrum */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 49px 24px;
+    font-family: 'Montserrat', sans-serif;
+}
 
+.contact-section-text {
+    font-weight: normal; /* Ta bort denna sen */
+    /* width:50%  DETTA SKA DU GÖRA SEN NÄR DU ANPASSAR DIN KOD TILL OLIKA DEVICES*/
+    
+}
 
+.contact-section-text h4{
+    text-align: center;
+}
+
+.contact-section-text h4 span {
+    background-color: green;
+    font-weight: bold;
+}
 
 
 
@@ -413,7 +468,7 @@ body {
         /*display: block;
     } EXPERIMENTERAR MED DENNA*/
 
-    .container .other-project-mobile, .centered {
+    .mobile{
         display: block;
     }
  
@@ -432,6 +487,23 @@ body {
 
     .more-thoughts {
         text-align: center;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-skills {
+        display: grid;
+        grid-template-columns: 1fr  1fr 1fr;
+        width: 50%; /* Denna kan ändras allt eftersom i bredd beroende på hur stort vi vill ha det */
+    }
+
+    .my-skills-more {
+        display: block;
+       
     }
    
 }
