@@ -12,119 +12,171 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <!-- Hero section -->
+  <!-- Header content -->
   <section class="top-section">
+    <a 
+      target="_blank" 
+      class="skip-to-main" 
+      href="#main"
+      >
+      Jump to main content
+    </a>
     <header class="header">
       <section class="header-text">
-        <h3>PORTFOLIO: MARIA SPARRE frontend developer</h3>
-        <p>+event producer</p>
+        <h1>PORTFOLIO: MARIA SPARRE</h1>
+        <h2>frontend developer</h2>
+        <h3>+event producer</h3>
       </section>
-      <section class="navigation-container">
-        <ul class="media-links"> <!-- UL better practice for screen readers -->
-          <a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/mariasparre"></a>
-          <a class="fa fa-github" aria-hidden="true" href="https://github.com/MarySparrow"></a>
-          <a class="fa fa-stack-overflow" aria-hidden="true" href="https://stackoverflow.com/users/14961427/maria-sparre"></a>
+      <section class="media-links">
+        <ul class="media-icons-top"> <!-- UL better practice for screen readers -->
+          <a 
+            target="_blank" 
+            class="fa fa-linkedin fa-2x" 
+            title="linkedin profile" 
+            href="https://www.linkedin.com/in/mariasparre"
+            >
+          </a>
+          <a 
+            target="_blank" 
+            class="fa fa-github fa-2x" 
+            title="github portfolio" 
+            href="https://github.com/MarySparrow"
+            >
+          </a>
+          <a 
+            target="_blank" 
+            class="fa fa-stack-overflow fa-2x" 
+            title="stackoverflow account" 
+            href="https://stackoverflow.com/users/14961427/maria-sparre"
+            >
+          </a>
         </ul>
       </section>
     </header>
   </section>
   <figure>
-    <img class="profile-photo" src="./images/me.png" alt=" picture of Maria">
+    <img 
+      class="profile-photo" 
+      src="./images/me.png" 
+      alt=" picture of Maria">
   </figure>
 <!-- Profile-summary -->
   <summary>
-    <section class="summary">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deleniti consequuntur saepe voluptatum similique quaerat </p>
-      <p> a, consectetur tempora accusantium odit minima, alias quas culpa, dolorem atque corrupti facilis! Voluptates, nobis! </p> 
+    <section 
+      tabindex="0" 
+      class="summary">
+        <h2 
+          class="summary-text">
+          Hello! I’m a strategic and creative senior art director/digital designer with frontend developer skills and experience design at. 
+          I’m all about solving problems that matter and creating awesome, meaningful products for people to love.
+        </h2>
     </section> 
   </summary>  
   
+  
   <section class="description-container">
-    <section class="tech-section">
-      <h2>TECH</h2>
-      <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX, </p>
-      <p> React, React Hooks, Redux, Node.js, </p>
-      <p>  Mongo DB, Web Accessibly, API:s, </p>
-      <p> mob-programming, pair-programming, Github.</p>
-      <p> React Native</p>
-    </section>
+    <main id="main" tabindex="-1">
+      <section class="tech-section">
+        <h2 class="h2"><mark class="marker">TECH</mark></h2>
+        <h3 class="tech-content">HTML, CSS, Flexbox, JavaScript, ES6, JSX, 
+         React, React Hooks, Redux, Node.js,
+         Mongo DB, Web Accessibly, API:s, 
+         mob-programming, pair-programming, Github.
+         React Native</h3>
+      </section>
 
-    <section class="featured-projects">
-      <a href="">  <!-- textdecoration now not working  -->
-        <div class="project-card">
-          <figure>
-            <img class="project-image"src="./images/weather.jpg" alt="Picture of chatbot app">
-          </figure>
-          <div class="project">
-            <h4>Project Chatbot</h4>
-            <p>Description of project</p>
-            <p>More text</p>
+      <section class="featured-projects">
+        <h2 class="h2"><mark class="marker">FEATURED PROJECTS</mark></h2>
+        <a 
+          target="_blank" 
+          class="link-area" 
+          href="https://pedantic-northcutt-25e910.netlify.app/"
+          >  
+          <div tabindex="0" class="project-card">
+            <figure>
+              <img class="project-image"src="./images/weather.svg" alt="Picture of chatbot app">
+            </figure>
+            <div class="project-text">
+              <h4 class="project-header">WEATHER APP</h4>
+              <p>Responsive weather app using HTML5, CSS, Javascript ES6 and API</p>
+              <p><mark class="tag">HTML5</mark> <mark class="tag">CSS3</mark> <mark class="tag">JAVASCRIPT ES6</mark> <mark class="tag">API</mark></p>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="project-card">
-          <figure>
-            <img class="project-image" src="./images/weather.jpg" alt="Picture of weather app">
-          </figure>
-          <div class="project">
-            <h4>Project Weather app</h4>
-            <p>Description of project</p>
-            <p>More text</p>
+        </a>
+        <a target="_blank" class="link-area" href="https://project5guesswho.netlify.app/">
+          <div tabindex="0"class="project-card">
+            <figure>
+              <img class="project-image" src="./images/jenni.svg" alt="Picture of Guess who game">
+            </figure>
+            <div class="project-text">
+              <h4 class="project-header">Project Guess Who</h4>
+              <p>A digital version of the classic board game built with Javascript ES6, HTML and CSS.</p>
+              <p><mark class="tag">HTML5</mark> <mark class="tag">CSS3</mark> <mark class="tag">JAVASCRIPT ES6</mark></p>
+            </div>
           </div>
+        </a>
+      </section>
+
+      <section tabindex="0" class="other-projects">
+        <h2 class="h2"><mark class="marker">OTHER PROJECTS</mark></h2>
+        <h4>BUSINESS SITE.</h4>
+        <p>1</p>  
+        <p>2</p>
+        <h4>WEATHER APP.</h4>
+        <p>1</p>
+        <p>2</p>
+      </section>
+
+      <section class="my-thoughts">
+        <h2 class="h2"><mark class="marker">MY THOUGHTS</mark></h2>
+        <!-- <video src=""></video> -->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Voluptate temporibus consequatur pariatur ullam facere </p>
+        <p>perferendis iure officiis? Dignissimos </p>
+      </section>
+
+      <section class="skills">
+        <div class="code-skills" >
+          <h2 class="h2">SKILLS</h2>
+          <p class="h2">CODE</p>
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>JavaScript ES6</p>
+          <p>Styled Components</p>
+          <p>Github</p>
         </div>
-      </a>
-    </section>
-
-    <section class="other-projects">
-      <h2>OTHER PROJECTS</h2>
-      <h4>BUSINESS SITE.</h4>
-      <p>1</p>  
-      <p>2</p>
-      <h4>WEATHER APP.</h4>
-      <p>1</p>
-      <p>2</p>
-    </section>
-
-    <section class="my-thoughts">
-      <h3>MY THOUGHTS</h3>
-      <video src=""></video>
-    </section>
-
-    <section class="skills">
-      <div class="code-skills" >
-        <p>CODE</p>
-        <p>HTML5</p>
-        <p>CSS3</p>
-        <p>JavaScript ES6</p>
-        <p>Styled Components</p>
-        <p>Github</p>
-      </div>
-      <div class="toolbox-skills" >
-        <p>TOOLBOX</p>
-        <p>Visual Studio Code</p>
-        <p>Postman</p>
-        <p>Figma</p>
-        <p>Slack</p>
-        <p></p>
-      </div>
-      <div class="upcoming-skills" >
-        <p>UPCOMING</p>
-        <p>Redux</p>
-        <p>Node.js</p>
-      </div>
-    </section>
+        <div class="toolbox-skills" >
+          <p class="h2">TOOLBOX</p>
+          <p>Visual Studio Code</p>
+          <p>Postman</p>
+          <p>Figma</p>
+          <p>Slack</p>
+          <p>Stackoverflow</p>
+        </div>
+        <div class="upcoming-skills" >
+          <p class="h2">UPCOMING</p>
+          <p>Redux</p>
+          <p>Node.js</p>
+        </div>
+      </section>
+      <section class="for-more">
+        <h2><mark class="marker">FOR MORE</mark></h2>
+      </section>
+    </main>
 
     <section class="media-links-bottom">
-      <ul>
-        <a class="fa fa-linkedin" href=""></a>
-        <a class="fa fa-github" href=""></a>
-        <a class="fa fa-stack-overflow" href=""></a>
+      <ul class="media-icons-bottom">
+        <a target="_blank" class="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/mariasparre"></a>
+        <p tabindex="0">LINKEDIN</p>
+        <a target="_blank" class="fa fa-github fa-2x" href="https://github.com/MarySparrow"></a>
+        <p tabindex="0">GITHUB</p>
+        <a target="_blank" class="fa fa-circle fa-stack-overflow fa-2x" href="https://stackoverflow.com/users/14961427/maria-sparre"></a>
+        <p tabindex="0">STACKOVERFLOW</p>
       </ul>
     </section>
   </section>
-  
-  <footer class="footer">
+         
+  <footer tabindex="0" class="footer">
     <address > 
       <h3>CONTACT</h3>
       <p>Maria Sparre</p> 
@@ -133,7 +185,6 @@
     </address>
   </footer>
 
-  <!-- <script src="https://use.fontawesome.com/6bdeee5ab6.js"></script> -->
   <script src="./app.js"></script>
 </body>
 </html>
