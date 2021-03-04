@@ -73,12 +73,12 @@ body {
 }
 .header-text .flex-item-1 {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 12px;
 }
 .header-text .flex-item-2, .flex-item-3 {
   font-weight:700;
   margin: 0;
-  font-size: 48px;
+  font-size: 46px;
 }
 .header-text .flex-item-4 {
   font-weight: 700;
@@ -163,6 +163,92 @@ body {
   line-height: 25px;
   text-align: center;
 }
+.featured-projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.card-link {
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.card-article {
+  max-width: 327px;
+  color: #000;
+}
+.image-article{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.overlay-container {
+  position: relative;
+  max-width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+}
+.overlay-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 0.01em;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.article-description {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: left;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+}
+.article-title {
+  margin: 0;
+  color: #FA382F;
+  font-weight: 700;
+}
+.article-text {
+  margin: 0;
+  line-height: 29px;
+}
+.tags {
+  margin-top: -8px;
+  text-align: left;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 11px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  letter-spacing: 0.01em;
+}
+.category {
+  background-color: #e9c5c5;
+  margin-right: 6px;
+  padding: 4px;
+}
 .skills {
   display:grid;
   grid-template-columns: 1fr 1fr; 
@@ -216,6 +302,9 @@ body {
   width: 20px;
   height: 20px;
 }
+.for-more{
+  padding: 0;
+}
 /* footer */
 .footer-container {
   display: flex;
@@ -228,6 +317,7 @@ body {
   background-color: #072BCE;
   color: #fff;
   padding: 50px;
+  text-decoration: none;
 }
 .footer-title {
   font-weight: 700;
@@ -317,6 +407,11 @@ body {
 .icons-big {
   width: 35px;
   height: 35px;
+}
+.featured-projects-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-column-gap: 40px;
 }
 /* Footer */
 .footer-container {
