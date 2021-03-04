@@ -8,26 +8,26 @@ h1.secondary {
   padding: 10px;
   margin-bottom: 80px;
 }
-h2 {
+.hero h2 {
   font-size: 50px;
 }
-h2.project {
-  font-size: 28px;
-}
-p {
+h2.featured--blog a {
   font-size: 30px;
-  line-height: 50px;
 }
-p.project__description,
-p.project__text,
-p.object__other--link {
+
+p,
+h2.other a {
   font-size: 25px;
-  line-height: 41px;
+}
+
+p.alt-font {
+  font-size: 30px;
 }
 .hero__wrapper > p {
   font-size: 28px;
 }
-li {
+
+li.card__pills--item {
   font-size: 16px;
 }
 
@@ -45,26 +45,13 @@ li {
   top: 50px;
 }
 
-.project--feature {
-  width: 523px;
+.cards__list:not(.cards__list--other) {
+  grid-template-columns: 1fr 1fr;
 }
-
-.project__title {
-  height: 306px;
-  margin-bottom: 45px;
+.cards__list {
+  grid-column-gap: 54px;
+  grid-row-gap: 54px;
 }
-
-.project__languages {
-  margin-top: 24px;
-}
-
-/* Makes sure that the other project links are udnerlined in desktop view */
-p.object__other--link {
-  text-decoration: underline;
-  text-decoration-color: var(--primary);
-  color: black;
-}
-p.object__other--link > span {
-  color: black;
-  text-decoration-line: underline;
+.card__text-inline > * {
+  display: inline;
 }

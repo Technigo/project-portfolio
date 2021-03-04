@@ -7,49 +7,70 @@
     <link rel="stylesheet" href="./main.css" />
     <title>Bellsibub</title>
     <!-- A custom build of Modernizr to test if the current browser is supporting webp -->
-    <script src="./modernizr-custom.js" /></script>
+    <script src="./modernizr-custom.js"></script>
   </head>
   <body>
-    <header class="hero">
+    <header class="hero" aria-label="header with titles and image">
       <div class="wrapper hero__wrapper">
         <p>PORTFOLIO: <b>Isabella Billgren </b></p>
         <h1>frontend developer</h1>
         <h2>+ experienced QA Engineer</h2>
         <picture>
-          <source srcset="./assets/avatar.webp" type="image/webp">
-          <source srcset="./assets/avatar.jpg" type="image/jpg">
-          <img
-            class="hero__avatar"
-            src="./assets/avatar.jpg"
-            alt="selfie image of Isabella Billgren"
-          />        
+          <source srcset="./assets/avatar.webp" type="image/webp" />
+          <source srcset="./assets/avatar.jpg" type="image/jpg" />
+          <img class="hero__avatar" src="./assets/avatar.jpg" alt="selfie image of Isabella Billgren" />
         </picture>
       </div>
     </header>
     <section class="section--alt-background" aria-label="description about me">
       <div class="wrapper">
         <!-- accoridng to: https://www.w3.org/WAI/tutorials/images/decorative/ we should leave alt empty if the image is decorative -->
-        <p>
+        <p class="alt-font">
           <img src="./assets/figure-start.svg" alt="" aria-hidden="true" />
-          Hey! I am a passionate gamer and front-end developer.
-          Though I am fairly new to the professional life as a programmer, I have been working in the IT industry as a QA Engineer for over 5 years.
-          Though I enjoy dewling deep into other people's creations and analyzing them, lately I have been longing for some new challenges. I wish to be part of the creation process of projects. Therefore I decided to make the switch to developer.
-          I look forward to this new path I have taken and any future projects I get to contribute to.
+          Hey! I am a passionate gamer and front-end developer. Though I am fairly new to the professional life as a
+          programmer, I have been working in the IT industry as a QA Engineer for over 5 years. Though I enjoy dewling
+          deep into other people's creations and analyzing them, lately I have been longing for some new challenges. I
+          wish to be part of the creation process of projects. Therefore I decided to make the switch to developer. I
+          look forward to this new path I have taken and any future projects I get to contribute to.
         </p>
       </div>
     </section>
+
+    <!-- TECH -->
     <section aria-label="Programming languages I know and developer skills I've used.">
-      <div class="wrapper tech__wrapper">
+      <div class="wrapper">
         <h1 class="primary">TECH</h1>
-        <p>HTML, CSS, Flexbox, <b>JavaScript</b>, ES6, JSX, <b>React</b>, React Hooks, Redux, 
-          Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
+        <p class="alt-font centered">
+          HTML, CSS, Flexbox, <b class="primary">JavaScript</b>, ES6, JSX, <b class="primary">React</b>, React Hooks,
+          Redux, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.
+        </p>
       </div>
     </section>
-    
+
     <!-- FEATURED PROJECTS -->
     <section class="section--alt-background" aria-labelledby="featuredProjects">
-      <div class="wrapper projects__wrapper">
+      <div class="wrapper">
         <h1 class="primary" id="featuredProjects">FEATURED PROJECTS</h1>
+        <div class="cards">
+          <ul class="cards__list" aria-label="List of Featured Projects">
+            <li class="card" aria-labelledby="projectID">
+              <div class="card__title--featured">
+                <img src="./assets/project-alex.png" alt="screenshot from the game" />
+                <h2 class="featured">
+                  <a href="https://google.com" target="_blank" id="projectID">MY TITLE</a>
+                </h2>
+              </div>
+              <p class="primary primary--bold">DESCRIPTION OF TITLE.</p>
+              <p>Write short what the project is about and what technoglogies you’ve used.</p>
+              <ul class="card__pills" aria-label="list of languages used in the project">
+                <li class="card__pills--item">HTML5</li>
+                <li class="card__pills--item">CSS3</li>
+                <li class="card__pills--item">JavaScript ES6</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- 
         <div class="projects__flexbox">
           <article class="project project--feature" aria-labelledby="project2">
             <a href="http://google.com" target="_blank" rel="external">
@@ -57,36 +78,103 @@
                 <h2 class="project" id="project2">PROJECT TITLE</h2>
               </div>
               <p class="project__description">DESCRIPTION OF TITLE.</p>
-              <p class="project__text">Write short what the project is about and what technoglogies you’ve used.</p>
+              <p class="project__text">
+                Write short what the project is about and what technoglogies you’ve used.
+              </p>
               <ul class="project__languages" aria-label="list of languages used in the project">
                 <li class="project__languages--item">HTML5</li>
                 <li class="project__languages--item">CSS3</li>
                 <li class="project__languages--item">JavaScript ES6</li>
-              </ul>          
+              </ul>
             </a>
           </article>
-        </div>
+        </div> -->
       </div>
     </section>
-    
+
     <!-- OTHER PROJECTS -->
     <section class="section--alt-background" aria-labelledby="otherProjects">
-      <div class="wrapper projects__wrapper">
+      <div class="wrapper">
         <h1 class="secondary" id="otherProjects">OTHER PROJECTS</h1>
-        <div class="projects__flexbox projects__flexbox--other">
-          <article class="project" aria-labelledby="project2">
-            <a href="http://google.com" target="_blank" rel="external">
-              <p class="object__other--link"><b>PROJECT TITLE.</b> <span>Web application built in Javscript with external API. </span><b>>></b></p>
-              <ul class="project__languages" aria-label="list of languages used in the project">
-                <li class="project__languages--item">HTML5</li>
-                <li class="project__languages--item">CSS3</li>
-                <li class="project__languages--item">JavaScript ES6</li>
-              </ul>          
-            </a>
-          </article>
+        <div class="cards">
+          <ul class="cards__list cards__list--other" aria-label="List of Other Projects">
+            <li class="card" aria-labelledby="projectID1">
+              <div class="card__text-inline">
+                <h2 class="other other--project">
+                  <a href="https://google.com" target="_blank" id="projectID1">MY TITLE</a>
+                </h2>
+                <p>
+                  Write short what the project is about and what technoglogies you’ve used.
+                  <span class="primary primary--bold"> >></span>
+                </p>
+              </div>
+              <ul class="card__pills" aria-label="list of languages used in the project">
+                <li class="card__pills--item">HTML5</li>
+                <li class="card__pills--item">CSS3</li>
+                <li class="card__pills--item">JavaScript ES6</li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
+
+    <!-- My Thoughts About Code -->
+    <section aria-labelledby="myThoughts">
+      <div class="wrapper">
+        <h1 class="primary" id="myThoughts">MY THOUGHTS ABOUT CODE</h1>
+        <div class="cards">
+          <ul class="cards__list" aria-label="List of links to featured blog posts">
+            <li class="card" aria-labelledby="blogID">
+              <div class="card__title--featured">
+                <img src="./assets/project-alex.png" alt="" />
+              </div>
+              <p class="primary">JAN 2021</p>
+              <h2 class="featured--blog">
+                <a href="https://google.com" target="_blank" id="blogID">
+                  Nulla quis lorem ut libero malesuada feugiat.
+                </a>
+              </h2>
+              <p>
+                Proin eget tortor risus. Donec sollicitudin molestie malesuada. Quisque velit nisi, pretium ut lacinia
+                in, elementum id enim.<span class="primary"> >></span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTHER THOUGHTS -->
+    <section aria-labelledby="otherThoughts">
+      <div class="wrapper">
+        <h1 class="secondary" id="otherThoughts">MORE THOUGHTS</h1>
+        <div class="cards">
+          <ul class="cards__list cards__list--other" aria-label="List of links to other blog posts">
+            <li class="card" aria-labelledby="blogID1">
+              <div class="card__text-inline">
+                <p class="primary">JAN 2021</p>
+                <h2 class="other other--blog">
+                  <a href="https://google.com" target="_blank" id="blogID1">5 Apps that will make coding easier.</a>
+                </h2>
+                <p>
+                  Write short what the project is about and what technoglogies you’ve used.
+                  <span class="primary primary--bold"> >></span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section--alt-background" aria-label="Skills I have divided into categories">
+      <div class="wrapper">
+        <h1 class="primary">SKILLS</h1>
+      </div>
+    </section>
+
     <footer>
       <section></section>
     </footer>

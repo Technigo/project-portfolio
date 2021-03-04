@@ -3,24 +3,34 @@
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
+.primary {
+  color: var(--primary);
+}
+.primary--bold {
+  font-weight: bold;
+}
 
 h1 {
   font-size: 40px;
 }
 
-h2 {
+.hero h2 {
   font-size: 24px;
 }
 
 p {
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
-  line-height: 29px;
+  line-height: 1.7em;
   font-size: 17px;
 }
 
-li {
-  font-size: 9px;
-  font-weight: normal;
+p.alt-font {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2em;
+}
+p.centered {
+  text-align: center;
 }
 
 /* Any link should start with style:none */
@@ -28,18 +38,14 @@ a {
   text-decoration: none;
 }
 
-/* Any bold text should have the primary color */
-b {
-  color: var(--primary);
-}
-
-/* Any list should start as style:none */
+/* Any list should start with a style of none */
 ul {
   list-style: none;
   padding: 0;
 }
 
-/* Styles the primary section header 1 titles */
+/* --------------------------- HEADER lvl 1 STYLES -------------------------- */
+
 h1.primary,
 h1.secondary {
   font-size: 22px;
@@ -48,6 +54,7 @@ h1.secondary {
   margin-bottom: 24px;
   padding: 5px;
   letter-spacing: 0.1em;
+  text-align: center;
 }
 
 h1.primary {
@@ -59,27 +66,44 @@ h1.secondary {
   color: var(--primary);
 }
 
-h2.project {
+/* ---------------------------- TITLES FOR CARDS ---------------------------- */
+
+/* The title of a featured project */
+h2.featured a {
   color: white;
   font-size: 28px;
 }
-
-/* Changes the color and weight of projects descriptions to primary */
-p.project__description {
-  color: var(--primary) !important;
-  font-weight: 700;
+/* The title of blog posts */
+h2.other a {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
 }
-/* Makes sure that text within project is colored the same if the link was visitied */
-a:visited > * {
+h2.featured--blog {
+  margin-bottom: 0.5em;
+}
+h2.featured--blog a {
+  font-size: 21px;
   color: black;
+}
+/* The title of a non-featured card */
+h2.other--project a {
+  color: var(--primary);
+}
+h2.other--blog a {
+  color: black;
+}
+
+/* ------------------------ OTHER TYPOGRAPHY ELEMENTS ----------------------- */
+
+/* The individual pills items in a card list */
+li.card__pills--item {
+  font-size: 9px;
+  font-weight: normal;
 }
 
 /* Adds hero specific styles for the typography */
 .hero__wrapper > p {
-  font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: normal;
-}
-.hero__wrapper b {
-  color: white;
 }
