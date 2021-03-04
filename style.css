@@ -3,7 +3,7 @@ body {
   
   font-family: 'Roboto', sans-serif;
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 * {
@@ -13,14 +13,21 @@ body {
 
 h3 {
   text-align: center;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 600;
+  background-color: #276678;
+  color: #fff;
+  /* width: fit-content; */
 }
 
 h4 {
-  margin: 8px 0;
+  margin: 8px 0 0 0;
   color: #276678;
   font-family: 'Roboto';
   font-size: 17px;
   line-height: 41px;
+  font-weight: 600;
 }
 
 .header-text-portfolio {
@@ -113,7 +120,6 @@ h4 {
   border: 2px solid #fff;
   filter: grayscale();
   
-  
 }
 
 .img-me-container {
@@ -132,14 +138,31 @@ h4 {
 
 .presentation {
   font-family: 'Montserrat';
-  padding: 30px 30px 0 30px;
+  padding: 24px;
+  /* position: relative; */
+}
+
+.presentation-text {
+  font-size: 17px;
+  line-height: 29px;
+  font-style: normal;
 }
 
 .tech {
-  font-family: 'Montserrat';
-  padding: 30px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
   background-color: #f6f5f5;
+  
+}
+
+.tech-text {
+  font-size: 17px;
+  line-height: 29px;
+  font-style: normal;
+  text-align: center;
 }
 
 .featured-projects {
@@ -147,23 +170,157 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 24px;
 }
 
 .project {
   padding-bottom: 30px;
-  width: 327px; 
-}
-
-.project img {
-  /* width: 300px; */
-  /* height: 200px; */
-  object-fit: scale-down;
   width: 100%;
 }
 
+.project img {
+  object-fit: cover;
+  height: 212px;
+}
+
 .project p {
+  font-family: 'Roboto';
+  font-size: 17px;
+  line-height: 29px;
+  font-style: normal;
+  font-weight: 400;
   margin: 0;
+}
+
+.skills-buttons {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.skills-buttons p {
+  font-size: 9px;
+  line-height: 11px;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #d3e0ea;
+  border-right: 10px solid white;
+}
+
+.other-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.other-projects-text {
+  font-family: 'Roboto';
+  font-size: 17px;
+  line-height: 29px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+.my-thoughts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.thought {
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.thought-img {
+  width: 100%;
+}
+
+.thoughts-date {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  margin: 17px 0 0 0;
+  color: #276678;
+}
+
+.thought-title {
+  font-family: 'Roboto';
+  font-size: 21px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.thought-text {
+  font-family: 'Roboto';
+  font-size: 17px;
+  line-height: 32px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+}
+
+.more-thoughts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 24px;
+
+}
+
+.more-thoughts-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  margin: 25px 0;
+  color: #276678;
+}
+
+.more-thoughts-links {
+  padding: 20px 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  /* text-decoration-line: underline; */
+  text-decoration-color: #276678;
+  color: #000;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 24px;
+}
+
+.skills-all {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skills-group {
+  width: 40%;
+}
+
+.skills-title {
+  color: #276678;
 }
 
 /**** TABLET SIZE ****/
