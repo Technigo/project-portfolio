@@ -6,6 +6,10 @@
 
 /*********** TOP SECTION ********/
 
+body {
+    margin: 0;
+}
+
 .header img {
     position: absolute;
     width: 100%;
@@ -17,8 +21,6 @@
 
 .icon-bar {
     position: absolute;
-    width: 130.5px;
-    height: 40px;
     left: 245px;
     top: 35px;
 }
@@ -28,12 +30,12 @@
     height: 40px;
 }
 
-.icon-bar img:hover {
-    opacity: 0.7;
-}
-
 .github-icon {
     margin-left: 55px;
+}
+
+.icon-bar img:hover {
+    opacity: 0.7;
 }
 
 .owner-of-portfolio {
@@ -46,7 +48,7 @@
     /* color: #f6f5f5; */
 }
 
-h1 {
+.portfolio-owner {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -58,7 +60,7 @@ h1 {
     background-color: rgba(255, 255, 255, 0.185);
 }
 
-h2 {
+.profession-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     line-height: 49px;
@@ -97,7 +99,6 @@ h2 {
     position: absolute;
     width: 100%;
     height: 324px;
-    left: 0px;
     top: 520px;
 }
 
@@ -203,13 +204,13 @@ h5 {
     line-height: 34px;
     text-align: center;
     letter-spacing: 0.01em;
-    /* color: #332d2d; */
-    color: white;
+    color: black;
+    /* color: white; */
     position: absolute;
     top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: rgba(255, 255, 255, 0.514); */
+    background-color: rgba(255, 255, 255, 0.514);
 }
 
 .project-img-text:hover {
@@ -302,12 +303,13 @@ h5 {
 
 .more-projects {
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
+    width: 375px;
     top: 2797px;
 }
 
 .more-projects-box {
-    /* width: 327px; */
+    margin-left: 6%;
 }
 
 .more-projects-heading {
@@ -335,6 +337,10 @@ h5 {
     text-decoration: none;
     margin-top: 33px;
     margin-bottom: 0;
+}
+
+.more-project-cards-heading:hover {
+    opacity: 0.7;
 }
 
 
@@ -389,6 +395,10 @@ h5 {
     margin: 0;
 }
 
+.article-card-heading:hover {
+    opacity: 0.7;
+}
+
 .acticle-text {
     font-family: Roboto;
     font-style: normal;
@@ -412,6 +422,8 @@ h5 {
     margin-top: 12%;
 }
 
+.more-thoughts-box {}
+
 .more-thoughts-links {
     font-family: Roboto;
     font-style: normal;
@@ -422,14 +434,17 @@ h5 {
     text-decoration: underline;
 }
 
+.more-thoughts-links:hover {
+    opacity: 0.7;
+}
+
 
 /*********** SKILLS SECTION ********/
 
 .skills {
     position: absolute;
     width: 100%;
-    height: 575px;
-    left: 0px;
+    height: 650px;
     top: 4300px;
     display: flex;
     flex-direction: column;
@@ -447,7 +462,12 @@ h5 {
     color: #FFFFFF;
     background: #048998;
     width: 85px;
-    margin-bottom: 0;
+    margin-top: 37px;
+    margin-bottom: 20px;
+}
+
+.skill-box {
+    margin-bottom: 35px;
 }
 
 .skill-group-headings {
@@ -473,15 +493,19 @@ h5 {
     margin: 0;
 }
 
+.skill-box-desktop {
+    display: none;
+}
+
 
 /*********** FOR MORE SECTION ********/
 
 .for-more {
     position: absolute;
     width: 100%;
-    height: 225px;
+    height: 240px;
     left: 0px;
-    top: 4885px;
+    top: 4961px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -510,7 +534,11 @@ h5 {
     filter: invert(55%) sepia(9%) saturate(6049%) hue-rotate(146deg) brightness(93%) contrast(97%);
 }
 
-.for-more-icon-name {
+.for-more-icon-bar img:hover {
+    opacity: 0.7;
+}
+
+.for-more-icon-linkedin {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -518,6 +546,17 @@ h5 {
     line-height: 13px;
     text-align: center;
     color: #048998;
+}
+
+.for-more-icon-github {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #048998;
+    padding-left: 55px;
 }
 
 a:link {
@@ -531,8 +570,7 @@ a:link {
     position: absolute;
     width: 100%;
     height: 302px;
-    left: 0px;
-    top: 5125px;
+    top: 5200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -567,19 +605,86 @@ a:link {
 
 /*** Big Mobile View ***/
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .icon-bar {
+        left: 375px;
+    }
+    .profile-pic {
+        left: 303px;
+    }
+    .owner-of-portfolio {
+        left: 45px;
+    }
+}
 
 
 /*** Tablet View ***/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .icon-bar {
+        left: 485px;
+    }
+    .profile-pic {
+        left: 439px;
+    }
+    .owner-of-portfolio {
+        left: 70px;
+    }
+    .project-card {
+        width: 40%;
+    }
+}
 
 
 /*** Small Desktop View ***/
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .icon-bar {
+        left: 600px;
+        top: 40px;
+    }
+    .icon-bar img {
+        width: 50px;
+        height: 50px;
+    }
+    .github-icon {
+        margin-left: 70px;
+    }
+    .profile-pic {
+        left: 550px;
+        top: 328px;
+    }
+    .profile-pic img {
+        width: 220px;
+        height: 220px
+    }
+    .owner-of-portfolio {
+        left: 90px;
+    }
+    .portfolio-owner {
+        font-size: 28px;
+        width: 337px;
+    }
+    .profession-title {
+        font-size: 70px;
+        width: 389px;
+        line-height: 62px;
+    }
+}
 
 
 /*** Big Desktop View ***/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .icon-bar {
+        left: 755px;
+    }
+    .profile-pic {
+        left: 695px;
+    }
+    .owner-of-portfolio {
+        left: 133px;
+    }
+}
+
+@media (min-width: 1440px) {}
