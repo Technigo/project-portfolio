@@ -2,7 +2,6 @@
 body{
   font-family: Montserrat;
   margin: 0;
-  /* width: 100vw; */
 }
 .header {
     background-image: url('./assets/books_mobile1.jpg');
@@ -11,13 +10,15 @@ body{
     background-size: cover;
     background-position: center;
     height: 400px;
-    /* width: 100vw; */
-
 }
+
 .media-icons{
     position: absolute;
     top: 30px;
     right: 24.5px;
+}
+.header-link{
+  text-decoration: none;
 }
 .fab {
     font-size: 20px;
@@ -69,6 +70,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .content-container{
@@ -77,9 +79,6 @@ body{
   width: 100%; 
 }
 
-.intro-section{
-  padding: 30px 20px;
-}
 .fas {
   margin: 0;
   padding: 0;
@@ -243,8 +242,7 @@ body{
   text-decoration: none;
   line-height: 1.5em;
   color: black;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  flex-direction: column;
 }
 .thought-image {
   width: 100%;
@@ -268,6 +266,9 @@ body{
 .thought-description {
   font-size: 17px;
   margin: 0 0 20px 0;
+}
+.thought-description .arrow {
+  font-weight: 700;
 }
 /* More thoughts */
 
@@ -443,7 +444,6 @@ body{
   .header {
     background-image: url('./assets/books.jpg');
     height: 500px;
-    /* width: 100vw; */
   }
   .media-icons{
     top: 50px;
@@ -472,6 +472,9 @@ body{
     padding: 7px;
     width: 30px;
   }
+  .intro-text, .tech-text {
+    font-size: 20px;
+  }
   .content-container{
     padding: 30px
   }
@@ -488,7 +491,7 @@ body{
     width: 47%;
   }
   .last {
-    display: flex;
+    display: block;
   }
   .project-image, .thought-image {
     height: 250px;
@@ -522,7 +525,6 @@ body{
   .header{
     background-image: url('./assets/books_desktop.jpg');
     height: 600px;
-    /* width: 100vw; */
   }
   .fab {
     font-size: 40px;
@@ -542,6 +544,12 @@ body{
     width: 280px;
     height: 280px;
     top: 330px;
+  }
+  .intro {
+    padding-top: 30px;
+  }
+  .intro-text, .tech-text {
+    font-size: 22px;
   }
   .section-header {
     font-size: 48px;
@@ -588,12 +596,14 @@ body{
     top: 330px;
     right: 250px;
   }
+  .intro-text, .tech-text {
+    font-size: 30px;
+  }
 }
 
 @media(min-width: 1500px){
   .header{
     height: 600px;
-    /* width: 100vw; */
   }
   .media-icons{
     top: 80px;
