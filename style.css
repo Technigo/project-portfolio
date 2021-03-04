@@ -11,13 +11,14 @@ header {
 }
 .hero-img {
   position: relative;
-  width: 375px;
+  width: 100vw;
   height: 520px;
   left: 0px;
-  top: 0px;
+  top: 0px;  
   background-size: cover;
   background-image: url('./assets/hero.jpg');
   margin-bottom: 24px;
+  margin-top: -8px;
 }
 
 .header-title {
@@ -32,7 +33,7 @@ header {
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.04em;  
 }
 
 .social-media-icons {
@@ -40,17 +41,17 @@ header {
   width: 130.5px;
   height: 40px;
   top: 48px;
-  left: 220px;    
+  left: 220px;     
 }
 
 .profile-pic {
   position: absolute;
   width: 180px;
   height: 180px;
-  left: 171px;
+  left: 45%;
   top: 356px;
   border-radius: 50%;
-  background-color: blue;
+  background-color: #0000ff;
 }
 
 .about-me {  
@@ -71,16 +72,8 @@ header {
   align-items: center;  
   }
 
-.tech
-.projects
-.my-thoughts-about-code
-.skills
-.social-media-icon-bottom {
-  display: flex; 
-}
-
 .heading {
-  margin-bottom: 24px;
+  margin: 24px 0;
   width: fit-content;
   height: fit-content;
   font-family: 'Montserrat', sans-serif;
@@ -99,8 +92,8 @@ header {
   font-family: 'Roboto', sans-serif;
 }
 
-
-.tech {   
+.tech {  
+  display: flex; 
   width: 327px;
   height: 147px;
   font-family: 'Montserrat', sans-serif;
@@ -120,7 +113,7 @@ header {
   background: #F4F4F4;
 } 
 
-.project-card-1
+.project-card-1,
 .project-card-2 {  
   width: 327px;
   height: 341px;
@@ -133,8 +126,8 @@ header {
   height: 212px;
 }
 
-.project-text
-.my-thoughts-text {  
+.project-text,   
+.my-thoughts-text {
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -147,6 +140,7 @@ header {
   align-items: center;  
   color: #000;
 }
+
 
 .project-text h3 { 
   color: #f43;
@@ -166,9 +160,70 @@ header {
   background: #FDDFE7;
 }
 
-.my-thoughts-img {
-  width:330px;
+.article-with-img,
+.article-just-link{
+width: 330px;
+display: flex;
+flex-direction: column;
 }
+
+.my-thoughts-about-code {
+  display: flex;  
+  flex-direction: column; 
+  align-items: center;
+  width: 375px;   
+  background: #F4F4F4;
+}
+.my-thoughts-img {  
+  width:330px; 
+  height: auto;  
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  font-family: 'Roboto', sans-serif;  
+  grid-column-gap: 20px;
+}
+
+.skills h3 {
+  color: #f43;  
+}
+
+.grid-item {
+  display: grid;
+} 
+
+.footer {
+  height: 300px;
+  background-color: #03d;
+}
+
+li {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;  
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif; 
+  align-items: center;
+  justify-content: center;  
+}
+
+.contact-text h2 {
+  margin-top: 60px;
+  margin-bottom: 20px; 
+}
+
+.contact-text span {
+  font-size: 15px;
+}
+
 
 
 
