@@ -17,6 +17,7 @@ body {
 
 .header-mobile {
   background-image: url("./assets/img/caroline\ bystrom-min-crop.jpg");
+/* background:#222831; */
   width: 100%;
   height: 45vh; /*should be changed with mobile view first thinking*/
   object-fit: cover;  /*does this do anything on a background image?*/
@@ -130,7 +131,8 @@ body {
 .skills-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   padding: 5px;
 }
@@ -183,22 +185,25 @@ p { /*this one creates a lot of problem*/
   align-items: center;
 }
 
+.header-three { /*WORK IN PROGRESS - position for mobile devices 381-543 - CAN I FIX IT WITH LINE HEIGHT? */
+  position: absolute;
+  top: 130px; 
+  left: 200px;
+  color: #d63629;
+  font-size: 30px;
+  font-weight: 900; 
+  font-family: 'Roboto';
+  letter-spacing: 2px;
+  line-height: 80%; /*working here but is there another way to solve it?*/
+}
+
 .header-two {
   display: inline-flex;
   color: #FFD369;
   background-color: #393E46;
 }
 
-.header-three {
-  position: absolute;
-  top: 130px; 
-  left: 130px;
-  color: #d63629;
-  font-size: 30px;
-  font-weight: 900; 
-  font-family: 'Roboto';
-  letter-spacing: 2px;
-}
+
 
 .header-four {
   display: inline-flex;
@@ -257,11 +262,13 @@ p { /*this one creates a lot of problem*/
 
 }
 
+.code-header {
+  font-weight: 700;
+  font-size: 18px;
+}
+
 .skills-and-toolbox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  list-style-type: none;
 }
 
 .red {
@@ -307,6 +314,7 @@ p { /*this one creates a lot of problem*/
   align-items: center;
   flex-direction: column;
   background-image: url("./assets/img/footer.jpg");
+/* background:#222831; */
 }
 
 .contact-information {
@@ -343,6 +351,21 @@ a:hover, .footer {
     font-size: 20px;
     line-height: 34px;
     text-align: center;
+  }
+
+  .project-container { /*duplicate*/
+    position: relative;
+  }
+
+  .header-three {
+    position: absolute;
+    top: 130px; 
+    left: 130px;
+    color: #d63629;
+    font-size: 30px;
+    font-weight: 900; 
+    font-family: 'Roboto';
+    letter-spacing: 2px;
   }
 
   .image-container {
