@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(170, 166, 206);
+  background-color: rgb(238, 228, 240));
 }
 
 .header-container {
@@ -11,6 +11,10 @@ body {
   display: flex;
   flex-direction: column;
   
+}
+
+.dark-section {
+  background-color:rgb(238, 224, 238)
 }
 
 .header-text {
@@ -77,23 +81,14 @@ h2 {
 
 h3 {
   color: white;
-  display: inline-block;
+  
   padding: 4px;
   margin-top: 60px;
   text-align: center;
-  box-sizing: border-box;
-}
-
-h4 {
-  color: red;
-  display: inline-block;
-  padding: 4px;
-  text-align: center;
-  box-sizing: border-box;
   
 }
 
-.main-section {
+.section1 {
   text-align: center;
   font-family: Montserrat;
   display: flex;
@@ -104,52 +99,102 @@ h4 {
   width: 100%;
 }
 
-.text {
-  margin: 20px;
+.info-text {
+  margin: 60px 40px 20px 40px;
 }
 
-.project-container {
+.text {
+  margin: 0 40px 20px 40px;
+
+}
+
+.project-wrapper {
 display: flex;
-flex-wrap: wrap;
 flex-direction: column;
 align-items: center;
-width: 100%;
 justify-content: center;
-background: #8c13aa;
+margin-top: 40px;
+max-width: 100%;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
+.article-card {
+  max-width: 200px;
 }
 
-.project-container p {
+.card-link {
+  text-decoration: none;
+}
+
+.article-img {
+  max-width: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+}
+
+.article-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.article-info {
+  font-family: "Roboto", "sans-serif";
+  font-size: 10px;
+  margin-top: 12px;
   color: black;
 }
 
-.project-container a {
- display: flex; 
- flex-direction: row;
- flex-direction: column;
- align-items: center;
- margin: 20px 0 20px 0;
- text-decoration: none;
-}
 
 .tech-tags {
 display: flex;
-}
-
-.red {
-  background-color: red;
+flex-wrap: wrap;
+margin-bottom: 50px;
 }
 
 .tag {
 background-color: pink;
 color: black;
+font-family: "Roboto";
 margin: 10px 5px 0 0 ;
 padding: 3px 10px 1px 10px;
 align-items: center;
+text-decoration: none;
+font-size: 12px;
+line-height: 12px;
+padding: 6px;
+margin: 10px 5px 0 0;
+border-radius: 5px;
+}
+
+
+
+.red {
+  background-color: rgb(234, 0, 255);
+}
+
+.skills-section {
+  margin: 0;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%
+  font-family: Montserrat;
+  align-items: center;
+}
+
+.skill-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.skills {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 10%;
 }
 
 .contact-info {
@@ -182,11 +227,26 @@ footer {
 }
 
 @media (min-width: 768px) {
-  
-    } 
 
-
-@media (min-width: 1024px) {
+  .project-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
   
+  .project-wrapper a {
+    width: 40%;
+
+  }
+
+  .profile-image {
+  margin-top: -100px;
+  } 
+
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+  }
   
 }
+  
