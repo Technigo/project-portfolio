@@ -21,9 +21,10 @@ body {
     font-size: 20px;
     color: white;
     background-color: #5a5965;
-    width: fit-content;
     padding: 0 5px;
     margin: auto;
+    width: fit-content;
+    width: -moz-fit-content;
 }
 
 .mini-title {
@@ -50,6 +51,18 @@ body {
 
 .link-underlined {
     color: #252429;
+}
+
+i:hover {
+    transform: scale(1.2);
+}
+
+.link:focus {
+    color: #A6072F;
+}
+
+.link-underlined:focus {
+    color: #A6072F;
 }
 
 a:visited {
@@ -82,11 +95,12 @@ a:visited {
 .header {
     position: relative;
     color: white;
+    height: 200px;
 }
 
 .header-img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
     margin: 0;
@@ -176,9 +190,27 @@ a:visited {
     padding: 25px 0;
 }
 
-.fas.fa-arrow-right {
+/* .fas.fa-arrow-right {
     font-size: 14px;
+} */
+
+.line {
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: #A6072F;
+    margin-bottom: 5px;
 }
+  
+  .circle {
+    display: inline-block;
+    background-color: #A6072F;
+    width: 5.5px;
+    height: 5.5px;
+    border-radius: 50%;
+    margin-bottom: 2.4px;
+    margin-left: -2px;
+}  
 
 .intro-text {
     font-size: 16px;
@@ -195,7 +227,7 @@ a:visited {
 
 .tech-skills {
     font-size: 16px;
-    width: 80%;
+    width: 70%;
     text-align: center;
     margin: auto;
     margin-top: 25px;
@@ -315,7 +347,7 @@ a:visited {
 
 .date {
     font-size: 16px;
-    color: #f87760;
+    color: #A6072F;
     margin: 0;
 }
 
@@ -367,6 +399,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     width: 48%;
     background-color: white;
@@ -380,6 +413,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     width: 100%;
     background-color: white;
@@ -391,12 +425,14 @@ a:visited {
 
 .skill-title {
     font-size: 18px;
+    color: #A6072F;
     padding-bottom: 10px;
     margin: 0;
 }
 
 .skill-title-extra {
     font-size: 18px;
+    color: #A6072F;
     padding-bottom: 10px;
     margin: 0;
     margin-top: 20px;
@@ -425,13 +461,13 @@ a:visited {
 
 i {
     font-size: 30px;
-    color: #f87760;
+    color: #A6072F;
     margin: 0;
 }
 
 .icon-name {
     font-size: 10px;
-    color: #f87760;
+    color: #A6072F;
     margin-top: 5px;
 }
 
@@ -484,7 +520,7 @@ footer {
 
     /* HEADER */
 
-    .header-img {
+    .header {
         height: 370px;
     }
 
@@ -545,9 +581,17 @@ footer {
         padding: 50px 0;
     }
 
-    .fas.fa-arrow-right {
-        font-size: 20px;
+    .line {
+        width: 35px;
+        height: 1.1px;
+        margin-bottom: 6.8px;
     }
+      
+    .circle {
+        width: 8px;
+        height: 8px;
+        margin-bottom: 2.9px;
+    }  
 
     .intro-text {
         font-size: 22px;
@@ -779,7 +823,7 @@ footer {
 
     /* HEADER */
 
-    .header-img {
+    .header {
         height: 450px;
     }
 
@@ -840,9 +884,17 @@ footer {
         padding: 50px 0;
     }
 
-    .fas.fa-arrow-right {
-        font-size: 22px;
+    .line {
+        width: 35px;
+        height: 1.1px;
+        margin-bottom: 6.8px;
     }
+      
+    .circle {
+        width: 8px;
+        height: 8px;
+        margin-bottom: 2.9px;
+    } 
 
     .intro-text {
         font-size: 22px;
@@ -859,7 +911,7 @@ footer {
 
     .tech-skills {
         font-size: 22px;
-        width: 1000px;
+        width: 800px;
         margin-top: 60px;
     }
 
@@ -970,7 +1022,7 @@ footer {
     }
 
     /*Other thoughts*/
-    
+
     .other-thoughts {
         padding-bottom: 60px;
     }
