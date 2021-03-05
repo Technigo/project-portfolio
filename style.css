@@ -9,13 +9,14 @@ body {
   position: relative;
   width: 375px;
   height: 4502px;
+  font-family: Roboto, Montserrat, sans-serif;
 
   background: #ffffff;
 }
 
 .header {
-  position: absolute;
-  width: 375px;
+  display:flex;
+  flex-direction: column;
   height: 520px;
   left: 0px;
   top: 0px;
@@ -23,6 +24,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(small_header.jpg);
+}
+
+.SoMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20%;
+}
+
+.some-link {
+  width: 30px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .title {
@@ -39,6 +53,15 @@ body {
   line-height: 18px;
   letter-spacing: 0.04em;
   color: #000000;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 100px;
+  border: 3px solid gray;
+  align-self: flex-end;
+  margin-top: 350px;
+  margin-right: 70%;
 }
 
 .intro-section {
@@ -71,6 +94,10 @@ body {
 
 .tech {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
   width: 327px;
   height: 147px;
   left: 24px;
@@ -81,14 +108,23 @@ body {
   font-weight: normal;
   font-size: 17px;
   line-height: 29px;
+  justify-content: center;
   text-align: center;
+  align-items: center;
 
   color: #000000;
+}
+
+.topic-header {
+  background: hotpink;
 }
 
 .project-container {
   display: flex;
   position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 375px;
   height: 1298px;
   left: 0px;
@@ -96,6 +132,59 @@ body {
 
   background: #f4f4f4;
   opacity: 0.3;
+}*/
+
+.shadow {
+  width: 50%;
+  height: auto;
+}
+
+.grid-item {
+  margin: 5px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.grid-item a:link {
+  color: black;
+}
+
+.grid-item a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.grid-item a:hover {
+  color: deeppink;
+}
+
+.other-projects {
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 327px;
+height: 131px;
+left: 24px;
+top: 2439px;
+}
+
+.thoughts {
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 327px;
+height: 556px;
+left: 24px;
+top: 2720px
 }
 
 @media (min-width: 1025px) {
@@ -152,6 +241,7 @@ body {
   }
 
   .tech {
+    display: flex;
     position: absolute;
     width: 1100px;
     height: 150px;
@@ -165,12 +255,13 @@ body {
     line-height: 50px;
 
     text-align: center;
+    justify-content: center;
     letter-spacing: 0.01em;
 
     color: #000000;
   }
 
-  .project-container {
+  /*.project-container {
     display: flex;
     width: 1920px;
     height: 2222px;
@@ -178,5 +269,26 @@ body {
     top: 1640px;
 
     background: #f4f4f4;
+  }*/
+
+  .project-container {
+    width: 1920px;
+    height: 2222px;
+    left: 0px;
+    top: 1640px;
+    margin: 5px;
+    padding: 10px;
+
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    background: #f4f4f4;
+  }
+
+  .shadow {
+    width: 60%;
+    height: 200px;
   }
 }
