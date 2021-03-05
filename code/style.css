@@ -84,6 +84,7 @@ p {
     display: flex;
     flex-direction: column;
     height: 520px;
+    width: 300px;
     color: rgb(255, 255, 255);
     z-index: 2;
 }
@@ -267,6 +268,14 @@ p {
     line-height: 1.2em;
 }
 
+.projects-image__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    height: 180px;
+}
+
 .projects-image__text p,
 .projects-image__techniques {
     margin-top: 20px;
@@ -325,7 +334,7 @@ p {
     margin-right: 10px;
 }
 
-.thoughts-container h2 {
+.thoughts-container h4 {
     line-height: 30px;
 }
 
@@ -365,11 +374,11 @@ p {
     padding-bottom: 40px;
 }
 
-.skills-col:nth-of-type(3) {
+.skills-col:nth-of-type(2) {
     grid-column-start: 3;
 }
 
-.skills-col:nth-of-type(4) {
+.skills-col--desktop {
     display: none;
 }
 
@@ -395,7 +404,6 @@ dd {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100px;
     margin-top: 40px;
 }
 
@@ -404,11 +412,11 @@ dd {
     font-size: 11px;
 }
 
-.social-icon:nth-of-type(3) {
+.social-icon:nth-of-type(2) {
     grid-column-start: 3;
 }
 
-.social-icon:nth-of-type(4) {
+.social-icon:nth-of-type(3) {
     grid-column-start: 4;
 }
 
@@ -543,7 +551,7 @@ dd {
         padding: 0 5px;
     }
 
-    .sub-heading h2 {
+    .sub-heading {
         font-size: 34px;
     }
 
@@ -575,13 +583,17 @@ dd {
         height: 310px;
     }
 
-    .projects-image h2 {
+    .projects-image__title {
         font-size: 24px;
     }
 
-    .projects-image__text h2 {
+    .projects-image__text h4 {
         font-size: 21px;
         line-height: 31px;
+    }
+
+    .projects-image__text {
+        height: 260px;
     }
 
     .projects-image__techniques p {
@@ -691,13 +703,13 @@ dd {
         display: flex;
     }
 
-    .project-container:nth-of-type(4),
+    .project-container:nth-of-type(3),
     .project-container {
         grid-column: 2/ span 1;
     }
 
-    .project-container:nth-of-type(3),
-    .project-container:nth-of-type(5) {
+    .project-container:nth-of-type(2),
+    .project-container:nth-of-type(4) {
         grid-column: 4/ span 1;
     }
 
@@ -727,7 +739,7 @@ dd {
         grid-column: 2 /span 4;
     }
 
-    .skills-col:nth-of-type(4) {
+    .skills-col--desktop {
         display: block;
         grid-column-start: 4;
     }
