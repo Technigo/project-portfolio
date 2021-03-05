@@ -22,8 +22,8 @@ const drawFeaturedProjects = () => {
                 <source srcset="./assets/projects/project-${project.image.src}.jpg" type="image/jpg" />
                 <img src="./assets/projects/project-${project.image.src}.jpg" alt="${project.image.alt}" />
               </picture>
-                <h2 class="featured">
-                    <a href="${project.link}" target="_blank" id="project${i}">${project.title}</a>
+                <h2 class="featured" id="project${i}">
+                    ${project.title}
                 </h2>
             </div>
             <p class="primary primary--bold">${project.titleDescription}</p>
@@ -35,7 +35,9 @@ const drawFeaturedProjects = () => {
             <li class="card__pills--item">${language}</li>
         `;
     });
-    html += `</ul></li>`;
+    html += `</ul>
+    <a href="${project.link}" target="_blank" ></a>
+    </li>`;
   });
   elFeaturedProjects.innerHTML = html;
 };
