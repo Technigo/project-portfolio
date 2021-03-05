@@ -1,50 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     color: #0F1123;
+    max-width: 100%;
 }
 
 /* Header background-color: #CBB3BF; background-color: #685F74; #A0AD99; #99AD9E; #0F1123; #505B61; #AD9999; */
 
 .header {
     height: 440px;
-    display: flex;
-    justify-content: space-around;
     position: relative;
-    background-color: #0F1123;
+}
+
+.header-image {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 440px;
+    top: 0;  
 }
 
 .header-container-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px 0px 60px 24px;
+    position: absolute;
+    top: 120px;
+    left: 24px;
     color: white;
-    z-index: 1;
     max-width: 607px;
     font-family: "Montserrat";
 }
 
-.h1 {
+.title-name {
+    margin: 0px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+}
+
+.title-name .portfolio {
+    font-weight: 100;
+}
+
+.title-big {
     font-size: 40px;
     margin: 0;
 }
 
-.h2 {
-    margin: 5px;
-    font-size: 13px;
-}
-
-.h2 .portfolio {
-    font-weight: 100;
+.title-plus {
+    font-size: 24px;
+    margin: 0;
 }
 
 /* Section for links to my profiles */
 
-.social-media-container {
+.social-media-nav {
     display: flex;
     flex-direction: row;
-    margin: 40px 24px 0px 0px;
+    position: absolute;
+    top: 40px;
+    right: 24px;
 }
 
 .social-media-white {
@@ -220,7 +239,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    font-size: 17px;
 }
 
 .other-projects-link, .other-thoughts-link {
@@ -237,6 +256,7 @@ body {
 .other-projects-link:focus, .other-thoughts-link:focus {
     background-color:  #0F1123;
     color: white;
+    padding: 5px;
 }
 
 .other-projects-title, .other-thoughts-title {
@@ -249,11 +269,11 @@ body {
 .title-info {
     font-weight: 700;
     display: block;
+    margin-bottom: 0;
 }
 
 .other-projects-info {
-    font-size: 17px;
-    margin-bottom: 5px;
+    margin: 5px 0px 5px 0px;
     line-height: 29px;
 }
 
@@ -271,6 +291,10 @@ body {
     padding: 40px 10px;
 }
 
+.hide-title {
+    display: none;
+}
+
 .thoughts-card:hover {
     opacity: 0.8;
 }
@@ -279,11 +303,12 @@ body {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    text-align: center;
 }
 
 .thought-date {
     margin-bottom: 0;
+    font-weight: 400;
+    display: inline-block;
 }
 
 .thought-title {
@@ -293,9 +318,13 @@ body {
 }
 
 .other-thoughts-info {
-    font-size: 17px;
     text-decoration: underline;
-    margin-bottom: 26px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /* Section with my skills */
@@ -314,27 +343,30 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 900px;
     
 }
 
 .skills {
     padding: 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    list-style-type: none;
     
 }
 
 .skill-title {
     font-weight: 700;
     margin: 5px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .skill {
     line-height: 29px;
-    font-size: 18px;
-    margin: 0;
+    font-size: 17px;
+}
+
+.hide-skill {
+    display: none;
 }
 
 /* Section with links to my profiles */
@@ -345,6 +377,11 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 40px 10px;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
 }
 
 .link-text-container {
@@ -389,7 +426,7 @@ body {
 
 .footer {
     background-color: #0F1123;
-    height: 220px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -413,12 +450,38 @@ body {
 /* Media queries */
 
 @media (min-width: 768px) {
-    .h1 {
-        font-size: 60px;
+    * {
+        box-sizing: unset;
+    }
+    
+    .header {
+        height: 680px;
     }
 
-    .h2 {
-        font-size: 18px;
+    .header-image {
+        height: 680px;
+    }
+
+    .header-container-text {
+        left: 40px;
+        top: 150px;
+    }
+
+    .title-name {
+        font-size: 28px;
+    }
+
+    .title-big {
+        font-size: 82px;
+    }
+
+    .title-plus {
+        font-size: 50px;
+    }
+
+    .social-media-nav {
+        top: 40px;
+        right: 40px;
     }
 
     .social-media-white {
@@ -431,7 +494,7 @@ body {
     .image {
         width: 250px;
         height: 250px;
-        right: 11%;
+        right: 100px;
     }
 
     .paragraph {
@@ -453,7 +516,7 @@ body {
     }
 
     .featured-projects, .all-thoughts {
-        width: 75%;
+        width: 85%;
     }
 
     .section-header {
@@ -461,7 +524,7 @@ body {
     }
 
     .project-card, .thoughts-card {
-        width: 49%;
+        width: 48%;
     }
 
     .project-image {
@@ -479,7 +542,7 @@ body {
 
     .other-projects-section {
         justify-content: flex-start;
-        width: 75%;
+        width: 85%;
         margin-top: 40px;
     }
 
@@ -488,27 +551,32 @@ body {
     }
 
     .title-info {
-        text-decoration: underline;
-        display: inline-block;
+        font-size: 25px;
+    }
+
+    .other-projects-info {
+        font-size: 25px;
     }
 
     .thought-date {
         font-size: 25px;
-        font-weight: 400;
     }
 
     .thought-title {
         font-size: 30px;
     }
-    
-    .other-projects-info{
-        font-size: 25px;
-        text-decoration: underline;
-    }
 
     .other-thoughts-info {
         font-size: 25px;
-        font-weight: bold;
+        line-height: 33px;
+    }
+
+    .skills-section {
+        justify-content: flex-start;
+    }
+
+    .skills {
+        padding: 0px 60px;
     }
 
     .skill-title, .skill {
@@ -537,32 +605,22 @@ body {
 }
 
 @media (min-width: 1025px) {
-    .header {
-        height: 481px;
-        padding: 100px 300px;
-    }
-
     .header-container-text {
         margin: 0;
+        left: 400px;
+        top: 200px;
     }
 
-
-    .h1 {
-        font-size: 82px;
-    }
-
-    .h2 {
-        font-size: 28px;
-    }
-
-    .social-media-container {
-        margin: 0;
+    .social-media-nav {
+        top: 100px;
+        right: 410px;
     }
 
     .image {
         width: 333px;
         height: 333px;
-        right: 20%;
+        top: 379px;
+        right: 410px;
     }
 
     .info-about-me {
@@ -579,6 +637,24 @@ body {
 
     .project-image {
         height: 350px;
+    }
+
+    .title-info {
+        display: inline-block;
+        text-decoration: underline;
+    }
+
+    .other-projects-info {
+        text-decoration: underline;
+        display: inline-block;
+    }
+
+    .hide-title {
+        display: inline-block;
+    }
+
+    .hide-skill {
+        display: block;
     }
 
 }
