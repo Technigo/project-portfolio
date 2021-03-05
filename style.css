@@ -219,7 +219,6 @@ body {
   justify-content: center;
   align-self: center;
   text-align: left;
-  font-size: 17px;
   font-family: 'Roboto', sans-serif;
 }
 .article-title {
@@ -229,7 +228,6 @@ body {
 }
 .article-text {
   margin: 0;
-  line-height: 29px;
 }
 .arrow {
   color: #fa382f;
@@ -272,7 +270,6 @@ body {
   justify-content: center;
   align-self: center;
   text-align: left;
-  font-size: 17px;
   font-family: 'Roboto', sans-serif;
 }
 .my-thoughts-wrapper {
@@ -282,9 +279,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  font-size: 17px;
-  font-family: 'Roboto', sans-serif;
-  line-height: 30px;
 }
 .my-thoughts-article {
   margin-top: 20px;
@@ -298,7 +292,6 @@ body {
   font-size: 20px;
 }
 .more-thoughts-title {
-  font-size: 17px;
   color: #000;
   line-height: 26px;
 }
@@ -316,18 +309,22 @@ body {
 .more-thoughts-description {
   margin: 5px;
 }
-.skills {
+.skills-wrapper {
   display:grid;
   grid-template-columns: 1fr 1fr; 
+  grid-column-gap: 5px;
   font-family: 'Roboto', sans-serif;
 }
-.skills h4 {
+.skills-category-name {
   color: #fa382f;
-  font-size: 18px;
+  font-weight: 700;
 }
-.skills-text {
-  display: flex;
-  flex-direction: column;
+.skills-list {
+  color:#000;
+  list-style-type:none;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0;
 }
 .big-icons-wrapper {
   display: flex;
@@ -444,12 +441,12 @@ body {
 .section-grey {
   font-size: 22px;
   line-height: 42px;
-  padding: 50px 200px;
+  padding: 50px 170px;
 }
 .section-white {
   font-size: 22px;
   line-height: 42px;
-  padding: 50px 200px;
+  padding: 50px 170px;
 }
 .titles {
   font-weight: 700;
@@ -481,6 +478,13 @@ body {
 }
 .other-projects-wrapper {
   width: 694px;
+}
+.skills-wrapper {
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+.skills-list {
+  font-size: 25px;
+  line-height: 41px;
 }
 /* Footer */
 .footer-container {
