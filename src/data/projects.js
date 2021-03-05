@@ -37,7 +37,7 @@ export const getProjects = () => {
       featured: true,
     },
     {
-      title: "Alex & the Alechmists Secret",
+      title: "Alex & the Alchemist Secret",
       image: {
         src: "alex",
         alt: "Screenshot from the game",

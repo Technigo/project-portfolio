@@ -1,12 +1,24 @@
+/* ------------------------- WRAPPERS AND ALIGNMENTS ------------------------ */
+
 .hero {
   background-size: cover;
   color: white;
+  position: relative;
 }
 
+.hero__wrapper {
+  overflow: visible;
+  padding-bottom: 0 !important;
+}
+
+/* ------------------------------ AVATAR IMAGE ------------------------------ */
+
+/* Makes sure that the avatar is positioned to the right*/
 .hero__wrapper > picture {
   align-self: flex-end;
 }
 
+/* Styling for the avatar image */
 .hero__avatar {
   width: 180px;
   height: 180px;
@@ -15,6 +27,8 @@
   position: relative;
   top: 20px;
 }
+
+/* ----------------------------- HERO BACKGROUND ---------------------------- */
 
 /* Changes the hero background image based on webp compatibility test made by the modernizr file */
 .no-webp .hero {

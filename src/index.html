@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
-    <title>Bellsibub</title>
+    <title>Isabella Billgrens' Portfolio</title>
     <!-- A custom build of Modernizr to test if the current browser is supporting webp -->
     <script src="./modernizr-custom.js"></script>
   </head>
   <body>
     <!-- HEADER -->
-    <header class="hero" aria-label="header with titles and image">
+    <header class="hero overlay" aria-label="header with titles and image">
       <div class="wrapper hero__wrapper">
+        <!-- List of Social Media Links -->
         <ul class="link__list link__list--header" aria-label="list of links to my social media profiles">
           <li aria-label="linkedin">
             <a class="link__icon link__icon--small" href="http://www.linkedin.com/in/bellsibub">
@@ -30,11 +31,10 @@
             </a>
           </li>
         </ul>
+        <!-- Hero main content -->
         <p>PORTFOLIO: <b>ISABELLA BILLGREN </b></p>
-        <div class="test">
-          <h1>frontend developer</h1>
-          <h2>+ experienced QA Engineer</h2>
-        </div>
+        <h1>frontend developer</h1>
+        <h2>+ experienced QA Engineer</h2>
         <picture>
           <source srcset="./assets/avatar.webp" type="image/webp" />
           <source srcset="./assets/avatar.jpg" type="image/jpg" />
@@ -46,7 +46,6 @@
     <!-- WELCOME TEXT -->
     <section class="section--alt-background" aria-label="description about me">
       <div class="wrapper">
-        <!-- accoridng to: https://www.w3.org/WAI/tutorials/images/decorative/ we should leave alt empty if the image is decorative -->
         <p class="alt-font">
           <img src="./assets/figure-start.svg" alt="" aria-hidden="true" />
           Hey! I am a passionate gamer and front-end developer. Though I am fairly new to the professional life as a
@@ -75,29 +74,10 @@
       <div class="wrapper">
         <h1 class="primary" id="featuredProjects">FEATURED PROJECTS</h1>
         <div class="cards">
-          <ul class="cards__list" aria-label="List of Featured Projects" id="featuredProjectsList">
+          <ul class="cards__list" aria-label="Featured Projects" id="featuredProjectsList">
             <!-- Projects will be loaded in here -->
           </ul>
         </div>
-        <!-- 
-        <div class="projects__flexbox">
-          <article class="project project--feature" aria-labelledby="project2">
-            <a href="http://google.com" target="_blank" rel="external">
-              <div class="project__title">
-                <h2 class="project" id="project2">PROJECT TITLE</h2>
-              </div>
-              <p class="project__description">DESCRIPTION OF TITLE.</p>
-              <p class="project__text">
-                Write short what the project is about and what technoglogies you’ve used.
-              </p>
-              <ul class="project__languages" aria-label="list of languages used in the project">
-                <li class="project__languages--item">HTML5</li>
-                <li class="project__languages--item">CSS3</li>
-                <li class="project__languages--item">JavaScript ES6</li>
-              </ul>
-            </a>
-          </article>
-        </div> -->
       </div>
     </section>
 
@@ -106,7 +86,7 @@
       <div class="wrapper">
         <h1 class="secondary" id="otherProjects">OTHER PROJECTS</h1>
         <div class="cards">
-          <ul class="cards__list cards__list--other" aria-label="List of Other Projects" id="otherProjectsList">
+          <ul class="cards__list cards__list--other" aria-label="Other Projects" id="otherProjectsList">
             <!-- Other projects will be loaded here  -->
           </ul>
         </div>
@@ -118,7 +98,7 @@
       <div class="wrapper">
         <h1 class="primary" id="myThoughts">MY THOUGHTS ABOUT CODE</h1>
         <div class="cards">
-          <ul class="cards__list" aria-label="List of links to featured blog posts" id="featuredBlogsList">
+          <ul class="cards__list" aria-label="Links to featured blog posts" id="featuredBlogsList">
             <!-- Featured blog posts will be loaded here -->
           </ul>
         </div>
@@ -130,7 +110,7 @@
       <div class="wrapper">
         <h1 class="secondary" id="otherThoughts">MORE THOUGHTS</h1>
         <div class="cards">
-          <ul class="cards__list cards__list--other" aria-label="List of links to other blog posts" id="otherBlogsList">
+          <ul class="cards__list cards__list--other" aria-label="Links to other blog posts" id="otherBlogsList">
             <!-- Other blog posts will be loaded here -->
           </ul>
         </div>
@@ -141,7 +121,9 @@
     <section class="section--alt-background" aria-label="Skills divided into categories">
       <div class="wrapper">
         <h1 class="primary">SKILLS</h1>
-        <div class="skills__wrapper" id="skillsList"></div>
+        <div class="skills__wrapper" id="skillsList">
+          <!-- Skills will be loaded here -->
+        </div>
       </div>
     </section>
 
@@ -149,6 +131,7 @@
     <section aria-label="Social Links">
       <div class="wrapper">
         <h1 class="primary">FOR MORE</h1>
+        <!-- List of Social Media Links -->
         <ul class="link__list" aria-label="list of links to my social media profiles">
           <li aria-labelledby="link1">
             <a class="link__icon" href="http://www.linkedin.com/in/bellsibub">
@@ -172,17 +155,18 @@
       </div>
     </section>
 
+    <!-- CONTACT INFO -->
     <footer class="section--footer" aria-labelledby="contact">
       <div class="wrapper">
         <h1 class="primary" id="contact">CONTACT</h1>
         <div class="contact-info__wrapper">
           <p aria-label="name" class="alt-font">Isabella Billgren</p>
-          <p aria-label="phone number" class="alt-font">+46 722 00 65 11</p>
           <p aria-label="email" class="alt-font">isabella.billgren@gmail.com</p>
         </div>
       </div>
     </footer>
 
+    <!-- Script module -->
     <script src="./app.js" type="module"></script>
   </body>
 </html>

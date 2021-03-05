@@ -1,7 +1,7 @@
 export const getBlogs = () => {
   return [
     {
-      title: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.",
+      title: "This is my blog post title about code.",
       date: "JAN 2021",
       link: "#",
       description:
@@ -9,7 +9,7 @@ export const getBlogs = () => {
       featured: true,
     },
     {
-      title: "Cras ultricies ligula sed magna dictum porta.",
+      title: "A very good title this is.",
       date: "FEB 2021",
       link: "#",
       description:
@@ -17,7 +17,7 @@ export const getBlogs = () => {
       featured: true,
     },
     {
-      title: "Pellentesque in ipsum id orci porta dapibus.",
+      title: "This could be a blog title.",
       date: "FEB 2021",
       link: "#",
       description:
@@ -25,7 +25,7 @@ export const getBlogs = () => {
       featured: false,
     },
     {
-      title: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.",
+      title: "This is a blog title.",
       date: "FEB 2021",
       link: "#",
       description:

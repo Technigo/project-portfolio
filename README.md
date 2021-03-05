@@ -90,6 +90,7 @@ INTO THIS:
 <br>
 
 > ‼️ PLEASE NOTE: I did not come up with this design. When doing my research into writing good html for screen readers almost everyone recommended (apart from the official guidelines of course) a website promoting inclusive html design components. This is the [LINK](https://inclusive-components.design/)
+> I also noticed that using a pseudo element to make the link work is what is expected in accessibility. Found [THIS](https://css-tricks.com/a-complete-guide-to-links-and-buttons/) article about that.
 
 <br>
 
