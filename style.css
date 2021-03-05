@@ -7,6 +7,7 @@ body {
 h1, h3, h5 {
     font-family: 'Roboto', sans-serif;
     margin-left: 10px;
+    font-weight: bold;
 }
 
 p, li {
@@ -54,7 +55,7 @@ p, li {
 
 .header-main {
     position: absolute;
-    top: 20%;
+    top: 17%;
     left: 8%;
     font-weight: 400;
     font-size: 50px;
@@ -80,10 +81,19 @@ p, li {
     left: 8%;
 }
 
-.icons-svg {
+.top-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100px;
     position: absolute;
     top: 48px;
-    right: 28px;
+    right: 35px;
+}
+
+.icons-svg {
+    margin-right: 20px;
+    width: 40%;
 }
 
 .portrait {
@@ -113,17 +123,28 @@ p, li {
 
 .projects {
     background-color: #F4F4F4;
+    padding-bottom: 20px;
 }
 
 .project-div {
     padding-bottom: 30px;
+    position: relative;
 }
 
 .project-div img {
     width: 80%;
+    height: 44%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container-text {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .project-div h3 {
@@ -168,15 +189,29 @@ p, li {
     text-align: center;
 }
 
-.other .other-h3 {
+.other .other-header {
     color: red;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project-name-span {
+    display: none;
+    color: red;
+    font-weight: bold;
 }
 
 /* MY THOUGHTS SECTION */
 
 .thought {
     width: 80%;
+}
+
+.thoughts-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .my-thougths-img {
@@ -199,6 +234,8 @@ p, li {
 
 .more-thoughts-article {
     text-align: center;
+    margin: auto;
+    width: 80%;
 }
 
 .more-thoughts-article p {
@@ -217,22 +254,26 @@ p, li {
 }
 
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding: 5% 12%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .skills-box {
     display: inline-block;
     text-align: center;
     list-style-type: none;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+.more {
+    display: none;
 }
 
 .skills-box h5 {
     color: red;
+    font-size: 18px;
 }
 
 /* FOR MORE SECTION */
@@ -242,7 +283,11 @@ p, li {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    padding: 60px 0;
+    padding: 60px 0 30px 12%;
+}
+
+.link-div img {
+    width: 50%;
 }
 
 /* CONTACT */
@@ -256,16 +301,22 @@ p, li {
     font-weight: 100;
 }
 
+.contact h5 {
+    font-size: 24px;
+}
+
 @media (min-width: 767px) and (max-width: 1000px) {
     .icons-svg {
-        position: absolute;
-        top: 48px;
-        right: 70px;
-        width: 190px;
+        margin-right: 20px;
+        width: 65%;
+    }
+
+    .top-icons {
+        right: 12%;
     }
 
     .title {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .portrait {
@@ -296,6 +347,24 @@ p, li {
         width: 60%;
     }
 
+    .container-text {
+        top: 15%;
+        left: 28%;
+        font-size: 170%;
+    }
+
+    .other .other-header {
+        display: none;
+    }
+
+    .other-projects-div {
+        width: 100%;
+    }
+
+    .project-name-span {
+        display: block;
+    }
+
     .tag-container {
         margin-left: 10%;
     }
@@ -316,11 +385,19 @@ p, li {
         grid-template-rows: 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        padding: 5% 12% 5% 12%;
+        padding: 0 % 12% 5% 12%;
+    }
+
+    .more {
+        display: block;
     }
 
     .more-thoughts-article {
         padding-bottom: 25px;
+    }
+
+    .link-div {
+        padding: 60px 0 30px 0%;
     }
 
     .link-div img {
@@ -338,10 +415,12 @@ p, li {
     }
     
     .icons-svg {
-        position: absolute;
-        top: 48px;
-        right: 16%;
-        width: 250px;
+        margin-right: 20px;
+        width: 65%;
+    }
+
+    .top-icons {
+        right: 12%;
     }
 
     .portrait {
@@ -366,12 +445,12 @@ p, li {
     }
 
     .welcome .text {
-        width: 1090px;
+        width: 1000px;
         margin: auto;
     }
 
     .tech .text {
-        width: 1090px;
+        width: 1000px;
         margin: auto;
     }
 
@@ -381,6 +460,18 @@ p, li {
         flex-direction: row;
         flex-wrap: wrap;
     }
+    
+    .other .other-header {
+        display: none;
+    }
+
+    .project-name-span {
+        display: inline-block;
+    }
+
+    .code-tag p {
+        font-size: 12px;
+    }
 
     .skills-container {
         display: grid;
@@ -389,6 +480,14 @@ p, li {
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         padding: 0 12% 0 12%;
+    }
+
+    .more {
+        display: block;
+    }
+
+    .skills-box h5 {
+        font-size: 30px;
     }
 
     .text {
@@ -411,7 +510,6 @@ p, li {
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
-
 
     .thoughts-box {
         display: flex;
@@ -437,10 +535,18 @@ p, li {
     }
 
     .other-projects-div {
-        width: 1200px;
+        width: 1000px;
+    }
+
+    .link-div {
+        padding: 60px 0 30px 0%;
     }
 
     .link-div img {
         width: 90px;
-    }   
+    }
+
+    .contact h5 {
+        font-size: 35px;
+    }
 }
