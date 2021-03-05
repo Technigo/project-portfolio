@@ -13,11 +13,8 @@
 - [x] The page should work well for people that use screen readers and keyboard navigation.
 - [x] The HTML code should validate in a validation tool.
 
-🔴 Red level
-- [ ] Optimize your website for sharing on social media using [og:tags.](https://css-tricks.com/essential-meta-tags-social-media/)
-
 ⚫ Black level
-- [x] Give your portfolio a custom domain and connect to your deployed site. [Read more.](https://docs.netlify.com/domains-https/custom-domains/)
+- [x] Give your portfolio a custom domain and connect to your deployed site.
 
 
 ***
@@ -144,24 +141,24 @@ Here is the list I used:
   - screen reader
 - Verification tool:
   - run lighthouse (chrome devtools)
-  - run wave evaltool (bookmarked in chrome)
+  - run wave evaltool
 
 ***
 
 ## Reflections
-All in all this project was not filled with any major issues. I worked through the requirements with ease. However, no project is without issues...
-
+ 
 
 **ISSUES**
 
-- I struggled a bit in the beginning trying to follow along in the already set up code. Especially since I found some bugs in that code. So the preparation phase on day 1 did take longer than I had planned. But after chaging the structure to be more easy to read it went smoothly.
-- Since I decided to make the cards flippable (and CSS is not my strong suit), that process did take longer than any javascript process. But when I found an instructional I wanted to follow and get inspired by, I learned from that and found a dynamic way to apply the functionality into my project. 
+- This project was harder than I first anticipated. Getting to know the screen reader and understanding the best practices required a lot of time and research.
+- Working with CSS and trying to make the site dynamic and responsive is not easy. It took me a lot of trial and error to find good methodology for alignments. My main issues seem to revolve around styling nested elements. Sometimes the nested elements don't listen to the parent element. Example: If my child element has a width of 100%; then shouldn't the actual pixel width of that child be 100% of the parents width? One would think so, but the elements doesn't always follow this rule. It is very time consuming trying find a workaround on these issues. 
+- Working with CSS took most of my time, but that is good cause I got lots of practice. I do feel I am missing some more lectures on best practices in CSS. I always get where I am supposed to go, but the the journey there is a long and hard one.
 
 <br>
 
 If I were to continue on this project / start over I would:
-- ?
-- ?
+- Redo the social links. Look into the og-tags and also maybe use font-awsome instead of svgs.
+- In future iterations of this project I hope to refactor my code to work with React and/or some data structures.
   
 <br>
 
