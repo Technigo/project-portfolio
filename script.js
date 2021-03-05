@@ -4,7 +4,7 @@ const PROJECTS = [
   {
     title: 'GUESS WHO',
     img: './assets/guesswho.png',
-    alt: 'Picture of a gameboard with animals',
+    alt: 'Gameboard with animals',
     description: 'The assignment was to create a digital version of the 90s game Guess Who. I created a version with cute baby animals, beause - why not?',
     livelink: 'https://competent-newton-827cc6.netlify.app/',
     gitlink: 'https://github.com/sirimatsdotter/project-guess-who/',
@@ -12,7 +12,7 @@ const PROJECTS = [
   {
     title: 'BUSINESS SITE',
     img: './assets/businesssite.png',
-    alt: 'Picture of a business site',
+    alt: 'Business site',
     description: 'Description description, description. Description!',
     livelink: '#',
     gitlink: '#',
@@ -20,7 +20,7 @@ const PROJECTS = [
   {
     title: 'NEWS SITE',
     img: './assets/newssite.png',
-    alt: 'Picture of a colourful news site',
+    alt: 'Colourful news site',
     description: 'Description description, description. Description!',
     livelink: '#',
     gitlink: '#',
@@ -28,7 +28,7 @@ const PROJECTS = [
   {
     title: 'CHAT BOT',
     img: './assets/chatbot.png',
-    alt: 'Picture a chat window with purple background',
+    alt: 'Chat window with purple background',
     description: 'Description description, description. Description!',
     livelink: '#',
     gitlink: '#',
@@ -36,7 +36,7 @@ const PROJECTS = [
   {
     title: 'WEATHER APP',
     img: './assets/weatherapp.png',
-    alt: 'Picture of a weather app with text',
+    alt: 'Weather app with text',
     description: 'Description description, description. Description!',
     livelink: '#',
     gitlink: '#',
