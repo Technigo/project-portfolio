@@ -8,45 +8,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Portfolio Elle Frankenberg</title>
 </head>
 <body>
   <header class="header">
     <div class="icon-container">
-      <a href="">
-        <div class="icon-border">
-          <img class="icon-image" src="./images/stack.svg" alt="">
-        </div>
-       </a>
-      <a href="">
-        <div class="icon-border">
-         <img class="icon-image" src="./images/stack.svg" alt="">
-        </div>
-      </a>
+      <a href="https://www.linkedin.com/in/elle-frankenberg/" class="fa fa-linkedin"></a>
+      <a href="https://github.com/ElleFrankenberg" class="fa fa-github" ></a>
     </div>
     
-    <div class="page-title">
+    <div class="page-title-conainer">
       <h1 class="my-name">ELLE FRANKENBERG</h1>
       <h1 class="main-title">frontend<br>developer</h1>
       <h1 class="sub-title">+ motion designer</h1>
     </div>
-    <picture >
+    <picture>
       <source srcset="./images/headerimage-mobile.png" media="(max-width 767px)">
       <source srcset="./images/headerimage-tablet.png" media="(max-width 1999px)">
       <img class="hero-image" src="./images/headerimage.png" alt="Picture of orange paper"/>
     </picture>
-  
-
-    <img class="avatar" src="images/Elle.gif" alt="animated avatar of Elle Frankenberg">
+      <img class="avatar" src="images/Elle.gif" alt="animated avatar of Elle Frankenberg">
   </header> 
   
-<main>
+<main class="main-content">
    <section class="intro-container">
-      <figure class="start-figure">
-        <span></span>
-      </figure>
       <p class="intro-text">
+        <span class="line"></span><span class="circle"></span>
         Hallo! I´m a creative person with a huge love for pink cloudes and pinguines. 
         I also love the sound of when i turn of the vaccumcleaner. Exept for that i´m a 
         motion designer with upcomming tech skills.  My biggest asset is that my brain 
@@ -55,20 +44,22 @@
   </section>
 
   <section class="tech-skills-container">
-    <h2 class="Section-title">TECH</h2>
+    <h2><mark class="marked-title">TECH</mark></h2>
     <p class="skill-text">HTML, CSS, Flexbox, <span class="highlighted-text">JavaScript,</span> 
-      API:s, pair-programming, Github.  
+      API:s,  
+    </p>
+    <p class="skill-text">
+      pair-programming, Github.
     </p>
   </section>
 
   <section class="project-container">
-    <h2 class="Section-title">FEATURED PROJECTS</h2>
-
-    <div class="project-cards">
-      <a href="#">
-        <img class="project-photo" src="./images/Rut.png" alt="photo of laptop with web site"/>
-        <h4 class="project-title">RÄKNA MED RUT - CHAT BOT</h4>
-        <p class="project-info-text">Responsive web site using HTML, CSS, and JavaScript</p>
+    <h2><mark>FEATURED PROJECTS</mark></h2>
+      <div class="project-cards">
+        <a href="#">
+          <img class="project-photo" src="./images/Rut.png" alt="photo of laptop with web site"/>
+          <h4 class="project-title">RÄKNA MED RUT - CHAT BOT</h4>
+          <p class="project-info-text">Responsive web site using HTML, CSS, and JavaScript</p>
         <div class="tags">
           <p class="tag-text">HTML</p>
           <p class="tag-text">CSS</p>
@@ -107,7 +98,7 @@
     <div class="project-cards">
       <a href="#">
         <img class="project-photo" src="./images/pinguin.png" alt="photo of laptop with web site"/>
-        <h4 class="project-title">Bussines site</h4>
+        <h4 class="project-title">BUSSINES SITE</h4>
         <p class="project-info-text">Responsive web site with form and accordion</p>
         <div class="tags">
           <p class="tag-text">HTML</p>
@@ -118,15 +109,52 @@
     </div>  
   </section>
 
-  <section class="thoughts-container">
-    <h2 class="Section-title">MY THOUGHTS</h2>
+  <section class="showreel-container">
+    <h2><mark>MOTION DESIGN</mark></h2>
+    <div style="padding:56.25% 0 0 0;position:relative;">
+      <iframe src="https://player.vimeo.com/video/411420153?title=0&byline=0&portrait=0" 
+              style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen></iframe>
+    </div><script src="https://player.vimeo.com/api/player.js"></script>
+  </section>
+
+  <section class="blog-container">
+    <h2><mark>MY THOUGHTS</mark></h2>
+    <div class="blog-post-card">
+      <img class="project-photo" src="./images/pinguin.png" alt="picture of pinguins">
+      <p class="date">Date</p>
+      <h5 class="blog-post-title">A title of a blog post</h5>
+      <p class="blog-post-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat.<span class="text-arrow"> >></span>
+      </p>
+    </div>
+
+    <div>
+      <img class="project-photo" src="./images/pinguin.png" alt="picture of pinguins">
+      <p class="date">Date</p>
+      <h5 class="blog-post-title">A title of a blog post</h5>
+      <p class="blog-post-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat.<span class="text-arrow"> >></span>
+      </p>
+    </div>
   </section>
   
   <section class="my-skills-container">
-    <h2 class="Section-title">SKILLS</h2>
+   
+    <h2><mark>SKILLS</mark></h2>
+
+  <div class="list-container">
     <div class="skills">
       <ul class="list">
-        <li><span>CODE</span></li>
+        <li><span class="list-title">CODE</span></li>
         <li>HTML5</li>
         <li>CSS</li>
         <li>JavaScript</li>
@@ -135,7 +163,7 @@
 
      <div class="skills">
       <ul class="list">
-        <li><span>TOOLBOX</span></li>
+        <li><span class="list-title">TOOLBOX</span></li>
         <li>Adobe After Effects</li>
         <li>Adobe Illustrator</li>
         <li>Adobe Indesign</li>
@@ -143,13 +171,24 @@
         <li>Dragon frame</li>
       </ul>
     </div>
+    </div>
 </section>
 
-<!--<Footer class="contact-container">
+<section class="links-container">
+
+  <div class="social-media-links-container">
+    <h2><mark>FOR MORE</mark></h2>
+    <a href="https://www.linkedin.com/in/elle-frankenberg/" class="fa fa-linkedin"></a>
+    <a href="https://github.com/ElleFrankenberg" class="fa fa-github" ></a>
+  </div>
+
+</section>
+
+<Footer class="contact-container">
   <h4 class="contact-title">CONTACT</h4>
-  <p class="my-name">Elle Frankenberg</p>
-  <p class="e-mail-adress">eleonor.frankenberg@gmail.com</p>
-</Footer> -->
+  <p class="name">Elle Frankenberg</p>
+  <p class="name">eleonor.frankenberg@gmail.com</p>
+</Footer>
 </main>
 
 

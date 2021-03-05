@@ -1,56 +1,66 @@
 body {
-  background-color: aqua;
   margin: auto;
+  
+}
+
+h2 {
+  font-size: 25px;
+  font-family: 'Montserat', sans-serif;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
 }
 
-
-
-.header {
-  position: relative;
- 
-}
-
 .hero-image {
-  
-height: 520px;
- width: 100vw;
- object-fit: cover;
-  
+  position: relative;
+  height: 520px;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .icon-container {
-  display: flex;
-  flex-direction: row;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   top: 50px;
   right: 40px;
-
   
- 
+  display: flex;
+  flex-direction: row;
+  
+
 }
 
-.icon-image {
-  width: 30px;
-  height: 20px;
-  padding: 5px;
-  margin: 5px 3px;
-  fill: cornflowerblue;
+.fa {
+  padding: 15px;
+  font-size: 50px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
-.icon-border {
-  border: 2px solid #3a041f;
-  border-radius: 50px;
-  margin: 3px
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
   
+  color: white;
+  background-color: #3a041f;
   
 }
 
-.page-title {
+.fa-github {
+  color: white;
+  background-color: #3a041f;
+}
+
+.page-title-conainer {
   position: absolute;
   z-index: 1;
   top: 130px;
@@ -91,30 +101,48 @@ height: 520px;
 
 .avatar {
   position: absolute;
-  top: 390px;
+  top: 370px;
   right: 40px;
   z-index: 2;
   width: 180px;
   
 }
 
-.intro-container {
-  position: absolute;
-  top: 520px;
-  left: 0;
-  right: 0;
-  background-color: violet;
-  height: 280px;
+.main-content {
+  width: 100%;
   
 }
 
+.intro-container {
+  padding: 50px 24px 43px 24px;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.line {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  margin-bottom: 6px;
+  background-color: #3a041f;
+}
+
+.circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: -10px; 
+  background-color: #3a041f;
+}  
+
 .intro-text {
+  font-size: 17px;
   margin: 0;
   color: #3a041f;
-  font-family: 'Montserrat', sans-serif;
-  padding: 50px 24px 43px 24px;
-  
-  
+  font-family: 'Roboto', sans-serif;
+  line-height: 29px;
+
 }
 
 .tech-skills-container {
@@ -122,46 +150,38 @@ height: 520px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 800px;
-  left: 0;
-  right: 0;
-  background-color: wheat;
-  padding: 40px 24px 24px 24px;
+  background-color: rgb(197, 184, 184);
+  padding: 50px 24px 43px 24px;
   
   
 }
 
-.Section-title {
+mark {
   background-color: #3a041f;
-  font-family: 'Montserrat', sans-serif;
-  padding: 5px 10px 5px 10px;
-  margin: 0;
-  color: aliceblue;
+  padding: 10px 10px 5px 10px;
+  margin: 0px 0px 24px 0px;
+  color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 24px;
+  
 }
 
 .skill-text {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  margin-top: 18px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 17px;
 }
 
 .highlighted-text {
-  color: #ac7d94;
+  color: #3a041f;
 }
 
 .project-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(61, 87, 87);
-  position: absolute;
-  top: 974px;
-  left: 0;
-  right: 0;
-  padding: 40px 24px 24px 24px;
+  background-color: rgb(158, 152, 152);
+  padding: 50px 24px 43px 24px;
 }
 
 .project-cards {
@@ -181,7 +201,7 @@ height: 520px;
 .project-title {
   font-family: 'Montserrat', sans-serif;
   color: #3a041f;
-  font-size: 18px;
+  font-size: 17px;
   margin: 10px 0px 5px 0px;
 }
 
@@ -190,55 +210,136 @@ height: 520px;
   color: #000000;
   font-size: 20px;
   margin: 10px 0px 3px 0px;
-  line-height: 30px;
+  line-height: 29px;
   
 }
-
-
 
 .tags {
   margin: 0;
   display: flex;
   flex-direction: row;
-  background-color: rgb(121, 175, 175);
+  
 }
 
 .tag-text {
   background-color: #3a041f;
+  color: #ffffff;
   padding: 5px;
   margin: 0px 5px 0px 0px;
   font-family: 'Montserrat', sans-serif;
 }
 
-.thoughts-container {
-  position: absolute;
-  top: 2553px;
-  left: 0;
-  right: 0;
+.showreel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 24px 43px 24px;
+}
+
+
+
+.blog-container {
   background-color: azure;
-  height: 150px;
-  padding: 40px 24px 24px 24px;
+  padding: 50px 24px 43px 24px;
+}
+
+.blog-post-card {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  background-color: rgb(255, 255, 255);
+  margin: 25px 0px 25px 0px;
+}
+
+.date {
+  color: #3a041f;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  margin: 0px 0px 5px 0px;
+
+}
+
+.blog-post-title {
+  color: #3a041f;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin: 0px 0px 5px 0px;
+}
+
+.blog-post-text {
+  color: #3a041f;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  margin: 0;
+  line-height: 29px;
 }
 
 .my-skills-container {
-  position: absolute;
-  top: 2767px;
-  left: 0;
-  right: 0;
-  padding: 40px 24px 24px 24px;
+  padding: 50px 24px 43px 24px;
   background-color: bisque;
+  
+}
+
+.list-container {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+.list {
+  margin: 10px;
+  padding: 0;
+  text-align: center;
   
 }
 
 li {
   list-style-type: none;
-  font-family: 'Montserrat', sans-serif;
-  background-color: azure;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  margin-bottom: 5px;
+  line-height: 29px;
+  font-size: 17px;
 }
 
+.list-title {
+  background-color: #3a041f;
+  color: #ffffff;
+  padding: 3px;
+  
+}
 
+.links-container {
+  padding: 50px 24px 43px 24px;
+}
+
+.social-media-links-container {
+  padding: 24px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a041f;
+  padding: 70px 24px;
+}
+
+.contact-title {
+  color: #ffffff;
+  margin: 0px 0px 20px 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+.name  {
+  color: #ffffff;
+  margin: 10px 0px 0px 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
 
 
 
