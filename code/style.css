@@ -19,7 +19,7 @@ body {
   background-image: url("./assets/img/caroline\ bystrom-min-crop.jpg");
 /* background:#222831; */
   width: 100%;
-  height: 45vh; /*should be changed with mobile view first thinking*/
+  height: 60vh; /*should be changed with mobile view first thinking*/
   object-fit: cover;  /*does this do anything on a background image?*/
   color: #f5b825;  
   letter-spacing: 2px; 
@@ -33,15 +33,15 @@ body {
 .heading {
   line-height: 25px;
   position: absolute;
-  left: 100px;
-  top: 100px;
-  display: flex;
+  top: 35%; /*change to 25 in desktop? CHANGE font-size for mobile it is huge!!*/
+  left: 10%;
+  display: flex;  
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;  /*take away om fungerar att bara ändra där det ska vara Roboto*/
 }
 
 .profession {
-  font-size: 45px;
+  margin: 0;
+  font-size: 40px;
   line-height: 40px;
 }
 
@@ -82,10 +82,12 @@ body {
 
 .caroline-image {
   position: absolute; 
-  right: 25px;
-  top: 180px; 
-  height: 160px;
+  top: 75%;
+  right: 10%;
+  height: 130px;
+  width: 130px; 
   border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Main container */
@@ -107,6 +109,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 25px 0 0 0;
 }
 
 .summary-text {
@@ -185,25 +188,26 @@ p { /*this one creates a lot of problem*/
   align-items: center;
 }
 
-.header-three { /*WORK IN PROGRESS - position for mobile devices 381-543 - CAN I FIX IT WITH LINE HEIGHT? */
+.header-three {
   position: absolute;
-  top: 130px; 
-  left: 200px;
+  text-align: center;
+  top: 25%;
+  left: 25%;
+  right: 25%;
   color: #d63629;
   font-size: 30px;
   font-weight: 900; 
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'sans-serif';
   letter-spacing: 2px;
-  line-height: 80%; /*working here but is there another way to solve it?*/
+  line-height: 80%; 
 }
 
-.header-two {
+.header-two { /*FIX THIS ONE it goes all the way out and does not behave as in inline element */
   display: inline-flex;
   color: #FFD369;
   background-color: #393E46;
+  justify-content: center;
 }
-
-
 
 .header-four {
   display: inline-flex;
@@ -248,8 +252,8 @@ p { /*this one creates a lot of problem*/
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /*lyssnas inte på*/
-  flex-wrap: wrap;
+  flex-direction: row; 
+  flex-wrap: wrap; 
 }
 
 .header-technical-skills {
@@ -262,6 +266,13 @@ p { /*this one creates a lot of problem*/
 
 }
 
+.technical-skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .code-header {
   font-weight: 700;
   font-size: 18px;
@@ -269,10 +280,6 @@ p { /*this one creates a lot of problem*/
 
 .skills-and-toolbox {
   list-style-type: none;
-}
-
-.red {
-  color: #e5493c;
 }
 
 .red-bold {
@@ -353,21 +360,6 @@ a:hover, .footer {
     text-align: center;
   }
 
-  .project-container { /*duplicate*/
-    position: relative;
-  }
-
-  .header-three {
-    position: absolute;
-    top: 130px; 
-    left: 130px;
-    color: #d63629;
-    font-size: 30px;
-    font-weight: 900; 
-    font-family: 'Roboto';
-    letter-spacing: 2px;
-  }
-
   .image-container {
     width: 100%;
   }
@@ -397,7 +389,7 @@ a:hover, .footer {
     max-width: 300px; 
     height: 300px;
     margin: 10px 0 0 10px; /*change to 5px later ? */
-    filter: brightness(70%);
+    filter: brightness(30%);
   }
   /* kan tas bort senare när jag fått allt på plats 
   .weather-app, .chatbot, .guess-who-game, .business-site {
@@ -406,6 +398,10 @@ a:hover, .footer {
 */
   .skill {
     margin: 20px; 
+  }
+
+  .red {
+    color: #e5493c;
   }
 }
 
