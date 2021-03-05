@@ -60,6 +60,14 @@ body {
     color: #FA382F;
 }
 
+.fab-2 p{
+    color: #FA382F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+
+}
+
 
 
 /* Test icons ends here*/
@@ -141,8 +149,10 @@ body {
     font-weight: normal; /* Ta bort denna sen */
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+
     /* width:50%  DETTA SKA DU GÖRA SEN NÄR DU ANPASSAR DIN KOD TILL OLIKA DEVICES*/
 }
+
 
 .tech-section-text h4{
     text-align: center;
@@ -309,10 +319,10 @@ body {
 
 
 .bigger-screen-projects {
-    width: 60%;
+    width: 80%;
     text-align: center; /* Bir saniye */
 
-}
+} /* Vad är detta ta bort den? */
 
 .other-project-larger-screen {
     display: flex;
@@ -324,6 +334,20 @@ body {
   
   .other-project-larger-screen-texts p{
     text-align: left; /* center eller left påverkar */
+
+  }
+
+  .other-project-article {
+    text-decoration: underline;
+    font-family: 'Roboto',sans-serif;
+    font-size: 17px; /*25 pc vid större skärm */
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  .other-project-article span {
+      font-weight: bold;
+      text-decoration: underline;
   }
   
 
@@ -599,6 +623,8 @@ text-align: left;
 /* Måste jobba pp */
 @media (min-width:768px) {
     
+
+
     .icons{
         left: 60%;
         top: 10%;
@@ -614,6 +640,10 @@ text-align: left;
 
     .tech-section-text {
         width: 70%;
+    }
+
+    .tech-section-text span {
+        color: #FA382F;
     }
       
     
@@ -632,7 +662,13 @@ text-align: left;
 
     .bigger-screen {
         display: block;
+    }
 
+    .other-thoughts-header
+     {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
     }
 
     .other-thoughts .bigger-screen p{
@@ -647,7 +683,9 @@ text-align: left;
 
     .other-project-larger-screen-texts {
         width: 80%; /* PÅVERKAR */
+
       }
+
 
     
       
@@ -662,8 +700,20 @@ text-align: left;
     .mobile{
         display: block;
     }
+
+    .thoughts-section-container { 
+        display: flex;
+        justify-content: center;
+    }
+
+  
  
-    
+    .thoughts-section-top {
+        display: flex;
+        justify-self: center;
+        width: 80%;
+
+    }
 
     .thoughts-section { /*Måste jobba på denna */
         display: grid; 
@@ -677,8 +727,14 @@ text-align: left;
         display: block;
     }
 
+    .more-thoughts-top {
+        display: flex;
+        justify-content: center;
+    }
+
     .more-thoughts {
         text-align: center;
+        width: 80%;
     }
 
     .skills {
@@ -690,12 +746,151 @@ text-align: left;
     .my-skills {
         display: grid;
         grid-template-columns: 1fr  1fr 1fr;
-        width: 100%; /* Denna kan ändras allt eftersom i bredd beroende på hur stort vi vill ha det */
+        width: 80%; /* Denna kan ändras allt eftersom i bredd beroende på hur stort vi vill ha det */
     }
 
     .my-skills-more {
         display: block;
        
     }
+
+    .tags p{
+        font-size: 12px;
+    }
+
+    .tags-2 p{
+        font-size: 12px;
+    }
    
+}
+
+@media (min-width:1024px) { 
+
+    .icons .fab{
+        width: 80px;
+        height: 80px;
+        font-size: 75px;
+        
+    }
+
+  
+
+    .header-profile-description p {
+        font-size: 28px;
+    }
+
+    .header-profile-description h3 {
+        font-size: 82px;
+        width: 60%;
+    }
+
+    .header-profile-description h4 {
+        font-size: 50px;
+    }
+
+
+    .top-section-text {
+        font-size: 30px;
+    }
+
+    .tech-section-text h4 span {
+        font-size: 48px;
+    }
+
+    .tech-section-text p {
+        font-size: 30px;
+    }
+
+    .highlight span {
+        font-size: 48px;
+    }
+
+    .project-section-content h4 span{
+        font-size: 25px;
+    }
+
+    .project-section-content p {
+        font-size: 25px;
+    }
+
+    .tags p {
+        font-size: 16px;
+    }
+
+    .more-thoughts h2 span{
+        font-size: 38px;
+    }
+
+    .more-thoughts h2 {
+        margin-bottom: 24px;
+    }
+
+    .other-project-article{
+        font-size: 25px;
+    }
+
+    .tags-2 p {
+        font-size: 16px;
+    }
+
+    .date {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    .article-description {
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    .article-text {
+        font-size: 25px;
+        margin: 0px;
+    }
+
+    .more-thoughts {
+        text-align: left;
+    }
+
+    .more-thoughts h3 {
+        font-size: 25px;
+    }
+
+    .my-skills h6 span {
+        font-size: 25px;
+    }
+
+    .my-skills p {
+        font-size: 25px;
+    }
+
+    .row-6 {
+        margin: 24px;
+    }
+
+    .fab-2 .fab{
+        width: 80px;
+        height: 80px;
+        font-size: 75px;
+        margin: 50px;
+        margin-bottom: 0px;
+    }
+
+    .fab-2 p {
+        font-size: 25px;
+    }
+
+    .contact-section-text h4 span {
+        font-size: 38px;
+    }
+
+    .contact-section-text p {
+        font-size: 30px;
+    }
+
+
+
+
+
+
 }
