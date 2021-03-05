@@ -22,6 +22,7 @@ h4 {
 h1 {
     font-weight: 700;
     font-size: 40px;
+    color: white;
 }
 
 h2 {
@@ -73,7 +74,7 @@ a {
 .header-bg {
     position: relative;
     height: 520px;
-    background-image: url("https://images.unsplash.com/photo-1569437061241-a848be43cc82?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-image: url("./assets/bg-header__640px.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,14 +84,13 @@ a {
 .header-bg__heading {
     line-height: 49px;
     position: absolute;
+    height: 520px;
+    width: 300px;
     left: 10%;
     top: 121px;
     display: flex;
     flex-direction: column;
-    height: 520px;
-    width: 300px;
-    color: rgb(255, 255, 255);
-    z-index: 2;
+    z-index: 1;
 }
 
 
@@ -98,11 +98,21 @@ a {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     display: flex;
+    color: white;
 }
 
 .header-bg__heading-subtitle {
     font-size: 24px;
     line-height: 1.8em;
+}
+
+.icon-container {
+    margin: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .header-icons {
@@ -113,26 +123,21 @@ a {
     top: 50px;
 }
 
-.header-icons__container {
-    position: relative;
+.header-icons .icon-container {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     border: solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.header-icons__container:hover {
+.header-icons .icon-container:hover {
     background-color: white;
 }
 
-.header-icons__container:hover img {
+.header-icons .icon-container:hover img {
     filter: invert(41%) sepia(78%) saturate(3600%) hue-rotate(166deg) brightness(95%) contrast(97%);
 }
 
-.header-icons__container img {
+.header-icons .icon-container img {
     position: absolute;
     object-fit: contain;
     width: 50%;
@@ -449,11 +454,11 @@ dd {
     margin-top: 40px;
 }
 
-.social-icon:hover .social-icon__img {
+.social-icon:hover .icon-container {
     background-color: var(--main-color);
 }
 
-.social-icon:hover .social-icon__img img {
+.social-icon:hover .icon-container img {
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(281deg) brightness(105%) contrast(101%);
     height: 60%;
     width: 60%;
@@ -472,24 +477,18 @@ dd {
     grid-column-start: 4;
 }
 
-.social-icon__img {
+.social-icon .icon-container {
     height: 55px;
     width: 55px;
-    border-radius: 50%;
-    border: solid var(--main-color);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: solid var(--main-color); 
 }
 
-.social-icon__img img {
+.social-icon .icon-container img {
     position: absolute;
     width: 50%;
     object-fit: contain;
     filter: invert(41%) sepia(78%) saturate(3600%) hue-rotate(166deg) brightness(95%) contrast(97%);
     transition: width .5s;
-    transition: height .5s;
 }
 
 .footer {
@@ -558,6 +557,8 @@ dd {
 
     .header-bg {
         height: 640px;
+            background-image: url("./assets/bg-header__1920px.jpg");
+    
     }
 
     .header-bg__heading {
@@ -599,8 +600,7 @@ dd {
         width: 220px;
     }
 
-
-    .header-icons__container {
+    .header-icons .icon-container {
         height: 60px;
         width: 60px;
     }
@@ -618,15 +618,6 @@ dd {
     .main {
         grid-template-columns: [first] 15% [line2] 1fr [line3] 1fr [line4] 15%[end];
     }
-
-    .skills {
-        grid-template-columns: 15% 1fr 1fr 15%;
-    }
-
-    .social {
-        grid-template-columns: 15% 1fr 1fr 1fr 15%;
-    }
-
 
     .tech {
         font-size: 25px;
@@ -647,13 +638,13 @@ dd {
         font-size: 24px;
     }
 
+    .projects-image__text {
+        height: 260px;
+    }
+    
     .projects-image__text h4 {
         font-size: 21px;
         line-height: 31px;
-    }
-
-    .projects-image__text {
-        height: 260px;
     }
 
     .projects-image__techniques p {
@@ -679,9 +670,17 @@ dd {
         align-items: center;
     }
 
+    .skills {
+        grid-template-columns: 15% 1fr 1fr 15%;
+    }
+
     dt {
         font-size: 21px;
         line-height: 30px;
+    }
+
+    .social {
+        grid-template-columns: 15% 1fr 1fr 1fr 15%;
     }
 
     .social-icon {
@@ -689,12 +688,12 @@ dd {
         margin-top: 40px;
     }
 
-    .social-icon__img {
+    .social-icon .icon-container img {
         width: 110px;
         height: 110px;
     }
 
-    .social-icon__img img {
+    .social-icon .icon-container img {
         width: 35%;
         height: 35%;
     }
@@ -742,8 +741,7 @@ dd {
     }
 
     .header-about-me {
-        width: 66%;
-        padding: 0 17%;
+        padding: 0 10%;
     }
 
     .header-about-me img {
@@ -828,10 +826,6 @@ dd {
         font-size: 25px;
     }
 
-    .header-icons__container {
-        height: 80px;
-        width: 80px;
-    }
 
     .header-bg__heading {
         left: 17%;
@@ -854,6 +848,15 @@ dd {
     .header-icons,
     .header-portrait {
         right: 17%;
+    }
+
+    .header-icons .icon-container {
+        height: 80px;
+        width: 80px;
+    }
+
+    .header-about-me {
+        padding: 0 17%;
     }
 
     .header-about-me p {
@@ -899,7 +902,7 @@ dd {
         line-height: 41px;
     }
 
-    .social-icon__img {
+    .social-icon .icon-container {
         width: 160px;
         height: 160px;
         margin: 0;
@@ -914,4 +917,49 @@ dd {
         line-height: 2em;
     }
 
+}
+
+@media screen and (min-width: 2000px) {
+
+    .header {
+        height: 1200px;
+    }
+
+    .header-bg {
+        background-image: url("./assets/bg-header__2400px.jpg");
+        height: 700px;
+    } 
+
+    .header-bg__heading {
+        left: 25%;
+    }
+
+    .header-about-me {
+        top: 700px;
+        height: 500px;
+        padding: 0 25%;
+    }
+
+    .header-icons,
+    .header-portrait {
+        right: 25%;
+    }
+    
+    .header-portrait {
+        top: 400px;
+    }
+    
+    .main {
+        grid-template-columns: 25% 24% 1fr 24% 25%;
+    }
+
+    .projects-image,
+    .thoughts-image {
+        height: 400px;
+    }
+
+    .skills,
+    .social {
+        grid-template-columns: 25% 1fr 1fr 1fr 24%;
+    }
 }
