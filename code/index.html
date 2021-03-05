@@ -14,15 +14,15 @@
     <div class="container">
 
         <header class="header">
+            <div class="header-bg">
+            </div>
             <div class="header-bg__heading">
-                <span class="header-bg__heading-name">
+                <h1 class="header-bg__heading-name">
                     PORTFOLIO:
                     <b>PAULINE ANDERSSON</b>
-                </span>
-                <h1>frontend developer</h1>
-                <h2>+ digital designer</h2>
-            </div>
-            <div class="header-bg">
+                </h1>
+                <h1 class="header-bg__heading-title">frontend developer</h1>
+                <h1 class="header-bg__heading-subtitle">+ digital designer</h1>
             </div>
             <div class="header-icons">
                 <div class="header-icons__container">
@@ -57,7 +57,7 @@
             <section class="projects" role="projects" aria-labelledby="main">
                     <h2 class="heading" id="main">FEATURED PROJECTS</h2>
         
-                <div class="project-container" role="featured project" aria-labelledby="project">
+                <div class="project-container" role="featured" aria-labelledby="project">
                     <div class="projects-image"><img src="./assets/ncolors.png"
                             alt="Screenshot of hero header with pictures of girls with colorful hair" />
                         <h3 class="projects-image__title" id="project">
@@ -65,7 +65,7 @@
                         </h3>
                     </div>
                     <div class="projects-image__text">
-                        <h4>BUSINESS SITE & HERO HEADER</h4>
+                        <h4 id="project">BUSINESS SITE & HERO HEADER</h4>
                         <p>A business site for a made-up hair-dye company with a keyframes animated hero header, sign-up form and accordions for FAQ and product information. </p>
                     </div>
                     <div class="projects-image__techniques">
@@ -77,7 +77,7 @@
                 <div class="project-container">
                     <div class="projects-image"><img src="./assets/foods3.png"
                             alt="Screenshot showing a slideshow of different recipes" />
-                        <h3 class="projects-image__title">
+                            <div class="projects-image__text" role="featured" aria-labelledby="project">
                             FOODY
                         </h3>
                     </div>
@@ -92,10 +92,10 @@
                         <p>APIs</p>
                     </div>
                 </div>
-                <div class="project-container project-container--desktop">
+                <div class="project-container project-container--desktop" role="featured" aria-labelledby="project">
                     <div class="projects-image"><img src="./assets/weatherApp10.png"
                             alt="Two examples of a weather app in different weather conditions" />
-                        <h3 class="projects-image__title">
+                            <h3 class="projects-image__text" id="project">
                             PAURAS WEATHER
                         </h3>
                     </div>
@@ -110,10 +110,10 @@
                         <p>APIs</p>
                     </div>
                 </div>
-                <div class="project-container project-container--desktop">
+                <div class="project-container project-container--desktop" role="featured" aria-labelledby="project">
                     <div class="projects-image"><img src="./assets/animalwho2.png"
                             alt="Screenshot of a guess who game with animals instead of persons" />
-                        <h3 class="projects-image__title">
+                            <h3 class="projects-image__text" id="project">
                             GUESS THE ANIMAL
                         </h3>
                     </div>
@@ -128,9 +128,9 @@
                     </div>
                 </div>
                     <h3 class="sub-heading">OTHER PROJECTS</h3>
-                <div class="project-container project-container--mobile">
+                <div class="project-container project-container--mobile" role="other" aria-labelledby="project">
                     <div class="link-text">
-                        <h4> GUESS WHO </h4>
+                        <h4 id="project"> GUESS WHO </h4>
                         <p> Game built in JavaScript.</p>
                     </div>
                     <div class="projects-image__techniques">
@@ -139,9 +139,9 @@
                         <p>JavaScript ES6</p>
                     </div>
                 </div>
-                <div class="project-container project-container--mobile">
+                <div class="project-container project-container--mobile" role="other" aria-labelledby="project">
                     <div class="link-text">
-                        <h4>WEATHER APP</h4>
+                        <h4 id="project">WEATHER APP</h4>
                         <p> Bot built in JavaScript.</p>
                     </div>
                     <div class="projects-image__techniques">
@@ -150,9 +150,9 @@
                         <p>JavaScript ES6</p>
                     </div>
                 </div>
-                <div class="project-container">
+                <div class="project-container" role="other" aria-labelledby="project">
                     <div class="link-text">
-                        <h4>NEWS SITE</h4>
+                        <h4 id="project">NEWS SITE</h4>
                         <p>Bot built in JavaScript.</p>
                     </div>
                     <div class="projects-image__techniques">
@@ -161,9 +161,9 @@
                         <p>JavaScript ES6</p>
                     </div>
                 </div>
-                <div class="project-container">
+                <div class="project-container" role="other" aria-labelledby="project">
                     <div class="link-text">
-                        <h4>CHAT BOT</h4>
+                        <h4 id="project">CHAT BOT</h4>
                         <p> Bot built in JavaScript.</p>
                     </div>
                     <div class="projects-image__techniques">
@@ -215,7 +215,7 @@
             <section class="skills" role="skills" aria-labelledby="main">
                     <h2 class="heading" id="main">SKILLS</h2>
                 <div class="skills-col">
-                    <dl>
+                    <dl role="skill list">
                         <dt id="code">CODE</dt>
                         <dd role="technology" aria-labelledby="code">HTML5</dd>
                         <dd role="technology" aria-labelledby="code">CSS3</dd>
@@ -226,15 +226,15 @@
                         <dd role="technology" aria-labelledby="code">Unit test</dd>
                         <dd role="technology" aria-labelledby="code">Accessability</dd>
                         <dd role="technology" aria-labelledby="code">Responsive design</dd>
-                        <dt id="upcoming code">UPCOMING</dt>
-                        <dd role="technology" aria-labelledby="upcoming code">Node.js</dd>
-                        <dd role="technology" aria-labelledby="upcoming code">React</dd>
-                        <dd role="technology" aria-labelledby="upcoming code">Redux</dd>
-                        <dd role="technology" aria-labelledby="upcoming code">Databases</dd>
+                        <dt id="upcoming">UPCOMING</dt>
+                        <dd role="technology" aria-labelledby="upcoming">Node.js</dd>
+                        <dd role="technology" aria-labelledby="upcoming">React</dd>
+                        <dd role="technology" aria-labelledby="upcoming">Redux</dd>
+                        <dd role="technology" aria-labelledby="upcoming">Databases</dd>
                     </dl>
                 </div>
                 <div class="skills-col">
-                    <dl>
+                    <dl role="skill list">
                         <dt id="toolbox">TOOLBOX</dt>
                         <dd role="tool" id="toolbox">Figma</dd>
                         <dd role="tool" id="toolbox">Slack</dd>
@@ -251,7 +251,7 @@
                     </dl>
                 </div>
                 <div class="skills-col skills-col--desktop">
-                    <dl>
+                    <dl role="skill list">
                         <dt id="more">MORE</dt>
                         <dd role="ability" id="more">Agile methodology</dd>
                         <dd role="ability" id="more">Mentor</dd>
@@ -286,8 +286,8 @@
         </main>
 
         <footer class="footer">
-            <div class="contact-info">
-                <h3>CONTACT</h3>
+            <div class="contact-info" role="info" aria-labelledby="contact">
+                <h3 id="contact">CONTACT</h3>
                 <p>Pauline Andersson</p>
                 <p>+46 707 68 88 17</p>
                 <p>pauline.j.andersson@gmail.com</p>
