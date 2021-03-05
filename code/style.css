@@ -13,21 +13,32 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     font-size: 22px;
+    color: white;
 }
 
 h2 {
+    font-size: 21px;
+    color: var(--main-color);
+}
+
+h3 {
     font-size: 17px;
+    line-height: 1.5em;
+    color: var(--main-color);
 }
 
 p {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5em;
+    font-size: 17px;
+    color: black;
 }
 
 .container {
@@ -71,20 +82,25 @@ p {
     z-index: 2;
 }
 
-.header-bg__heading h1 {
-    font-size: 40px;
-}
 
-.header-bg__heading h2 {
-    font-size: 24px;
-}
-
-.header-bg__heading span {
+.header-bg__heading-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
     display: flex;
 }
 
-.header-bg__heading p {
-    font-size: 13px;
+.header-bg__heading-title,
+.header-bg__heading-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.header-bg__heading-title {
+    font-size: 40px;
+}
+
+.header-bg__heading-subtitle {
+    font-size: 24px;
 }
 
 .header-icons {
@@ -159,19 +175,13 @@ p {
     height: fit-content;
     padding: 2px;
     background-color: var(--main-color);
-    color: white;
     margin: 40px 0;
     justify-self: center;
 }
 
 .sub-heading {
     margin: 20px 0;
-    color: var(--main-color);
     justify-self: center;
-}
-
-.sub-heading h1 {
-    font-size: 21px;
 }
 
 .heading,
@@ -229,7 +239,7 @@ p {
     width: 100%;
     height: 220px;
     overflow: hidden;
-    background-color:black;
+    background-color: black;
 }
 
 .projects-image img {
@@ -242,6 +252,8 @@ p {
 }
 
 .projects-image__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
     position: absolute;
     display: flex;
     height: 100%;
@@ -256,15 +268,8 @@ p {
     line-height: 1.2em;
 }
 
-.projects-image__text {
-    font-size: 17px;
-    color: var(--main-color);
-    margin-top: 20px;
-}
-
 .projects-image__text p,
 .projects-image__techniques {
-    color: black;
     margin-top: 20px;
 }
 
@@ -279,20 +284,15 @@ p {
 }
 
 .link-text {
-    font-size: 17px;
     grid-column: 2/span 2;
     width: 100%;
     display: flex;
     flex-direction: column;
-    color: var(--main-color);
 }
 
-.link-text p {
-    color: black;
-}
-
-.link-text p::after{
-    content:"\00a0 >>";
+.link-text p::after,
+.thoughts .link-text h3::after {
+    content: "\00a0 >>";
     color: var(--main-color);
 }
 
@@ -302,8 +302,12 @@ p {
     padding-bottom: 50px;
 }
 
+.thoughts h3 {
+    color: black;
+}
+
 .thoughts-container,
-.thoughts--mobile{
+.thoughts--mobile {
     grid-column: 2/ span 2;
 }
 
@@ -323,7 +327,6 @@ p {
 }
 
 .thoughts-container h2 {
-    font-size: 21px;
     line-height: 30px;
 }
 
@@ -394,9 +397,12 @@ dd {
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
-    font-size: 11px;
-    color: var(--main-color);
     margin-top: 40px;
+}
+
+.social-icon p {
+    color: var(--main-color);
+    font-size: 11px;
 }
 
 .social-icon:nth-of-type(3) {
@@ -446,19 +452,25 @@ dd {
 
 .contact-info h2 {
     margin-bottom: 20px;
+    color: white;
 }
 
 .contact-info p {
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 
 @media screen and (min-width: 700px) {
     h1 {
-        font-size: 40px;
+        font-size: 34px;
     }
 
-    h2,
+    h2 {
+        font-size: 28px;
+    }
+
+    h3,
     p {
         font-size: 21px;
         line-height: 41px;
@@ -476,6 +488,7 @@ dd {
     .header p {
         font-size: 22px;
     }
+
     .header {
         height: 1100px;
     }
@@ -488,6 +501,20 @@ dd {
         top: 200px;
         left: 15%;
         width: 400px;
+    }
+
+    .header-bg__heading-name {
+        font-size: 18px;
+    }
+
+    .header-bg__heading-title {
+        font-size: 60px;
+        line-height: 1.2em;
+    }
+
+    .header-bg__heading-subtitle {
+        font-size: 40px;
+        line-height: 1.5em;
     }
 
     .header-about-me {
@@ -503,6 +530,7 @@ dd {
         line-height: 40px;
         width: 100%;
     }
+
     .header-portrait,
     .header-icons {
         right: 15%;
@@ -519,14 +547,14 @@ dd {
         height: 60px;
         width: 60px;
     }
-    
+
     .heading {
         line-height: 58px;
         font-weight: 700;
         padding: 0 5px;
     }
 
-    .sub-heading h1 {
+    .sub-heading h3 {
         font-size: 34px;
     }
 
@@ -558,7 +586,7 @@ dd {
         height: 310px;
     }
 
-    .projects-image h1 {
+    .projects-image h2 {
         font-size: 24px;
     }
 
@@ -569,7 +597,7 @@ dd {
 
     .projects-image__techniques p {
         line-height: 11px;
-        font-size:  18px;
+        font-size: 18px;
     }
 
     .link-text {
@@ -604,10 +632,14 @@ dd {
         width: 110px;
         height: 110px;
     }
-    
+
     .social-icon__img img {
         width: 35%;
         height: 35%;
+    }
+
+    .social-icon p {
+        font-size: 17px;
     }
 
     .footer {
@@ -628,7 +660,7 @@ dd {
         grid-template-columns: 10% 38% 1fr 38% 10%;
     }
 
-    .skills, 
+    .skills,
     .social {
         grid-template-columns: 10% 1fr 1fr 1fr 10%;
     }
@@ -653,7 +685,7 @@ dd {
         padding-top: 20px;
     }
 
-    .tech-text{
+    .tech-text {
         grid-column: 2/ span 3;
     }
 
@@ -715,10 +747,16 @@ dd {
         font-size: 48px;
     }
 
-    h2,
+    h2 {
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
     p {
         font-size: 25px;
-        line-height: 41px;
     }
 
     .header-icons__container {
@@ -726,16 +764,15 @@ dd {
         width: 80px;
     }
 
-    .header h1 {
+    .header-bg__heading-title {
         font-size: 82px;
-        line-height: 1.2em;
     }
 
-    .header h2 {
+    .header-bg__heading-subtitle{
         font-size: 50px;
     }
 
-    .header p {
+    .header-bg__heading-name {
         font-size: 28px;
     }
 
@@ -752,12 +789,7 @@ dd {
         margin: 60px;
     }
 
-    .sub-heading h1 {
-        font-size: 38px;
-        margin: 40px;
-    }
-    
-    .skills, 
+    .skills,
     .social {
         grid-template-columns: 17% 1fr 1fr 1fr 17%;
     }
@@ -776,31 +808,27 @@ dd {
         line-height: 50px;
     }
 
-    .tech {
+    .tech p {
         font-size: 30px;
         line-height: 50px;
         padding-bottom: 100px;
     }
 
-    .projects-image h1 {
-        font-size: 28px;
+    .projects-image__techniques p {
+        line-height: 11px;
+        font-size: 21px;
     }
 
-    .projects-image__text h2 {
+    .thoughts-image__date {
+        font-size: 25px;
+    }
+
+    dt {
         font-size: 25px;
         line-height: 41px;
     }
 
-    .projects-image__techniques p {
-        line-height: 11px;
-        font-size:  21px;
-    }
-
-    .thoughts-image__date {
-        font-size: 25px; 
-    }
-
-    dt {
+    .social-icon p {
         font-size: 25px;
         line-height: 41px;
     }
@@ -813,13 +841,11 @@ dd {
 
     .footer {
         height: 570px;
-        font-size: 38px;
-        line-height: 47px;
     }
 
     .contact-info p {
         font-size: 30px;
         line-height: 2em;
     }
-   
+
 }
