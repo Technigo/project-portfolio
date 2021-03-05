@@ -17,7 +17,11 @@ const drawFeaturedProjects = () => {
     html += `
         <li class="card" aria-labelledby="project${i}">
             <div class="card__title--featured">
-                <img src="./assets/projects/${project.image.src}" alt="${project.image.alt}" />
+              <picture>
+                <source srcset="./assets/projects/project-${project.image.src}.webp" type="image/webp" />
+                <source srcset="./assets/projects/project-${project.image.src}.jpg" type="image/jpg" />
+                <img src="./assets/projects/project-${project.image.src}.jpg" alt="${project.image.alt}" />
+              </picture>
                 <h2 class="featured">
                     <a href="${project.link}" target="_blank" id="project${i}">${project.title}</a>
                 </h2>
