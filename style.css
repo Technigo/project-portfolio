@@ -150,7 +150,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(197, 184, 184);
+  background-color: rgb(255, 255, 255);
   padding: 50px 24px 43px 24px;
   
   
@@ -176,12 +176,20 @@ mark {
   color: #3a041f;
 }
 
+.featured-pojects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 50px 24px 43px 24px;
+}
+
 .project-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(158, 152, 152);
-  padding: 50px 24px 43px 24px;
+  background-color: rgb(255, 255, 255);
+  padding: 24px 24px 43px 24px;
 }
 
 .project-cards {
@@ -236,20 +244,38 @@ mark {
   padding: 50px 24px 43px 24px;
 }
 
+.my-thoughts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(158, 152, 152);
+  padding: 24px 24px 43px 24px;
+}
+
+
 
 
 .blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: azure;
-  padding: 50px 24px 43px 24px;
+  padding: 24px 24px 43px 24px;
 }
+
 
 .blog-post-card {
   display: flex;
   flex-direction: column;
   width: 327px;
-  background-color: rgb(255, 255, 255);
-  margin: 25px 0px 25px 0px;
+  background-color: rgb(121, 102, 102);
+  margin: 18px 0px 9px 0px;
 }
+
+.blog-photo {
+  width: 327px;
+}
+
 
 .date {
   color: #3a041f;
@@ -311,11 +337,17 @@ li {
 }
 
 .links-container {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: rgb(184, 159, 126);
   padding: 50px 24px 43px 24px;
 }
 
 .social-media-links-container {
-  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(156, 144, 127);
 }
 
 .contact-container {
@@ -341,6 +373,56 @@ li {
   font-size: 17px;
 }
 
+
+/*tablet*/
+
+@media (min-width: 768px) and (max-width: 1999px) {
+
+
+.intro-container {
+padding: 50px 48px 43px 48px;
+
+}
+
+.project-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.my-thoughts-container {
+  padding: 24px 24px 0px 24px;
+}
+
+
+.blog-post-card {
+  width: 427px;
+  margin: 25px 0px 30px 0px;
+
+}
+
+.blog-photo {
+  width: 427px;
+}
+
+.list-container {
+  padding: 24px 130px 24px 130px;
+}
+
+.links-container {
+  padding: 24px 240px 24px 240px;
+  
+  
+}
+
+
+
+
+
+
+
+
+}
 
 
 
