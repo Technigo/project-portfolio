@@ -330,6 +330,7 @@ body {
   text-align: center;
   margin-top: 10px;
   padding: 0;
+
 }
 .big-icons-wrapper {
   display: flex;
@@ -397,23 +398,137 @@ body {
 }
 /* Media queries */
 /* Tablet view */
-/* 
-@media (min-width: 768px) {
 
+@media (min-width: 768px) {
+/* Header */
+.header-container {
+  height: 510px;
+}
+.header-content {
+  justify-content: space-between;
+  padding: 80px 100px;
+}
+.header-icons {
+  width: 200px;
+  height: 70px;
+  justify-content: space-between;
+}
+.circle-small {
+  width: 60px;
+  height: 60px;
+}
+.icons-small {
+  width: 22px;
+  height: 22px;
+}
+.header-text {
+  width: 380px;
+  height: 319px;
+}
+.header-text .flex-item-1 {
+  font-size: 17px;
+}
+.header-text .flex-item-2, .flex-item-3 {
+  font-size: 60px;
+}
+.header-text .flex-item-4 {
+  font-size: 32px;
+}
+.profile-picture {
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  top: 310px;
+}
+/* Main section */
+.section-grey {
+  font-size: 22px;
+  line-height: 42px;
+  padding: 50px 40px;
+}
+.section-white {
+  font-size: 22px;
+  line-height: 42px;
+  padding: 50px 100px;
+}
+.text-introduction {
+  width: 560px;
+}
+.tech-paragraph {
+  width: 560px;
+}
+.titles {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+}
+.sub-titles {
+  font-size: 30px;
+  line-height: 45px;
+}
+/* Big icons */
+.icon-wrapper {
+  font-size: 17px;
+  width: 155px;
+  padding-top: 30px;
+ }
+.circle-big {
+  width: 90px;
+  height: 90px;
+}
+.icons-big {
+  width: 30px;
+  height: 30px;
+}
+/* Projects section */
+.featured-projects-wrapper, .my-thoughts-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-column-gap: 20px;
+}
+.card-article {
+  max-width: 270px;
+}
+.other-projects-wrapper {
+  width: 560px;
+}
+/* Thoughts section */
+.more-thoughts-wrapper {
+  width: 560px;
+}
+.more-thoughts-title {
+  line-height: 42px;
+}
+/* Skills section */
+.skills-wrapper {
+  grid-column-gap: 60px;
+}
+.skills-list {
+  font-size: 25px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+}
+/* Footer */
+.footer-container {
+  font-size: 22px;
+  line-height: 38px;
+}
+.footer-title {
+  font-size: 29px;
+  line-height: 47px;
 }
 /* Desktop view */
 @media (min-width: 1024px) {
-  /* Header */
+/* Header */
 .header-container {
   height: 580px;
 }
 .header-content {
-  justify-content: space-between;
   padding: 80px 210px;
 }
 .header-icons {
   width: 228px;
-  height: 70px;
 }
 .circle-small {
   width: 70px;
@@ -439,18 +554,13 @@ body {
 .profile-picture {
   width: 270px;
   height: 270px;
-  position: absolute;
   top: 340px;
 }
 /* Main section */
 .section-grey {
-  font-size: 22px;
-  line-height: 42px;
   padding: 50px 170px;
 }
 .section-white {
-  font-size: 22px;
-  line-height: 42px;
   padding: 50px 170px;
 }
 .text-introduction {
@@ -460,10 +570,8 @@ body {
   width: 694px;
 }
 .titles {
-  font-weight: 700;
   font-size: 36px;
   line-height: 50px;
-  letter-spacing: 0.01em;
 }
 .sub-titles {
   font-size: 32px;
@@ -482,10 +590,8 @@ body {
   width: 35px;
   height: 35px;
 }
-.featured-projects-wrapper, .my-thoughts-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  grid-column-gap: 40px;
+.card-article {
+  max-width: 327px;
 }
 .other-projects-wrapper {
   width: 694px;
@@ -493,23 +599,9 @@ body {
 .more-thoughts-wrapper {
   width: 694px;
 }
-.more-thoughts-title {
-  line-height: 42px;
-}
 .skills-wrapper {
   grid-template-columns: 1fr 1fr 1fr; 
 }
-.skills-list {
-  font-size: 25px;
-  line-height: 41px;
-}
 /* Footer */
-.footer-container {
-  font-size: 22px;
-  line-height: 38px;
-}
-.footer-title {
-  font-size: 29px;
-  line-height: 47px;
 }
 }
