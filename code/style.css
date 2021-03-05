@@ -1,3 +1,10 @@
+:root {
+  --primary: #5c1968;
+  --secondary: #d5abda;
+  --light: #eff7e1;
+  --darken-blend: #7c6b7e;
+}
+
 * { margin: 0;}
 
 body {
@@ -6,65 +13,59 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: var(--light)
 }
 
 /********* TOP SECTION *********/
 
 .top-section {
   background-image: url("./assets/header-image-mobile.jpg");
+  background-color: var(--secondary);
+  background-blend-mode: multiply;
   background-size: contain;
-  min-width: 375px;
-  height: 520px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 24px 0;
 }
 
 .top-navbar-social-media {
 width: 130.5px;
 height: 40px;
-top: 48px;
-left: 220px;
 display: flex;
 justify-content: space-between;
-position: relative;
+align-self: flex-end;
 }
 
 .top-navbar-social-media-link  {
   width: 36px;
   height: 36px;
-  border: 2px solid white;
+  border: 2px solid var(--light);
   border-radius: 50%;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
 .linkedin {
   height: 15.5px;
   width: 16px;
-  top: 9.5px;
-  left: 11px;
-  position: absolute;
 }
 
 .github {
   height: 19px;
   width: 18px;
-  top: 8px;
-  left: 9px;
-  position: absolute;
 }
 
 .stackoverflow {
   height: 19px;
   width: 18px;
-  top: 8px;
-  left: 8px;
-  position: absolute;
+  position: relative;
+  bottom: 1px;
 }
 
 .top-header {
-  color: white;
-  position: relative;
-  width: 230px;
-  top: 121px;
-  left: 24px;
+  color: var(--light);
+  margin: 33px 0;
 }
 
 .top-header-portfolio-name {
@@ -96,12 +97,12 @@ position: relative;
 .profile-picture-container {
   width: 180px;
   height: 180px;
-  border: 3px solid white;
+  border: 3px solid var(--light);
   border-radius: 50%;
   overflow: hidden;
-  position: absolute;
-  top: 356px;
-  left: 171px;
+  align-self: flex-end;
+  position: relative;
+  top: 16px;
 }
 
 .profile-picture {
@@ -110,17 +111,20 @@ position: relative;
 }
 
 /********* SUMMARY *********/
+
+
 .summary {
-  width: 100%;
+ width: 100%;
+ display: flex;
+ justify-content: center;
 }
 
-.summary-text-container {
+.summary-container {
   width: 327px;
   font-family:'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 29px;
-  position: relative;
   padding: 49px 24px 43px 24px;
 }
 
@@ -128,5 +132,108 @@ position: relative;
   width: 55px;
   height: 11px;
   top: 10px;
+}
+
+/********* FEATURED PROJECTS *********/
+.section {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 0 24px;
+}
+
+.section-header {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--light);
+  background-color: var(--primary);
+  height: 27px;
+  padding: 1px 2px 0 2px;
+  display: inline;
+}
+
+.tech-skills-text {
+  width: 327px;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+  margin: 24px 0 33px;
+}
+
+.featured-project-image-container {
+  background-image: url("./assets/guess-who.JPG");
+  background-color:var(--darken-blend);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 10px;
+}
+
+.project-name {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 1%;
+  color: var(--light);
+}
+
+.project-explanation {
+  font-family:'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: 1%;
+  color: var(--primary);
+}
+
+.project-text {
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: 1%;
+}
+
+.tech-symbols {
+  display: flex;
+  flex-direction: row;
+  padding-inline-start: 0;
+  position: relative;
+  right: 80px;
+  
+}
+
+.tech-symbol {
+  font-family:'Roboto', sans-serif;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 0.01em;
+  background-color: var(--secondary);
+  padding: 3px 5px;
+  margin: 0 8px 0 0;
+}
+
+/* To make entire div a clickable link */
+.featured-project-container {
+  position: relative;
+  width: 327px;
+}
+.featured-project-container a::after{
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1;
 }
 
