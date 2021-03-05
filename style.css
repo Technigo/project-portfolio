@@ -79,8 +79,6 @@ a:link {
 .pin {
     position: absolute;
     top: 20px;
-    
-
     width: 20px;
 }
 
@@ -88,7 +86,7 @@ a:link {
     display: flex;
     background-color: rgb(234, 234, 250);
     padding: 20px;
-    margin-top: -5px;
+    margin-top: 5px;
 }
 
 .skills-summary {
@@ -131,7 +129,6 @@ h5 {
 }  
   
 p {
-    display: flex;
     text-align: justify;
     text-decoration: none;
     color: navy;
@@ -139,9 +136,24 @@ p {
     margin-top: 10px;
 }
 
+
+.line {
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background-color: rgb(250, 10, 10);
+    margin-bottom: 6px;
+}
+
+.circle {
+    display: inline-block;
+    background-color: rgb(250, 10, 10);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: -5px;
+}
 /*************** FEATURED PROJECTS *************/
-
-
 .featured-projects-container {
     display: grid;
     grid-gap: 5px;
@@ -149,14 +161,13 @@ p {
     justify-content: center;
     align-content: center;
     background-color: rgb(234, 234, 250);
-    padding: 20px;
+    padding: 5px 20px 5px 20px;
+
 }
 
 .featured-projects-container img {
     width: 100%;
     padding-top: 10px;
-    
-    
 }
 
 .pic-container {
@@ -179,15 +190,11 @@ p {
 }
 
 h6 {
-    
-    
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 h6 span {
-    
-    
     font-weight: 600;
     color: black;
     background-color: rgb(248, 169, 202);
@@ -196,21 +203,6 @@ h6 span {
     margin-left: 0px;
     margin-bottom: 0px;
 }
-
-
-
-/*
-.skill-labels {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-*/
-
-
 
 /******************** OTHER PROJECTS ****************/
 .other-projects {
@@ -241,9 +233,6 @@ h6 span {
     flex-direction: column;
     background-color: rgb(247, 247, 251);
     padding: 5px 20px 5px 20px;
-    
-    
-    
 }
 
 /*************** MORE THOUGHTS ********************/
@@ -255,7 +244,6 @@ h6 span {
 }
 
 /****************** SKILLS ***********************/
-
 .all-skills {
     display: grid;
     background-color: rgb(234, 234, 250);
@@ -285,14 +273,21 @@ p.description-skills {
 .logos-more {
     padding: 25px;
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 30px;
     grid-template-columns: auto auto auto;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logos-more h6 {
+    color: blue;
+    font-size: 8px;
 }
 
 .logos-more img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     box-shadow: 1px 2px 1px 1px rgba(7, 74, 100, 0.4);
 }
@@ -319,6 +314,7 @@ p.description-skills {
 .contact h6 {
     margin: 5px;
     font-weight: lighter;
+    color: white;
 }
 
   /*********** MEDIA QUERIES  *************/
@@ -361,7 +357,7 @@ p.description-skills {
         justify-content: center;
         align-content: center;
         background-color: rgb(234, 234, 250);
-        padding: 10px;
+        padding: 5px 20px 5px 20px;
     }
     
     .skills-summary {
@@ -371,7 +367,6 @@ p.description-skills {
         align-items: center;
         padding: 30px;
     }
-    
 
     .all-skills-grid-wrapper {
         display: grid;
@@ -440,5 +435,4 @@ p.description-skills {
         width: 80px;
         height: 80px;
     }
-    
 }    

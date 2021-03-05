@@ -10,20 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab%7CRuda" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/051e5f3eb3.js" crossorigin="anonymous"></script>
     <title>Vlad's Portfolio</title>
 </head>
+
 <body>
+  <!-- HERO IMAGE-->
   <header class="hero">
     <picture>
-      <h1 class="hero-title"><span>PORTFOLIO:</span> VLADIMIR BYKOV</h1>
+      <h1 class="hero-title"><span>PORTFOLIO:</span> VLADIMIR BYKOV, MD PhD</h1>
       <h2 class="hero-subtitle1">Data scientist &</h2>
       <h2 class="hero-subtitle2">front-end developer</h2>
       <div>
         <img class="my-photo" src="./images/my_photo1.jpg" alt="my photo"/>
       </div>
-
-      <div class="logos">
+      <div role ="media logos" class="logos">
         <a href="https://www.linkedin.com/in/vladimir-bykov-04912165/">
           <img class="linkedin" src="./images/linkedin.png" alt="linkedin logo"/>
         </a>
@@ -34,25 +34,24 @@
           <img class="stack" src="./images/stackoverflow1.png" alt="stackoverflow logo"/>
         </a>
       </div>
-
-
-      
       <source srcset="./images/desktop.JPG" media="(max-width: 1190px)"/>
       <img class="hero-image" src="./images/desktop.JPG" alt="cover image"/>
     </picture>
   </header>
 
+<!--INTRODUCTION-->
   <section class="introduction">
-    <p>
-      <i class="fas fa-feather-alt"></i>&nbsp Hello! I am experienced data scientist with front-end developer
+    <p tabindex="0" role="introduction">
+       <span class="line"></span><span class="circle"></span>&nbsp Hello! I am experienced data scientist with front-end developer
        skills. I will make sense out of your data, render information 
        interactive for you and your clients and enable your business 
        with data-driven solutions. 
     </p>
   </section>
 
+<!--SKILLS SUMMARY-->
   <section class="skills-summary">
-    <h3 class="outline-title">
+    <h3 class="outline-title" tabindex="0" role="skills tech summary">
       <span>TECH</span>
     </h3>
     <p class="skills">
@@ -61,9 +60,10 @@
       pair-programming, Git, GitHub
     </p>
   </section>    
-  
+
+  <!--FEATURED PROJECTS-->
   <section class="featured-projects">
-    <h3 class="outline-title">
+    <h3 class="outline-title" tabindex="0" role="featured projects">
       <span>FEATURED PROJECTS</span>
     </h3>
     
@@ -97,7 +97,6 @@
             <img src="./images/weather_app3.png" alt="weather forecast app"/>
             <div class="project-img-title weather">WEATHER APP</div>
           </picture>
-
           <h4>WEATHER FORECAST APP</h4> 
           <p>
             Web app built in Javascript using Open Weather API.
@@ -115,9 +114,8 @@
       <article>
         <a href="https://github.com/vladjnbykov/Unsupervised-machine-learning-heart-failure-prediction">
           <picture class="pic-container">
-            <img src="./images/heart-failure.png" alt="cluster structure"/>
+            <img src="./images/heart-failure1.png" alt="cluster structure"/>
             <div class="project-img-title hfailure">HEART FAILURE RISK FACTORS</div>
-
           </picture>  
           <h4>IDENTIFICATION HEART FAILURE RISK FACTORS</h4> 
           <p>
@@ -126,7 +124,6 @@
             risk of complete heart failure. Python, Scikit-learn,
             unsupervised machine learning.
           </p>
-
           <h6>
             <span>Python</span>
             <span>Pandas</span>
@@ -140,10 +137,8 @@
       <article>
         <a href="https://github.com/vladjnbykov/project-chatbot">
           <picture class="pic-container">
-          
             <img src="./images/chatbot4.png" alt="food ordering cover"/>
             <div class="project-img-title chatbot">CHATBOT</div>
-            
           </picture>
           <h4>CHATBOT: RESTAURANT FOOD ORDER</h4> 
           <p>
@@ -159,9 +154,9 @@
     </section>  
   </section>
 
-                    <!-- OTHER PROJECTS-->
+<!-- OTHER PROJECTS-->
   <section class="other-projects">
-    <h5>
+    <h5 tabindex="0" role="other projects">
       OTHER PROJECTS
     </h5>
     <a href="https://github.com/vladjnbykov/project-guess-who">
@@ -175,7 +170,6 @@
         <span>Javascript ES6</span> 
       </h6>
     </a>
-  
 
     <a href="https://github.com/vladjnbykov/project-business-site">
       <div class="other">
@@ -258,12 +252,32 @@
       </h6>
     </a>
 
+    <a href="https://vladjnbykov.shinyapps.io/IncuCyte_confluency/">
+      <div class="other">
+        <span>CELL GROWTH CURVE ANALYSIS.</span>Webapp for IncuCyte instrument.<span>>></span>
+      </div>
+      <h6>
+        <span>R</span>
+        <span>R-Shiny</span>
+        <span>HTML</span>
+        <span>CSS3</span> 
+      </h6>
+    </a>
 
-
-
+    <a href="https://vladjnbykov.shinyapps.io/IC50/">
+      <div class="other">
+        <span>IC50 ESTIMATION.</span>Webapp for cell growth suppression analysis.<span>>></span>
+      </div>
+      <h6>
+        <span>R</span>
+        <span>R-Shiny</span>
+        <span>HTML</span>
+        <span>CSS3</span> 
+      </h6>
+    </a>
   </section>
 
-  <section class="my-thoughts">
+  <section class="my-thoughts" tabindex="0" role="my thoughts">
     <h3 class="outline-title">
       <span>MY THOUGHTS ABOUT CODE</span>
     </h3>
@@ -273,11 +287,10 @@
       information. Visualization techniques responsive to the user input 
       will provide interpretations of the different scenarions of the system/ model
       behaviour thus will enable more comprehensive data-driven decisions.
-
     </p>
   </section>
 
-  <section class="more-thoughts">
+  <section class="more-thoughts" tabindex="0" role="more thoughts">
     <h5>
       MORE THOUGHTS
     </h5>
@@ -292,13 +305,13 @@
 
   <!-- ALL SKILLS -->
   <section class="all-skills">
-    <h3 class="outline-title">
+    <h3 class="outline-title" tabindex="0" role="skills">
       <span>SKILLS</span>
     </h3>
 
     <section class="all-skills-grid-wrapper">
       <div>
-        <ul>
+        <ul tabindex="0" role="coding skills">
           <h5>CODE</h5>
           <li>Python</li>
           <li>SQL</li>
@@ -312,7 +325,7 @@
       </div>
 
       <div>
-        <ul>
+        <ul tabindex="0" role="toolbox">
           <h5>TOOLBOX</h5>
           <li>Pandas</li>
           <li>Numpy</li>
@@ -335,7 +348,7 @@
       </div>
 
       <div>
-        <ul>
+        <ul tabindex="0" role="general skills">
           <h5>MORE</h5>
           <li>Project Lead</li>
           <li>Strategy</li>
@@ -345,6 +358,7 @@
           <li>Drug development</li>
           <li>Pharma company co-founder</li>
           <li>Medicine</li>
+          <li>Epidemiology</li>
           <li>Oncology</li>
           <li>Analytical Chemistry</li>
           <li>Toxicology</li>
@@ -353,7 +367,7 @@
       </div>
 
       <div>
-        <ul>
+        <ul tabindex="0" role="upcoming skills">
           <h5>UPCOMING</h5>
           <li>React</li>
           <li>Redux</li>
@@ -365,33 +379,35 @@
 
   <!-- FOR MORE -->
   <section class="for-more">
-    <h3 class="outline-title">
+    <h3 class="outline-title" tabindex="0" role="more information">
       <span>FOR MORE</span>
     </h3>
 
     <div class="logos-more">
       <a href="https://www.linkedin.com/in/vladimir-bykov-04912165/">
         <img class="linkedin" src="./images/linkedin.png" alt="linkedin logo"/>
+        <h6>LINKEDIN</h6>
       </a>
       <a href="https://github.com/vladjnbykov">
         <img class="github" src="./images/github.png" alt="github logo"/>
+        <h6>GITHUB</h6>
       </a>
       <a href="https://stackoverflow.com/c/technigo/users/162/?tab=profile">
         <img class="stack" src="./images/stackoverflow1.png" alt="stackoverflow logo"/>
+        <h6>STACKOVERFLOW</h6>
       </a>
-
     </div>
-
-
   </section>
 
 <!-- FOOTER -->
   <footer>
-    <div class="contact">
+    <div class="contact" tabindex="0" role="contact information">
       <h5 class="cont">CONTACT</h5>
       <h6>Vladimir Bykov</h6>
       <h6>Phone: +46739873000</h6>
-      <h6>vlad.jnbykov@gmail.com</h6>
+      <a href="mailto: vlad.jnbykov@gmail.com">
+        <h6>vlad.jnbykov@gmail.com</h6>
+      </a>
     </div>
   </footer>
     
