@@ -27,7 +27,7 @@ header {
   height: 202px;
   left: 24px;
   top:121px;
-  color: rgb(250, 253, 251);
+  color: #fafdfb;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -54,10 +54,11 @@ header {
   background-color: #0000ff;
 }
 
-.about-me {  
-  
-  width: 327px;
-  height: 232px;
+.about-me { 
+  display: flex;  
+  width: 330px;
+  height: auto;
+
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -96,7 +97,8 @@ header {
   display: flex; 
   flex-direction: column;
   align-items: center;
-  width: 327px;  
+  width: 330px; 
+  height: auto; 
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -105,25 +107,36 @@ header {
   color: #000;
 }
 
+.article-with-img-container,
 .projects { 
   display: flex;
   flex-direction: column; 
   align-items: center;
-  width: 375px;   
+  width: 330px;   
   background: #F4F4F4;
-} 
+}
+
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+}
 
 .project-card-1,
 .project-card-2 {  
-  width: 327px;
-  height: 341px;
+  width: 330px;
+  height: auto;
   margin-bottom: 24px;
 }
 
 .project-img {  
   opacity: 0.3;  
-  width: 327px;
+  width: 330px;
   height: 212px;
+}
+
+.project-img:hover {
+  opacity: 1;
 }
 
 .project-text,   
@@ -132,7 +145,7 @@ header {
   flex-direction: column;
   width: fit-content;
   height: fit-content;
-  font-family: Roboto;
+  font-family: 'Roboto',sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -152,8 +165,8 @@ header {
 }
 
 .project-techniques {
-  width: 34px;
-  height: 21px;
+  width: 35px;
+  height: 22px;
   font-size: 9px;  
   line-height: 11px;
   font-family: 'Roboto', sans-serif;
@@ -165,13 +178,14 @@ header {
 width: 330px;
 display: flex;
 flex-direction: column;
+font-family: 'Roboto', sans-serif;
 }
 
 .my-thoughts-about-code {
   display: flex;  
   flex-direction: column; 
   align-items: center;
-  width: 375px;   
+  width: 330px;   
   background: #F4F4F4;
 }
 .my-thoughts-img {  
@@ -193,7 +207,8 @@ flex-direction: column;
 
 .grid-item {
   display: flex;
-  flex-direction: column;   
+  flex-direction: column; 
+  align-items: center;  
 } 
 
 .footer {
@@ -234,13 +249,40 @@ li {
   margin-bottom: 24px;
 }
 
-.social-media-icon {
-  position: relative;
+.social-media-icon {  
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+@media (min-width: 768px)
+{
 
+  .profile-pic-container {
+    left: 75%;
+  }
 
+  .projects,  
+  .my-thoughts-about-code,
+  .tech { 
+  width: 700px;
+  }
 
+.article-with-img-container,
+.featured-projects,
+.about-me {
+  width: 700px;
+  flex-flow: row ;
+  justify-content: space-evenly;
+}
+
+.article-with-img,
+.project-card-1,
+.project-card-2 {
+  width: 330px;
+}
+
+.skills {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
