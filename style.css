@@ -7,24 +7,26 @@ body {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    
+    overflow-x: hidden;
 }
 
 .header-elements {
     height: 70vh;
+    
 }
 
 .hero-image {
     height: 70vh;
     width: 100vw;
     object-fit: cover;
+    position: relative;
     color: white;   
 }
 
 .social-media-icons-header {
     position: absolute;
     top: 48px ;  
-    right: 25px;   
+    right: 24px;   
 }
 .social-media-icons-header a {
     text-decoration: none;
@@ -65,9 +67,13 @@ h2 {
     width: 180px;
     height: 180px;
     right: 24px;
-    bottom: 150px;  
+    bottom: 200px;  
     
     
+}
+
+.main {
+    width: 100vw;
 }
 
 .intro-section {
@@ -148,7 +154,7 @@ align-content: center;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
+    
 
 }
 
@@ -346,22 +352,82 @@ ul {
     padding: 20px;
 }
 
+/*MEDIA QUERIES TABLET*/
+@media (min-width: 768px) {
+  
+    .header-elements {
+        height: 60vh;
+    }
+    
+    .hero-image {
+        height: 60vh;
+        width: 100vw;
+    }
+
+    .social-media-icons-header {
+        top: 82px ;  
+        right: 80px;   
+    }
+    .social-media-icons img {
+        width: 80px;
+        height: 80px;   
+        margin: 5px;
+    }
+
+    .header-name {
+        top: 170px;
+        font-size: 20px;
+        left: 100px;
+    }
+    .header-job-title {
+        top: 230px;
+        left: 100px;
+        font-size: 40px;   
+    }
+    .my-photo {
+        width: 250px;
+        height: 250px;
+        right: 80px;
+        bottom: 380px;
+    } 
+    .project-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+       
+    }
+        
+    .project-card {
+        
+        margin: 40px;
+        margin-bottom: 50px;
+    }
+
+    .project-container a {
+        width: 50%;
+    }
+}
 /*MEDIA QUERIES DESKTOP*/
 @media (min-width: 1024px) {
     body {
         font-size: 25px;
+        
     }
   
     .header-elements {
         height: 80vh;
+
     }
     
     .hero-image {
         height: 80vh;
+
     }
     .social-media-icons-header {
         top: 82px ;  
-        right: 160px;   
+        right: 100px;   
     }
     .social-media-icons img {
         width: 80px;
@@ -370,18 +436,18 @@ ul {
 
     .header-name {
         font-size: 28px;
-        left: 110px;
+        left: 100px;
     }
     .header-job-title {
-        top: 180px;
-        left: 110px;
+        top: 240px;
+        left: 100px;
         font-size: 60px;   
     }
     .my-photo {
         
         width: 333px;
         height: 333px;
-        right: 110px;
+        right: 100px;
         bottom: 90px;
         position: absolute;
         z-index: 5;
@@ -434,12 +500,24 @@ ul {
         
     .project-card {
         width: 50%;
-        margin: auto;
+        margin: 0 auto;
         margin-bottom: 50px;
+        margin-top: 50px;
     }
 
     .project-container a {
         width: 50%;
+    }
+
+    .project-card img {
+        height: 300px;
+    }
+
+    .my-thoughts-section {
+        margin: 0px 80px;
+    }
+    .more-thoughts-section {
+        margin: 0px 80px;
     }
 
     .skill-list {
@@ -455,3 +533,4 @@ ul {
         margin: 10px; 
     }
 }
+
