@@ -28,7 +28,7 @@ a{
     font-size:17px;
 }
 
-/*******HEAD-LINES FOR THE DIFFERENT TWO DIFFERENT HEADERS******/
+/*******HEAD-LINES FOR THE TWO DIFFERENT HEADERS******/
 .highlighted-headline{
     Font-family:  'Montserrat', sans-serif;
     Font-size: 22px;
@@ -60,13 +60,11 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: solid 2px blue; */
 }
 
 .standard-projects-container{
     display: grid; 
     grid-template-columns: 1fr; 
-    /* border: pink solid 2px; */
     justify-items: center;
 }
 
@@ -74,7 +72,6 @@ a{
     display: flex;
     flex-direction: column;
     font-family: roboto;
-    /* border: red 2px solid; */
 }
 
 .other-projects-container-standard{
@@ -86,10 +83,8 @@ a{
 
 /*******GENERAL PROJECT CARD ELEMENTS******/
 .project-card{
-    /* border: solid 2px; */
     width: 300px;
     margin-bottom: 40px;
-
 }
 
 .project-card-title{
@@ -121,7 +116,7 @@ a{
 }
 
 /******************************************
-FROM TOP -BOTTOM OF WEB PAGE. CODE BEGINS HERE
+FROM TOP  OF WEB PAGE NOT GENERAL  CODE BEGINS HERE
 *******************************************/
 
 /*****TOP SECTION*****/
@@ -129,7 +124,7 @@ header{
     position: relative; 
     height: 500px;
     margin: 0;
-    background-image: url(./assets/background.png);
+    background-image: url(./assets/grafic.png);
     background-size: cover;
 }
 
@@ -241,6 +236,38 @@ background-color: #f8f1f1;
 }
 /*****FEATURED PROJECTS*****/
 
+.container-overlay{
+    position: relative;
+    width: 100%;
+    height: 212px;
+}
+
+.container-overlay:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.image-text-overlay{
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 212px;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+
+.image-text-overlay:hover {
+    opacity: 0;
+  }
+
+.text-overlay{
+    color: #ffff;
+}
+
 .tech-attributes{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -345,7 +372,7 @@ footer{
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #9ED0C9;
+    background-color: #FFBD59;
     width: 100%;
     color: #ffff;
 }
@@ -365,9 +392,19 @@ footer p{
         }
 
         .project-card{
-            width: 4git 00px;
+            width: 400px;
         }
 
+        .picture{
+            height: 300px;
+        }
+        .image-text-overlay
+        {
+        height: 300px;
+        }
+        .container-overlay{
+            height: 300px;
+        }
         .another-project-card{
             width: 600px;
         }
@@ -390,7 +427,18 @@ footer p{
         .standard-projects-container{
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
-            }
+        }
+        .picture{
+            height: 300px;
+        }
+
+        .image-text-overlay
+        {
+        height: 300px;
+        }
+        .container-overlay{
+            height: 300px;
+        }
 
         .project-card{
             width: 400px;
@@ -398,6 +446,7 @@ footer p{
         .another-project-card{
             width: 600px;
         }
+
         .job-title{
         font-size: 37px;
         }
