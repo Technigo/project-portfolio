@@ -263,7 +263,6 @@ p {
 }
 
 .projects-image__text p,
-.link-text p,
 .projects-image__techniques {
     color: black;
     margin-top: 20px;
@@ -280,6 +279,7 @@ p {
 }
 
 .link-text {
+    font-size: 17px;
     grid-column: 2/span 2;
     width: 100%;
     display: flex;
@@ -287,18 +287,13 @@ p {
     color: var(--main-color);
 }
 
-.link-text__description {
-    display: flex;
-}
-
-.link-text p:nth-of-type(2n) {
-    color: var(--main-color);
-}
-
 .link-text p {
-    margin-right: 10px;
-    align-self: center;
-    line-height: 30px;
+    color: black;
+}
+
+.link-text p::after{
+    content:"\00a0 >>";
+    color: var(--main-color);
 }
 
 .thoughts {
@@ -322,9 +317,9 @@ p {
 .thoughts-image__date {
     font-size: 17px;
     line-height: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--main-color);
-    margin: 20px 10px 0 0;
+    margin-right: 10px;
 }
 
 .thoughts-container h2 {
@@ -350,6 +345,7 @@ p {
 
 .thoughts .link-text {
     flex-direction: row;
+    align-items: center;
 }
 
 .skills {
@@ -574,6 +570,14 @@ dd {
     .projects-image__techniques p {
         line-height: 11px;
         font-size:  18px;
+    }
+
+    .link-text {
+        flex-direction: row;
+    }
+
+    .link-text p {
+        margin: 0 10px;
     }
 
     .thoughts {
