@@ -3,24 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 /* Roboto Medium 500 as a default fallback? font-family: 'Roboto', sans-serif; */
 
-* { /*Shows boxes for everything for easier placement */
+* { 
   border: 1px solid white;
 }
 
-/*Remove the margin in all browsers.*/
 body {
   margin: 0;
   background: #222831;
-/* background: #393E46; */
   font-family: 'Montserrat', sans-serif; /* Change this locally to sections later? or keep if most is using Montserrat */
 }
 
-.header-mobile {
+.header {
   background-image: url("./assets/img/caroline\ bystrom-min-crop.jpg");
   filter: brightness(90%);
-/* background:#222831; */
+/* background:#222831; as default color contrast in the case image is not rendered in a browser */
   width: 100%;
-  height: 60vh; /*should be changed with mobile view first thinking*/
+  height: 50vh; /*should be changed with mobile view first thinking*/
   object-fit: cover;  /*does this do anything on a background image?*/
   color: #f5b825;  
   letter-spacing: 2px; 
@@ -69,7 +67,7 @@ body {
 */
 
 
-.header-mobile .icons {
+.header .icons {
   margin-top: 40px;
   margin-right: 25px; 
   display: flex; 
@@ -125,7 +123,6 @@ body {
   flex-direction: column;
 }
 
-
 .header-tech {
   display: inline-flex;
   background-color: #393E46; 
@@ -143,7 +140,7 @@ body {
 
 .skill {
   background-color: #393E46; 
-  color: #FFD369;
+  color: whitesmoke;
 }
 
 .featured-projects {
@@ -192,10 +189,10 @@ p { /*this one creates a lot of problem*/
 .header-three {
   position: absolute;
   text-align: center;
-  top: 25%;
+  top: 20%;
   left: 25%;
   right: 25%;
-  color: #d63629;
+  color: #f5b825; /* #d63629; */
   font-size: 30px;
   font-weight: 900; 
   font-family: 'Roboto', 'sans-serif';
@@ -210,6 +207,12 @@ p { /*this one creates a lot of problem*/
   justify-content: center;
 }
 
+.header-two-marked {
+  color: #FFD369;
+  background-color: #393E46;
+  margin: 20px auto;
+}
+
 .header-four {
   display: inline-flex;
   color: #FFD369; 
@@ -220,7 +223,7 @@ p { /*this one creates a lot of problem*/
 }
 
 .project-techniques {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .technique {
@@ -231,8 +234,23 @@ p { /*this one creates a lot of problem*/
 .other-projects {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  flex-direction: column;
+  padding: 30px 0 30px 0;
+}
+
+.other-projects p {
+  color: whitesmoke;
+}
+
+.project-title {
+  color: #FFD369;
+  font-weight: 600;
+}
+
+.technologies {
+  display: none;
 }
 
 .other-projects-header {
@@ -248,11 +266,18 @@ p { /*this one creates a lot of problem*/
   flex-direction: column;
 }
 
+.more-thoughts {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 30px 0 30px 0;
+}
+
 .technical-skills {
   width: 100%; 
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: row; 
   flex-wrap: wrap; 
 }
@@ -270,17 +295,21 @@ p { /*this one creates a lot of problem*/
 .technical-skills-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; EVT BEHÅLL - kolla i olika devices*/
+  text-align: center;
+  padding: 25px;
 }
+
 .code-header {
-  font-weight: 700;
+  text-align: center;
   font-size: 18px;
+  color: #e5493c;
 }
 
 .skills-and-toolbox {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .red-bold {
@@ -309,7 +338,6 @@ p { /*this one creates a lot of problem*/
   margin: 20px 30px;
 }
 
-/* footer mobile too? or not */
 .footer {
   width: 100%;
   height: 50vh;
@@ -323,7 +351,7 @@ p { /*this one creates a lot of problem*/
   flex-direction: column;
   background-image: url("./assets/img/footer.jpg");
   filter: brightness(90%);
-/* background:#222831; */
+/* background:#222831; as default contrast color when image is not rendered */
 }
 
 .contact-information {
@@ -347,12 +375,26 @@ a:hover, .footer {
     width: 700px;
     }
 
-  .header-mobile { /*change to header */
+  .header { 
     width: 700px; 
   }
 
   .footer {
     width: 700px;
+  }
+
+  .heading {
+    top: 35%; 
+    left: 15%;
+    line-height: 400%;
+  }
+
+  .profession {
+    font-size: 45px;
+  }
+
+  .bold-position {
+    font-size: 20px;
   }
 
   .featured-projects {
@@ -388,22 +430,30 @@ a:hover, .footer {
   }
 
   .chatbot, .business-site, .weather-app, .guess-who-game {
-    max-width: 300px; 
     height: 300px;
-    margin: 10px 0 0 10px; /*change to 5px later ? */
+    margin: 10px 0 0 10px; /*change to 5px later ? Ska jag behålla denna? */
     filter: brightness(30%);
   }
-  /* kan tas bort senare när jag fått allt på plats 
-  .weather-app, .chatbot, .guess-who-game, .business-site {
-    width: 100%;
-}
-*/
+
   .skill {
     margin: 20px; 
   }
 
   .red {
     color: #e5493c;
+  }
+  
+  .technologies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .technologies .yellow {
+    color: black;
+    background: #FFD369;
+    margin-right: 10px; 
+    margin-left: 10px; 
   }
 }
 
@@ -412,8 +462,12 @@ a:hover, .footer {
     width: 992px;
     }
 
-  .header-mobile { /*change to desktop later*/
+  .header { 
     width: 992px; 
+  }
+
+  .footer {
+    width: 992px;
   }
 
   .featured-projects {
@@ -440,8 +494,7 @@ a:hover, .footer {
 
 .chatbot, .business-site, .weather-app, .guess-who-game {
   max-width: 300px; 
-  height: 300px;
-  margin: 10px 0 0 10px; /*change to 5px later ? */
+  /* padding: 10px; change to 5px later ? */
 }
 
 @media (min-width: 1200px) {
@@ -449,14 +502,11 @@ a:hover, .footer {
     width: 1200px;
     }
 
-  .header-mobile { /*change to desktop later*/
+  .header { 
     width: 1200px; 
   }
 
   .chatbot, .business-site, .weather-app, .guess-who-game {
-    max-width: 300px; 
-    height: 300px;
-    margin: 10px 0 0 10px; /*change to 5px later ? */
   }
 
   .footer {
