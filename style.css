@@ -78,8 +78,9 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #ffffff;
-    font-size: 24px;
-    line-height: 49px;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 0 0 5px;
 }
 
 .header-text-name {
@@ -376,7 +377,11 @@ ul {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 0 0 5px;
+}
 
+/* HIDING ELEMENTS IN MOBILE VIEW */
+.hide {
+    display: none;
 }
 
 
@@ -384,6 +389,11 @@ ul {
 /* TABLET VIEW */
 
 @media (min-width: 768px) {
+    
+    /* SHOWING ELEMENTS IN TABLET VIEW AND LARGER SCREEN */
+    .hide {
+        display: block;
+    }
 
     .portfolio-section {
         padding: 40px 100px;  
@@ -471,6 +481,7 @@ ul {
     .profile-picture {
         width: 220px;
         height: 220px;
+        margin-top: -20px;
     }
     
 /* LANGUAGE CARDS */
@@ -495,6 +506,10 @@ ul {
 
     .intro-section {
         padding-top: 70px;
+    }
+
+    .profile-picture {
+        margin-top: -40px;
     }
 
     
@@ -612,6 +627,11 @@ ul {
     .portfolio-section {
         padding: 70px 550px 60px;  
     }  
+
+    .profile-picture {
+        margin-top: -90x;
+        margin-bottom: -40px;
+    }
 }
 
 
