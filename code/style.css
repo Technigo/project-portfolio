@@ -47,6 +47,10 @@ p {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 100%;
     height: 100%;
@@ -118,6 +122,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-icons__container:hover {
+    background-color: white;
+}
+
+.header-icons__container:hover img{
+    filter: invert(41%) sepia(78%) saturate(3600%) hue-rotate(166deg) brightness(95%) contrast(97%);
 }
 
 .header-icons__container img {
@@ -209,6 +221,10 @@ p {
     justify-self: center;
 }
 
+.tech-text__emp {
+    color: var(--main-color);
+}
+
 .projects {
     padding-bottom: 50px;
     display: grid;
@@ -240,6 +256,20 @@ p {
     height: 220px;
     overflow: hidden;
     background-color: black;
+    transition: background-color .5s;
+}
+
+.projects-image:hover
+{
+    background-color: var(--main-color);
+}
+
+.projects-image:hover h3 {
+    font-size: 2em;
+}
+
+.projects-image:hover img {
+    opacity: 0;
 }
 
 .projects-image img {
@@ -260,6 +290,7 @@ p {
     width: 100%;
     justify-content: center;
     align-items: center;
+    transition: font-size .5s;
 }
 
 .projects-image__title {
@@ -293,15 +324,26 @@ p {
 
 .link-text {
     grid-column: 2/span 2;
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .link-text p::after,
 .thoughts .link-text h4::after {
     content: "\00a0 >>";
     color: var(--main-color);
+}
+
+.link-text:hover,
+.link-text:hover p,
+.link-text:hover h4,
+.link-text:hover p::after,
+.link-text:hover h4::after,
+.link-text:hover .thoughts-image__date {
+    background-color: var(--main-color);
+    color: white;
 }
 
 .thoughts {
@@ -363,6 +405,7 @@ p {
     background-color: var(--bg-color);
     display: grid;
     grid-template-columns: 25px 1fr 1fr 25px;
+    padding-bottom: 40px;
 }
 
 .skills-col {
@@ -407,6 +450,16 @@ dd {
     margin-top: 40px;
 }
 
+.social-icon:hover .social-icon__img {
+    background-color: var(--main-color);
+}
+
+.social-icon:hover .social-icon__img img {
+    filter:invert(100%) sepia(100%) saturate(2%) hue-rotate(281deg) brightness(105%) contrast(101%);
+    height: 60%;
+    width: 60%;
+}
+
 .social-icon p {
     color: var(--main-color);
     font-size: 11px;
@@ -436,6 +489,8 @@ dd {
     width: 50%;
     object-fit: contain;
     filter: invert(41%) sepia(78%) saturate(3600%) hue-rotate(166deg) brightness(95%) contrast(97%);
+    transition: width .5s;
+    transition: height .5s;
 }
 
 .footer {
@@ -466,6 +521,12 @@ dd {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+}
+
+.contact-info__email {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (min-width: 700px) {
@@ -786,6 +847,7 @@ dd {
     }
 
     .header-portrait {
+        top: 350px;
         height: 333px;
         width: 333px;
     }
