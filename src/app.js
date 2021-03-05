@@ -71,7 +71,7 @@ const drawOtherBlogs = () => {
                 <h2 class="blog-title">
                 <a href="${blog.link}" target="_blank" id="blog${i}">${blog.title}</a>
                 </h2>
-                <p>${blog.description}<span class="primary primary--bold"> >></span></p>
+                <span class="primary primary--bold"> >></span>
             </div>
         </li>
     `;
@@ -90,7 +90,7 @@ const drawOtherProjects = () => {
                 <a href="${project.link}" target="_blank" id="project${i}" class="primary">${project.title}</a>
                 </h2>
                 <p>
-                ${project.titleDescription}
+                ${project.projectDescription}
                 <span class="primary primary--bold"> >></span>
                 </p>
             </div>
