@@ -1,82 +1,45 @@
-/* body {
+body {
+  margin: 0;
+}
+
+/* HEADER */
+
+.hero {
   display: flex;
   flex-direction: column;
-} */
-
-/* Header section */
-
-.hero-image {
-  position: absolute;
-  width: 1920px;
-  height: 681px;
-  left: -16px;
-  top: 0px;
-  object-fit: cover;
+  align-items: center;
+  background-image: url(./assets/header-image-1.png);
+  background-color: #000;
+  height: 668px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.linkedin-circle {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  left: 1250px;
-  top: 102px;
+.social-media-icons {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 130px;
+  margin-top: 102px;
+  margin-right: 304px;
 }
 
-.linkedin-icon {
-  position: absolute;
-  width: 32px;
-  height: 31px;
-  left: 1276px;
-  top: 125px;
+a {
+  margin-left: 15px;
 }
 
-.github-circle {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  left: 1340px;
-  top: 102px;
-}
-
-.github-icon {
-  position: absolute;
-  width: 36px;
-  height: 38px;
-  left: 1362px;
-  top: 122px;
-}
-
-.sof-circle {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  left: 1430px;
-  top: 102px;
-}
-
-.sof-icon {
-  position: absolute;
-  width: 39px;
-  height: 39px;
-  left: 1450px;
-  top: 122px;
-}
-
-.hero-text {
-  position: absolute;
+.hero-titles {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 410px;
   width: 607px;
-  height: 339px;
-  left: 410px;
-  top: 206px;
   color: #fff;
 }
 
-.top-text {
-  display: flex;
+h1.portfolio-title {
   font-family: "Roboto", sans-serif;
-}
-
-h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -84,7 +47,8 @@ h1 {
   letter-spacing: 0.04em;
 }
 
-h2 {
+.name {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -93,7 +57,7 @@ h2 {
   margin-left: 5px;
 }
 
-h3 {
+h1.frontend {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -102,7 +66,7 @@ h3 {
   margin: 0;
 }
 
-h4 {
+h1.graphic-designer {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -113,56 +77,59 @@ h4 {
 
 .profile-image {
   position: absolute;
-  left: 1177px;
   top: 378px;
-  z-index: 1;
+  right: 410px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .profile-image img {
-  border-radius: 180%;
+  border-radius: 50%;
   width: 333px;
   height: 333px;
   border: solid 4px #fff;
 }
 
 .intro-section {
-  position: absolute;
-  width: 1920px;
   height: 432px;
-  left: 0px;
-  top: 668px;
   background: #F4F4F4;
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; 
+} 
 
 .intro-content {
   display: flex;
   flex-direction: row;
   margin-top: 123px;
-}
+  margin-bottom: 109px;
+} 
 
 .start-figure {
-width: 98px;
-height: 20px;
+  width: 98px;
+  height: 20px;
+  margin-right: 15px;
 }
 
 p {
   width: 1100px;
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
+  font-style: 400;
   font-weight: normal;
   font-size: 30px;
   line-height: 50px;
 }
 
-/* Main */
+/* MAIN */
+
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-h5 {
+h2 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -175,17 +142,136 @@ h5 {
 }
 
 .tech {
-  /* display: flex;
-  flex-direction: column; */
-  margin-top: 1150px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-top: 120px;
+  padding-bottom: 100px;
 }
 
 .tech-title {
   width: 170px;
   height: 64px;
+  margin-bottom: 80px;
 }
 
 .tech p {
   text-align: center;
-  margin-top: 80px;
+}
+
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F4F4F4;
+  padding-top: 121px;
+  padding-bottom: 100px;
+}
+
+.featured-title {
+  width: 574px;
+  height: 64px;
+  padding-bottom: 100px;
+}
+
+.top-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+}
+
+.featured-card {
+  width: 523px;
+  height: 701px;
+}
+
+.featured-card:hover {
+  box-shadow: 1px 1px 1px #b3b3b3;
+}
+
+.featured-card img {
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.on-top-on {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: #FA382F;
+}
+
+.featured-card p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+}
+
+.used-code {
+  display: flex;
+}
+
+.used-code p {
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+}
+
+.html-background {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #FDDFE7;
+  width: 89px;
+  height: 29px;
+  margin-right: 8px;
+}
+
+.css-background {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #FDDFE7;
+  width: 77px;
+  height: 29px;
+  margin-right: 8px;
+}
+
+.js-background {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #FDDFE7;
+  width: 144px;
+  height: 29px;
 }
