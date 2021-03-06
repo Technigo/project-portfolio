@@ -3,19 +3,26 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Montserrat', 'sans-serif';
     background-color: white;
     color:#222830;
+    margin: 0;
+}
+
+p {
+    margin: 0;
 }
 
 /*header*/
 
-header {
+.hero {
     background-image: url("./assets/Simple\ Technology\ LinkedIn\ Banner\ \(6\).png");
     background-size: cover;
-    height: 700px;
-    width: 100%;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
     color: white;
 }
 
@@ -27,7 +34,7 @@ header {
 .name-header {
     font-family: 'Roboto', sans-serif;
     left: 0;
-    font-size: 25px;
+    font-size: 10px;
     font-weight: lighter;
     align-self: flex-start;
     margin-left: 6%;
@@ -36,52 +43,78 @@ header {
 .estefania-name-header {
     font-family: 'Roboto', sans-serif;
     left: 0;
-    top: 135px;
-    font-size:25px;
+    top: 10px;
+    font-size:15px;
     font-weight: lighter;
     position: relative;
 }
 
-.header-job-title {
+.header-title {
     left: 0;
-    top: 200px;
-    font-size: 35px;
+    top: 10px;
+    font-size: 15px;
     font-weight: 700;
     position: relative;
-    margin-left: 6%;
+    margin-left: 2%;
+    margin-top: 5px;
 }
 
-.header-job-title h2 {
-    margin-top: 0;
-    margin-bottom: 0;
+.title p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
 }
 
-.header-job-title h3 {
-    margin-top: 14px;
+.title-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
 }
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0;
+    max-width: 400px;
+}
+
+.inside-h1 {
+    display: block;  
+    font-size: 24px;
+    line-height: 40px;
+}
+
+
 
 .social-media-icons-header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    align-self: flex-end;
     padding-top: 16px;
     margin-right: 6%;
 }
 
 .social-media-icons-header img {
-    margin: 5px;   
+    margin: 5px; 
+    width: 36px;
+    height: 36px; 
 }
 
 
 .my-pic {
-    width: 333px;
-    right: 10px;
-    top: 70px;
+    width: 180px;
+    height: 180px;
+    top: 12px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 2px solid white;
     align-self: flex-end; 
     position: relative;
-    margin-right: 6%;
 }
 
 .social-media-icons-header {
@@ -130,19 +163,29 @@ section {
     margin-right: 10px;
 }
 
+/*headings*/
+
+h2 {
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    background-color: #F4036F;
+    color: white;
+    padding: 0 8px;
+    margin: 0 0 32px;
+}
+
+h3 {
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    color: #F4036F;
+    margin: 40px 0;
+}
 .tech-section {
     margin-top: 7%;
 }
 
-.tech-title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #F4036F;
-    color: white;
-    line-height: 29px;
-    
-}
 
 /*projects*/
 
@@ -253,8 +296,92 @@ a {
     color: black;
     text-decoration: none;
 }
+
+.more-thoughts {
+    margin: 8px, 0;
+}
+
+.more-thoughts .date {
+    display: inline;
+    text-decoration-line: underline;
+}
+
+.more-thoughts h5 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 29px;
+    text-decoration-line: underline;
+    display: inline;
+}
+
+.more-thoughts .read-more {
+    text-decoration-line: underline;
+}
+
+/*skills*/ 
+
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.list-with-header {
+    text-align: center;
+    width: 120px;   
+}
+
+.list-with-header:nth-of-type(3) {
+    display: none;
+}
+
+ul {
+    font-size: 17px;
+    line-height: 29px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons-bottom-circle {
+    width: 60px;
+    height: 60px;
+    border: 2px solid  #F4036F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+}
+
+.icons-bottom img {
+    width: 22px;
+    height: 22px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95px;
+}
+
+.icon p {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color:  #F4036F;
+}
+
 .footer {
     background-color: #F7D9D9;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    color: white;
+    text-align: center;
+    padding: 60px 24px 84px;
 }
