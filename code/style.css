@@ -11,14 +11,15 @@ body, html {
   background: var(--primary);
   margin: 0;
   height: 100%;
+  font-size: 16px;
 }
 
 h1 {
-  margin: 0%;
+  margin: 0;
 }
 
 p {
-  margin: 0%;
+  margin: 0;
 }
 
 
@@ -31,8 +32,8 @@ p {
 .sub-headings-container h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
+  font-size: 1.375rem; /* 22px */
+  line-height: 1.6875rem; /* 27px */
   color: var(--primary);
   background: var(--secondary);
   display: inline;
@@ -47,9 +48,9 @@ p {
 
 .tag {
   font-family: 'Roboto', sans-serif;
-  font-size: 9px;
+  font-size: 0.5625rem; /*9px*/
   font-weight: 400;
-  line-height: 11px;
+  line-height: 0.6875rem; /*11px*/
   text-align: center;
   color: #000000;
   background: var(--fifth-opacity); 
@@ -82,18 +83,25 @@ p {
   color: var(--primary);
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .social-media-container {
   position: absolute;
-  left: 220px;
-  top: 48px;
-  text-align: center;
+  right: 20px; 
+  margin-top: 30px;
+  text-align: right;
 }
 
 .social-media-top {
   padding: 8px;
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 20px;
   text-align: center;
   text-decoration: none;
@@ -104,46 +112,54 @@ p {
 
 .headings-container {
   position: absolute;
-  top: 121px;
-  left: 24px;
+  left: 20px; 
+  margin-top: 80px;
 }
 
 .portfolio {
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem; 
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.125rem;
 }
 
 .portfolio-name {
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem; 
   font-weight: 700;
-  line-height: 18px;
+  line-height: 1.125rem; 
 }
 
 .frontend {
   display: block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem; 
   font-weight: 700;
-  line-height: 49px;
+  line-height: 3.0625rem; 
+}
+
+.developer {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem; 
+  font-weight: 700;
+  line-height: 3.0625rem; 
 }
 
 .lawyer {
   display: block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem; 
   font-weight: 700;
-  line-height: 40px;
+  line-height: 2.5rem;
 }
 
 .profile-pic-container {
-  width: 180px;
-  height: 180px;
+  width: 11.25rem; 
+  height: 11.25rem;
   position: absolute;
-  left: 171px; /**/
-  top: 356px;
+  right: 20px; 
+  top: calc(100% - calc(11.25rem / 6 * 5));
   overflow: hidden;
   border: solid 2px var(--primary);
   border-radius: 50%;
@@ -151,7 +167,7 @@ p {
 
 .profile-pic {
   display: inline;
-  margin-top: 0px;
+  margin-top: 0;
   margin-left: -20%; 
   margin-bottom: -10px;
   height: 100%;
@@ -159,24 +175,30 @@ p {
 }
 
 
+/*** MAIN ***/
+.main {
+  max-width: 75rem;  /*1200px - Check this one and see where to set the max-width*/
+}
+
+
 /*** INTRO SECTION ***/
 .intro-section {
   background: var(--third);
   width: auto;
-  padding: 40px 20px;
+  padding: 40px 40px;
 }
 
 .intro-section p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 17px;
+  font-size: 1.0625rem; 
   font-weight: 400;
-  line-height: 29px;
+  line-height: 1.8125rem; 
 }
 
 .line {
   display: inline-block;
-  width: 55px;
-  height: 2px;
+  width: 3.4375rem; 
+  height: 0.125rem; 
   background-color: var(--secondary);
   margin-bottom: 5px;
 }
@@ -184,8 +206,8 @@ p {
 .circle {
   display: inline-block;
   background-color: var(--secondary);
-  width: 12px;
-  height: 12px;
+  width: 0.75rem; 
+  height: 0.75rem;
   border-radius: 50%;
   margin-left: -10px; 
 } 
@@ -199,9 +221,9 @@ p {
 
 .tech-text p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 400;
-  line-height: 29px;
+  line-height: 1.8125rem;
   text-align: center;
 }
 
@@ -237,9 +259,9 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Montserrat', sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
-  line-height: 34px;
+  line-height: 2.125rem;
   text-align: center;
   text-decoration: none;
   color: var(--primary);
@@ -251,18 +273,18 @@ p {
 
 .short-title {
   font-family: 'Roboto', sans-serif;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 700;
-  line-height: 29px;
+  line-height: 1.8125rem;
   color: var(--secondary);
   padding-top: 20px;
 }
 
 .short-info {
   font-family: 'Roboto', sans-serif;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 400;
-  line-height: 29px;
+  line-height: 1.8125rem;
   color: #000000;
   padding-top: 10px;
 }
@@ -275,8 +297,8 @@ p {
 .other-projects h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 1.3125rem;
+  line-height: 1.5625rem;
   text-align: center;
   color: var(--secondary);
 }
@@ -322,27 +344,27 @@ p {
 
 .my-thoughts-date {
   font-family: 'Roboto', sans-serif;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 2rem;
   color: var(--secondary);
   padding-top: 20px;
 }
 
 .my-thoughts-title {
   font-family: 'Roboto', sans-serif;
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.875rem;
   color: #000000;
   margin: 0;
 }
 
 .my-thoughts-summary {
   font-family: 'Roboto', sans-serif;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.875rem;
   color: #000000;
 }
 
@@ -356,8 +378,8 @@ p {
 .more-thoughts h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 1.3125rem;
+  line-height: 1.5625rem;
   text-align: center;
   color: var(--secondary);
 }
@@ -365,8 +387,8 @@ p {
 .more-thoughts-link {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 29px;
+  font-size: 1.0625rem;
+  line-height: 1.8125rem;
   color: #000000;
   padding-top: 30px;
 }
@@ -406,8 +428,8 @@ p {
 .skills-stack h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 29px;
+  font-size: 1.0625rem;
+  line-height: 1.8125rem;
   color: var(--secondary);
   margin: 0;
 }
@@ -415,8 +437,8 @@ p {
 .skills-stack span {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 29px;
+  font-size: 1.0625rem;
+  line-height: 1.8125rem;
   color: #000000;
 }
 
@@ -442,8 +464,8 @@ p {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 11px;
-  line-height: 13px;
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
   color: var(--secondary);
 }
 
@@ -453,8 +475,8 @@ p {
 
 .social-media-bottom {
   padding: 15px;
-  font-size: 25px;
-  width: 25px;
+  font-size: 1.5625rem;
+  width: 1.5625rem;
   text-align: center;
   text-decoration: none;
   border: solid 1px var(--secondary);
@@ -472,8 +494,8 @@ p {
 .footer h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 21px;
-  line-height: 41px;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
   text-align: center;
   color: var(--primary);
   padding-bottom: 20px;
@@ -482,337 +504,8 @@ p {
 .footer p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 1.0625rem;
+  line-height: 1.5625rem;
   text-align: center;
   color: var(--primary);
 }
-
-
-/*** MEDIA QUERIES ***/
-
-/** TABLET **/
-@media (min-width: 768px) {
-  
-  /*** Sub headings ***/
-  .sub-headings-container {
-    padding-top: 70px;
-  }
-
-  .sub-headings-container h2 {
-    font-size: 33px;
-    line-height: 38px;
-    padding: 2px 10px;
-  }
-
-
-  /*** Project tags ***/
-  .project-tags {
-    margin-top: 14px;
-  }
-
-  .tag {
-    font-size: 12px;
-    padding: 8px 9px;
-    margin-right: 7px;
-  }
-
-
-  /** Header **/
-  .social-media-container {
-    left: 500px;
-    top: 50px;
-  }
-  
-  .social-media-top {
-    padding: 10px;
-    font-size: 32px;
-    width: 32px;
-    border: solid 2px var(--primary);
-    margin-right: 7px;
-  }
-  
-  .headings-container {
-    position: absolute;
-    top: 165px;
-    left: 48px;
-  }
-  
-  .portfolio {
-    font-size: 17px;
-  }
-  
-  .portfolio-name {
-    font-size: 17px;
-  }
-  
-  .frontend {
-    font-size: 50px;
-    line-height: 70px;
-  }
-  
-  .lawyer {
-    font-size: 34px;
-    line-height: 45px;
-  }
-  
-  .profile-pic-container {
-    width: 233px;
-    height: 233px;
-    left: 480px;
-    top: 455px;
-    border: solid 3px var(--primary);
-  }
-  
-
-  /*** Intro section ***/
-  .intro-section {
-    padding: 70px 50px;
-  }
-
-  .intro-section p {
-    font-size: 23px;
-    line-height: 40px;
-  }
-
-  .line {
-    width: 60px;
-    height: 3px;
-    margin-bottom: 6px;
-  }
-
-  .circle {
-    width: 15px;
-    height: 15px;
-  } 
-
-
-  /*** Tech section ***/
-  .tech-text {
-    padding: 90px 130px;
-  }
-
-  .tech-text p {
-    font-size: 23px;
-    line-height: 40px;
-  }
-
-
-  /*** Projects section ***/
-  .projects-section {
-
-  }
-
-  .project-card {
-    padding: 50px 90px 20px 90px;
-  }
-
-  .project-card-title {
-    top: 37%; 
-    font-size: 30px;
-  }
-
-  .project-card-short-info {
-
-  }
-
-  .short-title {
-    font-size: 23px;
-    line-height: 32px;
-    padding-top: 25px;
-  }
-
-  .short-info {
-    font-size: 23px;
-    line-height: 31px;
-    padding-top: 13px;
-  }
-
-  /** Other projects **/
-  .other-projects {
-    padding: 50px 90px 70px 90px;
-  }
-
-  .other-projects h3 {
-    font-size: 30px;
-    line-height: 30px;
-  }
-
-  .other-projects-short-info {
-
-  }
-
-
-  /*** My thoughts section ***/
-  .my-thoughts-card {
-    padding: 50px 90px 20px 90px;
-  }
-
-  .my-thoughts-card-info {
-
-  }
-
-  .my-thoughts-date {
-    font-size: 23px;
-    line-height: 39px;
-    padding-top: 30px;
-  }
-
-  .my-thoughts-title {
-    font-size: 26px;
-    line-height: 35px;
-  }
-
-  .my-thoughts-summary {
-    font-size: 23px;
-    line-height: 34px;
-  }
-
-  .more-thoughts {
-    padding: 50px 90px 20px 90px;
-  }
-
-  .more-thoughts h3 {
-    font-size: 30px;
-    line-height: 30px;
-  }
-
-  .more-thoughts-link {
-    font-size: 23px;
-    line-height: 34px;
-    padding-top: 35px;
-  }
-
-
-  /*** Skills section ***/
-  .skills-section {
-
-  }
-
-  .skills-container {
-    padding: 40px 0px 50px 0px;
-  }
-
-  .skills-stack {
-    padding: 25px 0px 15px 0px;
-    width: 50%;
-  }
-
-  .skills-stack h5 {
-    font-size: 23px;
-    line-height: 36px;
-  }
-
-  .skills-stack span {
-    font-size: 23px;
-    line-height: 33px;
-  }
-
-
-  /*** For more section ***/
-  .for-more-section {
-
-  }
-
-  .for-more-container {
-    padding: 35px 40px 45px 40px;
-  }
-
-  .for-more-social-media {
-    padding: 20px 0px 40px 0px;
-    font-size: 15px;
-    line-height: 15px;
-  }
-
-  .for-more-social-media span {
-    padding-top: 20px;
-  }
-
-  .social-media-bottom {
-    padding: 25px;
-    font-size: 40px;
-    width: 40px;
-    border: solid 2px var(--secondary);
-  }
-
-
-  /*** FOOTER ***/
-  .footer {
-    padding: 90px 0px;
-  }
-
-  .footer h2 {
-    font-size: 32px;
-    line-height: 45px;
-  }
-
-  .footer p {
-    font-size: 23px;
-    line-height: 30px;
-  }
-
-
-
-
-
-
-} 
-
-
-
-/** DESKTOP **/
- @media (min-width: 992px) { 
-  /*   
-  .headings-container {
-    position: absolute;
-    width: 607px;
-    height: 339px;
-    left: 410px;
-    top: 206px;
-    font: var(--fifth);
-  }
-
-  .profile-pic-container {
-    width: 333px;
-    height: 333px;
-    position: absolute;
-    left: 900px;
-    top: 378px;
-    overflow: hidden;
-    border: solid 4px var(--fifth);
-    border-radius: 50%;
-  }
-  
-  .profile-pic {
-    display: inline;
-    margin-top: 0px;
-    margin-left: -20%; 
-    margin-bottom: -10px;
-    height: 100%;
-    width: auto;
-  }
-
-
-
-
-  .line {
-    display: inline-block;
-    width: 70px;
-    height: 3px;
-    background-color: black;
-    margin-bottom: 8px;
-  }
-
-  .circle {
-    display: inline-block;
-    background-color: black;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-left: -10px; 
-  } 
-
-
-   */
-
- }
