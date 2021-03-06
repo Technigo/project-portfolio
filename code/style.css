@@ -69,7 +69,7 @@ body {
 
 .header .icons {
   margin-top: 40px;
-  margin-right: 25px; 
+  margin-right: 10%; 
   display: flex; 
   justify-content: flex-end; 
   padding: 5px;
@@ -94,14 +94,14 @@ body {
 /* Main container */
 
 .main-container {
-  width: 100%; 
-  right: 25px;
+  width: 80%;
+  padding-left: 10%;
   color: whitesmoke; 
   letter-spacing: 2px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between;same as above */
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*same as above */
 }
 
 .summary {
@@ -143,6 +143,7 @@ body {
 .skill {
   background-color: #393E46; 
   color: whitesmoke;
+  margin: 10px;
 }
 
 .featured-projects {
@@ -188,10 +189,13 @@ p { /*this one creates a lot of problem*/
   align-items: center;
 }
 
+.project-text { /*for p tags inside of the featured projects - else ta bort*/
+}
+
 .header-three {
   position: absolute;
   text-align: center;
-  top: 20%;
+  top: 17%;
   left: 25%;
   right: 25%;
   color: #f5b825; /* #d63629; */
@@ -199,7 +203,7 @@ p { /*this one creates a lot of problem*/
   font-weight: 900; 
   font-family: 'Roboto', 'sans-serif';
   letter-spacing: 2px;
-  line-height: 80%; 
+  line-height: 120%; 
 }
 
 .header-two { /*FIX THIS ONE it goes all the way out and does not behave as in inline element */
@@ -213,8 +217,6 @@ p { /*this one creates a lot of problem*/
   color: #FFD369;
   background-color: #393E46;
   margin: 20px auto;
-  /* display: inline-flex; */
-  /* justify-content: center; */
 }
 
 .header-two-desktop {
@@ -328,7 +330,7 @@ p { /*this one creates a lot of problem*/
 }
 
 .red-bold {
-  color: #e5493c;
+  color: #e5493c; /*change color to "red" if does not pass*/
   font-weight: bold;
 }
 
@@ -388,21 +390,10 @@ a:hover, .footer {
 /* IT IS HERE THAT THE PROBLEMS START */
 /* Media queries */
 @media (min-width: 700px) {
-  .main-container {
-    width: 700px;
-    }
-
-  .header { 
-    width: 700px; 
-  }
-
-  .footer {
-    width: 700px;
-  }
 
   .heading {
     top: 35%; 
-    left: 15%;
+    left: 10%;
     line-height: 400%;
   }
 
@@ -445,7 +436,9 @@ a:hover, .footer {
     width: 100%; /* Does not do much since I've set them to a default width? */
     display: flex;
     flex-direction: row;
-    text-align: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: center; /*dont do much?*/
 }
 
   .featured-projects-two {
@@ -453,27 +446,26 @@ a:hover, .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: center; /*dont do much*/
 }
 
   .project-container {
     position: relative;
     width: 45%;
   }
-/* check this later maybe is not needed */
+
   .chatbot, .business-site, .weather-app, .guess-who-game {
     height: 300px;
-    margin: 10px 0 0 10px; /*change to 5px later ? Ska jag behålla denna? */
-    filter: brightness(30%);
+    filter: brightness(50%);
   }
-
+  
   .skill {
     margin: 20px; 
   }
 
   .red {
-    color: #e5493c;
+    color: #cc1d0e;/*#e5493c;*/
   }
   
   .technologies {
@@ -497,17 +489,6 @@ a:hover, .footer {
 }
 
 @media (min-width: 992px) {
-  .main-container {
-    width: 992px;
-    }
-
-  .header { 
-    width: 992px; 
-  }
-
-  .footer {
-    width: 992px;
-  }
 
   .featured-projects {
     display: flex;
@@ -533,25 +514,11 @@ a:hover, .footer {
 
 .chatbot, .business-site, .weather-app, .guess-who-game {
   max-width: 300px; 
-  filter: brightness(30%);
+  filter: brightness(50%);
   /* padding: 10px; change to 5px later ? */
 }
 
 @media (min-width: 1200px) {
-  .main-container {
-    width: 1200px;
-    }
-
-  .header { 
-    width: 1200px; 
-  }
-
-  .chatbot, .business-site, .weather-app, .guess-who-game {
-  }
-
-  .footer {
-    width: 1200px;
-  }
 
 }
 
