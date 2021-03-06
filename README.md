@@ -15,4 +15,4 @@ Basically it's been surprisingly frustrating and I'm so eager to get better at i
 
 ## View it live
 
-https://portfolio-mvan.netlify.app 
+https://portfolio-mvan.netlify.app
