@@ -1,23 +1,75 @@
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Montserrat', sans-serif;
-*/ 
-
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   color: #000000;
   font-family: 'Montserrat', sans-serif;
   font-size: 17px;
 }
 
+.sr-only { /*BEHÖVER JAG DENNA?**/
+  display: none;
+}
+
+/*** GENERAL STYLING ***/
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+.main-background {
+  background-color: #F4F4F4;
+}
+
+.main__wrapper {
+  margin: 49px 24px 43px 24px;  
+  line-height: 29px;
+}
+
+.content-container { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.red {
+  color: #ff0000;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.header-box { 
+  background-color: #3C096C;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 27px;
+  padding: 2px; 
+  margin-top: 49px;
+}
+
+.text-box-transparent { /*TA UPP DEN*/
+  color: #3C096C;
+  font-size: 21px;
+  margin-top: 49px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 /*** HEADER ***/
 .header {
-  background-image: linear-gradient(rgba(32, 14, 50, 0.8),rgba(61, 32, 90, 0.6)),url("./images/desktop.jpeg");
+  background-image: linear-gradient(rgba(32, 14, 50, 0.8),rgba(61, 32, 90, 0.6)),url("./assets/desktop.jpeg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -91,32 +143,6 @@ body {
   border: 2px solid #FFFFFF;
 }
 
-/*** GENERAL ***/
-.main-wrapper { /*TA UPP DEN!!!!*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-  padding: 15px 0;
-}
-
-.main-background { /*TA UPP DEN!!!!*/
-  background-color: #F4F4F4;
-}
-
-.content-container {  /*Behövs den??!!!*//*TA UPP DEN!!!!*/
-  width: 327px;
-  line-height: 29px;
-  font-size: 17px; 
-}
-
-.header-box { /*TA UPP DEN!!!!*/
-  background-color: #3C096C;
-  color: #FFFFFF;
-  font-size: 22px;
-  line-height: 27px;
-  padding: 2px;  
-}
-
 /*** SUMMARY SECTION ***/
 .summary-line {
   display: inline-block;
@@ -141,72 +167,59 @@ body {
   letter-spacing: 0.5px;
 }
 
-/*** PROJECT SECTION ***/
-.card {
+/*** PROJECT ***/
+.project__wrapper { /*DÖMA OM DEN GENERELL OCH TA UPP DEN*/
+  margin: 0 24px;
+  height: auto; /*BEHÖVER JAG DENNA?**/
   font-family: 'Roboto', sans-serif;
-  height: 361px;
-  margin: 30px 0;
+  letter-spacing: 0.01em; 
+  line-height: 29px;
+  margin: 49px 24px 43px 24px; 
 }
 
-.card a, 
-.card-two a {
-  text-decoration: none;
-  color: #000000;
+.project__card {
+  margin-top: 41px;
 }
 
-.card__item { 
+.project__img-wrapper {
   position: relative;
-  height: 212px;
 }
 
-.card__image {
-  height: 100%;
+.project__img {
   width: 100%;
   filter: brightness(70%);
 }
 
-.card__overlay {
+.project__img-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   width: 100%;
-} 
+}
 
-.card__title {
-  font-family: 'Montserrat', sans-serif;
+.project__img-title {
   font-size: 28px;
-  font-weight: bold;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   letter-spacing: 0.01em;
 }
 
-.card__content {
-  height: 100px;
-  letter-spacing: 0.01em;
-}
-
-.card__header {
+.project__title {
   color: #3C096C;
   font-weight: 700;
-  margin: 25px 0 5px;
 }
 
-.card__content-two {
-  margin: 0;
-}
-
-.card__tech-info {
-  position: absolute;
-  height: 10px;
+.project__tag-wrapper {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
 }
 
-.card__tech-box {
+.project__tag-box {
   background-color: #FDDFE7;
   font-size: 9px;
   display: flex;
@@ -214,126 +227,98 @@ body {
   letter-spacing: 0.01em;
   margin-right: 6px;
   height: 21px;
-  padding: 6px;
+  padding: 6px; 
 }
 
- .text-box-transparent { /*TA UPP DEN*/
-   color: #3C096C;
-   font-size: 21px;
-   margin-top: 0;
- }
-
- .card__hidden {
-   display: none;
- }
-
- /*** OTHER PROJECT SECTION ***/
- .card-two {
-  font-family: 'Roboto', sans-serif;
-  margin: 30px 0 50px 0;
+.project__hidden {
+  display: none;
 }
 
-/***  MY TOUGHTS ***/
-.card__tought { /**BYT NAMN PÅ CLASS!**/
-  height: 556px;
-  margin-bottom: 10px;
+.project__content {
+  margin: 45px 0;
 }
 
-.card__toughts {
-  width: 320px;
-  height: 319px;
-  line-height: 32px;
-}
-
-.card__link-toughts {
-  color: #000000;
-  text-decoration: 1px solid red;
-  margin-right: -5px;
-}
-
-.card__date {
+.project__link {
+  text-decoration-line: underline;
   color: red;
-  margin-bottom: 0;
 }
 
-.card__tought-header {
-  font-size: 21px;
-  line-height: 30px;
-  margin: 0;
+.project__link-two {
+  text-decoration: none;
+  text-decoration-line: underline;
+  color: #000000;
 }
 
-.card__toughts-content {
-  margin: 0;
+
+/*** MORE TOUGHTS ***/
+.tought-container {
+  margin-top: 30px;
 }
 
-/** MORE TOUGHTS ***/
-.card-toughts-1 {
-  height: 200px;
-}
-
-.card__link-toughts-1 {
+.toughts { 
   display: flex;
-  height: 64px;
   line-height: 29px;
-  width: 327px; 
   margin: 10px 0;
 }
 
-.card__links {
+.toughts__link {
   text-decoration: none;
   text-decoration-line: underline;
   color: red;
 }
 
-.card__link-2 {
+.toughts__link-two {
   text-decoration: none;
   text-decoration-line: underline;
   font-weight: bold;
   color: #000000;
 }
+
 /*** SKILLS ***/
 .skills {
-  height: 474px;
   display: grid;
-  grid-template-columns:  1fr 1fr;
-  gap: 42px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 49px 24px 43px 24px; 
   font-family: 'Roboto', sans-serif;
-}
-
-.skills__container {
   text-align: center;
 }
 
-.skills__title {
-  color: red;
-  font-weight: bold;
+.skills__container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skills h3 {
+  font-size: 17px;
+}
+
+.skills__container ul, li {
+  list-style-type: none;
+  padding: 7px 0;
 }
 
 .skills__upcoming {
-  margin-top: 50px;
+  padding-top: 30px;
 }
 
 /*** FOR MORE ***/
-.icons {
-  height: 302px;
-}
-
-.icons__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 150px;
-}
-
 .icons a {
-  text-decoration: none;
   color: #3C096C;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   font-weight: bold;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.icons__wrapper {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ margin: 49px 24px 43px 24px; 
 }
 
 .icon__img {
@@ -344,6 +329,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.icons p {
+  padding: 10px;
 }
 
 /*** FOOTER ***/
@@ -365,11 +354,23 @@ body {
   margin: 0;
 }
 
-/*** MEDIA QUERIES ***/
+/*** MEDIA QUERIES ***/ 
 @media (min-width: 768px) {
+  .main__wrapper {
+    margin: 69px 44px 63px 44px;   
+  }
 
-  body {
-    font-size: 20px;
+  .project__wrapper {
+    width: 85%;  
+  }
+
+  .header-box { 
+    font-size: 25px;
+    line-height: 35px;
+  }  
+
+  .text-box-transparent { 
+    font-size: 24px;
   }
 
   .header__icons-wrapper {
@@ -406,160 +407,118 @@ body {
     top: 330px;
     right: 100px;
     width: 220px;
-    height: 220px;
   }
 
-  .main-wrapper {  
-    padding: 35px 0;
-  }
-
-  .content-container {
-    width: 90%;
-    line-height: 33px;
-    font-size: 20px;
-  }
-
-  .header-box { 
-    font-size: 25px;
-    padding: 4px;  
-  }
- 
-  .summary-circle {
-    margin-left: -8px;
-  }
-
-  .content-grid  {
+  .project__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 
-  .card {
-    height: 410px;
-  }
-
-  .card__tech-info {
-    height: 100px;
-  }
-
-  .card__hidden {
+  .project__hidden {
     display: block;
   }
 
-  .content-container-two {
-   width: 700px;
+  .project__content-wrapper {
+    margin-top: 20px;
   }
 
-  .card-two {
-    height: 100px;
+  .project__tag-wrapper {
+    margin-top: 5px;
   }
 
-  .card__tech-info-two {
-    height: 0;
-  }
-
-  .card__tought-one {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    height: 700px;
+  .project__content {
+    margin: 15px 0;
   }
 
   .skills {
-    grid-template-columns:  1fr 1fr 1fr;
-    gap: 42px;
+    grid-template-columns: 1fr 1fr 1fr; 
   }
-
-  .icons__wrapper {
-    gap: 15px;
-  }
-
-  .icon__img {
-    border: 2px solid #3C096C;
-    width: 90px;
-    height: 90px;
-  }
-
-  .card-toughts-1 {
-    height: 200px;
-  }
-
-  .card__link-toughts-1 {
-    width: 700px;
-  }
-
-  .svg {
-    height: 60px;
-    width: 60px;
-  }
- 
 }
 
 @media (min-width: 1200px) {
- 
+  body {
+    font-size: 22px;
+  }
+
+  .main__wrapper {
+    width: 70%;
+  }
+
+  .project__wrapper {
+    width: 70%;
+  }
+
+  .header-box { 
+    font-size: 35px;
+    line-height: 35px;
+  }  
+
+  .text-box-transparent { 
+    font-size: 30px;
+  }
+
   .header__icons-wrapper {
-    width: 260px;
-    top: 102px;
-    right: 410px;
+    width: 220px;
+    right: 170.5px;
   }
 
   .header__icon {
     width: 80px;
     height: 80px;
-    margin-right: 6px;
-  }
-
-  .header_icons-img {
-    height: 50px;
-    width: 50px;
   }
 
   .header__content {
-    width: 607px;
-    height: 339px;
-    top: 206px;
-    left: 426px;
+    width: 430px;
+    left: 170px;
   }
 
-  .header__content p {
+  .header__content {
     font-size: 20px;
-    letter-spacing: 0.3px; 
+    line-height: 35px;
   }
 
-  .header__content h1 {
-    font-size: 62px;
+  .header__title {
+    font-size: 60px;
+    line-height: 69px;
   }
 
-  .header__content h2 {
-    font-size: 34px;
+  .header__title-two {
+    font-size: 32px;
+    line-height: 48px;
   }
 
   .header__portrait {
-    width: 260px;
-    right: 210px;
-    top: 438px;
+    top: 300px;
+    right: 150px;
+    width: 250px;
   }
 
-  .header__portrait-img {
-    width: 220px;
-    height: 220px;
+  .project__img-title {
+    font-size: 28px;
+    letter-spacing: 0.01em;
   }
 
+  .project__content-wrapper 
+  .project__title, 
+  p {
+    padding: 5px 0;
+    line-height: 35px;
+  }
+
+  .project__tag-box {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-right: 8px;
+    height: 30px;
+  }
   
-
-  .text-box { /*TA UPP DEN!!!!*/ 
-    font-size: 48px;
-  }
-
-  .summary-line {
-    height: 4px;
-    margin-bottom: 5px;
-  }
+  .project__content {
+    margin: 40px 0;
+  }  
   
-  .summary-circle {
-    width: 15px;
-    height: 15px;
-    margin-left: -10px;
+  .icon {
+    width: 50px;
   }
 
 }
