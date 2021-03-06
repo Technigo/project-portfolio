@@ -3,7 +3,7 @@ body {
   
   font-family: 'Roboto', sans-serif;
   font-family: 'Montserrat', sans-serif;
-  /* line-height: 1.5; */
+
 }
 
 * {
@@ -30,15 +30,30 @@ h4 {
   font-weight: 600;
 }
 
-.header {
-  position: relative;
-  width: 100%;
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
+a:visited {
+  color: #000;
+}
+
+.header {
+  position: relative;
+  height: 700px;
+  overflow-y: hidden;
+}
+
+/* .container {
+  /* position: absolute; 
+} */
+
 .hero-img {
-  /* width: 100%; */
-  /* object-fit: cover; */
-  height: 550px;
+  /* width: 100vw; */
+  object-fit: none;
+  object-position: 0px 0%;
+  /* height: 550px; */
   /* object-fit: scale-down ; */
 }
 
@@ -93,7 +108,6 @@ h4 {
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-
   position: absolute;
   top: 0;
   bottom: 0;
@@ -430,8 +444,8 @@ h4 {
 @media screen and (min-width: 500px) {
   
   .hero-img {
-    width: 100%;
-    object-fit: none;
+    /* width: 100%; */
+    /* object-fit: none; */
   }
 
   .project {
@@ -456,7 +470,7 @@ h4 {
   }
   
   .project {
-    width: 300px;
+    /* width: 300px; */
   }
 
   .other-projects {
@@ -479,18 +493,11 @@ h4 {
 }
 
 /**** SMALL DESKTOP SIZE ****/
-@media screen and (min-width: 946px) {
-  .header-text {
-    padding-left: 100px;
-  }
-  
-  .img-me-container {
-    margin-right: 100px;  
-  }
+@media screen and (min-width: 1100px) {
 
-  .header-icons {
-    width: 300px;
-    padding-right: 100px;
+  .container {
+    width: 1100px;
+    margin: 0 auto;
   }
 
   .project {
@@ -500,10 +507,6 @@ h4 {
 
   .featured-projects {
     max-width: 1044px;
-  }
-
-  .presentation, .tech, .other-projects-container, .my-thoughts {
-    padding: 24px 100px;
   }
 
   .skills-all {
@@ -517,12 +520,11 @@ h4 {
 
 /**** LARGE DESKTOP SIZE ****/
 @media screen and (min-width: 1300px) {
-  .header-text {
-    padding: 0 500px 0 300px;
-  }
+  
+  
 
   .hero-img {
-    height: 650px;
+    /* height: 650px; */
   }
 
   .header-text-portfolio { /* h1: portfolio  */
@@ -535,12 +537,8 @@ h4 {
     font-size: 28px;
     line-height: 37px;
     font-weight: 700;
-  }
-  
-  .header-group {
-    display: flex;
-  }
-  
+  }   
+ 
   .header-text-title { /* h2: Frontend developer  */
     font-size: 72px;
     font-weight: 700;
@@ -556,17 +554,8 @@ h4 {
   }
 
   .img-me {
-    width: 300px;
-    height: 300px;
-  }
-  
-  .img-me-container {
-    margin-right: 300px;  
-  }
-
-  .presentation, .tech, .other-projects-container, .my-thoughts {
-    /* padding: 24px 100px; */
-    max-width: 1044px;
+    width: 250px;
+    height: 250px;
   }
 
 
