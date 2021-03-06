@@ -30,14 +30,26 @@ h4 {
   font-weight: 600;
 }
 
-.header-text-portfolio {
+.header {
+  position: relative;
+  width: 100%;
+}
+
+.hero-img {
+  /* width: 100%; */
+  /* object-fit: cover; */
+  height: 550px;
+  /* object-fit: scale-down ; */
+}
+
+.header-text-portfolio { /* h1: portfolio  */
   font-family: 'Roboto';
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
 }
 
-.header-text-name {
+.header-text-name {   /* h1: my name  */
   font-family: 'Roboto';
   font-size: 13px;
   line-height: 18px;
@@ -48,30 +60,18 @@ h4 {
   display: flex;
 }
 
-.header-text-title {
+.header-text-title { /* h2: Frontend developer  */
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
   margin: 0;
 }
 
-.header-text-background {
+.header-text-background { /* h2: my background  */
   font-size: 22px;
   font-weight: 700;
   line-height: 40px;
   margin: 0;
-}
-
-.header {
-  position: relative;
-  width: 100%;
-}
-
-.hero-img {
-  /* width: 100%; */
-  /* object-fit: cover; */
-  height: 550px;
-  object-fit: scale-down ;
 }
 
 .header-text {
@@ -99,7 +99,6 @@ h4 {
   bottom: 0;
   left: 0;
   right: 0;
-
 }
 
 .header-icons {
@@ -135,13 +134,12 @@ h4 {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
-  padding-right: 24px;
-  padding-top: 356px;
-  overflow: visible;
+  margin-right: 24px;  
 }
 
 .presentation {
   padding: 24px;
+  
 }
 
 .presentation-text {
@@ -396,7 +394,6 @@ h4 {
 
 .for-more-icons i {
   padding: 12px;
-  /* height: 50px;  */
   border: 1px solid #000;
   border-radius: 50%;
   width: 58px;
@@ -431,21 +428,14 @@ h4 {
 
 /**** LARGE MOBILE SIZE ****/
 @media screen and (min-width: 500px) {
-  .header {
-    width: 100%;
-  }
   
   .hero-img {
-    height: 60vh;
-    object-fit: scale-down ;
-  }
-  
-  .header-text {
-    padding-left: 50px;
+    width: 100%;
+    object-fit: none;
   }
 
-  .img-me-container {
-    padding-right: 50px;
+  .project {
+    width: 450px;
   }
 }
 
@@ -461,12 +451,12 @@ h4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: stretch;
   }
   
   .project {
-    width: 45%;
+    width: 300px;
   }
 
   .other-projects {
@@ -486,6 +476,99 @@ h4 {
   .skills-group {
     width: 25%;
   }
+}
+
+/**** SMALL DESKTOP SIZE ****/
+@media screen and (min-width: 946px) {
+  .header-text {
+    padding-left: 100px;
+  }
+  
+  .img-me-container {
+    margin-right: 100px;  
+  }
+
+  .header-icons {
+    width: 300px;
+    padding-right: 100px;
+  }
+
+  .project {
+    padding-bottom: 30px;
+    width: 350px;
+  }
+
+  .featured-projects {
+    max-width: 1044px;
+  }
+
+  .presentation, .tech, .other-projects-container, .my-thoughts {
+    padding: 24px 100px;
+  }
+
+  .skills-all {
+    width: 850px;
+  }
+
+  .for-more-icons {
+    padding: 30px 100px;
+  }
+}
+
+/**** LARGE DESKTOP SIZE ****/
+@media screen and (min-width: 1300px) {
+  .header-text {
+    padding: 0 500px 0 300px;
+  }
+
+  .hero-img {
+    height: 650px;
+  }
+
+  .header-text-portfolio { /* h1: portfolio  */
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: 400;
+  }
+  
+  .header-text-name {   /* h1: my name  */
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: 700;
+  }
+  
+  .header-group {
+    display: flex;
+  }
+  
+  .header-text-title { /* h2: Frontend developer  */
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 90px;
+    margin: 0;
+  }
+  
+  .header-text-background { /* h2: my background  */
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 68px;
+    margin: 0;
+  }
+
+  .img-me {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .img-me-container {
+    margin-right: 300px;  
+  }
+
+  .presentation, .tech, .other-projects-container, .my-thoughts {
+    /* padding: 24px 100px; */
+    max-width: 1044px;
+  }
+
 
 
 }
