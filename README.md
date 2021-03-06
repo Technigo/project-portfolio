@@ -10,3 +10,5 @@ Some of my content is currently dummy text, as there are certain topics I´d lik
  A crucial part of the assignment was to carry out an accessibility test according to a checklist, making sure the webpage works well for people with disabilities. As an extension to this the HTML code had to validate in a validation tool, and I have also checked so that all colors and color contrast are acceptable and approved. I´ve run my code through the WAVE and Tenon auditing tools and applied suggested changes.  When I have more time I will focus on adding additional ARIA attributes, to improve the accessibility of the page for people using a screen reader and keyboard navigation. 
 
 I´ll keep coming back to this project, not only for adding new content - but also to adjust some of the flexbox layout that I´m not happy with. I also plan to change the LinkedIn icon to a SVG for it to look more sharp, and to replace the hero image for a non cropped version of the current photo in tablet and desktop view. 
+
+Please follow this link to view project live: https://objective-euclid-c46181.netlify.app/
