@@ -1,34 +1,35 @@
+body{
+    margin: 0px;
+}
 .header-img{
-    position: absolute;
-    width: 375px;
+    position: relative;
+    width: 100vw;
     height: 520px;
-    left: 0px;
-    top: 0px; 
+    object-fit: cover;
 }
 
 .header-content{
     position: absolute;
     width: 220px;
     height: 202px;
-    left: 24px;
     top: 121px;
+    right: 0;
+    bottom: 0;
+    left: 24px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 138%;
     letter-spacing: 0.04em;
-    color: red;
-    display: flex;
-    align-content: center;
-    flex-flow: column;
+    color: yellow;
 }
 
 .account-icons{
     position: absolute;
     width: 130.5px;
     height: 40px;
-    left: 220px;
+    right: 24px;
     top: 48px;
     display: flex;
     justify-content: space-between;
@@ -46,7 +47,6 @@
     width: 20px;
 }
 
-
 .github{
     height: 40px;
     display: flex;
@@ -58,7 +58,6 @@
     position: absolute;
     width: 20px;
 }
-
 
 .stackoverflow{
     height: 40px;
@@ -75,18 +74,15 @@
 p{
     font-family: Montserrat;
     font-size: 17px;
-    font-style: normal;
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
-
 }
 
 h1{
     font-family: Montserrat;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 49px;
     letter-spacing: 0em;
@@ -97,7 +93,6 @@ h1{
 h2{
     font-family: Roboto;
     font-size: 13px;
-    font-style: normal;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.04em;
@@ -108,7 +103,6 @@ h2{
 .portfolio-owner{
     font-family: Roboto;
     font-size: 13px;
-    font-style: normal;
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 0.04em;
@@ -117,7 +111,6 @@ h2{
 h3{
     font-family: Montserrat;
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0em;
@@ -125,41 +118,44 @@ h3{
     margin: 0;
 }
 
+h4{
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    background-color: yellow;
+    margin: 0;
+    width: fit-content;
+    align-content: center;
+}
+
 .portrait-img{
     position: absolute;
     width: 180px;
     height: 180px;
-    left: 171px;
+    right: 24px;
     top: 356px;
     border-radius: 50%;
+    border: 3px solid white;
 }
 
-.intro-section{
-    position: absolute;
-    width: 375px;
-    height: 324px;
-    left: 0px;
-    top: 520px;
-    background: #F4F4F4;
-    opacity: 0.3;
+.mainpage{
+    display: flex;
+    flex-direction: column;
 }
 
-.intro-section-content{
-    position: absolute;
-    width: 327px;
-    height: 232px;
-    left: 24px;
-    top: 569px;
-    }
+.chapter-section:nth-child(odd){
+    /*background: #F4F4F4;*/
+    background: yellowgreen
+}
 
-.intro-section-text{
- font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 29px;
-    /* or 171% */
-    
-    
-    color: #000000;
+.chapter-section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.chapter-section-text{
+    margin: 0px;
+    padding: 49px 24px 43px 24px;
+    text-align: center;
 }
