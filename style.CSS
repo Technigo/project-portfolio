@@ -64,18 +64,19 @@ p {
 /*** HERO-PART ***/
 
 .hero {
-  /* position: relative; */
-  height: 45vh;
-  /* display: flex;
-  justify-content: center; */
+  position: relative; 
+  height: 50vh; 
+  display: flex;
+  justify-content: center; 
 }
 
-.hero-image {
+  .hero-image {
   width: 100vw;
-  height: 45vh;
+  height: 50vh;
   object-fit: cover;
-  position: relative;
-}
+} 
+
+
 
 .hero-selfpic {
   width: 90px;
@@ -85,10 +86,11 @@ p {
   overflow: hidden;
   border: var(--fifth) solid 2px;
   position: absolute;
-  top:240px;
+  /* top:230px;
   bottom: 0;
   left: 20px;
-  right: 0;
+  right: 0; */
+  transform: translate(10%,70%);
 }
 
 .hero-info {
@@ -122,14 +124,18 @@ p {
   margin: 0px 2px;
   display: inline-block;
   font-size: 15px;
-  transition: 1s; 
+  transition: 0.5s; 
   height: 25px;
   width: 25px;
+  border: solid 1px red;
+  border-radius: 50%;
+
 }
 
 .icon:hover {
-  transition: 1s;
-  color: var(--third);
+  transition: 0.5s;
+  border: solid 1px var(--third);
+  
 } 
 
 /* .icon:hover {
