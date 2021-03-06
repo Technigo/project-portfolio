@@ -61,26 +61,40 @@
           </a>
         </ul>
       </section>
+      <figure>
+        <img 
+          class="profile-photo" 
+          src="./images/me.png" 
+          alt=" picture of Maria"
+        >
+      </figure>
     </header>
   </section>
-  <figure>
-    <img 
-      class="profile-photo" 
-      src="./images/me.png" 
-      alt=" picture of Maria"
-    >
-  </figure>
 <!-- Profile-summary -->
   <summary>
     <section 
       tabindex="0" 
-      class="summary">
-        <h2 
-          class="summary-text"
-        >
+      class="summary background-dark"
+      aria-label="Profile text about Maria Sparre"
+    >
+      <div class="summary-text">
+        <div 
+          class="summary-icon"
+          >
+          <div 
+            class="line"
+          >
+          </div>
+          <div 
+            class="circle"
+          >
+          </div>
+        </div>
+        <h2>
           Hello! I’m a strategic and creative senior art director/digital designer with frontend developer skills and experience design at. 
           I’m all about solving problems that matter and creating awesome, meaningful products for people to love.
         </h2>
+      </div>
     </section> 
   </summary>  
   
@@ -89,7 +103,8 @@
   >
     <main>
       <section 
-        class="tech-section"
+        class="tech-section background-light"
+        aria-label="Description of technical skills"
       >
         <h2 
           class="h2"
@@ -112,7 +127,8 @@
       </section>
 <!-- Project description,  linked -->
       <section 
-        class="featured-projects"
+        class="featured-projects background-dark"
+        aria-label="Featured projects"
       >
         <h2 
           class="h2"
@@ -127,7 +143,7 @@
           target="_blank" 
           class="link-area" 
           href="https://pedantic-northcutt-25e910.netlify.app/"
-          >  
+        >  
           <div 
             tabindex="0" 
             class="project-card"
@@ -149,6 +165,8 @@
             </div>
             <div 
                 class="project-text"
+                title="project content"
+                aria-label="project description"
               >
               <p>
                 Responsive weather app using HTML5, CSS, Javascript ES6 and API
@@ -179,9 +197,9 @@
           </div>
         </a>
         <a 
-        target="_blank" 
-        class="link-area" 
-        href="https://project5guesswho.netlify.app/"
+          target="_blank" 
+          class="link-area" 
+          href="https://project5guesswho.netlify.app/"
         >
           <div 
             tabindex="0"
@@ -204,7 +222,10 @@
               </h4>
             </div> 
             <div 
-                class="project-text">
+                class="project-text"
+                title="project content"
+                aria-label="project description"
+            >
               <p>
                 A digital version of the classic board game built with Javascript ES6, HTML and CSS.
               </p>
@@ -232,43 +253,66 @@
 
       <section 
         tabindex="0" 
-        class="other-projects"
+        class="other-projects background-dark"
+        title="other projects"
+        aria-label="other projects"
       >
         <h2 
           class="h2"
         >
           OTHER PROJECTS
         </h2>
-        <h4 
-          class="h4"
+        <div
+          class="other-projects-card"
         >
-          CHAT BOT.
-        </h4>
-        <p>
-            Responsive web site using HTML, CSS and JavaScript ES6 for vacation destination assistance.
-            <span 
-              class="arrow"
-            >
-              >>
-            </span>
-        </p>  
-        <h4 
-          class="h4"
-        >
-          WEATHER APP.
-        </h4>
-        <p>
-          Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.
-          <span 
-            class="arrow"
+          <a
+            target="_blank" 
+            href=""
+            class="link-other"
           >
-            >>
-          </span>
-        </p> 
+            <h4 
+              class="h4"
+            >
+              CHAT BOT BUILT IN JAVASCRIPT. 
+            </h4>
+            <p>
+                Responsive web site using HTML, CSS and JavaScript ES6 for vacation destination assistance.
+                <span 
+                  class="arrow"
+                >
+                  >>
+                </span>
+            </p>
+          </a> 
+        </div>
+        <div
+          class="other-projects-card"
+        >
+          <a
+            target="_blank" 
+            href=""
+            class="link-other"
+          > 
+            <h4 
+              class="h4"
+            >
+              RESPONSIVE WEATHER APP.
+            </h4>
+            <p>
+              Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.
+              <span 
+                class="arrow"
+              >
+                >>
+              </span>
+            </p> 
+          </a>
+        </div>
       </section>
 
       <section 
-        class="my-thoughts"
+        class="my-thoughts-container background-light"
+        aria-label="section with thoughts regarding code"
       >
         <h2 
           class="h2"
@@ -280,18 +324,16 @@
           </mark>
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          DEC 2019
+          How to stop being scared: Learning to love code
+          Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective. <span class="arrow">>> </span>
         </p>
-        <p>
-          Voluptate temporibus consequatur pariatur ullam facere 
-        </p>
-        <p>
-          perferendis iure officiis? Dignissimos 
-        </p>
+
       </section>
 
-      <div 
-        class="skills-header"
+      <section 
+        class="skills-header background-dark"
+        aria-label="Skills in more details"
       >
         <h2>
           <mark 
@@ -300,12 +342,12 @@
             SKILLS
           </mark>
         </h2>
-      </div>
+      </section>
       <section 
-        class="skills"
+        class="skills-container background-dark"
       >
         <div 
-          class="code-skills"
+          class="skills-section"
         >
           <p 
             class="h2"
@@ -329,7 +371,7 @@
           </p>
         </div>
         <div 
-          class="toolbox-skills" 
+          class="skills-section" 
         >
           <p 
             class="h2"
@@ -353,7 +395,7 @@
           </p>
         </div>
         <div 
-          class="upcoming-skills" 
+          class="skills-section" 
         >
           <p 
             class="h2"
@@ -369,7 +411,7 @@
         </div>
       </section>
       <section 
-        class="for-more"
+        class="for-more background-light"
       >
         <h2>
           <mark 
@@ -382,7 +424,7 @@
     </main>
 
     <section 
-      class="media-bottom"
+      class="media-bottom background-light"
     >
       <ul 
         class="media-icons-bottom"
@@ -417,13 +459,13 @@
           STACKOVERFLOW
         </p>
       </div>
-      
     </section>
   </section>
          
   <footer 
     tabindex="0" 
     class="footer"
+    aria-label="contact details"
   >
     <address> 
       <h3>
