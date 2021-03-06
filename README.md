@@ -15,7 +15,9 @@ Techniques: HTML5, CSS3, Flexbox, CSS-grid, ARIA, Responsive design, Mobile-firs
 Tools: VS Code, Live Server, Figma, W3 Validation, WAVE, NVDA, unsplash.com, Slack, StackOverflow, Google Chrome,Firefox, Microsoft Edge.
 
 Contributions:
-Background photo by Neven Krcmarek: https://unsplash.com/photos/V4EOZj7g1gwPhoto in the projects section by Adem AY:https://unsplash.com/photos/zs-41Br0WhQPhoto in the thoughts section by Christopher Gower:https://unsplash.com/photos/m_HRfLhgABo
+Background photo by Neven Krcmarek: https://unsplash.com/photos/V4EOZj7g1gw
+Photo in the projects section by Adem AY: https://unsplash.com/photos/zs-41Br0WhQ
+Photo in the thoughts section by Christopher Gower: https://unsplash.com/photos/m_HRfLhgABo
 
 View it live
 https://distracted-bardeen-a421b4.netlify.app/
