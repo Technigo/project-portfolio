@@ -77,6 +77,8 @@ body {
 
 .icon-10, .icon-13, .icon-8 {
   margin: 5px;
+  width: 40px;
+  height: 40px;
 }
 
 .caroline-image {
@@ -211,6 +213,18 @@ p { /*this one creates a lot of problem*/
   color: #FFD369;
   background-color: #393E46;
   margin: 20px auto;
+  /* display: inline-flex; */
+  /* justify-content: center; */
+}
+
+.header-two-desktop {
+  display: none;
+}
+
+.header-two-mobile {
+  display: inline-flex;
+  color: #FFD369;
+  background-color: #393E46;
 }
 
 .header-four {
@@ -229,15 +243,15 @@ p { /*this one creates a lot of problem*/
 .technique {
   background-color: #393E46; 
   color: #FFD369;
+  font-size: 16px;
 }
 
 .other-projects {
   width: 100%;
   display: flex;
   justify-content: start;
-  align-items: center;
   flex-direction: column;
-  padding: 30px 0 30px 0;
+  padding: 30px 0 30px 0; /*kolla om det här gör något*/
 }
 
 .other-projects p {
@@ -256,6 +270,7 @@ p { /*this one creates a lot of problem*/
 .other-projects-header {
   display: inline-flex;
   color: #FFD369;
+  justify-content: center;
 }
 
 .my-thoughts {
@@ -336,6 +351,8 @@ p { /*this one creates a lot of problem*/
 
 .icons-for-more {
   margin: 20px 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .footer {
@@ -389,12 +406,28 @@ a:hover, .footer {
     line-height: 400%;
   }
 
+  .icon-10, .icon-13, .icon-8 {
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+  }
+
   .profession {
     font-size: 45px;
   }
 
   .bold-position {
     font-size: 20px;
+  }
+
+  .header-two-desktop {
+    display: inline-flex;
+    color: #FFD369;
+    background-color: #393E46;
+  }
+
+  .header-two-mobile{
+    display: none;
   }
 
   .featured-projects {
@@ -428,7 +461,7 @@ a:hover, .footer {
     position: relative;
     width: 45%;
   }
-
+/* check this later maybe is not needed */
   .chatbot, .business-site, .weather-app, .guess-who-game {
     height: 300px;
     margin: 10px 0 0 10px; /*change to 5px later ? Ska jag behålla denna? */
@@ -454,6 +487,12 @@ a:hover, .footer {
     background: #FFD369;
     margin-right: 10px; 
     margin-left: 10px; 
+  }
+
+  .icons-for-more {
+    margin: 20px 30px;
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -494,6 +533,7 @@ a:hover, .footer {
 
 .chatbot, .business-site, .weather-app, .guess-who-game {
   max-width: 300px; 
+  filter: brightness(30%);
   /* padding: 10px; change to 5px later ? */
 }
 
