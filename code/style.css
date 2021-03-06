@@ -54,7 +54,7 @@ body {
   margin-top: 49px;
 }
 
-.text-box-transparent { /*TA UPP DEN*/
+.text-box-transparent { 
   color: #3C096C;
   font-size: 21px;
   margin-top: 49px;
@@ -170,8 +170,6 @@ a {
 /*** PROJECT ***/
 .project__wrapper { /*DÖMA OM DEN GENERELL OCH TA UPP DEN*/
   margin: 0 24px;
-  height: auto; /*BEHÖVER JAG DENNA?**/
-  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.01em; 
   line-height: 29px;
   margin: 49px 24px 43px 24px; 
@@ -208,6 +206,9 @@ a {
   letter-spacing: 0.01em;
 }
 
+.project__content-wrapper {
+  font-family: 'Roboto', sans-serif;
+}
 .project__title {
   color: #3C096C;
   font-weight: 700;
@@ -236,6 +237,8 @@ a {
 
 .project__content {
   margin: 45px 0;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .project__link {
@@ -318,7 +321,7 @@ a {
 .icons__wrapper {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
- margin: 49px 24px 43px 24px; 
+ margin: 49px 24px 43px 24px;
 }
 
 .icon__img {
@@ -375,6 +378,7 @@ a {
 
   .header__icons-wrapper {
     width: 180px;
+    top: 60px;
     right: 100.5px;
   }
 
@@ -431,8 +435,16 @@ a {
     margin: 15px 0;
   }
 
+  .project__link-two, 
+  .project__title,
+  .toughts__link, 
+  .skills {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+  }
   .skills {
     grid-template-columns: 1fr 1fr 1fr; 
+    line-height: 41px;
   }
 }
 
@@ -456,6 +468,7 @@ a {
 
   .text-box-transparent { 
     font-size: 30px;
+    margin: 80px 0 0 0;
   }
 
   .header__icons-wrapper {
@@ -464,8 +477,13 @@ a {
   }
 
   .header__icon {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+  }
+
+  .icon {
+    width: 40px;
   }
 
   .header__content {
@@ -494,6 +512,10 @@ a {
     width: 250px;
   }
 
+  .summary-circle {
+    margin-left: -8px;
+  }
+
   .project__img-title {
     font-size: 28px;
     letter-spacing: 0.01em;
@@ -516,9 +538,117 @@ a {
   .project__content {
     margin: 40px 0;
   }  
+
+  .skills h3 {
+    font-size: 24px;
+  }
+
+  .icons a {
+    font-size: 16px;
+  }
+
+  .icon__img {
+    border: 2px solid #3C096C;
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon-more {
+    height: 100px;
+  }
+
+}
+
+@media (min-width: 1700px) {
+
+  body {
+    font-size: 30px;
+  }
+
+  .header-box { 
+    font-size: 48px;
+    line-height: 58.51px;
+    letter-spacing: 1%;
+  }
+
+  .text-box-transparent { 
+    font-size: 38px;
   
-  .icon {
-    width: 50px;
+  }
+
+  .header__icons-wrapper {
+    height: 80px;
+    top: 102px;
+    right: 410px;
+  }
+
+  .header__icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #FFFFFF;
+  }
+
+  .header__content {
+    width: 607px;
+    height: 339px;
+    left: 426px;
+    top: 206px;
+    line-height: 37px;
+    font-size: 28px;
+    letter-spacing: 4%;
+  }
+
+  .header__name {
+    font-weight: 700;
+  }
+
+  .header__title {
+    font-size: 50px;
+    line-height: 78px;
+  }
+
+  .header__title-two {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .header__portrait {
+    position: absolute;
+    right: 350px;
+  }
+  
+  .main__wrapper {
+    width: 1100px;
+    margin: 123px 0 109px 0;
+  }
+
+  .main__wrapper p {
+    line-height: 50px;
+  }
+
+  .tech-content {
+    letter-spacing: 1%;
+    line-height: 50px;
+  }
+
+  .project__wrapper { 
+    width: 1100px;
+  }
+
+  .project__grid {
+    gap: 50px;
+  }
+
+  .project__content-wrapper {
+    font-size: 25px;
+  }
+
+  .project__tag-box{
+    font-size: 16px;
+  }
+
+  .project__content {
+    line-height: 45px;
   }
 
 }
