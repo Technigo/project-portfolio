@@ -1,50 +1,53 @@
-body {
-    margin: 0;
-    font-family:'Montserrat', sans-serif;
+* {
+    margin:0;
+    box-sizing: border-box;
 }
 
-/*HEADER*/
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: white;
+}
+
+/*header*/
+
 header {
-    background-image: url("./assets/Simple\ Technology\ LinkedIn\ Banner\ \(5\).png");
-    background-repeat: no-repeat;
+    background-image: url("./assets/Simple\ Technology\ LinkedIn\ Banner\ \(6\).png");
     background-size: cover;
-    height: 681px;
+    height: 700px;
     width: 100%;
-    position: absolute;
-    width: 1936px;
-    height: 681px;
-    left: -16px;
-    top: 0px;
-    color: whitesmoke;
+    color: white;
 }
 
 .header-elements {
-    width: 60%;
-    max-width: 1360px;
-    min-width: 770px;
-    position: relative;
-    margin: auto;
+    display: flex;
+    flex-direction: column;      
 }
 
 .name-header {
     font-family: 'Roboto', sans-serif;
-    position: absolute;
     left: 0;
-    top: 135px;
     font-size: 25px;
     font-weight: lighter;
+    align-self: flex-start;
+    margin-left: 6%;
 }
 
-.estefanía-name-header {
-    font-weight: bold;
+.estefania-name-header {
+    font-family: 'Roboto', sans-serif;
+    left: 0;
+    top: 135px;
+    font-size:25px;
+    font-weight: lighter;
+    position: relative;
 }
 
 .header-job-title {
-    position: absolute;
     left: 0;
     top: 200px;
     font-size: 35px;
     font-weight: 700;
+    position: relative;
+    margin-left: 6%;
 }
 
 .header-job-title h2 {
@@ -57,69 +60,74 @@ header {
 }
 
 .social-media-icons-header {
-    width: 261px;
-    height: 80px;
-    left: 1249px;
-    position: absolute;
-    right: 0;
-    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 16px;
+    margin-right: 6%;
 }
 
-
 .social-media-icons-header img {
-    margin: 5px;
+    margin: 5px;   
 }
 
 
 .my-pic {
+    width: 333px;
+    right: 10px;
+    top: 70px;
     border-radius: 50%;
     border: 5px solid white;
-    width: 333px;
-    height: 333px;
-    position: absolute;
-    right: 10px;
-    z-index: 5;
+    align-self: flex-end; 
+    position: relative;
+    margin-right: 6%;
 }
 
-/*Summary section*/
+.social-media-icons-header {
+    position: relative;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .summary-section {
-    position: absolute;
-    width: 1100px;
-    height: 200px;
-    left: 410px;
-    top: 791px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
-.summary-section p {
-   width: 100%;
-   max-width: 1360px;
-   position: absolute;
-   left: 0; 
-   right: 0;
-   margin: 0 auto;
-   top: 50%;
-   transform: translateY(-50%);   
+.tech-section {
+    margin-top: 7%;
 }
 
-.summary-red-line {
-    display: inline-block;
-    width: 80px;
-    height: 9px;
-    border-top: 4px solid #FF484C;
+.tech-title {
+    display:flex;
+    justify-content: center;
 }
 
-.summary-red-dot {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #FF484C;
-    background-color: #FF484C;
-    margin-right: 15px;
-    margin-left: -1px;
-    border-radius: 50%;
+.footer {
+    background-color: #F7D9D9;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
-
-
-
-
