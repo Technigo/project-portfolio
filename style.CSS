@@ -1,5 +1,5 @@
 :root {
-  --primary:#A8AEC4;
+  --primary:#E6D9C8;
   --secondary:#E5C2A6;
   --third: #684853;
   --fourth:#A8AEC4;
@@ -11,7 +11,7 @@ body,html {
   margin: 0;
   background-color: var(--fifth);
   font-family: 'Montserrat', sans-serif;
-  background-color: greenyellow;
+  background-color: var(--sixth)
 }
 
 /*** HEADINGS ***/
@@ -74,7 +74,6 @@ p {
   width: 100vw;
   height: 45vh;
   object-fit: cover;
-  
 }
 
 .hero-selfpic {
@@ -84,7 +83,7 @@ p {
   border-radius: 50%;
   border: var(--fifth) solid 2px;
   position: absolute;
-  top:280px;
+  top:240px;
   bottom: 0;
   left: 20px;
   right: 0;
@@ -116,25 +115,24 @@ p {
 
 
 .icon {
-  /* list-style: none; */
   margin: 0px 2px;
   display: inline-block;
   font-size: 15px;
-  /* padding: 5px 5px; */
-  /* border: solid 2px var(--fifth); */
-  /* border-radius: 50%; */
-  /* transition: 1s; */
+  transition: 1s; 
   height: 25px;
   width: 25px;
-  /* color: white;  */
-  /* object-fit: fill; */
 }
 
 .icon:hover {
+  transition: 1s;
+  color: var(--third);
+} 
+
+/* .icon:hover {
 color: var(--third);
-border: solid 2px var(--third); 
+/* border: solid 2px var(--third);  */
 /* transition: 1s; */
-}
+
 
 
 
@@ -149,12 +147,13 @@ border: solid 2px var(--third);
   width: 100vw;
   display: flex;
   justify-content: center;
+  background-color: var(--primary);
 }
 
 .summary {
   width: 310px;
   text-align: left;
-  padding: 20px;
+  padding: 2px;
   border: solid black;
   margin-top: 10px;
   font-family: 'montserrat';
@@ -179,7 +178,7 @@ border: solid 2px var(--third);
 .tech {
   width: 310px;
   text-align: center;
-  padding: 20px;
+  padding: 0px;
   border: solid turquoise;
   font-family: 'montserrat';
   font-style: normal;
@@ -192,6 +191,7 @@ border: solid 2px var(--third);
 
 .projects-container {
   text-align: center;
+  background-color: var(--primary);
 }
 
 .projects {
@@ -207,7 +207,7 @@ border: solid 2px var(--third);
   align-content: center;
   border: solid turquoise;
   width: 310px;
-  padding: 20px;
+  padding: 0px;
   margin: 20px 0px 20px 0px;
 }
 
@@ -229,12 +229,13 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--primary);
 }
 
 .other-projects {
   width: 310px;
   text-align: left;
-  padding: 20px;
+  padding: 0px;
   border: solid turquoise;
 }
 
@@ -251,7 +252,7 @@ a {
 
 .my-thoughts {
   text-align: left;
-  padding: 20px;
+  padding: 0px;
   border: solid black; 
   width: 310px;
   margin:0;
@@ -272,7 +273,7 @@ a {
 .more-thoughts-box {
  border: solid turquoise;
  width: 310px;
- padding: 20px;
+ padding: 0px;
  align-items: center;
 }
 
@@ -288,12 +289,14 @@ text-align: center;
 display: flex;
 flex-direction: column;
 align-items: center;
+background-color: var(--primary);
+padding-bottom: 20px;
 }
 
 .skills {
   text-align: center;
   width: 310px;
-  padding: 20px;
+  padding: 0px;
   border: solid turquoise;
   display: flex;
   flex-direction: row;
@@ -405,8 +408,8 @@ footer a {
   }
 
   .summary-box {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
   .summary {
    padding: 0;
@@ -492,7 +495,6 @@ footer a {
   .skill-list {
     text-align: center;
     width: 150px;
-    border: solid white;
     margin: 2px;
   }
 
@@ -505,11 +507,11 @@ footer a {
 
 /*** DESKTOP MEDIA QUERIES ***/
 
-@media (min-width:1025px){
+@media (min-width:1024px){
 
   .icons-top {
-    left: 850px;
-    top: 50px;
+    left: 800px;
+    top: 10px;
   }
 
   .icon {
@@ -520,66 +522,92 @@ footer a {
   .hero-selfpic {
     width: 130px;
     height: 150px;
-    top:130px;
-    left: 100px;
+    top:110px;
+    left: 120px;
   }
 
   .hero-info {
-    position: absolute;
-    top: 150px;
-    left: 380px;
+    top: 90px;
+    left: 350px;
     width: 300px;
     height: 100px;
   }
 
   h1 {
     font-size: 35px;
+    line-height:30px;
   }
 
   .summary {
     padding: 0;
-    width: 700px;
- 
+    width: 800px;
    }
+
+   .textwrap {
+    width: 40px;
+  }
  
    .tech {
      padding:0;
-     width: 700px;
+     width: 800px;
    }
 
+   .projects-container {
+     display: flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .projects {
+     width: 800px;
+     flex-direction: row;
+     flex-wrap: wrap;
+     padding: 0px;
+   }
 
   .top-project {
-    width: 300px;
+    width: 350px;
     margin: 20px;
     padding: 0;
   }
 
   .top-project img {
-    width: 300px;
-    height: 210px;
+    width: 350px;
+    height: 240px;
   }
   .other-projects {
-    width: 700px;
+    width: 800px;
   }
 
   .my-thoughts {
-    width: 300px;
+    width: 500px;
   }
 
   .my-thoughts img {
-    width: 300px;
-    height: 230px;
+    width: 500px;
+    height: 350px;
   }
+  
+  .more-thoughts-box {
+    width: 800px;
+    padding: 0px;
+   }
 
   .more-thoughts {
-    width: 700px;
+    width: 800px;
     height: 65px;
   }
 
+  .skills {
+    width: 800px;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+
   .skill-list {
-    width: 200px;
-    height: 230px;
-    margin: 20px;
+    width: 250px;
+    margin: 2px;
   }
 
   .more-icons img {
