@@ -7,15 +7,14 @@
 
 body {
   position: relative;
-  width: 375px;
-  height: 4502px;
   font-family: Roboto, Montserrat, sans-serif;
+  color: black;
 
   background: #ffffff;
 }
 
 .header {
-  display:flex;
+  display: flex;
   flex-direction: column;
   height: 520px;
   left: 0px;
@@ -44,7 +43,7 @@ body {
   width: 220px;
   height: 202px;
   left: 24px;
-  top: 121px; /*possibly change to 121 before publish*/
+  top: 121px; 
 
   font-family: Roboto;
   font-style: normal;
@@ -61,28 +60,16 @@ body {
   border: 3px solid gray;
   align-self: flex-end;
   margin-top: 350px;
-  margin-right: 70%;
+  margin-right: 7%;
 }
 
 .intro-section {
-  position: absolute;
-  width: 375px;
-  height: 324px;
-  left: 0px;
-  top: 520px;
-
-  background: #f4f4f4;
-  opacity: 0.3;
+  padding: 5px;
+  background: #ebfafa;
 }
 
 .intro {
   display: flex;
-
-  width: 327px;
-  height: 232px;
-  left: 24px;
-  top: 569px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -93,16 +80,10 @@ body {
 }
 
 .tech {
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 5px;
-  width: 327px;
-  height: 147px;
-  left: 24px;
-  top: 935px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -116,85 +97,200 @@ body {
 }
 
 .topic-header {
-  background: hotpink;
+  background: deeppink;
+  color: white;
+  align-self: center;
+  text-align: center;
+  display: inline-block;
 }
+
 
 .project-container {
   display: flex;
-  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 375px;
-  height: 1298px;
-  left: 0px;
-  top: 1115px;
-
-  background: #f4f4f4;
-  opacity: 0.3;
-}*/
+  background: #ebfafa;
+}
 
 .shadow {
   width: 50%;
   height: auto;
 }
 
-.grid-item {
+.flex-item {
   margin: 5px;
   padding: 5px;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
+  text-align: center;
+  align-self: center;
 }
 
-.grid-item a:link {
+.flex-item a:link {
   color: black;
 }
 
-.grid-item a:link,
+.flex-item a:link,
 a:visited {
   color: black;
   text-decoration: none;
 }
 
-.grid-item a:hover {
+.flex-item a:hover {
   color: deeppink;
 }
 
 .other-projects {
-position: absolute;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 327px;
-height: 131px;
-left: 24px;
-top: 2439px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ebfafa
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;  
+}
+
+.type {
+  background: rgb(123, 46, 139);
+  padding: 5px;
+  margin: 5px;
+  color: white;
 }
 
 .thoughts {
-position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thoughts-link a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.thoughts-link a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.thoughts-link a:hover {
+  color: deeppink;
+}
+
+  
+
+
+.skills-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.skill-topic-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ebfafa;
+}
+
+.skill-header {
+  color: hotpink;
+}
+
+.list {
+  width: 149px;
+  height: 475px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.listed-items {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.more-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.for-more {
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-link {
+  width: 20px;
+  height: 20px;
+  background: darkslategray;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 4px;
+  width: 45px;
+  height: 45px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  color: hotpink;
+}
+
+.footer {
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 327px;
-height: 556px;
-left: 24px;
-top: 2720px
+background: lightpink;
+height: 250px;
 }
 
 @media (min-width: 1025px) {
   .header {
-    position: absolute;
-    width: 1936px;
-    height: 681px;
-    left: -16px;
-    top: 0px;
+    height: 500px;
     background-image: url(large_header.jpg);
+  }
+
+  .some-link {
+    width: 45px;
+  }
+
+  .SoMe {
+    margin-right: 5%;
+  }
+
+  .profile-picture {
+    margin-right: 15%;
+    width: 200px;
+    margin-top: 200px;
   }
 
   .title {
@@ -202,7 +298,7 @@ top: 2720px
     width: 607px;
     height: 339px;
     left: 110px; /*possibly move this to 410 px before publishing*/
-    top: 206px;
+    top: 20px;
 
     font-family: Roboto;
     font-style: normal;
@@ -214,23 +310,8 @@ top: 2720px
     color: #000000;
   }
 
-  .intro-section {
-    position: absolute;
-    width: 1920px;
-    height: 432px;
-    left: 0px;
-    top: 668px;
-
-    background: #f4f4f4;
-  }
-
   .intro {
     display: flex;
-    width: 1100px;
-    height: 200px;
-    left: 410px;
-    top: 791px;
-
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -242,12 +323,6 @@ top: 2720px
 
   .tech {
     display: flex;
-    position: absolute;
-    width: 1100px;
-    height: 150px;
-    left: 410px;
-    top: 1364px;
-
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -261,34 +336,10 @@ top: 2720px
     color: #000000;
   }
 
-  /*.project-container {
-    display: flex;
-    width: 1920px;
-    height: 2222px;
-    left: 0px;
-    top: 1640px;
-
-    background: #f4f4f4;
-  }*/
-
-  .project-container {
-    width: 1920px;
-    height: 2222px;
-    left: 0px;
-    top: 1640px;
-    margin: 5px;
-    padding: 10px;
-
-    align-content: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    background: #f4f4f4;
+  .icon {
+    width: 80px;
+    height: 80px;
   }
 
-  .shadow {
-    width: 60%;
-    height: 200px;
-  }
+
 }
