@@ -5,6 +5,7 @@
   --darken-blend: #6b553b;
   --very-dark: #2d1e19;
   --contrast: #66843e;
+  --light-contrast:#92bd5b;
 }
 
 * { margin: 0;}
@@ -13,7 +14,6 @@
 
 body {
   width: 100vw;
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,13 +24,15 @@ body {
 /********* TOP SECTION *********/
 
 .top-section {
+  width: 100%;
   background-image: url(./assets/background-park-mobile.jpg);
-  background-size:cover;
+  background-size: cover;
   background-color: var(--contrast);
   background-blend-mode: multiply;
   display: flex;
   flex-direction: column;
   padding: 48px 24px 0;
+  box-sizing: border-box;
 }
 
 .top-navbar-social-media {
@@ -39,6 +41,7 @@ height: 40px;
 display: flex;
 justify-content: space-between;
 align-self: flex-end;
+position: relative;
 }
 
 .top-navbar-social-media-link  {
@@ -157,6 +160,7 @@ align-self: flex-end;
   background-color: var(--primary);
   height: 27px;
   padding: 1px 2px 0 2px;
+  margin: 40px 0; 
   display: inline;
 }
 
@@ -167,19 +171,38 @@ align-self: flex-end;
   font-size: 17px;
   line-height: 29px;
   text-align: center;
-  margin: 24px 0 33px;
 }
+
+.featured-project-container {
+  width: 327px;
+}
+
+/* To make entire div a clickable link */
+.featured-project-container {
+  position: relative;
+  width: 327px;
+}
+
+.featured-project-container a::after{
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .featured-project-image-container1 {
   background-image: url("./assets/guess-who.JPG");
   background-color:var(--darken-blend);
   background-blend-mode: multiply;
   background-size: cover;
-  height: 210px;
+  height: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0 10px;
 }
 
 .featured-project-image-container2 {
@@ -187,7 +210,8 @@ align-self: flex-end;
   background-color:var(--darken-blend);
   background-blend-mode: multiply;
   background-size: cover;
-  height: 210px;
+  width: 327px;
+  height: 202px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +223,6 @@ align-self: flex-end;
   font-weight: 700;
   font-size: 28px;
   line-height: 34px;
-  letter-spacing: 1%;
   color: var(--light);
 }
 
@@ -208,7 +231,6 @@ align-self: flex-end;
   font-weight: 700;
   font-size: 17px;
   line-height: 29px;
-  letter-spacing: 1%;
   color: var(--primary);
 }
 
@@ -217,7 +239,6 @@ align-self: flex-end;
   font-weight: 400;
   font-size: 17px;
   line-height: 29px;
-  letter-spacing: 1%;
 }
 
 .tech-symbols {
@@ -239,21 +260,240 @@ align-self: flex-end;
   margin: 0 8px 0 0;
 }
 
+.secondary-section-header {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: var(--primary);
+  margin: 56px 0 21px
+}
+
+.project-text-arrows {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/********* MY THOUGHTS *********/
+
+.thoughts-image-container {
+  width: 327px;
+}
+
+.thoughts-image {
+  width: 327px;
+  object-fit: contain;
+}
+
+.blog-entry {
+  margin-top: 32px;
+  width: 327px;
+}
+
+.date {
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--primary);
+}
+
+.blog-entry-heading {
+  font-family:'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.blog-entry-text {
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.blog-entry-arrows {
+  color: var(--primary);
+}
+
+.blog-entry-link:link {
+  font-family:'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  color: var(--primary);
+}
+
+.blog-entry-link:visited {
+  color: var(--primary);
+}
+
+.blog-entry-link:focus {
+ background-color: var(--light-contrast) ;
+}
+
+.blog-entry-link:hover {
+  background-color: var(--light-contrast) ;
+ }
+
+.blog-entry-link:active {
+  background-color: var(--secondary)
+}
+
 /* To make entire div a clickable link */
-.featured-project-container {
+.blog-entry {
   position: relative;
   width: 327px;
 }
-.featured-project-container a::after{
-content: "";
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-z-index: 1;
+ 
+.blog-entry a::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  }
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  .blog-entry-link {
+    width: 327px;
+  }
+
+  /********* SKILLS *********/ 
+
+  .skills-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 42px;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .skills-section-header {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--light);
+    background-color: var(--primary);
+    height: 27px;
+    padding: 1px 2px 0 2px;
+    margin: 40px 0 0; 
+    display: inline;
+  }
+
+  .skills {
+    text-align: center;;
+  }
+
+  .skills-section-subheaders {
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    color: var(--primary);
+    margin-top: 30px;
+  } 
+
+  .skills-text {
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+ /********* FOR MORE *********/ 
+
+.bottom-navbar-social-media {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 60px;
+  }
+
+.icon-circle  {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.linkedin2 {
+  width: 19px;
 }
 
+.github2 {
+  width: 22px;
+}
+
+.stackoverflow2 {
+  width: 23px;
+}
+
+.icon-text {
+  font-family:'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 18px;
+}
+
+.bottom-navbar-social-media-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-navbar-social-media-link:link {
+  text-decoration: none;
+}
+
+  /********* FOOTER *********/ 
+
+  .footer {
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--light);
+    background-color: var(--contrast) ;
+    text-align: center;
+  }
+
+  .copyright {
+    padding-top: 20px;
+  }
+
+  .footer-link:link {
+    color: var(--primary)
+  }
+
+  .footer-link:visited {
+    color: var(--primary)
+  }
+
+  .footer-link:focus {
+    background-color: var(--light-contrast)
+  }
+
+  .footer-link:hover {
+    background-color: var(--light-contrast)
+  }
+
+  .footer-link:active {
+    background-color: var(--secondary)
+  }
 /*~~~~~~Styling for tablet and small desktop~~~~~~*/
 @media (min-width:768px) and (max-width: 1200px) {
   body {
