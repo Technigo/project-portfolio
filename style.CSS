@@ -61,22 +61,20 @@ p {
   line-height: 28px;
   margin:5px 0px 5px 0px;
 } 
+
 /*** HERO-PART ***/
 
 .hero {
   position: relative; 
-  height: 50vh; 
   display: flex;
   justify-content: center; 
 }
 
   .hero-image {
   width: 100vw;
-  height: 50vh;
+  height: 400px;
   object-fit: cover;
 } 
-
-
 
 .hero-selfpic {
   width: 90px;
@@ -86,20 +84,11 @@ p {
   overflow: hidden;
   border: var(--fifth) solid 2px;
   position: absolute;
-  /* top:230px;
-  bottom: 0;
-  left: 20px;
-  right: 0; */
   transform: translate(-120%,350%);
 }
 
 .hero-info {
   position: absolute;
-  /* top: 170px;
-  left: 120px;
-  bottom: 0px;
-  right: 0px; */
-  border: white solid;
   padding: 10px;
   text-align: left;
   display: table;
@@ -111,17 +100,11 @@ p {
 
 .icons-top {
   position: absolute;
-  /* top: 30px;
-  bottom: 0;
-  left: 280px;
-  right: 0; */
-  border: solid black;
   display: table;
   justify-content: center; 
   align-items: center;
-  transform: translate(-250%,20%);
+  transform: translate(180%,60%);
 }
-
 
 .icon {
   margin: 0px 2px;
@@ -130,14 +113,13 @@ p {
   transition: 0.5s; 
   height: 25px;
   width: 25px;
-  border: solid 1px var(--fifth);
+  border: solid 3px var(--fifth);
   border-radius: 50%;
 }
 
 .icon:hover {
   transition: 0.5s;
-  border: solid 1px var(--third);
-  
+  border: solid 3px var(--third);
 } 
 
 /*** INFO-PART ***/
@@ -147,6 +129,7 @@ p {
   flex-direction: column;
   align-items: center;
 }
+
 .summary-box {
   width: 100vw;
   display: flex;
@@ -159,7 +142,6 @@ p {
   width: 310px;
   text-align: left;
   padding: 2px;
-  border: solid black;
   margin-top: 10px;
   font-family: 'montserrat';
   font-style: normal;
@@ -180,11 +162,11 @@ p {
   display: flex;
   justify-content: center;
 }
+
 .tech {
   width: 310px;
   text-align: center;
   padding: 0px;
-  border: solid turquoise;
   font-family: 'montserrat';
   font-style: normal;
   font-weight: normal;
@@ -203,17 +185,20 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: solid black;
   align-items: center;
 }
 
 .top-project {
   text-align: left;
   align-content: center;
-  border: solid turquoise;
   width: 310px;
   padding: 0px;
   margin: 20px 0px 20px 0px;
+}
+
+.top-project a:hover {
+  color: #E5C2A6;
+  transition: 0.5s;
 }
 
 .top-project img {
@@ -224,6 +209,7 @@ p {
 .top-project p {
   margin: 5px 0px 5px 0px;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -241,7 +227,18 @@ a {
   width: 310px;
   text-align: left;
   padding: 0px;
-  border: solid turquoise;
+}
+
+.other-projects p {
+  margin-top: 20px;
+}
+.other-projects a {
+  text-decoration: underline;
+}
+
+.other-projects a:hover {
+  color: #E5C2A6;
+  transition: 0.5s;
 }
 
 /*** THOUGTS & SKILLS***/
@@ -258,9 +255,13 @@ a {
 .my-thoughts {
   text-align: left;
   padding: 0px;
-  border: solid black; 
   width: 310px;
   margin:0;
+}
+
+.my-thoughts a:hover {
+  color: #E5C2A6;
+  transition: 0.5s;
 }
 
 .my-thoughts img {
@@ -275,8 +276,8 @@ a {
   background-color: var(--sixth);
   padding-bottom: 20px;
 }
+
 .more-thoughts-box {
- border: solid turquoise;
  width: 310px;
  padding: 0px;
  align-items: center;
@@ -284,9 +285,17 @@ a {
 
 .more-thoughts {
   text-align: left;
-  border: solid 1px black;
   margin:10px 0px 10px 0px;
   width: 310px;
+}
+
+.more-thoughts a {
+  text-decoration: underline;
+}
+
+.more-thoughts a:hover {
+  color: #E5C2A6;
+  transition: 0.5s;
 }
 
 .skills-container {
@@ -302,7 +311,6 @@ padding-bottom: 20px;
   text-align: center;
   width: 310px;
   padding: 0px;
-  border: solid turquoise;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -313,13 +321,11 @@ padding-bottom: 20px;
 ul {
   list-style-type:none;
   padding: 0;
- 
 }
 
 .skill-list {
   text-align: center;
   width: 120px;
-  border: solid white;
   margin-top: 10px;
   font-family:'roboto';
   font-style: normal;
@@ -330,7 +336,6 @@ ul {
 
 .more {
   text-align: center;
-  border: solid black;
   background-color: var(--sixth);
   display: flex;
   flex-direction: column;
@@ -342,18 +347,20 @@ ul {
 .more-icons {
   padding: 0px;
   height: 100px;
-  
 }
 
 .more-icons img {
   height: 55px;
   width: 55px;
   padding: 8px;
+  border: solid 2px var(--third);
+  border-radius: 50%;
+  transition: 0.5s;
 }
 
 .more-icons img:hover {
-color: var(--secondary);
-transition:1s;
+transition:0.5s;
+border: solid 2px var(--secondary);
 }
 
 .icon-bottom-text {
@@ -364,7 +371,7 @@ transition:1s;
 }
 
 .icon-bottom-text-seperat {
-  padding: 5px;
+  padding: 3px;
 }
 
 /*** FOOTER ***/
@@ -382,46 +389,43 @@ footer a {
   color: var(--fourth);
 }
 
+footer a:hover {
+  color: var(--primary);
+}
+
 .contact-list {
   padding: 10px;
 }
+
 
 /*** MEDIA QUERIES TABLETT ***/
 
 @media (min-width: 667px) {
  
   .icons-top {
-    left: 550px;
-    top: 30px;
+    transform: translate(150%,100%);
   }
 
   .icon {
-    height: 40px;
-    width: 40px;
-    bottom: 0px;
-    right: 0px;
-  }
+    height: 50px;
+    width: 50px; 
+  } 
 
   .hero-selfpic {
-   width: 120px;
-   height: 120px;
-    top:150px;
-    left: 60px;
-    bottom: 0px;
-    right: 0px;
+   width: 150px;
+   height: 150px;
+   transform: translate(-110%,180%);
   }
 
   .hero-info {
-    top: 110px;
-    left: 240px;
-    bottom: 0px;
-    right: 0px;
+    transform: translate(-170%,120%);
   }
 
   .summary-box {
     padding-top: 30px;
     padding-bottom: 20px;
   }
+
   .summary {
    padding: 0;
    width: 500px;
@@ -454,7 +458,6 @@ footer a {
     width: 500px;
     text-align: left;
     padding: 0px;
-    border: solid white;
     margin-bottom: 20px;
   }
 
@@ -516,13 +519,13 @@ footer a {
   }
 }
 
+
 /*** DESKTOP MEDIA QUERIES ***/
 
 @media (min-width:1024px){
 
   .icons-top {
-    left: 800px;
-    top: 10px;
+    transform: translate(200%,80%);
   }
 
   .icon {
@@ -531,17 +534,15 @@ footer a {
   }
 
   .hero-selfpic {
-    width: 130px;
+    width: 150px;
     height: 150px;
-    top:110px;
-    left: 120px;
+    transform: translate(-150%,180%);
   }
 
   .hero-info {
-    top: 90px;
-    left: 350px;
     width: 300px;
     height: 100px;
+    transform: translate(-200%,120%);
   }
 
   h1 {
@@ -627,6 +628,4 @@ footer a {
     padding: 5px;
   }
   
-
-
 }
