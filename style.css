@@ -1,45 +1,108 @@
+:root {
+  font-size: 62.5%;
+  font-weight: 400;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
-.hero-image {
-  width: 100%;
-  height: 60%;
-  position: relative;
+p {
+  line-height: 3rem;
+}
+
+.wrapper {
+  width: 90%;
+  padding: 40px 0;
+}
+
+/* HERO SECTION */
+.header {
+  background-image: url(./pictures/javier-martinez-hUD0PUczwJQ-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.hero-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
 }
 
 .profile-information {
-  position: absolute;
   top: 22%;
   left: 25%;
   color: white;
 }
 
+.profile-information h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.profile-information h4 {
+  font-size: 1.3rem;
+  margin: 2rem 0 0 0;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
 .profile-information h1 {
-  font-size: 3em;
+  font-size: 4rem;
   margin: 0;
 }
 
-.profile-picture img {
-  width: 15%;
-  border-radius: 50%;
-  border: 2px solid white;
-  position: absolute;
-  top: 50%;
-  right: 25%;
+.name-bold {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 
+.profile-picture {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-picture img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+  bottom: -30px;
+  right: 0;
+}
+
+.icons-container {
+  display: flex;
+  align-self: flex-end;
+}
+
+.icons-wrapper {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+/* PRESENTATION SECTION */
 .presentation-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
 }
 
 .presentation-section p {
-  width: 60%;
-  font-size: 30px;
+  font-size: 1.7rem;
 }
 
 .line {
@@ -58,4 +121,311 @@ body {
   background-color: pink;
   margin-left: -10px;
   margin-right: 10px;
+}
+
+/* PROJECTS */
+.tech-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 2.2rem;
+  background-color: pink;
+  color: white;
+  width: fit-content;
+  padding: 0.5rem;
+  text-align: center;
+  align-self: center;
+}
+
+.sub-heading-two {
+  font-size: 2.2rem;
+  color: pink;
+  width: fit-content;
+  padding: 0.5rem;
+  text-align: center;
+  align-self: center;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-container h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  color: pink;
+  margin-bottom: 0;
+}
+
+.project-container p {
+  font-size: 1.7rem;
+}
+
+.project-container img {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.project-container ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.project-container li {
+  background: rgb(219, 118, 135);
+  color: white;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 0 0 0;
+}
+
+/* THOUGHTS */
+.thoughts-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thoughts-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.thoughts-container img {
+  width: 100%;
+}
+
+.date {
+  font-size: 2rem;
+  margin-bottom: 0;
+  color: rgb(219, 118, 135);
+}
+
+.blog-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+}
+
+.blog-text {
+  font-size: 1.7rem;
+}
+
+.read-more-span {
+  font-weight: 600;
+  color: rgb(219, 118, 135);
+}
+
+.other-thoughts {
+  display: flex;
+  align-items: flex-start;
+  text-decoration: underline rgb(219, 118, 135);
+}
+
+.other-thoughts .blog-heading {
+  margin: 0;
+  color: black;
+  text-decoration: underline black;
+}
+
+/* SKILLS */
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills {
+  width: 40%;
+  text-align: center;
+}
+
+.skills-heading {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: rgb(219, 118, 135)
+}
+
+.skills-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-container li {
+  font-size: 1.7rem;
+  padding: 0.5rem;
+}
+
+/* MORE */
+.bottom-icons-wrapper {
+  border: 3px solid pink;
+  margin: 10px;
+}
+
+.bottom-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.more-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-container .icons-container {
+  align-self: center;
+}
+
+/* FOOTER */
+footer {
+  background:rgb(219, 118, 135);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-container p {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 80px 0;
+  }
+
+  .hero-section {
+    padding-bottom: 0;
+  }
+  .profile-information h4 {
+    font-size: 2.8rem;
+  }
+
+  .profile-information h1 {
+    font-size: 8.2rem;
+  }
+
+  .profile-information h2 {
+    font-size: 5rem;
+  }
+
+  .profile-picture img {
+    width: 330px;
+    height: 330px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+  }
+
+  .sub-heading, .sub-heading-two {
+    font-size: 48px;
+  }
+
+  .presentation-section p {
+    font-size: 3rem;
+  }
+
+  p {
+    line-height: 5rem;
+  }
+
+  .project-container h4 {
+    font-size: 3rem;
+  }
+
+  .project-container p {
+    font-size: 2.7rem;
+  }
+
+  .project-container li {
+    font-size: 2.3rem;
+  }
+
+  .date {
+    font-size: 3rem;
+  }
+
+  .blog-heading {
+    font-size: 2.7rem;
+  }
+
+  .blog-text {
+    font-size: 2.3rem;
+  }
+
+  .skills-heading {
+    font-size: 3rem;
+  }
+
+  .skills-container li {
+    font-size: 2.7rem;
+  }
+
+  .bottom-icon {
+    width: 80px;
+    height: 80px;
+    padding: 40px;
+  }
+
+  .footer-container p {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    width: 60%;
+  }
+
 }
