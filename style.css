@@ -40,6 +40,7 @@ body {
   width: 20px;
   height: 20px;
 }
+
 .header-text {
   /* grid-row: 3/4;
   grid-column: 2/5; */
@@ -108,7 +109,7 @@ body {
 .project-articles-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2em;
+  gap: 4em;
 }
 
 .articles-desktop {
@@ -127,6 +128,8 @@ body {
 /****************THOUGHTS**************/
 .my-thoughts {
   text-align: left;
+  display: grid;
+  justify-content: center;
 }
 
 .thought-cards {
@@ -143,6 +146,13 @@ body {
 }
 
 /****************SKILLS*****************/
+
+.my-skills {
+  justify-content: center;
+  display: grid;
+  gap: 2em;
+}
+
 .skills-list-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -229,6 +239,7 @@ h2 span {
 
 h3 {
   font-family: 'Montserrat', sans-serif;
+  color: darkslateblue;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0.01em;
@@ -267,9 +278,30 @@ p span {
     height: 650px;
   }
 
+  .header-text {
+    margin: 0 0 0 8em;
+  }
+
   .profile-pic {
     width: 200px;
     height: 200px;
+  }
+
+  .nav-icons {
+    justify-self: center;
+  }
+
+  .icon-container {
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    padding: 12px 4px 4px 12px;
+    margin: 4px;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
   }
 
 /**************HEADERS & P STYLING**********/
@@ -285,8 +317,7 @@ p span {
     font-size: 28px;
   }
  
- 
-  .sub-title-header {
+   .sub-title-header {
     font-size: 32px;
   }
 
@@ -295,12 +326,13 @@ p span {
   }
 
   .for-more a {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
   }
 
   .contact {
     line-height: 30px;
+    color: darkslateblue;
   }
 
 }
@@ -312,6 +344,10 @@ p span {
   
   .header-section {
     height: 800px;
+  }
+
+  .header-text {
+    margin: 0 0 0 14em;
   }
 
   .profile-pic {
@@ -349,12 +385,12 @@ p span {
   }
 
 
-  /***********GRID CONTAINERS************/
+  /***********GRID, CONTAINERS************/
   
   .main-content section:not(.projects) {
-    padding: 4% 10%
+    padding: 4% 20%
   }
-  
+
   .project-articles-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2;
@@ -371,7 +407,7 @@ p span {
 
   .thought-cards {
     grid-template-columns: 1fr 1fr;
-    gap: 2em;
+    gap: 4em;
   }
 
   .thought-cards img {
