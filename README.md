@@ -18,3 +18,5 @@ I will continue on with the media-queries from tablet and desktop and adding som
 Lastly I will validate the files and add accessibility functionality.
 
 # view it live
+
+https://nostalgic-curie-37b7ec.netlify.app/
