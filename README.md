@@ -6,6 +6,6 @@ Before this project I thought I had a quite good understanding of the Flexbox mo
 
 I lost quite a lot of time with the styling and set up of the structure, which didn't leave much time for testing. I'll need to work on the text, pictures and color later on. And of course testing will be a continuous part of projects.
 
-If I had more time I'd focus on make a shorter, clearer and easier to read code and also I'd put in more time with the testing. 
+If I had more time I'd focus on make a shorter, clearer and easier to read code and also I'd put in more time with the testing. Also my site can't be controled with a keyboard. Will also work on that 
 
 View it live here: https://noemisalome.netlify.app/
