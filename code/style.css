@@ -1,13 +1,18 @@
 * {
   font-family: 'Roboto', sans-serif;
-  margin: 0
+  margin: 0;
 }
 :focus {
   outline: 3px solid blueviolet;   
 }
+header {
+  position: relative;
+  height: 400px;
+  width: 100vw;
+}
 .top-section {
-  height: 350px;
-  background-image:linear-gradient(
+  height: 100%;
+  background-image: linear-gradient(
     rgba(225, 225, 232, 0.5),
     rgba(133, 134, 139, 0.5)), 
     url(./images/testpic.jpg);
@@ -17,6 +22,8 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  padding: 46px 32px 0 32px;
 }
 .background-light {
   background: #F4F4F4;
@@ -27,17 +34,20 @@
 /* Text on header */
 .header-text {
   display: flex;
-  position: relative;
   flex-direction: column;
   line-height: 35px; 
   letter-spacing: 0.04em;
-  color: #ffffff;
   top: 15%;
-  margin-left: 6%;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
 }
 .portfolio-plus-name {
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 .portfolio {
   font-size: 15px;
@@ -48,33 +58,33 @@
 }
 .profession {
   font-size: 35px;
-  width: 50%;
+  padding: 10px;
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
 }
 .second-profession {
   font-size: 25px;
   font-weight: 300;
+  padding: 0;
 }
-.profile-photo-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-} 
 .profile-photo {
-  position: absolute;
   border-radius: 50%;
-  border: 2px solid #ffffff;
-  width: 150px;
-  height: 150px;
-  margin: 6% 6% 0 0;
-  top: 35px;
+  border: 2px solid #fff;
+  width: 180px;
+  height:180px;
+  margin-bottom: -35px;
   align-self: flex-end;
-  justify-content: flex-end;
+  margin-bottom: -35px;
 } 
 .media-icons-top{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin: 6% 6% 0 0;
+  align-self: flex-end;
+  width: 170px;
+  /* margin: 0;
+  padding: 0; */
 }
 .top-icon {
   color: #ffffff;
@@ -95,7 +105,7 @@
 }
 .fa:hover {
   opacity: 0.7;
-}  
+}
 .summary-icon {
   display: flex;
   align-items: center;
@@ -105,12 +115,12 @@
 .line {
   width: 50px;
   height: 3px;
-  background: #007bb5;
+  background: #0381bb;
 }
 .circle {
   width: 14px;
   height: 14px;
-  background: #007bb5;
+  background: #0381bb;
   border-radius: 50px;
   margin-left: -3px;
 }
@@ -125,7 +135,6 @@
 }
 .summary-text {
   font-weight: 200;
- 
 }
 .description-container {
   display: flex;
@@ -138,15 +147,15 @@
 .h2 {
   padding: 20px;
   font-size: 22px;
-  color: #007bb5;
+  color: #0381bb;
   line-height: 29px;
 }
 .h4 {
   font-size: 17px;
-  color: #007bb5;
+  color: #0381bb;
 }
 .marker {
-  background: #007bb5;
+  background: #0381bb;
   color: #ffffff;
   padding: 3px;
 }
@@ -157,7 +166,7 @@
 }
 .arrow {
   padding-left: 5px;
-  color: #007bb5;
+  color: #0381bb;
 }
 .tech-section {
   font-size: 17px;
@@ -169,7 +178,7 @@
 .featured-projects {
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: right
 }
 .text-decoration {
   text-decoration: none;
@@ -244,7 +253,8 @@
 .skills-header {
   justify-content: center;
   align-items: center;
-  padding-top: 20px;}
+  padding-top: 20px;
+}
 .skills-section {
   display: flex;
   flex-direction: column;
@@ -259,15 +269,15 @@
   flex-direction: column;
   justify-content: center;
 }
-.media-icons-bottom{
+/* .media-icons-bottom{
   padding: 0;
   margin-bottom: 0;
-}
+} */
 .bottom-icon {
-  color: #007bb5;
+  color: #0381bb;
   display: inline-block;
   border-radius: 60px;
-  box-shadow: 0px 0px 0px 2px #007bb5;
+  box-shadow: 0px 0px 0px 2px #0381bb;
   padding: 0.5em 0.6em;
   margin-left: 10px;
 }
@@ -276,7 +286,7 @@
   flex-direction: column;
 }
 .fa-phone {
- margin-bottom: 0; 
+  margin-bottom: 0; 
 }
 .footer {
   color: whitesmoke;
@@ -285,7 +295,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background:#007bb5;
+  background:#0381bb;
   padding: 30px;
   line-height: 20px;
   font-size: 17px;
@@ -294,23 +304,9 @@
 /*MEDIA QUERIES*/ 
 /* tablet */
 @media (min-width: 678px) {
-  .header-text {
-    font-size: 25px;
-    line-height: 50px; 
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    top: 15%;
-    margin-left: 6%;
-  }
-  .top-section {
-    height: 500px;
-  }
   .profile-photo {
-    position: relative;
     width: 180px;
     height: 180px;
-    margin: 6% 6% 0 0;
-    top: 15px;
   } 
   .portfolio{
     font-size: 17px;
@@ -330,31 +326,43 @@
   .media-icons-bottom {
     font-size: 20px;
   }
-  .footer {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .fa-phone {
-    padding-top: 7px; 
-   }
    .summary-text {
     font-size: 22px;
   }
   .summary {
-    padding: 100px 30px;
+    padding: 100px;
+  }
+  .tech-section {
+    padding: 30px 100px;
+  }
+  .featured-projects {
+    padding: 30px 0;
   }
   .skills-container {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: nowrap;
   } 
-  .my-thoughts-container {
-    padding: 60px;
+  .other-projects-card {
+    padding: 30px 0;
   }
+  .my-thoughts-container {
+    padding: 30px 100px;
+  }
+  .footer {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .fa-phone {
+    padding-top: 7px; 
+   }
 } 
 /* laptop */
 @media (min-width: 1200px) { 
   .media-icons-top {
     font-size: 20px;
    }
+  .my-thoughts-container {
+   padding: 80px;
+  }
 } 
