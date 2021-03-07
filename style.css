@@ -29,7 +29,8 @@ p {
   background-color: var(--orange);
   display: inline-block;
   color:#fff;
-  padding: 2px;
+  padding: 6px;
+  letter-spacing: 0.01em;
 }
 
 .h2-normal {
@@ -41,7 +42,7 @@ p {
   color: var(--orange)
 }
 
-h2 {
+.project-header {
   font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -81,14 +82,12 @@ ul {
 
 .header-links-wrapper {
   display: flex;
-  justify-content: space-between;
   align-self: flex-end;
-  width: 130.5px;
-  height: 40px;
 }
 
 .header-link {
   height: 40px;
+  margin-right: 5px;
 }
 
 .name-wrapper {
@@ -205,7 +204,7 @@ ul {
 .project-tech-item {
   margin-right: 8px;
   background-color: var(--light-turquoise);
-  padding: 5px;
+  padding: 8px;
   font-size: 9px;
   line-height: 11px;
   display: flex;
@@ -226,7 +225,7 @@ ul {
   width: 100%;
 }
 
-.article {
+.article, .second-article {
   text-align: left;
 }
 
@@ -236,13 +235,16 @@ ul {
 
 .short-article {
   padding: 15px 0;
+  text-align: left;
 }
 
 .thought {
-  color: var(--orange)
+  color: var(--orange);
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 
-.h3-thought {
+.thought-bold {
   font-family: "Roboto", sans-serif;
   line-height: 30px;
   font-size: 21px;
@@ -255,6 +257,7 @@ ul {
   font-size: 17px;
   line-height: 29px;
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .underline {
@@ -323,12 +326,6 @@ ul {
 .footer {
   background-color: var(--yellow);
   color: #fff;
-}
-
-h3 {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 25px;
   text-align: center;
 }
 
@@ -342,18 +339,74 @@ h3 {
   }
 
 @media (min-width: 992px) {
+  .header-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .name-wrapper {
+    width: 70%;
+  }
+
+  .name-wrapper > h1 {
+    font-size: 60px;
+    line-height: 78px;
+  }
+
+  .name-wrapper > p,b {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .name-wrapper > h2 {
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--orange);
+  }
+
+  p {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .p-feature {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .h2-background {
+    font-size: 48px;
+    line-height: 58.51px;
+    letter-spacing: 0.01em;
+  }
+
+  .h2-normal {
+    font-size: 38px;
+    line-height: 47px;
+  }
+
   .projects-flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
- .project-img {
-   height: 178px;
+  .project-header, .skill-list {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .project-img {
+    height: 178px;
   }
 
   .project-wrapper {
     width: 47%;
+  }
+
+  .project-tech-item {
+    font-size: 16px;
+    line-height: 21px;
   }
 
   .article, .second-article {
@@ -363,7 +416,31 @@ h3 {
   .second-article {
     display: block;
   }
+
+  .dublicate {
+    display: none;
+  }
+
+  .thought-bold {
+    font-size: 30px;
+    line-height: 41px;
 }
+
+  .thought-link {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .skill-wrapper.large-screen {
+    display: block;
+  }
+
+  .fab {
+    font-size: 60px;
+    padding: 44px;
+    width: 160px;
+    height: 160px
+  }
 
 @media (min-width: 1200px) {
   .project-img {
