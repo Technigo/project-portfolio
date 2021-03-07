@@ -17,8 +17,8 @@ body {
 }
 
 .header-text {
-  width: 220px;
-  height: 202px;
+  width: 200px;
+  height: 200px;
   font-family: Roboto;
   align-self: flex-start;
   margin: 0 0 0 24px;
@@ -86,7 +86,7 @@ h2 {
   padding: 4px;
   margin-top: 60px;
   text-align: center;
-  
+
 }
 
 .section1 {
@@ -118,17 +118,18 @@ h2 {
 }
 
 .info-text {
-  margin: 60px 40px 20px 40px;
+  margin: 60px 100px 20px 100px;
   font-size: 15px;
   letter-spacing: 0.2px;
-  line-height: 1.6;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .text {
-  margin: 0 40px 20px 40px;
+  margin: 0 100px 20px 100px;
   font-size: 15px;
   letter-spacing: 0.2px;
-  line-height: 1.6;
+  line-height: 1.5;  
 }
 
 .project-wrapper {
@@ -143,9 +144,10 @@ h2 {
   max-width: 100%;
 }
 
-.card-link {
-  text-decoration: none;
+.card-link1 {
   width: 50%;
+  margin: 0 0 40px 0;
+  text-decoration: none;
 }
 
 .article-img {
@@ -168,13 +170,27 @@ h2 {
   font-size: 12px;
   margin-top: 12px;
   color: black;
+  text-align: left;
+}
+
+.article-name {
+  color: red;
+}
+
+.thoughts-name {
+  color: black;
+  font-family: Roboto;
+}
+
+.card-link2 {
+  width: 50%;
+  margin-bottom: 30px;
 }
 
 
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
 }
 
 .tag {
@@ -215,7 +231,6 @@ h2 {
 
 .skills-section {
   font-family: Roboto;
-  margin: 0;
   display:flex;
   flex-direction: column;
   text-align: center;
@@ -226,11 +241,11 @@ h2 {
 .skill-container {
   display: flex;
   flex-flow: row wrap;
-  
+  margin: 0 0 40px 0;
 }
 
 .skills {
-  display:flex;
+  display: flex;
   flex-direction: column;
   text-align: center;
   width: 50%;
@@ -250,7 +265,7 @@ h2 {
 
 .contact-info {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 
 h5 {
@@ -270,17 +285,31 @@ footer {
   justify-content: center;
   display: flex;
   background-color: rgb(122, 54, 122);
+  padding: 0 0 40px 0px;
 }
 
 .more-icons {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 40px;
 }
 
 
 @media (min-width: 768px) {
 
+  .header-text {
+    margin: 0 0 0 100px;
+  }
+
+  .info-text {
+    margin: 70px 250px 60px 250px;
+  }
+  
+  .text {
+    margin: 20px 250px 60px 250px;
+  }
+  
   .project-wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -292,7 +321,7 @@ footer {
   .article-card {
     align-items: center;
   }
-  
+
   .project-wrapper a {
     width: 40%;
   }
@@ -305,7 +334,6 @@ footer {
   .profile-image img {
     width: 162px;
     height: 162px;
-    
   }
 
   .skill-container {
