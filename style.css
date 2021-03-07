@@ -12,18 +12,12 @@
     /* border: 1px solid pink; */
 }
 
-/* body {
-    overflow-x: hidden;
-} */
-
 .container {
     margin: 0 auto;
-    /* max-width: 500px; */
 }
 
 .container.flex {
     display: flex;
-    /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -136,6 +130,7 @@ header h2 {
     font-size: 58px;
     line-height: 1;
     font-weight: 300;
+    max-width: 450px;
 }    
 
 /* MAIN SECTION */
@@ -288,17 +283,13 @@ footer {
     background: var(--primary-red);
     color: white;
     text-align: center;
-    height: 200px;
+    height: 300px;
     padding: 24px 0;
 }
 
-footer h3 {
-    font-size: 24px;
-    margin-bottom: 24px;
-}
-
-footer p {
-    line-height: 1.4;
+footer h2 {
+    /* font-size: 24px; */
+    margin-bottom: 48px;
 }
 
 /* BREAKPOINTS */
@@ -307,6 +298,10 @@ footer p {
 @media (min-width: 576px) {
     p, .comma-list li {
         font-size: 20px;
+    }
+
+    .title {
+        margin-left: 36px;
     }
 
     .lars-pic-wrapper {
@@ -365,7 +360,8 @@ footer p {
     }
 
     .title h2 {
-        font-size: 75px;
+        margin-top: 24px;
+        font-size: 66px;
     }
 
     .title p {
@@ -432,17 +428,65 @@ footer p {
         max-width: 31%;
     }
 
+    header {
+        height: 500px;
+    }
+
+    header .title {
+        margin-top: 66px;
+    }
+
+    header .title h2 {
+        margin-top: 36px;
+        font-size: 78px;
+    }
+    header .title p {
+        margin-top: 12px;
+    }
     .social-media-icons {
         padding-right: 40px;
     }
-
+    
     .social-media-icons img {
         width: 50px;
         /* height: 80px; */
         margin: 16px;
     }
+    
+    .lars-pic-wrapper {
+        width: 280px;
+    }
+    
+    .lars-pic {
+        transform: translate(-80px, -100%);
+    }  
+    
+    .intro p {
+        margin: 100px 0;
+    }
+    
+    section {
+        padding: 56px;
+    }
+    
+    
 }
 
 /* LARGE DESKTOP */
 @media (min-width: 1200px) {
+    .container {
+        max-width: 1040px;
+    }
+    
+    header .title h2 {
+        max-width: unset;
+    }
+    .lars-pic {
+        transform: translate(-80px, -60%);
+    }  
+
+    .intro p,
+    .intro ul {
+        padding: 0 80px;
+    }
 }
