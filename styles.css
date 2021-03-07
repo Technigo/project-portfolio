@@ -1,6 +1,7 @@
 body{
     margin: 0px;
 }
+
 .header-img{
     position: relative;
     width: 100vw;
@@ -15,17 +16,10 @@ header{
 .header-content{
     position: absolute;
     width: 220px;
-    height: 150px;
-    top: 121px;
-    right: 0;
-    bottom: 0;
+    height: 520px;
+    top: 125px;
     left: 24px;
     font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 138%;
-    letter-spacing: 0.04em;
     color: yellow;
 }
 
@@ -37,6 +31,10 @@ header{
     top: 48px;
     display: flex;
     justify-content: space-between;
+}
+
+.icon-circle{
+    width: 40px;
 }
 
 .linkedin{
@@ -81,7 +79,7 @@ p{
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: justify;
 }
 
 h1{
@@ -125,19 +123,19 @@ h3{
 h4{
     font-family: Montserrat;
     font-size: 22px;
-    line-height: 27px;
-    background-color: yellow;
-    width: fit-content;
+    background-color: pink;
+    margin: 0;
 }
 
 h5{
     font-family: Montserrat;
     font-size: 21px;
     line-height: 25px;
-    letter-spacing: 0em;    text-align: center;
-    color: yellow;
-
-}
+    letter-spacing: 0em;    
+    text-align: center;
+    color: pink;
+    margin: 25px;
+}   
 
 h6{
     font-family: Roboto;
@@ -145,10 +143,8 @@ h6{
     margin: 10px 0px;
 }
 
-
 .project-description{
     margin: 0px;
-    line-height: 41px;
 }
 
 .portrait-img{
@@ -158,13 +154,29 @@ h6{
     right: 24px;
     top: 356px;
     border-radius: 50%;
-    border: 3px solid yellow;
+    border: 3px solid pink;
 }
+
+.startline {
+    display: inline-block;
+    width: 70px;
+    height: 3px;
+    background-color: pink;
+    margin-bottom: 8px;
+}
+  
+  .startcircle {
+    display: inline-block;
+    background-color: pink;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -10px;
+}   
 
 .mainpage{
     display: flex;
     flex-direction: column;
-
 }
 
 .chapter-section:nth-child(odd){
@@ -175,13 +187,7 @@ h6{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 24px 0px 24px;
-}
-
-.chapter-section-text{
-    font-size: 17px;
-    margin-top: 40px;
-    text-align: center;
+    padding: 40px 24px 0px 24px;
 }
 
 .project-coding-skills{
@@ -194,17 +200,33 @@ h6{
 .code-skills{
     margin: 0px 9px 0px 0px;
     padding: 0px 6px;
-    background: yellow;
+    background: pink;
     font-size: 9px;
     opacity: 0.5;
 }
 
+.project-board{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured-projects{
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.other-projects{
+    padding:11px 0 11px 0;
+}
+
 .project-img{
     position: relative;
+    padding-bottom: 15px;
 }
 
 .project-img-jpeg{
     width: 100%;
+    padding-top: 30px;
 }
 
 .project-name{
@@ -214,57 +236,64 @@ h6{
     bottom: 0;
     left: 0;
     top: 0;
-    color: white;
+    color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .thoughts-img{
     width: 100%;
+    padding-top: 30px;
 }
 
 .date-thoughts-article{
     font-family: Roboto;
     font-size: 17px;
-    line-height: 30px;
-    color: yellow;
+    color: pink;
 }
 
 .title-article{
     font-family: Roboto;
     font-weight: 700;
     font-size: 21px;
-    line-height: 30px;
 }
 
 .link-symbol{
     font-family: Roboto;
     font-size: 17px;
-    line-height: 30px;
-    color: orange;
+    color: rgb(240, 132, 180);
 }
 
 .date-thoughts-link{
-    font-family: Roboto;
-    font-size: 17px;
-    line-height: 29px;
-    text-decoration-line: underline;
-    color: #FA382F;
+    color: rgb(240, 132, 180);
+}
+
+.article-board{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .more-thoughts-link{
+    margin: 0;
+    width: 100%;
     font-family: Roboto;
     font-weight: 700;
     font-size: 17px;
-    line-height: 29px;
     text-decoration-line: underline;
 }
 
 .skills-section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-top: 30px;
 }
+
+.skills-overview{
+    justify-content: center;
+    width: 160px;
+}   
 
 .skills{
     font-size: 13px;
@@ -273,7 +302,7 @@ h6{
 }
 
 .skills-title{
-    color: red;
+    color: rgb(240, 132, 180);
     margin: 0px;
     text-align: center;
 }
@@ -282,8 +311,15 @@ h6{
     display: flex;
     justify-content: space-evenly;
 }
+
+.link-to-account{
+    padding: 0 10px 0 20px;
+    justify-content: center;
+}
+
 .account-name{
     font-size: 11px;
+    text-align: center;
 }
 
 footer{
@@ -307,3 +343,171 @@ footer{
     text-align: center;
 }
 
+@media (min-width: 701px){
+    .header-content{
+        margin-left: 70px;
+    }
+
+    .account-icons{
+        top: 70px;
+        right: 70px;
+    }
+
+    .portrait-img{
+        right: 70px;
+        width: 250px;
+        height: 250px;
+        border: 5px solid pink;
+        top: 300px;
+    }
+
+    .chapter-section{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    p{
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+
+    h4{
+        font-size: 28px;
+        margin-top: 25px;
+    }
+
+    h5{
+        font-size: 26px;
+        margin-top: 30px;
+    }
+
+    .project-title{
+        font-size: 22px;
+    }
+
+    .featured-projects{
+        padding-bottom: 25px;
+    }
+
+    .other-projects{
+        padding: 18px 0 18px 0;
+    }
+
+    .title-article{
+        font-size: 26px;
+    }
+
+    .more-thoughts-link{
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
+
+    .code-skills{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .skills-overview{
+        justify-content: center;
+        width: 200px;
+    }
+
+    .skills{
+        font-size: 15px;
+    }
+
+    .account-name{
+        font-size: 16px;
+    }
+}
+
+@media (min-width:993px){
+
+    .header-content{
+        width: 400px;
+    }
+
+    .portfolio-owner{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+
+    .project-name{
+        font-size: 45px;
+    }
+
+}
+@media (min-width:1200px){
+    .account-icons{
+        padding-right: 200px;
+    }
+
+    .portrait-img{
+        right: 200px;
+    }
+    
+    .header-content{
+        padding-left: 100px;
+        top: 150px;
+    }
+
+    .chapter-section{
+        padding: 0 200px 0 200px;
+    }
+
+    .chapter-section-text{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        line-height: 50px;
+        margin: 0;
+    }
+
+    h4{
+        font-size: 48px;
+        margin-top: 100px;
+    }
+
+    .project-board{
+        margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .featured-projects{
+        width: 45%;
+    }
+
+    .project-name{
+        font-size: 28px;
+    }
+
+    h6{
+       font-size: 25px; 
+    }
+
+    .article-board{
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .articles{
+        width: 45%;
+    }
+
+
+    
+    .skills-section{
+        margin-top: 40px;
+    }
+
+    .skills-overview{
+        margin-bottom: 30px;
+    }
+}
