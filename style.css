@@ -57,7 +57,6 @@ body {
     height: 202px;
     width: 210px;
     left: 30px;
-    /*top: 121px;*/
     color: white;
     text-align: left;
 }
@@ -260,21 +259,13 @@ a:visited {
 }
 
 @media (min-width: 768px) {
-    .social-media-icons {
-        left: 530px;
-    }
-
     .portfolio-information-container {
-        position: absolute;
         width: 600px;
-        left: 50px;
-        top: 200px;
     }
 
     .portrait {
         width: 190px;
         height: 190px;
-        left: 500px;
     }
     
     .featured-projects-container {
@@ -283,13 +274,64 @@ a:visited {
         justify-content: center;
     }
 
-    .featured-project-image {
+    .featured-project-image, .my-thoughts-image {
         width: 600px;
     }
     
-    .summary, .tech-section-container, .other-projects-container {
-        padding: 40px 84px;
+    .my-thoughts-container {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
     }
+}
+
+@media (min-width: 1024px) {
+   .portfolio-information-container {
+       left: 150px;
+   }
+
+   .my-name {
+       font-size: 20px;
+   }
+
+   .job-title {
+       font-size: 60px;
+   }
+
+   .my-background {
+       font-size: 36px;
+   }
+
+    .icons-img-container {
+        justify-content: space-between;
+        right: 150px;
+    
+    }
+
+    .portrait {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .all-featured-projects {
+        display: flex;
+        justify-content: center;
+    }
+
+    .featured-project-image {
+        width: 400px;
+    }
+
+    .featured-project {
+       width: 45%;
+       text-align: center;
+    }
+
+    .summary, .other-projects-container {
+        padding: 60px 150px;
+        text-align: center;
+    }
+
 }
 /*
 #2a3356
