@@ -1,7 +1,5 @@
 # portfolio
 
-To do
--Text with same font and styling in same class! Maybe BEM
--Add navbar links as buttons same as in über food
+I did not finish in time. I hope I can continue working on the portfolio and write mor about the testing later.
 
 See live webpage: https://linnea-helen.netlify.app/ 
