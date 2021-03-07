@@ -9,45 +9,52 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap"
         rel="stylesheet">
-    <title>My portfolio</title>
+    <title>Developer | Portfolio</title>
 </head>
 
 <body>
     <header>
         <section class="header-elements">
+            <!--Hero image-->
             <picture>
                 <source srcset="./image/ballon-small.jpg" media="(max-width: 767px)">
                 <source srcset="./image/ballon-medium.jpg" media="(max-width: 1023px)">
-                <img class="hero-image" src="./image/ballon-large.jpg" alt="Sky full of air ballons">
+                <img class="hero-image" src="./image/ballon-large.jpg" alt="Sky full of air ballons.">
             </picture>
+            <!--Icons-->
             <div class="social-media-icons-header">
                 <div class="social-media-icons">
-                    <a href="https://www.linkedin.com/in/andrea-larsson-11620975/" target="_blank">
+                    <a href="https://www.linkedin.com/in/andrea-larsson-11620975/" tabindex="0" role="button"
+                    aria-pressed="false" aria-label="Click to view Linkedin profile" target="_blank">
                         <img src="./image/linkedin-header-icon.png" alt="Linkedin icon">
                     </a>
-                    <a href="https://github.com/Andrealarsson" target="_blank">
+                    <a href="https://github.com/Andrealarsson" tabindex="0" role="button"
+                    aria-pressed="false" aria-label="Click to view Github profile" target="_blank">
                         <img src="./image/github-header-icon.png" alt="Github icon">
                     </a>
-                    <a href="https://www.instagram.com/andrea.kodar" target="_blank">
+                    <a href="https://www.instagram.com/andrea.kodar" tabindex="0" role="button"
+                    aria-pressed="false" aria-label="Click to view Instagram profile" target="_blank">
                         <img src="./image/instagram-header-icon.png" alt="Instagram icon">
                     </a>
                 </div>
             </div>
-
-            <h1 class="header-name" tabindex="0">
-                PORTFOLIO:
+            <!--Header text-->
+            <h1 tabindex="0" class="header-name">PORTFOLIO
                 <span class="andrea-name-header">ANDREA LARSSON</span>
             </h1>
             <div class="header-job-title">
-                <h2>frontend</h2>
-                <h2>developer</h2>
+                <h2 tabindex="0">frontend</h2>
+                <h2 tabindex="0">developer</h2>
             </div>
-            <img class="my-photo" src="./image/my-photo.jpg" alt="Photo of Andrea">
+            <img class="my-photo" src="./image/my-photo.jpg" alt="Picture of developer">
         </section>
     </header>
 
     <main class="main">
+        <!--Intro section-->
+        <!--Coming soon-->
         <section class="intro-section">
+            <h3 tabindex="0" class="intro-section-about-me">About Me</h3>
             <div class="intro-text">
                 <p tabindex="0">
                     <span class="intro-line"></span>
@@ -59,17 +66,19 @@
             </div>
         </section>
 
+        <!--Tech section-->
         <section class="tech-section">
             <div class="tech-section-text">
-                <h1 class="tech-title" tabindex="0">TECH</h1>
-                <p tabindex="0">HTML, CSS, JavaScript, API:s, GIT, mob-programming, pair-programming, Github.</p>
+                <h1 tabindex="0" class="tech-title">TECH</h1>
+                <p tabindex="0">HTML, CSS, <span class="highlight">JavaScript</span>, Responsive Design, Web accessibility, API:s, <span class="highlight">GIT</span>, mob-programming, pair-programming, Github.</p>
             </div>
         </section>
 
+        <!--Featured projects section-->
         <section class="featured-projects-section">
-            <h1 class="featured-projects-title" tabindex="0">FEATURED PROJECTS</h1>
+            <h1 tabindex="0" class="featured-projects-title">FEATURED PROJECTS</h1>
             <div class="project-container">
-                <a href="https://github.com/Andrealarsson/project-guess-who" target="_blank">
+                <a href="https://github.com/Andrealarsson/project-guess-who">
                     <div class="project-card">
                         <div class="project-img-text">
                             <img src="./image/Guess-who-app.PNG" alt="Picture of Guess who gameboard.">
@@ -80,25 +89,26 @@
                             who.
                             <span class="arrow-link" aria-hidden="true">&gt;&gt;</span>
                         </p>
-                        <div class="tags-container">
+                        <div tabindex="0" role="button"
+                        aria-pressed="false" aria-label="Click to view project Guess who" target="_blank" class="tags-container">
                             <p aria-hidden="true">HTML5</p>
                             <p aria-hidden="true">CSS3</p>
                             <p aria-hidden="true">JavaScript ES6</p>
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/Andrealarsson/project-weather-app" target="_blank">
+                <a href="https://github.com/Andrealarsson/project-weather-app">
                     <div class="project-card">
                         <div class="project-img-text">
                             <img src="./image/weather-app.PNG" alt="Picture of weather app.">
                             <h2 aria-hidden="true">WEATHER APP</h2>
                         </div>
                         <h3>WEATHER APP BUILD IN JAVASCRIPT WITH API:S.</h3>
-                        <p>Responsive web site using HTML, CSS, API:s and JavaScript. This is a wheather app of todays
-                            weather and a 5 days forecast.
+                        <p>Responsive web site using an open weather API. This is a weather app of todays weather and a 5 days forecast.
                             <span class="arrow-link" aria-hidden="true">&gt;&gt;</span>
                         </p>
-                        <div class="tags-container">
+                        <div tabindex="0" role="button"
+                        aria-pressed="false" aria-label="Click to view project Guess who" target="_blank" class="tags-container">
                             <p aria-hidden="true">HTML5</p>
                             <p aria-hidden="true">CSS3</p>
                             <p aria-hidden="true">JavaScript ES6</p>
@@ -106,7 +116,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/Andrealarsson/project-chatbot" target="_blank">
+                <a href="https://github.com/Andrealarsson/project-chatbot">
                     <div class="project-card">
                         <div class="project-img-text">
                             <img src="./image/chat-bot.PNG" alt="Picture of chatbot.">
@@ -117,24 +127,26 @@
                             something sweet from Bootstrap Bakery.
                             <span class="arrow-link" aria-hidden="true">&gt;&gt;</span>
                         </p>
-                        <div class="tags-container">
+                        <div tabindex="0" role="button"
+                        aria-pressed="false" aria-label="Click to view project Guess who" target="_blank" class="tags-container">
                             <p aria-hidden="true">HTML5</p>
                             <p aria-hidden="true">CSS3</p>
                             <p aria-hidden="true">JavaScript ES6</p>
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/Andrealarsson/project-business-site" target="_blank">
+                <a href="https://github.com/Andrealarsson/project-business-site">
                     <div class="project-card">
                         <div class="project-img-text">
                             <img src="image/business-site.PNG" alt="Picture of Business site">
                             <h2 aria-hidden="true">BUSINESS SITE</h2>
                         </div>
                         <h3>BUSINESS SITE FOR A TRAVEL COMPANY.</h3>
-                        <p>Responsive web site using HTML, CSS and JavaScript.
+                        <p>Responsive hero image, with a form and FAQ accordion.
                             <span class="arrow-link" aria-hidden="true">&gt;&gt;</span>
                         </p>
-                        <div class="tags-container">
+                        <div tabindex="0" role="button"
+                        aria-pressed="false" aria-label="Click to view project Guess who" target="_blank" class="tags-container">
                             <p aria-hidden="true">HTML5</p>
                             <p aria-hidden="true">CSS3</p>
                             <p aria-hidden="true">JavaScript ES6</p>
@@ -142,84 +154,151 @@
                     </div>
                 </a>
             </div>
+
+            <!--Other projects section-->
+            <!--coming soon-->
             <div class="other-projects-section">
-                <h1 class="other-projects-title" tabindex="0">OTHER PROJECTS</h1>
+                <h1 tabindex="0" class="other-projects-title">OTHER PROJECTS</h1>
+                <div class="other-projects-container">
+                <a class="link" href="#" target="_blank">
+                    <div class="other-projects-card">
+                    <h3>PROJECT NAME</h3>
+                    <p>Lorem, ipsum, dolor, sit amet, consectetur, adipiscing elit, sed do eiusmod 
+                        <span class="arrow-link" aria-hidden="true">&gt;&gt;</span>
+                    </p>
+                        <div tabindex="0" role="button"
+                        aria-pressed="false" aria-label="Click to view project Guess who" target="_blank" class="tags-container">
+                            <p aria-hidden="true">HTML5</p>
+                            <p aria-hidden="true">CSS3</p>
+                            <p aria-hidden="true">JavaScript ES6</p>
+                        </div>
+                    </div>
+                    </a>
+                    <a class="link" href="#" target="_blank">
+                        <div class="other-projects-card">
+                        <h3>PROJECT NAME</h3>
+                        <p>Lorem, ipsum, dolor, sit amet, consectetur, adipiscing elit, sed do eiusmod 
+                            <span class="arrow-link" aria-hidden="true">&gt;&gt;</span>
+                        </p>
+                        <div tabindex="0" role="button"
+                        aria-pressed="false" aria-label="Click to view project Guess who" target="_blank" class="tags-container">
+                            <p aria-hidden="true">HTML5</p>
+                            <p aria-hidden="true">CSS3</p>
+                            <p aria-hidden="true">JavaScript ES6</p>
+                        </div>
+                        </div>
+                        </a>
+                    </div>
             </div>
         </section>
 
+        <!--My thoughts section-->
+        <!--Coming soon-->
         <section class="my-thoughts-section">
-            <h1 class="my-thoughts-title" tabindex="0">MY THOUGHTS</h1>
+            <h1 tabindex="0" class="my-thoughts-title">MY THOUGHTS</h1>
             <div class="my-thoughts-container">
+                <div class="my-thoughts-card">
                 <img src="https://dummyimage.com/600x400/596e79/fff.png&text=image" alt="no image">
+                
+                <h4><span class="thoughts-date"> DATE </span> Headline</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat expedita inventore dolorem veniam
                     quaerat corporis, eligendi asperiores, officiis aut distinctio quas earum soluta eveniet? Alias
                     magnam eveniet iure eius vitae!</p>
+                </div>
+                    <div class="my-thoughts-card">
+                    <img src="https://dummyimage.com/600x400/596e79/fff.png&text=image" alt="no image">
+                    <h4><span class="thoughts-date"> DATE </span> Headline</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat expedita inventore dolorem veniam
+                        quaerat corporis, eligendi asperiores, officiis aut distinctio quas earum soluta eveniet? Alias
+                        magnam eveniet iure eius vitae!</p>
+                    </div>
             </div>
         </section>
 
+        <!--More thoughts section-->
+        <!--Coming soon-->
         <section class="more-thoughts-section">
-            <h1 class="more-thoughts-title" tabindex="0">MORE THOUGHTS</h1>
+            <h1 tabindex="0" class="more-thoughts-title">MORE THOUGHTS</h1>
             <div class="more-thoughts-text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat expedita inventore dolorem veniam
-                    quaerat corporis, eligendi asperiores, officiis aut distinctio quas earum soluta eveniet? Alias
-                    magnam eveniet iure eius vitae!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat expedita inventore dolorem veniam
-                    quaerat corporis, eligendi asperiores, officiis aut distinctio quas earum soluta eveniet? Alias
-                    magnam eveniet iure eius vitae!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat expedita inventore dolorem veniam
-                    quaerat corporis, eligendi asperiores, officiis aut distinctio quas earum soluta eveniet? Alias
-                    magnam eveniet iure eius vitae!</p>
+
+                    <a href="#">
+                        <h4><span class="thoughts-date"> DATE </span> Headline <span class="arrow-link" aria-hidden="true">&gt;&gt;</span></h4>
+                    </a>
+                    <a href="#">   
+                        <h4><span class="thoughts-date"> DATE </span> Headline <span class="arrow-link" aria-hidden="true">&gt;&gt;</span></h4>
+                    </a>
             </div>
         </section>
 
+        <!--Skills section-->
         <section class="skills-section">
-            <h1 class="skills-title" tabindex="0">SKILLS</h1>
+            <h1 tabindex="0" class="skills-title">SKILLS</h1>
             <div class="skills-list-container">
                 <div class="skill-list">
-                    <h2 tabindex="0">CODE</h2>
-                    <ul tabindex="0">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Javascript ES6</li>
-                        <li>Git</li>
-                    </ul>
-                    <h2 tabindex="0">TOOLBOX</h2>
-                    <ul tabindex="0">
-                        <li>GitHub</li>
-                        <li>VS Code</li>
-                        <li>Slack</li>
-                        <li>Git</li>
-                    </ul>
-                    <h2 tabindex="0">UPCOMING</h2>
-                    <ul tabindex="0">
-                        <li>Node.js</li>
-                    </ul>
+                    <div class="code">
+                        <h2 tabindex="0">CODE</h2>
+                        <ul tabindex="0">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Javascript ES6</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>    
+                    <div class="toolbox">
+                        <h2 tabindex="0">TOOLBOX</h2>
+                        <ul tabindex="0">
+                            <li>VS Code</li>
+                            <li>Terminal</li>
+                            <li>Figma</li>
+                            <li>Slack</li>
+                            <li>Git</li>
+                            <li>Netlify</li>
+                        </ul>
+                    </div>
+                    <div class="other">
+                        <h2 tabindex="0">OTHER</h2>
+                        <ul tabindex="0">
+                            <li>Pair-programming</li>
+                            <li>Mob-programming</li>
+                            <li>Web Accessibility</li>
+                        </ul>
+                    </div>  
+                    <div class="upcoming">
+                        <h2 tabindex="0">UPCOMING</h2>
+                        <ul tabindex="0">
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!--For more section-->
         <section class="for-more-section">
-            <h1 class="for-more-title" tabindex="0">FOR MORE</h1>
+            <h1 tabindex="0" class="for-more-title">FOR MORE</h1>
              <div class="social-media-icons-bottom">
-                <a href="https://www.linkedin.com/in/andrea-larsson-11620975/" target="_blank">
+                <a href="https://www.linkedin.com/in/andrea-larsson-11620975/" tabindex="0" role="button"
+                aria-pressed="false" aria-label="Click to view Linkedin profile" target="_blank">
                     <img src="./image/linkedin-bottom-icon.png" alt="Linkedin icon">
                     <h4 aria-hidden="true">LINKEDIN</h4>
                 </a>
-                <a href="https://github.com/Andrealarsson" target="_blank">
+                <a href="https://github.com/Andrealarsson" tabindex="0" role="button"
+                aria-pressed="false" aria-label="Click to view Github profile" target="_blank">
                     <img src="./image/github-bottom-icon.png" alt="Github icon">
                     <h4 aria-hidden="true">GITHUB</h4>
                 </a>
-                <a href="https://www.instagram.com/andrea.kodar" target="_blank">
+                <a href="https://www.instagram.com/andrea.kodar" tabindex="0" role="button"
+                aria-pressed="false" aria-label="Click to view Instagram profile" target="_blank">
                     <img src="./image/instagram-bottom-icon.png" alt="Instagram icon">
                     <h4 aria-hidden="true">INSTAGRAM</h4>
                 </a>
             </div>
         </section>
 
+        <!--Contact section-->
         <section class="contact-section">
             <h1 tabindex="0">CONTACT</h1>
-            <p tabindex="0">Andrea Larsson</p>
-            <p tabindex="0">+46 73 833 24 39</p>
+            <p tabindex="0" >Andrea Larsson</p>
             <p tabindex="0">andrea.e.larsson@hotmail.se</p>
         </section>
     </main>
