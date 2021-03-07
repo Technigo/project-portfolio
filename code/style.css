@@ -101,6 +101,7 @@ nav{
   font-size: 0.9rem;
   text-align: justify;
   font-family: Montserrat;
+  text-align: center;
 }
 .container {
   scroll-snap-type: y mandatory;
@@ -148,7 +149,7 @@ section {
 }
 .text-container{
   width: 90%;
-  margin: 0rem 1.2rem;
+  margin: 0rem auto;
   padding-top: 5.5rem;
   text-align: center;
   height: auto;
@@ -235,6 +236,9 @@ section {
 .skill-section{
   width: 50%;
 }
+.skill-section ul {
+  padding: 0;
+}
 .skill-section li{
   list-style: none;
 }
@@ -256,7 +260,35 @@ section {
 }
 @media(min-width:1024px){
   html{
-    font-size: 40px;
+    font-size: 23px;
+  }
+  #featured-projects{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project{
+    width: 34%;
+    height: 28vh;
+    flex-direction: column;
+    padding: 0.5rem 0rem;
+  }
+  .project-image{
+    width: 100%;
+    height: 74%;
+  }
+  .project-content{
+    width: 100%;
+    font-size: 0.6rem;
+  }
+  #featured-projects p {
+    font-size: 0.6rem;
+  }
+  #another-projects{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #another-projects p {
+    font-size: 0.6rem;
   }
 }
 @media(min-width:1366px){
