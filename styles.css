@@ -20,7 +20,7 @@ h2 {
     margin: 0px
 }
 h3 {
-    color: ivory;
+    color: white;
     text-align: center;
     font-size: 1.6em;
     font-weight: bold;
@@ -37,7 +37,7 @@ h4 {
 }
 
 h5 {
-    color: ivory;
+    color: white;
     text-align:center;
     font-size: 2em;
     text-transform: uppercase;
@@ -66,13 +66,14 @@ a, p {
     margin: .5em 0em;
 }
 
+
+
 /* GRID */
 
 .grid {
     display: grid;
     grid-template-columns: repeat(8, auto);
     grid-template-rows: repeat(8, auto);
-
 }
 
 
@@ -108,10 +109,11 @@ a, p {
     margin-bottom: -15px;
 }
 
+
+
 /* INTRODUCTION SECTION */
 
 .intro {
-    border: 1px solid black;
     background: #F4F4F4;
        
 }
@@ -121,6 +123,7 @@ a, p {
     margin: 40px 20px;
 }
 
+/* DESIGN BORROWED FROM SLACK / CODEPEN */
 .line {
     display: inline-block;
     width: 3em;
@@ -139,12 +142,8 @@ a, p {
 }   
 
 
+
 /* TECH SECTION */
-
-.tech {
-    border: 1px solid black;
-}
-
 
 .tech p {
     min-width: 327px;
@@ -152,18 +151,20 @@ a, p {
     text-align: center;
 }
 
+
+
 /* PROJECTS SECTION */
 
 .projects {
-    border: 1px solid black;
     background: #F4F4F4;
 }
 
 .projects h5 {
     grid-column: 2 / 8;  
-    grid-row: 2 / 4;
-    
+    grid-row: 2 / 4; 
 }
+
+
 
 /* FEATURED PROJECTS*/
 
@@ -182,6 +183,8 @@ a, p {
     grid-row: 4 / 9;
 }
 
+
+
 /* OTHER PROJECTS */
 
 .other-projects :nth-child(1){
@@ -196,11 +199,12 @@ a, p {
     margin: 15px 0px 0px 0px;
 }
 
+
+
 /* MY THOUGHTS SECTION */
 
 .thoughts {
-    border: 1px solid black;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .thoughts img {
@@ -214,6 +218,8 @@ a, p {
     grid-column: 2 / 8;  
     grid-row: 4 / 8;
 }
+
+
 
 /* SKILLS SECTION */
 
@@ -248,17 +254,44 @@ li {
     list-style-type: none;  
 }
 
+
+
 /* MORE SOCIAL LINKS SECTION */
 
-.for-more-flex-container {
-    display:flex;
-    justify-content: space-evenly;
+.linkedin {
+    grid-column: 3;  
+    grid-row: 1; 
+    text-align: center;
 }
+
+.github {
+    grid-column: 5;  
+    grid-row: 1; 
+    text-align: center;
+}
+
+.stackoverflow {
+    grid-column: 8;  
+    grid-row: 1; 
+    text-align: center;
+}
+
+
 
 /* FOOTER SECTION */
 
 .contact {
-    border: 1px solid black;
     background: #072BCE;
+    text-align: center;
 }
-
+.contact-details {
+    padding: 20px 20px 20px 20px;
+}
+.contact-details p {
+    color: white;
+}
+.contact-details p:nth-child(1) {
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+}
