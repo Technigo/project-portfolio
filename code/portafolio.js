@@ -39,28 +39,28 @@ const bestProjects = [
 const otherProjects = [
   {
     title: 'News site',
-    img: '/code/in-contruction-img.PNG',
+    img: './in-contruction-img.PNG',
     projectBrief: 'Responsive News website about video game',
     buildIn:'HTML5| CSS',
     link: 'https://games-news-rubmaigut.netlify.app/'
   },
   {
     title: 'Recipes site',
-    img: '/code/in-contruction-img.PNG',
+    img: './in-contruction-img.PNG',
     projectBrief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
     buildIn: 'HTML5| CSS| JavaScript',
     link: ''
   },
   {
     title: 'News site',
-    img: '/code/in-contruction-img.PNG',
+    img: './in-contruction-img.PNG',
     projectBrief: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
     buildIn:'HTML5| CSS',
     link: ''
   },
   {
     title: 'Recipes site',
-    img: '/code/in-contruction-img.PNG',
+    img: './in-contruction-img.PNG',
     projectBrief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
     buildIn: 'HTML5| CSS| JavaScript',
     link: ''
