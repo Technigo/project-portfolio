@@ -15,3 +15,6 @@ Requirements:
 
 This was a fun project that I will have a lot of use of in the future. The most difficult thing is to plan at the beginning of the week. I start by dividing all the sections and worked from top to bottom. But the last day I always think I could have planned better and come up with a better structure, better names of the classes and so on but time is running out. 
 I will continue working with my portfolio and make it even better!
+
+View my portfolio here:
+https://portfolio-andrea-larsson.netlify.app/
