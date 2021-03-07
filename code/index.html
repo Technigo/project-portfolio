@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta author="Caroline Byström">
-  <title>Caroline's portfolio</title>
+  <title>Caroline Byström</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <header class="header"> <!--change to header? + in CSS too. NOPS? -->
+  <header class="header">
     <div class="icons">
       <a href="https://github.com/Frivridna?tab=repositories">
         <img class="icon-10" src="./assets/img/github-logo.svg" alt="Icon and clickable link to GitHub repositories">
@@ -25,14 +25,14 @@
       <strong class="bold-position">Portfolio: Caroline Byström</strong>
       <h1 class="profession">frontend</h1>
       <h1 class="profession">developer</h1>
+      <p class="former-job-title">+ choreographer</p>
     </div>
       <img class="caroline-image" alt="A headshot image of Caroline Byström" src="./assets/img/IMG_5602.JPG" />
   </header>
   
-  <!-- if h2 is used above then don't use h2 here in the main section -->
   <main class="main-container">
     <section class="summary">
-      <p class="summary-text"><img src="./assets/img/mobile/arrow_mobile.svg" alt="image of an arrow pointing right"/>
+      <p class="summary-text"><img src="./assets/img/arrow.svg" alt="image of an arrow pointing right"/>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id leo in vitae turpis massa sed elementum. Sapien pellentesque habitant morbi tristique senectus et netus et. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Ullamcorper velit sed ullamcorper morbi tincidunt ornare. Volutpat lacus laoreet non curabitur gravida arcu ac. Sit amet nulla facilisi morbi. Suscipit adipiscing bibendum est ultricies integer quis auctor elit.
       </p>
     </section>
@@ -53,13 +53,13 @@
         <mark class="skill">GitHub</mark>
         </div>
     </section>
-    
+
     <section class="featured-projects">
       <div class="header-featured-projects">
         <h2 class="header-two">FEATURED PROJECTS</h2>
       </div>
       <div class="featured-projects-one">
-        <div class="project-container"> <!--add accessibility tags here ?-->
+        <div class="project-container">
           <div class="image-container"><a href="https://heuristic-banach-b932cd.netlify.app/">
             <img class="guess-who-game" src="assets/img/GuessWhoNEW.PNG" alt="Image of a digital Guess Who game"/>
             </a>
@@ -67,13 +67,13 @@
           <h3 class="header-three">GUESS WHO</h3>
           <h4 class="header-four">GUESS WHO GAME.</h4>
           <p>Digital version of the old character guessing board game Guess Who built with JavaScript.</p>
-          <div class="project-techniques">
+          <div class="project-techniques" tabindex="0" aria-label="project-techniques">
             <mark class="technique">HTML5</mark>
             <mark class="technique">CSS3</mark>
             <mark class="technique">JavaScript ES6</mark>
           </div>
         </div>
-        <div class="project-container"> <!--add accessibility tags here ?-->
+        <div class="project-container">
           <div class="image-container"><a href="https://quirky-yalow-caca93.netlify.app/">
             <img class="business-site" src="assets/img/business_site311.png" alt="Image of a business site"/>
             </a>
@@ -81,14 +81,14 @@
           <h3 class="header-three">LOST & FOUND</h3>
           <h4 class="header-four">BUSINESS SITE.</h4>
           <p> Repsonsive site with hero video and accordion. Built with HTML and CSS. </p>
-          <div class="project-techniques">
+          <div class="project-techniques" tabindex="0" aria-label="project-techniques">
             <mark class="technique">HTML5</mark>
             <mark class="technique">CSS3</mark>
           </div>
         </div>
       </div>
       <div class="featured-projects-two">
-        <div class="project-container"> <!--add accessibility tags here ?-->
+        <div class="project-container">
           <div class="project-image"><a href="https://pensive-goldwasser-55ee84.netlify.app/">
             <img class="weather-app" src="assets/img/weather_app311filterarctic.png" alt="Image of weather application"/>
             </a>
@@ -96,7 +96,7 @@
           <h3 class="header-three">WEATHER APP</h3>
           <h4 class="header-four">WEATHER APP.</h4>
           <p>Responsive web app built in JavaScript using open weather API.</p>
-          <div class="project-techniques">
+          <div class="project-techniques" tabindex="0" aria-label="project-techniques">
             <mark class="technique">HTML5</mark>
             <mark class="technique">CSS3</mark>
             <mark class="technique">JavaScript ES6</mark>
@@ -104,15 +104,15 @@
             <mark class="technique">Pair programming</mark>
           </div>
         </div>
-        <div class="project-container"> <!--add accessibility tags here ?-->
+        <div class="project-container">
           <div class="image-container"><a href="https://quirky-murdock-c00a99.netlify.app/">
             <img class="chatbot" src="assets/img/chatbot2cropped.png" alt="Image of moviepicker chatbot"/>
             </a>
           </div>
           <h3 class="header-three">HELP ME CHOOSE</h3>
           <h4 class="header-four">CHATBOT</h4>
-          <p>Moviepicker chatbot built with JavaScript.</p> <!--does a screenreader read p tags out? is it considered bad accessibility practice ?-->
-          <div class="project-techniques">
+          <p>Moviepicker chatbot built with JavaScript.</p>
+          <div class="project-techniques" tabindex="0" aria-label="project-techniques">
             <mark class="technique">HTML5</mark>
             <mark class="technique">CSS3</mark>
             <mark class="technique">JavaScript ES6</mark>
@@ -125,28 +125,30 @@
     <section class="other-projects">
       <h2 class="other-projects-header">OTHER PROJECTS</h2>
         <div class="other-projects-list">
-          <a aria-label="Link to Guess Who game on GitHub" role="link" class="projects-list" href="https://confident-noyce-6e46a9.netlify.app/">
+          <a aria-label="Link to Guess Who game on GitHub" class="projects-list" href="https://confident-noyce-6e46a9.netlify.app/">
           <p><span class="project-title">NEO NEWS SITE.</span> 
             A responsive news site for mobile, tablet and desktop, using flexbox for layout. 
               <span class="arrow"> &gt;&gt; </span>
           </p>
-          <div class="technologies">
+          </a>
+          <div class="technologies" tabindex="0" aria-label="technologies">
             <span class="yellow">HTML 5</span>
             <span class="yellow">CSS 3</span>
           </div>
-          <a aria-label="Link to unit tests on GitHub" role="link" class="projects-list" href="https://github.com/Frivridna/unit-tests">
-            <p><span class="project-title">UNIT TESTS.</span> 
-              Solving different unit tests and attempt of creating my own test. 
-                <span class="arrow"> &gt;&gt; </span>
-            </p>
-            <div class="technologies">
-              <span class="yellow">JavaScript</span>
-              <span class="yellow">NPM</span>
-              <span class="yellow">Node.js</span>
-            </div>
-        </div>
+          <a aria-label="Link to unit tests on GitHub" class="projects-list" href="https://github.com/Frivridna/unit-tests">
+          <p><span class="project-title">UNIT TESTS.</span> 
+            Solving different unit tests and attempt of creating my own test. 
+              <span class="arrow"> &gt;&gt; </span>
+          </p>
           </a>
+          <div class="technologies" tabindex="0" aria-label="technologies">
+            <span class="yellow">JavaScript</span>
+            <span class="yellow">NPM</span>
+            <span class="yellow">Node.js</span>
+          </div>
+        </div>
     </section>
+
     <section class="my-thoughts">
       <h2 class="header-two-desktop">MY THOUGHTS ABOUT CODE</h2>
       <h2 class="header-two-mobile">MY THOUGHTS</h2>
@@ -159,11 +161,12 @@
         Upcoming. My thoughts about my coding journey so far. 
           <span class="arrow"> &gt;&gt; </span>
     </section>
+
     <h2 class="header-two-marked">SKILLS</h2>
     <section class="technical-skills">
       <div class="technical-skills-container">
         <h6 class="code-header"><span class="red">CODE</span></h6>
-        <ul aria label="Tools I am working with" role="list" class="skills-and-toolbox">
+        <ul aria-label="Tools I am working with" role="list" class="skills-and-toolbox">
           <li>HTML5</li>
           <li>CSS3</li>
           <li>Flexbox</li>
@@ -173,7 +176,7 @@
       </div>
       <div class="technical-skills-container">
         <h6 class="code-header"><span class="red">UPCOMING</span></h6>
-        <ul aria label="Tools I am about to learn right now" role="list" class="skills-and-toolbox">
+        <ul aria-label="Tools I am about to learn right now" role="list" class="skills-and-toolbox">
           <li>React</li>
           <li>Node.js</li>
           <li>Unit Testing</li>
@@ -182,7 +185,7 @@
       </div>
       <div class="technical-skills-container">
         <h6 class="code-header"><span class="red">TOOLBOX</span></h6>
-        <ul aria label="Toolbox I am using" role="list" class="skills-and-toolbox">
+        <ul aria-label="Toolbox I am using" role="list" class="skills-and-toolbox">
           <li>Postman</li>
           <li>Slack</li>
           <li>Github</li>
@@ -190,7 +193,7 @@
       </div>
       <div class="technical-skills-container">
         <h6 class="code-header"><span class="red">MORE</span></h6>
-        <ul aria label="More skills that I have" role="list" class="skills-and-toolbox">
+        <ul aria-label="More skills that I have" role="list" class="skills-and-toolbox">
           <li>Mob programming</li>
           <li>Pair programming</li>
           <li>Web accessibility</li>
@@ -222,10 +225,9 @@
   <footer class="footer">
     <h5 class="contact-information">CONTACT</h5>
       <p class="footer-name">Caroline Byström</p> 
-      <p><a href="mailto: caroline.bystrom@gmail.com" class="email">caroline.bystrom@gmail.com</a></p>
-      <p><a href="tel:+_+46706984719" class="phone">+46 70 69 84 719</a></p>
+      <a href="mailto: caroline.bystrom@gmail.com" class="email" role="link" aria-label="e-mail">caroline.bystrom@gmail.com</a>
+      <a href="tel:+_+46706984719" class="phone" role="link" aria-label="phone-number">+46 70 69 84 719</a>
   </footer>
-  
   <script src="./script.js"></script>
 </body>
 </html>

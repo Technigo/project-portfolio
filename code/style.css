@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-/* Medium 500 Montserrat font-family: 'Montserrat', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-/* Roboto Medium 500 as a default fallback? font-family: 'Roboto', sans-serif; */
 
 * { 
   border: 1px solid white;
@@ -28,11 +26,10 @@ body {
   flex-direction: column;
 }
 
-/* change back to some of my positioning ****************************** */
 .heading {
   line-height: 25px;
   position: absolute;
-  top: 35%; /*change to 25 in desktop? CHANGE font-size for mobile it is huge!!*/
+  top: 35%;
   left: 10%;
   display: flex;  
   flex-direction: column;
@@ -43,29 +40,6 @@ body {
   font-size: 40px;
   line-height: 40px;
 }
-
-/*
-.bold-position {
-  font-size: 20px;
-  /* PORTFOLIO: NAME SURNAME frontend developer + digital designer *//*
-  position: absolute;
-  left: 24px;
-  top: 121px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-}*/
-/*
-.profession {
-  position: absolute;
-  left: 24px;
-  top: 160px;
-  font-size: 35px;
-  line-height: 37px;
-  word-break: keep-all; /*jag vill få orden att aligna under varandra i desktop, tablet och mobile*//*
-}
-*/
-
 
 .header .icons {
   margin-top: 40px;
@@ -91,6 +65,12 @@ body {
   object-fit: cover;
 }
 
+.former-job-title {
+  padding: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
 /* Main container */
 
 .main-container {
@@ -99,9 +79,8 @@ body {
   color: whitesmoke; 
   letter-spacing: 2px;
   display: flex;
-  /* justify-content: space-between;same as above */
   flex-direction: column;
-  flex-wrap: wrap; /*same as above */
+  flex-wrap: wrap;
 }
 
 .summary {
@@ -111,10 +90,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 25px 0 0 0;
-}
-
-.summary-text {
-
 }
 
 .tech {
@@ -176,7 +151,7 @@ body {
   display: none;
 }
 
-p { /*this one creates a lot of problem*/
+p { 
   padding: 10px; 
 }
 
@@ -187,9 +162,6 @@ p { /*this one creates a lot of problem*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.project-text { /*for p tags inside of the featured projects - else ta bort*/
 }
 
 .header-three {
@@ -206,7 +178,7 @@ p { /*this one creates a lot of problem*/
   line-height: 120%; 
 }
 
-.header-two { /*FIX THIS ONE it goes all the way out and does not behave as in inline element */
+.header-two { 
   display: inline-flex;
   color: #FFD369;
   background-color: #393E46;
@@ -305,10 +277,6 @@ p { /*this one creates a lot of problem*/
   color: #FFD369; 
 }
 
-.tech-skills {
-
-}
-
 .technical-skills-container {
   display: flex;
   flex-direction: column;
@@ -327,11 +295,6 @@ p { /*this one creates a lot of problem*/
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.red-bold {
-  color: #e5493c; /*change color to "red" if does not pass*/
-  font-weight: bold;
 }
 
 .for-more {
@@ -362,7 +325,7 @@ p { /*this one creates a lot of problem*/
   height: 55vh;
   font-family: Montserrat;
   font-size: 21px;
-  line-height: 25px; /* CHECK - does this do something now? */
+  line-height: 25px;
   color: #f5b825;
   display: flex;
   justify-content: center;
@@ -381,20 +344,26 @@ p { /*this one creates a lot of problem*/
 a, .footer {
   text-decoration: none;
   color: #f5b825; 
+  line-height: 45px;
 }
 
 a:hover, .footer {
   border-bottom:2px solid #f5b825;
 }
 
-/* IT IS HERE THAT THE PROBLEMS START */
 /* Media queries */
 @media (min-width: 700px) {
 
   .heading {
     top: 35%; 
     left: 10%;
-    line-height: 400%;
+    line-height: 330%;
+  }
+
+  .former-job-title {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 800;
   }
 
   .icon-10, .icon-13, .icon-8 {
@@ -447,7 +416,7 @@ a:hover, .footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-    text-align: center; /*dont do much*/
+    text-align: center;
 }
 
   .project-container {
@@ -458,6 +427,7 @@ a:hover, .footer {
 
   .chatbot, .business-site, .weather-app, .guess-who-game {
     height: 300px;
+    width: 100%;
     filter: brightness(50%);
   }
   
@@ -466,7 +436,8 @@ a:hover, .footer {
   }
 
   .red {
-    color: #cc1d0e;/*#e5493c;*/
+    /* color: #cc1d0e; */
+    color: orangered;
   }
   
   .technologies {
@@ -516,34 +487,5 @@ a:hover, .footer {
 .chatbot, .business-site, .weather-app, .guess-who-game {
   max-width: 300px; 
   filter: brightness(50%);
-  /* padding: 10px; change to 5px later ? */
 }
-
-@media (min-width: 1200px) {
-
-}
-
-/* PROJECT TITLE för featured projects */
-/*
-
-display: flex;
-align-items: center;
-text-align: center;
-*/
-
-
-
-
-
-/*
-main {
-  display: block;
-}
-*/
-
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
 
