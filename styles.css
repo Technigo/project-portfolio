@@ -67,7 +67,9 @@ a, p {
     margin: .5em 0em;
 }
 
-
+img{
+    max-width: 100%;
+}
 
 /* GRID */
 
@@ -75,7 +77,6 @@ a, p {
     display: grid;
     grid-template-columns: repeat(8, auto);
     grid-template-rows: repeat(8, auto);
-    justify-content: center;
 }
 
 
@@ -89,7 +90,6 @@ a, p {
 .header-image {
     grid-column: 1 / 9;  
     grid-row: 1 / 9;
-    width: 100vw;
 }
 
 .header-role {
@@ -102,10 +102,10 @@ a, p {
     font-size: 1em;
 }
 
-
 .header-profile-image {
     grid-column: 6 / 8;  
     grid-row: 6 / 9; 
+    margin: auto;
     margin-bottom: -15px;
 }
 .header-profile-image img {
@@ -116,13 +116,11 @@ a, p {
 /* INTRODUCTION SECTION */
 
 .intro {
-    background: #F4F4F4;
-       
+    background: #F4F4F4;   
 }
 
 .intro p {
-    min-width: 327px;
-    margin: 40px 20px;
+    margin: 40px;
 }
 
 /* DESIGN BORROWED FROM SLACK / CODEPEN */
@@ -177,13 +175,14 @@ a, p {
 .featured-image {
     grid-column: 2 / 8;  
     grid-row: 1 / 4;
-    width: 100%;
-    height: 100%;
+    margin: auto;
 }
 
 .featured-articles {
     grid-column: 2 / 8;  
     grid-row: 4 / 9;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
 
@@ -210,16 +209,18 @@ a, p {
     margin-bottom: 1em;
 }
 
-.thoughts img {
+.thought-one {
     grid-column: 2 / 8;  
     grid-row: 1 / 4;
-    width: 100%;
-    height: 100%;
+    max-width: 521px;
+    margin: auto;
 }
 
-.thoughts p {
+.thought-two {
     grid-column: 2 / 8;  
-    grid-row: 4 / 8;
+    grid-row: 5 / 9;
+    max-width: 521px;
+    margin: auto;
 }
 
 
@@ -233,20 +234,27 @@ a, p {
 .code-skills {
     grid-column: 2 / 4;  
     grid-row: 1 / 6;
+    margin: auto
+    
 }
 .toolbox-skills {
     grid-column: 4 / 6;  
     grid-row: 1 / 6;
+    margin: auto
+    
 }
 
 .more-skills {
     grid-column: 6 / 8;  
     grid-row: 1 / 6;
+    margin: auto
+    
 }
 
 .upcoming-skills {
     grid-column: 2 / 4;  
     grid-row: 6 / 9;
+    margin: auto;
 }
 
 ul {
@@ -265,18 +273,21 @@ li {
     grid-column: 3;  
     grid-row: 1; 
     text-align: center;
+    margin: auto
 }
 
 .github {
     grid-column: 5;  
     grid-row: 1; 
     text-align: center;
+    margin: auto
 }
 
 .stackoverflow {
     grid-column: 8;  
     grid-row: 1; 
     text-align: center;
+    margin: auto
 }
 
 
@@ -307,16 +318,41 @@ li {
     body {
       font-size: 16px;
     }
-  }
+}
 
   @media screen and (min-width: 769px) {
     body {
       font-size: 18px;
     }
+
+    .thought-one {
+        grid-column: 2 / 5;  
+        grid-row: 1 / 4;
+        padding-right: 10px;
+    }
+    
+    .thought-two {
+        grid-column: 5 / 8;  
+        grid-row: 1 / 4;
+        padding-left: 10px;
+    }
   }
+
 
   @media screen and (min-width: 1025px) {
     body {
       font-size: 24px;
     }
-  }
+ 
+    .thought-one {
+        grid-column: 2 / 5;  
+        grid-row: 1 / 4;
+        padding-right: 10px;
+    }
+    
+    .thought-two {
+        grid-column: 5 / 8;  
+        grid-row: 1 / 4;
+        padding-left: 10px;
+    }
+}
