@@ -64,10 +64,11 @@ header {
 }
 
 .social-media-icon-container {
-    width: 145px;
+    width: 150px;
     height: 50px;
     display: flex;
     position: absolute;
+    justify-content: space-between;
     top: 50px;
     right: 25px;
 }
@@ -101,19 +102,41 @@ header {
 
 /* DESKTOP */
 @media (min-width: 992px) {
+
+    header {
+        height: 600px;
+    }
     
     .header-text-container {
+        width: 500px;
         top: 150px;
-        left: 120px;
+        left: 110px;
+    }
+
+    .header-name {
+        font-size: 28px;
+    }
+
+    .main-job-title-a, .main-job-title-b {
+        font-size: 80px;
+    }
+
+    .secondary-job-title {
+        font-size: 45px;
+    }
+
+    .social-media-icon-container {
+        width: 240px;
+        right: 100px;
     }
 
     .social-media-icon-container img {
-        width: 80px;
+        width: 65px;
     }
 
     .my-profile-image {
-        width: 325px;
-        right: 200px;
+        width: 300px;
+        right: 160px;
         
     }
 }
