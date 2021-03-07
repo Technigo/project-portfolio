@@ -15,7 +15,7 @@ This week was putting my HTML and CSS skills to a test 🤯 This includes planni
 
 👉Another challange was web accessiblity testing, since it is considering a lot of different aspects to be included in the code, such as Semantic HTML (elements used for right purpose) aria labeling and tools for testing (screen reader and automation). The approach is systematic and continous iteration to make sure the accesiblity goals are met byt testing continously. 
 
-👉NEXT is adding more content ad the bootcamp evolves  and a bit more styling. 
+👉NEXT is adding more content as the bootcamp evolves and a bit more styling. 
 
 
 ## View it live
