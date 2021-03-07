@@ -1,10 +1,14 @@
 /*Mobile*/
-* {
-  font-family: "Montserrat", sans-serif;
-}
 
 body {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header-image {
@@ -12,32 +16,17 @@ body {
   height: 450px;
   background-size: cover;
   background-image: url("./assets/images/rhondak-native-florida-folk-artist-_Yc7OtfFn-0-unsplash.jpg");
+  background-position: center center;
 }
-.header-section {
-  /* position: relative; */
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  flex-direction: column;
-}
-.logo-section {
-  position: relative;
-  top: 8%;
-  left: 50%;
-  /* bottom: 0; */
-  /* right: 0%; */
+
+.icon-section {
+  justify-content: flex-end;
   display: flex;
 
-  /* justify-content: space-evenly; */
-  /* margin: 80px 50px; */
+  margin-top: 50px;
 }
 
-.logo {
-  width: 30px;
-  /* margin: 10px; */
-}
-
-.logo-section .circle {
+.icon-section .circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,22 +37,20 @@ body {
   margin: 5px;
 }
 
-.text-in-header-container {
-  /* margin: 0 0 0 30px; */
-  position: relative;
-  top: 15%;
-  left: 10%;
-  bottom: 0;
-  right: 0;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-direction: column; */
-  color: white;
+.icon {
+  width: 30px;
 }
 
-.name-text {
-  /* display: flex; */
+.header-text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  margin-left: 40px;
+  margin-top: 40px;
+}
 
+.portfolio-text {
   font-size: 16px;
 }
 
@@ -74,37 +61,20 @@ body {
   flex-direction: column;
 }
 
-.picture-in-header-container {
-  /* position: relative; */
-  /* top: 200px; */
-  /* left: 170px; */
-  /* bottom: 0; */
-  /* right: 0; */
-  /* display: flex; */
-  /* align-items: flex-end; */
-  /* justify-content: flex-end; */
-  /* margin-right: 50px; */
-  /* margin-bottom: -20px; */
-}
-.self-portait {
+.picture-of-me {
   position: relative;
-  top: 120px;
+  top: 30px;
   left: 50%;
-  bottom: 0;
-  right: 0;
   width: 140px;
   border-radius: 50%;
   border: 2px solid white;
 }
-/* .header-image { */
-/* width: 100%; */
-/* height: 50vh; */
-/* object-fit: cover; */
-/* } */
-/*Main*/
 
-/*Section 1 about me*/
-.grey-container-1 {
+/***MAIN***/
+
+/***Section 1 About me***/
+
+.about-me-container {
   width: 100vw;
   height: auto;
   background-color: rgb(215, 238, 238);
@@ -112,14 +82,12 @@ body {
 
 .text-about-me {
   font-size: 20px;
-  /* width: 80%; */
   padding: 20px 30px;
-  /* margin: 0 20px; */
 }
 
-/*Section 2 Tech skills*/
+/***Section 2 Tech skills***/
 
-.white-container-1 {
+.tech-container {
   width: 100vw;
   height: auto;
   display: flex;
@@ -131,8 +99,8 @@ body {
   color: white;
   display: inline;
 }
+
 .marker {
-  margin: ;
   padding: 5px 10px;
   border-radius: 0.8em 0.3em;
   background: transparent;
@@ -142,13 +110,6 @@ body {
     rgba(212, 0, 255, 0.7) 4%,
     rgba(255, 0, 149, 0.3)
   );
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-
-.tech-container {
-  /* padding: 10px; */
-  /* margin: 20px; */
 }
 
 .tech-text {
@@ -158,7 +119,7 @@ body {
 
 /*Section 3 Featured Projects*/
 
-.grey-container-2 {
+.featured-projects-container {
   width: 100vw;
   height: auto;
   background-color: rgb(215, 238, 238);
@@ -172,10 +133,6 @@ body {
   position: relative;
 }
 
-.project-header {
-  position: absolute;
-}
-
 .link-cards {
   display: flex;
   flex-direction: column;
@@ -185,6 +142,10 @@ body {
 
 .project-picture {
   width: 250px;
+}
+
+.h3-header {
+  position: absolute;
 }
 
 .link-container:link {
@@ -208,27 +169,25 @@ body {
   color: black;
 }
 
-/*Section 4 My thoughts*/
-.white-container-2 {
+/***Section 4 My thoughts***/
+
+.my-thoughts-container {
   width: 100vw;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* padding: 10px; */
-  /* margin: 20px; */
 }
 
 .my-thoughts-text {
-  /* padding: 10px; */
-  /* margin: 20px; */
-  /* width: 80%; */
   padding: 20px 30px;
   font-size: 20px;
 }
-/*Section 5 Skills*/
-.grey-container-3 {
+
+/***Section 5 Skills***/
+
+.skills-container {
   width: 100vw;
   height: auto;
   background-color: rgb(215, 238, 238);
@@ -236,22 +195,19 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* padding: 10px; */
-  /* margin: 20px; */
 }
 
-.skills-container {
+.skills-inner-container {
   width: 100vw;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 20px 30px;
+
   font-size: 20px;
 }
 
 .skills {
   display: inline-flex;
   padding: 10px;
-  /* margin: 20px; */
 }
 
 .unordered-list {
@@ -259,16 +215,17 @@ body {
   margin: 0 5px;
   padding: 0;
 }
-ul li {
-  padding: 5px;
-}
 
 .list-header {
   color: hotpink;
 }
 
-/* Section 6 For more*/
-.white-container-3 {
+ul li {
+  padding: 5px;
+}
+
+/*** Section 6 For more***/
+.for-more-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,15 +234,13 @@ ul li {
 
 .for-more-links-container {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
 }
 
 .github-black,
 .linkedin-black,
 .stack-black {
   width: 30px;
-
-  /* height: 30px; */
 }
 
 .for-more-links-container .circle-2 {
@@ -302,15 +257,13 @@ ul li {
 .clickable-link {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* align-items: space-between; */
-  padding: 20px;
+  padding: 12px;
 }
 .for-more-text {
   font-size: small;
 }
 
-/*Footer*/
+/***Footer***/
 
 .footer-container {
   width: 100vw;
@@ -322,89 +275,129 @@ ul li {
   align-items: center;
 }
 
-.footer-list-container {
-  padding: 10px;
-  margin: 20px;
-}
-
-/*.for-more-links {
-  display: flex;
-  flex-direction: row;
-}
-
 /*Tablet*/
+@media (min-width: 768px) {
+  .icon-section {
+    margin-right: 70px;
+  }
+  .icon {
+    width: 35px;
+  }
+  .icon-section .circle {
+    width: 50px;
+    height: 50px;
+  }
 
+  .header-text-container {
+    margin-left: 100px;
+  }
+  .picture-of-me {
+    position: relative;
+    top: 5px;
+    left: 70%;
+    width: 170px;
+  }
+
+  /*section 1 */
+  .text-about-me {
+    padding: 40px 150px;
+  }
+
+  /* Section 2*/
+
+  .tech-text {
+    padding: 40px 150px;
+    line-height: 30px;
+  }
+
+  /* Section 3*/
+
+  .link-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project-container {
+    margin: 20px 50px;
+  }
+
+  /* Section 4*/
+
+  .my-thoughts-text {
+    padding: 40px 150px;
+  }
+
+  /* Section 5*/
+  .skills {
+    display: inline-flex;
+    padding: 40px 130px;
+  }
+  .clickable-link {
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+}
 /* Desktop */
 @media (min-width: 992px) {
-  .header-image {
-    height: 650px;
+  .icon-section {
+    margin-right: 225px;
   }
-  .header-section {
-    /* position: relative; */
-    display: flex;
-    /* justify-content: center; */
+  .icon {
+    width: 40px;
+  }
+  .icon-section .circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-text-container {
+    margin-left: 300px;
+  }
+  .picture-of-me {
+    top: 2px;
+    left: 65%;
+    width: 180px;
+  }
+
+  /*section 1 */
+
+  .text-about-me {
+    padding: 40px 300px;
+  }
+
+  /* Section 2*/
+  .tech-text {
+    padding: 40px 300px;
+  }
+
+  /* Section 3*/
+
+  .link-cards {
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-  }
-  .logo-section {
-    position: relative;
-    top: 10%;
-    left: 80%;
-    /* bottom: 0; */
-    /* right: 0%; */
-    display: flex;
-
-    /* justify-content: space-evenly; */
-    /* margin: 80px 50px; */
-  }
-
-  .text-in-header-container {
-    /* margin: 0 0 0 30px; */
-    position: relative;
-    top: 20%;
-    left: 30%;
-
-    color: white;
-  }
-
-  .name-text {
-    /* display: flex; */
-
-    font-size: 16px;
-  }
-
-  .profession-text {
-    font-size: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
   }
 
-  .picture-in-header-container {
-    /* position: relative; */
-    /* top: 200px; */
-    /* left: 170px; */
-    /* bottom: 0; */
-    /* right: 0; */
-    /* display: flex; */
-    /* align-items: flex-end; */
-    /* justify-content: flex-end; */
-    /* margin-right: 50px; */
-    /* margin-bottom: -20px; */
+  /* Section 4*/
+  .my-thoughts-text {
+    padding: 40px 300px;
   }
-  .self-portait {
-    position: relative;
-    top: 120px;
-    left: 50%;
-    bottom: 0;
-    right: 0;
-    width: 140px;
-    border-radius: 50%;
-    border: 2px solid white;
+
+  /* Section 5*/
+  .skills {
+    display: inline-flex;
+    padding: 40px 250px;
   }
-  /* .header-image { */
-  /* width: 100%; */
-  /* height: 50vh; */
-  /* object-fit: cover; */
-  /* } */
+  .clickable-link {
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .footer-list-container {
+    margin: 50px 0;
+  }
 }
