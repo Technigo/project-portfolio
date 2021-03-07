@@ -1,11 +1,15 @@
 :root {
-  --primary: #5c1968;
-  --secondary: #d5abda;
-  --light: #eff7e1;
-  --darken-blend: #7c6b7e;
+  --primary: #8f4683;
+  --secondary: #dba1b1;
+  --light: #eed5dc;
+  --darken-blend: #6b553b;
+  --very-dark: #2d1e19;
+  --contrast: #66843e;
 }
 
 * { margin: 0;}
+
+/*~~~~~~Styling for mobile~~~~~~*/
 
 body {
   width: 100vw;
@@ -13,16 +17,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--light)
+  background-color: var(--light);
+  color: var(--very-dark);
 }
 
 /********* TOP SECTION *********/
 
 .top-section {
-  background-image: url("./assets/header-image-mobile.jpg");
-  background-color: var(--secondary);
+  background-image: url(./assets/background-park-mobile.jpg);
+  background-size:cover;
+  background-color: var(--contrast);
   background-blend-mode: multiply;
-  background-size: contain;
   display: flex;
   flex-direction: column;
   padding: 48px 24px 0;
@@ -65,7 +70,7 @@ align-self: flex-end;
 
 .top-header {
   color: var(--light);
-  margin: 33px 0;
+  margin: 33px 0 0;
 }
 
 .top-header-portfolio-name {
@@ -165,8 +170,20 @@ align-self: flex-end;
   margin: 24px 0 33px;
 }
 
-.featured-project-image-container {
+.featured-project-image-container1 {
   background-image: url("./assets/guess-who.JPG");
+  background-color:var(--darken-blend);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 10px;
+}
+
+.featured-project-image-container2 {
+  background-image: url("./assets/weather-app.JPG");
   background-color:var(--darken-blend);
   background-blend-mode: multiply;
   background-size: cover;
@@ -236,4 +253,55 @@ bottom: 0;
 left: 0;
 z-index: 1;
 }
+
+/*~~~~~~Styling for tablet and small desktop~~~~~~*/
+@media (min-width:768px) and (max-width: 1200px) {
+  body {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light);
+    color: var(--very-dark);
+  }
+  
+  /********* TOP SECTION *********/
+  
+  .top-section {
+    background-image: url(./assets/background-park-desktop.jpg);
+    background-size:cover;
+    background-color: var(--contrast);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px 0;
+  }
+}
+
+/*~~~~~~Styling for big desktop~~~~~~*/
+@media (min-width: 1200px) {
+  body {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light);
+    color: var(--very-dark);
+  }
+  
+  /********* TOP SECTION *********/
+  
+  .top-section {
+    background-image: url(./assets/background-park-desktop.jpg);
+    background-size:cover;
+    background-color: var(--contrast);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px 0;
+  }
+}
+
 
