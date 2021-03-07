@@ -1,5 +1,5 @@
 :root {
-  --primary: #F5565E;
+  --primary: #5661B8;
   --secondary: #efeff2;
 }
 
@@ -41,7 +41,7 @@ body {
 /* INTRO SECTION */
 
 .intro {
-  background-color: var(--primary);
+  background-color: #858DCC;
   padding: 50px 30px;
   display: flex;
   flex-direction: column;
@@ -126,6 +126,11 @@ body {
   opacity: 1;
 }
 
+.project-item:focus .project-description {
+  visibility: visible;
+  opacity: 1;
+}
+
 .project-img {
   object-fit: cover;
   min-width: 100%;
@@ -157,12 +162,17 @@ body {
   margin: 0;
   color: white;
   font-size: 30px;
-  text-shadow: 1px 1px 1px #787676;
+  text-shadow: 1px 3px 1px var(--primary);
 }
 
 .project-links a {
   text-decoration: none;
   color: white;
+  font-size: 30px;
+}
+
+.project-links span {
+  font-size: 30px;
 }
 
 /* STACK SECTION */
@@ -186,7 +196,7 @@ body {
 
 .footer {
   height: 100px;
-  background-color: var(--primary);
+  background-color: #858DCC;
   margin-top: 50px;
 }
 

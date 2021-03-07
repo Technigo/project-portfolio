@@ -64,7 +64,7 @@ PROJECTS.forEach((project) => {
     <div class="project-description">
       <p>${project.description}</p>
       <span class="project-links">
-        <a href="${project.gitlink}"><i class="fab fa-github"></i></a> | <a href="${project.livelink}"><small>LIVE PAGE</small></a>
+        <a href="${project.gitlink}"><i class="fab fa-github"></i></a> | <a href="${project.livelink}"><i class="fas fa-external-link-square-alt"></i></a>
       </span>
     </div>
   </div>
