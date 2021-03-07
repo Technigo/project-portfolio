@@ -12,54 +12,60 @@
 </head>
 <body>
     <header>
-        <!-- <img src="./resources/header-bg.svg" alt="background image"> -->
-        <div class="social-media-icons">
-            <a href="https://github.com/lars-soderman"><img src="resources/github.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/lars-soderman/"><img src="resources/linkedin.svg" alt=""></a>
-            <a href="https://stackoverflow.com/users/14960150/lars-s%c3%b6derman"><img src="resources/stack-overflow.svg" alt=""></a>
-        </div>
-        <div class="title">
-            <h1>Portfolio: <span>Lars Söderman</span></h1>
-            <h2>Frontend developer</h2>
-            <p>+ digital designer</p>
-        </div>
-        <div class="lars-pic-wrapper">
-            <img src="/resources/lars-pic.jpg" alt="Picture of me">
-        </div>
+        <section class="container">
 
+            <!-- <img src="./resources/header-bg.svg" alt="background image"> -->
+            <div class="social-media-icons">
+                <a href="https://github.com/lars-soderman"><img src="resources/github.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/lars-soderman/"><img src="resources/linkedin.svg" alt=""></a>
+                <a href="https://stackoverflow.com/users/14960150/lars-s%c3%b6derman"><img src="resources/stack-overflow.svg" alt=""></a>
+            </div>
+            <div class="title">
+                <h1>Portfolio: <span>Lars Söderman</span></h1>
+                <h2>Frontend developer</h2>
+                <p>+ digital designer</p>
+            </div>
+            <div class="lars-pic">
+                <div class="lars-pic-wrapper">
+                    <img src="/resources/lars-pic.jpg" alt="Picture of me">
+                </div>
+            </div>
+        </section>
     </header>
     <main>
         <section class="intro">
-            <p> Hello! &#128075; I am a perfectly normal person. I have a background in graphic design, some recently aquired frontend development skills, yada yada, digital design, animation, ux, data, research... I’m a details oriented big picture kind of guy!</p>
-            <h3>Tech</h3>
-            <ul class="tech">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Flexbox</li>
-                <li>CSS Grid</li>
-                <li>API:s</li>
-                <li>Git</li>
-            </ul>
-            <h3>Soon</h3>
-            <ul class="tech">
-                <li>React</li>
-                <li>React Hooks</li>
-                <li>Redux</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Mongo DB</li>
-                <li>Accessibility</li>
-                <li>Python</li>
-                <li>Svelte</li>
-                <li>Vue</li>
-                <li>TDD</li>
-            </ul>
-        </section>
-
-        <section class="featured-projects">
-            <h2>Featured projects</h2>
             <section class="container">
+
+                <p> Hello! &#128075; I am a perfectly normal person. I have a background in graphic design, some recently aquired frontend development skills, yada yada, digital design, animation, ux, data, research... I’m a details oriented big picture kind of guy!</p>
+                <h3>Tech</h3>
+                <ul class="comma-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Flexbox</li>
+                    <li>CSS Grid</li>
+                    <li>API:s</li>
+                    <li>Git</li>
+                </ul>
+                <h3>Soon</h3>
+                <ul class="comma-list">
+                    <li>React</li>
+                    <li>React Hooks</li>
+                    <li>Redux</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Mongo DB</li>
+                    <li>Accessibility</li>
+                    <li>Python</li>
+                    <li>Svelte</li>
+                    <li>Vue</li>
+                    <li>TDD</li>
+                </ul>
+            </section>
+        </section>
+        <section class="featured projects">
+            <h2>Featured projects</h2>
+            <section class="container flex">
                 <div class="project card">
                     <a href="https://github.com/lars-soderman/kitten-weather">
                         <div class="thumbnail">
@@ -109,9 +115,31 @@
                 </div>
             </section>
         </section>
-        <section class="more-projects">
+        <section class="more">
             <h2>More projects</h2>
             <section class="container">
+                <div class="project">
+                    <a href="#">
+                        <img src="#" alt="">
+                        <h3>Guess who</h3>
+                        <p>Some text about this project</p>
+                        <ul class="tags">
+                            <li>Tag</li>
+                            <li>Another tag</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="#">
+                        <img src="#" alt="">
+                        <h3>Recipe site</h3>
+                        <p>Some text about this project</p>
+                        <ul class="tags">
+                            <li>Tag</li>
+                            <li>Another tag</li>
+                        </ul>
+                    </a>
+                </div>
                 <div class="project">
                     <a href="#">
                         <img src="#" alt="">
@@ -138,7 +166,27 @@
         </section>
         <section class="thoughts">
             <h2>Thoughts on code</h2>
-                <section class="container">
+            <section class="container flex">
+                <div class="project card">
+                    <a href="#">
+                        <div class="thumbnail">
+                            <div class="img-placeholder"></div>
+                            <!-- <img src="#" alt=""> -->
+                            <h3>Techbyxor</h3>
+                        </div>
+                        <p>My very insightful thoughts...</p>
+                    </a>
+                </div>
+                <div class="project card">
+                    <a href="#">
+                        <div class="thumbnail">
+                            <div class="img-placeholder"></div>
+                            <!-- <img src="#" alt=""> -->
+                            <h3>Techbyxor #2</h3>
+                        </div>
+                        <p>Even more insightful thoughts...</p>
+                    </a>
+                </div>
                 <div class="project card">
                     <a href="#">
                         <div class="thumbnail">
@@ -162,9 +210,37 @@
             </section>
         </section>
 
-        <section class="non-frontend-projects">
+        <section class="non-frontend projects">
             <h2>Non-frontend projects</h2>
-            <section class="container">
+            <section class="container flex">
+                <div class="project card">
+                    <a href="#">
+                        <div class="thumbnail">
+                            <div class="img-placeholder"></div>
+                            <!-- <img src="#" alt=""> -->
+                            <h3>UX design projects</h3>
+                        </div>
+                        <p>Some text about this project</p>
+                        <ul class="tags">
+                            <li>Tag</li>
+                            <li>Another tag</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="project card">
+                    <a href="#">
+                        <div class="thumbnail">
+                            <div class="img-placeholder"></div>
+                            <!-- <img src="#" alt=""> -->
+                            <h3>Graphic design projects</h3>
+                        </div>
+                        <p>Some text about this project</p>
+                        <ul class="tags">
+                            <li>Tag</li>
+                            <li>Another tag</li>
+                        </ul>
+                    </a>        
+                </div>
                 <div class="project card">
                     <a href="#">
                         <div class="thumbnail">
@@ -198,50 +274,52 @@
     </main>
     <section class="skills">
         <h2>Skills</h2>
-        <div>
-            <h3>Tech</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript ES6</li>
-                <li>React</li>
-                <li>Styled Components</li>
-                <li>Github</li>
-            </ul>
-            <h3>Soon</h3>
-            <ul>
-                <li>Redux</li>
-                <li>Node.js</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Toolbox</h3>
-            <ul>
-                <li>Atom</li>
-                <li>Postman</li>
-                <li>Netlify</li>
-                <li>Illustrator</li>
-                <li>Figma</li>
-                <li>Keynote</li>
-                <li>Slack</li>
-            </ul>
-        </div>
-        <div>
-            <h3>More</h3>
-            <ul>
-                <li>Digital design</li>
-                <li>Branding</li>
-                <li>Strategy</li>
-                <li>Process design</li>
-                <li>Concept development</li>
-                <li>Agile</li>
-                <li>Motion graphics</li>
-            </ul>
-        </div>
+        <section class="container flex">
+            <div>
+                <h3>Tech</h3>
+                <ul class="comma-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript ES6</li>
+                    <li>React</li>
+                    <li>Styled Components</li>
+                    <li>Github</li>
+                </ul>
+                <h3>Soon</h3>
+                <ul class="comma-list">
+                    <li>Redux</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Toolbox</h3>
+                <ul class="comma-list">
+                    <li>Atom</li>
+                    <li>Postman</li>
+                    <li>Netlify</li>
+                    <li>Illustrator</li>
+                    <li>Figma</li>
+                    <li>Keynote</li>
+                    <li>Slack</li>
+                </ul>
+            </div>
+            <div>
+                <h3>More</h3>
+                <ul class="comma-list">
+                    <li>Digital design</li>
+                    <li>Branding</li>
+                    <li>Strategy</li>
+                    <li>Process design</li>
+                    <li>Concept development</li>
+                    <li>Agile</li>
+                    <li>Motion graphics</li>
+                </ul>
+            </div>
+        </section>
     </section>
     <section class="for-more">
         <h2>For more</h2>
-        <div class="social-media-icons">
+        <div class="social-media-icons bottom">
             <a href="https://github.com/lars-soderman"><img src="resources/github.svg" alt=""></a>
             <a href="https://www.linkedin.com/in/lars-soderman/"><img src="resources/linkedin.svg" alt=""></a>
             <a href="https://stackoverflow.com/users/14960150/lars-s%c3%b6derman"><img src="resources/stack-overflow.svg" alt=""></a>
