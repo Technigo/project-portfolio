@@ -5,23 +5,11 @@
 }
 
 body {
-  color: #000000;
   font-family: 'Montserrat', sans-serif;
   font-size: 17px;
 }
 
-.sr-only { /*BEHÖVER JAG DENNA?**/
-  display: none;
-}
-
 /*** GENERAL STYLING ***/
-.main {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-self: center;
-}
-
 .main-background {
   background-color: #F4F4F4;
 }
@@ -35,14 +23,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;  
-}
-
-.red {
-  color: #ff0000;
-}
-
-.bold {
-  font-weight: bold;
 }
 
 .header-box { 
@@ -62,6 +42,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.red {
+  color: #ff0000;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -79,7 +63,6 @@ a {
 .header__icons-wrapper {
   position: absolute;
   width: 130.5px;
-  height: 40px;
   top: 48px;
   right: 24.5px;
   display: grid;
@@ -118,7 +101,6 @@ a {
   font-size: 40px;
   line-height: 49px;
   margin: 10px 0;
-  letter-spacing: 0;
 }
 
 .header__title-two {
@@ -126,13 +108,11 @@ a {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0;
-  margin-top: 5px;
 }
 
 .header__portrait {
   position: absolute;
   width: 180px;
-  height: 180px;
   right: 24px;
   top: 356px;
 }
@@ -168,8 +148,7 @@ a {
 }
 
 /*** PROJECT ***/
-.project__wrapper { /*DÖMA OM DEN GENERELL OCH TA UPP DEN*/
-  margin: 0 24px;
+.project__wrapper {
   letter-spacing: 0.01em; 
   line-height: 29px;
   margin: 49px 24px 43px 24px; 
@@ -193,7 +172,6 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   width: 100%;
 }
 
@@ -202,7 +180,6 @@ a {
   color: #FFFFFF;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   letter-spacing: 0.01em;
 }
 
@@ -211,12 +188,10 @@ a {
 }
 .project__title {
   color: #3C096C;
-  font-weight: 700;
 }
 
 .project__tag-wrapper {
   display: flex;
-  flex-wrap: wrap;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -247,7 +222,6 @@ a {
 }
 
 .project__link-two {
-  text-decoration: none;
   text-decoration-line: underline;
   color: #000000;
 }
@@ -260,18 +234,16 @@ a {
 
 .toughts { 
   display: flex;
-  line-height: 29px;
   margin: 10px 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .toughts__link {
-  text-decoration: none;
   text-decoration-line: underline;
   color: red;
 }
 
 .toughts__link-two {
-  text-decoration: none;
   text-decoration-line: underline;
   font-weight: bold;
   color: #000000;
@@ -287,16 +259,11 @@ a {
   text-align: center;
 }
 
-.skills__container {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .skills h3 {
   font-size: 17px;
 }
 
-.skills__container ul, li {
+.skills ul, li {
   list-style-type: none;
   padding: 7px 0;
 }
@@ -306,7 +273,13 @@ a {
 }
 
 /*** FOR MORE ***/
-.icons a {
+.icons__wrapper {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ margin: 49px 24px 43px 24px;
+}
+
+.icons__wrapper a {
   color: #3C096C;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -316,12 +289,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.icons__wrapper {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- margin: 49px 24px 43px 24px;
 }
 
 .icon__img {
@@ -334,7 +301,7 @@ a {
   align-items: center;
 }
 
-.icons p {
+.icons__wrapper p {
   padding: 10px;
 }
 
@@ -342,7 +309,6 @@ a {
 .footer {
   background: #072BCE;
   color: #FFFFFF;
-  display: flex;
   justify-content: center;
   height: 302px;
 }
@@ -354,7 +320,6 @@ a {
 .footer__content p {
   text-align: center;
   line-height: 25px;
-  margin: 0;
 }
 
 /*** MEDIA QUERIES ***/ 
@@ -371,10 +336,6 @@ a {
     font-size: 25px;
     line-height: 35px;
   }  
-
-  .text-box-transparent { 
-    font-size: 24px;
-  }
 
   .header__icons-wrapper {
     width: 180px;
@@ -427,24 +388,8 @@ a {
     margin-top: 20px;
   }
 
-  .project__tag-wrapper {
-    margin-top: 5px;
-  }
-
-  .project__content {
-    margin: 15px 0;
-  }
-
-  .project__link-two, 
-  .project__title,
-  .toughts__link, 
-  .skills {
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-  }
   .skills {
     grid-template-columns: 1fr 1fr 1fr; 
-    line-height: 41px;
   }
 }
 
@@ -463,12 +408,11 @@ a {
 
   .header-box { 
     font-size: 35px;
-    line-height: 35px;
   }  
 
   .text-box-transparent { 
-    font-size: 30px;
-    margin: 80px 0 0 0;
+    font-size: 28px;
+    margin-top: 60px;
   }
 
   .header__icons-wrapper {
@@ -493,7 +437,6 @@ a {
 
   .header__content {
     font-size: 20px;
-    line-height: 35px;
   }
 
   .header__title {
@@ -503,7 +446,6 @@ a {
 
   .header__title-two {
     font-size: 32px;
-    line-height: 48px;
   }
 
   .header__portrait {
@@ -516,53 +458,48 @@ a {
     margin-left: -8px;
   }
 
-  .project__img-title {
-    font-size: 28px;
-    letter-spacing: 0.01em;
+  .project__grid {
+    gap: 40px;
   }
 
   .project__content-wrapper 
   .project__title, 
   p {
-    padding: 5px 0;
-    line-height: 35px;
+    line-height: 40px;
   }
 
   .project__tag-box {
     font-size: 14px;
-    letter-spacing: 0.03em;
-    margin-right: 8px;
     height: 30px;
   }
   
-  .project__content {
-    margin: 40px 0;
-  }  
-
-  .skills h3 {
-    font-size: 24px;
-  }
-
-  .icons a {
-    font-size: 16px;
+  .icons__wrapper p {
+    font-size: 17px;
   }
 
   .icon__img {
     border: 2px solid #3C096C;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 
   .icon-more {
-    height: 100px;
+    height: 70px;
+  }
+
+  .footer__content p {
+    padding: 5px 0;
   }
 
 }
 
 @media (min-width: 1700px) {
-
   body {
     font-size: 30px;
+  }
+  
+  .main__wrapper p {
+    margin: 0 80px 0 100px;
   }
 
   .header-box { 
@@ -573,7 +510,6 @@ a {
 
   .text-box-transparent { 
     font-size: 38px;
-  
   }
 
   .header__icons-wrapper {
@@ -596,10 +532,6 @@ a {
     line-height: 37px;
     font-size: 28px;
     letter-spacing: 4%;
-  }
-
-  .header__name {
-    font-weight: 700;
   }
 
   .header__title {
@@ -651,4 +583,26 @@ a {
     line-height: 45px;
   }
 
+  .project__link-two, 
+  .project__title,
+  .toughts__link, 
+  .skills .red {
+    font-size: 25px ;
+  }
+  
+  .icons__wrapper p {
+    font-size: 25px;
+  }
+  .icon__img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .icon-more {
+    height: 90px;
+  }
+
+  .footer__content p {
+    padding: 5px 0;
+  }
 }
