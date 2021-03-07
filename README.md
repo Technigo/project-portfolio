@@ -19,4 +19,4 @@ This week was putting my HTML and CSS skills to a test 🤯 This includes planni
 
 
 ## View it live
-The site can be viewed here: https://frosty-allen-628bec.netlify.app/
+The site can be viewed here: https://frosty-allen-628bec.netlify.app/ 
