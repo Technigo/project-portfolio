@@ -5,13 +5,17 @@ sans-serif;*/
 
 :root {
 
---primary-background: #ffffff;
---secondary-background: #f3ecf1;     
+--primary-background:#ffffff;
+--secondary-background: rgba(193, 203, 217, 0.8);
+--tertiary-background:#6F6E73;   
     
 --primary-font-family: 'Montserrat', sans-serif;
 --secondary-font-family: 'Roboto', sans-serif;
 
---primary-font-color: #ffffff; 
+--primary-font-color:#ffffff; 
+--secondary-font-color:#6F6E73;
+
+--primary-span-color:#9797A6; var(--primary-span-color);
 
 }
 
@@ -100,6 +104,7 @@ h3 {
     border: 3px solid var(--primary-background);
     border-radius: 50%;
     object-fit: cover;
+    
 }
 
 
@@ -112,6 +117,7 @@ h3 {
     padding-left: 24px;
     
     background: var(--secondary-background);
+    opacity: 0.7;
     
     
 }
@@ -155,11 +161,12 @@ p {
     color: white;
     margin-bottom: 24px;
     text-align: center;
-    margin-top: 50px;
+    
 }
 
 .underline span {
-    background-color: #d4acc9;
+    background:var(--primary-span-color);
+    padding: 3px;
 }
 
 
@@ -172,6 +179,8 @@ p {
     padding-bottom: 48px;
     padding-left: 24px;
     padding-right: 24px;
+    background-color: var(--secondary-background);
+    opacity: 0.8;
 }
 
 .project-image {
@@ -214,6 +223,7 @@ p {
     letter-spacing: 0.01em;
     color: #d4acc9;
     margin-top: 24px;
+    text-align: start;
 }
 
 .featured-projects-h3 {
@@ -226,6 +236,13 @@ font-size: 17px;
 line-height: 29px;
 margin-bottom: 9px;
 text-align: start;
+}
+
+.tech-section {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .tech-p {
@@ -241,8 +258,11 @@ text-align: start;
 
 .tech-p span {
     
-    background-color: #f1d5e9;
-    padding: 5px;
+    background: var(--primary-span-color);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
     margin-right: 7px;
     
 }
@@ -250,7 +270,14 @@ text-align: start;
 .my-thoughts-section {
     padding-left: 24px;
     padding-right: 24px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
 
+.other-projects-container{
+   width: 100%;
+   margin-top: 20px;
+   margin-bottom: 20px;
 }
 
 .other-projects-h1 {
@@ -261,6 +288,7 @@ font-size: 21px;
 line-height: 25px;
 color:  #d4acc9;
 text-align: center;
+margin-top: 60px;
 margin-bottom: 25px;
 }
 
@@ -271,6 +299,7 @@ font-weight: 400;
 font-size: 17px;
 line-height: 29px;
 color:  #d4acc9;
+text-align: start;
 }
 
 .other-projects-h3 {
@@ -281,6 +310,7 @@ font-size: 17px;
 line-height: 29px;
 color: black;
 text-align: start;
+margin-bottom: 9px;
 }
 
 .month-year-p {
@@ -291,6 +321,7 @@ font-size: 17px;
 line-height: 32px;
 color: #d4acc9; 
 text-align: start;
+margin-top: 22px;
 }
 
 .headline {
@@ -321,16 +352,20 @@ text-align: start;
 
 .skills-section {
     
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     height: auto;
-    background: #F4F4F4;
+    background: var(--secondary-background);
     padding-right: 24px;
     padding-left: 24px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    opacity: 0.8;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .skills-h4 {
@@ -344,7 +379,7 @@ color: black;
 
 .skills span {
     font-weight: 700;
-    color:  #d4acc9; 
+    color: var(--primary-span-color);
 }
 
 .skills-p {
@@ -356,8 +391,28 @@ color: black;
     color: black;  
 }
 
+.skills {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
 
-.for-more-section {}
+.for-more-section {
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.for-more-p {
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 13px;
+color:  #d4acc9; 
+}
 
 .for-more-figures {}
 
@@ -369,11 +424,11 @@ footer {
 
     padding-right: 24px;
     padding-left: 24px;
-    background: #926c87;
+    
     align-items: center;
     text-align: center;
     justify-content: center;
-    
+    background: var(--tertiary-background):
    
 }
 
