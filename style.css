@@ -1,19 +1,19 @@
 body {
   margin: 0;
-  padding: 0;
   background-color: rgb(224, 168, 230);
 }
 
+.dark-section {
+  background-color:rgb(238, 224, 238)
+}
+
+/*Top section*/
 .header-container {
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(177,114,229,1) 100%);
   color: white;
   display: flex;
   flex-direction: column;
-}
-
-.dark-section {
-  background-color:rgb(238, 224, 238)
 }
 
 .header-text {
@@ -40,9 +40,7 @@ body {
   width: 200px;
   height: 200px;
   margin-right: 20px;
-  margin-bottom: -30px;
-  
-  
+  margin-bottom: -30px;  
 }
 
 .icons {
@@ -50,9 +48,6 @@ body {
   margin: 10px 40px 10px 0;
 }
 
-ul {
-  list-style: none;
-}
 
 li {
   display: inline-block;
@@ -64,29 +59,25 @@ li {
 
 li a {
   display: table-cell;
-  vertical-align: middle;
   text-align: center;
+  vertical-align: middle;
   height: 60px;
   width: 60px;
 }
 
 
-
 h1 {
   font-family: Montserrat;
-  font-size: 60px;
+  font-size: 50px;
   margin: 0;
   
 }
-
-
 
 h2 {
   color: white;
   padding: 4px;
   margin-top: 60px;
   text-align: center;
-
 }
 
 .section1 {
@@ -100,6 +91,7 @@ h2 {
   width: 100%;
 }
 
+/*Summery section*/
 .line {
   display: inline-block;
   width: 50px;
@@ -125,6 +117,7 @@ h2 {
   text-align: left;
 }
 
+/*Tech section*/
 .text {
   margin: 0 100px 20px 100px;
   font-size: 15px;
@@ -132,6 +125,7 @@ h2 {
   line-height: 1.5;  
 }
 
+/*Project section*/
 .project-wrapper {
   display: flex;
   flex-direction: column;
@@ -174,7 +168,7 @@ h2 {
 }
 
 .article-name {
-  color: red;
+  color: rgb(234, 0, 255);
 }
 
 .thoughts-name {
@@ -186,7 +180,6 @@ h2 {
   width: 50%;
   margin-bottom: 30px;
 }
-
 
 .tech-tags {
   display: flex;
@@ -205,9 +198,9 @@ h2 {
   line-height: 12px;
   padding: 6px;
   margin: 10px 5px 0 0;
-  
 }
 
+/*Other project section*/
 .other-section {
   color: rgb(234, 0, 255);
   font-family: Montserrat;
@@ -220,15 +213,13 @@ h2 {
   align-items: center;
 }
 
-
-
-.red {
+.color {
   background-color: rgb(234, 0, 255);
   font-size: 20px;
   font-family: Montserrat;
-
 }
 
+/*Skills section*/
 .skills-section {
   font-family: Roboto;
   display:flex;
@@ -263,22 +254,23 @@ h2 {
   line-height: 0;
 }
 
-.contact-info {
+/*For more section*/
+.more-icons {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
 }
 
-h5 {
-  margin: 0;
-  padding: 10px 0 0  10px;
-}
-
+/*Footer section*/
 footer {
   display: flex;
   flex-direction: column-reverse;
 }
 
 .contact-info {
+  display: flex;
+  flex-direction: column;
   font-family: Montserrat;
   font-size: 14px;
   align-items: center;
@@ -288,26 +280,29 @@ footer {
   padding: 0 0 40px 0px;
 }
 
-.more-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 40px;
-}
-
-
+/*Responsive design*/
 @media (min-width: 768px) {
 
   .header-text {
     margin: 0 0 0 100px;
   }
 
+  .profile-image {
+    padding-top: 5%;
+    margin-bottom: -2%;
+  }
+  
+  .profile-image img {
+    width: 170px;
+    height: 170px;
+  }
+
   .info-text {
-    margin: 70px 250px 60px 250px;
+    margin: 70px 300px 60px 300px;
   }
   
   .text {
-    margin: 20px 250px 60px 250px;
+    margin: 20px 300px 60px 300px;
   }
   
   .project-wrapper {
@@ -317,23 +312,13 @@ footer {
     align-items: center;
     width: 600px;
   }
-  
-  .article-card {
-    align-items: center;
-  }
 
-  .project-wrapper a {
+    .project-wrapper a {
     width: 40%;
   }
 
-  .profile-image {
-    padding-top: 5%;
-    margin-bottom: -2%;
-  }
-  
-  .profile-image img {
-    width: 162px;
-    height: 162px;
+  .article-card {
+    align-items: center;
   }
 
   .skill-container {
