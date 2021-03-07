@@ -15,7 +15,7 @@ At this stage in the bootcamp, we are learning about the importance of accessibi
 </ul>
 
 <h2>What I've learned</h2>👓
-Planning is fundamental when it comes to achieving good results in a short timeframe. As I'm still learning how to handle properly handle CSS3, i wasn't left with much time to perform a good testing. I could also see how our favorite design elections are not always the best in terms of usanility. i t shocked me to see how important it is to be both esthetically and practically sharp in order to build a great quality product.
+Planning is fundamental when it comes to achieving good results in a short timeframe. As I'm still learning how to handle properly handle CSS3, I wasn't left with much time to perform a good testing. I could also see how our favorite design elections are not always the best in terms of usability. It shocked me to see how important it is to be both esthetically and practically sharp in order to build a great quality product.
 
 <h2>See it live</h2>👀
 

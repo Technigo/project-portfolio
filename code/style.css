@@ -18,7 +18,7 @@ p {
 /*header*/
 
 .hero {
-    background-image: url("./assets/ichio-nmQxtSHSgnQ-unsplash.jpg");
+    background-image: url("./assets/atle-mo-aNHthOFYCOM-unsplash.jpg");
     background-size: cover;
     padding: 0 24px;
     display: flex;
@@ -130,7 +130,6 @@ main {
 }
 
 section {
-    margin: 10px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -150,14 +149,14 @@ section {
     width: 50px;
     height: 2px;
     background-color: 
-    #fe351d;
+    #e5605d;
     margin-bottom: 6px;
 }
 
 .summary-red-dot {
     display: inline-block;
     background-color:
-    #fe351d;
+    #e5605d;
     width:15px;
     height: 15px;
     border-radius: 50%;
@@ -172,7 +171,7 @@ h2 {
     line-height: 27px;
     text-align: center;
     background-color: 
-    #fe351d;
+    #e5605d;
     color: white;
     padding: 0 8px;
     margin: 0 0 32px;
@@ -183,7 +182,7 @@ h3 {
     line-height: 25px;
     text-align: center;
     color: 
-    #fe351d;
+    #e5605d;
     margin: 40px 0;
 }
 .tech-section {
@@ -262,7 +261,7 @@ h4 {
     line-height: 11px;
     letter-spacing: 0.01em;
     background-color: 
-    #fe351d;
+    #e5605d;
     padding: 5px;
     color: white;
 }
@@ -326,17 +325,20 @@ a {
 /*skills*/ 
 
 .list-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .list-with-header {
     text-align: center;
-    width: 120px;   
+    width: 120px;
+
 }
 
-.list-with-header:nth-of-type(3) {
+.list-with-header:nth-of-type(4) {
     display: none;
 }
 
@@ -344,7 +346,7 @@ h6 {
     font-weight: 700;
     font-size: 17px;
     line-height: 29px;
-    color: #fe351d;
+    color: #e5605d;
     margin: 0;
 }
 
@@ -363,16 +365,17 @@ ul {
     justify-content: space-evenly;
 }
 
-.icons-bottom-circle {
+.icons-bottom {
     width: 60px;
     height: 60px;
     border: 2px solid
-    #fe351d;
+    #e5605d;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     margin-bottom: 18px;
     box-sizing: border-box;
+    
 }
 
 .icons-bottom img {
@@ -393,14 +396,40 @@ ul {
     line-height: 13px;
     text-align: center;
     color:  
-    #fe351d;
+    #e5605d;
 }
 
-.footer {
+footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 60px;
+    padding-top: 16px;
+    padding: 16px;
+    padding-bottom: 20px;
+    background-color: 
+    #e5605d;
 }
 
+@media (min-width: 768px) {
+    section {
+        padding: 80px 0;
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .thoughts-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .list-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
 
