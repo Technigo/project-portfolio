@@ -7,4 +7,4 @@ This site is built using HTML and CSS and did the layout with flexbox and grid.
 The site is tested for accessability and also crossbrowser tested.
 
 Link to the site:
-https://awesome-feynman-e73b55.netlify.app/
+https://annsofi-jonsson-portfolio.netlify.app/
