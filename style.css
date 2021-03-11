@@ -14,6 +14,10 @@ a{
     color: #FF484C;
 }
 
+.highlight:hover{
+    opacity: 0.5;
+}
+
 /*******STANDARD SECTION FOR SUMMARY, TECH AND MORE SECTION*****/
 .standard-section{
     display: flex;
@@ -164,6 +168,12 @@ header{
     height: 50px;
     margin-right: 20px;
     border-radius: 100%;
+    transition: opacity 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.border-top:hover{
+    opacity: 0.5;
 }
 
 .top-name-description{
@@ -213,7 +223,7 @@ header{
 
 /******SUMMARY SECTION******/
 .summary-container{
-    margin: 30px;
+    margin: 10px;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     line-height: 25px;
@@ -243,7 +253,9 @@ header{
     margin-left: -10px;
 }   
 /******TECH SECTION*******/
-
+.teach-headline{
+    margin: 0;
+}
 .tech-section{
     display: flex;
     flex-direction: column;
@@ -253,7 +265,7 @@ header{
 }
 
 .tech-description{
-    margin: 0px 30px;
+    margin: 0px 20px 10px 20px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     
@@ -406,8 +418,11 @@ header{
     height: 70px;
     border-radius: 100%;
     margin: 20px;
+    cursor: pointer;
 }
-
+.border-more:hover{
+    opacity: 0.5;
+}
 /********FOOTER********/
 footer{
     display: flex;
@@ -431,10 +446,14 @@ footer p{
         .standard-section{
             height: 250px;
         }
-       
         .standard-projects-container{
             grid-template-columns: repeat(2, 1fr); 
             gap: 30px;
+        }
+
+        .summary-container .tech-description{
+            margin-left:50px;
+            margin-right: 50px;
         }
 
         .another-project-card{
@@ -457,6 +476,11 @@ footer p{
         .standard-projects-container{
             grid-template-columns: repeat(2, 1fr);
             gap: 50px;
+        }
+
+        .summary-container .tech-description{
+            margin-left: 60px;
+            margin-right: 60px;
         }
 
         .another-project-card{
