@@ -1,354 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Pauline's portfolio</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
+      <header class="header">
+        <div class="header-bg"></div>
+        <div class="header-bg__heading" tabindex="0">
+          <h1 class="header-bg__heading-name">
+            PORTFOLIO:
+            <b> PAULINE ANDERSSON </b>
+          </h1>
+          <h1 class="header-bg__heading-title">frontend developer</h1>
+          <h1 class="header-bg__heading-subtitle">+ biomed. scientist</h1>
+        </div>
+        <div class="header-icons">
+          <a
+            class="icon-container"
+            href="https://www.linkedin.com/in/pauline-andersson-3375321a3/"
+          >
+            <img src="./assets/linkedin.svg" alt="Linkedin icon" />
+          </a>
+          <a class="icon-container" href="https://github.com/Pauan8">
+            <img src="./assets/github.svg" alt="Github icon" />
+          </a>
+          <a
+            class="icon-container"
+            href="https://stackoverflow.com/c/technigo/users/166"
+          >
+            <img src="./assets/stackoverflow.svg" alt="Stack overflow icon" />
+          </a>
+        </div>
+        <div class="header-portrait" title="Portrait picture"></div>
+        <div class="header-about-me">
+          <p>
+            <img src="./assets/start-fig.svg" alt="start of text figure" />
+            Hi! I am an eager new frontend developer that also have a background
+            in science - which makes me detail-oriented, flexible and full of
+            ideas. As a very curious, motivated and creative person; I just
+            can't wait to show what I can bring in to the tech field. I never
+            say no to a challange!
+          </p>
+        </div>
+      </header>
 
-        <header class="header">
-            <div class="header-bg">
+      <main class="main">
+        <section class="tech">
+          <h2 class="heading">TECH</h2>
+          <p class="tech-text">
+            HTML, <span class="tech-text__emp">CSS</span>, Keyframes, CSS-grid,
+            Flexbox, <span class="tech-text__emp"> JavaScript</span>, ES6, Web
+            Accessibly, <span class="tech-text__emp">Responsive design</span>,
+            API:s, mob-programming, pair-programming, Github, Agile methodology,
+            Unit test, Code Peer-preview, Cross-browser Testing.
+          </p>
+        </section>
+
+        <section
+          class="projects"
+          aria-labelledby="featured-projects other-projects"
+        >
+          <h2 class="heading" id="featured-projects">FEATURED PROJECTS</h2>
+
+          <a
+            class="project-container"
+            aria-labelledby="business-site"
+            tabindex="0"
+          >
+            <div class="projects-image" href="https://nano-colors.netlify.app">
+              <img
+                src="./assets/nano-colors.png"
+                alt="Screenshot of header with colorful haired girls"
+              />
+              <h3 class="projects-image__title" id="business-site">
+                NANO COLORS
+              </h3>
             </div>
-            <div class="header-bg__heading" tabindex="0">
-                <h1 class="header-bg__heading-name">
-                    PORTFOLIO:
-                    <b> PAULINE ANDERSSON </b>
-                </h1>
-                <h1 class="header-bg__heading-title">
-                    frontend developer
-                </h1>
-                <h1 class="header-bg__heading-subtitle">
-                    + biomed. scientist
-                </h1>
+            <div class="projects-image__text">
+              <h4>BUSINESS SITE & HERO HEADER</h4>
+              <p>
+                A business site for a made-up hair-dye company with a keyframes
+                animated hero header, sign-up form and accordions for FAQ and
+                product information.
+              </p>
             </div>
-            <div class="header-icons">
-                <a class="icon-container" href="https://www.linkedin.com/in/pauline-andersson-3375321a3/">
-                    <img src="./assets/linkedin.svg" alt="Linkedin icon" />
-                </a>
-                <a class="icon-container" href="https://github.com/Pauan8">
-                    <img src="./assets/github.svg" alt="Github icon" />
-                </a>
-                <a class="icon-container" href="https://stackoverflow.com/c/technigo/users/166">
-                    <img src="./assets/stackoverflow.svg" alt="Stack overflow icon" />
-                </a>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
             </div>
-            <div class="header-portrait" title="Portrait picture"></div>
-            <div class="header-about-me">
-                <p>
-                    <img src="./assets/start-fig.svg" alt="start of text figure" />
-                    Hi! I am an eager new frontend developer that also have a background in science - which makes me detail-oriented, flexible and full of ideas. 
-                    As a very curious, motivated and creative person; I just can't wait to show what I can bring in to the tech field. I never say no to a challange!
-                </p>
+          </a>
+          <a class="project-container" aria-labelledby="food-app" tabindex="0">
+            <div class="projects-image" href="https://foody-search.netlify.app">
+              <img
+                src="./assets/food-app.png"
+                alt="Screenshot showing a slideshow of different recipes"
+              />
+              <h3 class="projects-image__title" id="food-app">FOODY</h3>
             </div>
-        </header>
-
-        <main class="main">
-
-            <section class="tech">
-                <h2 class="heading">
-                    TECH
-                </h2>
-                <p class="tech-text">
-                    HTML, <span class="tech-text__emp">CSS</span>, Keyframes, CSS-grid, Flexbox,
-                    <span class="tech-text__emp"> JavaScript</span>, ES6, Web Accessibly,
-                    <span class="tech-text__emp">Responsive design</span>, API:s, mob-programming,
-                    pair-programming, Github, Agile methodology, Unit test, Code Peer-preview, Cross-browser Testing.
-                </p>
-            </section>
-
-            <section class="projects" aria-labelledby="featured-projects other-projects">
-                <h2 class="heading" id="featured-projects">
-                    FEATURED PROJECTS
-                </h2>
-
-                <a class="project-container" aria-labelledby="business-site" tabindex="0">
-                    <div class="projects-image" href="https://nano-colors.netlify.app">
-                        <img src="./assets/nano-colors.png" alt="Screenshot of header with colorful haired girls" />
-                        <h3 class="projects-image__title" id="business-site">
-                            NANO COLORS
-                        </h3>
-                    </div>
-                    <div class="projects-image__text">
-                        <h4> BUSINESS SITE & HERO HEADER </h4>
-                        <p>
-                            A business site for a made-up hair-dye company with a keyframes animated hero header,
-                            sign-up
-                            form and accordions for FAQ and product information.
-                        </p>
-                    </div>
-                    <div class="projects-image__techniques">
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                        <p>JavaScript ES6</p>
-                    </div>
-                </a>
-                <a class="project-container" aria-labelledby="food-app" tabindex="0">
-                    <div class="projects-image" href="https://foody-search.netlify.app">
-                        <img src="./assets/food-app.png" alt="Screenshot showing a slideshow of different recipes" />
-                        <h3 class="projects-image__title" id="food-app">
-                            FOODY
-                        </h3>
-                    </div>
-                    <div class="projects-image__text">
-                        <h4> RECIPE SEARCH SITE </h4>
-                        <p>
-                            This site fetches from an API to make you able to search for recipes by word and filtering.
-                        </p>
-                    </div>
-                    <div class="projects-image__techniques">
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                        <p>JavaScript ES6</p>
-                        <p>APIs</p>
-                    </div>
-                </a>
-                <a class="project-container project-container--desktop" aria-labelledby="weather-app-featured"
-                    tabindex="0">
-                    <div class="projects-image" href="https://project6weatherapp.netlify.app/">
-                        <img src="./assets/weather-app.png"
-                            alt="Two examples of a weather app in different weather conditions" />
-                        <h3 class="projects-image__title" id="weather-app-featured">
-                            PAURAS WEATHER
-                        </h3>
-                    </div>
-                    <div class="projects-image__text">
-                        <h4> WEATHER APP WITH FORECAST </h4>
-                        <p>
-                            By using an API the app can give the user weather information and 5-day forecast from a
-                            searched for - or current - position.
-                        </p>
-                    </div>
-                    <div class="projects-image__techniques">
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                        <p>JavaScript ES6</p>
-                        <p>APIs</p>
-                    </div>
-                </a>
-                <a class="project-container project-container--desktop" aria-labelledby="guess-who-featured"
-                    tabindex="0">
-                    <div class="projects-image" href="https://animal-guess-who.netlify.app">
-                        <img src="./assets/guess-who.png" alt="Screenshot of an animal themed guess who game" />
-                        <h3 class="projects-image__title" id="guess-who-featured">
-                            GUESS THE ANIMAL
-                        </h3>
-                    </div>
-                    <div class="projects-image__text">
-                        <h4> INTERACTIVE GUESS WHO GAME </h4>
-                        <p>
-                            A game built in JavaScript using primarily array methods that lets the user choose from
-                            questions and guess the secret animal.
-                        </p>
-                    </div>
-                    <div class="projects-image__techniques">
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                        <p>JavaScript ES6</p>
-                    </div>
-                </a>
-                <h3 class="sub-heading" id="other-projects">
-                    OTHER PROJECTS
-                </h3>
-                <a class="project-container project-container--mobile" aria-labelledby="guess-who" tabindex="0">
-                    <div class="link-text" href="https://animal-guess-who.netlify.app">
-                        <h4 id="guess-who">
-                            GUESS WHO
-                        </h4>
-                        <p> Game built in JavaScript. </p>
-                    </div>
-                    <div class="projects-image__techniques">
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                        <p>JavaScript ES6</p>
-                    </div>
-                </a>
-                <a class="project-container project-container--mobile" aria-labelledby="weather-app" tabindex="0">
-                    <div class="link-text" href="https://project6weatherapp.netlify.app/">
-                        <h4 id="weather-app">
-                            WEATHER APP
-                        </h4>
-                        <p> Bot built in JavaScript.</p>
-                    </div>
-                    <div class="projects-image__techniques">
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                        <p>JavaScript ES6</p>
-                    </div>
-                </a>
-                <a class="project-container" aria-labelledby="news-site" tabindex="0">
-                    <div class="link-text" href="https://project2-space-news.netlify.app">
-                        <h4 id="news-site">
-                            NEWS SITE
-                        </h4>
-                        <p> Space news site </p>
-                    </div>
-                    <div class="projects-image__techniques">
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                        <p>JavaScript ES6</p>
-                    </div>
-                </a>
-                <a class="project-container" aria-labelledby="chat-bot" tabindex="0">
-                    <div class="link-text" href="https://project4-travelbot.netlify.app">
-                        <h4 id="chat-bot">
-                            CHAT BOT
-                        </h4>
-                        <p> Bot built in JavaScript.</p>
-                    </div>
-                    <div class="projects-image__techniques">
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                        <p>JavaScript ES6</p>
-                    </div>
-                </a>
-            </section>
-
-            <section class="thoughts" aria-labelledby="thoughts">
-                <h2 class="heading" id="thoughts">
-                    MY THOUGHTS
-                </h2>
-                <a class="thoughts-container thoughts--mobile" aria-labelledby="date1headline1" tabindex="0">
-                    <div class="thoughts-image">
-                        <img src="./assets/dummy640px.png" alt="Dummy image 640px" />
-                    </div>
-                    <span class="thoughts-image__date"> DATE </span>
-                    <h4 id="date1headline1"> Headline1 </h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, iure at? Quae,
-                        aliquid quod ex
-                        omnis ad aspernatur, quaerat, nesciunt doloremque voluptas atque laborum autem numquam! Fuga
-                        quasi exercitationem nobis.
-                    </p>
-                </a>
-                <a class="thoughts-container thoughts--desktop" aria-labelledby="date2headline2" tabindex="0">
-                    <div class="thoughts-image">
-                        <img src="./assets/dummy640px.png" alt="Dummy image 640px" />
-                    </div>
-                    <span class="thoughts-image__date"> DATE </span>
-                    <h4 id="date2headline2"> Headline2 </h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, iure at? Quae,
-                        aliquid quod ex
-                        omnis ad aspernatur, quaerat, nesciunt doloremque voluptas atque laborum autem numquam! Fuga
-                        quasi exercitationem nobis.
-                    </p>
-                </a>
-                <h3 class="sub-heading">
-                    MORE THOUGHTS
-                </h3>
-                <a class="link-text" tabindex="0">
-                    <span class="thoughts-image__date"> DATE </span>
-                    <h4> Headline </h4>
-                </a>
-                <a class="link-text" tabindex="0">
-                    <span class="thoughts-image__date"> DATE </span>
-                    <h4> Headline </h4>
-                </a>
-                <a class="link-text" tabindex="0">
-                    <span class="thoughts-image__date"> DATE </span>
-                    <h4> Headline </h4>
-                </a>
-            </section>
-
-            <section class="skills" aria-labelledby="skills">
-                <h2 class="heading" id="skills">
-                    SKILLS
-                </h2>
-                <div class="skills-col">
-                    <dl>
-                        <dt>CODE</dt>
-                        <dd>HTML5</dd>
-                        <dd>CSS3</dd>
-                        <dd>Animation/Keyframes</dd>
-                        <dd>Javascript ES6</dd>
-                        <dd>GitHub</dd>
-                        <dd>GitBash</dd>
-                        <dd>Unit test</dd>
-                        <dd>Accessability</dd>
-                        <dd>Responsive design</dd>
-                        <dt>UPCOMING</dt>
-                        <dd>Node.js</dd>
-                        <dd>React</dd>
-                        <dd>Redux</dd>
-                        <dd>Databases</dd>
-                    </dl>
-                </div>
-                <div class="skills-col">
-                    <dl>
-                        <dt>TOOLBOX</dt>
-                        <dd>Figma</dd>
-                        <dd>Slack</dd>
-                        <dd>Stack overflow</dd>
-                        <dd>Codepen</dd>
-                        <dd>Inkscape</dd>
-                        <dd>GIMP</dd>
-                        <dd>JS Lint</dd>
-                        <dd>Google fonts</dd>
-                        <dd>Chrome dev tools</dd>
-                        <dd>Netlify</dd>
-                        <dd>Postman</dd>
-                        <dd>Command line</dd>
-                    </dl>
-                </div>
-                <div class="skills-col skills-col--desktop">
-                    <dl>
-                        <dt>MORE</dt>
-                        <dd>Agile methodology</dd>
-                        <dd>Mentor</dd>
-                        <dd>Quality Control</dd>
-                        <dd>Accredited methods</dd>
-                        <dd>Error reporting</dd>
-                    </dl>
-                </div>
-            </section>
-
-            <section class="social" aria-labelledby="social-media">
-                <h2 class="heading" id="social-media">
-                    FOR MORE
-                </h2>
-                <a class="social-icon" href="https://www.linkedin.com/in/pauline-andersson-3375321a3/">
-                    <div class="icon-container">
-                        <img src="./assets/linkedin.svg" alt="Linkedin icon" />
-                    </div>
-                    <p>LINKEDIN</p>
-                </a>
-                <a class="social-icon" href="https://github.com/Pauan8">
-                    <div class="icon-container">
-                        <img src="./assets/github.svg" alt="Github icon" />
-                    </div>
-                    <p>GITHUB</p>
-                </a>
-                <a class="social-icon" href="https://stackoverflow.com/c/technigo/users/166">
-                    <div class="icon-container">
-                        <img src="./assets/stackoverflow.svg" alt="Stack overflow icon" />
-                    </div>
-                    <p>STACK OVERFLOW</p>
-                </a>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="contact-info" aria-labelledby="contact-info">
-                <h3 id="contact-info">
-                    CONTACT
-                </h3>
-                <p> Pauline Andersson </p>
-                <p> +46 707 68 88 17 </p>
-                <a class="contact-info__email" href="mailto:pauline.j.andersson@gmail.com">
-                    pauline.j.andersson@gmail.com
-                </a>
+            <div class="projects-image__text">
+              <h4>RECIPE SEARCH SITE</h4>
+              <p>
+                This site fetches from an API to make you able to search for
+                recipes by word and filtering.
+              </p>
             </div>
-        </footer>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+              <p>APIs</p>
+            </div>
+          </a>
+          <a
+            class="project-container project-container--desktop"
+            aria-labelledby="weather-app-featured"
+            tabindex="0"
+          >
+            <div
+              class="projects-image"
+              href="https://project6weatherapp.netlify.app/"
+            >
+              <img
+                src="./assets/weather-app.png"
+                alt="Two examples of a weather app in different weather conditions"
+              />
+              <h3 class="projects-image__title" id="weather-app-featured">
+                PAURAS WEATHER
+              </h3>
+            </div>
+            <div class="projects-image__text">
+              <h4>WEATHER APP WITH FORECAST</h4>
+              <p>
+                By using an API the app can give the user weather information
+                and 5-day forecast from a searched for - or current - position.
+              </p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+              <p>APIs</p>
+            </div>
+          </a>
+          <a
+            class="project-container project-container--desktop"
+            aria-labelledby="guess-who-featured"
+            tabindex="0"
+          >
+            <div
+              class="projects-image"
+              href="https://animal-guess-who.netlify.app"
+            >
+              <img
+                src="./assets/guess-who.png"
+                alt="Screenshot of an animal themed guess who game"
+              />
+              <h3 class="projects-image__title" id="guess-who-featured">
+                GUESS THE ANIMAL
+              </h3>
+            </div>
+            <div class="projects-image__text">
+              <h4>INTERACTIVE GUESS WHO GAME</h4>
+              <p>
+                A game built in JavaScript using primarily array methods that
+                lets the user choose from questions and guess the secret animal.
+              </p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+            </div>
+          </a>
+          <h3 class="sub-heading" id="other-projects">OTHER PROJECTS</h3>
+          <a
+            class="project-container project-container--mobile"
+            aria-labelledby="guess-who"
+            tabindex="0"
+          >
+            <div class="link-text" href="https://animal-guess-who.netlify.app">
+              <h4 id="guess-who">GUESS WHO</h4>
+              <p>Game built in JavaScript.</p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+            </div>
+          </a>
+          <a
+            class="project-container project-container--mobile"
+            aria-labelledby="weather-app"
+            tabindex="0"
+          >
+            <div
+              class="link-text"
+              href="https://project6weatherapp.netlify.app/"
+            >
+              <h4 id="weather-app">WEATHER APP</h4>
+              <p>Bot built in JavaScript.</p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+            </div>
+          </a>
+          <a
+            class="project-container"
+            aria-labelledby="music-site"
+            tabindex="0"
+          >
+            <div
+              class="link-text"
+              href="https://musicrelease-site.netlify.app/"
+            >
+              <h4 id="music-site">MUSIC SITE</h4>
+              <p>Music release site</p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+              <p>React</p>
+            </div>
+          </a>
+          <a class="project-container" aria-labelledby="news-site" tabindex="0">
+            <div
+              class="link-text"
+              href="https://project2-space-news.netlify.app"
+            >
+              <h4 id="news-site">NEWS SITE</h4>
+              <p>Space news site</p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+            </div>
+          </a>
+          <a class="project-container" aria-labelledby="chat-bot" tabindex="0">
+            <div
+              class="link-text"
+              href="https://project4-travelbot.netlify.app"
+            >
+              <h4 id="chat-bot">CHAT BOT</h4>
+              <p>Bot built in JavaScript.</p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+            </div>
+          </a>
+        </section>
 
+        <section class="thoughts" aria-labelledby="thoughts">
+          <h2 class="heading" id="thoughts">MY THOUGHTS</h2>
+          <a
+            class="thoughts-container thoughts--mobile"
+            href="https://pauline-j-andersson.medium.com/my-journey-to-a-new-career-cf245cc5c9df"
+            aria-labelledby="date1headline1"
+            tabindex="0"
+          >
+            <div class="thoughts-image">
+              <img src="./assets/molecule.jpg" alt="Illustration of a brain cell" />
+            </div>
+            <span class="thoughts-image__date"> 2021-03-12</span>
+            <h4 id="date1headline1">From making chemicals react to making JavaScript React!</h4>
+            <h5>This is a story about taking a leap and discovering your ability to soar.</h5>
+            <p>
+                I have always been curious. To know how things work. To
+              constantly learn. This is the meaning of it all for me. This is
+              what I need from my career — growth and possibilities...  <i>Read more ></i>
+            </p>
+          </a>
+          <a
+            class="thoughts-container thoughts--desktop"
+            aria-labelledby="date2headline2"
+            tabindex="0"
+          >
+            <div class="thoughts-image">
+              <img src="./assets/dummy640px.png" alt="Dummy image 640px" />
+            </div>
+            <span class="thoughts-image__date"> DATE </span>
+            <h4 id="date2headline2">Headline2</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+              iure at? Quae, aliquid quod ex omnis ad aspernatur, quaerat,
+              nesciunt doloremque voluptas atque laborum autem numquam! Fuga
+              quasi exercitationem nobis.
+            </p>
+          </a>
+          <h3 class="sub-heading">MORE THOUGHTS</h3>
+          <a class="link-text" tabindex="0">
+            <span class="thoughts-image__date"> DATE </span>
+            <h4>Headline</h4>
+          </a>
+          <a class="link-text" tabindex="0">
+            <span class="thoughts-image__date"> DATE </span>
+            <h4>Headline</h4>
+          </a>
+          <a class="link-text" tabindex="0">
+            <span class="thoughts-image__date"> DATE </span>
+            <h4>Headline</h4>
+          </a>
+        </section>
+
+        <section class="skills" aria-labelledby="skills">
+          <h2 class="heading" id="skills">SKILLS</h2>
+          <div class="skills-col">
+            <dl>
+              <dt>CODE</dt>
+              <dd>HTML5</dd>
+              <dd>CSS3</dd>
+              <dd>Animation/Keyframes</dd>
+              <dd>Javascript ES6</dd>
+              <dd>GitHub</dd>
+              <dd>GitBash</dd>
+              <dd>Unit test</dd>
+              <dd>Accessability</dd>
+              <dd>Responsive design</dd>
+              <dt>UPCOMING</dt>
+              <dd>Node.js</dd>
+              <dd>React</dd>
+              <dd>Redux</dd>
+              <dd>Databases</dd>
+            </dl>
+          </div>
+          <div class="skills-col">
+            <dl>
+              <dt>TOOLBOX</dt>
+              <dd>Figma</dd>
+              <dd>Slack</dd>
+              <dd>Stack overflow</dd>
+              <dd>Codepen</dd>
+              <dd>Inkscape</dd>
+              <dd>GIMP</dd>
+              <dd>JS Lint</dd>
+              <dd>Google fonts</dd>
+              <dd>Chrome dev tools</dd>
+              <dd>Netlify</dd>
+              <dd>Postman</dd>
+              <dd>Command line</dd>
+            </dl>
+          </div>
+          <div class="skills-col skills-col--desktop">
+            <dl>
+              <dt>MORE</dt>
+              <dd>Agile methodology</dd>
+              <dd>Mentor</dd>
+              <dd>Quality Control</dd>
+              <dd>Accredited methods</dd>
+              <dd>Error reporting</dd>
+            </dl>
+          </div>
+        </section>
+
+        <section class="social" aria-labelledby="social-media">
+          <h2 class="heading" id="social-media">FOR MORE</h2>
+          <a
+            class="social-icon"
+            href="https://www.linkedin.com/in/pauline-andersson-3375321a3/"
+          >
+            <div class="icon-container">
+              <img src="./assets/linkedin.svg" alt="Linkedin icon" />
+            </div>
+            <p>LINKEDIN</p>
+          </a>
+          <a class="social-icon" href="https://github.com/Pauan8">
+            <div class="icon-container">
+              <img src="./assets/github.svg" alt="Github icon" />
+            </div>
+            <p>GITHUB</p>
+          </a>
+          <a
+            class="social-icon"
+            href="https://stackoverflow.com/c/technigo/users/166"
+          >
+            <div class="icon-container">
+              <img src="./assets/stackoverflow.svg" alt="Stack overflow icon" />
+            </div>
+            <p>STACK OVERFLOW</p>
+          </a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="contact-info" aria-labelledby="contact-info">
+          <h3 id="contact-info">CONTACT</h3>
+          <p>Pauline Andersson</p>
+          <p>+46 707 68 88 17</p>
+          <a
+            class="contact-info__email"
+            href="mailto:pauline.j.andersson@gmail.com"
+          >
+            pauline.j.andersson@gmail.com
+          </a>
+        </div>
+      </footer>
     </div>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
