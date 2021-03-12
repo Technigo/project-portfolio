@@ -5,35 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/cdaad23273.js" crossorigin="anonymous"></script>
     <title>La Pirata - Portfolio</title>
 </head>
 <body>
     <!-- HEADER -->
     <header class="header-container">
-        <picture class="hero-img-container">
-            <source srcset=".\assets\hero-img-desktop.jpg" media="(max-width: 776px)"/>
-            <source srcset="./assets/hero-img-tablet.jpg" media="(max-width: 1190px)"/>
-            <img class="hero-img"src="./assets/hero-img-desktop.jpg" alt="Header Picture of Sand dunes">    
+        <div class="hero-content-container">
+            <div class="header-icon-container">
+                <a class="header-icon-link" href="https://www.linkedin.com/in/whoisanna/" aria-label="Linkedin">
+                    <img class="header-icon-img" src="./assets/linkedin-in-brands.svg" alt="Linkedin Logo" tabindex="0">
+                </a>
+                <a class="header-icon-link" href="https://github.com/magicvilla" aria-label="Github" >
+                    <img class="header-icon-img" src="./assets/github-brands.svg" alt="Github Logo" tabindex="0">
+                </a>
+                <a class="header-icon-link" href="https://stackoverflow.com/c/technigo/users/201/?tab=profile"          
+                    aria-label="Stackoverflow">
+                    <img class="header-icon-img" src="./assets/stack-overflow-brands.svg" alt="Stackoverflow Logo" tabindex="0">
+                </a>
+            </div>
+            <div class="hero-text-container" tabindex="0">
+                <p class="hero-portfolio-title">PORTFOLIO: <span class="text-bold">ANNA LINDGREN</span></p>
+                <h1 class="hero-job-title">frontend developer</h1>
+                <h1 class="hero-job-title">+ tech recruiter</h1>
+            </div>
+            <div class="header-profile-img-container" tabindex="0">
+                <img class="header-profile-img"src="./assets/profile-img.jpg" alt="Profile Image of Anna Lindgren">
+            </div>
+        </div>
+        <picture class="hero-image-container">
+            <source srcset="./assets/hero-image-mobile.jpg" media="(max-width: 776px)"/>
+            <source srcset="./assets/hero-image-tablet.jpg" media="(max-width: 1190px)"/>
+            <img class="hero-img" src="./assets/hero-image-desktop.jpg" alt="Header Picture of Sand dunes">    
         </picture>
-        <div class="header-some-container">
-            <a class="header-some-link" href="https://www.linkedin.com/in/whoisanna/" aria-label="Linkedin">
-                <img class="header-some-img" src="./assets/linkedin-logo.svg" alt="Linkedin Logo" tabindex="0">
-            </a>
-            <a class="header-some-link" href="https://github.com/magicvilla" aria-label="Github" >
-                <img class="header-some-img" src="./assets/github-logo.svg" alt="Github Logo" tabindex="0">
-            </a>
-            <a class="header-some-link" href="https://stackoverflow.com/c/technigo/users/201/?tab=profile"          
-                aria-label="Stackoverflow">
-                <img class="header-some-img" src="./assets/stackoverflow-logo.svg" alt="Stackoverflow Logo" tabindex="0">
-            </a>
-        </div>
-        <div class="hero-content-container" tabindex="0">
-            <p class="hero-small-text-content">PORTFOLIO: ANNA LINDGREN</p>
-            <h1 class="hero-heading-content">Frontend developer background in tech recruitment</h1>
-        </div>
-        <div class="header-profile-img-container" tabindex="0">
-            <img class="header-profile-img"src="./assets/profile-img.jpg" alt="Profile Image of Anna Lindgren">
-        </div>
     </header>
 
     <!-- MAIN -->
@@ -44,71 +48,103 @@
             <p class="summary-text"><span class="start-icon-line"></span><span class="start-icon-circle"></span> Hola! I am a creative and fast paced Frontend Developer to be. I have a backround in HR and Tech Recruitment who fell in love with the world of web development. I am enthusiastic, driven in everything I do and a great problem solver.</p>
         </section>
 
-        <!-- MAIN TECH CONTAINER -->
-        <section class="main-tech-container">
-            <h2 class="main-tech-title" tabindex="0">TECH SKILLS</h2>
-            <p class="main-tech-p" tabindex="0">
-                HTML 5, CSS 3, Flexbox, JavaScript E6, Web Accessibility, API:s, mob-programming, pair-programming, Git, Github
+        <!-- TECH CONTAINER -->
+        <section class="tech-container">
+            <h2 class="section-title" tabindex="0">TECH SKILLS</h2>
+            <p class="tech-text" tabindex="0">
+                HTML 5, CSS 3, Flexbox, <span class="highligth-text">JavaScript E6</span>, Web Accessibility, API:s, mob-programming, pair-programming, Git, Github
             </p>
-            <p class="main-tech-p" tabindex="0">
-                Upcoming: React, Mongo DB, Node js, Redux
+            <p class="tech-text" tabindex="0">
+                <span class="highligth-text">Upcoming:</span> <span class="highligth-text">React</span>, Mongo DB, Node js,<span class="highligth-text"> Redux</span>
             </p>
 
         </section>
 
-        <!-- FEATURED PROJECT SECTION -->
-        <section class="featured-projects">
-            <h2 class="project-title" tabindex="0">FEATURED PROJECTS</h2>
-            <section class="projects-container">
+        <!-- PROJECT SECTION -->
+
+        <section class="projects-container">
+            <h2 class="section-title" tabindex="0">FEATURED PROJECTS</h2>
+
+            <div class="project-card-container">
                 <div class="project-card" tabindex="0">
-                    <a class="project-card-link" aria-label="Link to weather app" href="https://github.com/magicvilla/project-weather-app" target="_blank" tabindex="0">
-                        <div class="project-card-img-container">
-                            <img src="./assets/weather-app-img.PNG" alt="Picture of weather app">
-                            <h3 tabindex="0">WEATHER APP</h3>
+                    <a href="https://github.com/magicvilla/project-weather-app" aria-label="Weather App" target="_blank">
+                        <div class="card-image-container">
+                            <img src="./assets/weather-app.jpg" alt="Weather App">
+                            <p class="card-image-text">WEATHER APP</p>
                         </div>
-                        <p class="project-card-text" tabindex="0">Weather app that uses open weather api:s for one location and a forecast of 5 days. Built with Javascript,API:s, HTML & CSS <span class="arrow">>></span></p>
-                        <div class="project-card-tag" tabindex="0">
-                            <p>JavaScript E6</p>
-                            <p>HTML 5</p>
-                            <p>CSS 3</p>
-                            <p>API</p>
-                            <p>Pair programming</p>
+                        <div class="card-text-container">
+                            <h4 class="card-heading">WEATHER APP BUILT IN JAVASCRIPT</h4>
+                            <p class="card-text">A responsive weather website using HTML, CSS and JavaScript. The weather is fetched daily and weekly with open weather APIs.</p>
+                            <ul class="card-tech-list">
+                                <li>JavaScript E6</li>
+                                <li>HTML 5</li>
+                                <li>CSS 3</li>
+                                <li>API</li>
+                            </ul>
                         </div>
                     </a>
                 </div>
+
                 <div class="project-card" tabindex="0">
-                    <a class="project-card-link" aria-label="Link to project who game" href="https://github.com/magicvilla/project-guess-who" target="_blank" tabindex="0">
-                        <div class="project-card-img-container">
-                            <img src="./assets/guess-who-game.PNG" alt="Picture of guess who game">
-                            <h3 tabindex="0">GUESS WHO</h3>
+                    <a href="https://github.com/magicvilla/project-chatbot" aria-label="Yes Bot" target="_blank">
+                        <div class="card-image-container">
+                            <img src="./assets/yes-bot.jpg" alt="Yes Bot">
+                            <p class="card-image-text">CHAT BOT</p>
                         </div>
-                        <p class="project-card-text" tabindex="0">A classic board game Guess Who created with JavaScript objects and arrays, connected to DOM.<span class="arrow">>></span></p>
-                        <div class="project-card-tag" tabindex="0">
-                            <p>JavaScript E6</p>
-                            <p>HTML 5</p>
-                            <p>CSS 3</p>
+                        <div class="card-text-container">
+                            <h4 class="card-heading">YES (CHAT) BOT BUILT IN JAVASCRIPT</h4>
+                            <p class="card-text">Chat bot that responds to user input. Built with JavaScript, HTML and CSS.</p>
+                            <ul class="card-tech-list">
+                                <li>JavaScript E6</li>
+                                <li>HTML 5</li>
+                                <li>CSS 3</li>
+                            </ul>
                         </div>
                     </a>
                 </div>
+
                 <div class="project-card" tabindex="0">
-                    <a class="project-card-link" aria-label="Link to project news site" href="https://github.com/magicvilla/project-news-site" target="_blank" tabindex="0">
-                        <div class="project-card-img-container">
-                            <img src="./assets/news-site.PNG" alt="Picture of news site">
-                            <h3 tabindex="0">NEWS SITE</h3>
+                    <a href="https://github.com/magicvilla/project-news-site" aria-label="Sneaker News" target="_blank">
+                        <div class="card-image-container">
+                            <img src="./assets/sneaker-news.jpg" alt="Sneaker News">
+                            <p class="card-image-text">NEWS SITE</p>
                         </div>
-                        <p class="project-card-text" tabindex="0">My first website project. Built with HTML and CSS with focus on CSS flexbox.<span class="arrow">>></span></p>
-                        <div class="project-card-tag" tabindex="0">
-                            <p>HTML 5</p>
-                            <p>CSS 3</p>
-                            <p>Flexbox</p>
+                        <div class="card-text-container">
+                            <h4 class="card-heading">NEWS SITE</h4>
+                            <p class="card-text">My first website project. Built with HTML and CSS with focus on CSS flexbox.</p>
+                            <ul class="card-tech-list">
+                                <li>HTML 5</li>
+                                <li>CSS 3</li>
+                                <li>Flexbox</li>
+                            </ul>
                         </div>
                     </a>
                 </div>
-            </section>
+            </div>
         </section>
 
-        <!-- OTHER PROJECT SECTION -->
-        <section class="other-projects">
+        <!-- OTHER PROJECTS SECTION -->
+
+        <section class="other-projects-container">
+            <h2 class="section-title" tabindex="0">OTHER PROJECTS</h2>
+
+            <div class="other-project-card-container">
+                <div class="other-project-card" tabindex="0">
+                    <a href="https://github.com/magicvilla/project-guess-who" aria-label="Guess Who">
+                        <h3 class="card-heading">HEJ HEJ</h3>
+                        <p class="card-text">bla bla bla bla bla <span class="arrow"> >></span></p>
+                    </a>
+                        <ul class="card-tech-list">
+                            <li>JavaScript</li>
+                            <li>HTML 5</li>
+                            <li>CSS 3</li>
+                        </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 
+            THER PROJECT SECTION -->
+        <!-- <section class="other-projects">
             <h2 class="project-title" tabindex="0">OTHER PROJECTS</h2>
             <section class="other-projects-container">
                 <div class="other-projects-card" tabindex="0">
@@ -122,6 +158,28 @@
                         </div>
                     </a>
                 </div>
+
+
+                <div class="card" tabindex="0">
+                    <a href="https://github.com/magicvilla/project-guess-who" aria-label="Guess Who" target="_blank">
+                        <div class="card-img-container">
+                            <img class="card-img" src="./assets/guess-who-game.PNG" alt="Guess Who">
+                            <p class="card-img-text">GUESS WHO</p>
+                        </div>
+                        <div class="card-text-container">
+                            <h4 class="card-heading">GUESS WHO GAME BUILT WITH JAVASCRIPT</h4>
+                            <p class="card-text">A classic board game built with JavaScript objects and arrays, connected to DOM.<span class="arrow"> > ></span></p>
+                            <ul class="card-tech-list">
+                                <li>JavaScript E6</li>
+                                <li>HTML 5</li>
+                                <li>CSS 3</li>
+                            </ul>
+                        </div>
+                    </a>
+                     
+         
+
+     O
                 <div class="other-projects-card" tabindex="0">
                     <a class="other-projects-card-link" aria-label="Link to project business site" href="https://github.com/magicvilla/project-business-site" target="_blank">
                         <h3 class="other-projecs-text" tabindex="0">BUSINESS SITE.</h3>
@@ -134,16 +192,16 @@
                     </a>
                 </div>
             </section>
-        </section>
+        </section> -->
 
         <!-- MY THOUGHTS SECTION -->
-        <section class="my-thoughts-container" tabindex="0">
+        <!-- <section class="my-thoughts-container" tabindex="0">
             <h2 class="my-thoughts-heading">MY THOUGHTS</h2>
             <p class="my-thoughts-text">Coming soon - my thoughts about coding and my journey...</p>
-        </section>
+        </section> -->
 
         <!-- SKILLS SECTION -->
-        <section class="skills-section">
+        <!-- <section class="skills-section">
             <h2 class="skills-title" tabindex="0">SKILLS</h2>
             <div class="skills-container">
                 <div class="skills-column">
@@ -188,17 +246,17 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- FOR MORE SECTION -->
-        <section class="for-more-section">
+        <!-- <section class="for-more-section">
             <h2 class="for-more-title">LETS BE BFF'S</h2>
             
         </section>
-    </main>
+    </main> -->
 
     <!-- FOOTER -->
-    <footer class="footer-section" tabindex="0">
+    <!-- <footer class="footer-section" tabindex="0">
         <h2 class="footer-text" aria-labelledby="contact-information">CONTACT</h2>
         <address id="contact-information" class="footer-contact-info"></address>
         <p class="footer-name" tabindex="0">Anna Lindgren</p>
@@ -208,4 +266,4 @@
         <a href="mailto:lindgren.anna.m@gmail.com" aria-label="Link to email adress" tabindex="0">lindgren.anna.m@gmail.com</a>
     </footer>
 </body>
-</html>
+</html> -->
