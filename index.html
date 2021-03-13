@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157176412-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-157176412-1');
+</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./resources/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -16,10 +25,11 @@
 
             <!-- <img src="./resources/header-bg.svg" alt="background image"> -->
             <div class="social-media-icons">
-                <a href="https://github.com/lars-soderman"><img src="resources/github.svg" alt=""></a>
-                <a href="https://www.linkedin.com/in/lars-soderman/"><img src="resources/linkedin.svg" alt=""></a>
-                <a href="https://stackoverflow.com/users/14960150/lars-s%c3%b6derman"><img src="resources/stack-overflow.svg" alt=""></a>
-            </div>
+                <a href="https://github.com/lars-soderman"><img src="resources/github.svg" alt="Github"></a>
+                <a href="https://www.linkedin.com/in/lars-soderman/"><img src="resources/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://stackoverflow.com/users/14960150/lars-s%c3%b6derman"><img src="resources/stack-overflow.svg" alt="Stack overflow"></a>
+                <a href="mailto: lars.soderman@gmail.com"><img src="resources/email.svg" alt="Email"></a>
+                </div>
             <div class="title">
                 <h1>Portfolio: <span>Lars Söderman</span></h1>
                 <h2>Frontend developer</h2>
@@ -102,10 +112,12 @@
                             <img src="resources/news-site.png" alt="Thumbnail of News site project">
                             <h3>News site</h3>
                         </div>
-                        <p>Responsive news site layout. </p>
+                        <p>Responsive news site layout using flexbox and css grid.  </p>
                         <ul class="tags">
-                            <li>Tag</li>
-                            <li>Another tag</li>
+                            <li>CSS grid</li>
+                            <li>Flexbox</li>
+                            <li>Lottie animation</li>
+                            <li>Cute kittens</li>
                         </ul>
                     </a>
                 </div>
@@ -188,15 +200,15 @@
             <h2>Non-frontend projects</h2>
             <div class="container flex">
                 <div class="project card">
-                    <a href="./larssoderman-webflow/bookbeat-kids.html">
+                    <a href="./projects/bookbeat-kids.html">
                         <div class="thumbnail">
                             <!-- <div class="img-placeholder"></div> -->
-                            <img src="./resources/bbk-thumb.png" alt="">
+                            <img src="./resources/bbk-thumb.png" alt="BookBeat Kids">
                             <h3>BookBeat Kids</h3>
                         </div>
                         <p>This is the story of a pretty intense and fun school project i did at Berghs upgrade - digital design 2019. It was about defining a potential new service. </p>
                         <ul class="tags">
-                            <li>UX Research</li>
+                            <li>UX design</li>
                             <li>Service design</li>
                             <li>Workshop facilitation</li>
                             <li>Logo design</li>
@@ -205,30 +217,20 @@
                     </a>
                 </div>
                 <div class="project card">
-                    <a href="#">
+                    <a href="./projects/bikelab.html">
                         <div class="thumbnail">
-                            <div class="img-placeholder"></div>
-                            <!-- <img src="#" alt=""> -->
-                            <h3>Graphic design projects</h3>
+                            <!-- <div class="img-placeholder"></div> -->
+                            <img src="./resources/bikelab-thumb.png" alt="Bikelab">
+                            <h3>Bikelab</h3>
                         </div>
-                        <p>Some text about this project</p>
+                        <p>Another school project, kind of in the product design space. In case you hadn't guessed – it has to do with mountainbikes!</p>
                         <ul class="tags">
-                            <li>Tag</li>
-                            <li>Another tag</li>
-                        </ul>
-                    </a>        
-                </div>
-                <div class="project card">
-                    <a href="#">
-                        <div class="thumbnail">
-                            <div class="img-placeholder"></div>
-                            <!-- <img src="#" alt=""> -->
-                            <h3>UX design projects</h3>
-                        </div>
-                        <p>Some text about this project</p>
-                        <ul class="tags">
-                            <li>Tag</li>
-                            <li>Another tag</li>
+                            <li>Research</li>
+                            <li>Service design</li>
+                            <li>Data nerding</li>
+                            <li>Wireframing</li>
+                            <li>Prototyping</li>
+                            <li>Testing</li>
                         </ul>
                     </a>
                 </div>
@@ -259,6 +261,8 @@
                     <li>CSS3</li>
                     <li>JavaScript ES6</li>
                     <li>React</li>
+                    <li>React hooks</li>
+                    <li>API:s</li>
                     <li>Styled Components</li>
                     <li>Github</li>
                 </ul>
@@ -285,27 +289,21 @@
                 <ul class="comma-list">
                     <li>Digital design</li>
                     <li>Branding</li>
-                    <li>Strategy</li>
-                    <li>Process design</li>
+                    <li>Product design</li>
                     <li>Concept development</li>
-                    <li>Agile</li>
+                    <li>Working agile</li>
                     <li>Motion graphics</li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class="for-more">
-        <h2>For more</h2>
+    <footer class="for-more">
         <div class="social-media-icons bottom">
-            <a href="https://github.com/lars-soderman"><img src="resources/github.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/lars-soderman/"><img src="resources/linkedin.svg" alt=""></a>
-            <a href="https://stackoverflow.com/users/14960150/lars-s%c3%b6derman"><img src="resources/stack-overflow.svg" alt=""></a>
+            <a href="https://github.com/lars-soderman"><img src="resources/github.svg" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/lars-soderman/"><img src="resources/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://stackoverflow.com/users/14960150/lars-s%c3%b6derman"><img src="resources/stack-overflow.svg" alt="Stack overflow"></a>
+            <a href="mailto: lars.soderman@gmail.com"><img src="resources/email.svg" alt="Email"></a>
         </div>
-    </section>
-    <footer>
-        <h2>Contact</h2>
-        <p>Lars Söderman</p>
-        <p>lars.soderman@gmail.com</p>
     </footer>
     </body>
     </html>

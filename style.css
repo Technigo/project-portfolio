@@ -13,6 +13,12 @@
     /* border: 1px solid pink; */
 }
 
+/* THOUGHTS */
+.thoughts {
+    display: none;
+    background: rgb(244, 245, 243);
+}
+
 .container {
     margin: 0 auto;
 }
@@ -49,15 +55,27 @@ section {
 .social-media-icons {
     display: flex;
     justify-content: flex-end;
+    margin-right: 30px;
 }
 
 .social-media-icons img {
     width: 35px;
     margin: 8px;
+    opacity: .8;
+    transition: all .1s ease;
 }
+
+.social-media-icons img:hover {
+    opacity: 1;
+    filter: drop-shadow( 8px 8px 10px rgba(0, 0, 0, 0.1));
+    transform: scale(1.1);
+
+}
+
 
 .social-media-icons.bottom {
     justify-content: center;
+    margin: 36px;
 }
 
 header {
@@ -82,7 +100,7 @@ header {
     overflow: hidden;
     object-fit: cover;
     border-radius: 46%;
-    border: 7px solid white;
+    border: 8px solid white;
     transform: rotate(-25deg) translate(0, 50%);    
     z-index: 1;
 }
@@ -93,7 +111,7 @@ header {
 }
 
 header .title {
-    margin: 16px 0;
+    margin: 16px ;
 }
 
 header span {
@@ -118,7 +136,7 @@ header h1 {
 }    
 
 header h2 {
-    font-size: 58px;
+    font-size: 52px;
     line-height: 1;
     font-weight: 300;
     max-width: 450px;
@@ -139,7 +157,7 @@ header h2 {
 }
 
 .intro p {
-    margin: 130px 0;
+    margin: 130px 24px 90px;
 }
 
 section > h2 {
@@ -160,9 +178,7 @@ section h3 {
     margin: 48px auto 16px auto;
 }
 
-.thoughts {
-    background: rgb(244, 245, 243);
-}
+
 
 /* PROJECTS */
 
@@ -214,6 +230,7 @@ section h3 {
 }
 
 .thumbnail h3 {
+    font-family: Helvetica, sans-serif;
     font-family: var(--font-mono);
     font-weight: 500;
     width: fit-content;
@@ -247,12 +264,15 @@ li {
 
 ul.comma-list {
     justify-content: center;
+    padding: 0 24px;
+
 }
 
 ul.comma-list li:not(:last-child):after {
     content: ',';
     padding-right: 8px;
 }
+
 
 ul.tags li {
     background: var(--primary-green);
@@ -287,16 +307,16 @@ ul.tags li {
     margin: 0 auto;
 }
 
-.for-more {
+/* .footer {
     background: var(--primary-green);
-}
+} */
 
-.for-more div {
+.footer div {
     margin: 0 auto;
 }
 
 footer {
-    background: var(--primary-red);
+    background: var(--primary-green);
     color: white;
     text-align: center;
     height: 300px;
@@ -341,6 +361,10 @@ footer h2 {
     .skills ul li:not(:last-child):after {
         content: '';
         padding-right: 0;
+    }
+
+    .social-media-icons {
+        margin-right: 80px;
     }
 
 
@@ -391,7 +415,7 @@ footer h2 {
     }    
     
     .social-media-icons {
-        padding-right: 60px;
+        margin-right: 24px;
     }
 
     .social-media-icons img {
@@ -457,7 +481,7 @@ footer h2 {
         margin-top: 12px;
     }
     .social-media-icons {
-        padding-right: 40px;
+        margin-right: 0px;
     }
     
     .social-media-icons img {
