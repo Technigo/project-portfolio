@@ -5,7 +5,7 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-    color: #0F1123;
+    color: #000;
 }
 
 /* Header */
@@ -13,6 +13,7 @@ body {
 .header {
     height: 440px;
     position: relative;
+    background-color: #4b125c;
 }
 
 .header-image {
@@ -21,7 +22,8 @@ body {
     width: 100%;
     height: 440px;
     top: 0;  
-    filter: grayscale(70%);
+    filter: grayscale(100%);
+    opacity: 0.1;
 }
 
 .header-container-text {
@@ -33,6 +35,7 @@ body {
     left: 24px;
     max-width: 607px;
     font-family: "Montserrat";
+    color: white;
 }
 
 .title-name {
@@ -72,12 +75,12 @@ body {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    border: 2px solid #0F1123;
+    border: 2px solid white;
     margin: 5px;
     padding: 3px;
     cursor: pointer;
     outline: none;
-    color: #0F1123;
+    color: white;
     font-size: 22px;
     text-decoration: none;
 }
@@ -85,8 +88,9 @@ body {
 .social-media-button:hover,
 .social-media-button:focus {
     color: white;
-    border-color:#b8b5ff;
-    background-color: #b8b5ff;
+    border-color:#ffa258;
+    background-color: #ffa258;
+    opacity: 1;
 }
 
 
@@ -105,7 +109,7 @@ body {
 /* Section with information about me */
 
 .info-about-me {
-    background-color: #edeef7;
+    background-color: #f1edf7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,7 +120,7 @@ body {
 
 .line {
     width: 55px;
-    border-bottom: 2px solid #b8b5ff;
+    border-bottom: 2px solid #4b125c;
     margin-bottom: 5px;
     display: inline-block;
 }
@@ -124,7 +128,7 @@ body {
 .circle {
     width: 12px;
     height: 12px;
-    background-color: #b8b5ff;
+    background-color: #4b125c;
     border-radius: 50%;
     display: inline-block;
     margin-right: 10px;
@@ -148,14 +152,14 @@ body {
 
 .highlight-tech {
     font-weight: 700;
-    color:#b8b5ff;
+    color:#4b125c;
 }
 
 /* Top title in every section */
 
 .section-header {
     font-family: "Montserrat", sans-serif;
-    background-color: #b8b5ff;
+    background-color: #4b125c;
     color: white;
     padding: 5px 15px;
     font-size: 22px;
@@ -165,7 +169,7 @@ body {
 /* Section with my featured projects, and some classes for thought section (that share the same properties) */
 
 .projects-container {
-    background-color: #edeef7;
+    background-color: #f1edf7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,7 +195,7 @@ body {
 
 .project-link, .thoughts-link {
     text-decoration: none;
-    color: #0F1123;
+    color: #000;
     outline: none;
     padding: 5px;
 }
@@ -201,7 +205,7 @@ body {
 }
 
 .project-link:focus, .thoughts-link:focus {
-    border: 3px solid #0F1123;
+    border: 3px solid #000;
 }
 
 /* Project image container with image on top */
@@ -211,10 +215,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.project-link:hover .image-container {
-    background-color: #b8b5ff;
+    background-color: #000;
 }
 
 .project-image {
@@ -222,22 +223,24 @@ body {
     height: 210px;
     object-fit: cover;
     position: relative;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .image-text {
     position: absolute;
     font-size: 28px;
     font-family: "Montserrat";
-    font-weight: 700;
+    font-weight: bold;
     color: white;
+    letter-spacing: 0.01em;
 }
 
-.project-link:hover .image-text {
-    transform: scale(1.2);
+.image-container:hover {
+    background-color: #4b125c;
+    transition: background-color .4s;
 }
 
-.project-link:hover .project-image {
+.image-container:hover .project-image {
     opacity: 0;
 }
 
@@ -256,15 +259,17 @@ body {
 
 .used-tech-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .used-tech {
-    background-color: #b8b5ff;
+    background-color: #ffa258;
     color: white;
-    padding: 7px;
+    padding: 5px;
     margin: 7px 5px 0px 0px;
     font-size: 14px;
 }
+
 
 /* Section with my other projects, and some classes for thought section (that share the same properties) */
 
@@ -284,7 +289,7 @@ body {
 .other-projects-link, .other-thoughts-link {
     text-decoration: none;
     outline: none;
-    color: #0F1123; 
+    color: #000;
 }
 
 .other-projects-link:hover, .other-thoughts-link:hover {
@@ -292,7 +297,7 @@ body {
 }
 
 .other-projects-link:focus, .other-thoughts-link:focus {
-    border: 3px solid #0F1123;
+    border: 3px solid #000;
     padding: 5px;   
 }
 
@@ -316,7 +321,7 @@ body {
 
 .fa-angle-double-right {
     margin-left: 5px;  
-    color: #b8b5ff;
+    color: #ffa258;
 }
 
 /* Section with my thoughts about code */
@@ -353,7 +358,6 @@ body {
     font-size: 22px;
     margin: 5px 0;
     font-weight: 700;
-    line-height: 29px;
 }
 
 .other-thoughts-info {
@@ -369,8 +373,7 @@ body {
 /* Section with my skills */
 
 .skills-container {
-    /* background-color: #f9f3f3; */
-    background-color: #edeef7;
+    background-color: #f1edf7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -397,7 +400,7 @@ body {
     font-weight: 700;
     margin: 5px;
     font-size: 17px;
-    color: #b8b5ff;
+    color: #4b125c;
 }
 
 .skill {
@@ -433,6 +436,7 @@ body {
 .socialmedia-text {
     font-size: 12px;
     font-weight: 700;
+    color: #4b125c;
 }
 
 .social-media-button-big {
@@ -442,10 +446,10 @@ body {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    border: 3px solid #0F1123;
+    border: 3px solid #4b125c;
     margin: 20px 15px 5px 15px;
     cursor: pointer;
-    color: #0F1123;
+    color: #4b125c;
     outline: none;
     text-decoration: none;
     font-size: 30px;
@@ -455,14 +459,14 @@ body {
 .social-media-button-big:hover,
 .social-media-button-big:focus {
     color: white;
-    background-color: #b8b5ff;
-    border-color: #b8b5ff;
+    background-color: #4b125c;
+    border-color: #4b125c;
 }
 
 /* Footer */
 
 .footer {
-    background-color: #0F1123;
+    background-color: #ffa258;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -489,11 +493,11 @@ a[href^="mailto:"], a[href^="tel:"] {
 }
 
 a[href^="mailto:"]:hover, a[href^="tel:"]:hover {
-    color: #b8b5ff;
+    color: #4b125c;
 }
 
 a[href^="mailto:"]:focus, a[href^="tel:"]:focus {
-    color: #b8b5ff;
+    color: #4b125c;
 }
 
 
@@ -538,7 +542,7 @@ a[href^="mailto:"]:focus, a[href^="tel:"]:focus {
         height: 70px;
         width: 70px;
         font-size: 36px;
-        border: 3px solid #0F1123;
+        border: 3px solid white;
     }
 
     .profile-pic {
@@ -555,7 +559,7 @@ a[href^="mailto:"]:focus, a[href^="tel:"]:focus {
 
     .line {
         width: 98px;
-        border-bottom: 3px solid #b8b5ff;
+        border-bottom: 3px solid #4b125c;
         margin-bottom: 8px;
     }
     
@@ -586,8 +590,9 @@ a[href^="mailto:"]:focus, a[href^="tel:"]:focus {
         line-height: 40px;
     }
 
-    .used-tech {
+    .used-tech, .used-pair {
         font-size: 16px;
+        margin-top: 12px;
     }
 
     .other-projects-section {
@@ -677,7 +682,7 @@ a[href^="mailto:"]:focus, a[href^="tel:"]:focus {
     }
     
     .featured-projects, .all-thoughts, .other-projects-section {
-        width: 60%;
+        width: 70%;
     }
 
     .project-image {
