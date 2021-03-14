@@ -7,3 +7,6 @@ I have spent a lot of time with the css and managed to nest myself into a deep h
 The hero image has a vertical scroll which I just cannot seem to get rid of despite hours of trial and error. One h2 heading on header section also has a vertical scrollbar :( 
 Would appreciate some help :D
 I am also not done with accessibility testing yet but I will keep updating this site.
+
+
+https://silly-chandrasekhar-823c27.netlify.app/
