@@ -1,0 +1,41 @@
+.bg-img {
+  display: none;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.info-title {
+  font-size: 2em;
+  padding-top: calc(var(--spacing) * 4);
+  line-height: calc(var(--spacing) * 15);
+}
+
+.info {
+  color: var(--mainColorNormal);
+  padding-bottom: calc(var(--spacing) * 10);
+}
+
+@media only screen and (min-width: 600px) {
+  .main-header {
+    position: relative;
+  }
+
+  .bg-img {
+    display: block;
+  }
+
+  .header-social {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .info {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    padding-bottom: 0;
+  }
+}
