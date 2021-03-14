@@ -32,7 +32,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: #000;
-}  /* Edge: link text in project divs is blue */
+}  
 
 a:visited {
   color: #000;
@@ -40,20 +40,19 @@ a:visited {
 
 /* HEADER SECTION */
 .header {  
-  position: relative;
   height: 600px;
 }
 
 .hero-img {
   width: 100%;
   height: 100%;
-  object-fit: none;
-  overflow: hidden;
+  object-fit: cover;
+  position: relative;
 }
 
 .header-text {   /* div containing all text elements on header image */
   position: absolute;
-  bottom: 250px;
+  top: 150px;
   left: 35px;
   width: 70vw;
 }
@@ -97,18 +96,16 @@ a:visited {
   justify-content: flex-end;
   
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 50px;
+  right: 50px;
+  width: 150px;
 }
 
 .header-icons {  /* inner div containing the social icons */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 200px;
-  padding: 50px 50px 0 0;
+  width: 100%;
 }
 
 .header-icons i {   /* styling of social icons */
@@ -117,6 +114,11 @@ a:visited {
   border: 1px solid #000;
   border-radius: 50%;
   align-items: center;
+}
+
+.header-icons i:hover {
+  background-color: #fff;
+  border: 2px solid #fff;
 }
 
 .img-me-container {
@@ -129,23 +131,25 @@ a:visited {
   border: 3px solid #fff;
   filter: grayscale();
   z-index: 1;
-  overflow: hidden;
+  box-shadow: 1px 4px 10px #276678;
 }
 .img-me {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 /* PRESENTATION SECTION */
 .presentation {
   padding-left: 35px;
+  padding-top: 20px;
+ 
 }
 
 .presentation-text {
   font-size: 16px;
   line-height: 29px;
   font-style: normal;
-  width: 70%;
+  width: 80%;
 }
 
 /* TECH SECTION */
@@ -186,18 +190,22 @@ a:visited {
 .project {  /* div containing each project */
   padding-bottom: 30px;
   /*width: 95%;  size of project in percentage not working in firefox. prova sätt max-width: 320px; istället för 100% */
-  max-width: 320px;
-}
-
-.project img {
   width: 100%;
-  height: auto;
-  filter: opacity(30%);
 }
 
 .project-img-container {   /* div containing the img, to enable text on top of img */
   position: relative;
   text-align: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+}
+.project-img {
+  width: 100%;
+  height: auto;
+  filter: opacity(0.6);
+  filter: brightness(0.6);
 }
 
 .img-text {
@@ -205,7 +213,7 @@ a:visited {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #276678;
+  color: #fff;
   font-size: 28px;
   font-weight: 700;
 }
@@ -279,7 +287,7 @@ a:visited {
 
 .thought {   /* div containing each article */
   padding-bottom: 30px;
-  width: 90%;
+  width: 100%;
 }
 
 .thought-img {
@@ -357,6 +365,7 @@ a:visited {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 .skills-group {
@@ -402,8 +411,9 @@ a:visited {
 .for-more-icons {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   padding: 30px 0;
+  width: 100%;
   
 }
 
@@ -416,11 +426,17 @@ a:visited {
   font-size: 30px;
 }
 
+.for-more-icons i:hover {
+  background-color: #1687a7;
+  border: 1px solid #1687a7;
+  color: #fff;
+}
+
 .social {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .social-link {
@@ -459,20 +475,20 @@ a:visited {
 /**** TABLET SIZE ****/
 @media screen and (min-width: 700px) {
 
-  .header-icons {
-    padding: 80px 80px 0 0;
-    width: 280px;
-  }
+ 
 
   .featured-projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    width: 900px;
+    justify-content: space-between;
   }
 
+  .project {  /* div containing each project */
+    padding-bottom: 30px;
+    /*width: 95%;  size of project in percentage not working in firefox. prova sätt max-width: 320px; istället för 100% */
+    width: 45%;
+  }
   .other-projects {
     flex-direction: row;
     justify-content: space-between;
@@ -481,7 +497,7 @@ a:visited {
 
   .my-thoughts {   /* Outer section containing the entire */
     flex-direction: row;
-    width: 700px;
+    justify-content: space-between;
   }
   
   .thought-tablet-desktop {  /* second article displayed from tablet size */
@@ -489,14 +505,14 @@ a:visited {
   }
 
   .thought {   /* Inner div containing each article */
-    width: 40%;
+    width: 45%;
   }
 
   .skills-all {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 450px;
+    /* width: 450px; */
   }
   
   .skills-group {
@@ -504,16 +520,27 @@ a:visited {
   }
 
   .for-more-icons {
-  width: 700px;
+    width: 600px;
+    padding: 30px 50px;
   }
+
+  .social-link {
+    font-size: 15px;
+    margin-top: 5px;
+    display: block;
+  }
+  .linkedin {
+    padding-left: 50px;
+  }  
+
 }
 
 /**** SMALL DESKTOP SIZE ****/
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
 
   .header-text {   /* div containing all text elements on header image */
-    bottom: 180px;
-    left: 180px;
+    top: 90px;
+    left: 250px;
     width: 40vw;
   }
 
@@ -532,7 +559,7 @@ a:visited {
   .header-text-title { /* h2: Frontend developer  */
     font-size: 60px;
     font-weight: 700;
-    line-height: 70px;
+    line-height: 75px;
   }
   
   .header-text-background { /* h2: my background  */
@@ -548,8 +575,14 @@ a:visited {
     height: 250px;
   }
 
+  .header-icons-container { /* outer div containing the social icons */
+    top: 80px;
+    right: 200px;
+    width: 150px;
+  }
+
   .presentation {
-    padding-left: 180px;
+    padding: 50px 0 50px 250px;
     width: 80%;
   }
 
@@ -557,6 +590,9 @@ a:visited {
     width: 50%;
   }
 
+  .featured-projects, .my-thoughts, .skills-all {
+    width: 1000px;
+  }
 }
 
 /**** LARGE DESKTOP SIZE ****/
