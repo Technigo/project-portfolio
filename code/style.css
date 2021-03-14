@@ -17,7 +17,7 @@ p {
 
 /*header*/
 
-.hero {
+header {
     background-image: url("./assets/atle-mo-aNHthOFYCOM-unsplash.jpg");
     background-size: cover;
     padding: 0 24px;
@@ -133,6 +133,7 @@ section {
     display:flex;
     flex-direction: column;
     align-items: center;
+    margin: 40px;
 }
 
 
@@ -360,27 +361,29 @@ ul {
 
 /*social icons*/
 
-.social-icons-links {
+.for-more {
     display: flex;
     justify-content: space-evenly;
 }
 
-.icons-bottom {
+.icons-container {
     width: 60px;
     height: 60px;
     border: 2px solid
     #e5605d;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin-bottom: 18px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 
 .icons-bottom img {
     width: 22px;
     height: 22px;
+    display: flex;
+    flex-direction: row;
 }
 
 .icon {
@@ -414,7 +417,8 @@ footer {
     #e5605d;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 678px) {
+
     section {
         padding: 80px 0;
     }
@@ -430,6 +434,11 @@ footer {
     .list-container {
         display: flex;
         flex-direction: row;
+    }
+
+    .project-image {
+        height: 100%;
+        width: 100%;
     }
 }
 
