@@ -66,6 +66,12 @@ header {
     margin: 0;
 }
 
+.bonus {
+    font-size: 16px;
+    margin-left: 1px;
+    margin-top:0;
+}
+
 .social-media-icon-container {
     width: 160px;
     height: 60px;
@@ -180,24 +186,34 @@ header {
 
 .project-wrapper {
     width: 50%;
-    padding 10px;
+    padding: 10px;
 }
 
-.project-card {
-    
+.project-card {    
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding: 16px;
     position: relative;
 }
 
-.project-card h2 {
+.project-card a {  
+    width: 260px;
+    text-decoration: none;
+}
+
+.title-project {
     position: absolute;
-    z-index: 2;
-    top: 60px;
+    z-index: 1;
+    top: 19%;
+    right: 32%;
     font-size: 28px;
     font-weight: bold;
+    color: white;
+}
+
+.project-image {
+    width: 100%;    
 }
 
 .short-summary-text {
@@ -211,15 +227,28 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 }
 
-.important-tag-word {
-    width: 60px;
+.short-tag-word, .long-tag-word {
+    padding: 2px;
     margin-right: 15px;
-    background-color: #fdbbb5;
+    color: #fff;
+    text-align: center;
+    background-color: #76d1c0;
 }
+
+.short-tag-word {
+    width: 60px;
+}
+
+.long-tag-word {
+    width: 100px;
+}
+    
+
+
 /***OTHER PROJECTS SECTION***/
+
 .other-projects-section {
     display: flex;
     justify-content: center;
@@ -233,19 +262,61 @@ header {
 .my-thoughts-section {
     background-color: #fdbbb5;
     padding: 25px;
+    color:#562349;
  }
 
- .article-container h1 {
-     background-color: #fee2b3;
+ .my-thoughts-section h1, .article-container h1 {
+     background-color: #562349;
+     color: #fff;
  }
+
+ 
 
 
 /***SKILLS SECTION***/
 .skills-section {
     background-color: #fee2b3;
     padding: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
 }
+
+.skills-section h1 {
+    width: 100px;
+    background-color: #821752;
+    color: #fff;
+}
+
+.skill-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 10px;
+    
+}
+
+.skills-section h2 {
+    color: #821752;
+    margin: 0;
+}
+
+.skill-list, .tool-box-list, .upcoming-list {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 0;
+    
+}
+
+
+
+
+
 
 /***FOR MORE***/
 .for-more-links-section {
