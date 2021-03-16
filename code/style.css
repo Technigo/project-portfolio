@@ -1,9 +1,13 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
   font-family: "Montserrat", "sans-serif";
   background-color: white;
   color: #222830;
@@ -16,7 +20,7 @@ p {
 /*header*/
 
 header {
-  background-image: url("./assets/La Boca portfolio background2.png");
+  background-image: url("./assets/La\ Boca\ portfolio\ background2\ \(wecompress.com\).png");
   background-size: cover;
   padding: 0 24px;
   display: flex;
@@ -135,28 +139,26 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px;
+  margin: 6px;
 }
 
 .summary-section {
-  margin-top: 10%;
+  background-color: #f4f4f4;
   display: flex;
-  justify-content: center;
-  margin-left: 6%;
-  margin-right: 6%;
+  justify-content: center; 
 }
 
 .summary-red-line {
   display: inline-block;
   width: 50px;
   height: 2px;
-  background-color: #b91622;
+  background-color: #FA382F;
   margin-bottom: 6px;
 }
 
 .summary-red-dot {
   display: inline-block;
-  background-color: #b91622;
+  background-color: #FA382F;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -170,7 +172,7 @@ h2 {
   font-size: 22px;
   line-height: 27px;
   text-align: center;
-  background-color: #b91622;
+  background-color: #FA382F;
   color: white;
   padding: 0 8px;
   margin: 0 0 32px;
@@ -180,14 +182,20 @@ h3 {
   font-size: 21px;
   line-height: 25px;
   text-align: center;
-  color: #b91622;
+  color: #FA382F;
   margin: 40px 0;
 }
+
 .tech-section {
-  margin-top: 7%;
+  margin: 7%
 }
 
+
 /*projects*/
+
+.projects-section {
+  background-color: #f4f4f4;
+}
 
 .grid-container {
   display: grid;
@@ -256,7 +264,7 @@ h4 {
   font-size: 10px;
   line-height: 11px;
   letter-spacing: 0.01em;
-  background-color: #b91622;
+  background-color: #FA382F;
   padding: 5px;
   color: white;
 }
@@ -319,6 +327,10 @@ a {
 
 /*skills*/
 
+.skills {
+  background-color: #f4f4f4;
+}
+
 .list-container {
   display: flex;
   flex-direction: row;
@@ -340,7 +352,7 @@ h6 {
   font-weight: 700;
   font-size: 17px;
   line-height: 29px;
-  color: #b91622;
+  color: #FA382F;
   margin: 0;
 }
 
@@ -366,7 +378,7 @@ ul {
 
   .icon-wrapper {
     font-size: 10px;
-    color: #b91622;
+    color: #FA382F;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     display: flex;
@@ -382,22 +394,24 @@ ul {
   .circle-big {
     text-decoration: none;
     margin: 2px;
-    width: 60px;
-    height: 60px;
-    border: 2px solid #b91622;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #FA382F;
     border-radius: 50%;
-    color: #b91622;
+    color: #FA382F;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .icons-big {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
   .for-more {
     padding: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   /***FOOTER SECTION***/
@@ -436,6 +450,7 @@ ul {
   .section > * {
     width: 60%;
   }
+
 
   .thoughts-container {
     display: flex;
@@ -477,6 +492,13 @@ ul {
     background-position: center;
   }
 
+  .section {
+    width: fit-content;
+  }
+
+  .container {
+    width: fit-content;
+  }
   .thoughts-header-mobile {
     display: none;
   }
