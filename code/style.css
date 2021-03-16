@@ -16,13 +16,14 @@ p {
 /*header*/
 
 header {
-  background-image: url("./assets/atle-mo-aNHthOFYCOM-unsplash.jpg");
+  background-image: url("./assets/La Boca portfolio background2.png");
   background-size: cover;
   padding: 0 24px;
   display: flex;
   flex-direction: column;
   color: white;
 }
+
 
 .header-elements {
   display: flex;
@@ -122,11 +123,12 @@ h1 {
 
 /***main content***/
 
-main {
+.container {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  max-width: 100%;
 }
 
 section {
@@ -148,13 +150,13 @@ section {
   display: inline-block;
   width: 50px;
   height: 2px;
-  background-color: #e5605d;
+  background-color: #b91622;
   margin-bottom: 6px;
 }
 
 .summary-red-dot {
   display: inline-block;
-  background-color: #e5605d;
+  background-color: #b91622;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -168,7 +170,7 @@ h2 {
   font-size: 22px;
   line-height: 27px;
   text-align: center;
-  background-color: #e5605d;
+  background-color: #b91622;
   color: white;
   padding: 0 8px;
   margin: 0 0 32px;
@@ -178,7 +180,7 @@ h3 {
   font-size: 21px;
   line-height: 25px;
   text-align: center;
-  color: #e5605d;
+  color: #b91622;
   margin: 40px 0;
 }
 .tech-section {
@@ -254,7 +256,7 @@ h4 {
   font-size: 10px;
   line-height: 11px;
   letter-spacing: 0.01em;
-  background-color: #e5605d;
+  background-color: #b91622;
   padding: 5px;
   color: white;
 }
@@ -338,7 +340,7 @@ h6 {
   font-weight: 700;
   font-size: 17px;
   line-height: 29px;
-  color: #e5605d;
+  color: #b91622;
   margin: 0;
 }
 
@@ -364,7 +366,7 @@ ul {
 
   .icon-wrapper {
     font-size: 10px;
-    color: #fa382f;
+    color: #b91622;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     display: flex;
@@ -382,9 +384,9 @@ ul {
     margin: 2px;
     width: 60px;
     height: 60px;
-    border: 2px solid #fa382f;
+    border: 2px solid #b91622;
     border-radius: 50%;
-    color: #fa382f;
+    color: #b91622;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -408,7 +410,8 @@ ul {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 28px;
-    background-color: #fa382f;
+    background-color: 
+    #0085d6;
     color: #fff;
     padding: 50px;
     text-decoration: none;
@@ -423,9 +426,15 @@ ul {
     padding: 3px;
   }
 
+  /*media queries*/
+
 @media (min-width: 678px) {
   section {
     padding: 80px 0;
+  }
+
+  .section > * {
+    width: 60%;
   }
 
   .thoughts-container {
@@ -442,6 +451,7 @@ ul {
   .more-thoughts {
     display: flex;
     flex-direction: column;
+    
   }
 
   .projects-container {
@@ -455,6 +465,23 @@ ul {
     margin: 15px;
   }
 
+  .other-projects {
+    align-items: left;
+  }
 
 
+}
+
+@media (min-width: 1440px) {
+  .header {
+    background-position: center;
+  }
+
+  .thoughts-header-mobile {
+    display: none;
+  }
+
+  .thoughts-header-desktop {
+    display: block;
+  }
 }
