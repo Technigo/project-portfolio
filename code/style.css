@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
-
+/*
+* { border: 1px solid pink; }*/
 
 body {
     margin: 0;
@@ -167,8 +168,39 @@ body {
     margin-top: 20px;
 }
 
-.card-img {
+.project.card {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image-text h3{
+    position: absolute;
+    z-index: 1;
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    text-shadow: 2px 2px #ff0000
+}
+
+.card-image {
     height: 200px;
     object-fit: cover;
     padding: 30px 0;
+}
+
+.project-description {
+    width: 80%;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    margin: 10px 30px;
 }
