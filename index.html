@@ -1,153 +1,246 @@
 <!DOCTYPE html>
+
+<html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-    <title>Nazanin's Portfolio</title>
-    <link rel="stylesheet" href= "style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header>
-        <main class="hero">
-            <div class="icons"></div>
-            <section class="profile-row">
-                <div>
-                    <h3 class="name-name">Portfolio: Nazanin Adampira</h3>
-                    <h1 class="name">Frontend developer</h1>
-                </div>
-                <div>
-                    <img class="profile" src="./assets/images/IMG_0784.jpg" alt="profile-pic"></img>
-                </div>
-            </section>
-        </main>
-        <section class="bio-box">
-         <p class="bio">
-            Hello! I’m a strategic and creative senior art director/digital designer with frontend developerskills and experience design at I’m all about solving problems that matter and creating awesome,meaningful products for people to love.
-         </p>
-       </section>
+        <div class="title">
+            <h4>PORTFOLIO: <span class="highlight">Nazanin Adampira</span></h4>
+            <h1>frontend developer</h1>
+            <p>with a background in Teaching</p>
+        </div>
+        <div class="icon-container">
+            <div class="icon">
+                <a href="https://github.com/nazi-pira" target="_blank"> <img class="icon-img"
+                        src="" alt="github-icon"></a>
+            </div>
+            <div class="icon">
+                <a href="https://se.linkedin.com/in/nazanin-adampira-884b55178" target="_blank"> <img class="icon-img"
+                        src="" alt="linkedin-icon"></a>
+            </div>
+            <div class="icon">
+                <a href="https://stackoverflow.com/users/14968822/nazanin" target="_blank"> <img
+                        class="icon-img" src="assets/stackoverflow.png" alt="stackoverflow-icon"></a>
+            </div>
+        </div>
+        <img class="profile-img" src="assets/images/IMG_0784.jpg" alt="picture of Nazanin">
+
     </header>
 
-    <section class="tech">
-        <h4 class="tech-title">Tech</h4>
-        <article class="tech-text">
-            HTML, CSS, Flexbox, JavaScript, ES6, JSX, React,React Hooks, Redux, Node.js, Mongo DB, Web Accessibly,API:s, mob-programming, pair-programming, Github. 
-        </article>
-    </section>
+    <div class="container">
 
-     <!--Featured projects-->
-    <section class="featured">
-        <h4 class="featured-title">Featured Projects</h4>
-        <section class="featured-cards">
-            <div><img class="featured-img" src="./assets/images/FAQ-design.png" alt="chat bot image">
-                <h6>
-                    CHAT BOT BUILT IN JAVASCRIPT. 
-                </h6>
-                <p class="featured-text">
-                    CHAT BOT BUILT IN JAVASCRIPT. Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.
-                </p>
+        <section id="summary-section">
+            <div class="pitch-div">
+                <div class="my-pitch">
+                    After couple of years working as a Teacher, I decided to change my career and become a
+                    frontend developer. I'm very passionate about learning and growing within a team.
+                    My skills in UI/UX makes me constatly think how interfaces could be improved and how I, as a
+                    developer can make the products as usable as possible.
+                </div>
             </div>
-            <div><img class="featured-img" src="./assets/images/FAQ-design.png" alt="chat bot image">
-                <h6>
-                    CHAT BOT BUILT IN JAVASCRIPT. 
-                </h6>
-                <p class="featured-text">
-                    CHAT BOT BUILT IN JAVASCRIPT. Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.
-                </p>
+
+        </section>
+
+        <section id="tech-section">
+            <h2> TECH</h2>
+            <p>HTML, CSS, Flexbox, Grid layout, Bootstrap, JavaScript, API:S, mob-programming,
+                pair-programming, Github, Figma, Adobe Photoshop. </p>
+
+        </section>
+
+
+        <section id="featured-projects-section">
+
+            <h2>FEATURED PROJECTS</h2>
+
+            <div class="cards-container">
+
+                <div class="project-card">
+
+                    <figure>
+                        <a href="" target="_blank">
+                            <figcaption>A business site </figcaption><img class="card-img" src="assets/dogbody.png">
+                        </a>
+                    </figure>
+                    <div class="project-card-info">
+                        <div><strong>A responsive business site</strong>. using a hero video and flexbox layout</div>
+                        <div class="project-description">
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>DOM</div>
+                            <div>JavaScript</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <figure>
+                        <a href="https://github.com/nazi-pira/project-chatbot" target="_blank">
+                            <figcaption>Pizza-bot</figcaption> <img class="card-img" src="assets/pizza-bot.png">
+                        </a>
+                    </figure>
+                    <div class="project-card-info">
+                        <div><strong>A Burger machine site</strong>. using HTML, CSS and Javascript for
+                            Burger orders</div>
+                        <div class="project-description">
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>DOM</div>
+                            <div>JavaScript</div>
+                            <div class="test">pair-programming</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <figure>
+                        <a href="https://priceless-chandrasekhar-e94c89.netlify.app/" target="_blank">
+                            <figcaption>Weather-app</figcaption> <img class="card-img" src="assets/weather app.png">
+                        </a>
+                    </figure>
+                    <div class="project-card-info">
+                        <div><strong>Stockholm's weather app </strong> Using open weather API, in JavaScript</div>
+                        <div class="project-description">
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>Json</div>
+                            <div>JavaScript</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section id="other-projects-section">
+            <h2> OTHER PROJECTS</h2>
+            <div class="other-projects">
+                <div class="other-projects-info">
+                    <a href="https://stoic-euler-9c0c4d.netlify.app/" target="_blank"> A music website using Spotify API
+                        </a>
+                    <div class="project-description">
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>DOM</div>
+                        <div>JavaScript</div>
+                    </div>
+
+                </div>
+                <div class="other-projects-info">
+                    <a href="https://github.com/nazi-pira/project-business-site" target="_blank"> A simple buisness website</a>
+                    <div class="project-description">
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>DOM</div>
+                        <div>JavaScript</div>
+                    </div>
+                </div>
+
+                <div class="other-projects-info">
+                    <a href="https://github.com/nazi-pira/project-guess-who" target="_blank"> A game using Javascript</a>
+                    <div class="project-description">
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>DOM</div>
+                        <div>JavaScript</div>
+                        <div>Json</div>
+                    </div>
+
+                </div>
+
             </div>
         </section>
-    </section>  
 
-     <!--Other Projects-->
-    <section class="other" >
-            <h5 class="other-title-1"> Other Projects</h5>
-            <p> 
-                <h6 class="other-title-2">
-                WEATHER APP
-                </h6>
-                <p class="other-title-project-3">
-                Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.
-                </p>
-                <h6 class="other-title-2">
-                WEATHER APP
-                </h6>
-                <p class="other-title-project-3">
-                Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.
-                </p> 
-            </p>
-    </section>
-
-           
-       <!---My Thoughts--->
-
-    <section class=thoughts>
-            <h6 class="thoughts-title">
-                MY THOUGHTS
-            </h6>
-             <img class="thoughts-img" src="./assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="">
-              <p class="thoughts-text"> 
-                How to stop being scared: Learning to love code
-                Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.
-              </p>
-    </section>
-        
-         <!--More thoughts-->
-
-    <section class="more">
-            <h6 class="more-title">
-                MORE THOUGHTS
-            </h6>
-            <div class="more-text">
-            <p>
-                SEP 2019. 5 Apps that will make coding easier.  >>
-            </p>
-            <p>
-                SEP 2019. 5 Apps that will make coding easier.  >>
-            </p>
+        <section id="my-thoughts-section">
+            <h2>MY THOUGHT ABOUT CODE </h2>
+            <div class="my-thoughts-container">
+                <div class="article-card">
+                    <img class="article-img" src="assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg">
+                    <div class="article-caption">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum, at laborum maiores
+                        suscipit corrupti ipsum vero repellendus modi
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img class="article-img" src="assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg">
+                    <div class="article-caption">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+                        at laborum maiores suscipit corrupti ipsum vero repellendus modi
+                    </div>
+                </div>
             </div>
-           
-    </section>
-
-         <!--Skills-->
-    <section class="skills">
-            <h6 class="skills-title">
-                skills
-            </h6>
-            <p class="skills-text">
-                CODE
-                 HTML5
-                CSS3
-                JavaScript ES6
-                React
-                Styled Components
-                GitHub
-                
-                UPCOMING
-                Redux
-                Node.js   
-            </p>
-    </section>
+        </section>
 
 
-         <!---For more-->
-    <section class="more-icons">
-            <h6 class=more-icons-title>
-                for more
-            </h6>
-            <p class="more-icons-2">
-                icons
-            </p>
-    </section>
+        <section id="skills-section">
+            <h2>SKILLS</h2>
 
-        <!--Contact-->
-<footer>
-    <div class="contact">
-        <h6 class="contact-title"> 
-            Contact
-        </h6>
-        <p class="contact-details">
-           Name Surname +46 70 00 00 00
-           name@email.com
-        </p>
-        
+            <div class="skills-container">
+                <div class="code-skills">
+                    <h5>CODE</h5>
+                    <div>HTML5</div>
+                    <div>CSS3</div>
+                    <div>Bootstrap</div>
+                    <div>JavaScript ES6</div>
+                    <div>Github</div>
+                </div>
+                <div class="toolboxs-skill">
+                    <h5>TOOLBOX</h5>
+                    <div>VS Code</div>
+                    <div>Terminal</div>
+                    <div>Figma</div>
+                    <div>Trello</div>
+                    <div>Slack</div>
+                    <div>Microsoft Office</div>
+                    <div>Adobe Photoshop</div>
+                </div>
+                <div class="uppcoming-skills">
+                    <h5>UPPCOMING</H5>
+                    <div>Node.JS</div>
+                    <div>React</div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <h2> Contact Me</h2>
+            <div>Nazanin Adampira</div>
+            <div>nazi.pira88@gmail.com</div>
+            <div>0762516236</div>
+            <div class="icon-container">
+                <div class="icon">
+                    <a href="https://github.com/nazi-pira" target="_blank"> <img class="icon-img"
+                            src="" alt="github-icon"></a>
+                </div>
+                <div class="icon">
+                    <a href="https://se.linkedin.com/in/nazanin-adampira-884b55178" target="_blank"> <img class="icon-img"
+                            src="" alt="linkedin-icon"></a>
+                </div>
+                <div class="icon">
+                    <a href="https://stackoverflow.com/users/14968822/nazanin" target="_blank"> <img
+                            class="icon-img" src="" alt="stackoverflow-icon"></a>
+                </div>
+            </div>
+        </footer>
     </div>
-</footer>
+
 
 </body>
+
+</html>
