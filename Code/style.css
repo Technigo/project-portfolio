@@ -182,7 +182,7 @@ header {
 }
 
 .projects-wrapper {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;   
     align-items: center;
@@ -199,15 +199,25 @@ header {
     background-color: #821752;
 }
 
+.all-cards-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cc0267;
+    justify-content: center;
+    
+}
+
 .project-card {    
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
+    width: 100%;
 }
 
 .project-image-container  {
-    width: 300px;
+    width: 100%;
     position: relative;    
 }
 
@@ -218,12 +228,13 @@ header {
 .title-project {
     position: absolute;
     z-index: 1;
-    top: 80px;
-    left: 80px;
-    font-size: 28px;
+    top: 40%;
+    left: 25%;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     margin: 0;
+    text-align: justify;
 }
 
 .project-image {
@@ -237,7 +248,8 @@ header {
 }
 
 .short-summary-text {
-    margin-bottom: 16px;    
+    margin-bottom: 16px;
+    color: #562349;    
 }
 
 .tag-word-container {
@@ -246,6 +258,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .tag-word {
@@ -279,16 +292,68 @@ header {
     align-items: center;
     flex-direction: column;
     background-color: #fdbbb5;
-    padding: 25px;
     color:#562349;
  }
 
- .my-thoughts-section h1, .article-container h1 {
+ .article-containter {
+     border: 1px solid #76d1c0;
+     width: 75%;
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-direction: column;
+     text-align: left;
+     margin-left: 20px;
+     
+ }
+
+ .my-thoughts-image {
+     width: 100%;
+     margin-bottom: 20px;
+     
+ }
+
+ .my-thoughts-main-title {
      width: 200px;
      background-color: #562349;
      color: #fff;
      text-align: center;
  }
+
+ .date {
+     font-size: 16px;
+     font-weight: lighter;
+     color: #cc0267;
+     margin: 0;
+ }
+
+ .my-thoughts-title {
+     color: #562349;
+     margin: 0;
+ }
+
+ .my-thoughts-text {
+     color: #fff;
+     font-size: 16px;
+     margin: 0;
+ }
+
+ .more-thoughts-title {
+    color: #562349;
+    margin: 30px 0 0 0;
+ }
+
+ .more-thoughts-text {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 0 30px 0;
+ }
+
+
+
+
+
+ 
 
 
 /***SKILLS SECTION***/
@@ -348,9 +413,6 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    
-    
 }
 
 .more-icon-links-container h1 {   
@@ -388,8 +450,6 @@ header {
     
 }
 
-
-
 .single-icon-container a i {
     font-size: 25px;
     color: white;
@@ -426,7 +486,7 @@ footer {
 /*MEDIA QUERIES*/
 
  /* TABLET */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
 
     /*HEADER*/
     .header-text-container {
@@ -475,8 +535,28 @@ footer {
         
     }
 
+    /* SUMMARY SECTION*/
     .summary-section {
         padding: 100px 0;
+    }
+
+    /*FEATURED PROJECTS*/
+
+    .all-cards-container {
+        display: flex;
+        flex-direction: row;        
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        width: 45%;
+        margin-right: 30px;
+    }
+
+    .title-project {
+        font-size: 28px;
+        left: 15%;
+
     }
 }
 
@@ -526,7 +606,12 @@ footer {
         
     }
 
-    .summary-section {
-        padding: 120px 0;
+   .project-card {
+        width: 20%;
+    }
+
+    .title-project {
+        left: 20%;
+        font-size: 20px;
     }
 }
