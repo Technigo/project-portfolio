@@ -35,6 +35,10 @@ body{
     background:rgba(245, 245, 245, 0.44);
 }
 
+.fab:hover{
+  opacity: 0.6;
+}
+
 .name-title{
     position: absolute;
     width: 75%;
@@ -148,8 +152,11 @@ body{
   text-decoration: none;
   margin-bottom: 20px;
   align-content: flex-start;
-  
 }
+.project-card:hover {
+  opacity: 0.7;
+}
+
 .image-title-wrapper{
   position: relative;
   margin-bottom: 10px;
@@ -172,17 +179,25 @@ body{
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  z-index: 1;
+  z-index: 2;
   font-family: Montserrat;
   font-weight: 600;
   text-transform: uppercase;
 }
+.image-container{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  max-height: 230px;
+  z-index: 1;
+} 
+
 .project-image {
   width: 100%;
-  height: 210px;
   filter: brightness(70%);
   opacity: 0.7;
-  z-index: 2;
+  object-fit: cover;
 }
 .project-subtitle, .project-description, .project-tag{
   font-family: Roboto;
@@ -211,7 +226,7 @@ body{
 /* Other projects section */
 .other-projects {
   flex-wrap: wrap;
-  background-color: #F4F4F4;
+  /* background-color: #F4F4F4; */
   margin-top: 0;
   border: none;
 }
@@ -227,14 +242,14 @@ body{
 }
 .other-subtitle{
   text-decoration: underline;
+  margin-right: 5px;
 }
 
-.other-description {
-  text-decoration: underline;
+.other-description:hover {
+  text-decoration: underline red;
 }
 .arrow{
   color: #FA382F;
-  text-decoration: #FA382F underline;
 }
 .tags-container{
   width: 100%;
@@ -243,6 +258,9 @@ body{
 }
 
 /* Thoughts section */
+.thoughts {
+  display: none;
+}
 .thoughts-container{
   width: 100%;
   display: flex;
@@ -260,6 +278,7 @@ body{
   width: 100%;
   height: 210px;
   margin-bottom: 30px;
+  object-fit: cover;
 }
 .date, .thought-title {
   font-family: Roboto;
@@ -283,7 +302,9 @@ body{
   font-weight: 700;
 }
 /* More thoughts */
-
+.more-thoughts{
+  display: none;
+}
 .more{
   width: 100%;
   display: flex;
@@ -465,15 +486,18 @@ body{
   .sub-title{
     font-size: 25px;
   }
-  .project-image{
-    height: 330px;
-  }
   .thought-image{
     height: 330px;
   }
   .icon-link{
     width: 100px;
     }
+}
+@media (min-width: 550px){
+  .image-container{
+    height: auto;
+    max-height: 280px
+  }
 }
 /* Tablet  */
 @media(min-width: 768px) {
@@ -520,6 +544,9 @@ body{
   .section-header {
     font-size: 36px;
   }
+  .image-container{
+    height: 220px
+  }
   .project-subtitle, .project-description{
     font-size: 20px;
   }
@@ -532,7 +559,7 @@ body{
   .last {
     display: block;
   }
-  .project-image, .thought-image {
+  .thought-image {
     height: 250px;
   }
   .other-card {
@@ -602,7 +629,7 @@ body{
   .project-tag {
     font-size: 18px;
   }
-  .project-image, .thought-image {
+  .thought-image {
     height: 310px;
   }
   .icons-container {
