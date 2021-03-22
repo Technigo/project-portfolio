@@ -145,7 +145,7 @@ body {
 }
 
 .featured-project-image {
-    width: 300px;
+    width: 100%;
     padding-top: 20px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) contrast(50%);
 }
@@ -350,7 +350,8 @@ a:visited {
     
     .all-featured-projects, .other-projects {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .project-img-container {
@@ -358,14 +359,20 @@ a:visited {
     }
 
     .featured-project-image {
-        width: 300px;
+        width: 100%;
     }
 
-    .featured-project, .other-project {
-       width: 300px;
+    .featured-project {
+       width: 28%;
        text-align: left;
        padding: 20px;
        margin: 0;
+    }
+
+    .other-project {
+        width: 28%;
+        padding: 20px;
+        margin: 0;
     }
 
     .skill-section {
