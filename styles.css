@@ -39,6 +39,10 @@ header{
     justify-content: space-between;
 }
 
+.account-icon:hover{
+    transform: scale(1.5);
+}
+
 .portrait-img{
     position: absolute;
     width: 180px;
@@ -46,7 +50,7 @@ header{
     right: 24px;
     top: 356px;
     border-radius: 50%;
-    border: 3px solid pink;
+
 }
 
 /* FONTS */
@@ -92,7 +96,7 @@ h3{
 h4{
     font-family: Montserrat;
     font-size: 22px;
-    background-color: pink;
+    background-color: whitesmoke;
     margin: 0;
 }
 
@@ -102,7 +106,6 @@ h5{
     line-height: 25px;
     letter-spacing: 0em;    
     text-align: center;
-    color: rgb(255, 222, 0);
     margin: 25px;
 }   
 
@@ -157,6 +160,26 @@ h6{
 }
 
 /* PREVIOUS PROJECTS */
+.projectlink{
+    text-decoration: none;
+    color: black;
+}
+
+.projectlink:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.projectlink:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.projectlink:active{
+    text-decoration: none;
+    color: black;
+}
+
 .project-board{
     display: flex;
     flex-wrap: wrap;
@@ -174,11 +197,8 @@ h6{
 
 .project-name{
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    top: 0;
+    top: 33px;
+    right: 5px;
     color: rgb(255, 222, 0);
     display: flex;
     justify-content: center;
@@ -309,7 +329,7 @@ footer{
     display: flex;
     flex-direction: column;
     height: 300px;
-    background: rgb(255, 222, 0);
+    background: #0096B6;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -324,6 +344,10 @@ footer{
 
 .account-icon-footer{
     height: 60px;
+}
+
+.account-icon-footer:hover{
+    transform: scale(1.5);
 }
 
 .footer-contact{
@@ -355,10 +379,8 @@ footer{
         right: 70px;
         width: 250px;
         height: 250px;
-        border: 5px solid pink;
         top: 300px;
     }
-
 
 /* FONTS */
     p{
@@ -458,7 +480,11 @@ footer{
 @media (min-width:1200px){
 /* HEADER */
     .account-icons{
-        margin-right: 200px;
+        margin-right: 300px;
+    }
+
+    .account-icon{
+        padding: 0 20px;
     }
 
     .portrait-img{
