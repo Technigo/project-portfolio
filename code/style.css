@@ -100,7 +100,13 @@
     font-family: 'Roboto', sans-serif;
     background-color: white;
     color:  #1a1919;;
-} 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 1040px;
+}
 
 /***** SUMMARY *****/
 
@@ -177,12 +183,14 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
-    margin: 24px;
+    width: 85%;
+    margin: 10px;
 }
 
 .project-card a {
@@ -460,11 +468,12 @@
     }
 
     .project-card-container {
-        max-width: 85%;
+        /* max-width: 85%; */
+        max-width: 60%;
     }
 
     .project-card {
-        max-width: 42%;
+        max-width: 45%;
     }
 
     .card-image-container {
