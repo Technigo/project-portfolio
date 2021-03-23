@@ -211,7 +211,7 @@ a:visited {
 }
 
 .my-thoughts-container {
-    padding: 40px 20px;
+    padding: 40px 30px 20px 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -219,8 +219,18 @@ a:visited {
 }
 
 .my-thoughts-image {
-    width: 300px;
+    width: 100%;
     padding-top: 40px;
+}
+
+.my-thought-title {
+    text-align: left;
+    color: #F93943;
+}
+
+.my-thoughts-text {
+    text-align: justify;
+    line-height: 25px;
 }
 
 .skill-section-container {
@@ -296,18 +306,13 @@ a:visited {
         height: 190px;
     }
 
-    .summary, .tech-section-container, .other-projects-container, .featured-projects-container {
+    .summary, .tech-section-container, .other-projects-container, .featured-projects-container, .my-thoughts-container {
         padding: 40px 80px;
         text-align: center;
         
     }
 
-    .featured-project, .other-project, .my-thoughts-image {
-        width: 600px;
-        margin: auto;
-    }
-
-    .project-img-container {
+    .project-img-container, .my-thoughts-image  {
         display: none;
     }
 
@@ -373,6 +378,10 @@ a:visited {
         width: 28%;
         padding: 20px;
         margin: 0;
+    }
+
+    .my-thoughts-image {
+        width: 20%;
     }
 
     .skill-section {
