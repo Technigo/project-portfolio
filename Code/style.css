@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
 
-/* * {
-     border: 2px solid red;
-} */
 
 body {
-    margin:0;
     height: 100%;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 /*HEADER*/
@@ -131,7 +128,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     text-align: left;
-    padding: 30px 0 30px 0;
+    padding: 30px;
     
  }
 
@@ -218,12 +215,16 @@ header {
 }
 
 .project-image-overlay {
+    position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    color: #f1f1f1;
     transition: 0.5s ease;
     bottom: 0;
+}
+
+.project-image-container:hover .project-image-overlay {
+    opacity: 0;
 }
 
 .image-overlay-text {
@@ -273,19 +274,23 @@ header {
 
 .other-projects-section {
     width: 100%;
-    padding: 30px 0 30px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .other-projects-section h1 {
-    max-width: 280px;
+    width: 100%;
     padding: 5px;
     margin: 20px auto;
     font-size: 22px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+}
+
+.other-project-container {
+    width: 80%;
+    margin: 30px auto;
 }
 
 .other-project-link {
@@ -315,14 +320,13 @@ header {
  }
 
  .article-containter {
-     border: 1px solid #76d1c0;
      width: 75%;
      display: flex;
      justify-content: center;
      align-items: flex-start;
      flex-direction: column;
      text-align: left;
-     margin-left: 20px;
+     /* margin-left: 20px; */
      
  }
 
@@ -377,7 +381,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-left: 0 0 30px 20px;
+    
     
 }
 
@@ -500,6 +504,8 @@ footer {
  /* TABLET */
 @media (min-width: 768px) {
 
+    
+
     /*HEADER*/
     .header-text-container {
         width: 350px;
@@ -548,28 +554,26 @@ footer {
     }
 
     /* SUMMARY SECTION*/
-    .summary-section {
-        padding: 100px 0;
-    }
+  
 
     /*FEATURED PROJECTS*/
 
-    .all-cards-container {
+    .project-card-container {
         display: flex;
         flex-direction: row;        
         flex-wrap: wrap;
     }
 
-    /* .project-card-container {
-        width: 45%;
-        margin-right: 30px;
-    } */
+    .project-card {
+        width: 300px;
+        margin: 30px;
+    }
 
-    /* .title-project {
-        font-size: 28px;
-        left: 15%;
+    .image-overlay-text {
+        font-size: 30px;
+    }
 
-    } */
+    
 }
 
 /* DESKTOP */
