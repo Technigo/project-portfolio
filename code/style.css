@@ -169,6 +169,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-style: none;
+  transition: all 1s ease-in-out;
 }
 
 .featured-projects-two { 
@@ -184,13 +185,11 @@ p {
   padding: 0;
 }
 
-.project-container {
+.project-container:hover  {
   position: relative;
   width: 100%; 
-/*   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+  transition: all 2s ease-out;
+  transform: scale(1.1);
 }
 
 .project-container .header-three {
@@ -206,7 +205,6 @@ p {
   position: absolute;
   left: 15%;
   top: 8%;
-  background-color: #000;
 }
 
 .header-two { 
@@ -387,7 +385,8 @@ a, .footer {
 }
 
 a:hover, .footer {
-  /* border-bottom:2px solid #f5b825; */
+  transition: all 1s ease-in-out;
+  transform: scale(1.1);
 }
 
 /* Media queries */
@@ -442,11 +441,11 @@ a:hover, .footer {
     width: 100%;
   }
 
-  .project-container .header-three {
+/*   .project-container .header-three {
     position: absolute;
     left: 15%;
     top: 20%;
-  }
+  } */
 
   .featured-projects-one { 
     width: 100%;
@@ -522,14 +521,15 @@ a:hover, .footer {
     justify-content: space-between;
     flex-direction: row;
   }
-}
 
-.chatbot, .business-site, .weather-app, .guess-who-game {
+  .chatbot, .business-site, .weather-app, .guess-who-game {
   filter: brightness(50%);
 }
 
-.project-container .header-three {
+  .project-container .header-three {
   position: absolute;
   left: 15%;
   top: 20%;
+  }
+
 }
