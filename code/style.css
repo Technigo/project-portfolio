@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background: #222831;
   font-family: 'Montserrat', sans-serif;
 }
@@ -39,7 +44,7 @@ body {
 
 .header .icons {
   margin-top: 40px;
-  margin-right: 10%; 
+  margin-right: 20%; 
   display: flex; 
   justify-content: flex-end; 
   padding: 5px;
@@ -53,12 +58,13 @@ body {
 
 .caroline-image {
   position: absolute; 
-  top: 75%;
-  right: 10%;
+  top: 78%;
+  right: 20%;
   height: 150px;
   width: 150px; 
   border-radius: 50%;
   object-fit: cover;
+  z-index: 1;
 }
 
 .former-job-title {
@@ -85,7 +91,12 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 25px 0 0 0;
+  padding: 50px 0 20px 0;
+}
+
+.summary-text {
+  margin: 15px; 
+  font-size: 18px;
 }
 
 .tech {
@@ -97,6 +108,7 @@ body {
 }
 
 .header-tech {
+  margin-top: 20px;
   display: inline-flex;
   background-color: #393E46; 
   color: #FFD369; 
@@ -109,6 +121,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 5px;
+  margin-bottom: 30px;
 }
 
 .skill {
@@ -119,6 +132,9 @@ body {
 
 .featured-projects {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .header-featured-projects {
@@ -128,19 +144,31 @@ body {
   text-align: center;
 }
 
-.featured-projects-one {
+/* .featured-projects-one {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; 
   flex-direction: column;
-}
+} */
 
 .image-container {
-  width: 100%; 
+/*   width: 100%; 
   display:flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-style: none;
 }
 
 .featured-projects-two { 
@@ -151,30 +179,39 @@ p {
   padding: 10px; 
 }
 
+.project-description {
+  color: whitesmoke;
+  padding: 0;
+}
+
 .project-container {
   position: relative;
   width: 100%; 
-  display: flex;
+/*   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
-.header-three {
-  position: absolute;
-  text-align: center;
-  top: 17%;
-  left: 25%;
-  right: 25%;
+.project-container .header-three {
   color: #f5b825;
-  font-size: 30px;
   font-weight: 900; 
   font-family: 'Roboto', 'sans-serif';
+  font-size: 30px;
   letter-spacing: 2px;
   line-height: 120%; 
+  width: fit-content;
+  padding: 4px 8px;
+  margin: 0;
+  position: absolute;
+  left: 15%;
+  top: 8%;
+  background-color: #000;
 }
 
 .header-two { 
+  margin-top: 20px;
+  margin-bottom: 20px; 
   display: inline-flex;
   color: #FFD369;
   background-color: #393E46;
@@ -188,6 +225,8 @@ p {
 }
 
 .header-two-desktop {
+  margin-top: 20px; 
+  margin-bottom: 20px;
   display: none;
 }
 
@@ -321,14 +360,19 @@ p {
   font-size: 21px;
   line-height: 25px;
   color: #f5b825;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   background-image: url("./assets/img/footer.jpg");
   filter: brightness(90%);
   object-fit: cover;
 /* background:#222831; as default contrast color when image is not rendered */
+}
+
+.contact-information-container {
+  width: 90%;
+  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contact-information {
@@ -343,7 +387,7 @@ a, .footer {
 }
 
 a:hover, .footer {
-  border-bottom:2px solid #f5b825;
+  /* border-bottom:2px solid #f5b825; */
 }
 
 /* Media queries */
@@ -380,6 +424,8 @@ a:hover, .footer {
     display: inline-flex;
     color: #FFD369;
     background-color: #393E46;
+    margin-top: 20px; 
+    margin-bottom: 20px;
   }
 
   .header-two-mobile{
@@ -394,6 +440,12 @@ a:hover, .footer {
 
   .image-container {
     width: 100%;
+  }
+
+  .project-container .header-three {
+    position: absolute;
+    left: 15%;
+    top: 20%;
   }
 
   .featured-projects-one { 
@@ -419,7 +471,6 @@ a:hover, .footer {
   }
 
   .chatbot, .business-site, .weather-app, .guess-who-game {
-    height: 300px;
     width: 100%;
     filter: brightness(50%);
   }
@@ -428,6 +479,10 @@ a:hover, .footer {
     color: #f05e51;
   }
   
+  .technical-skills-container {
+    padding: 45px;
+  }
+
   .technologies {
     display: flex;
     flex-direction: row;
@@ -470,7 +525,11 @@ a:hover, .footer {
 }
 
 .chatbot, .business-site, .weather-app, .guess-who-game {
-  max-width: 300px; 
   filter: brightness(50%);
 }
 
+.project-container .header-three {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+}
