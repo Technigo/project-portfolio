@@ -20,4 +20,4 @@ Photo in the projects section by Adem AY: https://unsplash.com/photos/zs-41Br0W
 Photo in the thoughts section by Christopher Gower: https://unsplash.com/photos/m_HRfLhgABo
 
 View it live
-https://distracted-bardeen-a421b4.netlify.app/
+https://irina-jekabsone-portfolio.netlify.app
