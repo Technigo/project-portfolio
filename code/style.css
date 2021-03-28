@@ -147,23 +147,20 @@ body {
   text-align: center;
 }
 
-/* .featured-projects-one {
+  .featured-projects-one {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; 
   flex-direction: column;
-} */
+} 
 
 .image-container {
-/*   width: 100%; 
+  width: 100%; 
   display:flex;
   justify-content: center;
-  align-items: center; */
-
-  position: relative;
-  width: auto;
-  height: auto;
+  align-items: center; 
+  /* position: relative; */
   overflow: hidden;
 }
 
@@ -172,7 +169,6 @@ body {
   height: 100%;
   object-fit: cover;
   border-style: none;
-  transition: all 1s ease-in-out;
 }
 
 .featured-projects-two { 
@@ -189,33 +185,25 @@ p {
   font-family: 'Roboto', 'sans-serif';
 }
 
-.project-container:hover  {
+.project-container {
   position: relative;
-  width: 100%; 
-/*   transition: all 2s ease-out;
-  transform: scale(1.1); */
+  width: 100%;
+  color: #f5b825; 
 }
 
 .chatbot, .business-site, .weather-app, .guess-who-game {
   filter: brightness(50%);
 }
 
-.project-container {
-  color: #f5b825;
-}
-
 .header-three {
   position: absolute;
   left: 15%;
-  top: 1%;
+  top: 8%;
   font-weight: 900; 
   font-family: 'Roboto', 'sans-serif';
   font-size: 30px;
   letter-spacing: 2px;
-  line-height: 120%; 
   width: fit-content;
-  padding: 4px 8px;
-  margin: 0;
 }
 
 .header-two { 
@@ -396,14 +384,8 @@ a, .footer {
   line-height: 45px;
 }
 
-a:hover, .footer {
-  transition: all 0.8s ease-in-out;
-  transform: scale(1.1);
-}
-
 /* Media queries --------------> SET IT BACK TO 700px if I can find out a generic positioning for header-three that works for all sizes */
 @media (min-width: 600px) {
-
   .heading {
     top: 35%; 
     left: 10%;
@@ -443,6 +425,10 @@ a:hover, .footer {
     display: none;
   }
 
+  .featured-projects-two { 
+    display: none;
+  }
+
   .featured-projects {
     font-family: Montserrat;
     font-size: 20px;
@@ -453,31 +439,14 @@ a:hover, .footer {
     width: 100%;
   }
 
-  .project-container .header-three {
+  .header-three {
     position: absolute;
-    left: 5%;
-    top: 20%;
+    left: 16%;
+    top: 22%;
   }
-
-  .featured-projects-one { 
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-  .featured-projects-two {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
 
   .project-container {
     position: relative;
-    width: 45%;
     padding: 20px;
   }
 
@@ -514,6 +483,7 @@ a:hover, .footer {
   }
 }
 
+/* Small desktop*/
 @media (min-width: 992px) {
 
   .featured-projects {
@@ -538,10 +508,20 @@ a:hover, .footer {
   filter: brightness(50%);
 }
 
-  .project-container .header-three {
+  .header-three {
   position: absolute;
-  left: 15%;
-  top: 20%;
+  left: 13%;
+  top: 18%;
+  width: fit-content;
   }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .header-three {
+    position: absolute;
+    left: 20%;
+    top: 25%;
+    }
 
 }
