@@ -37,11 +37,13 @@ body {
     font-family: 'Roboto, sans-serif';
     line-height: 18px;
     margin-right: 4px;
+
 }
 
 .name {
     font-size: 16px;
     font-weight: 700;
+
 }
 
 .work-title-container{
@@ -53,7 +55,7 @@ body {
     font-weight: 700;
     font-size: 40px;
     letter-spacing: 0.04em;
-    margin: 0px;
+    margin: 0 0 15px 0;
 }
 
 .work-background {
@@ -71,7 +73,7 @@ body {
     right: 20px;
     bottom: -30px;
     border-radius: 50%;
-    border: solid white 2px;
+    border: solid #d38c88  2px;
 }
 
 .navbar-logos {
@@ -112,37 +114,34 @@ body {
 
 .reddot {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: #FA382F;
-    border-radius: 50%;
     border: 2px solid #FA382F;
 }
 
-.tech-heading {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 0;
+.tech-section {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding: 30px 0 30px 0;
 }
 
-.red-background-heading {
+.tech-header {
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: #FA382F;
     padding: 5px;
     max-width: 80px;
     margin: 20px auto;
-    margin-top: 20px;
+    text-align: center;
 }
 
 .tech-experience {
-    font-family: 'Montserrat', sans-serif;
     margin-top: 25px;
     width: 70%;
     margin: 50px auto;
-    text-align: center;
-    font-weight: 300;
 }
 
 .projects-section {
@@ -154,25 +153,26 @@ body {
     padding: 30px 0;
 }
 
-.featured-projects-heading {
-    display: flex;
-    justify-content: center;
+.featured-projects-header {
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: #FA382F;
     padding: 5px;
-    max-width: 260px;
-    font-size: 22px;
+    max-width: 280px;
     margin: 20px auto;
-    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
 }
 
 
-.project.card {
-    width: 90%;
+.project-card {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    font-weight: 300;
+    margin: 30px auto;
+
 }
 
 .project-image-text {
@@ -191,25 +191,27 @@ body {
 }
 
 .card-image {
-    height: 200px;
-    object-fit: cover;
-    padding: 30px 0;
+    width: 100%;
+    height: auto;
 }
 
 .project-name {
     color:#FA382F;
-    margin: 0 40px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+
 }
 
 .project-description {
-    width: 80%;
     text-align: left;
     text-decoration: none;
     color: black;
-    margin: 5px 40px;
+    margin: 15px 0;
+
 }
 
-.other-projects-heading {
+.other-projects-header {
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
@@ -240,14 +242,15 @@ body {
 
 .tags {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
     margin: 1px 0;
+    padding: 0;
 }
 
 .tags li {
     background-color: #FDDFE7;
-    padding: 4px;
     margin: 0 10px 10px 0;
     color: black;
 
@@ -261,21 +264,30 @@ a:visited {
     text-decoration: none;
 }
 
-.my-thoughts-heading {
+.my-thoughts-section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.my-thoughts-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
     color: white;
     background-color: #FA382F;
     padding: 5px;
-    max-width: 160px;
-    font-size: 22px;
+    max-width: 170px;
     margin: 20px auto;
-    margin-top: 40px;
+    text-align: center;
 }
 
 .my-thoughts {
-    margin: 30px;
+    padding: 20px;
+    width: 70%;
+    margin: 20px auto;
+    font-weight: 300;
 }
 
 .my-thoughts-image{
