@@ -164,6 +164,10 @@ body {
     font-size: 22px;
 }
 
+.projects-link {
+    display: inline-block;
+}
+
 
 .project-card {
     display: flex;
@@ -219,12 +223,17 @@ body {
     padding: 5px;
     max-width: 260px;
     font-size: 22px;
-    margin: 20px auto;
-    margin-top: 20px;
+    margin: 20px 10px;
+    margin-top: 50px;
+    
 }
 
 .other-projects-container {
-    margin-left: 40px;
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: 34%;
+    margin: 20px auto;
 }
 
 .other-projects {
@@ -253,6 +262,7 @@ body {
     background-color: #FDDFE7;
     margin: 0 10px 10px 0;
     color: black;
+    padding: 5px;
 
 }
 
@@ -310,4 +320,57 @@ footer {
 .email{
     color: white;
     size: 16px bold;
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){
+  
+
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .projects-link {
+        display: inline-block;
+    }
+
+    .project-card {
+        width: 300px;
+        margin: 30px;
+    }
+
+    .project-image-text {
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media (min-width: 993px) {
+        .projects-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .projects-link {
+    display: inline-block;
+}
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+        height: auto;
+        font-weight: 300;
+        margin: 30px auto;
+    }
+
+
+
+    .project-image-text {
+        position: relative;
+        width: 100%;
+    }
 }
