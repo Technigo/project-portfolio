@@ -10,38 +10,62 @@
 </head>
 
 <body>
-    
-  <header>
-    <nav class="social-media-icons-header">
-      <a href="https://www.linkedin.com/in/estefan%C3%ADa-quevedo-lusby-24bb5a3/"><img src="assets/linkedin-header-icon.png" alt="Linked In icon" /></a>
-      <a href="https://github.com/esteficodes"><img src="./assets/github-header-icon.png" alt="Github icon"/></a>
-      <a href="https://stackexchange.com/users/20397924/estefan%c3%ada"><img src="./assets/github-header-icon.png" alt="Github icon"/></a>
+  <!-- Header -->  
+  <header class="header-container">
+    <!-- Background image -->
+    <picture>
+      <source srcset="./assets/background-image.jpg" media="(max-width: 667px)">
+      <img class="hero-image" src="./assets/background-image.jpg" alt="colorful background image of La Boca neighborhood in Buenos Aires."/> 
+    </picture>
+    <!-- Header content -->
+    <div class="header-content">
+    <nav class="header-icons">
+      <a class="circle-small" href="https://www.linkedin.com/in/estefan%C3%ADa-quevedo-lusby-24bb5a3/" target="_blank" rel="noopener"> 
+        <img class="icons-small" src="assets/linkedin-white.svg" alt="Linkedin icon with a link to my Linkedin profile">
+      </a>
+      <a class="circle-small" href="https://github.com/esteficodes" target="_blank" rel="noopener">
+        <img class="icons-small" src="assets/github-white.svg" alt="Github icon with a link to my Github profile">
+      </a>
+      <a class="circle-small" href="https://stackexchange.com/users/20397924/estefan%c3%ada" target="blank" rel="noopener">
+        <img class="icons-small" src="assets/stack-white.svg" alt="Stack Overflow icon with a link to my Stack Overflow profile">
+      </a>
     </nav>
-  <div class="header-title">
-    <p>PORTFOLIO:<span class="title-name"> ESTEFANÍA QUEVEDO</span></p>
-      <h1>Frontend Developer<span class="inside-h1">+E-learning specialist</span></h1>
-  </div> 
-  <img class="my-pic" src="assets/Estefania-3_40.png" alt="Picture of Estefanía">
- </header>
-
-<main class="container">
-  <section class="summary-section">
-   <p tabindex="0"><span class="summary-red-line"></span><span class="summary-red-dot"></span>
+     <!-- Website´s heading -->
+     <div class="header-text" aria-label="My full name and title">
+      <h1 class="flex-item-1">PORTFOLIO: <strong>ESTEFANÍA QUEVEDO</strong></h1>
+      <h1 class="flex-item-2">frontend</h1>
+      <h1 class="flex-item-3">developer</h1>
+      <h1 class="flex-item-4">+ e-learning specialist</h1>    
+    </div>
+     <!-- Profile picture -->
+  <img class="profile-picture" src="assets/Estefania-3_40.png" alt="Picture of Estefanía"/>
+</div>
+</header>
+<!-- Main sections -->
+<main class="main-section">
+  <section class="section-grey introduction" aria-label="introductory section">
+    <div class="text-introduction" >
+   <p tabindex="0">
+     <span class="summary-red-line" aria-hidden="true"></span>
+     <span class="summary-red-dot" aria-hidden="true"></span>
     Hola, there! I'm Estefanía -Frontend Developer with a background in languages e-learning and translation. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cupiditate eaque repellendus 
     quod corporis quas culpa tempore reprehenderit animi ea. Ea quisquam voluptate consequuntur inventore, dolorum error earum cum obcaecati.
    </p>
+   </div>
   </section>
 
- <section class="tech-section">
+ <section class="tech-section" aria-label="Section about technologies, tools and libraries I work with">
       <h2>TECH</h2>
       <p tabindex="0">
-          HTML, CSS, JavaScript, Web Accessibility, Unit Testing, API:s, Git, Command Line, React, JSX
-      </p> 
+          HTML, CSS, Flexbox, <span class="highlight">JavaScript</span>, ES6, JSX, <span class="highlight">React, React Hooks, Redux</span>, Node.js, Mongo DB Web Accessibility, Unit Testing, API:s, Git, Command Line, GitHub.
+     </p> 
 </section>
 
-<section class="projects-section">
-  <h2>FEATURED PROJECTS</h2>
-  <div class="projects-container">
+ <!-- Projects section -->
+<section class="projects-section" aria-label="Section about my projects">
+  <h2 class="titles">FEATURED PROJECTS</h2>
+  <!-- Flexbox wrapper for featured projects -->
+  <div class="featured-projects-wrapper">
     <div class="project">
       <a href="https://app.netlify.com/sites/estefania-project5-guesswhogame/overview">
         <div class="project-image-container">
@@ -83,7 +107,8 @@
   </a>
 </div>
 </div>
-
+<!-- Flexbox wrapper for other projects -->
+<div class="other-projects-wrapper">
   <h3>OTHER PROJECTS</h3>
   <a class="project other-project" href="https://pedantic-northcutt-25e910.netlify.app/">
     <h4>WEATHER APP.</h4>
@@ -122,8 +147,10 @@
     <span class="tag">Grid</span>
   </div>
   </a>
+</div>
 </section>
 
+ <!-- Flexbox wrapper for my thoughts-->
 <section class="thoughts-about-code">
   <h2 class="thoughts-header-mobile">MY THOUGHTS</h2>
   <h2 class="thoughts-header-desktop">MY THOUGHTS ABOUT CODE AND E-LEARNING</h2>
@@ -255,7 +282,5 @@
 </footer>
 
 </body>
-
-
 </html> 
   

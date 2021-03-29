@@ -1,6 +1,6 @@
 <h1>Portfolio</h1>🎨🖌️💻
 
-Pfeww! 8 weeks have passed since the beginning of the bootcamp. What a ride! Now we are already working on our portfolios to showcase all the exciting new things that we are able to build.😀
+Pheww! 8 weeks have passed since the beginning of the bootcamp. What a ride! Now we are already working on our portfolios to showcase all the exciting new things that we are able to build.😀
 
 <h2>Technologies that I used</h2>
 
