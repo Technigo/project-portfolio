@@ -36,6 +36,7 @@ header {
     background-size: cover;
 }
 
+
 .section-header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -43,7 +44,7 @@ header {
 
     color: #ffff;
     text-transform: uppercase;  
-    padding: 0 3px;
+    padding: 0 10px;
     align-self: center;
     background: rgb(4,28,46);
     background: linear-gradient(90deg, rgba(4,28,46,1) 0%, rgba(23,83,125,1) 69%);
@@ -218,6 +219,7 @@ header {
     font-family: Montserrat;
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
   }
 
   .languages-used {
@@ -390,6 +392,11 @@ ul {
     display: none;
 }
 
+/* Hiding section until have an article */
+.header-more, .more-toughts{
+    display: none;
+}
+
 
 
 /* TABLET VIEW */
@@ -454,12 +461,13 @@ ul {
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     .card {
-        width: 270px;
+        width: 45%;
     }
 
     .my-toughts-card{
-        width: 270px;
+        width: 45%;
     }
 
     /* ICONS BOTTOM */
@@ -470,175 +478,42 @@ ul {
 
 }
 
-/* SMALL DESKTOP VIEW */
 
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
+    
+     header {
+        padding: 5% 20% 0 20%;
+    }
+
     .portfolio-section {
-        padding: 40px 130px;  
-    }
-    
- /* HEADER */
+        padding: 3% 20%;  
+    } 
 
-    header {
-        padding: 100px 130px 0 130px;
-
-    }
-    
+   
     .profile-picture {
         width: 220px;
         height: 220px;
         margin-top: -20px;
     }
     
-/* LANGUAGE CARDS */
     .language {
         font-size: 10px;
     }
 
-}
-
-/* DESKTOP VIEW */
-@media (min-width: 1150px) {
-
-    .portfolio-section {
-        padding: 60px 250px 60px;  
-        margin-bottom: 20px;
-    }
-
-    .grey {
-        background-color: #eff3f7;
-        padding-bottom: 60px;
-    }
-
-    .intro-section {
-        padding-top: 70px;
-    }
-
-    .profile-picture {
-        margin-top: -40px;
-    }
-
-    
-    /* HEADER */
-
-    header {
-        padding: 20px 250px 0px 250px;
-        height: 400px;
-    }
-
-    .icon {
-        margin-top: 50px;
-        width: 40px;
-        height: 40px;
-    }
-    
-    .profile-picture {
-        width: 200px;
-        height: 200px;
-        margin-top: -120px;
-    }
-    
-    .header-text {
-        font-size: 24px;
-        line-height: 49px;
-    }
-    
-    .header-text-name {
-        font-size: 17px;
-    }
-    
-    .header-text-portfolio {
-        font-size: 17px;
-    }
-    
-    .header-text-developer {
-        font-size: 55px;
-    }
-
-    .paragraph-text {
-        font-size: 20px;
-        line-height: 35px;
-
-    }
-
-    .section-header {
-        font-size: 30px;
-
+    .all-cards {
+        max-width: 2000px;
+        margin: 0 auto;
     }
 
     .card {
-        width: 350px;
+        width: 30%;
     }
 
-    .my-toughts-card{
-        width: 350px;
-    }
-
-    .featured-text {
-        font-size: 15px;
-        line-height: 25px;
-    }
-
-    .my-thoughts-heading {
-        font-size: 17px;
-        line-height: 25px;
-
-    }
-    
-    .my-thoughts-paragraph {
-        font-size: 14px;
-        line-height: 25px;
-        margin-bottom: 20px;
-    }
-
-    .other-projects-header, .header-more {
-        font-size: 30px;
-
-    }
-
-    /* ICONS BOTTOM */
-    .icon-bottom {
-        width: 60px;
-        height: 60px;
+    .portfolio-section{
+        max-width: 2000px;
+        margin: 0 auto;
     }
 
 }
-
-/* LARGE DESCTOP VIEW */
-@media (min-width: 1400px) {
-    header {
-        padding: 20px 350px 0px;
-    }
-
-    .portfolio-section {
-        padding: 70px 350px 60px;  
-    }  
-}
-
-@media (min-width: 1700px) {
-    header {
-        padding: 20px 500px 0px;
-    }
-
-    .portfolio-section {
-        padding: 70px 500px 60px;  
-    }  
-}
-
-@media (min-width: 1900px) {
-    header {
-        padding: 20px 550px 0px;
-    }
-
-    .portfolio-section {
-        padding: 70px 550px 60px;  
-    }  
-
-    .profile-picture {
-        margin-top: -90x;
-        margin-bottom: -40px;
-    }
-}
-
 
 
