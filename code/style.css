@@ -179,13 +179,13 @@ position: relative;
 /********* FEATURED PROJECTS *********/
 
 /* To make entire div a clickable link */
-.featured-project-container {
+.featured-project-container, .other-project-container {
   position: relative;
   width: 327px;
   margin-bottom: 40px;
 }
 
-.featured-project-container a::after{
+.featured-project-container, .other-project-container a::after{
 content: "";
 position: absolute;
 top: 0;
@@ -333,12 +333,12 @@ z-index: 1;
 }
 
 .blog-entry-link:focus {
- background-color: var(--light-contrast) ;
+  background-color: var(--light-contrast) ;
 }
 
 .blog-entry-link:hover {
   background-color: var(--light-contrast) ;
- }
+}
 
 .blog-entry-link:active {
   background-color: var(--secondary)
@@ -349,7 +349,7 @@ z-index: 1;
   position: relative;
   width: 327px;
 }
- 
+
 .blog-entry a::after{
   content: "";
   position: absolute;
@@ -454,6 +454,7 @@ z-index: 1;
   text-align: center;
   text-decoration: none;
   margin-top: 18px;
+  color: var(--primary)
 }
 
 .bottom-navbar-social-media-link {
@@ -480,13 +481,6 @@ z-index: 1;
     color: var(--light);
     background-color: var(--contrast) ;
     text-align: center;
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 24px;
   }
 
   .copyright {
@@ -661,11 +655,11 @@ z-index: 1;
 
   /********* TECH *********/
 .section {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- margin: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 24px;
 }
 
 .section-header {
@@ -708,8 +702,18 @@ z-index: 1;
   width: 523px;
 }
 
+.featured-project-container a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  }
+
 .featured-project-image-container1 {
-  background-image: url("./assets/guess-who.JPG");
+  background-image: url("./assets/happy-thoughts.JPG");
   background-color:var(--darken-blend);
   background-blend-mode: multiply;
   background-size: cover;
@@ -721,7 +725,7 @@ z-index: 1;
 }
 
 .featured-project-image-container2 {
-  background-image: url("./assets/weather-app.JPG");
+  background-image: url("./assets/business-card-generator.JPG");
   background-color:var(--darken-blend);
   background-blend-mode: multiply;
   background-size: cover;
@@ -731,6 +735,10 @@ z-index: 1;
   justify-content: center;
   align-items: center;
   margin: 0;
+}
+
+.other-project-container {
+  width: 1100px;
 }
 
 .project-explanation {
@@ -746,7 +754,7 @@ z-index: 1;
   font-family:'Roboto', sans-serif;
   font-weight: 400;
   font-size: 25px;
-  line-height: 41px;
+  line-height: 33px;
 }
 
 .tech-symbol {
@@ -769,6 +777,16 @@ z-index: 1;
 }
 
 /********* MY THOUGHTS *********/
+.thoughts-container {
+  width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 54px;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: start;
+
+}
 
 .thoughts-image-container {
   width: 523px;
@@ -811,6 +829,14 @@ z-index: 1;
   color: var(--primary);
 }
 
+.more-thoughts {
+  margin-bottom: 40px;
+}
+
+.blog-entry-link-heading {
+  margin-bottom: 24px;
+}
+
 .blog-entry-link:link {
   width: 1100px;
   font-family:'Roboto', sans-serif;
@@ -835,7 +861,64 @@ z-index: 1;
 .blog-entry-link:active {
   background-color: var(--secondary)
 }
+/********* MY THOUGHTS *********/
+.skills-container {
+  width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-items: start;
+  
+}
 
+.skills-section-subheaders {
+  font-size: 25px;
+  line-height: 41px;
+}
 
+.skills-text {
+  font-size: 25px;
+  line-height: 41px;
+}
+
+/********* FOR MORE*********/
+
+.icon-circle {
+  width: 160px;
+  height: 160px;
+}
+
+.linkedin2 {
+  width: 40px;
+}
+
+.github2 {
+  width: 52px;
+}
+
+.stackoverflow2 {
+  width: 44px;
+}
+
+.icon-text {
+  font-size: 25px;
+  line-height: 41px;
+  margin-bottom: 50px;
+}
+/********* FOOTER*********/
+
+.footer {
+  margin-top: 124px;
+}
+
+.contact {
+  margin-bottom: 100px;
+}
+
+.contact-text {
+  font-size: 30px;
+  line-height: 50px;
+  margin-bottom: 170px;
 }
 
