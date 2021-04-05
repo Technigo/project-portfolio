@@ -366,41 +366,22 @@ body {
 
 /*skills*/
 
-.skills {
-  background-color: #f4f4f4;
+.skills-wrapper {
+  display:grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-column-gap: 5px;
+  font-family: 'Roboto', sans-serif;
 }
-
-.list-container {
-  display: flex;
-  flex-direction: row;
-  justify-items: space-between;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.list-with-header {
-  text-align: center;
-  width: 120px;
-}
-
-.list-with-header:nth-of-type(4) {
-  display: none;
-}
-
-h6 {
+.skills-category-name {
+  color: #fa382f;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 29px;
-  color: #FA382F;
-  margin: 0;
 }
-
-ul {
-  font-size: 17px;
-  line-height: 29px;
-  list-style: none;
+.skills-list {
+  color:#000;
+  list-style-type:none;
+  text-align: center;
+  margin-top: 10px;
   padding: 0;
-  margin: 0;
 }
 
 /* Social media icons - big */
@@ -595,6 +576,8 @@ ul {
 }
 
 /*thoughts container*/
+
+
 
 .more-thoughts-wrapper {
   width: 560px;
