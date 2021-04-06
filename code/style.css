@@ -194,6 +194,22 @@ bottom: 0;
 left: 0;
 z-index: 1;
 }
+.featured-project-container:focus .project-name, .featured-project-container:hover .project-name  {
+  font-size: 40px;
+}
+
+.featured-project-container:active .project-name {
+  color: var(--light-contrast);
+}
+
+.other-project-container:focus .project-explanation, 
+.other-project-container:hover .project-explanation  {
+  background-color: var(--light-contrast);
+}
+
+.other-project-container:active .project-explanation {
+  background-color: var(--secondary)
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .featured-project-image-container1 {
@@ -283,6 +299,15 @@ z-index: 1;
 .thoughts-card {
   margin-bottom: 40px;
 }
+
+.thoughts-card:focus, .thoughts-card:hover  {
+  background-color: var(--light-contrast);
+}
+
+.thoughts-card:active {
+  background-color: var(--secondary)
+}
+
 
 .thoughts-image-container {
   width: 327px;
@@ -507,7 +532,7 @@ z-index: 1;
     font-size: 14px;
     line-height: 20px;
     color: var(--primary);
-    background-color: var(--contrast) ;
+    background-color: var(--contrast);
     text-align: center;
   }
 
@@ -552,7 +577,6 @@ z-index: 1;
     color: var(--primary)
   }
 
-  /*a:visited, a:focus, a:hover, a:active */
 /*~~~~~~Styling for tablet and small desktop~~~~~~*/
 @media (min-width:768px) and (max-width: 1200px) {
   body {
