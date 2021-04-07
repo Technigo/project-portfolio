@@ -6,6 +6,7 @@
   --very-dark: #2d1e19;
   --contrast: #66843e;
   --light-contrast:#92bd5b;
+  --dark-contrast:#34451E;
 }
 
 * { margin: 0;}
@@ -54,8 +55,12 @@ body {
   align-items: center;
   }
 
-  .top-navbar-social-media-link:hover {
-    background-color: #34451E;
+  .top-navbar-social-media-link:hover, .top-navbar-social-media-link:focus {
+    background-color: var(--dark-contrast);
+  }
+
+  .top-navbar-social-media-link:active {
+    background-color: var(--secondary);
   }
 
 .linkedin {
@@ -123,7 +128,6 @@ body {
 
 /********* SUMMARY *********/
 
-
 .summary {
   width: 100%;
   display: flex;
@@ -179,24 +183,19 @@ body {
 /********* FEATURED PROJECTS *********/
 
 /* To make entire div a clickable link */
+.project-link {
+  text-decoration: none;
+  color: var(--very-dark)
+}
 .featured-project-container, .other-project-container {
   position: relative;
   width: 327px;
   margin-bottom: 40px;
 }
 
-.featured-project-container a::after, .other-project-container a::after{
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
 .featured-project-container:focus .project-name, .featured-project-container:hover .project-name  {
   font-size: 40px;
+  text-decoration: none;
 }
 
 .featured-project-container:active .project-name {
@@ -298,18 +297,28 @@ body {
   padding: 0;
 }
 
-.thoughts-card {
+.blog-entry-link {
+  width: 327px;
   margin-bottom: 40px;
+  text-decoration: none;
+  color: var(--very-dark)
 }
 
-.thoughts-card:focus, .thoughts-card:hover  {
+.blog-entry-link:visited {
+  color: var(--very-dark)
+}
+
+.blog-entry-link:focus, .blog-entry-link:hover  {
   background-color: var(--light-contrast);
 }
 
-.thoughts-card:active {
+.blog-entry-link:active {
   background-color: var(--secondary)
 }
 
+.blog-entry-text {
+  color: var(--very-dark)
+}
 
 .thoughts-image-container {
   width: 327px;
@@ -345,6 +354,7 @@ body {
   font-weight: 400;
   font-size: 17px;
   line-height: 32px;
+  margin-bottom: 40px;
 }
 
 .blog-entry-arrows {
@@ -379,30 +389,16 @@ body {
   background-color: var(--secondary)
 }
 
-/* To make entire div a clickable link */
-.thoughts-card {
-  position: relative;
-  width: 327px;
-}
-
-.thoughts-card a::after { 
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  }
-
-  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-.blog-entry-link {
-  width: 327px;
-  }
-
 .more-thoughts {
   margin-top: 16px;
+  }
+
+  .blog-entry-link-more {
+    text-decoration: none;
+  }
+
+  .blog-entry-more-text {
+    color: var(--very-dark)
   }
 
   /********* SKILLS *********/ 
@@ -575,11 +571,12 @@ body {
 
   .copyright-attributions {
     background-color: var(--light-contrast);
+    color: var(--very-dark);
     padding-bottom: 30px;
   }
 
   .copyright-attributions a:link {
-    color: var(--primary)
+    color: var(--very-dark)
   }
 
 /*~~~~~~Styling for tablet and small desktop~~~~~~*/
@@ -778,16 +775,6 @@ body {
     width: 523px;
   }
 
-  .featured-project-container a::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    }
-
   .featured-project-image-container1 {
     background-image: url("./assets/happy-thoughts.JPG");
     background-color:var(--darken-blend);
@@ -863,11 +850,6 @@ body {
     align-items: start;
   }
 
-  .thoughts-card {
-    position: relative;
-    width: 523px;
-  }
-
   .thoughts-image-container {
     width: 523px;
   }
@@ -918,6 +900,15 @@ body {
   }
 
   .blog-entry-link:link {
+    width: 523px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    color: var(--very-dark);
+  }
+
+  .blog-entry-link-more:link {
     width: 1100px;
     font-family:'Roboto', sans-serif;
     font-weight: 700;
@@ -926,19 +917,19 @@ body {
     color: var(--very-dark);
   }
 
-  .blog-entry-link:visited {
+  .blog-entry-link:visited, .blog-entry-link-more:visited {
     color: var(--primary);
   }
 
-  .blog-entry-link:focus {
+  .blog-entry-link:focus, .blog-entry-link-more:focus {
     background-color: var(--light-contrast) ;
   }
 
-  .blog-entry-link:hover {
+  .blog-entry-link:hover, .blog-entry-link-more:hover {
     background-color: var(--light-contrast) ;
   }
 
-  .blog-entry-link:active {
+  .blog-entry-link:active, .blog-entry-link-more:active {
     background-color: var(--secondary)
   }
   /********* MY THOUGHTS *********/
