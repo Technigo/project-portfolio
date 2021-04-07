@@ -15,7 +15,7 @@ Here's an overview of the testing I've done on my portfolio website.
 - The page works fine on different browsers; Chrome, Edge and Firefox
 - It's possible to navigate the page using only the keyboard (tab, arrows and enter)
 - The page has been run through HTML validators with no errors; W3C Markup validation service and Lighthouse in Chrome Dev tools
-- Ran an audit using WAVE (wave.webaim.org); the page received no errors or contrast errors
+- Ran an audit using WAVE (wave.webaim.org); the page received no errors. There are some contrast errors that I intend to fix asap.
 - The content of the page is still readable and understandable without the CSS; used the Google Chrome Web Developer tool to remove all the CSS
 - The page has been tested with a screen reader (NVDA) with good results
 
