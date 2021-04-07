@@ -1,5 +1,3 @@
-# portfolio
+# My portfolio
 
-Technigo Bootcamp week 8 project. 
-
-https://silly-pasteur-4234a5.netlify.app/
+https://honkonen-ak-portfolio.netlify.app/
