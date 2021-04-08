@@ -11,3 +11,6 @@ Over all it was a tough week for me, It has taken a lot of energy and Im feeling
 The accessibility testing part I experienced quite difficul and I know I have things to work on regarding those functions.
 
 If I had more time I would have made the site a bit more userbility friendly by making the "top-projects" and "my thoughts" part a bit more flexible and responsive, by not showing all in the smaller views and showing more in bigger views. Also pay more attention to details, like fixing my profile pic, font-size in different views, and to figure out the items in hero section for real and how to do it in the best way. And a lot more ofcourse.. 
+
+Link to Live site:
+https://romantic-volhard-2417c3.netlify.app
