@@ -239,6 +239,7 @@ h3 {
 .my-thoughts-section {
     text-align: center;
     margin: 0px 40px;
+    padding-bottom: 30px;
 }
 
 .my-thoughts-title {
@@ -251,19 +252,29 @@ h3 {
 }
 
 .my-thoughts-container {
-    text-align: start;
     font-family: 'Roboto', sans-serif;
     color: black;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: start;
     justify-content: space-between;
+}
+
+.my-thoughts-container a {
+    text-decoration: none;
+}
+
+.my-thoughts-card {
+    color: black;
+}
+
+.my-thoughts-text-container{
+    text-align: start;
 }
 
 .my-thoughts-section img {
     width: auto;
-    height: 200px;
+    height: 150px;
     margin-bottom: 20px;
 }
 
@@ -446,17 +457,13 @@ ul {
         flex-direction: row;
         flex-wrap: wrap;
     }
-
-    .my-thoughts-card {
-        width: 50%;
-    }
 }
 
 /*MEDIA QUERIES DESKTOP*/
 @media (min-width: 1024px) {
 
     body {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .header-elements {
@@ -498,7 +505,7 @@ ul {
 
     .intro-section {
         background-color: #f7f6e7;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .intro-section p {
@@ -520,13 +527,13 @@ ul {
 
     .tech-section {
         height: 320px;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
         margin-top: 40px;
     }
 
     .featured-projects-title {
-        font-size: 37px;
+        font-size: 30px;
     }
 
     .project-container {
@@ -569,12 +576,9 @@ ul {
         margin: 0 15%;
     }
 
-    .my-thoughts-card {
-        width: 40%;
-    }
-
     .my-thoughts-card img {
-        width: 330px;
+        width: auto;
+        height: 350px;
     }
 
     .more-thoughts-section {
@@ -582,11 +586,11 @@ ul {
     }
 
     .skill-list {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .skill-list h2 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .social-media-icons-bottom img {
