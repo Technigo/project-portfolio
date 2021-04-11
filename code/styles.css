@@ -1,5 +1,5 @@
 :root {
-    --secondary: rgb(0, 128, 49);
+    --secondary: #008031;
 }
 
 body, html {
@@ -8,16 +8,34 @@ body, html {
     /* height: 100%; */
 }
 
+p {
+    line-height: 34px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    font-size: 18px;
+    color: var(--secondary);
+}
+
+a span {
+    color: black;
+    font-weight: bold;
+}
+
+/*--------------- Hero Section ---------------*/
+
 .hero-text, .actual-main-section, .summary-section {
-    margin: 15px;
+    margin: 25px;
 }
 
 .hero-text {
     display: inline-block;
-    background: rgba(2, 2, 2, 0.6);
     margin-left: -5px;
-    padding: 0 20px;
-    border-radius: 1.5%;
+    padding: 0 50px;
+    border-radius: 0 10px 10px 0;
+    background: rgba(2, 2, 2, 0.6);
 }
 
 .white-h1, .white-h2 {
@@ -52,14 +70,15 @@ body, html {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     text-align: right;
+    margin-top: 0;
 }
 
 .white-h3 span {
     font-weight: 600;
 }
 
-.top-section {
-    background-image: url("/portfolio clone/portfolio/assets/pexels-adonyi-gábor-1400136.jpg");
+.hero-section {
+    background-image: url("../assets/pexels-adonyi-gábor-1400136.jpg");
     background-size: cover;
     position: relative;
     color:white;
@@ -72,9 +91,8 @@ body, html {
     padding: 50px 20px;
 }
 
-.circle {
+.top-socials-section .circle, .bottom-socials-section .circle {
     display: flex;
-    border: solid 2px #fff;
     border-radius: 100%;
     padding: 10px;
     margin: 5px;
@@ -84,10 +102,22 @@ body, html {
     align-items: center;
 }
 
-.circle img {
-    /* display: none; */
+.top-socials-section .circle {
+    border: solid 2px #fff;
     height: 20px;
-    width: auto;
+    width: 20px;
+}
+
+.top-socials-section .linkedin {
+    height: 17px;
+}
+
+.top-socials-section .github {
+    height: 21px;
+}
+
+.top-socials-section .stack-overflow {
+    height: 21px;
 }
 
 .picture-of-me {
@@ -96,13 +126,20 @@ body, html {
     position: relative;
     right: 25px;
     top: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .picture-of-me img {
     width: 40%;
+    max-width: 250px;
     border: 3px solid #fff;
     border-radius: 100%;
+}
+
+/*--------------- Summary Section ---------------*/
+
+.start-figure {
+    margin: 0 10px 0 0;
 }
 
 .my-thoughts-section {
@@ -115,6 +152,8 @@ body, html {
     padding: 15px;
     width: 30%;
 }
+
+/*--------------- Sections... general? ---------------*/
 
 .section-title, .sub-section-title {
     font-size: 22px;
@@ -134,7 +173,7 @@ body, html {
     background: var(--secondary);
 }
 
-h2, h3 {
+h2 {
     color: rgb(0, 0, 0);
 }
 
@@ -143,20 +182,10 @@ h3 {
     font-size: 16px;
 }
 
-.contact-section {
-    background: blue;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .actual-main-section {
     display:flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.actual-main-section img {
-    margin: 10px 0 20px 0;
 }
 
 .main-section, .tech-section {
@@ -166,25 +195,94 @@ h3 {
     text-align: center;
 }
 
+/*--------------- Project Section ---------------*/
+
 .project {
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.project p {
+    line-height: 26px;
+    margin: 0 0 30px 0; 
+}
+
+.project-image {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-title-background {
+    height: 100%;
+    width: 100%;
+    background: rgba(2, 2, 2, 0.5);
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.project-title-background h1 {
+    color: #fff;
+    /* text-shadow: 2px 3px 2px rgba(2, 2, 2, 0.4); */
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgba(2, 2, 2, 0.4);
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 5px 5px rgba(2, 2, 2, 0.1); */
+}
+
 .tags {
     display: flex;
-    margin-top: -8px;
-    
+    flex-wrap: wrap;
+    margin: -8px 0 35px 0;
 }
 
 .tags div {
     font-size: 10px;
-    margin: 0 10px 0 0;
-    padding: 2px 5px;
-    border-radius: 10%;
+    text-align: center;
+    margin: 7px 10px 7px 0;
+    padding: 5px 12px;
+    border-radius: 3px;
     display: inline-block;
     background: lightgrey;
+    min-width: 25px;
+}
+
+/*--------------- Thoughts Section ---------------*/
+
+/*            MOVE THE ABOVE THOUGHTS RULES HERE*/
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.blog-post a {
+    text-decoration: none;
+}
+
+.blog-post img {
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.blog-post h2 {
+    font-size: 20px;
+    margin: 10px 0 -5px 0;
 }
 
 .skills-section {
@@ -195,4 +293,124 @@ h3 {
 
 .upcoming-skills {
     justify-self: flex-start; /*DOESN'T WORK*/
+}
+
+/*--------------- Socials (Top AND Bottom) ---------------*/
+
+.bottom-socials-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-link a, .social-text {
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--secondary);
+}
+
+.bottom-socials-section .circle {
+    border: solid 1px var(--secondary);
+    padding: 12px;
+    height: 40px;
+    width: 40px;
+}
+
+.bottom-socials-section .circle img {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(3523%) hue-rotate(146deg) brightness(90%) contrast(103%);
+    margin: 5px;
+}
+
+.bottom-socials-section .linkedin {
+    height: 20px;
+}
+
+.bottom-socials-section .github {
+    height: 25px;
+}
+
+.bottom-socials-section .stack-overflow {
+    height: 23px;
+}
+
+/*--------------- Contact Section ---------------*/
+
+.contact-section {
+    text-align: center;
+    background: #072BCE;
+    color: #fff;
+    padding: 50px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 22px;
+    background: #072BCE;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px;
+}
+
+.contact-section ul {
+    list-style: none;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+}
+
+/*---------------------- Media Queries ----------------------*/
+
+@media  (min-width: 600px) {
+
+    .project-title-background h1 {
+        font-size: 26px;
+    }
+
+    .blog-post img {
+        height: 430px;
+    }
+}
+
+@media  (min-width: 900px) {
+
+    .hero-section, .actual-main-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content-wrapper, .main-section-wrapper {
+        width: 65%;
+    }
+
+    .hero-text {
+        padding: 20px 40px 40px 40px;
+        border-radius: 10px;
+    }
+
+    .picture-of-me {
+        top: 60px;
+        right: 0px;
+    }
+
+    .actual-main-section {
+        margin-top: 60px;
+    }
+
+    .project-title-background h1 {
+        font-size: 30px;
+    }
+
+    .blog-post img {
+        height: 600px;
+    }
 }
