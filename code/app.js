@@ -1,10 +1,11 @@
 const projectContainer = document.getElementById("project-section-div")
+const otherProjectContainer = document.getElementById("other-project-section-div")
 const langList = document.getElementById("lang-list")
 
 const projectArray = {
   projects: [
     {
-      img: "./pictures/react-survey.png",
+      img: "./pictures/react-survey-2.png",
       projectTitle: 'REACT SURVEY',
       projectDescription: 'A multi-step survey built in React, created with reusable input components.',
       lang: [
@@ -70,34 +71,56 @@ const projectArray = {
       id: 6
     }
   ]
-  }
+}
+
+const printProjects = () => {
 
   let slicedArray
 
-  const printProjects = () => {
+  if (screen.width <= 767 ) {
+    slicedArray = projectArray.projects.slice(0, 2)
+  } else if (screen.width >= 768) {
+    slicedArray = projectArray.projects.slice(0, 4)
+  }
 
-    if (screen.width <= 767 ) {
-      slicedArray = projectArray.projects.slice(0, 2)
-    } else if (screen.width >= 768) {
-      slicedArray = projectArray.projects.slice(0, 4)
-    }
-
-    console.log(screen.width)
-
-    slicedArray.map((project) => {
-      projectContainer.innerHTML += `
-        <a href=${project.url} class="project-container ${project.id}">
-          <img src=${project.img} alt="picture of guess who game"></img>
+  slicedArray.map((project) => {
+    projectContainer.innerHTML += `
+      <div class="project-container">
+        <a href=${project.url} class="project-container-link">
+          <img src=${project.img} alt="picture of guess who game"/>
           <h4>${project.projectTitle}</h4>
           <p>${project.projectDescription}</p>
           <ul>
-            ${project.lang.map(el => `
-              <li>${el}</li>
-            `)}
+            ${project.lang.map(el => 
+              '<li>' + el + '</li>'
+            ).join('')}
           </ul>
         </a>
-        `
-    })
-  }
+      </div>
+      `
+  })
+}
 
-  printProjects()
+const printOtherProjects = () => {
+
+  const slicedArrayEnd = projectArray.projects.slice(4, 6)
+
+  console.log(slicedArrayEnd)
+
+  slicedArrayEnd.map((project) => {
+    otherProjectContainer.innerHTML += `
+      <div class="project-container">
+        <h4>${project.projectTitle}</h4>
+        <p>${project.projectDescription}</p>
+        <ul>
+          ${project.lang.map(el => 
+          '<li>' + el + '</li>'
+          ).join('')}
+        </ul>
+      </div>
+    `
+  })
+}
+
+printProjects()
+printOtherProjects()
