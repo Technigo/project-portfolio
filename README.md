@@ -17,6 +17,12 @@ I will continue on with the media-queries from tablet and desktop and adding som
 
 Lastly I will validate the files and add accessibility functionality.
 
+
+UPDATE 11/4:
+
+I have implemented some logics for the projects with JavaScript to render the projects from an array.
+The color scheme has been replaced and I have switched from an image to a linear background color in the heading.
+
 # view it live
 
-https://nostalgic-curie-37b7ec.netlify.app/
+View my portfolio live at Netlify https://nostalgic-curie-37b7ec.netlify.app/

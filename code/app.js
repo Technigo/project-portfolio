@@ -105,8 +105,6 @@ const printOtherProjects = () => {
 
   const slicedArrayEnd = projectArray.projects.slice(4, 6)
 
-  console.log(slicedArrayEnd)
-
   slicedArrayEnd.map((project) => {
     otherProjectContainer.innerHTML += `
       <div class="project-container">
