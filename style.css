@@ -108,7 +108,7 @@ transform:scale(1.1);
   color: white;
   display: inline;
   padding-top: 30px;
-  font-size: 35px;
+  font-size: 24px;
 }
 
 .marker {
@@ -153,10 +153,13 @@ transform:scale(1.1);
 
 .project-picture {
   width: 250px;
+  filter: brightness(60%);
+  
 }
 
 .h3-header {
-  position: absolute;
+  position: absolute; 
+  top: 50px;
 }
 
 .link-container:link {
@@ -178,6 +181,24 @@ transform:scale(1.1);
 
 .featured-project-text {
   color: black;
+  margin: 0;
+}
+
+.technique-container {
+  display:flex;
+}
+
+.small-marker {
+  font-size: 14px;
+  color: white;
+  padding: 0px 2px;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(51, 0, 40, 0.1),
+    rgba(212, 0, 255, 0.7) 4%,
+    rgba(255, 0, 149, 0.3)
+  );
 }
 
 /***Section 4 My thoughts***/
@@ -375,7 +396,6 @@ ul li {
 @media (min-width: 992px) {
   /***Header***/
   .header-image {
-    
     height: 600px;
   }
   .icon-section {
@@ -462,3 +482,4 @@ justify-content: center;
     font-size: 15px;
   }
 }
+
