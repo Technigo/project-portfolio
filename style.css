@@ -22,7 +22,7 @@ body {
   align-self: flex-end;
   width: 130px;
   margin-top: 102px;
-  margin-right: 304px;
+  margin-right: 550px;
 }
 
 .social-media-icons a {
@@ -124,8 +124,7 @@ p {
 }
 
 .intro-section p {
-  margin-left: 410px;
-  margin-right: 410px;
+  width: 60%;
 }
 
 /* MAIN */
@@ -167,8 +166,7 @@ h2 {
 
 .tech p {
   text-align: center;
-  margin-left: 410px;
-  margin-right: 410px;
+  width: 60%;
 }
 
 .featured-projects {
@@ -181,15 +179,14 @@ h2 {
 }
 
 .project-cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  width: 60%;
   margin-top: 120px;
 }
 
 .featured-card {
-  width: 523px;
   margin-bottom: 50px;
 }
 
@@ -246,7 +243,6 @@ h4 {
   font-size: 25px;
   line-height: 41px;
   letter-spacing: 0.01em;
-  width: 523px;
   word-wrap: break-word;
   margin: 0;
 }
@@ -260,11 +256,11 @@ h4 {
   display: flex;
   justify-content: center;
   background: #F4F4F4;
-  padding-bottom: 197px;
+  padding-bottom: 120px;
 }
 
 .other-projects-content {
-  width: 1100px;
+  width: 60%;
 }
 
 h5 {
@@ -327,20 +323,14 @@ h5 {
 }
 
 .my-thoughts-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  width: 60%;
   margin-top: 80px;
 }
 
-.reflection-card {
-  width: 523px;
-}
-
 .reflection-card p {
-  width: 523px;
   word-wrap: break-word;
   margin: 0;
 }
@@ -388,7 +378,7 @@ h6 {
 }
 
 .more-thoughts-container {
-  width: 1100px;
+  width: 60%;
   padding-bottom: 120px;
 }
 
@@ -429,11 +419,11 @@ h6 {
 
 .skills-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 1100px;
+  width: 80%;
   margin-top: 80px;
   margin-bottom: 115px;
-  margin-left: 140px;
 }
 
 .skills h2 {
@@ -528,7 +518,372 @@ li {
   margin: 0;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 1600px) {
+
+  .hero-titles {
+    margin-left: 100px;
+    width: 607px;
+  }
+
+  .profile-image {
+    top: 378px;
+    right: 100px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .social-media-icons {
+    margin-top: 70px;
+    margin-right: 290px;
+  }
+
+  .intro-section p {
+    width: 80%;
+  }
+
+  .tech p {
+    width: 80%;
+  }
+
+  .project-cards {
+    width: 80%;
+  }
+
+  .my-thoughts-cards {
+    width: 80%;
+  }
+
+  .other-projects-content {
+    width: 80%;
+  }
+
+  .more-thoughts-container {
+    width: 80%;
+  }
+
+  .skills-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .social-media-icons {
+    margin-top: 70px;
+    margin-right: 250px;
+  }
+
+  .profile-image {
+    top: 470px;
+    right: 100px;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .profile-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .skills-container {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .social-media-icons {
+    margin-right: 200px;
+  }
+
+  .profile-image {
+    right: 50px;
+  }
+
+  .hero-titles {
+    margin-left: 50px;
+    margin-top: 70px;
+    width: 70%;
+  }
+
+  h1.frontend {
+    font-size: 50px;
+    line-height: 49px;
+  }
+
+  h1.portfolio-title {
+    font-size: 23px;
+    line-height: 18px;
+  }
+  
+  .name {
+    font-size: 23px;
+    line-height: 18px;
+  }
+
+  h1.graphic-designer {
+    font-size: 34px;
+    line-height: 55px;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .other-projects-content {
+    width: 90%;
+  }
+
+  .my-thoughts-cards {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .more-thoughts-container {
+    width: 90%;
+  }
+
+  .skills-container {
+    width: 100%;
+  }
+
+  .for-more-icons {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero {
+    background-image: url(./assets/header-image-3.png);
+    height: 520px;
+  }
+
+  .social-media-icons {
+    margin-top: 44px;
+    margin-right: 24px;
+  }
+
+  .social-media-icons img {
+    width: 40px;
+  }
+
+  .social-media-icons a {
+    margin-left: 0;
+  }
+
+  .hero-titles {
+    margin-left: 24px;
+    width: 70%;
+    margin-top: 33px;
+  }
+
+  h1.frontend {
+    font-size: 40px;
+    line-height: 49px;
+  }
+
+  h1.portfolio-title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  
+  .name {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  h1.graphic-designer {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .profile-image {
+    top: 365px;
+    right: 24px;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .profile-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .intro-section {
+    padding-top: 49px;
+    padding-bottom: 43px;
+  }
+
+  .start-figure {
+    width: 55px;
+    height: 11px;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 27px;
+    height: 26px;
+  }
+
+  .tech h2 {
+    margin-bottom: 24px;
+  }
+
+  .tech {
+    margin-top: 41px;
+    padding-bottom: 33px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  h4 {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  .featured-projects {
+    padding-top: 41px;
+    padding-bottom: 0px;
+  }
+
+  .project-cards {
+    margin-top: 41px;
+  }
+
+  .featured-card p {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  h5 {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .other-projects {
+    padding-bottom: 0px;
+  }
+
+  .other-project-title, .red {
+    font-size: 17px;
+    line-height: 19px;
+  }
+  
+  .other-projects p {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  .my-thoughts-cards {
+    margin-top: 40px;
+  }
+
+  .reflection-card img {
+    margin-bottom: 32px;
+  }
+
+  .date {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  
+  h6 {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  .used-code p, .used-code-other-projects p {
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  .my-thoughts, .skills h2, .for-more h2 {
+    margin-top: 41px;
+  }
+  
+  .my-thoughts-text {
+    font-size: 17px;
+    line-height: 32px;
+  }
+
+  .more-thoughts h5 {
+    margin-top: 56px;
+  }
+
+  .more-thoughts-container {
+    padding-bottom: 40px;
+  }
+
+  .more-thoughts-date, .more-thoughts-container p {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  ul {
+    padding: 0;
+    margin-right: 0;
+  }
+
+  .skills-container {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .skills-small-titles, li {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  .for-more-icons {
+    width: 250px;
+    margin-top: 40px;
+    margin-bottom: 59px;
+  }
+
+  .icon-container img {
+    width: 60px;
+  }
+
+  .icon-container h6 {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .github-icon-bottom-link {
+    margin-left: 15px;
+  }
+
+  .contact {
+    padding-bottom: 84px;
+  }
+  
+  .contact h2 {
+    margin-top: 84px;
+    margin-bottom: 40px;
+  }
+
+  .contact p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+
+
+/* @media (max-width: 480px) {
 
   .hero {
     background-image: url(./assets/header-image-3.png);
@@ -550,7 +905,7 @@ li {
 
   .hero-titles {
     margin-left: 24px;
-    width: 300px;
+    width: 220px;
     margin-top: 33px;
   }
 
@@ -562,6 +917,7 @@ li {
   h1.frontend {
     font-size: 40px;
     line-height: 49px;
+    max-width: 400px;
   }
   
   h1.graphic-designer {
@@ -763,7 +1119,7 @@ li {
     font-size: 17px;
     line-height: 25px;
   }
-}
+} */
 /* 
 @media (max-width: 1290px) and (min-width: 351px) {
 
