@@ -1,274 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elaine's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./assets/icons/starfavicon.ico" type="image/x-icon">  
-    <script src="https://kit.fontawesome.com/1a4787e29d.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/starfavicon.ico"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/1a4787e29d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <div class="header-text-container">
-            <h1 class="header-name">
-                PORTFOLIO: 
-                <span class="my-name">
-                    ELAINE BERGSTRÖM
-                </span>
-            </h1>
-            <div class="header-job-title-container">
-                <h2 class="main-job-title-a">frontend</h2>
-                <h2 class="main-job-title-b">developer</h2>
-                <p class="secondary-job-title">+ designer <br>
-                    + animator</p>
-                <p class="bonus"> + guinea pig lover</p>
-            </div>
+      <div class="header-text-container">
+        <h1 tabindex="0" class="header-name">
+          PORTFOLIO:
+          <span class="my-name"> ELAINE BERGSTRÖM </span>
+        </h1>
+        <div class="header-job-title-container">
+          <h2 class="main-job-title-a">frontend</h2>
+          <h2 class="main-job-title-b">developer</h2>
+          <p class="secondary-job-title">
+            + designer <br />
+            + animator
+          </p>
+          <p class="bonus">+ guinea pig lover</p>
         </div>
-            <div class="social-media-icon-container">
-                <a href="https://www.linkedin.com/in/elaine-bergstr%C3%B6m-a204934b" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/CoffeeDoodles" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://stackoverflow.com/users/14960536/elaine-b?tab=profile" target="_blank">
-                    <i class="fab fa-stack-overflow"></i>
-                </a>
+      </div>
+      <div class="social-media-icon-container">
+        <a
+          href="https://www.linkedin.com/in/elaine-bergstr%C3%B6m-a204934b"
+          target="_blank"
+        >
+          <i aria-label="linkedin icon" class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/CoffeeDoodles" target="_blank">
+          <i aria-label="github icon" class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://stackoverflow.com/users/14960536/elaine-b?tab=profile"
+          target="_blank"
+        >
+          <i aria-label="stack-overflow icon" class="fab fa-stack-overflow"></i>
+        </a>
+      </div>
+      <img
+        class="my-profile-image"
+        src="./assets/images/myimage.jpg"
+        alt="Image of Elaine Bergström"
+        aria-label="Image of Elaine Bergström"
+        tabindex="0"
+      />
+    </header>
+
+    <section class="summary-section">
+      <article tabindex="0" class="summary-text">
+        <img
+          class="line-icon"
+          src="./assets/icons/line-icon.svg"
+          alt="line and circle icon"
+        />
+        Howdy! I’m Elaine, a upcoming frontend web developer, coming from a
+        background in animation and illustration! After moving to Sweden I found
+        myself needing a new adventure to follow. My neverending curiosity and
+        desire to know ‘how & why’ led me to frontend development. I want to
+        find a way to blend my past animation experience into the code I build
+        in new, fun, and interesting ways!
+      </article>
+    </section>
+
+    <section class="tech-section">
+      <h1 tabindex="0" class="tech-main-title">TECH</h1>
+      <article tabindex="0" class="tech-text">
+        HTML5, CSS, Flexbox, <span>JavaScript</span>, ES6, JSX,
+        <span>React</span>, Web Accessibly, Wordpress API's, mob-programming,
+        pair-programming, Github,
+      </article>
+    </section>
+
+    <section class="featured-projects-section">
+      <h1 tabindex="0" class="projects-main-title">FEATURED PROJECTS</h1>
+      <div class="project-card-container">
+        <a
+          aria-label="link to news site"
+          href="https://wheeeeklynews.netlify.app/"
+          class="project-link"
+          target="_blank"
+        >
+          <div class="project-card">
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./assets/images/news-site.png"
+                alt="Image thumbnail of News website"
+              />
+              <div aria-hidden="true" class="project-image-overlay">
+                <p class="image-overlay-text">NEWS SITE</p>
+              </div>
             </div>
-            <img class="my-profile-image" src="./assets/images/myimage.jpg" alt="Image of Elaine Bergström">                     
-    </header>    
-
-   <section class="summary-section">
-        <article class="summary-text">
-            <img class="line-icon" src="./assets/icons/line-icon.svg" alt="line and circle icon">
-            Howdy! I’m Elaine, a upcoming frontend web developer, coming from a background 
-            in animation and illustration! After moving to Sweden I found myself needing a new 
-            adventure to follow. My neverending curiosity and desire to know ‘how & why’ led me
-             to frontend development. I want to find a way to blend my past animation experience 
-             into the code I build in new, fun, and interesting ways!
-        </article>
-   </section>
-
-   <section class="tech-section">
-       <h1 class="tech-main-title">TECH</h1>
-       <article class="tech-text">
-        HTML5, CSS, Flexbox, <span>JavaScript</span>, ES6, JSX, <span>React</span>, Web Accessibly, Wordpress 
-        API's, mob-programming, pair-programming, Github, 
-       </article>
-   </section>
-
-   <section class="featured-projects-section">
-        <h1 class="projects-main-title">FEATURED PROJECTS</h1>
-            <div class="project-card-container">
-                <a aria-label="link to news site" href="https://wheeeeklynews.netlify.app/" 
-                    class="project-link" target="_blank">
-                <div class="project-card">
-                    <div class="project-image-container">                   
-                        <img class="project-image" src="./assets/images/news-site.png" alt="Image thumbnail of News website">
-                        <div aria-hidden="true" class="project-image-overlay">
-                            <p class=image-overlay-text>NEWS SITE</p>  
-                        </div>
-                    </div>                    
-                    <h3 class="title-description">NEWS SITE BUILT IN HTML & CSS</h3>
-                    <p class="short-summary-text">                        
-                        Classic newspaper site built to be responsive on multiple screen sizes.
-                    </p>
-                    <div class="tag-word-container">
-                        <p class="tag-word">Html5</p>
-                        <p class="tag-word">Css3</p>
-                        <p class="tag-word">Responsive</p>
-                    </div> 
-                </div>
-                </a>           
-                <a aria-label="link to guess who game app" href="https://elainesguesswhogame.netlify.app/" 
-                class="project-link" target="_blank">
-                    <div class="project-card">
-                        <div class="project-image-container">                   
-                            <img class="project-image" src="./assets/images/guess-who.png" alt="Image thumbnail of guess who app">
-                            <div aria-hidden="true" class="project-image-overlay">
-                                <p class=image-overlay-text>GUESS WHO</p>  
-                            </div>
-                        </div>                   
-                        <h3 class="title-description">GUESS WHO GAME BUILT WITH JAVASCRIPT</h3>
-                        <p class="short-summary-text">                        
-                            The classic game of Guess Who built with HTML, CSS, and JavaScript, and some pair-programming!
-                        </p>
-                        <div class="tag-word-container">
-                            <p class="tag-word">Html5</p>
-                            <p class="tag-word">Css3</p>
-                            <p class="tag-word">JavaScript</p>
-                        </div> 
-                    </div>
-                </a>                          
-                <a aria-label="link to weather app" href="https://the-best-weather-app.netlify.app/" 
-                class="project-link" target="_blank">
-                    <div class="project-card">
-                        <div class="project-image-container">             
-                            <img class="project-image" src="./assets/images/weather app.png" alt="Image weather app">
-                                <div aria-hidden="true" class="project-image-overlay">    
-                                    <p class="image-overlay-text">WEATHER APP</p>
-                                </div>
-                        </div>
-                        <h3 class="title-description">STOCKHOLM WEATHER APP WITH JAVASCRIPT</h3>
-                        <p class="short-summary-text">  
-                            A simple weather app for the city of Stockholm built using HTML, CSS, Javascript, and a weather API!
-                        </p>
-                        <div class="tag-word-container">
-                            <p class="tag-word">Html5</p>
-                            <p class="tag-word">Css3</p>
-                            <p class="tag-word">JavaScript</p>
-                            <p class="tag-word">API</p>
-                            <p class="tag-word">Responsive</p>   
-                        </div>
-                    </div>     
-                </a>      
-                <a aria-label="link to Dog-GO business website" href="https://doggotravel.netlify.app/" 
-                class="project-link" target="_blank">
-                    <div class="project-card">
-                        <div class="project-image-container">                   
-                            <img class="project-image" src="./assets/images/business-site.png" alt="Image thumbnail of Business website">
-                            <div aria-hidden="true" class="project-image-overlay">
-                                <p class=image-overlay-text>BUSINESS WEBSITE</p>  
-                            </div>
-                        </div>                                         
-                        <h3 class="title-description">BUSINESS SITE WITH HERO IMAGE</h3>
-                        <p class="short-summary-text">                        
-                            A responsive Dog travel website demonstrating the use of a hero video using HTML & CSS.
-                        </p>
-                        <div class="tag-word-container">
-                            <p class="tag-word">Html5</p>
-                            <p class="tag-word">Css3</p>
-                            <p class="tag-word">Hero Image</p>
-                            <p class="tag-word">Responsive</p>
-                        </div> 
-                    </div>
-                </a>           
+            <h3 class="title-description">NEWS SITE BUILT IN HTML & CSS</h3>
+            <p class="short-summary-text">
+              Classic newspaper site built to be responsive on multiple screen
+              sizes.
+            </p>
+            <div class="tag-word-container">
+              <p class="tag-word">Html5</p>
+              <p class="tag-word">Css3</p>
+              <p class="tag-word">Responsive</p>
             </div>
-        
-        <div class="other-projects-section">
-            <h1>OTHER PROJECTS</h1>
-            <section class="other-project-container" tabindex="0">
-                <a aria-label="link to chat bot app" href="https://doggo-bot.netlify.app/"
-                class="other-project-link" target="_blank">
-                    <p class="other-project-text">
-                        <span class="underline">CHAT BOT.</span>
-                        A basic chat bot app to teach us the basics of javascript functions.
-                        <span class="underline"> >> </span>
-                    </p>
-                    <div class="tag-word-container">
-                        <p class="tag-word">Html5</p>
-                        <p class="tag-word">Css3</p>
-                        <p class="tag-word">JavaScript</p>
-                        <p class="tag-word">Pair-Programming</p>
-                    </div> 
-                </a>
-                <a aria-label="link to music app" href="https://fancy-music-project.netlify.app/"
-                class="other-project-link" target="_blank">
-                    <p class="other-project-text">
-                        <span class="underline">Music App.</span>
-                        A music app built to teach us the basics of React.
-                        <span class="underline"> >> </span>
-                    </p>
-                    <div class="tag-word-container">
-                        <p class="tag-word">Html5</p>
-                        <p class="tag-word">Css3</p>
-                        <p class="tag-word">React</p>
-                        <p class="tag-word">Mob-Programming</p>
-                    </div> 
-                </a>             
-            </section>                
-        </div>
+          </div>
+        </a>
+        <a
+          aria-label="link to guess who game app"
+          href="https://elainesguesswhogame.netlify.app/"
+          class="project-link"
+          target="_blank"
+        >
+          <div class="project-card">
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./assets/images/guess-who.png"
+                alt="Image thumbnail of guess who app"
+              />
+              <div aria-hidden="true" class="project-image-overlay">
+                <p class="image-overlay-text">GUESS WHO</p>
+              </div>
+            </div>
+            <h3 class="title-description">
+              GUESS WHO GAME BUILT WITH JAVASCRIPT
+            </h3>
+            <p class="short-summary-text">
+              The classic game of Guess Who built with HTML, CSS, and
+              JavaScript, and some pair-programming!
+            </p>
+            <div class="tag-word-container">
+              <p class="tag-word">Html5</p>
+              <p class="tag-word">Css3</p>
+              <p class="tag-word">JavaScript</p>
+            </div>
+          </div>
+        </a>
+        <a
+          aria-label="link to weather app"
+          href="https://the-best-weather-app.netlify.app/"
+          class="project-link"
+          target="_blank"
+        >
+          <div class="project-card">
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./assets/images/weather app.png"
+                alt="Image weather app"
+              />
+              <div aria-hidden="true" class="project-image-overlay">
+                <p class="image-overlay-text">WEATHER APP</p>
+              </div>
+            </div>
+            <h3 class="title-description">
+              STOCKHOLM WEATHER APP WITH JAVASCRIPT
+            </h3>
+            <p class="short-summary-text">
+              A simple weather app for the city of Stockholm built using HTML,
+              CSS, Javascript, and a weather API!
+            </p>
+            <div class="tag-word-container">
+              <p class="tag-word">Html5</p>
+              <p class="tag-word">Css3</p>
+              <p class="tag-word">JavaScript</p>
+              <p class="tag-word">API</p>
+              <p class="tag-word">Responsive</p>
+            </div>
+          </div>
+        </a>
+        <a
+          aria-label="link to Dog-GO business website"
+          href="https://doggotravel.netlify.app/"
+          class="project-link"
+          target="_blank"
+        >
+          <div class="project-card">
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./assets/images/business-site.png"
+                alt="Image thumbnail of Business website"
+              />
+              <div aria-hidden="true" class="project-image-overlay">
+                <p class="image-overlay-text">BUSINESS WEBSITE</p>
+              </div>
+            </div>
+            <h3 class="title-description">BUSINESS SITE WITH HERO IMAGE</h3>
+            <p class="short-summary-text">
+              A responsive Dog travel website demonstrating the use of a hero
+              video using HTML & CSS.
+            </p>
+            <div class="tag-word-container">
+              <p class="tag-word">Html5</p>
+              <p class="tag-word">Css3</p>
+              <p class="tag-word">Hero Image</p>
+              <p class="tag-word">Responsive</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="other-projects-section">
+        <h1>OTHER PROJECTS</h1>
+        <section class="other-project-container" tabindex="0">
+          <a
+            aria-label="link to chat bot app"
+            href="https://doggo-bot.netlify.app/"
+            class="other-project-link"
+            target="_blank"
+          >
+            <p class="other-project-text">
+              <span class="underline">CHAT BOT.</span>
+              A basic chat bot app to teach us the basics of javascript
+              functions.
+              <span class="underline"> >> </span>
+            </p>
+            <div class="tag-word-container">
+              <p class="tag-word">Html5</p>
+              <p class="tag-word">Css3</p>
+              <p class="tag-word">JavaScript</p>
+              <p class="tag-word">Pair-Programming</p>
+            </div>
+          </a>
+          <a
+            aria-label="link to music app"
+            href="https://fancy-music-project.netlify.app/"
+            class="other-project-link"
+            target="_blank"
+          >
+            <p class="other-project-text">
+              <span class="underline">Music App.</span>
+              A music app built to teach us the basics of React.
+              <span class="underline"> >> </span>
+            </p>
+            <div class="tag-word-container">
+              <p class="tag-word">Html5</p>
+              <p class="tag-word">Css3</p>
+              <p class="tag-word">React</p>
+              <p class="tag-word">Mob-Programming</p>
+            </div>
+          </a>
+        </section>
+      </div>
     </section>
     <section class="my-thoughts-section">
-        <h1 class="my-thoughts-main-title">MY THOUGHTS</h1>
-        <section class="article-containter">
-            <a aria-label="link to blog post" href="https://coffeedevdoodles.medium.com/from-frame-by-frame-to-line-by-line-1e68c4e4aa09" class="post-container" target="_blank">
-                <img class="my-thoughts-image" src="./assets/images/holding_spot.jpg" alt="">
-                <h2 class="date">March 2021</h2>
-                <h2 class="my-thoughts-title">From Frame by Frame to Line by Line</h2>
-                <p class="my-thoughts-text">
-                    How I went from animating frames to writing lines of code.
-                    <span class="underline"> >> </span>
-                </p>
-            </a>
-            <article class="more-thoughts-container">
-                <h1 class="more-thoughts-title">MORE THOUGHTS</h1>
-                <a aria-label="link to blog post" href="" class="more-thoughts-links" target="_blank">
-                <p class="more-thoughts-text">
-                    <span class="underline">March 2021.</span>
-                        Description of blog post goes here.
-                        <span class="underline"> >> </span>
-                </p>
-            </a>
-            </article>
-        </section>
+      <h1 class="my-thoughts-main-title">MY THOUGHTS</h1>
+      <section class="article-containter">
+        <a
+          aria-label="link to blog post"
+          href="https://coffeedevdoodles.medium.com/from-frame-by-frame-to-line-by-line-1e68c4e4aa09"
+          class="post-container"
+          target="_blank"
+        >
+          <img
+            class="my-thoughts-image"
+            src="./assets/images/holding_spot.jpg"
+            alt=""
+          />
+          <h2 class="date">March 2021</h2>
+          <h2 class="my-thoughts-title">From Frame by Frame to Line by Line</h2>
+          <p class="my-thoughts-text">
+            How I went from animating frames to writing lines of code.
+            <span class="underline"> >> </span>
+          </p>
+        </a>
+        <article class="more-thoughts-container">
+          <h1 class="more-thoughts-title">MORE THOUGHTS</h1>
+          <a
+            aria-label="link to blog post"
+            href=""
+            class="more-thoughts-links"
+            target="_blank"
+          >
+            <p class="more-thoughts-text">
+              <span class="underline">March 2021.</span>
+              Description of blog post goes here.
+              <span class="underline"> >> </span>
+            </p>
+          </a>
+        </article>
+      </section>
     </section>
-    <section class="skills-section">
-        <h1>SKILLS</h1>
-        <div class="skill-list-container">
-            <div class="skill-list">
-                <h2>Code</h2>
-                <p>
-                    HTML5 <br> Css3 <br> Javascript ES6 <br> 
-                    React <br> Styled Components <br> GitHub 
-                </p>
-            </div>
-            <div class="tool-box-list">
-                <h2>TOOLBOX</h2>
 
-                <p>
-                    Photoshop<br> Illustrator<br> AfterEffects <br> Wordpress <br>
-                    Figma <br> Slack <br> TvPaint <br> Toon Boom Harmony
-                </p>
-            </div>
-            <div class="upcoming-list">
-                <h2>UPCOMING</h2>
-                <p>
-                    Redux <br> React Native <br> Node.js
-                </p>
-            </div>
+    <section class="skills-section">
+      <h1 tabindex="0">SKILLS</h1>
+      <div class="skill-list-container">
+        <div class="skill-list">
+          <h2 tabindex="0">Code</h2>
+          <p tabindex="0">
+            HTML5 <br />
+            Css3 <br />
+            Javascript ES6 <br />
+            React <br />
+            Styled Components <br />
+            GitHub
+          </p>
         </div>
+
+        <div class="tool-box-list">
+          <h2 tabindex="0">TOOLBOX</h2>
+          <p tabindex="0">
+            Photoshop<br />
+            Illustrator<br />
+            AfterEffects <br />
+            Wordpress <br />
+            Figma <br />
+            Slack <br />
+            TvPaint <br />
+            Toon Boom Harmony
+          </p>
+        </div>
+
+        <div class="upcoming-list">
+          <h2 tabindex="0">UPCOMING</h2>
+          <p tabindex="0">
+            Redux <br />
+            React Native <br />
+            Node.js
+          </p>
+        </div>
+      </div>
     </section>
+
     <section class="for-more-links-section">
-        <div class="more-icon-links-container">
-            <h1>FOR MORE</h1>
-            <div class="all-icons-container">
-                <div class=single-icon-container>
-                    <a href="https://www.linkedin.com/in/elaine-bergstr%C3%B6m-a204934b" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>                
-                    </a>
-                    <p class="link-name">Linkedin</p>
-                </div>
-                <div class=single-icon-container>
-                    <a href="https://github.com/CoffeeDoodles" target="_blank">
-                        <i class="fab fa-github"></i>                
-                    </a>
-                    <p class="link-name">GitHub</p>
-                </div>
-                <div class="single-icon-container">
-                    <a href="https://stackoverflow.com/users/14960536/elaine-b?tab=profile" target="_blank">
-                        <i class="fab fa-stack-overflow"></i>
-                    </a>
-                    <p class="link-name">Stack Overflow</p>
-                </div>
-            </div>
+      <div class="more-icon-links-container">
+        <h1 tabindex="0">FOR MORE</h1>
+        <div class="all-icons-container">
+          <div class="single-icon-container">
+            <a
+              href="https://www.linkedin.com/in/elaine-bergstr%C3%B6m-a204934b"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <p aria-label="linkedin icon"f class="link-name">Linkedin</p>
+          </div>
+
+          <div class="single-icon-container">
+            <a href="https://github.com/CoffeeDoodles" target="_blank">
+              <i aria-label="github icon" class="fab fa-github"></i>
+            </a>
+            <p class="link-name">GitHub</p>
+          </div>
+          <div class="single-icon-container">
+            <a
+              href="https://stackoverflow.com/users/14960536/elaine-b?tab=profile"
+              target="_blank"
+            >
+              <i aria-label="stack-overflow icon" class="fab fa-stack-overflow"></i>
+            </a>
+
+            <p class="link-name">Stack Overflow</p>
+          </div>
         </div>
+      </div>
     </section>
     <footer>
-        <section class="contact-information-text">
-            <h1>CONTACT</h1>
-            <p>
-                Elaine Bergström <br>
-                +46 72 222 0854 <br>
-                Elainebergstrom26@gmail.com
-            </p>
-    </section>
+
+      <section class="contact-information-text">
+        <h1 tabindex="0">CONTACT</h1>
+        <p tabindex="0">
+          Elaine Bergström <br />
+          +46 72 222 0854 <br />
+          Elainebergstrom26@gmail.com
+        </p>
+      </section>
+      
     </footer>
-    
-    
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
