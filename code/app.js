@@ -29,7 +29,7 @@ const projectArray = {
     {
       img: "./pictures/happy-thoughts.png",
       projectTitle: 'HAPPY THOUGHTS',
-      projectDescription: 'A twitter-ish project built in React. GETting and POSTing happy thoughts.',
+      projectDescription: 'A twitter-ish project built in React. Getting and posting happy thoughts.',
       lang: [
         'HTML', 'CSS', 'React'
       ],
@@ -40,7 +40,7 @@ const projectArray = {
     {
       img: "./pictures/react-musicreleases.png",
       projectTitle: 'MUSIC RELEASES',
-      projectDescription: 'My first project built using React, displaying new music releases. Built together with Siri Hemsley.',
+      projectDescription: 'First project built using React, displaying new music releases. Built together with Siri Hemsley.',
       lang: [
         'HTML', 'CSS', 'React'
       ],
@@ -108,13 +108,15 @@ const printOtherProjects = () => {
   slicedArrayEnd.map((project) => {
     otherProjectContainer.innerHTML += `
       <div class="project-container">
-        <h4>${project.projectTitle}</h4>
-        <p>${project.projectDescription}</p>
-        <ul>
-          ${project.lang.map(el => 
-          '<li>' + el + '</li>'
-          ).join('')}
-        </ul>
+        <a href=${project.url} class="project-container-link">
+          <h4>${project.projectTitle}</h4>
+          <p>${project.projectDescription}</p>
+          <ul>
+            ${project.lang.map(el => 
+            '<li>' + el + '</li>'
+            ).join('')}
+          </ul>
+        </a>
       </div>
     `
   })
