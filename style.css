@@ -17,10 +17,19 @@ a {}
 
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0;
+  margin: auto;
   padding: 0;
   max-width: 80%;
 }
+
+.hover-shadow {
+  font-size: 14px;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 0 14px darkslateblue;
+}
+
 /*******************HEADER*******************/
 .header-section {
   display: grid;
@@ -54,7 +63,7 @@ body {
 }
 
 .icon-container:hover {
-  transform: scale(1.15);
+  background-color: rgba(200, 78, 164, 0.8);
 }
 
 
@@ -143,6 +152,10 @@ body {
   gap: 4em;
 }
 
+.project-article:hover {
+  box-shadow: 0 0 14px darkslateblue;
+}
+
 .articles-desktop {
   display: none;
 }
@@ -195,6 +208,11 @@ body {
 
 .thought-article {
   max-width: 800px;
+}
+
+.thought-article:hover {
+  box-shadow: 0 0 14px darkslateblue;
+  cursor: pointer;
 }
 
 .thought-cards img {
@@ -497,10 +515,10 @@ p span {
     display: inline;
   }
 
-  .thought-cards {
+  /* .thought-cards {
     grid-template-columns: 1fr 1fr;
     gap: 4em;
-  }
+  } */
 
   .thought-cards-desktop {
     display: inline;
