@@ -5,6 +5,17 @@ const langList = document.getElementById("lang-list")
 const projectArray = {
   projects: [
     {
+      img: "./pictures/project-todos.png",
+      projectTitle: 'TODO APP',
+      projectDescription: 'A todo application built with React, Redux, REST API and Styled components.',
+      lang: [
+        'HTML', 'CSS', 'React', 'Redux', 'REST API'
+      ],
+      url: 'https://github.com/sandra-wallen/project-todos',
+      className: '', 
+      id: 7
+    },
+    {
       img: "./pictures/react-survey-2.png",
       projectTitle: 'REACT SURVEY',
       projectDescription: 'A multi-step survey built in React, created with reusable input components.',
