@@ -1,3 +1,3 @@
 # portfolio
 
-https://ylva-landoff-lindberg-portfolio.netlify.app
+https://www.portfolio-ylva-landoff-lindberg.com
