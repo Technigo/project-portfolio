@@ -2,7 +2,7 @@
 
 This is my portfolio I built using HTML and CSS. I also added a bit of ARIA attributes to make the website more accessible. 😸✨
 
-My portfolio contains projects I built in the Technigo boot camp using HTML, CSS, JavaScript, React and APIs. Since the boot camp isn't over yet, I will continuously add projects where I showcase my latest learned technologies. 
+My portfolio contains projects I built in the Technigo boot camp using HTML, CSS, JavaScript, React, Redux, Styled components and APIs. Since the boot camp isn't over yet, I will continuously add projects where I showcase my latest learned technologies. 
 
 My short term goal for my portfolio website is to build it using React and GitHub's API to fetch my project's repositories. 
 
@@ -22,4 +22,4 @@ Here's an overview of the testing I've done on my portfolio website.
 
 ## View it live
 
-Link to my live portfolio: https://priceless-booth-50856f.netlify.app/ 
+Link to my live portfolio: https://isabella-markskog.netlify.app/
