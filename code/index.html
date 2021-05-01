@@ -10,6 +10,8 @@
 
   <body>
     <div class="container">
+      <!-- HEADER  -->
+
       <header class="header">
         <div class="header-bg"></div>
         <div class="header-bg__heading" tabindex="0">
@@ -50,17 +52,22 @@
         </div>
       </header>
 
+      <!-- TECH -->
+
       <main class="main">
         <section class="tech">
           <h2 class="heading">TECH</h2>
           <p class="tech-text">
-            HTML, <span class="tech-text__emp">CSS</span>, Keyframes, CSS-grid,
-            Flexbox, <span class="tech-text__emp"> JavaScript</span>, ES6, Web
-            Accessibly, <span class="tech-text__emp">Responsive design</span>,
-            API:s, mob-programming, pair-programming, Github, Agile methodology,
-            Unit test, Code Peer-preview, Cross-browser Testing.
+            HTML, CSS, Keyframes, CSS-grid, Flexbox,
+            <span class="tech-text__emp">JavaScript</span>, ES6, Styled
+            Components, <span class="tech-text__emp">React</span>, Web
+            Accessibly, <span class="tech-text__emp">Redux</span>, Responsive
+            design, API:s, mob-programming, pair-programming, Github, Agile
+            methodology, Unit test, Code Peer-preview, Cross-browser Testing.
           </p>
         </section>
+
+        <!-- FEATURED PROJECTS -->
 
         <section
           class="projects"
@@ -72,8 +79,9 @@
             class="project-container"
             aria-labelledby="business-site"
             tabindex="0"
+            href="https://nano-colors.netlify.app"
           >
-            <div class="projects-image" href="https://nano-colors.netlify.app">
+            <div class="projects-image">
               <img
                 src="./assets/nano-colors.png"
                 alt="Screenshot of header with colorful haired girls"
@@ -96,8 +104,132 @@
               <p>JavaScript ES6</p>
             </div>
           </a>
-          <a class="project-container" aria-labelledby="food-app" tabindex="0">
-            <div class="projects-image" href="https://foody-search.netlify.app">
+          <a
+            class="project-container"
+            href="https://paulines-todos.netlify.app/"
+            aria-labelledby="todos"
+            tabindex="0"
+          >
+            <div class="projects-image">
+              <img
+                src="./assets/todos.png"
+                alt="Screenshot of an app where the user can add tasks"
+              />
+              <h3 class="projects-image__title" id="todos">TODOS</h3>
+            </div>
+            <div class="projects-image__text">
+              <h4>TASK REMINDER APP</h4>
+              <p>
+                A React and Redux based app where the user can add todo tasks
+                with or without deadline, put them in different categries,
+                filter and sort.
+              </p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>HTML5</p>
+              <p>Styled components</p>
+              <p>JavaScript ES6</p>
+              <p>React</p>
+              <p>Redux</p>
+            </div>
+          </a>
+          <a
+            class="project-container"
+            href="https://expo.io/@pauan8/projects/marvel-app"
+            aria-labelledby="marvel"
+            tabindex="0"
+          >
+            <div class="projects-image">
+              <img
+                src="./assets/marvel.png"
+                alt="3 different mobileviews of a Marvel app"
+              />
+              <h3 class="projects-image__title" id="marvel">MARVEL GAME</h3>
+            </div>
+            <div class="projects-image__text">
+              <h4>REACT NATIVE MARVEL APP</h4>
+              <p>
+                Using React Native, Navigation, Animated and Sensors this app
+                takes data from an API and uses it for an comics display and
+                interactive mobile game.
+              </p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>Styled Components</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+              <p>React</p>
+              <p>React Nativer</p>
+              <p>APIs</p>
+            </div>
+          </a>
+
+          <a
+            class="project-container"
+            href="https://paulines-happy-thoughts.netlify.app/"
+            aria-labelledby="happy-thoughts"
+            tabindex="0"
+          >
+            <div class="projects-image">
+              <img
+                src="./assets/happy-thought.png"
+                alt="Screenshot of an app with twitterlike posts"
+              />
+              <h3 class="projects-image__title" id="happy-thoughts">
+                HAPPY THOUGHTS
+              </h3>
+            </div>
+            <div class="projects-image__text">
+              <h4>TWITTER LIKE MESSAGE APP</h4>
+              <p>
+                By using POST and GET from an API and useState + useEffect in
+                React users can post messages. Also with like function!
+              </p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+              <p>React</p>
+              <p>APIs</p>
+            </div>
+          </a>
+          <a
+            class="project-container"
+            href="https://project6weatherapp.netlify.app/"
+            aria-labelledby="weather-app"
+            tabindex="0"
+          >
+            <div class="projects-image">
+              <img
+                src="./assets/weather-app.png"
+                alt="Two examples of a weather app in different weather conditions"
+              />
+              <h3 class="projects-image__title" id="weather-app">
+                PAURAS WEATHER
+              </h3>
+            </div>
+            <div class="projects-image__text">
+              <h4>WEATHER APP WITH FORECAST</h4>
+              <p>
+                By using an API the app can give the user weather information
+                and 5-day forecast from a searched for - or current - position.
+              </p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+              <p>APIs</p>
+            </div>
+          </a>
+          <a
+            class="project-container"
+            aria-labelledby="food-app"
+            tabindex="0"
+            href="https://foody-search.netlify.app"
+          >
+            <div class="projects-image">
               <img
                 src="./assets/food-app.png"
                 alt="Screenshot showing a slideshow of different recipes"
@@ -120,26 +252,24 @@
           </a>
           <a
             class="project-container project-container--desktop"
-            aria-labelledby="weather-app-featured"
+            aria-labelledby="labyrinth-featured"
             tabindex="0"
+            href="https://labyrinth-game-2021.netlify.app"
           >
-            <div
-              class="projects-image"
-              href="https://project6weatherapp.netlify.app/"
-            >
+            <div class="projects-image">
               <img
-                src="./assets/weather-app.png"
-                alt="Two examples of a weather app in different weather conditions"
+                src="./assets/labyrinth.png"
+                alt="Screenshot of startscreen retro game"
               />
-              <h3 class="projects-image__title" id="weather-app-featured">
-                PAURAS WEATHER
+              <h3 class="projects-image__title" id="labyrinth-featured">
+                LABYRINTH
               </h3>
             </div>
             <div class="projects-image__text">
-              <h4>WEATHER APP WITH FORECAST</h4>
+              <h4>LABYRINTH TEXT GAME</h4>
               <p>
-                By using an API the app can give the user weather information
-                and 5-day forecast from a searched for - or current - position.
+                An old fashion text-based game where the user should try to get
+                out of a labyrinth by chosing directions.
               </p>
             </div>
             <div class="projects-image__techniques">
@@ -152,12 +282,10 @@
           <a
             class="project-container project-container--desktop"
             aria-labelledby="guess-who-featured"
+            href="https://animal-guess-who.netlify.app"
             tabindex="0"
           >
-            <div
-              class="projects-image"
-              href="https://animal-guess-who.netlify.app"
-            >
+            <div class="projects-image">
               <img
                 src="./assets/guess-who.png"
                 alt="Screenshot of an animal themed guess who game"
@@ -179,15 +307,19 @@
               <p>JavaScript ES6</p>
             </div>
           </a>
+
+          <!-- OTHER PROJECTS -->
+
           <h3 class="sub-heading" id="other-projects">OTHER PROJECTS</h3>
           <a
             class="project-container project-container--mobile"
+            href="https://foody-search.netlify.app"
             aria-labelledby="guess-who"
             tabindex="0"
           >
-            <div class="link-text" href="https://animal-guess-who.netlify.app">
+            <div class="link-text">
               <h4 id="guess-who">GUESS WHO</h4>
-              <p>Game built in JavaScript.</p>
+              <p>Guess Who Game</p>
             </div>
             <div class="projects-image__techniques">
               <p>CSS3</p>
@@ -197,31 +329,47 @@
           </a>
           <a
             class="project-container project-container--mobile"
-            aria-labelledby="weather-app"
+            href="https://labyrinth-game-2021.netlify.app"
+            aria-labelledby="labyrinth"
             tabindex="0"
           >
-            <div
-              class="link-text"
-              href="https://project6weatherapp.netlify.app/"
-            >
-              <h4 id="weather-app">WEATHER APP</h4>
-              <p>Bot built in JavaScript.</p>
+            <div class="link-text">
+              <h4 id="labyrinth">LABYRINTH</h4>
+              <p>Textbased game using API and Redux</p>
             </div>
             <div class="projects-image__techniques">
               <p>CSS3</p>
               <p>HTML5</p>
               <p>JavaScript ES6</p>
+              <p>React</p>
+              <p>Redux</p>
+              <p>API</p>
+            </div>
+          </a>
+          <a
+            class="project-container project-container--mobile"
+            href="https://future-survey.netlify.app/"
+            aria-labelledby="survey"
+            tabindex="0"
+          >
+            <div class="link-text">
+              <h4 id="survey">SURVEY</h4>
+              <p>Typeform like survey built using React.</p>
+            </div>
+            <div class="projects-image__techniques">
+              <p>CSS3</p>
+              <p>HTML5</p>
+              <p>JavaScript ES6</p>
+              <p>React</p>
             </div>
           </a>
           <a
             class="project-container"
+            href="https://musicrelease-site.netlify.app/"
             aria-labelledby="music-site"
             tabindex="0"
           >
-            <div
-              class="link-text"
-              href="https://musicrelease-site.netlify.app/"
-            >
+            <div class="link-text">
               <h4 id="music-site">MUSIC SITE</h4>
               <p>Music release site</p>
             </div>
@@ -232,11 +380,13 @@
               <p>React</p>
             </div>
           </a>
-          <a class="project-container" aria-labelledby="news-site" tabindex="0">
-            <div
-              class="link-text"
-              href="https://project2-space-news.netlify.app"
-            >
+          <a
+            class="project-container"
+            href="https://project2-space-news.netlify.app"
+            aria-labelledby="news-site"
+            tabindex="0"
+          >
+            <div class="link-text">
               <h4 id="news-site">NEWS SITE</h4>
               <p>Space news site</p>
             </div>
@@ -246,11 +396,13 @@
               <p>JavaScript ES6</p>
             </div>
           </a>
-          <a class="project-container" aria-labelledby="chat-bot" tabindex="0">
-            <div
-              class="link-text"
-              href="https://project4-travelbot.netlify.app"
-            >
+          <a
+            class="project-container"
+            href="https://project4-travelbot.netlify.app"
+            aria-labelledby="chat-bot"
+            tabindex="0"
+          >
+            <div class="link-text">
               <h4 id="chat-bot">CHAT BOT</h4>
               <p>Bot built in JavaScript.</p>
             </div>
@@ -262,57 +414,86 @@
           </a>
         </section>
 
+        <!-- THOUGHTS -->
+
         <section class="thoughts" aria-labelledby="thoughts">
           <h2 class="heading" id="thoughts">MY THOUGHTS</h2>
           <a
-            class="thoughts-container thoughts--mobile"
+            class="thoughts-container"
             href="https://pauline-j-andersson.medium.com/my-journey-to-a-new-career-cf245cc5c9df"
-            aria-labelledby="date1headline1"
+            aria-labelledby="new-career-thoughts-featured"
             tabindex="0"
           >
             <div class="thoughts-image">
-              <img src="./assets/molecule.jpg" alt="Illustration of a brain cell" />
+              <img
+                src="./assets/molecule.jpg"
+                alt="Illustration of a brain cell"
+              />
             </div>
-            <span class="thoughts-image__date"> 2021-03-12</span>
-            <h4 id="date1headline1">From making chemicals react to making JavaScript React!</h4>
-            <h5>This is a story about taking a leap and discovering your ability to soar.</h5>
+            <span class="thoughts-image__date"> 12th March 2021</span>
+            <h4 id="new-career-thoughts-featured">
+              From making chemicals react to making JavaScript React!
+            </h4>
+            <h5>
+              This is a story about taking a leap and discovering your ability
+              to soar.
+            </h5>
             <p>
-                I have always been curious. To know how things work. To
-              constantly learn. This is the meaning of it all for me. This is
-              what I need from my career — growth and possibilities...  <i>Read more ></i>
+              I have always been curious. To know how things work. To constantly
+              learn. This is the meaning of it all for me. This is what I need
+              from my career — growth and possibilities... <i>Read more ></i>
             </p>
           </a>
           <a
             class="thoughts-container thoughts--desktop"
-            aria-labelledby="date2headline2"
+            href="https://pauline-j-andersson.medium.com/lets-talk-about-doubt-44d8d4b1d838"
+            aria-labelledby="doubt-thoughts-featured"
             tabindex="0"
           >
             <div class="thoughts-image">
-              <img src="./assets/dummy640px.png" alt="Dummy image 640px" />
+              <img src="./assets/react-code.jpg" alt="screenshot of code" />
             </div>
-            <span class="thoughts-image__date"> DATE </span>
-            <h4 id="date2headline2">Headline2</h4>
+            <span class="thoughts-image__date"> 16th March 2021 </span>
+            <h4 id="doubt-thoughts-featured">Let’s talk about doubt</h4>
+            <h5>
+              And all the feelings that comes with learning a new profession.
+            </h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-              iure at? Quae, aliquid quod ex omnis ad aspernatur, quaerat,
-              nesciunt doloremque voluptas atque laborum autem numquam! Fuga
-              quasi exercitationem nobis.
+              This week has been the first time I have been feeling a bit
+              frustrated with my own lack of knowledge. Personally, think it’s
+              the strong feeling of wanting to be further than I am...
+              <i>Read more ></i>
             </p>
           </a>
+
+          <!-- MORE THOUGHTS-->
+
           <h3 class="sub-heading">MORE THOUGHTS</h3>
-          <a class="link-text" tabindex="0">
-            <span class="thoughts-image__date"> DATE </span>
-            <h4>Headline</h4>
+          <a
+            class="thoughts-container link-text thoughts--mobile"
+            href="https://pauline-j-andersson.medium.com/lets-talk-about-doubt-44d8d4b1d838"
+            aria-labelledby="doubt-thoughts"
+            tabindex="0"
+          >
+            <span class="thoughts-image__date"> 16th March 2021 </span>
+            <h4 id="doubt-thoughts">Let’s talk about doubt</h4>
           </a>
-          <a class="link-text" tabindex="0">
-            <span class="thoughts-image__date"> DATE </span>
-            <h4>Headline</h4>
+          <a
+            class="thoughts-container link-text"
+            aria-labelledby="strength-thoughts"
+            tabindex="0"
+            href="https://pauline-j-andersson.medium.com/strength-inwards-and-outwards-e1487d5d51a"
+          >
+            <span class="thoughts-image__date"> 16th April 2021</span>
+            <h4 id="strength-thoughts">Strength inwards and outwards</h4>
           </a>
-          <a class="link-text" tabindex="0">
+          <a class=" thoughts-container link-text" tabindex="0">
             <span class="thoughts-image__date"> DATE </span>
             <h4>Headline</h4>
           </a>
         </section>
+
+        <!-- SKILLS-->
 
         <section class="skills" aria-labelledby="skills">
           <h2 class="heading" id="skills">SKILLS</h2>
@@ -323,6 +504,7 @@
               <dd>CSS3</dd>
               <dd>Animation/Keyframes</dd>
               <dd>Javascript ES6</dd>
+              <dd>React</dd>
               <dd>GitHub</dd>
               <dd>GitBash</dd>
               <dd>Unit test</dd>
@@ -330,7 +512,6 @@
               <dd>Responsive design</dd>
               <dt>UPCOMING</dt>
               <dd>Node.js</dd>
-              <dd>React</dd>
               <dd>Redux</dd>
               <dd>Databases</dd>
             </dl>
@@ -364,6 +545,8 @@
           </div>
         </section>
 
+        <!-- SOCIAL-->
+
         <section class="social" aria-labelledby="social-media">
           <h2 class="heading" id="social-media">FOR MORE</h2>
           <a
@@ -392,6 +575,8 @@
           </a>
         </section>
       </main>
+
+      <!-- FOOTER -->
 
       <footer class="footer">
         <div class="contact-info" aria-labelledby="contact-info">
