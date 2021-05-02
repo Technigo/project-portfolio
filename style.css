@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
-
+/***Header***/
 .header-section {
   display: flex;
   align-items: center;
@@ -126,6 +126,7 @@ transform:scale(1.1);
 .tech-text {
   font-size: 20px;
   padding: 0 30px 30px;
+  text-align: center;
 }
 
 /***Section 3 Featured Projects***/
@@ -147,19 +148,26 @@ transform:scale(1.1);
 .link-cards {
   display: flex;
   flex-direction: column;
-  padding: 15px;
-  margin: 20px;
+  padding: 15px; 
+   margin: 20px;
 }
 
 .project-picture {
   width: 250px;
   filter: brightness(60%);
-  
+  align-self: flex-start;
 }
 
 .h3-header {
   position: absolute; 
   top: 50px;
+  left:30px;
+}
+
+.project-container h4 {
+  color: rgba(212, 0, 255, 0.7);
+  align-self: flex-start;
+  margin-bottom: 8px;
 }
 
 .link-container:link {
@@ -169,6 +177,7 @@ transform:scale(1.1);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
   font-size: 20px;
 }
 .link-container:active {
@@ -180,41 +189,61 @@ transform:scale(1.1);
 }
 
 .featured-project-text {
+  width: 280px;
   color: black;
-  margin: 0;
 }
 
 .technique-container {
-  display:flex;
+  justify-content: space-evenly;
+  align-self: flex-start;
+  margin: 10px 0 30px 0;
 }
 
-.small-marker {
+.technique-container span {
   font-size: 14px;
   color: white;
   padding: 0px 2px;
-  background: transparent;
-  background-image: linear-gradient(
-    to right,
-    rgba(51, 0, 40, 0.1),
-    rgba(212, 0, 255, 0.7) 4%,
-    rgba(255, 0, 149, 0.3)
-  );
+  background-color: rgba(212, 0, 255, 0.7);
 }
 
-/***Section 4 My thoughts***/
-
-.my-thoughts-container {
+/***Section 4 Other projects***/
+.other-projects-container{
   width: 100vw;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-.my-thoughts-text {
-  padding: 20px 30px;
+.link-cards-2 {
+  display:flex;
+  flex-direction: column;
+  margin: 20px 65px;
+}
+
+.link-container-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-container-2:link {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
+}
+.link-container-2:active {
+  color: black;
+}
+
+.link-container-2:visited {
+  color:black;
+}
+.link-container-2 b {
+  color: rgba(212, 0, 255, 0.7);
 }
 
 /***Section 5 Skills***/
@@ -230,16 +259,16 @@ transform:scale(1.1);
 }
 
 .skills-inner-container {
-  width: 100vw;
-  flex-direction: row;
-  flex-wrap: wrap;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   font-size: 20px;
 }
 
 .skills {
   display: inline-flex;
-  padding: 10px;
+  text-align:center;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .unordered-list {
@@ -262,11 +291,15 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .for-more-links-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
 .github-black,
@@ -289,6 +322,8 @@ ul li {
 .clickable-link {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 12px;
   text-decoration: none;
 }
@@ -316,6 +351,7 @@ ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .tribute {
@@ -325,6 +361,7 @@ ul li {
 
 /***Tablet***/
 @media (min-width: 768px) {
+ 
   /***Header***/
   .icon-section {
     margin-right: 70px;
@@ -353,39 +390,48 @@ ul li {
   }
 
   /***Section 2 Tech***/
-
   .tech-text {
     padding: 40px 150px;
     line-height: 30px;
   }
 
   /***Section 3 Featured Projects***/
+  .featured-project-text {
+    width: auto;
+    color: black;
+  }
 
   .link-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .project-container {
     margin: 20px 45px;
+  } 
+
+  .project-picture {
+    width: 300px;
+    height: 220px;
   }
 
-  /***Section 4 My thoughts***/
-
-  .my-thoughts-text {
-    padding: 40px 150px;
+  .h3-header {
+    top: 60px;
+    left: 50px;
   }
 
   /***Section 5 skills***/
-
   .skills {
-    padding: 40px 120px;
-  }
+    padding: 0px 40px;
+  } 
+
+ /*** Section 6 For more***/
   .clickable-link {
-    justify-content: center;
-    align-items: center;
     padding: 50px;
   }
+
+  /***Footer***/
   .tribute {
     font-size: 10px;
   }
@@ -394,17 +440,20 @@ ul li {
 /***Desktop***/
 
 @media (min-width: 992px) {
+
   /***Header***/
   .header-image {
     height: 600px;
   }
+
   .icon-section {
     margin-right: 300px;
-   
   }
+
   .icon {
     width: 40px;
   }
+
   .icon-section .circle {
     width: 60px;
     height: 60px;
@@ -420,8 +469,8 @@ ul li {
 
   .profession-text {
     font-size: 60px;
-    
   }
+
   .picture-of-me {
     top: -50px;
     left: 60%;
@@ -429,45 +478,47 @@ ul li {
   }
 
   /***section 1 About me***/
-.about-me-container {
-display: flex;
-justify-content: center;
-}
+  .about-me-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .text-about-me {
-    /* padding: 40px 150px; */
     width: 50vw;
-    
   }
 
   /***Section 2 Tech***/
   .tech-text {
-    /* padding: 40px 150px; */
-    /* line-height: 30px; */
     width: 50vw;
     padding-top: 0;
   }
 
   /***Section 3 Featured Projects***/
-
   .link-cards {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .link-container {
+    justify-items: center; 
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
   }
 
-  /***Section 4 My thoughts***/
-  .my-thoughts-text {
-    padding: 40px 150px;
+  .project-picture {
+    width: 300px;
+    height: 220px;
+  }
+    
+  .h3-header {
+    top: 60px;
+    left: 50px;
   }
 
-  /***Section 5 Skills***/
-  .skills {
-    display: inline-flex;
-    padding: 40px 80px;
-  }
+  .featured-project-text {
+    width: 300px;
+  } 
+
+  /***Section 6 For more***/
   .clickable-link {
     justify-content: center;
     align-items: center;
