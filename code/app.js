@@ -5,7 +5,7 @@ const langList = document.getElementById("lang-list")
 const projectArray = {
   projects: [
     {
-      img: "./pictures/project-todos.png",
+      img: "./pictures/project-todos-new.png",
       projectTitle: 'TODO APP',
       projectDescription: 'A todo application built with React, Redux, REST API and Styled components.',
       lang: [
@@ -114,9 +114,16 @@ const printProjects = () => {
 
 const printOtherProjects = () => {
 
-  const slicedArrayEnd = projectArray.projects.slice(4, 6)
+  let slicedArray
 
-  slicedArrayEnd.map((project) => {
+  if (screen.width <= 767) {
+    slicedArray = projectArray.projects.slice(2, 4)
+  } else if (screen.width >= 768) {
+    slicedArray = projectArray.projects.slice(4, 6)
+  }
+  
+
+  slicedArray.map((project) => {
     otherProjectContainer.innerHTML += `
       <div class="project-container">
         <a href=${project.url} class="project-container-link">
