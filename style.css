@@ -1,24 +1,10 @@
-/* MAIN */
+* {
+  box-sizing: border-box;
+}
 
 body {
+  font-family: "Montserrat", sans-serif;
   margin: 0;
-}
-
-/* SECTION STYLING */
-
-.portfolio-section {
-  padding: 30px 36px 50px;
-  display: flex;
-  flex-direction: column;
-}
-
-.grey {
-  background-color: #eff3f7;
-}
-
-.intro-section {
-  padding-top: 60px;
-  display: block;
 }
 
 /* HEADER */
@@ -122,246 +108,373 @@ body {
   bottom: -4%;
 }
 
-/* INTRO SECTION */
+/* Section - ABOUT ME */
 
-.paragraph-text {
+.info-about-me {
+  background-color: #eff3f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 40px;
+}
+
+.about-me-paragraph,
+.tech-paragraph {
   font-family: "Montserrat", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 29px;
   margin-bottom: 0;
-  margin: 0;
+  margin: 0 30px;
   font-weight: 400;
   color: black;
 }
 
-/* Decoration symbol */
-
-.decoration {
-  display: flex;
-  align-items: center;
-  float: left;
-  padding-top: 10px;
-  margin-right: 10px;
-}
+/* Decoration symbol (about me section) */
 
 .line {
-  width: 50px;
-  height: 2px;
-  background: #f0d441;
+  width: 45px;
+  border-bottom: 2px solid #f0d441;
+  margin-bottom: 6.5px;
+  display: inline-block;
 }
 
 .circle {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   background: #f0d441;
-  border-radius: 50px;
-  margin-left: -3px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
 }
 
-.arrow {
-  font-weight: 600;
-  color: #a38418;
-}
+/* Section - TECH SKILLS */
 
-/* TECH */
-
-.paragraph-skills {
+.tech-container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
-/* PROJECTS SECTION */
+/* EACH SECTION HEADER */
 
-.project-heading,
-.skill-heading {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #a38418;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-
-.other-projects-header,
-.header-more {
+.section-header {
   font-family: "Montserrat", sans-serif;
-  color: #041a2d;
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffff;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 21px;
-  margin-top: 70px;
-  text-align: center;
+  padding: 0 10px;
+  align-self: center;
+  background: rgb(4, 28, 46);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 28, 46, 1) 0%,
+    rgba(23, 83, 125, 1) 69%
+  );
 }
 
-/* Project card */
+/* Section - FEATURED PROJECTS*/
 
-.project-card {
-  width: 100%;
+.projects-container {
+  background-color: #eff3f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+}
+
+.featured-projects,
+.all-thoughts {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  text-decoration: none;
-  margin-bottom: 30px;
+  justify-content: space-between;
 }
 
-.image-title-wrapper {
+.project-card,
+.thoughts-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 100%;
+  cursor: pointer;
   position: relative;
-  margin-bottom: 10px;
+  margin: 0 30px;
+}
+
+.project-link,
+.thoughts-link {
+  text-decoration: none;
+  color: #000;
+  outline: none;
+  padding: 5px;
+}
+
+.thoughts-link:hover {
+  opacity: 0.8;
+}
+
+.project-link:focus,
+.thoughts-link:focus {
+  border: 3px solid #000;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
 }
 
 .project-image {
   width: 100%;
-  filter: brightness(60%);
-  z-index: 2;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.image-text {
+  position: absolute;
+  margin: 0;
+  font-size: 28px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.01em;
+}
+
+.image-container:hover {
+  background-color: #000;
+}
+
+.image-container:hover .project-image {
+  opacity: 0.5;
 }
 
 .project-title {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 0;
-  font-size: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  z-index: 1;
-  font-family: Montserrat;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #a38418;
 }
 
-.languages-used {
-  display: flex;
+.project-paragraph,
+.thought-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 5px;
 }
 
-.language {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 9px;
-  text-align: center;
-  background-color: #f0d441;
-  color: black;
-  padding: 5px 15px;
-  margin: 0 5px 0 0;
-}
-
-.project-card-paragraph {
-  margin: 0;
-}
-
-/* MY TOUGHTS SECTION */
-.my-toughts-section {
-  text-decoration: none;
-  color: black;
-  font-family: "Roboto", sans-serif;
-}
-
-.my-toughts-wrapper {
+.used-tech-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 20px;
 }
 
-.my-thoughts-image {
+.used-tech {
+  background-color: #f0d441;
+  color: black;
+  padding: 5px;
+  margin: 0px 5px 10px 0px;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+/* Section - OTHER PROJECTS + some THOUGHTS  */
+
+.other-projects-section {
   width: 100%;
 }
 
-.my-thoughts-date {
+.other-projects,
+.other-thoughts {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  padding: 5px 40px;
+}
+
+.other-projects-link,
+.other-thoughts-link {
+  text-decoration: none;
+  outline: none;
+  color: #000;
+}
+
+.other-projects-link:hover,
+.other-thoughts-link:hover {
+  opacity: 0.7;
+}
+
+.other-projects-link:focus,
+.other-thoughts-link:focus {
+  border: 3px solid #000;
+  padding: 5px;
+}
+
+.other-projects-title,
+.other-thoughts-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  font-family: "Montserrat", sans-serif;
+  color: #041a2d;
+  margin-top: 50px;
+}
+
+.title-info {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #a38418;
+}
+
+.other-projects-info {
+  margin: 0px 0px 5px 0px;
+  line-height: 29px;
+}
+
+/* ARROW */
+.fa-angle-double-right {
+  margin-left: 5px;
+  color: #a38418;
+}
+
+/* Section - THOUGHTS */
+
+.thoughts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 10px;
+}
+
+.thoughts-card:hover {
+  opacity: 0.8;
+}
+
+.thought-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.thought-date {
   color: #a38418;
   font-size: 17px;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.my-thoughts-heading {
-  font-size: 21px;
+.thought-title {
+  font-size: 18px;
+  margin: 5px 0;
   font-weight: 700;
-  line-height: 30px;
-  margin: 0;
-  color: #041a2d;
 }
 
-.my-thoughts-paragraph {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 30px;
-  margin-top: 5px;
+/* OTHER THOUGHTS */
+
+.other-thoughts {
+  display: none;
 }
 
-.more-toughts {
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
-  font-weight: 600;
-  color: #041a2d;
-  line-height: 27px;
-}
-
-.more-toughts-date {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  color: #a38418;
+.other-thoughts-info {
   text-decoration: underline;
-}
-
-.toughts-arrow {
-  color: #a38418;
-  text-decoration: underline;
-}
-
-/* SKILLS SECTION */
-
-.skills {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
-}
-
-.skills-list {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
+  font-weight: 700;
   line-height: 29px;
 }
 
-/* FOR MORE SECTION */
-.social-media-icons-bottom {
+/* SECTION - SKILLS */
+
+.skills-container {
+  background-color: #eff3f7;
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 10px;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.skills {
+  padding: 20px 20px 5px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.skill-title {
+  font-weight: 700;
+  margin: 5px;
+  font-size: 17px;
+  color: #a38418;
+}
+
+.skill {
+  line-height: 29px;
+  font-size: 17px;
+}
+
+/* Section - FOR MORE */
+
+.for-more-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 10px;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+}
+
+.link-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialmedia-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
 }
 
 .social-media-icon-bottom {
-  text-decoration: none;
-  text-align: center;
-  margin: 0 30px;
-}
-
-.icon-bottom {
-  border: 2px solid #a38418;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
+  border: 3px solid #051f32;
+  margin: 20px 15px 5px 15px;
+  cursor: pointer;
+  color: #051f32;
+  outline: none;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
 }
 
-.social-media-icon-bottom-name {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #a38418;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  margin-top: 15px;
+.social-media-icon-bottom:hover,
+.social-media-icon-bottom:focus {
+  color: white;
+  background-color: #051f32;
+  border-color: #051f32;
 }
 
 /* FOOTER */
@@ -394,124 +507,333 @@ ul {
   margin: 0 0 5px;
 }
 
-/* HIDING ELEMENTS IN MOBILE VIEW */
-.hide {
-  display: none;
-}
-
-/* Hiding section until have an article */
-.header-more,
-.more-toughts {
-  display: none;
-}
-
-/* TABLET VIEW */
+/* MEDIA QUERIES */
 
 @media (min-width: 768px) {
-  /* SHOWING ELEMENTS IN TABLET VIEW AND LARGER SCREEN */
-  .hide {
-    display: block;
+  .header {
+    height: 600px;
+  }
+  .header-wrapper {
+    margin: 0 auto;
+    max-width: 570px;
+    height: 600px;
   }
 
-  .portfolio-section {
-    padding: 40px 100px;
+  .social-media-icons {
+    top: 105px;
   }
 
-  .grey {
-    background-color: #eff3f7;
-    padding-bottom: 60px;
+  .social-media-icon {
+    height: 80px;
+    width: 80px;
+    font-size: 60px;
   }
 
-  .intro-section {
-    padding-top: 60px;
+  .header-container-text {
+    top: 230px;
   }
 
-  /* HEADER */
-
-  header {
-    padding: 100px 100px 0 100px;
+  .portfolio,
+  .title-name {
+    font-size: 17px;
+    line-height: 49px;
   }
 
-  .icon {
-    width: 60px;
-    height: 60px;
+  .title-big {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 49px;
   }
 
-  .profile-picture {
+  .title-additional {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  .profile-pic {
     width: 200px;
     height: 200px;
   }
 
-  .header-text {
-    font-size: 24px;
-    line-height: 49px;
+  .about-me-paragraph,
+  .tech-paragraph,
+  .featured-projects,
+  .other-projects-section,
+  .all-thoughts {
+    margin: 0 auto;
+    max-width: 570px;
   }
 
-  .header-text-name {
-    font-size: 17px;
+  .info-about-me,
+  .tech-container {
+    padding: 50px 0;
   }
 
-  .header-text-portfolio {
-    font-size: 17px;
-  }
-
-  .header-text-developer {
-    font-size: 55px;
-  }
-
-  /* CARDS */
-
-  .all-cards {
-    display: flex;
-    justify-content: space-between;
+  .featured-projects {
     flex-wrap: wrap;
   }
 
-  .card {
-    width: 45%;
+  .project-card,
+  .thoughts-card {
+    width: 49%;
+    margin: 0;
   }
 
-  .my-toughts-card {
-    width: 45%;
+  .other-projects {
+    padding: 5px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-wrapper {
+    max-width: 720px;
   }
 
-  /* ICONS BOTTOM */
-  .icon-bottom {
-    width: 60px;
-    height: 60px;
+  .portfolio,
+  .title-name {
+    font-size: 20px;
+    line-height: 51px;
+  }
+
+  .title-big {
+    font-size: 65px;
+    line-height: 60px;
+  }
+
+  .title-additional {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-me-paragraph,
+  .tech-paragraph,
+  .featured-projects,
+  .other-projects-section,
+  .all-thoughts {
+    max-width: 720px;
+    font-size: 18px;
+  }
+
+  .skill-title {
+    font-size: 19px;
+  }
+
+  .project-paragraph,
+  .other-projects-info,
+  .thought-paragraph,
+  .skill {
+    font-size: 18px;
+  }
+
+  .project-title,
+  .thought-title {
+    font-size: 19px;
   }
 }
 
 @media (min-width: 1280px) {
-  header {
-    padding: 5% 20% 0 20%;
+  .header-wrapper {
+    max-width: 800px;
   }
 
-  .portfolio-section {
-    padding: 3% 20%;
+  .about-me-paragraph,
+  .tech-paragraph,
+  .featured-projects,
+  .other-projects-section,
+  .all-thoughts {
+    max-width: 800px;
+    font-size: 19px;
   }
 
-  .profile-picture {
-    width: 220px;
-    height: 220px;
-    margin-top: -20px;
+  .project-title,
+  .thought-title,
+  .title-info {
+    font-size: 20px;
   }
 
-  .language {
-    font-size: 10px;
+  .project-paragraph,
+  .other-projects-info,
+  .thought-paragraph,
+  .skill {
+    font-size: 19px;
+    margin-bottom: 7px;
   }
 
-  .all-cards {
-    max-width: 2000px;
-    margin: 0 auto;
+  .info-about-me,
+  .tech-container {
+    padding: 70px 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-wrapper {
+    max-width: 900px;
   }
 
-  .card {
-    width: 30%;
+  .portfolio,
+  .title-name {
+    font-size: 22px;
+    line-height: 56px;
   }
 
-  .portfolio-section {
-    max-width: 2000px;
-    margin: 0 auto;
+  .title-big {
+    font-size: 75px;
+    line-height: 65px;
+  }
+
+  .title-additional {
+    font-size: 24px;
+    line-height: 35px;
+    margin: 15px 0;
+  }
+
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+  }
+
+  .section-header,
+  .other-projects-title,
+  .contact {
+    font-size: 27px;
+  }
+
+  .about-me-paragraph,
+  .tech-paragraph,
+  .featured-projects,
+  .other-projects-section,
+  .all-thoughts {
+    max-width: 900px;
+    font-size: 21px;
+  }
+
+  .project-title,
+  .thought-title,
+  .title-info {
+    font-size: 21px;
+  }
+
+  .project-paragraph,
+  .other-projects-info,
+  .thought-paragraph,
+  .skill {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+
+  .thought-paragraph {
+    line-height: 29px;
+  }
+
+  .info-about-me,
+  .tech-container {
+    padding: 70px 0;
+  }
+
+  .social-media-icon-bottom {
+    height: 80px;
+    width: 80px;
+    border: 3px solid #051f32;
+    margin: 20px 15px 5px 15px;
+    font-size: 40px;
+  }
+
+  .socialmedia-text {
+    font-size: 14px;
+  }
+
+  .contact-info {
+    font-size: 22px;
+  }
+
+  .footer {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .header {
+    height: 800px;
+  }
+
+  .header-wrapper {
+    height: 800px;
+    max-width: 1100px;
+  }
+
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+  }
+
+  .social-media-icon {
+    height: 90px;
+    width: 90px;
+    font-size: 70px;
+  }
+
+  .header-container-text {
+    top: 270px;
+  }
+
+  .portfolio,
+  .title-name {
+    font-size: 22px;
+    line-height: 56px;
+  }
+
+  .title-big {
+    font-size: 80px;
+    line-height: 70px;
+  }
+
+  .title-additional {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 20px 0;
+  }
+
+  .section-header,
+  .other-projects-title,
+  .contact {
+    font-size: 30px;
+  }
+
+  .about-me-paragraph,
+  .tech-paragraph,
+  .featured-projects,
+  .other-projects-section,
+  .all-thoughts {
+    max-width: 1100px;
+    font-size: 23px;
+  }
+
+  .project-title,
+  .thought-title,
+  .title-info {
+    font-size: 23px;
+  }
+
+  .project-paragraph,
+  .other-projects-info,
+  .thought-paragraph,
+  .skill {
+    font-size: 22px;
+    margin-bottom: 7px;
+  }
+
+  .info-about-me,
+  .tech-container {
+    padding: 90px 0;
+  }
+
+  .used-tech {
+    font-size: 14px;
+    line-height: 14px;
   }
 }

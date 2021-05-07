@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script
+      src="https://kit.fontawesome.com/37c653cfef.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -15,7 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
     <title>Laima Duhovnaja | Frontend developer</title>
   </head>
   <body>
@@ -62,331 +65,263 @@
       </div>
     </main>
 
-    <!-- FIRST SECTION -->
+    <!-- Section - ABOUT ME -->
+
     <section
-      class="portfolio-section grey intro-section"
+      class="info-about-me"
       aria-label="Introduction about Laima Duhovnaja"
     >
-      <div class="decoration">
-        <div class="line"></div>
-        <div class="circle"></div>
-      </div>
-      <p class="paragraph-text">
-        I am Laima, a frontend developer with a background in marketing. I enjoy
-        combining my creativity and problem solving skills to build a great user
-        friendly web applications.
+      <p class="about-me-paragraph">
+        <span class="line"></span><span class="circle"></span>I am Laima, a
+        frontend developer with a background in marketing. I enjoy combining my
+        creativity and problem solving skills to build a great user friendly web
+        applications.
       </p>
     </section>
 
-    <!-- SECOND SECTION -->
-    <section
-      class="portfolio-section"
-      aria-label="Section with technical skills"
-    >
-      <h2 class="section-header">Tech</h2>
-      <p class="paragraph-text paragraph-skills">
+    <!-- Section - TECH SKILLS -->
+
+    <section class="tech-container">
+      <h2 class="section-header">TECH</h2>
+      <p class="tech-paragraph">
         HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, Redux, Web Accessibly,
         APIs
       </p>
     </section>
 
-    <!-- THIRD SECTION -->
-    <section
-      class="portfolio-section grey featured-projects"
-      aria-label="Featured projects"
-    >
-      <h2 class="section-header">Featured projects</h2>
-
-      <!-- Project cards -->
-      <div class="all-cards">
-        <!-- First project -->
-        <div class="card">
+    <!-- Section - PROJECTS -->
+    <section class="projects-container">
+      <!-- Section - FEATURED PROJECTS -->
+      <h2 class="section-header">FEATURED PROJECTS</h2>
+      <section class="featured-projects">
+        <article class="project-card">
           <a
-            class="project-card"
-            href="https://momento-photography.netlify.app/"
+            href="https://friend-match.netlify.app"
             target="_blank"
+            class="project-link"
           >
-            <div class="image-title-wrapper">
-              <h3 class="project-title">Survey</h3>
+            <div class="image-container">
               <img
+                src="./assets/friend_match.jpg"
+                alt="Friends Match"
                 class="project-image"
-                src="/assets/friend_match.jpg"
-                alt=""
               />
+              <h3 class="image-text">SURVEY</h3>
             </div>
-            <h4 class="project-heading">Friend Match Survey</h4>
-            <p class="paragraph-text featured-text">
+            <h3 class="project-title">FRIENDS MATCH SURVEY</h3>
+            <p class="project-paragraph">
               Project of a Friend Match Survey (a Typeform like product). Built
               using React.
             </p>
-            <div class="languages-used">
-              <p class="language">CSS3</p>
-              <p class="language">JavaScript</p>
-              <p class="language">React</p>
+            <div class="used-tech-container">
+              <p class="used-tech">HTML</p>
+              <p class="used-tech">CSS3</p>
+              <p class="used-tech">JavaScript</p>
+              <p class="used-tech">React</p>
             </div>
           </a>
-        </div>
-
-        <!-- Second project -->
-        <div class="card">
-          <a
-            class="project-card"
-            href="https://beauty-studio-chat-bot.netlify.app/"
-            target="_blank"
-          >
-            <div class="image-title-wrapper">
-              <h3 class="project-title">Chat bot</h3>
-              <img class="project-image" src="/assets/chat-bot.png" alt="" />
+        </article>
+        <article class="project-card">
+          <a href="" target="_blank" class="project-link">
+            <div class="image-container">
+              <img
+                src="./assets/guess-who.jpg"
+                alt="guess who game"
+                class="project-image"
+              />
+              <h3 class="image-text">GUESS WHO</h3>
             </div>
-            <h4 class="project-heading">Chat Bot witj JS</h4>
-            <p class="paragraph-text featured-text">
-              A chat bot app for a beauty studio. Built in pair-programming.
+            <h3 class="project-title">GUESS WHO GAME</h3>
+            <p class="project-paragraph">
+              A digital version of the old character guessing board game "Guess
+              who?"
             </p>
-            <div class="languages-used">
-              <p class="language">HTML</p>
-              <p class="language">CSS3</p>
-              <p class="language">JavaScript</p>
+            <div class="used-tech-container">
+              <p class="used-tech">HTML</p>
+              <p class="used-tech">CSS3</p>
+              <p class="used-tech">JavaScript</p>
             </div>
           </a>
-        </div>
+        </article>
+      </section>
 
-        <!-- Third project -->
-        <div class="card hide">
+      <!-- Section - OTHER PROJECTS -->
+      <section class="other-projects-section">
+        <h2 class="other-projects-title">OTHER PROJECTS</h2>
+        <article class="other-projects">
           <a
-            class="project-card"
-            href="https://weather-in-stockholm-forecast.netlify.app"
+            href="https://my-happy-thoughts.netlify.app/"
             target="_blank"
+            class="other-projects-link"
           >
-            <div class="image-title-wrapper">
-              <h3 class="project-title">Weather App</h3>
-              <img class="project-image" src="/assets/weather-app.jpg" alt="" />
-            </div>
-            <h4 class="project-heading">Weather App with JS</h4>
-            <p class="paragraph-text featured-text">
-              A simple weather web app that shows today's weather and
-              temperature in Stockholm, and a 5-day forecast using a weather
-              API.
+            <h3 class="title-info">HAPPY THOUGHTS</h3>
+            <p class="other-projects-info">
+              A Twitter like Happy Thoughts application. Fetching and posting
+              data to an API.
+              <i class="fas fa-angle-double-right"></i>
             </p>
-            <div class="languages-used">
-              <p class="language">HTML</p>
-              <p class="language">CSS3</p>
-              <p class="language">JavaScript</p>
+            <div class="used-tech-container">
+              <p class="used-tech">HTML</p>
+              <p class="used-tech">CSS3</p>
+              <p class="used-tech">JavaScript</p>
+              <p class="used-tech">React</p>
             </div>
           </a>
-        </div>
-
-        <!-- Fourth project -->
-        <div class="card hide">
+        </article>
+        <article class="other-projects">
           <a
-            class="project-card"
-            href="https://my-guess-who-game.netlify.app"
+            href="https://music-releases-site.netlify.app/"
             target="_blank"
+            class="other-projects-link"
           >
-            <div class="image-title-wrapper">
-              <h3 class="project-title">Guess who game</h3>
-              <img class="project-image" src="/assets/guess-who.jpg" alt="" />
-            </div>
-            <h4 class="project-heading">Guess Who game</h4>
-            <p class="paragraph-text featured-text">
-              A digital version of the old character guessing board game Guess
-              Who?
+            <h3 class="title-info">MUSIC RELEASE.</h3>
+            <p class="other-projects-info">
+              React components were used to build a page which shows new album
+              and single releases.
+              <i class="fas fa-angle-double-right"></i>
             </p>
-            <div class="languages-used">
-              <p class="language">HTML</p>
-              <p class="language">CSS3</p>
-              <p class="language">JavaScript</p>
+            <div class="used-tech-container">
+              <p class="used-tech">HTML</p>
+              <p class="used-tech">CSS</p>
+              <p class="used-tech">JavaScript</p>
+              <p class="used-tech">React</p>
             </div>
           </a>
-        </div>
-      </div>
-
-      <!-- Links to other projects -->
-
-      <h2 class="other-projects-header" aria-label="Other projects">
-        Other projects
-      </h2>
-      <a
-        class="project-card"
-        href="https://my-happy-thoughts.netlify.app"
-        target="_blank"
-      >
-        <h4 class="project-heading">Happy Thoughts</h4>
-        <p class="paragraph-text featured-text">
-          A Twitter like Happy Thoughts application. Fetching and posting data
-          to an API.<span class="arrow">>></span>
-        </p>
-        <div class="languages-used">
-          <p class="language">HTML</p>
-          <p class="language">CSS3</p>
-          <p class="language">JavaScript</p>
-          <p class="language">React</p>
-        </div>
-      </a>
-      <a
-        class="project-card"
-        href="https://momento-photography.netlify.app"
-        target="_blank"
-      >
-        <h4 class="project-heading">Business Website</h4>
-        <p class="paragraph-text featured-text">
-          A wedding fotographer business site.<span class="arrow">>></span>
-        </p>
-        <div class="languages-used">
-          <p class="language">HTML</p>
-          <p class="language">CSS3</p>
-          <p class="language">JavaScript</p>
-        </div>
-      </a>
-      <a
-        class="project-card hide"
-        href="https://music-releases-site.netlify.app"
-        target="_blank"
-      >
-        <h4 class="project-heading">Music releases site</h4>
-        <p class="paragraph-text featured-text">
-          React components were used to build a page which shows new album and
-          single releases.<span class="arrow">>></span>
-        </p>
-        <div class="languages-used">
-          <p class="language">HTML</p>
-          <p class="language">CSS3</p>
-          <p class="language">JavaScript</p>
-          <p class="language">React</p>
-        </div>
-      </a>
+        </article>
+      </section>
     </section>
 
-    <!-- FOURTH SECTION -->
-    <section
-      class="portfolio-section"
-      aria-label="Section with articles about code"
-    >
-      <h2 class="section-header">My Thoughts About code</h2>
-      <div class="my-toughts-wrapper">
-        <div class="my-toughts-card">
-          <article>
-            <a
-              class="my-toughts-section"
-              href="https://leelalaim.medium.com/overcoming-obstacles-during-the-bootcamp-1ff3c4b15631"
-              target="_blank"
-            >
-              <img
-                class="my-thoughts-image"
-                src="./assets/article-image.jpeg"
-                alt="computer keyboard"
-              />
-              <h5 class="my-thoughts-date">APRIL 2021</h5>
-              <h4 class="my-thoughts-heading">
-                Overcoming obstacles during the bootcamp
-              </h4>
-              <p class="my-thoughts-paragraph">
-                I am currently in the middle of a Frontend web development
-                bootcamp and on a path of becoming a web developer. I am very
-                excited about doing it despite the fact that every day is very
-                challenging.<span class="arrow">>></span>
-              </p>
+    <!-- SECTION - THOUGHTS ABOUT THE CODE -->
+    <section class="thoughts-container">
+      <h2 class="section-header">MY THOUGHTS</h2>
+      <div class="all-thoughts">
+        <article class="thoughts-card">
+          <a
+            href="https://leelalaim.medium.com/overcoming-obstacles-during-the-bootcamp-1ff3c4b15631"
+            class="thoughts-link"
+            target="_blank"
+          >
+            <img
+              src="./assets/my-toughts.jpg"
+              alt="Image of a laptop"
+              class="thought-image"
+            />
+            <h3 class="thought-date">APR 2021</h3>
+            <h3 class="thought-title">
+              Overcoming obstacles during the bootcamp
+            </h3>
+            <p class="thought-paragraph">
+              I am currently in the middle of a Frontend web development
+              bootcamp and on a path of becoming a web developer. I am very
+              excited about doing it despite the fact that every day is very
+              challenging.<i class="fas fa-angle-double-right"></i>
+            </p>
+          </a>
+        </article>
+        <article class="thoughts-card">
+          <a
+            href="https://leelalaim.medium.com/keeping-the-motivation-a9e1fac937d6"
+            class="thoughts-link"
+            target="_blank"
+          >
+            <img
+              src="./assets/my-toughts.jpg"
+              alt="Image of a laptop"
+              class="thought-image"
+            />
+            <h3 class="thought-date">MAY 2021</h3>
+            <h3 class="thought-title">Keeping the motivation</h3>
+            <p class="thought-paragraph">
+              You know the feeling when you start something new, interesting and
+              you feel very energised, motivated and excited about it? But then
+              after a while when the first difficulties or failures come the
+              motivation...<i class="fas fa-angle-double-right"></i>
+            </p>
+          </a>
+        </article>
+        <div class="other-thoughts">
+          <h2 class="other-thoughts-title">MORE THOUGHTS</h2>
+          <article class="other-thoughts-info">
+            <a href="" class="other-thoughts-link">
+              <h3 class="thought-date"></h3>
+              <i class="fas fa-angle-double-right"></i>
+            </a>
+          </article>
+          <article class="other-thoughts-info">
+            <a href="" class="other-thoughts-link">
+              <h3 class="thought-date"></h3>
+              <i class="fas fa-angle-double-right"></i>
             </a>
           </article>
         </div>
-        <!-- <div class="my-toughts-card hide">
-                <article>
-                   <a class="my-toughts-section" href="https://leelalaim.medium.com/overcoming-obstacles-during-the-bootcamp-1ff3c4b15631" target="_blank">
-                        <img class="my-thoughts-image" src="./assets/article-image.jpeg" alt="computer keyboard">
-                        <h5 class="my-thoughts-date">APRIL 2021</h5>
-                        <h4 class="my-thoughts-heading">Overcoming obstacles during the bootcamp</h4>
-                        <p class="my-thoughts-paragraph">I am currently in the middle of a Frontend web development bootcamp and on a path of becoming a web developer. I am very excited about doing it despite the fact that every day is very challenging.<span class="arrow">>></span></p> 
-                    </a> 
-                </article>
-                
-            </div> -->
       </div>
-
-      <!-- <h2 class="header-more">More Thoughts</h2>
-        <a href="" target="_blank">
-            <p class="more-toughts"><span class="more-toughts-date">SEP 2019.</span>  5 Apps that will make coding easier. <span class="arrow toughts-arrow">>></span></p>
-        </a>
-        <a href="" target="_blank">
-            <p class="more-toughts"><span class="more-toughts-date">SEP 2019.</span>  5 Apps that will make coding easier. <span class="arrow toughts-arrow">>></span></p>
-        </a>
-        <a href="" target="_blank">
-            <p class="more-toughts"><span class="more-toughts-date">SEP 2019.</span>  5 Apps that will make coding easier. <span class="arrow toughts-arrow">>></span></p>
-        </a> -->
     </section>
 
-    <!-- FIFTH SECTION -->
-    <section class="portfolio-section grey" aria-label="Section with skills">
-      <h2 class="section-header">Skills</h2>
-      <div class="skills">
-        <div class="skills-code-upcomming">
-          <h4 class="skill-heading">Code</h4>
-          <ul class="skills-list">
-            <li>HTML 5</li>
-            <li>CSS3</li>
-            <li>JavaScript ES6</li>
-            <li>React</li>
-          </ul>
-          <h4 class="skill-heading">Upcomming</h4>
-          <ul class="skills-list">
-            <li>Redux</li>
-            <li>Node.js</li>
-          </ul>
+    <!-- SECTION - MY SKILLS  -->
+
+    <section class="skills-container">
+      <h2 class="section-header">SKILLS</h2>
+      <div class="skills-section">
+        <ul class="skills">
+          <li><h4 class="skill-title">CODE</h4></li>
+          <li class="skill">CSS3</li>
+          <li class="skill">HTML</li>
+          <li class="skill">JavaScript ES6</li>
+          <li class="skill">React</li>
+        </ul>
+        <ul class="skills">
+          <li><h4 class="skill-title">TOOLBOX</h4></li>
+          <li class="skill">Slack</li>
+          <li class="skill">Postman</li>
+          <li class="skill">Figma</li>
+          <li class="skill">Adobe Photoshop</li>
+          <li class="skill">CodePen</li>
+        </ul>
+        <ul class="skills">
+          <li><h4 class="skill-title">UPCOMING</h4></li>
+          <li class="skill">Node.js</li>
+          <li class="skill">Redux</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION - LINKS TO MY PROFILE -->
+
+    <section class="for-more-section">
+      <h2 class="section-header">FOR MORE</h2>
+      <div class="social-media-container">
+        <div class="link-text-container">
+          <a
+            href="https://www.linkedin.com/in/laimaduhovnaja"
+            class="social-media-icon-bottom"
+            aria-label="linkedin"
+            target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <p class="socialmedia-text">LINKEDIN</p>
         </div>
-        <div class="skills-toolbox">
-          <h4 class="skill-heading">Toolbox</h4>
-          <ul class="skills-list">
-            <li>Atom</li>
-            <li>Postman</li>
-            <li>Adobe photoshop</li>
-            <li>Slack</li>
-          </ul>
+        <div class="link-text-container">
+          <a
+            href="https://github.com/leelalaim"
+            class="social-media-icon-bottom"
+            aria-label="github"
+            target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+          <p class="socialmedia-text">GITHUB</p>
+        </div>
+        <div class="link-text-container">
+          <a
+            href="https://stackexchange.com/users/20420523/leelalaim"
+            class="social-media-icon-bottom"
+            aria-label="stack overflow"
+            target="_blank"
+            ><i class="fa fa-stack-overflow"></i
+          ></a>
+          <p class="socialmedia-text">STACK OVERFLOW</p>
         </div>
       </div>
     </section>
-
-    <!-- SIXT SECTION -->
-    <section class="portfolio-section" aria-label="Social media icons">
-      <h2 class="section-header">For more</h2>
-      <div class="social-media-icons-bottom">
-        <a
-          class="social-media-icon-bottom"
-          href="https://www.linkedin.com/in/laimaduhovnaja"
-          target="_blank"
-        >
-          <img
-            class="icon-bottom"
-            src="assets/linkedin-gold.png"
-            alt="linkedin-icon"
-          />
-          <h6 class="social-media-icon-bottom-name">Linkedin</h6>
-        </a>
-        <a
-          class="social-media-icon-bottom"
-          href="https://github.com/leelalaim"
-          target="_blank"
-        >
-          <img
-            class="icon-bottom"
-            src="assets/github-gold.png"
-            alt="github-icon"
-          />
-          <h6 class="social-media-icon-bottom-name">Github</h6>
-        </a>
-
-        <a
-          class="social-media-icon-bottom"
-          href="https://stackoverflow.com/users/14981598/leelalaim"
-          target="_blank"
-        >
-          <img
-            class="icon-bottom"
-            src="assets/stackoverflow-gold.png"
-            alt="stack-overflow-icon"
-          />
-          <h6 class="social-media-icon-bottom-name">Stack Overflow</h6>
-        </a>
-      </div>
-    </section>
-
     <footer class="footer" aria-label="Contacts of Laima Duhovnaja">
       <h4 class="contact">Contact</h4>
       <div class="contacts">
