@@ -15,9 +15,9 @@ body {
 
 .header-profile-pic {
     position: absolute;
-    width: 180px;
+    /*width: 180px; */
     height: 180px;
-    left: 45%; 
+    left: 30%; /* 45 */
     top: 67%; 
     border-radius: 50%;
     border: 2px solid white; 
@@ -27,9 +27,12 @@ body {
 /* Shape of icons is adjusted here */
 .icons{
     position: absolute;
-    left: 50%;
+    left: 30%; /*50 */
     top: 10%;
-    width: 100%;
+    width: 50%; /*100% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fab {
@@ -69,6 +72,7 @@ body {
     font-weight: bold;
     left: 10%;
     top: 30%;
+    width: 30%;
 }
 
 .header-profile-description p {
@@ -454,7 +458,6 @@ text-align: left;
     font-family: 'Montserrat', sans-serif;
 } 
 
-
 .skills {
     display: flex;
     justify-content: center;
@@ -565,11 +568,11 @@ text-align: left;
 /* Mobile wide-screen */
 @media (min-width:568px) { 
     .header-profile-pic {
-        left: 65%; 
+        left: 65%; /* 65 */
     }
     
     .icons{
-        left: 65%;
+        left: 65%; /* 65 */
     }
 }
 
@@ -581,6 +584,7 @@ text-align: left;
     
     .icons{
         left: 70%;
+        width: 20%;
     }
 }
 
@@ -711,6 +715,12 @@ text-align: left;
         width: 80px;
         height: 80px;
         font-size: 75px; 
+    }
+
+    .header-profile-pic {
+        left: 60%;
+        height: 200px;
+        width: 200px;
     }
 
     .header-profile-description p {
