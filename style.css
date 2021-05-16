@@ -178,6 +178,10 @@ body {
   width: 100%;
 }
 
+.butterfly-icon {
+  transform: rotate(15deg);
+}
+
 /*TECH SECTION*/
 
 .tech-section {
@@ -232,7 +236,7 @@ body {
 .project-image-card {
   position: relative;
   margin-top: 40px;
-  padding: 12px;
+  padding: 14px;
   background-color: var(--primary-background);
 }
 
@@ -306,6 +310,12 @@ body {
 
 /*Tech section typography*/
 
+.tech-p-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .tech-p {
   font-family: var(--secondary-font-family);
   font-style: normal;
@@ -314,12 +324,10 @@ body {
   line-height: 11px;
   letter-spacing: 0.01em;
   text-align: start;
-}
-
-.tech-p span {
   background: var(--secondary-span-color);
-  padding: 4px 8px;
+  padding: 6px 8px;
   margin-right: 7px;
+  margin-bottom: 7px;
 }
 
 /*OTHER PROJECTS*/
@@ -367,6 +375,10 @@ body {
   text-align: start;
   margin-bottom: 16px;
   color: var(--tertiary-font-color);
+}
+
+.other-projects-container .tech-p {
+  margin-bottom: 0;
 }
 
 /*MY THOUGHTS SECTION*/
@@ -436,14 +448,21 @@ body {
 
 .skills-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills {
   text-align: center;
   width: 50%;
+  min-width: 200px;
+  margin-right: 10px;
   margin-bottom: 20px;
+  padding: 16px;
+  background-color: var(--primary-background);
+  border: 2px double var(--secondary-font-color);
+  border-radius: 10px;
 }
 
 .skills-h4 {
@@ -468,6 +487,15 @@ body {
   font-size: 17px;
   line-height: 29px;
   color: var(--tertiary-font-color);
+}
+
+.resume-link {
+  color: var(--tertiary-font-color);
+  text-decoration: none;
+}
+
+.resume-link p:hover {
+  color: var(--secondary-font-color);
 }
 
 /*FOR MORE SECTION*/
@@ -666,6 +694,10 @@ footer {
     margin-bottom: 30px;
   }
 
+  .my-thoughts-section {
+    padding: 60px 240px;
+  }
+
   .my-thoughts-image {
     width: 45%;
   }
@@ -674,8 +706,15 @@ footer {
     padding: 60px 240px;
   }
 
-  .my-thoughts-section {
-    padding: 60px 240px;
+  .skills-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .skills {
+    width: 25%;
+    min-height: 270px;
+    min-width: 220px;
   }
 
   .skills span {
