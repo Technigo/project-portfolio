@@ -3,18 +3,20 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   margin: 0;
-  font-family: Roboto, Montserrat, sans-serif;
-  color: black;
+  font-family: "Roboto", "Montserrat", sans-serif;
+  text-align: center;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  height: 520px;
+  height: 32rem;
+  object-fit: cover;
   left: 0px;
   top: 0px;
   background-position: center;
@@ -23,10 +25,17 @@ body {
   background-image: url(small_header.jpg);
 }
 
+.intro {
+  padding: 30px;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
 .title-1 {
   font-size: 40px;
   font-weight: bold;
-  line-height: 110%;
+  line-height: 50px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -43,14 +52,14 @@ body {
 .title-2 {
   font-weight: bold;
   font-size: 20px;
-  line-height: 127%;
+  line-height: 50px;
 }
 
 .SoMe {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: 20%;
+  margin-right: 10%;
 }
 
 .some-link {
@@ -79,35 +88,21 @@ body {
   margin-right: 5%;
 }
 
-.intro-section {
-  padding: 15px;
+.skill-section {
+  background-color: #ebfafa;
+  padding: 40px 20px;
 }
 
-.intro {
-  display: flex;
-  text-align: justify;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 1.5;
-
-  color: #000000;
+.featured-project-section {
+  padding: 40px 30px 20px 30px;
 }
 
-.tech {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
+.other-projects-section {
+  padding: 40px 30px 20px 30px;
+}
+
+.tech-section {
   line-height: 1.5;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
   padding: 15px;
   background: #ebfafa;
 
@@ -120,14 +115,13 @@ body {
   align-self: center;
   text-align: center;
   display: inline-block;
+  margin: 5px;
 }
 
-.project-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
+.flex-item {
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .flex-item a:link {
@@ -144,9 +138,18 @@ a:visited {
   color: deeppink;
 }
 
-.all-projects {
-  display: flex;
-  flex-wrap: wrap;
+.flex-item-2 a:link {
+  color: black;
+}
+
+.flex-item-2 a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.flex-item-2 a:hover {
+  color: deeppink;
 }
 
 .project-img-container {
@@ -173,14 +176,12 @@ a:visited {
 }
 
 .project-description {
-  margin: 0px;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .tags {
-  width: 100%;
   display: flex;
-  margin-bottom: 20px;
-  margin-left: 40px;
 }
 
 .type {
@@ -192,28 +193,18 @@ a:visited {
   opacity: 0.5;
 }
 
-.flex-item {
+.flex-item-2 {
   text-align: left;
   padding-bottom: 20px;
   padding-top: 20px;
-  margin: 40px;
 }
 
-.other-projects {
+.thoughts-section {
+  padding: 40px 30px 20px 30px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  text-align: left;
-}
-
-.thoughts {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 15px;
-  background: #ebfafa;
 }
 
 .thoughts-link {
@@ -282,24 +273,6 @@ a:visited {
   align-items: center;
 }
 
-.for-more {
-  height: 250px;
-  padding: 15px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #ebfafa;
-}
-
-.collector {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 90px;
-}
 
 .center {
   padding: 10px;
@@ -325,13 +298,25 @@ a:visited {
   color: hotpink;
 }
 
-.footer {
+.for-more-section {
+  padding: 40px 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+.footer {
+  padding: 40px 20px;
   background: lightpink;
   height: 250px;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px;
+  line-height: 25px;
 }
 
 @media (min-width: 768px) {
@@ -343,12 +328,18 @@ a:visited {
     font-size: 22px;
   }
 
+  .intro {
+    padding: 40px 80px;
+    text-align: center;
+  }
+
   .flex-item {
     padding-bottom: 25px;
   }
 
-  .other-projects {
-    width: 100%;
+  .other-projects-section {
+    padding: 40px 80px;
+    text-align: center;
   }
 
   .profile-picture {
@@ -357,8 +348,20 @@ a:visited {
     margin-right: 5%;
   }
 
-  .collector {
-    margin-bottom: 80px;
+  .tech-section {
+    padding: 40px 80px;
+    text-align: center;
+  }
+
+  .featured-project-section {
+    padding: 40px 80px;
+    text-align: center;
+  }
+
+
+  .thoughts-section {
+    padding: 40px 80px;
+    text-align: center;
   }
 
   .icon {
@@ -368,27 +371,26 @@ a:visited {
 }
 
 @media (min-width: 1025px) {
-
   .header {
     height: 500px;
     background-image: url(large_header.jpg);
   }
 
   .some-link {
-    width: 45px;
+    width: 35px;
   }
 
   .SoMe {
-    margin-right: 5%;
+    margin-right: 8%;
   }
 
   .some-link:hover {
-    width: 50px;
+    width: 45px;
   }
 
   .profile-picture {
     margin-right: 12%;
-    margin-top: 260px;
+    margin-top: 270px;
   }
 
   .title {
@@ -407,41 +409,15 @@ a:visited {
     font-size: 36px;
   }
 
-  .intro {
-    display: flex;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    padding: 40px 150px;
-    color: #000000;
-  }
-
-  .tech {
-    display: flex;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    justify-content: center;
-    padding: 40px 150px;
-    letter-spacing: 0.01em;
-
-    color: #000000;
-  }
-
-  .all-projects {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  .project-container {
+    padding: 0 200px 0 200px;
   }
 
   .flex-item {
+    width: 45%;
     text-align: left;
-    padding: 20px;
-  }
-
-  .tags {
-    margin-left: 60px;
+    padding: 30px;
+    margin-left: 30px;
   }
 
   .project-img-container {
@@ -452,10 +428,32 @@ a:visited {
     font-size: 16px;
   }
 
-  
+  .flex-item-2 {
+    width: 28%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .intro {
+    padding-right: 20%;
+    text-align: center;
+  }
+
+  .tech-text {
+    padding: 30px;
+    display: flex;
+    align-self: center;
+  }
+
+  .all-projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
   .icon {
     width: 80px;
     height: 80px;
   }
+
 }
