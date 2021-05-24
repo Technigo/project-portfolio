@@ -1,25 +1,7 @@
-/*Placeholder table of contents
-1. global styles
-
-2. typography (h1, a, p) 
-can be added as multiple selectors om något är samma för flera klasser (kallas refactoring)
-tex 
-h1, 
-h2, 
-a {}
-
-3. components (tex butons)
-
-4. media
-
-*/
-
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: auto;
   padding: 0;
-  max-width: 80%;
 }
 
 .hover-shadow {
@@ -28,6 +10,7 @@ body {
 
 .hover-shadow:hover {
   box-shadow: 0 0 14px darkslateblue;
+  cursor: pointer;
 }
 
 /*******************HEADER*******************/
@@ -133,13 +116,6 @@ body {
 }
 
 /*******************PROJECTS***********/
-.projects,
-.other-projects,
-.my-thoughts,
-.more-thoughts
- {
-  /* text-align: left; */
-}
 
 .projects a {
   text-decoration: none;
@@ -254,6 +230,10 @@ body {
   text-decoration: none;
   color: inherit;
   font-size: 11px;
+}
+
+.for-more a:hover {
+  text-decoration: underline;
 }
 
 .bottom-icons-container-1 {
@@ -496,7 +476,7 @@ p span {
   /***********GRID, CONTAINERS************/
   
   body {
-    max-width: 2500px;
+    max-width: 2000px;
     margin: auto;
   }
 
@@ -514,11 +494,6 @@ p span {
   .articles-desktop {
     display: inline;
   }
-
-  /* .thought-cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 4em;
-  } */
 
   .thought-cards-desktop {
     display: inline;
