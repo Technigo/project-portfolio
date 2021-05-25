@@ -62,19 +62,22 @@ a{
 /**********STANDARD PROJECT SECTION FOR MY PROJECTS AND MY THOUGHTS****/
 .standard-projects-section{
     display: flex;
-     flex-grow: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;;
+    margin-top: 15px;
 }
 
 .standard-projects-container{
-    display: grid; 
-    grid-template-columns: 1fr; 
-    gap: 10px;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Roboto" sans-serif;
     margin: 15px;
+    padding: 10px;
+    text-align: center;
 }
 
 .other-projects-section-standard{
@@ -85,19 +88,26 @@ a{
 
 .other-projects-container-standard{
     display: flex;
-    align-items: flex-start;;
     flex-direction: column;
-    margin: 0px 20px 30px 20px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "Roboto" sans-serif;
+    margin: 15px;
+    padding: 10px;
+    /* margin: 0px 20px 30px 20px; */
 }
 
 /*******GENERAL PROJECT CARD ELEMENTS******/
 .project-card{
-    width: 350px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     margin-bottom: 40px 15px;
 }
 
 .project-card-title{
-    margin-top: 10px;
+    margin-top: 100px;
     margin-bottom: 2px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -107,18 +117,18 @@ a{
 }
 
 .project-card-paragraph{
-    margin-top:0;
     margin-bottom: 5px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 1%;
     line-height: 25px;
     font-size: 17px;
+    text-align: left;
 }
 
 .picture {
     width: 100%;
-    height: 212px;
+    height: 300px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
@@ -291,7 +301,7 @@ header{
     top: 0;
     text-align: center;
     width: 100%;
-    height: 212px;
+    height: 300px;
     transition: 0.5s ease;
     opacity: 1;
     font-family: 'Montserrat', sans-serif;
@@ -311,6 +321,7 @@ header{
     grid-template-columns: repeat(3, 1fr);
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
 }
 
 .tech-attributes div{
@@ -355,11 +366,14 @@ header{
     letter-spacing: 1%;
     line-height: 25px;
     font-size: 17px;
+    text-align: left;
 }
 /*********MORE THOUGHTS SECTION******/
 
 .more-thoughts-paragraph {
     text-decoration: underline;
+    /* padding: 0;
+    margin: 0; */
 }
 
 /********MY SKILLS SECTION*****/
@@ -448,14 +462,43 @@ footer p{
         .standard-section{
             height: 250px;
         }
-        .standard-projects-container{
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 30px;
-        }
 
+        .standard-projects-container{
+            /* grid-template-columns: repeat(2, 1fr); 
+            gap: 30px; */
+            width: 80%;
+            max-width: 1360px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .project-card{
+            /* display: flex;
+            flex-direction: column; */
+            width: 45%;
+            height: 500px;
+            margin-bottom: 40px;    
+            padding: 10px;
+        }
+        
+        .picture {
+            height: 250px;
+        }
+        .image-text-overlay{
+            height: 250px;
+        }
+        .project-card-title{
+            margin-top: 50px;
+        }
         .summary-container .tech-description{
             margin-left:50px;
             margin-right: 50px;
+        }
+
+        .standard-headline{
+            margin-top: 40px;
         }
 
         .another-project-card{
@@ -476,10 +519,44 @@ footer p{
         }
 
         .standard-projects-container{
-            grid-template-columns: repeat(2, 1fr);
-            gap: 50px;
+            /* grid-template-columns: repeat(2, 1fr); 
+            gap: 30px; */
+            width: 60%;
+            max-width: 1360px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
         }
-
+        .project-card{
+            /* display: flex;
+            flex-direction: column; */
+            width: 45%;
+            height: 520px;
+            margin-bottom: 40px 15px;
+        }
+        
+        .picture {
+            height: 300px;
+        }
+        .image-text-overlay{
+            height: 300px;
+        }
+        .project-card-title{
+            margin-top: 95px;
+            margin-bottom: 2px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1%;
+            line-height: 25px;
+            font-size: 20px;
+        }
+        
+        .project-card-paragraph{
+            margin-top: 10px;
+        }
+    
         .summary-container {
             margin-left: 200px;
             margin-right: 200px;
@@ -502,6 +579,10 @@ footer p{
             top: 66%;
             height: 200px;
             width: 200px;
+        }
+
+        .standard-headline{
+            margin-top: 70px;
         }
 
         .my-skills-section{
