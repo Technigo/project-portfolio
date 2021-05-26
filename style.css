@@ -186,8 +186,7 @@ header {
 .project-card-2 { 
   display: flex;   
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: center; 
   width: 40%;
   height: auto;
   margin-bottom: 24px;
@@ -218,16 +217,16 @@ header {
   display: flex;
   align-self: center;
   justify-content: center;
+  opacity: 0.5;
 }
 
-.project-img:hover {
+.project-img-container:hover {
   opacity: 1;
 }
 
 .project-img {  
   height: 210px;
   width: 330;   
-  opacity: 0.5;
 }
 
 .project-text,   
@@ -512,10 +511,11 @@ a:any-link {
 
 .article-with-img-container,
 .featured-projects,
-.about-me {
+.about-me { 
   width: 100vw;
-  flex-flow: row ;
-  justify-content: space-around;  
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: baseline;   
 }
 
 .article-with-img,
