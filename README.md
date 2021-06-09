@@ -6,3 +6,4 @@ We used the following technologies to create the portfolio page: 1) HTML 2) CSS
 
 # View it live
 https://fethullah-portfolio.netlify.app/
+Updated
