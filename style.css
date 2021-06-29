@@ -20,13 +20,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
-  width: 130px;
   margin-top: 102px;
-  margin-right: 550px;
-}
-
-.social-media-icons a {
-  margin-left: 15px;
+  margin-right: 100px;
+  width: 300px;
 }
 
 a {
@@ -34,6 +30,17 @@ a {
   margin: 0;
   color: #000;
 }
+
+.linkedin-icon, .github-icon, .sof-icon {
+  width: 80px;
+  height: 80px;
+  transition: width 0.5s, height 0.5s;
+} 
+
+.linkedin-icon:hover, .github-icon:hover, .sof-icon:hover {
+  width: 90px;
+  height: 90px;
+} 
 
 .hero-titles {
   display: flex;
@@ -84,7 +91,7 @@ h1.graphic-designer {
 .profile-image {
   position: absolute;
   top: 378px;
-  right: 410px;
+  right: 100px;
   bottom: 0;
   left: 0;
   display: flex;
@@ -187,6 +194,13 @@ h2 {
 
 .featured-card {
   margin-bottom: 50px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.featured-card:hover, .reflection-card:hover {
+  opacity: 0.7;
+  border: 1px solid #000;
 }
 
 .featured-card img {
@@ -262,6 +276,10 @@ h4 {
   width: 60%;
 }
 
+.other-projects-content a:hover, .more-thoughts-container a:hover {
+  text-decoration: underline;
+}
+
 h5 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -283,7 +301,6 @@ h5 {
   letter-spacing: 0.01em;
   color: #FA382F;
   margin: 0;
-  text-decoration-line: underline;
 }
 
 .other-projects p {
@@ -292,8 +309,8 @@ h5 {
   font-weight: 400;
   font-size: 25px;
   line-height: 33px;
-  text-decoration-line: underline;
   margin: 0;
+  position: relative;
 }
 
 .used-code-other-projects {
@@ -327,6 +344,11 @@ h5 {
   column-gap: 50px;
   width: 60%;
   margin-top: 80px;
+}
+
+.reflection-card {
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 .reflection-card p {
@@ -390,7 +412,6 @@ h6 {
   letter-spacing: 0.01em;
   color: #FA382F;
   margin: 0;
-  text-decoration-line: underline;
 }
 
 .more-thoughts-container p {
@@ -399,7 +420,6 @@ h6 {
   font-weight: 700;
   font-size: 25px;
   line-height: 33px;
-  text-decoration-line: underline;
   margin: 0;
   padding-top: 24px;
 }
@@ -467,7 +487,7 @@ li {
 .for-more-icons {
   display: flex;
   justify-content: space-between;
-  width: 700px;
+  width: 660px;
   margin-top: 80px;
   margin-bottom: 124px;
 }
@@ -476,10 +496,19 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 215px;
 }
 
 .icon-container img {
   margin-bottom: 25px;
+  width: 120px;
+  /* height: 120px; */
+  transition: width 1s, heigth 1s;
+}
+
+.icon-container img:hover {
+  width: 150px;
+  height: 150px;
 }
 
 .icon-container h6 {
@@ -496,7 +525,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #072BCE;
+  /* background: #072BCE; */
+  background: #FA382F;
   padding-bottom: 130px;
 }
 
@@ -526,15 +556,13 @@ li {
 
   .profile-image {
     top: 378px;
-    right: 100px;
     bottom: 0;
     left: 0;
   }
 
   .social-media-icons {
     margin-top: 70px;
-    margin-right: 290px;
-  }
+  } 
 
   .intro-section p {
     width: 80%;
@@ -569,14 +597,11 @@ li {
 
   .social-media-icons {
     margin-top: 70px;
-    margin-right: 250px;
+    margin-right: 70px;
   }
 
   .profile-image {
     top: 470px;
-    right: 100px;
-    bottom: 0;
-    left: 0;
   }
   
   .profile-image img {
@@ -594,10 +619,10 @@ li {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   .social-media-icons {
-    margin-right: 200px;
+    margin-right: 30px;
   }
 
   .profile-image {
@@ -654,6 +679,10 @@ li {
 
   .for-more-icons {
     width: 90%;
+  }
+  
+  .icon-container {
+    width: 100%;
   }
 }
 
