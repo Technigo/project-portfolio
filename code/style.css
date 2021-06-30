@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -51,6 +52,11 @@ a {
   color: #000000;
 }
 
+.fab:hover {
+  color: #ffcc00;
+  transition: 0.2s ease-in;
+}
+
 /*** HEADER ***/
 .header {
   background-image: linear-gradient(rgba(32, 14, 50, 0.8),rgba(61, 32, 90, 0.6)),url("./assets/desktop.jpeg");
@@ -70,14 +76,25 @@ a {
 }
 
 .header__icon {
-  width: 35px;
+ /* width: 200px;
   height: 35px;
   border: 2px solid #FFFFFF;
-  border-radius: 50%;
+  border-radius: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
+
+.header__icon .fab {
+  color:#F4F4F4;
+}
+
+.header__icon .fab:hover {
+  color: #ffcc00;
+  transition: 0.2s ease-in;
+}
+
 
 .header__content {
   position: absolute;
@@ -193,6 +210,7 @@ a {
 .project__content-wrapper {
   font-family: 'Roboto', sans-serif;
 }
+
 .project__title {
   color: #3C096C;
 }
@@ -222,7 +240,6 @@ a {
 .project__content {
   margin: 45px 0;
   font-family: 'Roboto', sans-serif;
-
 }
 
 .project__link {
@@ -237,6 +254,10 @@ a {
 
 
 /*** MORE TOUGHTS ***/
+.display-none {
+  display: none;
+}
+
 .tought-container {
   margin-top: 30px;
 }
@@ -301,8 +322,6 @@ a {
 }
 
 .icon__img {
-  border: 2px solid #3C096C;
-  border-radius: 50%;
   width: 60px;
   height: 60px;
   display: flex;
@@ -315,20 +334,42 @@ a {
 }
 
 /*** FOOTER ***/
+.direction-icon {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  top: -31px;
+  position: absolute;
+}
+
+.direction-icon .fas{
+  color: #3C096C;
+}
+
 .footer {
   background: #072BCE;
   color: #FFFFFF;
   justify-content: center;
   height: 302px;
+  position: relative;
 }
 
 .footer__content {
   margin-top: 20px;
 }
 
+.footer__content h3 {
+  font-size: 20px;
+}
+
 .footer__content p {
   text-align: center;
-  line-height: 25px;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.footer__content a {
+  color: #FFFFFF;
 }
 
 /*** MEDIA QUERIES ***/ 
@@ -353,8 +394,15 @@ a {
   }
 
   .header__icon {
-    width: 50px;
+    /* width: 50px;
     height: 50px;
+    border: 1px solid red;
+    margin-right: -10px; */
+  } 
+
+  .header__icon .fab {
+    color:#F4F4F4;
+    margin-right: -100px;
   }
 
   .header__content {
@@ -439,12 +487,6 @@ a {
     width: 40px;
   }
 
-  .header__icon:hover {
-    width: 75px;
-    height: 75px;
-    transition: width 0.2s, height 0.2s, transform 0.2s;
-  }
-
   .header__content {
     width: 430px;
     left: 170px;
@@ -493,15 +535,8 @@ a {
   }
 
   .icon__img {
-    border: 2px solid #3C096C;
     width: 90px;
     height: 90px;
-  }
-
-  .icon__img:hover {
-    transition: width 0.2s, height 0.2s, transform 0.2s;
-    width: 95px;
-    height: 95px;
   }
 
   .icon-more {

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./style.css" type="text/css" rel="stylesheet">
   <link rel ="icon" type="image/png" href="./assets/favicon.ico">
+  <script src="https://kit.fontawesome.com/4bfe1de3df.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,29 +28,32 @@
 <body>
 
       <!-- HEADER -->
-  <header class="header">   
-    <div  class="header__icons-wrapper">
+  <header name="top" class="header">   
+    <div class="header__icons-wrapper">
       <div class="header__icon">
         <a href="https://www.linkedin.com/in/maria-pogosjan-0201b199/" target="_blank" title="Link to Maria Pogosjans Linkedin">
-          <img class="icon" src="assets/linkedin-smal.svg" alt="icon of linkedin" />
-        </a>
+          <i class="fab fa-linkedin fa-2x"></i>
+<!--           <img class="icon" src="assets/linkedin-smal.svg" alt="icon of linkedin" />
+ -->        </a>
       </div>
       <div class="header__icon">
         <a href="https://github.com/MariaPogosjan" target="_blank" title="Link to Maria Pogosjans GitHub">
-          <img class="icon" src="assets/github-smal.svg" alt="icon of github" />
-        </a> 
+          <i class="fab fa-github-square fa-2x"></i>
+<!--           <img class="icon" src="assets/github-smal.svg" alt="icon of github" />
+ -->        </a> 
       </div>
       <div class="header__icon">
         <a href="https://stackoverflow.com/users/14966501/maria-pogosjan?tab=profile" target="_blank" title="Link to Maria Pogosjans Stack Overflow">
-          <img class="icon" src="assets/stack-smal.svg" alt="icon of stackoverflow" />
-        </a> 
+          <i class="fab fa-stack-overflow fa-2x"></i>
+<!--           <img class="icon" src="assets/stack-smal.svg" alt="icon of stackoverflow" />
+ -->        </a> 
       </div>
     </div>
   
     <div class="header__content">
       <span tabindex="0">PORTFOLIO:</span>
       <span class="header__name" tabindex="0"> MARIA POGOSJAN</span>
-      <h1 class="header__title">frontend developer</h1>
+      <h1 class="header__title">front-end developer</h1>
       <h2 class="header__title-two"> + customer success manager</h2>
     </div>
     
@@ -66,7 +70,7 @@
           <p>
             <span class="summary-line"></span>
             <span class="summary-circle"></span>
-            Hello! I'm Maria and I am a fronted developer. I love to come up with crazy ambitious ideas and make them come to life. I came up with the idea to deliver healthy “fika” boxes to companies and it ended with me rolling more than 10.000 raw balls.
+            Hello! I'm Maria and I am a front-end developer. I love to come up with crazy ambitious ideas and make them come to life. I wanted to work with development and went from thinking about it to actually do something about it. Six months later I learned to code professionally.
             A perfect day at work is when I get to code and be surrounded by smart and friendly coworkers. 
           </p> 
       </div>
@@ -208,7 +212,7 @@
     </section>
 
       <!-- MY THOUGHTS --> 
-    <section class="content-container" aria-label="Marias toughts about a life as a developer">
+    <section class="content-container display-none" aria-label="Marias toughts about a life as a developer">
       <h3 class="header-box">MY TOUGHTS</h3> 
       <div class="project__wrapper">
         <div class="project__grid">
@@ -275,7 +279,7 @@
     </section>
 
       <!-- SKILLS -->
-    <section class="content-container main-background"  aria-label="Marias code skills">
+    <section class="content-container"  aria-label="Marias code skills">
       <h3 class="header-box">SKILLS</h3>
         <div class="skills">
           <div>
@@ -369,37 +373,45 @@
     </section>
 
       <!-- FOR MORE -->
-    <section class="content-container"  aria-label="Contact Maria">
+    <section class="content-container main-background"  aria-label="Contact Maria">
       <h3 class="header-box">FOR MORE</h3>
       <div class="icons__wrapper">
         <a href="https://www.linkedin.com/in/maria-pogosjan-0201b199/" title="Maria Pogosjans Linkedin profile">
           <div class="icon__img">
-            <img class="icon-more" src="./assets/linkedin-big.svg" alt="Link to linkedin page" />
-          </div>
+            <i class="fab fa-linkedin fa-5x"></i>
+
+<!--             <img class="icon-more" src="./assets/linkedin-big.svg" alt="Link to linkedin page" />
+ -->          </div>
           <p>LINKEDIN</p>
         </a>
         <a href="https://github.com/MariaPogosjan" title="Maria Pogosjans Github profile">
           <div class="icon__img">
-            <img class="icon-more" src="./assets/github-big.svg" alt="Link to github page" />
-          </div>
+            <i class="fab fa-github-square fa-5x"></i>
+<!--             <img class="icon-more" src="./assets/github-big.svg" alt="Link to github page" />
+ -->          </div>
           <p>GITHUB</p>
         </a>
         <a href="https://stackoverflow.com/users/14966501/maria-pogosjan?tab=profile" title="Maria Pogosjans Stack overflow profile">
           <div class="icon__img">
-            <img class="icon-more" src="./assets/stack-big.svg" alt="Link to stack overflow page"/>
-          </div>
+            <i class="fab fa-stack-overflow fa-5x"></i>
+<!--             <img class="icon-more" src="./assets/stack-big.svg" alt="Link to stack overflow page"/>
+ -->          </div>
           <p>STACK OVERFLOW</p>
         </a>
       </div>
     </section>
   
         <!-- FOOTER -->
+  
     <footer class="content-container footer" aria-label="Contact information to Maria Pogosjan">
+      <section class="direction-icon">
+        <a href="#top"><i class="fas fa-angle-up fa-2x"></i></a>   
+      </section>   
       <h3>CONTACT</h3>
       <div class="footer__content">  
         <p>Maria Pogosjan</p>
-        <p>+46 73 69 14 411</p>
-        <p>maria.pogosjan@gmail.com</p>
+        <p><a href="tel:+460736914411">+46 73 69 14 411</a></p>
+        <p><a href="mailto:maria.pogosjan@gmail.com">maria.pogosjan@gmail.com</a></p>
       </div>
     </footer> 
   </main>
