@@ -2,7 +2,7 @@
 
 This is my portfolio I built using HTML and CSS. I also added a bit of ARIA attributes to make the website more accessible. 😸✨
 
-My portfolio contains projects I built in the Technigo boot camp using HTML, CSS, JavaScript, React, Redux, Styled components and APIs. Since the boot camp isn't over yet, I will continuously add projects where I showcase my latest learned technologies. 
+My portfolio contains mainly projects I built during the Technigo boot camp using HTML, CSS, JavaScript, React, Redux, Node.js, Express.js, MongoDB, mongoose, Styled components and APIs. I will continuously add projects where I showcase my latest learned technologies.
 
 My short term goal for my portfolio website is to build it using React and GitHub's API to fetch my project's repositories. 
 
