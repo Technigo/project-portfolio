@@ -22,7 +22,7 @@ body{
 .header-link{
   text-decoration: none;
 }
-.fab {
+.fab, .fas {
     font-size: 20px;
     border: 2px solid white;
     padding: 5px;
@@ -36,6 +36,9 @@ body{
 }
 
 .fab:hover{
+  opacity: 0.6;
+}
+.fas:hover{
   opacity: 0.6;
 }
 
@@ -199,7 +202,7 @@ body{
   opacity: 0.7;
   object-fit: cover;
 }
-.project-subtitle, .project-description, .project-tag{
+.project-subtitle, .project-description{
   font-family: Roboto;
   font-size: 16px;
   letter-spacing: 1px;
@@ -214,19 +217,18 @@ body{
   color: black;
 }
 .project-tag{
-  margin-top: 10px;
-  display: inline;
+  font-family: Roboto;
   font-size: 12px;
-  margin-right: 5px;
   background-color: #FDDFE7;
   padding: 3px;
+  margin: 3px 3px 0px 0px;
   font-weight: 300;
+  list-style: none;
 }
 
 /* Other projects section */
 .other-projects {
   flex-wrap: wrap;
-  /* background-color: #F4F4F4; */
   margin-top: 0;
   border: none;
 }
@@ -255,6 +257,8 @@ body{
   width: 100%;
   margin-top: 10px;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Thoughts section */
@@ -398,6 +402,15 @@ body{
   padding: 20px;
 
 }
+.icon-link .fas{
+  color: #FA382F;
+  margin-top: 30px;
+  border: 2px solid  #FA382F;
+  font-size: 30px;
+  width: 30px;
+  padding: 20px;
+
+}
 .icon-title {
   font-size: 10px;
   font-weight: 700;
@@ -452,6 +465,10 @@ body{
   width: 90px;
   }
   .icon-link .fab {
+    width: 40px;
+    font-size: 40px;
+  } 
+  .icon-link .fas {
     width: 40px;
     font-size: 40px;
   } 
@@ -528,7 +545,7 @@ body{
   .sub-title{
     font-size: 30px;
   }
-  .fab {
+  .fab, .fas {
     font-size: 30px;
     padding: 7px;
     width: 30px;
@@ -590,7 +607,7 @@ body{
     background-image: url('./assets/books_desktop.jpg');
     height: 600px;
   }
-  .fab {
+  .fab, .fas {
     font-size: 40px;
     padding: 7px;
     width: 40px;
@@ -639,6 +656,13 @@ body{
     padding: 20px;
     border: 4px solid #FA382F
   }
+  .icon-link .fas{
+    font-size: 80px;
+    width: 80px;
+    padding: 20px;
+    border: 4px solid #FA382F
+  }
+
   .icon-link {
     width: 200px;
   }
@@ -689,7 +713,7 @@ body{
     top: 200px;
     left: 426px;
   }
-  .fab {
+  .fab, .fas {
     font-size: 40px;
     padding: 7px;
     width: 40px;
@@ -697,6 +721,11 @@ body{
     border: 3px solid white;
   }
   .icon-link .fab{
+    font-size: 100px;
+    width: 100px;
+    padding: 40px;
+  }
+  .icon-link .fas{
     font-size: 100px;
     width: 100px;
     padding: 40px;
