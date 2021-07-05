@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <meta property="og:title" content="Maria Pogosjan's Portfolio" />
   <meta 
     property="og:description" 
@@ -33,20 +33,17 @@
       <div class="header__icon">
         <a href="https://www.linkedin.com/in/maria-pogosjan-0201b199/" target="_blank" title="Link to Maria Pogosjans Linkedin">
           <i class="fab fa-linkedin fa-2x"></i>
-<!--           <img class="icon" src="assets/linkedin-smal.svg" alt="icon of linkedin" />
- -->        </a>
+        </a>
       </div>
       <div class="header__icon">
         <a href="https://github.com/MariaPogosjan" target="_blank" title="Link to Maria Pogosjans GitHub">
           <i class="fab fa-github-square fa-2x"></i>
-<!--           <img class="icon" src="assets/github-smal.svg" alt="icon of github" />
- -->        </a> 
+        </a> 
       </div>
       <div class="header__icon">
         <a href="https://stackoverflow.com/users/14966501/maria-pogosjan?tab=profile" target="_blank" title="Link to Maria Pogosjans Stack Overflow">
           <i class="fab fa-stack-overflow fa-2x"></i>
-<!--           <img class="icon" src="assets/stack-smal.svg" alt="icon of stackoverflow" />
- -->        </a> 
+        </a> 
       </div>
     </div>
   
@@ -70,7 +67,7 @@
           <p>
             <span class="summary-line"></span>
             <span class="summary-circle"></span>
-            Hello! I'm Maria and I am a front-end developer. I love to come up with crazy ambitious ideas and make them come to life. I wanted to work with development and went from thinking about it to actually do something about it. Six months later I learned to code professionally.
+            Hello! I'm Maria and I am a front-end developer. I love to come up with crazy ambitious ideas and make them come to life. I wanted to work with development and went from thinking about it to actually do something about it. Today it is my biggest passion in life.
             A perfect day at work is when I get to code and be surrounded by smart and friendly coworkers. 
           </p> 
       </div>
@@ -82,7 +79,7 @@
       <h3 class="header-box">TECH</h3>
       <div class="main__wrapper">
         <p class="tech-content">
-          HTML5, CSS3, Flexbox, Bootstrap, <span class="red">JavaScript</span>, ES6, 
+          HTML, CSS, Flexbox, Bootstrap, <span class="red">JavaScript</span>, ES6, 
           JSX, <span class="red">React, React Hooks, Redux</span>, Node.js, 
           Express, MongoDB, Web Accessability, API:s, mob-programming, pair-programming, Git, Github.
         </p>
@@ -90,93 +87,294 @@
     </section>
   
       <!-- FEATURED PROJECT SECTION -->
-    <section class="content-container main-background" aria-label="Information about Marias code projects">
+    <section class="content-container main-background list" aria-label="Information about Marias code projects">
       <h3 class="header-box">FEATURED PROJECTS</h3> 
-      <div class="project__wrapper">
+      <class class="project__wrapper">
         <div class="project__grid">
-            <!-- Project 1 -->
-        <a href="https://github.com/MariaPogosjan/Website" target="_blank" title="Maria Pogosjans Github">        
-        <article class="project__card">
-          <div class="project__img-wrapper">
-            <img class="project__img" src="./assets/companypage.jpg" alt="Image from the construction company website, on a house they built"/>
-            <div class="project__img-overlay">
-              <h4 class="project__img-title">COMPANY WEBSITE</h4>
+          <!-- Project Moody -->
+          <a href="https://github.com/MariaPogosjan/moody-fe" target="_blank" title="Maria Pogosjans Github">        
+            <article class="project__card list-element">
+              <div class="project__img-wrapper">
+                <img class="project__img" src="./assets/moody.png" alt="Moody, track your feelings"/>
+                <div class="project__img-overlay">
+                  <h4 class="project__img-title">Moody</h4>
+                </div>
+              </div>
+              <div class="project__content-wrapper">
+                <h4 class="project__title">Track your feelings</h4>
+                <p>Fullstack project. App where users can track their feelings over time and share it with friends.</p>
+              </div>
+              <div class="project__tag-wrapper">
+                <p class="project__tag-box">React</p>
+                <p class="project__tag-box">Redux</p>
+                <p class="project__tag-box">Styled components</p>
+                <p class="project__tag-box">Node.js</p>
+                <p class="project__tag-box">Express</p>
+                <p class="project__tag-box">Mongoose</p>
+                <p class="project__tag-box">MongoDB</p>
+              </div> 
+            </article>
+          </a>
+          <!-- Project TODO APP -->
+          <a href="https://github.com/MariaPogosjan/project-todos" target="_blank" title="Maria Pogosjans Github">        
+            <article class="project__card list-element">
+              <div class="project__img-wrapper">
+                <img class="project__img" src="./assets/project-to-do.png" alt="Todo planner app"/>
+                <div class="project__img-overlay">
+                  <h4 class="project__img-title">TODO APP</h4>
+                </div>
+              </div>
+              <div class="project__content-wrapper">
+                <h4 class="project__title">Todo planner App</h4>
+                <p>App to add tasks, list tasks and toggle whether a task is done or not, built with React and Redux.</p>
+              </div>
+              <div class="project__tag-wrapper">
+                <p class="project__tag-box">React</p>
+                <p class="project__tag-box">Redux</p>
+                <p class="project__tag-box">JavaScript</p>
+                <p class="project__tag-box">CSS</p>
+              </div> 
+            </article>
+          </a>
+          <!-- Project Happy Thoughts -->
+          <a href="https://github.com/MariaPogosjan/project-happy-thoughts" target="_blank" title="Maria Pogosjans Github">        
+            <article class="project__card list-element">
+              <div class="project__img-wrapper">
+                <img class="project__img" src="./assets/project-happy-thought.png" alt="Own version of Twitter"/>
+                <div class="project__img-overlay">
+                  <h4 class="project__img-title">Happy Thoughts</h4>
+                </div>
+              </div>
+              <div class="project__content-wrapper">
+                <h4 class="project__title">Own version of Twitter</h4>
+                <p>Fullstack project imitating Twitter built with React, Express and MongoDB.</p>
+              </div>
+              <div class="project__tag-wrapper">
+                <p class="project__tag-box">React</p>
+                <p class="project__tag-box">Node.js</p>
+                <p class="project__tag-box">Express</p>
+                <p class="project__tag-box">Mongoose</p>
+                <p class="project__tag-box">MongoDB</p>
+              </div> 
+            </article>
+          </a>
+          <!-- Project Registration Form -->
+          <a href="https://github.com/MariaPogosjan/project-auth" target="_blank" title="Maria Pogosjans Github">        
+            <article class="project__card list-element">
+              <div class="project__img-wrapper">
+                <img class="project__img" src="./assets/project-authentication.png" alt="Registration Form"/>
+                <div class="project__img-overlay">
+                  <h4 class="project__img-title">Registration Form</h4>
+                </div>
+              </div>
+              <div class="project__content-wrapper">
+                <h4 class="project__title">API with authentication</h4>
+                <p>Fullstack project. API with authentication to implement a registration flow, and a frontend with forms to sign up, sign in.</p>
+              </div>
+              <div class="project__tag-wrapper">
+                <p class="project__tag-box">React</p>
+                <p class="project__tag-box">Node.js</p>
+                <p class="project__tag-box">Express</p>
+                <p class="project__tag-box">Mongoose</p>
+                <p class="project__tag-box">MongoDB</p>
+              </div> 
+            </article>
+          </a>
+
+          <!-- Project Labyrinth -->
+          <a href="https://github.com/MariaPogosjan/project-labyrinth" target="_blank" title="Maria Pogosjans Github">        
+            <article class="project__card list-element">
+              <div class="project__img-wrapper">
+                <img class="project__img" src="./assets/project-labyrinth.png" alt="Labyrinth game"/>
+                <div class="project__img-overlay">
+                  <h4 class="project__img-title">Labyrinth game</h4>
+                </div>
+              </div>
+              <div class="project__content-wrapper">
+                <h4 class="project__title">Text-based adventure game</h4>
+                <p>The project uses Redux to store data, fetches data from an API and POST request to an API.</p>
+              </div>
+              <div class="project__tag-wrapper">
+                <p class="project__tag-box">React</p>
+                <p class="project__tag-box">Redux</p>
+                <p class="project__tag-box">Thunks</p>
+                <p class="project__tag-box">API</p>
+              </div> 
+            </article>
+          </a>
+
+          <!-- Project Movies -->
+          <a href="https://github.com/MariaPogosjan/project-music-releases" target="_blank" title="Maria Pogosjans Github">        
+            <article class="project__card list-element">
+              <div class="project__img-wrapper">
+                <img class="project__img" src="./assets/project-movie.png" alt="Album covers to spotify list"/>
+                <div class="project__img-overlay">
+                  <h4 class="project__img-title">Movie Releases</h4>
+                </div>
+              </div>
+              <div class="project__content-wrapper">
+                <h4 class="project__title">Multi-page movies realse website</h4>
+                <p>Multi-page website built with React Router using the themoviedb.org's API.</p>
+              </div>
+              <div class="project__tag-wrapper">
+                <p class="project__tag-box">React</p>
+                <p class="project__tag-box">React Router</p>
+                <p class="project__tag-box">API</p>
+                <p class="project__tag-box">useState()</p>
+                <p class="project__tag-box">useEffect()</p>
+              </div> 
+            </article>
+          </a>
+  
+          <!-- Project Music Releases -->
+          <a href="https://github.com/MariaPogosjan/project-music-releases" target="_blank" title="Maria Pogosjans Github">        
+          <article class="project__card list-element">
+            <div class="project__img-wrapper">
+              <img class="project__img" src="./assets/project-music-releases.png" alt="Album covers to spotify list"/>
+              <div class="project__img-overlay">
+                <h4 class="project__img-title">Music Releases App</h4>
+              </div>
             </div>
-          </div>
-          <div class="project__content-wrapper">
-            <h4 class="project__title">WEBSITE FOR A CONSTRUCTION COMPANY.</h4>
-            <p>Company website using HTML, CSS and JavaScript ES6 for a construction company.</p>
-          </div>
-          <div class="project__tag-wrapper">
-            <p class="project__tag-box">HTML5</p>
-            <p class="project__tag-box">CSS3</p>
-            <p class="project__tag-box">JavaScript ES6</p>
-          </div> 
-        </article>
-        </a>
-            <!-- Project 2 -->
-        <a href="https://github.com/MariaPogosjan/project-chatbot" target="_blank" title="Maria Pogosjans Github">
-        <article class="project__card"> 
-          <div class="project__img-wrapper">
-            <img class="project__img" src="./assets/chatbot.jpeg" alt="Image of a bot"/>
-            <div class="project__img-overlay">
-              <h4 class="project__img-title">CORONA BOT</h4>
+            <div class="project__content-wrapper">
+              <h4 class="project__title">New album and single releases app.</h4>
+              <p>This app is built with React and API response from Spotify which contains data for 50 recent releases. </p>
             </div>
-          </div>
-          <div class="project__content-wrapper">
-            <h4 class="project__title">CHAT BOT BUILT IN JAVASCRIPT.</h4>
-            <p>Chat bot built with JavaScript, HTML and CSS to order a coronatest</p>
-          </div>
-          <div class="project__tag-wrapper">
-            <p class="project__tag-box">HTML5</p>
-            <p class="project__tag-box">CSS3</p>
-            <p class="project__tag-box">JavaScript ES6</p>
-          </div> 
-        </article>
-        </a>
-            <!-- Project 3 -->
-        <a href="https://github.com/MariaPogosjan/project-weather-app" target="_blank" title="Maria Pogosjans Github">
-        <article class="project__card project__hidden"> 
-          <div class="project__img-wrapper">
-            <img class="project__img" src="./assets/weatherapp.jpeg" alt="Image of weather app"/>
-            <div class="project__img-overlay">
-              <h4 class="project__img-title">WEATHERORORACLE</h4>
-            </div>
-          </div>
-          <div class="project__content-wrapper">
-            <h4 class="project__title">WEATHER APP.</h4>
-            <p>Webb app built in JavaScript using Open Weather API.</p>
-          </div>
-          <div class="project__tag-wrapper">
-            <p class="project__tag-box">HTML5</p>
-            <p class="project__tag-box">CSS3</p>
-            <p class="project__tag-box">JavaScript ES6</p>
-          </div> 
-        </article>
-        </a>
-            <!-- Project 4 -->
-        <a href="https://github.com/MariaPogosjan/project-guess-who" target="_blank" title="Maria Pogosjans Github">
-        <article class="project__card project__hidden"> 
-          <div class="project__img-wrapper">
-            <img class="project__img" src="./assets/game.jpeg" alt="Image of weather app"/>
-            <div class="project__img-overlay">
-              <h4 class="project__img-title">GUESS WHO GAME</h4>
-            </div>
-          </div>
-          <div class="project__content-wrapper">
-            <h4 class="project__title">GUESS WHO GAME BUILT IN JAVASCRIPT.</h4>
-            <p>Online Guess Who game using HTML, CSS and JavaScript.</p>
-          </div>
-          <div class="project__tag-wrapper">
-            <p class="project__tag-box">HTML5</p>
-            <p class="project__tag-box">CSS3</p>
-            <p class="project__tag-box">JavaScript ES6</p>
-          </div> 
-        </article>
-        </a>
+            <div class="project__tag-wrapper">
+              <p class="project__tag-box">React</p>
+              <p class="project__tag-box">JSX</p>
+              <p class="project__tag-box">JSON response</p>
+              <p class="project__tag-box">CSS</p>
+            </div> 
+          </article>
+          </a>
+
+          <!-- Project Survey -->
+          <a href="https://github.com/MariaPogosjan/project-survey" target="_blank" title="Maria Pogosjans Github">        
+            <article class="project__card list-element">
+              <div class="project__img-wrapper">
+                <img class="project__img" src="./assets/project-survey.png" alt="First page of a survey about book habits"/>
+                <div class="project__img-overlay">
+                  <h4 class="project__img-title">Book Survey</h4>
+                </div>
+              </div>
+              <div class="project__content-wrapper">
+                <h4 class="project__title">A survey about book reading habits</h4>
+                <p>Controlled form built with React using useState hooks.</p>
+              </div>
+              <div class="project__tag-wrapper">
+                <p class="project__tag-box">React</p>
+                <p class="project__tag-box">JSX</p>
+                <p class="project__tag-box">React components</p>
+                <p class="project__tag-box">CSS</p>
+              </div> 
+            </article>
+          </a>
+
+          <!-- Project Company website -->
+          <a href="https://github.com/MariaPogosjan/Website" target="_blank" title="Maria Pogosjans Github">        
+            <article class="project__card list-element">
+              <div class="project__img-wrapper">
+                <img class="project__img" src="./assets/companypage.jpg" alt="Image from the construction company website, on a house they built"/>
+                <div class="project__img-overlay">
+                  <h4 class="project__img-title">COMPANY WEBSITE</h4>
+                </div>
+              </div>
+              <div class="project__content-wrapper">
+                <h4 class="project__title">WEBSITE FOR A CONSTRUCTION COMPANY.</h4>
+                <p>Company website using HTML, CSS and JavaScript ES6 for a construction company.</p>
+              </div>
+              <div class="project__tag-wrapper">
+                <p class="project__tag-box">HTML5</p>
+                <p class="project__tag-box">CSS</p>
+                <p class="project__tag-box">JavaScript ES6</p>
+              </div> 
+            </article>
+          </a>
+
+          <!-- Project Corona bot -->
+          <a href="https://github.com/MariaPogosjan/project-chatbot" target="_blank" title="Maria Pogosjans Github">
+            <article class="project__card list-element"> 
+              <div class="project__img-wrapper">
+                <img class="project__img" src="./assets/chatbot.jpeg" alt="Image of a bot"/>
+                <div class="project__img-overlay">
+                  <h4 class="project__img-title">CORONA BOT</h4>
+                </div>
+              </div>
+              <div class="project__content-wrapper">
+                <h4 class="project__title">CHAT BOT BUILT IN JAVASCRIPT.</h4>
+                <p>Chat bot built with JavaScript, HTML and CSS to order a coronatest</p>
+              </div>
+              <div class="project__tag-wrapper">
+                <p class="project__tag-box">HTML5</p>
+                <p class="project__tag-box">CSS3</p>
+                <p class="project__tag-box">JavaScript ES6</p>
+              </div> 
+            </article>
+          </a>
+          <!-- Project Weather app -->
+          <a href="https://github.com/MariaPogosjan/project-weather-app" target="_blank" title="Maria Pogosjans Github">
+            <article class="project__card  list-element"> 
+              <div class="project__img-wrapper">
+                <img class="project__img" src="./assets/weatherapp.jpeg" alt="Image of weather app"/>
+                <div class="project__img-overlay">
+                  <h4 class="project__img-title">WEATHERORORACLE</h4>
+                </div>
+              </div>
+              <div class="project__content-wrapper">
+                <h4 class="project__title">WEATHER APP.</h4>
+                <p>Webb app built in JavaScript using Open Weather API.</p>
+              </div>
+              <div class="project__tag-wrapper">
+                <p class="project__tag-box">HTML5</p>
+                <p class="project__tag-box">CSS3</p>
+                <p class="project__tag-box">JavaScript ES6</p>
+              </div> 
+            </article>
+          </a>
+          <!-- Project Guess who -->
+          <a href="https://github.com/MariaPogosjan/project-guess-who" target="_blank" title="Maria Pogosjans Github">
+            <article class="project__card list-element"> 
+              <div class="project__img-wrapper">
+                <img class="project__img" src="./assets/game.jpeg" alt="Image of weather app"/>
+                <div class="project__img-overlay">
+                  <h4 class="project__img-title">GUESS WHO GAME</h4>
+                </div>
+              </div>
+              <div class="project__content-wrapper">
+                <h4 class="project__title">GUESS WHO GAME BUILT IN JAVASCRIPT.</h4>
+                <p>Online Guess Who game using HTML, CSS and JavaScript.</p>
+              </div>
+              <div class="project__tag-wrapper">
+                <p class="project__tag-box">HTML5</p>
+                <p class="project__tag-box">CSS3</p>
+                <p class="project__tag-box">JavaScript ES6</p>
+              </div> 
+            </article>
+          </a>
         </div>
+        <div class="project__loadmore">
+          <button id="loadmore" class="project__loadmore-btn">Load More</button>
+        </div>
+      <div>
+ 
+
             <!-- OTHER PROJECT SECTION -->
         <h3 class="text-box-transparent">OTHER PROJECTS</h3>
+        <a href="https://github.com/MariaPogosjan/project-react-native-app" target="_blank" title="Maria Pogosjans Github">
+          <article class="project__content">
+            <div>
+              <h4 class="project__title project__link"> MOVIE RELEASES APP 
+                <span class="project__link-two">My first mobile application with React Native and styled components</span> 
+                <span class="project__link" aria-hidden="true">>></span>
+              </h4>
+            </div>
+            <div class="project__tag-wrapper">
+              <p class="project__tag-box">React Native</p>
+              <p class="project__tag-box">Styled Components</p>
+              <p class="project__tag-box">API</p>
+            </div> 
+          </article>
+        </a>
         <a href="https://github.com/MariaPogosjan/project-business-site" target="_blank" title="Maria Pogosjans Github">
           <article class="project__content">
             <div>
@@ -379,23 +577,19 @@
         <a href="https://www.linkedin.com/in/maria-pogosjan-0201b199/" title="Maria Pogosjans Linkedin profile">
           <div class="icon__img">
             <i class="fab fa-linkedin fa-5x"></i>
-
-<!--             <img class="icon-more" src="./assets/linkedin-big.svg" alt="Link to linkedin page" />
- -->          </div>
+          </div>
           <p>LINKEDIN</p>
         </a>
         <a href="https://github.com/MariaPogosjan" title="Maria Pogosjans Github profile">
           <div class="icon__img">
             <i class="fab fa-github-square fa-5x"></i>
-<!--             <img class="icon-more" src="./assets/github-big.svg" alt="Link to github page" />
- -->          </div>
+          </div>
           <p>GITHUB</p>
         </a>
         <a href="https://stackoverflow.com/users/14966501/maria-pogosjan?tab=profile" title="Maria Pogosjans Stack overflow profile">
           <div class="icon__img">
             <i class="fab fa-stack-overflow fa-5x"></i>
-<!--             <img class="icon-more" src="./assets/stack-big.svg" alt="Link to stack overflow page"/>
- -->          </div>
+           </div>
           <p>STACK OVERFLOW</p>
         </a>
       </div>
@@ -405,7 +599,7 @@
   
     <footer class="content-container footer" aria-label="Contact information to Maria Pogosjan">
       <section class="direction-icon">
-        <a href="#top"><i class="fas fa-angle-up fa-2x"></i></a>   
+        <a href="#top"><i class="fas fa-angle-double-up fa-2x"></i></a>   
       </section>   
       <h3>CONTACT</h3>
       <div class="footer__content">  
@@ -415,5 +609,21 @@
       </div>
     </footer> 
   </main>
+
+  <script>
+       $(function(){
+        $(".list-element").slice(0, 4).show();
+        $("#loadmore").click(function(e){ 
+            e.preventDefault();
+          $(".list-element:hidden").slice(0, 4).fadeIn(); 
+        
+        if($(".list-element:hidden").length === 0){ 
+          $("#loadmore").hide()
+        }
+    });
+});
+
+
+    </script>
 </body>
 </html>
