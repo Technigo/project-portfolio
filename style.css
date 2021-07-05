@@ -193,6 +193,14 @@ body {
     position: relative;
 }
 
+.project-card-big {
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
 .project-link, .thoughts-link {
     text-decoration: none;
     color: #000;
@@ -225,6 +233,13 @@ body {
     opacity: 0.8;
 }
 
+.project-image-big {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
 .image-text {
     position: absolute;
     margin: 0;
@@ -241,6 +256,10 @@ body {
 }
 
 .image-container:hover .project-image {
+    opacity: 0;
+}
+
+.image-container:hover .project-image-big {
     opacity: 0;
 }
 
@@ -586,6 +605,11 @@ a[href^="mailto:"]:focus, a[href^="tel:"]:focus {
         height: 250px;
     }
 
+    .project-image-big {
+        height: 370px;
+        object-fit: contain;
+    }
+
     .project-title, .project-paragraph, .thought-paragraph {
         font-size: 25px;
         line-height: 40px;
@@ -689,6 +713,10 @@ a[href^="mailto:"]:focus, a[href^="tel:"]:focus {
 
     .project-image {
         height: 320px;
+    }
+
+    .project-image-big {
+        height: 500px;
     }
 
     .title-info, .other-projects-info {
