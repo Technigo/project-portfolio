@@ -34,12 +34,11 @@ a {
 .linkedin-icon, .github-icon, .sof-icon {
   width: 80px;
   height: 80px;
-  transition: width 0.5s, height 0.5s;
+  transition: opacity 0.5s;
 } 
 
 .linkedin-icon:hover, .github-icon:hover, .sof-icon:hover {
-  width: 90px;
-  height: 90px;
+  opacity: 0.3;
 } 
 
 .hero-titles {
@@ -103,6 +102,13 @@ h1.graphic-designer {
   width: 333px;
   height: 333px;
   border: solid 4px #fff;
+  transition: width 0.5s, height 0.5s, border 0.5s;
+}
+
+.profile-image img:hover {
+  width: 400px;
+  height: 400px;
+  border: none;
 }
 
 .intro-section {
@@ -508,13 +514,11 @@ li {
 .icon-container img {
   margin-bottom: 25px;
   width: 120px;
-  /* height: 120px; */
-  transition: width 1s, heigth 1s;
+  transition: opacity 0.5s;
 }
 
 .icon-container img:hover {
-  width: 150px;
-  height: 150px;
+  opacity: 0.3;
 }
 
 .icon-container h6 {
@@ -531,7 +535,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: #072BCE; */
   background: #FA382F;
   padding-bottom: 130px;
 }
