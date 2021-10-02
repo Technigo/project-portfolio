@@ -5,11 +5,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-family: "Roboto", sans-serif;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   min-width: 325px;
   font-style: normal;
-  font-weight: normal;
+  background-color: rgb(244, 244, 244, 0.3);
 }
 
 *,
@@ -26,6 +25,16 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  margin: 0;
+  padding: 12px 0px;
+  color: rgb(107, 255, 168);
+  font-weight: 700;
+  font-size: 17px;
+  width: 327px;
+  text-align: start;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -39,7 +48,7 @@ h2 {
   color: rgb(244, 244, 244);
 }
 
-.header__logotype-container {
+.header__icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,8 +58,9 @@ h2 {
   top: 48px;
 }
 
-.header__logotype-container__icons {
+.header__icons__icon {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   width: 40px;
@@ -60,7 +70,9 @@ h2 {
   font-size: 20px;
 }
 
-.header__title-container {
+/*-------------Header title container--------------*/
+
+.header__text-cont {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -71,51 +83,46 @@ h2 {
   left: 24px;
 }
 
-.header__title-container__portfolio-name {
+.header__text-cont__portfolio-name {
   display: flex;
-  column-gap: 4px;
   flex-direction: row;
+  column-gap: 4px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
 }
 
-.header__title-container__portfolio-name__portfolio {
-  font-size: 13px;
+.header__text-cont__portfolio-name__port {
   font-weight: 400;
-  letter-spacing: 0.04em;
 }
 
-.header__title-container__portfolio-name__name {
-  font-size: 13px;
-  letter-spacing: 0.04em;
+.header__text-cont__portfolio-name__name {
   font-weight: 700;
 }
 
-.header__title-container__profession {
+.header__text-cont__prof1 {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
 }
 
-.header__title-container__profession__plus-earlier {
-  display: flex;
-  column-gap: 4px;
-}
-
-.header__title-container__profession__plus-earlier {
+.header__text-cont__prof1__plus-prof2 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 600;
   line-height: 50px;
 }
 
-.header__profile-img {
+/*-------------Header profile-img --------------*/
+
+.header__profile-pic {
   position: absolute;
   left: 171px;
   top: 356px;
   z-index: 1;
 }
 
-.header__profile-img img {
+.header__profile-pic img {
   object-fit: cover;
   width: 180px;
   height: 180px;
@@ -126,10 +133,10 @@ h2 {
 /* ----------------INTRO SECTION---------------*/
 
 .intro {
+  display: flex;
   font-family: "Montserrat", sans-serif;
   width: 375px;
   height: 324px;
-  background-color: rgb(244, 244, 244, 0.3);
   padding: 49px 24px 29px 24px;
 }
 
@@ -165,7 +172,7 @@ h2 {
 
 /*-----------------Main-Content ----------------- */
 
-.main-content {
+.main {
   display: flex;
   flex-direction: column;
   background-color: rgb(244, 244, 244, 0.3);
@@ -173,80 +180,100 @@ h2 {
   align-items: center;
 }
 
-.main-content__tech-container {
+/*--------------------Tech-container-------------------- */
+
+.main__tech-cont {
   display: flex;
   flex-direction: column;
-  width: auto;
   align-items: center;
   padding-top: 41px;
 }
 
-.green-background {
-  background-color: rgb(107, 255, 168);
-  color: rgb(244, 244, 244);
-}
-
-.main-content__tech-container__title {
-  padding: 5px;
-  margin-bottom: 29px;
+.main__tech-cont__title {
+  padding: 5px, 5px, 34px 5px;
   width: auto;
   font-weight: 700;
   size: 22px;
 }
 
-.main-content__tech-container__skills {
+.main__tech-cont__skills {
   text-align: center;
   font-weight: 400;
   width: 327px;
   height: 147px;
-  margin-bottom: 41px;
+  padding-bottom: 41px;
 }
 
-.main-content__featured-projects-container {
-  display: flex;
-  justify-content: center;
-}
+/*------------------Project container-------------------- */
 
-.main-content__featured-projects-container__title {
-  display: flex;
-  justify-content: center;
-  width: auto;
-}
-
-.main-content__featured-projects-container {
+.main__projects-cont {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-bottom: 500px;
-  height: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.main-content__featured-projects-container__picture-1 {
+.main__projects-cont__picture {
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+.weather-image {
+  background: url("./pictures/weather.jpg");
+  background-size: cover;
+  width: 327px;
+  height: 200px;
+}
+
+.business-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./pictures/escape__house.JPG");
+  background-size: cover;
+  width: 327px;
+  height: 200px;
+}
+
+.main__projects-cont__title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 327px;
-  height: 200px;
-  background: url("./Pictures/weather.jpg");
-  background-size: cover;
-  margin-bottom: 40px;
-}
-
-.main-content__featured-projects-container__picture-1__title {
+  width: 100%;
   color: rgb(244, 244, 244);
+  letter-spacing: 0.04em;
 }
 
-.main-content__featured-projects-container__picture-2 {
+.main__projects-cont__text {
+  width: 327px;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.main__projects-cont__languages {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 327px;
-  height: 200px;
-  background: url("./Pictures/weather.jpg");
-  background-size: cover;
-  margin-bottom: 40px;
+  column-gap: 10px;
+  padding-bottom: 20px;
 }
 
-.main-content__featured-projects-container__picture-2__title {
-  color: rgb(244, 244, 244);
+.main__projects-cont__languages span {
+  font-family: "Roboto", sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  padding: 5px;
+  background-color: rgb(255, 249, 159);
 }
+
+.main__projects-cont__title-other {
+  font-weight: 700;
+  font-size: 21px;
+  color: rgb(125, 241, 107);
+  margin: 20px 0px;
+}
+
+/* 
+.main__feat-projects-cont a {
+  text-decoration: none;
+} */
