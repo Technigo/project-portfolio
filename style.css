@@ -2,15 +2,13 @@
 
 body {
   background-color: calc;
-  font-family: "Roobert",  sans-serif;
+  font-family: "Roobert", sans-serif;
   font-weight: 100;
   display: grid;
   grid-template-columns: 1fr;
   margin: 0;
   width: 100%;
 }
-
-/* header section */
 
 .header {
   background-image: url(https://i.ibb.co/wY0sPt0/egor-myznik-ZZ1-Zr-HKWASY-unsplash.jpg);
@@ -20,17 +18,19 @@ body {
   margin-bottom: 25px;
 }
 
+.header-text {
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
 .portfolio-name {
   color: whitesmoke;
-  margin-left: 50px;
-  margin-top: 150px;
   font-family: poppins;
   font-size: 10px;
 }
 
 .role1 {
   color: #ffe947;
-  margin-left: 50px;
   margin-top: -5px;
   margin-bottom: -15px;
   font-size: 30px;
@@ -38,12 +38,9 @@ body {
 
 .role2 {
   color: whitesmoke;
-  margin-left: 50px;
   font-size: 0.4cm;
   font-family: poppins;
 }
-
-/* presentation section */
 
 .my-presentation {
   color: black;
@@ -51,10 +48,7 @@ body {
   margin-right: 20px;
   text-align: left;
   font-size: 10px;
-
 }
-
-/* tech and projects section */
 
 .section-header {
   color: black;
@@ -127,10 +121,6 @@ body {
   color: black;
 }
 
-/* my thoughts section */
-
-/* skills section */
-
 .skills-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -145,7 +135,7 @@ body {
 }
 
 .skills-header {
-  color:#f08a80;;
+  color: #f08a80;
   font-size: 12px;
   font-weight: bolder;
 }
@@ -153,10 +143,7 @@ body {
 .skills-text {
   color: black;
   font-size: 10px;
-
 }
-
-/* more info and contact section */
 
 .more-info {
 }
@@ -165,7 +152,7 @@ body {
   margin-bottom: 40px;
 }
 
-.contactText {
+.contact-text {
   color: black;
   text-align: center;
   font-size: 10px;
@@ -184,16 +171,18 @@ body {
 /* tablet menu */
 
 @media (min-width: 768px) {
-
-
 }
 
 /* big screen menu */
 
-@media (min-width:992px) {
-
+@media (min-width: 992px) {
   .header {
     height: 600px;
+  }
+
+  .header-text {
+    margin-top: 150px;
+    margin-left: 200px;
   }
 
   .project-container {
@@ -201,5 +190,12 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-}
+  .my-presentation {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
 
+  .logo {
+    height: 100px;
+  }
+}
