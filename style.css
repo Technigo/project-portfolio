@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 html {
-  --main-color: rgb(82, 131, 102);
+  --main-color: rgb(49, 93, 151);
   --highlight-color: rgb(196, 240, 166);
   --secondary-color: rgb(83, 109, 133);
 }
@@ -175,28 +175,21 @@ h6 {
   font-size: 17px;
   line-height: 29px;
 }
-
-.intro__text__icons {
-  display: flex;
-  align-items: center;
-  height: 28px;
-  width: 55px;
-  float: left;
-  line-height: 29px;
-  margin-right: 14px;
+.intro__text__line {
+  border: 1px solid var(--main-color);
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
 }
 
-.fa-dash {
+.intro__text__dot {
+  position: relative;
+  left: -5px;
   height: 10px;
-  font-size: 40px;
-  line-height: 15px;
-  color: var(--main-color);
-}
-
-.fa-circle {
-  padding-top: 3px;
-  font-size: 14px;
-  color: var(--main-color);
+  width: 10px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: inline-block;
 }
 
 /*-----------------Main-Content ----------------- */
@@ -448,7 +441,7 @@ h6 {
   /*-------------Header profile-img --------------*/
 
   .header__profile-pic {
-    left: 70%;
+    left: 60%;
   }
 
   /* ----------------INTRO SECTION---------------*/
