@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 html {
-  --main-color: rgb(107, 255, 168);
+  --main-color: rgb(82, 131, 102);
   --highlight-color: rgb(196, 240, 166);
   --secondary-color: rgb(83, 109, 133);
 }
@@ -21,6 +21,13 @@ body {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
 }
 
 h2 {
@@ -93,6 +100,16 @@ h6 {
   font-size: 20px;
 }
 
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /*-------------Header title container--------------*/
 
 .header__text-cont {
@@ -120,13 +137,6 @@ h6 {
 
 .header__text-cont__portfolio-name__name {
   font-weight: 700;
-}
-
-.header__text-cont__prof1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 49px;
 }
 
 .header__text-cont__prof1__plus-prof2 {
@@ -252,7 +262,7 @@ h6 {
 
 .main__project__languages span {
   font-family: "Roboto", sans-serif;
-  font-size: 9px;
+  font-size: 15px;
   letter-spacing: 0.04em;
   padding: 5px 8px;
   background-color: var(--highlight-color);
