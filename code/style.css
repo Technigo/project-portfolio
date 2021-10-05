@@ -6,11 +6,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Header */
+
 .header-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     position: relative;
-    grid-template-rows: repeat(11, 40px);
+    grid-template-rows: repeat(13, 40px);
 }
 
 .header-image {
@@ -66,6 +68,8 @@
     margin-top: 20px;
 }
 
+/* Icons in header */
+
 .header-icons a {
     font-size: 28px;
     color: #FFF;
@@ -82,9 +86,10 @@
 }
 
 .circle-icon:hover {
-   color: #8CA1A5;
+    color: #D5BFBF;
 }
 
+/* Round profile-image */
 
 .profile-img {
     grid-row: 10;
@@ -95,9 +100,154 @@
     top: 356px;
     object-fit: cover;
     border-radius: 50%;
-    border: solid #fff 2px;
+    border: 2px solid whitesmoke;
+    overflow: hidden;
+    z-index: 2;
+    ;
 }
 
-p {
+/* Summary section */
+
+.summary-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 25px;
+    height: 400px;
+    background: #F4F4F4;
+}
+
+.summary-section p {
+    grid-column: span 12;
+    padding: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 29px;
     color: #316B83;
+}
+
+.line {
+    display: inline-block;
+    width: 55px;
+    height: 3px;
+    background-color: #D5BFBF;
+    margin-bottom: 4px;
+}
+
+.circle {
+    display: inline-block;
+    background-color: #D5BFBF;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.tech-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 25px;
+    height: 200px;
+    background: #fff;
+}
+
+h2.heading-tech {
+    grid-column: 5/9;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFF;
+    background-color: #316B83;
+}
+
+.tech-section p {
+    grid-column: span 12;
+    padding: 10px;
+    height: 232px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    color: #316B83;
+}
+
+.featured-projects-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 25px;
+    height: 1298px;
+    background: #F4F4F4;
+}
+
+h2.heading-projects {
+    grid-column: 3/11;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFF;
+    background-color: #316B83;
+}
+
+.project-card {
+    display: grid;
+    grid
+    grid-column: 1;
+    padding: 25px;
+    height: 341px;
+}
+
+.projects-img-container {
+    grid-column: 1;
+    height: 212px;
+}
+
+.projects-img {
+    grid-column: span 1;
+    height: 212px;
+    object-fit: cover;
+}
+
+h4.heading-projects {
+    grid-column: 3/11;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+}
+
+.tag-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 20px;
+}
+
+.tag-wrapper p {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    background-color: #8CA1A5;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    text-align: center;
+    /* Matching line-height and font-size here gives full control 
+       over the size of our tags to the padding*/
+    font-size: 9px;
+    line-height: 11px;
+    /* Control the size of the tags */
+    padding: 4px;
+    /* Control the spacing of our tags */
+    margin: 3px;
+    /* Some rounded borders */
+    border-radius: 5px;
 }
