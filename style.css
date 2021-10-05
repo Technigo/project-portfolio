@@ -1,26 +1,43 @@
-.header {
-  position: absolute;
-  width: 375px;
-  height: 520px;
-  left: 0;
-  top: 0;
+body {
+  margin: 0;
+}
 
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
   background: url(./assets/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.social-media {
+  grid-column: span 3;
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 150px;
+}
+
+.linkedin,
+.github,
+.stack-overflow {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.linkedin > img,
+.github > img,
+.stack-overflow > img {
+  width: 65%;
+  object-fit: cover;
+}
 .about-me {
-  width: 220px;
-  height: 202px;
-  top: 121px;
-  left: 24px;
-
-  margin-top: 121px;
-  margin-bottom: 127px;
-  margin-left: 24px;
-  margin-right: 131px;
-
+  grid-column: span 2;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -28,32 +45,10 @@
   letter-spacing: 0.04em;
   color: #fff;
 }
-.social-media {
-  display: flex;
-  position: absolute;
-  width: 130.5px;
-  height: 40px;
-  left: 220px;
-  top: 48px;
-
-  margin-right: 24.8px;
-
-  border: 1px solid black;
-}
-
-.linkedin {
-  background: url(./assets/linkedin.svg);
-  color: #fff;
-}
 
 .profile-image {
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  left: 171px;
-  top: 356px;
-  right: 24px;
-
+  grid-column: span 3;
+  height: 150px;
   border-radius: 50%;
   border: 2px solid #fff;
   overflow: hidden;
@@ -64,12 +59,147 @@
 }
 
 .intro-section {
-  position: absolute;
-  width: 375px;
-  height: 324px;
-  left: 0;
-  top: 520px;
-
+  display: flex;
+  flex-direction: column;
   background: #f4f4f4;
   opacity: 0.3;
+}
+
+.line {
+  width: 25px;
+  display: inline-block;
+  border: 1px solid #c62a88;
+  margin-top: 4px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #c62a88;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.intro-paragraph {
+  display: inline;
+}
+
+.tech-section,
+.project-section,
+.thought-section,
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 10px;
+}
+
+.tech-section-header,
+.project-section-header,
+.thought-section-header,
+.skills-header {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+  line-height: 27px;
+  color: #fff;
+  background-color: #fa382f;
+}
+
+.tech-section-content {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.project-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 29px;
+  color: #fa382f;
+  text-align: center;
+}
+
+.language {
+  display: flex;
+}
+
+.language-item1 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 30%;
+  margin-right: 2%;
+  padding: 2% 0;
+}
+
+.language-item2,
+.language-item3 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 10%;
+  margin-right: 2%;
+  padding: 2% 0;
+}
+
+.language-item1,
+.language-item2,
+.language-item3 {
+  background-color: #ffcccc;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 9px;
+  letter-spacing: 0.01em;
+}
+
+.other-project-header,
+.more-thoughts-header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #fa382f;
+}
+
+.thought-section > img {
+  height: 205px;
+}
+
+.code-skills,
+.toolbox,
+.upcoming {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  color: #fa382f;
+  list-style-type: none;
+  text-align: center;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  color: black;
+}
+
+.footer {
+  height: 300px;
+  background-color: #072bce;
+  color: #fff;
 }
