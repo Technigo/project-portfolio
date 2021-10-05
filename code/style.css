@@ -10,6 +10,7 @@ html {
       font-family: raleway;
       background: #F5F4F0;
       margin: 0;
+      color: #333;
     }
 
 
@@ -18,7 +19,7 @@ html {
   .hero {
     display: flex;
     flex-direction: column;
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 3rem 1rem 2rem 1rem;
   }
 
   .jes-img {
@@ -28,13 +29,15 @@ html {
   }
 
   .linkedin-logo {
-    width: 32px;
-    padding: 0 0.5rem 0 0;
+    /* width: 32px;
+    padding: 0 0.5rem 0 0; */
+    display: none;
   }
 
   .github-logo {
-    width: 30px;
-    padding: 0 0.5rem 0 0;
+    /* width: 30px;
+    padding: 0 0.5rem 0 0; */
+    display: none;
   }
 
   h1 {
@@ -43,6 +46,18 @@ html {
     font-weight: 100;
     margin: 1rem 0 1rem 0;
   }
+
+  .heading h2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-top: 0;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
 
   .hero label {
     font-size: 1.125rem;
@@ -56,7 +71,7 @@ html {
 
   .name-social-icons {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: row; */
   }
 
   .nav-link {
@@ -116,7 +131,7 @@ html {
     flex-wrap: wrap;
     justify-content: flex-start;
     background-color: #fff;
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 
   .about-me-text {
@@ -140,11 +155,114 @@ html {
     text-decoration: none;
   }
 
+  /* SKILLS */
+
+  .my-skills {
+    background-color: #F5F4F0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+ }
+
+ .tag-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding-right: 0;
+  
+  }
+
+  .tag-wrapper p {
+    font-family: raleway;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    background-color: #BFD1B2;
+    text-decoration: none;
+    font-size: 1rem; 
+    line-height: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .tag-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tag {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-left: 1rem;
+  }
+
+
+  /* PORTFOLIO UI + FE */
+   
+  .portfolio-ui {
+    background-color: #F5F4F0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+   }
+
+   .portfolio-fe {
+    background-color: #fff;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+   }
+
+   .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.5rem;
+   }
+
+   .project-img {
+     width: 100%;
+     border-radius: 8px;
+   }
+
+   .project-text {
+     width: 100%;
+   }
+
+
+   .project-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      max-width: 100%;
+      /* padding-left: 1rem;
+      padding-right: 1rem; */
+      padding-top: 2rem;
+   }
+
+
+   .list-img {
+     width: 100%;
+     border-radius: 8px
+   }
+
+
 
   @media (min-width: 900px) {
 
  /* HERO */
 
+ p {
+   margin: 0;
+ }
+
+ h3 {
+   margin: 0 0 2rem 0;
+ }
 
   .hero {
     display: flex;
@@ -256,14 +374,15 @@ html {
    }
 
    .about-me-text {
-     font-size: 1.5rem;
+     font-size: 1.125rem;
      line-height: 2rem;
      font-weight: 400;
      max-width: 700px;
+     width: relative;
    }
 
    .heading {
-      padding-right: 8rem;
+    min-width: 200px;
    }
 
    h4 {
@@ -275,7 +394,42 @@ html {
      text-decoration: none;
    }
 
-   /* PORTFOLIO UI */
+
+   /* SKILLS */
+
+   .my-skills {
+      display: flex;
+      background-color: #F5F4F0;
+      padding-right: 10%;
+      padding-left: 15%;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+   }
+
+   .tag-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 10%;
+    
+    }
+  
+    .tag-wrapper p {
+      font-family: raleway;
+      text-align: center;
+      color: #333;
+      font-weight: 500;
+      background-color: #BFD1B2;
+      text-decoration: none;
+      font-size: 1rem; 
+      line-height: 1.2rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+   /* PORTFOLIO UI + FE */
    
    .portfolio-ui {
     background-color: #F5F4F0;
@@ -285,9 +439,17 @@ html {
     padding-bottom: 4rem;
    }
 
+   .portfolio-fe {
+    background-color: #fff;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+   }
+
    .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       grid-gap: 1.5rem;
       /* grid-auto-rows: auto; */
    }
