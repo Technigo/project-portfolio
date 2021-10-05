@@ -1,0 +1,509 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #ffff;
+}
+
+/* h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+} */
+
+.header-image {
+  background-image: url(/assets/hero-image.jpg); /* can we add an alt text?? */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 681px;
+  z-index: -1;
+  padding-top: 76px;
+}
+
+.header {
+  border: 5px dashed orange;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  width: 70%; /*  */
+  height: 649px;
+  margin: 0 auto;
+}
+
+.header-title {
+  grid-column: span 1;
+  border: 1px solid red;
+  width: 607px;
+  height: 339px;
+  color: #fff;
+  margin: auto;
+}
+
+.header-portfolio {
+  /* font-family: 'Roboto', sans-serif; */
+  border: 1px dotted blue;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-size: 28px;
+  line-height: 37px;
+  margin: 0;
+}
+
+.portfolio-name {
+  font-weight: 700;
+}
+
+.first-occupation {
+  border: 2px dotted green;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 100px;
+  margin: 0;
+}
+
+.second-occupation {
+  border: 2px solid black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 78px;
+  margin: 0;
+}
+
+.profile {
+  border: 3px solid brown;
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.contact-icons {
+  border: 2px dotted black;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-icons a {
+  text-decoration: none;
+}
+
+.featured-projects a {
+  text-decoration: none;
+}
+
+.other-project a {
+  text-decoration: none;
+}
+
+.social-media-icons a {
+  text-decoration: none;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.featured-projects a:visited,
+.other-project a:visited {
+  color: transparent;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon:hover,
+.icon:focus {
+  background: black;
+}
+
+.profile-image {
+  background-image: url(/assets/profile-image.jpg); /* can we add an alt text?? */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 333px;
+  height: 333px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.intro-section {
+  border: 3px dashed blue;
+  width: 100%;
+  height: 432px;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  border: 2px solid pink;
+  width: 1100px;
+  height: 200px;
+  /* margin: auto; */
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.line {
+  border: 2px solid #fa382f;
+  width: 78px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: #fa382f;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background: #fa382f;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  height: 64px;
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+  left: 50%; /*Move the element to the right by 50% of the container's width*/
+  /*Calculates 50% of the element's width, and moves it by that amount across the X-axis to the left*/
+  transform: translateX(-50%);
+  margin-top: 150px;
+}
+
+.tech-skills {
+  border: 4px dotted yellowgreen;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  width: 1100px;
+  height: 150px;
+  margin: auto;
+}
+
+.highlight-red {
+  color: #fa382f;
+}
+
+.projects-section {
+  width: 100%;
+}
+
+.featured-projects {
+  border: 3px dashed blue;
+  width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 10px 0; */
+  margin: auto;
+}
+
+.project-card {
+  grid-column: span 1;
+  margin: auto;
+}
+
+.project-card:hover {
+  cursor: pointer;
+}
+
+.project-headline {
+  /* border: 5px solid gold; */
+  width: 523px;
+  height: 306px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url('./header-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.project-headline img {
+  position: absolute;
+}
+
+.project-title {
+  /* border: 2px dotted blue; */
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  width: 378px;
+  height: 47px;
+  margin: auto;
+  z-index: 1;
+  transition: opacity 250ms ease;
+}
+
+.transbox {
+  background: rgb(128, 128, 180);
+  opacity: 0.6;
+  width: 523px;
+  height: 306px;
+  position: absolute;
+  transition: opacity 250ms ease;
+}
+
+/* when hover over project-headline the project title will disappear */
+.project-headline:hover .project-title {
+  opacity: 0;
+}
+
+/* when hover over project-headline the transbox will disappear */
+.project-headline:hover .transbox {
+  opacity: 0;
+}
+
+.project-brief {
+  /* border: 5px solid pink; */
+  /* font-family: 'Roboto', sans-serif; */
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  width: 523px;
+  height: 110px;
+  margin-top: 40px;
+}
+
+.description-title {
+  color: #fa382f;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.description-project {
+  margin: 0;
+  line-height: 31px;
+}
+
+.description-project:hover {
+  text-decoration: underline;
+}
+
+.tags {
+  display: flex;
+  margin-bottom: 50px;
+  /* flex-flow: row wrap; */
+}
+
+.tags p {
+  /* font-family: 'Roboto', sans-serif; */
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  background: #fddfe7;
+  /* Control the size of the tags */
+  padding: 6px 16px;
+  /* Control the spacing of our tags */
+  margin: 6px 8px 6px 0;
+}
+
+.subheading {
+  font-family: 'Montserrat', sans-serif;
+  color: #fa382f;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 47px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.other-project {
+  /* font-family: 'Roboto', sans-serif; */
+  border: 2px solid blue;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 33px;
+  width: 1100px;
+  /* height: 33px; */
+  height: 103px;
+  margin: auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.other-project-title,
+.more-thoughts-title {
+  text-decoration: underline;
+  margin: 0;
+}
+
+.other-project-title:hover,
+.more-thoughts-title:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.more-thoughts-title {
+  margin-bottom: 24px;
+}
+
+.highlight-red-uppercase {
+  /* font-family: 'Roboto', sans-serif; */
+  color: #fa382f;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: underline;
+  /* font-size: 25px;
+  line-height: 33px; */
+}
+
+.thoughts-section {
+  border: 3px dashed green;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1100px;
+  margin: auto;
+  column-gap: 57px;
+}
+
+.post-card {
+  border: 2px dotted orange;
+  grid-column: span 1;
+  width: 520px;
+  height: 821px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 41px;
+}
+
+.post-card p {
+  margin: 0;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.more-thoughts {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 33px;
+  width: 1100px;
+  margin: auto;
+}
+
+.skills-section {
+  border: 3px dashed green;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1100px;
+  margin: auto;
+  font-size: 25px;
+  line-height: 41px;
+  text-align: center;
+}
+
+.skills-list {
+  grid-column: span 1;
+}
+
+.skills-section p {
+  margin: 4px;
+}
+
+.social-icon {
+  width: 160px;
+  height: 160px;
+  border: 3px solid #fa382f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-icons {
+  border: 2px solid black;
+  /* width: 660px; */
+  width: 860px;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+}
+
+.social-media-icons p {
+  text-transform: uppercase;
+  color: #fa382f;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 41px;
+}
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background: #072bce;
+  width: 100%;
+  height: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.contact-info {
+  border: 2px dashed yellow;
+  width: 622px;
+  height: 309px;
+  text-align: center;
+}
+
+.contact-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 47px;
+}
+
+.contact-info p {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  margin: 0;
+}
