@@ -8,31 +8,24 @@ body {
   font-family: 'Montserrat', 'Roboto', sans-serif;
   margin: 0;
   color: black;
-  height: 100%;
   width: 100%;
 }
 
 header {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURkVFbEwtUvmqru_JeCaKw90HZiFR57Q5rtUTSoYISlcdj0x4X8hwoIzZlJfv6Fok0eY&usqp=CAU');
   position: relative;
-  /* width: 375px; */
   height: 520px;
-  /* -webkit-filter: grayscale(100%); */
-  /* filter: grayscale(100%); */
-  /* height: 70vh; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   background-color: white;
-  z-index: -1;
   display: flex;
   flex-direction: column;
 }
 
 .nav-icons {
   position: absolute;
-  height: 40px;
+  /* height: 100px; */
   left: 220px;
   top: 48px;
   /* display: flex;
@@ -42,21 +35,16 @@ header {
 .nav-item {
   border-radius: 50%;
   border: solid white 2px;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  /* border-radius: 50%;
+  height: 40px;
   width: 40px;
-  height: 40px; */
-
-  /* background-color: transparent; */
-  /* opacity: 0; */
+  text-align: center;
+  display: inline-block;
 }
 
-img {
+.nav-image {
   width: 20px;
   height: 20px;
-  /* margin-top: 25%; */
+  margin-top: 25%;
 }
 
 .header-info {
@@ -88,7 +76,7 @@ h2 {
   font-size: 17px;
 }
 
-h4 {
+h3 {
   font-size: 17px;
 }
 
@@ -107,13 +95,10 @@ section {
   margin: 0;
   text-align: center;
   padding: 2rem 0;
-  /* box-sizing: border-box; */
 }
 
-.intro-section {
-  /* box-sizing: border-box; */
-
-  /* opacity: 0.3; */
+section:nth-child(2n + 1) {
+  background-color: #f4f4f4;
 }
 
 .line {
@@ -131,10 +116,6 @@ section {
   display: inline-block;
 }
 
-.intro-section > p {
-  display: inline-block;
-}
-
 p {
   font-style: normal;
   font-weight: normal;
@@ -145,24 +126,31 @@ p {
   margin: 0 2rem;
 }
 
-h3 {
+h4 {
   background-color: red;
   color: white;
   width: fit-content;
   margin: auto;
-  font-size: 22px;
+  font-size: 23px;
   line-height: 27px;
 }
 
 h5 {
   color: red;
-  margin: 1rem 2rem auto 2rem;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+h6 {
+  color: red;
+  margin: 1rem 2rem 0 2rem;
   text-align: left;
   font-size: 17px;
   line-height: 29px;
 }
 
-.featured-projects > p {
+a > p {
   text-align: left;
 }
 
@@ -185,7 +173,7 @@ h5 {
 }
 
 .for-more-icons {
-  margin-top: 2rem;
+  margin: 3rem 3.5rem 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -200,14 +188,14 @@ h5 {
 
 footer {
   background-color: #072bce;
-  color: white;
   height: 302px;
 }
 
-h6 {
+footer > h6 {
   font-weight: bold;
   font-size: 21px;
   line-height: 25px;
+  color: white;
   /* or 119% */
   text-align: center;
   padding-top: 3rem;
@@ -219,5 +207,14 @@ footer > p {
   font-size: 18px;
   line-height: 25px;
   font-weight: 200;
+  color: white;
   padding: 0;
 }
+
+/* @media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+} */
