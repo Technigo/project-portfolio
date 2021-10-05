@@ -6,6 +6,8 @@ with main browsers.
 
 ## Tech Stack : JS, CSS, HTML
 
+##View it live : http://www.mary-snopok.com
+
 ## Cool Features & Atribution
 
 Dots canvas created via pair programming session under mentorship of Corey Maler (https://github.com/Corey-Maler).
