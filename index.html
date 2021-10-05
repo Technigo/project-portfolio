@@ -22,11 +22,32 @@
   <body>
     <header>
       <img class="header-img" src="header2.webP" alt="" />
-      <img
-        class="icons-small"
-        src="iconSmall.png"
-        alt="Icons for social media"
-      />
+      <div class="icon-section">
+        <a href="https://www.linkedin.com/in/madeleine-svensson/">
+          <div class="border">
+            <img
+              class="icons-small"
+              src="LinkedIn.png"
+              alt="Icon for linked In"
+            /></div
+        ></a>
+        <a href="https://github.com/madeleinesvensson">
+          <div class="border">
+            <img
+              class="icons-small"
+              src="github.svg"
+              alt="Icon for github"
+            /></div
+        ></a>
+        <a href="https://stackoverflow.com/users/16652444/madeleine-svensson"
+          ><div class="border">
+            <img
+              class="icons-small"
+              src="stackOverflow.png"
+              alt="Icon for stackoverflow"
+            /></div
+        ></a>
+      </div>
       <img
         class="profile-img"
         src="10.jpg"
@@ -38,10 +59,9 @@
         <h2>+ UX designer</h2>
       </div>
     </header>
-    <section>
-      <span class="line"></span>
-      <span class="dot"></span>
+    <section class="about-me">
       <p class="content-p">
+        <span class="line"></span><span class="dot"></span>
         Hello! I am a creative and structured frontend developer with an
         education in UX Design. THIS NEEDS SOME MORE TEXT TO FILL OUT THE PAGE.
       </p>
@@ -54,34 +74,67 @@
         thinking.
       </p>
     </section>
-    <section>
+    <section class="featured-projects">
       <h3>FEATURED PROJECTS</h3>
-      <img class="project-img" src="" alt="" />
-      <h4>THIS IS A PROJECT</h4>
-      <p class="content-p">this is a paragraf to explain project</p>
-      <p class="language-p">HTML</p>
-      <p class="language-p">CSS3</p>
-      <p class="language-p">JavaScript</p>
 
-      <img class="project-img" src="" alt="" />
-      <h4>THIS IS A PROJECT</h4>
-      <p class="content-p">this is a paragraf to explain project</p>
-      <p class="language-p">HTML</p>
-      <p class="language-p">CSS3</p>
-      <p class="language-p">JavaScript</p>
+      <div class="project-card">
+        <div class="img-wrapper">
+          <p class="project-text-overlay">WEATHER APP</p>
+          <img
+            class="project-img"
+            src="weather-app.png"
+            alt="image of weather app"
+          />
+        </div>
 
-      <h4>OTHER PROJECTS</h4>
-      <h5>A PROJECT</h5>
-      <p class="content-p">THIS A DESCTIPTIVE LINE</p>
-      <p class="language-p">HTML</p>
-      <p class="language-p">CSS3</p>
-      <p class="language-p">JavaScript</p>
+        <h4>WEATHER APP BUILT IN JAVASCRIPT.</h4>
+        <p class="project-p">
+          Responsive web site using HTML, CSS and JavaScript ES6 to forcast the
+          weather around the world using API.
+        </p>
+        <div class="language-wrapper">
+          <p class="language-p">HTML</p>
+          <p class="language-p">CSS3</p>
+          <p class="language-p">JavaScript ES6</p>
+        </div>
+      </div>
 
-      <h5>A PROJECT</h5>
-      <p class="content-p">THIS A DESCTIPTIVE LINE</p>
-      <p class="language-p">HTML</p>
-      <p class="language-p">CSS3</p>
-      <p class="language-p">JavaScript</p>
+      <div class="project-card">
+        <div class="img-wrapper">
+          <p class="project-text-overlay">WEATHER APP</p>
+          <img
+            class="project-img"
+            src="weather-app.png"
+            alt="image of weather app"
+          />
+        </div>
+        <h4>WEATHER APP BUILT IN JAVASCRIPT.</h4>
+        <p class="project-p">this is a paragraf to explain project</p>
+        <div class="language-wrapper">
+          <p class="language-p">HTML</p>
+          <p class="language-p">CSS3</p>
+          <p class="language-p">JavaScript ES6</p>
+        </div>
+      </div>
+      <h5>OTHER PROJECTS</h5>
+      <div class="project-small">
+        <h4>A PROJECT</h4>
+        <p class="project-p">THIS A DESCTIPTIVE LINE</p>
+        <div class="language-wrapper">
+          <p class="language-p">HTML</p>
+          <p class="language-p">CSS3</p>
+          <p class="language-p">JavaScript</p>
+        </div>
+      </div>
+      <div class="project-small">
+        <h4>A PROJECT</h4>
+        <p class="project-p">THIS A DESCTIPTIVE LINE</p>
+        <div class="language-wrapper">
+          <p class="language-p">HTML</p>
+          <p class="language-p">CSS3</p>
+          <p class="language-p">JavaScript</p>
+        </div>
+      </div>
     </section>
     <section>
       <h3>MY THOUGHTS</h3>
@@ -95,23 +148,67 @@
     </section>
     <section>
       <h3>SKILLS</h3>
-      <h5>CODE</h5>
-      <p class="content-p">HTML</p>
-      <p class="content-p">CSS3</p>
-      <p class="content-p">JavaScript ES6</p>
-
-      <h5>UPCOMING</h5>
-      <p class="content-p">Redux</p>
-      <p class="content-p">Node.js</p>
-      <h5>TOOLBOX</h5>
-      <p class="content-p">Figma</p>
-      <p class="content-p">Slack</p>
-      <p class="content-p">Keynote</p>
+      <div class="skills-wrapper">
+        <div class="skills-container">
+          <h5>CODE</h5>
+          <p class="content-p">HTML</p>
+          <p class="content-p">CSS3</p>
+          <p class="content-p">JavaScript ES6</p>
+          <p class="content-p">React</p>
+        </div>
+        <div class="skills-container">
+          <h5>TOOLBOX</h5>
+          <p class="content-p">Figma</p>
+          <p class="content-p">Slack</p>
+          <p class="content-p">Keynote</p>
+        </div>
+        <div class="skills-container">
+          <h5>UPCOMING</h5>
+          <p class="content-p">Redux</p>
+          <p class="content-p">Node.js</p>
+        </div>
+      </div>
     </section>
-    <h3>FOR MORE</h3>
-    <img class="icons" src="" alt="" />
-    <img class="icons" src="" alt="" />
-    <img class="icons" src="" alt="" />
+    <section>
+      <h3>FOR MORE</h3>
+      <div class="link-wrapper">
+        <div class="link-text-icon-wrapper">
+          <div class="icon-border-large">
+            <a href="https://www.linkedin.com/in/madeleine-svensson/">
+              <img class="icons" src="LinkedIn.png" alt="icon for linked in"
+            /></a>
+          </div>
+          <div class="link-p-container">
+            <p class="link-p">LINKEDIN</p>
+          </div>
+        </div>
+        <div class="link-text-icon-wrapper">
+          <div class="icon-border-large">
+            <a href="https://github.com/madeleinesvensson"
+              ><img class="icons" src="github.svg" alt="icon for github"
+            /></a>
+          </div>
+          <div class="link-p-container">
+            <p class="link-p">GITHUB</p>
+          </div>
+        </div>
+        <div class="link-text-icon-wrapper">
+          <div class="icon-border-large">
+            <a
+              href="https://stackoverflow.com/users/16652444/madeleine-svensson"
+            >
+              <img
+                class="icons"
+                src="stackOverflow.png"
+                alt="icon for stackOverflow"
+            /></a>
+          </div>
+          <div class="link-p-container">
+            <p class="link-p">STACK OVERFLOW</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <h6>CONTACT</h6>
       <p class="footer-p">Madeleine Svensson</p>
