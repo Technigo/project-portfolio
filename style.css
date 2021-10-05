@@ -5,7 +5,6 @@ html {
   --main-color: rgb(49, 93, 151);
   --highlight-color: rgb(196, 240, 166);
   --secondary-color: rgb(83, 109, 133);
-  max-width: 1400px;
 }
 
 body {
@@ -14,6 +13,7 @@ body {
   margin: auto;
   box-sizing: border-box;
   min-width: 325px;
+  max-width: 1400px;
   font-style: normal;
   background-color: rgb(244, 244, 244, 0.3);
 }
@@ -77,6 +77,8 @@ h6 {
   background-size: cover;
   height: 520px;
   color: rgb(244, 244, 244);
+  background-position: center;
+  padding: 39px 24px 29px 24px;
 }
 
 .header__icons {
@@ -87,6 +89,15 @@ h6 {
   position: absolute;
   left: 60%;
   top: 48px;
+}
+
+.header__icons a {
+  text-decoration: none;
+  color: rgb(244, 244, 244);
+}
+
+.header__icons a:hover {
+  color: var(--highlight-color);
 }
 
 .header__icons__icon {
@@ -117,11 +128,8 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  position: absolute;
-  width: 250px;
   height: 202px;
-  top: 121px;
-  left: 24px;
+  margin-top: 60px;
 }
 
 .header__text-cont__portfolio-name {
@@ -215,6 +223,8 @@ h6 {
 /*------------------Project container-------------------- */
 
 .main__project {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -388,9 +398,18 @@ h6 {
   color: rgb(244, 244, 244);
 }
 
+.display {
+  display: none;
+}
+
 /* ---------------------------Ipad adaptions -------------------*/
 
 @media (min-width: 668px) and (max-width: 1024px) {
+  .header {
+    background-position: bottom;
+    padding: 49px 50px 29px 50px;
+  }
+
   .header__icons {
     width: 200px;
     left: 60%;
@@ -405,7 +424,6 @@ h6 {
   /*-------------Header title container--------------*/
 
   .header__text-cont {
-    width: 300px;
     height: 250px;
     top: 121px;
     left: 50px;
@@ -500,7 +518,7 @@ h6 {
   .main__more__icons__icon__text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center bottom;
   }
   .main__more__icons__icon__text p {
     font-size: 15px;
@@ -511,9 +529,23 @@ h6 {
   .footer h2 {
     background-color: var(--secondary-color);
   }
+
+  .display {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hide {
+    display: none;
+  }
 }
 
 @media (min-width: 1025px) {
+  .header {
+    background-position: center bottom;
+    padding: 49px 250px 29px 250px;
+  }
+
   .header__icons {
     left: 800px;
     width: 200px;
@@ -610,5 +642,14 @@ h6 {
 
   .footer h2 {
     background-color: var(--secondary-color);
+  }
+
+  .display {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hide {
+    display: none;
   }
 }
