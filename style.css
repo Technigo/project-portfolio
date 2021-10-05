@@ -1,0 +1,578 @@
+/* Global css variables used for colors */
+:root {
+	--primary: #2d9644;
+	--secondary: #92ce7f;
+	--treedary: #d2face;
+}
+
+body{
+
+margin: 0 auto;
+padding: 0 auto;
+font-size: 1rem;
+}
+
+/*  Phone  */
+
+ 
+
+
+
+/* Container, Portfolio */
+
+.Portfolio{
+
+   
+display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: repeat(20, 0.5fr);
+    grid-template-areas: 
+
+    "header header header header"
+    "header header header header"
+    "header header header header"
+    "intro intro intro intro"
+    "tech tech tech tech"
+    "feat feat feat feat"
+    "feat feat feat feat"
+    "feat feat feat feat"
+    "feat feat feat feat"
+    "thought thought thought thought"
+    "thought thought thought thought"
+    "thought thought thought thought"
+    "thought thought thought thought"
+    "thought thought thought thought"
+    "thought thought thought thought"
+    "skill skill skill skill"
+    
+    
+;
+
+}
+
+
+
+/* HEADER */
+
+
+header{
+grid-area: header;
+height: 550px;
+overflow: hidden;
+top:0px;
+
+    }
+
+
+    
+header video {
+   
+    background-size: cover;
+    z-index: -25;
+    
+   
+
+
+    
+    }
+
+.header___content{
+display: flex;
+justify-content: flex-end;
+margin: 0 1%;
+
+
+}
+
+.header__profile-pic {
+position: absolute;
+width: 180px;
+top: 400px;
+border-radius: 50%;
+border: 2px solid #ffffff;
+}
+
+
+.header___icons{
+
+    position: absolute;
+    width: 130.5px;
+    height: 40px;
+    left: 220px;
+    top: 48px;
+
+
+}
+
+.header___text{
+     position: absolute; 
+    left: 24px;
+    top: 121px;
+    color: #ffffff;
+ }
+ 
+ .header___text1{ 
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0;
+    letter-spacing: 0.04em;
+
+}
+
+.header___text1 span{
+
+font-weight: bold;
+
+}
+
+.header___text2{ 
+ font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  margin: 1px 0;
+
+}
+
+.header___text3{ 
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0;
+
+}
+
+/* INTRO */
+
+
+.intro{
+    grid-area: intro;
+
+    left: 0px; 
+      
+     top: 520px;
+
+    background: #F4F4F4;
+    z-index: -30;
+ 
+   
+}
+
+.intro___textsection{
+   
+ 
+   
+    height: 232px;
+    padding: 35px 24px 43px 24px;
+    top: 569px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+   
+  
+   
+}
+
+.intro___circle {
+
+    display: inline-block;
+    background-color: #024434;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin:0 5px 0 -10px;
+     }
+
+.intro___line{
+
+    display: inline-block;
+    width: 55px;
+    height: 3px;
+    background-color: #024434;
+    margin-bottom: 4px;
+
+     }
+
+
+.intro___p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    color: #000000;
+  
+    
+}
+
+
+/* TECH SECTION */
+
+.tech___section{
+    grid-area: tech;
+    background-color: rgb(255, 255, 255);
+width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+
+
+.tech___content{
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 29px;
+text-align: center;
+}
+
+
+
+/* Featured Projects  */
+.featured____container{
+  grid-area: feat;
+
+left: 0px;
+
+background: #F4F4F4;
+
+
+
+
+ }
+
+ /* headings the diffrent sections */
+
+ .container____first-heading{ 
+
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+.container____second-heading,  .container____three-heading, .container____four-heading{ 
+
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+
+
+.container____first-heading h1, .container____second-heading h1,  .container____four-heading h1{
+
+
+    height: 26px;
+    left: 69px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    padding: 0 10px;
+    white-space: nowrap;
+    color: #FFFFFF;
+    background-color: #024434;
+
+}
+
+
+.container____three-heading h1{
+   
+
+    height: 26px;
+    max-width: 256px;
+    left: 69px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    margin-top: 50px;
+    color:  #024434;
+
+
+}
+
+
+
+/* CLASS FOR PROJECT SECTION */
+
+
+.featured____projects{
+
+grid-area: feat;
+
+margin: 0px;
+
+
+}
+
+
+.projects____content{
+
+    
+ padding: 0px 20px;
+ margin: 0px;
+   
+
+
+
+}
+
+
+.projects____img{
+
+   
+height: 212px;
+left: 24px;
+background-color: lightgreen;
+margin: 20px 0px;
+background-size: cover;
+
+
+
+
+}
+
+.projects____img img{
+
+   width: 100%;
+height: 100%;
+
+}
+
+
+.projects____text{  
+height: 110px;
+left: 27px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 29px;
+
+margin: 0 0 30px 0;
+
+
+
+
+}
+
+.projects____text h1{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 17px;
+    color: #024434;
+    margin: 0;
+
+}
+
+.projects____text p{
+
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 17px;
+    margin: 0;
+    
+
+}
+
+
+
+
+.projects___code{
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+       margin-top: 5px;
+    
+    }
+
+
+
+    .code___tag{
+        background-color: #fbe3eb;
+        height: 22px;
+        width: fit-content;
+        padding: 0px 10px;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 11px;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8px 5px 10px 0;
+       
+    }
+
+
+
+/* ARTICEL SECTION */
+
+
+
+.THOUGHTS____container{
+grid-area: thought;
+top: 50px;
+background-color: rgb(255, 255, 255);
+justify-content: center;
+align-items: center;
+}
+
+.THOUGHTS____img img
+{
+   
+    height: 205px;
+}
+
+.THOUGHTS____text{
+
+    
+    height: 319px;
+    left: 24px;
+    top: 2757px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content:space-evenly;
+
+
+
+
+}
+.THOUGHTS____text h1, .more-thougts-small{
+
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+     margin: 0px;
+     color: black;
+    
+
+
+}
+
+.THOUGHTS____text, .THOUGHTS-MORE____text p{
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0px;
+
+
+}
+
+
+
+
+
+
+
+/* MORE THOUGTS */
+
+.THOUGHTS-MORE____text{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+.THOUGHTS-MORE____text p{
+
+text-decoration:underline;
+
+
+}
+
+.articel{
+
+margin: 25px 0;
+}
+
+.color {
+
+color: red;    
+}
+
+.more-thougts-small{
+    font-size: 17px;
+text-decoration: underline;
+
+}
+
+
+
+
+
+/* SKILLS CONTENT */
+
+.skills___container{
+
+grid-area: skill;
+    width: 375px;
+   
+    left: 0px;
+    top: 3478px;
+    
+    background: #F4F4F4;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
