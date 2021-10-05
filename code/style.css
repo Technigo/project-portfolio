@@ -12,9 +12,10 @@ body {
     background-color: white;
 }
 h1 {
-  font-weight: 700;
-  font-size: 3rem;
-  margin: 15px 0;
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin: 25px 0;
+  
 }
 h2 {
   font-weight: 500;
@@ -24,6 +25,7 @@ h3 {
   font-weight: 700;
   font-size: 2rem;
 }
+/*Header*/
 .header{
     display: flex;
     flex-direction: column;
@@ -31,7 +33,7 @@ h3 {
     background-image: url("./assets/marblejpg.jpg");
     background-size: cover;
     width: 100%;
-    border-bottom: solid 15px yellow;
+    border-bottom: solid 10px yellow;
    
   }
 
@@ -57,52 +59,35 @@ h3 {
     padding: 10px;
   }
   .profile img {
-    width: 150px;
+    width: 180px;
     border-radius: 50%;
-    border: solid 10px #FB33DB;
+    border: solid 8px #FB33DB;
     margin-bottom: 15px; 
+    
   }
   .profile-wrapper {
     max-width: 700px;
     text-align: center;
     margin: 10vh auto 0 auto;
   }
-  .social-nav {
-   padding: 10px;
-   margin: 5px;
-  }
-  .social-nav a{
-    padding: 10px;
-   margin: 10px;
-   font-family: "Font Awesome 5 Brands";
-   font-size: 1.75rem;
-   color: black;
-  }
-
+  
+/*The skills*/
   .tech{
-    background-color: whitesmoke;
+    background-color:white;
     text-align: center;
     width: 100%;
     margin: 40px 0;
     padding: 30px;
   }
 
-  .tech-skills{
-    max-width: 900px;
-    margin: 30px auto;
-    /*padding: 10px 40px;*/
-  }
 
-.tech-skills h3{
-padding: 15px;
-margin: 15px;
-}
 .tech-skills-wrapper {
   display: flex;
   flex-direction: column;
   justify-items: center;
   
 }
+
 .tech-skills-wrapper p{
   font-size: 1.5rem;
   line-height: 1.5;
@@ -114,17 +99,53 @@ margin: 15px;
 
 }
 .code-skills, .science-skills {
-  width: 70%;
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 10px;
 }
+.code-skills:hover, .science-skills:hover{
+  background-color: white;
+}
+/*Footer*/
+.footer{
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  margin: 0 auto;
+}
+.social-nav {
+  padding: 10px;
+  display: block;
+ }
+ .social-nav a{
+   padding: 10px;
+  margin: 10px;
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.75rem;
+  color: black;
+ }
 
+ /*Media*/
 @media (min-width: 750px){
 
 }
 
 @media (min-width: 950px) {
 
+  .tech-skills-wrapper {
+    display: flex;
+    flex-direction: row; 
+  }
+  .code-skills, .science-skills{
+    width: 50%;
+    padding: 30px 0
+  }
+  .tech-skills-wrapper p{
+    padding: 0 20px;
+  }
 }
 
 @media (min-width: 1200px) {
-  
+
 }
