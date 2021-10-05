@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(168, 164, 164);
+    background-color:white;
     margin: 0px;
     color: black;
 }
@@ -20,19 +20,20 @@ body{
     height: 40px;
     left: 220px;
     top: 48px;
-    background-color: black;
-   
 }
-
 
 .icon {
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-     border: 1px solid white;
-     border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
 }
 
+.circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  
+}
 
 .top_text{
     position: absolute;
@@ -62,68 +63,67 @@ body{
     border-radius: 50%;
 }
 
-
-/* .summary{
-height: auto;
-width: 100%;
-left: 0px;
-top: 520px;
-background: #F4F4F4; */
-/* opacity: 0.3;
-background-color: darkcyan;
-} */
+/* main content body */
 .main_content{
-    margin: 10% 10%;
-    background-color: purple;
     display: flex;
     flex-direction: column;
+    text-align: -webkit-center;
+    font-family: Roboto;
+    font-weight: bold; /*No esta aplicado*/
 }
 
 .summary{
     width: auto;
     height: auto;
-    font-family: Montserrat;
+    /* font-family: Montserrat;
     font-style: normal;
-    font-weight: normal;
+    font-weight: normal; */
     font-size: 17px;
     line-height: 29px;
     color: #000000;
     display: flex;
+    background: #F4F4F4;
 }
+
+.summary_text{
+    margin: 15% 10%;
+}
+
 .summary_icon{
     height: 11px;
     width: 55px;
 }
 
-.red{
-    background-color: firebrick;
+.red {
+    background: #FA382F;
+    color:  #FFFFFF;
+    width: fit-content;
+}
+
+.red-word{
+    color: #FA382F;
     font-family: Roboto;
-    font-weight: 700;
-    text-align: -webkit-center;
+    font-weight: bold; /*No esta aplicado*/
 }
+
 .tech{
-height: auto;
-width: 100%;
-/* margin: 10% 10%; */
-/* background: white; */
-/* opacity: 0.3; */
-background-color: darkgoldenrod;
-}
-
-
-.featured-projects{
-height: auto;
-width: 100%;
-/* background: #F4F4F4; */
-/* opacity: 0.3; */
-background-color: darkmagenta;
-}
-
-
-.other-projects{
-    background-color: darkolivegreen;
+    height: auto;
     width: 100%;
 }
+
+.tech_text{
+    margin: 10% 10%;
+}
+
+.featured-projects, .other-projects{
+    width: 100%;
+    background: #F4F4F4;
+}
+
+.card_technigo, .card_other{
+    margin: 10% 10%;
+}
+
 
 .my-thoughts{
     background-color: deepskyblue;
@@ -133,25 +133,57 @@ background-color: darkmagenta;
 .skills{
     height: auto;
     width: 100%;
-    left: 0px;
-    /* top: 3478px; */
-/* background: #F4F4F4; */
-/* opacity: 0.3; */
-    background-color: greenyellow;
+    background: #F4F4F4;
+    padding: 20px 0px;
+}
+
+.skills_main{
+    display: inline-flex;
+    font-size: 0.9rem;
+    gap: 2.5rem;
+}
+
+.skills_division{
+    margin: 0px;
+}
+
+.skills_subtitle{
+   color: #FA382F;
+}
+
+.skills p {
+    margin: 0px;
+}
+
+.more {
+    display: none;
 }
 
 .social-media{
-    background-color: hotpink;
+    background-color: rgb(214, 214, 178);
     width: 100%;
+    padding: 20px 0px;
+}
+
+.bottom_icons{
+    width: 130.5px;
+    height: 40px;
+}
+
+.bottom_text{
+    color: #FA382F;
+    display: inline-flex;
+    font-size: 0.6rem;
 }
 
 .footer{
-position: absolute;
-width: 100%;
-height: 302px;
-left: 0px;
-text-align: -webkit-center; 
-/* top: 4200px; */
-background: #072BCE;
-    /* background-color: lightyellow; */
+    position: absolute;
+    font-family: Roboto;
+    width: 100%;
+    height: 250px;
+    left: 0px;
+    text-align: -webkit-center; 
+    background: #072BCE;
+    color:#FFFFFF;
+    padding: 15% 0%;
 }
