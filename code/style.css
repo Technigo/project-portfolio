@@ -1,7 +1,7 @@
 /* GLOBAL STYLES */
 
 :root {
-  --prim: rgba(244, 244, 244, 1);
+  --prim: #e3e3e3;
   --sek: #FA382F;
 
 }
@@ -9,47 +9,11 @@
 
 * {
   box-sizing: border-box;
-  }
-
-
-body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-}
-
-/* HEADER SECTION */
-
-header {
-  background-image: url("https://www.placecage.com/375/520");
-  height: 520px;
-  color: white;
-}
-
-.social-media-links {
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
-  width: 130.5px;
-  height: 40px;
-  right: 24.5px;
-  top: 48px;
-}
-
-.social-media-links img {
-  width: 40px;
-  height: 40px;
-}
-
-
-.headline {
-  position: absolute;
-  margin: 0;
-  width: 220px;
-  height: 202px;
-  left: 24px;
-  top: 121px;
-}
+  font-family: 'Roboto', sans-serif;
+  }
 
 h1 {
   margin: 0;
@@ -57,40 +21,87 @@ h1 {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
-  letter-spacing: 4%;
-  
+  letter-spacing: 0.04em;  
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  line-height: 49px;
+}
+
+h3 {
+  background-color: var(--sek);
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  height: 27px;
+  margin: 0 -2px;
+  text-align: center;
+
+  color: #FFFFFF;
+} 
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+ }
+
+/* HEADER SECTION */
+
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* making the header 520px high */
+  grid-template-rows: repeat(13, 40px);
+  background-image: url("https://www.placecage.com/1920/665");
+  object-fit: cover;
+  color: black;
+}
+
+.social-media-links {
+  grid-column: 8/12;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media-links img {
+  width: 40px;
+  height: 40px;
+}
+
+.headline {
+  grid-column: 2/10;
+  grid-row: 5;
 }
 
 .profession1 {
-  margin: 0;
   font-size: 40px;
-  font-weight: bold;
   line-height: 49px;
-  letter-spacing: 0%;
 }
 
 .profession2 {
-  margin: 0;
   font-size: 24px;
-  font-weight: bold;
   line-height: 40px;
-  letter-spacing: 0%;
 }
 
 
 .profile-pic {
-    /* Positioning */
-    position: absolute;
-    top: 356px;
-    right: 24px;
-  
+    grid-column: 6/12;
+    grid-row: 10;
+    
     width: 180px;
     height: 180px;
 
     border-radius: 50%;
     border: 2px solid whitesmoke;
   
-    /* nothing sticks out of the circle */
     overflow: hidden;
   }
   
@@ -98,3 +109,55 @@ h1 {
     width: 100%;
   }
 
+
+/* INTRO-SECTION */
+  
+ .intro-section {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: repeat(9, 40px);
+   background-color: var(--prim);
+ } 
+
+ .line {
+  border: 1px solid var(--sek);
+  width: 55px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+ .dot {
+  margin-left: -5px;
+  height: 10px;
+  width: 10px;
+  background-color: var(--sek);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+ .intro-section p {
+  grid-column: 2/12;
+  grid-row: 2;
+ }
+
+  /* TECH-SECTION */
+
+  .tech-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 40px);
+   }
+  
+   
+  .tech-section h3 {
+    grid-column: 6/8;
+    grid-row: 2;
+  } 
+   
+
+   .tech-section p {
+    position: relative; 
+    grid-column: 2/12;
+    grid-row: 3;
+    text-align: center;
+   }
