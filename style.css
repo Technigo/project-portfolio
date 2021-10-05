@@ -1,10 +1,83 @@
 body {
-  background-color: aquamarine;
+  /*background-color: aquamarine;*/
+  margin: 0;
+  font-family: roboto;
 }
 
 header {
-  background-image: url(./images/brush.webp);
-  border: cornflowerblue;
-  height: 600px;
+  height: 520px;
+  width: 375px;
+  /*background-size: cover;*/
+  left: 0;
+  top: 0;
+  position: absolute; /*messes up my top margin if used*/
+  background: url(./images/header-image.jpg);
+}
+
+.icon-header {
+  position: absolute;
   display: flex;
+  width: 130.5px;
+  height: 40px;
+  left: 220px;
+  top: 48px;
+  /*border-radius: 10%;
+  align-items: right;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;*/
+}
+
+.profile-picture {
+  position: absolute;
+  left: 171px;
+  top: 385px;
+  width: 150px;
+  height: 150px;
+  border-radius: 80px;
+  object-fit: cover;
+  filter: grayscale(20%);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 20px;
+  position: relative;
+  top: 120px;
+  left: 5px;
+  column-width: 10px;
+  color: blueviolet;
+}
+
+.line {
+  border: 1px solid blue;
+  display: inline-block;
+  width: 40px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.dot {
+  position: absolute;
+  /*display: inline-block;*/
+  border-radius: 50px;
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+}
+
+.intro-section {
+  position: absolute;
+  display: flex;
+  background: #f4f4f4;
+  opacity: 0.3;
+  box-sizing: border-box;
+  height: 324px;
+  width: 375px;
+  top: 520px;
+  padding: 49px 24px 43px 24px;
+  font-size: 17px;
+  line-height: 29px;
 }
