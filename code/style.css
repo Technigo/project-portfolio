@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(62, 204, 214);
+  /* background-color: rgb(62, 204, 214); */
+  font-family: "Roboto", sans-serif;
 }
 
 .background-img {
@@ -13,14 +14,39 @@ body {
 
 .title {
   position: absolute;
-  display: flex;
-  flex-direction: column;
   width: 220px;
-  height: 202px;
+  height: 150px;
   left: 24px;
   top: 121px;
   color: white;
   letter-spacing: 0.04em;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.portfolio {
+  /* not working  */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}
+
+.name p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  margin: 5px;
 }
 
 h1 {
@@ -29,6 +55,16 @@ h1 {
   font-weight: bold;
   font-size: 40px;
   line-height: 49px;
+  margin: 5px;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+  margin: 5px;
 }
 
 .soMe {
@@ -53,7 +89,7 @@ h1 {
 }
 
 .main-section {
-  background-color: blanchedalmond;
+  /* background-color: #f4f4f4; */
   display: flex;
   flex-direction: column;
   width: 360px;
@@ -61,6 +97,7 @@ h1 {
 }
 
 .intro-section {
+  background-color: #f4f4f4;
   border: solid crimson 1px;
   display: flex;
   align-self: center;
@@ -71,18 +108,32 @@ h1 {
 }
 
 .intro-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 29px;
 }
 
 h3 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 27px;
   text-align: center;
   background-color: crimson;
   color: white;
-  width: 200px;
+  width: fit-content;
   align-self: center;
 }
 
 .tech-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 29px;
   border: solid crimson 1px;
   display: flex;
   align-self: center;
@@ -92,21 +143,17 @@ h3 {
 }
 
 .projects-section {
-  border: solid black 2px;
-  background-color: seashell;
+  border: solid black 1px;
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
 }
-.projects-section h3 {
-  width: 300px;
-  align-self: center;
-}
+
 .project-card-1 {
   border: solid black 2px;
   width: 330px;
   height: 340px;
   align-self: center;
-  /* flex-wrap: wrap; */
   margin-top: 20px;
 }
 
@@ -116,15 +163,16 @@ h3 {
 }
 
 .project-card-1 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
   color: white;
   text-align: center;
-  border: solid black 1px;
   position: absolute;
   width: 236.34px;
   height: 47px;
   left: 70px;
-  top: 1074px;
-  /* object-fit: cover; */
+  top: 1340px;
 }
 
 h6 {
@@ -133,10 +181,6 @@ h6 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
-/* .project-card-1 p {
-  margin-bottom: 5px;
-} */
 
 .lang {
   margin-top: 5px;
@@ -161,16 +205,18 @@ h6 {
 }
 
 .project-card-2 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
   color: white;
   text-align: center;
-  border: solid black 1px;
   position: absolute;
   width: 236.34px;
   height: 47px;
   left: 70px;
-  top: 1425px;
-  /* object-fit: cover; */
+  top: 1700px;
 }
+
 .other-projects {
   text-align: center;
   color: crimson;
@@ -211,11 +257,9 @@ h6 {
 
 .skills-section h3 {
   position: absolute;
-  width: 85px;
-  height: 27px;
-  left: 145px;
-  top: 2850px;
+  top: 3115px;
 }
+
 .skills-section-1 {
   display: flex;
   flex-direction: column;
@@ -236,14 +280,29 @@ h6 {
   margin-top: 7px;
 }
 
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
 .linkedin-img,
 .github-img,
 .stackoverflow-img {
-  color: #fa382f;
+  /* color: #fa382f; */
   width: 60px;
   height: 60px;
-  /* display: flex;
-  flex-direction: column; */
+  margin: 10px;
+}
+
+.SoMe-text {
+  color: #fa382f;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* fix the distance */
+  gap: 30px;
 }
 
 footer {
@@ -252,6 +311,7 @@ footer {
   height: 302px;
   text-align: center;
   align-items: center;
+  justify-content: center;
   color: white;
   display: flex;
   margin: 0px;
@@ -260,7 +320,4 @@ footer {
 .contact-section {
   width: 327px;
   height: 158px;
-  /* align-self: center;
-  justify-content: center; */
-  /* margin: 0px; */
 }
