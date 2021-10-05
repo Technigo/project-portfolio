@@ -1,19 +1,69 @@
-
+*{
+        box-sizing: border-box;
+}
 
 body{
+    min-height: 100vh;
+   
+}
+
+h1{
+    font-family: Montserrat;
+}
+
+h2{
+    font-family: roboto
+}
+
+h3{
+    font-family: roboto;
+}
+
+.header{
+    background-image: url(./img/cold-dip.png);
+    background-size: cover;
+    padding: 2em;
+    position: relative;
+  
+}
+.header-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-logos{
+   text-align: right;
+ 
+}
+
+.social-logos img{
+    height: 5vh;
+    
+}
+
+.profile-img{
+    width: 180px;
+    height: 180px;
+}
+.profile-img-container img{
+    border-radius: 100%;
+    position: absolute;
+    right: 2vh;
+    bottom: -20pt;
+    border: solid 2 px black;
+}
+
+.profile-img-container{
+    text-align: right;
+}
+
+.main{
+    background-color: coral;
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    border: 1px solid red;
-}
-
-header{
-    background-color: aquamarine;
-}
-
-main{
-    background-color: burlywood;
+    grid-template-rows: repeat(8, 1fr);
 }
 
 footer{
-    background-color: darkcyan;
+    background-color: wheat;
+    padding: 2em;
 }
