@@ -1,45 +1,179 @@
+:root {
+    --main: #73A347;
+    --secondary: #F4F4F4;
+}
+
 body {
     margin:0px;
-
 }
 
 h1 {
     color: white;
-    background-color: #73A347;
+    background-color: var(--main);
     display: inline;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 0px 10px;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin-top: 0px;
+    font-weight: 700;
+    /* color: white; */
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main);
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main);
+    font-size: 1.3em;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+p {
+    padding: 30px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    line-height: 1.9;
+    font-size: 1.5em;
+}
+
+.thoughts-4 h3 {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.thoughts-4 h4 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 2em;
+}
+
+.thoughts-4 h2 {
+    color: var(--main);
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.skills-5 h2 {
+    font-size: 1em;
+    color: var(--main);
+}
+
+.skills-5 h3 {
+    color:black;
+}
+
+
+.more-6 .fa-github, .fa-stack-overflow, .fa-linkedin-in{
+    color:red;
+    size: 5px;
+}
+
+
+.contact-7 h1 {
+    text-align: center;
+}
+
+.contact-7 p {
+    text-align: center;
+}
+
+.p-bold {
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 900;
+    line-height: none;
+}
+
+.header-1 p {
+    font-family: 'Roboto', sans-serif;    
+}
+
+
+/* Byt namn på denna!! */
 .green {
-    background-color: #F4F4F4;
+    background-color: var(--secondary);
 }
 
 .header-1 {
+    background-image: url(./Pictures/IMG_3774.JPG);
+    background-size: cover;
+    position: relative;
 }
 
-.picture {
-    display: block;
+.icons {
+    display: flex;
+    justify-content: end;
     width: 100%;
-    max-width: 100%;
-
 }
 
+.fa-linkedin-in, .fa-github, .fa-stack-overflow {
+    margin-top: 40px;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border:2px solid white;
+    color: white;
+}
+
+.fa-feather {
+    margin-right: 30px;
+}
+
+.header-text {
+    margin-top: 70px;
+    padding-bottom: 150px;
+    padding-left: 30px;
+}
+
+/* För att få en bild att "flyta ner" så skall bilden vara positioned absolute medan föräldern är positioned relatve */
 .profile-pic {
     border-radius: 50%;
-    width: 200px;
+    width: 150px;
     display: block;
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    border: 3px solid white;
 }
 
-.main-section {
-    margin: 0px;
+.main-section h1{
     text-align: center;
 }
-.tech-2 {}
-.featured-projects-3 {
 
+/* Dessa inställningar skall gälla för alla P:n */
+/* .green {
+    padding: 30px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    line-height: 1.9;
+} */
+
+.tech-2 {
+    text-align: center;
+}
+
+.featured-projects-3 {
+    padding: ;
 }
 
 .lime-grön {
@@ -50,13 +184,15 @@ h1 {
     display: inline;
 }
 
-.thoughts-4 {}
+.thoughts-4 {
+    padding: 30px;
+}
 .skills-5 {
-
+    padding: 30px;
 }
 .more-6 {}
 .contact-7 {
-    background-color: #73A347;
+    background-color: var(--main);
 }
 .contact-7 p {
     color: white;
@@ -72,21 +208,33 @@ Mobil -  */
 /* Paddda -  */
 @media (min-width: 768px) and (max-width: 991px) {
     .green {
-        background-color: #E6EFE5;
+        /* background-color: #E6EFE5; */
+    }
+    :root {
+        --main: #73A347;
+        --secondary: #E6EFE5;
     }
     
 }
 
 /* Liten Dator -  */
 @media (min-width: 992px) {
-    .green {
+    /* .green {
         background-color: #E6EFE5;
+    } */
+    :root {
+        --main: #73A347;
+        --secondary: #E6EFE5;
     }
 }
 
 /* Stor Dator -  */
 @media (min-width: 1200px) {
-    .green {
+    /* .green {
         background-color: #E6EFE5;
+    } */
+    :root {
+        --main: #73A347;
+        --secondary: #E6EFE5;
     }
 }
