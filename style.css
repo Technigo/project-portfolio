@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   min-width: 325px;
   font-style: normal;
-  background-color: rgb(244, 244, 244, 0.3);
+  background-color: rgb(244, 2544, 244, 0.3);
 }
 
 *,
@@ -73,11 +73,10 @@ h6 {
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("./Pictures/header.jpeg");
+    url("./pictures/DSC_6743.JPG");
   background-size: cover;
   height: 520px;
   color: rgb(244, 244, 244);
-  background-position: center;
   padding: 39px 24px 29px 24px;
 }
 
@@ -220,12 +219,25 @@ h6 {
   margin-bottom: 80px;
 }
 
+.main__tech span {
+  color: var(--main-color);
+}
+
 /*------------------Project container-------------------- */
 
 .main__project {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.main__project a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+h3 a:hover {
+  color: var(--secondary-color);
 }
 
 .main__project__picture {
@@ -239,33 +251,33 @@ h6 {
   color: rgb(244, 244, 244);
 }
 
-.weather-image {
+.project1-image {
   background: url("./pictures/weather.jpg");
   background-size: cover;
   background-position: center bottom;
   height: 200px;
 }
 
-.business-image {
+.project2-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./pictures/escape__house.JPG");
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
   height: 200px;
 }
 
 .project3-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./pictures/escape__house.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./pictures/github-tracker.JPG");
   background-size: cover;
-  background-position: center bottom;
+  background-position: center top;
   height: 200px;
 }
 
 .project4-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./pictures/escape__house.JPG");
-  background-position: center bottom;
+    url("./pictures/guess__who.JPG");
+  background-position: center top;
   background-size: cover;
   height: 200px;
 }
@@ -312,13 +324,13 @@ h6 {
 .image-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./pictures/escape__house.JPG");
-  background-position: center bottom;
+  background-position: center center;
 }
 
 .image-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./pictures/escape__house.JPG");
-  background-position: center bottom;
+  background-position: center center;
 }
 
 .main__thoughts__thought {
@@ -377,6 +389,15 @@ h6 {
   margin-top: 10px;
 }
 
+.main__more__icons__icon a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.main__more__icons__icon a:hover {
+  color: var(--secondary-color);
+}
+
 /*-----------------------Footer-------------------- */
 
 .footer {
@@ -406,6 +427,19 @@ h6 {
 
 .footer h2 {
   background-color: var(--secondary-color);
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(244, 244, 244);
+}
+
+footer a:hover {
+  color: var(--highlight-color);
+}
+
+.flexbox {
+  width: 100%;
 }
 
 .display {
@@ -483,6 +517,7 @@ h6 {
   .main__project {
     display: flex;
     flex-direction: column;
+    font-size: 20px;
   }
   .flexbox {
     display: flex;
@@ -494,30 +529,22 @@ h6 {
     flex-direction: column;
   }
 
-  .weather-image {
-    height: 200px;
-  }
-
-  .business-image {
-    height: 200px;
-  }
-
-  .project3-image {
-    height: 200px;
-  }
-
-  .project4-image {
-    height: 200px;
-  }
-
   .flexbox-row {
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 8px;
   }
 
+  .main__thoughts {
+    font-size: 20px;
+  }
+
   .flexbox-row h3 {
     margin-top: 0;
+  }
+
+  .main__thoughts p {
+    font-size: 20px;
   }
 
   .flexbox-row__thoughts {
@@ -534,6 +561,14 @@ h6 {
     font-size: 15px;
   }
 
+  .main__skills {
+    font-size: 20px;
+  }
+
+  .main__skills h4 {
+    padding-top: 40px;
+  }
+
   /*-----------------------Footer-------------------- */
 
   .display {
@@ -546,9 +581,12 @@ h6 {
   }
 }
 
+/* 
+--------------------------DESKTOP ADAPTION ------------------------- */
+
 @media (min-width: 1025px) {
   .header {
-    background-position: center bottom;
+    background-position: bottom center;
     padding: 49px 20% 29px 20%;
   }
 
@@ -592,10 +630,19 @@ h6 {
     padding: 49px 20% 29px 20%;
   }
 
+  .intro__text {
+    font-size: 25px;
+  }
+
   /*-----------------Main-Content ----------------- */
 
   .main {
     padding: 0 20% 29px 20%;
+  }
+
+  /*-----------------Main-tech ----------------- */
+  .main__tech {
+    font-size: 25px;
   }
 
   /*------------------Project container-------------------- */
@@ -604,6 +651,11 @@ h6 {
     align-items: flex-start;
     width: 100%;
   }
+
+  .main__project p {
+    font-size: 18px;
+  }
+
   .flexbox {
     display: flex;
     column-gap: 50px;
@@ -636,8 +688,13 @@ h6 {
     column-gap: 40px;
   }
 
+  .main__thoughts p {
+    font-size: 28px;
+  }
+
   .main__thoughts__more-thougts-thought {
     margin-bottom: 20px;
+    font-size: 25px;
   }
 
   .main__more__icons__icon__text p {
