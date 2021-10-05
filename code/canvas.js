@@ -40,9 +40,9 @@ const calculateBG = () => {
     // if dot is withing  assigned mouse focus radius color it in pink
     // otherwise remove pink color
     if (dist < ATTACK_DISTANCE) {
-      dot.classList.add("pink");
+      dot.classList.add("color");
     } else {
-      dot.classList.remove("pink");
+      dot.classList.remove("color");
     }
     //?
     dot.style.boxShadow = `${dx * scaleFactor * -1}px ${dy * scaleFactor * -1}px 4px 0 rgba(0, 0, 0, .1) inset`;
