@@ -7,9 +7,10 @@ body {
 .header {
   background-image: url("./image/background-img.jpg");
   background-repeat: no-repeat;
-  opacity: 95%;
+  /* opacity: 95%; */
   background-size: cover;
-  height: 460px;
+  object-fit: cover;
+  height: 520px;
   width: 100%;
   color: white;
   position: relative;
@@ -18,43 +19,75 @@ body {
 
 .icon-links-container {
   display: flex;
-  position: absolute;
-  justify-content: space-evenly;
-  top: 48px;
-  right: 20px;
+  justify-content: flex-end;
+  padding: 10px 10px;
+}
+
+.icon-links-header {
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+.icon-links-header:hover {
+  transform: scale(1.1);
 }
 
 .icon-header {
-  width: 50px;
-  height: 40px;
-  left: 220px;
-  top: 48px;
-}
-
-.profile-picture {
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  left: 171px;
-  top: 356px;
-  border-radius: 100%;
-  border: white 3px solid;
+  width: 40px;
 }
 
 .header-text-container {
-  position: absolute;
-  width: 220px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
   height: 202px;
-  left: 24px;
+  position: absolute;
   top: 121px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 18px;
-  letter-spacing: 0.04em;
-  color: white;
+  left: 24px;
 }
+
+.name-class {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  align-items: center;
+}
+
+.portfolio {
+  font-weight: 400;
+  margin-right: 5px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 4%;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.patrik-name {
+  font-weight: 700;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 4%;
+  margin-bottom: 2px;
+}
+
+.job-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 2px;
+}
+
+.profile-picture {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+  left: 155px;
+  top: 300px;
+}
+
 /* Intro section */
 .intro-section {
   background-color: #f4f4f4;
@@ -66,13 +99,6 @@ body {
   font-size: 16px;
 }
 
-.intro-text {
-  font-weight: 300;
-  font-size: 20px;
-  width: 70%;
-  margin: 0 auto;
-  line-height: 25px;
-}
 .red-line {
   display: inline-block;
   width: 50px;
@@ -90,6 +116,14 @@ body {
   margin-left: -5px;
   border-radius: 50%;
 }
+
+.intro-text {
+  font-weight: 300;
+  font-size: 20px;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 25px;
+}
 /* Tech section */
 .tech-section {
   font-family: "Montserrat", sans-serif;
@@ -98,11 +132,10 @@ body {
   text-align: center;
   padding: 30px 0 30px 0;
 }
-
 .tech-header {
   color: white;
   font-family: "Roboto", sans-serif;
-  background-color: #008571;
+  background-color: rgb(255, 99, 71);
   text-align: center;
   padding: 5px;
   max-width: 80px;
@@ -116,7 +149,7 @@ body {
 }
 
 .highlighted-text {
-  color: #008571;
+  color: rgb(255, 99, 71);
   font-weight: bold;
 }
 
@@ -124,21 +157,22 @@ body {
 .project-section {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  background-color: white;
   font-family: "Montserrat", sans-serif;
   align-items: center;
   padding: 30px 0 30px 0;
 }
 
-.featured-projects-header {
+.projects-header {
   color: white;
   font-family: "Roboto", sans-serif;
-  background-color: #008571;
+  background-color: rgb(255, 99, 71);
   text-align: center;
   padding: 5px;
   max-width: 280px;
   margin: 20px auto;
 }
+
 .project-card-link {
   text-decoration: none;
   color: black;
@@ -189,7 +223,7 @@ body {
 }
 
 .project-title {
-  color: #008571;
+  color: rgb(255, 99, 71);
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   margin: 15px 0 0 0;
@@ -200,7 +234,7 @@ body {
 }
 
 .arrow {
-  color: #00917c;
+  color: rgb(255, 99, 71);
   font-weight: bold;
   font-size: 20px;
 }
@@ -213,13 +247,13 @@ body {
 
 .technologies p {
   margin: 5px 10px 10px 0;
-  background-color: #c5d7bd;
+  background-color: white;
   width: fit-content;
   font-weight: 300;
   padding: 4px;
 }
 
-/* OTHER PROJECTS SECTION */
+/* Other projects section */
 .other-projects-section {
   display: flex;
   flex-direction: column;
@@ -230,7 +264,7 @@ body {
 
 .other-projects-header {
   color: white;
-  background-color: #008571;
+  background-color: rgb(255, 99, 71);
   text-align: center;
   padding: 5px;
   max-width: 240px;
@@ -254,4 +288,139 @@ body {
 
 .projects-list p {
   margin-bottom: 5px;
+}
+
+/* My thoughts section */
+.my-thoughts-section {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: white;
+  padding: 30px 0 30px 0;
+}
+
+.my-thoughts-header {
+  color: white;
+  background-color: rgb(255, 99, 71);
+  padding: 5px;
+  max-width: 240px;
+  margin: 20px auto;
+}
+
+.my-thoughts-text {
+  padding: 20px;
+  width: 70%;
+  margin: 20px auto;
+  font-weight: 300;
+}
+/* Skills section */
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  padding: 30px 0 30px 0;
+}
+
+.skills-header {
+  color: white;
+  background-color: rgb(255, 99, 71);
+  text-align: center;
+  padding: 5px;
+  max-width: 240px;
+  margin: 20px auto;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: "Montserrat", sans-serif;
+}
+
+.skills-box {
+  flex-direction: column;
+  text-align: center;
+  width: 35%;
+  height: auto;
+}
+
+.skills-box > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-box > li {
+  list-style: none;
+  font-weight: 300;
+}
+
+.skills-category {
+  color: rgb(255, 99, 71);
+  font-family: "Roboto", sans-serif;
+}
+/* More section */
+.for-more-section {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  padding: 30px 0 30px 0;
+}
+
+.for-more-header {
+  color: white;
+  text-align: center;
+  background-color: rgb(255, 99, 71);
+  padding: 5px;
+  max-width: 240px;
+  margin: 20px auto;
+}
+
+.for-more-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px 0 30px 0;
+}
+
+.icon-links {
+  margin: 30px;
+}
+
+.icon-links:hover {
+  transform: scale(1.1);
+}
+
+.for-more-icons {
+  color: black;
+}
+/* Footer */
+.footer {
+  background-color: rgb(255, 99, 71);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 30px 0 30px 0;
+}
+
+.footer-contact {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.address-section {
+  font-style: normal;
+}
+
+.address-section > a {
+  text-decoration: none;
+  color: black;
+}
+
+.tel-nr > a {
+  text-decoration: none;
+  color: black;
 }
