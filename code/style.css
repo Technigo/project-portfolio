@@ -25,11 +25,8 @@ header {
 
 .nav-icons {
   position: absolute;
-  /* height: 100px; */
-  left: 220px;
-  top: 48px;
-  /* display: flex;
-  flex-direction: row; */
+  right: 5vh;
+  top: 55px;
 }
 
 .nav-item {
@@ -53,7 +50,7 @@ header {
   position: absolute;
   width: 220px;
   height: 202px;
-  left: 24px;
+  left: 5vh;
   top: 150px;
   color: white;
 }
@@ -67,17 +64,21 @@ h1 {
 }
 
 h2 {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 25px;
 }
 
 .portfolio-text {
   font-weight: 200;
   font-size: 17px;
+  text-transform: uppercase;
 }
 
-h3 {
+.name {
   font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 400;
 }
 
 .profile-img {
@@ -86,15 +87,20 @@ h3 {
   border: 2px solid white;
   border-radius: 50%;
   position: absolute;
-  left: 171px;
+  right: 8vw;
   top: 356px;
 }
 
 section {
   width: 100%;
   margin: 0;
-  text-align: center;
+  text-align: left;
   padding: 2rem 0;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
 }
 
 section:nth-child(2n + 1) {
@@ -126,29 +132,49 @@ p {
   margin: 0 2rem;
 }
 
+.section-heading-container {
+  display: flex;
+  justify-content: center;
+}
+
 h4 {
-  background-color: red;
-  color: white;
-  width: fit-content;
-  margin: auto;
-  font-size: 23px;
-  line-height: 27px;
+  background-color: #fa382f;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3px;
+  letter-spacing: 0.03em;
+}
+
+.tech-section p {
+  text-align: center;
 }
 
 h5 {
-  color: red;
+  color: #fa382f;
   font-size: 20px;
   padding-top: 30px;
   padding-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h6 {
-  color: red;
+  color: #fa382f;
   margin: 1rem 2rem 0 2rem;
   text-align: left;
   font-size: 17px;
   line-height: 29px;
+  text-transform: uppercase;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* a:hover {
+  border: 2px solid gray;
+} */
 
 a > p {
   text-align: left;
@@ -175,7 +201,6 @@ a > p {
 .for-more-icons {
   margin: 3rem 3.5rem 1rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -195,10 +220,11 @@ footer > h6 {
   font-weight: bold;
   font-size: 21px;
   line-height: 25px;
+  letter-spacing: 0.03em;
   color: white;
   /* or 119% */
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 3rem;
 }
 
@@ -211,10 +237,103 @@ footer > p {
   padding: 0;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .nav-icons {
+    right: 10vw;
+    top: 10vh;
+  }
 
+  .nav-item {
+    border: solid white 3px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .nav-image {
+    width: 25px;
+    height: 25px;
+    margin-top: 25%;
+  }
+
+  .header-info {
+    position: absolute;
+    width: 300px;
+    height: 202px;
+    left: 9vw;
+    top: 25vh;
+  }
+
+  .profile-img {
+    height: 230px;
+    width: 230px;
+    border: 3px solid white;
+    position: absolute;
+    right: 12vw;
+    top: 31vh;
+  }
+
+  .container {
+    width: 600px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  .featured-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .featured-project-card {
+    width: 45%;
+  }
+
+  .for-more-icons {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+  .github-icon,
+  .stack-overflow-icon,
+  .linkedin-icon {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media (min-width: 992px) {
+  .header-info {
+    position: absolute;
+    width: 300px;
+    height: 202px;
+    left: 9vw;
+    top: 25vh;
+  }
 
-} */
+  .profile-img {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    right: 12vw;
+    top: 40vh;
+  }
+
+  .container {
+    width: 910px;
+  }
+
+  .for-more-icons {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .github-icon,
+  .stack-overflow-icon,
+  .linkedin-icon {
+    width: 90px;
+    height: 90px;
+  }
+}
