@@ -14,24 +14,31 @@ body {
 .headline {
     background-color: red;
     color: whitesmoke;
-    font-family: Montserrat;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 25px;
     text-align: center;
     margin-top: 24px;
-    padding: 2px;
+    padding: 3px;
 }
+
+
+.container {
+    width: 320px;
+	margin: 0 auto;
+}
+
 /* -------- HEADER SECTION --------*/
 
 .header-container {
     position: relative;
-    background-image: url(./images/bg-image.png);
+    background-image: url(./images/yellow-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 520px;
+    height: 500px;
     /* font-family: 'Roboto', sans-serif; */
     color: #FFFFFF;
   
@@ -42,25 +49,26 @@ body {
     justify-content: space-between;
     position: absolute;
     top: 48px;
-    right: 50px;
-    width: 130.5px;
-    height: 50px;
+    right: 40px;
+    /* width: 130.5px;
+    height: 50px; */
    
 }
-.header-icons:hover {
-opacity: 0.3;
+.linkedin-icon:hover, .github-icon:hover, .sof-icon:hover {
+    opacity: 0.3;
 }
 
 .linkedin-icon, .github-icon, .sof-icon {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
   } 
+
 .header-text {
     position: absolute;
     width: 220px;
-    height: 200px;
     left: 24px;
-    top: 121px;
+    top: 130px;
     
     padding: 10px 0;
     font-weight: 400;
@@ -89,28 +97,32 @@ opacity: 0.3;
     position: absolute;
     width: 180px;
     height: 180px;
-    left: 171px;
+    left: 50%;
+    
     top: 356px;
     border: solid 2px #F4F4F4;
     border-radius: 50%;
 }
 
+
 /* -------- SUMMARY SECTION --------*/
 
 .summary-section {
    
-    height: 324px; 
+    /* height: 324px;  */
     background: #F4F4F4;
 }
 
 .summary-text {
     font-weight: 400;
-    font-style: normal;
+    font-family: 'Roboto', sans-serif; 
     font-size: 17px;
     line-height: 29px;
+    text-align: justify;
     margin: auto;
-    padding: 20px;
-    transform: translateY(50px);
+    padding: 60px 0px;
+
+
   
 }
 
@@ -122,30 +134,32 @@ opacity: 0.3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 1298px; */
-    height: 260px;
 
 }
   .tech-section p {
-    margin: 24px;
+    /* margin: 24px 24px 40px; */
     font-size: 17px;
     line-height: 29px;
     
     text-align: center;
     color: #000000;
+    padding-bottom: 30px;
     }
 
+
+    .highlighted-text {
+        color: rgb(172, 11, 11);  
+        font-weight: bold;
+    }
 
 /* -------- FEATURED PROJECTS SECTION --------*/
 
 .projects-section {
-
-  /* height: 1298px;  */
-    height: 500px; 
     background: #F4F4F4;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 
@@ -166,17 +180,115 @@ opacity: 0.3;
 
 }
 
-/* -------- FOR MORE SECTION --------*/
 
-.for-more-section {
+.container a {
+    text-decoration: none;
+}
 
-    /* height: 1298px;  */
-      height: 200px; 
-      background: #F4F4F4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+ .project-img {
+    display: block;
+    width: 100%;
+    /* transition: 0.5s ease;  */
+    object-fit: cover;
+
   }
+ 
+ 
+
+.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(156, 166, 197, 0.6);
+    transition: 0.5s ease;
+}
+
+
+/* to disapper the overlay and the overlay text */
+.project-card:hover .overlay {
+    opacity: 0;
+  }
+.project-card:hover .overlay-title {
+    opacity: 0;
+  }
+
+
+.overlay-title {
+    position: absolute;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    top: 30%;
+    left: 20%; 
+    text-transform: uppercase;
+    color: #F4F4F4;
+}
+
+.project-title {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 0 0 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.project-text {
+    margin: 10px 0 10px 0;
+    color: #151515;
+}
+
+.arrow {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+ 
+  
+
+  .tag-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tag-wrapper p {
+    font-family: "Roboto", sans-serif;
+    color: #2b2e34;
+    font-weight: bold;
+    background-color: #fee000;
+    text-decoration: none;
+    text-transform: uppercase;
+
+  
+    /* Matching line-height and font-size here gives full control 
+       over the size of our tags to the padding*/
+    font-size: 12px; 
+    line-height: 12px;
+  
+    /* Control the size of the tags */
+    padding: 4px;
+  
+    /* Control the spacing of our tags */
+    margin: 3px;
+  
+    /* Some rounded borders */
+    border-radius: 3px;
+  }
+
+
+
 
 
 /* -------- MY THOUGHT SECTION --------*/
@@ -195,31 +307,79 @@ opacity: 0.3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 464px;  
-
+    /* height: 464px;   */
 }
 
 .skills-section p {
-margin: 24px;
+    margin: 24px;
     font-size: 17px;
     line-height: 29px;
     text-align: center;
     color: #000000; 
 }
+
+
+/* -------- FOR MORE & CONTACT SECTION --------*/
+
+.for-more-section {
+    background-color: #f3bc16;
+    color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fore-more-icons-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+.linkedin-icon-fm:hover, .github-icon-fm:hover, .sof-icon-fm:hover {
+    opacity: 0.3;
+}
+
+.linkedin-icon-fm, .github-icon-fm, .sof-icon-fm {
+    width: 60px;
+    height: 60px;
+    padding: 15px 15px 0 15px;
+    color: navy;
+  } 
+
+.fore-more-icons-container a { 
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+
 /* -------- FOOTER SECTION --------*/
 
 
 .footer-container {
-background: rgb(2, 149, 152);
-height: 302px;
-font-family: Montserrat;
+background: navy;
+/* height: 302px; */
 font-style: normal;
 font-weight: bold;
 font-size: 21px;
 line-height: 25px;
 
-
-text-align: center;
-text-decoration: none;
 color: #FFFFFF;
-} 
+}
+
+.contact-text {
+    padding: 60px;
+    text-align: center;
+
+}
+
+.contact-text a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.contact-text a:hover {
+    text-decoration: underline;
+}
