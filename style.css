@@ -1,11 +1,18 @@
+:root{
+    --yellow: #F0A500;
+    --greyblue: #334756;
+    --darkgreyblue: #082032;
+}
+
+
 *{
         box-sizing: border-box;
 }
 
 body{
     min-height: 100vh;
-    font-family: Montserrat;
-    background-color: grey;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--darkgreyblue);
     margin: 0;
    
 }
@@ -15,6 +22,9 @@ h1{
     font-style: normal;
     font-size: 40px;
     Line-height: 49px;
+    color:var(--yellow);
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 h2{
@@ -61,11 +71,6 @@ p{
     height: 200px;
 }
 
-.header-text h1 {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    color: white;
-}
 
 .header-text h2 {
     margin-block-start: 0;
@@ -83,24 +88,27 @@ p{
    text-align: right;
    padding-right: 24.5px;
    padding-top: 48px;
+  
  
 }
 
 .social-logos img{
     height: 40px;
+    /* background-color: var(--greyblue); */
+    border-radius: 50%;
 }
 
 .profile-img{
     width: 175px;
     height: 175px;
     border-radius: 100%;
+    border: 2px solid var(--greyblue)
 }
 
 .profile-img-container img{
     position: absolute;
     right: 24px;
     bottom: -16px;
-    border: solid 2 px black;
 }
 
 
@@ -109,6 +117,19 @@ p{
     background-color:white;
     display: grid;
     grid-template-rows: repeat(8, auto);
+}
+
+.label-h2 {
+    background-color: var(--yellow);
+    margin: 0 auto;
+    width: fit-content; 
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    padding: 0 3px;
 }
 
 .intro-text{
@@ -120,17 +141,7 @@ p{
     margin: 41px 24px 43px 24px;
     background-color:  #FFFFFF;
 }
-.tech h2 {
-    background-color: darkblue;
-    margin: 0 auto;
-    max-width: fit-content;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 27px;
-    color: white;
-    margin-bottom: 24px;
-    
-}
+
 
 .tech p{
     text-align: center;
@@ -143,24 +154,117 @@ p{
     
 }
 
-.featured-projects h2 {
-    background-color: darkblue;
-    margin: 0 auto;
-    max-width: fit-content; 
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 27px;
-    color: white;
-    margin-bottom: 24px;
-}
 
-.featured-projects-grid{
+/* maks kallar det portfolio section */
+.featured-projects-grid:nth-child(2n){
+    background-color: #F4F4F4;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
 }
 
+.conatiner{
+    width: 320px;
+    margin: 0 auto;
+}
+
 .projects-card{
-    background-color: darkgray;
+    background-color:none;
+}
+
+.img-container{
+    position: relative;
+}
+
+.layer{
+    display: absolute;
+    top:0;
+    bottom: 0;
+    right:0;
+    left: 0;
+    background-color: rgba(10, 10, 10, 0);
+}
+
+.img-projects{
+    width: 100%;
+}
+
+.h3-projects-card{
+    font-size: 17px;
+    line-height: 29px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--greyblue);
+    margin-block-end: 0;
+}
+
+.p-projects-card{
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 41px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.tags-container{
+    display: flex;
+}
+
+.tags-projects{
+    background-color: var(--yellow);
+    padding: 5px;
+    margin: 5px;
+    font-size: 9px;
+    line-height: 11px;
+}
+
+.h2-without-label
+{
+    
+    margin: 0 auto;
+    width: fit-content; 
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color:var(--greyblue);
+    margin-bottom: 24px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    padding: 0 3px;
+}
+
+/* ------------my thoughts-------------- */
+.my-thougths{
+    padding: 40px 24px;
+}
+
+.date{
+    font-family: roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: var(--darkgreyblue);
+    margin-block-end: 0;
+}
+
+.h3-blogg{
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+   
+    
+}
+
+.arrow{
+    font-weight: bold;
+    color: var(--yellow);
+    
 }
 
 
@@ -168,4 +272,14 @@ p{
 footer{
     background-color: wheat;
     padding: 2em;
+}
+
+@media (min-width: 768px) {
+    
+.conatiner{
+    width: 768px;
+    margin: 0 auto;
+}
+        
+
 }
