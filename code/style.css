@@ -24,12 +24,18 @@ h2 {
 h3 {
   font-weight: 700;
   font-size: 2rem;
+  border: solid 5px #FB33DB;
+  padding: 10px;
+  display: inline;
+}
+h4 {
+  font-size: 1.75rem;
 }
 /*Header*/
 .header{
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 500px;
     background-image: url("./assets/marblejpg.jpg");
     background-size: cover;
     width: 100%;
@@ -64,15 +70,17 @@ h3 {
     border: solid 8px #FB33DB;
     margin-bottom: 15px; 
     
+    
   }
   .profile-wrapper {
     max-width: 700px;
     text-align: center;
-    margin: 10vh auto 0 auto;
+    margin: 40px auto 20px auto;
+    
   }
   
 /*The skills*/
-  .tech{
+  .tech, .projects {
     background-color:white;
     text-align: center;
     width: 100%;
@@ -87,17 +95,17 @@ h3 {
   justify-items: center;
   
 }
-
-.tech-skills-wrapper p{
-  font-size: 1.5rem;
-  line-height: 1.5;
-  
-}
 .tech-skills-wrapper h4{
   font-size: 1.75rem;
   margin-bottom: 15px;
 
 }
+.tech-skills-wrapper p{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  
+}
+
 .code-skills, .science-skills {
   width: 90%;
   max-width: 900px;
@@ -112,7 +120,7 @@ h3 {
 .project-wrapper{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   text-align: center;
   width: 90%;
 
@@ -120,20 +128,45 @@ h3 {
 
 .card-project{
   margin: 40px auto;
-  padding: 20px;
+  padding: 30px;
   justify-items: center;
   background-color: whitesmoke;
+}
+.card-project h4{
+margin: 10px 0;
+}
+
+.card-project p{
+margin: 10px 0;
+font-size: 1.5rem;
+line-height: 1.5;
+
 }
 .card-project img {
   width: 100%;
 }
 
 .tag-wrapper{
+  margin: 10px 0;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .tag-wrapper p{
+padding: 4px;
+margin: 3px;
+font-size: 1rem;
+line-height: 1rem;
+background-color: yellow;
+display: inline;
+}
 
+.card-project:hover {
+  opacity: 0.6;
+  animation-name: scale;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
 }
 /*Footer*/
 .footer{
@@ -175,5 +208,13 @@ h3 {
 }
 
 @media (min-width: 1200px) {
+  .project-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 
+  .card-project{
+    width: 40%;
+  }
 }
