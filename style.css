@@ -1,7 +1,9 @@
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
-section:nth-child(2n) {
+section:nth-child(odd) {
   background-color: #f4f4f4;
 }
 section {
@@ -9,8 +11,15 @@ section {
   margin-top: 0px;
 }
 
-header {
-  height: auto;
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.329)),
+    url("header2.webP");
+  height: 520px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
 }
 .profile-img {
   border-radius: 50%;
@@ -19,9 +28,10 @@ header {
   overflow: hidden;
   object-fit: cover;
   position: absolute;
-  right: 35px;
+  right: 10%;
   top: 356px;
   border: 2px solid white;
+  z-index: 1;
 }
 .line {
   border: 1px solid teal;
@@ -37,12 +47,7 @@ header {
   border-radius: 50%;
   display: inline-block;
 }
-.header-img {
-  overflow: hidden;
-  object-fit: cover;
-  height: 520px;
-  display: block;
-}
+
 .icons-small {
   padding: 10px;
   height: 40%;
@@ -62,7 +67,7 @@ header {
   flex-direction: row;
   position: absolute;
   top: 48px;
-  right: 30px;
+  right: 10%;
   display: flex;
   width: 150px;
   justify-content: space-around;
@@ -141,7 +146,6 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   line-height: 29px;
-  padding: 0px 24px;
   margin: 0px;
   color: #383c4b;
 }
@@ -182,9 +186,10 @@ h6 {
 }
 .headertext-container {
   position: absolute;
-  left: 24px;
+  left: 7%;
   top: 121px;
   height: 202px;
+  width: 300px;
 }
 b {
   font-weight: 500;
@@ -242,13 +247,13 @@ footer {
   align-items: center;
 }
 .project-card {
-  width: 90%;
-  /*height: auto;*/
+  width: 100%;
   align-self: center;
-  margin: 10px 0px;
+  margin: 10px 24px;
 }
 .about-me {
   padding: 40px 24px 40px 24px;
+  z-index: -1;
 }
 .tech {
   padding: 40px 24px 40px 24px;
@@ -264,6 +269,9 @@ footer {
   padding: 40px 24px 40px 24px;
 }
 .my-thoughts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 40px 24px 40px 24px;
 }
 .skills {
@@ -278,12 +286,11 @@ footer {
   height: 212px;
   overflow: hidden;
   object-fit: cover;
-  /*position: relative;*/
   margin-top: 20px;
   display: block;
 }
 
-.project-text-overlay {
+.project-overlay {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -330,9 +337,6 @@ footer {
   justify-content: flex-start;
 }
 
-.project-small {
-  margin-left: 24px;
-}
 .skills-container {
   text-align: center;
   width: 45%;
@@ -353,4 +357,79 @@ footer {
 
 a {
   color: teal;
+}
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-image {
+    height: 400px;
+  }
+  .profile-img {
+    right: 100px;
+    top: 230px;
+  }
+  .icon-section {
+    top: 60px;
+    right: 100px;
+  }
+  .headertext-container {
+    left: 100px;
+    top: 100px;
+    max-width: 300px;
+  }
+  .content-p {
+    padding: 0px 60px;
+  }
+}
+
+/*DESKTOP*/
+@media (min-width: 992px) {
+  .hero-image {
+    height: 500px;
+  }
+  .profile-img {
+    right: 20%;
+    top: 270px;
+    width: 250px;
+    height: 250px;
+  }
+  .icon-section {
+    top: 70px;
+    right: 20%;
+  }
+  .headertext-container {
+    left: 15%;
+    top: 130px;
+    max-width: 300px;
+  }
+  .content-p {
+    padding: 0px 60px;
+  }
+  .about-me {
+    padding: 40px 150px 40px 150px;
+  }
+  .tech {
+    padding: 40px 150px 40px 150px;
+  }
+  .featured-projects {
+    padding: 40px 150px 40px 150px;
+  }
+  .my-thoughts {
+    padding: 40px 150px 40px 150px;
+  }
+  .skills {
+    padding: 40px 150px 40px 150px;
+  }
+  .for-more {
+    padding: 40px 150px 40px 150px;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .project-card {
+    width: 100%;
+    align-self: flex-start;
+    margin: 10px 24px;
+    justify-content: flex-start;
+  }
 }
