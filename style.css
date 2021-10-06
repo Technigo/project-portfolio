@@ -27,18 +27,26 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 300px;
-    /* padding-top: 150px; */
+    width: 610px;
+    height: 340px;
 }
 
 .my-name {
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
-    opacity: 1;
+    font-size: 28px;
+    font-weight: 400;
 }
 
 .my-title {
-    font-size: 40px;
+    font-size: 82px;
     font-weight: bolder;
+    margin: 0;
+}
+
+.my-title-extra {
+    font-size: 50px;
+    margin-top: 5px;
 }
 
 .my-title, .my-title-extra {
@@ -49,14 +57,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    padding-top: 50px;
-    padding-right: 200px;
+    padding-top: 100px;
+    padding-right: 410px;
 }
 .circles {
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -64,21 +72,21 @@ body {
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 36px;
+    height: 36px;
     padding: 8px;
 }
 
 .profile-picture-container {
     display: flex;
     justify-content: flex-end;
-    margin-right: 200px;
-    margin-top: -100px;
+    margin-right: 410px;
+    margin-top: -130px;
 }
 
 .profile-picture {
-    width: 250px;
-    height: 250px;
+    width: 330px;
+    height: 330px;
     border: 2px solid white;
     border-radius: 50%;
     object-fit: cover;
@@ -87,18 +95,20 @@ body {
 
 .about-me {
     background-color: rgb(228, 217, 217);
-    height: 250px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .about-me-text {
-    width: 500px;
-    font-size: 20px;
+    width: 1100px;
+    height: 200px;
+    font-size: 30px;
     color: white;
     text-align: left;
-    padding-top: 40px;
+    margin-top: 123px;
+    margin-bottom: 109px;
 }
 
 .start-figure {
@@ -106,7 +116,7 @@ body {
 }
 
 .tech {
-    height: 250px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,20 +134,26 @@ body {
     color: white;
     padding: 5px;
     text-transform: uppercase;
-    margin-top: 70px;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    font-size: 38px;
 }
 
 .tech-text {
-    width: 500px;
     font-size: 15px;
     text-align: center;
+    font-size: 30px;
+    width: 1100px;
+    height: 150px;
+    
+    padding-bottom: 50px;
 }
 
 .my-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    gap: 20px;
+    gap: 40px;
     background-color: rgb(228, 217, 217);
     padding-bottom: 50px;
     font-family: 'Roboto', sans-serif;
@@ -145,6 +161,7 @@ body {
 
 .project-card {
     position: relative;
+    width: 525px;
 }
 
 .image-container {
@@ -169,41 +186,67 @@ body {
 
 .project-name {
     font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     color: white;
 }
 
+.project-texts {
+    font-size: 25px;
+}
+
 .project-name-two {
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
 }
 
 span {
     background-color: rgb(176, 170, 250);
     padding: 0 5px;
     margin-top: 5px;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .other-projects, .skills {
     background-color: rgb(228, 217, 217);
-    height: 250px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .other-projects-title {
     color: rgb(58, 48, 172);
     padding: 5px;
+    font-size: 38px;
+}
+
+.other-projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 235px;
 }
 
 .other-projects-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     text-align: left;
     font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    margin: 0;
 }
 
 .my-thoughts-on-code, .for-more {
@@ -213,15 +256,48 @@ span {
     align-items: center;
 }
 
+.skills-title {
+ font-family: 'Montserrat', sans-serif;
+}
+
+.skills-container {
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 105px;
+}
+
+h5 {
+    color: rgb(58, 48, 172);
+    margin-bottom: 4px;
+}
+
+li {
+    padding: 5px;
+}
+
+.for-more {
+    height: auto;
+}
+
+.for-more-text {
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 45px;
+    margin-bottom: 120px; 
+}
+
 .social-media-logos {
     color:rgb(58, 48, 172);
-    height: 70px;
+    height: 160px;
 }
 
 .contact {
     background-color: rgb(58, 48, 172);
     color: white;
-    height: 250px;
+    height: 570px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,5 +305,12 @@ span {
 
 .contact-title {
     text-transform: uppercase;
-    margin-top: 70px;
+    margin-top: 130px;
+    font-size: 38px;
+}
+
+.contact-info {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
 }
