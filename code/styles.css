@@ -191,10 +191,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* top: 100px;
-  left: 16px;*/
-  /* width: 327px;
-  height: 232px; */
   margin: auto;
   max-width: 327px;
   position: relative;
@@ -206,7 +202,7 @@ main {
   height: 27px;
   color: var(--main-color);
   background-color: var(--sub-theme-color);
-  font-weight: 400;
+  font-weight: 500;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   font-size: 22px;
   font-family: "Montserrat", sans-serif;
@@ -217,6 +213,7 @@ main {
 
 .tech-heading {
   width: 68px;
+  margin-bottom: 30px;
 }
 
 .featured {
@@ -273,16 +270,6 @@ main {
   color: var(--sub-theme-color);
 }
 
-.project-image-title {
-  color: transparent;
-  transition: 0.5s ease;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  line-height: 29px;
-  font-weight: 600;
-  font-size: 24px;
-}
-
 .todos {
   margin-top: -112px;
   margin-bottom: 120px;
@@ -290,6 +277,7 @@ main {
 
 .tag-wrapper {
   display: flex;
+  margin-bottom: 16px;
 }
 
 .tag-wrapper p {
@@ -305,22 +293,41 @@ main {
   border-radius: 5px;
 }
 
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-image-title {
+  color: var(--main-color);
+  transition: 0.5s ease;
+  font-family: "Roboto", sans-serif;
+  line-height: 29px;
+  font-weight: 600;
+  font-size: 24px;
+  z-index: 2;
+  position: absolute;
+}
+
 .project-image-overlay {
   position: absolute;
   width: calc(100% - 40px);
-  height: 100%;
+  height: 50%;
   /* background-color: var(--overlay); */
   /* #bc8f8f7d */
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s ease;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
 
 .project-picture {
   width: 328px;
   object-fit: cover;
+  z-index: 0;
 }
-.project-image {
+.project-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 327px;
   transition: 0.5s ease;
   /* box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.2); */
@@ -331,11 +338,12 @@ main {
 } */
 
 .project-image:hover .project-image-title {
-  color: var(--text-color);
+  color: transparent;
 }
 
 .project-image-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: transparent;
 }
 
 .project-name {
