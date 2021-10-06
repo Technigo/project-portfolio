@@ -13,3 +13,5 @@ with main browsers.
 Dots canvas created via pair programming session under mentorship of Corey Maler (https://github.com/Corey-Maler).
 
 ## Resources
+
+Unsplash (MIT licence) : attribution to Photo Shahadat Rahman
