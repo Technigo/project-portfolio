@@ -12,7 +12,7 @@ html {
       background: #F5F4F0;
       margin: 0;
       color: #333;
-      padding-bottom: 7rem;
+      /* padding-bottom: 7rem; */
     }
 
 
@@ -79,14 +79,18 @@ html {
   .nav-link {
     text-decoration: none;
     color: #dedede;
-    font-weight: 400;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 12px;
     margin: 0;
   }
 
   .contact-btn-mobile {
-    height: 44px;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    display: inline-block;
+    min-width: 120px;
+    max-height: 44px;
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+    margin: 0;
     background-color: #1a1a1a;
     color: #F5F4F0;
     border: none;
@@ -94,6 +98,7 @@ html {
     font-size: 1rem;
     font-weight: 400;
    }
+
 
    .contact-btn-desktop {
      display: none;
@@ -271,6 +276,58 @@ html {
   }
 
 
+      /* FOOTER */
+
+
+      .footer {
+        background-color: #1a1a1a;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-top: 6rem;
+        color: #F5F4F0;
+      }
+  
+      .footer-heading {
+        font-size: 48px;
+        font-weight: 100;
+        margin-bottom: 4rem;
+       text-align: center;
+      }
+  
+      .contact h3 {
+        font-size: 2rem;
+        font-weight: 100;
+      }
+  
+      .contact-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      .number {
+        font-size: 1.5rem;
+        font-weight: 100;
+        text-align: center;
+      }
+  
+      .email {
+        font-size: 1.5rem;
+        font-weight: 100;
+        text-align: center;
+      }
+  
+      .email-icon {
+        display: none;
+      }
+  
+      .phone-icon {
+        display: none;
+      }
+
+
 /* MEDIAQUERIES */
 
   @media (min-width: 900px) {
@@ -309,15 +366,24 @@ html {
   }
 
   .linkedin-logo {
+    display: flex;
     width: 32px;
     padding-left: 1.5rem;
     padding-right: 0;
   }
 
   .github-logo {
-    width: 30px;
+    display: flex;
+    width: 28px;
     padding-left: 1rem;
     padding-right: 0;
+  }
+
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
 
@@ -359,6 +425,7 @@ html {
     border-radius: 22px;
     font-size: 1rem;
     font-weight: 400;
+    cursor: pointer;
    }
    
    .mobile-bottom-nav {
@@ -374,6 +441,7 @@ html {
       padding: 5rem 15% 4rem 3rem;
       margin-left: 3rem;
       text-align: right;
+
    }
 
    .links {
@@ -383,6 +451,7 @@ html {
 
    .nav-link {
      margin-bottom: 2rem;
+     font-size: 1rem;
    }
 
 
@@ -526,6 +595,23 @@ html {
       border-radius: 16px;
       padding: 0.4rem 0.5rem;
     }
+
+
+    /* FOOTER */
+
+
+    .footer {
+      padding-bottom: 7rem;
+      padding-right: 15%;
+      padding-left: 15%;
+      margin-top: 6rem;
+      color: #F5F4F0;
+    }
+
+    .number {
+      margin-bottom: 2rem;
+    }
+
 
 }
 
