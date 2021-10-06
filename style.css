@@ -22,6 +22,7 @@ body {
   background-color: #5f939a;
   color: #ffff;
   padding: 3px;
+  margin-bottom: 10%;
 }
 .title-background-none {
   text-transform: uppercase;
@@ -42,7 +43,7 @@ body {
   text-transform: uppercase;
 }
 
-/* header with hero section */
+/* HEADER WITH HERO IMG */
 .hero {
   height: 520px;
   background-image: url("./assets/hero-img.jpg");
@@ -113,12 +114,10 @@ body {
   width: 100%;
 }
 
-/* intro-section */
+/* INTRO */
 .intro-container {
   display: block;
   height: 324px;
-  left: 0px;
-  top: 520px;
   background: #f4f4f4;
   opacity: 0.8;
   padding: 10% 5% 0;
@@ -128,6 +127,8 @@ body {
 .intro-container p {
   font-weight: 400;
   margin: 0;
+  font-size: 17px;
+  line-height: 29px;
 }
 
 .line {
@@ -145,7 +146,7 @@ body {
   display: inline-block;
 }
 
-/* tech-section */
+/* TECH */
 .tech-container {
   display: grid;
   justify-items: center;
@@ -155,9 +156,11 @@ body {
 .tech-container p {
   margin: 0 5%;
   text-align: center;
+  font-size: 17px;
+  line-height: 29px;
 }
 
-/* portfolio-section */
+/* PORTFOLIO */
 .portfolio-section {
   display: grid;
   padding: 5% 0 15%;
@@ -178,12 +181,19 @@ body {
   background-color: #f4f4f4;
 }
 
-.projects__article-card {
+/* PROJECTS */
+.projects__article-card + .desktop {
+  display: none;
+}
+
+.projects__article-card,
+.mythoughts__article-card {
   display: grid;
   width: 100%;
 }
 
-.projects__article-card h2 {
+.projects__article-card h2,
+.mythoughts__article-card h2 {
   margin-top: 5%;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -195,6 +205,8 @@ body {
 }
 
 .projects__article-card p,
+a:link,
+.mythoughts__article-card p,
 a:link {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -203,11 +215,12 @@ a:link {
   line-height: 30px;
   margin: 0;
   color: black;
+  text-decoration: none;
 }
 
-.projects__link {
-  display: grid;
-  width: 100%;
+.projects__article-card a:hover,
+.mythoughts__article-card a:hover {
+  text-decoration: underline;
 }
 
 .projects__image-overlay {
@@ -216,7 +229,7 @@ a:link {
   right: 0;
   bottom: 3px;
   left: 0;
-  background-color: rgba(156, 166, 197, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s ease;
 }
 
@@ -225,9 +238,11 @@ a:link {
   font-weight: 700;
   color: #fff;
   padding: 25%;
+  text-align: center;
 }
 
-.projects__image {
+.projects__image,
+.mythoughts__image {
   display: block;
   position: relative;
   width: 100%;
@@ -263,16 +278,21 @@ a:link {
   border-radius: 5px;
 }
 
-/* my thoughts section */
-.projects__article-card + .desktop {
+/* MYTHOUGHTS */
+.mythoughts__article-card + .desktop {
   display: none;
 }
 
-/* skills */
-.desktop {
-  display: none;
+.mythoughts__link {
+  display: grid;
+  width: 100%;
 }
 
+.mythoughts__link a:hover {
+  text-decoration: underline;
+}
+
+/* SKILLS */
 .projects__skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -288,12 +308,49 @@ a:link {
   padding: 0;
 }
 
-/* .projects__skills-lists {
-  display: flex;
-  margin-bottom: 30px;
-} */
 ul {
   list-style-type: none;
+}
+
+/* FOR MORE */
+/* changing colors on icons */
+.for-more__some {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.for-more__some-icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(7356%)
+    hue-rotate(294deg) brightness(104%) contrast(70%);
+}
+
+/* FOOTER */
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: #5f939a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__container,
+.footer__container a {
+  color: #ffff;
+  text-align: center;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  color: #ffff;
+  padding: 3px;
+  margin-top: 10%;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.footer__box {
 }
 
 /* DESIGN FOR TABLET */
