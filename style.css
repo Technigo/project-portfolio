@@ -5,7 +5,6 @@ body {
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: repeat(4, 1fr); */
   background: url(./assets/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,21 +60,19 @@ body {
 .intro-section {
   display: flex;
   flex-direction: column;
-  background: #f4f4f4;
-  opacity: 0.3;
 }
 
 .line {
   width: 25px;
   display: inline-block;
-  border: 1px solid #c62a88;
+  border: 1px solid #fa382f;
   margin-top: 4px;
 }
 
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #c62a88;
+  background-color: #fa382f;
   border-radius: 50%;
   display: inline-block;
 }
@@ -84,37 +81,61 @@ body {
   display: inline;
 }
 
-.tech-section,
-.project-section,
-.thought-section,
-.skills-section {
+.portfolio-section:nth-child(even) {
+  background-color: rgba(244, 244, 244, 0.3);
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin: 20px 10px;
+  align-items: center;
 }
 
-.tech-section-header,
-.project-section-header,
-.thought-section-header,
-.skills-header {
+.container {
+  width: 85%;
+  margin: 0 7.5%;
+}
+
+.section-header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.section-header {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
   font-size: 22px;
   line-height: 27px;
   color: #fff;
   background-color: #fa382f;
+  text-transform: uppercase;
+  display: inline;
+  padding: 3px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(156, 166, 197, 0.5);
+}
+
+.image {
+  width: 100%;
+  display: block;
 }
 
 .tech-section-content {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 29px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .project-description {
@@ -124,7 +145,7 @@ body {
   font-size: 17px;
   line-height: 29px;
   color: #fa382f;
-  text-align: center;
+  text-transform: uppercase;
 }
 
 .language {
@@ -160,14 +181,14 @@ body {
   letter-spacing: 0.01em;
 }
 
-.other-project-header,
-.more-thoughts-header {
+.other-header {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
   line-height: 1.5rem;
   text-align: center;
   color: #fa382f;
+  text-transform: uppercase;
 }
 
 .thought-section > img {
@@ -185,6 +206,7 @@ body {
   list-style-type: none;
   text-align: center;
 }
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -200,6 +222,11 @@ body {
 
 .footer {
   height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #072bce;
   color: #fff;
 }
