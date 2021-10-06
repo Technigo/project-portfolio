@@ -18,29 +18,30 @@ h6 {
 
 p,
 li,
-a,
-span {
+a {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  font-size: 14px;
   line-height: 22px;
 }
 
 .desktop-content-container {
     width:100%;
+    display:flex;
+    flex-direction: column;
 }
 
 .section-header {
-  background: #fa382f;
+  background: #252A34;
   text-transform: uppercase;
   color: white;
   font-size: 22px;
+  padding:1px 2px;
   margin: 0 auto;
   display:inline-block;
   text-align: center;
 }
 .main__header {
-  background-image: url("./images/header4.jpg");
+  background-image: url("./images/header2.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -52,11 +53,11 @@ span {
 .main__header img {
   width: 150px;
   border-radius: 50%;
-  border: 2px solid white;
   position: absolute;
   bottom: -20px;
   right: 24px;
 }
+
 
 .icon__container {
   position: absolute;
@@ -94,6 +95,11 @@ span {
 .graphic-designer {
   font-size: 30px;
   margin-top: 10px;
+  font-weight: 400;
+}
+
+.tech-skill-red {
+    color:#08D9D6;
 }
 
 .portfolio {
@@ -125,7 +131,7 @@ span {
 }
 
 .content__container:nth-child(2n + 1) {
-  background: #f4f4f4;
+  background: #EAEAEA;
 }
 
 .featured img {
@@ -135,12 +141,13 @@ span {
 
 .featured {
   margin: 20px 0px;
+  width:100%;
 }
 
 .featured h4 {
   text-transform: uppercase;
   font-weight: 700;
-  color: #fa382f;
+  color: #252A34;
 }
 
 .featured p,
@@ -151,7 +158,8 @@ span {
 
 .skill {
   padding: 2px 5px;
-  background: #fddfe7;
+  background: #FF2E63;
+  color:white;
   font-weight: 300;
   font-size: 10px;
   margin-right: 5px;
@@ -159,9 +167,21 @@ span {
 
 .other-projects h3,
 .other-projects h4 {
-  color: #fa382f;
+  color: #252A34;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.featured a {
+    text-decoration: none;
+}
+
+.featured a p {
+    color:black;
+}
+
+.arrows {
+    color:#08D9D6;
 }
 
 .other-project {
@@ -169,10 +189,9 @@ span {
 }
 
 .thought span,
-.thought a,
-.projects a {
+.thought a {
   text-transform: uppercase;
-  color: #fa382f;
+  color: #FF2E63;
   font-weight: 300;
   text-decoration: none;
 }
@@ -192,14 +211,14 @@ span {
 }
 
 .more-thoughts span {
-  color: #fa382f;
+  color: #FF2E63;
   text-transform: uppercase;
   font-weight: 300;
 }
 .more-thoughts h3 {
   text-transform: uppercase;
   font-weight: 700;
-  color: #fa382f;
+  color: #252A34;
   text-align: center;
 }
 
@@ -209,7 +228,7 @@ span {
 }
 
 .more-thoughts a {
-  color: #fa382f;
+  color: #FF2E63;
 }
 
 .skills-container {
@@ -225,7 +244,7 @@ span {
 
 .skills-container h4 {
   text-align: center;
-  color: #fa382f;
+  color: #08D9D6;
 }
 
 .skills-container ul {
@@ -236,14 +255,14 @@ span {
 }
 
 .for-more a i {
-  color: #fa382f;
+  color: #252A34;
   font-size: 40px;
   margin: 5px 10px;
 }
 
 .for-more div {
   width: 100%;
-  margin: 10px 0px;
+  margin: 40px 0px;
   display: flex;
   justify-content: center;
 }
@@ -264,12 +283,12 @@ span {
 .for-more div a p {
   font-size: 10px;
   text-transform: uppercase;
-  color: #fa382f;
+  color: #252A34;
   margin: 5px 0px;
 }
 
 .main__footer {
-  background: #072bce;
+  background: #FF2E63;
   color: white;
   font-size: 24px;
   text-align: center;
@@ -287,6 +306,7 @@ span {
 .other-projects h4 {
   font-size: 18px;
   text-decoration: underline;
+  font-family: roboto, 'sans-serif';
 }
 
 .other-projects {
@@ -297,6 +317,7 @@ span {
   font-size: 18px;
   color: black;
   text-transform: initial;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 599px) {
@@ -326,12 +347,18 @@ span {
 
   .featured-container {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap:30px;
   }
 
   .for-more div {
     width: 50%;
     margin: 0 auto;
+    margin-top:30px;
+  }
+
+  .featured {
+      width:calc(50% - 30px);
   }
 
   .desktop-container {
