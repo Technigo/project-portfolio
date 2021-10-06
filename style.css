@@ -12,6 +12,11 @@ body {
 .portfolio-section:nth-child(odd) {
     background-color:#F4F4F4;
 }
+.portfolio-section {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .container {
     width: 320px;
@@ -39,13 +44,18 @@ h1 {
 .greenText {
     color: var(--main);
     font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0px;
 }
+
+
 
 .thinP {
     font-family: 'Roboto', sans-serif;
     text-align: left;
     line-height: 1.7;
     font-size: 1em;
+    margin-top: 5px;
 }
 .boldP {
     font-family: 'Montserrat', sans-serif;
@@ -53,6 +63,15 @@ h1 {
     color: black;
 }
 
+.skills-grid p {
+    margin-top: 5px;
+}
+
+a:hover {
+    background-color: var(--main);
+    color: white;
+  }
+ 
 
 
 
@@ -60,15 +79,19 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     background-color: #C7F4B9;
+;
     padding: 0px 10px;
     display: inline;
+   
 }
 
 /* Sections */
 
 .header-1 {
-    background-image: url(./Pictures/IMG_3774.JPG);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./Pictures/IMG_3774.JPG');
+
     background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -90,8 +113,20 @@ h1 {
 .header-text {
     margin-top: 70px;
     padding-bottom: 150px;
-    padding-left: 30px;
+    color:white;
+    font-size: 2em;
 }
+.header-text p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+.header-text h2 {
+
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+}
+
 .profile-pic {
     border-radius: 50%;
     width: 150px;
@@ -119,9 +154,14 @@ h1 {
     display: inline-block;
 }
 
+.center {
+    text-align: center;
+}
+
 .project-img {
     width: 100%;
     display: block;
+    margin-top: 30px;
 }
 .overlay {
     position: absolute;
@@ -146,28 +186,129 @@ h1 {
 .more-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
 }
 
 .more-grid {
     grid-column: span 1;
+    justify-self: center;
 }
 
-.more-grid .fa-github,.fa-linkedin-in, .fa-stack-overflow {
+.more-grid .fa-github, .more-grid .fa-linkedin-in, .more-grid .fa-stack-overflow {
     color: red;
+    border: none;
+    padding: 10px;
+    font-size: 2.5em;
+    margin-bottom: 0px;
 }
 
 .footer {
     background-color:var(--main);
     color: white;
     text-align: center;
-}
+    padding-top: 30px;}
+
 .footer .thinP {
     text-align: center;
     padding-bottom: 20px;
+    margin-bottom: 0px;}
+
+
+
+/* 
+Mobil -  */
+@media (min-width: 0px) { }
+
+/* Paddda -  */
+@media (min-width: 768px) {
+    header .container {
+        position: relative;
+    }
+    .header-text {
+        width: 70%;
+        padding-bottom: 20px;
+    }
+    .profile-pic {
+        right: 0px;
+    }
+
+    .portfolio-section:nth-child(odd) {
+        background-color:#E6EFE5;
+    }
+    
+    .container {
+        width: 600px;
+        margin:0 auto;
+    }
+    
+    .fa-linkedin-in, .fa-github, .fa-stack-overflow {
+        margin-top: 40px;
+        padding: 10px;
+        margin-right: 5px;
+        border-radius: 50%;
+        border:2px solid white;
+        font-size: 2rem;
+    }
+
+    .project-1 {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .project-grid {
+        grid-column: span 1;
+
+    }
+    .greenText .center {
+        margin-top: 30px;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .skills-grid {
+        grid-column: span 1;   
+        justify-self: center;
+    }
+
+    .center {
+    margin-top: 40px;
+    }
+
+
+
+
+
+
 }
 
+/* Liten Dator -  */
+@media (min-width: 992px) {
+ 
+}
+
+/* Stor Dator -  */
+@media (min-width: 1200px) {
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* TODO
-1. 
-2. bilder
-3. anpassa till padda och dator
- */
+6. anpassa till padda och dator
+7. og: grejen så att små symboler följer med vid sökning. 
+
+
+
+* the overlay ser inte helt perfekt ut på skärmdumparna... 
+*/
