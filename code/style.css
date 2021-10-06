@@ -3,14 +3,33 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
+h3 {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+:root {
+  --title-background: #fe8807;
+  --title-text-color: white;
+  --title-font-size: 22px;
+  --title-padding: 0 5px;
+  /* check which font where */
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 header {
-  position: absolute;
+  font-family: "Roboto", "Helvetica Neue";
+  position: relative;
   width: 100%;
-  background: url(../images/headerimage.jpg);
+  background: url(../images/orangebluepaint.jpg);
   background-size: cover;
   height: 520px;
   left: 0px;
@@ -23,12 +42,12 @@ header {
   margin-right: 30px;
 }
 
-a:link {
+.navbar-header a {
   color: white;
   text-decoration: none;
   border: 2px solid white;
   border-radius: 50%;
-  padding: 10px;
+  padding: 8px 11px;
 }
 
 a:visited {
@@ -45,9 +64,6 @@ a:visited {
   height: 202px;
   left: 24px;
   top: 121px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -57,9 +73,16 @@ a:visited {
 h1 {
   width: 60%;
   font-size: 30px;
+  text-shadow: 0 0 5px black;
+  line-height: 26px;
+}
+
+.header-text h2 {
+  text-shadow: 0 0 5px black;
 }
 
 .header-text p {
+  text-shadow: 0 0 5px black;
   text-transform: uppercase;
 }
 
@@ -67,14 +90,14 @@ h1 {
   position: absolute;
   width: 180px;
   height: 180px;
-  left: 171px;
+  right: 30px;
   top: 356px;
   border-radius: 50%;
   border: 2px solid white;
 }
 
 .line {
-  border: 1px solid #c62a88;
+  border: 1px solid #3f98ae;
   width: 44px;
   display: inline-block;
   margin-bottom: 4px;
@@ -83,54 +106,168 @@ h1 {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #c62a88;
+  background-color: #3f98ae;
   border-radius: 50%;
   display: inline-block;
+  margin-right: 5px;
 }
 
 .introduction p {
   font-family: "Montserrat", sans-serif;
-  color: black;
-  position: absolute;
-  width: 327px;
-  height: 232px;
-  left: 24px;
-  top: 569px;
-  font-style: normal;
-  font-weight: normal;
+  margin-top: 50px;
   font-size: 17px;
   line-height: 29px;
+  display: inline-block;
+  margin: 30px 25px;
+}
+
+.portfolio-heading-container {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
 }
 
 .tech h2 {
-  position: absolute;
-  width: 82px;
-  height: 26px;
-  left: 147px;
-  top: 885px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
+  font-size: var(--title-font-size);
   line-height: 27px;
-  text-align: center;
-  color: white;
-  background: red;
+  color: var(--title-text-color);
+  background-color: var(--title-background);
+  width: 80px;
+  margin: 0 auto;
+  padding: var(--title-padding);
 }
 
 .tech p {
-  position: absolute;
-  width: 327px;
-  height: 147px;
-  left: 24px;
-  top: 935px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 17px;
   line-height: 29px;
+  display: inline-block;
+  text-align: center;
+  margin: 5px auto;
+  width: 80%;
+}
+
+.featured-projects h2 {
+  font-size: var(--title-font-size);
+  line-height: 27px;
+  color: var(--title-text-color);
+  background: var(--title-background);
+  display: inline-block;
+  padding: var(--title-padding);
+  margin-top: 15px;
+}
+
+.featured-projects h3,
+.other-projects h3,
+.skills p {
+  color: #fe8807;
+  text-shadow: 0 0 1px rgb(143, 141, 141);
+}
+
+.tags span {
+  color: white;
+  padding: 4px 2px;
+  background-color: #014c8698;
+  font-size: 9px;
+}
+
+.other-projects h2 {
+  font-size: var(--title-font-size);
+  background-color: var(--title-background);
+  color: var(--title-text-color);
+  display: inline-block;
+  padding: var(--title-padding);
+}
+
+.skills h2 {
+  font-size: var(--title-font-size);
+  background-color: var(--title-background);
+  color: var(--title-text-color);
+  padding: var(--title-padding);
+  display: inline-block;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 5px 0;
+}
+
+.skill-container span {
+  display: block;
+}
+
+.more-about-me h2 {
+  font-size: var(--title-font-size);
+  background-color: var(--title-background);
+  color: var(--title-text-color);
+  padding: 0 5px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.more-about-me {
+  margin-bottom: 40px;
   text-align: center;
 }
+
+.more-about-me a {
+  color: var(--title-background);
+  border: 2px solid var(--title-background);
+  margin: 0 10px;
+  padding: 8px 11px;
+  border-radius: 50%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 300px;
+  background-color: #014c8698;
+  color: white;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(156, 166, 197, 0.5);
+}
+
+.overlay p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-shadow: 0 0 1px rgb(143, 141, 141);
+  font-size: 20px;
+  color: white;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+.other-projects a {
+  color: var(--title-background);
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*
 
 .projects h2 {
   position: absolute;
@@ -146,7 +283,7 @@ h1 {
   text-align: center;
   background: red;
   color: #ffffff;
-}
+} */
 
 @media (min-width: 767px) and (max-width: 1025px) {
   .header-image {
