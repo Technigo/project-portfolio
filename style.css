@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+/* headerimg and  */
+.header-section {
+    display: fle;
+    width: 100%;
+    height: 20rem;
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/header-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* styling for top-icons */
+.topicon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 2rem;
+}
+
+.portfolio-heading-container {
+	display: flex;
+	justify-content: center;
+}
+
+.portfolio-heading {
+	background-color: #fa382f;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 3px;
+}
+
+.portfolio-subheading {
+    color: red;
+}
+
+.portfolio-section:nth-child(2n+1) {
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.portfolio-section {
+    display: block;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tech-container {
+    text-align: center;
+}
+
+/* styling for projects with img */
+.project-container {
+    grid-column: span 2;
+}
+
+
+/* styling for other projects */
+.other-projects {
+
+}
+
+.image-container {
+    position: relative;
+}
+
+/* overlay for project imgs */
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(red, green, blue, alpha); /* because then we can use opacity */
+}
+
+.image {
+    display: block; /* cause the img has inline default and makes space in bottom */
+}
+
+/* styling för logo o cirklar i botten? */
+.logo-circle {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.icon{
+    width: 20px;
+    height: 20px;
+    padding: 8px; 
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
