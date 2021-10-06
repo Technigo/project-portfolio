@@ -1,0 +1,46 @@
+
+/* LEKTION */
+/* seudo selector nth:child(2n) gör att den kommer varannan gång. n=0. Man multiplicerar med (2n + 1) (odd)*/
+.portfolio-section:nth-child(odd) {
+    background-color: green;
+}
+
+.container {
+    width: 320px;
+    margin:0 auto;
+}
+.portfolio-heading-center {
+    display: flex;   
+    justify-content: center;
+}
+
+.portfolio-heading {
+    background-color: green;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.image-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  /*   background: rgba(156, 166, 197, 0.5); */
+}
+
+.image{
+    width: 100%;
+    display: block;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 768;
+        margin: 0 auto;
+    }    
+}
