@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-  height: 520px;
+  height: 460px;
   width: 100%;
   color: white;
   position: relative;
@@ -18,8 +18,9 @@ body {
 
 .icon-links-container {
   display: flex;
-  justify-content: flex-end;
-  padding: 10px 10px;
+  position: absolute;
+  top: 48px;
+  right: 50px;
 }
 
 .icon-links-header {
@@ -80,9 +81,9 @@ body {
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid white;
-  position: relative;
-  left: 155px;
+  position: absolute;
   top: 300px;
+  right: 50px;
 }
 
 /* Intro section */
@@ -427,7 +428,35 @@ body {
 
 /*For tablet*/
 @media (min-width: 768px) {
+  .header-text-container {
+    width: 300px;
+    height: 200px;
+    top: 140px;
+    left: 120px;
+  }
+
+  .icon-links-container {
+    top: 70px;
+    right: 70px;
+  }
+  .icon-header {
+    width: 64px;
+    height: 64px;
+  }
+
+  .portfolio,
+  .patrik-name {
+    font-size: 16px;
+  }
+
+  .job-title {
+    font-size: 55px;
+    line-height: 50px;
+  }
+
   .profile-picture {
+    width: 220px;
+    height: 220px;
     left: 70%;
   }
 
@@ -446,13 +475,4 @@ body {
     width: 350px;
     margin: 30px;
   }
-}
-@media (min-width: 992px) {
-  .profile-picture {
-    left: 80%;
-  }
-
-  /* .img-overlay-text {
-    top: 50%;
-  } */
 }
