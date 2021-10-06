@@ -15,7 +15,7 @@ header {
   object-fit: cover;
   background-position: center;
   width: 100%;
-  height: 520px;
+  height: 500px;
   top: 0;
   left: 0;
   -webkit-box-shadow: 2px 9px 14px -7px rgba(71, 67, 71, 0.68);
@@ -23,8 +23,74 @@ header {
   box-shadow: 2px 9px 14px -7px rgba(71, 67, 71, 0.68);
 }
 
-.profile-container {
-  
+.main-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*All the titles and paragraphs*/
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 20px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 17px;
+  line-height: 29px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+.filled-title-container {
+display: flex;
+justify-content: center;
+}
+
+.filled-title {
+background-color:#c62a88;
+text-transform: uppercase;
+color: white;
+margin: auto auto 1rem auto;
+font-size: 22px;
+line-height: 27px;
+font-weight: 500;
+}
+
+.other-title {
+  text-align: center;
+}
+
+.blog-date {
+  text-transform: uppercase;
+  margin: 0;
+  color: #c62a88;
+  font-weight: 600;
 }
 
 .profile {
@@ -68,6 +134,15 @@ header {
   color: #212427;
 }
 
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  color: #212427;
+  margin-bottom: 15px;
+}
+
 .header-text h5 {
   font-weight: normal;
   line-height: 18px;
@@ -76,17 +151,12 @@ header {
   letter-spacing: 0.04em;
 }
 
-.title {
-  font-weight: bolder;
-  font-size: 40px;
-  line-height: 20px;
-}
-
 .intro-text {
   margin: 20px 24px;
   padding: 10px;
 }
 
+/* Line-dot section indicator */
 .line {
   border: 1px solid #c62a88;
   width: 40px;
@@ -110,112 +180,82 @@ header {
 }
 
 .tech-container {
-  margin: 20px 24px;
+  text-align: center;
   padding: 10px;
-}
-
-.filled-title h3 {
-  background-color: #c62a88;
-  width: fit-content;
-  text-align: center;
-  margin: auto auto 1rem auto;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  text-transform: uppercase;
-  padding: 3px;
-  margin-bottom: 10px;
-}
-
-.tech-container p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
-  line-height: 29px;
-  text-align: center;
 }
 
 .main-projects {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin: 0px 20px 20px 20px;
+}
+
+.main-projects,
+.other-projects {
+  margin-bottom: 30px;
+}
+
+.other-projects {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .project-overlay {
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-  text-transform: uppercase;
   position: absolute;
-  font-size: 28px;
-  line-height: 34px;
-  letter-spacing: 0.01em;
-  font-weight: bold;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(156, 166, 197, 0.5);
 }
 
 .project-wrapper {
-  /*display: inline-block;*/
   position: relative;
-  margin: 20px;
+  display: block;
 }
 
 .project-img {
-  opacity: 0.6;
   width: 100%;
   margin: 0;
 }
 
-.main-projects h5 {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 17px;
-  margin: 8px 20px;
+.main-projects h5,
+.main-projects p {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.main-projects p, .code-tags {
-  display: inline-block;
-  margin: 8px 20px;
-}
-
-.code-tags button {
+.code-tags span,
+.code-tags-main span {
   color: #fff;
   background-color: #c62a88;
   border: none;
   font-size: 10px;
+  padding: 4px;
 }
 
-.other-title {
-  width: fit-content;
-  text-align: center;
-  margin: auto auto 1rem auto;
-  color: #c62a88;
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  text-transform: uppercase;
-  padding: 3px;
-  margin-bottom: 10px;
+.code-tags-main {
+  padding: 5%;
 }
 
-.other-projects h5, .main-projects h5  {
-  font-size: 17px;
-  line-height: 29px;
-  text-transform: uppercase;
-}
-.other-projects {
-  display: inline-block;
-  margin: 10px 20px 20px 20px;
-}
 
-.other-projects a {
+/*Link to netlify page >>*/
+.other-projects a,
+.arrow {
   text-decoration: none;
   font-weight: bold;
   color: #c62a88;
 }
+
+.my-thoughts {
+  margin-top: 60px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
 
 
 
