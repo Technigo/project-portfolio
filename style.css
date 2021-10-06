@@ -4,15 +4,20 @@
     box-sizing: border-box;
 }
 
-/* header section */
+
+/* header section (hero background) */
 
 .header-section {
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url("https://images.unsplash.com/photo-1632319096585-c099a86964c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80");
+                url('https://images.unsplash.com/photo-1632319096585-c099a86964c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
     background-size: cover;
+    background-attachment: fixed; /* adds a parallax effect on the background  */
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 .header-text-box {
     height: 100%;
     display: flex;
@@ -65,11 +70,7 @@
     padding: 10px;
 }
 
-.text-box {
-    width: 80%;
-    margin: 30px auto;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 .line {
     border: 1px solid #c62a88;
@@ -86,37 +87,48 @@
     display: inline-block;
 }
 
-.tech-section {
-    width: 100%;
-    background: rgb(230, 211, 211);
-    margin: 0px auto;
-    padding: 10px;
+
+/* Container for each section in the main section */
+.container {
+    width: 320px;
+    margin: 0 auto;
 }
 
-.featured-projects-section {
-    width: 100%;
-    background: grey;
-    margin: 0px auto;
-    padding: 10px;
+.heading-container-1 {
+    display: flex;
+    justify-content: center;
 }
 
-.other-projects-section {
-    width: 100%;
-    background: rgb(230, 211, 211);
-    margin: 0px auto;
-    padding: 10px;
+.heading-1 {
+    background-color: #fa382f;
+    color:#fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.my-thoughts-section {
-    width: 100%;
-    background: grey;
-    margin: 0px auto;
-    padding: 10px;
+.article-box {
+    margin: 30px auto;
+    font-family: 'Roboto', sans-serif;
 }
 
-.skills-section {
-    width: 100%;
-    background: rgb(230, 211, 211);
-    margin: 0px auto;
-    padding: 10px;
+/* Featured projects images with overlay */
+.project-img-container {
+    position: relative;
 }
+
+.project-img {
+    width: 100%;
+    display: block  ;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(156, 166, 197, 0.5);
+}
+
