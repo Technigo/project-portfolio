@@ -5,36 +5,37 @@ body {
   line-height: 29px;
 }
 
-#header-container {
+header {
   position: relative;
   width: 100%;
   height: 520px;
   background-image: url("header-image.jpg");
+  background-position: 50%;
   background-size: cover;
   background-position: right;
   font-family: "Roboto", sans-serif;
   color: white;
-  margin-bottom: 20px;
 }
 
-.soMe-icon-links {
+.soMe-icon-container {
   display: flex;
   justify-content: flex-end;
   padding: 48px 20px;
 }
 
-a img {
-  width: 40px;
-  height: 40px;
-  padding: 5px;
+.soMe-icon-container i {
+  color: white;
+  margin: 0px 4px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+  text-align: center;
 }
 
 .name-title {
   margin-left: 5%;
-}
-
-h1 {
-  font-size: 35px;
 }
 
 .name-surname {
@@ -42,18 +43,15 @@ h1 {
   font-weight: 700;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   display: table;
-  margin: 20px auto;
-
+  margin: 20px auto 40px;
   font-size: 22px;
   text-align: center;
   background-color: #fa382f;
   color: #ffffff;
+  padding: 4px;
+  text-transform: uppercase;
 }
 
 .profile-image {
@@ -63,29 +61,41 @@ h6 {
   border-radius: 50%;
   border: 3px solid white;
   width: 50%;
+  z-index: 10;
 }
 
-.intro-section,
-.feature-projects,
-.tech-skills,
-.my-thoughts {
-  padding: 10px 24px;
-  text-align: left;
+.intro-text {
+  padding: 40px 0px;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.portfolio-section {
+  padding: 20px 0px;
+}
+
+.portfolio-section:nth-child(2n) {
+  background-color: #f4f4f4;
+}
+
+.project-container {
+  margin: 20px 0px 10px 0px;
+}
+
+p {
+  margin: 0;
 }
 
 .feature-projects {
-  background-color: #f4f4f4;
   font-family: "Roboto", sans-serif;
 }
 
-.project-weather-app {
-  background: url(weatherApp.png);
-  background-size: cover;
-  width: 327px;
-  height: 212px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.project-image {
+  width: 100%;
+  height: 100%;
 }
 
 .language-box {
@@ -98,10 +108,9 @@ h6 {
 
 .project-title {
   font-weight: 700;
-  font-size: 28px;
   line-height: 34px;
   letter-spacing: 0.01em;
-  color: white;
+  color: #fa382f;
 }
 
 a {
@@ -109,21 +118,15 @@ a {
   color: #000000;
 }
 
-.project-business-site {
-  background: url(businessSite.png);
-  background-size: cover;
-  width: 327px;
-  height: 212px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .other-project-titles {
   display: block;
   text-align: left;
-  font-weight: 700;
+  font-weight: bold;
   color: #fa382f;
+}
+
+.other-projects {
+  margin: 40px 0px;
 }
 
 .my-thoughts {
@@ -132,33 +135,66 @@ a {
 
 .sub-title {
   display: table;
-  margin: 0px auto;
+  margin: 20px auto 10px auto;
   color: #fa382f;
+  background-color: #f4f4f4;
   font-weight: 700;
-  font-size: 21px;
-  font-family: "Montserrat", sans-serif;
 }
 
-.skills {
-  background-color: #f4f4f4;
-  padding: 0px 24px;
+.skills-lists p {
+  text-align: center;
 }
-.skills-lists {
+
+.skills-container {
   display: flex;
-  margin-bottom: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
   font-family: "roboto", sans-serif;
 }
 
-.soMe-icon-links-footer {
+.skills-container div {
+  width: 50%;
+  margin: 20px 0px;
+}
+
+.skills-container h2 {
+  display: table;
+  margin-left: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fa382f;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.soMe-icon-footer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #fa382f;
-  margin: 20px;
+}
+
+.soMe-icon-footer i {
+  color: #fa382f;
+  margin: 0px 10px;
+  border: 1px solid #fa382f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10%;
+  text-align: center;
+}
+
+.fa-stack-overflow:before,
+.fa-github:before,
+.fa-linkedin-in:before {
+  font-size: 25px;
 }
 
 footer {
-  width: 100%;
   height: 302px;
   display: flex;
   flex-direction: column;
@@ -167,4 +203,21 @@ footer {
   margin: 0px auto;
   color: #ffffff;
   background: #072bce;
+}
+
+.contact {
+  background-color: #072bce;
+  margin: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
