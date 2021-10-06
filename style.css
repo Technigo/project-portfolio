@@ -8,9 +8,6 @@ section {
   background-color: white;
   margin-top: 0px;
 }
-.about-me {
-  height: 320px;
-}
 
 header {
   height: auto;
@@ -99,24 +96,40 @@ h3 {
   color: white;
   font-weight: 600;
   padding: 2px 5px;
-  width: fit-content;
-  margin: auto;
+  margin: 10px auto;
+  text-transform: uppercase;
+}
+.heading-container {
+  display: flex;
+  justify-content: center;
 }
 h4 {
-  color: blue;
+  color: teal;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   margin: 15px 0px 5px 0px;
+  text-transform: uppercase;
 }
+.align-text-center {
+  text-align: center;
+  color: teal;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 30px 0px;
+  text-transform: uppercase;
+}
+
 h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  margin: auto;
+  margin: 10px auto;
   text-align: center;
   font-weight: 600;
   color: #426a74;
   width: fit-content;
+  text-transform: uppercase;
 }
 h6 {
   font-family: "Montserrat", sans-serif;
@@ -145,6 +158,15 @@ h6 {
   line-height: 29px;
   margin: 0px;
   color: #426a74;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.article-header {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  margin: 10px 0px;
+  font-weight: 500;
 }
 .footer-p {
   font-family: "Montserrat", sans-serif;
@@ -156,6 +178,7 @@ h6 {
   font-family: "Roboto", sans-serif;
   color: black;
   text-align: center;
+  font-weight: 500;
 }
 .headertext-container {
   position: absolute;
@@ -165,6 +188,9 @@ h6 {
 }
 b {
   font-weight: 500;
+}
+.links-color {
+  color: teal;
 }
 
 footer {
@@ -216,16 +242,35 @@ footer {
   align-items: center;
 }
 .project-card {
-  background-color: white;
   width: 90%;
   /*height: auto;*/
   align-self: center;
   margin: 10px 0px;
 }
+.about-me {
+  padding: 40px 24px 40px 24px;
+}
+.tech {
+  padding: 40px 24px 40px 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
 .featured-projects {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 40px 24px 40px 24px;
+}
+.my-thoughts {
+  padding: 40px 24px 40px 24px;
+}
+.skills {
+  padding: 40px 24px 40px 24px;
+}
+.for-more {
+  padding: 40px 24px 40px 24px;
 }
 
 .project-img {
@@ -234,12 +279,14 @@ footer {
   overflow: hidden;
   object-fit: cover;
   /*position: relative;*/
+  margin-top: 20px;
+  display: block;
 }
 
 .project-text-overlay {
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 50%;
   z-index: 1;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -248,10 +295,19 @@ footer {
   font-size: 28px;
   font-weight: 500;
   width: 100%;
+  height: 100%;
+  background: rgba(156, 166, 197, 0.5);
+  margin: 0px;
+}
+.text-overlay {
+  left: 50%;
+  top: 50%;
+  margin: 0px;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .img-wrapper {
-  /*display: inline-block;*/
   position: relative;
 }
 
@@ -260,11 +316,11 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 9px;
   text-align: center;
-  color: #383c4b;
+  color: white;
   font-weight: 300;
   padding: 5px 5px;
   width: fit-content;
-  margin: 5px;
+  margin: 5px 5px 5px 0px;
   align-self: flex-start;
 }
 .language-wrapper {
@@ -288,4 +344,13 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.article-link {
+  margin: 20px 0px;
+  font-size: 17px;
+}
+
+a {
+  color: teal;
 }
