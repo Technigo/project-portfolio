@@ -119,6 +119,10 @@ h4 {
 /* Projects*/
 
 
+.project-heading-wrapper{
+  display: flex;
+  justify-content: center;
+}
 .project-container{
   display: flex;
   flex-direction: column;
@@ -127,23 +131,19 @@ h4 {
   width: 90%;
   
 }
-.card-project-link{
-  display: flex;
-  flex-direction: column;
-  margin: 40px auto 0 auto;
-  text-align: center;
-  width: 90%;
-  
-}
-.project-heading-wrapper{
-  display: flex;
-  justify-content: center;
+
+.card-project a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 .card-project{
   margin: 40px auto;
   padding: 30px;
   justify-items: center;
   background-color: whitesmoke;
+  width: 100%;
+
 }
 .card-project h4{
 margin: 10px 0;
@@ -163,14 +163,15 @@ line-height: 1.5;
   margin: 10px 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around
 }
 
 .tag-wrapper p{
 padding: 4px;
 margin: 3px;
-font-size: 1rem;
-line-height: 1rem;
+font-size: 0.8rem;
+line-height: 0.8rem;
 background-color: yellow;
 display: inline;
 }
@@ -252,8 +253,9 @@ margin-bottom: 30px;
     flex-wrap: wrap;
     flex-direction: row;
   }
-
-  .card-project-link{
+  
+  .card-project{
     width: 40%;
+   
   }
 }
