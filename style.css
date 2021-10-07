@@ -5,7 +5,10 @@
     margin:0;
 }
 
+
+
 body {
+    box-sizing: border-box;
     font-family: 'Montserrat';
 }
 
@@ -134,13 +137,15 @@ p {
 
 
 /* FEATURED PROJECTS & OTHER PROJECTS */ 
-
-
-
 .projects-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/*hiding two last project in mobile mode*/
+.hide {
+    display: none;
 }
 
 .projects-container {
@@ -148,10 +153,6 @@ p {
     flex-direction: column;
 }
 
-.project-card {
-    display: flex;
-    flex-direction: column;
-}
 
 .projects-section a {
     text-decoration: none;
@@ -179,8 +180,12 @@ p {
     background-color: #607550;
     color: white;
     padding: 6px;
-    margin: 50px auto;
+
     border-radius: 3px;
+}
+
+.tags-container {
+    margin: 20px auto;
 }
 
 
@@ -202,17 +207,79 @@ p {
     display: flex;
 }
 
-.article-container {
-    margin: 30px auto;
-}
-
+/* article section */ 
 .article-container img{
     width: 100%;
     display: none;
 }
 
+.article-card {
+    margin-bottom: 30px;
+}
+
+.article-container {
+    width: 100%;
+}
+
+/*skills section */
+
+.skills-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.skills-title {
+    color: #32502E;
+    margin: 20px auto;
+}
+
+/*contact section */
+.contact-section {
+    background-color: #32502E;
+    display: flex;
+}
+
+.social-media-icons-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-media-icons-bottom img {
+    margin: 10px;
+    width: 70px;
+}
+
+.icon-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+
+/*footer*/
+.footer {
+    background-color: green;
+    display: flex;
+    color: white;
+}
 
 
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 
 
@@ -245,12 +312,22 @@ p {
         width: 60px;
     }
 
+
+
+
+
+
+
     
 
 }
 
 /* tablet*/ 
 @media (min-width:667px) and (max-width: 1024px) {
+
+.container {
+    width: 900px
+}
 
     .header-content {
         width: 526px;
@@ -269,7 +346,14 @@ p {
         display: block;
     }
 
-    
+    .skills {
+        width: 20%;
+    }
+
+        /*showing two last project in mobile mode*/
+        .hide {
+            display: block;
+        }
     
 
 }
@@ -277,10 +361,18 @@ p {
 
 /*desktop*/
 @media(min-width: 1025px)  {
+    p {
+        font-size: 30px;
+    }
+
+    .tags {
+        font-size: 20px;
+    }
 
     /* allmän styling*/
     .container {
-        width: 1100px;
+        min-width: 1025px;
+        max-width: 1100px;
         margin: 70px auto;
     }
 
@@ -340,6 +432,11 @@ p {
 
 
     /*project section*/
+    /*showing two last project in mobile mode*/
+    .hide {
+        display: block;
+    }
+
     .projects-container {
         display: flex;
         flex-direction: row;
@@ -388,9 +485,34 @@ p {
     }
 
     .article-card {
-        width: 48%;
+        width: 545px;
+        margin-bottom: 30px;
     }
 
+    .article-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* skills section */ 
+
+    .skills {
+        width: 20%;
+    }
+
+    .skills-title {
+        font-size: 30px;
+    }
+
+    /*contact*/
+    .social-media-icons-bottom img {
+        margin: 20px;
+        width: 120px;
+    }
+
+    .icon-and-text {
+        font-size: 18px;
+    }
  
  
  
