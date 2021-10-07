@@ -14,7 +14,7 @@ body{
     background-color: var(--darkgreyblue);
     margin: 0; 
 }
-
+/* 
 h1{
     font-weight: 700;
     font-style: normal;
@@ -37,7 +37,7 @@ h3{
     font-size: 13px;
     line-height: 18px;
     letter-spacing: 0.04em;
-}
+} */
 
 p{
     font-family: Montserrat;
@@ -49,47 +49,65 @@ p{
     margin-block-end: 0;
 }
 
+.container{
+    min-width: 320px;
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+/* -------------MAIN----------------------------- */
 .header{
     background-image: url(./img/cold-dip.png);
     background-size: cover;
     position: relative;
     height: 520px;
-  
 }
-.header-text{
+.header-text-container{
     display: flex;
     flex-direction: column;
-    margin-top: 29px;
+    margin-top: 30px;
     margin-left: 24px;
     width: 250px;
     height: 200px;
 }
 
+.header-1{
+    font-family: roboto;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: black;
+    font-weight: 400;
+}
 
-.header-text h2 {
+.name{
+    font-weight: 700;
+}
+
+.title{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    Line-height: 49px;
+    color: var(--yellow);
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.former-title {
     margin-block-start: 0;
     margin-block-end: 0;
     color: white;
 }
 
-.header-text h3 {
-    margin-block-start: 0;
-    margin-block-end: 0;
-   
-}
-
 .social-logos{
    text-align: right;
-   padding-right: 24.5px;
+   padding-right: 10px;
    padding-top: 48px;
-  
- 
 }
 
 .social-logos img{
     height: 40px;
-    /* background-color: var(--greyblue); */
-    border-radius: 50%;
 }
 
 .profile-img{
@@ -101,10 +119,9 @@ p{
 
 .profile-img-container img{
     position: absolute;
-    right: 0;
+    right: 10px;
     bottom: -220px;
 }
-
 
 /* -------------MAIN----------------------------- */
 .main{
@@ -112,13 +129,6 @@ p{
     display: grid;
     grid-template-rows: repeat(8, auto);
 }
-
-.container{
-    width: 320px;
-    margin: 0 auto;
-    position: relative;
-}
-
 
 .label-h2 {
     background-color: var(--yellow);
@@ -257,8 +267,6 @@ p{
 }
 
 /* ------------sec 4 my thoughts-------------- */
-
-
 .my-thougths{
     padding: 45px 0;
 }
@@ -336,10 +344,16 @@ li{
 
 .social-logos-more{
     text-align: center;
+    
     display: flex;
     flex-direction: rows;
-    justify-content: space-around;
+    justify-content: space-evenly;
  
+}
+
+.for-more-text{
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 /* -------------FOOTER----------------------------- */
@@ -358,7 +372,8 @@ footer{
 @media (min-width: 650px) {
     
 .container{
-    width: 650px;
+    min-width: 650px;
+    max-width: 80%;
     margin: 0 auto;
 }
  /* section 3 featured projects tablet */
@@ -392,8 +407,25 @@ footer{
 }
 /* -------------desktop----------------------------- */
 @media (min-width: 900px){
+
+    .header{
+        height: 770px;
+    }
+
+    .profile-img{
+        width: 333px;
+        height: 333px;
+    }
+
+    .profile-img-container img{
+        position: absolute;
+        right: 10px;
+        bottom: -470px;
+    }
+
     .container{
-        width: 900px;
+        min-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 }

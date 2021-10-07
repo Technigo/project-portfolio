@@ -7,34 +7,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Elin Diczfalusy Portfolio</title>
 </head>
 <body>
 
     <header class="header">
-        <div class="container">
-            <div class = "social-logos">
-                <img src="./img/linked.png" alt="linkedin logo and link">
-                <img src="./img/github.png" alt="github logo and link">
-                <img src="./img/stack.png" alt="stackOverflow logo and link">
+        <section class="container">
+            <div role="container" class = "social-logos">
+                <a href="https://www.linkedin.com/in/elin-elmvik-diczfalusy-09a59438/">
+                    <img src="./img/linked.png" alt="linkedin logo and link">
+                </a>
+                <a href="https://github.com/Ajliin">
+                    <img src="./img/github.png" alt="github logo and link">
+                </a>
+                <a href="https://stackoverflow.com/users/16687107/ajliin">
+                    <img src="./img/stack.png" alt="stackOverflow logo and link">
+                </a>
             </div>
-            <div class="header-text">
-                <h3>PORTFOLIO:<strong>ELIN DICZFALUSY</strong></h3>
-                <h1>frontend developer</h1>
-                <h2>+ MSc in Engineering</h2>
-                <h2>+ certified teacher</h2>
+            <div class="header-text-container">
+                <h1 class="header-1">PORTFOLIO:<span class= "name"> ELIN DICZFALUSY</strong></h3>
+                <h2 class="title">frontend developer</h2>
+                <p class="former-title">+ MSc in Engineering</p>
+                <p class="former-title">+ certified teacher</p>
             </div>
             <div class="profile-img-container">
                 <img class="profile-img"  src="./img/profile-pic.png" alt="">
             </div>
-        </div>
+        </section>
     </header>
     <main class = "main">
          <!-- sect 1 intro -->
-        <section class="intro-text">
+        <section tabindex="0" class="intro-text">
             <div class="container">
                  <p class="p-intro">
                     <span class="color-line"></span>
@@ -43,7 +50,7 @@
             </div>
         </section>
         <!--sect 2 tech-->
-        <section class="tech">
+        <section tabindex="0" class="tech">
             <div class="container">
                 <h2 class="label-h2">tech</h2>
                 <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
@@ -51,47 +58,52 @@
         </section>
         <!--sect 3 feat projects-->
         <section class= "featured-projects">
-            <h2 class="label-h2">featured projects</h2>
+            <h2 tabindex="0" class="label-h2">featured projects</h2>
             <div class="featured-projects-grid container">
                 <!-- first project-card -->
-                <article class="featured-project">
-                    <div class="img-container">
-                        <div class="layer">
-                            <p class="layer-text">pizza</p>
+                <a href="http://www.foaje.se">
+                    <article class="featured-project">
+                        <div class="img-container">
+                            <div class="layer">
+                                <p class="layer-text">pizza</p>
+                            </div>
+                            <img class="img-projects" src="./img/pizza.png" alt="">
                         </div>
-                        <img class="img-projects" src="./img/pizza.png" alt="">
-                    </div>
-                    <article>
-                        <h3 class="h3-projects-card">chat bot build in javascript</h3>
-                        <p class="p-projects-card">Responsive web site built with..</p>
-                        <div class= "tags-container">
-                            <span class= "tags-projects">HTML5</span>
-                            <span class= "tags-projects">CSS3</span>
-                            <span class= "tags-projects">JavaScript</span>
-                        </div>
+                        <article>
+                            <h3 class="h3-projects-card">business site in HTML, CSS and javascript</h3>
+                            <p class="p-projects-card">Responsive web site built with..</p>
+                            <div class= "tags-container">
+                                <span class= "tags-projects">HTML5</span>
+                                <span class= "tags-projects">CSS3</span>
+                                <span class= "tags-projects">JavaScript</span>
+                            </div>
+                        </article>
                     </article>
-                </article>
+                </a>
                 <!-- 2nd project-card -->
-                <article class="featured-project">
-                    <div class="img-container">
-                        <div class="layer">
-                            <p class="layer-text">pizza</p>
+                <a href="http://github.com/ajliin">
+                    <article class="featured-project">
+                        <div class="img-container">
+                            <div class="layer">
+                                <p class="layer-text">pizza</p>
+                            </div>
+                            <img class="img-projects" src="./img/pizza.png" alt="">
                         </div>
-                        <img class="img-projects" src="./img/pizza.png" alt="">
-                    </div>
-                    <article>
-                        <h3 class="h3-projects-card">chat bot build in javascript</h3>
-                        <p class="p-projects-card">Responsive web site built with..</p>
-                        <div class= "tags-container">
-                            <span class= "tags-projects">HTML5</span>
-                            <span class= "tags-projects">CSS3</span>
-                            <span class= "tags-projects">JavaScript</span>
-                        </div>
+                        <article>
+                            <h3 class="h3-projects-card">chat bot build in javascript</h3>
+                            <p class="p-projects-card">Responsive web site built with..</p>
+                            <div class= "tags-container">
+                                <span class= "tags-projects">HTML5</span>
+                                <span class= "tags-projects">CSS3</span>
+                                <span class= "tags-projects">JavaScript</span>
+                            </div>
+                        </article>
                     </article>
-                </article>
+                </a>
                 <!-- 3d project-card -->
-                <article class="featured-project">
-                    <div class="img-container">
+                <a href="http://github.com/ajliin">
+                    <article class="featured-project">
+                        <div class="img-container">
                         <div class="layer">
                             <p class="layer-text">pizza</p>
                         </div>
@@ -107,24 +119,27 @@
                         </div>
                     </article>
                 </article>
+            </a>
                  <!-- 4th project-card -->
-                 <article class="featured-project">
-                    <div class="img-container">
-                        <div class="layer">
-                            <p class="layer-text">pizza</p>
-                        </div>
-                        <img class="img-projects" src="./img/pizza.png" alt="">
-                    </div>
-                    <article>
-                        <h3 class="h3-projects-card">chat bot build in javascript</h3>
-                        <p class="p-projects-card">Responsive web site built with..</p>
-                        <div class= "tags-container">
-                            <span class= "tags-projects">HTML5</span>
-                            <span class= "tags-projects">CSS3</span>
-                            <span class= "tags-projects">JavaScript</span>
-                        </div>
-                    </article>
-                </article>
+                 <a href="http://github.com/ajliin">
+                    <article class="featured-project">
+                     <div class="img-container">
+                         <div class="layer">
+                             <p class="layer-text">pizza</p>
+                         </div>
+                         <img class="img-projects" src="./img/pizza.png" alt="">
+                     </div>
+                     <article>
+                         <h3 class="h3-projects-card">chat bot build in javascript</h3>
+                         <p class="p-projects-card">Responsive web site built with..</p>
+                         <div class= "tags-container">
+                             <span class= "tags-projects">HTML5</span>
+                             <span class= "tags-projects">CSS3</span>
+                             <span class= "tags-projects">JavaScript</span>
+                         </div>
+                     </article>
+                 </article>
+             </a>
             </div>
 
             <h2 class="h2-without-label">other projects</h2>
@@ -224,15 +239,15 @@
                 <div class = "social-logos-more">
                     <div>
                         <img class="logo-color" src="./img/linked.png" alt="linkedin logo and link">
-                        <p class="h3-projects-card">linkedin</p>
+                        <p class="for-more-text">linkedin</p>
                     </div>
                     <div>
                         <img class="logo-color" src="./img/github.png" alt="github logo and link">
-                        <p class="h3-projects-card">github</p>
+                        <p class="for-more-text">github</p>
                     </div>
                     <div>
                         <img class="logo-color" src="./img/stack.png" alt="stackOverflow logo and link">
-                        <p class="h3-projects-card">stackoverflow</p>
+                        <p class="for-more-text">stackoverflow</p>
                     </div>
                     
                     
