@@ -4,6 +4,9 @@ body{
     color: black;
 }
 
+a{
+    text-decoration: none;
+}
 .top{
     width: 100%;
     height: 520px;
@@ -20,20 +23,14 @@ body{
     height: 40px;
     left: 220px;
     top: 48px;
+    display: inline-flex;
 }
 
 .icon {
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-}
-
-.circle {
-    position: absolute;
     width: 40px;
     height: 40px;
-  
 }
+
 
 .top_text{
     position: absolute;
@@ -44,7 +41,7 @@ body{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
@@ -94,16 +91,24 @@ body{
     width: 55px;
 }
 
+.section_header_container{
+    display: flex;
+	justify-content: center;
+}
+
 .red {
     background: #FA382F;
     color:  #FFFFFF;
     width: fit-content;
+    text-transform: uppercase;
+    padding: 3px;
 }
 
 .red-word{
     color: #FA382F;
     font-family: Roboto;
     font-weight: bold; /*No esta aplicado*/
+    text-transform: uppercase;
 }
 
 .tech{
@@ -115,18 +120,80 @@ body{
     margin: 10% 10%;
 }
 
+.image_container{
+    max-width: 525px;
+    position: relative;
+}
+
+.image{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 212px;
+
+}
+
+.image_overtitle{
+    position: absolute;
+    top: 35%;
+    right: 0%;
+    bottom: 0;
+    left: 0%;
+    color:  #FFFFFF;
+    z-index: 2;
+    height: 47px;
+   
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(156, 166, 197, 0.5);
+}
+
 .featured-projects, .other-projects{
     width: 100%;
     background: #F4F4F4;
 }
 
-.card_technigo, .card_other{
-    margin: 10% 10%;
+
+.container_projects, .container_otherProjects{
+    width: 320;
+    /* margin: 0 auto; */
+    margin: 24px;
+    max-width: 350px;
+}
+
+.project_description_container, .otherProjects_description_container{
+    text-align: left;
 }
 
 
+.featured-projects-body{
+    background-color: violet;
+    /* max-width: 305px; */
+} 
+
+.project_heading{
+     color: #FA382F;
+     text-transform: uppercase;
+}
+
+.project_tag{
+    background-color: #FDDFE7;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.description_continue{
+     color: #FA382F;
+}
+
 .my-thoughts{
-    background-color: deepskyblue;
+    background-color: #FFFFFF;
     width: 100%;
 }
 
@@ -160,20 +227,25 @@ body{
 }
 
 .social-media{
-    background-color: rgb(214, 214, 178);
+    background-color: #FFFFFF;
     width: 100%;
     padding: 20px 0px;
 }
 
+.bottom_icons_container{
+    display: flex;
+    justify-content: center;
+}
+
 .bottom_icons{
-    width: 130.5px;
+    width: 40px;
     height: 40px;
+    margin: 10px;
 }
 
 .bottom_text{
     color: #FA382F;
-    display: inline-flex;
-    font-size: 0.6rem;
+    font-size: 11px;
 }
 
 .footer{
@@ -186,4 +258,75 @@ body{
     background: #072BCE;
     color:#FFFFFF;
     padding: 15% 0%;
+}
+
+
+.tablet{
+    display: none
+}
+
+@media (min-width: 768px){
+.container_projects {
+    align-self: stretch;
+    max-width: 523px; 
+    justify-self: center;
+}
+
+.tablet{
+    display: block;
+}
+
+.featured-projects-body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%; 
+    column-gap: 20px;
+    row-gap: 15px;
+    margin: auto 50px;
+    max-width: 1024px;
+ 
+}
+
+.top_text{
+
+   width: 350px;
+      /*height: 240px; */
+    left: 20%;
+    top: 140px;
+    font-size: 18px;
+  
+}
+.top_icons{
+    left: 55%;
+}
+
+
+.icon{
+    width: 60px;
+    height: 60px;
+}
+
+.top_profile{
+    left: 60%;
+    top: 378px;
+}
+}
+
+@media (min-width: 1024px){
+.summary{
+    font-size: 2rem;
+}
+
+.top_icons{
+    left: 60%;
+    top: 48px;
+    display: inline-flex;
+    gap: 20px;
+}
+
+
+.icon{
+    width: 80px;
+    height: 80px;
+}
 }
