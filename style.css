@@ -3,29 +3,44 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* 
-h2 {
-  font-family: "Montserrat", sans-serif;
-} */
+body {
+  margin: 0;
+  width: 100%;
+}
 
+h1 {
+  font-size: 22px;
+  color: white;
+  background-color: red;
+  width: fit-content;
+  margin: auto;
+  padding: 2px;
+}
+
+h2 {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* header */
 .header {
   margin: 0;
   width: 100%;
   height: 520px;
-  display: flex;
 }
+
 .hero-image {
   height: 520px;
   width: 100%;
-  background-image: url("");
-  background-position: center;
+  background-image: url("./images/bookshelf-small2.jpg");
+  /* Photo by <a href="https://unsplash.com/@campfire_guy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Darren Richardson</a> on <a href="https://unsplash.com/s/photos/bookshelf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+  /* image to be changed in coming weeks */
+  background-position: right center;
   background-size: cover;
   padding: 0;
-  position: relative;
+  position: absolute;
   margin: 0;
-
-  /* Photo by <a href="https://unsplash.com/@andrewtneel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Neel</a> on <a href="https://unsplash.com/s/photos/adventure?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   */
 }
 
 .icon-box {
@@ -35,6 +50,10 @@ h2 {
   padding: 5px;
   margin-left: 220px;
   margin-top: 48px;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .text-header {
@@ -54,9 +73,77 @@ h2 {
   letter-spacing: 0.04em;
 }
 
-h1 {
-  font-family: "Roboto", sans-serif;
+.paragraph-header {
+  color: whitesmoke;
+  margin: 0 0 20px 0;
 }
+
+.first {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.my-name {
+  font-weight: 700;
+}
+
+.second {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.profile-image img {
+  /* Positioning */
+  position: absolute;
+  right: 24px;
+  top: 380px;
+  width: 150px;
+  height: 150px;
+
+  /*  Rounded corners */
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+/* Main section, wraps around all pther sections */
+
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  justify-content: center;
+}
+
+/* Part-section & container, classes for every section */
+.part-section {
+  width: 100%;
+  margin: 0;
+
+  /* margin: 10px 24px; */
+}
+
+.part-section:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 320px;
+  height: auto;
+  margin: 25px auto;
+
+  text-align: center;
+}
+
+/* .container:nth-child(odd) {
+  background-color: green;
+} */
+
+/* Intro-section */
 
 .line {
   border: 1px solid #c62a88;
@@ -73,42 +160,7 @@ h1 {
   display: inline-block;
 }
 
-.summary {
-  position: absolute;
-  width: 327px;
-  height: 232px;
-  left: 24px;
-  top: 569px;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 29px;
-  /* or 171% */
-}
-
-.tech-section {
-  position: absolute;
-  width: 327px;
-  height: 147px;
-  left: 24px;
-  top: 935px;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 29px;
-  /* or 171% */
-
-  text-align: center;
-}
-
-.projects {
-  position: absolute;
-  width: 375px;
-  height: 1298px;
-  left: 0px;
-  top: 1115px;
+.footer {
+  background-color: blue;
+  height: 375px;
 }
