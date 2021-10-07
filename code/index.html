@@ -10,12 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <section class="hero" tabindex="0">
         <div class="main-section">
             <div class="img_and_btn">
                 <img class="jes-img" src=".//imgs/jes.png" alt="image of Jessi">
-                <button class="contact-btn-mobile" href="#contact">Contact me</button>
+                <button class="contact-btn-mobile"><a class="button-link-mobile" href="#contact">Contact me</a>
+            </button>
             </div>
             <div class="hero-text">
                 <label for="">Hello!</label>
@@ -36,23 +39,22 @@
 
          <!-- <div class="nav-section"></div> -->
              <div class="mobile-bottom-nav">
-                 <a class="nav-link" href="#aboutMe1">About FE</a>
+                 <a class="nav-link" href="#aboutMe1">This is me</a>
                  <a class="nav-link" href="#mySkills">Skills</a>
                  <a class="nav-link" href="#portfolioFe">FE</a>
-                 <a class="nav-link" href="#aboutMe2">About Design</a>
                  <a class="nav-link" href="#portfolioUiUx">UI</a>
              </div>
              <div class="desktop-nav ">
                  <div class="links">
-                    <a class="nav-link" href="#aboutMe1">Frontend</a>
+                    <a class="nav-link" href="#aboutMe1">This is me</a>
                     <a class="nav-link" href="#mySkills">Skills</a>
                     <a class="nav-link" href="#portfolioFe">Portfolio Frontend</a>
-                    <a class="nav-link" href="#aboutMe2">Visual design</a>
                     <a class="nav-link" href="#portfolioUiUx">Portfolio UI/UX</a>
 
                 </div>
                 <div class="btn-bottom"></div>
-                    <button class="contact-btn-desktop" href="#contact">Contact me</button>
+                <button class="contact-btn-desktop"><a class="button-link" href="#contact">Contact me</a>
+                </button>
                 </div>
             </div>
          </div>
@@ -60,13 +62,21 @@
 
 
     <!-- INTRO JES. -->
+    <!-- this is for the backround opening tag -->
+    <section class="page-background">
 
         <section class="about-me" id="aboutMe1" tabindex="0">
             <div class="heading">
-                <h2>Frontend</h2>
+                <h2>This is me</h2>
             </div>
             <div class="about-me-text">
-                <p >I augusti började jag på Technigo Frontend Bootcamp som pågick i 24 veckor. En oerhört intensiv period med toppar och dalar minst sagt. Jag har jobbat tätt ihop med Frontendutvecklare under många år som Designer och har mer och mer känt att det här är ngt jag skulle vilja behärska. Så glad att jag hoppade på den här resan. Det är ju ett evigt lärande. Men att jag skulle komma såhär långt på 24 veckor trodde jag inte. Ser fram emot att få implementera den här kunskapen i min roll som Visuell Designer.  </p>
+                <p >In August, I started the Technigos 24 weeks Frontend Bootcamp. 
+                    An extremely intense period with peaks and valleys to say the least. 
+                    I have worked closely with Frontend Developers for many years as a Designer 
+                    and have more and more felt that this is something I would like to master. 
+                    So glad I jumped on this trip. It is an eternal learning. But I did not think 
+                    that I would get this far in 24 weeks. Looking forward to implementing this 
+                    knowledge in my role as Visual Designer.</p>
             </div>
         </section>
 
@@ -84,6 +94,8 @@
                         <p class="tag-large">HTML5</p>
                         <p class="tag-large">CSS3</p>
                         <p class="tag-large">JavaScript ES6</p>
+                        <p class="tag-large">GitHub</p>
+                        <p class="tag-large">React</p>
                     </div>
                 </div>
                 <div class="tag-section">
@@ -93,12 +105,14 @@
                         <p class="tag-large">Sketch</p>
                         <p class="tag-large">Keynote</p>
                         <p class="tag-large">Photoshop</p>
+                        <p class="tag-large">Design Lead</p>
                     </div>
                 </div>
                 <div class="tag-section">
                     <h3>More</h3>
                     <div class="tags">
                         <p class="tag-large">Agile methodology</p>
+                        <p class="tag-large">Accessibility</p>
                     </div>
                 </div>
             </div>
@@ -107,325 +121,337 @@
         <!-- PORTFOLIO FE-->
 
         <section class="portfolio" tabindex="0"> 
-            <div class="portfolio-heading-container">
-                <h2 class="portfolio-heading" id="portfolioFe">Frontend projects</h2>
+
+            <div class="portfolio-heading">
+                <h2 id="portfolioFe">Frontend projects</h2>
                 <p class="portfolio-intro">This is a text about the projects I have made during the Technigo Bootcamp. Just some text to give an intro to the projects and where to read more on each.</p>
             </div>
+
             <div class="portfolio-grid">
 
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/placeholder_img.png" alt="Project image">
+                <article class="article">
+                    <div class="project-item">
+                        <a class="live-link" href="https://vigilant-mestorf-12aeff.netlify.app/">
+                            <div class="project-img-container"> 
+                                <!-- <div class="overlay"></div> -->
+                                <img class="project-img" src="./imgs/placeholder_img.png" alt="Github tracker image">
+                            </div>
+                            <div class="project-text-container">
+                                <div class="arrowlink">
+                                    <h3>Github Tracker </h3>
+                                    <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
+                                </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </a>                        
                     </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project One</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">css</p>
-                            <p class="tag-small">html</p>
-                            <p class="tag-small">js</p>
-                        </div>
+
+                    <div class="tag-small-container">
+                        <p class="tag-small">css</p>
+                        <p class="tag-small">html</p>
+                        <p class="tag-small">js</p>
+                    </div>
+                    <div class="arrowlink">
+                        <a class="github-link" href="https://github.com/hemmahosjessi/project-github-tracker">Github Repository</a>
+                        <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
                     </div>
                 </article>
 
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/placeholder_img.png" alt="Project image">
+                <article class="article">
+                    <div class="project-item">
+                        <a class="live-link" href="https://vigilant-mestorf-12aeff.netlify.app/">
+                            <div class="project-img-container"> 
+                                <!-- <div class="overlay"></div> -->
+                                <img class="project-img" src="./imgs/placeholder_img.png" alt="Github tracker image">
+                            </div>
+                            <div class="project-text-container">
+                                <div class="arrowlink">
+                                    <h3>Weather App</h3>
+                                    <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
+                                </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </a>                        
                     </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Two</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">css</p>
-                            <p class="tag-small">html</p>
-                            <p class="tag-small">js</p>
-                        </div>
+
+                    <div class="tag-small-container">
+                        <p class="tag-small">css</p>
+                        <p class="tag-small">html</p>
+                        <p class="tag-small">js</p>
+                    </div>
+                    <div class="arrowlink">
+                        <a class="github-link" href="https://github.com/hemmahosjessi/project-github-tracker">Github Repository</a>
+                        <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
                     </div>
                 </article>
 
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/placeholder_img.png" alt="Project image">
+                <article class="article">
+                    <div class="project-item">
+                        <a class="live-link" href="https://vigilant-mestorf-12aeff.netlify.app/">
+                            <div class="project-img-container"> 
+                                <!-- <div class="overlay"></div> -->
+                                <img class="project-img" src="./imgs/placeholder_img.png" alt="Github tracker image">
+                            </div>
+                            <div class="project-text-container">
+                                <div class="arrowlink">
+                                    <h3>Business site</h3>
+                                    <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
+                                </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </a>                        
                     </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Three</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">css</p>
-                            <p class="tag-small">html</p>
-                            <p class="tag-small">js</p>
-                        </div>
+
+                    <div class="tag-small-container">
+                        <p class="tag-small">css</p>
+                        <p class="tag-small">html</p>
+                        <p class="tag-small">js</p>
+                    </div>
+                    <div class="arrowlink">
+                        <a class="github-link" href="https://github.com/hemmahosjessi/project-github-tracker">Github Repository</a>
+                        <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
                     </div>
                 </article>
 
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/placeholder_img.png" alt="Project image">
+                <article class="article">
+                    <div class="project-item">
+                        <a class="live-link" href="https://vigilant-mestorf-12aeff.netlify.app/">
+                            <div class="project-img-container"> 
+                                <!-- <div class="overlay"></div> -->
+                                <img class="project-img" src="./imgs/placeholder_img.png" alt="Github tracker image">
+                            </div>
+                            <div class="project-text-container">
+                                <div class="arrowlink">
+                                    <h3>News site</h3>
+                                    <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
+                                </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </a>                        
                     </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Four</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">css</p>
-                            <p class="tag-small">html</p>
-                            <p class="tag-small">js</p>
-                        </div>
+
+                    <div class="tag-small-container">
+                        <p class="tag-small">css</p>
+                        <p class="tag-small">html</p>
+                        <p class="tag-small">js</p>
+                    </div>
+                    <div class="arrowlink">
+                        <a class="github-link" href="https://github.com/hemmahosjessi/project-github-tracker">Github Repository</a>
+                        <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="project-item">
+                        <a class="live-link" href="https://vigilant-mestorf-12aeff.netlify.app/">
+                            <div class="project-img-container"> 
+                                <!-- <div class="overlay"></div> -->
+                                <img class="project-img" src="./imgs/placeholder_img.png" alt="Github tracker image">
+                            </div>
+                            <div class="project-text-container">
+                                <div class="arrowlink">
+                                    <h3>Guess Who game</h3>
+                                    <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
+                                </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </a>                        
+                    </div>
+
+                    <div class="tag-small-container">
+                        <p class="tag-small">css</p>
+                        <p class="tag-small">html</p>
+                        <p class="tag-small">js</p>
+                    </div>
+                    <div class="arrowlink">
+                        <a class="github-link" href="https://github.com/hemmahosjessi/project-github-tracker">Github Repository</a>
+                        <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
                     </div>
                 </article>
 
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/placeholder_img.png" alt="Project image">
+                <article class="article">
+                    <div class="project-item">
+                        <a class="live-link" href="https://vigilant-mestorf-12aeff.netlify.app/">
+                            <div class="project-img-container"> 
+                                <!-- <div class="overlay"></div> -->
+                                <img class="project-img" src="./imgs/placeholder_img.png" alt="Github tracker image">
+                            </div>
+                            <div class="project-text-container">
+                                <div class="arrowlink">
+                                    <h3>Chat Bot</h3>
+                                    <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
+                                </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </a>                        
                     </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Four</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">css</p>
-                            <p class="tag-small">html</p>
-                            <p class="tag-small">js</p>
-                        </div>
-                    </div>
-                </article>
 
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/placeholder_img.png" alt="Project image">
+                    <div class="tag-small-container">
+                        <p class="tag-small">css</p>
+                        <p class="tag-small">html</p>
+                        <p class="tag-small">js</p>
                     </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Four</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">css</p>
-                            <p class="tag-small">html</p>
-                            <p class="tag-small">js</p>
-                        </div>
+                    <div class="arrowlink">
+                        <a class="github-link" href="https://github.com/hemmahosjessi/project-github-tracker">Github Repository</a>
+                        <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
                     </div>
                 </article>
-
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/placeholder_img.png" alt="Project image">
-                    </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Four</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">css</p>
-                            <p class="tag-small">html</p>
-                            <p class="tag-small">js</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/placeholder_img.png" alt="Project image">
-                    </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Four</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">css</p>
-                            <p class="tag-small">html</p>
-                            <p class="tag-small">js</p>
-                        </div>
-                    </div>
-                </article>
-                
             </div>
         </section>
 
+        <section class="my-thoughts" id="myThoughts">
 
-        <!-- MORE JES. -->
-
-        <section class="about-me" id="aboutMe2" tabindex="0">
-            <div class="heading">
-                <h2>Visual Design</h2>
-            </div>
-            <div class="about-me-text">
-                <p >Älskar att producera design. Lägga pixlarna på rätt plats. Vrida och vända. Testa och göra om. Blir alltid som bäst, när man delar design med varandra. Jobbar ihop. Skill-överskridande. I augusti började jag utbilda mig till Frontendutvecklare. Technigos Bootcamp i 24 veckor. Min roll som visuell designer och kunskap i Frontendutveckling tänker jag blir en bra kombo. </p>
-            </div>
         </section>
+
 
 
         <!-- PORTFOLIO UI-->
 
         <section class="portfolio" tabindex="0"> 
-            <div class="portfolio-heading-container">
-                <h2 class="portfolio-heading" id="portfolioUiUx">Visual design projects</h2>
-                <p class="portfolio-intro">This is a text about some projects I have made during my years as a visual designer. Just some text to give an intro to the projects and where to read more on each.</p>
+
+            <div class="portfolio-heading">
+                <h2 id="portfolioUiUx">Visual Design projects</h2>
+                <p class="portfolio-intro">This is a text about the projects I have made during the Technigo Bootcamp. Just some text to give an intro to the projects and where to read more on each.</p>
             </div>
+
             <div class="portfolio-grid">
 
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/6_pitch_business_sweden.png" alt="Project image">
+                <article class="article">
+                    <div class="project-item">
+                        <a class="live-link" href="https://vigilant-mestorf-12aeff.netlify.app/">
+                            <div class="project-img-container"> 
+                                <!-- <div class="overlay"></div> -->
+                                <img class="project-img" src="./imgs/placeholder_img.png" alt="Github tracker image">
+                            </div>
+                            <div class="project-text-container">
+                                <div class="arrowlink">
+                                    <h3>Github Tracker </h3>
+                                    <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
+                                </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </a>                        
                     </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project One</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">Figma</p>
-                            <p class="tag-small">PS</p>
-                            <p class="tag-small">Webb</p>
-                        </div>
+
+                    <div class="tag-small-container">
+                        <p class="tag-small">css</p>
+                        <p class="tag-small">html</p>
+                        <p class="tag-small">js</p>
+                    </div>
+                    <div class="arrowlink">
+                        <a class="github-link" href="https://github.com/hemmahosjessi/project-github-tracker">Github Repository</a>
+                        <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
                     </div>
                 </article>
 
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/7_stockholmskallan.png" alt="Project image">
+                <article class="article">
+                    <div class="project-item">
+                        <a class="live-link" href="https://vigilant-mestorf-12aeff.netlify.app/">
+                            <div class="project-img-container"> 
+                                <!-- <div class="overlay"></div> -->
+                                <img class="project-img" src="./imgs/placeholder_img.png" alt="Github tracker image">
+                            </div>
+                            <div class="project-text-container">
+                                <div class="arrowlink">
+                                    <h3>Weather App</h3>
+                                    <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
+                                </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </a>                        
                     </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Two</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">Mobile</p>
-                            <p class="tag-small">Pitch</p>
-                        </div>
+
+                    <div class="tag-small-container">
+                        <p class="tag-small">css</p>
+                        <p class="tag-small">html</p>
+                        <p class="tag-small">js</p>
+                    </div>
+                    <div class="arrowlink">
+                        <a class="github-link" href="https://github.com/hemmahosjessi/project-github-tracker">Github Repository</a>
+                        <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
                     </div>
                 </article>
 
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/9_pitch_nvv.png" alt="Project image">
+                <article class="article">
+                    <div class="project-item">
+                        <a class="live-link" href="https://vigilant-mestorf-12aeff.netlify.app/">
+                            <div class="project-img-container"> 
+                                <!-- <div class="overlay"></div> -->
+                                <img class="project-img" src="./imgs/placeholder_img.png" alt="Github tracker image">
+                            </div>
+                            <div class="project-text-container">
+                                <div class="arrowlink">
+                                    <h3>Business site</h3>
+                                    <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
+                                </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </a>                        
                     </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Three</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">Figma</p>
-                            <p class="tag-small">Design system</p>
-                        </div>
+
+                    <div class="tag-small-container">
+                        <p class="tag-small">css</p>
+                        <p class="tag-small">html</p>
+                        <p class="tag-small">js</p>
+                    </div>
+                    <div class="arrowlink">
+                        <a class="github-link" href="https://github.com/hemmahosjessi/project-github-tracker">Github Repository</a>
+                        <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
                     </div>
                 </article>
 
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/4_portratt.png" alt="Project image">
+                <article class="article">
+                    <div class="project-item">
+                        <a class="live-link" href="https://vigilant-mestorf-12aeff.netlify.app/">
+                            <div class="project-img-container"> 
+                                <!-- <div class="overlay"></div> -->
+                                <img class="project-img" src="./imgs/placeholder_img.png" alt="Github tracker image">
+                            </div>
+                            <div class="project-text-container">
+                                <div class="arrowlink">
+                                    <h3>News site</h3>
+                                    <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
+                                </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </a>                        
                     </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Four</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">Desing Manual</p>
-                            <p class="tag-small">Sketch</p>
-                        </div>
-                    </div>
-                </article>
 
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/3_pitch_kunskapskanalen.png" alt="Project image">
+                    <div class="tag-small-container">
+                        <p class="tag-small">css</p>
+                        <p class="tag-small">html</p>
+                        <p class="tag-small">js</p>
                     </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Four</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">Pitch</p>
-                            <p class="tag-small">Webb</p>
-                            <p class="tag-small">Sketch</p>
-                        </div>
+                    <div class="arrowlink">
+                        <a class="github-link" href="https://github.com/hemmahosjessi/project-github-tracker">Github Repository</a>
+                        <img class="link-arrow" src="./imgs/arrow-right.svg" alt="linkarrow">
                     </div>
                 </article>
-
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/5_staden.png" alt="Project image">
-                    </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Four</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">Tag</p>
-                            <p class="tag-small">Tag</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/8_stockholm_exergi.png" alt="Project image">
-                    </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Four</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">Tag</p>
-                            <p class="tag-small">Hey</p>
-                            <p class="tag-small">Tag</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-item">
-                    <div class="project-img-container"> 
-                        <img class="project-img" src="./imgs/1_telestaden.png" alt="Project image">
-                    </div>
-                        <div class="text-tags-container">
-                        <div class="project-text-container">
-                            <h3>Project Four</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="tag-small-container">
-                            <p class="tag-small">Tag</p>
-                            <p class="tag-small">Hello</p>
-                            <p class="tag-small">Hey</p>
-                        </div>
-                    </div>
-                </article>
-                
             </div>
         </section>
 
-        <footer class="footer" id="contact" tabindex="0">
-            <h2 class="footer-heading">Reach out and say -Hello!</h2>
-            <div class="contact">
-                <!-- <h3>Jessi Nygren Walhed</h3> -->
-                <div class="contact-items">
-                    <div class="number">
-                        <img class="phone-icon" src="./imgs/phone.svg" alt="phone-icon">
-                        <p>0707 39 46 22</p>
-                    </div>
-                    <div class="email">
-                        <img class="email-icon" src="./imgs/email.svg" alt="email-icon">
-                        <p>hemmahosjessi@gmail.com</p>
-                    </div>
+
+
+
+    <!-- this is for the background closing tag -->
+    </section> 
+
+    <footer class="footer" id="contact" tabindex="0">
+        <h2 class="footer-heading">Reach out and say -Hello!</h2>
+        <div class="contact">
+            <!-- <h3>Jessi Nygren Walhed</h3> -->
+            <div class="contact-items">
+                <div class="number">
+                    <img class="phone-icon" src="./imgs/phone.svg" alt="phone-icon">
+                    <p>0707 39 46 22</p>
+                </div>
+                <div class="email">
+                    <img class="email-icon" src="./imgs/email.svg" alt="email-icon">
+                    <p>hemmahosjessi@gmail.com</p>
                 </div>
             </div>
+        </div>
 
-        </footer>
+    </footer>
        
 
 
