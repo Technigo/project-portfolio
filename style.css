@@ -27,6 +27,17 @@
   right: 50px;
   top: 380px;
 }
+.icons-top img {
+  width: 40px;
+}
+.icons-top {
+  position: absolute;
+  z-index: 3;
+  border: solid white 2px;
+  padding: 2px;
+  top: 45px;
+  right: 28px;
+}
 .heading-text {
   position: absolute;
   color: white;
@@ -50,7 +61,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: auto 24px;
   height: 324px;
 }
 .about-me-content {
@@ -60,21 +70,33 @@
   font-size: 17px;
   line-height: 29px;
 }
+h2 {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  background-color: red;
+  padding: 0 2%;
+  height: 26px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 .tech-container {
-  position: relative;
   display: flex;
+  flex-direction: column;
   height: 324px;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 .tech-container-content {
-  height: 325px;
+  height: 280px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 29px;
   height: 232px;
-  width: 60%;
   text-align: center;
 }
 h2 {
@@ -88,8 +110,8 @@ h2 {
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
-  margin-bottom: 24px;
-  margin-top: 24px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 .featured-projects-container {
   text-align: center;
@@ -100,6 +122,10 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.wrapper {
+  text-decoration: none;
+  color: black;
 }
 .game {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -234,6 +260,10 @@ h2 {
 .more-thoughts-article {
   text-align: left;
   text-decoration: underline;
+  padding: 20px;
+}
+.red {
+  color: red;
 }
 .skills {
   height: 464px;
@@ -259,6 +289,7 @@ li {
   padding-top: 40px;
 }
 .for-more-wrapper {
+  height: 250px;
   text-align: center;
 }
 .icon-wrapper-bottom {
@@ -266,8 +297,22 @@ li {
   justify-content: space-around;
   text-align: center;
 }
+.icon-wrapper-bottom a {
+  text-decoration: none;
+}
 .red-logo {
   width: 60px;
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  color: #fa382f;
 }
 .footer {
   background-color: #072bce;
@@ -305,6 +350,14 @@ li {
   .red-logo {
     width: 160px;
   }
+  .icons-top img {
+    width: 80px;
+  }
+  .icons-top {
+    border: none;
+    top: 120px;
+    right: 410px;
+  }
   .seconds {
     display: none;
   }
@@ -314,7 +367,7 @@ li {
   .profile-img {
     width: 333px;
     height: 333px;
-    right: 19%;
+    right: 20%;
     top: 380px;
   }
   .heading-text {
@@ -332,7 +385,7 @@ li {
     line-height: 50px;
   }
   .tech-container {
-    height: 432px;
+    height: 520px;
   }
   h2 {
     display: inline-block;
@@ -342,6 +395,13 @@ li {
     line-height: 59px;
     letter-spacing: 0.01em;
     font-weight: 700;
+    margin-top: 80px;
+  }
+  .heading-other-projects {
+    padding: 40px;
+  }
+  .my-thoughts {
+    height: 1000px;
   }
   .small-heading {
     font-size: 25px;
@@ -401,11 +461,18 @@ li {
   }
   .skills-content {
     text-align: center;
-    padding-top: 100px;
+    padding: 40px;
   }
   .skills-container {
-    padding-top: 50px;
     font-size: 25px;
     line-height: 41px;
+  }
+  .for-more-wrapper {
+    height: 500px;
+  }
+}
+@media (min-width: 998px) {
+  .content {
+    width: 998px;
   }
 }
