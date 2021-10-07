@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #c62a88;
+  --secondary: #A76571;
+}
+
 body,
 html {
   margin: 0;
@@ -23,9 +28,15 @@ header {
   box-shadow: 2px 9px 14px -7px rgba(71, 67, 71, 0.68);
 }
 
-.main-container {
-  margin-left: 20px;
-  margin-right: 20px;
+.container {
+  /*margin-left: 20px;
+  margin-right: 20px;*/
+  width: 320px;
+  margin: 0 auto;
+}
+
+section:nth-child(2n) {
+  background-color: #F4F4F4;
 }
 
 /*All the titles and paragraphs*/
@@ -65,6 +76,7 @@ p {
   font-size: 17px;
   line-height: 29px;
   font-weight: 400;
+  margin: 0;
 }
 
 .filled-title-container {
@@ -73,12 +85,12 @@ justify-content: center;
 }
 
 .filled-title {
-background-color:#c62a88;
+background-color: var(--primary);
+padding: 10px;
 text-transform: uppercase;
 color: white;
-margin: auto auto 1rem auto;
-font-size: 22px;
-line-height: 27px;
+margin: 2rem;
+line-height: 27px; 
 font-weight: 500;
 }
 
@@ -94,9 +106,7 @@ font-weight: 500;
 }
 
 .profile {
-  height: 200px;
-  right: 0;
-  float: right;
+  width: 200px;
   position: absolute;
   margin-right: 25px;
 }
@@ -166,10 +176,6 @@ font-weight: 500;
   letter-spacing: 0.04em;
 }
 
-.intro-text {
-  margin: 20px 24px;
-  padding: 10px;
-}
 
 /* Line-dot section indicator */
 .line {
@@ -187,20 +193,22 @@ font-weight: 500;
   display: inline-block;
 }
 
-.intro-text p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 29px;
+.intro-text,
+.tech-container,
+.featured-projects,
+.my-thoughts,
+.skills-container,
+.for-more {
+  
 }
 
 .tech-container {
   text-align: center;
-  padding: 10px;
 }
 
 .main-projects {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: #fff;
 }
 
 /*Hides two projects in mobile view*/
@@ -213,7 +221,11 @@ font-weight: 500;
   margin-bottom: 30px;
 }
 
-.other-projects {
+.other-projects,
+.main-projects h5,
+.main-projects p,
+.text-container,
+.skill-set {
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -237,10 +249,7 @@ font-weight: 500;
   margin: 0;
 }
 
-.main-projects h5,
-.main-projects p,
-.text-container,
-.skill-set {
+ {
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -266,10 +275,6 @@ font-weight: 500;
   font-weight: bold;
   color: #c62a88;
 }
- 
-.my-thoughts {
-  margin-top: 60px;
-}
 
 .text-container {
   display: flex;
@@ -279,28 +284,17 @@ font-weight: 500;
 }
 
 /*Lists with different skills*/
-.skills-container {
-  padding-top: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  padding: 20px;
-  margin-bottom: 40px;
-  background-image: url(./images/clean.jpg);
-  background-position: center;
-}
 .skill-set {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 30px;
 }
 
+.skill {
+  padding: 20px;
+}
 .skill-more {
   display: none;
-}
-
-
-.skill {
- margin-bottom: 25px;
- margin-top: 20px;
 }
 
 .code, 
@@ -321,19 +315,64 @@ ul {
 .my-footer {
   background-color: #E2E3DB;
   height: 302px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
 }
 
 .my-footer p {
   margin: 0;
 }
 
-.my-footer h3 {
-  padding-top: 15%;
+@media (min-width:480px) and (max-width:679px) {
+  .container {
+    width: 450px;
+  }
 }
 
+@media (min-width:680px) and (max-width:979px) {
+  .container {
+    width: 650px;
+  }
 
+  h1 {
+    font-size: 70px;
+    line-height: 20px;
+  }
+  
+  h3 {
+    font-size: 30px;
+  }
+  
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  h5 {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  
+  p {
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
 
+@media (min-width:980px) and (max-width:1279px) {
+  .container {
+    width: 950px;
+  }
+}
+
+@media (min-width:1280px) {
+  .container {
+    width: 1250px;
+  }
+}
 
 
 
