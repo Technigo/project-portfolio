@@ -2,6 +2,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+.content {
+  width: 320px;
+  margin: 0 auto;
+}
 .bg-img {
   z-index: 0;
   object-fit: cover;
@@ -10,6 +14,7 @@
   z-index: 0;
   min-height: 520px;
   max-height: 520px;
+  filter: brightness(75%);
 }
 .profile-img {
   position: absolute;
@@ -43,11 +48,10 @@
 .about-me {
   position: relative;
   display: flex;
-  background-color: #f4f4f4;
-
   justify-content: center;
   align-items: center;
-  padding: 49px 24px 43px 24px;
+  padding: auto 24px;
+  height: 324px;
 }
 .about-me-content {
   display: block;
@@ -85,35 +89,33 @@ h2 {
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 24px;
+  margin-top: 24px;
 }
 .featured-projects-container {
   text-align: center;
-  height: 1115px;
-  background-color: #f4f4f4;
+  padding-top: 41px;
 }
 .project-flex {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .game {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./img/guess-who.jpg");
-  height: 200px;
 }
 .chatt {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./img/chatt.jpg");
-  height: 200px;
 }
 .news {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./img/news.jpg");
-  height: 200px;
 }
 .weather {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./img/weather.jpg");
-  height: 200px;
 }
 .chatt,
 .game,
@@ -124,7 +126,7 @@ h2 {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  margin: 25px 25px;
+  height: 212px;
 }
 .img-p {
   color: white;
@@ -133,6 +135,14 @@ h2 {
   font-weight: bold;
   line-height: 34px;
   letter-spacing: 0.05em;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 72px 100px;
+  transition: 0.5s ease;
+}
+.img-p:hover {
+  transition: 0.5s ease;
+  color: transparent;
+  background-color: transparent;
 }
 .text-box {
   text-align: left;
@@ -144,7 +154,7 @@ h2 {
   align-items: center;
   letter-spacing: 0.01em;
 }
-.text-box h3 {
+.small-heading {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -158,18 +168,146 @@ h2 {
 .html,
 .css,
 .java-script {
-  font-size: 9px;
-  line-height: 11px;
+  font-size: 12px;
+  line-height: 12px;
   display: inline-block;
   background-color: #fddfe7;
-  margin: 10px 5px;
-  padding: 2px;
+  margin: 10px 3px;
+  padding: 4px;
+}
+.ide {
+  display: block;
+  height: 200px;
+  width: 320px;
 }
 .second {
   display: none;
 }
+.heading-other-projects {
+  font-family: Roboto;
+  font-style: normal;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: #fa382f;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  padding: 20px;
+}
+.my-thoughts {
+  text-align: center;
+}
+.h2-addings {
+  display: none;
+}
+.ide-content {
+  text-align: left;
+  width: 320px;
+}
+.ide-h3 {
+  padding-top: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  color: #fa382f;
+}
+.ide-bold-p {
+  font-weight: bold;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+.ide-p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+}
 
+.more-thoughts-article {
+  text-align: left;
+  text-decoration: underline;
+}
+.skills {
+  height: 464px;
+}
+.skills-content {
+  text-align: center;
+  padding-top: 44px;
+}
+.skills-container {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+  justify-content: space-between;
+}
+li {
+  list-style-type: none;
+}
+.second-li {
+  padding-top: 40px;
+}
+.for-more-wrapper {
+  text-align: center;
+}
+.icon-wrapper-bottom {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.red-logo {
+  width: 60px;
+}
+.footer {
+  background-color: #072bce;
+  height: 302px;
+  text-align: center;
+  padding-top: 60px;
+}
+.contact {
+  font-size: 38px;
+  font-family: Montserrat;
+  font-size: 21px;
+  line-height: 2px;
+  text-align: center;
+  top: 100px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.footer-text {
+  color: #fff;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 2;
+  text-align: center;
+}
 @media (min-width: 768px) {
+  section:nth-child(2n) {
+    background-color: #f4f4f4;
+  }
+  .content {
+    width: 768px;
+  }
+  .red-logo {
+    width: 160px;
+  }
+  .seconds {
+    display: none;
+  }
   .bg-img {
     min-height: 668px;
   }
@@ -187,11 +325,14 @@ h2 {
     font-size: 25px;
   }
   .about-me {
-    padding: 123px auto 109px auto;
+    height: 432px;
   }
   .about-me-kontent {
     font-size: 30px;
     line-height: 50px;
+  }
+  .tech-container {
+    height: 432px;
   }
   h2 {
     display: inline-block;
@@ -202,7 +343,69 @@ h2 {
     letter-spacing: 0.01em;
     font-weight: 700;
   }
+  .small-heading {
+    font-size: 25px;
+    line-height: 41px;
+  }
+  .heading-other-projects {
+    font-size: 38px;
+    line-height: 47px;
+  }
+  .featured-projects-container {
+    padding: 121px auto 91px;
+  }
+  .project-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .featured-projects-box {
+    padding: 22px;
+  }
+
+  .wrapper {
+    width: 50%;
+  }
   .second {
     display: block;
+  }
+  .img-p {
+    padding: 120px 110px;
+  }
+  .chatt,
+  .game,
+  .news,
+  .weather {
+    height: 306px;
+    width: 350px;
+  }
+  .h2-addings {
+    display: inline;
+  }
+  .different-h2 {
+    font-size: 45px;
+  }
+  .ide {
+    height: 306px;
+    width: 350px;
+  }
+  .ide-articles {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .ide-content {
+    width: 350px;
+  }
+  .skills {
+    height: 840px;
+  }
+  .skills-content {
+    text-align: center;
+    padding-top: 100px;
+  }
+  .skills-container {
+    padding-top: 50px;
+    font-size: 25px;
+    line-height: 41px;
   }
 }
