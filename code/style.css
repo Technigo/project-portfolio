@@ -54,6 +54,10 @@ section {
     color: #FFFFFF;
 }
 
+.heading-2.tight {
+    line-height: 28px;
+}
+
 .heading-3 {
     font-family: Montserrat;
     font-style: normal;
@@ -218,8 +222,6 @@ h2.heading.solidblue {
     display: none;
 }
 
-
-
 .project-img-text {
     position: relative;
     background: black;
@@ -325,24 +327,30 @@ h4.heading-thoughts {
 
 .section.section-contact {
     background-color: #D5BFBF;
+    padding-bottom: 55px;
 }
 
-.section.section-contact p {
+.section-contact p {
     color: #fff;
     line-height: 5px;
 }
 
-.project-card-hide {
-    display: none
+.hidden-mobile {
+    display: none;
 }
 
 /* tablet */
-@media (min-width: 767px) {
 
+@media (min-width: 767px) {
+    .header-icons {
+        grid-row: 1;
+        grid-column: 11;
+        position: absolute;
+        margin-top: 20px;
+    }
     .headings-info {
         grid-row: 6;
     }
-
     .heading-1 {
         font-size: 20px;
         margin-bottom: 10px;
@@ -361,51 +369,64 @@ h4.heading-thoughts {
         line-height: 47px;
         margin-top: 7px;
     }
-
     .profile-img {
         grid-row: 9;
         width: 270px;
         height: 270px;
     }
-
     .summary-section {
         padding: 70px 100px 70px 100px;
     }
-    
     .section.centered p {
-    padding: 0px 100px 30px 100px;
-}
+        padding: 0px 100px 30px 100px;
+    }
+    .hidden-mobile {
+        display: unset;
+    }
+    .project-card {
+        grid-column: span 6;
+    }
+    .section.pad-tablet {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .featured-projects-section {
+        margin-right: 10%;
+        margin-left: 10%;
+        display: grid;
+        grid-row: 2;
+    }
+    .project-card tablet and mobile {
+        grid-row: 3;
+    }
+    
+    .skills {
+        grid-column: span 3;
+        padding-bottom: 20px;
+    }
 
-.section {
-
-}
-
-.project-card-show-on-tablet {
-    display: block;
-}
-
+    .section.section-contact p {
+        line-height: 2px;
+        padding-bottom: 0px;
+    }
 }
 
 /* desktop */
+
 @media (min-width: 1024px) {
-.headings-info {
-    grid-row: 6;
-}
-
-.heading-1 {
-font-size: 28px;
-line-height: 37px;
-}
-
-.heading-2 {
-
-    font-size: 82px;
-    line-height: 100px;
-}
-
-.heading-3 {
-    font-size: 50px;
-    line-height: 78px;
-}
-
+    .headings-info {
+        grid-row: 4;
+    }
+    .heading-1 {
+        font-size: 28px;
+        line-height: 37px;
+    }
+    .heading-2 {
+        font-size: 82px;
+        line-height: 100px;
+    }
+    .heading-3 {
+        font-size: 50px;
+        line-height: 78px;
+    }
 }
