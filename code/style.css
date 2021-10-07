@@ -7,10 +7,9 @@ body {
   box-sizing: border-box;
 }
 
-.header {
+header {
   width: 100%;
   height: 520px;
-  /* border: solid red 1px; */
   position: relative;
 }
 
@@ -19,7 +18,18 @@ body {
   object-fit: cover;
   width: 100%;
   height: 520px;
-  /* top: 0px; */
+}
+
+.soMe {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  object-fit: cover;
+  width: 130.5px;
+  height: 40px;
+  left: 60%;
+  top: 48px;
+  margin: 0px;
 }
 
 .title {
@@ -32,67 +42,47 @@ body {
   letter-spacing: 0.04em;
 }
 
-.name {
+.name-section {
   display: flex;
   flex-direction: row;
-}
-
-.portfolio {
-  /* not working  */
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 13px;
   line-height: 18px;
-  letter-spacing: 0.04em;
+  gap: 3px;
 }
 
-.name p {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: bold;
+.portfolio-text {
+  text-transform: uppercase;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  letter-spacing: 0.04em;
-  margin: 5px;
 }
 
 h1 {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 40px;
   line-height: 49px;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 h2 {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 40px;
-  margin: 5px;
-}
-
-.soMe {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  object-fit: cover;
-  width: 130.5px;
-  height: 40px;
-  left: 55%;
-  top: 48px;
-  margin: 0px;
+  margin-top: 5px;
 }
 
 .profile-img {
   position: absolute;
   width: 180px;
   height: 180px;
-  left: 40%;
-  top: 365px;
+  left: 43%;
+  top: 355px;
   object-fit: cover;
   border-radius: 50%;
   border: solid white 2px;
@@ -128,6 +118,7 @@ h2 {
   border-radius: 50%;
   display: inline-block;
   margin-left: -5px;
+  margin-right: 10px;
 }
 
 .intro-text {
@@ -145,15 +136,14 @@ h2 {
   flex-direction: column;
   align-self: center;
   width: 100%;
-  height: 315px;
-  text-align: left;
-  margin: 0px;
+  margin-bottom: 30px;
   justify-content: center;
 }
 
 h3 {
+  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-size: 22px;
   line-height: 27px;
@@ -162,11 +152,10 @@ h3 {
   color: white;
   width: fit-content;
   align-self: center;
-  justify-content: center;
-  padding: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
   margin-top: 40px;
   margin-bottom: 40px;
-  /* margin: 0px; */
 }
 
 .tech-text {
@@ -186,28 +175,26 @@ h3 {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   padding-bottom: 60px;
 }
 
-.card-1 {
+.project-container-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 340px;
+  align-self: center;
+}
+
+.card-container-1 {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.project-card-1 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border: solid black 2px;
-  width: 100%;
-  height: 340px;
-  align-self: center;
-  margin-top: 20px;
-  /* margin-top: 20px; */
 }
 
 .overlay {
@@ -225,80 +212,76 @@ h3 {
   height: 210px;
 }
 
-.project-tex,
-p {
-  margin: 0px;
-}
-
 .card-text {
+  text-transform: uppercase;
   font-size: 28px;
-  font-weight: 700;
   line-height: 34px;
   color: white;
   text-align: center;
   position: absolute;
-  /* width: 100%; */
-  /* height: 47px; */
-  /* left: 60px;
-  top: 1360px; */
+  margin: 0px;
 }
 
 h6 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
   color: #fa382f;
-  font-size: 16px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 5px;
 }
 
-.lang {
-  margin-top: 5px;
+.project-text {
+  margin: 0px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+}
+
+.lang-container {
   display: flex;
   flex-direction: row;
 }
 
-.lang p {
+.lang-container-text {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
   background-color: #fddfe7;
-  margin-right: 5px;
-  font-size: 12px;
-  padding: 5px;
+  font-weight: 400;
+  font-size: 9px;
+  margin-right: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
-.project-card-2 {
+.project-container-2 {
+  position: relative;
   display: flex;
   flex-direction: column;
-  border: solid black 2px;
   width: 100%;
   height: 340px;
   align-self: center;
   margin-top: 30px;
 }
 
-.project-card-2 h2 {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 34px;
-  color: #072bce;
-  text-align: center;
-  position: absolute;
-  height: 47px;
-  left: 60px;
-  top: 1740px;
+.card-container-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .other-projects {
+  text-transform: uppercase;
   text-align: center;
   color: #fa382f;
-  margin-top: 30px;
+  margin-top: 40px;
+  font-size: 21px;
+  line-height: 25px;
 }
-
-/* .other-projects-1 {
-  border: solid crimson 1px;
-  width: 100%;
-  height: 340px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-} */
 
 /* my thoughts section  */
 .article {
