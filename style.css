@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  position: relative;
+  /* background-image: url("./images/header-back.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-color: cadetblue;
+  padding: 50px 30px 0 30px;
+  height: 520px;
+}
+
+.icon-wrapper {
+  text-align: end;
+}
+.social-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.user-name {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.user-name span {
+  font-weight: 100;
+}
+
+.ambition {
+  font-size: 45px;
+}
+.ambition-two {
+  display: block;
+  font-size: 26px;
+}
+.user-image {
+  position: absolute;
+  right: 30px;
+  bottom: -15px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+/* This section deals with my info text */
+
+.section-container {
+  margin: 50px 50px 0 50px;
+  text-align: center;
+  padding: 30px 0;
+}
+.my-info {
+  /* margin: 50px 50px; */
+  font-size: 17px;
+  line-height: 36px;
+}
+
+.dot-line {
+  width: 50px;
+  position: relative;
+  top: -2px;
+}
+
+.title {
+  text-align: center;
+  display: inline;
+  padding: 1px 3px;
+  background-color: cadetblue;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.tech-info {
+  width: 100%;
+  margin: 10px auto;
+  padding: 20px 0 45px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+/* Featured projects */
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.image-wrapper {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.project-image {
+  margin-top: 20px;
+  width: 100%;
+  opacity: 0.7;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(156, 166, 197, 0.5);
+}
+
+.text-over-image {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-heading {
+  text-align: start;
+  padding: 15px 0;
+  color: cadetblue;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.project-description {
+  text-align: start;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.tech-small-inline {
+  display: flex;
+  gap: 6px;
+  margin: 5px 0;
+}
+.tech-logo {
+  background-color: cadetblue;
+  font-size: 9px;
+  padding: 4px;
+  font-weight: 400;
+}
+
+.black {
+  color: black;
+}
+
+/* Other Projects Section */
+
+.blue {
+  color: cadetblue;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hidden-in-mobile {
+  display: none;
+}
+.skills-card {
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  fill: cadetblue;
+}
+
+.bottom-icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 25px;
+}
+
+.icon-with-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 12px;
+  color: cadetblue;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: cadetblue;
+  padding: 20px 0;
+  text-align: center;
+  font: "Montserrat", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  color: white;
+}
+
+.last {
+  margin: 10px 50px 0 50px;
+  text-align: center;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .section-container {
+    margin: 50px 20% 0 20%;
+  }
+  section:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .project-card {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .project-card-other {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .project-card:nth-child(even) {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .hidden-in-mobile {
+    display: block;
+  }
+}
