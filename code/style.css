@@ -4,7 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: #f4f4f494;
+    background-color: #f4f4f467;
 }
 
 .media-icon-container {
@@ -20,7 +20,7 @@ body {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.329)), url("./assets/hero-image.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.385), rgba(0, 0, 0, 0.385)), url("./assets/hero-image.jpg");
     height: 520px;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,6 +41,7 @@ body {
     font-size: 13px;
     color: rgb(216, 253, 253);
     margin: 0;
+    letter-spacing: 1px;
 }
 
 .current-job {
@@ -66,7 +67,7 @@ body {
 
 .summary-section {
     display: flex;
-    background-color: #f4f4f494;
+    background-color: #f4f4f467;
     width: 320px;
     margin: 0 auto;
 }
@@ -90,7 +91,7 @@ p {
     text-align: center;
 }
 
-.tech-heading-container {
+.tech-heading-container, .thoughts-heading-container, .project-heading-container, .skills-heading-container {
     display: flex;
     justify-content: center;
 }
@@ -100,7 +101,6 @@ p {
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-    width: inline;
     padding: 3px;
 }
 
@@ -108,31 +108,23 @@ p {
     line-height: 29px;
 }
 
-.featured-projects {
-    background-color: #f4f4f494;
-}
-
 .container {
     width: 320px;
     margin: 0 auto;
 }
 
-.project-heading-container {
-    display: flex;
-    justify-content: center;
-}
-
-.project-heading {
+.project-heading, .thoughts-heading, .skills-heading, .for-more-heading {
     background-color: #629990;
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-    width: inline;
     padding: 3px;
+    margin-top: 3vh;
 }
 
 .image-container {
     position: relative;
+    margin-top: 1vh;
 }
 
 .image-overlay {
@@ -142,6 +134,10 @@ p {
     bottom: 0;
     left: 0;
     background: rgba(40, 49, 51, 0.438);
+}
+
+.project-image {
+    height: 195px;
 }
 
 .project-title {
@@ -161,7 +157,12 @@ p {
     display: block;
 }
 
-.other-project-heading {
+.project-description {
+    line-height: 29px;
+    font-size: 17px;
+}
+
+.other-project-heading, .more-thoughts-heading {
     color: #629990;
     text-align: center;
     text-transform: uppercase;
@@ -170,10 +171,17 @@ p {
 
 h3 {
     text-transform: uppercase;
+    color: #629990;
+    font-size: 17px;
+}
+
+.arrow-icon {
+    width: 20px;
+    height: 15px;
 }
 
 .languages-container {
-    line-height: 11px;
+    margin-bottom: 1vh;
 }
 
 span {
@@ -182,6 +190,105 @@ span {
     background-color: #629990;
     padding: 5px;
     color: #FFFFFF;
+}
+
+.featured-thoughts, .for-more {
+    background-color: #FFFFFF;
+}
+
+.thoughts-image {
+    width: 100%;
+    display: block;
+    height: 210px;
+}
+
+.thoughts-date, .more-thoughts-date {
+    color: #629990;
+}
+
+.thoughts-title {
+    color: black;
+    text-transform: none;
+    font-size: 21px;
+}
+
+.thoughts-description {
+    line-height: 32px;
+    font-size: 17px;
+}
+
+.more-thoughts-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.more-thoughts-title {
+    color: black;
+}
+
+.skills-container {
+    display: flex;
+    margin-bottom: 30px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.skills-title {
+    margin-bottom: -1vh;
+}
+
+ul {
+    list-style: none;
+    display: inline;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.code-toolbox-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.upcoming-more-container {
+    display: flex;
+    margin-left: 2.7vh;
+}
+
+.for-more-heading-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.for-more-heading {
+    margin: 3vh auto;
+}
+
+.skills-more {
+    display: none;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+}
+
+.media-image {
+    width: 70px;
+}
+
+footer {
+    background-color: #629990;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer-title {
+    text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
