@@ -1,48 +1,105 @@
-:root {
-  --font-family: 'Montserrat', sans-serif;
-  --font-family: 'Roboto', sans-serif;
-  --blue: #1e90ff;
-  --white: #ffffff;
-}
-
 * {
   box-sizing: border-box;
 }
 
-.intro-box {
+:root {
+  --ffM: 'Montserrat', sans-serif;
+  --ffR: 'Roboto', sans-serif;
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0.5em;
+}
+
+.hero {
+  background-image: url(./assets/1398925_10152092210042386_1369570608_o.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 520px;
+  opacity: 90%;
+}
+
+.social-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 130px;
+  height: 40px;
   position: absolute;
-  width: 1920px;
-  height: 432px;
-  left: 0px;
-  top: 668px;
+  right: 20%;
+  top: 10%;
+}
+
+.profile-image {
+  background-image: url(./assets/DSC_0362\ copy.jpg);
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border-style: ridge;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+}
+
+.title-intro {
+  position: absolute;
+  width: 220px;
+  height: 202px;
+  left: 24px;
+  top: 161px;
+
+  font-family: var(--ffR);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 158%;
+  text-shadow: 1px 1px 1px grey;
+
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+
+.porfolio-container {
+  margin: 0.2px;
+}
+
+.intro-box {
+  background: #f4f4f4;
+  opacity: 0.3;
+}
+
+.intro-box {
+  padding-top: 2em;
+}
+
+.intro-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 167%;
+
+  color: #000000;
 }
 
 .tech-box {
-  position: absolute;
-  width: 1100px;
-  height: 150px;
-  left: 410px;
-  top: 1364px;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 50px;
   /* or 167% */
-
   text-align: center;
   letter-spacing: 0.01em;
-
   color: #000000;
 }
 .featured-projects-box {
-  position: absolute;
-  width: 1920px;
-  height: 2222px;
-  left: 0px;
-  top: 1640px;
-
   background: #f4f4f4;
 }
 .thoughts-box {
@@ -50,24 +107,23 @@
   background-color: beige;
 }
 .skills-box {
-  position: absolute;
-  width: 1920px;
-  height: 840px;
-  left: 0px;
-  top: 5286px;
-
   background: #f4f4f4;
 }
+
 .for-more-box {
   padding: 5em;
   background-color: beige;
 }
 .contact {
-  position: absolute;
-  width: 1920px;
-  height: 570px;
-  left: 0px;
-  top: 6740px;
-
+  /* position: absolute;
+  width: 90%;
+  height: 40%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 124%;
+  text-align: center;
+  color: #ffffff; */
   background: #072bce;
 }
