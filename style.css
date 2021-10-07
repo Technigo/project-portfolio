@@ -94,7 +94,7 @@ h2 {
   margin: 5px;
 }
 h3 {
-  background-color: #84acb6;
+  background-color: #4b7369;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   text-align: center;
@@ -109,7 +109,7 @@ h3 {
   justify-content: center;
 }
 h4 {
-  color: teal;
+  color: #4b7369;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -129,7 +129,7 @@ h4 {
 h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  margin: 10px auto;
+  margin: 20px auto;
   text-align: center;
   font-weight: 600;
   color: #426a74;
@@ -199,6 +199,9 @@ b {
   font-weight: 500;
 }
 .links-color {
+  color: teal;
+}
+.links-color-mobile {
   color: teal;
 }
 
@@ -326,7 +329,7 @@ footer a {
 }
 
 .language-p {
-  background-color: #426a74;
+  background-color: teal;
   font-family: "Roboto", sans-serif;
   font-size: 9px;
   text-align: center;
@@ -365,26 +368,94 @@ footer a {
 a {
   text-decoration-color: teal;
 }
+
+@media (max-width: 767px) {
+  .links-color {
+    display: none;
+  }
+  .display-none {
+    display: none;
+  }
+  .display-none-skills {
+    display: none;
+  }
+}
 /*TABLET*/
 @media (min-width: 768px) and (max-width: 991px) {
   .hero-image {
-    height: 400px;
+    height: 500px;
   }
+
   .profile-img {
-    right: 100px;
-    top: 230px;
+    right: 20%;
+    top: 320px;
+    width: 200px;
+    height: 200px;
   }
   .icon-section {
-    top: 60px;
-    right: 100px;
+    top: 70px;
+    right: 20%;
   }
   .headertext-container {
-    left: 100px;
-    top: 100px;
+    left: 15%;
+    top: 130px;
     max-width: 300px;
   }
-  .content-p {
-    padding: 0px 60px;
+  .display-none-desktop {
+    display: none;
+  }
+
+  .about-me {
+    padding: 40px 130px 40px 130px;
+  }
+  .tech {
+    padding: 40px 130px 40px 130px;
+  }
+  .featured-projects {
+    padding: 40px 130px 40px 130px;
+  }
+  .my-thoughts {
+    padding: 40px 130px 40px 130px;
+  }
+  .skills {
+    padding: 40px 130px 40px 130px;
+  }
+  .for-more {
+    padding: 40px 130px 40px 130px;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .project-card {
+    width: 47%;
+    align-self: flex-start;
+    margin: 10px 0px;
+    justify-content: flex-start;
+  }
+  .display-none {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .article-link {
+    margin: 10px 0px;
+  }
+  .skills-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .skills-container {
+    width: 33%;
+    align-self: flex-start;
   }
 }
 
@@ -393,6 +464,7 @@ a {
   .hero-image {
     height: 500px;
   }
+
   .profile-img {
     right: 20%;
     top: 270px;
@@ -408,35 +480,77 @@ a {
     top: 130px;
     max-width: 300px;
   }
-  .content-p {
-    padding: 0px 60px;
+  .display-none-desktop {
+    display: none;
   }
+
   .about-me {
-    padding: 40px 150px 40px 150px;
+    padding: 40px 200px 40px 200px;
   }
   .tech {
-    padding: 40px 150px 40px 150px;
+    padding: 40px 200px 40px 200px;
   }
   .featured-projects {
-    padding: 40px 150px 40px 150px;
+    padding: 40px 200px 40px 200px;
   }
   .my-thoughts {
-    padding: 40px 150px 40px 150px;
+    padding: 40px 200px 40px 200px;
   }
   .skills {
-    padding: 40px 150px 40px 150px;
+    padding: 40px 200px 40px 200px;
   }
   .for-more {
-    padding: 40px 150px 40px 150px;
+    padding: 40px 200px 40px 200px;
   }
   .project-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
   }
   .project-card {
-    width: 100%;
+    width: 47%;
     align-self: flex-start;
-    margin: 10px 24px;
+    margin: 10px 0px;
     justify-content: flex-start;
+  }
+  .display-none {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .article-link {
+    margin: 10px 0px;
+  }
+  .skills-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .skills-container {
+    width: 33%;
+    align-self: flex-start;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  .header-p {
+    font-size: 30px;
+    margin: 20px 0px 10px 0px;
+  }
+  .headertext-container {
+    max-width: 900px;
+    width: 700px;
+    left: 15%;
+    top: 121px;
+    height: 400px;
   }
 }
