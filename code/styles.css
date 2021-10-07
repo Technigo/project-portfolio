@@ -56,6 +56,56 @@ header {
   object-fit: cover;
 }
 
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.portfolio-heading-container {
+  display: flex;
+  justify-content: center;
+}
+.main-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  background-color: red;
+  color: #fff;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+.tech p {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.tags span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  background-color: red;
+  color: #fff;
+  padding: 4px;
+}
+
 .line {
   border: 1px solid red;
   width: 40px;
@@ -74,12 +124,96 @@ header {
 
 .introduction p {
   font-family: "Montserrat", sans-serif;
-  margin-top: 50px;
-  margin-left: 43px;
-  width: 80%;
   font-size: 17px;
   line-height: 29px;
   color: #000000;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.arrow {
+  text-decoration: none;
+  font-weight: 800;
+  color: red;
+}
+
+.img-container {
+  position: relative;
+  display: block;
+}
+
+.project-img {
+  width: 100%;
+  margin: 0;
+}
+
+.overlay {
+  background: rgba(156, 166, 197, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.overlay-text {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.main-projects h3,
+.main-projects p,
+.other-projects h3,
+.other-projects p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.tags {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
+
+.more {
+  display: none;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.code-skills h5,
+.upcoming-skills h5,
+.toolboxes h5,
+.more h5 {
+  margin: 0;
+}
+
+.code-skills,
+.upcoming-skills,
+.toolboxes,
+.more {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  display: inline;
+  text-align: center;
+  line-height: 25px;
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
