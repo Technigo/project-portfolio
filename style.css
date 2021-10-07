@@ -228,15 +228,23 @@ a:link {
   transition: 0.5s ease;
 }
 
-.portfolio__image-overlay h3 {
+.portfolio__image-overlay p {
   position: absolute;
   font-weight: 700;
-  color: #fff;
-  padding: 25%;
-  text-align: center;
+  color: #ffff;
+  display: flex;
+  font-family: "Montserrat";
+  font-size: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.portfolio__image-overlay h3:hover {
+.portfolio__image-overlay p:hover {
   color: transparent;
 }
 
@@ -335,6 +343,12 @@ footer {
 /* DESIGN FOR TABLET */
 @media (min-width: 668px) {
   /* HIDE IMAGES? */
+  .for-more__some p {
+    color: #d8ac9c;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+  }
 }
 
 /* DESIGN FOR DESKTOP */
@@ -342,6 +356,11 @@ footer {
   .hero {
     height: 681px;
     background-size: cover;
+  }
+
+  .container {
+    width: 768px;
+    margin: 0 auto;
   }
 
   .portfolio__article-card + .desktop {
@@ -357,10 +376,9 @@ footer {
   }
 
   /* @media (min-width: 768px) {
-  .container {
-    width: 768px;
-    margin: 0 auto
-  }
+
+
+ 
 } */
 
   /* .hero__background-desktop {
