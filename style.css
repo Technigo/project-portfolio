@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 170%;
+}
+
+header {
+    background-image: url(https://media4.giphy.com/media/3og0ISzBpn0nNJE3Ac/giphy.gif);
+    background-size: cover;
+    height: 520px;
+    letter-spacing: 0.04em;
+  }
+
+.header-link-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.profile-text-container {
+    color: #fff;
+}
+
+.profile-text-container h1 {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.profile-text-container p {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 110%;
+}
+
+.introduction-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.introduction-section,
+.portfolio-section:nth-child(even) {
+    background-color: #F4F4F4;
+}
+
+.portfolio-section {
+    padding-bottom: 50px;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.profile-img-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-img {
+    position: relative;
+    top: 40px;
+
+    width: 180px;
+    height: 180px;
+
+    /*  Rounded corners */
+    border-radius: 50%;
+
+    /* keep aspect ratio of image */
+    object-fit: cover;
+
+    /* An outline on the circle */
+    border: 2px solid whitesmoke;
+
+    /* Makes sure nothing sticks out of the circle */
+    overflow: hidden;
+}
+
+/* line-dot section indicator */
+.line {
+    border: 1px solid #c62a88;
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #c62a88;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.portfolio-heading-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.portfolio-heading {
+    background-color: #DB398D;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1px;
+    font-size: 1.4rem;
+}
+
+.tech {
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(156, 166, 197, 0.5);
+}
+
+.image {
+    width: 100%;
+    display: block;
+}
+
+.projects-text-container {
+    font-family: "Roboto", sans-serif;
+}
+
+.projects-text-container p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.projects-heading {
+    text-transform: uppercase;
+    color: #DB398D;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-block-start: 1.5rem;
+    margin-block-end: 0;
+}
+
+.tag-wrapper {
+    display: flex;
+  }
+  
+.tag-wrapper p {
+    background-color: #FDDFE7;
+    text-decoration: none;
+  
+    /* Matching line-height and font-size here gives full control 
+       over the size of our tags to the padding*/
+    font-size: 0.6rem; 
+    line-height: 122%;
+  
+    /* Control the size of the tags */
+    padding: 5px;
+  
+    /* Control the spacing of our tags */
+    margin-right: 8px;
+}
+
+.other-projects-heading {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #DB398D;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.date {
+    color:#DB398D;
+    padding-top: 30px;
+}
+
+.blog-post-heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-block-start: 0;
+}
+
+.blog-post-list-heading {
+    font-size: 1rem;
+    margin-top: 30px;
+    line-height: 150%;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    font-size: 1rem;
+    align-content: center;
+    text-align: center;
+}
+
+.skills-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill-heading {
+    color:#DB398D;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-block-end: 0;
+}
+
+.portfolio-link-container {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.contact-section {
+    color: #fff;
+    background: #000;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    line-height: 120%;
+}
+
+.contact-section p {
+    margin-block-start: 0.5rem;
+    margin-block-end: 0;
+}
+
+.contact {
+    text-transform: uppercase;
+    margin-block-end: 3rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+        margin: 0 auto;
+    }
+}
