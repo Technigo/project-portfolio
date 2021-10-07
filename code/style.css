@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.01em;
   box-sizing: border-box;
 }
 
@@ -141,6 +143,7 @@ h2 {
   flex-direction: column;
   align-self: center;
   width: 100%;
+  height: 315px;
   text-align: left;
   margin: 0px;
   justify-content: center;
@@ -148,7 +151,7 @@ h2 {
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
   font-size: 22px;
   line-height: 27px;
@@ -159,6 +162,8 @@ h3 {
   align-self: center;
   justify-content: center;
   padding: 3px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   /* margin: 0px; */
 }
 
@@ -180,6 +185,7 @@ h3 {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  padding-bottom: 60px;
 }
 
 .project-card-1 {
@@ -189,31 +195,46 @@ h3 {
   width: 100%;
   height: 340px;
   align-self: center;
+  margin-top: 20px;
   /* margin-top: 20px; */
 }
+
+/* .overlay {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 700px;
+  bottom: 0px;
+  background: rgb(156, 166, 197, 0.5);
+} */
 
 .project-img {
   width: 100%;
   height: 210px;
 }
 
+.project-tex,
+p {
+  margin: 0px;
+}
+
 .project-card-1 h2 {
   font-size: 28px;
   font-weight: 700;
   line-height: 34px;
-  color: #fa382f;
+  color: #072bce;
   text-align: center;
   position: absolute;
   /* width: 100%; */
   height: 47px;
-  left: 30px;
-  top: 1340px;
+  left: 60px;
+  top: 1360px;
 }
 
 h6 {
   color: #fa382f;
   font-size: 16px;
-  margin-top: 5px;
+  margin-top: 30px;
   margin-bottom: 5px;
 }
 
@@ -224,122 +245,160 @@ h6 {
 }
 
 .lang p {
-  background-color: darksalmon;
+  background-color: #fddfe7;
   margin-right: 5px;
   font-size: 12px;
   padding: 5px;
 }
 
 .project-card-2 {
+  display: flex;
+  flex-direction: column;
   border: solid black 2px;
   width: 100%;
   height: 340px;
   align-self: center;
-  /* flex-wrap: wrap; */
-  /* margin-top: 20px; */
+  margin-top: 30px;
 }
 
 .project-card-2 h2 {
   font-size: 28px;
   font-weight: 700;
   line-height: 34px;
-  color: #fa382f;
+  color: #072bce;
   text-align: center;
   position: absolute;
-  width: 100%;
   height: 47px;
-  /* left: 70px;
-  top: 1700px; */
+  left: 60px;
+  top: 1740px;
 }
 
 .other-projects {
   text-align: center;
   color: #fa382f;
+  margin-top: 30px;
 }
 
-.other-projects-1 {
+/* .other-projects-1 {
   border: solid crimson 1px;
   width: 100%;
   height: 340px;
   display: flex;
   flex-direction: column;
   align-self: center;
-}
+} */
 
+/* my thoughts section  */
 .article {
+  display: flex;
+  flex-direction: column;
   border: solid crimson 1px;
   width: 100%;
-  height: 340px;
+  height: 560px;
   align-self: center;
 }
 
 .article-1,
 .article-2,
 .article-3 {
+  display: flex;
+  flex-direction: column;
   border: solid crimson 1px;
   width: 100%;
   align-self: center;
 }
 
 .skills-section {
+  display: flex;
+  flex-direction: column;
   background-color: #f4f4f4;
   width: 100%;
-  height: 340px;
-  align-self: center;
+  height: 465px;
+}
+
+.skills-text {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  justify-content: space-evenly;
 }
 
 .skills-section h3 {
-  position: absolute;
-  top: 2950px;
+  margin-bottom: 0px;
 }
 
 .skills-section-1 {
   display: flex;
   flex-direction: column;
-  align-self: center;
-  width: 90%;
-  height: 325px;
+  /* align-self: center; */
+  /* width: 90%;
+  height: 325px; */
   text-align: center;
-  margin-top: 99px;
+  /* margin-top: 99px; */
+  width: 30%;
 }
 
 .skills-section-2 {
   display: flex;
   flex-direction: column;
-  align-self: center;
-  width: 90%;
-  height: 233px;
+  /* align-self: center; */
+  /* width: 90%;
+  height: 233px; */
   text-align: center;
-  margin-top: 7px;
+  width: 30%;
+  /* margin-top: 7px; */
 }
 
 .contact-links {
   display: flex;
   flex-direction: row;
-  align-self: center;
+  justify-content: space-evenly;
 }
 
-.linkedin-img,
-.github-img,
-.stackoverflow-img {
-  /* color: #fa382f; */
-  background-color: #fa382f;
+.linkedin-section {
+  color: #fa382f;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.github-section {
+  color: #fa382f;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.stackoverflow-section {
+  color: #fa382f;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-1,
+.icon-2,
+.icon-3 {
   width: 60px;
   height: 60px;
   /* margin: 10px; */
 }
 
-.SoMe-text {
+/* .SoMe-text {
   color: #fa382f;
   font-size: 8px;
-  display: flex;
-  justify-content: center;
-  /* justify-content: space-between; */
-  /* fix the distance */
-  /* gap: 30px; */
-}
+  display: flex; */
+/* justify-content: center; */
+/* justify-content: space-between; */
+/* fix the distance */
+/* gap: 30px; */
+/* } */
 
 footer {
   background-color: #072bce;
@@ -351,6 +410,7 @@ footer {
   color: white;
   display: flex;
   margin: 0px;
+  margin-top: 50px;
 }
 
 .contact-section {
