@@ -53,7 +53,7 @@ h2 {
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -69,6 +69,7 @@ h5 {
   line-height: 29px;
   text-transform: uppercase;
   font-weight: 600;
+  margin: 0;
 }
 
 p {
@@ -86,10 +87,9 @@ justify-content: center;
 
 .filled-title {
 background-color: var(--primary);
-padding: 10px;
+padding: 5px;
 text-transform: uppercase;
 color: white;
-margin: 2rem;
 line-height: 27px; 
 font-weight: 500;
 }
@@ -108,7 +108,6 @@ font-weight: 500;
 .profile {
   width: 200px;
   position: absolute;
-  margin-right: 25px;
 }
 
 .icon-container {
@@ -129,7 +128,6 @@ font-weight: 500;
   color: #212427;
   margin: 15px;
   margin-top: 48px;
-  font-size: 50px;
 }
 
 .fa-github,
@@ -198,15 +196,17 @@ font-weight: 500;
 .featured-projects,
 .my-thoughts,
 .skills-container,
-.for-more {
-  
+.for-more  {
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .tech-container {
   text-align: center;
 }
 
-.main-projects {
+.main-projects,
+.extra-projects {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   background-color: #fff;
 }
@@ -224,8 +224,13 @@ font-weight: 500;
 .other-projects,
 .main-projects h5,
 .main-projects p,
-.text-container,
-.skill-set {
+.extra-projects h5,
+.extra-projects p,
+.text-container p,
+.text-container h4,
+.skill-set,
+.intro-text p,
+.tech-container p {
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -247,11 +252,6 @@ font-weight: 500;
 .project-img {
   width: 100%;
   margin: 0;
-}
-
- {
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .code-tags span,
@@ -343,6 +343,111 @@ ul {
   }
   
   h3 {
+    font-size: 20px;
+  }
+  
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  h5 {
+    font-size: 18px;
+    line-height: 29px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .show-all {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+  }
+
+  .extra-projects {
+    display: initial;
+    width: 300px;
+  }
+
+  .main-projects {
+    width: 300px;
+  }
+
+  .fa-github,
+  .fa-linkedin-in,
+  .fa-stack-overflow {
+    font-size: 40px;
+}
+
+}
+
+@media (min-width:980px) and (max-width:1279px) {
+  .container {
+    width: 950px;
+  }
+
+  h1 {
+    font-size: 70px;
+    line-height: 20px;
+  }
+  
+  h3 {
+    font-size: 30px;
+  }
+  
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  h5 {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  
+  p {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .extra-projects {
+    display: initial;
+  }
+
+  .show-all {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-projects,
+  .extra-projects {
+    width: 400px;
+  }
+
+  .fa-github,
+  .fa-linkedin-in,
+  .fa-stack-overflow {
+    font-size: 50px;
+}
+}
+
+@media (min-width:1280px) {
+  .container {
+    width: 1250px;
+  }
+
+  h1 {
+    font-size: 70px;
+    line-height: 20px;
+  }
+  
+  h3 {
     font-size: 30px;
   }
   
@@ -360,18 +465,29 @@ ul {
     font-size: 22px;
     line-height: 35px;
   }
-}
 
-@media (min-width:980px) and (max-width:1279px) {
-  .container {
-    width: 950px;
+  .extra-projects {
+    display: initial;
   }
-}
 
-@media (min-width:1280px) {
-  .container {
-    width: 1250px;
+  .show-all {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+    justify-content: center;
+    align-items: center;
   }
+
+  .main-projects,
+  .extra-projects {
+    width: 500px;
+  }
+
+  .fa-github,
+  .fa-linkedin-in,
+  .fa-stack-overflow {
+    font-size: 50px;
+}
 }
 
 
