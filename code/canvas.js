@@ -15,12 +15,14 @@ const dots = [];
 const dotsPositions = [];
 
 //width and height of the canvas
-const w = canvas.offsetWidth;
-const h = canvas.offsetHeight;
+let w = canvas.offsetWidth;
+let h = canvas.offsetHeight;
 
 //variables for mouse/cursor position on x and y axes
 let mx = 0;
 let my = 0;
+
+let alreadyListening = false;
 
 //calculation of background
 const calculateBG = () => {
@@ -78,14 +80,27 @@ const onMouseMove = (evt) => {
 
 // generic function to initiate the grid layout and call the dot drawing function , listen to mouse move
 const init = () => {
+  w = canvas.offsetWidth;
+  h = canvas.offsetHeight;
   for (let x = DOT_SPACING; x < w; x += DOT_SPACING + DOT_SIZE) {
     for (let y = DOT_SPACING; y < h; y += DOT_SPACING + DOT_SIZE) {
       createDot(x, y);
     }
   }
 
-  canvas.addEventListener("mousemove", onMouseMove);
+  if (!alreadyListening) {
+    canvas.addEventListener("mousemove", onMouseMove);
+    alreadyListening = true;
+  }
   calculateBG();
 };
 
 init();
+
+window.addEventListener("resize", () => {
+  console.log("resize");
+  canvas.innerHTML = "";
+  dots.length = 0;
+  dotsPositions.length = 0;
+  init();
+});
