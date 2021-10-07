@@ -39,6 +39,7 @@ body {
 
 .portfolio {
     font-size: 13px;
+    font-weight: 400;
     color: rgb(216, 253, 253);
     margin: 0;
     letter-spacing: 1px;
@@ -54,6 +55,7 @@ body {
     font-size: 24px;
     color: rgb(216, 253, 253);
     margin: 0;
+    font-weight: 500;
 }
 
 .annad-image {
@@ -73,13 +75,13 @@ body {
 }
 
 .summary {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 17px;
     line-height: 29px;
 }
 
 p {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .start-line {
@@ -120,6 +122,10 @@ p {
     text-transform: uppercase;
     padding: 3px;
     margin-top: 3vh;
+}
+
+.featured-projects {
+    margin-bottom: 3vh;
 }
 
 .image-container {
@@ -186,7 +192,7 @@ h3 {
 
 span {
     font-size: 9px;
-    font-weight: bold;
+    font-weight: 500;
     background-color: #629990;
     padding: 5px;
     color: #FFFFFF;
@@ -194,6 +200,11 @@ span {
 
 .featured-thoughts, .for-more {
     background-color: #FFFFFF;
+}
+
+.featured-thoughts.display {
+    height: 468px;
+    margin-top: -1vh;
 }
 
 .thoughts-image {
@@ -217,6 +228,10 @@ span {
     font-size: 17px;
 }
 
+.featured-thoughts.display.tablet {
+    display: none;
+}
+
 .more-thoughts-container {
     display: flex;
     flex-direction: row;
@@ -227,6 +242,7 @@ span {
 
 .more-thoughts-title {
     color: black;
+    font-weight: 700;
 }
 
 .skills-container {
@@ -245,7 +261,7 @@ ul {
     display: inline;
     text-align: center;
     line-height: 25px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .code-toolbox-container {
@@ -255,7 +271,7 @@ ul {
 
 .upcoming-more-container {
     display: flex;
-    margin-left: 2.7vh;
+    justify-content: space-around;
 }
 
 .for-more-heading-container {
@@ -278,7 +294,8 @@ ul {
 }
 
 .media-image {
-    width: 70px;
+    width: 65px;
+    opacity: 0.6;
 }
 
 footer {
@@ -293,8 +310,36 @@ footer {
 
 @media (min-width: 768px) {
     .container {
-        width: 768px;
         margin: 0 auto;
+    }
+    .featured-projects-container, .other-projects-container, .featured-thoughts-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .featured-projects {
+        margin-bottom: 0;
+    }
+    .other-projects-container {
+        margin-bottom: 3vh;
+    }
+    .thoughts-heading-container {
+        margin-bottom: 1vh;
+    }
+    .featured-thoughts.display {
+        width: 384px;
+    }
+    .featured-thoughts.display.tablet {
+        display: initial;
+    }
+    .thoughts-image {
+        height: 215px;
+    }
+    .other-thoughts-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .featured-thoughts.third {
+        display: none;
     }
 }
 
