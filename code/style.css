@@ -81,14 +81,13 @@ h4 {
   }
   
 /*The skills*/
-  .tech, .projects {
+  .tech {
     background-color:white;
     text-align: center;
     width: 100%;
-    margin: 40px 0;
-    padding: 30px;
+    margin: 50px 0 10px 0;
+    padding: 20px;
   }
-
 
 .tech-skills-wrapper {
   display: flex;
@@ -96,36 +95,40 @@ h4 {
   justify-items: center;
   
 }
-.tech-skills-wrapper h4{
-  font-size: 1.75rem;
-  margin-bottom: 15px;
 
-}
-.tech-skills-wrapper p{
+.code-skills p{
   font-size: 1.5rem;
   line-height: 1.5;
-  
+  margin-top: 40px;
 }
 
-.code-skills, .science-skills {
+.code-skills {
   width: 90%;
   max-width: 900px;
-  margin: 30px auto;
+  margin: 30px auto 0 auto;
   padding: 10px;
 }
-.code-skills:hover, .science-skills:hover{
+.code-skills:hover{
   background-color: white;
 }
 
-/* Projects*/
+/* Featured Projects*/
+
+.projects, .other-projects {
+  background-color:white;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0 30px 0;
+  padding: 20px;
+}
 .project-heading-wrapper{
   display: flex;
   justify-content: center;
 }
-.project-container{
+.project-container, .other-project-container{
   display: flex;
   flex-direction: column;
-  margin: 40px auto 0 auto;
+  margin: 30px auto 0 auto;
   text-align: center;
   width: 90%;
 }
@@ -135,24 +138,37 @@ h4 {
   color: black;
   cursor: pointer;
 }
-.card-project{
+.other-card-project a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.card-project, .other-card-project{
   margin: 40px auto;
   padding: 30px;
   justify-items: center;
   background-color: whitesmoke;
   width: 100%;
-
 }
+
 .card-project h4{
 margin: 10px 0;
 }
-
+.other-card-project h4 {
+  margin: 10px 0;
+}
 .card-project p{
 margin: 10px 0;
 font-size: 1.5rem;
 line-height: 1.5;
-
 }
+
+.other-card-project p {
+  margin: 10px 0;
+font-size: 1.5rem;
+line-height: 1.5;
+}
+
 .card-project img {
   width: 100%;
 }
@@ -181,11 +197,12 @@ display: inline;
   animation-iteration-count: 1;
 }
 
+
 /*Social media icons*/
 .social-container {
   width: 90%;
   text-align: center;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 .social-container h3{
   margin-bottom: 30px;
@@ -234,11 +251,7 @@ margin-bottom: 30px;
 
 @media (min-width: 950px) {
 
-  .tech-skills-wrapper {
-    display: flex;
-    flex-direction: row; 
-  }
-  .code-skills, .science-skills{
+  .code-skills {
     width: 50%;
     padding: 30px 0
   }
@@ -248,13 +261,13 @@ margin-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
-  .project-container{
+  .project-container, .other-project-container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
   
-  .card-project{
+  .card-project, .other-card-project{
     width: 40%;
    
   }
