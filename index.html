@@ -20,33 +20,36 @@
     />
   </head>
   <body>
-    <header
-      class="header-image"
-      role="img"
-      aria-label="abstract background image of yellow color and concrete"
-    >
+    <header>
+      <div
+        class="header-image"
+        role="img"
+        aria-label="abstract background image of yellow color and concrete"
+      ></div>
       <section class="header">
-        <div class="header-icons">
+        <div class="header-icons" aria-label="social media icons">
           <a
             href="https://www.linkedin.com/in/katie-wu-213a82150/"
             target="blank"
           >
-            <div class="icon">
+            <div class="icon" aria-label="link to linkedIn">
               <img
                 src="/assets/linkedin.svg"
                 width="32"
                 height="31"
                 alt="linkedIn icon"
+                aria-hidden="true"
               />
             </div>
           </a>
           <a href="https://github.com/katiewu1/" target="blank">
-            <div class="icon">
+            <div class="icon" aria-label="link to GitHub">
               <img
                 src="/assets/github.svg"
                 width="36"
                 height="38"
                 alt="GitHub icon"
+                aria-hidden="true"
               />
             </div>
           </a>
@@ -54,12 +57,13 @@
             href="https://stackoverflow.com/users/16678447/katiewu1?tab=profile"
             target="blank"
           >
-            <div class="icon">
+            <div class="icon" aria-label="link to Stack Overflow">
               <img
                 src="/assets/stackoverflow.svg"
                 width="39"
                 height="39"
                 alt="Stack Overflow icon"
+                aria-hidden="true"
               />
             </div>
           </a>
@@ -69,22 +73,32 @@
             portfolio:
             <span class="portfolio-name">Katie Wu</span>
           </h1>
-          <h1 class="first-occupation">frontend</h1>
-          <h1 class="first-occupation">developer</h1>
-          <h1 class="second-occupation">+ biomedical engineer</h1>
+          <h1
+            class="first-occupation"
+            aria-label="frontend developer. +. biomedical engineer."
+          >
+            frontend
+          </h1>
+          <h1 class="first-occupation" aria-hidden="true">developer</h1>
+          <h1 class="second-occupation" aria-hidden="true">
+            + biomedical engineer
+          </h1>
         </div>
         <div class="header-profile">
-          <div class="profile-image"></div>
+          <div
+            class="profile-image"
+            role="img"
+            aria-label="profile image of Katie Wu"
+          ></div>
         </div>
       </section>
     </header>
     <section class="intro-section">
       <div class="intro-text">
         <span class="line"></span><span class="dot"></span>
-        Hello! Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        Hello! I'm a extremely driven biomedical engineer, much of what I do is
+        troubleshooting and problem solving. Currently an aspiring frontend
+        developer with great curiosity for backend.
       </div>
     </section>
     <h2 class="title">Tech</h2>
@@ -98,50 +112,52 @@
     <section class="projects-section">
       <h2 class="title">Featured Projects</h2>
       <div class="featured-projects">
-        <a
-          href="https://github.com/katiewu1/project-github-tracker"
-          target="blank"
-        >
-          <article class="project-card">
+        <article class="project-card">
+          <a
+            href="https://github.com/katiewu1/project-github-tracker"
+            target="blank"
+          >
             <div class="project-headline">
               <img
                 src="/assets/GitHub-Tracker.png"
                 width="327"
                 height="212"
                 alt="project GitHub Tracker"
+                aria-hidden="true"
               />
               <!--transbox - put one layer of background color and opacity-->
               <div class="transbox"></div>
-              <h3 class="project-title">GitHub Tracker</h3>
+              <h3 class="project-title" aria-hidden="true">GitHub Tracker</h3>
             </div>
             <div class="project-brief">
-              <p class="description-title">Description of Title.</p>
+              <p class="description-title">GitHub Tracker.</p>
               <p class="description-project">
                 GitHub Tracker created to learn more about APIs and JavaScript.
               </p>
             </div>
-            <div class="tags">
+            <div class="tags" aria-hidden="true">
               <p>HTML5</p>
               <p>CSS3</p>
               <p>JavaScript ES6</p>
               <p>APIs</p>
             </div>
-          </article>
-        </a>
-        <a
-          href="https://github.com/efstasia/project-weather-app"
-          target="blank"
-        >
-          <article class="project-card">
+          </a>
+        </article>
+        <article class="project-card">
+          <a
+            href="https://github.com/efstasia/project-weather-app"
+            target="blank"
+          >
             <div class="project-headline">
               <img
                 src="/assets/WeatherApp.png"
                 width="327"
                 height="212"
                 alt="project Weather App"
+                aria-hidden="true"
               />
               <div class="transbox"></div>
-              <h3 class="project-title">Better Weather</h3>
+              <h3 class="project-title" aria-hidden="true">Better Weather</h3>
             </div>
             <div class="project-brief">
               <p class="description-title">Weather App.</p>
@@ -149,25 +165,26 @@
                 Web app built in JavaScript using Open Weather API.
               </p>
             </div>
-            <div class="tags">
+            <div class="tags" aria-hidden="true">
               <p>HTML5</p>
               <p>CSS3</p>
               <p>JavaScript ES6</p>
-              <p>Mob programming</p>
+              <p>Mob-programming</p>
             </div>
-          </article>
-        </a>
-        <a href="https://github.com/katiewu1/project-chatbot" target="blank">
-          <article class="project-card">
+          </a>
+        </article>
+        <article class="project-card">
+          <a href="https://github.com/katiewu1/project-chatbot" target="blank">
             <div class="project-headline">
               <img
                 src="/assets/Dj-Bot.png"
                 width="327"
                 height="212"
                 alt="project Chatbot"
+                aria-hidden="true"
               />
               <div class="transbox"></div>
-              <h3 class="project-title">DJ Bot</h3>
+              <h3 class="project-title" aria-hidden="true">DJ Bot</h3>
             </div>
             <div class="project-brief">
               <p class="description-title">Chatbot built in JavaScript.</p>
@@ -176,25 +193,31 @@
                 with DJ Bot.
               </p>
             </div>
-            <div class="tags">
+            <div class="tags" aria-hidden="true">
               <p>HTML5</p>
               <p>CSS3</p>
               <p>JavaScript ES6</p>
-              <p>Pair programming</p>
+              <p>Pair-programming</p>
             </div>
-          </article>
-        </a>
-        <a href="https://github.com/katiewu1/project-guess-who" target="blank">
-          <article class="project-card">
+          </a>
+        </article>
+        <article class="project-card">
+          <a
+            href="https://github.com/katiewu1/project-guess-who"
+            target="blank"
+          >
             <div class="project-headline">
               <img
                 src="/assets/Guess-who.png"
                 width="327"
                 height="212"
                 alt="project Guess who Game"
+                aria-hidden="true"
               />
               <div class="transbox"></div>
-              <h3 class="project-title">Does the person have?</h3>
+              <h3 class="project-title" aria-hidden="true">
+                Does the person have?
+              </h3>
             </div>
             <div class="project-brief">
               <p class="description-title">Guess Who Game.</p>
@@ -202,13 +225,13 @@
                 Game created to learn about basic JavaScript.
               </p>
             </div>
-            <div class="tags">
+            <div class="tags" aria-hidden="true">
               <p>HTML5</p>
               <p>CSS3</p>
               <p>JavaScript ES6</p>
             </div>
-          </article>
-        </a>
+          </a>
+        </article>
       </div>
       <article class="other-project">
         <h3 class="subheading">Other Projects</h3>
@@ -219,9 +242,9 @@
           <p class="other-project-title">
             <span class="highlight-red-uppercase">Business site.</span> Web site
             created with a signup form and FAQ-accordion.
-            <span class="highlight-red">>></span>
+            <span class="highlight-red" aria-hidden="true">>></span>
           </p>
-          <div class="tags">
+          <div class="tags" aria-hidden="true">
             <p>HTML5</p>
             <p>CSS3</p>
             <p>JavaScript ES6</p>
@@ -232,9 +255,10 @@
         <a href="https://github.com/katiewu1/project-news-site" target="blank">
           <p class="other-project-title">
             <span class="highlight-red-uppercase">News site.</span> Responsive
-            web site using HTML and CSS. <span class="highlight-red">>></span>
+            web site using HTML and CSS.
+            <span class="highlight-red" aria-hidden="true">>></span>
           </p>
-          <div class="tags">
+          <div class="tags" aria-hidden="true">
             <p>HTML5</p>
             <p>CSS3</p>
           </div>
@@ -245,9 +269,9 @@
           <p class="other-project-title">
             <span class="highlight-red-uppercase">I need Hue.</span>
             Web application built in Javascript with external API.
-            <span class="highlight-red">>></span>
+            <span class="highlight-red" aria-hidden="true">>></span>
           </p>
-          <div class="tags">
+          <div class="tags" aria-hidden="true">
             <p>HTML5</p>
             <p>CSS3</p>
             <p>JavaScript ES6</p>
@@ -258,11 +282,11 @@
       <article class="other-project">
         <a href="" target="blank">
           <p class="other-project-title">
-            <span class="highlight-red-uppercase"> ? (side project).</span>
-            Short description.
-            <span class="highlight-red">>></span>
+            <span class="highlight-red-uppercase">Coming soon.</span>
+            Not finished.
+            <span class="highlight-red" aria-hidden="true">>></span>
           </p>
-          <div class="tags">
+          <div class="tags" aria-hidden="true">
             <p>HTML5</p>
             <p>CSS3</p>
             <p>JavaScript ES6</p>
@@ -281,32 +305,35 @@
         />
         <p class="highlight-red">MONTH 2021</p>
         <p class="font-weight-bold">Post 1 (in bold)</p>
-        <p>Text text text... <span class="highlight-red">>></span></p>
+        <p>
+          Text text text...
+          <span class="highlight-red" aria-hidden="true">>></span>
+        </p>
       </div>
-      <div class="post-card">Post 2</div>
+      <!-- <div class="post-card">Post 2</div> -->
     </article>
     <h3 class="subheading">More Thoughts</h3>
     <div class="more-thoughts">
       <p class="more-thoughts-title">
         <span class="highlight-red-uppercase">Month 2021.</span>
         <span class="font-weight-bold"
-          >5 Apps that wil make coding easier.</span
+          >List other material that you have written about code.</span
         >
-        <span class="highlight-red">>></span>
+        <span class="highlight-red" aria-hidden="true">>></span>
       </p>
       <p class="more-thoughts-title">
         <span class="highlight-red-uppercase">Month 2021.</span>
         <span class="font-weight-bold"
           >List other material that you have written about code.</span
         >
-        <span class="highlight-red">>></span>
+        <span class="highlight-red" aria-hidden="true">>></span>
       </p>
     </div>
     <section class="skills-section">
       <h2 class="title">Skills</h2>
       <div class="skills-container">
         <div class="skills-list">
-          <p class="highlight-red-uppercase">Code</p>
+          <h3 class="highlight-red-uppercase">Code</h3>
           <p>HTML5</p>
           <p>CSS3</p>
           <p>JavaScript ES6</p>
@@ -314,24 +341,24 @@
           <p>GitHub</p>
         </div>
         <div class="skills-list">
-          <p class="highlight-red-uppercase">Upcoming</p>
+          <h3 class="highlight-red-uppercase">Upcoming</h3>
           <p>React</p>
           <p>Redux</p>
           <p>Node.js</p>
           <p>Figma</p>
         </div>
         <div class="skills-list">
-          <p class="highlight-red-uppercase">Toolbox</p>
+          <h3 class="highlight-red-uppercase">Toolbox</h3>
           <p>VS Code</p>
           <p>Stack Overflow</p>
           <p>Slack</p>
         </div>
         <div class="skills-list">
-          <p class="highlight-red-uppercase">More</p>
+          <h3 class="highlight-red-uppercase">More</h3>
           <p>Agile methodology</p>
-          <p>Web accessibility</p>
-          <p>Pair programming</p>
-          <p>Mob programming</p>
+          <p>Web Accessibility</p>
+          <p>Pair-programming</p>
+          <p>Mob-programming</p>
           <p>Responsive design</p>
           <!-- <p>Problem solving</p> -->
         </div>
@@ -341,47 +368,50 @@
 
     <section class="social-media-icons">
       <a href="https://www.linkedin.com/in/katie-wu-213a82150/" target="blank">
-        <div class="social-icon">
+        <div class="social-icon" aria-label="link to LinkedIn">
           <img
             src="/assets/linkedin-red.svg"
             width="51"
             height="49"
             alt="linkedIn icon"
+            aria-hidden="true"
           />
         </div>
-        <p>linkedin</p>
+        <p aria-hidden="true">linkedin</p>
       </a>
       <a href="https://github.com/katiewu1/" target="blank">
-        <div class="social-icon">
+        <div class="social-icon" aria-label="link to GitHub">
           <img
             src="/assets/github-red.svg"
             width="57"
             height="62"
             alt="GitHub icon"
+            aria-hidden="true"
           />
         </div>
-        <p>github</p>
+        <p aria-hidden="true">github</p>
       </a>
       <a
         href="https://stackoverflow.com/users/16678447/katiewu1?tab=profile"
         target="blank"
       >
-        <div class="social-icon">
+        <div class="social-icon" aria-label="link to Stack Overflow">
           <img
             src="/assets/stackoverflow-red.svg"
             width="61"
             height="61"
             alt="Stack Overflow icon"
+            aria-hidden="true"
           />
         </div>
-        <p>stack</p>
-        <p>overflow</p>
+        <p aria-hidden="true">stack</p>
+        <p aria-hidden="true">overflow</p>
       </a>
     </section>
     <footer>
       <div class="contact-info">
         <h2 class="contact-title">Contact</h2>
-        <p aria-label="name Katie Wu">Katie Wu</p>
+        <p>Katie Wu</p>
         <p>
           <a
             href="tel:+46735790287"
