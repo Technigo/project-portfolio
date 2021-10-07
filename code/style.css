@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURkVFbEwtUvmqru_JeCaKw90HZiFR57Q5rtUTSoYISlcdj0x4X8hwoIzZlJfv6Fok0eY&usqp=CAU');
+  background-image: url(./assets/sky.jpg);
   position: relative;
   height: 520px;
   background-position: center;
@@ -128,7 +128,10 @@ p {
   font-size: 17px;
   line-height: 29px;
   padding: 1rem 0;
-  margin: 0 2rem;
+}
+
+.intro-section p {
+  margin-top: 20px;
 }
 
 .section-heading-container {
@@ -142,11 +145,38 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   padding: 3px;
+  margin-bottom: 10px;
   letter-spacing: 0.03em;
 }
 
 .tech-section p {
   text-align: center;
+}
+
+.project-image-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(156, 166, 197, 0.3);
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+}
+
+.project-image-container h5 {
+  position: absolute;
+  top: 27%;
+  left: 30%;
+  color: white;
+  letter-spacing: 00.04em;
 }
 
 h5 {
@@ -160,7 +190,7 @@ h5 {
 
 h6 {
   color: #fa382f;
-  margin: 1rem 2rem 0 2rem;
+  margin: 1rem 0 0.5rem 0;
   text-align: left;
   font-size: 17px;
   line-height: 29px;
@@ -171,18 +201,18 @@ a {
   text-decoration: none;
 }
 
-/* a:hover {
-  border: 2px solid gray;
-} */
+a:hover {
+  text-decoration: underline;
+}
 
 a > p {
   text-align: left;
+  padding-top: 0;
 }
 
 .tag-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px 28px;
 }
 
 .tag-wrapper p {
@@ -193,7 +223,7 @@ a > p {
   font-size: 12px;
   line-height: 12px;
   padding: 4px;
-  margin: 3px;
+  margin: 0 3px 20px 0;
   border-radius: 5px;
 }
 
