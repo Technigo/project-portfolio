@@ -29,29 +29,33 @@
 </head>
 <body>
 <!-- HEADER -->
-    <header class="header-1">
+    <header class="header-1" aria-label="Background image with mountains and a lake">
         <div class="container">
         <section class="icons">
-            <a href="https://github.com/HedvigM"><i class="fab fa-github"></i></a>
-            <!-- <span class="sr-only">GitHub</span> -->
-            <a href="https://stackoverflow.com/c/technigo/users/230"><i class="fab fa-stack-overflow"></i></a>
-            <a href="https://www.linkedin.com/in/hedvig-mejstedt-b58517177/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/HedvigM" target="_blank"><i class="fab fa-github"></i></a>
+            <span class="sr-only">GitHub</span>
+
+            <a href="https://stackoverflow.com/c/technigo/users/230" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+            <span class="sr-only">stack overflow</span>
+
+            <a href="https://www.linkedin.com/in/hedvig-mejstedt/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <span class="sr-only">linked in</span>
         </section>
 
        <div class="header-text">
         <p>PORTFOLIO:<br><strong>HEDVIG MEJSTEDT</strong></p>
         <h2>frontend developer</h2>
        </div>
-        <img class="profile-pic" src="./Pictures/Foto (kopia).jpg" alt="profile picture">
+        <img class="profile-pic" src="./Pictures/profile-pic.jpg" alt="profile picture of Hedvig">
         </div>
     </header> 
     <section class="main-section">
         <!-- SECTION 1 -->    
-        <section class="portfolio-section">
+        <section class="portfolio-section" aria-label="section with an introduction">
             <div class="container">
                 <p class="thinP">
-                    <span class="line"></span>
-                    <span class="dot"></span>
+                    <span class="line" aria-hidden="true"></span>
+                    <span class="dot" aria-hidden="true"></span>
                     Hello! I’m a strategic and creative senior art director/digital designer with frontend developer skills and experience design at. 
                     I’m all about solving problems that matter and creating awesome, meaningful products for people to love.
                 </p>
@@ -59,7 +63,7 @@
         </section> 
 
 <!-- SECTION 2 --> 
-        <section class="portfolio-section" class="tech-2">
+        <section class="portfolio-section tech-2" aria-label="Section about my tech skills and tools i use while programming">
            <div class="container">
                 <div class="h1-container"><h1>TECH</h1></div>
                 <p class="center thinP">
@@ -68,14 +72,21 @@
            </div>
         </section>
 <!-- SECTION 3 -->
-        <section class="portfolio-section" class="featured-projects-3">
+<!-- HÄR ÄR JAG -->
+        <section class="portfolio-section featured-projects-3" aria-label="Section with featured projects.">
             <div class="container">
                 <div class="h1-container"><h1>featured projects</h1></div>
                 <div class="project-1">
                     <article class="project-grid">
                        <div class="image-container">
-                           <div class="overlay"></div>
+                           <div class="overlay" aria-hidden="true"></div>
                             <img class="project-img" src="./Pictures/guess-who.png" alt="miniature picture of the guess who game">
+                            <!-- Lägg in en länk till GitHub repot +
+
+                            aria-pressed="false"
+                            role="button"
+                            target="_blank"
+                            aria-label="guess who repository" -->
                        </div>
                         <h3 class="greenText">guess who game built in javascript.</h3>
                         <p class="thinP">Responsive web site using HTML, CSS and JavaScript ES6.</p>
@@ -86,20 +97,33 @@
 
                     <article class="project-grid">
                         <div class="image-container">
-                            <div class="overlay"></div>
+                            <div class="overlay" aria-hidden="true"></div>
                             <img class="project-img" src="./Pictures/github-tracker.png" alt="miniature picture of the github tracker project">
+                            <!-- Lägg in en länk till GitHub repot +
+
+                            aria-pressed="false"
+                            role="button"
+                            target="_blank"
+                            aria-label="guess who repository" -->
                         </div>
                          <h3 class="greenText">github tracker built in javascript.</h3>
                          <p class="thinP">Responsive web site using HTML, CSS and JavaScript ES6.</p>
                          <p class="lime-grön" >HTML</p>
                          <p class="lime-grön">CSS</p>
                          <p class="lime-grön">JavaScript</p> 
+                         <!-- List instead?? -->
                      </article>
 
                      <article class="project-grid">
                         <div class="image-container">
-                            <div class="overlay"></div>
+                            <div class="overlay" aria-hidden="true"></div>
                              <img class="project-img" src="./Pictures/chatt-bot.png" alt="miniature picture of the chat bot">
+                             <!-- Lägg in en länk till GitHub repot +
+
+                            aria-pressed="false"
+                            role="button"
+                            target="_blank"
+                            aria-label="guess who repository" -->
                         </div>
                          <h3 class="greenText">guess who game built in javascript.</h3>
                          <p class="thinP">Responsive web site using HTML, CSS and JavaScript ES6.</p>
@@ -110,8 +134,14 @@
 
                      <article class="project-grid">
                         <div class="image-container">
-                            <div class="overlay"></div>
+                            <div class="overlay" aria-hidden="true"></div>
                              <img class="project-img" src="./Pictures/buisness-site.png" alt="miniature picture of the buisnes-site">
+                             <!-- Lägg in en länk till GitHub repot +
+
+                            aria-pressed="false"
+                            role="button"
+                            target="_blank"
+                            aria-label="guess who repository" -->
                         </div>
                          <h3 class="greenText">A busniess site built with HTML and CSS.</h3>
                          <p class="thinP">Responsive web site using HTML, CSS and JavaScript ES6.</p>
@@ -122,7 +152,7 @@
                 </div>
 
 
-                <div class="other-projects">
+                <div class="other-projects" aria-label="section with more projects presented in a list">
                     <h2 class="greenText center">other projects</h2>
                     <h3 class="greenText">weather app.</h3>
                     <a class="boldP" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" tabindex="0" role="button" aria-pressed="false" aria-label="Never gonna give you up" target="_blank" rel="noreferrer">  
@@ -193,7 +223,7 @@
 <!-- SECTION 5 -->
         <!-- dessa verkade inte reagera vid ett första försök att ändra typsnitt... -->
         <!-- list ul osv -->
-        <section class="portfolio-section" class="skills-5">
+        <section class="portfolio-section skills-5" aria-label="section with skills and workongtools listed">
             <div class="container">
                 <div class="h1-container"><h1>SKILLS</h1></div>
                 <div class="skills-container">
@@ -206,13 +236,13 @@
                         <p class="thinP">GitHub</p>
                     </div>      
                     <div class="skills-grid">
-                        <h2 class="greenText" class="skills-grid">TOOLBOX</h2>
+                        <h2 class="greenText skills-grid">TOOLBOX</h2>
                         <p class="thinP">Adobe Photoshop</p>
                         <p class="thinP">Figma</p>
                         <p class="thinP">Slack</p>
                     </div>
                     <div class="skills-grid">
-                        <h2 class="greenText" class="skills-grid">UPCOMING</h2>
+                        <h2 class="greenText skills-grid">UPCOMING</h2>
                         <p class="thinP">Redux</p>
                         <p class="thinP">Node.js</p>
                     </div>
@@ -220,20 +250,23 @@
             </div>
         </section>
 <!-- SECTION 6 -->
-        <section class="portfolio-section" class="more-6">
+        <section class="portfolio-section more-6">
             <div class="container">
                 <div class="h1-container"><h1>For More</h1></div>
                 <div class="more-container">
                     <div class="more-grid">
-                        <a href="https://github.com/HedvigM"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/HedvigM" target="_blank"><i class="fab fa-github"></i></a>
+                        <span class="sr-only">Github icon with a link to my profile</span>
                         <p class="greenText">github</p>
                     </div>
                     <div class="more-grid">
-                        <a href="https://stackoverflow.com/c/technigo/users/230"><i class="fab fa-stack-overflow"></i></a>
+                        <a href="https://stackoverflow.com/c/technigo/users/230" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+                        <span class="sr-only">Stack overflow icon with a link to my profile</span>
                         <p class="greenText">stack overflow</p>
                     </div>
                     <div class="more-grid">
-                        <a href="https://www.linkedin.com/in/hedvig-mejstedt-b58517177/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/hedvig-mejstedt/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <span class="sr-only">Linked in icon with a link to my profile</span>
                         <p class="greenText">linked in</p>
                     </div>    
                 </div>
@@ -243,8 +276,8 @@
         <section class="contact-7 footer">
             <div class="container"><h1>Contact</h1>
                 <p class="thinP">Hedvig Mejstedt <br>
-                    +46 70 - 51 20 226 <br>
-                    hedvig@mejstedt.se</p>
+                    <a class="thinP white" href="tel:+46705120226"> +46 70 - 51 20 226</a><br>
+                    <a class="thinP white" href="mailto:hedvig@mejstedt.se"> hedvig@mejstedt.se</a></p>
             </div>
         </section>
     </section>     
