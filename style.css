@@ -1,3 +1,13 @@
+:root {
+  --white: #ffffff;
+  --blue: #294c60;
+  --pink: #cea2ac;
+  --yellow: #dbd56e;
+  --maroon: #684551;
+  --green: #6e9075;
+  --dark: #353535;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -7,12 +17,12 @@ section:nth-child(odd) {
   background-color: #f4f4f4;
 }
 section {
-  background-color: white;
+  background-color: var(--white);
   margin-top: 0px;
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.329)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.129), rgba(0, 0, 0, 0.129)),
     url("header2.webP");
   height: 520px;
   background-position: center;
@@ -34,7 +44,7 @@ section {
   z-index: 1;
 }
 .line {
-  border: 1px solid teal;
+  border: 1px solid var(--yellow);
   width: 40px;
   display: inline-block;
   margin-bottom: 4px;
@@ -43,7 +53,7 @@ section {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: teal;
+  background-color: var(--yellow);
   border-radius: 50%;
   display: inline-block;
 }
@@ -62,6 +72,9 @@ section {
   justify-content: center;
   align-content: center;
 }
+.icon-section a {
+  color: var(--white);
+}
 
 .icon-section {
   flex-direction: row;
@@ -74,7 +87,7 @@ section {
 }
 
 .header-p {
-  color: white;
+  color: var(--white);
   font-weight: 100;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
@@ -83,22 +96,22 @@ h1 {
   font-weight: 600;
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: var(--white);
   margin: 5px;
 }
 h2 {
   font-weight: 500;
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: var(--white);
   margin: 5px;
 }
 h3 {
-  background-color: teal;
+  background-color: var(--green);
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   text-align: center;
-  color: white;
+  color: var(--white);
   font-weight: 600;
   padding: 2px 5px;
   margin: 10px auto 30px auto;
@@ -109,7 +122,7 @@ h3 {
   justify-content: center;
 }
 h4 {
-  color: #4b7369;
+  color: var(--blue);
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -118,7 +131,7 @@ h4 {
 }
 .align-text-center {
   text-align: center;
-  color: #354f51;
+  color: var(--blue);
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -132,7 +145,7 @@ h4 {
   margin: 20px auto;
   text-align: center;
   font-weight: 600;
-  color: #426a74;
+  color: var(--maroon);
   width: fit-content;
   text-transform: uppercase;
 }
@@ -141,33 +154,33 @@ h4 {
   font-size: 21px;
   font-weight: 600;
   margin: 0px 0px 50px 0px;
-  color: white;
+  color: var(--white);
 }
 .content-p {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   line-height: 29px;
   margin: 0px;
-  color: #383c4b;
+  color: var(--dark);
 }
 .project-p {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   line-height: 29px;
   margin: 0px;
-  color: #383c4b;
+  color: var(--dark);
 }
 .colored-p {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   line-height: 29px;
   margin: 0px;
-  color: #415b64;
+  color: var(--maroon);
   margin-top: 20px;
   text-transform: uppercase;
 }
 .article-header {
-  color: black;
+  color: var(--dark);
   font-family: "Roboto", sans-serif;
   font-size: 21px;
   margin: 10px 0px;
@@ -179,12 +192,12 @@ h4 {
   margin: 5px;
   font-weight: 200;
   color: white !important;
-  text-decoration-color: #415b64;
+  text-decoration-color: transparent;
 }
 
 .link-p {
   font-family: "Roboto", sans-serif;
-  color: black;
+  color: var(--dark);
   text-align: center;
   font-weight: 500;
 }
@@ -200,15 +213,15 @@ b {
   font-weight: 500;
 }
 .links-color {
-  color: teal;
+  color: var(--maroon);
 }
 .links-color-mobile {
-  color: teal;
+  color: var(--maroon);
 }
 
 footer {
   height: 302px;
-  background-color: #415b64;
+  background-color: var(--blue);
   color: white;
   display: flex;
   justify-content: center;
@@ -216,8 +229,8 @@ footer {
   flex-direction: column;
 }
 footer a {
-  color: white;
-  text-decoration-color: teal;
+  color: var(--white);
+  text-decoration-color: transparent;
 }
 .link-wrapper {
   display: flex;
@@ -235,7 +248,7 @@ footer a {
 
 .icon-border-large {
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid var(--dark);
   height: 60px;
   width: 60px;
   display: flex;
@@ -308,7 +321,7 @@ footer a {
   z-index: 1;
   text-align: center;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--white);
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: 500;
@@ -323,6 +336,7 @@ footer a {
   margin: 0px;
   transform: translate(-50%, -50%);
   position: absolute;
+  color: var(--white);
 }
 
 .img-wrapper {
@@ -330,11 +344,11 @@ footer a {
 }
 
 .language-p {
-  background-color: #415b64;
+  background-color: var(--pink);
   font-family: "Roboto", sans-serif;
   font-size: 9px;
   text-align: center;
-  color: white;
+  color: var(--white);
   font-weight: 300;
   padding: 5px 5px;
   width: fit-content;
@@ -367,7 +381,7 @@ footer a {
 }
 
 a {
-  text-decoration-color: teal;
+  text-decoration-color: transparent;
 }
 
 @media (max-width: 767px) {
