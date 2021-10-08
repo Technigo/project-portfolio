@@ -7,6 +7,10 @@
   --secondary: #A76571;
 }
 
+.color-toggle {
+ --primary: #3b9b84;
+}
+
 body,
 html {
   margin: 0;
@@ -96,7 +100,7 @@ font-weight: 500;
 .blog-date {
   text-transform: uppercase;
   margin: 0;
-  color: #c62a88;
+  color: var(--primary);
   font-weight: 600;
 }
 
@@ -105,6 +109,35 @@ font-weight: 500;
   position: absolute;
   right: 35px;
   top: 250px;
+}
+
+.lightbulb {
+  width: 150px;
+  position: absolute;
+  right: 10px;
+  top: 135px;
+  transform: rotate(20deg);
+  display: none;
+}
+
+/*Changes color scheme in portfolio*/
+button {
+  border: none;
+  background-color: #212427;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 47px;
+  left: 40px;
+  border: 2px solid #212427;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #212427;
+  border: 2px solid #212427;
 }
 
 .icon-container {
@@ -148,6 +181,12 @@ font-weight: 500;
   transform: scale(1.2);
 }
 
+.fa-github:hover,
+.fa-linkedin-in:hover,
+.fa-stack-overflow:hover {
+  color: var(--primary);
+}
+
 .header-text {
   margin-left: 24px;
   font-family: 'Roboto';
@@ -175,7 +214,7 @@ font-weight: 500;
 
 /* Line-dot section indicator */
 .line {
-  border: 1px solid #c62a88;
+  border: 1px solid var(--primary);
   width: 40px;
   display: inline-block;
   margin-bottom: 4px;
@@ -184,7 +223,7 @@ font-weight: 500;
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #c62a88;
+  background-color: var(--primary);
   border-radius: 50%;
   display: inline-block;
 }
@@ -224,8 +263,6 @@ font-weight: 500;
 .main-projects p,
 .extra-projects h4,
 .extra-projects p,
-.thoughts-container p,
-.thoughts-container h4,
 .skill-set,
 .intro-text p,
 .tech-container p {
@@ -260,7 +297,7 @@ font-weight: 500;
 .code-tags span,
 .code-tags-main span {
   color: #fff;
-  background-color: #c62a88;
+  background-color: var(--primary);
   border: none;
   font-size: 10px;
   padding: 4px;
@@ -276,7 +313,7 @@ font-weight: 500;
 .arrow {
   text-decoration: none;
   font-weight: bold;
-  color: #c62a88;
+  color: var(--primary);
 }
 
 .thoughts-container {
