@@ -7,4 +7,4 @@ This is not the most advanced project from a technical standpoint (no javascript
 
 ##View it live
 
-See:
+See: https://app.netlify.com/sites/priscilaalfaro-portfolio/overview
