@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html {
-  --main-color: rgb(49, 93, 151);
-  --highlight-color: rgb(204, 251, 151);
+  --main-color: #a1bad2;
+  --highlight-color: #b8d8a9;
   --secondary-color: rgb(83, 109, 133);
   --background-color-even: #f4f4f4;
+  --white: rgb(244, 244, 244);
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
   margin: auto;
   box-sizing: border-box;
   min-width: 325px;
@@ -29,7 +28,6 @@ body section:nth-child(2n) {
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
@@ -39,7 +37,7 @@ h1 {
 h2 {
   padding: 6px 12px;
   background-color: var(--main-color);
-  color: rgb(244, 244, 244);
+  color: var(--white);
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
@@ -93,11 +91,12 @@ section {
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("./pictures/sarazancotti-bangkok-blue-wall.JPG");
+    url("./pictures/DSC_3213.JPG");
   background-size: cover;
   height: 520px;
-  color: rgb(244, 244, 244);
+  color: var(--white);
   padding: 39px 24px 29px 24px;
+  background-position: center center;
 }
 
 .header__icons {
@@ -111,22 +110,22 @@ section {
 }
 
 .round-icons i {
-  color: rgb(244, 244, 244);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   width: 40px;
   height: 40px;
-  border: 1px solid white;
+  border: 1px solid var(--white);
   border-radius: 50%;
   font-size: 20px;
 }
 
 .round-icons i:hover {
-  color: white;
+  color: var(--white);
   background-color: var(--main-color);
-  border: 1px solid white;
+  border: 1px solid var(--white);
   transition: all 200ms ease-in;
 }
 
@@ -168,7 +167,6 @@ section {
 }
 
 .header__text-cont__prof1__plus-prof2 {
-  font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: 500;
   line-height: 30px;
@@ -187,7 +185,7 @@ section {
   object-fit: cover;
   width: 180px;
   height: 180px;
-  border: 2px solid white;
+  border: 2px solid var(--white);
   border-radius: 50%;
 }
 
@@ -195,7 +193,6 @@ section {
 
 .intro {
   padding-top: 60px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .intro__text {
@@ -205,6 +202,7 @@ section {
 
 .intro__text__line {
   border: 1px solid var(--main-color);
+  background-color: var(--main-color);
   width: 40px;
   display: inline-block;
   margin-bottom: 4px;
@@ -223,7 +221,6 @@ section {
 /*-----------------TECH SECTION ----------------- */
 
 .tech {
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
 
@@ -286,32 +283,29 @@ h3 a:hover {
   letter-spacing: 0.04em;
   justify-content: center;
   align-items: center;
+  height: 200px;
   width: 100%;
-  color: rgb(244, 244, 244);
+  color: var(--white);
 }
 
 .project1-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("./pictures/weather.jpg");
   background-size: cover;
   background-position: center bottom;
-  height: 200px;
 }
 
 .project2-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("./pictures/escape__house.JPG");
   background-size: cover;
   background-position: center center;
-  height: 200px;
 }
 
 .project3-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("./pictures/github-tracker.JPG");
+  background-image: url("./pictures/github-tracker.JPG");
   background-size: cover;
   background-position: center top;
-  height: 200px;
 }
 
 .project4-image {
@@ -319,7 +313,6 @@ h3 a:hover {
     url("./pictures/guess__who.JPG");
   background-position: center top;
   background-size: cover;
-  height: 200px;
 }
 
 .projects__languages {
@@ -381,6 +374,10 @@ h3 a:hover {
 
 .skills {
   font-family: "Roboto", sans-serif;
+}
+
+.skills h2 {
+  font-family: "Montserrat", sans-serif;
 }
 
 .skills__content {
@@ -449,7 +446,7 @@ h3 a:hover {
 .footer span {
   font-size: 25px;
   font-weight: bold;
-  color: rgb(244, 244, 244);
+  color: var(--white);
   margin-bottom: 40px;
 }
 
@@ -457,7 +454,7 @@ h3 a:hover {
   margin: 0;
   font-size: 21px;
   font-weight: 200;
-  color: rgb(244, 244, 244);
+  color: var(--white);
 }
 
 .footer h2 {
@@ -466,7 +463,7 @@ h3 a:hover {
 
 footer a {
   text-decoration: none;
-  color: rgb(244, 244, 244);
+  color: var(--white);
 }
 
 footer a:hover {
@@ -502,7 +499,6 @@ footer a:hover {
   }
 
   .header {
-    background-position: bottom;
     padding: 49px 50px 29px 50px;
   }
 
@@ -655,12 +651,8 @@ footer a:hover {
   section {
     display: flex;
     flex-direction: column;
-    padding: 25px 24px 50px 24px;
-    align-items: center;
-  }
-
-  section {
     padding: 25px 20% 50px 20%;
+    align-items: center;
   }
 
   article p {
@@ -668,7 +660,6 @@ footer a:hover {
   }
 
   .header {
-    background-position: bottom center;
     padding: 49px 20% 29px 20%;
   }
 
@@ -727,19 +718,14 @@ footer a:hover {
     position: relative;
     border: 3px solid var(--main-color);
     width: 70px;
-    display: inline-block;
     bottom: 4px;
   }
 
   .intro__text__dot {
-    position: relative;
     left: -10px;
     bottom: 1px;
     height: 20px;
     width: 20px;
-    background-color: var(--main-color);
-    border-radius: 50%;
-    display: inline-block;
   }
 
   /*-----------------main-tech ----------------- */
