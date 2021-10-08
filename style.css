@@ -17,14 +17,23 @@
   height: 520px;
 }
 
-.header p,
+/* .header p,
 h1,
 h2 {
   text-align: start;
+} */
+
+.section-container-header {
+  margin: 50px 30px 0 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .icon-wrapper {
-  text-align: end;
+  margin-right: 0;
+  margin-left: auto;
 }
 .social-logo {
   width: 40px;
@@ -32,24 +41,28 @@ h2 {
 }
 
 .user-name {
+  font-size: 14px;
   padding-top: 40px;
   padding-bottom: 10px;
+  text-align: start;
 }
 .user-name span {
   font-weight: 100;
 }
 
 .ambition {
-  font-size: 45px;
+  font-size: 42px;
+  text-align: start;
 }
 .ambition-two {
   display: block;
-  font-size: 26px;
+  font-size: 20px;
+  text-align: start;
 }
 .user-image {
   position: absolute;
-  right: 30px;
-  bottom: -15px;
+  right: 0;
+  bottom: -250px;
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -58,7 +71,7 @@ h2 {
 /* This section deals with my info text */
 
 .section-container {
-  margin: 50px 50px 0 50px;
+  margin: 50px 30px 0 30px;
   text-align: center;
   padding: 30px 0;
 }
@@ -226,7 +239,8 @@ svg {
 }
 
 @media (min-width: 768px) {
-  .section-container {
+  .section-container,
+  .section-container-header {
     margin: 50px 20% 0 20%;
   }
   section:nth-child(odd) {
