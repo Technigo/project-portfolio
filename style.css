@@ -183,6 +183,7 @@ a:hover {
     width: 100%;
     display: block;
     margin-top: 30px;
+    transition: 0.5s ease;
 }
 .overlay {
     position: absolute;
@@ -190,8 +191,35 @@ a:hover {
     right: 10px;
     bottom: 10px;
     left: 10px;
-    background: rgba(156, 166, 197, 0.3);
+    background: rgba(156, 166, 197, 0.7);
+    transition: 0.5s ease;
 }
+
+.overlay p {
+    position: absolute;
+    font-weight: 200;
+    color: white;
+
+    display: flex;
+    font-family: "Montserrat";
+    font-size: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overlay p:hover {
+    color: transparent;
+  }
+  
+  .overlay:hover {
+    background-color: transparent;
+  }
+
 .image-container {
     position: relative;
 }
@@ -235,7 +263,9 @@ a:hover {
     padding-bottom: 20px;
     margin-bottom: 0px;}
 
-
+.project-2 {
+    display:none;
+}
 
 /* 
 Mobil -  */
@@ -298,6 +328,9 @@ Mobil -  */
     margin-top: 40px;
     }
 
+    .project-2 {
+        display: block;
+    }
 
 
 
@@ -328,14 +361,13 @@ Mobil -  */
 
 /* TODO
 
-7. Accecability säkrat. 
-8. og: grejen så att små symboler följer med vid sökning. (Kolla på Sabrinas sida)
-9. the overlay ser inte helt perfekt ut på skärmdumparna... Gör nya skärmdumpar.
-10. the pitcure overlay like Ida.
-11. visa bara två bilder i "projects" i mobile view
+
+
+9. Bilden verkar inte funka... og: grejen. 
+10. the overlay ser inte helt perfekt ut på skärmdumparna... Gör nya skärmdumpar.
+11. the pitcure overlay like Ida.
+12. 
 
 * tabindex
-* pricken -5px;
 
-* <span class="sr-only">linked in</span> nått att följa upp?
 */
