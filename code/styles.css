@@ -1,3 +1,168 @@
 body {
-  background: red;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HEADER */
+
+.header-image {
+  background-image: url(/assets/header.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 520px;
+  position: relative;
+  padding: 24px;
+}
+
+.icon-container {
+  position: absolute;
+  right: 24px;
+  top: 48px;
+  font-size: 15px;
+}
+
+.social-media-icons {
+  width: 40px;
+}
+
+.text-container {
+  position: absolute;
+  top: 150px;
+  width: 250px;
+  height: 202px;
+}
+
+.text-container h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  letter-spacing: 0.04em;
+}
+
+.portfolio {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-family: "Roboto", sans-serif;
+}
+
+.portfolio span {
+  font-weight: 700;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  right: 24px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* GENERAL STYLING */
+
+.section-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-container:nth-child(2n) {
+  background-color: #f4f4f4;
+}
+
+.content-container {
+  width: 87%;
+  margin: 30px 0px;
+}
+
+/* ABOUT ME */
+
+.about-me-text {
+  font-size: 17px;
+  line-height: 29px;
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+.line {
+  border: 1px solid green;
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* TECH */
+
+.content-heading-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content-heading {
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  padding: 3px;
+}
+
+.tech-text {
+  font-size: 17px;
+  line-height: 29px;
+  /* font-family: "Montserrat", sans-serif; */
+  text-align: center;
+}
+
+/* FEATURED PROJECTS */
+
+.image-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(156, 166, 197, 0.5);
+}
+
+.project-img {
+  width: 100%;
+}
+
+.project-heading {
+  text-transform: uppercase;
+  color: green;
+}
+
+.skill {
+  padding: 2px 5px;
+  background: lightgreen;
+  color: white;
+  font-weight: 300;
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 758px) {
+  .header-image {
+    height: 30vh;
+    padding: 0px;
+  }
 }
