@@ -1,83 +1,468 @@
 body {
-  /*background-color: aquamarine;*/
   margin: 0;
+  padding: 0;
   font-family: roboto;
 }
 
-header {
-  height: 520px;
-  width: 375px;
-  /*background-size: cover;*/
-  left: 0;
-  top: 0;
-  position: absolute; /*messes up my top margin if used*/
-  background: url(./images/header-image.jpg);
-}
-
-.icon-header {
-  position: absolute;
-  display: flex;
-  width: 130.5px;
-  height: 40px;
-  left: 220px;
-  top: 48px;
-  /*border-radius: 10%;
-  align-items: right;
-  position: relative;
-  margin-top: 10px;
-  margin-left: 10px;*/
-}
-
-.profile-picture {
-  position: absolute;
-  left: 171px;
-  top: 385px;
-  width: 150px;
-  height: 150px;
-  border-radius: 80px;
-  object-fit: cover;
-  filter: grayscale(20%);
+h3 {
+  color: #f8485e;
+  text-transform: uppercase;
 }
 
 .text-container {
-  display: flex;
+  background-image: url(./images/sea.webp);
+
+  background-size: cover;
+  background-position: bottom;
+  height: 520px;
+  width: 100%;
+  color: #082032;
+  left: 0;
+  top: 0;
   flex-direction: column;
-  width: 250px;
-  height: 20px;
   position: relative;
-  top: 120px;
-  left: 5px;
-  column-width: 10px;
-  color: blueviolet;
 }
 
-.line {
-  border: 1px solid blue;
-  display: inline-block;
-  width: 40px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-}
-
-.dot {
+.profile-picture {
+  border-radius: 100%;
+  border: 1px solid white;
+  width: 180px;
   position: absolute;
-  /*display: inline-block;*/
-  border-radius: 50px;
-  height: 10px;
-  width: 10px;
-  background-color: blue;
+  top: 356px;
+  right: 24px;
+}
+
+.navbar {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+}
+
+.icon-header-more {
+  width: 43px;
+  height: 43px;
+}
+
+.icon-header-more:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  padding-top: 200px;
+  font-size: 1 rem;
+}
+
+.portfolio-text {
+  font-size: 1 rem;
+}
+
+/*INTO SECTION STYLING*/
+
+.dot-icon {
+  width: 15%;
 }
 
 .intro-section {
-  position: absolute;
-  display: flex;
   background: #f4f4f4;
-  opacity: 0.3;
   box-sizing: border-box;
   height: 324px;
-  width: 375px;
   top: 520px;
-  padding: 49px 24px 43px 24px;
   font-size: 17px;
   line-height: 29px;
+  padding: 49px 24px 43px 24px;
+}
+
+.bio-text {
+  max-width: 330px;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 30px;
+  line-height: 29px;
+}
+
+/*TECH SECTION STYLING*/
+
+.tech-section {
+  display: block;
+  text-align: center;
+  padding: 24px;
+  max-width: 330px;
+  margin: 0 auto;
+  line-height: 29px;
+}
+
+.tech-heading {
+  background-color: #f8485e;
+  color: #fff;
+  text-transform: uppercase;
+  width: fit-content;
+  display: inline-block;
+}
+
+.tech.text {
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+}
+/*PROJECTS SECTION*/
+
+.projects {
+  max-width: 330px;
+  margin: 0 auto;
+  text-align: left;
+}
+.project-section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+.project-image {
+  max-width: 100%;
+  height: auto;
+}
+.project-image-container {
+  position: relative;
+}
+
+.project-image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(219, 209, 209);
+  text-decoration-color: #f8485e;
+
+  /*
+  background: rgba(231, 227, 241, 0.818);*/
+}
+.text {
+  background-color: #f8485e;
+}
+
+.project-image-container {
+  position: relative;
+  color: white;
+}
+.project-text {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 330px;
+  margin-bottom: 10px;
+}
+.projects-head {
+  display: inline-block;
+  background-color: #f8485e;
+  color: white;
+  padding: 3px 5px;
+  margin: 25px;
+}
+
+.code-tag {
+  display: inline-block;
+  background-color: #90aacb;
+  font-size: 9px;
+  line-height: 11px;
+  padding: 5px 10px;
+  margin: 0 10px 20px 0;
+}
+
+.icon-footer-more {
+  width: 60px;
+  height: 60px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+/* My thoughts about code */
+
+/*  Skills  */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 20px;
+  line-height: 20px;
+
+  padding-left: 25px;
+}
+
+.skills-section {
+  background-color: #f4f4f4;
+}
+.skills-heading {
+  /*background-color: #f8485e;
+  color: #fff;
+  padding-top: 3px;
+  text-align: center;
+  width: fit-content;
+  font-weight: 700;*/
+
+  background-color: #f8485e;
+  color: whitesmoke;
+  width: fit-content;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-box-more {
+  display: none;
+}
+
+/*   for more section */
+
+.for-more-title {
+  background-color: #f8485e;
+  color: whitesmoke;
+  width: fit-content;
+  display: inline-block;
+}
+.for-more-section {
+  align-items: center;
+  height: 250px;
+  text-align: center;
+}
+
+.icon-header-more {
+  padding-top: 35px;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+}
+/*FOOTER*/
+
+.footer {
+  background-color: #512d6d;
+  padding: 20px;
+  text-align: center;
+}
+
+h3,
+footer {
+  color: whitesmoke;
+}
+
+/*.container {
+  margin: 0 auto;
+  background-color: #f4f4f4;
+}
+.project {
+  margin: 20px;
+}
+.portfolio-heading {
+  background-color: #f8485e;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio-heading-container {
+  display: grid;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+.image-container {
+  position: relative;
+}
+.image {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+.other-projects-title {
+  margin-top: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(156, 166, 197, 0.5);
+}
+.code-tags {
+  display: inline-block;
+  background-color: #90aacb;
+  font-size: 9px;
+  line-height: 13px;
+  font-weight: 400;
+}
+*/
+/*  My thoughts about code 
+
+.thoughts {
+  background-color: #f8485e;
+  color: #fff;
+  text-align: center;
+  width: fit-content;
+  display: block;
+}
+
+/*   Skills   
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 20px;
+  line-height: 20px;
+
+  padding-left: 25px;
+}
+
+.skills-section {
+  background-color: #f4f4f4;
+}
+.skills-heading {
+  background-color: #f8485e;
+  color: #fff;
+  padding-top: 3px;
+  text-align: center;
+  width: fit-content;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-box-more {
+  display: none;
+}
+
+.skills-category h3 {
+  font-weight: 400;
+}
+
+.skills-category {
+  color: #f8485e;
+  display: inline-block;
+  width: fit-content;
+  font-weight: 700;
+  padding-top: 3px;
+}
+
+/*FOR MORE*
+
+.for-more-title {
+  background-color: #f8485e;
+  display: inline-block;
+  width: fit-content;
+  padding-top: 5px;
+  color: #fff;
+}
+.for-more-section {
+  align-items: center;
+  text-align: center;
+  border-top: 15px;
+  height: 250px;
+}
+
+.nav-for-more {
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+.icon-footer-more {
+  padding-top: 50px;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+}
+/*FOOTER*
+
+.footer {
+  background-color: #512d6d;
+  padding: 45px;
+  text-align: center;
+}
+
+.icon-footer-more {
+  width: 60px;
+  height: 60px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.icon-footer-more:hover {
+  transform: scale(1.1);
+}
+
+.contact-title .contact-name .contact-number .contact-email {
+  color: whitesmoke;
+}
+
+
+/*MEDIA QUERY*/
+
+@media (min-width: 992px) {
+  .projects {
+    max-width: 1100px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+  }
+  .project-image-container {
+    position: relative;
+    max-width: 530px;
+  }
+
+  .project-text {
+    max-width: 530px;
+  }
+
+  .skills-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    max-width: 100px;
+    align-items: center;
+  }
+  .profile-picture {
+    left: 550px;
+    top: 250px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    border: 1px solid white;
+  }
+  .skills-box-more {
+    display: block;
+  }
+  .skills-heading {
+    background-color: #f8485e;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+    width: fit-content;
+  }
+  .skills-container {
+    display: grid;
+    line-height: 20px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .icon-header-more {
+    height: 80px;
+    width: 80px;
+  }
 }
