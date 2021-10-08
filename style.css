@@ -14,13 +14,13 @@ body {
   background-size: cover;
 }
 
-.profile-picture-container {
+.profile-picture {
   position: absolute;
   overflow: hidden;
   right: 25px;
-  bottom: -10px;
-  height: 150px;
-  width: 150px;
+  bottom: -20px;
+  height: 200px;
+  width: 200px;
   border: 2px solid #fff;
   border-radius: 50%;
   z-index: 2;
@@ -31,7 +31,6 @@ body {
   object-fit: cover;
 }
 
-/*Since this is contained within the header, it's width has to be defined or it will inherit the parent-properties*/
 .name-title {
   width: 60%;
   top: 100px;
@@ -40,12 +39,12 @@ body {
 }
 
 .name-title p {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .name-title h1 {
   color: black;
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .links {
@@ -91,4 +90,240 @@ body {
   position: absolute;
   right: 4px;
   top: 10px;
+}
+
+.main {
+  padding: 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.footerlinks {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  position: relative;
+  justify-items: center;
+  height: 20vh;
+}
+
+.bottomlinks {
+  position: absolute;
+  right: 400px;
+}
+
+.footerin {
+  position: absolute;
+  left: 115px;
+  top: 20px;
+  z-index: 1;
+}
+
+.footergit {
+  position: absolute;
+  left: 195px;
+  top: 20px;
+  z-index: 1;
+}
+
+.footerstack {
+  position: absolute;
+  left: 275px;
+  top: 20px;
+  z-index: 1;
+}
+
+.circlefin {
+  position: absolute;
+  left: 90px;
+}
+
+.circlefootergit {
+  position: absolute;
+  left: 170px;
+}
+
+.circlefooterstack {
+  position: absolute;
+  left: 250px;
+}
+
+.sub-heading {
+  background-color: #fa382f;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3px;
+}
+
+.background {
+  background: #7c6545;
+}
+
+.overlay-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay h4 {
+  color: #bae2c0;
+  padding: 4px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-links {
+  text-decoration: none;
+  color: #000;
+}
+
+.project-images {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.arrow {
+  color: #211fa9;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.other-heading {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  justify-items: center;
+}
+
+.first-row {
+  grid-row-start: 1;
+  padding: 10px;
+}
+
+.second-row {
+  grid-row-start: 2;
+  padding: 10px;
+}
+
+.one,
+.three {
+  grid-column: 2/3;
+}
+
+.two,
+.four {
+  grid-column: 3/4;
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: auto;
+  background: rgb(146, 191, 104);
+  color: #fff;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-text {
+  margin: 5px;
+}
+
+@media (min-width: 757px) {
+  .main {
+    flex-direction: column;
+    padding: 150px 10px;
+  }
+
+  .profile-picture-container {
+    height: 270px;
+    width: 270px;
+  }
+  .profile-picture-container img {
+    width: 270px;
+  }
+  .header-links {
+    right: 25px;
+    top: 15px;
+  }
+
+  .top-section {
+    font-size: 25px;
+  }
+  .project-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    padding: 30px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    flex-direction: column;
+    padding: 150px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+  .other-heading {
+    font-size: 27px;
+  }
+  .project-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content;
+  }
+  .project-card p {
+    font-size: 20px;
+  }
+
+  .skill-container {
+    grid-template-rows: min-content;
+  }
 }
