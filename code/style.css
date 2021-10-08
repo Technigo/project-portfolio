@@ -80,8 +80,8 @@ h4 {
     
   }
   
-/*The skills*/
-  .tech {
+/*TECH*/
+  .tech, .bio-container {
     background-color:white;
     text-align: center;
     width: 100%;
@@ -89,7 +89,7 @@ h4 {
     padding: 20px;
   }
 
-.tech-skills-wrapper {
+.tech-skills-wrapper, .bio-text {
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -102,7 +102,7 @@ h4 {
   margin-top: 40px;
 }
 
-.code-skills {
+.code-skills, .bio-text {
   width: 90%;
   max-width: 900px;
   margin: 30px auto 0 auto;
@@ -110,6 +110,13 @@ h4 {
 }
 .code-skills:hover{
   background-color: white;
+}
+
+/*Bio-container*/
+.bio-container p{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 40px;
 }
 
 /* Featured Projects*/
@@ -125,7 +132,7 @@ h4 {
   display: flex;
   justify-content: center;
 }
-.project-container, .other-project-container{
+.project-container, .other-project-container, .skills-container{
   display: flex;
   flex-direction: column;
   margin: 30px auto 0 auto;
@@ -197,7 +204,29 @@ display: inline;
   animation-iteration-count: 1;
 }
 
+/*Skills-container*/
+.skills-list-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px 0 20px 0;
+  
+}
+.list{
+width:50%;
+padding-top: 30px; 
+}
+.list h4{
+  margin: 10px 0;
+}
 
+ul{
+  
+  list-style-type: none;
+  line-height: 1.5;
+  font-size: 1.25rem;
+
+}
 /*Social media icons*/
 .social-container {
   width: 90%;
@@ -258,6 +287,13 @@ margin-bottom: 30px;
   .tech-skills-wrapper p{
     padding: 0 20px;
   }
+  .list {
+    width: 30%;
+  }
+  .skills-list-wrapper{
+    display: flex;
+    flex-direction: row;
+    
 }
 
 @media (min-width: 1200px) {
