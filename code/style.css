@@ -305,6 +305,7 @@ h6 {
 
 .article-gif {
   width: 100%;
+  object-fit: cover;
   align-self: center;
 }
 
@@ -314,6 +315,10 @@ h6 {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.desktop-only {
+  display: none;
 }
 
 .article-1,
@@ -473,8 +478,6 @@ footer {
   .other-projects-wrapper {
     display: flex;
     flex-direction: column;
-
-    /* padding-left: 55px; */
   }
 
   .my-thoughts-container {
@@ -498,21 +501,41 @@ footer {
     padding-right: 200px;
   }
 
-  .wrap-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-self: center;
-    justify-content: center;
+  .project-container-1 {
+    width: 48%;
   }
 
   .project-container-2 {
+    width: 48%;
     margin-top: -70px;
   }
 
   .other-projects-wrapper {
     display: flex;
     flex-direction: column;
-    padding-left: 90px;
+    /* padding-left: 90px; */
+  }
+
+  .my-thoughts-container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .desktop-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* gap: 50px; */
+    justify-content: space-between;
+  }
+
+  .my-thoughts-section {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .desktop-only {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
   }
 }
