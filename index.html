@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"/>
     <title>Hedvigs Portfolio</title>
+    <meta property="og:title" content="Hedvig Mejstedt - frontend developer">
+    <meta property="og:description" content="Portfolio that displays the various projects I've done throughout my frontend education within Technigo"> 
+    <meta property="og:image" content="	http://127.0.0.1:5500/Pictures/profile-pic.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portfolio-fail.netlify.app">
+    <!-- Change the pic and website url later -->
     <script src="https://kit.fontawesome.com/8f78bf6da4.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -29,17 +35,14 @@
 </head>
 <body>
 <!-- HEADER -->
-    <header class="header-1" aria-label="Background image with mountains and a lake">
+    <header class="header-1" aria-label="Background image with mountains and a lake ">
         <div class="container">
         <section class="icons">
-            <a href="https://github.com/HedvigM" target="_blank"><i class="fab fa-github"></i></a>
-            <span class="sr-only">GitHub</span>
+            <a href="https://github.com/HedvigM" target="_blank" aria-label="a link to my GitHub account"><i class="fab fa-github"></i></a>
 
-            <a href="https://stackoverflow.com/c/technigo/users/230" target="_blank"><i class="fab fa-stack-overflow"></i></a>
-            <span class="sr-only">stack overflow</span>
+            <a href="https://stackoverflow.com/c/technigo/users/230" target="_blank" aria-label="a link to my stack overflow account"><i class="fab fa-stack-overflow"></i></a>
 
-            <a href="https://www.linkedin.com/in/hedvig-mejstedt/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <span class="sr-only">linked in</span>
+            <a href="https://www.linkedin.com/in/hedvig-mejstedt/" target="_blank" aria-label="a link to my linked in account"></a><i class="fab fa-linkedin-in"></i></a>
         </section>
 
        <div class="header-text">
@@ -81,14 +84,15 @@
                        <div class="image-container">
                            <div class="overlay" aria-hidden="true"></div>
                             <img class="project-img" src="./Pictures/guess-who.png" alt="miniature picture of the guess who game">
-                            <!-- Lägg in en länk till GitHub repot +
-
-                            aria-pressed="false"
-                            role="button"
-                            target="_blank"
-                            aria-label="guess who repository" -->
                        </div>
-                        <h3 class="greenText">guess who game built in javascript.</h3>
+                        <h3 class="greenText"> 
+                            <a 
+                            aria-label="a link to the github tracker on github"  aria-pressed="false" 
+                            role="button" 
+                            target="_blank" 
+                            href="https://github.com/HedvigM/project-guess-who">guess who game built in javascript.
+                            </a>
+                        </h3>
                         <p class="thinP">Responsive web site using HTML, CSS and JavaScript ES6.</p>
                         <p class="lime-grön" >HTML</p>
                         <p class="lime-grön">CSS</p>
@@ -99,14 +103,8 @@
                         <div class="image-container">
                             <div class="overlay" aria-hidden="true"></div>
                             <img class="project-img" src="./Pictures/github-tracker.png" alt="miniature picture of the github tracker project">
-                            <!-- Lägg in en länk till GitHub repot +
-
-                            aria-pressed="false"
-                            role="button"
-                            target="_blank"
-                            aria-label="guess who repository" -->
                         </div>
-                         <h3 class="greenText">github tracker built in javascript.</h3>
+                         <h3 class="greenText"><a aria-label="a link to the github tracker on github"  aria-pressed="false" role="button" target="_blank" href="https://github.com/HedvigM/project-github-tracker">github tracker built in javascript.</a></h3>
                          <p class="thinP">Responsive web site using HTML, CSS and JavaScript ES6.</p>
                          <p class="lime-grön" >HTML</p>
                          <p class="lime-grön">CSS</p>
@@ -117,15 +115,9 @@
                      <article class="project-grid">
                         <div class="image-container">
                             <div class="overlay" aria-hidden="true"></div>
-                             <img class="project-img" src="./Pictures/chatt-bot.png" alt="miniature picture of the chat bot">
-                             <!-- Lägg in en länk till GitHub repot +
-
-                            aria-pressed="false"
-                            role="button"
-                            target="_blank"
-                            aria-label="guess who repository" -->
+                            <img class="project-img" src="./Pictures/chatt-bot.png" alt="miniature picture of the chat bot">
                         </div>
-                         <h3 class="greenText">guess who game built in javascript.</h3>
+                         <h3 class="greenText"><a aria-label="a link to the chatbot on github"  aria-pressed="false" role="button" target="_blank" href="https://github.com/HedvigM/project-chatbot"> chatbot built in javascript.</a></h3>
                          <p class="thinP">Responsive web site using HTML, CSS and JavaScript ES6.</p>
                          <p class="lime-grön" >HTML</p>
                          <p class="lime-grön">CSS</p>
@@ -136,14 +128,8 @@
                         <div class="image-container">
                             <div class="overlay" aria-hidden="true"></div>
                              <img class="project-img" src="./Pictures/buisness-site.png" alt="miniature picture of the buisnes-site">
-                             <!-- Lägg in en länk till GitHub repot +
-
-                            aria-pressed="false"
-                            role="button"
-                            target="_blank"
-                            aria-label="guess who repository" -->
                         </div>
-                         <h3 class="greenText">A busniess site built with HTML and CSS.</h3>
+                         <h3 class="greenText"><a aria-label="a link to the business site on github"  aria-pressed="false" role="button" target="_blank" href="https://github.com/HedvigM/project-business-site">A business site built with HTML and CSS.</a></h3>
                          <p class="thinP">Responsive web site using HTML, CSS and JavaScript ES6.</p>
                          <p class="lime-grön" >HTML</p>
                          <p class="lime-grön">CSS</p>
@@ -155,18 +141,34 @@
                 <div class="other-projects" aria-label="section with more projects presented in a list">
                     <h2 class="greenText center">other projects</h2>
                     <h3 class="greenText">weather app.</h3>
-                    <a class="boldP" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" tabindex="0" role="button" aria-pressed="false" aria-label="Never gonna give you up" target="_blank" rel="noreferrer">  
-                        I just wanna tell you how I'm feeling
-                        Gotta make you understand</a>
+                    <a 
+                        class="boldP" 
+                        href="https://github.com/Technigo/project-weather-app/pull/199" 
+                        tabindex="0" 
+                        role="button" 
+                        aria-pressed="false" 
+                        aria-label="Link to the weather app project on github" 
+                        target="_blank" 
+                        rel="noreferrer">  
+                        The weather projet was a grout project where we made a forecast for the day and for the following 5 days. The apps design changes with the weather!
+                    </a>
                     <span class="thinP greenText">&nbsp;&gt;&gt;</span><br>
                     <p class="lime-grön" >HTML</p>
                     <p class="lime-grön">CSS</p>
                     <p class="lime-grön">JavaScript</p> 
 
-                    <h3 class="greenText">weather app.</h3>
-                    <a class="boldP" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" tabindex="0" role="button" aria-pressed="false" aria-label="Never gonna give you up" target="_blank" rel="noreferrer">  
-                        I just wanna tell you how I'm feeling
-                        Gotta make you understand</a>
+                    <h3 class="greenText">News site.</h3>
+                    <a 
+                        class="boldP" 
+                        href="https://github.com/HedvigM/project-news-site" 
+                        tabindex="0" 
+                        role="button" 
+                        aria-pressed="false" 
+                        aria-label="Link to the project news site on github" 
+                        target="_blank" 
+                        rel="noreferrer">  
+                        The site is built by responsive grids that respond on mobile, tablet and a wider screen.
+                        </a>
                     <span class="thinP greenText">&nbsp;&gt;&gt;</span>
                     <p class="lime-grön" >HTML</p>
                     <p class="lime-grön">CSS</p>
@@ -255,17 +257,16 @@
                 <div class="h1-container"><h1>For More</h1></div>
                 <div class="more-container">
                     <div class="more-grid">
-                        <a href="https://github.com/HedvigM" target="_blank"><i class="fab fa-github"></i></a>
-                        <span class="sr-only">Github icon with a link to my profile</span>
+                        <a href="https://github.com/HedvigM" target="_blank" aria-label="a link to my GitHub account"><i class="fab fa-github"></i></a>
                         <p class="greenText">github</p>
                     </div>
                     <div class="more-grid">
-                        <a href="https://stackoverflow.com/c/technigo/users/230" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+                        <a href="https://stackoverflow.com/c/technigo/users/230" target="_blank" aria-label="a link to my stack overflow account"><i class="fab fa-stack-overflow"></i></a>
                         <span class="sr-only">Stack overflow icon with a link to my profile</span>
                         <p class="greenText">stack overflow</p>
                     </div>
                     <div class="more-grid">
-                        <a href="https://www.linkedin.com/in/hedvig-mejstedt/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/hedvig-mejstedt/" target="_blank" aria-label="a link to my linked in account"><i class="fab fa-linkedin-in"></i></a>
                         <span class="sr-only">Linked in icon with a link to my profile</span>
                         <p class="greenText">linked in</p>
                     </div>    
@@ -274,11 +275,11 @@
         </section>
 <!-- SECTION 7 -->
         <section class="contact-7 footer">
-            <div class="container"><h1>Contact</h1>
-                <p class="thinP">Hedvig Mejstedt <br>
-                    <a class="thinP white" href="tel:+46705120226"> +46 70 - 51 20 226</a><br>
-                    <a class="thinP white" href="mailto:hedvig@mejstedt.se"> hedvig@mejstedt.se</a></p>
-            </div>
+        <div class="container"><h1>Contact</h1>
+        <p class="thinP">Hedvig Mejstedt <br>
+        <a class="thinP white" href="tel:+46705120226"> +46 70 - 51 20 226</a><br>
+        <a class="thinP white" href="mailto:hedvig@mejstedt.se"> hedvig@mejstedt.se</a></p>
+    </div>
         </section>
     </section>     
 </body>
