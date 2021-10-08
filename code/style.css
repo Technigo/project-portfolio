@@ -97,6 +97,7 @@ body {
 
 .container {
   width: 85%;
+  max-width: 1100px;
   margin: 0 7.5%;
 }
 
@@ -121,6 +122,7 @@ body {
 
 .image-container {
   position: relative;
+  height: 200px;
 }
 
 .overlay {
@@ -134,6 +136,7 @@ body {
 
 .image {
   width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -244,6 +247,7 @@ article {
   color: #fa382f;
   list-style-type: none;
   text-align: center;
+  padding: 0;
   align-self: flex-start;
 }
 
@@ -258,10 +262,7 @@ article {
 .code-skills {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-content: flex-start;
   width: 50%;
-  margin-left: 0;
 }
 
 .list-item {
@@ -348,8 +349,8 @@ footer > h4 {
 
 @media (min-width: 768px) {
   .social-media {
-    margin-right: 15%;
-    margin-left: 50%;
+    margin-right: 10%;
+    margin-left: 60%;
   }
 
   .social-media-container {
@@ -359,7 +360,7 @@ footer > h4 {
   }
 
   .about-me {
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 1.2em;
     letter-spacing: 0.07em;
     margin-left: 10%;
@@ -377,8 +378,17 @@ footer > h4 {
   }
 
   .intro-paragraph {
-    font-size: 1.15em;
+    font-size: 1.2em;
     line-height: 2em;
+  }
+
+  .tech-section-content {
+    font-size: 1.15em;
+    line-height: 1.9em;
+  }
+
+  .image-container {
+    height: 285px;
   }
 
   .section-header-container {
@@ -408,27 +418,38 @@ footer > h4 {
   article {
     margin-bottom: 2em;
   }
+
   .for-more {
     margin-top: 2.5em;
+    height: 350px;
   }
 
   .parent {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   .footer {
-    height: 400px;
+    height: 350px;
+  }
+
+  .contact-details {
+    font-size: 1.15em;
+    line-height: 1.4em;
   }
 }
 
 @media (min-width: 992px) {
   .social-media {
-    margin-left: 57%;
+    margin-left: 59%;
+    margin-right: 17%;
   }
 
   .about-me {
     margin-left: 12%;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    letter-spacing: 0.08em;
   }
 
   .profile-image {
@@ -441,16 +462,68 @@ footer > h4 {
     margin: 0 17.5%;
   }
 
+  .intro-paragraph,
+  .tech-section-content {
+    font-size: 1.35em;
+    line-height: 2.5em;
+  }
+
+  .abilities {
+    color: #fa382f;
+  }
+
   .large-screens {
     display: block;
   }
 
-  .featured-projects-large {
-    display: flex;
-    flex-wrap: wrap;
+  .section-header {
+    font-size: 1.55em;
+    line-height: 2em;
+    padding: 0.35em;
   }
 
-  article {
-    width: 40%;
+  .project-description {
+    font-size: 1.15em;
+    line-height: 2em;
+  }
+
+  .language-item1,
+  .language-item2,
+  .language-item3 {
+    font-size: 0.65em;
+    line-height: 0.9em;
+    letter-spacing: 0.03em;
+  }
+
+  .featured-projects-container,
+  .thoughts-container-wide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .featured-projects-big-screens,
+  .thoughts-big-screen {
+    width: 45%;
+  }
+
+  .other-header {
+    font-size: 1.35em;
+    line-height: 1.8em;
+    margin-top: 2.5em;
+  }
+
+  .code-skills {
+    width: 30%;
+  }
+
+  .code-skills-content {
+    align-self: auto;
+  }
+
+  .code-skills-content,
+  .toolbox {
+    font-size: 1.15em;
+    line-height: 2em;
   }
 }
