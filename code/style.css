@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+:root {
+  --copper: #b7665b;
+  --ash-gray: #b6c9bb;
+  --honey: #ffae03;
+}
+
 body {
   background-color: white;
   font-family: 'Montserrat', 'Roboto', sans-serif;
@@ -212,14 +218,16 @@ h4 {
 
 .project-image {
   width: 100%;
+  max-height: 180px;
   display: block;
 }
 
 .project-image-container h5 {
   position: absolute;
   top: 30%;
-  left: 20%;
-  right: 20%;
+  bottom: 30%;
+  left: 10%;
+  right: 10%;
   color: white;
   letter-spacing: 00.04em;
 }
@@ -238,6 +246,7 @@ h5 {
 }
 
 h6 {
+  font-family: 'Roboto';
   color: #fa382f;
   margin: 1rem 0 0.5rem 0;
   text-align: left;
@@ -260,6 +269,7 @@ a:visited {
 }
 
 a > p {
+  font-family: 'Roboto';
   text-align: left;
   padding-top: 0;
 }
@@ -271,7 +281,8 @@ a > p {
 
 .tag-wrapper p {
   color: #2b2e34;
-  font-weight: normal;
+  font-family: 'Roboto';
+  font-weight: bold;
   background-color: #db9aab;
   text-decoration: none;
   font-size: 12px;
@@ -294,6 +305,7 @@ a > p {
 }
 
 .skills-card-heading {
+  font-family: 'Roboto';
   font-weight: 700;
   color: #fa382f;
 }
@@ -302,16 +314,26 @@ ul {
   list-style: none;
 }
 
+ul > li {
+  font-family: 'Roboto';
+}
+
 .for-more-icons {
-  margin: 3rem 3.5rem 1rem;
+  /* margin: 3rem 3.5rem 1rem; */
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .icon-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
   align-items: center;
+  margin: auto;
+  gap: 10px;
 }
 
 .github-icon,
@@ -321,12 +343,22 @@ ul {
   height: 60px;
 }
 
+.icon-text {
+  font-family: 'Roboto';
+  color: #fa382f;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
 footer {
   background-color: #072bce;
   height: 302px;
 }
 
 footer > h6 {
+  font-family: 'Montserrat';
   font-weight: bold;
   font-size: 21px;
   line-height: 25px;
