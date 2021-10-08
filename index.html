@@ -20,6 +20,8 @@
 </head>
 
 <body>
+  <!-- skip to content link -->
+  <a href="#content" class="skip">Skip to content</a>
   <!-- ************** HEADER SECTION W HERO ************* -->
   <header class="hero">
     <nav class=" hero__nav">
@@ -33,7 +35,7 @@
         <img src="./assets/stackOverflow.svg" alt="Stack Overflow icon with a link to my  profile">
       </a>
     </nav>
-    <div class="hero__text" aria-label="My full name and title">
+    <div class="hero__text">
       <h1 class="hero__text-box-1">PORTFOLIO: <strong>IDA ASPEN</strong></h1>
       <h1 class="hero__text-box-2">frontend</h1>
       <h1 class="hero__text-box-2">developer</h1>
@@ -46,165 +48,160 @@
 
   <!-- ************* INTRO SECTION ************** -->
   <main>
-    <section class="intro-container" aria-label="Introduction section">
-      <div class="intro-container__text">
-        <p>
-          <span class="line" aria-hidden="true"></span>
-          <span class="dot" aria-hidden="true"></span>
-          Hello! I am a frontend developer currently enrolled in a 24 week remote frontend bootcamp at Technigo in
-          Stockholm.
-        </p>
-        <p>
-          I decided to completely change career and become a full time developer,
-          bringing my
-          +10 years experience from business management, operations management as well as project leader and marketing
-          into my new future role.
-        </p>
-      </div>
-    </section>
-
-    <!-- TECH -->
-    <section class="tech-container" aria-label="Section about my skills and what tools I work with">
-      <div>
-        <div class="title-background-container">
-          <h1><span class="title-background">Tech</span></h1>
+    <div id="content">
+      <section class="intro-container">
+        <div class="intro-container__text">
+          <p>
+            <span class="line" aria-hidden="true"></span>
+            <span class="dot" aria-hidden="true"></span>
+            Hello! I am a frontend developer currently enrolled in a 24 week remote frontend bootcamp at Technigo in
+            Stockholm.
+          </p>
+          <p>
+            I decided to completely change career and become a full time developer,
+            bringing my
+            +10 years experience from business management, operations management as well as project leader and marketing
+            into my new future role.
+          </p>
         </div>
-      </div>
-      <p> HTML, CSS, Flexbox, Grid, JavaScript, ES6, JSX, Node.js, Web Accessibly, API:s,
-        mob-programming, pair-programming, Github.</p>
-    </section>
+      </section>
 
-    <!-- ************PORTFOLIO SECTION ************** -->
-    <!-- PROJECTS -->
-    <section class="portfolio">
-      <div class="portfolio__container">
-        <div class="title-background-container">
-          <h1 class="title-background">featured projects</h1>
+      <!-- TECH -->
+      <section class="tech-container">
+        <div>
+          <div class="title-background-container">
+            <h1><span class="title-background">Tech</span></h1>
+          </div>
         </div>
+        <p> HTML, CSS, Flexbox, Grid, JavaScript, ES6, JSX, Node.js, Web Accessibly, API:s,
+          mob-programming, pair-programming, Github.</p>
+      </section>
 
-        <article class="portfolio__article-card">
-          <a href="https://github.com/IdaAspen/project-weather-app" tabindex="0" target="_blank" rel="noreferrer">
-            <div class="portfolio__image">
-              <div class="portfolio__image-overlay" aria-hidden="true">
-                <p class="upper-case">weather app</p>
+      <!-- ************PORTFOLIO SECTION ************** -->
+      <!-- PROJECTS -->
+      <section class="portfolio">
+        <div class="portfolio__container">
+          <div class="title-background-container">
+            <h1 class="title-background">featured projects</h1>
+          </div>
+
+          <article class="portfolio__article-card">
+            <a href="https://github.com/IdaAspen/project-weather-app" tabindex="0" target="_blank" rel="noreferrer">
+              <div class="portfolio__image">
+                <div class="portfolio__image-overlay" aria-hidden="true">
+                  <p class="upper-case">weather app</p>
+                </div>
+                <img src="./assets/projects-weather.jpg" alt="weather app project">
               </div>
-              <img src="./assets/projects-weather.jpg" alt="weather app project">
-            </div>
-            <h2>Weather app built with API:s</h2>
-            <p>Responsive web app built using HTML, CSS, JavaScript ES6, API:s to get the current weather.</p>
-          </a>
-          <div class="tag-wrapper">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JavaScript ES6</p>
-            <p>API:s</p>
-          </div>
-        </article>
-
-        <article class="portfolio__article-card">
-          <a href="https://github.com/IdaAspen/project-guess-who" tabindex="0" role="button" aria-pressed="false"
-            aria-label="guess who repository" target="_blank" rel="noreferrer">
-            <div class="portfolio__image">
-              <div class="portfolio__image-overlay" aria-hidden="true">
-                <p class="upper-case">guess who?</p>
-              </div>
-              <img src="./assets/projects-guess.jpg" alt="guess who project">
-            </div>
-            <h2>Game built in JavaScript</h2>
-            <p>Classic board game 'Guess Who?' built with HTML, CSS, JavaScript ES6. </p>
-          </a>
-          <div class="tag-wrapper">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JavaScript ES6</p>
-          </div>
-        </article>
-
-        <!-- PROJECTS FOR DESKTOP -->
-        <article class="portfolio__article-card desktop">
-          <a href="https://github.com/IdaAspen/project-chatbot" tabindex="0" role="button" aria-pressed="false"
-            aria-label="chatbot repository" target="_blank" rel="noreferrer">
-            <div class="portfolio__image">
-              <div class="portfolio__image-overlay" aria-hidden="true">
-                <p class="upper-case">chat bot</p>
-              </div>
-              <img src="./assets/projects-chatbot.jpg" alt="chat bot project">
-            </div>
-            <h2>Chatbot built with JavaScript</h2>
-            <p>Responsive web site built using HTML, CSS, JavaScript ES6 for customer service.</p>
-          </a>
-          <div class="tag-wrapper">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JavaScript ES6</p>
-          </div>
-        </article>
-
-        <article class="portfolio__article-card desktop">
-          <a href="https://github.com/IdaAspen/project-github-tracker" tabindex="0" role="button" aria-pressed="false"
-            aria-label="github repository" target="_blank" rel="noreferrer">
-            <div class="portfolio__image">
-              <div class="portfolio__image-overlay" aria-hidden="true">
-                <p class="upper-case">github tracker</p>
-              </div>
-              <img src="./assets/projects-github.jpg" alt="github tracker project">
-            </div>
-            <h2>GitHub tracker built with API:s</h2>
-            <p>Responsive web site built using HTML, CSS, JavaScript ES6, API:s to fetch data from GitHub.</p>
-          </a>
-          <div class="tag-wrapper">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JavaScript ES6</p>
-            <p>API:s</p>
-          </div>
-        </article>
-
-        <!-- OTHER PROJECTS -->
-        <div class="title-background-container">
-          <h1 class="title-background-none">other projects</h1>
-        </div>
-        <article class="portfolio__article-card mobile">
-          <a href="https://github.com/IdaAspen/project-chatbot" tabindex="0" role="button" aria-pressed="false"
-            aria-label="chatbot repository" target="_blank" rel="noreferrer">
-            <h2>Chatbot built with JavaScript</h2>
-            <p>Responsive web site built using HTML, CSS, JavaScript ES6 for customer service.</p>
-          </a>
-          <div class="tag-wrapper">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JavaScript ES6</p>
-          </div>
-          </a>
-        </article>
-
-        <article class="portfolio__article-card mobile">
-          <a href="https://github.com/IdaAspen/project-github-tracker" tabindex="0" role="button" aria-pressed="false"
-            aria-label="github repository" target="_blank" rel="noreferrer">
-            <h2>GitHub tracker built with API:s</h2>
-            <p>Responsive web site built using HTML, CSS, JavaScript ES6, API:s to fetch data from GitHub.</p>
-          </a>
-          <div class="tag-wrapper">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JavaScript ES6</p>
-            <p>API:s</p>
-          </div>
-        </article>
-
-        <article class="portfolio__article-card">
-          <a href="https://github.com/IdaAspen/project-business-site" tabindex="0" role="button" aria-pressed="false"
-            aria-label="business site repository" target="_blank" rel="noreferrer">
-            <h2>Business site</h2>
-            <p>Responsive site built with HTML, CSS.</p>
+              <h2>Weather app built with API:s</h2>
+              <p>Responsive web app built using HTML, CSS, JavaScript ES6, API:s to get the current weather.</p>
+            </a>
             <div class="tag-wrapper">
               <p>HTML5</p>
               <p>CSS3</p>
+              <p>JavaScript ES6</p>
+              <p>API:s</p>
             </div>
-          </a>
-      </div>
-      </article>
-      </div>
+          </article>
+
+          <article class="portfolio__article-card">
+            <a href="https://github.com/IdaAspen/project-guess-who" tabindex="0" target="_blank" rel="noreferrer">
+              <div class="portfolio__image">
+                <div class="portfolio__image-overlay" aria-hidden="true">
+                  <p class="upper-case">guess who?</p>
+                </div>
+                <img src="./assets/projects-guess.jpg" alt="guess who project">
+              </div>
+              <h2>Game built in JavaScript</h2>
+              <p>Classic board game 'Guess Who?' built with HTML, CSS, JavaScript ES6. </p>
+            </a>
+            <div class="tag-wrapper">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>JavaScript ES6</p>
+            </div>
+          </article>
+
+          <!-- PROJECTS FOR DESKTOP -->
+          <article class="portfolio__article-card desktop">
+            <a href="https://github.com/IdaAspen/project-chatbot" tabindex="0" target="_blank" rel="noreferrer">
+              <div class="portfolio__image">
+                <div class="portfolio__image-overlay" aria-hidden="true">
+                  <p class="upper-case">chat bot</p>
+                </div>
+                <img src="./assets/projects-chatbot.jpg" alt="chat bot project">
+              </div>
+              <h2>Chatbot built with JavaScript</h2>
+              <p>Responsive web site built using HTML, CSS, JavaScript ES6 for customer service.</p>
+            </a>
+            <div class="tag-wrapper">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>JavaScript ES6</p>
+            </div>
+          </article>
+
+          <article class="portfolio__article-card desktop">
+            <a href="https://github.com/IdaAspen/project-github-tracker" tabindex="0" target="_blank" rel="noreferrer">
+              <div class="portfolio__image">
+                <div class="portfolio__image-overlay" aria-hidden="true">
+                  <p class="upper-case">github tracker</p>
+                </div>
+                <img src="./assets/projects-github.jpg" alt="github tracker project">
+              </div>
+              <h2>GitHub tracker built with API:s</h2>
+              <p>Responsive web site built using HTML, CSS, JavaScript ES6, API:s to fetch data from GitHub.</p>
+            </a>
+            <div class="tag-wrapper">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>JavaScript ES6</p>
+              <p>API:s</p>
+            </div>
+          </article>
+
+          <!-- OTHER PROJECTS -->
+          <div class="title-background-container">
+            <h1 class="title-background-none">other projects</h1>
+          </div>
+          <article class="portfolio__article-card mobile">
+            <a href="https://github.com/IdaAspen/project-chatbot" tabindex="0" target="_blank" rel="noreferrer">
+              <h2>Chatbot built with JavaScript</h2>
+              <p>Responsive web site built using HTML, CSS, JavaScript ES6 for customer service.</p>
+            </a>
+            <div class="tag-wrapper">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>JavaScript ES6</p>
+            </div>
+            </a>
+          </article>
+
+          <article class="portfolio__article-card mobile">
+            <a href="https://github.com/IdaAspen/project-github-tracker" tabindex="0" target="_blank" rel="noreferrer">
+              <h2>GitHub tracker built with API:s</h2>
+              <p>Responsive web site built using HTML, CSS, JavaScript ES6, API:s to fetch data from GitHub.</p>
+            </a>
+            <div class="tag-wrapper">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>JavaScript ES6</p>
+              <p>API:s</p>
+            </div>
+          </article>
+
+          <article class="portfolio__article-card">
+            <a href="https://github.com/IdaAspen/project-business-site" tabindex="0" target="_blank" rel="noreferrer">
+              <h2>Business site</h2>
+              <p>Responsive site built with HTML, CSS.</p>
+              <div class="tag-wrapper">
+                <p>HTML5</p>
+                <p>CSS3</p>
+              </div>
+            </a>
+        </div>
+        </article>
+    </div>
     </section>
 
     <!-- MY THOUGHTS -->
@@ -218,7 +215,7 @@
           <div class="portfolio__image">
             <img src="./assets/thoughts-1.jpg" alt="laptop on table">
           </div>
-          <a href="#" tabindex="0" role="button" aria-pressed="false" aria-label="#" target="_blank">
+          <a href="#" tabindex="0" role="button" aria-pressed="false" target="_blank">
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.<span class="teal-color"> >></span></p>
@@ -228,7 +225,7 @@
           <div class="mythoughts__image">
             <img src="./assets/thoughts-2.jpg" alt="conference call on laptop screen">
           </div>
-          <a href="#" tabindex="0" role="button" aria-pressed="false" aria-label="#" target="_blank">
+          <a href="#" tabindex="0" role="button" aria-pressed="false" target="_blank">
             <h2>How to succeed working remote</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.<span class="teal-color"> >></span></p>
@@ -320,17 +317,19 @@
         </div>
       </div>
     </section>
-
-    <!-- *************** FOOTER ***************** -->
-    <footer>
-      <div class="footer__container">
-        <h2 class="footer__title">contact</h2>
-        <p>Ida Aspen</p>
-        <p><a href="tel:+46736225032">+46 (0)736 225 032</a></p>
-        <a href="mailto:ida.aspen@outlook.com">ida.aspen@outlook.com</a>
-      </div>
-    </footer>
+    </div>
   </main>
+
+  <!-- *************** FOOTER ***************** -->
+  <footer>
+    <div class="footer__container">
+      <h2 class="footer__title">contact</h2>
+      <p>Ida Aspen</p>
+      <p><a href="tel:+46736225032">+46 (0)736 225 032</a></p>
+      <a href="mailto:ida.aspen@outlook.com">ida.aspen@outlook.com</a>
+    </div>
+  </footer>
+
 
 
 </body>
