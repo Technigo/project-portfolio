@@ -63,7 +63,7 @@ section {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 40px;
+    line-height: 55px;
     color: #FFFFFF;
 }
 
@@ -89,10 +89,22 @@ section {
     width: 50px;
     text-align: center;
     line-height: 45px!important;
+    transition: background-color .4s;
 }
 
-.circle-icon:hover {
-    color: #D5BFBF;
+.header-icons .circle-icon:hover {
+    background-color: #D5BFBF;
+    color: #FFF;
+}
+
+.header-icons a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-icons a:visited {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* Round profile-image */
@@ -212,6 +224,8 @@ h2.heading.solidblue {
     color: #316B83;
 }
 
+/* Project section */
+
 .project-card {
     grid-column: span 12;
     padding: 10px 0px 0px 0px;
@@ -231,6 +245,7 @@ h2.heading.solidblue {
     height: 100%;
     width: 100%;
     opacity: 0.6;
+    margin-bottom: -5px;
 }
 
 .projectcard-img-header {
@@ -265,6 +280,13 @@ a {
     color: #316B83;
 }
 
+a.montserrat {
+    text-decoration: none;
+    color: #316B83;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 .tag-wrapper {
     padding-bottom: 5px;
     padding-top: 5px;
@@ -278,11 +300,31 @@ a {
     text-decoration: none;
     letter-spacing: 0.01em;
     text-align: center;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 11px;
     padding: 4px;
-    margin: 3px;
+    margin: 2px;
 }
+
+.tag-github.tag-github {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    font-size: 10px;
+    line-height: 11px;
+    padding: 4px;
+}
+
+.arrow-other-prj {
+    border: solid #316B83;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
 
 .skills {
     grid-column: span 6;
@@ -316,23 +358,51 @@ h4.heading-thoughts {
     grid-column: inherit;
 }
 
-.formore-circle {
+.formore-icons {
     padding: 10px;
     color: white;
+    border-style: solid 2px;
+    font-size: 28px;
 }
 
-.formore-circle:hover {
-    color: #D5BFBF;
+.formore-icons .circle-icon:hover {
+    background-color: #D5BFBF;
+    color: #FFF;
+}
+
+.formore-icons a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.formore-icons a:visited {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .section.section-contact {
-    background-color: #D5BFBF;
+    background-color: #8CA1A5;
     padding-bottom: 55px;
 }
 
 .section-contact p {
     color: #fff;
     line-height: 5px;
+}
+
+a.section-contact p {
+    color: #fff;
+    line-height: 5px;
+}
+
+a.mail {
+    color: #fff;
+    line-height: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading.headingwhite.contact {
+    color: #8CA1A5;
 }
 
 .hidden-mobile {
@@ -377,6 +447,10 @@ h4.heading-thoughts {
     .summary-section {
         padding: 70px 100px 70px 100px;
     }
+    .summary-section p {
+        padding-top: 35px;
+        font-size: 20px;
+    }
     .section.centered p {
         padding: 0px 100px 30px 100px;
     }
@@ -393,18 +467,14 @@ h4.heading-thoughts {
     .featured-projects-section {
         margin-right: 10%;
         margin-left: 10%;
-        display: grid;
-        grid-row: 2;
     }
     .project-card tablet and mobile {
         grid-row: 3;
     }
-    
     .skills {
         grid-column: span 3;
         padding-bottom: 20px;
     }
-
     .section.section-contact p {
         line-height: 2px;
         padding-bottom: 0px;
@@ -417,16 +487,65 @@ h4.heading-thoughts {
     .headings-info {
         grid-row: 4;
     }
+
     .heading-1 {
         font-size: 28px;
-        line-height: 37px;
+        line-height: 40px;
     }
+
     .heading-2 {
         font-size: 82px;
         line-height: 100px;
+    }
+
+    .heading-2.tight {
+        line-height: 55px;
+
     }
     .heading-3 {
         font-size: 50px;
         line-height: 78px;
     }
+
+    .heading-h2 {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .section.pad-tablet {
+        padding-top: 45px;
+    }
+
+    .summary-section {
+        padding: 60px 180px 60px 180px;
+        font-size: 20px;
+    }
+    
+    .section.centered p {
+        padding: 10px 180px 10px 180px;
+        font-size: 20px;
+    }
+    .project-card.desktop {
+        grid-column: span 8;
+        grid-row: 3
+    }
+    .skills {
+        padding-top: 20px;
+    }
+
+    .section.section-contact p {
+        line-height: 1px;
+        padding-bottom: 0px;
+    }
+
+    .section.pad-tablet {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .featured-projects-section {
+        margin-left: 10%;
+    }
+
 }
+
