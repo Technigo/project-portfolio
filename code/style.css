@@ -2,7 +2,7 @@
 
 :root {
   --prim: #f6f6f6;
-  --sek: #e36119;
+  --sek: #db633e;
 
 }
 
@@ -40,6 +40,7 @@ h3 {
   text-transform: uppercase;
   width: fit-content;
   height: 27px;
+  border-radius: 2px;
   padding: 0 3px;
   margin-bottom: 30px;
   text-align: center;
@@ -113,10 +114,27 @@ header {
   width:fit-content
 }
 
-.some-header {
-  width: 40px;
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid white 2px;
+  border-radius: 50%;
   height: 40px;
-  fill: white;
+  width: 40px;
+  font-size: 24px;
+  color: white;
+  margin-left: 5px;
+  transition: background-color .4s;
+}
+
+.icon-circle:hover {
+  color:var(--sek);
+  background-color: white;
+}
+
+.social-media-links a {
+  text-decoration: none;
 }
 
 .headline {
@@ -181,22 +199,12 @@ header {
 }  
 
 .tech-section p {
-  /* position: relative;  */
   text-align: center;
 }
 
 /* PROJECT-SECTION */
 
-
-/* .featured-projects-container {
-  display: ;                      IS only needed with grid for bigger screen size
-} */
-
-
-
 .projects {
-  /* display: flex;
-  flex-direction: column */   /* Braucht man gar keine flexbox?! Anscheinend nicht. Margin funktioniert auch nicht mit flex. */
   margin-bottom: 30px;
 }  
 
@@ -206,25 +214,50 @@ header {
 
 .projects a {
   text-decoration: none;
+  text-align: start;
 }
 
 .image-container {
 	position: relative;
+  display: grid;
+  margin-bottom: 20px;
+}
+
+.image-container:hover h4 {
+  display: none;
 }
 
 .overlay {
 	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(156, 166, 197, 0.5);
+	width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.6);
+  transition: 0.5s ease;
+  border-radius: 2px;
+}
+
+.overlay:hover {
+  background-color: transparent;
 }
 
 
-.image {
+.projects-image {
 	width: 100%;
-	display: block;
+  height: 200px;
+  transition: 0.5s ease;
+  object-fit: cover;
+}
+
+
+
+.project-image-title {
+  position: absolute;
+  place-self: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 34px;
 }
 
 .project-section p {
@@ -239,12 +272,13 @@ header {
 }
 
 .project-section span {
-  background-color:#e3be19;
+  background-color:#FFBB48;
   font-style: normal;
   font-weight: normal;
   font-size: 9px;
   line-height: 11px;
-  letter-spacing: 0.01em;  
+  letter-spacing: 0.01em; 
+  border-radius: 2px; 
   width: fit-content;
   padding: 5px;
   margin-right: 3px;
@@ -261,7 +295,8 @@ header {
 
 .thoughts-img {
   order: -1;
-  width: 100%
+  width: 100%;
+  border-radius: 2px;
 }
 
 .date {
@@ -305,6 +340,7 @@ header {
 .skills-container article {
   text-align: center;
   width: 50%;
+  margin-bottom: 20px;
 }
 
 .skills-container ul {
@@ -329,29 +365,34 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: yellowgreen;
-  padding-right: 10px;
   width: 280px;
 }  
 
-/* .more-some-first2 {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-} */
 
 .more-some-flexdiv {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  background-color: pink;
 }
 
-.some-more {
-  width: 60px;
+.icon-circle-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid var(--sek) 2px;
+  border-radius: 50%;
+  color: var(--sek);
+  font-size: 32px;
   height: 60px;
-  fill: var(--sek);
+  width: 60px;
+  margin-bottom: 10px;
+  transition: background-color .4s;
+}
+
+.icon-circle-more:hover {
+  color: white;
+  background-color: var(--sek);
 }
 
 .more-section p {
@@ -368,7 +409,7 @@ header {
 footer {
   padding: 80px 0;
   text-align: center;
-  background-color: #e3be19;  
+  background-color: #98a596;  
 } 
   
 footer h3 {
