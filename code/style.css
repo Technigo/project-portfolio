@@ -11,7 +11,7 @@ body {
 }
 
 
-.xxx:nth-child(2n) {
+section:nth-child(2n-1) {
 	background-color: #f4f4f4;
 }
 
@@ -52,7 +52,6 @@ body {
     background-size: cover;
     width: 100%;
     height: 500px;
-    /* font-family: 'Roboto', sans-serif; */
     color: #FFFFFF;
     border-bottom: 3px solid white;
   
@@ -64,12 +63,10 @@ body {
     position: absolute;
     top: 48px;
     right: 40px;
-    /* width: 130.5px;
-    height: 50px; */
    
 }
 .linkedin-icon:hover, .github-icon:hover, .sof-icon:hover {
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .linkedin-icon, .github-icon, .sof-icon {
@@ -118,11 +115,9 @@ body {
 
 /* -------- SUMMARY SECTION --------*/
 
-.summary-section {
-   
-    /* height: 324px;  */
-    background: #F4F4F4;
-}
+/* .summary-section {
+    background: #F4F4F4; */
+
 
 .summary-text {
     font-weight: 400;
@@ -133,7 +128,6 @@ body {
     padding: 60px 0px 30px;
   
 }
-
 
 
 
@@ -162,7 +156,6 @@ body {
 /* -------- FEATU#FF4C29 PROJECTS SECTION --------*/
 
 .projects-section {
-    background: #F4F4F4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,7 +180,7 @@ body {
  .project-img {
     display: block;
     width: 100%;
-    /* transition: 0.5s ease;  */
+    transition: 0.5s ease; 
     object-fit: cover;
   }
  
@@ -198,7 +191,7 @@ body {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(156, 166, 197, 0.6);
+	background: rgba(0, 0, 0, 0.6);
     transition: 0.5s ease;
 }
 
@@ -294,7 +287,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F4F4F4;
 
 }
 
@@ -303,16 +295,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 464px;   */
-}
-
-
-.skills-section p {
-    margin: 24px;
-    font-size: 17px;
-    line-height: 29px;
-    text-align: center;
-    color: #000000; 
+    
 }
 
 .skills-display {
@@ -324,6 +307,8 @@ body {
 
 .skills-text {
 padding: 0 20px;
+font-size: 18px;
+line-height: 20px;
 }
 ul {
     list-style: none;
@@ -332,13 +317,12 @@ ul {
 
 li {
     list-style: none;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* -------- FOR MORE & CONTACT SECTION --------*/
 
 .for-more-section {
-    background-color: #F4F4F4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -352,10 +336,13 @@ li {
    
 }
 .linkedin-icon-fm:hover, .github-icon-fm:hover, .sof-icon-fm:hover {
-    opacity: 0.5;
+    filter: invert(13%) sepia(46%) saturate(1912%) hue-rotate(336deg) brightness(103%) contrast(102%);
+    /* to change the color when hover over */
 }
 
 .linkedin-icon-fm, .github-icon-fm, .sof-icon-fm {
+    filter: invert(85%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
+    /* this filter changes the svg icons color */
     width: 60px;
     height: 60px;
     padding: 15px 15px 0 15px;
@@ -368,8 +355,9 @@ li {
     color: #151515;
 }
 
-
-
+.fore-more-icons-container a:hover {
+    color: #fdd227;  
+}
 
 /* -------- FOOTER SECTION --------*/
 
@@ -490,9 +478,9 @@ font-weight: lighter;
         width: 100px;
         height: 100px;
         padding: 20px 20px 0 20px;
-        filter: invert(85%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
-        /* this filter changes the svg icons color */
       } 
+
+
     
     .fore-more-icons-container a { 
         font-size: 16px;
