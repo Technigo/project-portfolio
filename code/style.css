@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/* :root {
+    --prim: 
+    --sec:
+} */
+
 
 /* header section (hero background) */
 
@@ -27,14 +32,14 @@
 }
 
 .icon-img {
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 50px;
+    height: 50px;
     padding: 5px;
 }
 
 .icon-img:hover {
-    width: 3.438rem;
-    height: 3.438rem;
+    width: 55px;
+    height: 55px;
 }
 
 
@@ -51,7 +56,7 @@
     color: #fff;
 }
 
-.my-name {
+.name {
     font-size: 1.063rem;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
@@ -68,22 +73,24 @@
 .additional-skill {
     font-size: 1.25rem;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.04em;
 }
 
 /* header profile picture */
 .profile-picture {
     position: absolute;
-    right: 30px;
-    bottom: 20px;
-    width: 170px;
-    height: 170px;
+    left: 50%;
+    bottom: -15px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     border: 2px solid whitesmoke;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .profile-picture > img {
-    width: 100%;
+    width: 110%;
   }
 
 /* Summary section */
@@ -97,7 +104,8 @@
 }
 
 .line {
-    border: 1.5px solid #fa382f;
+    border: 1px solid #fa382f;
+    background-color: #fa382f;
     width: 35px;
     display: inline-block;
     margin-bottom: 4px;
@@ -143,10 +151,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 /* Tech section */
 .tech {
     width: 320px;
     margin: 0 auto 50px auto;
+}
+
+.highlight {
+    color: #fa382f;
 }
 
 /* Project section */
@@ -205,7 +219,22 @@
     margin: 0 auto;
 }
 
-.article-box {
+.featured-thoughts {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.thought-img1 {
+    width: 98%;
+    height: auto;
+}
+
+.thought-img2 {
+    width: 100%;
+    height: auto;
+}
+
+.article-box-thought1 {
     margin: 30px auto;
     font-family: 'Roboto', sans-serif;
 }
@@ -225,7 +254,7 @@
 /* Skills section */
 .skills {
     width: 320px;
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
     
 }
 
@@ -328,13 +357,58 @@ a:visited {
 
 
 /* mobile */
-@media (min-width: 320px-667px) {
+@media (min-width: 320px) and (max-width: 667px) {
+    .article-box-thought2 {
+        display: none;
+    }
 
+    .featured-thoughts {
+        margin-bottom: 40px;
+    }
 }
 
 
 /* tablet */
-@media (min-width: 668px-1023px) {
+@media (min-width: 668px) and (max-width: 1023px) {
+   
+    .profile-picture {
+        position: absolute;
+        left: 70%;
+        bottom: -15px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .summary {
+        background-color: #f4f4f4;
+        width: 100%;
+        padding: 60px 100px 60px 100px;
+        margin-top: -10px;
+    }
+
+    .projects {
+        background-color: #f4f4f4;
+        width: 100%;
+        padding: 60px 100px 60px 100px;
+    }
+
+    .article-box-thought2 {
+        display: none;
+    }
+
+    .skills {
+        background-color: #f4f4f4;
+        width: 100%;
+        padding: 50px 100px 1px 100px;
+        margin-bottom: 30px;
+    }
+
+    .for-more {
+        width: 320px;
+        margin: 50px auto 0 auto;
+    }
+
+
 
 }
 
@@ -343,15 +417,30 @@ a:visited {
 @media (min-width: 1024px) {
     
     .profile-picture {
-        right: 220px;
-        bottom: 80px;
-        width: 180px;
-        height: 180px;
-        
+        position: absolute;
+        left: 70%;
+        bottom: -15px;
+        width: 280px;
+        height: 280px;
     }
 
+    .icon-img {
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+    }
+    
+    .icon-img:hover {
+        width: 65px;
+        height: 65px;
+    }
+
+    
     .summary {
-        width: 800px;
+        background-color: #f4f4f4;
+        width: 100%;
+        padding: 60px 150px 60px 150px;
+        margin-top: -10px;
     }
 
     .tech {
@@ -360,7 +449,9 @@ a:visited {
     }
 
     .projects {
-        width: 800px;
+        background-color: #f4f4f4;
+        width: 100%;
+        padding: 60px 150px 60px 150px;
     }
 
     .featured-projects {
@@ -370,8 +461,8 @@ a:visited {
     }
 
     .my-thoughts {
-        width: 800px;
-        
+        width: 100%;
+        padding: 60px 150px 60px 150px;
     }
 
     .featured-thoughts {
@@ -380,24 +471,57 @@ a:visited {
         column-gap: 20px;
     }
 
+    .article-box-thought2 {
+        margin: 30px auto;
+        font-family: 'Roboto', sans-serif;
+    }
+
     .thought-img {
         width: 100%;
         height: auto;
     }
 
     .skills {
-        width: 560px;
-        margin: 0 auto;
-        
+        background-color: #f4f4f4;
+        width: 100%;
+        padding: 50px 100px 1px 100px;
+        margin-bottom: 30px;
     }
     
     .skills-container {
-        margin: 30px auto 40px auto;
+        width: 560px;
+        margin: 50px auto 40px auto;
         display: grid;
         grid-template-columns: 2fr 2fr;
         column-gap: 50px;
     }
 
+    .for-more {
+        width: 320px;
+        margin: 50px auto 0 auto;
+    }
+
 }
 
 
+/* wide desktops */
+@media (min-width: 1280px) {
+    .profile-picture {
+        position: absolute;
+        left: 70%;
+        bottom: -15px;
+        width: 280px;
+        height: 280px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .profile-picture {
+        position: absolute;
+        left: 70%;
+        bottom: -15px;
+        width: 280px;
+        height: 280px;
+    }
+}
