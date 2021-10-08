@@ -1,12 +1,16 @@
+* {
+    box-sizing: border-box;
+  }
+
 body{
-    background-color:white;
     margin: 0px;
-    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
     text-decoration: none;
 }
+
 .top{
     width: 100%;
     height: 520px;
@@ -15,58 +19,94 @@ a{
     background-image: url("./images/header-image.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
-.top_icons{
+.top_container{
     position: absolute;
-    width: 130.5px;
-    height: 40px;
-    left: 220px;
-    top: 48px;
-    display: inline-flex;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+   height: 520px;
+    border: 2px solid tomato;
+    display: flex;
 }
+
 
 .icon {
     width: 40px;
     height: 40px;
+    margin: 0px 3px;
 }
-
 
 .top_text{
     position: absolute;
-    width: 220px;
-    height: 202px;
-    left: 24px;
-    top: 121px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+    max-width: 100%;
+    height: auto;
+    top: 26%;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    font-size: 50%;
+
 }
+.top_text_portfolio, .top_text_my_name{
+     font-weight: 100;
+}
+ 
+.top_text_my_name{  margin:0;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top_text_career{
+font-size: 2rem;
+margin: 3px;
+margin: 25px 0px;
+}
+
+.top_text_background{
+margin: 0px;
+}
+
+.top_icons{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    display: inline-flex;
+}
+
 
 .top_profile{
     position: absolute;
     width: 180px;
     height: 180px;
-    left: 171px;
-    top: 356px;
+    right: 0;
+    bottom: 1%;
     background-image: url("./images/profile.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
     border: 2px solid white;
     border-radius: 50%;
+    z-index: 3;
 }
 
 /* main content body */
-.main_content{
+.main_container{
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: -webkit-center;
-    font-family: Roboto;
-    font-weight: bold; /*No esta aplicado*/
+    max-width: 80%;
+    margin: 0px auto;
+    border: 5px solid blue;
+    /* font-family: Roboto; */
+    /* font-weight: bold; No esta aplicado */
 }
 
 .summary{
@@ -83,7 +123,14 @@ a{
 }
 
 .summary_text{
-    margin: 15% 10%;
+    margin: 20% 0%;
+}
+
+.summary_text, .tech_text{
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .summary_icon{
@@ -94,6 +141,7 @@ a{
 .section_header_container{
     display: flex;
 	justify-content: center;
+    margin: 1rem 0rem;
 }
 
 .red {
@@ -109,19 +157,20 @@ a{
     font-family: Roboto;
     font-weight: bold; /*No esta aplicado*/
     text-transform: uppercase;
+    margin-top: 4rem;
 }
-
+/* 
 .tech{
     height: auto;
     width: 100%;
-}
+} */
 
-.tech_text{
+/* .tech_text{
     margin: 10% 10%;
-}
+} */
 
 .image_container{
-    max-width: 525px;
+    max-width: 327px;
     position: relative;
 }
 
@@ -161,25 +210,30 @@ a{
 
 
 .container_projects, .container_otherProjects{
-    width: 320;
-    /* margin: 0 auto; */
-    margin: 24px;
-    max-width: 350px;
+    max-width: 327px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    /* max-width: 350px; */
 }
 
 .project_description_container, .otherProjects_description_container{
     text-align: left;
 }
 
+.project_description{
+    margin: 10px 0px;
+}
 
 .featured-projects-body{
-    background-color: violet;
+    /* background-color: violet; */
     /* max-width: 305px; */
 } 
 
 .project_heading{
      color: #FA382F;
      text-transform: uppercase;
+     margin-top: 2.2rem;
+         margin-bottom: auto;
 }
 
 .project_tag{
@@ -228,8 +282,13 @@ a{
 
 .social-media{
     background-color: #FFFFFF;
-    width: 100%;
-    padding: 20px 0px;
+    /* width: 100%; */
+    /* padding: 20px 0px; */
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bottom_icons_container{
@@ -240,24 +299,26 @@ a{
 .bottom_icons{
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .bottom_text{
     color: #FA382F;
     font-size: 11px;
+    font-weight: 700;
 }
 
 .footer{
-    position: absolute;
-    font-family: Roboto;
+    /* position: absolute; */
+    /* font-family: Roboto; */
     width: 100%;
-    height: 250px;
-    left: 0px;
+    /* height: 250px; */
+    /* left: 0px; */
     text-align: -webkit-center; 
     background: #072BCE;
     color:#FFFFFF;
-    padding: 15% 0%;
+    padding: 6% 0%;
+    /* max-height: 370px; */
 }
 
 
@@ -266,11 +327,36 @@ a{
 }
 
 @media (min-width: 768px){
-.container_projects {
+.top_container{
+    /* left: 20%;
+    right: 20%; */
+      max-width: 768px; 
+      margin: 0 auto;
+}
+
+.main_container{
+     /* max-width: 60%;  */
+    max-width: 768px; 
+    
+}
+
+.top_text{
+    font-size: 100%;
+}
+
+
+
+
+.top_text_background {
+    margin: 15px 0px;
+
+}
+
+/* .container_projects {
     align-self: stretch;
     max-width: 523px; 
     justify-self: center;
-}
+} */
 
 .tablet{
     display: block;
@@ -280,53 +366,74 @@ a{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%; 
-    column-gap: 20px;
-    row-gap: 15px;
-    margin: auto 50px;
+    /* column-gap: 10px; */
+    /* row-gap: 15px; */
+    /* margin: auto 50px; */
     max-width: 1024px;
  
 }
 
 .top_text{
-
-   width: 350px;
-      /*height: 240px; */
-    left: 20%;
-    top: 140px;
-    font-size: 18px;
+    /* left: 10%; */
+   /* width: 350px; */
+    /* left: 20%; */
+    /* top: 140px; */
+    /* font-size: 18px; */
   
 }
 .top_icons{
-    left: 55%;
+    /* left: 55%; */
 }
-
 
 .icon{
     width: 60px;
     height: 60px;
+    margin: 5px;
 }
 
-.top_profile{
+/* .top_profile{
     left: 60%;
     top: 378px;
+} */
+
+.more{
+    display: block;
 }
 }
 
 @media (min-width: 1024px){
-.summary{
-    font-size: 2rem;
+.top_container{
+    /* left: 25%;
+    right: 25%; */
+    max-width: 1024px; 
+    width: 80%;
+}
+.main_container{
+     /* max-width: 60%;  */
+    max-width: 1024px; 
+  width: 80%;
+    
 }
 
+.top_text{
+     font-size: 1.5rem;
+}
+
+
 .top_icons{
-    left: 60%;
-    top: 48px;
-    display: inline-flex;
+    /* left: 60%; */
+    /* top: 48px; */
+    /* display: inline-flex; */
     gap: 20px;
 }
 
-
+.top_text{
+    /* left: 25%; */
+}
 .icon{
     width: 80px;
     height: 80px;
 }
+
+
 }
