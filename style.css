@@ -15,6 +15,7 @@ h1 {
   color: whitesmoke;
   background-color: #591d77;
   width: fit-content;
+  width: -moz-fit-content;
   margin: auto;
   padding: 2px;
   text-transform: uppercase;
@@ -61,11 +62,13 @@ a:visited {
 
 .icon-box {
   position: absolute;
-  height: 202px;
-  width: 220px;
+  height: 40px;
+  width: 130px;
   padding: 5px;
   margin-left: 220px;
   margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .text-header {
@@ -83,7 +86,7 @@ a:visited {
 }
 
 .paragraph-header {
-  color: whitesmoke;
+  color: black;
   margin: 0 0 20px 0;
 }
 
@@ -205,12 +208,12 @@ a:visited {
 .for-more {
   width: 60px;
   height: 60px;
-  border: 1px solid #7827a0;
+  border: 3px solid #7827a0;
   border-radius: 50px;
 }
 
 .for-more svg {
-  width: 30px;
+  width: 35px;
   margin: auto;
 }
 
@@ -280,10 +283,12 @@ a:visited {
     height: 680px;
   }
 
+  .icon-box {
+    right: 40px;
+  }
+
   .text-header {
     width: 607px;
-    /* height: 600px; */
-
     left: 340px;
   }
 
@@ -321,5 +326,18 @@ a:visited {
 
   .tags {
     font-size: 16px;
+  }
+
+  a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+
+  .profile-image img {
+    border: 5px solid whitesmoke;
+  }
+
+  .for-more:hover {
+    border: 7px solid #7827a0;
   }
 }
