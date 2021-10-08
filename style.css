@@ -10,6 +10,7 @@
 
 a{
    text-decoration: none; 
+   color: black;
 }
 a:hover{
     text-decoration: underline
@@ -66,6 +67,7 @@ p{
 .header{
     background-image: url(./img/cold-dip.png);
     background-size: cover;
+    background-position: center;
     position: relative;
     height: 520px;
 }
@@ -124,16 +126,13 @@ p{
 
 .profile-img{
     width: 175px;
-    height: 175px;
-    border-radius: 100%;
-    border: 2px solid white
-}
-
-.profile-img-container img{
+    border-radius: 50%;
+    border: 3px solid white;
     position: absolute;
     right: 10px;
     bottom: -220px;
 }
+
 
 /* -------------MAIN----------------------------- */
 .main{
@@ -154,6 +153,14 @@ p{
     text-transform: uppercase;
     padding: 0 3px;
 }
+
+
+.heading-container {
+	display: flex;
+	justify-content: center;
+}
+
+
 
 /* ------------sect 1 intro------------------ */
 
@@ -207,6 +214,7 @@ p{
 .featured-project {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding-bottom: 20px;
 }
 
@@ -246,6 +254,9 @@ p{
 .img-projects{
     width: 100%;
     transition: 0.5s ease;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: top;
 }
 
 .img-projects:hover{
@@ -266,7 +277,6 @@ p{
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
-    line-height: 41px;
     margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -302,12 +312,23 @@ p{
 /* ------------sec 4 my thoughts-------------- */
 .my-thougths{
     padding: 45px 0;
+    background-color: white;
 }
 
 .more-thoughts-card{
     display: flex;
     flex-direction: column;
 }
+
+.img-blog{
+    width: 100%;
+    transition: 0.5s ease;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: top;
+
+}
+
 
 .date{
     font-family: roboto;
@@ -327,8 +348,7 @@ p{
     line-height: 30px;
     margin-block-start: 0;
     margin-block-end: 0;
-   
-    
+
 }
 
 .arrow{
@@ -418,7 +438,7 @@ footer{
 }
 
 .featured-project {
-    padding: 0 5px;
+    padding: 0 10px;
 }
 /* section 4 more thoughts tablet*/
 .more-thoughts-grid{
@@ -443,8 +463,8 @@ footer{
 @media (min-width: 900px){
 
 .container{
-    width: 900px;
-    /* max-width: 1100px; */
+    
+    max-width: 1100px;
     margin: 0 auto;
 }
 
