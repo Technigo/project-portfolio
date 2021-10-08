@@ -64,12 +64,13 @@ h4 {
   font-weight: 600;
 }
 
-h5 {
+h4 {
   font-size: 17px;
   line-height: 29px;
   text-transform: uppercase;
   font-weight: 600;
   margin: 0;
+  margin-top: 5px;
 }
 
 p {
@@ -200,8 +201,8 @@ font-weight: 500;
 .my-thoughts,
 .skills-container,
 .for-more  {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .tech-container {
@@ -225,12 +226,12 @@ font-weight: 500;
 }
 
 .other-projects,
-.main-projects h5,
+.main-projects h4,
 .main-projects p,
-.extra-projects h5,
+.extra-projects h4,
 .extra-projects p,
-.text-container p,
-.text-container h4,
+.thoughts-container p,
+.thoughts-container h4,
 .skill-set,
 .intro-text p,
 .tech-container p {
@@ -245,6 +246,10 @@ font-weight: 500;
 	bottom: 0;
 	left: 0;
 	background: rgba(156, 166, 197, 0.5);
+  text-align: center;
+}
+.project-overlay:hover {
+  background-color: transparent;
 }
 
 .project-wrapper {
@@ -255,6 +260,7 @@ font-weight: 500;
 .project-img {
   width: 100%;
   margin: 0;
+  display: block;
 }
 
 .code-tags span,
@@ -279,11 +285,15 @@ font-weight: 500;
   color: #c62a88;
 }
 
-.text-container {
+.thoughts-container {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-bottom: 20px ;
+}
+
+.thoughts-wrapper:last-of-type(2) {
+  display: none;
 }
 
 /*Lists with different skills*/
@@ -354,6 +364,8 @@ ul {
   }
 }
 
+/*Desktop view*/
+
 @media (min-width:680px) and (max-width:979px) {
   .container {
     width: 650px;
@@ -367,6 +379,10 @@ ul {
 
   .subtitle {
     font-size: 30px;
+  }
+
+  .header-text {
+    margin-left: 30px;
   }
 
   .header-text h5 {
@@ -383,11 +399,6 @@ ul {
   }
   
   h4 {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  
-  h5 {
     font-size: 18px;
     line-height: 29px;
   }
@@ -418,6 +429,14 @@ ul {
     font-size: 40px;
 }
 
+.skill-more {
+  display: initial;
+}
+
+#guess-who {
+  display: none;
+}
+
 }
 
 @media (min-width:980px) and (max-width:1279px) {
@@ -429,6 +448,10 @@ ul {
     width: 310px;
     right: 20px;
     top: 190px;
+  }
+
+  .header-text {
+    margin-left: 35px;
   }
 
   .subtitle {
@@ -448,10 +471,6 @@ ul {
     font-size: 30px;
   }
   
-  h4 {
-    font-size: 16px;
-    line-height: 20px;
-  }
   
   h5 {
     font-size: 20px;
@@ -485,6 +504,14 @@ ul {
   .fa-stack-overflow {
     font-size: 50px;
 }
+
+.skill-more {
+  display: initial;
+}
+
+#guess-who {
+  display: none;
+}
 }
 
 @media (min-width:1280px) {
@@ -496,6 +523,10 @@ ul {
     width: 350px;
     right: 20px;
     top: 150px;
+  }
+
+  .header-text {
+    margin-left: 40px;
   }
 
   h1 {
@@ -516,11 +547,6 @@ ul {
   }
   
   h4 {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  
-  h5 {
     font-size: 25px;
     line-height: 29px;
   }
@@ -551,6 +577,14 @@ ul {
   .fa-linkedin-in,
   .fa-stack-overflow {
     font-size: 50px;
+}
+
+  .skill-more {
+    display: initial;
+}
+
+  #guess-who {
+    display: none;
 }
 }
 
