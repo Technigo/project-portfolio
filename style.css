@@ -57,7 +57,7 @@ body {
     padding-right: 8px;
 }
 .circles {
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -77,7 +77,7 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-right: 7px;
-    /* margin-top: -130px; */
+    margin-top: 50px;
 }
 
 .profile-picture {
@@ -99,8 +99,24 @@ body {
     align-items: center;
 }
 
+.line {
+    border: 1px solid rgb(58, 48, 172);
+    width: 30px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.dot {
+    height: 10px;
+    width: auto;
+    background-color:rgb(58, 48, 172);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -10px;
+}
+
 .about-me-text {
-    /* width: 1100px; */
+    width: 327px;
     height: auto;
     font-size: 17px;
     color: white;
@@ -125,7 +141,7 @@ body {
     align-items: center;
 }
 
-.tech-title,.my-projects-title, .thoughts-on-code, .skills-title, .for-more-title {
+.tech-title,.my-projects-title, .thoughts-on-code-title, .thoughts-on-code-title-desktop, .skills-title, .for-more-title {
     background-color: rgb(58, 48, 172);
     color: white;
     padding: 5px;
@@ -133,6 +149,10 @@ body {
     margin-top: 40px;
     margin-bottom: 40px;
     font-size: 22px;
+}
+
+.thoughts-on-code-title-desktop {
+    display: none;
 }
 
 .tech-text {
@@ -159,6 +179,14 @@ body {
 .project-card {
     position: relative;
     width: 327px;
+}
+
+.project-card:nth-child(3) {
+    display: none;
+}
+
+.project-card:last-child {
+    display: none; 
 }
 
 .image-container {
@@ -200,7 +228,7 @@ body {
     text-transform: uppercase;
     font-size: 17px;
     color: rgb(58, 48, 172);
-    margin: 0;
+    margin: 10px 0 0 0;
 }
 
 span {
@@ -236,7 +264,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-bottom: 72px;
-
+    width: 327px;
 }
 
 .other-projects-card {
@@ -245,7 +273,6 @@ a {
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
-    margin: 0 24px;
 }
 
 .little-arrows {
@@ -282,6 +309,10 @@ h5 {
 
 li {
     padding: 5px;
+}
+
+.skills-part-one:last-child {
+    display: none;
 }
 
 /* FOR MORE */
@@ -363,7 +394,7 @@ li {
     color: rgb(58, 48, 172);
     display: flex;
     flex-direction: column;
-    padding-left: 300px;
+    padding-left: 10px;
     width: 610px;
     height: 340px;
 }
@@ -371,18 +402,18 @@ li {
 .my-name {
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 400;
 }
 
 .my-title {
-    font-size: 82px;
+    font-size: 60px;
     font-weight: bolder;
     margin: 0;
 }
 
 .my-title-extra {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 5px;
 }
 
@@ -395,7 +426,7 @@ li {
     flex-direction: row;
     justify-content: end;
     padding-top: 100px;
-    padding-right: 410px;
+    margin-right: 10px;
 }
 .circles {
     border: 3px solid white;
@@ -417,7 +448,7 @@ li {
 .profile-picture-container {
     display: flex;
     justify-content: flex-end;
-    margin-right: 410px;
+    margin-right: 10px;
     margin-top: -130px;
 }
 
@@ -440,8 +471,19 @@ li {
     align-items: center;
 }
 
+.line {
+    width: 40px;
+    margin-bottom: 8px;
+}
+
+.dot {
+    height: 17px;
+    width: 8px;
+    margin-bottom: 2px;
+}
+
 .about-me-text {
-    width: 1100px;
+    width: 768px;
     height: auto;
     font-size: 30px;
     color: white;
@@ -466,7 +508,7 @@ li {
     align-items: center;
 }
 
-.tech-title,.my-projects-title, .thoughts-on-code, .skills-title, .for-more-title {
+.tech-title,.my-projects-title, .thoughts-on-code-title, .thoughts-on-code-title-desktop, .skills-title, .for-more-title {
     background-color: rgb(58, 48, 172);
     color: white;
     padding: 5px;
@@ -476,13 +518,16 @@ li {
     font-size: 38px;
 }
 
+.thoughts-on-code-title-desktop {
+    display: block;
+}
+
 .tech-text {
     font-size: 15px;
     text-align: center;
     font-size: 30px;
-    width: 1100px;
+    width: 768px;
     height: 150px;
-    
     padding-bottom: 50px;
 }
 
@@ -500,7 +545,7 @@ li {
 
 .project-card {
     position: relative;
-    width: 525px;
+    /* width: 525px; */
 }
 
 .image-container {
@@ -557,6 +602,14 @@ a {
     color: black;
 }
 
+.project-card:nth-child(3) {
+    display: block;
+}
+
+.project-card:last-child {
+    display: block; 
+}
+
 /* OTHER PROJECTS */
 
 .other-projects, .skills {
@@ -575,16 +628,14 @@ a {
 }
 
 .other-projects-container {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 235px;
-
+    width: 768px;
 }
 
 .other-projects-card {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; */
     text-align: left;
     font-family: 'Roboto', sans-serif;
     text-decoration: underline;
@@ -606,6 +657,14 @@ a {
     align-items: center;
 }
 
+.thoughts-on-code-title {
+    display: none;
+}
+
+.thoughts-on-code-title-desktop {
+    display: block;
+}
+
 /* SKILLS */
 
 .skills-title {
@@ -617,9 +676,13 @@ a {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    width: 1100px;
+    width: 768px;
     font-size: 25px;
     margin-bottom: 105px;
+}
+
+.skills-part-one:last-child {
+    display: block;
 }
 
 h5 {
@@ -695,4 +758,118 @@ li {
     line-height: 1.5;
 }
 
+}
+
+@media (min-width:1200px) {
+
+    .heroimage {
+        background-image: url(./pictures/palette.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 680px;
+    }
+    
+    .herotext {
+        color: rgb(58, 48, 172);
+        display: flex;
+        flex-direction: column;
+        padding-left: 300px;
+        width: 610px;
+        height: 340px;
+    }
+    
+    .my-name {
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    
+    .my-title {
+        font-size: 82px;
+        font-weight: bolder;
+        margin: 0;
+    }
+    
+    .my-title-extra {
+        font-size: 50px;
+        margin-top: 5px;
+    }
+    
+    .my-title, .my-title-extra {
+        margin-top: 0;
+    }
+    
+    .icon-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin-right: 200px;
+    }
+    .circles {
+        border: 3px solid white;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon {
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+    }
+    
+    .profile-picture-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 200px;
+        margin-top: -130px;
+    }
+    
+    .profile-picture {
+        width: 330px;
+        height: 330px;
+        border: 2px solid white;
+        border-radius: 50%;
+        object-fit: cover;
+        filter: saturate(90%);
+    }
+
+    .about-me-text {
+        width: 1100px;
+    }
+
+    .tech-text {
+        width: 1100px;
+    }
+
+    .project-card {
+        position: relative;
+        width: 525px;
+    }
+
+
+    .skills-container {
+        width: 1100px;
+    }
+
+    .other-projects-container {
+        width: 1100px;
+    }
+
+
+    .other-projects-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: underline;
+        font-size: 25px;
+        margin: 0;
+    }
 }
