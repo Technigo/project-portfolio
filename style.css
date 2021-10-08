@@ -1,17 +1,13 @@
 /* HERO IMG THANKS Photo by <a href="https://unsplash.com/@miracleday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elena Mozhvilo</a> on <a href="https://unsplash.com/t/arts-culture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   */
 
-  /* 'Roboto', sans-serif;*/
-
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* @media (min-width:375px) */
+/* MOBILE FIRST (min-width:375px) */
 
 .heroimage {
-    /* position: absolute; */
     background-image: url(./pictures/palette.jpg);
     background-position: center;
     background-size: cover;
@@ -108,7 +104,7 @@ body {
 
 .dot {
     height: 10px;
-    width: auto;
+    width: 10px;
     background-color:rgb(58, 48, 172);
     border-radius: 50%;
     display: inline-block;
@@ -125,22 +121,6 @@ body {
     margin-bottom: 43px;
 }
 
-/* TECH */
-
-.tech {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-container {
-    background-color: rgb(228, 217, 217);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .tech-title,.my-projects-title, .thoughts-on-code-title, .thoughts-on-code-title-desktop, .skills-title, .for-more-title {
     background-color: rgb(58, 48, 172);
     color: white;
@@ -155,16 +135,30 @@ body {
     display: none;
 }
 
+/* TECH */
+
+.tech {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .tech-text {
     font-size: 17px;
     text-align: center;
-    /* width: 1100px; */
     height: auto;
-    
     padding-bottom: 50px;
 }
 
 /* PROJECTS */
+
+.project-container {
+    background-color: rgb(228, 217, 217);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .my-projects {
     display: grid;
@@ -231,10 +225,11 @@ body {
     margin: 10px 0 0 0;
 }
 
-span {
+.tags {
     background-color: rgb(176, 170, 250);
-    padding: 0 5px;
+    padding: 7px;
     margin-top: 5px;
+    margin-right: 7px;
     font-size: 9px;
 }
 
@@ -280,6 +275,10 @@ a {
     background-color: rgb(228, 217, 217);
 }
 
+.tag-box {
+    margin-top: -3px;
+}
+
 /* MY THOUGHTS ON CODE */
 
 .my-thoughts-on-code, .for-more {
@@ -295,12 +294,11 @@ a {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    /* width: 1100px; */
     font-size: 17px;
     margin-bottom: 105px;
 }
 
-h5 {
+.skills-h5 {
     color: rgb(58, 48, 172);
     margin-bottom: 4px;
     margin-top: 0;
@@ -319,12 +317,9 @@ li {
 
 .for-more {
     height: auto;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center; */
 }
 
-.for-more-text {
+.for-more-icons {
     font-size: 11px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -335,6 +330,7 @@ li {
 .h5-two {
     font-size: 11px;
     margin-top: 18px;
+    color: rgb(58, 48, 172);
 }
 
 .fab {
@@ -377,77 +373,49 @@ li {
     padding: 10px;
 }
 
-/* Tablet and Desktop */
-
-/* HERO SECTION */
+/* TABLET*/
 
 @media (min-width:768px) {
 
 .heroimage {
-    background-image: url(./pictures/palette.jpg);
-    background-position: center;
-    background-size: cover;
     height: 680px;
 }
 
 .herotext {
-    color: rgb(58, 48, 172);
-    display: flex;
-    flex-direction: column;
     padding-left: 10px;
     width: 610px;
     height: 340px;
 }
 
 .my-name {
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-weight: 400;
 }
 
 .my-title {
     font-size: 60px;
-    font-weight: bolder;
-    margin: 0;
 }
 
 .my-title-extra {
     font-size: 40px;
-    margin-top: 5px;
-}
-
-.my-title, .my-title-extra {
-    margin-top: 0;
 }
 
 .icon-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
     padding-top: 100px;
     margin-right: 10px;
 }
+
 .circles {
     border: 3px solid white;
-    border-radius: 50%;
     width: 80px;
     height: 80px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .icon {
     width: 36px;
     height: 36px;
-    padding: 8px;
 }
 
 .profile-picture-container {
-    display: flex;
-    justify-content: flex-end;
     margin-right: 10px;
     margin-top: -130px;
 }
@@ -456,20 +424,9 @@ li {
     width: 330px;
     height: 330px;
     border: 2px solid white;
-    border-radius: 50%;
-    object-fit: cover;
-    filter: saturate(90%);
 }
 
 /* ABOUT ME */
-
-.about-me {
-    background-color: rgb(228, 217, 217);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .line {
     width: 40px;
@@ -478,41 +435,20 @@ li {
 
 .dot {
     height: 17px;
-    width: 8px;
+    width: 17px;
     margin-bottom: 2px;
 }
 
 .about-me-text {
     width: 768px;
-    height: auto;
     font-size: 30px;
-    color: white;
-    text-align: left;
     margin-top: 123px;
     margin-bottom: 109px;
 }
 
 /* TECH */
 
-.tech {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-container {
-    background-color: rgb(228, 217, 217);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .tech-title,.my-projects-title, .thoughts-on-code-title, .thoughts-on-code-title-desktop, .skills-title, .for-more-title {
-    background-color: rgb(58, 48, 172);
-    color: white;
-    padding: 5px;
-    text-transform: uppercase;
     margin-top: 120px;
     margin-bottom: 80px;
     font-size: 38px;
@@ -523,7 +459,6 @@ li {
 }
 
 .tech-text {
-    font-size: 15px;
     text-align: center;
     font-size: 30px;
     width: 768px;
@@ -536,47 +471,10 @@ li {
 .my-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 40px;
-    background-color: rgb(228, 217, 217);
-    padding-bottom: 50px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.project-card {
-    position: relative;
-    /* width: 525px; */
-}
-
-.image-container {
-    position: relative;
 }
 
 .project-pictures {
-    width: 100%;
     height: 300px;
-    object-fit: cover;
-    display: block;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(156, 166, 197, 0.5);
-}
-
-.project-name {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    color: white;
 }
 
 .project-texts {
@@ -584,22 +482,12 @@ li {
 }
 
 .project-name-two {
-    text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    color: rgb(58, 48, 172);
 }
 
-span {
-    background-color: rgb(176, 170, 250);
-    padding: 0 5px;
-    margin-top: 5px;
-    font-size: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
+.tags {
+    font-size: 15px;
 }
 
 .project-card:nth-child(3) {
@@ -613,17 +501,10 @@ a {
 /* OTHER PROJECTS */
 
 .other-projects, .skills {
-    background-color: rgb(228, 217, 217);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Roboto', sans-serif;
 }
 
 .other-projects-title {
-    color: rgb(58, 48, 172);
-    padding: 5px;
     font-size: 38px;
 }
 
@@ -633,29 +514,11 @@ a {
 }
 
 .other-projects-card {
-    /* display: flex;
-    flex-direction: row;
-    align-items: center; */
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline;
     font-size: 25px;
     margin: 0;
 }
 
-.little-arrows {
-    color: rgb(58, 48, 172);
-    background-color: rgb(228, 217, 217);
-}
-
 /* MY THOUGHTS ON CODE */
-
-.my-thoughts-on-code, .for-more {
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .thoughts-on-code-title {
     display: none;
@@ -673,61 +536,24 @@ a {
 }
 
 .skills-container {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
     width: 768px;
     font-size: 25px;
-    margin-bottom: 105px;
 }
 
 .skills-part-one:last-child {
     display: block;
 }
 
-h5 {
-    color: rgb(58, 48, 172);
-    margin-bottom: 4px;
-    margin-top: 0;
+.skills-h5 {
     font-size: 25px;
-}
-
-li {
-    padding: 5px;
 }
 
 /* FOR MORE */
 
-.for-more {
-    height: auto;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center; */
-}
-
-.for-more-text {
+.for-more-icons {
     font-size: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
     column-gap: 45px;
     margin-bottom: 120px; 
-}
-
-.fab {
-    color: rgb(58, 48, 172);
-    font-size: 61px;
-}
-
-.circles2 {
-    border: 3px solid rgb(58, 48, 172);
-    border-radius: 50%;
-    width: 160px;
-    height: 160px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .h5-two {
@@ -735,108 +561,58 @@ li {
     margin-top: 24px;
 }
 
+.fab {
+    font-size: 61px;
+}
+
+.circles2 {
+    border: 3px solid rgb(58, 48, 172);
+    width: 160px;
+    height: 160px;
+}
+
+
 /* CONTACT */
 
 .contact {
-    background-color: rgb(58, 48, 172);
-    color: white;
     height: 570px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .contact-title {
-    text-transform: uppercase;
     margin-top: 130px;
     font-size: 38px;
 }
 
 .contact-info {
     font-size: 30px;
-    text-align: center;
-    line-height: 1.5;
 }
 
 }
 
 @media (min-width:1200px) {
-
-    .heroimage {
-        background-image: url(./pictures/palette.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 680px;
-    }
     
     .herotext {
-        color: rgb(58, 48, 172);
-        display: flex;
-        flex-direction: column;
-        padding-left: 300px;
-        width: 610px;
-        height: 340px;
+        padding-left: 300px;;
     }
     
     .my-name {
-        margin-bottom: 10px;
-        font-family: 'Roboto', sans-serif;
         font-size: 28px;
-        font-weight: 400;
     }
     
     .my-title {
         font-size: 82px;
-        font-weight: bolder;
-        margin: 0;
     }
     
     .my-title-extra {
         font-size: 50px;
-        margin-top: 5px;
-    }
-    
-    .my-title, .my-title-extra {
-        margin-top: 0;
     }
     
     .icon-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
         margin-right: 200px;
-    }
-    .circles {
-        border: 3px solid white;
-        border-radius: 50%;
-        width: 80px;
-        height: 80px;
-        margin: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .icon {
-        width: 36px;
-        height: 36px;
-        padding: 8px;
     }
     
     .profile-picture-container {
-        display: flex;
-        justify-content: flex-end;
         margin-right: 200px;
-        margin-top: -130px;
-    }
-    
-    .profile-picture {
-        width: 330px;
-        height: 330px;
-        border: 2px solid white;
-        border-radius: 50%;
-        object-fit: cover;
-        filter: saturate(90%);
     }
 
     .about-me-text {
@@ -852,7 +628,6 @@ li {
         width: 525px;
     }
 
-
     .skills-container {
         width: 1100px;
     }
@@ -861,15 +636,9 @@ li {
         width: 1100px;
     }
 
-
-    .other-projects-card {
+    .heading-wrapper {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
-        font-family: 'Roboto', sans-serif;
-        text-decoration: underline;
-        font-size: 25px;
-        margin: 0;
+        align-items: baseline;
     }
+
 }
