@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f4f4f467;
+    cursor: default;
 }
 
 .media-icon-container {
@@ -35,6 +36,7 @@ body {
     top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
+    width: 320px;
 }
 
 .portfolio {
@@ -64,7 +66,7 @@ body {
     border-radius: 100px;
     align-self: flex-end;
     margin-top: -13vh;
-    margin-right: 2vh;
+    margin-right: 24.5px;
 }
 
 .summary-section {
@@ -228,6 +230,10 @@ span {
     font-size: 17px;
 }
 
+.featured-thoughts-container {
+    background-color: #FFFFFF;
+}
+
 .featured-thoughts.display.tablet {
     display: none;
 }
@@ -243,6 +249,11 @@ span {
 .more-thoughts-title {
     color: black;
     font-weight: 700;
+}
+
+.other-thoughts-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .skills-container {
@@ -264,12 +275,12 @@ ul {
     font-weight: 500;
 }
 
-.code-toolbox-container {
+.code-toolbox-more-container {
     display: flex;
     justify-content: space-around;
 }
 
-.upcoming-more-container {
+.upcoming-container {
     display: flex;
     justify-content: space-around;
 }
@@ -312,6 +323,12 @@ footer {
     .container {
         margin: 0 auto;
     }
+    .summary-section {
+        width: 768px;
+    }
+    .container.thoughts, .container.skills {
+        width: 768px;
+    }
     .featured-projects-container, .other-projects-container, .featured-thoughts-container {
         display: flex;
         justify-content: space-evenly;
@@ -324,9 +341,6 @@ footer {
     }
     .thoughts-heading-container {
         margin-bottom: 1vh;
-    }
-    .featured-thoughts.display {
-        width: 384px;
     }
     .featured-thoughts.display.tablet {
         display: initial;
@@ -341,11 +355,25 @@ footer {
     .featured-thoughts.third {
         display: none;
     }
+    .skills-more {
+        display: initial;
+    }
 }
 
 @media (min-width: 992px) {
     .container {
-        width: 992px;
         margin: 0 auto;
+    }
+    .container.tech {
+        width: 1000px;
+    }
+    .media-icon-container, .annad-image {
+        margin-right: 410px;
+    }
+    .media-icon-container {
+        margin-top: 104px;
+    }
+    .summary-section {
+        width: 1000px;
     }
 }
