@@ -5,7 +5,7 @@ body {
 
 /* Header */
 .header {
-  background-image: url("./image/background-img.jpg");
+  background-image: url("./image/background-img-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -197,7 +197,7 @@ body {
 }
 
 .img-overlay {
-  position: absolute;
+  position: absolute; /* Relative */
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
   color: #f1f1f1;
@@ -211,7 +211,7 @@ body {
 }
 
 .img-overlay-text {
-  position: absolute;
+  position: absolute; /* Relative */
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -278,6 +278,7 @@ body {
   margin-bottom: 20px;
   width: 70%;
   margin: 20px auto;
+  flex-direction: column;
 }
 
 .projects-list {
@@ -389,10 +390,16 @@ body {
 
 .icon-links {
   margin: 30px;
+  text-decoration: none;
 }
 
 .icon-links:hover {
   transform: scale(1.1);
+  text-decoration: none;
+}
+.icon-links:visited {
+  color: black;
+  text-decoration: none;
 }
 
 .for-more-icons {
@@ -430,6 +437,10 @@ body {
 
 /*For tablet*/
 @media (min-width: 768px) {
+  .header {
+    background-image: url("./image/background-img.jpg");
+  }
+
   .header-text-container {
     width: 300px;
     height: 200px;
