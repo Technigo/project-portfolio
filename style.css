@@ -187,21 +187,21 @@ a:hover {
 }
 .overlay {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     background: rgba(156, 166, 197, 0.7);
     transition: 0.5s ease;
+    display: none;
 }
 
 .overlay p {
     position: absolute;
     font-weight: 200;
     color: white;
-
     display: flex;
-    font-family: "Montserrat";
+    font-family: 'Roboto', sans-serif;;
     font-size: 25px;
     top: 0;
     bottom: 0;
@@ -210,14 +210,17 @@ a:hover {
     margin: 0;
     justify-content: center;
     align-items: center;
+    display: none;
   }
 
   .overlay p:hover {
     color: transparent;
+    display: none;
   }
   
   .overlay:hover {
     background-color: transparent;
+    display: none;
   }
 
 .image-container {
@@ -269,7 +272,8 @@ a:hover {
 
 /* 
 Mobil -  */
-@media (min-width: 0px) { }
+@media (min-width: 0px) {
+ }
 
 /* Paddda -  */
 @media (min-width: 768px) {
@@ -332,8 +336,22 @@ Mobil -  */
         display: block;
     }
 
+/* PIC OVERLAY */
+.overlay {
+    display: block;
+}
 
+.overlay p {
+    display: flex;
+  }
 
+  .overlay p:hover {
+    display: block;
+  }
+  
+  .overlay:hover {
+    display: block;
+  }
 
 
 }
@@ -360,13 +378,12 @@ Mobil -  */
 
 
 /* TODO
-
-
-
 9. Bilden verkar inte funka... og: grejen. 
 10. the overlay ser inte helt perfekt ut på skärmdumparna... Gör nya skärmdumpar.
-11. the pitcure overlay like Ida.
-12. 
+
+13. Skriv om texterna.
+--lämna in och hela den grejen. 
+14. publicera på Mjestedt.se
 
 * tabindex
 
