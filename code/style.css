@@ -68,14 +68,14 @@ body {
 .line {
   width: 25px;
   display: inline-block;
-  border: 1px solid #fa382f;
+  border: 1px solid #cd1f18;
   margin-bottom: 4px;
 }
 
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #fa382f;
+  background-color: #cd1f18;
   border-radius: 50%;
   display: inline-block;
   margin-left: -8px;
@@ -114,7 +114,7 @@ body {
   font-size: 1.38em;
   line-height: 1.69em;
   color: #fff;
-  background-color: #fa382f;
+  background-color: #cd1f18;
   text-transform: uppercase;
   display: inline;
   padding: 0.19em;
@@ -123,6 +123,14 @@ body {
 .image-container {
   position: relative;
   height: 200px;
+}
+
+.image-container:hover {
+  color: transparent;
+}
+
+.overlay:hover {
+  background-color: transparent;
 }
 
 .overlay {
@@ -149,7 +157,7 @@ body {
   font-weight: bold;
   font-size: 1.75em;
   text-transform: uppercase;
-  color: #fff;
+  color: blue;
 }
 
 article {
@@ -170,7 +178,7 @@ article {
   font-style: normal;
   font-size: 1.06em;
   line-height: 1.81em;
-  color: #fa382f;
+  color: #cd1f18;
   text-transform: uppercase;
   margin-bottom: 0;
 }
@@ -186,7 +194,7 @@ article {
   margin-bottom: 1em;
 }
 .reference {
-  color: #fa382f;
+  color: #cd1f18;
   font-weight: bold;
 }
 .language {
@@ -229,7 +237,7 @@ article {
   font-size: 1.2em;
   line-height: 1.5em;
   text-align: center;
-  color: #fa382f;
+  color: #cd1f18;
   text-transform: uppercase;
   margin-top: 40px;
 }
@@ -244,7 +252,7 @@ article {
   font-weight: bold;
   font-size: 1.06em;
   line-height: 1.81em;
-  color: #fa382f;
+  color: #cd1f18;
   list-style-type: none;
   text-align: center;
   padding: 0;
@@ -287,7 +295,6 @@ article {
 .parent-outer-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -308,7 +315,7 @@ article {
   font-weight: bold;
   font-size: 11px;
   line-height: 13px;
-  color: #fa382f;
+  color: #cd1f18;
   text-transform: uppercase;
 }
 
@@ -327,11 +334,12 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
-footer > h4 {
+footer > h1 {
   font-size: 1.31em;
   line-height: 1.56em;
   margin-top: 3em;
 }
+
 .contact-details-container {
   display: flex;
   flex-direction: column;
@@ -525,5 +533,27 @@ footer > h4 {
   .toolbox {
     font-size: 1.15em;
     line-height: 2em;
+  }
+
+  .outer-container {
+    justify-content: center;
+  }
+  .parent-outer-container {
+    margin-right: 50px;
+  }
+  .parent {
+    width: 100px;
+    height: 100px;
+  }
+
+  footer > h4 {
+    font-size: 1.45em;
+    line-height: 1.9em;
+    margin-top: 3.5em;
+  }
+
+  .contact-details {
+    font-size: 1.25em;
+    line-height: 1.6em;
   }
 }
