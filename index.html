@@ -7,27 +7,29 @@
     <title>Kriss Technigo Portfolio</title>  <!-- what should it be called?  -->
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-
+        <!-- --------------Header:-------------- -->  
+    <header class="header-container" >
 <nav class="navbar-links">
     <a href="https://www.linkedin.com/in/krissstockhaus">
-        <img alt=" Kriss LinkedIn link" src="./assets/linkedin.svg">
+        <img class="linkedin" src="./assets/linkedin.svg" alt=" Kriss LinkedIn link">
     </a>
     <a href="https://github.com">
-        <img alt="Kriss GitHub link" src="./assets/github.svg">
+        <img class="github" alt="Kriss GitHub link" src="./assets/github.svg">
     </a>
     <a href="https://stackoverflow.com">
-        <img alt="Kriss Stack Overflow link" src="./assets/stackoverflow.svg">
+        <img class="stackoverflow" alt="Kriss Stack Overflow link" src="./assets/stackoverflow.svg">
     </a>
 </nav>
-<!-- maybe used linked icons?  -->
 
 <section class=header-text>
-    <p class="portfolio-name">Portfolio: Kriss Stockhaus</p>
+    <p class="portfolio-name">Portfolio:  <span class="header-span">Kriss Stockhaus</span></p>
     <h1 class="frontend-developer">frontend developer</h1>
     <h1 class="digital-designer">+ digital designer</h1>
 </section>
@@ -35,13 +37,22 @@
 <img class="profile-image" src="https://avatars.githubusercontent.com/u/80514864?v=4" alt="picture of Kriss">
     </header>
 
+    <!-- --------------Intro:-------------- -->  
+
     <section class="intro-section">
-        <p>Hello! I´m a strategic and creative designer</p>
+        <div class="container">
+        <p>Hello! I’m a strategic and creative senior art director/digital designer with frontend developer skills and experience design at. I’m all about solving problems that matter and creating awesome, meaningful products for people to love.</p>
+    </div>
     </section>
 
+    <!-- --------------Tech:-------------- --> 
+
     <section class="tech">
-    <div class="container">     <!-- Provar att använda samma container -->
-        <h2>Tech</h2>
+    <div class="container">
+        <div class="heading-container" >
+            <h2>Tech</h2>
+        </div>
+        
         <p>
             HTML, CSS, Flexbox, Grid, JavaScript, ES6, Node.js, Web Accessibly,
             API:s, mob-programming, pair-programming, Github
@@ -49,91 +60,94 @@
         </div>
     </section>
 
-    <section class="portfolio-section">        
+    <!-- --------------Projects:-------------- -->
+
+    <section class="portfolio-section">
         <div class="container"> 
-            <div class="portfolio-heading-container" >
+            <div class="heading-container" >
                 <h2 class="portfolio-heading" >Featured projects</h2>  
             </div>
-        <article>
-            <div class="image-container">
-                <div class="overlay"></div>
-                <img class="image" src="assets/pizza.png" alt="project image"/>
-            </div>
-            <div>
-                <h3>Chat bot built in javascript</h3>
-                <p>Responsive web site built with HTML, CSS and Javascript ES6 for pizza orders</p>
-                <div>
-                    <span>HTML5</span>
-                    <span>CSS</span>
-                    <span>JavaScript ES6</span>
-                </div>
-            </div>
-        </article>
-    </div>
-    </section>
 
-    <section class="portfolio-section">        
-        <div class="container"> 
-            <div class="portfolio-heading-container" >
-                <h2 class="portfolio-heading" >Featured projects</h2>  
-            </div>
-        <article>
-            <div class="image-container">
-                <div class="overlay"></div>
-                <img class="image" src="assets/pizza.png" alt="project image"/>
-            </div>
-            <div>
-                <h3>Chat bot built in javascript</h3>
-                <p>Responsive web site built with HTML, CSS and Javascript ES6 for pizza orders</p>
-                <div>
-                    <span>HTML5</span>
-                    <span>CSS</span>
-                    <span>JavaScript ES6</span>
-                </div>
-            </div>
-        </article>
-    </div>
-    </section>
+                <article>
+                    <div class="image-container">
+                        <div class="overlay"></div>
+                        <img class="image" src="assets/pizza.png" alt="project image"/>
+                    </div>
+                    <div>
+                        <h4>Chat bot built in javascript</h4>
+                        <p>Responsive web site built with HTML, CSS and Javascript ES6 for pizza orders</p>
+                        <div class="buttons" >
+                            <span class="button-span">HTML5</span>
+                            <span class="button-span">CSS</span>
+                            <span class="button-span">JavaScript ES6</span>
+                        </div>
+                    </div>
+                </article>
 
-    <section class="portfolio-section">        
-        <div class="container"> 
-            <div class="portfolio-heading-container" >
-                <h2 class="portfolio-heading" >Featured projects</h2>  
-            </div>
-        <article>
-            <div class="image-container">
-                <div class="overlay"></div>
-                <img class="image" src="assets/pizza.png" alt="project image"/>
-            </div>
-            <div>
-                <h3>Chat bot built in javascript</h3>
-                <p>Responsive web site built with HTML, CSS and Javascript ES6 for pizza orders</p>
-                <div>
-                    <span>HTML5</span>
-                    <span>CSS</span>
-                    <span>JavaScript ES6</span>
-                </div>
-            </div>
-        </article>
-    </div>
-    </section>
+                <article>
+                    <div class="image-container">
+                        <div class="overlay"></div>
+                        <img class="image" src="assets/pizza.png" alt="project image"/>
+                    </div>
+                    <div>
+                        <h4>Chat bot built in javascript</h4>
+                        <p>Responsive web site built with HTML, CSS and Javascript ES6 for pizza orders</p>
+                        <div class="buttons" >
+                            <span class="button-span">HTML5</span>
+                            <span class="button-span">CSS</span>
+                            <span class="button-span">JavaScript ES6</span>
+                        </div>
+                    </div>
+                </article>
 
+                <article>
+                    <div class="image-container">
+                        <div class="overlay"></div>
+                        <img class="image" src="assets/pizza.png" alt="project image"/>
+                    </div>
+                    <div>
+                        <h4>Chat bot built in javascript</h4>
+                        <p>Responsive web site built with HTML, CSS and Javascript ES6 for pizza orders</p>
+                        <div class="buttons" >
+                            <span class="button-span">HTML5</span>
+                            <span class="button-span">CSS</span>
+                            <span class="button-span">JavaScript ES6</span>
+                        </div>
+                    </div>
+                </article>
+
+                <h3>Other projects</h3>
+    </section>   
+        
+    <section class="portfolio-section">
+        <div class="heading-container" >
+            <h2>My thoughts</h2>
+             </div>
+            <p> 
+                I was saying something important! 
+                Jelly baby? Are you capable of speaking without flapping your hands about? 
+                Yes, that's right, you're going. You've been gone for ages. You're already gone.
+            </p>
+
+             <h3>More thoughts</h3>
+                <p> Logic, my dear Zoe, merely enables one to be wrong with authority. 
+                    Well, you're very similar heights. Maybe you should wear labels.
+                    Don't you think she looks tired? You're a clumsy.
+                </p>
+    </section>
     
-
-
-
-    <h2>Other projects</h2>
-    
-    <h2>My thoughts about code</h2>
-        <h3>More thoughts</h3>
-
-    <section class="skills-section">
-        <h2>Skills</h2>
+    <section class="portfolio-section" >
+        <div class="heading-container" >
+            <h2>Skills</h2>
+        </div>
     </section>
 
-    <section> <!-- shoould it be a section?  -->
-    <h2>For more</h2>
-    </section>
+<section class="portfolio-section" >
+    <div class="heading-container" >
+        <h2>For more</h2>
+        </div>
+    </div>
+</section>
 
     <Footer>
         <p>Contact info</p>
