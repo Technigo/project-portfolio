@@ -57,7 +57,7 @@
         </ul>
         <div aria-label="picture with coloured dots" role="complementary" id="dots" class="dots">
         </div>
-        <section class="designation-container" aria-label="profile author information">
+        <section class="designation-container">
             <h1 class="profile-name">portfolio: <span class="user-name">mary snopok</span></h1>
             <h2 class="designation">frontend developer</h2>
             <h3 class="former">+ people operations</h3>
@@ -66,22 +66,25 @@
     </header>
     <main>
         <!-- *** welcome message *** -->
-        <section class="full-width-text-container align-self-center" area-label="welcome message">
+        <section class="full-width-text-container align-self-center">
             <p class="content">
-                <span class="marker"><span class="line"></span>
-                    <span class="point"></span>
+                <span aria-hidden="true" class="marker"><span class="line"></span>
+                    <span aria-hidden="true" class="point"></span>
                 </span>
-                <span class="hi" id="hi-start"></span>
+                <span aria-hidden="true" class="hi">
+                    &lt;hi&gt;
+                </span>
                 I'm an aspiring front-end developer with experience in people operations within IT industry <6. For me
                     learning new things - is the key to becoming a better version of myself and inrich life. That's why
-                    I had fell for programming, where opportunites for self-growth are endless. <span class="hi"
-                    id="hi-end"></span>
+                    I had fell for programming, where opportunites for self-growth are endless. <span aria-hidden="true"
+                    class="hi">
+                    &lt;/hi&gt;</span>
             </p>
         </section>
         <!-- *** tech *** -->
         <section class="align-center">
             <article class="full-width-text-container">
-                <div class="headings-container" role="heading">
+                <div class="headings-container">
                     <h2 class="section-heading tech-heading">tech</h2>
                 </div>
                 <p class="content tech-skills"> HTML, CSS, Flexbox, <span class="stand-out-skills">JavaScript</span>,
@@ -93,10 +96,10 @@
 
         <section>
             <!-- ***featured projects ***  -->
-            <div class="headings-container" role="heading">
+            <div class="headings-container">
                 <h2 class="section-heading featured">featured projects</h2>
             </div>
-            <div class="auto-colums">
+            <div class="auto-colums" tabindex="0">
                 <article class="content-container">
                     <a href="https://marysnopok-todos.netlify.app" tabindex="0" role="button" aria-pressed="false"
                         aria-label="project-todos-description" target="_blank" rel="noreferrer">
@@ -193,7 +196,7 @@
         </section>
         <section>
             <!-- ***other projects ***  -->
-            <div class="headings-container" role="heading">
+            <div class="headings-container">
                 <h2 class="section-heading other-projects">other projects</h2>
             </div>
             <div class="sub-grid-container align-center">
@@ -273,7 +276,7 @@
             <section>
 
                 <!-- *** my thoughts*** -->
-                <div class="headings-container edit-later" role="heading">
+                <div class="headings-container edit-later">
                     <h2 class="section-heading featured">my thoughts</h2>
                 </div>
                 <div class="auto-colums">
@@ -297,7 +300,7 @@
                 </div>
 
                 <!-- *** more thoughts*** -->
-                <div class="headings-container edit-later" role="heading">
+                <div class="headings-container edit-later">
                     <h2 class="section-heading other-projects">more thoughts</h2>
                 </div>
                 <div class="sub-grid-container align-center">
@@ -356,11 +359,11 @@
                 </div>
             </section>
 
-            <div class="headings-container" role="heading">
+            <div class="headings-container">
                 <h2 class="section-heading featured">skills</h2>
             </div>
-            <article class="skills-container" aria-label="technical skills">
-                <div class="skills-left-side" role="listbox">
+            <article class="skills-container">
+                <div class="skills-left-side">
                     <div class="skills-inner-top">
                         <h4 class="skills-heading">code</h4>
                         <ul>
@@ -380,7 +383,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="skills-middle-side " role="listbox">
+                <div class="skills-middle-side ">
                     <h4 class="skills-heading">toolbox</h4>
                     <ul>
                         <li>Atom</li>
@@ -392,7 +395,7 @@
                         <li>Slack</li>
                     </ul>
                 </div>
-                <div class="skills-right-side hidden" role="listbox">
+                <div class="skills-right-side hidden">
                     <h4 class="skills-heading">more</h4>
                     <ul>
                         <li>Agile Methodologies</li>
@@ -405,7 +408,7 @@
                     </ul>
                 </div>
             </article>
-            <div class="headings-container" role="heading">
+            <div class="headings-container">
                 <h2 class="section-heading featured">for more</h2>
             </div>
             <article class="content-container for-more align-self-center">
@@ -427,7 +430,7 @@
                     role="button" aria-label="link to stackoverflow" target="_blank" rel="noreferrer">
                     <div class="icon-border">
                         <img class="for-more-icon" src="./assets/stack.png" alt="stackoverflow icon">
-                        <span class="media-tags"> stack overflow</span>
+                        <span class="media-tags">stack overflow</span>
                     </div>
                 </a>
             </article>
@@ -435,10 +438,10 @@
 
         <footer class="page-footer">
             <div class="content-container contacts-container align-self-center">
-                <div class="headings-container contacts-header" role="heading">
+                <div class="headings-container contacts-header">
                     <h2 class="section-heading">contact</h2>
                 </div>
-                <div class="contact-list-container" role="listbox">
+                <div class="contact-list-container">
                     <p class="contact-info">Mary Snopok</p>
                     <p class="contact-info">+46 76 939 56 10</p>
                     <a class="contact-info" href="mailto:marysnopok8@gmail.com" tabindex="0" role="button"
@@ -455,7 +458,6 @@
 
 
     <script src="./canvas.js"></script>
-    <script src="./script.js"></script>
 </body>
 
 </html>
