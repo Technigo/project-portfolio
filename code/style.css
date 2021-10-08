@@ -1,3 +1,12 @@
+:root {
+  --ffMon: "Montserrat", sans-serif;
+  --ffRob: "Roboto", sans-serif;
+  --pink: rgb(198, 42, 136);
+  --green: rgb(26, 248, 146, 0.1);
+  --blue: rgb(42, 7, 237);
+  --white: rgb(255, 255, 255);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +15,35 @@
 
 body {
   width: 100%;
+  font-family: var(--ffMon);
+}
+
+/* containers */
+.header-container {
+  width: 80%;
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 80%;
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2 {
+  font-family: var(--ffRob);
+  margin: 1em 0;
+  padding: 0 0.5rem;
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .hero-image {
@@ -17,38 +55,32 @@ body {
   width: 100%;
 }
 
-.icon-container {
+.icon {
   display: flex;
-  position: absolute;
-  top: 48px;
-  right: 49px;
-  height: 40px;
-  width: 130.5px;
+  justify-content: flex-end;
 }
 
 .icons-header {
   height: 40px;
 }
 
-.headertext-container {
+.headertext {
   width: 291px;
   height: 202px;
-  top: 130px;
-  left: 42px;
-  position: absolute;
+  justify-content: flex-start;
 }
 
 .header-name,
 .header-fname,
 .header-job,
 .header-subjob {
-  color: white;
+  color: var(--white);
 }
 
 .header-name {
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-family: var(--ffRob);
+  font-size: 1.2em;
   line-height: 18px;
   letter-spacing: 0.04em;
 }
@@ -56,27 +88,26 @@ body {
 .header-fname {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 1.1em;
   line-height: 1.2em;
   letter-spacing: 0.08em;
 }
 
 .header-job {
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.7em;
+  padding: 0.2em 0;
   line-height: 49px;
   letter-spacing: 0.2em;
 }
 
 .header-subjob {
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.7em;
   line-height: 40px;
 }
 
-.profile-pic {
+.profile-pic-small {
   border-radius: 50%;
   overflow: hidden;
   width: 180px;
@@ -85,5 +116,37 @@ body {
   right: 49px;
   position: absolute;
   object-fit: cover;
-  border: 2px solid whitesmoke;
+  border: 2px solid var(--white);
+}
+
+.header-description {
+  background-color: var(--green);
+  text-align: justify;
+}
+
+.line {
+  border: 1px solid var(--pink);
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: var(--pink);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.main-tech-text {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .profile-pic-small {
+    width: 250px;
+    height: 250px;
+    top: 298px;
+  }
 }
