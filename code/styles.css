@@ -40,6 +40,14 @@ header {
   margin: 30px;
 }
 
+.navbar-header a,
+.more-about-me a {
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 8px 10px;
+  margin: 0px 5px;
+}
+
 .profile-img {
   /* Positioning */
   position: absolute;
@@ -216,26 +224,78 @@ li {
   font-family: "Montserrat", sans-serif;
 }
 
+.more-about-me {
+  text-align: center;
+}
+
+footer {
+  background: #161616;
+  color: white;
+  text-align: center;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .profile-img {
     /* Positioning */
-    position: absolute;
-    right: 230px;
-    top: 150px;
+    top: 340px;
 
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .container {
+    width: 738px;
+  }
+
+  .introduction p {
+    font-size: 22px;
+  }
+
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    justify-content: center;
+  }
+
+  .more {
+    display: initial;
   }
 }
 
 @media (min-width: 1025px) {
   .profile-img {
     /* Positioning */
-    position: absolute;
-    right: 230px;
-    top: 150px;
+    top: 340px;
+    width: 200px;
+    height: 200px;
+  }
 
-    width: 150px;
-    height: 150px;
+  .container {
+    width: 995px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .introduction p {
+    font-size: 24px;
+  }
+
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+    justify-content: center;
+  }
+
+  .more {
+    display: initial;
   }
 }
