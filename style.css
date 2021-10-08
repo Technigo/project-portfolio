@@ -110,8 +110,13 @@ p{
    padding-top: 48px;
 }
 
-.social-logos img{
+.logo{
     height: 40px;
+}
+
+.logo:hover{
+    background-color: var(--yellow);
+    border-radius: 50%;
 }
 
 .profile-img{
@@ -199,16 +204,23 @@ p{
     position: relative;
 }
 
-.layer{
+
+
+.overlay{
     position: absolute;
     top:0;
     bottom: 0;
     right:0;
     left: 0;
     background-color: rgba(156, 166, 197, 0.5);
+    transition: 0.5s
 }
 
-.layer-text {
+.overlay:hover{
+    background-color: transparent;
+}
+
+.overlay-text {
     position: absolute;
     color: white;
     text-align: center;
@@ -223,6 +235,11 @@ p{
 
 .img-projects{
     width: 100%;
+    transition: 0.5s ease;
+}
+
+.img-projects:hover{
+    color: transparent;
 }
 
 .h3-projects-card{
@@ -246,6 +263,7 @@ p{
 
 .tags-container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tags-projects{
