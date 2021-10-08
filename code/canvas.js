@@ -1,3 +1,5 @@
+// Inspired by Dribble.
+// Created following this tutorial : https://tympanus.net/codrops/2018/12/06/interactive-repulsion-effect-with-three-js/
 // *** Paired programming project under mentorship of Corey Maler (https://github.com/Corey-Maler) ***
 //  comments are provided for the purpose of code review simplification
 

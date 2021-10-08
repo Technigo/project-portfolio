@@ -553,86 +553,6 @@ main {
   display: none;
 }
 
-/* *** tablet and desktop styles *** */
-@media (min-width: 769px) {
-  /*
-  .content-container {
-    margin: auto;
-    max-width: 600px;
-    position: relative;
-    margin-top: 50px;
-    padding: 20px 20px 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .contacts-container {
-    display: flex;
-    width: auto;
-  }
-  .hidden {
-    display: block;
-  }
-  */
-}
-
-.show-laptop {
-  display: none;
-}
-
-@media (min-width: 680px) {
-  .sub-grid-container {
-    max-width: 680px;
-  }
-  .auto-colums {
-    max-width: 680px;
-  }
-
-  .inline-on-laptop {
-    display: inline-block;
-  }
-
-  header {
-    width: 680px;
-  }
-
-  .full-width-text-container {
-    width: 680px;
-  }
-  .hidden {
-    display: block;
-  }
-}
-
-@media (min-width: 1100px) {
-  .content-container {
-    width: 520px;
-  }
-  .auto-colums {
-    max-width: 1100px;
-  }
-
-  .sub-grid-container {
-    max-width: 1100px;
-  }
-
-  header {
-    width: 1100px;
-  }
-  /* 
-  .full-width-text-container {
-    width: 1100px;
-  } */
-}
-/* 
-@media (min-width: 980px) {
-  .sub-grid-container {
-    margin: auto;
-    max-width: 600px;
-  }
-} */
-
 .full-width {
   width: 100%;
 }
@@ -645,4 +565,64 @@ main {
 .align-self-center {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* *** tablet and desktop styles *** */
+
+@media (min-width: 680px) {
+  .sub-grid-container {
+    max-width: 680px;
+  }
+  .auto-colums {
+    max-width: 680px;
+  }
+  .inline-on-laptop {
+    display: inline-block;
+  }
+  header {
+    width: 680px;
+  }
+  .full-width-text-container {
+    width: 680px;
+    margin-top: 60px;
+  }
+  .hidden {
+    display: block;
+  }
+  .content {
+    line-height: 24px;
+  }
+  .stand-out-skills {
+    font-weight: 500;
+    color: var(--sub-theme-color);
+  }
+}
+
+@media (min-width: 1100px) {
+  .content-container {
+    width: 520px;
+  }
+  .auto-colums {
+    max-width: 1100px;
+  }
+  .sub-grid-container {
+    max-width: 1100px;
+  }
+  header {
+    width: 1100px;
+  }
+  .project-picture,
+  .project-image-overlay,
+  .project-image-container {
+    height: 400px;
+  }
+  .content,
+  .stand-out-skills {
+    font-size: 16px;
+  }
+  .tag-wrapper p {
+    font-size: 14px;
+    padding: 6px;
+    margin: 6px;
+  }
 }
