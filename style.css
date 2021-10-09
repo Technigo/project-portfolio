@@ -7,7 +7,7 @@ body {
 .header-section {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    min-width: 320px;
     height: 520px;
     position: relative;
 }
@@ -26,8 +26,8 @@ body {
 .logos {
     display: flex;
     align-self: flex-end;
-    margin-top: 1.7rem;
-    margin-right: 5rem;
+    top: 48px;
+    right: 24.5rem;
 }
 
 /* styling for top-icons */
@@ -35,49 +35,69 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    left: -1.3rem;
+    top: 25px;
+    width: 60px;
+    right: 1.2rem;
+    padding: 5px;
 }
 
 .topicon {
     position: absolute;
     display: flex;
     flex-direction: row;
-    top: 3rem;
+    top: 2.8rem;
     align-items: flex-end;
+    width: 30px;
 }
 
 .header-text {
     display: flex;
-    flex-direction: row;
-    font-size: 2rem;
-    margin-left: 5rem;
+    flex-direction: column;
+    margin-top: 121px;
+    margin-left: 24px;
 }
 
-.profile-div {
-    display: flex;
-    flex-direction: row;
-    width: 20%;
-    align-self: flex-end;
-    margin-right: 5rem;
+.small-header-text {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.big-header-text {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.medium-header-text {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .profile-img {
+    display: flex;
+    justify-items: flex-end;
     border-style: solid;
-    border-color: #30363d;
-    border-width: 0.1rem;
-    margin: 0.5rem;
+    border-color: #fff;
+    border-width: 0.2rem;
     
     /* Positioning */
     position: absolute;
-    right: 230px;
-    top: 150px;
+    right: 24px;
+    top: 356px;
 
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
 
     /*  Rounded corners */
     border-radius: 50%;
-
     object-fit: cover;
 }
 
@@ -205,6 +225,7 @@ body {
 
 .skills-parent {
     display: flex;
+    grid-column: span 4;
     justify-content: space-evenly;
 }
 
@@ -230,7 +251,7 @@ body {
 }
 
 /* styling för logo o cirklar i botten? */
-.logo-circle {
+/* .logo-circle {
     border: 2px solid black;
     border-radius: 50%;
     width: 40px;
@@ -245,7 +266,70 @@ body {
     width: 20px;
     height: 20px;
     padding: 8px; 
+    margin-top: 20px;
     color: black;
+    align-items: flex-end;
+}
+*/
+
+.logos-bottom {
+    display: flex;
+    grid-column: 2/4;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* styling for bottom-icons */
+.bottom-circle {
+    position: relative;
+    width: 60px;
+    right: 1.2rem;
+    padding: 5px;
+    background-color: #e7aad0;
+    border-radius: 50%;
+}
+
+.bottom-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    top: -55px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+footer {
+    background-color: #072BCE;
+    height: 302px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-h5 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 38px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.footer-text {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -254,8 +338,27 @@ body {
     }
     
     .hero-img {
-    background-image: url(./images/header-image-2.png);
-        height: 100%;
+        background-image: url(./images/header-image-2.png);
+    }
+
+    .logos {
+        margin-right: 50px;   
+    }
+    
+    .header-text {
+        margin-left: 100px;
+    }
+
+    .small-header-text {
+        font-size: 20px;
+    }
+    
+    .big-header-text {
+        font-size: 50px;
+    }
+    
+    .medium-header-text {
+        font-size: 30px;
     }
 
     .container {
@@ -266,62 +369,66 @@ body {
     .project-container {
         grid-column: span 2;
     }
-
-    .logos {
-        display: flex;
-        align-self: flex-end;
-        margin-top: 1.7rem;
-        margin-right: 5rem;
-    }
     
-    /* styling for top-icons */
-    .topiconcircle {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        left: -1.3rem;
-    }
-    
-    .topicon {
+    .profile-img {
+        /* Positioning */
         position: absolute;
-        display: flex;
-        flex-direction: row;
-        top: 3rem;
-        align-items: flex-end;
+        right: 100px;
+        top: 450px;
+    
+        width: 270px;
+        height: 270px; 
+    }
+}
+@media (min-width: 1020px) {
+    .logos {
+        margin-right: 190px;   
     }
     
     .header-text {
-        display: flex;
-        flex-direction: row;
-        font-size: 2rem;
-        margin-left: 5rem;
+        margin-left: 190px;
+    }
+
+    .small-header-text {
+        font-size: 28px;
     }
     
-    .profile-div {
-        display: flex;
-        flex-direction: row;
-        width: 20%;
-        align-self: flex-end;
-        margin-right: 5rem;
+    .big-header-text {
+        font-size: 80px;
     }
     
+    .medium-header-text {
+        font-size: 50px;
+    }
+
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+
     .profile-img {
-        border-style: solid;
-        border-color: #30363d;
-        border-width: 0.1rem;
-        margin: 0.5rem;
-        
         /* Positioning */
         position: absolute;
-        right: 230px;
-        top: 150px;
+        right: 200px;
+        top: 380px;
     
-        width: 150px;
-        height: 150px;
+        width: 333px;
+        height: 333px; 
+    }
+
+    footer {
+        height: 570px;
+    }
     
-        /*  Rounded corners */
-        border-radius: 50%;
+    .footer-h5 {
+        font-size: 47px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
     
-        object-fit: cover;
+    .footer-text {
+        font-size: 30px;
+        margin-top: 25px;
+        margin-bottom: 0;
     }
 }
