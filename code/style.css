@@ -38,8 +38,6 @@ header {
   background: url(./images/orangebluepaint.jpg);
   background-size: cover;
   height: 520px;
-  left: 0px;
-  top: 0px;
 }
 
 .navbar-header {
@@ -69,6 +67,7 @@ a:visited {
   top: 121px;
   letter-spacing: 0.04em;
   color: white;
+  margin-bottom: 0;
 }
 
 .header-text p {
@@ -120,10 +119,15 @@ h1 {
   margin-right: 5px;
 }
 
+.introduction {
+  height: 100%;
+  background: rgba(211, 211, 211, 0.322);
+}
+
 .introduction p {
+  margin-top: 0;
   font-size: 17px;
   line-height: 29px;
-  margin: 50px 0px;
 }
 
 /* CONTAINER FOR ALL HEADERS */
@@ -132,10 +136,6 @@ h1 {
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   margin-top: 20px;
-}
-
-.tech {
-  background: rgba(211, 211, 211, 0.322);
 }
 
 .tech h2 {
@@ -150,6 +150,11 @@ h1 {
   line-height: 29px;
   display: inline-block;
   text-align: center;
+}
+
+.featured-projects {
+  background: rgba(211, 211, 211, 0.322);
+  padding-bottom: 30px;
 }
 
 .featured-projects h2 {
@@ -177,8 +182,7 @@ h1 {
 }
 
 .other-projects {
-  background: rgba(211, 211, 211, 0.322);
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .other-projects h2 {
@@ -204,6 +208,19 @@ h1 {
 
 .skill-container span {
   display: block;
+}
+
+.code-thoughts h2 {
+  font-size: var(--title-font-size);
+  background-color: var(--title-background);
+  color: var(--title-text-color);
+  padding: var(--title-padding);
+  display: inline-block;
+}
+
+.code-thoughts {
+  padding-bottom: 30px;
+  background: rgba(211, 211, 211, 0.322);
 }
 
 .more-about-me h2 {
@@ -236,7 +253,7 @@ footer {
   height: 300px;
   background-color: #014c8698;
   color: white;
-  padding-top: 80px;
+  padding: 40px 0;
   text-align: center;
 }
 
@@ -267,6 +284,8 @@ footer {
   font-size: 20px;
   font-weight: bold;
   color: white;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .image {
@@ -297,6 +316,7 @@ footer {
     width: 80%;
     margin: 0 auto;
   }
+
   .navbar-header {
     margin-right: 400px;
   }
@@ -309,18 +329,36 @@ footer {
     margin-left: 100px;
   }
 
+  h1 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  header p {
+    font-size: 24px;
+  }
+
   .header-image {
     position: absolute;
     right: 230px;
-    top: 350px;
-    width: 200px;
-    height: 200px;
+    top: 250px;
+    width: 300px;
+    height: 300px;
   }
 
   .introduction p {
+    font-size: 24px;
     width: 50%;
     text-align: center;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+
+  .portfolio-heading-container h2 {
+    font-size: 28px;
   }
 
   .tech p {
@@ -341,15 +379,10 @@ footer {
     display: none;
   }
 
-  .other-projects {
-    padding: 0 90px 40px 90px;
-  }
-
   .all-projects {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 30px;
-
     margin: 0 50px;
   }
 
@@ -358,9 +391,24 @@ footer {
     margin: 0 auto;
   }
 
+  .overlay p {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+  }
+
   .image-container {
     max-width: 100%;
     max-height: 100%;
+  }
+
+  .other-projects {
+    padding-bottom: 50px;
+  }
+
+  .tags span,
+  .skills span {
+    font-size: 18px;
   }
 
   .skill-container {
@@ -375,19 +423,7 @@ footer {
     text-align: center;
   }
 
-  /* .image-container .overlay:hover {
-    display: none;
-    cursor: pointer;
-  } */
+  footer {
+    font-size: 24px;
+  }
 }
-
-/* @media (min-width: 1023px) {
-  .all-projects {
-    width: 70%;
-  }
-
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-} */
