@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  /* color: rgb(0, 0, 0); */
 }
 
 body {
@@ -28,9 +29,14 @@ body {
   flex-wrap: wrap;
 }
 
+.header-description-container {
+  padding: 2rem 0 1.5rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .container {
-  width: 80%;
-  padding: 2rem 0;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -44,6 +50,19 @@ h2 {
   padding: 0 0.5rem;
   background-color: var(--blue);
   color: var(--white);
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
+h3,
+h4 {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  line-height: 2rem;
+}
+
+p {
+  line-height: 2rem;
 }
 
 .hero-image {
@@ -62,6 +81,37 @@ h2 {
 
 .icons-header {
   height: 40px;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.icons-main {
+  height: 40px;
+}
+
+.icon-for-more {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0.5rem;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.icon-wrapper > * {
+  padding-bottom: 0.5rem;
+  font-family: var(--ffRob);
+}
+
+.huerotate {
+  filter: hue-rotate(250deg);
+  -webkit-filter: hue-rotate(250deg);
 }
 
 .headertext {
@@ -83,6 +133,7 @@ h2 {
   font-size: 1.2em;
   line-height: 18px;
   letter-spacing: 0.04em;
+  background-color: rgb(0, 0, 0, 0.3);
 }
 
 .header-fname {
@@ -91,6 +142,7 @@ h2 {
   font-size: 1.1em;
   line-height: 1.2em;
   letter-spacing: 0.08em;
+  background-color: rgb(0, 0, 0, 0.3);
 }
 
 .header-job {
@@ -99,12 +151,14 @@ h2 {
   padding: 0.2em 0;
   line-height: 49px;
   letter-spacing: 0.2em;
+  background-color: rgb(0, 0, 0, 0.3);
 }
 
 .header-subjob {
   font-weight: bold;
   font-size: 1.7em;
   line-height: 40px;
+  background-color: rgb(0, 0, 0, 0.3);
 }
 
 .profile-pic-small {
@@ -113,7 +167,7 @@ h2 {
   width: 180px;
   height: 180px;
   top: 356px;
-  right: 49px;
+  right: 15%;
   position: absolute;
   object-fit: cover;
   border: 2px solid var(--white);
@@ -139,8 +193,32 @@ h2 {
   display: inline-block;
 }
 
-.main-tech-text {
+.main-tech {
   text-align: center;
+}
+
+.main-skills {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-skills > * {
+  padding: 0 0.5em 1rem 0.5rem;
+}
+
+.main-skills-extra {
+  display: none;
+}
+
+footer {
+  background-color: var(--blue);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  color: white !important;
 }
 
 @media (min-width: 768px) {
@@ -148,5 +226,10 @@ h2 {
     width: 250px;
     height: 250px;
     top: 298px;
+  }
+
+  .main-skills-extra {
+    display: block;
+    color: pink;
   }
 }
