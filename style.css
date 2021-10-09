@@ -98,7 +98,8 @@ body {
 	display: block;
 	width: 327px;
 	margin: 0 auto;
-	padding: 15px 25px;
+	
+	padding: 15px 0px 15px 0px;
 }
 
 /* HEADER HERO */
@@ -248,7 +249,7 @@ header video {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 327px;
+	width: 100%
 }
 
 .intro___circle {
@@ -280,9 +281,9 @@ header video {
 /* TECH SECTION */
 
 .tech {
-	padding: 0 15px;
-	display: flex;
-	justify-content: left;
+	padding: 0px;
+
+	width: 100%;
 }
 
 .tech___content {
@@ -302,22 +303,25 @@ header video {
 }
 
 .projects____content {
-	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
-	margin: 0;
+	margin: 10px 0;
+	
+	width: 100%
 }
 
 .projects____img {
-	width: 300px;
+	width: 325px;
 	position: relative;
+	display: flexbox;
+	align-items: center;
+	justify-content: center;
 }
 
 .all-img {
-	
-	width: 300px;
+	width: 325px;
 	background-size: cover;
 	display: block;
 	z-index: -1;
@@ -631,26 +635,30 @@ a {
 
 .contact {
 	padding: 60px 0;
-	
+	display: block;
+	word-wrap: break-word;
 }
 
 .contact___content {
-	width: 90%;
+
 	color: rgb(255, 255, 255);
 	padding: 0 25px;
-	display:flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	word-wrap: break-word;
 }
 
 .contact___text {
+	
 	display: flexbox;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
 	margin-top: 30px;
+	
 }
 
 .contact___text p {
@@ -659,7 +667,8 @@ a {
 	font-style: 200;
 	font-size: 21px;
 	line-height: 25px;
-	word-wrap: break-word;
+	
+	
 }
 
 /*  DESKTOP  */
@@ -687,7 +696,7 @@ a {
 
 	.container {
 		width: 1024px;
-		padding: 15px 15px;
+		padding: 25px 0px 45px 20px;
 		justify-content: center;
 		align-items: center;
 	}
@@ -738,10 +747,11 @@ a {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(1, 1fr);
 		grid-column-gap: 10px;
-		padding-bottom: 0px;
+		
 		align-items: left;
 		justify-content: space-evenly;
 		margin: 0 auto;
+		padding: 0px;
 	}
 
 	.project-desktop-layout {
@@ -763,11 +773,10 @@ a {
 	}
 
 	/* IMG project and articel */
-	
 
 	.projects____img {
 		height: 300px;
-		
+
 		width: 450px;
 	}
 
@@ -802,7 +811,7 @@ a {
 	}
 
 	.THOUGHTS-MORE____text {
-		padding: 0 15px;
+		padding: 0 5px;
 		width: 1024px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -839,7 +848,7 @@ a {
 	.Portfolio {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(8, 1fr);
+		grid-template-rows: repeat(1, 1fr);
 		grid-template-areas:
 			"header header header header"
 			"header header header header"
@@ -856,30 +865,47 @@ a {
 			"more more more more";
 	}
 
+
+
 	.container {
-		width: 768px;
-		padding: 15px 15px;
-		display: flexbox;
-		justify-content: center;
-		align-items: center;
+		width: 100%;
+		padding: 0px 0px 45px 0px;
+	
 	}
 
 	/* intro */
+	
+
+
+
+	
 	.intro___textsection {
-		padding: 0 15px;
-		width: 768px;
+		
+		width: 95%;
+		padding: 0 0 0 35px;
+	
+	
 	}
+	
+	
+
 
 	/* tech */
 
 	.tech___content {
-		width: 768px;
-	}
+		width: 95%;
+		padding: 0 0 0 35px;
+		
+
+ }
+
+
+
 
 	/* Project */
 
 	.projects____content {
-		width: 768px;
+		width: 100%
 	}
 
 	.layout-projects {
@@ -888,16 +914,23 @@ a {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		padding: 0 0 0 35px;
+
 	}
 
 	.other-project-container {
 		margin-top: 0px;
+		
+	}
+
+	.other-project{
+		padding: 0 0 0 35px;
+
 	}
 
 	/*  IMG articel and project */
 
 	.projects____img {
-		
 		display: flexbox;
 		justify-content: center;
 		align-items: center;
@@ -917,19 +950,25 @@ a {
 		display: flexbox;
 		flex-direction: column;
 		width: 100%;
-		padding: 0px 15px;
+		padding: 0px;
 	}
 
 	.small-articel {
 		width: 768px;
 		display: flexbox;
-		align-items: flex-start;
-		justify-content: flex-start;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.articel {
 		width: 768px;
 		white-space: nowrap;
+	}
+
+	.THOUGHTS-MORE____text{
+
+padding:0 0 0 75px ;
+
 	}
 
 	/* Skills */
@@ -939,6 +978,7 @@ a {
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 10px;
 		justify-content: center;
+		width: 95%;
 	}
 
 	.hidden-more {
