@@ -38,20 +38,39 @@ a {
     height: 300px;
 }
 
-/*icon header*/
 
-.icon-container {
+/*icon header*/
+.social-media-icons-header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.icon-container a {
-    margin-right: 10px;
-}
+.circles-header{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.icon {
-    width: 50px;
+  .icon-header{
+    font-size: 40px;
+    color:white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .circles-header:hover {
+    background-color: #32502E;
+  }
+
+  .container-header {
+    width: 320px;
+    margin: 20px auto;
 }
 
 .profile-img-container {
@@ -67,6 +86,7 @@ a {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    border:2px solid white;
 }
 
 .headings-container {
@@ -84,7 +104,7 @@ a {
     font-weight: bold;
 }
 
-.portfolio-section:nth-child(odd) {
+.portfolio-section:nth-child(2n) {
     background-color: #cecfce;
     padding: 5px;
 }
@@ -108,6 +128,7 @@ a {
 }
 
 /* profile text*/
+
 /* "lollypop" icon*/
 .line {
     border: 1px solid #32502E;
@@ -137,6 +158,11 @@ a {
     margin: 10px auto;
 }
 
+.card-text:hover {
+    text-decoration: underline;
+    color: #32502E;
+}
+
 .arrow-link {
     font-weight: bold;
     color:#607550;
@@ -153,6 +179,10 @@ a {
 
 .tags-container {
     margin:10px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3px;
 }
 
 .image {
@@ -202,6 +232,11 @@ a {
       margin: 20px auto;
   }
 
+  .content-container:hover {
+    text-decoration: underline;
+    color: #32502E;
+  }
+
   .content-container h2 {
     text-decoration: underline;
   }
@@ -228,35 +263,34 @@ a {
 }
 
 
-/*FOR MORE SECTION*/ 
-.icon-bottom-container {
+/*FOR MORE SECTION*/
+.social-media-icons-bottom {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
     margin: 40px auto;
 }
 
-.icon-border {
-    border:2px solid rgb(0, 0, 0);
+.circles{
+    border: 2px solid rgb(17, 17, 17);
     border-radius: 50%;
-}
-
-.icon-border:hover {
-    background-color: #406343;
-    border:2px solid #406343;
-}
-
-.icon-bottom {
-    width: 40px;
-    padding:10px;
+    width: 80px;
+    height: 80px;
     margin: 10px;
-}
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.icon-border {
-    margin: 10px;
-}
+  .icon{
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+  }
 
+  .circles:hover {
+    background-color: #32502E;
+  }
 
 /*footer */ 
 
@@ -286,8 +320,19 @@ footer {
 
 /*iphone 4 and 5*/
 @media (min-width:280px)  and (max-width: 375px) {
+    .container-header {
+        width: 240px;
+        margin: 20px auto;
+    }
+
     .container {
         width:240px;
+
+    }
+
+    .icon-header {
+        font-size: 30px;
+        margin: 0;
     }
 
     .profile-image {
@@ -299,13 +344,23 @@ footer {
     .skills {
         width: 130px;
     }
+
+    .circles {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
 }
 
 /*ipad */
 @media (min-width:768px) and (max-width:992px){
-    .container {
+    .container, .container-header {
         width:552px;
     }
+
 
     .icon {
         width: 65px;
@@ -340,7 +395,22 @@ footer {
 
 /*small screens and ipad pro*/
 @media (min-width:993px)  {
-    .container {
+
+    .header-section {
+        height: 400px;
+    }
+
+    .profile-image {
+        top: 269px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .headings-container {
+        font-size: 28px;
+    }
+
+    .container, .container-header {
         width:615px;
     }
 
@@ -350,10 +420,6 @@ footer {
 
     .icon {
         width: 76px;
-    }
-
-    .headings-container {
-        font-size: 22px;
     }
 
     .my-name-title {
