@@ -178,6 +178,8 @@ h4 {
 
 }
 
+
+
 .portfolio-header-container {
     /* text-align: center; */
     display: flex; 
@@ -198,21 +200,37 @@ h4 {
 
 }
 
-.overlay {
+.image {
+    display: block;
+    width: 100%;
+
+}
+
+.project-image-overlay {
     position: absolute; 
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(156, 166, 197, 0.5);
+    /* background: rgba(156, 166, 197, 0.5); */
+  
+  /* This is a semi-transparent overlay on the image */
+  background-color: rgba(0, 0, 0, 0.5);
 
-
+  /* This will cause the overlay to fade */
+  transition: 0.5s ease;
 }
 
-.image {
-    display: block;
-    width: 100%;
-}
+.project-image:hover {
+    /* This causes the text to fade, color is the text color */
+    color: transparent;
+  }
+  
+  .project-image-overlay:hover {
+    /* This causes the original background color (.5 opacity) to become transparent */
+    background-color: transparent;
+  }
+
 
 .portfolio-header-smaller {
     text-align: center;
@@ -245,6 +263,11 @@ h4 {
   border-radius: 5px;
 }
 
+
+.project-gridbox-desktop {
+   display: none;
+
+}
 
 
 
@@ -279,6 +302,7 @@ h4 {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin-top: 5%;
   }
   .for-more-socials img {
     filter: invert(29%) sepia(11%) saturate(6119%) hue-rotate(143deg) brightness(30%) contrast(101%);
@@ -407,14 +431,14 @@ footer {
 /* Responsiveness TABLET */
 @media (min-width: 768px) {
     .container {
-        width: 760px;
+        width: 700px;
         margin: 0 auto;
     
     }
 }
 
-/* Responsiveness SMALL SCREEN */
-@media (min-width: 992px){
+/* Responsiveness SCREEN */
+@media (min-width: 1024px){
 h1 {
     font-size: 48px;
     line-height: 59px;
@@ -437,6 +461,12 @@ h4 {
     line-height: 41px;
 }
 
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+
+}
 
 .top-nav {
     position: absolute;
@@ -498,6 +528,30 @@ h4 {
     line-height: 50px;
 
 }
+
+
+
+.project-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+    border: 2px solid red;
+
+}
+.project-gridbox {
+    grid-column: span 1;
+    border: 2px solid blue;
+}
+
+.project-gridbox-desktop {
+    display: grid;
+    grid-column: span 1;
+    border: 2px solid blue;
+
+}
+
+
+
 
 .tech-textbox {
     font-size: 30px;
