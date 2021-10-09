@@ -57,22 +57,18 @@ h1 {
   height: 202px;
   left: 24px;
   top: 161px;
-
   font-family: var(--ffR);
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 158%;
   text-shadow: 1px 1px 1px grey;
-
   letter-spacing: 0.04em;
-
   color: #ffffff;
 }
 
 .portfolio-container {
   padding: 0.5em;
-  max-width: 650px;
 }
 
 .intro-box {
@@ -129,6 +125,23 @@ h1 {
   letter-spacing: 0.01em;
 }
 
+.title-other {
+  color: #fa382f;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+}
+.title-other-black {
+  color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+}
+
 .project-paragraph {
   font-family: Roboto;
   font-style: normal;
@@ -137,6 +150,16 @@ h1 {
   line-height: 29px;
   align-items: center;
   letter-spacing: 0.01em;
+}
+
+.paragraph-other {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  align-items: center;
+  letter-spacing: 0.01em;
+  line-height: 1.5em;
 }
 
 .paragraph {
@@ -153,12 +176,6 @@ h1 {
 .tags-container {
   display: flex;
   flex-direction: row;
-}
-
-.language-tags {
-  text-align: center;
-  background-color: #fa382f;
-  padding: 0.5em;
 }
 
 .tech-box {
@@ -214,16 +231,16 @@ h1 {
 }
 
 .language-tags {
-  background-color: red;
   font-family: 'Roboto', sans-serif;
-  font-size: 9px;
+  font-size: 12px;
   text-align: center;
   color: white;
-  font-weight: 300;
-  padding: 5px 5px;
+  font-weight: bold;
+  padding: 5px;
   width: fit-content;
   margin: 5px 5px 5px 0px;
   align-self: flex-start;
+  background-color: #fa382f;
 }
 .tags-container {
   display: flex;
@@ -251,6 +268,12 @@ h1 {
   width: 100%;
   margin: 10px 0px;
   justify-content: center;
+}
+
+.date {
+  font-family: Roboto;
+  margin-top: 1em;
+  color: rgb(151, 148, 148);
 }
 
 .article-link {
@@ -298,8 +321,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2em;
   /* justify-content: center; */
-  padding: 3em 0em 3em 0em;
 }
 
 .social-container {
@@ -339,11 +362,43 @@ li {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 668px) {
   .only-desktop {
     display: inline-block;
   }
   .only-mobile {
     display: none;
+  }
+  .thoughts-container {
+    flex-direction: row;
+    gap: 2em;
+    flex-wrap: nowrap;
+  }
+
+  .project-card {
+    width: 45%;
+    max-width: 350px;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+  .intro-box,
+  .tech-box,
+  .thoughts-box,
+  .skills-box,
+  .for-more-box,
+  .project-container,
+  .other-projects,
+  .contact {
+    padding: 40px 130px 40px 130px;
+  }
+  .links-color {
+    color: red;
+    font-weight: 600;
   }
 }
