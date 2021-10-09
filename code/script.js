@@ -5,11 +5,11 @@ let titleColor  = document.getElementById('headertext')
 let gitIcon = document.getElementById('git-icon')
 let LinkedInIcon = document.getElementById('linkedin-icon')
 let StackOverflowIcon = document.getElementById('stack-icon')
+let button = document.querySelector('button')
 
 
-
-
-
+//Changes the css to darkmode. 
+//Could easily be less code but this is what I could solve by myself
 function changeColors() { 
     bodyColor.classList.toggle('color-toggle')
     headerImg.classList.toggle('header-toggle')
@@ -18,6 +18,7 @@ function changeColors() {
     gitIcon.classList.toggle('icon-toggle')
     LinkedInIcon.classList.toggle('icon-toggle')
     StackOverflowIcon.classList.toggle('icon-toggle')
+    button.classList.toggle('button-dark')
 };
  
 
