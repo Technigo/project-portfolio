@@ -229,6 +229,7 @@ a:link {
   font-style: normal;
   font-weight: 400;
   margin: 0;
+  font-size: 20px;
   color: black;
   text-decoration: none;
 }
@@ -311,6 +312,7 @@ a:link {
   font-family: "Roboto", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
   grid-column-gap: 6px;
 }
 
@@ -381,33 +383,130 @@ footer {
 
 /* DESIGN FOR DESKTOP */
 @media (min-width: 1024px) {
+  p {
+    font-size: 25px;
+    line-height: 50px;
+    /* font-style: normal;
+    font-weight: 400; */
+  }
+
+  h2 {
+    /* margin-top: 5%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase; */
+    font-size: 20px;
+    /* color: #345555; */
+    /* margin-bottom: 0; */
+  }
+
+  .title-background {
+    font-size: 42px;
+    width: max-content;
+  }
+  .title-background-none {
+    /* text-transform: uppercase;
+    color: #345555;
+    padding: 3px;
+    margin-top: 10%; */
+    margin: 10% 0 5%;
+    font-size: 32px;
+  }
+
   .hero {
     height: 681px;
     background-size: cover;
   }
 
-  .container {
+  .hero__text {
+    /* color: #ffff;
+    position: absolute; */
+    width: 607px;
+    /* height: 339px; */
+    left: 11%;
+    /* top: 20%; */
+  }
+
+  .hero__text-box-1 {
+    /* font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal; */
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .hero__text-box-2 {
+    /* font-weight: 700;
+    font-style: normal; */
+    font-size: 82px;
+    line-height: 100px;
+    /* margin: 5% 0; */
+  }
+
+  .hero__text-box-4 {
+    /* font-family: "Montserrat"; */
+    /* font-weight: 400;
+    font-style: normal; */
+    font-size: 40px;
+    /* line-height: 50px; */
+  }
+
+  .hero__nav {
+    position: absolute;
+    background-position: top;
+    width: 240px;
+    height: 80px;
+    top: 8%;
+    right: 15%;
+  }
+
+  .hero__profile-pic {
+    position: absolute;
+    right: 15%;
+    width: 333px;
+    height: 333px;
+  }
+
+  .line {
+    border: 2px solid #a06f74;
+    width: 40px;
+    margin-bottom: 8px;
+  }
+
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin-bottom: 4px;
+  }
+
+  .portfolio__container {
     width: 768px;
     margin: 0 auto;
   }
 
   .portfolio__grid-wrapper {
     display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) */
     grid-template-columns: 1fr 1fr;
+    width: auto;
     grid-column-gap: 5%;
     justify-content: center;
   }
 
   .portfolio__grid-wrapper-child {
-    /* grid-column: span 2; */
-    /* display: grid; */
     width: 100%;
   }
-
+  /* 
   .portfolio {
     display: grid;
-
     padding: 5% 0 5%;
+  } */
+
+  .portfolio__image {
+    /* display: block;
+    position: relative; */
+    /* width: 523px; */
   }
 
   #desktop {
@@ -418,9 +517,23 @@ footer {
     display: none;
   }
 
+  .portfolio__skills-container {
+    /* font-family: "Roboto", sans-serif;
+    display: grid; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* align-items: center;
+    justify-items: center;
+    grid-column-gap: 6px; */
+  }
+
+  ul {
+    /* list-style-type: none; */
+    font-size: 21px;
+  }
+  /* 
   .desktop {
     display: grid;
-  }
+  } */
 
   /* @media (min-width: 768px) {
 
