@@ -7,21 +7,39 @@ body {
   margin: 0;
 }
 
-/* .page-container:nth-child(even) {
-  background-color: #23a834;
-} */
+:root {
+  --title-background: #fe8807;
+  --title-text-color: white;
+  --title-font-size: 22px;
+  --title-padding: 3px 5px;
+  --dark-background: rgba(211, 211, 211, 0.322);
+}
 
 h3 {
   text-transform: uppercase;
   font-size: 17px;
 }
 
-:root {
-  --title-background: #fe8807;
-  --title-text-color: white;
-  --title-font-size: 22px;
-  --title-padding: 0 5px;
-  /* check which font where */
+.featured-projects h2,
+.skills h2,
+.other-projects h2,
+.code-thoughts h2,
+.more-about-me h2 {
+  font-size: var(--title-font-size);
+  line-height: 27px;
+  color: var(--title-text-color);
+  background: var(--title-background);
+  display: inline-block;
+  padding: var(--title-padding);
+  text-align: center;
+}
+
+/* CONTAINER FOR ALL HEADERS */
+.portfolio-heading-container {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
 }
 
 .container {
@@ -86,7 +104,7 @@ h1 {
   font-size: 40px;
 }
 
-.background {
+.other-knowledge {
   font-size: 18px;
   display: block;
 }
@@ -120,23 +138,19 @@ h1 {
 }
 
 .introduction {
+  margin-top: 0;
   height: 100%;
-  background: rgba(211, 211, 211, 0.322);
+  background: var(--dark-background);
 }
 
 .introduction p {
   margin-top: 0;
+  padding: 30px 0;
   font-size: 17px;
   line-height: 29px;
 }
 
-/* CONTAINER FOR ALL HEADERS */
-.portfolio-heading-container {
-  display: flex;
-  justify-content: center;
-  font-family: "Montserrat", sans-serif;
-  margin-top: 20px;
-}
+/* TECH SECTION */
 
 .tech h2 {
   font-size: var(--title-font-size);
@@ -151,110 +165,15 @@ h1 {
   display: inline-block;
   text-align: center;
 }
-
+/* FEATURED PROJECTS SECTION */
 .featured-projects {
-  background: rgba(211, 211, 211, 0.322);
+  background: var(--dark-background);
   padding-bottom: 30px;
 }
 
-.featured-projects h2 {
-  font-size: var(--title-font-size);
-  line-height: 27px;
-  color: var(--title-text-color);
-  background: var(--title-background);
-  display: inline-block;
-  padding: var(--title-padding);
-}
-
-.featured-projects h3,
-.other-projects h3,
-.skills p {
-  margin-bottom: 2px;
-  color: #fe8807;
-  text-shadow: 0 0 1px rgb(143, 141, 141);
-}
-
-.tags span {
-  color: white;
-  padding: 4px 2px;
-  background-color: #014c8698;
-  font-size: 9px;
-}
-
-.other-projects {
-  padding-bottom: 30px;
-}
-
-.other-projects h2 {
-  font-size: var(--title-font-size);
-  background-color: var(--title-background);
-  color: var(--title-text-color);
-  display: inline-block;
-  padding: var(--title-padding);
-}
-
-.skills h2 {
-  font-size: var(--title-font-size);
-  background-color: var(--title-background);
-  color: var(--title-text-color);
-  padding: var(--title-padding);
-  display: inline-block;
-}
-
-.skill-container {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.skill-container span {
-  display: block;
-}
-
-.code-thoughts h2 {
-  font-size: var(--title-font-size);
-  background-color: var(--title-background);
-  color: var(--title-text-color);
-  padding: var(--title-padding);
-  display: inline-block;
-}
-
-.code-thoughts {
-  padding-bottom: 30px;
-  background: rgba(211, 211, 211, 0.322);
-}
-
-.more-about-me h2 {
-  font-size: var(--title-font-size);
-  background-color: var(--title-background);
-  color: var(--title-text-color);
-  padding: 0 5px;
-  display: inline-block;
-  margin-bottom: 30px;
-}
-
-.more-about-me {
-  background: rgba(211, 211, 211, 0.322);
-  padding-bottom: 40px;
-  text-align: center;
-}
-
-.more-about-me a {
-  color: var(--title-background);
-  border: 2px solid var(--title-background);
-  margin: 0 10px;
-  padding: 8px 11px;
-  border-radius: 50%;
-}
-
-footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  height: 300px;
-  background-color: #014c8698;
-  color: white;
-  padding: 40px 0;
-  text-align: center;
+.featured-projects a {
+  color: black;
+  text-decoration: none;
 }
 
 .image-container {
@@ -286,11 +205,30 @@ footer {
   color: white;
   padding: 10px;
   background: rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
-.image {
+.image-feat-projects {
   max-width: 100%;
-  display: block;
+}
+
+.featured-projects h3,
+.other-projects h3,
+.skills p {
+  margin-bottom: 2px;
+  color: #fe8807;
+  text-shadow: 0 0 1px rgb(143, 141, 141);
+}
+
+.tags span {
+  color: white;
+  padding: 4px 2px;
+  background-color: #014c8698;
+  font-size: 9px;
+}
+/* OTHER PROJECTS */
+.other-projects {
+  padding-bottom: 30px;
 }
 
 .other-projects a {
@@ -303,26 +241,54 @@ footer {
 .other-projects p {
   margin: 5px;
 }
-
-.featured-projects a {
-  color: black;
-  text-decoration: none;
+/* SKILLS SECTION */
+.skill-container {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-/* @media 480px-679 container: width: 450px 30px mindre än min-width */
+.skill-container span {
+  display: block;
+}
+/* THOUGHTS ABOUT CODE */
+.code-thoughts {
+  padding-bottom: 30px;
+  background: var(--dark-background);
+}
+/* MORE ABOUT ME */
+.more-about-me {
+  background: var(--dark-background);
+  padding-bottom: 40px;
+  text-align: center;
+}
 
-@media (min-width: 767px) /* and (max-width: 1023px) */ {
+.more-about-me a {
+  color: var(--title-background);
+  border: 2px solid var(--title-background);
+  margin: 0 10px;
+  padding: 8px 11px;
+  border-radius: 50%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 300px;
+  background-color: #014c8698;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+@media (min-width: 767px) {
   .container {
     width: 80%;
     margin: 0 auto;
   }
 
   .navbar-header {
-    margin-right: 400px;
-  }
-
-  .navbar-header a {
-    margin: 0 5px;
+    margin-right: 200px;
   }
 
   .header-text {
@@ -354,7 +320,7 @@ footer {
     width: 50%;
     text-align: center;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 50px 0;
   }
 
   .portfolio-heading-container h2 {
@@ -366,6 +332,7 @@ footer {
     margin: 0 auto;
     display: block;
     padding-bottom: 20px;
+    font-size: 18px;
   }
 
   .featured-projects {
@@ -391,12 +358,6 @@ footer {
     margin: 0 auto;
   }
 
-  .overlay p {
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.3);
-    font-size: 24px;
-  }
-
   .image-container {
     max-width: 100%;
     max-height: 100%;
@@ -409,6 +370,11 @@ footer {
   .tags span,
   .skills span {
     font-size: 18px;
+  }
+
+  .featured-projects span {
+    display: inline-block;
+    margin: 2px 2px;
   }
 
   .skill-container {
