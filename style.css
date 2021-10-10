@@ -6,14 +6,58 @@
 	padding: 0;
 }
 
+:root {
+	--primary: #fa382f;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
 body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 	background-color: white;
+	line-height: 170%;
+	color: black;
 }
 
-/* Header */
+/* CONTAINER FOR EACH SECTION */
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+/* PROEJCT CONTAINER HEADINGS */
+.portfolio-heading-container,
+.more-blog-heading-container,
+.skills-heading-container,
+.for-more-heading-container,
+.blogposts-heading-container {
+	display: flex;
+	justify-content: center;
+}
+
+.skills-title,
+.for-more-title,
+.thoughts-about-code-title,
+.tech-section-title,
+.featured-project-title,
+.blog-title,
+.portfolio-title {
+	background-color: var(--primary);
+	color: #fff;
+	font-size: 20px;
+	padding: 8px;
+	margin: 35px 0 35px 0;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+/* HEADER*/
 header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
 		url(./assets/lavender.jpg);
@@ -38,7 +82,6 @@ header {
 .job-title {
 	width: 220px;
 	height: 202px;
-	border: red solid 2px;
 	margin-top: 30px;
 	margin-left: 24px;
 	line-height: 18px;
@@ -48,12 +91,12 @@ header {
 	justify-content: center;
 }
 
-.portfolio-title {
+.about-title {
 	font-size: 13px;
 	font-family: 'Roboto';
 	font-weight: 400;
 	line-height: 18px;
-	text-transform: uppercase;
+	letter-spacing: 0.04em;
 }
 
 .job-title h2 {
@@ -65,13 +108,12 @@ header {
 }
 
 .job-title p {
-	font-weight: 400;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	line-height: 50px;
 }
 
-.image-container {
+.image-container-header {
 	margin-top: 50px;
 	margin-right: 24px;
 	align-self: flex-end;
@@ -92,22 +134,21 @@ header {
 }
 
 /* INTRODUCTION-SECTION */
-.introduction-section {
+.summary-section {
 	background-color: #f4f4f4;
 	height: 300px;
-	font-family: Montserrat;
 	align-items: center;
 	display: flex;
 	justify-content: center;
 	line-height: 30px;
 }
-.introduction-section p {
+.summary-section p {
 	max-width: 60%;
 	line-height: 25px;
 }
 
 .line {
-	border: 1px solid #fa382f;
+	border: 1px solid var(--primary);
 	width: 40px;
 	display: inline-block;
 	margin-bottom: 4px;
@@ -116,7 +157,7 @@ header {
 .dot {
 	height: 10px;
 	width: 10px;
-	background-color: #fa382f;
+	background-color: var(--primary);
 	border-radius: 50%;
 	display: inline-block;
 }
@@ -133,15 +174,7 @@ header {
 	padding-bottom: 20px;
 }
 
-.tech-section-title {
-	background-color: #fa382f;
-	color: white;
-	display: inline-block;
-	font-size: 30px;
-}
-
 .tech-section-text {
-	font-family: 'Montserrat';
 	max-width: 60%;
 	height: auto;
 	display: flex;
@@ -160,24 +193,6 @@ header {
 
 .portfolio-section a {
 	text-decoration: none;
-}
-
-.container {
-	width: 80%;
-	margin: 0 auto;
-}
-
-.portfolio-heading-container {
-	display: flex;
-	justify-content: center;
-}
-
-.portfolio-heading {
-	background-color: #fa382f;
-	color: #fff;
-	text-align: center;
-	text-transform: uppercase;
-	padding: 3px;
 }
 
 .image-container {
@@ -205,7 +220,6 @@ header {
 	text-align: center;
 	text-transform: uppercase;
 	color: white;
-	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.07em;
 }
 
@@ -220,7 +234,7 @@ header {
 	color: black;
 }
 .project-text h3 {
-	color: #ff484c;
+	color: var(--primary);
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 17px;
@@ -237,7 +251,6 @@ header {
 .tag-container span {
 	font-family: 'Roboto', sans-serif;
 	background-color: #fddfe7;
-	font-weight: 400;
 	font-size: 9px;
 	padding: 5px;
 	margin-right: 13px;
@@ -270,26 +283,25 @@ article p {
 	font-size: 25px;
 	line-height: 41px;
 	letter-spacing: 0.01em;
-	color: #ff484c;
-	text-transform: uppercase;
+	color: var(--primary);
 	display: block;
 	align-self: flex-end;
+	text-transform: uppercase;
 }
 
 .project-title {
-	color: #ff484c;
+	color: var(--primary);
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 17px;
 	text-align: left;
 	margin-bottom: 0;
-	margin-top: ;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 
 .red {
-	color: #ff484c;
+	color: var(--primary);
 }
 
 .other-project-tags p {
@@ -306,7 +318,6 @@ article p {
 .other-project-tags span {
 	font-family: 'Roboto', sans-serif;
 	background-color: #fddfe7;
-	font-weight: 400;
 	font-size: 9px;
 	padding: 5px;
 	margin-right: 13px;
@@ -322,36 +333,20 @@ article p {
 	text-decoration: none;
 }
 
-.thoughts-about-code-title {
-	background-color: #fa382f;
-	color: #fff;
-	text-align: center;
-	text-transform: uppercase;
-	padding: 3px;
-}
-
-.my-thoughts-heading {
-	background-color: #fa382f;
-	color: #fff;
-	text-align: center;
-	text-transform: uppercase;
-	padding: 3px;
-}
-
-.blogposts-heading-container {
-	display: flex;
-	justify-content: center;
-}
-
 /* More-thoughts */
+
+.more-thoughts-section {
+	padding-bottom: 100px;
+}
 .more-thoughts-section a {
 	text-decoration: none;
+	color: black;
 }
 
-.more-blog-heading-container {
+/* .more-blog-heading-container {
 	justify-content: center;
 	display: flex;
-}
+} */
 
 .more-thoughts-project-title {
 	font-family: 'Roboto', sans-serif;
@@ -360,18 +355,13 @@ article p {
 	font-size: 25px;
 	line-height: 41px;
 	letter-spacing: 0.01em;
-	color: #fa382f;
+	color: var(--primary);
 	text-transform: uppercase;
 	display: block;
 	align-self: flex-end;
 }
 
 /* SKILL-SECTION */
-
-.skills-heading-container {
-	display: flex;
-	justify-content: center;
-}
 
 .skills-section {
 	background-color: #f4f4f4;
@@ -405,7 +395,7 @@ article p {
 	font-size: 17px;
 	line-height: 3;
 	text-align: center;
-	color: #fa382f;
+	color: var(--primary);
 	width: auto;
 	text-transform: uppercase;
 }
@@ -469,7 +459,6 @@ article p {
 
 .contact-title {
 	color: white;
-	text-transform: uppercase;
 	font-size: 22px;
 	padding: 8px;
 	margin: 35px 0 35px 0;
@@ -483,19 +472,53 @@ article p {
 	align-items: center;
 	color: white;
 	font-size: 20px;
-	font-family: 'Montserrat', sans-serif;
 }
 
-.skills-title,
-.for-more-title,
-.thoughts-about-code-title,
-.tech-section-title,
-.featured-project-title {
-	background-color: #fa382f;
-	color: #fff;
-	/* display: inline-block; */
-	font-size: 22px;
-	padding: 8px;
-	margin: 35px 0 35px 0;
-	text-transform: uppercase;
+/* MEDIA QUERIES */
+
+/* TABLET VERSION */
+@media (min-width: 667px) {
+	.social-media-icons a {
+		width: 40px;
+		height: 40px;
+	}
+
+	.portfolio-photo {
+		width: 215px;
+		height: 215px;
+	}
+
+	.job-title {
+		width: 350px;
+	}
+
+	.portfolio-grid-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+
+	.blog-grid-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+	.portfolio-photo {
+		width: 333px;
+		height: 333px;
+	}
+
+	header {
+		height: 685px;
+	}
+
+	.social-media-icons a {
+		height: 100px;
+		width: 200px;
+		justify-content: space-around;
+	}
 }
