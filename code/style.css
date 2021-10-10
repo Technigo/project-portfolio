@@ -292,6 +292,11 @@ h6 {
   position: relative;
 }
 
+.project-desktop,
+.project-desktop-2 {
+  display: none;
+}
+
 .other-projects {
   text-transform: uppercase;
   text-align: center;
@@ -455,11 +460,24 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .title {
+    left: 15%;
+  }
   .soMe {
-    left: 75%;
+    left: 70%;
   }
   .profile-img {
-    left: 70%;
+    left: 65%;
+  }
+
+  .intro-text {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .tech-text {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .red {
@@ -504,7 +522,11 @@ footer {
   .linkedin-icon,
   .github-icon,
   .stackoverflow-icon {
-    width: 60px;
+    width: 80px;
+  }
+
+  .profile-img {
+    left: 75%;
   }
 
   .intro-text {
@@ -523,17 +545,45 @@ footer {
 
   .project-container-1 {
     width: 48%;
+    height: auto;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 330px;
+  }
+
+  .card-container-1 {
+    height: 340px;
   }
 
   .project-container-2 {
     width: 48%;
+    height: auto;
     margin-top: -70px;
+  }
+
+  .card-container-2 {
+    height: 340px;
+  }
+
+  .wrap-container-desktop {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    justify-content: space-between;
+  }
+  .project-desktop,
+  .project-desktop-2 {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: auto;
   }
 
   .other-projects-wrapper {
     display: flex;
     flex-direction: column;
-    /* padding-left: 90px; */
   }
 
   .my-thoughts-container {
@@ -543,7 +593,6 @@ footer {
   .desktop-wrapper {
     display: flex;
     flex-direction: row;
-    /* gap: 50px; */
     justify-content: space-between;
   }
 
