@@ -13,6 +13,10 @@ html {
     margin: 0;
     color: #333;
   }
+  
+  /* .page-background:nth-child(even) {
+    background-color: #F5F4F0;
+  } */
 
 
   /* HERO */
@@ -187,7 +191,8 @@ a {
 /* SKILLS */
 
 .my-skills {
-  padding: 0 1rem 2rem 1rem;
+  padding: 2rem 1rem;
+  background-color: #F5F4F0;
 }
 
 .tag-wrapper {
@@ -212,6 +217,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .tag-large {
@@ -264,6 +270,12 @@ a {
 }
 
 .arrowlink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.arrowlink-card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -350,6 +362,12 @@ a {
   margin-bottom: 0.5rem;
 }
 
+.my-thoughts {
+  background-color: #F5F4F0;
+  padding-top: 1rem;
+}
+
+
 .corbijn-grid {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
@@ -363,18 +381,6 @@ a {
   grid-row-gap: 0px;
   margin-bottom: 2rem;
   padding-top: 2rem;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". a b"
-    "c c b"
-    "d . e";
 }
 
 .a { 
@@ -509,25 +515,26 @@ a {
   }
 
   .my-skills {
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem;
 }
 
-.portfolio {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
+  .portfolio {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 
-.portfolio-grid {
-  grid-gap: 1rem;
-}
+  .portfolio-grid {
+    grid-gap: 1rem;
+  }
 
-.section-heading {
-  padding: 0 2rem 0 2rem;
-}
+  .section-heading {
+    padding: 0 2rem 0 2rem;
+  }
 
-.section-headingUi {
-  padding-top: 2rem;
-}
+  .section-headingUi {
+    padding-top: 2rem;
+  }
+
 }
 
 
@@ -582,11 +589,25 @@ h3 {
   padding-right: 0;
 }
 
+.linkedin-logo:hover {
+  position: relative;
+  transform: scale(1.2);
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+
 .github-logo {
   display: flex;
   width: 28px;
   padding-left: 1rem;
   padding-right: 0;
+}
+
+.github-logo:hover {
+  position: relative;
+  transform: scale(1.2);
+  transition-property: all;
+  transition-duration: 0.4s;
 }
 
 .social-icons {
@@ -639,6 +660,13 @@ h1 {
   font-weight: 400;
   cursor: pointer;
 }
+
+.contact-btn-desktop:hover {
+position: relative;
+transform: scale(1.1);
+transition-property: all;
+transition-duration: 0.6s;
+}
   
 .mobile-bottom-nav {
   display: none;
@@ -664,6 +692,13 @@ h1 {
 .nav-link {
   margin-bottom: 2rem;
   font-size: 1rem;
+}
+
+.nav-link:hover {
+  position: relative;
+  transform: scale(1.04);
+  transition-property: all;
+  transition-duration: 0.6s;
 }
 
 
@@ -765,7 +800,7 @@ a {
 
 .portfolio {
   margin: 0;
-  padding: 4rem 12% 0 12%;
+  padding: 4rem 12%;
   border-radius: 0;
   box-shadow: none;
 }
@@ -785,12 +820,27 @@ a {
   border-radius: 8px;
 }
 
+.project-item:hover {
+  position: relative;
+  transform: scale(1.04);
+  transition-property: all;
+  transition-duration: 0.6s;
+}
+
 .project-text-container {
   padding: 0 1rem 1.2rem 1rem;
 }
 
 .github-link {
   font-size: 1rem;
+}
+
+.arrowlink:hover {
+  position: absolute;
+  transform: scale(1.05);
+  /* transition-property: all; */
+  transition-duration: 0.6s;
+  cursor: pointer;
 }
 
 .project-item p {
@@ -818,6 +868,10 @@ a {
   padding: 0.4rem 0.5rem;
 }
 
+.portfolio-ui {
+  padding-top: 3rem;
+}
+
 .ui-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,3fr));
@@ -830,6 +884,13 @@ a {
 .ui-img {
   width: 100%;
   display: block;
+}
+
+.img-container:hover {
+  position: relative;
+  transform: scale(0.96);
+  transition-property: all;
+  transition-duration: 0.6s;
 }
 
 .img-container h3 {
@@ -852,9 +913,26 @@ a {
   margin-bottom: 1rem;
 }
 
+.number:hover {
+  position: relative;
+  transform: scale(1.05);
+  transition-property: all;
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+
+.email:hover {
+  position: relative;
+  transform: scale(1.05);
+  transition-property: all;
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+
 .footer-heading {
   font-size: 56px;
   font-weight: 100;
   margin-bottom: 4rem;
 }
+
 }
