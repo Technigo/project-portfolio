@@ -45,7 +45,7 @@ h3 {
   margin-bottom: 30px;
   text-align: center;
   color: #FFFFFF;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 } 
 
 h4 {
@@ -85,7 +85,7 @@ header {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(13, 40px);
   background: linear-gradient(rgba(44, 40, 27, 0.22), rgba(41, 37, 25, 0.63)),
-      url("./assets/pexels-magda-ehlers-1586951.jpg");
+      url("./assets/pexels-magda-ehlers-1586951.webp");
   height: 520px;
   background-position: center;
   background-repeat: no-repeat;
@@ -212,8 +212,33 @@ header {
 
 .image-container {
 	position: relative;
+  aspect-ratio: 16/9;
   display: grid;
   margin-bottom: 20px;
+}
+
+.github {
+  background: url('./assets/pro_gitHub_tracker.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weather {
+  background: url('./assets/pro_weather-app.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.guess {
+  background: url('./assets/pro_guees_who.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chatbot {
+  background: url('./assets/pro_pretty_pets.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .image-container:hover h4 {
@@ -231,13 +256,6 @@ header {
 
 .overlay:hover {
   background-color: transparent;
-}
-
-.projects-image {
-	width: 100%;
-  height: 200px;
-  transition: 0.5s ease;
-  object-fit: cover;
 }
 
 .project-image-title {
@@ -283,16 +301,24 @@ header {
   margin-bottom: 30px;
 }  
 
-.thoughts-img {
-  order: -1;
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 2px;
+.thoughts-image-container {
+  aspect-ratio: 16/9;
+  display: grid;
+}
+
+.first-post {
+  background: url('./assets/example-thought.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.second-post {
+  background: url('./assets/other-thought.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .date {
-  order: -1;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -318,7 +344,6 @@ header {
   line-height: 32px;
   color: #000000;
 }
-
 
 .thoughts ul {
   font-family: 'Roboto', sans-serif;
@@ -388,7 +413,7 @@ header {
   height: 60px;
   width: 60px;
   margin-bottom: 10px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
   transition: background-color .4s;
 }
 
@@ -476,17 +501,19 @@ footer p, a {
       display: unset;
   }
 
+  .projects, .thoughts {
+    margin: 0 10% 30px 10%;
+  }
+
   .featured-projects-container, .thoughts-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
   }
-
-  
+ 
   .skills-container article {
       padding-bottom: 20px;
   }
-
 }
 
 /* desktop */

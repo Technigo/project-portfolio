@@ -11,8 +11,7 @@ A lot of effort in this project was put in responsive design and accessibility. 
 * Responsive design
 
 # Links
-Link to Netlify;
-https://www.nehrwein.com/
+Check out my profile @: https://www.nehrwein.com/
 
 Link to accessibility-tools that I used:
 https://validator.w3.org/
