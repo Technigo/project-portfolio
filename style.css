@@ -2,12 +2,14 @@ body {
 	margin: 0;
 }
 header {
+	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	padding: 40px var(--main-padding-sides);
 	background-image: url(/images/images/header-image-2.png);
+	background-repeat: no-repeat;
 }
 .header-profile {
 	height: 180px;
@@ -15,6 +17,40 @@ header {
 	object-fit: cover;
 	border-radius: 50%;
 	border: 2px solid #f4f4f4;
+}
+
+.header-icon {
+	position: relative;
+	width: 40px;
+}
+.header-text-container {
+	font-style: normal;
+	font-weight: 400;
+	text-align: left;
+	color: rgb(255, 255, 255);
+}
+.header-name-text {
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 0.04em;
+	font-weight: bold;
+}
+.header-text-description1 {
+	font-size: 40px;
+	line-height: 49px;
+	font-weight: bold;
+}
+
+.header-text-description2 {
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+.introduction {
+	margin: 30px auto 10px;
+	width: 75%;
+	text-align: center;
 }
 
 .portfolio-section:nth-child(even) {
@@ -74,8 +110,14 @@ header {
 	color: #fa382f;
 	text-transform: uppercase;
 }
+.robototime {
+	font-family: 'Roboto', sans-serif;
+}
+.project-heading {
+	color: #fa382f;
+}
 
-span {
+.span-tags {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 9px;
@@ -84,7 +126,21 @@ span {
 	color: #000000;
 	background: #fddfe7;
 	padding: 7px;
+	font-family: 'Roboto', sans-serif;
 }
+.thoughts-link {
+	color: black;
+	font-family: 'Roboto';
+	font-weight: 700;
+}
+.thoughts-date {
+	color: #fa382f;
+}
+.for-more-icon {
+	position: relative;
+	width: 60px;
+}
+
 footer {
 	background-color: #072bce;
 }
@@ -105,5 +161,14 @@ footer {
 	}
 	.image {
 		width: 300px;
+	}
+	.portfolio-section-last {
+		display: grid;
+	}
+}
+
+@media (min-width: 1100px) {
+	:root {
+		--contentWidth: 666px;
 	}
 }
