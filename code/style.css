@@ -4,10 +4,7 @@
 
 :root {
   --primary: #c62a88;
-  --secondary: #A76571;
 }
-
-
 
 body,
 html {
@@ -38,7 +35,7 @@ header {
 }
 
 section:nth-child(2n) {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 
 /*All the titles and paragraphs*/
@@ -54,7 +51,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
@@ -70,7 +67,7 @@ h4 {
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 17px;
   line-height: 29px;
   font-weight: 400;
@@ -78,18 +75,19 @@ p {
 }
 
 .filled-title-container {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .filled-title {
-background-color: var(--primary);
-padding: 5px;
-text-transform: uppercase;
-color: white;
-line-height: 27px; 
-font-weight: 500;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  background-color: var(--primary);
+  padding: 5px;
+  text-transform: uppercase;
+  color: white;
+  line-height: 27px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .other-title {
@@ -110,21 +108,21 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 
   top: 290px;
 }
 
-/*Changes color scheme in portfolio*/
+/*Toggles to dark- and light mode*/
 button {
   border: none;
   background-color: #212427;
   color: #fff;
   border-radius: 20px;
   padding: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   top: 47px;
   left: 30px;
   border: 2px solid #212427;
 }
 
-/*Elements that the button changes*/
+/*Dark mode styling*/
 .button-dark {
   background-color: #fff;
   color: #212427;
@@ -133,22 +131,24 @@ button {
 
 .color-toggle {
   --primary: #3b9b84;
- }
- 
- .header-toggle {
+}
+
+.header-toggle {
   background-image: url(./images/grey-smoke.jpg);
   color: #fff;
- }
+}
 
- .footer-toggle {
+.footer-toggle {
   background-image: url(./images/grey-smoke.jpg);
   color: #fff;
- }
+}
 
- .title-toggle, .icon-toggle {
+.title-toggle,
+.icon-toggle {
   color: #fff !important;
- }
-  
+}
+/*---------------Dark mode styling ends------------------------*/
+
 .icon-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -160,7 +160,6 @@ button {
   justify-content: space-evenly;
   padding: 20px;
   margin-bottom: 50px;
-  
 }
 
 /*Bigger icons at the bottom of portfolio*/
@@ -225,7 +224,6 @@ button {
   margin-bottom: 40px;
 }
 
-
 /* Line-dot section indicator */
 .line {
   border: 1px solid var(--primary);
@@ -247,7 +245,7 @@ button {
 .featured-projects,
 .my-thoughts,
 .skills-container,
-.for-more  {
+.for-more {
   padding-bottom: 40px;
   padding-top: 40px;
 }
@@ -255,7 +253,6 @@ button {
 .tech-container {
   text-align: center;
 }
-
 
 /*Hides two projects in mobile view*/
 .extra-projects {
@@ -267,7 +264,6 @@ button {
   margin-bottom: 50px;
 }
 
-
 .skill-set,
 .intro-text p,
 .tech-container p {
@@ -277,11 +273,11 @@ button {
 
 .project-overlay {
   position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(156, 166, 197, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(156, 166, 197, 0.5);
   text-align: center;
 }
 .project-overlay:hover {
@@ -306,7 +302,9 @@ button {
   border: none;
   font-size: 10px;
   padding: 4px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /*Link to netlify page >>*/
@@ -321,7 +319,7 @@ button {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
 }
 
 .thoughts-wrapper:last-of-type(2) {
@@ -342,9 +340,9 @@ button {
   display: none;
 }
 
-.code, 
-.toolbox, 
-.upcoming, 
+.code,
+.toolbox,
+.upcoming,
 .more {
   text-align: center;
   margin: 0;
@@ -358,7 +356,7 @@ ul {
 }
 
 .my-footer {
-  background-color: #E2E3DB;
+  background-color: #e2e3db;
   height: 302px;
   display: flex;
   justify-content: center;
@@ -371,7 +369,7 @@ ul {
   margin: 0;
 }
 
-@media (min-width:480px) and (max-width:679px) {
+@media (min-width: 480px) and (max-width: 679px) {
   .container {
     width: 450px;
   }
@@ -398,7 +396,7 @@ ul {
 
 /*Desktop view*/
 
-@media (min-width:680px) and (max-width:979px) {
+@media (min-width: 680px) and (max-width: 979px) {
   .container {
     width: 650px;
   }
@@ -425,15 +423,15 @@ ul {
     font-size: 70px;
     line-height: 20px;
   }
-  
+
   h3 {
     font-size: 20px;
   }
-  
+
   h4 {
-  font-size: 17px;
+    font-size: 17px;
   }
-  
+
   p {
     font-size: 16px;
     line-height: 35px;
@@ -459,19 +457,18 @@ ul {
   .fa-linkedin-in,
   .fa-stack-overflow {
     font-size: 40px;
+  }
+
+  .skill-more {
+    display: initial;
+  }
+
+  #guess-who {
+    display: none;
+  }
 }
 
-.skill-more {
-  display: initial;
-}
-
-#guess-who {
-  display: none;
-}
-
-}
-
-@media (min-width:980px) and (max-width:1279px) {
+@media (min-width: 980px) and (max-width: 1279px) {
   .container {
     width: 950px;
   }
@@ -498,20 +495,20 @@ ul {
     font-size: 70px;
     line-height: 20px;
   }
-  
+
   h3 {
     font-size: 30px;
   }
-  
+
   h4 {
     font-size: 17px;
-    }
-  
+  }
+
   h5 {
     font-size: 20px;
     line-height: 29px;
   }
-  
+
   p {
     font-size: 22px;
     line-height: 35px;
@@ -538,18 +535,18 @@ ul {
   .fa-linkedin-in,
   .fa-stack-overflow {
     font-size: 50px;
+  }
+
+  .skill-more {
+    display: initial;
+  }
+
+  #guess-who {
+    display: none;
+  }
 }
 
-.skill-more {
-  display: initial;
-}
-
-#guess-who {
-  display: none;
-}
-}
-
-@media (min-width:1280px) {
+@media (min-width: 1280px) {
   .container {
     width: 1250px;
   }
@@ -576,15 +573,15 @@ ul {
   .header-text h5 {
     font-size: 20px;
   }
-  
+
   h3 {
     font-size: 30px;
   }
-  
+
   h4 {
     font-size: 20px;
-    }
-  
+  }
+
   p {
     font-size: 22px;
     line-height: 35px;
@@ -611,22 +608,13 @@ ul {
   .fa-linkedin-in,
   .fa-stack-overflow {
     font-size: 50px;
-}
+  }
 
   .skill-more {
     display: initial;
-}
+  }
 
   #guess-who {
     display: none;
+  }
 }
-}
-
-
-
-
-
-
-
-
-
