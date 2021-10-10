@@ -47,17 +47,6 @@ a.skip:hover {
   overflow: visible;
 }
 
-/* a:hover,
-input:hover,
-button:hover,
-select:hover,
-a:focus,
-input:focus,
-button:focus,
-select:focus {
-  font-weight: bold;
-} */
-
 .teal-color {
   color: #4e7e7e;
 }
@@ -124,7 +113,6 @@ select:focus {
 }
 
 .hero__text-box-4 {
-  /* font-family: "Montserrat"; */
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
@@ -163,10 +151,9 @@ select:focus {
 /* INTRO */
 .intro-container {
   display: block;
-  /* height: 324px; */
   height: auto;
   background: #f4f4f4;
-  padding: 10% 5% 5%;
+  padding: 7% 5% 5%;
   margin: 0 0 5%;
 }
 
@@ -190,17 +177,18 @@ select:focus {
 .tech-container {
   display: grid;
   justify-items: center;
-  margin: 0 5% 10%;
+  margin: 0 5%;
   text-align: center;
 }
 
 .tech-container p {
   padding: 5%;
   text-align: center;
+  margin-top: 0;
 }
 
 /* PORTFOLIO */
-#desktop {
+.desktop {
   display: none;
 }
 
@@ -239,9 +227,13 @@ a:link {
 }
 
 .portfolio__image {
-  display: block;
+  display: grid;
+  justify-content: center;
   position: relative;
-  width: 100%;
+  width: 327px;
+  height: 212px;
+  overflow: hidden;
+  object-fit: contain;
   transition: 0.5s ease;
 }
 
@@ -249,7 +241,7 @@ a:link {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 3px;
+  bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s ease;
@@ -281,7 +273,7 @@ a:link {
 
 .tag-wrapper {
   display: flex;
-  margin-bottom: 10%;
+  margin: 5% 0 10%;
 }
 
 .tag-wrapper p {
@@ -324,11 +316,6 @@ a:link {
   margin-top: 10%;
 }
 
-/* ul {
-  list-style-type: none;
-} */
-/* FOR MORE */
-/* changing colors on icons */
 .for-more__some {
   display: flex;
   justify-content: space-around;
@@ -337,7 +324,7 @@ a:link {
 .for-more__some-icon {
   filter: brightness(0) saturate(100%) invert(47%) sepia(33%) saturate(410%)
     hue-rotate(301deg) brightness(90%) contrast(90%);
-  width: 70%;
+  width: 50%;
 }
 
 .for-more__some a {
@@ -373,32 +360,43 @@ footer {
 /* DESIGN FOR TABLET */
 @media (min-width: 668px) {
   /* HIDE IMAGES? */
+
+  p {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .tag-wrapper p {
+    font-size: 17px;
+  }
+
+  .portfolio__skills-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .for-more__some p {
     color: #9c6870;
     font-size: 16px;
     text-align: center;
     font-weight: 700;
   }
+  .for-more__some-icon {
+    width: 60%;
+  }
+
 }
 
 /* DESIGN FOR DESKTOP */
 @media (min-width: 1024px) {
   p {
     font-size: 25px;
-    line-height: 50px;
-    /* font-style: normal;
-    font-weight: 400; */
   }
 
   h2 {
-    /* margin-top: 5%;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase; */
-    font-size: 20px;
-    /* color: #345555; */
-    /* margin-bottom: 0; */
+    font-size: 25px;
   }
 
   .title-background {
@@ -406,10 +404,6 @@ footer {
     width: max-content;
   }
   .title-background-none {
-    /* text-transform: uppercase;
-    color: #345555;
-    padding: 3px;
-    margin-top: 10%; */
     margin: 10% 0 5%;
     font-size: 32px;
   }
@@ -420,36 +414,22 @@ footer {
   }
 
   .hero__text {
-    /* color: #ffff;
-    position: absolute; */
     width: 607px;
-    /* height: 339px; */
     left: 11%;
-    /* top: 20%; */
   }
 
   .hero__text-box-1 {
-    /* font-family: "Roboto";
-    font-weight: 400;
-    font-style: normal; */
     font-size: 28px;
     line-height: 37px;
   }
 
   .hero__text-box-2 {
-    /* font-weight: 700;
-    font-style: normal; */
     font-size: 82px;
     line-height: 100px;
-    /* margin: 5% 0; */
   }
 
   .hero__text-box-4 {
-    /* font-family: "Montserrat"; */
-    /* font-weight: 400;
-    font-style: normal; */
     font-size: 40px;
-    /* line-height: 50px; */
   }
 
   .hero__nav {
@@ -466,6 +446,13 @@ footer {
     right: 15%;
     width: 333px;
     height: 333px;
+  }
+  .intro-container {
+    display: block;
+    height: auto;
+    background: #f4f4f4;
+    padding: 5%;
+    margin: 0 0 5%;
   }
 
   .line {
@@ -487,29 +474,17 @@ footer {
 
   .portfolio__grid-wrapper {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) */
     grid-template-columns: 1fr 1fr;
     width: auto;
-    grid-column-gap: 5%;
+    grid-column-gap: 8%;
     justify-content: center;
   }
 
   .portfolio__grid-wrapper-child {
     width: 100%;
   }
-  /* 
-  .portfolio {
-    display: grid;
-    padding: 5% 0 5%;
-  } */
 
-  .portfolio__image {
-    /* display: block;
-    position: relative; */
-    /* width: 523px; */
-  }
-
-  #desktop {
+  .desktop {
     display: grid;
   }
 
@@ -517,45 +492,40 @@ footer {
     display: none;
   }
 
-  .portfolio__skills-container {
-    /* font-family: "Roboto", sans-serif;
-    display: grid; */
-    grid-template-columns: 1fr 1fr 1fr;
-    /* align-items: center;
-    justify-items: center;
-    grid-column-gap: 6px; */
+  .portfolio__image {
+    width: 523px;
+    height: 306px;
+  }
+
+  .portfolio__image-overlay p {
+    font-size: 28px;
+  }
+
+  .portfolio__article-card p,
+  a:link {
+    font-size: 25px;
+  }
+
+  .tag-wrapper p {
+    padding: 10px;
+    margin: 3px;
+  }
+
+  .tag-wrapper {
+    margin: 5% 0;
   }
 
   ul {
-    /* list-style-type: none; */
     font-size: 21px;
   }
-  /* 
-  .desktop {
-    display: grid;
-  } */
 
-  /* @media (min-width: 768px) {
-
-
- 
-} */
-
-  /* .hero__background-desktop {
-    position: absolute;
-    width: 1936px;
-    height: 681px;
-    left: -16px;
-    top: 0px;
+  .for-more__some-icon {
+    width: 50%;
   }
 
-  .hero__background-mobile {
-    display: none;
-  } */
 }
 
 /* Colors
 #5F939A teal, new clr #4E7E7E
 #D8AC9C nude
 #EAC8AF light pink
-#1B2021 black */
