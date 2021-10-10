@@ -6,9 +6,10 @@ My portfolio is still a work in progress - Projects and thoughts will be added t
 
 
 Testing checklist:
-* Cross-browser - passed 
+* Cross-browser - passed.
 * Validation - passed. There were some warnings about a missing heading in the element article. I realised my article elements were used as a wrapper so I decided to change them to dividers instead. https://validator.w3.org/nu/?doc=https%3A%2F%2Fkaroline-mann-portfolio.netlify.app%2F
-* Google Chrome Lighthouse Accessability test - passed. However, there are room for improvements, for example to increase the contrasts colors on the background and foreground. 
+* Google Chrome Lighthouse Accessability test - passed. However, there are room for improvements, for example to increase the contrasts colors on the background and foreground.
+* Screen reader on Samsung phone - sounded good. 
 
 
 Images from:
