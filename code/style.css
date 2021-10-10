@@ -39,8 +39,9 @@ h1 {
 }
 
 .profile-image {
-  background-image: url(./assets/DSC_0362\ copy.jpg);
+  background-image: url(./assets/jl-mirror.jpg);
   background-size: cover;
+  background-position-x: 75%;
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -48,7 +49,7 @@ h1 {
   border-color: white;
   position: absolute;
   right: 5%;
-  top: 50%;
+  top: 40%;
 }
 
 .title-intro {
@@ -68,7 +69,8 @@ h1 {
 }
 
 .portfolio-container {
-  padding: 0.5em;
+  /* padding: 0.5em; */
+  padding: 3%;
 }
 
 .intro-box {
@@ -226,6 +228,10 @@ h1 {
   color: white;
 }
 
+.project-card {
+  max-width: 320px;
+}
+
 .img-wrapper {
   position: relative;
 }
@@ -270,16 +276,19 @@ h1 {
   justify-content: center;
 }
 
+.more-thoughts {
+  justify-content: left;
+}
+
 .date {
   font-family: Roboto;
   margin-top: 1em;
-  color: rgb(151, 148, 148);
+  color: #fa382f;
 }
 
 .article-link {
   display: flex;
-  padding: 0.5em;
-  justify-content: center;
+  padding: 0.25em;
 }
 
 .skills-box {
@@ -322,22 +331,24 @@ li {
   flex-direction: column;
   align-items: center;
   padding-bottom: 2em;
-  /* justify-content: center; */
 }
 
 .social-container {
   display: flex;
   flex-direction: row;
-  flex-basis: 100%;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-  max-width: 400px;
+  justify-content: space-between;
   margin-top: 2em;
+  width: 80%;
+  max-width: 450px;
+  padding-bottom: 2em;
 }
 
-.group-20 {
-  padding-right: 1em;
+.icon-group {
+  width: 30%;
+  height: 100%;
+}
+.icon-smaller {
+  width: 22%;
 }
 
 .contact {
@@ -374,12 +385,10 @@ li {
     gap: 2em;
     flex-wrap: nowrap;
   }
-
   .project-card {
-    width: 45%;
+    width: 47%;
     max-width: 350px;
   }
-
   .project-container {
     display: flex;
     flex-direction: row;
@@ -395,10 +404,47 @@ li {
   .project-container,
   .other-projects,
   .contact {
-    padding: 40px 130px 40px 130px;
+    padding: 40px 5% 40px 5%;
   }
   .links-color {
     color: red;
     font-weight: 600;
+  }
+}
+
+@media (min-width: 980px) {
+  .title-intro {
+    font-size: 24px;
+    width: 300px;
+    height: 220px;
+  }
+
+  .profile-image {
+    top: 35%;
+    right: 7%;
+    height: 240px;
+    width: 240px;
+  }
+  .other-projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .intro-box,
+  .tech-box,
+  .thoughts-box,
+  .skills-box,
+  .for-more-box,
+  .project-container,
+  .other-projects,
+  .contact {
+    padding: 0 10% 0 10%;
+  }
+  .project-container,
+  .thoughts-box {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2em;
   }
 }
