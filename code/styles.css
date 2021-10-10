@@ -18,12 +18,14 @@ header {
   left: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header-text {
   position: absolute;
-  width: 220px;
-  height: 202px;
-  left: 24px;
   top: 121px;
+  margin-left: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -40,12 +42,30 @@ header {
   margin: 30px;
 }
 
+.navbar-bottom,
+.introduction,
+.tech,
+.feat-projects,
+.my-thoughts,
+.skills {
+  padding: 40px 0px;
+}
+
 .navbar-header a,
 .more-about-me a {
   border: 2px solid;
-  border-radius: 50%;
+  border-radius: 100%;
   padding: 8px 10px;
   margin: 0px 5px;
+  text-decoration: none;
+}
+
+.navbar-header a {
+  color: #ffffff;
+}
+
+.more-about-me a {
+  color: #161616;
 }
 
 .profile-img {
@@ -69,6 +89,10 @@ header {
   margin: 0 auto;
 }
 
+section:nth-child(2n) {
+  background: #f4f4f4;
+}
+
 .portfolio-heading-container {
   display: flex;
   justify-content: center;
@@ -80,6 +104,14 @@ header {
   color: #fff;
   padding: 5px;
   text-transform: uppercase;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 h3 {
@@ -192,6 +224,10 @@ p {
   display: none;
 }
 
+.my-thoughts {
+  text-align: center;
+}
+
 .skill-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -226,12 +262,18 @@ li {
 
 .more-about-me {
   text-align: center;
+  padding: 40px 0px;
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: #161616;
   color: white;
   text-align: center;
+  margin: auto;
+  height: 302px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -261,8 +303,23 @@ footer {
   .more {
     display: initial;
   }
+
+  .header-text {
+    margin-left: 50px;
+  }
+
+  .header-text h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .header-text h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
+/* Destop */
 @media (min-width: 1025px) {
   .profile-img {
     /* Positioning */
@@ -297,5 +354,19 @@ footer {
 
   .more {
     display: initial;
+  }
+
+  .header-text {
+    margin-left: 80px;
+  }
+
+  .header-text h1 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .header-text h2 {
+    font-size: 40px;
+    line-height: 40px;
   }
 }
