@@ -347,20 +347,19 @@ ul {
 .social-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 2em;
-  width: 80%;
-  max-width: 450px;
+  width: 70%;
   padding-bottom: 2em;
 }
 
 .icon-group {
-  width: 30%;
+  width: 100%;
   height: 100%;
 }
-.icon-smaller {
+/* .icon-smaller {
   width: 22%;
-}
+} */
 
 .contact {
   display: flex;
@@ -421,6 +420,10 @@ ul {
     color: var(--red);
     font-weight: 600;
   }
+  .social-container {
+    width: 30%;
+    justify-content: space-between;
+  }
 }
 
 @media all and (min-width: 980px) {
@@ -456,6 +459,9 @@ ul {
     max-width: 60%;
     margin: 0 auto;
     padding: 2em;
+  }
+  .social-container {
+    width: 20%;
   }
 }
 @media all and (min-width: 1800px) {
