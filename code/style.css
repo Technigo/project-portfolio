@@ -222,7 +222,7 @@ a {
   border-radius: 16px;
   padding: 0.5rem 1rem;
   min-width: 3rem;
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -362,6 +362,7 @@ a {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .container {
@@ -376,35 +377,31 @@ a {
     "d . e";
 }
 
-.a { grid-area: a; }
-
-.b { grid-area: b; }
-
-.c { grid-area: c; }
-
-.d { grid-area: d; }
-
-.e { grid-area: e; }
-
-
-/* .a {
+.a { 
+  grid-area: a; 
   position: relative;
 }
 
-.b {
-  position: relative;
-}
-.c {
-  position: relative;
-}
-
-.d {
+.b { 
+  grid-area: b; 
   position: relative;
 }
 
-.e {
+.c { 
+  grid-area: c; 
   position: relative;
-} */
+}
+
+.d { 
+  grid-area: d; 
+  position: relative;
+}
+
+.e { 
+  grid-area: e; 
+  position: relative;
+}
+
 
 .corbijn-text {
   position: absolute;
@@ -431,15 +428,14 @@ a {
 
 .footer {
   background-color: #1a1a1a;
-  padding: 4rem 2rem 5rem 2rem;
-  /* margin-top: 6rem; */
+  padding: 1rem 2rem 7rem 2rem;
   color: #F5F4F0;
 }
 
 .footer-heading {
   font-size: 48px;
   font-weight: 100;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   text-align: center;
   animation: spin 2s ease-in-out;
   animation-timing-function: ease-in-out;
@@ -477,6 +473,7 @@ a {
   font-size: 1.5rem;
   font-weight: 100;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .email {
@@ -495,12 +492,46 @@ a {
 
 .phone_mail {
   color: #F5F4F0;
+
 }
 
 
 /* MEDIAQUERIES */
 
-@media (min-width: 900px) {
+@media (min-width: 767px) and (max-width: 991px) {
+
+  .hero {
+    padding: 4rem 3rem 4rem 3rem;
+  }
+
+  .about-me {
+    padding: 2rem;
+  }
+
+  .my-skills {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.portfolio {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.portfolio-grid {
+  grid-gap: 1rem;
+}
+
+.section-heading {
+  padding: 0 2rem 0 2rem;
+}
+
+.section-headingUi {
+  padding-top: 2rem;
+}
+}
+
+
+@media (min-width: 992px) {
 
   body {
   background-color: #fff;
@@ -708,6 +739,7 @@ a {
   border-radius: 16px;
   padding: 0.5rem 1rem;
   min-width: 3rem;
+  margin-top: 0.5rem;
 }
 
 
@@ -817,7 +849,12 @@ a {
 }
 
 .number {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-heading {
+  font-size: 56px;
+  font-weight: 100;
+  margin-bottom: 4rem;
 }
 }
-  
