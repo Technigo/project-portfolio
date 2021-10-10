@@ -1,9 +1,10 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif; 
 
 }
+
+/* ///// HEADINGS /////////////////////////////////////// */
 
 /* h1 White text red background */
 h1 {
@@ -44,6 +45,9 @@ h4 {
     color: #005E5E;
 
 }
+
+/* ///// HEADER /////////////////////////////////////// */
+
 .hero {
     background-image: url(./images/smoke.jpg);
     /* background-size: cover;
@@ -126,10 +130,7 @@ h4 {
 
 }
 
-/* //// INTRODUCTION ///// */
-
-/* //// little line icon ///// */
-
+/* //// PRESENTATION /////////////////////////////////////// */
 .presentation-textbox{
     font-family: Montserrat;
     font-size: 17px;
@@ -153,6 +154,7 @@ h4 {
     margin-right: 5px;
 }
 
+/* ///// TECH /////////////////////////////////////////// */
 
 .tech-textbox {
     font-family: Montserrat;
@@ -163,8 +165,7 @@ h4 {
 
 }
 
-/* ///// PORTFOLIO SECTION ///// */
-
+/* ///// PORTFOLIO SECTION GENERAL /////////////////////////////////////// */
 .portfolio-section:nth-child(2n-1) {
     background-color: #f4f4f4;
 }
@@ -177,8 +178,6 @@ h4 {
     /* border: 2px solid lime; */
 
 }
-
-
 
 .portfolio-header-container {
     /* text-align: center; */
@@ -195,6 +194,8 @@ h4 {
     padding: 3px;
 }
 
+
+/* ///// PROJECTS  /////////////////////////////////////// */
 .image-container {
     position:relative;
 
@@ -241,14 +242,18 @@ h4 {
     margin-top: 5%;
     margin-bottom: 10%;
 }
+
 .project-textbox h3,
-.project-textbox p,
-.other-projects-textbox h3, 
-.other-projects-textbox p {
+.other-projects-textbox h3 {
     margin: 1%;
 }
 
-
+.project-textbox p,
+.other-projects-textbox p {
+    margin: 1%;
+    font-size: 17px;
+    line-height: 29px;
+}
 
 .desktop-only{
     display: none;
@@ -257,7 +262,7 @@ h4 {
 
 
 
-/* //// TAG //// */
+/* //// TAGS /////////////////////////////////////// */
 .tags-wrap {
   display: flex;
 }
@@ -289,91 +294,7 @@ h4 {
 
 }
 
-
-
-
-/* ///// SKILLS /////// */
-
-.skills-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 29px;
-}
-  
-.skills-list {
-    color: black;
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-  
-}
-
-.skills-list-desktop {
-    display: none;
-
-}
-
-
-
-.for-more-socials {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 5%;
-  }
-  .for-more-socials img {
-    filter: invert(29%) sepia(11%) saturate(6119%) hue-rotate(143deg) brightness(30%) contrast(101%);
-  }
-  
-.for-more-socials a {
-    color: #005E5E;
-    font-size: 10px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-.for-more-socials a:hover {
-    color: #EBC3E0;
-}
-
-footer {
-    height: 300px;
-    width: 100%;
-    background-color: #DAEBEB;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-container h2 {
-    font-family: Montserrat;
-    font-style: normal;
-    color: #000;
-    margin-top: 0;
-    margin-bottom: 40px;
-    font-size: 21px;
-    line-height: 25px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  .footer-container a,
-  .footer-container p {
-    font-family: Montserrat;
-    font-size: 17px;
-    line-height: 25px;
-    color: #000;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-
-  }
-
+/* ///// MY THOUGHTS /////////////////////////////////////// */
 .date {
     font-family: Roboto;
     font-size: 17px;
@@ -406,8 +327,6 @@ footer {
     text-decoration: none;
 
 }
-
-
 
 .my-thoughts-textbox h4 {
     font-size: 21px;
@@ -445,10 +364,101 @@ footer {
 }
 
 
+/* ///// SKILLS /////////////////////////////////////// */
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 29px;
+}
+  
+.skills-list {
+    color: black;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+  
+}
+
+.skills-list-desktop {
+    display: none;
+
+}
+
+
+/* ///// FOR MORE //////////////////////////////////////// */
+.for-more-socials {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .for-more-socials img {
+    filter: invert(29%) sepia(11%) saturate(6119%) hue-rotate(143deg) brightness(30%) contrast(101%);
+    margin-bottom: 5px;
+  }
+
+  
+.for-more-socials a {
+    color: #005E5E;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+
+.for-more-socials a:hover {
+    color: #EBC3E0;
+}
+
+/* ///// FOOTER /////////////////////////////////////// */
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: #DAEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-container h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .footer-container a,
+  .footer-container p {
+    font-family: Montserrat;
+    font-size: 17px;
+    line-height: 25px;
+    color: #000;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+
+  }
 
 
 
-/* Responsiveness TABLET */
+
+
+
+
+
+/* Responsiveness TABLET /////////////////////////////////////// */
 @media (min-width: 768px) {
     .container {
         width: 700px;
@@ -457,8 +467,10 @@ footer {
     }
 }
 
-/* Responsiveness SCREEN */
+/* Responsiveness SCREEN /////////////////////////////////////// */
 @media (min-width: 1024px){
+
+/* ///// HEADINGS ///// */
 h1 {
     font-size: 48px;
     line-height: 59px;
@@ -481,12 +493,15 @@ h4 {
     line-height: 41px;
 }
 
+/* ///// general ///// */
 
 .container {
     width: 800px;
     margin: 0 auto;
 
 }
+
+/* ///// header ///// */
 
 .top-nav {
     position: absolute;
@@ -543,13 +558,29 @@ h4 {
 
 }
 
+/* ///// presentation ///// */
+
 .presentation-textbox {
     font-size: 30px;
     line-height: 50px;
 
 }
 
+/* ///// tech ///// */
 
+.tech-textbox {
+    font-size: 30px;
+    line-height: 50px;
+
+}
+
+.tech-textbox span{
+    color: #005E5E;
+
+
+}
+
+/* ///// projects ///// */
 
 .project-grid-wrapper {
     display: grid;
@@ -570,19 +601,10 @@ h4 {
 
 }
 
-
-
-
-.tech-textbox {
-    font-size: 30px;
-    line-height: 50px;
-
-}
-
-.tech-textbox span{
-    color: #005E5E;
-
-
+.project-textbox p,
+.other-projects-textbox p {
+    font-size: 25px;
+    line-height: 41px;
 }
 
 
@@ -592,6 +614,67 @@ h4 {
 
   }
 
+/* ///// thoughts ///// */
+/* ///// MY THOUGHTS /////////////////////////////////////// */
+.date {
+    font-size: 25px;
+    line-height: 41px;
+
+}
+
+/* .my-thoughts-textbox {
+    margin-top: 25px;
+
+} */
+
+.my-thoughts-textbox p {
+    font-size: 25px;
+    line-height: 41px;
+}
+
+
+.my-thoughts-textbox a{
+    font-size: 25px;
+    line-height: 41px;
+}
+
+.my-thoughts-textbox h4 {
+    font-size: 25px;
+    line-height: 41px;
+    
+}
+
+.more-thoughts {
+    margin: 25px 0;
+
+}
+
+.more-thoughts a {
+    font-style: bold;
+    font-size: 25px;
+    line-height: 33px;
+    color: #005E5E;
+}
+.more-thoughts a:hover {
+    color: #EBC3E0;
+
+}
+
+.more-thoughts a:visited {
+    color: #005E5E;
+
+}
+
+.more-thoughts-black {
+    font-weight: bold;
+    color: #000000;
+
+}
+
+
+
+
+/* ///// skills ///// */
 
 .skills-container {
     font-size: 25px;
@@ -606,6 +689,31 @@ h4 {
     padding: 0;
 }
 
+
+/* ///// for more ///// */
+.for-more-socials img {
+    margin-bottom: 10px;
+  }
+
+.for-more-socials a {
+    font-size: 25px;
+  }
+
+
+/* ///// footer ///// */
+
+
+  .footer-container h2 {
+    font-size: 38px;
+    line-height: 47px
+  }
+  
+  .footer-container a,
+  .footer-container p {
+    font-size: 30px;
+    line-height: 50px;
+
+  }
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
