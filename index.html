@@ -10,20 +10,26 @@
 </head>
 <body>
     <header class="header-section">
-        <div class="hero-img"></div>
+        <div class="hero-img" role="img" aria-label="Image on top of page displaying colorful pencils"></div>
         <div class="logos">
-            <div>
-                <img src="./images/circle.png" alt="" class="topiconcircle">
-                <img src="./images/linkedinlogo.png" alt="" class="topicon">
-            </div>
-            <div>
-                <img src="./images/circle.png" alt="" class="topiconcircle">
-                <img src="./images/githublogo.png" alt="" class="topicon">
-            </div>
-            <div>
-                <img src="./images/circle.png" alt="" class="topiconcircle">
-                <img src="./images/SOlogo.png" alt="" class="topicon">
-            </div>
+            <a aria-label="linkedin link" href="https://www.linkedin.com/in/linn%C3%A9a-wilhelmsson-42a5a2108/">
+                <div>
+                    <img src="./images/circle.png" alt="Circle" class="topiconcircle">
+                    <img src="./images/linkedinlogo.png" alt="LinkedIn logo" class="topicon">
+                </div>
+            </a>
+            <a aria-label="github link" href="https://github.com/Skrosen">
+                <div>
+                    <img src="./images/circle.png" alt="Circle" class="topiconcircle">
+                    <img src="./images/githublogo.png" alt="Github logo" class="topicon">
+                </div>
+            </a>
+            <a aria-label="stackoverflow link" href="https://stackoverflow.com/users/16687101/linn%c3%a9a-wilhelmsson">
+                <div>
+                    <img src="./images/circle.png" alt="Circle" class="topiconcircle">
+                    <img src="./images/SOlogo.png" alt="StackOverflow logo" class="topicon">
+                </div>
+            </a>
         </div>
         <div class="header-text">
             <p class="small-header-text">Portfolio: Linnéa Wilhelmsson</p>
@@ -31,17 +37,19 @@
             <p class="big-header-text">developer</p>
             <p class="medium-header-text">+ digital designer</p>
         </div>
-        <!-- <div class="profile-div"> -->
-            <img class="profile-img" src="./images/IMG_0833 (kopia).jpg" alt="profile image">
-        <!-- </div> -->
+        <a href="https://www.linkedin.com/in/linn%C3%A9a-wilhelmsson-42a5a2108/">
+            <img class="profile-img" src="./images/linnea(kopia).jpg" alt="profile image">
+        </a>
     </header>
 
     <section class="portfolio-section">
         <div class="container">
             <article class="other-container">
-                <p> <span class="line"></span>
+                <p class="elevator-pitch"> <span class="line"></span>
                     <span class="dot"></span>
-                    Text about me</p>
+                    I'm a curious junior frontend developer who loves learning new stuff. 
+                    I'm looking for a position at a company where I can grow, develop and contribute from day one.
+                    I'm eager to learn new programming languages and continuously grow.</p>
             </article>
         </div>
     </section>
@@ -58,19 +66,22 @@
         </div>
     </section>
 
+    <!-- featured projects -->
     <section class="portfolio-section">
         <div class="container">
             <div class="portfolio-heading-container">
                 <h1 class="portfolio-heading">Featured projects</h1>
             </div>
             <article class="project-container">
-                <div class="image-container">
-                    <div class="overlay">TRYING</div>
-                    <img class="image" src="./images/dator.png" alt="datorskärm" />
-                </div>
+                <a href="https://github.com/Skrosen/project-weather-app">
+                    <div class="image-container">
+                        <div class="overlay">GitHub Tracker</div>
+                        <img class="image" src="./images/dator.png" alt="datorskärm" />
+                    </div>
+                </a>
                 <div>
-                    <h2 class="project-name">Chatbot Ex</h2>
-                    <p>Responsive website using HTML5, CSS3, JavaScript ES6 for plant suggestions</p>
+                    <h2 class="project-name">GitHub tracker</h2>
+                    <p>Responsive website using HTML5, CSS3, JavaScript ES6 showing github repos</p>
                     <div>
                         <span class="technology-span">HTML5</span>
                         <span class="technology-span">CSS3</span>
@@ -79,13 +90,15 @@
                 </div>
             </article>
             <article class="project-container">
-                <div class="image-container">
-                    <div class="overlay"></div>
-                    <img class="image" src="./images/klocka.png" alt="väckarklocka" />
-                </div>
+                <a href="https://github.com/Skrosen/project-weather-app">
+                    <div class="image-container">
+                        <div class="overlay">Weather app</div>
+                        <img class="image" src="./images/klocka.png" alt="väckarklocka" />
+                    </div>
+                </a>
                 <div>
-                    <h2>Chatbot 2</h2>
-                    <p>Responsive website using HTML5, CSS3, JavaScript ES6 for plant suggestions</p>
+                    <h2 class="project-name">Weather app</h2>
+                    <p>Responsive website using HTML5, CSS3, JavaScript ES6 to show the current weather on any location in the world</p>
                     <div>
                         <span class="technology-span">HTML5</span>
                         <span class="technology-span">CSS3</span>
@@ -93,89 +106,131 @@
                     </div>
                 </div>
             </article>
-            <article class="project-container">
-                <div class="image-container">
-                    <div class="overlay"></div>
-                    <img class="image" src="./images/dator.png" alt="datorskärm" />
-                </div>
-                <div>
-                    <h2>Chatbot 3</h2>
-                    <p>Responsive website using HTML5, CSS3, JavaScript ES6 for plant suggestions</p>
+            <div class="hide-small-screen">
+                <article class="project-container">
+                    <a href="https://github.com/Skrosen/project-guess-who">
+                        <div class="image-container">
+                            <div class="overlay">Guess Who</div>
+                            <img class="image" src="./images/dator.png" alt="datorskärm" />
+                        </div>
+                    </a>
                     <div>
-                        <span class="technology-span">HTML5</span>
-                        <span class="technology-span">CSS3</span>
-                        <span class="technology-span">JavaScript ES6</span>
+                        <h2 class="project-name">Guess who game</h2>
+                        <p>Guess who game built using HTML5, CSS3, JavaScript ES6</p>
+                        <div>
+                            <span class="technology-span">HTML5</span>
+                            <span class="technology-span">CSS3</span>
+                            <span class="technology-span">JavaScript ES6</span>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="project-container">
-                <div class="image-container">
-                    <div class="overlay"></div>
-                    <img class="image" src="./images/klocka.png" alt="väckarklocka" />
-                </div>
-                <div>
-                    <h2>Chatbot 4</h2>
-                    <p>Responsive website using HTML5, CSS3, JavaScript ES6 for plant suggestions</p>
+                </article>
+            </div>
+            <div class="hide-small-screen">
+                <article class="project-container">
+                    <a href="https://github.com/Skrosen/project-chatbot">
+                        <div class="image-container">
+                            <div class="overlay">Chatbot</div>
+                            <img class="image" src="./images/klocka.png" alt="väckarklocka" />
+                        </div>
+                    </a>
                     <div>
-                        <span class="technology-span">HTML5</span>
-                        <span class="technology-span">CSS3</span>
-                        <span class="technology-span">JavaScript ES6</span>
+                        <h2 class="project-name">Chatbot</h2>
+                        <p>Chatbot built using HTML5, CSS3, JavaScript ES6 giving plant suggestions</p>
+                        <div>
+                            <span class="technology-span">HTML5</span>
+                            <span class="technology-span">CSS3</span>
+                            <span class="technology-span">JavaScript ES6</span>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+            </div>
 
 <!-- other projects section -->
             <article class="portfolio-section">
                 <div class="portfolio-heading-container">
-                    <h2 class="portfolio-subheading">Other projects</h1>
+                    <h2 class="portfolio-subheading">Other projects</h2>
                 </div>
-                <div class="other-container">
-                    <div>
-                        <a href="">
-                            <p>Ett projekt med enbart länk <span class="arrow-span">>></span></p>
-                        </a>
+                <!-- visible in tablet and desktop, hidden in mobile -->
+                <div class="hide-small-screen">
+                    <div class="other-container">
+                        <div>
+                            <a href="https://github.com/Skrosen/project-business-site">
+                                <p><span class="pink-span">Business site. </span>Project building a business site <span class="pink-span">>></span></p>
+                            </a>
+                        </div>
+                        <div>
+                            <span class="technology-span">HTML5</span>
+                            <span class="technology-span">CSS3</span>
+                            <span class="technology-span">JavaScript ES6</span>
+                        </div>
                     </div>
-                    <div>
-                        <span class="technology-span">HTML5</span>
-                        <span class="technology-span">CSS3</span>
-                        <span class="technology-span">JavaScript ES6</span>
+                    <div class="other-container">
+                        <div>
+                            <a href="https://github.com/Skrosen/project-news-site">
+                                <p><span class="pink-span">News site. </span>Project with a fictive news site <span class="pink-span">>></span></p>
+                            </a>
+                        </div>
+                        <div>
+                            <span class="technology-span">HTML5</span>
+                            <span class="technology-span">CSS3</span>
+                            <span class="technology-span">JavaScript ES6</span>
+                        </div>
+                    </div>
+                    <div class="other-container">
+                        <div>
+                            <a href="https://github.com/Skrosen/project-news-site">
+                                <p><span class="pink-span">News site. </span>Project with a fictive news site <span class="pink-span">>></span></p>
+                            </a>
+                        </div>
+                        <div>
+                            <span class="technology-span">HTML5</span>
+                            <span class="technology-span">CSS3</span>
+                            <span class="technology-span">JavaScript ES6</span>
+                        </div>
+                    </div>
+                    <div class="other-container">
+                        <div>
+                            <a href="https://github.com/Skrosen/project-news-site">
+                                <p><span class="pink-span">News site. </span>Project with a fictive news site <span class="pink-span">>></span></p>
+                            </a>
+                        </div>
+                        <div>
+                            <span class="technology-span">HTML5</span>
+                            <span class="technology-span">CSS3</span>
+                            <span class="technology-span">JavaScript ES6</span>
+                        </div>
                     </div>
                 </div>
-                <div class="other-container">
-                    <div>
-                        <a href="">
-                            <p>Annat projekt <span class="arrow-span">>></span></p>
-                        </a>
-                    </div>
-                    <div>
-                        <span class="technology-span">HTML5</span>
-                        <span class="technology-span">CSS3</span>
-                        <span class="technology-span">JavaScript ES6</span>
-                    </div>
+                <!-- visible in mobile screen, hidden in tablet and desktop -->
+                <div class="hide-big-screen">
+                    <article class="project-container">
+                        <div>
+                            <a class="no-underline-link" href="https://github.com/Skrosen/project-guess-who">
+                                <h2 class="project-name">Guess who game</h2>
+                            </a>
+                            <p>Guess who game built using HTML5, CSS3, JavaScript ES6 <span class="pink-span">>></span></p>
+                            <div>
+                                <span class="technology-span">HTML5</span>
+                                <span class="technology-span">CSS3</span>
+                                <span class="technology-span">JavaScript ES6</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <div class="other-container">
-                    <div>
-                        <a href="">
-                            <p>Ett 3e projekt <span class="arrow-span">>></span></p>
-                        </a>
-                    </div>
-                    <div>
-                        <span class="technology-span">HTML5</span>
-                        <span class="technology-span">CSS3</span>
-                        <span class="technology-span">JavaScript ES6</span>
-                    </div>
-                </div>
-                <div class="other-container">
-                    <div>
-                        <a href="">
-                            <p>Ett 4e projekt <span class="arrow-span">>></span></p>
-                        </a>
-                    </div>
-                    <div>
-                        <span class="technology-span">HTML5</span>
-                        <span class="technology-span">CSS3</span>
-                        <span class="technology-span">JavaScript ES6</span>
-                    </div>
+                <div class="hide-big-screen">
+                    <article class="project-container">
+                        <div>
+                            <a class="no-underline-link" href="https://github.com/Skrosen/project-chatbot">
+                                <h2 class="project-name">Chatbot</h2>
+                            </a>
+                                <p>Responsive website using HTML5, CSS3, JavaScript ES6 for plant suggestions <span class="pink-span">>></span></p>
+                            <div>
+                                <span class="technology-span">HTML5</span>
+                                <span class="technology-span">CSS3</span>
+                                <span class="technology-span">JavaScript ES6</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </article>
         </div>
@@ -189,40 +244,52 @@
             </div>
             <article class="project-container">
                 <div class="image-container">
-                    <img class="image" src="./images/dator.png" alt="" />
+                    <img class="image" src="./images/dator.png" alt="datorskärm" />
                 </div>
                 <div>
                     <p class="blog-date">jan 2022</p>
                     <h2 class="blog-title">Blogpost 1</h2>
-                    <p>Lorem1 <span class="arrow-span">>></span></p>
+                    <p>Lorem1 <span class="pink-span">>></span></p>
                 </div>
             </article>
-            <!-- more thoughts, blog posts -->
-            <article class="project-container">
-                <div class="image-container">
-                    <img class="image" src="./images/klocka.png" alt="väckarklocka" />
-                </div>
-                <div>
-                    <p class="blog-date">dec 2021</p>
-                    <h2 class="blog-title">Blogpost 2</h2>
-                    <p>Lorem2 <span class="arrow-span">>></span></p>
-                </div>
-            </article>
+            <div class="hide-small-screen">
+                <article class="project-container">
+                    <div class="image-container">
+                        <img class="image" src="./images/klocka.png" alt="väckarklocka" />
+                    </div>
+                    <div>
+                        <p class="blog-date">dec 2021</p>
+                        <h2 class="blog-title">Blogpost 2</h2>
+                        <p>Lorem2 <span class="pink-span">>></span></p>
+                    </div>
+                </article>
+            </div>
+
+             <!-- more thoughts, blog posts -->
+             <div class="portfolio-heading-container">
+                <h2 class="portfolio-subheading">More thoughts</h2>
+            </div>
             <div class="other-container">
                 <div>
-                    <a href="">
-                        <p><span class="blog-date">nov 2021.</span> Annat projekt <span class="arrow-span">>></span></p>
+                    <a href="#">
+                        <p><span class="blog-date">nov 2021.</span> Interesting blog post <span class="pink-span">>></span></p>
                     </a>
                 </div>
             </div>
             <div class="other-container">
                 <div>
-                    <a href="">
-                        <p><span class="blog-date">okt 2021.</span> Ett 3e projekt <span class="arrow-span">>></span></p>
+                    <a href="#">
+                        <p><span class="blog-date">oct 2021.</span> Another blog post <span class="pink-span">>></span></p>
                     </a>
                 </div>
             </div>
-        </article>
+            <div class="other-container hide-big-screen">
+                <div>
+                    <a href="#">
+                        <p><span class="blog-date">sep 2021.</span> First ever blog post <span class="pink-span">>></span></p>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -235,30 +302,30 @@
             <div class="skills-parent">
                 <div class="skills-child">
                     <h3>Code</h3>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript ES6</li>
-                    <li>React</li>
-                    <li>Styled Components</li>
-                    <li>GitHub</li>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>JavaScript ES6</p>
+                    <p>React</p>
+                    <p>Styled Components</p>
+                    <p>GitHub</p>
                     <h3>Upcoming</h3>
-                    <li>Redux</li>
-                    <li>Node.js</li>
+                    <p>Redux</p>
+                    <p>Node.js</p>
                 </div>
                 <div class="skills-child">
                     <h3>toolbox</h3>
-                    <li>Figma</li>
-                    <li>Slack</li>
-                    <li>Asana</li>
-                    <li>Discord</li>
+                    <p>Figma</p>
+                    <p>Slack</p>
+                    <p>Asana</p>
+                    <p>Discord</p>
                 </div>
-                <div class="skills-child">
+                <div class="skills-child hide-small-screen">
                     <h3>more</h3>
-                    <li>System administration</li>
-                    <li>and</li>
-                    <li>other</li>
-                    <li>interesting</li>
-                    <li>information</li>
+                    <p>System administration</p>
+                    <p>and</p>
+                    <p>other</p>
+                    <p>interesting</p>
+                    <p>information</p>
                 </div>
             </div>
         </div>
@@ -266,60 +333,38 @@
 
     <!-- logos with links to find out more -->
     <section class="portfolio-section">
-        <div class="container">
-            <div class="portfolio-heading-container">
-                <h1 class="portfolio-heading">For more</h1>
-            </div>
-            <div class="logos-bottom">
-                <div>
-                    <img src="./images/circle.png" alt="" class="bottom-circle">
-                    <img src="./images/linkedinlogo.png" alt="" class="bottom-icon">
-                    <figcaption class="logo-text">LinkedIn</figcaption>
+        <div class="portfolio-heading-container">
+            <h1 class="portfolio-heading">For more</h1>
+        </div>
+        <div class="logos-bottom">
+            <a class="no-underline-link" href="https://www.linkedin.com/in/linn%C3%A9a-wilhelmsson-42a5a2108/">
+                <div class="logos-bottom-child">
+                    <img src="./images/circle.png" alt="Circle" class="bottom-circle">
+                    <img src="./images/linkedinlogo.png" alt="LinkedIn logo" class="bottom-icon">
+                    <p class="logo-text">LinkedIn</p>
                 </div>
-                <div>
-                    <img src="./images/circle.png" alt="" class="bottom-circle">
-                    <img src="./images/githublogo.png" alt="" class="bottom-icon">
-                    <figcaption class="logo-text">GitHub</figcaption>
+            </a>
+            <a class="no-underline-link" href="https://github.com/Skrosen">
+                <div class="logos-bottom-child">
+                    <img src="./images/circle.png" alt="Circle" class="bottom-circle">
+                    <img src="./images/githublogo.png" alt="GitHub logo" class="bottom-icon">
+                    <p class="logo-text">GitHub</p>
                 </div>
-                <div>
-                    <img src="./images/circle.png" alt="" class="bottom-circle">
-                    <img src="./images/SOlogo.png" alt="" class="bottom-icon">
-                    <figcaption class="logo-text">StackOverflow</figcaption>
+            </a>
+            <a class="no-underline-link" href="https://stackoverflow.com/users/16687101/linn%c3%a9a-wilhelmsson">
+                <div class="logos-bottom-child">
+                    <img src="./images/circle.png" alt="Circle" class="bottom-circle">
+                    <img src="./images/SOlogo.png" alt="StackOverflow logo" class="bottom-icon">
+                    <p class="logo-text">StackOverflow</p>
                 </div>
-            </div>
-            <!-- <div class="skills-parent">
-                <div class="logo-circle skills-child">
-                <a href="https://www.linkedin.com/in/linn%C3%A9a-wilhelmsson-42a5a2108/">
-                    <img src="./images/linkedin.svg" alt="linkedIn logo" class="icon">
-                </a>
-                <a href="">
-                    <figcaption class="logo-text">LinkedIn</figcaption>
-                </a>
-                </div>
-                <div class="logo-circle skills-child">
-                    <a href="#">
-                        <img src="./images/github.svg" alt="github logo" class="icon">
-                    </a>
-                    <a href="">
-                        <figcaption class="logo-text">GitHub</figcaption>
-                    </a>
-                </div>
-                <div class="logo-circle skills-child">
-                    <a href="#">
-                        <img src="./images/stack.png" alt="stackoverflow logo" class="icon">
-                    </a>
-                    <a href="">
-                        <figcaption class="logo-text">StackOverflow</figcaption>
-                    </a>
-                </div>
-            </div> -->
+            </a>
         </div>
     </section>
     <footer>
         <h5 class="footer-h5">contact</h5>
         <p class="footer-text">Linnéa Wilhelmsson</p>
         <p class="footer-text">+46 730 33 66 27</p>
-        <p class="footer-text">lpawilhelmsson@gmail.com</p>
+        <p class="footer-text">Lpawilhelmsson@gmail.com</p>
     </footer>
 </body>
 </html>
