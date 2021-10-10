@@ -13,7 +13,7 @@ Testing checklist:
 
 
 Images from:
-Desktop photo by Jess Bailey on Unsplash
+Desktop photo by Jess Bailey on Unsplash and 
 Japan arch Photo by Tianshu Liu on Unsplash
 
 
