@@ -6,7 +6,7 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  background: url(./assets/hero2.jpeg);
+  background: url(./assets/hero.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -193,10 +193,22 @@ article {
 .other {
   margin-bottom: 1em;
 }
-.reference {
+
+.other-project {
   color: #cd1f18;
-  font-weight: bold;
+  text-decoration: #cd1f18;
 }
+
+.other-project-anchor {
+  color: black;
+  text-decoration: none;
+}
+
+.reference {
+  color: black;
+  text-decoration: none;
+}
+
 .language {
   display: flex;
 }
@@ -319,10 +331,6 @@ article {
   text-transform: uppercase;
 }
 
-a {
-  text-decoration: none;
-}
-
 .footer {
   height: 300px;
   width: 100%;
@@ -415,6 +423,7 @@ footer > h1 {
     font-size: 0.62em;
     line-height: 0.7em;
     letter-spacing: 0.03em;
+    padding: 1%;
   }
 
   .other-header {
@@ -495,12 +504,24 @@ footer > h1 {
     line-height: 2em;
   }
 
+  .language {
+    width: 100%;
+  }
+
+  .language-item1 {
+    width: 40%;
+  }
+
+  .language-item3 {
+    width: 14%;
+  }
+
   .language-item1,
   .language-item2,
   .language-item3 {
-    font-size: 0.65em;
-    line-height: 0.9em;
-    letter-spacing: 0.03em;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    letter-spacing: 0.04em;
   }
 
   .featured-projects-container,
@@ -519,6 +540,14 @@ footer > h1 {
     font-size: 1.35em;
     line-height: 1.8em;
     margin-top: 2.5em;
+  }
+
+  .other-project-big {
+    display: inline;
+  }
+
+  .other-project-anchor {
+    text-decoration: underline;
   }
 
   .code-skills {
