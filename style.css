@@ -12,6 +12,12 @@ a {
     cursor: pointer;
 }
 
+p {
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
 .header-container {
     position: absolute;
     top: 10%;
@@ -67,7 +73,7 @@ header {
 .portfolio-text, .name-text {
     
     font-weight: 100;
-    font-size: 13px;
+    font-size: 16px;
 }
      
 .name-text {  
@@ -112,15 +118,48 @@ header {
 .about-me-section {
     width: auto;
     height: auto;
-    font-size: 17px;
-    line-height: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
     color: #000000;
-    display: flex;
+    display: block;
     background-color: #f6eef9;
+   text-align: left;
+}
+
+.line {
+    border: 1px solid #66A2FF;
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+  
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #66A2FF;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .about-me-text {
     padding: 10% 0;
+}
+
+.headings {
+    background-color: #AD5CC5;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+.sub-headings {
+    text-transform: uppercase;
+    color: #AD5CC5;
+    padding: 3px;
+    margin-top: 10%;
+    font-size: 21px;
 }
 
 .tech-section {
@@ -132,34 +171,26 @@ background-color: #fefcff;
     justify-content: center;
 }
 
-.tech-heading {
-    background-color: #AD5CC5;
-    color: #FFFFFF;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 3px;
-}
-
-.portfolio-section {
+.project-section {
     background-color: #f6eef9;
 }
 
-.portfolio-heading-container {
-    display: flex; 
-    justify-content: center;
+.project-link {
+    color: #AD5CC5;
+    font-size: 17px;
+    text-transform: uppercase;
 }
 
-.portfolio-heading {
-    background-color: #AD5CC5;
-    color: #FFFFFF;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 3px;
+.project-heading-container {
+    display: flex; 
+    justify-content: center;
 }
 
 .project-image-container {
     max-width: 327px;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-image {
@@ -195,6 +226,21 @@ background-color: #fefcff;
     background: rgba(0, 0, 0, 0.5);
 }
 
+.description-container {
+    text-align: left;
+}
+
+.tag-container {
+    margin: 5px;
+}
+
+.tag {
+    background-color: #FF8E80;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 25px;
+}
+
 .my-thoughts-section {
     background-color: #fefcff; 
 }
@@ -208,14 +254,6 @@ background-color: #fefcff;
     justify-content: center;
 }
 
-.my-thoughts-heading {
-    background-color: #AD5CC5;
-    color: #FFFFFF;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 3px;
-}
-
 .skills-section {
     background-color: #f6eef9;
 }
@@ -223,14 +261,6 @@ background-color: #fefcff;
 .skills-heading-container {
     display: flex; 
     justify-content: center;
-}
-
-.skills-heading {
-    background-color: #AD5CC5;
-    color: #FFFFFF;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 3px;
 }
 
 .list {
@@ -255,14 +285,6 @@ background-color: #fefcff;
     justify-content: center;
 }
 
-.for-more-heading {
-    background-color: #AD5CC5;
-    color: #FFFFFF;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 3px;
-}
-
 .social-media-container {
     position: relative;
     height: 100%;
@@ -279,7 +301,6 @@ background-color: #fefcff;
 .bottom-icon:hover {
     filter: invert(9%) sepia(84%) saturate(5604%) hue-rotate(230deg) brightness(93%) contrast(98%);
 }
-
 
 .footer {
     width: 100%;
