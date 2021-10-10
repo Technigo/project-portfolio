@@ -1,13 +1,27 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: roboto;
+  font-family: montserrat;
+  line-height: 29px;
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 100px;
+  columns: red;
+}
+h2 {
+  font: montserrat;
+  weight: 700px;
 }
 
 h3 {
   color: #f8485e;
   text-transform: uppercase;
 }
+/* Header */
 
 .text-container {
   background-image: url(./images/sea.webp);
@@ -49,13 +63,26 @@ h3 {
 
 .title {
   padding-top: 200px;
-  font-size: 1 rem;
+  font-size: 1rem;
 }
 
 .portfolio-text {
-  font-size: 1 rem;
+  font-size: 1rem;
+  font-family: roboto;
+  font-weight: 800;
+  margin-left: 40px;
+  color: #03192b;
+  line-height: 20px;
 }
 
+.career-text {
+  font-family: roboto;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f8485e;
+  font-stretch: 100%;
+  margin-left: 40px;
+}
 /*INTO SECTION STYLING*/
 
 .dot-icon {
@@ -69,14 +96,14 @@ h3 {
   top: 520px;
   font-size: 17px;
   line-height: 29px;
-  padding: 49px 24px 43px 24px;
+  padding: 25px 35px 25px 35px;
 }
 
 .bio-text {
   max-width: 330px;
   text-align: left;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 10px;
   line-height: 29px;
 }
 
@@ -89,6 +116,7 @@ h3 {
   max-width: 330px;
   margin: 0 auto;
   line-height: 29px;
+  padding: 24px 24px 24px 24px;
 }
 
 .tech-heading {
@@ -97,12 +125,16 @@ h3 {
   text-transform: uppercase;
   width: fit-content;
   display: inline-block;
+  font-size: 22px;
 }
 
 .tech.text {
   text-align: center;
   line-height: 100px;
   font-size: 30px;
+  font-size: 17px;
+  font-family: montserrat;
+  font-weight: 400;
 }
 /*PROJECTS SECTION*/
 
@@ -115,35 +147,51 @@ h3 {
   background-color: #f4f4f4;
   padding: 20px;
   text-align: center;
+  padding: 25px 35px 25px 35px;
 }
 .project-image {
   max-width: 100%;
   height: auto;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  position: center;
 }
+
 .project-image-container {
   position: relative;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-image-container:hover .project-image {
+  opacity: 0.5;
+}
+
+.project-image-container:hover .middle {
+  opacity: 3;
+}
+
+.text {
+  background-color: #f8485e;
+  color: whitesmoke;
+  font-size: 21px;
+  padding: 16px 32px;
 }
 
 .project-image-container:hover .overlay {
   opacity: 1;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: rgb(219, 209, 209);
-  text-decoration-color: #f8485e;
-
-  /*
-  background: rgba(231, 227, 241, 0.818);*/
-}
-.text {
-  background-color: #f8485e;
 }
 
 .project-image-container {
@@ -162,12 +210,27 @@ h3 {
   color: white;
   padding: 3px 5px;
   margin: 25px;
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  width: fit-content;
 }
 
 .code-tag {
   display: inline-block;
   background-color: #90aacb;
   font-size: 9px;
+  line-height: 11px;
+  padding: 5px 10px;
+  margin: 0 10px 20px 0;
+}
+
+.code-tag-repo {
+  display: inline-block;
+  background-color: #f8485e;
+  font-size: 9px;
+  font-weight: 700;
   line-height: 11px;
   padding: 5px 10px;
   margin: 0 10px 20px 0;
@@ -180,7 +243,6 @@ h3 {
   margin-bottom: 20px;
   text-decoration: none;
 }
-/* My thoughts about code */
 
 /*  Skills  */
 
@@ -188,25 +250,33 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 20px;
+  grid-column-gap: 50px;
   line-height: 20px;
-
-  padding-left: 25px;
 }
 
 .skills-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #f4f4f4;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  line-height: 29px;
+  padding: 40px 40px 40px 40px;
 }
 .skills-heading {
-  /*background-color: #f8485e;
+  background-color: #f8485e;
   color: #fff;
   padding-top: 3px;
   text-align: center;
   width: fit-content;
-  font-weight: 700;*/
-
+  font-weight: 700;
+  align-self: center;
   background-color: #f8485e;
   color: whitesmoke;
   width: fit-content;
+  display: inline-block;
 }
 
 ul {
@@ -217,10 +287,17 @@ ul {
 
 .skills-box-more {
   display: none;
+  width: fit-content;
 }
 
 /*   for more section */
 
+.nav-for-more {
+  padding-top: 10px;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
 .for-more-title {
   background-color: #f8485e;
   color: whitesmoke;
@@ -231,163 +308,50 @@ ul {
   align-items: center;
   height: 250px;
   text-align: center;
+  padding: 25px 25px 25px 25px;
 }
 
-.icon-header-more {
+.icon-footer-more {
   padding-top: 35px;
+
   height: 60px;
   width: 60px;
   display: inline-block;
 }
+.linkedin {
+  font-size: 10px;
+}
+
+/*  My thoughts about code */
+.thoughts-section {
+  display: block;
+  text-align: center;
+  padding: 24px;
+  max-width: 330px;
+  margin: 0 auto;
+  line-height: 29px;
+}
+
+.thoughts {
+  background-color: #f8485e;
+  color: whitesmoke;
+  width: fit-content;
+  display: inline-block;
+  position: relative;
+  font-size: 22px;
+}
+
 /*FOOTER*/
 
 .footer {
   background-color: #512d6d;
+  color: whitesmoke;
   padding: 20px;
   text-align: center;
-}
-
-h3,
-footer {
-  color: whitesmoke;
-}
-
-/*.container {
-  margin: 0 auto;
-  background-color: #f4f4f4;
-}
-.project {
-  margin: 20px;
-}
-.portfolio-heading {
-  background-color: #f8485e;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.portfolio-heading-container {
-  display: grid;
-  justify-content: center;
-  background-color: #f4f4f4;
-}
-.image-container {
-  position: relative;
-}
-.image {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-.other-projects-title {
-  margin-top: 0;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(156, 166, 197, 0.5);
-}
-.code-tags {
-  display: inline-block;
-  background-color: #90aacb;
-  font-size: 9px;
-  line-height: 13px;
+  font-family: montserrat;
+  font-size: 17px;
   font-weight: 400;
-}
-*/
-/*  My thoughts about code 
-
-.thoughts {
-  background-color: #f8485e;
-  color: #fff;
-  text-align: center;
-  width: fit-content;
-  display: block;
-}
-
-/*   Skills   
-
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 20px;
-  line-height: 20px;
-
-  padding-left: 25px;
-}
-
-.skills-section {
-  background-color: #f4f4f4;
-}
-.skills-heading {
-  background-color: #f8485e;
-  color: #fff;
-  padding-top: 3px;
-  text-align: center;
-  width: fit-content;
-  font-weight: 700;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.skills-box-more {
-  display: none;
-}
-
-.skills-category h3 {
-  font-weight: 400;
-}
-
-.skills-category {
-  color: #f8485e;
-  display: inline-block;
-  width: fit-content;
-  font-weight: 700;
-  padding-top: 3px;
-}
-
-/*FOR MORE*
-
-.for-more-title {
-  background-color: #f8485e;
-  display: inline-block;
-  width: fit-content;
-  padding-top: 5px;
-  color: #fff;
-}
-.for-more-section {
-  align-items: center;
-  text-align: center;
-  border-top: 15px;
-  height: 250px;
-}
-
-.nav-for-more {
-  padding-top: 10px;
-  text-decoration: none;
-}
-
-.icon-footer-more {
-  padding-top: 50px;
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-  padding: 5px 5px 5px 5px;
-}
-/*FOOTER*
-
-.footer {
-  background-color: #512d6d;
-  padding: 45px;
-  text-align: center;
+  line-height: 25px;
 }
 
 .icon-footer-more {
@@ -406,6 +370,13 @@ ul {
   color: whitesmoke;
 }
 
+.icon-footer-more {
+  padding-top: 50px;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+}
 
 /*MEDIA QUERY*/
 
@@ -416,6 +387,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
+    row-gap: 35px;
   }
   .project-image-container {
     position: relative;
@@ -433,7 +405,7 @@ ul {
     align-items: center;
   }
   .profile-picture {
-    left: 550px;
+    left: 685px;
     top: 250px;
     height: 300px;
     width: 300px;
@@ -464,5 +436,39 @@ ul {
   .icon-header-more {
     height: 80px;
     width: 80px;
+    padding: 10px;
+  }
+
+  .icon-footer-more {
+    padding: 10px;
+  }
+
+  .section-title {
+    padding: 0px 25px 0px 25px;
+  }
+
+  .portfolio-text {
+    font-size: 1.5rem;
+    font-family: roboto;
+    font-weight: 800;
+    margin-left: 40px;
+    color: #03192b;
+  }
+
+  .career-text {
+    font-family: roboto;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #f8485e;
+    font-stretch: 100%;
+    margin-left: 40px;
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 100px;
+    line-height: 20px;
   }
 }
