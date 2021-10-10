@@ -42,13 +42,10 @@ body section:nth-child(2n) {
 
 /* Text container */
 .text-container {
-  /* border: 2px solid red; */
   height: 202px;
   margin-left: 24px;
-  /* margin-top:121px; */
   margin-top: 30px;
   color: #ffffff;
-  /* font-style: normal; */
   letter-spacing: 0.04em;
 }
 
@@ -111,15 +108,6 @@ body section:nth-child(2n) {
   align-items: center;
 }
 
-.heading-2 {
-  padding: 6px 12px;
-  background-color: rgb(255, 119, 119);
-  font-size: 22px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
 /* profile-section */
 .profile-section {
   padding-top: 60px;
@@ -147,6 +135,15 @@ body section:nth-child(2n) {
 }
 
 /* tech-section */
+.heading-2 {
+  padding: 6px 12px;
+  background-color: #a1bad2;
+  color: rgb(244, 244, 244);
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
 
 .tech-text {
   font-size: 18px;
@@ -160,67 +157,92 @@ body section:nth-child(2n) {
   width: 100%;
 }
 
-a {
+.featured-section a {
   text-decoration: none;
-  color:#000;
+  color: #000;
+  width: 100%;
 }
 
-.article { /*why flex?? */
-  display:flex;
+.article {
+  /*why flex?? */
+  display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100%; /*why*/
 }
-.hero-1 {
-  display: flex; /* This property allows to center vertically and horizontally the <span> inside of this container */ 
+.hero-1,
+.hero-2,
+.hero-3,
+.hero-4 {
+  display: flex; /* This property allows to center vertically and horizontally the <span> inside of this container */
   justify-content: center;
   align-items: center;
- position:relative;
+  position: relative;
   width: 100%;
   height: 200px;
-  /* font-weight: bold; */
-  /* font-size: 28px; */
-  /* text-transform: uppercase; */
-  /* color:#fff; */
-  /* letter-spacing: 0.04em; */
 }
+
 .hero-1::before {
   background-image: url(./images/weather-img.png);
   background-position: center bottom;
-  background-size:cover;
+  background-size: cover;
   position: absolute;
   content: "";
-
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.75;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
 }
+
+.hero-2::before {
+  background-image: url(./images/gitHub-tracker-img5.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.hero-3::before {
+  background-image: url(./images/guess-who-game-img.png);
+  background-position: center top;
+  background-size: cover;
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.hero-4::before {
+  background-image: url(./images/chatBot-img.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
 .background-tittle {
   position: relative;
-  font-weight: bold; 
-  font-size: 28px; 
+  font-weight: bold;
+  font-size: 22px;
   text-transform: uppercase;
-  color:#fff;
-  letter-spacing: 0.04em; 
-}
-/* .project1-img {
-  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(./images/weather-img.png);
-  background-image: url(./images/weather-img.png);
-  background-position: center bottom;
-  background-size:cover;
-
-} */
-.project2-img {
-  /* background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(./images/github-tracker-img.png); */
-  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(./images/github-tracker-imgg.png);
-  background-position: center;
-  background-size:cover;
-}
-.project3-img {
-  /* background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(./images/guess-who-img.png); */
-  background-image: url(./images/guess-who-img.png);
-  background-size:cover;
+  color: #fff;
+  /* background-color: black; */
+  color: #000;
+  /* background-color: #fff; */
+  letter-spacing: 0.04em;
 }
 
 .heading-3 {
@@ -229,21 +251,21 @@ a {
   font-size: 18px;
   text-align: start; /** ESTO QUE HACE?*/
   text-transform: uppercase;
-  color:blue;
+  color: #a1bad2;
 }
 
 .projects-description {
   text-align: start; /** ESTO QUE HACE?*/
   margin-bottom: 10px;
   font-size: 18px;
-  color:#000;
+  color: #000;
 }
 
 .projects-languages {
-  display:flex;
-  column-gap:10px; /*space between columns*/
-  row-gap:4px;    /*space between rows*/
-  flex-wrap:wrap;
+  display: flex;
+  column-gap: 10px; /*space between columns*/
+  row-gap: 4px; /*space between rows*/
+  flex-wrap: wrap;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -252,7 +274,53 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   letter-spacing: 0.04em;
-  padding:5px 8px;
+  padding: 5px 8px;
   background-color: pink;
 }
+.display {
+  display: none;
+}
 
+/* Media Queries */
+
+@media (min-width: 668px) {
+  .profile-section,
+  .tech-section,
+  .featured-section {
+    padding: 25px 24px 50px 24px;
+  }
+
+  .display {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexbox {
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+  }
+
+  .heading-2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .heading-3 {
+    font-size: 25px;
+  }
+
+  .heading-two {
+    font-size: 48px;
+  }
+  .profile-section,
+  .tech-section,
+  .featured-section {
+    padding: 25px 20% 50px 20%;
+  }
+
+  .flexbox {
+    column-gap: 50px;
+  }
+}
