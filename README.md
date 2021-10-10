@@ -18,3 +18,4 @@ I have changed my layout from scratch several times and I still feel like its a 
 # View it live
 
 https://annathunberg-portfolio.netlify.app/
+https://www.annathunberg.dev/
