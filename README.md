@@ -6,4 +6,5 @@ The problem
  The most challenging part of this project is to make sure it works in all the most commonly used web browsers but also for people with disabilities.
 
 View it live!
+
 portfolio-haru-ahn.netlify.app
