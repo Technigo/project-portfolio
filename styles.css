@@ -24,9 +24,9 @@ header {
 }
 
 .soMe-icon-container i {
-  color: white;
+  color: #000;
   margin: 0px 4px;
-  border: 2px solid white;
+  border: 2px solid #000;
   padding: 10px;
   border-radius: 50%;
   width: 40%;
@@ -69,8 +69,28 @@ h1 {
   z-index: 10;
 }
 
+.line {
+  border: 1px solid #c8846c;
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #c8846c;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -10px;
+}
+
 .intro-text {
   padding: 40px 0px;
+}
+
+.highlighted-skill {
+  font-weight: bold;
 }
 
 .tech,
@@ -107,6 +127,7 @@ p {
   width: 100%;
   height: 100%;
   display: block;
+  margin-bottom: 20px;
 }
 
 .image-container {
@@ -120,21 +141,28 @@ p {
   bottom: 0;
   left: 0;
   background: rgba(117, 124, 144, 0.544);
+  transition: 0.5s ease;
+}
+
+.overlay:hover {
+  display: none;
 }
 
 .language-box {
-  padding: 3px 6px;
-  background: #fddfe7;
+  padding: 8px 10px;
+  background: #e9997d;
   font-weight: 500;
   font-size: 12px;
-  margin-right: 5px;
+  margin-right: 10px;
+  font-family: "roboto";
+  box-shadow: 3px 3px #c88871;
 }
 
 .project-title {
   font-weight: 700;
   line-height: 34px;
   letter-spacing: 0.01em;
-  color: #fa382f;
+  color: #c8846c;
 }
 
 a {
@@ -146,7 +174,7 @@ a {
   display: block;
   text-align: left;
   font-weight: bold;
-  color: #fa382f;
+  color: #c8846c;
 }
 
 .other-projects {
@@ -187,7 +215,7 @@ a {
   text-align: center;
   font-weight: 700;
   font-size: 17px;
-  color: #fa382f;
+  color: #c8846c;
 }
 
 ul {
@@ -226,11 +254,11 @@ footer {
   align-items: center;
   margin: 0px auto;
   color: #000;
-  background: #d88567;
+  background: #e9997d;
 }
 
 .contact {
-  background-color: #d88567;
+  background-color: #e9997d;
   color: #000;
   margin: 20px;
 }
@@ -348,10 +376,6 @@ footer {
   }
   .skills {
     width: 20%;
-  }
-
-  .thoughts {
-    font-size: 21px;
   }
 
   .tech-container p {
