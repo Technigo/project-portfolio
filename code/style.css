@@ -298,7 +298,7 @@ header {
 .thoughts {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin: 0  0 30px 0;
 }  
 
 .thoughts-image-container {
@@ -345,13 +345,14 @@ header {
   color: #000000;
 }
 
-.thoughts ul {
+.thoughts-list ul {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 29px;
   list-style: none;
+  width: 100%;
 }
 
 /* SKILLS-SECTION */
@@ -503,6 +504,15 @@ footer p, a {
 
   .projects, .thoughts {
     margin: 0 10% 30px 10%;
+  }
+
+  .other-header {
+    grid-column: span 2;
+  }
+
+  .other, .thoughts-list {
+    grid-column: span 2;
+    margin: 0 5%;
   }
 
   .featured-projects-container, .thoughts-container {
