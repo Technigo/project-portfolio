@@ -24,7 +24,7 @@ body {
   padding: 2rem 0;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -41,6 +41,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 2rem 0;
 }
 
 article,
@@ -49,6 +50,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 2rem;
 }
 
 /* fonts */
@@ -132,6 +134,10 @@ p {
   justify-content: flex-start;
 }
 
+.headertext h1 {
+  width: fit-content;
+}
+
 .header-name,
 .header-fname,
 .header-job,
@@ -178,7 +184,7 @@ p {
   overflow: hidden;
   width: 180px;
   height: 180px;
-  top: 356px;
+  top: 410px;
   right: 15%;
   position: absolute;
   object-fit: cover;
@@ -209,9 +215,8 @@ p {
 
 .tag-wrapper p {
   font-family: "Roboto", sans-serif;
-  color: #2b2e34;
   font-weight: bold;
-  background-color: #db9aab;
+  background-color: rgb(255 185 242);
   text-decoration: none;
 
   /* Matching line-height and font-size here gives full control 
@@ -240,7 +245,7 @@ section:nth-child(even) {
 .main-skills {
   display: inline-grid;
   align-items: flex-start;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 
@@ -272,10 +277,6 @@ section:nth-child(even) {
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
-}
-
-.projects-cards-p {
-  height: 6rem;
 }
 
 .image-wrapper img {
@@ -335,19 +336,25 @@ footer {
   color: white;
 }
 
-@media (min-width: 768px) {
-  body {
-    font-size: 1.3em;
-  }
+/* ---------------   media queries ---------------------- */
 
+@media (min-width: 768px) {
   .profile-pic-small {
     width: 250px;
     height: 250px;
-    top: 298px;
+    top: 330px;
   }
 
   .container {
     width: 65%;
+  }
+
+  .icon {
+    width: 94% !important;
+  }
+
+  .main-skills {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .main-skills-extra {
@@ -362,5 +369,25 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+
+  .projects-cards-p {
+    height: 7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.1em;
+  }
+
+  .image-wrapper img,
+  .project-image-overlay {
+    width: 27rem;
+    height: 20rem;
+  }
+
+  .project-image-overlay h3 {
+    height: 20rem;
   }
 }
