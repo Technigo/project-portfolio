@@ -27,7 +27,6 @@ body{
 
     display: flex;
     flex-direction: column;
-    /* min-width: 375px; */
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -65,8 +64,6 @@ body{
 
 }
 .container{
-    /* margin-left: 2.5rem;
-    margin-right: 2.5rem; */
     width: 320px;
 	margin: 0 auto;
     display: flex;
@@ -97,16 +94,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    
-    
 }
 
 .top-media-icon{
     display:flex;
    align-self: flex-end;
    align-content: space-between;
-   
    margin-top: 48px;
    
 }
@@ -220,9 +213,17 @@ body{
 .featured-projects-list{
     display:grid;
     grid-template-columns:repeat(1,1fr);
-    
-    
 }
+
+.three {
+
+    display: none;
+
+}
+.four{
+    display: none;
+}
+
 
 .project-card{
     text-align: left;
@@ -303,6 +304,9 @@ body{
     background-color:transparent;    color: var(--primary-color-red);
     margin-bottom: 1.5rem;
 }
+
+
+
 /* skills section */
 
 .skills-list{
@@ -422,4 +426,40 @@ body{
 .contact-text{
     font-size: var(--font-size-21px);
     font-weight: bold;
+}
+
+
+
+@media (min-width: 768px) {
+	
+    
+    
+    .container , .top-container {
+		width: 768px;
+		margin: 0 auto;
+	}
+
+    .featured-projects-list{
+       
+        grid-template-columns:repeat(2,2fr);
+        justify-content:space-around;
+        column-gap: 2rem;
+    }
+    
+    .three {
+    
+        display: block;
+    
+    }
+    .four{
+        display: block;
+    }
+
+    .skills-list{
+        grid-template-columns:repeat(3,1fr);
+    }
+    .more{
+
+        display:block ;
+    }
 }
