@@ -54,10 +54,11 @@ body {
 	background-color: var(--primary);
 	color: var(--secondary);
 	font-size: 20px;
-	padding: 6px;
+	padding: 4px;
 	/* margin: 0 0 35px 0; */
 	text-transform: uppercase;
 	display: inline-block;
+	border-radius: 5px;
 }
 
 /* HEADER*/
@@ -144,6 +145,8 @@ header {
 	display: flex;
 	justify-content: center;
 	line-height: 30px;
+	padding:40px 0;
+
 }
 .summary-section p {
 	max-width: 60%;
@@ -283,7 +286,7 @@ article p {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 41px;
 	letter-spacing: 0.01em;
 	color: var(--primary);
@@ -350,7 +353,7 @@ article p {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 41px;
 	letter-spacing: 0.01em;
 	color: var(--primary);
@@ -427,7 +430,7 @@ article p {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	gap: 15px;
+	gap: 10px;
 }
 
 .social-media-card img {
@@ -437,7 +440,7 @@ article p {
 .social-media-card h4 {
 	text-transform: uppercase;
 	color: #ff484c;
-	font-size: 11px;
+	font-size: 10px;
 }
 
 /* CONTACT-SECTION */
@@ -472,14 +475,15 @@ article p {
 
 /* TABLET VERSION */
 @media (min-width: 667px) {
-	.social-media-icons a {
-		width: 40px;
-		height: 40px;
-	}
 
-	.portfolio-photo {
-		width: 200px;
-		height: 200px;
+	.head-container {
+	width: 70%;
+	margin: 0 auto;
+
+	}
+	.social-media-icons img {
+		width: 50px;
+		height: 50px;
 	}
 
 	.job-title {
@@ -513,6 +517,12 @@ article p {
 
 /* DESKTOP VERSION */
 @media (min-width: 992px) {
+
+	.social-media-icons img {
+		width: 70px;
+		height: 70px;
+	}
+
 	.portfolio-photo {
 		width: 333px;
 		height: 333px;
