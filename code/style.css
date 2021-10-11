@@ -4,17 +4,18 @@ body {
 
 .header {
   color: #fff;
-  display: grid;
-  grid-template-rows: repeat(3, min-content);
+  /* display: grid; */
+  /* grid-template-rows: repeat(3, min-content); */
   position: relative;
   justify-items: center;
   height: 70vh;
   background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.1)), url(./images/chris-flexen-KBddzD_rWAE-unsplash.jpg);
-  background-position: center center;
+  /* background-position: center center; */
   background-size: cover;
 }
 
 .profile-picture {
+  display: block;
   position: absolute;
   overflow: hidden;
   right: 25px;
@@ -24,6 +25,25 @@ body {
   border: 2px solid #fff;
   border-radius: 50%;
   z-index: 2;
+}
+
+.profpic-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.profpic-box:hover .profpic-overlay {
+  opacity: 1;
 }
 
 .profile-picture-container img {
@@ -49,7 +69,7 @@ body {
 
 .links {
   position: absolute;
-  right: 5px;
+  right: 30px;
   top: 10px;
 }
 
@@ -131,53 +151,82 @@ body {
   flex-wrap: wrap;
 }
 
-.footerlinks {
-  display: grid;
-  grid-template-rows: auto;
+.for-more-links {
   position: relative;
-  justify-content: center;
-  height: 20vh;
+  height: 30vh;
 }
 
 .bottomlinks {
-  position: absolute;
-  right: 400px;
+  width: 100%;
+  margin: auto;
 }
 
-.footerin {
+.bottom-icons {
+  position: relative;
+}
+
+.bottomin {
   position: absolute;
-  left: 115px;
-  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 200px;
+  text-align: center;
+  top: 30px;
   z-index: 1;
 }
 
-.footergit {
+.bottomgit {
   position: absolute;
-  left: 195px;
-  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 30px;
   z-index: 1;
 }
 
-.footerstack {
+.bottomstack {
   position: absolute;
-  left: 275px;
-  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 200px;
+  right: 0;
+  text-align: center;
+  top: 30px;
   z-index: 1;
 }
 
-.circlefin {
+.circlebin {
   position: absolute;
-  left: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 200px;
+  text-align: center;
+  top: 10px;
 }
 
-.circlefootergit {
+.circlebottomgit {
   position: absolute;
-  left: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  /* right: 90px; */
+  top: 10px;
 }
 
-.circlefooterstack {
+.circlebottomstack {
   position: absolute;
-  left: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 200px;
+  right: 0;
+  text-align: center;
+  top: 10px;
 }
 
 .sub-heading {
@@ -380,11 +429,6 @@ li {
     grid-template-rows: 1fr 1fr;
     padding: 30px;
     gap: 10px;
-  }
-
-  .bottomlinks {
-    position: absolute;
-    width: 30%;
   }
 }
 
