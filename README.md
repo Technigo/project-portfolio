@@ -7,3 +7,8 @@ Challenge:
 
 My approach
     I worked on this site section by section. First created the mobile version and than for the other devices. I also tried to use the semantic HTML also. 
+
+Check it live here:
+
+   https://naushinmalik.netlify.app/
+    
