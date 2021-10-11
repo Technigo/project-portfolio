@@ -175,7 +175,6 @@ p {
 
 .header-description {
   background-color: var(--green);
-  text-align: justify;
 }
 
 .line {
@@ -191,6 +190,35 @@ p {
   background-color: var(--pink);
   border-radius: 50%;
   display: inline-block;
+}
+
+.tag-wrapper {
+  display: flex;
+
+  /* Added to help with multiple lines of tags */
+  flex-wrap: wrap;
+}
+
+.tag-wrapper p {
+  font-family: "Roboto", sans-serif;
+  color: #2b2e34;
+  font-weight: bold;
+  background-color: #db9aab;
+  text-decoration: none;
+
+  /* Matching line-height and font-size here gives full control 
+     over the size of our tags to the padding*/
+  font-size: 12px;
+  line-height: 12px;
+
+  /* Control the size of the tags */
+  padding: 4px;
+
+  /* Control the spacing of our tags */
+  margin: 3px;
+
+  /* Some rounded borders */
+  border-radius: 5px;
 }
 
 .main-tech {
@@ -230,6 +258,5 @@ footer {
 
   .main-skills-extra {
     display: block;
-    color: pink;
   }
 }
