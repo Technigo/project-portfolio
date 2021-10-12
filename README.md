@@ -7,5 +7,9 @@ I'm a frontend developer student who loves building interactive and beautiful ap
 - 👯 I’m looking for a junior frontend developer position. 
 - 📫 How to reach me: [Linkedin](https://www.linkedin.com/in/karoline-mann-56a2315a/) or [Email](mailto:karro_aaa@hotmail.com)
 
+
+My portfolio: https://karoline-mann-portfolio.netlify.app/
+It will be updated weekly with new projects and articles.
+
 //Karoline
 
