@@ -9,7 +9,6 @@ I'm a frontend developer student who loves building interactive and beautiful ap
 
 
 My portfolio: https://karoline-mann-portfolio.netlify.app/
-It will be updated weekly with new projects and articles.
 
 //Karoline
 
