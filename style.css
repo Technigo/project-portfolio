@@ -40,7 +40,7 @@ section {
   position: absolute;
   right: 10%;
   top: 356px;
-  border: 2px solid white;
+  border: 2px solid var(--pink);
   z-index: 1;
 }
 .line {
@@ -121,13 +121,17 @@ h3 {
   display: flex;
   justify-content: center;
 }
-h4 {
+.project-heading {
   color: var(--blue);
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   margin: 15px 0px 5px 0px;
   text-transform: uppercase;
+}
+.project-heading:hover {
+  text-decoration: underline;
+  color: var(--blue);
 }
 .align-text-center {
   text-align: center;
@@ -170,6 +174,11 @@ h4 {
   margin: 0px;
   color: var(--dark);
 }
+.article-link .colored-p:hover {
+  text-decoration: underline;
+  color: var(--maroon);
+}
+
 .colored-p {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
@@ -340,6 +349,15 @@ footer a {
   font-size: 30px;
 }
 
+.img-wrapper:hover .text-overlay {
+  color: transparent;
+  transition: ease-in 0.3s;
+}
+
+.img-wrapper:hover .project-overlay {
+  background-color: transparent;
+  transition: ease-in 0.3s;
+}
 .img-wrapper {
   position: relative;
 }
