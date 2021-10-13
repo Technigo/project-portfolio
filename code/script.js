@@ -4,4 +4,5 @@ const containerWithDots = document.getElementById("dots");
 themeToggle.onchange = () => {
   document.body.classList.toggle("another-color-theme");
   containerWithDots.classList.toggle("glowing-shadow");
+  containerWithDots.classList.toggle("default-shadow");
 };
