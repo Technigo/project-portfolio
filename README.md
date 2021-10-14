@@ -1,12 +1,13 @@
-# MY PORTFOLIO
+# Build My Portfolio
+This project's goal is not only to build my portfolio but also to put my HTML and CSS skills to the test. This project is be never done and I will regularly update it with a new project that I'll build. 
 
-Thanks to that project I've learned a lot about CSS. First of all, everything is boxes and you can put more boxes in the boxes. 
-I've learned more about how to use Flexbox especially properties like flex-wrap and justify-content. 
+# What I learned
 
-I need to be better at planning my work before the start and think thought how my website should look from a CSS perspective. Maybe even skis on paper and have this planning visually. 
-At the beginning of this project, everything felt confusing to me, especially the CSS part. But at the end of the week, I am proud of what I've created.
+- This project foundation is built on the container class that I've put in each section in my code. By doing so it was easier to style the whole project and I've learned a lot about how CSS works. This week concludes that CSS is all about boxes in which you can put more boxes. The only thing you have to be careful with is not overusing that. 
 
-I've tested my wesite with Chrome Devtools Lighthouse and got accessibility of 81. Then I've fixed some issues with links by additing rel="noopener" to the a tag and converting all images to webp format ( https://convertio.co/)
+- This time I chose a mobile-first approach and then I moved to tablet and desktop screens.  I think this approach was better than beginning styling from the desktop screen and I finally understood how media queries work. 
+
+- I used Flexbox to style my section and position: absolute to combined with Flexbox to style my header. I've learned more about how to use Flexbox especially properties like flex-wrap and justify-content. 
 
 # DEMO
-Demo: https://daryalapata.netlify.app/
+View my project here: https://daryalapata.netlify.app/
