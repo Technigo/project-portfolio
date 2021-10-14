@@ -9,4 +9,4 @@ Cross browser testing in safari, mozilla, opera, chrome.
 
 ##View it live
 
-See: https://app.netlify.com/sites/priscilaalfaro-portfolio/overview
+See: https://priscilaalfaro-portfolio.netlify.app/
