@@ -9,5 +9,5 @@ This project's goal is not only to build my portfolio but also to put my HTML an
 
 - I used Flexbox to style my section and position: absolute to combined with Flexbox to style my header. I've learned more about how to use Flexbox especially properties like flex-wrap and justify-content. 
 
-# DEMO
+# View it
 View my project here: https://daryalapata.netlify.app/

@@ -13,11 +13,11 @@ p {
     font-size:16px;
     letter-spacing: 0.2px;
     line-height: 1.8;
-    font-family: 'Roboto';
+
 }
 
 .container {
-    width: 320px;
+    width: 337px;
     margin: 40px auto;
 }
 
@@ -28,6 +28,10 @@ p {
 a {
     text-decoration: none;
     color: black;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 /* header */
@@ -146,6 +150,12 @@ a {
     margin-left: -10px;
 }
 
+/*TECH SECTION*/
+.tech-text {
+    text-align: center;
+    margin: 20px auto;
+}
+
 /*project and article section*/ 
 .cards-container {
     display: flex;
@@ -192,31 +202,25 @@ a {
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 100%;
     width: 100%;
     transition: .5s ease;
-    background-color:#bcbcbc;
+    opacity:0.5;
+    background-color: black;
   }
 
-  .image-container:hover, .overlay {
-    opacity:0.7;
+  .image-container:hover .overlay {
+    opacity: 1;
   }
 
   .text {
-    color: rgb(253, 253, 253);
-    padding: 10px;
-    background-color: #406343;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    background-color: #272727;
     font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
   }
@@ -255,7 +259,7 @@ a {
 
 .skills {
     margin: 30px auto;
-    width: 160px;
+    width: 161px;
 }
 
 .skills-title {
