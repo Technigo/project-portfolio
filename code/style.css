@@ -3,6 +3,11 @@
 :root {
   --prim: #f6f6f6;
   --sek: #A25F59;
+  --three: #98a596;
+  --four: #000;
+  --five: #fff;
+  --mont: 'Montserrat', sans-serif;
+  --rob: 'Roboto', sans-serif;
 
 }
 
@@ -10,13 +15,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--mont);
+  font-family: var(--rob);
   }
 
 h1 {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--rob);
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -25,21 +30,15 @@ h1 {
 
 h2 {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--mont);
   font-weight: bold;
   line-height: 49px;
 }
 
 h3 {
   background-color: var(--sek);
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  white-space: nowrap;
   text-transform: uppercase;
   width: fit-content;
-  height: 27px;
   border-radius: 2px;
   padding: 0 3px;
   margin-bottom: 30px;
@@ -49,24 +48,9 @@ h3 {
 } 
 
 h4 {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 29px;
-  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: var(--sek);
   }
-
-
-p {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 29px;
- }
 
 section {
   padding: 25px;
@@ -76,6 +60,86 @@ section:nth-child(2n) {
   background-color: var(--prim);
 }
 
+/* Font-classes */
+.mon1 {
+  font-family: var(--mont);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.mon2 {
+  font-family: var(--mont);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.mon3 {
+  font-family: var(--mont);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+}
+
+.mon4 {
+  font-family: var(--mont);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+.rob1 {
+  font-family: var(--rob);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+.rob2 {
+  font-family: var(--rob);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 0.01em;
+}
+
+.rob3 {
+  font-family: var(--rob);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.dark {
+  color: var(--four);
+}
+
+.main {
+  color: var(--sek);
+}
+
+.invert {
+  background-color: transparent;
+  color: var(--sek);
+  filter: none;
+}
 
 /* HEADER SECTION */
 
@@ -90,7 +154,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   border: transparent;
-  color: white;
+  color: var(--five);
 }
 
 .social-media-links-div {
@@ -110,19 +174,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid white 2px;
+  border: solid var(--five) 2px;
   border-radius: 50%;
   height: 40px;
   width: 40px;
   font-size: 24px;
-  color: white;
+  color: var(--five);
   margin-left: 5px;
   transition: background-color .4s;
 }
 
 .icon-circle:hover {
   color:var(--sek);
-  background-color: white;
+  background-color: var(--five);
 }
 
 .social-media-links a {
@@ -155,7 +219,7 @@ header {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--five);
     overflow: hidden;
   }
   
@@ -223,7 +287,7 @@ header {
 }
 
 .weather {
-  background: url('./assets/pro_weather-app.webp');
+  background: url('./assets/pro_weather-app.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -260,17 +324,8 @@ header {
 .project-image-title {
   position: absolute;
   place-self: center;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: var(--five);
   text-transform: uppercase;
-  font-size: 28px;
-  line-height: 34px;
-}
-
-.project-section p {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.01em;
-  color: #000000;
 }
 
 .span-container {
@@ -279,17 +334,10 @@ header {
 }
 
 .project-section span {
-  background-color:#98a596;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 9px;
-  line-height: 11px;
-  letter-spacing: 0.01em; 
+  background-color:var(--three);
   border-radius: 2px; 
-  width: fit-content;
   padding: 5px;
   margin-right: 3px;
-  color: black;
 }
 
 
@@ -318,42 +366,8 @@ header {
   background-size: cover;
 }
 
-.date {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 30px;
-  color: var(--sek);
-}
-
-.thoughts h4 {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 30px;
-  color: #000000;
-}
-
-.thoughts p {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 32px;
-  color: #000000;
-}
-
-.thoughts-list ul, .thoughts-list a {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 29px;
+.thoughts-list ul {
   list-style: none;
-  width: 100%;
-  color: #000000;
 }
 
 /* SKILLS-SECTION */
@@ -421,16 +435,11 @@ header {
 }
 
 .icon-circle-more:hover {
-  color: white;
+  color: var(--five);
   background-color: var(--sek);
 }
 
 .more-section p {
-  font-family: 'Roboto', sans-serif
-  font-style: normal;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 13px;
   text-align: center;
   color: var(--sek);
 }
@@ -439,7 +448,7 @@ header {
 footer {
   padding: 80px 0;
   text-align: center;
-  background-color: #98a596;  
+  background-color: var(--three);  
 } 
   
 footer h3 {
@@ -447,13 +456,8 @@ footer h3 {
 }  
 
 footer p, footer a {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 25px;
   text-align: center;
-  color: white;
+  color: var(--five);
   text-decoration: none;
 }
 
@@ -538,8 +542,34 @@ footer p, footer a {
 /* desktop */
 
 @media (min-width: 1024px) {
+
+  header {
+    grid-template-rows: repeat(17, 40px);
+    height: 680px;
+  }
+
   .headline {
-      grid-row: 4;
+      grid-row: 6;
+      grid-column: 3/12;
+  }
+
+  .social-media-links-div {
+    grid-row: 3;
+    grid-column: 10
+    margin-top: 20px;
+  }
+
+  .icon-circle {
+    width: 80px;
+    height:80px;
+    font-size: 40px;
+  }
+
+  .profile-pic {
+    grid-column: 11;
+    grid-row: 11;  
+    width: 333px;
+    height: 333px;
   }
 
   h1 {
@@ -561,6 +591,33 @@ footer p, footer a {
       line-height: 78px;
   }
 
+  .mon1 {
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.01em;
+  }
+
+  .mon2 {
+    font-size: 38px;
+    line-height: 47px;
+  }
+
+  .mon4 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .rob1 {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .rob2 {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+  }
+
   .heading-h2 {  
       margin-top: 1%;
       margin-bottom: 1%;
@@ -568,10 +625,13 @@ footer p, footer a {
 
   .intro-section {
       padding: 60px 180px;
-      font-size: 20px;
   }
 
+  .dot {
+    margin-left: -10px;
+  }
   
+ 
   .projects-image, .thoughts-img {
     height: 300px;
   }
