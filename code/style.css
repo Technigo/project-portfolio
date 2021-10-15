@@ -144,9 +144,6 @@ section:nth-child(2n) {
 /* HEADER SECTION */
 
 header {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(13, 40px);
   background: linear-gradient(rgba(44, 40, 27, 0.22), rgba(41, 37, 25, 0.63)),
       url("./assets/pexels-magda-ehlers-1586951.webp");
   height: 520px;
@@ -155,6 +152,15 @@ header {
   background-size: cover;
   border: transparent;
   color: var(--five);
+}
+
+.topheader-div {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(13, 40px);
+  max-width: 2000px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .social-media-links-div {
@@ -229,6 +235,12 @@ header {
 
 
 /* INTRO-SECTION */
+
+.intro-section p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+}
   
 .line {
   border: 1px solid var(--sek);
@@ -256,6 +268,9 @@ header {
 
 .tech-section p {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
 }
 
 /* PROJECT-SECTION */
@@ -377,6 +392,9 @@ header {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
 } 
 
 .skills-container article {
@@ -387,12 +405,7 @@ header {
 
 .skills-container ul {
   list-style: none;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 29px;
-  color: #000000;
+ 
 }
 
 
@@ -499,8 +512,8 @@ footer p, footer a {
   
   .profile-pic {
       grid-row: 9;
-      width: 270px;
-      height: 270px;
+      width: 220px;
+      height: 220px;
   }
   
   .intro-section p {
@@ -528,10 +541,13 @@ footer p, footer a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
   }
  
   .skills-container article {
-      padding-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .more-some-div {
@@ -541,16 +557,19 @@ footer p, footer a {
 
 /* desktop */
 
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
 
   header {
-    grid-template-rows: repeat(17, 40px);
     height: 680px;
   }
 
+  .topheader-div {
+    grid-template-rows: repeat(17, 40px);
+  }
+
   .headline {
-      grid-row: 6;
-      grid-column: 3/12;
+    grid-row: 6;
+    grid-column: 3/12;
   }
 
   .social-media-links-div {
@@ -566,20 +585,20 @@ footer p, footer a {
   }
 
   .profile-pic {
-    grid-column: 11;
+    grid-column: 10;
     grid-row: 11;  
     width: 333px;
     height: 333px;
   }
 
   h1 {
-      font-size: 28px;
-      line-height: 40px;
+    font-size: 28px;
+    line-height: 40px;
   }
 
   .profession1 {
-      font-size: 82px;
-      line-height: 100px;
+    font-size: 82px;
+    line-height: 100px;
   }
 
   .profession1.tight {
@@ -587,8 +606,8 @@ footer p, footer a {
   }
 
   .profession2 {
-      font-size: 50px;
-      line-height: 78px;
+    font-size: 50px;
+    line-height: 78px;
   }
 
   .mon1 {
@@ -619,12 +638,12 @@ footer p, footer a {
   }
 
   .heading-h2 {  
-      margin-top: 1%;
-      margin-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   .intro-section {
-      padding: 60px 180px;
+    padding: 60px 180px;
   }
 
   .dot {
@@ -636,9 +655,6 @@ footer p, footer a {
     height: 300px;
   }
 
-  .skills-container {
-    margin: 0 10% 30px 10%;
-  }
 
   .skills-container article {
     width: unset;
@@ -650,14 +666,14 @@ footer p, footer a {
   }
 
   .icon-circle-more {
-    font-size: 45px;
-    height: 120px;
-    width: 120px;
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
 
   }
 
   footer p, a {
-      line-height: 35px;
-      padding-bottom: 0px;
+    line-height: 35px;
+    padding-bottom: 0px;
   }
 }
