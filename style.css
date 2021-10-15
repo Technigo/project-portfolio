@@ -265,6 +265,35 @@ h3 a:hover {
   transition: all 200ms ease-in;
 }
 
+.projects__link-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+}
+
+.otherprojects__link-container {
+  width: 50%;
+  display: flex;
+  column-gap: 12px;
+}
+
+.projects__link {
+  margin-bottom: 12px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.projects__link:hover {
+  color: white;
+  background-color: black;
+  transition: all 200ms ease-in;
+}
+
 .thoughts a {
   color: black;
   width: 100%;
@@ -330,6 +359,10 @@ h3 a:hover {
   letter-spacing: 0.04em;
   padding: 5px 8px;
   background-color: var(--highlight-color);
+}
+
+.view-it-live:hover {
+  transition: all ease-in 200ms;
 }
 
 .fa-chevron-double-right {
