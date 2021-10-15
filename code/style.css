@@ -96,18 +96,21 @@ a:visited {
 
 /* header icons */
 .nav-box {
-    grid-row: 1;
-    grid-column: 10/12;
-    position: absolute;
-    margin-top: 20px;
+    grid-column: 11/12;
+    grid-row: 2;
+    justify-self: end;
 }
 
-.icon-img {
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: transparent;
+.social-media-icon-top i {
+    color: #18252a;
+    width: 40px;
+	height: 40px;
+	font-size: 28px;
+	transition: all 0.2s ease-in-out;
+}
+
+.social-media-icon-top i:hover {
+    opacity: .7;
 }
 
 
@@ -340,37 +343,35 @@ a:visited {
 
 .container-bottom-icons {
     display: flex;
-    justify-content: space-between; 
+    /* justify-content: space-between;  */
+    align-items: center;
+    justify-content: center;
     margin-bottom: 60px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .box-icons-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.box-icons-bottom > img {
-    width: 3.75rem;
-    height: 3.75rem;
-    border-radius: 50%;
-    margin: auto;
-    background-color: #fff;
-}
-
-.box-icons-bottom > img:hover {
-    background-color: whitesmoke;
+.box-icons-bottom i {
+    color: var(--dark);
+    font-size: 36px;
+    color: #18252a;
 }
 
 .box-icons-bottom p {
-    color: var(--dark);
+    color: #18252a;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 0.688rem;
     text-align: center;
-    padding-top: 7px;
+    padding-top: 10px;
 }
 
 
@@ -426,18 +427,8 @@ a:visited {
     height: 240px;
 }
 
-.nav-box {
-    grid-row: 1;
-    grid-column: 11;
-    position: absolute;
-    margin-top: 20px;
-}
-
-.icon-img {
-    width: 60px;
-    height: 60px;
-    padding: 5px;
-    margin-right: 5%;
+.social-media-icon-top i {
+	font-size: 34px;
 }
     
 .summary {
@@ -537,16 +528,14 @@ a:visited {
     height: 250px;
 }
 
-.icon-img {
-    width: 60px;
-    height: 60px;
-    padding: 5px;
+.social-media-icon-top i {
+	font-size: 34px;
 }
     
 .summary {
     background-color: #f4f4f4;
     width: 100%;
-    padding: 60px 250px 60px 250px;
+    padding: 70px 250px 60px 250px;
     margin-top: -10px;
 }
 
@@ -616,6 +605,11 @@ a:visited {
 .for-more {
     width: 320px;
     margin: 30px auto 0 auto;
+}
+
+.box-icons-bottom {
+    padding-right: 20px;
+    padding-left: 20px;
 }
 }
 
