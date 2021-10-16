@@ -120,8 +120,9 @@ a {
 
 .intro-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: 49px;
   padding-bottom: 43px;
 }
@@ -135,6 +136,26 @@ a {
   line-height: 29px;
   margin: 0;
   word-wrap: break-word;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#more {
+  display: none;
+}
+
+#myBtn {
+  font-family: "Montserrat", sans-serif;
+  color: #f397a8;
+  background-color: transparent;
+  border: none;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#myBtn:hover {
+  transform: scale(1.2);
 }
 
 .start-figure {
@@ -247,6 +268,7 @@ a {
 .image {
   width: 100%;
   display: block;
+  /* object-fit: cover; */
 }
 
 h3 {
@@ -406,8 +428,8 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(#fa382f, #da8695);
-  /* background: #da8695; */
+  /* background-image: linear-gradient(#fa382f, #da8695); */
+  background: #f397a8;
   padding-bottom: 130px;
 }
 .contact-heading {
@@ -464,6 +486,7 @@ h6 {
 
   .project-cards {
     grid-template-columns: 1fr 1fr;
+    /* grid-gap: 30px; */
   }
 
   .text-overlay {
@@ -560,6 +583,10 @@ h6 {
 
   .other-container {
     width: 90%;
+  }
+
+  .project-cards {
+    width: 70%;
   }
 }
 
