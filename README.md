@@ -8,7 +8,7 @@ I'm a frontend developer student who loves building interactive and beautiful ap
 - 📫 How to reach me: [Linkedin](https://www.linkedin.com/in/karoline-mann-56a2315a/) or [Email](mailto:karro_aaa@hotmail.com)
 
 
-My portfolio: https://karoline-mann-portfolio.netlify.app/
+My portfolio: https://www.karolinemann.com/
 
 //Karoline
 
