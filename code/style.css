@@ -1,8 +1,8 @@
 :root {
     /* color variables*/  
-    --primary-color-blue:#f7d566;
-    --primary-color-red:#1d86e9;
-    --secondary-color-pink:#FDDFE7;
+    --primary-color-yellow:#f7d566;
+    --primary-color-blue:#1d86e9;
+    --secondary-color-green:#7db6bc;
     --neutral-color-grey:#F4F4F4;
     --text-color-white:#fff;
     --hover-color-wild-blue :#878bc0;
@@ -24,10 +24,7 @@
 }
 
 body{
-
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -35,7 +32,6 @@ body{
 /* kind of global */
 
 .section{
-
     margin: 0;
 
 }
@@ -43,7 +39,7 @@ body{
     background-color: var(--neutral-color-grey);
 }
 .section-header{
-    background-color: var(--primary-color-red);
+    background-color: var(--primary-color-blue);
     color: var(--text-color-white);
     font-family: var(--font-family-montserrat);
     font-size: var(--font-size-22px);
@@ -64,8 +60,8 @@ body{
 
 }
 .container{
-    width: 320px;
-	margin: 0 auto;
+    
+	margin: 0 30px 0 30px;
     display: flex;
     flex-flow:column;
     align-items: center;
@@ -76,6 +72,7 @@ body{
     padding-bottom: 3.75rem; 
 }
 
+
 /* header section*/
 
 .top{
@@ -83,11 +80,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding: 0 30px 0 30px;
 }
 .top-container{
-    width: 320px;
-	margin: 0 auto;
-
+    margin: 0px 30px 0 30px;
 }
 .hero-image{
     min-height: 520px;
@@ -97,7 +93,7 @@ body{
 }
 
 .top-media-icon{
-    display:flex;
+   display:flex;
    align-self: flex-end;
    align-content: space-between;
    margin-top: 48px;
@@ -119,9 +115,7 @@ body{
  margin:0;
 }
 
-.white-icon:hover 
-
- {
+.white-icon:hover {
     border: #878bc0 solid 2px;
 }
 .top-txt{
@@ -164,8 +158,8 @@ body{
 }
 .profile-image{
 
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border: var(--text-color-white) solid 2px;
     border-radius: 50%;
     object-fit: cover;
@@ -182,7 +176,7 @@ body{
     
 }
 .line {
-    border: 1px solid var(--primary-color-red);
+    border: 1px solid var(--primary-color-blue);
     width: 40px;
     display: inline-block;
     margin-bottom: 4px;
@@ -192,7 +186,7 @@ body{
 .dot {
     height: 10px;
     width: 10px;
-    background-color: var(--primary-color-red);
+    background-color: var(--primary-color-blue);
     border-radius: 50%;
     display: inline-block;
    
@@ -246,7 +240,8 @@ body{
 }
 
 .project-image {
-	width: 100%;
+	width: 327px;
+    height: 212px;
 	display: block;
     margin-bottom: 1rem;
 }
@@ -271,7 +266,7 @@ body{
   }
 .project-card h2{
     margin: 0 0 0 0;
-    color: var(--primary-color-red);
+    color: var(--primary-color-blue);
     text-transform: uppercase;
     width:fit-content;
     font-size: var(--font-size-17px);
@@ -285,7 +280,7 @@ body{
 }
 .project-card span {
     margin: 5px 10px 10px 0;
-    background-color: #7db6bc;
+    background-color: var(--secondary-color-green);
     font-size: var(--font-size-9px);
     color: var(--text-color-white);
     line-height:0.69rem ;
@@ -301,9 +296,10 @@ body{
 }
 
 .other-header {
-    background-color:transparent;    color: var(--primary-color-red);
+    background-color:transparent;    color: var(--primary-color-blue);
     margin-bottom: 1.5rem;
 }
+
 
 
 
@@ -327,7 +323,7 @@ body{
 }
 .header-skill{
     margin: 0;
-    color: var(--primary-color-red);
+    color: var(--primary-color-blue);
     text-transform: uppercase;
 }
 
@@ -357,7 +353,7 @@ body{
 
 .icon-caption{
     padding-top: 1.19rem;
-    width: max-content;
+   
     
 }
 .icon-caption:hover{
@@ -380,7 +376,7 @@ body{
 }
 
 .icon{
- border: var(--primary-color-red) solid 2px;
+ border: var(--primary-color-blue) solid 2px;
  border-radius: 50%;
  padding: 16px 19px;
  display: inline-block;
@@ -390,7 +386,7 @@ body{
 .icon:hover 
 
  {
-    border: var(--primary-color-blue) solid 2px;
+    border: var(--primary-color-yellow) solid 2px;
 }
 
 /*footer section  */
@@ -398,7 +394,7 @@ body{
     bottom: 0;
     margin-top: auto;
     display: flex;
-    background-color: var(--primary-color-blue);
+    background-color: var(--primary-color-yellow);
     color: var(--text-color-white);
     font-family: var(--font-family-montserrat);
     line-height: 25px;  
@@ -433,12 +429,9 @@ body{
 @media (min-width: 768px) {
 	
     
-    
-    .container , .top-container {
-		width: 768px;
-		margin: 0 auto;
+    .container, .top-container {
+		margin: 0 20% 0 20%;
 	}
-
     .featured-projects-list{
        
         grid-template-columns:repeat(2,2fr);
@@ -462,4 +455,21 @@ body{
 
         display:block ;
     }
+
+    .text-over-image {
+        font-size: var(--font-size-21px);
+    }
+    .txt > span{
+
+        color: var(--primary-color-blue);
+    }
+
+    .project-image {
+	width: 523px;
+    height: 306px;
+	display: block;
+    margin-bottom: 1rem;
+}
+
+    
 }
