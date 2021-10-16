@@ -8,7 +8,7 @@
   <title>Elsa Carlström's Portfolio</title>
 </head>
 <body>
-  
+
   <div class="background-img-container">
     <img class="background-img" src="./assets/images/monstera_green.jpg" alt="Monstera plant">
   </div>
@@ -42,8 +42,6 @@
         <img src="./assets/images/profile_image.jpg" alt="Picture of Elsa Carlström" class="profile-picture">  
       </div>
     </div>
-    <!-- <div class="background-img wrapper"></div>
-    <img class="header-background-img" src="./assets/images/monstera_green.jpg" alt="Monstera plant"> -->
   </header>
 
   <div class="section-background-color">
@@ -60,7 +58,7 @@
         <h2 tabindex="0">Tech</h2>
       </div>
       <div class="text-centered">
-        <p>HTML, CSS, Flexbox, <span class="red">JavaScript ES6</span>, JSX, <span class="red">React</span>, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
+        <p>HTML, CSS, Flexbox, <span class="red">JavaScript ES6</span>, JSX, <span class="red">React</span>, React Hooks, Redux, <span class="red">JSON</span>, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
       </div>
     </div>
   </div>
@@ -71,63 +69,66 @@
         <h2 tabindex="0">Featured Projects</h2>
       </div>
       <div class="featured-projects">
-        
+
         <article class="portfolio-project featured">
-          <div class="project-header">
-            <a href="https://github.com/elsisco/project-github-tracker">
-              <img src="./assets/images/319-500x300.jpg" alt="XXX">
-              <h3 tabindex="0">GitHub Tracker</h3>
-            </a>
-          </div>
-          <h6>Visualizing the Technigo progress</h6>
-          <p>This project was all about building a page to track our Technigo project progress by fetching our data from GitHub API's. I decided to give it a personal touch and go creative with the design. The "Language-O-Meter" is my favorite detail.</p>
-          <section class="tags-wrapper">
-            <p class="html-css">HTML5 / CSS3</p>
-            <p class="javascript">JavaScript ES6</p>
-          </section>
-        </article>
-    
-        <article class="portfolio-project featured">
-          <div class="project-header">
-            <a href="https://github.com/elsisco/project-music-releases">
-              <img src="./assets/images/553-500x300.jpg" alt="XXX">
+          <a href="https://github.com/elsisco/project-music-releases">
+            <div class="project-header">
+              <img src="./assets/images/music-750x450.jpg" alt="XXX">
               <h3 tabindex="0">Music Releases</h3>
-            </a>
-          </div>
-          <h6>First React Project</h6>
+            </div>
+            <h6>First React Project</h6>
+          </a>
           <p>In the React intro week we worked with JSON from Spotify to display album and singles releases and playlists. Together we dealt with props, components, mapping and followed design instructions for look, layout and hover effects.</p>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="react">React / JSX</p>
+            <p class="json">JSON</p>
             <p class="group-project">Pair-programming</p>
           </section>
         </article>
-  
-        <article class="portfolio-project featured desktop-only">
+
+        <article class="portfolio-project featured">
           <a href="https://github.com/elsisco/project-weather-app">
             <div class="project-header">
-              <img src="./assets/images/weather-app-750x450.jpg" alt="XXX">
-              <h3 tabindex="0">Forecast Fetching</h3>
+              <img src="./assets/images/weather-750x450.jpg" alt="XXX">
+              <h3 tabindex="0">Weather App</h3>
             </div>
-            <h6>Weather App</h6>
+            <h6>Fetching Forecasts</h6>
           </a>
           <p>In the project of creating a Weather App we worked like a developer team and dove deeper into JavaScript. The app fetches JSON data from an API source and is displayed clean and fun design.</p>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">JavaScript ES6</p>
+            <p class="json">JSON</p>
             <p class="group-project">Mob-programming</p>
           </section>
         </article>
-  
+        
+        <article class="portfolio-project featured">
+          <a href="https://github.com/elsisco/project-github-tracker">
+            <div class="project-header">
+              <img src="./assets/images/github-tracker-750x450.jpg" alt="XXX">
+              <h3 tabindex="0">GitHub Tracker</h3>
+            </div>
+            <h6>A handy overview</h6>
+          </a>
+          <p>This project was all about building a page to track our Technigo project progress by fetching our data from GitHub API's. I decided to give it a personal touch and go creative with the design. The "Language-O-Meter" is my favorite detail.</p>
+          <section class="tags-wrapper">
+            <p class="html-css">HTML5 / CSS3</p>
+            <p class="javascript">JavaScript ES6</p>
+            <p class="json">JSON</p>
+          </section>
+        </article>
+    
         <article class="portfolio-project featured desktop-only">
           <a href="https://github.com/elsisco/project-business-site">
             <div class="project-header">
               <img src="./assets/images/surf-camp-750x450.jpg" alt="Female surfing on longboard">
               <h3 tabindex="0">White Lotus Surf Camp</h3>
             </div>
-            <h6>Business Site Project</h6>
+            <h6>Business Site</h6>
           </a>
-          <p>A week during the first sprint at Technigo resulted in a site for a Surf Camp that featured a hero video header, a signup form and the first taste of JavaScript in shape of an accordion.</p>
+          <p>A week during the first sprint at Technigo resulted in a business site for a Surf Camp featuring a hero video header, a signup form and the first taste of JavaScript in shape of an accordion.</p>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">JavaScript ES6</p>
@@ -140,7 +141,8 @@
       </div>
 
       <div class="other-projects-wrapper">
-        <div class="portfolio-project mobile-only">
+
+        <!-- <div class="portfolio-project mobile-only">
           <a href="https://github.com/elsisco/project-weather-app">
             <h6 tabindex="0">Weather App</h6>
           </a>
@@ -148,15 +150,16 @@
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">JavaScript ES6</p>
+            <p class="json">JSON</p>
             <p class="group-project">Mob-programming</p>
           </section>
-        </div>
+        </div> -->
     
         <div class="portfolio-project mobile-only">
           <a href="https://github.com/elsisco/project-business-site">
             <h6 tabindex="0">White Lotus Surf Camp</h6>
           </a>
-          <p>A week during the first sprint at Technigo resulted in a site for a Surf Camp that featured a hero video header, a signup form and the first taste of JavaScript in shape of an accordion.</p>
+          <p>A week during the first sprint at Technigo resulted in a business site for a Surf Camp featuring a hero video header, a signup form and the first taste of JavaScript in shape of an accordion.</p>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">JavaScript ES6</p>
@@ -167,7 +170,7 @@
           <a href="https://github.com/elsisco/project-chatbot">
             <h6 tabindex="0">Chatbot</h6>
           </a>
-          <p>In this group project we created a Lord of the Rings themed adventure game in shape of a Chatbot.</p>
+          <p>In this group project we created a Chatbot. We gave it a Lord of the Rings inspired storyline where the player, in shape of a hobbit, encounters a tricky wizard...</p>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">JavaScript ES6</p>
@@ -179,7 +182,7 @@
           <a href="https://github.com/elsisco/project-guess-who">
             <h6 tabindex="0">"Guess Who?" Game</h6>
           </a>
-          <p>This project featured the classic 90's game "Guess Who?" and I practiced creating JavaScript functions and event listeners, and using methods such as filter and Math.</p>
+          <p>This project featured the classic 90's game "Guess Who?". It was a great practice in creating JavaScript functions and event listeners, and using methods such as filter and math.</p>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">JavaScript ES6</p>
@@ -190,7 +193,7 @@
           <a href="https://github.com/elsisco/project-news-site">
             <h6 tabindex="0">News Site Project</h6>
           </a>
-          <p>A project to practice HTML, CSS and using Flexbox and/or Grid to create responsive sites. It was great to start with responsiveness so early on to make it a natural part of all upcoming projects.</p>
+          <p>A project to practice HTML, CSS and using Flexbox and/or Grid to create responsive sites. In this project I got to establish methods to handle website responsiveness early on which made it a natural part of all upcoming projects.</p>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
           </section>
@@ -201,6 +204,7 @@
     </div>
   </div>
   
+  <!-- Future blog posts -->
   <div class="section-background-color">
     <div class="section-wrapper">
       <div class="headline-wrapper">
@@ -257,7 +261,7 @@
       <div class="skills-wrapper">
         <section class="skills-section">
           <h6 tabindex="0">Code</h6>
-          <p>HTML5<br>CSS3<br>JavaScript ES6<br>C#<br>Unit testing</p>
+          <p>HTML5<br>CSS3<br>JavaScript ES6<br>JSON<br>Unit testing</p>
           <br>
           <h6 tabindex="0">Upcoming</h6>
           <p>React<br>React Native<br>Redux<br>Node.js<br>MongoDB<br>Figma</p>
@@ -306,7 +310,7 @@
   <div class="headline-wrapper">
     <h4 tabindex="0">Contact</h4>
   </div>
-  <p tabindex="0">Elsa Carlström<br>0735-21 22 48<br>elsa.carlstrom@gmail.com</p>
+  <p tabindex="0">Elsa Carlström<br>0735-21 22 48<br><a href = "mailto: elsa.carlstrom@gmail.com">elsa.carlstrom@gmail.com</a></p>
 </footer>
 
 
