@@ -118,7 +118,12 @@ body section:nth-child(2n) {
 
 .profile-section,
 .tech-section,
-.featured-section {
+.featured-section,
+.thoughts-section,
+.skills-section,
+.skills-section,
+.more-section,
+.footer-section {
   display: flex;
   flex-direction: column;
   padding: 25px 24px 50px 24px;
@@ -313,12 +318,25 @@ body section:nth-child(2n) {
   display: none;
 }
 /* other projects */
+.other-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
 .heading-4 {
   font-weight: 700;
   font-size: 21px;
   margin: 20px 0px;
   text-transform: uppercase;
   color: var(--secondary-color);
+  text-align: center;
+}
+
+.highlight {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 6px 12px;
 }
 
 .arrow {
@@ -329,6 +347,99 @@ body section:nth-child(2n) {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+/* skills section*/
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.skills-card ul {
+  list-style-type: none;
+  text-align: center;
+  width: 250px;
+  padding: 0;
+  margin-right: 0;
+}
+
+.skills-card li {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+.skills-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+  color: var(--highlight-color);
+  width: auto;
+  text-transform: uppercase;
+}
+.skills-card {
+  padding-bottom: 25px;
+}
+/* more-section*/
+.more-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  margin-top: 40px;
+  margin-bottom: 59px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-container p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  color: #fa382f;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.icon-more {
+  width: 60px;
+}
+
+.anchor {
+  text-decoration: none;
+}
+
+/* footer*/
+.footer ul {
+  list-style-type: none;
+}
+.footer li {
+  padding-top: 20px;
+}
+list-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* MEDIA QUERIES */
@@ -372,7 +483,7 @@ body section:nth-child(2n) {
     font-size: 28px;
   }
 
-  .flexbox-row {
+  .grid {
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 8px;
