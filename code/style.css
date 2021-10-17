@@ -230,11 +230,36 @@ a {
 .featured-card {
   margin-bottom: 50px;
   box-sizing: border-box;
+  transition: transform 0.3s;
 }
 
+.featured-card:hover {
+  transform: scale(1.2);
+}
+
+.featured-card:hover .overlay {
+  display: none;
+}
+
+.featured-card:hover .text-overlay {
+  display: none;
+}
+
+.featured-card-other {
+  margin-bottom: 50px;
+  transition: transform 0.3s;
+}
+
+.featured-card-other:hover {
+  transform: scale(1.1);
+}
 .image-container {
   position: relative;
 }
+
+/* .image-container:hover {
+  transform: scale(1.2);
+} */
 
 .overlay {
   position: absolute;
