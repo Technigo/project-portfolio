@@ -99,21 +99,15 @@ a {
 
 /* header profile img */
 
-.profile-image-container {
-  position: absolute;
-  top: 365px;
-  right: 24px;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .profile-image {
-  border-radius: 50%;
+  position: absolute;
   width: 180px;
   height: 180px;
-  border: solid 4px #fff;
+  left: 45%;
+  top: 355px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid white 2px;
 }
 
 /* intro section */
@@ -375,10 +369,6 @@ h3 {
   margin: 0;
 }
 
-/* .other-project-title:hover {
-  text-decoration: underline;
-} */
-
 .skills {
   display: flex;
   flex-direction: column;
@@ -462,7 +452,6 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-image: linear-gradient(#fa382f, #da8695); */
   background: #f397a8;
   padding-bottom: 130px;
 }
@@ -504,6 +493,24 @@ h6 {
   text-decoration: underline;
 }
 
+@media (max-width: 374px) {
+  .profile-image {
+    left: 38%;
+  }
+
+  .meditation-advocate {
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 425px) {
+  .profile-image {
+    left: 51%;
+    top: 355px;
+  }
+}
+
 @media (min-width: 768px) {
   .hero {
     height: 450px;
@@ -515,7 +522,7 @@ h6 {
   }
 
   .social-media-icons {
-    margin-right: 60px;
+    margin-right: 40px;
     width: 145px;
   }
 
@@ -541,14 +548,9 @@ h6 {
     line-height: 13px;
   }
 
-  .profile-image-container {
-    top: 290px;
-    right: 60px;
-  }
-
   .profile-image {
-    width: 180px;
-    height: 180px;
+    left: 68%;
+    top: 290px;
   }
 }
 
@@ -573,15 +575,11 @@ h6 {
     height: 50px;
   }
 
-  .profile-image-container {
-    top: 325px;
-    right: 184px;
-  }
-
   .profile-image {
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    left: 65%;
+    top: 310px;
+    width: 200px;
+    height: 200px;
     border: solid 4px #fff;
   }
 
@@ -637,12 +635,12 @@ h6 {
     height: 550px;
   }
   .hero-text {
-    margin-left: 260px;
+    margin-left: 350px;
     margin-top: 50px;
   }
 
   .social-media-icons {
-    margin-right: 220px;
+    margin-right: 260px;
     width: 200px;
   }
 
@@ -680,15 +678,11 @@ h6 {
     line-height: 15px;
   }
 
-  .profile-image-container {
-    top: 300px;
-    right: 250px;
-  }
-
   .profile-image {
-    border-radius: 50%;
-    width: 270px;
-    height: 270px;
+    left: 63%;
+    top: 310px;
+    width: 260px;
+    height: 260px;
     border: solid 4px #fff;
   }
 
