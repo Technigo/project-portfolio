@@ -4,6 +4,12 @@
     box-sizing: border-box;
   }
 
+  :root {
+    --primary: #F4F4F4;
+    --secondary: #FA382F;
+    --tertiary: #FFFFFF;
+  }
+
   /* ----------------headings & fonts:------------------ */
 
 h1 {
@@ -13,8 +19,8 @@ h1 {
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
-    background-color: #FA382F;
-    color: #FFFFFF;
+    background-color: var(--secondary);
+    color: var(--tertiary);
     text-align: center;
     text-transform: uppercase;
     padding: 3px;
@@ -23,7 +29,7 @@ h2 {
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 21px;
-    color: #FA382F;
+    color: var(--secondary);
     text-align: center;
     text-transform: uppercase;
     padding-top: 30px;
@@ -32,7 +38,7 @@ h3 {
 
 h4 {
     font-family: "Roboto", sans-serif;
-    color: #FA382F;
+    color: var(--secondary);
     text-transform: uppercase;
     font-weight: bold;
     margin: 15px 0px;
@@ -50,7 +56,7 @@ p {
     background-position: bottom;
     height: 520px;
     width: auto;
-    color: white;
+    color: var(--tertiary);
 }
 
 .header-text{
@@ -62,7 +68,7 @@ p {
 }
 
 .portfolio-name {
-    color: white;
+    color: var(--tertiary);
     text-transform: uppercase;
     font-size: 12px;
 }
@@ -94,7 +100,7 @@ a {
 
 .profile-image {
     border-radius: 100%;
-    border: 3px solid white;
+    border: 3px solid var(--tertiary);
     width: 180px;
     position: absolute;
     top: 356px;
@@ -109,7 +115,7 @@ a {
 }
 
 .intro-section {
-    background-color: #F4F4F4;
+    background-color: var(--primary);
     width: 100%;
     height: auto;
     padding: 49px 24px 43px;
@@ -132,10 +138,11 @@ a {
 
 .portfolio-section{
     padding-bottom: 32px;
+    line-height: 29px;
 }
 
 .portfolio-section:nth-child(2n) {
-    background-color: #F4F4F4;
+    background-color: var(--primary);
 }
 
 .container {
@@ -168,7 +175,7 @@ position: relative;
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
+    color: var(--tertiary);
     top: 40%;
     left: 25%;
     right: 25%;
@@ -186,7 +193,7 @@ position: relative;
     padding-bottom: 20px;
 }
 
- .tags {
+.tags {
     font-family: "Roboto", sans-serif;
     font-size: 11px;
     margin-bottom: 30px;
@@ -200,12 +207,47 @@ position: relative;
     padding: 4px;
 } 
 
+/* ------------------My thoughts------------------- */
+
+.blog-heading {
+    color: black;
+    text-transform: none;
+    font-size: 20px;
+}
+
+.blogDate {
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+.colored-span {
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+.bold-span {
+    font-weight: bold;
+}
+
+a:visited {
+    color: black;
+  }
+
+.blog-link {
+    margin-bottom: 25px;
+    text-decoration-line: underline;
+}  
+
+/* ------------------skills------------------- */
+
+
+/* ------------------for more------------------- */
+
+    
 /* ------------------footer------------------- */
 
 
 footer {
     background-color: #072BCE;
-    color: white;
+    color: var(--tertiary);
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
