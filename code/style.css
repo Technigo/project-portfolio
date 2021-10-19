@@ -97,6 +97,8 @@ h2 {
 }
 
 .profile-img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
   height: 180px;
   width: 180px;
   border: 2px solid white;
@@ -180,7 +182,7 @@ h4 {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(156, 166, 197, 0.3);
+  background: rgba(107, 86, 72, 0.5);
 }
 
 .project-image {
@@ -193,11 +195,12 @@ h4 {
 
 .project-image-container h5 {
   position: absolute;
-  top: 30%;
-  bottom: 30%;
-  left: 10%;
-  right: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  opacity: 0.8;
+  z-index: 1;
   letter-spacing: 00.04em;
 }
 
@@ -325,7 +328,7 @@ ul > li {
 
 .icon-text {
   font-family: 'Roboto';
-  color: #fa382f;
+  color: var(--copper);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -419,6 +422,10 @@ footer > p {
     font-size: 22px;
   }
 
+  .project-image-container h5 {
+    font-weight: 400;
+  }
+
   .featured-projects {
     display: flex;
     flex-direction: row;
@@ -473,8 +480,6 @@ footer > p {
   }
 
   .project-image-container h5 {
-    top: 35%;
-    bottom: 35%;
     font-weight: 400;
     font-size: 30px;
   }
