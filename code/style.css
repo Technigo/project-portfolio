@@ -285,12 +285,15 @@ header {
 /* PROJECT-SECTION */
 
 .projects {
+  padding: 10px;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 30px;
+  background-color: #ebebeb;
 } 
 
-.hidden {
-  display: none;
-}
 
 .projects a {
   text-decoration: none;
@@ -305,25 +308,25 @@ header {
 }
 
 .first-project {
-  background: url('./assets/pro_gitHub_tracker.webp');
+  background: url('./assets/pro-survey.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .second-project {
-  background: url('./assets/pro_weather-app.webp');
+  background: url('./assets/pro-music.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .third-project {
-  background: url('./assets/pro_guees_who.webp');
+  background: url('./assets/pro_gitHub_tracker.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .fourth-project {
-  background: url('./assets/pro_pretty_pets.webp');
+  background: url('./assets/pro_weather-app.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -338,7 +341,7 @@ header {
   height: 100%;
   background-color: rgba(20, 20, 20, 0.6);
   transition: 0.5s ease;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .overlay:hover {
@@ -363,10 +366,6 @@ header {
   border-radius: 2px; 
   padding: 5px;
   margin-right: 3px;
-}
-
-.other {
-  margin: 56px 0 21px 0;
 }
 
 
@@ -485,6 +484,14 @@ footer p, footer a {
   text-decoration: none;
 }
 
+/* Mobile */
+
+@media (max-width: 767px) {
+  .hidden {
+    display: none;
+  }
+}
+
 
 /* TABLET */
 
@@ -534,10 +541,6 @@ footer p, footer a {
   .intro-section p {
     padding-top: 35px;
   }
-  
-  .hidden {
-    display: unset;
-  }
 
   .projects, .thoughts {
     margin: 0 10% 30px 10%;
@@ -566,7 +569,7 @@ footer p, footer a {
 
   .wide {
     grid-column: span 2;
-    margin: -30px 0 auto 5%;
+    margin: -30px 5% auto 5%;
   }
 }
 
