@@ -40,6 +40,9 @@ h1 {
 .h1-container {
     text-align: center;
 }
+.center {
+    text-align: center;
+}
 
 .greenText {
     color: var(--main);
@@ -72,6 +75,10 @@ h1 {
     color: black;
 }
 
+.thinH3 {
+    font-weight: 100;
+}
+
 .white {
     color:white;
 }
@@ -92,9 +99,6 @@ a:hover {
     color: white;
   }
  
-
-
-
 .lime-grön {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -194,7 +198,7 @@ a:hover {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background: rgba(156, 166, 197, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     transition: 0.5s ease;
     display: none;
 }
@@ -229,6 +233,11 @@ a:hover {
 .image-container {
     position: relative;
 }
+
+.thoughts-img {
+    width: 100%;
+    margin-top: 30px;
+}
 .skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -237,6 +246,10 @@ a:hover {
 .skills-grid {
     grid-column: span 1;   
 }
+
+ul {
+    list-style-type: none;
+  }
 
 .more-container {
     display: grid;
@@ -251,7 +264,7 @@ a:hover {
 }
 
 .more-grid .fa-github, .more-grid .fa-linkedin-in, .more-grid .fa-stack-overflow {
-    color: red;
+    color: var(--main);
     border: none;
     padding: 10px;
     font-size: 2.5em;
@@ -276,11 +289,17 @@ a:hover {
 
 /* 
 Mobil -  */
-@media (min-width: 0px) {
+@media (min-width: 0px) and (max-width: 767px)  {
+    .laptop {
+        display: none;
+    }
  }
 
 /* Paddda -  */
 @media (min-width: 768px) {
+   .mobile {
+       display:none;
+   }
     header .container {
         position: relative;
     }
@@ -305,13 +324,6 @@ Mobil -  */
         margin-top: 40px;
         padding: 10px;
         margin-right: 5px;
-        /*
-        border-radius: 50%;
-        border:2px solid white;
-        */
-        /*
-        font-size: 2rem;
-        */
     }
 
     .project-1 {
