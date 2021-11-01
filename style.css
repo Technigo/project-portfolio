@@ -225,7 +225,7 @@ body {
 
 .project-card {
   grid-column: span 1;
-  margin: 0 auto;
+  margin: 6px auto;
 }
 
 .project-card:hover {
@@ -302,14 +302,15 @@ body {
   margin: 0;
 }
 
-.description-project:hover {
+.description-project:hover,
+.link-github-project:hover {
   text-decoration: underline;
 }
 
 .tags {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .tags p {
@@ -324,6 +325,15 @@ body {
   padding: 6px 8px;
   /* Control the spacing of our tags */
   margin: 4px 8px 0 0;
+}
+
+.link-github-project {
+  display:inline-block;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  font-style: italic;
+  margin-bottom: 16px;
 }
 
 .subheading {
@@ -505,7 +515,7 @@ footer {
   color: var(--footer-text-color);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 791px) {
   .header-image {
     height: 681px;
   }
@@ -515,15 +525,15 @@ footer {
     margin-top: 76px;
   }
   .header-portfolio {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 37px;
   }
   .first-occupation {
-    font-size: 82px;
-    line-height: 100px;
+    font-size: 62px;
+    line-height: 68px;
   }
   .second-occupation {
-    font-size: 38px;
+    font-size: 26px;
     line-height: 78px;
   }
   .icon {
@@ -579,6 +589,9 @@ footer {
     column-gap: 60px;
     margin-top: 50px;
   }
+  .project-card {
+    margin: 20px auto;
+  }
   .project-headline,
   .project-headline img,
   .transbox {
@@ -592,7 +605,7 @@ footer {
     margin-top: 40px;
   }
   .tags {
-    margin-bottom: 50px;
+    margin-bottom: 24px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   .tags p {
@@ -602,6 +615,10 @@ footer {
     padding: 6px 16px;
     /* Control the spacing of our tags */
     margin: 6px 8px 6px 0;
+  }
+  .link-github-project {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   .subheading {
     font-size: 38px;
