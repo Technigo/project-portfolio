@@ -15,4 +15,4 @@ Dots canvas created via pair programming session under mentorship of Corey Maler
 
 ## Resources
 
-Unsplash (MIT licence) : attribution to Shahadat Rahman, Roman Synkevych
+Unsplash (MIT licence) : attribution to Shahadat Rahman, Roman Synkevych, Joan Gamell
