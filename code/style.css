@@ -11,9 +11,6 @@
 	--secondary: #fff;
 }
 
-/* ; */
-
-
 
 h1 {
 	text-transform: uppercase;
@@ -87,6 +84,21 @@ header {
 	margin-right: 20px;
 }
 
+.linkedin-icon,
+.github-icon,
+.stack-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.linkedin-icon:hover,
+.github-icon:hover,
+.stack-icon:hover {
+  transform: scale(1.1);
+}
+
+
 .job-title {
 	width: 220px;
 	height: 202px;
@@ -150,7 +162,7 @@ header {
 	display: flex;
 	justify-content: center;
 	line-height: 30px;
-	padding:40px 0;
+	padding:50px 0;
 
 }
 .summary-section p {
@@ -196,7 +208,7 @@ header {
 
 .red-text{
 	color: var(--primary);
-	font-weight: 700;
+	font-weight: 400;
 
 
 }
@@ -215,7 +227,28 @@ header {
 
 .image-container {
 	position: relative;
+	
+	
 }
+
+.featured-card {
+	margin-bottom: 50px;
+	box-sizing: border-box;
+	transition: transform 0.3s;
+  }
+  
+  .featured-card:hover {
+	transform: scale(1.1);
+  }
+  
+  .featured-card:hover .overlay {
+	display: none;
+  }
+  
+  .featured-card:hover .text-over-image {
+	display: none;
+  }
+
 
 .overlay {
 	position: absolute;
@@ -277,7 +310,7 @@ header {
 	font-family: 'Roboto', sans-serif;
 	background-color: #DEDEDE;
 	font-size: 9px;
-	padding: 5px;
+	padding: 2px 4px;
 	margin-right: 13px;
 	margin-top: 15px;
 	text-decoration: none;
@@ -288,6 +321,7 @@ header {
 article {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	
 }
 
 article p {
@@ -341,13 +375,23 @@ article p {
 	color: black;
 }
 
+
+.other-project-tags{
+	display: flex;
+	flex-wrap: wrap;
+	color:black;
+
+}
+
 .other-project-tags span {
 	font-family: 'Roboto', sans-serif;
 	background-color: #DEDEDE;
 	font-size: 9px;
-	padding: 5px;
+	padding: 2px 4px;
 	margin-right: 13px;
 	margin-top: 15px;
+	text-decoration: none;
+	border-radius: 5px;
 }
 
 /* BLOG-POST-SECTION */
@@ -454,7 +498,7 @@ article p {
 }
 
 .social-media-card img {
-	width: 50px;
+	width: 30px;
 	
 }
 
@@ -537,7 +581,7 @@ article p {
 }
 
 	.social-media-card img{
-		width: 50%;
+		width: 40%;
 	
 	}
 
@@ -557,22 +601,17 @@ font-size: 15px;
 
 /* DESKTOP VERSION */
 @media (min-width: 992px) {
-
 	.social-media-icons img {
 		width: 70px;
 		height: 70px;
 	}
-
 	.portfolio-photo {
 		width: 333px;
 		height: 333px;
 	}
-
 	header {
 		height: 685px;
 	}
-	
 	.social-media-icons a {
 		justify-content: space-around;
-	}
-}
+	}}
