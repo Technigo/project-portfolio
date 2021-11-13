@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <title>Elsa Carlström's Portfolio</title>
+  <script src="https://kit.fontawesome.com/0c92995cb0.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <div class="background-img-container">
     <img class="background-img" src="./assets/images/monstera_green.jpg" alt="Monstera plant">
   </div>
-  
+  <!-- header -->
   <header class="header">
     <div class="header-content-container">
       <section class="header-text-wrapper" tabindex="0">
@@ -43,7 +44,7 @@
       </div>
     </div>
   </header>
-
+  <!-- Pitch -->
   <div class="section-background-color">
     <div class="section-wrapper">
       <div class="text-left-aligned">
@@ -51,7 +52,7 @@
       </div>
     </div>
   </div>
-
+  <!-- Skills -->
   <div class="section-background-color">
     <div class="section-wrapper">
       <div class="headline-wrapper">
@@ -62,23 +63,76 @@
       </div>
     </div>
   </div>
-  
-  <div class="section-background-color">
+  <!-- Portfolio project -->
+  <div class="section-background-color"> 
     <div class="section-wrapper">
       <div class="headline-wrapper">
         <h2 tabindex="0">Featured Projects</h2>
       </div>
       <div class="featured-projects">
-
+        <!-- movies -->
         <article class="portfolio-project featured">
+          <a href="https://github.com/elsisco/project-music-releases" alt="GitHub Repository">
+            <div class="project-header">
+              <img src="./assets/images/movies-750x450.jpg" alt="Velvet chairs in a cinema">
+              <h3 tabindex="0">Movie lists</h3>
+            </div>
+            <h6>Dynamic content in React</h6>
+          </a>
+          <p>In this pair-programming project we built our own multi-page movie site and created dynamic content using React Router. We got to combine the useState and useEffect hooks and were introduced to styling through using styled components.</p>
+          <a class="project-live" href="https://vibrant-cori-2d85d0.netlify.app/" alt="Project website">See it live here <i class="fas fa-arrow-alt-circle-right"></i></a>
+          <section class="tags-wrapper">
+            <p class="react">React / JSX</p>
+            <p class="styled-components">Styled Components</p>
+            <p class="json">JSON:API</p>
+            <p class="group-project">Pair-programming</p>
+          </section>
+        </article>
+        <!-- happy thoughts -->
+        <article class="portfolio-project featured">
+          <a href="https://github.com/elsisco/project-music-releases" alt="GitHub Repository">
+            <div class="project-header">
+              <img src="./assets/images/happy-750x450.jpg" alt="Velvet chairs in a cinema">
+              <h3 tabindex="0">Happy thoughts</h3>
+            </div>
+            <h6>Receiving and posting data to an API</h6>
+          </a>
+          <p>A fun and cute looking messaging service enabling you to post, read and like messages posted to an API through the useEffect hook. Likes are also saved in localStorage to still show when reloading or revisiting the page. </p>
+          <a class="project-live" href="https://kind-haibt-7a22e5.netlify.app/" alt="Project website">See it live here <i class="fas fa-arrow-alt-circle-right"></i></a>
+          <section class="tags-wrapper">
+            <p class="html-css">HTML5 / CSS3</p>
+            <p class="react">React / JSX</p>
+            <p class="json">JSON:API</p>
+          </section>
+        </article>
+        <!-- Gratitude app -->
+        <article class="portfolio-project featured" alt="GitHub Repository">
           <a href="https://github.com/elsisco/project-music-releases">
             <div class="project-header">
-              <img src="./assets/images/music-750x450.jpg" alt="XXX">
+              <img src="./assets/images/gratitude-750x450.jpg" alt="Velvet chairs in a cinema">
+              <h3 tabindex="0">Gratitude app</h3>
+            </div>
+            <h6>A survey made using React</h6>
+          </a>
+          <p>In this project we were introduced to using state in React with the useState hook, updating the state through form inputs and using the state to show different components. The theme I choose for my survey was gratitude practice by surveying how you experienced the day and to find three things to be grateful for.</p>
+          <a class="project-live" href="https://elegant-lalande-93269e.netlify.app/" alt="Project website">See it live here <i class="fas fa-arrow-alt-circle-right"></i></a>
+          <section class="tags-wrapper">
+            <p class="html-css">HTML5 / CSS3</p>
+            <p class="react">React / JSX</p>
+            <p class="json">JSON:API</p>
+          </section>
+        </article>
+        <!-- music releases -->
+        <article class="portfolio-project featured">
+          <a href="https://github.com/elsisco/project-music-releases" alt="GitHub Repository">
+            <div class="project-header">
+              <img src="./assets/images/music-750x450.jpg" alt="Preview of the site">
               <h3 tabindex="0">Music Releases</h3>
             </div>
             <h6>First React Project</h6>
           </a>
           <p>In the React intro week we worked with JSON from Spotify to display album and singles releases and playlists. Together we dealt with props, components, mapping and followed design instructions for look, layout and hover effects.</p>
+          <a class="project-live" href="https://friendly-cray-f55ff2.netlify.app/" alt="Project website">See it live here <i class="fas fa-arrow-alt-circle-right"></i></a>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="react">React / JSX</p>
@@ -86,16 +140,17 @@
             <p class="group-project">Pair-programming</p>
           </section>
         </article>
-
+        <!-- Weather app -->
         <article class="portfolio-project featured">
-          <a href="https://github.com/elsisco/project-weather-app">
+          <a href="https://github.com/elsisco/project-weather-app" alt="GitHub Repository">
             <div class="project-header">
-              <img src="./assets/images/weather-750x450.jpg" alt="XXX">
+              <img src="./assets/images/weather-750x450.jpg" alt="A phone showing the app on the screen">
               <h3 tabindex="0">Weather App</h3>
             </div>
             <h6>Fetching Forecasts</h6>
           </a>
           <p>In the project of creating a Weather App we worked like a developer team and dove deeper into JavaScript. The app fetches JSON data from an API source and is displayed clean and fun design.</p>
+          <a class="project-live" href="https://silly-lovelace-55575c.netlify.app/" alt="Project website">See it live here <i class="fas fa-arrow-alt-circle-right"></i></a>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">Vanilla JavaScript ES6</p>
@@ -103,37 +158,38 @@
             <p class="group-project">Mob-programming</p>
           </section>
         </article>
-        
+        <!-- Github Tracker -->
         <article class="portfolio-project featured">
-          <a href="https://github.com/elsisco/project-github-tracker">
+          <a href="https://github.com/elsisco/project-github-tracker" alt="GitHub Repository">
             <div class="project-header">
-              <img src="./assets/images/github-tracker-750x450.jpg" alt="XXX">
+              <img src="./assets/images/github-tracker-750x450.jpg" alt="Preview of site">
               <h3 tabindex="0">GitHub Tracker</h3>
             </div>
             <h6>A handy overview</h6>
           </a>
           <p>This project was all about building a page to track our Technigo project progress by fetching our data from GitHub API's. I decided to give it a personal touch and go creative with the design. The "Language-O-Meter" is my favorite detail.</p>
+          <a class="project-live" href="https://priceless-kepler-739442.netlify.app/" alt="Project website">See it live here <i class="fas fa-arrow-alt-circle-right"></i></a>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">JavaScript ES6</p>
             <p class="json">JSON:API</p>
           </section>
         </article>
-    
-        <article class="portfolio-project featured desktop-only">
+        <!-- Business project -->
+        <!-- <article class="portfolio-project featured desktop-only">
           <a href="https://github.com/elsisco/project-business-site">
             <div class="project-header">
-              <img src="./assets/images/surf-camp-750x450.jpg" alt="Female surfing on longboard">
+              <img src="./assets/images/surf-camp-750x450.jpg" alt="Female surfing on long board">
               <h3 tabindex="0">White Lotus Surf Camp</h3>
             </div>
             <h6>Business Site</h6>
           </a>
-          <p>A week during the first sprint at Technigo resulted in a business site for a Surf Camp featuring a hero video header, a signup form and the first taste of JavaScript in shape of an accordion.</p>
+          <p>A week during the first sprint at Technigo resulted in a business site for a Surf Camp featuring a hero video header, a sign up form and the first taste of JavaScript in shape of an accordion.</p>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">JavaScript ES6</p>
           </section>
-        </article>
+        </article> -->
       </div>
 
       <div class="headline-wrapper">
@@ -154,57 +210,61 @@
             <p class="group-project">Mob-programming</p>
           </section>
         </div> -->
-    
-        <div class="portfolio-project mobile-only">
+        
+        <!-- Business project -->
+        <div class="portfolio-project featured">
           <a href="https://github.com/elsisco/project-business-site">
             <h6 tabindex="0">White Lotus Surf Camp</h6>
           </a>
           <p>A week during the first sprint at Technigo resulted in a business site for a Surf Camp featuring a hero video header, a signup form and the first taste of JavaScript in shape of an accordion.</p>
+          <a class="project-live" href="https://zen-wiles-64674c.netlify.app/" alt="Project website">See it live here <i class="fas fa-arrow-alt-circle-right"></i></a>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">JavaScript ES6</p>
           </section>
         </div>
-    
-        <div class="portfolio-project">
+        <!-- Chatbot -->
+        <div class="portfolio-project featured">
           <a href="https://github.com/elsisco/project-chatbot">
             <h6 tabindex="0">Chatbot</h6>
           </a>
           <p>In this group project we created a Chatbot. We gave it a Lord of the Rings inspired storyline where the player, in shape of a hobbit, encounters a tricky wizard...</p>
+          <a class="project-live" href="https://optimistic-sinoussi-399113.netlify.app/" alt="Project website">See it live here <i class="fas fa-arrow-alt-circle-right"></i></a>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">JavaScript ES6</p>
             <p class="group-project">Mob-programming</p>
           </section>
         </div>
-    
-        <div class="portfolio-project">
+        <!-- Guess who? -->
+        <div class="portfolio-project featured">
           <a href="https://github.com/elsisco/project-guess-who">
             <h6 tabindex="0">"Guess Who?" Game</h6>
           </a>
           <p>This project featured the classic 90's game "Guess Who?". It was a great practice in creating JavaScript functions and event listeners, and using methods such as filter and math.</p>
+          <a class="project-live" href="https://clever-franklin-d2217f.netlify.app/" alt="Project website">See it live here <i class="fas fa-arrow-alt-circle-right"></i></a>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
             <p class="javascript">JavaScript ES6</p>
           </section>
         </div>
-
-        <div class="portfolio-project">
+        <!-- News site -->
+        <div class="portfolio-project featured">
           <a href="https://github.com/elsisco/project-news-site">
             <h6 tabindex="0">News Site Project</h6>
           </a>
           <p>A project to practice HTML, CSS and using Flexbox and/or Grid to create responsive sites. In this project I got to establish methods to handle website responsiveness early on which made it a natural part of all upcoming projects.</p>
+          <a class="project-live" href="https://tender-ramanujan-0cd571.netlify.app/" alt="Project website">See it live here <i class="fas fa-arrow-alt-circle-right"></i></a>
           <section class="tags-wrapper">
             <p class="html-css">HTML5 / CSS3</p>
           </section>
         </div>
-  
         </div>
       </div>
     </div>
   </div>
   
-  <!-- Future blog posts -->
+  <!-- blog posts -->
   <div class="section-background-color">
     <div class="section-wrapper">
       <div class="headline-wrapper">
@@ -255,7 +315,7 @@
       </section>
     </div>
   </div>
-  
+  <!-- skills overview -->
   <div class="section-background-color">
     <div class="section-wrapper">
       <div class="headline-wrapper">
@@ -280,7 +340,7 @@
       </div>
     </div>
   </div>
-
+  <!-- links -->
   <div class="section-background-color">
     <div class="section-wrapper">
       <div class="headline-wrapper">
@@ -308,7 +368,7 @@
       </section>
     </div>
   </div>
-  
+  <!-- contact -->
 <footer class="footer">
   <div class="headline-wrapper">
     <h4 tabindex="0">Contact</h4>
