@@ -6,10 +6,10 @@ body {
 
 header {
   margin: 0;
-  background-image: url(https://images.pexels.com/photos/4862892/pexels-photo-4862892.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: url(https://images.pexels.com/photos/399161/pexels-photo-399161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: inherit;
+  background-position: center;
   width: 100%;
   height: 500px;
 }
@@ -22,13 +22,13 @@ header {
   margin: 0 auto;
   position: absolute;
   text-transform: uppercase;
-  top: 180px;
+  top: 130px;
   left: 30px;
 }
 
 .header-title {
   position: absolute;
-  top: 210px;
+  top: 160px;
   left: 30px;
   font-size: 22px;
   margin: 0;
@@ -49,7 +49,7 @@ header {
 .header-icon {
   width: 2.5em;
   position: relative;
-  left: 180px;
+  left: 130px;
   top: 50px;
   margin: 5px;
 }
@@ -60,7 +60,7 @@ header {
   border: 2px solid #fff;
   position: absolute;
   right: 40px;
-  top: 370px;
+  top: 375px;
   z-index: 5;
 }
 
@@ -95,7 +95,7 @@ header {
   flex-direction: column;
   color: #000;
   font-size: 18px;
-  margin: 20px auto;
+  margin: auto;
   justify-content: center;
   align-items: center;
 }
@@ -104,7 +104,10 @@ header {
   font-size: 17px;
   line-height: 29px;
   text-align: center;
+  margin: 40px auto 30px;
 }
+
+/* TECH SECTION */
 
 .tech-container {
   width: 320px;
@@ -112,12 +115,12 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
+  margin: auto;
 }
 
 .tech-container p {
   font-size: 16px;
-  line-height: 29px;
+  line-height: 25px;
   text-align: center;
 }
 
@@ -128,6 +131,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 .projects-container a {
@@ -140,24 +144,18 @@ header {
   line-height: 1.5;
 }
 
-/* .featured-projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
-
-.project-cards {
+.featured-projects-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 800px;
 }
 
 .featured-card {
-  margin-bottom: 30px;
   box-sizing: border-box;
   transition: transform 0.3s;
   padding-bottom: 10px;
+  margin: 20px auto 30px;
+  width: 280px;
 }
 
 .featured-card:hover {
@@ -222,6 +220,11 @@ header {
   display: block;
 }
 
+.project-image {
+  width: px;
+  margin: 10px auto;
+}
+
 .project-buttons {
   margin: 15px auto;
 }
@@ -250,82 +253,41 @@ button {
 
 .thoughts-container {
   width: 320px;
+}
+
+.featured-stories-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
-}
-
-.more-container {
-  width: 320px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  margin: 20px auto;
 }
 
-.bottom-icon {
-  width: 4em;
-  margin: 10px;
+.story-header {
+  margin: 15px auto 5px;
+  font-size: 18px;
 }
 
-.bottom-icon:hover {
-  filter: invert(9%) sepia(84%) saturate(5604%) hue-rotate(230deg)
-    brightness(100%) contrast(98%);
-}
-
-.contact-container {
-  width: 320px;
+.thoughts-article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto 50px;
 }
 
-.contact-container a {
-  text-decoration: none;
-  color: #000;
-  margin: 3px auto;
+.thoughts-article p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
 }
 
-.contact-container a:hover {
+.thoughts-article a {
   text-decoration: none;
   font-style: normal;
-  font-weight: normal;
-  color: #000;
-  background: #fdc0bf;
-  padding: 3px;
-  border-radius: 2px;
-}
-
-.contact-container p {
-  text-decoration: none;
-  color: #000;
-  margin: 3px auto;
-}
-
-.project-image {
-  width: 300px;
-  margin: 10px auto;
+  font-weight: bold;
+  color: hotpink;
+  font-size: 16px;
 }
 
 .thoughts-image {
-  width: 250px;
-}
-
-article {
-  margin: 20px auto;
   width: 280px;
-}
-
-.article a {
-  margin: auto;
-  width: 95%;
-  color: #f7d2cf;
-  font-size: 16px;
-  line-height: 1;
-  text-align: left;
+  margin: 10px auto;
 }
 
 /* SKILLS SECTION */
@@ -376,6 +338,75 @@ li {
   line-height: 29px;
 }
 
+/* MORE SECTION */
+
+.more-container {
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.awesome-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px 30px;
+  font-size: 3em;
+  color: #000;
+}
+.awesome-icon p {
+  font-size: 10px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer-section {
+  background-color: hotpink;
+}
+
+.contact-container {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.contact-text {
+  margin: 20px auto 60px;
+  text-align: center;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px auto;
+  font-size: 16px;
+}
+
+.contact-container a:hover {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  background: #fdc0bf;
+  padding: 3px;
+  border-radius: 2px;
+}
+
+.contact-container p {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  margin: 10px auto;
+}
+
 /* TABLET */
 
 @media (min-width: 666px) {
@@ -405,18 +436,29 @@ li {
   }
 
   .profile-photo {
-    width: 250px;
+    width: 220px;
     border-radius: 50%;
     border: 2px solid #fff;
     position: absolute;
     right: 120px;
-    top: 465px;
+    top: 500px;
     z-index: 5;
   }
 
-  .project-cards {
+  .introduction-container,
+  .tech-container,
+  .projects-container,
+  .thoughts-container,
+  .skills-list-container,
+  .more-container,
+  .contact-container {
+    width: 450px;
+  }
+
+  .featured-projects-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
     max-width: 800px;
   }
 
@@ -459,6 +501,12 @@ li {
       right: 170px;
       top: 320px;
       z-index: 5;
+    }
+
+    .project-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      max-width: 800px;
     }
   }
 
