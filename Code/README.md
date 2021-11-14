@@ -20,5 +20,5 @@ The portfolio design was in Figma so have been using a lot of figma this week. I
 ## View it live
 Have you deployed your project somewhere? Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
 
-https://competent-visvesvaraya-334534.netlify.app
 
+https://app.netlify.com/sites/flamboyant-ardinghelli-125d39/overview
