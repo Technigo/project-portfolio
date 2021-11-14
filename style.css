@@ -22,29 +22,35 @@ header {
   margin: 0 auto;
   position: absolute;
   text-transform: uppercase;
-  top: 200px;
+  top: 180px;
   left: 30px;
 }
 
 .header-title {
   position: absolute;
-  top: 240px;
+  top: 210px;
   left: 30px;
   font-size: 22px;
   margin: 0;
 }
 
-.header-jobtitle {
+.header-developer {
   font-size: 36px;
   color: #fff;
   margin: 0;
 }
 
+.header-designskills {
+  font-size: 26px;
+  color: #fff;
+  margin: 5px auto 0;
+}
+
 .header-icon {
-  width: 3em;
+  width: 2.5em;
   position: relative;
-  left: 120px;
-  top: 80px;
+  left: 180px;
+  top: 50px;
   margin: 5px;
 }
 
@@ -64,6 +70,25 @@ header {
   width: 100%;
 }
 
+/* SECTION HEADINGS */
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 5px;
+}
+
+.heading-text {
+  display: inline;
+  text-align: center;
+  color: #fff;
+  background-color: hotpink;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
 .introduction-container {
   width: 320px;
   display: flex;
@@ -73,7 +98,12 @@ header {
   margin: 20px auto;
   justify-content: center;
   align-items: center;
-  text-align: left;
+}
+
+.introduction-container p {
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
 }
 
 .tech-container {
@@ -85,24 +115,138 @@ header {
   margin: 20px auto;
 }
 
-.projects-container {
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
+.tech-container p {
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
 }
 
-.projects-container p,
-a {
-  width: 95%;
-  color: #000;
-  font-size: 16px;
-  line-height: 1;
-  text-align: left;
-  text-decoration: none;
+/* PROJECTS SECTION */
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.projects-container a {
+  text-decoration: none;
+  color: #000;
+}
+
+.projects-container p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* .featured-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 800px;
+}
+
+.featured-card {
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+  padding-bottom: 10px;
+}
+
+.featured-card:hover {
+  transform: scale(1.1);
+}
+
+.featured-card:hover .overlay {
+  display: none;
+}
+
+.featured-card:hover .text-overlay {
+  display: none;
+}
+
+.featured-card-other {
+  margin-bottom: 30px;
+  transition: transform 0.5s;
+}
+
+.featured-card-other:hover {
+  transform: scale(1.1);
+}
+
+.featured-card-other:hover .other-project-title {
+  text-decoration: underline;
+}
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.text-overlay {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+.project-buttons {
+  margin: 15px auto;
+}
+
+span {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: 0.01em;
+  color: #fff;
+  background: hotpink;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button {
+  border: 1px solid grey;
+  background: #fff;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* THOUGHTS-SECTION */
 
 .thoughts-container {
   width: 320px;
@@ -111,19 +255,10 @@ a {
   margin: 20px auto;
 }
 
-.list-container {
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
-}
-
 .more-container {
   width: 320px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
@@ -145,20 +280,29 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
+  margin: 20px auto 50px;
 }
 
-.heading-text {
-  align-items: center;
-  display: inline;
-  text-align: center;
-  color: #fff;
-  background-color: hotpink;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 20px auto 10px;
-  font-size: 22px;
-  text-transform: uppercase;
+.contact-container a {
+  text-decoration: none;
+  color: #000;
+  margin: 3px auto;
+}
+
+.contact-container a:hover {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  color: #000;
+  background: #fdc0bf;
+  padding: 3px;
+  border-radius: 2px;
+}
+
+.contact-container p {
+  text-decoration: none;
+  color: #000;
+  margin: 3px auto;
 }
 
 .project-image {
@@ -168,10 +312,6 @@ a {
 
 .thoughts-image {
   width: 250px;
-}
-
-p {
-  max-width: 80%;
 }
 
 article {
@@ -188,23 +328,57 @@ article {
   text-align: left;
 }
 
-span {
-  text-align: left;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 9px;
-  line-height: 11px;
-  letter-spacing: 0.01em;
-  color: #000;
-  background: #fdc0bf;
-  padding: 5px;
-  border-radius: 5px;
+/* SKILLS SECTION */
+
+.skills-list-container {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
 }
 
-/* 
+.skills-cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 40px;
+  width: 70%;
+}
+
+.skillslist-header {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+  color: hotpink;
+  width: auto;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  width: 250px;
+  padding: 0;
+  margin-right: 0;
+}
+
+li {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+/* TABLET */
 
 @media (min-width: 666px) {
-  
   header {
     height: 700px;
   }
@@ -222,10 +396,6 @@ span {
     left: 120px;
   }
 
-  .header-jobtitle {
-    font-size: 46px;
-  }
-
   .header-icon {
     width: 4em;
     position: relative;
@@ -234,19 +404,65 @@ span {
     margin: 5px;
   }
 
-  
-
   .profile-photo {
-    width: 220px;
+    width: 250px;
     border-radius: 50%;
-    border: 2px solid #f7d2cf;
+    border: 2px solid #fff;
     position: absolute;
-    right: 170px;
-    top: 520px;
+    right: 120px;
+    top: 465px;
     z-index: 5;
   }
 
-  
+  .project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+  }
+
+  /* DESKTOP */
+
+  @media (min-width: 1024px) {
+    header {
+      height: 500px;
+    }
+
+    .header-name {
+      font-size: 25px;
+      top: 150px;
+      left: 270px;
+    }
+
+    .header-title {
+      color: white;
+      position: absolute;
+      top: 210px;
+      left: 270px;
+    }
+
+    .header-jobtitle {
+      font-size: 46px;
+      margin: 0;
+    }
+
+    .header-icon {
+      width: 3em;
+      position: relative;
+      left: 800px;
+      top: 130px;
+      margin: 5px;
+    }
+
+    .profile-photo {
+      width: 200px;
+      position: absolute;
+      right: 170px;
+      top: 320px;
+      z-index: 5;
+    }
+  }
+
+  /* 
 
   .portfolio-section {
     width: 666px;
@@ -354,56 +570,10 @@ span {
     line-height: 1.5;
   }
 
- 
-
   .bottom-icon {
     width: 4em;
     margin: 20px;
   }
 }
-
-
-
-@media (min-width: 1024px) {
- 
-
-  header {
-    height: 500px;
-  }
-
-  .header-name {
-    font-size: 25px;
-    top: 150px;
-    left: 270px;
-  }
-
-  .header-title {
-    color: white;
-    position: absolute;
-    top: 210px;
-    left: 270px;
-  }
-
-  .header-jobtitle {
-    font-size: 46px;
-    margin: 0;
-  }
-
-  .header-icon {
-    width: 3em;
-    position: relative;
-    left: 800px;
-    top: 130px;
-    margin: 5px;
-  }
-
-  
-
-  .profile-photo {
-    width: 200px;
-    position: absolute;
-    right: 170px;
-    top: 320px;
-    z-index: 5;
-  }
-}  */
+ */
+}
