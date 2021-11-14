@@ -208,7 +208,8 @@ a.skip:hover {
 
 .portfolio__article-card {
   display: grid;
-  width: 100%;
+  width: 80%;
+  /* width: 100%; */
 }
 
 .portfolio__article-card p,
@@ -275,6 +276,7 @@ a:link {
   display: flex;
   margin: 5% 0 10%;
   align-self: end;
+  flex-wrap: wrap;
 }
 
 .tag-wrapper p {
@@ -360,7 +362,6 @@ footer {
 
 /* DESIGN FOR TABLET */
 @media (min-width: 668px) {
-  /* HIDE IMAGES? */
 
   p {
     font-size: 20px;
@@ -391,7 +392,7 @@ footer {
 }
 
 /* DESIGN FOR DESKTOP */
-@media (min-width: 1025px) {
+@media (min-width: 1070px) {
   p {
     font-size: 25px;
   }
@@ -477,7 +478,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: auto;
-    grid-column-gap: 8%;
+    column-gap: 2%;
     justify-content: center;
   }
 
@@ -520,10 +521,21 @@ footer {
     font-size: 21px;
   }
 
+  .portfolio__skills-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   .for-more__some-icon {
     width: 50%;
   }
 
+}
+
+/* DESIGN FOR DESKTOP */
+@media screen and (min-width: 1200px) {
+.portfolio__grid-wrapper {
+  grid-column-gap: 8%;
+}
 }
 
 /* Colors
