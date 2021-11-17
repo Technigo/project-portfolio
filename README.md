@@ -1,4 +1,5 @@
 # portfolio
 
-The project this week was to create a portfolio featuring the projects we've done so far and our skills in tech.
+Here's my portfolio with the projects i've done this far during my 24 weeks bootcamp at technigo. 
+
 Here's the deployed website: https://portfolioefstasia.netlify.app/
