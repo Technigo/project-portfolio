@@ -17,6 +17,7 @@ header {
 .header-name {
   font-size: 16px;
   color: #fff;
+  text-shadow: 0 0 3px #000;
   width: fit-content;
   display: block;
   margin: 0 auto;
@@ -37,12 +38,14 @@ header {
 .header-developer {
   font-size: 36px;
   color: #fff;
+  text-shadow: 0 0 3px #000;
   margin: 0;
 }
 
 .header-designskills {
   font-size: 26px;
   color: #fff;
+  text-shadow: 0 0 3px #000;
   margin: 5px auto 0;
 }
 
@@ -75,7 +78,7 @@ header {
 .heading-container {
   display: flex;
   justify-content: center;
-  margin: 20px auto 5px;
+  margin: 10px auto 5px;
 }
 
 .heading-text {
@@ -247,28 +250,37 @@ button {
   background: #fff;
   padding: 5px;
   border-radius: 3px;
+  color: #000;
+}
+
+button:hover {
+  border: 1px solid grey;
+  background: rgb(248, 214, 230);
+  color: #000;
 }
 
 /* THOUGHTS-SECTION */
 
 .thoughts-container {
   width: 320px;
-}
-
-.featured-stories-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .story-header {
   margin: 15px auto 5px;
-  font-size: 18px;
+  font-size: 16px;
+  text-align: left;
 }
 
 .thoughts-article {
   display: flex;
   flex-direction: column;
+  width: 300px;
+  margin: auto;
 }
 
 .thoughts-article p {
@@ -286,7 +298,7 @@ button {
 }
 
 .thoughts-image {
-  width: 280px;
+  width: 300px;
   margin: 10px auto;
 }
 
@@ -455,11 +467,36 @@ li {
     width: 450px;
   }
 
+  .thoughts-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thoughts-article {
+    margin: 20px;
+  }
+
   .featured-projects-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     max-width: 800px;
+  }
+
+  .skills-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .awesome-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 40px 30px;
+    font-size: 3em;
+    color: #000;
   }
 
   /* DESKTOP */
@@ -503,125 +540,14 @@ li {
       z-index: 5;
     }
 
-    .project-cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      max-width: 800px;
+    .introduction-container,
+    .tech-container,
+    .projects-container,
+    .thoughts-container,
+    .skills-list-container,
+    .more-container,
+    .contact-container {
+      width: 600px;
     }
   }
-
-  /* 
-
-  .portfolio-section {
-    width: 666px;
-    margin: 50px auto;
-  }
-
-  .tech-container {
-    margin: 90px auto;
-    width: 666px;
-    font-size: 24px;
-  }
-
-  .projects-container {
-    width: 666px;
-    margin: 0 auto 80px;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-  }
-
-  .image {
-    width: 150px;
-    display: block;
-  }
-
-  .list-container {
-    width: 666px;
-    margin: 50px auto 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .thoughts-container p {
-    font-size: 20px;
-  }
-
-  .projects-container p {
-    font-size: 20px;
-  }
-
-  span {
-    font-size: 12px;
-  }
-
-  .more-container {
-    width: 666px;
-    margin: 40px auto 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .contact-container {
-    width: 666px;
-    margin: 40px auto 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .contact-container p,
-  a {
-    font-size: 20px;
-  }
-
-  
-
-  .heading-container {
-    text-align: center;
-    margin: 80px auto 30px;
-  }
-
-  .heading-text {
-    display: inline;
-    text-align: center;
-    color: #05299e;
-    background-color: #f7d2cf;
-    border-radius: 5px;
-    padding: 8px;
-    font-size: 24px;
-    margin: auto;
-  }
-
-
-  .introduction {
-    width: 666px;
-    margin: 80px auto 20px;
-    font-size: 24px;
-  }
-
-
-
-  .list-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: inherit;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-
-  li {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-
-  .bottom-icon {
-    width: 4em;
-    margin: 20px;
-  }
-}
- */
 }
