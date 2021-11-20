@@ -197,7 +197,7 @@ body {
 }
 
 .img-overlay {
-  position: absolute; /* Relative */
+  position: absolute;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
   color: #f1f1f1;
@@ -211,7 +211,7 @@ body {
 }
 
 .img-overlay-text {
-  position: absolute; /* Relative */
+  position: absolute;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -291,30 +291,82 @@ body {
   margin-bottom: 5px;
 }
 
-/* My thoughts section */
+/***MY THOUGHTS SECTION***/
+
 .my-thoughts-section {
-  display: flex;
-  flex-direction: column;
   font-family: "Roboto", sans-serif;
-  text-align: center;
-  background-color: white;
-  padding: 30px 0 30px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  color: black;
+  padding: 30px;
 }
 
-.my-thoughts-header {
-  color: white;
+.article-containter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.article-containter a {
+  text-decoration: none;
+  color: black;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+.image-wrapper :hover {
+  transform: scale(1.2);
+}
+
+.my-thoughts-image {
+  height: 200px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.my-thoughts-main-title {
+  width: 200px;
   background-color: #8e010a;
-  padding: 5px;
-  max-width: 240px;
-  margin: 20px auto;
+  color: #fff;
+  text-align: center;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: lighter;
+  color: #8e010a;
+  margin: 0;
+}
+
+.my-thoughts-title {
+  color: #8e010a;
+  margin: 0;
 }
 
 .my-thoughts-text {
-  padding: 20px;
-  width: 70%;
-  margin: 20px auto;
-  font-weight: 300;
+  color: #8e010a;
+  font-size: 16px;
+  margin: 0;
 }
+
+.more-thoughts-title {
+  color: #8e010a;
+  margin: 30px 0 0 0;
+}
+
+.more-thoughts-text {
+  color: #8e010a;
+  font-size: 16px;
+  margin: 0 0 30px 0;
+}
+
 /* Skills section */
 .skills-section {
   display: flex;
