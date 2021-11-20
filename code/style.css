@@ -295,9 +295,10 @@ header {
 } 
 
 
-.projects a {
+.projects a, .thoughts a {
   text-decoration: none;
   text-align: start;
+  color: unset;
 }
 
 .image-container {
@@ -381,10 +382,11 @@ header {
 .thoughts-image-container {
   aspect-ratio: 16/9;
   display: grid;
+  margin-bottom: 10px;
 }
 
 .first-post {
-  background: url('./assets/example-thought.webp');
+  background: url('./assets/art_styled_components.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -551,9 +553,19 @@ footer p, footer a {
     grid-column: span 2;
   }
  
-  .featured-projects-container, .thoughts-container {
+  .featured-projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* can be fused together with  featured-projects-container once I have more than 1 blogplost/column (1fr 1fr) */
+  .thoughts-container {
+    display: grid;
+    grid-template-columns: 1fr;
     grid-gap: 30px;
     max-width: 1400px;
     margin-left: auto;
