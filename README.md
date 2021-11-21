@@ -5,4 +5,4 @@ Challenges were to make it browser compatible and also for people that experienc
 
 # View it live
 
-https://ida-aspen-portfolio.netlify.app/
+https://idaaspen.com/
