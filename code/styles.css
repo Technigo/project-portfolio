@@ -14,6 +14,7 @@ body {
   --dots-container: white;
   --overlay: rgba(0, 0, 0, 0.5);
   --header-text-color: #2b2b2b;
+  --github-project-icon: rgba(74 56 56 / 50%);
   --dot: white;
   --dots-shadow: rgb(0 0 0 / 10%);
   margin: 0;
@@ -28,6 +29,7 @@ body {
   --main-color: black;
   --text-color: white;
   --header-text-color: black;
+  --github-project-icon: rgba(74 56 56 / 50%);
   --dots-container: white;
   --overlay: rgba(74 56 56 / 50%);
 }
@@ -713,6 +715,33 @@ main {
   color: var(--sub-theme-color);
 }
 
+.view-on-github {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  background-color: var(--github-project-icon);
+  border-radius: 50%;
+}
+
+.view-on-github-icon,
+.view-on-github {
+  width: 30px;
+  height: 30px;
+  transition: 0.5s ease-out;
+}
+
+.view-on-github:hover {
+  background-color: var(--sub-theme-color);
+}
+
+.view-on-github-icon:hover,
+.view-on-github:hover {
+  transform: scale(1.1);
+}
+
 /* *** hiding *** */
 .edit-later {
   display: none;
@@ -756,6 +785,17 @@ main {
   .sub-content-container {
     margin-top: 24px;
   }
+  .view-on-github {
+    top: 8px;
+    left: 8px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .view-on-github-icon {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -788,6 +828,17 @@ main {
   }
   .contact-info {
     font-weight: 400;
+  }
+  .view-on-github {
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .view-on-github-icon {
+    width: 50px;
+    height: 50px;
   }
 }
 
