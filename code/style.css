@@ -10,7 +10,7 @@
 body {
   height: 100%;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Sulphur Point", sans-serif;
   display: flex;
   flex-direction: column;
   background-color: var(--grey);
@@ -20,6 +20,10 @@ body {
 .container {
   width: 320px;
   margin: 0 auto;
+}
+
+h2 {
+  font-size: 30px;
 }
 
 /* Header */
@@ -78,7 +82,7 @@ body {
   font-size: 24px;
   color: var(--yellow);
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .annad-image {
@@ -102,12 +106,12 @@ body {
 
 .summary {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 29px;
 }
 
 p {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* Tech */
@@ -136,6 +140,7 @@ p {
 
 .tech {
   line-height: 29px;
+  font-size: 17px;
 }
 
 .project-heading,
@@ -200,14 +205,14 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-size: 28px;
+  font-size: 30px;
   color: var(--white);
   text-transform: uppercase;
 }
 
 .project-description {
   line-height: 29px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .other-project-heading,
@@ -221,7 +226,7 @@ p {
 h3 {
   text-transform: uppercase;
   color: var(--green);
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .arrow-icon {
@@ -234,7 +239,7 @@ h3 {
 }
 
 .language {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   background-color: var(--orange);
   padding: 5px;
@@ -253,7 +258,7 @@ h6 {
 
 .featured-thoughts,
 .for-more {
-  background-color: var(--grey);
+  background-color: var(--white);
 }
 
 .featured-thoughts.display {
@@ -312,7 +317,7 @@ h6 {
 
 /* Featured skills */
 .featured-skills {
-  background-color: var(--white);
+  background-color: var(--grey);
 }
 
 .skills-container {
@@ -324,6 +329,8 @@ h6 {
 
 .skills-title {
   margin-bottom: -1vh;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 ul {
@@ -331,7 +338,11 @@ ul {
   display: inline;
   text-align: center;
   line-height: 25px;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+li {
+  font-size: 17px;
 }
 
 .code-toolbox-more-container {
@@ -372,6 +383,23 @@ ul {
   transform: scale(1.1);
 }
 
+/* Medium widget */
+.medium-widget-article__row {
+  gap: 25px;
+  margin: 10px;
+}
+
+.medium-widget-article__item {
+  width: 320px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.medium-widget-article__title,
+.medium-widget-article__info {
+  color: var(--green);
+}
+
 /* Footer */
 
 footer {
@@ -379,7 +407,7 @@ footer {
   text-align: center;
   color: var(--white);
   padding: 55px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .footer-title {
@@ -399,11 +427,15 @@ footer {
   }
   .media-icons-container {
     gap: 15px;
+    margin-right: 50px;
+  }
+  .annad-image {
+    margin-top: -20vh;
+    margin-right: 50px;
   }
   .summary-section {
-    width: 768px;
+    width: 600px;
   }
-  .container.thoughts,
   .container.skills {
     width: 665px;
   }
@@ -455,15 +487,20 @@ footer {
   .container {
     margin: 0 auto;
   }
+  .annad-image {
+    margin-top: -15vh;
+    margin-right: 100px;
+  }
   .container.tech {
-    width: 1000px;
+    width: 900px;
   }
   .media-icons-container {
     margin-top: 104px;
+    margin-right: 100px;
     gap: 20px;
   }
   .summary-section {
-    width: 1000px;
+    width: 900px;
   }
   .featured-projects-container,
   .other-projects-container {
