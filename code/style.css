@@ -1,6 +1,6 @@
 :root {
   --green: #104e42;
-  --orange: #b85d08;
+  --orange: #b34317;
   --white: #ffffff;
   --yellow: #ffe1a9;
   --grey: #f4f4f467;
@@ -49,10 +49,11 @@ h2 {
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.548)),
     url("./assets/hero-image.jpg");
-  height: 440px;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -99,7 +100,6 @@ h2 {
 
 .summary-section {
   display: flex;
-  background-color: var(--grey);
   width: 320px;
   margin: 0 auto;
 }
@@ -415,6 +415,11 @@ footer {
   margin-bottom: 4vh;
 }
 
+.contact-icon {
+  width: 25px;
+  vertical-align: text-bottom;
+}
+
 @media (min-width: 768px) {
   .portfolio {
     font-size: 15px;
@@ -509,7 +514,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     align-self: center;
-    width: 900px;
+    width: 70vw;
   }
 }
 
@@ -517,5 +522,8 @@ footer {
   .media-icons-container,
   .annad-image {
     margin-right: 410px;
+  }
+  .annad-image {
+    margin-top: -200px;
   }
 }
