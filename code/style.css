@@ -1,11 +1,9 @@
 body {
   margin: 0;
-  width: 375px;
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
-h2 {
-  color: white;
-}
+
 h3 {
   text-transform: uppercase;
 }
@@ -19,20 +17,33 @@ h3 {
   flex-direction: column;
   flex-wrap: wrap;
   height: 520px;
+  position: relative;
 }
+
+.header-container {
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* position: relative; */
+}
+
 .profile-picture {
-  z-index: 2;
+  width: 150px;
   border-radius: 50%;
-  width: 25vw;
-  float: inline-end;
   border: 1px solid white;
-  margin-inline-end: 20px;
+  object-fit: cover;
+  position: absolute;
+  left: 250px;
+  bottom: -10px;
 }
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter-container h1 {
   color: #fff;
-  font-family: monospace;
+  font-family: 'Roboto';
+  font-size: 25px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -40,6 +51,7 @@ h3 {
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s steps(30, end), blink-caret 1s step-end infinite;
   width: fit-content;
+  margin-top: 70px;
 }
 
 /* The typing effect */
@@ -65,8 +77,9 @@ h3 {
 
 .title-container {
   margin: 0 auto;
-  width: 320px;
+  /* width: 320px; */
   font-family: 'Roboto', sans-serif;
+  padding-top: 30px;
 }
 
 /* .portfolio-section:nth-child(2n) {
@@ -74,14 +87,14 @@ h3 {
 } */
 
 .container {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.general-heading-container {
+.general-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -92,14 +105,31 @@ h3 {
   justify-content: space-evenly;
   flex-direction: row;
 }
+.general-heading-container {
+  display: flex;
+  justify-content: center;
+}
+.stack-span {
+  background-color: #333;
+  color: white;
+}
 
-.general-heading {
+/* .general-heading {
+  text-align: center;
+  padding: 3px;
+} */
+
+h2 {
   background-color: #333;
   color: #fff;
-  text-align: center;
   text-transform: uppercase;
-  padding: 3px;
   display: inline;
+  text-align: center;
+  padding: 3px;
+}
+
+.title-header {
+  text-transform: lowercase;
 }
 
 a {
@@ -125,11 +155,18 @@ a {
   width: 100%;
   display: block;
 }
-/* ul {
-  
-} */
+
+.skills-inner-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  text-align: center;
+}
 li {
   list-style: none;
+  text-align: center;
 }
 footer {
   background-color: #333;
@@ -143,7 +180,17 @@ footer a {
 }
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 50vw;
     margin: 0 auto;
+  }
+  .article-container {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .article-card {
+    width: 24%;
+    margin: 10px;
   }
 }

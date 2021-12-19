@@ -15,20 +15,27 @@
   </head>
   <body>
     <header class="header-section">
-      <div class="typewriter-container">
-        <h1>Hi! I'm Louise Becker</h1>
-        <div class="title-container">
-          <h2>business designer & operations + frontend developer</h2>
+      <div class="header-container">
+        <div class="typewriter-container">
+          <h1>Hi! I'm Louise Becker</h1>
+          <div class="title-container">
+            <h2 class="title-header">
+              <span style="font-family: 'Roboto', sans-serif;
+              font-size: 36px;">business designer </span> </br> & operations </br> <span style="font-family: 'Roboto', sans-serif;
+  font-size: 30px;"> + frontend developer </span>
+            </h2>
+          </div>
         </div>
-        <img
-          src="assets/Louise_Profile_Square.png"
-          class="profile-picture"
-          alt="Image of Louise"
-        />
       </div>
+      <img
+        src="assets/Louise_Profile_Square.png"
+        class="profile-picture"
+        alt="Image of Louise"
+        tabindex="0"
+      />
     </header>
-    <div class="container">
-      <article class="summary-section">
+    <article class="summary-section">
+      <div class="container">
         <p>
           I am an optimistic and curious person with 15+ years experience of
           various C-level positions such as COO, CFO and Regional Director. I
@@ -41,127 +48,156 @@
           upskilling in business development at Hyper Island, frontend
           development at Technigo and UX/UI.
         </p>
-      </article>
-    </div>
-    <section role="tech-section" class="general-heading-container">
+      </div>
+    </article>
+
+    <section role="tech-section" class="general-section">
       <div class="container">
-        <h2 class="general-heading">tech</h2>
+        <div class="general-heading-container">
+          <h2 class="general-heading">tech</h2>
+        </div>
         <p>
-          HTML5, CSS3, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, React Native
-          Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
-          pair-programming, Github.
+          HTML5, CSS3, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
+          React Native Node.js, Mongo DB, Web Accessibly, API:s,
+          mob-programming, pair-programming, Github.
         </p>
       </div>
     </section>
 
-    <section class="portfolio-section">
+    <section role="portfolio-section" class="general-section">
       <div class="container">
-        <div role="portfolio-projects-section" class="general-heading-container">
+        <div class="general-heading-container">
           <h2 class="general-heading">featured projects</h2>
         </div>
-        <article>
-          <a href="https://business-site-proj-by-louise.netlify.app/">
-          <div class="image-container">
-            <div class="overlay"></div>
-            <img class="image" src="assets/forms-accordeon-hero.png" alt="project image" />
-          </div>
-          <div>
-            <h3>business site built in HTML5 & CSS3</h3>
-            <p>
-              Responsive web site built with HTML, CSS and some JavaScript ES6 for
-              a fictitious business selling balance. 
-            </p>
-            <div>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript ES6</span>
-            </div>
-          </div>
-        </a>
-        </article>
-        <article>
-          <a href="https://reduxquiz-tech.netlify.app/">
-          <div class="image-container">
-            <div class="overlay"></div>
-            <img class="image" src="assets/redux-quiz-2.png" alt="project image" />
-          </div>
-          <div>
-            <h3>Quiz site about tech</h3>
-            <p>
-              Through mob-programming we developed a multiple choice quiz using React with Redux for global storage.
-            </p>
-            <div>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript ES6</span>
-              <span>React</span>
-              <span>Redux</span>
-            </div>
-          </div>
-        </a>
-        </article>
-        <article>
-          <a href="https://moviebox-by-ll.netlify.app/">
-          <div class="image-container">
-            <div class="overlay"></div>
-            <img class="image" src="assets/React-and-API.png" alt="project image" />
-          </div>
-          <div>
-            <h3>multi-page React app</h3>
-            <p>
-              Through pair-programming we build a multi-page application
-               using React Router showing the most popular movies in the US with data from an open API.
-            </p>
-            <div>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript ES6</span>
-              <span>React</span>
-            </div>
-          </div>
-        </a>
-        </article>
-        <article>
-          <a href="https://elsa-louise-labyrinth.netlify.app/">
-          <div class="image-container">
-            <div class="overlay"></div>
-            <img class="image" src="assets/Redux-and-API.png" alt="project image" />
-          </div>
-          <div>
-            <h3>Text-based adventure using API's with Redux</h3>
-            <p>
-              Through pair-programming we build a game site, using a specified API to build a frontend that gives the user control 
-              over what to do next,using thunks and redux to build the communication with the backend.
-            </p>
-            <div>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript ES6</span>
-              <span>React</span>
-              <span>Redux</span>
-            </div>
-          </div>
-        </a>
-        </article>
+        <div role="portfolio-projects-section" class="article-container">
+          <article class="article-card">
+            <a href="https://business-site-proj-by-louise.netlify.app/">
+              <div class="image-container">
+                <div class="overlay"></div>
+                <img
+                  class="image"
+                  src="assets/forms-accordeon-hero.png"
+                  alt="project image"
+                />
+              </div>
+              <div>
+                <h3>business site built in HTML5 & CSS3</h3>
+                <p>
+                  Responsive web site built with HTML, CSS and some JavaScript
+                  ES6 for a fictitious business selling balance.
+                </p>
+                <div>
+                  <span class="stack-span">HTML5</span>
+                  <span class="stack-span">CSS3</span>
+                  <span class="stack-span">JavaScript ES6</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="article-card">
+            <a href="https://reduxquiz-tech.netlify.app/">
+              <div class="image-container">
+                <div class="overlay"></div>
+                <img
+                  class="image"
+                  src="assets/redux-quiz-2.png"
+                  alt="project image"
+                />
+              </div>
+              <div>
+                <h3>Quiz site about tech</h3>
+                <p>
+                  Through mob-programming we developed a multiple choice quiz
+                  using React with Redux for global storage.
+                </p>
+                <div>
+                  <span class="stack-span">HTML5</span>
+                  <span class="stack-span">CSS3</span>
+                  <span class="stack-span">JavaScript ES6</span>
+                  <span class="stack-span">React</span>
+                  <span class="stack-span">Redux</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="article-card">
+            <a href="https://moviebox-by-ll.netlify.app/">
+              <div class="image-container">
+                <div class="overlay"></div>
+                <img
+                  class="image"
+                  src="assets/React-and-API.png"
+                  alt="project image"
+                />
+              </div>
+              <div>
+                <h3>multi-page React app</h3>
+                <p>
+                  Through pair-programming we build a multi-page application
+                  using React Router showing the most popular movies in the US
+                  with data from an open API.
+                </p>
+                <div>
+                  <span class="stack-span">HTML5</span>
+                  <span class="stack-span">CSS3</span>
+                  <span class="stack-span">JavaScript ES6</span>
+                  <span class="stack-span">React</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="article-card">
+            <a href="https://elsa-louise-labyrinth.netlify.app/">
+              <div class="image-container">
+                <div class="overlay"></div>
+                <img
+                  class="image"
+                  src="assets/Redux-and-API.png"
+                  alt="project image"
+                />
+              </div>
+              <div>
+                <h3>Text-based adventure using API's with Redux</h3>
+                <p>
+                  Through pair-programming we build a game site, using a
+                  specified API to build a frontend that gives the user control
+                  over what to do next,using thunks and redux to build the
+                  communication with the backend.
+                </p>
+                <div>
+                  <span class="stack-span">HTML5</span>
+                  <span class="stack-span">CSS3</span>
+                  <span class="stack-span">JavaScript ES6</span>
+                  <span class="stack-span">React</span>
+                  <span class="stack-span">Redux</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
       </div>
     </section>
-    <section role="skills-section" class="general-heading-container">
+    <section role="skills-section" class="general-section">
       <div class="container">
-        <h2 class="general-heading">skills</h2>
+        <div class="general-heading-container">
+          <h2 class="general-heading">skills</h2>
+        </div>
+        <div class="skills-inner-container">
         <ul>
-          CODE
+          <h3>CODE</h3>
           <li>HTML5</li>
           <li>CSS3</li>
           <li>JavaScript</li>
           <li>ES6</li>
           <li>React</li>
-          <li>Styled Components</li>
+          <li>Styled </li>
+          <li>Components</li>
           <li>GitHub</li>
           <li>Redux</li>
           <li>Node.js</li>
         </ul>
         <ul>
-          TOOLBOX
+          <h3>TOOLBOX</h3>
           <li>Atom</li>
           <li>Postman</li>
           <li>Wordpress</li>
@@ -170,7 +206,7 @@
           <li>Slack</li>
         </ul>
         <ul>
-          MORE
+          <h3>MORE</h3>
           <li>Business Design</li>
           <li>General & Project Management</li>
           <li>Business & Concept Development</li>
@@ -178,25 +214,72 @@
           <li>Hyper Island toolbox</li>
         </ul>
       </div>
-    </section>
-    <section role="thought-section" class="general-heading-container">
-      <div class="container">
-        <h2 class="general-heading">thoughts about code</h2>
       </div>
     </section>
-    <section role="more-section" class="general-heading-container">
-      <h2 class="general-heading">for more info</h2>
-      <div class="more-section-container">
-      <a href="https://www.linkedin.com/in/louisebecker/">
-        <img border:0; alt="link-to-linkedin" src="assets/img_li.png" width="100" height="100">
-        <a href="https://github.com/louise-becker">
-          <img border:0; alt="link-to-github" src="assets/img_github.png" width="100" height="100">
+    <section role="thought-section" class="general-section">
+      <div class="container">
+        <div class="general-heading-container">
+          <h2 class="general-heading">thoughts about code</h2>
         </div>
-      </section>
+        <div class="article-container">
+          <article>
+            <a href="">
+              <div class="image-container">
+                <div class="overlay"></div>
+                <img class="image" src="" alt="article image" />
+              </div>
+              <div>
+                <h3>Article Title</h3>
+                <p>Intro paragraph of the article</p>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a href="">
+              <div class="image-container">
+                <div class="overlay"></div>
+                <img class="image" src="" alt="article image" />
+              </div>
+              <div>
+                <h3>Article Title</h3>
+                <p>Intro paragraph of the article</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section role="more-section" class="general-section">
+      <div class="container">
+        <div class="general-heading-container">
+          <h2 class="general-heading">for more info</h2>
+        </div>
+        <div class="more-section-container">
+          <a href="https://www.linkedin.com/in/louisebecker/">
+            <img
+              border:0;
+              alt="link-to-linkedin"
+              src="assets/img_li.png"
+              width="100"
+              height="100"
+          /></a>
+          <a href="https://github.com/louise-becker">
+            <img
+              border:0;
+              alt="link-to-github"
+              src="assets/img_github.png"
+              width="100"
+              height="100"
+          /></a>
+        </div>
+      </div>
+    </section>
     <footer>
-      <h2>CONTACT</h2>
-      <a href="mailto:louise.becker@gmail.com">louise.becker@gmail.com</a>
-      <p style="color: white">070-6867522</p>
+      <div class="container">
+        <h2>CONTACT</h2>
+        <a href="mailto:louise.becker@gmail.com">louise.becker@gmail.com</a>
+        <p style="color: white">070-6867522</p>
+      </div>
     </footer>
   </body>
 </html>
