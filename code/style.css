@@ -19,11 +19,12 @@ h1 {
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	font-family: 'Poiret One', cursive;
+	font-weight: 700;
 	background-color: var(--secondary);
 	line-height: 170%;
 	color: black;
+	cursor: default;
 }
 
 /* CONTAINER FOR EACH SECTION */
@@ -33,7 +34,7 @@ body {
 	margin: 0 auto;
 }
 
-/* PROEJCT CONTAINER HEADINGS */
+/* CONTAINER HEADINGS */
 .portfolio-heading-container,
 .more-blog-heading-container,
 .skills-heading-container,
@@ -60,6 +61,7 @@ body {
 	text-transform: uppercase;
 	display: inline-block;
 	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* HEADER*/
@@ -71,6 +73,9 @@ header {
 	height: 520px;
 	width: 100%;
 	color: var(--secondary);
+
+	background-attachment: fixed;
+	position: relative;
 }
 .header-info {
 	display: flex;
@@ -229,12 +234,14 @@ header {
 	position: relative;
 	
 	
+	
 }
 
 .featured-card {
 	margin-bottom: 50px;
 	box-sizing: border-box;
-	transition: transform 0.3s;
+	transition: ease-in-out 0.7s;
+	/*transition: 1s ease-in-out;*/
   }
   
   .featured-card:hover {
@@ -257,6 +264,7 @@ header {
 	bottom: 0;
 	left: 0;
 	background: rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
 }
 
 
@@ -283,6 +291,7 @@ header {
 .image {
 	width: 100%;
 	display: block;
+	border-radius: 20px;
 }
 
 .project-text {
@@ -403,6 +412,26 @@ article p {
 	text-decoration: none;
 }
 
+.blog-post { 
+	margin-bottom: 40px;
+	border-radius: 20px;
+	box-sizing: border-box;
+	transition: ease-in-out 0.7s;
+  }
+
+
+  .blog-post:hover {
+	transform: scale(1.1);
+  }
+ .blog-post:hover .overlay {
+	display: none;
+
+  }
+
+  .blog-post:hover .text-over-image {
+	display: none;
+  }
+
 /* MORE THOUGHTS */
 
 .more-thoughts-section {
@@ -467,7 +496,7 @@ article p {
 }
 
 .skills-list li {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poiret One', cursive;
 	font-size: 11px;
 	line-height: 1.5;
 }
@@ -490,6 +519,8 @@ article p {
 }
 
 .social-media-card {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -510,8 +541,19 @@ article p {
 
 /* CONTACT-SECTION */
 .contact-me-section {
-	background-color:#996D2E;
-	padding-bottom: 100px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+		url(./assets/bluecolor.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	position: relative;
+	background-size: cover;
+	height: 350px;
+	width: 100%;
+	color: var(--secondary);
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 .contact-me-heading-container {
@@ -520,10 +562,12 @@ article p {
 }
 
 .contact-title {
+	font-family: 'Roboto';
 	color: var(--secondary);
-	font-size: 22px;
+	font-size: 30px;
+	font-weight: 900;
 	padding: 8px;
-	margin: 35px 0 35px 0;
+	margin: 35px 0 5px;
 }
 
 .contact-info {
