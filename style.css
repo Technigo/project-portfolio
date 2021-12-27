@@ -169,6 +169,7 @@ h3 {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
 .overlay:hover {
@@ -176,13 +177,12 @@ h3 {
 }
 
 .overlay-title {
-  position: absolute;
+  position: relative;
   transition: 0.5s ease;
   font-size: 24px;
   text-transform: uppercase;
   color: #f4f4f4;
   top: 50%;
-  left: 35%;
 }
 
 .other-projects {
@@ -502,12 +502,22 @@ ul {
 /*MEDIA QUERY*/
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .for-more-title {
+    font-size: 17px;
+  }
+  .projects-head {
+    font-size: 17px;
+  }
+
+  .tech-heading {
+    font-size: 17px;
+  }
   .body {
     margin: 0 auto;
   }
 
   .project-img {
-    padding-left: 35px;
+    padding-left: 10px;
   }
 
   .thoughts-text {
@@ -516,16 +526,18 @@ ul {
 
   .other-projects-head {
     margin-left: 25%;
+    font-size: 17px;
   }
 
   .overlay-title {
     font-size: 19px;
-    left: 30%;
-    top: 45%;
+    /* left: 30%;
+    top: 45%; */
   }
 
   .portfolio-text {
     padding-left: 20px;
+    padding-top: 30px;
   }
 
   .body {
@@ -542,7 +554,7 @@ ul {
 
   .career-text {
     font-family: roboto;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #f4f4f4;
     font-stretch: 100%;
@@ -551,11 +563,26 @@ ul {
     margin: 40px, 30px, 40px, 30px;
   }
 
+  .name-text {
+    font-size: 1rem;
+  }
+
   .title {
     padding-top: 120px;
     font-size: 1rem;
     width: 300px;
     height: 300px;
+  }
+
+  .profile-picture {
+    width: 160px;
+    height: 160px;
+    right: 30px;
+    top: 380px;
+  }
+
+  .skills-heading {
+    font-size: 17px;
   }
 }
 
@@ -602,10 +629,10 @@ ul {
   }
 
   .profile-picture {
-    height: 210px;
-    width: 210px;
+    height: 200px;
+    width: 200px;
     right: 70px;
-    top: 330px;
+    top: 340px;
   }
 
   .portfolio-text {
