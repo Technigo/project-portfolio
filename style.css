@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    color: black;
+    color: rgb(130, 60, 60);
     text-decoration: underline dotted;
 }
 
@@ -127,7 +127,8 @@ footer {
 #featured-section-header > h1,
 .portfolio-card-tags > p,
 #thoughts-section-header > h1,
-#skills-section-header > h1 {
+#skills-section-header > h1,
+h2 {
     color: white;
     background-color: rgb(130, 60, 60);
     border-radius: 0.1em 0.1em;
@@ -159,19 +160,24 @@ footer {
     padding: 1em;
 }
 
-.portfolio-card > figure > img {
+.card-image { position: relative }
+.card-image figcaption {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.card-image:hover {
+    opacity: 90%;
+    transition: 0.2s;
+}
+
+.portfolio-card > a > figure > img {
     width: 100%;
     margin-bottom: 0.5em;
-    opacity: 50%;
-}
-
-.portfolio-card > figure > img:hover {
-    opacity: 100%;
-    transition: 0.5s ease-in-out;
-}
-
-figcaption > h2 {
-    font-size: 1.25em;
+    opacity: 80%;
 }
 
 .portfolio-card > p,
