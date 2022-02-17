@@ -110,12 +110,60 @@ h2 {
 
 /* Featured projects */
 
+/* SLIDER */
 .big-project {
   margin-top: 15px;
-  background-color: aquamarine;
   width: 100%;
-  height: 400px;
+  object-fit: cover;
 }
+
+.slider {
+  overflow: hidden;
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+.slider-image {
+  float: left;
+  width: 20%;
+  border-radius: 5px;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
 .featured-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -171,9 +219,10 @@ h2 {
 }
 .tech-logo {
   background-color: cadetblue;
-  font-size: 9px;
+  font-size: 12px;
   padding: 4px;
-  font-weight: 400;
+  font-weight: 300;
+  color: white;
 }
 
 .black {
