@@ -14,6 +14,7 @@
 
 h1 {
     font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 8px grey;
 }
 
 h2 {
@@ -67,7 +68,7 @@ p {
 }
 
 .portfolio-name {
-    color: var(--tertiary);
+    color: #0d658d;
     text-transform: uppercase;
     font-size: 12px;
 }
@@ -94,7 +95,14 @@ a {
 .logo {
     height: 40px;
     width: auto;
+    margin: 5px;
+    transition: 0.5s ease;
 }
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
 /* -------------- */
 
 .profile-image {
@@ -121,6 +129,10 @@ a {
     box-sizing: border-box;
     font-size: 17px;
     line-height: 29px;
+}
+
+.intro-text {
+    padding-bottom: 20px;
 }
 
 /* -----------tech section---------- */
@@ -198,15 +210,21 @@ position: relative;
     display: block;
 }
 
-/* connect with the text?  */
 .overlay:hover {
     opacity: 0;
 }
 
-.project-description{
+.project-description {
     font-family: "Roboto", sans-serif;
     font-size: 17px;
     padding-bottom: 20px;
+}
+
+.project-link{
+    transition: 0.5s ease;
+}
+.project-link:hover {
+    font-size: 17px;
 }
 
 .github-link {
@@ -216,7 +234,10 @@ position: relative;
    color: var(--secondary);
    font-weight: bold;
    padding-bottom: 10px;
-   
+   transition: 0.5s ease;
+}
+.github-link:hover {
+    font-size: 15px;
 }
 
 .tags {
@@ -248,6 +269,10 @@ position: relative;
     color: black;
     text-transform: none;
     font-size: 20px;
+    transition: 0.5s ease;
+}
+.blog-heading:hover {
+    font-size: 21px;
 }
 
 .blogDate {
@@ -257,7 +282,13 @@ position: relative;
 .colored-span {
     color: var(--secondary);
     text-transform: uppercase;
+    transition: 0.5s ease;
 }
+.colored-span:hover {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
 .bold-span {
     font-weight: bold;
 }
@@ -302,7 +333,8 @@ ul {
     margin: 20px;
 }
 .logo-image {
-    max-width: 60px;
+    width: 60px;
+    transition: 0.5s ease;
   }
   .logo-text {
     color: var(--secondary);
@@ -312,11 +344,15 @@ ul {
     line-height: 13px;
     margin-bottom: 20px;
   }
+
+  .logo-image:hover {
+    transform: scale(1.1);  
+  }
   .illustration-link {
     color: var(--secondary);
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 13px;
     margin-bottom: 20px; 
     display: flex;
@@ -324,8 +360,7 @@ ul {
     transition: 0.5s ease;
   }
   .illustration-link:hover {
-    
-    font-size: 17px;  
+    font-size: 16px;  
   }
 
 /* ------------------footer------------------- */
@@ -384,14 +419,14 @@ ul {
 /* ---Header--- */
 
 
-.logo {
-    height: 80px;
-    width: auto;
-} 
+    .logo {
+        height: 60px;
+        width: auto;
+    } 
 
-.navbar-links {
-    right: 200px;
-}
+    .navbar-links {
+        right: 200px;
+    }
 
   .profile-image {
     width: 333px;
