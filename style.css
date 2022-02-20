@@ -7,7 +7,7 @@
 body {
 	margin: 0;
 	width: 100%;
-	line-height: 29px;
+	line-height: 25px;
 }
 
 h1 {
@@ -182,17 +182,61 @@ a:visited {
 	font-weight: bolder;
 }
 
+.tags-container {
+	margin: 0 auto;
+	line-height: 35px;
+}
+
 .tags {
 	background-color: #7827a0;
 	color: whitesmoke;
 	font-size: 9px;
-	padding: 2px;
+	padding: 5px;
+	border-radius: 5px;
 }
 
+/* Other projects */
+.other-span {
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #7827a0;
+}
+
+.other-projects:hover {
+	text-decoration: underline;
+}
+
+.other-link {
+	padding-top: 3px;
+}
+
+/* .other-container {
+	width: 320px;
+	height: auto;
+	margin: 25px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+} */
+
 /* Skills*/
-.skills {
+.skills-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+.skills-list {
+	list-style-type: none;
+	margin: 0 auto;
+	width: 100%;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding: 0;
+}
+
+.list-item {
+	margin: 0 auto;
 }
 
 /* For more */
@@ -215,13 +259,13 @@ a:visited {
 
 .footer {
 	background-color: #7827a0;
-	height: 350px;
+	height: 200px;
 	padding: 20px;
 }
 
 .footer .container h1 {
 	background-color: #7827a0;
-	margin: 40px auto;
+	margin: 20px auto;
 }
 
 .footer .container .paragraph {
@@ -264,11 +308,15 @@ a:visited {
 	.projects img {
 		max-height: 350px;
 	}
+
+	.skills-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 	body {
-		line-height: 50px;
+		line-height: 30px;
 	}
 
 	.header {
@@ -327,9 +375,5 @@ a:visited {
 
 	.profile-image img {
 		border: 5px solid whitesmoke;
-	}
-
-	.for-more:hover {
-		border-color: #7827a0;
 	}
 }
