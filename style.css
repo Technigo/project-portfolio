@@ -391,10 +391,6 @@ header video {
 
 .overlay {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   background: rgba(4, 15, 20, 0.651);
   display: flex;
   justify-content: center;
@@ -405,6 +401,11 @@ header video {
 
 .overlay-text {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
   color: var(--text2);
   font-family: Montserrat;
   font-style: normal;
@@ -589,6 +590,26 @@ a {
   font-size: 19px;
   line-height: 41px;
   margin-bottom: 10px;
+  transition: ease-in 0.2s;
+}
+
+
+.colorTwo {
+  color: rgb(212, 111, 52);
+  text-shadow: 0 0 1px  rgb(90, 44, 1);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 41px;
+  margin-bottom: 10px;
+  transition: ease-in 0.2s;
+}
+
+.colorTwo:hover{
+  transform: scale(90%);
+  color: rgb(255, 98, 7);
+font-weight: 700;
 }
 
 .more-thougts-small {
