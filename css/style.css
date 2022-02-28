@@ -1,11 +1,97 @@
-body {
+body,html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%;
   background-color: #f0f0f0;
   font-family: "Josefin Slab";
+  scroll-behavior: smooth;
+}
+/*hero image*/
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/heroimage.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+/*
+    border-bottom-left-radius: 50% 30px;
+    border-bottom-right-radius: 50% 30px;*/
+    
+  }
+
+  .hero-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 150%);
+    color: white;
+  }
+
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  button a{
+    color: #000000;
+  text-decoration: none;
+  }
+
+/*scroll button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
 }
 
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
 footer {
   width: 100vw;
   height: 350px;
@@ -21,8 +107,9 @@ footer a {
   color: #000000;
 }
 footer a:hover {
-  color: #00000093;
+  color: #555;
 }
+
 /* tablet */
 @media (min-width: 768px) {
   footer {
