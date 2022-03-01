@@ -1,16 +1,13 @@
 body {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
+
+/* ---------CONTAINER FOR EACH SECTION---------- */
 
 .container {
-  width: 375px;
+  width: 65%;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
 }
 
 .portfolio-section:nth-child(2n) {
@@ -19,4 +16,57 @@ body {
 
 .portfolio-section:nth-child(2n + 1) {
   background-color: #fff;
+}
+
+/* ----------------HEADER--------------------- */
+
+.header-container {
+  background-image: url(./Assets/animals-zebra-zebra-crossing-stripes-70376.jpeg);
+  background-size: cover;
+  height: 520px;
+  width: 100%;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-icons-header {
+  align-self: flex-end;
+  padding-top: 48px;
+  padding-right: 24.5px;
+}
+
+.social-media-icons-header img {
+  width: 80px;
+  height: 80px;
+}
+
+.job-title {
+  position: absolute;
+  margin: 121px 131px 24px 197px;
+  width: 220px;
+  height: 202px;
+  margin-top: 30px;
+  margin-left: 24px;
+}
+
+.profile-image {
+  position: absolute;
+  right: 230px;
+  top: 150px;
+  border: white 2px solid;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* <----------D E S K T O P -----------> */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
