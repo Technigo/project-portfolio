@@ -12,8 +12,8 @@
 
 /* Global CSS variables used for colors */
 :root {
-    --primary: #FA382F;
-    --secondary: #072BCE;
+    --primary: #FC4E4A;
+    --secondary: #013DB6;
 }
 
 .container {
@@ -28,9 +28,10 @@
 
 /* Header */
 header {
-    background-image: url('assets/pizza.png');
+    background-image: url('assets/solen-feyissa-unsplash.jpg');
     height: 520px;
     color: white;
+    background-size: cover;
 }
 
 .socials-icon-container {
@@ -39,11 +40,24 @@ header {
     justify-content: end;
 }
 
-.socials-icon {
-    width: 40px;
-    height: 40px;
+.header-icon-wrapper {
     border-radius: 50%;
     border: 1px solid white;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.header-texts {
+    margin-top: 75px;
 }
 
 .header-name {
@@ -71,13 +85,17 @@ header {
     line-height: 40px;
 }
 
+.profile-picture-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+}
+
 .profile-picture {
     border-radius: 50%;
     border: 3px solid #F4F4F4;
     width: 180px;
     height: 180px;
-    /* position: absolute;
-    right: 0px; */
 }
 
 /* Text Elements */
@@ -124,6 +142,22 @@ a {
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
+}
+
+.line {
+    border: 1px solid var(--primary);
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: inline-block;
+    /* margin-left: -5px; */
 }
 
 /* Tech Section */
@@ -261,45 +295,18 @@ a {
 }
 
 .s-grid-1 {
-    grid-column: 1 / span 1;
     margin-bottom: 30px;
-}
-
-.s-grid-2 {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-}
-
-.s-grid-4 {
-    grid-column: 2 / span 2;
-    grid-row: 1 / span 2;
 }
 
 /* FOR MORE SECTION */
 
 .footer-icons-container {
     display: grid;
-    grid-template-columns: 3;
+    grid-template-columns: auto auto auto;
     padding-top: 40px;
-    /* display: flex;
-    justify-content: space-around; */
     font-family: 'Roboto', sans-serif;
     font-size: 11;
     font-weight: 400;
-}
-
-.f-grid-1 {
-    grid-column: 1 / span 1;
-    margin-left: 0;
-}
-
-.f-grid-2 {
-    grid-column: 2 / span 1;
-}
-
-.f-grid-3 {
-    grid-column: 3 / span 1;
-    margin-right: 0;
 }
 
 .footer-icons-text {
@@ -310,14 +317,22 @@ a {
     align-items: center;
 }
 
-.footer-icons {
+.footer-icon-wrapper {
     height: 60px;
     width: 60px;
     border-radius: 50%;
     border: 2px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* FOOTER / CONTACT SECTION */
+.footer-icon {
+    height: 30px;
+    width: 30px;
+}
+
+/* CONTACT SECTION */
 
 footer {
     background-color: var(--secondary);
@@ -329,7 +344,7 @@ footer {
 .contact-header {
     font-size: 21px;
     font-weight: 700;
-    padding-bottom: 45px;
+    padding-bottom: 40px;
 }
 
 .contact-text {
@@ -337,12 +352,20 @@ footer {
     line-height: 25px;
 }
 
+.attribution {
+    font-size: 14px;
+}
 
-/* Media Query for Tablet and Desktop */
+.attribution a {
+    color: white;
+}
+
+
+/* Media Query for Tablet */
 @media (min-width: 768px) {
 
 .container {
-    width: 768px;
+    width: 710px;
 }
 
 .mobile-hidden {
@@ -357,5 +380,31 @@ footer {
     display: none;
 }
 
+/* Featured Projects */
+.featured-projects {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3vw;
 }
 
+/* Featured Opinions */
+.featured-opinions {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3vw;
+}
+
+/* Skills */
+.skills-container {
+    grid-template-columns: auto auto auto;
+}
+
+}
+
+/* Media Query for Desktop */
+@media (min-width: 1024px) {
+
+.container {
+    width: 900px;
+}   
+}
