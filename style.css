@@ -1,13 +1,28 @@
+:root {
+    --primary: rgb(97, 30, 114);
+    --secondary: rgba(97, 30, 114, 0.4);
+  }
+  
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-decoration: none;
 }
 
 header {
-    background-image: url(./assets/pink-yellow.jpg);
+    position: relative;
+    /* background-image: url(./assets/pink-yellow.jpg); */
     height: 520px;
     background-size: cover;
     color: #fff;
+    background-image: url(https://media4.giphy.com/media/3og0ISzBpn0nNJE3Ac/giphy.gif);
 }
 
 h1 {
@@ -23,6 +38,83 @@ header p {
     line-height: 18px;
 }
 
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 
+.summary-section {
+    font-size: 17px;
+    line-height: 29px;
+} */
+
+.font-size-17 {
+    font-size: 17px;
+}
+
+.line-height-29 {
+    line-height: 29px;
+}
+
+.center-align-text {
+    text-align: center;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.inline {
+    display: inline;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.header-icon-big-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-icon-container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    justify-content: center;
+    /* justify-items: center; */
+}
+
+.profile-img {
+    /* Positioning */
+    position: absolute;
+    /* right: 230px;
+    bottom: 100px; */
+    width: 180px;
+    height: 180px;
+    /* left: 171px; */
+    /* right: 24px; */
+    right: 7vw;
+    top: 356px;
+    /* width: 150px;
+    height: 150px; */
+  
+    /*  Rounded corners */
+    border-radius: 50%;
+  
+    /* An outline on the circle */
+    border: 2px solid whitesmoke;
+  
+    /* Makes sure nothing sticks out of the circle */
+    overflow: hidden;
+  }
+  
+.profile-img > img {
+    width: 100%;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -32,23 +124,99 @@ header p {
 }
 
 .container {
-    width: 375px;
+    width: 327px;
     margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.section-heading {
+    font-size: 22px;
+    line-height: 27px;
+    margin: 40px 0;
+    /* background-color: red; */
+    color: #fff;
+    text-align: center;
+}
+
+.section-heading-background {
+    background-color: var(--primary);
+    padding: 0 5px;
 }
 
 .project-heading {
-    font-size: 24px;
-    line-height: 30px;
-    margin: 17px 0;
-    background-color: red;
-    color: #fff;
+    color: var(--primary);
 }
+
+.sub-heading {
+    font-size: 21px;
+    line-height: 25px;
+    margin: 17px 0;
+    text-align: center;
+    color: var(--primary);
+}
+
+.other-projects-img-container {
+    display: none; /*this should not be a media query for small but default should be display none*/
+}
+
+
+.my-thoughts-long {
+    display: none;
+}
+
 
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
     }
+
+    .profile-img {
+        top: 378px;
+        /* width: 300px;
+        height: 300px; */
+    }
+
+    .other-projects-img-container {
+        display: block;
+    }
+
+    .my-thoughts-long {
+        display: block;
+    }
+
+    .my-thoughts-short {
+        display: none;
+    }
+
+    /* .project-img-group {
+        width: 100%;
+    } */
+
+    .featured-projects-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        justify-content: center;
+    }
 }
+
+@media screen and (min-width: 1100px) {
+    .container {
+        width: 1100px;
+    }
+
+    .featured-projects-section {
+        gap: 57px;
+    }
+}
+
+
+/* @media (max-width: 1024px){ 
+	.other-projects-img-container {
+	    display: none;
+    }
+}
+*/
 
 .section:nth-child(2n) {
     background-color: rgba(244, 244, 244, 1);
@@ -60,11 +228,13 @@ header p {
 
 .project-img-group {
     position: relative;
+    width: 100%;
 }
 
 .project-img {
     width: 100%;
     display: inherit;
+    transition: 0.5s ease;
 }
 
 .project-overlay {
@@ -73,10 +243,105 @@ header p {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(219, 94, 146, 0.4)
+    /* background: rgba(219, 94, 146, 0.4); */
+    /* This is a semi-transparent overlay on the image */
+    background-color: var(--secondary);
+
+    /* This will cause the overlay to fade */
+    transition: 0.5s ease;
+}
+
+.project-img:hover {
+    /* This causes the text to fade, color is the text color */
+    color: transparent;
+  }
+  
+.project-overlay:hover {
+/* This causes the original background color (.5 opacity) to become transparent */
+background-color: transparent;
 }
 
 .footer {
     height: 302px;
-    background-color: rgb(24, 148, 111);
+    background-color: var(--primary);
+}
+
+.start-line {
+    border: 1px solid var(--primary);
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.start-dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.tag-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.tag-wrapper p {
+    font-family: "Roboto", sans-serif;
+    color: #2b2e34;
+    font-weight: bold;
+    background-color: #db9aab;
+    text-decoration: none;
+
+    /* Matching line-height and font-size here gives full control 
+        over the size of our tags to the padding*/
+    font-size: 12px; 
+    line-height: 12px;
+    font-weight: 400;
+
+    /* Control the size of the tags */
+    padding: 4px;
+
+    /* Control the spacing of our tags */
+    margin: 3px;
+
+    /* Some rounded borders */
+    border-radius: 5px;
+}
+
+.more-icon {
+    border-radius: 50%;
+    border: 1px solid white;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.icon-color {
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.bottom-icons {
+    background-color: var(--primary);
+    justify-self: center;
+}
+
+.for-more-icon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.for-more-icon-text {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary);
 }
