@@ -1,0 +1,168 @@
+/* Remove Pre-set Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-decoration: none;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+
+.section:nth-child(2n) {
+    background-color: #F4F4F4;
+}
+
+/* Header */
+header {
+    background-image: url('assets/pizza.png');
+    height: 520px;
+    color: white;
+}
+
+.socials-icon-container {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+}
+
+.socials-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    border: 3px solid #F4F4F4;
+    width: 180px;
+    height: 180px;
+    /* position: absolute;
+    right: 0px; */
+}
+
+/* Text Elements */
+.mobile-hidden-text {
+    display: none;
+}
+
+.heading-block {
+    background-color: #FA382F;
+    color: white;
+    padding: 0 5px;
+}
+
+.section-heading {
+    text-align: center;
+}
+
+.red-font {
+    color: #FA382F;
+}
+
+/* Project Section */
+.project-image-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    display: inherit;
+}
+
+.project-image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(100, 100, 55, 0.3)
+}
+
+.project-image-text-overlay {
+    margin: auto;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+.project-tag {
+    display: inline-block;
+}
+
+/* THOUGHTS/Article Section */
+.article-image {
+    width: 100%;
+}
+
+/* FOR MORE SECTION */
+
+.footer-icons-container {
+    display: grid;
+    grid-template-columns: 3;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.footer-icons-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+/* FOOTER / CONTACT SECTION */
+
+footer {
+    background-color: #072BCE;
+    color: white;
+    text-align: center;
+}
+
+
+/* Media Query for Tablet and Desktop */
+@media (min-width: 768px) {
+
+.container {
+    width: 768px;
+}
+
+.mobile-hidden {
+    display: block;
+}
+
+.mobile-hidden-text {
+    display: inline-block;
+}
+
+.desktop-hidden-text {
+    display: none;
+}
+
+}
+
