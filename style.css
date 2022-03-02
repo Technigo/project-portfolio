@@ -95,7 +95,6 @@ header {
     align-items: flex-end;
     -webkit-justify-content: flex-end;
     -webkit-align-items: flex-end;
-    /* margin-left: auto; */
 }
 
 .profile-picture {
@@ -170,7 +169,10 @@ a[href^=tel] {
     background-color: var(--primary);
     border-radius: 50%;
     display: inline-block;
-    /* margin-left: -5px; */
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
 }
 
 /* Tech Section */
@@ -203,7 +205,8 @@ a[href^=tel] {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(1, 61, 182, 0.2)
+    background: rgba(1, 61, 182, 0.2);
+    transition: 0.5s ease;
 }
 
 .project-image-text-overlay {
@@ -217,6 +220,7 @@ a[href^=tel] {
     color: white;
     font-weight: 700;
     font-size: 28px;
+    transition: 0.5s ease;
 }
 
 .project-text-group {
@@ -241,10 +245,11 @@ a[href^=tel] {
 
 .project-tag {
     display: inline-block;
-    background-color: #FDDFE7;
+    background-color: #d6ecff;
     padding: 2px 4px;
     font-size: 14px;
     margin: 5px 3px 0 0;
+    border-radius: 3px;
 }
 
 .featured-projects {
@@ -256,9 +261,12 @@ a[href^=tel] {
     font-family: 'Roboto', sans-serif;
 }
 
-.margin-bottom {
-    margin-bottom: 30px;
+/* Hover Effect for Projects */
+.project-image-group:hover .project-image-overlay, .project-image-group:hover .project-image-text-overlay {
+    background-color: transparent;
+    color: transparent
 }
+
 
 /* THOUGHTS/Article Section */
 .article-image {
@@ -315,11 +323,9 @@ a[href^=tel] {
 
 .footer-icons-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     padding-top: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 11;
-    font-weight: 400;
+    justify-items: center;
 }
 
 .footer-icons-text {
@@ -328,6 +334,13 @@ a[href^=tel] {
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.footer-icons-text h4 {
+    margin-top: 10px;
 }
 
 .footer-icon-wrapper {
@@ -409,6 +422,7 @@ header {
 .header-icon-wrapper {
     height: 60px;
     width: 60px;
+    border: 2px solid white;
 }
 
 .socials-icon {
@@ -532,6 +546,7 @@ header {
 .footer-icon-wrapper {
     height: 90px;
     width: 90px;
+    border: 3px solid var(--primary)
 }
 
 .footer-icon {
@@ -539,8 +554,8 @@ header {
     width: 40px;
 }
 
-.footer-icon-left {
-    padding-right: 0;
+.footer-icons-text {
+    font-size: 16px;
 }
 
 /* CONTACT SECTION */
@@ -562,7 +577,7 @@ header {
 }
 
 /* Media Query for Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
 
 .container {
     width: 850px;
