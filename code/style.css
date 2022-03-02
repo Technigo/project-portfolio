@@ -1,3 +1,6 @@
+
+/* Global styling*/
+
 body{
     margin:0px;
 }
@@ -10,50 +13,113 @@ a{
     font-family: 'Montserrat', sans-serif;
     line-height: 29px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    padding:41px 24px 41px 24px;
+}
+
+.container{
+    width:375px;
+    margin: 0 auto;   
 }
 
 .section:nth-child(2n) {
     background-color:#F4F4F4;
 }
 
+/*Header*/
+
+.header{
+    background-image:url(./images/header-color.jpg) ;
+    background-size: cover;
+    height:520px;
+    position: relative;  
+}
+
+.profile-picture{
+    width:180px;
+    border-radius: 50%;
+    position: absolute;
+    top:356px;
+    left:171px;
+    border: solid 2px white;
+}
+
+.header-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    height:100%;
+}
+
+.socials{
+    position: absolute;
+    top:48px;
+    left:220px;
+}
+.fa-brands{
+    font-size:30px;
+    color:white;
+    padding:5px;
+}
+
 .intro-text{
-    width:327px;
-    height:232px;
-    font-size: 17px;
-    margin:49px 24px 43px 24px;
+   font-size: 17px;
 }
 
 .section-heading{
-    background-color: #e74a3c;
-    color:white;
-    width: fit-content;
-    padding:3px;
-    height:26px;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-    margin:41px 24px 24px 24px;
+    display: flex;
+    justify-content: center;
 }
 
-.intro-tech{
-    margin:0px 24px 33px 24px;
+h2{
+    background-color:#e74a3c;
+    color:white;
+    font-size: 22px;
+    font-weight: 700;
+    padding:2px;
+    width:fit-content;
+    margin-bottom:24px;
+}
+
+.header-text-group{
+    position: absolute;
+    color:white;
+    width:220px;
+    height:202px;
+    top:121px;
+    left:24px;
+    right:131px;
+}
+
+.portfolio-name{
+    font-size: 13px;
+    line-height: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.portfolio-title{
+    font-size: 24px;
+    font-weight:700;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.project-card{
+    
 }
 
 .project-image-group{
     position:relative;
-    margin:40px 24px 9px 24px;
     text-align: center;
+    height:212px;
+    width:327px;
 }
 
 .project-picture{
     height:212px;
     width:327px;
-    display:inherit;
-    position: relative;
+    position: relative;  
+   
 }
 
 .project-overlay{
@@ -63,6 +129,7 @@ a{
     bottom:0;
     left:0;
     background-color: rgba(100,100,100,0.5)
+    
 }
 
 .picture-text{
@@ -79,21 +146,29 @@ a{
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     text-align: left;
-    margin: 0px 24px 42px 24px;
+
+    
 }
 
 .project-heading{
     color:red;
     font-weight:700;
+    margin-top:20px;
 }
 
 .project-info{
     font-weight:400;
+    
+}
+
+.intro-tech{
+    text-align: center;
 }
 
 .languages{
     display:flex;
     justify-content: flex-start;
+    margin-bottom:54px;
 }
 
 .project-html{
@@ -140,40 +215,48 @@ a{
     font-weight: 700;
     font-size: 21px;
     text-align: center;
-    margin: 56px 60px 21px 60px;
 }
 
-.thoughts-picture{
-    width:327px;
-    height:205px;
+.thoughts-wrapper{
+    display:flex;
+    flex-direction: column;
 }
 
-.text-thoughts{
+.thoughts-card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:56px;
     text-align: left;
     font-size: 17px;
-    margin:32px 31px 0px 24px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.other-projects{
+   
 }
 
 .date{
     color:red;
-    margin:0px;
+    margin:32px 0px 0px 0px;
     font-weight: normal;
 }
 
-.thoughts, .thoughts-heading {
-    margin:0px;
+.thoughts-heading{
+    margin:5px 0px 5px 0px;
 }
 
 .skills-wrapper{
     display: flex;
     flex-wrap:wrap;
-    margin:0px 24px 0px 24px;
+    justify-content: space-between;
+    margin:0px;
+   
 }
 
 .skills-container{
     font-size:17px;
-    width:50%;
+    text-align: center;
+    
 }
 
 .skills-heading{
@@ -183,21 +266,30 @@ a{
 
 .skills{
     font-weight:400;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
+}
+
+ul{
+    list-style: none;
+    padding:0px;
 }
 
 .social-icons{
     margin:16px 64px 40px 64px;
+    display: flex;
+    justify-content: center;
 }
 
 .icons{
-    margin-right:10px;
+    padding:5px;
 }
+
 
 .footer{
     background-color: blue;
     color:white;
     padding: 60px 24px 64px 24px;
+    text-align: center;
 }
 
 .footer-heading{
@@ -208,4 +300,116 @@ a{
     color:white;
     display: inline-block;
     margin:0px;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+    width:768px;    
+    }
+
+    .section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-picture{
+        width:230px;
+        top: 310px;
+        left:500px;
+    }
+
+    .socials{
+        top: 75px;
+        left:600px;
+    }
+
+    .header-text-group{
+        top:121px;
+        left:100px;
+        right:131px;
+    }
+    
+    .thoughts-wrapper{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .thoughts-card{
+        width:40%;
+        flex-direction: row;
+        display: inline-block;
+        margin: 30px 27px 44px 27px;
+        align-items: center;
+    }
+
+    .projects-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-card{
+        display:inline-block;
+        
+    }
+
+    .project-info{
+        width:46vw;
+    }
+
+    .other-projects{
+        display: block;
+    }
+
+    .skills-wrapper{
+        justify-content: center;
+    }
+
+    .skills-container{
+        padding:20px;
+    }
+  
+
+@media screen and (min-width: 1200px){
+    .container{
+    width:1200px;
+    }
+    
+    .profile-picture{
+        width:333px;
+        top: 350px;
+        left:1193px;
+    }
+
+    .socials{
+        top:150px;
+        left:1400px;
+    }
+
+    .header{
+        height:650px;
+    }
+
+    .header-text-group{
+        top:206px;
+        left:426px;
+       
+    }
+    
+    .portfolio-name{
+        font-size: 28px;
+        line-height: 37px;
+    }
+
+    .portfolio-title{
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+
+
+}
 }
