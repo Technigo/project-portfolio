@@ -1,13 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  line-height: 170%;
+  background-color: var(--secondary);
+}
+:root {
+  --primary: #fa382f;
+  --secondary: #fff;
 }
 
+/* CONTAINER HEADINGS */
+.portfolio-heading-container,
+.more-blog-heading-container,
+.skills-heading-container,
+.for-more-heading-container,
+.blogposts-heading-container,
+.tech-heading-container {
+  display: flex;
+  justify-content: center;
+  padding: bottom 25px;
+}
+
+.skills-title,
+.for-more-title,
+.thoughts-about-code-title,
+.tech-section-title,
+.featured-project-title,
+.blog-title,
+.portfolio-title {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 20px;
+  padding: 4px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.portfolio-section {
+  display: flex;
+  padding: 41px 0;
+}
 /* ---------CONTAINER FOR EACH SECTION---------- */
 
 .container {
   width: 65%;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-section:nth-child(2n) {
@@ -21,7 +71,7 @@ body {
 /* ----------------HEADER--------------------- */
 
 .header-container {
-  background-image: url(./Assets/animals-zebra-zebra-crossing-stripes-70376.jpeg);
+  background-image: url(./Assets/pexels-photo-7577858.jpeg);
   background-size: cover;
   height: 520px;
   width: 100%;
@@ -61,6 +111,234 @@ body {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+/* SKILL SECTION  */
+.skills-container {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  padding-top: 25px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+
+.skills-list h2 {
+  font-family: "Roboto", sans-serif;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+  color: var(--primary);
+  width: auto;
+  text-transform: uppercase;
+}
+
+.skills-list ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.skills-list li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* <----------TECH SECTION -----------> */
+.tech-section {
+  height: 330px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-section-text {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  padding-top: 25px;
+}
+
+.red-text {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* FEATURED-PROJECTS-SECTION */
+
+.portfolio-section {
+  background-color: #f4f4f4;
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
+.portfolio-section a {
+  text-decoration: none;
+}
+
+.image-container {
+  position: relative;
+}
+
+.featured-card {
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+.featured-card:hover .overlay {
+  display: none;
+  transition: ease-in-out 0.7s;
+}
+
+.featured-card:hover .text-over-image {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  transition: ease-in-out 0.7s;
+}
+
+.text-over-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary);
+  letter-spacing: 0.07em;
+  font-family: "Sulphur Point", sans-serif;
+}
+
+.text-over-image:hover {
+  color: #dedede;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  transition: 0.5s ease;
+}
+
+.text-container {
+  line-height: 29px;
+  padding: 10px 0 10px 0;
+  color: black;
+}
+.text-container h3 {
+  color: var(--primary);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: left;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.tag-container a {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  text-decoration: none;
+}
+
+.tag-container span {
+  font-family: "Sulphur Point", sans-serif;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  background-color: #dedede;
+  font-size: 13px;
+  width: fit-content;
+  height: fit-content;
+  padding: 1px 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.fab {
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+  font-size: 31px;
+  color: var(--primary);
+}
+
+.fab:hover {
+  color: #056585;
+}
+
+/* <----------FOR MORE SECTION -----------> */
+
+.for-more-social-media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.for-more-social-media-container a {
+  text-decoration: none;
+}
+
+.social-media-card {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-media-card img {
+  width: 60px;
+}
+
+.social-media-card h4 {
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 10px;
+}
+
+/* <----------CONTACT SECTION -----------> */
+
+.contact-section {
+  background-color: blue;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  display: flex;
+  height: 300px;
 }
 
 /* <----------D E S K T O P -----------> */
