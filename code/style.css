@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   font-family: 'Roboto', sans-serif;
+   font-size: 17px;
+  }
+
+.section:nth-child(2n) {
+    background-color: #F4F4F4;
+}
+
+/* Header section */
+/* .header-container {
+    width: 375px;
+} */
+/* .section {
+    width: 100%;
+} */
+
+/* Project section */
+.project-container {
+    width: 327px;
+    margin: 0 auto;
+}
+.section-heading {
+    display: flex;
+    justify-content: center;
+    padding-top: 41px;
+    margin-bottom: 41px;
+}
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #FA382F;
+    text-align: center;
+    padding: 0 4px;
+}
+
+/* Project articles */
+.project-container {
+    display: grid;
+}
+.project-card-container {
+    margin-bottom: 32px;
+}
+.project-image {
+    width: 100%;
+    display: block;
+}
+.project-heading {
+    line-height: 29px;
+    margin-top: 9px;
+}
+.project-image-group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(1, 61, 120, 0.1)
+}
+.image-hidden {
+    display: none;
+}
+.project-title {
+    position: absolute;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+}
+.project-text-group {
+    overflow-wrap: normal;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #FA382F;
+}
+p {
+    line-height: 29px;
+}
+.scriptTags p {
+    display: inline-block;
+    font-size: 9px;
+    background-color: #FDDFE7;
+    text-align: center;
+    padding: 0 4px;
+    margin-right: 3px;
+    line-height: 21px;
+}
+
+/* @media screen and (min-width:768px) {
+    .header-container {
+        width: 1936px;
+    }  
+} */
+@media screen and (min-width:1024px) {
+    /* .header-container {
+        width: 1936px;
+    } */
+    .section {
+        display: grid;
+        justify-content: center;
+    }
+    .image-hidden {
+        display: grid;
+    }
+    .project-container {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 0;
+        width: 800px;
+    }
+    .project-card-container {
+        width: 375px;
+    }
+    .section-title {
+        font-size: 37px;
+    }
+    p {
+        font-size: 22px;
+    }
+    .scriptTags p {
+        font-size: 16px;
+        margin-right: 5px;
+        line-height: 28px;
+        margin-top: 9px;
+    }
+    .project-heading {
+        line-height: 40px;
+        margin-top: 15px;
+    }
+
+
+
+}
