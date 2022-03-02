@@ -4,10 +4,10 @@
 
 :root {
   /* colors */
-  --clr-dark: #414C86;
-  --clr-medium: #B4BBE2;
-  --clr-light: #E8EEFA;
-  --clr-accent: #F6B758;
+  --clr-dark: #FFA7BE;
+  --clr-medium: #B4B4B4;
+  --clr-light: #f6f6f6;
+  --clr-accent: #F3BED5;
   --clr-white: #FFF;
   --clr-black: #111111;
  
@@ -41,20 +41,50 @@ body {
 }
 
 h1 {
-  color: var(--secondary-dark);
-  background-color: (var(--primary-dark));
+  color: var(--clr-black);
+  font-family: 'montserrat' sans-serif;
+  font-weight: 400;
 }
+
+h1.title {
+  margin-bottom: 0.5rem;
+}
+
+h1.title-first {
+  color: var(--clr-medium);
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  line-height: 0.9em;
+}
+
+h1.title-second {
+  font-size: 1.5rem;
+  margin-left: 0.3em;
+  letter-spacing: 1.3px;
+  color: var(--clr-accent);
+}
+
+img.title-icon {
+  max-width: 50px;
+  /* display: inline; */
+}
+
 
 h2 {
   font-family: 'montserrat', sans-serif;
   display: inline-block;
   background: var(--clr-dark);
-  color: var(--clr-white);
+  color: var(--clr-black);
   padding: 0.2em;
   margin: 2em 0;
   align-self: center;
 }
 
+h3 {
+  margin: 2em 0 1em;
+  align-self: center;
+}
 
 h2, 
 h3 {
@@ -82,15 +112,9 @@ h5 {
   display: inline-block;
 }
 
-h3 {
-  margin: 2em 0 1em;
-  align-self: center;
+.heading-overlay {
+  color: var(--clr-white);
 }
-
-h4 {
-  margin-top: 1em;
-}
-
 
 p {
   line-height: 1.7em;
@@ -134,11 +158,14 @@ p {
 /*    Links & icons    */
 /* ------------------- */
 
+a,
+a:active {
+  text-decoration: none;
+}
 
 a.social-link,
 a.social-link:active {
-  color: var(--clr-black);
-  text-decoration: none;  
+  color: var(--clr-black); 
 }
 
 .social-icon {
@@ -152,14 +179,34 @@ a.social-link:active {
 
 /**** Header ****/
 header {
-  background: var(--clr-dark);
-  height: 520px;    
+  background: var(--clr-white);
+  height: 520px;
+  justify-content: space-around;
+}
+
+.social {
+  display: flex;
+  justify-content: end;
+  margin: 2em;
+}
+
+.social-link {
+  margin-left: 0.5em;
+}
+
+.header-container {
+  margin-top: 10vh;
+}
+
+.header-container--second {
+  display: flex;
+  align-items: center;
 }
 
 img.profile-image {
   position: absolute;
   right: 30px;
-  top: 355px;
+  top: 395px;
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -187,11 +234,37 @@ section:nth-child(odd) {
   text-align: center;
 }
 
+
 /**** Projects *****/
-.section-project--image {
-  width: 327px;
-  height: auto;
-  object-fit: contain;
+.image--container {
+  position: relative;
+  aspect-ratio: 16/9;
+  justify-content: center;
+  margin-bottom: 1em;
+} 
+
+.header-overlay {
+ position: absolute;
+ left: 30%;
+}
+
+.img-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #b4b4b469;
+  transition: 0.5s ease;
+}
+
+.img-overlay:hover {
+  background-color: transparent;
+}
+
+.project-image--container:hover h4 {
+  display: none;
 }
 
 .tag-wrapper {
@@ -200,15 +273,22 @@ section:nth-child(odd) {
 }
 
 .tag-wrapper p {
-  color: var(--clr-black);
+  color: var(--clr-dark);
   font-size: 0.7em; 
   line-height: 0.5em;
   padding: 0.75em;
   margin-right: 0.6em;   
   font-weight: 500;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-black);
   text-decoration: none;
 }
+
+.github {
+  background: url(./images/GitHub-tracker.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /**** Thoughts ****/
 .date {
@@ -220,9 +300,13 @@ div.section-thoughts--text {
 }
 
 .skills-container {
+  display: grid;
+}
+/* .skills-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 
@@ -231,7 +315,7 @@ div.section-thoughts--text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /**** For more ****/
 
@@ -273,8 +357,19 @@ footer p {
 
 @media (min-width: 768px) {
 
+  .container {
+    width: 768px; 
+  }
+
   .hidden {
     display:inline-block;
   }
   
+}
+
+@media (min-width: 1100px) {
+
+  .container {
+    width: 1100px;
+  }
 }
