@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  :root {
+    --red: red;
+  }
+
+  p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  h2{
+    display: table;
+    color:#fff;
+    background-color: var(--red);
+    padding: 2px;
+  }
+
+/*---header styles---*/
+.header{
+    background-image: url(/assets/header-image.jpeg);
+    background-size: cover;
+    height: 520px;
+    
+}
+
+.profile-image{
+    width: 180px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -16px;
+    right: 0;
+    border: #fff solid 2px;
+    filter: grayscale(100%);
+}
+
+.some-icons-group{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 48px;
+    right:0;
+}
+
+.some-icon-div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #fff solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.some-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.header-container{
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header-text-group{
+    width: 220px;
+    color:#fff;
+    position: absolute;
+    top:120px;
+}
+
+.header-text{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+}
+.smaller-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+/*---section styles---*/
+section:nth-child(2n){
+    background: #F4F4F4;
+    ;
+}
+
+/*---container styles---*/
+.container{
+    width: 327px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---section 1 (with info text) styles---*/
+.infotext-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.start-figure{
+    width: 55px;
+}
+
+/*---section 2 (with tech info) styles---*/
+.tech-container{
+    gap: 24px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+.tech-text{
+    text-align: center;
+}
+/*---section 3 (features projects) styles---*/
+.featured-projects-text{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.project{
+    padding-bottom: 35px;
+    width: 100%;
+}
+.project-image{
+    width: 100%;
+}
+.project-text-group{
+    font-family: 'Roboto', sans-serif;
+}
+.project-heading{
+    color: var(--red);
+    font-weight: 700;
+}
+.project-languages{
+    display: flex;
+    gap: 8px;
+    font-size: 9px;
+}
+.language-text{
+    background-color: pink;
+    padding: 5px;
+}
+/*---footer styles---*/
+footer{
+    background: #072BCE;
+}
+
+/*---media queries (tablets)---*/
+@media screen and (min-width: 768px){
+    p{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    h2{
+        padding: 4px;
+    }
+    /*---container styles---*/
+    .container{
+        width: 768px;
+    }
+    /*---header styles---*/
+    .header{
+        height: 681px;
+    }
+    .profile-image{
+        width: 333px;
+        bottom: -43px;
+        border: #fff solid 4px;
+    }
+    .some-icons-group{
+        gap: 20px;
+    }
+    .some-icon-div{
+        width: 80px;
+        height: 80px;
+        border: #fff solid 4px;
+    }
+    .some-icon{
+        width: 40px;
+        height: 40px;
+    }
+    .header-text-group{
+        top:206px;
+    }
+    /*---section 1 (with info text) styles---*/
+    .infotext-container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    /*---section 2 (with tech info) styles---*/
+    .tech-container{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    }
+    /*---section 3 (features projects) styles---*/
+    .project-container{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .project{
+        width: 48%;
+    }
+    .featured-projects-text{
+    padding-top: 120px;
+    padding-bottom: 90px;
+    }
+}
+
+/*---media queries (desktops)---*/
+@media screen and (min-width: 1100px){
+    /*---container styles---*/
+    .container{
+        width: 1100px;
+    }
+
+}
