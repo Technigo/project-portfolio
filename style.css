@@ -1,31 +1,80 @@
-body {
-    margin: 0;  
-    padding: 0;
+* {
+    margin: 0;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: 'Montserrat', sans-serif;
-    background-color: lightblue;
+    background-image: url(./assets/header-image-big.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    height: 400px;
 }
 
-.header img {
-    height: 100px;
+.header-container {
+    border: 1px solid green;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-image-container {
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+}
+
+.profile-picture {
+    height: 333px;
+    width: 333px; 
+    border-radius: 50%; 
+    border: 2px solid #fff; 
+}
+
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.section {
+    padding: 10px;
+    text-align: center;
+}
+
+.section h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #FA382F;
 }
 
 .section:nth-child(2n) {
+    background-color: #fff;
+}
+.section:nth-child(2n + 1) {
     background-color: #f4f4f4;
 }
 
-.section:nth-child(2n + 1) {
-    background-color: #fff;
+.for-more-logos {
+    padding: 30px;
 }
 
 .footer {
-    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #072BCE;
+}
+
+.footer h4 {
+    text-transform: uppercase;
 }
