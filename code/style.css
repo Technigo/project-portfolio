@@ -4,14 +4,42 @@ body{
     font-family: 'Press Start 2P', cursive;
     font-family: 'Roboto', sans-serif;   */
 }
-section:nth-child( 2n){
+section:nth-child(2n){
     background-color: #F4F4F4;
 }
 
+/* container setts the width and margin of the entire page */
 .container{
     width: 375px;
     margin: 0 auto;
 }
+
+/* content-box centers the content and acts only like a flex parent */
+.content-box{
+    display: flex;
+    justify-content: center;
+}
+
+/* content wrapper is what surrounds the content and is used as the contents parent */
+.content-wrapper {
+    border: solid;
+    width: 327px;
+}
+.hidden-in-mobileview{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     height: 302px;
@@ -34,9 +62,8 @@ footer{
 
 .footer-text-wrapper p {
     margin: 0;
-    font-family: 'montserrat';
-    font-weight: 400px;
-    font-size: 21px;
+    font-family:'montserrat';
+    font-size: 17px;
     line-height: 25px;
     text-align: center;
 } 
@@ -46,15 +73,27 @@ footer{
    .container{ 
     width: 768px;
     }
+   
+    .content-wrapper{
+        width: 600px;
+    }
 
     footer{
         height: 507px;
+    }
+
+    .hidden-in-mobileview{
+        display: contents;
     }
 }
 /* ----------FOR SCREEEN------------------- */
 @media screen and (min-width: 1200px) {
     .container{
         width: 1200px;
+    }
+
+    .content-wrapper{
+        width: 1100px;
     }
     
 }
