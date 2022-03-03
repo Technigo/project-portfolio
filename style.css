@@ -22,7 +22,8 @@ header {
     height: 520px;
     background-size: cover;
     color: #fff;
-    background-image: url(https://media4.giphy.com/media/3og0ISzBpn0nNJE3Ac/giphy.gif);
+    /* background-image: url(https://media4.giphy.com/media/3og0ISzBpn0nNJE3Ac/giphy.gif); */
+    background-image: url(./assets/pexels-nick-collins-1293125.jpg)
 }
 
 h1 {
@@ -74,16 +75,16 @@ header p {
     gap: 50px;
 }
 
-.header-icon-big-container {
+/* .header-icon-big-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
+} */
 
 .header-icon-container {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
+    /* display: flex; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     /* justify-items: center; */
 }
 
@@ -355,7 +356,23 @@ header p {
     /* line-height: 29px; */
 }
 
-.icon-color {
+.icon-border {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    margin: 5px;
+}
+
+.header-icon-border {
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-color,
+.header-icon {
     width: 50%;
 }
 
@@ -363,16 +380,10 @@ header p {
     display: none;
 }
 
-
 .icon-color-border {
     border: 2px solid var(--primary);
-    border-radius: 50%;
     width: 60px;
     height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s ease;
 }
 
 .for-more-icon-container {
@@ -387,8 +398,8 @@ header p {
     justify-items: center;
 }
 
-.icon-color-border:hover {
-    opacity: .7;
+.icon-border:hover {
+    opacity: .8;
 }
 
 .contact-header {
@@ -402,9 +413,7 @@ header p {
     }
 
     .profile-img {
-        top: 378px;
-        /* width: 300px;
-        height: 300px; */
+        top: 350px;
     }
 
     .other-projects-img-container {
@@ -442,6 +451,10 @@ header p {
 @media screen and (min-width: 1100px) {
     .container {
         width: 1100px;
+    }
+
+    .profile-img {
+        top: 378px;
     }
 
     .featured-projects-section {
