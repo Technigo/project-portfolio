@@ -112,12 +112,9 @@ h5 {
 
 h4.header-overlay {
   color: var(--clr-white);
+  background-color: var(--clr-black);
   font-size: clamp(0.8rem, 2.5vw + 0.4rem, 1.5rem);
 }
-
-/* h4.header-overlay:hover {
-  color: transparent;
-} */
 
 p {
   line-height: 1.7em;
@@ -156,7 +153,7 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #332222a8;
+  background-color: #dadadaa8;
   transition: 0.5s ease;
 }
 
@@ -301,6 +298,9 @@ section:nth-child(odd) {
   background: var(--clr-light);
 }
 
+article {
+  padding-bottom: 2em;
+}
 
 /**** Intro ****/
 .section-intro p {
@@ -468,6 +468,21 @@ footer p {
     gap: 2em;
   }
   
+  .container-project,
+  .section-project--text {
+    width: 48%;
+  }
+
+  .project-container {
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .project-.container.reverse {
+    flex-direction: row-reverse;
+    gap: 2em;
+  }
+
   .skills-container {
     gap: 4em;
     grid-template-columns: repeat(3, 1fr);  
