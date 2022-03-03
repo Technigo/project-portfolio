@@ -43,6 +43,7 @@ body {
   display: inline-block;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
 }
 
 .portfolio-section {
@@ -77,6 +78,10 @@ body {
   width: 100%;
 }
 
+.needle {
+  width: 55px;
+  height: 11px;
+}
 .header-info {
   display: flex;
   flex-direction: column;
@@ -133,7 +138,6 @@ body {
 
 .skills-list h2 {
   font-family: "Roboto", sans-serif;
-
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -196,7 +200,7 @@ body {
 }
 
 .featured-card {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   box-sizing: border-box;
 }
 .featured-card:hover .overlay {
@@ -215,7 +219,6 @@ body {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
-  border-radius: 20px;
   transition: ease-in-out 0.7s;
 }
 
@@ -242,8 +245,9 @@ body {
 .image {
   width: 100%;
   display: block;
-  border-radius: 20px;
   transition: 0.5s ease;
+  width: 327px;
+  height: 212px;
 }
 
 .text-container {
@@ -285,18 +289,133 @@ body {
   letter-spacing: 1px;
 }
 
-.fab {
+.litlebox {
+  background-color: #fddfe7;
+  font-size: 9px;
+  padding: 0 4px;
+  margin: 0 10px 0 0;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 9px;
+}
+
+.project-text {
+  color: #000;
+}
+
+/* OTHER-PROJECTS-SECTION */
+
+.other-projects a {
+  margin: 5px 0px;
+  text-decoration: none;
+}
+
+.other-projects article a p {
+  line-height: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  color: black;
+}
+
+.other-projects article a p:hover {
+  text-decoration: underline;
+}
+
+.other-projects {
+  background-color: #f4f4f4;
+  padding-bottom: 41px;
+}
+
+.other-project-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: var(--primary);
+  display: block;
+  align-self: flex-end;
+  text-transform: uppercase;
+}
+
+.project-title {
+  color: var(--primary);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: left;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.red {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.other-project-tags p {
+  line-height: 10px;
+  padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.other-project-tags a {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  text-decoration: none;
+}
+
+.other-project-tags span {
+  font-family: "Roboto", sans-serif;
+  background-color: #dedede;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: "Sulphur Point", sans-serif;
+  width: fit-content;
+  height: fit-content;
+  padding: 1px 5px;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.other-project-tags {
   justify-content: center;
   align-content: center;
-  margin-top: 10px;
-  font-size: 31px;
+  margin: 3px 0 5px 0;
+  font-size: 25px;
   color: var(--primary);
 }
 
-.fab:hover {
+.other-project-tags {
   color: #056585;
 }
 
+.otherimage {
+  width: 100%;
+  display: block;
+  width: 327px;
+  height: 212px;
+}
+
+.redspan {
+  color: var(--primary);
+}
+
+.moreThougts-header {
+  color: var(--primary);
+  align-items: center;
+  font-size: 21px;
+}
 /* <----------FOR MORE SECTION -----------> */
 
 .for-more-social-media-container {
@@ -341,7 +460,7 @@ body {
   height: 300px;
 }
 
-/* <----------D E S K T O P -----------> */
+/* <----------D E S K T O P ----------> */
 
 @media screen and (min-width: 768px) {
   .container {
