@@ -1,18 +1,226 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    
+  }
 
 
+  body {
+      cursor: default;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 29px;
+    
+    
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  a:hover {
+      font-weight: bold;
+  }
+
+/* ------- HEADER ------- */
+
+.header {
+    background-image: url('./field.jpg');
+    background-size: cover;
+    background-position-y: 30%; 
+    background-repeat: no-repeat;
+	width: 100%;
+    height: 520px;
+    position: relative;
 }
 
-.header-pic {
-    height: 300px;
+
+.header-text h1 {
+    font-size: 1,25em;
 }
 
+.header-text h2 {
+    font-size: 2,25em;
+}
+
+.header-text h3 {
+    font-size: 1.5em;
+}
+
+
+.header-text {
+    position: absolute;
+    top: 20%;
+    color: white;
+    
+}
+
+.profile-pic {
+    background-image: url('./pic_Lovisa_Brorson.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    border: 3px yellow solid;
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    bottom: -5%;
+    right: 15%;
+    margin: 0;
+}
+
+
+
+/* ------- FROM PRESENTATION AND DOWN ------ */
+
+.main-section {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.line {
+    border: 1px solid darkblue;
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: darkblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.presentation-section {
+    margin-top: 49px;
+    margin-bottom: 43px;
+}
+
+.tech-section {
+    text-align: center;
+    margin-top: 91px;
+    margin-bottom: 33px;
+}
+
+.project {
+    margin-top: 40px;
+    margin-bottom: 40px;   
+}
+
+
+.tech-section-header,
+.featured-section-header,
+.other-projects-header,
+.my-thoughts-header,
+.skills-section-header,
+.for-more-header {
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    display: inline;
+    margin: 24px;
+}
+
+.more-thoughts-header {
+    color: blue;
+    font-weight: bolder;
+}
+
+.featured-section {
+    text-align: center;
+}
+
+.other-projects-section {
+    text-align: center;
+}
+
+
+.thoughts-section {
+    text-align: center;
+}
+
+.skills-section {
+    text-align: center;
+    
+    
+}
+
+.skills-section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+    margin-top: 40px;
+
+    
+}
+
+.header-blue{
+    color: blue;
+    font-weight: bolder;
+    
+}
 
 .project-picture {
-height: 300px;
+height: auto;
+width: 300px;
+margin-bottom: 30px;
 
+}
+
+.my-thoughts {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .my-thoughts-picture {
     height: 300px;
+    margin-bottom: 30px;
 }
+
+.more-information {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.contact {
+    
+    background-color: rgb(247, 247, 84);
+   
+   
+}
+
+.contact-info {
+    margin-top: 60px;
+    margin-bottom: 84px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  
+}
+
+footer {
+    height: 300px;
+}
+
+/* ------- TABLET AND LAPTOP -------*/
+@media (min-width:667px) {
+	
+
+    .project:nth-child(2n) {
+        background-color: lightskyblue;
+        margin: 0;
+    }
+    
+
+}
+
