@@ -127,7 +127,8 @@ p {
 /*       Images        */
 /* ------------------- */
 
-.image-container {
+.image-container--project,
+.image-container--thoughts {
   position: relative;
   justify-content: center;
   margin-bottom: 1em;
@@ -136,7 +137,7 @@ p {
 
 .project-image,
 .thoughts-image {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .header-overlay {
@@ -164,7 +165,6 @@ p {
   opacity: 0%;
   transition: 0.5s ease;
 }
-
 
 /* --------------------------- */
 /*  Reusable styling elements  */
@@ -198,26 +198,49 @@ p {
   display: none;
 }
 
-
 /* ------------------- */
 /*    Links & icons    */
 /* ------------------- */
 
 a,
 a:active {
-  text-decoration: none;
   font-family: 'roboto', sans-serif;
+  color: var(--clr-black)
 }
 
+/* a.underline-link,
+a.underline-link:active {
+  text-decoration: solid;
+} */
+
+
 a.social-link,
-a.social-link:active {
-  color: var(--clr-black); 
+a.project-link,
+a.social-link:active,
+a.project-link:active {
+  color: var(--clr-black);
+  text-decoration: none; 
+}
+
+a:hover,
+a:focus {
+  color: var(--clr-black);
+  text-decoration: none;
+}
+
+a.social-link:hover,
+a.project-link:hover,
+a.social-link:focus,
+a.project-link:focus {
+  color: var(--clr-dark)
 }
 
 .social-icon {
   width: 30px;
   height: 30px;
 }
+
+
 
 /* ------------------- */
 /*   General styling   */
@@ -226,7 +249,7 @@ a.social-link:active {
 /**** Header ****/
 header {
   background: var(--clr-white);
-  min-height: 520px;
+  height: 45vh;
   justify-content: space-around;
 }
 
@@ -266,7 +289,7 @@ header {
 img.profile-image {
   position: absolute;
   right: 30px;
-  top: 525px;
+  top: 52vh;
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -302,7 +325,7 @@ section:nth-child(odd) {
 }
 
 .tag-wrapper p {
-  color: var(--clr-dark);
+  color: var(--clr-white);
   font-size: 0.7em; 
   line-height: 0.5em;
   padding: 0.75em;
@@ -312,15 +335,30 @@ section:nth-child(odd) {
   text-decoration: none;
 }
 
+.other-projects{
+  background-color: var(--clr-white);
+  margin-top: 2em;
+}
 
-/**** Thoughts ****/
+
+.other-projects--container p {
+  display: inline;
+}
+
+/* .underline-container {
+  text-decoration: ;
+} */
+
 .date {
   color: var(--clr-dark);
 }
 
 div.section-thoughts--text {
-  margin-top: 1em;
+  margin-top: 0.5em;
+  padding-bottom: 2em;
 }
+
+/**** Thoughts ****/
 
 .skills-container {
   display: grid;
@@ -411,19 +449,17 @@ footer p {
     font-size: ;
   }
   
-  .section-intro p,
-  .section-tech p
-  {
-    font-size: 25px;
-  }
-
   .header-container {
     margin-top: 20vh;
   }
 
+  .container {
+    width: 768px; 
+  }
+
   img.profile-image {
     right: 30px;
-    top: 475px;
+    top: 47vh;
     width: 250px;
     height: 250px;
   }
@@ -438,14 +474,24 @@ footer p {
     border-bottom: 1px solid var(--clr-black);
     display: block;
   }
-  
-  .container {
-    width: 768px; 
+
+  .image-container--thoughts {
+  width: 48%;
+  }
+
+  .section-thoughts--text {
+    width: 48%;
   }
   
-  /* .project-image {
-    width: 523px;
-  }  */
+  .thoughts-container {
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .thoughts-container.reverse {
+    flex-direction: row-reverse;
+    gap: 2em;
+  }
   
   .skills-container {
     gap: 4em;
@@ -454,7 +500,7 @@ footer p {
   
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   
   * {
     font-size: 25px;
@@ -472,22 +518,37 @@ footer p {
     font-size: 28px;
   }
  
-  .section-intro p,
-  .section-tech p
-  {
-    font-size: 30px;
+  header {
+    height: 35vh;
   }
 
-  h2,
-  .hidden {
-    font-size: 42px;
+  /* .header-container {
+    padding-left: 20vw;
+  } */
+
+  .title,
+  .title > span {
+    font-size: 1.15rem;
   }
   
+  h1.title-first {
+    font-size: 3.75rem;
+  }
+
+  h1.title-second {
+    font-size: 2rem;
+  }
+
+
   img.profile-image {
     right: 30px;
-    top: 400px;
+    top: 30vh;
     width: 330px;
     height: 330px;
+  }
+
+  .social {
+    margin: 2em 2.5em;
   }
   
   .social-icon {
@@ -496,7 +557,19 @@ footer p {
   }
   
   .container {
-    width: 1100px;
+    width: 1200px;
+  }
+  
+  .section-intro p,
+  .section-tech span,
+  .section-tech p
+  {
+    font-size: 28px;
+  }
+
+  h2,
+  .hidden {
+    font-size: 42px;
   }
 
   .hidden {
