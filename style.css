@@ -19,7 +19,7 @@ body {
 }
 
 .section:nth-child(2n) {
-    background: rgba(244, 244, 244, 1); /* Ändra till 0.3 */
+    background: rgba(244, 244, 244, 0.5); /* Ändra till 0.3 */
 
 }
 
@@ -48,6 +48,7 @@ body {
     width: 100vw;
     background-position: 70%;
     z-index: -1;
+    overflow: hidden;
 }
 
 .header-links {
@@ -151,14 +152,22 @@ body {
     margin: 40px 24px 9px 24px;
 }
 
-.image-title {
+.project-overlay:hover {
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease-in 0.4s;
+}
+
+.repo-title {
     position: absolute;
     /* margin: 82px 44.68px 83px 46px; */
-    
-    top:82px;
-    right: 44.66px;
+    color: white;
+    top:42px;
     left: 46px;
     bottom: 83px;
+    width: 236px;
+    font-size: 28px;
+    text-align: center;
 
 }
 
@@ -595,10 +604,6 @@ body {
 
     .other-projects {
         font-size: 31px;
-    }
-
-    .other-project-section {
-        margin: 0 200px;
     }
 
     .my-thoughts {
