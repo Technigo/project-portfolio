@@ -1,21 +1,63 @@
+:root {
+  /* --secondary: #e1622e; */
+  --secondary: #4f9380;
+  --main: #20363f;
+}
+
+/* font-family: 'Montserrat', sans-serif */
+/* font-family: 'Roboto', sans-serif; */
+
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 }
 
-h2, h3 {
+h2 {
+	color: #fff;
+	background-color: var(--main);
+	text-align: center;
+	display: table; /* keep the background color wrapped tight */
+	margin: 0 auto;
+	padding: 2px 7px;
 	text-transform: uppercase;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: var(--main);
+	font-size: 17px;
+	line-height: 29px;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	margin: 10px auto;
+}
+
+h4 {
+	color: var(--main);
+	background-color: transparent;
+	font-size: 21px;
+	line-height: 25px;
+	text-align: center;
+	margin: 40px auto 24px auto;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 17px;
+	line-height: 29px;
 }
 
 header {
 	color: #FFF;
-	background-color: #FA382F;
+	background-color: var(--main);
 }
 
 footer {
 	color: #FFF;
-	background-color: #072BCE;
+	background-color: var(--main);
 }
 
 .section:nth-child(2n) {
@@ -24,23 +66,101 @@ footer {
 
 .container {
 	width: 375px;
-	margin: 0 auto;
-	/* border: 1px solid black; */
+	margin: 0px auto;
+	box-sizing: border-box;
+	padding: 40px 24px;
 }
 
-.intro-group {
-	padding: 46px 24px;
+
+/* ------------------ HEADER ------------------ */
+
+.header {
+	background-image: url("./assets/lights2.jpg");
+	background-size: cover;
+	background-position: 60%;
+	height: 520px;
+	position: relative;
 }
 
-.intro-text {
-	font-size: 17px;
+.header-container {
+	height: 100%;
+}
+
+.header-image {
+	width: 180px;
+	border-radius: 50%;
+	border: 2px solid white;
+	position: absolute;
+	right: 24px;
+	bottom: -16px;
+}
+
+.header-text-group {
+	position: absolute;
+	width: 220px;
+	top: 121px;
+	left: 24px;
+} 
+
+.header-portfolio {
+	font-size: 13px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 18px;
+}
+
+.header-name {
+	font-weight: 700;
+}
+
+.header-title {
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0;
+	line-height: 49px;
+}
+
+.header-title-extra {
+	text-align: left;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+
+/* ------------------ INTRO ------------------ */
+
+.intro-line {
+	border: 1px solid var(--main);
+	width: 40px;
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
+.intro-dot {
+	height: 10px;
+	width: 10px;
+	background-color: var(--main);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+/* ------------------ TECH ------------------ */
+
+.tech-text {
+	text-align: center;
+	margin-top: 24px;
+}
+
+/* ------------------ PROJECTS ------------------ */
+
+.project {
+	margin-top: 32px;
 }
 
 .project-image-group {
 	position: relative;
 	display: flex;
 	justify-content: center;
-
 }
 
 .project-overlay {
@@ -60,8 +180,42 @@ footer {
 	position: absolute;
 	align-self: center;
 	color: #fff;
+	background-color: transparent;
 	font-weight: 700;
+	margin: 0;
 }
+
+.project-description {
+	font-family: 'Roboto', sans-serif;
+	margin: 7px auto;
+}
+
+.project-tag-group {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.project-tag {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 12px;
+	padding: 5px;
+	background-color: var(--secondary);
+}
+
+.project-other {
+	margin-top: 24px;
+}
+
+.project-image-group:hover .project-overlay, .project-image-group:hover .project-title {
+	display: none;
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
 
 @media screen and (min-width: 768px) {
 	.container {
