@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -33,10 +34,8 @@ body {
     left: 18px;
   }
 
-.top {
-    display: flex;
-    flex-direction: column;
-       
+.container p {
+    color: red;
 }
 
 .picture {    
@@ -46,18 +45,87 @@ body {
 .description {
     margin: 40px;
     font-size:xx-large ;
+    
 }
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading .line-box-html {
+    margin: 40px;
+    width: 100%;
+    border: 2px solid #e34c26  ;
+    border-radius: 20px;
+    
+}
+
+.loading .line-box-html .line-html {
+    height: 20px;
+    border-radius: 20px;
+    background: #e34c26 ;
+    width: 65%;
+    margin: 1px;
+    text-align: center;
+    
+}
+
+.loading .line-box-css {
+    margin: 40px;
+    width: 100%;
+    border: 2px solid #563d7c  ;
+    border-radius: 20px;
+    
+}
+
+.loading .line-box-css .line-css {
+    height: 20px;
+    border-radius: 20px;
+    background: #563d7c ;
+    width: 49%;
+    margin: 1px;
+    text-align: center;
+}
+
+
+.loading .line-box-js {
+    margin: 40px;
+    width: 100%;
+    border: 2px solid #f1e05a  ;
+    border-radius: 20px;
+    
+}
+
+.loading .line-box-js .line-js {
+    height: 20px;
+    border-radius: 20px;
+    background: #f1e05a ;
+    width: 16%;
+    margin: 1px;
+    text-align: center;
+}
+
+
+
+
 
 @media screen and (min-width:1020px) {
     .top {
         display: grid;
         grid-template-columns: repeat(2, 1fr)
     }
-
-    .header img {
-        margin: 16px; 
-          
-      }
 
     .header .white {
         display: none;
