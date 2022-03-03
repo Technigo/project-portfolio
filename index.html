@@ -27,10 +27,12 @@
         <li class="social-item"><i class="fab fa-github"></i></li>
         <li class="social-item"><i class="fab fa-stack-overflow"></i></li>
       </ul>
-      <div class="header-title">
-        <h3 class="title-name">PORTFOLIO: Jiiin Cho</h3>
-        <h1 class="title">frontend developer</h1>
-        <h2 class="title-plus">+ digital designer</h2>
+      <div class="header-title-container">
+        <p class="header-title-name">
+          PORTFOLIO: <span class="title-name-bold">Jiiin Cho</span>
+        </p>
+        <h1 class="header-title">frontend developer</h1>
+        <h3 class="header-title-plus">+ digital designer</h3>
       </div>
       <img
         src="./assets/profile-avatar.png"
@@ -39,213 +41,253 @@
       />
     </header>
 
-    <article class="aboutme">
-      Hello! I'm a strategic and creative senior art director/digital designer
-      with frontend developer skills and experience design at &lt;3. I'm all
-      about solving problems that matter and creating awesome, meaningful
-      products for people to love.
-    </article>
-
-    <article class="tech">
-      <h4 class="tech-title">TECH</h4>
-      <p class="tech-detail">
-        HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
-        Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
-        pair-programming, Github.
-      </p>
-    </article>
-
-    <section class="featured">
-      <h4 class="tech-title">TECH</h4>
-      <a href="http://" class="featured-img-container">
-        <img src="./assets/pizza.jpg" alt="pizza" class="featured" />
-        <h3 class="featured-title">PIZZA BOT</h3>
-      </a>
-      <p class="featured-title">CHAT BOT BUILT IN JAVASCRIPT.</p>
-      <p class="featured-description">
-        Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.
-      </p>
-      <ul class="featured-spec">
-        <li class="spec-item">HTML5</li>
-        <li class="spec-item">CSS3</li>
-        <li class="spec-item">Javascript ES6</li>
-      </ul>
-    </section>
-
-    <section class="featured">
-      <h4 class="featured-title">TECH</h4>
-      <!-- project 1 -->
-      <article class="featured-card">
-        <a href="http://" class="featured-img-container">
-          <img src="./assets/pizza.jpg" alt="pizza" class="featured" />
-          <h3 class="featured-title">PIZZA BOT</h3>
-        </a>
-        <p class="featured-subtitle">CHAT BOT BUILT IN JAVASCRIPT.</p>
-        <p class="featured-description">
-          Responsive web site using HTML, CSS and JavaScript ES6 for pizza
-          orders.
+    <main class="main">
+      <!-- about me -->
+      <article class="aboutme">
+        <p class="aboutme-description">
+          <img
+            src="./assets/start-figure.png"
+            alt="start figure"
+            class="aboutme-start"
+          />
+          Hello! I'm a strategic and creative senior art director/digital
+          designer with frontend developer skills and experience design at
+          &lt;3. <br />
+          I'm all about solving problems that matter and creating awesome,
+          meaningful products for people to love.
         </p>
-        <ul class="featured-spec">
-          <li class="spec-item">HTML5</li>
-          <li class="spec-item">CSS3</li>
-          <li class="spec-item">Javascript ES6</li>
-        </ul>
       </article>
-      <!-- project 2 -->
-      <article class="featured-card">
-        <a href="http://" class="featured-img-container">
-          <img src="./assets/pizza.jpg" alt="pizza" class="featured" />
-          <h3 class="featured-title">PIZZA BOT</h3>
-        </a>
-        <p class="featured-subtitle">CHAT BOT BUILT IN JAVASCRIPT.</p>
-        <p class="featured-description">
-          Responsive web site using HTML, CSS and JavaScript ES6 for pizza
-          orders.
+
+      <!-- tech -->
+      <section class="section">
+        <div class="section-title-container">
+          <h4 class="section-title">TECH</h4>
+        </div>
+        <p class="tech-detail">
+          HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
+          Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
+          pair-programming, Github.
         </p>
-        <ul class="featured-spec">
-          <li class="spec-item">HTML5</li>
-          <li class="spec-item">CSS3</li>
-          <li class="spec-item">Javascript ES6</li>
-        </ul>
-      </article>
-      <!-- project 3 -->
-      <article class="featured-card">
+      </section>
+
+      <!-- featured -->
+      <section class="section">
+        <div class="section-title-container">
+          <h4 class="section-title">FEATURED PROJECTS</h4>
+        </div>
+
+        <!-- featured-article 1 -->
+        <article class="featured-article">
+          <div href="http://" class="featured-img-container">
+            <img src="./assets/pizza.jpg" alt="pizza" class="featured-img" />
+            <div class="featured-title-container">
+              <h2 class="featured-title">PIZZA BOT</h2>
+            </div>
+          </div>
+          <p class="featured-description">
+            <span class="featured-subtitle"
+              >"CHAT BOT BUILT IN JAVASCRIPT.</span
+            >
+            Responsive web site using HTML, CSS and JavaScript ES6 for pizza
+            orders.
+          </p>
+          <ul class="featured-spec">
+            <li class="spec-item">HTML5</li>
+            <li class="spec-item">CSS3</li>
+            <li class="spec-item">Javascript ES6</li>
+          </ul>
+        </article>
+
+        <!-- featured-article 2 -->
+        <article class="featured-article">
+          <div href="http://" class="featured-img-container">
+            <img src="./assets/pizza.jpg" alt="pizza" class="featured-img" />
+            <div class="featured-title-container">
+              <h2 class="featured-title">PIZZA BOT</h2>
+            </div>
+          </div>
+          <p class="featured-description">
+            <span class="featured-subtitle"
+              >"CHAT BOT BUILT IN JAVASCRIPT.</span
+            >
+            Responsive web site using HTML, CSS and JavaScript ES6 for pizza
+            orders.
+          </p>
+          <ul class="featured-spec">
+            <li class="spec-item">HTML5</li>
+            <li class="spec-item">CSS3</li>
+            <li class="spec-item">Javascript ES6</li>
+          </ul>
+        </article>
+
+        <!-- featured-article 3 -->
         <h4 class="featured-others">OTHER PROJECTS</h4>
-        <p class="featured-subtitle">WEATHER APP.</p>
-        <p class="featured-description">
-          Responsive web site using HTML, CSS and JavaScript ES6 for pizza
-          orders. <a href="" class="links">>></a>
-        </p>
-        <ul class="featured-spec">
-          <li class="spec-item">HTML5</li>
-          <li class="spec-item">CSS3</li>
-          <li class="spec-item">Javascript ES6</li>
-        </ul>
-      </article>
-      <!-- project 4 -->
-      <article class="featured-card">
-        <h4 class="featured-others">OTHER PROJECTS</h4>
-        <p class="featured-subtitle">WEATHER APP.</p>
-        <p class="featured-description">
-          Responsive web site using HTML, CSS and JavaScript ES6 for pizza
-          orders. <a href="" class="links">>></a>
-        </p>
-        <ul class="featured-spec">
-          <li class="spec-item">HTML5</li>
-          <li class="spec-item">CSS3</li>
-          <li class="spec-item">Javascript ES6</li>
-        </ul>
-      </article>
-    </section>
+        <article class="featured-article">
+          <p class="featured-description">
+            <span class="featured-subtitle">WEATHER APP.</span>
+            Responsive web site using HTML, CSS and JavaScript ES6 for pizza
+            orders.<a href="" class="links"> >></a>
+          </p>
+          <ul class="featured-spec">
+            <li class="spec-item">HTML5</li>
+            <li class="spec-item">CSS3</li>
+            <li class="spec-item">Javascript ES6</li>
+          </ul>
+        </article>
 
-    <section class="thoughts">
-      <h4 class="featured-title">MY THOUGHTS</h4>
-      <img src="./assets/coding.jpg" alt="coding" class="thoughts-img" />
+        <!-- featured-article 4 -->
+        <article class="featured-article">
+          <p class="featured-description">
+            <span class="featured-subtitle">WEATHER APP.</span>
+            Responsive web site using HTML, CSS and JavaScript ES6 for pizza
+            orders.<a href="" class="links"> >></a>
+          </p>
+          <ul class="featured-spec">
+            <li class="spec-item">HTML5</li>
+            <li class="spec-item">CSS3</li>
+            <li class="spec-item">Javascript ES6</li>
+          </ul>
+        </article>
+      </section>
 
-      <p class="thoughts-date">DEC 2019</p>
-      <p class="thoughts-title">
-        How to stop being scared: Learning to love code
-      </p>
-      <p class="thoughts-article">
-        Writing code is less about “just working”. Instead, it's much more about
-        creativity. It's similar to creative writing in that the author
-        architecting a story must use an assortment of tools and components
-        (i.e., content) in a way to satisfy a particular objective.
-        <a href="" class="links">>></a>
-      </p>
-
-      <h4 class="featured-title">MORE THOUGHTS</h4>
-      <!-- more thoughts 1  -->
-      <a href="" class="thoughts-link">
-        <p class="thoughts-date">SEP 2019</p>
-        <p class="thoughts-title">
-          5 Apps that will make coding easier. <a href="" class="links">>></a>
-        </p>
-      </a>
-      <!-- more thoughts 2  -->
-      <a href="" class="thoughts-link">
-        <p class="thoughts-date">SEP 2019</p>
-        <p class="thoughts-title">
-          5 Apps that will make coding easier. <a href="" class="links">>></a>
-        </p>
-      </a>
-      <!-- more thoughts 3  -->
-      <a href="" class="thoughts-link">
-        <p class="thoughts-date">SEP 2019</p>
-        <p class="thoughts-title">
-          5 Apps that will make coding easier. <a href="" class="links">>></a>
-        </p>
-      </a>
-    </section>
-
-    <section class="skills">
-      <div class="skills-container">
-        <h4 class="skills-title">CODE</h4>
-        <p class="skills-spec">HTML5</p>
-        <p class="skills-spec">CSS3</p>
-        <p class="skills-spec">JavaScript ES6</p>
-        <p class="skills-spec">React</p>
-        <p class="skills-spec">Styled Components</p>
-        <p class="skills-spec">GitHub</p>
-      </div>
-      <div class="skills-container">
-        <h4 class="skills-title">TOOLBOX</h4>
-        <p class="skills-spec">Atom</p>
-        <p class="skills-spec">Postman</p>
-        <p class="skills-spec">Adobe Photoshop</p>
-        <p class="skills-spec">Adobe illustrator</p>
-        <p class="skills-spec">Figma</p>
-        <p class="skills-spec">Keynote</p>
-        <p class="skills-spec">Slack</p>
-      </div>
-      <div class="skills-container">
-        <h4 class="skills-title">UPCOMING</h4>
-        <p class="skills-spec">Redux</p>
-        <p class="skills-spec">Node.js</p>
-      </div>
-      <div class="skills-container">
-        <h4 class="skills-title">MORE</h4>
-        <p class="skills-spec">Design Lead</p>
-        <p class="skills-spec">Branding</p>
-        <p class="skills-spec">Strategy</p>
-        <p class="skills-spec">Process design</p>
-        <p class="skills-spec">Concept development</p>
-        <p class="skills-spec">Agile methodology</p>
-        <p class="skills-spec">Hyper Island toolbox</p>
-      </div>
-    </section>
-
-    <section class="social">
-      <h4 class="social">FOR MORE</h4>
-      <!-- icon 1 -->
-      <div class="social-container">
-        <div class="social-icon-container">
-          <i class="fab fa-linkedin-in"></i>
+      <!-- thoughts -->
+      <section class="section">
+        <div class="section-title-container">
+          <h4 class="section-title">MY THOUGHTS</h4>
         </div>
-        <p class="socia-icon-title">LINKEDIN</p>
-      </div>
-      <!-- icon 2 -->
-      <div class="social-container">
-        <div class="social-icon-container">
-          <i class="fab fa-github"></i>
+        <div class="thoughts-img-container">
+          <img src="./assets/coding.jpg" alt="coding" class="thoughts-img" />
         </div>
-        <p class="socia-icon-title">GITHUB</p>
-      </div>
-      <!-- icon 3 -->
-      <div class="social-container">
-        <div class="social-icon-container">
-          <i class="fab fa-stack-overflow"></i>
-        </div>
-        <p class="socia-icon-title">STACK OVERFLOW</p>
-      </div>
-    </section>
+        <!-- thoughts - 1 -->
+        <article class="thoughts-article">
+          <p class="thoughts-date">DEC 2019</p>
+          <h4 class="thoughts-title">
+            How to stop being scared: Learning to love code
+          </h4>
+          <p class="thoughts-description">
+            Writing code is less about “just working”. Instead, it's much more
+            about creativity. It's similar to creative writing in that the
+            author architecting a story must use an assortment of tools and
+            components (i.e., content) in a way to satisfy a particular
+            objective.
+            <a href="" class="links">>></a>
+          </p>
+        </article>
 
+        <h4 class="thoughts-more-title">MORE THOUGHTS</h4>
+        <!-- more thoughts 1  -->
+        <a href="" class="more-link">
+          <p class="more-detail">
+            <span class="more-date">SEP 2019.</span>
+            <span class="more-title">
+              5 Apps that will make coding easier.
+              <span class="links"> >></span>
+            </span>
+          </p>
+        </a>
+        <!-- more thoughts 2  -->
+        <a href="" class="more-link">
+          <p class="more-detail">
+            <span class="more-date">SEP 2019.</span>
+            <span class="more-title">
+              5 Apps that will make coding easier.
+              <span class="links"> >></span>
+            </span>
+          </p>
+        </a>
+        <!-- more thoughts 3  -->
+        <a href="" class="more-link">
+          <p class="more-detail">
+            <span class="more-date">SEP 2019.</span>
+            <span class="more-title">
+              5 Apps that will make coding easier.
+              <span class="links"> >></span>
+            </span>
+          </p>
+        </a>
+      </section>
+
+      <!-- skills -->
+      <section class="section">
+        <div class="section-title-container">
+          <h4 class="section-title">SKILLS</h4>
+        </div>
+        <div class="skills">
+          <div class="skills-container">
+            <p class="skills-title">CODE</p>
+            <p class="skills-spec">HTML5</p>
+            <p class="skills-spec">CSS3</p>
+            <p class="skills-spec">JavaScript ES6</p>
+            <p class="skills-spec">React</p>
+            <p class="skills-spec">Styled Components</p>
+            <p class="skills-spec">GitHub</p>
+          </div>
+          <div class="skills-container">
+            <p class="skills-title">TOOLBOX</p>
+            <p class="skills-spec">Atom</p>
+            <p class="skills-spec">Postman</p>
+            <p class="skills-spec">Adobe Photoshop</p>
+            <p class="skills-spec">Adobe illustrator</p>
+            <p class="skills-spec">Figma</p>
+            <p class="skills-spec">Keynote</p>
+            <p class="skills-spec">Slack</p>
+          </div>
+          <div class="skills-container">
+            <p class="skills-title">UPCOMING</p>
+            <p class="skills-spec">Redux</p>
+            <p class="skills-spec">Node.js</p>
+          </div>
+          <div class="skills-container hide">
+            <p class="skills-title">MORE</p>
+            <p class="skills-spec">Design Lead</p>
+            <p class="skills-spec">Branding</p>
+            <p class="skills-spec">Strategy</p>
+            <p class="skills-spec">Process design</p>
+            <p class="skills-spec">Concept development</p>
+            <p class="skills-spec">Agile methodology</p>
+            <p class="skills-spec">Hyper Island toolbox</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- social -->
+      <section class="section">
+        <div class="section-title-container">
+          <h4 class="section-title">FOR MORE</h4>
+        </div>
+        <div class="social-icons">
+          <!-- icon 1 -->
+          <div class="social-container">
+            <div class="social-icon-container">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p class="social-icon-title">LINKEDIN</p>
+          </div>
+          <!-- icon 2 -->
+          <div class="social-container">
+            <div class="social-icon-container">
+              <i class="fab fa-github"></i>
+            </div>
+            <p class="social-icon-title">GITHUB</p>
+          </div>
+          <!-- icon 3 -->
+          <div class="social-container">
+            <div class="social-icon-container">
+              <i class="fab fa-stack-overflow"></i>
+            </div>
+            <p class="social-icon-title">STACK OVERFLOW</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <h4 class="contact">CONTACT</h4>
       <div class="contact-detail-container">
-        <p class="contact-info">Jiiin Cho</p>
-        <p class="contact-info">+46 70 00 00 00</p>
-        <p class="contact-info">name@email.com</p>
+        <p class="contact-info">
+          Jiiin Cho<br />
+          +46 70 00 00 00<br />
+          name@email.com
+        </p>
       </div>
     </footer>
   </body>

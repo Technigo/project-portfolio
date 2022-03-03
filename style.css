@@ -1,0 +1,318 @@
+/* Global styles */
+:root {
+  /* fontweight */
+  --fontweight-bold: 700;
+  /* fontsize */
+  --fontsize-mobile-h1: 40px;
+  --fontsize-mobile-h2: 28px;
+  --fontsize-mobile-h3: 24px;
+  --fontsize-mobile-h4: 22px;
+  --fontsize-mobile-regular: 17px;
+  --fontsize-small: 13px;
+  --fontsize-mobile-extrasmall: 11px;
+  /* size */
+  --icon-mobile: 40px;
+  --profile-pic-mobile: 180px;
+  --featured-img-mobile-width: 327px;
+  --social-icon-mobile-width: 60px;
+
+  /* color */
+  --color-red: #fa382f;
+  --color-pink: #fddfe7;
+  --color-blue: #072bce;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--fontsize-mobile-regular);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+ul {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+h1 {
+  font-size: var(--fontsize-mobile-h1);
+}
+h2 {
+  font-size: var(--fontsize-mobile-h2);
+}
+h3 {
+  font-size: var(--fontsize-mobile-h3);
+}
+h4 {
+  font-size: var(--fontsize-mobile-h4);
+}
+h5 {
+  font-size: var(--fontsize-mobile-h5);
+}
+p {
+  font-size: var(--fontsize-mobile-regular);
+  line-height: calc(var(--fontsize-mobile-regular) * 1.5);
+}
+/* Header */
+.header {
+  background: center/cover url("./assets/header-image.jpg");
+  height: 520px;
+  position: relative;
+}
+
+.header-social {
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+  padding-top: 48px;
+  padding-right: 24.5px;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--icon-mobile);
+  height: var(--icon-mobile);
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.header-title-container {
+  color: white;
+  padding-left: 24px;
+}
+.header-title-name {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.header-title-name-bold {
+  font-weight: var(--fontweight-bold);
+}
+.header-title {
+  margin: 15px 0;
+}
+.header-title-plus {
+  margin: 0;
+}
+
+.profile-pic {
+  width: var(--profile-pic-mobile);
+  height: var(--profile-pic-mobile);
+  border-radius: 50%;
+  border: 3px solid white;
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+  transform: translateY(16px);
+}
+
+.main {
+  padding: 0 24px;
+}
+
+/* aboutme */
+.aboutme {
+  margin: 50px 0;
+}
+.aboutme-start {
+  width: 55px;
+  object-fit: contain;
+}
+
+.section {
+  margin-top: 84px;
+}
+.section-title-container {
+  width: 100%;
+  color: white;
+  font-weight: var(--fontweight-bold);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-title {
+  display: inline-block;
+  background-color: var(--color-red);
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+/* tech */
+.tech-detail {
+  text-align: center;
+}
+
+/* featured */
+.featured-img-container {
+  width: var(--featured-img-mobile-width);
+  height: 212px;
+  position: relative;
+  margin: 0 auto;
+}
+.featured-img {
+  width: 100%;
+  height: 100%;
+}
+.featured-title-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.featured-title {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.featured-article {
+  margin-bottom: 32px;
+}
+
+.featured-others {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-red);
+  width: 100%;
+  text-align: center;
+  margin: 28px auto;
+}
+
+.featured-subtitle {
+  color: var(--color-red);
+  font-weight: var(--fontweight-bold);
+  display: block;
+}
+
+.featured-spec {
+  display: flex;
+}
+.spec-item {
+  background-color: var(--color-pink);
+  padding: 7px 9px;
+  margin-right: 8px;
+  font-size: var(--fontsize-mobile-extrasmall);
+}
+.links {
+  color: var(--color-red);
+}
+
+/* thoughts */
+.thoughts-img-container {
+  width: 100%;
+  text-align: center;
+}
+.thoughts-img {
+  width: var(--featured-img-mobile-width);
+  height: 205px;
+}
+
+.thoughts-date {
+  color: var(--color-red);
+  display: block;
+  margin-bottom: 8px;
+}
+.thoughts-title {
+  font-weight: var(--fontweight-bold);
+  margin: 0;
+}
+.thoughts-description {
+  margin-top: 8px;
+}
+.thoughts-more-title {
+  color: var(--color-red);
+  width: 100%;
+  text-align: center;
+}
+
+.more-date {
+  color: var(--color-red);
+  text-decoration: underline;
+}
+.more-title {
+  font-weight: var(--fontweight-bold);
+  text-decoration: underline;
+}
+
+/* skills */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px 0;
+}
+.skills-title {
+  color: var(--color-red);
+  font-weight: var(--fontweight-bold);
+}
+.skills-container {
+  text-align: center;
+}
+.skills-title,
+.skills-spec {
+  margin: 8px;
+}
+.hide {
+  display: none;
+}
+
+/* contact */
+.social-icons {
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.social-container {
+  color: var(--color-red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-icon-container {
+  width: var(--social-icon-mobile-width);
+  height: var(--social-icon-mobile-width);
+  border: 1px solid var(--color-red);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon-title {
+  font-size: var(--fontsize-mobile-extrasmall);
+}
+
+/* footer */
+.footer {
+  background-color: var(--color-blue);
+  height: 302px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 64px;
+}
+.contact-info,
+.contact {
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
