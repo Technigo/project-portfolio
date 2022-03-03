@@ -16,6 +16,7 @@ body {
   height: 520px;
   width: 100%;
   position: relative;
+  justify-content: safe;
 }
 .icon-container {
   display: flex;
@@ -85,45 +86,41 @@ body {
   display: inline-block;
   margin-right: 6px;
 }
+.description-container p {
+  text-align: left;
+}
 .description-container {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  justify-content: center;
   width: 90%;
-  margin: 0 auto;
   letter-spacing: 1px;
-  height: 30vh;
+  height: 40vh;
+  margin: 0 auto;
+  text-align: center;
 }
-/*.description-container p {
-  width: 327px;
-  height: 232px;
-  top: 569px;
-  left: 24px;
-} */
+
 section:nth-child(2n) {
   background-color: rgb(210, 231, 231);
 }
 .tech-container {
-  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  letter-spacing: 1px;
+  height: 20vh;
+  margin: 0 auto;
   text-align: center;
-  justify-items: center;
 }
 .tech-container p {
-  padding-top: 1rem;
   text-align: center;
-
-  letter-spacing: 2px;
 }
 
-.tech-container h2 {
-  display: inline-flex;
-  margin: 0px auto;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-size: 22px;
-  line-height: 30px;
-  letter-spacing: 1px;
-  padding: 5px;
+.tech h2 {
+  margin: 20px;
+  padding-top: 30px;
+  text-align: center;
 }
 .colored {
   color: red;
@@ -138,6 +135,7 @@ section:nth-child(2n) {
   margin: 20px;
   padding-top: 30px;
   text-align: center;
+  margin-bottom: 50px;
 }
 .projects h3 {
   margin: 20px;
@@ -145,26 +143,26 @@ section:nth-child(2n) {
   text-align: center;
   color: rgba(236, 5, 5, 0.616);
 }
-.featured-projects {
+.featured-projects-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   margin: 0 auto;
 }
 
-.featured-projects img {
+.featured-projects-container img {
   border: 2px solid white;
   width: 327px;
   height: 205px;
   opacity: 60%;
-  display: flex;
   border-radius: 10px;
 }
 .featured-image p {
-  padding-bottom: 100px;
+  padding: 10px;
+  padding-bottom: 50px;
 }
 button {
   background-color: rgba(231, 165, 176, 0.712);
@@ -172,22 +170,23 @@ button {
   font-weight: bolder;
   border: 1px solid white;
   padding: 3px;
+  margin-top: 10px;
   border-radius: 5px;
 }
 
-.other-projects span {
+.other-projects-container span {
   color: red;
 }
-.other-projects p {
+
+.other-projects-container p {
   padding: 20px;
 }
-.other-projects {
+.other-projects-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 30px;
 }
+
 .skills-container h3 {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
@@ -196,11 +195,12 @@ button {
 .skills-container {
   font-family: "Roboto", sans-serif;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0 auto;
-  text-align: center;
+  grid-template-columns: repeat(2, 10rem);
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 80px;
   line-height: 30px;
+  padding-bottom: 50px;
 }
 .skills-heading {
   display: flex;
@@ -236,7 +236,6 @@ h2 span {
   line-height: 30px;
   align-items: center;
 }
-
 .icon-wrapper {
   color: rgba(236, 5, 5, 0.616);
   font-family: "Roboto", sans-serif;
@@ -258,6 +257,9 @@ a:hover {
 .footer h3 {
   padding: 30px;
 }
+.caption {
+  width: 375px;
+}
 .footer-class {
   text-align: center;
   height: 158px;
@@ -271,12 +273,24 @@ a:hover {
     font-size: 25px;
     text-transform: capitalize;
   }
-  .featured-projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+  .featured-projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .featured-projects-container img {
+    width: 400px;
+    height: 300px;
+    margin: 0, auto;
   }
   .skills-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10rem;
+  }
+  .other-projects-container {
+    margin-left: 60px;
+    font-size: 20px;
+  }
+  .caption {
+    width: 375px;
   }
 }
