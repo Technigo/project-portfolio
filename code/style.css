@@ -8,9 +8,9 @@
   --clr-medium: #B4B4B4;
   --clr-light: #f6f6f6;
   --clr-white: #FFF;
-  --clr-black: #111111;
- 
+  --clr-black: #111111; 
 }
+
 
 /* ------------------- */
 /* Reset               */
@@ -27,6 +27,7 @@
 img {
   margin: 0;
 }
+
 
 /* ------------------- */
 /*     Typography      */
@@ -166,6 +167,7 @@ p {
   transition: 0.5s ease;
 }
 
+
 /* --------------------------- */
 /*  Reusable styling elements  */
 /* --------------------------- */
@@ -197,6 +199,7 @@ p {
 .hidden {
   display: none;
 }
+
 
 /* ------------------- */
 /*    Links & icons    */
@@ -233,7 +236,6 @@ a.project-link:focus {
   width: 30px;
   height: 30px;
 }
-
 
 
 /* ------------------- */
@@ -292,6 +294,7 @@ img.profile-image {
   overflow: hidden;
 }
 
+
 /**** General ****/
 section:nth-child(odd) {
   background: var(--clr-light);
@@ -304,6 +307,7 @@ section:nth-child(odd) {
   padding-top: 2.5em;
   
 }
+
 
 /**** Tech ****/
 .section-tech p {
@@ -336,7 +340,6 @@ section:nth-child(odd) {
   min-width: 327;  
 }
 
-
 .other-projects--container p {
   display: inline;
 }
@@ -346,43 +349,29 @@ section:nth-child(odd) {
 }
 
 div.section-thoughts--text {
-  margin-top: 0.5em;
-  padding-bottom: 2em;
+  padding-bottom: 1em 0 2em;
 }
 
-/**** Thoughts ****/
 
+/**** Thoughts ****/
 .skills-container {
   display: grid;
   gap: 3em;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: auto;
-  grid-template-areas: 
-    "code toolbox"
-    "upcoming ."; */
-
 }
 
 .skills-container--item > p {
   text-align: center;
 }
 
-/* .skills-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-*/
  .skills-container--item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/**** For more ****/
 
+/**** For more ****/
 .section-more--container {
   max-width: 60vw;
 }
@@ -392,12 +381,6 @@ div.section-thoughts--text {
   justify-content: space-between;
 }
 
-/* .social-icon--border {
- border: 1px solid var(--clr-dark);
- text-align: center;
- padding: 0.25em;
- border-radius: 50%;
-} */
 
 /**** Contact ****/
 footer {
@@ -414,6 +397,7 @@ footer p {
   flex-direction: column;
   align-items: center;
 }
+
 
 /* ------------------- */
 /*    Media queries    */
@@ -471,11 +455,6 @@ footer p {
   .section-thoughts--text {
     width: 48%;
   }
-  
-  .img-overlay {  
-    top: 10px;
-    bottom: 10px;
-  }
 
   .thoughts-container {
     flex-direction: row;
@@ -500,7 +479,6 @@ footer p {
   .hidden {
     display:inline-block;
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -525,10 +503,6 @@ footer p {
     height: 35vh;
   }
 
-  /* .header-container {
-    padding-left: 20vw;
-  } */
-
   .title,
   .title > span {
     font-size: 1.15rem;
@@ -540,11 +514,6 @@ footer p {
 
   h1.title-second {
     font-size: 2rem;
-  }
-
-  .img-overlay {  
-    top: 0;
-    bottom: 0;
   }
 
   img.profile-image {
@@ -578,5 +547,4 @@ footer p {
   .hidden {
     font-size: 42px;
   }
-
 }
