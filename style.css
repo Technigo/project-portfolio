@@ -1,14 +1,97 @@
+/*shared styles*/
 * {
-    margin: 0; 
-    padding: 0;  
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: content-box;
-    -webkit-font-smoothing: antialiased; 
-    text-rendering: optimizeLegibility;
+margin: 0; 
+padding: 0;  
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: content-box;
+-webkit-font-smoothing: antialiased; 
+text-rendering: optimizeLegibility;
 }
 
-.container{
+/*header*/
+/* Hero-image is one of the few cases where we need to set a fixed height 
+since the children will not spread the hero section since background is the only child 
+so nothing will stretch it out*/
+
+.header{
+background-image: url('./assets/sahand-babali-gavODTHG36Y-unsplash.jpg');    
+height: 520px;
+width: 375px; 
+background-size: cover;
+background-position-x: 100%;
+position: relative; /*this needs to be here since position absolute needs context*/
+}
+/*WHy a white margin to the right?*/
+
+.profile-image {
+position: absolute;
+width: 180px;
+height: 180px;
+left: 171px;
+top: 356px;
+right: 24px;
+bottom: -16px;
+border-radius: 50%;
+border: 3px;
+border-style: solid;
+border-color: #fff;
+}
+
+.hero-icon1, .hero-icon2, .hero-icon3 {
+width: 130,5px;
+height: 40px;  
+}
+
+.hero-icon-box {
+position: absolute;
+top: 48px;
+left: 220px;
+right: 24,5px;
+bottom: 432px;   
+}
+
+.hero-text-container {
+color:#fff;
+position: absolute;
+width: 220px;
+height: 202px;
+left: 24px;
+top: 121px;
+right: 131px;
+bottom: 197px;    
+}
+
+.hero-text-container h2 {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+/* or 138% */
+letter-spacing: 0.04em;
+}
+
+.hero-text-container h1 {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 49px;
+/* or 122% */    
+}
+
+.hero-text-container h3 {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 40px;
+/* or 167% */    
+}
+
+/*Sections*/
+.container {
 width: 375px;  
 margin: 0 auto;  
 }
@@ -21,13 +104,6 @@ background-color: #F4F4F4;
 background-color: #fff;
 }
 
-.profile-image {
-position: absolute;
-width: 180px;
-height: 180px;
-left: 171px;
-top: 356px;
-}
 
 .footer {
 background-color: #072BCE;
