@@ -89,15 +89,16 @@ body {
 .description-container p {
   text-align: left;
 }
+
 .description-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 70%;
   letter-spacing: 1px;
   height: 40vh;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 section:nth-child(2n) {
@@ -107,9 +108,9 @@ section:nth-child(2n) {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 70%;
   letter-spacing: 1px;
-  height: 20vh;
+  height: 30vh;
   margin: 0 auto;
   text-align: center;
 }
@@ -142,6 +143,7 @@ section:nth-child(2n) {
   padding-top: 30px;
   text-align: center;
   color: rgba(236, 5, 5, 0.616);
+  font-size: 25px;
 }
 .featured-projects-container {
   display: flex;
@@ -151,6 +153,7 @@ section:nth-child(2n) {
   flex-wrap: wrap;
   text-align: center;
   margin: 0 auto;
+  letter-spacing: 1px;
 }
 .featured-image {
   position: relative;
@@ -171,10 +174,12 @@ section:nth-child(2n) {
   height: 205px;
   opacity: 30%;
   border-radius: 10px;
+  flex: 3;
 }
-.featured-image p {
+.caption {
   padding: 10px;
   padding-bottom: 50px;
+  justify-content: safe;
 }
 button {
   background-color: rgba(231, 165, 176, 0.712);
@@ -184,18 +189,25 @@ button {
   padding: 3px;
   margin-top: 10px;
   border-radius: 5px;
+  letter-spacing: 1px;
 }
 
 .other-projects-container span {
   color: red;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 .other-projects-container p {
-  padding: 20px;
+  width: 80%;
+  padding-bottom: 20px;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 .other-projects-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-bottom: 30px;
 }
 
@@ -247,11 +259,14 @@ h2 span {
   margin-top: 20px;
   line-height: 30px;
   align-items: center;
+  width: 90%;
 }
 .icon-wrapper {
   color: rgba(236, 5, 5, 0.616);
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+}
+.icons {
+  font-size: 150px;
 }
 a:hover {
   transform: scale(0.8);
@@ -269,9 +284,7 @@ a:hover {
 .footer h3 {
   padding: 30px;
 }
-.caption {
-  width: 375px;
-}
+
 .footer-class {
   text-align: center;
   height: 158px;
@@ -282,14 +295,17 @@ a:hover {
     justify-content: space-evenly;
   }
   .icon-wrapper p {
-    font-size: 25px;
+    font-size: 15px;
     text-transform: capitalize;
   }
   .featured-projects-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
   }
+
   .featured-projects-container img {
     width: 400px;
     height: 300px;
@@ -301,8 +317,9 @@ a:hover {
   .other-projects-container {
     margin-left: 60px;
     font-size: 20px;
+    width: 70%;
   }
   .caption {
-    width: 375px;
+    width: 450px;
   }
 }
