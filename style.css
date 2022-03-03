@@ -2,24 +2,41 @@
 :root {
   /* fontweight */
   --fontweight-bold: 700;
-  /* fontsize */
+  /* fontsize - mobile */
   --fontsize-mobile-h1: 40px;
   --fontsize-mobile-h2: 28px;
   --fontsize-mobile-h3: 24px;
   --fontsize-mobile-h4: 22px;
   --fontsize-mobile-regular: 17px;
-  --fontsize-small: 13px;
   --fontsize-mobile-extrasmall: 11px;
+
+  /* fontsize */
+  --fontsize-h1: 82px;
+  --fontsize-h2: 48px;
+  --fontsize-h3: 50px;
+  --fontsize-h4: 38px;
+  --fontsize-regular: 30px;
+  --fontsize-extrasmall: 25px;
+
   /* size */
   --icon-mobile: 40px;
+  --icon: 80px;
+
   --profile-pic-mobile: 180px;
+  --profile-pic: 333px;
+
   --featured-img-mobile-width: 327px;
+  --featured-img-width: 523px;
+
   --social-icon-mobile-width: 60px;
+  --social-icon-width: 160px;
 
   /* color */
   --color-red: #fa382f;
   --color-pink: #fddfe7;
   --color-blue: #072bce;
+  --color-grey: #f4f4f4;
+  --color-background: #f4f4f4;
 }
 * {
   box-sizing: border-box;
@@ -64,12 +81,16 @@ p {
 .header {
   background: center/cover url("./assets/header-image.jpg");
   height: 520px;
+}
+.header-container {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .header-social {
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: flex-end;
   padding-top: 48px;
   padding-right: 24.5px;
@@ -128,7 +149,9 @@ p {
   width: 55px;
   object-fit: contain;
 }
-
+.aboutme-description {
+  font-family: "Montserrat", sans-serif;
+}
 .section {
   margin-top: 84px;
 }
@@ -175,6 +198,7 @@ p {
   width: 100%;
   text-align: center;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 .featured-article {
   margin-bottom: 32px;
@@ -308,11 +332,125 @@ p {
 .contact {
   font-family: "Montserrat", sans-serif;
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 765px) {
+  .header-container,
+  .main {
+    max-width: 750px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
+  body {
+    font-size: var(--fontsize-regular);
+  }
+
+  h1 {
+    font-size: var(--fontsize-h1);
+  }
+  h2 {
+    font-size: var(--fontsize-h2);
+  }
+  h3 {
+    font-size: var(--fontsize-h3);
+  }
+  h4 {
+    font-size: var(--fontsize-h4);
+  }
+  h5 {
+    font-size: var(--fontsize-h5);
+  }
+  p {
+    font-size: var(--fontsize-regular);
+    line-height: calc(var(--fontsize-regular) * 1.5);
+  }
+  .header {
+    height: 681px;
+  }
+  .aboutme {
+    background-color: var(--color-grey);
+    margin: 0;
+    height: 432px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutme-description {
+    max-width: 1100px;
+  }
+  .header-container,
+  .main {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .section-title-container {
+    margin-bottom: 80px;
+  }
+  .social-item {
+    width: var(--icon);
+    height: var(--icon);
+    font-size: 31px;
+  }
+  .profile-pic {
+    width: var(--profile-pic);
+    height: var(--profile-pic);
+    right: 0;
+    transform: translateY(43px);
+  }
+
+  .section {
+    margin-top: 246px;
+  }
+  .thoughts-img,
+  .featured-img-container {
+    width: var(--featured-img-width);
+    height: 306px;
+  }
+  .featured-article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 110px;
+  }
+  .spec-item {
+    font-size: var(--fontsize-extrasmall);
+  }
+  .social-icon-title {
+    font-size: var(--fontsize-extrasmall);
+  }
+  .hide {
+    display: inherit;
+  }
+  .thoughts-article-container {
+    display: flex;
+    gap: 58px;
+    margin-bottom: 110px;
+  }
+  .thoughts-article {
+    display: block;
+  }
+  .section-skills {
+    background-color: var(--color-background);
+    padding: 120px 0;
+  }
+  .skills {
+    margin: 0 auto;
+    max-width: 1100px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .social-icons {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 60%;
+  }
+  .social-icon-container {
+    width: var(--social-icon-width);
+    height: var(--social-icon-width);
+    font-size: 50px;
+  }
+  .footer {
+    margin-top: 132px;
+    height: 570px;
   }
 }
