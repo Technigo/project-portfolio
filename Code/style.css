@@ -86,19 +86,16 @@ body {
   display: inline-block;
   margin-right: 6px;
 }
-.description-container p {
-  text-align: left;
-}
 
 .description-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 70%;
   letter-spacing: 1px;
   height: 40vh;
   margin: 0 auto;
   text-align: left;
+  font-weight: 400px;
 }
 
 section:nth-child(2n) {
@@ -165,8 +162,9 @@ section:nth-child(2n) {
   bottom: 0;
   width: 100%;
   left: 0;
-  font-size: 20px;
+  font-size: 15px;
   color: #ffffff;
+  font-weight: 700px;
   z-index: 2;
   padding-top: 50px;
 }
@@ -177,6 +175,9 @@ section:nth-child(2n) {
   opacity: 70%;
   border-radius: 10px;
   z-index: -2;
+}
+.profile-text span {
+  font-weight: lighter;
 }
 .caption {
   padding: 10px;
@@ -285,6 +286,7 @@ a:hover {
 }
 .footer h3 {
   padding: 30px;
+  letter-spacing: 1px;
 }
 
 .footer-class {
@@ -292,7 +294,25 @@ a:hover {
   height: 158px;
   width: 327px;
 }
+.footer-class p {
+  padding: 5px;
+  letter-spacing: 1px;
+}
 @media only screen and (min-width: 768px) {
+  .profile-pic {
+    right: 130px;
+    position: absolute;
+  }
+  .profile-text {
+    line-height: 37px;
+    font-size: 50px;
+    margin-top: 120px;
+    margin-left: 100px;
+  }
+  .portfolio {
+    padding: 0px;
+    font-size: 28px;
+  }
   .icon-more-container {
     justify-content: space-evenly;
   }
@@ -309,8 +329,8 @@ a:hover {
   }
 
   .featured-projects-container img {
-    width: 350px;
-    height: 300px;
+    width: 523px;
+    height: 306px;
     margin: 0, auto;
   }
   .skills-container {
@@ -323,5 +343,18 @@ a:hover {
   }
   .caption {
     width: 450px;
+  }
+  .text-image {
+    font-size: 28px;
+    font-weight: 700px;
+    line-height: 34.13px;
+    text-align: center;
+    padding-top: 60px;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
   }
 }
