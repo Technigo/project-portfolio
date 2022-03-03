@@ -134,6 +134,11 @@ p {
   display: flex;
 } 
 
+.project-image,
+.thoughts-image {
+  object-fit: cover;
+}
+
 .header-overlay {
  position: absolute;
  width: 100%;
@@ -229,9 +234,13 @@ header {
   display: flex;
   justify-content: end;
   margin: 2em;
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }
 
 .social-icon--container {
+  max-width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,7 +266,7 @@ header {
 img.profile-image {
   position: absolute;
   right: 30px;
-  top: 395px;
+  top: 455px;
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -373,6 +382,68 @@ footer p {
 @media (min-width: 768px) {
 
   * {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: ;
+  }
+  
+  .section-intro p,
+  .section-tech p
+  {
+    font-size: 25px;
+  }
+
+  .header-container {
+    margin-top: 20vh;
+  }
+
+  img.profile-image {
+    right: 30px;
+    top: 385px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .social-text {
+    text-align: center;
+    border-bottom: 1px solid var(--clr-black);
+    display: block;
+  }
+  
+  .container {
+    width: 768px; 
+  }
+  
+  /* .project-image {
+    width: 523px;
+  }  */
+  
+  
+  
+}
+
+@media (min-width: 1100px) {
+  
+  * {
     font-size: 25px;
   }
 
@@ -387,56 +458,36 @@ footer p {
   h4 {
     font-size: 28px;
   }
-
-  img.profile-image {
-    right: 30px;
-    top: 295px;
-    width: 333px;
-    height: 333px;
-
+ 
+  .section-intro p,
+  .section-tech p
+  {
+    font-size: 30px;
   }
 
+  h2,
+  .hidden {
+    font-size: 42px;
+  }
+  
+  img.profile-image {
+    right: 30px;
+    top: 300px;
+    width: 330px;
+    height: 330px;
+  }
+  
   .social-icon {
     width: 80px;
     height: 80px;
   }
   
-  .social-text {
-    text-align: center;
-    border-bottom: 1px solid var(--clr-black);
-    display: block;
-  }
-  
-  .section-intro p,
-  .section-tech p
-   {
-    font-size: 30px;
-  }
-  
   .container {
-    width: 768px; 
-  }
-  
-  /* .project-image {
-    width: 523px;
-  }  */
-
-
-
-}
-
-@media (min-width: 1100px) {
-
-  h2,
-  .hidden {
-    font-size: 42px;
+    width: 1100px;
   }
 
   .hidden {
     display:inline-block;
   }
 
-  .container {
-    width: 1100px;
-  }
 }
