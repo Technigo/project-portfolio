@@ -1,0 +1,111 @@
+:root {
+    --color-dark-brick: hsl(14.3, 45.4%, 51.2%);
+    --color-dark-grey: hsl(0 , 0%, 33.7%);
+    --color-light-beige: hsl(40, 60%, 96.1%);
+    --color-beige-white: hsl(40, 20%, 99.0%);
+  }
+
+* {
+    margin: 0;
+    border: 0;
+    color: var(--color-dark-grey);
+}
+
+/* body.darkmode p */
+body.darkmode * {
+    color: #FFFFFF;
+}
+
+body {
+    background-color: var(--color-beige-white);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* only applies to body */
+body.darkmode {
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/code/assets/pastel-acrylic-abstract-background-vector.png');
+    background-size: 500px;
+    background-repeat:repeat-x;
+    width: 100%;
+}
+.header__linked-icons {
+    gap: 5px;
+    height: 50px;
+    margin: 20px 20px 5px auto;
+}
+.header__linked-icons img{
+    width: 50px;
+    height: 50px;
+    order: 2;
+}
+.header__text {
+    margin: 60px auto 0 auto;
+}
+
+.header__profile-pic__container {
+    margin-left: auto;
+    padding-right: 80px;
+}
+.header__profile-picture--picture {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    color: white;
+    padding: 5px;
+}
+
+.section--h3 {
+    margin: 20px;
+}
+main {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.section--h3 {
+    display: inline-block;
+    background-color: var(--color-dark-brick);
+    margin-top: 10px;
+}
+section:nth-of-type(2n) {
+    background-color: var(--color-light-beige);
+}
+
+section p {
+    padding: 20px;
+}
+.start-figure-img {
+    width: 40px;
+    margin: 0 3px 0 3px;
+}
+
+featured-projects__grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+.brick-color {
+    color: var(--color-dark-brick);
+}
