@@ -22,17 +22,6 @@ body {
 	margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
-	.container {
-		width: 768px;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	.container {
-		width: 1200px;
-	}
-}
 
 /* HEADER SECTION ---------------------------------------------------------- */
 
@@ -43,21 +32,21 @@ body {
 }
 
 .hero-img {
-    background-image: url(./assets/header-image.jpg);
+    background-image: url(./assets/snow-gd6505f2db_1920.jpg);
     background-size: cover;
     height: 520px;
     width: 100vw;
-    background-position: 90%;
+    background-position: 70%;
     z-index: -1;
 }
 
 .header-links {
     position: absolute;
     top: 49px;
-    left: 160px;
-    right: 0px;
+    left: 250px;
     display: flex;
     gap: 5px;
+    height: 40px;
 }
 
 .header-text {
@@ -91,7 +80,7 @@ body {
 .header-pic {
     position: absolute;
     top: 336px;
-    left: 101px;
+    left: 170px;
     border-radius: 50%;
     border: 3px solid white;
 }
@@ -129,8 +118,6 @@ body {
     color: white;
     background-color: red;
     margin: 0px 61px; 
-
-    
 }
 
 .project-image-group {
@@ -172,6 +159,10 @@ body {
     margin: 10px;
   
 
+}
+/* Hides more projects in mobile */
+.mobile-hide {
+    display: none;
 }
 
 .project-description {
@@ -361,3 +352,281 @@ body {
 .footer p {
     line-height: 10px;
 }
+
+/* TABLET LANDSCAPE ----------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+
+    .mobile-hide {
+        display: block;
+    }
+
+    .header-text {
+        top: 106px;
+        left: 110px;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .header-text h1 {
+        font-size: 65px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+
+    .header-pic {
+        top: 298px;
+        left: 480px;
+        right: 410px;
+        width: 250px;
+    }
+
+    .header-links {
+        top: 102px;
+        left: 490px;
+        width: 1000px;
+        height: 60px;
+    }
+
+    .tech-section h3 {
+        font-size: 35px;
+        letter-spacing: 0.01em;
+        margin: 0px 330px; 
+    }
+
+    .featured-projects {
+        font-size: 35px;
+        letter-spacing: 0.01em;
+        margin: 0 171px;
+    }
+
+    .desktop-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 50px;
+        
+    }
+
+    .one-project {
+        width: 50%;
+    }
+
+    .other-projects {
+        font-size: 31px;
+    }
+
+    .my-thoughts {
+        display: none;
+    }
+
+    .my-thoughts-desktop {
+        font-size: 35px;
+        text-align: center;
+        color: white;
+        background-color: red;
+        margin: 0px 100px; 
+    }
+
+    .desktop-thoughts-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 30px;
+    }
+
+    .one-article {
+        width: 50%;
+    }
+
+    .more-thoughts {
+        font-size: 31px;
+    }
+
+    .more-thoughts-section {
+        margin: 0 50px;
+    }
+
+    .skills {
+        font-size: 35px;
+        margin: 0 300px;
+    }
+
+    .skill-boxes {
+        gap: 90px;
+    }
+
+    .more {
+        font-size: 35px;
+    }
+
+    .more-section-images {
+        width: 120px;
+    }
+
+    .more-text {
+    font-size: 14px;
+    }
+
+    .footer h3 {
+        font-size: 28px;
+    }
+    
+    .footer p {
+        font-size: 20px;
+
+    }
+
+}
+/* Desktop LANDSCAPE ----------------------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
+
+    .section {
+        padding-top: 61px;
+        padding-bottom: 30px;
+    }
+
+    .header-text {
+        top: 126px;
+        left: 310px;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .header-text h1 {
+        font-size: 65px;
+    }
+
+    .header-text p {
+        font-size: 17px;
+    }
+
+    .header-pic {
+        top: 298px;
+        left: 893px;
+        right: 410px;
+    }
+
+    .header-links {
+        top: 102px;
+        left: 990px;
+    }
+
+    .intro-section {
+        margin: 0px 250px 43px 250px;
+    }
+
+    .tech-section h3 {
+        font-size: 35px;
+        letter-spacing: 0.01em;
+        margin: 0px 530px; 
+    }
+
+    .tech-section p {
+        font-size: 25px;
+        line-height: 40px;
+        margin: 33px 124px;
+    }
+
+    .tech-section p span {
+        color: red;
+    }
+
+    .featured-projects {
+        font-size: 35px;
+        letter-spacing: 0.01em;
+        margin: 0 361px;
+    }
+
+    .desktop-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 200px;
+        
+    }
+
+    .one-project {
+        width: 50%;
+    }
+
+    .mobile-hide {
+        display: block;
+    }
+
+    .other-projects {
+        font-size: 31px;
+    }
+
+    .other-project-section {
+        margin: 0 200px;
+    }
+
+    .my-thoughts {
+        display: none;
+    }
+
+    .my-thoughts-desktop {
+        font-size: 35px;
+        text-align: center;
+        color: white;
+        background-color: red;
+        margin: 0px 300px; 
+    }
+
+    .desktop-thoughts-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 200px;
+    }
+
+    .one-article {
+        width: 50%;
+    }
+
+    .more-thoughts {
+        font-size: 31px;
+    }
+
+    .more-thoughts-section {
+        margin: 0 220px;
+    }
+
+    .skills {
+        font-size: 35px;
+        margin: 0 520px;
+    }
+
+    .skill-boxes {
+        gap: 90px;
+    }
+
+    .more {
+        font-size: 35px;
+    }
+
+    .more-section-images {
+        width: 120px;
+    }
+
+    .more-text {
+    font-size: 14px;
+    }
+
+    .footer h3 {
+        font-size: 28px;
+    }
+    
+    .footer p {
+        font-size: 20px;
+
+    }
+}
+
