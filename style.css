@@ -1,11 +1,11 @@
 * {
-    margin: 0;
-    padding: 0; 
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    box-sizing: border-box;
-    }
+margin: 0;
+padding: 0; 
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: normal;
+box-sizing: border-box;
+}
 
   .content {
   max-width: 1500px;
@@ -126,20 +126,24 @@ color: #FA382F;
     background-size: cover;
   }
 
-  .profile-container img{
-    position: absolute;
-    width: 130.5px;
-    height: 40px;
-    top: 10%;
-    right: 10%;
-  }
-
   .text-container{
-    position: absolute;
+  position: absolute;
   width: 220px;
   height: 202px;
   top: 20%;
   left: 10%;
+  }
+
+  .header-social-icons {
+    width: 48px;
+    height: 48px;
+  }
+
+  .header-social-nav {
+    display: flex;
+    justify-content:end;
+    padding-right: 10%;
+    padding-top: 5%;
   }
 
   .profile-img-container {
@@ -155,7 +159,6 @@ color: #FA382F;
     background-size: cover;
     border: solid 3px white;
     border-radius: 50%;
-    /*z-index: 3;*/
   }
 
   .tech {
@@ -240,13 +243,7 @@ line-height: 29px;
     background-color: rgb(244,244,244, 0.3);
   }
   
-  .project-cards a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    background: rgb(244,244,244, 0.3);
-  }
-  .other-project-cards a{
+  .other-project-cards a, .project-cards a{
     text-decoration: none;
     color: black;
     cursor: pointer;
@@ -420,24 +417,31 @@ height: 212px;
   .social-media-links {
     display: flex;
     flex-direction: row;
-  
+    fill:#FA382F;
    }
    .social-media-links a{
-    padding: 10px; 
-    margin: 10px;
     color: #FA382F;
+    text-decoration: none;
+    padding: 20px;
    }
 
    .social-media-links img {
-    padding: 20px;
-    border: solid 2px #FA382F;
-    border-radius: 50%;
+    /*border: solid 2px #FA382F;
+    border-radius: 50%;*/
+    height: 60px;
+    width: 60px;
    }
 
    .social-media-links p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
     font-size: 11px;
     line-height: 13px;
-    padding-top: 10px;
+    max-width: 60px;
+    text-align: center;
+    
+    
    }
   
   .footer{
@@ -530,5 +534,19 @@ height: 212px;
   .project-cards {
     width: 40%;
   }
-  
+
+  /*.social-media-links a {
+    padding: 40px;
   }
+
+  .social-media-links img {
+    height: 160px;
+    width: 160px;
+  }
+
+ .social-media-links p {
+  font-size: 25px;
+  line-height: 41px;
+  max-width: 160px;
+ }*/
+}
