@@ -35,25 +35,57 @@ body {
   }
 
 .container p {
-    color: red;
+    color: #f93943;
 }
-
 .picture {    
     width: 100%;
 }
-
-.description {
+.download-cv-button {
+    border: 2px solid black;
+    padding: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
     margin: 40px;
-    font-size:xx-large ;
-    
 }
 
-.container {
+.description-container {
+    background-color: #ECECEC;
+    display: flex;
+
+}
+
+.test {
+    border-bottom: 3px solid #f93943;
+    display: inline;
+}
+
+.description {
+    padding: 4%;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.skill-container {
     width: 100%;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.skill-bar {
+    width: 100%;
+    padding: 4%;
+    
+}
+.skill-text {
+    padding: 4%;
 }
 
 .loading {
@@ -62,12 +94,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4%;
 }
 
 .loading .line-box-html {
-    margin: 40px;
+    
     width: 100%;
-    border: 2px solid #e34c26  ;
+    border: 2px solid #f93943;
     border-radius: 20px;
     
 }
@@ -75,7 +108,7 @@ body {
 .loading .line-box-html .line-html {
     height: 20px;
     border-radius: 20px;
-    background: #e34c26 ;
+    background: #f93943;
     width: 65%;
     margin: 1px;
     text-align: center;
@@ -83,9 +116,9 @@ body {
 }
 
 .loading .line-box-css {
-    margin: 40px;
+    
     width: 100%;
-    border: 2px solid #563d7c  ;
+    border: 2px solid #f93943;
     border-radius: 20px;
     
 }
@@ -93,7 +126,7 @@ body {
 .loading .line-box-css .line-css {
     height: 20px;
     border-radius: 20px;
-    background: #563d7c ;
+    background: #f93943;
     width: 49%;
     margin: 1px;
     text-align: center;
@@ -101,9 +134,9 @@ body {
 
 
 .loading .line-box-js {
-    margin: 40px;
+    
     width: 100%;
-    border: 2px solid #f1e05a  ;
+    border: 2px solid #f93943;
     border-radius: 20px;
     
 }
@@ -111,14 +144,34 @@ body {
 .loading .line-box-js .line-js {
     height: 20px;
     border-radius: 20px;
-    background: #f1e05a ;
-    width: 16%;
+    background: #f93943;
+    width: 28%;
     margin: 1px;
     text-align: center;
 }
 
 
+.presentation {
+    background-image: url(/image/background_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
 
+.presentation-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+.portfolio {
+    background-color:#ECECEC;
+    height: 70vh;
+}
 
 
 @media screen and (min-width:1020px) {
@@ -135,9 +188,25 @@ body {
         display:contents;
     }
 
+    .description-container {
+        background-color: white;
+    }
+
     .description {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+    
+    .skill-container {
+        display: flex;
+        flex-direction: row;
+        height: 50vh;
+        background-color:#ECECEC;
+    }
+    .skill-text {
+    width: 100%;
     }
 }
 
