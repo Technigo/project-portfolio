@@ -9,6 +9,20 @@ box-sizing: border-box;
 text-rendering: optimizeLegibility;
 }
 
+.container {
+    width: 325px; /*supposed to be 325?*/  
+    margin: 0 auto;  
+    /* padding: 50px 0; */
+    }
+    
+    .section:nth-child(2n){
+    background-color: #F4F4F4;    
+    }
+    
+    .section:nth-child(2n+1) {
+    background-color: #fff;
+    }
+
 /*HEADER*/
 
 /* Hero-image is one of the few cases where we need to set a fixed height 
@@ -18,7 +32,7 @@ so nothing will stretch it out*/
 .header{
 background-image: url('./assets/sahand-babali-gavODTHG36Y-unsplash.jpg');    
 height: 520px;
-width: 375px; 
+/* width: 375px;  */
 background-size: cover;
 background-position-x: 100%;
 position: relative; /*this needs to be here since position absolute needs context*/
@@ -94,22 +108,7 @@ line-height: 40px;
 /* or 167% */    
 }
 
-
 /*SECTIONS*/
-
-.container {
-width: 375px; /*supposed to be 325?*/  
-margin: 0 auto;  
-}
-
-.section:nth-child(2n){
-background-color: #F4F4F4;    
-}
-
-.section:nth-child(2n+1) {
-background-color: #fff;
-}
-
 /*SUMMARY-SECTION*/
 
 .summary {
@@ -137,15 +136,15 @@ display: inline;
 
 /*FOR ALL RED HEADINGS*/
 .red-box {
-    background-color: #FA382F;    
-    padding: 0 5px;
-    color: #fff;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold; /*does not work*/
-    font-size: 22px;
-    line-height: 27px;
-    }
+background-color: #FA382F;    
+padding: 0 5px;
+color: #fff;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold; /*does not work*/
+font-size: 22px;
+line-height: 27px;
+}
 
 .tech-heading {
 text-align: center;
@@ -167,9 +166,9 @@ padding: 24px 24px 43px 24px;
 /*PROJECTS SECTION*/
 
 .projects-container {
-/* display: grid;
+display: grid;
 grid-template-columns: 1, 1fr;  
-position: relative; supposed to be here? */
+position: relative;
 }
 
 .featured-projects a {
@@ -177,108 +176,97 @@ text-decoration: none;
 }
 
 .project-heading {
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 22px;
-line-height: 27px;
-text-align: center;    
-background-color: #FA382F;    
-color: #fff;
-width: 255px;
-height: 26px;
-
-/* position: absolute;
-width: 255px;
-height: 26px;
-left: 69px;
-top: 1156px; */
+text-align: center;
+margin-top: 45px;
+margin-bottom: 24px;
 }
 
-.project-text-heading {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 29px;
-    /* or 171% */
-    
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.01em;
-    
-    color: #FA382F;    
-
-    /* position: absolute;
-    width: 327px;
-    height: 110px;
-    left: 24px;
-    top: 1443px; */
+.project-image-group {
+position: relative;
+align-items: center;
+justify-content: center;
+text-align: center;
 }
 
-.project-image {
-/* position: absolute;
-width: 327px;
-height: 212px;
-left: 24px;
-top: 1222px; */
+.project-overlay {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(1, 61, 182, 0.3);
+/* transition: 0.5s ease; */
 }
 
 .project-image-text {
+position: absolute;
+top: 35%;
+left: 25%;
+
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
 font-size: 28px;
 line-height: 34px;
-display: flex;
-align-items: center;
-text-align: center;
 letter-spacing: 0.01em;
 color: #FFFFFF;
+}
 
-/* position: absolute;
-width: 327px;
-height: 110px;
-left: 24px;
-top: 1443px; */
+.project-text-heading {
+padding-top: 15px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 29px;
+/* or 171% */
+
+letter-spacing: 0.01em; 
+color: #FA382F;
 }
 
 .project-text {
-    font-family: Roboto;
+font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 17px;
 line-height: 29px;
 /* or 171% */
-
-display: flex;
-align-items: center;
 letter-spacing: 0.01em;
 color: #000000;
+padding-bottom: 7px;
 
-/* position: absolute;
-width: 327px;
-height: 110px;
-left: 24px;
-top: 1443px; */
+
 }
 
-.project-tags {
+.project-text-group a {
+text-decoration: none;
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 9px;
-line-height: 11px;
-/* or 122% */
-
-display: flex;
-align-items: center;
-text-align: center;
+font-size: 17px;
+line-height: 29px;
+/* or 171% */
 letter-spacing: 0.01em;
+color: #000000;
+}
 
+.link-color {
+color:#FA382F    
+}
+
+.project-tags p {
+display: inline-block;    
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 21px;
+/* or 122% */
+letter-spacing: 0.01em;
 color: #000000; 
-background-color: #FDDFE7;  /*some smart way to make background follow text?*/
-height: 21px; 
+background-color: #FDDFE7;
+padding: 0 5px;
 }
 /*COMMON PITFALLS*/
 
