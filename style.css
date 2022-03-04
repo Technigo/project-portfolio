@@ -1,4 +1,4 @@
-/*shared styles...... maybe not in this project???*/
+/*shared styles*/
 * {
 margin: 0; 
 padding: 0;  
@@ -50,6 +50,9 @@ top: 48px;
 left: 220px;
 right: 24,5px;
 bottom: 432px;   
+/*webkit-justify cont, and webkit align items*/ 
+/*can use aria hidden to hide things*/
+/*tailwind for styling*/
 }
 
 .hero-text-container {
@@ -95,7 +98,7 @@ line-height: 40px;
 /*SECTIONS*/
 
 .container {
-width: 375px;  
+width: 375px; /*supposed to be 325?*/  
 margin: 0 auto;  
 }
 
@@ -132,25 +135,21 @@ display: inline;
 
 /*TECH-SECTION*/
 
-.tech {
-padding: 49px 24px 43px 24px;
-
-}
+/*FOR ALL RED HEADINGS*/
+.red-box {
+    background-color: #FA382F;    
+    padding: 0 5px;
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold; /*does not work*/
+    font-size: 22px;
+    line-height: 27px;
+    }
 
 .tech-heading {
-text-align: center; /*why not in center or bold?*/
-/* margin-left: 147px; */
-/* margin-right: 146; */
-margin-bottom: 24px;
-background-color: #FA382F;    
-width: 82px;
-height: 27px;
-color: #fff;
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 22px;
-line-height: 27px;
+text-align: center;
+margin-top: 45px;
 }
 
 .tech-text {
@@ -162,7 +161,129 @@ line-height: 29px;
 /* or 171% */
 text-align: center;
 color: #000000;    
+padding: 24px 24px 43px 24px;
 }
+
+/*PROJECTS SECTION*/
+
+.projects-container {
+/* display: grid;
+grid-template-columns: 1, 1fr;  
+position: relative; supposed to be here? */
+}
+
+.featured-projects a {
+text-decoration: none;
+}
+
+.project-heading {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 27px;
+text-align: center;    
+background-color: #FA382F;    
+color: #fff;
+width: 255px;
+height: 26px;
+
+/* position: absolute;
+width: 255px;
+height: 26px;
+left: 69px;
+top: 1156px; */
+}
+
+.project-text-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 29px;
+    /* or 171% */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    
+    color: #FA382F;    
+
+    /* position: absolute;
+    width: 327px;
+    height: 110px;
+    left: 24px;
+    top: 1443px; */
+}
+
+.project-image {
+/* position: absolute;
+width: 327px;
+height: 212px;
+left: 24px;
+top: 1222px; */
+}
+
+.project-image-text {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 34px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.01em;
+color: #FFFFFF;
+
+/* position: absolute;
+width: 327px;
+height: 110px;
+left: 24px;
+top: 1443px; */
+}
+
+.project-text {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 29px;
+/* or 171% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+color: #000000;
+
+/* position: absolute;
+width: 327px;
+height: 110px;
+left: 24px;
+top: 1443px; */
+}
+
+.project-tags {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 9px;
+line-height: 11px;
+/* or 122% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.01em;
+
+color: #000000; 
+background-color: #FDDFE7;  /*some smart way to make background follow text?*/
+height: 21px; 
+}
+/*COMMON PITFALLS*/
+
+/* .feature-projects2 {
+} */
 
 
 
