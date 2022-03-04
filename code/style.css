@@ -15,25 +15,24 @@ section:nth-child(2n){
 .content-box{
     display: flex;
     justify-content: center;
-    border:gray solid;
 }
 .content-wrapper {
     width: 327px;
     display: flex;
     flex-direction: column;
-    line: height 30px;
     font-size: 16px;
-    
+    margin: 20px;
 }
 .boxed-heading{
     color: white;
     background-color:#FA382F;
+    padding: 0 1px;
     display: inline;
     text-align: center;
 }
 .heading-box{
     display: flex;
-    justify-content: center;
+    justify-content: center;  
 }
 .text-wrapper{
     margin-top: 10%;
@@ -47,7 +46,8 @@ section:nth-child(2n){
 .box-tag{
     display: inline;
     background-color:#FDDFE7;
-    padding: 9px;
+    padding: 6px;
+    margin-top: 10px;
 }
 .centered-heading{
     font-family: 'Montserrat', sans-serif;
@@ -55,7 +55,12 @@ section:nth-child(2n){
     text-align: center;
     color: #FA382F;
 }
-
+.red-detail{
+    color: #FA382F;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
 /* Header section */
 .header{
     background-image: url(./assets/chirag-saini-F5_CLwEyYzM-unsplash.jpg);
@@ -130,32 +135,76 @@ section:nth-child(2n){
     display: inline-block;
     margin-left: -5px;
 }
-
-/* ---for more section */
+/* featured projects */
+.project-box{
+    /* padding: 20px; */
+    margin: 30px 0;
+    /* border: solid; */
+}
+.project-img{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.text-over-img{
+    position: absolute;
+}
+/* ---For more section */
 .icon-wrapper{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 4px;
 }
 .icon-box{
-border: solid;
 display: flex;
 flex-direction: column;
-justify-content: center;
+align-items: center;
+font-size: 11px;
+color: #FA382F;
 }
 .icon-img{
-    border: solid;
     height: 60px;
     width: 60px;
+    font-weight: 400;
 }
-
+.icon-img-li{
+    margin-right: 17px;
+}
+/* thoughts about code section*/
+.article-heading{
+    font-weight: 700;
+    font-size: 21px;
+    margin: 5px 0;
+}
+.link-color{
+    color: black;
+    font-weight: 700;
+}
+.link-collection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* --------skills section */
+.skills{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+}
+.skill-box{
+    text-align: center;
+    font-weight: 16px;
+}
+/* ----hidden content--------------- */
 .hidden-in-mobileview{
     display: none;
 }
 /* footer section */
 footer{
     height: 302px;
-    background-color: #072BCE;
+    background-color: black;
     display: flex;
     align-items: center;
 }
@@ -232,7 +281,7 @@ footer{
         border: solid red;
 
     }
-    .grid-box{
+    .project-box{
         border: solid blue;
         width: 40%;
         display: flex;
