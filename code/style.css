@@ -101,6 +101,7 @@ h1.tital-uppercase {
 /*Sections*/
 .section:nth-child(2n) {
   background-color: #f4f4f4;
+  /* background-color: rgb(234, 227, 219); */
 }
 
 .section:nth-child(2n + 1) {
@@ -174,14 +175,24 @@ article.tech-section {
   text-align: center;
 }
 
-.skills-text-group {
+article.my-thoughts {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  height: 463px;
-  text-align: center;
-  align-items: flex-start;
 }
+
+.skills-text-group {
+  padding-bottom: 2rem;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 p {
   margin: 5px;
 }
