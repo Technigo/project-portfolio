@@ -16,7 +16,6 @@
 /* Reset               */
 /* ------------------- */
 
-
 /* Box sizing, margins and root font-size */
 * {
     box-sizing: border-box;
@@ -41,7 +40,6 @@ img {
 /* ------------------- */
 /*     Typography      */
 /* ------------------- */
-
 
 body {
   font-family: 'Roboto',  sans-serif;
@@ -77,7 +75,6 @@ img.title-icon {
   max-width: 50px;
   /* display: inline; */
 }
-
 
 h2 {
   font-family: 'montserrat', sans-serif;
@@ -143,13 +140,12 @@ p {
 .image-container--thoughts {
   position: relative;
   justify-content: center;
-  /* margin-bottom: 1em; */
   display: flex;
 } 
 
 .project-image,
 .thoughts-image {
-  object-fit: conver;
+  object-fit: cover;
 }
 
 .header-overlay {
@@ -226,6 +222,7 @@ h4:hover {
   border-bottom: 3px solid var(--clr-black);
 }
 
+
 /* ------------------- */
 /*    Links & icons    */
 /* ------------------- */
@@ -264,6 +261,10 @@ a[href^=tel] {
 .social-icon {
   width: 30px;
   height: 30px;
+}
+
+svg.path {
+  fill: var(--clr-light);
 }
 
 
@@ -401,6 +402,16 @@ div.section-thoughts--text {
   align-items: center;
 }
 
+.more-thoughts {
+  background-color: var(--clr-light);
+  margin-top: 2em;
+  padding: 0 1.5em 2.5em;
+  min-width: 327;  
+}
+
+.more-thoughts--container p {
+  display: inline;
+}
 
 /**** For more ****/
 .section-more--container {
@@ -463,9 +474,10 @@ footer p {
     font-size: 32px;
   }
 
+  
   h4,
   .list-heading {
-    font-size: 24px;
+    font-size: 25px;
   }
 
   p, li {
@@ -585,7 +597,6 @@ footer p {
     font-size: 38px;
   }
   
-  h4,
   .list-heading {
     font-size: 28px;
   }
@@ -617,10 +628,6 @@ footer p {
   .social-icon {
     width: 80px;
     height: 80px;
-  }
-
-  svg:hover {
-    fill:var(--clr-dark);
   }
   
   .container {
