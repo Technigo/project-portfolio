@@ -21,7 +21,16 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+  line-height: 1.5em;
+}
+
+ul {
+  text-align: center;
+  padding: 0;
 }
 
 img {
@@ -129,7 +138,7 @@ p {
 .image-container--thoughts {
   position: relative;
   justify-content: center;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
   display: flex;
 } 
 
@@ -238,7 +247,7 @@ a.project-link:focus {
 
 a[href^=tel] {
 	text-decoration: inherit;
-	color: white;
+	color: var(--clr-black);
 }
 
 .social-icon {
@@ -372,7 +381,7 @@ div.section-thoughts--text {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.skills-container--item > p {
+.skills-container--item > ul > li {
   text-align: center;
 }
 
@@ -417,10 +426,6 @@ footer p {
 
 @media (min-width: 768px) {
 
-  * {
-    font-size: 20px;
-  }
-
   h2 {
     font-size: 28px;
     padding: 0.1em;
@@ -430,11 +435,12 @@ footer p {
     font-size: 32px;
   }
 
-  h4 {
+  h4,
+  .list-heading {
     font-size: 24px;
   }
 
-  p {
+  p, li {
     font-size: 20px;
   }
   
@@ -515,26 +521,27 @@ footer p {
 
 @media (min-width: 1200px) {
   
-  * {
-    font-size: 25px;
-  }
-
   h2 {
     font-size: 36px;
   }
-
+  
   h3 {
     font-size: 38px;
   }
-
-  h4 {
+  
+  h4,
+  .list-heading {
     font-size: 28px;
   }
- 
+  
   header {
     height: 400px;
   }
-
+  
+  p, li {
+    font-size: 25px;
+  }
+  
   .title,
   .title > span {
     font-size: 1.15rem;
