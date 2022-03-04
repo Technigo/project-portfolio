@@ -21,7 +21,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 img {
@@ -198,6 +198,13 @@ p {
   display: none;
 }
 
+.underline {
+  border-bottom: 3px solid var(--clr-dark);
+}
+
+.underline-black {
+  border-bottom: 3px solid var(--clr-black);
+}
 
 /* ------------------- */
 /*    Links & icons    */
@@ -206,7 +213,8 @@ p {
 a,
 a:active {
   font-family: 'roboto', sans-serif;
-  color: var(--clr-black)
+  color: var(--clr-black);
+  text-decoration: none;
 }
 
 a.social-link,
@@ -214,13 +222,11 @@ a.project-link,
 a.social-link:active,
 a.project-link:active {
   color: var(--clr-black);
-  text-decoration: none; 
 }
 
 a:hover,
 a:focus {
   color: var(--clr-black);
-  text-decoration: none;
 }
 
 a.social-link:hover,
@@ -228,6 +234,11 @@ a.project-link:hover,
 a.social-link:focus,
 a.project-link:focus {
   color: var(--clr-dark)
+}
+
+a[href^=tel] {
+	text-decoration: inherit;
+	color: white;
 }
 
 .social-icon {
@@ -243,7 +254,7 @@ a.project-link:focus {
 /**** Header ****/
 header {
   background: var(--clr-white);
-  height: 50vh;
+  height: 350px;
   justify-content: space-around;
 }
 
@@ -272,7 +283,7 @@ header {
 }
 
 .header-container {
-  margin-top: 20vh;
+  margin-top: 125px;
 }
 
 .header-container--second {
@@ -283,7 +294,7 @@ header {
 img.profile-image {
   position: absolute;
   right: 30px;
-  top: 45vh;
+  top: 320px;
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -328,7 +339,7 @@ article {
   font-size: 0.7em; 
   line-height: 0.5em;
   padding: 0.75em;
-  margin-right: 0.6em;   
+  margin:0.5em 0.6em 0 0;   
   font-weight: 500;
   background-color: var(--clr-black);
   text-decoration: none;
@@ -427,6 +438,10 @@ footer p {
     font-size: 20px;
   }
   
+  header {
+    height: 400px;
+  }
+
   .header-container {
     margin-top: 20vh;
   }
@@ -437,7 +452,7 @@ footer p {
 
   img.profile-image {
     right: 30px;
-    top: 42vh;
+    top: 350px;
     width: 250px;
     height: 250px;
   }
@@ -517,7 +532,7 @@ footer p {
   }
  
   header {
-    height: 35vh;
+    height: 400px;
   }
 
   .title,
@@ -535,7 +550,7 @@ footer p {
 
   img.profile-image {
     right: 30px;
-    top: 27vh;
+    top: 285px;
     width: 330px;
     height: 330px;
   }
