@@ -5,14 +5,18 @@
   }
 
   :root {
-    --red: red;
+    --red: #FA382F;
   }
 
   p{
     font-style: normal;
-    font-weight: 400;
+    font-weight:200;
     font-size: 17px;
     line-height: 29px;
+  }
+
+  .bold-text{
+      font-weight: 700;
   }
 
   h2{
@@ -21,6 +25,8 @@
     background-color: var(--red);
     padding: 2px;
   }
+
+ 
 
 /*---header styles---*/
 .header{
@@ -80,8 +86,8 @@
     top:120px;
 }
 
-.header-text{
-    font-family: 'Montserrat', sans-serif;
+.portfolio-title{
+    font-size: 15px;
 }
 
 .main-title{
@@ -129,7 +135,7 @@ section:nth-child(2n){
     text-align: center;
 }
 /*---section 3 (features projects) styles---*/
-.featured-projects-text{
+.section-title{
     display: flex;
     justify-content: center;
     padding-top: 40px;
@@ -139,9 +145,45 @@ section:nth-child(2n){
     padding-bottom: 35px;
     width: 100%;
 }
+.project-image-group{
+    position: relative;
+}
+
 .project-image{
     width: 100%;
+    display: inherit;
 }
+.project-overlay{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: rgba(128,128,128,0.7);
+}
+
+.project-image-group:hover .project-overlay{
+    background-color: transparent;
+}
+
+
+.project-image-title{
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image-group:hover .project-image-title{
+    display: none;
+}
+
 .project-text-group{
     font-family: 'Roboto', sans-serif;
 }
@@ -152,29 +194,92 @@ section:nth-child(2n){
 .project-languages{
     display: flex;
     gap: 8px;
-    font-size: 9px;
+    font-size: 12px;
 }
 .language-text{
     background-color: pink;
     padding: 5px;
+}
+.other-projects-title {
+    background-color: transparent;
+    color: var(--red);
+}
+.other-project{
+    padding-bottom: 40px;
+}
+
+.other-project:hover{
+    text-decoration: underline;
+}
+/*---section "skills" styles---*/
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    
+}
+.skills-container-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+/*---section "for more" styles---*/
+.formore-container{
+    flex-direction: row;
+    padding-bottom: 40px;
+    width: 327px;
+    justify-content: center;
+}
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+.formore-logo{
+    width: 60px;
+}
+.logo-text{
+    color: var(--red);
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 700;
+    text-align: center;
 }
 /*---footer styles---*/
 footer{
     background: #072BCE;
 }
 
+.footer-container{
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 60px;
+}
+.footer-title{
+    background-color: #072BCE;
+}
+
+.footer-text{
+    color: #fff;
+}
+
 /*---media queries (tablets)---*/
 @media screen and (min-width: 768px){
     p{
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 24px;
+        line-height: 48px;
     }
     h2{
         padding: 4px;
     }
     /*---container styles---*/
     .container{
-        width: 768px;
+        width: 700px;
     }
     /*---header styles---*/
     .header{
@@ -219,17 +324,69 @@ footer{
     .project{
         width: 48%;
     }
-    .featured-projects-text{
+    .section-title{
     padding-top: 120px;
     padding-bottom: 90px;
+    }
+    .project-image{
+        height: 180px;
+    }
+    
+    .project-languages{
+        font-size: 17px;
+    }
+    
+    /*---section "skills" styles---*/
+    .skills-container{
+        padding-bottom: 120px;
+    }
+    .skills-container-child{
+        width: 33%;
+    }
+    /*---section "for more" styles---*/
+    .formore-container{
+        width: 600px;
+    }
+    .logo-container{
+        padding-bottom: 120px;
+    }
+    .formore-logo{
+        width: 160px;
+    }
+    .logo-text{
+        font-size: 18px;
     }
 }
 
 /*---media queries (desktops)---*/
-@media screen and (min-width: 1100px){
+@media screen and (min-width: 1200px){
+    p{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    h2{
+        font-size: 48px;
+    }
     /*---container styles---*/
     .container{
         width: 1100px;
     }
-
+    /*---section "projects" styles---*/
+    .project-image{
+        height: 300px;
+    }
+    
+     /*---section "for more" styles---*/
+     .formore-container{
+        width: 800px;
+    }
+    .logo-container{
+        padding-bottom: 120px;
+    }
+    .formore-logo{
+        width: 160px;
+    }
+    .logo-text{
+        font-size: 25px;
+    }
 }
