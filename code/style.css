@@ -7,6 +7,7 @@
 .hidden {
     display: none;
 }
+
 html {
     font-size: 62.5%;
 }
@@ -18,6 +19,11 @@ img {
 
 body {
     position: relative;
+    font-family: "roboto", sans-serif;
+}
+
+.font-monstserrat {
+    font-family: "Montserrat", sans-serif;
 }
 
 .section:nth-child(n) {
@@ -45,12 +51,22 @@ body {
     position: absolute;
 }
 
+h2 {
+    font-size: 2.2rem;
+    background: red;
+    color: #fff;
+    padding: 6px 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
 /**************** HEADER *****************/
 
 header {
     background-image: url(https://images.unsplash.com/photo-1646121575186-fe136178cff2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1973&q=80);
     height: 520px;
-    background-position: center;
+    background-position-x: 20%;
     background-size: cover;
     left: 0px;
     top: 0px;
@@ -70,7 +86,7 @@ header .profile-img {
     height: 180px;
     left: 171px;
     top: 356px;
-    border-radius: 100px;
+    border-radius: 50%;
     z-index: 1;
 }
 
@@ -80,7 +96,6 @@ header .heading-container {
     left: 24px;
     top: 121px;
 
-    font-family: "Roboto", sans-serif;
     font-size: 1.3rem;
     letter-spacing: 0.04em;
     font-weight: 700;
@@ -92,22 +107,34 @@ header .portfolio-owner {
     font-size: 1.3rem;
 }
 
+h1 {
+    font-size: 4rem;
+    line-height: 49px;
+}
+
+h1 span {
+    font-size: 2.2rem;
+    line-height: 40px;
+    display: block;
+}
+
 .portfolio-owner span {
     font-weight: 400;
 }
 
+
 /**************** INTRO SECTION *****************/
+/***********************************************/
+
 .intro-section{
     height: 324px;
     left: 0px;
     top: 520px;
     background: #F4F4F4;
+    padding: 49px 24px 43px 24px;
+
 }
 
-.intro-section-wrapper {
-    padding: 49px 24px 43px 24px;
-    
-}
 
 .intro-section-wrapper p {
     font-family: "Montserrat",sans-serif;
@@ -117,6 +144,7 @@ header .portfolio-owner {
     line-height: 29px;
     position: relative;
     text-align: justify;
+    word-wrap: break-word;
 }
 
 .intro-section-wrapper .line-symbol {
@@ -134,11 +162,133 @@ header .portfolio-owner {
     border-radius: 100px;
     background: red;
     display: inline-block;
-    margin-left: -3px;
+    margin-left: -24px;
 }
 
 
+/************** TECH SKILL SECTION **************/
+/***********************************************/
+.tech-skill-section {
+    height: 271px;
+    top: 844px;
+    padding: 40px 24px 33px 24px;
+}
+
+.tech-skill-text {
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-skill-text p {
+    font-family: "Montserrat",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    margin-top: 33px;
+}
 
 
+/*********** FEATURED-PROJECT SECTION ***********/
+/***********************************************/
+ 
+.projects-section {
+    position: absolute;
+    top: 1115px;
+}
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.projects-wrapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 56px;
+    height: 1298px;
 
+}
+
+.projects-wrapper {
+    padding: 40px 24px 0 24px;
+
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(327px,1fr));
+    gap: 32px;
+    position: relative;
+}
+
+.projects-text {
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.project-name, .project-description  {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+}
+
+.project-languages {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+
+.project-language-list{
+    background-color: rgb(191, 191, 198);
+    font-size: 9px;
+    padding: 6px;
+}
+
+.other-project {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    width: 327px;
+    height: 477px;
+    align-items: center;
+    background-color: #F4F4F4;
+}
+
+.other {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.other-project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style: none;
+    width: 327px;
+    height: 262px;
+    box-sizing: border-box;
+   
+}
+
+
+/*********** BLOG SECTION ***********/
+/***********************************************/
+
+.blog-section {
+    position: absolute;
+    width: 375px;
+    height: 1065px;
+    left: 0px;
+    top: 2413px;
+}
 
