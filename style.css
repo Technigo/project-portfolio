@@ -25,7 +25,7 @@ body {
 .tech-heading-container {
   display: flex;
   justify-content: center;
-  padding: bottom 25px;
+  padding-bottom: 25px;
 }
 
 .skills-title,
@@ -41,11 +41,15 @@ body {
   padding: 4px;
   text-transform: uppercase;
   display: inline-block;
-  border-radius: 5px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
 }
 
+.project-text h3 {
+  color: #fa382f;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
 .portfolio-section {
   display: flex;
   padding: 41px 0;
@@ -72,16 +76,12 @@ body {
 /* ----------------HEADER--------------------- */
 
 .header-container {
-  background-image: url(./Assets/pexels-photo-7577858.jpeg);
+  background-image: url(./Assets/pexels-photo-7319287.jpeg);
   background-size: cover;
   height: 520px;
   width: 100%;
 }
 
-.needle {
-  width: 55px;
-  height: 11px;
-}
 .header-info {
   display: flex;
   flex-direction: column;
@@ -94,88 +94,68 @@ body {
 }
 
 .social-media-icons-header img {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
 }
 
 .job-title {
-  position: absolute;
-  margin: 121px 131px 24px 197px;
-  width: 220px;
-  height: 202px;
+  width: 231px;
   margin-top: 30px;
   margin-left: 24px;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  line-height: 49px;
+}
+.about-title {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
+.job-title p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 49px;
+}
+
+.job-title h2 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 49px;
+  font-style: normal;
 }
 
 .profile-image {
   position: absolute;
-  right: 230px;
-  top: 150px;
+  top: 380px;
+  right: 24px;
   border: white 2px solid;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
 }
-
-/* SKILL SECTION  */
-.skills-container {
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-content: center;
-  padding-top: 25px;
+/* INTRO SECTION */
+.needle {
+  width: 55px;
 }
 
-.skills-list {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  width: 100%;
-}
-
-.skills-list h2 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 2;
-  text-align: center;
-  color: var(--primary);
-  width: auto;
-  text-transform: uppercase;
-}
-
-.skills-list ul {
-  list-style-type: none;
-  text-align: center;
-}
-
-.skills-list li {
-  font-family: "Montserrat", sans-serif;
-  font-size: 11px;
-  line-height: 1.5;
-}
-
-/* <----------TECH SECTION -----------> */
-.tech-section {
-  height: 330px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
+/* TECH SECTION */
 
 .tech-section-text {
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 1.5;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .red-text {
@@ -193,6 +173,7 @@ body {
 
 .portfolio-section a {
   text-decoration: none;
+  color: #000;
 }
 
 .image-container {
@@ -235,7 +216,6 @@ body {
   text-transform: uppercase;
   color: var(--secondary);
   letter-spacing: 0.07em;
-  font-family: "Sulphur Point", sans-serif;
 }
 
 .text-over-image:hover {
@@ -338,6 +318,7 @@ body {
   display: block;
   align-self: flex-end;
   text-transform: uppercase;
+  padding: 30px 0 10px;
 }
 
 .project-title {
@@ -349,6 +330,7 @@ body {
   margin-bottom: 0;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 35px 0px 11px;
 }
 
 .red {
@@ -374,7 +356,7 @@ body {
 .other-project-tags span {
   font-family: "Roboto", sans-serif;
   background-color: #dedede;
-  font-size: 9px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: "Sulphur Point", sans-serif;
@@ -415,7 +397,50 @@ body {
   color: var(--primary);
   align-items: center;
   font-size: 21px;
+  padding: 35px 0px 11px;
 }
+
+/* SKILL SECTION  */
+.skills-container {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  padding-top: 25px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+
+.skills-list h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+  color: var(--primary);
+  width: auto;
+  text-transform: uppercase;
+}
+
+.skills-list ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.skills-list li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
 /* <----------FOR MORE SECTION -----------> */
 
 .for-more-social-media-container {
@@ -457,7 +482,7 @@ body {
   justify-content: center;
   color: #fff;
   display: flex;
-  height: 300px;
+  height: 302px;
 }
 
 /* <----------D E S K T O P ----------> */
@@ -465,5 +490,11 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200x) {
+  .container {
+    width: 1200px;
   }
 }
