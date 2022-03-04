@@ -6,118 +6,130 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Savannah Hayes - Portfolio</title>
+  <link rel="stylesheet" href="standard.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header class="hero">
-    <div class="hero__container">
-      <div class="hero__icons">
-        <img src="./images/linkedin.png" alt="linkedin icon">
-        <img src="./images/github.png" alt="github icon">
-        <img src="./images/stack.png" alt="stack overflow icon">
+    <div class="hero__container container">
+      <div class="hero__icons flex">
+        <div class="flex">
+          <img src="./images/linkedin.png" alt="linkedin icon">
+        </div>
+        <div class="flex">
+          <img src="./images/github.png" alt="github icon">
+        </div>
+        <div class="flex">
+          <img src="./images/stack.png" alt="stack overflow icon">
+        </div>
       </div>
-      <p class="hero__paragraph">PORTFOLIO: <strong>SAVANNAH HAYES</strong></p>
-      <h1 class="hero__header">frontend developer</h1>
-      <p class="hero__sub-header">with a background in finance</p>
-      <img src="./images/sh.jpg" class="hero__image" alt="profile image of savannah hayes">
+      <div class="header">
+        <p>PORTFOLIO: <strong class="white-text">SAVANNAH HAYES</strong></p>
+        <h1 class="header__heading">frontend <br> developer</h1>
+        <p class="header__sub-heading">+ backend developer</p>
+      </div>
+      <img src="./images/sh.jpg" class="header__image" alt="profile image of savannah hayes">
     </div>
   </header>
 
   <main>
-    <section class="introduction">
+    <section class="introduction section">
       <div class="container">
-        <span class="introduction__line"></span>
-        <span class="introduction__dot"></span>
         <p class="introduction__paragraph">
+          <span class="introduction__line"></span>
+          <span class="introduction__dot"></span>
           Hello! I’m a frontend developer based in Stockholm with a background in finance. I love building accessible
-          web applications with great user experiences.
+          web applications with great user experience.
         </p>
       </div>
     </section>
 
-    <section class="technologies">
+    <section class="technologies section">
       <div class="container">
-        <h2>Tech</h2>
-        <p>
+        <h2 class="inline-text">TECH</h2>
+        <p class="technologies__paragraph">
           HTML, CSS, Flexbox, ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web accesibly, API:s,
           mob-programming, pair-programming, Github.
         </p>
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects section">
       <div class="container">
-        <h2>Featured Projects</h2>
-        <article class="project">
-          <div class="project__wrapper">
-            <img class="project__image" src="" alt="chat bot project screenshot">
-            <div class="project__overlay"></div>
-          </div>
-          <div class="project-content">
-            <h3>MEDICAL CHAT BOT BUILT</h3>
-            <p>Rule-based medical chatbot built focusing on JavaScript fundamentals.</p>
-            <div class="project-content__icons">
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>JavaScript ES6</p>
+        <h2 class="inline-text">Featured Projects</h2>
+        <div class="projects-wrapper">
+          <article class="project text-left">
+            <div class="project__wrapper">
+              <img class="project__image" src="./images/we.png" alt="weather app project screenshot">
+              <div class="project__overlay"></div>
             </div>
-          </div>
-        </article>
-        <article class="project">
-          <div class="project__wrapper">
-            <img class="project__image" src="" alt="weather app project screenshot">
-            <div class="project__overlay"></div>
-          </div>
-          <div class="project-content">
-            <h3>REALTIME WEATHER APP</h3>
-            <p>Web app built with JavaScript fetching the weather from OpenWeatherMap API</p>
-            <div class="project-content__icons">
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>JavaScript ES6</p>
-              <p>APIs</p>
+            <div class="project__content">
+              <h3 class="inline-text">REALTIME WEATHER APP</h3>
+              <p>Web app built with JavaScript fetching the weather from OpenWeatherMap API</p>
+              <div class="tag-wrapper flex">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript ES6</p>
+                <p>APIs</p>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="project">
-          <div class="project__wrapper">
-            <img class="project__image" src="" alt="github tracker project screenshot">
-            <div class="project__overlay"></div>
-          </div>
-          <div class="project-content">
-            <h3>GITHUB TRACKER</h3>
-            <p>Write a short description about the project and what technologies you have used.</p>
-            <div cclass="project-content__icons">
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>JavaScript ES6</p>
-              <p>APIs</p>
+          </article>
+          <article class="project container-top text-left">
+            <div class="project__wrapper">
+              <img class="project__image" src="./images/med.png" alt="chat bot project screenshot">
+              <div class="project__overlay"></div>
             </div>
-          </div>
-        </article>
-        <article class="project">
-          <div class="project__wrapper">
-            <img class="project__image" src="" alt="photo search project screenshot">
-            <div class="project__overlay"></div>
-          </div>
-          <div class="project-content">
-            <h3>REACT PHOTO SEARCH APP</h3>
-            <p>Photo Search App built using React Hooks to query the Unsplash API.</p>
-            <div class="project-content__icons">
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>JavaScript ES6</p>
-              <p>React</p>
+            <div class="project__content">
+              <h3 class="inline-text">MEDICAL CHAT BOT BUILT</h3>
+              <p>Rule-based medical chatbot built focusing on JavaScript fundamentals.</p>
+              <div class="tag-wrapper flex">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript ES6</p>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+          <article class="project text-left">
+            <div class="project__wrapper">
+              <img class="project__image" src="./images/github-tracker.png" alt="github tracker project screenshot">
+              <div class="project__overlay"></div>
+            </div>
+            <div class="project__content">
+              <h3 class="inline-text">GITHUB TRACKER</h3>
+              <p>Write a short description about the project and what technologies you have used.</p>
+              <div class="tag-wrapper flex">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript ES6</p>
+                <p>APIs</p>
+              </div>
+            </div>
+          </article>
+          <article class="project text-left">
+            <div class="project__wrapper">
+              <img class="project__image" src="./images/photos.png" alt="photo search project screenshot">
+              <div class="project__overlay"></div>
+            </div>
+            <div class="project__content">
+              <h3 class="inline-text">REACT PHOTO SEARCH APP</h3>
+              <p>Photo Search App built using React Hooks to query the Unsplash API.</p>
+              <div class="tag-wrapper flex">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript ES6</p>
+                <p>React</p>
+              </div>
+            </div>
+          </article>
+        </div>
 
-        <section>
+        <section class="projects-section">
           <h4>OTHER PROJECTS</h4>
-          <div>
-            <p>DICTIONARY APP. Dictionary application created using React and Dictionary API</p>
-            <div>
+          <div class="text-left">
+            <p><strong>DICTIONARY APP.</strong> Dictionary application created using React and Dictionary API.
+              <strong>>></strong></p>
+            <div class="tag-wrapper flex">
               <p>HTML5</p>
               <p>CSS3</p>
               <p>JavaScript ES6</p>
@@ -125,25 +137,26 @@
               <p>APIs</p>
             </div>
           </div>
-          <div>
-            <p>GUESS WHO GAME. Game created to learn about basic JavaScript.</p>
-            <div>
+          <div class="text-left">
+            <p><strong>GUESS WHO GAME.</strong> Game created to learn about basic JavaScript. <strong>>></strong></p>
+            <div class="tag-wrapper flex">
               <p>HTML5</p>
               <p>CSS3</p>
               <p>JavaScript ES6</p>
             </div>
           </div>
-          <div>
-            <p>NEWS SITE. Responsive tech news website built with HTML.</p>
-            <div>
+          <div class="text-left">
+            <p><strong>NEWS SITE.</strong> Responsive tech news website built with HTML. <strong>>></strong></p>
+            <div class="tag-wrapper flex">
               <p>HTML5</p>
               <p>CSS3</p>
               <p>JavaScript ES6</p>
             </div>
           </div>
-          <div>
-            <p>BUSINESS SITE. Business landing page focusing on a hero image, sign-up form, and FAQ accordion.</p>
-            <div>
+          <div class="text-left">
+            <p><strong>BUSINESS SITE.</strong> Business landing page focusing on a hero image, sign-up form, and FAQ
+              accordion. <strong>>></strong></p>
+            <div class="tag-wrapper flex">
               <p>HTML5</p>
               <p>CSS3</p>
               <p>JavaScript ES6</p>
@@ -153,84 +166,116 @@
       </div>
     </section>
 
-    <section class="blogs">
+    <section class="blogs section">
       <div class="container">
-        <h2>My Thoughts about code</h2>
-        <article>
-          <img src="" alt="">
-          <time datetime="2021-11-29">November 29</time>
-          <h3>How to stop being scared: Learning to love to code</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam enim et voluptates dolor soluta, iusto
-            ducimus amet odi hic? Quasi deserunt earum nihil quidem.</p>
-        </article>
-        <article>
-          <img src="" alt="">
-          <time datetime="2022-03-02">March 2</time>
-          <h3>Come up with a great title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam enim et voluptates dolor soluta, iusto
-            ducimus amet odi hic? Quasi deserunt earum nihil quidem.</p>
-        </article>
+        <h2 class="inline-text">MY THOUGHTS</h2>
+        <div class="article-wrapper">
+          <article class="blogs__article container-top">
+            <img class="blogs__image" src="./images/computer.png" alt="imac screen with a blue background">
+            <div class="blogs__content text-left">
+              <time datetime="2019-12-20">DEC 2019</time>
+              <p class="blogs__sub-heading inline-text">How to stop being scared: Learning to love to code</p>
+              <p>Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to
+                creative writing in
+                that the author architecting a story must use an assortment of tools and components (i.e., content) in a
+                way to satisfy
+                a particular objective. <strong>>></strong></p>
+            </div>
+          </article>
+          <article class="blogs__article blogs__article--hide container-top">
+            <img class="blogs__image" src="./images/clock.png" alt="clock on top of a table">
+            <div class="blogs__content text-left">
+              <time datetime="2022-03-02">March 2</time>
+              <p class="blogs__sub-heading inline-text">Come up with a great title</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam enim et voluptates dolor soluta, iusto
+                ducimus amet odi hic? Quasi deserunt earum nihil quidem. <strong>>></strong></p>
+            </div>
+          </article>
+        </div>
 
-        <section>
-          <h4>MORE THOUGHTS</h4>
-          <p>Sep 2019 5 apps that will make coding easier.</p>
-          <p>Aug 2019 List other material that you have written about code.</p>
+        <section class="blogs__section">
+          <h4 class="blogs__heading inline-text">MORE THOUGHTS</h4>
+          <p class="text-left container-top">
+            <time datetime="2019-09-17">Sep 2019</time>
+            5 apps that will make coding easier. <strong>>></strong>
+          </p>
+          <p class="text-left">
+            <time datetime="2019-09-17">Sep 2019</time>
+            5 apps that will make coding easier. <strong>>></strong>
+          </p>
+          <p class="text-left">
+            <time datetime="2019-09-17">Sep 2019</time>
+            5 apps that will make coding easier. <strong>>></strong>
+          </p>
         </section>
       </div>
     </section>
 
-    <section class="skills">
+    <section class="skills section">
       <div class="container">
-        <h2>Skills</h2>
-        <ul>
-          <li>CODE</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript ES6</li>
-          <li>React</li>
-          <li>Styled Components</li>
-          <li>Github</li>
-        </ul>
-        <ul>
-          <li>TOOLBOX</li>
-          <li>Atom</li>
-          <li>Postman</li>
-          <li>Figma</li>
-          <li>Slack</li>
-        </ul>
-        <ul>
-          <li>MORE</li>
-          <li>Redux</li>
-          <li>Node.js</li>
-          <li>Agile methodology</li>
-        </ul>
+        <h2 class="inline-text">Skills</h2>
+        <div class="skills__wrapper">
+          <ul class="skills__list">
+            <li>CODE</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript ES6</li>
+            <li>React</li>
+            <li>Styled Components</li>
+            <li>Github</li>
+          </ul>
+          <ul class="skills__list">
+            <li>TOOLBOX</li>
+            <li>Atom</li>
+            <li>Postman</li>
+            <li>Figma</li>
+            <li>Slack</li>
+          </ul>
+          <ul class="skills__list">
+            <li>MORE</li>
+            <li>Redux</li>
+            <li>Node.js</li>
+            <li>Agile methodology</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="resources section">
       <div class="container">
-        <h2>FOR MORE</h2>
-        <div class="round">
-          <img src="./images/linkedin.png" alt="linkedin icon">
-          <h3>LINKEDIN</h3>
-        </div>
-        <div class="round">
-          <img src="./images/github.png" alt="github icon">
-          <h3>GITHUB</h3>
-        </div>
-        <div class="round">
-          <img src="./images/stack.png" alt="stack overflow icon">
-          <h3>STACK OVERFLOW</h3>
+        <h2 class="inline-text">FOR MORE</h2>
+        <div class="resource__icons flex container-top">
+          <div>
+            <div class="resource__icon">
+              <img src="./images/linkedin.png" alt="linkedin icon">
+            </div>
+            <h3 class="resource__heading">LINKEDIN</h3>
+          </div>
+          <div>
+            <div class="resource__icon">
+              <img src="./images/github.png" alt="github icon">
+            </div>
+            <h3 class="resource__heading">GITHUB</h3>
+          </div>
+          <div>
+            <div class="resource__icon">
+              <img src="./images/stack.png" alt="stack overflow icon">
+            </div>
+            <div class="heading-wrapper">
+              <h3 class="resource__heading resource__heading--right">STACK OVERFLOW</h3>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Savannah Hayes</p>
-      <p>+46 70 484 9371</p>
-      <p>savannah.hayes1@hotmail.com</p>
+    <div class="footer container">
+      <h2 class="footer__heading">CONTACT</h2>
+      <p class="footer__paragraph">Savannah Hayes</p>
+      <p class="footer__paragraph">+46 70 484 9371</p>
+      <p class="footer__paragraph footer__paragraph--bottom">savannah.hayes1@hotmail.com</p>
+    </div>
   </footer>
   </div>
 </body>
