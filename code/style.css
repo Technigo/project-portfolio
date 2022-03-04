@@ -109,13 +109,15 @@ h1.tital-uppercase {
 
 /*All sections*/
 .container {
-  padding: 24px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*box 1*/
 article.summary-section {
-  padding-top: 49px;
-  padding-bottom: 43px;
+  padding: 2rem 0;
 }
 
 .start-figure {
@@ -134,15 +136,23 @@ article.summary-section {
 }
 
 /*Box 2*/
+article.tech-section {
+  padding: 2rem 0;
+}
 
-.uppercase-dicription {
-  font-family: "Montserrat", sans-serif;
+.tech-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.uppercase-description {
   text-transform: uppercase;
   width: fit-content;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
-  text-align: center;
+  align-self: center;
   color: #fff;
   background-color: #ff0000;
 }
@@ -170,18 +180,34 @@ article.summary-section {
   flex-wrap: nowrap;
   height: 463px;
   text-align: center;
+  align-items: flex-start;
 }
-
 p {
   margin: 5px;
+}
+
+.for-more-text-group {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
   background-color: #072bce;
 }
 
+.contact-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .uppercase-contact {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  align-self: center;
+  color: #fff;
+}
+
+p.contact-description {
+  color: #fff;
   text-align: center;
 }
