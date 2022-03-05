@@ -49,8 +49,11 @@ body {
   left: 171px;
   top: 356px;
 
-  background-image: url("img/lightbulb.jpg");
-  background-size: contain;
+  background-image: url("img/profile\ pic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 35%;
+  background-position-x: 90%;
   border-radius: 50%;
 }
 
@@ -66,9 +69,17 @@ body {
 
 /*sections*/
 
+.projects-pictures-desktop {
+  display: none;
+}
+.project-text-desktop {
+  display: none;
+}
+
 .project-pictures {
   position: relative;
 }
+
 .project-overlay {
   position: absolute;
   top: 0;
@@ -111,6 +122,12 @@ footer {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+  .projects-pictures-desktop {
+    display: grid;
+  }
+  .project-text-desktop {
+    display: grid;
   }
 }
 
