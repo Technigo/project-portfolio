@@ -1,24 +1,68 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
+/*MOBILE FIRST should this be further down?*/
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
 /*THIS IS THE STYLING FOR THE HEADER AND ITS COMPONENTS*/
+
 header {
+    background-image: url("./images/grapeshor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 595px;
+    z-index: -1;
+    overflow: hidden;
+
+} 
+/*WHAT I HAD IN THE HEADER BEFORE*/
+/* header {
     margin: 0;
-    background-image: url("grapes.jpg");
+    background-image: url("./images/grapeshor.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 500px;
-}
+ 
+} */
+
+/* Header-container*/
+.heading-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 5px;
+  }
 
 .header-name {
     font-size: 16px;
-    color: #c7b8b0;
-    text-shadow: 0 0 3px #000;
+    color: black;
+    text-shadow: 0 0 3px #c7b8b0;
     width: fit-content;
     display: block;
     margin: 0 auto;
@@ -38,13 +82,14 @@ header {
   
 .header-developer {
     font-size: 36px;
-    color: #c7b8b0;
-    text-shadow: 0 0 3px #000;
+    color: black;
+    text-shadow: 0 0 3px#c7b8b0;
     margin: 0;
 }
 
-
+/*MAKSY DID SOMETHING HERE*/
 .header-icon {
+    color: black;
     width: 2.5em;
     position: relative;
     left: 130px;
@@ -62,40 +107,104 @@ header {
     z-index: 5;
 }
 
-/*THIS IS THE STYLING FOR xxx*/
-element.style {
+/*I NEED TO DO SOMETHING HERE BUT NOT SURE WHAT*/
+.header-image-group {
     width: 100%;
+    position: relative;
+}
+/*THIS IS THE STYLING FOR SECTIONS*/
+.intro-section {
+    height: 324px;
+    line-height: 29px;
+    padding-left: 24px; 
+    padding-right: 24px;
+    padding-top: 49px; 
+    padding-bottom: 43px;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+
+h4 {
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+
+h5 {
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+
+.tech-section {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 60px;
+    text-align: center;
+    line-height: 29px;
+}
+
+.title-tech {
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.project-image {
+    width: 327px;
+    height: 212px;
+}
+
+/* MY THOUGHTS ABOut CODE */
+.my-thougths-about-code {
+    position: absolute;
+    width: 766px;
+    height: 64px;
+    left: 564.03px;
+    top: 3982px;
+    Font-family: Montserrat;
+    Font-style: Bold;
+    Font-size: 48px;
+    Line-height: 59px;
+    Line-height: 100%;
+    align-items: Center;
+    Vertical-align: Top;
+    Letter-spacing: 1%;
+}
+
+/* MORE THOUGHTS */
+.more-thoughts {
+    position: absolute;
+    width: 622px;
+    height: 47px;
+    left: 636px;
+    top: 4988px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 47px;
+    /* identical to box height, or 124% */
+    
+    text-align: center;
+}
+
+.for-more-section {
 
 }
 
-/*MOBILE FIRST*/
-.container  {
-    width: 375px;
-    margin: 0 auto;
 
-}
-
-/*MEDIA QUERY FOR TABLET SIZE
-@media and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-}
-
-/*MEDIA QUERY FOR DESKTOP SIZE
-@media and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
-}
-*/
 .section {
     margin: 24px;
 
 }
 
 .section:nth-child(2n) {
-    background-color: lightgoldenrodyellow;
+    background-color: #c7b8b0;
 
 }
 
@@ -103,11 +212,10 @@ element.style {
     background-color: whitesmoke;
 
 }
-/*NEDAN INTE KLART*/
+
 .project-image-group {
     width: 100%;
     position: relative;
-
 }
 
 .project-image {
@@ -128,11 +236,20 @@ element.style {
     bottom: 0;
     left: 0;
     background: rgba(100 , 100, 55 ,0.4,);
+}
 
+.tag {
+    color: black;
+    font-size: 12px;
+}
+
+.my-thoughts-image {
+    width: 327px;
+    height: 205px;
 }
 
 footer {
-    position: absolute;
+    /* position: absolute; */
     width: 1920px;
     height: 570px;
     left: 0px;
@@ -141,21 +258,16 @@ footer {
 }
 
 .contact-details {
-    position: absolute;
+    position: center;
     width: 622px;
     height: 309px;
     left: 649px;
     top: 6871px;
-
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 38px;
+    font-size: 16px;
     line-height: 47px;
-/* or 124% */
     text-align: center;
     color: #FFFFFF;
- 
 }
-
-/*OVAN INTE KLART*/
