@@ -26,8 +26,37 @@ section:nth-child(2n+1) {
     margin: 0 auto;
 }
 
-/* ACCESABILITY DESIGN */
+h2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
 
+h2 span {
+    background-color: #FA382F;
+    padding: 0 0.2em;
+}
+
+a:link {
+    color: black;
+    text-decoration-line: none;
+}
+
+a:visited {
+    color: blue;
+    text-decoration-line: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* ACCESABILITY CLASS FOR SOCIAL MEDIA ICONS */
 .sr-only {
     position:absolute;
     left:-10000px;
@@ -37,8 +66,7 @@ section:nth-child(2n+1) {
     overflow:hidden;
 }
 
-/* HEADER */
-
+/* HEADER SECTION */
 .header {
     background-image: url(./images/hero-img.jpg);
     height: 520px;
@@ -121,39 +149,7 @@ section:nth-child(2n+1) {
     bottom: -16px;
 }
 
-/* STYLING SECTIONS*/
-
-h2 {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 27px;
-    text-align: center;
-    color: #FFFFFF;
-    letter-spacing: 1px;
-    margin-bottom: 40px;
-}
-
-h2 span {
-    background-color: #FA382F;
-    padding: 0 0.2em;
-}
-
-a:link {
-    color: black;
-    text-decoration-line: none;
-}
-
-a:visited {
-    color: blue;
-    text-decoration-line: none;
-}
-
-a:hover {
-    font-weight: bold;
-}
-
-/* FIRST SECTION */
+/* INTRODUCTION SECTION */
 .line {
     border: 1px solid #c62a88;
     width: 40px;
@@ -168,7 +164,7 @@ a:hover {
     border-radius: 50%;
     display: inline-block;
 }
-/* Both tech-abt and intro-text have same properties but it didn't work combining these when styling*/
+
 .tech-abt {
     font-family: 'Montserrat';
     font-style: normal;
@@ -210,7 +206,6 @@ a:hover {
 }
 
 .overlay:hover .project-img-text-overlay {
-    /* This causes the text to fade, color is the text color */
     color: transparent;
 }
 
@@ -228,7 +223,6 @@ a:hover {
 }
 
 .overlay:hover {
-    /* This causes the original background color (.5 opacity) to become transparent */
     background-color: transparent;
 }
 
@@ -343,7 +337,7 @@ a:hover {
 
 }
 
-/* FIFTH SECTION*/
+/* SKILLS SECTION*/
 .all-skills-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -359,7 +353,7 @@ a:hover {
     color:#FA382F;
 }
 
-/* SIXTH SECTION */
+/* FOR MORE SECTION */
 .end-icons-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -422,6 +416,7 @@ footer {
     font-size: 17px;
     line-height: 25px;
 }
+
 @media (min-width: 768px){
     
     .container {
