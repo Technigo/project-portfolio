@@ -1,8 +1,7 @@
 :root {
     --primary: #611e72;
     --secondary: rgba(97, 30, 114, 0.4);
-  }
-  
+}
 
 body {
     margin: 0;
@@ -18,11 +17,9 @@ body {
 
 header {
     position: relative;
-    /* background-image: url(./assets/pink-yellow.jpg); */
     height: 520px;
     background-size: cover;
     color: #fff;
-    /* background-image: url(https://media4.giphy.com/media/3og0ISzBpn0nNJE3Ac/giphy.gif); */
     background-image: url(./assets/ernest-brillo-Qi8CvonsYnM-unsplash.jpg);
     background-position-y: 80%;
 }
@@ -30,10 +27,10 @@ header {
 h1 {
     margin: 0;
     font-size: 40px;
-    text-shadow: 2px 2px 5px #611e72;
 }
 
 .header-subheader {
+    display: block;
     margin: 5px 0;
     font-family: 'Roboto';
     font-size: 13px;
@@ -42,6 +39,7 @@ h1 {
 }
 
 .profile-name {
+    display: block;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -77,19 +75,7 @@ h1 {
     gap: 50px;
 }
 
-/* .header-subheader {
-    margin-top: 1rem;
-} */
-
-/* .header-icon-big-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} */
-
 .header-icon-container {
-    /* display: flex; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    
     display: flex;
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
@@ -99,7 +85,6 @@ h1 {
     position: absolute;
     width: 180px;
     height: 180px;
-    /* right: 7vw; */
     right: 0;
     top: 356px;
     border-radius: 50%;
@@ -129,9 +114,7 @@ h1 {
 .section-heading {
     font-size: 22px;
     line-height: 27px;
-    /* margin: 40px 0; */
     margin: 2rem 0;
-    /* background-color: red; */
     color: #fff;
     text-align: center;
 }
@@ -175,7 +158,7 @@ h1 {
     font-weight: bold;
     font-size: 21px;
     line-height: 143%;
-    margin: 1rem 0;
+    margin: 2rem 0;
     letter-spacing: 1.1;
 }
 
@@ -189,6 +172,10 @@ h1 {
     line-height: 32px;
 }
 
+.code-thought {
+    margin: 2rem 0;
+}
+
 .var--primary {
     color: var(--primary);
 }
@@ -196,10 +183,6 @@ h1 {
 .section:nth-child(2n) {
     background-color: rgba(244, 244, 244, .3);
 }
-
-/* .section:nth-child(2n + 1) {
-    background-color: #fff;
-} */
 
 .project-img-group {
     position: relative;
@@ -218,16 +201,11 @@ h1 {
     right: 0;
     bottom: 0;
     left: 0;
-    /* background: rgba(219, 94, 146, 0.4); */
-    /* This is a semi-transparent overlay on the image */
     background-color: rgba(73, 24, 85, 0.6);
-
-    /* This will cause the overlay to fade */
     transition: 0.5s ease;
 }
 
 .project-img:hover {
-    /* This causes the text to fade, color is the text color */
     color: transparent;
 }
 
@@ -241,17 +219,14 @@ h1 {
     justify-content: center;
     align-items: center;
     transition: 0.5s ease;
-
     font-weight: bold;
     font-size: 28px;
     line-height: 34px;
-    
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.01em;
-
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .project-overlay:hover {
@@ -267,9 +242,8 @@ h1 {
     color: transparent
 }
 
-
 .footer {
-    height: 302px;
+    min-height: 302px;
     background-color: var(--primary);
     text-align: center;
     color: #fff;
@@ -310,25 +284,14 @@ a[href^=tel] {
 }
   
 .tag-wrapper p {
-    font-family: "Roboto", sans-serif;
     color: #2b2e34;
     font-weight: bold;
     background-color: #db9aab;
-    text-decoration: none;
-
-    /* Matching line-height and font-size here gives full control 
-        over the size of our tags to the padding*/
     font-size: 12px; 
     line-height: 12px;
     font-weight: 400;
-
-    /* Control the size of the tags */
     padding: 4px;
-
-    /* Control the spacing of our tags */
     margin: 3px;
-
-    /* Some rounded borders */
     border-radius: 5px;
 }
 
@@ -348,7 +311,6 @@ a[href^=tel] {
     text-align: center;
     font-family: Roboto;
     font-size: 17px;
-    /* line-height: 29px; */
 }
 
 .icon-border {
@@ -432,7 +394,7 @@ a[href^=tel] {
     color: #000
 }
 
-.other-projects-section a {
+.other-projects a {
     color: #000;
 }
 
@@ -476,6 +438,7 @@ a[href^=tel] {
 
 @media screen and (min-width: 1100px) {
     h1 {
+        width: 50%;
         font-size: 82px;
         line-height: 122%;
     }
@@ -499,7 +462,6 @@ a[href^=tel] {
         top: 320px;
         width: 250px;
         height: 250px;
-        /* right: 20vw; */
     }
 
     .featured-projects-section {
@@ -529,5 +491,15 @@ a[href^=tel] {
     .sub-heading {
         font-size: 27px;
         line-height: 35px;
+    }
+
+    .contact-header {
+        font-size: 30px;
+        line-height: 112%;
+    }
+
+    .contact-details {
+        font-size: 20px;
+        line-height: 30px;
     }
 }
