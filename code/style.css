@@ -122,8 +122,8 @@ h4 {
 }
 
 h4.header-overlay {
-  color: var(--clr-white);
-  background-color: var(--clr-black);
+  color: var(--clr-black);
+  font-weight: 700;
   font-size: clamp(0.8rem, 2.5vw + 0.4rem, 1.5rem);
 }
 
@@ -168,19 +168,20 @@ p {
 }
 
 .img-overlay:hover,
-h4:hover {
-  background-color: transparent;
-}
-.img-overlay:hover + h4 {
+.img-overlay:hover + h4
+ {
   opacity: 0%;
   transition: 0.5s ease;
 }
 
-.header-overlay:hover + .image-overlay {
+.header-overlay:hover {
   opacity: 0%;
   transition: 0.5s ease;
 }
 
+/* .section-thoughts--text:hover {
+  color: var(--clr-medium);
+} */
 
 /* --------------------------- */
 /*  Reusable styling elements  */
@@ -234,6 +235,11 @@ a:active {
   text-decoration: none;
 }
 
+svg {
+  width: 60px;
+  height: 60px;
+}
+
 a.social-link,
 a.project-link,
 a.social-link:active,
@@ -246,11 +252,15 @@ a:focus {
   color: var(--clr-black);
 }
 
+.social-icon-reverse,
+.social-icon:hover,
+.social-icon:hover ~ .sibling,
 a.social-link:hover,
 a.project-link:hover,
 a.social-link:focus,
 a.project-link:focus {
-  color: var(--clr-dark)
+  color: var(--clr-dark);
+  fill: var(--clr-dark);
 }
 
 a[href^=tel] {
@@ -263,8 +273,8 @@ a[href^=tel] {
   height: 30px;
 }
 
-svg.path {
-  fill: var(--clr-light);
+.social-icon-reverse:hover {
+  fill: var(--clr-black);
 }
 
 
@@ -376,6 +386,10 @@ article {
   display: inline;
 }
 
+.other-projects--container h4 {
+  font-size: 16px;
+}
+
 .date {
   color: var(--clr-dark);
 }
@@ -420,7 +434,8 @@ div.section-thoughts--text {
 
 .social-container {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 0 4em;
 }
 
 
@@ -474,14 +489,21 @@ footer p {
     font-size: 32px;
   }
 
-  
   h4,
   .list-heading {
     font-size: 25px;
   }
-
-  p, li {
+  
+  p, 
+  li, 
+  .other-projects--container h4
+   {
     font-size: 20px;
+  }
+
+  svg {
+    width: 80px;
+    height: 80px;
   }
   
   .tag-wrapper p {
@@ -506,7 +528,7 @@ footer p {
 
   img.profile-image {
     right: 30px;
-    top: 350px;
+    top: 375px;
     width: 250px;
     height: 250px;
   }
@@ -606,8 +628,19 @@ footer p {
   }
   
   p, 
-  li {
+  li,
+  .other-projects--container h4 {
     font-size: 25px;
+  }
+
+  svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .svg-big {
+    width: 150px;
+    height: 150px;
   }
   
   .date {
@@ -629,7 +662,7 @@ footer p {
     width: 80px;
     height: 80px;
   }
-  
+
   .container {
     width: 1200px;
   }
