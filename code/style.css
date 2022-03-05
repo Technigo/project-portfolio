@@ -49,6 +49,7 @@ section:nth-child(2n) {
   background-color: #fddfe7;
   padding: 6px;
   margin-top: 10px;
+  font-weight: 400;
 }
 .centered-heading {
   font-family: "Montserrat", sans-serif;
@@ -59,155 +60,181 @@ section:nth-child(2n) {
 .red-detail {
   color: #fa382f;
   font-family: "Montserrat", sans-serif;
-  /* font-weight: 400; */
   margin: 0;
+}
+
+/* Link styling */
+a{
+text-decoration: none;
+}
+a:hover{
+    color: #fa382f;
+}
+.link{
+    color: black;
+}
+.icon-link:hover{
+background-color: #fa382f;
+}
+.icon-link-red:hover{
+    background-color:#05c7d0;
+    border-radius: 50%;
+} 
+.for-more-link{
+    text-decoration: none;
+}
+.link-color {
+  color: black;
+  font-weight: 700;
+}
+.link-collection p:hover{
+    background-color: #d3d0cf;
 }
 /* Header section */
 .header {
-  background-image: url(./assets/chirag-saini-F5_CLwEyYzM-unsplash.jpg);
-  height: 520px;
-  background-size: cover;
-  background-position-x: 90%;
-  position: relative;
-  color: white;
+    background-image: url(./assets/chirag-saini-F5_CLwEyYzM-unsplash.jpg);
+    height: 520px;
+    background-size: cover;
+    background-position-x: 90%;
+    position: relative;
+    color: white;
 }
 .header-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
 }
 .header-icons {
-  position: absolute;
-  right: 40px;
-  top: 65px;
-  filter: invert();
+    position: absolute;
+    right: 40px;
+    top: 65px;
+    filter: invert();
 }
 .header-icons img {
-  width: 40px;
+    width: 40px;
 }
 .header-text {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .headerh2 {
-  font-size: 12px;
-  line-height: 1;
+    font-size: 12px;
+    line-height: 1;
 }
 .headerh1 {
-  font-size: 40px;
+    font-size: 40px;
   margin: 0%;
   font-family: "Montserrat", sans-serif;
   font-weight: 700; 
 }
 .name {
-  font-weight: 700;
+    font-weight: 700;
 }
 .profile-pic {
-  border-radius: 50%;
-  filter: grayscale(30%);
-  position: absolute;
-  right: 30px;
-  bottom: -35px;
-  border: solid white 2px;
-  width: 170px;
-  height: 170px;
-  object-fit: cover;
-  object-position: top;
+    border-radius: 50%;
+    filter: grayscale(30%);
+    position: absolute;
+    right: 30px;
+    bottom: -35px;
+    border: solid white 2px;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: top;
 }
 /*-------symbol (line and dot)------*/
 .line {
-  width: 40px;
-  height: 2px;
-  border-radius: 10px;
-  background: #fa382f;
-  display: inline-block;
-  margin-bottom: 5px;
-  margin-right: 0;
-  padding: 0;
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    background: #fa382f;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 0;
+    padding: 0;
 }
 .circle {
-  width: 12px;
-  height: 12px;
-  background: #fa382f;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: -5px;
+    width: 12px;
+    height: 12px;
+    background: #fa382f;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -5px;
 }
 /* featured projects */
 .project-box {
-  margin: 30px 0;
+    margin: 30px 0;
 }
 .project-img {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 .text-over-img {
-  position: absolute;
-}
-/* ---For more section */
-.icon-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 4px;
-}
-.icon-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 11px;
-  color: #fa382f;
-}
-.icon-img {
-  height: 60px;
-  width: 60px;
-}
-.icon-img-li {
-  margin-right: 17px;
-}
-/* thoughts about code section*/
-.article-heading {
-  font-weight: 700;
-  font-size: 21px;
-  margin: 5px 0;
-}
-.link-color {
-  color: black;
-  font-weight: 700;
+    position: absolute;
 }
 .link-collection {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
+.link-collection p{
+    text-decoration: underline black 1px;
+}
+/* ---For more section */
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+    color: #fa382f;
+}
+.icon-img {
+    height: 60px;
+    width: 60px;
+}
+.icon-img-li {
+    margin-right: 17px;
+}
+/* thoughts about code section*/
+.article-heading {
+    font-weight: 700;
+    font-size: 21px;
+    margin: 5px 0;
+}
 /* --------skills section */
 .skills {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
 }
 .skill-box {
-  text-align: center;
+    text-align: center;
 }
 /* ----hidden content--------------- */
 .hidden-in-mobileview {
-  display: none;
+    display: none;
 }
 /* footer section */
 footer {
-  height: 302px;
-  background-color: black;
-  display: flex;
-  align-items: center;
+    height: 302px;
+    background-color: black;
+    display: flex;
+    align-items: center;
 }
 .footer-text-wrapper {
-  text-align: center;
-  color: #ffffff;
+    text-align: center;
+    color: #ffffff;
 }
 .footer-text-wrapper h4 {
   font-weight: 700px;
@@ -218,7 +245,15 @@ footer {
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
-
+/* for tablet */
+@media screen and (min-width:768px){
+    
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 167px ;
+    }
+}
 /* ------For desktop------------------------ */
 @media screen and (min-width: 992px) {
   .container {
@@ -327,4 +362,5 @@ font-size: 30px;
 }
 footer {
   height: 507px;
+}
 }
