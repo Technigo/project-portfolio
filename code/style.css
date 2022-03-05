@@ -74,9 +74,6 @@
 .underline {
     text-decoration: underline;
 }
-/* h3 {
-    color: #FA382F;
-} */
 h4 {
     font-size: 21px;
     line-height: 30px;
@@ -86,6 +83,10 @@ h5 {
 }
 p {
     line-height: 29px;
+}
+a[href^=tel] {
+	text-decoration: inherit;
+	color: white;
 }
 
 /* Article generals */
@@ -97,7 +98,34 @@ p {
     display: block;
 }
 
-/* Project articles */
+/* Intro */
+.line {
+    border: 1px solid #FA382F;
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #FA382F;
+    border-radius: 50%;
+    display: inline-block;
+}
+.intro-article {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+}
+
+/* Tech */
+.tech-article {
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+}
+
+/* Featured projects */
 .project-heading {
     line-height: 29px;
     margin-top: 9px;
@@ -142,7 +170,7 @@ p {
     border-radius: 5px;
 }
 
-/*Thoughts articles*/
+/*Thoughts*/
 .thoughts-heading {
     font-weight: 400;
     margin-top: 23px;
@@ -190,30 +218,44 @@ p {
     margin-top: 10px;
 }
 
+/*Footer*/
+footer {
+    padding: 40px 0 50px 0;
+    background-color: #072BCE;
+    height: 302px;
+}
+.contact-container {
+    margin-top: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+.contact-header {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-container p {
+    font-family: 'Montserrat', sans-serif;
+}
 
-/* @media screen and (min-width:768px) {
-    .header-container {
-        width: 1936px;
-    }  
-} */
-@media screen and (min-width:1024px) {
-    /* .header-container {
-        width: 1936px;
-    } */
 
+/* Media queries */
+@media screen and (min-width: 768px) {
+
+    /* Section generals */
     .section {
         display: grid;
         justify-content: center;
+        padding: 50px 0 60px 0;
     }
     .section-container {
-        margin: 0 0;
-        width: 800px;
+        margin: 0 auto;
+        width: 680px;
     }
     .two-fr {
         grid-template-columns: 1fr 1fr;
     }
     .article-container {
-        width: 375px;
+        width: 325px;
     }
     .section-title-red {
         font-size: 38px;
@@ -233,6 +275,13 @@ p {
     h3 {
         font-size: 22px;
     }
+
+    /* Intro */
+    .intro-article, .tech-article {
+        font-size: 25px;
+    }
+
+    /* Projects */
     .project-tags p {
         font-size: 16px;
         margin-right: 5px;
@@ -251,7 +300,7 @@ p {
         font-weight: 400;
     }
 
-    /*Thoughts articles*/
+    /* Thoughts */
     .more-thoughts {
         display: block;
     }
@@ -259,21 +308,46 @@ p {
         font-weight: 700;
     }
 
-    /*Skills*/
+    /* Skills */
     .skills-container {
         grid-template-columns: repeat(3, 1fr);
     }
 
-   /*For more*/
+   /* For more */
+   .icons-container {
+       gap: 40px;
+   }
    .icon-description {
     height: 160px;
 	width: 160px;
 	border-radius: 50%;
-    border: 5px solid  #FA382F
+    border: 5px solid  #FA382F;
     }
    .icon-red {
     width: 50px;
     height: 50px;
     }
 
+    /* Footer */
+    footer {
+        padding: 50px 0 60px 0;
+        background-color: #072BCE;
+        height: 402px;
+    }
+    .contact-header {
+        margin-bottom: 60px;
+    }
+    .contact-header {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .section-container {
+        margin: 0 0;
+        width: 850px;
+    }
+    .article-container {
+        width: 400px;
+    }
 }
