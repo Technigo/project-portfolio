@@ -71,8 +71,8 @@ section:nth-child(2n) {
 
 .header-text {
     position: relative;
-    /* width: 220px;
-    height: 202px; */
+    /* width: 220px; */
+    /* height: 202px; */
     top: 161px;
     line-height: 40px;
 }
@@ -88,10 +88,7 @@ section:nth-child(2n) {
 .intro-section {
     height: 324px;
     line-height: 29px;
-    padding-left: 24px; 
-    padding-right: 24px;
-    padding-top: 49px; 
-    padding-bottom: 43px;
+    padding: 49px 24px 43px 24px;
 }
 
 .intro-text-happy {
@@ -105,9 +102,7 @@ h3 {
 }
 
 .tech-section {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 60px;
+    padding: 24px 24px 40px 24px;
     text-align: center;
     line-height: 29px;
 }
@@ -120,22 +115,44 @@ h3 {
 .project-image {
     width: 327px;
     height: 212px;
+    border: 8px solid linen;
 }
 
-/* .tags {
-    width: 173px;
-    height: 21px;
-} */
+.tags {
+   display: flex;
+   /* flex-direction: row; */
+   /* align-content: space-between; */
+   /* justify-content: flex-start; */
+}
 
 .tag {
     background-color: #000;
     color: pink;
     font-size: 12px;
+    padding: 4px;
+    margin: 4px 6px 4px 0;
+    /* text-align: center; */
+}
+
+.skills-groups {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 464px;
+}
+
+.skills-groups h4 {
+    font-size: 18px;
+}
+
+.skills-group p {
+    line-height: 32px;
 }
 
 .my-thoughts-image {
     width: 327px;
     height: 205px;
+    border: 8px solid linen;
 }
 
 .footer {
@@ -143,8 +160,14 @@ h3 {
     background-color: #5902EC;
     color: #FFF;
     text-align: center;
+    padding: 48px;
 }
 
 .footer-contact {
-    color: lemonchiffon;
+    padding-bottom: 24px;
+}
+
+.footer-text {
+    font-size: 18px;
+    line-height: 48px;
 }
