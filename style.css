@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* ------- Mobile SECTION ------- */
+/* ------- Mobile SECTION  and main styling------- */
 .container {
   width: 375px;
   margin: 0 auto;
@@ -17,6 +17,39 @@ body {
 .section:nth-child(2n + 1) {
   background-color: #fff;
 }
+.main-title {
+  text-align: center;
+  background-color: #fa382f;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  align-items: center;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  align-items: center;
+  display: inline;
+  width: 100%;
+  padding: 5px;
+}
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: flex-start;
+}
+.tag-languge {
+  text-align: center;
+  font-size: 12px;
+  background-color: #fa382f;
+  color: #fff;
+  padding: 2px;
+  margin: 5px 5px 5px 0;
+  font-weight: bold;
+}
+.only-desktop {
+  display: none;
+}
 /* ------- HEADER SECTION ------- */
 .hero {
   background-image: url('./img/header-image.png');
@@ -28,8 +61,9 @@ body {
   height: 520px;
 }
 .profil-pic {
-  border-radius: 3px solid white;
+  border: 2px solid white;
   width: 180px;
+  height: 180px;
   border-radius: 50%;
   position: absolute;
   top: 365px;
@@ -65,14 +99,7 @@ body {
   padding: 49px 24px 43px 24px;
 }
 /* ------- TECH SECTION ------- */
-.tech {
-  text-align: center;
-  background-color: #fa382f;
-  font-size: 22px;
-  line-height: 27px;
-  color: #ffffff;
-  align-items: center;
-}
+
 .tech-text {
   padding: 24px 24px 33px 24px;
   font-size: 17px;
@@ -86,28 +113,37 @@ body {
   position: relative;
 }
 .heading-tech {
-  padding: 40px 155px 24px 153px;
+  padding: 20px;
+  /* padding: 40px 155px 24px 153px; */
+  text-align: center;
 }
 .heading-featured {
   padding: 41px 51px 40px 69px;
 }
 /* ------- Projects SECTION ------- */
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
 .project-overlay {
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
+  background-color: #aaaaaaa8;
+  transition: 0.5s ease;
 }
-.featured {
-  width: 255px;
-  font-size: 22px;
-  line-height: 27px;
-  text-align: center;
-  background-color: #fa382f;
-  color: #ffffff;
+.overlay-text {
+  left: 50%;
+  top: 50%;
+  margin: 0px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: #fff;
 }
-
 .project-images {
   width: 100%;
 }
@@ -126,23 +162,24 @@ body {
 }
 .other-projects {
   color: #fa382f;
-  margin: 56px 60px;
+  margin: 30px;
   text-align: center;
   font-size: 21px;
 }
 /* ------- My thoughts SECTION ------- */
-.my-thoughts {
-  font-size: 22px;
-  text-align: center;
-  color: white;
-  background-color: red;
-  margin: 0px 99px;
+.my-thoughts-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.heading-thoughts {
+  padding: 41px;
 }
 .more-thoughts {
   font-size: 22px;
   text-align: center;
   color: red;
-  margin: 56px 60px 40px 60px;
 }
 .my-thoughts-description {
   margin: 32px 31px 56px 24px;
@@ -156,7 +193,9 @@ body {
   color: #fa382f;
 }
 .heading-skills {
-  padding: 41px 145px 32px 145px;
+  padding: 20px;
+  /* padding: 41px 145px 32px 145px; */
+  text-align: center;
 }
 .thoughts-text {
   width: 327px;
@@ -179,41 +218,36 @@ body {
   text-align: center;
 }
 .my-skills {
-  left: 24px;
-  font-size: 17px;
-  line-height: 29px;
-  text-align: center;
+  padding: 24px;
 }
+
 .skills-box {
   display: flex;
-  justify-content: center 32;
-  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
-  padding: 0 0 40px 0;
 }
 /* ------- Form more SECTION ------- */
 .heading-formore {
-  padding: 41px 122px 40px 122px;
-}
-.formore {
   text-align: center;
-  background-color: #fa382f;
-  font-size: 22px;
-  line-height: 27px;
-  color: #ffffff;
-  width: 131px;
-  height: 26px;
+  padding: 20px;
+  /* justify-content: center; */
+  /* padding: 41px 122px 40px 122px; */
 }
+
 .more-links {
+  justify-content: center;
   display: flex;
   padding: 20px 64px 38px 64px;
   gap: 30px;
 }
 .links {
   width: 60px;
+  height: 80px;
 }
 .icons {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -249,9 +283,8 @@ body {
   .container {
     width: 768px;
   }
-  .socials-icons {
-    width: 80px;
-    height: 80px;
+  .only-desktop {
+    display: inline-block;
   }
 }
 @media screen and (min-width: 1200px) {
