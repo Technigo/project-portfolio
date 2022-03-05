@@ -2,6 +2,7 @@
 
 body {
     margin: 0 auto;
+	font-family: Roboto;
 }
 
 .container {
@@ -16,11 +17,8 @@ body {
 }
 
 .project {
-    width: 327px;
-    font-family: Roboto;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     padding-bottom: 30px;
 }
 
@@ -29,7 +27,7 @@ body {
 .header {
     background-image: url('/assets/background.png');
     height: 520px;
-    background-position-x: 20%;
+    background-size: cover;
 }
 
 .header-container {
@@ -145,11 +143,10 @@ body {
 .project-heading {
     font-size: 17px;
     line-height: 29px;
-
     color: #FA382F;
     font-weight: bold;
     letter-spacing: 0.01em;
-
+	float: none;
 }
 
 .project-image-group {
@@ -195,12 +192,14 @@ body {
 .project-tags {
     display: flex;
     gap: 8px;
+	margin-top: 8px;
 }
 
 .tag {
     font-size: 9px;
     background-color: #FDDFE7;
     padding: 10px;
+	padding: 6px;
 }
 
 .skills-container {
@@ -208,7 +207,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
-    width: 272px;
     font-family: Roboto;
 }
 
@@ -262,14 +260,18 @@ footer {
 }
 
 #other-projects {
-	text-align: center;
-    margin-bottom: 40px;
     margin-top: 20px;
+	margin-bottom:20px;
 }
 
-#other-projects span {
+#other-projects .title span {
 	background: none;
 	color: #FA382F;
+}
+
+.other-project {
+	max-width: 87%;
+	margin-top: 40px;
 }
 
 .section .title {
@@ -287,10 +289,19 @@ footer {
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
+        width: 700px;
     }
 	.featured-projects {
 		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.project {
+		width: 47%;
+	}
+
+	.project-heading {
+		float: left;
 	}
 }
 
