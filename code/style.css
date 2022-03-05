@@ -1,23 +1,15 @@
 :root {
-  /* --secondary: #e1622e; */
-  /* --secondary: #4f9380; */
-  /* --secondary: #056452; */
   --secondary: #0e806a;
   --main: #20363f;
 }
-
-/* font-family: 'Montserrat', sans-serif */
-/* font-family: 'Roboto', sans-serif; */
 
 body {
 	margin: 0 auto;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
-	/* box-sizing: border-box; */
 }
 
 h1 {
-	color: #fff;
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 49px;
@@ -25,40 +17,37 @@ h1 {
 }
 
 h2 {
+	display: table;
+	text-align: center;
 	color: #fff;
 	background-color: var(--main);
-	text-align: center;
-	display: table; /* keep the background color wrapped tight */
-	margin: 0 auto;
-	padding: 2px 7px;
-	text-transform: uppercase;
 	font-size: 22px;
+	line-height: 25px;
+	text-transform: uppercase;
+	margin: 0 auto;
+	padding: 4px 8px;
 }
 
 h2.no-fill {
 	color: var(--main);
 	background-color: transparent;
-	font-size: 21px;
-	line-height: 25px;
-	text-align: center;
 	margin: 40px auto 24px auto;
-	text-transform: uppercase;
 }
 
 h3 {
-	text-transform: uppercase;
 	color: var(--main);
+	font-family: 'Roboto', sans-serif;
 	font-size: 17px;
 	line-height: 29px;
 	font-weight: 700;
-	font-family: 'Roboto', sans-serif;
-	margin: 10px auto;
+	text-transform: uppercase;
+	margin: 10px auto 0 auto;
 }
 
 p {
-	margin: 0;
 	font-size: 17px;
 	line-height: 29px;
+	margin: 0;
 }
 
 footer {
@@ -71,9 +60,9 @@ footer {
 }
 
 .container {
+	box-sizing: border-box;
 	width: 375px;
 	margin: 0px auto;
-	box-sizing: border-box;
 	padding: 40px 24px;
 }
 
@@ -84,19 +73,19 @@ img {
 /* ------------------ HEADER ------------------ */
 
 .header {
-	background-image: url("./assets/lights2.jpg");
+	background-image: url("./assets/background_lights.jpg");
 	background-size: cover;
 	background-position: top;
 	height: 520px;
 	position: relative;
-
 }
 
 .header-container {
 	display: grid;
-	gap: 10px;
 	justify-content: flex-end;
+	/* gap: 10px; */
 	height: 100%;
+	position: relative
 }
 
 .header-socials-groups{
@@ -109,6 +98,7 @@ img {
 
 .header-social-icon {
 	height: 40px;
+	width: 40px;
 }
 
 .header-image {
@@ -144,7 +134,6 @@ img {
 .header-title-extra {
 	font-size: 24px;
 	line-height: 40px;
-	text-align: left;
 	font-weight: bold;
 }
 
@@ -186,21 +175,21 @@ img {
 }
 
 .project-image-group h2 {
-	position: absolute;
-	align-self: center;
 	color: #fff;
 	background-color: transparent;
+	position: absolute;
+	align-self: center;
 	font-weight: 700;
 	margin: 0;
 }
 
 .project-overlay {
+	background-color: rgba(32,54,63,0.3);
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .project-text-group p {
@@ -216,21 +205,17 @@ img {
 }
 
 .project-tag-group p {
-	margin: 0;
 	color: #fff;
+	background-color: var(--secondary);
 	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
 	font-size: 11px;
 	line-height: 12px;
+	font-weight: 500;
 	padding: 5px;
-	background-color: var(--secondary);
+	margin: 0;
 }
 
-.project-other {
-	margin-top: 24px;
-}
-
-.project-image-group:hover .project-overlay, .project-image-group:hover .project-title {
+.project-image-group:hover .project-overlay, .project-image-group:hover .project-overlay-title {
 	display: none;
 }
 
@@ -250,15 +235,13 @@ img {
 .article-date {
 	font-weight: 400;
 	color: var(--secondary);
-	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
 	margin: 0;
 }
 
 .article-text-group h3 {
 	text-transform: none;
-	font-size: 21px;
-	line-height: 30px;
 	margin: 0;
 }
 
@@ -275,8 +258,6 @@ img {
 }
 
 .other {
-	color: #000;
-	font-size: 17px;
 	margin: 0;
 }
 
@@ -296,11 +277,7 @@ img {
 
 .skills-group h3 {
 	color: var(--main);
-	font-weight: bold;
-	text-transform: uppercase;
 	margin: 0;
-	font-size: 17px;
-	line-height: 29px;
 }
 
 /* ------------------ SOCIALS ------------------ */
@@ -357,33 +334,43 @@ img {
 	.skills-container {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+
 	h1 {
 		font-size: 60px;
 		line-height: 80px;
 	}
+
 	.header-text-group {
 		width: 400px;
 	} 
+
 	.header-portfolio, .header-name {
 		font-size: 20px;
 		line-height: 30px;
 	}
+
 	.header-title-extra {
 		font-size: 36px;
 		line-height: 55px;
 	}
+
 	.header-social-icon {
 		height: 60px;
+		width: 60px;
 	}
+
 	.header-image {
 		width: 250px;
 	}
+
 	.article-desktop {
 		display: block;
 	}
+
 	.article-mobile {
 		display: none;
 	}
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -392,33 +379,50 @@ img {
 		font-size: 82px;
 		line-height: 100px;
 	}
-	h2, h2.no-fill, h3, h4, p, a, .project-image-group h2, .article-text-group h3, .skills-group h3, .project-tag-group p {
-		font-size: 120%;
+
+	h2, h2.no-fill {
+		font-size: 26px;
+		line-height: 30px;
+		padding: 5px 10px;
 	}
+
+	h3, h4, p, a, .article-text-group h3, .skills-group h3 {
+		font-size: 21px;
+		line-height: 34px;
+	}
+
 	.container {
-		width: 1200px;
+		width: 1100px;
 	}
+
 	.header {
 		height: 681px;
 	}
+
 	.header-text-group {
 		width: 600px;
 	}
+
 	.header-portfolio, .header-name {
 		font-size: 28px;
 		line-height: 37px;
 	}
+
 	.header-title-extra {
 		font-size: 50px;
 		line-height: 78px;
 	}
+
 	.header-social-icon {
 		height: 80px;
 	}
+
 	.header-image {
 		width: 333px;
 	}
-	.project-tag-group {
-		font-size: 14px;
+
+	.project-tag-group p {
+		font-size: 15px;
 	}
+
 }
