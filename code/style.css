@@ -11,20 +11,10 @@
     color: var(--color-dark-grey);
 }
 
-/* body.darkmode p */
-/* body.darkmode * {
-    color: #FFFFFF;
-} */
-
 body {
     background-color: var(--color-beige-white);
     font-family: 'Roboto', sans-serif;
 }
-
-/* only applies to body */
-/* body.darkmode {
-
-} */
 
 header {
     display: flex;
@@ -34,16 +24,19 @@ header {
     background-repeat:repeat-x;
     width: 100vw;
 }
+
 .header__linked-icons {
     gap: 5px;
     height: 50px;
     margin: 20px 20px 5px auto;
 }
+
 .header__linked-icons img{
     width: 50px;
     height: 50px;
     order: 2;
 }
+
 .header__text {
     margin: 60px auto 0 auto;
 }
@@ -78,6 +71,7 @@ h4 {
 h5 {
     color: var(--color-dark-brick);
     font-size: 1em;
+    margin: 10px 0 10px 0;
 }
 
 h5 span {
@@ -87,6 +81,7 @@ h5 span {
 .section--h3 {
     margin: 20px;
 }
+
 main {
     gap: 20px;
     display: flex;
@@ -95,18 +90,22 @@ main {
     align-items: center;
     text-align: center;
 }
+
 section {
     width: 100vw;
     padding: 20px 0 20px 0;
 }
+
 .section--h3 {
     display: inline-block;
     background-color: var(--color-dark-brick);
     margin-top: 10px;
 }
+
 section:nth-of-type(2n) {
     background-color: var(--color-light-beige);
 }
+
 .start-figure-img {
     width: 40px;
     margin: 0 3px 0 3px;
@@ -116,21 +115,40 @@ section:nth-of-type(2n) {
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+.featured-projects__grid-container article {
+    max-width: 350px;
+}
+
+.featured-projects__card__text-box {
+    text-align: left;
 }
 
 .featured-projects__card__technologies {
     display: flex;
-
 }
 
 .featured-projects__card__technologies p {
     background-color: var(--color-dark-green);
     color: white;
     padding: 3px;
-    margin: 20px 5px 5px 5px;
+    margin: 10px 5px 5px 2px;
     font-size: .8em;
 }
-
+.overlay {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    font-size: 2em;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 350px;
+    margin: auto;
+}
 .overlay img {
     width: 350px;
 }
@@ -171,13 +189,23 @@ section:nth-of-type(2n) {
     transition: all 0.45s ease-out;
 }
 
+.other-projects__card {
+    align-items: center;
+    justify-items: center;
+}
+
+.other-projects__grid-container p {
+    text-align: left;
+}
 .medium__card__image img {
     width: 300px;
 }
 
 .medium__card__text-box {
-    margin: 10px
+    margin: 10px 30px 10px 30px;
+    text-align: justify;
 }
+
 
 .skills__card--content {
     display: grid;
@@ -219,20 +247,9 @@ footer {
     justify-content: center;
     text-align: center;
     font-size: .6em;
-    margin: 5px;
+    background-color: var(--color-light-beige);
 }
 
 
 
-.overlay {
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    font-size: 2em;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    width: 350px;
-    margin: auto;
-}
 
