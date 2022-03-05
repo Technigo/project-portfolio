@@ -55,7 +55,7 @@ border-color: #fff;
 
 .hero-icon1, .hero-icon2, .hero-icon3 {
 width: 130,5px;
-height: 40px;  
+height: 45px;  
 }
 
 .hero-icon-box {
@@ -199,7 +199,6 @@ right: 0;
 bottom: 0;
 left: 0;
 background: rgba(1, 61, 182, 0.3);
-/* transition: 0.5s ease; */
 }
 
 .project-image-text {
@@ -314,7 +313,7 @@ justify-content: center;
 
 .my-thoughts-image {
     width: 327px;
-    height: 205px;    /*maybe not like this....*/
+    height: 205px;    
 }
 
 .more-thoughts-heading {    
@@ -335,7 +334,7 @@ display: grid;
 }
 
 .my-skills-columns {
-    display: grid; /*So this is wierd to have to display grids but otherwise it did not work*/
+display: grid; /*So this is wierd to have to display grids but otherwise it did not work*/
 grid-template-columns: repeat(2, 1fr);  
 grid-gap: 25px;
 margin-bottom: 24px;
@@ -431,10 +430,10 @@ padding: 50px 0;
 }    
 
 .header{
-    height: 480px;
-    background-size: cover;
-    background-position-x: center;
-    }
+height: 480px;
+background-size: cover;
+background-position-x: center;
+}
 
 .profile-image {
 width: 175px;
@@ -443,6 +442,10 @@ left: 500px;
 top: 325px;
 /* right: 410px; */
 /* bottom: -33px; */
+}
+
+.hero-icon1, .hero-icon2, .hero-icon3 {
+height: 55px;  
 }
 
 .hero-icon-box {
@@ -464,23 +467,35 @@ display: block;
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 55px;
 }
 
 .tablet-heading {
-    display: inline;
-    text-decoration:underline;
+display: inline;
+text-decoration: underline;
 }
 .tablet-text {
-    display: inline;
-   text-decoration:underline;
+display: inline;
+text-decoration: underline;
 }
 }
 
-/*DESKTOP*/
-@media (min-width: 1100px) {
+/*RESPONSIVENESS DESKTOP*/
+@media (min-width: 1025px) {
 .container {
 width: 850px;    
+}
+
+.profile-image {
+width: 195px;
+height: 195px;
+left: 750px;
+}
+
+.hero-icon-box {
+left: 775px;
+top: 115px;    
 }
 }
