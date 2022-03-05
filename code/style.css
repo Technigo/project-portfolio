@@ -1,0 +1,150 @@
+/* Global styles */
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+/* Header */
+
+.header {
+    background-image: url('/assets/background.png');
+    height: 520px;
+    background-position-x: 20%;
+    position: relative;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 44px;
+    box-sizing: border-box;
+}
+
+.header-image {
+    width: 180px;
+    border-radius: 50%;
+    position: absolute;
+    left: 171px;
+    top: 356px;
+    z-index: 1;
+}
+
+.header-text-group {
+    position: absolute;
+    width: 220px;
+    height: 202px;
+    left: 24px;
+    top: 121px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.header-text-description {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header-social-group {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    width: 130.5px;
+    height: 40px;
+    left: 220px;
+    top: 48px;
+
+}
+
+/* INTRO CONTAINER */
+.intro-container {
+    width: 327px;
+    height: 232px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 29px;
+    padding: 49px 24px;
+}
+
+.start-icon {
+    width: 55px;
+}
+
+/* TECH CONTAINER */
+.tech-container {
+    height: 271px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+.tech-title {
+    margin-top: 40px;
+    color: #FFFFFF;
+    background-color: #FA382F;
+    width: 67px;
+    font-size: 22px;
+
+}
+
+.tech-description {
+    padding: 24px;
+    font-size: 17px;
+    line-height: 29px;
+}
+
+/* Sections */
+
+.section:nth-child(2n) {
+    background-color: #F4F4F4;
+    /* opacity: 0.3; */
+}
+
+.section:nth-child(2n + 1) {
+    background-color: #fff;
+}
+
+.project-heading {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 17px 0;
+}
+
+.project-image-group {
+    position: relative;
+}
+
+.project-overlay {
+    position: absolute;
+}
+
+.project-image {
+    width: 100%;
+}
