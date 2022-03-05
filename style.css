@@ -20,12 +20,34 @@ body {
     margin: 0 auto;
 }
 
+/* SECTION STYLING */
+
+.section:nth-child(2n) {
+    background-color: #F4F4F4;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+
 p {
     font-size: 17px;
     line-height: 30px;
     font-weight: 200;
     font-style: normal
 }
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.color {
+    color: red;
+}
+
+/*STYLING HEADER*/
 
 .header {
     background-image: url("./images/portfolio-header-image.jpg");
@@ -38,7 +60,6 @@ p {
 .header-container {
     position: relative;
     height: 100%;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -71,8 +92,8 @@ p {
     left: 24px;
     color: #FFF;
     position: absolute;
-    /*display: flex;
-    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio-owner {
@@ -82,7 +103,6 @@ p {
     line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    /* add letter spacing? */
 }
 
 .bold {
@@ -111,15 +131,6 @@ p {
     border: 2px solid #FFF;
 }
 
-/* SECTION STYLING */
-
-.section:nth-child(2n) {
-    background-color: #F4F4F4;
-}
-
-.section {
-    padding: 40px 0;
-}
 
 /* STYLING OF THE SUMMARY SECTION*/
 
@@ -146,11 +157,17 @@ p {
     
 }
 
-/* TECH SECTION */
+/* CONTAINERS FOR TITLES */
 .title-box {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+}
+
+.subtitle-box {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .title {
@@ -170,15 +187,169 @@ p {
     text-align: center;
 }
 
+/* add .code-article-box here later on as well */
+.project-container {
+    width: 327px;
+}
+
+/* add .about-code-img here later on as well  */
+.project-images {
+    position: relative;
+    margin-top: 30px;
+}
+
+/*.images {
+    width: 100%;
+    display: inherit;
+    object-fit: cover;
+} add .code-img here as well
+
+.image-overlay {
+    font-size: 28px;
+    text-transorm: uppercase;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.image-overlay:hover {
+    color: transparent;
+    background-color: transparent;
+}
+*/
+
+.featured-project-title {
+    font-family: "Roboto", sans-serif;
+    color: blue;
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 171%;
+    margin-top: 32px;
+}
+
+.project-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    line-height: 171%;
+}
+
+.other-projects {
+    margin-top: 40px;
+}
+
+.other-projects-title {
+    font-family: "Roboto", sans-serif;
+    color: blue;
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 132%;
+}
+
+.other-projects-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    line-height: 171%;
+}
+
+.tag-box {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-family: "Roboto", sans-serif;
+    font-family: 10px;
+    line-height: 122%;
+    letter-spacing: 0.03em;
+    padding: 5px;
+    margin-right: 8px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.subtitle-box {
+    font-size: 21px;
+    line-height: 119%;
+    text-transform: uppercase;
+}
+
+.skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    row-gap: 25px;
+}
+
+.skills-subtitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    line-height: 171%;
+    text-transform: uppercase;    
+}
+
+.skill-list {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    line-height: 171%;
+    letter-spacing: 0.02em;
+    list-style: none;
+}
+
+.contact-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 12px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.icon-title {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+}
+
+
+
 /* FOOTER STYLING */
 footer {
+    height: 300px;
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-information {
-    align-items: center;
-    padding-bottom: 100px;
-    padding-top: 60px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 145%;
+    padding: 60px 24px 80px 24px;
 }
 
 .footer-heading {
