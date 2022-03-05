@@ -38,9 +38,7 @@
 
 .section-heading {
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
 	font-size: 22px;
-	font-weight: 700;
 }
 
 a {
@@ -65,6 +63,10 @@ a[href^=tel] {
 	color: var(--primary);
 }
 
+.font-black {
+	color: black;
+}
+
 .underline {
 	text-decoration: underline;
 }
@@ -75,6 +77,14 @@ a[href^=tel] {
 
 .fw-bold {
 	font-weight: 700;
+}
+
+.montserrat {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.roboto {
+	font-family: 'Roboto', sans-serif;
 }
 
 /* Header */
@@ -96,7 +106,6 @@ header {
 .header-icon-wrapper {
 	border-radius: 50%;
 	border: 1.5px solid white;
-	overflow: hidden;
 	width: 40px;
 	height: 40px;
 	display: flex;
@@ -114,26 +123,16 @@ header {
 }
 
 .header-name {
-	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	line-height: 17px;
-	font-weight: 700;
-}
-
-.header-portfolio {
-	font-weight: 400;
 }
 
 .header-title {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
 	font-size: 40px;
 	line-height: 50px;
 }
 
 .header-subtitle {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
 	font-size: 24px;
 	line-height: 40px;
 }
@@ -156,9 +155,7 @@ header {
 
 /* Intro Section */
 .intro-container {
-	font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
-	font-weight: 400;
 	line-height: 30px;
 }
 
@@ -182,15 +179,13 @@ header {
 }
 
 /* Tech Section */
-
 .tech-container {
 	margin-top: 40px;
-	font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
-	font-weight: 400;
 	line-height: 30px;
 	text-align: center;
 }
+
 /* Project Section */
 
 .project-image-group {
@@ -221,25 +216,19 @@ header {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	font-family: 'Montserrat', sans-serif;
 	color: white;
-	font-weight: 700;
 	font-size: 28px;
 	transition: 0.5s ease;
 }
 .project-text-group {
 	margin-top: 25px;
 }
-.project {
-	font-family: 'Roboto', sans-serif;
-}
+
 .project-heading {
-	font-weight: 700;
 	line-height: 30px;
 	font-size: 17px;
 }
 .project-description {
-	font-weight: 400;
 	line-height: 30px;
 	font-size: 17px;
 }
@@ -256,48 +245,42 @@ header {
 }
 .other-projects {
 	padding-top: 45px;
-	font-family: 'Roboto', sans-serif;
 }
-/* Hover Effect for Projects */
 
+/* Hover Effect for Projects */
 .project-image-group:hover .project-image-overlay, .project-image-group:hover .project-image-text-overlay {
 	background-color: transparent;
 	color: transparent
 }
-/* THOUGHTS/Article Section */
 
+/* THOUGHTS/Article Section */
 .article-image {
 	width: 100%;
 }
 .article-date {
 	font-size: 16px;
-	font-weight: 400;
 	line-height: 20px;
 	margin-top: 25px;
 }
 .featured-opinions {
 	padding: 45px 0;
-	font-family: 'Roboto', sans-serif;
 }
 .article-heading {
 	font-size: 21px;
-	font-weight: 700;
 	line-height: 30px;
 }
 .article-description {
 	font-size: 17px;
 	line-height: 30px;
-	font-weight: 400;
 }
+
 .other-opinions {
 	padding-top: 45px;
-	font-family: 'Roboto', sans-serif;
 }
-/* SKILLS SECTION */
 
+/* SKILLS SECTION */
 .skills-container {
 	padding-top: 45px;
-	font-family: 'Roboto', sans-serif;
 	font-size: 17px;
 	line-height: 30px;
 	text-align: center;
@@ -308,8 +291,8 @@ header {
 .s-grid-1 {
 	margin-bottom: 30px;
 }
-/* FOR MORE SECTION */
 
+/* FOR MORE SECTION */
 .footer-icons-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -348,11 +331,9 @@ footer {
 	background-color: var(--secondary);
 	color: white;
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
 }
 .contact-header {
 	font-size: 21px;
-	font-weight: 700;
 	padding-bottom: 40px;
 }
 .contact-text {
@@ -367,7 +348,6 @@ footer a {
 }
 
 /* Media Query for Tablet */
-
 @media (min-width: 768px) {
 	.container {
 		width: 680px;
@@ -382,6 +362,11 @@ footer a {
 	.desktop-hidden-text {
 		display: none;
 	}
+
+	.underline-desktop {
+		text-decoration: underline;
+	}
+
 	/* Header */
 	header {
 		height: 680px;
@@ -519,11 +504,10 @@ footer a {
 		line-height: 24px;
 	}
 }
-/* Media Query for Desktop */
 
+/* Media Query for Desktop */
 @media (min-width: 1100px) {
 	.container {
 		width: 850px;
 	}
 }
-/* Media Query for Mobile Landscape */
