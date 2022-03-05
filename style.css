@@ -10,9 +10,9 @@ text-rendering: optimizeLegibility;
 }
 
 .container {
-    width: 325px; /*supposed to be 325?*/  
+    width: 325px;
     margin: 0 auto;  
-    /* padding: 50px 0; */
+    padding: 50px 0;
     }
     
     .section:nth-child(2n){
@@ -169,6 +169,10 @@ padding: 24px 24px 43px 24px;
 display: grid;
 grid-template-columns: 1, 1fr;  
 position: relative;
+}
+
+.show-tablets {
+    display: none;
 }
 
 .featured-projects a {
@@ -335,7 +339,7 @@ display: grid;
 grid-template-columns: repeat(2, 1fr);  
 grid-gap: 25px;
 margin-bottom: 24px;
-text-align:center;
+text-align: center;
 }
 
 .my-skills-columns p {
@@ -417,3 +421,80 @@ text-align: center;
 color: #FFFFFF;
 padding-bottom: 55px;
 }
+
+/*RESPONSIVENESS TABLET*/
+
+@media (min-width: 768px) {
+.container {
+width: 718px;
+padding: 50px 0;
+}    
+
+.header{
+    height: 480px;
+    background-size: cover;
+    background-position-x: center;
+    }
+
+.profile-image {
+width: 175px;
+height: 175px;
+left: 500px;
+top: 325px;
+/* right: 410px; */
+/* bottom: -33px; */
+}
+
+.hero-icon-box {
+left: 525px;
+top: 115px;  
+}
+     
+.hero-text-container {
+width: 607px;
+height: 339px;
+left: 100px;
+top: 206px;
+}
+
+/*RESPONSIVE PROJECTS */
+
+.show-tablets {
+display: block;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* .featured-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    }  */
+
+/* .project-image-gruop  {
+display: grid;
+grid-template-columns: repeat(2, 1fr);  
+}
+
+*/
+
+/* .project-image-group {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    } */
+    
+    /* .project-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(1, 61, 182, 0.3);
+    /* transition: 0.5s ease; 
+    } */
+}
+
