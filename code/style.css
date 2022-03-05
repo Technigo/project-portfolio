@@ -25,12 +25,16 @@
     background-color: var(--red);
     padding: 2px;
   }
-
- 
+  a{
+    transition: transform 0.5s;
+ }
+ a:hover {
+    transform: scale(1.2);
+}
 
 /*---header styles---*/
 .header{
-    background-image: url(./assets/header-image.jpeg);
+    background-image: url('https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-size: cover;
     height: 520px;
     
@@ -49,20 +53,10 @@
 
 .some-icons-group{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     position: absolute;
     top: 48px;
     right:0;
-}
-
-.some-icon-div{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: #fff solid 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .some-icon{
@@ -199,6 +193,7 @@ section:nth-child(2n){
 .language-text{
     background-color: pink;
     padding: 5px;
+    margin-top: 10px;
 }
 .other-projects-title {
     background-color: transparent;
@@ -244,7 +239,7 @@ section:nth-child(2n){
     width: 60px;
 }
 .logo-text{
-    color: var(--red);
+    color: #000);
     font-size: 11px;
     line-height: 13px;
     font-weight: 700;
@@ -290,21 +285,35 @@ footer{
         bottom: -43px;
         border: #fff solid 4px;
     }
+
     .some-icons-group{
-        gap: 20px;
+        gap: 40px;
     }
-    .some-icon-div{
-        width: 80px;
-        height: 80px;
-        border: #fff solid 4px;
-    }
+    
     .some-icon{
         width: 40px;
         height: 40px;
     }
+
     .header-text-group{
-        top:206px;
+        width: 400px;
+        top:160px;
     }
+    
+    .portfolio-title{
+        font-size: 24px;
+    }
+    
+    .main-title{
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 75px;
+    }
+    .smaller-title{
+        font-size: 35px;
+        line-height: 60px;
+    }
+
     /*---section 1 (with info text) styles---*/
     .infotext-container{
         padding-top: 100px;
@@ -334,6 +343,15 @@ footer{
     
     .project-languages{
         font-size: 17px;
+    }
+
+    .project-heading{
+        font-size: 25px;
+        line-height: 41px;
+    }
+    .project-description{
+        font-size: 25px;
+        line-height: 41px;
     }
     
     /*---section "skills" styles---*/
@@ -369,7 +387,27 @@ footer{
     }
     /*---container styles---*/
     .container{
-        width: 1100px;
+        width: 1000px;
+    }
+    /*---header styles---*/
+    .header-text-group{
+        top:206px;
+        width: 600px;
+    }
+
+    .portfolio-title{
+        font-size: 28px;
+    }
+    
+    .main-title{
+        font-weight: 700;
+        font-size: 82px;
+        line-height: 100px;
+    }
+    .smaller-title{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 78px;
     }
     /*---section "projects" styles---*/
     .project-image{
