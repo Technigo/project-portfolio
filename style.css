@@ -1,12 +1,19 @@
-body {
+/* MOBILE */
+* {
     margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
+/* Global styles */
 .container {
     width: 375px;
     margin: 0 auto;
+    /* padding: 41px 24px; */
+    display: flex;
+    flex-direction: column;
 }
 
+/* HEADER */
 .header-container {
     height: 100%;
     display: flex;
@@ -19,6 +26,7 @@ body {
     height: 520px;
     background-size: cover;
     position: relative;
+    width: 100%;
 }
 
 .header-image {
@@ -42,34 +50,14 @@ body {
     background: rgba(20, 20, 20, 0.2);
 }
 
-.header-icon-group {    
+.header-icons {    
     display: flex;  
     width: 130.5px;
     height: 40px;
-    justify-content: space-between;
     position: absolute;
-    align-items: center;
     top: 48px;
-    right: 68px;
+    right: 24.5px;
 }
-
-.icon-box {
-    border: solid white 2px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    margin: 3px;
-}
-
-.fa-brands {
-    display: flex;
-    justify-content: center;
-    align-items: inherit;
-    color: white;
-    padding: 10px;
-}
-
 
 .header-text-group {
     position: absolute;
@@ -105,18 +93,21 @@ body {
     background-color: white;
 }
 
-
-/* INTRO */
-
-.intro-text {
-    padding-top: 49px;
+/* Styling for all sections */
+.section {
+    padding-top: 41px;
     padding-bottom: 43px;
 }
 
+/* INTRO */
+
+/* .intro-text {
+    padding-bottom: 49px;
+} */
+
 p {
-    font-family: Montserrat;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 17px;
     line-height: 29px;
  }
@@ -137,50 +128,251 @@ p {
 }
 
 /* TECH */
-h2 {
-    font-family: Montserrat;
+.tech-heading {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26.82px;
+    text-align: center;
     background-color: #c62a88;
     color: #FFF;
     width: fit-content;
-    margin-top: 40px;
+    margin: 0px 145px 30px 145px;
 }
 
 .tech-section p {
     margin-bottom: 40;
 }
 
+/* FEATURED PROJECTS */
+
+.section-heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.82px;
+    text-align: center;
+    background-color: #c62a88;
+    color: #FFF;
+    width: fit-content;
+    margin: 0px 51px 24px 69px;
+}
+
+.project {
+    margin: 0px 24px 9px 24px;
+}
+
 .project-heading {
 	font-size: 28px;
 	line-height: 34.13px;
-    font-family: Montserrat;
+    font-weight: 700;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
     text-align: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .project-image-group {
 	position: relative;
 }
 
-/* .project-overlay {
+.project-overlay {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	background: rgba(100, 100, 100, 0.5);
-} */
+}
 
 .project-image {
 	width: 100%;
 	display: block;
+    height: 212px;
+}
+
+h5 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: 1%;
+}
+
+.tag-wrapper {
+    display: flex;
+  }
+  
+.tag-wrapper p {
+    font-family: "Roboto", sans-serif;
+    color: #2b2e34;
+    font-weight: bold;
+    background-color: #db9aab;
+    text-decoration: none;
+
+    /* Matching line-height and font-size here gives full control 
+        over the size of our tags to the padding*/
+    font-size: 12px; 
+    line-height: 12px;
+
+    /* Control the size of the tags */
+    padding: 4px;
+
+    /* Control the spacing of our tags */
+    margin: 3px;
+
+    /* Some rounded borders */
+    border-radius: 5px;
+}
+
+.other-projects-heading {
+    background-color: #F4F4F4;
+    color: #c62a88;
+    padding-top: 58px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/* MY THOUGHTS */
+
+.thoughts-image {
+    width: 100%;
+	display: block;
+    height: 205px;
+}
+
+.more-thoughts-heading {
+    color: #c62a88;
+    padding-top: 58px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/* SKILLS */
+
+.skills-section {
+    display: flex;
+}
+
+.skills-flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+}
+
+.skills-upcoming-parent {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.upcoming {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 29px;
 }
 
 
-@media screen and (min-width: 1920px) {
+/* FOR MORE */
+
+.more-section {
+    margin-bottom: 60px;
+}
+
+
+.more-icon-group {    
+    display: flex;  
+    flex-direction: column;
+    width: 247px;
+    height: 60px;
+    position: absolute;
+    justify-content: space-between;
+    padding-left: 64px;
+    padding-top: 40px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 247px;
+    height: 60px;
+}
+
+.icon-text p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 12.89px;
+    text-align: center;
+    color: #FA382F;
+    position: absolute;
+}
+
+/* CONTACT */
+
+.footer {
+    background-color: #072bce;
+}
+
+.contact-heading {
+    color: #FFF;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.contact-section p {
+    font-weight: 200;
+    text-align: center;
+    color: #FFF;
+}
+
+.email {
+    padding-bottom: 84px;
+}
+
+/* MEDIA QUERYS */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
 	.container {
-		width: 1920px;
+		width: 768px;
+	}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1100px) {
+	.container {
+		width: 1200px;
 	}
 }
