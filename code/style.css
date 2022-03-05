@@ -4,7 +4,7 @@
 
 :root {
   /* colors */
-  --clr-dark: #FFA7BE;
+  --clr-dark: #ce81b4;
   --clr-medium: #B4B4B4;
   --clr-light: #f6f6f6;
   --clr-white: #FFF;
@@ -135,6 +135,18 @@ p {
 /*       Images        */
 /* ------------------- */
 
+img.profile-image {
+  position: absolute;
+  right: 30px;
+  top: 320px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid var(--clr-black);
+  object-fit: cover;
+  overflow: hidden;
+}
+
 .image-container--project,
 .image-container--thoughts {
   position: relative;
@@ -145,7 +157,11 @@ p {
 .project-image,
 .thoughts-image {
   object-fit: cover;
-  max-height: 30vh;
+  max-height: 40vh;
+}
+
+.header-overlay {
+  display: none;
 }
 
 /* --------------------------- */
@@ -287,18 +303,6 @@ header {
   align-items: center;
 }
 
-img.profile-image {
-  position: absolute;
-  right: 30px;
-  top: 320px;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 3px solid var(--clr-black);
-  object-fit: cover;
-  overflow: hidden;
-}
-
 
 /**** General ****/
 section:nth-child(odd) {
@@ -315,7 +319,6 @@ article {
   font-family: 'montserrat', sans-serif;
   padding-top: 2.5em;
 }
-
 
 /**** Tech ****/
 .section-tech p {
@@ -517,28 +520,28 @@ footer p {
     align-items: center;
    }
    
-   .img-overlay {
-     position: absolute;
-     height: 100%;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     background-color: #dadadaa8;
-     transition: 0.5s ease;
-   }
-   
-   .img-overlay:hover,
-   .img-overlay:hover + h4
-    {
-     opacity: 0%;
-     transition: 0.5s ease;
-   }
-   
-   .header-overlay:hover {
-     opacity: 0%;
-     transition: 0.5s ease;
-   }
+  .img-overlay {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(218, 218, 218, 0.733);
+    transition: 0.5s ease;
+  }
+  
+  .img-overlay:hover,
+  .img-overlay:hover + h4
+  {
+    opacity: 0%;
+    transition: 0.5s ease;
+  }
+  
+  .header-overlay:hover {
+    opacity: 0%;
+    transition: 0.5s ease;
+  }
 
   .section-thoughts--container {
     display: flex;
@@ -636,6 +639,10 @@ footer p {
   .svg-big {
     width: 150px;
     height: 150px;
+  }
+
+  .line-dot {
+    width: 100px;
   }
   
   .date {
