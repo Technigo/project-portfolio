@@ -62,28 +62,52 @@
 .header-text-group {
     position: absolute;
     width: 220px;
-    top: 121px;
+    top: 135px;
     left: 24px;
     color: #FFF;
-    font-family: 'Roboto', sans-serif;
-    
+}
+
+.first-heading-row {
+    display: flex;
+    width: 100%;
 }
 
 .first-heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-weight: normal;
-    text-transform: uppercase;
     font-size: 13px;
     line-height: 18px;
-    letter-spacing: 0.04em;
+    letter-spacing: 4%;
+    text-transform: uppercase;
 }
 
-
-.header-text-group h1 {
+.first-heading-name {
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
 
 }
 
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.specialist {
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+/* ALL SECTIONS */
 
 .section:nth-child(2n) {
     background-color: #F4F4F4;
@@ -101,9 +125,9 @@
 
 /* INTRO */
 
-/* .intro-text {
-    padding-bottom: 49px;
-} */
+.intro-text {
+    
+}
 
 p {
     font-style: normal;
@@ -113,7 +137,7 @@ p {
  }
 
 .line {
-    border: 1px solid #c62a88;
+    border: 1px solid #FA382F;
     width: 55px;
     display: inline-block;
     margin-bottom: 4px;
@@ -122,7 +146,7 @@ p {
 .dot {
     height: 10px;
     width: 10px;
-    background-color: #c62a88;
+    background-color: #FA382F;
     border-radius: 50%;
     display: inline-block;
 }
@@ -134,7 +158,7 @@ p {
     font-size: 22px;
     line-height: 26.82px;
     text-align: center;
-    background-color: #c62a88;
+    background-color: #FA382F;
     color: #FFF;
     width: fit-content;
     margin: 0px 145px 30px 145px;
@@ -152,7 +176,7 @@ p {
     font-size: 22px;
     line-height: 26.82px;
     text-align: center;
-    background-color: #c62a88;
+    background-color: #FA382F;
     color: #FFF;
     width: fit-content;
     margin: 0px 51px 24px 69px;
@@ -180,6 +204,7 @@ p {
 
 .project-image-group {
 	position: relative;
+    margin-top: 15px;
 }
 
 .project-overlay {
@@ -188,7 +213,7 @@ p {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(100, 100, 100, 0.5);
+	background: rgba(100, 100, 100, 0.8);
 }
 
 .project-image {
@@ -197,13 +222,28 @@ p {
     height: 212px;
 }
 
+a {
+    text-decoration: none;
+}
+
 h5 {
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
+    color: #FA382F;
     font-weight: 700;
     font-style: normal;
     font-size: 17px;
     line-height: 29px;
     letter-spacing: 1%;
+    padding-top: 20px;
+}
+
+.project-text-group p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 41px;
+    color: black;
 }
 
 .tag-wrapper {
@@ -213,14 +253,12 @@ h5 {
 .tag-wrapper p {
     font-family: "Roboto", sans-serif;
     color: #2b2e34;
-    font-weight: bold;
-    background-color: #db9aab;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 1%;
+    background-color: #FDDFE7;
     text-decoration: none;
-
-    /* Matching line-height and font-size here gives full control 
-        over the size of our tags to the padding*/
-    font-size: 12px; 
-    line-height: 12px;
 
     /* Control the size of the tags */
     padding: 4px;
@@ -232,9 +270,11 @@ h5 {
     border-radius: 5px;
 }
 
+/* OTHER PROJECTS */
+
 .other-projects-heading {
     background-color: #F4F4F4;
-    color: #c62a88;
+    color: #FA382F;
     padding-top: 58px;
     font-weight: 700;
     font-style: normal;
@@ -242,6 +282,27 @@ h5 {
     line-height: 25px;
     text-align: center;
 }
+
+.other-projects-h5 {
+    color: #FA382F;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: 1%;
+    margin-top: 21px;
+}
+
+.other-projects-p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: 1%;
+}
+
 
 /* MY THOUGHTS */
 
@@ -251,8 +312,31 @@ h5 {
     height: 205px;
 }
 
+.thoughts-text-group h5 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 32px;
+}
+
+.thoughts-text-group h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.thoughts-text-group p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 30px;
+}
+
 .more-thoughts-heading {
-    color: #c62a88;
+    color: #FA382F;
     padding-top: 58px;
     font-family: Montserrat;
     font-weight: 700;
@@ -260,6 +344,24 @@ h5 {
     font-size: 21px;
     line-height: 25px;
     text-align: center;
+}
+
+.more-thoughts-group, .thoughts-link, .more-thoughts-first-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 29px;
+    color: black;
+    text-decoration: underline;
+}
+
+.more-thoughts-group p {
+    font-weight: 300;
+}
+
+.more-thoughts-first-link {
+    padding-top: 40px;;
 }
 
 /* SKILLS */
@@ -272,9 +374,16 @@ h5 {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+}
+
+.skills {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 29px;
+    text-decoration: none;
+
 }
 
 .skills-upcoming-parent {
@@ -362,6 +471,12 @@ h5 {
 }
 
 /* MEDIA QUERYS */
+
+@media screen and (max-width: 767px) {
+	.business-site, .github-tracker {
+		display: none;
+	}
+}
 
 /* TABLET */
 @media screen and (min-width: 768px) {
