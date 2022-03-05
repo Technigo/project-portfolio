@@ -10,8 +10,6 @@ a{
     transition: transform .2s;
 }
 
-
-
 .section, .footer{
     font-family: 'Montserrat', sans-serif;
     line-height: 29px;
@@ -26,6 +24,23 @@ a{
 
 .section:nth-child(2n) {
     background-color:#F4F4F4;
+}
+
+/*Fonts*/
+
+.section-heading{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    background-color:#e74a3c;
+    color:white;
+    font-size: 22px;
+    font-weight: 700;
+    padding:2px;
+    width:fit-content;
+    margin-bottom:24px;
 }
 
 /*Header*/
@@ -68,26 +83,6 @@ a{
 .socials-icons{
     height:40px;
     padding:2px;
-}
-
-
-.intro-text{
-   font-size: 17px;
-}
-
-.section-heading{
-    display: flex;
-    justify-content: center;
-}
-
-h2{
-    background-color:#e74a3c;
-    color:white;
-    font-size: 22px;
-    font-weight: 700;
-    padding:2px;
-    width:fit-content;
-    margin-bottom:24px;
 }
 
 .header-text-group{
@@ -134,6 +129,18 @@ h2{
     color:black;
 }
 
+/*Introduction section*/
+
+.intro-text{
+   font-size: 17px;
+}
+
+.intro-tech{
+    text-align: center;
+}
+
+/*Project section*/
+
 .project-card{
     display: flex;
     flex-direction: column;
@@ -141,7 +148,6 @@ h2{
     text-align: left;
     font-size: 17px;
     font-family: 'Roboto', sans-serif;  
-    
 }
 
 .project-image-group{
@@ -155,10 +161,8 @@ h2{
     height:212px;
     width:327px;
     position: relative; 
-    filter: brightness(50%); 
-   
+    filter: brightness(50%);   
 }
-
 
 .picture-text{
     position: absolute;
@@ -206,10 +210,6 @@ h2{
 .project-wrapper{
     display:flex;
     flex-direction: column;
-}
-
-.intro-tech{
-    text-align: center;
 }
 
 .languages{
@@ -270,13 +270,14 @@ h2{
     margin:10px 8px 0px 0px;
 }
 
-
 .project-subheading{
     color:red;
     font-weight: 700;
     font-size: 21px;
     text-align: center;
 }
+
+/*My Thoughts section*/
 
 .thoughts-wrapper{
     display:flex;
@@ -294,15 +295,13 @@ h2{
 
 .more-thoughts-date{
     color:red;
-    margin-top:40px;
-  
+    margin-top:40px; 
 }
 
 .more-thoughts-text, .more-thoughts-date{
     font-size: 17px;
     text-decoration: underline;
     line-height: 29px;
-
 }
 
 .date{
@@ -315,18 +314,18 @@ h2{
     margin:5px 0px 5px 0px;
 }
 
+/*Skills section*/
+
 .skills-wrapper{
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
-    margin:0px;
-   
+    margin:0px; 
 }
 
 .skills-container{
     font-size:17px;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .skills-heading{
@@ -344,16 +343,37 @@ ul{
     padding:0px;
 }
 
+/*For More section*/
+
 .social-icons{
-    margin:16px 64px 40px 64px;
+    margin:16px 64px 0px 64px;
     display: flex;
     justify-content: center;
+}
+
+.social-icons a {
+    margin:0px 5px 0px 5px;
+}
+
+.icons-text{
+    text-align: center;
+    margin:0px;
+}
+
+.icons-text p {
+    display:inline-block;
+    margin:0px 3px 0px 3px;
+    color:#e74a3c;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; 
+    font-size:11px;
 }
 
 .icons{
     padding:5px;
 }
 
+/*Footer section*/
 
 .footer{
     background-color: blue;
@@ -377,6 +397,8 @@ ul{
     line-height: 25px;
     font-weight: 700;
 }
+
+/*Tablet*/
 
 @media screen and (min-width: 768px) {
     .container{
@@ -413,7 +435,6 @@ ul{
     .socials-icons{
         height:60px;
         width:60px;
-
     }
 
     .header-text-group{
@@ -457,16 +478,12 @@ ul{
 
     .projects-wrapper{
         display: flex;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap; 
     }
 
    .projects-card{
-     margin:20px;
-       
+     margin:20px;   
    }
-
-   
 
     .other-projects{
         display: block;
@@ -479,10 +496,16 @@ ul{
     .skills-container{
         padding:20px;
     }
+
+    .social-icons a{
+        margin-right:5px;
+    }
+
+    .icons-text p {
+        font-size: 20px;
+    }
   
-
-
-
+    /*Desktop*/
 @media screen and (min-width: 1200px){
     .container{
     width:1200px;
@@ -502,7 +525,6 @@ ul{
         margin:0px;
         width: 220px;
         height:85px;
-        
     }
 
     .socials-icons{
@@ -514,7 +536,6 @@ ul{
 
     .socials-icons:hover{
         transform: scale(1.2);
-
     }
 
     .intro-text{
@@ -538,8 +559,7 @@ ul{
 
     .header-text-group{
         top:206px;
-        left:426px;
-       
+        left:426px; 
     }
     
     .portfolio-name{
@@ -562,8 +582,6 @@ ul{
        flex-direction: row;
        margin-left: 30px;
        margin-right: 30px;
-       
-       
     }
 
     .project-image-group{
@@ -623,9 +641,7 @@ ul{
         font-size: 16px;
         width:62px;
         height:25px;
-
     }
-
 
     .other-projects{
         text-align: left;
@@ -640,7 +656,6 @@ ul{
     .thoughts-picture{
         width:520px;
         height:354px;
-        
     }
 
     .thoughts-heading{
@@ -680,8 +695,12 @@ ul{
         line-height: 47px;
     }
 
+    .social-icons a{
+        padding:10px;
+    }
 
-
-
+    .icons-text p {
+        padding:10px;
+    }
 }
 }
