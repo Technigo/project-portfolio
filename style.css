@@ -1,28 +1,107 @@
 
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
     background-color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
 
-.body-container {
-    width: 375px;
-    height: 4502;
-    margin: 0 auto;
+p {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 200;
+    font-style: normal
 }
 
-.header-container {
-    background-image: url('images/portfolio-background-image.png');
+.header {
+    background-image: url("./images/portfolio-header-image.jpg");
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;  
     background-position: right;
     height: 520px;
 }
 
-.top-section {
+.header-container {
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header-links {
+    position: absolute;
+    display: flex;
+    top: 48px;
+    right: 0;
+    gap: 10px;
+}
+
+.icon-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-pic {
+    width: 40px;
+    height: 40px;
+}
+
+.header-text {
     width: 220px;
-    height: 202px;
     top: 121px;
     left: 24px;
+    color: #FFF;
+    position: absolute;
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+.portfolio-owner {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    /* add letter spacing? */
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.my-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.other-titles {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -16px;
+    right: 0;
+    border: 2px solid #FFF;
 }
 
 .section:nth-child(2n) {
@@ -33,3 +112,19 @@ footer {
     background-color: aquamarine;
 }
 
+.footer-information {
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 60px;
+}
+
+.footer-heading {
+    color: #FFF;
+    text-transform: uppercase;
+    line-height: 125%;
+}
+
+.footer-text {
+    line-height: 167%;
+    color: #FFF;
+}
