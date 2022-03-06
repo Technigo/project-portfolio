@@ -2,7 +2,7 @@
     --color-dark-brick: hsl(14.3, 45.4%, 51.2%);
     --color-dark-grey: hsl(0 , 0%, 33.7%);
     --color-light-beige: hsl(40, 60%, 96.1%);
-    --color-dark-green: hsl(135.7,27.4%,46.5%);
+    --color-dark-yellow: hsl(50,60%,66.7%);
   }
 
 * {
@@ -50,6 +50,7 @@ header {
     height: 130px;
     border-radius: 50%;
     border: 3px solid #FFFFFF;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -62,6 +63,7 @@ h2 {
 h3 {
     color: white;
     padding: 5px;
+    background-color: var(--color-dark-brick);
 }
 
 h4 {
@@ -78,9 +80,6 @@ h5 span {
     font-weight: 400;
 }
 
-.section--h3 {
-    margin: 20px;
-}
 
 main {
     gap: 20px;
@@ -99,7 +98,7 @@ section {
 .section--h3 {
     display: inline-block;
     background-color: var(--color-dark-brick);
-    margin-top: 10px;
+    margin: 10px 20px 20px 20px;
 }
 
 section:nth-of-type(2n) {
@@ -132,23 +131,19 @@ section:nth-of-type(2n) {
 }
 
 .featured-projects__card__technologies p {
-    background-color: var(--color-dark-green);
+    background-color: var(--color-dark-yellow);
     color: white;
     padding: 3px;
     margin: 10px 5px 5px 2px;
     font-size: .8em;
 }
+
 .overlay {
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    font-size: 2em;
-    overflow: hidden;
     position: relative;
     text-align: center;
     width: 350px;
-    margin: auto;
 }
+
 .overlay img {
     width: 350px;
 }
@@ -178,6 +173,7 @@ section:nth-of-type(2n) {
     right: 0;
     z-index: 2;
     color: #fff;
+    font-size: 2em;
 }
 
 .overlay.hover:before,
@@ -209,7 +205,8 @@ section:nth-of-type(2n) {
 
 .skills__card--content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -250,6 +247,27 @@ footer {
     background-color: var(--color-light-beige);
 }
 
+@media (min-width: 900px) {
+    header {
+        align-content: space-between;
+        justify-content: space-between;
+    }
 
+    .featured-projects__grid-container {
+        display: flex;
+    }
+
+    .skills__card--content {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    
+    section div {
+        width: 1100px;
+    }
+
+}
 
 
