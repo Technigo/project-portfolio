@@ -2,34 +2,13 @@
 }
 
 html {
+  margin: 0;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
   font-family: "Montserrat", sans-serif;
-}
-
-/* section {
-  margin: 0 24px;
-} */
-
-.header-container {
-  width: 375px;
-  margin: 0 auto;
-}
-
-@media and screen (min-with: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media and screen (min-with: 1200px) {
-  .container {
-    width: 1200px;
-  }
 }
 
 .social {
@@ -47,6 +26,33 @@ header {
   /* background-repeat: no-repeat; */
 }
 
+/* section {
+  margin: 0 24px;
+} */
+
+@media and screen (min-with: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media and screen (min-with: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.header-container {
+  width: 375px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+
 .header-image {
   width: 180px;
   border-radius: 50%;
@@ -56,15 +62,6 @@ header {
   border: 3px solid #fff;
 }
 
-.header-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 24px;
-  box-sizing: border-box;
-}
-
 .header-text-group {
   top: 121px;
   left: 24px;
@@ -72,10 +69,15 @@ header {
   bottom: 197px;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*All the text styling*/
 h1 {
-  font-family: "Montserrat", sans-serif;
   margin: 0;
   color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 h1.page-description {
@@ -90,19 +92,46 @@ h1.page-description-plus {
   line-height: 50px;
 }
 
-h1.title-uppercase {
-  font-family: "Roboto", sans-serif;
+h1.title {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
 }
 
 .bold {
+  font-weight: 700;
+}
+
+p {
+  margin: 3px;
+  line-height: 28px;
+  font-size: 17px;
+}
+
+h3.description {
+  font-size: 22px;
+  align-self: center;
+  color: #fff;
+  background-color: #ff0000;
+}
+
+/*with out backround color */
+.uppercase-type {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  color: #ff0000;
+  margin: 10px;
+}
+
+.uppercase-description-two {
+  text-transform: uppercase;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 22px;
+  line-height: 27px;
+  align-self: center;
+  color: #ff0000;
 }
 
 /*Sections*/
@@ -135,14 +164,6 @@ article.summary-section {
   top: 579px;
 }
 
-.summary-text {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 29px;
-  margin: 0;
-}
-
 /*Box 2*/
 article.tech-section {
   padding: 2rem 0;
@@ -154,51 +175,17 @@ article.tech-section {
   text-align: center;
 }
 
-.uppercase-description {
-  text-transform: uppercase;
-  width: fit-content;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  align-self: center;
-  color: #fff;
-  background-color: #ff0000;
-}
-
-/*with out backround color */
-.uppercase-type {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  color: #ff0000;
-  margin: 10px;
-}
-
-.uppercase-description-two {
-  text-transform: uppercase;
-  width: fit-content;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  align-self: center;
-  color: #ff0000;
-}
-
-.uppercase- .tech-text {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400px;
-  font-size: 17px;
-  line-height: 29px;
+article.project {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 0;
-  text-align: center;
 }
 
 .project-text-group {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+}
+
+.project-image-group {
+  background-image: url(./images/pizza.png);
 }
 
 article.my-thoughts {
@@ -244,23 +231,14 @@ h4.thoughts-title {
 .skills-text-group {
   padding-bottom: 2rem;
   display: grid;
-  gap: 2em;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .skills-items {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.more {
-  display: none;
-}
-
-p {
-  margin: 5px;
-  line-height: 28px;
 }
 
 .for-more-text-group {
