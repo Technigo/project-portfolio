@@ -4,7 +4,7 @@
 
 :root {
   /* colors */
-  --clr-dark: #9DBBD7;
+  --clr-dark: #245A8C;
   --clr-accent: #F2E3D0;
   --clr-medium: #ffb575;
   --clr-light: #f6f6f6;
@@ -268,7 +268,11 @@ a[href^=tel] {
 /**** Header ****/
 header {
   background: var(--clr-white);
-  height: 350px;
+  background: url('./images/heroimage_mobile.svg');
+  object-fit: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
   justify-content: space-around;
 }
 
@@ -297,7 +301,7 @@ header {
 }
 
 .header-container {
-  margin-top: 125px;
+  padding-top: 125px;
 }
 
 .header-container--second {
@@ -469,15 +473,15 @@ div.section-thoughts--text {
 
 /**** Contact ****/
 footer {
-  background-color: var(--clr-dark);
+  background-color: var(--clr-accent);
 }
 
 footer h3 {
-  color: var(--clr-white);
   font-family: 'montserrat', sans-serif;
 }
 
 footer p {
+  color: var(--clr-black);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -541,11 +545,12 @@ footer p {
   }
 
   header {
+    background: url('./images/heroimage.svg');
     height: 400px;
   }
 
   .header-container {
-    margin-top: 20vh;
+    padding-top: 20vh;
   }
 
   .container {
