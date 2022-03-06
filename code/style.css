@@ -6,7 +6,7 @@
   /* colors */
   --clr-dark: #245A8C;
   --clr-accent: #F2E3D0;
-  --clr-medium: #ffb575;
+  --clr-medium: #2f6d4e;
   --clr-light: #f6f6f6;
   --clr-white: #FFF;
   --clr-black: #111111; 
@@ -137,7 +137,7 @@ p {
 img.profile-image {
   position: absolute;
   right: 30px;
-  top: 320px;
+  top: 385px;
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -269,11 +269,15 @@ a[href^=tel] {
 header {
   background: var(--clr-white);
   background: url('./images/heroimage_mobile.svg');
-  object-fit: contain;
   background-size: cover;
   background-repeat: no-repeat;
   height: 550px;
-  justify-content: space-around;
+}
+
+.header-container {
+  position: absolute;
+  top: 150px;
+  left: 100px;
 }
 
 .social {
@@ -298,10 +302,6 @@ header {
 
 .social-text {
   display: none;
-}
-
-.header-container {
-  padding-top: 125px;
 }
 
 .header-container--second {
@@ -378,6 +378,7 @@ article {
   font-family: 'montserrat', sans-serif;
   padding-top: 2.5em;
 }
+
 
 /**** Tech ****/
 .section-tech p {
@@ -546,11 +547,13 @@ footer p {
 
   header {
     background: url('./images/heroimage.svg');
-    height: 400px;
+    background-size: cover;
+    height: 500px;
   }
 
   .header-container {
-    padding-top: 20vh;
+    top: 150px;
+    left: 250px;
   }
 
   .container {
@@ -563,7 +566,7 @@ footer p {
 
   img.profile-image {
     right: 30px;
-    top: 375px;
+    top: 275px;
     width: 250px;
     height: 250px;
   }
@@ -697,10 +700,6 @@ footer p {
     font-size: 28px;
   }
   
-  header {
-    height: 400px;
-  }
-  
   p, 
   li,
   .other-projects--container h4 {
@@ -727,7 +726,7 @@ footer p {
 
   img.profile-image {
     right: 30px;
-    top: 285px;
+    top: 200px;
     width: 330px;
     height: 330px;
   }
