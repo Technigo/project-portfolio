@@ -1,4 +1,12 @@
 
+/*Add global varibles for color here */
+:root {
+    ---primary: #CD8987;
+    ---secondary: #828E82;
+    ---main: #FFF;
+    ---highlight: #DF2935;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,18 +17,45 @@
 }
 
 body {
-    background-color: #FFF;
+    background-color: var(---main);
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
 
-.header-container,
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0;
+}
+
+h2 {
+    display: table;
+    text-align: center;
+    color: var(---main);
+    background-color: var(---secondary);
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 4px 8px;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px auto 0 auto;
+    color: var(---secondary);
+}
+
 .container {
     width: 375px;
     margin: 0 auto;
+    padding: 40px 40px;
 }
-
-/* SECTION STYLING */
 
 .section:nth-child(2n) {
     background-color: #F4F4F4;
@@ -29,7 +64,6 @@ body {
 .section {
     padding: 40px 0;
 }
-
 
 p {
     font-size: 17px;
@@ -44,7 +78,7 @@ a {
 }
 
 .color {
-    color: red;
+    color: var(---highlight);
 }
 
 /*STYLING HEADER*/
@@ -73,31 +107,17 @@ a {
     gap: 10px;
 }
 
-/*.icon-link {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-CAN I REMOVE THIS CLASS?*/
-
 .icon-pic {
     width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 40px;  
 }
 
 .header-text {
+    color: var(---main);
+    position: absolute;
     width: 220px;
     top: 121px;
     left: 24px;
-    color: #FFF;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
 }
 
 .portfolio-owner {
@@ -113,14 +133,8 @@ CAN I REMOVE THIS CLASS?*/
     font-weight: 700;
 }
 
-.my-title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-}
-
 .other-titles {
-    font-weight: 400;
+    font-weight: bold;
     font-size: 24px;
     line-height: 40px;
 }
@@ -132,14 +146,15 @@ CAN I REMOVE THIS CLASS?*/
     position: absolute;
     bottom: -16px;
     right: 24px;
-    border: 2px solid #FFF;
+    border: 2px solid var(---main);
 }
 
 
-/* STYLING OF THE SUMMARY SECTION*/
+/*------ STYLING OF THE SUMMARY SECTION ------*/
+
 .intro-line {
     width: 40px;
-    border: 1px solid black;
+    border: 1px solid var(---primary);
     display: inline-block;
     margin-bottom: 4px;
 }
@@ -147,16 +162,9 @@ CAN I REMOVE THIS CLASS?*/
 .intro-dot {
     height: 10px;
     width: 10px;
-    background-color: black;
+    background-color: var(---primary);
     border-radius: 50%;
     display: inline-block;
-}
-
-.summary-text {
-    font-size: 17px;
-    line-height: 29px;
-    margin: 49px 24px 43px 24px;
-    
 }
 
 /* CONTAINERS FOR TITLES */
@@ -175,21 +183,21 @@ CAN I REMOVE THIS CLASS?*/
 .title {
     font-size: 22px;
     line-height: 122%;
-    color: #FFF;
-    background-color: red;
+    color: var(---main);
+    background-color: var(---primary);
     padding: 0 4px;
     text-transform: uppercase;
     text-align: center;
 }
 
+/*----- TECH SECTION  -----*/
 .tech-text {
-    font-size: 17px;
-    line-height: 29px;
-    padding: 0 24px;
+    margin-top: 24px;
     text-align: center;
 }
 
-/* add .code-article-box here later on as well */
+
+/* ------ PROJECT SECTION ------ */
 .project-container {
     width: 327px;
 }
@@ -222,7 +230,8 @@ CAN I REMOVE THIS CLASS?*/
 }
 
 .project-overlay-title {
-    color: #FFF;
+    color: var(---main);
+    background-color: transparent;
     font-size: 28px;
     position: absolute;
     top: 45%;
@@ -230,7 +239,7 @@ CAN I REMOVE THIS CLASS?*/
     bottom: 0;
     right: 0;
     transition: 0.5s ease;   
-    text-align: center;
+    text-align: center; 
 }
 
 .project-image-group:hover .project-overlay, .project-image-group:hover .project-overlay-title { 
@@ -238,71 +247,76 @@ CAN I REMOVE THIS CLASS?*/
     color: transparent;
 }
 
+.project-text-group {
+    margin-top: 7px auto;
+}
+
 .featured-project-title {
-    font-family: "Roboto", sans-serif;
-    color: blue;
-    font-size: 17px;
-    text-transform: uppercase;
+    margin: 7px auto;
     line-height: 171%;
-    margin: 17px 0;;
 }
 
 .project-description {
     font-family: "Roboto", sans-serif;
-    font-size: 17px;
-    line-height: 171%;
 }
 
 .other-projects {
     margin-top: 40px;
 }
 
+.subtitle {
+    background-color: transparent;
+    color: black;
+}
+
 .other-projects-title {
-    font-family: "Roboto", sans-serif;
-    color: blue;
-    font-size: 17px;
-    text-transform: uppercase;
+    margin: 7px auto;
     line-height: 132%;
 }
 
 .other-projects-description {
     font-family: "Roboto", sans-serif;
-    font-size: 17px;
     line-height: 171%;
 }
 
+.arrows {
+    color: var(---highlight);
+    text-decoration: underline var(---highlight);
+}
+
 .tag-box {
-    margin-top: 12px;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 8px;
 }
 
 .tag {
     font-family: "Roboto", sans-serif;
-    font-family: 10px;
-    line-height: 122%;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
     letter-spacing: 0.03em;
-    padding: 5px;
-    margin-right: 8px;
-    background-color: aquamarine;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    padding: 3px 5px;
+    margin:0;
+    color: var(---main);
+    background-color: var(---primary);
 }
 
-.subtitle-box {
-    font-size: 21px;
-    line-height: 119%;
-    text-transform: uppercase;
-}
+
+/*-----SKILL SECTION -----*/
 
 .skill-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    row-gap: 25px;
+    justify-content: space-between;
+    row-gap: 15px;   
 }
+
+.skills {
+    text-align: center;
+}
+
 
 .skills-subtitle {
     font-family: "Roboto", sans-serif;
@@ -319,59 +333,152 @@ CAN I REMOVE THIS CLASS?*/
     list-style: none;
 }
 
+/*-----CONTACT SECTION -----*/
 .contact-social-links {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 12px;
+.social-skill {
+    flex-direction: column; 
 }
 
 .social-icon {
-    display: flex;
-    justify-content: space-evenly;
-
+    align-self: flex-start;
 }
 
-.icon-title {
-    display: flex;
-    text-align: center;
-    padding: 10px;
-    font-size: 11px;
+.social-title {
+    align-self: flex-end;
 }
-
 
 
 /* FOOTER STYLING */
 footer {
     height: 300px;
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: var(---secondary);
 }
 
 .footer-information {
     text-align: center;
-    font-size: 21px;
-    line-height: 145%;
-    padding: 60px 24px 80px 24px;
+    text-decoration: none;
+    color: var(---main);
 }
 
 .footer-heading {
-    color: #FFF;
-    text-transform: uppercase;
-    line-height: 125%;
+    padding-top: 40px;
+    margin-bottom: 24px;
+    background-color: transparent;
+    
 }
 
 .footer-text {
-    line-height: 167%;
-    color: #FFF;
+    font-weight: bold;  
+}
+
+.footer-information a {
+    color: var(---main);
+    text-decoration: none;
+}
+
+.footer-information a:hover {
+    text-decoration: underline;
+}
+
+
+/*------ MEDIA QUERIES ------*/
+@media screen and (min-width: 768px) {
+
+h1 {
+    font-size: 60px;
+    line-height: 80px;
+}
+.container {
+    width: 768px;
+}
+
+.header-container {
+    width: 718px;
+}
+
+.project-container{
+    width: 100%;
+}
+
+.project-image-group {
+    width: 100%;
+}
+
+.tablet-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+}
+
+.header-text {
+    width: 400px;
+}
+
+.portfolio-owner {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.other-titles {
+    font-size: 36px;
+    line-height: 55px;
+}
+
+.icon-pic {
+    width: 60px;
+    height: 60px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+}
+
+.contact-social-links {
+    display: flex;
+    justify-content: space-around;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 70px;
+        line-height: 85px;
+    }
+
+    h2 {
+        font-size: 26px;
+        line-height: 30px;
+        padding: 5px 10px;
+    }
+
+    h3, p, a {
+        font-size: 21px;
+        line-height: 34px;
+    }
+
+    .container {
+        width: 900px;
+    }
+
+    .header-container {
+        width: 800px;
+    }
+
+   .icon-pic {
+        height: 80px;
+    }
+
+    .profile-img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .tag p {
+        font-size: 15px;
+    }
 }
