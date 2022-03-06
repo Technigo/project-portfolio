@@ -4,7 +4,8 @@
 
 :root {
   /* colors */
-  --clr-dark: #ce81b4;
+  --clr-dark: #9DBBD7;
+  --clr-accent: #F2E3D0;
   --clr-medium: #B4B4B4;
   --clr-light: #f6f6f6;
   --clr-white: #FFF;
@@ -78,7 +79,7 @@ img.title-icon {
 h2 {
   font-family: 'montserrat', sans-serif;
   display: inline-block;
-  background: var(--clr-dark);
+  background: var(--clr-accent);
   color: var(--clr-black);
   padding: 0.2em;
   margin: 2em 0;
@@ -118,6 +119,10 @@ h5 {
 
 h4 {
   font-size: 18px;
+}
+
+h5 {
+  display: block;
 }
 
 h4.header-overlay {
@@ -224,22 +229,25 @@ svg {
 a.social-link,
 a.project-link,
 a.social-link:active,
-a.project-link:active {
-  color: var(--clr-black);
-}
-
+a.project-link:active,
 a:hover,
 a:focus {
   color: var(--clr-black);
+}
+
+.section-thoughts--text:hover,
+.project-link:hover,
+.section-thoughts--text:focus,
+.project-link:focus {
+  color: var(--clr-medium)
 }
 
 .social-icon-reverse,
 .social-icon:hover,
 .social-icon:hover ~ .sibling,
 a.social-link:hover,
-a.project-link:hover,
-a.social-link:focus,
-a.project-link:focus {
+a.social-link:focus
+ {
   color: var(--clr-dark);
   fill: var(--clr-dark);
 }
@@ -409,6 +417,10 @@ article {
 
 .other-projects--container h4 {
   font-size: 16px;
+}
+
+.project-container.reverse {
+  flex-direction: row-reverse;
 }
 
 .date {
