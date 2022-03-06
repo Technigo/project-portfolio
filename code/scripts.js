@@ -49,7 +49,7 @@ const createOtherProjects = (otherProjectsArr) => {
         (project) => {
             otherProjectsElement.innerHTML += `
                 <div class="other-project" id=${project.id} >
-                    <a href=${project.github_url} target="_blank"><div class="project-heading">${project.heading.toUpperCase()}.</div></a>
+                    <a href=${project.github_url} target="_blank" style="text-decoration: none;"><div class="project-heading other-project-heading">${project.heading.toUpperCase()}.</div></a>
                     <div class="project-description">${project.description} <a class="project-github-url" href=${project.github_url} target="_blank">>></a></div>
                     <div class="project-url"><a href=${project.url} target="_blank">View it live</a></div>
                     <div class="project-tags">${tagsToHtml(project.tags)}</div>
@@ -96,7 +96,7 @@ const createFeaturedProjects = (featuredProjectsArr) => {
                     </div>
                 </a>
                 <div class="project-text-group">
-                    <a href=${featured.github_url} target="_blank">
+                    <a href=${featured.github_url} target="_blank" style="text-decoration: none;">
                         <div class="project-heading">${featured.heading.toUpperCase()}</div>
                     </a>
                     <span class="project-description">${featured.description}</span>
