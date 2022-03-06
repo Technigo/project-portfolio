@@ -5,9 +5,9 @@ body {
 }
 
 .container {
-  /*width: 375px;*/
-  width: 100%;
+  width: 325px;
   margin: 0 auto;
+  padding: 25px 25px 0px 0px;
 }
 
 .section:nth-child(2n) {
@@ -133,6 +133,7 @@ body {
   line-height: 50px;
   text-align: center;
   letter-spacing: 0.01em;
+  color:#008E89;
 }
 
 .tech p {
@@ -155,6 +156,7 @@ body {
   font-size: 22px;
   line-height: 27px;
   text-align: center;
+  color:#008E89;
 }
 
 .highlight {
@@ -171,23 +173,20 @@ body {
   font-weight: bold;
   background-color: #db9aab;
   text-decoration: none;
-
-  /* Matching line-height and font-size here gives full control 
-       over the size of our tags to the padding*/
   font-size: 12px;
   line-height: 12px;
-
-  /* Control the size of the tags */
   padding: 4px;
-
-  /* Control the spacing of our tags */
   margin: 3px;
-
-  /* Some rounded borders */
   border-radius: 5px;
 }
 
 .projects-pictures-mobile {
+  position: relative;
+  text-align: center;
+  color: #2b2e34;
+}
+
+.projects-pictures-desktop {
   position: relative;
   text-align: center;
   color: #2b2e34;
@@ -201,22 +200,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 30px;
 }
 
 .project-image-overlay {
   position: absolute;
   width: 100%;
   height: 100%; 
-  
-  /* This is a semi-transparent overlay on the image */
   background-color: rgba(0, 0, 0, 0.5);
-
-  /* This will cause the overlay to fade */
   transition: 0.5s ease;
 }
 
 .projects-pictures-mobile {
-  /* This transition will cause the text to fade */
   transition: 0.5s ease;
 }
 
@@ -228,11 +223,6 @@ body {
   text-align: center;
 }
 .text {
-  width: 327px;
-  height: 147px;
-  left: 24px;
-  top: 935px;
-
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   line-height: 29px;
@@ -249,11 +239,12 @@ body {
 .thoughts h2 {
   font-size: 22px;
   line-height: 27px;
+  color:#008E89;
 }
 
 .thoughts img {
   border-radius: 10%;
-  width: 375px;
+  width: 325px;
 }
 
 /*Skills section*/
@@ -326,6 +317,17 @@ body {
   font-size: 22px;
   line-height: 27px;
   text-align: center;
+  color:#008E89;
+}
+
+.more-section-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  text-align: center;
 }
 
 /*footer*/
@@ -336,6 +338,7 @@ body {
   height: 302px;
   left: 0px;
   background: #072bce;
+  padding: 0;
 }
 .contact {
   font-family: Montserrat;
@@ -352,10 +355,27 @@ body {
   color: #fff;
 }
 
-/*desktop*/
-@media screen and (min-width: 668px) {
+/*Tablet*/
+@media screen and (min-width: 768px) {
   .container {
-    width: 1920px;
+    width: 680px;
+  }
+  .header {
+    width: 768px;
+  }
+  .section {
+    width: 100%;
+  }
+
+}
+/*desktop*/
+@media screen and (min-width: 1024px) {
+
+  .section {
+    width: 100%;
+  }
+  .container {
+    max-width: 1100px;
   }
   .header {
     width: 1920px;
