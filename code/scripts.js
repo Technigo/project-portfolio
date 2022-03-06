@@ -46,31 +46,24 @@ const createOtherProjects = (otherProjectsArr) => {
 
 const featuredProjectsData = [
     {
-        id: "guess-who",
-        projectTitle: "test title",
-        projectImage: "assets/project.png",
-        projectAlt: "design screenshot",
-        heading: "CHAT BOT BUILT IN JAVASCRIPT",
-        description: "Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.",
-        tags: ["html5", "css3", "javascript es6"]
+        id: "project-github-tracker",
+        projectTitle: "Github Tracker",
+        projectImage: "assets/github-tracker.png",
+        projectAlt: "github tracker application screenshot",
+        heading: "A page tracking my github projects in JS",
+        description: "A web application that displays all github repositories related to the bootcamp that can be found on my Github Profile. The application is using Github's API to fetch repositories, pull requests and comments and displays the info in a structured way.",
+        tags: ["api", "github", "json", "html5", "css3", "javascript es6", "chartjs"],
+        url: "https://github.com/faypi/project-github-tracker"
     },
     {
-        id: "guess-who",
-        projectTitle: "test title",
-        projectImage: "assets/project.png",
-        projectAlt: "design screenshot",
-        heading: "CHAT BOT BUILT IN JAVASCRIPT",
-        description: "Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.",
-        tags: ["html5", "css3", "javascript es6"]
-    },
-    {
-        id: "guess-who",
-        projectTitle: "test title",
-        projectImage: "assets/project.png",
-        projectAlt: "design screenshot",
-        heading: "CHAT BOT BUILT IN JAVASCRIPT",
-        description: "Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.",
-        tags: ["html5", "css3", "javascript es6"]
+        id: "project-weather-app",
+        projectTitle: "Weather App",
+        projectImage: "assets/weather-app.png",
+        projectAlt: "project weather app application screenshot",
+        heading: "A weather app built in JS",
+        description: "A web application that displays a 5 day weather forecast for a location and current weather for multiple other locations, using OpenWeatherMap's API.",
+        tags: ["api", "json", "html5", "css3", "javascript es6"],
+        url: "https://github.com/faypi/project-weather-app"
     }
 ]
 
@@ -84,7 +77,7 @@ const createFeaturedProjects = (featuredProjectsArr) => {
                     <img class="project-image" src=${featured.projectImage} alt="${featured.projectAlt}" />
                 </div>
                 <div class="project-text-group">
-                    <div class="project-heading">${featured.heading}</div>
+                    <div class="project-heading">${featured.heading.toUpperCase()}</div>
                     <span class="project-description">${featured.description}                    </span>
                     <div class="project-tags">${tagsToHtml(featured.tags)}
                     </div>
