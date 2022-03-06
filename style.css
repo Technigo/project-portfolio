@@ -9,7 +9,21 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*MOBILE FIRST should this be further down?*/
+.section {
+    margin: 24px;
+
+}
+
+.section:nth-child(2n) {
+    background-color: #c7b8b0;
+
+}
+
+.section:nth-child(2n+1) {
+    background-color: whitesmoke;
+
+}
+/*MOBILE FIRST*/
 .container {
     width: 375px;
     margin: 0 auto;
@@ -54,9 +68,11 @@ header {
 
 /* Header-container*/
 .heading-container {
+    position: absolute;
     display: flex;
     justify-content: center;
     margin: 10px auto 5px;
+
   }
 
 .header-name {
@@ -85,6 +101,7 @@ header {
     color: black;
     text-shadow: 0 0 3px#c7b8b0;
     margin: 0;
+    
 }
 
 /*MAKSY DID SOMETHING HERE*/
@@ -113,26 +130,37 @@ header {
     position: relative;
 }
 /*THIS IS THE STYLING FOR SECTIONS*/
+
+.lollipop-image-separator {
+    position: absolute;
+    width: 98px;
+    height: 20px;
+    left: 410px;
+    top: 807px;
+}
+
 .intro-section {
-    height: 324px;
-    line-height: 29px;
+    /* position: absolute;  */
+    width: 1100px;
+    height: 200px;
+    left: 410px;
+    top: 791px;
+    line-height: 50px;
     padding-left: 24px; 
     padding-right: 24px;
     padding-top: 49px; 
     padding-bottom: 43px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
 }
 
-h3 {
+/* h3 {
     text-align: center;
     color: black;
     font-size: 32px;
-}
-
-h4 {
-    text-align: center;
-    color: black;
-    font-size: 32px;
-}
+} */
 
 h5 {
     text-align: center;
@@ -146,20 +174,190 @@ h5 {
     padding-bottom: 60px;
     text-align: center;
     line-height: 29px;
+    /* position: absolute; */
+    width: 1100px;
+    height: 150px;
+    left: 410px;
+    top: 1364px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 50px;
+    /* or 167% */
+
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #000000;
 }
 
 .title-tech {
-    font-size: 24px;
-    line-height: 50px;
+    /* position: absolute; */
+    width: 374px;
+    height: 52px;
+    left: 773px;
+    top: 1220px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: black;
+}
+/* FEATURED PROJECTS */
+
+.featured-projects-section {
+    position: absolute;
+    width: 1920px;
+    height: 2222px;
+    left: 0px;
+    top: 1640px;
+
+    background: #F4F4F4;
+
+}
+
+.featured-projects {
+    margin: 17px 0;
+    position: absolute;
+    width: 622px;
+    height: 52px;
+    left: 649px;
+    top: 1761px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: black;
+
 }
 
 .project-image {
-    width: 327px;
-    height: 212px;
+    display: flex;
+    position: absolute;
+    width: 523px;
+    height: 305px;
+    left: 987px;
+    top: 1904px;
 }
 
+.project-image-group {
+    width: 100%;
+    position: relative;
+}
+
+.project-heading {
+    position: absolute;
+    width: 378px;
+    height: 47px;
+    left: 484px;
+    top: 2033px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: black;
+}
+
+.project-description {
+    position: absolute;
+    width: 523px;
+    height: 110px;
+    left: 987px;
+    top: 2255px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 41px;
+    /* or 164% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #FA382F;
+}
+
+/* .project-text-group {
+
+} */
+.tag {
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    left: 987px;
+    top: 2389px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+}
+
+.project-overlay {
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    background: rgba(100 , 100, 55 ,0.4,);
+    position: absolute;
+    width: 523px;
+    height: 306px;
+    left: 987px;
+    top: 1904px;
+}
+
+/* OTHER PROJECTS */
+.other-projects-section {
+    width: 622px;
+    height: 47px;
+    left: 636px;
+    top: 3114px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 47px;
+    /* identical to box height, or 124% */
+
+    text-align: center;
+
+    color: #FA382F;
+
+}
 /* MY THOUGHTS ABOut CODE */
-.my-thougths-about-code {
+.my-thougths-about-code-head {
     position: absolute;
     width: 766px;
     height: 64px;
@@ -174,6 +372,27 @@ h5 {
     Vertical-align: Top;
     Letter-spacing: 1%;
 }
+
+.my-thoughts-article {
+    position: absolute;
+    width: 509px;
+    height: 407px;
+    left: 411px;
+    top: 4537px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 41px;
+    /* or 164% */
+
+
+    color: #FA382F;
+
+
+}
+
 
 /* MORE THOUGHTS */
 .more-thoughts {
@@ -193,60 +412,51 @@ h5 {
     text-align: center;
 }
 
-.for-more-section {
-
-}
-
-
-.section {
-    margin: 24px;
-
-}
-
-.section:nth-child(2n) {
-    background-color: #c7b8b0;
-
-}
-
-.section:nth-child(2n+1) {
-    background-color: whitesmoke;
-
-}
-
-.project-image-group {
-    width: 100%;
-    position: relative;
-}
-
-.project-image {
-    width: 100%;
-    display: flex;
-}
-
-.project-heading {
-    font-size: 24px;
-    line-height: 30px;
-    margin: 17px 0;
-}
-
-.project-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(100 , 100, 55 ,0.4,);
-}
-
-.tag {
-    color: black;
-    font-size: 12px;
-}
-
 .my-thoughts-image {
     width: 327px;
     height: 205px;
 }
+
+/*SKILLS SECTION*/
+.skills-section {
+    position: absolute;
+    width: 1920px;
+    height: 840px;
+    left: 0px;
+    top: 5286px;
+
+    background: #F4F4F4;
+}
+
+.skill-group {
+    position: absolute;
+    width: 1100px;
+    height: 467px;
+    left: 410px;
+    top: 5544px;
+}
+
+/*FOR MORE SECTION*/
+.for-more-text {
+    position: absolute;
+    width: 1100px;
+    height: 33px;
+    left: 411px;
+    top: 5075px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    /* identical to box height, or 132% */
+
+    text-decoration-line: underline;
+
+    color: #FA382F;
+}
+
+
 
 footer {
     /* position: absolute; */
