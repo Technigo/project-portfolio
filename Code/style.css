@@ -126,8 +126,41 @@ section:nth-child(2n) {
 .text-container {
   font-family: "Roboto", sans-serif;
 }
+
+.blogs h2 {
+  margin: 20px;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+.blog-image {
+  margin: 20px;
+}
+.blog-container img {
+  border: 2px solid white;
+  width: 327px;
+  height: 205px;
+  opacity: 90%;
+  border-radius: 10px;
+  z-index: -2;
+}
 .projects {
   height: 100%;
+}
+.blog-caption span {
+  color: red;
 }
 .projects h2 {
   margin: 20px;
@@ -142,6 +175,7 @@ section:nth-child(2n) {
   color: rgba(236, 5, 5, 0.616);
   font-size: 25px;
 }
+
 .featured-projects-container {
   display: flex;
   flex-direction: column;
@@ -320,6 +354,13 @@ a:hover {
     font-size: 15px;
     text-transform: capitalize;
   }
+  .blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+  }
   .featured-projects-container {
     display: flex;
     flex-direction: row;
@@ -327,9 +368,14 @@ a:hover {
     flex-wrap: wrap;
     width: 90%;
   }
+  .blog-container img {
+    width: 523px;
+    height: 306px;
+    margin: 0, auto;
+  }
 
   .featured-projects-container img {
-    width: 523px;
+    width: 423px;
     height: 306px;
     margin: 0, auto;
   }
@@ -356,5 +402,30 @@ a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     width: 90%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: end center;
+    width: 90%;
+  }
+  .featured-projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: end center;
+    width: 90%;
+  }
+  .blog-container img {
+    width: 423px;
+    height: 306px;
+    margin: 0, auto;
+  }
+
+  .featured-projects-container img {
+    width: 423px;
+    height: 306px;
+    margin: 0, auto;
   }
 }
