@@ -8,6 +8,7 @@ body {
     padding: 0;
 }
 
+/****HEADER****/
 .header {
     position: absolute;
     width: 100%; 
@@ -18,26 +19,29 @@ body {
     margin: 6px; 
 }
 
-  .header .black {
-      display: none;
-  }
+.header .black-icons {
+    display: none;
+}
   
-  .header p {
-      color: white;
-  }
+.header p {
+    color: white;
+}
   
-  .header h1 {
+.header h1 {
     position: relative;
     top: 18px;
     left: 18px;
-  }
+}
 
 .container p {
     color: #f93943;
 }
-.picture {    
+
+/****PROFILE****/
+.profile-picture {    
     width: 100%;
 }
+
 .download-cv-button {
     border: 2px solid black;
     padding: 2px;
@@ -48,35 +52,33 @@ body {
     transition: transform .2s;
 }
 
-
 .download-cv-button:hover {
     transform: scale(1.05);
     transition-duration: 1s
 }
 
-.description-container {
+.profile-description-container {
     background-color: #ECECEC;
     display: flex;
-
+    text-align: center;
 }
 
-.test {
-    border-bottom: 3px solid #f93943;
-    display: inline;
-}
-
-.description {
+.profile-description {
     padding: 4%;
     font-size: xx-large;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-
+/****SKILLS****/
+.red-line {
+    border-bottom: 3px solid #f93943;
+    display: inline;
+}
 
 .skill-container {
-    width: 100%;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -87,46 +89,31 @@ body {
 .skill-bar {
     width: 100%;
     padding: 4%;
-    
 }
+
 .skill-text {
     padding: 4%;
 }
 
-.loading {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.loading-bar {
     margin-bottom: 4%;
 }
 
-.loading .line-box-html {
-    width: 100%;
+.loading-bar .line-box {
     border: 2px solid #f93943;
     border-radius: 20px;
 }
 
-.loading .line-box-html .line-html {
+.loading-bar .line-box .line-html {
     height: 20px;
     border-radius: 20px;
     background: #f93943;
     width: 65%;
     margin: 1px;
     text-align: center;
-    
 }
 
-.loading .line-box-css {
-    
-    width: 100%;
-    border: 2px solid #f93943;
-    border-radius: 20px;
-    
-}
-
-.loading .line-box-css .line-css {
+.loading-bar .line-box .line-css {
     height: 20px;
     border-radius: 20px;
     background: #f93943;
@@ -135,16 +122,7 @@ body {
     text-align: center;
 }
 
-
-.loading .line-box-js {
-    
-    width: 100%;
-    border: 2px solid #f93943;
-    border-radius: 20px;
-    
-}
-
-.loading .line-box-js .line-js {
+.loading-bar .line-box .line-js {
     height: 20px;
     border-radius: 20px;
     background: #f93943;
@@ -153,7 +131,8 @@ body {
     text-align: center;
 }
 
-.presentation {
+/****PRESENTATION****/
+.presentation-container {
     background-image: url(/image/background_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,20 +142,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.project-container {
-    background-color:#ECECEC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4%;
-}
-
-.project img {
-    width: 100%;
-    grid-gap: 1%;
-    
 }
 
 .lorem {
@@ -198,7 +163,24 @@ body {
 a {
     text-decoration:none;
     color: white;
-    
+}
+
+a:hover {
+    text-decoration: underline;  
+    color: white;  
+}
+
+/****PROJECT****/
+.project-container {
+    background-color:#ECECEC;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+.project img {
+    width: 100%;
+    grid-gap: 1%;
 }
 
 .project-title {
@@ -208,11 +190,7 @@ a {
     padding-top: 4%;
 }
 
-a:hover {
-    text-decoration: underline;  
-    color: white;  
-}
-
+/****FOOTER****/
 footer {
     background-color: #ECECEC;
     display: flex;
@@ -220,26 +198,24 @@ footer {
     justify-content: center;
     text-align: center;
     padding-bottom: 4%;
-    
     line-height: 0px;
 }
 
 @media screen and (min-width:1020px) {
-    .top {
+    .profile {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
     }
 
-    .header .white {
+    .header .white-icons {
         display: none;
     }
     
-    .header .black {
+    .header .black-icons {
         display:contents;
     }
 
-    .description-container {
+    .profile-description-container {
         background-color: white;
     }
 
@@ -256,36 +232,27 @@ footer {
         height: 50vh;
         background-color:#ECECEC;
     }
+
     .skill-text {
     width: 100%;
     }
 
-
     .image-1  {
         border-top-left-radius: 80px 80px;
-        
     }
-
     
     .image-4 {
         border-bottom-right-radius: 80px 80px;
     }  
 
-
-
-
     .project {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1%;  
-        
-        
-        
+        grid-gap: 1%;    
     }
 
     .project img {
         width: 100%;
-
     }
 }
 
