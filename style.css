@@ -364,17 +364,18 @@ h5 {
 
 /* SKILLS */
 
-.skills-heading {
-    margin: 0px 145px 24px 145px;
-}
 
 .skills-section {
     display: flex;
+    justify-content: space-between;
 }
 
-.skills-flexbox {
-    display: flex;
-    justify-content: center;
+.skills-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills-heading {
     text-align: center;
 }
 
@@ -385,19 +386,20 @@ h5 {
     font-weight: 400;
     line-height: 29px;
     text-decoration: none;
+    text-align: center;
+    margin: 15px;
 
 }
 
 .skills-upcoming-parent {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: center;
-    padding-top: 20px;
 }
 
 .upcoming {
     display: flex;
-    justify-content: space-evenly;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
