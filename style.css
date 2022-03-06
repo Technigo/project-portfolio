@@ -1,3 +1,12 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --red: #fa382f;
+  --section-background: #f4f4f4;
+  --blue: #072bce;
+  --pink: #fddfe7;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +14,9 @@
 }
 
 body {
-  background-color: #fff;
   font-family: "Montserrat", sans-serif;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .regular-text {
@@ -18,36 +28,51 @@ body {
 }
 
 .header {
-  background-image: url(./assets/header-image-small.jpg);
+  /* Add smaller image for mobile? */
+  background-image: url(./assets/header-image-big.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  color: #fff;
+  color: var(--white);
   height: 520px;
   width: 100vw;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
   .header {
     background-image: url(./assets/header-image-big.jpg);
+    height: 681px;
   }
 }
 
 .header-container {
-  border: 1px solid green;
-  height: 520px;
   width: 375px;
   margin: 0 auto;
   position: relative;
 }
 
-.header-container nav {
-  width: 130.5px;
-}
-
 .header-logos {
-  border: 1px solid red;
+  width: 100%;
+  text-align: right;
   margin-right: 24.5px;
   margin-top: 48px;
+}
+
+.header-logos-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-logos-desktop {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-right: 24.5px;
+    margin-top: 48px;
+  }
+  .header-logos {
+    display: none;
+  }
 }
 
 .header-text {
@@ -65,7 +90,7 @@ body {
 }
 
 .header-text h1 {
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   text-transform: uppercase;
 }
@@ -79,6 +104,29 @@ body {
   line-height: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .header-text {
+    margin-top: 100px;
+    width: 422px;
+    height: 339px;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .header-text h2 {
+    font-size: 82px;
+    line-height: 100px;
+  }
+
+  .header-text h2 span {
+    font-size: 50px;
+    line-height: 78px;
+  }
+}
+
 .header-image-container {
   position: absolute;
   right: 24px;
@@ -89,7 +137,14 @@ body {
   height: 180px;
   width: 180px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .profile-picture {
+    height: 225px;
+    width: 225px;
+  }
 }
 
 /*Lowest supported value for mobiles*/
@@ -100,7 +155,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .header-container, .container {
+  .header-container,
+  .container {
     width: 768px;
   }
 }
@@ -114,17 +170,17 @@ body {
   display: inline-block;
   padding: 3px;
   text-transform: uppercase;
-  color: #fff;
-  background-color: #fa382f;
+  color: var(--white);
+  background-color: var(--red);
   font-size: 22px;
   line-height: 27px;
 }
 
 .section:nth-child(2n) {
-  background-color: #fff;
+  background-color: var(--white);
 }
 .section:nth-child(2n + 1) {
-  background-color: #f4f4f4;
+  background-color: var(--section-background);
 }
 
 .summary-container p {
@@ -133,26 +189,27 @@ body {
   line-height: 29px;
 }
 
+.summary-container span {
+  margin-right: 10px;
+}
+
 .tech-container p {
   font-size: 17px;
   line-height: 29px;
   margin-top: 24px;
-} 
+}
 
 .featured-projects {
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
+  margin-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .featured-projects {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .featured-projects article {
-    flex: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 54px;
   }
 }
 
@@ -175,7 +232,8 @@ body {
 /* Har lagt denna inuti project-overlay som en flex-item */
 /* Osäker på om det är det bästa sättet att göra detta på */
 .project-title {
-  color: #fff;
+  color: var(--white);
+  text-transform: uppercase;
 }
 
 .project-image {
@@ -184,17 +242,126 @@ body {
   display: flex; /*Or display: block */
 }
 
+.project-text-group {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  margin: 40px 0;
+}
+
+.project-heading {
+  text-transform: uppercase;
+  color: var(--red);
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+}
+
+.project-description {
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+}
+
+.tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-wrapper p {
+  color: #2b2e34;
+  background-color: var(--pink);
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 0.01em;
+  padding: 4px;
+  margin: 3px;
+  border-radius: 5%;
+}
+
+.tag-wrapper p:first-child {
+  margin-left: 0;
+}
+
+.other-projects h2 {
+  color: var(--red);
+  background-color: inherit;
+}
+
+.thoughts p {
+  margin: 40px 0;
+}
+
+.all-skills-container {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 42px;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+.all-skills-container h3 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
 .for-more-logos {
-  padding: 30px;
+  margin: 30px auto;
+  min-width: 247px;
+  max-width: 664px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px) {
+  .for-more-logos {
+    max-width: 60%;
+  }
+}
+
+.fore-more-logo-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fore-more-logo-container p {
+  margin-top: 10px;
+  color: var(--red);
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  text-transform: uppercase;
 }
 
 .footer {
-  padding: 50px;
+  height: 302px;
   text-align: center;
-  color: #fff;
-  background-color: #072bce;
+  color: var(--white);
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .footer h4 {
+  font-size: 21px;
+  line-height: 25px;
   text-transform: uppercase;
+}
+
+footer p {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
