@@ -48,7 +48,7 @@ const featuredProjectsData = [
     {
         id: "guess-who",
         projectTitle: "test title",
-        projectImage: "/assets/project.png",
+        projectImage: "assets/project.png",
         projectAlt: "design screenshot",
         heading: "CHAT BOT BUILT IN JAVASCRIPT",
         description: "Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.",
@@ -57,7 +57,7 @@ const featuredProjectsData = [
     {
         id: "guess-who",
         projectTitle: "test title",
-        projectImage: "/assets/project.png",
+        projectImage: "assets/project.png",
         projectAlt: "design screenshot",
         heading: "CHAT BOT BUILT IN JAVASCRIPT",
         description: "Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.",
@@ -66,7 +66,7 @@ const featuredProjectsData = [
     {
         id: "guess-who",
         projectTitle: "test title",
-        projectImage: "/assets/project.png",
+        projectImage: "assets/project.png",
         projectAlt: "design screenshot",
         heading: "CHAT BOT BUILT IN JAVASCRIPT",
         description: "Responsive web site using HTML, CSS and JavaScript ES6 for pizza orders.",
