@@ -73,17 +73,21 @@ a {
     gap: 10px;
 }
 
-.icon-link {
+/*.icon-link {
     width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
+CAN I REMOVE THIS CLASS?*/
 
 .icon-pic {
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-text {
@@ -133,8 +137,6 @@ a {
 
 
 /* STYLING OF THE SUMMARY SECTION*/
-
-
 .intro-line {
     width: 40px;
     border: 1px solid black;
@@ -192,38 +194,49 @@ a {
     width: 327px;
 }
 
-/* add .about-code-img here later on as well  */
-.project-images {
-    position: relative;
+.project {
     margin-top: 30px;
 }
 
-/*.images {
-    width: 100%;
-    display: inherit;
-    object-fit: cover;
-} add .code-img here as well
-
-.image-overlay {
-    font-size: 28px;
-    text-transorm: uppercase;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.project-image-group {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center,
+}
+
+.project-image {
+    width: 100%;
+    display: inherit;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(1,60,180,0.3);
     transition: 0.5s ease;
 }
 
-.image-overlay:hover {
-    color: transparent;
-    background-color: transparent;
+.project-overlay-title {
+    color: #FFF;
+    font-size: 28px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s ease;   
+    text-align: center;
 }
-*/
+
+.project-image-group:hover .project-overlay, .project-image-group:hover .project-overlay-title { 
+    background-color: transparent;
+    color: transparent;
+}
 
 .featured-project-title {
     font-family: "Roboto", sans-serif;
@@ -231,7 +244,7 @@ a {
     font-size: 17px;
     text-transform: uppercase;
     line-height: 171%;
-    margin-top: 32px;
+    margin: 17px 0;;
 }
 
 .project-description {
