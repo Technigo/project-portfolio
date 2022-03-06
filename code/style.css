@@ -6,7 +6,7 @@
   /* colors */
   --clr-dark: #9DBBD7;
   --clr-accent: #F2E3D0;
-  --clr-medium: #B4B4B4;
+  --clr-medium: #ffb575;
   --clr-light: #f6f6f6;
   --clr-white: #FFF;
   --clr-black: #111111; 
@@ -123,12 +123,6 @@ h4 {
 
 h5 {
   display: block;
-}
-
-h4.header-overlay {
-  color: var(--clr-black);
-  font-weight: 700;
-  font-size: clamp(0.8rem, 2.5vw + 0.4rem, 1.5rem);
 }
 
 p {
@@ -413,14 +407,11 @@ article {
 
 .other-projects--container p {
   display: inline;
+  margin-bottom: 0.5em;
 }
 
 .other-projects--container h4 {
   font-size: 16px;
-}
-
-.project-container.reverse {
-  flex-direction: row-reverse;
 }
 
 .date {
@@ -454,6 +445,10 @@ div.section-thoughts--text {
   margin-top: 2em;
   padding: 0 1.5em 2.5em;
   min-width: 327;  
+}
+
+.more-thoughts--links {
+  padding-bottom: 0.5em;
 }
 
 .more-thoughts--container p {
@@ -492,6 +487,8 @@ footer p {
 /* ------------------- */
 /*    Media queries    */
 /* ------------------- */
+
+/*------ TABLET ------*/
 
 @media (min-width: 768px) {
 
@@ -578,6 +575,9 @@ footer p {
   }
 
   .header-overlay {
+    color: var(--clr-black);
+    font-weight: 700;
+    font-size: clamp(0.8rem, 2.5vw + 0.4rem, 2rem);
     position: absolute;
     width: 100%;
     display: flex;
@@ -631,7 +631,7 @@ footer p {
     gap: 2em;
   }
 
-  .project-.container.reverse {
+  .project-container.reverse {
     flex-direction: row-reverse;
     gap: 2em;
   }
@@ -650,6 +650,8 @@ footer p {
     display:inline-block;
   }
 }
+
+/*------ DESKTOP ------*/
 
 @media (min-width: 1200px) {
   
@@ -682,6 +684,10 @@ footer p {
     font-size: 38px;
   }
   
+  h5 {
+    font-size: 30px;
+  }
+
   .list-heading {
     font-size: 28px;
   }
@@ -731,7 +737,7 @@ footer p {
   }
 
   .container {
-    width: 1200px;
+    width: 1100px;
   }
   
   .section-intro p,
