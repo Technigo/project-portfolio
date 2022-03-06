@@ -1,4 +1,13 @@
-obal targets */
+            /* GLOBAL TARGETS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
 
 body {
     margin: 0;
@@ -9,20 +18,19 @@ body {
     margin: 0 auto;
 }
 
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
+.section:nth-child(2n) {
+    background-color: rgb(255, 255, 255);
 }
 
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
+.section:nth-child(2n +1) {
+    background-color: #e9e5e5;
 }
 
-/* header */
+a:hover { 
+    cursor: pointer;
+}
+
+            /* HEADER */
 
 .header {
     background-image: url('images/eberhard-grossgasteiger-BXasVMRGsuo-unsplash.jpg');
@@ -37,7 +45,7 @@ body {
     background colors
     opacity
     more images
-
+    
 } */
 
 .header-image {
@@ -46,48 +54,60 @@ body {
     border-radius: 50%;
     position: absolute;
     top: 400px;
-    right: 5px;
+    right: 20px;
     border: solid 2px white;
+}
+
+.socials {
+    position: absolute;
+    top: 450px;
+    left: 30px;
 }
 
 .header-container {
     height: 100%;
-    display: flex;
+    
+    /* display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center; */
     padding-bottom: 44px;
     box-sizing: border-box;
+    margin: 1em;
 }
 
 .header-portfolio{
     font-weight: 300;
 }
 
+.header-name {
+    font-size: 17px;
+    font-weight: 400;
+}
 
 .header-title {
     font-weight: 500;
     line-height: 50px;
     letter-spacing: 3px;
-
-}
-
-.header-name {
-    font-size: 20px;
-    font-weight: 400;
 }
 
 .header-text-group {
+    position: absolute;
+    top: 240px;
+    left: 50px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
     line-height: 37px;
     letter-spacing: 1px;
+    font-size: 20px;
 }
+
+            /* INTRO */
 
 .intro-section {
     display: flex;
-    height: 324px;
-    width: 375px;
+    height: 250px;
+    margin: 2em;
+    /* width: 350px; */
 }
 
 .portfolio-description-group {
@@ -99,6 +119,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
+
+            /* TECH */
 
 .tech-section {
     display: flex;
@@ -122,16 +144,10 @@ body {
     font-size: 17px;
     line-height: 29px;
     text-align: center;
-    margin-bottom: 33px;
+    margin: 0 20px 33px 10px;
 }
 
-.section:nth-child(2n) {
-    background-color: #e9e5e5;
-}
-
-.section:nth-child(2n +1) {
-    background-color: rgb(255, 255, 255);
-}
+            /* PROJECTS */
 
 .project-header-group {
     display: flex;
@@ -142,6 +158,7 @@ body {
     color: white;
     background-color: rgb(151, 117, 117);
     width: 265px;
+    padding: 4px;
     margin: 41px 55px;
     font-weight: 700;
     font-size: 22px;
@@ -154,7 +171,7 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 327px;
     padding: 0;
-    margin-right: 25px;
+    margin: 15px;
 }
 
 .project-heading {
@@ -169,8 +186,10 @@ body {
     font-weight: 300;
     line-height: 30px;
     margin-top: 5px; 
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
+
+            /* PROJECT-IMAGES */
 
 .project-image-group {
     position: relative;
@@ -190,33 +209,68 @@ body {
     display: inherit;
 }
 
+            /* THOUGTHS */
+
+.thougths {
+    padding: 6em;
+}
+
 .thoughts-image {
     width: 100%;
     height: 205px;
+    margin-bottom: 20px;
 }
 
 .thoughts-text-group {
     font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    padding: 10px;
 }
 
-.thoughts-heading {
-    font-weight: 700;
+.thoughts-date {
+    font-weight: 300;
+    color: rgb(116, 87, 87);
+    font-size: 18px;
+}
+
+.thoughts-writing-heading {
+    font-weight: 400;
     font-size: 21px;
-    line-height: 30px;
+    line-height: 25px;
 }
 
 .my-thoughts {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 17px;
     line-height: 32px;
 }
 
 .thoughts-header {
     font-family: 'Montserrat', sans-serif;
-    color: rgb(151, 117, 117);
+    color: rgb(116, 87, 87);
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
     width: 265px;
     margin: 30px 60px;
+}
+
+/* MORE THOUGTHS */
+
+
+
+/* TABLET SIZE */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 768px;
+    }
+}
+
+/* DESKTOP SIZE */
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
 }
