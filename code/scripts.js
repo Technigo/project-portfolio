@@ -4,28 +4,26 @@ const otherProjectsData = [
     {
         id: "guess-who",
         heading: "Guess Who Game",
-        description:  "Web application built in Javscript with external API",
+        description: "Web application built in Javscript with external API",
         tags: ["html5", "css3", "javascript es6"]
     },
     {
         id: "guess-who",
         heading: "Guess Who Game",
-        description:  "Web application built in Javscript with external API",
+        description: "Web application built in Javscript with external API",
         tags: ["html5", "css3", "javascript es6"]
     },
     {
         id: "guess-who",
         heading: "Guess Who Game",
-        description:  "Web application built in Javscript with external API",
+        description: "Web application built in Javscript with external API",
         tags: ["html5", "css3", "javascript es6"]
     }
 ]
 
-
-
 const tagsToHtml = (tagsArr) => {
     let tagsHtml = '';
-    tagsArr.forEach(tag => 
+    tagsArr.forEach(tag =>
         tagsHtml += `
         <div class="tag">${tag.toUpperCase()}</div>
     `);
@@ -45,8 +43,6 @@ const createOtherProjects = (otherProjectsArr) => {
         }
     )
 }
-
-
 
 const featuredProjectsData = [
     {
