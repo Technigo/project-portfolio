@@ -1,20 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
+/* global class */
+.container {
+  width: 320px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.headlines {
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   background-image: url(/assets/hero.jpg);
   background-size: cover;
+  width: 100%;
   height: 520px;
-  /* position: relative; */
+  position: relative;
   margin-bottom: 49px;
-}
-
-.container {
-  width: 375px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .header-container {
@@ -23,7 +34,7 @@ body {
   justify-content: flex-end;
   height: 100%;
   padding-bottom: 44px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .header-img {
@@ -32,32 +43,103 @@ body {
   border-radius: 50%;
   position: absolute;
   top: 356px;
+  border: 2px solid white;
+  right: 7%;
+  object-fit: cover;
 }
 
 .header-txt-gr {
   font-family: 'Roboto', sans-serif;
   line-height: 18px;
   size: 13px;
-  padding-bottom: 197px;
-  padding-right: 131px;
   color: white;
+  top: 121px;
+  position: absolute;
+  margin: 24px;
+  /* padding-bottom: 197px; */
+  padding-right: 131px;
 }
 
+/* intro section */
+.line {
+  border: 1px solid orangered;
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: orangered;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* styling to the fonts */
 .header-txt-gr,
 h1,
 h2 {
   /* font-weight: 700px; */
-  /* ingen skillnad */
 }
-
-/* p {
-  margin-left: 24px;
-  margin-right: 24px;
-} */
 
 h3 {
   background-color: red;
   display: inline-flex;
+  color: white;
+  height: 27px;
+}
+
+.card-group {
+  /* position: relative; */
+}
+
+.card-img {
+  width: 327px;
+  /* height: 212px; */
+}
+
+h5,
+h4 {
+  color: red;
+  /* texten ska flyta från start, samma med ptaggarna */
+  /* rubrikerna centrerade */
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* background-color: aqua; */
+  padding-inline-start: 0;
+  padding: 0 10px 0 10px;
+  border: 2px solid white;
+  /* ändra de här inställningarna sen!!!! */
+}
+
+img {
+  width: 327px;
+}
+
+.thoughts-txt {
+  color: black;
+}
+
+.skills-head {
+  color: red;
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 20px;
+}
+/* behöver få de på samma rad */
+
+ul {
+  list-style-type: none;
 }
 
 /* Desktop */

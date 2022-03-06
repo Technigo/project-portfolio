@@ -18,7 +18,8 @@
   <body>
     <header class="header">
       <!-- I will have a hero here (in css class header) -->
-      <div class="container header-container">
+      <div class="header-container">
+        <!-- <div>Will add icons here</div> -->
         <div class="header-img-gr">
           <!-- place the img with position absolute -->
           <img
@@ -30,8 +31,11 @@
 
         <div class="header-txt-gr">
           <!-- and here will also be the header text -->
-          <h4>PORTFOLIO: VANESSA HAJEK</h4>
-          <h1>frontend developer</h1>
+          <h6>PORTFOLIO: VANESSA HAJEK</h6>
+          <h1>
+            frontend <br />
+            developer
+          </h1>
           <h2>+ digital designer</h2>
         </div>
       </div>
@@ -42,6 +46,7 @@
       <div class="container">
         <!-- First line of text -->
         <p>
+          <span class="line"></span><span class="dot"></span>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum
           rerum necessitatibus veniam velit repellat laborum eaque, quam
           inventore delectus possimus porro accusamus numquam facere vel labore
@@ -51,8 +56,9 @@
     </section>
     <section>
       <div class="container">
-        <!-- Tech is that placed in a section? -->
-        <h3>TECH</h3>
+        <div class="headlines">
+          <h3>TECH</h3>
+        </div>
         <p>
           HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
           Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
@@ -61,28 +67,166 @@
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="container card-group">
         <!-- cards with featured projects -->
-        <h3>FEATURED PROJECTS</h3>
-        <div>card 1</div>
-        <div>card 2</div>
+        <div class="headlines">
+          <h3>FEATURED PROJECTS</h3>
+        </div>
+        <div class="card">
+          <img class="card-img" src="/assets/pizza.png" alt="project-pizza" />
+          <h5>GUESS WHO BUILT IN JAVASCRIPT</h5>
+          <p>
+            Responsive web site using HTML, CSS and JavaScript ES6 for pizza
+            orders.
+          </p>
+          <div class="tags">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript ES6</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="/assets/pizza.png" alt="project-pizza" />
+          <h5>WEATHER APP BUILT IN JAVASCRIPT</h5>
+          <p>
+            Responsive web site using HTML, CSS and JavaScript ES6 for pizza
+            orders.
+          </p>
+          <div class="tags">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript ES6</li>
+            </ul>
+          </div>
+        </div>
 
         <!-- other projects will be here as well -->
-        <h4>OTHER PROJECTS</h4>
-        <div>card 4</div>
-        <div>card 4</div>
+        <div class="headlines">
+          <h4>OTHER PROJECTS</h4>
+        </div>
+        <div class="card">
+          <h5>CHATBOT</h5>
+          <p>
+            Responsive web site using HTML, CSS and JavaScript ES6 for pizza
+            orders.
+          </p>
+          <div class="tags">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript ES6</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h5>GITHUB TRACKER</h5>
+          <p>
+            Responsive web site using HTML, CSS and JavaScript ES6 for pizza
+            orders.
+          </p>
+          <div class="tags">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript ES6</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <section>
       <!-- my thoughts about code in another section? -->
+      <div class="container">
+        <div class="headlines">
+          <h3>MY THOUGHTS</h3>
+        </div>
+        <img src="/assets/image 6.png" alt="thoughts-picture" />
+        <div class="card-thoughts">
+          <p>DEC 2019</p>
+          <h5 class="thoughts-txt">
+            How to stop being scared: <br />Learning to love code
+          </h5>
+          <p>
+            Writing code is less about “just working”. Instead, it’s much more
+            about creativity. It’s similar to creative writing in that the
+            author architecting a story must use an assortment of tools and
+            components (i.e., content) in a way to satisfy a particular
+            objective. >>
+          </p>
+        </div>
+      </div>
     </section>
 
     <section>
       <div class="container">
-        <h3>SKILLS</h3>
+        <div class="headlines">
+          <h4>MORE THOUGHTS</h4>
+        </div>
+        <div class="card">
+          <p>5 Apps that will make coding easier >></p>
+          <p>5 Apps that will make coding easier >></p>
+          <p>5 Apps that will make coding easier >></p>
+        </div>
       </div>
     </section>
-    <footer>My info here</footer>
+
+    <section>
+      <div class="container">
+        <div class="headlines">
+          <h3>SKILLS</h3>
+        </div>
+        <div class="skills-card">
+          <ul>
+            <li class="skills-head">CODE</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript ES6</li>
+            <li>React</li>
+            <li>Styled Components</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+        <div class="skills-card">
+          <ul>
+            <li class="skills-head">TOOLBOX</li>
+            <li>Atom</li>
+            <li>Postman</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+            <li>Figma</li>
+            <li>Keynote</li>
+            <li>Slack</li>
+          </ul>
+        </div>
+        <div class="skills-upcoming">
+          <ul class="skills-upcoming">
+            <li>UPCOMING</li>
+            <li>Redux</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="headlines">
+          <h3>FOR MORE</h3>
+        </div>
+        <ul>
+          <li>LINKEDIN</li>
+          <li>GITHUB</li>
+          <li>STACK OVERFLOW</li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      My info here
+      <!-- a href="tel:0046736246192"
+<a href="mailto:vanessa.hajek.com"> you can write them like this format and it will automatically call and open to write an email if you click on the link -->
+    </footer>
   </body>
 </html>
