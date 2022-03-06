@@ -6,7 +6,6 @@
 body {
     margin: 0;
     padding: 0;
-    
 }
 
 .header {
@@ -17,8 +16,7 @@ body {
 .header img {
     float: right;
     margin: 6px; 
-      
-  }
+}
 
   .header .black {
       display: none;
@@ -46,7 +44,14 @@ body {
     text-decoration: none;
     color: white;
     background-color: black;
-    margin: 40px;
+    margin: 4%;
+    transition: transform .2s;
+}
+
+
+.download-cv-button:hover {
+    transform: scale(1.05);
+    transition-duration: 1s
 }
 
 .description-container {
@@ -98,11 +103,9 @@ body {
 }
 
 .loading .line-box-html {
-    
     width: 100%;
     border: 2px solid #f93943;
     border-radius: 20px;
-    
 }
 
 .loading .line-box-html .line-html {
@@ -150,34 +153,82 @@ body {
     text-align: center;
 }
 
-
 .presentation {
     background-image: url(/image/background_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 70vh;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.presentation-text {
+.project-container {
+    background-color:#ECECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+.project img {
+    width: 100%;
+    grid-gap: 1%;
+    
+}
+
+.lorem {
+    padding: 4%;
+    border: 10px solid white;
+    margin: 4%;
+    text-align: center;
+}
+
+.hej {
+    transition: transform .2s;
+}
+
+.hej:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+
+a {
+    text-decoration:none;
+    color: white;
+    
+}
+
+.project-title {
+    background-color: #ECECEC;
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+}
+
+a:hover {
+    text-decoration: underline;  
+    color: white;  
+}
+
+footer {
+    background-color: #ECECEC;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4%;
+    
+    line-height: 0px;
 }
-
-
-.portfolio {
-    background-color:#ECECEC;
-    height: 70vh;
-}
-
 
 @media screen and (min-width:1020px) {
     .top {
         display: grid;
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
     .header .white {
@@ -207,6 +258,34 @@ body {
     }
     .skill-text {
     width: 100%;
+    }
+
+
+    .image-1  {
+        border-top-left-radius: 80px 80px;
+        
+    }
+
+    
+    .image-4 {
+        border-bottom-right-radius: 80px 80px;
+    }  
+
+
+
+
+    .project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1%;  
+        
+        
+        
+    }
+
+    .project img {
+        width: 100%;
+
     }
 }
 
