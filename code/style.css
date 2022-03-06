@@ -1,12 +1,22 @@
 /* Global styling*/
 
+:root{
+    --main: #e74a3c; 
+    --secondary: white;
+}
+
 body{
     margin:0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 a{
     text-decoration: none;
-    color:#e74a3c;
+    color:var(--main);
     transition: transform .2s;
 }
 
@@ -30,7 +40,7 @@ a{
 /*Fonts*/
 
 h2{
-    background-color:#e74a3c;
+    background-color:var(--main);
     display:inline-block;
     color:white;
     font-size: 22px;
@@ -55,7 +65,7 @@ h2{
     position: absolute;
     top:356px;
     left:171px;
-    border: solid 2px black;
+    border: solid 2px var(--secondary);
 }
 
 .header-container{
@@ -89,22 +99,21 @@ h2{
     top:121px;
     left:24px;
     right:131px;
+    color:var(--secondary);
 }
 
 .portfolio-name{
-    font-size: 13px;
+    font-size: 16px;
     line-height: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     display:inline-block;
-    color:black;
 }
 
 .portfolio-me{
     display:inline-block;
     font-weight: bold;
     line-height: 18px;
-    color:black;
 }
 
 .portfolio-title{
@@ -114,7 +123,6 @@ h2{
     font-family: 'Montserrat', sans-serif;
     margin:0px;
     padding:0px;
-    color:black;
 }
 
 .portfolio-subtitle{
@@ -123,7 +131,6 @@ h2{
     line-height: 40px;
     margin:0px;
     padding:0px;
-    color:black;
 }
 
 /*Introduction section*/
@@ -191,17 +198,17 @@ h2{
 
 .project-name{
     margin-top:9px;
-    color:#e74a3c;
+    color:var(--main);
     font-weight: 700;
 }
 
 .arrow-link{
-    color:#e74a3c;
+    color:var(--main);
     font-weight: 700;
 }
 
 .project-heading{
-    color:red;
+    color:var(--main);
     font-weight:700;
     margin-top:20px;
 }
@@ -240,7 +247,7 @@ h2{
     align-items: center;
     justify-content: center;
     font-size:9px;
-    background-color:pink;
+    background-color:pink;;
     width:34px;
     height:21px;
     letter-spacing: 0.01em;
@@ -253,7 +260,7 @@ h2{
     align-items: center;
     justify-content: center;
     font-size:9px;
-    background-color:pink;
+    background-color:pink;;
     width:80px;
     height:21px;
     letter-spacing: 0.01em;
@@ -266,7 +273,7 @@ h2{
     align-items: center;
     justify-content: center;
     font-size:9px;
-    background-color:pink;
+    background-color:pink;;
     width:34px;
     height:21px;
     letter-spacing: 0.01em;
@@ -274,7 +281,7 @@ h2{
 }
 
 .project-subheading{
-    color:red;
+    color:var(--main);
     font-weight: 700;
     font-size: 21px;
     text-align: center;
@@ -305,7 +312,7 @@ h2{
 }
 
 .more-thoughts-date{
-    color:red;
+    color:var(--main);
     margin-top:40px; 
 }
 
@@ -317,7 +324,7 @@ h2{
 }
 
 .date{
-    color:red;
+    color:var(--main);
     margin:32px 0px 0px 0px;
     font-weight: normal;
 }
@@ -341,7 +348,7 @@ h2{
 }
 
 .skills-heading{
-    color: #e74a3c;
+    color: var(--main);
     font-weight:700;
 }
 
@@ -371,7 +378,7 @@ ul{
    justify-content: center;
    font-family: 'Roboto', sans-serif; 
    flex-direction: column;
-   color:#e74a3c;
+   color:var(--main);
    font-size: 11px;
    font-weight:bold;
 }
@@ -456,7 +463,8 @@ ul{
     }
 
     .code{
-        color:#e74a3c;
+        color:var(--main);
+        font-weight:bold;
     }
 
 
@@ -479,10 +487,6 @@ ul{
         margin: 30px 27px 44px 27px;
     }
 
-    .other-projects, .more-thoughts{
-        margin-left:25px;
-    }
-
     .projects-wrapper{
         display: flex;
         flex-wrap: wrap; 
@@ -492,9 +496,9 @@ ul{
      margin:20px;   
    }
 
-    .other-projects{
-        display: block;
-    }
+  .project-subheading{
+      margin-bottom:20px;
+  }
 
     .skills-wrapper{
         justify-content: center;
@@ -547,10 +551,6 @@ ul{
         transform: scale(1.2);
     }
 
-    .intro-text{
-        margin-top:80px;
-    }
-
     .intro-text, .intro-tech{
         font-size: 24px;
         line-height: 50px;
@@ -571,9 +571,10 @@ ul{
         left:426px; 
     }
     
-    .portfolio-name{
-        font-size: 30px;
+    .portfolio-name, .portfolio-me{
+        font-size: 34px;
         line-height: 37px;
+        width:350px;
     }
 
     .portfolio-title{
@@ -652,7 +653,6 @@ ul{
 
     .other-projects{
         text-align: left;
-        margin-left:45px;
     }
 
     .project-subheading{
@@ -690,6 +690,10 @@ ul{
     .skills-heading, ul {
         font-size: 25px;
         line-height: 41px;
+    }
+
+    .other-projects{
+        margin-left:25px;
     }
 
     .contact{
