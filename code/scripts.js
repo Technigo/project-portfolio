@@ -2,23 +2,33 @@ const featuredProjectsElement = document.getElementById("featured-projects")
 const otherProjectsElement = document.getElementById("other-projects")
 const otherProjectsData = [
     {
-        id: "guess-who",
+        id: "project-guess-who",
         heading: "Guess Who Game",
-        description: "Web application built in Javscript with external API",
-        tags: ["html5", "css3", "javascript es6"]
+        description: "A Javascript Web application of the popular Guess Who minigame. The game starts immediately when one random character is selected and the user can ask various questions to identify them.",
+        tags: ["javascript es6", "html5", "css3", "DOM", "JS array methods"],
+        url: "https://github.com/faypi/project-guess-who"
     },
     {
-        id: "guess-who",
-        heading: "Guess Who Game",
-        description: "Web application built in Javscript with external API",
-        tags: ["html5", "css3", "javascript es6"]
+        id: "project-chatbot",
+        heading: "TaxiTomorrow Chatbot",
+        description: "A simple chatbot JS application that communicates with the user to schedule a taxi pickup for the next day. Various options are presented to the user in the form of questions (text) or select options.",
+        tags: ["javascript es6", "DOM", "form handling", "event listeners"],
+        url: "https://github.com/faypi/project-chatbot"
     },
     {
-        id: "guess-who",
-        heading: "Guess Who Game",
-        description: "Web application built in Javscript with external API",
-        tags: ["html5", "css3", "javascript es6"]
-    }
+        id: "project-business-site",
+        heading: "Art Gallery Reservation",
+        description: "A reservation form with a Javascript FAQ accordion.",
+        tags: ["javascript es6", "DOM", "form handling", "event listeners"],
+        url: "https://github.com/faypi/project-business-site"
+    },
+    {
+        id: "project-news-site",
+        heading: "Travel Destination Blog",
+        description: "An HTML page of a travel blog with multiple structured flexbox layout.",
+        tags: ["html5", "css3", "flexbox"],
+        url: "https://github.com/faypi/project-news-site"
+    },
 ]
 
 const tagsToHtml = (tagsArr) => {
