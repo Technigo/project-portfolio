@@ -5,7 +5,8 @@ body {
 }
 
 .container {
-  width: 375px;
+  /*width: 375px;*/
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -62,6 +63,7 @@ body {
 }
 
 .top-section-text h1 {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
@@ -70,6 +72,7 @@ body {
 }
 
 .top-section-text h2 {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -99,25 +102,16 @@ body {
   top: 48px;
 }
 
-/*sections*/
+/*Summary sections*/
 
 .summary-section {
-  width: 327px;
-  height: 232px;
-  left: 24px;
-  top: 569px;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
   line-height: 29px;
-
-  color: #000000;
 }
 
 .line {
-  border: 1px solid #c62a88;
+  border: 1px solid #db9aab;
   width: 40px;
   display: inline-block;
   margin-bottom: 4px;
@@ -126,28 +120,28 @@ body {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #c62a88;
+  background-color: #db9aab;
   border-radius: 50%;
   display: inline-block;
 }
 
-.tech {
-  width: 1100px;
-  height: 150px;
-  left: 410px;
-  top: 1364px;
+/*Tech section*/
 
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
+.tech h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 50px;
-
   text-align: center;
   letter-spacing: 0.01em;
-
-  color: #000000;
 }
+
+.tech p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+/*Projects section*/
 
 .projects-pictures-desktop {
   display: none;
@@ -156,123 +150,182 @@ body {
   display: none;
 }
 
-.projects button {
-  font-family: "Roboto";
-  font-size: 9px;
-  line-height: 11px;
-  letter-spacing: 0.01em;
-  color: #000;
+.projects h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
 }
 
-/*.project-pictures {
+.highlight {
+  color: #db9aab;
+}
+
+.button-wrapper {
+  display: flex;
+}
+
+.button-wrapper button {
+  font-family: "Roboto", sans-serif;
+  color: #2b2e34;
+  font-weight: bold;
+  background-color: #db9aab;
+  text-decoration: none;
+
+  /* Matching line-height and font-size here gives full control 
+       over the size of our tags to the padding*/
+  font-size: 12px;
+  line-height: 12px;
+
+  /* Control the size of the tags */
+  padding: 4px;
+
+  /* Control the spacing of our tags */
+  margin: 3px;
+
+  /* Some rounded borders */
+  border-radius: 5px;
+}
+
+.projects-pictures-mobile {
   position: relative;
+  text-align: center;
+  color: #2b2e34;
 }
-
-.project-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba (0, 0, 0, 0.7);
-}*/
-
 .project-image {
   width: 100%;
 }
 
-.project-heading {
-  width: 523px;
-  height: 110px;
-  left: 987px;
-  top: 2255px;
+.text-over-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+.project-image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  
+  /* This is a semi-transparent overlay on the image */
+  background-color: rgba(0, 0, 0, 0.5);
+
+  /* This will cause the overlay to fade */
+  transition: 0.5s ease;
+}
+
+.projects-pictures-mobile {
+  /* This transition will cause the text to fade */
+  transition: 0.5s ease;
+}
+
+.project-heading {
+  font-family: "Roboto", sans-serif;
   font-size: 25px;
   line-height: 41px;
-
-  display: flex;
-  align-items: center;
   letter-spacing: 0.01em;
-
-  color: #fa382f;
+  text-align: center;
 }
 .text {
-width: 327px;
-height: 147px;
-left: 24px;
-top: 935px;
+  width: 327px;
+  height: 147px;
+  left: 24px;
+  top: 935px;
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 29px;
-
-text-align: center;
-
-color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
 }
 
+/*Toughts section*/
+
+.thoughts {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.thoughts h2 {
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.thoughts img {
+  border-radius: 10%;
+  width: 375px;
+}
+
+/*Skills section*/
+
 .skills {
-display:flex;
-flex-direction: column;
-flex-wrap: wrap;
-width: 375px;
-height: 464px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 375px;
+  height: 464px;
 }
 
 .code-upcoming {
-width: 149px;
-height: 325px;
-left: 24px;
-
-
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-text-align: center;
+  width: 149px;
+  height: 325px;
+  left: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
 }
-.code-upcoming h3 { 
-font-size: 17px;
-line-height: 29px;
-color: #FA382F;
+
+.code-upcoming h3 {
+  font-size: 17px;
+  line-height: 29px;
+  color: #db9aab;
 }
+
 .code-upcoming ul {
-font-size: 17px;
-line-height: 29px;
-text-align: center;
-color: #000;
+  list-style-type: none;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
 }
 
 .toolbox {
   width: 149px;
   height: 325px;
   left: 24px;
-  
+
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   text-align: center;
-  }
-  .toolbox h3 { 
+}
+
+.toolbox h3 {
   font-size: 17px;
   line-height: 29px;
-  color: #FA382F;
-  }
-  .toolbox ul {
+  color: #db9aab;
+}
+.toolbox ul {
+  list-style-type: none;
   font-size: 17px;
   line-height: 29px;
   text-align: center;
-  color: #000;
-  }
+}
 
-.more-logos {
+/*For more section*/
+
+.big-logos {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin: 36px;
+}
+
+.more-logos h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
 }
 
 /*footer*/
@@ -317,7 +370,7 @@ color: #000;
     font-size: 28px;
     line-height: 37px;
   }
-  
+
   .projects-pictures-desktop {
     display: grid;
   }
@@ -393,7 +446,6 @@ color: #000;
     width: 523px;
     height: 305px;
   }
-
 
   /*footer*/
 
