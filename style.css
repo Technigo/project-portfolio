@@ -11,6 +11,7 @@
     /* padding: 41px 24px; */
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* HEADER */
@@ -25,8 +26,18 @@
     background-image: url(./assets/background-pattern.jpg);
     height: 520px;
     background-size: cover;
+    background-position: center;
     position: relative;
     width: 100%;
+}
+ 
+.header-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(20, 20, 20, 0.2);
 }
 
 .header-image {
@@ -40,23 +51,17 @@
     border: solid white 2px;
 }
 
- 
-.header-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(20, 20, 20, 0.2);
-}
 
-.header-icons {    
-    display: flex;  
-    width: 130.5px;
-    height: 40px;
+.header-links {
     position: absolute;
     top: 48px;
     right: 24.5px;
+    display: flex;
+    gap: 5px;
+}
+
+.header-links img {
+    height: 40px;
 }
 
 .header-text-group {
@@ -117,17 +122,23 @@ h1 {
     background-color: white;
 }
 
-/* Styling for all sections */
 .section {
     padding-top: 41px;
     padding-bottom: 43px;
 }
 
-/* INTRO */
-
-.intro-text {
-    
+.section-heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.82px;
+    text-align: center;
+    background-color: #FA382F;
+    color: #FFF;
+    width: fit-content;
 }
+
+/* INTRO */
 
 p {
     font-style: normal;
@@ -153,32 +164,17 @@ p {
 
 /* TECH */
 .tech-heading {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26.82px;
-    text-align: center;
-    background-color: #FA382F;
-    color: #FFF;
-    width: fit-content;
     margin: 0px 145px 30px 145px;
 }
 
 .tech-section p {
     margin-bottom: 40;
+    text-align: center;
 }
 
 /* FEATURED PROJECTS */
 
-.section-heading {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26.82px;
-    text-align: center;
-    background-color: #FA382F;
-    color: #FFF;
-    width: fit-content;
+.featured-projects-heading {
     margin: 0px 51px 24px 69px;
 }
 
@@ -292,6 +288,7 @@ h5 {
     line-height: 29px;
     letter-spacing: 1%;
     margin-top: 21px;
+    text-align: start;
 }
 
 .other-projects-p {
@@ -306,13 +303,17 @@ h5 {
 
 /* MY THOUGHTS */
 
+.thoughts-heading {
+    margin: 0px 99px 24px 99px;
+}
+
 .thoughts-image {
     width: 100%;
 	display: block;
     height: 205px;
 }
 
-.thoughts-text-group h5 {
+.thoughts-group h5 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -320,14 +321,14 @@ h5 {
     line-height: 32px;
 }
 
-.thoughts-text-group h6 {
+.thoughts-group h6 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 21px;
     line-height: 30px;
 }
 
-.thoughts-text-group p {
+.thoughts-group p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 17px;
@@ -364,7 +365,15 @@ h5 {
     padding-top: 40px;;
 }
 
+.second-thought {
+    display: none;
+}
+
 /* SKILLS */
+
+.skills-heading {
+    margin: 0px 145px 24px 145px;
+}
 
 .skills-section {
     display: flex;
@@ -372,7 +381,7 @@ h5 {
 
 .skills-flexbox {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
 }
 
@@ -405,42 +414,48 @@ h5 {
 
 /* FOR MORE */
 
+.more-heading {
+    margin: 0px 122px 24px 122px;
+}
+
 .more-section {
-    margin-bottom: 60px;
-}
-
-
-.more-icon-group {    
-    display: flex;  
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    width: 247px;
-    height: 60px;
-    position: absolute;
-    justify-content: space-between;
-    padding-left: 64px;
-    padding-top: 40px;
+    margin-bottom: 20px;
 }
 
-.icons {
+.link-section {
     display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 247px;
-    height: 60px;
+    gap: 25px;
 }
 
-.icon-text p {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 11px;
-    line-height: 12.89px;
+.more {
+    font-size: 22px;
     text-align: center;
-    color: #FA382F;
-    position: absolute;
+    color: white;
+    background-color: red;
+    margin: 0px 21px 40px 21px;
+}
+
+.more-section-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.more-section-images img {
+    height: 70px;
+}
+
+.more-text {
+    width: 100%;
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 11px; 
+    text-align: center;
+    color: red;
 }
 
 /* CONTACT */
@@ -479,15 +494,126 @@ h5 {
 }
 
 /* TABLET */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px){
 	.container {
-		width: 768px;
+		width: 60vw;
+        margin: 0 auto;
+
 	}
+
+    .header-image {
+        width: 220px;
+        height: 220px;
+        right: 150px;
+        bottom: -25px;
+    }
+
+    .header-links {
+        top: 80px;
+        right: 150px;
+    }
+
+    .header-links img {
+        height: 60px;
+    }
+
+    .header-text-group {
+        left: 100px;
+    }
+
+    
 }
 
 /* DESKTOP */
-@media screen and (min-width: 1100px) {
-	.container {
-		width: 1200px;
+@media screen and (min-width: 1024px) {
+	
+    /* GLOBAL */
+    .container {
+		width: 1024px;
+        margin: 0 auto;
 	}
+
+    /* HEADER */
+    .header {
+        height: 668px;
+    }
+
+    .header-image {
+        width: 333px;
+        height: 333px;
+        right: 80px;
+        bottom: -30px;
+    }
+
+    .header-links {
+        top: 102px;
+        right: 80px;
+    }
+
+    .header-links img {
+        height: 80px;
+    }
+
+    .header-overlay {
+        display: none;
+    }
+
+    .header-text-group {
+        top: 200px;
+        left: 226px;
+        line-height: 60px;
+        width: 606px
+    }
+
+    .first-heading {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    .first-heading-name {
+        font-size: 20px;
+        line-height: 25px;    
+    }
+    
+    h1 {
+        font-size: 60px;
+        line-height: 69px;
+    }
+    
+    .specialist {
+        font-size: 28px;
+        line-height: 40px;
+        
+    }
+   
+    /* GLOBAL STYLING FOR SECTIONS */
+
+    .container {
+        width: 60vw;
+    }
+
+    /* FEATURED PROJECTS */
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 22px;
+    }
+
+    .other-projects-p {
+        text-decoration: underline;
+    }
+
+    /* MY THOUGHTS */
+    .thoughts-posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 57px;
+    }
+
+    .second-thought {
+        display: block;
+    }
+
 }
