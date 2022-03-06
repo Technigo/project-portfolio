@@ -1,3 +1,9 @@
+:root {
+    --background: #fff7f7;
+    --main: #3f704c;
+    --heading-secondary: #f3a59b;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -9,12 +15,10 @@ body {
 
 .container {
     margin: 0 auto;
-    /* Lower border of the breakpoint. Lowest supported width*/
     width: 340px;
 }
 
 header {
-    background-color: #f9f8d9;
     width: 100%;
     margin-bottom: 3rem;
     background-image: url(./assets/forest2.JPG);
@@ -43,8 +47,8 @@ h1 {
 }
 
 h2 {
-    background-color: #3f704c;
-    color: #f3a59b;
+    background-color: var(--main);
+    color: var(--heading-secondary);
     text-transform: uppercase;
     display: inline-block;
     padding: 0.3rem 0.5rem;
@@ -55,7 +59,7 @@ h2 {
 }
 
 h3 {
-    color: #3f704c;
+    color: var(--main);
     text-transform: uppercase;
 }
 
@@ -77,7 +81,7 @@ li {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: 2px solid #3f704c; 
+    border: 2px solid var(--main); 
     position: absolute;
     z-index: 5;
     bottom: -24px;
@@ -107,8 +111,8 @@ header .social-logos {
     font-family: "Font Awesome 6 Brands";
     font-size: 1.2rem;
     margin-left: 0.3rem;
-    color: #386343;
-    border: 1px solid #386343;
+    color: var(--main);
+    border: 1px solid var(--main);
     border-radius: 50%;
     padding: 0.2rem 0.3rem;
 }
@@ -120,7 +124,7 @@ section {
 }
 
 section:nth-child(2n) {
-    background-color: #fff7f7;
+    background-color: var(--background);
 }
 
 .section-about {
@@ -138,7 +142,7 @@ section:nth-child(2n) {
 }
 
 .symbol-line {
-    border: 1px solid #3f704c;
+    border: 1px solid var(--main);
     margin: 0 -0.5rem 0.25rem 0;
     display: inline-block;
     width: 3rem;
@@ -148,7 +152,7 @@ section:nth-child(2n) {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #3f704c;
+    background-color: var(--main);
     display: inline-block;
     margin: 0 0.2rem 0 0;
 }
@@ -198,7 +202,7 @@ section:nth-child(2n) {
 
 .heading-project {
     text-transform: uppercase;
-    color: #3f704c;
+    color: var(--main);
     margin-bottom: 0.5rem;
 }
 
@@ -211,8 +215,8 @@ section:nth-child(2n) {
 }
 
 .project-tag {
-    background-color: #f3a59b;
-    color: #3f704c;
+    background-color: var(--heading-secondary);
+    color: var(--main);
     display: inline;
     padding: 0 0.3rem;
     line-height: 1.5rem;
@@ -252,7 +256,7 @@ section:nth-child(2n) {
 
 .project-overlay-text {
     text-transform: uppercase;
-    color: #f3a59b;
+    color: var(--heading-secondary);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -264,7 +268,7 @@ section:nth-child(2n) {
 }
 
 .project-link {
-    color: #3f704c;
+    color: var(--main);
     margin: 1rem 1.2rem 0 0;
 }
 
@@ -285,9 +289,12 @@ section:nth-child(2n) {
 }
 
 .container-skills {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container-skills-group {
+    margin-bottom: 2rem;
 }
 
 .container-skills ul {
@@ -296,18 +303,18 @@ section:nth-child(2n) {
 }
 
 footer {
-    background-color: #3f704c;
+    background-color: var(--main);
     text-align: center;
     padding: 2rem 0;
-    color: #fff7f7;
+    color: var(--background);
 }
 
 footer h3 {
-    color: #fff7f7;
+    color: var(--background);
 }
 
 .footer-text {
-    color: #fff7f7;
+    color: var(--background);
 }
 
  footer a {
@@ -321,8 +328,8 @@ footer .social-logos {
 }
 
 footer .social-logos .fa-brands {
-    color: #fff7f7;
-    border: 1px solid #fff7f7;
+    color: var(--background);
+    border: 1px solid var(--background);
     text-decoration: none;
 }
 
@@ -366,6 +373,10 @@ footer .social-logos a:hover {
     .social-logos .fa-brands {
         font-size: 1.8rem;
         padding: 0.3rem 0.5rem;   
+    }
+
+    .container-skills {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -418,6 +429,10 @@ footer .social-logos a:hover {
 
     .project {
         grid-column-start: span 1;
+    }
+
+    .container-skills {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     footer a:hover {
