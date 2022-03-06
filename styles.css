@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -9,17 +10,18 @@ html, body {
 }
 
 header {
-    background-color: blue;
+    background-color: black;
     /* position: relative; */
-    height: 50vh;
+    height: 80vh;
     overflow: hidden;
 }
 
 .header-profile-div img {
     border-radius: 50%;
     position: absolute;
-    top: 350px;
+    top: 450px;
     right: 50px;
+    z-index: 1;
 }
 
 .header-info-div {
@@ -30,13 +32,14 @@ header {
 .header-link-icons {
     position: absolute;
     top: 25px;
-    right: 250px;
+    right: 50px;
 }
 
 .intro-section {
     padding: 80px;
     font-family: 'Montserrat', sans-serif;
     background-color: #F4F4F4;
+    z-index: 0;
 }
 
 .tech-section {
@@ -109,7 +112,7 @@ header {
 
 footer {
     font-family: 'Montserrat', sans-serif;
-    background-color: blue;
+    background-color: black;
     color: white;
     padding: 70px;
     line-height: 25px;
@@ -143,6 +146,19 @@ footer {
     .header-profile-div img {
         right: 150px;
     }
+
+    .header-info-div {
+
+    }
+    
+    header {
+        height: 50vh;
+    }
+
+    .header-profile-div img {
+        top: 350px;
+        right: 50px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -152,5 +168,9 @@ footer {
 
     .header-profile-div img {
         right: 250px;
+    }
+
+    .header-link-icons {
+        right: 150px;
     }
 }
