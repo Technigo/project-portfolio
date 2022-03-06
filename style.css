@@ -1,0 +1,686 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.section {
+  padding-top: 41px;
+  padding-bottom: 20px;
+}
+
+.section:nth-child(2n) {
+  background-color: #edf7fa;
+}
+
+.section:nth-child(2n + 1) {
+  background-color: #fff;
+}
+
+.container {
+  width: 375px;
+  margin: 0 auto;
+}
+
+/*----- Hero header -------*/
+
+.header {
+  position: relative;
+  width: 100vw;
+  height: 520px;
+}
+
+.hero-img {
+  background-image: url(./assets/frontEnd.avif);
+  background-size: cover;
+  height: 520px;
+  width: 100vw;
+  background-position: 5%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.header-links {
+  position: absolute;
+  top: 9px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.1));
+}
+
+.header-links img {
+  height: 40px;
+}
+
+.header-text {
+  position: absolute;
+  top: 121px;
+  left: 30px;
+  right: 131px;
+  bottom: 197px;
+  color: white;
+  max-width: 250px;
+}
+
+.header-text p {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.header-text h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.header-text p span {
+  font-weight: 700;
+}
+
+.header-text h2 {
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.header-pic {
+  position: absolute;
+  top: 336px;
+  right: 24px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/*--------- Introduction section----------*/
+
+.intro-section {
+  font-size: 17px;
+  line-height: 25px;
+  margin: 45px 24px 43px 24px;
+}
+
+.intro-section img {
+  padding-right: 10px;
+}
+
+/*--------- Skills Section----------------*/
+
+.tech-section h3 {
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  margin: 26px 150px;
+}
+
+.tech-section p {
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+  margin: 33px 24px;
+}
+
+/*---------Projects----------------------*/
+
+.featured-projects {
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  margin: 0px 61px;
+}
+
+.project-image-group {
+  position: relative;
+}
+
+.project-image {
+  margin: 40px 24px 9px 24px;
+}
+
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  margin: 40px 24px 9px 24px;
+} 
+
+.project-overlay:hover {
+  cursor: pointer;
+  opacity: 0;
+  transition: all ease-in 0.5s;
+}
+
+.repo-title {
+  position: absolute;
+  color: white;
+  top: 42px;
+  left: 46px;
+  bottom: 3px;
+  width: 236px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.project-text-group {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  margin: 9px 24px;
+}
+
+.project-heading {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #fa382f;
+  margin: 10px;
+}
+
+.github-tracker {
+  padding-top: 50px;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+.project-description {
+  margin: 10px;
+  line-height: 29px;
+}
+
+.languages {
+  display: flex;
+}
+
+.tag {
+  margin: 0 5px;
+  font-weight: 500;
+  font-size: 9px;
+  background: #fddfe7;
+  padding: 7px;
+}
+
+.other-projects {
+  color: #fa382f;
+  margin: 56px 60px;
+  text-align: center;
+  font-size: 21px;
+}
+
+.project-description span {
+  color: #fa382f;
+  font-weight: 700;
+}
+
+.another {
+  margin: 51px 0 0 0;
+}
+
+/* MY THOUGHTS SECTION ---------------------------------------------------------- */
+
+.my-thoughts {
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  margin: 0px 99px;
+}
+
+.thoughts-image {
+  margin: 40px 24px 32px 24px;
+}
+
+.thoughts-text-section {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  margin: 0px 24px 56px 24px;
+}
+
+.thoughts-text-section h5 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fa382f;
+  margin: 10px 0;
+}
+
+.thoughts-text-section h4 {
+  font-size: 21px;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  margin: 10px 0;
+}
+
+.thoughts-text-section p {
+  line-height: 29px;
+  margin: 10px 0;
+}
+
+.thoughts-text-section p span {
+  color: #fa382f;
+  font-weight: 700;
+}
+
+.more-thoughts {
+  color: #fa382f;
+  margin: 56px 60px;
+  text-align: center;
+  font-size: 21px;
+}
+
+.more-thoughts-section {
+  font-family: Roboto;
+  font-size: 17px;
+  line-height: 29px;
+  text-decoration-line: underline;
+  margin: 0 24px 24px 24px;
+}
+
+.more-thoughts-section span {
+  font-weight: 400;
+  color: #fa382f;
+  text-decoration-line: underline;
+}
+
+/* SKILL SECTION ---------------------------------------------------------- */
+
+.skills {
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  margin: 0px 145px 10px 145px;
+}
+
+.skill-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.skill-box h4 {
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  color: red;
+}
+
+.skill-box p {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* FOR MORE SECTION---------------------------------------------------------- */
+
+.more-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.link-section {
+  display: flex;
+  gap: 25px;
+}
+
+.more {
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  margin: 0px 21px 40px 21px;
+}
+
+.more-section-images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.more-section-images img {
+  height: 70px;
+}
+
+.more-text {
+  width: 100%;
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 11px;
+  text-align: center;
+  color: red;
+}
+
+/* FOOTER ----------------------------------------------------------*/
+
+.footer {
+  padding: 60px 24px 84px 24px;
+  background-image: url(./assets/jon_duckett.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.footer h3 {
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+
+.footer p {
+  line-height: 10px;
+  padding: 10px;
+}
+
+.more-section-images img {
+  width: 120px;
+}
+
+.more-section-images p {
+  font-size: 20px;
+}
+
+/*---------TABLET  ---------*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .mobile-hide {
+    display: block;
+  }
+
+  .header-text {
+    top: 106px;
+    left: 110px;
+    /* width: 100%; */
+    height: 100%;
+  }
+
+  .header-text h1 {
+    font-size: 65px;
+  }
+
+  .header-text p {
+    font-size: 18px;
+  }
+
+  .header-pic {
+    top: 298px;
+    right: 150px;
+    width: 250px;
+  }
+
+  .header-links {
+    top: 102px;
+    right: 150px;
+  }
+
+  .header-links img {
+    height: 60px;
+  }
+
+  .tech-section h3 {
+    font-size: 35px;
+    letter-spacing: 0.01em;
+    margin: 0px 330px;
+  }
+
+  .featured-projects {
+    font-size: 35px;
+    letter-spacing: 0.01em;
+    margin: 0 171px;
+  }
+
+  .desktop-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px;
+  }
+
+  .one-project {
+   width: 50%;
+}
+
+  .one-project {
+    width: 50%;
+  }
+
+  .other-projects {
+    font-size: 31px;
+  }
+
+  .my-thoughts {
+    display: none;
+  }
+
+  .my-thoughts-desktop {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    margin: 0px 100px;
+  }
+
+  .desktop-thoughts-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 30px;
+  }
+
+  .one-article {
+    width: 50%;
+  }
+
+  .more-thoughts {
+    font-size: 31px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .more-thoughts-section {
+    margin: 0 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills {
+    font-size: 35px;
+    margin: 0 300px;
+  }
+
+  .skill-boxes {
+    gap: 90px;
+  }
+
+  .more {
+    font-size: 35px;
+  }
+
+  .more-section-images {
+    width: 120px;
+  }
+
+  .more-section-images img {
+    height: 120px;
+  }
+
+  .more-text {
+    font-size: 14px;
+  }
+
+  .footer h3 {
+    font-size: 28px;
+  }
+
+  .footer p {
+    font-size: 20px;
+  }
+}
+/* Desktop LANDSCAPE ----------------------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .section {
+    padding-top: 61px;
+    padding-bottom: 30px;
+  }
+
+  .header-text {
+    top: 126px;
+    left: 310px;
+    height: 100%;
+  }
+
+  .header-text h1 {
+    font-size: 65px;
+  }
+
+  .header-text p {
+    font-size: 17px;
+  }
+
+  .header-pic {
+    top: 298px;
+    right: 350px;
+  }
+
+  .header-links {
+    top: 102px;
+    right: 350px;
+  }
+
+  .header-links img {
+    height: 70px;
+  }
+
+  .intro-section {
+    margin: 0px 250px 43px 250px;
+  }
+
+  .tech-section h3 {
+    font-size: 35px;
+    letter-spacing: 0.01em;
+    margin: 0px 530px;
+  }
+
+  .tech-section p {
+    font-size: 25px;
+    line-height: 40px;
+    margin: 33px 124px;
+  }
+
+  .tech-section p span {
+    color: red;
+  }
+
+  .featured-projects {
+    font-size: 35px;
+    letter-spacing: 0.01em;
+    margin: 0 361px;
+  }
+
+  .desktop-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 200px;
+  }
+
+  .one-project {
+    width: 50%;
+  }
+
+  .mobile-hide {
+    display: block;
+  }
+
+  .other-projects {
+    font-size: 31px;
+  }
+
+  .my-thoughts {
+    display: none;
+  }
+
+  .my-thoughts-desktop {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    margin: 0px 300px;
+  }
+
+  .desktop-thoughts-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 200px;
+  }
+
+  .one-article {
+    width: 50%;
+  }
+
+  .more-thoughts {
+    font-size: 31px;
+  }
+
+  .more-thoughts-section {
+    margin: 0 220px;
+  }
+
+  .skills {
+    font-size: 35px;
+    margin: 0 520px;
+  }
+
+  .skill-boxes {
+    gap: 90px;
+  }
+
+  .more {
+    font-size: 35px;
+  }
+
+  .more-section-images {
+    width: 120px;
+  }
+
+  .more-text {
+    font-size: 14px;
+  }
+
+  .footer h3 {
+    font-size: 28px;
+  }
+
+  .footer p {
+    font-size: 20px;
+  }
+}
