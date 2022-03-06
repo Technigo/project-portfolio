@@ -311,25 +311,25 @@ header {
 
 /**** Animation ****/
 .title-icon {
-  animation: bounce linear 2s 2; 
-  -webkit-animation: bounce linear 2s 2;
+  animation: bounce linear 1.5s 2; 
+  -webkit-animation: bounce linear 1.5s 2;
 }
 
 @keyframes bounce
  {
   0%   { transform: scale(1,1)    translateY(0); }
   10%  { transform: scale(1.1,.9) translateY(0); }
-  30%  { transform: scale(.9,1.1) translateY(-50px); }
+  30%  { transform: scale(.9,1.1) translateY(-20px); }
   50%  { transform: scale(1,1)    translateY(0); }
-  100% { transform: scale(1,1)    translateY(0); }
+  100% { transform: scale(.7,1,1)    translateY(-10px); }
 }
 
 @-webkit-keyframes bounce {
   0%   { transform: scale(1,1)    translateY(0); }
   10%  { transform: scale(1.1,.9) translateY(0); }
-  30%  { transform: scale(.9,1.1) translateY(-50px); }
+  30%  { transform: scale(.9,1.1) translateY(-20px); }
   50%  { transform: scale(1,1)    translateY(0); }
-  100% { transform: scale(1,1)    translateY(0); }
+  100% { transform: scale(0.7,1,1)    translateY(-10px); }
 }
 
 /* .code {
@@ -548,12 +548,11 @@ footer p {
   header {
     background: url('./images/heroimage.svg');
     background-size: cover;
-    height: 500px;
   }
 
   .header-container {
     top: 150px;
-    left: 250px;
+    left: 230px;
   }
 
   .container {
@@ -669,15 +668,15 @@ footer p {
 
   .title,
   .title > span {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   
   h1.title-first {
-    font-size: 5.75rem;
+    font-size: 5.5rem;
   }
 
   h1.title-second {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   img.title-icon {
@@ -698,6 +697,11 @@ footer p {
 
   .list-heading {
     font-size: 28px;
+  }
+
+  .header-container {
+    top: 150px;
+    left: 26vw;
   }
   
   p, 
