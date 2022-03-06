@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+:root {
+--white:#ffffff;
+--lightgrey-background: #f4f4f4;
+--primary: #FA382F;
+
+
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    
+}
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+li {
+    text-decoration: none;
+}
+.hero {
+    background-image: url("./assets/artwork-laura.jpg");
+    background-size: cover;
+    height: 520px;
+    position: relative;
+}
+.hero-text {
+    font-family: roboto;
+}
+.some-icons {
+    position: absolute;
+    right: 10%;
+    top: 48px;
+   
+}
+.some-icons  a {
+    display: inline-block;
+}
+.some-icons img {
+width: 40px;
+height: 40px;
+}
+.portrait{
+    position: absolute;
+    bottom: -16px;
+    right: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--white);
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    width: 65%;
+}
+.section{
+    padding: 20px 40px;
+}
+.line {
+    border: 1px solid #FA382F;
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #FA382F;
+    border-radius: 50%;
+    display: inline-block;
+}
+.portfolio-text {
+color: antiquewhite;
+}
+.worktitle {
+
+}
+.added-title{
+
+}
+
+@media screen and (min-width: 768px) {
+.container {
+    width:768px;
+    }
+    .section {
+        padding: 30px 60px;
+        font-size: 30px;
+    }
+    .some-icons img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container{ 
+        width:1200px;
+    }
+    .section {
+        padding: 50px 120px;
+        font-size: 33px;
+    }
+    .some-icons img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.section:nth-child(2n) {
+    background-color: var(--lightgrey-background);
+}
+.section:nth-child(2n + 1) {
+    background-color: var(--white);
+}
+footer {
+    position:relative;
+    height:302px;
+    left: 0px;
+    background-color: #072BCE;
+    color: white;
+    font-family:'Montserrat';
+}
