@@ -7,53 +7,65 @@
     <script src="https://kit.fontawesome.com/13cae04d6f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles.css">
-    <title>Suki's Portfolio</title>
-</head>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Suki's Portfolio ✨</title>
+    <meta property="og:title" content="Suki Nhung Phan's Portfolio ">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="">
+    <meta property="og:url" content="http://suki.nhungphan.com">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Suki Nhung Phan's Portfolio ">
+    <meta name="twitter:description" content="Visit Suki's portfolio to see all projects">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="http://suki.nhungphan.com">
+    </head>
 <body>
+    <!----------------------- header ------------------------------->
     <header>
         <span class="circle"></span>
         <span class="circle circle-1"></span>
         <div class="header">
             <!---------------------------------->
-            <nav>
-                <ul class="media-list header-nav">
-                    <li><a class="media-link" href="https://www.linkedin.com/in/nhung19/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a class="media-link" href="https://github.com/sukiphan97"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a class="media-link" href="https://stackoverflow.com/c/technigo/users/309"><i class="fa-brands fa-stack-overflow"></i></a></li>
-                </ul>
-            </nav>
+                <div class="media-list display-flex header-nav" aria-hidden="false" aria-label="social media links">
+                    <a class="header-fav-icons" aria-label="linkedin link" href="https://www.linkedin.com/in/nhung19/"><ion-icon name="logo-linkedin"></ion-icon> </a>
+                    <a class="header-fav-icons" aria-label="github link" href="https://github.com/sukiphan97"><ion-icon name="logo-github"></ion-icon></a>
+                    <a class="header-fav-icons" aria-label="stack overflow link" href="https://stackoverflow.com/c/technigo/users/309"><ion-icon name="logo-stackoverflow"></ion-icon></a>
+                </div>
 
             <!---------------------------------->
-            <div class="header-text">
-                <p class="header-portfolio-owner upper-case "> <span>Portfolio</span> Suki Nhung Phan </p>
-                <h1>Frontend Developer <span>+ visual designer</span></h1>
+            <div class="header-text display-flex">
+                <h1 class="header-portfolio-owner upper-case"> <span>Portfolio</span> Suki Nhung Phan </h1>
+                <p class="author-title" aria-label="author's job title">Frontend Developer <span>+ visual designer</span></p>
             </div>
-            <img src="/img/Untitled design-9.png" class="header-img" alt="Suki's avatar"/>
+            <img src="/img/author-avatar.png" class="header-img" alt="author's avatar"/>
             <!---------------------------------->
         </div>
     </header>
 
-    <!-------------------- INTRO SECTION ----------------------------->
+    <!----------------------- INTRO SECTION ------------------------------->
     <section class="section">
         <div class=" intro-section container">  
             <!---------------------------------->
-            <p> <span class="line-symbol"></span>
+            <p class="text-styling" aria-label="introduction"> 
+                <span class="line-symbol"></span>
                 <span class="dot-symbol"></span>
-                Hello! I’m a creative  front end developer with UX/UI skills and experience 
-                in graphic design & animation. I’m all about solving problems that matter 
-                & building unforgettable interactive digital experience on the web.
+                Hello! I’m a creative & multi-skill front end developer with UX/UI design skills and 2 years of experience 
+                in graphic design & animation. With a strong passion for problem solving and background in design, I help companies 
+                to turn bright ideas into beautiful, useful, and delightful digital product which everyone can use.
             </p>
             <!---------------------------------->
         </div>
     </section>
 
     <!-------------------- TECH SKILL SECTION ----------------------------->
-    <section class="section tech-skill-section position-absolute">
-            <div class="container tech-skill">
+    <section class="section tech-skill-section ">
+            <div class="container tech-skill display-flex">
 
                 <!---------------------------------->
                 <h2 class="tech-skill-heading">Tech</h2>
-                <p>
+                <p class="text-styling title">
                     HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, 
                     Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github. 
                 </p>
@@ -62,41 +74,43 @@
     </section>
 
     <!-------------------- FEATURED - PROJECTS SECTION -------------------->
-    <section class="section projects-section">
+    <section aria-label="project section" class="section projects-section">
         <span class="circle circle-2"></span>
 
-        <div class="container projects-wrapper">
+        <div class="container projects-wrapper display-flex">
                  
                 <!----------------- FEATURED PROJECTS ----------------->
                 <h2 class="projects-heading">Feature Project</h2>
                 <div class="projects">
                     <!------------- PROJECT 1 ------------->
-                    <article class="projects-article">
+                    <article aria-label="project guess who game" class="projects-article">
                         <a class="project-img-link" href="https://github.com/sukiphan97/project-guess-who">
-                            <img src="/img/project-guess-who.png" class="project-img" alt="">
+                            <img src="/img/project-guess-who.png" class="project-img" alt="Image of project Guess Who game on desktop and mobile versions">
                         </a>
 
-                        <div class="projects-text">
+                        <div class="projects-text display-flex">
 
-                            <h3><a class="project-name" href="https://github.com/sukiphan97/project-guess-who">Guess Who Game With JavaScript</a></h3>
-                            <p class="project-description">Responsive digital board game using HTML, CSS and JavaScript ES6 >></p>
-                            <ul class="project-languages">
+                            <h3><a class="project-name text-styling title" href="https://github.com/sukiphan97/project-guess-who">Guess Who Game With JavaScript</a></h3>
+                            <p class="project-description text-styling sub-title">Responsive digital board game using HTML, CSS and JavaScript ES6 <a href="https://github.com/sukiphan97/project-guess-who" aria-label="Visit Guess Who Game project">>></a></p>
+                            <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                 <li class="project-language-list">HTML</li>
                                 <li class="project-language-list">CSS3</li>
                                 <li class="project-language-list">JavaScript ES6</li>
+
                             </ul>
                         </div>
                     </article>
         
                     <!------------- PROJECT 2 ------------->
-                    <article class="projects-article">
-                        <a class="img-link" href="https://github.com/sukiphan97/project-github-tracker"><img src="/img/project-github.png" class="project-img" alt=""></a>
+                    <article aria-label="project github tracker" class="projects-article">
+                        <a class="img-link" href="https://github.com/sukiphan97/project-github-tracker"><img src="/img/project-github.png" class="project-img" alt="Image of project Githhub Tracker on desktop and mobile versions">
+                        </a>
 
-                        <div class="projects-text">
+                        <div class="projects-text display-flex">
 
-                            <h3><a class="project-name" href="https://github.com/sukiphan97/project-github-tracker">GitHub Tracker With APIs</a></h3>
-                            <p class="project-description">Responsive digital board game using HTML, CSS and JavaScript ES6 >></p>
-                            <ul class="project-languages">
+                            <h3><a aria-label="Visit Github tracker project" class="project-name text-styling title" href="https://github.com/sukiphan97/project-github-tracker">GitHub Tracker With APIs</a></h3>
+                            <p class="project-description text-styling sub-title">Responsive Github Tracker site using API and JavaScript <a href="https://github.com/sukiphan97/project-github-tracker" aria-label="Visit Github Tracker project"> >></a></p>
+                            <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                 <li class="project-language-list">HTML</li>
                                 <li class="project-language-list">CSS3</li>
                                 <li class="project-language-list">JavaScript ES6</li>
@@ -105,29 +119,32 @@
                     </article>
         
                     <!------------- PROJECT 3 ------------->
-                    <article class="projects-article hidden">
-                        <a href="https://github.com/sukiphan97/project-weather-app"><img src="/img/project-weather.png" class="project-img" alt=""></a>
+                    <article aria-label="project weather app" class="projects-article hidden">
+                        <a href="https://github.com/sukiphan97/project-weather-app"><img src="/img/project-weather.png" class="project-img" alt="Image of project weather app on desktop and mobile versions"></a>
                         
-                        <div class="projects-text">
-                            <h3><a class="project-name" href="https://github.com/sukiphan97/project-weather-app">Weather App With APIs</a></h3>
-                            <p class="project-description">Responsive digital board game using HTML, CSS and JavaScript ES6 >></p>
-                            <ul class="project-languages">
+                        <div class="projects-text display-flex">
+                            <h3><a class="project-name text-styling title" href="https://github.com/sukiphan97/project-weather-app">Weather App Using API</a></h3>
+                            <p class="project-description text-styling sub-title">Responsive Weather App using Geolocation, public weather API allows user to update the weather based on their current location <a href="https://github.com/sukiphan97/project-weather-app" aria-label="Visit project weather app">>></a></p>
+
+                            <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                 <li class="project-language-list">HTML</li>
                                 <li class="project-language-list">CSS3</li>
                                 <li class="project-language-list">JavaScript ES6</li>
+                                <li class="project-language-list">API</li>
                             </ul>
                         </div>
                     </article>
         
                     <!------------- PROJECT 4 ------------->
-                    <article class="projects-article hidden">
-                        <a href="https://github.com/sukiphan97/project-business-site"><img src="/img/project-business-site.png" class="project-img" alt=""></a>
+                    <article aria-label="project responsive business site" class="projects-article hidden">
+                        <a href="https://github.com/sukiphan97/project-business-site"><img src="/img/project-business-site.png" class="project-img" alt="Image of project business site on desktop and mobile versions"></a>
 
-                        <div class="projects-text">
+                        <div class="projects-text display-flex">
 
-                            <h3><a class="project-name" href="https://github.com/sukiphan97/project-business-site">Responsive Business Site</a></h3>
-                            <p class="project-description">Responsive digital board game using HTML, CSS and JavaScript ES6 >></p>
-                            <ul class="project-languages">
+                            <h3><a class="project-name text-styling title" href="https://github.com/sukiphan97/project-business-site">Responsive Business Site with JavaScript</a></h3>
+                            <p class="project-description text-styling sub-title">Responsive Business Website made by HTML, CSS, JavaScript. The goal was to build an interactive accordion and form <a href="https://github.com/sukiphan97/project-business-site" aria-label="Visit project business site">>></a></p>
+
+                            <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                 <li class="project-language-list">HTML</li>
                                 <li class="project-language-list">CSS3</li>
                                 <li class="project-language-list">JavaScript ES6</li>
@@ -138,53 +155,34 @@
                 </div>
             
             <!------------------ OTHER PROJECTS ------------------->
-            <div class="other-project">
+            <div class="other-project display-flex">
                         <span class="other-project-heading">Other Projects</span> 
                         
-                        <ul class="other-project-list">
+                        <ul class="other-project-list display-flex">
                             <!------------- OTHER PROJECT 1 ------------->
-                            <li class="projects-text">
-                                <h3 ><a class="project-name" href="">Weather App</a></h3>
-                                <p class="project-description">Responsive web site using HTML, 
+                            <li class="projects-text other-project-el display-flex">
+
+                                <h3 ><a class="project-name text-styling title" href="">Hospital Chatbot </a></h3>
+                                <p class="project-description text-styling sub-title">Responsive chatbot using HTML, 
                                     CSS and JavaScript ES6 for pizza orders chat bot.</p>
-                                <ul class="project-languages">
+
+                                <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                     <li class="project-language-list">HTML</li>
                                     <li class="project-language-list">CSS3</li>
                                     <li class="project-language-list">JavaScript ES6</li>
-                                    <li class="project-language-list">APIs</li>
+                                    <li class="project-language-list">Pair Programing</li>
+
                                 </ul>
                             </li>
-            
-                            <!------------- OTHER PROJECT 2 ------------->
-                            <li class="projects-text">
-                                <h3><a class="project-name" href="">Weather App</a></h3>
-                                <p class="project-description">Responsive web site using HTML, 
-                                    CSS and JavaScript ES6 for pizza orders chat bot.</p>
-                                <ul class="project-languages">
-                                    <li class="project-language-list">HTML</li>
-                                    <li class="project-language-list">CSS3</li>
-                                    <li class="project-language-list">JavaScript ES6</li>
-                                    <li class="project-language-list">APIs</li>
-                                </ul>
-                            </li>
-            
-                            <!------------- OTHER PROJECT 3 ------------->
-                            <li class="hidden projects-text">
-                                <h3><a class="project-name" href="">Weather App</a></h3>
-                                <p class="project-description">Web application built in JavaScript with external API</p>
-                                <ul class="project-languages">
-                                    <li class="project-language-list">HTML</li>
-                                    <li class="project-language-list">CSS3</li>
-                                    <li class="project-language-list">JavaScript ES6</li>
-                                    <li class="project-language-list">APIs</li>
-                                </ul>
-                            </li>
+
             
                             <!------------- OTHER PROJECT 4 ------------->
-                            <li class="hidden projects-text">
-                                <h3><a class="project-name" href="">Weather App</a></h3>
-                                <p class="project-description">Web application built in JavaScript with external API</p>
-                                <ul class="project-languages">
+                            <li class="hidden projects-text other-project-el display-flex">
+
+                                <h3><a class="project-name text-styling title" href="">Weather App</a></h3>
+                                <p class="project-description text-styling sub-title">Web application built in JavaScript with external API</p>
+
+                                <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                     <li class="project-language-list">HTML</li>
                                     <li class="project-language-list">CSS3</li>
                                     <li class="project-language-list">JavaScript ES6</li>
@@ -201,25 +199,25 @@
     
     <!------------------- MY THOUGHTS ABOUT CODE SECTION ------------------->
     <section class="section">
-        <div class="container blog-section">
+        <div class="container blog-section display-flex">
             <h2>My Thoughts</h2>
 
             <!----------------- FEATURED BLOGS ----------------->
-            <div class="main-blog">
+            <div aria-label="featured blogs" class="main-blog">
+
+                
                 <!----------------- BLOG 1 ----------------->
                 <div>
                     <a href="#"><img src="/img/blog-img.png" class="blog-img project-img" alt="Coding Quote"></a>
         
                     <div>
                         <span class="blog-date">Feb 2022</span>
-                        <h3 class="blog-title"><a class="project-name blog-title" href="">How to Structure Your Day for an Online Coding Boot Camp</a></h3>
-                        <p class="blog-description">
+                        <h3 class="blog-title"><a class="project-name text-styling title" href="#" aria-label="visit blog">How to Structure Your Day For An Online Coding Boot Camp</a></h3>
+                        <p class="blog-description text-styling sub-title">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Voluptatem reprehenderit dignissimos in blanditiis, 
-                            nesciunt quibusdam fugit magni ipsa voluptas officia ad 
-                            quis veritatis asperiores quos nihil consequatur, cum aliquam possimus.
+                            Voluptatem reprehenderit dignissimos in blanditiis.
                             
-                            <a><i class="fa-solid fa-angles-right"></i></a>
+                            <a href="#" aria-label="visit blog">>></a>
                         </p>
                     </div>
         
@@ -227,18 +225,16 @@
         
                 <!----------------- BLOG 2 ----------------->
                 <div class="hidden">
-                    <a href="#"><img src="/img/blog-img-1.png" class="blog-img project-img" alt="Coding Quote"></a>
+                    <a href="#" aria-label="visit blog"><img src="/img/blog-img-1.png" class="blog-img project-img" alt="Coding Quote"></a>
         
                     <div>
                         <span class="blog-date">Feb 2022</span>
-                        <h3> <a class="project-name blog-title" href="">How to Stop Being Scared: Learning To Love Code</a></h3>
-                        <p class="blog-description">
+                        <h3> <a class="project-name text-styling title" href="#">How to Stop Being Scared: Learning To Love Code</a></h3>
+                        <p class="blog-description text-styling sub-title">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Voluptatem reprehenderit dignissimos in blanditiis, 
-                            nesciunt quibusdam fugit magni ipsa voluptas officia ad 
-                            quis veritatis asperiores quos nihil consequatur, cum aliquam possimus.
+                            Voluptatem reprehenderit dignissimos in blanditiis.
                             
-                            <a><i class="fa-solid fa-angles-right"></i></a>
+                            <a href="#" aria-label="visit blog">>></a>
                         </p>
                     </div>
                 </div>
@@ -246,93 +242,106 @@
             </div>
 
             <!-------------------- OTHER BLOGS ----------------->
-            <div class="other-blogs">
+            <!-- <div class="other-blogs display-flex " aria-label="other blogs">
                 <span class="other-blogs-heading">More Thoughts</span>
 
-                <ul class="other-blogs-list">
+                <ul class="other-blogs-list display-flex">
                     <li> 
-                        <a class="other-blogs-link" href="#"> Sep 2022 || 5 App That Makes Coding Easier >> </a>
+                        <a class="other-blogs-link text-styling" href="#" aria-label="visit blog"> Sep 2022 || 5 App That Makes Coding Easier >> </a>
                     </li>
                     <li> 
-                        <a class="other-blogs-link" href="#"> Sep 2022 || 5 App That Makes Coding Easier >> </a>
+                        <a class="other-blogs-link text-styling" href="#" aria-label="visit blog"> Sep 2022 || 5 App That Makes Coding Easier >> </a>
                     </li>
                     <li> 
-                        <a class="other-blogs-link" href="#"> Sep 2022 || 5 App That Makes Coding Easier >> </a>
+                        <a class="other-blogs-link text-styling" href="#" aria-label="visit blog"> Sep 2022 || 5 App That Makes Coding Easier >> </a>
                     </li>
         
                 </ul>
-            </div>
+            </div>-->
         </div>
    
     </section>
 
     <!--------------------------- SKILLS SECTION --------------------------->
-    <section class="section  ">
-        <div class="container skill-section"> 
+    <section class="section">
+        <div class="container skill-section display-flex"> 
             <h2>Skill</h2>
-            <div class="skills">
+            <div class="skills text-styling">
 
                 <div>
                 <!------------------ CODE SKILL ------------------>
-                <ul class="code-skills">Code
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>React</li>
-                    <li>JavaScript ES6</li>
-                    <li>Styled Components</li>
-                    <li>GitHub</li>
-                </ul>
+                <div class="code-skills" aria-label="coding skills">
+                    <p class="title skill-title">Code</p>
+                    <ul class="sub-title">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>React</li>
+                        <li>JavaScript ES6</li>
+                        <li>Styled Components</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
 
                 <!----------------- UPCOMING SKILL ---------------->
-                <ul> Upcoming
-                    <li>Redux</li>
-                    <li>Node.js</li>
-                </ul>
+                <div aria-label="upcoming skills">
+                    <p class="title skill-title">Upcoming</p>
+                    <ul class="sub-title">
+                        <li>Redux</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
             </div>
 
                 <!----------------- TOOLBOX SKILL ----------------->
-                <ul class="skill-categria"> Toolbox
-                    <li>Figma</li>
-                    <li>Adobe XD Design</li>
-                    <li>Adoble Illustration</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe After Effect</li>
-                    <li>Canva</li>
-                    <li>Keynote</li>
-                    <li>Slack</li>
-                </ul>
+                <div aria-label="tool box">
+                    <p class="title skill-title">Toolbox</p>
+                    <ul class="sub-title"> 
+                        <li>Figma</li>
+                        <li>Adobe XD Design</li>
+                        <li>Adoble Illustration</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe After Effect</li>
+                        <li>Canva</li>
+                        <li>Keynote</li>
+                        <li>Slack</li>
+                    </ul>
+                </div>
 
                 <!----------------- MORE SKILL ----------------->
-                <ul class="skill-categria"> More     
-                    <li>UX/UI design</li>
-                    <li>Illustration</li>
-                    <li>Video editing</li>
-                    <li>Branding</li>
-                    <li>Communication</li>
-                    <li>Teamwork</li>
-            </ul>
+                <div class="hidden" aria-label="other skills">
+                    <p class="title skill-title">More</p>
+                    <ul class="sub-title">      
+                        <li>UX/UI design</li>
+                        <li>Illustration</li>
+                        <li>Video editing</li>
+                        <li>Branding</li>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                    </ul>
+                </div>
           
             </div>
         </div> 
     </section>
 
+
     <!--------------------------- FOR MORE SECTION --------------------------->
     <section class="section">
-        <div class="container for-more">
+        <div class="container for-more display-flex">
             <h2>For More</h2>
-            <ul class="media-list">
-                <li>
-                    <a class="fav-icons" href="https://www.linkedin.com/in/nhung19/"><i class="fa-brands fa-linkedin-in"></i> </a>
-                    <a class="link media-link" href="">Linkedin</a>
+            <ul class="media-list display-flex">
+                <li class="display-flex">
+                    <a class="fav-icons" href="https://www.linkedin.com/in/nhung19/" aria-label="visit Linkedin"><ion-icon name="logo-linkedin"></ion-icon> </a>
+                    <a class="link media-link" href="https://www.linkedin.com/in/nhung19/" aria-label="visit Linkedin">Linkedin</a>
                 </li>
-                <li>
-                    <a class="fav-icons" href="https://github.com/sukiphan97"><i class="fa-brands fa-github"></i> </a>
-                    <a class="link media-link" href="">GitHub</a>
+                <li class="display-flex">
+                    <a class="fav-icons" href="https://github.com/sukiphan97" aria-label="visit Github"><ion-icon name="logo-github"></ion-icon></a>
+                    <a class="link media-link" href="https://github.com/sukiphan97" aria-label="visit GitHub">GitHub</a>
 
                 </li>
-                <li>
-                    <a class="fav-icons" href="https://stackoverflow.com/c/technigo/users/309"><i class="fa-brands fa-stack-overflow"></i></a>
-                    <a class="link media-link" href="">Stack Overflow</a>
+                <li class="display-flex">
+                    <a class="fav-icons" href="https://stackoverflow.com/c/technigo/users/309" aria-label="visit stack overflow"><ion-icon name="logo-stackoverflow"></ion-icon></a>
+                    <a class="link media-link" href="https://stackoverflow.com/c/technigo/users/309" aria-label="visit stack overflow">Stack Overflow</a>
 
                 </li>
             </ul>
@@ -342,17 +351,17 @@
     
 
     <!---------------------------- FOOTER SECTION ---------------------------->
-    <footer>
-        <div class="container contact" >
+    <footer aria-label="contact section">
+        <div class="container display-flex">
 
             <h2 class="contact-heading">Contact</h2>
 
-            <div class="contact-container">
-                <p class="contact-name">Suki Nhung Phan</p>
+            <div class="contact-container display-flex">
+                <p class="contact-name text-styling title">Suki Nhung Phan</p>
         
                 <address class="contact-address">
-                    <a class="contact-link" href="tel:+358414795414">+358 414 795 414</a>
-                    <a class="contact-link" href="mailto:sukiphan97@gmail.com">sukiphan97@gmail.com</a>
+                    <a aria-label="click or enter to call Suki" class="contact-link text-styling title" href="tel:+358414795414">+358 414 795 414</a>
+                    <a aria-label="click or enter to send email to Suki" class="contact-link text-styling title" href="mailto:sukiphan97@gmail.com">sukiphan97@gmail.com</a>
                 </address>
             </div>
         </div>
