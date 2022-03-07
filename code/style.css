@@ -12,36 +12,26 @@
 }
 
 body{
-    margin: 0;
+    margin: 0;  
+    background-color: black; 
 }
 
-.container {
+section{
+    padding: 100px 0px;
+}
+
+.container{
     width: 375px;
     margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
-}
-
-/* ----- Header ----- */
+/* ----- HEADER----- */
 .header{
-    height: 595px;
+    height: 100vh;
     position: relative;
-}
-
-.hero{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 0;
+    left: 0;
 }
 
 .back-video{
@@ -55,128 +45,229 @@ body{
     opacity: 0.5;
 }
 
-.header-text-group {
+.main{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); 
+    align-items: center;
     text-align: center;
 }
 
-.header-text-group h1{
-    font-size: 60px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.header-text-group h2{
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.header-text-group p{
-    margin-bottom: 30px;
-}
-
-
-/* ----- Header - Countdown ----- */
-
-.coming-soon {
+.main .content{
+    max-width: 800px;
+    align-items: center;
     position: relative;
+}
+
+.main .content h1{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+    text-shadow:    0px 4px 3px rgba(0,0,0,0.1),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.main .content h1 span{
+    font-size: 2.8em;
+    font-weight: 600;
+}
+
+.animated-text{
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+.animated-text h3{
+    color: #f9004d;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.animated-text h3:nth-child(1){
+    animation: text-move 10s infinite;
+}
+
+@keyframes text-move {
+    0%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: -70px
+    }
+    50%{
+        margin-top: -140px;
+    }
+    75%{
+        margin-top: -70px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+.btn{
+    color: #fff;
+    background: #004ff9;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    padding: 13px 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: 0.5s ease;
+    border: 2px solid transparent;
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.1),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+
+}
+
+.media-icons{
+    margin-top: 50px;
+}   
+
+.media-icons img{
+    width: 8%;
+    height: 8%;
+    margin-right: 25px;
+}
+
+.title{
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
 }
 
-.countdown{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+/*/ ------ SECTION 1 - ABOUT MED -----/*/
+
+.section:nth-child(2) {
+    background-color: rgb(59, 59, 59);
 }
 
-  .day,.hour,.minute,.second{
-      font-size: 3rem;    
-      margin: 5px;
-      color: rgb(0, 17, 255);
-      justify-content: space-between;
-}
-
-
-/* ----- Section 1 ----- */
-
-.section:nth-child(2n) {
-    background-color: rgb(189, 189, 189);
-}
-
-/* ----- Toggle ----- */
-
-.button-box{
-    width: 220px;
-    margin: 50px auto;
-    position: relative;
-    border-radius: 5px;
-    background:rgb(109, 109, 109);
-  }
-
-  .toggle-btn{
-    padding: 10px 35px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-  }
-  
-  #btn{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 110px;
-    height: 100%;
-    background: blue;
-    border-radius: 5px;
-    transition: .5s;
-  }
-
-  .input-group{
-    top: 180px;
-    width: 280px;
-    transition: .5s;
-  }
-
-/* ----- Section 2 ----- */s
-.section:nth-child(2n +1) {
-    
-}
-
-.project-heading{
-    font-size: 24px;
-    line-height: 30px;
-    margin: 17px 0;
-}
-
-.project-image-group {
-    position: relative;
-}
-
-.project-text-group{
-    text-align: center;
-}
-
-.project-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba()
-}
-
-.project-image{
+.about{
     width: 100%;
-    display: flex;   
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.about img{
+    height: auto;
+    width: 250px;
+    border-radius: 200px;
+    margin: 20px 20px;
+}
+
+.about-text{
+    width: 500px;
+    margin: 20px 20px;   
+}
+
+.about-text h2{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p{
+    color: rgba(216, 216, 216, 0.8);
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+/*/ ------ SECTION 2 - PROJECT -----/*/
+.section:nth-child(3) {
+    background-color: rgb(26, 26, 26);
+}
+
+.projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.box{   
+    padding: .2rem;
+    margin: .8rem;
+    border-radius: .2rem;
+    text-align: center;
+    max-width: 400px;
+}
+
+.box .card{
+    padding: 20px 35px;
+    color: rgba(216, 216, 216, 0.8);
+    background: #272727;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.1),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin: 10px;
+    color: White;
+    font-size: 30px;
+}
+
+.card .btn{
+    margin: 20px;
+}
+   
+@media screen and (min-width: 375px) {
+    .container {
+        width: 375px;
+    }
+    .about{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
 }
 
 

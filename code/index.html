@@ -6,111 +6,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500&display=swap');
+      </style>
     <title>Portfolio</title>
 </head>
-
 <body>
 
 <!------- HEADER --------->
 <header class="header">
-        <div class="container">
+    <div class="container">
+        <video class="back-video" muted loop autoplay playsinline>
+            <source src="./assets/bgvideo.mp4" type="video/mp4" alt="Background video">
+        </video>
 
-            <div class="hero">
-                <video class="back-video" muted loop autoplay playsinline>
-                    <source src="./assets/showreel.mp4" type="video/mp4">
-                </video>
+    <div class="main" id="main">
+        <div class="content">
+            <h1><span>Jacob Englund</span><br>Web Developer with knowledges in</h1>
+            <div class="animated-text">
+                <h3>Javascript</h3>
+                <h3>HTML</h3>
+                <h3>CSS</h3>
+                <h3>React</h3>      
             </div>
-<!------- Content over video --------->
-        <div class="header-text-group">
-
-            <section class="coming-soon">
-
-                
-                <div>
-
-                <div class ="countdown">
-                    <div class="container-day">
-                        <h3 class="day" id="day">Time</h3>
-                        <p>Days</p>
-                    </div>  
-                    <div class="container-hour">
-                        <h3 class="hour">Time</h3>
-                        <p>Hours</p>
-                    </div>
-                    <div class="container-minute">
-                        <h3 class="minute">Time</h3>
-                        <p>Minutes</p>
-                    </div>
-                    <div class="container-second">
-                        <h3 class="second">Time</h3>
-                        <p>Seconds</p>
-                    </div>
-
-                </div>
-                </div>
-            </section>
-        </div>    
+            <a href="#" class="btn ">Projects</a>
+            <a href="#" class="btn ">Resume</a>
+            <a href="#" class="btn ">About</a>
+            <div class="media-icons"> 
+                <a href="#"><img src="assets/linkedin.png"></a> 
+                <a href="#"><img src="assets/github.png"></a>
+                <a href="#"><img src="assets/stackoverflow.png"></a>  
+            </div>
+        </div>
     </div>
 </header>
-   
-<!------- SECTION 1 --------->
+
+<!------- SECTION 1 - ABOUT --------->
+
 <section class="section">
-        <div class="container">
+    <article class="about">
+        <div>
+        <img src="assets/profil.png" alt="Profile picture">
+    </div>
+           <div class="about-text">
+               <h2>About me</h2>
+               <h5>Web Developer</h5>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quibusdam numquam accusantium consequatur nobis ipsum aliquam dicta tenetur cum. 
+               </p>
+            <button class="btn" href="#">Let's get in touch</a>
+        </div> 
+    </article>
+</section>
+
+<!------- SECTION 2 - PROJECTS --------->
+
+<section class="section">
+    <article class="projects" id="projects">
+
+    <div class="box">
+        <div class="card">     
+                <h2>News Site</h2>
+                <div class="project-description">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Quibusdam numquam accusantium consequatur nobis ipsum aliquam dicta tenetur cum. 
+                </p>
+                <p style="text-align: center;">
+                <button class="btn" a href="#">Read more</a>
+            </p> 
+            </div>
+            </div>
         </div>
 
-    <section class="section">
+        <div class="box">
+            <div class="card">     
+                    <h2>Business Site</h2>
+                    <div class="project-description">
+                    <p>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Quibusdam numquam accusantium consequatur nobis ipsum aliquam dicta tenetur cum. 
+                    </p>
+                    <p style="text-align: center;">
+                    <button class="btn" a href="#">Read more</a>
+                </p> 
+                </div>
+                </div>
+            </div>
 
-        <div class="container">
-
-            <div class="button-box">
-                <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="cv()">CV</button>
-                <button type="button" class="toggle-btn" onclick="portfolio()">Portfolio</button>
+            <div class="box">
+                <div class="card">     
+                        <h2>Chatbot</h2>
+                        <div class="project-description">
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                           Quibusdam numquam accusantium consequatur nobis ipsum aliquam dicta tenetur cum. 
+                        </p>
+                        <p style="text-align: center;">
+                        <button class="btn" a href="#">Read more</a>
+                    </p> 
+                    </div>
+                    </div>
                 </div>
 
-                <!------- Login form --------->
+                <div class="box">
+                    <div class="card">     
+                            <h2>Guess Who</h2>
+                            <div class="project-description">
+                            <p>
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                               Quibusdam numquam accusantium consequatur nobis ipsum aliquam dicta tenetur cum. 
+                            </p>
+                            <p style="text-align: center;">
+                            <button class="btn" a href="#">Read more</a>
+                        </p> 
+                        </div>
+                        </div>
+                    </div>
 
-        <form id="cv" class="input-group">
-        
-        </form>
+                    <div class="box">
+                        <div class="card">     
+                                <h2>Weather App</h2>
+                                <div class="project-description">
+                                <p>
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                   Quibusdam numquam accusantium consequatur nobis ipsum aliquam dicta tenetur cum. 
+                                </p>
+                                <p style="text-align: center;">
+                                <button class="btn" a href="#">Read more</a>
+                            </p> 
+                            </div>
+                            </div>
+                        </div>
 
-<!------- Register form --------->
-        <form id="portfolio" class="input-group">
-       
-        </form>
-      </div>
-    
-    </div>
-  </div>
+                        <div class="box">
+                            <div class="card">     
+                                    <h2>GitHub Tracker</h2>
+                                    <div class="project-description">
+                                    <p>
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                       Quibusdam numquam accusantium consequatur nobis ipsum aliquam dicta tenetur cum. 
+                                    </p>
+                                    <p style="text-align: center;">
+                                    <button class="btn" a href="#">Read more</a>
+                                </p> 
+                                </div>
+                                </div>
+                            </div>
 
-            <article class="project">
-               <div class="project-image-group">
-                <img class="project-image" src="" alt=""/>
-                <div class="project-overlay"></div>
-               </div>
-               <div class="project-text-group">
-                   <h2 class="project-heading">Portfolio</h2>
-                   <div>
-                       <span class="project-date">2020</span>
-                       <h3 class="project-type">Dashboard</h3>
-                   </div>
-                   <p class="project description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Quibusdam numquam accusantium consequatur nobis ipsum aliquam dicta tenetur cum. 
-                      Placeat labore alias odio atque doloribus commodi, ab id consequuntur ut perferendis. 
-                   </p>
-               </div> 
-            </article>
+    </article>
 </section>
 
-
-<!------- SECTION 2 --------->
-</section>
-    
-    <footer>
-        <div class="container">FOOTER</div>
-    </footer>
-    
 <script src= "./script.js"></script>   
     
 </body>
