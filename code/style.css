@@ -1,8 +1,9 @@
 :root {
     --color-dark-brick: hsl(14.3, 45.4%, 51.2%);
     --color-dark-grey: hsl(0 , 0%, 33.7%);
-    --color-light-beige: hsl(40, 60%, 96.1%);
     --color-dark-yellow: hsl(50,60%,66.7%);
+    --color-light-beige: hsl(40, 60%, 96.1%);
+    --color-light-grey: hsl(0,0%,93.3%);
   }
 
 * {
@@ -93,7 +94,6 @@ h5 span {
 
 
 main {
-    gap: 20px;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -199,6 +199,11 @@ section {
 .other-projects__card--content {
     text-align: left;
 }
+
+.medium__article--link {
+ font-weight: 600;
+}
+
 .medium__card__image img {
     width: 300px;
 }
@@ -235,7 +240,26 @@ section {
 
 .contact__details p {
     margin: 10px;
+    color: white;
+    font-size: 1.2em;
 }
+
+.contact--h4 {
+    color: white;
+    font-size: 1.5em;
+}
+
+.contact__card--brick-color-background {
+    background-color: var(--color-dark-brick);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
 .brick-color {
     color: var(--color-dark-brick);
     margin-bottom: 10px;
@@ -243,6 +267,10 @@ section {
 
 .grey-color {
     color: var(--color-dark-grey);
+}
+
+.light-grey-color {
+    background-color: var(--color-light-grey);
 }
 
 .bolded {
