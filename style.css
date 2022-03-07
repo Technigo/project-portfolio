@@ -14,6 +14,7 @@
     --lightgrey-background: #f4f4f4;
     --primary: #FA382F;
     --lightblue: #add8e6;
+    --pink: #FDDFE7;
     --text-color: #000000;
 }
 
@@ -25,6 +26,22 @@ body {
     font-weight: 400;
 }
 
+article{
+    display: inline-block;
+    width: 100%;
+}
+footer {
+    position: relative;
+    height: 302px;
+    left: 0px;
+    background-color: #072BCE;
+    color: white;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .container {
     position: relative;
     box-sizing: border-box;
@@ -53,7 +70,7 @@ li {
 .tag {
     display: inline-block;
     padding: 5px 10px;
-    background-color: lightgray;
+    background-color: var(--pink); 
 }
 
 .header-with-background {
@@ -109,8 +126,8 @@ li {
 
 .hero-text-box {
     position: absolute;
-    top: 110px;
-    left: 25px;
+    top: 90px;
+    left: 10px;
     width: 60%;
 }
 
@@ -158,14 +175,24 @@ li {
 }
 
 .thoughts-image {
-    width: 50%;
+    width: 100%;
 }
 
 .thoughts-date {
-    color: var(--lightblue);
-    font-size: 20px;
+    font-family: roboto;
+    color: var(--primary);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
     text-align: left;
     padding-left: 10px;
+}
+
+.tech-text {
+    font-family: roboto;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 400;
 }
 
 .image-group {
@@ -187,7 +214,8 @@ li {
 
 .text-group {
     margin-top: 10px;
-    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
 }
 
 .upper-case-text {
@@ -214,6 +242,34 @@ li {
     padding-top: 30px;
 }
 
+.project-name {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    float: left;
+}
+.project-text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    float: left;
+    text-decoration: none;
+    text-align: left;
+}
+.contact-header {
+    font-size: 21px;
+    padding-bottom: 30px;
+    color: var(--white);
+}
+
+.contact-text{
+    font-size: 17px;
+    line-height: 25px;
+    color: var(--white);
+}
+
 .info-icon {
     width: 64px;
 }
@@ -228,6 +284,7 @@ li {
 .red-text {
     color:var(--primary)
 }
+
 
 
 @media screen and (min-width: 768px) {
@@ -282,15 +339,53 @@ li {
     }
 
     .thoughts-date {
-        font-size: 25px;
+        font-size: 30px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 41px;
     }
+    
+    .tech-text {
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 41px;
+    }
+
     .tag {
-        font-size: 18px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
     }
     .skills-container {
         grid-template-columns: 1fr 1fr;
     }
-
+    .project-name {
+        font-size: 25px;
+        line-height: 33px;
+        text-decoration: underline;
+    }
+    .project-text {
+        font-size: 25px;
+        line-height: 33px;
+        text-decoration: underline;
+    }
+    .text-underline-none {
+        text-decoration: none;
+    }
+    .contact-header{
+        font-size: 38px;
+        line-height: 47px;
+    }
+    .contact-text{
+        font-size: 22px;
+        line-height: 37px;
+    }
+    footer{
+        height: 570px;
+    }
 }
 @media screen and (min-width:1200px) {
     .container {
@@ -307,9 +402,6 @@ li {
         height: 70px;
     }
 
-    .tag {
-        font-size: 23px;
-    }
     .thoughts-date {
         font-size: 30px;
     }
@@ -324,12 +416,5 @@ li {
     background-color: var(--white);
 }
 
-footer {
-    position: relative;
-    height: 50px;
-    left: 0px;
-    background-color: #072BCE;
-    color: white;
-    font-family: 'Montserrat';
-}
+
 
