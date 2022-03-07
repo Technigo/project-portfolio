@@ -1,4 +1,11 @@
 :root {
+  --clr-dark: #223b40;
+  --clr-medium: #509b8a;
+  --clr-light: #8baaab;
+  --clr-grey: #f4f4f4;
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-accent: #f8c051;
 }
 
 html {
@@ -15,11 +22,23 @@ body {
   position: absolute;
   top: 48px;
   right: 24.5px;
+  display: grid;
+  justify-items: center;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social-icon {
+  width: 60px;
+}
+
+.social-link {
+  display: inline-block;
 }
 
 /* Header  */
 header {
-  background-image: url(./images/sky-header.jpg);
+  background-image: url(./images/emerold-backround.png);
   height: 520px;
   background-position-x: 20%;
   position: relative;
@@ -47,7 +66,7 @@ header {
   position: absolute;
   top: 356px;
   right: 24px;
-  border: 3px solid #fff;
+  border: 3px solid var(--clr-white);
 }
 
 .header-text-group {
@@ -64,7 +83,7 @@ header {
 /*All the text styling*/
 h1 {
   margin: 0;
-  color: #fff;
+  color: var(--clr-white);
   font-family: "Roboto", sans-serif;
 }
 
@@ -91,39 +110,39 @@ h1.title {
 
 p {
   margin: 3px;
-  line-height: 28px;
+  line-height: 1.7em;
   font-size: 17px;
 }
 
 h3.description {
   font-size: 22px;
   align-self: center;
-  color: #fff;
-  background-color: #ff0000;
+  color: var(--clr-white);
+  background-color: var(--clr-light);
   padding: 5px;
 }
 
 /*with out backround color */
 h4.text-type {
   font-family: "Roboto", sans-serif;
-  color: #ff0000;
+  color: var(--clr-dark);
   margin: 10px 0;
 }
 
 h3.description-two {
   font-size: 22px;
   align-self: center;
-  color: #ff0000;
+  color: var(--clr-light);
 }
 
 /*Sections*/
 .section:nth-child(2n) {
-  background-color: #f4f4f4;
+  background-color: var(--clr-grey);
   /* background-color: rgb(234, 227, 219); */
 }
 
 .section:nth-child(2n + 1) {
-  background-color: #fff;
+  background-color: var(--clr-white);
 }
 
 /*All sections*/
@@ -208,7 +227,7 @@ article.project {
   left: 0;
   right: 0;
   z-index: 2;
-  color: #fff;
+  color: var(--clr-white);
   font-size: 2em;
 }
 
@@ -257,7 +276,7 @@ h4.thoughts-title {
 } */
 
 .project-date {
-  color: #ff0000;
+  color: var(--clr-medium);
   font-size: 17px;
   font-weight: 400;
   margin: 14px 0;
@@ -268,12 +287,12 @@ h4.thoughts-title {
 }
 
 .date-text {
-  color: #000;
+  color: var(--clr-black);
   text-decoration-line: underline;
 }
 
 .arrow {
-  color: #ff0000;
+  color: var(--clr-medium);
   font-weight: 400;
 }
 
@@ -296,6 +315,7 @@ h4.thoughts-title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem 0 2rem;
 }
 
 .social-two {
@@ -307,27 +327,41 @@ h4.thoughts-title {
 }
 
 footer {
-  background-color: #072bce;
+  background-color: var(--clr-dark);
 }
 
 .contact-text-group {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 
 .contact {
   text-transform: uppercase;
   align-self: center;
-  color: #fff;
+  color: var(--clr-white);
 }
 
 p.contact-description {
-  color: #fff;
+  color: var(--clr-white);
   text-align: center;
 }
 
 .hidden {
   display: none;
+}
+
+.tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: var(--clr-accent);
+  padding: 3px;
+  margin: 5px;
+  font-size: 16px;
+  font-family: "Roboto";
 }
 
 @media (min-width: 770px) {
@@ -340,8 +374,12 @@ p.contact-description {
   }
 
   article.summary-section {
-    padding: 3rem 6rem;
+    padding: 2rem 2rem;
     text-align: center;
+  }
+
+  article.tech-section {
+    padding: 1rem 6rem 2rem;
   }
 
   .project-container {
@@ -350,7 +388,7 @@ p.contact-description {
 
   article.project,
   article.my-thoughts {
-    max-width: 550px;
+    max-width: 400px;
   }
 
   .header-container {
@@ -368,7 +406,7 @@ p.contact-description {
   }
 
   .social-icon {
-    width: 60px;
+    width: 80px;
   }
 
   h1.title {
