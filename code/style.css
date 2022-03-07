@@ -62,6 +62,7 @@ h4 {
   background-position: center;
   background-size: cover;
   border-bottom: solid 10px yellow;
+  
 }
 .profile-container {
   position: absolute;
@@ -70,7 +71,8 @@ h4 {
   right: 10%;
   height: 500px;
   display: flex;
-  
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .nav-container{
@@ -106,7 +108,7 @@ h4 {
   object-fit: cover;
   background-position: center right;
   background-size: cover;
-  border: solid 5px #FB33DB;
+  border: solid 5px yellow;
   border-radius: 50%;
   z-index: 3;
 }
@@ -183,14 +185,22 @@ h4 {
   color: black;
   cursor: pointer;
 }
-.card-project, .other-card-project{
+.card-project {
   margin: 40px auto;
   padding: 30px;
   justify-items: center;
   background-color: whitesmoke;
   width: 100%;
+  
 }
-
+.other-card-project {
+  margin: 30px auto;
+  padding: 10px;
+  justify-items: center;
+  background-color: whitesmoke;
+  width: 100%;
+  
+}
 .card-project h4{
 margin: 10px 0;
 }
@@ -204,7 +214,7 @@ line-height: 1.25;
 }
 
 .other-card-project p {
-  margin: 10px 0;
+margin: 10px 0;
 font-size: 1.25rem;
 line-height: 1.25;
 }
@@ -323,28 +333,57 @@ margin-bottom: 30px;
 
 .contact-container h4{
   font-size: 2.5rem;
-  
+
 }
-.list {
-  width: 33%;
-}
-.skills-list-wrapper{
-  display: flex;
-  flex-direction: row;
+.card-project, .other-card-project{
+  width: 100%;
 }
 
+.project-container, .other-project-container{
+  display: flex;
+  flex-direction: column;
+}
+}
 @media (min-width: 950px) {
 
-  .code-skills {
+  .skills-list-wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .text-1{
+    width: 400px;
+    font-weight: 700;
+    font-size: 80px;
+    font: 80px;
+    line-height: 80px;
+  }
+  
+  .text-2{
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 32px;
+  }
 
+  .profile-img-container{
+    height: 220px;
+    width: 220px;
+  }
+
+  .social-top{
+    font-size: 3.5rem;
+  }
+  .code-skills {
     padding: 30px 0
   }
   .tech-skills-wrapper p{
     padding: 0 20px;
   }
-  
+  .list {
+    width: 30%;
+  }
     
-}
+
 .project-container, .other-project-container{
   display: flex;
   flex-wrap: wrap;
@@ -353,6 +392,11 @@ margin-bottom: 30px;
 
 .card-project, .other-card-project{
   width: 40%;
+}
+
+ul {
+  font-size: 1.75rem;
+  margin-block-start: 1em;
 }
 
 }
