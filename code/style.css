@@ -36,18 +36,12 @@ body {
   display: inline-block;
 }
 
-/* Header  */
 header {
   background-image: url(./images/emerold-backround.png);
   height: 520px;
   background-position-x: 20%;
   position: relative;
-  /* background-repeat: no-repeat; */
 }
-
-/* section {
-  margin: 0 24px;
-} */
 
 .header-container {
   width: 375px;
@@ -80,7 +74,10 @@ header {
   text-transform: uppercase;
 }
 
-/*All the text styling*/
+.bold {
+  font-weight: 700;
+}
+
 h1 {
   margin: 0;
   color: var(--clr-white);
@@ -104,16 +101,6 @@ h1.title {
   line-height: 18px;
 }
 
-.bold {
-  font-weight: 700;
-}
-
-p {
-  margin: 3px;
-  line-height: 1.7em;
-  font-size: 17px;
-}
-
 h3.description {
   font-size: 22px;
   align-self: center;
@@ -122,7 +109,6 @@ h3.description {
   padding: 5px;
 }
 
-/*with out backround color */
 h4.text-type {
   font-family: "Roboto", sans-serif;
   color: var(--clr-dark);
@@ -135,6 +121,12 @@ h3.description-two {
   color: var(--clr-light);
 }
 
+p {
+  margin: 3px;
+  line-height: 1.7em;
+  font-size: 17px;
+}
+
 /*Sections*/
 .section:nth-child(2n) {
   background-color: var(--clr-grey);
@@ -145,7 +137,6 @@ h3.description-two {
   background-color: var(--clr-white);
 }
 
-/*All sections*/
 .container {
   padding: 16px 24px;
   display: flex;
@@ -153,7 +144,7 @@ h3.description-two {
   justify-content: center;
 }
 
-/*box 1*/
+/*---------------------------------------Box 1-------------------------------*/
 article.summary-section {
   padding: 2rem 0;
 }
@@ -165,7 +156,7 @@ article.summary-section {
   top: 579px;
 }
 
-/*Box 2*/
+/*---------------------------------------Box 2-------------------------------*/
 article.tech-section {
   padding: 1rem 0 2rem;
 }
@@ -176,7 +167,7 @@ article.tech-section {
   text-align: center;
 }
 
-/*Box 3*/
+/*---------------------------------------Box 3-------------------------------*/
 
 .project-container {
   display: grid;
@@ -198,6 +189,19 @@ article.project {
 .project-image-group {
   position: relative;
   text-align: center;
+}
+
+.tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: var(--clr-accent);
+  padding: 3px;
+  margin: 5px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 .project-overlay {
@@ -240,7 +244,7 @@ article.project {
   transition: all 0, 45s ease-out;
 }
 
-/*Box 4*/
+/*---------------------------------------Box 4-------------------------------*/
 article.my-thoughts {
   margin: 0.5rem;
   padding: 1rem;
@@ -273,19 +277,11 @@ h4.thoughts-title {
   display: block;
 }
 
-/* .extra {
-  display: none;
-} */
-
 .project-date {
   color: var(--clr-medium);
   font-size: 17px;
   font-weight: 400;
   margin: 14px 0;
-}
-
-.underline {
-  text-decoration-line: underline;
 }
 
 .date-text {
@@ -298,7 +294,7 @@ h4.thoughts-title {
   font-weight: 400;
 }
 
-/*Box 5*/
+/*---------------------------------------Box 5-------------------------------*/
 .skills-text-group {
   padding-bottom: 2rem;
   display: grid;
@@ -312,7 +308,7 @@ h4.thoughts-title {
   align-items: center;
 }
 
-/*Box 6*/
+/*---------------------------------------Box 6-------------------------------*/
 .for-more-text-group {
   display: flex;
   flex-direction: column;
@@ -338,6 +334,7 @@ footer {
   padding: 1rem;
 }
 
+/*---------------------------------------Box 6-------------------------------*/
 .contact {
   text-transform: uppercase;
   align-self: center;
@@ -353,44 +350,22 @@ p.contact-description {
   display: none;
 }
 
-.tag-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tag {
-  background: var(--clr-accent);
-  padding: 3px;
-  margin: 5px;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-}
-
+/*---------------------------------------Media queries-------------------------------*/
 @media (min-width: 770px) {
-  .container {
-    align-items: center;
-  }
-
   .hidden {
     display: contents;
   }
 
-  article.summary-section {
-    padding: 2rem 2rem;
-    text-align: center;
+  .container {
+    align-items: center;
   }
 
-  article.tech-section {
-    padding: 1rem 6rem 2rem;
+  .social {
+    right: 100px;
   }
 
-  .project-container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  article.project,
-  article.my-thoughts {
-    max-width: 400px;
+  .social-icon {
+    width: 80px;
   }
 
   .header-container {
@@ -403,12 +378,30 @@ p.contact-description {
     top: 280px;
   }
 
-  .social {
-    right: 100px;
+  article.summary-section {
+    padding: 2rem 2rem;
+    text-align: center;
   }
 
-  .social-icon {
-    width: 80px;
+  article.tech-section {
+    padding: 1rem 6rem 2rem;
+  }
+
+  article.project,
+  article.my-thoughts {
+    max-width: 400px;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-thoughts-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-date {
+    font-size: 22px;
   }
 
   h1.title {
@@ -419,20 +412,12 @@ p.contact-description {
     font-size: 70px;
   }
 
-  .project-date {
-    font-size: 22px;
-  }
-
   p {
     font-size: 20px;
   }
 
   .text-type {
     font-size: 24px;
-  }
-
-  .my-thoughts-container {
-    grid-template-columns: 1fr 1fr;
   }
 
   h3.description,
