@@ -19,6 +19,29 @@
     <header class="header">
       <div class="header-container">
         <!-- <div>Will add icons here</div> -->
+        <div class="header-icons">
+          <a
+            href="#"
+            aria-label="Link to Vanessa`s LinkedIn"
+            target="_blank"
+            title="LinkedIn page"
+            ><img src="/assets/Group 4.png" alt="linkedin"
+          /></a>
+          <a
+            href="#"
+            aria-label="Link to Vanessa`s GitHub"
+            target="_blank"
+            title="GitHub page"
+            ><img src="/assets/Group 5.png" alt="github"
+          /></a>
+          <a
+            href="#"
+            aria-label="Link to Vanessa`s Stack Overflow"
+            target="_blank"
+            title="Stack Overflow page"
+            ><img src="/assets/Group 6.png" alt="stack overflow"
+          /></a>
+        </div>
         <div class="header-img-gr">
           <!-- place the img with position absolute -->
           <img
@@ -34,7 +57,7 @@
             frontend <br />
             developer
           </h1>
-          <h2>+ digital designer</h2>
+          <h2>+ digital analytics</h2>
         </div>
       </div>
     </header>
@@ -55,7 +78,7 @@
         <div class="headlines">
           <h3>TECH</h3>
         </div>
-        <p>
+        <p class="tech-center">
           HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
           Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
           pair-programming, Github.
@@ -68,8 +91,12 @@
           <h3>FEATURED PROJECTS</h3>
         </div>
         <div class="card">
-          <img class="card-img" src="/assets/pizza.png" alt="project-pizza" />
-          <h5>GUESS WHO BUILT IN JAVASCRIPT</h5>
+          <div class="img-overlay">
+            <img class="card-img" src="/assets/pizza.png" alt="project-pizza" />
+            <div class="overlay"></div>
+            <h4 class="overlay-heading">PIZZA BOT</h4>
+          </div>
+          <h5>CHAT BOT BUILT IN JAVASCRIPT</h5>
           <p>
             Responsive web site using HTML, CSS and JavaScript ES6 for pizza
             orders.
@@ -83,7 +110,11 @@
           </div>
         </div>
         <div class="card">
-          <img class="card-img" src="/assets/pizza.png" alt="project-pizza" />
+          <div class="img-overlay">
+            <img class="card-img" src="/assets/pizza.png" alt="project-pizza" />
+            <div class="overlay"></div>
+            <h4 class="overlay-heading">PIZZA BOT</h4>
+          </div>
           <h5>WEATHER APP BUILT IN JAVASCRIPT</h5>
           <p>
             Responsive web site using HTML, CSS and JavaScript ES6 for pizza
@@ -105,7 +136,7 @@
           <h5>CHATBOT</h5>
           <p>
             Responsive web site using HTML, CSS and JavaScript ES6 for pizza
-            orders.
+            orders.<span style="color: red">>></span>
           </p>
           <div class="tags">
             <ul>
@@ -119,7 +150,7 @@
           <h5>GITHUB TRACKER</h5>
           <p>
             Responsive web site using HTML, CSS and JavaScript ES6 for pizza
-            orders.
+            orders.<span style="color: red">>></span>
           </p>
           <div class="tags">
             <ul>
@@ -139,7 +170,7 @@
         </div>
         <img src="/assets/image 6.png" alt="thoughts-picture" />
         <div class="card-thoughts">
-          <p>DEC 2019</p>
+          <p class="date">DEC 2019</p>
           <h5 class="thoughts-txt">
             How to stop being scared: <br />Learning to love code
           </h5>
@@ -148,7 +179,7 @@
             about creativity. It`s similar to creative writing in that the
             author architecting a story must use an assortment of tools and
             components (i.e., content) in a way to satisfy a particular
-            objective. >>
+            objective. <span style="color: red">>></span>
           </p>
         </div>
       </div>
@@ -159,11 +190,30 @@
         <div class="headlines">
           <h4>MORE THOUGHTS</h4>
         </div>
-        <div class="card">
-          <p>5 Apps that will make coding easier >></p>
-          <p>5 Apps that will make coding easier >></p>
-          <p>5 Apps that will make coding easier >></p>
+        <div class="more-thoughts-gr">
+          <p class="more-thoughts-txt">
+            <span style="color: red">SEP 2019.</span>
+            <a class="thoughts-link" href="#"
+              >5 Apps that will make coding easier.
+              <span style="color: red">>></span></a
+            >
+          </p>
+          <p class="more-thoughts-txt">
+            <span style="color: red">SEP 2019.</span>
+            <a class="thoughts-link" href="#"
+              >5 Apps that will make coding easier.
+              <span style="color: red">>></span></a
+            >
+          </p>
+          <p class="more-thoughts-txt">
+            <span style="color: red">SEP 2019.</span>
+            <a class="thoughts-link" href="#"
+              >5 Apps that will make coding easier.
+              <span style="color: red">>></span></a
+            >
+          </p>
         </div>
+        <!-- </div> -->
       </div>
     </section>
 
@@ -217,9 +267,16 @@
       </div>
     </section>
     <footer>
-      My info here
-      <!-- a href="tel:0046736246192"
-<a href="mailto:vanessa.hajek.com"> you can write them like this format and it will automatically call and open to write an email if you click on the link -->
+      <div class="container contact">
+        <h2 class="contact-heading">CONTACT</h2>
+        <p>Vanessa Hajek</p>
+        <p>+46 736 24 61 92</p>
+        <p class="mail">
+          <a href="mailto:vanessa.hajek@hotmail.com"
+            >vanessa.hajek@hotmail.com</a
+          >
+        </p>
+      </div>
     </footer>
   </body>
 </html>
