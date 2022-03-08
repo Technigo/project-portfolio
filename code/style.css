@@ -34,6 +34,7 @@ body {
   justify-content: flex-end;
   height: 100%;
   padding-bottom: 44px;
+
   /* box-sizing: border-box; */
 }
 
@@ -48,18 +49,6 @@ body {
   height: 40px;
   width: 40px;
 }
-
-/* .header-links {
-    position: absolute;
-    top: 48px;
-    right: 24.5px;
-    display: flex;
-    gap: 5px;
-}
-
-.header-links img {
-    height: 40px;
-} */
 
 .header-img {
   height: 180px;
@@ -80,8 +69,8 @@ body {
   top: 121px;
   position: absolute;
   margin: 24px;
-  /* padding-bottom: 197px; */
   padding-right: 131px;
+  color: brown;
 }
 
 /* intro section */
@@ -121,6 +110,7 @@ h3 {
   color: white;
   height: 27px;
   font-size: 22px;
+  padding: 0 3px 0 3px;
 }
 
 .tech-center {
@@ -228,6 +218,10 @@ img {
   color: red;
 }
 
+.thoughts-second {
+  display: none;
+}
+
 /* more thoughts */
 .more-thoughts-gr,
 .more-thoughts-txt,
@@ -241,23 +235,25 @@ img {
 }
 
 /* skills */
+
 .skills-head {
   color: red;
 }
 
-.skills-card {
+/* for more */
+.for-more-icons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  margin-bottom: 20px;
+  justify-content: space-evenly;
 }
-/* behöver få de på samma rad */
+
+.for-more-icons img {
+  height: 60px;
+  width: 60px;
+}
 
 /* footer */
 footer {
   background-color: blue;
-  /* padding-bottom: 40px; */
 }
 
 .contact-heading {
@@ -292,8 +288,72 @@ a:hover {
 }
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 1023px) {
+  /* global */
   .container {
-    width: 768px;
+    width: 65vw;
+    margin: 0 auto;
+  }
+
+  /* header */
+  .header {
+    height: 668px;
+  }
+
+  .header-icons {
+    top: 102px;
+    right: 80px;
+  }
+
+  .header-icons img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .header-txt-gr {
+    top: 220px;
+    left: 200px;
+    line-height: 60px;
+    width: 600px;
+  }
+
+  h6 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 63px;
+    line-height: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-top: 0;
+  }
+
+  .header-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* featured projects */
+  .card-group {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 1fr 1fr; */
+    column-gap: 22px;
+  }
+
+  /* my thoughts */
+  .thoughts-second {
+    display: block;
+  }
+
+  .card-thoughts {
   }
 }
