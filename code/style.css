@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+:root {
+  --primary-color: #195cd8;
+  --secondary-color: #c25124;
+  --tertiary-color: rgb(146, 187, 148);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +20,9 @@ h2 {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 25px;
   color: rgb(255, 255, 255);
-  background-color: #195cd8;
+  background-color: var(--primary-color);
   border-radius: 3px;
   display: inline-block;
   margin: 47px 0 20px;
@@ -27,7 +33,7 @@ h3 {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 20px;
-  color: #bd5d37;
+  color: var(--secondary-color);
   text-align: center;
   margin: 40px 0 30px;
 }
@@ -56,7 +62,7 @@ ul {
 
 .header-icons {
   position: absolute;
-  width: 140px;
+  width: 150px;
   left: 220px;
   top: 48px;
   font-size: x-large;
@@ -69,7 +75,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid #195cd8 0, 5px;
+  border: solid var(--primary-color) 0, 5px;
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -77,17 +83,17 @@ ul {
 }
 
 .header-icons .icon-circle:hover {
-  background-color: #bd5d37;
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
 .header-icons a {
-  color: #bd5d37;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
 .header-icons a:visited {
-  color: #bd5d37;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -95,7 +101,7 @@ ul {
   position: absolute;
   left: 24px;
   top: 121px;
-  color: #195cd8;
+  color: var(--primary-color);
 }
 
 .bold {
@@ -134,9 +140,9 @@ ul {
   height: 180px;
   left: 44%;
   top: 350px;
-  border: solid #195cd8 2px;
+  border: solid var(--primary-color) 2px;
   border-radius: 50%;
-  background-color: #195cd8;
+  background-color: var(--primary-color);
 }
 
 .summary-section {
@@ -145,19 +151,18 @@ ul {
   margin-top: -10px;
 }
 
-/** for the little symbol in the summary-section **/
 .line {
   display: inline-block;
   width: 55px;
   height: 3px;
-  background-color: #bd5d37;
+  background-color: var(--tertiary-color);
   border-radius: 15px;
   margin-bottom: 4px;
 }
 
 .circle {
   display: inline-block;
-  background-color: #bd5d37;
+  background-color: var(--tertiary-color);
   width: 11px;
   height: 11px;
   border-radius: 50%;
@@ -182,10 +187,6 @@ ul {
   margin-right: 6px;
 }
 
-.pink-text {
-  color: #ead7c7;
-}
-
 .featured-projects-section {
   background-color: #f4f4f4;
   padding: 0 24px 43px 24px;
@@ -202,18 +203,18 @@ ul {
 
 .tech-tag,
 .tech-tag-github {
-  background-color: #bd5d37;
+  background-color: var(--tertiary-color);
   height: 22px;
   width: fit-content;
-  padding: 0px 10px;
+  padding: 5px 10px;
   font-family: Roboto;
   font-weight: 400;
   font-size: 11px;
-  color: #fff;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 8px 5px 10px 0;
+  margin: 10px 6px 10px 0;
   border-radius: 3px;
 }
 
@@ -225,13 +226,12 @@ ul {
 }
 
 .tech-tag-github {
-  background-color: #86242a;
-  padding: 0px 13px;
+  background-color: var(--primary-color);
   font-size: medium;
 }
 
 .tech-tag-github-link :hover {
-  background-color: #5c181d;
+  background-color: var(--primary-color);
 }
 
 .projects-container {
@@ -241,7 +241,7 @@ ul {
 .projects-img-container {
   position: relative;
   width: 100%;
-  height: 212px;
+  height: 290px;
   overflow: hidden;
 }
 
@@ -250,9 +250,9 @@ ul {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  filter: brightness(40%);
+  filter: brightness(60%);
   transition: transform.5s;
-  border-radius: 8px;
+  border-radius: 7px;
 }
 
 .projects-img:hover {
@@ -279,15 +279,15 @@ a:visited.project {
   color: black;
 }
 
-.my-thoughts-section {
-  padding: 0 24px 33px 24px;
+.other-projects {
+  background-color: white;
 }
 
 .arrows {
   font-family: Roboto;
   font-weight: 700;
   font-size: 17px;
-  color: #86242a;
+  color: var(--primary-color);
   line-height: 29px;
 }
 
@@ -329,23 +329,23 @@ a:visited.project {
 }
 
 .for-more-icons a {
-  color: #86242a;
+  color: var(--tertiary-color);
   text-decoration: none;
 }
 
-.icon-circle-green {
+.icon-circle-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid #86242a 3px;
+  border: solid var(--tertiary-color) 3px;
   border-radius: 50%;
   height: 60px;
   width: 60px;
   transition: background-color 0.4s;
 }
 
-.for-more-icons .icon-circle-green:hover {
-  background-color: #86242a;
+.for-more-icons .icon-circle-bottom:hover {
+  background-color: var(--tertiary-color);
 }
 
 .for-more-icons a:hover {
@@ -353,14 +353,14 @@ a:visited.project {
 }
 
 .for-more-icons:visited {
-  color: #86242a;
+  color: var(--tertiary-color);
 }
 
 .contact-section {
-  background-color: #f4f4f4;
+  background-color: var(--primary-color);
   text-align: center;
-  color: #86242a;
-  padding: 60px 0 84px;
+  color: white;
+  padding: 80px 0 84px;
 }
 
 .contact-header {
@@ -401,7 +401,7 @@ a:visited.project {
   .icon-circle {
     height: 60px;
     width: 60px;
-    border: solid #d5ad6d 2px;
+    border: solid var(--secondary-color) 2px;
   }
 
   .headings {
@@ -463,22 +463,6 @@ a:visited.project {
 
   .img-header {
     font-size: 25px;
-  }
-
-  .my-thoughts-section {
-    padding: 15px 100px 30px 100px;
-  }
-
-  .thoughts-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 60px;
-  }
-
-  .thoughts-container {
-    width: 45%;
   }
 
   .skills-flex {
@@ -558,7 +542,7 @@ a:visited.project {
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1205px) {
   .headings {
     width: 600px;
   }
@@ -576,7 +560,7 @@ a:visited.project {
 
   .projects-flex,
   .other-projects {
-    width: 800px;
+    width: 900px;
     margin: auto;
   }
 
