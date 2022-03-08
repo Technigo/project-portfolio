@@ -2,17 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
-.section {
-    margin: 24px;
+/* .section {
 
-}
+
+} */
 
 .section:nth-child(2n) {
     background-color: #c7b8b0;
@@ -23,59 +25,100 @@ body {
     background-color: whitesmoke;
 
 }
-/*MOBILE FIRST*/
-.container {
-    width: 375px;
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*THIS IS KRISTIINAS STYLING FOR THE HEADER*/
+
+.header{
+    background-image: url(./images/grapeshor.jpg);
+    background-size: cover;
+    height: 520px;
+    
+}
+
+.container{
+    width: 327px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
+.header-container{
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
+.header-text-group{
+    width: 220px;
+    color:#fff;
+    position: absolute;
+    top:120px;
 }
+
+.some-icons-group{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 48px;
+    right:0;
+} 
+
+.some-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.profile-image{
+    width: 180px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -16px;
+    right: 0;
+} 
+
+/*intro section styling*/
+.intro-container{
+    padding: 20px;
+}
+
 /*THIS IS THE STYLING FOR THE HEADER AND ITS COMPONENTS*/
 
-header {
+/* header {
     background-image: url("./images/grapeshor.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 595px;
-    z-index: -1;
+    /* width: 100%; */
+    /* height: 550px;
     overflow: hidden;
 
-} 
-/*WHAT I HAD IN THE HEADER BEFORE*/
-/* header {
-    margin: 0;
-    background-image: url("./images/grapeshor.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 500px;
- 
 } */
 
 /* Header-container*/
-.heading-container {
-    position: absolute;
+/* .header-container {
+    position: relative;
     display: flex;
     justify-content: center;
     margin: 10px auto 5px;
-
+    height: 100%;
   }
 
-.header-name {
+.header-socialmedia {
+    position: absolute;
+    top: 48px;
+    right: 0px;
+    padding: ;
+} */
+
+/* .header-name {
     font-size: 16px;
     color: black;
     text-shadow: 0 0 3px #c7b8b0;
@@ -86,26 +129,33 @@ header {
     text-transform: uppercase;
     top: 130px;
     left: 30px;
-}
-  
-.header-title {
+} */
+
+/* .header-text-group {
+    position: absolute;
+    top: 120px;
+
+
+}  */
+
+/* .header-title {
     position: absolute;
     top: 160px;
     left: 30px;
     font-size: 22px;
     margin: 0;
 }
-  
+
 .header-developer {
     font-size: 36px;
     color: black;
     text-shadow: 0 0 3px#c7b8b0;
     margin: 0;
-    
-}
+
+} */
 
 /*MAKSY DID SOMETHING HERE*/
-.header-icon {
+/* .header-icon {
     color: black;
     width: 2.5em;
     position: relative;
@@ -113,24 +163,25 @@ header {
     top: 50px;
     margin: 5px;
 }
-  
+
 .profile-photo {
     width: 150px;
     border-radius: 50%;
     border: 2px solid #c7b8b0;
     position: absolute;
-    right: 40px;
-    top: 375px;
+    bottom: -14px;
+    right: 0px;
     z-index: 5;
-}
+} */
 
-/*I NEED TO DO SOMETHING HERE BUT NOT SURE WHAT*/
-.header-image-group {
+
+/* .header-image-group {
     width: 100%;
-    position: relative;
-}
-/*THIS IS THE STYLING FOR SECTIONS*/
 
+}  */
+
+
+/*INTRO*/
 .lollipop-image-separator {
     position: absolute;
     width: 98px;
@@ -146,9 +197,9 @@ header {
     left: 410px;
     top: 791px;
     line-height: 50px;
-    padding-left: 24px; 
+    padding-left: 24px;
     padding-right: 24px;
-    padding-top: 49px; 
+    padding-top: 49px;
     padding-bottom: 43px;
     font-family: Montserrat;
     font-style: normal;
@@ -156,13 +207,7 @@ header {
     font-size: 30px;
 }
 
-/* h3 {
-    text-align: center;
-    color: black;
-    font-size: 32px;
-} */
-
-h5 {
+h3 {
     text-align: center;
     color: black;
     font-size: 32px;
@@ -212,15 +257,20 @@ h5 {
 }
 /* FEATURED PROJECTS */
 
+/* h4 {
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+
 .featured-projects-section {
     position: absolute;
     width: 1920px;
     height: 2222px;
     left: 0px;
     top: 1640px;
-
+    padding: 45px 0 0 0;
     background: #F4F4F4;
-
 }
 
 .featured-projects {
@@ -289,8 +339,6 @@ h5 {
     font-weight: bold;
     font-size: 25px;
     line-height: 41px;
-    /* or 164% */
-
     display: flex;
     align-items: center;
     letter-spacing: 0.01em;
@@ -298,7 +346,8 @@ h5 {
     color: #FA382F;
 }
 
-/* .project-text-group {
+/*
+.project-text-group {
 
 } */
 .tag {
@@ -338,6 +387,26 @@ h5 {
 }
 
 /* OTHER PROJECTS */
+.other-projects {
+    position: absolute;
+    width: 622px;
+    height: 47px;
+    left: 636px;
+    top: 3114px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 47px;
+    /* identical to box height, or 124% */
+
+    text-align: center;
+
+    color: #FA382F;
+
+}
+
 .other-projects-section {
     width: 622px;
     height: 47px;
@@ -357,6 +426,18 @@ h5 {
 
 }
 /* MY THOUGHTS ABOut CODE */
+h5 {
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+
+h6 {
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+
 .my-thougths-about-code-head {
     position: absolute;
     width: 766px;
@@ -373,6 +454,11 @@ h5 {
     Letter-spacing: 1%;
 }
 
+.my-thoughts-image {
+    width: 327px;
+    height: 205px;
+}
+
 .my-thoughts-article {
     position: absolute;
     width: 509px;
@@ -386,11 +472,7 @@ h5 {
     font-size: 25px;
     line-height: 41px;
     /* or 164% */
-
-
     color: #FA382F;
-
-
 }
 
 
@@ -401,30 +483,27 @@ h5 {
     height: 47px;
     left: 636px;
     top: 4988px;
-    
+
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
     line-height: 47px;
     /* identical to box height, or 124% */
-    
+
     text-align: center;
 }
 
-.my-thoughts-image {
-    width: 327px;
-    height: 205px;
-}
 
 /*SKILLS SECTION*/
 .skills-section {
+    display: flex;
     position: absolute;
     width: 1920px;
     height: 840px;
     left: 0px;
     top: 5286px;
-
+    justify-content: center;
     background: #F4F4F4;
 }
 
@@ -434,6 +513,7 @@ h5 {
     height: 467px;
     left: 410px;
     top: 5544px;
+    justify-content: center;
 }
 
 /*FOR MORE SECTION*/
@@ -449,22 +529,19 @@ h5 {
     font-weight: normal;
     font-size: 25px;
     line-height: 33px;
-    /* identical to box height, or 132% */
-
-    text-decoration-line: underline;
-
+    justify-content: center;
     color: #FA382F;
 }
 
-
-
 footer {
     /* position: absolute; */
+    padding: 60px 24px 84px 24px;
     width: 1920px;
     height: 570px;
     left: 0px;
     top: 6740px;
     background: #c7b8b0;
+    background-position: 10%;
 }
 
 .contact-details {
@@ -479,5 +556,21 @@ footer {
     font-size: 16px;
     line-height: 47px;
     text-align: center;
-    color: #FFFFFF;
+    color: black;
+    justify-content: center;
+}
+
+/*THIS IS THE MEDIA QUERY FOR TABLET SIZE*/
+@media screen and (min-width: 768px){
+    .container{
+        width: 700px;
+    }
+}
+
+/*THIS IS THE MEDIA QUERY FOR DESKTOP SIZE*/
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+
 }
