@@ -5,47 +5,8 @@ body {
   width: 375px;
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    width:768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-.section:nth-child(2n) {
-  background-color: #F4F4F4;
-}
-.section:nth-child(2n+1) {
-  background-color: lightcyan;
-} 
-.project-heading {
-  font-size: 24px;
-  line-height: 30px;
-  margin: 17px 0;
-}
-.project-image-group {
-  position: relative;
-} 
-.project-overlay {
-  position: absolute;
-  top: 0;
-  right:0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  
-} 
-.project-image {
-  width: 100%;
-  display: inherit;
-  transition: 0.5s, ease;
-  
-}
 
-/* .first-animation, .second-animation, .third-animation{
+.first-animation, .second-animation {
     display: inline;
     color: hotpink;
     font-family: Arial, Helvetica, sans-serif;
@@ -68,11 +29,7 @@ body {
     animation-duration: 3s;
     animation-name: slidein;
 }
-/* .third-animation {
-  animation-duration: 4s;
-  animation-name: fadeInOut;
-} */
-/* @keyframes slidein {
+ @keyframes slidein {
     from{
       margin-left: 300%;
       width: 300%;
@@ -82,8 +39,8 @@ body {
       margin-left: 0;
       width: 100%;
     }
-  } */
-  /* @keyframes fadeInOut {
+  } 
+ @keyframes fadeInOut {
     from{
       margin-right: 300%;
       width: 300%;
@@ -91,11 +48,63 @@ body {
     to{ 
       margin-right: 0;
       width: 100%;
+  } 
+}
+.container {
+  padding: 2%;
+  top: 0; 
 
-    } */
-  /* 
+}
+  .picture {
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 100rem;
+  }
+
+.section:nth-child(2n) {
+  background-color: #F4F4F4;
+}
+.section:nth-child(2n+1) {
+  background-color: lightcyan;
+} 
+.project-heading {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 17px 0;
+}
+.project-image-group {
+  position: relative;
+} 
+/*.project-overlay {
+  position: absolute;
+  top: 0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
   
+}  */
+.project-image {
+  width: 100%;
+  display: inherit;
+  /* transition: 0.5s, ease; */
+}
 
+
+@media screen and (min-width: 768px) {
+  .container {
+    width:768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 
 /* Tablet */
