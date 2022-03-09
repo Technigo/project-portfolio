@@ -1,26 +1,10 @@
 # portfolio
 
-Always use alt attributes on images
-• Avoid "Click here" / "Read more" texts (describe instead)
-• Off-screen elements
-aria-live="polite" (to tell when something has change on the page)
-
-• Color and contrasts
-• Touch areas and size
-• Typography and text size (not smaller then 16px)
-• Let user's know that content has been changed
-• Semantic (h1-h6, button, etc)
-
-look at 'lighthouse' in the inspector for accessibility
-https://wave.webaim.org/
-ESLint-plugin-React
-
 THIS TEXT WILL BE DELETED AFTER THE REVIEW, IT'S JUST TO CLARIFY!
-The errors I get from validator.w3.org are not accurate. the div from line 69 has its opening in line 61.
-article with class tech-section has its closing tag in line 70.
-The empty links I added for screen reading and will be filed when I start adding my content later on.
+The errors I get from validator.w3.org are not accurate. the div from line 69 has its opening in line 60.
+article with class tech-section has its opening tag in 61 and closing tag in line 70.
 
-### **🔵 Blue Level (Minimum Requirements)**
+This week's project was to build a portfolio that we are going to use in the future to apply for jobs! The requirements are:
 
 - The page should be built with HTML and CSS (JS if needed)
 - You should use CSS Grid or Flexbox for layout
@@ -29,4 +13,15 @@ The empty links I added for screen reading and will be filed when I start adding
 - The page should work well for people that use screen readers and keyboard navigation.
 - The HTML code should validate in a validation tool.
 
-This weeks project was to buiel a portfolio that we are going to use in the future to applay for jobs!
+The challenge this week has also been to copy the figma file design we got as close as possible but with our own touch to it.
+https://www.figma.com/file/lORDsFWR32UA6HKdNzqF2w/Portfolio---Technigo-Bootcamp?node-id=5%3A2
+
+It has been fun to do a deep dive in HTML and CSS and I have really enjoyed working with the portfolio,
+following a design, perfecting everything, making sure that it looks good in different browsers,
+and learning more about how to build up your code in a more convenient way.
+
+The most challenging part of this week has been the accessibility and learning more about how to build your
+code and add or remove things to make it accessible for as many people as possible. I think this is a very important
+topic and I'll recuse more about it and implant it more in my code in the future!
+
+Here is the link to my deployed project https://mimmis-portfolio.netlify.app/
