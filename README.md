@@ -4,6 +4,8 @@ THIS TEXT WILL BE DELETED AFTER THE REVIEW, IT'S JUST TO CLARIFY!
 The errors I get from validator.w3.org are not accurate. the div from line 69 has its opening in line 60.
 article with class tech-section has its opening tag in 61 and closing tag in line 70.
 
+---
+
 This week's project was to build a portfolio that we are going to use in the future to apply for jobs! The requirements are:
 
 - The page should be built with HTML and CSS (JS if needed)
