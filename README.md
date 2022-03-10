@@ -1,7 +1,7 @@
 Project portfolio
 ### **Blue Level (Minimum Requirements)**
 
-- The page should be built with HTML and CSS (JS if needed)
+- The page should be built with HTML and CSS (JS if needed) 
 - You should use CSS Grid or Flexbox for layout
 - The page should be fully responsive (mobile, tablet and desktop)
 - The page should look and function the same on Chrome, Firefox, and Edge.

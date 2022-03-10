@@ -15,68 +15,7 @@
 </head>
 <body>
 
-   <!--THIS IS THE HEADER-->
-    <!-- <header class="header">
-        <div class="header-image-group">
-        </div>
-        <div class="header-text-group">
-        </div>
-        <h1 class="header-name">PORTFOLIO MARIANNE ARDIN</h1>
-    <div class="header-title">
-        <h2 class="header-developer">Frontend develper</h2>
-    </div>
-
-    <div class="header-socialmedia">
-        <a href="https://www.linkedin.com/in/marianneardin/" target="_blank"
-          ><img class="header-icon" src="./images/Li.png" alt="linkedin icon"
-        /></a>
-        <a href="https://github.com/MarianneArdin" target="_blank"
-          ><img class="header-icon" src="./images/GH.png" alt="github icon"
-        /></a>
-        <a href="https://stackoverflow.com/c/technigo/users/295" target="_blank"
-          ><img
-            class="header-icon"
-            src="./images/SO.png"
-            alt="stack overflow icon"
-        /></a>
-      </div>
-      <img
-        class="profile-photo"
-        src="./images/Marianneprofilbild.jpeg"
-        alt="photo of Marianne"
-      />
-    </header> -->
-
-    <!-- <header>
-        <div class="header-container">
-          <div class="header-image-group">
-            <img
-            class="profile-photo"
-            src="./images/Marianneprofilbild.jpeg"
-            alt="photo of Marianne"
-          />
-          <div class="header-socialmedia">
-            <a href="https://www.linkedin.com/in/marianneardin/" target="_blank"
-              ><img class="header-icon" src="./images/Li.png" alt="linkedin icon"
-            /></a>
-            <a href="https://github.com/MarianneArdin" target="_blank"
-              ><img class="header-icon" src="./images/GH.png" alt="github icon"
-            /></a>
-            <a href="https://stackoverflow.com/c/technigo/users/295" target="_blank"
-              ><img
-                class="header-icon"
-                src="./images/SO.png"
-                alt="stack overflow icon"
-            /></a>
-          </div>
-          </div>
-          <div class="header-text-group">
-            <p>PORTFOLIO MARIANNE ARDIN</p>
-            <h1>Frontend develper</h1>
-          </div>
-        </div>
-    </header> -->
-
+<!--HEADER-->
     <header class = "header">
       <div  class="container header-container">
         <div tabindex="0" class ="header-text-group">
@@ -109,35 +48,30 @@
             <p><img src="./images/start-figure-black.png" alt="lollipop image separator">
             Hi! I'm an aspiring Frontend developer with International experience from the Wine and tourism industries. I’m based in Gotland, Sweden but would love to work remotely.
          </p>
-        
         </div>
     </section>
 
 
     <!--TECH SECTION-->
     <section class="section">
-         <div class="container">
-            <article class="tech-section">
-                <h3 class="title-tech">TECH</h3>
+         <div class="container tech-container">
+           <h3 class="title-tech">TECH</h3>
                 <p>
                     JavaScript (ES6), HTML, CSS, APIs and HTTP requests,
                     React, Flexbox, GitHub
                     Redux for global state management,
                     Backend programming with Node.js, Mob-programming, Pair-programming
                 </p>
-            </article>
          </div>
     </section>
 
-    <!--FEATURED PROJECTS-->
-    <section class="section">
-         <div class="container">
-            <article class="featured-projects-section">
-                <h4 class="featured-projects">FEATURED PROJECTS</h4>
-
-    <!--PROJECT WEATHER APP SHOULD DIV CLASS BE CONTAINER OR PROJECT??-->
+    <!--FEATURED PROJECTS-->        
     <section class="section">
       <div class="container">
+        <h3 class="featured-projects">FEATURED PROJECTS</h3>
+        <div class="projects-container">
+        <article class="project">
+          <div class="project-image-group">
         <img class="project-image" src="./images/project-weather-app.png" alt="design screenshot">
                 <div class="project-overlay"></div>
             </div>
@@ -145,17 +79,18 @@
                 <h4 class="project-heading">PROJECT WEATHER APP</h4>
                 <p class="project-description">Web application built in JavaScript with external API.
                 </p>
-                <div class="tags">
-                <p class="tag">HTML5</p>
-                <p class="tag">CSS3</p>
-                <p class="tag">JavaScript ES6</p>
-                <p class="tag">APIs</p>
+                <div class="tag-wrapper" tabindex="0">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript ES6</span>
+                <span class="tag">APIs</span>
             </div>
         </div>
+      </article>
 
     <!--PROJECT FLOWER DELIVERY BOT-->
-    <section class="section">
-      <div class="container">
+    <article class="project">
+      <div class="project-image-group">
         <img class="project-image" src="./images/project-chat-bot.png " alt="design screenshot">
                 <div class="project-overlay"></div>
             </div>
@@ -163,16 +98,17 @@
                 <h4 class="project-heading">PROJECT FLOWER DELIVERY BOT</h4>
                 <p class="project-description">Responsive web site using HTML, CSS and JavaScript for ordering flowers.
                 </p>
-                <div class="tags">
-                <p class="tag">HTML5</p>
-                <p class="tag">CSS3</p>
-                <p class="tag">JavaScript ES6</p>
+                <div class="tag-wrapper" tabindex="0">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript ES6</span>
             </div>
         </div>
+      </article>
 
     <!--PROJECT GITHUB TRACKER-->
-    <section class="section">
-      <div class="container">
+    <article class="project">
+      <div class="project-image-group">
         <img class="project-image" src="./images/project-github-tracker.png " alt="design screenshot">
                 <div class="project-overlay"></div>
             </div>
@@ -180,31 +116,32 @@
                 <h4 class="project-heading">PROJECT GITHUB TRACKER</h4>
                 <p class="project-description">A tracker of my GitHub repositories, fetching data from API's.
                 </p>
-                <div class="tags">
-                <p class="tag">HTML5</p>
-                <p class="tag">CSS3</p>
-                <p class="tag">JavaScript ES6</p>
-                <p class="tag">APIs</p>
+                <div class="tag-wrapper" tabindex="0">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript ES6</span>
+                  <span class="tag">APIs</span>
             </div>
         </div>
+</article>
 
     <!--PROJECT BUSINESS SITE-->
-    <section class="section">
-      <div class="container">
+    <article class="project">
+      <div class="project-image-group">
         <img class="project-image" src="./images/project-bus-site.png" alt="design screenshot">
                 <div class="project-overlay"></div>
             </div>
             <div class="project-text-group"></div>
                 <h4 class="project-heading">PROJECT BUSINESS SITE</h4>
                 <p class="project-description">A business site using HTML, CSS and JavaScript with a video Hero.
-                <div class="tags">
-                <p class="tag">HTML5</p>
-                <p class="tag">CSS3</p>
-                <p class="tag">JavaScript ES6</p>
+                  <div class="tag-wrapper" tabindex="0">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript ES6</span>
             </div>
-         </article>
         </div>
     </section>
+  </article>
 
     <!--OTHER PROJECTS FYLL PÅ MED LÄNKAR-->
     <section class="section">
