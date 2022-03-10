@@ -1,4 +1,5 @@
 const projectsContainer = document.getElementById("projectsContainer");
+const articlesContainer = document.getElementById("articlesContainer");
 const otherContainer = document.getElementById("otherContainer");
 
 const projects = [
@@ -59,6 +60,30 @@ const otherProjects = [
   },
 ];
 
+const articles = [
+  {
+    image: "img/code-article.webp",
+    title: "Is programming right for me?",
+    link: "https://medium.com/@darya.lapata/is-programming-right-for-me-d17678c198f7",
+    description:
+      "During a career change, you may come across some thoughts and questions. Is it for me? Am I smart enough for this? Will I ever understand the code?",
+  },
+  {
+    image: "img/my-top-5.jpeg",
+    title: "My top 5 resources to learn how to code",
+    link: "https://medium.com/@darya.lapata/is-programming-right-for-me-d17678c198f7",
+    description:
+      "In this article, I wanted to share my top 5 resources to learn how to code.",
+  },
+  {
+    image: "img/third-article.jpg",
+    title: "Think like a programmer",
+    link: "https://medium.com/@darya.lapata/think-like-a-programmer-4f47aed41433",
+    description:
+      "Recently I was thinking about what does it mean to be a programmer. After some googling I found a ton of interesting articles and created an image that explains it so clearly...",
+  },
+];
+
 projects.forEach((item) => {
   projectsContainer.innerHTML += `
   <a
@@ -104,6 +129,31 @@ otherProjects.forEach((item) => {
   </div>
   <div class="tags-container">
   ${item.tags.map((tag) => `<span class="tags">${tag}</span>`).join("")}
+  </div>
+</a>
+  `;
+});
+
+articles.forEach((item) => {
+  articlesContainer.innerHTML += `
+  <a
+  class="card"
+  href=${item.link}
+  rel="noopener"
+>
+  <div class="image-container">
+    <img
+      class="image"
+      src=${item.image}
+      alt="code-article"
+    />
+  </div>
+  <div class="card-text">
+    <h2>${item.title}</h2>
+    <p>
+    ${item.description}
+      <span class="arrow-link">>></span>
+    </p>
   </div>
 </a>
   `;
