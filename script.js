@@ -73,7 +73,7 @@ const articles = [
     title: "My top 5 resources to learn how to code",
     link: "https://medium.com/@darya.lapata/is-programming-right-for-me-d17678c198f7",
     description:
-      "In this article, I wanted to share my top 5 resources to learn how to code.",
+      "In this article, I wanted to share my top 5 resources to learn how to code...",
   },
   {
     image: "img/third-article.jpg",
