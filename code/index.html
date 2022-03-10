@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/13cae04d6f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media-query.css">
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Suki's Portfolio ✨</title>
     <meta property="og:title" content="Suki Nhung Phan's Portfolio ">
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="">
+    <meta property="og:image" content="http://127.0.0.1:5500/code/img/author-avatar.png">
     <meta property="og:url" content="http://suki.nhungphan.com">
 
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="Suki Nhung Phan's Portfolio ">
     <meta name="twitter:description" content="Visit Suki's portfolio to see all projects">
-    <meta name="twitter:image" content="https://postimg.cc/Bjzq1y9x">
+    <meta name="twitter:image" content="http://127.0.0.1:5500/code/img/author-avatar.png">
     <meta name="twitter:url" content="https://sukinhungphan.netlify.app">
     </head>
 <body>
@@ -37,7 +40,7 @@
             <!---------------------------------->
             <div class="header-text display-flex">
                 <h1 class="header-portfolio-owner upper-case"> <span>Portfolio</span> Suki Nhung Phan </h1>
-                <p class="author-title" aria-label="author's job title">Frontend Developer <span>+ visual designer</span></p>
+                <p class="author-title">Frontend Developer <span>+ visual designer</span></p>
             </div>
             <img src="img/author-avatar.png" class="header-img" alt="author's avatar"/>
             <!---------------------------------->
@@ -48,9 +51,9 @@
     <section class="section">
         <div class=" intro-section container">  
             <!---------------------------------->
-            <p class="text-styling" aria-label="introduction"> 
-                <span class="line-symbol"></span>
-                <span class="dot-symbol"></span>
+            <p class="text-styling"> 
+                <span aria-hidden="true" class="line-symbol"></span>
+                <span aria-hidden="true" class="dot-symbol"></span>
                 Hello! I’m a creative & multi-skill front end developer with UX/UI design skills and 2 years of experience 
                 in graphic design & animation. With a passion for problem solving and background in design, I help companies 
                 to turn bright ideas into beautiful, useful, and delightful digital product which everyone can use.
@@ -66,7 +69,7 @@
                 <!---------------------------------->
                 <h2 class="tech-skill-heading">Tech</h2>
                 <p class="text-styling title">
-                    HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, 
+                    HTML, CSS, Flexbox, <span class="highlight">JavaScript</span>, ES6, JSX, <span class="highlight">React, React Hooks, Redux,</span>
                     Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github. 
                 </p>
                 <!---------------------------------->
@@ -91,7 +94,11 @@
                         <div class="projects-text display-flex">
 
                             <h3><a class="project-name text-styling title" href="https://github.com/sukiphan97/project-guess-who">Guess Who Game With JavaScript</a></h3>
-                            <p class="project-description text-styling sub-title">Responsive digital board game using HTML, CSS and JavaScript ES6 <a href="https://github.com/sukiphan97/project-guess-who" aria-label="Visit Guess Who Game project">>></a></p>
+                          
+                            <p class="project-description text-styling sub-title">
+                                Responsive digital board game using HTML, CSS and JavaScript ES6 
+                                <a class="link" href="https://github.com/sukiphan97/project-guess-who" aria-label="Visit Guess Who Game project">>></a></p>
+
                             <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                 <li class="project-language-list">HTML</li>
                                 <li class="project-language-list">CSS3</li>
@@ -103,13 +110,17 @@
         
                     <!------------- PROJECT 2 ------------->
                     <article aria-label="project github tracker" class="projects-article">
-                        <a class="img-link" href="https://github.com/sukiphan97/project-github-tracker"><img src="img/project-github.png" class="project-img" alt="Image of project Githhub Tracker on desktop and mobile versions">
+                        <a class="img-link" href="https://github.com/sukiphan97/project-github-tracker">
+                            <img src="img/project-github.png" class="project-img" alt="Image of project Githhub Tracker on desktop and mobile versions">
                         </a>
 
                         <div class="projects-text display-flex">
 
                             <h3><a aria-label="Visit Github tracker project" class="project-name text-styling title" href="https://github.com/sukiphan97/project-github-tracker">GitHub Tracker With APIs</a></h3>
-                            <p class="project-description text-styling sub-title">Responsive Github Tracker site using API and JavaScript <a href="https://github.com/sukiphan97/project-github-tracker" aria-label="Visit Github Tracker project"> >></a></p>
+                            <p class="project-description text-styling sub-title">
+                                Responsive Github Tracker site using API and JavaScript 
+                                <a class="link" href="https://github.com/sukiphan97/project-github-tracker" aria-label="Visit Github Tracker project"> >></a>
+                            </p>
                             <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                 <li class="project-language-list">HTML</li>
                                 <li class="project-language-list">CSS3</li>
@@ -125,7 +136,7 @@
                         
                         <div class="projects-text display-flex">
                             <h3><a class="project-name text-styling title" href="https://github.com/sukiphan97/project-weather-app">Weather App Using API</a></h3>
-                            <p class="project-description text-styling sub-title">Responsive Weather App using Geolocation, public weather API allows user to update the weather based on their current location <a href="https://github.com/sukiphan97/project-weather-app" aria-label="Visit project weather app">>></a></p>
+                            <p class="project-description text-styling sub-title">Responsive Weather App using Geolocation, public weather API allows user to update the weather based on their current location <a class="link" href="https://github.com/sukiphan97/project-weather-app" aria-label="Visit project weather app">>></a></p>
 
                             <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                 <li class="project-language-list">HTML</li>
@@ -143,7 +154,7 @@
                         <div class="projects-text display-flex">
 
                             <h3><a class="project-name text-styling title" href="https://github.com/sukiphan97/project-business-site">Responsive Business Site with JavaScript</a></h3>
-                            <p class="project-description text-styling sub-title">Responsive Business Website made by HTML, CSS, JavaScript. The goal was to build an interactive accordion and form <a href="https://github.com/sukiphan97/project-business-site" aria-label="Visit project business site">>></a></p>
+                            <p class="project-description text-styling sub-title">Responsive Business Website made by HTML, CSS, JavaScript. The goal was to build an interactive accordion and form <a class="link" href="https://github.com/sukiphan97/project-business-site" aria-label="Visit project business site">>></a></p>
 
                             <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                 <li class="project-language-list">HTML</li>
@@ -163,9 +174,11 @@
                             <!------------- OTHER PROJECT 1 ------------->
                             <li class="projects-text other-project-el display-flex">
 
-                                <h3 ><a class="project-name text-styling title" href="">Hospital Chatbot </a></h3>
+                                <h3 ><a class="project-name text-styling title" href="https://github.com/sukiphan97/project-chatbot">Hospital Chatbot </a></h3>
                                 <p class="project-description text-styling sub-title">Responsive chatbot using HTML, 
-                                    CSS and JavaScript ES6 for pizza orders chat bot.</p>
+                                    CSS and JavaScript ES6 for pizza orders chat bot.
+                                    <a tabindex="0" class="link" href="https://github.com/sukiphan97/project-chatbot" aria-label="visit project chatbot">>></a>
+                                </p>
 
                                 <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                     <li class="project-language-list">HTML</li>
@@ -180,8 +193,11 @@
                             <!------------- OTHER PROJECT 4 ------------->
                             <li class="hidden projects-text other-project-el display-flex">
 
-                                <h3><a class="project-name text-styling title" href="">Responsive News Site</a></h3>
-                                <p class="project-description text-styling sub-title">A responsive news site built with HTML, CSS</p>
+                                <h3><a class="project-name text-styling title" href="https://github.com/sukiphan97/project-news-site">Responsive News Site</a></h3>
+                                <p class="project-description text-styling sub-title">
+                                    A responsive news site built with HTML, CSS
+                                    <a class="link" href="https://github.com/sukiphan97/project-news-site" aria-label="visit project news site">>></a>
+                                </p>
 
                                 <ul class="project-languages display-flex" aria-label="list of languages were used in the project">
                                     <li class="project-language-list">HTML</li>
@@ -216,7 +232,7 @@
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Voluptatem reprehenderit dignissimos in blanditiis.
                             
-                            <a href="#" aria-label="visit blog">>></a>
+                            <a class="link" href="#" aria-label="visit blog">>></a>
                         </p>
                     </div>
         
@@ -233,30 +249,13 @@
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             Voluptatem reprehenderit dignissimos in blanditiis.
                             
-                            <a href="#" aria-label="visit blog">>></a>
+                            <a class="link" href="#" aria-label="visit blog">>></a>
                         </p>
                     </div>
                 </div>
 
             </div>
 
-            <!-------------------- OTHER BLOGS ----------------->
-            <!-- <div class="other-blogs display-flex " aria-label="other blogs">
-                <span class="other-blogs-heading">More Thoughts</span>
-
-                <ul class="other-blogs-list display-flex">
-                    <li> 
-                        <a class="other-blogs-link text-styling" href="#" aria-label="visit blog"> Sep 2022 || 5 App That Makes Coding Easier >> </a>
-                    </li>
-                    <li> 
-                        <a class="other-blogs-link text-styling" href="#" aria-label="visit blog"> Sep 2022 || 5 App That Makes Coding Easier >> </a>
-                    </li>
-                    <li> 
-                        <a class="other-blogs-link text-styling" href="#" aria-label="visit blog"> Sep 2022 || 5 App That Makes Coding Easier >> </a>
-                    </li>
-        
-                </ul>
-            </div>-->
         </div>
    
     </section>

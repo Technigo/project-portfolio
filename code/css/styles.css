@@ -1,73 +1,9 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/************* GENERAL STYLING **************/
-
-html {
-    font-size: 62.5%;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-body {
-    font-family: "raleway", sans-serif;
-    color: #333;
-}
-
-li {
-    list-style: none;
-}
-
-
-h2 {
-    font-size: 2.8rem;
-    color: #333;
-    padding: 6px 2px;
-    display: inline-block;
-    align-self: center;
-    font-family: "Playfair Display", serif;
-    margin-bottom: 40px;
-}
-
-
-.hidden {
-    display: none;
-}
-
-
-.display-flex {
-    display: flex;
-    flex-direction: column;
-}
-
-.title {
-    font-size: 1.8rem;
-}
-
-.sub-title {
-    font-size: 1.6rem;
-    color: #555;
-}
-
-.text-styling {
-    line-height: 29px;
-    letter-spacing: 0.01em;
-    line-height: 3rem;
-}
-
 .circle {
     position: absolute;
-    background: linear-gradient(180deg, #a9c9ff9a 0%, #ffbbec09 100%);
+    background: linear-gradient(120deg, #a9c9ff85 4%, #ffbbec58 100%);
     
-   filter: blur(50px);
+    filter: blur(50px);
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -83,6 +19,7 @@ h2 {
     height: 300px;
 }
 
+/************* SOCIA MEDIA LINK STYLING **************/
 .media-list {
     justify-content: flex-end;
     flex-direction: row;
@@ -98,85 +35,41 @@ h2 {
  .fav-icons:visited {
      font-size: 3.2rem;
      text-align: center;
-     color: #333;
+     color: var(--accentBlack);
      width: 60px;
      height: 60px;
      transition: all 0.4s ease;
  }
 
- .fav-icons:hover,
- .fav-icons:active {
-     color: #A9C9FF;
-     transform: scale(1.2);
- }
-
-
  .media-link:link,
  .media-link:visited {
      font-size: 1.1rem;
      line-height: 4.1rem;
-     color: #333;
+     color: var(--accentBlack);
      position: relative;
      font-weight: 700;
      text-transform: uppercase;
- }
-
- 
- .media-link:link::after,
- .media-link:visited:after {
-     content: "";
-     width: 0;
-     height: 2px;
-     bottom: 7px;
-     left: 0;
-     background-color: #707BFB;
-     position: absolute;
      transition: all 0.4s ease;
  }
 
- .media-link:hover::after,
- .media-link:active::after {
-     content: "";
-     width: 100%;
 
+ .fav-icons:hover,
+ .fav-icons:active,
+ .media-link:hover,
+ .media-link:active {
+     color: var(--dominantBlue);
+     transform: scale(1.2);
  }
 
 
- .media-list li {
+.media-list li {
      width: 120px;
  }
-
-.container {
-    width: 375px;
-    margin: 0 auto;
-    padding: 40px 24px 50px 24px;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.section:first-of-type{
-    border-top: solid 1px #eee;
-}
-
-section:nth-child(even) {
-    background-color: #FFFFFF;
-
-}
-
-section:nth-child(odd) {
-    background-color: #a9c9ff46;
-    background-image: linear-gradient(180deg, #a9c9ff0b 0%, #ffbbec26 100%);
-    
-}
-
-
 
 
 /************* HEADER STYLING **************/
 header {
-    background: #fff;
+    background: var(--dominantWhite);
     display: flex;
     justify-content: center;
     padding: 48px 24px 0 24px;
@@ -191,21 +84,21 @@ header {
 .header-nav {
     width: 130.5px;
     position: absolute;
-    right: 10px;
-    gap: 20px;
+    right: 1rem;
+    gap: 2rem;
     flex-direction: row;
 }
 
 .header-fav-icons:link,
 .header-fav-icons:visited {
-    color: #707BFB;
+    color: var(--dominantBlue);
     font-size: 2rem;
     transition: all 0.4s ease;
 }
 
 .header-fav-icons:hover,
 .header-fav-icons:active {
-    color: #A9C9FF;
+    color: var(--accentBlue);
 }
 
 .header-img {
@@ -238,17 +131,17 @@ header {
 .author-title {
     font-size: 4rem;
     font-weight: 700;
-    line-height: 49px;
+    line-height: 4.9rem;
     font-family: "Playfair Display", serif;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     font-weight: bold;
 }
 
 .author-title span {
     font-size: 2.2rem;
-    line-height: 40px;
+    line-height: 4rem;
     display: block;
-    color: #707BFB;
+    color: var(--dominantBlue);
 
 }
 
@@ -266,14 +159,14 @@ header {
     display: inline-block;
     margin-bottom: 4px;
     margin-right: 10px;
-    background-color: #707BFB;
+    background-color: var(--dominantBlue);
 }
 
 .intro-section .dot-symbol {
     width: 10px;
     height: 10px;
     border-radius: 100px;
-    background: #707BFB;
+    background: var(--dominantBlue);
     display: inline-block;
     margin-left: -20px;
 }
@@ -285,6 +178,11 @@ header {
 .tech-skill p {
     text-align: center;
     font-size: 1.6rem;
+    z-index: 5;
+}
+
+.highlight {
+    color: var(--dominantBlue);
 }
 
 /****************** PROJECT SECTION ******************/
@@ -301,17 +199,16 @@ header {
     z-index: 2;
 }
 
-
 .project-img {
     transition: all 0.4s ease-in-out;
 }
 
 .projects-article {
-    background-color: #fff;
+    background-color: var(--dominantWhite);
     padding: 25px;
     border-radius: 6px;
     transition: all 0.4s ease-in-out;
-    box-shadow: 10px 10px 15px #f5f5f7;
+    box-shadow: 1rem 1rem 1rem #f5f5f7;
 }
 
 .projects-article:hover {
@@ -325,13 +222,13 @@ header {
 
 .projects-text {
     margin-top: 9px;
-    gap: 10px;
+    gap: 1rem;
   }
 
 .project-name:link, 
 .project-name:visited {
     font-weight: 700;
-    color: #333;
+    color: var(--accentBlack);
     text-decoration: none;
     transition: all 0.4s ease;
 }
@@ -339,7 +236,7 @@ header {
 
 .project-name:hover, 
 .project-name:active {
-    color: #707BFB;
+    color: var(--dominantBlue);
 }
 
 .img-link:link,
@@ -361,7 +258,7 @@ header {
 }
 
 .project-language-list{
-    background-color: #F3E0F0;
+    background-color: var(--accentPink);
     font-size: 1.2rem;
     padding: 6px;
     border-radius: 5px;
@@ -384,7 +281,7 @@ header {
 }
 
 .other-project-el{
-    border-bottom: solid 1px #333;
+    border-bottom: solid 1px var(--accentBlack);
     padding-bottom: 50px;
 }
 
@@ -430,11 +327,10 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(129px,1fr));
     gap: 42px;
     text-align: center;
-
 }
 
 .skill-title {
-    color: #707BFB;
+    color: var(--dominantBlue);
     margin-bottom: 10px;
     font-weight: 700;
 }
@@ -473,161 +369,16 @@ footer {
 .contact-link:link,
 .contatc-link:visited {
     font-style: normal;
-    line-height: 25px;
+    line-height: 2.5rem;
     display: block;
     text-align: center;
     text-decoration: none;
 
-    color: #333;
+    color: var(--accentBlack);
 }
 
 .contact-link:hover,
 .contact-link:active {
-    color: #707BFB;
+    color: var(--dominantBlue);
 }
-
-/****************** MEDIA QUERIES ******************/
-
-@media (min-width: 768px) {
-    .container {
-        width: 768px;
-        padding: 80px 20px;
-
-    }
-
-    .hidden {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header {
-        width: 768px;
-        padding: 60px 20px 0 20px;
-    }
-}
-
-@media (min-width: 1025px) {
-
-    .container {
-        width: 1025px;
-    }
-
-
-    h2 {
-        line-height: 59px;
-        letter-spacing: 0.01em;
-        margin-bottom: 80px;
-    }
-
-    html {
-        font-size: 100%;
-    }
-
-    
-    /****************** HEADER SECTION ******************/
- 
-   
-    .header {
-        height: 668px;
-        width: 1025px;
-        position: relative;
-
-    }
-    .header-img {
-        width: 333px;
-        height: 333px;
-    }
-
-    .header-portfolio-owner {
-        line-height: 37px;
-    }
-
-    .author-title {
-        line-height: 100px;
-    }
-
-    .author-title span {
-        line-height: 78px;
-    }
-
-    /****************** INTRO SECTION ******************/
-    .intro-section p {
-        line-height: 50px;
-    }
-
-    /****************** TECH SKILL SECTION ******************/
-    .tech-skill p {
-        line-height: 50px;
-    }
-
-    .project-name:link {
-        line-height: 41px ;
-    }
-
-    .project-description {
-        line-height: 33px;
-    }
-
-    .project-language-list {
-        line-height: 21px;
-    }
-    
-    /****************** BLOG SECTION ******************/
-    .other-blogs-link {
-        line-height: 33px;
-    }
-    
-    .blog-title {
-        line-height: 41px;
-    }
-    
-    
-    .other-blogs,
-    .other-project {
-        margin-top: 120px;
-    }
-    
-    .other-blogs-heading,
-    .other-project-heading {
-        line-height: 47px;
-    }
-    
-    /****************** FOR MORE ******************/
-    
-    .skills {
-        gap: 90px;
-        line-height: 41px;
-
-    }
-
-    .fav-icons:link {
-        width: 60px;
-        height: 60px;
-    }
-
-    .media-list li {
-        width:250px;  
-    }
-
-    .media-link:link {
-        line-height: 41px;
-    }
-
-    
-    /****************** FOOTER ******************/
-    footer {
-        height: 570px;
-    }
-    
-    .contact-name,
-    .contact-link:link,
-    .contatc-link:visited {
-        line-height: 50px;
-    }
-}
-
-
-
-    
-
 
