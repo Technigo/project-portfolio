@@ -1,8 +1,8 @@
 # portfolio
 
 THIS TEXT WILL BE DELETED AFTER THE REVIEW, IT'S JUST TO CLARIFY!
-The errors I get from validator.w3.org are not accurate. the div from line 61 has its opening in line 52.
-article with class tech-section has its opening tag in 53 and closing tag in line 62.
+The errors I get from validator.w3.org are not accurate. the div has it's opening tag in 54 and closing tag in 63.
+The article with class tech-section has its opening tag in 55 and closing tag in line 64.
 
 ---
 
