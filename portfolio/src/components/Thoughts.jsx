@@ -13,7 +13,7 @@ const Thoughts = () => {
 					<p className="fs-normal fw-normal">Making pizza is more than “just cheesy bread". Instead, it's much more about oven. It's similar to pie in that the oven is heating an assortment of ingredients and components (i.e., food) in a way to satisfy a particular appetite. <span className="fw-bold color-font" aria-hidden="true">&#62;&#62;</span></p></a>
 				</article>
 				<article className="article mobile-hidden">
-					<a href="" target="_blank" rel="noreferrer"><img alt="Cover of lightbulb being held up against sky." className="article-image" src="./assets/diego-ph-unsplash.jpg" />
+					<a href="www.google.com" target="_blank" rel="noreferrer"><img alt="Cover of lightbulb being held up against sky." className="article-image" src="./assets/diego-ph-unsplash.jpg" />
 					<h3 className="color-font article-date fs-normal fw-normal">MAR 2022</h3>
 					<h3 className="article-heading fs-normal fw-bold">How to stop being pizza: <br className="desktop-hidden" />Pizza to love pizza</h3>
 					<p className="fs-normal fw-normal">Making pizza is more than “just cheesy bread". Instead, it's much more about oven. It's similar to pie in that the oven is heating an assortment of ingredients and components (i.e., food) in a way to satisfy a particular appetite. <span className="fw-bold color-font" aria-hidden="true">&#62;&#62;</span></p></a>
