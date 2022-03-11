@@ -8,9 +8,9 @@ const Projects = () => {
 			<div className="featured-projects">
 
 				<article className="roboto">
-					<a href="https://github.com/michaelchangdk/project-weather-app" target="_blank">
+					<a href="https://github.com/michaelchangdk/project-weather-app" target="_blank" rel="noreferrer">
 					<div className="project-image-group">
-						<img alt="Cover photo of clouds with sun breaking through." className="project-image" src="./assets/tom-barrett-unsplash.jpg" />
+						<img alt="Cover of clouds with sun breaking through." className="project-image" src="./assets/tom-barrett-unsplash.jpg" />
 						<div className="project-image-overlay"></div>
 						<h3 className="project-image-text-overlay montserrat fw-bold" aria-hidden="true">WEATHER APP</h3>
 					</div>
@@ -34,9 +34,9 @@ const Projects = () => {
 					</div>
 				</article>
 				<article className="roboto">
-					<a href="https://github.com/michaelchangdk/project-guess-who" target="_blank">
+					<a href="https://github.com/michaelchangdk/project-guess-who" target="_blank" rel="noreferrer">
 					<div className="project-image-group">
-						<img alt="Cover Photo of K K  Slider Amiibo." className="project-image" src="./assets/yves-alarie-unsplash.jpg" />
+						<img alt="Cover of K K  Slider Amiibo." className="project-image" src="./assets/yves-alarie-unsplash.jpg" />
 						<div className="project-image-overlay"></div>
 						<h3 className="project-image-text-overlay montserrat fw-bold" aria-hidden="true">GUESS WHO</h3>
 					</div>
@@ -57,9 +57,9 @@ const Projects = () => {
 					</div>
 				</article>
 				<article className="roboto mobile-hidden">
-					<a href="https://github.com/michaelchangdk/project-chatbot" target="_blank">
+					<a href="https://github.com/michaelchangdk/project-chatbot" target="_blank" rel="noreferrer">
 					<div className="project-image-group">
-						<img alt="Cover Photo of Neon Chat Bubble." className="project-image" src="./assets/jason-leung-unsplash.jpg" />
+						<img alt="Cover of Neon Chat Bubble." className="project-image" src="./assets/jason-leung-unsplash.jpg" />
 						<div className="project-image-overlay"></div>
 						<h3 className="project-image-text-overlay montserrat fw-bold" aria-hidden="true">CHATBOT</h3>
 					</div>
@@ -80,9 +80,9 @@ const Projects = () => {
 					</div>
 				</article>
 				<article className="roboto mobile-hidden">
-					<a href="https://github.com/michaelchangdk/project-business-site" target="_blank">
+					<a href="https://github.com/michaelchangdk/project-business-site" target="_blank" rel="noreferrer">
 					<div className="project-image-group">
-						<img alt="Cover Photo of Cans of Spam." className="project-image" src="./assets/hannes-johnson-unsplash.jpg" />
+						<img alt="Cover of Cans of Spam." className="project-image" src="./assets/hannes-johnson-unsplash.jpg" />
 						<div className="project-image-overlay"></div>
 						<h3 className="project-image-text-overlay montserrat fw-bold" aria-hidden="true">DEATH BY SPAM</h3>
 					</div>
@@ -106,7 +106,7 @@ const Projects = () => {
 			<h2 className="section-heading fw-bold montserrat color-font">OTHER PROJECTS</h2>
 			<div className="other-projects roboto">
 				<div className="desktop-hidden">
-					<a href="https://github.com/michaelchangdk/project-chatbot" target="_blank">
+					<a href="https://github.com/michaelchangdk/project-chatbot" target="_blank" rel="noreferrer">
 					<p className="fs-normal fw-normal">
 						<span className="color-font color-font underline-desktop fw-bold">CHATBOT BUILT IN JAVASCRIPT. </span>
 						<br className="desktop-hidden" />
@@ -127,7 +127,7 @@ const Projects = () => {
 					</div>
 				</div>
 				<div className="desktop-hidden">
-					<a href="https://github.com/michaelchangdk/project-business-site" target="_blank">
+					<a href="https://github.com/michaelchangdk/project-business-site" target="_blank" rel="noreferrer">
 					<p className="fs-normal fw-normal">
 						<span className="color-font color-font underline-desktop fw-bold">BUSINESS SIGNUP FORM. </span>
 						<br className="desktop-hidden" />
@@ -148,7 +148,7 @@ const Projects = () => {
 					</div>
 				</div>
 				<div>
-					<a href="https://github.com/michaelchangdk/project-github-tracker" target="_blank">
+					<a href="https://github.com/michaelchangdk/project-github-tracker" target="_blank" rel="noreferrer">
 					<p className="fs-normal fw-normal">
 						<span className="color-font color-font underline-desktop fw-bold">GITHUB TRACKER. </span>
 						<br className="desktop-hidden" />

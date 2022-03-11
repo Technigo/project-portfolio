@@ -104,9 +104,10 @@ header {
 .socials-icon-container {
 	display: flex;
 	gap: 6px;
-	justify-content: end;
-	-webkit-justify-content: flex-end;
-	-webkit-align-items: flex-end;
+	justify-content: flex-end;
+	/* Netlify won't deploy because of these lines: */
+	/* -webkit-justify-content: flex-end;
+	-webkit-align-items: flex-end; */
 }
 .header-icon-wrapper {
 	border-radius: 50%;
@@ -138,10 +139,11 @@ header {
 }
 .profile-picture-container {
 	display: flex;
-	justify-content: end;
+	justify-content: flex-end;
 	align-items: flex-end;
-	-webkit-justify-content: flex-end;
-	-webkit-align-items: flex-end;
+	/* Netlify won't deploy because of these lines */
+	/* -webkit-justify-content: flex-end;
+	-webkit-align-items: flex-end; */
 }
 .profile-picture {
 	margin-top: 40px;
