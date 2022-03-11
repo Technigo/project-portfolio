@@ -1,28 +1,38 @@
 :root {
-	--primary: #FA382F;
-	--secondary: #072BCE;
+	--primary  : #127cc4;
+	--secondary: #068b75;
+  --tartiary : #ffffff;
 }
 
-body,
-html {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100%;
   font-family: "Roboto";
   scroll-behavior: smooth;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
-/*hero image*/
-.hero-image {
+p{
+  font-size: 18px;
+}
+
+header{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/heroimage.jpg");
-  height: 520px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+section:nth-child(2n){
+  background-color: #F4F4F4;
+}
+/*hero image*/
+.hero-image {
+  max-width: 1024px;
+  height: 520px;
   position: relative;
-  top: -35px;
+  margin: 0 auto;
 }
 
 .hero-icon{
@@ -39,14 +49,15 @@ html {
 }
 
 .hero-icon a{
-  color:#ffffff;
+  color:var(--tartiary);
   border-radius: 50%;
-  border: 1px solid #ffffff;
-  padding-left: 27%;
-  padding-top: 13%;
+  border: 1px solid var(--tartiary);
+  padding-left: 30%;
+  padding-top: 5%;
 }
 .hero-icon a:hover{
   border: 1px solid var(--secondary);
+  color: var(--secondary);
 }
 .fa-2x {
   font-size: 1em;
@@ -55,7 +66,7 @@ html {
 
 .hero-text {
   transform: translate(0%, 115%);
-  color: #fff; 
+  color: var(--tartiary);
   height: 202px;
   width: 220px;
   padding-left: 24px;
@@ -67,14 +78,13 @@ html {
 }
 .hero-text h1{
   line-height: 35px;
-  margin-top: -10px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
 
 .hero-image img{
   border-radius: 50%;
   position: absolute;
-  top: 370px;
+  top: 355px;
   right: 24px;
 }
 /*scroll button*/
@@ -82,26 +92,27 @@ html {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 15px;
   z-index: 99;
   font-size: 18px;
   border: none;
   outline: none;
   background-color: var(--primary);
-  color: white;
+  color: var(--tartiary);
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: var(--tartiary);
+  color: var(--secondary);
 }
 
 /*section*/
 .personal-info {
+  max-width: 1500px;
   font-family: 'montserrat';
-  background-color: #F4F4F4;
   display: flex;
   padding: 24px;
 }
@@ -113,19 +124,17 @@ html {
 .personal-info p {
   text-align: justify;
   font-size: 18px;
-  line-height: 29px;
 }
-/*feature project*/
+/*featured project*/
 .featuresProjectSection{
   padding: 24px;
   text-align: center;
   font-size: 20px;
-  background-color: #F4F4F4;
 }
 
 .tech-text{
+  max-width: 1500px;
   font-size: 18px;
-  line-height: 29px;
   text-align: justify;
 }
 
@@ -133,8 +142,13 @@ html {
   display: none;
 }
 
+.displayLargeDevice{
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .featuredProject{
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 17px;
   line-height: 29px;
 }
@@ -155,7 +169,7 @@ html {
   position: absolute; 
   bottom: 30%; 
   width: 100%;
-  color: white;
+  color: var(--tartiary);
   font-size: 20px;
   font-weight: 700;
   padding: 20px;
@@ -181,14 +195,15 @@ span{
 }
 /* skill */
 .skill-container{
+  max-width: 1500px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 35px; 
 }
 
 .skill-list {
-  line-height: 10px;
-  font-size: 14px;
+  margin-top: 20px;
 }
 
 .skill-list p:nth-child(1){
@@ -201,7 +216,7 @@ span{
 .formore-section {
   width: fit-content;
   background-color: var(--primary);
-  color: #ffffff;
+  color: var(--tartiary);
   text-align: center;
   font-family: 'montserrat';
   font-size: 18px;
@@ -214,8 +229,7 @@ span{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
-  padding: 24px;
-  margin: 0 auto;
+  margin: 30px auto 50px auto;
 }
 
 .formore-icon p{
@@ -237,9 +251,10 @@ span{
 }
 
 .formore-icon p a:hover{
-  border: 2px solid var(--secondary);
+  border: 2px solid var(--secondary); 
+  color: var(--secondary);
+  transform: rotate(5deg);
 }
-
 
 .formore-icon p a i{
   font-size: 4em;
@@ -252,15 +267,29 @@ footer {
   height: 302px;
   text-align: center;
   background-color: var(--secondary);
-  color: #ffffff;
+  color: var(--tartiary);
   font-size: 17px;
   padding: 60px;
   margin-top: 25px;
 }
 
+footer p{
+  line-height: 37px;
+}
+
 footer p:nth-child(1){
   font-weight: 700;
   margin-bottom: 55px;
+}
+
+footer a{
+  text-decoration: none;
+  color: #F4F4F4;
+  cursor: pointer;
+}
+footer a:hover{
+  text-decoration:underline;
+  color: var(--primary);
 }
 
 
@@ -269,11 +298,16 @@ footer p:nth-child(1){
   .hero-icon{
     right: 150px;
   }
+
   .hero-image img {
     right: 150px;
 }
   .hero-text {
     padding-left: 15%;
+}
+
+.hero-text p {
+  width: inherit;
 }
   .personal-info {
     padding-left: 15%;
@@ -281,7 +315,7 @@ footer p:nth-child(1){
     font-size: 18px;
 }
 .tech-text{
-  padding-left: 13%;
+    padding-left: 13%;
     padding-right: 130px;
     font-size: 18px;
 }
@@ -296,10 +330,10 @@ footer p:nth-child(1){
   grid-template-rows: 1fr;
   grid-column-gap: 30px;
   padding-left: 15%;
-    padding-right: 150px;
+  padding-right: 150px;
 }
 .hideItem{
-  display:grid;
+  display:block;
 }
 .skill-container{
   display: grid;
@@ -308,41 +342,47 @@ footer p:nth-child(1){
   padding-left: 12%;
   padding-right: 150px;
 }
-.skill-list{
-  font-size: 18px;
-  line-height: 23px;
-}
 
-.skill-list p{
-  margin-top: -8px;
-}
 
-footer {
-  font-size: 28px;
-  padding-top: 100px;
-  }
 }
 
 /* desktop */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
+  .hero-icon {
+    right: 18%;
+}
+  .hero-image img {
+    right: 18%;
+}
   .hero-text {
-    padding-left: 25%;
+    padding-left: 20%;
 }
   .personal-info {
-    padding-left: 25%;
+    margin: 0 auto;
+    font-size: 24px;
 }
+
+.personal-info p{
+  font-family: 'Roboto';
+  font-size: 23px;
+}
+
+.featuresProjectSection{
+  margin: 0 auto;
+}
+.featuresProjectSection p{
+  font-size: 23px;
+}
+
 .tech-text{
-  padding-left: 24%;
+  margin: 0 auto;
 }
-.displayLargeDevice{
-  padding-left: 25%;
-}
+
 .hideItem{
   overflow: visible;
 }
-.skill-container{
-  padding-left: 23%;
-  margin-top: 35px;
+.skill-container {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 }
