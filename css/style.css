@@ -1,6 +1,6 @@
 :root {
-	--primary  : #127cc4;
-	--secondary: #068b75;
+	--primary  :#2113A0;
+	--secondary: #05404A;
   --tartiary : #ffffff;
 }
 
@@ -122,7 +122,7 @@ section:nth-child(2n){
   margin-right: 10px;
 }
 .personal-info p {
-  text-align: justify;
+  text-align: left;
   font-size: 18px;
 }
 /*featured project*/
@@ -135,7 +135,7 @@ section:nth-child(2n){
 .tech-text{
   max-width: 1500px;
   font-size: 18px;
-  text-align: justify;
+  text-align: left;
 }
 
 .hideItem{
@@ -154,9 +154,10 @@ section:nth-child(2n){
 }
 .featuredProject img {
   width: 100%;
+  opacity: 0.6;
 }
 .featuredProject img:hover {
-  opacity: 0.5;
+  opacity:1;
 }
 
 
@@ -222,9 +223,16 @@ span{
   margin: 35px auto 10px auto;
 }
 
-.other-projects-atag{
-  text-decoration: none;
-  color: var(--secondary);
+.other-projects-atag {
+    text-decoration: none;
+    color: var(--tartiary);
+    background-color: var(--secondary);
+}
+
+.other-projects-atag:hover {
+  text-decoration: underline;
+  color: var(--tartiary);
+  background-color: var(--primary);
 }
 
 .otherProject {
@@ -259,7 +267,7 @@ span{
   color: var(--primary);
   font-size: 7px;
   font-weight: 700;
-  width: 60px;
+  width: 62px;
   height: 60px;
   margin: 0 auto;
 }
