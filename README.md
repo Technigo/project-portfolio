@@ -8,5 +8,7 @@ Project portfolio
 - The page should work well for people that use screen readers and keyboard navigation.
 - The HTML code should validate in a validation tool.
 
+This was the most challenging project so far of boot camp. I will keep working on my portfolio and update it with coming projects.
+
 View it live
 www.marianneardin.com   
