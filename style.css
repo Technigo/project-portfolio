@@ -190,11 +190,13 @@
 
 /* ------- FEATURED AND OTHER SECTION -----*/
 
+.article-container {
+    margin-top: 20px;
+}
+
 .project-heading {
     font-weight: 700;
     color: blue;
-    margin: 10px;
-    padding-top: 20px;
 }
 
 .project-text {
@@ -209,12 +211,12 @@
 }
 
 .project {
-    margin-top: 40px;
-    margin-bottom: 40px; 
     display: flex;  
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .tech-section-header,
@@ -252,6 +254,7 @@
 .featured-section,
 .other-projects-section {
     text-align: center;
+   
 }
 
 .project-picture {
@@ -270,6 +273,9 @@
 .thoughts-section {
     text-align: center;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .my-thoughts {
@@ -300,6 +306,7 @@
 
 .my-thoughts-text p {
     line-height: 29px;
+   
 }
 
 .my-thoughts-picture {
@@ -429,8 +436,9 @@ footer p {
     line-height: px;
 }
 
-
+/* -----------------------*/
 /* ------- TABLET -------*/
+/* ----------------------*/
 
 @media (min-width: 667px) {
 	 
@@ -475,6 +483,7 @@ footer p {
 
 /* ----- TABLET FEATURED SECTION ------*/
 .article-container {
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
 }
@@ -491,13 +500,15 @@ footer p {
     height: 130px;
 }
 
+/* ---------------------*/
 /* ------ LAPTOP ------*/
+/*-----------------------*/
 
 @media (min-width: 1025px) {
 
-   /* .container { Lägg till container och flex vid tillfälle
+   /* .container { lägg till när tid finns
         width: 1100px;
-    } */
+        }  */
 
 /* ----- LAPTOP HEADER ------- */
 .header-text {
