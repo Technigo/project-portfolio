@@ -82,6 +82,13 @@ const articles = [
     description:
       "Recently I was thinking about what does it mean to be a programmer. After some googling I found a ton of interesting articles and created an image that explains it so clearly...",
   },
+  {
+    image: "img/forth_article.jpg",
+    title: "Git common commands",
+    link: "https://medium.com/@darya.lapata/git-common-commands-7d329583f34a",
+    description:
+      "Git is an important tool to handle when you are a developer. In this article, I wanted to share most common git commands...",
+  },
 ];
 
 projects.forEach((item) => {
