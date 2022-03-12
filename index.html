@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Lovisas Portfolio</title>
 </head>
 
 <body>
+    <!--HEADER SECTION--> 
    <header class="header">
         <section class="header-container">
             <div class="socialmedia-icons-container-header">
@@ -35,59 +36,79 @@
                 <span>LOVISA BRORSON</span> 
                 </p>
                 <h1>frontend developer</h1>
-                <h2>with a backgroud as a projct manager</h2>
+                <h2>with a background as a project manager</h2>
             </div>
         </section>
    </header> 
 
     <main class="main-section"> 
 
-        <section class="presentation-section">
-            <p class="introduction-text"> <span class="line"></span><span class="dot"></span> Hello! Lorem ipsum dolor sit amet coon veritatis esse! Molestias, perferendis quasi? Maiores, expedita voluptatibus? Perspiciatis adipisci magnam voluptatibus repellat. Ea nihil enim maiores.</p>
+        <!--PRESENTATION SECTION-->
+        <section class="section">
+            <div class="presentation-section container">
+                <p class="introduction-text"> <span class="line"></span><span class="dot"></span> Hello! Lorem ipsum dolor sit amet coon veritatis esse! Molestias, perferendis quasi? Maiores, expedita voluptatibus? Perspiciatis adipisci magnam voluptatibus repellat. Ea nihil enim maiores.</p>
+            </div>   
         </section>
-
-        <section class="tech-section">
+        <!--TECH SECTION-->
+        <section class="section">
+            <div class="tech-section container">
                 <h1 class="tech-section-header">TECH</h1>   
                 <div class="tech-section-text">
                     <p>HTML, CSS, FLEXBOX, JavaScrpit, ES6, React, API:S, GitHub</p>
                 </div> 
+            </div>   
         </section>
 
-        <section class="featured-section">
-           
+        <!--FEATURED AND OTHER SECTION-->
+        <section class="section">
+           <div class="featured-section container">
                 <h1 class="featured-section-header">FEATURED PROJECTS</h1>
 
-                <article class="project">
+        <!---ARTICLE ONE--> 
+        <div class="article-container">      
+                <article class="project container">
+                <div class="overlay-container">
                         <img src="./assets/code.jpg" class="project-picture" alt="Picuter of code" />
-
+                    <div class="overlay"> 
+                     <div class="overlay-text">Github Tracker</div>   
+                    </div>
+                </div>       
                     <div class="project-text">
                         <h4 class="project-heading">GITHUBTRACKER BUILD WITH JAVASCRIPT</h4>
                         <p class="project-text">Responsive website with HTML, CSS and JavaScript</p>
+                        
                         <div class="project-tags">
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScrpit</span>
-                        </div>
-                    </div>            
-           
+                        </div>  
+                    </div>           
                 </article>
-
-                <article class="project">
-                  
-                        <img src="./assets/code.jpg" class="project-picture" alt="Picuter of code" />
-                        <div class="project-text-group">
-                            <h4 class="project-heading"> WEATHER APP</h4>
-                            <p class="project-text">Responsive website with HTML, CSS and JavaScript</p>
-                            <div class="project-tags">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScrpit</span>
-                            </div>
-                        </div>
-                   
-                </article>
-                </section>
-                <section class="other-projects-section">
+        <!--ARTICLE TWO-->
+        <article class="project container">
+            <div class="overlay-container">
+                    <img src="./assets/code.jpg" class="project-picture" alt="Picuter of code" />
+                <div class="overlay"> 
+                 <div class="overlay-text">Github Tracker</div>   
+                </div>
+            </div>       
+                <div class="project-text">
+                    <h4 class="project-heading">GITHUBTRACKER BUILD WITH JAVASCRIPT</h4>
+                    <p class="project-text">Responsive website with HTML, CSS and JavaScript</p>
+                    
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScrpit</span>
+                    </div>  
+                </div>           
+            </article>
+            </div> 
+        </div>        
+    
+        <!--OTHER PROJECTS-->
+            
+                <div class="other-projects-section container">
                 <h1 class="other-projects-header">OTHER PROJECTS</h1>
                 <article class="project">
                     <div class="project-text">
@@ -124,9 +145,11 @@
                         </div>
                     </div>
                 </article>   
+                </div>    
         </section>
-            
-        <section class="thoughts-section">
+    <!--THOUGHTS SECTION--->        
+        <section class="section" >
+            <div class="thoughts-section">
                     <h1 class="my-thoughts-header">MY THOUGHTS</h1>
                 <article class="my-thoughts">
                     <div class="my-thoughts-picture-container">
@@ -141,74 +164,93 @@
 
                 <article class="my-thoughts">
                     <h1 class="more-thoughts-header">MORE THOUGHTS</h1>
-                    <p>Gör en länk till ny sida</p>
-                    <p>Gör en länk till ny sida</p>
-                    <p>Gör en länk till ny sida</p>
+                <div class="more-thoughts-container">    
+                   <h5>
+                        <span>MARS 2022</span> 
+                        5 apps that will make coding easier   
+                        <span>>></span>
+                   </h5>
+                    <h5>
+                        <span>MARS 2022</span> 
+                        5 apps that will make coding easier   
+                        <span>>></span>
+                    </h5>
+                    <h5>
+                        <span>MARS 2022</span> 
+                        5 apps that will make coding easier   
+                        <span>>></span>
+                    </h5>
+                </div>   
                 </article>
+            </div>    
         </section>
-
-        <section class="skills-section">
+    <!-- SKILL SECTION-->
+        <section class="section" >
+                <div class="skills-section">
                     <h1 class="skills-section-header">SKILLS</h1>
-            <div class="skills-section-container">
-                <div>
-                    <p class="header-blue">CODE</p>
-                    <p>HTML5</p>  
-                    <p>CSS3</p> 
-                    <p>React</p>
-                    <p>Github</p>
-                </div>
-                <div>
-                    <p class="header-blue">TOOLBOX</p>
-                    <p>Slack</p>
-                </div>
-                <div>
-                    <p class="header-blue">UPCOMING</p>
-                    <p>Redux</p>
-                    <p>Node.js</p> 
-                </div>  
-        
-        </div>   
+                    <div class="skills-section-container">
+                        <div class="skill-tags">
+                            <p class="header-blue">CODE</p>
+                            <p>HTML5</p>  
+                            <p>CSS3</p> 
+                            <p>React</p>
+                            <p>Github</p>
+                        </div>
+                            <div class="skill-tags">
+                                <p class="header-blue">TOOLBOX</p>
+                                <p>Slack</p>
+                            </div>
+                        <div class="skill-tags">
+                            <p class="header-blue">UPCOMING</p>
+                            <p>Redux</p>
+                            <p>Node.js</p> 
+                        </div>  
+                    </div>  
+                </div> 
         </section>
 
-            <section class="for-more-container">
+        <!--FOR MORE SECTION-->
+            <section class="section">
+                <div class="for-more-container">
                 <article>
                     <h1 class="for-more-header">FOR MORE</h1>
                     <div class="socialmedia-icons-container-for-more">
                         <div class="single-icon-container" >
-                        <a href="https://www.linkedin.com/in/lovisa-brorson-33b22039/" target="blank">
+                            <a href="https://www.linkedin.com/in/lovisa-brorson-33b22039/" target="blank">
                             <img src="./assets/LinkIn-icon-blue.svg" alt="Lovisas LinkedIn" class="socialmedia-icons-for-more" />
-                        </a>
-                        <p class="for-more-text">LINKEDIN</p>
+                            </a>
+                            <p class="for-more-text">LINKEDIN</p>
                         </div>
         
                         <div class="single-icon-container">
-                        <a href="https://github.com/LovisaBrorson" target="blank">
+                            <a href="https://github.com/LovisaBrorson" target="blank">
                             <img src="./assets/GitHub-icon-blue.svg" alt="Lovisas GitHub" class="socialmedia-icons-for-more" />
-                        </a>
-                        <p class="for-more-text">GITHUB</p>
+                            </a>
+                            <p class="for-more-text">GITHUB</p>
                         </div>
         
                         <div class="single-icon-container">
-                        <a href="https://stackoverflow.com/" target="blank">
+                            <a href="https://stackoverflow.com/" target="blank">
                             <img src="./assets/Stackoverflow-icon-blue.svg" alt="Lovisas Stackoverflow" class="socialmedia-icons-for-more" />
-                        </a>
-                        <p class="for-more-text">STACKOVERFLOW</p>
+                            </a>
+                            <p class="for-more-text">STACK</p> <p class="for-more-text">OVERFLOW</p>
                         </div>
-
                     </div>  
                 </article>
+                </div> 
             </section>
-</main>
+
+    <!--FOOTER-->
         <footer class="contact">
             <div class="contact-info">
-            <h3>CONTACT</h3>
-            <p>Lovisa Brorson</p>
-            <p>0765-263263</p>
-            <p>lovisabrorson@gmail.com</p>
-        </div>
+                <h3>CONTACT</h3>
+                <p>Lovisa Brorson</p>
+                <p>0765-263263</p>
+                <p>lovisabrorson@gmail.com</p>
+            </div>
         </footer>
    
-    
+    </main>    
 
 </body>
 </html>
