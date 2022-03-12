@@ -2,7 +2,7 @@
 For this project we started to build our portfolio from a strict given design provided to us in Figma. The design contained no JavaScript but only HTML and CSS since the focus was also on accessability. 
 
 # the project
-Structure was very much a key in appling a given design making this a <div>-heavy project.
+Structure was very much a key in appling a given design making this a < div >-heavy project.
 The accessability tests I used was cross-browser testing, validation with https://validator.w3.org/, audition with WAVE, checking keyboard accessability, screen reader on Android and Crome, 
 I also tried to use semantic HTML as much as possible and did a test removing the CSS, and learned more on naming images correctly. 
 
