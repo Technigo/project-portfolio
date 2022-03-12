@@ -6,17 +6,14 @@
     -moz-box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     font-family: "Montserrat", sans-serif; 
-  }
-
-
-  body {
-      cursor: default;
- 
+    cursor: default;
   }
 
 .section:nth-child(2n) {
     background-color: rgb(241, 241, 250);
 }
+
+/* ------ HOVER EFFECTS -------*/
 
   a {
       text-decoration: none;
@@ -37,7 +34,6 @@
     height: 520px;
     position: relative;
 }
-
 
 .header-text p {
     font-size: 13px;
@@ -62,7 +58,6 @@
     line-height: 30px;
 }
 
-
 .header-text {
     position: absolute;
     top: 121px;
@@ -72,7 +67,6 @@
     max-width: 250px;
     color: white;
     font-weight: 700;
-
 }
 
 .socialmedia-icons-container-header {
@@ -102,14 +96,13 @@
     background-position-x: 80%;
 }
 
-
-
 /* ------- FROM PRESENTATION AND DOWN ------ */
 
 .container {
     min-width: 375px;
 }
 
+/* -------- PRESENTATION SECTION --------*/
 
 .introduction-text {
     font-size: 17px;
@@ -117,7 +110,6 @@
     line-height: 29px;
     margin: 43px 24px 43px 24px;
 }
-
 
 .line {
     border: 1px solid blue;
@@ -134,11 +126,12 @@
     display: inline-block;
 }
 
-
 .presentation-section {
     margin-top: 49px;
     margin-bottom: 43px;    
 }
+
+/* ------- TECH SECTION ---------*/
 
 .tech-section {
     text-align: center;
@@ -147,13 +140,15 @@
     padding: 40px;
 }
 
-.project-heading {
-    font-weight: 700;
-    color: blue;
-    margin: 10px;
-    padding-top: 20px;
-
+.tech-section-text {
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    margin: 33px 24px;
+    padding: 15px;
 }
+
+/*----- OVERLAY -----*/
 
 .overlay-container {
    position: relative;
@@ -193,12 +188,20 @@
     text-align: center;
 }
 
+/* ------- FEATURED AND OTHER SECTION -----*/
+
+.project-heading {
+    font-weight: 700;
+    color: blue;
+    margin: 10px;
+    padding-top: 20px;
+}
+
 .project-text {
     margin: 10px;
     line-height: 29px;
     text-align: left;
 }
-
 
 .project-text span {
     color: blue;
@@ -214,16 +217,6 @@
     align-items: center;
 }
 
-
-.tech-section-text {
-    font-size: 17px;
-    line-height: 29px;
-    text-align: center;
-    margin: 33px 24px;
-    padding: 15px;
-}
-
-
 .tech-section-header,
 .featured-section-header,
 .other-projects-header,
@@ -236,7 +229,6 @@
     display: inline;
     font-size: 25px;
     font-family: "Roboto", sans-serif;
-    
 }
 
 .project-tags span {
@@ -257,6 +249,17 @@
     flex-wrap: wrap;  
 }
 
+.featured-section,
+.other-projects-section {
+    text-align: center;
+}
+
+.project-picture {
+    height: auto;
+    width: 327px;
+}
+ 
+/* ----- THOUGHTS SECTION -----*/
 
 .more-thoughts-header {
     color: blue;
@@ -264,45 +267,9 @@
     font-size: 21px;
 }
 
-.featured-section {
-    text-align: center;
-}
-
-.other-projects-section {
-    text-align: center;
-   }
-
-
 .thoughts-section {
     text-align: center;
     padding: 40px;
-}
-
-.skills-section {
-    text-align: center;
-    padding: 40px;
-    
-}
-
-.skills-section-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 20px;
-    margin-top: 40px;
-    justify-content: center;
-}
-
-.header-blue{
-    color: blue;
-    font-weight: bolder;
-    
-}
-
-.project-picture {
-    height: auto;
-    width: 327px;
 }
 
 .my-thoughts {
@@ -314,10 +281,9 @@
 }
 
 .my-thoughts-text {
-text-align: left;
-display: flex;
-flex-direction: column;
-align-items: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .my-thoughts-text h5 {
@@ -330,18 +296,15 @@ align-items: center;
 .my-thoughts-text h4 {
     font-size: 21px;
     line-height: 30px;
-    margin: 10px 0;
 }
 
 .my-thoughts-text p {
     line-height: 29px;
-    margin: 10px 0;
 }
 
 .my-thoughts-picture {
     height: auto;
     width: 327px;
-    margin-bottom: 30px;
 }
 
 .my-thoughts-picture-container {
@@ -369,10 +332,37 @@ align-items: center;
  justify-content: start;
 }
 
+.display-block {
+    display: none;
+}
+
+/* ----- SKILL SECTION ----*/
+
+.skills-section {
+    text-align: center;
+    padding: 40px;   
+}
+
+.skills-section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.header-blue {
+    color: blue;
+    font-weight: bolder;
+}
 
 .skill-tags {
     line-height: 29px;
 }
+
+/* ----- FOR MORE -------*/
 
 .for-more-container {
     text-align: center;
@@ -382,33 +372,12 @@ align-items: center;
     padding: 40px;
 }
 
-
-
-.contact {
-    background-color: rgb(247, 247, 84);
-   
-   
-}
-
-.contact-info {
-    color: black;
-    padding: 60px 24px 84px 24px;
-    text-align: center;
-    line-height: 29px;
-    font-family:  "Montserrat";
-}
-
-.contact-info h3 {
-    font-weight: 700;
-}
-
 .socialmedia-icons-container-for-more {
     display: flex;
     gap: 25px;
     justify-content: center;
     margin-top: 30px;
 }
-
 
 .socialmedia-icons-for-more {
     height: 60px;
@@ -421,8 +390,6 @@ align-items: center;
     justify-content: space-evenly;
 }
 
-
-
 .for-more-text {
     width: 100%;
     font-family: roboto;
@@ -430,7 +397,24 @@ align-items: center;
     font-size: 11px;
     text-align: center;
     color: blue;
+}
 
+/* ----- FOOTER -----*/
+
+.contact {
+    background-color: rgb(247, 247, 84); 
+}
+
+.contact-info {
+    color: black;
+    padding: 60px 24px 84px 24px;
+    text-align: center;
+    line-height: 29px;
+    font-family:  "Montserrat";
+}
+
+.contact-info h3 {
+    font-weight: 700;
 }
 
 footer {
@@ -447,8 +431,10 @@ footer p {
 
 
 /* ------- TABLET -------*/
+
 @media (min-width: 667px) {
 	 
+/* ----- TABLET HEADER ----*/    
 .header-text {
     position: absolute;
     top: 121px;
@@ -472,10 +458,6 @@ footer p {
     height: 80px;
 }
 
-.socialmedia-icons-for-more {
-    height: 130px;
-}
-
 .profile-pic {
     background-image: url('./assets/pic_Lovisa_Brorson.jpg');
     background-size: cover;
@@ -491,10 +473,25 @@ footer p {
     background-position-x: 80%;
 }
 
+/* ----- TABLET FEATURED SECTION ------*/
 .article-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
 }
+
+/*----- TABLET MY THOUGHTS -----*/
+
+.display-block {
+    display: block;
+}
+
+/* ---- TABLET FOR MORE ------*/
+
+.socialmedia-icons-for-more {
+    height: 130px;
+}
+
+/* ------ LAPTOP ------*/
 
 @media (min-width: 1025px) {
 
@@ -502,77 +499,91 @@ footer p {
         width: 1100px;
     } */
 
-    .header-text {
-        position: absolute;
-        top: 121px;
-        left: 180px;
-        right: 131px;
-        bottom: 197px;
-        max-width: 350px;
-        color: white;
-        font-weight: 700;
-    }
+/* ----- LAPTOP HEADER ------- */
+.header-text {
+    position: absolute;
+    top: 121px;
+    left: 180px;
+    right: 131px;
+    bottom: 197px;
+    max-width: 350px;
+    color: white;
+    font-weight: 700;
+}
     
-    .socialmedia-icons-container-header {
-        position: absolute;
-        top: 60px;
-        right: 100px;
-        display: flex;
-        gap: 7px;
-    }
+.socialmedia-icons-container-header {
+    position: absolute;
+    top: 60px;
+    right: 130px;
+    display: flex;
+    gap: 7px;
+}
 
-    .socialmedia-icons-header {
-        height: 80px;
-    }
-    
-    .socialmedia-icons-for-more {
-        height: 130px;
-    }
+.socialmedia-icons-header {
+    height: 80px;
+}
 
-    .header-text p {
-        font-size: 18px;
-        line-height: 18px;
-        font-family: "Roboto", sans-serif;
-    }
+.header-text p {
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Roboto", sans-serif;
+}
     
-    .header-text p span {
-        font-weight: 700;
-        font-family: "Roboto", sans-serif;
-    }
+.header-text p span {
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
     
-    .header-text h1 {
-        font-size: 65px;
-        font-family: "Montserrat", sans-serif; 
-        line-height: 70px;
-    }
+.header-text h1 {
+    font-size: 65px;
+    font-family: "Montserrat", sans-serif; 
+    line-height: 70px;
+}
     
-    .header-text h2 {
-        line-height: 35px;
-        font-family: "Montserrat", sans-serif; 
+.header-text h2 {
+    line-height: 35px;
+    font-family: "Montserrat", sans-serif; 
         
-    }
+}
     
-    .profile-pic {
-        background-image: url('./assets/pic_Lovisa_Brorson.jpg');
-        background-size: cover;
-        border-radius: 50%;
-        border: 3px yellow solid;
-        width: 14em;
-        height: 14em;
-        position: absolute;
-        bottom: -10%;
-        right: 20%;
-        margin: 0;
-        background-position-y: 35%; 
-        background-position-x: 80%;
-    }
+.profile-pic {
+    background-image: url('./assets/pic_Lovisa_Brorson.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    border: 3px yellow solid;
+    width: 14em;
+    height: 14em;
+    position: absolute;
+    bottom: -10%;
+    right: 20%;
+    margin: 0;
+    background-position-y: 35%; 
+    background-position-x: 80%;
+}
 
-    .introduction-text {
-        padding: 20px; 
-    }
+/* ------ LAPTOP INTRUDUCTION SECTION ------- */
+
+.introduction-text {
+    padding: 20px; 
+}
+
+/* ------ LAPTOP FEATURED SECTION ------- */
+
 .article-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+
+/*----- TABLET MY THOUGHTS -----*/
+
+.display-block {
+    display: block;
+}
+
+/* ------ LAPTOP FOR MORE ------ */
+
+.socialmedia-icons-for-more {
+    height: 130px;
 }
 
 }
