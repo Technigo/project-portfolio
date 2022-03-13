@@ -1,8 +1,8 @@
 :root {
-    ---primary: #CD8987;
-    ---secondary: #828E82;
+    ---primary:  #94BFA7;
+    ---secondary: #2D6A4F;
     ---main: #FFF;
-    /*---highlight: #DF2935; /* Remove this since its not used anymore?  */
+    ---highlight: #F75C03;
 }
 
 * {
@@ -190,6 +190,10 @@ a {
     text-align: center;
 }
 
+.color {
+    color: var(---highlight);
+}
+
 
 /* -------- PROJECT SECTION ------- */
 .project-container {
@@ -220,7 +224,7 @@ a {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(1,60,180,0.3);
+    background: rgba(14, 14, 15, 0.3);
     transition: 0.5s ease;
 }
 
@@ -266,6 +270,7 @@ a {
 
 .other-projects-title {
     line-height: 132%;
+    color: var(---secondary)
 }
 
 .other-projects-description {
@@ -318,7 +323,8 @@ a {
     font-family: "Roboto", sans-serif;
     font-size: 17px;
     line-height: 171%;
-    text-transform: uppercase;    
+    text-transform: uppercase;  
+    color: var(---primary)  
 }
 
 .skill-list {
@@ -343,10 +349,6 @@ a {
     margin: 0 12px;
 }
 
-.contact-social-links a {
-    font-size: 24px;
-}
-
 .social-icon {
     display: flex;
     justify-content: center;
@@ -368,7 +370,7 @@ a {
 /* FOOTER STYLING */
 footer {
     height: 300px;
-    background-color: var(---secondary);
+    background-color: var(---primary);
 }
 
 .footer-information {
@@ -397,67 +399,67 @@ footer {
 }
 
 
-/*------ MEDIA QUERIES ------*/
+/*------ MEDIA QUERIES TABLET ------*/
 @media screen and (min-width: 768px) {
 
-h1 {
-    font-size: 60px;
-    line-height: 80px;
-}
-.container {
-    width: 768px;
-}
+    h1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    .container {
+        width: 768px;
+    }
 
-.header-container {
-    width: 718px;
-}
+    .header-container {
+        width: 718px;
+    }
 
-.project-container {
-    width: 100%;
-}
+    .project-container {
+        width: 100%;
+    }
 
-.project-image-group {
-    width: 100%;
-}
+    .project-image-group {
+        width: 100%;
+    }
 
-.tablet-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 55px;
-}
+    .tablet-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 55px;
+    }
 
-.header-text {
-    width: 400px;
-}
+    .header-text {
+        width: 400px;
+    }
 
-.portfolio-owner {
-    font-size: 20px;
-    line-height: 30px;
-}
+    .portfolio-owner {
+        font-size: 20px;
+        line-height: 30px;
+    }
 
-.other-titles {
-    font-size: 36px;
-    line-height: 55px;
-}
+    .other-titles {
+        font-size: 36px;
+        line-height: 55px;
+    }
 
-.icon-pic {
-    width: 60px;
-    height: 60px;
-}
+    .icon-pic {
+        width: 60px;
+        height: 60px;
+    }
 
-.profile-img {
-    width: 200px;
-    height: 200px;
-}
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
 
-.title-box {
-    margin-bottom: 60px;
-}
+    .title-box {
+        margin-bottom: 60px;
+    }
 
-.contact-social-links {
-    display: flex;
-    justify-content: space-around;
-}
+    .contact-social-links {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 /*-----------MEDIA QUERY FOR DESKTOP------------------*/
@@ -535,7 +537,7 @@ h1 {
     }
 
     .social-icon:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 
     .icon-title {
