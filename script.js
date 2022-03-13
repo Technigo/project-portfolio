@@ -4,6 +4,14 @@ const otherContainer = document.getElementById("otherContainer");
 
 const projects = [
   {
+    image: "img/final-project-pomodoro.png",
+    name: "Pomodoro App",
+    link: "https://final-project-pomodoro.netlify.app/",
+    description:
+      " A task-tracker based on the Pomodoro technique, a time management method that helps the user to stay focused while completing tasks.",
+    tags: ["React", "Redux", "React Router", "Styled Componenets"],
+  },
+  {
     image: "img/express_api_project.png",
     name: "Express Api",
     link: "https://dl-shows-api.netlify.app/",
