@@ -1,8 +1,9 @@
 The project was to create a portfolio website displaying my projects, my insights on code and skills.
 
 #**Features**
--Responsive design
+
 - Accessibility-friendly and cross-browser testing
+- -Responsive design
 
 **Learning**
 Using HTML validaton tool to understand best practises to write clean code.
