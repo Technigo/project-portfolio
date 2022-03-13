@@ -34,8 +34,6 @@ body {
   justify-content: flex-end;
   height: 100%;
   padding-bottom: 44px;
-
-  /* box-sizing: border-box; */
 }
 
 .header-icons {
@@ -75,6 +73,10 @@ body {
   color: white;
 }
 
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* intro section */
 .line {
   border: 1px solid orangered;
@@ -110,7 +112,7 @@ h3 {
   background-color: red;
   display: inline-flex;
   color: white;
-  height: 27px;
+  line-height: 27px;
   font-size: 22px;
   padding: 0 3px 0 3px;
 }
@@ -133,15 +135,16 @@ h3 {
   line-height: 25px;
 }
 
+.font-div {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* featured projects */
 .img-overlay {
   position: relative;
-  /* width: 327px; */
 }
 
 .card-img {
-  /* width: 327px; */
-  /* height: 212px; */
   filter: brightness(60%);
 }
 
@@ -191,12 +194,14 @@ h4 {
   color: red;
   margin-bottom: 5px;
   margin-top: 5px;
-  /* texten ska flyta från start, samma med ptaggarna */
-  /* rubrikerna centrerade */
 }
 
 img {
   width: 100%;
+}
+
+.card-hide {
+  display: none;
 }
 
 /* my thoughts */
@@ -249,7 +254,6 @@ img {
 /* skills */
 .container-skills {
   text-align: center;
-  /* padding: 0 24px 40px 24px; */
   flex-wrap: wrap;
 }
 
@@ -269,31 +273,11 @@ img {
   color: red;
 }
 
-/* .list-tags ul {
-  list-style-type: none;
-  padding-bottom: 20px;
-  justify-content: start;
-  flex-wrap: wrap;
-  flex-direction: column;
-  display: flex;
-} */
-
 ul {
   /* display: flex; */
   list-style: none;
   padding-left: 0;
 }
-
-/* .tags li {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 11px;
-  background-color: #fddfe7;
-  padding: 4px;
-  margin: 3px;
-  border-radius: 1px;
-} */
 
 /* for more */
 .for-more-icons {
@@ -429,6 +413,7 @@ a:hover {
     width: 600px;
   }
 
+  /* font sizes */
   h6 {
     font-size: 22px;
     line-height: 30px;
@@ -448,9 +433,37 @@ a:hover {
     margin-top: 0;
   }
 
+  h3 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .red-h5 {
+    font-size: 25px;
+  }
+
+  .headlines h4 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  .card h5,
+  .card-thoughts p,
+  .more-thoughts-txt,
+  .thoughts-link,
+  .skills-card {
+    font-size: 25px;
+  }
+
+  /* intro */
   .line-dot-txt {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 27px;
+    line-height: 40px;
   }
 
   /* featured projects */
@@ -461,6 +474,10 @@ a:hover {
 
   .card-group {
     padding: 15px;
+  }
+
+  .card-hide {
+    display: block;
   }
 
   /* my thoughts */
@@ -478,9 +495,19 @@ a:hover {
   }
 
   .thoughts-img {
+    width: 520px;
+    height: 354px;
   }
 
   .thoughts-pad {
     padding: 15px;
   }
+
+  .for-more-icons {
+    padding-bottom: 20px;
+  }
+
+  .for-more-icons img {
+    height: 80px;
+    width: 80px
 }
