@@ -182,13 +182,10 @@ margin-bottom: 24px;
 
 .project-image-group {
 position: relative;
+display: grid;
 align-items: center;
 justify-content: center;
 text-align: center;
-}
-
-.project-image {
-width: 300px;    
 }
 
 .project-overlay {
@@ -198,12 +195,26 @@ right: 0;
 bottom: 0;
 left: 0;
 background: rgba(1, 61, 182, 0.3);
+transition: 0.5s ease;
+}
+
+.project-image { /*this makes the overlay cover the images without overflow*/
+width: 100%;
+display: inherit;
+}
+
+.project-image-group:hover .project-overlay, .project-image-group:hover .project-image-text {
+background-color: transparent;
+color: transparent;
 }
 
 .project-image-text {
 position: absolute;
-top: 35%;
-left: 25%;
+top: 40%;
+margin: auto;
+left: 0%;
+right: 0%;
+bottom: 0%;
 
 font-family: Montserrat;
 font-style: normal;
@@ -333,7 +344,7 @@ display: grid;
 }
 
 .my-skills-columns {
-display: grid; /*So this is wierd to have to display grids but otherwise it did not work*/
+display: grid; /*So this is wierd to have two display grids but otherwise it did not work*/
 grid-template-columns: repeat(2, 1fr);  
 grid-gap: 25px;
 margin-bottom: 24px;
@@ -473,9 +484,15 @@ grid-gap: 55px;
 display: inline;
 text-decoration: underline;
 }
+
 .tablet-text {
 display: inline;
 text-decoration: underline;
+}
+
+.poop-emoji-image {
+height:225px;   
+width: 330px; 
 }
 }
 
@@ -495,4 +512,9 @@ left: 750px;
 left: 775px;
 top: 115px;    
 }
+
+.poop-emoji-image {
+    height:265px;   
+    width:400px; 
+    }
 }
