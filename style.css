@@ -3,6 +3,8 @@
     --secondary: rgba(97, 30, 114, 0.4);
     --light: rgb(244, 244, 244);
     --transparent-light: rgba(244, 244, 244, .3);
+    --shadow: rgba(0, 0, 0, 0.6);
+    --rusty: rgb(124,45,51);
 }
 
 body {
@@ -22,8 +24,8 @@ header {
     height: 520px;
     background-size: cover;
     color: #fff;
-    background-image: url(./assets/ernest-brillo-Qi8CvonsYnM-unsplash.jpg);
-    background-position-y: 80%;
+    background-image: url(./assets/klara-kulikova-kiLdjFm2y14-unsplash.jpg);
+    /* background-position-y: 80%; */
 }
 
 header p {
@@ -132,12 +134,13 @@ h1 {
 }
 
 .section-heading-background {
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
+    background-color: var(--rusty);
     padding: 0 5px;
 }
 
 .project-heading {
-    color: var(--primary);
+    color: var(--rusty);
     font-size: 17px;
     margin: 0;
 }
@@ -147,7 +150,7 @@ h1 {
     line-height: 25px;
     margin: 17px 0;
     text-align: center;
-    color: var(--primary);
+    color: var(--rusty);
 }
 
 .other-projects-img-container {
@@ -185,7 +188,7 @@ h1 {
 }
 
 .var--primary {
-    color: var(--primary);
+    color: var(--rusty);
 }
 
 .section:nth-child(2n) {
@@ -209,7 +212,7 @@ h1 {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(73, 24, 85, 0.6);
+    background-color: var(--shadow);
     transition: 0.5s ease;
 }
 
@@ -252,7 +255,7 @@ h1 {
 
 .footer {
     min-height: 302px;
-    background-color: var(--primary);
+    background-color: var(--rusty);
     text-align: center;
     color: #fff;
 }
@@ -272,7 +275,7 @@ a[href^=tel] {
 }
 
 .start-line {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--rusty);
     width: 40px;
     display: inline-block;
     margin-bottom: 4px;
@@ -281,7 +284,7 @@ a[href^=tel] {
 .start-dot {
     height: 10px;
     width: 10px;
-    background-color: var(--primary);
+    background-color: var(--rusty);
     border-radius: 50%;
     display: inline-block;
 }
@@ -294,7 +297,7 @@ a[href^=tel] {
 .tag-wrapper p {
     color: #2b2e34;
     font-weight: bold;
-    background-color: #db9aab;
+    /* background-color: #db9aab; */
     font-size: 12px; 
     line-height: 12px;
     font-weight: 400;
@@ -303,19 +306,31 @@ a[href^=tel] {
     border-radius: 5px;
 }
 
+.js-tag {
+    background-color: rgba(248, 178, 1, 0.856);
+}
+
+.html-tag {
+    background-color: rgba(201, 68, 47, 0.699);
+}
+
+.css-tag {
+    background-color: rgba(167, 76, 94, 0.616);
+}
+
 .for-more-icon-text {
     font-size: 11px;
-    color: var(--primary);
+    color: var(--rusty);
 }
 
 .skills-list-heading {
-    color: var(--primary);
+    color: var(--rusty);
 }
 
 .skills-content-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    /* gap: 20px; */
     text-align: center;
     font-family: Roboto;
     font-size: 17px;
@@ -326,7 +341,7 @@ a[href^=tel] {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     margin: 5px;
 }
 
@@ -346,7 +361,7 @@ a[href^=tel] {
 }
 
 .icon-color-border {
-    border: 2px solid var(--primary);
+    border: 2px solid var(--rusty);
     width: 60px;
     height: 60px;
 }
@@ -363,9 +378,9 @@ a[href^=tel] {
     justify-items: center;
 }
 
-.icon-border:hover {
+/* .icon-border:hover {
     opacity: .8;
-}
+} */
 
 .contact-header {
     font-size: 21px;
@@ -385,9 +400,9 @@ a[href^=tel] {
 
 .arrow-link {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--rusty);
     font-weight: 700;
-    text-decoration-color: var(--primary);
+    text-decoration-color: var(--rusty);
 }
 
 .more-thoughts {
@@ -460,10 +475,14 @@ a[href^=tel] {
         line-height: 122%;
     }
 
+    header {
+        height: 70vh;
+    }
+    
     .summary-section,
     .tech-section p {
-        font-size: 23px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 35px;
     }
 
     .header-subheader {
@@ -483,7 +502,7 @@ a[href^=tel] {
     }
 
     .profile-img-container {
-        top: 320px;
+        top: 450px;
         width: 250px;
         height: 250px;
     }
@@ -501,9 +520,14 @@ a[href^=tel] {
         height: 80px;
     }
 
+    .header-icon-border:hover {
+        background-color: var(--rusty);
+        border: 2px solid var(--rusty);
+    }
+
     .icon-color-border {
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
     }
 
     .project-heading {
@@ -534,10 +558,10 @@ a[href^=tel] {
         line-height: 30px;
     }
 
-    .for-more-icon-text,
+    /* .for-more-icon-text,
     .skills-list-heading {
-        font-size: 24px;
-    }
+        font-size: 20px;
+    } */
 
     .skills-list-container {
         font-size: 20px;
