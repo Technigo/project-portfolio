@@ -41,7 +41,7 @@ position: relative; /*this needs to be here since position absolute needs contex
 position: absolute;
 width: 180px;
 height: 180px;
-left: 171px;
+left: 200px;
 top: 356px;
 right: 24px;
 bottom: -16px;
@@ -54,35 +54,50 @@ border-color: #fff;
 .hero-icon1, .hero-icon2, .hero-icon3 {
 width: 130,5px;
 height: 45px;  
+margin: 5px;
 }
 
 .hero-icon-box {
-position: absolute;
+/* position: absolute;
 top: 48px;
-left: 220px;
+left: 200px;
 right: 24,5px;
-bottom: 432px;   
+bottom: 432px;    */
+ display: flex; 
+ justify-content: end; 
+ align-items: flex-end; 
+ -webkit-justify-content: flex-end; 
+ -webkit-align-items: flex-end; 
+ margin-bottom: 25px;
 }
 
 .hero-text-container {
 color:#fff;
-position: absolute;
+/* position: absolute; */
 width: 220px;
 height: 202px;
-left: 24px;
+/* left: 24px;
 top: 121px;
 right: 131px;
-bottom: 197px;    
+bottom: 197px;     */
 }
 
 .hero-text-container h2 {
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 13px;
+font-size: 14px;
 line-height: 18px;
 /* or 138% */
 letter-spacing: 0.04em;
+}
+
+.roboto {
+font-family: 'Roboto', sans-serif;
+}
+
+.bold {
+font-weight: 700;
 }
 
 .hero-text-container h1 {
@@ -344,7 +359,7 @@ display: grid;
 }
 
 .my-skills-columns {
-display: grid; /*So this is wierd to have two display grids but otherwise it did not work*/
+display: grid; 
 grid-template-columns: repeat(2, 1fr);  
 grid-gap: 25px;
 margin-bottom: 24px;
@@ -432,6 +447,9 @@ color: #FFFFFF;
 padding-bottom: 55px;
 }
 
+/*to stop iphones from turning phone number into link*/
+a[href^=tel] { text-decoration: none; color: white; }
+
 /*RESPONSIVENESS TABLET*/
 
 @media (min-width: 768px) {
@@ -449,7 +467,7 @@ background-position-x: center;
 .profile-image {
 width: 175px;
 height: 175px;
-left: 500px;
+left: 535px;
 top: 325px;
 }
 
@@ -483,11 +501,13 @@ grid-gap: 55px;
 
 .tablet-heading {
 display: inline;
-text-decoration: underline;
 }
 
 .tablet-text {
 display: inline;
+}
+
+.underline {
 text-decoration: underline;
 }
 
@@ -495,7 +515,6 @@ text-decoration: underline;
 height:225px;   
 width: 330px; 
 }
-
 }
 
 /*RESPONSIVENESS DESKTOP*/
@@ -507,7 +526,7 @@ width: 850px;
 .profile-image {
 width: 195px;
 height: 195px;
-left: 750px;
+left: 775px;
 }
 
 .hero-icon-box {
