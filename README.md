@@ -1,4 +1,4 @@
-The project was to create a reponsive portfolio website displaying my projects, my insights on code and skills.
+The project was to create a portfolio website displaying my projects, my insights on code and skills.
 
 #**Features**
 -Responsive design
