@@ -7,3 +7,4 @@ This weeks projects was to follow a figma design on how to create a mobile and d
 This weeks project was also to use cross browers testing and make the webside more web acessible for people with different disabilities.  
 
 # to view
+https://tereses-portfolio.netlify.app/
