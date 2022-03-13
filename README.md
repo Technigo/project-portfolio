@@ -6,7 +6,7 @@ The project was to create a portfolio website displaying my projects, my insight
 - -Responsive design
 
 **Learning**
-Using HTML validaton tool to understand best practises to write clean code.
+- Using HTML validaton tool to understand best practises to write clean code.
 
 **Deployed site **
 https://sherin-portfolio.netlify.app/
