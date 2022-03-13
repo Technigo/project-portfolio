@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-  background-image: url(/assets/hero.jpg);
+  background-image: url(/assets/jakob-rosen-WG8ZXIREtco-unsplash.jpg);
   background-size: cover;
   width: 100%;
   height: 520px;
@@ -43,6 +43,8 @@ body {
   top: 48px;
   right: 24.5px;
   gap: 5px;
+  /* för att ändra färg på de */
+  /* filter: invert(50%); */
 }
 
 .header-icons img {
@@ -70,7 +72,7 @@ body {
   position: absolute;
   margin: 24px;
   padding-right: 131px;
-  color: brown;
+  color: white;
 }
 
 /* intro section */
@@ -134,18 +136,20 @@ h3 {
 /* featured projects */
 .img-overlay {
   position: relative;
+  /* width: 327px; */
 }
 
 .card-img {
-  width: 327px;
+  /* width: 327px; */
   /* height: 212px; */
+  filter: brightness(60%);
 }
 
 .overlay {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
-  right: -7px;
-  bottom: 4px;
+  right: 0px;
+  bottom: 6px;
   left: 0;
   background-color: rgba(140, 140, 140, 0.5);
 }
@@ -164,22 +168,22 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
-ul {
+.tag-wrapper {
   display: flex;
-  list-style-type: none;
-  padding-bottom: 20px;
-  justify-content: start;
 }
 
-.tags li {
+.tag-wrapper p {
   font-family: 'Roboto', sans-serif;
+  color: #2b2e34;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 11px;
+  letter-spacing: 1%;
   background-color: #fddfe7;
+  text-decoration: none;
   padding: 4px;
   margin: 3px;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 h5,
@@ -192,7 +196,7 @@ h4 {
 }
 
 img {
-  width: 327px;
+  width: 100%;
 }
 
 /* my thoughts */
@@ -224,26 +228,78 @@ img {
 
 /* more thoughts */
 .more-thoughts-gr,
-.more-thoughts-txt,
-.thoughts-link {
+.more-thoughts-txt {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 17px;
   line-height: 29px;
   color: black;
   text-decoration: underline grey;
 }
 
+.thoughts-link {
+  font-weight: 700;
+  color: black;
+  text-decoration: underline grey;
+  font-size: 17px;
+  line-height: 29px;
+  font-family: 'Roboto', sans-serif;
+}
+
 /* skills */
+.container-skills {
+  text-align: center;
+  /* padding: 0 24px 40px 24px; */
+  flex-wrap: wrap;
+}
+
+.skills-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skills-card {
+  width: 150px;
+  padding: 15px;
+}
 
 .skills-head {
   color: red;
 }
 
+/* .list-tags ul {
+  list-style-type: none;
+  padding-bottom: 20px;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+} */
+
+ul {
+  /* display: flex; */
+  list-style: none;
+  padding-left: 0;
+}
+
+/* .tags li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 11px;
+  background-color: #fddfe7;
+  padding: 4px;
+  margin: 3px;
+  border-radius: 1px;
+} */
+
 /* for more */
 .for-more-icons {
   display: flex;
   justify-content: space-evenly;
+  filter: invert(50%);
 }
 
 .for-more-icons img {
@@ -287,6 +343,55 @@ a:hover {
   padding-bottom: 80px;
 }
 
+/* Tablet */
+@media (min-width: 468px) {
+  /* header section */
+  .header-img {
+    right: 20%;
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  .header-icons img {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px 0 5px;
+  }
+
+  .header-txt-gr {
+    padding-left: 45px;
+  }
+
+  /* global */
+  .container {
+    width: 65vw;
+    margin: 0 auto;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  .headlines h4 {
+    font-size: 23px;
+  }
+
+  /* tags */
+  .tag-wrapper p {
+    font-size: 15px;
+  }
+}
+
 /* Desktop */
 @media (min-width: 1023px) {
   /* global */
@@ -308,6 +413,13 @@ a:hover {
   .header-icons img {
     height: 80px;
     width: 80px;
+  }
+
+  .header-img {
+    top: 390px;
+    width: 300px;
+    height: 300px;
+    right: 15%;
   }
 
   .header-txt-gr {
@@ -336,17 +448,19 @@ a:hover {
     margin-top: 0;
   }
 
-  .header-img {
-    width: 300px;
-    height: 300px;
+  .line-dot-txt {
+    font-size: 30px;
+    line-height: 50px;
   }
 
   /* featured projects */
-  .card-group {
+  .card-flex {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-rows: 1fr 1fr; */
-    column-gap: 22px;
+    grid-template-columns: 50% 50%;
+  }
+
+  .card-group {
+    padding: 15px;
   }
 
   /* my thoughts */
@@ -355,5 +469,18 @@ a:hover {
   }
 
   .card-thoughts {
+    /* display: flex; */
+  }
+
+  .thoughts-flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .thoughts-img {
+  }
+
+  .thoughts-pad {
+    padding: 15px;
   }
 }
