@@ -4,146 +4,237 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tereses Portfolio</title>
+    <meta name="title" content="Terese Claessons frontend developer protfolio">
+    <meta name="description" content="An aspiring frontend developer with background in biomedical scientist and business developer">
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Terese Claesson's Portfolio</title>
   </head>
 
   <body>
+
+    <!-----------Header--------->
     <header class="header">
       <div class="container header-container">
-        <div class="top-section-images">
-          <div class="logos">
-            <img src="img/logos-figma.png" alt="logotypes of github, linkedin and stackoverflow">
+          <div class="header-links">
+            <a aria-label="Go to Linkedin profile" href="https://www.linkedin.com/in/terese-claesson-1b0385181/" target="_blank" title="Linkedin Terese Claesson">
+              <div class="icon-link">
+                <img class="icon-picture" src="./icons/linkedin.svg" alt="linkedin icon">
+              </div>
+            </a>
+            <a aria-label="Go to Github profile" href="https://github.com/TereseClaesson" target="_blank" title="Github Terese Claesson">
+              <div class="icon-link">
+                <img class="icon-picture" src="./icons/github.svg" alt="github icon">
+              </div>
+            </a>
+            <a aria-label="Go to stackoverflow profile" href="#" target="_blank" title="Stackoverflow Terese Claesson">
+              <div class="icon-link">
+                <img class="icon-picture" src="./icons/stackoverflow.svg" alt="stackoverflow icon">
+              </div>
+            </a>
           </div>
-          <div class="top-section-text">
-            <h1 class="portfolio-name">PORTFOLIO:</h1>
-            <h1 class="my-name">TERESE CLAESSON</h1>
-            <h1 class="bigger">Frontend Developer</h1> 
-            <h1 class="smaller">+ Biomedical Scientist <br> + Business Developer</h1>
+          <div class="header-text">
+            <p class="portfolio-owner">PORTFOLIO: <span class="bold">TERESE CLAESSON</span></p>
+            <h1 class="my-title">Frontend Developer</h1>
+            <p class="other-titles">With a background in Biomedical Science & business developer</p> 
           </div>
         </div> 
           <img class="profile-picture" src="img/profile pic.jpg" alt="Profile pictures of Terese">
         </div>
     </header>
+
+    <!---Summary------>
     <section class="section">
       <div class="container">
         <p class="summary-section">
-          <span class="line"></span>
-          <span class="dot"></span>
-        Hello! I am a strategic,flexible and sociable person with experience in the area of biomedical science and knowledge and skills in leadership,quality,improvement and now also skills as a frontend deleloper.I am all about solving problems that matter and creating new meningful solutions.
+          <span class="line"></span><span class="dot"></span>
+       <span>Hello! I am a strategic,flexible and sociable person with experience in the area of biomedical science and knowledge and skills in leadership,quality,improvement and now also skills as a frontend deleloper.I am all about solving problems that matter and creating new meningful solutions.</span>
       </p>
       </div>
     </section>
+
+
     <section class="section">
       <div class="container">
-        <div class="tech">
-        <h2 class="tech-title">Tech</h2>
+        <div class="title-box">
+        <h2 class="title">Tech</h2>
+        </div>
         <p class="tech-text">HTML, CSS, Flexbox, <span class="color">JavaScript</span>, pair-programing,mob-programing</p>
       </div>
-      </div>
     </section>
+
+<!----------Projects------------->
     <section class="section">
       <div class="container">
-        <article class="projects">
-          <h2>Feature projects</h2>
-          <div class="grid-container">
-          <div class="grid1">
-          <div class="projects-pictures-mobile">
-            <img class="project-image" src="./img/gameboard-guess-who.png" alt="A screenshot of the game guess who?" >
-            <div class="project-pictures-overlay"></div>
-            <h2 class="text-over-image">Guess who</h2>
-          </div>
-          <div class="project-text-mobile">
-         <span class="highlight">Game Guess Who?</span><br>
-         <a href="https://github.com/TereseClaesson/project-guess-who" tabindex="0" role="button" aria-pressed="false" aria-label="Game-Guess who repository" target="_blank" rel="noreferrer">  
-          Classic boardgame inspired game site in Javascript.</a>
-         <div class="button-wrapper">
-         <button>HTML5</button>
-         <button>CSS3</button>
-         <button>Javascript ES6</button>
-        </div>
-        </div>  
-      </div>
-      <div class="grid2">
-          <div class="projects-pictures-mobile">
-            <img class="project-image" src="./img/weather-app.png" alt="A screenshot from the group project there we built a weather app" >
-            <div class="project-pictures-overlay"></div>
-            <h2 class="text-over-image">Weather app</h2>
-          </div>
-          <div class="project-text-mobile">
-         <span class="highlight">Weather app</span><br>
-         <a href="https://github.com/TereseClaesson/project-weather-app" tabindex="0" role="button" aria-pressed="false" aria-label="weather app repository" target="_blank" rel="noreferrer">  
-            Milimalistic inspired weather app created with in Javascript using APIs to get the current weather state.</a>
-         <div class="button-wrapper">
-         <button>HTML5</button>
-        <button>CSS3</button>
-        <button>Javascript ES6</button>
-        <button>APIs</button>
-         </div>
-        </div>  
-      </div>  
-      <div class="grid3">
-          <div class="projects-pictures-desktop">
-            <img class="project-image" src="./img/inspirational-bot.png" alt="A screenshot from an pair programmingsproject,where we built a chatbot" >
-            <div class="project-pictures-overlay"></div>
-            <h2 class="text-over-image">Inspirational bot</h2>
-          </div>
-          <div class="project-text-desktop">
-         <span class="highlight">Inspirational bot</span><br>
-         <a href="https://github.com/TereseClaesson/project-chatbot" tabindex="0" role="button" aria-pressed="false" aria-label="inspirational bot repository" target="_blank" rel="noreferrer">  
-            A chatbot that will give Inspirational answers,that is created in Javascript.</a>
-         <div class="button-wrapper">
-         <button>HTML5</button>
-         <button>CSS3</button>
-         <button>Javascript ES6</button>
-        </div>
-        </div>  
-        </div>
-        <div class="grid4">
-          <div class="projects-pictures-desktop">
-            <img class="project-image" src="./img/coffee-newssite.png" alt="A screenshot from a coffee newssite" >
-            <div class="project-pictures-overlay"></div>
-            <h2 class="text-over-image">Coffee Newssite</h2>
-          </div>
-          <div class="project-text-desktop">
-         <span class="highlight">The world of coffee</span><br>
-         <a href="https://github.com/TereseClaesson/project-news-site" tabindex="0" role="button" aria-pressed="false" aria-label="coffee newssite repository" target="_blank" rel="noreferrer">  
-            Newssite inspired from the world of coffee.</a>
-         <div class="button-wrapper">
-         <button>HTML5</button>
-         <button>CSS3</button>
-        </div>
-        </div>  
-      </div>
-    </div>  
+        <div class="title-box"><h2 class="title">Feature projects</h2></div>
+      
+        <!-----ETT-------------------------> 
+
+<div class="project-container">
+<div class="tablet-layout">
+  <article class="project">
+    <!----lägg in netlify-->
+    <a href="https://gameboard-guess-who.netlify.app/" aria-label="project guess who project" target="_blank" rel="noreferrer">
+    <div class="project-image-group">
+      <img class="project-image" src="./img/game.png" alt="A screenshot of the game guess who?" >
+      <div class="project-overlay"></div>
+      <h2 class="text-over-image">Guess who</h2>
+    </div>
+  </a>
+  <!----lägg in github repositories-->
+  <a href="https://github.com/TereseClaesson/project-guess-who" aria-label="project guess who github repository" target="_blank" rel="noreferrer">
+      <div class="project-text-group">
+        <h3 class="feature-project-title">Game Guess Who?</h3>
+         <p class="project-description">boardgame inspired game site in Javascript.</p></div>
+        <div class="tag-wrapper">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Javascript ES6</span>
+    </div>
+  </a>
   </article>
-        <div class="project-text">
-         <h2 class="project-heading">Other projects</h2>
-        <span class="highlight">Ski Lessons</span><br>
-          <a href="https://github.com/TereseClaesson/project-business-site" tabindex="0" role="button" aria-pressed="false" aria-label="business site repository" target="_blank" rel="noreferrer">  
-             SKiing inspired site wrote with according using Javascript.</a>
-               <span class="bold highlight">&nbsp;&gt;&gt;</span>
-                <div class="button-wrapper">
-               <button>HTML5</button>
-              <button>CSS3</button>
-             <button>Javascript ES6</button>
-          </div>
-         <br>
-      <span class="highlight">Github Tracker</span><br>
-           <a href="https://github.com/TereseClaesson/project-github-tracker" tabindex="0" role="button" aria-pressed="false" aria-label="aussie burgers repository" target="_blank" rel="noreferrer">  
-             Foodora inspired site in Javascript using Zomato's API to list burger restaurants in Sydney, Australia.
-             </a>
-             <span class="bold highlight">&nbsp;&gt;&gt;</span> <br>
-            <div class="button-wrapper">
-         <button>HTML5</button>
-         <button>CSS3</button>
-         <button>Javascript ES6</button>
-         <button>APIs</button>
-        </div>
-        </div>  
+
+
+  <!--------TVÅ----------------------->
+
+  <article class="project">
+    <!----lägg in netlify-->
+    <a href="https://minimalist-weather-app.netlify.app/" aria-label="project wether app" target="_blank" rel="noreferrer">
+    <div class="project-image-group">
+      <img class="project-image" src="./img/weather.png" alt="A screenshot of a minimalistic weather app" >
+      <div class="project-overlay"></div>
+      <h2 class="text-over-image">Weather app</h2>
+    </div>
+  </a>
+  <!----lägg in github repositories-->
+  <a href="https://github.com/TereseClaesson/project-weather-app" aria-label="weather app github repository" target="_blank" rel="noreferrer">
+      <div class="project-text-group">
+        <h3 class="feature-project-title">Weather app</h3>
+         <p class="project-description">Minimalistic inspired weather app created with in Javascript using APIs to get the current weather state.</p></div>
+        <div class="tag-wrapper">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Javascript ES6</span>
+        <span class="tag">APIs</span>
+    </div>
+  </a>
+  </article>
+
+<!-------TRE------------------------->
+
+  <article class="project">
+    <!----lägg in netlify-->
+    <a href="https://w9-music-releases.netlify.app/" aria-label="project music release app" target="_blank" rel="noreferrer">
+    <div class="project-image-group">
+      <img class="project-image" src="./img/music.png" alt="A screenshot of a spotify music app" >
+      <div class="project-overlay"></div>
+      <h2 class="text-over-image">Music app</h2>
+    </div>
+  </a>
+  <!----lägg in github repositories-->
+  <a href="https://github.com/TereseClaesson/project-music-releases-1" aria-label="music release app github repository" target="_blank" rel="noreferrer">
+      <div class="project-text-group">
+        <h3 class="feature-project-title">Music app</h3>
+         <p class="project-description">A music release app that fetches the 50 most listened songs from spotify.</p></div>
+        <div class="tag-wrapper">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Javascript ES6</span>
+        <span class="tag">APIs</span>
+        <span class="tag">React</span>
+    </div>
+  </a>
+  </article>
+
+
+<!---FYRA------------------------------>
+
+  <article class="project">
+    <!----lägg in netlify-->
+    <a href="https://buiness-site-about-skiing-lessons.netlify.app/" aria-label="buiness site about skiing lessons who project" target="_blank" rel="noreferrer">
+    <div class="project-image-group">
+      <img class="project-image" src="./img/skii.png" alt="A screenshot of a business site about skiing lessons" >
+      <div class="project-overlay"></div>
+      <h2 class="text-over-image">Book your skiing lessons here</h2>
+    </div>
+  </a>
+  <!----lägg in github repositories-->
+  <a href="https://github.com/TereseClaesson/project-business-site" aria-label="business site github repository" target="_blank" rel="noreferrer">
+      <div class="project-text-group">
+        <h3 class="featured-project-title">Skiing lessons</h3>
+         <p class="project-description">SKiing inspired site wrote with according using Javascript.</p></div>
+        <div class="tag-wrapper">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Javascript ES6</span>
+    </div>
+  </a>
+  </article>
+</div>
+
+  <!------------OTHER PROJECTS--------------->
+
+<div class="subtitle-box">
+  <h2 class="subtitle">Other projects</h2>
+</div>
+
+<article class="other-project">
+<a href="#" aria-label="text here" target="_blank">
+  <div class="other-project-box">
+  <h3 class="other-project-title underline">add title</h3>
+  <p class="other-project-description underline"> add despription
+    <span class="arrow underline" aria-hidden="true">&gt;&gt</span>
+  </p>
+  <div class="tag-wrapper">
+    <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Javascript ES6</span>
+  </div>
+  </div>
+</a>
+</article>
+
+<article class="other-project">
+  <a href="https://github.com/TereseClaesson/project-github-tracker" aria-label="text here" target="_blank">
+    <div class="other-project-box">
+    <h3 class="other-project-title underline">Github tracker</h3>
+    <p class="other-project-description underline"> add despription
+      <span class=" arrow underline" aria-hidden="true">&gt;&gt</span>
+    </p>
+    <div class="tag-wrapper">
+      <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Javascript ES6</span>
+    </div>
+    </div>
+  </a>
+  </article>
+
+
+  <article class="other-project">
+    <a href="https://github.com/TereseClaesson/project-business-site" aria-label="text here" target="_blank">
+      <div class="other-project-box">
+      <h3 class="other-project-title underline">Skiing lessons</h3>
+      <p class="other-project-description underline"> SKiing inspired site wrote with according using Javascript
+        <span class="arrow underline" aria-hidden="true">&gt;&gt</span>
+      </p>
+      <div class="tag-wrapper">
+        <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Javascript ES6</span>
+      </div>
+      </div>
+    </a>
+    </article>
+</div>
+</div>
+</section>  
+
+<!------thoughts------------->
+
     </section>
     <section class="section">
       <div class="container">
@@ -152,11 +243,16 @@
           <img class="thoughts-image" src="img/lightbulb.jpg" alt="A image of a ligthbuld hold by a hand with a ligthpink and ligthblue">
         </article>
       </div>
-    </section>   
+    </section> 
+    
+    
+<!--------skills------------>
+
     <section class="section">
       <div class="container">
+        <div class="title-box">
         <h2 class="title">SKills</h2>
-        </div>
+      </div>
       <div class="skills-box">
         <article class="skills">
             <h3 class="skills-heading">CODE</h3>
@@ -182,32 +278,68 @@
               <li>Kanban</li>
             </ul>
         </article>
+
+        <article class="skills">
+          <h3 class="skills-heading">MORE</h3>
+          <ul class="skills-list">
+            <li>mob-programing</li>
+            <li>pair-programing</li>
+            <li>.....</li>
+          </ul>
+      </article>
+
       </div>
     </div>
     </section>
+
+<!------For more------->
+
     <section class="section">
       <div class="container">
-        <div class="more-logos">
-          <h2>For More</h2>
-          <div class="big-logos">
-            <img src="img/linkedin.png" alt="linkedin-logo">
-            <img src="img/github.png" alt="github-logo">
-            <img src="img/stackoverflow.png" alt="stackoverflow-logo">
+        <div class="title-box">
+          <h2 class="title">For More</h2>
+        </div>
+          <div class="more-icons">
+            
+            <a href="https://www.linkedin.com/in/terese-claesson-1b0385181/" aria-label="link that takes you to linkedin" target="_blank" title="linkedin Terese Claesson">
+              <div class="social-link">
+                <img class="image-link" src="./icons/Li.svg" alt="icons that go to linkedin">
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/terese-claesson-1b0385181/" aria-label="link that takes you to linkedin" target="_blank" title="linkedin Terese Claesson">
+              <div class="social-link">
+                <img class="image-link" src="./icons/SO.svg" alt="icons that go to linkedin">
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/terese-claesson-1b0385181/" aria-label="link that takes you to linkedin" target="_blank" title="linkedin Terese Claesson">
+              <div class="social-link">
+                <img class="image-link" src="./icons/GH.svg" alt="icons that go to linkedin">
+              </div>
+            </a>
+      
           </div>
+
           <div class="more-section-text">
-            <p>LINKEDIN</p>
-            <p>GITHUB</p>
-            <p>STACKOVERFLOW</p>
+            <a href="https://www.linkedin.com/in/terese-claesson-1b0385181/" aria-label="link that takes you to linkedin" target="_blank" title="linkedin Terese Claesson">
+              <p class="icon-text">LINKEDIN</p></a>
+              <a href="https://stackoverflow.com/users/17890431/tessie" aria-label="link that takes you to stackoverflow" target="_blank" title="the homepage for Terese Claesson's stackoverflow">
+                <p class="icon-text">STACKOVERFLOW</p></a>
+              <a href="https://github.com/TereseClaesson" aria-label="link that takes you to github" target="_blank" title="Terese Claesson's github homepage">
+                <p class="icon-text">GITHUB</p></a>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer">
+
+<!--------FOOTER------------>
+    <footer>
       <div class="contact">
-        <p>Contact</p>
-        <p>Terese Claesson</p>
-        <p>0703-270796</p>
-        <p><a href="mailto:terese.claesson@gmail.com">terese.claesson@gmail.com</a></p>
+        <h2 class="footer-title">Contact</h2>
+        <p class="footer-text">Terese Claesson</p>
+        <p class="footer-text">0703-270796</p>
+        <a href="mailto:terese.claesson@gmail.com">terese.claesson@gmail.com</a>
       </div>
     </footer>
   </body>

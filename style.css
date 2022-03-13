@@ -1,9 +1,22 @@
-/*Global styles*/
+/*------------Global--------------*/
+:root {
+  ---primary: #046b99;
+  ---secondary: #8ba6ca;
+  ---main: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-border-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
 
 body {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -33,8 +46,8 @@ h1 {
 h2 {
   display: table;
   text-align: center;
-  color: #fff;
-  background-color: #008e89;
+  color: var(---main);
+  background-color: var(---secondary);
   font-size: 22px;
   line-height: 25px;
   text-transform: uppercase;
@@ -49,14 +62,26 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   margin: 10px auto 0 auto;
-  color: black;
+  color: var(---secondary);
 }
 
-/*Header*/
+p {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*-------------Header---------------*/
 
 .header {
   height: 520px;
-  background-image: url("img/oppertunities.jpg");
+  background-image: url("img/water.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -69,50 +94,44 @@ h3 {
   justify-content: flex-end;
 }
 
-.top-section-text {
+.header-links {
+  position: absolute;
+  display: flex;
+  top: 48px;
+  right: 25px;
+  gap: 10px;
+}
+
+.icon-picture {
+  width: 40px;
+  height: 40px;
+}
+
+.header-text {
   position: absolute;
   width: 220px;
   left: 24px;
   top: 121px;
-  color: #ffffff;
+  color: var(---main);
 }
 
-.portfolio-name {
-  display: inline-block;
+.portfolio-owner {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
-  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
-.my-name {
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
+.bold {
   font-weight: 700;
-  font-style: normal;
-  font-size: 13px;
-  line-height: 18px;
-  letter-spacing: 4%;
-  margin: 0;
 }
 
-.bigger {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 30px;
-  line-height: 39px;
-  margin: 0;
-}
-
-.smaller {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  margin: 0;
+.other-titles {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
 }
 
 .profile-picture {
@@ -123,26 +142,13 @@ h3 {
   right: 24px;
   border-radius: 50%;
   object-fit: cover;
+  border: 2px solid var(---main);
 }
 
-.logos {
-  position: absolute;
-  width: 130.5px;
-  height: 40px;
-  left: 220px;
-  top: 48px;
-}
-
-/*Summary sections*/
-
-.summary-section p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
-  line-height: 29px;
-}
+/*-------------Summary sections---------------*/
 
 .line {
-  border: 1px solid #db9aab;
+  border: 1px solid var(---primary);
   width: 40px;
   display: inline-block;
   margin-bottom: 4px;
@@ -151,135 +157,153 @@ h3 {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #db9aab;
+  background-color: var(---primary);
   border-radius: 50%;
   display: inline-block;
 }
 
-/*Tech section*/
+/*---------styling container titles-----------*/
 
-.color {
-  color: #db9aab;
+.title-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
-.tech-title {
-  font-family: "Montserrat", sans-serif;
+.subtitle-box {
+margin-top: 50px;
+margin-bottom: 20px;
+text-align: center;
 }
+
+.title {
+  font-size: 22px;
+  line-height: 122%;
+  color: var(---main);
+  background-color: var(---primary);
+  padding: 0 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*--------Tech section------------*/
 
 .tech-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
-  line-height: 29px;
-}
-
-/*Projects section*/
-
-.grid3 {
-  display: none;
-}
-
-.grid4 {
-  display: none;
-}
-
-.projects h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  line-height: 27px;
+  margin-top: 24px;
   text-align: center;
-  color: #fff;
-  margin-bottom: 20px;
 }
 
-.highlight {
-  color: #db9aab;
+/*------Projects section-----------*/
+
+.project-container {
+  width: 327px;
 }
 
-.button-wrapper {
-  display: flex;
+.project {
+  margin-top: 30px;
 }
 
-.button-wrapper button {
-  font-family: "Roboto", sans-serif;
-  color: #2b2e34;
-  font-weight: bold;
-  background-color: #db9aab;
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 12px;
-  padding: 4px;
-  margin: 3px;
-  border-radius: 5px;
-}
-
-.projects-pictures-mobile {
+.project-image-group {
   position: relative;
+  margin-top: 32px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.project-text-mobile {
-  padding:20px;
-}
-
-.project-text-desktop {
-  padding:20px;
-}
-
-.project-text {
-  padding:20px;
-}
-
-.projects-pictures-desktop {
-  position: relative;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .project-image {
   width: 100%;
   display: inherit;
 }
 
-.text-over-image {
+.project-overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-}
-
-.project-pictures-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s ease;
 }
 
-.projects-pictures-mobile {
+.text-over-image {
+  color: var(---main);
+  background-color: transparent;
+  font-size: 28px;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  bottom: 0;
+  right: 0;
   transition: 0.5s ease;
+  text-align: center;
 }
 
-.project-heading {
+.project-image-group:hover .project-overlay, .project-image-group:hover .text-over-image {
+  background-color: transparent;
+  color: transparent;
+}
+
+.project-text-group {
+  margin-top: 7px auto;
+}
+
+.featured-project-title {
+  margin: 7px auto;
+  line-height: 171%;
+}
+
+.project-description {
   font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  line-height: 41px;
-  letter-spacing: 0.01em;
-  text-align: center;
 }
-.text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
-  line-height: 29px;
-  text-align: center;
+
+.other-projects {
+  margin-top: 40px;
+}
+
+.subtitle {
+  background-color: transparent;
+  color: var(---secondary)
+}
+.other-project-title {
+line-height: 132%;
+}
+
+.other-project-description {
+  font-family: "Roboto", sans-serif;
+  line-height: 171%;
+  color: var(---secondary);
+}
+
+.arrow {
+  color: var(---secondary);
+  text-decoration: underline var(---secondary);
+}
+
+.tag-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.tag {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 3px 5px;
+  margin: 0;
+  color: var(---main);
+  background-color: var(---primary);
 }
 
 
-/*Toughts section*/
+
+/*---------Toughts section-----------------*/
 
 .thoughts {
   font-family: "Montserrat", sans-serif;
@@ -292,14 +316,13 @@ h3 {
   padding: 20px;
 }
 
-/*Skills section*/
+/*----------Skills section---------------*/
 
 .skills-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 15px;   
-  flex-direction: column;
+  row-gap: 15px;
 }
 
 .skills {
@@ -310,8 +333,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   line-height: 171%;
-  text-transform: uppercase;  
-  color: #db9aab;  
+  text-transform: uppercase;
 }
 
 .skills-list {
@@ -322,59 +344,60 @@ h3 {
   list-style: none;
 }
 
-/*For more section*/
+/*------------For more section-----------------*/
 
-.big-logos {
+.more-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin: 40px;
 }
 
-.more-logos h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  line-height: 27px;
-  text-align: center;
-  color: #fff;
+.social-link {
+  justify-content: space-around;
 }
 
 .more-section-text {
-  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
 }
 
-/*footer*/
+/*-------------footer---------------*/
 
-.footer {
-  position: absolute;
-  width: 100%;
-  height: 302px;
-  left: 0px;
-  background: #db9aab;
-  padding: 0;
+footer {
+  height: 300px;
+  background: var(---secondary);
 }
 .contact {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 25px;
   text-align: center;
-  color: #ffffff;
-  margin: 60px 24px 84px 24px;
+  text-decoration: none;
+  color: var(---main);
+}
+
+.footer-title {
+  padding-top: 40px;
+  margin-bottom: 24px;
+  background-color: transparent;
+}
+
+.footer-text {
+  font-weight: bold;
 }
 
 .contact a {
-  color: #fff;
+  color: var(---main);
+  text-decoration: none;
 }
 
-/*Tablet*/
+.contact a:hover {
+  text-decoration: underline;
+}
+
+
+/*-----------Tablet----------------*/
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 60px;
@@ -383,127 +406,118 @@ h3 {
   .container {
     width: 768px;
   }
+
   .header-container {
     width: 718px;
   }
 
-  .top-section-text {
+  .header-text {
     width: 400px;
-    font-size: 28px;
-    line-height: 37px;
+  }
+
+  .portfolio-owner {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .other-titles {
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  .icon-picture {
+    width: 60px;
+    height: 60px;
   }
 
   .profile-picture {
-    width: 333px;
-    height: 333px;
+    width: 200px;
+    height: 200px;
   }
 
-  .more-logos img {
-    height: 160px;
-    width: 160px;
+  .project-container {
+    width: 100%;
+  }
+  .project-image-group {
+    width: 100%;
   }
 
-  .text {
-    font-family: "Montserrat", sans-serif;
-    font-size: 28px;
-    line-height: 41px;
-    letter-spacing: 1%;
+  .tablet-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
   }
 
-  .project-image {
-    width: 523px;
-    height: 305px;
-    margin: 27px;
+  .title-box {
+    margin-bottom: 60px;
   }
 
-  /*footer*/
-
-  .footer {
-    height: 570px;
-  }
-
-  .contact {
-    font-size: 38px;
-    line-height: 47px;
+  .more-icons {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
+/*---------Desktop--------------*/
 
-/*desktop*/
 @media screen and (min-width: 1200px) {
+
+  h1 {
+    font-size: 70px;
+    line-height: 85px;
+  }
+
+  h2 {
+    font-size: 26px;
+    line-height: 30px;
+    padding: 5px 10px;
+  }
+
+  h3, p, a {
+    font-size: 21px;
+    line-height: 34px;
+  }
+
   .container {
     width: 900px;
   }
 
-  .header {
-    height: 680px;
+  .header-container {
+    height: 800px;
   }
 
-  .logos {
-    left: 700px;
-    top: 102px;
-  }
-  .logos img {
-    width: 300px;
+  .icon-picture {
     height: 80px;
+    width: 80px;
   }
 
-  .grid3 {
-    display: grid;
+  .profile-picture {
+    width: 260px;
+    height: 260px;
   }
 
-  .grid4 {
-    display: grid;
+  .tag {
+    font-size: 20px;
+    padding: 10px;
   }
 
-  .logos img {
-    width: 300px;
-    height: 80px;
+  .other-project-title, .other-project-description {
+    display: inline;
   }
 
-  .more-logos img {
-    height: 160px;
-    width: 160px;
+  .underline {
+    text-decoration: underline;
+    text-underline-position: under;
   }
 
-  .text {
-    font-family: "Montserrat", sans-serif;
-    font-size: 28px;
-    line-height: 41px;
-    letter-spacing: 1%;
+  .title-box {
+    margin-bottom: 80px;
   }
 
-  .grid-container {
-    display: grid;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-column-end: 2;
-    grid-row-end: 2;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+  .title {
+    font-size: 30px;
   }
 
-  .grid1 {
-    grid-row: 1;
-    grid-column: 1;
-  }
-  .grid2 {
-    grid-row: 1;
-    grid-column: 2;
-  }
-  .grid3 {
-    grid-row: 2;
-    grid-column: 1;
-  }
-  .grid4 {
-    grid-row: 2;
-    grid-column: 2;
-  }
-
-  .project-image {
-    width: 350px;
-    height: 250px;
-    margin: 30px;
+  .more-icons {
+    font-size: 60px;
   }
 }
