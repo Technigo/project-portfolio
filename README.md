@@ -11,4 +11,4 @@ Project portfolio
 This was the most challenging project so far of boot camp. I will keep working on my portfolio and update it with coming projects.
 
 View it live
-www.marianneardin.com   
+https://marianneardin-portfolio.netlify.app/
