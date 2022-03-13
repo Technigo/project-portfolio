@@ -2,7 +2,7 @@
     ---primary: #CD8987;
     ---secondary: #828E82;
     ---main: #FFF;
-    ---highlight: #DF2935;
+    /*---highlight: #DF2935; /* Remove this since its not used anymore?  */
 }
 
 * {
@@ -73,10 +73,6 @@ p {
 a {
     cursor: pointer;
     text-decoration: none;
-}
-
-.color {
-    color: var(---highlight);
 }
 
 /*--------------STYLING HEADER-------------*/
@@ -265,11 +261,10 @@ a {
 
 .subtitle {
     background-color: transparent;
-    color: #000;
+    color: var(---secondary);
 }
 
 .other-projects-title {
-    margin: 7px auto;
     line-height: 132%;
 }
 
@@ -279,15 +274,9 @@ a {
     color: #000;
 }
 
-.arrows {
+.arrow {
     color: var(---secondary);
     text-decoration: underline var(---secondary);
-}
-
-.underline {
-    text-decoration-line: underline;
-    text-underline-position: under;
-
 }
 
 .tag-box {
@@ -295,6 +284,7 @@ a {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 8px;
+    margin-top: 5px;
 }
 
 .tag {
@@ -342,21 +332,38 @@ a {
 /*-----CONTACT SECTION -----*/
 .contact-social-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.social-skill {
+.social-link {
+    display: flex;
     flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px;
+}
+
+.contact-social-links a {
+    font-size: 24px;
 }
 
 .social-icon {
-    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.social-title {
-    align-self: flex-end;
+.icon-title {
+    font-family: "Roboto" sans-serif;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    line-height: 118%;
+    color: #000;
 }
-
 
 /* FOOTER STYLING */
 footer {
@@ -373,8 +380,7 @@ footer {
 .footer-heading {
     padding-top: 40px;
     margin-bottom: 24px;
-    background-color: transparent;
-    
+    background-color: transparent;  
 }
 
 .footer-text {
@@ -406,7 +412,7 @@ h1 {
     width: 718px;
 }
 
-.project-container{
+.project-container {
     width: 100%;
 }
 
@@ -444,11 +450,17 @@ h1 {
     height: 200px;
 }
 
+.title-box {
+    margin-bottom: 60px;
+}
+
 .contact-social-links {
     display: flex;
     justify-content: space-around;
 }
 }
+
+/*-----------MEDIA QUERY FOR DESKTOP------------------*/
 
 @media screen and (min-width: 1200px) {
     h1 {
@@ -477,14 +489,56 @@ h1 {
 
    .icon-pic {
         height: 80px;
+        width: 80px;
+    }
+
+    .icon-pic:hover {
+        transform: scale(1.2);
     }
 
     .profile-img {
-        width: 240px;
-        height: 240px;
+        width: 260px;
+        height: 260px;
     }
 
-    .tag p {
-        font-size: 15px;
+    .tag {
+        font-size: 18px;
+        padding: 10px;   
+    }
+
+   
+    .other-projects-title,
+    .other-projects-description {
+        display: inline;
+    }
+
+    .underline {
+        text-decoration-line: underline;
+        text-underline-position: under;
+    }
+
+    .title-box {
+        margin-bottom: 80px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .contact-social-links {
+        font-size: 60px;
+    }
+
+    .social-icon {
+        width: 110px;
+        height: 110px;
+    }
+
+    .social-icon:hover {
+        transform: scale(1.1);
+    }
+
+    .icon-title {
+        font-size: 20px;
     }
 }
