@@ -4,7 +4,7 @@
     The site has been tested accessibility with https://wave.webaim.org/ and https://jigsaw.w3.org/css-validator/. 
 
 # The problem
-    The biggest problem was the scope of the task. It was very difficukt both in terms of the amount of
+    The biggest problem was the scope of the task. It was very difficult both in terms of the amount of
     elements present on the site that needed to be implemented, as well as the level of accuracy needed on the design. 
     
     Testing for accessibility also provided some issues. For example the contrast issues I had were in part due to the design.
