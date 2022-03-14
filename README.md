@@ -1,11 +1,5 @@
 # portfolio
 
-THIS TEXT WILL BE DELETED AFTER THE REVIEW, IT'S JUST TO CLARIFY!
-The errors I get from validator.w3.org are not accurate. the div has it's opening tag in 54 and closing tag in 178.
-The article with class tech-section has its opening tag in 53 and closing tag in line 64.
-
----
-
 This week's project was to build a portfolio that we are going to use in the future to apply for jobs! The requirements are:
 
 - The page should be built with HTML and CSS (JS if needed)
