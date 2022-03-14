@@ -50,6 +50,8 @@ body {
 
 .portfolio-title {
     font-size: 16px;
+    color: #5b4f46;
+    font-weight: bold;
 }
 
 .header-text {
@@ -93,8 +95,8 @@ body {
 
 .lollipop-image-separator {
     position: absolute;
-    width: 98px;
-    height: 20px;
+    width: 50px;
+    height: 15px;
     left: 410px;
     top: 807px;
 }
@@ -192,7 +194,8 @@ a {
     flex-direction: column;
     justify-content: center;
     font-size: 28px;
-    color: #e1c7c4;
+    color:#5b4f46;
+    font-weight: bolder;
 }
 
 .project-overlay:hover {
@@ -220,10 +223,12 @@ a {
 
 /* OTHER PROJECTS */
  .other-projects {
+    padding: 20px;
     font-style: normal;
     font-weight: bold;
     line-height: 47px;
     color: black;
+    gap: 20px;
 } 
 
 /* MY THOUGHTS ABOUT CODE */
@@ -284,6 +289,7 @@ a {
 
 .skill-group {
     text-align: center;
+    width: 50%;
 } 
 
 /*FOR MORE SECTION*/
@@ -337,11 +343,45 @@ footer {
     .blog{
         flex-direction: row;
     }
-}
+    .profile-image{
+        width: 250px;
+        border-radius: 50%;
+        border: solid 5px #c7b8b0;
+        background-color: #fff;
+        position: absolute;
+        bottom: -16px;
+        right: 0;
+    } 
+    .skill-group {
+        text-align: center;
+        width: 33%;
+    } 
+} 
+
 
 /*THIS IS THE MEDIA QUERY FOR DESKTOP SIZE*/
 @media screen and (min-width: 1200px) {
     .container {
         width: 1000px;
     }
+
+    .some-icons-group{
+        display: flex;
+        align-items:center;
+        flex-direction: row;
+        justify-content:space-between;
+    } 
+    .profile-image{
+        width: 250px;
+        border-radius: 50%;
+        border: solid 5px #c7b8b0;
+        background-color: #fff;
+        position: absolute;
+        bottom: -16px;
+        right: 0;
+    } 
+    .skill-group {
+        text-align: center;
+        width: 33%;
+    } 
 }
