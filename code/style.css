@@ -10,7 +10,7 @@
 
   p{
     font-style: normal;
-    font-weight:200;
+    font-weight:300;
     font-size: 17px;
     line-height: 29px;
   }
@@ -27,9 +27,25 @@
   }
   a{
     transition: transform 0.5s;
+    cursor: pointer;
  }
  a:hover {
     transform: scale(1.2);
+}
+/*=====Line-dot section indicator======*/
+.line {
+    border: 1px solid var(--red);
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--red);
+    border-radius: 50%;
+    display: inline-block;
 }
 
 /*---header styles---*/
@@ -37,7 +53,7 @@
     background-image: url('https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-size: cover;
     height: 520px;
-    
+    background-position-y: center;
 }
 
 .profile-image{
@@ -146,6 +162,8 @@ section:nth-child(2n){
 .project-image{
     width: 100%;
     display: inherit;
+    object-fit: cover;
+    box-shadow: 8px 8px 4px #aaaaaa;
 }
 .project-overlay{
     position: absolute;
@@ -184,16 +202,18 @@ section:nth-child(2n){
 .project-heading{
     color: var(--red);
     font-weight: 700;
+    padding-top: 10px;
 }
 .project-languages{
     display: flex;
-    gap: 8px;
+    gap: 10px;
     font-size: 12px;
 }
 .language-text{
     background-color: pink;
     padding: 5px;
     margin-top: 10px;
+    box-shadow: 4px 4px 2px #aaaaaa;
 }
 .other-projects-title {
     background-color: transparent;
@@ -203,9 +223,6 @@ section:nth-child(2n){
     padding-bottom: 40px;
 }
 
-.other-project:hover{
-    text-decoration: underline;
-}
 /*---section "skills" styles---*/
 .skills-container{
     display: flex;
@@ -239,7 +256,7 @@ section:nth-child(2n){
     width: 60px;
 }
 .logo-text{
-    color: #000);
+    color: #000;
     font-size: 11px;
     line-height: 13px;
     font-weight: 700;
@@ -265,10 +282,7 @@ footer{
 
 /*---media queries (tablets)---*/
 @media screen and (min-width: 768px){
-    p{
-        font-size: 24px;
-        line-height: 48px;
-    }
+    
     h2{
         padding: 4px;
     }
@@ -345,14 +359,6 @@ footer{
         font-size: 17px;
     }
 
-    .project-heading{
-        font-size: 25px;
-        line-height: 41px;
-    }
-    .project-description{
-        font-size: 25px;
-        line-height: 41px;
-    }
     
     /*---section "skills" styles---*/
     .skills-container{
@@ -369,7 +375,7 @@ footer{
         padding-bottom: 120px;
     }
     .formore-logo{
-        width: 160px;
+        width: 120px;
     }
     .logo-text{
         font-size: 18px;
@@ -379,42 +385,32 @@ footer{
 /*---media queries (desktops)---*/
 @media screen and (min-width: 1200px){
     p{
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 24px;
+        line-height: 48px;
     }
     h2{
         font-size: 48px;
+    }
+    .line {
+        margin-bottom: 6px;
+        width: 60px;
+    }
+    
+    .dot {
+        height: 15px;
+        width: 15px;
     }
     /*---container styles---*/
     .container{
         width: 1000px;
     }
-    /*---header styles---*/
-    
-    /*
-    .header-text-group{
-        top:206px;
-        width: 600px;
-    }
-    
-    .portfolio-title{
-        font-size: 28px;
-    }
-    
-    .main-title{
-        font-weight: 700;
-        font-size: 82px;
-        line-height: 100px;
-    }
-    .smaller-title{
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 78px;
-    }
-    */
     /*---section "projects" styles---*/
     .project-image{
         height: 300px;
+    }
+    .project-heading{
+        font-size: 25px;
+        line-height: 41px;
     }
     
      /*---section "for more" styles---*/
@@ -423,7 +419,7 @@ footer{
     }
     
     .formore-logo{
-        width: 160px;
+        width: 140px;
     }
     .logo-text{
         font-size: 25px;
