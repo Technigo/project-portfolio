@@ -1,3 +1,5 @@
+/* Global styles */
+
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -11,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -27,22 +30,18 @@ body {
   font-weight: 700;
 }
 
+/* Header */
+
 .header {
   /* Add smaller image for mobile? */
-  background-image: url(./assets/header-image-big.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/tree.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   color: var(--white);
   height: 520px;
   width: 100vw;
   display: flex;
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    background-image: url(./assets/header-image-big.jpg);
-    height: 681px;
-  }
 }
 
 .header-container {
@@ -60,19 +59,6 @@ body {
 
 .header-logos-desktop {
   display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .header-logos-desktop {
-    display: block;
-    width: 100%;
-    text-align: right;
-    margin-right: 24.5px;
-    margin-top: 48px;
-  }
-  .header-logos {
-    display: none;
-  }
 }
 
 .header-text {
@@ -104,29 +90,6 @@ body {
   line-height: 40px;
 }
 
-@media screen and (min-width: 768px) {
-  .header-text {
-    margin-top: 100px;
-    width: 422px;
-    height: 339px;
-  }
-
-  .header-text h1 {
-    font-size: 28px;
-    line-height: 37px;
-  }
-
-  .header-text h2 {
-    font-size: 82px;
-    line-height: 100px;
-  }
-
-  .header-text h2 span {
-    font-size: 50px;
-    line-height: 78px;
-  }
-}
-
 .header-image-container {
   position: absolute;
   right: 24px;
@@ -140,25 +103,11 @@ body {
   border: 2px solid var(--white);
 }
 
-@media screen and (min-width: 768px) {
-  .profile-picture {
-    height: 225px;
-    width: 225px;
-  }
-}
-
 /*Lowest supported value for mobiles*/
 .container {
   width: 375px;
   margin: 0 auto;
   padding: 46px 24px;
-}
-
-@media screen and (min-width: 768px) {
-  .header-container,
-  .container {
-    width: 768px;
-  }
 }
 
 .section {
@@ -205,14 +154,6 @@ body {
   margin-top: 40px;
 }
 
-@media screen and (min-width: 768px) {
-  .featured-projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 54px;
-  }
-}
-
 .project-image-group {
   position: relative;
 }
@@ -227,6 +168,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.project-overlay:hover {
+  background: none;
 }
 
 /* Har lagt denna inuti project-overlay som en flex-item */
@@ -315,12 +260,6 @@ body {
   justify-content: space-evenly;
 }
 
-@media screen and (min-width: 768px) {
-  .for-more-logos {
-    max-width: 60%;
-  }
-}
-
 .fore-more-logo-container {
   flex: 1;
   display: flex;
@@ -364,4 +303,68 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+
+/* ------  Tablet and desktop media queries ------- */
+
+@media screen and (min-width: 768px) {
+
+  .header-logos-desktop {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-right: 24.5px;
+    margin-top: 48px;
+  }
+
+  .header-logos {
+    display: none;
+  }
+  .header {
+    height: 681px;
+  }
+
+  .header-container,
+  .container {
+    width: 768px;
+  }
+
+  .header-text {
+    margin-top: 100px;
+    width: 422px;
+    height: 339px;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .header-text h2 {
+    font-size: 82px;
+    line-height: 100px;
+  }
+
+  .header-text h2 span {
+    font-size: 50px;
+    line-height: 78px;
+  }
+
+  .profile-picture {
+    height: 225px;
+    width: 225px;
+  }
+
+  .featured-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 54px;
+  }
+
+  .for-more-logos {
+    max-width: 60%;
+  }
+
+
 }
