@@ -10,7 +10,6 @@
 
 body {
   text-align: center;
-  font-size: 17px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -19,10 +18,22 @@ figure {
   margin: 0;
 }
 
+.container,
+.project,
+.blogs__article {
+  margin: 0 auto;
+}
+
+h2,
+.blogs__content h3 {
+  font-size: 21px;
+}
+
 b,
 strong,
 time,
-.orange-text {
+.orange-text,
+.skills__list li:first-child  {
   color: var(--clr-primary);
 }
 
@@ -36,8 +47,18 @@ a {
   background-color: transparent;
 }
 
-.white-text {
+.white-text,
+footer,
+.footer a  {
   color: var(--clr-secondary);
+}
+
+.hero,
+.project,
+.blogs__article,
+.blogs__section,
+.resource__heading  {
+  font-family: var(--ff-secondary);
 }
 
 ul {
@@ -51,13 +72,12 @@ h1 {
 
 h2 {
   background-color: var(--clr-primary);
-  height: 26px;
-  font-size: 22px;
   padding: 1px 4px;
 }
 
+h3,
 h4 {
-  font-size: 21px;
+  font-size: 19px;
 }
 
 img {
@@ -86,12 +106,9 @@ a:focus  {
   text-align: left;
 }
 
-.hide {
+.hide,
+.project__title {
   display: none;
-}
-
-.container {
-  margin: 0 auto;
 }
 
 .container-top {
@@ -125,7 +142,6 @@ a:focus  {
 
 .hero {
   background-image: url("./images/guitar.png");
-  font-family: var(--ff-secondary);
   background-size: cover;
   height: 520px;
   position: relative; 
@@ -167,16 +183,14 @@ a:focus  {
 }
 
 .header__description {
-  font-size: 13px;
+  font-size: 14px;
   display: block;
   margin-bottom: 20px;
   font-weight: 400;
 }
 
-.header__sub-heading {
+.header__subtitle {
   display: block;
-  font-size: 20px;
-  margin-top: 20px;
 }
 
 .header__image {
@@ -189,18 +203,14 @@ a:focus  {
   position: absolute;
 }
 
-.project {
-  font-family: var(--ff-secondary);
-  margin: 0 auto;
+.blogs__image {
+  height: 212px;
+  object-fit: cover;
 }
 
 .project figure {
   height: 212px;
   position: relative;
-}
-
-.project__title {
-  display: none;
 }
 
 .project__image {
@@ -242,13 +252,7 @@ a:focus  {
 }
 
 .blogs__article {
-  margin: 0 auto;
-  font-family: var(--ff-secondary);
   line-height: 30px;
-}
-
-.blogs__image {
-  height: 212px;
 }
 
 .blogs__content {
@@ -257,14 +261,12 @@ a:focus  {
 
 .blogs__content h3 {
   font-weight: var(--fw-bold);
-  font-size: 21px;
   color: #000;
   margin-top: 0;
 }
 
 .blogs__section {
   margin: 56px auto 0 auto;
-  font-family: var(--ff-secondary);
   line-height: 29px;
 }
 
@@ -280,7 +282,6 @@ a:focus  {
 }
 
 .skills__list li:first-child {
-  color: var(--clr-primary);
   font-weight: var(--fw-bold);
 }
 
@@ -295,7 +296,6 @@ a:focus  {
 
 .resource__heading {
   font-size: 11px;
-  font-family: var(--ff-secondary);
 }
 
 .heading-wrapper {
@@ -311,14 +311,12 @@ a:focus  {
   height: 60px;
   border: 2px solid var(--clr-primary);
   border-radius: 50%;
-  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 19px;
 }
 
 footer {
-  color: var(--clr-secondary);
   background-color: var(--clr-tertiary);
   padding: 60px 0 84px;
 }
@@ -330,12 +328,15 @@ footer {
 
 .footer a {
   display: block;
-  color: var(--clr-secondary);
   margin: 15px 0;
   cursor: pointer;
 }
 
 @media (min-width: 375px) {
+  body {
+    font-size: 17px;
+  }
+
   .header__image {
     width: 180px;
     height: 180px;
@@ -359,9 +360,8 @@ footer {
 }
 
 @media (min-width: 768px) {
-
- .hide,
- .project__title,
+  .hide,
+  .project__title,
   .blogs__article--hide {
     display: block;
   }
@@ -370,12 +370,9 @@ footer {
     font-size: 19px;
   }
 
-  h2 {
-    font-size: 28px;
-  }
-
-  h4 {
-    font-size: 23px;
+  h2,
+  .project__title {
+    font-size: 26px;
   }
 
   .container {
@@ -421,27 +418,20 @@ footer {
   }
 
   .project__title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     position: absolute;
-    top: 92px;
+    top: 0;
     right: 0;
     bottom: 0;
-    left: 84px;
+    left: 0;
     color: var(--clr-secondary);
-    font-size:  28px;
   }
 
   .tag-wrapper {
     margin-top: -7px;
     font-size: 16px;
-  }
-
-  .resource__icon {
-    width: 90px;
-    height: 90px;
-  }
-
-  .footer__heading {
-    font-size: 30px;
   }
 
   .footer__paragraph {
@@ -450,10 +440,6 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  h3,
-  .blogs__centent h3
-  .technologies__paragraph,
-  .introduction__paragraph,
   .header__description  {
     font-size: 23px;
   }
@@ -466,18 +452,8 @@ footer {
     height: 681px;;
   }
 
-  .hero__icons div {
-    width: 60px;
-    height: 60px;
-    border: 2px solid var(--clr-secondary);
-  }
-
   .hero__icons div:hover {
-    border: 2px solid var(--clr-primary);
-  }
-
-  .header__sub-heading {
-    font-size: 35px;
+    border: 1px solid var(--clr-primary);
   }
 
   .header__image {
@@ -486,67 +462,27 @@ footer {
     height: 270px;
   }
 
-  .introduction__line {
-    width: 75px;
-    height: 2px;
-    margin-bottom: 6px;
-    margin-right: -7px;
-    background-color: var(--clr-primary);
-  }
-
-  .introduction__dot {
-    height: 15px;
-    width: 15px;
-  }
-
-  .container-top {
-    margin-top: 50px;
-  }
-
   .resource__icon:hover {
     border: 2px solid var(--clr-tertiary);
   }
 
   .resource__heading {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 1200px) {
-  body {
-    font-size: 21px;
-  }
-
-  h1 {
-    font-size: 73px;
-  }
-
   .container {
     width: 1200px;
   }
 
-  .section {
-    padding: 80px 0 85px 0;
-  }
-
-  .hero__icons div {
-    width: 80px;
-    height: 80px;
-  }
-
-  .header__description {
+   h2,
+  .project__title {
     font-size: 28px;
   }
 
-  .header__sub-heading {
-    font-size: 42px;
-  }
-
-  .header__image {
-    width: 333px;
-    height: 333px;
-    left: 918px;
-    top: 395px;
+  .section {
+    padding: 80px 0 85px 0;
   }
 
   .projects-section,
@@ -557,19 +493,14 @@ footer {
   .project__image,
   .project figure,
   .blogs__image {
-    height: 350px;
+    height: 330px;
   }
 
   .project__image,
   .project,
   .blogs__image,
   .blogs__article {
-    width: 523px;
-  }
-
-  .project__title {
-    top: 141px;
-    left: 185px;
+    width: 500px;
   }
 
   .container-top {
