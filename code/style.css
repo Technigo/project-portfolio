@@ -14,8 +14,10 @@ body {
     height: 180px;
     width:180px;
     border-radius: 50%;
-    margin-top: 365px;
-    margin-left: 171px;
+    /* margin-top: 365px;
+    margin-left: 171px; */
+    bottom: -16px;
+    right: 24px;
     position: absolute;
     border: 2px solid white
     
@@ -28,12 +30,12 @@ body {
     position: absolute;
     margin-top: 121px;
     margin-left: 24px;
-    color: red;
-    
+    color: rgb(200, 0, 0);
+    text-align: left;
 }
 .header {
     background-image: url("./img/background.jpeg");  
-    position: relative;
+    /* position: relative; */
     height: 520px; 
     background-position-x: 40%;
     background-position-y: 21%;
@@ -57,10 +59,10 @@ body {
   }
 
 h2 {
-    color: red;
+    color: rgb(200, 0, 0);
 }
 h3 {
-    background-color: red;
+    background-color: rgb(200, 0, 0);
     display:inline-flex;
     color: white;
     padding: 4px;
@@ -68,10 +70,10 @@ h3 {
     font-size: 22px;
 }
 h4 {
-    color: red;
+    color: rgb(200, 0, 0);
 }
-    .more-thoughts-group{
-        text-decoration: underline black;
+.more-thoughts-group{
+    text-decoration: underline black;
 
     }
 .thoughts-link{
@@ -86,15 +88,20 @@ h5 {
     line-height: 30px;
     color: black;
     text-align: start;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .container {
     text-align: center;
     width: 327px;
-    margin: 0 auto;   
+    margin: 0 auto;
+    position: relative;
+    height: 100%;   
 }
 
 .date{
-    color: red;
+    color: rgb(200, 0, 0);
+    margin-bottom: 0px;
 }
 .section-info{
     background-color: #f4f4f4;
@@ -112,7 +119,10 @@ h5 {
     background-color: #f4f4f4;
     padding: 0 24px 43px 24px;
 }
-
+.thoughts-flex{
+    text-align: left;
+    
+}
 .section-thoughts{
     padding: 49px 24px 43px 24px;
     margin-top: -10px; 
@@ -125,12 +135,19 @@ h5 {
     padding: 49px 24px 43px 24px;
     margin-top: -10px; 
 }
+
+ul {
+    list-style: none;
+    line-height: 29px; 
+}
+
 .section-more{
-    padding: 0 24px 40px 24px;
+    padding: 40px 24px 40px 24px;
 }
 
 .more-thoughts-group{
     text-align: start;
+    margin-bottom: 65px;
 }
 a {
     color: inherit;
@@ -156,21 +173,25 @@ a {
     text-align: center;
 }
 
-.githubtr {
+.githubtr p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 0px;
+    margin-bottom:10px
 }
-.chatbot {
+.chatbot p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    margin-top: 0px;
+    margin-bottom:10px
 }
 
 .tag-wrapper {
     display: flex;
-    
+    margin-bottom: 15px;
 }
   
  .tag-wrapper p {
@@ -203,12 +224,22 @@ a {
     justify-content: normal;
     text-align: center;
   }
-  .red {
-    color: red;
-  }
-  .feat {
-      font-size: 17px;
+  
+  .red-feat {
+      font-size: 15px;
       line-height: 29px;
+      color: rgb(200, 0, 0);
+      font-weight: 700; 
+      text-align: left;   
+  }
+.weatherapp{
+    text-align: left;
+}
+.guesswho{
+    text-align: left;
+}
+  .headlines{
+      margin: 45px 0px 10px 0px;
   }
 
   .link-section1{
@@ -261,9 +292,9 @@ a {
         height: 64px;
         margin:10px;
     }
-    .container{
+     .container{
         width:65vW;
-    }
+    } 
     .header-image {
         height: 245px;
         width:245px;
@@ -274,40 +305,12 @@ a {
         border: 2px solid white
     }
 
-    p{
-        font-size: 19px;
-    }
-    h1 {
-     font-size: 55px;
-    }
-
-    h2{
-      font-size: 40px;
-      
-    }
-    h3{
-        font-size: 30px;
-    }
-
-    h4{
-        font-size: 25px;
-        }
-
+   
 
     .tag-wrapper p {
         font-size: 15px;
     }
 
-    .feat{
-    font-size: 23px;
-    }
-    .ghcb {
-    font-size: 23px;
-    }
-
-    .date{
-    font-size: 25px;
-    }
 
     .contact-header{
     font-size: 35px;
@@ -315,15 +318,11 @@ a {
 
     .link-section1{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     
     }
 
-    /* .link-section{
-    width: 75px;
-    height:75px;
-    } */
-}
+    
 
 
 
@@ -331,16 +330,15 @@ a {
     
     .header {
         background-image: url("./img/headerimgdt.jpg");
-        height:681px;
+        height:500px;
         width: 100%;
     }
     .header-image {
-        height: 333px;
-        width:333px;
-        margin-top: 378px;
-        margin-left: 60%;
-        margin-right: 410px;
+        height: 250px;
+        width:250px;
         position: absolute;
+        right: 24px;
+        
     }
     .header-text-gr { 
         line-height: 37px;
@@ -352,31 +350,26 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     position: absolute;
-    top: 102px;
+   
+    top: 48px;
+    right: 0px;
     margin-right: 75px;
     }
  
  .socials-icons {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     padding-left:10px;
     }
 
   .container {
     text-align: center;
-    width:90%;
-    margin: 0 auto;
+    width:57vw;
+    margin: 0 auto; 
     }
  
  
-    h3{
-      font-size: 40px;
-    }
-
-  p{
-      font-size: 28px;
-  }
-
+   
   .section-featured{
     display: flex;
     padding: 0 24px 43px 24px;
@@ -395,8 +388,9 @@ a {
     margin-top: -10px; 
     }
     .thoughts-desktop {
-    display:block;
-    width:50%;
+    display:flex;
+    flex-direction: column;
+    
     padding: 10px;
     }
     .thoughts-img{  
@@ -408,7 +402,7 @@ a {
     height:300px;
     }
     .thoughts-vis{
-        width: 50%;
+       
         padding:10px;
     }
     .thoughts-link{
@@ -424,7 +418,7 @@ a {
     }
 
     .tag-wrapper p {
-    font-size: 25px;
+    font-size: 13px;
   
     } 
     .my-skills {
@@ -439,12 +433,12 @@ a {
 
     .skills-box {
     justify-content: space-evenly;
-    margin-right:137px;
+    
     }
 
     .link-section {
-    height:100px;
-    width:100px;
+    height:60px;
+    width:60px;
     }
     .featured-flex {
         display:flex;
@@ -458,6 +452,7 @@ a {
         width:50%;
         padding: 15px;
     }
+}   
+
+
 }
-
-
