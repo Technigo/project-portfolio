@@ -186,6 +186,7 @@ a:hover {
     font-weight: 700;
     font-size: 17px;
     line-height: 29px;
+    cursor: pointer;
 }
 
 .project-description {
@@ -220,22 +221,39 @@ a:hover {
     position: relative;
 }
 
+.project-image-title {
+    position: absolute;
+    top: 45%;
+    right: 35%;
+    font-size: 25px;
+    color: white;
+}
+
 .project-overlay {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(100, 100, 55, 0.4)
+    background: rgba(0, 0, 0, 0.31);
+    opacity: 0;
 }
 
 .project-image {
     width: 100%;
+    height: 350px;
     display: inherit;
 }
 
 .desktop-project {
     display: none;
+}
+
+
+
+.project-overlay:hover {
+    opacity: 100%;
+    cursor: pointer;
 }
 
             /* THOUGTHS */
