@@ -26,6 +26,13 @@ body {
     background-color: #e9e5e5;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    color: rgb(151, 117, 117);
+}
+
 a:hover { 
     cursor: pointer;
 }
@@ -222,9 +229,6 @@ a:hover {
 }
 
 .project-image-title {
-    position: absolute;
-    top: 45%;
-    right: 35%;
     font-size: 25px;
     color: white;
 }
@@ -232,11 +236,16 @@ a:hover {
 .project-overlay {
     position: absolute;
     top: 0;
-    right: 0;
     bottom: 0;
+    right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.31);
-    opacity: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(0, 0, 0, 0.427);
+    cursor: pointer;
 }
 
 .project-image {
@@ -249,12 +258,6 @@ a:hover {
     display: none;
 }
 
-
-
-.project-overlay:hover {
-    opacity: 100%;
-    cursor: pointer;
-}
 
             /* THOUGTHS */
 
@@ -474,6 +477,18 @@ a .linkedin-img {
         font-size: 25px;
         max-width: 300px;
     }
+
+    .project-overlay {
+        opacity: 0;
+    }
+
+    .project-overlay:hover {
+        opacity: 100%;
+    }
+
+    .toolbox-list {
+        padding-top: 0;
+    }
 }
 
 
@@ -587,6 +602,14 @@ a .linkedin-img {
         padding-left: 40px;
     }
 
+    .project-overlay {
+        opacity: 0;
+    }
+
+    .project-overlay:hover {
+        opacity: 100%;
+    }
+
 
             /* THOUGHTS */
 
@@ -633,6 +656,10 @@ a .linkedin-img {
         margin: 40px 487px 20px 530px;
         text-align: center;
         font-size: 22px;
+    }
+
+    .toolbox-list {
+        padding-top: 0;
     }
 
     .more-list {
