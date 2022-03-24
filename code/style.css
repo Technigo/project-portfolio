@@ -1,4 +1,4 @@
-            /* GLOBAL TARGETS */
+/* GLOBAL TARGETS */
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
     -webkit-box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-  }
+}
 
 body {
     margin: 0;
@@ -29,15 +29,15 @@ body {
 a {
     text-decoration: none;
     color: black;
-    font-weight: 500;
-    color: rgb(151, 117, 117);
 }
 
 a:hover { 
     cursor: pointer;
+    font-weight: 500;
 }
 
-            /* HEADER */
+
+/* HEADER */
 
 .header {
     background-image: url('images/eberhard-grossgasteiger-BXasVMRGsuo-unsplash.jpg');
@@ -45,14 +45,6 @@ a:hover {
     position: relative;
     background-size: cover;
 }
-
-/* .overlay {
-    position: absolute
-    background colors
-    opacity
-    more images
-    
-} */
 
 .header-image {
     width: 150px;
@@ -107,18 +99,17 @@ a:hover {
     font-size: 20px;
 }
 
-            /* INTRO */
+
+/* INTRO */
 
 .intro-section {
     display: flex;
     height: 180px;
     margin: 2em;
-    /* width: 350px; */
 }
 
 .portfolio-description-group {
     position: absolute;
-    /* left: 20px; */
     margin-right: 24px;
     top: 580px;
     font-size: 17px;
@@ -126,7 +117,8 @@ a:hover {
     font-weight: 300;
 }
 
-            /* TECH */
+
+/* TECH */
 
 .tech-section {
     display: flex;
@@ -158,7 +150,12 @@ a:hover {
     color: rgb(145, 70, 70);
 }
 
-            /* PROJECTS */
+
+ /* PROJECTS */
+
+.project-one {
+    height: 580px;
+}
 
 .project-three, .project-four {
     display: none;
@@ -168,7 +165,7 @@ a:hover {
     display: flex;
 }
 
-.project-header {
+.project-header, .featured-project-header {
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: rgb(151, 117, 117);
@@ -207,7 +204,7 @@ a:hover {
     align-items: center; 
 }
 
-.javascript, .html, .css {
+.javascript, .html, .css, .react, .api {
     margin: 0 5px 20px 0;
     background-color: #fadde5;
     text-align: center;
@@ -222,7 +219,7 @@ a:hover {
 }
 
 
-            /* PROJECT-IMAGES */
+/* PROJECT-IMAGES */
 
 .project-image-group {
     position: relative;
@@ -259,7 +256,7 @@ a:hover {
 }
 
 
-            /* THOUGTHS */
+/* THOUGTHS */
 
 .thougths {
     padding: 6em;
@@ -269,16 +266,17 @@ a:hover {
     width: 100%;
     height: 205px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .thoughts-text-group {
     font-family: 'Roboto', sans-serif;
     margin: 20px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .thoughts-article-heading {
-    /* font-weight: 200; */
     font-size: 21px;
     line-height: 25px;
 }
@@ -302,10 +300,10 @@ a:hover {
 .more-thoughts-text-group {
     font-family: 'Roboto', sans-serif;
     text-decoration: underline;
-    /* padding: 10px; */
     margin: 20px;
     list-style-type: none;
     font-weight: 500;  
+    cursor: pointer;
 }
 
 .more-thoughts-header {
@@ -330,7 +328,7 @@ a:hover {
 }
 
 
-            /* SKILLS */
+ /* SKILLS */
 
 .skills {
     height: 470px;
@@ -381,19 +379,21 @@ a:hover {
     font-size: 15px;
 }
 
+
 /* FOR MORE */
 
 .for-more {
     font-family: 'Montserrat', sans-serif;
     margin: 20px;
     height: 300px;
+    font-size: 14px;
 }
 
 .for-more-header {
     color: white;
     background-color: rgb(151, 117, 117);
     width: 160px;
-    margin: 50px 100px 50px 100px;
+    margin: 50px 0 50px 90px;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -401,34 +401,17 @@ a:hover {
     padding: 5px;
 }
 
-.for-more-images, .for-more-titles {
+.for-more-description-group {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 20px;
-    padding-top: 20px;
-}
-
-a .linkedin-img {
-    height: 100%;
-    /* width: 80px; */
-    /* padding: 20px; */
-    /* border: 1px solid rgb(151, 117, 117); */
-    /* margin: 10px; */
+    text-align: center;
+    align-items: center;
 }
 
 .linkedin-img, .github-img, .stack-img {
-    /* height: 100%; */
-    /* line-height: 100px; */
-    /* display: inline-block; */
-}
-
-.for-more-titles {
-    font-size: 11px;
-    /* padding-top: 15px; */
-    /* text-align: center; */
-    justify-content: space-between;
-    margin-left: 25px;
+    margin: 25px 0;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -460,9 +443,13 @@ a .linkedin-img {
 /* TABLET SIZE */
 
 @media screen and (min-width: 768px) {
+
     .container {
         width: 768px;
     }
+
+
+    /* HEADER */
 
     .header {
         background-image: url('images/benjamin-voros-phIFdC6lA4E-unsplash.jpg');
@@ -478,16 +465,76 @@ a .linkedin-img {
         max-width: 300px;
     }
 
-    .project-overlay {
-        opacity: 0;
+
+    /* TECH */
+
+    .tech-header {
+        margin: 41px 350px;
     }
 
-    .project-overlay:hover {
-        opacity: 100%;
+
+    /* PROJECTS */
+
+    .featured-project-header {
+        margin-left: 60px;
+    }
+
+    .project-header {
+        margin-left: 250px;
+    }
+
+    .project-one {
+        width: 570px;
+    }
+
+    .project-image {
+        width: 570px;
+        height: 350px;
+        display: inherit;
+        margin: 0;
+    }
+
+    .project-overlay {
+        width: 570px;
+    }
+   
+    .project-section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+
+    /* THOUGHTS */
+
+    .thoughts-image {
+        height: 300px;
+        width: 570px;
+    }
+
+    .project-image-group {
+        display: flex;
+        justify-content: center;
     }
 
     .toolbox-list {
         padding-top: 0;
+    }
+
+    .more-thoughts-header, .for-more-header {
+        margin-left: 300px;
+    }
+
+
+    /* SKILLS */
+
+    .skills-header {
+        margin: 20px 0 30px 350px;
+    }
+
+    .skills {
+        height: 350px;
     }
 }
 
@@ -495,9 +542,12 @@ a .linkedin-img {
 /* DESKTOP SIZE */
 
 @media screen and (min-width: 1200px) {
+    
     .container {
         width: 1200px;
     }
+
+    /* HEADER */
 
     .header-image {
         width: 190px;
@@ -523,19 +573,19 @@ a .linkedin-img {
         left: 330px;
     }
 
-             /* INTRO */
+     /* INTRO */
 
     .intro-section {
-        height: 300px;
+        height: 250px;
     }
 
     .portfolio-description-group {
         margin: 0 350px;
-        font-size: 22px;
+        font-size: 16px;
         line-height: 40px;
     }
 
-        /* TECH */
+    /* TECH */
     
     .tech-header {
         width: 85px;
@@ -548,13 +598,13 @@ a .linkedin-img {
         margin: 0 350px 80px 350px;
     }
     
-                /* PROJECTS */
+     /* PROJECTS */
 
     .project-three, .project-four {
         display: block;
     }
 
-    .project-header {
+    .project-header, .featured-project-header {
         width: 330px;
         margin: 60px 430px 30px 430px;
         font-size: 25px;
@@ -568,9 +618,15 @@ a .linkedin-img {
         align-items: center;
     }
 
-    .project-one, .project-two, .project-three, .project-four {
+    .project-one, .project-three, .project-four {
         width: 500px;
         margin: 30px;
+        padding: 0;
+    }
+
+    .project-two {
+        margin: 10px 30px 40px 30px;
+        width: 500px;
         padding: 0;
     }
 
@@ -583,14 +639,14 @@ a .linkedin-img {
     }
 
     .project-description {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .coding-languages-container {
         font-size: 14px;
     }
 
-    .javascript, .html, .css {
+    .javascript, .html, .css, .react, .api {
         margin: 10px 5px 20px 0;
     }
 
@@ -602,8 +658,15 @@ a .linkedin-img {
         padding-left: 40px;
     }
 
+    .project-image {
+        width: 500px;
+        height: 350px;
+        display: inherit;
+    }
+
     .project-overlay {
         opacity: 0;
+        width: 500px;
     }
 
     .project-overlay:hover {
@@ -611,7 +674,7 @@ a .linkedin-img {
     }
 
 
-            /* THOUGHTS */
+    /* THOUGHTS */
 
     .thoughts {
         display: grid;
@@ -653,9 +716,13 @@ a .linkedin-img {
     }
 
     .skills-header {
-        margin: 40px 487px 20px 530px;
+        margin: 40px 487px 0 530px;
         text-align: center;
         font-size: 22px;
+    }
+
+    .skills-list-header {
+        padding-top: 40px;
     }
 
     .toolbox-list {
@@ -664,5 +731,9 @@ a .linkedin-img {
 
     .more-list {
         display: block;
+    }
+
+    .for-more-header {
+        margin: 50px 0 50px 480px;
     }
 }
