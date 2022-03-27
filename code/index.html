@@ -1,436 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Facebook & Linkedin Meta Tags -->
-  <meta property="og:url" content="https://emmahogberg.netlify.app/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Emma Högbergs's Portfolio" />
-  <meta
-    property="og:description"
-    content="Frontend developer & Design engineer"
-  />
-  <meta
-    property="og:image"
-    content="https://i.postimg.cc/285KmBm8/2022-03-06-22h10-48.png"
-  />
+		<!-- Facebook & Linkedin Meta Tags -->
+		<meta property="og:url" content="https://emmahogberg.netlify.app/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Emma Högbergs's Portfolio" />
+		<meta
+			property="og:description"
+			content="Frontend developer & Design engineer"
+		/>
+		<meta
+			property="og:image"
+			content="https://i.postimg.cc/285KmBm8/2022-03-06-22h10-48.png"
+		/>
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="twitter:domain" content="emmahogberg.netlify.app" />
-  <meta property="twitter:url" content="https://emmahogberg.netlify.app/" />
-  <meta name="twitter:title" content="Emma Högbergs's Portfolio" />
-  <meta
-    name="twitter:description"
-    content="Frontend developer & Design engineer"
-  />
-  <meta
-    name="twitter:image"
-    content="https://i.postimg.cc/285KmBm8/2022-03-06-22h10-48.png"
-  />
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="twitter:domain" content="emmahogberg.netlify.app" />
+		<meta property="twitter:url" content="https://emmahogberg.netlify.app/" />
+		<meta name="twitter:title" content="Emma Högbergs's Portfolio" />
+		<meta
+			name="twitter:description"
+			content="Frontend developer & Design engineer"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://i.postimg.cc/285KmBm8/2022-03-06-22h10-48.png"
+		/>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="./images/favicon.ico">
-  <link rel="manifest" href="/site.webmanifest">  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <title>Emma Högberg, portfolio</title>
-</head>
-<body>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/png" href="./images/favicon.ico" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Emma Högberg, portfolio</title>
+	</head>
+	<body>
+		<!------------ header ------------->
+		<header>
+			<button id="theme-toggle" class="btn btn-link" type="button">
+				<span class="d-block-light d-none">dark mode</span>
+				<span class="d-block-dark d-none"></span>
+			</button>
 
+			<div class="social">
+				<a
+					class="social-link"
+					href="https://www.linkedin.com/in/emmahogberg/"
+					aria-label="Go to Emmas LinkedIn profile"
+				>
+					<svg
+						width="150"
+						height="150"
+						viewBox="0 0 150 150"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							class="social-icon"
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M66.0015 59.3915H79.0005V65.8665C80.873 62.1425 85.675 58.7965 92.8885 58.7965C106.717 58.7965 110 66.2095 110 79.8105V105H96V82.908C96 75.1625 94.1275 70.7945 89.3605 70.7945C82.749 70.7945 80.0015 75.502 80.0015 82.9045V105H66.0015V59.3915V59.3915ZM41.995 104.405H55.995V58.7965H41.995V104.405V104.405ZM58.0005 43.925C58.001 45.0985 57.7683 46.2603 57.3159 47.3431C56.8634 48.4258 56.2003 49.4078 55.365 50.232C53.6724 51.9142 51.3813 52.8558 48.995 52.85C46.6129 52.8484 44.3271 51.9092 42.632 50.2355C41.7997 49.4085 41.1389 48.4254 40.6872 47.3425C40.2356 46.2596 40.002 45.0983 40 43.925C40 41.5555 40.945 39.2875 42.6355 37.6145C44.3291 35.9386 46.6158 34.999 48.9985 35C51.3855 35 53.6745 35.9415 55.365 37.6145C57.052 39.2875 58.0005 41.5555 58.0005 43.925Z"
+							fill="#111111"
+						/>
+					</svg>
+				</a>
 
-  <!------------ header ------------->
-  <header>
+				<a
+					class="social-link"
+					href="https://github.com/emmahogberg88"
+					aria-label="Go to Emmas GitHub profile"
+				>
+					<svg
+						width="150"
+						height="150"
+						viewBox="0 0 150 150"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							class="social-icon"
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M76 33.5789C53.9 33.5789 36 51.9316 36 74.5906C36 92.7383 47.45 108.066 63.35 113.501C65.35 113.859 66.1 112.629 66.1 111.552C66.1 110.578 66.05 107.349 66.05 103.914C56 105.811 53.4 101.402 52.6 99.0951C52.15 97.916 50.2 94.2763 48.5 93.3022C47.1 92.5333 45.1 90.6365 48.45 90.5852C51.6 90.5339 53.85 93.5585 54.6 94.7889C58.2 100.992 63.95 99.2489 66.25 98.1724C66.6 95.5066 67.65 93.7123 68.8 92.687C59.9 91.6618 50.6 88.1245 50.6 72.4375C50.6 67.9775 52.15 64.2864 54.7 61.4156C54.3 60.3903 52.9 56.1866 55.1 50.5475C55.1 50.5475 58.45 49.4709 66.1 54.7512C69.3 53.8284 72.7 53.367 76.1 53.367C79.5 53.367 82.9 53.8284 86.1 54.7512C93.75 49.4196 97.1 50.5475 97.1 50.5475C99.3 56.1866 97.9 60.3903 97.5 61.4156C100.05 64.2864 101.6 67.9262 101.6 72.4375C101.6 88.1758 92.25 91.6618 83.35 92.687C84.8 93.9687 86.05 96.4294 86.05 100.274C86.05 105.76 86 110.168 86 111.552C86 112.629 86.75 113.911 88.75 113.501C96.6906 110.752 103.591 105.519 108.479 98.5393C113.367 91.5594 115.998 83.1835 116 74.5906C116 51.9316 98.1 33.5789 76 33.5789Z"
+							fill="#111111"
+						/>
+					</svg>
+				</a>
 
-    <div class="social">
-      <a class="social-link" href="https://www.linkedin.com/in/emmahogberg/" aria-label="Go to Emmas LinkedIn profile">
-        <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="social-icon" fill-rule="evenodd" clip-rule="evenodd" d="M66.0015 59.3915H79.0005V65.8665C80.873 62.1425 85.675 58.7965 92.8885 58.7965C106.717 58.7965 110 66.2095 110 79.8105V105H96V82.908C96 75.1625 94.1275 70.7945 89.3605 70.7945C82.749 70.7945 80.0015 75.502 80.0015 82.9045V105H66.0015V59.3915V59.3915ZM41.995 104.405H55.995V58.7965H41.995V104.405V104.405ZM58.0005 43.925C58.001 45.0985 57.7683 46.2603 57.3159 47.3431C56.8634 48.4258 56.2003 49.4078 55.365 50.232C53.6724 51.9142 51.3813 52.8558 48.995 52.85C46.6129 52.8484 44.3271 51.9092 42.632 50.2355C41.7997 49.4085 41.1389 48.4254 40.6872 47.3425C40.2356 46.2596 40.002 45.0983 40 43.925C40 41.5555 40.945 39.2875 42.6355 37.6145C44.3291 35.9386 46.6158 34.999 48.9985 35C51.3855 35 53.6745 35.9415 55.365 37.6145C57.052 39.2875 58.0005 41.5555 58.0005 43.925Z" fill="#111111"/>
-        </svg>
-      </a>
+				<a
+					class="social-link"
+					href="https://stackoverflow.com/c/technigo/users/300"
+					aria-label="Look at my stackoverflow profile"
+				>
+					<svg
+						width="150"
+						height="150"
+						viewBox="0 0 150 150"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							class="social-icon sibling"
+							d="M101.557 103.86V82.45H110.01V111H34V82.45H42.4535V103.86H101.557V103.86Z"
+							fill="black"
+						/>
+						<path
+							class="social-icon sibling"
+							d="M50.9128 96.725H93.1624V89.585H50.9128V96.725ZM88.7817 31L81.9976 35.26L107.216 63.895L114 59.635L88.7817 31ZM67.8257 47.885L100.29 70.72L105.695 65.235L73.2304 42.4L67.8198 47.885H67.8257ZM57.2174 63.75L95.5184 78.815L99.0881 72.345L60.787 57.28L57.2174 63.75V63.75ZM51.7416 80.47L93.0913 87.815L94.8317 80.825L53.482 73.485L51.7416 80.47V80.47Z"
+							fill="black"
+						/>
+					</svg>
+				</a>
+			</div>
 
-      <a class="social-link" href="https://github.com/emmahogberg88" aria-label="Go to Emmas GitHub profile">
-        <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="social-icon" fill-rule="evenodd" clip-rule="evenodd" d="M76 33.5789C53.9 33.5789 36 51.9316 36 74.5906C36 92.7383 47.45 108.066 63.35 113.501C65.35 113.859 66.1 112.629 66.1 111.552C66.1 110.578 66.05 107.349 66.05 103.914C56 105.811 53.4 101.402 52.6 99.0951C52.15 97.916 50.2 94.2763 48.5 93.3022C47.1 92.5333 45.1 90.6365 48.45 90.5852C51.6 90.5339 53.85 93.5585 54.6 94.7889C58.2 100.992 63.95 99.2489 66.25 98.1724C66.6 95.5066 67.65 93.7123 68.8 92.687C59.9 91.6618 50.6 88.1245 50.6 72.4375C50.6 67.9775 52.15 64.2864 54.7 61.4156C54.3 60.3903 52.9 56.1866 55.1 50.5475C55.1 50.5475 58.45 49.4709 66.1 54.7512C69.3 53.8284 72.7 53.367 76.1 53.367C79.5 53.367 82.9 53.8284 86.1 54.7512C93.75 49.4196 97.1 50.5475 97.1 50.5475C99.3 56.1866 97.9 60.3903 97.5 61.4156C100.05 64.2864 101.6 67.9262 101.6 72.4375C101.6 88.1758 92.25 91.6618 83.35 92.687C84.8 93.9687 86.05 96.4294 86.05 100.274C86.05 105.76 86 110.168 86 111.552C86 112.629 86.75 113.911 88.75 113.501C96.6906 110.752 103.591 105.519 108.479 98.5393C113.367 91.5594 115.998 83.1835 116 74.5906C116 51.9316 98.1 33.5789 76 33.5789Z" fill="#111111"/>
-        </svg>          
-      </a>
+			<div class="header-container" tabindex="0">
+				<h1 class="title uppercase">
+					Portfolio: <span class="bold">Emma Högberg</span>
+				</h1>
+				<h1 class="title-first">frontend</h1>
+				<h1 class="title-first">developer</h1>
+				<div class="header-container--second">
+					<img
+						class="title-icon"
+						src="./images/ampersand.svg"
+						aria-hidden="true"
+						alt="ampersand icon that jumps up and down"
+					/>
+					<h1 class="title-second">design engineer</h1>
+				</div>
+			</div>
 
-      <a class="social-link" href="https://stackoverflow.com/c/technigo/users/300" aria-label="Look at my stackoverflow profile">
-        <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="social-icon sibling" d="M101.557 103.86V82.45H110.01V111H34V82.45H42.4535V103.86H101.557V103.86Z" fill="black"/>
-          <path class="social-icon sibling" d="M50.9128 96.725H93.1624V89.585H50.9128V96.725ZM88.7817 31L81.9976 35.26L107.216 63.895L114 59.635L88.7817 31ZM67.8257 47.885L100.29 70.72L105.695 65.235L73.2304 42.4L67.8198 47.885H67.8257ZM57.2174 63.75L95.5184 78.815L99.0881 72.345L60.787 57.28L57.2174 63.75V63.75ZM51.7416 80.47L93.0913 87.815L94.8317 80.825L53.482 73.485L51.7416 80.47V80.47Z" fill="black"/>
-        </svg>                       
-      </a>
+			<img
+				class="profile-image"
+				src="./images/portfolio-image.JPG"
+				alt="portrait picture of Emma"
+			/>
+		</header>
 
-    </div>
+		<!------------------------------------- Main content ------------------------------------->
+		<main>
+			<!------------------------------------- Section intro ------------------------------------->
+			<section class="section-intro" tabindex="0">
+				<div class="container">
+					<p>
+						<svg
+							class="linedot"
+							width="55"
+							height="11"
+							viewBox="0 0 95 19"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<line
+								class="linedot"
+								y1="8.5"
+								x2="81"
+								y2="8.5"
+								stroke="#245A8C"
+								stroke-width="3"
+							/>
+							<circle
+								class="linedot"
+								cx="85.5"
+								cy="9.5"
+								r="9.5"
+								fill="#245A8C"
+							/>
+						</svg>
 
-    <div class="header-container" tabindex="0">
-      <h1 class="title uppercase">Portfolio: <span class="bold">Emma Högberg</span></h1>
-      <h1 class="title-first">frontend</h1>
-      <h1 class="title-first">developer</h1>
-      <div class="header-container--second">
-        <img class="title-icon" src="./images/ampersand.svg" aria-hidden="true" alt="ampersand icon that jumps up and down">
-        <h1 class="title-second">design engineer</h1>
-      </div>  
-    </div>
+						Hi future employer! With me in the team you get a positive, creative
+						and structured problem solver - who always puts the user at the
+						center. I have experience in different fields, learn quickly and
+						constantly want to develop myself and others. As a person, I am
+						driven, communicative & unpretentious. I am motivated by learning
+						new things, meeting people and creating value. Curious to know more?
+						Read on!
+					</p>
+				</div>
+			</section>
 
-    <img class="profile-image" src="./images/portfolio-image.JPG" alt="portrait picture of Emma"/>  
+			<!------------------------------------- Section tech ------------------------------------->
+			<section class="section-tech" tabindex="0">
+				<div class="container flex">
+					<h2 class="uppercase">tech</h2>
+					<p>
+						HTML, CSS, Flexbox, Grid, <span class="highlight">JavaScript</span>,
+						ES6, JSX, <span class="highlight">React</span>, React Hooks, Redux,
+						Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
+						<span class="highlight">pair-programming</span>, Github.
+					</p>
+				</div>
+			</section>
 
-  </header>
+			<!------------------------------------- Section projects ------------------------------------->
+			<section class="section-projects" tabindex="0">
+				<div class="container flex">
+					<h2 class="uppercase">featured projects</h2>
 
-    <!------------------------------------- Main content ------------------------------------->
-  <main>
+					<!----------- GitHub tracker ------------>
+					<article class="project-container flex">
+						<div class="container-project">
+							<a
+								class="project-link"
+								href="https://emma-github-tracker.netlify.app/"
+							>
+								<div class="image-container--project flex">
+									<img
+										class="project-image"
+										src="./images/github.jpg"
+										alt="image of github mascote, click to go to Emma's github-tracker"
+									/>
+									<div class="img-overlay"></div>
+									<h4 aria-hidden="true" class="header-overlay uppercase">
+										GitHub tracker
+									</h4>
+								</div>
+							</a>
+						</div>
 
-    <!------------------------------------- Section intro -------------------------------------> 
-    <section class="section-intro" tabindex="0">
-      <div class="container">
-        <p>
-          <img class="line-dot" src="./images/line_dot.svg" aria-hidden="true" alt="styling-element showing a line and a dot"> 
-          Hi future employer! With me in the team you get a positive, creative and structured problem solver - who always puts the user at the center. 
-          I have experience in different fields, learn quickly and constantly want to develop myself and others.  
-          As a person, I am driven, communicative & unpretentious. I am motivated by learning new things, meeting people and creating value.
-          Curious to know more? Read on!  
-        </p>
-      </div>
-    </section>
+						<div class="section-project--text">
+							<a
+								class="project-link"
+								href="https://emma-github-tracker.netlify.app/"
+							>
+								<div>
+									<h4 class="uppercase">Github tracker</h4>
+									<p>
+										A responsive website using multiple GitHub API's to track my
+										boot camp progress and show details about each project.
+									</p>
+								</div>
+							</a>
 
-    <!------------------------------------- Section tech ------------------------------------->
-    <section class="section-tech" tabindex="0">
-      <div class="container flex">
-        <h2 class="uppercase">tech</h2>
-        <p> HTML, CSS, Flexbox, Grid, <span class="highlight">JavaScript</span>, ES6, JSX, <span class="highlight">React</span>, React Hooks, Redux, 
-          Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, <span class="highlight">pair-programming</span>, Github. </p>
-      </div>
-    </section>
+							<a href="https://github.com/emmahogberg88/project-github-tracker">
+								<div aria-hidden="true" class="tag-wrapper">
+									<p>HTML5</p>
+									<p>CSS3</p>
+									<p>JavaScript ES6</p>
+								</div>
+							</a>
+						</div>
+					</article>
 
-    <!------------------------------------- Section projects ------------------------------------->
-    <section class="section-projects" tabindex="0">
-      <div class="container flex">
+					<!----------- Create Birthday Invitation ------------>
+					<article class="project-container reverse flex">
+						<div class="container-project">
+							<a class="project-link" href="https://2kidsparty.netlify.app/">
+								<div class="image-container--project flex">
+									<img
+										class="project-image"
+										src="./images/survey.png"
+										alt="image of invitation card site content"
+									/>
+									<div class="img-overlay"></div>
+									<h4 aria-hidden="true" class="header-overlay uppercase">
+										Create Invitation Card
+									</h4>
+								</div>
+							</a>
+						</div>
 
-        <h2 class="uppercase">featured projects</h2>
+						<div class="section-project--text">
+							<a class="project-link" href="https://2kidsparty.netlify.app/">
+								<div>
+									<h4 class="uppercase">Create Invitation Card</h4>
+									<p>
+										A site to build customized invitation cards for your kids
+										party! Built in React with React hooks.
+									</p>
+								</div>
+							</a>
 
-        <!----------- GitHub tracker ------------>
-        <article class="project-container flex">
-          <div class="container-project">
-            <a class="project-link" href="https://emma-github-tracker.netlify.app/">
-              <div class="image-container--project flex">
-                <img class="project-image" src="./images/github.jpg" alt="image of github mascote, click to go to Emma's github-tracker"/>
-                <div class="img-overlay"></div>
-                  <h4 aria-hidden="true" class="header-overlay uppercase">GitHub tracker</h4>
-              </div>
-            </a>
-          </div>
-          
-          <div class="section-project--text">    
-            <a class="project-link" href="https://emma-github-tracker.netlify.app/">
-              <div>
-                <h4 class="uppercase">Github tracker</h4>
-                <p>A responsive website using multiple GitHub API's to track my boot camp progress and show details about each project.</p>
-              </div>
-            </a>
+							<a href="https://github.com/emmahogberg88/project-survey">
+								<div aria-hidden="true" class="tag-wrapper">
+									<p>CSS</p>
+									<p>React</p>
+								</div>
+							</a>
+						</div>
+					</article>
 
-            <a href="https://github.com/emmahogberg88/project-github-tracker">
-              <div aria-hidden="true" class="tag-wrapper">
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>JavaScript ES6</p>
-              </div>
-            </a>
-          </div>
-        </article> 
+					<!----------- Business site ------------>
+					<article class="project-container flex">
+						<div class="container-project">
+							<a class="project-link" href="https://weeklyflowers.netlify.app/">
+								<div class="image-container--project flex">
+									<img
+										class="project-image"
+										src="./images/business-site.png"
+										alt="image of github mascote, click to go to Emma's github-tracker"
+									/>
+									<div class="img-overlay"></div>
+									<h4 aria-hidden="true" class="header-overlay uppercase">
+										Business site
+									</h4>
+								</div>
+							</a>
+						</div>
 
-        <!----------- Movie Chatbot ------------>
-        <article class="project-container reverse flex">
-          <div class="container-project">
+						<div class="section-project--text">
+							<a class="project-link" href="https://weeklyflowers.netlify.app/">
+								<div>
+									<h4 class="uppercase">Business site</h4>
+									<p>
+										A responsive website in JavaScript containing forms and an
+										accodrdion to create a fictiv business site.
+									</p>
+								</div>
+							</a>
 
-            <a class="project-link" href="https://movie-bot.netlify.app">
-              <div class="image-container--project flex">
-                <img class="project-image" src="./images/popcorn.jpg" alt="image of popcorn"/>
-                <div class="img-overlay"></div>
-                <h4 aria-hidden="true" class="header-overlay uppercase">Chat bot</h4>
-              </div>
-            </a>
-          </div>
-            
-          <div class="section-project--text">  
-            <a class="project-link" href="https://movie-bot.netlify.app/">
-              <div>
-                <h4 class="uppercase">Chat bot</h4>
-                <p>A chat bot built in JavaScript to help you arranging the best movie night ever. pair-programming project.</p>
-              </div>
-            </a>
+							<a href="https://github.com/emmahogberg88/project-business-site">
+								<div aria-hidden="true" class="tag-wrapper">
+									<p>HTML5</p>
+									<p>CSS3</p>
+									<p>JavaScript ES6</p>
+								</div>
+							</a>
+						</div>
+					</article>
 
-            <a href="https://github.com/emmahogberg88/project-chatbot">
-              <div aria-hidden="true" class="tag-wrapper">
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>JavaScript ES6</p>
-              </div>
-            </a>
-          </div>
-        </article> 
+					<!----------- Other projects ------------>
+					<article class="other-projects flex">
+						<h3 class="uppercase">other projects</h3>
 
-        <!----------- Business site ------------>
-        <article class="project-container flex">
-          <div class="container-project">
-            <a class="project-link" href="https://weeklyflowers.netlify.app/">
-              <div class="image-container--project flex">
-                <img class="project-image" src="./images/business-site.png" alt="image of github mascote, click to go to Emma's github-tracker"/>
-                <div class="img-overlay"></div>
-                <h4 aria-hidden="true" class="header-overlay uppercase">GitHub tracker</h4>
-              </div>
-            </a>
-          </div>
-          
-          <div class="section-project--text">    
-            <a class="project-link" href="https://weeklyflowers.netlify.app/">
-              <div>
-                <h4 class="uppercase">Business site</h4>
-                <p>A responsive website in JavaScript containing forms and an accodrdion to create a fictiv business site.</p>
-              </div>
-            </a>
+						<div class="other-projects--container">
+							<a href="https://github.com/emmahogberg88/project-happy-thougths">
+								<h4>
+									<span class="uppercase underline">Happy thoughts</span>
+								</h4>
+								<p>
+									<span class="underline-black"
+										>Twitter clone using React hooks to fetch an API, post
+										messages and likes to the API.</span
+									><span class="bold underline highlight" aria-hidden="true">
+										>>
+									</span>
+								</p>
 
-            <a href="https://github.com/emmahogberg88/project-business-site">
-              <div aria-hidden="true" class="tag-wrapper">
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>JavaScript ES6</p>
-              </div>
-            </a>
-          </div>
-        </article> 
+								<div aria-hidden="true" class="tag-wrapper">
+									<p>React</p>
+									<p>CSS3</p>
+								</div>
+							</a>
+						</div>
 
-        <!----------- Other projects ------------>
-        <article class="other-projects flex">
-          <h3 class="uppercase">other projects</h3>
+						<div class="other-projects--container">
+							<a href="https://github.com/emmahogberg88/project-music-releases">
+								<h4>
+									<span class="uppercase underline"
+										>Music releases review.</span
+									>
+								</h4>
+								<p>
+									<span class="underline-black"
+										>First React project. Using JSON data to pass as props to
+										components</span
+									><span class="bold underline highlight" aria-hidden="true">
+										>>
+									</span>
+								</p>
 
-          <div class="other-projects--container">
-            <a href="https://github.com/emmahogberg88/project-music-releases">
-              <h4><span class="uppercase underline">Music releases review.</span></h4><p><span class="underline-black">First React project. Using JSON data to pass as props to components</span><span class="bold underline highlight" aria-hidden="true"> >> </span></p>
-              
-              <div aria-hidden="true" class="tag-wrapper">
-                <p>React</p>
-                <p>CSS3</p>
-              </div>
-            </a>
-          </div>
+								<div aria-hidden="true" class="tag-wrapper">
+									<p>React</p>
+									<p>CSS3</p>
+								</div>
+							</a>
+						</div>
 
-          <div class="other-projects--container">
-            <a href="https://github.com/emmahogberg88/project-weather-app">
-              <h4><span class="uppercase underline">Weather app.</span></h4><p><span class="underline-black"> Web application built in JavaScript as a mob-programming project.</span><span class="bold underline highlight" aria-hidden="true"> >> </span></p>
-              
-              <div aria-hidden="true" class="tag-wrapper">
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>JavaScript ES6</p>
-              </div>
-            </a>
-          </div>
+						<div class="other-projects--container">
+							<a href="https://github.com/emmahogberg88/project-weather-app">
+								<h4><span class="uppercase underline">Weather app.</span></h4>
+								<p>
+									<span class="underline-black">
+										Web application built in JavaScript as a mob-programming
+										project.</span
+									><span class="bold underline highlight" aria-hidden="true">
+										>>
+									</span>
+								</p>
 
-          <div class="other-projects--container">
-            <a href="https://github.com/emmahogberg88/project-guess-who">
-              <h4><span class="uppercase underline">Guess who, Lego edition.</span></h4><p><span class="underline-black"> Guess who game built in JavaScript with LEGO characters.</span><span class="bold underline highlight" aria-hidden="true"> >> </span></p>
-              
-              <div aria-hidden="true" class="tag-wrapper">
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>JavaScript ES6</p>
-              </div>
-            </a>
-          </div>
+								<div aria-hidden="true" class="tag-wrapper">
+									<p>HTML5</p>
+									<p>CSS3</p>
+									<p>JavaScript ES6</p>
+								</div>
+							</a>
+						</div>
 
-          <div class="other-projects--container">
-            <a href="https://github.com/emmahogberg88/project-news-site">
-              <h4><span class="uppercase underline">News site.</span></h4><p><span class="underline-black"> The first project during the boot camp. Built in HTML and CSS.</span><span class="bold underline highlight" aria-hidden="true"> >> </span></p>
-              
-              <div aria-hidden="true" class="tag-wrapper">
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>JavaScript ES6</p>
-              </div>
-            </a>
-          </div>
+						<div class="other-projects--container">
+							<a href="https://github.com/emmahogberg88/project-guess-who">
+								<h4>
+									<span class="uppercase underline"
+										>Guess who, Lego edition.</span
+									>
+								</h4>
+								<p>
+									<span class="underline-black">
+										Guess who game built in JavaScript with LEGO
+										characters.</span
+									><span class="bold underline highlight" aria-hidden="true">
+										>>
+									</span>
+								</p>
 
-        </article>
+								<div aria-hidden="true" class="tag-wrapper">
+									<p>HTML5</p>
+									<p>CSS3</p>
+									<p>JavaScript ES6</p>
+								</div>
+							</a>
+						</div>
 
-      </div>    
-    </section>
+						<div class="other-projects--container">
+							<a href="https://github.com/emmahogberg88/project-chatbot">
+								<h4>
+									<span class="uppercase underline">Project Chatbot.</span>
+								</h4>
+								<p>
+									<span class="underline-black">
+										A chat bot built in JavaScript as pair-programming
+										project.</span
+									><span class="bold underline highlight" aria-hidden="true">
+										>>
+									</span>
+								</p>
 
-    <!------------------------------------- Section thoughts ------------------------------------->
-    <section class="section-thoughts">
-      <div class="container flex">  
-        <h2 class="uppercase">My thoughts <span class="hidden"> about code</span></h2>  
-        
-          <div class="section-thoughts--container">
-            <!----------- Medium article ------------>
-            <article class="article-thoughts">
-              <a class="project-link" href="https://medium.com/@emmahogberg88/on-a-bumpy-road-called-career-fda4f0b041c4">
-                <div class="thoughts-container flex">
-  
-                  <div class="image-container--thoughts flex">
-                    <img class="thoughts-image" src="./images/medium-one.jpg" alt="image of a bumpy road, click to go to article on medium"/>
-                  </div>
-                  
-                  <div class="section-thoughts--text">
-                    <span class="date">MARCH 2022</span>
-                    <h5>A bumpy road called career.</h5>
-                    <p>During these years in work life I have really enjoyed to go to work, no doubt about that.
-                      I love to contribute, I love to create value, I love to solve problems.
-                      Foremost, I love working with other people. Supporting each other, helping each other and celebrating our achievements together.
-                      <span class="bold highlight" aria-hidden="true" > >> </span></p>
-                  </div>
-     
-                </div>
-              </a>
-            </article> 
+								<div aria-hidden="true" class="tag-wrapper">
+									<p>HTML5</p>
+									<p>CSS3</p>
+									<p>JavaScript ES6</p>
+								</div>
+							</a>
+						</div>
 
-            <article class="article-thoughts">
-              <a class="project-link" href="#">
-                <div class="thoughts-container flex">
+						<div class="other-projects--container">
+							<a href="https://github.com/emmahogberg88/project-news-site">
+								<h4><span class="uppercase underline">News site.</span></h4>
+								<p>
+									<span class="underline-black">
+										The first project during the boot camp. Built in HTML and
+										CSS.</span
+									><span class="bold underline highlight" aria-hidden="true">
+										>>
+									</span>
+								</p>
 
-                  <div class="image-container--thoughts flex">
-                  <img class="thoughts-image" src="./images/question.jpg" alt="image of flower delivery business site webpage, click to go to webpage" />
-                </div>
-                
-                <div class="section-thoughts--text">
-                  <span class="date">MARCH 2021</span>
-                  <h5>An article about what?</h5>
-                  <p class="hover-accent">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, magni.<span class="bold highlight" aria-hidden="true"> >> </span></p>
-                </div>
-                
-              </div>
-            </a>
-          </article> 
+								<div aria-hidden="true" class="tag-wrapper">
+									<p>HTML5</p>
+									<p>CSS3</p>
+									<p>JavaScript ES6</p>
+								</div>
+							</a>
+						</div>
+					</article>
+				</div>
+			</section>
 
-        </div>
+			<!------------------------------------- Section thoughts ------------------------------------->
+			<section class="section-thoughts">
+				<div class="container flex">
+					<h2 class="uppercase">
+						My thoughts <span class="hidden"> about code</span>
+					</h2>
 
-        <!-----------Comming media article ------------>
-        <article class="more-thoughts flex">
-          <h3 class="uppercase">More thoughts</h3> 
-          <div class="more-thoughts--container">
-            <div class="more-thoughts--links">
-              <a href="https://hippos-weather.netlify.app/">
-                <p>
-                  <span class="date underline">MARS 2022.</span><span class="bold underline-black"> Web application built in...</span><span class="highlight bold underline" aria-hidden="true"> >></span>
-                </p>
-              </a>
-            </div>
-            
-            <div class="more-thoughts--links">
-              <a href="https://hippos-weather.netlify.app/">
-                <p>
-                  <span class="date underline">MARS 2022.</span><span class="bold underline-black"> Web application built in...</span><span class="highlight bold underline" aria-hidden="true"> >></span>
-                </p>
-              </a>
-            </div>
-          </div>  
-        </article>    
+					<div class="section-thoughts--container">
+						<!----------- Medium article ------------>
 
-      </div>
-    </section>
+						<article class="article-thoughts">
+							<a class="project-link" href="#">
+								<div class="thoughts-container flex">
+									<div class="image-container--thoughts flex">
+										<img
+											class="thoughts-image"
+											src="./images/question.jpg"
+											alt="image of flower delivery business site webpage, click to go to webpage"
+										/>
+									</div>
 
-    <!------------------------------------- Section skills ------------------------------------->
-    <section class="section-skills" tabindex="0">
-      <div class="container flex">
-        <h2 class="uppercase">skills</h2>
-          
-        <div class="skills-container">
+									<div class="section-thoughts--text">
+										<span class="date">MARCH 2022</span>
+										<h5>Why coding?</h5>
+										<p class="hover-accent">
+											Actually, it all started with a growing interest for data
+											analysis. After a recommendation from a friend, I joined a
+											seminar that Microsoft held about up-skill and re-skill in
+											April 2021..<span
+												class="bold highlight"
+												aria-hidden="true"
+											>
+												>>
+											</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</article>
 
-          <!----------- Code ------------>
-          <div class="skills-container--item" tabindex="0">
-            <ul>
-              <li class="uppercase highlight bold list-heading">code</li>
-              <li>React</li>
-              <li>JavaScript ES6</li>
-              <li>CSS3</li>
-              <li>HTML5</li>
-              <li>Github</li>
-            </ul>
-          </div>
+						<article class="article-thoughts">
+							<a
+								class="project-link"
+								href="https://medium.com/@emmahogberg88/on-a-bumpy-road-called-career-fda4f0b041c4"
+							>
+								<div class="thoughts-container flex">
+									<div class="image-container--thoughts flex">
+										<img
+											class="thoughts-image"
+											src="./images/medium-one.jpg"
+											alt="image of a bumpy road, click to go to article on medium"
+										/>
+									</div>
 
-          <!----------- Toolbox ------------>
-          <div class="skills-container--item" tabindex="0">
-            <ul>
-              <li class="uppercase highlight bold list-heading">Toolbox</li>
-              <li>Figma</li>
-              <li>Slack</li>
-              <li>Agile Methodology</li>
-              <li>Project Management</li>
-              <li>Communication</li>
-              <li>EpiServer</li>
-              <li>SAP</li>
-            </ul>
-          </div>
+									<div class="section-thoughts--text">
+										<span class="date">MARCH 2022</span>
+										<h5>A bumpy road called career.</h5>
+										<p>
+											During these years in work life I have really enjoyed to
+											go to work, no doubt about that. I love to contribute, I
+											love to create value, I love to solve problems. Foremost,
+											I love working with other people. Supporting each other,
+											helping each other and celebrating our achievements
+											together.
+											<span class="bold highlight" aria-hidden="true">
+												>>
+											</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</article>
+					</div>
 
-          <!----------- Upcomming ------------>
-          <div class="skills-container--item" tabindex="0">
-            <ul>
-              <li class="uppercase highlight bold list-heading">Upcomming</li>
-              <li>MongoDB</li>
-              <li>Redux</li>
-              <li>Node.js</li>
-              <li>Styled Components</li>
-            </ul>
-          </div>
+					<!-----------Comming media article ------------>
+					<article class="more-thoughts flex">
+						<h3 class="uppercase">More thoughts</h3>
+						<div class="more-thoughts--container">
+							<div class="more-thoughts--links">
+								<a href="https://hippos-weather.netlify.app/">
+									<p>
+										<span class="date underline">MARS 2022.</span
+										><span class="bold underline-black">
+											Web application built in...</span
+										><span class="highlight bold underline" aria-hidden="true">
+											>></span
+										>
+									</p>
+								</a>
+							</div>
 
-        </div>
-            
-      </div>
-    </section>    
+							<div class="more-thoughts--links">
+								<a href="https://hippos-weather.netlify.app/">
+									<p>
+										<span class="date underline">MARS 2022.</span
+										><span class="bold underline-black">
+											Web application built in...</span
+										><span class="highlight bold underline" aria-hidden="true">
+											>></span
+										>
+									</p>
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
 
-    <!------------------------------------- Section more ------------------------------------->
-    <section class="section-more">
-      <div class="container flex section-more--container">
-        <h2 class="uppercase">for more</h2>
-        
-        <div class="social-container flex">
-          <div class="social-icon--container">
-            <a class="social-link" href="https://www.linkedin.com/in/emmahogberg/" aria-label="Add me on LinkedIn">
-              <svg class="svg-big" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="social-icon-reverse" fill-rule="evenodd" clip-rule="evenodd" d="M66.0015 59.3915H79.0005V65.8665C80.873 62.1425 85.675 58.7965 92.8885 58.7965C106.717 58.7965 110 66.2095 110 79.8105V105H96V82.908C96 75.1625 94.1275 70.7945 89.3605 70.7945C82.749 70.7945 80.0015 75.502 80.0015 82.9045V105H66.0015V59.3915V59.3915ZM41.995 104.405H55.995V58.7965H41.995V104.405V104.405ZM58.0005 43.925C58.001 45.0985 57.7683 46.2603 57.3159 47.3431C56.8634 48.4258 56.2003 49.4078 55.365 50.232C53.6724 51.9142 51.3813 52.8558 48.995 52.85C46.6129 52.8484 44.3271 51.9092 42.632 50.2355C41.7997 49.4085 41.1389 48.4254 40.6872 47.3425C40.2356 46.2596 40.002 45.0983 40 43.925C40 41.5555 40.945 39.2875 42.6355 37.6145C44.3291 35.9386 46.6158 34.999 48.9985 35C51.3855 35 53.6745 35.9415 55.365 37.6145C57.052 39.2875 58.0005 41.5555 58.0005 43.925Z" fill="#111111"/>
-              </svg>
-              <p class="social-text">LinkedIn</p>
-            </a>
-          </div>     
+			<!------------------------------------- Section skills ------------------------------------->
+			<section class="section-skills" tabindex="0">
+				<div class="container flex">
+					<h2 class="uppercase">skills</h2>
 
-          <div class="social-icon--container">
-            <a class="social-link" href="https://github.com/emmahogberg88" aria-label="Follow me on GitHub">
-              <svg class="svg-big" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="social-icon-reverse" fill-rule="evenodd" clip-rule="evenodd" d="M76 33.5789C53.9 33.5789 36 51.9316 36 74.5906C36 92.7383 47.45 108.066 63.35 113.501C65.35 113.859 66.1 112.629 66.1 111.552C66.1 110.578 66.05 107.349 66.05 103.914C56 105.811 53.4 101.402 52.6 99.0951C52.15 97.916 50.2 94.2763 48.5 93.3022C47.1 92.5333 45.1 90.6365 48.45 90.5852C51.6 90.5339 53.85 93.5585 54.6 94.7889C58.2 100.992 63.95 99.2489 66.25 98.1724C66.6 95.5066 67.65 93.7123 68.8 92.687C59.9 91.6618 50.6 88.1245 50.6 72.4375C50.6 67.9775 52.15 64.2864 54.7 61.4156C54.3 60.3903 52.9 56.1866 55.1 50.5475C55.1 50.5475 58.45 49.4709 66.1 54.7512C69.3 53.8284 72.7 53.367 76.1 53.367C79.5 53.367 82.9 53.8284 86.1 54.7512C93.75 49.4196 97.1 50.5475 97.1 50.5475C99.3 56.1866 97.9 60.3903 97.5 61.4156C100.05 64.2864 101.6 67.9262 101.6 72.4375C101.6 88.1758 92.25 91.6618 83.35 92.687C84.8 93.9687 86.05 96.4294 86.05 100.274C86.05 105.76 86 110.168 86 111.552C86 112.629 86.75 113.911 88.75 113.501C96.6906 110.752 103.591 105.519 108.479 98.5393C113.367 91.5594 115.998 83.1835 116 74.5906C116 51.9316 98.1 33.5789 76 33.5789Z" fill="#111111"/>
-              </svg>
-              <p class="social-text">GitHub</p>
-            </a>
-          </div>
-          
-          <div class="social-icon--container">  
-            <a class="social-link" href="https://twitter.com/Emm4_dev" aria-label="Follow me on Twitter">
-              <svg class="svg-big" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="social-icon-reverse" d="M112.687 51.2984C109.903 52.5317 106.913 53.3651 103.77 53.7417C107.013 51.801 109.44 48.7466 110.597 45.1484C107.549 46.9584 104.214 48.2324 100.737 48.9151C98.3979 46.4179 95.3002 44.7628 91.9244 44.2066C88.5486 43.6505 85.0837 44.2244 82.0675 45.8392C79.0513 47.4541 76.6526 50.0196 75.2438 53.1374C73.8351 56.2552 73.4951 59.7509 74.2767 63.0817C68.1023 62.7717 62.0621 61.1669 56.5481 58.3714C51.0341 55.5759 46.1695 51.6523 42.27 46.8551C40.9367 49.1551 40.17 51.8217 40.17 54.6617C40.1685 57.2184 40.7981 59.7359 42.0029 61.9908C43.2077 64.2458 44.9505 66.1685 47.0767 67.5884C44.6109 67.5099 42.1996 66.8437 40.0433 65.6451V65.8451C40.0431 69.4309 41.2834 72.9063 43.5539 75.6817C45.8244 78.4571 48.9852 80.3615 52.5 81.0717C50.2126 81.6908 47.8145 81.782 45.4867 81.3384C46.4783 84.4238 48.41 87.1218 51.0112 89.0548C53.6125 90.9878 56.7531 92.059 59.9933 92.1184C54.4928 96.4364 47.6996 98.7787 40.7067 98.7684C39.4679 98.7687 38.2303 98.6964 37 98.5517C44.0983 103.116 52.3611 105.538 60.8 105.528C89.3667 105.528 104.983 81.8684 104.983 61.3484C104.983 60.6817 104.967 60.0084 104.937 59.3417C107.974 57.145 110.596 54.4247 112.68 51.3084L112.687 51.2984V51.2984Z" fill="black"/>
-              </svg>
-              <p class="social-text">Twitter</p>
-            </a>
-          </div>  
-        </div>
-      
-      </div>
-    </section>
+					<div class="skills-container">
+						<!----------- Code ------------>
+						<div class="skills-container--item" tabindex="0">
+							<ul>
+								<li class="uppercase highlight bold list-heading">code</li>
+								<li>React</li>
+								<li>JavaScript ES6</li>
+								<li>CSS3</li>
+								<li>HTML5</li>
+								<li>Github</li>
+							</ul>
+						</div>
 
-  </main>
-  <!------------------------------------- footer ------------------------------------->
-  <footer>
-    <div class="container flex" tabindex="0">
-      <h3 class="uppercase">contact</h3>
-      <p>Emma Högberg</p>
-      <p>+46 73 701 05 04</p>
-      <a href="mailto:p.demirel.etli@gmail.com" target="blank">
-        <p>emmahogberg88@gmail.com</p>
-      </a>
-    </div>
-  </footer>
+						<!----------- Toolbox ------------>
+						<div class="skills-container--item" tabindex="0">
+							<ul>
+								<li class="uppercase highlight bold list-heading">Toolbox</li>
+								<li>Figma</li>
+								<li>Slack</li>
+								<li>Agile Methodology</li>
+								<li>Project Management</li>
+								<li>Communication</li>
+								<li>EpiServer</li>
+								<li>SAP</li>
+							</ul>
+						</div>
 
-</body>
+						<!----------- Upcomming ------------>
+						<div class="skills-container--item" tabindex="0">
+							<ul>
+								<li class="uppercase highlight bold list-heading">Upcomming</li>
+								<li>MongoDB</li>
+								<li>Redux</li>
+								<li>Node.js</li>
+								<li>Styled Components</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!------------------------------------- Section more ------------------------------------->
+			<section class="section-more">
+				<div class="container flex section-more--container">
+					<h2 class="uppercase">for more</h2>
+
+					<div class="social-container flex">
+						<div class="social-icon--container">
+							<a
+								class="social-link"
+								href="https://www.linkedin.com/in/emmahogberg/"
+								aria-label="Add me on LinkedIn"
+							>
+								<svg
+									class="svg-big"
+									width="150"
+									height="150"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										class="social-icon-reverse"
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M66.0015 59.3915H79.0005V65.8665C80.873 62.1425 85.675 58.7965 92.8885 58.7965C106.717 58.7965 110 66.2095 110 79.8105V105H96V82.908C96 75.1625 94.1275 70.7945 89.3605 70.7945C82.749 70.7945 80.0015 75.502 80.0015 82.9045V105H66.0015V59.3915V59.3915ZM41.995 104.405H55.995V58.7965H41.995V104.405V104.405ZM58.0005 43.925C58.001 45.0985 57.7683 46.2603 57.3159 47.3431C56.8634 48.4258 56.2003 49.4078 55.365 50.232C53.6724 51.9142 51.3813 52.8558 48.995 52.85C46.6129 52.8484 44.3271 51.9092 42.632 50.2355C41.7997 49.4085 41.1389 48.4254 40.6872 47.3425C40.2356 46.2596 40.002 45.0983 40 43.925C40 41.5555 40.945 39.2875 42.6355 37.6145C44.3291 35.9386 46.6158 34.999 48.9985 35C51.3855 35 53.6745 35.9415 55.365 37.6145C57.052 39.2875 58.0005 41.5555 58.0005 43.925Z"
+										fill="#111111"
+									/>
+								</svg>
+								<p class="social-text">LinkedIn</p>
+							</a>
+						</div>
+
+						<div class="social-icon--container">
+							<a
+								class="social-link"
+								href="https://github.com/emmahogberg88"
+								aria-label="Follow me on GitHub"
+							>
+								<svg
+									class="svg-big"
+									width="150"
+									height="150"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										class="social-icon-reverse"
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M76 33.5789C53.9 33.5789 36 51.9316 36 74.5906C36 92.7383 47.45 108.066 63.35 113.501C65.35 113.859 66.1 112.629 66.1 111.552C66.1 110.578 66.05 107.349 66.05 103.914C56 105.811 53.4 101.402 52.6 99.0951C52.15 97.916 50.2 94.2763 48.5 93.3022C47.1 92.5333 45.1 90.6365 48.45 90.5852C51.6 90.5339 53.85 93.5585 54.6 94.7889C58.2 100.992 63.95 99.2489 66.25 98.1724C66.6 95.5066 67.65 93.7123 68.8 92.687C59.9 91.6618 50.6 88.1245 50.6 72.4375C50.6 67.9775 52.15 64.2864 54.7 61.4156C54.3 60.3903 52.9 56.1866 55.1 50.5475C55.1 50.5475 58.45 49.4709 66.1 54.7512C69.3 53.8284 72.7 53.367 76.1 53.367C79.5 53.367 82.9 53.8284 86.1 54.7512C93.75 49.4196 97.1 50.5475 97.1 50.5475C99.3 56.1866 97.9 60.3903 97.5 61.4156C100.05 64.2864 101.6 67.9262 101.6 72.4375C101.6 88.1758 92.25 91.6618 83.35 92.687C84.8 93.9687 86.05 96.4294 86.05 100.274C86.05 105.76 86 110.168 86 111.552C86 112.629 86.75 113.911 88.75 113.501C96.6906 110.752 103.591 105.519 108.479 98.5393C113.367 91.5594 115.998 83.1835 116 74.5906C116 51.9316 98.1 33.5789 76 33.5789Z"
+										fill="#111111"
+									/>
+								</svg>
+								<p class="social-text">GitHub</p>
+							</a>
+						</div>
+
+						<div class="social-icon--container">
+							<a
+								class="social-link"
+								href="https://twitter.com/Emm4_dev"
+								aria-label="Follow me on Twitter"
+							>
+								<svg
+									class="svg-big"
+									width="150"
+									height="150"
+									viewBox="0 0 150 150"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										class="social-icon-reverse"
+										d="M112.687 51.2984C109.903 52.5317 106.913 53.3651 103.77 53.7417C107.013 51.801 109.44 48.7466 110.597 45.1484C107.549 46.9584 104.214 48.2324 100.737 48.9151C98.3979 46.4179 95.3002 44.7628 91.9244 44.2066C88.5486 43.6505 85.0837 44.2244 82.0675 45.8392C79.0513 47.4541 76.6526 50.0196 75.2438 53.1374C73.8351 56.2552 73.4951 59.7509 74.2767 63.0817C68.1023 62.7717 62.0621 61.1669 56.5481 58.3714C51.0341 55.5759 46.1695 51.6523 42.27 46.8551C40.9367 49.1551 40.17 51.8217 40.17 54.6617C40.1685 57.2184 40.7981 59.7359 42.0029 61.9908C43.2077 64.2458 44.9505 66.1685 47.0767 67.5884C44.6109 67.5099 42.1996 66.8437 40.0433 65.6451V65.8451C40.0431 69.4309 41.2834 72.9063 43.5539 75.6817C45.8244 78.4571 48.9852 80.3615 52.5 81.0717C50.2126 81.6908 47.8145 81.782 45.4867 81.3384C46.4783 84.4238 48.41 87.1218 51.0112 89.0548C53.6125 90.9878 56.7531 92.059 59.9933 92.1184C54.4928 96.4364 47.6996 98.7787 40.7067 98.7684C39.4679 98.7687 38.2303 98.6964 37 98.5517C44.0983 103.116 52.3611 105.538 60.8 105.528C89.3667 105.528 104.983 81.8684 104.983 61.3484C104.983 60.6817 104.967 60.0084 104.937 59.3417C107.974 57.145 110.596 54.4247 112.68 51.3084L112.687 51.2984V51.2984Z"
+										fill="black"
+									/>
+								</svg>
+								<p class="social-text">Twitter</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!------------------------------------- footer ------------------------------------->
+		<footer>
+			<div class="container flex" tabindex="0">
+				<h3 class="uppercase">contact</h3>
+				<p>Emma Högberg</p>
+				<p>+46 73 701 05 04</p>
+				<a href="mailto:p.demirel.etli@gmail.com" target="blank">
+					<p>emmahogberg88@gmail.com</p>
+				</a>
+			</div>
+		</footer>
+	</body>
+	<script src="./index.js"></script>
 </html>
