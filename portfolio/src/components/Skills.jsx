@@ -10,7 +10,7 @@ const Skills = () => {
 					<h3 className="fw-bold color-font">CODE</h3>
 					<p>React</p>
 					<p>HTML5</p>
-					<p>CSS3</p>
+					<p>CSS3 & BEM</p>
 					<p>JavaScript ES6</p>
 					<p>Github</p>
 				</div>
@@ -32,9 +32,13 @@ const Skills = () => {
 				<div>
 					<h3 className="fw-bold color-font">UPCOMING</h3>
 					<p>Node.js</p>
+					<p>Express.js</p>
+					<p>jQuery</p>
+					<p>EJS</p>
 					<p>SQL</p>
 					<p>MongoDB</p>
 					<p>Mongoose</p>
+					<p>TypeScript</p>
 				</div>
 			</div>
 		</div>
