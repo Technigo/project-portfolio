@@ -1,12 +1,13 @@
 import React from "react";
+import { Container } from "../components-styled/Container";
 import linkedin from '../assets/linkedin-orange.png'
 import github from '../assets/github-orange.png'
 import stackoverflow from '../assets/stackoverflow-orange.png'
 
 const More = () => {
     return (
-        <section className="section">
-		<div className="container">
+        <section>
+		<Container>
 			<h2 className="section-heading fw-bold montserrat"><span className="heading-block">FOR MORE</span></h2>
 			<div className="footer-icons-container">
 				<div className="footer-icons-text roboto">
@@ -25,7 +26,7 @@ const More = () => {
 					<h4 className="color-font" aria-hidden="true">STACK OVERFLOW</h4>
 				</div>
 			</div>
-		</div>
+		</Container>
 	</section>
     )
 }

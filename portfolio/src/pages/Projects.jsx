@@ -1,12 +1,27 @@
 import React from "react";
+import { Container } from "../components-styled/Container";
+import FeaturedProjectsCard from "../components/FeaturedProjectsCard";
+import projects from '../data/projects.json'
 
 const Projects = () => {
+
+	const featuredProjects = projects.filter(project => project.featured === true)
+
     return (
-        <section className="section">
-		<div className="container">
+        <section>
+		<Container>
 			<h2 className="section-heading fw-bold montserrat"><span className="heading-block">FEATURED PROJECTS</span></h2>
 			<div className="featured-projects">
 
+			{featuredProjects.map((project) => {
+				return (
+					<React.Fragment key={project.id}>
+					<FeaturedProjectsCard project={project} />
+					</React.Fragment>
+				)
+			})}
+
+				{/* <FeaturedProjectsCard />
 				<article className="roboto">
 					<a href="https://github.com/michaelchangdk/project-weather-app" target="_blank" rel="noreferrer">
 					<div className="project-image-group">
@@ -33,6 +48,7 @@ const Projects = () => {
 						</div>
 					</div>
 				</article>
+				
 				<article className="roboto">
 					<a href="https://github.com/michaelchangdk/project-guess-who" target="_blank" rel="noreferrer">
 					<div className="project-image-group">
@@ -56,6 +72,7 @@ const Projects = () => {
 						</div>
 					</div>
 				</article>
+
 				<article className="roboto mobile-hidden">
 					<a href="https://github.com/michaelchangdk/project-chatbot" target="_blank" rel="noreferrer">
 					<div className="project-image-group">
@@ -79,6 +96,7 @@ const Projects = () => {
 						</div>
 					</div>
 				</article>
+
 				<article className="roboto mobile-hidden">
 					<a href="https://github.com/michaelchangdk/project-business-site" target="_blank" rel="noreferrer">
 					<div className="project-image-group">
@@ -101,7 +119,8 @@ const Projects = () => {
 							<p>JavaScript ES6</p>
 						</div>
 					</div>
-				</article>
+				</article> */}
+
 			</div>
 			<h2 className="section-heading fw-bold montserrat color-font">OTHER PROJECTS</h2>
 			<div className="other-projects roboto">
@@ -175,7 +194,7 @@ const Projects = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</Container>
 	</section>
     )
 }

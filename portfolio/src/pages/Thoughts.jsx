@@ -1,9 +1,10 @@
 import React from "react";
+import { Container } from "../components-styled/Container";
 
 const Thoughts = () => {
     return (
-        <section className="section">
-		<div className="container">
+        <section>
+		<Container>
 			<h2 className="section-heading fw-bold montserrat"><span className="heading-block">MY THOUGHTS <span className="mobile-hidden-text">ABOUT CODE</span></span></h2>
 			<div className="featured-opinions roboto">
 				<article className="article">
@@ -34,7 +35,7 @@ const Thoughts = () => {
 					<p><span className="color-font underline">MAR 2022.</span><span className="underline fw-bold"> 5 ovens that will make pizza easier.</span><span className="color-font underline fw-bold" aria-hidden="true"> &#62;&#62;</span></p></a>
 				</div>
 			</div>
-		</div>
+		</Container>
 	</section>
     )
 }

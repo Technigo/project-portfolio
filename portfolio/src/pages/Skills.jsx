@@ -1,9 +1,10 @@
 import React from "react";
+import { Container } from "../components-styled/Container";
 
 const Skills = () => {
     return (
-        <section className="section">
-		<div className="container">
+        <section>
+		<Container>
 			<h2 className="section-heading fw-bold montserrat"><span className="heading-block">SKILLS</span></h2>
 			<div className="skills-container fs-normal roboto">
 				<div className="s-grid-1">
@@ -41,7 +42,7 @@ const Skills = () => {
 					<p>TypeScript</p>
 				</div>
 			</div>
-		</div>
+		</Container>
 	</section>
     )
 }
