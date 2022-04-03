@@ -30,11 +30,39 @@ body {
   font-weight: 700;
 }
 
+.container {
+  width: 375px; /*Lowest supported value for mobiles*/
+  margin: 0 auto;
+  padding: 46px 24px;
+}
+
+.section {
+  padding: 10px;
+  text-align: center;
+}
+
+.section h2 {
+  display: inline-block;
+  padding: 3px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--red);
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.section:nth-child(2n) {
+  background-color: var(--white);
+}
+.section:nth-child(2n + 1) {
+  background-color: var(--section-background);
+}
+
 /* Header */
 
 .header {
   /* Add smaller image for mobile? */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/tree.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("assets/bench-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -103,34 +131,8 @@ body {
   border: 2px solid var(--white);
 }
 
-/*Lowest supported value for mobiles*/
-.container {
-  width: 375px;
-  margin: 0 auto;
-  padding: 46px 24px;
-}
 
-.section {
-  padding: 10px;
-  text-align: center;
-}
-
-.section h2 {
-  display: inline-block;
-  padding: 3px;
-  text-transform: uppercase;
-  color: var(--white);
-  background-color: var(--red);
-  font-size: 22px;
-  line-height: 27px;
-}
-
-.section:nth-child(2n) {
-  background-color: var(--white);
-}
-.section:nth-child(2n + 1) {
-  background-color: var(--section-background);
-}
+/* SUMMARY SECTION */
 
 .summary-container p {
   text-align: left;
@@ -142,11 +144,15 @@ body {
   margin-right: 10px;
 }
 
+/* TECH SECTION */
+
 .tech-container p {
   font-size: 17px;
   line-height: 29px;
   margin-top: 24px;
 }
+
+/* FEATURED PROJECTS */
 
 .featured-projects {
   display: flex;
@@ -156,6 +162,24 @@ body {
 
 .project-image-group {
   position: relative;
+}
+
+.project-image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(100, 100, 100, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.project-image-overlay:hover {
+  background-color: transparent;
+  color: transparent;
 }
 
 .project-overlay {
@@ -232,9 +256,13 @@ body {
   background-color: inherit;
 }
 
+/* THOUGHTS */
+
 .thoughts p {
   margin: 40px 0;
 }
+
+/* SKILLS */
 
 .all-skills-container {
   margin-top: 24px;
@@ -251,6 +279,8 @@ body {
   text-transform: uppercase;
   color: var(--red);
 }
+
+/* FOR MORE */
 
 .for-more-logos {
   margin: 30px auto;
@@ -275,6 +305,8 @@ body {
   line-height: 13px;
   text-transform: uppercase;
 }
+
+/* FOOTER */
 
 .footer {
   height: 302px;
