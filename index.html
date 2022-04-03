@@ -12,9 +12,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
     />
+    <script
+      src="https://kit.fontawesome.com/308edcd391.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-
     <!-- HEADER -->
 
     <header class="header">
@@ -67,7 +70,6 @@
     <!-- MAIN -->
 
     <main class="main">
-
       <!-- SUMMARY SECTION -->
 
       <section class="section">
@@ -97,25 +99,22 @@
         </div>
       </section>
 
-
       <!-- FEATURED PROJECTS SECTION -->
 
       <section class="section">
         <div class="container">
-
           <!-- FEATURED PROJECTS -->
 
           <h2>Featured projects</h2>
           <div class="featured-projects">
-
             <!-- BUSINESS SITE PROJECT -->
 
-            <article>
+            <article class="featured-project-article">
               <a
                 href="https://jessicas-business-site-project.netlify.app/"
                 aria-label="Link to deployed Business site project"
                 target="_blank"
-                rel="noopener noreferrer" 
+                rel="noopener noreferrer"
               >
                 <div class="project-image-group">
                   <img
@@ -132,7 +131,8 @@
               <div class="project-text-group">
                 <h4 class="project-heading">Business site with accordion</h4>
                 <p class="project-description">
-                  Responsive web site using HTML, CSS and JavaScript ES6 presenting a fictitious business.
+                  Responsive web site using HTML, CSS and JavaScript ES6
+                  presenting a fictitious business.
                 </p>
                 <div class="tag-wrapper">
                   <p>HTML5</p>
@@ -142,11 +142,12 @@
               </div>
             </article>
 
-            <article>
+            <article class="featured-project-article">
               <a
                 href="https://music-releases-spotify.netlify.app/"
-                target="_blank"
                 aria-label="Link to deployed Music Releases project"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="project-image-group">
                   <img
@@ -154,8 +155,9 @@
                     src="./assets/music-releases.png"
                     alt="music releases"
                   />
-                  <div class="project-overlay">
-                    <h3 class="project-title">Music Releases</h3>
+
+                  <div class="project-image-overlay">
+                    <h3 class="project-title">Music releases</h3>
                   </div>
                 </div>
               </a>
@@ -174,29 +176,64 @@
               </div>
             </article>
 
-            <article>
+            <article class="featured-project-article">
               <a
-                href="https://minimalist-weather-app.netlify.app/"
+                href="https://jessicas-business-site-project.netlify.app/"
+                aria-label="Link to deployed Business site project"
                 target="_blank"
-                aria-label="Link to deployed Weather app project"
+                rel="noopener noreferrer"
               >
                 <div class="project-image-group">
                   <img
                     class="project-image"
-                    src="./assets/weather-app.png"
-                    alt="weather app"
+                    src="./assets/business-site.png"
+                    alt="business site"
                   />
-                  <div class="project-overlay">
-                    <h3 class="project-title">Weather app</h3>
+                  <div class="project-image-overlay">
+                    <h3 class="project-title">Business site</h3>
                   </div>
                 </div>
               </a>
 
               <div class="project-text-group">
-                <h4 class="project-heading">Weather built in javascript</h4>
+                <h4 class="project-heading">Business site with accordion</h4>
+                <p class="project-description">
+                  Responsive web site using HTML, CSS and JavaScript ES6
+                  presenting a fictitious business.
+                </p>
+                <div class="tag-wrapper">
+                  <p>HTML5</p>
+                  <p>CSS3</p>
+                  <p>JavaScript ES6</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="featured-project-article">
+              <a
+                href="https://music-releases-spotify.netlify.app/"
+                aria-label="Link to deployed Music Releases project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="project-image-group">
+                  <img
+                    class="project-image"
+                    src="./assets/music-releases.png"
+                    alt="music releases"
+                  />
+
+                  <div class="project-image-overlay">
+                    <h3 class="project-title">Music releases</h3>
+                  </div>
+                </div>
+              </a>
+
+              <div class="project-text-group">
+                <h4 class="project-heading">Web app built in React</h4>
                 <p class="project-description">
                   Responsive web site using HTML, CSS and JavaScript ES6 for
-                  fetching weather data from API.
+                  music releases.
                 </p>
                 <div class="tag-wrapper">
                   <p>HTML5</p>
@@ -205,39 +242,6 @@
                 </div>
               </div>
             </article>
-
-            <article>
-              <a
-                href="https://jessicas-guess-who-project.netlify.app/"
-                target="_blank"
-                aria-label="Link to deployed Guess Who project"
-              >
-                <div class="project-image-group">
-                  <img
-                    class="project-image"
-                    src="./assets/guesswho.png"
-                    alt="Guess Who Project"
-                  />
-                  <div class="project-overlay">
-                    <h3 class="project-title">Guess Who</h3>
-                  </div>
-                </div>
-              </a>
-
-              <div class="project-text-group">
-                <h4 class="project-heading">Guess who game built in javascript</h4>
-                <p class="project-description">
-                  Responsive web site using HTML, CSS and JavaScript ES6. Guess who is 
-                  the secret person.
-                </p>
-                <div class="tag-wrapper">
-                  <p>HTML5</p>
-                  <p>CSS3</p>
-                  <p>JavaScript ES6</p>
-                </div>
-              </div>
-            </article>
-
           </div>
 
           <!-- OTHER PROJECTS -->
@@ -333,24 +337,28 @@
           <h2>For more</h2>
           <nav class="for-more-logos">
             <div class="fore-more-logo-container">
-              <a href="https://www.linkedin.com/in/jessica-sandler/"
-                ><img src="./assets/li-logo-red-small.svg" alt="linkedin-logo"
-              /></a>
-              <p>Linkedin</p>
+              <a href="https://www.linkedin.com/in/jessica-sandler/">
+                <div class="icon-container">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <p>Linkedin</p>
+              </a>
             </div>
             <div class="fore-more-logo-container">
-              <a href="https://github.com/jessand77"
-                ><img src="./assets/gh-logo-red-small.svg" alt="github-logo"
-              /></a>
-              <p>GitHub</p>
+              <a href="https://github.com/jessand77">
+                <div class="icon-container">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <p>GitHub</p>
+              </a>
             </div>
             <div class="fore-more-logo-container">
-              <a href="https://stackoverflow.com/"
-                ><img
-                  src="./assets/so-logo-red-small.svg"
-                  alt="stackoverflow-logo"
-              /></a>
-              <p>Stack Overflow</p>
+              <a href="https://stackoverflow.com/">
+                <div class="icon-container">
+                  <i class="fa-brands fa-stack-overflow"></i>
+                </div>
+                <p>Stack<br/>Overflow</p>
+              </a>
             </div>
           </nav>
         </div>

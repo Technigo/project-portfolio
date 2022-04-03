@@ -7,6 +7,8 @@
   --section-background: #f4f4f4;
   --blue: #072bce;
   --pink: #fddfe7;
+  --bluegrey: #4a6f7d; /*this is dimgrey*/
+  --gainsboro: #d8e5e7;
 }
 
 * {
@@ -14,6 +16,10 @@
   padding: 0;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
+}
+
+a {
+  all: unset;
 }
 
 body {
@@ -43,10 +49,10 @@ body {
 
 .section h2 {
   display: inline-block;
-  padding: 3px;
+  padding: 5px;
   text-transform: uppercase;
   color: var(--white);
-  background-color: var(--red);
+  background-color: var(--bluegrey);
   font-size: 22px;
   line-height: 27px;
 }
@@ -116,6 +122,7 @@ body {
 .header-text h2 span {
   font-size: 24px;
   line-height: 40px;
+  display: none;
 }
 
 .header-image-container {
@@ -130,7 +137,6 @@ body {
   border-radius: 50%;
   border: 2px solid var(--white);
 }
-
 
 /* SUMMARY SECTION */
 
@@ -160,8 +166,14 @@ body {
   margin-top: 40px;
 }
 
+.featured-project-article {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
 .project-image-group {
   position: relative;
+  height: 100%;
 }
 
 .project-image-overlay {
@@ -174,7 +186,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s ease;
+  transition: 0.8s ease;
+  font-size: 18px;
+  color: var(--white);
 }
 
 .project-image-overlay:hover {
@@ -182,33 +196,14 @@ body {
   color: transparent;
 }
 
-.project-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(100, 100, 55, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-overlay:hover {
-  background: none;
-}
-
-/* Har lagt denna inuti project-overlay som en flex-item */
-/* Osäker på om det är det bästa sättet att göra detta på */
 .project-title {
-  color: var(--white);
   text-transform: uppercase;
 }
 
 .project-image {
   width: 100%;
-  /* For complete overlay: */
-  display: flex; /*Or display: block */
+  height: 100%;
+  display: flex; /* For complete overlay: */
 }
 
 .project-text-group {
@@ -219,7 +214,7 @@ body {
 
 .project-heading {
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--bluegrey);
   font-size: 17px;
   line-height: 29px;
   letter-spacing: 0.01em;
@@ -238,7 +233,7 @@ body {
 
 .tag-wrapper p {
   color: #2b2e34;
-  background-color: var(--pink);
+  background-color: var(--gainsboro);
   font-size: 9px;
   line-height: 11px;
   letter-spacing: 0.01em;
@@ -252,7 +247,7 @@ body {
 }
 
 .other-projects h2 {
-  color: var(--red);
+  color: var(--bluegrey);
   background-color: inherit;
 }
 
@@ -277,7 +272,7 @@ body {
 .all-skills-container h3 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--bluegrey);
 }
 
 /* FOR MORE */
@@ -288,6 +283,7 @@ body {
   max-width: 664px;
   display: flex;
   justify-content: space-evenly;
+  color: var(--bluegrey);
 }
 
 .fore-more-logo-container {
@@ -295,11 +291,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+
+.icon-container {
+  border: 1px solid var(--bluegrey);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .fore-more-logo-container p {
   margin-top: 10px;
-  color: var(--red);
   font-size: 11px;
   font-weight: bold;
   line-height: 13px;
@@ -312,7 +319,7 @@ body {
   height: 302px;
   text-align: center;
   color: var(--white);
-  background-color: var(--blue);
+  background-color: var(--bluegrey);
   display: flex;
   justify-content: center;
   align-content: center;
