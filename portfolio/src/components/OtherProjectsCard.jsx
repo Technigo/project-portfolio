@@ -1,20 +1,20 @@
-import React from 'react';
-import ProjectTag from './ProjectTag';
+import React from "react";
+import ProjectTag from "./ProjectTag";
 
 const OtherProjectsCard = ({ project }) => {
   console.log(project);
-  const projectTags = project.tags.split(',').reverse();
+  const projectTags = project.tags.split(",").reverse();
 
   return (
     <div>
       <a href={project.github_href} target="_blank" rel="noreferrer">
         <p className="fs-normal fw-normal">
           <span className="color-font color-font underline-desktop fw-bold">
-            {project.name}{' '}
+            {project.name}{" "}
           </span>
           <br className="desktop-hidden" />
           <span className="color-black underline-desktop">
-            {project.short_description}{' '}
+            {project.short_description}{" "}
           </span>
           <span
             className="color-font fw-bold underline-desktop"
@@ -25,7 +25,7 @@ const OtherProjectsCard = ({ project }) => {
         </p>
       </a>
       <div>
-        {projectTags.map(tag => {
+        {projectTags.map((tag) => {
           return <ProjectTag key={tag} tag={tag} />;
         })}
       </div>

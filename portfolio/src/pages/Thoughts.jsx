@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container } from '../components-styled/Container';
+import React from "react";
+import { Container } from "../components-styled/Container";
 
 const Thoughts = () => {
   return (
@@ -26,10 +26,11 @@ const Thoughts = () => {
                 Pizza to love pizza
               </h3>
               <p className="fs-normal fw-normal">
-                Making pizza is more than “just cheesy bread". Instead, it's
-                much more about oven. It's similar to pie in that the oven is
-                heating an assortment of ingredients and components (i.e., food)
-                in a way to satisfy a particular appetite.{' '}
+                Making pizza is more than &quot;just cheesy bread&quot;.
+                Instead, it&apos;s much more about oven. It&apos;s similar to
+                pie in that the oven is heating an assortment of ingredients and
+                components (i.e., food) in a way to satisfy a particular
+                appetite.{" "}
                 <span className="fw-bold color-font" aria-hidden="true">
                   &#62;&#62;
                 </span>
@@ -51,10 +52,11 @@ const Thoughts = () => {
                 Pizza to love pizza
               </h3>
               <p className="fs-normal fw-normal">
-                Making pizza is more than “just cheesy bread". Instead, it's
-                much more about oven. It's similar to pie in that the oven is
-                heating an assortment of ingredients and components (i.e., food)
-                in a way to satisfy a particular appetite.{' '}
+                Making pizza is more than &quot;just cheesy bread&quot;.
+                Instead, it&apos;s much more about oven. It&apos;s similar to
+                pie in that the oven is heating an assortment of ingredients and
+                components (i.e., food) in a way to satisfy a particular
+                appetite.{" "}
                 <span className="fw-bold color-font" aria-hidden="true">
                   &#62;&#62;
                 </span>
@@ -71,14 +73,14 @@ const Thoughts = () => {
               <p>
                 <span className="color-font underline">MAR 2022.</span>
                 <span className="underline fw-bold">
-                  {' '}
+                  {" "}
                   5 ovens that will make pizza easier.
                 </span>
                 <span
                   className="color-font underline fw-bold"
                   aria-hidden="true"
                 >
-                  {' '}
+                  {" "}
                   &#62;&#62;
                 </span>
               </p>
@@ -89,14 +91,14 @@ const Thoughts = () => {
               <p>
                 <span className="color-font underline">MAR 2022.</span>
                 <span className="underline fw-bold">
-                  {' '}
+                  {" "}
                   5 ovens that will make pizza easier.
                 </span>
                 <span
                   className="color-font underline fw-bold"
                   aria-hidden="true"
                 >
-                  {' '}
+                  {" "}
                   &#62;&#62;
                 </span>
               </p>
@@ -107,14 +109,14 @@ const Thoughts = () => {
               <p>
                 <span className="color-font underline">MAR 2022.</span>
                 <span className="underline fw-bold">
-                  {' '}
+                  {" "}
                   5 ovens that will make pizza easier.
                 </span>
                 <span
                   className="color-font underline fw-bold"
                   aria-hidden="true"
                 >
-                  {' '}
+                  {" "}
                   &#62;&#62;
                 </span>
               </p>

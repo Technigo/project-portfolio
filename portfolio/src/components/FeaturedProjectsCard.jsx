@@ -1,20 +1,19 @@
-import React from 'react';
-import ProjectTag from './ProjectTag';
-import weather from '../assets/arnold-francisca-unsplash.jpg';
+import React from "react";
+import ProjectTag from "./ProjectTag";
 
 // SRC FOR IMAGE FROM JSON NOT WORKING
 // UNIQUE KEY FOR EACH PROJECT TAG
 
 const FeaturedProjectsCard = ({ project }) => {
-  const projectTags = project.tags.split(',');
+  const projectTags = project.tags.split(",");
 
   return (
-    <article className="roboto">
+    <div className="article roboto">
       <div className="project-image-group">
         <img
           alt={project.img_alt}
           className="project-image"
-          src={require('../assets/' + project.image_name)}
+          src={require("../assets/" + project.image_name)}
         />
         <div className="project-image-overlay"></div>
         <h3
@@ -46,11 +45,11 @@ const FeaturedProjectsCard = ({ project }) => {
         </a>
       </div>
       <div>
-        {projectTags.map(tag => {
+        {projectTags.map((tag) => {
           return <ProjectTag key={tag} tag={tag} />;
         })}
       </div>
-    </article>
+    </div>
   );
 };
 
