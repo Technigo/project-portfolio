@@ -1,369 +1,33 @@
-body {
-  margin: 0 auto;
-  padding: 0;
-  font-family: montserrat;
-  line-height: 29px;
-  scroll-behavior: smooth;
-}
-
-p {
-  font-weight: 400;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 100px;
-  columns: red;
-}
-
-h2 {
-  font: montserrat;
-  font-weight: 700px;
-}
-
-h3 {
-  color: #f8485e;
-  text-transform: uppercase;
-}
-/* Header */
-
-.text-container {
-  background-image: url(./images/pine.jpeg);
-  background-size: cover;
-  background-position: bottom;
-  height: 520px;
-  width: 100%;
-  left: 0;
-  top: 0;
-  flex-direction: column;
-  position: relative;
-}
-
-.profile-picture {
-  border-radius: 100%;
-  /* border: 1px solid white; */
-  width: 180px;
-  position: absolute;
-  top: 356px;
-  right: 24px;
-}
-.name-text {
-  color: white;
-  font-weight: 500;
-}
-
-.navbar {
-  position: absolute;
-  top: 60px;
-  right: 30px;
-}
-
-.icon-header-more {
-  width: 53px;
-  height: 53px;
-}
-
-.icon-header-more:hover {
-  transform: scale(1.1);
-}
-
-.name-text {
-  color: #f4f4f4;
-  font-weight: 500;
-  font-family: Roboto;
-  font-size: 1.3rem;
-}
-
-/* prepravke za naslov*/
-
-.title {
-  padding-top: 70px;
-  font-size: 1rem;
-  width: 700px;
-  height: 500px;
-}
-
-.portfolio-text {
-  font-size: 0.8rem;
-  font-family: roboto;
-  margin-left: 30px;
-  color: #f4f4f4;
-  line-height: 20px;
-}
-
-.career-text {
-  font-family: roboto;
-  font-size: 4rem;
-  font-weight: 700;
-  color: #f4f4f4;
-  font-stretch: 100%;
-  margin-left: 40px;
-}
-
-/*INTO SECTION STYLING*/
-
-.dot-icon {
-  width: 15%;
-}
-
-.intro-section {
-  background: #f4f4f4;
-  /* background: #a5f0c5; */
+* {
   box-sizing: border-box;
-  height: 324px;
-  top: 520px;
-  font-size: 17px;
-  line-height: 29px;
-  padding: 25px 35px 25px 35px;
 }
 
-.bio-text {
-  max-width: 330px;
-  text-align: left;
-  margin: 0 auto;
-  margin-top: 10px;
-  line-height: 29px;
-  font-size: 21px;
-}
-
-/*TECH SECTION STYLING*/
-
-.tech-section {
-  display: block;
-  text-align: center;
-  padding: 24px;
-  max-width: 330px;
-  margin: 0 auto;
-  line-height: 29px;
-  padding: 24px 24px 24px 24px;
-}
-
-.tech-heading {
-  /* background-color: rgb(17, 104, 144); */
-  background: #a5f0c5;
-  /* background: #019875; */
-  color: #fff;
-  text-transform: uppercase;
-  width: fit-content;
-  display: inline-block;
-  font-size: 22px;
-  padding: 6px;
-}
-
-.tech-text {
-  font-family: montserrat;
-  font-weight: 400;
-  font-size: 19px;
-}
-
-/*PROJECTS SECTION*/
-
-/*test za overlay*/
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  opacity: 1;
+body {
   margin: 0;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.overlay:hover {
-  opacity: 0;
-}
-
-.overlay-title {
-  position: relative;
-  transition: 0.5s ease;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #f4f4f4;
-  top: 50%;
-}
-
-.other-projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.other-projects-head {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  text-transform: uppercase;
-  width: fit-content;
-  font-size: 22px;
-  background: #a5f0c5;
-  padding: 6px;
-}
-
-.projects {
-  max-width: 330px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.project-section {
+section:nth-child(2n-1) {
   background-color: #f4f4f4;
-  padding: 20px;
-  text-align: center;
-  padding: 25px 35px 25px 35px;
 }
 
-.project-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  width: 100%;
-  transition: 0.5s ease;
-}
-
-.project-title {
-  color: rgb(255, 76, 41);
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.arrow {
-  color: rgb(255, 76, 41);
-}
-
-.project-image-container {
-  position: relative;
-  color: white;
-}
-
-.project-text {
-  text-align: left;
-  margin: 0 auto;
-  max-width: 330px;
-  margin-bottom: 5px;
-  color: #151515;
-  font-weight: 500;
-  font-size: 19px;
-}
-
-.projects-head {
-  display: inline-block;
-  color: white;
-  padding: 3px 5px;
-  margin: 25px;
-  font-family: montserrat;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  width: fit-content;
-  /* background-color: rgb(17, 104, 144); */
-  background: #a5f0c5;
-
-  padding: 6px;
-}
-
-.code-tag {
-  color: rgb(21, 21, 21);
-  display: inline-block;
-  background-color: rgb(175, 199, 214);
-  font-size: 9px;
-  line-height: 11px;
-  padding: 5px 5px;
-  margin: 0 5px 5px 0;
-  font-size: 14px;
-  border-radius: 8px;
-}
-
-.code-tag-repo {
-  display: inline-block;
-  background-color: rgb(250, 208, 208);
-  font-size: 9px;
-  font-weight: 700;
-  line-height: 11px;
-  padding: 5px 10px;
-  margin: 0 10px 20px 0;
-}
-
-.icon-footer-more {
-  width: 60px;
-  height: 60px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  text-decoration: none;
-  transition: 0.5 s ease;
-}
-
-/*  Skills  */
-
-.skills {
-  padding: 7px 0;
-}
-
-.red-text {
-  color: rgb(255, 76, 41);
-}
-
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 20px;
-  grid-column-gap: 50px;
-  line-height: 20px;
-}
-
-.skills-category {
-  /* color: rgb(17, 104, 144); */
-  color: rgb(175, 199, 214);
-}
-
-.skills-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  max-width: 100%;
-  margin: 0 auto;
-  line-height: 29px;
-  padding: 40px 40px 40px 40px;
-}
-
-.skills-heading {
-  background: #a5f0c5;
-  color: #fff;
-  padding-top: 3px;
-  text-align: center;
-  width: fit-content;
-
-  align-self: center;
+.headline {
+  background-color: rgb(40, 40, 40);
   color: whitesmoke;
-  width: fit-content;
-  display: inline-block;
-  padding: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 3px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.skills-box-more {
-  display: none;
-  width: fit-content;
-  color: rgb(21, 21, 21);
-}
-
-.container-other {
-  max-width: 100%;
-  margin: 0 auto;
-  padding-bottom: 20px;
+.headline-other {
+  color: #ff4c29;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
 }
 
 .container {
@@ -373,430 +37,403 @@ ul {
   padding-bottom: 20px;
 }
 
-.tag-wrapper {
+/* -------- HEADER SECTION --------*/
+
+.header-container {
+  position: relative;
+  background-image: url(./images/pine.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  color: #ffffff;
+  border-bottom: 3px solid white;
+}
+
+.header-icons {
   display: flex;
-  flex-wrap: wrap;
-  color: rgb(21, 21, 21);
+  justify-content: space-between;
+  position: absolute;
+  top: 48px;
+  right: 40px;
+}
+.linkedin-icon:hover,
+.github-icon:hover,
+.sof-icon:hover {
+  opacity: 0.4;
 }
 
-/*   for more section */
-
-.nav-for-more {
-  padding-top: 40px;
-  text-decoration: none;
-  margin-right: 15px;
+.linkedin-icon,
+.github-icon,
+.sof-icon {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
 }
 
-.for-more-title {
-  background: #a5f0c5;
-  color: whitesmoke;
-  width: fit-content;
-  display: inline-block;
-  padding: 6px;
+.header-text {
+  position: absolute;
+  width: 220px;
+  left: 24px;
+  top: 130px;
+  padding: 10px 0;
+}
+.header-portfolio {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+.header-my-name {
+  font-weight: 700;
+}
+.header-job-title {
+  font-size: 40px;
+  line-height: 49px;
+  margin: 10px 0 5px 0;
+}
+.header-job-title-two {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0;
+  margin: 0;
 }
 
-.for-more-section {
+.aleksandra-image {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: 50px;
+  top: 350px;
+  border: solid 2px #f4f4f4;
+  border-radius: 50%;
+}
+
+/* -------- SUMMARY SECTION --------*/
+
+.summary-text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: justify;
+  margin: auto;
+  padding: 60px 0px 30px;
+}
+
+/* -------- TECH SECTION --------*/
+.tech-section {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 250px;
+}
+.tech-section p {
+  /* margin: 24px 24px 40px; */
+  font-size: 17px;
+  line-height: 29px;
+
   text-align: center;
-  padding: 25px 25px 25px 25px;
-  background-color: #f4f4f4;
+  color: #000000;
 }
 
-.other-p-text {
-  color: rgb(255, 76, 41);
-  font-weight: 600;
+.highlighted-text {
+  color: #ff4c29;
+  font-weight: bold;
 }
 
-.icon-footer-more {
-  padding-top: 35px;
+/* -------- FEATURED PROJECTS SECTION --------*/
 
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-}
-
-.linkedin {
-  font-size: 10px;
-}
-
-/*  My thoughts about code */
-
-.thoughts-text {
-  max-width: 700px;
-  color: #151515;
-  align-self: center;
-  font-size: 1.3rem;
-  /* padding: 20px 0 10px 160px; */
-}
-
-.thought-container {
-  align-content: center;
-}
-
-.imposter-text {
-  padding-bottom: 0;
-  color: rgb(255, 76, 41);
-  font-weight: 600;
-}
-
-.project-card {
+/* repeating code here  */
+.other-projects-section,
+.my-thoughts-section,
+.skills-section,
+.for-more-section,
+.projects-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.thoughts-section {
-  display: block;
-  text-align: center;
-  padding: 24px;
-  margin: 0 auto;
-  line-height: 29px;
-  background-color: #f4f4f4;
-  padding: 25px 35px 25px 35px;
-}
-
-.thoughts {
-  background-color: rgb(17, 104, 144);
-  color: #fff;
-  text-transform: uppercase;
-  width: fit-content;
-  display: inline-block;
-  font-size: 22px;
-  color: whitesmoke;
-  width: fit-content;
-  display: inline-block;
-  position: relative;
-  font-size: 22px;
-  padding: 6px;
-}
-
-/*FOOTER*/
-
-.footer {
-  background-color: rgb(210, 148, 2);
-  /* background-color: rgb(196, 150, 21); */
-  color: whitesmoke;
-  padding: 40px 60px;
-  text-align: center;
-  font-family: montserrat;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 25px;
-  height: 300px;
-}
-
-.icon-footer-more {
-  width: 60px;
-  height: 60px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+.container a {
   text-decoration: none;
 }
 
-.icon-footer-more:hover {
-  transform: scale(1.1);
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-title .contact-name .contact-number .contact-email {
-  color: whitesmoke;
-  padding-bottom: 20px;
+.project-img {
+  display: block;
+  transition: 0.5s ease;
+  object-fit: cover;
+  max-height: 280px;
+  /* to prevent scale issues for ie browser 280px setted for height  */
 }
 
-.icon-footer-more {
-  padding-top: 50px;
-  height: 60px;
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.5s ease;
+}
+
+.projects-wrapper {
+  display: contents;
+}
+
+/* to disapper the overlay and the overlay text */
+.project-card:hover .overlay {
+  opacity: 0;
+}
+.project-card:hover .overlay-title {
+  opacity: 0;
+}
+
+.overlay-title {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+  margin: 0;
+}
+
+.project-title {
+  color: #ff4c29;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin: 15px 0 0 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.project-text {
+  margin: 10px 0 10px 0;
+  color: #151515;
+}
+
+.project-link {
+  text-decoration: none;
+}
+.arrow {
+  color: #ff4c29;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-github,
+.tag-wrapper p {
+  font-family: 'Roboto', sans-serif;
+  color: #242424;
+  background-color: #dedede;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* Matching line-height and font-size here gives full control 
+         over the size of our tags to the padding*/
+  font-size: 12px;
+  line-height: 12px;
+  /* Control the size and space of the tags */
+  padding: 4px;
+  margin: 3px 3px 3px 0;
+  border-radius: 3px;
+}
+
+.tag-github {
+  color: #ff4c29;
+}
+/* -------- SKILLS SECTION --------*/
+
+.skills-display {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.skills-text {
+  padding: 20px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-weight: 400;
+}
+
+/* -------- FOR MORE & CONTACT SECTION --------*/
+
+.fore-more-icons-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.linkedin-icon-fm:hover,
+.github-icon-fm:hover,
+.sof-icon-fm:hover {
+  filter: invert(13%) sepia(46%) saturate(1912%) hue-rotate(336deg)
+    brightness(103%) contrast(102%);
+  /* to change the color when hover over */
+}
+
+.linkedin-icon-fm,
+.github-icon-fm,
+.sof-icon-fm {
+  filter: invert(49%) sepia(0%) saturate(7500%) hue-rotate(327deg)
+    brightness(96%) contrast(104%);
+  /* this filter changes the svg icons color */
   width: 60px;
-  display: inline-block;
-  padding: 5px 5px 5px 5px;
+  height: 60px;
+  padding: 15px;
 }
 
-/*MEDIA QUERY*/
+.fore-more-icons-container a {
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #151515;
+}
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .for-more-title {
-    font-size: 17px;
-  }
-  .projects-head {
-    font-size: 17px;
-  }
+.fore-more-icons-container a:hover {
+  color: #fdd227;
+  transform: scale(1.15);
+}
 
-  .tech-heading {
-    font-size: 17px;
-  }
-  .body {
+/* -------- FOOTER SECTION --------*/
+
+.footer {
+  background: rgb(19, 19, 19);
+  line-height: 16px;
+  padding: 100px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.contact-text {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.contact-text a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.contact-text a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px;
     margin: 0 auto;
   }
 
-  .project-img {
-    padding-left: 10px;
+  .project-container {
+    width: 430px;
+    margin: 30px;
   }
 
-  .thoughts-text {
-    font-size: 16px;
-  }
-
-  .other-projects-head {
-    margin-left: 25%;
-    font-size: 17px;
-  }
-
-  .overlay-title {
-    font-size: 19px;
-    /* left: 30%;
-    top: 45%; */
-  }
-
-  .portfolio-text {
-    padding-left: 20px;
-    padding-top: 30px;
-  }
-
-  .body {
-    margin: 0;
-  }
-
-  .contact-email {
-    font-size: 14px;
-  }
-
-  .project-card {
-    width: 300px;
-  }
-
-  .career-text {
-    font-family: roboto;
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #f4f4f4;
-    font-stretch: 100%;
-    margin-left: 40px;
-    line-height: 3.5rem;
-    margin: 40px, 30px, 40px, 30px;
-  }
-
-  .name-text {
-    font-size: 1rem;
-  }
-
-  .title {
-    padding-top: 120px;
-    font-size: 1rem;
-    width: 300px;
-    height: 300px;
-  }
-
-  .profile-picture {
-    width: 160px;
-    height: 160px;
-    right: 30px;
-    top: 380px;
-  }
-
-  .skills-heading {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .thoughts-text {
-    width: 65%;
-    font-size: 19px;
-  }
-
-  .container-other {
-    width: 80%;
-  }
-
-  .other-projects-head {
-    margin-left: 35%;
-  }
-
-  .title {
-    width: 500px;
-    height: 500px;
-    padding-top: 150px;
-  }
-
-  .career-text {
-    font-family: roboto;
-    font-size: 6rem;
-    font-weight: 700;
-    color: #f4f4f4;
-    font-stretch: 100%;
-    margin-left: 60px;
-    line-height: 5rem;
-    padding-bottom: 40px;
-  }
-
-  .icon-header-more {
-    width: 63px;
-    height: 63px;
-    padding: 10px;
-  }
-
-  .overlay-title {
-    font-size: 17px;
-    top: 50%;
-    left: 28%;
-  }
-
-  .profile-picture {
-    height: 200px;
-    width: 200px;
-    right: 70px;
-    top: 340px;
-  }
-
-  .portfolio-text {
-    font-size: 1.5rem;
-    font-family: roboto;
-    font-weight: 300;
-    color: #f4f4f4;
-    margin-left: 60px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .thoughts-text {
-    width: 65%;
-    font-size: 19px;
-  }
-  .other-projects-head {
+  .projects-wrapper {
     display: flex;
-    color: #fff;
-    font-size: 22px;
-    padding: 6px;
-    margin-left: 40%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-
-  .career-text {
-    font-family: roboto;
-    font-size: 7.5rem;
-    font-weight: 500;
-    color: #f4f4f4;
-    font-stretch: 100%;
-    margin-left: 140px;
-    line-height: 6.5rem;
-    margin-top: 40px;
-  }
-
-  .title {
-    width: 800px;
-    height: 600px;
-    padding-top: 60px;
-  }
-
-  .portfolio-text {
-    font-size: 1.5rem;
-    font-family: roboto;
-    font-weight: 300;
-    margin-left: 150px;
-    color: #f4f4f4;
-    padding-top: 50px;
-  }
-
-  .projects {
-    max-width: 1100px;
-    justify-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    row-gap: 35px;
-  }
-
-  .project-image-container {
-    position: relative;
-    max-width: 530px;
-  }
-
-  .project-text {
-    max-width: 530px;
-  }
-
-  .skills-box {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: none;
-    max-width: 100px;
-    align-items: center;
-    color: rgb(21, 21, 21);
-  }
-
-  .profile-picture {
-    right: 120px;
-    top: 290px;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    /* border: 1px solid whitesmoke; */
-    filter: hue-rotate(50%);
-  }
-
-  .skills-box-more {
-    display: block;
-    color: rgb(21, 21, 21);
-  }
-
-  .skills-container {
-    display: grid;
-    line-height: 20px;
-    padding-left: 35px;
-    padding-bottom: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-self: center;
   }
 
-  .icon-header-more {
-    height: 80px;
-    width: 80px;
-    padding: 10px;
+  .header-icons {
+    top: 60px;
+    right: 100px;
   }
 
-  .icon-footer-more {
-    padding: 10px;
+  .linkedin-icon,
+  .github-icon,
+  .sof-icon {
     width: 70px;
     height: 70px;
+    padding: 10px;
   }
 
-  .section-title {
-    padding: 0px 25px 0px 25px;
+  .header-container {
+    background-image: url(./images/pine.jpeg);
+    height: 600px;
   }
 
-  .name-text {
-    font-size: 2rem;
+  .header-text {
+    height: 300px;
+    width: 400px;
+    left: 120px;
+    line-height: 60px;
   }
 
-  /* .bio-text {
-    max-width: 55%;
-    text-align: left;
-    margin: 0 auto;
-    margin-top: 50px;
-    line-height: 37px;
-    font-size: 23px;
-  } */
+  .aleksandra-image {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 380px;
+    right: 100px;
+  }
+  .header-portfolio {
+    font-size: 20px;
+  }
 
-  .tech.text {
-    max-width: 50%;
-    text-align: center;
-    line-height: 100px;
+  .header-my-name {
+    font-weight: 700;
+  }
+  .header-job-title {
+    font-size: 75px;
+    line-height: 70px;
+  }
+  .header-job-title-two {
     font-size: 30px;
-    font-size: 17px;
-    font-family: montserrat;
-    font-weight: 400;
+    margin-top: 30px;
   }
 
-  .navbar {
-    padding-right: 50px;
+  .headline {
+    font-size: 30px;
+    padding: 8px;
   }
 
-  .project-title {
-    color: rgb(255, 76, 41);
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 21px;
+  .skills-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+
+  .linkedin-icon-fm,
+  .github-icon-fm,
+  .sof-icon-fm {
+    width: 100px;
+    height: 100px;
+  }
+
+  .fore-more-icons-container a {
+    font-size: 12px;
+    /* font-weight: bold; */
   }
 }
