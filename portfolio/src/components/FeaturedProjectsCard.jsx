@@ -32,7 +32,7 @@ const FeaturedProjectsCard = ({ project }) => {
           target="_blank"
           rel="noreferrer"
         >
-          View it on Github here{" "}
+          View it on Github here.{" "}
           <span className="fw-bold color-font">{">>"}</span>
         </a>
         <p></p>
@@ -42,7 +42,7 @@ const FeaturedProjectsCard = ({ project }) => {
           target="_blank"
           rel="noreferrer"
         >
-          View it live here <span className="fw-bold color-font">{">>"}</span>
+          View it live here. <span className="fw-bold color-font">{">>"}</span>
         </a>
       </div>
       <div>

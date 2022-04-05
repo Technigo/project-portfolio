@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container } from '../components-styled/Container';
+import React from "react";
+import { Container } from "../components-styled/Container";
 
 const Skills = () => {
   return (
@@ -12,6 +12,7 @@ const Skills = () => {
           <div className="s-grid-1">
             <h3 className="fw-bold color-font">CODE</h3>
             <p>React</p>
+            <p>Redux</p>
             <p>HTML5</p>
             <p>CSS3 & BEM</p>
             <p>JavaScript ES6</p>
@@ -26,6 +27,7 @@ const Skills = () => {
             <p>Figma</p>
             <p>Zapier</p>
             <p>Airtable</p>
+            <p>Trello</p>
           </div>
           <div className="mobile-hidden">
             <h3 className="fw-bold color-font">MORE</h3>
@@ -37,8 +39,8 @@ const Skills = () => {
             <p>Node.js</p>
             <p>Express.js</p>
             <p>jQuery</p>
-            <p>EJS</p>
-            <p>SQL</p>
+            {/* <p>EJS</p>
+            <p>SQL</p> */}
             <p>MongoDB</p>
             <p>Mongoose</p>
             <p>TypeScript</p>
