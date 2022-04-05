@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container } from '../components-styled/Container';
+import React from "react";
+import { Container } from "../components-styled/Container";
 
 const Footer = () => {
   return (
@@ -16,13 +16,29 @@ const Footer = () => {
         <br />
         <div className="attribution">
           <p>
-            Icons made by{' '}
+            Icons made by{" "}
             <a href="https://www.flaticon.com/authors/pixel-perfect">
               Pixel perfect
-            </a>{' '}
-            from{' '}
-            <a href="https://www.flaticon.com/" title="Flaticon">
+            </a>{" "}
+            from{" "}
+            <a
+              href="https://www.flaticon.com/"
+              title="Flaticon"
+              target="_blank"
+              rel="noreferrer"
+            >
               www.flaticon.com
+            </a>
+          </p>
+          <p>
+            Images from{" "}
+            <a
+              href="https://www.unsplash.com/"
+              title="Unsplash"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Unsplash
             </a>
           </p>
         </div>

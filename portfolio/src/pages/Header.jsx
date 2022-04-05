@@ -1,9 +1,9 @@
-import React from 'react';
-import { Container } from '../components-styled/Container';
-import profilePicture from '../assets/profile.jpeg';
-import linkedin from '../assets/linkedin-white.png';
-import github from '../assets/github-white.png';
-import stackoverflow from '../assets/stackoverflow-white.png';
+import React from "react";
+import { Container } from "../components-styled/Container";
+import profilePicture from "../assets/profile2.jpg";
+import linkedin from "../assets/linkedin-white.png";
+import github from "../assets/github-white.png";
+import stackoverflow from "../assets/stackoverflow-white.png";
 
 const Header = () => {
   return (
@@ -49,7 +49,7 @@ const Header = () => {
         <div className="header-texts">
           <h4 className="header-name roboto">
             <span className="fw-normal" aria-label="Porfolio: Michael Chang">
-              PORTFOLIO:{' '}
+              PORTFOLIO:{" "}
             </span>
             <span className="fw-bold" aria-hidden="true">
               MICHAEL CHANG

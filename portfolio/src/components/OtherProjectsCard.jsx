@@ -9,10 +9,11 @@ const OtherProjectsCard = ({ project }) => {
       <a href={project.github_href} target="_blank" rel="noreferrer">
         <p className="fs-normal fw-normal">
           <span className="color-font color-font underline-desktop fw-bold">
-            {project.name}{" "}
+            {project.name}
           </span>
           <br className="desktop-hidden" />
           <span className="color-black underline-desktop">
+            {" "}
             {project.short_description}{" "}
           </span>
           <span

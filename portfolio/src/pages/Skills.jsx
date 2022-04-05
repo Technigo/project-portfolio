@@ -37,9 +37,10 @@ const Skills = () => {
           <div>
             <h3 className="fw-bold color-font">UPCOMING</h3>
             <p>Node.js</p>
-            <p>Express.js</p>
+            <p>React Native</p>
+            {/* <p>Express.js</p>
             <p>jQuery</p>
-            {/* <p>EJS</p>
+            <p>EJS</p>
             <p>SQL</p> */}
             <p>MongoDB</p>
             <p>Mongoose</p>
