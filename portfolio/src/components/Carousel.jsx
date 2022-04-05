@@ -1,30 +1,40 @@
 import React from "react";
+import Flickity from "react-flickity-component";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import Swiper from "swiper/bundle";
-import "swiper/css/bundle";
+const tabletQuery = window.matchMedia("(min-width: 768px)");
+const desktopQuery = window.matchMedia("(min-width: 1100px");
+let autoPlaySpeed;
 
-const Carousel = () => {
+if (tabletQuery.matches) {
+  autoPlaySpeed = 4000;
+}
+if (desktopQuery.matches) {
+  autoPlaySpeed = 5500;
+} else {
+  autoPlaySpeed = 3000;
+}
+
+const flickityOptions = {
+  initialIndex: 0,
+  pageDots: false,
+  wrapAround: true,
+  autoPlay: autoPlaySpeed,
+  groupCells: "100%",
+  fade: true,
+};
+
+const Carousel = (props) => {
   return (
-    <>
-      <Swiper
-        // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={3}
-        navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        ...
-      </Swiper>
-    </>
+    <Flickity
+      className={"carousel"} // default ''
+      elementType={"div"} // default 'div'
+      options={flickityOptions} // takes flickity options {}
+      disableImagesLoaded={false} // default false
+      reloadOnUpdate // default false
+      static // default false
+    >
+      {props.children}
+    </Flickity>
   );
 };
 

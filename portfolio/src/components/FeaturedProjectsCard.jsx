@@ -27,21 +27,22 @@ const FeaturedProjectsCard = ({ project }) => {
         <h3 className="fs-normal fw-bold color-font">{project.name}</h3>
         <p className="fs-normal fw-normal">{project.short_description}</p>
         <a
-          className="fs-normal fw-normal underline"
+          className="fs-normal fw-normal"
           href={project.github_href}
           target="_blank"
           rel="noreferrer"
         >
-          View it on Github here!
+          View it on Github here{" "}
+          <span className="fw-bold color-font">{">>"}</span>
         </a>
         <p></p>
         <a
-          className="fs-normal fw-normal underline"
+          className="fs-normal fw-normal"
           href={project.live_href}
           target="_blank"
           rel="noreferrer"
         >
-          View it live here!
+          View it live here <span className="fw-bold color-font">{">>"}</span>
         </a>
       </div>
       <div>

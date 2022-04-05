@@ -3,12 +3,7 @@ import { Container } from "../components-styled/Container";
 import FeaturedProjectsCard from "../components/FeaturedProjectsCard";
 import OtherProjectsCard from "../components/OtherProjectsCard";
 import projects from "../data/projects.json";
-
-// // Import Swiper React components
-// import { Swiper, SwiperSlide } from "swiper/react";
-
-// // Import Swiper styles
-// import "swiper/css";
+import Carousel from "../components/Carousel";
 
 // Filtering Projects
 const featuredProjects = projects
@@ -26,13 +21,18 @@ const Projects = () => {
           <span className="heading-block">FEATURED PROJECTS</span>
         </h2>
         <div className="featured-projects">
-          {featuredProjects.map((project) => {
+          <Carousel>
+            {featuredProjects.map((project) => (
+              <FeaturedProjectsCard key={project.id} project={project} />
+            ))}
+          </Carousel>
+          {/* {featuredProjects.map((project) => {
             return (
               <React.Fragment key={project.id}>
                 <FeaturedProjectsCard project={project} />
               </React.Fragment>
             );
-          })}
+          })} */}
         </div>
         <h2 className="section-heading fw-bold montserrat color-font">
           OTHER PROJECTS

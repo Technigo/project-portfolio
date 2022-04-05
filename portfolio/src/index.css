@@ -32,6 +32,10 @@ section:nth-child(2n) {
   background-color: #f4f4f4;
 }
 
+body {
+  width: 100vw;
+}
+
 /* Text Elements */
 .heading-block {
   background-color: var(--primary);
@@ -163,6 +167,10 @@ header {
 }
 
 /* Project Section */
+.article {
+  width: 98%;
+  padding: 0 2%;
+}
 
 .project-image-group {
   position: relative;
@@ -173,9 +181,9 @@ header {
 }
 .project-image {
   width: 100%;
-  display: inherit;
-  aspect-ratio: 7 / 5;
+  height: auto;
 }
+
 .project-image-overlay {
   position: absolute;
   top: 0;
@@ -316,18 +324,40 @@ footer a {
 }
 
 /* Flickity Carousel */
+.carousel {
+  overflow: hidden;
+}
+
+.carousel:focus-visible {
+  outline: none;
+}
+
+.carousel button {
+  display: none;
+  margin-top: 5px;
+  border-radius: 50%;
+  border: none;
+}
+
 .flickity-button {
-  background: rgba(160, 160, 160, 0.5);
+  /* background: rgba(160, 160, 160, 0.5); */
   height: 40px;
   width: 40px;
 }
 
+.next {
+  float: right;
+}
+
 .flickity-button:hover {
-  background: rgba(235, 235, 235, 0.8);
+  background: rgba(160, 160, 160, 0.5);
+  /* background: rgba(235, 235, 235, 0.8); */
 }
 
 .flickity-button-icon {
   fill: rgba(24, 24, 24, 0.9);
+  height: 25px;
+  width: 25px;
 }
 
 .flickity-button-icon:hover {
@@ -402,11 +432,16 @@ footer a {
     top: 45%;
     font-size: 34px;
   }
-  .featured-projects {
+
+  .article {
+    width: 48%;
+    padding: 0 1%;
+  }
+  /* .featured-projects {
     padding: 60px 0 90px 0;
     grid-template-columns: 1fr 1fr;
     gap: 3vw;
-  }
+  } */
   .project-heading {
     font-size: 22px;
     line-height: 37px;

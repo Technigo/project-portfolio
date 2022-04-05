@@ -2,7 +2,6 @@ import React from "react";
 import ProjectTag from "./ProjectTag";
 
 const OtherProjectsCard = ({ project }) => {
-  console.log(project);
   const projectTags = project.tags.split(",").reverse();
 
   return (

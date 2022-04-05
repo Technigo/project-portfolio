@@ -1,8 +1,8 @@
-import React from 'react';
-import { Container } from '../components-styled/Container';
-import linkedin from '../assets/linkedin-orange.png';
-import github from '../assets/github-orange.png';
-import stackoverflow from '../assets/stackoverflow-orange.png';
+import React from "react";
+import { Container } from "../components-styled/Container";
+import linkedin from "../assets/linkedin-orange.png";
+import github from "../assets/github-orange.png";
+import stackoverflow from "../assets/stackoverflow-orange.png";
 
 const More = () => {
   return (

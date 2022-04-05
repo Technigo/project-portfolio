@@ -11,8 +11,9 @@ const Introduction = () => {
             <span className="dot"></span> Hello! I&apos;m a frontend developer
             with fullstack ambitions, with previous experience as a project
             manager in a consulting firm working with large datasets and custom
-            web application integrations. I&apos;m all about problem solving and
-            creating awesome, centered DIVs.
+            web application integrations. I&apos;m solution-oriented, a fast
+            learner, and passionate about creating beautiful, accessible
+            applications.
           </p>
         </div>
       </Container>
