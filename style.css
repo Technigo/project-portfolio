@@ -1,3 +1,10 @@
+:root {
+  --clr-text: #1d1c1c;
+  --clr-primary: rgb(40, 40, 40);
+  --clr-accent: #ff4c29;
+  --clr-background: rgb(240, 255, 245);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,15 +15,19 @@ body {
 }
 
 section:nth-child(2n-1) {
-  background-color: #f4f4f4;
+  background-color: var(--clr-background);
 }
 
 h1 {
   color: #d4af37;
 }
 
+p {
+  color: var(--clr-text);
+}
+
 .headline {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--clr-primary);
   color: whitesmoke;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -29,7 +40,7 @@ h1 {
 }
 
 .headline-other {
-  color: #ff4c29;
+  color: var(--clr-accent);
   font-family: 'Roboto', sans-serif;
   font-size: 21px;
 }
@@ -64,8 +75,8 @@ h1 {
 .linkedin-icon:hover,
 .github-icon:hover,
 .sof-icon:hover {
-  /* opacity: 0.4; */
-  color: #d4af37;
+  opacity: 0.4;
+  /* color: #d4af37; */
 }
 
 .linkedin-icon,
@@ -84,10 +95,10 @@ h1 {
   padding: 10px 0;
 }
 .header-portfolio {
+  color: var(--clr-background);
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  margin: 0;
 }
 .header-my-name {
   font-weight: 700;
@@ -218,7 +229,7 @@ h1 {
 }
 
 .project-title {
-  color: #ff4c29;
+  color: var(--clr-accent);
   font-size: 18px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
@@ -336,7 +347,7 @@ li {
   background: rgb(19, 19, 19);
   line-height: 16px;
   padding: 100px;
-  color: #ffffff;
+  color: var(--clr-background);
   text-align: center;
 }
 
@@ -352,8 +363,15 @@ li {
 
 .contact-text a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--clr-background);
+  font-weight: 400;
 }
+
+.footer-p {
+  color: var(--clr-background);
+  font-weight: 400;
+}
+
 .contact-text a:hover {
   text-decoration: underline;
 }
