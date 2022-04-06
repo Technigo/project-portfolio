@@ -1,6 +1,7 @@
 :root {
   --clr-text: #1d1c1c;
   --clr-primary: rgb(40, 40, 40);
+  --clr-dark: rgb(19, 19, 19);
   /* --clr-accent: #ff4c29; */
   --clr-accent: #f50d0d;
   --clr-background: rgb(240, 255, 245);
@@ -146,10 +147,8 @@ p {
   align-items: center;
 }
 .tech-section p {
-  /* margin: 24px 24px 40px; */
   font-size: 17px;
   line-height: 29px;
-
   text-align: center;
   color: #000000;
 }
@@ -188,7 +187,6 @@ p {
   object-fit: cover;
   max-height: 280px;
   border-radius: 8px;
-  /* to prevent scale issues for ie browser 280px setted for height  */
 }
 
 .overlay {
@@ -263,11 +261,8 @@ p {
   background-color: #dedede;
   text-decoration: none;
   text-transform: uppercase;
-  /* Matching line-height and font-size here gives full control 
-         over the size of our tags to the padding*/
   font-size: 12px;
   line-height: 12px;
-  /* Control the size and space of the tags */
   padding: 4px;
   margin: 3px 3px 3px 0;
   border-radius: 3px;
@@ -314,7 +309,6 @@ li {
 .sof-icon-fm:hover {
   filter: invert(13%) sepia(46%) saturate(1912%) hue-rotate(336deg)
     brightness(103%) contrast(102%);
-  /* to change the color when hover over */
 }
 
 .linkedin-icon-fm,
@@ -322,7 +316,7 @@ li {
 .sof-icon-fm {
   filter: invert(49%) sepia(0%) saturate(7500%) hue-rotate(327deg)
     brightness(96%) contrast(104%);
-  /* this filter changes the svg icons color */
+
   width: 60px;
   height: 60px;
   padding: 15px;
@@ -343,7 +337,7 @@ li {
 /* -------- FOOTER SECTION --------*/
 
 .footer {
-  background: rgb(19, 19, 19);
+  background-color: #d4af37;
   line-height: 16px;
   padding: 100px;
   color: var(--clr-background);
@@ -457,6 +451,12 @@ li {
   .sof-icon-fm {
     width: 100px;
     height: 100px;
+  }
+  /* aded mysel */
+  .linkedin-icon-fm:hover,
+  .github-icon-fm:hover,
+  .sof-icon-fm:hover {
+    fill: red;
   }
 
   .fore-more-icons-container a {
