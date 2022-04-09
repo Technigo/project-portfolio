@@ -162,6 +162,7 @@ a {
 /* FEATURED PROJECTS */
 
 .featured-projects {
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 40px;
@@ -170,12 +171,11 @@ a {
 
 .featured-project-article {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  margin-bottom: 30px;
 }
 
 .project-image-group {
   position: relative;
-  height: 100%;
 }
 
 .project-image-overlay {
@@ -211,15 +211,16 @@ a {
 .project-text-group {
   font-family: "Roboto", sans-serif;
   text-align: left;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .project-heading {
   text-transform: uppercase;
   color: var(--bluegrey);
   font-size: 17px;
-  line-height: 29px;
+  line-height: 25px;
   letter-spacing: 0.01em;
+  margin-bottom: 5px;
 }
 
 .project-description {
@@ -231,15 +232,17 @@ a {
 .tag-wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 5px;
 }
 
 .tag-wrapper p {
+  /* change color to var */
   color: #2b2e34;
   background-color: var(--gainsboro);
-  font-size: 9px;
+  font-size: 11px;
   line-height: 11px;
   letter-spacing: 0.01em;
-  padding: 4px;
+  padding: 6px;
   margin: 3px;
   border-radius: 5%;
 }
@@ -437,14 +440,17 @@ footer p {
   .featured-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 54px;
+    gap: 40px;
+  }
+
+  .featured-project-article {
+    margin-bottom: 0;
   }
 
   .thoughts-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 54px;
+    gap: 40px;
     margin-top: 30px;
   }
 
