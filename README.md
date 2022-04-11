@@ -1,5 +1,5 @@
 # portfolio
 
-This is my portfolio which is a dynamic project which will continuously be updated and grow with new projects as I go along and learn more.
+This week's project was to create a portfolio based on a given design. The website is built on HTML and CSS and the focus has been on web accessibility.
 
 https://nostalgic-hermann-960c66.netlify.app/

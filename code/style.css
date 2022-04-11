@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 :root {
   --main-color: #f0f0f0;
   --secondary-color: #a1bad2;
@@ -20,7 +21,7 @@ body section:nth-child(2n) {
   background-color: var(--main-color);
 }
 
-/* HEADER */
+/* ---------- HEADER ---------- */
 .header {
   position: relative;
   left: 0;
@@ -43,6 +44,7 @@ body section:nth-child(2n) {
 }
 
 /* nav-container */
+
 .nav-container {
   position: absolute;
   height: 100%;
@@ -52,13 +54,15 @@ body section:nth-child(2n) {
 
 .icon-top {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
   margin: 0 3px;
 }
 
-/* text container */
-.text-container {
+.top-icon-image {
+  width: 2rem;
+}
+
+/* article header-text-container */
+.header-text-container {
   color: #fff;
   letter-spacing: 0.04em;
   position: absolute;
@@ -68,33 +72,32 @@ body section:nth-child(2n) {
   height: auto;
 }
 
-.text-1 {
+.portfolio-text {
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 0.8rem;
   line-height: 18px;
   font-weight: 400;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .myName {
-  font-size: 13px;
-  font-weight: 700;
-  font-weight: 700;
+  font-size: 0.8rem;
+  font-weight: 800;
 }
 
-.text-2 {
+.big-heading {
   font-family: "Montserrat", sans-serif;
   width: 230px;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 2.5rem;
   margin-top: 15px;
 }
 
-.text-3 {
+.subtitle {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   margin-top: 10px;
+  font-size: 1.3rem;
 }
 
 /* picture-container */
@@ -104,17 +107,17 @@ body section:nth-child(2n) {
   height: 180px;
   right: 0;
   bottom: 1%;
-  background-image: url(./images/me.jpeg);
+  background-image: url(./images/Fatima.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
-  background-position: center right;
+  background-position: center;
   background-size: cover;
   border: 2px solid #fff;
   border-radius: 50%;
   z-index: 3;
 }
 
-/* SECTIONS */
+/* ---------- SECTIONS ---------- */
 
 .profile-section,
 .tech-section,
@@ -442,7 +445,7 @@ list-flex {
   align-items: center;
 }
 
-/* MEDIA QUERIES */
+/* --------- MEDIA QUERIES --------- */
 
 @media (min-width: 668px) {
   .profile-section,
@@ -451,13 +454,32 @@ list-flex {
     padding: 25px 24px 50px 24px;
   }
 
-  .myName {
-    color: var(--highlight-color);
+  /* header */
+
+  .top-icon-image {
+    width: 2.5rem;
+  }
+  .portfolio-text {
+    font-size: 1rem;
   }
 
-  .text-3 {
-    font-size: 24px;
+  .big-heading {
+    font-size: 3rem;
   }
+
+  .myName {
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .profile-img-container {
+    width: 200px;
+    height: 200px;
+  }
+  /* ----- */
 
   .intro-container,
   .tech-container {
@@ -499,7 +521,32 @@ list-flex {
     width: 350px;
     margin: auto;
   }
-}
+
+  /* header */
+
+  .portfolio-text {
+    font-size: 1.5rem;
+  }
+
+  .big-heading {
+    font-size: 4.5rem;
+    line-height: 63px;
+    padding-bottom: 20px;
+  }
+
+  .myName {
+    color: var(--highlight-color);
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .profile-img-container {
+    width: 250px;
+    height: 250px;
+  }
 
 @media (min-width: 1080px) {
   .profile-section,
