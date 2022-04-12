@@ -5,20 +5,17 @@
 }
 
 :root {
-  --main-color: #f0f0f0;
+  --main-color: #e6e6e6;
+  --section-color: #f0f0f0;
   --secondary-color: #a1bad2;
   --headingBackground-color: #f4f4f4;
-  --highlight-color: #ff7777;
+  --highlight-color: #fa382f;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   margin: auto;
   font-style: normal;
-}
-
-body section:nth-child(2n) {
-  background-color: var(--main-color);
 }
 
 /* ---------- HEADER ---------- */
@@ -43,8 +40,6 @@ body section:nth-child(2n) {
   display: flex;
 }
 
-/* nav-container */
-
 .nav-container {
   position: absolute;
   height: 100%;
@@ -59,9 +54,13 @@ body section:nth-child(2n) {
 
 .top-icon-image {
   width: 2rem;
+  transition: transform 0.5s;
 }
 
-/* article header-text-container */
+.top-icon-image:hover {
+  transform: scale(1.2, 1.2);
+}
+
 .header-text-container {
   color: #fff;
   letter-spacing: 0.04em;
@@ -74,7 +73,7 @@ body section:nth-child(2n) {
 
 .portfolio-text {
   font-family: "Roboto", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -82,8 +81,9 @@ body section:nth-child(2n) {
 }
 
 .myName {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 800;
+  text-shadow: 2px 2px 1px #000;
 }
 
 .big-heading {
@@ -95,12 +95,10 @@ body section:nth-child(2n) {
 }
 
 .subtitle {
-  font-family: "Montserrat", sans-serif;
   margin-top: 10px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
-/* picture-container */
 .profile-img-container {
   position: absolute;
   width: 180px;
@@ -117,13 +115,20 @@ body section:nth-child(2n) {
   z-index: 3;
 }
 
-/* ---------- SECTIONS ---------- */
+/* ---------- ALL SECTIONS ---------- */
+
+body section:nth-child(2n) {
+  background-color: var(--main-color);
+}
+
+section {
+  background-color: var(--section-color);
+}
 
 .profile-section,
 .tech-section,
 .featured-section,
 .thoughts-section,
-.skills-section,
 .skills-section,
 .more-section,
 .footer-section {
@@ -133,9 +138,10 @@ body section:nth-child(2n) {
   align-items: center;
 }
 
-/* profile-section */
-.profile-section {
-  padding-top: 60px;
+/* ---------- PROFILE SECTION ---------- */
+
+#profile-section {
+  padding-top: 5rem;
 }
 
 .intro-container {
@@ -161,22 +167,28 @@ body section:nth-child(2n) {
   border-radius: 50%;
 }
 
-.technigo {
-  text-decoration: none;
+.highlighted {
   color: var(--highlight-color);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
 }
 
-/* tech-section */
-.heading-2 {
-  padding: 6px 12px;
+.technigo {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------- TECHNOLOGIES SECTION ---------- */
+
+.section-heading {
+  padding: 1px 7px;
   background-color: var(--secondary-color);
   color: var(--headingBackground-color);
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .tech-container {
@@ -184,172 +196,106 @@ body section:nth-child(2n) {
   font-weight: 400;
   text-align: center;
   line-height: 29px;
-  text-align: left;
+  text-align: center;
 }
 
-/* projects-section */
-.flexbox {
-  width: 100%;
+/* ---------- FEATURED PROJECTS SECTION ---------- */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
 
-.featured-section a {
-  text-decoration: none;
-  color: #000;
-  width: 100%;
-}
-.article {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.main-project {
+  grid-column: span 4;
 }
 
-.hero-1,
-.hero-2,
-.hero-3,
-.hero-4 {
-  display: flex; /* This property allows to center vertically and horizontally the <span> inside of this container */
-  justify-content: center;
-  align-items: center;
+.main-project:hover .overlay {
+  opacity: 1;
+}
+
+.project-img-container {
+  aspect-ratio: 5/3;
   position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.image-title {
+  position: absolute;
+  top: 44%;
+  text-align: center;
+  display: block;
   width: 100%;
-  height: 200px;
-}
-
-.hero-1::before {
-  background-image: url(./images/weather-img.png);
-  background-position: center bottom;
-  background-size: cover;
-  position: absolute;
-  content: "";
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
-
-.hero-2::before {
-  background-image: url(./images/gitHub-tracker-img5.jpeg);
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  content: "";
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
-
-.hero-3::before {
-  background-image: url(./images/guess-who-game-img.png);
-  background-position: center top;
-  background-size: cover;
-  position: absolute;
-  content: "";
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
-
-.hero-4::before {
-  background-image: url(./images/chatBot-img.png);
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  content: "";
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
-
-.background-tittle {
-  position: relative;
-  font-weight: bold;
   font-size: 22px;
+  color: #ffffff;
+}
+
+.uppercase {
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #000;
 }
 
-.background-tittle:hover {
-  transform: scale(1.1, 1.1);
-  color: #fff;
-  background-color: var(--highlight-color);
-}
-
-.heading-3 {
-  margin: 12px 0;
+.bold {
   font-weight: 700;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: var(--secondary-color);
 }
 
-.heading-3:hover {
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 17px;
+}
+
+.text-container {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  line-height: 25px;
+}
+
+.project-title {
+  margin-top: 40px;
+  font-size: 17px;
+  line-height: 29px;
   color: var(--highlight-color);
 }
 
-.projects-description {
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #000;
-}
-
-.projects-languages {
+.tag-wrapper {
   display: flex;
-  column-gap: 10px; /*space between columns*/
-  row-gap: 4px; /*space between rows*/
   flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 20px;
 }
 
-.projects-languages span {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  letter-spacing: 0.04em;
-  padding: 5px 8px;
+.tag-wrapper p {
   background-color: var(--secondary-color);
+  font-size: 11px;
+  line-height: 11px;
+  padding: 6px 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  border-radius: 3px;
 }
 
-.display {
-  display: none;
+.main-project a {
+  text-decoration: none;
 }
+
+
 /* other projects */
 .other-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
-}
-.heading-4 {
-  font-weight: 700;
-  font-size: 21px;
-  margin: 20px 0px;
-  text-transform: uppercase;
-  color: var(--secondary-color);
-  text-align: center;
-}
-
-.highlight {
-  background-color: var(--secondary-color);
-  color: #fff;
-  padding: 6px 12px;
-}
-
-.arrow {
-  color: var(--secondary-color);
-}
-
-.article-other-projects {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 
 /* skills section*/
@@ -447,15 +393,21 @@ list-flex {
 
 /* --------- MEDIA QUERIES --------- */
 
-@media (min-width: 668px) {
+/* 1- From phones to small tablets */
+@media (min-width: 768px) {
+  /* Sections */
   .profile-section,
   .tech-section,
   .featured-section {
     padding: 25px 24px 50px 24px;
   }
 
-  /* header */
+  .intro-container,
+  .tech-container {
+    max-width: 700px;
+  }
 
+  /* Header */
   .top-icon-image {
     width: 2.5rem;
   }
@@ -472,58 +424,23 @@ list-flex {
   }
 
   .subtitle {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .profile-img-container {
     width: 200px;
     height: 200px;
   }
-  /* ----- */
 
-  .intro-container,
-  .tech-container {
-    max-width: 700px;
-  }
-
-  .profile-section {
-    padding-top: 90px;
-  }
-
-  .display {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .flexbox {
-    display: flex;
-    column-gap: 20px;
-  }
-
-  .heading-2,
-  .heading-4 {
-    font-size: 28px;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 8px;
-  }
-
-  .heading-3 {
-    margin-top: 0;
+  /* Featured projects section */
+  .projects-container {
+    grid-template-columns: repeat(8, 1fr);
   }
 }
 
+/* 2- From small tablets to big tablets */
 @media (min-width: 982px) {
-  .article {
-    width: 350px;
-    margin: auto;
-  }
-
-  /* header */
-
+  /* Header */
   .portfolio-text {
     font-size: 1.5rem;
   }
@@ -535,30 +452,20 @@ list-flex {
   }
 
   .myName {
-    color: var(--highlight-color);
     font-size: 1.5rem;
   }
+}
 
-  .subtitle {
-    font-size: 2rem;
-  }
-
-  .profile-img-container {
-    width: 250px;
-    height: 250px;
-  }
-
+/* 3- From big tablets to bigger desktops */
 @media (min-width: 1080px) {
+  body {
+    max-width: 1080px;
+  }
+
+  /* Sections */
   .profile-section,
   .tech-section,
   .featured-section {
-    padding: 25px 20% 50px 20%;
-  }
-  .profile-section {
-    padding-top: 90px;
-  }
-
-  .heading-3 {
-    font-size: 20px;
+    padding: 25px 15% 50px 15%;
   }
 }
