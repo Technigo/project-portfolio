@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../components-styled/Container";
-import profilePicture from "../assets/profile2.jpg";
+import profilePicture from "../assets/profile4.jpeg";
 import linkedin from "../assets/linkedin-white.png";
 import github from "../assets/github-white.png";
 import stackoverflow from "../assets/stackoverflow-white.png";

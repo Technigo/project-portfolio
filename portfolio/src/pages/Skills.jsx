@@ -13,6 +13,7 @@ const Skills = () => {
             <h3 className="fw-bold color-font">CODE</h3>
             <p>React</p>
             <p>Redux</p>
+            <p>React Router</p>
             <p>HTML5</p>
             <p>CSS3 & BEM</p>
             <p>JavaScript ES6</p>
@@ -28,6 +29,7 @@ const Skills = () => {
             <p>Zapier</p>
             <p>Airtable</p>
             <p>Trello</p>
+            <p>Postman</p>
           </div>
           <div className="mobile-hidden">
             <h3 className="fw-bold color-font">MORE</h3>
