@@ -12,4 +12,4 @@ A portfolio project with HTML and CSS to follow a strict design from FIGMA. Need
 
 ## View it live
 Here's the link for my portfolio: 
-https://nostalgic-hermann-960c66.netlify.app/
+https://fatima-gamero-romero-portfolio.netlify.app
