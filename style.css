@@ -88,10 +88,10 @@ margin: 0 auto;
   height: 180px;
   bottom: -5%;
   right: 13%;
-  background-image: url(./img/profile-pic3.jpg);
+  background-image: url(./img/profile-pic.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
-  background-position: 50% 25%;
+  background-position: 50% 20%;
   background-size: cover;
   border: solid 3px white;
   border-radius: 50%;
@@ -138,10 +138,12 @@ margin: 0 auto;
 }
 
 .project-container {
-  display: flex;
+  /* display: flex; 
   flex-direction: column;
+  width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   text-align: center;
-  width: 100%;
   background-color: rgb(244,244,244, 0.3);
 }
 
@@ -154,7 +156,7 @@ margin: 0 auto;
 .project-cards {
   margin: 20px auto;
   justify-items: center;
-  width: 327px;
+  width: auto;
   padding-top: 30px;
 }
 
@@ -275,6 +277,7 @@ flex-direction: column;
 
 .thoughts-image {
   margin: 40px 24px 32px 24px;
+  width: 90%;
 }
 
 .thoughts-text-section {
@@ -464,6 +467,16 @@ margin: 0 auto;
 
 @media screen and (min-width: 768px) {
 
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+  .project-cards,
+  .project-cards img {
+    width: auto;
+  }
+
   .one-project {
       width: 50%;
   }
@@ -495,7 +508,13 @@ margin: 0 auto;
 @media screen and (min-width: 1200px) {
 
   .project-container {
-      display: flex;
-      flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
+
+  .project-cards,
+  .project-cards img {
+    width: auto;
+  }
+
   }
