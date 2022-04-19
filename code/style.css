@@ -8,7 +8,6 @@
   --main-color: #e6e6e6;
   --section-color: #f0f0f0;
   --secondary-color: #a1bad2;
-  --headingBackground-color: #f4f4f4;
   --highlight-color: #fa382f;
 }
 
@@ -17,7 +16,7 @@ body {
   margin: auto;
   font-style: normal;
 }
-/* background-color: #fa382f; */
+
 
 /* ---------- HEADER ---------- */
 .header {
@@ -27,6 +26,7 @@ body {
   width: 100%;
   height: 520px;
   background-image: url(./images/laptop-img.jpg);
+  background-image: url(./images/Switzerland-mountains.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -132,10 +132,11 @@ section {
 .more-projects-section,
 .thoughts-section,
 .skills-section,
+.formore-section,
 .footer-section {
   display: flex;
   flex-direction: column;
-  padding: 25px 24px 50px 24px;
+  padding: 25px 24px 50px;
   align-items: center;
 }
 
@@ -185,7 +186,8 @@ section {
 
 .section-heading {
   padding: 1px 7px;
-  color: var(--headingBackground-color);
+  /* color: var(--headingBackground-color); */
+  color:  #f4f4f4;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
@@ -193,11 +195,11 @@ section {
   text-align: center;
 }
 .section-heading-background {
-  background-color: var(--secondary-color);
+  background-color: var(--highlight-color);
 }
 
 #more-projects-heading {
-  color: var(--secondary-color);
+  color:var(--highlight-color)
 }
 
 
@@ -228,6 +230,11 @@ section {
 .project-img-container {
   aspect-ratio: 5/3;
   position: relative;
+  transition: transform 0.5s;
+}
+
+.project-img-container:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .overlay {
@@ -255,9 +262,9 @@ section {
   text-transform: uppercase;
 }
 
-.bold {
+/* .bold {
   font-weight: 700;
-}
+} */
 
 .project-image {
   width: 100%;
@@ -280,15 +287,16 @@ section {
   color: var(--highlight-color);
 }
 
+
 .tag-wrapper {
   display: flex;
   flex-wrap: wrap;
+  color: #fff;
 }
 
 .tag-wrapper p {
   background-color: var(--secondary-color);
-  font-size: 11px;
-  line-height: 11px;
+  font-size: 12px;
   padding: 6px 8px;
   margin-right: 8px;
   margin-top: 8px;
@@ -296,31 +304,47 @@ section {
 }
 
 
-.githubTagProjectContainer {
-  background-color: #000;
-  display: flex;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 50%;
+
+.tag-github {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  text-decoration: none;
+  margin: 6px 3px 3px 0;
+  font-size: 22px;
+  transition: transform 0.5s;
 }
 
-.imageGithubTagProject {
-  width: 28px;
+.tag-github:hover {
+  transform: scale(1.2, 1.2);
 }
 
-.anchorGithubTagProject{
-  cursor: pointer;
-  display: flex;
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
 
 
 
 /* ---------- MORE PROJECTS SECTION ---------- */
 .more-projects-section {
   display: block;
-  padding-top: 40px;
 }
+.other-projects {
+  padding: 10px;
+  margin-bottom: 5px;
+  transition: transform 0.5s;
+}
+.other-projects:hover {
+  transform: scale(1.1,1.1);
+  background-color:var(--main-color);
+}
+/*
+
+
+
 
 /* skills section*/
 .skills-section {
@@ -421,12 +445,19 @@ list-flex {
 
 /* 1- From phones to small tablets */
 @media (min-width: 768px) {
-  /* Sections */
   .profile-section,
   .tech-section,
-  .featured-section {
-    padding: 25px 24px 50px 24px;
+  .featured-section,
+  .more-projects-section,
+  .thoughts-section,
+  .skills-section,
+  .formore-section,
+  .footer-section {
+    padding: 80px 10vw;
+
   }
+
+
 
   .intro-container,
   .tech-container {
@@ -483,18 +514,31 @@ list-flex {
   .myName {
     font-size: 1.5rem;
   }
+
+.profile-section,
+.tech-section,
+.featured-section,
+.more-projects-section,
+.thoughts-section,
+.skills-section,
+.formore-section,
+.footer-section {
+  padding-left: 18vw;
+  padding-right: 18vw;
 }
+
+  }
+
 
 /* 3- From big tablets to bigger desktops */
 @media (min-width: 1080px) {
-  body {
-    max-width: 1080px;
-  }
+   
+  
+}
 
-  /* Sections */
-  .profile-section,
-  .tech-section,
-  .featured-section {
-    padding: 25px 15% 50px 15%;
-  }
+
+@media (min-width: 1500px) {
+  body {
+    max-width: 1500px;
+  } 
 }
