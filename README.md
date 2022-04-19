@@ -8,4 +8,4 @@ I had som problems with how to make everything be in places that I wanted specil
 
 # Viwe it live
 
-See it live at https://competent-keller-c49e90.netlify.app/code
+See it live at https://isabellwastfelt-portfolio.netlify.app/code/
