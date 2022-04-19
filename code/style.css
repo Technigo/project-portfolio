@@ -10,6 +10,8 @@
 	--clr-light: #fbf4eb;
 	--clr-white: #fff;
 	--clr-black: #111111;
+	--clr-footer: #fff;
+	--clr-article: #f7cece;
 }
 
 html[data-theme='light'] {
@@ -19,6 +21,8 @@ html[data-theme='light'] {
 	--clr-light: #fbf4eb;
 	--clr-white: #fff;
 	--clr-black: #111111;
+	--clr-footer: #ffffff;
+	--clr-article: #4b4b4b;
 }
 
 html[data-theme='dark'] {
@@ -28,6 +32,8 @@ html[data-theme='dark'] {
 	--clr-light: #242424;
 	--clr-white: #464646;
 	--clr-black: #ffffff;
+	--clr-footer: #111111;
+	--clr-article: #f7cece;
 }
 
 /* ------------------- */
@@ -259,11 +265,6 @@ a:focus {
 	color: var(--clr-black);
 }
 
-.project-link:hover,
-.project-link:focus {
-	color: var(--clr-medium);
-}
-
 .social-icon-reverse,
 .social-icon,
 .social-icon ~ .sibling,
@@ -477,10 +478,20 @@ article {
 	color: var(--clr-dark);
 }
 
+.article-thoughts span.date {
+	display: block;
+	padding-block: 0.5em;
+}
+
 /**** Thoughts ****/
 
 div.section-thoughts--text {
 	padding-bottom: 1em 0 2em;
+}
+
+div.section-thoughts--text:hover,
+div.section-thoughts--text:focus {
+	color: var(--clr-black);
 }
 
 .more-thoughts {
@@ -541,7 +552,7 @@ footer {
 
 footer h3 {
 	font-family: 'montserrat', sans-serif;
-	color: var(--clr-white);
+	color: var(--clr-footer);
 }
 
 footer p {
@@ -549,6 +560,10 @@ footer p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+footer.dark p {
+	color: var(--clr-footer);
 }
 
 /* ------------------- */
@@ -613,8 +628,11 @@ footer p {
 		font-size: 18px;
 	}
 
+	.other-projects--container:hover {
+		transform: translateX(0.5em);
+	}
+
 	header {
-		/* background: url('./images/heroimage.svg'); */
 		background-size: cover;
 	}
 
@@ -653,9 +671,10 @@ footer p {
 	}
 
 	.header-overlay {
-		color: var(--clr-black);
+		color: #111111;
 		font-weight: 700;
 		font-size: clamp(0.8rem, 1.5vw + 0.2rem, 2.5rem);
+		letter-spacing: 1.2px;
 		position: absolute;
 		width: 100%;
 		display: flex;
@@ -670,7 +689,7 @@ footer p {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-color: rgba(218, 218, 218, 0.733);
+		background-color: rgba(205, 205, 205, 0.733);
 		transition: 0.5s ease;
 	}
 
@@ -715,6 +734,12 @@ footer p {
 	.project-container.reverse {
 		flex-direction: row-reverse;
 		gap: 2em;
+	}
+
+	.project-link:hover,
+	.project-link:focus,
+	p.hover-accent:hover {
+		color: var(--clr-article);
 	}
 
 	.skills-container {
