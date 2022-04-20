@@ -1,7 +1,6 @@
 # PORTFOLIO
 
-This week's project was to create a portfolio based on a given design. The website is built on HTML and CSS and the focus has been on web accessibility.
-A portfolio project with HTML and CSS to follow a strict design from FIGMA. Needs to contain responsiveness, crossbrowser testing and accessibility.
+This week's project was to create a portfolio based on a given design from FIGMA. The website is built on HTML and CSS and the focus has been on web accessibility.
 
 # Tech
 * HTML5
@@ -9,7 +8,5 @@ A portfolio project with HTML and CSS to follow a strict design from FIGMA. Need
 * Accessibility & accessibility testing
 * Responsive design
 
-
 ## View it live
-Here's the link for my portfolio: 
-https://fatima-gamero-romero-portfolio.netlify.app
+Here's the link for my portfolio: https://fatima-gamero-romero-portfolio.netlify.app

@@ -17,8 +17,8 @@ body {
   font-style: normal;
 }
 
-
 /* ---------- HEADER ---------- */
+
 .header {
   position: relative;
   left: 0;
@@ -102,8 +102,8 @@ body {
 
 .profile-img-container {
   position: absolute;
-  width: 180px;
-  height: 180px;
+  width: 170px;
+  height: 170px;
   right: 0;
   bottom: 1%;
   background-image: url(./images/Fatima.jpg);
@@ -187,7 +187,7 @@ section {
 .section-heading {
   padding: 1px 7px;
   /* color: var(--headingBackground-color); */
-  color:  #f4f4f4;
+  color: #f4f4f4;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
@@ -199,9 +199,8 @@ section {
 }
 
 #more-projects-heading {
-  color:var(--highlight-color)
+  color: var(--highlight-color);
 }
-
 
 .tech-container {
   font-size: 18px;
@@ -262,9 +261,9 @@ section {
   text-transform: uppercase;
 }
 
-/* .bold {
-  font-weight: 700;
-} */
+.anchor {
+  text-decoration: none;
+}
 
 .project-image {
   width: 100%;
@@ -287,7 +286,6 @@ section {
   color: var(--highlight-color);
 }
 
-
 .tag-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -303,8 +301,6 @@ section {
   border-radius: 3px;
 }
 
-
-
 .tag-github {
   font-family: "Roboto", sans-serif;
   color: #000;
@@ -316,6 +312,7 @@ section {
 
 .tag-github:hover {
   transform: scale(1.2, 1.2);
+  color: var(--highlight-color);
 }
 
 .fa {
@@ -326,27 +323,51 @@ section {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 /* ---------- MORE PROJECTS SECTION ---------- */
+
 .more-projects-section {
   display: block;
 }
-.other-projects {
-  padding: 10px;
+
+.more-projects {
+  padding: 0 10px 10px;
   margin-bottom: 5px;
   transition: transform 0.5s;
 }
-.other-projects:hover {
-  transform: scale(1.1,1.1);
-  background-color:var(--main-color);
+
+.more-projects:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+  background-color: var(--main-color);
 }
-/*
 
+/* ---------- THOUGHTS SECTION ---------- */
 
+.thoughts {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 40%);
+  transition: transform 0.5s;
+  padding: 20px;
+  margin: 10px;
+}
 
+.thoughts:hover {
+  transform: scale(1.1, 1.1);
+}
 
-/* skills section*/
+.thoughts-image {
+  width: 100%;
+  max-height: 40vh;
+  min-height: 25vh;
+  object-fit: cover;
+}
+
+.text-container {
+  padding-top: 5px;
+  color: #000;
+}
+
+/* ---------- SKILLS SECTION ---------- */
+
 .skills-section {
   display: flex;
   flex-direction: column;
@@ -356,10 +377,13 @@ section {
 
 .skills-container {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0;
   margin-bottom: 40px;
+}
+
+.skills-card {
+  padding-bottom: 25px;
 }
 
 .skills-card ul {
@@ -389,10 +413,10 @@ section {
   width: auto;
   text-transform: uppercase;
 }
-.skills-card {
-  padding-bottom: 25px;
-}
-/* more-section*/
+
+
+/* ---------- FOR MORE SECTION ---------- */
+
 .more-icons {
   display: flex;
   justify-content: space-between;
@@ -422,19 +446,28 @@ section {
 
 .icon-more {
   width: 60px;
+  transition: transform 0.5s;
 }
 
-.anchor {
-  text-decoration: none;
+.icon-more:hover {
+  transform: scale(1.2, 1.2);
 }
 
-/* footer*/
+/* ---------- FOOTER SECTION ---------- */
+
+.footer-section {
+  background-color: #000;
+  color: #fff;
+}
+
 .footer ul {
   list-style-type: none;
 }
+
 .footer li {
   padding-top: 20px;
 }
+
 list-flex {
   display: flex;
   flex-direction: column;
@@ -445,26 +478,22 @@ list-flex {
 
 /* 1- From phones to small tablets */
 @media (min-width: 768px) {
+  
   .profile-section,
   .tech-section,
   .featured-section,
   .more-projects-section,
   .thoughts-section,
   .skills-section,
-  .formore-section,
-  .footer-section {
+  .formore-section {
     padding: 80px 10vw;
-
   }
-
-
 
   .intro-container,
   .tech-container {
     max-width: 700px;
   }
 
-  /* Header */
   .top-icon-image {
     width: 2.5rem;
   }
@@ -485,22 +514,26 @@ list-flex {
   }
 
   .profile-img-container {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
 
-  /* Featured projects section */
   .projects-container {
     grid-template-columns: repeat(8, 1fr);
   }
   .display {
     display: block;
   }
+
+  .thoughts-container {
+    display: flex;
+
+  }
 }
 
 /* 2- From small tablets to big tablets */
 @media (min-width: 982px) {
-  /* Header */
+  
   .portfolio-text {
     font-size: 1.5rem;
   }
@@ -515,30 +548,29 @@ list-flex {
     font-size: 1.5rem;
   }
 
-.profile-section,
-.tech-section,
-.featured-section,
-.more-projects-section,
-.thoughts-section,
-.skills-section,
-.formore-section,
-.footer-section {
-  padding-left: 18vw;
-  padding-right: 18vw;
-}
-
+  .profile-section,
+  .tech-section,
+  .featured-section,
+  .more-projects-section,
+  .skills-section,
+  .formore-section {
+    padding-left: 18vw;
+    padding-right: 18vw;
   }
 
+  .skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 
 /* 3- From big tablets to bigger desktops */
 @media (min-width: 1080px) {
-   
-  
 }
-
 
 @media (min-width: 1500px) {
   body {
     max-width: 1500px;
-  } 
+  }
 }
