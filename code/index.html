@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio">
+    <!-- CSS Stylesheet -->
+    <link href="./style.css" rel="stylesheet" />
+    <!-- Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Montserrat and Roboto Font-Family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- CSS Stylesheet -->
-  <link href="./style.css" rel="stylesheet" />
-  <!-- Icons link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Montserrat and Roboto Font-Family -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-
-  	<!-- Facebook Meta Tags -->
+    <!-- Facebook Meta Tags -->
     <meta
       property="og:url"
       content="https://fatima-gamero-romero-portfolio.netlify.app"
@@ -25,308 +33,385 @@
       property="og:title"
       content="Personal portfolio - Technigo project by Fatima Gamero Romero"
     />
-    <meta
-      property="og:description"
-      content="Personal portfolio"
-    />
+    <meta property="og:description" content="Personal portfolio" />
     <meta
       property="og:image"
       content="https://fatima-gamero-romero-portfolio.netlify.app/images/Screenshot-portfolio.png"
     />
 
-  <title>Fatima Gamero Romero's Portfolio</title>
-</head>
+    <title>Fatima Gamero Romero's Portfolio</title>
+  </head>
 
-<body>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="header-wrapper">
+        <nav class="nav-container">
+          <a
+            href="https://www.linkedin.com/in/fatima-gamero-romero-071224212/"
+            target="_blank"
+            class="icon-top"
+            ><img
+              src="./images/in.png"
+              class="top-icon-image"
+              alt="Linkedin image"
+          /></a>
+          <a
+            href="https://github.com/Fatima-GR?tab=repositories"
+            target="_blank"
+            class="icon-top"
+            ><img
+              src="./images/git.png"
+              class="top-icon-image"
+              alt="GitHub image"
+          /></a>
+          <a
+            href="https://stackexchange.com/users/22448519/fatima-gr"
+            target="_blank"
+            class="icon-top"
+            ><img
+              src="./images/stackOverflow.png"
+              class="top-icon-image"
+              alt="StackOverflow image"
+          /></a>
+        </nav>
 
-  <!--HEADER-->
-  <header class="header">
-    <div class="header-wrapper">
-      <nav class="nav-container">
-        <a href="https://www.linkedin.com/in/fatima-gamero-romero-071224212/" target="_blank" class="icon-top"><img
-            src="./images/in.png" class="top-icon-image" alt="Linkedin image" /></a>
-        <a href="https://github.com/Fatima-GR?tab=repositories" target="_blank" class="icon-top"><img
-            src="./images/git.png" class="top-icon-image" alt="GitHub image" /></a>
-        <a href="https://stackexchange.com/users/22448519/fatima-gr" target="_blank" class="icon-top"><img
-            src="./images/stackOverflow.png" class="top-icon-image" alt="StackOverflow image" /></a>
-      </nav>
-
-      <article class="header-text-container">
-        <p class="portfolio-text">
-          Portafolio <span class="myName">Fatima Gamero Romero</span>
-        </p>
-        <h1 class="big-heading">Frontend Developer</h1>
-        <h2 class="subtitle">with fullstack ambitions</h2>
-      </article>
-
-      <div class="profile-img-container"></div>
-    </div>
-  </header>
-
-  <!-- PROFILE SECTION -->
-  <div class="profile-section" id="profile-section">
-    <div class="intro-container">
-      <p>
-        <span class="line"></span><span class="dot"></span> Welcome to my
-        portfolio page! My name is Fatima and I'm an enthusiastic new frontend
-        developer with dreams of being a full stacker.<br /><br />
-        I love to learn new things and that's what inspired me to learn how to
-        code at
-        <a class="highlighted technigo" href="https://www.technigo.io/" target="_blank">Technigo</a>. I like solving
-        problems and the rewarding feeling of completing
-        tasks, working in teams and creating functional websites. Curious to
-        know more? Read on!
-      </p>
-    </div>
-  </div>
-
-  <!--TECHNOLOGIES SECTION-->
-
-  <section class="tech-section">
-    <h2 class="section-heading section-heading-background">tech</h2>
-    <div class="tech-container">
-      <p>
-        HTML, CSS, Flexbox, <span class="highlighted">JavaScript,</span> ES6,
-        JSX, <span class="highlighted"> React, React Hooks, Redux,</span>
-        Node.js, Mongo DB, Web Accessibly, API's, mob-programming,
-        pair-programming, Github.
-      </p>
-    </div>
-  </section>
-
-
-
-
-
-  <!--FEATURED PROJECTS SECTION-->
-  <section class="featured-section">
-    <h2 class="section-heading section-heading-background">featured projects</h2>
-    <div class="projects-container">
-
-      <article class="main-project">
-        <a href="https://javascript-survey.netlify.app/" class="anchor" target="_blank">
-
-          <div class="project-img-container">
-            <div class="overlay">
-              <h3 class="image-title uppercase bold">Survey</h3>
-            </div>
-            <img class="project-image" src="./images/survey-project.png" alt="Project survey" />
-          </div>
-
-          <div class="text-container">
-            <h4 class="project-title uppercase">
-              Survey
-            </h4>
-            <p>
-              Interactive survey form about JS questions built in React using states and hooks.
-            </p>
-          </div>
-        </a>
-
-        <div class="tag-wrapper">
-          <p>JavaScript ES6</p>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>React</p>
-          <a class="tag-github" href="https://github.com/Fatima-GR/project-survey" target="_blank">
-            <i class="fa fa-github"></i>
-          </a>
-        </div>
+        <article class="header-text-container">
+          <p class="myName">Fatima Gamero Romero</p>
+          <h1 class="big-heading">Frontend Developer</h1>
+          <h2 class="subtitle">with fullstack ambitions</h2>
         </article>
-     
 
+        <div class="profile-img-container"></div>
+      </div>
+    </header>
 
-      <article class="main-project">
-        <a href="https://flowerland.netlify.app/" class="anchor" target="_blank">
-
-          <div class="project-img-container">
-            <div class="overlay">
-              <h3 class="image-title uppercase">Chatbot</h3>
-            </div>
-            <img class="project-image" src="./images/chatbot-project.jpeg" alt="Project chatbot" />
-          </div>
-          <div class="text-container">
-            <h4 class="project-title uppercase bold">
-              Chatbot
-            </h4>
-            <p>
-              A chatbot built in Vanilla JavaScript as pair-programming project for flowers orders.
-            </p>
-          </div>
-        </a>
-        <div class="tag-wrapper">
-          <p>JavaScript ES6</p>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <a class="tag-github" href="https://github.com/Fatima-GR/project-chatbot" target="_blank">
-            <i class="fa fa-github"></i>
-          </a>
-          
-        </div>
-      </article>
-
-      <article class="main-project display">
-        <a href="https://github-tracker-fatima.netlify.app/" class="anchor" target="_blank">
-
-          <div class="project-img-container">
-            <div class="overlay">
-              <h3 class="image-title uppercase">Github tracker</h3>
-            </div>
-            <img class="project-image" src="./images/github-tracker-project.png" alt="Project GitHub tracker" />
-          </div>
-          <div class="text-container">
-            <h4 class="project-title uppercase bold">Github tracker</h4>
-            <p>
-              Responsive web site using Github API to show my own repositories forked from Technigo.
-            </p>
-          </div>
-        </a>
-        <div class="tag-wrapper">
-          <p>JavaScript ES6</p>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>APIs</p>
-          <a class="tag-github" href="https://github.com/Fatima-GR/project-github-tracker" target="_blank">
-            <i class="fa fa-github"></i>
-          </a>
-        </div>
-      </article>
-
-      <article class="main-project display">
-        <a href="https://tasks-todo-list-fatima.netlify.app/" class="anchor" target="_blank">
-
-          <div class="project-img-container">
-            <div class="overlay">
-              <h3 class="image-title uppercase">Todo List</h3>
-            </div>
-            <img class="project-image" src="./images/todo-list-project.png" alt="Project Todo" />
-          </div>
-          <div class="text-container">
-            <h4 class="project-title uppercase bold">Todo List</h4>
-            <p>
-              A to-do app that keeps track of all the tasks you need to do.
-            </p>
-          </div>
-        </a>
-        <div class="tag-wrapper">
-          <p>JavaScript ES6</p>
-          <p>Redux</p>
-          <p>React</p>
-          <p>Styled Components</p>
-          <a class="tag-github" href="https://github.com/Fatima-GR/project-todos" target="_blank">
-            <i class="fa fa-github"></i>
-          </a>
-        </div>
-      </article>
-
-      <article class="main-project display">
-        <a href="https://my-happy-thoughts-place.netlify.app/" class="anchor" target="_blank">
-
-          <div class="project-img-container">
-            <div class="overlay">
-              <h3 class="image-title uppercase">Happy Thoughts</h3>
-            </div>
-            <img class="project-image" src="./images/happy-thoughts-project.webp" alt="Project Happy Thoughts" />
-          </div>
-          <div class="text-container">
-            <h4 class="project-title uppercase">
-              Happy Thoughts
-            </h4>
-            <p>
-
-              A Twitter clone using React hooks to fetch an API, post messages, delete and like them.
-            </p>
-          </div>
-        </a>
-        <div class="tag-wrapper">
-          <p>JavaScript ES6</p>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>React</p>
-          <p>APIs</p>
-          <a class="tag-github" href="https://github.com/Fatima-GR/project-happy-thoughts" target="_blank">
-            <i class="fa fa-github"></i>
-          </a>
-
-        </div>
-      </article>
-
-      <article class="main-project display">
-        <a href="https://gymtasyclub.netlify.app/" class="anchor" target="_blank">
-
-          <div class="project-img-container">
-            <div class="overlay">
-              <h3 class="image-title uppercase">Business site</h3>
-            </div>
-            <img class="project-image" src="./images/business-site-project.png" alt="Project business site" />
-          </div>
-          <div class="text-container">
-            <h4 class="project-title uppercase">
-              Business site
-            </h4>
-            <p>
-             One page business web site built with accordion and a Sign-up form.
-            </p>
-          </div>
-        </a>
-        <div class="tag-wrapper">
-          <p>JavaScript ES6</p>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <a class="tag-github" href="https://github.com/Fatima-GR/project-business-site" target="_blank">
-            <i class="fa fa-github"></i>
-          </a>
-        </div>
-      </article>
-
+    <!-- PROFILE SECTION -->
+    <div class="profile-section" id="profile-section">
+      <div class="intro-container">
+        <p>
+          <span class="line"></span><span class="dot"></span> Welcome to my
+          portfolio page! My name is Fatima and I'm an enthusiastic new frontend
+          developer with dreams of being a full stacker.<br /><br />
+          I love to learn new things and that's what inspired me to learn how to
+          code at
+          <a
+            class="highlighted technigo"
+            href="https://www.technigo.io/"
+            target="_blank"
+            >Technigo</a
+          >. I like solving problems and the rewarding feeling of completing
+          tasks, working in teams and creating functional websites. Curious to
+          know more? Read on!
+        </p>
+      </div>
     </div>
-  </section>
 
+    <!--TECHNOLOGIES SECTION-->
 
+    <section class="tech-section">
+      <h2 class="section-heading section-heading-background">tech</h2>
+      <div class="tech-container">
+        <p>
+          HTML, CSS, Flexbox, <span class="highlighted">JavaScript,</span> ES6,
+          JSX, <span class="highlighted"> React, React Hooks, Redux,</span>
+          Node.js, Mongo DB, Web Accessibly, API's, mob-programming,
+          pair-programming, Github.
+        </p>
+      </div>
+    </section>
 
+    <!--FEATURED PROJECTS SECTION-->
+    <section class="featured-section">
+      <h2 class="section-heading section-heading-background">
+        featured projects
+      </h2>
+      <div class="projects-container">
+        <article class="main-project">
+          <a
+            href="https://javascript-survey.netlify.app/"
+            class="anchor"
+            target="_blank"
+          >
+            <div class="project-img-container">
+              <div class="overlay">
+                <h3 class="image-title uppercase bold">Survey</h3>
+              </div>
+              <img
+                class="project-image"
+                src="./images/survey-project.png"
+                alt="Project survey"
+              />
+            </div>
 
+            <div class="text-container">
+              <h4 class="project-title uppercase">Survey</h4>
+              <p>
+                Interactive survey form about JS questions built in React using
+                states and hooks.
+              </p>
+            </div>
+          </a>
 
+          <div class="tag-wrapper">
+            <p>JavaScript ES6</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>React</p>
+            <a
+              class="tag-github"
+              href="https://github.com/Fatima-GR/project-survey"
+              target="_blank"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </article>
 
+        <article class="main-project">
+          <a
+            href="https://flowerland.netlify.app/"
+            class="anchor"
+            target="_blank"
+          >
+            <div class="project-img-container">
+              <div class="overlay">
+                <h3 class="image-title uppercase">Chatbot</h3>
+              </div>
+              <img
+                class="project-image"
+                src="./images/chatbot-project.jpeg"
+                alt="Project chatbot"
+              />
+            </div>
+            <div class="text-container">
+              <h4 class="project-title uppercase bold">Chatbot</h4>
+              <p>
+                A chatbot built in Vanilla JavaScript as pair-programming
+                project for flowers orders.
+              </p>
+            </div>
+          </a>
+          <div class="tag-wrapper">
+            <p>JavaScript ES6</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <a
+              class="tag-github"
+              href="https://github.com/Fatima-GR/project-chatbot"
+              target="_blank"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </article>
 
-  <!--MORE PROJECTS SECTION-->
+        <article class="main-project display">
+          <a
+            href="https://github-tracker-fatima.netlify.app/"
+            class="anchor"
+            target="_blank"
+          >
+            <div class="project-img-container">
+              <div class="overlay">
+                <h3 class="image-title uppercase">Github tracker</h3>
+              </div>
+              <img
+                class="project-image"
+                src="./images/github-tracker-project.png"
+                alt="Project GitHub tracker"
+              />
+            </div>
+            <div class="text-container">
+              <h4 class="project-title uppercase bold">Github tracker</h4>
+              <p>
+                Responsive web site using Github API to show my own repositories
+                forked from Technigo.
+              </p>
+            </div>
+          </a>
+          <div class="tag-wrapper">
+            <p>JavaScript ES6</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>APIs</p>
+            <a
+              class="tag-github"
+              href="https://github.com/Fatima-GR/project-github-tracker"
+              target="_blank"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </article>
 
-  <section class="more-projects-section">
-    <h2 class="section-heading" id="more-projects-heading">More projects</h2>
+        <article class="main-project display">
+          <a
+            href="https://tasks-todo-list-fatima.netlify.app/"
+            class="anchor"
+            target="_blank"
+          >
+            <div class="project-img-container">
+              <div class="overlay">
+                <h3 class="image-title uppercase">Todo List</h3>
+              </div>
+              <img
+                class="project-image"
+                src="./images/todo-list-project.png"
+                alt="Project Todo"
+              />
+            </div>
+            <div class="text-container">
+              <h4 class="project-title uppercase bold">Todo List</h4>
+              <p>
+                A to-do app that keeps track of all the tasks you need to do.
+              </p>
+            </div>
+          </a>
+          <div class="tag-wrapper">
+            <p>JavaScript ES6</p>
+            <p>Redux</p>
+            <p>React</p>
+            <p>Styled Components</p>
+            <a
+              class="tag-github"
+              href="https://github.com/Fatima-GR/project-todos"
+              target="_blank"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </article>
 
-    <article class="more-projects">
-      <a href="https://guess-who-game-board.netlify.app/" class="anchor" target="_blank">
-        <div class="text-container">
-          <h5 class="project-title highlighted">Guess Who</h5>
-          <p>
-            A digital version of the classic board game Guess Who, created
-            with vanilla Javascript.
-          </p>
-        </div>
-      </a>
+        <article class="main-project display">
+          <a
+            href="https://my-happy-thoughts-place.netlify.app/"
+            class="anchor"
+            target="_blank"
+          >
+            <div class="project-img-container">
+              <div class="overlay">
+                <h3 class="image-title uppercase">Happy Thoughts</h3>
+              </div>
+              <img
+                class="project-image"
+                src="./images/happy-thoughts-project.webp"
+                alt="Project Happy Thoughts"
+              />
+            </div>
+            <div class="text-container">
+              <h4 class="project-title uppercase">Happy Thoughts</h4>
+              <p>
+                A Twitter clone using React hooks to fetch an API, post
+                messages, delete and like them.
+              </p>
+            </div>
+          </a>
+          <div class="tag-wrapper">
+            <p>JavaScript ES6</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>React</p>
+            <p>APIs</p>
+            <a
+              class="tag-github"
+              href="https://github.com/Fatima-GR/project-happy-thoughts"
+              target="_blank"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="main-project display">
+          <a
+            href="https://gymtasyclub.netlify.app/"
+            class="anchor"
+            target="_blank"
+          >
+            <div class="project-img-container">
+              <div class="overlay">
+                <h3 class="image-title uppercase">Business site</h3>
+              </div>
+              <img
+                class="project-image"
+                src="./images/business-site-project.png"
+                alt="Project business site"
+              />
+            </div>
+            <div class="text-container">
+              <h4 class="project-title uppercase">Business site</h4>
+              <p>
+                One page business web site built with accordion and a Sign-up
+                form.
+              </p>
+            </div>
+          </a>
+          <div class="tag-wrapper">
+            <p>JavaScript ES6</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <a
+              class="tag-github"
+              href="https://github.com/Fatima-GR/project-business-site"
+              target="_blank"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--MORE PROJECTS SECTION-->
+
+    <section class="more-projects-section">
+      <h2 class="section-heading" id="more-projects-heading">More projects</h2>
+
+      <article class="more-projects">
+        <a
+          href="https://guess-who-game-board.netlify.app/"
+          class="anchor"
+          target="_blank"
+        >
+          <div class="text-container">
+            <h5 class="project-title highlighted">Guess Who</h5>
+            <p>
+              A digital version of the classic board game Guess Who, created
+              with vanilla Javascript.
+            </p>
+          </div>
+        </a>
 
         <div class="tag-wrapper">
           <p>JavaScript ES6</p>
           <p>HTML5</p>
           <p>CSS3</p>
-          <a class="tag-github" href="https://github.com/Fatima-GR/project-guess-who" target="_blank">
+          <a
+            class="tag-github"
+            href="https://github.com/Fatima-GR/project-guess-who"
+            target="_blank"
+          >
             <i class="fa fa-github"></i>
           </a>
         </div>
-    </article>
+      </article>
 
-    <article class="more-projects">
-      <a href="https://labyrinth-project.netlify.app/" class="anchor" target="_blank">
-        <div class="text-container">
-          <h5 class="project-title highlighted">
-            Labyrinth Game
-          </h5>
-          <p>
-            A game which allows a user to navigate a maze, in the form of a
-            text-based adventure. Pair programming project built with Redux
-            and thunks.
-          </p>
-        </div>
-      </a>
+      <article class="more-projects">
+        <a
+          href="https://labyrinth-project.netlify.app/"
+          class="anchor"
+          target="_blank"
+        >
+          <div class="text-container">
+            <h5 class="project-title highlighted">Labyrinth Game</h5>
+            <p>
+              A game which allows a user to navigate a maze, in the form of a
+              text-based adventure. Pair programming project built with Redux
+              and thunks.
+            </p>
+          </div>
+        </a>
         <div class="tag-wrapper">
           <p>JavaScript ES6</p>
           <p>React</p>
@@ -334,22 +419,30 @@
           <p>APIs</p>
           <p>Styled Components</p>
           <p>Pair programming</p>
-          <a class="tag-github" href="https://github.com/Fatima-GR/project-labyrinth" target="_blank">
+          <a
+            class="tag-github"
+            href="https://github.com/Fatima-GR/project-labyrinth"
+            target="_blank"
+          >
             <i class="fa fa-github"></i>
           </a>
-          
         </div>
-    </article>
+      </article>
 
-    <article class="more-projects">
-      <a href="https://sunshineison.netlify.app" class="anchor" target="_blank">
-        <div class="text-container">
-          <h5 class="project-title highlighted">Weather app</h5>
-          <p>
-            Responsive weather app using Open Weather API to show weather forecast.
-          </p>
-        </div>
-      </a>
+      <article class="more-projects">
+        <a
+          href="https://sunshineison.netlify.app"
+          class="anchor"
+          target="_blank"
+        >
+          <div class="text-container">
+            <h5 class="project-title highlighted">Weather app</h5>
+            <p>
+              Responsive weather app using Open Weather API to show weather
+              forecast.
+            </p>
+          </div>
+        </a>
 
         <div class="tag-wrapper">
           <p>JavaScript ES6</p>
@@ -357,21 +450,30 @@
           <p>CSS3</p>
           <p>APIs</p>
           <p>Mob-programming</p>
-          <a class="tag-github" href="https://github.com/Fatima-GR/project-weather-app" target="_blank">
+          <a
+            class="tag-github"
+            href="https://github.com/Fatima-GR/project-weather-app"
+            target="_blank"
+          >
             <i class="fa fa-github"></i>
           </a>
         </div>
-    </article>
+      </article>
 
-    <article class="more-projects">
-      <a href="https://cinema-movies-site.netlify.app/" class="anchor" target="_blank">
-        <div class="text-container">
-          <h5 class="project-title highlighted">Popular movies</h5>
-          <p>
-           Multi-Page React App created with React Router, displaying lists of Popular Movies and details when clicked on.
-          </p>
-        </div>
-      </a>
+      <article class="more-projects">
+        <a
+          href="https://cinema-movies-site.netlify.app/"
+          class="anchor"
+          target="_blank"
+        >
+          <div class="text-container">
+            <h5 class="project-title highlighted">Popular movies</h5>
+            <p>
+              Multi-Page React App created with React Router, displaying lists
+              of Popular Movies and details when clicked on.
+            </p>
+          </div>
+        </a>
         <div class="tag-wrapper">
           <p>JavaScript ES6</p>
           <p>HTML5</p>
@@ -379,21 +481,27 @@
           <p>React</p>
           <p>APIs</p>
           <p>Pair-programming</p>
-          <a class="tag-github" href="https://github.com/Fatima-GR/project-movies" target="_blank">
+          <a
+            class="tag-github"
+            href="https://github.com/Fatima-GR/project-movies"
+            target="_blank"
+          >
             <i class="fa fa-github"></i>
           </a>
         </div>
-    </article>
+      </article>
 
-    <article class="more-projects">
-      <a href="https://music-releases-amanda-fatima.netlify.app" class="anchor" target="_blank">
-        <div class="text-container">
-          <h5 class="project-title highlighted">Music releases</h5>
-          <p>
-            Music releases website built in React using the Spotify API.
-          </p>
-        </div>
-      </a>
+      <article class="more-projects">
+        <a
+          href="https://music-releases-amanda-fatima.netlify.app"
+          class="anchor"
+          target="_blank"
+        >
+          <div class="text-container">
+            <h5 class="project-title highlighted">Music releases</h5>
+            <p>Music releases website built in React using the Spotify API.</p>
+          </div>
+        </a>
         <div class="tag-wrapper">
           <p>JavaScript ES6</p>
           <p>HTML5</p>
@@ -401,69 +509,108 @@
           <p>React</p>
           <p>APIs</p>
           <p>Pair-programming</p>
-          <a class="tag-github" href="https://github.com/Fatima-GR/project-music-releases" target="_blank">
+          <a
+            class="tag-github"
+            href="https://github.com/Fatima-GR/project-music-releases"
+            target="_blank"
+          >
             <i class="fa fa-github"></i>
           </a>
         </div>
-    </article>
-  </section>
-
-  <!--THOUGHTS SECTION-->
-
-  <section class="thoughts-section">
-    <h2 class="section-heading section-heading-background">My thoughts</h2>
-
-    <div class="thoughts-container">
-      <article class="thoughts">
-        <a class="anchor" href="https://medium.com/@fgameroromero/feeling-part-of-a-team-c29fd58e8d72" target="_blank">
-          <div>
-          <img class="thoughts-image" src="./images/teamwork.png" alt="teamwork" />
-         </div>
-         <div class="text-container">
-           <p>Nov 2021</p>
-           <h5 class="project-title highlighted">Team work</h5>
-           <p>I am halfway through a Frontend Bootcamp at Technigo and since we have been working a lot in pair-programming and also in groups, I find that writing about the importance of feeling like a part of a team is a good topic to read about.</p>
-         </div>
-        </a>
       </article>
+    </section>
 
-      <article class="thoughts">
-        <a class="anchor" href="https://medium.com/@fgameroromero/react-state-vs-redux-state-e1226bfc76d9" target="_blank">
-          <div>
-          <img class="thoughts-image" src="./images/react&redux.png" alt="react&redux-state" />
-         </div>
-         <div class="text-container">
-           <p>Jan 2022</p>
-           <h5 class="project-title highlighted">React vs Redux states</h5>
-           <p>When designing a React application it may not be clear how to 
-             structure the data. The state of the entire application can be
-              kept locally or globally. 
-              There are some advantages
-               and disadvantages to both.</p>
-         </div>
-        </a>
-      </article>
+    <!--THOUGHTS SECTION-->
 
-      <article class="thoughts">
-        <a class="anchor" href="https://medium.com/@fgameroromero/array-methods-find-vs-filter-ba5e006393e" target="_blank">
-  
-          <div>
-          <img class="thoughts-image" src="./images/find&filter.png" alt="find&filter" />
-         </div>
+    <section class="thoughts-section">
+      <h2 class="section-heading section-heading-background">My thoughts</h2>
 
-         <div class="text-container">
-           <p>Apr 2022</p>
-           <h5 class="project-title highlighted">Find vs Filter methods</h5>
-           <p>During my journey to become a frontend developer, I was always so confused about the array methods of find() and filter(). I was never sure which one to use. That is the reason I have written an article with my own examples that will help me to remember it and hopefully you too.</p>
-         </div>
-        </a>
-      </article>
-    </div>
-  </section>
+      <div class="thoughts-container">
+        <article class="thoughts">
+          <a
+            class="anchor"
+            href="https://medium.com/@fgameroromero/feeling-part-of-a-team-c29fd58e8d72"
+            target="_blank"
+          >
+            <div>
+              <img
+                class="thoughts-image"
+                src="./images/teamwork.png"
+                alt="teamwork"
+              />
+            </div>
+            <div class="text-container">
+              <p>Nov 2021</p>
+              <h5 class="project-title highlighted">Team work</h5>
+              <p>
+                I am halfway through a Frontend Bootcamp at Technigo and since
+                we have been working a lot in pair-programming and also in
+                groups, I find that writing about the importance of feeling like
+                a part of a team is a good topic to read about.
+              </p>
+            </div>
+          </a>
+        </article>
 
-  <!--SKILLS SECTION-->
-  <section class="skills-section">
-    <h2 class="section-heading section-heading-background">Skills</h2>
+        <article class="thoughts">
+          <a
+            class="anchor"
+            href="https://medium.com/@fgameroromero/react-state-vs-redux-state-e1226bfc76d9"
+            target="_blank"
+          >
+            <div>
+              <img
+                class="thoughts-image"
+                src="./images/react&redux.png"
+                alt="react&redux-state"
+              />
+            </div>
+            <div class="text-container">
+              <p>Jan 2022</p>
+              <h5 class="project-title highlighted">React vs Redux states</h5>
+              <p>
+                When designing a React application it may not be clear how to
+                structure the data. The state of the entire application can be
+                kept locally or globally. There are some advantages and
+                disadvantages to both.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="thoughts">
+          <a
+            class="anchor"
+            href="https://medium.com/@fgameroromero/array-methods-find-vs-filter-ba5e006393e"
+            target="_blank"
+          >
+            <div>
+              <img
+                class="thoughts-image"
+                src="./images/find&filter.png"
+                alt="find&filter"
+              />
+            </div>
+
+            <div class="text-container">
+              <p>Apr 2022</p>
+              <h5 class="project-title highlighted">Find vs Filter methods</h5>
+              <p>
+                During my journey to become a frontend developer, I was always
+                so confused about the array methods of find() and filter(). I
+                was never sure which one to use. That is the reason I have
+                written an article with my own examples that will help me to
+                remember it and hopefully you too.
+              </p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!--SKILLS SECTION-->
+    <section class="skills-section">
+      <h2 class="section-heading section-heading-background">Skills</h2>
       <div class="skills-container">
         <div class="skills-card">
           <ul>
@@ -505,49 +652,64 @@
           </ul>
         </div>
       </div>
-  </section>
+    </section>
 
-  <!--FOR MORE SECTION-->
+    <!--FOR MORE SECTION-->
 
-  <section class="formore-section">
-    <h2 class="section-heading section-heading-background">For more</h2>
-    <div class="more-icons">
-      <a href="https://www.linkedin.com/in/fatima-gamero-romero-071224212/" target="_blank" class="anchor">
-        <div class="icon-container">
-          <img class="icon-more" src="./images/Li.png" alt="linkedin icon" />
-          <p>Linkedin</p>
-        </div>
-      </a>
+    <section class="formore-section">
+      <h2 class="section-heading section-heading-background">For more</h2>
+      <div class="more-icons">
+        <a
+          href="https://www.linkedin.com/in/fatima-gamero-romero-071224212/"
+          target="_blank"
+          class="anchor"
+        >
+          <div class="icon-container">
+            <img class="icon-more" src="./images/Li.png" alt="linkedin icon" />
+            <p>Linkedin</p>
+          </div>
+        </a>
 
-      <a href="https://stackexchange.com/users/22448519/fatima-gr" target="_blank" class="anchor">
-        <div class="icon-container">
-          <img class="icon-more" src="./images/SO.png" alt="stackOverflow icon" />
-          <p>Stack overflow</p>
-        </div>
-      </a>
+        <a
+          href="https://stackexchange.com/users/22448519/fatima-gr"
+          target="_blank"
+          class="anchor"
+        >
+          <div class="icon-container">
+            <img
+              class="icon-more"
+              src="./images/SO.png"
+              alt="stackOverflow icon"
+            />
+            <p>Stack overflow</p>
+          </div>
+        </a>
 
-      <a href="https://github.com/Fatima-GR?tab=repositories" target="_blank" class="anchor">
-        <div class="icon-container">
-          <img class="icon-more" src="./images/GH.png" alt="github icon" />
-          <p>github</p>
-        </div>
-      </a>
-    </div>
-  </section>
+        <a
+          href="https://github.com/Fatima-GR?tab=repositories"
+          target="_blank"
+          class="anchor"
+        >
+          <div class="icon-container">
+            <img class="icon-more" src="./images/GH.png" alt="github icon" />
+            <p>github</p>
+          </div>
+        </a>
+      </div>
+    </section>
 
-  <!--FOOTER SECTION-->
-  <section class="footer-section">
-    <footer class="footer">
-      <h2 class="section-heading">Contact</h2>
-      <nav>
-        <ul class="list-flex">
-          <li>Fatima Gamero Romero</li>
-          <li>+41 78 40 57 264</li>
-          <li>fatigr2692@gmail.com</li>
-        </ul>
-      </nav>
-    </footer>
-  </section>
-</body>
-
+    <!--FOOTER SECTION-->
+    <section class="footer-section">
+      <footer class="footer">
+        <h2 class="section-heading">Contact</h2>
+        <nav>
+          <ul class="list-flex">
+            <li>Fatima Gamero Romero</li>
+            <li>+41 78 40 57 264</li>
+            <li>fatigr2692@gmail.com</li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+  </body>
 </html>
