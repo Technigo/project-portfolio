@@ -20,10 +20,9 @@ The accessability validation was a great tool and helped me adjust some things d
 
 This project required writing more code than our usual projects, so I am happy that we will continue to improve this project further on so I have time for fixing these things: 
 -I got a lot of contrast errors in WAVE due to the red/orange text mostly, so one of the things I will try is to apply a bold-span since the bold styling did not work for me.
--the overlays on the project images overflow for some reason in desktop mode
 -use svg for the icons and on desktop mode text under icons
 -got warning for article section without heading so will check into this
 -more DRY both HTML and in CSS since a lot of repetition is going on here. 
 
 # view it here: 
-https://portfolio-week8.netlify.app/
+https://louisalundgren-portfolio.netlify.app/
