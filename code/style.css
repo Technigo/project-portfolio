@@ -16,76 +16,72 @@ body {
   margin: auto;
   font-style: normal;
 }
-/* body.dark {
-  background-color: #f1c40f;
-} */
 
 /* ---------- HEADER ---------- */
- 
+
 .checkbox {
   opacity: 0;
   position: absolute;
 }
-
 
 .label {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #111;
-  height: 25px;
-  width: 50px;
+  height: 26px;
+  width: 55px;
   display: flex;
   padding: 5px;
   border-radius: 50px;
-  position: relative; 
+  position: relative;
 }
+
 .fa-moon {
-  color:#f1c40f;
+  color: #f1c40f;
+  font-size: 20px;
 }
+
 .fa-sun {
-  color:#f39c12;
+  color: #da8b0c;
+  font-size: 20px;
 }
+
 .ball {
-  background-color: #fff;
+  background-color: rgb(70, 145, 243);
   position: absolute;
   width: 22px;
   height: 22px;
   border-radius: 50%;
   top: 2px;
-  left: 2px;
+  left: 1px;
   transition: transform 0.2s linear;
 }
 
 /* Pseudo-class selector; select elements based on states*/
 /* Adjacent Sibling Selector (+) */
-.checkbox:checked + .label .ball { 
-  background-color:orange;
-  transform: translateX(24px)
+.checkbox:checked + .label .ball {
+  background-color: whitesmoke;
+  transform: translateX(29px);
 }
 
-
-header {
+.header {
   position: relative;
   left: 0;
   top: 0;
   width: 100%;
   height: 520px;
-  background-image: url(./images/switzerland-mountains.jpeg);
+  background-image: url(./images/switzerland-mountains.jpeg); /* night background image */
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
 }
 
-
-header.dark {
-  /* background-image: url(./images/switzerland-mountains-daytime.webp); */
-  /* background-color: #f1c40f; */
+/* This class overcomes always before the class header and only, when changing the mode, the other one run, as this one gets deactivated */
+.dayBackground {
+  background-image: url(./images/switzerland-mountains-daytime.jpeg);
+  background-position: top;
 }
-
- /* header.dark {
-  background-color: #f1c40f;
-}  */
 
 .header-wrapper {
   position: absolute;
@@ -127,6 +123,11 @@ header.dark {
   height: auto;
 }
 
+/* This class overcomes always before the header-text-container class and only, when changing the mode, the other one run, as this one gets deactivated */
+.darkText {
+  color: #00004d;
+}
+
 .myName {
   font-size: 0.9rem;
   font-family: "Roboto", sans-serif;
@@ -141,30 +142,31 @@ header.dark {
   margin-top: 15px;
 }
 
-
-
 .subtitle {
   margin-top: 10px;
   font-size: 1.1rem;
 }
 
-
 .profile-image {
+  background-image: url(./images/profile-picture-1.jpg);
+  border: 2px solid #e9d5da;
   position: absolute;
   width: 170px;
   height: 170px;
   right: 0;
   bottom: 1%;
-  background-image: url(./images/profile-picture-1.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: center;
   background-size: cover;
-  border: 2px solid #E9D5DA;
   border-radius: 50%;
   z-index: 3;
   display: block;
-
+}
+.profile-image-day {
+  background-image: url(./images/profile-picture-2.jpg);
+  background-position: left top;
+  border: 2px solid #f0f0f0;
 }
 
 /* ---------- ALL SECTIONS ---------- */
