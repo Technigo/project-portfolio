@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
     <!-- Montserrat and Roboto Font-Family -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
@@ -44,12 +48,23 @@
 
   <body>
     <!--HEADER-->
-    <header class="header">
+    <header>
       <div class="header-wrapper">
 
-        <div class="btn-background-wrapper">
-          <button id="btn-background">change background image</button>
+        <div>
+
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+           <div class="ball"></div>
+          </label>
+
         </div>
+
+        <!-- <div>
+          <button id="btn-background" class="btn-background">light mode</button>
+        </div> -->
 
         <nav class="nav-container">
           <a
@@ -91,6 +106,7 @@
         </article>
 
         <div class="profile-image"></div>
+
       </div>
     </header>
 
@@ -111,6 +127,7 @@
           >. I like solving problems and the rewarding feeling of completing
           tasks, working in teams and creating functional websites. Curious to
           know more? Read on!
+
         </p>
       </div>
     </section>
@@ -746,7 +763,10 @@
           </ul>
         </nav>
       </footer>
+
+
     </section>
+
     <script src="./script.js"></script>
   </body>
 </html>
