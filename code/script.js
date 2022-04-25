@@ -14,4 +14,6 @@ checkbox.addEventListener("change", () => {
   headerText.classList.toggle("darkText");
   profileImage.classList.toggle("profile-image-day");
   subtitle.classList.toggle("subtitle-day");
+
+
 });
