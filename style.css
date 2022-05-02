@@ -136,6 +136,8 @@ header {
 .grid-centered {
     display: grid;
     justify-items: center;
+    text-align: center;
+    gap: 1rem;
 }
 
 .white-border {
@@ -234,6 +236,10 @@ h2 {
     transition: 0.5s ease;
 }
 
+.overlay-title {
+    display: none;
+}
+
 img {
     max-width: 100%;
 }
@@ -290,7 +296,7 @@ img {
     }
 
     .project-overlay {
-        background-color: var(--clr-transparent-black);
+        background-color: var(--clr-transparent-light-grey);
         transition: 0.5s ease;
     }
 
@@ -300,7 +306,6 @@ img {
         align-items: center;
         transition: 0.5s ease;
         font-size: 1.5rem;
-        color: var(--clr-white); 
     }
 
     .project-img-group:hover .project-overlay,
