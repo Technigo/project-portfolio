@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  background-color: #d7d8d9;
 }
 
 /* global class */
@@ -20,7 +21,8 @@ body {
 }
 
 .header {
-  background-image: url(/assets/jakob-rosen-WG8ZXIREtco-unsplash.jpg);
+  background-image: url(/code/assets/jakob-rosen-WG8ZXIREtco-unsplash.jpg);
+  background-color: black;
   background-size: cover;
   width: 100%;
   height: 520px;
@@ -41,8 +43,6 @@ body {
   top: 48px;
   right: 24.5px;
   gap: 5px;
-  /* för att ändra färg på de */
-  /* filter: invert(50%); */
 }
 
 .header-icons img {
@@ -79,7 +79,7 @@ h6 {
 
 /* intro section */
 .line {
-  border: 1px solid orangered;
+  border: 1px solid #5c6f73;
   width: 40px;
   display: inline-block;
   margin-bottom: 4px;
@@ -88,7 +88,7 @@ h6 {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: orangered;
+  background-color: #5c6f73;
   border-radius: 50%;
   display: inline-block;
 }
@@ -105,11 +105,11 @@ p {
   font-weight: 400;
   font-size: 17px;
   line-height: 29px;
-  /* margin: 0; */
+  color: black;
 }
 
 h3 {
-  background-color: red;
+  background-color: #313e40;
   display: inline-flex;
   color: white;
   line-height: 27px;
@@ -181,12 +181,12 @@ a {
 
 .tag-wrapper p {
   font-family: 'Roboto', sans-serif;
-  color: #2b2e34;
+  color: #313e40;
   font-weight: 400;
   font-size: 11px;
   line-height: 11px;
   letter-spacing: 1%;
-  background-color: #fddfe7;
+  background-color: #8fa1a6;
   text-decoration: none;
   padding: 4px;
   margin: 3px;
@@ -195,7 +195,7 @@ a {
 
 h5,
 h4 {
-  color: red;
+  color: #313e40;
   margin-bottom: 5px;
   margin-top: 5px;
 }
@@ -228,7 +228,7 @@ img {
 
 .date {
   font-family: 'Roboto', sans-serif;
-  color: red;
+  color: #313e40;
 }
 
 .thoughts-second {
@@ -243,13 +243,13 @@ img {
   font-size: 17px;
   line-height: 29px;
   color: black;
-  text-decoration: underline grey;
+  text-decoration: underline #8fa1a6;
 }
 
 .thoughts-link {
   font-weight: 700;
   color: black;
-  text-decoration: underline grey;
+  text-decoration: underline #8fa1a6;
   font-size: 17px;
   line-height: 29px;
   font-family: 'Roboto', sans-serif;
@@ -274,7 +274,7 @@ img {
 }
 
 .skills-head {
-  color: red;
+  color: #313e40;
 }
 
 ul {
@@ -286,18 +286,19 @@ ul {
 /* for more */
 .for-more-icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   filter: invert(50%);
 }
 
 .for-more-icons img {
   height: 60px;
   width: 60px;
+  margin-right: 20px;
 }
 
 /* footer */
 footer {
-  background-color: blue;
+  background-color: #5c6f73;
 }
 
 .contact-heading {
@@ -312,7 +313,7 @@ footer {
 
 .contact p,
 .contact-link {
-  color: white;
+  color: #d7d8d9;
   text-decoration: none;
   font-weight: 200;
   text-align: center;
@@ -378,7 +379,6 @@ a:hover {
   .tag-wrapper p {
     font-size: 15px;
   }
-
 }
 
 /* Desktop */
@@ -454,7 +454,7 @@ a:hover {
 
   .headlines h4 {
     font-size: 28px;
-    margin-top: 30px;
+    margin-top: 10%;
   }
 
   .card h5,
@@ -490,10 +490,6 @@ a:hover {
     display: block;
   }
 
-  .card-thoughts {
-    /* display: flex; */
-  }
-
   .thoughts-flex {
     display: flex;
     justify-content: space-evenly;
@@ -514,5 +510,6 @@ a:hover {
 
   .for-more-icons img {
     height: 80px;
-    width: 80px
+    width: 80px;
+  }
 }
