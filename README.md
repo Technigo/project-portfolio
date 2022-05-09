@@ -12,5 +12,6 @@ This was the most challenging project so far of boot camp. I will keep working o
 
 View it live
 
-https://marianneardin-portfolio.netlify.app/ 
+https://marianneardin.se
+
 
