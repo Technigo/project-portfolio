@@ -19,4 +19,4 @@ I have also added vanilla JavaScript manipulating the DOM and using the toggle m
 
 
 ## View it live
-Here's the link for viewing my portfolio: https://fatima-gamero-romero-portfolio.netlify.app
+Here's the link for viewing my portfolio: https://portfolio-fatima-gr.netlify.app/
