@@ -150,28 +150,30 @@ a:hover {
 
 /*----- OVERLAY -----*/
 
-.overlay-container {
-  position: relative;
-  /* display: flex;
-   flex-direction: column; */
-}
-
 .project-picture {
   /*object-fit: cover; */
   display: block;
   width: 100%;
 }
 
+a {
+  position: relative;
+}
+
 .overlay {
+  height: 100%;
+  width: 50%;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  /*width: 327px;
-    height: 212px; */
   transition: 0.5s ease;
   background: rgba(0, 0, 255, 0.356);
+}
+
+a:hover .overlay {
+  display: none;
 }
 
 .project-container:hover .overlay {
@@ -205,6 +207,7 @@ a:hover {
 .project-heading {
   font-weight: 700;
   color: blue;
+  text-align: center;
 }
 
 .project-text {
@@ -232,6 +235,11 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
+}
+
+a {
+  display: flex;
+  justify-content: center;
 }
 
 .tech-section-header,
@@ -493,12 +501,12 @@ footer p {
 
   /* ----- TABLET FEATURED SECTION ------*/
   .article-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .project-text {
-    width: 90vw;
+    width: 100%;
   }
 
   .article-wrapper {
