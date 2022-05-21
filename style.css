@@ -83,7 +83,8 @@ a:hover {
 }
 /* ------- FROM PRESENTATION AND DOWN ------ */
 .container {
-  min-width: 375px;
+  width: 90%;
+  margin: 0 auto;
 }
 /* -------- PRESENTATION SECTION --------*/
 .introduction-text {
@@ -114,7 +115,7 @@ a:hover {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 33px;
-  padding: 40px;
+  padding-top: 40px;
 }
 .tech-section-text {
   font-size: 17px;
@@ -127,11 +128,12 @@ a:hover {
 .project-picture {
   /*object-fit: cover; */
   display: block;
-  width: 327px;
+  width: 100%;
   height: 212px;
 }
 .overlay-container {
   position: relative;
+  width: 100%;
 }
 .overlay {
   /*height: 100%;
@@ -188,16 +190,24 @@ a:hover .overlay {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.wrapper-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 50%;
-  padding: 0 calc(25% - 266px);
+
+.project a {
+  width: 100%;
 }
+
+.wrapper-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  /* justify-content: space-between; */
+  /* width: 50%; */
+  /* padding: 0 calc(25% - 266px); */
+}
+
 a {
   display: flex;
   justify-content: center;
@@ -252,10 +262,7 @@ a {
 }
 .thoughts-section {
   text-align: center;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 40px;
 }
 .my-thoughts {
   margin: 40px;
@@ -371,20 +378,26 @@ a {
 .contact-info h3 {
   font-weight: 700;
 }
-footer {
-  height: 300px;
-}
+
 footer h3 {
   margin-bottom: 50px;
 }
 footer p {
   line-height: 35px;
 }
+
+.email {
+  color: black;
+}
 /* -----------------------*/
 /* ------- TABLET -------*/
 /* ----------------------*/
 
-@media (min-width: 667px) {
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
   /* ----- TABLET HEADER ----*/
   .header-text {
     position: absolute;
@@ -428,18 +441,11 @@ footer p {
   .project-text {
     width: 100%;
   }
-  .article-wrapper {
-    margin-left: 200px;
-  }
 
   .project-picture {
-    width: 280px;
     height: 180px;
   }
 
-  .article-wrapper {
-    margin-left: 100px;
-  }
   /*----- TABLET MY THOUGHTS -----*/
   .display-block {
     display: block;
@@ -462,6 +468,10 @@ footer p {
 /* ------ LAPTOP ------- */
 /*-----------------------*/
 @media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+
   /* ----- LAPTOP HEADER ------- */
   .header-text {
     position: absolute;
@@ -534,6 +544,11 @@ footer p {
     letter-spacing: 0.01em;
   }
   /* ------ LAPTOP FEATURED SECTION ------- */
+
+  .wrapper-container {
+    gap: 3rem;
+  }
+
   .tech-section-header,
   .featured-section-header,
   .other-projects-header,
@@ -559,7 +574,6 @@ footer p {
   }
   .project-picture {
     height: 306px;
-    width: 522px;
   }
   /* .overlay {
       height: 306px;
@@ -612,9 +626,6 @@ footer p {
     font-family: "Roboto";
   }
   .my-thoughts-picture {
-    /* width: 521px;
-      height: 354px; */
-
     height: 306px;
     width: 522px;
   }
@@ -639,6 +650,3 @@ footer p {
 }
 
 /* added styles */
-.project a {
-  width: 100%;
-}
