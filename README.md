@@ -1,6 +1,6 @@
 # portfolio
 
-have a look: https://stoic-heisenberg-075b7f.netlify.app/
+have a look: https://emmasprings-portfolio.netlify.app/
 
 
 This weeks project was not as relaxing as I thought. To follow a design is doeable but there are a lot to check and make sure you have the right things in the right place. However I dp like Figma that way.
