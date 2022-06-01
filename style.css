@@ -8,7 +8,6 @@
   --blue: #072bce;
   --pink: #fddfe7;
   --bluegrey: #4a6f7d;
-  /*this is dimgrey*/
   --gainsboro: #d8e5e7;
 }
 
@@ -39,8 +38,8 @@ a {
 }
 
 .container {
-  width: 375px;
   /*Lowest supported value for mobiles*/
+  width: 375px;
   margin: 0 auto;
   padding: 46px 24px;
 }
@@ -304,6 +303,7 @@ a {
 .thoughts-container {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 20px;
   margin-top: 30px;
 }
 
@@ -346,17 +346,25 @@ a {
 
 .all-skills-container {
   margin-top: 24px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 42px;
   font-size: 17px;
   line-height: 29px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 42px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 42px;
+  justify-content: space-around;
 }
 
 .all-skills-container h3 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: var(--bluegrey);
+}
+
+.all-skills-container>div {
+  flex: 1;
 }
 
 /* FOR MORE */
@@ -456,7 +464,7 @@ footer p {
   }
 
   .header-text {
-    margin-top: 100px;
+    margin-top: 50px;
     width: 422px;
     height: 339px;
   }
