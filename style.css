@@ -1,11 +1,15 @@
 :root {
     --clr-white: rgb(255, 255, 255);
     --clr-light-grey: rgb(244, 244, 244);
-    --clr-transparent-light-grey: rgba(244, 244, 244, 0.534);
+    --clr-transparent-light-grey: hsla(349, 20%, 73%, 0.1);
+    /* --clr-transparent-light-grey: rgba(244, 244, 244, 0.534); */
     --clr-transparent-black: rgba(0, 0, 0, 0.6);
-    --clr-primary: #7c2d33;
-    --clr-orange: rgb(201, 68, 47);
-    --clr-dark-blue: rgb(18, 46, 65);
+    /* --clr-primary: #7c2d33; */
+    --clr-orange: #c7abb0;
+    /* --clr-orange: rgb(201, 68, 47); */
+ 
+    --clr-primary: #143c4b;
+    --clr-dark-blue: #122e41;
     --clr-clr-dark-grey: rgb(59, 59, 59);
     --clr-medium-grey: rgbclr-(158, 157, 157);
 
@@ -61,6 +65,10 @@ section:nth-child(2n) {
     background-color: var(--clr-transparent-light-grey);
 }
 
+section:last-of-type {
+    background-color: var(--clr-primary);
+}
+
 header {
     position: relative;
     height: 50vh;
@@ -68,8 +76,22 @@ header {
     max-height: 30rem;
     background-size: cover;
     color: var(--clr-white);
-    background-image: url(./assets/klara-kulikova-kiLdjFm2y14-unsplash.jpg);
+    /* background-image: url(./assets/klara-kulikova-kiLdjFm2y14-unsplash.jpg); */
+    background-image: url(./assets/vojtech-bruzek-mCjA1I8SlS8-unsplash\ \(1\).jpg);
+    background-position-y: 40%;
+    background-position-x: 40%;
     width: 100%;
+    
+}
+
+.white-text {
+    color: var(--clr-white);
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    text-shadow: 3px 2px 5px #143c4b8e;
+    font-weight: 600;
 }
 
 .header-container {
@@ -85,6 +107,7 @@ header {
 .icon {
     width: 100%;
 }
+
 
 .container {
     width: 20em;
@@ -103,7 +126,8 @@ header {
     border: .24rem solid var(--clr-light-grey);
     border-radius: 50%;
     overflow: hidden;
-    background-image: url("./assets/profile-pic.jpg");
+    /* background-image: url("./assets/profile-pic.jpg"); */
+    background-image: url("./assets/BC96ADDB-13DD-475D-BB96-2D1A1A104E25_1_105_c.jpeg");
     background-size: contain;
     bottom: -1rem;
 }
@@ -245,7 +269,6 @@ img {
     line-height: 2.5rem;
 }
 
-
 @media (min-width: 768px) {
     .container {
         width: 30em;
@@ -291,7 +314,7 @@ img {
     }
 
     .project-overlay {
-        background-color: var(--clr-transparent-light-grey);
+        background-color: rgba(244, 244, 244, 0.534);
         transition: 0.5s ease;
     }
 
