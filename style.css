@@ -73,7 +73,7 @@ header {
     } 
 
     .profile-name{
-        width:220px;
+        width:fit-content;
         height:202px;
         margin-top: 121px;
         margin-left:24px;
@@ -105,9 +105,16 @@ header {
 
     /*PRESENTATION*/
 
+    .presentation-wrapper{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       text-align: center;
+        flex-wrap: wrap;
+    }
+
 .presentation-section{
-    display: flex;
-    flex-direction: row;
+    
     font-family: 'Montserrat', sans-serif;
     font-size:17px;
     line-height: 29px;;
@@ -354,4 +361,36 @@ h4{
 
 .footer-container{
     padding:30px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    h3{ 
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    
+    h1{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        margin-bottom: -20px;
+        margin-top: -10px;
+    }
+    
+    h2{
+
+        font-weight:700;
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+
+
+    .presentation-section {
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    
+    }
 }
