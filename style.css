@@ -5,11 +5,6 @@ body{
     margin:0;
 }
 
-/* section{
-    padding-left: 30px;
-    padding-right:30px;
-} */
-
 .section-header{
     font-family:'Montserrat', sans-serif;
     background-color: #FA382F;
@@ -74,7 +69,7 @@ header {
 
     .profile-name{
         width:fit-content;
-        height:202px;
+        height:fit-content;
         margin-top: 121px;
         margin-left:24px;
         color:white;
@@ -150,7 +145,7 @@ header {
 
     /*PROJECTS*/
 
-    .project-container{
+    .project-container,.project-container2{
         margin-top: 25px;
        display:flex;
        flex-wrap: wrap;
@@ -206,7 +201,7 @@ header {
             margin-block-end: 1rem; */
         }
       
-        .project-description{
+        .project-description,.project-description2{
           text-align: left;
           width: 327px;
           margin: 10px;
@@ -278,7 +273,7 @@ header {
     display: flex;
     display: column;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-evenly;
     font-family: 'Roboto', sans-serif;
     padding:10px;
     margin:10px;
@@ -363,6 +358,8 @@ h4{
     padding:30px;
 }
 
+/*MEDIA QUERIES - TABLET*/
+
 @media screen and (min-width: 600px) and (max-width: 1023px){
     h3{ 
         font-weight: 400;
@@ -385,12 +382,98 @@ h4{
         line-height: 40px;
     }
 
-
-
     .presentation-section {
     text-align: center;
     padding-left: 75px;
     padding-right: 75px;
     
     }
+}
+
+/*MEDIA QUERIES - DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+    header {
+            height: 400px;
+        }
+    .icon-set-1{
+        margin-top: 65px;
+        margin-right: 220px;
+        font-size: 26px;
+        }
+        .header-image{
+            width: 220px;
+            height: 220px;
+            top: 195px;
+            right: 25%;
+        } 
+        .profile-name{
+            margin-top: 30px;
+            margin-left: 20%;
+            width: 400px;
+        }
+        h3{ 
+            font-size: 22px;
+        }
+        h1{
+            font-size: 48px;
+        }
+        h2{
+            font-size: 35px;
+        }
+     
+        .presentation-section {
+            font-size: 18px;
+            line-height: 32px;
+            text-align: center;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        .section-header {
+            font-size: 28px;
+        }
+
+        .skillset {
+            font-size: 18px;
+            padding-left:20%;
+            padding-right:20%;
+        }
+        .heading-container {
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        .project-container {
+                margin-top: 50px;
+                margin-left: 15%;
+                margin-right: 15%;
+        }
+        .project-container2{
+            flex-direction: column;
+            margin-left:30%;
+        }
+        .project-description2{
+            width: fit-content;
+            font-size: 18px;
+        }
+        .single-header {
+            font-size: 26px;
+        }
+        .skill-box{
+       margin-left: 250px;
+       margin-right:250px;
+        }
+        .fa-brands{
+            font-size:40px;
+        }
+        b {
+            padding: 20px;
+            font-size: 15px;
+        }
+        .icon-container {
+            justify-content: space-around;
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+ 
 }
