@@ -172,7 +172,8 @@ section:nth-child(2n){
     width: 100%;
     display: inherit;
     object-fit: cover;
-    box-shadow: 8px 8px 4px #aaaaaa;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 .project-overlay{
     position: absolute;
@@ -220,10 +221,10 @@ section:nth-child(2n){
     font-size: 12px;
 }
 .language-text{
-    background-color: pink;
+    background-color: #fafafa;
     padding: 5px;
     margin-top: 10px;
-    box-shadow: 4px 4px 2px #aaaaaa;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .other-projects-title {
     background-color: transparent;
@@ -231,6 +232,18 @@ section:nth-child(2n){
 }
 .other-project{
     padding-bottom: 40px;
+}
+
+.github-link-div{
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: fit-content;
+}
+
+.small-github-icon{
+    width: 20px;
 }
 
 /*---section "skills" styles---*/
@@ -268,7 +281,7 @@ section:nth-child(2n){
 .logo-text{
     color: #000;
     font-size: 11px;
-    line-height: 13px;
+    line-height: 21px;
     font-weight: 700;
     text-align: center;
 }
@@ -279,8 +292,7 @@ footer{
 
 .footer-container{
     align-items: center;
-    padding-bottom: 100px;
-    padding-top: 60px;
+    padding: 60px 0 60px 0;
 }
 .footer-title{
     background-color: #072BCE;
@@ -302,11 +314,11 @@ footer{
         width: 700px;
     }
     /*---header styles---*/
-    .header{
+    /* .header{
         height: 681px;
-    }
+    } */
     .profile-image{
-        width: 333px;
+        width: 240px;
         bottom: -43px;
         border: #fff solid 4px;
     }
@@ -377,27 +389,29 @@ footer{
     }
     /*---section "for more" styles---*/
     .formore-container{
-        width: 600px;
+        width: 400px;
     }
     .logo-container{
         padding-bottom: 120px;
     }
     .formore-logo{
-        width: 120px;
+        width: 80px;
     }
     .logo-text{
         font-size: 18px;
     }
+    
 }
 
 /*---media queries (desktops)---*/
 @media screen and (min-width: 1200px){
     p{
-        font-size: 24px;
-        line-height: 48px;
+        font-size: 18px;
+        line-height: 33px;
+     
     }
     h2{
-        font-size: 48px;
+        font-size: 28px;
     }
     .line {
         margin-bottom: 6px;
@@ -417,8 +431,8 @@ footer{
         height: 300px;
     }
     .project-heading{
-        font-size: 25px;
-        line-height: 41px;
+        font-size: 21px;
+        line-height: 29px;
     }
     
      /*---section "for more" styles---*/
@@ -427,7 +441,7 @@ footer{
     }
     
     .formore-logo{
-        width: 140px;
+        width: 100px;
     }
     .logo-text{
         font-size: 25px;
@@ -435,4 +449,10 @@ footer{
     .footer-text{
         font-size: 24px;
     }
+
+    /* Footer styles */
+    .footer-container{
+        padding: 100px 0 100px 0;
+    }
 }
+
