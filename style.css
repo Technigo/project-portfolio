@@ -1,7 +1,7 @@
 /* Grundläggande funktioner */
 :root {
-    --main: #527132;
-    --secondary: #F4F4F4;
+    --main: #66BFBF;
+    --secondary: #FF0063;
     /* #73A347 */
 }
 
@@ -10,7 +10,7 @@ body {
 }
 
 .portfolio-section:nth-child(odd) {
-    background-color:#F4F4F4;
+    background-color:#EAF6F6;
 }
 .portfolio-section {
 
@@ -46,6 +46,14 @@ h1 {
 
 .greenText {
     color: var(--main);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.secondaryText {
+    color: var(--secondary);
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     margin-bottom: 0px;
@@ -126,10 +134,10 @@ h1 {
 
 
  
-.lime-grön {
+.textWithBackground {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    background-color: #C7F4B9;
+    background-color: var(--main);
     padding: 0px 10px;
     display: inline;
     line-height: 1.4;
@@ -137,31 +145,42 @@ h1 {
 
 /* Sections */
 
-.header-1 {
+.header {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./Pictures/IMG_3774.JPG');
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-.icons {
+ .header-icons {
     display: flex;
     justify-content: end;
     width: 100%;
-}
+    font-size: xx-large;
+    
+} 
+.header-icons a {
+    color: var(--secondary);
+   
+  }
 
-
-.fa, .fab, .fas {
-    margin-top: 40px;
-    padding: 10px;
-    margin-right: 5px;
-    /*
+.header-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--secondary) 1px;
     border-radius: 50%;
-    border:2px solid white;
-    */
-    color: white;
+    height: 60px;
+    width: 60px;
+    transition: background-color 0.4s;
+    margin: 10px;
 }
 
+.header-icons .header-circle:hover {
+    background-color: var(--secondary);
+    color: #fff;
+  }
+ 
 .header-text {
     margin-top: 70px;
     padding-bottom: 150px;
@@ -188,7 +207,6 @@ h1 {
     right: 20px;
     border: 3px solid white;
 }
-
 
 .line {
     border: 1px solid;
@@ -298,13 +316,13 @@ ul {
     transform: scale(1.1);
   }
 
-.more-grid .fa-github, .more-grid .fa-linkedin-in, .more-grid .fa-stack-overflow {
+ .more-grid .fa-github, .more-grid .fa-linkedin-in, .more-grid .fa-stack-overflow {
     color: var(--main);
     border: none;
     padding: 0px;
     font-size: 2.5em;
     margin-bottom: 0px;
-}
+} 
 
 .footer {
     background-color:var(--main);
@@ -348,12 +366,6 @@ Mobil -  */
     .container {
         width: 600px;
         margin:0 auto;
-    }
-    
-    .fa, .fab, .fas {
-        margin-top: 40px;
-        padding: 10px;
-        margin-right: 5px;
     }
 
     .project-1 {
