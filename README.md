@@ -11,5 +11,5 @@ I'm still not very sure about the accessibility testing, the biggest thing I und
 
 # Live Site
 
-https://elaine-bergstrom.netlify.app/
+https://elaine-bergstrom.com/
 
