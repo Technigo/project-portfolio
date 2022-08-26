@@ -278,11 +278,6 @@ p {
   text-align: left;
 }
 
-.about-me-section,
-.about {
-  color: #000000;
-}
-
 .line {
   border: 1px solid #66a2ff;
   width: 40px;
@@ -343,7 +338,8 @@ p {
 }
 
 .project-heading-container,
-.education-heading-container {
+.education-heading-container,
+.my-thoughts-heading-container {
   display: flex;
   justify-content: center;
 }
@@ -418,9 +414,11 @@ p {
   color: #ad5cc5;
 }
 
-.my-thoughts-heading-container {
-  display: flex;
+.thought-image-container {
+  max-width: 327px;
+  position: relative;
   justify-content: center;
+  align-items: center;
 }
 
 .skills-section {
@@ -481,8 +479,7 @@ p {
   padding: 6% 0;
 }
 
-.footer,
-a {
+.footer a {
   color: #ffffff;
 }
 
@@ -506,7 +503,8 @@ a {
     max-width: 327px;
   }
 
-  .all-projects-container {
+  .all-projects-container,
+  .all-thoughts-container {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -517,13 +515,6 @@ a {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
-    max-width: 1024px;
-  }
-
-  .all-thoughts-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
     max-width: 1024px;
   }
 }
