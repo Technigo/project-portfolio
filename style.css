@@ -24,9 +24,9 @@ p {
 }
 
 .container {
-  max-width: 1050px;
   width: 90%;
   margin: auto;
+  align-items: center;
 }
 
 .navbar {
@@ -205,11 +205,6 @@ p {
   width: 40px;
   height: 40px;
   margin: 0 3px;
-}
-
-.container {
-  width: 320px;
-  margin: 0 auto;
 }
 
 .header-text {
@@ -494,8 +489,16 @@ p {
 }
 
 @media (min-width: 768px) {
+  p {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
   .container {
-    width: 768px;
+    min-width: 768px;
     margin: 0 auto;
   }
 
@@ -513,18 +516,49 @@ p {
     max-width: 327px;
   }
 
-  .all-projects-container,
+  .all-projects-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-auto-flow: column;
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+  }
   .all-thoughts-container {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    max-width: 1024px;
+    gap: 4px;
+    justify-items: center;
   }
 
   .all-skills-container {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
-    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1920px) {
+  p {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-size: xx-large;
+  }
+
+  h3 {
+    font-size: xx-large;
+  }
+
+  li {
+    font-size: x-large;
+  }
+
+  .other-projects-container {
+    display: grid;
+    justify-content: center;
   }
 }
