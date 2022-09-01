@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
 }
 
 h3 {
@@ -24,6 +25,10 @@ h4 {
     margin: 0 auto;
 }
 
+section {
+    padding-bottom: 20px;
+}
+
 section:nth-child(2n) {
     background-color: #B7D3DF;
 }
@@ -39,7 +44,7 @@ section:nth-child(2n) {
     background-size: cover;
     position: relative;
     width: 100%;
-    height: 520px;
+    min-height: 520px;
 }
 
 .social-container {
@@ -66,7 +71,7 @@ section:nth-child(2n) {
     position: relative;
     top: 100px;
     line-height: 64px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .header-text h1 {
@@ -110,17 +115,17 @@ a {
     color: #000;
 }
 
-.featured-projects-section {
-    height: 850px;
-}
+/* .featured-projects-section {
+    height: 900px;
+} */
 
 .project {
     margin-bottom: 12px;
 }
 
-.project-heading {
+/* .project-heading {
     text-align: center;
-}
+} */
 
 .project-image {
     width: 375px;
@@ -134,7 +139,7 @@ a {
 .project-text-group {
     padding: 4px;
     letter-spacing: 1px;
-    text-align: center;
+    text-align: center; 
 }
 
 .tags {
@@ -150,9 +155,9 @@ a {
     margin: 4px 6px 4px 0;
 }
 
-.my-thoughts-section {
+/* .my-thoughts-section {
     height: 700px;
-}
+} */
 
 .my-thoughts-image {
     width: 375px;
@@ -182,7 +187,6 @@ a {
 .skills-groups h4 {
     font-size: 22px;
     margin-top: 16px;
-    /* color: #F5EDDC; */
     text-align: center;
     line-height: 48px;
 }
@@ -194,12 +198,12 @@ a {
 }
 
 .footer {
-    background-image: url('./assets/coffee.jpg');
-    background-position: center;
+    background-image: url('./assets/footer-coffee.jpg'); 
+    background-position: center; 
     background-repeat: no-repeat;
     position: relative;
-    width: 100%;
-    background-color: #D75281;
+    width: 100%; 
+    padding-bottom: 40px;
 }
 
 .footer-contact {
@@ -226,9 +230,9 @@ a {
     color: #F5EDDC;
 }
 
-.desktop-only {
+/* .desktop-only {
     visibility: hidden;
-}
+} */
 
 /* TABLET and DESKTOP */
 @media (min-width: 768px) {
@@ -242,46 +246,35 @@ a {
         margin: 4px;
     }
 
-    .header-image-credit {
-        font-size: 14px;
-    }
-
     .header-text h1 {
         font-size: 80px;
     }
 
     .intro-section {
         height: 220px;
-        font-size: 18px;
         line-height: 36px;
-    }
-
-    .title-tech {
-        font-size: 32px;
+        font-size: 18px;
     }
 
     h3 {
-        font-size: 40px;
-    }
-
-    .featured-projects-section {
-        height: 2350px;
+        font-size: 36px;
     }
 
     .project {
         display: flex;
         margin: 20px;
+        padding: 20px;
     }
 
     .project-text-group {
-        display: flex;
-        flex-direction: column;
+        display: flex; 
+        flex-direction: column; 
         justify-content: center;
         margin-left: 20px;
     }
 
     .project-image {
-        width: 500px;
+        width: 450px;
     }
 
    .my-thoughts-group {
@@ -304,7 +297,21 @@ a {
       display: flex;
   }
 
-      
-      
-  
+  .skills-groups h4 {
+      text-align: left;
+  }
+
+  .skills-groups {
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .skills-group {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .footer {
+      padding-bottom: 20px;
+  }
 }
