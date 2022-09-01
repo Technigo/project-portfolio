@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    min-height: 100vh;
 }
 
 h3 {
@@ -37,7 +36,8 @@ section:nth-child(2n) {
     background-color: #FFF;
 }
 
-.hero {
+/* Image credit: Dominik Schröder for Unsplash.com */
+.header {
     background-image: url('./assets/hero-image-clouds.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ section:nth-child(2n) {
     min-height: 520px;
 }
 
-.social-container {
+.social-icons-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -115,17 +115,9 @@ a {
     color: #000;
 }
 
-/* .featured-projects-section {
-    height: 900px;
-} */
-
 .project {
     margin-bottom: 12px;
 }
-
-/* .project-heading {
-    text-align: center;
-} */
 
 .project-image {
     width: 375px;
@@ -155,32 +147,7 @@ a {
     margin: 4px 6px 4px 0;
 }
 
-/* .my-thoughts-section {
-    height: 700px;
-} */
-
-.my-thoughts-image {
-    width: 375px;
-    height: 250px;
-    border-radius: 4px;
-}
-
-.my-thoughts-text p {
-    line-height: 32px;
-}
-
-.my-thoughts-text h4 {
-    line-height: 30px;
-    letter-spacing: 2px;
-}
-
-.my-thoughts-credit {
-    font-size: 12px;
-    text-align: end;
-    font-style: italic;
-}
-
-.title-skills {
+.skills-title {
     color: #DB6B97;
 }
 
@@ -230,17 +197,13 @@ a {
     color: #F5EDDC;
 }
 
-/* .desktop-only {
-    visibility: hidden;
-} */
-
-/* TABLET and DESKTOP */
+/* TABLET AND DESKTOP */
 @media (min-width: 768px) {
     .container {
         width: 768px;
     }
 
-    .social-container {
+    .social-icons-container {
         right: 60px;
     }
 
@@ -287,41 +250,21 @@ a {
         width: 450px;
     }
 
-   .my-thoughts-group {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 10px;
-   }
+    .skills-groups h4 {
+        text-align: left;
+    }
 
-   /* This makes all 'projects' and 'thoughts' show */
-   .desktop-only {
-       visibility: visible;
-   }
+    .skills-groups {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
-  .my-thoughts-text {
-       margin: 14px;
-       font-size: 12px;
-   }
+    .skills-group {
+        font-size: 14px;
+        text-align: left;
+    }
 
-  .my-thoughts-credit {
-      display: flex;
-  }
-
-  .skills-groups h4 {
-      text-align: left;
-  }
-
-  .skills-groups {
-      display: flex;
-      justify-content: space-evenly;
-  }
-
-  .skills-group {
-    font-size: 14px;
-    text-align: left;
-  }
-
-  .footer {
-      padding-bottom: 20px;
-  }
-}
+    .footer {
+        padding-bottom: 20px;
+    }
+}   
