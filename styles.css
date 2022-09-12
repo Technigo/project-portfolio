@@ -6,7 +6,7 @@
 }
 
 body {
-    max-width: 1280px;
+    /*max-width: 1280px;*/
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -20,28 +20,28 @@ body {
 
 .hero-icons {
     position: absolute;
-    right: 15%;
+    right: 10%;
     margin-top: 20px;
 }
 
 .hero-icons img{
-    height: 55px;
+    height: 50px;
 }
 
 .title {
     position: absolute;
-    top: 15%;
-    margin-left: 10%;
+    top: 20%;
+    left: 10%;
     color: white;
-    line-height: 65px;
+    line-height: 40px;
 }
 
 .title h3 {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .title h1 {
-    font-size: 50px;
+    font-size: 25px;
 }
 
 .light-text {
@@ -53,24 +53,195 @@ body {
     background-size: cover;
     border-radius: 50%;
     border: 4px solid white;
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     margin: 0;
     position: absolute;
-    bottom: 42%;
-    right: 15%;
+    bottom: 35%;
+    right: 10%;
 }
 
 .introduction{
     background-color: #FFEEEE;
-    height: 300px;
+    height: 400px;
     width: 100%;
-    padding: 5% 10%;
+    padding: 15% 10% 10% 10%;
 }
 
 .introduction p{
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
     line-height: 30px;
+    
 }
 
+.tech-section{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    gap: 40px;
+    margin: 5% 10% 5% 10%;
+    text-align: center;
+}
+
+.tech-title{
+    background-color: #054f7b;
+    color: white;
+    padding: 15px;
+}
+
+.featured-projects{
+    background-color: #FFEEEE;
+}
+
+
+
+/*for tablet*/
+@media (min-width: 668px) and (max-width: 1023px){
+    .hero-icons {
+        position: absolute;
+        right: 10%;
+        margin-top: 20px;
+    }
+
+    .hero-icons img{
+        height: 55px;
+    }
+    
+    .title {
+        position: absolute;
+        top: 20%;
+        margin-left: 10%;
+        left: 0;
+        color: white;
+        line-height: 50px;
+    }
+    
+    .title h3 {
+        font-size: 25px;
+    }
+    
+    .title h1 {
+        font-size: 40px;
+    }
+    
+    .light-text {
+        font-weight: 100;
+    }
+
+    .self-photo{
+        background-image: url(./Images/self-photo.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: 4px solid white;
+        width: 230px;
+        height: 230px;
+        margin: 0;
+        position: absolute;
+        bottom: 35%;
+        right: 10%;
+    }
+
+    .introduction{
+        background-color: #FFEEEE;
+        height: 100%;
+        width: 100%;
+        padding: 8% 10% ;
+    }
+    
+    .introduction p{
+        font-size: 16px;
+        text-align: justify;
+        line-height: 30px;
+    }
+
+    .tech-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5% 10% 5% 10%;
+        text-align: center;
+    }
+    
+    .tech-title{
+        background-color: #054f7b;
+        color: white;
+        padding: 15px;
+    }
+}
+
+/*For Desktop*/
+@media (min-width: 1024px){
+    .hero-icons {
+        position: absolute;
+        right: 10%;
+        margin-top: 30px;
+    }
+
+    .hero-icons img{
+        height: 65px;
+    }
+
+    .title {
+        position: absolute;
+        top: 20%;
+        margin-left: 10%;
+        left: 0;
+        color: white;
+        line-height: 65px;
+    }
+    
+    .title h3 {
+        font-size: 30px;
+    }
+    
+    .title h1 {
+        font-size: 50px;
+    }
+    
+    .light-text {
+        font-weight: 100;
+    }
+
+    .self-photo{
+        background-image: url(./Images/self-photo.png);
+        background-size: cover;
+        border-radius: 50%;
+        border: 4px solid white;
+        width: 250px;
+        height: 250px;
+        margin: 0;
+        position: absolute;
+        bottom: 35%;
+        right: 10%;
+    }
+
+    .introduction{
+        background-color: #FFEEEE;
+        width: 100%;
+        height: 100%;
+        padding: 8% 10%;
+    }
+    
+    .introduction p{
+        font-size: 18px;
+        text-align: justify;
+        line-height: 30px;
+    }
+
+    .tech-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35%;
+        margin: 5% 10% 5% 10%;
+        text-align: center;
+    }
+    
+    .tech-title{
+        background-color: #054f7b;
+        color: white;
+        padding: 15px;
+    }
+}
