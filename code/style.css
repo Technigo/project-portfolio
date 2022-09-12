@@ -97,20 +97,19 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 5px;
-    background: red;
 }
 
 
 
 .title {
-    border: solid 2px rgb(0, 33, 249);
     font-size: 22px;
     line-height: 122%;
     color: var(---main);
     background-color: var(---primary);
-    padding: 0 4px;
+    margin-top:30px;
     text-transform: uppercase;
     text-align: center;
+
 }
 
 
@@ -216,12 +215,12 @@ a {
 .project-overlay-title {
     color: var(---main);
     background-color: transparent;
-    font-size: 28px;
+    font-size: 34px;
+    line-height: 40px;
     position: absolute;
-    top: 45%;
+    top: 30%;
     left: 0;
-    bottom: 0;
-    right: 0;
+    margin: 20px;
     transition: 0.5s ease;   
     text-align: center; 
 }
@@ -251,8 +250,11 @@ a {
 .subtitle {
     background-color: transparent;
     color: var(---secondary);
-    margin-top: 80px;
-    font-size: 30px;
+    margin-top: 40px;
+    font-size: 26px;
+    font-style: bold;
+    line-height: 32px;
+    margin-bottom: -20px;
 }
 
 .other-projects-title {
@@ -272,10 +274,9 @@ a {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     line-height: 12px;
-    font-weight: 500;
     letter-spacing: 1.5px;
     padding: 3px 5px;
-    margin: 2px;
+    margin: 3px;
     color: var(---main);
     background-color: var(---primary);
 }
@@ -338,3 +339,65 @@ a {
     font-size: 20px;
 }
 
+/*--------------------*/
+@media screen and (min-width: 768px) {
+.container{
+    padding: 90px;
+}
+
+.responsive-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.project-image-group {
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+.project-overlay-title {
+    font-size: 36px;
+    margin: 20px;
+    line-height: 50px;
+}
+
+.project-text-group {
+    padding-left: 50px;
+}
+
+.featured-project-title {
+    font-size: 30px;
+
+}
+
+.project-description {
+    font-size: 20px;
+}
+
+.tag-box {
+    margin-top: 5px;
+    padding-left: 50px;
+}
+
+.other-projects {
+    padding-left: 25%;
+}
+
+.subtitle {
+    margin-top: 40px;
+    font-size: 46px;
+    margin-bottom: -70px;
+}
+
+.other-projects-title {
+    line-height: 132%;
+    color: var(---secondary)
+}
+
+.other-projects-description {
+    font-family: "Roboto", sans-serif;
+    line-height: 171%;
+    color: #000;
+}
+
+}
