@@ -1,0 +1,342 @@
+:root {
+    ---primary:  #444444;
+    ---secondary: #b53636;
+    ---main:#f0eae7;
+    ---highlight: #F75C03;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    background-color: var(---main);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+/*-----------------TOP SECTION--------------------*/
+.top-section {
+    background-color: #a19595;
+    background-size: cover;
+    height: 450px;
+    padding: 20px;
+}
+
+.top-section-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.top-section-links {
+    position: absolute;
+    display: flex;
+    top: 48px;
+    right: 25px;
+}
+
+.icon-picture {
+    width: 40px;
+    height: 40px;  
+    margin: 5px;
+}
+
+.top-section-text {
+    color: var(---main);
+    position: absolute;
+    width: 300px;
+    top: 121px;
+    left: 24px;
+}
+
+.portfolio {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.other-skills {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position:relative;
+    right: -160px;
+    bottom: -30px;
+    border: 4px solid #444444;
+}
+
+/*------------SUMMARY/ABOUT ME ----------------*/
+.summary{
+    background-color: #444444;
+    color:aliceblue;
+    text-align: center;
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+/* -----------CONTAINERS/TITLES-----------*/
+.feature-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    background: red;
+}
+
+.other-projects-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: blue;
+}
+
+.title {
+    border: solid 2px rgb(0, 33, 249);
+    font-size: 22px;
+    line-height: 122%;
+    color: var(---main);
+    background-color: var(---primary);
+    padding: 0 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/*--------------- TEXT STYLING ----------------*/
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0;
+}
+
+h2 {
+    display: table;
+    text-align: center;
+    color: var(---main);
+    background-color: var(---secondary);
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 4px 8px;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px auto 0 auto;
+    color: var(---secondary);
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+}
+
+.tech-stack {
+    background-color: #a46c6c;
+}
+
+p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*-------- TECH-STACK SECTION -----------*/
+.tech-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tech-stack-text {
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* -------- PROJECT SECTION ------- */
+.featured-section {
+    width: 100%;
+}
+
+.project {
+    margin-top: 30px;
+}
+
+.project-image-group {
+    position: relative;
+    margin-top: 32px;
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center,
+}
+
+.project-image {
+    width: 100%;
+    display: inherit;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease;
+}
+
+.project-overlay-title {
+    color: var(---main);
+    background-color: transparent;
+    font-size: 28px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s ease;   
+    text-align: center; 
+}
+
+.project-image-group:hover .project-overlay, .project-image-group:hover .project-overlay-title { 
+    background-color: transparent;
+    color: transparent;
+}
+
+.project-text-group {
+    margin-top: 7px auto;
+}
+
+.featured-project-title {
+    margin: 7px auto;
+    line-height: 171%;
+}
+
+.project-description {
+    font-family: "Roboto", sans-serif;
+}
+
+.other-projects {
+    margin-top: 40px;
+}
+
+.subtitle {
+    background-color: transparent;
+    color: var(---secondary);
+    margin-top: 80px;
+}
+
+.other-projects-title {
+    line-height: 132%;
+    color: var(---secondary)
+}
+
+.other-projects-description {
+    font-family: "Roboto", sans-serif;
+    line-height: 171%;
+    color: #000;
+}
+
+
+/*---------"TAG BOX" STYLE------------*/
+.tag {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding: 3px 5px;
+    margin: 2px;
+    color: var(---main);
+    background-color: var(---primary);
+}
+
+.tag-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+/*-------MY THOUGHTS/BLOG POSTS--------*/
+.blog-image {
+    width: 100%;
+    display: inherit;
+}
+
+.blog-image-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center,
+}
+
+.blog-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background: rgba(255, 0, 0, 0.3);
+    transition: 0.5s ease;
+}
+
+.blog-overlay-title {
+    color: var(---main);
+    background-color: transparent;
+    font-size: 28px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s ease;   
+    text-align: center; 
+    margin: 0 auto;
+}
+
+.blog-image-group:hover .blog-overlay, .blog-image-group:hover .blog-overlay-title{ 
+    background-color: transparent;
+    color: transparent;
+}
+
+.article-date{
+    color: blue;
+}
+.article-title {
+    font-size: 20px;
+}
+
