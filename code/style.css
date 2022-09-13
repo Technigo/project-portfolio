@@ -58,7 +58,7 @@ header{
 
 /* SUMMARY */
 .summary{
-    display: block;
+    
     background-color: #F4F4F4;
 }
 
@@ -68,7 +68,9 @@ header{
     text-align: left;
     font-size: 15px;
     line-height: 25px;
-    padding: 80px 350px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    max-width: 768px;
 }
 
 /* TECH */
@@ -98,39 +100,71 @@ header{
             margin: auto;
         }
         
+            .imageContainer{
+                position: relative;
+            }
+            
             .project__image img{
+                display: flex;
                 width: 350px;
                 height: auto;
             }
 
-            .project__title{
-                font-family: 'Roboto', sans-serif;
-                font-weight: 700;
-                text-transform: uppercase;
-                text-align: left;
-                font-size: 15px;
-                color: #FA382F;
-                padding-top: 20px;
-            }
-            
-            .project__description{
-                font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                text-align: left;
-                font-size: 15px;
-                line-height: 25px;
-                padding: 10px 0;
+            .imageContainer .after {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #072BCE50;
             }
 
-            .tags{
-                font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: 12px;
+            .imageContainer:hover .after {
+                display: block;
+                display: none;
+                color: #FFF;
             }
-            .tags span{
-                background-color: #FDDFE7;
-                padding: 3px 15px;
+
+            .after{
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 15px;
+                text-transform: uppercase;
+                text-align: center;
             }
+
+                .project__title{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-align: left;
+                    font-size: 15px;
+                    color: #FA382F;
+                    padding-top: 20px;
+                }
+                
+                .project__description{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    text-align: left;
+                    font-size: 15px;
+                    line-height: 25px;
+                    padding: 10px 0;
+                }
+
+                .tags{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+                .tags span{
+                    background-color: #FDDFE7;
+                    padding: 3px 15px;
+                }
 
 /* OTHER PROJECTS */
 .otherProjects{
