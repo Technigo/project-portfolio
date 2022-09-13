@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  margin: 0;
+  color: black;
+  width: 100%;
+}
+
+.main-header {
+  background-image: url(./assets/background-img.jpg);
+  position: relative;
+  height: 520px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5vh;
+  margin-top: 55px;
+  gap: 8px;
+}
+
+.nav-links {
+  border-radius: 50%;
+  border: solid white 2px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.2s;
+  position: relative;
+}
+
+.nav-links:hover {
+  transform: translate(-50%, -50%);
+}
+
+.nav-icons {
+  width: 30px;
+  height: 30px;
+  /* margin-top: 25%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-icons:hover {
+  transform: scale(1.1);
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 220px;
+  height: 202px;
+  left: 33px;
+  top: 118px;
+  color: white;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*tycker inte texten är lika fet som exemplet....*/
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  display: block;
+  line-height: 18px;
+}
+
+.profile-img {
+  /* Positioning */
+  position: absolute;
+
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: 171px;
+  top: 356px;
+
+  /*  Rounded corners */
+  border-radius: 50%;
+
+  /* An outline on the circle */
+  border: 2px solid whitesmoke;
+
+  /* Makes sure nothing sticks out of the circle */
+  overflow: hidden;
+}
+
+.profile-img > img {
+  width: 100%;
+}
+
+.intro-section {
+  position: absolute;
+  width: 327px;
+  height: 232px;
+  left: 24px;
+  top: 569px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  /* or 171% */
+
+  color: #000000;
+}
