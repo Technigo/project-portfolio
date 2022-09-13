@@ -1,9 +1,128 @@
-.header{
-    position: absolute;
-width: 375px;
-height: 520px;
-left: 0px;
-top: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&&display=swap');
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 
-background: url(backimgbasic.jpg);
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex-parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 520px;
+    left: 0px;
+    top: 0px;
+
+    background: url(./images/backimgbasicbrushsmall2.jpg) no-repeat;
+}
+
+.header:hover {
+    background: url(./images/backimgbasicbrushcolorsmall.jpg) no-repeat;
+    
+}
+
+.header:hover a img {
+    background: url(./images/backimgbasicbrushcolorsmall.jpg) no-repeat;
+    color: #54BAB9;
+    background: transparent;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    right: 8%;
+    top: 8%;
+    background: transparent;
+}
+
+.header-links a img {
+    height: 50px;
+}
+
+
+.header-aboutme {
+    position: absolute;
+    left: 6%;
+    top: 25%;
+    background: transparent;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    color: white;
+}
+
+.portfolio-text {
+    font-weight: 300;
+    font-size: 22px;
+    font-family: 'Roboto';
+    line-height: 18px;
+    letter-spacing: 4%;
+}
+
+.header-aboutme h3 {
+    font-size: 22px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 4%;
+}
+
+.header-aboutme h1 {
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.header-aboutme h2 {
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.header-selfie {
+    background-image: url(./images/profileimg.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 240px;
+    height: 240px;
+    margin: 0;
+    position: absolute;
+    bottom: 22%;
+    right: 6%;
+}
+
+.introduction {
+    width: 100%;
+    height: 350px;
+    padding: 15% 10% 10% 10%;
+} 
+
+.intro-img {
+    height: 11px;
+    width: 55px;
+    left: 24px;
+}
+
+.introduction p {
+    font-family: 'Montserrat';
+    font-style: regular;
+    font-size: 22px;
+    line-height: 29px;
 }
