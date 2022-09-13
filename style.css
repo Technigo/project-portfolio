@@ -2,88 +2,70 @@ body {
     margin: 0px;
 }
 
-.body-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+a {
+    cursor: pointer;
 }
 
+/*Styling header*/
 header {
     background-image: url("./pexels-madison-inouye-1831234.jpg");
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 200px 200px;
     color: white;
+    height: 55vh;
 }
 
     .headline-container {
-        left: 24px;
-        top: 121px;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 13px;
         line-height: 18px;
-        /* or 138% */
         letter-spacing: 0.04em;
         color: #FFFFFF;
 
         grid-column: 1 / 2;
         padding-left: 20px;
-        align-self: center;
     }
 
     .social-media-header-container {
-        width: 130.5px;
-        height: 40px;
-        left: 220px;
-        top: 48px;
-        background-color: white;
-        color: lightgray;
-        
         grid-column: 2 / 3;
         justify-self: center;
         align-self: center;
     }
 
     .profile-pic {
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-        justify-self: end;
-        align-self: end;
-        padding-right: 30px;
-        margin-bottom: -20px;
-    }
-
-        .profile-pic img {
-            height: 180px;
-            width: 180px;
+            width: 160px;
             border-radius: 50%;
+            border: solid 2px white;
+            position: absolute;
+            right: 10%; 
+            top: 33vh;
         }
 
+/*Styling intro-section*/
 .intro-section {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 29px; 
-    padding: 24px;
+    padding: 45px 24px 35px 24px;
+    background-color: #F4F4F4;
 }
 
+/*Styling tech-section*/
 .tech-section {
-    display: flex;
-    flex-direction: column;
-    width: 327px;
-    height: 147px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 29px;
-    /* or 171% */
+    padding: 35px 24px 35px 24px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-
     .white-red-h1 {
         font-family: 'Montserrat';
         font-style: normal;
@@ -92,28 +74,98 @@ header {
         line-height: 27px;
         color: white;
         background:red;
+        align-self: center;
+        padding: 1px;
+        margin-bottom: 10px;
     }
 
+/*Styling feature-project-section*/
 .featured-projects {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
     .project-section {
-        display: flex;
-        gap: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+  
     }
     .project {
-        background-color: blue;
+        display: grid;
+        grid-template-columns: 1 fr;
+        padding: 24px;
+
+        font-family: 'Montserrat';
+
     }
 
+        .feature-img {
+            width: 100%;
+        }
+
+        .red-h3 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 29px;
+            letter-spacing: 0.01em;
+            color: #FA382F;
+            padding: 10px 0px 15px 0px; 
+        }
+
+        .tags-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+        .tags {
+            background-color:#FDDFE7;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 11px;
+            padding: 6px; 
+        }
+
+    .three {
+        display: none;
+    }
+
+    .four {
+        display: none;
+    }
+   
+/*Styling other-projects-section*/
 .other-projects {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
-.small-project {
-    width: 500px; 
-    height: 100px;
-    background-color: blue;
 
+.small-project {
+    background-color: blue;
 }
+
+/*Styling footer*/
+footer {
+    background: #072BCE;
+    height: 300px;
+}
+
+
+/*Media queries*/
+
+/*Desktop/*
+
+/*Featured projects*/
+.three {
+    display: none;
+}
+
+.four {
+    display: none;
+}
+
