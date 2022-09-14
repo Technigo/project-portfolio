@@ -6,6 +6,14 @@ a {
     cursor: pointer;
 }
 
+p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px; 
+}
+
 /*Styling header*/
 header {
     background-image: url("./pexels-madison-inouye-1831234.jpg");
@@ -40,7 +48,7 @@ header {
             border: solid 2px white;
             position: absolute;
             right: 10%; 
-            top: 33vh;
+            top: 35vh;
         }
 
 /*Styling intro-section*/
@@ -50,7 +58,7 @@ header {
     font-weight: 400;
     font-size: 17px;
     line-height: 29px; 
-    padding: 45px 24px 35px 24px;
+    padding: 7vh 6vw 6vh 6vw;
     background-color: #F4F4F4;
 }
 
@@ -61,12 +69,12 @@ header {
     font-weight: 400;
     font-size: 17px;
     line-height: 29px;
-    padding: 35px 24px 35px 24px;
+    padding: 7vh 6vw 6vh 6vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-    .white-red-h1 {
+    .white-red-h2 {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
@@ -84,24 +92,18 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F4F4F4;
+    padding: 7vh 6vw 6vh 6vw;
 }
-    .project-section {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-  
-    }
+
     .project {
         display: grid;
         grid-template-columns: 1 fr;
-        padding: 24px;
-
-        font-family: 'Montserrat';
-
     }
 
         .feature-img {
             width: 100%;
+            filter: contrast(50%);
         }
 
         .red-h3 {
@@ -112,13 +114,13 @@ header {
             line-height: 29px;
             letter-spacing: 0.01em;
             color: #FA382F;
-            padding: 10px 0px 15px 0px; 
+            padding: 2vh 0px 1px 0px; 
         }
 
         .tags-div {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            gap: 2vw;
             padding: 20px;
         }
         .tags {
@@ -143,17 +145,120 @@ header {
 .other-projects {
     display: flex;
     flex-direction: column;
+    background-color: #F4F4F4;
+    padding: 7vh 6vw 6vh 6vw;
 }
 
-.small-project {
-    background-color: blue;
+    .small-project {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        }
+
+/*Styling my-thoughts-section*/
+.thoughts-about-code {
+    display: flex; 
+    flex-direction: column;
+    padding: 7vh 6vw 6vh 6vw;
+}
+
+    .blogg-post {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+        .date {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 41px;
+            color: #FA382F;
+        }
+
+        .blog-headline {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 30px;
+        }
+
+        .blog-p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 32px;
+        }
+
+/*Styling skills*/
+.skills {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4F4;
+    padding: 7vh 6vw 6vh 6vw;
+}
+
+    .skill-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2vh;
+    }
+
+        .skill-header {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 29px;
+            color: #FA382F;
+        }
+
+    li {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 29px; 
+    }
+
+/*Styling For-more-section*/
+.for-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7vh 6vw 6vh 6vw;
+
+}
+.social-media-container-for-more {
+    width: 30vw; 
+    height: 8vh; 
+    background-color: #FDDFE7;
 }
 
 /*Styling footer*/
 footer {
     background: #072BCE;
-    height: 300px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    padding-top: 20vh; 
 }
+    .contact-container {
+        color: white;
+    }
+
+        .contact-header {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 25px;
+            margin-bottom: 5vh;
+        }
 
 
 /*Media queries*/
