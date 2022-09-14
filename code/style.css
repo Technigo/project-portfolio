@@ -2,56 +2,122 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 100%;
 
-  --header-font: 'Montserrat', sans-serif;
-  --text-font: 'Roboto', sans-serif;
+  --main-font: 'Montserrat', sans-serif;
+  ---sub-font: 'Roboto', sans-serif;
 }
 
 body {
   background-color: whitesmoke;
+  font-family: var(--main-font);
 }
 
-header {
-  background: repeating-linear-gradient(
-    45deg,
-    blue,
-    blue 25px,
-    midnightblue 0px,
-    midnightblue 50px
-  );
+/* TOP SECTION */
 
+.top-section {
+  display: flex;
   position: relative;
-  background-color: pink;
-  color: white;
-  height: 35vh;
+  background-color: rgb(0, 38, 8);
+  width: 100%;
+  min-height: 35%;
 }
 
-.main-headings {
-  position: absolute;
-  margin: 5.6rem 0 0 2rem;
+.top-headings {
+  color: white;
+  margin: 7.5rem 0 8.6rem 1.5rem;
 }
 
 .name-heading {
-  font-family: var(--text-font);
-  font-size: 1rem;
+  font-family: var(---sub-font);
+  letter-spacing: 0.5px;
+  padding-bottom: 0.5rem;
+}
+
+.title-heading-1 {
+  font-family: var(---main-font);
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 0.4rem;
+}
+
+.title-heading-2 {
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
-.title-heading {
-  font-family: var(--header-font);
-  font-size: 2rem;
-  letter-spacing: 2px;
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 10rem;
 }
 
-.profile-img {
-  position: absolute;
-  right: 10%;
-  bottom: -5%;
+.social-icons,
+img {
+  height: auto;
+  width: 45px;
+}
 
+.profile-pic {
+  position: absolute;
+  right: 1.5rem;
+  bottom: -2.5rem;
   border: 2px solid white;
   border-radius: 50%;
-
-  width: 30%;
+  width: 145px;
   height: auto;
+}
+
+/* SUMMARY SECTION */
+
+.summary-section {
+  background-color: lightgrey;
+  padding: 4rem 0 2rem 0;
+}
+
+.line {
+  border: 1px solid darkorange;
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: darkorange;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.section-text {
+  margin: 0 auto;
+  width: 70%;
+  line-height: 25px;
+}
+
+/* TECH SECTION */
+
+.tech-section {
+  background-color: white;
+  text-align: center;
+}
+
+.section-heading {
+  background-color: darkorange;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.2rem 0.3rem;
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+/* FEATURED PROJECTS SECTION */
+
+.projects-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
