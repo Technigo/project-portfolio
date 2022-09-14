@@ -54,6 +54,14 @@ a:hover {
     background-size: 100%;
 }
 
+.links-bottom {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 7%;
+    right: 10%;
+}
+
 .hero-header {
     padding: 10% 7% 10% 7%;
 }
@@ -127,25 +135,24 @@ a:hover {
 
 /* FEATURED PROJECTS */
 .featured-projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background-color: rgb(253, 248, 240);
     padding: 5%;
     padding-top: 10%;
 }
 
 .featured-projects a {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 8%;
 }
 
 .featured-projects img {
+    opacity: 1.0;
     width: 90%;
     padding: 8% 0%;
-}
+} 
 
 .title {
     font-size: 13px;
@@ -153,8 +160,11 @@ a:hover {
     font-family: 'Roboto', sans-serif; 
 }
 
-.featured-projects p {
+h4 {
     text-align: left;
+}
+
+.featured-projects p {
     color: black;
     font-size: 13px;
     line-height: 25px;
@@ -162,6 +172,28 @@ a:hover {
     margin-inline-end: 10px;
     font-family: 'Roboto', sans-serif; 
 }
+
+.box-text {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    left: 8px;
+    bottom: 10px;
+}
+
+h6 { 
+    font-size: 6px;
+    font-family: 'Roboto', sans-serif; 
+    padding: 2%;
+}
+
+.box-text mark {
+    color: black;
+    background:  #cee663;
+    border: 3px solid #cee663;
+}
+
 
 /* MY THOUGHTS */
 
@@ -215,5 +247,19 @@ footer p {
 }
 
 /* TABLET */
+@media (min-width: 668px) and (max-width:1024px) {
+
+}    
 
 /* DESKTOP */
+@media (min-width: 1025px) {
+
+.featured-projects img {
+    opacity: 0.5;
+    width: 90%;
+    padding: 8% 0%;
+}
+.featured-projects img:hover {
+    opacity: 1.0;
+}  
+}
