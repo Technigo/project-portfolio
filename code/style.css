@@ -5,10 +5,14 @@
 
   --main-font: 'Montserrat', sans-serif;
   ---sub-font: 'Roboto', sans-serif;
+
+  --bg-color: #f4f4f4;
+  --main-color: rgb(0, 54, 31);
+  --sub-color: rgb(241, 100, 0);
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: white;
   font-family: var(--main-font);
 }
 
@@ -17,7 +21,7 @@ body {
 .top-section {
   display: flex;
   position: relative;
-  background-color: rgb(0, 38, 8);
+  background-color: var(--main-color);
   width: 100%;
   min-height: 35%;
 }
@@ -72,12 +76,12 @@ img {
 /* SUMMARY SECTION */
 
 .summary-section {
-  background-color: lightgrey;
-  padding: 4rem 0 2rem 0;
+  background-color: var(--bg-color);
+  padding: 4rem 0 3rem;
 }
 
 .line {
-  border: 1px solid darkorange;
+  border: 1px solid var(--sub-color);
   width: 40px;
   display: inline-block;
   margin-bottom: 4px;
@@ -86,14 +90,14 @@ img {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: darkorange;
+  background-color: var(--sub-color);
   border-radius: 50%;
   display: inline-block;
 }
 
 .section-text {
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
   line-height: 25px;
 }
 
@@ -102,22 +106,87 @@ img {
 .tech-section {
   background-color: white;
   text-align: center;
+  padding: 2rem 0;
 }
 
 .section-heading {
-  background-color: darkorange;
+  background-color: var(--sub-color);
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 0.2rem 0.3rem;
+  margin: 0 auto;
+  padding: 0.2rem 0.4rem;
   width: fit-content;
-  margin: 1rem auto;
 }
 
 /* FEATURED PROJECTS SECTION */
 
 .projects-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 0;
 }
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  width: 90%;
+}
+
+/* .proj-img-container {
+  position: relative;
+}
+
+ .overlay-text {
+  position: absolute;
+  color: white;
+  background-color: var(--main-color);
+  font-family: var(--main-font);
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  z-index: 1000;
+} */
+
+.project-img {
+  width: 100%;
+  margin-bottom: 0.4rem;
+}
+
+.project-heading {
+  color: rgb(0, 38, 8);
+  font-family: var(---sub-font);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.project-text {
+  line-height: 25px;
+}
+
+.label-container {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.label {
+  background-color: var(--sub-color);
+  color: white;
+  font-family: var(---sub-font);
+  width: fit-content;
+  padding: 0.2rem 0.3rem;
+}
+
+.view-live-btn {
+  display: inline;
+  padding: 0.3rem;
+  width: fit-content;
+}
+
+/* MEDIA QUERIES */
