@@ -2,21 +2,22 @@
 
 body {
   margin: 0;
+  width: 100%;
 }
 
 /* HEADER */
 .header-wrapper {
   display: flex;
   flex-direction: column;
+  width: 100%;
   height: 500px;
-  font-family: 'Roboto', sans-serif;
+
   align-items: flex-start;
   justify-content: center;
   position: relative;
 }
 
 .hero-image {
-  /* Position to fill the entire header */
   position: absolute;
   top: 0;
   left: 0;
@@ -34,8 +35,7 @@ body {
 }
 
 .hero-image > img {
-  width: 100%;
-  
+  width: 100%;  
 }
 
 .social-links-header {
@@ -44,9 +44,8 @@ body {
   position: absolute;
   width: 135px;
   height: 40px;
-  left: 60%;
-  top: 48px;
-
+  right: 20%;
+  top: 10%;
 }
 
 .social-links-header img {
@@ -98,8 +97,8 @@ body {
 .profile-image {
   /* Positioning */
   position: absolute;
-  left: 171px;
-  top: 356px;
+  right: 10vw;
+  top: 68%;
 
   width: 180px;
   height: 180px;
@@ -151,11 +150,8 @@ body {
 }
 
 .section-titles {
-  width: auto;
-  height: auto;
-
   margin-top: 40px;
-  margin-bottom: 24px;
+  margin-bottom: 0;
   padding: 0 5px 0 5px;
   
   font-family: 'Montserrat';
@@ -173,7 +169,7 @@ body {
   width: 327px;
   height: auto;
   margin: 0;
-
+  margin-bottom: 40px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -185,65 +181,128 @@ body {
   color: #000000;
 }
 
-/* FEATURED PROJECTS */
+/* FEATURED PROJECTS & OTHER PROJECTS*/
 
-.featured-projects {
+.featured-projects-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  background: #F4F4F4;
+
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  position: relative;
+  width: 100%;
+  align-items: center;
+  margin: 40px 8vw;
+  margin-bottom: 0;
 }
 
-.hero-card {
-  /* Position to fill the entire header */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.hero-card { 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
   object-fit: cover;
-
-  /* This should change based on your design */
-  height: 500px;
-
-  /* Make sure the image is behind other content */
-  z-index: -1;
-
-  /* Dims the image so the text is readable */
-  /* filter: brightness(75%); */
+  align-items: center;
+  margin: 0 8vw;   
 }
 
 .hero-card > img {
+  filter: brightness(65%);
   width: 100%;
-  
+  height: 30vh;
+  margin-left: 8vw;
+  margin-right: 8vw;  
 }
 
-.project-card-info {
-  display: flex;
-  
+.centered {
+  position: absolute;
+  top: 44%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin: 0;
+  color: #FFFFFF;
 }
+
 .project-title {
-
+  margin: 2vh 8vw;
+  margin-bottom: 0;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 29px;
-  text-align: center;
     
-  
   color: #FA382F;
 }
+
+.project-paragraph-style {
+  
+  margin: 0 8vw;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  /* or 171% */
+
+  color: #000000;
+}
+
+.other-projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #F4F4F4;  
+}
+
+.other-projects-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.second-section-titles{
+  margin-bottom: 20px;
+    
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+    
+  color: #FA382F;
+}
+
+/* MY THOUGHTS */
+
+.my-thoughts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #ffffff;
+  
+}
+
+
+
 
 /* TAGS */
 
 .tag-wrapper {
   display: flex;
+  margin: 1vh 8vw;
 }
 
 .tag-wrapper p {
