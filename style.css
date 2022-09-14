@@ -1,20 +1,74 @@
+/* ------------------mobile-phone------------------------ */
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 .main-header {
   /* parent */
-  width: 100vw;
-  height: 50vh;
+  width: 100vw; /* SUPERCOOL WITH VW viewportwidth works with % */
+  height: 50vh; /* SUPERCOOL WITH VW viewportheight works with % */
   background-color: tomato;
   position: relative;
 }
 
-.paragrapht {
+.logos {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+.paragraph {
   width: 100px;
 }
 
 .profile-image {
   /* child */
   position: absolute;
-  right: 25%;
-  bottom: -20%;
+  right: 10%;
+  bottom: -10%;
   border: 2px solid white;
   border-radius: 50%;
+  height: 140px;
+  width: 140px;
+}
+
+/* ------------------tablet section---------------------- */
+@media (min-width: 667px) and (max-width: 1024px) {
+  .logos {
+    right: 20%;
+  }
+
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .profile-image {
+    right: 20%;
+    height: 220px;
+    width: 220px;
+  }
+}
+
+/* ------------------computer section---------------------*/
+@media (min-width: 1025px) {
+  .logos {
+    right: 20%;
+  }
+
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .profile-image {
+    right: 20%;
+    height: 180px;
+    width: 180px;
+  }
 }
