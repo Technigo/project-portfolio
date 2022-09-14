@@ -150,7 +150,7 @@ a:hover {
 
 .featured-projects img {
     opacity: 1.0;
-    width: 90%;
+    width: 300px;
     padding: 8% 0%;
 } 
 
@@ -286,12 +286,127 @@ footer p {
 /* DESKTOP */
 @media (min-width: 1025px) {
 
-.featured-projects img {
-    opacity: 0.5;
-    width: 90%;
-    padding: 8% 0%;
-}
-.featured-projects img:hover {
-    opacity: 1.0;
-}  
+    .main-header {
+        font-size: 25px;
+        padding: 2%;
+    }
+    
+    .main-header mark {
+        color: white;
+        background: #e9722d;
+        border: 4px solid #e9722d;
+    }
+    
+    .second-header {
+        color: #e9722d;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding: 5%;
+    }
+
+    /* HERO */
+    .hero {
+        position: relative;
+        height: 500px;
+        background: url(Images/pexels-tara-winstead-flipped-slim.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .links-bottom {
+        position: absolute;
+        width: 10%;
+        height: auto;
+        top: 7%;
+        right: 5%;
+    }
+    
+    .hero h1 {
+        color: #FFFFFF;
+        font-size: 58px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .hero h2 {
+        color: #FFFFFF;
+        font-size: 35px;
+        line-height: 50px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .hero h3 {
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 25px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .profile-picture {
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        width: 10%;
+        height: auto;
+        position: absolute;
+        right: 80%;
+        bottom: -5%;
+    }
+
+    /* INTRO */
+    .intro {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
+
+    .intro p {
+        width: 70%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    /* TECH */
+    .tech {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .tech p {
+        font-size: 18px;
+        line-height: 30px;
+        width: 50%;
+    }
+
+    /* FEATURED PROJECTS */
+
+    .featured-projects img {
+        opacity: 0.5;
+    }
+
+    .featured-projects img:hover {
+        opacity: 1.0;
+    }      
+    
+    .projects-grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+    }
+
+    .guess-who {
+        grid-column-start: 1;
+        width: 60%;
+        justify-self: center;
+    }
+    .the-weather-app {
+        grid-column-start: 2;
+        width: 60%;
+        justify-self: center;
+    }
+
+
 }
