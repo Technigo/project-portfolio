@@ -61,7 +61,7 @@ header{
 .headings{
     position: absolute;
     bottom: 80px;
-    left: 250px;
+    margin-left: 200px;
     color: white;
 }
 
@@ -363,6 +363,36 @@ footer{
 /* MEDIA QUERIES FOR MOBILES */
 @media (max-width: 767.98px){
 
+/* HEADER */
+header{
+    position: relative;
+    background-image: url('../images/header-image.jpg');
+    background-position: bottom left;
+    background-size: cover;
+    height: 500px;
+    text-align: left;
+}
+
+.headings{
+    position: absolute;
+    bottom: 250px;
+    margin-left: 20px;
+    color: white;
+}
+
+.profileImage{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    right: 5%;
+    bottom: -7%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    float: right;
+    margin-top: 80px;
+}
+
 /* FEATURED PROJECTS */
     .project__grid{
         display: grid;
@@ -370,21 +400,35 @@ footer{
         justify-content: center;
         align-content: center;
         gap: 30px;
-        margin: 50px 250px;
+        margin: 50px 50px 0 50px;
     }
 
         .item3, .item4{
             display: none;
         }
 
+    /* OTHER PROJECTS */
+    .otherProjects__container{
+        margin: 20px 350px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 50px 10px 50px; 
+    }
+
 /* MY THOUGHTS */
+.myThoughts{
+    display: block;
+    background-color: white;
+    padding: 5px 0 10px 0;
+}
+
 .thoughts__grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
     justify-content: center;
     align-content: center;
     gap: 30px;
-    margin: 50px 250px;
+    margin: 50px 50px;
 }
     .thought__item2{
         display: none;
