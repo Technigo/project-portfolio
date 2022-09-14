@@ -5,30 +5,40 @@ font-family: "Montserrat", "Roboto";
 
 .hero-image {
     /* background-color: red; */
-    width: 100 vw;
-    height: 50vh;
+    /* width: 100 vw; */
+    height: auto;
+    border: solid red 2px; 
+    height: 70vh;/* ändra till 65% i desktop */
     position: relative;
-    background-image: url("./images/production\ ID_3864185.mp4");
+    background-image: url("./images/Citron.jpg");
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
   } 
 
 .profile-image {
+width: 150px; /* ta bort i media desktop */
 position: absolute;
-right: 15%;
+right: 10%; /* ändra till 15% i desktop */
 bottom: -10%;
 border-radius: 50%;
 border: 2px solid white;
 }
- 
+
+.icons {
+width: 7em;
+position: absolute;
+right: 10%; /* ändra till 15% i desktop */
+top: 7%;
+}
+
 .hero-text {
 font-family: "Roboto";
 /* text-align: center; */
 position: absolute;
-top: 30%;
+top: 20%; /* ändra till 30% i desktop */
 left: 20%;
-width: 40%;
+width: 70%;  /* ändra till 40% i desktop */
 color: white;
 /* transform: translate(-50%, -50%); */
 
@@ -36,18 +46,19 @@ color: white;
 
 h1{
  font-family: "Montserrat";
-font-size: 50px;
+font-size: 42px;
 font-weight: bolder;
 padding: 5px;
 }
 
 h2{
     font-family: "Montserrat";
-    font-size: 28px;
-    font-weight: bolder;
+    font-size: 30px;
+    /* font-weight: bolder; */
 }
+
 p {
-padding: 0 0 20px 0; 
+padding: 0 0 10px 0; 
 }
 
 b {
@@ -55,51 +66,268 @@ b {
 }
 
 .presentation {
-    background-color: #f4f4f4;
+    border: solid red 2px; 
+    background-color: #f5f2e3;
     width: 100 vw;
-    height: 25vh;
+    height: auto; /* ändra till 25% i desktop */
     
 }
 
 .presentation-text {
-    position: absolute; 
-    margin: 35px;
-    margin-left: 25%;
-    width: 50%;
-    line-height: 30px;
+    /* position: absolute;  */
+    /* width: 50%; lägg till i desktop */
+    line-height: 30px; 
+    font-size: 16px;
+    text-align: center;
+    margin: 45px 10px 0 10px;
 
 }
 
+.start-image {
+    width: 3em
+}
 
 .tech {
+    height: auto;
+    border: solid red 2px; 
+    background-color: #f6f5f0;
     width: 100 vw;
-    height: 35vh;
-   
+    /* height: 35vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
 }
+
+h3 {
+    display: flex;
+    /* font-weight: bolder; */
+    background-color:  #ba4622;
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 22px;
+    margin: 20px; 
+  
+   }
+   .tech-text {
+    display: flex;
+      line-height: 30px; 
+    font-size: 16px;
+    text-align: center;
+    /* margin: auto 10px auto 10px; */
+   }
+
 
 .projects {
-    background-color: #F4F4F4;
+    border: solid red 2px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ede8d4;
+    /* border: solid red 2px;  */
     width: 100 vw;
-    height: 150vh;
+    height: auto;
+    /* gap: 10px;  */
+}
+
+.project {
+border-radius: 15px;
+background-color: #f5f2e3;
+margin: 20px; 
+}
+
+
+.project:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
+.image_title {
+    margin: 10px; 
+    /* border: solid red 2px;  */
+    width: 100 vw;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+   height: 30vh;
 
 }
+
+.project-image {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   /* filter: grayscale(100%); */
+}
+
+.title {
+font-family: "Roboto";
+font-weight: bold;
+font-size: 20px;
+text-align: center;
+position: absolute;
+ top: 50%;
+left: 50%;
+color: #ba4622;
+transform: translate(-50%, -50%);
+
+}
+
+.describing p {
+display: block;
+margin: 10px;
+
+}
+
+.code-card {
+margin: 15px 0px 20px 10px; 
+
+}
+span {
+font-size: 10px;
+line-height: 11px;
+letter-spacing: 0.01em;
+color: #fff;
+background: hotpink;
+padding: 5px;
+border-radius: 5px;
+
+
+}
+
+
+button {
+    border:#ba4622; /* need this to remove border from button*/
+    background:  #c4b991;
+    padding: 5px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    margin: 0px 0px 20px 10px; 
+ 
+  }
+  
+  button:hover {
+    /* border: 1px solid grey; */
+    background:  #ba4622;
+    color: white;
+  }
+  
+.describing-title {
+font-weight: bold;
+font-family: "Roboto";
+color: #ba4622;
+line-height: 20px; 
+}
+
+.describing-text {
+line-height: 25px;  
+font-family: "Roboto";
+
+}
+
+.describing-text b {
+color:#ba4622
+}
+.other-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ede8d4;
+    /* border: solid red 2px;  */
+    width: 100 vw;
+    height: auto;
+    border: solid red 2px; 
+    /* gap: 10px;  */
+}
+
+h4 {
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 22px;
+    margin: 20px; 
+color: #ba4622;
+/* font-weight: bold; */
+}
+
 
 .thoughts-of-code {
+    background-color: #f6f5f0;
     width: 100 vw;
-    height: 100vh;
+    height: auto;
+    border: solid red 2px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px;  */
 }
 
+
 .skills {
-    background-color: #F4F4F4;
+    background-color: #f5f2e3;
     width: 100 vw;
-    height: 60vh;
+    width: 100 vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
 }
+.body {
+    display: flex;
+    /* align-items: center; */
+    margin:20px; 
+    gap: 30px; 
+     
+}
+
 .for-more {
+    background-color: #f6f5f0;;
     width: 100 vw;
-    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.social-media {
+    height: auto;
+    border: solid red 2px; 
+    width: 100 vw;
+    /* height: 35vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.social-media p {
+font-size: 15px;
+}
+
+.icon {
+    margin: 7px; 
+    width: 2em;
+    right: 10%; /* ändra till 15% i desktop */
+    top: 7%;
 }
 .contact {
-    background-color: rgb(222, 155, 54);
+    background-color: #ba4622;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
     width: 100 vw;
-    height: 30vh;
+    height: auto;
+    border: solid red 2px; 
+}
+
+.contact p, h4 {
+color: white;
+
+}
+.contact-container {
+
+    margin: 20px; 
 }
