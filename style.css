@@ -1,0 +1,123 @@
+@import url();
+:root {
+    --primary: grey; /* background color 1 */
+    --secondary: whitesmoke; /* background color 2 */
+    --tertiary: black; /* text color */
+    --quinary:red; /* title background color */
+  }
+
+/* for mobile */
+
+.header {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+ .header::after {
+    content: "";
+    background: url(./assets/header-img.jpg);
+    background-size: cover;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  
+ } 
+.flex-container {
+display: flex;
+}
+
+ .link-container {
+    
+ }
+
+.profile-pic {
+    position: absolute;
+    right: 15%;
+    bottom: -3%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    
+}
+
+.header-link {
+    height: 40px;
+    width: 40px; 
+}
+
+.header-text {
+color: whitesmoke;
+}
+
+.section {
+    background-color: var(--primary);
+    width: 100vw;
+    text-align: center;
+}
+
+
+#tech {
+    background: var(--secondary);
+}
+
+
+#thoughts {
+    background: var(--secondary);
+}
+
+#more {
+    background: var(--secondary);
+}
+
+.section p {
+    /* margin: 20px; */
+    text-align: center;
+    
+}
+
+.section h2 {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    background-color: red;
+
+}
+
+.section h3 {
+    color: red;
+}
+
+
+   /* For screen readers, not visible on web page */
+.sr-only {
+    border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; 
+    clip-path: inset(50%) !important; 
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important; 
+}
+
+
+/* for tablets */
+@media (min-width: 668px) and (max-width: 1024px) {
+
+}
+/* for desktop */
+@media (min-width: 1025px) {
+
+}
+
