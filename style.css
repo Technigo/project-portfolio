@@ -1,0 +1,312 @@
+:root {
+    --primary: #F7F7F2/* #EFF0F4 */;
+    --secondary: #EDE6DB/* #D3D6DB */;
+    --heading: #1A3C40;
+    /* #D2001A röd 
+    #0F3460 mörkblå DEN HÄR ÄR BRA
+    #000033;
+    #2C5460
+    #421251 mörklila najs
+    #044A42 grön
+    */
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', serif;  
+    background-color:var(--primary);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+.underline {
+    text-decoration: underline;
+}
+h1 {
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: .2rem;
+}
+h2, h3 {
+    background: var(--heading)/* #79A3B1 */;
+    width: fit-content;
+    justify-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 8px auto 40px;
+    padding: 5px;
+    color: white;
+}
+.sub-heading {
+    text-transform: uppercase;
+    background: none;
+    margin: 30px auto 20px;
+    color: var(--heading);
+}
+h4 {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin: 20px 0 15px;
+    color: #417D7A;
+    display: inline;
+}
+.name-heading {
+    color: #FFF;
+}
+.header-h2 {
+    text-transform: lowercase;
+    background: none;
+}
+h5 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+h6 {
+    font-size: 17px;
+    color: #417D7A;
+}
+p {
+    display: inline-block;
+    max-width: 600px; 
+    line-height: 29px;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;    
+}
+
+.date {
+    color: #417D7A;
+}
+.hero {
+    background-image: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+.hero-text {
+    position: absolute;
+    top: 35%;
+    left: 1rem;
+    color: #FCF8EC;
+}
+.logo-container {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+
+}
+.logo {
+    margin: 0 .1rem;
+    width: 3rem;
+}
+
+.dark-logo {
+    margin: 0 .5rem;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* using this calculator I was able to change colors to match what i want https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(17%) sepia(44%) saturate(591%) hue-rotate(138deg) brightness(21%) contrast(89%);
+}
+.linkedin {
+    background-image: url(./images/linkedin.svg)
+}
+.github {
+    background-image: url(./images/github.svg);
+}
+
+.stackoverflow {
+    background-image: url(./images/stackoverflow.svg)
+}
+.portrait-img {
+    border-radius: 50%;
+    border: solid white 2px;
+    width: 10rem;
+    position: absolute;
+    top: 44vh;
+    right: 1rem;
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+section, footer {
+    padding: 2rem 1.5rem;
+}
+.intro {
+height: 40vh;
+align-items: center;
+display: flex;
+}
+.line {
+    border: 1px solid var(--secondary);
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    display: inline-block;
+}
+.bg-darker {
+    background-color: var(--secondary);
+}
+
+.tech {
+    text-align: center;
+}
+.show-off {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-of-project {
+    width: 100%;
+ 
+}
+
+.project {
+    margin: 1rem 0;
+
+}
+.other-project {
+    align-self: flex-start;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    padding: 1rem;
+}
+
+.skill-wrapper {
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.skill-group {
+    justify-self: center;
+    text-align: center;
+    display: block;
+}
+/* .skill-group2 {
+    grid-column-start: 1;
+} */
+ul {
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+
+li {
+   padding: 4px; 
+}
+.more-skills {
+    grid-column-start: 2;
+}
+/*FRÅN TECHNIGO*/
+.tag-wrapper {
+    display: flex;
+}
+
+.tag-wrapper p {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary);
+    font-weight: bold;
+    background-color: #417D7A;
+    text-decoration: none;
+    font-size: 12px; 
+    line-height: 12px;
+    padding: 4px;
+    margin: 3px;
+    border-radius: 5px;
+}
+.more-arrows {
+    font-weight: 700;
+    color: var(--heading);
+}
+
+.FMlogo-container {
+   display: flex;
+   justify-content: center;
+}
+
+footer {
+    background-color: #1D5C63;
+    text-align: center;
+    padding-bottom: 40px;
+}
+footer p{
+    font-family: 'Montserrat', serif;
+    color: #FFF;
+    display: block;
+
+ }
+.footer-heading {
+    background: none;
+    
+}
+
+
+
+/* @media DESKTOP {
+    .featured-projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .grid-heading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+    .project-1 {
+    grid-row-start: 2;
+}
+
+.other {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+
+.code-thoughts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 265px 1fr;
+    grid-gap: 2rem;
+}
+.skill-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+.skill-group {
+    justify-self: center;
+}
+}
+ */
