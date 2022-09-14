@@ -26,7 +26,9 @@ body{
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   letter-spacing: 0.01rem;
+  line-height: 1.5rem;
   margin: 0;
+
     }
 h1, h2, h3, h4, strong{
   color:var(--mainText);
@@ -63,20 +65,21 @@ color:(var(--secondaryText))
   font-size: 18px;
   position: relative;
   color: var(--mainText);
-  line-height: 1.5rem;
+  /* line-height: 1.5rem; */
 
 }
 
 img{
-  height: 250px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   position: absolute;
-  bottom:-15%;
+  bottom:-30%;
   right: 3%;
   border-radius: 50%;
   border: 2px solid rgb(102, 94, 94); 
-  /* margin: 0 auto; */
-  /* display:block; */
+  box-shadow: 0px 0px 10px 10px rgb(221, 231, 221);
+  overflow-y: hidden;
+ 
 }
 
 
@@ -98,29 +101,33 @@ h2{
 p{
   padding-left: 1rem;
   padding-right: 1.5rem;
+    line-height: 2rem;
  
 }
 .aboutMe{
  width:99vw;
  height:30vh;
 border-bottom: 1px solid var(--borderColor);
-/* padding-top:  5rem; */
+padding-top:  5rem;
 padding-left: 1rem;
 /* padding-right: -5rem; */
-border: 1px solid #000;
+/* border: 1px solid #000; */
 font-size: 18px;
+
 
 }
 
 .socialMedia{
   height: 10vh;
-  width: 5vw;
+  width: 15vw;
   display:flex;
     justify-content: space-around;
   position:absolute;
 right: 30px;
 top: 20px;  
 font-size: 30px;
+
+/* background-color: red; */
 
 
 }
@@ -140,40 +147,55 @@ a{
      border: 1px solid #fff;
      height: 50px;
      width:50px;
+     margin-right: 15px;
      border-radius: 50%;
+      box-shadow: 0px 0px 5px 5px rgb(221, 231, 221);  
     
 } 
+
 .icon:hover{
   background-color: #fff;
   color: var(--secondaryText)
 }
+.icon:active{
+  background-color: rgb(233, 224, 224);
+  box-shadow: 1px #666;
+  transform: translateY(5px);
+}
 
 
 
-@media screen and (min-width:375px) and (max-width:1024px)  {
+@media screen and (min-width:375px) and (max-width:768px)  {
   body{
-    background-color:var(--mainColor)
+    /* background-color:var(--mainColor); */
+    /* overflow-x: hidden; */
   }
   .mainHeader{
-  max-width: 100%;
-max-height: 290px;
+  max-width: 100vw;
+  max-height: 20vh;
   padding-left: 10px; 
-   padding-top: 10px;
+  padding-top: 10px;
   
   }
   .title{
     top: 30px;
     font-size: 16px;
     line-height: 22px;
+    left: 25px;
 
   }
 .aboutMe p{
  font-size: 14px;
+ line-height: 25px;
 
 }
 
 img{
-  height: 100px;
+  height: 120px;
+  width: 120px;
+  bottom:-20px;
+  right: 30px;
+    /* overflow-x: hidden; */
 }
 
 .socialMedia {
@@ -194,5 +216,16 @@ img{
   align-items: center;
   justify-content: center;
 }
+.icon{
+  height: 30px;
+    width: 30px;
+    font-size: 20px;
+}
 
+}
+@media screen and (max-width:1024px) {
+  /* body {
+      overflow-x: hidden;
+    } */
+  
 }
