@@ -3,18 +3,24 @@ background-color: white;
 font-family: "Montserrat", "Roboto";
 }
 
-.hero-image {
-    /* background-color: red; */
-    /* width: 100 vw; */
-    height: auto;
-    border: solid red 2px; 
-    height: 70vh;/* ändra till 65% i desktop */
+.hero-image { 
+    width: 100 vw;
+    /* border: solid red 2px;  */
+    height: 65vh; /* ändra till 65% i desktop */
     position: relative;
-    background-image: url("./images/production\ ID_3864185.mp4");
-    background-position: center;
-    /* background-repeat: no-repeat; */
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   } 
+  
+  .hero-image video {
+    position: relative;
+    height: 65vh;
+    object-fit: cover;
+    width: 100%;
+  }
+
+
 
 .profile-image {
 width: 150px; /* ta bort i media desktop */
@@ -36,9 +42,9 @@ top: 7%;
 font-family: "Roboto";
 /* text-align: center; */
 position: absolute;
-top: 20%; /* ändra till 30% i desktop */
-left: 20%;
-width: 70%;  /* ändra till 40% i desktop */
+top: 25%; /* ändra till 30% i desktop */
+left: 10%;
+width: 80%;  /* ändra till 40% i desktop */
 color: white;
 /* transform: translate(-50%, -50%); */
 
@@ -66,20 +72,23 @@ b {
 }
 
 .presentation {
-    border: solid red 2px; 
+    /* border: solid red 2px;  */
     background-color: #f5f2e3;
     width: 100 vw;
-    height: auto; /* ändra till 25% i desktop */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     
 }
 
 .presentation-text {
     /* position: absolute;  */
-    /* width: 50%; lägg till i desktop */
     line-height: 30px; 
     font-size: 16px;
     text-align: center;
-    margin: 45px 10px 0 10px;
+    margin: 45px 10px 20px 10px;
 
 }
 
@@ -89,7 +98,7 @@ b {
 
 .tech {
     height: auto;
-    border: solid red 2px; 
+    /* border: solid red 2px;  */
     background-color: #f6f5f0;
     width: 100 vw;
     /* height: 35vh; */
@@ -116,12 +125,12 @@ h3 {
       line-height: 30px; 
     font-size: 16px;
     text-align: center;
-    /* margin: auto 10px auto 10px; */
+    margin: 10px 10px 20px 10px;
    }
 
 
 .projects {
-    border: solid red 2px; 
+    /* border: solid red 2px;  */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,6 +145,8 @@ h3 {
 border-radius: 15px;
 background-color: #f5f2e3;
 margin: 20px; 
+width: 350px; 
+height: auto;
 }
 
 
@@ -159,6 +170,7 @@ margin: 20px;
    width: 100%;
    height: 100%;
    border-radius: 10px;
+   margin: 10px 0px 10px 0px;  
    /* filter: grayscale(100%); */
 }
 
@@ -177,24 +189,21 @@ transform: translate(-50%, -50%);
 
 .describing p {
 display: block;
-margin: 10px;
 
 }
 
 .code-card {
-margin: 15px 0px 20px 10px; 
+margin: 10px 0px 20px 10px; 
 
 }
 span {
-font-size: 10px;
+font-size: 12px;
 line-height: 11px;
 letter-spacing: 0.01em;
 color: #fff;
 background: hotpink;
 padding: 5px;
 border-radius: 5px;
-
-
 }
 
 
@@ -219,16 +228,27 @@ font-weight: bold;
 font-family: "Roboto";
 color: #ba4622;
 line-height: 20px; 
+margin: 30px 0 0 10px; 
 }
 
 .describing-text {
 line-height: 25px;  
+margin: 0 0 0 10px; 
 font-family: "Roboto";
 
 }
 
 .describing-text b {
-color:#ba4622
+color:#ba4622;
+}
+
+.project-hide {
+    visibility: hidden;
+}
+
+.grid-projects {
+height: 870px; 
+
 }
 .other-projects {
     display: flex;
@@ -238,8 +258,14 @@ color:#ba4622
     /* border: solid red 2px;  */
     width: 100 vw;
     height: auto;
-    border: solid red 2px; 
+    /* border: solid red 2px;  */
     /* gap: 10px;  */
+}
+
+.other-projects .project {
+    background-color: #ede8d4;
+    margin: 10px; 
+    margin: 20px; 
 }
 
 h4 {
@@ -253,17 +279,27 @@ color: #ba4622;
 }
 
 
-.thoughts-of-code {
+.thoughts-of-code, .thougts-grid {
     background-color: #f6f5f0;
     width: 100 vw;
     height: auto;
-    border: solid red 2px; 
+    /* border: solid red 2px;  */
     display: flex;
     flex-direction: column;
     align-items: center;
     /* gap: 10px;  */
 }
 
+.thought-1 {
+    width: 300px;
+}
+
+.thought-1 img {
+    position: relative;
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
+  }
 
 .skills {
     background-color: #f5f2e3;
@@ -277,7 +313,7 @@ color: #ba4622;
 .body {
     display: flex;
     /* align-items: center; */
-    margin:20px; 
+    margin:0px 0px 20px 0px; 
     gap: 30px; 
      
 }
@@ -293,7 +329,7 @@ color: #ba4622;
 
 .social-media {
     height: auto;
-    border: solid red 2px; 
+    /* border: solid red 2px;  */
     width: 100 vw;
     /* height: 35vh; */
     display: flex;
@@ -320,14 +356,143 @@ font-size: 15px;
     align-items: center;
     width: 100 vw;
     height: auto;
-    border: solid red 2px; 
+    /* border: solid red 2px;  */
 }
 
-.contact p, h4 {
+.contact p, .contact h4 {
 color: white;
 
 }
 .contact-container {
 
     margin: 20px; 
+}
+
+
+@media (min-width: 1024px) {
+
+    .hero-image {
+        height: 65vh;
+        }
+
+    .profile-image {
+         width: auto;/* ta bort i media desktop */
+        right: 15%; /* ändra till 15% i desktop */
+
+            }    
+
+    .icons {
+        right: 10%; /* ändra till 15% i desktop */
+        top: 15%; 
+        width: 10em;
+    }
+            
+    .hero-text {
+        top: 30%; /* ändra till 30% i desktop */
+        width: 40%;  /* ändra till 40% i desktop */
+        left: 20%;
+     }
+            
+    h1 {
+    font-size: 66px;   
+     }
+         
+     .hero-text p {
+        font-size: 25px;
+     }
+
+     .hero-text h2 {
+        font-size: 40px;
+     }
+
+    .presentation-text {
+    width: 50%; 
+    margin: 50px; 
+    }
+
+    .presentation-text {  
+    font-size: 20px;
+    } 
+
+    .tech-text {
+        font-size: 20px;
+        width: 50%; 
+        margin: 20px 0px 50px 0px; 
+        }
+    .grid-projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px; 
+            align-items: center;
+            height: auto;
+    }
+
+    /* .projects {
+
+        font-size: 20px;
+    } */
+
+    .project-hide{ 
+        visibility: visible;
+        border-radius: 15px;
+        background-color: #f5f2e3;
+        margin: 20px; 
+        width: 400px; 
+        }
+.project {
+    width: 400px; 
+
+}
+    
+
+ .other-projects .project {
+    width: 600px;
+margin: 0px; 
+ }
+
+ .thougts-grid {
+    flex-direction: row;
+ } 
+
+ .thought-1 {
+    width: 50%;
+ }
+ 
+ .thought-1 .describing {
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    
+ }
+ .thought-1 img {
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+ }
+ .More-thoughts {
+width: 50%;
+margin-top: 20px;
+
+}
+
+.span, .button, .describing-text, .describing-title, .skills, .contact-container {
+ font-size: 20px;
+ padding: 10px; 
+}
+
+span, button {
+    font-size: 16px;
+    }
+    
+    
+    button {
+        
+     
+      }
+
 }
