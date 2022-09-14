@@ -7,14 +7,16 @@
 }
 
 :root{
-  --mainColor: #d5cfcf;
-  --secondryColor: #fff;
+  --mainColor: #F2F2F2;
+  --secondryColor: #F9F3EE;
+  --projectNamebackground:#FF7075;
 
   --borderColor: #e7d0d0;
   --fontFamily: 'Roboto', sans-serif;
 
-  --mainText:#fff; 
-  --secondaryText: #2a2727;
+  --lightText:#fff; 
+  --darkText: #2a2727;
+  --grayText:rgb(30, 28, 28);
 
 }
 
@@ -30,14 +32,11 @@ body{
   margin: 0;
 
     }
-h1, h2, h3, h4, strong{
-  color:var(--mainText);
 
-}
-p, li, span, input, textarea{
+p, li,span{
 font-size: 18px;
 line-height: 20px;
-color:(var(--secondaryText))
+color:var(--grayText);
 
 }
 
@@ -64,12 +63,11 @@ color:(var(--secondaryText))
   justify-content: center;
   font-size: 18px;
   position: relative;
-  color: var(--mainText);
-  /* line-height: 1.5rem; */
+   /* filter: blur(2.5px); */
 
 }
 
-img{
+.mainHeader img{
   height: 200px;
   width: 200px;
   position: absolute;
@@ -77,31 +75,32 @@ img{
   right: 3%;
   border-radius: 50%;
   border: 2px solid rgb(102, 94, 94); 
-  box-shadow: 0px 0px 10px 10px rgb(221, 231, 221);
+  box-shadow: 0px 0px 10px 10px rgb(174, 176, 174);
   overflow-y: hidden;
  
 }
-
-
 
 .title{
   position: absolute;
   width: 400px;
   left: 55px;
   top: 50px;
-  /* font-weight: 400; */
 }
-h1{
-  font-size:25px;
+.title h1{
+  font-size:45px;
   padding-bottom: 22px;
+  color: var(--lightText);
+  font-weight: bolder;
 }
-h2{
-  font-size: 16px;
+.title h2{
+  font-size: 32px;
+    color: var(--lightText);
+    line-height: 3rem;
 }
 p{
   padding-left: 1rem;
   padding-right: 1.5rem;
-    line-height: 2rem;
+  line-height: 2rem;
  
 }
 .aboutMe{
@@ -121,14 +120,11 @@ font-size: 18px;
   height: 10vh;
   width: 15vw;
   display:flex;
-    justify-content: space-around;
+  justify-content: space-around;
   position:absolute;
-right: 30px;
-top: 20px;  
-font-size: 30px;
-
-/* background-color: red; */
-
+  right: 30px;
+  top: 20px;  
+  font-size: 30px;
 
 }
  
@@ -139,17 +135,17 @@ a{
 }
 
 .icon{
-  display: flex;
-    justify-content:center;
-    align-items: center;
-    text-align: center; 
-     /* margin: 10px; */
-     border: 1px solid #fff;
-     height: 50px;
-     width:50px;
-     margin-right: 15px;
-     border-radius: 50%;
-      box-shadow: 0px 0px 5px 5px rgb(221, 231, 221);  
+ display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center; 
+  /* margin: 10px; */
+  border: 1px solid #fff;
+  height: 50px;
+  width:50px;
+  margin-right: 15px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 5px rgb(221, 231, 221);  
     
 } 
 
@@ -159,11 +155,86 @@ a{
 }
 .icon:active{
   background-color: rgb(233, 224, 224);
-  box-shadow: 1px #666;
+  box-shadow: 1px rgb(217, 209, 209);
   transform: translateY(5px);
 }
 
+.grid{
+  display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 2fr));
+    column-gap: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right:1rem;
+  }
+  .grid-item {
+    height: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    filter: blur(0.5px);
+    background-color: var(--mainColor);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .grid-item:hover{
+    filter: blur(0);
+  }
+
+  .projectName{
+    margin-bottom: 1rem;
+    height: 50px;
+    width: 300px;
+    background-color: var(--projectNamebackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+  }
+
+  .grid-item img{
+ filter: blur(1.1px);
+  }
+
+.grid-item img:hover {
+filter: blur(0);
+}
+
+.tools{
+  width: 150px;
+  margin-top: 20px;
+ display: flex;
+   text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: #FF7075; */
+}
+.tools i{
+  font-size:40px;
+  }
+
+  .btnProjectShow{
+    font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 9px #999;
+
+  }
+  .btnProjectShow:hover{
+      background-color: rgb(233, 224, 224);
+  }
+  .btnProjectShow:active{
+    background-color: rgb(233, 224, 224);
+      box-shadow: 0 5px #666;
+      transform: translateY(5px);
+  }
 
 @media screen and (min-width:375px) and (max-width:768px)  {
   body{
@@ -177,19 +248,20 @@ a{
   padding-top: 10px;
   
   }
-  .title{
-    top: 30px;
-    font-size: 16px;
-    line-height: 22px;
-    left: 25px;
-
-  }
+ 
 .aboutMe p{
  font-size: 14px;
  line-height: 25px;
-
 }
 
+h1{
+  font-size:25px;
+}
+h2{
+  font-size:22px;
+  line-height:30px;
+
+}
 img{
   height: 120px;
   width: 120px;
@@ -209,13 +281,13 @@ img{
   width: 30px;
 }
 
-.light,
+/* .light,
 .dark{
   display:flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-}
+} */
 .icon{
   height: 30px;
     width: 30px;
