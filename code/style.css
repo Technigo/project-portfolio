@@ -1,0 +1,252 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    left: 0px;
+    top: 0px;
+    background: url(https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background-size: cover;
+}
+
+.header-text-group {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 60%;
+    left: 10%;
+    top: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    letter-spacing: 0.04em;
+    color: #FFFF;
+}
+
+.bold-name {
+    font-weight: 700;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 3.8em;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.plus-title {
+    font-weight: 400;
+    font-size: 1.6em;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.soMe-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 130.5px;
+    height: 40px;
+    right: 10%;
+    top: 10%;
+}
+
+.profile-pic {
+    position: absolute;
+    right: 10%;
+    top: 70%;
+    height: 180px;
+    width: 180px;
+    border: 2px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.start-figure {
+    filter: invert(1) sepia(0) saturate(5) hue-rotate(-143deg);
+}
+
+.intro-section {
+    padding: 5% 5% 0 5%;
+    width: 90%;
+    height: 324px;
+    background: #F4F4F4;
+}
+
+.intro-summary, .tech-summary {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.062em;
+    line-height: 1.81em;
+}
+
+.tech-section, .for-more {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 90%;
+    text-align: center;
+}
+
+.featured-projects, .my-thoughts, .skills {
+    background: #F4F4F4;
+    padding: 5%;
+    width: 90%;
+}
+
+.tech-heading, .featured-heading, .other-heading, .myThoughs-heading, .moreThoughs-heading, .skills-heading, .formore-heading, .formore-heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.37em;
+    color: #FFFFFF;
+    background-color: #e58532c2;
+    line-height: 1.68em;
+    align-self: center;
+    max-width: fit-content;
+    padding: 0 1%;
+}
+
+.featured-h-container, .other-h-container, .moreThoughts-h-container, .skills-h-container, .formore-h-container, .myThoughts-h-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-projects-container, .other-projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+.project-card a {
+    text-decoration: none;
+}
+
+.featProject-heads {
+    font-family: 'Roboto';
+    line-height: 1.81em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #66204a;
+    font-size: 1.1em;
+    margin-bottom: -5%;
+}
+
+.featProject-info {
+    font-family: 'Roboto';
+    line-height: 1.81em;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: black;
+    font-size: 1.1em;
+}
+
+.tag-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.tag {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .7em;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    background-color: #66204a;
+    border-radius: 3px;
+    padding: 1%;
+    margin: 1%;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+}
+
+.overlay-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.overlay-text {
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}   
+
+.project-img {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+}
+
+.overlay:hover {
+    color: transparent;
+}
+  
+.overlay-image:hover { 
+    background-color: transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: black;
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-align: center;
+    padding: 5%;
+}
+
+.contact-info {
+    font-weight: 700;
+    font-size: 1.37em;
+    color: #FFFFFF;
+    line-height: 1.68em;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts {
+    font-size: 1.37em;
+    font-weight: 400;
+    font-size: 1.062em;
+    line-height: 1.81em;
+    color: #FFFFFF;
+}
