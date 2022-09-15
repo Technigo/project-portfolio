@@ -1,27 +1,143 @@
 body {
+font-family: Montserrat;
+font-weight: 700;
 background: #FFFFFF;
-height: 4502px;
-width: 375px;
-left: 4330px;
-top: 0px;
-border-radius: 0px;
+
 
 }
 
-header {
-    display: flex;
-    height:max-content;
-    background-image: url(./Pictures/ImageByGerdAltmann-pixabay.small.jpg);
+/*.outerWrapper {
+height: 4702px;
+width: 500px;
+left: 4330px;
+top: 0px;
+border-radius: 0px;
+}*/
 
+.wrapper{
+height: 4502px;
+width: 375px;
+/*left: 4330px;*/
+top: 0px;
+border-radius: 0px;
+}
+
+header {    
+    position: absolute;
+    width: 100%;
+    height: 520px;
+    left: 0px;
+    top: 0px;
+    /*background-image: url(./Pictures/ImageByGerdAltmann-pixabayGIMP.jpg);*/
+    background-image: url(./Pictures/imageByrawpixel_comOnFreepick-cropped.jpg);
+    background-repeat: no-repeat;
+    color: #6e744c;
+    /*text-align: right;
+    vertical-align: bottom
+    ;*/
+}
+
+.portfolio {
+    position: absolute;
+    top: 220px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.myPicture {
+    border-radius: 50%;
+    position: absolute;
+    max-width: 40%;
+    padding-block: 15%;
 }
 
 .about_me {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 550px;
 }
 
-@media 
-body {
-position: relative;
-width: 1920px;
-height: 7310px;
+/* for desktop */
+
+@media only screen and (min-width: 1200px) {
+.wrapper {
+    position: relative;
+    width: 1920px;
+    height: 7310px;
+    }
+
+header {
+    object-fit:scale-down;
+    width: 100%;
+    height: 520px;
+    left: 0px;
+    top: 0px;
+
+    }
+
+.myPicture {
+    border-radius: 50%;
+    position: absolute;
+    max-width: 60%;
+    padding-block: 15%;
 }
+
+.portfolio {
+    position: absolute;
+    top: 220px;
+   right: 250px;
+    text-align: center;
+    vertical-align: bottom;
+
+}
+
+.about_me {
+    padding-top: 600px;
+}
+}
+
+
+/* for tablet */
+
+
+@media only screen and (min-width: 600px) {
+
+    .wrapper {
+        min-width: 380px;
+        max-width: 1199px;
+        height: 7310px;
+        }
+    
+    header {
+        width: 100%;
+        height: 520px;
+        left: 0px;
+        top: 0px;
+    
+        }
+    
+    .myPicture {
+        border-radius: 50%;
+        position: absolute;
+        max-width: 60%;
+        padding-block: 15%;
+    }
+    
+    .portfolio {
+        position: absolute;
+        top: 220px;
+        right: 250px;
+        text-align: center;
+        vertical-align: bottom;
+    
+    }
+    
+    .about_me {
+        padding-top: 600px;
+    }
+
+}
+
+
