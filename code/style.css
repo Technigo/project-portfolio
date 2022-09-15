@@ -13,23 +13,43 @@ h2.section-heading {
   color: white;
   font-weight: 700;
   width: fit-content;
-  margin: 0 auto 10px;
+  margin: 0 auto 30px;
+}
+
+.block-section {
+  padding: 50px 0;
+}
+.outer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-wrapper {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  height: 300px;
 }
 
 .main-header {
-  width: 100vw;
-  height: 20vh;
-  position: relative;
   background-image: url(./pic/forest.jpeg);
   background-size: cover;
   background-position: center;
+  height: 300px;
+  position: relative;
 }
 
 .body-section {
-  margin: 49px 24px 43px 24px;
+  /* margin: 49px 24px 43px 24px;*/
   font-weight: 400;
   font-size: 17px;
   line-height: 29px;
+}
+.head-section {
+  background: rgba(0, 0, 0, 0.1);
 }
 /* */
 .text-heading {
@@ -42,11 +62,11 @@ h2.section-heading {
   color: #ffffff;
 }
 .profile-img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   position: absolute; /* lets us choose position of the img */
-  right: 15%;
-  bottom: -10%;
+  right: 0;
+  bottom: 15;
   border: 2px solid white;
   border-radius: 50%;
 }
@@ -74,12 +94,13 @@ h2.section-heading {
 .featured-projects {
   text-align: center;
   margin-bottom: 50px;
+  background: rgba(0, 0, 0, 0.1);
 }
 .project-section {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  position: relative; */
 }
 
 .project-section .image-heading-wrapper {
@@ -101,7 +122,8 @@ h2.section-heading {
 }
 .project-section .image-heading-wrapper .project-image {
   opacity: 0.5;
-  width: 100vw;
+  width: 700px;
+  max-width: 700px;
   height: 50vh;
   position: relative;
   background-image: url(./pic/sthlmweather.jpg);
@@ -118,6 +140,9 @@ h2.section-heading {
   flex-direction: column;
   justify-content: center;
   padding: 25px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* */
@@ -188,17 +213,9 @@ h2.section-heading {
 
 /* FOOTER */
 footer {
-  position: relative;
-  display: block;
-  /* */
-  left: 0px;
-  bottom: 0px;
   background-color: rgb(110, 152, 110);
   font-family: "Montserrat";
   font-style: normal;
-  /*font-weight: 70;
-font-size: 20px;
-line-height: 124%;/**/
   text-align: center;
   color: #ffffff;
 }
