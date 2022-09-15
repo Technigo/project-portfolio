@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elin Segelöv, Developer Portfolio</title>
-   <!--  <link rel="icon" type="image/x-icon" href="./images/favicon.ico"> -->
-   <link rel="icon" type="image/x-icon" href="./images/favicon2.ico"> 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="./images/favicon2.ico"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
    <!--     <link rel="stylesheet" href="./remove-default.css"> -->
@@ -16,28 +15,30 @@
 </head>
 <body>
     <header class="hero">
-        <div class="hero-text">
-            <h4 class="name-heading">Portfolio: Elin Segelöv</h4>
-            <h1>frontend <br> developer</h1>
-            <h2 class="header-h2">+ social worker(?)</h2>
+        <div class="hero-container">
+            <div class="hero-text">
+                <h4 class="name-heading">Portfolio: Elin Segelöv</h4>
+                <h1>frontend <br> developer</h1>
+                <h2 class="header-h2">+ social worker(?)</h2>
+            </div>
+            <div class="logo-container">        
+                    <img src="./images/linkedin.svg" class="logo" alt="LinkedIn logo">
+
+                    <img src="./images/github.svg" class="logo" alt="github logo">
+
+                    <img src="./images/stackoverflow.svg" class="logo" alt="StackOverflow logo">
+
+            </div>
+                
+            <img src="./images/placeholder-img.jpeg" class="portrait-img" alt="Image of Elin">
+    <!--         This is where you sell in your new self. You're happy to combine your previous experience 
+            with your new frontend skills or basically use this are to describe yourself the way you 
+            see your role in the future. Either you do something like "Frontend + design" or more of 
+            a sentence like; "Frontend developer with a background in communications". Or if you 
+            don't see yourself as a frontend developer in the future maybe you want to write 
+            something like; "Project manager with coding skills". It's your portfolio. 
+            Choose images so that they mirror who you are. -->
         </div>
-        <div class="logo-container">        
-                <img src="./images/linkedin.svg" class="logo" alt="LinkedIn logo">
-
-                <img src="./images/github.svg" class="logo" alt="github logo">
-
-                <img src="./images/stackoverflow.svg" class="logo" alt="StackOverflow logo">
-
-        </div>
-            
-        <img src="./images/placeholder-img.jpeg" class="portrait-img" alt="Image of Elin">
-<!--         This is where you sell in your new self. You're happy to combine your previous experience 
-        with your new frontend skills or basically use this are to describe yourself the way you 
-        see your role in the future. Either you do something like "Frontend + design" or more of 
-        a sentence like; "Frontend developer with a background in communications". Or if you 
-        don't see yourself as a frontend developer in the future maybe you want to write 
-        something like; "Project manager with coding skills". It's your portfolio. 
-        Choose images so that they mirror who you are. -->
     </header>
     <main>
         <section class="intro bg-darker">
@@ -63,10 +64,14 @@
                 Also add a link to where the visitors can see the project live. 
                 (If you rather do the other way around, making the image and headline link to the deployed 
                 version of your project and then have a link to where they can see the code, that is also okay.) -->
+            
+            
             <div class="grid-wrapper projects-wrapper">
                 <div class="project top-project project-1">
                     <div class="project-image">
+                        <div class="project-image-overlay"></div>
                         <img src="./images/thumbnail-weatherapp.png" class="image-of-project" alt="Project: Weather App">
+                        <p class="overlay-text">Overlay text</p>
                     </div>
                     <h4>Project: Weather App.</h4>
                     <p>Project description.</p>
@@ -79,6 +84,7 @@
                 </div>
                 <div class="project top-project project-2">
                     <div class="project-image">
+                        <div class="project-image-overlay"></div>
                         <img src="./images//thumbnail-guesswho.png" class="image-of-project" alt="Project: Guess Who?">
                     </div>
                     <h4>Project: Guess Who?.</h4>
@@ -91,6 +97,7 @@
                 </div>
                 <div class="project project-3">
                     <div class="project-image">
+                        <div class="project-image-overlay"></div>
                         <img src="./images/thumbnail-chatbot.png" class="image-of-project" alt="Project: Chat Bot">
                     </div>
                     <h4>Project: Chat Bot.</h4>
@@ -103,6 +110,7 @@
                 </div>
                 <div class="project project-4">
                     <div class="project-image">
+                        <div class="project-image-overlay"></div>
                         <img src="./images/thumbnail-newssite.png" class="image-of-project" alt="Project: News site">
                     </div>
                     <h4>Project: News site.</h4>
@@ -174,6 +182,7 @@
                 <a href="#">
                     <div class="big-thought project">
                         <div class="project-image">
+                            <div class="project-image-overlay"></div>
                             <img src="./images/hero-img.jpg" class="image-of-project" alt="THOUGHT">
                         </div>
                         <p class="date">Month 2022</p>
@@ -188,6 +197,7 @@
                 <a href="#">
                     <div class="big-thought project">
                         <div class="project-image">
+                            <div class="project-image-overlay"></div>
                             <img src="./images/hero-img.jpg" class="image-of-project" alt="THOUGHT">
                         </div>
                         <p class="date">Month 2022</p>
@@ -214,33 +224,41 @@
         <section class="skills bg-darker">
             <h2 class="grid-headig section-heading">SKILLS</h2>
             <div class="skill-wrapper">
-                <h6>Code</h6>
-                <ul class="skill-group code">
-                    <li class="skill-list">HTML 5</li>
-                    <li class="skill-list">CSS3</li>
-                    <li class="skill-list">JavaScript E26</li>
-                    <li class="skill-list">GitHub</li>
-                    <li class="skill-list">Styled Components</li>
-                </ul>
+                <div class="list-section list-section1">
+                    <h6>Code</h6>
+                    <ul class="skill-group code">
+                        <li class="skill-list">HTML 5</li>
+                        <li class="skill-list">CSS3</li>
+                        <li class="skill-list">JavaScript E26</li>
+                        <li class="skill-list">GitHub</li>
+                        <li class="skill-list">Styled Components</li>
+                    </ul>
+                </div>
+                <div class="list-section list-section2">
                 <h6>Upcoming</h6>
-                <ul class="skill-group upcoming">
-                    <li class="skill-list">React</li>
-                    <li class="skill-list">jQuery</li>
-                    <li class="skill-list">Redux</li>
-                    <li class="skill-list">Node.js</li>
-                </ul>
+                    <ul class="skill-group upcoming">
+                        <li class="skill-list">React</li>
+                        <li class="skill-list">jQuery</li>
+                        <li class="skill-list">Redux</li>
+                        <li class="skill-list">Node.js</li>
+                    </ul>
+                </div>
+                <div class="list-section list-section3">
                 <h6>Toolbox</h6>
-                <ul class="skill-group more-skills toolbox">
-                    <li class="skill-list">VSCode</li>
+                    <ul class="skill-group more-skills toolbox">
+                        <li class="skill-list">VSCode</li>
                         <li class="skill-list">Slack</li>
-                            <li class="skill-list">JavaScript E26</li>
-                </ul>            
+                        <li class="skill-list">JavaScript E26</li>
+                    </ul> 
+                </div>
+                <div class="list-section list-section4">           
                 <h6>More</h6>
-                <ul class="skill-group more-skills more">
-                    <li class="skill-list">Hopefully more</li>
-                    <li class="skill-list">Hopefully more</li>
-                    <li class="skill-list">Hopefully more</li>
-                </ul>
+                    <ul class="skill-group more-skills more">
+                        <li class="skill-list">Hopefully more</li>
+                        <li class="skill-list">Hopefully more</li>
+                        <li class="skill-list">Hopefully more</li>
+                    </ul>
+                </div>
             </div>
 
         </section>
