@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 body {
   background-color: white;
   font-family: "Montserrat", "Roboto", sans-serif;
@@ -13,27 +8,25 @@ body {
   color: black;
   width: 100%;
 }
-
-.main-header {
-  background-image: url(./assets/background-img.jpg);
+header {
+  /*background-image:*/
+  background-color: black;
   position: relative;
   height: 520px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: white;
+  /*background-color: white;*/
   display: flex;
   flex-direction: column;
 }
-
-nav {
+.nav-icons {
   display: flex;
   justify-content: flex-end;
   margin-right: 5vh;
   margin-top: 55px;
   gap: 8px;
 }
-
 .nav-links {
   border-radius: 50%;
   border: solid white 2px;
@@ -44,103 +37,184 @@ nav {
   transition: 0.2s;
   position: relative;
 }
-
-.nav-links:hover {
-  transform: translate(-50%, -50%);
-}
-
-.nav-icons {
+.nav-img {
   width: 30px;
   height: 30px;
-  /* margin-top: 25%; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.nav-icons:hover {
-  transform: scale(1.1);
-}
-
-.header-text {
+.header-info {
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 220px;
+  width: 300px;
   height: 202px;
-  left: 33px;
-  top: 118px;
+  left: 5vh;
+  top: 150px;
   color: white;
-  letter-spacing: 0.04em;
 }
-
 h1 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 49px;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 0.04em;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/*tycker inte texten är lika fet som exemplet....*/
 h2 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 40px;
+  font-weight: 400;
+  font-size: 25px;
 }
-
 h3 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 13px;
+  font-weight: 200;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.name {
+  font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 400;
   display: block;
-  line-height: 18px;
 }
-
 .profile-img {
-  /* Positioning */
-  position: absolute;
-
   position: absolute;
   width: 180px;
   height: 180px;
   left: 171px;
   top: 356px;
-
-  /*  Rounded corners */
   border-radius: 50%;
-
-  /* An outline on the circle */
   border: 2px solid whitesmoke;
-
-  /* Makes sure nothing sticks out of the circle */
   overflow: hidden;
 }
-
 .profile-img > img {
   width: 100%;
 }
-
-.intro-section {
-  position: absolute;
-  width: 327px;
-  height: 232px;
-  left: 24px;
-  top: 569px;
-
-  font-family: "Montserrat";
+.intro-wrapper {
+  background-color: #f4f4f4;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  padding: 2rem 0;
+}
+.intro-text {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.line {
+  border: 1px solid #4f6970;
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #4f6970;
+  border-radius: 50%;
+  display: inline-block;
+}
+p {
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 17px;
   line-height: 29px;
-  /* or 171% */
-
-  color: #000000;
+  padding: 1rem 0;
 }
+.intro-text p {
+  margin-top: 20px;
+}
+.inner-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+.head-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.tech-outer-wrapper {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  padding: 2rem 0;
+}
+h4 {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 3px;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+}
+.tech-outer-wrapper p {
+  text-align: center;
+}
+.projects-outer-wrapper {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  padding: 2rem 0;
+}
+h5 {
+  color: red;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+h6 {
+  font-family: "Roboto";
+  color: red;
+  margin: 1rem 0 0.5rem 0;
+  text-align: left;
+  font-size: 17px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+.tag-wrapper {
+  display: flex;
+}
+.tag-wrapper p {
+  font-family: "Roboto", sans-serif;
+  color: #2b2e34;
+  font-weight: bold;
+  background-color: #db9aab;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 4px;
+  margin: 3px;
+  border-radius: 5px;
+}
+.my-thoughts-outer-wrapper {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  padding: 2rem 0;
+}
+
+.skills-outer-wrapper {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  padding: 2rem 0;
+}
+.for-more-outer-wrapper {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  padding: 2rem 0;
+}
+
+footer {
+  text-align: center;
+}
+/*tablet*/
+
+/*desktop*/
