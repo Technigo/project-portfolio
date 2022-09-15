@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #bfa290;
+    background-color: #d6976d;
     
 }
 
@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     width: 100%;
     max-height: 200px;
-    background-color: rgba(224, 210, 210, 0.5);
+    background-color: rgba(212, 224, 210, 0.5);
     display: flex;
     flex-direction: column;
 
@@ -161,8 +161,7 @@ h3 {
     opacity: 50%;
 }
 
-
-.tag-wrapper {
+.tag{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -184,9 +183,13 @@ h3 {
     height: 324px;
     left:auto;
     top: -200px;
-    color: #FFFFFF;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
 }
-
+/* .tag-title:hover {
+    background-color: #e50e0ed8;
+  } */
 
 /* Featured projects */
 
@@ -196,6 +199,9 @@ h3 {
     align-items: center;
     width: 100%;
     margin-top: 1000px;
+    background: #c5acac;
+    
+    opacity: 60%;
     
 }
 
@@ -212,15 +218,17 @@ h3 {
     font-size: 22px;
     line-height: 27px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 20px;
     
 }
-
+.featured-title:hover {
+    background-color: #e5e10ed8;
+  }
 /* Spa */
 
 a{
-    color: #794e1a;
+    color: #1b6335;
 }
 a:link {
     text-decoration: none;
@@ -233,7 +241,6 @@ a:link {
 }
 .pic {
     display: flex;
-    filter: brightness(65%);
     width: 100%;
     height: 30vh;
     border: 2px solid white;
@@ -241,6 +248,9 @@ a:link {
 
 }
 
+.linkTextProject{
+    color: rgb(40, 39, 0);
+}
 .projectTitle {
     position: relative;
     font-family: 'Roboto';
@@ -260,6 +270,7 @@ a:link {
     font-size: 17px;
     line-height: 29px;
     color: #ac8a61;
+    margin-top: -40px;
 } 
 
 /* Weather-App */
@@ -269,16 +280,177 @@ a:link {
     
 }  
 
+/* Tag Wrappers */
+.tag-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .tag-wrapper p {
+    font-family: "Roboto", sans-serif;
+    color: rgb(40, 39, 0);
+    font-weight: bold;
+    background-color: #eb6c11;
+    text-decoration: none;
+  
+    /* Matching line-height and font-size here gives full control 
+       over the size of our tags to the padding*/
+    font-size: 12px;
+    line-height: 12px;
+  
+    /* Control the size of the tags */
+    padding: 10px 16px;
+  
+    /* Control the spacing of our tags */
+    margin: 10px;
+  
+    /* Some rounded borders */
+    border-radius: 5px;
+  }
+  .tag-wrapper p:hover {
+    background-color: #e50e0ed8;
+  }
+  
+  .project3 {
+    width: 327px;
+    
+}  
+.project4 {
+    width: 327px;
+    
+}  
 /* Other projects */
+.other-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.other-projects-title{
+    position: relative;
+    display: flex;
+    width: 255px;
+    height: 26px;
+    left: auto;
+    top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2px;
+    
+}
+.otherProject1 {
+    width: 327px;
+    
+} 
+
+/* My Thoughts and More Thoughts*/
+
+.my-thoughts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.myThoughts-title{
+    position: relative;
+    display: flex;
+    width: 255px;
+    height: 26px;
+    left: auto;
+    top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 50px;
+    
+}
 
 
+.more-thoughts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    
+}
 
-/* My Thoughts */
+.moreThoughts-title{
+    position: relative;
+    display: flex;
+    width: 255px;
+    height: 26px;
+    left: auto;
+    top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2px;
+    
+}
+
+/* SKILLS */
+
+.skills-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* width: 100%; */
+    
+    
+  }
+  .mySkills-title {
+    position: relative;
+    display: flex;
+    width: 255px;
+    height: 26px;
+    left: auto;
+    top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2px;
+
+  }
+  
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+  }
 
 
-
-
-
-/* media query for Screen */
+/* media query Screen */
 /* @media (min-width:1281px){
     
