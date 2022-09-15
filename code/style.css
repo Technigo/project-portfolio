@@ -31,7 +31,6 @@ h2.section-heading {
   max-width: 700px;
   margin: 0 auto;
   position: relative;
-  height: 300px;
 }
 
 .main-header {
@@ -55,18 +54,33 @@ h2.section-heading {
 .text-heading {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 138%;
-  letter-spacing: 0.04em;
+  font-weight: ;
+  font-size: ;
+  line-height: ;
+  letter-spacing: 0.2em;
   color: #ffffff;
 }
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.logo {
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 50%;
+  size-adjust: 25px;
+}
+
 .profile-img {
   width: 150px;
   height: 150px;
   position: absolute; /* lets us choose position of the img */
   right: 0;
-  bottom: 15;
+  top: 20vh;
   border: 2px solid white;
   border-radius: 50%;
 }
@@ -122,17 +136,12 @@ h2.section-heading {
 }
 .project-section .image-heading-wrapper .project-image {
   opacity: 0.5;
-  width: 700px;
   max-width: 700px;
   height: 50vh;
   position: relative;
   background-image: url(./pic/sthlmweather.jpg);
   background-size: cover;
   background-position: center;
-}
-
-.project-section .image-heading-wrapper .project-image:hover {
-  opacity: 1;
 }
 
 .project-section .content {
@@ -204,13 +213,6 @@ h2.section-heading {
   border-radius: 4px;
 }
 
-/* styling for the tag wrappers*/
-.tag-html:hover,
-.tag-css:hover,
-.tag-JS:hover {
-  background-color: #d85478;
-}
-
 /* FOOTER */
 footer {
   background-color: rgb(110, 152, 110);
@@ -218,4 +220,18 @@ footer {
   font-style: normal;
   text-align: center;
   color: #ffffff;
+}
+
+/* TABLET & DESKTOP  */
+@media (min-width: 600px) {
+  /* styling for the tag wrappers*/
+  .tag-html:hover,
+  .tag-css:hover,
+  .tag-JS:hover {
+    background-color: #d85478;
+  }
+
+  .project-section .image-heading-wrapper .project-image:hover {
+    opacity: 1;
+  }
 }
