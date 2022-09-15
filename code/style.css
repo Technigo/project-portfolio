@@ -163,7 +163,10 @@
 }
 
 .section-titles-red {
-  margin-top: 5vh;
+  margin: 5vh auto;
+  padding: 0.5vh 0.5vh;
+ 
+  margin-bottom: 0;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -332,11 +335,11 @@
 }
 
 .my-thougts-article-date {  
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 29px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
     
-  color: #FA382F;
+  color: hsl(0, 95%, 50%);
 }
 
 .my-thougts-article-title {  
@@ -411,7 +414,7 @@
 .skills-paragraph-style {
   font-weight: 400;
   font-size: 17px;
-  line-height: 29px;  
+  line-height: 30px;  
 
   color: #000000;
 }
@@ -442,8 +445,7 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  
+  width: 100%; 
 }
 
 
@@ -472,8 +474,18 @@
   color: #FFFFFF;
 }
 
-/* LINE-DOT SECTION INDICATOR */
+/* --------------SPANS-------------- */
 
+.red {
+  color: #FA382F;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.bold {
+  font-weight: 700;
+}
+      /* --------------LINE-DOT-------------- */
 .line {
   border: 1px solid #FA382F;
   width: 40px;
@@ -489,18 +501,7 @@
   display: inline-block;
 }
 
-/* --------------SPANS-------------- */
-
-.red {
-  color: red;
-  font-weight: 700;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-/* TAGS */
+/* --------------TAGS-------------- */
 
 .tag-wrapper {
   display: flex;  
@@ -522,39 +523,329 @@
   padding: 4px;
 
   /* Control the spacing of our tags */
-  margin: 3px 6px 3px 0;
+  margin: 10px 6px 3px 0;
 
   /* Some rounded borders */
   border-radius: 5px;
 }
 
+ /* --------------TABLET-------------- */
+ /* ---------------------------------- */
+
+
 @media (min-width: 668px) and (max-width: 1023px) {
+
+  /* --------------HEADER-------------- */
+
+  .portfolio-info-header {   
+    width: 270px;    
+  }
+
+  .portfolio-info-header p {   
+    font-size: 17px;
+    line-height: 30px;   
+  }
+  
+  .portfolio-info-header h1 {   
+    font-size: 50px;
+    line-height: 55px;    
+  }
+  
+  .portfolio-info-header h2 {   
+    font-size: 28px;
+    line-height: 45px;    
+  }
+
+ 
+  .social-links-header img {
+    height: 70px;
+    margin: 2vh 0 2vh 2vw;
+    
+  }
+
+  .profile-image {
+    width: 170px;
+    height: 170px;
+  }
+
+  /* --------------INTRO SECTION-------------- */  
+
+  .paragraph-style {
+    margin: 5vh 5vw 5vh 0;    
+    font-size: 17px;
+    line-height: 35px;  
+  }
+
+  .section-paragraph { 
+    
+    font-size: 17px;
+    line-height: 35px;
+  
+    margin: 5vh 15vw ;  
+   
+    text-align: center;
+    color: #000000;
+  }
+
+  /* --------------FEATURED PROJECTS-------------- */
   
   .featured-projects-wrapper {
     justify-content: space-between;
   }
+
   .featured-projects-card {
     width: 45%;
   }
 
+  /* --------------MY THOUGHTS-------------- */
+
   .my-thoughts-wrapper {    
-    justify-content: space-between;
-   
+    justify-content: space-between;   
   }
+
   .my-thougts-card {    
     width: 45%;
   }
+
+  /* --------------SKILLS-------------- */
 
   .skills-card {
     width: 33%;
     margin-bottom: 3vh;  
   }
-}
 
- 
+  /* --------------FOR MORE-------------- */
+
+  .social-links-bottom {    
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    width: 100%;
+    justify-content: space-evenly;    
+  }
+
+  .social-links-bottom img {
+    width: 80px;
+    margin: 1vw;   
+  }
+
+  /* --------------FOOTER-------------- */
+
+  .footer-paragraph-style {    
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 35px;      
+    text-align: center;
+    
+    color: #FFFFFF;
+  }
+
+  /* --------------TAGS-------------- */
+
+  .tag-wrapper p {     
+    /* Matching line-height and font-size here gives full control 
+       over the size of our tags to the padding*/
+    font-size: 14px; 
+    line-height: 14px;
+  
+    /* Control the size of the tags */
+    padding: 6px;
+  
+    /* Control the spacing of our tags */
+    margin: 10px 8px 3px 0;   
+  }
+} 
 
 /* DESKTOP */
 
 @media (min-width: 1024px) {
 
+  /* --------------WRAPPERS-------------- */  
+  
+  .inner-wrapper {   
+    width: 60%;    
+  }  
+  
+  .inner-wrapper-grey {   
+    width: 60%;    
+  }  
+  
+  .inner-wrapper-white {   
+    width: 60%;    
+  }  
+  
+  .inner-wrapper-blue {    
+    width: 60%;    
+  }
+
+  /* --------------HEADER-------------- */
+
+  .portfolio-info-header {   
+    width: 270px;    
+  }
+
+  .portfolio-info-header p {   
+    font-size: 17px;
+    line-height: 30px;   
+  }
+  
+  .portfolio-info-header h1 {   
+    font-size: 50px;
+    line-height: 55px;    
+  }
+  
+  .portfolio-info-header h2 {   
+    font-size: 28px;
+    line-height: 45px;    
+  }
+
+ 
+  .social-links-header img {
+    height: 70px;
+    margin: 2vh 0 2vh 2vw;    
+  }
+
+  .profile-image {
+    width: 170px;
+    height: 170px;
+  }
+
+  /* --------------INTRO SECTION-------------- */  
+
+  .paragraph-style {
+    margin: 5vh 5vw 5vh 0;    
+    font-size: 17px;
+    line-height: 35px;  
+  }
+
+  .section-paragraph { 
+    margin: 5vh 15vw ;    
+    font-size: 17px;
+    line-height: 35px;       
+  }
+
+  /* --------------FEATURED PROJECTS-------------- */
+
+  .section-titles-red {    
+    font-size: 22px;      
+  }
+  
+  .featured-projects-wrapper {
+    justify-content: space-between;
+  }
+
+  .featured-projects-card {
+    width: 48%;
+  }
+   
+  .project-paragraph-style {    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;    
+  }
+  
+  .project-title {     
+    font-size: 18px;
+    line-height: 35px;     
+  }
+
+  /* --------------OTHER PROJECTS SECTION-------------- */
+
+.section-titles-white{   
+  font-size: 22px;   
 }
+
+.other-projects-info{
+  width: 100%; 
+  font-family: 'Roboto';
+  font-style: normal;
+  margin: 1vh 0 3vh 0;
+}
+
+.other-project-paragraph-style {   
+  font-size: 18px;
+  line-height: 30px;
+  
+
+  color: #000000;
+}
+
+.other-projects-title {  
+  
+  font-size: 18px;
+  line-height: 30px;   
+}
+
+  /* --------------MY THOUGHTS-------------- */
+
+  .my-thoughts-wrapper {    
+    justify-content: space-between;   
+  }
+
+  .my-thougts-card {    
+    width: 45%;
+  }
+
+  .my-thougts-article-title {      
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .article-paragraph-style {        
+    font-size: 18px;
+    line-height: 30px;  
+  }  
+
+  /* --------------MORE THOUGHTS-------------- */
+
+  .more-thougts-article-title {      
+    font-size: 18px;
+    line-height: 30px;      
+  }
+
+  /* --------------SKILLS-------------- */
+
+  .skills-card {
+    width: 33%;
+    margin-bottom: 3vh;  
+  }
+
+  .skills-paragraph-style {    
+    font-size: 18px;    
+  }  
+
+  /* --------------FOR MORE-------------- */
+
+  .social-links-bottom {    
+    margin-top: 6vh;
+    margin-bottom: 6vh;   
+  }
+
+  .social-links-bottom img {
+    width: 100px;     
+  }
+
+  /* --------------FOOTER-------------- */
+
+  .footer-paragraph-style {    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;   
+  }
+
+  /* --------------TAGS-------------- */
+
+  .tag-wrapper p {     
+    /* Matching line-height and font-size here gives full control 
+       over the size of our tags to the padding*/
+    font-size: 18px; 
+    line-height: 18px;
+  
+    /* Control the size of the tags */
+    padding: 6px;
+  
+    /* Control the spacing of our tags */
+    margin: 12px 8px 3px 0;   
+  }
+} 
+
+
