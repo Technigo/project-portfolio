@@ -15,25 +15,32 @@
     background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-    opacity: rgba(0, 0, 0, 0.5);
+    
+}
+
+.header-text-container {
+    display: flex; 
+    flex-direction: column;
+    margin-top: 200px; 
+    margin-left: 24px;  
 }
 
 .header-text {
-    display: flex; 
-    flex-direction: column;
-    margin-top: 150px; 
-    margin-left: 200px; 
-    text-transform: uppercase;
+    font-size: 13px;
+   
     color:#FF7C7C;
-    
+    margin-top:0;
+    margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 .fafa-icons{
     display: flex; 
-    justify-content: flex-end;
+    align-items: flex-end;
     position:absolute;
-    right: 150px;
-    bottom: 330px; 
+    top: 2.8rem;
+    right: 1.2rem; 
+
 }
 
 .linkedin1 , .github1 , .stackoverflow1 {
@@ -45,10 +52,10 @@
     display: flex;
     justify-items: flex-end;
     position: absolute;
-    right: 200px;
-    top: 330px; 
-    width: 200px; 
-    height: 200px; 
+    right: 24px;
+    top: 356px; 
+    width: 180px; 
+    height: 180px; 
     border-radius: 50%;
 	object-fit: cover;
     border-color:black; 
@@ -57,12 +64,10 @@
 
 /* top section. elevator pitch */
 .top-section{
-    text-align: center;
     background-color:rgba(254, 224, 192,0.2) ;
-    margin-bottom: 30px; 
-    padding-top: 50px; 
-    padding-bottom: 50px; 
-    
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+    text-align: center;
 }
 
 .line {
@@ -121,45 +126,31 @@
 	text-transform: uppercase;
 }
 
-.container-project{
+.container-project {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: rgba(254, 224, 192,0.2);
-    margin-top: 30px; 
-    margin-bottom: 30px; 
-    padding-top: 10px; 
-    padding-bottom: 20px; 
+    gap: 10px;
+	padding-bottom: 2.5rem;
+	padding-top: 1rem;
+    margin: 0 auto; 
 }
 
 
 .project-weather {
     display: grid; 
-    grid-column: 2 / 3;
-    margin-right: 15px; 
-    margin-top: 15px; 
+    grid-column: span 4;
 }
 
 .project-chatbot {
     display: grid; 
-    grid-column: 3 / 4; 
-    margin-left: 15px;  
-    margin-top: 15px; 
+    grid-column: span 4;   
 }
 
-.project-guesswho{
-    display: grid; 
-    grid-column: 2 / 3;
-    margin-right: 15px; 
-    margin-top: 15px; 
-}
+.project-guesswho, .project-placeholder{
+    display: none;
 
-.project-placeholder {
-    display: grid; 
-    grid-column: 3 / 4;
-    margin-left: 15px; 
-    margin-top: 15px; 
 }
-
 
 .project-header, .about-code-header, .section-header, .portfolio-header {
     text-align: center;
@@ -169,17 +160,14 @@
     color: white;
     padding:3px;
     
+    
 }
 .portfolio-heading-container{
     display: flex; 
     justify-content: center;
     grid-column: span 4; 
 }
-.portfolio-heading-container-skills {
-    display: flex; 
-    justify-content: center;
-    grid-column: 3 / 4; 
-}
+
 .section-header-skills {
     text-align: center;
     background-color: #FF7C7C;
@@ -192,12 +180,12 @@
 
 .container-project-other {
     display: grid; 
-    grid-column: 2 / 4; 
+    grid-column: span 4; 
 }
 
 .project-other-header {
     display: grid; 
-    grid-column: span;
+    grid-column: span 4;
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
@@ -205,9 +193,7 @@
     color:#FF7C7C;
 }
 
-.projects-other {
-    margin-top: 5px; 
-}
+
 
 /*article about code*/
 
@@ -218,24 +204,25 @@
     margin-bottom: 30px; 
     padding-top: 10px; 
     padding-bottom: 10px; 
+    margin: 0 auto; 
    
 }
 
 .article-code1 {
     display: grid; 
-    grid-column: 2 / 3;
-    margin-right: 15px;
+    grid-column: span 4;
+
 }
 
 .article-code2 {
-    display: grid; 
-    grid-column: 3 / 4;
-    margin-left: 15px; 
+    display: none;
+    
 }
 
 .container-other-article {
     display: grid; 
-    grid-column: 2 / 4;
+    /*justify-content: center;*/
+    grid-column: span 4; 
 }
 
 .article-other-header {
@@ -248,37 +235,56 @@
     color: #FF7C7C;
 }
 
+.articel-other {
+    display: grid; 
+    grid-column: span 4; 
+}
+
+
+
 /*skills*/
-.skills-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+.skills-container{
     background-color: rgba(254, 224, 192,0.2);
-    text-align: center;
-    margin-top: 30px; 
-    margin-bottom: 30px; 
-    padding-top: 10px; 
-    padding-bottom: 10px;  
+    padding-bottom: 25px;
+   
+}
+.parent{
+    display: flex;
+    grid-column: span 4;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+
+.portfolio-heading-container-skills{
+    display:flex; 
+    justify-content: center;
+    grid-column: span4;
+       
 }
 
 .skills-code{
-    display: grid; 
-    grid-column: 2 / 2; 
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    margin-left: 1.5rem; 
 }
 
 .skills-toolbox {
-    display: grid; 
-    grid-column: 3 / 3; 
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    margin-right: 1.5rem;
 }
 
 .skills-more {
-    display: grid; 
-    grid-column: 4 / 4; 
+    display: none;
+    
 }
 
 .skills-upcomming {
-    display: grid; 
-    grid-column: 2 / 2;
-    margin-bottom: 30px; 
+    display: none;
+    
 }
 
 /*for more- links to my github, linkdIN, stackoverflow*/
@@ -320,8 +326,8 @@
     text-align: center;
     font-size: 15px;
     background-color: #FF7C7C;
-    padding-top:100px;
-    padding-bottom:100px; 
+    padding-top:50px;
+    padding-bottom:50px; 
 }
 
 .contact-header {
@@ -355,16 +361,20 @@
 
   p{
     margin: 0;
-    
-  }
+    }
 
   .small-header-skills {
     color:#FF7C7C;
     text-align: center;
   }
+  
 .github , .linkedin , .stackoverflow{
-    color:#FF7C7C; 
+    color:#FF7C7C;  
     
+}
+
+.logos-bottom {
+    margin-top: 15px;
 }
 
 i.fa{
@@ -372,81 +382,136 @@ i.fa{
     border-radius: 80px;
     box-shadow: 0 0 4px black;
     padding: 0.3em 0.4em;
-    margin: 20px; 
+    margin: 15px; 
 }
 
 /*responsive */
 
-@media (min-width: 768px )and (max-width: 1050px;){
+@media (min-width: 768px ){
+    .header-container {
+        height: 682px; 
+    }
+
+    .header-text-container {
+        margin-top: 300px; 
+        margin-left: 100px; 
+    }
+    .header-text {
+        font-size: 30px;
+    }
+
+    .fafa-icons {
+        font-size: 140%;
+    }
 
     .profil-img img {
-        display: flex;
-        justify-items: flex-end;
+        top: 420px; 
+        right: 50px; 
         position: absolute;
-        right: 50px;
-        top: 330px; 
-        width: 200px; 
-        height: 200px; 
-        border-radius: 50%;
-        object-fit: cover;
-        border-color:black; 
-        border:solid; 
-
+        width: 270px;
+        height: 270px;
     }
 
-    .fafa-icons{
-        display: flex; 
-        justify-content: flex-end;
-        position:absolute;
-        right: 15px;
-        bottom: 370px; 
+
+    .project-guesswho, .project-weather, .article-code1{
+        display: grid; 
+        grid-column: 2 / 3;
+        margin-right: 15px; 
+        margin-top: 15px; 
     }
 
-    .header-text {
-        display: flex; 
-        flex-direction: column;
-        margin-top: 150px; 
-        margin-left: 50px; 
-        text-transform: uppercase;
-        color:#FF7C7C;
-        
+    .project-placeholder, .project-chatbot, .article-code2 {
+        display: grid; 
+        grid-column: 3 / 4;
+        margin-left: 15px; 
+        margin-top: 15px;
     }
-}
 
-@media (max-width: 767px){
-    .profil-img img {
+    .projects-other {
         display: flex;
-        justify-items: flex-end;
-        position: absolute;
-        right: 0px;
-        top: 330px; 
-        width: 200px; 
-        height: 200px; 
-        border-radius: 50%;
-        object-fit: cover;
-        border-color:black; 
-        border:solid; 
-
-    }
-
-    .fafa-icons{
-        display: flex; 
-        justify-content: flex-end;
-        position:absolute;
-        right: 15px;
-        bottom: 370px; 
-    }
-
-    .header-text {
-        display: flex; 
         flex-direction: column;
-        margin-bottom: 0; 
-        margin-left: 50px; 
-        text-transform: uppercase;
-        color:#FF7C7C;
-       
-        
+        grid-column: 2 / 2;
     }
+
+    .art
+
+    .article-other-text{
+        display: flex;
+        flex-direction: column;
+        grid-column: 2 / 2;
+    }
+
+    .article-other-header {
+        display: flex;
+        grid-column: span 4;
+        text-align: center;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        padding-bottom: 2.5rem;
+        padding-top: 1rem;
+        margin: 0 auto; 
+        justify-content: space-evenly;
+    }
+
+
+    .portfolio-heading-container-skills{
+        display: flex;
+        grid-column: span 5;
+        text-align: center;
+    }
+
+    .skills-code {
+        display: grid;
+        grid-column: 2 / 3;
+        text-align: center;
+        justify-content: center;
+        margin-left:0;
+    }
+    .skills-toolbox {
+        display: grid;
+        grid-column: 3 / 4;
+        text-align: center;
+        justify-content: center;
+    }
+    .skills-more {
+        display: grid;
+        grid-column: 4 / 5;
+        text-align: center;
+    }
+
+    .skills-upcomming {
+        display: grid;
+        grid-column: 2 / 3;
+        text-align: center;
+    }
+
+  .logos-bottom {
+    font-size: 180%;
+  }
+
+  i.stackoverflow {
+    margin-left: 50px; 
+  }
+  i.github {
+    margin-left: 50px;
+    margin-right: 20px; 
+  }
+  i.linkedin {
+    margin-right: 20px; 
+    margin-left: 50px; 
+  }
+
+  .logo-text {
+    margin-left: 25px; 
+  }
+
+ 
+    
+
 }
 
     
