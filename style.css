@@ -26,7 +26,7 @@ a {
 }
 h1 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: .2rem;
 }
 h2, h3 {
@@ -39,6 +39,7 @@ h2, h3 {
     padding: 5px;
     color: white;
 }
+
 .sub-heading {
     text-transform: uppercase;
     background: none;
@@ -58,6 +59,7 @@ h4 {
 .header-h2 {
     text-transform: lowercase;
     background: none;
+    margin-top: 0;
 }
 h5 {
     font-size: 17px;
@@ -126,7 +128,7 @@ p {
 .portrait-img {
     border-radius: 50%;
     border: solid white 2px;
-    width: 10rem;
+    width: 8rem;
     position: absolute;
     top: 44vh;
     right: 1rem;
@@ -267,10 +269,23 @@ footer p{
     
 }
 
-
+@media (max-width:360px) {
+    .portrait-img {
+        width: 7rem;
+        top: 45vh;
+    }
+}
 
 @media (min-width: 768px) {
-    
+    h1 {
+        font-weight: 700;
+        font-size: 50px;
+        letter-spacing: .2rem;
+    }
+    .portrait-img {
+        /* width: clamp(130px 17vh 200px); */
+        width: 17vh;
+    }
     .intro {
         height: 40vh;
         align-items: center;
