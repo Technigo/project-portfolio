@@ -18,37 +18,56 @@ p {
 header {
     background-image: url("./pexels-madison-inouye-1831234.jpg");
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 3fr;
     color: white;
     height: 55vh;
 }
 
     .headline-container {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 18px;
-        letter-spacing: 0.04em;
         color: #FFFFFF;
-
         grid-column: 1 / 2;
-        padding-left: 20px;
+        padding-left: 5vw;
+        width: 50vw;
     }
 
+        .portfolio-headline {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: 0.04em;
+        }
+
+        .frontend-headline {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 49px;
+        }
+
+        .administrator-headline {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
     .social-media-header-container {
-        grid-column: 2 / 3;
-        justify-self: center;
+        grid-column: 1 / 3;
+        justify-self: right;
         align-self: center;
     }
 
     .profile-pic {
-            width: 160px;
+            width: 180px;
             border-radius: 50%;
             border: solid 2px white;
             position: absolute;
             right: 10%; 
-            top: 35vh;
+            top: 37%;
         }
 
 /*Styling intro-section*/
@@ -61,6 +80,21 @@ header {
     padding: 7vh 6vw 6vh 6vw;
     background-color: #F4F4F4;
 }
+
+    .line { 
+        border: 1px solid #B2A4FF;
+        width: 40px;
+        display: inline-block;
+        margin-bottom: 4px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        background-color: #B2A4FF;
+        border-radius: 50%;
+        display: inline-block;
+    }
 
 /*Styling tech-section*/
 .tech-section {
@@ -81,17 +115,17 @@ header {
         font-size: 22px;
         line-height: 27px;
         color: white;
-        background:red;
+        background: #FF7777;
         align-self: center;
+        justify-self: center;
         padding: 1px;
-        margin-bottom: 10px;
+        margin-bottom: 5vh;
     }
 
 /*Styling feature-project-section*/
 .featured-projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #F4F4F4;
     padding: 7vh 6vw 6vh 6vw;
 }
@@ -99,12 +133,45 @@ header {
     .project {
         display: grid;
         grid-template-columns: 1 fr;
+        padding: 5px;
     }
 
-        .feature-img {
-            width: 100%;
-            filter: contrast(50%);
+        .project-img-container {
+            position: relative;
+            
+            /* This transition will cause the text to fade */
+            transition: 0.5s ease;
         }
+
+        .feature-img {
+            display: block;
+            width: 100%;
+        }
+        
+        .project-img-overlay {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5); /* Black see-through */
+            color: white;
+            width: 100%;
+            height: 100%;
+            transition: .5s ease;
+            opacity:0;
+            text-align: center;
+        }
+
+            .project-img-overlay p {
+                padding: 25%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 34px;
+                letter-spacing: 0.01em;
+            }
+
+        .project-img-container:not(:hover) .project-img-overlay {
+            opacity: 1;
+          }
 
         .red-h3 {
             font-family: 'Roboto';
@@ -113,7 +180,7 @@ header {
             font-size: 17px;
             line-height: 29px;
             letter-spacing: 0.01em;
-            color: #FA382F;
+            color: #FF7777;
             padding: 2vh 0px 1px 0px; 
         }
 
@@ -132,14 +199,6 @@ header {
             line-height: 11px;
             padding: 6px; 
         }
-
-    .three {
-        display: none;
-    }
-
-    .four {
-        display: none;
-    }
    
 /*Styling other-projects-section*/
 .other-projects {
@@ -148,11 +207,9 @@ header {
     background-color: #F4F4F4;
     padding: 7vh 6vw 6vh 6vw;
 }
-
     .small-project {
-        display: grid;
-        grid-template-columns: 1fr;
-
+        display: inline;
+        text-decoration: underline;
         }
 
 /*Styling my-thoughts-section*/
@@ -165,7 +222,6 @@ header {
     .blogg-post {
         display: grid;
         grid-template-columns: 1fr;
-
     }
 
         .date {
@@ -174,7 +230,7 @@ header {
             font-weight: 400;
             font-size: 17px;
             line-height: 41px;
-            color: #FA382F;
+            color: #FF7777;
         }
 
         .blog-headline {
@@ -202,9 +258,11 @@ header {
 }
 
     .skill-section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 2vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 6vh;
+        height: 40vh;
+        flex-wrap: wrap;
     }
 
         .skill-header {
@@ -213,7 +271,8 @@ header {
             font-weight: 700;
             font-size: 17px;
             line-height: 29px;
-            color: #FA382F;
+            color: #FF7777;
+            text-align: center;
         }
 
     li {
@@ -222,6 +281,7 @@ header {
         font-weight: 400;
         font-size: 17px;
         line-height: 29px; 
+        text-align: center;
     }
 
 /*Styling For-more-section*/
@@ -240,7 +300,7 @@ header {
 
 /*Styling footer*/
 footer {
-    background: #072BCE;
+    background: #B2A4FF;
     height: 40vh;
     display: flex;
     flex-direction: row; 
@@ -260,17 +320,147 @@ footer {
             margin-bottom: 5vh;
         }
 
-
 /*Media queries*/
+@media (max-width: 1024px){ 
+	.three {
+	    display: none;
+	}
 
-/*Desktop/*
-
-/*Featured projects*/
-.three {
-    display: none;
+    .four {
+        display: none; 
+    }
 }
 
-.four {
-    display: none;
+/*iPad*/
+@media (min-width: 668px) and (max-width: 1024px) {
+    .headline-container {
+        color: #FFFFFF;
+        grid-column: 1 / 2;
+        padding-left: 10vw;
+        }
+
+    .portfolio-headline {
+            font-size: 18px;
+        }
+
+        .frontend-headline {
+            font-size: 50px;
+            line-height: 80px;
+        }
+
+        .administrator-headline {
+            font-size: 20px;
+        }
+
+    .profile-pic {
+    width: 200px;
+    right: 14%; 
+    top: 35%;
+}    
+    
+    .featured-projects {
+        grid-template-columns: 1fr 1fr;
+        padding: 6vh 20vw 6vh 20vw;
+        column-gap: 4vw;
+    }
+    
+    .one {
+        grid-row: 2 / 3; 
+    }
+    
+    .two {
+        grid-row: 2 / 3;
+    }
+    
+    .three {
+        grid-row: 3 /4;
+    }
+    
+    .four {
+        grid-row: 3 / 4;
+    }
+    
+    .project {
+        width: 26vw;
+    }
+
 }
+/*Desktop*/
+@media (min-width: 1025px){ 
+
+.headline-container {
+    color: #FFFFFF;
+    grid-column: 1 / 2;
+    padding-left: 10vw;
+    }
+
+        .portfolio-headline {
+            font-size: 20px;
+        }
+
+        .frontend-headline {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        .administrator-headline {
+            font-size: 30px;
+        }
+
+    .profile-pic {
+        width: 240px;
+        right: 17%; 
+        top: 31%;
+    }    
+        
+
+.intro-section {
+        padding: 6vh 20vw 6vh 20vw;
+}
+
+.tech-section {
+    padding: 6vh 20vw 6vh 20vw;
+}
+
+.featured-projects {
+    grid-template-columns: 1fr 1fr;
+    padding: 6vh 20vw 6vh 20vw;
+    column-gap: 4vw;
+}
+    .one {
+        grid-row: 2 / 3; 
+    }
+
+    .two {
+        grid-row: 2 / 3;
+    }
+
+    .three {
+        grid-row: 3 /4;
+    }
+
+    .four {
+        grid-row: 3 / 4;
+    }
+
+    .project {
+        width: 26vw;
+    }
+
+.other-projects {
+    padding: 6vh 20vw 6vh 20vw;
+    
+}
+
+.thoughts-about-code {
+    padding: 6vh 20vw 6vh 20vw;
+}
+
+.skills {
+        padding: 6vh 20vw 6vh 20vw;
+
+}
+}
+
+
 
