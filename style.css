@@ -1,14 +1,18 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto:ital@0;1&display=swap');
+
+
 :root {
-    --primary: grey; /* background color 1 */
-    --secondary: whitesmoke; /* background color 2 */
+    --primary: #f3f3f2; /* background colour 1 */
+    --secondary: white; /* background colour 2 */
     --tertiary: black; /* text color */
-    --quinary:red; /* title background color */
+    --quaternary: white;/*Title text colour*/
+    --quinary: #d22135; /* title background colour */
   }
 
 /* for mobile */
 
-.header {
+.outer-wrapper-1 {
     width: 100%;
     height: 95vh;
     display: flex;
@@ -16,11 +20,11 @@
     position: relative;
 }
 
- .header::after {
+ .outer-wrapper-1::after {
     content: "";
     background: url(./assets/header-img.jpg);
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -29,13 +33,12 @@
     z-index: -1;
   
  } 
-.flex-container {
-display: flex;
-}
 
- .link-container {
-    
- }
+.inner-wrapper-1 {
+display: flex;
+width: 80%;
+margin: 0 auto;
+}
 
 .profile-pic {
     position: absolute;
@@ -44,28 +47,107 @@ display: flex;
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 2px solid whitesmoke;
-    
+    border: 2px solid whitesmoke;   
 }
 
 .header-link {
-    height: 40px;
-    width: 40px; 
+    height: 45px;
+    width: 45px; 
 }
 
 .header-text {
 color: whitesmoke;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 18px;
+
+/* or 138% */
+letter-spacing: 0.04em;
+}
+
+.outer-wrapper-grey {
+    background-color: var(--primary);
+    width: 100vw;
+}
+
+.outer-wrapper-white {
+    background-color: var(--secondary);
+    width: 100vw;
+}
+
+.inner-wrapper-2 {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .section {
-    background-color: var(--primary);
-    width: 100vw;
+    text-align: center;
+    font-family: 'Roboto';
+    padding: 5%;
+}
+
+.section h2 {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--quinary);
+    color: var(--quaternary);
+}
+
+.section h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    color: #FA382F;
+}
+
+.section h4 {
+    font-family: 'Roboto';
+    margin-top: 10%;
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 25px;
+
+/* or 119% */
+
+color: #FA382F;
+}
+
+.section p {
     text-align: center;
 }
 
 
+#intro p{
+   padding: 10%;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 29px;
+}
+
 #tech {
-    background: var(--secondary);
+    background-color: var(--secondary);
+}
+
+#tech p {
+    padding: 10%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
 }
 
 
@@ -77,24 +159,88 @@ color: whitesmoke;
     background: var(--secondary);
 }
 
-.section p {
-    /* margin: 20px; */
+.feature-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: left;
+}
+
+.feature-project h3   {
+font-weight: 700;
+line-height: 171%;
+padding-top: 10%;
+}
+
+
+.feature-project p {
+font-weight: 400;
+text-align: left;
+
+}
+
+ a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.overlay-title {
+    display: none;
+}
+
+.tag-wrapper {
+    max-width: 100%;
+}
+
+.tags {
+    margin: 5% 2% 0% 0%;
+    padding: 0 2% 0 2%;
+    background-color: aquamarine;
+    color: black;
+    float: left;
+
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0.01em;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5%;
+    padding-bottom: 10%;
+}
+
+.skill-title {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+footer {
+    background-color: var(--quinary);
+}
+
+.footer-text {
     text-align: center;
-    
+    font-family: 'Montserrat';
 }
 
-.section h2 {
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-    display: inline-block;
-    background-color: red;
 
-}
+/* #thoughts {
+    padding: 10%;
 
-.section h3 {
-    color: red;
-}
+} */
+
 
 
    /* For screen readers, not visible on web page */
@@ -114,6 +260,10 @@ color: whitesmoke;
 
 /* for tablets */
 @media (min-width: 668px) and (max-width: 1024px) {
+
+    .section h2 {
+      letter-spacing: 0.01em;
+    }
 
 }
 /* for desktop */
