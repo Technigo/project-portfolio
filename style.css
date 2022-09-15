@@ -1,0 +1,228 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/*html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grey {
+    background-color: #F4F4F4;
+}
+.red {
+    color: red;
+}
+.white {
+    color: white;
+}
+/**/
+/*****MOBILE*******/
+.top {
+    height: 70vh;
+    width: 100vw;
+    background-image: url('./assets/header-image.png');
+    background-position-x: -52%; /*get sepcific spot of background pi*/
+    background-size: cover;
+    position: relative;
+}
+
+.start-image {
+    width: 55px;
+}
+
+.profile-image {
+    position: absolute;
+    left: 36%; /*properties of the absolute*/
+    bottom: -5%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    object-fit: cover;
+}
+/* what does this do?? 
+.profile-image > img {
+    width: 100%;
+}*/
+
+.tech-tools {
+    margin-top: 0.5rem;
+}
+
+.tool {
+    background-color: #fddfe7;
+    margin-right: 2px;
+    padding: 3px;
+}
+
+.main {
+    border: 2px solid rgb(32, 125, 27);
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.summary {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    margin-top: 2.5rem;
+    /*padding-left: 6.4%;
+    padding-right: 6.4%; or should I have padding instead?*/
+}
+
+.large-headline {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+   /* padding-top: ; which height to use?*/
+    margin: 2.5rem 0;
+    background-color: red;
+    display: inline;
+}
+
+.medium-headline {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 2.5rem 0;
+}
+
+.small-headline {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    color: red;
+}
+
+.project-image {
+    width: 100%;
+    position: relative;
+   /*padding-top: 2.5rem;
+    height: 100%;*/
+
+    /* This transition will cause the text to fade */
+    transition: 0.5s ease;
+
+}
+
+.project-image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    /* This is a semi-transparent overlay on the image */
+    background-color: rgba(0, 0, 0, 0.5);
+  
+    /* This will cause the overlay to fade */
+    transition: 0.5s ease;
+}
+
+.project-image:hover {
+    /* This causes the text to fade, color is the text color */
+    color: transparent;
+}
+  
+.project-image-overlay:hover {
+    /* This causes the original background color (.5 opacity) to become transparent */
+    background-color: transparent;
+}
+.highlight {
+    text-align: left;
+    color: red;
+}
+.bold {
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*align-items: center;
+    text-align: center;*/
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.list {
+   
+}
+
+ul {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    list-style-type: none;
+    border: 1px solid blue;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+li {
+    
+}
+.project-description {
+
+}
+
+footer {
+    background-color: #072BCE;
+    color: white;
+}
+
+/* example of ARIA styling: 
+div.tooltip[aria-hidden="true"] {
+    display: none;
+}*/
+  
+/* TABLET STYLING */
+@media (min-width: 668px) and (max-width:1024px) {
+
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+    .top {
+        height: 56vh;
+    }
+
+    .profile-image {
+        width: 17%;
+        left: 62%;
+    }
+
+    .summary {
+        font-size: 30px;
+        line-height: 50px;
+        /*padding-left: 6.4%;
+        padding-right: 6.4%; or sould I have padding instead?*/
+    }
+
+    .start-image {
+        width: 98px;
+    }
+}
