@@ -15,6 +15,8 @@
     background-position: center !important;
     background-size: cover !important;
     position: relative;   
+
+
 }
 
 .header-text {
@@ -51,6 +53,21 @@
     top: 10px;
 }
 
+.fa {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-size: 20px;
+    padding: 4px 6px;
+  }
+  
+  .icon-anchor {
+    text-decoration: none;
+  }
+
+/*
 .icon-border {
     border: 2px solid #FFFFFF;
     border-radius: 50%;
@@ -60,7 +77,7 @@
 
 img.icon {
     max-width: 20px;
-}
+}*/
 
 .profile-picture {
     /*grid-row: 10;
@@ -91,8 +108,23 @@ img.icon {
 
 .about-section {
     background-color: #F4F4F4;
-    padding: 8%;   
+    padding: 15%;   
   }
+
+  .line {
+    border: 1px solid #c62a88;
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #c62a88;
+    border-radius: 50%;
+    display: inline-block;
+}
 
 .tech-section {
     padding: 8%;
@@ -101,20 +133,86 @@ img.icon {
 
 /* SKILL SECTION */
 
-.skill-header {
-    display: flex;
-    justify-content: center;
-  
+li {
+    list-style: none;
 }
 
-.skill-container {
+.skills-section {
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.skill-header {
+    /*display: flex;
+    justify-content: center;*/
+    
+    background-color: black;
+    color: white;
+    margin: 20px auto;
+    width: 100px;  
+    text-align: center; 
+    padding: 10px;
+}
+
+.skills-parent {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    gap: 20px;
+    /*display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;*/
+}
+
+.skills-child {
+    width: 200px;
+    text-align: center;
+    /*grid-column: span 4;
+    padding: 10px;
+    border: 1px solid #333;   */
+}
+
+.for-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 8%;
+    gap: 20px;
+  }
+
+  .for-more h2 {
     display: flex;
     justify-content: center;
-}
+
+  }
+
+.bottom-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bottom-links .fa{
+    color: #11423f;
+    border: 2px solid #11423f;
+    margin: 5px;
+    border-radius: 50%;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-size: 25px;
+    padding: 4px 6px;
+  }
+  
 
 .footer {
     text-align: center;
-    background-color: black;
+    background-color: #333;
     color: white;
+    padding: 30px;
 }
 
