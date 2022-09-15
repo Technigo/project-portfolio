@@ -7,64 +7,86 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/d3a081d521.js" crossorigin="anonymous"></script>
-    <title>Portfolio - Charlotte Johansson</title>
+    <title>Hi, I'm Charlotte!</title>
 </head>
 <body>
     
     <!--Header picture, h1 and name-->
-    <header class="main-header">
-        <img class="header-image-vertical" src="./images/header-image-vertical.jpg" alt="header-image-vertical">
-        <div class="desktop-container">
+    <header>
+                <p class="portfolio">PORTFOLIO: CHARLOTTE JOHANSSON</p>
+            <div class="main-text">
+                <h1 class="header-developer">frontend developer</h1>
+                <h2 class="header-skills">+ project manager</h2>
+            </div>
+            
+            <!--Icons-->
             <div class="icon-container">
                 <a target="_blank" href="https://www.linkedin.com/in/charlotte-johansson-51b063a4/">
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-linkedin-in" alt="Linkedin icon"></i>
                 </a>
                 <a target="_blank" href="https://github.com/charlottejohansson">
-                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-github" alt="Github icon"></i>
                 </a>
                 <a target="_blank" href="https://www.linkedin.com/in/charlotte-johansson-51b063a4/">
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-linkedin-in" alt="Linkedin icon"></i>
                 </a>
-            </div>
-            <div class="main-text">
-                <p class="portfolio">PORTFOLIO: <span>CHARLOTTE JOHANSSON</span></p>
-                <h1>frontend developer</h1>
-                <h2>+ project manager</h2>
-            </div>
+
         </div>   
-        <img class="profile-image" src="https://www.placecage.com/c/200/200" alt="Nic Cage">
+
+        <img 
+            class="profile-image" 
+            src="./images/image-charlotte.png" 
+            alt="Charlotte Johansson"/>
     </header>
     
-    <!--Top section-->
+    <!--Intro section-->
     <section class="top-section">
         <p class="pitch">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure, error qui, sed ut assumenda numquam ab ipsam animi a, suscipit temporibus fuga accusamus deserunt consectetur ipsum repellendus dicta libero?
         </p>
     </section>
     
-    <!-- Summary section
-    <section class="summary">
-        <h2>Summary section</h2>
-        <p>XXX</p>
-    </section> -->
-    
     <!--Tech section-->
     <section class="tech-section">
-        <h2 class="tech-heading">TECH</h2>
-        <p class="tech-text">HTML, CSS, JavaScript</p>
+        <div class="heading-container">
+            <h2 class="tech-heading">TECH</h2></div>
+            <p class="tech-text">HTML, CSS, JavaScript</p>
     </section>
 
     <!--Feature section-->
     <section class="feature-section">
-        <h2 class="feature-heading">Featured project</h2>
+        <div class="heading-container">
+            <h2 class="feature-heading">Featured project</h2>
+        </div>
 
-        <img class="project-image1" src="./images/project-image.jpg" alt="project-image1">
-        <!-- <div class="project-text1"> -->
-        <h3 class="project-header1">CHAT BOT BUILT IN JAVASCRIPT</h3>
-        <p class="project-description1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, et.</p></div>
-
-        <img class="project-image2" src="./images/project-image.jpg" alt="project-image2">
-        <h3 class="project-header2">WEATHER APP</h3>
-        <p class="project-description2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, et.</p>
+            <div class="feature-projects-container">
+                <div class="feature-project-wrapper">
+                    
+                    <!--First project card-->
+                    <div class="feature-project-card">
+                        <article class="feature-card">
+                            <div class="project-image-container">
+                                <div class="overlay"></div>
+                                    <img class="image" src="./images/project-image.jpg"  alt="image1">
+                                    <h2 class="image-overlay">XX</h2>
+                            </div>
+                            <div>
+                                <h3">WEATHER APP</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, et.</p>
+                            </div>    
+                            <div class="project-codes">
+                                <span>XXX</span>
+                                <span>XXX</span>
+                                <span>XXX</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://petraandcharlotteweatherapp.netlify.app/" target="_blank"><button>View live</button></a>
+                                <a href="https://github.com/petrasson/project-weather-app" target="_blank"><button>View on Github</button></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        
     </section>
 
     <!-- Other project section
