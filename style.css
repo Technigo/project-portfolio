@@ -6,10 +6,23 @@ colors:  #6fb9bd #96A749 #D64819 #E6836C #e9722d
 
 /* MAIN SITE INFO */
 body {
-    background-color: white;
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    overflow-x: hidden; 
+}
+
+.outer-wrapper {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 a {
@@ -24,7 +37,7 @@ a:hover {
 
 .main-header {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 5%;
@@ -68,7 +81,7 @@ a:hover {
 
 .hero h1 {
     color: #FFFFFF;
-    font-size: 38px;
+    font-size: 40px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -81,7 +94,7 @@ a:hover {
 
 .hero h3 {
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     font-family: 'Roboto', sans-serif;
 }
@@ -105,11 +118,8 @@ a:hover {
 }
 
 .intro p {
-    text-align: start;
-    font-size: 13px;
-    line-height: 25px;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
+    font-size: 16px;
+    line-height: 30px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -126,8 +136,8 @@ a:hover {
 
 .tech p {
     text-align: center;
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 30px;
     margin-inline-start: 10px;
     margin-inline-end: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -137,13 +147,11 @@ a:hover {
 .featured-projects {
     background-color: rgb(253, 248, 240);
     padding: 5%;
-    padding-top: 10%;
 }
 
 .featured-projects a {
-    position: relative;
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     padding-bottom: 8%;
 }
@@ -155,31 +163,27 @@ a:hover {
 } 
 
 .title {
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 30px;
     font-family: 'Roboto', sans-serif; 
 }
 
 .featured-projects p {
     color: black;
-    font-size: 13px;
-    line-height: 25px;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
+    font-size: 16px;
+    line-height: 30px;
     font-family: 'Roboto', sans-serif; 
 }
 
 .box-text {
-    position: absolute;
     display: flex;
     flex-direction: row;
-    width: 50%;
-    left: 8px;
-    bottom: 10px;
+    width: 70%;
+    padding-top: 2%;
 }
 
 h6 { 
-    font-size: 6px;
+    font-size: 10px;
     font-family: 'Roboto', sans-serif; 
     padding: 2%;
 }
@@ -192,10 +196,16 @@ h6 {
 
 
 /* MY THOUGHTS */
+.my-thoughts {
+    height: 150px;
+    width: 100vw;
+    padding: 5%;
+}
 
 /* SKILLS */
 .skills {
     background-color: rgb(253, 248, 240);
+    width: 100vw;
     padding: 5%;
 }
 
@@ -220,18 +230,21 @@ h6 {
 
 .skills h4 {
     color: #e9722d;
+    font-weight: bold;
 }
 
 .skills p {
     color: black;
-    font-size: 13px;
-    line-height: 25px;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
+    font-size: 16px;
+    line-height: 30px;
     font-family: 'Roboto', sans-serif; 
 }
 
 /* MORE INFO */
+.more-info {
+    width: 100vw;
+    padding: 5%;
+}
 
 .more-info .links {
     display: flex;
@@ -261,6 +274,7 @@ footer {
     align-items: center;
     flex-direction: column;
     height: 200px; 
+    width: 100vw;
     background: #6fb9bd; /*  #96A749  #e9722d;#E6836C */
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -285,6 +299,10 @@ footer p {
 
 /* DESKTOP */
 @media (min-width: 1025px) {
+
+    .input-wrapper {
+        width: 80%;
+    }
 
     .main-header {
         font-size: 25px;
