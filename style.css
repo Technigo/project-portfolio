@@ -110,10 +110,14 @@ p {
     margin: 0 .5rem;
     width: 48px;
     height: 48px;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
-    /* using this calculator I was able to change colors to match what i want https://codepen.io/sosuke/pen/Pjoqqp */
+    /* using this calculator I was able to change colors to match what i want https://codepen.io/sosuke/pen/Pjoqqp 
     filter: invert(17%) sepia(44%) saturate(591%) hue-rotate(138deg) brightness(21%) contrast(89%);
+ */
+}
+svg rect {
+    fill:#1A3C40;
 }
 .linkedin {
     background-image: url(./images/linkedin.svg)
@@ -184,17 +188,22 @@ display: flex;
     margin: 1rem 0;
 
 }
+
+.other-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 .other-project {
     align-self: flex-start;
+    
 }
 
-.other {
+.other-thoughts {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
     width: 100%;
-   
 }
 
 .skill-wrapper {
@@ -208,9 +217,7 @@ display: flex;
     text-align: center;
     display: block;
 }
-/* .skill-group2 {
-    grid-column-start: 1;
-} */
+
 ul {
     list-style-type: none;
     margin-bottom: 16px;
@@ -225,7 +232,7 @@ li {
 .more {
     grid-column-start: 2;
 }
-/*FRÅN TECHNIGO*/
+
 .tag-wrapper {
     display: flex;
 }
