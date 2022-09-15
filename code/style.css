@@ -117,7 +117,7 @@ h3 {
     text-align: center;
     color: #fff;
     padding: 7px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     font-size: 18px;
     margin: 20px; 
   
@@ -149,6 +149,7 @@ background-color: #f5f2e3;
 margin: 20px; 
 width: 350px; 
 height: auto;
+
 }
 
 
@@ -158,13 +159,14 @@ height: auto;
   }
 
 .image_title {
-    margin: 10px; 
+    margin: 10px 15px 0px 10px; 
     /* border: solid red 2px;  */
-    width: 100 vw;
+    /* width: 100 vw; */
     position: relative;
     background-position: center;
     background-size: cover;
    height: 30vh;
+   
 
 }
 
@@ -187,7 +189,7 @@ position: absolute;
 left: 50%;
 color: white;
 /* border:solid #ba4622; */
-padding: 12px;
+padding: 20px;
 border-radius: 10px;
 background:   #c4b991;
 transform: translate(-50%, -50%);
@@ -245,31 +247,30 @@ font-family: "Roboto";
 
 }
 
-/* .other-projects.project {
-
-    margin: 0px; 
-} */
 
 .describing-text b {
 color:#ba4622;
 }
 
-.project-hide {
+/* .project-hide {
     visibility: hidden;
-}
+} */
 
 .grid-projects {
-height: 870px; 
-
+height: auto; 
+display: flex;
+flex-direction: column;
+align-items: center;
 }
+
 .other-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f5f2e3;
     /* border: solid red 2px;  */
-    width: 100 vw;
-    height: auto;
+    /* width: 100 vw;
+    height: auto; */
     padding: 0 0 25px 0; 
     /* border: solid red 2px;  */
     /* gap: 10px;  */
@@ -330,7 +331,7 @@ visibility: hidden;
 }
 .body {
     display: flex;
-    /* align-items: center; */
+   text-align: center;
     margin:0px 0px 20px 0px; 
     gap: 30px; 
      
@@ -361,6 +362,18 @@ font-size: 15px;
 margin: 10px;
 }
 
+.social-media button {
+background-color: transparent;
+}
+
+.social-media button:hover p {
+    background-color: #ba4622;
+    border-radius: 5%;
+    padding: 10px;
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    }
 .icon {
     margin: 7px; 
     width: 2em;
@@ -391,9 +404,117 @@ color: rgb(255, 255, 255);
     margin: 20px; 
 }
 
- 
 
 
+
+@media (min-width: 668px) {
+
+    .grid-projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; 
+        align-items: center;
+      
+        height: auto;
+}
+
+.project-hide{ 
+    visibility: visible;
+    border-radius: 15px;
+    background-color: #f5f2e3;
+    margin: 20px; 
+    width: 300px; 
+    }
+
+.project {
+width: 300px; 
+}
+
+}
+
+
+
+@media (min-width: 668px) and (max-width: 1024px) {
+.project-image {
+    height: 75%;
+ }
+ .image_title {
+    height: 100%; 
+ }
+
+ .hero-image {
+    height: 50vh;
+    }
+
+    .hero-image video {
+        height: 50vh;
+
+    }
+
+.profile-image {
+     width: 250px;  
+    right: 10%; 
+        }    
+
+.icons {
+    right: 10%; /* ändra till 15% i desktop */
+    top: 15%; 
+    width: 12em;
+}
+        
+.hero-text {
+    top: 30%; /* ändra till 30% i desktop */
+    width: 50%;  /* ändra till 40% i desktop */
+    left: 15%;
+ }
+        
+h1 {
+font-size: 55px;   
+ }
+     
+ .hero-text p {
+    font-size: 25px;
+ }
+
+ .hero-text h2 {
+    font-size: 30px;
+ }
+
+.presentation-text {
+width: 75%; 
+margin: 75px; 
+}
+
+.presentation-text {  
+font-size: 20px;
+} 
+
+.tech-text {
+    font-size: 20px;
+    width: 65%; 
+    margin: 20px 0px 50px 0px; 
+    }
+
+
+.project {
+width: 330px; 
+}
+
+
+
+.title {
+
+    font-size: 15px;
+   
+    }
+
+
+.describing-text {
+
+    font-size: 15px;
+}
+
+}
 @media (min-width: 1024px) {
 
     .hero-image {
@@ -401,13 +522,13 @@ color: rgb(255, 255, 255);
         }
 
     .profile-image {
-         width: auto;/* ta bort i media desktop */
-        right: 15%; /* ändra till 15% i desktop */
+         width: auto;
+        right: 15%;
 
-            }    
+        }    
 
     .icons {
-        right: 10%; /* ändra till 15% i desktop */
+        right: 15%; /* ändra till 15% i desktop */
         top: 15%; 
         width: 10em;
     }
@@ -444,13 +565,7 @@ color: rgb(255, 255, 255);
         width: 50%; 
         margin: 20px 0px 50px 0px; 
         }
-    .grid-projects {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px; 
-            align-items: center;
-            height: auto;
-    }
+   
 
     .project-hide{ 
         visibility: visible;
@@ -459,17 +574,21 @@ color: rgb(255, 255, 255);
         margin: 20px; 
         width: 400px; 
         }
+
 .project {
     width: 400px; 
-
 }
     
+.project-image {
+    height: 95%;
+
+ }
 .project-hide:hover {
     transform: scale(1.1);
     transition: transform 0.5s;
   }
  .other-projects .project {
-    width: 600px;
+    width: auto;
 margin: 0px; 
 transform: none;
  }
@@ -518,6 +637,5 @@ span, button {
 
     flex-direction: row;
 }
-
 
 }
