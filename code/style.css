@@ -5,10 +5,11 @@ body {
     padding: 0;
 }
 
+
 header {
     position: relative;
     width: 100%;
-    height: 520px;
+    height: 500px;
     left: 0px;
     top: 0px;
     background: url(https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
@@ -19,24 +20,28 @@ header {
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 60%;
+    width: 0%;
     left: 10%;
     top: 30%;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    font-weight: 400;
     flex-wrap: wrap;
 }
 
 .header-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 0.8em;
     letter-spacing: 0.04em;
+    font-weight: 400;
     color: #FFFF;
 }
 
-.bold-name {
+.bold {
     font-weight: 700;
+}
+
+.color {
+    color:#66204a;
 }
 
 .title {
@@ -54,25 +59,29 @@ header {
 }
 
 .soMe-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     position: absolute;
-    width: 130.5px;
-    height: 40px;
-    right: 10%;
+    right: 14%;
     top: 10%;
+    display: flex;
+    gap: 5%;
+    max-width: 200px;
+}
+
+.soMe-bar {
+    width: 45px;
+    filter: invert(1);
 }
 
 .profile-pic {
     position: absolute;
     right: 10%;
-    top: 70%;
-    height: 180px;
-    width: 180px;
+    top: 72%;
+    height: 150px;
+    width: 150px;
     border: 2px solid white;
     border-radius: 50%;
     object-fit: cover;
+    filter: brightness(0.8);
 }
 
 .start-figure {
@@ -80,10 +89,11 @@ header {
 }
 
 .intro-section {
-    padding: 5% 5% 0 5%;
-    width: 90%;
-    height: 324px;
+    padding: 5%;
     background: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .intro-summary, .tech-summary {
@@ -98,21 +108,28 @@ header {
     display: flex;
     flex-direction: column;
     padding: 5%;
-    width: 90%;
+    height: 285px;
     text-align: center;
 }
 
-.featured-projects, .my-thoughts, .skills {
+.other-projects, .more-thoughts {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 90%;
+}
+
+.featured-projects, .my-thoughts, .skills  {
     background: #F4F4F4;
     padding: 5%;
     width: 90%;
 }
 
-.tech-heading, .featured-heading, .other-heading, .myThoughs-heading, .moreThoughs-heading, .skills-heading, .formore-heading, .formore-heading {
+.tech-heading, .featured-heading, .other-heading, .mythoughts-heading, .morethoughts-heading, .skills-heading, .formore-heading, .formore-heading {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.37em;
+    font-size: 1.2em;
     color: #FFFFFF;
     background-color: #e58532c2;
     line-height: 1.68em;
@@ -121,34 +138,39 @@ header {
     padding: 0 1%;
 }
 
-.featured-h-container, .other-h-container, .moreThoughts-h-container, .skills-h-container, .formore-h-container, .myThoughts-h-container {
+.featured-h-container, .other-h-container, .morethoughts-h-container, .skills-h-container, .formore-h-container, .mythoughts-h-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.featured-projects-container, .other-projects-container {
+.featured-projects-container, .other-projects-container,  .mythoughts-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    align-items: center;
 }
 
-.project-card a {
+.morethoughts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
     text-decoration: none;
 }
 
-.featProject-heads {
+.project-heads, .thoughts-heads {
     font-family: 'Roboto';
-    line-height: 1.81em;
+    line-height: 0.8em;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.01em;
     color: #66204a;
     font-size: 1.1em;
-    margin-bottom: -5%;
 }
 
-.featProject-info {
+.project-info, .thoughts-info {
     font-family: 'Roboto';
     line-height: 1.81em;
     font-style: normal;
@@ -156,6 +178,10 @@ header {
     letter-spacing: 0.01em;
     color: black;
     font-size: 1.1em;
+}
+
+.project-info:hover, .more-thoughts-card:hover, .thoughts-card:hover {
+    text-decoration: underline;
 }
 
 .tag-container {
@@ -171,7 +197,7 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: .7em;
+    font-size: 1em;
     letter-spacing: 0.01em;
     color: #FFFFFF;
     background-color: #66204a;
@@ -182,7 +208,6 @@ header {
 
 .overlay {
     position: relative;
-    width: 100%;
 }
 
 .overlay-image {
@@ -191,6 +216,11 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.3s ease;
+}
+
+.thoughts-img {
+    width: 100%;
+    height: 100%;
 }
 
 .overlay-text {
@@ -218,12 +248,63 @@ header {
     background-color: transparent;
 }
 
+.arrows {
+    color:#66204a;
+    font-weight: 700;
+}
+
 .hidden {
     display: none;
 }
 
+.date {
+    font-family: Roboto;
+    font-size: 1.2 em;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: black;
+}
+
+.skills-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 0.9em;
+}
+
+.skill {
+    line-height: 1.1em;
+}
+
+.soMe-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+}
+
+.soMe-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.soMe {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: black;
+}
+
+.soMe-icons {
+    width: 100px;
+}
+
 footer {
-    background-color: black;
+    background-color:#66204a;
     font-family: 'Montserrat';
     font-style: normal;
     text-align: center;
@@ -234,7 +315,6 @@ footer {
     font-weight: 700;
     font-size: 1.37em;
     color: #FFFFFF;
-    line-height: 1.68em;
 }
 
 .contact-details {
@@ -244,9 +324,88 @@ footer {
 }
 
 .contacts {
-    font-size: 1.37em;
     font-weight: 400;
     font-size: 1.062em;
-    line-height: 1.81em;
+    line-height: 0;
     color: #FFFFFF;
+}
+
+
+    /** Media Queries **/ 
+
+@media (min-width: 768px) {
+ 
+    
+    .soMe-header {
+        right: 15%;
+        top: 12%;
+        gap: 8%;
+    }
+
+
+    .intro-section, .tech-section {
+        padding: 2%;
+    }
+
+    .intro-summary, .tech-summary {
+        font-size: 1.4em;
+        width: 80%;
+        align-self: center;
+    }
+
+    .hidden {
+        all: unset
+    }
+
+    .featured-projects-container, .other-projects-container, .mythoughts-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4%;
+        padding: 5%;
+        justify-items: center;
+    }
+
+    .overlay-image, .project-img {
+        height: 30vw;
+    }
+
+    .skills-group {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+ 
+    .soMe-header {
+        right: 15%;
+        top: 12%;
+        gap: 8%;
+    }
+
+    .intro-section, .tech-section {
+        padding: 2%;
+    }
+
+    .intro-summary, .tech-summary {
+        width: 70%;
+        align-self: center;
+    }
+
+    .hidden {
+        all: unset
+    }
+
+    .featured-projects-container, .other-projects-container, .mythoughts-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4%;
+        padding: 2%;
+        justify-items: center;
+    }
+
+    .overlay-image, .project-img {
+        height: 20vw;
+    }  
+
+    .soMe-more {
+        padding: 2% 30% 0 30%;
+    }
 }
