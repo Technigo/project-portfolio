@@ -12,7 +12,6 @@ p {
 }
 /****HEADER*****/
 .header-container {
-  /* background-color: rgb(206, 149, 149);*/
   width: auto;
   height: 27vw;
   position: relative;
@@ -81,7 +80,7 @@ p {
   border-radius: 50%;
   border: 2px solid white;
 }
-.icons {
+.icons-top {
   font-size: 3em;
   color: rgb(255, 255, 255);
   position: absolute;
@@ -91,58 +90,61 @@ p {
 
 
 
+
 /* 
 https://www.youtube.com/watch?v=zHZRFwWQt2w&list=PL4-IK0AVhVjPRj8P56TtFX2hg33BlbT3x&index=16 */
 /****SECTION*****/
 
 .grey-container {
-  background: rgb(232, 229, 229);
+  background: #F4F4F4;
   width: 100%;
   /* max-width: 1000px; */
   margin: 0 auto;
+  padding: 20px 0px 0px 0px;
   display: flex;
   display: row;
+
 }
 .white-container {
   background: white;
   width: 100%;
   /* max-width: 1000px; */
   margin: 0 auto;
-  display: flex;
-
+  padding: 20px 0px 0px 0px;
+  /* display: flex; */
 } 
 
 .project-container{
-  background: rgb(232, 229, 229);
-  width: 100%;
+  background: #F4F4F4;
+ width: 100%;
   /* max-width: 1000px; */
-  margin: 0 auto;
+ margin: 0 auto;
+ padding: 20px 0px 0px 0px;
   /* display: flex;
   display: row; */
-}
+}  
 
 .box-wrapper {
   padding: 0px;
   width: 57%;
   margin: 0 auto;
-  border: 3px solid rgb(162, 70, 162);
-  /* display: flex; */
+  /* border: 3px solid red; */
 }
 
-
-.box-title { /*DO I need it? see buttons*/
-  padding: 50px 10px 5px 10px;
+.box-title {
+  padding: 20px 0px 0px 0px;
   margin: 0px;
   display: flex;
   justify-content: center;
+  /* border: 3px solid yellow; */
+
 
 }
 .title {
   margin: auto;
-  padding: 10px;
-
+  padding: 8px;
   font-family: Montserrat, sans-serif;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 600;
   text-align: center;
   align-self: center;
@@ -152,30 +154,50 @@ https://www.youtube.com/watch?v=zHZRFwWQt2w&list=PL4-IK0AVhVjPRj8P56TtFX2hg33Blb
   background-color: rgb(155, 149, 157);
   display: inline;
   justify-content: center;
+  /* border: 3px solid black; */
+}
+
+.title-small{
+  margin: auto;
+  padding: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  align-self: center;
+  letter-spacing: 1px;
+  /* background-color: transparent; */
+  color: rgb(0, 0, 0);
+   display: inline;
+  justify-content: center;
 }
 
 .box {
   height: relative;
   /* border: 3px solid red; */
-  padding: 3vh 0 5vh 0;
+  padding: 30px 0 50px 0;
   font-family: Montserrat, sans-serif;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 20 px; 
   letter-spacing: 1px;
-  line-height: 26px;
-  border: 3px solid blue;
-}
+  line-height: 34px;
+ }
+ .box p{
+  text-align: center;
+ }
 
 
 .project-box { /*keep all projects, gridparent*/
+  padding: 30px 0 50px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 30px;
 }
 
 .project{ /*Keeping all info about one project*/
   height: relative;
   width: 450px;
-  border: 3px solid rgb(173, 90, 90); 
+  /* border: 3px solid rgb(173, 90, 90);  */
   /* padding: 3vh 0 5vh 0; */
   font-family: Montserrat, sans-serif;
   font-size: 16px;
@@ -215,27 +237,34 @@ https://www.youtube.com/watch?v=zHZRFwWQt2w&list=PL4-IK0AVhVjPRj8P56TtFX2hg33Blb
 
 /*text wrapper*/
 .project-text{
+font-family: Roboto, sans-serif;
 display: flex;
 flex-direction: column;
 }
 
 .project-title{
-  font-family: Roboto, sans-serif;
   font-size: 18px;
   color: red;
-  font-weight: 600;
-  padding: 20px 0px 0px;
+  font-weight: 700;
+  line-height: 15px;
+  margin: 10px 20px 10px 0px;;
+ /* padding: 20px 0px 0px; */
  
 
 }
 .text{
-  padding: 5px 0px 10px;
-  font-family: Roboto, sans-serif;
+  margin: 10px 0px;
+ padding: 0px 0px 0px;
+  font-size: 17px;
+  letter-spacing: 1.4px;
+   line-height: 15px; 
+  /* text-align: center; */
 }
 
 .project-button{
   display: flex;
   flex-direction: row;
+  padding: 0px 0px 20px 0px;
 }
 
 .button{
@@ -245,25 +274,65 @@ flex-direction: column;
   padding: 0px 13px;
   margin: 5px 7px 5px 0px;
   background-color: rgb(202, 202, 224);
-
 }
-.skill-box{
+
+.project-row{
+  display: flex;
+  flex-direction: row;  
+  font-family: Roboto, sans-serif;
+}
+
+.grid-box{
+  padding: 30px 0 50px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 20px;
 }
+
 .skills{
   font-family:  Roboto, sans-serif;
   font-weight: 400;
   display: flex;
   flex-direction: column;
 }
-.footer-container {
-  background: white;
-  width: 100%;
-  height: 40px;
-  font-size: 11px;
 
+.icon-end{
+  font-family:  Roboto, sans-serif;
+  font-weight: 400;
+  color: rgb(72, 19, 19);
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.footer-container {
+  background: rgb(116, 3, 3);
+  width: 100%;
+  height: 300px;
   /* max-width: 1000px; */
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+
+ }
+
+.contact{
+  font-weight: 700;
+  padding: 70px 0px 20px 0px;
+  font-size: 27px;
+
+}
+
+.contact-info{
+  font-weight: 400;
+  padding: 5px;
+  font-size: 18px;
+
 }
