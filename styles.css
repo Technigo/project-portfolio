@@ -21,7 +21,19 @@ body {
 .hero-icons {
     position: absolute;
     right: 10%;
-    margin-top: 20px;
+    top: 8%;
+}
+
+.linkedin:hover {
+    filter: drop-shadow(1px 1px 3px white);
+}
+
+.github:hover {
+    filter: drop-shadow(1px 1px 3px white);
+}
+
+.stackoverflow:hover {
+    filter: drop-shadow(1px 1px 3px white);
 }
 
 .hero-icons img{
@@ -64,14 +76,12 @@ body {
     background-color: #FFFBE9;
     height: 100%;
     width: 100%;
-    padding: 20% 10% 10% 10%;
+    padding: 15% 10% 10% 10%;
     text-align: left;
-}
-
-.introduction p{
     font-size: 16px;
     text-align: justify;
     line-height: 30px;
+    color: #614124;
 }
 
 .tech-section{
@@ -93,6 +103,7 @@ body {
 .tech-skills{
     font-size: 16px;
     line-height: 30px;
+    color: #614124;
 }
 
 .all-projects{
@@ -118,28 +129,68 @@ body {
 .projects{
     display: grid;
     grid-template-columns: 100%;
-    margin: 5% 10% 5% 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     background-color: white;
+    width: 65%;
 }
 
 .project-screenshot{
     margin: 2%;
+    position: relative;
+    width: 100;
+}
+
+.project-screenshot img{
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f8f8f8db;
+}
+
+.project-screenshot:hover .overlay {
+    opacity: 1;
+}
+
+.projects h3{
+    margin: 0 5% 2% 5%;
+    color: #614124;
+    font-size: 16px;
+}
+
+.overlay h3{
+    color: #614124;
+    text-decoration: overline;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .project-screenshot img{
     max-width: 100%;
 }
 
-.projects h3{
-    margin: 0 5% 2% 5%;
-    color: #1E5128;
-    font-size: 16px;
-}
-
 .projects p{
     text-align: left;
     margin: 0 5% 5% 5%;
-    color: #1E5128;
+    color: #614124;
     font-size: 15px;
 }
 
@@ -186,11 +237,16 @@ body {
 }
 
 .other-projects-description a{
-   color: #1E5128; 
+    color: #614124;
+    text-decoration: overline;
+}
+
+.other-projects-description a:hover{
+    text-decoration: underline;
 }
 
 .other-projects-description p{
-    color: #1E5128;
+    color: #614124;
     margin-top: 5%;
     font-size: 16px;
 }
@@ -227,13 +283,20 @@ body {
 .thoughts-section{
     display: flex;
     flex-direction: column; 
-    margin: 5% 10%;
+    width: 65%;
+    margin-top: 5%;
 }
 
 .thoughts-section a{
     text-decoration: none;
+    color:#614124;
     box-shadow: 2px 3px 20px #9aa29b;
     margin-bottom: 10%;
+}
+
+.thoughts-section a:hover{
+    opacity: 50%;
+    transition: opacity 1s;
 }
 
 .thoughts-article{
@@ -264,7 +327,7 @@ body {
 }
 
 .thoughts-summary{
-    color: #1E5128;
+    color:#614124;
     background-color: white;
     padding: 2% 0;
     font-size: 16px;
@@ -328,9 +391,21 @@ body {
 }
 
 .social-media-icons img{
-    height: 60px;
+    height: 10px;
     padding-left: 10px; 
     padding-right: 10px;
+}
+
+.github-socmed:hover{
+    filter: drop-shadow(1px 1px 3px rgb(0, 0, 0));
+}
+
+.linkedin-socmed:hover{
+    filter: drop-shadow(1px 1px 3px rgb(0, 0, 0));
+}
+
+.stack-socmed:hover{
+    filter: drop-shadow(1px 1px 3px rgb(0, 0, 0));
 }
 
 footer{
@@ -359,7 +434,7 @@ footer p{
     }
 
     .hero-icons img{
-        height: 60px;
+        height: 65px;
     }
     
     .title {
@@ -380,7 +455,7 @@ footer p{
     }
 
     .introduction{
-        padding: 8% 10%;
+        padding: 10% 10%;
     }
 
     .tech-section{
@@ -403,6 +478,7 @@ footer p{
     }
     
     .projects{
+        width: 90%;
         margin: 10% 5% 10% 5%;
         box-shadow: 1px 1px 10px #d2cfbb;
     }
@@ -440,6 +516,13 @@ footer p{
         font-size: 20px;
     }
 
+    .thoughts-section{
+        flex-direction: row;
+        width: 70%;
+        margin-top: 5%;
+        gap: 30px;
+    }
+
     .skill-title{
         font-size: 20px;
     }
@@ -463,9 +546,13 @@ footer p{
         height: 550px;
     }
 
-    .hero-icons img{
+    .hero-icons{
         right: 15%;
         margin-top: 50px;
+    }
+
+    .hero-icons img{
+        margin-left: 10px;
     }
 
     .hero-icons img{
@@ -494,13 +581,10 @@ footer p{
 
     .introduction{
         padding: 10% 15%;
-    }
-    
-    .introduction p{
         font-size: 18px;
         margin-bottom: 20px;
     }
-
+    
     .tech-section{
         gap: 35%;
         margin: 2% 15% 5% 15%;
@@ -524,6 +608,7 @@ footer p{
     .projects{
         box-shadow: 1px 1px 10px #d2cfbb;
         margin: 5% 5% 5% 5%;
+        width: 90%;
     }
 
     .project-screenshot {
@@ -565,8 +650,10 @@ footer p{
 
     .thoughts-section{
         flex-direction: row;
-        margin: 5% 10%;
+        margin-top: 5%;
         gap: 10%;
+        width: 70%;
+        }
     }
 
     .skill-title{

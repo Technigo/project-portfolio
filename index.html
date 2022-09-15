@@ -8,27 +8,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!--Photo for the hero image is taken by Pok Rie: https://www.pexels.com/photo/bird-s-eye-view-photo-of-sea-1633845/-->
+<!--Header section containing hero image, icons of my social media, my name with title, and my profile picture-->    
     <header class="hero">
-        <section id="hero"> 
-<!--Icons on the header-->
+        <section> 
+            <!--Icons on the header-->
             <div class="hero-icons">
-                <a href="https://www.linkedin.com/in/kartika-purwahyuningrum-255a36248/">
-                    <img src="./Images/hero-linkedin.svg" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/kartika-purwahyuningrum-255a36248/" class="linkedin" target="_blank" tabindex="0">
+                    <img src="./Images/hero-linkedin.svg" alt="LinkedIn icon for the header">
                 </a>
-                <a href="https://github.com/katirum">
-                    <img src="./Images/hero-github.svg" alt="Github">
+                <a href="https://github.com/katirum" class="github" target="_blank" tabindex="1">
+                    <img src="./Images/hero-github.svg" alt="Github icon for the header">
                 </a>
-                <a href="https://stackoverflow.com/users/19454191/krtk">
-                    <img src="./Images/hero-stack.svg" alt="Stack Overflow">
+                <a href="https://stackoverflow.com/users/19454191/krtk" class="stackoverflow" target="_blank" tabindex="2">
+                    <img src="./Images/hero-stack.svg" alt="Stack Overflow icon for the header">
                 </a>
             </div>
-<!--Section where I put my name and title of the job I want-->
+            <!--Section where I put my name and title of job-->
             <div class="title">
+                <!--Use of span to target one specific word in a sentence-->
                 <h3><span class="light-text">Portofolio:</span> Kartika Purwahyuningrum</h3>
                 <h1>Front-End</h1>
                 <h1>Developer</h1>
             </div> 
-<!--My profile picture-->
+            <!--My profile picture-->
             <div class="profile-pic">
             </div>
         </section>
@@ -53,17 +56,21 @@
             <div class="featured-projects-title">
                 <h3>FEATURED PROJECTS</h3>
             </div>
-            <!--This part containing only the displayed projects-->
+<!--This part containing only the displayed projects-->
             <div class="projects-list">
                 <!--News site project-->
                 <article class="projects">
                     <a href="https://steady-gelato-baf009.netlify.app/" target="_blank">
                         <div class="project-screenshot">
                             <img src="./Images/newssite.png" alt="project news site screenshot">
-                         </div>
+                            <!--Overlaying text on top of the project screenshot-->
+                            <div class="overlay">
+                                <h3>Bloomsy</h3>
+                            </div>
+                        </div>
                     </a>
-                    <h3>News Site: Bloomsy</h3>
-                    <p>A plants-lovers news site mockup that focuses on grid and flexbox.</p>
+                    <h3>A news site for plants lovers</h3>
+                    <p>Simple site that focused on the application of grid, flexbox and responsiveness.</p>
                     <div class="tags-icon">
                         <p>HTML</p>
                         <p>CSS</p>
@@ -77,10 +84,14 @@
                     <a href="https://phenomenal-kelpie-2b24fb.netlify.app" target="_blank">
                         <div class="project-screenshot">
                             <img src="./Images/chatbot.png" alt="project chatbot screenshot">
+                            <!--Overlaying text on top of the project screenshot-->
+                            <div class="overlay">
+                                <h3>Lovelits</h3>
+                            </div>
                          </div>
                     </a>
-                    <h3>Chatbot: Lovelits</h3>
-                    <p>A pair programming project to create a chatbot for ordering books with JavaScript as the main tools.</p>
+                    <h3>Ordering book with a twist</h3>
+                    <p>A project to create a chatbot for ordering books depending on users' preferences with JavaScript as the main language.</p>
                     <div class="tags-icon">
                         <p>HTML</p>
                         <p>CSS</p>
@@ -94,10 +105,14 @@
                     <a href="https://lucky-concha-e3a418.netlify.app/" target="_blank">
                         <div class="project-screenshot">
                             <img src="./Images/guesswho.png" alt="project guess-who game screenshot">
+                            <!--Overlaying text on top of the project screenshot-->
+                            <div class="overlay">
+                                <h3>Guess Who Game</h3>
+                            </div>
                          </div>
                     </a>
-                    <h3>Guess Who Game</h3>
-                    <p>A digital version of "Guess Who Game" that focuses on conditional statements from JavaScript.</p>
+                    <h3>Digitalization of a board game</h3>
+                    <p>Packed with JavaScript that highlights the conditional statements to make the game work.</p>
                     <div class="tags-icon">
                         <p>HTML</p>
                         <p>CSS</p>
@@ -110,10 +125,14 @@
                     <a href="https://tika-linnea-weatherapp.netlify.app/" target="_blank">
                         <div class="project-screenshot">
                             <img src="./Images/weatherapp.png" alt="project weather app screenshot">
+                            <!--Overlaying text on top of the project screenshot-->
+                            <div class="overlay">
+                                <h3>Weather App</h3>
+                            </div>
                          </div>
                     </a>
-                    <h3>Weather App</h3>
-                    <p>Weather app made by fetching data from API and add funtionality through JavaScript.</p>
+                    <h3>APIs meets JavaScript</h3>
+                    <p>A blend of fetched data from API and added funtionality through JavaScript to formulate an app that tells weather in choosen city.</p>
                     <div class="tags-icon">
                         <p>HTML</p>
                         <p>CSS</p>
@@ -131,7 +150,7 @@
                 </div>
                 <article class="other-projects-list">
                     <div class="other-projects-description">
-                        <a href="https://enchanting-dodol-8f5cc6.netlify.app/">
+                        <a href="https://enchanting-dodol-8f5cc6.netlify.app/" target="_blank">
                             <h3>Business Site: Stockholm Tour.</h3>   
                         </a>
                         <p>A website created in mob programming session that contains forms and JavaScript for people who wants to sign up for an event <strong>>></strong> </p>
@@ -152,7 +171,7 @@
                 <h3>MORE THOUGHTS</h3>
             </div>
             <div class="thoughts-section">
-                <a href="https://medium.com/@tikaprw/my-little-early-coding-journey-9b9dc533334e">
+                <a href="https://medium.com/@tikaprw/my-little-early-coding-journey-9b9dc533334e" target="_blank">
                     <article class="thoughts-article">
                         <img src="./Images/medium1.jpg" alt="Image for article">
                         <p class="dates">September 2022</p>
@@ -177,6 +196,7 @@
                     <h3>SKILLS</h3>
                 </div>
                 <div class="skills-list">
+                    <!--Coding skills-->
                     <div class="skill-category">
                         <h3 class="main-skill-category">CODE</h3>
                         <h3 class="the-skills">HTML5</h3>
@@ -184,6 +204,7 @@
                         <h3 class="the-skills">JavaScript ES6</h3>
                         <h3 class="the-skills">APIs</h3>
                     </div>
+                    <!--Skills of using tools for web developers-->
                     <div class="skill-category">
                         <h3 class="main-skill-category">TOOLBOX</h3>
                         <h3 class="the-skills">GitHub</h3>
@@ -192,6 +213,7 @@
                         <h3 class="the-skills">Slack</h3>
                         <h3 class="the-skills">Stack Overflow</h3>
                     </div>
+                    <!--More of soft-skills-->
                     <div class="skill-category">
                         <h3 class="main-skill-category">MORE</h3>
                         <h3 class="the-skills">Pair-Programming</h3>
@@ -204,14 +226,14 @@
         <section class="social-media">
             <h3 class="social-media-title">FIND ME</h3>
             <div class="social-media-icons">
-                <a href="https://github.com/katirum">
-                    <img src="./Images/github.png" alt="">
+                <a href="https://github.com/katirum" class="github-socmed" target="_blank">
+                    <img src="./Images/github.png" alt="Picture of github logo">
                 </a>
-                <a href="https://www.linkedin.com/in/kartika-purwahyuningrum-255a36248/">
-                    <img src="./Images/linkedin.png" alt="">
+                <a href="https://www.linkedin.com/in/kartika-purwahyuningrum-255a36248/" class="linkedin-socmed" target="_blank">
+                    <img src="./Images/linkedin.png" alt="Picture of linkedin logo">
                 </a>
-                <a href="https://stackoverflow.com/users/19454191/krtk">
-                    <img src="./Images/stack-overflow.png" alt="">
+                <a href="https://stackoverflow.com/users/19454191/krtk" class="stack-socmed" target="_blank">
+                    <img src="./Images/stack-overflow.png" alt="Picture of stack overflow logo">
                 </a>
             </div>
         </section>
