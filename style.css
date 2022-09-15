@@ -11,7 +11,6 @@ body {
 
 header {
     margin: 0;
-    background-image: url(https://images.unsplash.com/photo-1620503292890-c597f62cce8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,7 +18,7 @@ header {
     height: 500px;
 }
 
-.header-image {
+.background-image {
     position: absolute;
     width: 375px;
     height: 520px;
@@ -37,6 +36,12 @@ header {
     top: 100px;
     left: 30px;
 }
+
+.portfolio-section:nth-child(2n) {
+    background-color: #f4f4f4;
+    font-size: 16px;
+    width: 100%;
+  }
 
 .main-text {
     position: absolute;
@@ -96,27 +101,23 @@ header {
     font-size: 24px;
 }
 
-.top-section {
-    position: absolute;
-    width: 375px;
-    height: 324px;
-    left: 0px;
-    top: 520;
-    opacity: 0.3;
+/*Intro section*/
+
+.intro-container {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
-.pitch {
-    position: absolute;
-    width: 327px;
-    height: 232px;
-    left: 24px;
-    top: 569px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
+.intro-container p {
     font-size: 17px;
     line-height: 29px;
+    text-align: center;
+    margin: 40px auto 30px;
 }
 
 /* Feature projects*/
@@ -165,6 +166,13 @@ header {
     display: none;
 }
 
+.feature-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .project-image-container {
     position: relative;
 }
@@ -180,7 +188,6 @@ header {
 
 .image-overlay {
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 28px;
     line-height: 34px;
@@ -198,9 +205,8 @@ header {
   }
 
 .image {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 800px;
+    width: 100%;
+    height: auto;
 }
 
 .project-buttons {
