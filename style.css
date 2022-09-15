@@ -52,7 +52,7 @@ a:hover {
 .second-header {
     color: #e9722d;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 5%;
@@ -113,6 +113,7 @@ a:hover {
 .intro {
     display: block;
     background-color: rgb(253, 248, 240);
+    width: 100vw;
     padding: 5%;
     padding-top: 10%;
 }
@@ -153,8 +154,9 @@ a:hover {
 
 .featured-projects a {
     display: flex;
-    align-items: left;
+    align-items: flex-start;
     flex-direction: column;
+    width: 270px;
     padding-bottom: 8%;
 }
 
@@ -180,7 +182,7 @@ a:hover {
 .box-text {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 80%;
     padding-top: 2%;
 }
 
@@ -196,6 +198,13 @@ h6 {
     border: 3px solid #cee663;
 }
 
+.the-next-thing {
+    display: none;
+}
+
+.the-second-next-thing {
+    display: none;
+}
 
 /* MY THOUGHTS */
 .my-thoughts {
@@ -250,6 +259,7 @@ h6 {
 
 .more-info .links {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 10%;
 }
@@ -279,7 +289,6 @@ footer {
     width: 100vw;
     background: #6fb9bd; /*  #96A749  #e9722d;#E6836C */
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
 }
 
 footer h2 {
@@ -303,7 +312,7 @@ footer p {
 @media (min-width: 1025px) {
 
     .input-wrapper {
-        width: 80%;
+        width: 60%;
     }
 
     .main-header {
@@ -320,7 +329,7 @@ footer p {
     .second-header {
         color: #e9722d;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 24px;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
         padding: 5%;
@@ -381,30 +390,26 @@ footer p {
     }
 
     .intro p {
-        width: 70%;
         font-size: 18px;
         line-height: 30px;
     }
 
     /* TECH */
     .tech {
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        height: 150px;
     }
     
     .tech p {
         font-size: 18px;
         line-height: 30px;
-        width: 50%;
+        padding: 5%;
     }
 
     /* FEATURED PROJECTS */
 
     .featured-projects img {
         opacity: 0.5;
+        padding: 8% 2%;
     }
 
     .featured-projects img:hover {
@@ -413,20 +418,67 @@ footer p {
     
     .projects-grid {
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto;
         gap: 10px;
     }
 
     .guess-who {
         grid-column-start: 1;
-        width: 60%;
+        width: 65%;
         justify-self: center;
     }
+
     .the-weather-app {
         grid-column-start: 2;
-        width: 60%;
+        width: 65%;
         justify-self: center;
     }
 
+    .the-next-thing {
+        display: block;
+        grid-column-start: 1;
+        width: 65%;
+        justify-self: center;
+    }
 
+    .the-second-next-thing {
+        display: block;
+        grid-column-start: 2;
+        width: 65%;
+        justify-self: center;
+    }
+
+    .other-projects a {
+        display: grid;
+        grid-template-columns: 90px auto;
+        width: 100%;
+    }
+
+    .other-projects .box-text {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-top: 1%;
+        width: 35%;
+    }
+
+    /* MORE INFO */
+    .more-info a {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* FOOTER */
+    footer {
+        height: 300px; 
+        padding-bottom: 5%;
+    }
+
+    footer h2 {
+        font-size: 25px;
+        padding-bottom: 3%;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
 }
