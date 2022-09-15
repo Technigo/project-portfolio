@@ -1,63 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
-  margin: 0;
-  width: 100%;
-}
+/* --------------WRAPPERS-------------- */
 
-/* HEADER */
-.header-wrapper {
+.outer-wrapper {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.inner-wrapper {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  height: 500px;
   flex-direction: column;
-  width: 100%;
-  height: 500px;
-
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-}
-
-.hero-image {
+  
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  object-fit: cover;
-
-  /* This should change based on your design */
-  height: 500px;
-
-  /* Make sure the image is behind other content */
-  z-index: -1;
-
-  /* Dims the image so the text is readable */
-  /* filter: brightness(75%); */
 }
 
-.hero-image > img {
-  width: 100%;  
+.outer-wrapper-grey {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+  background: #F4F4F4;
+}
+
+.inner-wrapper-grey {
+  display: flex;
+  width: 80%;
+  margin: 0 auto; 
+  flex-direction: column; 
+}
+
+.outer-wrapper-white {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+  background: #ffffff;
+}
+
+.inner-wrapper-white {
+  display: flex;
+  width: 80%;
+  margin: 0 auto; 
+  flex-direction: column; 
+}
+
+.outer-wrapper-blue {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+  background: blue;
+}
+
+.inner-wrapper-blue {
+  display: flex;
+  width: 80%;
+  margin: 0 auto; 
+  flex-direction: column; 
+}
+
+/* --------------HEADER-------------- */
+
+.header-img {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: -1;
 }
 
 .social-links-header {
-  display: flex;
-  justify-content: space-between;
+  display: flex; 
   position: absolute;
-  width: 135px;
-  height: 40px;
-  right: 20%;
+  right: 00;
   top: 10%;
+  
 }
-
 .social-links-header img {
   height: 40px;
+  margin: 5px 0 5px 5px;
+}
+
+.profile-image {  
+  position: absolute;
+  right: 0;
+  top: 75%;
+
+  width: 150px;
+  height: 150px;
+  
+  border-radius: 50%;
+  
+  border: 2px solid whitesmoke;
+  
+  overflow: hidden; /* Makes sure nothing sticks out of the circle */
+}
+
+.profile-image > img {
+  width: 100%;
 }
 
 .portfolio-info-header {
-  margin-left: 8vw;
+  position: absolute;
   width: 220px;
-  height: 202px;
-  left: 24px;
-  top: 121px;
+  left: 0;
+  top: 40%;
   color: #FFFFFF;
 }
 
@@ -65,7 +119,7 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
   /* or 138% */
 
@@ -94,149 +148,108 @@ body {
   margin: 0;
 }
 
-.profile-image {
-  /* Positioning */
-  position: absolute;
-  right: 10vw;
-  top: 68%;
-
-  width: 180px;
-  height: 180px;
-
-  /*  Rounded corners */
-  border-radius: 50%;
-
-  /* An outline on the circle */
-  border: 2px solid whitesmoke;
-
-  /* Makes sure nothing sticks out of the circle */
-  overflow: hidden;
-}
-
-.profile-image > img {
-  width: 100%;
-}
-
-/* INTRO SECTION */
-
-.intro-section-wrapper {
-  display: flex;
-  background: #F4F4F4;
-  justify-content: center;
-  align-items: center;
-}
+/* --------------INTRO SECTION-------------- */
 
 .paragraph-style {
-  width: auto;
-  height: auto;
-  margin: 5vh 8vw;
-
+  margin: 5vh 0 5vh ;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 29px;
   /* or 171% */
 
   color: #000000;
 }
 
-/* DEV SKILLS */
-
-.dev-skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section-titles {
-  margin-top: 40px;
-  margin-bottom: 0;
-  padding: 0 5px 0 5px;
-  
+.section-titles-red {
+  margin-top: 5vh;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 27px;
   text-align: center;
-    
+      
   background-color: #FA382F;
   color: #ffffff;
 }
 
-.dev-skills p {
-  width: 327px;
-  height: auto;
-  margin: 0;
-  margin-bottom: 40px;
+.section-paragraph { 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 29px;
-  /* or 171% */
+
+  margin: 5vh 0 5vh 0;  
  
   text-align: center;
   color: #000000;
 }
 
-/* FEATURED PROJECTS & OTHER PROJECTS*/
+/* --------------FEATURED PROJECTS SECTION-------------- */
+/* --------------IMAGE PART-------------- */
 
 .featured-projects-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background: #F4F4F4;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.project-card {
-  display: flex;
-  flex-direction: column;
+.featured-projects-card {
   width: 100%;
-  align-items: center;
-  margin: 40px 8vw;
-  margin-bottom: 0;
+  margin-top: 5vh;
 }
 
-.hero-card { 
+.featured-projects-image {
+  width: 100%; 
   position: relative;
-  display: flex;
-  flex-direction: column;
-  
-  object-fit: cover;
-  align-items: center;
-  margin: 0 8vw;   
+  height: 200px;  
 }
 
-.hero-card > img {
-  filter: brightness(65%);
+.card-image {
   width: 100%;
-  height: 30vh;
-  margin-left: 8vw;
-  margin-right: 8vw;  
+  height: 200px;
+  filter: brightness(75%);
+  object-fit: cover;
 }
 
 .centered {
   position: absolute;
-  top: 44%;
+  top: 45%;
+  width: 100%;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 22px;
+  
   text-align: center;
   letter-spacing: 0.01em;
-  margin: 0;
+  
   color: #FFFFFF;
 }
 
-.project-title {
-  margin: 2vh 8vw;
-  margin-bottom: 0;
+/* --------------FEATURED PROJECTS SECTION-------------- */
+/* --------------INFO PART-------------- */
+
+.featured-projects-info{
+  width: 100%; 
   font-family: 'Roboto';
   font-style: normal;
+  margin: 1vh 0 1vh 0;
+}
+
+.project-paragraph-style {    
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  
+  color: #000000;
+}
+
+.project-title {  
   font-weight: 700;
   font-size: 17px;
   line-height: 29px;
@@ -244,146 +257,167 @@ body {
   color: #FA382F;
 }
 
-.project-paragraph-style {  
-  margin: 0 8vw;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 29px;
-  /* or 171% */
+/* --------------OTHER PROJECTS SECTION-------------- */
 
-  color: #000000;
-}
-
-.other-projects-wrapper {
-  display: flex;
-  flex-direction: column;
-  background: #F4F4F4;  
-}
-
-.other-projects-card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-.second-section-titles{
-  margin-bottom: 20px;
-    
+.section-titles-white{
+  margin: 5vh 0;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 27px;
   text-align: center;
     
   color: #FA382F;
 }
 
-/* MY THOUGHTS */
-
-.my-thoughts-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background: #ffffff;  
-}
-
-.article-heading {
-  margin: 2vh 8vw;
-  margin-bottom: 0;
+.other-projects-info{
+  width: 100%; 
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 30px;
-  /* or 143% */
-
-  color: #000000;
+  margin: 1vh 0 3vh 0;
 }
 
-/* MORE THOUGHTS */
-.more-thoughts-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background: #ffffff;
-}
-.more-thoughts-card {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.article-heading-one-line {
-  margin: 2vh 0;
-  margin-bottom: 0;
-  margin-right: 8vw;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 30px;
-  /* or 143% */
-
-  color: #000000;
-}
-
-.project-title-one-line {
-  margin: 2vh 8vw;
-  margin-right: 2vw;
-  margin-bottom: 0;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 29px;
-    
-  color: #FA382F;
-}
-
-/* SKILLS */
-
-.skills-section-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  background: #F4F4F4; 
-  
-}
-.skills-section-card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.skills-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 8vw;
-
-  font-family: 'Roboto';
-  font-style: normal;
+.other-project-paragraph-style {    
   font-weight: 400;
   font-size: 17px;
   line-height: 29px;
-  /* or 171% */
-
-  text-align: center;
+  
 
   color: #000000;
 }
 
-/* FOR MORE */
+.other-projects-title {  
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+    
+  color: #FA382F;
+}
+
+/* --------------MY THOUGHTS-------------- */
+/* --------------IMAGE PART-------------- */
+
+.my-thoughts-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+}
+
+.my-thougts-card {
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.my-thoughts-image {
+  width: 100%;  
+  height: 200px;  
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  filter: brightness(75%);
+  object-fit: cover;
+}
+
+/* --------------MY THOUGHTS-------------- */
+/* --------------INFO PART-------------- */
+
+.my-thougts-info{
+  width: 100%; 
+  font-family: 'Roboto';
+  font-style: normal;
+  margin: 1vh 0 1vh 0;
+}
+
+.my-thougts-article-date {  
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+    
+  color: #FA382F;
+}
+
+.my-thougts-article-title {  
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+    
+  color: #000000;
+}
+
+.article-paragraph-style {    
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;  
+
+  color: #000000;
+}
+
+/* --------------MORE THOUGHTS-------------- */
+
+.more-thoughts-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 5vh;
+}
+
+.more-thoughts-card {
+  width: 100%;  
+}
+
+.more-thoughts-info{
+  width: 100%; 
+  font-family: 'Roboto';
+  font-style: normal;
+  margin: 1vh 0 1vh 0;
+}
+
+.more-thougts-article-title {  
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+    
+  color: #000000;
+}
+
+
+/* --------------SKILLS-------------- */
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 5vh 0 5vh 0;
+  text-align: center;
+}
+
+.skills-card {
+  width: 50%;
+  margin-bottom: 3vh;  
+}
+
+.skills-info{
+  width: 100%; 
+  font-family: 'Roboto';
+  font-style: normal;
+  
+}
+
+.skills-paragraph-style {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;  
+
+  color: #000000;
+}
+
+/* --------------FOR MORE-------------- */
+
 .for-more-wrapper {
   display: flex;
   flex-direction: column;
@@ -392,14 +426,14 @@ body {
   width: 100%;
 }
 
-.social-links {
+.social-links-bottom {
   display: flex;
   flex-direction: row;
   margin-top: 4vh;
   margin-bottom: 6vh;
   width: 100%;
   justify-content: space-evenly;
- }
+}
 
 /* FOOTER */
  
@@ -407,61 +441,36 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+
+.footer-card {
+  width: 100%;
+  margin: 10vh 0 10vh 0;  
+}
+
+.footer-info{
+  width: 100%; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  
+}
+
+.footer-paragraph-style {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 25px;
-  /* or 147% */
+  /* or 167% */
   
   text-align: center;
-
+  
   color: #FFFFFF;
-  background-color: blue;
-  padding: 8vh 8vh;
 }
-
-.footer-wrapper p {
-  margin: 0;
-}
-
-.footer-wrapper h3 {
-  font-weight: 700;
-  font-size: 21px;
-  margin-bottom: 5vh;
-}
-
-/* TAGS */
-
-.tag-wrapper {
-  display: flex;
-  margin: 1vh 8vw;
-}
-
-.tag-wrapper p {
-  font-family: "Roboto", sans-serif;
-  color: #2b2e34;
-  font-weight: bold;
-  background-color: #db9aab;
-  text-decoration: none;
-
-  /* Matching line-height and font-size here gives full control 
-     over the size of our tags to the padding*/
-  font-size: 12px; 
-  line-height: 12px;
-
-  /* Control the size of the tags */
-  padding: 4px;
-
-  /* Control the spacing of our tags */
-  margin: 3px;
-
-  /* Some rounded borders */
-  border-radius: 5px;
-}
-
-
-
 
 /* LINE-DOT SECTION INDICATOR */
 
@@ -480,12 +489,72 @@ body {
   display: inline-block;
 }
 
-/* TABLET */
-@media (min-width: 668px) and (max-width: 1023px) {
+/* --------------SPANS-------------- */
 
+.red {
+  color: red;
+  font-weight: 700;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+/* TAGS */
+
+.tag-wrapper {
+  display: flex;  
+}
+
+.tag-wrapper p {
+  font-family: "Roboto", sans-serif;
+  color: #2b2e34;
+  font-weight: bold;
+  background-color: #db9aab;
+  text-decoration: none;
+
+  /* Matching line-height and font-size here gives full control 
+     over the size of our tags to the padding*/
+  font-size: 12px; 
+  line-height: 12px;
+
+  /* Control the size of the tags */
+  padding: 4px;
+
+  /* Control the spacing of our tags */
+  margin: 3px 6px 3px 0;
+
+  /* Some rounded borders */
+  border-radius: 5px;
+}
+
+@media (min-width: 668px) and (max-width: 1023px) {
+  
+  .featured-projects-wrapper {
+    justify-content: space-between;
+  }
+  .featured-projects-card {
+    width: 45%;
+  }
+
+  .my-thoughts-wrapper {    
+    justify-content: space-between;
+   
+  }
+  .my-thougts-card {    
+    width: 45%;
+  }
+
+  .skills-card {
+    width: 33%;
+    margin-bottom: 3vh;  
+  }
+}
+
+ 
 
 /* DESKTOP */
 
 @media (min-width: 1024px) {
+
+}
