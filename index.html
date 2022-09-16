@@ -9,80 +9,99 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/6cccd08eb4.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6cccd08eb4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="main-header">
+
+    <!-- Website's header-->
+
+    <header class="main-header" aria-label="My name and title" tabindex="0">
         <img class="profile-image" src="./photos/ceciliaportfolio.jpg" width="200" height="200" alt="Photo of Cecilia Rådén">
         <img class="header-background" src="./photos/background.jpg" alt="Red and white abstract painting">
-        <p class="header-paragraph">Portfolio: Cecilia Rådén</p>
-        <h1 class="title">frontend developer</h1>
+        <p>Portfolio: Cecilia Rådén</p>
+        <h1 class="title" tabindex="1">frontend developer</h1>
         <h2 class="second-title">with an background within culture</h2>
     </header>
-    <section id="about-me">
-        <p class="text">Hello! Im a strategic and creative senior art director/digital designer with frontend developer skills and experience design at. Im all about solving problems that matter and creating awesome, meaningful products for people to love.</p>
+
+<!-- Section with information about me -->
+
+    <section class="about-me" aria-label="Information about me" tabindex="2">
+        <p class="text">
+            <span class="line"></span><span class="dot"></span>
+            Hello! Im an aspiring frontend developer with 8 years of experience within office administration and with a degree in journalism, and a bachelors degree in culture. Autumn of 2021 I decided that I wanted to take my very mixed background into tech and started to learn how to code. My best soft skills are that I'm paying a lot of attention to details and that I'm ambitious. </p>
     </section>
 
-    <section id="tech">
+    <section class="tech" aria-label="Section about technologies" tabindex="3">
         <h3 class="section-title">TECH</h3>
-        <p class="text">HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github</p>
+        <p class="text">HTML, CSS, Flexbox, JavaScript, Web Accessibly, API:s, mob-programming, pair-programming, Github</p>
     </section>
 
-    <section id="featured-projects">
+    <!--My projects-->
+
+    <section class="featured-projects" aria-label="My projects" tabindex="4">
         <h3 class="section-title">FEATURED PROJECTS</h3>
-            <div class="project-image-container">
+
+        <!--Guess who game-->
+        <div class="project-image-container" >
         <img class="projects-images" src="./photos/guesswho.jpg" width="400" height="400" alt="A snapshot of a project">
-        <p class="text-in-front">GUESS WHO</p>
+        <p class="text-in-front" tabindex="5">GUESS WHO</p>
     </div>
         <h4 class="project-title">'GUESS WHO' BUILT IN JAVASCRIPT</h4>
-        <p class="text">Responsive site hula hula blahahaha hwihah</p>
+        <p class="text">Responsive site built with Javascript</p>
     <div class="icons">
         <p class="html-icon">HTML5</p>
     <p class="css-icon">CSS3</p>
     <p class="javascript-icon">JavaScript ES6</p>
 </div>
 
+<!--Weather app-->
     <div class="project-image-container">
     <img class="projects-images" src="./photos/weather app.jpg" width="400" height="400" alt="A snapshot of a project">
-    <p class="text-in-front">WEATHER APP</p>
+    <p class="text-in-front" tabindex="6">WEATHER APP</p>
 </div>
     <h4 class="project-title">WEATHER APP BUILT IN JAVASCRIPT</h4>
-    <p class="text">Responsive site hula hula blahahaha hwihah</p>
+    <p class="text">Responsive site built with API and Javascript</p>
 <div class="icons">
-    <p class="html-icon">HTML5</p>
-<p class="css-icon">CSS3</p>
-<p class="javascript-icon">JavaScript ES6</p>
-
+   <p>HTML5</p>
+   <p>CSS3</p>
+   <p>JavaScript ES6</p>
 </div>
-    </section>
+</section>
 
-    <section id="my-thoughts">
-        <h3 class="section-title">MY THOUGHTS</h3>
+<!--My thoughts-->
+
+    <section class="my-thoughts" aria-label="My thoughts">
+        <h3 class="section-title" tabindex="7">MY THOUGHTS</h3>
         <div class="thoughts-image-container">
         <img class="projects-images" src="./photos/mind.jpg" width="400" height="400" alt="A snapshot of a project">
         </div>
         <div class="thoughts-text">
-        <h5 class="date-title">AUG 2022</h5>
-       
+        <h5 class="date-title" tabindex="8">AUG 2022</h5>
         <p class="text">
-            <b>Rubrik</b>
-            <br>
-            text</p>
+            <b>Want to read my mind?</b>
+        </p>
+            <p>Stay tuned for more posts!</p>
         </div>
     </section>
 
-    <section id="skills">
-        <h3 class="section-title">SKILLS</h3>
+<!--My skills-->
+
+    <section class="skills" aria-label="My skills">
+        <h3 class="section-title" tabindex="9">SKILLS</h3>
         <div class="list">
+            <h4 class="project-title">CODE</h4>
         <ul style="list-style-type:none;">
-        <h4 class="project-title">CODE</h4>
+        
         
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
         </ul>
 
+        
+        <h4 class="project-title" tabindex="10">TOOLBOX</h4>
         <ul style="list-style-type:none;">
-            <h4 class="project-title">TOOLBOX</h4>
+           
             
                 <li>Slack</li>
                 <li>Figma</li>
@@ -91,17 +110,33 @@
         </div>
     </section>
   
+<!--For more information-->
+    <section class="for-more" aria-label="Links to Github and Linkedin">
+        <h3 class="section-title" tabindex="11">FOR MORE</h3>
+        <div class="contact-icons">
+            <a href="https://github.com/CeciliaMichele">
+        <i class="fa-brands fa-github-square" tabindex="12"></i>
+    </a>
 
-    <section id="for-more">
-        <h3 class="section-title">FOR MORE</h3>
-        <i class="fa-brands fa-github-square"></i>
-
-        </i>
-        <span class="screenreader">Github</span>
+    <a href="https://www.linkedin.com/in/ceciliaraden/">
+        <i class="fa-brands fa-linkedin" tabindex="13"></i>
+    </a>
+    
+        <span class="sr-only">Github</span>
+        <span class="sr-only">Linkedin</span>
+    </div>
     </section>
 
-    <footer>
-        CONTACT
+    <footer aria-label="Contact information" tabindex="14">
+        <p class="text-in-front">CONTACT</p>
+        <p class="contact-text">
+            
+           <p> Cecilia Rådén </p>
+           
+           <p> +46 739 547 099 </p>
+           
+           <p> cecilia.raden@gmail.com </p>
+        </p>
     </footer>
 
 </body>
