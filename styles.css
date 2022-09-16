@@ -19,8 +19,6 @@ header{
     left: 65%;
     top: 48px;
 }
-
-
 .header-text h3 {
     position: absolute;
     width: 55%;
@@ -36,7 +34,6 @@ header{
     background-color: #0000005d;
     color: #FFFFFF;
 }
-
 #profilepic {
     position: absolute;
     width: 180px;
@@ -48,7 +45,6 @@ header{
     position: absolute;
 
 }
-
 .presentation {
     display: flex;
     justify-content: center;
@@ -57,9 +53,8 @@ header{
     height: 232px;
     background: #f4f4f457;
 }
-
 .presentation h3 {
-    width: 70%;
+    width: 80%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -74,7 +69,6 @@ header{
     width: auto;
     height: auto;
 }
-
 #tech {
     width: 82px;
     height: 27px;
@@ -123,21 +117,30 @@ header{
     width: 100%;
     height: auto;
 }
-.featured1 {
+.featuredProjects{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 80%;
+}
+.featured1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin: 5px;
 }
 .featured2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    justify-content: center;
+    width: 100%;
     height: auto;
+    margin: 5px;
 }
 .projectPicText{
     position: relative;
@@ -155,10 +158,19 @@ header{
     background-color: #0000008b;
     color: white;
 }
+.projectInfo{
+    width: 100%;
+}
 .projectTags{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+    width: 100%;
+}
+.projectTags img{
+    margin: 3px;
+    height: 21px;
+
 }
 .projects h2 {
     width: 205px;   
@@ -185,7 +197,6 @@ header{
     color: #FA382F;
 
 }
-
 .other2{
     width: 327px;
     height: 110px;
@@ -249,7 +260,6 @@ header{
     text-align: center;
     color: #FA382F;
 }
-
 .thoughts h4 {
     width: 327px;
     height: 64px;
@@ -261,7 +271,6 @@ header{
     text-decoration-line: underline;
     color: #FA382F;
 }
-
 .skills {
     display: flex;
     flex-direction: column;
@@ -305,11 +314,13 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 80%;
+    padding: 10px;
+
 }
 .linkedin-link {
     display: flex;
     flex-direction: column;
-
 }
 #linkedinlogo {
     width: 65px;
@@ -323,6 +334,7 @@ header{
     line-height: 13px;
     text-align: center;
     color: #FA382F;
+    margin: 0;
 }
 .github-link {
     display: flex;
@@ -340,10 +352,12 @@ header{
     line-height: 13px;
     text-align: center;
     color: #FA382F;
+    margin: 0;
 }
 .stack-link {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 #stacklogo {
     width: 65px;
@@ -357,6 +371,7 @@ header{
     line-height: 13px;
     text-align: center;
     color: #FA382F;
+    margin: 0;
 }
 .footer {
     display: Flex;
@@ -377,4 +392,10 @@ header{
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
+}
+@media screen and (min-width: 667px) {
+.featuredProjects {
+    flex-direction: row;
+}
+
 }
