@@ -307,7 +307,7 @@ footer p{
     border: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     h1 {
         font-weight: 700;
         font-size: 50px;
@@ -323,12 +323,12 @@ footer p{
         max-width: 1000px;
     }
     .hero-text {
-        top: 10rem;
-      
+        top: 10rem; 
     }
     .portrait-img {
         width: 20vh;
         right: 1rem;
+        top: 43vh;
     }
     .intro {
         height: 40vh;
@@ -340,7 +340,7 @@ footer p{
         display: grid ;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2rem;
-        width: 60vw;
+        width: 90vw;
     }
     .projects-wrapper {
         grid-template-rows: repeat(2, 1fr);
@@ -355,14 +355,6 @@ footer p{
     .other-thoughts {
         width: 60vw;
         justify-content: left; 
-    }
-    .project-image:hover {
-        /* This causes the text to fade, color is the text color */
-        color: transparent;
-    }
-    .project-image-overlay:hover {
-        /* This causes the original background color (.5 opacity) to become transparent */
-        background-color: transparent;
     }
     .skill-wrapper {
         display: grid;
@@ -390,12 +382,28 @@ footer p{
         width: 4rem;
         height: 4rem;
     }
-    .logo:hover{
-        transform:scale(1.2);
-    }
-    .logo {
-        transition: transform .5s;
-        transition-timing-function: linear;
-    }
 }
 
+@media (min-width: 768px) {
+    .grid-wrapper {
+      width: 60vw;
+  }
+      .project-image:hover {
+      /* This causes the text to fade, color is the text color */
+      color: transparent;
+  }
+  .project-image-overlay:hover {
+      /* This causes the original background color (.5 opacity) to become transparent */
+      background-color: transparent;
+  }
+  .logo:hover{
+      transform:scale(1.2);
+  }
+  .logo {
+      transition: transform .5s;
+      transition-timing-function: linear;
+  }
+  .hero-container {
+    max-width: 1000px;
+}
+}
