@@ -1,30 +1,21 @@
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;*/
-/*html {
-    box-sizing: border-box;
-}*, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-  }*/
+
 * {
     margin: 0;
     padding: 0;
 }
 
-/*****MOBILE*******/
+/***** MOBILE *******/
 .top {
-    /*height: 70vh;*/
     width: 100vw;
-    background-image: url('./assets/.jpg');
-    background-color: rgb(151, 153, 152);
+    background-image: url('./assets/flowers1.jpg');
     background-repeat: no-repeat;
-    /*background-position-x: -52%; get sepcific spot of background pi*/
-    background-size: cover;
-    position: relative;
+    background-size: cover; 
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(27, 63, 125);
+    /*background-position-x: -52%; get sepcific spot of background pi
+    position: relative;*/
 }
 .header-wrapper {
     border: 2px solid rgb(32, 125, 27);
@@ -87,7 +78,6 @@ font-family: 'Roboto', sans-serif;*/
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;*/
-    
 }
 .portfolio-name {
     font-weight: 700;
@@ -95,43 +85,50 @@ font-family: 'Roboto', sans-serif;*/
 h1 {
     font-size: 40px;
     line-height: 49px;
-    /*margin: 0;
-    display: block;
-    max-width: 400px;*/
+    /* max-width: 400px;*/
 }
 .with-h1 {
     font-size: 24px;
     line-height: 40px;
 }
 
-.icon {
+.icon-white {
     width: 40px;
     height: 40px;
     padding: 0.1rem;
+}
+.icon-red {
+    width: 45px;
+    height: 45px;
+    padding: 0.8rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+small {
+    font-size: x-small;
 }
 
 .start-image {
     width: 55px;
 }
 
-/* what does this do?? 
-.profile-image > img {
-    width: 100%;
-}*/
-
 .outer-wrapper {
     background-color: white;
-    /*border: 2px solid rgb(34, 27, 125);*/
+    text-align: center;
 }
 
 .inner-wrapper {
-    /*border: 2px solid rgb(32, 125, 27);*/
     width: 80%;
     margin: 0 auto;
     padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
 }
 .grey {
@@ -149,15 +146,8 @@ h1 {
     font-weight: 400;
     font-size: 17px;
     line-height: 29px;
-    padding-top: 2.5rem;
+    padding: 2.5rem;
     display: block;
-}
-
-.intro {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 29px;
 }
 
 .large-headline {
@@ -192,13 +182,14 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.project-image {
+.project-image-container {
     width: 100%;
     position: relative;
-   /*padding-top: 2.5rem;
-    height: 100%;*/
     /* This transition will cause the text to fade */
     transition: 0.5s ease;
+}
+.project-image {
+    width: 100%;
 }
 
 .project-image-overlay {
@@ -216,7 +207,9 @@ h1 {
     top: 33%;
     left: 25%;
     right: 26%;
-    color: red;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .project-image:hover {
@@ -246,6 +239,7 @@ h1 {
 
 .other-project {
     width: 100%;
+    margin-bottom: 2rem;
 }
 .highlight {
     text-align: left;
@@ -311,6 +305,12 @@ div.tooltip[aria-hidden="true"] {
         width: 300px;
         height: 320px;
     }
+    .inner-wrapper {
+        
+    }
+    .image-card {
+    
+    }
 }
 
 /* DESKTOP */
@@ -327,5 +327,18 @@ div.tooltip[aria-hidden="true"] {
 
     .start-image {
         width: 98px;
+    }
+    .inner-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .image-card {
+        width: 45%;
+        height: 80%;
+    }
+    .project-image-container {
+        
+           
     }
 }

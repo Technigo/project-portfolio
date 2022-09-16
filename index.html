@@ -15,24 +15,23 @@
     <header class="top">
       <section class="header-wrapper">
           <nav class="header-links">
-            <a href="https://www.linkedin.com/in/tina-bruce-9b1a0813a/"><img class="icon" src="./assets/old_icons/linkedin-white.svg" alt="linkedin icon"></a>
-            <a href="https://github.com/brucette"><img class="icon" src="./assets/old_icons/github-white.svg" alt="github icon"></a>
-            <a href="https://stackoverflow.com/users/19398019/brucette"><img class="icon" src="./assets/old_icons/stack-white.svg" alt="stack overflow icon"></a>
+            <a href="https://www.linkedin.com/in/tina-bruce-9b1a0813a/">
+              <img class="icon-white" src="./assets/old_icons/linkedin-white.svg" alt="white linkedin icon">
+            </a>
+            <a href="https://github.com/brucette">
+              <img class="icon-white" src="./assets/old_icons/github-white.svg" alt="white github icon">
+            </a>
+            <a href="https://stackoverflow.com/users/19398019/brucette">
+              <img class="icon-white" src="./assets/old_icons/stack-white.svg" alt="white stack overflow icon">
+            </a>
           </nav>
-      <!--</section>-->
-      <!--<section class="header-wrapper">-->
-        <div class="portfolio">
-          <p>PORTFOLIO: 
-          <span class="portfolio-name">TINA BRUCE</span>
-          <h1>frontend developer</h1>
-          <h2 class="with-h1">with pharmaceutical industry background</h2>
-        </p> 
-          <!-- <div class="profile-image">
-            <img  src="./assets/profile-image.jpeg" alt="Tina's profile picture">
-          </div> -->
+          <div class="portfolio">
+            <p>PORTFOLIO: 
+              <span class="portfolio-name">TINA BRUCE</span>
+              <h1>frontend developer</h1>
+              <h2 class="with-h1">with pharmaceutical industry background</h2>
+           </p> 
         </div>
-       <!--</section>-->
-      <!--<section class="header-wrapper">-->
         <div class="profile">
           <img class="profile-image" src="./assets/profile-image.jpeg" alt="Tina's profile picture">
         </div>
@@ -52,9 +51,9 @@
 
     <!-- TECH SECTION -->
     <section class="outer-wrapper">
-      <section id="tech" class="inner-wrapper">
-          <h2 class="large-headline white">TECH</h2>
-          <p class="intro">HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, 
+      <h2 class="large-headline white">TECH</h2>
+      <section class="inner-wrapper">
+          <p class="summary">HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, 
             Redux, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, 
             pair-programming, Github.</p>
       </section> 
@@ -62,14 +61,13 @@
 
     <!-- PROJECTS SECTION -->
     <section class="outer-wrapper grey">
+      <h2 class="large-headline white">FEATURED PROJECTS</h2>
       <section class="inner-wrapper grey">
           <!-- Featured projects with image cards -->
-          <h2 class="large-headline white">FEATURED PROJECTS</h2>
             <!-- 1st CARD -->
             <section class="image-card">
               <!-- Image as link to deployed site -->
-              
-                <div class="project-image"> <!-- DIV AND IMG HAVE SAME CLASS!-->
+                <div class="project-image-container">
                   <a href="https://luminous-naiad-205249.netlify.app/">
                     <div class="project-image-overlay"></div>
                     <img class="project-image" src="./assets/guess_who.png" alt="image of guess who game">
@@ -94,8 +92,8 @@
             <section class="image-card">
               <!-- Image as link to deployed site -->
               <a href="https://candid-madeleine-11c078.netlify.app/">
-                <div class="project-image">
-                    <div class="project-image-overlay"><p class="project-image-title">GUESS WHO</p></div>
+                <div class="project-image-container">
+                    <div class="project-image-overlay"><p class="project-image-title">WHEATHER APP</p></div>
                     <img class="project-image" src="./assets/weather_app.png" alt="image of weather app">
                 </div>
               </a>
@@ -116,7 +114,7 @@
             <!-- 3rd CARD -->
             <section class="image-card">
               <a href="https://marvelous-dieffenbachia-13d210.netlify.app/">
-                <div class="project-image">
+                <div class="project-image-container">
                     <div class="project-image-overlay"><p class="project-image-title">CHAT BOT</p></div>
                     <img class="project-image" src="./assets/chat_bot.png" alt="image of weather app">
                 </div>
@@ -137,7 +135,7 @@
             <!-- 4th CARD -->
             <section class="image-card">
               <a href="https://marvelous-dieffenbachia-13d210.netlify.app/">
-                <div class="project-image">
+                <div class="project-image-container">
                     <div class="project-image-overlay"><p class="project-image-title">NEWS SITE</p></div>
                     <img class="project-image" src="./assets/news_site.png" alt="image of news site">
                 </div>
@@ -154,9 +152,11 @@
                 <span class="tool">JavaScript ES6</span>
               </div>
             </section>
+      </section>
 
-          <!-- Links to other projects. LINKS TO GITHUB???? -->
-          <h3 class="medium-headline red">OTHER PROJECTS</h3>
+      <!-- Links to other projects. LINKS TO GITHUB???? -->
+      <h3 class="medium-headline red">OTHER PROJECTS</h3>
+      <section class="inner-wrapper grey">
           <section class="other-project">
             <!-- Text description as link to GitHub -->               <!-- !!!!!!!!!!!!!!!!!!!CHECK THESE TAB INDEXES ETC.!!!!! -->
             <a href="https://github.com/brucette/project-guess-who" tabindex="0" role="button" aria-pressed="false" aria-label="aussie burgers repository" target="_blank" rel="noreferrer">
@@ -183,43 +183,57 @@
               <span class="tool">JavaScript ES6</span>
             </div>
           </section>
+      </section>
     </section>
                   
     <!-- MY THOUGHTS SECTION -->
     <section class="outer-wrapper">
+      <h2 class="large-headline white">MY THOUGHTS ABOUT CODE</h2>
       <section class="inner-wrapper">
-        <h2 class="large-headline white">MY THOUGHTS</h2>
         <!-- my thoughts with pic -->
         <section class="image-card">  
-          <div class="project-image">           
+          <div class="project-image-container">           
             <a href="#">
               <img class="project-image" src="./assets/comp_talk.jpg" alt="">
-              <p>SEP 2022</p>
+              <p class="highlight">SEP 2022</p>
               <h4>Learning to speak the computer's language</h4>
               <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloremque molestias asperiores ipsa et aliquid non corrupti officia? Voluptate sequi,
-              explicabo neque ea eaque quibusdam sunt alias nisi cumque accusamus? >></p>
+              explicabo neque ea eaque quibusdam sunt alias nisi cumque accusamus? <span class="highlight bold">>></span></p>
             </a>
           </div>  
         </section>
-
         <section class="image-card">  
-          <div class="project-image">           
+          <div class="project-image-container">           
             <a href="#">
-              <img class="project-image" src="./assets/eye-for-design.jpg" alt="">
-              <p>AUG 2022</p>
+              <img class="project-image" src="./assets/new_eye.jpg" alt="">
+              <p class="highlight">AUG 2022</p>
               <h4>Developing an eye for design</h4>
               <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloremque molestias asperiores ipsa et aliquid non corrupti officia? Voluptate sequi,
-              explicabo neque ea eaque quibusdam sunt alias nisi cumque accusamus? >></p>
+              explicabo neque ea eaque quibusdam sunt alias nisi cumque accusamus? <span class="highlight bold">>></span></p>
             </a>
           </div>  
         </section>
-      </section> 
-    </section>
-
+      </section>
+        <!-- other thoughts..-->
+          <h3 class="medium-headline red">MORE THOUGHTS</h3>
+          <section class="inner-wrapper">
+              <!-- <section class="other-project"> -->
+                                 <!-- !!!!!!!!!!!!!!!!!!!CHECK THESE TAB INDEXES ETC.!!!!! -->
+                <a href="#" tabindex="0" role="button" aria-pressed="false" aria-label="aussie burgers repository" target="_blank" rel="noreferrer">
+                  <p>
+                    <span class="highlight">JUL 2022.</span>
+                     Lorem ipsum dolor.
+                    <span class="highlight bold"> >></span>
+                  </p>
+                </a>
+              <!--</section>-->
+          </section>
+        
+   
     <!-- SKILLS SECTION -->
   <section class="outer-wrapper grey">
-      <section id="skills" class="inner-wrapper grey">
-          <h2 class="large-headline white">SKILLS</h2>
+     <h2 class="large-headline white">SKILLS</h2>
+      <section class="inner-wrapper grey">
           <section class="list-container">
               <div class="list">
                 <h4 class="small-headline">CODE</h4> 
@@ -252,17 +266,33 @@
       </section>
   </section>
 
-    <!-- LINKS SECTION -->
-    <section class="outer-wrapper">
-      <section class="inner-wrapper">
-          <h2 class="large-headline white">FOR MORE</h2>
+  <!-- LINKS SECTION -->
+  <section class="outer-wrapper">
+    <h2 class="large-headline white">FOR MORE</h2>
+      <nav class="footer-links">
+        <div>
+          <a href="https://www.linkedin.com/in/tina-bruce-9b1a0813a/">
+            <img class="icon-red" src="./assets/old_icons/linkedin-red.png" alt="red linkedin icon">
+            <small class="highlight">LINKEDIN</small>
+          </a>
+        </div>
+        
+        <a href="https://github.com/brucette">
           <div>
-            <a href="https://www.linkedin.com/in/tina-bruce-9b1a0813a/"><img class="icon" src="./assets/old_icons/linkedin-red.png" alt="linkedin icon"></a>
-            <a href="https://github.com/brucette"><img class="icon" src="./assets/old_icons/github-red.png" alt="github icon"></a>
-            <a href="https://stackoverflow.com/users/19398019/brucette"><img class="icon" src="./assets/old_icons/stack-red.png" alt="stack overflow icon"></a>
+            <img class="icon-red" src="./assets/old_icons/github-red.png" alt="red github icon">
           </div>
-      </section> 
-    </section>
+          <small class="highlight">GITHUB</small>
+        </a>
+        
+        <a href="https://stackoverflow.com/users/19398019/brucette">
+          <div>
+            <img class="icon-red" src="./assets/old_icons/stack-red.png" alt="red stack overflow icon">
+          </div>
+          <small class="highlight">STACK OVERFLOW</small>
+        </a>
+        
+      </nav>
+  </section>
 
     <!-- CONTACT INFO -->
     <footer>
