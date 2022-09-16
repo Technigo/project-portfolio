@@ -85,7 +85,6 @@ h5 {
 
 .profile-img {
   width: 150px;
-  height: 150px;
   position: absolute; /* lets us choose position of the img */
   right: 0;
   top: 20vh;
@@ -115,11 +114,13 @@ h5 {
 /* PROJECT SECTIONS */
 
 .featured-projects {
+  display: flex;
   text-align: center;
   margin-bottom: 50px;
   background: rgba(0, 0, 0, 0.1);
 }
 .project-section {
+  margin-bottom: 25px;
   /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,6 +170,15 @@ h5 {
   height: 30vh;
   position: relative;
   background-image: url(./pic/puppyrescue.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.project-section .image-heading-wrapper .project-image-news {
+  opacity: 0.5;
+  max-width: 700px;
+  height: 30vh;
+  position: relative;
+  background-image: url(./pic/news.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -239,8 +249,12 @@ h5 {
 
 /* SKILLS SECTION */
 
-.skills-section {
-  display: flex;
+.skills-section .section-heading {
+  box-sizing: border-box;
+}
+
+.logo-image img {
+  height: 10%;
 }
 
 /* FOOTER */
@@ -275,7 +289,20 @@ footer .contact-details {
     border-color: #fa382f;
   }
 
-  .project-section .image-heading-wrapper .project-image:hover {
+  .project-section .image-heading-wrapper .project-image-weather:hover {
     opacity: 1;
+  }
+  .project-section .image-heading-wrapper .project-image-guess:hover {
+    opacity: 1;
+  }
+
+  .project-section .image-heading-wrapper .project-image-chat:hover {
+    opacity: 1;
+  }
+
+  .featured-projects .project-section {
+    width: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
   }
 }
