@@ -8,52 +8,50 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
 
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-</style>
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-    </style>
+    <!-- FONTS -->  
+    <style>  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); </style>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');</style>
 </head>
+
+
 <body>
+
+    <!-- HEADER -->  
     <header class="hero-image">
-        <video autoplay muted loop class="hero-video" type="video/mp4" src="./images/production ID_3864185.mp4"></video>
-        <img class= "profile-image" src="./images/Josefine SB.jpeg" alt= ""/> 
-
-
+        <video autoplay muted loop class="hero-video" type="video/mp4" alt= "Profile video" src="./images/production ID_3864185.mp4"></video>
+        <img class= "profile-image" src="./images/Josefine SB.jpeg" alt= "Profile image"/> 
+        <img class= "icons" src="./images/SoMe-white.svg" alt= "icons"/> 
          <div class="hero-text">
             <p>PORTFOLIO: <b>JOSEFINE ENGDAHL</b></p>
            <h1>frontend developer </h1>
            <h2>& business controller</h2>
        </div>
-        <img class= "icons" src="./images/SoMe-white.svg" alt= ""/> 
     </header>
 
-    <!-- INTRO -->
-    <section class="presentation">
-        <p class="presentation-text"> <img class = "start-image" src="./images/start-figure.svg" alt=""/> Howdy! With more than eight years of experience in finance I’m now diving into code and trying out a new Path. =IF { only coding was as simple as Excel}, but I’m all about solving problems and creating  #VALUE! 
-        </p>
+    <!-- INTRO CONTAINER -->
+    <section class="presentation-container">
+        <p class="presentation-text"> <img class = "small-figure" src="./images/start-figure.svg" alt="small figure"/> With more than eight years of experience in finance I’m now deep diving into code and trying out a new Path. =IF { only coding was as simple as Excel}, but I’m all about solving problems and creating  #VALUE! </p>
     </section>
     
-       <!-- TECH -->
-    <section class="tech">
-        <h3>TECH</h3>
+    
+    <!-- TECH CONTAINER -->
+    <section class="tech-container">
+        <h3 class="all-headings">TECH</h3>
         <div class="tech-text"><p>HTML, CSS, Flexbox, JavaScript, Web Accessibly, API:s, mob-programming, pair-programming, Github</p></div>
     </section>
 
-       <!-- FEATURED PROJECT -->
-    <section class="projects">
-
+    <!-- FEATURED PROJECT -->
+    <section class="projects-container">
         <h3>FEATURED PROJECTS</h3>
-    
         <div class="grid-projects">
             <div class="project">
-                <div class="image_title">
-                    <img class= "project-image" src="./images/Skärmavbild 2022-09-14 kl. 09.40.45.png "/> 
-                    <p class="title">GUESS WHO?</p>
-                 </div>
-
+                <a href="https://coruscating-paprenjak-d576fc.netlify.app/" target="_blank">
+                    <div class="project-image">
+                        <img class= "image" src="./images/Skärmavbild 2022-09-14 kl. 09.40.45.png "/> 
+                        <p class="title">GUESS WHO?</p>
+                    </div>
+                </a>
+          
                 <div class ="describing">
                     <p class="describing-title">BOARD GAME BUILT IN JAVASCRIPT.</p> 
                     <p class="describing-text">Responsive web site using HTML, CSS and JavaScript for Guess Who game.</p>
@@ -66,18 +64,19 @@
                 </div>
 
                 <div class="project-buttons">
-                    <a href="https://coruscating-paprenjak-d576fc.netlify.app/" target="_blank"><button>View live</button></a>
                     <a href="https://github.com/Technigo/project-guess-who/pull/198" target="_blank"><button>View on Github</button></a>
                 </div>    
             </div>  
 
 
             <div class="project">
-                <div class="image_title">
-                    <img class= "project-image" src="./images/Skärmavbild 2022-09-14 kl. 20.20.12.png"/> 
-                    <p class="title"> WEATHER APP</p>
-                </div>
-                
+                <a href="https://silver-profiterole-7224fd.netlify.app" target="_blank">
+                    <div class="project-image">
+                        <img class= "image" src="./images/weatherapp3.png"/> 
+                        <p class="title"> WEATHER APP</p>
+                    </div>
+                </a>
+               
                 <div class ="describing">
                     <p class="describing-title">WEATHER APP BUILT UTILISING APIs.</p> 
                     <p class="describing-text">Responsive web site using HTML, CSS and JavaScript.</p>
@@ -87,204 +86,173 @@
                     <span>API</span>
                     <span>HTML</span>
                     <span>CSS</span>
-                    <span>JAVASCRIPT</span>
-                    
+                    <span>JAVASCRIPT</span> 
                  </div>
 
                 <div class="project-buttons">
-                    <a href="https://coruscating-paprenjak-d576fc.netlify.app/" target="_blank"><button>View live</button></a>
-                    <a href="https://github.com/Technigo/project-guess-who/pull/198" target="_blank"><button>View on Github</button></a>
+                    <a href="https://github.com/Technigo/project-weather-app/pull/227" target="_blank"><button>View on Github</button></a>
                 </div>    
             </div>
 
     
-        <div class="project">
-            <div class="image_title">
-                <img class= "project-image" src="./images/Skärmavbild 2022-09-14 kl. 20.31.05.png"/> 
-                <p class="title"> PEP BOT</p>
-            </div>
-  
-            <div class ="describing">
-                <p class="describing-title">CHAT BOT BUILT IN JAVASCRIPT.</p> 
-                <p class="describing-text">Responsive web site using HTML, CSS and JavaScript for chat.</p>
-            </div>
-  
-            <div class="code-card">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JAVASCRIPT</span>
+            <div class="project">
+                <a href="https://thepepbot.netlify.app" target="_blank">
+                    <div class="project-image">
+                        <img class= "image" src="./images/Skärmavbild 2022-09-14 kl. 20.31.05.png"/> 
+                        <p class="title"> PEP BOT</p>
+                    </div>
+                </a>  
+
+                <div class ="describing">
+                    <p class="describing-title">CHAT BOT BUILT IN JAVASCRIPT.</p> 
+                    <p class="describing-text">Responsive web site using HTML, CSS and JavaScript for chat.</p>
+                </div>
+    
+                <div class="code-card">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JAVASCRIPT</span>
                 </div>
 
                 <div class="project-buttons">
-                <a href="https://coruscating-paprenjak-d576fc.netlify.app/" target="_blank"><button>View live</button></a>
-                <a href="https://github.com/Technigo/project-guess-who/pull/198" target="_blank"><button>View on Github</button></a>
-            </div>    
-        </div>  
+                    <a href="https://github.com/Technigo/project-chatbot/pull/106" target="_blank"><button>View on Github</button></a>
+                </div>  
+             </div>  
 
-        <div class="project">
-            <div class="image_title">
-                <img class= "project-image" src="./images/Skärmavbild 2022-09-14 kl. 20.36.33.png"/> 
-                <p class="title"> ON A ROLL</p>
-            </div>
-  
-            <div class ="describing">
-                <p class="describing-title">BUSINESS SITE BUILD WITH FORMS.</p> 
-                <p class="describing-text">Responsive web site using HTML, CSS and JavaScript for Business site.</p>
-            </div>
-  
-            <div class="code-card">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JAVASCRIPT</span>
+            <div class="project">
+                <a href="hhttps://kaleidoscopic-semifreddo-767f15.netlify.app" target="_blank">
+                     <div class="project-image">
+                        <img class= "image" src="./images/Skärmavbild 2022-09-14 kl. 20.36.33.png"/> 
+                        <p class="title"> ON A ROLL</p>
+                    </div>
+                </a>  
+
+                <div class ="describing">
+                    <p class="describing-title">BUSINESS SITE BUILD WITH FORMS.</p> 
+                    <p class="describing-text">Responsive web site using HTML, CSS and JavaScript for Business site.</p>
+                </div>
+    
+                <div class="code-card">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JAVASCRIPT</span>
                 </div>
 
                 <div class="project-buttons">
-                <a href="https://silver-profiterole-7224fd.netlify.app/" target="_blank"><button>View live</button></a>
-                <a href="https://github.com/Technigo/project-guess-who/pull/198" target="_blank"><button>View on Github</button></a>
-            </div>    
-        </div>  
+                    <a href="https://github.com/Technigo/project-business-site/pull/305" target="_blank"><button>View on Github</button></a>
+                </div>  
+            </div>  
+        </div>
+</section>
 
-    </div>
+<section class="other-projects-container">
+    <h4>OTHER PROJECTS</h4>
+    <div class="project">
+        <div class ="describing">
+            <p class="describing-title">MAGAZINE SITE CREATED IN HTML & CSS </p> 
+            <p class="describing-text">Responsive web site using HTML& CSS for a magazine site <b><a href="https://coruscating-paprenjak-d576fc.netlify.app/" target="_blank"> >> </b></a></p>
+        </div>
+        <div class="code-card">
+            <span>HTML</span>
+            <span>CSS</span>
+        </div>
+    </div> 
 </section>
 
 
-<section class="other-projects">
-
- <h4>OTHER PROJECTS</h4>
-  
- <div class="project">
-   <div class ="describing">
-       <p class="describing-title">MAGAZINE SITE CREATED IN HTML & CSS </p> 
-       <p class="describing-text">Responsive web site using HTML& CSS for a magazine site <b>>></b></p>
-     </div>
-     <div class="code-card">
-        <span>HTML</span>
-        <span>CSS</span>
-    </div>
-  
-    <!-- <div class="project-buttons">
-       <a href="https://coruscating-paprenjak-d576fc.netlify.app/" target="_blank"><button>View live</button></a>
-            <a href="https://github.com/Technigo/project-guess-who/pull/198" target="_blank"><button>View on Github</button></a>
-    </div>     -->
-</div>
-
-<!-- <div class="project">
-   <div class ="describing">
-       <p class="describing-title">CHAT BOT BUILT IN JAVASCRIPT.</p> 
-       <p class="describing-text">Responsive web site using HTML, CSS and JavaScript for Guess Who game  <b>>></b></p>
-  
-    </div>
-    <div class="code-card">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JAVASCRIPT</span>
-    </div>
-    <div class="project-buttons">
-      <a href="https://coruscating-paprenjak-d576fc.netlify.app/" target="_blank"><button>View live</button></a>
-            <a href="https://github.com/Technigo/project-guess-who/pull/198" target="_blank"><button>View on Github</button></a>
-    </div>-->
-</div> 
-
-</section>
-
-
-       <!-- MY THOUGHTS ABOUT CODE -->
-    <!-- <section class="thoughts-of-code">
+    <!-- MY THOUGHTS ABOUT CODE -->
+    <section class="thoughts-container">
         <h3>MY THOUGHTS</h3>
 
-        <div class="thougts-grid">
-        <div class="thought-1">
-            <img class= "thought-image" src="./images/bubble.jpg"/> 
-           <div class ="describing">
-               <p class="describing-title">DEC 2019.</p> 
-               <p class="describing-text"> <b>Responsive web site using HTML</b> CSS and JavaScript for Guess Who game.</p>
-           </div>
+    <div class="thougts-grid">
+            <div class="primary-thought">
+            <div class ="describing">
+               <p class="describing-title"></p> 
+               <p class="describing-text"> // Comming up!<b></b></p>   
+            </div>
         </div>
-   
-   <div class= "More-thoughts">
+ 
+    <!-- <div class= "More-thoughts">
     <h4>MORE THOUGHTS</h4>
-        <div class ="describing">
-            <p class="describing-title">CHAT BOT BUILT IN JAVASCRIPT.</p> 
-            <p class="describing-text">Responsive web site using HTML, CSS and JavaScript for Guess Who game <b>>></b></p>
-    </div>
-</div>
-    </section> -->
+            <div class ="describing">
+                <p class="describing-title"></p> 
+                <p class="describing-text"> <b>>></b></p>
+            </div> 
+        </div> -->
+    </section> 
 
-       <!-- SKILLS-->
-    <section class="skills">
-        <div class="header"><h3>SKILLS</h3> </div>
-<div class="body">
-<div class="code">
-        <p class="describing-title">CODE</p> 
-        <p>HTML </p>
-        <p>CSS </p>
-        <p>JAVASCRIPT </p>
-        <p>controller </p>
-        <p>controller </p>
-    </div>
 
-    <div class="UPCOMING">
-        <p class="describing-title">UPCOMING</p> 
-        <p>React </p>
-        <p>Node.js </p>
-        <p>Redux</p>
-    </div>
-    <div class="TOOLBOX">
-        <p class="describing-title">TOOLBOX</p> 
-        <p>controller </p>
-        <p>controller </p>
-        <p>controller </p>
-        <p>controller </p>
-        <p>controller </p>
-    </div>
-<div class="MORE">
-    <p class="describing-title">MORE</p> 
-    <p>controller </p>
-    <p>controller </p>
-    <p>controller </p>
-    <p>controller </p>
-    <p>controller </p>
-</div>
+    <!-- SKILLS-->
+    <section class="skills-container">
+        <div class="skills-head"><h3>SKILLS</h3> </div>
+        <div class="skills">
+            <div class="code">
+                <p class="describing-title">CODE</p> 
+                    <p>HTML </p>
+                    <p>CSS </p>
+                    <p>JavaScript </p>
+                    <p>GitHub </p>
+            </div>
 
-</div>
+            <div class="upcomming">
+                <p class="describing-title">UPCOMING</p> 
+                    <p>React </p>
+                    <p>Node.js </p>
+                    <p>Redux</p>
+            </div>
+
+            <div class="toolbox">
+                <p class="describing-title">TOOLBOX</p> 
+                    <p>Figma</p>
+                    <p>Slack / Discord / Teams </p>
+                    <p>Microsoft Office - excel, ppt, word</p>
+            </div>
+
+            <div class="more">
+                <p class="describing-title">MORE</p> 
+                    <p>Project management </p>
+                    <p>Business strategy </p>
+                    <p>Finance</p>
+                    <p>Presentation skills</p>
+            </div>
+        </div>
     </section>
 
    <!-- FOR MORE-->
-    <section class="for-more">
-        <div class="header"><h3>FOR MORE </h3> </div>
+    <section class="more-container">
+        <div class="more-header"><h3>FOR MORE </h3> </div>
 
-    <div class="body">
-        <div class="social-media">
-            <a href="https://coruscating-paprenjak-d576fc.netlify.app/" target="_blank"><button>
-                <img class= "icon" src="./images/Portfolio - Technigo Bootcamp-3/github.svg" alt= ""/> 
-                <p class="describing-title">GITHUB</p> </button></a>
-         </div>
+        <div class="socialmedia-container">
+            <div class="social-media">
+                <a href="hhttps://github.com/JosefineEngdahl" target="_blank"><button>
+                    <img class= "icon" src="./images/Portfolio - Technigo Bootcamp-3/github.svg" alt= ""/> 
+                    <p class="describing-title">GITHUB</p> </button></a>
+             </div>
 
-    <div class="social-media">
-        <a href="https://coruscating-paprenjak-d576fc.netlify.app/" target="_blank"><button>
-        <img class= "icon" src="./images/Portfolio - Technigo Bootcamp-3/stack.svg" alt= ""/> 
-        <p class="describing-title">STACK OVERFLOW</p></button></a>
-    </div>
+            <div class="social-media">
+                <a href="https://stackoverflow.com" target="_blank"><button>
+                    <img class= "icon" src="./images/Portfolio - Technigo Bootcamp-3/stack.svg" alt= ""/> 
+                    <p class="describing-title">STACK OVERFLOW</p></button></a>
+            </div>
 
-    <div class="social-media">
-        <a href="https://coruscating-paprenjak-d576fc.netlify.app/" target="_blank"><button>
-        <img class= "icon" src="./images/Portfolio - Technigo Bootcamp-3/linkedin.svg" alt= ""/> 
-        <p class="describing-title">LINKEDIN</p></button></a>
-    </div>
-</div>
-
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/josefine-engdahl-2654946a/" target="_blank"><button>
+                    <img class= "icon" src="./images/Portfolio - Technigo Bootcamp-3/linkedin.svg" alt= ""/> 
+                    <p class="describing-title">LINKEDIN</p></button></a>
+            </div>
+        </div>
     </section>
     
    <!-- CONTACT-->
-    <footer class="contact">
-        <div class="contact-container"> 
-
- <h4>CONTACT</h4>
+   <footer class="contact">
+    <div class="contact-container">     
+        <h4>CONTACT</h4>
         <p>Josefine Engdahl</p>
         <p>+46 70 09 19 850</p>
         <p>josefine.engdahl@gmail.com</p>
     </div>
-    </footer>
+</footer>
 </body>
+
 <script src="./script.js"></script>
 </html>

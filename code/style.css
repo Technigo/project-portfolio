@@ -5,7 +5,6 @@ font-family: "Montserrat", "Roboto";
 
 .hero-image { 
     width: 100 vw;
-    /* border: solid red 2px;  */
     height: 65vh; /* ändra till 65% i desktop */
     position: relative;
     background-size: cover;
@@ -19,8 +18,6 @@ font-family: "Montserrat", "Roboto";
     object-fit: cover;
     width: 100%;
   }
-
-
 
 .profile-image {
 width: 150px; /* ta bort i media desktop */
@@ -40,14 +37,11 @@ top: 7%;
 
 .hero-text {
 font-family: "Roboto";
-/* text-align: center; */
 position: absolute;
 top: 25%; /* ändra till 30% i desktop */
 left: 10%;
 width: 80%;  /* ändra till 40% i desktop */
 color: white;
-/* transform: translate(-50%, -50%); */
-
 }
 
 h1{
@@ -60,7 +54,6 @@ padding: 5px;
 h2{
     font-family: "Montserrat";
     font-size: 30px;
-    /* font-weight: bolder; */
 }
 
 p {
@@ -71,39 +64,30 @@ b {
     font-weight: bolder;
 }
 
-.presentation {
-    /* border: solid red 2px;  */
+.presentation-container {
     background-color: #f5f2e3;
-/* background-color: #F4F4F4; */
     width: 100 vw;
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    
+    align-items: center;   
 }
 
 .presentation-text {
-    /* position: absolute;  */
     line-height: 30px; 
     font-size: 16px;
     text-align: center;
     margin: 45px 10px 20px 10px;
-
 }
 
-.start-image {
+.small-figure {
     width: 3em
 }
 
-.tech {
+.tech-container {
     height: auto;
-    /* border: solid red 2px;  */
-    /* background-color: #f6f5f0; */
     background-color: #ffffff;
     width: 100 vw;
-    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,11 +101,10 @@ h3 {
     text-align: center;
     color: #fff;
     padding: 7px;
-    /* border-radius: 5px; */
     font-size: 18px;
-    margin: 20px; 
-  
+    margin: 25px 0 0 0;  
    }
+
    .tech-text {
     display: flex;
       line-height: 30px; 
@@ -131,74 +114,71 @@ h3 {
    }
 
 
-.projects {
-    /* border: solid red 2px;  */
+.projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f5f2e3;
-    /* border: solid red 2px;  */
     width: 100 vw;
     height: auto;
     /* gap: 10px;  */
 }
+.grid-projects {
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 
 .project {
-border-radius: 15px;
-background-color: #f5f2e3;
-margin: 20px; 
-width: 350px; 
-height: auto;
-
+    border-radius: 15px;
+    background-color: #f5f2e3;
+    margin: 10px; 
+    width: 350px; 
+    height: auto;
 }
-
 
 .project:hover {
     transform: scale(1.1);
     transition: transform 0.5s;
   }
 
-.image_title {
-    margin: 10px 15px 0px 10px; 
-    /* border: solid red 2px;  */
-    /* width: 100 vw; */
+.project-image {
+    margin: 10px 10px 0px 10px; 
     position: relative;
     background-position: center;
     background-size: cover;
-   height: 30vh;
-   
-
+   height: auto;
 }
 
-.project-image {
-   width: 100%;
-   height: 100%;
+.image {
+   width: 300px;
+   height: 191px;
    border-radius: 8px;
-   border: solid #d7cfb0 4px;
-   margin: 10px 0px 10px 0px;  
+   text-align: center;
+   /* position: absolute; */
+   /* border: solid #c4b991 2px; */
+   margin: 0px 0px 10px 10px;  
    /* filter: grayscale(100%); */
 }
 
 .title {
 font-family: "Roboto";
 font-weight: bold;
-font-size: 20px;
+font-size: 15px;
 text-align: center;
 position: absolute;
  top: 55%;
 left: 50%;
 color: white;
-/* border:solid #ba4622; */
-padding: 20px;
+padding: 15px;
 border-radius: 10px;
 background:   #c4b991;
 transform: translate(-50%, -50%);
-
 }
 
 .describing p {
 display: block;
-
 }
 
 .code-card {
@@ -215,7 +195,6 @@ padding: 5px;
 border-radius: 5px;
 }
 
-
 button {
     border:#ba4622; /* need this to remove border from button*/
     background:  #c4b991;
@@ -223,7 +202,6 @@ button {
     border-radius: 3px;
     color: rgb(255, 255, 255);
     margin: 0px 0px 20px 10px; 
- 
   }
   
   button:hover {
@@ -232,19 +210,20 @@ button {
     color: white;
   }
   
+
 .describing-title {
 font-weight: bold;
 font-family: "Roboto";
 color: #ba4622;
 line-height: 20px; 
-margin: 30px 0 0 10px; 
+margin: 10px 0 0 10px; 
 }
+
 
 .describing-text {
 line-height: 25px;  
 margin: 0 0 0 10px; 
 font-family: "Roboto";
-
 }
 
 
@@ -252,34 +231,18 @@ font-family: "Roboto";
 color:#ba4622;
 }
 
-/* .project-hide {
-    visibility: hidden;
-} */
 
-.grid-projects {
-height: auto; 
-display: flex;
-flex-direction: column;
-align-items: center;
-}
 
-.other-projects {
+.other-projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f5f2e3;
-    /* border: solid red 2px;  */
-    /* width: 100 vw;
-    height: auto; */
     padding: 0 0 25px 0; 
-    /* border: solid red 2px;  */
-    /* gap: 10px;  */
 }
 
-.other-projects .project {
+.other-projects-container .project {
     background-color: #f5f2e3;
-    /* margin: 0 0 15px 0;  */
-
 }
 
 h4 {
@@ -293,51 +256,35 @@ font-weight: bold;
 }
 
 
-.thoughts-of-code, .thougts-grid {
+.thoughts-container {
     background-color: #f6f5f0;
     width: 100 vw;
     height: auto;
-    /* border: solid red 2px;  */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; 
 }
 
-.thought-1 {
-    width: 300px;
-}
 
-.thought-1 img {
-    position: relative;
-    height: 350px;
-    object-fit: cover;
-    width: 100%;
-  }
-
-.skills {
+.skills-container {
     background-color: white;
     width: 100 vw;
     width: 100 vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin: auto;  
 }
 
-.uppcomming {
-visibility: hidden;
-
-}
-.body {
-    display: flex;
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
    text-align: center;
-    margin:0px 0px 20px 0px; 
-    gap: 30px; 
-     
+    margin:0px 15px 30px 15px; 
+    gap: 5px; 
 }
 
-.for-more {
+.more-container {
     background-color: #f5f2e3;
     width: 100 vw;
     display: flex;
@@ -346,15 +293,17 @@ visibility: hidden;
     margin: auto;
 }
 
+.socialmedia-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   text-align: center;
+    margin:25px 0px 20px 0px;  
+}
+
 .social-media {
-    height: auto;
-    /* border: solid red 2px;  */
-    width: 100 vw;
-    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
 }
 
 .social-media p {
@@ -374,49 +323,44 @@ background-color: transparent;
     transform: scale(1.1);
     transition: transform 0.5s;
     }
+
 .icon {
     margin: 7px; 
     width: 2em;
     right: 10%; /* ändra till 15% i desktop */
     top: 7%;
 }
-.contact {
+
+.contact h4 {
+    margin: 15 0 0px 0 ; 
+    color: white;
+}
+.contact-container {
 background-image: url("./images/pexels-julia-filirovska-8236225.jpg");
-border: solid #f5f2e3 1px;
+border: solid #f6f5f0 1px;
 text-align: center;
 flex-direction: column;
 align-items: center;
+color: white;
 width: 100 vw;
 height: auto;
 }
 
 
-.contact p, .contact h4 {
-color: rgb(255, 255, 255);
-
-}
-
-.contact h4 {
-    margin: 15 0 0px 0 ; 
-}
-.contact-container {
-
-    margin: 20px; 
-}
 
 
 
 
 @media (min-width: 668px) {
 
-    .grid-projects {
+.grid-projects {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px; 
+        gap: 5px; 
         align-items: center;
-      
         height: auto;
 }
+
 
 .project-hide{ 
     visibility: visible;
@@ -430,15 +374,20 @@ color: rgb(255, 255, 255);
 width: 300px; 
 }
 
+
+.body {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
 }
 
-
-
 @media (min-width: 668px) and (max-width: 1024px) {
-.project-image {
-    height: 75%;
+.image {
+    width: 280px;
+    height: 178px;
+    margin:0; 
  }
- .image_title {
+ .project-image {
     height: 100%; 
  }
 
@@ -452,7 +401,7 @@ width: 300px;
     }
 
 .profile-image {
-     width: 250px;  
+     width: 175px;  
     right: 10%; 
         }    
 
@@ -497,22 +446,28 @@ font-size: 20px;
 
 
 .project {
-width: 330px; 
+width: 310px; 
 }
 
 
 
 .title {
 
-    font-size: 15px;
-   
+font-size: 15px;
+padding: 25px;
+  
     }
 
 
 .describing-text {
-
     font-size: 15px;
 }
+
+.other-projects .project {
+    width: auto;
+    margin: 0px; 
+    transform: none;
+     }
 
 }
 @media (min-width: 1024px) {
@@ -579,16 +534,17 @@ width: 330px;
     width: 400px; 
 }
     
-.project-image {
-    height: 95%;
+.image {
+    width: 350px;
+    height: 222px;
 
  }
 .project-hide:hover {
     transform: scale(1.1);
     transition: transform 0.5s;
   }
- .other-projects .project {
-    width: auto;
+ .other-projects-container .project {
+width: auto;
 margin: 0px; 
 transform: none;
  }
@@ -597,11 +553,11 @@ transform: none;
     flex-direction: row;
  } 
 
- .thought-1 {
+ .primary-thought {
     width: 50%;
  }
  
- .thought-1 .describing {
+ .primary-thought .describing {
     width: 70%; 
     display: flex;
     flex-direction: column;
@@ -610,20 +566,15 @@ transform: none;
     margin-bottom: 20px;
     
  }
- .thought-1 img {
+ .primary-thought img {
     width: 70%; 
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
  }
- .More-thoughts {
-width: 50%;
-margin-top: 20px;
 
-}
-
-.span, .button, .describing-text, .describing-title, .skills, .contact-container {
+.span, .button, .describing-text, .describing-title, .skills-container, .contact-container {
  font-size: 20px;
  padding: 10px; 
 }
