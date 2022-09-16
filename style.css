@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Source+Sans+Pro:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;300&family=Source+Sans+Pro:wght@200&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;300;400&family=Source+Sans+Pro:wght@200&display=swap'); */
-
 
 body {
     margin: 0;
@@ -13,7 +11,7 @@ body {
     background-color: #f4f4f4;
     font-size: 16px;
     width: 100%;
-  }
+}
 
 /* Header */
 header {
@@ -83,11 +81,18 @@ header {
     left: 171px;
     top: 356px;
     border-radius: 50%;
+    border: 3px solid #FFB3B3; 
 }
 
 .icon-container {
     position: absolute;
     display: flex;
+    top: 25px;
+    right: 40px;
+}
+
+.icon {
+    padding: 10px;
 }
 
 /*Intro section*/
@@ -180,7 +185,7 @@ header {
     font-size: 28px;
     line-height: 34px;
     letter-spacing: 0.01em;
-    color: #ffffff;
+    color: #1e422c;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -190,11 +195,12 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
 
 .image {
     width: 100%;
     height: auto;
+    opacity: 0.5;
 }
 
 .project-buttons {
@@ -212,7 +218,7 @@ span {
     background: #FFB3B3;
     padding: 5px;
     border-radius: 5px;
-  }
+}
 
 button {
     border: 1px solid #FA9494;
@@ -237,6 +243,8 @@ button:hover {
 .other-projects {
     text-align: left;
     padding-bottom: 20px;
+    margin: 0px auto 30px;
+    width: 320px;
 }
 
 /* Thoughts section */
@@ -253,7 +261,6 @@ button:hover {
 }
 
 /* Skills section */
-
 .skills-heading{
     color: #fff;
     background: #FFB3B3;
@@ -265,8 +272,8 @@ button:hover {
     display: flex;
     align-items: baseline;
     justify-content: flex;
-    padding-left:5%;
-    padding-right:5%;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 20px;
     line-height: 26px;
     margin: 0 auto;
@@ -283,6 +290,25 @@ button:hover {
     font-size: 16px;
 }
 
+.contact-info {
+    padding: 80px; 
+}
+
+.contact {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.contact-list {
+    text-align: center;
+    color: white;
+}
+
 /* More section */
 .more-heading {
     color: #fff;
@@ -291,24 +317,47 @@ button:hover {
     padding: 5px;
 }
 
+.icon-more {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-more-linkedin {
+    padding: 10px;
+}
+
+.icon-more-github {
+    padding: 10px;
+}
+
 /* Footer */
 footer {
-    background-color: #FA9494;
+    background-color: #b9a4db;
+    height: 400px;
 }
+
 
   @media (min-width: 1024px) {
     .background-image {
         width: 100%;
-        height: 520px;
+        height: 500px;
     }
 
     .portfolio {
+        position: absolute;
+        top: 150px;
         font-size: 20px;
-        left: 300px;
+        left: 35%;
     }
 
     .main-text {
-        left: 300px;
+        position: absolute;
+        top: 170px;
+        left: 35%;
     }
 
     .intro-container {
@@ -324,7 +373,7 @@ footer {
         align-items: baseline;
         justify-content: flex;
         margin: 0 auto;
-        width: 70%;
+        width: 60%;
     }
 
     .code-box {
@@ -348,7 +397,27 @@ footer {
 
     .profile-image {
         position: absolute;
-        left: 70%;
-        top: 356px;
-  }
+        left: 65%;
+        top: 300px;
+        width: 220px;
+        height: 220px;
+    }
+
+    .icon-container {
+        position: absolute;
+        display: flex;
+        top: 80px;
+        left: 60%;
+    }
+
+    .icon {
+        padding: 10px;
+    }
+
+    .other-projects {
+        text-align: left;
+        padding-bottom: 20px;
+        margin: 0px auto 30px;
+        width: 700px;
+    }
 }
