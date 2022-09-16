@@ -1,44 +1,103 @@
-.header-image {/* ß */
-    width: 375px;
-    height: 520px;
+/*Here goes the global values*/
+
+/*pictures not used:
+idea: https://images.pexels.com/photos/7203727/pexels-photo-7203727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+*/
+@font-face {
+    font-family: 'aliceregular';
+    src: url('./fonts/alice-regular-webfont.woff2') format('woff2'),
+         url('.fonts/alice-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1{
+    font-family: "aliceregular";
+    margin: 300px 40px;
+    color: white;
+}
+
+h1 span{
+    font-size: 30px;
+}
+
+h2 {
+    background-color: tomato;
+    text-align: center;
+    font-family: "aliceregular";
+    padding: 10px;
+    color: white;
+    font-size: medium;
+}
+
+
+
+.outer-wrapper{
+width: 100%;
+height: 100%;
+margin: -10px 10px;   
+}
+
+.inner-wrapper{
+    width: 95%;
+    height: auto;
+    margin: 10px, 10px, 10px, 10px;
+    display: flex;
+    background-color: grey;
+}
+
+.header-section {
+
     left: 0px;
     top: 0px;
     
-    background: url("https://images.pexels.com/photos/7203727/pexels-photo-7203727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-position: -500px 680px; /* Vart rutan ska börja X,Y position */
-}
+/*     background: url("/images/bokeh2.jpg");*/
+    background-color: tomato;
+    background-size: 860px;
+    width: 355px;
+    height: 550px;
+    background-repeat: no-repeat;
+/*     background-position: -500px 680px; /* Vart rutan ska börja X,Y position */
+ }
 
 
 .profile-pic {
     position: absolute;
-    width: 180px;
-    height: 180px;
-    left: 171px;
-    top: 340px;
+    width: 120px;
+    height: 129px;
+    left: 240px;
+    top: 335px;
     border-radius: 50%;
     
-    background: url("./images/profile_pic2.jpg");
-    background-position: -570px 510px;
+    background: url("./images/mia_2.jpg");
+    background-position: -30px 490px;
+    background-size: 200px;
+    opacity: 1;
+
+
 }
 
  .intro-section{
 position: absolute;
-width: 375px;
-height: 1298px;
-left: 0px;
-top: 1150px;
-
+height: 180px;
+width: 355.5px;
+top: 550px;
+margin-right: 15px ;
 background: #F4F4F4;
-opacity: 0.3;
-} 
-
-.intro-section{
-position: absolute;
-width: 375px;
-height: 324px;
-left: 0px;
-top: 520px;
-
-background: #F4F4F4;
-opacity: 0.3;
+opacity: 1;
 }
+
+.tech-section{
+ position: absolute;
+ width: 356px;
+ height:200px;
+ top: 750px;
+    }
+
+.project-section{
+position: absolute;
+height: auto;
+width: 356px;
+top: 950px;
+}
+
