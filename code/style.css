@@ -57,6 +57,11 @@ h5 {
 .head-section {
   background: rgba(0, 0, 0, 0.1);
 }
+
+.logo img {
+  height: 25px;
+  width: 25px;
+}
 /* */
 .text-heading {
   font-family: "Roboto";
@@ -77,8 +82,8 @@ h5 {
 .profile-img {
   width: 150px;
   position: absolute; /* lets us choose position of the img */
-  right: 0;
-  top: 20vh;
+  right: -2vh;
+  top: 18vh;
   border: 2px solid white;
   border-radius: 50%;
 }
@@ -112,10 +117,6 @@ h5 {
 }
 .project-section {
   margin-bottom: 25px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative; */
 }
 
 .project-section .image-heading-wrapper {
@@ -252,6 +253,9 @@ h5 {
   width: 50px;
   height: 50px;
 }
+.more-section {
+  background: rgba(0, 0, 0, 0.1);
+}
 
 /* FOOTER */
 footer {
@@ -264,13 +268,27 @@ footer {
   margin: 0;
 }
 
+/* TABLET only  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .profile-img {
+    width: 160px;
+    position: absolute;
+    right: 0vh;
+    top: 10vh;
+  }
+}
 /* TABLET & DESKTOP  */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   /* styling for the tag wrappers*/
-  .logo:hover {
-    border-color: #fa382f;
+  .logo img {
+    height: 50px;
+    width: 50px;
   }
 
+  .logo-image img {
+    width: 70px;
+    height: 70px;
+  }
   .project-section .image-heading-wrapper .project-image-weather:hover {
     opacity: 1;
   }
