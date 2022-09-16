@@ -3,7 +3,8 @@ body {
 }
 
 a {
-    cursor: pointer;
+    text-decoration: none;
+    outline: none;
 }
 
 p {
@@ -12,6 +13,18 @@ p {
     font-weight: 400;
     font-size: 17px;
     line-height: 29px; 
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 /*Styling header*/
@@ -56,18 +69,24 @@ header {
         }
 
     .social-media-header-container {
-        grid-column: 1 / 3;
-        justify-self: right;
+        grid-column: 2/3;
         align-self: center;
+        width: 80%;
+        padding-top: 7vh;
+        display: flex;
+    }
+
+    .social-media-header-container img {
+        width: 100%;
     }
 
     .profile-pic {
-            width: 180px;
+            width: 140px;
             border-radius: 50%;
             border: solid 2px white;
             position: absolute;
             right: 10%; 
-            top: 37%;
+            top: 41vh;
         }
 
 /*Styling intro-section*/
@@ -293,10 +312,13 @@ header {
 
 }
 .social-media-container-for-more {
-    width: 30vw; 
-    height: 8vh; 
-    background-color: #FDDFE7;
+    display: flex;
+    align-items: center;
 }
+
+    .social-media-container-for-more img {
+        width: 100%
+    }
 
 /*Styling footer*/
 footer {
