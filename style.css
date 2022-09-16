@@ -52,11 +52,13 @@ h2, h3 {
     color: #FCF8EC;
     background-color: transparent;
     margin: 0;
+    padding: 0;
 }
 .header-h2 {
     text-transform: lowercase;
     background: none;
     margin-top: 0;
+    text-align: left;
 }
 
 
@@ -108,11 +110,12 @@ p {
 }
 .hero-container {
     position: relative;
+    width: 90%;
 }
 .hero-text {
     position: absolute;
-    top: 10rem;
-    left: 2rem;
+    top: 7rem;
+    left: 1rem;
     color: #FCF8EC;
 }
 .logo-container {
@@ -139,7 +142,7 @@ p {
 .portrait-img {
     border-radius: 50%;
     border: solid white 2px;
-    width: 8rem;
+    width: 7rem;
     position: absolute;
     top: 45vh;
     right: 1rem;
@@ -189,6 +192,7 @@ display: flex;
 
 .project {
     margin: 1rem 0;
+    
 }
 
 .project-image {
@@ -196,32 +200,37 @@ display: flex;
     transition: 0.5s ease;
     position: relative;
     width: 100%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--heading);
     
 }
 
 .image-of-project {
     width: 100%; 
+    height: 60%;
     object-fit: cover;
+    max-width: 500px;
+    max-height: 300px;
+    
 }
 
 .project-image-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    
     /* This is a semi-transparent overlay on the image */
-    background-color: rgba(26, 60, 64, 0.6);
+    background-color: rgba(237, 230, 219, 0.5);
     /* This will cause the overlay to fade */
     transition: 0.5s ease;
+    /* color:rgb(237, 230, 219) */
 }
 .overlay-text {
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    color: var(--primary);
+    position: absolute; 
     font-size: 2rem;
- 
+    font-weight: 400;
+    
 }
 
 .other-wrapper {
@@ -231,6 +240,10 @@ display: flex;
 .other-project {
     align-self: flex-start;
     
+}
+
+.thought-description {
+    font-weight: 300;
 }
 
 .other-thoughts {
@@ -310,12 +323,16 @@ footer p{
     background: none;
     
 }
-
-@media (max-width:360px) {
-    .portrait-img {
-        width: 7rem;
-        top: 45vh;
-    }
+/* To provide additional information to screen readers without disturbing the visual layout */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 @media (min-width: 768px) {
@@ -328,6 +345,10 @@ footer p{
         width: 90%;
         max-width: 1000px;
     }
+    .hero-text {
+        top: 10rem;
+      
+    }
     h1 {
         font-weight: 700;
         font-size: 50px;
@@ -335,8 +356,8 @@ footer p{
     }
     .portrait-img {
         /* width: clamp(130px 17vh 200px); */
-        width: 17vh;
-        right: 0;
+        width: 20vh;
+        right: 1rem;
     }
     .intro {
         height: 40vh;
@@ -363,6 +384,15 @@ footer p{
         justify-content: left; 
     }
 
+    .project-image:hover {
+        /* This causes the text to fade, color is the text color */
+        color: transparent;
+      }
+      
+      .project-image-overlay:hover {
+        /* This causes the original background color (.5 opacity) to become transparent */
+        background-color: transparent;
+      }
 
     .skill-wrapper {
         display: grid;
