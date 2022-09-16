@@ -1,13 +1,32 @@
 /* Header https://colorhunt.co/palette/820000b9005bff7c7cfee0c0*/
+p {
+    font-family:"Roboto", sans-serif;
+}
+h3 {
+    font-family:'montserrat', sans-serif;
+}
+
+div,
+label {
+    display: block;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+}
+
+div:focus {
+    font-weight: bold;
+}
+
 .header-container {
     display: flex; 
     flex-direction: column;
     min-width:320px;
     height: 520px; 
     position: relative;
+    background: rgba(156, 166, 197, 0.2);
 }
 
-.header-img img{
+.header-image img{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -15,7 +34,6 @@
     background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-    
 }
 
 .header-text-container {
@@ -25,14 +43,33 @@
     margin-left: 24px;  
 }
 
-.header-text {
+.header-text-small {
     font-size: 13px;
-   
-    color:#FF7C7C;
-    margin-top:0;
-    margin-bottom: 0;
+    color:rgba(254, 224, 192);
+    margin-top:10px;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    font-family:"Roboto", sans-serif;
 }
+.header-text-medium {
+    font-size: 18px;
+    color:rgba(254, 224, 192);
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family:'montserrat', sans-serif;
+    
+}
+.header-text-big {
+    font-size: 25px;
+    color:rgba(254, 224, 192);
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family:'montserrat', sans-serif;
+}
+
+
 
 .fafa-icons{
     display: flex; 
@@ -58,16 +95,22 @@
     height: 180px; 
     border-radius: 50%;
 	object-fit: cover;
-    border-color:black; 
-    border:solid; 
+
+    border:solid rgba(254, 224, 192); 
 }
 
-/* top section. elevator pitch */
+.container-top-section{
+    background-color: rgba(254, 224, 192,0.2);
+}
 .top-section{
-    background-color:rgba(254, 224, 192,0.2) ;
     padding-top: 40px; 
     padding-bottom: 40px; 
     text-align: center;
+    font-family:'montserrat', sans-serif;
+    margin-left:10px;
+    margin-right: 10px;
+   
+    
 }
 
 .line {
@@ -92,12 +135,16 @@
     margin-bottom: 40px;  
     padding-top: 10px; 
     padding-bottom: 10px; 
+    grid-column: 2 / 4;
+    
      
     
 }
 .tech-info-text {
     margin-top: 25px; 
     margin-bottom: 25px; 
+    font-family:"Roboto", sans-serif;
+    grid-column: 2 / 4;
 }
 
 /*featured projects- grid*/
@@ -159,6 +206,7 @@
     text-transform: uppercase;
     color: white;
     padding:3px;
+    font-family:'montserrat', sans-serif;
     
     
 }
@@ -193,6 +241,10 @@
     color:#FF7C7C;
 }
 
+.projects-other {
+    font-family:"Roboto", sans-serif;
+}
+
 
 
 /*article about code*/
@@ -208,6 +260,11 @@
    
 }
 
+.small-heading {
+    font-size: 10px;
+    color:#FF7C7C;
+}
+
 .article-code1 {
     display: grid; 
     grid-column: span 4;
@@ -221,7 +278,6 @@
 
 .container-other-article {
     display: grid; 
-    /*justify-content: center;*/
     grid-column: span 4; 
 }
 
@@ -235,7 +291,7 @@
     color: #FF7C7C;
 }
 
-.articel-other {
+.article-other {
     display: grid; 
     grid-column: span 4; 
 }
@@ -247,6 +303,7 @@
 .skills-container{
     background-color: rgba(254, 224, 192,0.2);
     padding-bottom: 25px;
+    
    
 }
 .parent{
@@ -254,6 +311,7 @@
     grid-column: span 4;
     flex-direction: row;
     justify-content: space-evenly; 
+    font-family:"Roboto", sans-serif;
 }
 
 .portfolio-heading-container-skills{
@@ -312,6 +370,7 @@
 	justify-content: center;
 	align-items: center;
 	color: #FF7C7C;
+    font-family:'montserrat', sans-serif;
 }
 
 .no-underline-link {
@@ -328,6 +387,8 @@
     background-color: #FF7C7C;
     padding-top:50px;
     padding-bottom:50px; 
+    font-family:'montserrat', sans-serif;
+    
 }
 
 .contact-header {
@@ -341,7 +402,7 @@
     display: flex;
   }
   
-  .tag-wrapper p {
+.tag-wrapper p {
     font-family: "Roboto", sans-serif;
     color: #2b2e34;
     font-weight: bold;
@@ -353,20 +414,20 @@
     padding: 4px;
     margin: 3px;
     border-radius: 5px;
-  }
+}
 
-  .color-orange {
+.color-orange {
     color:#FF7C7C;
-  }
+}
 
-  p{
+p   {
     margin: 0;
-    }
+ }
 
-  .small-header-skills {
+.small-header-skills {
     color:#FF7C7C;
     text-align: center;
-  }
+}
   
 .github , .linkedin , .stackoverflow{
     color:#FF7C7C;  
@@ -396,8 +457,16 @@ i.fa{
         margin-top: 300px; 
         margin-left: 100px; 
     }
-    .header-text {
-        font-size: 30px;
+    .header-text-small {
+        font-size: 25px;
+    }
+
+    .header-text-medium {
+        font-size: 35px;
+    }
+
+    .header-text-big {
+        font-size: 40px;
     }
 
     .fafa-icons {
@@ -410,6 +479,9 @@ i.fa{
         position: absolute;
         width: 270px;
         height: 270px;
+    }
+    .overlay {
+        font-size: 22px;
     }
 
 
@@ -433,7 +505,6 @@ i.fa{
         grid-column: 2 / 2;
     }
 
-    .art
 
     .article-other-text{
         display: flex;
@@ -489,29 +560,33 @@ i.fa{
         text-align: center;
     }
 
-  .logos-bottom {
-    font-size: 180%;
-  }
+    .logos-bottom {
+        font-size: 180%;
+    }
 
-  i.stackoverflow {
-    margin-left: 50px; 
-  }
-  i.github {
-    margin-left: 50px;
-    margin-right: 20px; 
-  }
-  i.linkedin {
-    margin-right: 20px; 
-    margin-left: 50px; 
-  }
+    i.stackoverflow {
+        margin-left: 50px; 
+    }
+    i.github {
+        margin-left: 50px;
+        margin-right: 20px; 
+    }
+    i.linkedin {
+        margin-right: 20px; 
+        margin-left: 50px; 
+    }
 
-  .logo-text {
-    margin-left: 25px; 
-  }
+    .logo-text {
+        margin-left: 25px; 
+    }
 
- 
+    .top-section{
+        margin-left:300px;
+        margin-right: 300px;
+       
+        
+    }
     
-
 }
 
     
