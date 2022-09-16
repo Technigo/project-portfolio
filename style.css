@@ -52,7 +52,7 @@ video {
     /* Make sure the video is behind other content */
     z-index: -1;
     /* Dims the video so the text is readable */
-    filter: brightness(75%);
+    /* filter: brightness(75%); */
 }
 
 /* Styling socialmedlia Links Header */
@@ -176,9 +176,6 @@ h3 {
     line-height: 29px;
     text-align: center;
     color: #000000;
-    
-    background:white
-    
 }
 
 .tag-title {
@@ -208,27 +205,24 @@ h3 {
     align-items: center;
     width: 100%;
     margin-top: 1000px;
-    /* background: #c5acac;
-
-    opacity: 60%;
-     */
 }
+
 
 .featured-title {
     position: relative;
     display: flex;
     width: 255px;
     height: 26px;
-    left: auto;
-    top: 10px;
+    left: 25%;  
+    top: 990px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
-    text-align: center;
+    text-align: center; 
     color: #ffffff;
-    margin-bottom: 20px;
+   
 
 }
 
@@ -248,23 +242,18 @@ a:link {
 
 }
 
-.project1 {
-    width: 327px;
-
-}
-
 .pic {
     display: flex;
     width: 100%;
     height: 30vh;
     border: 2px solid white;
     border-radius: 5%;
-    opacity: 60%;
+    /* opacity: 60%; */
 
 }
 
 .linkTextProject {
-    color: rgb(40, 39, 0);
+    color: rgb(64, 92, 7);
 }
 
 .projectTitle {
@@ -275,8 +264,6 @@ a:link {
     font-size: 17px;
     line-height: 29px;
     margin-top: -80px;
-
-
 }
 
 .textProject {
@@ -289,12 +276,26 @@ a:link {
     margin-top: -40px;
 }
 
-/* Weather-App */
-
-.project2 {
+.project1{
     width: 327px;
 
 }
+
+.project2{
+    width: 327px;
+
+}
+.project3{
+    width: 327px;
+
+}
+
+.project4{
+    width: 327px;
+
+}
+
+
 
 /* Tag Wrappers */
 
@@ -327,16 +328,6 @@ a:link {
 
 .tag-wrapper p:hover {
     background-color: #e50e0ed8;
-}
-
-.project3 {
-    width: 327px;
-
-}
-
-.project4 {
-    width: 327px;
-
 }
 
 /* Other projects */
@@ -437,7 +428,7 @@ a:link {
 
 .skills-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     margin-top: 50px; 
@@ -466,8 +457,10 @@ a:link {
 
 .title {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
+    width: 50%; 
     align-items: center;
+    flex-wrap: wrap;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -483,8 +476,9 @@ a:link {
     position: relative;
     display: flex;
     width: 255px;
-    height: 26px;
-     left: auto; 
+    height: 26px;   
+    justify-content: center;
+    left: auto;  
     top: -10px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -532,7 +526,7 @@ a:link {
     color: #FFFFFF;
     background-color: rgb(255, 136, 0);
     padding: 8vh 8vh;
-    rgb(238, 255, 0)rgb(205, 218, 27)
+  
 }
 
 
@@ -551,10 +545,12 @@ a:link {
 /* Media query Screen and Tablet */
 
 
-@media  (min-width: 1024px) {
+@media  (min-width: 668px) {
 
     .profilio-image {
         left: 60%;
+        width: 200px;
+    height: 200px;
     }
 
     h1 {
@@ -569,6 +565,7 @@ a:link {
     h3 {
         left: 20%;
     }
+
     .socialmedia-links img {
         height: 50px;
         justify-content: space-between;
@@ -576,40 +573,42 @@ a:link {
 
     }
     .text-summary {
-      left: 30%;
-        margin-right: 30%;
+      left: 20%;
+        margin-right: 20%;
     }
 
 .tag{
     margin-right: 30%;
     left: 30%;
 }
+.socialmedia-linksBottom{
+    width: 60%;
+    justify-content: space-evenly; 
+}
+
+.title{
+    
+    justify-content: space-evenly; 
+}
+
 .socialmedia-linksBottom img{
     height: 50px;
-    /* justify-content: space-between; */
-    padding: 10px;
+    padding: 0px;
     
     }
-/* .featured-projects {
-   justify-content: space-between;
-   flex-direction: row;
+
+     .featured-projects{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: space-evenly;  
+        margin-left: 25%;
+      } 
+
+      .featured-title {
+        left:40%;
+        top: 1000px;
+       
+      }
     
 }
-.project1{
-   width: 45%
-}
-.project2{
-    width: 45%
- }
- .project3{
-    width: 45%
- }
- .project4{
-    width: 45%
- }  */
-
-/* .featured-title {
-    left: 40%;
-} 
-
-}  */
