@@ -1,52 +1,43 @@
 body, html {
     background-color: #F7E9D7;
-    width: 100%;
     margin: 0%;
 }
 
 /* Header img & icons */
 .header-image {
     width: 100%;
-    height: 520px;
-    /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+    height: 450px;
     margin: 0%;
 }
 
 .profile-image {
     position: absolute;
     width: 180px;
-    right: 8%;
-    top: 356px;
+    right: 10%;
+    top: 300px;
     border: 3px solid white;
     border-radius: 50%;
 }
 
-.social-media {
-    display: flex;
+.icons {
     width: 160px;
+    right: 10%;
+    top: 50px;
     justify-content: space-between;
     flex-direction: row;
     position: absolute;
-    right: 3%;
-    top: 50px;
 }
 
-.social-media img {
+.icons img {
     width: 50px;
 }
-
-/* Don't work yet */
-.social hover {
-    transform: scale(1.1);
-}
-
 
 /* Header text*/
 .hero-text {
     width: 220px;
     height: 202px;
     top: 121px;
-    left: 24px;
+    left: 10%;
     text-align: left;
     position: absolute;
     color: rgb(255, 255, 255);
@@ -56,10 +47,11 @@ body, html {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 18px;
     letter-spacing: 0.04em;
     margin-left: 5px;
+    width: 400px;
 }
 
 .frontend {
@@ -81,28 +73,32 @@ body, html {
 }
 
 /* Summary section */
-.summary-section {
+.intro-section {
     display: flex;
     flex-direction: column;
-    height: 324px;
+    height: 300px;
     text-align: left;
     align-items: center;
     justify-content: center;
     background-color:#FFF6EA;
 }
 
-.summary-section p {
+/* summary text & tech text*/
+p {
     width: 80%;
-    flex-direction: column;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-style: 400;
+    font-weight: normal;
+    font-size: 17px;
     line-height: 29px;
+    margin: 0;
+    word-wrap: break-word;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .line {
-    border: 1px solid #166138;
+    border: 1px solid #99A799;
     width: 30px;
     display: inline-block;
     margin-bottom: 4px;
@@ -111,257 +107,294 @@ body, html {
   .dot {
     height: 10px;
     width: 10px;
-    background-color: #166138;
+    background-color: #99A799;
     border-radius: 50%;
     display: inline-block;
   }
 
 
+/* All titles: Tech, Featured projects, My thoughts  */
+.title {
+    background-color: #99A799;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    justify-content: center;
+    margin: 4%;
+}
 
 
-
-/* TECH */
-.tech-section {
+/* Tech section */
+.tech {
     display: flex;
-    height: 324px;
+    flex-direction: column;
+    height: 200px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: 600;
+  }
+
+/* featured projects section */
+.featured-projects {
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    height: 1300px;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color:#FFF6EA;
+}
+
+/* size of each box */
+.my-projects,
+.more-projects {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.project img {
+    width: 70%;
+    border: 7px solid #99A799;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+a:link {
+    color: #99A799;
+    text-decoration: none;
+  }
+
+/* title before project-explanation */
+h3 {
+    display: column;
+    color: #99A799;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Explanation of project*/
+.project-explanation {
+    display: flex;
+    width: auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/* boxes under projecta programs HTML, CSS3, JavaScript.. */
+.my-programs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.programs {
+    display: flex;
+    width: auto;
+    background-color: #D3E4CD;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px;
+}
+
+
+/* Other project-section */
+.other-projects {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    text-align: center;
+    align-items: center;
+    background-color:#FFF6EA;
+}
+
+.second-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    color: #99A799;
+    text-align: center;
+    align-items: center;
     justify-content: center;
     margin-top: 30px;
 }
 
-.tech {
+/* mythoughts-section */
+.my-thoughts {
     display: flex;
-    background-color: rgb(0, 0, 0);
-    border-radius: 5px;
-    width: 82px;
-    height: 26px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    color: #FFFFFF;
-
-}
-
-.tech-section p {
-    position: absolute;
-    width: 327px;
-    height: 147px;
-    left: 24px;
-    top: 935px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 29px;
-    text-align: center;
-}
-
-/* RUBRIK */
-.featured-projects {
-    width: 255px;
-    height: 26px;
-    left: 69px;
-    top: 1140px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    text-align: center;
-    color: #FFFFFF;
-    background-color: blue;
-    margin-bottom: 150px;
-}
-
-/* ÖVERGRIPANDE SECTION */
-.projects-section {
-    background-color: rgb(246, 184, 247);
+    width: 100%;
     flex-direction: column;
+    height: 300px;
     text-align: center;
-    left: 0px;
-    height: 1300px;
+    align-items: center;
     justify-content: space-evenly;
 }
 
-.link-projects {
+.big-articles {
+    background-color: #D3E4CD;
     display: flex;
     flex-direction: column;
-    width: 327px;
-    height: 322px;
+    width: 330px;
+    height: 200px;
     align-items: center;
-    padding: 20px;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
-.link-projects h3 {
-    color: coral;
+.article-text {
+    display: flex;
+    width: auto;
     font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 29px;
-}
-
-.link-projects p {
-    color: black;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
-    line-height: 29px;
-}
-
-.other-projects {
-    position: absolute;
-    width: 255px;
-    height: 26px;
-    left: 60px;
-    top: 1992px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
     line-height: 25px;
-/* or 119% */
     text-align: center;
-    color: #FA382F;
 }
 
-
-.flex-child {
-    margin-top: 80px;
+/* mythoughts-section */
+.more-thoughts {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 380px;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
 }
 
-.flex-child img {
-    width: 327px;
-    height: 212px;
-    left: 24px;
-}
-
-
-
-
-
-
-.myThoughts {
-
-    height: 300px;
-}
-
-.skills {
-    height: 300px;
-}
-
-.forMore {
-    background-color: rgb(246, 184, 247);
-    height: 300px;
-}
-
-.contact {
-    background-color: rgb(40, 0, 200);
-    height: 300px;
-}
-
-
-
-/* Ipad */
-@media (min-width: 667px) and (max-width: 1200px) {
-
-    /* Header img & icons */
-    .profile-image {
-        margin-top: -70px;
-        width: 250px;
-        top: 378px;
-    }
-
-    /* Header text*/
-    .hero-text {
-        width: 450px;
-        height: 200px;
-        top: 100px;
-        left: 50px;
-    }
-    
-    .name {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 19px;
-    }
-    
-    .frontend {
-        font-size: 52px;
-        line-height: 65px;
-    }
-    
-    .designer {
-        font-size: 30px;
-        line-height: 55px;
-    }
-}
-
-
-/* Big screen */
-@media (min-width: 1200px) {
-
-    /* Header img & icons */
-    .header-image {
-        height: 650px;
-    }
-    
-    .profile-image {
-        width: 333px;
-        top: 378px;
-    }
-    
-    .social-media {
-        width: 260px;
-        right: 10%;
-        top: 50px;
-    }
-    
-    .social-media img {
-        width: 80px;
-    }
-
-/* Header text*/
-.hero-text {
-    width: 607px;
-    height: 339px;
-    top: 206px;
-    left: 410px;
-}
-
-.name {
-    font-size: 28px;
-    line-height: 37px;
-}
-
-.frontend {
-    font-size: 82px;
-    line-height: 100px;
-}
-
-.designer {
-    font-size: 50px;
-    line-height: 78px;
-}
-
-/* Summary-section */
-.summary-section {
+.more-articles {
     display: flex;
     flex-direction: column;
-    height: 400px;
-    text-align: left;
+    width: 500px;
+    margin-top: 30px;
+    text-align: center;
     align-items: center;
-    justify-content: center;
+}
+
+
+/* Skills section */
+.skills {
+    padding-top: 20px;
+    width: 100%;
+    height: 400px;
+    text-align: center;
     background-color:#FFF6EA;
 }
 
-.summary-section p {
-    font-size: 25px;
-    line-height: 50px;
+.my-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 200px;
+    width: 80%;
+    margin-left: 15%;
+    padding: 20px;
 }
 
 
+.skills-title {
+    color: #99A799;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 49px;
+    font-weight: 600;
+    margin: 0;
 }
+
+/* For more */
+.formore {
+    padding-top: 20px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.big-links {
+    display: flex;
+    justify-content: center;
+}
+
+
+.big-icons {
+    display: flex;
+    flex-direction: row;
+    margin: 45px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color:#99A799;
+    height: 300px;
+}
+
+.contact-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-information {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 8px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+/* Ipad */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+
+    }
+
+/* Big Screen */
+@media (max-width: 1024px) {
+    
+
+}
+
