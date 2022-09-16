@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
@@ -9,6 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    max-width: 1280px;
 }
 
 .hero {
@@ -211,7 +210,7 @@ body {
 .other-projects{
     display: grid;
     grid-template-columns: 100%;
-    margin: 5% 0;
+    margin: 10% 0;
 }
 
 .other-projects-title{
@@ -223,31 +222,33 @@ body {
     margin-bottom: 5%;
 }
 
-.other-projects-description{
-    display: block;
-    margin-bottom: 5%;
-    margin-top: 5%;
+.other-projects-list{
     font-size: 15px;
+    margin: 2% 0;
 }
 
 .other-projects-description a{
-    color: #614124;
-    text-decoration: overline;
+    background-color: #614124;
+    color: #FFFBE9;
+    text-decoration: none;
     font-size: 15px;
+    display: inline-block;
 }
 
 .other-projects-description a:hover{
-    text-decoration: underline;
+    background-color: #FFFBE9;
+    color: #614124;
 }
 
 .other-projects-description p{
     color: #614124;
     margin-top: 5%;
+    display: inline;
 }
 
 .other-projects-tags p{
     display: inline-block;
-    margin: 5% 0 2% 0;
+    margin: 5% 0 0 0;
     background-color: #1E5128;
     padding: 5px;
     color: white;
@@ -465,24 +466,8 @@ footer p{
         max-width: 95%;
         margin: 2% 2%;
     }
-
-    .projects h3{
-        margin: 5% 5% 5% 5%;
-    }
     
     .tags-icon p{
-        font-size: 12px;
-    }
-
-    .other-projects{
-        margin-bottom: 5%;
-    }
-    
-    .other-projects-description p{
-        margin-top: 2%;
-    }
-
-    .other-projects-tags p{
         font-size: 12px;
     }
 
@@ -562,25 +547,14 @@ footer p{
     .project-screenshot {
         max-width: 95%;
     }
-    
-    .tags-icon p{
-        font-size: 12px;
-    }
 
     .other-projects{
-        margin: 5% 15%;
-    }
-    
-    .other-projects-description{
-        display: inline-block;
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 5% 2%;
     }
 
-    .other-projects-description a{
-        padding-right: 10px;
-        text-decoration: none;
-    }
-
-    .other-projects-tags p{
+    .tags-icon p{
         font-size: 12px;
     }
 
