@@ -9,6 +9,13 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+.portfolio-section:nth-child(2n) {
+    background-color: #f4f4f4;
+    font-size: 16px;
+    width: 100%;
+  }
+
+/* Header */
 header {
     margin: 0;
     background-repeat: no-repeat;
@@ -37,37 +44,37 @@ header {
     left: 30px;
 }
 
-.portfolio-section:nth-child(2n) {
-    background-color: #f4f4f4;
-    font-size: 16px;
-    width: 100%;
-  }
-
 .main-text {
     position: absolute;
     width: 220px;
     left: 24px;
     top: 121px;
-
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
     letter-spacing: 0.04em;
     color:#FFFFFF;
 }
 
 .main-text h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 42px;
     line-height: 40px;
+    margin: 10px 0px 10px 0px;
+}
+
+.main-text h2 {
+    font-size: 24px;
+}
+
+.header-skills {
+    margin: 0%;
 }
 
 .heading-container {
     display: flex;
     justify-content: center;
     margin: 10px auto 5px;
+    color: #fff;
+    background: hotpink;
 }
 
 .profile-image {
@@ -81,24 +88,7 @@ header {
 
 .icon-container {
     position: absolute;
-    width: 130.5px;
-    height: 40px;
-    left: 220px;
-}
-
-.main-text {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-text h1 {
-    font-size: 42px;;
-}
-
-.main-text h2 {
-    font-size: 24px;
 }
 
 /*Intro section*/
@@ -119,6 +109,8 @@ header {
     text-align: center;
     margin: 40px auto 30px;
 }
+
+/* Tech section */
 
 /* Feature projects*/
 
@@ -226,16 +218,48 @@ span {
     border-radius: 5px;
   }
 
-  button {
+button {
     border: 1px solid grey;
     background: #fff;
     padding: 5px;
     border-radius: 3px;
     color: #000;
-  }
+}
   
-  button:hover {
+button:hover {
     border: 1px solid grey;
     background: rgb(248, 214, 230);
     color: #000;
+}
+
+
+  @media (min-width: 666px) {
+    .background-image {
+        width: 100%;
+        height: 520px;
+    }
+    .portfolio {
+        font-size: 20px;
+        left: 250px;
+    }
+
+    .main-text {
+        left: 250px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .background-image {
+        width: 100%;
+        height: 520px;
+    }
+    .portfolio {
+        font-size: 20px;
+        left: 300px;
+    }
+
+    .main-text {
+        left: 300px;
+    }
+
   }
