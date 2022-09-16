@@ -1,7 +1,7 @@
 :root {
-    --primary: #F7F7F2/* #EFF0F4 */;
-    --secondary: #EDE6DB/* #D3D6DB */;
-    --heading: #1A3C40;
+    --primary: #F7F7F2;
+    --secondary: #EDE6DB;
+    --heading: #212729 /*#1A3C40 */;
     --ligtherGreen: #417D7A;
   }
 
@@ -16,14 +16,7 @@ body {
     background-color:var(--primary);
 }
 
-a {
-    text-decoration: none;
-    cursor: pointer;
-    color: inherit;
-}
-.underline {
-    text-decoration: underline;
-}
+
 /* HEADINGS */
 h1 {
     font-weight: 700;
@@ -31,7 +24,7 @@ h1 {
     letter-spacing: .2rem;
 }
 h2, h3 {
-    background: var(--heading)/* #79A3B1 */;
+    background: var(--heading);
     width: fit-content;
     justify-self: center;
     text-align: center;
@@ -40,28 +33,18 @@ h2, h3 {
     padding: 5px;
     color: #FCF8EC;
 }
-
-.sub-heading {
-    text-transform: uppercase;
-    background: none;
-    margin: 30px auto 20px;
-    color: var(--heading);
-}
-
-.name-heading {
-    color: #FCF8EC;
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-}
-.header-h2 {
+.hero h2 {
     text-transform: lowercase;
     background: none;
     margin-top: 0;
     text-align: left;
 }
-
-
+.hero h3 {
+    color: #FCF8EC;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
 .project h3 {
     font-size: 17px;
     text-transform: uppercase;
@@ -69,6 +52,13 @@ h2, h3 {
     color: var(--heading);
     display: inline;
     background-color: transparent;
+    padding-left: 0;
+}
+.sub-heading {
+    text-transform: uppercase;
+    background: none;
+    margin: 30px auto 20px;
+    color: var(--heading);
 }
 .code-thoughts h3 {
     font-size: 17px;
@@ -76,17 +66,14 @@ h2, h3 {
     font-weight: 700;
     padding-left: 0;
 }
-.other h3 {
-
-}
 .skills h3 {
     font-size: 17px;
     color: var(--heading);
     background-color: transparent;
     margin: 0 auto;
-
 }
-/* //////////////////////////////////// */
+
+/* Other text formating */
 p {
     display: inline-block;
     max-width: 600px; 
@@ -94,13 +81,21 @@ p {
     font-size: 17px;
     font-family: 'Roboto Condensed', sans-serif;    
 }
-
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+.underline {
+    text-decoration: underline;
+}
 .date {
     color: var(--heading);
     font-size: 16px;
 }
+/* HEADER */
 .hero {
-    background-image: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hero-img.jpg);
+    background-image: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hero-img.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -122,21 +117,12 @@ p {
     position: absolute;
     top: 2rem;
     right: 1rem;
+    height: 5rem;
 }
 .logo {
     margin: 0 .1rem;
     width: 3rem;
-}
-
-.dark-logo {
-    margin: 0 .5rem;
-    width: 48px;
-    height: 48px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* using this calculator I was able to change colors to match what i want https://codepen.io/sosuke/pen/Pjoqqp */
-    filter: invert(17%) sepia(44%) saturate(591%) hue-rotate(138deg) brightness(21%) contrast(89%);
-
+    height: 3rem;
 }
 
 .portrait-img {
@@ -148,7 +134,7 @@ p {
     right: 1rem;
     object-fit: cover;
 }
-
+/* MAIN CONTENT */
 main {
     display: flex;
     justify-content: center;
@@ -169,7 +155,6 @@ display: flex;
     display: inline-block;
     margin-bottom: 4px;
 }
-
 .dot {
     height: 10px;
     width: 10px;
@@ -180,7 +165,6 @@ display: flex;
 .bg-darker {
     background-color: var(--secondary);
 }
-
 .tech {
     text-align: center;
 }
@@ -189,12 +173,9 @@ display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .project {
-    margin: 1rem 0;
-    
+    margin: 1rem 0; 
 }
-
 .project-image {
     /* This transition will cause the text to fade */
     transition: 0.5s ease;
@@ -204,18 +185,15 @@ display: flex;
     justify-content: center;
     align-items: center;
     color: var(--heading);
-    
+    margin-bottom: 2rem;  
 }
-
 .image-of-project {
     width: 100%; 
     height: 60%;
     object-fit: cover;
     max-width: 500px;
     max-height: 300px;
-    
 }
-
 .project-image-overlay {
     position: absolute;
     width: 100%;
@@ -224,67 +202,23 @@ display: flex;
     background-color: rgba(237, 230, 219, 0.5);
     /* This will cause the overlay to fade */
     transition: 0.5s ease;
-    /* color:rgb(237, 230, 219) */
 }
 .overlay-text {
     position: absolute; 
     font-size: 2rem;
     font-weight: 400;
-    
 }
-
 .other-wrapper {
     display: flex;
     flex-direction: column;
 }
 .other-project {
-    align-self: flex-start;
-    
+    align-self: flex-start;  
 }
-
-.thought-description {
-    font-weight: 300;
-}
-
-.other-thoughts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    width: 100%;
-}
-
-.skill-wrapper {
-    display: grid;
-    grid-auto-flow: column dense;
-    grid-template-columns: 1fr 1fr;
-    
-}
-.list-section {
-    justify-self: center;
-    text-align: center;
-    display: block;
-}
-
-ul {
-    list-style-type: none;
-    margin-bottom: 16px;
-}
-
-li {
-   padding: 4px; 
-}
-.list-section3 {
-    grid-column-start: 2;
-}
-.list-section4 {
-    grid-column-start: 2;
-}
-
 .tag-wrapper {
     display: flex;
+    margin: -4px;
 }
-
 .tag-wrapper p {
     font-family: "Roboto", sans-serif;
     color: #FFFFFF;
@@ -301,28 +235,65 @@ li {
     font-weight: 700;
     color: var(--heading);
 }
-
+.thought-description {
+    font-weight: 300;
+}
+.other-thoughts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+}
+.skill-wrapper {
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-template-columns: 1fr 1fr;  
+}
+.list-section {
+    justify-self: center;
+    text-align: center;
+    display: block;
+}
+ul {
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+li {
+   padding: 4px; 
+}
+.list-section3 {
+    grid-column-start: 2;
+}
+.list-section4 {
+    grid-column-start: 2;
+}
 .FMlogo-container {
    display: flex;
    justify-content: center;
 }
-
+.dark-logo {
+    margin: 0 .5rem;
+    width: 48px;
+    height: 48px;
+    /* using this calculator I was able to change colors to match what i want https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(17%) sepia(44%) saturate(591%) hue-rotate(138deg) brightness(21%) contrast(89%);
+}
+/* FOOTER */
 footer {
     background-color: var(--ligtherGreen);
     text-align: center;
     padding-bottom: 40px;
+}
+.footer-heading {
+    background: none;
 }
 footer p{
     font-family: 'Montserrat', serif;
     color: #FFF;
     display: block;
     margin: 0 auto;
-
  }
-.footer-heading {
-    background: none;
-    
-}
 /* To provide additional information to screen readers without disturbing the visual layout */
 .sr-only {
     position: absolute;
@@ -336,6 +307,11 @@ footer p{
 }
 
 @media (min-width: 768px) {
+    h1 {
+        font-weight: 700;
+        font-size: 50px;
+        letter-spacing: .2rem;
+    }
     .hero {
         display: flex;
         justify-content: center;
@@ -349,13 +325,7 @@ footer p{
         top: 10rem;
       
     }
-    h1 {
-        font-weight: 700;
-        font-size: 50px;
-        letter-spacing: .2rem;
-    }
     .portrait-img {
-        /* width: clamp(130px 17vh 200px); */
         width: 20vh;
         right: 1rem;
     }
@@ -364,7 +334,7 @@ footer p{
         align-items: center;
         justify-content: center;
         display: flex;
-        }
+    }
     .grid-wrapper {
         display: grid ;
         grid-template-columns: 1fr 1fr;
@@ -373,7 +343,9 @@ footer p{
     }
     .projects-wrapper {
         grid-template-rows: repeat(2, 1fr);
-
+    }
+    .project1 {
+        grid-column-start: 1;
     }
     .other-wrapper {
         width: 60vw;
@@ -383,17 +355,14 @@ footer p{
         width: 60vw;
         justify-content: left; 
     }
-
     .project-image:hover {
         /* This causes the text to fade, color is the text color */
         color: transparent;
-      }
-      
-      .project-image-overlay:hover {
+    }
+    .project-image-overlay:hover {
         /* This causes the original background color (.5 opacity) to become transparent */
         background-color: transparent;
-      }
-
+    }
     .skill-wrapper {
         display: grid;
         grid-auto-flow: column;
@@ -419,6 +388,13 @@ footer p{
     .dark-logo {
         width: 4rem;
         height: 4rem;
+    }
+    .logo:hover{
+        transform:scale(1.2);
+    }
+    .logo {
+        transition: transform .5s;
+        transition-timing-function: linear;
     }
 }
 
