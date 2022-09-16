@@ -1,6 +1,6 @@
 /* general styles */
 
-.body {
+body {
   font-size: 16px;
 }
 
@@ -9,17 +9,19 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
+  color: black;
 }
 
 /* create class called underlined for links that do want an underline? */
 
-.outer-wrapper {
-  width: 100%;
+.page-section {
+  padding: 60px 0;
+}
+
+.inner-wrapper {
+  width: 90%;
+  max-width: 800px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .section-title {
@@ -28,7 +30,6 @@ a:active {
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -44,16 +45,17 @@ a:active {
   font-size: 25px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 40px;
+  color: hotpink;
 }
 
 /* HEADER */
 
 .main-header {
-  width: 100vw;
-  height: 35vh;
-  background: url(http://placekitten.com/1400/400);
+  width: 100%;
+  height: 400px;
+  background: url(http://placekitten.com/2500/700);
   background-color: hotpink;
   position: relative;
 }
@@ -64,16 +66,19 @@ a:active {
   margin: 0 auto;
 }
 
-.header-icons-wrapper {
+.header-icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
   margin: 0 auto;
-  max-width: 250px;
+  position: absolute;
+  top: 40px;
+  right: 20px;
 }
 
 .header-icon-container {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 2px solid white;
   margin: 0 auto;
@@ -81,37 +86,44 @@ a:active {
 }
 
 .header-icon {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   align-self: center;
   justify-self: center;
 }
 
 .header-text-wrapper {
+  position: absolute;
+  top: 140px;
 }
 
 .header-text-name {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: white;
+  font-size: 16px;
 }
 
 .header-text-title {
   font-family: "Roboto", sans-serif;
   text-transform: lowercase;
   color: white;
+  font-size: 40px;
+  padding-top: 10px;
 }
 
 .header-text-other-title {
   font-family: "Roboto", sans-serif;
   text-transform: lowercase;
   color: white;
+  font-size: 22px;
+  padding-top: 10px;
 }
 
 .profile-image {
   position: absolute;
   right: 15%;
-  bottom: -30%;
+  bottom: -10%;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -127,19 +139,10 @@ a:active {
 
 .intro {
   background-color: #f4f4f4;
-  height: 300px;
-}
-
-.intro-wrapper {
-  width: 70%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-top: 90px;
-  padding-bottom: 40px;
 }
 
 .line {
-  border: 1px solid #c62a88;
+  border: 1px solid hotpink;
   width: 40px;
   display: inline-block;
   margin-bottom: 4px;
@@ -148,29 +151,22 @@ a:active {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #c62a88;
+  background-color: hotpink;
   border-radius: 50%;
   display: inline-block;
 }
 
 .intro-text {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
+  line-height: 2rem;
 }
 
 /* TECH */
 
 .tech {
   background-color: white;
-  height: 250px;
-}
-
-.tech-wrapper {
-  width: 70%;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .tech-text {
@@ -179,26 +175,25 @@ a:active {
   font-size: 16px;
   text-align: center;
   line-height: 2rem;
-  padding-top: 50px;
 }
 
-.tech-text-highligt {
+.tech-text-highlight {
   color: hotpink;
 }
 
 /* PROJECTS */
 
-/* featured projects */
 .projects {
   background-color: #f4f4f4;
   justify-content: center;
 }
 
+/* featured projects */
+
 .featured-projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  max-width: 800px;
+  grid-gap: 30px;
   margin: 0 auto;
 }
 
@@ -245,12 +240,16 @@ a:active {
 .project-description-title {
   text-transform: uppercase;
   font-weight: 700;
-  /*roboto*/
+  font-family: "Roboto", sans-serif;
   color: hotpink;
+  padding-top: 25px;
 }
 
 .project-description-text {
-  /*roboto*/
+  font-family: "Roboto", sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.5rem;
 }
 
 .project-card:hover .project-title-wrapper {
@@ -269,13 +268,17 @@ a:active {
 .other-projects-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 30px;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .other-projects-item {
   grid-column: span 1;
+}
+
+.other-projects-description {
+  padding-bottom: 7px;
 }
 
 .other-project-description-title {
@@ -333,13 +336,12 @@ a:active {
 
 .my-thoughts {
   background-color: white;
-  height: 600px;
 }
 
 .my-thoughts-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 30px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -362,16 +364,21 @@ a:active {
   text-transform: uppercase;
   color: hotpink;
   font-family: "Roboto", sans-serif;
+  padding-top: 25px;
 }
 
 .my-thoughts-entry-title {
-  text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
+  padding-top: 7px;
+  line-height: 1.5rem;
+  font-size: 18px;
 }
 
 .my-thoughts-entry-text {
   font-family: "Roboto", sans-serif;
+  line-height: 1.5rem;
+  padding-top: 7px;
 }
 
 .my-thoughts-entry-text-highlight {
@@ -383,7 +390,7 @@ a:active {
 .more-thoughts-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -416,7 +423,6 @@ a:active {
 
 .skills {
   background-color: #f4f4f4;
-  height: 400px;
   text-align: center;
 }
 
@@ -425,15 +431,12 @@ a:active {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 10px;
-  max-width: 800px;
   margin: 0 auto;
 }
 
 .skill-grid-upcoming {
   grid-row-start: 2;
 }
-
-/* add display none to more for mobile*/
 
 .skill-grid-title {
   text-transform: uppercase;
@@ -444,20 +447,19 @@ a:active {
 
 .skill-grid-list {
   font-family: "Roboto", sans-serif;
+  line-height: 1.6rem;
 }
 
 /* FOR MORE */
 
 .for-more {
   background-color: white;
-  height: 300px;
 }
 
 .for-more-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
-  max-width: 500px;
 }
 
 .for-more-entry {
@@ -486,22 +488,21 @@ a:active {
   font-family: "Roboto", sans-serif;
   color: hotpink;
   text-align: center;
+  padding-top: 20px;
 }
 
 /* FOOTER */
 
 .footer {
   background-color: hotpink;
-  height: 300px;
 }
 
-.subtitle-footer {
+.footer-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 25px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 40px;
   padding-bottom: 40px;
   color: white;
 }
@@ -512,8 +513,38 @@ a:active {
   font-size: 18px;
   text-align: center;
   color: white;
+  line-height: 1.6rem;
 }
 
-/*mobile screen equals 375 px
+/* MOBILE */
 
-desktop  equal to  1920 px*/
+@media (max-width: 669px) {
+  .hidden-on-mobile {
+    display: none;
+  }
+  .featured-projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .my-thoughts-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+/* TABLET */
+
+@media (min-width: 668px) {
+}
+
+/* DESKTOP */
+
+@media (min-width: 1025px) {
+  .hidden-on-desktop {
+    display: none;
+  }
+}
