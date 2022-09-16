@@ -1,26 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto:ital@0;1&display=swap');
 
 
 :root {
-    --primary: #f3f3f2; /* background colour 1 */
-    --secondary: white; /* background colour 2 */
-    --tertiary: black; /* text color */
-    --quaternary: white;/*Title text colour*/
-    --quinary: #d22135; /* title background colour */
-  }
+    --primary: #f3f3f2;
+    /* background colour 1 */
+    --secondary: white;
+    /* background colour 2 */
+    --tertiary: black;
+    /* text color */
+    --quaternary: white;
+    /*Title text colour*/
+    --quinary: #d22135;
+    /* title background colour */
+    font-size: 15px;
+}
 
 /* for mobile */
 
 .outer-wrapper-1 {
     width: 100%;
-    height: 95vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
- .outer-wrapper-1::after {
+.outer-wrapper-1::after {
     content: "";
     background: url(./assets/header-img.jpg);
     background-size: cover;
@@ -31,13 +36,24 @@
     right: 0;
     position: absolute;
     z-index: -1;
-  
- } 
+
+}
 
 .inner-wrapper-1 {
-display: flex;
-width: 80%;
-margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inner-wrapper-1 p {
+    color: whitesmoke;
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 18px;
+    /* font-size: 20px;/*  */
+    padding-left: 1%;
+    padding-top: 5%;
 }
 
 .profile-pic {
@@ -47,24 +63,34 @@ margin: 0 auto;
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 2px solid whitesmoke;   
+    border: 2px solid whitesmoke;
+}
+
+.link-container {
+    display: flex;
+    justify-content: right;
+    padding: 10%;
 }
 
 .header-link {
     height: 45px;
-    width: 45px; 
+    width: 45px;
+    padding: 1%;
 }
 
-.header-text {
-color: whitesmoke;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 18px;
+.header-text-p {
+    max-width: 50%;
+}
 
-/* or 138% */
-letter-spacing: 0.04em;
+.header-text-h1 {
+    color: whitesmoke;
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: 900;
+    font-size: 2.5em;
+    text-align: left;
+    max-width: 50%;
+    line-height: 110%;
 }
 
 .outer-wrapper-grey {
@@ -92,10 +118,10 @@ letter-spacing: 0.04em;
     font-family: 'montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    margin-top: 20px;
-    padding: 10px;
+    font-size: 1.5em;
+    line-height: 120%;
+    margin-top: 10%;
+    padding: 2%;
     text-align: center;
     display: inline-block;
     background-color: var(--quinary);
@@ -106,35 +132,34 @@ letter-spacing: 0.04em;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 21px;
+    font-size: 1.5em;
     color: #FA382F;
 }
 
 .section h4 {
     font-family: 'Roboto';
     margin-top: 10%;
-font-style: normal;
-font-weight: 700;
-font-size: 21px;
-line-height: 25px;
-
-/* or 119% */
-
-color: #FA382F;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 119%;
+    margin-bottom: 1%;
+    color: #FA382F;
 }
 
 .section p {
     text-align: center;
+    line-height: 160%;
 }
 
 
-#intro p{
-   padding: 10%;
-   font-family: 'Montserrat';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 17px;
-   line-height: 29px;
+#intro p {
+    padding: 10%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 138%;
 }
 
 #tech {
@@ -146,8 +171,8 @@ color: #FA382F;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 29px;
+    font-size: 1.2em;
+    line-height: 138%;
 }
 
 
@@ -166,25 +191,29 @@ color: #FA382F;
     padding: 10%;
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 17px;
-    line-height: 29px;
+    font-size: 1.2em;
+    line-height: 138%;
     text-align: left;
 }
 
-.feature-project h3   {
-font-weight: 700;
-line-height: 171%;
-padding-top: 10%;
+.feature-image {
+    width: 100%;
+}
+
+.feature-project h3 {
+    font-weight: 700;
+    line-height: 171%;
+    padding-top: 10%;
 }
 
 
 .feature-project p {
-font-weight: 400;
-text-align: left;
+    font-weight: 400;
+    text-align: left;
 
 }
 
- a {
+a {
     color: inherit;
     text-decoration: none;
 }
@@ -197,21 +226,31 @@ a:hover {
     display: none;
 }
 
+.other-project {
+    text-align: left;
+}
+
+.other-project p {
+    text-align: left;
+}
+
 .tag-wrapper {
     max-width: 100%;
+    padding-bottom: 5%;
 }
 
 .tags {
     margin: 5% 2% 0% 0%;
     padding: 0 2% 0 2%;
-    background-color: aquamarine;
-    color: black;
+    background-color: #FA382F;
+    color: white;
     float: left;
 
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-letter-spacing: 0.01em;
+    font-style: normal;
+    font-size: 0.5em;
+    font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
 .skill-grid {
@@ -226,6 +265,27 @@ letter-spacing: 0.01em;
     grid-area: 1 / 1 / span 1 / span 2;
 }
 
+.skill-grid h3 {
+    margin-bottom: 9%;
+}
+
+.link-container-2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+}
+
+.link-container-2 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: #FA382F;
+}
+
+.ending-link {
+    width: 33%;
+}
+
 footer {
     background-color: var(--quinary);
 }
@@ -233,28 +293,38 @@ footer {
 .footer-text {
     text-align: center;
     font-family: 'Montserrat';
+    font-style: normal;
+    padding-bottom: 10%;
+    color: white;
+}
+
+.footer-text h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 10%;
+    padding-top: 15%;
+}
+
+.footer-text p {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 2%;
 }
 
 
-/* #thoughts {
-    padding: 10%;
 
-} */
-
-
-
-   /* For screen readers, not visible on web page */
+/* For screen readers, not visible on web page */
 .sr-only {
     border: 0 !important;
-	clip: rect(1px, 1px, 1px, 1px) !important; 
-    clip-path: inset(50%) !important; 
-	height: 1px !important;
-	margin: -1px !important;
-	overflow: hidden !important;
-	padding: 0 !important;
-	position: absolute !important;
-	width: 1px !important;
-	white-space: nowrap !important; 
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
 }
 
 
@@ -262,12 +332,92 @@ footer {
 @media (min-width: 668px) and (max-width: 1024px) {
 
     .section h2 {
-      letter-spacing: 0.01em;
+        letter-spacing: 0.01em;
     }
 
 }
+
 /* for desktop */
 @media (min-width: 1025px) {
 
-}
+    :root {
+        font-size: 20px;
+    }
 
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header-text-p {
+        margin-left: 15%;
+    }
+
+    .header-text-h1 {
+        margin-left: 15%;
+        padding-left: 0.5%;
+    }
+
+    #featured h2 {
+        margin-bottom: 5%;
+    }
+
+    .project-container {
+        max-width: inherit;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature-project {
+        padding: 4%;
+    }
+
+    .other-project {
+        display: flex;
+flex-direction: column;
+text-decoration: underline;
+    }
+
+    .other-project h4 {
+        display: inline;
+    }
+
+    .other-project p {
+        display: inline;
+    }
+
+    .feature-image {
+        max-width: 100%;
+        max-height: 80%;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .skill-title {
+        grid-area: 1 / 1 / span 1 / span 3;
+    }
+
+    .op-title {
+        grid-area: 3 /1 / span 1 / span 2;
+        margin: 10% 0% 5% 0%;
+    }
+
+    #other-project-1 {
+        grid-area: 4 / 1 /span 1 / span 2;
+    }
+
+    #other-project-2 {
+        grid-area: 5 / 1 /span 1 / span 2;
+    }
+
+    .tag-wrapper {
+        margin-top: -3%;
+    }
+
+    .footer-text h2 {
+        margin-bottom: 5%;
+        padding-top: 10%;
+    }
+}
