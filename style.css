@@ -26,7 +26,6 @@ font-family: 'Roboto', sans-serif;*/
     flex-direction: column;
     border: 2px solid rgb(27, 63, 125);
 }
-
 .header-wrapper {
     border: 2px solid rgb(32, 125, 27);
     width: 80%;
@@ -55,25 +54,27 @@ font-family: 'Roboto', sans-serif;*/
     flex-direction: row;
     width: 100%;*/
 }
-.profile-image {
+.profile {
     border: 2px solid red;
-    justify-content: flex-end;
+    align-self: flex-end;
     /*display: flex;
     flex-direction: row;
     width: 100%;*/
 }
-/*.profile-image img {
+.profile-image {
     width: 180px;
-    height: 180px;
+    height: 200px;
     border-radius: 50%;
     border: 2px solid whitesmoke;
-    align-self: flex-end;
+    overflow: hidden;
+    position: relative;
+    top: 2rem;
     /* for the absolute positioning:
     position: absolute;
     bottom: -3%;
     left: 36%;
-    object-fit: cover;
-}*/
+    object-fit: cover;*/
+}
 .portfolio p {
     font-family: 'Roboto';
     font-size: 14px;
@@ -307,27 +308,18 @@ div.tooltip[aria-hidden="true"] {
 /* TABLET STYLING */
 @media (min-width: 668px) and (max-width:1024px) {
     .profile-image {
-        left: 53%;
-        bottom: -3%;
         width: 300px;
-        height: 300px;
+        height: 320px;
     }
-
 }
 
 /* DESKTOP */
 @media (min-width: 1025px) {
     .profile-image {
-        left: 60%;
-        bottom: -3%;
-        width: 400px;
-        height: 400px;
+        width: 330px;
+        height: 350px;
     }
-
-    .top {
-        height: 56vh;
-    }
-
+   
     .summary {
         font-size: 30px;
         line-height: 50px;
