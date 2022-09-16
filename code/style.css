@@ -61,26 +61,17 @@ h5 {
 .text-heading {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: ;
-  font-size: ;
-  line-height: ;
   letter-spacing: 0.2em;
   color: #ffffff;
 }
 
-.social-links {
+.social-links-header {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 8px;
   position: absolute;
   right: 0;
   top: 0;
-}
-.logo {
-  padding: 15px;
-  border: 2px solid white;
-  border-radius: 50%;
-  size-adjust: 25px;
 }
 
 .profile-img {
@@ -197,32 +188,16 @@ h5 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* 
-.project-section .content .project-title {
-  color: #fa382f;
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 17px;
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
-*/
 
 .project-section .content .project-description {
   font-weight: 17px;
 }
-
-/*
-.project-img-text {
-    position: absolute;
-    right: 50%;
-    bottom: 80;
-    font-family: 'Roboto';    
-    font-size: 25px;
-    letter-spacing: 0.04em;
-    color: #000000;
-}
-
-
-
 
 /* TAG WRAPPERS */
 .tag-wrapper {
@@ -253,33 +228,39 @@ h5 {
   box-sizing: border-box;
 }
 
+.skills-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-item .content {
+  width: 50%;
+  max-width: 50%;
+  text-align: center;
+}
+
+/* MORE SECTION */
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
 .logo-image img {
-  height: 10%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 /* FOOTER */
 footer {
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
+  background-color: rgb(255, 0, 0);
   font-family: "Montserrat";
+  color: #ffffff;
   font-style: normal;
   text-align: center;
-
-  background-image: url(./pic/forest.jpeg);
-  background-size: cover;
-  background-position: center;
   height: 300px;
-  position: relative;
-}
-
-footer h2 {
-  background-color: #ffffff;
-  color: #fa382f;
-}
-
-footer .contact-details {
-  background-color: #ffffff;
-  color: #fa382f;
+  margin: 0;
 }
 
 /* TABLET & DESKTOP  */
@@ -299,10 +280,21 @@ footer .contact-details {
   .project-section .image-heading-wrapper .project-image-chat:hover {
     opacity: 1;
   }
+  .project-section .image-heading-wrapper .project-image-news:hover {
+    opacity: 1;
+  }
+  .project-section .content:hover {
+    background-color: #ffffff;
+  }
 
-  .featured-projects .project-section {
-    width: 50%;
-    max-width: 50%;
+  .project-list .project-section {
+    width: 40%;
+    max-width: 40%;
     box-sizing: border-box;
+  }
+  .project-section .content {
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
   }
 }
