@@ -1,0 +1,519 @@
+/* general styles */
+
+.body {
+  font-size: 16px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* create class called underlined for links that do want an underline? */
+
+.outer-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-title-background {
+  color: white;
+  background-color: hotpink;
+  padding: 3px;
+}
+
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* HEADER */
+
+.main-header {
+  width: 100vw;
+  height: 35vh;
+  background: url(http://placekitten.com/1400/400);
+  background-color: hotpink;
+  position: relative;
+}
+
+.header-wrapper {
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-icons-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.header-icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0 auto;
+  display: grid;
+}
+
+.header-icon {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  justify-self: center;
+}
+
+.header-text-wrapper {
+}
+
+.header-text-name {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.header-text-title {
+  font-family: "Roboto", sans-serif;
+  text-transform: lowercase;
+  color: white;
+}
+
+.header-text-other-title {
+  font-family: "Roboto", sans-serif;
+  text-transform: lowercase;
+  color: white;
+}
+
+.profile-image {
+  position: absolute;
+  right: 15%;
+  bottom: -30%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 2px solid whitesmoke;
+  overflow: hidden;
+}
+
+.profile-image > img {
+  width: 100%;
+}
+
+/* INTRO */
+
+.intro {
+  background-color: #f4f4f4;
+  height: 300px;
+}
+
+.intro-wrapper {
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+
+.line {
+  border: 1px solid #c62a88;
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #c62a88;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.intro-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* TECH */
+
+.tech {
+  background-color: white;
+  height: 250px;
+}
+
+.tech-wrapper {
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tech-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 2rem;
+  padding-top: 50px;
+}
+
+.tech-text-highligt {
+  color: hotpink;
+}
+
+/* PROJECTS */
+
+/* featured projects */
+.projects {
+  background-color: #f4f4f4;
+  justify-content: center;
+}
+
+.featured-projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.featured-project-card {
+  grid-column: span 2;
+}
+
+.project-header {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease;
+}
+
+.project-name-wrapper {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  top: 0;
+  height: 100%;
+  transition: background ease 300ms;
+}
+
+.project-name {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  color: white;
+  padding: 0;
+  line-height: 20px;
+  text-align: center;
+  transition: all 300ms ease;
+  text-transform: uppercase;
+}
+
+.project-description-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  /*roboto*/
+  color: hotpink;
+}
+
+.project-description-text {
+  /*roboto*/
+}
+
+.project-card:hover .project-title-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+}
+.project-card:hover .project-title {
+  opacity: 0;
+  transform: translateY(-90%);
+}
+.project-card:hover .project-image {
+  transform: scale(1.2);
+}
+
+/* other projects */
+
+.other-projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.other-projects-item {
+  grid-column: span 1;
+}
+
+.other-project-description-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: hotpink;
+  display: inline;
+}
+
+.other-project-description-text {
+  font-family: "Roboto", sans-serif;
+  display: inline;
+}
+
+.other-project-description-text-highlight {
+  color: hotpink;
+  font-weight: 700;
+  display: inline;
+}
+
+/* tags */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-tags span {
+  font-family: "Roboto", sans-serif;
+  color: #2b2e34;
+  font-weight: bold;
+  background-color: pink;
+  text-decoration: none;
+
+  /* Matching line-height and font-size here gives full control 
+       over the size of our tags to the padding*/
+  font-size: 12px;
+  line-height: 12px;
+
+  /* Control the size of the tags */
+  padding: 4px;
+
+  /* Control the spacing of our tags */
+  margin: 3px;
+}
+
+.project-tags span:first-child {
+  margin-left: 0;
+}
+
+/* MY THOUGHTS */
+
+/* full size entries */
+
+.my-thoughts {
+  background-color: white;
+  height: 600px;
+}
+
+.my-thoughts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.my-thoughts-entry {
+  grid-column: span 2;
+}
+
+.my-thoughts-entry-header {
+  height: 200px;
+}
+
+.my-thoughts-entry-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.my-thoughts-entry-date {
+  text-transform: uppercase;
+  color: hotpink;
+  font-family: "Roboto", sans-serif;
+}
+
+.my-thoughts-entry-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.my-thoughts-entry-text {
+  font-family: "Roboto", sans-serif;
+}
+
+.my-thoughts-entry-text-highlight {
+  color: hotpink;
+}
+
+/* more thoughts */
+
+.more-thoughts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.more-thoughts-entry {
+  grid-column: span 1;
+}
+
+.more-thoughts-entry-date {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: hotpink;
+  display: inline;
+}
+
+.more-thoughts-entry-title {
+  display: inline;
+  font-family: "Roboto", sans-serif;
+}
+
+.more-thoughts-entry-highlight {
+  color: hotpink;
+  font-weight: 700;
+  display: inline;
+  font-family: "Roboto", sans-serif;
+}
+
+/* SKILLS */
+
+.skills {
+  background-color: #f4f4f4;
+  height: 400px;
+  text-align: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-grid-upcoming {
+  grid-row-start: 2;
+}
+
+/* add display none to more for mobile*/
+
+.skill-grid-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: hotpink;
+}
+
+.skill-grid-list {
+  font-family: "Roboto", sans-serif;
+}
+
+/* FOR MORE */
+
+.for-more {
+  background-color: white;
+  height: 300px;
+}
+
+.for-more-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.for-more-entry {
+  grid-column: span 1;
+}
+
+.for-more-icon-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid hotpink;
+  margin: 0 auto;
+  display: grid;
+}
+
+.for-more-icon {
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  justify-self: center;
+}
+
+.for-more-entry-site-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: hotpink;
+  text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: hotpink;
+  height: 300px;
+}
+
+.subtitle-footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+}
+
+.footer-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+/*mobile screen equals 375 px
+
+desktop  equal to  1920 px*/
