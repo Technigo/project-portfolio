@@ -9,7 +9,7 @@
   --bg-color: #f4f4f4;
   --main-color: rgba(128, 136, 255, 1);
   --sub-color: rgba(255, 132, 24, 1);
-  --third-color: rgb(181, 185, 246);
+  --third-color: rgb(163, 163, 163);
 }
 
 body {
@@ -322,20 +322,65 @@ a {
 }
 
 /* MEDIA QUERIES */
-
-@media (min-width: 0px) and (max-width: 1400px) {
+@media (max-width: 1200px) {
   .inner-wrapper {
     width: 100%;
   }
 
   /* header */
   .top-icons {
+    right: 3rem;
+  }
+
+  .top-headings-container {
+    margin-left: 3rem;
+  }
+
+  .title-heading-1 {
+    font-size: 2.5rem;
+  }
+
+  .profile-pic {
+    right: 3rem;
+  }
+
+  /* tech */
+  .section-text {
+    width: 33rem;
+  }
+
+  .card-grid {
+    width: 33rem;
+  }
+
+  .other-proj-container {
+    width: 33rem;
+  }
+
+  /* thoughts */
+  .thoughts-heading {
+    font-size: 2rem;
+    position: absolute;
+    margin: 4.7rem 2.7rem 0;
+  }
+
+  .thought-date {
+    margin-top: -0.3rem;
+  }
+
+  .thoughts-card a {
+    margin-top: 0.3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  /* header */
+  .top-icons {
     right: 2rem;
   }
 
   .top-headings-container {
-    color: white;
-    margin: 9.5rem 0 0 2rem;
+    margin: 9rem 0 0 2rem;
   }
 
   .name-heading {
@@ -343,9 +388,7 @@ a {
   }
 
   .title-heading-1 {
-    font-family: var(--main-font);
     font-size: 1.9rem;
-    font-weight: 700;
     margin-bottom: 0.1rem;
   }
 
@@ -398,51 +441,3 @@ a {
     margin: 0 auto;
   }
 }
-/* 
-.top-headings {
-  color: white;
-  margin: 7.5rem 0 8.6rem 1.5rem;
-}
-
-.name-heading {
-  font-family: var(--sub-font);
-  letter-spacing: 0.5px;
-  padding-bottom: 0.5rem;
-}
-
-.title-heading-1 {
-  font-family: var(--main-font);
-  font-size: 2rem;
-  font-weight: 700;
-  padding-bottom: 0.4rem;
-}
-
-.title-heading-2 {
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-
-.top-icons {
-  display: flex;
-  gap: 1.5rem;
-  position: absolute;
-  top: 2rem;
-  right: 10rem;
-}
-
-.top-icons,
-img {
-  height: auto;
-  width: 45px;
-}
-
-.profile-pic {
-  position: absolute;
-  right: 1.5rem;
-  bottom: -2.5rem;
-  border: 2px solid white;
-  border-radius: 50%;
-  width: 145px;
-  height: auto;
-}
-} */
