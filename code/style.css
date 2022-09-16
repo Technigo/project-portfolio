@@ -189,10 +189,9 @@ h5 {
 }
 
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
-  justify-content: center;
 }
 
 .project-section .content .project-description {
@@ -220,6 +219,8 @@ h5 {
   margin: 3px;
   /* Some rounded borders */
   border-radius: 4px;
+  display: flex;
+  align-items: center;
 }
 
 /* SKILLS SECTION */
@@ -283,18 +284,16 @@ footer {
   .project-section .image-heading-wrapper .project-image-news:hover {
     opacity: 1;
   }
-  .project-section .content:hover {
-    background-color: #ffffff;
+  .project-list {
+    grid-template-columns: 1fr 1fr;
   }
-
   .project-list .project-section {
-    width: 40%;
-    max-width: 40%;
     box-sizing: border-box;
   }
   .project-section .content {
     border-left: 0px;
     border-right: 0px;
     border-bottom: 0px;
+    background-color: #ffffff;
   }
 }
