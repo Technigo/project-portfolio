@@ -1,0 +1,307 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/Fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('/Fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/Fonts/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('/Fonts/Roboto-Bold.ttf');
+}
+
+/*****************/
+/**** COLORS *****/
+/*****************/
+:root {
+  /*
+Light shades #EEEEEE GALLERY
+- Use this color as the background for your dark-on-light designs, or the text color of an inverted design.
+*/
+  --gallery: #eeeeee;
+
+  /*
+Light accent #7DAEC7 GLACIER
+- Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette.
+*/
+  --glacier: #7daec7;
+
+  /*
+Main brand color #2A44C8 CERULEAN BLUE
+- This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity.
+*/
+  --cerulean-blue: #2a44c8;
+
+  /*
+Dark accent #4B618D KASHMIR BLUE
+- Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best.
+*/
+  --kashmir-blue: #4b618d;
+
+  /*
+Dark shades #1C2325 SHARK
+- Use as the text color for dark-on-light designs, or as the background for inverted designs.
+*/
+  --shark: #1c2325;
+}
+
+/*****************/
+/**** WRAPPERS ***/
+/*****************/
+
+.outer-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+/*****************/
+/**** HEADER ****/
+/*****************/
+
+.header-outer {
+  font-family: 'Montserrat Bold', sans-serif;
+  color: white;
+  text-shadow: 0 2px 6px #000000;
+  height: 670px;
+  background-image: url(./Assets/hero4.jpg);
+  background-size: 100%;
+}
+
+.header-inner {
+  position: relative;
+  display: flex;
+  height: 700px;
+}
+
+.header-text-container {
+  align-self: center;
+}
+
+header h1 {
+  margin: 20px 0;
+  font-size: 82px;
+}
+header h2 {
+  margin: 20px 0;
+  font-size: 50px;
+}
+
+header h3 {
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+
+header span {
+  font-family: 'Roboto Bold', sans-serif;
+}
+
+.header-links {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 10%;
+  right: 0%;
+}
+
+.anchor-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: white 3px solid;
+}
+
+.header-profile-picture {
+  position: absolute;
+  justify-self: flex-end;
+  bottom: -5%;
+  right: 0%;
+}
+
+.header-profile-picture img {
+  width: 333px;
+  height: 333px;
+  border-radius: 50%;
+  border: white 5px solid;
+}
+
+/*****************/
+/**** SECTIONS ***/
+/*****************/
+
+section {
+  font-family: 'Montserrat';
+}
+
+.section-header {
+  font-size: 50px;
+  padding: 10px 15px;
+  margin-bottom: 100px;
+  font-family: 'Montserrat Bold';
+  background-color: var(--cerulean-blue);
+  color: white;
+}
+
+/*****************/
+/**** SECTION ****/
+/***** INTRO *****/
+/*****************/
+
+.intro-section-outer {
+  background: var(--gallery);
+  padding: 150px 0;
+}
+
+.intro-section-inner {
+  font-size: 30px;
+  /* color: var(--shark); */
+  line-height: 40px;
+}
+
+.intro-figure {
+  width: 70px;
+}
+
+/*****************/
+/**** SECTION ****/
+/***** TECH ******/
+/*****************/
+
+.tech-section-outer {
+  padding: 150px 0;
+}
+
+.tech-section-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.tech-paragraph {
+  text-align: center;
+}
+
+.tech-highlight {
+  color: var(--cerulean-blue);
+}
+
+/*****************/
+/**** SECTION ****/
+/**** PROJECTS ***/
+/*****************/
+
+.featured-section-outer {
+  background: var(--gallery);
+  padding: 150px 0;
+}
+
+.featured-section-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 40px;
+}
+
+.featured-projects-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.project-card {
+  transform: translateY(0%);
+  transition: transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-decoration: none;
+  width: 500px;
+  position: relative;
+}
+
+.project-card:hover > .text-wrapper {
+  background-image: linear-gradient(#4b618d6e, #4b618d6e),
+    url(./Assets/projects-thumbnails/musicmaster.PNG);
+}
+
+.project-card:hover {
+  transform: translateY(-1%);
+  transition: transform 0.3s;
+}
+/* .project-card:hover .thumbnail-title {
+  display: none;
+} */
+
+.text-wrapper {
+  background-image: linear-gradient(180deg, #4b618d98, #4b618d98),
+    url(./Assets/projects-thumbnails/musicmaster.PNG);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.thumbnail-title {
+  font-family: 'Montserrat Bold';
+  color: white;
+  position: absolute;
+}
+
+.project-info-header {
+  font-family: 'Roboto Bold', sans-serif;
+  color: var(--cerulean-blue);
+  font-size: 24px;
+}
+.project-info {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.project-tags li {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 5px 10px;
+  background-color: var(--glacier);
+  display: inline;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+footer {
+  font-family: 'Roboto Bold', sans-serif;
+}
+
+@media (min-width: 1024px) {
+  body,
+  html {
+    max-width: 1920px;
+    margin: auto;
+  }
+}
