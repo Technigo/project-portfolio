@@ -1,7 +1,15 @@
-/*Here goes the global values*/
+
 
 /*pictures not used:
 idea: https://images.pexels.com/photos/7203727/pexels-photo-7203727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+*/
+
+/*COLORS:
+light green C2E8CE
+greyish F2EEE5
+orangebrown F6AD7B
+brownpurple BE7575
+
 */
 @font-face {
     font-family: 'aliceregular';
@@ -13,8 +21,12 @@ idea: https://images.pexels.com/photos/7203727/pexels-photo-7203727.jpeg?auto=co
 }
 h1{
     font-family: "aliceregular";
-    margin: 300px 40px;
-    color: white;
+    margin: 300px 100px;
+    color: #F6AD7B;
+}
+
+body{
+    margin: 0px;
 }
 
 h1 span{
@@ -22,104 +34,143 @@ h1 span{
 }
 
 h2 {
-    background-color: tomato;
+    background-color: #BE7575;
     text-align: center;
     font-family: "aliceregular";
-    padding: 10px;
     margin: 0px;
     color: white;
-    font-size: medium;
+    font-size: 16px;
 
 }
-
-.outer-wrapper{
-width: 100%;
-height: 100%;
-margin: -10px 10px;   
-}
-
-.inner-wrapper{
-    width: 356px;
-    height: 1250px;
-    margin: 10px, 10px, 10px, 10px;
-    display: flex;
-    background-color: palegoldenrod;
-}
-
-.header-section {
-
-    left: 0px;
-    top: 0px;
-    
-/*     background: url("/images/bokeh2.jpg");*/
-    background-color: tomato;
-    background-size: 860px;
-    width: 355px;
-    height: 550px;
-    background-repeat: no-repeat;
-/*     background-position: -500px 680px; /* Vart rutan ska börja X,Y position */
- }
-
 
 .profile-pic {
     position: absolute;
     width: 120px;
-    height: 129px;
-    left: 240px;
-    top: 335px;
+    height: 120px;
+    left:60%;
+    top: 60%;
     border-radius: 50%;
-    
     background: url("./images/mia_2.jpg");
     background-position: -30px 490px;
     background-size: 200px;
     opacity: 1;
 }
 
- .intro-section{
-position: absolute;
-height: 180px;
-width: 355.5px;
-top: 550px;
-margin-right: 15px ;
-opacity: 1;
+.outer-wrapper{
+width: 100%;
+height: 100%;
+margin: 0px;  
 }
 
-.tech-section{
- position: absolute;
- width: 356px;
- min-height:200px;
- top: 750px;
+.inner-wrapper{
+    width: 100%;
+    height: 1630px;
+    display: flex;
+    flex-direction: column;
+    background-color: #C2E8CE;
+    margin: 0px 10px 0px 10px;
+
+}
+
+p{
+    line-height: 1.4;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    max-width: 450px;
+    margin: 30px;
+}
+.section{
+    position: absolute;
+    height: 180px;
+    width: 100%;
+    top: 0;
+    opacity: 1;
     }
 
-.project-section{
-position: absolute;
-height: auto;
-width: 356px;
+.section.header {
+    background: url("/images/nature1.jpg") no-repeat;
+    background-color: #F6AD7B;
+    height: 540px;
+    background-size: 4000px;
+    background-position: -1000px -200px; /* Vart rutan ska börja X,Y position */
+  }
+
+.section.intro{
+top: 550px;
+}
+
+.section.tech{
+ min-height:200px;
+ top: 800px;
+ }
+
+.section.projects{
+min-height: 200px;
 top: 950px;
 }
 
-.skills-section{
-position: absolute;
+.section.skills{
 min-height: 200px;
-width: 356px;
-top: 1050px;
+top: 1150px;
 }
 
-.more-section{
-    position: absolute;
-    min-height: 100px;
-    width: 356px;
-    top: 1150px;
-    }
+.section.more{
+min-height: 200px;
+top: 1250px;
 
-.footer-section{
+} 
+
+.section.footer{
     position: absolute;
-    width: 356px;
-    height: 150px;
-    top: 1250px;
-    margin: 10px;
-    margin-top: 0px;
-    padding-top: 0px;
+    left:10px;
+    height: 200px;
+    top: 1450px;
     background-color:tan
     }
     
+
+
+    /*TABLETS*/
+@media (min-width: 667px) and (max-width: 1024px){
+    .outer-wrapper{
+    width: 100%;
+    }
+
+    .inner-wrapper{
+    width: 100%;
+    }
+
+    .section{
+    width: 100%;
+    }
+
+    .profile-pic{
+    width: 150px;
+    height: 150px;
+    }
+
+
+}
+
+/*DESKTOP*/
+@media (min-width: 1025px){
+    .outer-wrapper{
+        width: 100%;
+    }
+
+    .inner-wrapper{
+        width: 100%
+    }
+
+
+    .section.header{
+        width: 100%;
+    }
+    
+    .profile-pic{
+        width: 170px;
+        height: 170px;
+        }
+
+}
