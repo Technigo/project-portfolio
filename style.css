@@ -12,14 +12,14 @@
     /*Title text colour*/
     --quinary: #d22135;
     /* title background colour */
-    font-size: 15px;
+    font-size: 10px;
 }
 
 /* for mobile */
 
 .outer-wrapper-1 {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -42,7 +42,7 @@
 .inner-wrapper-1 {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -51,7 +51,7 @@
     font-family: 'Roboto';
     font-style: normal;
     line-height: 18px;
-    /* font-size: 20px;/*  */
+    font-size: 1.5em;
     padding-left: 1%;
     padding-top: 5%;
 }
@@ -60,8 +60,8 @@
     position: absolute;
     right: 15%;
     bottom: -3%;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 2px solid whitesmoke;
 }
@@ -87,7 +87,7 @@
     font-family: 'Montserrat';
     font-style: bold;
     font-weight: 900;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: left;
     max-width: 50%;
     line-height: 110%;
@@ -104,7 +104,7 @@
 }
 
 .inner-wrapper-2 {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -118,7 +118,7 @@
     font-family: 'montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 120%;
     margin-top: 10%;
     padding: 2%;
@@ -141,7 +141,7 @@
     margin-top: 10%;
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 119%;
     margin-bottom: 1%;
     color: #FA382F;
@@ -194,6 +194,7 @@
     font-size: 1.2em;
     line-height: 138%;
     text-align: left;
+   
 }
 
 .feature-image {
@@ -228,6 +229,7 @@ a:hover {
 
 .other-project {
     text-align: left;
+   margin-left: 10%
 }
 
 .other-project p {
@@ -328,12 +330,36 @@ footer {
 }
 
 
-/* for tablets */
+/* Has added duplicate code so that it works on Microsoft Edge, as it has fallback problems. */
 @media (min-width: 668px) and (max-width: 1024px) {
+
+    :root {
+        font-size: 15px;
+    } 
 
     .section h2 {
         letter-spacing: 0.01em;
     }
+
+    .outer-wrapper-1 {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .header-text-h1 {
+        color: whitesmoke;
+        font-family: 'Montserrat';
+        font-style: bold;
+        font-weight: 900;
+        font-size: 2.7em;
+        text-align: left;
+        max-width: 50%;
+        line-height: 110%;
+    }
+
 
 }
 
@@ -344,10 +370,44 @@ footer {
         font-size: 20px;
     }
 
+    .header-text-h1 {
+        color: whitesmoke;
+        font-family: 'Montserrat';
+        font-style: bold;
+        font-weight: 900;
+        font-size: 3em;
+        text-align: left;
+        max-width: 50%;
+        line-height: 110%;
+    }
+
     .profile-pic {
         width: 200px;
         height: 200px;
     }
+
+    .outer-wrapper-1 {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+   /*  .outer-wrapper-1::after {
+        content: "";
+        background: url(./assets/header-img.jpg);
+        background-size: cover;
+        height: 100%;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    
+    } */
 
     .header-text-p {
         margin-left: 15%;
