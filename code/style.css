@@ -1,3 +1,4 @@
+/*Styling for entire page/styling that is throughout the page*/
 body {
     margin: 0px;
 }
@@ -25,6 +26,32 @@ p {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+.white-red-h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+    background: #FF7777;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 5vh;
+}
+
+.red-h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    color: #FF7777;
+    padding: 2vh 0px 1px 0px; 
 }
 
 /*Styling header*/
@@ -62,7 +89,7 @@ header {
             line-height: 49px;
         }
 
-        .administrator-headline {
+        .background-headline {
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 700;
@@ -77,9 +104,9 @@ header {
         display: flex;
     }
 
-    .social-media-header-container img {
-        width: 100%;
-    }
+        .social-media-header-container img {
+            width: 100%;
+        }
 
     .profile-pic {
         width: 140px;
@@ -93,11 +120,6 @@ header {
 
 /*Styling intro-section*/
 .intro-section {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 29px; 
     padding: 7vh 6vw 6vh 6vw;
     background-color: #F4F4F4;
 }
@@ -119,29 +141,11 @@ header {
 
 /*Styling tech-section*/
 .tech-section {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 29px;
     padding: 7vh 6vw 6vh 6vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-    .white-red-h2 {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 27px;
-        color: white;
-        background: #FF7777;
-        align-self: center;
-        justify-self: center;
-        padding: 1px;
-        margin-bottom: 5vh;
-    }
 
 /*Styling feature-project-section*/
 .featured-projects {
@@ -165,8 +169,6 @@ header {
 
         .project-img-container {
             position: relative;
-            
-            /* This transition will cause the text to fade */
             transition: 0.5s ease;
         }
 
@@ -177,7 +179,7 @@ header {
         
         .project-img-overlay {
             position: absolute;
-            background-color: rgba(0, 0, 0, 0.5); /* Black see-through */
+            background-color: rgba(0, 0, 0, 0.5);
             color: white;
             width: 100%;
             height: 100%;
@@ -188,8 +190,6 @@ header {
 
             .project-img-overlay p {
                 padding: 25%;
-                font-family: 'Montserrat';
-                font-style: normal;
                 font-weight: 700;
                 font-size: 28px;
                 line-height: 34px;
@@ -199,17 +199,6 @@ header {
         .project-img-container:not(:hover) .project-img-overlay {
             opacity: 1;
           }
-
-        .red-h3 {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 17px;
-            line-height: 29px;
-            letter-spacing: 0.01em;
-            color: #FF7777;
-            padding: 2vh 0px 1px 0px; 
-        }
 
         .tags-div {
             display: flex;
@@ -384,10 +373,10 @@ footer {
 
         .frontend-headline {
             font-size: 50px;
-            line-height: 80px;
+            line-height: 60px;
         }
 
-        .administrator-headline {
+        .background-headline {
             font-size: 20px;
         }
 
@@ -440,7 +429,7 @@ footer {
             line-height: 60px;
         }
 
-        .administrator-headline {
+        .background-headline {
             font-size: 30px;
         }
 
@@ -495,4 +484,9 @@ footer {
         padding: 6vh 20vw 6vh 20vw;
 
 }
+}
+
+@media (min-width: 1200px) {
+
+
 }
