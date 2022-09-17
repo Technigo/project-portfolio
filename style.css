@@ -2,33 +2,45 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* .outer-wrapper {
+.outer-wrapper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.first {
+    background-image: url(images/header-picture.jpg);
+}
+
+.beige {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1EFDC;
+}
+
 .inner-wrapper {
     width: 90%;
+    max-width: 1100px;
     margin: 0 auto;
-} */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .header {
-    background-image: url(images/header-picture.jpg);
     position: relative;
     width: 100%;
     height: 520px;
-
 }
 
 .name-frontend-background {
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    width: 220px;
+    width: 60%;
     height: 202px;
     color: #F1EFDC;
-    padding-left: 24px;
     padding-top: 121px;
 }
 
@@ -37,13 +49,11 @@ body {
 }
 
 .portfolio {
-    font-size: 13px;
     line-height: 18px;
     margin-right: 3px;
 }
 
 .name {
-    font-size: 13px;
     font-weight: bold;
     line-height: 18px;
 }
@@ -51,7 +61,7 @@ body {
 .front-end {
     font-weight: 500;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 50px;
     letter-spacing: 2px;
 }
 
@@ -67,31 +77,24 @@ body {
     bottom: -5%;
 }
 
-/* .content {
-    padding-top: 20px;
-    padding-bottom: 30px;
-} */
-
 .presentation {
-    padding-left: 24px;
-    padding-right: 24px;
-    background-color: #F1EFDC;
+
     /* display: flex; */
     /* align-items: baseline; */
     /* width: 327px; */
     font-family: 'Montserrat', sans-serif;
     /* flex-grow: 1; */
     line-height: 29px;
-    padding-top: 49px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .presentation-text {
     display: inline;
+    margin: 8px;
 }
 
 .tech {
-    background-color: white;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -101,33 +104,34 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     font-weight: 700;
-    background-color: #42032C;
-    color: #F1EFDC;
     display: inline;
     padding: 4px;
+}
+
+.one {
+    background-color: #42032C;
+    color: #F1EFDC;
+}
+
+.two {
+    color: #42032C;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .tech-knowledge {
     font-family: 'Montserrat', sans-serif;
     padding-top: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
     line-height: 29px;
 }
+
 
 .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
-    padding-left: 24px;
-    padding-right: 24px;
-    background-color: #F1EFDC;
-}
-
-.projects h2 {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    /* font-family: 'Roboto', sans-serif;
+    background-color: #F1EFDC; */
 }
 
 .first-and-second-project {
@@ -147,7 +151,6 @@ h2 {
 
 .projects-paragraph {
     font-weight: 400;
-    font-size: 17px;
     line-height: 29px;
     letter-spacing: 1%;
 }
@@ -164,7 +167,6 @@ h2 {
     background-color: #db9aab;
     display: inline;
     text-decoration: none;
-    font-size: 12px;
     line-height: 12px;
     padding: 4px;
     margin: 3px;
@@ -191,39 +193,59 @@ h2 {
     margin-bottom: 30px;
 }
 
+.thoughts-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .thoughts img {
     width: 100%;
     height: auto;
-    padding-left: 24px;
-    padding-right: 24px;
     margin-top: 30px;
     margin-bottom: 30px;
     box-sizing: border-box;
 }
 
 .first-thought {
-    /* font-family: "Roboto", sans-serif; */
     display: flex;
     flex-direction: column;
-    padding-left: 24px;
-    padding-right: 24px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .second-thought {
-    /* font-family: "Roboto", sans-serif; */
     display: flex;
     flex-direction: column;
-    padding-left: 24px;
-    padding-right: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.other-thoughts {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+span {
+    color: #D36B00;
+    font-weight: bold;
 }
 
 .second-thought img {
     display: none;
 }
 
+.other-thoughts img {
+    display: none;
+}
+
 .second-thought p {
+    display: none;
+}
+
+.other-thoughts p {
     display: none;
 }
 
@@ -244,21 +266,32 @@ h2 {
 }
 
 .skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 42px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
     text-align: center;
     font-size: 17px;
     line-height: 29px;
-    padding-left: 24px;
-    padding-right: 24px;
     margin-top: 30px;
     margin-bottom: 30px;
+
 }
+
+.columns {
+    display: flex;
+    column-gap: 30%;
+}
+
 
 .skills h6 {
     color: #42032C;
 
+}
+
+.for-more-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer {
