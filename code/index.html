@@ -6,193 +6,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
-
-    <!-- <script src="https://kit.fontawesome.com/025421cb6e.js" crossorigin="anonymous"></script> -->
     <!-- lägga in en icon i title? -->
     <title>Nina Berggren, Frontend Developer, Portfolio</title>
+    <link rel = "icon" href = 
+    "./icons/icons8-winter-40.png" 
+            type = "snowflake">
+    <script src="https://kit.fontawesome.com/e67b875344.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!------------ header ------------->
+    <!----------------- header ------------------->
     <header>
-        <img class="header-img" src="./images/##" alt="stones">
+        <img class="header-img" src="./images/dunes_jeremy-bishop_L.jpg" alt="stone beach">
         <div class="header-icons">
-            <a class="icon-circle" title="link to Nina's Linked In page" href="https://www.linkedin.com/in/##" aria-label="Go to Linked In page">
+            <a class="icon-circle" title="link to Nina's Linked In page" href="https://www.linkedin.com/in/nina-berggren/" aria-label="Go to Linked In page">
             <i aria-hidden="true" class="fab fa-linkedin-in"></i>
             </a>
-
-            <a class="icon-circle" title="link to Nina's Github page" href="https://github.com/##" aria-label="Go to Github page">
+            <a class="icon-circle" title="link to Nina's Github page" href="https://github.com/NinaBerggren" aria-label="Go to Github page">
             <i aria-hidden="true" class="fab fa-github"></i>
             </a>
 
-            <a class="icon-circle" title ="link to Nina's Stackoverflow page" href="https://stackoverflow.com/users/##" aria-label="Go to Stackoverflow">
-            <i aria-hidden="true" class="fab fa-stack-overflow"></i>
-            </a>
-            </div>
-            <div class="heading" tabindex="0">
-    <!-- vad ska jag skriva i rubriken? -->
-                <h1 class="heading-1">PORTFOLIO: <span class="bold">NINA BERGGREN</span></h1>
-                <h1 class="heading-2">frontend developer</h1>
-                <h1 class="heading-3">+ problem solver &amp; <br>?? engenering/product development??</h1>
-            </div>
+         </div>
+        <div class="heading-container" tabindex="0">
+<!-- vad ska jag skriva i rubriken? -->
+            <h1 class="heading-1 uppercase">portfolio: <span class="bold">NINA BERGGREN</span></h1>
+            <h1 class="heading-2">frontend</h1>
+            <h1 class="heading-2">developer</h1>
+            <h1 class="heading-3">+ problem solver &amp;
+            <h1 class="heading-3 indent"> structured "doer" </h1>
+        </div>
     <!-- Bild på mig -->
-                <img class="profile-img" src="./images/##" alt="profile image of Nina Berggren">
+        <img class="profile-img" src="./images/N_B_weather_small.jpg" alt="profile image of Nina Berggren">
     </header>
-    <!------------------------------------- Main content ------------------------------------->
-    <section class="main-section">
-    <!------------------------------------- Section intro ------------------------------------->
-        <section class="summary-section">
-            <p tabindex="0"><span class="line"></span><span class="circle"></span>
-            &emsp; -0 presentations text om mig
+    <!----------------- Main content ------------------------------------->
+ 
+    <!----------------- Section intro ------------------------------------->
+    <section class="summary-section" tabindex="0">
+       <div class="container"> 
+            <p >
+                <span class="line"></span>
+                <span class="dot"></span>
+            &emsp; Hi there! I am a frontend developer with a broad background in many diffrent fields, Mechanical engineer within design and product
+            development, Sportfashion design, Print and Advertising and I also have built log houses... 
+            With me in your team you get a positive, creative and structured problem solver - driven by development and improvement. I learn quickly and constantly want to develop myself and others. As a person, I am driven, communicative &
+            unpretentious. I am motivated by learning new things, meeting people and creating value. 
+            I'm looking forward to working in the Tech industrie and being a part of the coding community."
             </p>
-        </section>
-    <!------------------------------------- Section tech ------------------------------------->
-        <section class="tech-section">
+        </div>
+    </section>
+<!--------------------- Section tech ------------------------------------->
+    <section class="tech-section" tabindex="0">
+        <div class="container flex">
             <h2 class="uppercase">tech</h2>
             <p>
-                <span class="highlight bold">CSS3</span> | Flexbox | Grid | <span class="highlight bold">HTML5</span>  | ES6 |  <span class="highlight bold">JavaScript</span>  |
-                <span class="highlight bold">Figma</span> |
-                <span class="highlight bold">Styled Components</span> | Web
-                Accessibly | Agile Methodology | <span class="highlight bold">Team work</span> | mob-programming |
-                <span class="highlight bold">pair-programming</span> | Node.js | 
-                <span class="highlight bold">API:s</span> | Git | Github | <span class="highlight bold">ADOBE CREATIVE SUITE</span>
+                <span class="highlight bold">CSS3</span> 
+                 | Flexbox | Grid | 
+                <span class="highlight bold">HTML5</span>  
+                 | ES6 |  
+                <span class="highlight bold">JavaScript</span>  
+                 |
+                <span class="highlight bold">Project Planning</span> 
+                 | Figma || Typography | 
+                 <span class="highlight bold">Web Accessibly</span> 
+                 | Agile Methodology | 
+                <span class="highlight bold">Team work</span> 
+                 | mob-programming |
+                <span class="highlight bold">pair-programming</span> 
+                 | 
+                <span class="highlight bold">API:s</span> 
+                 | Github | 
+                <span class="highlight bold">ADOBE CREATIVE SUITE</span>
                  | Illustrator | Photoshop | Indesign |
             </p>
-            
-
-        </section>
-    <!------------------------------------- Section projects ------------------------------------->
-        <section class="projects-section">
+        </div>
+<!-- centrera text  -->
+    </section>
+<!-------------------- Section projects ------------------------------------->
+    <section class="projects-section" tabindex="0">
+        <div class="container flex">
             <h2 class="uppercase">featured projects</h2>
-            <div class="projects-container">
-    <!-- div eller kanske article, som pree-course ? -->
-                <div class="projects-card">
-         <!-- Ändra projekt för varje project-card,
-            kolla vilka "länkar" som skall vara i resp projekt -->
-                    <a title="link to project site" class="project" href="https://##.netlify.app/">
-                        <div class="projects-img-container">
-                        <img class="projects-img" src="./images/#.png" alt="project site">
-                        </div>
-                        <h4 class="project-header">projekt rubrik.</h4>
-                        <p> beskrivning av projektet</p>
-                    </a>
-                    <div class="tag-container">
-                        <div class="tech-tag">JavaScript</div>
-                        <div class="tech-tag">HTML5</div>
-                        <div class="tech-tag">CSS3</div>
-                        <a class="tech-tag-github-link" title="link to Nina's Github page" href="länk till github" aria-label="Go to Github page">
-                            <div class="tech-tag-github">
-                            <i aria-hidden="true" class="fab fa-github"></i>
-                            </div>
-                        </a>
+
+ <!-------------------- Section project-card template ------------------------------------->    
+
+<!-- Ändra projekt för varje project-card, kolla vilka "länkar" som skall vara i resp projekt -->
+
+        <!-- <div class="project-card">
+                <a title="link to project site" class="project" href="netlify-link">
+                    <div class="projects-img-container">
+                    <img class="projects-img" src="./images/#.png" alt="project site">
                     </div>
+                    <h4 class="project-header uppercase">project site</h4>
+                    <p> beskrivning av projektet</p>
+                </a>
+               
+                <div aria-hidden="true" class="tag-wrapper">
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>JavaScript</p>
+                </div>
+                <a class="tech-tag-github-link" title="link to Nina's Github repositories page" href="https://github.com/NinaBerggren?tab=repositories" aria-label="Go to Github page">
+                    <div class="tech-tag-github">
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                    </div>
+                </a>
+                
+            </div> -->
+            
+            <div class="project-card">
+        <!-- Ändra projekt för varje project-card,
+        kolla vilka "länkar" som skall vara i resp projekt -->
+                <a title="link to project site" class="project" href="https://wildebeest-burgers.netlify.app">
+                    <div class="projects-img-container">
+                    <img class="projects-img" src="./images/business-site.png" alt="project site">
+                    </div>
+                    <h4 class="project-header uppercase">chatbot</h4>
+                    <p> beskrivning av projektet</p>
+                </a>
+                <div aria-hidden="true" class="tag-wrapper">
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>JavaScript</p>
+                    <a class="tech-tag-github-link" title="link to Nina's Github repositories page" href="https://github.com/NinaBerggren?tab=repositories" aria-label="Go to Github page">
+                        <div class="tech-tag-github">
+                        <i aria-hidden="true" class="fab fa-github"></i>
+                        </div>
+                    </a>
                 </div>
                 
-                <div class="projects-card">
-            <!-- Ändra projekt för varje project-card,
-            kolla vilka "länkar" som skall vara i resp projekt -->
-                    <a title="link to project site" class="project" href="https://##.netlify.app/">
-                        <div class="projects-img-container">
-                        <img class="projects-img" src="./images/#.png" alt="project site">
-                        </div>
-                        <h4 class="project-header">projekt rubrik.</h4>
-                        <p> beskrivning av projektet</p>
-                    </a>
-                    <div class="tag-container">
-                        <div class="tech-tag">JavaScript</div>
-                        <div class="tech-tag">HTML5</div>
-                        <div class="tech-tag">CSS3</div>
-                        <a class="tech-tag-github-link" title="link to Nina's Github page" href="länk till github" aria-label="Go to Github page">
-                            <div class="tech-tag-github">
-                            <i aria-hidden="true" class="fab fa-github"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                
+            </div>
 
-                <div class="projects-card">
-            <!-- Ändra projekt för varje project-card,
-            kolla vilka "länkar" som skall vara i resp projekt -->
-                    <a title="link to project site" class="project" href="https://##.netlify.app/">
-                        <div class="projects-img-container">
-                        <img class="projects-img" src="./images/#.png" alt="project site">
-                        </div>
-                        <h4 class="project-header">projekt rubrik.</h4>
-                        <p> beskrivning av projektet</p>
-                    </a>
-                    <div class="tag-container">
-                        <div class="tech-tag">JavaScript</div>
-                        <div class="tech-tag">HTML5</div>
-                        <div class="tech-tag">CSS3</div>
-                        <a class="tech-tag-github-link" title="link to Nina's Github page" href="länk till github" aria-label="Go to Github page">
-                            <div class="tech-tag-github">
-                            <i aria-hidden="true" class="fab fa-github"></i>
-                            </div>
-                        </a>
+            <div class="project-card">
+        <!-- Ändra projekt för varje project-card,
+        kolla vilka "länkar" som skall vara i resp projekt -->
+                <a title="link to project site" class="project" href="https://guesswho-nina-berggren.netlify.app">
+                    <div class="projects-img-container">
+                    <img class="projects-img" src="./images/guess-who.png" alt="project site">
                     </div>
+                    <h4 class="project-header uppercase">Guess Who game.</h4>
+                    <p> beskrivning av projektet</p>
+                </a>
+                <div aria-hidden="true" class="tag-wrapper">
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>JavaScript</p>
+                    <a class="tech-tag-github-link" title="link to Nina's Github repositories page" href="https://github.com/NinaBerggren?tab=repositories" aria-label="Go to Github page">
+                        <div class="tech-tag-github">
+                        <i aria-hidden="true" class="fab fa-github"></i>
+                        </div>
+                    </a>
                 </div>
+                
+               
+            </div>
 
-                <div class="projects-card">
-            <!-- Ändra projekt för varje project-card,
-            kolla vilka "länkar" som skall vara i resp projekt -->
-                    <a title="link to project site" class="project" href="https://##.netlify.app/">
-                        <div class="projects-img-container">
-                        <img class="projects-img" src="./images/#.png" alt="project site">
-                        </div>
-                        <h4 class="project-header">projekt rubrik.</h4>
-                        <p> beskrivning av projektet</p>
-                    </a>
-                    <div class="tag-container">
-                        <div class="tech-tag">JavaScript</div>
-                        <div class="tech-tag">HTML5</div>
-                        <div class="tech-tag">CSS3</div>
-                        <a class="tech-tag-github-link" title="link to Nina's Github page" href="länk till github" aria-label="Go to Github page">
-                            <div class="tech-tag-github">
-                            <i aria-hidden="true" class="fab fa-github"></i>
-                            </div>
-                        </a>
+            <div class="project-card">
+        <!-- Ändra projekt för varje project-card,
+        kolla vilka "länkar" som skall vara i resp projekt -->
+                <a title="link to project site" class="project" href="https://weatherapp-nina-linda.netlify.app">
+                    <div class="projects-img-container">
+                    <img class="projects-img" src="./images/weather-app.png" alt="project site">
                     </div>
+                    <h4 class="project-header uppercase">weather app</h4>
+                    <p> beskrivning av projektet</p>
+                </a>
+                <div aria-hidden="true" class="tag-wrapper">
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>JavaScript</p>
+                    <a class="tech-tag-github-link" title="link to Nina's Github repositories page" href="https://github.com/NinaBerggren?tab=repositories" aria-label="Go to Github page">
+                        <div class="tech-tag-github">
+                        <i aria-hidden="true" class="fab fa-github"></i>
+                        </div>
+                    </a>
                 </div>
-<!-- ska det vara en other project section? -->
-        </section>
-    <!------------------------------------- Section thoughts ------------------------------------->
-        <section class="thoughts-section">
+                
+            </div>                  
+         </div>
+<!-- här ska det vara en other project section? -->
+    </section>
+<!----------------------- Section thoughts ------------------------------------->
+    <section class="thoughts-section" tabindex="0">
+        <div class="container flex">
             <h2 class="uppercase">thoughts</h2>
+        </div>
+    </section>
+<!---------------------- Section skills ------------------------------------->
+    <section class="skills-section" tabindex="0">
+        <div class="container flex">
+            <h2 class="uppercase">skills</h2>
 
-        </section>
-    <!------------------------------------- Section skills ------------------------------------->
-        <section class="skills-section">
+            <div class="skills-container">
+            
+                <div class="skills-container-item" tabindex="0">
+                    <h4 class="skills-header">CODE</h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript ES6</li>
+                        <li>API´s</li>
+                        <li>GitHub</li>
+                        
+                    </ul>
+                </div>
 
-        </section>
+                <div class="skills-container-item" tabindex="0">
+                    <h4 class="skills-header">TOOLBOX</h4>
+                    <ul>
+                        <li>VSCode</li>
+                        <li>CodePen</li>                        
+                        <li>Figma</li>
+                        <li>Slack</li>
+                        <li>Notion</li>              
+                        <li>Prezi</li>
+                        <li>Office 365°</li>
+                        <li>Adobe Creative Suite</li>
+                    </ul>
+                </div>
+                                
+                <div class="skills-container-item" tabindex="0">
+                    <h4 class="skills-header">MORE</h4>
+                    <ul>
+                        <li>Layout</li>
+                        <li>Typography</li>
+                        <li>Print & Advertising</li>
+                        <li>Agile methodology</li>
+                        <li>Mob-programming</li>
+                        <li>Communication</li>
+                    </ul>
+                </div>
 
-    <!------------------------------------- Section more ------------------------------------->
-        <section class="more-section">
+                <div class="skills-container-item">
+                    <h4 class="skills-header">UPCOMMING</h4>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>React</li>
+                        <li>Redux</li>
+                    </ul>
+                </div>
+        </div>        
+    </section>
+
+<!--------------------- Section more ------------------------------------->
+    <section class="more-section">
+        <div class="container flex">
             <h2 class="uppercase">for more</h2>
-        <div class="social-icons">
-            <a class="icon #" title="link to Nina's Linked In page" 
-                href="https://www.linkedin.com/in/##" aria-label="Go to Linked In page">
+            
+            <div class="social-icons-container flex">
+            <a class="icon-circle" title="link to Nina's Linked In page" 
+                href="https://www.linkedin.com/in/nina-berggren/" aria-label="Go to Linked In page">
                 <i aria-hidden="true" class="fab fa-linkedin-in"></i>
             </a>
-            <a class="icon #" title="link to Nina's Github page" 
-                href="https://github.com/##" aria-label="Go to Github page">
+            <a class="icon-circle" title="link to Nina's Github page" 
+                href="https://github.com/NinaBerggren" aria-label="Go to Github page">
                 <i aria-hidden="true" class="fab fa-github"></i>
             </a>
-            <a class="icon #" title ="link to Nina's Stackoverflow page" 
-                href="https://stackoverflow.com/users##" aria-label="Go to Stackoverflow page">
+            <a class="icon-circle" title ="link to Nina's Stackoverflow page" 
+                href="https://stackoverflow.com/users/19384658/nina-berggren" aria-label="Go to Stackoverflow page">
                 <i aria-hidden="true" class="fab fa-stack-overflow"></i>
             </a>
+            </div>
+            
         </div>
-
-        </section>
-
     </section>
-    <!------------------------------------- Footer------------------------------------->
-    <footer class="contact" tabindex="0">
-        <h4 class="uppercase">contact</h4>
-        <p>Nina Berggren</p>
-        <p>+46 70 302 48 57</p>
-        <p>nina.w.berggren@gmail.com</p>
-    </footer>
 
+    
+    <!-------------------- Footer------------------------------------->
+    <footer class="contact">
+        <div class="container flex" tabindex="0">
+            <h4 class="uppercase">contact</h4>
+            <p>Nina Berggren</p>
+            <p>+46 70 302 48 57</p>
+            <a href="mailto:nina.w.berggren@gmail.com" target="_blank" rel="noopener noreferrer">
+                <p>nina.w.berggren@gmail.com</p>
+            </a>
+        </div>
+        
+     
+    </footer>
+    <!-- <a target="_blank" href="https://icons8.com/icon/kkElZUHEAYmL/winter">Winter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
 
 </body>
 </html>
