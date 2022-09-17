@@ -13,7 +13,7 @@ a:active {
 }
 
 :focus {
-  outline-color: blue;
+  outline-color: black;
   outline-width: medium;
   outline-style: solid;
   outline-offset: 4px;
@@ -56,13 +56,21 @@ a:active {
   color: hotpink;
 }
 
+.highlight {
+  color: hotpink;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 /* HEADER */
 
 .main-header {
   width: 100%;
   height: 475px;
-  background: url(http://placekitten.com/500/500);
-  background-color: hotpink;
+  background: url("./images/header.jpg");
+  background-color: pink;
   position: relative;
 }
 
@@ -96,6 +104,7 @@ a:active {
   height: 20px;
   align-self: center;
   justify-self: center;
+  color: white;
 }
 
 .header-text-wrapper {
@@ -125,9 +134,10 @@ a:active {
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase;
   color: white;
-  font-size: 25px;
+  font-size: 24px;
   padding-top: 10px;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .profile-image {
@@ -137,7 +147,7 @@ a:active {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  border: 2px solid whitesmoke;
+  border: 3px solid whitesmoke;
   overflow: hidden;
 }
 
@@ -185,10 +195,6 @@ a:active {
   font-size: 16px;
   text-align: center;
   line-height: 1.6;
-}
-
-.tech-text-highlight {
-  color: hotpink;
 }
 
 /* PROJECTS */
@@ -308,12 +314,6 @@ a:active {
   display: inline;
 }
 
-.other-project-description-text-highlight {
-  color: hotpink;
-  font-weight: 700;
-  display: inline;
-}
-
 /* tags */
 
 .project-tags {
@@ -392,11 +392,7 @@ a:active {
 .my-thoughts-entry-text {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  padding-top: 4px;
-}
-
-.my-thoughts-entry-text-highlight {
-  color: hotpink;
+  padding-top: 2px;
 }
 
 /* more thoughts */
@@ -423,13 +419,6 @@ a:active {
 }
 
 .more-thoughts-entry-title {
-  display: inline;
-  font-family: "Roboto", sans-serif;
-}
-
-.more-thoughts-entry-highlight {
-  color: hotpink;
-  font-weight: 700;
   display: inline;
   font-family: "Roboto", sans-serif;
 }
@@ -563,7 +552,6 @@ a:active {
   .main-header {
     height: 425px;
     /* change background for tablet and desktop */
-    background: url(http://placekitten.com/2500/700);
   }
 
   .header-text-wrapper {
