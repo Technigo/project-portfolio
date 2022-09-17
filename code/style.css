@@ -62,10 +62,10 @@ img.dots-img {
 }
 
 img.icons {
-  max-width: 50px;
+  max-width: 70px;
 }
 
-.profile-image {
+/* .profile-image {
   max-width: 333px;
   position: absolute;
   right: 24px;
@@ -74,6 +74,13 @@ img.icons {
   border-radius: 50%;
   min-width: 180px;
   width: 50%;
+} */
+.profile-image1 {
+  position: absolute;
+  max-width: 250px;
+  bottom: 0;
+  right: 0;
+  max-height: 60%;
 }
 .title-container {
   margin-top: 40px;
@@ -126,10 +133,30 @@ p.name {
 .tech-section {
   background-color: white;
   text-align: center;
+  padding: 100px;
+}
+.p-tech {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 h2.tech {
   margin-bottom: 40px;
+}
+.tech-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.p-tech {
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
 }
 /*********** Section 3 Projects ********/
 .project-container {
@@ -214,9 +241,6 @@ footer {
   text-align: center;
 }
 
-.contact-info {
-}
-
 img.contact-icons {
   width: 30px;
 }
@@ -227,6 +251,9 @@ img.contact-icons {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+  }
+  .profile-image1 {
+    max-width: 400px;
   }
 }
 
@@ -244,5 +271,9 @@ img.contact-icons {
 
   img.dots-img {
     height: 80%;
+  }
+
+  .profile-image1 {
+    max-width: 500px;
   }
 }
