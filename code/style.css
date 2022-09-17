@@ -221,7 +221,7 @@ header {
         .tags-div {
             display: flex;
             flex-direction: row;
-            gap: 2vw;
+            gap: 1vw;
             padding: 20px;
         }
         .tags {
@@ -373,6 +373,10 @@ footer {
 
 /*iPad*/
 @media (min-width: 668px) and (max-width: 1024px) {
+    .inner-wrapper {
+        width: 60%;
+    }
+    
     .headline-container {
         color: #FFFFFF;
         grid-column: 1 / 2;
@@ -396,35 +400,12 @@ footer {
     width: 200px;
 }    
     
-    .featured-projects {
-        grid-template-columns: 1fr 1fr;
-        padding: 6vh 20vw 6vh 20vw;
-        column-gap: 4vw;
-    }
-    
-    .one {
-        grid-row: 2 / 3; 
-    }
-    
-    .two {
-        grid-row: 2 / 3;
-    }
-    
-    .three {
-        grid-row: 3 /4;
-    }
-    
-    .four {
-        grid-row: 3 / 4;
-    }
-    
-    .project {
-        width: 26vw;
-    }
-
 }
 /*Desktop*/
 @media (min-width: 1025px){ 
+.inner-wrapper {
+    width: 60%;
+}
 
 .headline-container {
     color: #FFFFFF;
@@ -448,21 +429,12 @@ footer {
     .profile-pic {
         width: 240px;
     }    
-        
-
-.intro-section {
-        padding: 6vh 20vw 6vh 20vw;
-}
-
-.tech-section {
-    padding: 6vh 20vw 6vh 20vw;
-}
 
 .featured-projects {
     grid-template-columns: 1fr 1fr;
-    padding: 6vh 20vw 6vh 20vw;
-    column-gap: 4vw;
+    column-gap: 3vw;
 }
+    
     .one {
         grid-row: 2 / 3; 
     }
@@ -478,22 +450,4 @@ footer {
     .four {
         grid-row: 3 / 4;
     }
-
-    .project {
-        width: 26vw;
-    }
-
-.other-projects {
-    padding: 6vh 20vw 6vh 20vw;
-    
-}
-
-.thoughts-about-code {
-    padding: 6vh 20vw 6vh 20vw;
-}
-
-.skills {
-        padding: 6vh 20vw 6vh 20vw;
-
-}
 }
