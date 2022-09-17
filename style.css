@@ -35,7 +35,6 @@ body {
     height: 180px;
     left: 50%;
     top: 356px;
-
     /*  Rounded corners */
     border-radius: 50%;
     object-fit: cover;
@@ -55,8 +54,6 @@ video {
     top: 0px;
     /* Make sure the video is behind other content */
     z-index: -1;
-    /* Dims the video so the text is readable */
-    /* filter: brightness(75%); */
 }
 
 /* Styling socialmedlia Links Header */
@@ -101,7 +98,6 @@ h2 {
     font-weight: 700;
     font-size: 24px;
     line-height: 60px;
-    /* letter-spacing: 4%; */
     color: #011f0d;
 }
 
@@ -115,7 +111,6 @@ h3 {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    /* letter-spacing: 0.04em; */
     color: #011f0d;
 }
 
@@ -201,7 +196,10 @@ p {
 
 /* Featured projects */
 
+
+
 .featured-projects {
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,22 +207,21 @@ p {
     margin-top: 800px;
 }
 
-
 .featured-title {
     position: relative;
-    display: flex;
-    width: 255px;
-    height: 26px;
-    margin-left: 20%;
-    justify-content: center;
-    top: 750px;
-    font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
     color: #011f0d;
-    background-color: #e5e10ed8;
+    width: 255px;
+    height: 26px;
+    margin-left: 20%;
+    top: 750px;
+    
 }
 
 a {
@@ -241,6 +238,7 @@ a:link {
     height: 30vh;
     border: 2px solid white;
     border-radius: 5%;
+    opacity: 50%;
 }
 
 .projectTitle {
@@ -281,6 +279,7 @@ a:link {
     width: 327px;
 
 }
+
 
 /* Tag Wrappers */
 
@@ -345,10 +344,8 @@ a:link {
 }
 
 .otherProjects1 {
-    position: relative;
     margin-top: -1%;
 }
-
 
 
 /* My Thoughts and More Thoughts*/
@@ -359,7 +356,6 @@ a:link {
     align-items: center;
     width: 100%;
     margin-top: 80px;
-
 }
 
 .myThoughts-title {
@@ -377,7 +373,6 @@ a:link {
     text-align: center;
     color: #011f0d;
     margin-bottom: 50px;
-
 }
 
 
@@ -405,8 +400,8 @@ a:link {
     text-align: center;
     color: #011f0d;
     margin-bottom: 2px;
-
 }
+
 
 /* SKILLS */
 
@@ -437,7 +432,6 @@ a:link {
     color: #011f0d;
     margin-bottom: 2px;
     background-color: #e5e10ed8;
-
 }
 
 .title {
@@ -504,7 +498,6 @@ a:link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -528,7 +521,6 @@ a:link {
     font-size: 21px;
 
 }
-
 
 /* Media query Screen and Tablet */
 
@@ -589,17 +581,17 @@ a:link {
     .featured-projects {
         flex-direction: row;
         flex-wrap: wrap;
-        width: 50%;
         justify-content: space-evenly;
-        margin-left: 25%;
+        
     }
 
     .featured-title {
-        justify-content: center;
-        margin-left: 41%;
+         margin-left: 43%; 
+        
     }
 
     .text-summary {
         font-size: 20px;
     }
+
 }
