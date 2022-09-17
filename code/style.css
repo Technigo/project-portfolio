@@ -58,19 +58,19 @@ font-family: "Montserrat", "Roboto";
 
  /* TEXT SIZE / DIFFERENT HEADINGS  */
 
-h1{
+.main-heading {
     font-family: "Montserrat";
     font-size: 42px;
     font-weight: bolder;
     padding: 5px;
 }
 
-h2{
+.second-heading {
         font-family: "Montserrat";
         font-size: 30px;
 }
 
-h3 {
+.container-heading {
     display: flex;
     font-weight: bolder;
     background-color:  #c85c3b;
@@ -81,7 +81,7 @@ h3 {
     margin: 25px 0 0 0;  
    }
 
-   h4 {
+   .small-heading {
     text-align: center;
     padding: 7px;
     border-radius: 5px;
@@ -99,7 +99,9 @@ b {
     font-weight: bolder;
 }
 
-
+a { 
+text-decoration: none;  
+}
  /* 1ST CONTAINER: PRESENTATION */
 
 .presentation-container {
@@ -111,7 +113,7 @@ b {
     align-items: center;   
 }
 
-.small-figure {
+.arrow {
     width: 3em
 }
 .presentation-text {
@@ -216,6 +218,7 @@ transform: translate(-50%, -50%);
     
 .describing-text {
     line-height: 25px;  
+    color: black;
     font-family: "Montserrat";
 }
     
@@ -247,18 +250,24 @@ span {
 button {
     border:#ba4622; /* need this to remove border from button*/
     background:  #c4b991;
-    padding: 5px;
+    align-items: center;
+    padding: 9px;
     border-radius: 5px;
-    color: rgb(255, 255, 255);
     margin: 0px 0px 20px 10px; 
 }
+.button-text {
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    }
   
   button:hover {
     /* border: 1px solid grey; */
     background:  #ba4622;
     color: white;
 }
-  
+
+
+
  /* 4TH CONTAINER: OTHER PROJECTS */
 
 
@@ -274,6 +283,10 @@ button {
 .other-projects-container  .project{
     width: 100%;
     text-align: center;
+}
+
+a{ 
+    color: black;
 }
 
 /* 5th  CONTAINER: THOOUGHTS */
@@ -362,7 +375,7 @@ margin: 0px;
 
 /* FOOTER: CONTACT */
 
-.contact h4 {
+.contact .small-heading {
     color: white;
 }
 
@@ -457,13 +470,13 @@ grid-template-columns: repeat(2, 1fr);
     font-size: 25px;
  }
 
- .hero-text h2 {
+ .hero-text .second-heading {
     font-size: 30px;
  }
 
 /* TEXT SIZE / DIFFERENT HEADINGS  */
         
-h1 {
+.main-heading {
 font-size: 55px;   
  }
   
@@ -536,7 +549,7 @@ padding: 20px;
     width: 40%;  
     left: 20%;
 }
-.hero-text h2 {
+.hero-text .second-heading {
     font-size: 40px;
  }
 
@@ -546,7 +559,7 @@ padding: 20px;
 
 /* TEXT SIZE AND HEADINGS */
 
-h1 {
+.main-heading {
     font-size: 66px;   
 }
 
