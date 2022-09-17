@@ -1,10 +1,247 @@
 
-.main-container {
-    background-color: violet;
+
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #656565;
+}
+
+/*Removes underline from a link*/
+a {
+    text-decoration:none;
+}
+
+p {
+    color: #656565;
+    padding-bottom: 20px;
+}
+
+
+/* Mobile first  */
+
+.outer-wrapper {
+    width: 100vw;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inner-wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.top-header {
+    height: 40vh;
+    width: 100%;
+    font-family: "Roboto";
+    font-size: 45px;
+    position: relative
+}
+
+.hero-text {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    color: whitesmoke;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.hero-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: whitesmoke;
 }
 
 .hero-image {
-    height: 30vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.15), 
+        rgba(0, 0, 0, 0.15)), url("./images/pawel-czerwinski-yryt6Hwl52U-unsplash.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
     width: 100%;
-    background-position: center center;
+}
+
+.profile-pic {
+    display: block;
+    height: 30vw;
+    min-height: 150px;
+    border-radius: 50%;
+    border:2px solid whitesmoke;
+    position: absolute;
+    right: 15%;
+    bottom: -3%;
+}
+
+.line {
+    border: 1px solid #BA4581;
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+    background-color: #BA4581;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #BA4581;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.intro {
+    padding: 10%;
+}
+
+/*h2*/
+.section-title {
+    background-color: #BA4581;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 4px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/*h3*/
+.section-sub-title {
+    font-family: "Roboto";
+    color: #BA4581;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/*h4*/
+.section-sub-sub-title {
+    font-family: "Roboto";
+    color: #BA4581;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.grey-section {
+    background-color:#f8f8f8;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    
+    /* display: block;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    gap: 40px;
+    margin: 5% 10% 5% 10%;
+     */
+}
+
+.white-section {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.projects {
+    font-family: "Roboto";
+    line-height: 1.4;
+ 
+}
+
+.project-items {
+    display: inline;
+    width: 90%;
+    height: auto;
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+.chatbot-img {
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)), url("./images/chatbot.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ /*it is not position in center...??*/
+}
+
+.weather-img {
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)), url("./images/weatherapp.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Need some kind of hover-effect here.  
+.chatbot-img-text:hover {
+    background-color: red;
+} */
+
+
+.project-img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.other-objects {
+    padding: 25px;
+}
+
+footer {
+    background-color: #5CA382;
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.footer-title {
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+
+/* tabet second  */
+@media screen and (min-width: 668px) {
+    .inner-wrapper {
+        max-width: 800px;
+    }
+
+    .profile-pic {
+        max-height: 200px;
+        /*Do something about covering text, overlap underlap. maybe change to static instead of absolut...*/ 
+    }
+}
+
+
+/* desktop third  */
+@media screen and (min-width: 1025px) {
+    .inner-wrapper {
+        width: 80%;
+        max-width: 1025px;
+    }
+
+    .white-section, .grey-section {
+        padding: 40px;
+    }
+    /*Need to fix profile pic and hero-text moving to far away on big screens*/
 }
