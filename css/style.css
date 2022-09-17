@@ -1,5 +1,14 @@
+/******* GLOBAL STYLING *******/
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --main: #0A638E;;
+  --black-main: #333;
+  --text-color: #fff;
+  --grey-background: #F4F4F4;
+}
 
 * {
     box-sizing: border-box;
@@ -21,8 +30,23 @@
     background-color: #F4F4F4;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
 .secondary-header {
-  background-color: #0A638E;
+  background-color: var(--main);
   color: white;
   margin: 20px auto;
   padding: 10px;
@@ -34,18 +58,11 @@
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-p {
+.third-heading {
+  color: var(--main);
+  text-transform: uppercase;
   font-family: 'Montserrat';
-  line-height: 1.5;
+  font-weight: 700;
   font-size: 16px;
 }
 
@@ -166,15 +183,6 @@ p {
     padding: 20px;
 }
 
-.other-heading {
-    text-align: center;
-    color: #0A638E;
-    text-transform: uppercase;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-}
-
 .other-projects {
     padding: 20px;
 }
@@ -255,10 +263,14 @@ p {
   margin: 0 20px;
 }
 
+.other-heading {
+  text-align: center;
+}
+
 /* MY THOUGHTS SECTION*/
 
 .my-thoughts {
-    padding: 5%;   
+    margin: 100px 0;
 }
 
 .articles-container {
@@ -275,9 +287,13 @@ p {
   color: red;
 }
 
+.thoughts-heading {
+  align-self: flex-start;
+}
+
 /* SKILLS SECTION */
 .skills-section {
-    padding: 5%;
+ padding: 100px 0;
 }
 
 .skills-inner-wrapper {
@@ -296,17 +312,10 @@ p {
     width: 200px;
 }
 
-.skills-header {
-  text-transform: uppercase;
-  color: #0A638E;
-  font-family: 'Montserrat';
-  font-weight: 700;
-}
-
 
 /* FOR MORE SECTION */
 .for-more {
-    padding: 8%;  
+    margin: 100px 0; 
     text-align: center;
   }
 
@@ -319,7 +328,7 @@ p {
   
   .bottom-links .fa{
     color: #0A638E;
-    border: 2px solid #11423f;
+    border: 2px solid #0A638E;;
     margin: 5px;
     border-radius: 50%;
     background: transparent 0% 0% no-repeat padding-box;
@@ -341,6 +350,8 @@ p {
   text-transform: uppercase;
   font-family: 'Montserrat';
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .mail {
