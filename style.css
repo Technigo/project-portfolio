@@ -192,9 +192,9 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   column-gap: 1rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem;
   margin-left: 1rem;
-  margin-right: 1rem;
+  margin-right: 1rem; */
 }
 
 .grid-item {
@@ -228,7 +228,7 @@ a {
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-radius: 10px;
-  width: 300px;
+  width: 350px;
 
 }
 
@@ -300,7 +300,48 @@ li {
   font-size: 18px;
   font-weight: 300;
 }
+/* My thougth */
 
+.thoughtAndCode{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  column-gap: 1rem;
+  padding: 10px 25px 10px 25px;
+ 
+}
+
+.thought{
+background-color:var(--secondryColor);
+padding: 2rem;
+color: var(--grayText)
+
+}
+ .thought h3{
+  font-weight:500;
+  font-size: 20px;;
+  line-height:2.2rem;
+  /* color: var(--grayText) */
+
+ }
+ .thought p{
+  margin: 1rem;
+  font-size:14px;
+  color: var(--grayText);
+ }
+
+ .thought h2{
+  margin-top:2rem;
+  font-weight:bold;
+  }
+  .thought img{
+      filter: blur(0);
+      width: 500px;
+  }
+  .apiImg{
+    height: 300px;
+  }
+
+/* Skills part */
 .skills {
   height: 350px;
   width: 80%;
@@ -352,10 +393,10 @@ li {
 
 }
 .iconBottom{
-    font-size: 32px;
+  font-size: 32px;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 90px;
   width: 90px;
   border: 3px solid #fff;
@@ -366,7 +407,7 @@ li {
   background-color: var(--secondryColor);
   color: var(--boxColor);
   border: 4px solid;
-    transition:  .4s;
+  transition:  .4s;
 }
 
 .iconBottom i{
@@ -490,7 +531,7 @@ footer {
 @media screen and (max-width:414px){
 
 body{
-  margin: 0 auto;
+  margin: 5px 0 5px 0;
     width: 100%;
 }
 
@@ -580,7 +621,6 @@ body{
 }
 
 }
-
 @media screen and (max-width:1024px) {
   .mainHeader{
 min-width:100px;
@@ -588,7 +628,7 @@ min-width:100px;
 .mainHeader img{
   height: 150px;
   width: 150px;
-  top: 40%;
+  top: 50%;
   }
 
   .title {
@@ -598,11 +638,12 @@ min-width:100px;
 
   .title h1{
     font-size: 30px;
+    
   }
-    .title h2{
-      font-size:22px;
-        line-height: 2rem;
-    }
+  .title h2{
+    font-size:22px;
+      line-height: 2rem;
+  }
   .aboutMe p{
   font-size:18px;
 }
@@ -620,7 +661,8 @@ min-width:100px;
   flex-wrap: wrap;
 }
 .socialMedia {
-  width: 22vw;
+  width: 25vw;
+  right: 40px;
 
 }
 }
