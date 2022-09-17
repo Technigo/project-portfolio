@@ -1,10 +1,8 @@
-var toggle = document.querySelector('#toggle')
-var menu = document.querySelector('#menu')
+const $button = $('#button');
+const isMenuOpen = false;
 
-toggle.addEventListener('click', function(){
-  if (menu.classList.contains('is-active')) {
-    menu.classList.remove('is-active')
-  } else {
-    menu.classList.add('is-active')
-  }
-})
+$button.on('click', function () {
+    isMenuOpen = !isMenuOpen;
+    
+    $button.attr('aria-expanded', isMenuOpen);
+});
