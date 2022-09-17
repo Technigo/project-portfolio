@@ -15,8 +15,6 @@ p {
 }
 /****HEADER*****/
 .header-container {
-  width: auto;
-  height: 140vw;
   position: relative;
 }
 
@@ -25,20 +23,30 @@ p {
   /*Photo by Nathan Dumlao https://unsplash.com/@nate_dumlao */
   /* background-image: url(./Images/web.jpg); */
   background-color: #a27da7;
-  height: 140vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
+.header-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 0px;
+  width: 70%;
+  max-width: 900px;
+}
 /* Place text in the middle of the image */
 .header-text {
-  position: absolute;
+  padding: 40px 0px 20px 0px;
+  width: 100%;
   /* width: 600px; */
   /* height: 339px; */
-  left: 60px;
-  top: 52%;
+  /* left: 60px;
+  top: 52%; */
   color: white;
 }
 
@@ -53,6 +61,13 @@ p {
 
 .lighter {
   font-weight: 300;
+}
+.stronger{
+  font-weight: 900;
+}
+.color{
+color:  #645caa;
+  font-weight: 900;
 }
 
 .header-title {
@@ -71,19 +86,21 @@ p {
 }
 
 .profile-image {
-  position: absolute;
-  right: 24%;
-  top: 8%;
-  width: 200px;
+  /* position: absolute;
+  right: 30%;
+  top: 8%; */
+  width: 40%;
   border-radius: 50%;
   border: 2px solid white;
+  
 }
 
 .icons-top {
   font-size: 2em;
-  position: absolute;
-  right: 43%;
-  top: 85%;
+  /* position: absolute;
+  right: 10%;
+  top: 5%; */
+
 }
 
 /* 
@@ -129,6 +146,7 @@ https://www.youtube.com/watch?v=zHZRFwWQt2w&list=PL4-IK0AVhVjPRj8P56TtFX2hg33Blb
   margin: 0 auto;
 }
 
+
 .box-title {
   padding: 5px 0px 15px 0px;
   margin: 0px;
@@ -145,6 +163,10 @@ https://www.youtube.com/watch?v=zHZRFwWQt2w&list=PL4-IK0AVhVjPRj8P56TtFX2hg33Blb
   text-align: center;
   align-self: center;
   letter-spacing: 1px;
+  color: #ffffff;
+  background-color: #d486a8;  
+  display: inline;
+  justify-content: center; 
 }
 
 .title-small {
@@ -193,27 +215,21 @@ https://www.youtube.com/watch?v=zHZRFwWQt2w&list=PL4-IK0AVhVjPRj8P56TtFX2hg33Blb
   line-height: 26px;
 }
 
-/*hero wrapper*/
 .project-photo {
   height: 300px;
   width: 100%;
+  /* object-fit: cover; */
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/weatherapp_picture.png");
 }
 
-.thoughts-photo {
-  height: 300px;
+.thoughts-photo{
   width: 100%;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  object-fit: cover;
 }
 
 .project-name {
@@ -245,11 +261,10 @@ https://www.youtube.com/watch?v=zHZRFwWQt2w&list=PL4-IK0AVhVjPRj8P56TtFX2hg33Blb
   /* padding: 20px 0px 0px; */
 }
 .text {
-  margin: 0px;
   padding: 0px 0px 8px;
   font-size: 15px;
   letter-spacing: 1.8px;
-  line-height: 25px;
+  line-height: 30px;
   font-family: Roboto, sans-serif;
 }
 
@@ -272,7 +287,7 @@ https://www.youtube.com/watch?v=zHZRFwWQt2w&list=PL4-IK0AVhVjPRj8P56TtFX2hg33Blb
 .project-row {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /*doesent work*/
+  align-items: start;
   font-family: Roboto, sans-serif;
   text-decoration-line: underline;
   margin: 10px 0px;
@@ -307,7 +322,7 @@ https://www.youtube.com/watch?v=zHZRFwWQt2w&list=PL4-IK0AVhVjPRj8P56TtFX2hg33Blb
   padding: 30px 0 50px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  gap: 0px;
   text-align: center;
 }
 
@@ -359,26 +374,29 @@ a:visited {
 
 @media (min-width: 667px) and (max-width: 1024px) {
   .header-container {
-    height: 40vw;
   }
 
   .header-image {
-    height: 40vw;
+  }
+
+  .header-wrapper{
+    width: 70%;
   }
 
   .header-text {
-    left: 170px;
-    top: 75px;
+    left: 160px;
+    top: 65px;
+    padding: 80px 0px;
   }
 
   .header-name {
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 25px 0px;
     font-size: 19px;
     line-height: 20px;
   }
 
   .header-title {
-    margin: 40px 0px;
+    margin: 30px 0px;
     font-size: 50px;
     line-height: 50px;
   }
@@ -389,16 +407,22 @@ a:visited {
   }
 
   .profile-image {
-    right: 12%;
-    bottom: -10%;
-    width: 220px;
+    position: absolute;
+    top: auto;
+    right: 16%;
+    bottom: -8%;
+    width: 230px;
     } 
  
 
   .icons-top {
-    font-size: 3em;
-    right: 30%;
-    top: 22%;
+    position: absolute;
+    right: 23%;
+    top: 24%;
+  }
+
+  .icon-picture {
+    height: 70px;
   }
 
   .box {
@@ -431,12 +455,13 @@ a:visited {
     }
 
   .project-title {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
+    margin: 18px 0px 8px 0px;
   }
 
   .project {   /*Keeping all info about one project*/
-    width: 350px;
+    width: 100%;
     }
 
   .text {
@@ -471,16 +496,15 @@ a:visited {
 
 @media (min-width: 1025px) {
   .header-container {
-    height: 27vw;
   }
 
   .header-image {
-    height: 27vw;
   }
 
   .header-text {
-    left: 360px;
+    left: 22rem;
     top: 125px;
+    padding: 80px 0px;
   }
 
   .header-name {
@@ -501,19 +525,22 @@ a:visited {
   }
 
   .profile-image {
-    right: 26%;
+    position: absolute;
+    right: 24%;
     bottom: -10%;
-    width: 260px;
+    top: auto;
+    width: 17rem;
     } 
 
-   
-
   .icons-top {
-    font-size: 3em;
-    right: 30%;
+    position: absolute;
+    right: 28%;
     top: 22%;
   }
-
+  .icon-picture {
+    height: 70px;
+  }
+  
   .box {
     padding: 30px 0 50px 0;
     font-size: 20px;
@@ -521,7 +548,8 @@ a:visited {
   }
 
   .box-wrapper {
-    width: 57%;
+    width: 80%;
+    max-width: 900px;
   }
 
   .box-title {
@@ -545,28 +573,32 @@ a:visited {
 
   .project-title {
     font-size: 18px;
-    font-weight: 700;
+    margin: 18px 0px 8px 0px;
+    font-weight: 600;
   }
 
   .project {   /*Keeping all info about one project*/
-    width: 450px;
+    width: 100%
     }
 
   .text {
     margin: 18px 0px 8px 0px;
-    padding: 0px;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 15px;
   }
 
   .project-row {
     display: flex;
     flex-direction: row;
+    margin: 0px;
  }
 
   .project-button {
     line-height: 26px;
   }
+
+
 
   .button {
     font-size: 11px;
@@ -574,8 +606,13 @@ a:visited {
     margin: 3px 7px 3px 0px;
   }
 
+.thoughts-text {
+  font-size: 18px;
+  letter-spacing: 1.6px;
+}
   .icons-end {
     margin-top: 0px;
    }
+
    
   }
