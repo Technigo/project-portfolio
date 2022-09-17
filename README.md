@@ -4,4 +4,4 @@ The assigment was to make a portfolio site with HTML / CSS. The site had to have
 
 # View it live
 
-https://karlfredrikholm.netlify.app
+https://fredrikholm.netlify.app
