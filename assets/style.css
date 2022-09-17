@@ -2,6 +2,7 @@
 
 body {
   font-size: 16px;
+  color: #0f0f0f;
 }
 
 a:link,
@@ -9,11 +10,11 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color: black;
+  color: #0f0f0f;
 }
 
 :focus {
-  outline-color: black;
+  outline-color: #0f0f0f;
   outline-width: medium;
   outline-style: solid;
   outline-offset: 4px;
@@ -41,7 +42,7 @@ a:active {
 
 .section-title-background {
   color: white;
-  background-color: hotpink;
+  background-color: #88635c;
   padding: 3px;
 }
 
@@ -53,11 +54,11 @@ a:active {
   text-align: center;
   padding-top: 80px;
   padding-bottom: 40px;
-  color: hotpink;
+  color: #88635c;
 }
 
 .highlight {
-  color: hotpink;
+  color: #d54887;
 }
 
 .bold {
@@ -70,7 +71,7 @@ a:active {
   width: 100%;
   height: 475px;
   background-image: url("./images/header.jpg");
-  background-color: pink;
+  background-color: #dfa0a9;
   position: relative;
 }
 
@@ -94,7 +95,7 @@ a:active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid #0f0f0f;
   margin: 0 auto;
   display: grid;
 }
@@ -104,6 +105,7 @@ a:active {
   height: 20px;
   align-self: center;
   justify-self: center;
+  fill: #0f0f0f;
 }
 
 .header-text-wrapper {
@@ -115,14 +117,13 @@ a:active {
 .header-text-name {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  color: white;
-  font-size: 16px;
+  color: #0f0f0f;
 }
 
 .header-text-title {
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase;
-  color: white;
+  color: #0f0f0f;
   font-size: 46px;
   padding-top: 10px;
   font-weight: 700;
@@ -132,7 +133,7 @@ a:active {
 .header-text-other-title {
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase;
-  color: white;
+  color: #0f0f0f;
   font-size: 24px;
   padding-top: 10px;
   font-weight: 700;
@@ -157,11 +158,11 @@ a:active {
 /* INTRO */
 
 .intro {
-  background-color: #f4f4f4;
+  background-color: #fdf5f8;
 }
 
 .line {
-  border: 1px solid hotpink;
+  border: 1px solid #d54887;
   width: 40px;
   display: inline-block;
   margin-bottom: 4px;
@@ -170,14 +171,13 @@ a:active {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: hotpink;
+  background-color: #d54887;
   border-radius: 50%;
   display: inline-block;
 }
 
 .intro-text {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
   text-align: left;
   line-height: 1.6;
 }
@@ -191,7 +191,6 @@ a:active {
 .tech-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 16px;
   text-align: center;
   line-height: 1.6;
 }
@@ -199,7 +198,7 @@ a:active {
 /* PROJECTS */
 
 .projects {
-  background-color: #f4f4f4;
+  background-color: #fdf5f8;
   justify-content: center;
 }
 
@@ -216,10 +215,30 @@ a:active {
   grid-column: span 2;
 }
 
+.project-card:hover .project-name-wrapper {
+  background: rgba(0, 0, 0, 0.6);
+}
+.project-card:hover .project-name-wrapper {
+  opacity: 0;
+  transform: translateY(-90%);
+}
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
 .project-header {
   height: 200px;
   position: relative;
   overflow: hidden;
+}
+
+.project-name-wrapper {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  top: 0;
+  height: 100%;
+  transition: background ease 300ms;
 }
 
 .project-image {
@@ -230,21 +249,12 @@ a:active {
   transition: all 300ms ease;
 }
 
-.project-name-wrapper {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  top: 0;
-  height: 100%;
-  transition: background ease 300ms;
-}
-
 .project-name {
   position: absolute;
   top: 50%;
   width: 100%;
   transform: translateY(-50%);
-  color: white;
+  color: #ffffff;
   padding: 0;
   line-height: 20px;
   text-align: center;
@@ -260,7 +270,7 @@ a:active {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: hotpink;
+  color: #d54887;
   padding-top: 22px;
   line-height: 1.6;
 }
@@ -269,17 +279,6 @@ a:active {
   font-family: "Roboto", sans-serif;
   padding-bottom: 5px;
   line-height: 1.5;
-}
-
-.project-card:hover .project-name-wrapper {
-  background-color: rgba(0, 0, 0, 0);
-}
-.project-card:hover .project-name-wrapper {
-  opacity: 0;
-  transform: translateY(-90%);
-}
-.project-card:hover .project-image {
-  transform: scale(1.05);
 }
 
 /* other projects */
@@ -304,7 +303,7 @@ a:active {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: hotpink;
+  color: #d54887;
   display: inline;
 }
 
@@ -324,7 +323,7 @@ a:active {
   font-family: "Roboto", sans-serif;
   color: black;
   font-weight: 400;
-  background-color: pink;
+  background-color: #dfb7ae;
   text-decoration: none;
 
   /* Matching line-height and font-size here gives full control 
@@ -375,7 +374,7 @@ a:active {
 
 .my-thoughts-entry-date {
   text-transform: uppercase;
-  color: hotpink;
+  color: #d54887;
   font-family: "Roboto", sans-serif;
   padding-top: 35px;
 }
@@ -413,7 +412,7 @@ a:active {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: hotpink;
+  color: #d54887;
   display: inline;
 }
 
@@ -425,7 +424,7 @@ a:active {
 /* SKILLS */
 
 .skills {
-  background-color: #f4f4f4;
+  background-color: #fdf5f8;
   text-align: center;
 }
 
@@ -445,7 +444,7 @@ a:active {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: hotpink;
+  color: #d54887;
   padding-bottom: 3px;
 }
 
@@ -472,7 +471,7 @@ a:active {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 2px solid hotpink;
+  border: 2px solid #88635c;
   margin: 0 auto;
   display: grid;
 }
@@ -482,14 +481,14 @@ a:active {
   height: 28px;
   align-self: center;
   justify-self: center;
-  fill: hotpink;
+  fill: #88635c;
 }
 
 .for-more-entry-site-name {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: hotpink;
+  color: #88635c;
   text-align: center;
   padding-top: 15px;
   font-size: 15px;
@@ -499,7 +498,7 @@ a:active {
 /* FOOTER */
 
 .footer {
-  background-color: hotpink;
+  background-color: #d54887;
 }
 
 .footer-title {
