@@ -1,5 +1,8 @@
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;*/
+/* F6A115 yellowish color */
+/* 1FC5EA lighter turquoise */
+/* 09363B darker turquoise */
 
 * {
     margin: 0;
@@ -9,7 +12,7 @@ font-family: 'Roboto', sans-serif;*/
 /***** MOBILE *******/
 .top {
     width: 100vw;
-    background-image: url('./assets/flowers1.jpg');
+    background-image: url('./assets/ashim-d-silva-WeYamle9fDM-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
     display: flex;
@@ -18,7 +21,6 @@ font-family: 'Roboto', sans-serif;*/
     position: relative;*/
 }
 .header-wrapper {
-    border: 2px solid rgb(32, 125, 27);
     width: 80%;
     margin: 0 auto;
     padding-top: 2rem;
@@ -26,32 +28,40 @@ font-family: 'Roboto', sans-serif;*/
     flex-direction: column;
 }
 .header-links {
-    border: 2px solid red;
     align-self: flex-end;
     margin-bottom: 2.5rem;
-    /*display: flex;
-    flex-direction: row;
-    width: 100%;*/
 }
 .portfolio {
-    border: 2px solid red;
     align-self: flex-start;
-    color: white;
     font-family: 'Montserrat';
     font-weight: 700;
     display: block;
     margin-bottom: 2.5rem;
-    /*display: flex;
-    flex-direction: row;
-    width: 100%;*/
+    color: #09363B;
 }
+
+.portfolio p {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 49px;
+    max-width: 400px;
+}
+.with-h1 {
+    font-size: 24px;
+    line-height: 40px;
+}
+
 .profile {
-    border: 2px solid red;
     align-self: flex-end;
-    /*display: flex;
-    flex-direction: row;
-    width: 100%;*/
 }
+
 .profile-image {
     width: 180px;
     height: 200px;
@@ -66,31 +76,6 @@ font-family: 'Roboto', sans-serif;*/
     left: 36%;
     object-fit: cover;*/
 }
-.portfolio p {
-    font-family: 'Roboto';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.04em;
-    /*margin-bottom: 1.5rem;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;*/
-}
-.portfolio-name {
-    font-weight: 700;
-}
-h1 {
-    font-size: 40px;
-    line-height: 49px;
-    /* max-width: 400px;*/
-}
-.with-h1 {
-    font-size: 24px;
-    line-height: 40px;
-}
 
 .icon-white {
     width: 40px;
@@ -101,17 +86,6 @@ h1 {
     width: 45px;
     height: 45px;
     padding: 0.8rem;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center
-}
-
-small {
-    font-size: x-small;
 }
 
 .start-image {
@@ -131,12 +105,16 @@ small {
     flex-direction: column;
     align-items: center;
 }
+
 .grey {
     background-color: #f4f4f4;
 }
-.red {
-    color: red;
+
+.orange {
+    /*color: red;*/
+    color: #F66F19;
 }
+
 .white {
     color: white;
 }
@@ -156,7 +134,9 @@ small {
     font-size: 22px;
     line-height: 27px;
     margin: 2.5rem 0;
-    background-color: red;
+    background-color: #F66F19;
+    padding: 2px;
+    border-radius: 5px;
     display: inline-block;
     width: fit-content;
     text-align: center;
@@ -175,7 +155,7 @@ small {
     font-weight: 700;
     font-size: 17px;
     line-height: 29px;
-    color: red;
+    color: #F66F19;
 }
 
 .image-card {
@@ -212,16 +192,6 @@ small {
     font-weight: 700;
 }
 
-.project-image:hover {
-    /* This causes the text to fade, color is the text color */
-    color: transparent;
-}
-  
-.project-image-overlay:hover {
-    /* This causes the original background color (.5 opacity) to become transparent */
-    background-color: transparent;
-}
-
 .tech-tools {
     margin-top: 0.5rem;
     display: flex;
@@ -229,7 +199,7 @@ small {
 }
 
 .tool {
-    background-color: #fddfe7;
+    background-color: #8ECEDC;
     margin-right: 0.25rem;
     margin-bottom: 0.25rem;
     padding: 3px;
@@ -241,13 +211,16 @@ small {
     width: 100%;
     margin-bottom: 2rem;
 }
+
 .highlight {
     text-align: left;
-    color: red;
+    color: #F66F19;
 }
+
 .bold {
     font-weight: 700;
 }
+
 a {
     text-decoration: none;
     font-family: 'Roboto';
@@ -258,14 +231,12 @@ a {
 }
 
 .list-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2.5rem;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.list {
-    text-align: center;
+    justify-content: space-between;
 }
 
 ul {
@@ -274,16 +245,27 @@ ul {
     font-size: 16px;
     line-height: 29px;
     list-style-type: none;
-    /*border: 1px solid blue;*/
+    padding-bottom: 2.5rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.5rem;
+}
+
+small {
+    font-size: x-small;
 }
 
 footer {
-    background-color: #072BCE;
+    display: flex;
+    flex-direction: column;
+    background-color: #5A415A;
     color: white;
     width: 100vw;
-    height: 35vh;
     text-align: center;
-    padding-top: 1rem;
+    padding: 1rem 0;
 }
 
 footer p {
@@ -293,24 +275,89 @@ footer p {
     margin: 6px;
     line-height: 25px;
 }
-  
+
 /* example of ARIA styling: 
 div.tooltip[aria-hidden="true"] {
     display: none;
 }*/
   
-/* TABLET STYLING */
-@media (min-width: 668px) and (max-width:1024px) {
+/* TABLET & DESKTOP STYLING */
+@media (min-width: 668px) /*and (max-width:1024px)*/ {
+    .portfolio p {
+        font-size: 28px;
+        line-height: 37px;
+        letter-spacing: 0.04em;
+    }
+
+    h1 {
+        font-size: 82px;
+        line-height: 100px;
+    }
+    .with-h1 {
+        font-size: 50px;
+        line-height: 78px;
+    }
+
     .profile-image {
         width: 300px;
         height: 320px;
     }
+
+    .icon-white {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon-red {
+        width: 90px;
+        height: 90px;
+        padding: 1rem;
+    }
+
+    .start-image {
+        width: 98px;
+    }
+
     .inner-wrapper {
-        
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .image-card {
+
+    .summary, footer p {
+        font-size: 30px;
+        line-height: 50px;
+    }
     
+    .large-headline {
+        font-size: 48px;
+        line-height: 59px;
+        margin: 5rem 0;
     }
+
+    .medium-headline {
+        font-size: 38px;
+        line-height: 47px;
+    }
+    
+    .small-headline, p, li, h4 {
+        font-size: 25px;
+        line-height: 41px;
+    }
+    
+    .image-card {
+        width: 45%;
+        height: 80%;
+    }
+
+    .project-image-title {
+        font-size: 30px;
+    }
+    
+    .tool {
+        font-size: larger;
+    }
+    
 }
 
 /* DESKTOP */
@@ -320,25 +367,13 @@ div.tooltip[aria-hidden="true"] {
         height: 350px;
     }
    
-    .summary {
-        font-size: 30px;
-        line-height: 50px;
+    .project-image:hover {
+        /* This causes the text to fade, color is the text color */
+        color: transparent;
     }
-
-    .start-image {
-        width: 98px;
-    }
-    .inner-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .image-card {
-        width: 45%;
-        height: 80%;
-    }
-    .project-image-container {
-        
-           
+      
+    .project-image-overlay:hover {
+        /* This causes the original background color (.5 opacity) to become transparent */
+        background-color: transparent;
     }
 }
