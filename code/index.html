@@ -19,40 +19,39 @@
     </style>
 </head>
 <body>
-    <header class = "header">
-        <div class = "social-media-header-container">
-              <a href="https://www.linkedin.com/in/jessika-lind-1227221a4/">
-                <img src="./linkedin.png" alt="">  <!--Have not used alt since I have the sr-only class below-->
-                <div class = "sr-only">
-                    <p>Linkedin</p>
-                </div>
-              </a>
-              <a href="https://github.com/jessikalind">
-                <img src="./github.png" alt=""> <!--Same as above-->
-                <div class = "sr-only">
-                    <p>Github</p>
-                </div>
-              </a>
-              <a href="https://stackoverflow.com/c/technigo/users/369">
-                <img src="./stacko.png" alt=""> <!--Same as above-->
-                <div class = "sr-only">
-                    <p>Stackoverflow</p>
-                </div>
-              </a>
-        </div>
-            
-        <div class = "headline-container">
+    <header class = "header-outer-wrapper">
+        <section class = "header-inner-wrapper">
+            <div class = "social-media-header-container">
+                <a href="https://www.linkedin.com/in/jessika-lind-1227221a4/">
+                    <img src="./linkedin.png" alt="">  <!--Have not used alt since I have the sr-only class below-->
+                    <div class = "sr-only">
+                        <p>Linkedin</p>
+                    </div>
+                </a>
+                <a href="https://github.com/jessikalind">
+                    <img src="./github.png" alt=""> <!--Same as above-->
+                    <div class = "sr-only">
+                        <p>Github</p>
+                    </div>
+                </a>
+                <a href="https://stackoverflow.com/c/technigo/users/369">
+                    <img src="./stacko.png" alt=""> <!--Same as above-->
+                    <div class = "sr-only">
+                        <p>Stackoverflow</p>
+                    </div>
+                </a>
+            </div>
+            <div class = "headline-container">
                 <h1 class = "portfolio-headline">PORTFOLIO: JESSIKA LIND</h1>
                 <h2 class = "frontend-headline">frontend developer</h2>
                 <h3 class = "background-headline"> + communicator & administrator</h3>
-
-        </div>
-
-        <img class ="profile-pic" src="./Jessika.jpeg" alt="Picture of Jessika Lind">
+            </div>
+            <img class ="profile-pic" src="./Jessika.jpeg" alt="Picture of Jessika Lind">
+        </section>
      </header>
 
-    <section class = "body-container">
-        <section class = "intro-section">     
+    <section class = "outer-wrapper grey">
+        <section class = "inner-wrapper intro">     
             <p> 
                 <span class="line"></span><span class="dot"></span>  
                 With an educational background in History, Political Science and Journalism 
@@ -60,13 +59,17 @@
                 have quite a lot to bring to the table as a Frontend developer. Not least of all: 
                 a huge interest in learning new things.</p>
         </section>
+    </section>
 
-        <section class= "tech-section">
+    <section class = "outer-wrapper white">
+        <section class= "inner-wrapper tech">
             <h2 class ="white-red-h2 tech-h2">TECH</h2>
-            <p> HTML, CSS, Flexbox, JavaScript, ES6, Web Accessibly, API:s, mob-programming, pair-programming, Github. </p>
+            <p> HTML, CSS, Flexbox, CSS Grid, JavaScript, ES6, Web Accessibly, API:s, mob-programming, pair-programming, Github. </p>
         </section>
+    </section>
 
-        <section class = "featured-projects">
+    <section class = "outer-wrapper grey">
+        <section class = "inner-wrapper featured-projects">
             <h2 class ="white-red-h2 featured-p-h2">FEATURED PROJECTS</h2>
             
                 <div class = "project one">
@@ -141,10 +144,12 @@
                     </a>
                 </div>
             </section>
-
-        <section class = "other-projects">
+        </section>
+        
+    <section class = "outer-wrapper grey">
+        <section class = "inner-wrapper other-projects">
             <h2 class ="white-red-h2">OTHER PROJECTS</h2>
-            
+                
                 <div class = "small-project 1">
                     <a href="https://github.com/jessikalind/project-chatbot" target=”_blank”>
                         <div class = "sr-only">
@@ -180,9 +185,10 @@
                     </a>
                 </div>
         </section>
+    </section>
 
-
-        <section class = "thoughts-about-code">
+    <section class = "outer-wrapper white">
+        <section class = "inner-wrapper thoughts-about-code">
             <h2 class = "white-red-h2">MY THOUGHTS</h2>
             
             <div class = "blogg-post one">
@@ -209,8 +215,10 @@
             <div class = "other-blog-posts">
             </div>
         </section>
+    </section>
 
-        <section class = "skills">
+    <section class = "outer-wrapper grey">
+        <section class = "inner-wrapper skills">
             <h2 class ="white-red-h2">SKILLS</h2>
             <div class = "skill-section">
                 <div class = "skill code">
@@ -242,11 +250,12 @@
                         <li>Code pen</li>
                     </ul>
                 </div>
-                
             </div>
         </section>
+    </section>
 
-        <section class = "for-more">
+    <section class = "outer-wrapper white">
+        <section class = "inner-wrapper for-more">
             <h2 class = "white-red-h2">FOR MORE</h2>
             <div class = "social-media-container-for-more">
                 <a href="https://www.linkedin.com/in/jessika-lind-1227221a4/" target=”_blank”>
@@ -269,15 +278,16 @@
                   </a>
             </div>
         </section>
+    </section>
 
-        <footer>
-            <div class = "contact-container">
-                <h2 class = "contact-header">CONTACT</h2>
-                <p>Jessika Lind</p>
-                <p>+46 76 195 55 14</p>
-                <p>jessika.lind@su.se</p>
-            </div>
-        </footer>
+    <footer>
+        <div class = "contact-container">
+            <h2 class = "contact-header">CONTACT</h2>
+            <p>Jessika Lind</p>
+            <p>+46 76 195 55 14</p>
+            <p>jessika.lind@su.se</p>
+        </div>
+    </footer>
     
     <script src="./script.js"></script>
 </body>

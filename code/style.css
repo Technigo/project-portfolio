@@ -54,76 +54,96 @@ p {
     padding: 2vh 0px 1px 0px; 
 }
 
+.outer-wrapper {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+    .grey {
+        background-color: #F4F4F4;
+    }
+
+    .white {
+        background-color: white;
+    }
+
+.inner-wrapper {
+    width: 80%;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
+
 /*Styling header*/
 header {
-    background-image: url("./pexels-madison-inouye-1831234.jpg");
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 3fr;
-    color: white;
-    height: 55vh;
-    position: relative;
+    background-image: url("./pexels-madison-inouye-1831234.jpg"); 
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
 }
-
-    .headline-container {
-        color: #FFFFFF;
-        grid-column: 1 / 2;
-        padding-left: 5vw;
-        width: 50vw;
+    .header-inner-wrapper {
+        padding: 7vh 6vw 6vh 6vw;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        color: white;
+        height: 55vh;
+        position: relative;
     }
-
-        .portfolio-headline {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 24px;
-            letter-spacing: 0.04em;
+    
+        .headline-container {
+            color: #FFFFFF;
+            grid-column: 1 / 2;
+            width: 50vw;
         }
 
-        .frontend-headline {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 49px;
+            .portfolio-headline {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 24px;
+                letter-spacing: 0.04em;
+            }
+
+            .frontend-headline {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 49px;
+            }
+
+            .background-headline {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+            }
+
+        .social-media-header-container {
+            grid-column: 2/3;
+            align-self: center;
+            padding-top: 7vh;
+            display: flex;
         }
 
-        .background-headline {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 15px;
+            .social-media-header-container img {
+                width: 100%;
+            }
+
+        .profile-pic {
+            width: 140px;
+            border-radius: 50%;
+            border: solid 2px white;
+            position: absolute;
+            right: 10vw;
+            bottom: -5vh;
         }
-
-    .social-media-header-container {
-        grid-column: 2/3;
-        align-self: center;
-        width: 80%;
-        padding-top: 7vh;
-        display: flex;
-    }
-
-        .social-media-header-container img {
-            width: 100%;
-        }
-
-    .profile-pic {
-        width: 140px;
-        border-radius: 50%;
-        border: solid 2px white;
-        position: absolute;
-        right: 10vw;
-        bottom: -5vh;
-
-    }
 
 /*Styling intro-section*/
-.intro-section {
-    padding: 7vh 6vw 6vh 6vw;
-    background-color: #F4F4F4;
-}
-
     .line { 
         border: 1px solid #a394f5;
         width: 40px;
@@ -140,8 +160,7 @@ header {
     }
 
 /*Styling tech-section*/
-.tech-section {
-    padding: 7vh 6vw 6vh 6vw;
+.tech {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,7 +171,6 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     background-color: #F4F4F4;
-    padding: 7vh 6vw 6vh 6vw;
     position:relative;
     
 }
@@ -220,8 +238,6 @@ header {
 .other-projects {
     display: flex;
     flex-direction: column;
-    background-color: #F4F4F4;
-    padding: 7vh 6vw 6vh 6vw;
 }
     
     .small-project:hover {
@@ -237,7 +253,6 @@ header {
 .thoughts-about-code {
     display: flex; 
     flex-direction: column;
-    padding: 7vh 6vw 6vh 6vw;
 }
 
     .blogg-post {
@@ -278,8 +293,6 @@ header {
 .skills {
     display: flex;
     flex-direction: column;
-    background-color: #F4F4F4;
-    padding: 7vh 6vw 6vh 6vw;
 }
 
     .skill-section {
@@ -314,7 +327,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7vh 6vw 6vh 6vw;
 
 }
 .social-media-container-for-more {
@@ -484,9 +496,4 @@ footer {
         padding: 6vh 20vw 6vh 20vw;
 
 }
-}
-
-@media (min-width: 1200px) {
-
-
 }
