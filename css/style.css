@@ -3,7 +3,6 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
 }
 
 .outer-wrapper {
@@ -29,6 +28,10 @@
   padding: 10px;
   border-radius: 10px;
   width: 200px;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  text-align: center;
 }
 
 a {
@@ -40,9 +43,16 @@ a:visited {
   color: black;
 }
 
+p {
+  font-family: 'Montserrat';
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+
 /* HEADER SECTION */ 
 .header-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/chicago-skyline2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/chicago-skyline.jpg");
     background-repeat: no-repeat;
     background-position: center !important;
     background-size: cover !important;
@@ -50,12 +60,24 @@ a:visited {
     height: 70vh;
 }
 
-.header-text h1 { 
+.header-text-first-heading { 
     font-size: 3rem;
-    color: white
+    color: white;
+    font-weight: 400;
+    font-family: 'Roboto';
+    text-transform: uppercase;
 }
 
-.header-text p, h2 {
+.header-text-paragraph {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  padding-left: 3px;
+  color: white;
+}
+
+.header-text-second-heading {
     font-size: 1.1rem;
     font-weight: 400;
     font-family: 'Roboto';
@@ -125,7 +147,7 @@ a:visited {
 
 /* TECH SECTION */
 .tech-section {
-   margin: 8% auto;
+   margin: 100px 0;
    text-align: center;
 }
 
@@ -137,7 +159,7 @@ a:visited {
 /* FEATURED PROJECTS SECTION */
 
 .projects {
-  margin: 8% auto;
+  margin: 100px 0;
 }
 
 .card-container {
@@ -148,6 +170,9 @@ a:visited {
     text-align: center;
     color: #0A638E;
     text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .other-projects {
@@ -175,7 +200,7 @@ a:visited {
 }
 
 .overlay h4 {
-  color: #bae2c0;
+  color: white;
   padding: 4px;
 }
 
@@ -216,6 +241,20 @@ a:visited {
   border-radius: 5px;
 }
 
+.other-projects-list {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0A638E;
+}
+
+.other-projects-text {
+  text-decoration-line: underline;
+}
+
+.other-projects-margin {
+  margin: 0 20px;
+}
+
 /* MY THOUGHTS SECTION*/
 
 .my-thoughts {
@@ -229,7 +268,11 @@ a:visited {
 }
 
 .my-articles {
-    width: 50%;
+    width: 100%;
+}
+
+.date {
+  color: red;
 }
 
 /* SKILLS SECTION */
@@ -275,7 +318,7 @@ a:visited {
   }
   
   .bottom-links .fa{
-    color: #11423f;
+    color: #0A638E;
     border: 2px solid #11423f;
     margin: 5px;
     border-radius: 50%;
@@ -294,8 +337,16 @@ a:visited {
     padding: 8%;
 }
 
+.footer-heading {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  margin-bottom: 20px;
+}
+
 .mail {
   color: white;
+  font-size: 16px;
+  font-family: 'Montserrat';
 }
 
 
@@ -306,5 +357,8 @@ a:visited {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
       }
-      
+
+      .my-articles {
+        width: 60%;
+    }    
 }
