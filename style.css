@@ -1,0 +1,364 @@
+:root {
+    ---primary:  #F2A2E4;
+    ---secondary: #d4c4af;
+    /* ---secondary: #dfd3c38a; */
+    /* ---main: #F7E8E8; */
+    ---main: #dfd3c38a;
+    ---highlight: #F090D9;
+    ---accent: #C400FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    background-color: var(---main);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0;
+}
+
+h2 {
+    display: table;
+    text-align: center;
+    color: whitesmoke;
+    background-color: var(---secondary);
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 20px auto;
+    padding: 4px 8px;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px auto 0 auto;
+    color: #c8aa89c6;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+}
+
+/* HEADER */
+
+.top-section {
+    position: relative;
+    background-image: url("./images/pins.jpg");
+    /* background colour if image doesn't load */
+    background-color: var(---secondary);
+    background-size: cover;
+    height: 450px;
+    padding: 20px;
+}
+
+.top-section-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.top-section-links {
+    position: absolute;
+    display: flex;
+    top: 48px;
+    right: 25px;
+}
+
+.top-social-icon {
+    width: 50px;
+    height: 50px;  
+    margin: 5px;
+    background: transparent;
+}
+
+.profile-picture {
+    position:absolute;
+    margin: 50px;
+    right: -60%;
+    top: 180px;
+    border-radius: 50%;
+    border: 3px solid var(---highlight);
+}
+
+
+.top-section-text {
+    color: var(---highlight);
+    position: absolute;
+    width: 300px;
+    top: 121px;
+    left: 24px;
+}
+
+.portfolio {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.other-skills {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+/* SUMMARY */
+
+.intro-line {
+    width: 30px;
+    border: 1px solid var(---accent);
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.intro-dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(---accent);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.summary{
+    background-color: #dfd3c38a;
+    color: #CA965C;
+    text-align: center;
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-size: 18px;
+}
+
+/* TECH */
+
+.tech {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    background-color: #c8aa89c6;
+    color: #fcfaf88a;
+}
+
+.tech-text {
+    margin-top: 20px;
+    text-align: center;
+    /* background-color: #ca975cd2;
+    color: #fcfaf88a; */
+    padding: 20px;
+    color: whitesmoke
+}
+
+/* PROJECTS */
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(223, 217, 217, 0.326);
+}
+
+.main-projects {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    align-content: center;
+    justify-content: center;
+}
+
+.project {
+    /* margin-top: 30px; */
+    justify-content: center;
+    margin: 0 20px 0 20px;
+}
+
+/* .section-heading-fp {
+    display: table;
+    text-align: center;
+    color: whitesmoke;
+    background-color: var(---primary);
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 4px 8px;
+} */
+
+.project-image-box {
+    position: relative;
+    margin-top: 32px;
+    display: flex;
+    width: 400px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0, 30px, 0. 30px;
+}
+
+.project-image {
+    width: 100%;
+    display: inherit;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    /* background: rgba(218, 213, 213, 0.3); */
+    transition: 0.5s ease;
+}
+
+.project-overlay-title {
+    color: var(---primary);
+    background-color: transparent;
+    font-size: 34px;
+    line-height: 40px;
+    position: absolute;
+    top: 30%;
+    margin: 20px;
+    transition: 0.5s ease;   
+    text-align: center; 
+}
+
+.pproject-image-box:hover .project-overlay, .project-image-box:hover .project-overlay-title { 
+    background-color: transparent;
+    color: transparent;
+}
+
+/* .main-project-title {
+    color: #d0a675c6;
+} */
+
+.project-description {
+    font-family: "Roboto", sans-serif;
+    max-width: 80%;
+}
+
+.other-projects-box {
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.other-projects {
+    margin-top: 42px;
+    text-decoration: none;
+}
+
+.subheading {
+    background-color: transparent;
+    color: var(---secondary);
+    margin-top: 40px;
+    font-size: 26px;
+    font-style: bold;
+    line-height: 32px;
+}
+
+.other-projects-title {
+    margin-top: 10px;
+    line-height: 127%;
+    font-family: "Roboto", sans-serif;
+    color: var(---secondary)
+}
+
+.other-projects-description {
+    font-family: "Roboto", sans-serif;
+    line-height: 171%;
+    color: rgb(206, 113, 240);
+}
+
+.tag {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 3px 5px;
+    margin: 3px;
+    color: whitesmoke;
+    background-color: var(---highlight);
+}
+
+.tags-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+/* MY THOUGHTS */
+
+.my-thoughts {
+    background-color: rgba(208, 203, 203, 0.572);
+}
+
+.thought-image {
+    width: 100%;
+    display: inherit;
+    margin-top: 40px;
+}
+
+.main-thought-date {
+    margin-top: 10px;
+}
+
+/* SKILLS */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(---main);
+    padding-bottom: 30px;
+    }
+
+    .skills-box{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+/* .skills {
+    font-weight: 700;
+    color: var(---secondary);
+    
+} */
+
+.skills-list {
+    font-weight: 400;
+    padding: 20px;
+}
