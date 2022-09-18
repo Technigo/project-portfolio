@@ -127,7 +127,6 @@ p {
 
 .grey-section {
     background-color:#f8f8f8;
-    display: block;
     text-align: center;
     padding: 20px;
     
@@ -141,7 +140,6 @@ p {
 }
 
 .white-section {
-    display: block;
     text-align: center;
     padding: 20px;
 }
@@ -151,17 +149,23 @@ p {
     line-height: 1.4;
     display: flex;
     flex-direction: column;
-   
+    justify-content: center;
+    align-items: center;
 }
 
-.project-items a {
-    text-align: left;
+.project-parent { 
+    
     margin: 10px 0 10px 0;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
+.project-item a {
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
 
 .chatbot-img {
     width: 250px;
@@ -188,6 +192,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    align-self: center;
 }
 
 /* Need some kind of hover-effect here.  
@@ -244,14 +249,13 @@ footer {
         /*Do something about covering text, overlap underlap. maybe change to static instead of absolut...*/ 
     }
 
-    .projects-items {
+    .projects-parent {
         display: flex;
         flex-direction: row;
     }
 
     .project-item {
-        display: flex;
-        justify-content: space-around;
+      
     }
 }
 
