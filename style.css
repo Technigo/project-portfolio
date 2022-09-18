@@ -56,6 +56,7 @@ h5 {
 
   h6 {
     color: #000000;
+    font-family: 'Roboto';
   }
 
   p {
@@ -71,7 +72,8 @@ a {
   text-decoration: none;
 }
 
-p{
+
+p {
   /*text-align: center;*/
 }
 .main-header {
@@ -81,6 +83,14 @@ p{
     display:block;
     background-color: grey;
     background-size: cover;
+}
+
+li {
+  font-size:17px;
+}
+
+.list-title {
+  font-size: 17px;
 }
 
 /*HEADER-CONTAINER*/
@@ -188,6 +198,7 @@ p{
   height: auto;
   width: 100vw;
   text-align: center;
+
 }
 
 .project-card{
@@ -257,7 +268,7 @@ p{
 
 .other-projects-container{
   height: auto;
-  width: 375px;
+  width: 100%vw;
   padding-top: 41px;
   padding-bottom: 33px;
   text-align: center;
@@ -281,17 +292,14 @@ p{
 
 .portfolio-container {
   padding-top: 41px;
+  width: 100vw;
 }
 
 .thought img {
-  width: 100%;
+  max-width: 87%;
   height: 100%;
-  margin-top: 34px;
-}
-
-.thought-container{
-  width:85%;
-  padding: 7%;
+  /*margin-top: 34px;*/
+  margin:6%;
 }
 
 .thoughts-text-content {
@@ -301,7 +309,7 @@ p{
 .thoughts-date, .thoughts-date-small {
   margin: 0;
   padding-top: 10px;
-  color: #573139;
+  color:#D25444;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
 }
@@ -341,7 +349,7 @@ p{
 }
 
 .link-arrows, .link-arrows-small {
-  color: #573139;
+  color: #D25444;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -381,9 +389,8 @@ li {
   display: block;
   margin: 0;
   padding-bottom: 6px;
-  color:#D25444;
+  color:#9a4034;
   font-family: 'Roboto', sans-serif;
-  font-size: 17px;
   font-weight: bold;
   text-align: center;
 }
@@ -392,7 +399,6 @@ li {
 
 .social-media-2 {
   display: flex;
-  max-width: 100%;
   padding-top:30px;
   margin-top:30px;
   background-color: grey;
@@ -421,7 +427,6 @@ li {
   padding: 14px 0;
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 11px;
   text-align: center;
 }
 
@@ -436,21 +441,22 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 266px;
+  width: 100vw;
   background: #E54220;
   text-align: center;
+  margin:0;
+  padding-top:20%;
+  padding-bottom:28%;
 }
 
 footer h4 {
-  font-size: 21px;
   background: none;
   margin: 0;
   color:white;
 }
 
 .author-name, .contact-details {
-  color:#EFDACA;
-  font-size: 17px;
+  color:white;
   margin-top: 0;
   margin-bottom: 5px;
   display: flex;
@@ -485,13 +491,30 @@ footer h4 {
   }
 
   h5 {
-    font-size: 37px;
+    font-size: 48px;
+  }
+
+  h6{
+    font-size: 25px;
   }
 
   p{
     font-size: 30px;
     line-height: 50px;
   }
+
+  a {
+    font-size:
+  }
+
+  li {
+   font-size: 25px;
+  }
+
+  .list-title{
+    font-size: 25px;
+  }
+
 
   .main-header {
     height: 681px;
@@ -538,6 +561,89 @@ footer h4 {
 
 .tech-listing{
   max-width: 57%;
+}
+
+.featured-projects-container{
+}
+
+/*JUSTERA PROJECT_CARD*/
+.project-card{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.project-description {
+  width:57%;
+  left:21%;
+}
+
+.project-container{
+  width:57%;
+  left:21%;
+}
+
+/*THOUGHTS*/
+.thoughts-date, .thoughts-date-small {
+font-size: 25px;
+}
+
+.thoughts-title {
+  font-size: 30px;
+}
+
+.thoughts-intro{
+  font-size: 25px;
+}
+
+.thoughts-title-small{
+  font-size: 25px;
+}
+
+.thought img {
+  height:auto;
+  max-height: 200px;
+  margin:0;
+}
+
+.thoughts-container-small{
+  padding:50px;
+}
+
+
+
+
+
+/*SOCIAL-MEDIA-2*/
+.social-media-2 {
+  padding-left:28%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.social-media-2 a {
+  width: 20%;
+}
+
+.icon-container-more{
+  width:50px;
+  height:50px;
+  padding: 30px;
+  border: 3px solid white;
+}
+
+.icon-container-more img {
+  width: 60px;
+  height: auto;
+}
+.link-name{
+  font-size: 25px;
+}
+
+footer{
+  padding-top:25%;
+  padding-bottom:25%;
 }
 
 }
