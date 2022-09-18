@@ -8,4 +8,4 @@ I started out by watching and reading material focusing on accessability and the
 
 If I had more time I would work more on the design and structure and minimize css code. Also added buttons for github-site and for the deployed site. To give the reader the two options.
 
-# View it live: https://sofia-andersson.netlify.app
+## View it live: https://sofia-andersson.netlify.app
