@@ -166,14 +166,31 @@ h4 {
 }
 .project-image-container {
   position: relative;
-  padding-top: 10%;
 }
 .project-image {
-  display: block;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
-  object-fit: contain;
+  display: block;
+  object-fit: cover;
   overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(44, 54, 56, 0.6);
+}
+.project-image-container h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0.8;
+  z-index: 1;
+  letter-spacing: 00.04em;
 }
 a {
   text-decoration: none;
@@ -203,6 +220,7 @@ h6 {
 }
 .tag-wrapper {
   display: flex;
+  padding-bottom: 5%;
 }
 .tag-wrapper p {
   font-family: "Roboto", sans-serif;
@@ -264,12 +282,10 @@ svg {
   font-family: "Roboto";
   color: grey;
   font-weight: bold;
-  display: flex;
-  align-items: center;
   height: 40px;
 }
 footer {
-  background-color: blue;
+  background-color: rgb(48, 48, 130);
   text-align: center;
   display: block;
   padding-bottom: 10%;
@@ -368,6 +384,12 @@ footer p {
     left: 17vw;
     top: 25vh;
   }
+  .nav-links:hover {
+    transform: scale(1.1);
+  }
+  .nav-svg:hover {
+    transform: translate(-50%, -50%);
+  }
   .profile-img {
     height: 250px;
     width: 250px;
@@ -397,5 +419,8 @@ footer p {
   svg {
     width: 90px;
     height: 90px;
+  }
+  svg:hover {
+    transform: scale(1.1);
   }
 }
