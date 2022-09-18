@@ -85,6 +85,7 @@ h3 {
   border-radius: 50%;
   border: 2px solid whitesmoke;
   overflow: hidden;
+  object-fit: cover;
 }
 .intro-wrapper {
   background-color: #f4f4f4;
@@ -196,6 +197,9 @@ a {
   text-decoration: none;
   color: black;
 }
+a:visited {
+  color: black;
+}
 a > p {
   font-family: "Roboto";
   text-align: left;
@@ -221,6 +225,7 @@ h6 {
 .tag-wrapper {
   display: flex;
   padding-bottom: 5%;
+  padding-top: 3%;
 }
 .tag-wrapper p {
   font-family: "Roboto", sans-serif;
@@ -249,6 +254,27 @@ h6 {
   margin: 0;
   text-align: left;
   padding: 2rem 0;
+}
+.skills-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.skills-card {
+  width: 45%;
+}
+.skills-card-heading {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #990000;
+}
+ul {
+  list-style: none;
+}
+ul > li {
+  font-family: "Roboto";
 }
 .skills-outer-wrapper p {
   text-align: center;
@@ -368,6 +394,9 @@ footer p {
   .featured-project-card {
     width: 45%;
   }
+  .skills-card {
+    width: 30%;
+  }
   .bottom-icons {
     margin-left: 8rem;
     margin-right: 8rem;
@@ -398,6 +427,9 @@ footer p {
   }
   .inner-wrapper {
     width: 900px;
+  }
+  a:hover {
+    text-decoration: underline;
   }
   .project-image-container h5 {
     font-weight: 400;
