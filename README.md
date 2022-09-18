@@ -1,4 +1,4 @@
-Project Portfolio
+
 
 The assignment was to start building our portfolio. Focus was on HTML, CSS and the accessibility.
 
