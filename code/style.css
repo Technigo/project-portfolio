@@ -4,6 +4,12 @@ body {
   font-family: "Montserrat";
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 30px;
+}
+
 h2.section-heading {
   background-color: #fa382f;
   text-transform: uppercase;
@@ -20,6 +26,12 @@ h3 {
   font-size: 17px;
 }
 
+h4 {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
 .block-section {
   padding: 50px 0;
 }
@@ -59,7 +71,7 @@ h3 {
   width: 45px;
 }
 /* */
-.text-wrapper {
+.head-wrapper {
   font-family: "Roboto";
   font-style: normal;
   letter-spacing: 0.2em;
@@ -70,12 +82,14 @@ h3 {
   left: 0;
   top: 15vw;
   max-width: 70%;
+  font-family: "Roboto";
+  font-style: normal;
+  letter-spacing: 0.2em;
+  color: #ffffff;
 }
 
 .text-heading h3 {
   color: #000000;
-}
-h1 {
 }
 
 .social-links-header {
@@ -88,7 +102,8 @@ h1 {
 }
 
 .profile-img {
-  width: 150px;
+  width: 30%;
+  max-width: 200px;
   position: absolute; /* lets us choose position of the img */
   right: -2vh;
   top: 22vh;
@@ -287,18 +302,17 @@ footer .inner-wrapper {
   text-align: center;
 }
 
-/* TABLET only  */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .profile-img {
-    width: 160px;
-    position: absolute;
-    right: 0vh;
-    top: 10vh;
-  }
-}
 /* TABLET & DESKTOP  */
 @media (min-width: 768px) {
-  /* styling for the tag wrappers*/
+  h4 {
+    font-size: 25px;
+  }
+  .text-heading {
+    position: absolute;
+    left: 0;
+    top: 5vw;
+    max-width: 70%;
+  }
   .logo img {
     height: 50px;
     width: 50px;
@@ -308,6 +322,7 @@ footer .inner-wrapper {
     width: 70px;
     height: 70px;
   }
+
   .project-section .image-heading-wrapper .project-image-weather:hover {
     opacity: 1;
   }
@@ -334,24 +349,28 @@ footer .inner-wrapper {
   }
 }
 
-@media (min-width: 1028px) {
-  .text-heading {
-    position: absolute;
-    left: 0;
-    top: 5vw;
-    max-width: 70%;
+/* TABLET only  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .profile-img {
+    width: 160px;
   }
-
-  .logo img {
-    height: 60px;
-    width: 60px;
+}
+/* DESKTOP ONLY */
+@media (min-width: 1028px) {
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
   }
   .profile-img {
     width: 180px;
     position: absolute; /* lets us choose position of the img */
     right: -2vh;
     top: 22vh;
-    border: 2px solid white;
-    border-radius: 50%;
+  }
+
+  .logo img {
+    height: 60px;
+    width: 60px;
   }
 }
