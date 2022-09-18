@@ -12,13 +12,13 @@
 
 :root {
   --mainColor: #2F72FF;
-  --secondryColor: #F9F3EE;
+  --secondryColor: #beb5ae;
   --projectNamebackground: #F0CA14;
   --boxColor: #F51939;
   --fontFamily: 'Roboto Serif', serif;
   --borderColor: #e7d0d0;
   --fontFamily: 'Roboto', sans-serif;
-  --lightText: #fff;
+  --lightText: rgb(249, 242, 242);
   --darkText: #2e2b2b;
   --grayText: rgb(55, 52, 52);
 
@@ -61,7 +61,7 @@ li {
   height: 250px;
   width: 250px;
   position: absolute;
-  bottom: -20%;
+  bottom: -15%;
   right: 3%;
   border-radius: 50%;
   box-shadow: 0px 0px 10px 10px rgb(97, 104, 97);
@@ -167,8 +167,14 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  transition: all 0.5s ease-out;
 }
 
+.tiltelForNewPart:hover,
+.tiltelForNewPart:focus{
+  background-color: #e7d0d0;
+   
+}
 .techSection {
   width: 99vw;
   line-height: 3rem;
@@ -244,9 +250,14 @@ a {
 
 .tools i {
   font-size: 40px;
+  transition: width 2s, height 2s, transform 2s;
 }
 
-.tools i:hover {}
+.tools i:hover {
+  transform: rotate(180deg);
+  font-size: 60px;
+
+}
 
 #project1,
 #project2,
@@ -335,12 +346,16 @@ color: var(--grayText)
     width: 500px;
 }
 .apiImg{
-  height: 300px;
+  height: 250px;
 }
 
 .readMore{
   color: var(--grayText);
   font-weight: bold;
+}
+.readMore:hover{
+  font-weight: bolder;
+transition: all 0.3s ease;
 }
 
 /* Skills part */
@@ -401,12 +416,12 @@ color: var(--grayText)
   align-items: center;
   height: 90px;
   width: 90px;
-  border: 3px solid #fff;
+  border: 5px solid #fff;
   border-radius: 50%;
 }
 
 .iconBottom:hover {
-  background-color: var(--secondryColor);
+  background-color: #fff;
   color: var(--boxColor);
   border: 4px solid;
   transition:  .4s;
@@ -467,7 +482,7 @@ footer {
 .collapsible label {
   position: relative;
   font-weight: 600;
-  background-color: #fff;
+  background-color: rgb(230, 220, 220);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.8);
   color: var(--boxColor);
   display: block;
@@ -534,24 +549,24 @@ footer {
 
 body{
   margin: 5px 0 5px 0;
-    width: 100%;
+  width: 100%;
 }
 
 .mainHeader{
-  min-height: 35vh;
+  min-height: 25vh;
 }
 
-.mainHeader img {
-  height: 130px;
-  width: 130px;
-  bottom: -15%;
-  right: 3%;
-}
+.mainHeader img{
+  width: 100%;
+  height: auto;
+  bottom: -45%;
+ }
 
 .title{
   margin-top:1.5rem;
   margin-left: -1.5rem;
 }
+
 .title h1 {
   font-size: 22px;
 }
@@ -571,7 +586,10 @@ body{
   height: 40px;
   font-size: 22px;
   margin-top: 7rem;
+
 }
+
+
 
 #flex {
   display: flex;
@@ -654,6 +672,8 @@ min-width:100px;
     height: 30px;
     font-size: 18px;
 }
+
+
 .techSection-P{
   font-size: 16px;
 }
