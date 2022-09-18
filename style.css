@@ -1,8 +1,8 @@
 :root {
-    --primary: #F7F7F2;
-    --secondary: #EDE6DB;
     --heading: #212729 /*#1A3C40 */;
     --ligtherGreen: #417D7A;
+    --primary: #F7F7F2;
+    --secondary: #EDE6DB;
   }
 
 * {
@@ -12,79 +12,79 @@
 }
 
 body {
-    font-family: 'Montserrat', serif;  
     background-color:var(--primary);
+    font-family: 'Montserrat', serif;  
 }
 
 
 /* HEADINGS */
 h1 {
-    font-weight: 700;
     font-size: 40px;
+    font-weight: 700;
     letter-spacing: .2rem;
 }
 h2, h3 {
     background: var(--heading);
-    width: fit-content;
+    color: #FCF8EC;
     justify-self: center;
-    text-align: center;
-    text-transform: uppercase;
     margin: 8px auto 40px;
     padding: 5px;
-    color: #FCF8EC;
+    text-align: center;
+    text-transform: uppercase;
+    width: fit-content;
 }
 .hero h2 {
-    text-transform: lowercase;
     background: none;
     margin-top: 0;
     text-align: left;
+    text-transform: lowercase;
 }
 .hero h3 {
-    color: #FCF8EC;
     background-color: transparent;
+    color: #FCF8EC;
     margin: 0;
     padding: 0;
 }
-.project h3 {
-    font-size: 17px;
-    text-transform: uppercase;
-    margin: 20px 0 15px;
+.project h3, h4 {
+    background-color: transparent;
     color: var(--heading);
     display: inline;
-    background-color: transparent;
+    font-size: 17px;
+    margin: 20px 0 15px;
     padding-left: 0;
+    text-transform: uppercase;
 }
 .sub-heading {
-    text-transform: uppercase;
     background: none;
-    margin: 30px auto 20px;
     color: var(--heading);
+    margin: 30px auto 20px;
+    text-transform: uppercase;
 }
 .code-thoughts h3 {
     font-size: 17px;
-    text-transform: uppercase;
     font-weight: 700;
     padding-left: 0;
+    text-transform: uppercase;
 }
 .skills h3 {
-    font-size: 17px;
-    color: var(--heading);
     background-color: transparent;
+    color: var(--heading);
+    font-size: 17px;
     margin: 0 auto;
 }
 
 /* Other text formating */
 p {
     display: inline-block;
-    max-width: 600px; 
-    line-height: 29px;
-    font-size: 17px;
     font-family: 'Roboto Condensed', sans-serif;    
+    font-size: 17px;
+    line-height: 29px;
+    max-width: 600px; 
 }
 a {
-    text-decoration: none;
-    cursor: pointer;
     color: inherit;
+    cursor: pointer;
+    text-decoration: none;
 }
 .underline {
     text-decoration: underline;
@@ -96,71 +96,71 @@ a {
 /* HEADER */
 .hero {
     background-image: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hero-img.webp);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    width: 100%;
     height: 60vh;
     position: relative;
+    width: 100%;
 }
 .hero-container {
     position: relative;
     width: 90%;
 }
 .hero-text {
-    position: absolute;
-    top: 7rem;
-    left: 1rem;
     color: #FCF8EC;
+    position: absolute;
+    left: 1rem;
+    top: 7rem;
 }
 .logo-container {
-    position: absolute;
-    top: 2rem;
-    right: 1rem;
     height: 5rem;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
 }
 .logo {
+    height: 3rem;
     margin: 0 .1rem;
     width: 3rem;
-    height: 3rem;
 }
 
 .portrait-img {
-    border-radius: 50%;
     border: solid white 2px;
-    width: 7rem;
-    position: absolute;
-    top: 49vh;
-    right: -1rem;
+    border-radius: 50%;
     object-fit: cover;
+    position: absolute;
+    right: -1rem;
+    top: 49vh;
+    width: 7rem;
 }
 /* MAIN CONTENT */
 main {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
 }
 section, footer {
     padding: 2rem 1.5rem;
 }
 .intro {
-height: 40vh;
-align-items: center;
-justify-content: center;
-display: flex;
+    align-items: center;
+    display: flex;
+    height: 40vh;
+    justify-content: center;
 }
 .line {
     border: 1px solid var(--ligtherGreen);
-    width: 40px;
     display: inline-block;
     margin-bottom: 4px;
+    width: 40px;
 }
 .dot {
-    height: 10px;
-    width: 10px;
     background-color: var(--ligtherGreen);
     border-radius: 50%;
     display: inline-block;
+    height: 10px;
+    width: 10px;
 }
 .bg-darker {
     background-color: var(--secondary);
@@ -169,44 +169,44 @@ display: flex;
     text-align: center;
 }
 .show-off {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .project {
-    margin: 1rem 0; 
+    margin: 2rem 0; 
 }
 .project-image {
     /* This transition will cause the text to fade */
-    transition: 0.5s ease;
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
     color: var(--heading);
-    margin-bottom: 2rem;  
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;  
+    position: relative;
+    transition: 0.5s ease;
+    width: 100%;
 }
 .image-of-project {
-    width: 100%; 
     height: 60%;
-    object-fit: cover;
     max-width: 500px;
     max-height: 300px;
+    object-fit: cover;
+    width: 100%; 
 }
 .project-image-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* This is a semi-transparent overlay on the image */
     background-color: rgba(237, 230, 219, 0.5);
     /* This will cause the overlay to fade */
+    height: 100%;
+    /* This is a semi-transparent overlay on the image */
+    position: absolute;
     transition: 0.5s ease;
+    width: 100%;
 }
 .overlay-text {
-    position: absolute; 
     font-size: 2rem;
     font-weight: 400;
+    position: absolute; 
 }
 .other-wrapper {
     display: flex;
@@ -215,33 +215,37 @@ display: flex;
 .other-project {
     align-self: flex-start;  
 }
+.other-project-img {
+    display: none;
+}
 .tag-wrapper {
     display: flex;
-    margin: -4px;
+    flex-wrap: wrap;
+    margin-left: -3px;
 }
 .tag-wrapper p {
-    font-family: "Roboto", sans-serif;
-    color: #FFFFFF;
-    font-weight: bold;
     background-color: var(--ligtherGreen);
-    text-decoration: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
     font-size: 12px; 
+    font-weight: bold;
     line-height: 12px;
     padding: 4px;
     margin: 3px;
-    border-radius: 5px;
+    text-decoration: none;
 }
 .more-arrows {
-    font-weight: 700;
     color: var(--heading);
+    font-weight: 700;
 }
 .thought-description {
     font-weight: 300;
 }
 .other-thoughts {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     text-align: left;
     width: 100%;
 }
@@ -251,9 +255,9 @@ display: flex;
     grid-template-columns: 1fr 1fr;  
 }
 .list-section {
+    display: block;
     justify-self: center;
     text-align: center;
-    display: block;
 }
 ul {
     list-style-type: none;
@@ -263,48 +267,48 @@ li {
    padding: 4px; 
 }
 .list-section3 {
-    grid-column-start: 2;
+    grid-column: 2;
 }
 .list-section4 {
-    grid-column-start: 2;
+    grid-column: 2;
 }
 .FMlogo-container {
    display: flex;
    justify-content: center;
 }
 .dark-logo {
-    margin: 0 .5rem;
-    width: 48px;
     height: 48px;
     /* using this calculator I was able to change colors to match what i want https://codepen.io/sosuke/pen/Pjoqqp */
-/*     filter: invert(17%) sepia(44%) saturate(591%) hue-rotate(138deg) brightness(21%) contrast(89%); */
+    /*     filter: invert(17%) sepia(44%) saturate(591%) hue-rotate(138deg) brightness(21%) contrast(89%); */
     filter: invert(13%) sepia(18%) saturate(351%) hue-rotate(149deg) brightness(20%) contrast(95%);
+    margin: 0 .5rem;
+    width: 48px;
 }
 /* FOOTER */
 footer {
     background-color: var(--ligtherGreen);
-    text-align: center;
     padding-bottom: 40px;
+    text-align: center;
 }
 .footer-heading {
     background: none;
 }
 footer p{
-    font-family: 'Montserrat', serif;
     color: #FFF;
     display: block;
+    font-family: 'Montserrat', serif;
     margin: 0 auto;
  }
 /* To provide additional information to screen readers without disturbing the visual layout */
 .sr-only {
-    position: absolute;
-    width: 1px;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    position: absolute;
+    width: 1px;
 }
 
 @media (min-width: 600px) {
@@ -319,68 +323,80 @@ footer p{
     }
     .hero-container {
         position: relative;
-        width: 90%;
         max-width: 1000px;
+        width: 90%;
     }
     .hero-text {
         top: 10rem; 
     }
     .portrait-img {
-        width: 20vh;
         right: 1rem;
         top: 43vh;
+        width: 20vh;
     }
     .intro {
-        height: 40vh;
         align-items: center;
-        justify-content: center;
         display: flex;
+        height: 40vh;
+        justify-content: center;
     }
     .grid-wrapper {
         display: grid ;
-        grid-template-columns: 1fr 1fr;
         grid-gap: 2rem;
+        grid-template-columns: 1fr 1fr;
         width: 90vw;
     }
     .projects-wrapper {
         grid-template-rows: repeat(2, 1fr);
     }
     .project1 {
-        grid-column-start: 1;
+        grid-column: 1;
     }
     .other-wrapper {
-        width: 60vw;
         justify-content: left;
+        width: 60vw;
+    }
+    .other-project-img {
+        aspect-ratio: 5 / 3;
+        display: inherit; 
+        float: left;
+        margin-right: 2rem;
+        object-fit: cover;
+        width: 12rem;
+    }
+    .code-thoughts h3 {
+        font-size: 17px;
+        font-weight: 700;
+        padding-left: 0;
+        text-transform: uppercase;
     }
     .other-thoughts {
-        width: 60vw;
         justify-content: left; 
+        width: 60vw;
     }
     .skill-wrapper {
         display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
-        grid-auto-flow: column dense;
+        grid-template-columns: repeat(3, 1fr);
     }
     .list-section {
         justify-self: center;
     }
     .list-section1 {
-        grid-column-start: 1;
+        grid-column: 1;
     }
     .list-section2 {
-        grid-column-start: 1;
+        grid-column: 1;
     }
     .list-section3 {
-        grid-column-start: 2;
+        grid-column: 2;
     }
     .list-section4 {
-        grid-column-start: 3;
+        grid-column: 3;
     }
     .dark-logo {
-        width: 4rem;
         height: 4rem;
+        width: 4rem;
     }
 }
 
@@ -388,12 +404,18 @@ footer p{
     .grid-wrapper {
       width: 60vw;
   }
+    .project {
+    transition: transform .5s;
+    transition-timing-function: linear;
+}
+  .project:hover {
+      transform: scale(1.1);
+  }
       .project-image:hover {
       /* This causes the text to fade, color is the text color */
       color: transparent;
   }
   .project-image-overlay:hover {
-      /* This causes the original background color (.5 opacity) to become transparent */
       background-color: transparent;
   }
   .logo:hover{
