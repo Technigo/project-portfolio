@@ -33,7 +33,7 @@ body, html {
     width: 50px;
 }
 
-/* Header text*/
+/* Hero text*/
 .hero-text {
     width: 220px;
     height: 202px;
@@ -84,11 +84,11 @@ body, html {
     font-size: 22px;
     line-height: 27px;
     color: #FFFFFF;
-    justify-content: center;
     margin: 8px;
+    margin-bottom: 25px;
 }
 
-/* ------- Intro & tech------------------- */
+/* ------- Intro ------------------- */
 .intro {
     display: flex;
     flex-direction: column;
@@ -96,33 +96,6 @@ body, html {
     text-align: left;
     align-items: center;
     justify-content: center;  
-}
-
-.tech {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    background-color:#FFF6EA;
-}
-
-/* intro text & tech text*/
-p {
-    width: 80%;
-    font-family: "Montserrat", sans-serif;
-    font-style: 400;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 29px;
-    margin: 0;
-    word-wrap: break-word;
-    text-align: center;
-}
-
-.text-container p {
-    display: flex;
-    margin-left: 10%;
 }
 
 .line {
@@ -140,6 +113,39 @@ p {
     display: inline-block;
   }
 
+/* Intro & tech text */
+p {
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-style: 400;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    margin: 0;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/* ------- Tech------------------------------------- */
+.tech {
+    width: 100%;
+    height: 300px;
+    padding-top: 35px;
+    text-align: center;
+    background-color:#FFF6EA;
+}
+
+/* flex-box parent */
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 
 /* ----featured projects & other projects------------ */
 .featured-projects {
@@ -147,7 +153,7 @@ p {
     margin: 0%;
     display: flex;
     flex-direction: column;
-    height: 1300px;
+    height: 1180px;
     text-align: center;
     align-items: center;
     margin-top: 30px;
@@ -156,12 +162,13 @@ p {
 .other-projects {
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 700px;
     text-align: center;
     align-items: center;
 
 }
 
+/* flex-box parent */
 .featuredprojects-container,
 .otherprojects-container {
     display: flex;
@@ -173,10 +180,9 @@ p {
 }
 
 .project img {
-    width: 500px;
-    border: 7px solid #99A799;
+    width: 360px;
+    border: 7px solid #ffffff;
     border-radius: 5px;
-    margin: 10px;
 }
 
 a:link {
@@ -196,6 +202,19 @@ h3 {
     justify-content: center;
 }
 
+.otherprojects-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    color: #677867;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
 .project-explanation {
     display: flex;
     width: auto;
@@ -207,7 +226,7 @@ h3 {
     text-align: center;
 }
 
-
+/* flex-box parent */
 .program-container {
     display: flex;
     align-items: center;
@@ -223,20 +242,8 @@ h3 {
     margin: 10px;
 }
 
-/* Other projects & more thoughts */
-.second-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 25px;
-    color: #677867;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
 
-/* ----My thoughts & more thoughts------------ */
+/* ------ My thoughts ------------------- */
 .my-thoughts {
     display: flex;
     width: 100%;
@@ -248,15 +255,51 @@ h3 {
     background-color:#FFF6EA;
 }
 
+/* green box */
 .mythoughts-container {
-    background-color: #D3E4CD;
     display: flex;
+    width: 100%;
     flex-direction: column;
     width: 330px;
     height: 200px;
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
+    background-color: #D3E4CD;
+}
+
+/* ---- More thoughts ------------ */
+.more-thoughts {
+    background-color:#FFF6EA;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+}
+
+/* flex-box parent */
+.morethoughts-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.morethoughts-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    color: #677867;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
 }
 
 .article-text {
@@ -268,25 +311,7 @@ h3 {
     font-size: 17px;
     line-height: 25px;
     text-align: center;
-}
-
-.more-thoughts {
-    background-color:#FFF6EA;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    height: 380px;
-    text-align: center;
-    align-items: center;
-}
-
-.more-articles {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin-top: 30px;
-    text-align: center;
-    align-items: center;
+    
 }
 
 
@@ -299,11 +324,11 @@ h3 {
     background-color: #F7E9D7;
 }
 
+/* flex-box parent */
 .skills-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-evenly;
     text-align: center;
     height: 200px;
     width: 80%;
@@ -326,12 +351,12 @@ h3 {
     color: #000000;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     font-weight: 300;
     list-style-type: none;
     text-align: left;
-    padding: 100px;
+    padding: 50px;
 }
 
 
@@ -344,7 +369,8 @@ h3 {
     background-color:#FFF6EA;
 }
 
-.big-links {
+/* flex-box parent */
+.formore-container {
     display: flex;
     width: 100%;
     align-items: center;
@@ -368,13 +394,14 @@ h3 {
 }
 
 
-/* ------Contact information------------------------- */
+/* ------ Contact information ------------------------- */
 .contact {
     width: 100%;
     background-color:#424d42;
     height: 300px;
 }
 
+/* flex-box parent */
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -406,14 +433,16 @@ h3 {
 
 /* Ipad */
 @media (min-width: 667px) and (max-width: 1024px) {
-
-
+    a:link {
+        color: #677867;
+        text-decoration: none;
+      }
     }
 
 /* Big Screen */
 @media (min-width: 1025px) {
 
-    /* -------------- Header -------------- */
+/* ----- Header ---------*/
 /* Header img & icons */
 .header-image {
     height: 500px;
@@ -431,5 +460,201 @@ h3 {
 .icons img {
     width: 70px;
 }
+/* Header text*/
+.hero-text {
+    width: 1000px;
+    height: 600px;
+}
+
+.name {
+    font-size: 28px;
+    line-height: 30px;
+    width: 600px;
+    margin-left: -9%;
+}
+
+.frontend {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+}
+
+.designer {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+/* General for all titels: Tech, Featured projects, My thoughts  */
+.title {
+    padding: 8px;
+    margin-top: 25px;
+    font-size: 28px;
+}
+
+/* Intro & tech text */
+p {
+    font-size: 20px;
+}
+
+/* ------- Tech--------- */
+.tech {
+    height: 200px;
+}
+
+/* ---featured projects --- */
+.featured-projects {
+    height: 1000px;
+}
+
+
+/* flex-box parent  project with img*/
+.featuredprojects-container {
+    width: 60%;
+    height: 800px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/* flex-box child project with img**/
+.project {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 460px;
+    align-items: center;
+    text-align: center;
+}
+
+.project img {
+    height: 400px;
+    width: 560px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.project-explanation {
+    display: flex;
+    width: auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/* ---Other projects --- */
+.otherprojects-title {
+    font-size: 28px;
+    margin-top: -25px;
+}
+
+.other-projects {
+    height: 500px;
+    text-align: center;
+    align-items: center;
+}
+
+/* flex-box parent  Other projects*/
+.otherprojects-container {
+    width: 40%;
+    height: 800px;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* flex-box child  Other projects*/
+.other {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/* flex-box parent */
+.program-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.programs {
+    display: flex;
+    width: auto;
+    background-color: #D3E4CD;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px;
+}
+
+
+/* - My thoughts ---*/
+
+
+
+/* Green box */
+.mythoughts-container {
+    width: 500px;
+    height: 300px;
+}
+
+/* -- More thoughts --- */
+.more-thoughts {
+    height: 600px;
+    text-align: center;
+    align-items: center;
+}
+
+/* flex-box parent */
+.morethoughts-container {
+    width: 40%;
+    margin-left: 5px;
+}
+
+.thoughts {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/* ----------Skills------------------------- */
+
+
+/* flex-box parent */
+.skills-container {
+    justify-content: space-evenly;
+}
+
+.skills-title {
+    width: 200px;
+}
+
+.list {
+    font-size: 20px;
+}
+
+.toolbox {
+    width: 150px;
+}
+
+/* ----------For more------------------------- */
+
+
+/* ------ Contact information ------------------------- */
+
 
 }
