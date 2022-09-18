@@ -14,7 +14,7 @@ The project aimed to build a portfolio page to present ourselves, our work and s
 
 ✓ The page should work well for people that use screen readers and keyboard navigation.
 
-✓ The HTML code should validate in a validation tool.✓ You should fetch data from the API using fetch() in JavaScript
+✓ The HTML code should validate in a validation tool.
 
 
 ## The problem
