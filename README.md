@@ -13,6 +13,10 @@ Left to do:
     Add my Name to header
     fix indentation
     add comments
+    varify code in tool
+    fix size of project precourse
+    
 
 
 #View it live
+https://mia-dahlgren-portfolio.netlify.app/
