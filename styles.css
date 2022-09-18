@@ -16,36 +16,56 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 50px;
+    height: 60px;
     width: auto;
     position: absolute;
     right: 10%;
     top: 48px;
+    background-color: #0000002c;
+    border-radius: 25px;
 }
 .header-links img{
     width: 50px;
     margin: 5px;
 }
-.header-text h3 {
+.header-text{
     position: absolute;
-    width: 55%;
-    height: auto;
+
     left: 10%;
     top: 170px;
+    background-color: #00000040;
+    border-radius: 20px;
+
+}
+.header-text h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+.header-text p{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 130%;
     letter-spacing: 0.04em;
-    background-color: #0000005d;
     color: #FFFFFF;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
 }
 #profilepic {
     position: absolute;
     width: 180px;
     height: 180px;
-    left: 50%;
+    right: 15%;
     top: 356px;
     border: solid 3px white; 
     border-radius: 50%;
@@ -228,12 +248,16 @@ header{
 .thought-cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 .thought-card1{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 327px;
+    width: 100%;
     height: 450px;
     font-family: 'Roboto';
     font-style: normal;
@@ -246,8 +270,9 @@ header{
 .thought-card2{
     display: none;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 327px;
+    width: 100%;
     height: 450px;
     font-family: 'Roboto';
     font-style: normal;
@@ -257,13 +282,13 @@ header{
     color: #FA382F;
     margin: 10px;
 }
-
 .thought-card h4{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 30px;
+    width: 100%;
 }
 .thoughts h2{
     width: 200px;
@@ -276,7 +301,7 @@ header{
     text-align: center;
     color: #FA382F;
 }
-.thoughts h4 {
+.more-thoughts {
     width: 80%;
     height: 64px;
     font-family: 'Roboto';
@@ -391,23 +416,29 @@ header{
 }
 .footer {
     display: Flex;
-    width: auto;
-    height: 302px;
+    width: 100%;
+    height: autos;
     background: #072BCE;
 }
 .contact {
     display:flex;
+    flex-direction: column;
     justify-content: center;
     background: #072BCE;
-    width: auto;
-    height: 158px;
+    width: 100%;
+    height: auto;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
     text-align: center;
     color: #FFFFFF;
+    padding-bottom: 10px;
+}
+.contact p{
+    margin: 5px;
+    font-size: 16px;
 }
 @media screen and (min-width: 667px) {
 .featuredProjects {
