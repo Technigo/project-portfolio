@@ -148,22 +148,21 @@ header {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 21px;
     color:white;
     line-height: 27px;
     background-color: #7c5f74;
     display: inline-block;
     padding: 4px;
-    margin: 40px;
+    margin: 20px 0px 30px 0px;
     align-self: center;
-    justify-self: center;
 }
 
 .small-h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 21px;
     line-height: 25px;
     text-align: center;
     color: #aa658f;
@@ -191,6 +190,7 @@ header {
 /*Tech section */
 .tech-section {
     height: 270px;
+    margin-bottom: 10px;
 } 
 
 .tech-section p {
@@ -200,7 +200,7 @@ header {
     font-weight: 400;
     font-size: 17px;
     line-height: 29px;
-    max-width: 400px;
+    max-width: 90%;
 }
 
 /*Featured projects*/
@@ -233,15 +233,44 @@ header {
 
 .featured-projects img {
     width: 350px;
+    height: auto;
 }
 
 .project p {
     max-width: 500px;
     text-align: left;
-}
+} 
 
 .featured-projects p {
     margin-bottom: 10px;
+}
+
+.project-img-container {
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.project-img-overlay {
+    position: absolute;
+    background-color: rgba(160, 160, 160, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    text-align: center;
+}
+
+.project-img-overlay p {
+    padding: 25%;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+}
+
+.project-img-container:not(:hover) .project-img-overlay {
+    opacity: 1;
 }
 
 .other-projects p {
@@ -319,7 +348,7 @@ header {
 .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    margin-bottom: 20px;
 }
 
 /*For more icons*/
@@ -371,7 +400,6 @@ footer a {
 }
 
 
-
 /**** MEDIA QUERIES ***/
 
 /* Hides featured project three and four image cards in mobile view */
@@ -383,6 +411,11 @@ footer a {
 
 /* TABLET */ /* DESKTOP */
 @media (min-width: 800px) {
+
+    .other-projects {
+        display: none;
+    }
+
     .profile-pic {
         top: 295px; 
         right: 50px; 
@@ -416,6 +449,10 @@ footer a {
         top: 20%;
     }
 
+    .tech-section p {
+        max-width: 70%;
+    }
+
     .blog-headline {
         font-size: 21px;
         line-height: 30px;
@@ -433,6 +470,7 @@ footer a {
         font-size: 17px;
         line-height: 29px;
     }
+
     .for-more-social-media-container img {
         width: 70%;
         margin: 10px;
@@ -453,6 +491,9 @@ footer a {
     }
 
 }
+
+
+
 
 /* DESKTOP */
 @media (min-width: 1025px) {
@@ -490,8 +531,5 @@ footer a {
         line-height: 50px;
     }
       
-   .tech-section p {
-        max-width: 600px;
-   }
 
 }
