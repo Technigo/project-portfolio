@@ -30,7 +30,7 @@ rust A35638
 
 h1{
     font-family: "Aloevera";
-    margin: 300px 60px 0px -190px;
+    margin: 0px 60px 0px -190px;
     color: #F6AD7B;
     font-size: 60px;
     text-align: left;
@@ -44,7 +44,7 @@ h2 {
     margin-top: 10px;
     padding: 6px;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h3 {
@@ -54,7 +54,7 @@ h3 {
     margin-top: 10px;
     padding: 6px;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 ul{
@@ -81,9 +81,9 @@ li{
     margin-top: 10px;
     margin-right: 60px;
     justify-content: right;
-
-
 }
+
+
 
 .logo img {
     height: 30px;
@@ -158,6 +158,28 @@ p{
     background-position-y: -100px;
     background-position-x: -120px;
   }
+
+  .header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2px;
+
+}
+
+.header-text h2{
+margin: 0px 0px 0px -190px;
+top: 0px;
+}
+
+.header-text h3{
+margin: 0px 0px 0px -190px;
+
+}
+
+h3.name{
+margin: 300px 0px 0px -190px;
+}
 
 .section.intro{
 top: 550px;
@@ -285,10 +307,28 @@ font-size: 12px;
 /*SMALLER DEVICES*/
 @media (max-width: 448px){
     h1{
-        margin-top: 300px;
-        margin-left: -9%;/* 300px 60px 0px -10px; */
+        margin-top: 0x;
+        margin-left: -20px;/* 300px 60px 0px -10px; */
         font-size: 40px;
     }
+
+    .header-text h2{
+        font-size: 18px;
+        margin-left: -20px;
+    }
+    .header-text h3{
+        font-size: 18px;
+        margin-left: -20px;
+    }
+        h3.name{
+        margin: 200px 0px 0px -20px;
+        }
+
+        .profile-pic {
+            left:60%;
+            top: 75%;
+
+        }
 }
     /*TABLETS*/
 @media (min-width: 667px) and (max-width: 1024px){
@@ -313,23 +353,6 @@ font-size: 12px;
     height: 150px;
     }
 
-     .logo-labels{
-        display: grid;
-        grid-template: 80px / auto auto auto;
-        padding: 0px;
-        margin: 0px;
-        gap: 7px;
-
-      }
-      
-    .logo-labels p{
-        margin: 0px;
-        padding: 2px;
-        font-size: 8px;
-        background-color:rgba(152, 172, 139, 0.504);
-        height: 10px;
-    }
-
 
 }
 
@@ -350,13 +373,16 @@ font-size: 12px;
         }
 
     .section.header {
-        background: url("/images/nailpolish.jpg") no-repeat;
-        background-color: #F6AD7B;
-        height: 540px;
         background-size: 2500px;
         background-position-y: -600px;
-        background-position-x: -200px;
+        background-position-x: -350px;
       }
+
+    .section.header h3 {
+        font-size: 20px;
+      }
+
+
 
     .profile-pic{
         width: 200px;
@@ -396,13 +422,6 @@ font-size: 12px;
         top:2100px;
     }
 
-    h2{
-        font-size: 20px;
-    }
-
-    h3{
-        font-size: 18px;
-    }
 
     .section.more{
         top: 2500px;
@@ -414,6 +433,13 @@ font-size: 12px;
         padding-top: 30px;
     }
 
+    h3.name{
+    color:white;
+     }
+
+     .header-text h3{
+    color:white;
+ }
 
 }
 
