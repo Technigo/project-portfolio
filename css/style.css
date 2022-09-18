@@ -131,7 +131,7 @@ body {
     position: absolute;
     overflow: hidden;
     right: 120px;
-    bottom: -10px;
+    bottom: -20px;
     height: 150px;
     width: 150px;
     border: 2px solid #fff;
@@ -282,6 +282,7 @@ body {
   text-align: center;
 }
 
+
 /* MY THOUGHTS SECTION*/
 
 .my-thoughts {
@@ -387,13 +388,42 @@ body {
 
 /* MEDIA QUERIES*/
 
-@media (min-width: 768px) {
-    .project-container {
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-container {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
       }
+     
+      .card-container {
+        grid-column: span 4;
+    }
 
-      .my-articles {
-        width: 60%;
-    }    
+    .my-articles {
+      width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+  .profile-picture {
+    width: 250px;
+    height: 250px;
+  }  
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .card-container {
+    grid-column: span 6;
+}
+
+.bottom-links .fa{
+  padding: 8px 12px;
+}
+
+.fa {
+  padding: 8px 12px;
+}
 }
