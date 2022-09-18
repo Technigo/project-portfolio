@@ -27,6 +27,27 @@ h1{
     text-align: left;
 }
 
+h2 {
+    background-color: #F6AD7B;
+    width: fit-content;
+    text-align: center;
+    font-family: 'Raleway Dots', cursive;
+    margin-top: 10px;
+    padding: 6px;
+    color: white;
+    font-size: 18px;
+}
+
+h3 {
+    width: fit-content;
+    text-align: center;
+    font-family: 'Raleway Dots', cursive;
+    margin-top: 10px;
+    padding: 6px;
+    color: black;
+    font-size: 16px;
+}
+
 body{
     margin: 0px;
     font-family: "Montserrat";
@@ -50,20 +71,6 @@ body{
     width: 30px;
 }
 
-h2 {
-    background-color: #F6AD7B;
-    width: fit-content;
-    text-align: center;
-    font-family: 'Raleway Dots', cursive;
-    margin-top: 10px;
-    padding: 6px;
-    color: white;
-    font-size: 18px;
-
-   
-
-}
-
 .profile-pic {
     position: absolute;
     width: 120px;
@@ -74,7 +81,6 @@ h2 {
     background: url("./images/profile_pic2.jpg");
     background-position: -19px 560px;
     background-size: 232px;
-    opacity: 1;
 }
 
 .outer-wrapper{
@@ -85,7 +91,7 @@ h2 {
 
 .inner-wrapper{
     width: 100%;
-    height: 2900px;
+    height: 3000px;
     display: flex;
     flex-direction: column;
     background-color:rgb(235, 226, 218);
@@ -187,41 +193,51 @@ height: 300px;
 
 .section.skills{
 min-height: 200px;
-top:2200px;
+top:2300px;
 }
 
 
 .section.more{
 min-height: 200px;
-top: 2400px;
+top: 2500px;
 align-items:center;
 flex-direction: column;
 } 
 
 .section.more img{
 margin-top: 10px;
-height: 30px;
-width: 30px;
+height: 40px;
+width: 40px;
+border: tan solid 1.5px;
+border-radius: 50%;
+padding: 1px;
 
 } 
 
-.social-media-links{
+.big-social-media-links{
+display: flex; 
 flex-direction: row;
-align-items: center;
-justify-content: center;
 gap: 10px;
 margin: 10px;
  }
+
+ .logo-labels{
+    display: none;
+  }
+
 
 .section.footer{
     position: absolute;
     left:10px;
     height: 200px;
-    top: 2600px;
-    background-color:tan
-
+    top: 2700px;
+    background-color:tan;
+    font-size: 16px;
     }
 
+.section.footer p{
+font-size: 12px;
+}
 
 /*SMALLER DEVICES*/
 @media (max-width: 448px){
@@ -240,6 +256,10 @@ margin: 10px;
     .inner-wrapper{
     width: 100%;
     }
+    .social-media-links{
+    justify-content: flex-end;
+    margin-right: 40px;
+    }
 
     .section{
     width: 100%;
@@ -248,6 +268,23 @@ margin: 10px;
     .profile-pic{
     width: 150px;
     height: 150px;
+    }
+
+     .logo-labels{
+        display: grid;
+        grid-template: 80px / auto auto auto;
+        padding: 0px;
+        margin: 0px;
+        gap: 7px;
+
+      }
+      
+    .logo-labels p{
+        margin: 0px;
+        padding: 2px;
+        font-size: 8px;
+        background-color:rgba(152, 172, 139, 0.504);
+        height: 10px;
     }
 
 
@@ -262,6 +299,11 @@ margin: 10px;
     .inner-wrapper{
         width:100%
     }
+
+    .social-media-links{
+        justify-content: flex-end;
+        margin-right: 70px;
+        }
 
     .section.header {
         background: url("/images/nailpolish.jpg") no-repeat;
@@ -278,6 +320,48 @@ margin: 10px;
         left:60%;
         top: 80%;
         }
+
+     .logo-labels{
+            display: grid;
+            grid-template: 80px / auto auto auto;
+            padding: 0px;
+            margin: 0px;
+            gap: 7px;
+          }
+          
+     .logo-labels p{
+       margin: 0px;
+       padding: 2px;
+       font-size: 8px;
+       background-color:rgba(152, 172, 139, 0.504);
+       height: 10px;
+     }
+
+     .section.projects{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;;
+     }
+
+     .projectDiv{
+        border: #F2EEE5 solid;
+        font-size: 24px;
+    }
+    
+    .projectDiv img{
+        width: 610px;
+        height:auto;
+
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
 
 }
 
