@@ -9,6 +9,10 @@ light green C2E8CE
 greyish F2EEE5
 orangebrown F6AD7B
 brownpurple BE7575
+green avo 9DAB86
+beige D7C79E
+salmon E08F62
+rust A35638
 
 */
 
@@ -18,6 +22,11 @@ brownpurple BE7575
     src: url('./fonts/Aloevera-OVoWO.ttf') format('truetype');
  }
  
+
+ body{
+    margin: 0px;
+    font-family: "Montserrat";
+}
 
 h1{
     font-family: "Aloevera";
@@ -48,11 +57,21 @@ h3 {
     font-size: 16px;
 }
 
-body{
+ul{
+    color:#516a59;
+    text-decoration: underline;
+    font-size: 18px;
     margin: 0px;
-    font-family: "Montserrat";
+    margin-bottom: 3px;
+    padding: 0px;
 }
 
+li{
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
 
 .social-media-links{
     display: flex;
@@ -172,7 +191,6 @@ height: 300px;
 
 /*DIVS for projects*/
 .projectDiv{
-    border: #F2EEE5 solid;
     min-height: 150px;
     min-width: 250px;
     font-size: 16px;
@@ -193,16 +211,43 @@ height: 300px;
 
 .section.skills{
 min-height: 200px;
-top:2300px;
+top:2390px;
+text-align: left;
 }
 
+.skills-lists{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-lists div{
+justify-content: left;
+width: 170px;
+}
+
+.tools{
+    margin: 20px 0px 20px 20px;
+}
+.upcoming{
+    margin: 20px 0px 20px 20px;
+}
+.other{
+    margin: 20px 0px 20px 15px;
+}
+.code{
+    margin: 20px 0px 20px 15px;
+}
 
 .section.more{
 min-height: 200px;
-top: 2500px;
+top: 2830px;
 align-items:center;
 flex-direction: column;
 } 
+
+
 
 .section.more img{
 margin-top: 10px;
@@ -230,7 +275,7 @@ margin: 10px;
     position: absolute;
     left:10px;
     height: 200px;
-    top: 2700px;
+    top:3000px;
     background-color:tan;
     font-size: 16px;
     }
@@ -353,6 +398,10 @@ font-size: 12px;
         width: 610px;
         height:auto;
 
+    }
+
+    .section.skills{
+        top:2100px;
     }
 
     h2{
