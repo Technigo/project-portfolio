@@ -12,7 +12,8 @@
 
 :root {
   --mainColor: #2F72FF;
-  --secondryColor: #beb5ae;
+  --secondryColor: #ece9e6;
+  --hoverColor:rgb(249, 242, 242);
   --projectNamebackground: #F0CA14;
   --boxColor: #F51939;
   --fontFamily: 'Roboto Serif', serif;
@@ -315,15 +316,16 @@ li {
   grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   column-gap: 1rem;
   padding: 10px 25px 10px 25px;
+  /* background-color: var(--secondryColor); */
  
 }
 
 .thought{
-background-color:var(--secondryColor);
+background-color: var(--secondryColor);
 padding: 2rem;
 color: var(--grayText)
-
 }
+
  .thought h3{
   font-weight:500;
   font-size: 20px;;
@@ -352,10 +354,11 @@ color: var(--grayText)
 .readMore{
   color: var(--grayText);
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 .readMore:hover{
   font-weight: bolder;
-transition: all 0.3s ease;
+ transition: all 0.3s ease; 
 }
 
 /* Skills part */
