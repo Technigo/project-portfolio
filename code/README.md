@@ -8,4 +8,4 @@ I had a lot of problems this week, with photos, responsiveness and other things 
 
 The site is responsive, and works on different media platforms. The HTML has been run through a validation tool with good results. And also run through Wave for accessibility.
 
-I still have to fix some of the content, the project photos so they are the same size, the font that I want to be bold and some overall small adjustments. Including cleaning up the code.
+If I had more time, I would go over the design more and make small adjustments. Also adding OG:tags.
