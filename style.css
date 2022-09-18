@@ -79,6 +79,10 @@ p {
     bottom: -3%;
 }
 
+.intro {
+    margin-top: 20px;
+}
+
 .line {
     border: 1px solid #BA4581;
     width: 40px;
@@ -95,17 +99,13 @@ p {
     display: inline-block;
 }
 
-.intro {
-    padding: 10%;
-}
-
 /*h2*/
 .section-title {
     background-color: #BA4581;
     color: whitesmoke;
     display: inline-block;
     padding: 4px;
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
     font-weight: bold;
 }
 
@@ -149,16 +149,19 @@ p {
 .projects {
     font-family: "Roboto";
     line-height: 1.4;
- 
+    display: flex;
+    flex-direction: column;
+   
 }
 
-.project-items {
-    display: inline;
-    width: 90%;
-    height: auto;
+.project-items a {
     text-align: left;
-    padding-bottom: 25px;
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    
 }
+
 
 .chatbot-img {
     width: 250px;
@@ -170,6 +173,8 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    align-self: center;
+    
  /*it is not position in center...??*/
 }
 
@@ -205,10 +210,18 @@ p {
     padding: 25px;
 }
 
+iframe {
+    max-width: 90%;
+    height: auto;
+}
+
+.thoughts-text {
+    font-family: "Roboto";
+}
+
 footer {
     background-color: #5CA382;
     color: whitesmoke;
-    width: 100%;
     text-align: center;
     padding: 20px;
     line-height: 1.5;
@@ -220,7 +233,7 @@ footer {
 }
 
 
-/* tabet second  */
+/* tablet second  */
 @media screen and (min-width: 668px) {
     .inner-wrapper {
         max-width: 800px;
@@ -229,6 +242,16 @@ footer {
     .profile-pic {
         max-height: 200px;
         /*Do something about covering text, overlap underlap. maybe change to static instead of absolut...*/ 
+    }
+
+    .projects-items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .project-item {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
