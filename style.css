@@ -99,8 +99,10 @@ p{
     white-space: wrap;
     text-overflow: ellipsis;
     max-width: 450px;
-    margin: 25px 10px 25px 10px;
+    margin: 0px 10px 0px 0px;
     font-size: 16px;
+    padding: 10px;
+    padding-right: 20px;
 }
 
 .section{
@@ -119,6 +121,10 @@ p{
         color: black;
     }
 
+.section p a{
+    color:#f09254;
+}
+
 .section.header {
     background: url("/images/nailpolish.jpg") no-repeat;
     background-color: #F6AD7B;
@@ -133,15 +139,19 @@ top: 550px;
 height: 300px;
 }
 
+.section.intro img{
+   padding-right: 5px;
+}
+
 .section.tech{
- min-height:400px;
- top: 850px;
+ height: 170px;
+ top: 800px;
  }
 
 
  .section.wrapper{
     min-height: 200px;
-    top: 1050px;
+    top: 970px;
 
  }
 .section.projects {
@@ -164,24 +174,26 @@ height: 300px;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    margin: 20px;
 }
 
 .projectDiv img{
-    width: 420px;
+    width: 410px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 
 
 .section.skills{
 min-height: 200px;
-top:1970px;
+top:1990px;
 }
 
 
 .section.more{
 min-height: 200px;
 top: 2100px;
-
 
 } 
 
@@ -201,8 +213,16 @@ width: 50px;
     background-color:tan
 
     }
-    
 
+
+/*SMALLER DEVICES*/
+@media (max-width: 448px){
+    h1{
+        margin-top: 300px;
+        margin-left: -9%;/* 300px 60px 0px -10px; */
+        font-size: 40px;
+    }
+}
     /*TABLETS*/
 @media (min-width: 667px) and (max-width: 1024px){
     .outer-wrapper{
@@ -216,6 +236,7 @@ width: 50px;
     .section{
     width: 100%;
     }
+
 
     .profile-pic{
     width: 150px;
@@ -232,26 +253,24 @@ width: 50px;
     }
 
     .inner-wrapper{
-        width: 100%
+        width:100%
     }
 
+    .section.header {
+        background: url("/images/nailpolish.jpg") no-repeat;
+        background-color: #F6AD7B;
+        height: 540px;
+        background-size: 2500px;
+        background-position-y: -600px;
+        background-position-x: -200px;
+      }
 
-    .section.header{
-        width: 100%;
-    }
-    
     .profile-pic{
-        width: 170px;
-        height: 170px;
+        width: 200px;
+        height: 200px;
+        left:60%;
+        top: 80%;
         }
 
 }
 
-@media (max-width: 448px){
-    h1{
-        margin-top: 300px;
-        margin-left: -9%;/* 300px 60px 0px -10px; */
-        font-size: 40px;
-    }
-
-}
