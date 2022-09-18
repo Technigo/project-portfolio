@@ -1,75 +1,203 @@
- header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 50vh;
+ body {
+  margin: 0px;
 
  }
 
-/*.outer-wrapper {
-    background: magenta;
+
+.header-outer-wrapper {
+    background-image: url("./assets/bookshelves.jpg"); 
     width: 100%;
-    Height: 200px;
-    display: flex;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+  }
+
+.header-inner-wrapper {
+    font-family: 'Roboto', sans-serif; /* this is not the font showing, some kind of default is - why?*/
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative
+}
+
+h1 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  
+}
+
+h2 {
+  grid-column: 2 / 2;
+  grid-row: 3 / 5;
+}
+
+.profile-img {
+  /* Positioning */
+  position: absolute;
+  right: 15%;
+  bottom: -10%;
+
+  width: 150px;
+  height: 150px;
+
+  /*  Rounded corners*/
+  border-radius: 50%;
+
+  /* An outline on the circle*/
+  border: 2px solid whitesmoke;
+
+  /* Makes sure nothing sticks out of the circle*/
+  overflow: hidden;
+}
+
+.profile-img > img {
+  width: 100%;
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+
+.paragraph-outer-wrapper {
+  background-color: lightgray;
+}
+
+.paragraph-inner-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
     
 }
 
-.inner-wrapper {
-    background:  blue;
-    width: 75%;
-    Height: 400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-
-}*/
-
-h1 {
-    color: magenta;
-    font-size: 30px;
+.projects-inner-wrapper { /* flex-container*/
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   
 }
 
 
-.profile-img {
-    /* Positioning */
+.container {          /* flex-items*/
+  font-family: 'Montserrat', sans-serif;
+  margin: 8vh;
+  font-weight: 300;
+  color: black;
+  font-size: 14px;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+} 
+
+.line {
+  border: 1px solid #c62a88;
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #c62a88;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+  /*The icons styling*/
+  .social-media {
     position: absolute;
-    right: 230px;
-    bottom: 100px;
-  
-    width: 150px;
-    height: 150px;
-  
-    /*  Rounded corners */
-    border-radius: 50%;
-  
-    /* An outline on the circle */
-    border: 2px solid whitesmoke;
-  
-    /* Makes sure nothing sticks out of the circle */
-    overflow: hidden;
-  }
-  
-  .profile-img > img {
-    width: 100%;
-  }
-  /* The icons styling*/
-  .icons {
-    display: flex;
+    right: 15%;
+    top: 10%;
     color: #ffff;
-    filter: invert(100%);
- 
+    font-size: 10px;
+    filter: invert(100%) 
   }
+
+
+.white-sienna-h {
+  background-color:#EB7126;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: whitesmoke;
+
+}
+
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #9C4E1E;
+  
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #9C4E1E;
+  
+}
+
+
+.project img {
+  width: 25vw;
+  height: 25vh;
+  margin: 5vh;
+}
+
+.image-text{
+  font-size: 10px;
+}
+
 
   /* tags displaying code involved*/
   .tag-wrapper {
     display: flex;
+    /*align-items: flex-end;*/
   }
   
   .tag-wrapper p {
     font-family: "Roboto", sans-serif;
     color: #2b2e34;
     font-weight: bold;
-    background-color: #db9aab;
+    background-color:#5AE3E8;
     text-decoration: none;
   
     /* Matching line-height and font-size here gives full control 
@@ -77,12 +205,71 @@ h1 {
     font-size: 12px; 
     line-height: 12px;
   
-    /* Control the size of the tags */
+    /* Control the size of the tags*/
     padding: 4px;
   
-    /* Control the spacing of our tags */
+    /* Control the spacing of our tags*/
     margin: 3px;
   
-    /* Some rounded borders */
+    /* Some rounded borders*/
     border-radius: 5px;
   }
+
+  footer {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #EB7126;
+  }
+
+
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .header-outer-wrapper {
+   height: 40vh;
+ 
+  }
+ .container {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+  .project img {
+    width: 25vw;
+    height: 18vh;
+    margin: 5vh;
+}
+
+.image-text{
+  font-size: 20px;
+}
+
+
+}
+
+@media (min-width: 1025px) {
+  .container {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+
+.project img {
+  width: 25vw;
+  height: 30vh;
+  margin: 5vh;
+}
+
+.image-text{
+  font-size: 20px;
+}
+
+}
+
+/* fungerar i edge, chrome, firefox*/
