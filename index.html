@@ -13,208 +13,230 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     </style>
-    <link rel="icon" type="image/png" sizes="32x32" href="Pictures\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Pictures/favicon-32x32.png">
 </head>
 <body>
     <header class="header">
-        <div class="social-media-container">
-            <a href="https://www.linkedin.com/in/jessica-hansson91/" target="blank">
-                <img src="Pictures/linkedin-header-icon.png" alt="linkedin">
-            </a>
-            <a href="https://github.com/jesshansson" target="blank">
-                <img src="Pictures/github-header-icon.png" alt="github">
-            </a>
-            <a href="https://stackoverflow.com/users/19466381/jessica" target="blank">
-                <img src="Pictures/stack-header-icon.png" alt="Stack overflow">
-            </a>
-        </div>
 
         <div class="header-name-title">
-            <h3>PORTFOLIO:
-            <span class="jessica-name-header">JESSICA HANSSON</span></h3>
-            <h1>frontend <br> developer</h1>
-            <h2>+ administrator & business developer</h2>
+            <h1 tabindex="0">PORTFOLIO:<span class="jessica-name-header">JESSICA HANSSON</span></h1>
+            <h2>frontend <br> developer</h2>
+            <h3>& passionate about sustainable development</h3>
         </div>
 
-        <img class="profile-pic" src="Pictures\jhansson.png" alt="Profile picture of Jessica Hansson">
 
+        <div class="social-media-container">
+            <a href="https://www.linkedin.com/in/jessica-hansson91/" target="blank">
+                <img src="Pictures/linkedin-header-icon.png" alt="Linked In icon">
+            </a>
+            <a href="https://github.com/jesshansson" target="blank">
+                <img src="Pictures/github-header-icon.png" alt="Github icon">
+            </a>
+            <a href="https://stackoverflow.com/users/19466381/jessica" target="blank">
+                <img src="Pictures/stack-header-icon.png" alt="Stack overflow icon">
+            </a>
+        </div>
+        <img class="profile-pic" src="Pictures/jhansson.png" alt="Profile picture of Jessica Hansson">
     </header>
 
+    <!--Intro section--> 
         <section class="intro-section">
             <p>
             <span class="line"></span>
             <span class="dot"></span> 
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus itaque adipisci 
-                minima eum natus qui suscipit aut, odio aliquid quam recusandae similique omnis possimus 
-                voluptate rerum aliquam excepturi commodi?</p>
+            Coming from a background within biology and environmental science, I have now taken on the challange to become a frontend developer. Combining my experience from project and business development, I hope to grow a career within programming and contribute to the progress of the tech world. </p>
         </section>
 
+    <!--Tech section--> 
         <section class="tech-section">
-            <h1 class="main-h1">TECH</h1>
-            <p>HTML, CSS, Flexbox, JavaScript, ES6, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
+            <h2 class="main-h2">TECH</h2>
+            <p>HTML, CSS, Flexbox, Bootstrap, JavaScript ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
         </section>
 
-        <section class ="featured-projects">
-            <h1 class="main-h1">FEATURED PROJECTS</h1>
-                <div class="project one"></div>
-                   <a href="https://theguesswhogame.netlify.app/">
-                    <div class = "project-img-container">
-                        <img src="Pictures\guesswhogamesmall.jpg">
-                    </div>
-                    <h3 class = "red-h3">GUESS WHO?-GAME</h3>    
-                    <p>A classic guess who-game built with JavaScript</p>
-                    <div class="tag-wrapper">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript ES6</p>
-                      </div>
-                    </a> 
-                    </div>
 
-                 <div class="project two"></div>
-                    <a href="https://femntech-news.netlify.app/">
-                    <div class = "project-img-container">
-                        <img src="Pictures\femntechnewssmall.jpg">
-                    </div>
-                    <h3 class = "red-h3">NEWS SITE</h3> 
-                        
-                    <p>A news site</p>
-                    <div class="tag-wrapper">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                      </div>
-                    </a> 
-                </div>    
-
-                <div class="project three"></div>
-                   <a href="https://spectacular-pegasus-2e4240.netlify.app/">
-                    <div class = "project-img-container">
-                        <img src="Pictures\pepbot.JPG">
-                    </div>
-                    <h3 class = "red-h3">CHATBOT</h3>    
-                    <p>A chatbot</p>
-                    <div class="tag-wrapper">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript ES6</p>
-                      </div>
-                    </a> 
-                    </div>
-
-                 <div class="project four"></div>
-                    <a href="https://femntech-news.netlify.app/">
+<!--Featured project section--> 
+    
+        <section class = "outer-wrapper grey">
+            <section class = "inner-wrapper featured-projects">
+                <h2 class="main-h2">FEATURED PROJECTS</h2>                    
+                <div class="project one">
+                    <a href="https://theguesswhogame.netlify.app/" target="_blank">
                         <div class = "project-img-container">
-                            <img src="Pictures\weatherapps.JPG">
+                            <img src="Pictures/guesswhogamesmall.jpg" alt="Guess who game">
                         </div>
-                        <h3 class = "red-h3">WEATHER APP</h3> 
-                        
-                    <p>A weather app</p> 
-                    <div class="tag-wrapper">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JavaScript ES6</p>
-                      </div>
+                        <h3 class = "project-h3">GUESS WHO-GAME</h3>    
+                        <p>A classic card guess who-game built with JavaScript</p>
+                        <div class="tag-wrapper">
+                            <p aria-hidden="true">HTML5</p>
+                            <p aria-hidden="true">CSS3</p>
+                            <p aria-hidden="true">JavaScript ES6</p>
+                        </div>
+                    </a> 
+                </div>
+
+                <div class="project two">
+                    <a href="https://jessica-linda-weather-site.netlify.app/" target="_blank">
+                        <div class = "project-img-container">
+                            <img src="Pictures/weatherapps.JPG" alt="Weather app">
+                        </div>
+                        <h3 class = "project-h3">WEATHER APP</h3> 
+                        <p>A responsive weather forecast app built in JavaScript, HTML and CSS using Open Weather API.</p> 
+                        <div class="tag-wrapper">
+                            <p aria-hidden="true">HTML5</p>
+                            <p aria-hidden="true">CSS3</p>
+                            <p aria-hidden="true">JavaScript ES6</p>
+                        </div>
                     </a> 
                 </div> 
 
+                <div class="project three">
+                    <a href="https://femntech-news.netlify.app/" target="_blank">
+                        <div class = "project-img-container">
+                            <img src="Pictures/femntechnewssmall.jpg" alt="Fem and tech news site">
+                        </div>
+                        <h3 class = "project-h3">NEWS SITE</h3> 
+                            
+                         <p>A news site built with flexbox and grid about women in the tech business</p>
+                        <div class="tag-wrapper">
+                            <p aria-hidden="true">HTML5</p>
+                            <p aria-hidden="true">CSS3</p>
+                        </div>
+                    </a> 
+                </div>    
 
+                <div class="project four">
+                    <a href="https://spectacular-pegasus-2e4240.netlify.app/" target="_blank">
+                        <div class = "project-img-container">
+                            <img src="Pictures/pepbot.JPG" alt="Chatbot Pep bot">
+                        </div>
+                        <h3 class = "project-h3">CHATBOT</h3>    
+                        <p>An interactive chatbot giving pepful messages to the user</p>
+                        <div class="tag-wrapper">
+                            <p aria-hidden="true">HTML5</p>
+                            <p aria-hidden="true">CSS3</p>
+                            <p aria-hidden="true">JavaScript ES6</p>
+                        </div>
+                    </a> 
+                </div> 
+            </section>       
         </section>
 
-        <section class="other-projects">
-            <h1 class="small-h1">OTHER PROJECTS</h1>
-           
-            <div class ="small-project-1"></div>
-                <a href="https://femntech-news.netlify.app/"> 
-                    <h3 class = "red-h3">News site</h3>  
-                    <p> A news site about Fem&Tech</p>
-                </a>
-            <div class ="small-project-2"></div>
-                <a href="https://spectacular-pegasus-2e4240.netlify.app/">
-                <h3 class = "red-h3">Chatbot</h3>
-                    <p>A pep chatbot</p>  
-                </a>
-        </section>
 
-        <section class ="thoughts-about-code">
-            <h1 class="main-h1">MY THOUGHTS</h1>
-            <div class="thought-one"> 
-                <p class="blog-post">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore unde similique quam atque culpa velit.</p>
-            </div>
-            <div class="thought-two">
-                <p class="blog-post">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, esse.</p>
-            </div>
-
-            <div class="more-thoughts">
-                <h1 class="small-h1">MORE THOUGHTS</h3>
-                <p class="blog-post"></p>
-                <p class="blog-post"></p>
-            </div>
-        </section>
-
-        <section class="skills-section">
-            <h1 class="main-h1">SKILLS</h1>
-            <div class="skills">
-                <div class="code-skills">        
-                    <h4 class="skills-title">CODE</h4>
-                    <p>HTML5</p>
-                    <p>CSS3</p>
-                    <p>JavaScript ES6</p>
-                    <p>GitHub</p>
+    <!--Other projects section--> 
+        <section class="outer-wrapper grey">
+            <section class="inner-wrapper other-projects">
+                <h2 class="small-h2">OTHER PROJECTS</h2>
+            
+                <div class ="small-project 1">
+                    <a href="https://femntech-news.netlify.app/" target="_blank"> 
+                        <h3 class = "project-h3">News site</h3>  
+                        <p> A news site built with flexbox and grid about women in the tech business<span class="forward-arrows" aria-hidden="true"> >> </span></p>
+                    </a>
                 </div>
-                
-                <ul class="tools-i-know">
-                <h4 class="skills-title">TOOLBOX</h4>
-                    <p>Visual Studio Code</p>
-                    <p>Figma</p>
-                    <p>Slack</p>
-                    <p>Pair-programming</p>
-                    <p>Mob-programming</p>
-                    <p>CodePen</p>
-                    <p>Business development</p>
-                </ul>
 
-                <ul class="upcoming-skills">
-                    <h4 class="skills-title">UPCOMING</h4>
-                    <p>React</p>
-                    <p>Redux</p>
-                    <p>Node.js</p>
-                    <p>Python</p>
-                </ul>
+                <div class ="small-project 2">
+                    <a href="https://spectacular-pegasus-2e4240.netlify.app/" target="_blank">
+                    <h3 class = "project-h3">Chatbot</h3>
+                        <p>An interactive chatbot giving pepful messages to the user<span class="forward-arrows" aria-hidden="true"> >> </span></p>  
+                    </a>
                 </div>
-            </div>
+            </section>
         </section>
 
-        <section class="for-more">
-            <h1 class="main-h1">FOR MORE</h1>
-            <div class="for-more-social-media-container">
+        <!--My thoughts about code section--> 
+        <section class="outer-wrapper white">
+            <section class ="inner-wrapper thoughts-about-code">
+                <h2 class="main-h2">MY THOUGHTS</h2>
+                    <div class="main-thoughts">
+                        <div class="blog-main one"> 
+                            <h3 class="date">OCT 2022</h3>
+                            <h4 class="blog-headline">The journey within frontend continues</h4>
+                            <p class="blog-post">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eaque? Longer this</p>
+                        </div>
 
-                <a href="https://www.linkedin.com/in/jessica-hansson91/" role="button" target="_blank">
-                    <img class="icon" src="Pictures\morelinkedin.png" alt="linkedin">
-                    </a>
-                
+                        <div class="blog-main two">
+                            <h3 class="date">SEP 2022</h3>
+                            <h4 class="blog-headline">The start of a journey!</h4>
+                            <p class="blog-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, eaque?</p>
+                        </div>
+                    </div>
 
-                    <a href="https://github.com/jesshansson" role="button" target="_blank">
-                    <img class="icon" src="Pictures\moregithub.png" alt="github">
-                    </a>
-                
+            <!--More thoughts section--> 
+                <div class="more-thoughts">
+                    <h2 class="small-h2">MORE THOUGHTS</h2>
+                        <h4 class="blog-headline">Stay tuned!</h4>
+                </div>
+            </section>
+        </section>
 
-                    <a href="https://stackoverflow.com/users/19466381/jessica" role="button" target="_blank">
-                    <img class="icon" src="Pictures\morestackoverflow.png" alt="stackOverflow">
-                    </a>
+        <!--Skills section--> 
+        <section class="outer-wrapper grey">
+            <section class="inner-wrapper skills-section">
+                <h2 class="main-h2">SKILLS</h2>
+                <div class="skills">
+                    <div class="code skill">        
+                        <h3 class="skills-title">CODE</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript ES6</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="toolbox skill">
+                        <h3 class="skills-title">TOOLBOX</h3>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Figma</li>
+                            <li>Slack</li>
+                            <li>CodePen</li>
+                        </ul>
+                    </div>
 
-            </div>
+                    <div class="upcoming skill">
+                    <h3 class="skills-title">UPCOMING</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </div> 
+            </section>
+        </section>
+
+        <!--For more section--> 
+        <section class="outer-wrapper white">
+            <section class="inner-wrapper for-more">
+                <h2 class="main-h2">FOR MORE</h2>
+                <div class="for-more-social-media-container">
+
+                    <a href="https://www.linkedin.com/in/jessica-hansson91/" role="button" target="_blank">
+                        <img class="icon" src="Pictures/morelinkedin.png" alt="LinkedIn icon">
+                        </a>
+                    
+                        <a href="https://github.com/jesshansson" role="button" target="_blank">
+                        <img class="icon" src="Pictures/moregithub.png" alt="Github icon">
+                        </a>
+                    
+                        <a href="https://stackoverflow.com/users/19466381/jessica" role="button" target="_blank">
+                        <img class="icon" src="Pictures/morestackoverflow.png" alt="stackOverflow icon">
+                        </a>
+                </div>
+            </section>
         </section>
 
 
     <!-- Footer  -->
     <footer>
-     <div class="contact-container">
-        <h1 class="title-contact">CONTACT</h1>
-        <p class="contact-info">Jessica Hansson</p>
-        <p>+46 73 511 77 16</p>
-        <a href="mailto:jessica.hansson@hotmail.se" target="_blank">jessica.hansson@hotmail.se</a>
-     </div>
-
+        <div class="contact-container">
+            <h2 class="title-contact">CONTACT</h2>
+            <p class="contact-info">Jessica Hansson</p>
+            <p>+46 73 511 77 16</p>
+            <a href="mailto:jessica.hansson@hotmail.se" target="_blank">jessica.hansson@hotmail.se</a>
+        </div>
     </footer> 
 
 </body>

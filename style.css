@@ -10,11 +10,32 @@ a {
     text-align: center;
 }
 
-.intro-section, .tech-section, .featured-projects, .other-projects, .thoughts-about-code, .skills-section, .for-more, footer {
+.intro-section, .tech-section, .featured-projects, .other-projects, .skills-section, .for-more, footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+} 
+
+.outer-wrapper {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
+.grey {
+    background-color: #F4F4F4;
+}
+
+.white {
+    background-color: white;
+}
+
+.inner-wrapper {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
 
 /*Header*/
 header {
@@ -52,23 +73,24 @@ header {
     letter-spacing: 0.04em;
     color: white;
     text-shadow: 2px 2px rgb(0, 0, 0);
+    max-width: 400px;
 }
 
-.header-name-title h1 {
+.header-name-title h2 {
     line-height: 49px;
     font-size: 38px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
-.header-name-title h2 {
+.header-name-title h3 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.header-name-title h3 {
+.header-name-title h1 {
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
@@ -88,8 +110,7 @@ header {
     border:solid 2px rgb(255, 255, 255); 
 }
 
-
-/* intro-section */
+/* Intro-section */
 .intro-section {
     font-family: 'Montserrat';
     font-style: normal;
@@ -101,6 +122,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.intro-section p {
+    max-width: 90%;
 }
 
 .line { 
@@ -118,9 +143,8 @@ header {
     display: inline-block;
 }
 
-
 /* Headings */
-.main-h1 {
+.main-h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -135,36 +159,38 @@ header {
     justify-self: center;
 }
 
-.small-h1 {
+.small-h2 {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
+    font-weight: bold;
+    font-size: 23px;
     line-height: 25px;
     text-align: center;
-    color: #db9aab;
-    padding: 10px;
+    color: #aa658f;
+    padding: 15px;
 }
 
-.red-h3 {
+.project-h3 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
     line-height: 25px;
     letter-spacing: 0.01em;
-    color: #db9aab;
+    color: #aa658f;
     padding: 5px 10px 5px 10px; 
 }
 
+.title-contact {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 400;
+    padding: 40px;
+}
 
 /*Tech section */
 .tech-section {
-    /*display: flex;
-    flex-direction: column;
-    align-items: center; */
     height: 270px;
-    
 } 
 
 .tech-section p {
@@ -178,10 +204,10 @@ header {
 }
 
 /*Featured projects*/
-
 .tag-wrapper {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
   
 .tag-wrapper p {
@@ -203,29 +229,20 @@ header {
     font-weight: 400;
     font-size: 17px;
     line-height: 25px;
-   /* padding: 15px 24px 35px 24px; */
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-     display: grid;
-    grid-template-columns: 1 fr;
-    padding: 5px; */
-    background-color: #F4F4F4;
 } 
 
 .featured-projects img {
-    width: 400px;
+    width: 350px;
 }
 
+.project p {
+    max-width: 500px;
+    text-align: left;
+}
 
 .featured-projects p {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
-
-/*.other-projects {
-    display: flex;
-    flex-direction: column;
-}*/
 
 .other-projects p {
     font-family: "Roboto";
@@ -236,24 +253,46 @@ header {
     text-align: left;
 }
 
-/* My thoughts */
+.forward-arrows {
+    color: #7c5f74;
+    font-weight: 600;               
+}
+
+/* My thoughts about code */
 .thoughts-about-code {
-    /*display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center; */
-    background-color: #F4F4F4;
-    padding-bottom: 20px;
+    margin: 30px;
 }
 
 .blog-post {
     font-family: "Roboto";
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 29px;
+    line-height: 25px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 10px;
+    padding-bottom: 8px;
+
 }
+
+.blog-headline {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.date {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #db9aab;
+}
+
 
 /* Skills */
 
@@ -267,7 +306,7 @@ header {
     padding-top: 10px;
 }
 
-.skills-section p {
+.skills-section li {
     font-family: "Roboto";
     font-size: 17px;
     font-weight: 400;
@@ -280,9 +319,10 @@ header {
 .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
-/*ÄNDRA FRÅN JESSIKA*/
+/*For more icons*/
 .for-more {
     display: flex;
     flex-direction: column;
@@ -298,17 +338,15 @@ header {
 
 .for-more-social-media-container img {
     width: 50%;
-    filter: invert(19%) sepia(8%) saturate(1582%) hue-rotate(264deg) brightness(100%) contrast(87%);
+    filter: invert(47%) sepia(18%) saturate(1011%) hue-rotate(271deg) brightness(95%) contrast(89%);
  }
 
-
+/*Footer*/
 footer {
     font-family: Montserrat;
     background: #483643;
     text-align: center;
     color: rgb(255, 255, 255);
-   /* display: flex;
-    flex-direction: column; */
     margin-top: 25px;
     padding: 10px;
     border-top: solid 2px rgb(36, 31, 58);
@@ -332,29 +370,30 @@ footer a {
     font-weight: 400;
 }
 
-/*@media (max-width: 1024px){ 
-	.project-img-container{
-	    display: none;
-	}
-} /*
+
 
 /**** MEDIA QUERIES ***/
 
-/* TABLET */
-
+/* Hides featured project three and four image cards in mobile view */
+@media (max-width: 800px){ 
+	.three, .four {
+	    display: none;
+	}
+} 
 
 /* TABLET */ /* DESKTOP */
-@media (min-width: 668px) {
+@media (min-width: 800px) {
     .profile-pic {
-        top: 420px; 
+        top: 295px; 
         right: 50px; 
         position: absolute;
-        width: 270px;
-        height: 270px;
+        width: 220px;
+        height: 220px;
     }  
         
    .header-name-title {
         padding-left: 50px;
+        max-width: 550px;
    }
 
    .social-media-container {
@@ -368,45 +407,52 @@ footer a {
     }
 
     header {
-        height: 682px;
+        height: 500px;
     }
 
     .intro-section p {
-        width: 60%;
+        width: 50%;
         max-width: 1360px;
         top: 20%;
     }
 
-   
+    .blog-headline {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .date {
+        line-height: 41px;
+    }
+
+    .other-projects p {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 29px;
+    }
     .for-more-social-media-container img {
         width: 70%;
-        margin: 20px;
+        margin: 10px;
     }
 
     .contact-container h1 {
-        font-size: 38px;
-        line-height: 47px;
+        font-size: 25px;
+        line-height: 40px;
     }
 
     .contact-container p {
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 20px;
+        line-height: 40px;
     }
 
     .contact-container a {
-        font-size: 30px;
+        font-size: 20px;
     }
-    /*.featured-projects, .other-projects, .thoughts-about-code{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 4%;
-        padding: 5%;
-        justify-items: center;
-        align-items: center;
-    }*/
 
 }
-
 
 /* DESKTOP */
 @media (min-width: 1025px) {
@@ -419,18 +465,26 @@ footer a {
         color: rgb(255, 255, 255);
     }
    
-    .header-name-title h1 {
-        line-height: 100px;
-        font-size: 82px;
+    .profile-pic {
+        right: 100px; 
+    } 
+
+    .header-name-title {
+        width: 1000px;
     }
-    
+
     .header-name-title h2 {
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 78px;
+        line-height: 80px;
+        font-size: 70px;
     }
     
     .header-name-title h3 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    
+    .header-name-title h1 {
         font-weight: 400;
         font-size: 30px;
         line-height: 50px;
@@ -440,5 +494,4 @@ footer a {
         max-width: 600px;
    }
 
-  
 }
