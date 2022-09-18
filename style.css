@@ -26,22 +26,10 @@ Light shades #EEEEEE GALLERY
   --gallery: #eeeeee;
 
   /*
-Light accent #7DAEC7 GLACIER
-- Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette.
-*/
-  --glacier: #7daec7;
-
-  /*
 Main brand color #2A44C8 CERULEAN BLUE
 - This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity.
 */
   --cerulean-blue: #2a44c8;
-
-  /*
-Dark accent #4B618D KASHMIR BLUE
-- Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best.
-*/
-  --kashmir-blue: #4b618d;
 
   /*
 Dark shades #1C2325 SHARK
@@ -239,7 +227,9 @@ section {
   transition: transform 0.3s;
 }
 .project-card:hover .project-info-header,
-.project-card:hover .project-info {
+.project-card:hover .project-info,
+.project-card:focus .project-info-header,
+.project-card:focus .project-info {
   text-decoration: underline;
 }
 
@@ -308,9 +298,9 @@ section {
 
 .project-tags li {
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: black;
   padding: 5px 10px;
-  background-color: var(--glacier);
+  background-color: #2a44c841;
   display: inline;
   font-size: 16px;
   margin-right: 5px;
