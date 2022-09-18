@@ -38,10 +38,10 @@ a:active {
   text-transform: uppercase;
   padding-bottom: 40px;
   letter-spacing: 1px;
+  color: white;
 }
 
 .section-title-background {
-  color: white;
   background-color: #88635c;
   padding: 3px;
 }
@@ -206,8 +206,7 @@ a:active {
 
 .featured-projects-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  gap: 30px;
   margin: 0 auto;
 }
 
@@ -285,8 +284,7 @@ a:active {
 
 .other-projects-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
+  gap: 20px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -341,8 +339,7 @@ a:active {
 
 .my-thoughts-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  gap: 30px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -386,14 +383,12 @@ a:active {
 
 .more-thoughts-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 15px;
+  gap: 15px;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .more-thoughts-entry {
-  grid-column: span 1;
   line-height: 1.4;
 }
 
@@ -419,9 +414,9 @@ a:active {
 
 .skills-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: fit-content fit-content;
-  grid-gap: 10px;
+  gap: 10px;
   margin: 0 auto;
 }
 
@@ -515,22 +510,9 @@ a:active {
   .hidden-on-mobile {
     display: none;
   }
-
-  .featured-projects-container {
-    grid-template-columns: 1fr;
-  }
-
-  .my-thoughts-container {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: fit-content fit-content;
-  }
 }
 
-/* TABLET */
+/* TABLET & DESKTOP */
 
 @media (min-width: 668px) {
   .section-title {
@@ -548,6 +530,18 @@ a:active {
 
   .profile-image {
     right: 22%;
+  }
+
+  .featured-projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-thoughts-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .for-more-container {
@@ -584,7 +578,7 @@ a:active {
   }
 }
 
-/* DESKTOP */
+/* DESKTOP SPECIFIC */
 
 @media (min-width: 1025px) {
 }
