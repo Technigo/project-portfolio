@@ -1,25 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.outerwrapper {
     font-family: 'Montserrat', sans-serif;
-}
-.innerwrapper {
-    max-width: 1100px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
     position: relative;
     height: 520px;
+    width: 100%;
     left: 0px;
     top: 0px;
-    background: url(./images/header-big.jpg);
-    background-size: cover;
-    opacity: 0.75;
-    width: 100%;
-}
+    background-size:cover;
 
+}
+header:before {    
+    content: "";
+    background: url(./images/header-big.jpg);
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+    width: 100vw;
+}
 .icons-header {
     position: absolute;
     top: 50px;
@@ -33,7 +41,7 @@ header {
     border-radius: 50%;
     margin-right: 5px;
     height: 40px;
-    filter: brightness(0) invert(1);
+    filter:  brightness(0) invert(1);
 }
 
 
@@ -44,7 +52,13 @@ header {
     width: 180px;
     border: 2px solid white;
     border-radius: 50%;
+    overflow: hidden;
 }
+
+.profile-img > img {
+  width: 100%;
+}
+
 
 .top-section {
     position: absolute;
@@ -54,10 +68,11 @@ header {
     top: 160px;
     letter-spacing: 0.04em;
     color: white;
-    text-shadow: 1px 1px 2px #1e1e1e;
+    text-shadow: #6F38C5 1px 0 5px;
 }
 
 h1 {    
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 50px;
@@ -65,11 +80,13 @@ h1 {
 
 h2 {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 13px;
     line-height: 18px;
     }
 
 h3 {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
@@ -89,26 +106,23 @@ h4 {
 }
 
 p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 17px;
     line-height:23px;
 }
-
-.main-section img {
+.main-section img{
     width: 100%;
-    opacity: 0.65;
+    opacity:0.65;
     margin: 4% 0%;
-    transition: opacity ease-in-out .5s;
 
 }
-
-.main-section img:hover {
-    opacity: 1;
+.main-section img:hover{
+    opacity:1;
 }
 
-.summary-section {
-    display: flex;
-    flex-direction: column;
-    align-items:center;     
+.summary-section {   
     background-color: #F4F4F4;
     padding: 10%;
 }
@@ -144,14 +158,14 @@ p {
     background-color: #F4F4F4;
 }
 .featured-projects p {
-    font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
 }
 .other-projects {
     display: flex;
     flex-direction: column;
     padding: 6% 10%;
 }
-.other-projects p {
+.other-projects p{
     font-family: 'Roboto', sans-serif;
 }
 .other-projects h3 {
@@ -169,7 +183,7 @@ p {
     text-align: center;
     background-color: #F4F4F4;
 }
-.my-thoughts p {
+.my-thoughts p{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -180,7 +194,7 @@ p {
     padding: 6% 10%;
     text-align: center;
 }
-.skills p {
+.skills p{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -207,8 +221,8 @@ p {
 }
 
 .icons a {
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .icons img {
@@ -228,7 +242,7 @@ p {
     display: flex;
     width: 100%;
 }
-.skill-tags p {
+.skill-tags p{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 9px;
@@ -238,10 +252,10 @@ p {
     padding: 3px 8px;
 }
 
-.project a {
+.project a{
     text-decoration: none;
     color: inherit;
-    width: 100%;
+    width:100%;
 }
 
 footer {
@@ -250,7 +264,7 @@ footer {
     align-items: center;
     background-color: #848484;
     color: #FFFF;
-    padding: 40px 40px 150px 40px;
+    padding: 40px 40px 120px 40px;
 }
 
 footer a {
@@ -259,17 +273,23 @@ footer a {
     margin-top: 10px;
     font-size: 17px;
 }
-footer h3 {
+footer h3{
     font-size: 21px;
     line-height:25px;
     background-color: inherit;
 }
 
+.colored-arrows {
+    color:blue;
+}
+
 @media (min-width:668px) {
 
-    .icons-header img {
-        height: 60px;
+    .header {
+        height: 16%;
     }
+
+
     .projects-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -279,7 +299,7 @@ footer h3 {
 
     .top-section {
         width: 270px;
-        text-shadow: 3px 2px #1e1e1e
+        text-shadow: #6F38C5 1px 0 10px;
     }
     
     .profile-image {
@@ -302,20 +322,28 @@ footer h3 {
     h4 {
         font-size: 24px;
         line-height:31px;
+        padding-right:2%;
 
     }
     p {
         font-size: 24px;
         line-height: 31px;
     }
+    .featured-projects p {
+        font-size: 25px;
+        line-height: 31px;
+    }
 
     .other-projects {
         display: block;
     }
-    .other-projects h3,
-    footer h3 {
+    .other-projects h3 {
         font-size: 30px;
         line-height: 39px;
+    }
+    .other-projects p{
+        font-size: 25px;
+        line-height: 29px;
     }
 
     .project a {
@@ -325,25 +353,26 @@ footer h3 {
     }
 
     
-    .skill-tags p {
+    .skill-tags p{
         font-size: 13px;
         Line-height: 17px;
     }
     footer a {
         font-size: 24px;
     }
-
-    .other-projects a h4 + p {
-        margin-left: 2%;
+    footer h3 {
+        font-size: 30px;
+        line-height: 39px;
     }
    
 }
 
 @media (min-width:1025px) {
 
-    .icons-header img {
-        height: 80px;
+    .innerwrapper {
+        max-width: 1100px;
     }
+
     h1 {    
         font-size: 82px;
         line-height: 100px;
@@ -377,22 +406,26 @@ footer h3 {
         right: 12%;
     }
 
-    .featured-projects p,
+    .featured-projects p {
+        font-size: 25px;
+        line-height: 41px;
+    }
     .featured-projects h4 {
         font-size: 25px;
         line-height: 41px;
     }
-
     .other-projects h3 {
         font-size: 38px;
         line-height: 47px;
     }
-    .other-projects h4,
+    .other-projects h4 {
+        font-size: 25px;
+        line-height: 33px;
+    }
     .other-projects p {
         font-size: 25px;
         line-height: 33px;
     }
- 
     .skill-tags p{
         font-size: 16px;
         Line-height: 21px;
@@ -404,4 +437,5 @@ footer h3 {
         font-size: 38px;
         line-height: 47px;
     }
+
 }
