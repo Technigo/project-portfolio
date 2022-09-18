@@ -40,25 +40,9 @@
 
 }
 
-.inner-wrapper-1 {
-    /* display: flex;
-    flex-direction: column; */
-    width: 90%;
-    margin: 0 auto;
-}
-
-.inner-wrapper-1 p {
-    font-family: 'Roboto';
-    font-style: normal;
-    line-height: 18px;
-    font-size: 1.5em;
-    padding-left: 1%;
-    padding-top: 5%;
-}
-
 .profile-pic {
     position: absolute;
-    right: 15%;
+    right: 10%;
     bottom: -3%;
     width: 150px;
     height: 150px;
@@ -68,6 +52,9 @@
 
 /* links in the header */
 .link-container {
+    position: absolute;
+    right: 5%;
+    top: 10%;
     display: flex;
     justify-content: right;
     padding: 10%;
@@ -80,21 +67,36 @@
     justify-content: space-between;
 }
 
+.header-text {
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+width: 50%;
+}
+
 
 .header-text-h1 {
-    color: whitesmoke;
     font-family: 'Montserrat';
     font-style: bold;
     font-weight: 900;
     font-size: 2em;
     text-align: left;
-    max-width: 50%;
-    line-height: 110%;
+   /*  max-width: 50%;
+   /*  line-height: 110%; */
 }
 
 .header-text-p {
-    max-width: 50%;
-    color: var(--quinary);
+   /*  max-width: 50%; */
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-style: normal;
+    /* line-height: 18px; */
+    font-size: 1.5em;
+    /* padding-left: 1%; */
+   /*  padding-top: 5%;
+    margin-top: 15%; */
+
 }
 
 .outer-wrapper-grey {
@@ -373,6 +375,9 @@ footer {
         font-size: 15px;
     } 
 
+    .link-container {
+        top: 1%; }
+
     .section h2 {
         letter-spacing: 0.01em;
     }
@@ -380,13 +385,12 @@ footer {
     .outer-wrapper-1 {
         width: 100%;
         height: 50vh;
-        display: flex;
-        flex-direction: column;
         position: relative;
     }
 
-   .inner-wrapper-1 {
-        width: 90%;
+    .profile-pic {
+        width: 200px;
+        height: 200px; 
     }
 
     .header-text-h1 { 
@@ -400,6 +404,9 @@ footer {
     :root {
         font-size: 20px;
     }
+
+    .link-container {
+        top: -10%; }
 
     .header-text-h1 {
         color: whitesmoke;
