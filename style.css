@@ -9,28 +9,45 @@ h1,h2{
     margin:0;
 }
 
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
 h3{
-    color: white;
+  font-size: 13px;
+  font-weight: 100px;
+  line-height:18px;
+  letter-spacing:0,04em;
+  color: white;
+  font-family: 'Roboto';
 }
 
 h4 {
-    display: inline;
-    padding: 3px 10px;
-    background: #E54220;
-    font-family: 'Montserrat';
-    color: #EFDACA;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 0em;
-    position:relative;
-  }
+  display: inline;
+  padding: 3px 10px;
+  background: #E54220;
+  color: #EFDACA;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  position:relative;
+}
 
-  h5 {
+h5 {
     display: inline;
     padding: 3px 10px;
     background: white;
-    font-family: 'Montserrat';
     color: #E54220;
+    font-family: 'Montserrat';
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 0em;
@@ -58,15 +75,15 @@ p{
   text-align: left;
 }
 .main-header {
-    
-    width: 375px;
     height: 520px;
+    margin:0;
     position: relative;
     display:block;
     background-color: grey;
+    background-size: cover;
 }
 
-/*HEADING-CONTAINER*/
+/*HEADER-CONTAINER*/
 
 .social-media-links{
   position: absolute;
@@ -75,8 +92,8 @@ p{
   justify-content: flex-end;
   width: 130.5px;
   height: 40px;
-  left: 220px;
-  top: 48px;
+  left: 59%;
+  top: 9%;
   border-radius: 0px;
 }
 
@@ -94,33 +111,8 @@ p{
 
 .headings {
     position: absolute;
-    left: 24px;
-    top: 121px;
-    height: 202px;
-    width: 220px;
-}
-
-.heading1{
-    font-family: 'Roboto';
-    font-size: 13px;
-    font-weight: 100px;
-    line-height:18px;
-    letter-spacing:0,04em;
-}
-
-.heading2{
-    font-family: 'Montserrat';
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 49px;
-}
-
-.heading3 {
-    font-family: 'Montserrat';
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 40px;
-    margin:0;
+    left: 22%;
+    top: 30%;
 }
 
 .name {
@@ -129,8 +121,8 @@ p{
 
 .header-image{
     position: absolute;
-    left: 171px;
-    top: 356px;
+    left: 62%;
+    top: 62%;
     border: 2px solid white;
     border-radius: 50%;
     width:180px;
@@ -142,7 +134,7 @@ p{
 .presentation-container{
   background-color: #EFDACA;
   height: auto;
-  width: 375px;
+  width: 100%;
   left: 0px;
   border-radius: 0px;
   margin-top: -25px;
@@ -151,11 +143,12 @@ p{
 .presentation-content{
     color:black;
     margin:0 auto;
-    max-width:310px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 43px;
-    padding-top:49px;
+    max-width: 55%;
+    /*max-width:310px;*/
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top:15%;
 }
 
 
@@ -472,11 +465,11 @@ footer h4 {
   text-decoration: none;
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1020px) {
   
   h1 {
-    font-size:x 83px;
-    line-height: 83px;
+    font-size: 80px;
+    line-height: 100px;
   }
 
   h2 {
@@ -484,14 +477,40 @@ footer h4 {
   }
 
   h4 {
-    font-size: 10px;
+    font-size: 48px;
   }
 
   h5 {
-    font-size: 38px;
+    font-size: 37px;
   }
 
   header {
     height: 655px;
   }
+
+  .header-image{
+  height: 333px;
+  width: 333px;
+}
+
+.social-media-links {
+  
+}
+
+.icon-link {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px; 
+}
+
+.icon-link img {
+  width: 25px;
+  height: auto;
+  transition: transform .5s, filter .5s ease-out;
+}
+
+.icon-link img:hover {
+  transform: scale(1.1);
+}
+
 }
