@@ -45,7 +45,7 @@ h5 {
   background-image: url(./pic/forest.jpeg);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 350px;
   position: relative;
 }
 
@@ -59,21 +59,27 @@ h5 {
 }
 
 .logo img {
-  height: 25px;
-  width: 25px;
+  height: 45px;
+  width: 45px;
 }
 /* */
-.text-heading {
+.text-wrapper {
   font-family: "Roboto";
   font-style: normal;
   letter-spacing: 0.2em;
   color: #ffffff;
 }
+.text-heading {
+  position: absolute;
+  left: 0;
+  top: 15vw;
+  max-width: 70%;
+}
 
 .social-links-header {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 10px;
   position: absolute;
   right: 0;
   top: 0;
@@ -83,7 +89,7 @@ h5 {
   width: 150px;
   position: absolute; /* lets us choose position of the img */
   right: -2vh;
-  top: 18vh;
+  top: 22vh;
   border: 2px solid white;
   border-radius: 50%;
 }
@@ -313,5 +319,27 @@ footer {
     border-right: 0px;
     border-bottom: 0px;
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1028px) {
+  .text-heading {
+    position: absolute;
+    left: 0;
+    top: 5vw;
+    max-width: 70%;
+  }
+
+  .logo img {
+    height: 60px;
+    width: 60px;
+  }
+  .profile-img {
+    width: 180px;
+    position: absolute; /* lets us choose position of the img */
+    right: -2vh;
+    top: 22vh;
+    border: 2px solid white;
+    border-radius: 50%;
   }
 }
