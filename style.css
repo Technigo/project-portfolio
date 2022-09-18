@@ -9,16 +9,12 @@ body {
   width: 100%;
 }
 header {
-  /*background-image:*/
-  background-color: black;
+  background-image: url(./assets/headerimg.jpg);
   position: relative;
-  /*height: 520px;*/
-  width: 100vw;
-  height: 75vh;
-  /*background-position: center;
+  height: 520px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-color: white;*/
   display: flex;
   flex-direction: column;
 }
@@ -39,7 +35,7 @@ header {
   transition: 0.2s;
   position: relative;
 }
-.nav-img {
+.nav-svg {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -149,24 +145,44 @@ h4 {
   padding: 3px;
   margin-bottom: 20px;
   letter-spacing: 0.03em;
+  font-weight: bold;
 }
 .tech-outer-wrapper p {
   text-align: center;
 }
 .projects-outer-wrapper {
+  background-color: #f4f4f4;
   width: 100%;
   margin: 0;
   text-align: left;
   padding: 2rem 0;
+  align-items: center;
+}
+.featured-project-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .project-image-container {
   position: relative;
+  padding-top: 10%;
 }
 .project-image {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a > p {
+  font-family: "Roboto";
+  text-align: left;
+  padding-top: 0;
 }
 h5 {
   color: red;
@@ -206,12 +222,18 @@ h6 {
   text-align: left;
   padding: 2rem 0;
 }
-
+.thoughts-container {
+  text-align: center;
+}
 .skills-outer-wrapper {
+  background-color: #f4f4f4;
   width: 100%;
   margin: 0;
   text-align: left;
   padding: 2rem 0;
+}
+.skills-outer-wrapper p {
+  text-align: center;
 }
 .for-more-outer-wrapper {
   width: 100%;
@@ -219,10 +241,161 @@ h6 {
   text-align: left;
   padding: 2rem 0;
 }
-
-footer {
+.for-more-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
   text-align: center;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
 }
+.bottom-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+svg {
+  height: 40px;
+  width: 40px;
+}
+.icon-text {
+  font-family: "Roboto";
+  color: grey;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+footer {
+  background-color: blue;
+  text-align: center;
+  display: block;
+  padding-bottom: 10%;
+}
+footer h6 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  color: white;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+footer p {
+  color: white;
+  padding: 0%;
+}
+
 /*tablet*/
+@media (min-width: 768px) {
+  .nav-icons {
+    margin-right: 10vw;
+    margin-top: 10vh;
+  }
+  .nav-links {
+    border: solid white 3px;
+    height: 60px;
+    width: 60px;
+  }
+  .nav-image {
+    width: 25px;
+    height: 25px;
+    margin-top: 25%;
+  }
+  .header-info {
+    width: 380px;
+    left: 12vw;
+    top: 25vh;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .header-info h3 {
+    font-size: 19px;
+  }
+  .name {
+    font-size: 19px;
+    display: inline;
+  }
+  .profile-img {
+    height: 230px;
+    width: 230px;
+    border: 3px solid white;
+    right: 12vw;
+    top: 325px;
+  }
+  .intro-text {
+    width: 600px;
+  }
+  .inner-wrapper {
+    width: 600px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  .project-image-container h5 {
+    font-weight: 400;
+  }
+  .featured-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .featured-project-card {
+    width: 45%;
+  }
+  .bottom-icons {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  svg {
+    width: 70px;
+    height: 70px;
+  }
+}
 
 /*desktop*/
+@media (min-width: 1024px) {
+  .header-info {
+    left: 17vw;
+    top: 25vh;
+  }
+  .profile-img {
+    height: 250px;
+    width: 250px;
+    right: 12vw;
+    top: 300px;
+  }
+  .inner-wrapper {
+    width: 900px;
+  }
+  .project-image-container h5 {
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .other-project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .other-project-card {
+    width: 45%;
+  }
+  .bottom-icons {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+  svg {
+    width: 90px;
+    height: 90px;
+  }
+}
