@@ -1,126 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
-  />
-    <title>My portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   
+    <title>Johanna Rosenholm, Developer, Portfolio</title>
+     <!--font awesome-->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<!--HEADER-->
+<!---------------------------------------HEADER--------------------------------->
 <header class ="main-header">
-  <nav class="navbar">
-        <a href="#linkedin.header.png"> </a>
-        <a href="#">CONTACT</a>
-        <a href="#">HOME</a>
-  </nav>
-  <img class ="profile-image" src ="Profilbild1.jpg"/>
-  <h1>My portfolio webbsite</h1>
-  <h2>Career changer -former radiologic technologist now frontend developer </h2>
+  <div class="Icon-link">
+    <!--LINKEDIN-->
+    <a href="https://www.linkedin.com/in/johanna-rosenholm-932942109/" class="IconButton" target="_blank" src="github.png" alt="linkedin logo">
+      <img href ="https://github.com/RosenholmJohanna" src="linkedin.header.png" alt="Linkedin logo"/>
+    </a>
+      
+    <!--GITHUB-->
+    <a href="https://github.com/RosenholmJohanna" class="IconButton" target="_blank" src="github.png" alt="Github logo">
+      <img href ="https://github.com/RosenholmJohanna" src="github.header.png" alt="Github logo"/>
+    </a>
+
+    <!--STACKOVERFLOW-->
+    <a href="https://stackoverflow.com/users/19392281/johanna-rosenholm" class="IconButton" target="_blank" src="github.png" alt="stackoverflow logo">
+      <img href ="https://stackoverflow.com/users/19392281/johanna-rosenholm" src="stackoverflow.header.png" alt="Stackoverflow logo"/>
+    </a>  
+    </div>
+
+    <h1 class="header-text-1">frontend <br> developer</h1>
+    <h2 class="header-text-2">With background in radiologic technology & commercial real estate management</h2>
+
+  <img class ="profile-image" src ="profil.jpg" alt="piture of me">
 </header>
 
 
-<!--INTRO-->
-<section class ="intro">
-  <p> What is Lorem Ipsum?
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</p>
+
+
+<!---------------------------------INTRO----------------------------------------->
+<section class="section-intro">
+
+  <div class="intro-box"> 
+    <p class="introtext">
+      <span class="line"></span>
+      <span class="dot"></span>
+      Hello! My name is Johanna and I'm a student at Technigos frontend developer bootcamp.  
+      In my jobs, I have seen opportunities where digital tools in many ways would have made it easier for both customers and patients in different ways. 
+      In the future, I hope to be able to, not only develop ideas - but also be involved in building the product itself. 
+    </p>
+  </div>
 </section> 
 
 <!--TECH-->
-<section class ="tech"> 
-  <h3>TECH</h3>
-  <p>HTML, CSS, JavaScript, ES6, C#, API:s, mob-programming, <br>
-    pair-programming, Github, React, Node.js </p>
+<section class ="section-tech"> 
+
+  <h3 class ="header-tech">TECH</h3>
+    <p class="tech-text">HTML, CSS, Flexbox, <span class="highlight">JavaScript,</span> ES6, JSX, <span class="highlight">React, React Hooks, Redux,</span> 
+    Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
 </section> 
 
 
-<!--MY PROJECTS-->
-<section class ="projects"> 
-  <header class ="projects-header"><h3>FEATURED PROJECTS</h3></header>
-  
-    <article class ="projects-box">
-      <article class ="article-project">  
-        <img src='https://images.pexels.com/photos/673018/pexels-photo-673018.jpeg?auto=compress&cs=tinysrgb&w=1600' alt="climb Italy" class ="thoughts-img">
-        <P>ABOUT</P>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
-        <P>LINKS</P>
-      </article>
+<!------------------------------MY PROJECTS------------------------------------->
+<section class ="section-projects"> 
+  <h3 class  ="header-projects">FEATURED PROJECTS</h3>
+
+  <!--
+**Totaly forgot the image-overlay part, will work on this later.** 
+    <div class="project-image">
+      <div class="project-image-overlay"></div>
+      <img src="news.png" alt="news project" class ="projects-img">
+    <p class="project-image-title">CLIMBING NEWS</P>
+    </div>
+  -->
+
+<article class ="projects-box">
+  <article class ="article-project"> 
+
+    <img src="news.png" alt="news project" class ="projects-img">
+    <p>NEWS WEBBSITE</p>
+    <p class="project-text">Responsive news webbsite, built as a first project using HTML and CSS. </p>
+    <div class="tag-wrapper">
+      <p>HTML5</p>
+      <p>CSS3</p>
+      <p>JavaScript ES6</p>
+    </div>
       
-      <article class ="article-project"> 
-        <img src='https://images.pexels.com/photos/673018/pexels-photo-673018.jpeg?auto=compress&cs=tinysrgb&w=1600' alt="climb Italy" class ="thoughts-img">
-        <P>ABOUT</P>
-        <p> em Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gal</p>
-        <P>LINKS</P>
+    <img src="Chat.png" alt="icon" class ="projects-img">
+    <P>CHAT BOT BUILT IN JAVASCRIPT.</P>
+    <p class="project-text"> Responsive web site using HTML, CSS and JavaScript ES6 for fun facts. </p>
+    <div class="tag-wrapper">
+      <p>HTML5</p>
+      <p>CSS3</p>
+      <p>JavaScript ES6</p>
+    </div>
+  </article>
+
+  <article class ="article-project">  
+    <img src="weatherapp.png" alt="icon " class ="projects-img">
+    <P> WEATHER APP.</P>
+    <p class="project-text"> Web weather app built in JavaScript using Open Weather API.</p>
+    <div class="tag-wrapper">
+      <p>HTML5</p>
+      <p>CSS3</p>
+      <p>API</p>
+      <p>JavaScript ES6</p>
+    </div> 
+
+    <img src="guesswho.png" alt="icon " class ="projects-img">
+    <P>GUESS WHO GAME.</P>
+    <p class="project-text">Game created to learn about basic Javascript.  </p>
+    <div class="tag-wrapper">
+      <p>HTML5</p>
+      <p>CSS3</p>
+      <p>JavaScript ES6</p>
+    </div>
+  </article>
+
+</article>
+
+<section class="other_projects">
+<h4 class = "header-other-projects">OTHER PROJECTS</h4>
+
+<article class="other-projects-link">
+  <a href="https://github.com/RosenholmJohanna" tabindex="0" role="button" aria-pressed="false" aria-label="aussie burgers repository" target="_blank" rel="noreferrer">  
+  <span class="highlight">More projects to come. </span> Meanwhile please visit my Github page. 
+  <span class="bold highlight">&gt;&gt;</span></a>
+  
+
+  <!--
+ *To use later on*
+  <div class="tag-wrapper">
+    <p>HTML5</p>
+    <p>CSS3</p>
+    <p>JavaScript ES6</p> 
+  </div>
+</article>
+
+ <article class="other-projects-link">
+  <span class="highlight">WEATHER APP.</span>
+  <a href="https://github.com/RosenholmJohanna" tabindex="0" role="button" aria-pressed="false" aria-label="aussie burgers repository" target="_blank" rel="noreferrer">  
+  Web application built in Javascript with external API.
+  <span class="bold highlight">&gt;&gt;</span></a>
+  <div class="tag-wrapper">
+    <p>HTML5</p>
+    <p>CSS3</p>
+    <p>JavaScript ES6</p>
+  </div>
+</article> -->
+
+</section>
+</section> 
+
+
+  <!----------------------------THOUGHTS ABOUT CODE--------------------------------------->
+<section class ="section-thoughts"> 
+  <h3 class = "header-thougths">MY THOUGHTS</h3>
+
+  <article class =" thoughts-box">
+    <article class ="article-thoughts">  
+      <img src='https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1600' alt=" " class ="thoughts-img"> 
+      <p>DEC 2019</P>
+      <p>How to stop being scared: Learning to love code</p>
+      <P class="thoughts-text"> Writing code is less about “just working”. Instead, it's much more about creativity. It's similar to creative writing in that the author architecting a story
+        must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective. >> </p>
+    </article>
+  
+  <article class ="article-thoughts"> 
+    <img src='https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=1600' alt=" " class ="thoughts-img">
+    
+    
+    
+    <P>DEC 2021</P>
+    <P>ABOUT</P>
+    <P class="thoughts-text">em Ipsum is simply dummy text of the print1500s, when an unknown printer took a gal</p>
+    
+  </article>
+</article>
+
+<section class="other-thoughts">
+  <h4 class = "header-other-thoughts">OTHER THOUGHTS</h4>
+
+  
+  <article class="other-projects-link">
+    <a href="https://github.com/RosenholmJohanna" tabindex="0" role="button" aria-pressed="false" aria-label="aussie burgers repository" target="_blank" rel="noreferrer">  
+    <span class="highlight">More thoughts to come. </span> Meanwhile please visit my Github page. 
+    <span class="bold highlight">&gt;&gt;</span></a>
+    
+  </section>
+
+</section> 
+
+
+<!----------------------------------------SKILLS------------------------------------>
+<section class ="section-skills">
+  <h4 class ="header-skills">SKILLS</h4>
+  
+    <article class ="skills-box">
+      <article class ="code">
+
+        <h4 class="topic-skills-text">CODE</h4>
+        <p class="skills-text">HTML 5</p>
+        <p class="skills-text">CSS</p>
+        <p class="skills-text">JavaScript</p>
+        <p class="skills-text">React</p>
+        <p class="skills-text">GitHub</p>
+      </article>
+        
+      <article class ="upcoming">
+        <h4 class="topic-skills-text">UPCOMING</h4>
+        <p class="skills-text">React</p>
+        <p class="skills-text">C#</p>
+        <p class="skills-text">.NET</p>
       </article>
 
-      <article class ="article-project">  
-        <img src='https://images.pexels.com/photos/673018/pexels-photo-673018.jpeg?auto=compress&cs=tinysrgb&w=1600' alt="climb Italy" class ="thoughts-img">
-        <P>ABOUT</P>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
-        <P>LINKS</P>
+      <article class ="toolbox">  
+        <h4 class="topic-skills-text">TOOLBOX</h4>
+        <p class="skills-text">Adobe</P>
+        <p class="skills-text">Active-Directory</p>
       </article>
       
-      <article class ="article-project">  
-        <img src='https://images.pexels.com/photos/673018/pexels-photo-673018.jpeg?auto=compress&cs=tinysrgb&w=1600' alt="climb Italy" class ="thoughts-img">
-        <P>ABOUT</P>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
-        <P>LINKS</P>
+      <article class ="more">  
+        <h4 class="topic-skills-text">MORE</h4>
+        <p class="skills-text">Branding</p>
+        <p class="skills-text">Agile Methology</p>
+        <p class="skills-text">Place management</p>
       </article>
       
   </article>
   </section> 
 
 
-  <!--THOUGHTS ABOUT CODE-->
-<section class ="thoughts"> 
-  <header class = "thoughts-header"><h3>THOUGHTS ABOUT CODE</h3></header>
+<!-------------------------------------FOR MORE------------------------------->
+<section class ="section_formore"> 
 
-  <article class =" small-thoughts-box">
-    <article class ="small-thoughts">  
-      <img src='https://images.pexels.com/photos/673018/pexels-photo-673018.jpeg?auto=compress&cs=tinysrgb&w=1600' alt="climb Italy" class ="thoughts-img"> 
-      <P>ABOUT</P>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
-      <P>LINKS</P>
-    </article>
-  
-  <article class ="small-thoughts"> 
-    <img src='https://images.pexels.com/photos/673018/pexels-photo-673018.jpeg?auto=compress&cs=tinysrgb&w=1600' alt="climb Italy" class ="thoughts-img">
-    <P>ABOUT</P>
-    <p> em Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gal</p>
-    <P>LINKS</P>
-  </article>
-</article>
+<h3 class="header-more">FOR MORE</h3>
+
+<section class="Icon-link">
+<!--LINKEDIN-->
+<a href="https://www.linkedin.com/in/johanna-rosenholm-932942109/" class="IconButton" target="_blank" src="linkedin.header.png" alt="Github logo"> <!--_blank = webbsite new tab--> 
+  <img href ="https://www.linkedin.com/in/johanna-rosenholm-932942109/" src="linkedin.rod.png" alt="Linkedin logo"></a>
+
+
+<!--GITHUB-->
+<a href="https://github.com/RosenholmJohanna" class="IconButton" target="_blank" src="github.rod.png" alt="Github logo">
+  <img href ="https://github.com/RosenholmJohanna" src="github.rod.png" alt="Github logo"></a>
+
+
+<!--STACKOVERFLOW-->
+<a href="https://stackoverflow.com/users/19392281/johanna-rosenholm" class="IconButton" target="_blank" src="github.rod.png" alt="Github logo">
+  <img href ="https://stackoverflow.com/users/19392281/johanna-rosenholm" src="stack.rod.png" alt="Stackoverflow logo"></a>
+
+
+</section>
 </section> 
 
 
-<!--SKILLS-->
-<section class ="skills">
-<h3>SKILLS</h3>
-</section> 
-
-
-<!--LINKS-->
-<section class ="my-links"> 
-<h3>LINKS</h3>
-</section> 
-
-
-<!--FOOTER-->
+<!---------------------------------FOOTER----------------------------->
 <footer>
-  <p>CONTACTS</p>
-  <li>Johanna Rosenholm </li>
-   <li>Rosenholm.johanna88@gmail.com</li>
-  <li> phone: 0709 80 90 30</li>
-  
+  <p>CONTACT</p>
+  <p>Johanna Rosenholm </p>
+  <p>Rosenholm.Johanna88@gmail.com</p>
+  <p> +46 70 980 90 30</p>
 </footer>
 
-
-    
 </body>
+
 </html>
