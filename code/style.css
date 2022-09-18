@@ -82,12 +82,12 @@ header {
 
 }
     .header-inner-wrapper {
-        padding: 7vh 6vw 6vh 6vw;
+        width: 80%;
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 3fr;
-        height: 55vh;
         position: relative;
+        height: 55vh;
     }
     
         .headline-container {
@@ -100,11 +100,14 @@ header {
             .portfolio-headline {
                 font-family: 'Roboto';
                 font-style: normal;
-                font-weight: 00;
                 font-size: 13px;
                 line-height: 24px;
                 letter-spacing: 0.04em;
             }
+
+                .bold {
+                    font-weight: 700;
+                }
 
             .frontend-headline {
                 font-family: 'Montserrat';
@@ -374,43 +377,55 @@ footer {
     .inner-wrapper {
         width: 60%;
     }
-    
-    .headline-container {
-        color: #FFFFFF;
-        grid-column: 1 / 2;
-        padding-left: 10vw;
-        }
 
-    .portfolio-headline {
-            font-size: 18px;
-        }
+    .header-inner-wrapper {
+        width: 60%
+    }
 
-        .frontend-headline {
-            font-size: 50px;
-            line-height: 60px;
-        }
+        .profile-pic {
+            width: 150px;
+            position: absolute;
+            right: 2vw;
+            }
+        
+        .headline-container {
+            width: 37vw;
+            }
 
-        .background-headline {
-            font-size: 20px;
-        }
+        .portfolio-headline {
+                font-size: 18px;
+            }
 
-    .profile-pic {
-    width: 200px;
+            .frontend-headline {
+                font-size: 50px;
+                line-height: 60px;
+            }
+
+            .background-headline {
+                font-size: 20px;
+            }
 }    
     
-}
 /*Desktop*/
 @media (min-width: 1025px){ 
 .inner-wrapper {
     width: 60%;
 }
 
-.headline-container {
-    color: #FFFFFF;
-    grid-column: 1 / 2;
-    padding-left: 10vw;
-    }
+.header-inner-wrapper {
+    width: 60%
+}
 
+    .profile-pic {
+        width: 150px;
+        position: absolute;
+        right: 2vw;
+        }
+
+    .headline-container {
+        width: 35vw;
+    }
+        
         .portfolio-headline {
             font-size: 20px;
         }
@@ -425,14 +440,14 @@ footer {
         }
 
     .profile-pic {
-        width: 240px;
+        width: 220px;
     }    
 
 .featured-projects {
     grid-template-columns: 1fr 1fr;
     column-gap: 3vw;
 }
-    
+
     .one {
         grid-row: 2 / 3; 
     }
@@ -447,5 +462,15 @@ footer {
 
     .four {
         grid-row: 3 / 4;
+    }
+}
+
+/*Large desktops*/
+@media (min-width: 1600px) {
+    .header-inner-wrapper {
+        width: 50%
+    }
+    .inner-wrapper {
+        width: 50%
     }
 }
