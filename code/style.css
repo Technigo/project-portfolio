@@ -51,6 +51,9 @@ body {
     flex-direction: row;
     font-size: large;
     background-color: #E3FDFD;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
 }
 .myself img {
     display: flex;
@@ -71,13 +74,15 @@ body {
 
 .tech {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #CBF1F5;
     padding: 40px;
     align-content: stretch;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
 }
+
 .tech h2 {
     display: flex;
     justify-content: space-around;
@@ -119,11 +124,9 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 5px;
+    margin-bottom: 20px;
 }
 
-.github-elements {
-    padding: 15px;
-}
 
 .project {
     border: solid 2px black;
@@ -175,3 +178,101 @@ body {
     color: black;
 }
 
+
+.columns {
+    display: flex;
+    width: 80%;
+    column-gap: 2%;
+    margin: 25px;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #71C9CE;
+    padding: 40px;
+    align-content: stretch;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.container h2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #8beffe;
+    align-content: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.section-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: center;
+    background-color: #4d96b3;
+}
+.section-skills h2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #8beffe;
+    align-content: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+footer {
+    padding: 50px;
+    color: white;
+    text-align: center;
+    background-color: #4e617f;
+    }
+    
+    .contact-heading {
+        margin-bottom: 30px;
+        color:white
+    }
+    
+    
+@media screen and (min-width: 1024) {
+.container {
+    width: 1200px;   
+}  
+}
+
+@media screen and (min-width:860px) {
+.footer {
+    width: 768px;
+}
+.projects-github {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}   
+}
+
+@media screen and (min-width: 767px) {
+
+.project {
+    width: 80%;
+    height: fit-content;
+    margin-bottom: 80px;
+}
+}
+
+@media screen and (max-width:767px) 
+{
+article {
+    width: 100%;
+}
+.columns {
+    column-gap: 0;
+
+}
+}
