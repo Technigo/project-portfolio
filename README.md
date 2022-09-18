@@ -4,4 +4,6 @@ Portfolio made by bootstrap library.
 
 Portfolio containing my github, linkedin and facebook.
 
-maria-porfolio.netlify.app
+# deployed in
+
+https://maria-porfolio.netlify.app/
