@@ -119,7 +119,6 @@ h3 {
     display: flex;
     width: 100%;
     height: 324px;
-    left: 0px;
     top: 520px;
     background: #c2c296;
     opacity: 60%;
@@ -129,7 +128,7 @@ h3 {
 
 .introDiv {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     flex-direction: column;
 }
@@ -168,6 +167,8 @@ h3 {
     justify-content: center;
     align-items: center;
     top: 900px;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -176,7 +177,6 @@ h3 {
     text-align: center;
     background: #c2c296;
 }
-
 
 .tag-title {
     display: flex;
@@ -209,16 +209,11 @@ p {
     position: relative;
     display: flex;
     justify-content: center;
+    top: 750px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 27px;
-    color: #011f0d;
-    width: 255px;
-    height: 26px;
-    margin-left: 20%;
-    top: 750px;
 }
 
 a {
@@ -238,18 +233,32 @@ a:link {
     opacity: 50%;
 }
 
-.project1:hover .pic{
-        opacity: 1;
-      }
-      .project2:hover .pic{
-        opacity: 1;
-      }
-      .project3:hover .pic{
-        opacity: 1;
-      }
-      .project4:hover .pic{
-        opacity: 1;
-      }
+.image {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    border: 2px solid white;
+    border-radius: 5%;
+}
+
+
+.project1:hover .pic {
+    opacity: 1;
+}
+
+.project2:hover .pic {
+    opacity: 1;
+}
+
+.project3:hover .pic {
+    opacity: 1;
+}
+
+.project4:hover .pic {
+    opacity: 1;
+}
+
+
 
 .projectTitle {
     position: relative;
@@ -335,7 +344,7 @@ a:link {
     background-color: #e50e0ed8;
 }
 
-/* Other projects */
+/*---- Other projects -----*/
 
 .other-projects {
     display: flex;
@@ -343,16 +352,19 @@ a:link {
     align-items: center;
     width: 100%;
     margin-top: 80px;
+    justify-content: center;
     text-align: center;
 }
+
 
 .other-projects-title {
     position: relative;
     display: flex;
-    width: 255px;
+    width: 200px;
     height: 26px;
     left: auto;
     top: 10px;
+    justify-content: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -360,7 +372,7 @@ a:link {
     line-height: 27px;
     text-align: center;
     color: #011f0d;
-    margin-bottom: 2px;
+    background-color: #e5e10ed8;
 
 }
 
@@ -376,24 +388,19 @@ a:link {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 80px;
+    margin-top: -100px;
 }
 
 .myThoughts-title {
     position: relative;
     display: flex;
-    width: 255px;
-    height: 26px;
+    justify-content: center;
     left: auto;
-    top: 10px;
+    margin-bottom: 50px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 27px;
-    text-align: center;
-    color: #011f0d;
-    margin-bottom: 50px;
 }
 
 
@@ -409,18 +416,10 @@ a:link {
 .moreThoughts-title {
     position: relative;
     display: flex;
-    width: 255px;
-    height: 26px;
-    left: auto;
-    top: 10px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 27px;
-    text-align: center;
-    color: #011f0d;
-    margin-bottom: 2px;
 }
 
 
@@ -431,7 +430,6 @@ a:link {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    margin-top: 50px;
     background: #c2c296;
 
 }
@@ -439,37 +437,36 @@ a:link {
 .mySkills-title {
     position: relative;
     display: flex;
-    width: 100px;
-    height: 26px;
     justify-content: center;
-    top: 150px;
+    margin-bottom: 5px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 27px;
     text-align: center;
-    color: #011f0d;
-    margin-bottom: 2px;
-    background-color: #e5e10ed8;
+    color: #130204;
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
+    width: 100%;
     flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
-    line-height: 29px;
-    text-align: center;
-    color: #011f0d;
 }
 
 /* FOR MORE */
+
+.for-more-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 .forMore-title {
     position: relative;
@@ -488,15 +485,6 @@ a:link {
     color: #011f0d;
     margin-bottom: 2px;
     background-color: #e5e10ed8;
-
-}
-
-.for-more-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
 }
 
 .socialmedia-linksBottom {
@@ -541,6 +529,7 @@ a:link {
     font-size: 21px;
 
 }
+
 
 /* Media query Screen and Tablet */
 
@@ -587,10 +576,6 @@ a:link {
         justify-content: space-evenly;
     }
 
-    .title {
-        justify-content: space-evenly;
-    }
-
     .socialmedia-linksBottom img {
         height: 50px;
         padding: 0px;
@@ -602,12 +587,7 @@ a:link {
         justify-content: space-evenly;
     }
 
-    .featured-title {
-        margin-left: 43%;
-    }
-
     .text-summary {
         font-size: 20px;
     }
-
 }
