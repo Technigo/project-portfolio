@@ -24,11 +24,12 @@
 }
 
 .header-container {
-    background-image: url(./images/hero2.jpg); 
+    background-image: url(./hero2.jpg); 
     position: relative;   
     background-size: cover;
     height: 400px;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .profile-img {
@@ -37,7 +38,7 @@
     right: 40px;
     border-radius: 50%;
     border: 5px solid;
-    border-color: #eaaf9b;
+    border-color: #faede8;
     width: 19vw;
 }
 
@@ -50,10 +51,10 @@
     top: 48px;
     right: 48px;
     border: 5px solid;
-    border-color: #eaaf9b;
+    border-color: #faede8;
     padding: 15px;
     border-radius: 20px;
-    background-color: lightgray;
+    background-color: #faede8;
 }
 
 .wrapper {
@@ -80,7 +81,7 @@
   }
 
 .intro {
-    background-color: whitesmoke;
+    background-color: #faede8;
     padding: 55px;
     line-height: 30px;
 }
@@ -132,7 +133,7 @@
   }
 
   .heading-bg {
-    background-color: lightgray;
+    background-color: #f0cfc4;
     padding: 5px;
   }
 
@@ -147,14 +148,14 @@
   }
 
   .portfolio {
-    background-color: whitesmoke;
+    background-color: #faede8;
     display: grid;
   }
 
   .cards {
     display: grid;
     grid-auto-flow: column;
-    gap: 2px;
+    gap: 0px;
     align-items: center;
     justify-items: center;
 }
@@ -163,6 +164,7 @@
     width: 70%;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
   }
   
   .card:hover {
@@ -199,13 +201,10 @@
     padding: 20px 70px;
     text-align: center;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
   }
 
   .skills-wrapper {
+    display: grid;
     grid-auto-flow: column;
     gap: 2px;
     align-items: center;
@@ -233,10 +232,36 @@
     font-weight: 700;
   }
 
-  @media screen and (max-width: 600px) {
-    .portfolio {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
+  .contact {
+    background-color: #faede8;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact p {
+    font-family: Montserrat;
+  }
+
+  @media (max-width: 768px) {
+    .intro-container {
+        justify-content: center;
+        margin: 0px;
+        width: fit-content;
+    }
+
+    .cards {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+    .skills-wrapper {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 2px;
+        align-items: center;
+        justify-items: center;
     }
 }
