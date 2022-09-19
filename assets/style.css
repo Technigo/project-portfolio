@@ -437,10 +437,9 @@ a:active {
 
 .for-more-icons {
   display: grid;
-  grid-template-columns: 95px 95px 95px;
+  grid-template-columns: repeat(3, 95px);
   justify-content: center;
   gap: 25px;
-  margin: 0 auto;
 }
 
 .for-more-icon-container {
@@ -468,7 +467,7 @@ a:active {
   text-align: center;
   padding-top: 15px;
   font-size: 15px;
-  line-height: 1.2rem;
+  line-height: 1.3;
 }
 
 /* FOOTER */
@@ -493,7 +492,7 @@ a:active {
   font-size: 18px;
   text-align: center;
   color: white;
-  line-height: 1.6rem;
+  line-height: 1.6;
 }
 
 /* MOBILE */
@@ -517,7 +516,6 @@ a:active {
 
   .main-header {
     height: 500px;
-    /* change background for tablet and desktop */
   }
 
   .header-text-wrapper {
@@ -537,12 +535,12 @@ a:active {
   }
 
   .skills-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .for-more-icons {
     gap: 20px;
-    grid-template-columns: 130px 130px 130px;
+    grid-template-columns: repeat(3, 130px);
   }
 
   .for-more-icon-container {
@@ -560,17 +558,4 @@ a:active {
     padding-top: 15px;
     font-size: 15px;
   }
-
-  .for-more-container {
-    display: grid;
-    grid-template-columns: 130px 130px 130px;
-    margin: 0 auto;
-    justify-content: center;
-    gap: 25px;
-  }
-}
-
-/* DESKTOP SPECIFIC */
-
-@media (min-width: 1025px) {
 }
