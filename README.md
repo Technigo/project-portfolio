@@ -8,3 +8,8 @@ I had a lot of problems this week, with photos, responsiveness and other things 
 The site is responsive, and works on different media platforms. The HTML has been run through a validation tool with good results. And also run through Wave for accessibility.
 
 If I had more time, I would go over the design more and make small adjustments. Also adding OG:tags.
+
+
+#live
+
+https://kneedler-portfolio-a45abe.netlify.app/
