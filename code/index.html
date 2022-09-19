@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
-    <!-- lägga in en icon i title? -->
+    <!-- icon i title? -->
     <title>Nina Berggren, Frontend Developer, Portfolio</title>
-    <link rel = "icon" href = 
-    "./icons/icons8-winter-40.png" 
-            type = "snowflake">
+    <link rel = "icon" href ="./icons/icons8-winter-40.png">
     <script src="https://kit.fontawesome.com/e67b875344.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -24,10 +22,8 @@
             <a class="icon-circle" title="link to Nina's Github page" href="https://github.com/NinaBerggren" aria-label="Go to Github page">
             <i aria-hidden="true" class="fab fa-github"></i>
             </a>
-
-         </div>
+        </div>
         <div class="heading-container" tabindex="0">
-<!-- vad ska jag skriva i rubriken? -->
             <h1 class="heading-1 uppercase">portfolio: <span class="bold">NINA BERGGREN</span></h1>
             <h1 class="heading-2">frontend</h1>
             <h1 class="heading-2">developer</h1>
@@ -37,12 +33,13 @@
     <!-- Bild på mig -->
         <img class="profile-img" src="./images/N_B_weather_small.jpg" alt="profile image of Nina Berggren">
     </header>
+
     <!----------------- Main content ------------------------------------->
  
     <!----------------- Section intro ------------------------------------->
-    <section class="summary-section" tabindex="0">
+    <section class="summary-section">
        <div class="container"> 
-            <p >
+            <p tabindex="0">
                 <span class="line"></span>
                 <span class="dot"></span>
             &emsp; Hi there! I am a frontend developer with a broad background in many diffrent fields, Mechanical engineer within design and product
@@ -65,7 +62,7 @@
                 <span class="highlight bold">JavaScript</span>  
                  |
                 <span class="highlight bold">Project Planning</span> 
-                 | Figma || Typography | 
+                 | Figma | Typography | 
                  <span class="highlight bold">Web Accessibly</span> 
                  | Agile Methodology | 
                 <span class="highlight bold">Team work</span> 
@@ -82,17 +79,22 @@
     </section>
 <!-------------------- Section projects ------------------------------------->
     <section class="projects-section" tabindex="0">
-        <div class="container flex">
-            <h2 class="uppercase">featured projects</h2>
-
+        <div class="header-featured-proj-cont">
+        <h2 class="header-featured-proj-item uppercase">featured projects</h2>
+        </div>
+        <div class="container flex-project">
+            
  <!-------------------- Section project-card template ------------------------------------->    
 
 <!-- Ändra projekt för varje project-card, kolla vilka "länkar" som skall vara i resp projekt -->
 
-        <!-- <div class="project-card">
+        <!-- <div class="project-card flex">
                 <a title="link to project site" class="project" href="netlify-link">
-                    <div class="projects-img-container">
+                    <div class="projects-img-container flex">
                     <img class="projects-img" src="./images/#.png" alt="project site">
+                        <div class="project-img-overlay"></div>
+                        <h4 aria-hidden="true" class="project-header-overlay uppercase">project name</h4>
+                        </div>
                     </div>
                     <h4 class="project-header uppercase">project site</h4>
                     <p> beskrivning av projektet</p>
@@ -111,16 +113,17 @@
                 
             </div> -->
             
-            <div class="project-card">
-        <!-- Ändra projekt för varje project-card,
-        kolla vilka "länkar" som skall vara i resp projekt -->
+            <div class="project-card flex">
                 <a title="link to project site" class="project" href="https://wildebeest-burgers.netlify.app">
-                    <div class="projects-img-container">
-                    <img class="projects-img" src="./images/business-site.png" alt="project site">
+                    <div class="projects-img-container flex">
+                    <img class="projects-img" src="./images/chatbot-site.png" alt="project site">
+                        <div class="project-img-overlay"></div>
+                        <h4 aria-hidden="true" class="project-header-overlay uppercase">chatbot</h4>
                     </div>
                     <h4 class="project-header uppercase">chatbot</h4>
-                    <p> beskrivning av projektet</p>
+                    <p>  A chatbot built in JavaScript as pair-programming project.</p>
                 </a>
+          
                 <div aria-hidden="true" class="tag-wrapper">
                     <p>HTML5</p>
                     <p>CSS3</p>
@@ -135,15 +138,15 @@
                 
             </div>
 
-            <div class="project-card">
-        <!-- Ändra projekt för varje project-card,
-        kolla vilka "länkar" som skall vara i resp projekt -->
+            <div class="project-card flex">
                 <a title="link to project site" class="project" href="https://guesswho-nina-berggren.netlify.app">
-                    <div class="projects-img-container">
+                    <div class="projects-img-container flex">
                     <img class="projects-img" src="./images/guess-who.png" alt="project site">
+                        <div class="project-img-overlay"></div>
+                        <h4 aria-hidden="true" class="project-header-overlay uppercase">The Guess Who game</h4>
                     </div>
-                    <h4 class="project-header uppercase">Guess Who game.</h4>
-                    <p> beskrivning av projektet</p>
+                    <h4 class="project-header uppercase">The Guess Who game</h4>
+                    <p> A classic "Guess Who" game built in JavaScript with objects, arrays and functions.</p>
                 </a>
                 <div aria-hidden="true" class="tag-wrapper">
                     <p>HTML5</p>
@@ -155,24 +158,24 @@
                         </div>
                     </a>
                 </div>
-                
-               
+                              
             </div>
 
-            <div class="project-card">
-        <!-- Ändra projekt för varje project-card,
-        kolla vilka "länkar" som skall vara i resp projekt -->
+            <div class="project-card flex">
                 <a title="link to project site" class="project" href="https://weatherapp-nina-linda.netlify.app">
-                    <div class="projects-img-container">
+                    <div class="projects-img-container flex">
                     <img class="projects-img" src="./images/weather-app.png" alt="project site">
-                    </div>
+                        <div class="project-img-overlay"></div>
+                        <h4 aria-hidden="true" class="project-header-overlay uppercase">weather app</h4>
+                   </div>
                     <h4 class="project-header uppercase">weather app</h4>
-                    <p> beskrivning av projektet</p>
+                    <p> An app showing today's weather and a five-day forecast of Guthenburg, Sweden. Created by fetching data from an external API and working with branches.</p>
                 </a>
                 <div aria-hidden="true" class="tag-wrapper">
                     <p>HTML5</p>
                     <p>CSS3</p>
                     <p>JavaScript</p>
+                    <p>API's</p>
                     <a class="tech-tag-github-link" title="link to Nina's Github repositories page" href="https://github.com/NinaBerggren?tab=repositories" aria-label="Go to Github page">
                         <div class="tech-tag-github">
                         <i aria-hidden="true" class="fab fa-github"></i>
@@ -182,12 +185,43 @@
                 
             </div>                  
          </div>
-<!-- här ska det vara en other project section? -->
     </section>
+<!----------------------- Section Other Projects ------------------------------------->
+    <section class="other-projects-section" tabindex="0">
+        <div class="container flex">
+            <h2 class="uppercase">Other projects</h2>
+            <div class="other-project-card flex">
+                <a
+                aria-label="Deployed version of project"
+                href="netlify-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                  <p>
+                    <span class="other-span uppercase">project</span>
+                    " description of project "
+                    <span class="other-span">>></span>
+                  </p>
+                </a>
+                <div aria-hidden="true" class="other_tag-wrapper">
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>JavaScript</p>
+                    <a class="other-tech-tag-github-link" title="link to Nina's Github repositories page" href="https://github.com/NinaBerggren?tab=repositories" aria-label="Go to Github page">
+                        <div class="other-tech-tag-github">
+                        <i aria-hidden="true" class="fab fa-github"></i>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
 <!----------------------- Section thoughts ------------------------------------->
     <section class="thoughts-section" tabindex="0">
         <div class="container flex">
-            <h2 class="uppercase">thoughts</h2>
+            <h2 class="uppercase">my thoughts</h2>
         </div>
     </section>
 <!---------------------- Section skills ------------------------------------->
@@ -205,7 +239,6 @@
                         <li>JavaScript ES6</li>
                         <li>API´s</li>
                         <li>GitHub</li>
-                        
                     </ul>
                 </div>
 
@@ -235,7 +268,7 @@
                     </ul>
                 </div>
 
-                <div class="skills-container-item">
+                <div class="skills-container-item" tabindex="0">
                     <h4 class="skills-header">UPCOMMING</h4>
                     <ul>
                         <li>Node.js</li>
@@ -243,27 +276,31 @@
                         <li>Redux</li>
                     </ul>
                 </div>
+            </div>
         </div>        
     </section>
 
 <!--------------------- Section more ------------------------------------->
     <section class="more-section">
-        <div class="container flex">
-            <h2 class="uppercase">for more</h2>
+      
+        <div class="container flex ">
+            <h2 class="uppercase" tabindex="0">for more</h2>
             
-            <div class="social-icons-container flex">
-            <a class="icon-circle" title="link to Nina's Linked In page" 
-                href="https://www.linkedin.com/in/nina-berggren/" aria-label="Go to Linked In page">
-                <i aria-hidden="true" class="fab fa-linkedin-in"></i>
-            </a>
-            <a class="icon-circle" title="link to Nina's Github page" 
-                href="https://github.com/NinaBerggren" aria-label="Go to Github page">
-                <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a class="icon-circle" title ="link to Nina's Stackoverflow page" 
-                href="https://stackoverflow.com/users/19384658/nina-berggren" aria-label="Go to Stackoverflow page">
-                <i aria-hidden="true" class="fab fa-stack-overflow"></i>
-            </a>
+            <div class="social-container flex">
+                <div class="social-icons">
+                    <a class="icon-circle" title="link to Nina's Linked In page" 
+                        href="https://www.linkedin.com/in/nina-berggren/" aria-label="Go to Linked In page">
+                        <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="icon-circle" title="link to Nina's Github page" 
+                        href="https://github.com/NinaBerggren" aria-label="Go to Github page">
+                        <i aria-hidden="true" class="fab fa-github"></i>
+                    </a>
+                    <a class="icon-circle" title ="link to Nina's Stackoverflow page" 
+                        href="https://stackoverflow.com/users/19384658/nina-berggren" aria-label="Go to Stackoverflow page">
+                        <i aria-hidden="true" class="fab fa-stack-overflow"></i>
+                    </a>
+                </div>
             </div>
             
         </div>
@@ -273,7 +310,7 @@
     <!-------------------- Footer------------------------------------->
     <footer class="contact">
         <div class="container flex" tabindex="0">
-            <h4 class="uppercase">contact</h4>
+            <h3 class="uppercase">contact</h3>
             <p>Nina Berggren</p>
             <p>+46 70 302 48 57</p>
             <a href="mailto:nina.w.berggren@gmail.com" target="_blank" rel="noopener noreferrer">
