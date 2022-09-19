@@ -1,8 +1,19 @@
 /* general styles */
 
+:root {
+  --black: #0f0f0f;
+  --white: #ffffff;
+  --heading: #88635c;
+  --tagbg: #88635c;
+  --imageframe: #f5f5f5;
+  --headerfallback: #dfa0a9;
+  --sectionbg: #fdf5f8;
+  --accent: #d54887;
+}
+
 body {
   font-size: 16px;
-  color: #0f0f0f;
+  color: var(--black);
 }
 
 a:link,
@@ -10,11 +21,11 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color: #0f0f0f;
+  color: var(--black);
 }
 
 :focus {
-  outline-color: #0f0f0f;
+  outline-color: var(--black);
   outline-width: medium;
   outline-style: solid;
   outline-offset: 4px;
@@ -38,11 +49,11 @@ a:active {
   text-transform: uppercase;
   padding-bottom: 40px;
   letter-spacing: 1px;
-  color: white;
+  color: var(--white);
 }
 
 .section-title-background {
-  background-color: #88635c;
+  background-color: var(--maincolour);
   padding: 3px;
 }
 
@@ -54,7 +65,7 @@ a:active {
   text-align: center;
   padding-top: 80px;
   padding-bottom: 40px;
-  color: #88635c;
+  color: var(--maincolour);
 }
 
 .highlight {
@@ -71,7 +82,7 @@ a:active {
   width: 100%;
   height: 475px;
   background-image: url("./images/header.jpg");
-  background-color: #dfa0a9;
+  background-color: var(--headerfallback);
   position: relative;
 }
 
@@ -104,7 +115,7 @@ a:active {
   height: 20px;
   align-self: center;
   justify-self: center;
-  fill: #0f0f0f;
+  color: var(--black);
 }
 
 .header-text-wrapper {
@@ -116,13 +127,13 @@ a:active {
 .header-text-name {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  color: #0f0f0f;
+  color: var(--black);
 }
 
 .header-text-title {
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase;
-  color: #0f0f0f;
+  color: var(--black);
   font-size: 46px;
   padding-top: 10px;
   font-weight: 700;
@@ -132,7 +143,7 @@ a:active {
 .header-text-other-title {
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase;
-  color: #0f0f0f;
+  color: var(--black);
   font-size: 24px;
   padding-top: 10px;
   font-weight: 700;
@@ -146,7 +157,7 @@ a:active {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  border: 3px solid whitesmoke;
+  border: 3px solid var(--imageframe);
   overflow: hidden;
 }
 
@@ -157,11 +168,11 @@ a:active {
 /* INTRO */
 
 .intro {
-  background-color: #fdf5f8;
+  background-color: var(--sectionbg);
 }
 
 .line {
-  border: 1px solid #d54887;
+  border: 1px solid var(--accent);
   width: 40px;
   display: inline-block;
   margin-bottom: 4px;
@@ -170,7 +181,7 @@ a:active {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #d54887;
+  background-color: var(--accent);
   border-radius: 50%;
   display: inline-block;
 }
@@ -184,7 +195,7 @@ a:active {
 /* TECH */
 
 .tech {
-  background-color: white;
+  background-color: var(--white);
 }
 
 .tech-text {
@@ -197,7 +208,7 @@ a:active {
 /* PROJECTS */
 
 .projects {
-  background-color: #fdf5f8;
+  background-color: var(--maincolour);
   justify-content: center;
 }
 
@@ -251,7 +262,7 @@ a:active {
   top: 50%;
   width: 100%;
   transform: translateY(-50%);
-  color: #ffffff;
+  color: var(--white);
   padding: 0;
   line-height: 20px;
   text-align: center;
@@ -267,7 +278,7 @@ a:active {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: #d54887;
+  color: var(--accent);
   padding-top: 22px;
   line-height: 1.6;
 }
@@ -298,7 +309,7 @@ a:active {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: #d54887;
+  color: var(--accent);
   display: inline;
 }
 
@@ -316,9 +327,9 @@ a:active {
 
 .project-tag {
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: var(--white);
   font-weight: 400;
-  background-color: #88635c;
+  background-color: var(--tagbg);
   text-decoration: none;
   font-size: 12px;
   line-height: 12px;
@@ -331,7 +342,7 @@ a:active {
 /* full size entries */
 
 .my-thoughts {
-  background-color: white;
+  background-color: var(--white);
 }
 
 .my-thoughts-container {
@@ -355,7 +366,7 @@ a:active {
 
 .my-thoughts-entry-date {
   text-transform: uppercase;
-  color: #d54887;
+  color: var(--accent);
   font-family: "Roboto", sans-serif;
   padding-top: 35px;
 }
@@ -389,7 +400,7 @@ a:active {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: #d54887;
+  color: var(--accent);
   display: inline;
 }
 
@@ -401,7 +412,7 @@ a:active {
 /* SKILLS */
 
 .skills {
-  background-color: #fdf5f8;
+  background-color: var(--maincolour);
   text-align: center;
 }
 
@@ -420,7 +431,7 @@ a:active {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: #d54887;
+  color: var(--accent);
   padding-bottom: 3px;
 }
 
@@ -432,7 +443,7 @@ a:active {
 /* FOR MORE */
 
 .for-more {
-  background-color: white;
+  background-color: var(--white);
 }
 
 .for-more-icons {
@@ -446,7 +457,7 @@ a:active {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 2px solid #88635c;
+  border: 2px solid var(--maincolour);
   display: grid;
   margin: 0 auto;
 }
@@ -456,14 +467,14 @@ a:active {
   height: 28px;
   align-self: center;
   justify-self: center;
-  fill: #88635c;
+  fill: var(--maincolour);
 }
 
 .for-more-entry-site-name {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: #88635c;
+  color: var(--maincolour);
   text-align: center;
   padding-top: 15px;
   font-size: 15px;
@@ -473,7 +484,7 @@ a:active {
 /* FOOTER */
 
 .footer {
-  background-color: #d54887;
+  background-color: var(--accent);
 }
 
 .footer-title {
@@ -491,7 +502,7 @@ a:active {
   font-weight: 400;
   font-size: 18px;
   text-align: center;
-  color: white;
+  color: var(--white);
   line-height: 1.6;
 }
 
