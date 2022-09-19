@@ -16,7 +16,7 @@ LEARNINGS:
 TAKE AWAYS:
 - Stick to my process -> Make a sketch, make a priority order of the things I need to solve for, make a plan based on the sketch and prio list, stick to the plan. This week I really felt the heat of choosing to freestyle and have learned my lesson.
 
-- Explore how I can evolve my style language to include more contrast and accessibility elements whilst still staying true to me.
+- Explore how I can evolve my style language to include more contrast and accessibility elements whilst still staying true to me. Leaving a lot of commented content in style sheet to know where to explore further, instead of cleaning it up.
 
 - I should use google a lot more than I do currently.
 

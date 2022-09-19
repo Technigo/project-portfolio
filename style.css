@@ -1,5 +1,6 @@
 :root {
-    ---primary:  #F2A2E4;
+    /* ---primary:  #F2A2E4; another option for primary */
+    ---primary:  #eb72d5d1;
     ---secondary: #d4c4af;
     ---main: #dfd3c38a;
     ---highlight: #F090D9;
@@ -87,13 +88,6 @@ a {
     right: 25px;
 }
 
-.top-social-icon {
-    width: 50px;
-    height: 50px;  
-    margin: 5px;
-    background: transparent;
-}
-
 .profile-picture {
     position:absolute;
     margin: 50px;
@@ -105,7 +99,7 @@ a {
 
 
 .top-section-text {
-    color: var(---highlight);
+    color: var(---primary);
     position: absolute;
     width: 300px;
     top: 121px;
@@ -113,7 +107,7 @@ a {
 }
 
 .portfolio {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
@@ -219,8 +213,7 @@ a {
 }
 
 .project-overlay-title {
-    /* color: var(---primary); */
-    color: var(---accent);
+    color: #e867d0;
     background-color: transparent;
     font-size: 34px;
     line-height: 40px;
@@ -365,17 +358,24 @@ a {
     background-color: #c8aa89c6;
     align-items: center;
 }
+
+.footer-container {
+    padding: 40px;
+    width: 100%;
+}
+
 .footer-heading {
     margin-bottom: 20px;
     /* background: #F090D9; //not decided on final styling yet */
-    color: #ed78d7;
+    color: #e475d0e2;
     background: none;
     font-weight: bold;
+    font-size: 25px;
 }
 
 .footer-box {
     text-align: center;
-    color: #C400FF;
+    color: var(---accent);
 }
 
 .footer-box >p {
@@ -383,3 +383,56 @@ a {
     font-weight: 450;
 }
 
+/* MOBILE */
+
+@media (max-width: 669px) {
+
+h1 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.other-skills {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.portfolio {
+    font-size: 15px;
+}
+
+.top-section-text {
+    top: 140px;
+    left: 10px;
+}
+
+.profile-picture {
+    /* position: ; */
+    margin: 5px;
+    right: 25%;
+    width: 150px;
+    height: 150px;
+    top: 325px;
+    }
+
+.project-image-box {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: 0, 20px, 0. 20px;
+    }
+
+.footer {
+    padding: 50px;
+    justify-content: center;
+    }
+
+.footer-container {
+    padding: 0px;
+    }
+
+.footer-box {
+    width: fit-content;
+    }
+
+}
