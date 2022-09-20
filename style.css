@@ -11,11 +11,12 @@
 }
 
 :root {
-  --mainColor: #2F72FF;
+  --mainColor: #ece9e6;
+  --toolsColor: #2F72FF; 
   --secondryColor: #ece9e6;
   --hoverColor:rgb(249, 242, 242);
   --projectNamebackground: #F0CA14;
-  --boxColor: #F51939;
+  --boxColor: #cf3d53;
   --fontFamily: 'Roboto Serif', serif;
   --borderColor: #e7d0d0;
   --fontFamily: 'Roboto', sans-serif;
@@ -137,7 +138,10 @@ a {
   padding-right: 1rem;
   font-family: var(--fontFamily);
   font-size: 22px;
+
 }
+
+
 
 .aboutMe p{
   font-size: 22px;
@@ -212,6 +216,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: flex-end; */
+
 }
 
 
@@ -260,16 +266,14 @@ a {
 
 }
 
-#project1,
-#project2,
-#project3,
-#project4 {
+.projectP{
   margin-left: 1rem;
   margin-right: 1rem;
+  color: var(--grayText);
+  font-weight: 500;
 }
-
 .cssLogo {
-  color: var(--secondryColor);
+  color: var(--toolsColor);
 }
 
 .btnProjectShow {
@@ -312,6 +316,7 @@ li {
 /* My thougth */
 
 .thoughtAndCode{
+  width: 90vw;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   column-gap: 1rem;
