@@ -21,4 +21,4 @@ The project aimed to build a portfolio page to present ourselves, our work and s
 I focused mainly on the structure and to create the page, and then at the end I tried to make it accessiable. If there was more time, I would optimise the code, work on the design, add content and make sure it was even more accessible. 
 
 ## View it live
-https://petraandcharlotteweatherapp.netlify.app/
+https://petrasportfolio.netlify.app/
