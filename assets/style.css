@@ -1,3 +1,19 @@
+/*
+
+@TODO 
+Add media query or something to fix the fact that bg image is too short for larger screens (2000px plus)
+and also that icons and header h1s dont align with rest of content either then
+
+Add VIEW LIVE button to projects that link to deplayed ver
+
+Look into stray unclosed divs
+see:
+https://validator.w3.org/nu/?doc=https%3A%2F%2Famanda-w.netlify.app%2F&__cf_chl_tk=zlZFYrp9FDdcB7j16PQ6I6A97VwWlzdjGjH_3XBUTjU-1663783548-0-gaNycGzNB-U
+
+fix other issues form validator
+
+*/
+
 /* general styles */
 
 :root {
@@ -53,7 +69,7 @@ a:active {
 }
 
 .section-title-background {
-  background-color: var(--maincolour);
+  background-color: var(--heading);
   padding: 3px;
 }
 
@@ -106,7 +122,7 @@ a:active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #0f0f0f;
+  border: 2px solid var(--black);
   display: grid;
 }
 
@@ -115,7 +131,7 @@ a:active {
   height: 20px;
   align-self: center;
   justify-self: center;
-  color: var(--black);
+  fill: var(--black);
 }
 
 .header-text-wrapper {
@@ -457,7 +473,7 @@ a:active {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 2px solid var(--maincolour);
+  border: 2px solid var(--heading);
   display: grid;
   margin: 0 auto;
 }
@@ -467,14 +483,14 @@ a:active {
   height: 28px;
   align-self: center;
   justify-self: center;
-  fill: var(--maincolour);
+  fill: var(--heading);
 }
 
 .for-more-entry-site-name {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: var(--maincolour);
+  color: var(--heading);
   text-align: center;
   padding-top: 15px;
   font-size: 15px;
