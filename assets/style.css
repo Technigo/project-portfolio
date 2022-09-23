@@ -1,9 +1,6 @@
 /*
 
 @TODO 
-Add media query or something to fix the fact that bg image is too short for larger screens (2000px plus)
-and also that icons and header h1s dont align with rest of content either then
-
 Add VIEW LIVE button to projects that link to deplayed ver
 
 Look into stray unclosed divs
@@ -97,25 +94,20 @@ a:active {
 .main-header {
   width: 100%;
   height: 475px;
-  background-image: url("./images/header.jpg");
+  background-image: url("./images/header_crop.jpg");
   background-color: var(--headerfallback);
   position: relative;
+  background-size: cover;
+  background-position: 40% 60%;
 }
 
-.header-wrapper {
-  width: 70%;
-  max-width: 800px;
-  margin: 0 auto;
-}
+
 
 .header-icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   gap: 10px;
-  margin: 0 auto;
-  position: absolute;
-  top: 40px;
-  right: 10%;
+  justify-content: flex-end;
+  padding-top: 40px;
 }
 
 .header-icon-container {
@@ -167,9 +159,9 @@ a:active {
 }
 
 .profile-image {
-  position: absolute;
-  right: 10%;
-  bottom: -5%;
+  margin-top: 260px;
+  display: flex;
+  margin-left: auto;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -530,7 +522,7 @@ a:active {
   }
 }
 
-/* TABLET & DESKTOP */
+/* TABLET */
 
 @media (min-width: 668px) {
   .hidden-on-tablet-and-desktop {
@@ -545,12 +537,8 @@ a:active {
     height: 500px;
   }
 
-  .header-text-wrapper {
-    left: 23%;
-  }
-
   .profile-image {
-    right: 22%;
+    margin-top: 280px;
   }
 
   .featured-projects-container {
@@ -586,3 +574,13 @@ a:active {
     font-size: 15px;
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: 992px) {
+
+  .profile-image {
+    margin-top: 290px;
+  }
+
+  }
