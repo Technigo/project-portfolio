@@ -1,10 +1,8 @@
 body {
-font-family: Montserrat;
-font-weight: 700;
-background: #e6e0d4
-;
-
-
+    font-family: Montserrat;
+    font-weight: 700;
+    background: #e6e0d4;
+    margin: 0px;
 }
 
 footer {
@@ -26,22 +24,15 @@ top: 0px;
 border-radius: 0px;
 }*/
 
-.wrapper{
-    min-width: 380px;
-    max-width: 1199px;
-    height: 4500px;
-    margin: 30px;
-    padding: 30px;
 
-}
 
-header {    
+
+.header {    
     position: absolute;
-    width: 100%;
+    /*width: 100vw;*/
     height: 520px;
     left: 0px;
     top: 0px;
-    background-image: url(./Pictures/backgroundPic.PNG);
     background-repeat: no-repeat;
     color: #3b362a;
     /*text-align: right;
@@ -49,7 +40,11 @@ header {
     ;*/
 }
 
-.portfolio {
+.background-img {
+    width: 100vw;
+}
+
+/*.portfolio {
     position: absolute;
     top: 220px;
     text-align: center;
@@ -58,27 +53,27 @@ header {
 
 .myPicture {
  /* Positioning */
- position: absolute;
+ /* position: absolute;
  left:300px;
  top:200px;
  bottom:100px;
 
  width: 150px;
- height: 150px;
+ height: 150px; */
 
  /*  Rounded corners */
- border-radius: 50%;
+ /* border-radius: 50%; */
 
  /* An outline on the circle */
- border: 2px solid whitesmoke;
+ /* border: 2px solid whitesmoke; */
 
  /* Makes sure nothing sticks out of the circle */
- overflow: hidden;
-}
+ /* overflow: hidden; */
+/* } */
 
-.myPicture > img {
+/* .myPicture > img {
     width: 100%;
-  }
+  } */
 
 .about_me {
     display: flex;
@@ -326,7 +321,7 @@ top: 120px;
 
 /* for desktop */
 
-@media only screen and (min-width: 1200px) {
+/*@media only screen and (min-width: 1200px) {
 .wrapper {
     display: revert;
     position: relative;
@@ -408,10 +403,10 @@ header {
     line-height: 50px;
     /* or 167% */
 
-    text-align: center;
+  /*  text-align: center;
     letter-spacing: 0.01em;
     top:225px;
-}
+ 
 
 .projects {
     position: relative;
@@ -478,7 +473,7 @@ header {
 
 
 
-/* for tablet */
+/* for tablet 
 
 
 @media only screen and (min-width: 600px) {
@@ -518,3 +513,4 @@ header {
     }
 
 }
+ 
