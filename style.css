@@ -12,7 +12,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #d2cfc6;
+    background-color: #FECD70;
+    /* background-color: #d2cfc6; */
 }
 
 .main-header {
@@ -35,6 +36,7 @@ body {
     height: 180px;
     left: 50%;
     top: 356px;
+    
     /*  Rounded corners */
     border-radius: 50%;
     object-fit: cover;
@@ -111,9 +113,8 @@ h3 {
     position: relative;
     display: flex;
     width: 100%;
-    height: 324px;
     top: 520px;
-    background: #c2c296;
+    background: #E3C770;
     opacity: 60%;
     align-items: center;
     justify-content: center;
@@ -155,32 +156,37 @@ h3 {
 }
 
 .tag {
-    position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 900px;
-    margin-left: 10%;
-    margin-right: 10%;
+    position: absolute;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
+    height: 200px;
     font-size: 17px;
-    line-height: 29px;
+    justify-content: center;
     text-align: center;
-    background: #c2c296;
+    margin-top: 600px;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    line-height: 29px;
+    background-color: #F3E0B5;
+    margin-top: 500px;
 }
 
 .tag-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 324px;
+    top: -5px;
+    justify-self: center;
     left: auto;
-    top: -200px;
     color: #011f0d;
     font-weight: 900;
     font-size: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    background-color:#90B77D;
 }
 
 p {
@@ -189,6 +195,20 @@ p {
 
 /* Featured projects */
 
+.featured-title {
+    position: relative;
+    display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
+    justify-content: center;
+    top: 750px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+  
+}
+
 .featured-projects {
     display: flex;
     flex-direction: column;
@@ -196,26 +216,6 @@ p {
     width: 100%;
     margin-top: 800px;
 }
-
-.featured-title {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 750px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-}
-
-a {
-    color: rgb(34, 21, 0);
-}
-
-a:link {
-    text-decoration: none;
-}
-
 .pic {
     display: flex;
     width: 100%;
@@ -233,21 +233,12 @@ a:link {
     border-radius: 5%;
 }
 
-
-.project1:hover .pic {
-    opacity: 1;
+a {
+    color: rgb(34, 21, 0);
 }
 
-.project2:hover .pic {
-    opacity: 1;
-}
-
-.project3:hover .pic {
-    opacity: 1;
-}
-
-.project4:hover .pic {
-    opacity: 1;
+a:link {
+    text-decoration: none;
 }
 
 h2.projectTitle {
@@ -260,6 +251,7 @@ h2.projectTitle {
     line-height: 29px;
     width: 220px;
     height: 202px;
+    text-align: left;
 
 }
 
@@ -269,7 +261,7 @@ h2.projectTitle {
     font-weight: 400;
     font-size: 17px;
     line-height: 29px;
-    margin-top: -40px;
+    text-align: left;
 }
 
 .centered {
@@ -281,7 +273,6 @@ h2.projectTitle {
     border-radius: 5%;
     background-color: #e0dedd;
 }
-
 .project1 {
     width: 327px;
     position: relative;
@@ -300,7 +291,7 @@ h2.projectTitle {
 .project4 {
     width: 327px;
     position: relative;
-}
+} 
 
 
 /* Tag Wrappers */
@@ -342,21 +333,26 @@ h2.projectTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
+    text-align: left; 
+    /* margin-top: 80px; */
+    /* align-items: center;
     width: 100%;
     margin-top: 80px;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
 }
-
 
 .other-projects-title {
     position: relative;
     display: flex;
-    width: 200px;
-    height: 26px;
+    top: 40px;
     left: auto;
+    /* width: 200px; */
+    /* height: 26px; */
+    /* left: auto;
     top: 10px;
-    justify-content: center;
+    justify-content: center; */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -364,14 +360,7 @@ h2.projectTitle {
     line-height: 27px;
     text-align: center;
     color: #011f0d;
-    background-color: #e5e10ed8;
-
 }
-
-.otherProjects1 {
-    margin-top: -1%;
-}
-
 
 /* My Thoughts and More Thoughts*/
 
@@ -379,8 +368,9 @@ h2.projectTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin-top: -100px;
+    /* width: 100%; */
+    /* margin-top: -100px; */
+    background-color: #F3E0B5;
 }
 
 h3.myThoughts-title {
@@ -388,13 +378,14 @@ h3.myThoughts-title {
     display: flex;
     justify-content: center;
     left: auto;
-    margin-bottom: 50px;
+    top: 10px;
+    /* margin-bottom: 50px; */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    width: 220px;
-    height: 202px;
+    /* width: 220px; */
+    /* height: 202px; */
 }
 
 
@@ -402,9 +393,9 @@ h3.myThoughts-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin-top: 20px;
-
+    /* width: 100%; */
+    background-color: #F3E0B5;
+    
 }
 
 .moreThoughts-title {
@@ -423,14 +414,12 @@ h3.myThoughts-title {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    background: #c2c296;
-
+    /* width: 50%; */
 }
 
 .mySkills-title {
     position: relative;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     margin-bottom: 5px;
     font-family: 'Montserrat';
@@ -459,14 +448,16 @@ h3.myThoughts-title {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    /* width: 100%; */
+    background-color: #F3E0B5;
+    
+    
 }
 
 .forMore-title {
     position: relative;
     display: flex;
-    width: 255px;
-    height: 26px;
+    /* width: 255px; */
     justify-content: center;
     left: auto;
     top: -10px;
@@ -477,8 +468,7 @@ h3.myThoughts-title {
     line-height: 27px;
     text-align: center;
     color: #011f0d;
-    margin-bottom: 2px;
-    background-color: #e5e10ed8;
+    background-color:#90B77D;
 }
 
 .socialmedia-linksBottom {
@@ -506,7 +496,8 @@ h3.myThoughts-title {
     line-height: 25px;
     text-align: center;
     color: #011f0d;
-    background-color: rgb(255, 136, 0);
+    background-color:  #FFAE6D;
+    /* background-color: rgb(255, 136, 0); */
     padding: 8vh 8vh;
 
 }
@@ -529,6 +520,7 @@ h3.myThoughts-title {
 
 
 @media (min-width: 668px) {
+
 
     .profilio-image {
         left: 60%;
@@ -563,11 +555,6 @@ h3.myThoughts-title {
         margin-right: 20%;
     }
 
-    .tag {
-        margin-right: 20%;
-        margin-left: 20%;
-    }
-
     .socialmedia-linksBottom {
         width: 60%;
         justify-content: space-evenly;
@@ -578,13 +565,31 @@ h3.myThoughts-title {
         padding: 0px;
     }
 
-    .featured-projects {
+   .featured-projects {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
+    }  
+     
 
     .text-summary {
         font-size: 20px;
     }
+
+    .project1:hover .pic {
+        opacity: 1;
+    }
+    
+    .project2:hover .pic {
+        opacity: 1;
+    }
+    
+    .project3:hover .pic {
+        opacity: 1;
+    }
+    
+    .project4:hover .pic {
+        opacity: 1;
+    }
+
 }
