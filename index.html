@@ -12,9 +12,6 @@
 
 
 <body>
-
-    <!-- HEADER -->  
-    <header class="hero-section">
         <div class="SoMe-links">
             <a href="https://www.linkedin.com/in/linusje/" target="_blank">
             <img class= "SoMe-icon" src="./images/some/linkedin.svg" alt= "LinkedIn"/></a>
@@ -25,210 +22,233 @@
             <a href="https://stackoverflow.com/c/technigo/users/364" target="_blank">
             <img class= "SoMe-icon" src="./images/some/stackoverflow.svg" alt= "Stack Overflow"/></a>
         </div>
-             
-        <img class= "profile-image" src="./images/linus_profile.JPG" alt= "Profile image"/> 
-        <div class="hero-text">
-            <p>Linus Eriksson</p>
-            <h1 class="main-heading">Frontend developer </h1>
-            <p class="second-heading" >+ Visual designer</p>
-        </div>
+        <!-- HEADER -->  
+        <header>
+            <div class="hero-section">
+                <img class= "profile-image" src="./images/linus_profile.JPG" alt= "Profile image"/> 
+                <div class="hero-text-container">
+                    <p>Linus Eriksson</p>
+                    <h1>Frontend developer </h1>
+                    <p class="second-heading">+ Visual designer</p>
+                </div>
+            </div>
+        </header>
 
-    </header>
+        <!-- INTRO CONTAINER -->
 
-    <!-- INTRO CONTAINER -->
-    <section class="section-container">
-        <p class="body-text">My name is Linus, I'm a frontend developer and visual designer based in Stockholm, Sweden. I'm always looking for exciting opportunities to improve my craft and work together with amazing people. That's where you come in!</p>
-    </section>
-    
-    
-    <!-- TECH CONTAINER -->
-    <section class="section-container white">
-        <h3>Tech</h3>
-        <p class="body-text">HTML, CSS, Flexbox, JavaScript, Web Accessibly, API:s, mob-programming, pair-programming, Github</p>
-    </section>
-
-    <!-- FEATURED PROJECT -->
-    <section class="section-container">
-        <h2>Featured projects</h2>
-        <div class="project-container">
+        <section>
+            <div class="section-content">
+                <p>My name is Linus, I'm a frontend developer and visual designer based in Stockholm, Sweden. I'm always looking for exciting opportunities to improve my craft and work together with amazing people. That's where you come in!</p>
+            </div>
+        </section>
         
-            <div class="project">
+        
+        <!-- TECH CONTAINER -->
+        <section class="white">
+            <div class="section-content">
+                <h2>Tech</h2>
+                <p>HTML, CSS, Flexbox, JavaScript, Web Accessibly, API:s, mob-programming, pair-programming, Github</p>
+            </div>
+        </section>
 
-                    <a href="https://silver-profiterole-7224fd.netlify.app" target="_blank">
-                        <div class="project-image">
-                            <img class="image" src="./images/weather-app.jpg" alt="weather app">
-                            <div class="overlay">View project</div>
-                        </div>
-                    </a>
+        <!-- FEATURED PROJECT -->
+        <section>
+            <div class="section-content">
+                <h2>Featured projects</h2>
+                <div class="project-container">
                 
+                    <div class="project-card">
 
-                <div class ="description">
-                    <h4>Weather app</h4> 
-                    <p class="description-text">Responsive website connected with weather API </p>
+                            <a href="https://silver-profiterole-7224fd.netlify.app" target="_blank">
+                                <div class="project-image-container">
+                                    <img class="project-image" src="./images/weather-app.jpg" alt="weather app">
+                                    <div class="overlay">
+                                        <div class="overlay-text">View project</div>
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                        
+
+                        <div class ="description">
+                            <h4>Weather app</h4> 
+                            <p class="project-text">Website connected with weather API </p>
+                        </div>
+            
+                        <div class="tags-container">
+                            <div class="tags">API</div>
+                            <div class="tags">HTML</div>
+                            <div class="tags">CSS</div>
+                            <div class="tags">JAVASCRIPT</div>
+                        </div>
+
+                        <div class="project-buttons">
+                            <form> <button formaction="https://github.com/Technigo/project-weather-app/pull/227"> View on Github</button>
+                            </form> 
+                        </div>    
+                    </div>
+
+                    <div class="project-card">
+                        <a href="https://the-music-release-project.netlify.app" target="_blank">
+                            <div class="project-image-container">
+                                <img class="project-image" src="./images/music-releases.jpg" alt="weather app">
+                                <div class="overlay">
+                                    <div class="overlay-text">View project</div>
+                                </div>
+                                
+                            </div>
+                        </a>
+
+                        <div class ="description">
+                            <h4>Music page</h4> 
+                            <p class="project-text">Responsive new music release page using react</p>
+                        </div>
+
+                        <div class="tags-container">
+                            <div class="tags">REACT</div>
+                            <div class="tags">HTML</div>
+                            <div class="tags">CSS</div>
+                            <div class="tags">JAVASCRIPT</div>
+                        </div>
+
+                        <div class="project-buttons">
+                            <form> <button formaction="https://github.com/Technigo/project-music-releases/pull/221"> View on Github</button>
+                            </form> 
+                        </div>    
+                    </div>
                 </div>
-      
-                <div class="code-container">
-                    <div class="tags">API</div>
-                    <div class="tags">HTML</div>
-                    <div class="tags">CSS</div>
-                    <div class="tags">JAVASCRIPT</div>
-                 </div>
 
-                <div class="project-buttons">
-                    <form> <button formaction="https://github.com/Technigo/project-weather-app/pull/227"> View on Github</button>
-                    </form> 
-                </div>    
-            </div>
+                <!-- OTHER PROJECTS -->
+                <h3 class="header-margin">Other projects</h3>
+                <div class="project-container project-column">
 
-            <div class="project">
-                <a href="https://the-music-release-project.netlify.app" target="_blank">
-                    <img class="image" src="./images/music-releases.jpg" alt="music release page">
-                </a>
+                    <div class="project-card">
+                        <div class ="description">
+                            <a href="https://creative-lolly-f0d26c.netlify.app/" target="_blank">
+                                <h4>Guess who</h4> 
+                                <p class="project-text">Simple game, practicing working with arrays</p>
+                            </a>
+                        </div>
+                        <div class="tags-container">
+                            <div class="tags">HTML</div>
+                            <div class="tags">CSS</div>
+                            <div class="tags">JAVASCRIPT</div>
+                        </div>
+                    </div>
 
-                <div class ="description">
-                    <h4>Music page</h4> 
-                    <p class="description-text">Responsive new music release page using react</p>
+                    <div class="project-card">
+                        <div class ="description">
+                            <a href="https://subtle-paletas-e779d4.netlify.app/" target="_blank">
+                                <h4>Chatbot</h4> 
+                                <p class="project-text">Practice using if-statements to create a chatbot that tells jokes.</p>
+                            </a>
+                        </div>
+                        <div class="tags-container">
+                            <div class="tags">HTML</div>
+                            <div class="tags">CSS</div>
+                            <div class="tags">JAVASCRIPT</div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="code-container">
-                    <div class="tags">REACT</div>
-                    <div class="tags">HTML</div>
-                    <div class="tags">CSS</div>
-                    <div class="tags">JAVASCRIPT</div>
-                </div>
-
-                <div class="project-buttons">
-                    <form> <button formaction="https://github.com/Technigo/project-music-releases/pull/221"> View on Github</button>
-                    </form> 
-                </div>    
-            </div>
-
-    <!-- OTHER PROJECTS -->
-        <h3>Other projects</h3>
-        <div class="project-container">
-
-            <div class="project">
-                <div class ="description">
-                    <a href="https://creative-lolly-f0d26c.netlify.app/" target="_blank">
-                        <h4>Guess who</h4> 
-                        <p class="description-text">Simple game, practicing working with arrays</p>
-                    </a>
-                </div>
-                <div class="code-container">
-                    <div class="tags">HTML</div>
-                    <div class="tags">CSS</div>
-                    <div class="tags">JAVASCRIPT</div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class ="description">
-                    <a href="https://subtle-paletas-e779d4.netlify.app/" target="_blank">
-                        <h4>Chatbot</h4> 
-                        <p class="description-text">Practice using if-statements to create a chatbot that tells jokes.</p>
-                    </a>
-                </div>
-                <div class="code-container">
-                    <div class="tags">HTML</div>
-                    <div class="tags">CSS</div>
-                    <div class="tags">JAVASCRIPT</div>
-                </div>
-            </div>
-        </div> 
-    </section>
-
-
-    <!-- MY THOUGHTS ABOUT CODE
-    <section class="thoughts-container">
-        <h3 class="container-heading">MY THOUGHTS</h3>
-
-    <div class="thougts-grid">
-        <div class="primary-thought">
-            <div class ="describing">
-               <p class="describing-title"></p> 
-               <p class="describing-text"> // Coming up!<b></b></p>   
-            </div>
-        </div>
-    </div>
- 
-    <div class= "More-thoughts">
-    <h4 class="small-heading">MORE THOUGHTS</h4>
-            <div class ="describing">
-                <p class="describing-title"></p> 
-                <p class="describing-text"> <b>>></b></p>
             </div> 
-        </div> 
-    </section>  -->
+        </section>
 
 
-    <!-- SKILLS-->
-    <section class="section-container white">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div>
-                <h4>Code</h4> 
-                    <p>GitHub</p>
-                    <p>HTML & CSS</p>
-                    <p>JavaScript</p>
-                    <p>React</p>
-            </div>
+        <!-- MY THOUGHTS ABOUT CODE
+        <section class="thoughts-container">
+            <h3 class="container-heading">MY THOUGHTS</h3>
 
-            <div>
-                <h4>Upcoming</h4> 
-                    <p>Node.js</p>
-                    <p>Redux</p>
-            </div>
-
-            <div>
-                <h4>Toolbox</h4> 
-                    <p>Figma</p>
-                    <p>Invision</p>
-                    <p>Photoshop</p>
-                    <p>Illustrator</p>
-            </div>
-
-            <div>
-                <h4>More</h4> 
-                    <p>WCAG 2.1</p>
-                    <p>UI-design</p>
-                    <p>Design systems</p>
-                    <p>Creative processes</p>
+        <div class="thougts-grid">
+            <div class="primary-thought">
+                <div class ="describing">
+                <p class="describing-title"></p> 
+                <p class="describing-text"> // Coming up!<b></b></p>   
+                </div>
             </div>
         </div>
-    </section>
+    
+        <div class= "More-thoughts">
+        <h4 class="small-heading">MORE THOUGHTS</h4>
+                <div class ="describing">
+                    <p class="describing-title"></p> 
+                    <p class="describing-text"> <b>>></b></p>
+                </div> 
+            </div> 
+        </section>  -->
 
-   <!-- FOR MORE-->
-    <section class="section-container">
-        <h2>For more</h2>
 
-         <div class="socialmedia-container">
-            <div class="social-media">
-                <a href="https://github.com/erilinus" target="_blank">
-                    <img class= "icon" src="./images/some/github.svg" alt= "Github"/>Github</a>
-             
-             </div>
+        <!-- SKILLS-->
+        <section class="white">
+            <div class="section-content">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div>
+                        <h4>Code</h4> 
+                            <p>GitHub</p>
+                            <p>HTML & CSS</p>
+                            <p>JavaScript</p>
+                            <p>React</p>
+                    </div>
 
-            <div class="social-media">
-                <a href="https://stackoverflow.com/c/technigo/users/364" target="_blank">
-                    <img class= "icon" src="./images/some/stackoverflow.svg" alt= "Stack Overflow"/>Stack Overflow</a>
-             
+                    <div>
+                        <h4>Upcoming</h4> 
+                            <p>Node.js</p>
+                            <p>Redux</p>
+                    </div>
+
+                    <div>
+                        <h4>Toolbox</h4> 
+                            <p>Figma</p>
+                            <p>Invision</p>
+                            <p>Photoshop</p>
+                            <p>Illustrator</p>
+                    </div>
+
+                    <div>
+                        <h4>More</h4> 
+                            <p>WCAG 2.1</p>
+                            <p>UI-design</p>
+                            <p>Design systems</p>
+                            <p>Creative processes</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/linusje/" target="_blank">
-                    <img class= "icon" src="./images/some/linkedin.svg" alt= "LinkedIn"/>Linkedin</a>
+        <!-- FOR MORE-->
+        <section>
+            <div class="section-content">
+                <h2>For more</h2>
+
+                <div class="socialmedia-container">
+                    <div class="social-media">
+                        <a href="https://github.com/erilinus" target="_blank">
+                            <img class= "SoMe-icon" src="./images/some/github.svg" alt= "Github"/>Github</a>
+                    
+                    </div>
+
+                    <div class="social-media">
+                        <a href="https://stackoverflow.com/c/technigo/users/364" target="_blank">
+                            <img class= "SoMe-icon" src="./images/some/stackoverflow.svg" alt= "Stack Overflow"/>Stack Overflow</a>
+                    
+                    </div>
+
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/linusje/" target="_blank">
+                            <img class= "SoMe-icon" src="./images/some/linkedin.svg" alt= "LinkedIn"/>Linkedin</a>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <!-- CONTACT-->
+        <footer class="white">
+            <div class="section-content">     
+                <h2>Contact</h2>
+                <p>Linus Eriksson</p>
+                <p>+46 72 51 66 086</p>
+                <p>erilinus@gmail.com</p>
             </div>
-        </div>    
-    </section>
-
-   <!-- CONTACT-->
-<footer class="contact">
-    <div class="section-container white">     
-        <h2>Contact</h2>
-        <p>Linus Eriksson</p>
-        <p>+46 72 51 66 086</p>
-        <p>erilinus@gmail.com</p>
-    </div>
-</footer>
+        </footer>
 </body>
 </html>
