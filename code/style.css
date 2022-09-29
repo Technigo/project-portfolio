@@ -7,26 +7,21 @@ body {
 
 
 header {
-    position: relative;
-    width: 100%;
     height: 500px;
-    left: 0px;
-    top: 0px;
     background: url(https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
     background-size: cover;
 }
 
 .header-text-group {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     position: absolute;
     width: 0%;
-    left: 10%;
-    top: 30%;
-    font-family: 'Roboto', sans-serif;
+    left: 30px;
+    top: 200px;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
-    flex-wrap: wrap;
 }
 
 .header-text {
@@ -46,7 +41,7 @@ header {
 
 .title {
     font-weight: 700;
-    font-size: 3.8em;
+    font-size: 3em;
     letter-spacing: 0.04em;
     color: #FFFFFF;
 }
@@ -78,8 +73,8 @@ header {
 
 .profile-pic {
     position: absolute;
-    right: 10%;
-    top: 72%;
+    right: 10px;
+    top: 390px;
     height: 150px;
     width: 150px;
     border: 2px solid white;
@@ -191,6 +186,10 @@ a[href^=tel] {
 
 .project-info:hover, .more-thoughts-card:hover, .thoughts-card:hover, .thoughts-info:hover {
     text-decoration: underline;
+}
+
+.project-card {
+    width: 100%;
 }
 
 .tag-container {
@@ -348,7 +347,7 @@ footer {
 
     /** Media Queries **/ 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
  
     
     .soMe-header {
@@ -359,13 +358,17 @@ footer {
 
 
     .intro-section, .tech-section {
-        padding: 2%;
+        padding: 20px 50px;
     }
 
     .intro-summary, .tech-summary {
-        font-size: 1.4em;
+        font-size: 1em;
         width: 80%;
         align-self: center;
+    }
+
+    .header-text-group {
+        left: 100px;
     }
 
     .hidden {
@@ -373,9 +376,10 @@ footer {
     }
 
     .featured-projects-container, .other-projects-container, .mythoughts-container {
+        align-items: baseline;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 4%;
-        padding: 5%;
+        grid-gap: 2%;
+        padding: 20px 50px;
         justify-items: center;
     }
 
@@ -385,11 +389,28 @@ footer {
 
     .skills-group {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 20px 50px;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
  
+    .header-text-group {
+        display: flex;
+        position: absolute;
+        width: 0%;
+        left: 15%;
+        top: 100px;
+    }
+
+    .profile-pic {
+        right: 100px;
+    }
+
+    .header-text {
+        font-size: 1.4em;
+    }
+
     .soMe-header {
         right: 15%;
         top: 12%;
@@ -397,10 +418,11 @@ footer {
     }
 
     .intro-section, .tech-section {
-        padding: 2%;
+        padding: 20px 50px;
     }
 
     .intro-summary, .tech-summary {
+        font-size: 1em;
         width: 70%;
         align-self: center;
     }
@@ -410,10 +432,16 @@ footer {
     }
 
     .featured-projects-container, .other-projects-container, .mythoughts-container {
+        align-items: baseline;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 4%;
-        padding: 2%;
+        grid-gap: 10px;
+        padding: 20px 50px;
         justify-items: center;
+    }
+
+    .featured-projects, .my-thoughts, .skills {
+        background: #F4F4F4;
+        padding: 20px 125px;
     }
 
     .overlay-image, .project-img {
