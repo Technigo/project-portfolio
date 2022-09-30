@@ -49,8 +49,15 @@ h4 {
   position: relative;
 }
 
+.head-wrapper {
+  position: relative;
+}
 .main-header {
-  background-image: url(./pic/forest.jpeg);
+  background-image: linear-gradient(
+      rgba(11, 11, 11, 0.52),
+      rgba(11, 11, 11, 0.52)
+    ),
+    url(./pic/forest.jpeg);
   background-size: cover;
   background-position: center;
   height: 350px;
@@ -70,6 +77,7 @@ h4 {
   height: 45px;
   width: 45px;
 }
+
 /* */
 .head-wrapper {
   font-family: "Roboto";
@@ -297,6 +305,9 @@ footer .inner-wrapper {
   align-items: center;
   flex-direction: column;
 }
+footer a {
+  color: white;
+}
 
 .contact-details {
   text-align: center;
@@ -353,6 +364,10 @@ footer .inner-wrapper {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .profile-img {
     width: 160px;
+    height: 160px;
+    position: absolute; /* lets us choose position of the img */
+    right: -2vh;
+    top: 15vh;
   }
 }
 /* DESKTOP ONLY */
@@ -366,7 +381,7 @@ footer .inner-wrapper {
     width: 180px;
     position: absolute; /* lets us choose position of the img */
     right: -2vh;
-    top: 22vh;
+    top: 15vh;
   }
 
   .logo img {
