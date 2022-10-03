@@ -1,6 +1,6 @@
-* {
+ /** {
     outline: 1px solid red;
-  } /* CSS debugging tool */
+  }  CSS debugging tool  */
 
 body {
     font-family: Montserrat;
@@ -37,15 +37,21 @@ footer {
     font-size: 20px;
 }
 
+.headerTitle h2 {
+    color:black;
+}
+
 .myPicture {
+    display: flex;
+    justify-items: flex-end;
     position: absolute;
-    top: 450px;
-    left: 200px;
+    right: 24px;
+    top: 420px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid whitesmoke;
+    object-fit: cover;
+    border:solid cadetblue;
 }
 
 .icons_header {
@@ -99,11 +105,14 @@ footer {
     
  }
 
- .projects a {
+ .projects a, .myThoughts a {
     text-decoration: none;
     color:black
  }
 
+ .myThoughts a {
+    font-size: x-large;
+ }
  .projects p {
     font-size: 16px;
  }
@@ -148,6 +157,16 @@ footer {
   .code ul, .toolbox ul, .More ul{
     display: flex;
     flex-direction: column;
+  }
+
+  .for_more a{
+    text-decoration: none;
+    border: solid #3b362ad6;
+    color: #3b362ad6;
+  }
+
+  footer p, footer a {
+    font-size: x-large;
   }
 
 
@@ -200,10 +219,28 @@ footer {
    }
 
    .myPicture {
-    left: 750px;
-    width: 200px;
-    height: 200px;
-    top: 400px;
+    top: 350px;
+    right: 50px;
+    position: absolute;
+    width: 270px;
+    height: 270px;
+   } 
+
+   .headerTitle{
+    font-size: xx-large;
+    text-align: center;
+   }
+
+   .skills_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-row-gap: 0px;
+   }
+
+   .skills li {
+    font-size: larger;
    }
    }
     
