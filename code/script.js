@@ -14,6 +14,6 @@ const scrollFunction = () => {
 
 // When the user clicks on the button, scroll to the top of the document
 const topFunction = () => {
-  document.body.scrollTop = 40; // For Safari
-  document.documentElement.scrollTop = 40; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
