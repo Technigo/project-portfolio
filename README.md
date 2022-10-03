@@ -1,3 +1,3 @@
 # portfolio
 
-Project does not work on desktop. I had a big problem with layout. 
+Bootcamp project week 4: Portfolio built using HTML and CSS. 
