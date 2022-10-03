@@ -1,9 +1,9 @@
 # portfolio
 
-// Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-   - Build my portfolio by following Swedish guidelines for accessibility and how to build websites for everyone.
-  
-
-// View it live
+// Netlify
 
    https://naghmehportfolio.netlify.app/
+
+// Linkedin
+
+https://www.linkedin.com/in/naghmeh-okhovat-92508378/
