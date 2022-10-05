@@ -32,6 +32,17 @@ h4 {
   margin: 0;
   padding: 0;
 }
+/* .outer-wrapper {
+  width: 100%;
+  background-color: #fcbdce;
+}
+
+.inner-wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+} */
+
 .block-section {
   padding: 50px 0;
 }
@@ -78,7 +89,7 @@ h4 {
   width: 45px;
 }
 
-/* */
+/* HEADER */
 .head-wrapper {
   font-family: "Roboto";
   font-style: normal;
@@ -88,16 +99,20 @@ h4 {
 .text-heading {
   position: absolute;
   left: 0;
-  top: 15vw;
+  top: 40px;
   max-width: 70%;
-  font-family: "Roboto";
-  font-style: normal;
   letter-spacing: 0.2em;
   color: #ffffff;
 }
 
 .text-heading h3 {
   color: #000000;
+}
+
+.images-heading {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
 }
 
 .social-links-header {
@@ -170,7 +185,7 @@ h4 {
 .project-section .image-heading-wrapper .project-image-weather {
   opacity: 0.5;
   max-width: 700px;
-  height: 30vh;
+  height: 200px;
   position: relative;
   background-image: url(./pic/sthmlweather.jpg);
   background-size: cover;
@@ -180,7 +195,7 @@ h4 {
 .project-section .image-heading-wrapper .project-image-guess {
   opacity: 0.5;
   max-width: 700px;
-  height: 30vh;
+  height: 200px;
   position: relative;
   background-image: url(./pic/guesswho.jpg);
   background-size: cover;
@@ -190,7 +205,7 @@ h4 {
 .project-section .image-heading-wrapper .project-image-chat {
   opacity: 0.5;
   max-width: 700px;
-  height: 30vh;
+  height: 200px;
   position: relative;
   background-image: url(./pic/puppyrescue.jpg);
   background-size: cover;
@@ -199,7 +214,7 @@ h4 {
 .project-section .image-heading-wrapper .project-image-news {
   opacity: 0.5;
   max-width: 700px;
-  height: 30vh;
+  height: 200px;
   position: relative;
   background-image: url(./pic/news.jpg);
   background-size: cover;
@@ -254,6 +269,26 @@ h4 {
   border-radius: 4px;
   display: flex;
   align-items: center;
+}
+.tag-wrapper-other {
+  justify-content: start;
+}
+
+.tag-wrapper-link p {
+  background-color: #fddfe7;
+}
+.tag-wrapper-link p:hover {
+  background-color: #fcbdce;
+}
+/* Links in other project section */
+
+.link-container {
+  margin: 5px;
+  font-weight: bolder;
+}
+
+span {
+  font-weight: lighter;
 }
 
 /* SKILLS SECTION */
@@ -360,18 +395,25 @@ footer a {
   }
 }
 
+/*OTHER PROJECT SECTION*/
+.other-projects-info {
+  justify-content: flex-start;
+}
+
+.other-project-text {
+  margin: 5px;
+}
+
 /* TABLET only  */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 900px) {
   .profile-img {
     width: 160px;
     height: 160px;
-    position: absolute; /* lets us choose position of the img */
-    right: -2vh;
-    top: 15vh;
+    top: 20vw;
   }
 }
 /* DESKTOP ONLY */
-@media (min-width: 1028px) {
+@media (min-width: 900px) {
   h1 {
     font-weight: 700;
     font-size: 40px;
