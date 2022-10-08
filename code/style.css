@@ -111,7 +111,7 @@ h3 {
   border-radius: 50%;
   display: inline-block;
 }
-p {
+p, .tech-p {
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -191,7 +191,7 @@ h4 {
   z-index: 1;
   letter-spacing: 00.04em;
 }
-a {
+a, .footer-a {
   text-decoration: none;
   color: black;
 }
@@ -200,7 +200,6 @@ a:visited {
 }
 a > p {
   font-family: "Roboto";
-  text-align: left;
   padding-top: 0;
 }
 h5 {
@@ -286,12 +285,10 @@ ul > li {
 .for-more-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   flex: 1;
   text-align: center;
   align-items: center;
   margin: auto;
-  gap: 10px;
 }
 .bottom-icons {
   display: flex;
@@ -325,7 +322,7 @@ footer h6 {
   padding-top: 5rem;
   padding-bottom: 3rem;
 }
-footer p {
+footer p, .footer-a {
   color: white;
   padding: 0%;
 }
@@ -433,13 +430,17 @@ footer p {
     font-weight: 400;
     font-size: 30px;
   }
+  .tech-p {
+    margin-left: 20vh;
+    margin-right: 20vh;
+  }
   .other-project {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  .other-project-card {
+  .other-projects-card {
     width: 45%;
   }
   .bottom-icons {
