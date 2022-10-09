@@ -19,14 +19,14 @@ font-family: 'Roboto', sans-serif;*/
 .header-wrapper {
     width: 80%;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .header-links {
     align-self: flex-end;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .portfolio {
@@ -34,7 +34,6 @@ font-family: 'Roboto', sans-serif;*/
     font-family: 'Montserrat';
     font-weight: 700;
     display: block;
-    margin-bottom: 2.5rem;
 }
 
 .portfolio p {
@@ -50,6 +49,7 @@ h1 {
     line-height: 49px;
     max-width: 400px;
 }
+
 .with-h1 {
     font-size: 24px;
     line-height: 40px;
@@ -60,8 +60,6 @@ h1 {
 }
 
 .profile-image {
-    /*width: 180px;
-    height: 200px;*/
     width: 180px;
     height: 164px;
     border-radius: 50%;
@@ -69,7 +67,6 @@ h1 {
     overflow: hidden;
     position: relative;
     top: 2rem;
-    
 }
 
 .icon-white {
@@ -77,6 +74,7 @@ h1 {
     height: 40px;
     padding: 0.3rem;
 }
+
 .icon-red {
     width: 45px;
     height: 45px;
@@ -157,7 +155,7 @@ h1 {
     color:  #BA4C08 /*#F66F19*/;
 }
 
-.image-card {
+.image-card, .project-card {
     margin-bottom: 2rem;
 }
 
@@ -199,7 +197,7 @@ h1 {
 
 .tool {
     background-color: #8ECEDC;
-    margin-right: 0.25rem;
+    margin-right: 0.35rem;
     margin-bottom: 0.25rem;
     padding: 3px;
     font-family: 'Roboto';
@@ -280,7 +278,19 @@ footer p {
 div.tooltip[aria-hidden="true"] {
     display: none;
 }*/
-  
+/* TABLET */
+@media (min-width: 668px) and (max-width:1024px) {
+    .project-card {
+        width: 35vw;
+        height: 35vh;
+    }
+    
+    .image-card {
+        width: 35vw;
+        height: 48vh;
+    }
+}
+
 /* TABLET & DESKTOP STYLING */
 @media (min-width: 668px) /*and (max-width:1024px)*/ {
     .portfolio p {
@@ -293,14 +303,13 @@ div.tooltip[aria-hidden="true"] {
         font-size: 80px;
         line-height: 90px;
     }
+
     .with-h1 {
         font-size: 40px;
         line-height: 70px;
     }
 
     .profile-image {
-        /*width: 300px;
-        height: 320px;*/
         width: 300px;
         height: 274px;
     }
@@ -346,11 +355,6 @@ div.tooltip[aria-hidden="true"] {
         font-size: 25px;
         line-height: 41px;
     }
-    
-    .image-card {
-        width: 45%;
-        height: 80%;
-    }
 
     .project-image-title {
         font-size: 30px;
@@ -364,6 +368,17 @@ div.tooltip[aria-hidden="true"] {
 
 /* DESKTOP */
 @media (min-width: 1025px) {
+
+    .project-card {
+        width: 35vw;
+        height: 52vh;
+    }
+    
+    .image-card {
+        width: 35vw;
+        height: 65vh;
+    }
+
     .profile-image {
         width: 330px;
         height: 301px;
