@@ -6,7 +6,7 @@
 
 .header-outer-wrapper {
     border: 2px solid yellow;
-    background-image: url("./assets/sea.jpg"); 
+    background-image: url("./assets/woods.jpg"); 
     width: 100%;
     height: 70vh;
     display: flex;
@@ -46,7 +46,7 @@ p {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 16px;
-
+ 
 }
 
 h1 {
@@ -73,8 +73,6 @@ h1 {
   flex-direction: row;
 }
 
-
-
 .profile-img {
   /* Positioning */
   position: absolute;
@@ -98,7 +96,6 @@ h1 {
   width: 100%;
 }
 
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -113,6 +110,7 @@ h1 {
 
 .presentation {
   border: 2px solid green;
+  font-family: 'Montserrat', sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;;
   font-size: 16px;
@@ -164,32 +162,41 @@ h1 {
   
 }
 
-
 .container {          /* flex-items*/
   border: 2px solid green;
   font-family: 'Montserrat', sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 300;
-  font: 16px;
+  font-size: 16px;
   color: #2F2C2E;
-  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+} 
+
+.other-projects {
+  border: 2px solid hotpink;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #2F2C2E;
+  line-height: 25px;
   text-align: left;
   display: flex;
   flex-direction: column;
-  /*display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;*/
-} 
+}
 
 .headline {
   border: 2px solid blue;
-  background-color:#EB7126;
+  background-color:#BA4C08;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: whitesmoke;
   width: fit-content;
@@ -197,14 +204,50 @@ h1 {
   align-self: center;
 }
 
-.project img {
-  width: 40vw;
-  height: 30vh;
-  margin: 5vh;
+.headline-small {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 25;
+  color: #BA4C08;
+  margin-top: 10px;
 }
 
-.image-text{
-  font-size: 16px;
+.project-image-container {
+  border: 2px solid blue;
+  margin-top: 30px;
+  width: 100%;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.project-image {
+  border: 2px solid red;
+  width: 100%;
+}
+
+.project-image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease;
+}
+
+.project-image-title {
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 25%;
+  right: 25%;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+a {
+  text-decoration: none;
+  color: #2F2C2E;
 }
 
   /* tags displaying code involved*/
@@ -239,7 +282,8 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat";
+    font-weight: 100;
     font-size: 16px;
     line-height: 25px;
     text-align: center;
@@ -247,6 +291,9 @@ h1 {
     background-color: #EB7126;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .headline-footer {
+    font-weight: 600;
   }
 
 
@@ -276,11 +323,16 @@ h1 {
 }
 
 @media (min-width: 1025px) {
+
+  .header-outer-wrapper {
+  
+  }
+
   .container {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center
