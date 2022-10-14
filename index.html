@@ -5,397 +5,477 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="icon" type="image/x-icon" href="./assets/favicon.png" /> -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon-16x16.png"
-    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <title>Petra Söderström</title>
   </head>
   <body>
-    <header class="main-header">
-      <div class="logos">
-        <!-- Linkedin -->
-        <a href="https://www.linkedin.com/in/petra-soderstrom" target="_blank"
-          ><img aria-label="visit my linked in" class="logo" src =
-          images/linkedin-logo.png alt="Linkedin logo"/></a
-        >
-        <!-- Github -->
-        <a href="https://github.com/Petrasoderstrom1612" target="_blank"
-          ><img aria-label="visit my github" class="logo" src =
-          images/github-logo.png alt="Github logo"/></a
-        >
-        <!-- Stack overflow -->
-        <a
-          aria-label="visit my stackoverflow page"
-          href="https://stackoverflow.com/users/19418321/petra-s"
-          target="_blank"
-          ><img class="logo" src = images/stackoverflow-logo.png
-          alt="Stackoverflow logo"/></a
-        >
-      </div>
-
-      <!-- main section - description about me -->
-      <div class="top-topic" tabindex="0">
-        <h3 class="page-topic">PORTFOLIO: PETRA SÖDERSTRÖM</h3>
-        <h1 class="profession">frontend</h1>
-        <h1 class="profession">developer</h1>
-      </div>
-      <img
-        class="profile-image"
-        src="images/portraitpicture.jpg"
-        alt="Accessible
-        portrait of Petra Söderström"
-        tabindex="0"
-      />
-    </header>
-
-    <!------------------MYSELF ---------------------- -->
-    <div class="outer-container">
-      <div class="content-container">
-        <div class="about-me" tabindex="0">
-          <p class="description-of-myself">
+    <!--HEADER SECTION-->
+    <header class="header">
+      <div class="container">
+        <div class="socials">
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/petra-soderstrom"
+          >
             <img
-              class="story-starter"
-              src="images/story-starter.png"
-              alt="story-starter"
-            />&nbsp;&nbsp;&nbsp;&nbsp; Hello! I’m a frontend developer with
-            business background. I’m all about solving problems and finding
+              aria-label="visit my linked in"
+              class="social-icon"
+              src="images/linkedin-logo.png"
+              alt="linked-in-icon"
+            />
+          </a>
+          <a class="social-link" href="https://github.com/Petrasoderstrom1612">
+            <img
+              aria-label="visit my github"
+              class="social-icon"
+              src="images/github-logo.png "
+              alt="github-icon"
+            />
+          </a>
+          <a
+            class="social-link"
+            href="https://stackoverflow.com/users/19418321/petra-s"
+          >
+            <img
+              aria-label="visit my stackoverflow page"
+              class="social-icon"
+              src="images/stackoverflow-logo.png"
+              alt="stackowerflow-icon"
+            />
+          </a>
+        </div>
+        <div class="header-container">
+          <div class="header-text" tabindex="0">
+            <p>Portfolio: <span>Petra Söderström</span></p>
+            <h1>frontend developer</h1>
+          </div>
+          <div class="header-img">
+            <img
+              class="profile-image"
+              src="images/portraitpicture.jpg"
+              alt="profile-picture-of-Petra"
+              tabindex="0"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--PRESENTATION SECTION-->
+      <section class="section">
+        <div class="container">
+          <div class="intro" tabindex="0">
+            <span class="line"></span><span class="dot"></span>
+            Hello! I'm a frontend developer with
+            business background. I'm all about solving problems and finding
             effective solutions to them. I love to work just within tech branch.
             Tech is the future and I love how there is always something new one
             can learn to it!
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!------------------TECH ---------------------- -->
-    <section class="outer-container white">
-      <div class="content-container">
-        <h2 class="headline" tabindex="0">TECH</h2>
-        <p tabindex="0">
-          <span class="important-languages">HTML</span>,
-          <span class="important-languages">CSS</span> - Flexbox, Grid &
-          responsive design,
-          <span class="important-languages">JavaScript</span> - ES6,
-          <!-- JSX, React, React Hooks, Redux, Node.js, Mongo DB,-->
-          Web Accessibly, API:s, mob-programming, pair-programming, Github,
-          Figma, Miro.
-        </p>
-      </div>
-    </section>
-
-    <!------------------FEATURED PROJECTS ---------------------- -->
-    <div class="outer-container">
-      <div class="content-container">
-        <h2 class="headline" tabindex="0">FEATURED PROJECTS</h2>
-        <div class="pictures-project">
-          <img
-            src="images/weather-beijing.PNG"
-            alt="A week's weather forecast image for Beijing"
-            class="picture picture-one"
-            tabindex="0"
-          />
-          <img
-            src="images/weather-london.PNG"
-            alt="A week's weather forecast image for London"
-            class="picture"
-            tabindex="0"
-          />
-        </div>
-        <div class="tags-for-picture">
-          <h3 class="smaller-headline" tabindex="0">
-            WEATHER FORECAST BUILT IN JAVASCRIPT
-          </h3>
-          <p class="picture-paragraph" tabindex="0">
-            Responsive website using HTML, CSS, JS and APIs in order to fetch
-            the latest updates about the weather forecast for the week in
-            various cities
-          </p>
-        </div>
-        <div class="language-tags">
-          <p tabindex="0"><span class="tags-inline-background">HTML</span></p>
-          &nbsp;&nbsp;
-          <p tabindex="0"><span class="tags-inline-background">CSS</span></p>
-          &nbsp;&nbsp;
-          <p tabindex="0"><span class="tags-inline-background">JS</span></p>
-          &nbsp;&nbsp;
-          <p tabindex="0"><span class="tags-inline-background">APIs</span></p>
-        </div>
-      </div>
-      <div class="content-container">
-        <div class="pictures-project fox-flex">
-          <img
-            src="images/shopsite.PNG"
-            alt="A picture of a start site to order a shirt"
-            class="picture picture-one fox"
-            tabindex="0"
-          />
-          <img
-            src="images/shopsite2.PNG"
-            alt="FAQ for ordering a shirt website"
-            class="picture fox"
-            tabindex="0"
-          />
-        </div>
-        <div class="tags-for-picture tags-for-picture-fox">
-          <h3 class="smaller-headline smaller-headline-for-fox" tabindex="0">
-            ONLINE SHOPPING SIDE WITH A HTML FORM & JS
-          </h3>
-          <p class="fox-paragraph" tabindex="0">
-            Responsive website using HTML, CSS and a touch of JS. The HTML form
-            is used in order to transfer the shopping request of the customer.
-            FAQ uses a JS to toggle the answers. This was my first usage of JS
-          </p>
-        </div>
-        <div class="language-tags" tabindex="0">
-          <p tabindex="0"><span class="tags-inline-background">HTML</span></p>
-          &nbsp;&nbsp;
-          <p tabindex="0"><span class="tags-inline-background">CSS</span></p>
-          &nbsp;&nbsp;
-          <p tabindex="0"><span class="tags-inline-background">JS</span></p>
-          &nbsp;&nbsp;
-          <p tabindex="0"><span class="tags-inline-background">APIs</span></p>
-        </div>
-      </div>
-    </div>
-    <!------------------OTHER PROJECTS ---------------------- -->
-    <div class="outer-container">
-      <div class="content-container">
-        <h2 class="smaller-headline" tabindex="0">OTHER PROJECTS</h2>
-        <h3 class="headline-other-projects" tabindex="0">CHAT BOT</h3>
-        <p class="other-projects-paragraph" tabindex="0">
-          More advanced JS enabling a visitor to chat with a robot in order to
-          place an order. Computer-only responsive.
-          <a
-            href="https://tangerine-quokka-401504.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            tabindex="0"
-            aria-label="visit my chatbot website"
-            >>></a
-          >
-        </p>
-        <div class="language-tags language-tags-other-projects">
-          <p tabindex="0"><span class="tags-inline-background">HTML</span></p>
-          &nbsp;&nbsp;
-          <p tabindex="0"><span class="tags-inline-background">CSS</span></p>
-          &nbsp;&nbsp;
-          <p tabindex="0"><span class="tags-inline-background">JS</span></p>
-        </div>
-      </div>
-
-      <div class="content-container">
-        <h3 class="headline-other-projects" tabindex="0">GUESS WHO GAME</h3>
-        <p class="other-projects-paragraph" tabindex="0">
-          The classical version of Guess who? game allowing the player to guess
-          who the secret person is while counting the amount of guesses.
-          Computer-only responsive.
-          <a
-            href="https://sweet-gelato-eb6433.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            tabindex="0"
-            aria-label="visit my Guess who game website"
-            >>></a
-          >
-        </p>
-        <div class="language-tags">
-          <p tabindex="0"><span class="tags-inline-background">HTML</span></p>
-          &nbsp;&nbsp;
-          <p tabindex="0"><span class="tags-inline-background">CSS</span></p>
-          &nbsp;&nbsp;
-          <p tabindex="0"><span class="tags-inline-background">JS</span></p>
-        </div>
-      </div>
-    </div>
-
-    <!------------------MY THOUGHTS ---------------------- -->
-    <article class="outer-container white">
-      <div class="content-container">
-        <h2 class="headline headline-code" tabindex="0">
-          MY THOUGHTS ABOUT CODE
-        </h2>
-        <div class="pictures-project">
-          <img
-            src="images/newssite.PNG"
-            alt="An image of the website where I describe Technigo course"
-            class="juicy-knowledge-picture"
-            tabindex="0"
-          />
-        </div>
-
-        <h3 class="headline-code-thoughts" tabindex="0">SEPT 2022</h3>
-        <p tabindex="0">
-          I think it is really cool with my journey from being a business
-          graduate to switching into tech. I really enjoy coding and learning
-          more every day. There is so much power in code and one can reach to so
-          many people at once. I also love that my programming school Technigo
-          is having amongst its core values to get more women into tech as there
-          is such a great potential women can bring into the market. From
-          designing cosmetics, clothes websites, jewelerry shops just into
-          bringing the little feminine creativity touch to every project. I
-          believe diversity is the key to bring powerful ideas together in order
-          to create something big.
-        </p>
-      </div>
-    </article>
-
-    <!------------------MORE THOUGHTS ---------------------- -->
-    <section class="outer-container white">
-      <div class="content-container">
-        <h2 class="headline-more-thoughts" tabindex="0">MORE THOUGHTS</h2>
-        <h3 class="headline-code-thoughts" tabindex="0">
-          MY TOP 3 WEBSITES FOR LEARNING CODING
-        </h3>
-        <div class="coding-websites">
-          <h4 tabindex="0">
-            W3 SCHOOLS:&nbsp;<a
-              href="https://www.w3schools.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >www.w3schools.com</a
-            >
-          </h4>
-          <h4 tabindex="0">
-            GEEKS4GEEKS:&nbsp;<a
-              href="https://www.geeksforgeeks.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >www.geeksforgeeks.org</a
-            >
-          </h4>
-          <h4 tabindex="0">
-            CODEWARS:&nbsp;&nbsp;<a
-              href="https://www.codewars.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >www.codewars.com</a
-            >
-          </h4>
-        </div>
-      </div>
-    </section>
-
-    <!------------------SKILLS ---------------------- -->
-    <section class="outer-container">
-      <div class="content-container">
-        <h2 class="headline" tabindex="0">SKILLS</h2>
-        <div class="skills-flex">
-          <div>
-            <h3 class="skills-headline" tabindex="0">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE
-            </h3>
-            <ul>
-              <li tabindex="0">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML
-              </li>
-              <li tabindex="0">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS
-              </li>
-              <li tabindex="0">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JS
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="skills-headline" tabindex="0">&nbsp;&nbsp;TOOLBOX</h3>
-            <ul>
-              <li tabindex="0">FIGMA</li>
-              <li tabindex="0">MIRO</li>
-              <li tabindex="0">SLACK</li>
-              <li tabindex="0">TEAMS</li>
-              <li tabindex="0">JIRA</li>
-              <li tabindex="0">SALESFORCE</li>
-              <li tabindex="0">MICROSOFT TOOLS</li>
-              <li tabindex="0">NETLIFY</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="skills-headline" tabindex="0">UPCOMING</h3>
-            <ul>
-              <li tabindex="0">REACT</li>
-              <li tabindex="0">C++</li>
-              <li tabindex="0">REDUX</li>
-              <li tabindex="0">NODE.JS</li>
-            </ul>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!------------------logos page bottom ---------------------- -->
-    <section class="outer-container white">
-      <div class="content-container">
-        <h2 class="headline" tabindex="0">FOR MORE</h2>
-        <div class="logos-bottom">
-          <!-- Linkedin -->
-          <a
-            href="https://www.linkedin.com/in/petra-soderstrom"
-            target="_blank"
-            aria-label="visit my linked in"
-            tabindex="0"
-            ><img class="logo" src = images/linkedin-logo-pink.png alt="Linkedin
-            logo"/></a
-          >
-          <!-- Github -->
-          <a
-            href="https://github.com/Petrasoderstrom1612"
-            target="_blank"
-            aria-label="visit my github"
-            tabindex="0"
-            ><img class="logo" src = images/github-logo-pink.png alt="Github
-            logo"/></a
-          >
-          <!-- Instagram -->
-          <a
-            href="https://www.instagram.com/petra_kodar/"
-            target="_blank"
-            aria-label="visit my instagram"
-            tabindex="0"
-            ><img class="logo" src = images/instagram-logo-pink.png
-            alt="Instagram logo"/></a
-          >
+      </section>
+      <!--TECH-->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title" tabindex="0">Tech</h2>
+          <div class="tech" tabindex="0">
+            <p>
+              HTML, CSS, Flexbox, JavaScript, JSX, React, React Hooks, Redux,
+              Styled Components, Web Accessibly, API:s, mob-programming,
+              pair-programming, GitHub, Figma, Miro, Salesforce.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!------------------footer ---------------------- -->
-    <footer class="my-footer">
-      <div class="contact-in-footer">
-        <h2 class="headline" tabindex="0">CONTACT</h2>
-        <p class="paragraph-in-footer" tabindex="0">Petra Söderström</p>
-        <p class="paragraph-in-footer">
-          <a class="address-style" href="tel:+46708363717" tabindex="0"
-            >+46722884647</a
-          >
-        </p>
-        <p class="paragraph-in-footer mail-in-footer">
-          <a
-            class="mail-in-footer"
-            href="mailto:petrasoderstrom1612@gmail.com"
-            tabindex="0"
-            >petrasoderstrom1612@gmail.com</a
-          >
-        </p>
+      </section>
+      <!--FEATURED PROJECTS-->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title" tabindex="0">Featured Projects</h2>
+          <!--WEATHER APP-->
+          <div class="grid-container">
+            <article class="project" tabindex="0">
+              <a href="https://hilarious-tarsier-00acac.netlify.app/" target="_blank">
+                <div class="project-image-group">
+                  <img
+                    src="images/weather-beijing.PNG"
+                    alt="weather app project screenshot"
+                  />
+                  <div class="project-overlay">
+                    <h2 class="project-overlay-title" aria-hidden="true">
+                      Weather App
+                    </h2>
+                  </div>
+                </div>
+                <h3 class="project-title" aria-hidden="true">Weather App</h3>
+                <p class="project-paragraph">
+                  Web app built in JavaScript using data from Open Weather API.
+                  Pair-programmed.
+                </p>
+              </a>
+              <div class="tag-wrapper">
+                <p>HTML5</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>API:s</p>
+                <a
+                  href="https://github.com/Petrasoderstrom1612/project-weather-app"
+                  target="_blank"
+                  class="repo-tag"
+                  ><p>GitHub Repo</p>
+                </a>
+              </div>
+            </article>
+            <!--GUESS WHO-->
+            <article class="project" tabindex="0">
+              <a
+                href="https://sweet-gelato-eb6433.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="project-image-group">
+                  <img
+                    src="images/guess-who.png"
+                    alt="guess who project screenshot"
+                  />
+                  <div class="project-overlay">
+                    <h2 class="project-overlay-title" aria-hidden="true">
+                      Guess Who
+                    </h2>
+                  </div>
+                </div>
+                <h3 class="project-title" aria-hidden="true">Guess Who</h3>
+                <p class="project-paragraph">
+                  Digital version of the board game "Guess Who" built in
+                  JavaScript that filters characters based on user guesses.
+                </p>
+              </a>
+              <div class="tag-wrapper">
+                <p>HTML5</p>
+                <p>CSS</p>
+                <p>JavaScript ES6</p>
+                <a
+                  href="https://github.com/Petrasoderstrom1612/project-guess-who"
+                  target="_blank"
+                  class="repo-tag"
+                  ><p>GitHub Repo</p>
+                </a>
+              </div>
+            </article>
+          </div>
+            <!--MOVIES-->
+            <article class="project" tabindex="0">
+              <a
+                href="https://movie-catalogue-project.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="project-image-group">
+                  <img
+                    src="images/project-movies.png"
+                    alt="guess who project screenshot"
+                  />
+                  <div class="project-overlay">
+                    <h2 class="project-overlay-title" aria-hidden="true">
+                      Project movies
+                    </h2>
+                  </div>
+                </div>
+                <h3 class="project-title" aria-hidden="true">Project movies</h3>
+                <p class="project-paragraph">
+                  Imdb alike website where you can see description of movies and their raiting.
+                </p>
+              </a>
+              <div class="tag-wrapper">
+                <p>HTML5</p>
+                <p>CSS</p>
+                <p>JavaScript ES6</p>
+                <p>React</p>
+                <a
+                  href="https://github.com/Petrasoderstrom1612/project-guess-who"
+                  target="_blank"
+                  class="repo-tag"
+                  ><p>GitHub Repo</p>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="container">
+            <h2 class="section-title" tabindex="0">Featured Projects</h2>
+            <!--HAPPY THOUGHTS APP-->
+            <div class="grid-container">
+              <article class="project" tabindex="0">
+                <a href="https://happy-thoughts-alias-twitter.netlify.app/" target="_blank">
+                  <div class="project-image-group">
+                    <img
+                      src="/images/happy-thoughts.png"
+                      alt="happy thoughts application"
+                    />
+                    <div class="project-overlay">
+                      <h2 class="project-overlay-title" aria-hidden="true">
+                        Happy thoughts
+                      </h2>
+                    </div>
+                  </div>
+                  <h3 class="project-title" aria-hidden="true">Happy thoughts</h3>
+                  <p class="project-paragraph">
+                    React with useState and useEffect together with an API.
+                  </p>
+                </a>
+                <div class="tag-wrapper">
+                  <p>HTML5</p>
+                  <p>CSS</p>
+                  <p>REACT</p>
+                  <p>JSX</p>
+                  <p>API:s</p>
+                  <a
+                    href="https://github.com/Petrasoderstrom1612/project-happy-thoughts"
+                    target="_blank"
+                    class="repo-tag"
+                    ><p>GitHub Repo</p>
+                  </a>
+                </div>
+              </article>
+              <!--SURVEY-->
+              <article class="project" tabindex="0">
+                <a
+                  href="https://star-survey.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="project-image-group">
+                    <img
+                      src="images/project-survey.png"
+                      alt="guess who project screenshot"
+                    />
+                    <div class="project-overlay">
+                      <h2 class="project-overlay-title" aria-hidden="true">
+                        Survey
+                      </h2>
+                    </div>
+                  </div>
+                  <h3 class="project-title" aria-hidden="true">Survey</h3>
+                  <p class="project-paragraph">
+                    A survey form to be filled in with various input fields made in React.
+                  </p>
+                </a>
+                <div class="tag-wrapper">
+                  <p>HTML5</p>
+                  <p>CSS</p>
+                  <p>REACT</p>
+                  <a
+                    href="https://github.com/Petrasoderstrom1612/project-survey"
+                    target="_blank"
+                    class="repo-tag"
+                    ><p>GitHub Repo</p>
+                  </a>
+                </div>
+              </article>
+            </div>
+          <!--OTHER PROJECTS-->
+          <h2 class="section-subtitle" tabindex="0">Other Projects</h2>
+          <article class="other-project">
+            <a
+              href="https://tangerine-quokka-401504.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="other-project-link"
+            >
+              <h3 class="project-title">Coffee shop Chatbot ordering machine</h3>
+              <p class="project-paragraph">
+                Simple chatbot for ordering a hot beverage in a coffee shop.
+              </p>
+            </a>
+            <div class="tag-wrapper">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>JavaScript ES6</p>
+              <a
+                href="https://github.com/Petrasoderstrom1612/project-chatbot"
+                target="_blank"
+                class="repo-tag"
+              >
+                <p>GitHub Repo</p>
+              </a>
+            </div>
+          </article>
+          <article class="other-project">
+            <a
+              href="https://music-releases-petra-julia.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="other-project-link"
+            >
+              <h3 class="project-title">Music releases</h3>
+              <p class="project-paragraph">
+                A responsive website using data from Spotify to show album and
+                single releases. The project was built via pair programming.
+              </p>
+            </a>
+            <div class="tag-wrapper">
+              <p>React</p>
+              <p>API:s</p>
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <a
+                href="https://github.com/Petrasoderstrom1612/music-releases"
+                target="_blank"
+                class="repo-tag"
+                ><p>GitHub Repo</p>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!--MY THOUGHTS-->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title" tabindex="0">My Thoughts</h2>
+          <div class="grid-container">
+                <div class="thoughts-text">
+                  <h3 class="article-title">
+                    <span class="date">SEP 22</span>
+                  </h3>
+                  <p class="project-paragraph">
+                    I think it is really cool with my journey from being a business
+                    graduate to switching into tech. I really enjoy coding and learning
+                    more every day. There is so much power in code and one can reach to so
+                    many people at once. I also love that my programming school Technigo
+                    is having amongst its core values to get more women into tech as there
+                    is such a great potential women can bring into the market. From
+                    designing cosmetics, clothes websites, jewelerry shops just into
+                    bringing the little feminine creativity touch to every project. I
+                    believe diversity is the key to bring powerful ideas together in order
+                    to create something big. If you are interested do not hesitate to join one of the great female networks that are out there such as Tjejer kodar, Pink programming and women in tech.
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="article">
+                <img
+                  class="project-image article-image"
+                  src="images/newssite.PNG"
+                  alt="Project cover"
+                />
+            </article>
+          </div>
+          <h2 class="section-subtitle last-subtitle" tabindex="0">MY TOP 3 WEBSITES FOR LEARNING CODING</h2>
+          <article class="more-thoughts">
+            <a href="https://google.com" target="_blank">
+              <h3 class="more-thoughts-title"><span class="date">W3SCHOOLS</span>
+                <span
+                  ><a
+                  href="https://www.w3schools.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >www.w3schools.com</a
+                ></span>
+              </h3>
+            </a>
+          </article>
+          <article class="more-thoughts">
+            <a href="https://google.com" target="_blank">
+              <h3 class="more-thoughts-title">
+                <span class="date">GEEKS4GEEKS</span>
+                <span
+                  ><a
+                  href="https://www.geeksforgeeks.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >www.geeksforgeeks.org</a
+                ></span>
+              </h3>
+            </a>
+          </article>
+          <article class="more-thoughts">
+            <a href="https://google.com" target="_blank">
+              <h3 class="more-thoughts-title">
+                <span class="date">CODEWARS</span>
+                <span
+                  ><a
+                  href="https://www.codewars.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >www.codewars.com</a
+                ></span>
+              </h3>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!--SKILLS-->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title" tabindex="0">Skills</h2>
+          <div class="skills-container" tabindex="0">
+            <ul class="skills-list">
+              <li class="skill-title">Code</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+            <ul class="skills-list">
+              <li class="skill-title">Toolbox</li>
+              <li>VS Code</li>
+              <li>GitHub</li>
+              <li>Slack</li>
+              <li>Trello</li>
+            </ul>
+            <ul class="skills-list">
+              <li class="skill-title">Upcoming</li>
+              <li>Redux</li>
+              <li>Node.js</li>
+              <li>Styled Components</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="contact-info">
+      <div tabindex="0">
+        <h2 class="section-title">Contact</h2>
+        <p>Petra Söderström</p>
+        <a href="mailto:julia.ostedt@gmail.com" class="email">
+          petrasoderstrom1612@gmail.com
+        </a>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/petra-soderstrom" target="_blank">
+            <div class="icon-wrapper">
+              <img
+                aria-label="visit my linked in"
+                class="social-icon"
+                src="images/linkedin-logo-pink.png"
+                alt="linked-in-icon"
+              />
+            </div>
+          </a>
+          <a href="https://github.com/Petrasoderstrom1612" target="_blank">
+            <div class="icon-wrapper">
+              <img
+                aria-label="visit my github"
+                class="social-icon"
+                src="images/github-logo-pink.png"
+                alt="github-icon"
+              />
+            </div>
+          </a>
+          <a href="https://www.instagram.com/petra_kodar/" target="_blank">
+            <div class="icon-wrapper">
+              <img
+                aria-label="visit my github"
+                class="social-icon"
+                src="images/instagram-logo-pink.png"
+                alt="instagram-icon"
+              />
+            </div>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
