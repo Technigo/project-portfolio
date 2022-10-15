@@ -231,14 +231,21 @@ header {
 } 
 
 .featured-projects img {
-    width: 350px;
-    height: auto;
+    width: 400px;
+    height: 200px;
+    display: block;
 }
 
 .project p {
     max-width: 500px;
     text-align: left;
 } 
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
 
 .featured-projects p {
     margin-bottom: 10px;
@@ -252,18 +259,18 @@ header {
 .project-img-overlay {
     position: absolute;
     background-color: rgba(160, 160, 160, 0.5);
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 200px;
     transition: 0.5s ease;
     opacity:0;
-    text-align: center;
     color: rgb(255, 255, 255);
 }
 
 .project-img-overlay p {
-    padding: 20%;
+    padding: 25%;
     font-weight: 700;
     font-size: 25px;
+    letter-spacing: 0.01em;
 }
 
 .project-img-container:not(:hover) .project-img-overlay {
@@ -407,6 +414,16 @@ footer a {
 /* TABLET */ /* DESKTOP */
 @media (min-width: 800px) {
 
+    .inner-wrapper {
+        width:60%;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+    }
+    
+
     .other-projects {
         display: none;
     }
@@ -485,6 +502,10 @@ footer a {
 
 /* DESKTOP */
 @media (min-width: 1025px) {
+
+    .inner-wrapper{
+        width: 50%;
+    }
 
      a:hover {
         text-decoration: underline;
