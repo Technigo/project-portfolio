@@ -8,6 +8,7 @@
     flex-direction: column-reverse;
 }
 
+
 .header-background {
     width: 100%
 }
@@ -133,31 +134,66 @@
 /*Featured projects*/
 
 .featured-projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #F4F4F4;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #F4F4F4;
+    position: relative
 }
 
 .other-projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1 fr;
 }
 
-.project-image-container {
-    display: flex;
+.forward-arrows {
+    color: #FF7777;
+    font-weight: 600;               
+    }
+
+.project  {
+    display: grid;
+        grid-template-columns: 1 fr;
+        padding-top: 6vh;
+        justify-items: center;
+}
+
+/* .project-info {
     justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.project-image-container {
+    position: relative;
+    transition: 0.5s ease;
+    width: 80%;
+}
+
+.project-img-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    text-align: center;
+}
+
+.project-image-container:not(:hover) .project-img-overlay {
+    opacity: 1;
+  }
+
+.projects-images {
+        display: block;
+        width: 100%;
 }
 
 .text-in-front {
-    color: white;
-    position: absolute;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 28px;
-}
+}  
 
 .icons {
     display: flex;
@@ -197,6 +233,31 @@ font-weight: 700;
 font-size: 21px;
 line-height: 30px;
 }
+
+.thoughts-text {
+ width: 45%;
+ 
+}
+
+.blog-text {
+    font-family:'Roboto';
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #FA382F;
+}
+/* Skills */
 
 .skills {
     display: flex;
@@ -262,19 +323,63 @@ footer p {
 /*Media queries*/
 
 @media (max-width: 1024px) {
-    .other-projects {
-        display: none;
+ 
 
     }
 body {
     width: 100%;
     margin: 0 auto;
 }
-}
+
 
 @media (min-width: 1024px) {
 body {
     width: 80%;
     margin: 0 auto;
 }
+
+.featured-projects {
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.one {
+    grid-row: 2 / 3; 
+    
+}
+
+.two {
+    grid-row: 2 / 3;
+}
+
+.three {
+    grid-row: 3 / 4;
+}
+
+.four {
+    grid-row: 3 / 4;
+}
+
+.other-projects {
+    grid-row: 4 / 4;
+   
+}
+
+.project-image-container {
+   
+    width: 50%;
+}
+
+.project-img-overlay {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.projects-images {
+        width: 100%;
+       
+}
+
+
 }
