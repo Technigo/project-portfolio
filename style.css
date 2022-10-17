@@ -257,13 +257,18 @@ header {
     transition: 0.5s ease;
     opacity:0;
     color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-img-overlay p {
-    padding: 25%;
     font-weight: 700;
     font-size: 25px;
     letter-spacing: 0.01em;
+    line-height: 30px;
+    padding: 25%;
 }
 
 .project-img-container:not(:hover) .project-img-overlay {
@@ -397,14 +402,14 @@ footer a {
 /**** MEDIA QUERIES ***/
 
 /* Hides featured project three and four image cards in mobile view */
-@media (max-width: 800px){ 
+@media (max-width: 668px){ 
 	.three, .four {
 	    display: none;
 	}
 } 
 
 /* TABLET */ /* DESKTOP */
-@media (min-width: 800px) {
+@media (min-width: 668px) {
 
     .inner-wrapper {
         width: 60%;
