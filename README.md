@@ -1,5 +1,7 @@
 # portfolio
 
+https://linnea-w-portfolio-project.netlify.app
+
 The assignment was to create a personal portfolio based on a given design. The page should also meet the accessibility-requirements
 
 I felt it was a very time consuming job because it has a lot of components and details and I have still not enough experience with CSS to feel comfortable with it. Every step still requires thought, trial and error. 
