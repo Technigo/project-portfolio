@@ -1,4 +1,8 @@
-# Cecilia Frånlund Portfolio
+# [OLD PORTFOLIO, NOT IN USE] Cecilia Frånlund Portfolio
+This is the old portfolio, built in HTML and CSS only. This 
+portfolio is not used and is discarded for the newer improved portfolio
+that was built using react, it can be found here: https://github.com/Sneezan/project-react-portfolio
+
 Welcome to my portfolio, containing the latest projects I've been working on
 and is updated weekly. 
 
