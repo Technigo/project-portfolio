@@ -120,8 +120,10 @@
     background-color: #FA382F;
     width:fit-content;
     color: white;
-    display: flex;
-    align-items: center;
+}
+.title-container{
+    display: grid;
+    justify-content: center;
 }
 
 .project-title {
@@ -129,6 +131,8 @@
     font-size: 17px;
     color: #FA382F;
     display: flex;
+    justify-content: center;
+   
 }
 
 /*Featured projects*/
@@ -137,12 +141,13 @@
     display: grid;
     grid-template-columns: 1fr;
     background-color: #F4F4F4;
-    position: relative
+
 }
 
 .other-projects {
     display: grid;
     grid-template-columns: 1 fr;
+
 }
 
 .forward-arrows {
@@ -151,29 +156,28 @@
     }
 
 .project  {
-    display: grid;
-        grid-template-columns: 1 fr;
-        padding-top: 6vh;
-        justify-items: center;
+    display: flex;
+    padding-top: 6vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* .project-info {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-} */
+
 
 .project-img-container {
     position: relative;
     transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
 }
 
 .project-img-overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 400px;
     transition: .5s ease;
     opacity:0;
     text-align: center;
@@ -192,12 +196,15 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 28px;
+    padding: 25%;
+    line-height: 34px;
+    letter-spacing: 0.01em;
 }  
 
 .icons {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+   
 }
 
 .icons p {
@@ -218,7 +225,18 @@
 .my-thoughts {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.article {
+    display: grid;
+    justify-items: center;
+}
+
+.thoughts-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+
 }
 
 .my-thoughts p {
@@ -226,6 +244,7 @@
     font-size: 14px;
     line-height: 18px;
 }
+
 
 .date-title {
     color: #FA382F;
@@ -288,6 +307,7 @@ a:hover {
     width: 100%;
     height: 11vh;
     position: relative;
+    padding: 15px;
 }
 
 .fa-brands {
@@ -334,39 +354,60 @@ body {
 
 
 @media (min-width: 1024px) {
-body {
+.wrapper {
     width: 80%;
     margin: 0 auto;
 }
 
 .featured-projects {
     grid-template-columns: 1fr 1fr;
-   
+   justify-items: center;
+}
+
+.title-container{
+    display: grid;
+    grid-column: 1 / 3;
 }
 
 .one {
     grid-row: 2 / 3; 
+    justify-content: center;
 }
 
 .two {
     grid-row: 2 / 3;
+    justify-content: left;
 }
 
 .three {
     grid-row: 3 / 4;
+    justify-content: left;
 }
 
 .four {
     grid-row: 3 / 4;
+    justify-content: left;
 }
 
-.other-projects {
+.first-link {
+    grid-row: 2 / 4;
+}
+
+.second-link {
     grid-row: 4 / 4;
    
 }
 
-.project-img-container {
-    width: fit-content
+
+.my-thoughts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
 }
 
+.article {
+display: flex;
+flex-direction: column;
+} 
 }

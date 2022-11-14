@@ -33,10 +33,10 @@
         <img class="header-background" src="./photos/background.jpg" alt="Red and white abstract painting">
         <p lang="se">Portfolio: Cecilia Rådén</p>
         <h1 class="title" tabindex="3">frontend developer</h1>
-        <h2 class="second-title">with an background within culture</h2>
+        <h2 class="second-title">with an background within administration</h2>
 
     </header>
-
+<section class="wrapper">
 <!-- Section with information about me -->
 
     <section class="about-me" aria-label="Information about me" tabindex="4">
@@ -48,18 +48,20 @@
 
     <section class="tech" aria-label="Section about technologies" tabindex="5">
         <h3 class="section-title">TECH</h3>
-        <p class="text">HTML, CSS, Flexbox, JavaScript, Web Accessibly, API:s, mob-programming, pair-programming, Github</p>
+        <p class="text">HTML, CSS, Flexbox, JavaScript, Web Accessibly, API:s, mob-programming, pair-programming, Github, React, Node</p>
     </section>
 
     <!--My projects-->
     
    
     <section class="featured-projects" aria-label="My projects" tabindex="6">
-        <h3 class="section-title">FEATURED PROJECTS</h3>
+        <div class="title-container">
+            <h3 class="section-title">FEATURED PROJECTS</h3>
+            </div>
 
         <!--Happy thoughts-->
         <div class = "project one">
-            <a href="https://thehappiestthougths.netlify.app/" target=”_blank”>
+            <a class = "project-link" href="https://thehappiestthougths.netlify.app/" target=”_blank”>
                 <div class = "project-img-container">
                     <div class ="project-img-overlay" >
                         <p class="text-in-front" tabindex="7" aria-hidden="true">HAPPY THOUGHTS</p>
@@ -68,6 +70,7 @@
                 </div>
                 <h3 class = "project-title">HAPPY THOUGHTS BUILT IN REACT</h3>
                 <p class="text">Responsive site where I fetched an API to get an happy thoughts feed. I used React, HTML and CSS.</p>
+            </a>
                 <div class = "icons">
                     <div class = "sr-only">
                         <p>Languages used in the project:</p>
@@ -77,21 +80,22 @@
                     <p>JavaScript ES6</p>
                     <p>React</p>
                 </div>
-            </a>
+            
         </div>
 
         <div class = "project two">
-            <a href="https://astonishing-halva-8728d8.netlify.app/" target=”_blank”>
+            <a class = "project-link" href="https://astonishing-halva-8728d8.netlify.app/" target=”_blank”>
                 <div class = "project-img-container">
                     <div class ="project-img-overlay" aria-hidden="true">
-                        <p class="text-in-front" tabindex="7" aria-hidden="true">SURVEY</p>
+                        <p class="text-in-front" tabindex="8" aria-hidden="true">SURVEY</p>
                     </div>
                     <img class ="project-images" src="./photos/lotr.jpg" height="400" width="400" alt="">
                 </div>
                 <h3 class = "project-title">TOLKIEN WISHLIST SURVEY BUILT WITH REACT</h3>
                 <p class="text">An accessible four-question survey built in React using useState.</p>
-                <div class = "icons">
-                    <div class = "sr-only">
+            </a>
+                <div class= "icons">
+                    <div class= "sr-only">
                         <p>Languages used in the project:</p>
                     </div>
                     <p>HTML5</p>
@@ -101,11 +105,11 @@
                     <p>React</p>
                     <p>Node</p>
                 </div>
-            </a>
+            
         </div>
 
         <div class = "project three">
-            <a href="https://top50music.netlify.app/" target=”_blank”>
+            <a class = "project-link" href="https://top50music.netlify.app/" target=”_blank”>
                 <div class = "project-img-container">
                     <div class ="project-img-overlay" aria-hidden="true">
                         <p class="text-in-front" tabindex="9">MUSIC ALBUM RELEASE</p>
@@ -114,8 +118,9 @@
                 </div>
                 <h4 class="project-title">RESPONSIVE MUSIC ALBUM RELEASE SITE</h4>
                 <p class="text">A pair programming built site where we used React and Spotify's open API, displaying the current top 50 albums.</p>
-                <div class = "icons">
-                    <div class = "sr-only">
+            </a>
+                <div class= "icons">
+                    <div class= "sr-only">
                         <p>Languages used in the project:</p>
                     </div>
                     <p>HTML5</p>
@@ -124,11 +129,11 @@
                     <p>React</p>
                     <p>API</p>
                 </div>
-            </a>
+           
         </div>
 
         <div class = "project four">
-            <a href="https://harmonious-biscotti-4adfed.netlify.app/" target=”_blank”>
+            <a class = "project-link" href="https://harmonious-biscotti-4adfed.netlify.app/" target=”_blank”>
                 <div class = "project-img-container">
                     <div class ="project-img-overlay" >
                         <p class="text-in-front" tabindex="9">WEATHER APP</p>
@@ -136,9 +141,10 @@
                 <img class ="feature-img" src="./photos/weather.jpg" width="400" height="400" alt=""> 
                 </div>
                 <h4 class="project-title">RESPONSIVE WEATHER APP</h4>
-                <p class="text">A pair programming project, where we built a responsive weather app, where we fetcheddata from the open access API OpenWeather.</p>
-                <div class = "icons">
-                    <div class = "sr-only">
+                <p class="text">A pair programming project, where we built a responsive weather app, where we fetched data from the open access API OpenWeather.</p>
+            </a>
+                <div class= "icons">
+                    <div class= "sr-only">
                         <p>Languages used in the project:</p>
                     </div>
                     <p>HTML5</p>
@@ -146,14 +152,17 @@
                     <p>JavaScript ES6</p>
                     <p>API</p>
                 </div>
-            </a>
+          
         </div>
 </section>
 
 <!--Other projects, only available on min 1024px-->
 
-<section class="other-projects">
-    <h3 class="section-title">OTHER PROJECTS</h3>
+
+    <section class="other-projects" aria-label="Other Projects">
+        <div class="title-container">
+<h3 class="section-title" tabindex="10">OTHER PROJECTS</h3>
+        </div>
 <div class="first-link">
             <a href="https://glittering-fenglisu-8d8a22.netlify.app/" target=”_blank”>
             <h4 class="project-title">GUESS WHO GAME</h4>
@@ -184,13 +193,15 @@
 
 <!--My thoughts-->
 
-    <section class="my-thoughts" aria-label="My thoughts">
-        <h3 class="section-title" tabindex="10">MY THOUGHTS</h3>
+    <section class="thoughts-container" aria-label="My thoughts">
+        <h3 class="section-title" tabindex="11">MY THOUGHTS</h3>
+        <section class="my-thoughts">
+        <div class="article one">
         <div class="thoughts-image-container">
-        <img class="projects-images" src="./photos/mind.jpg" width="400" height="400" alt="A snapshot of a project">
+        <img class="blog-images" src="./photos/mind.jpg" width="400" height="400" alt="A snapshot of a project">
         </div>
         <article class="thoughts-text">
-        <h5 class="date-title" tabindex="11">AUG 2022</h5>
+        <h5 class="date-title" tabindex="12">OCT 2022</h5>
         <a href="https://medium.com/@cecilia.raden/what-experiences-can-a-administrator-bring-into-tech-fd8a8203a99f" target=”_blank”>
         <p class="text">
             <b>What experiences can a administrator bring into tech?</b>
@@ -201,16 +212,31 @@
                 it be something that is applicable on my earlier experience? These are my thoughts now,
                  2 months into the Technigo bootcamp, where I’m currently changing the path of my career — totally.
                  <span class="forward-arrows" aria-hidden="true"> >> </span></p>
-            
         </a>
         </div>
+    </div>
+
+    <div class="article two">
+        <div class="thoughts-image-container">
+        <img class="blog-images" src="./photos/waiting.jpg" width="400" height="400" alt="A snapshot of a project">
+        </div>
+        <article class="thoughts-text">
+        <h5 class="date-title" tabindex="13">DEC 2022</h5>
+        <p class="text">
+            <b>Stay tuned</b>
+        </p>
+            <p class="blog-text">More posts will be published soon.
+                 <span class="forward-arrows" aria-hidden="true"> >> </span></p>
+        </div>
+    </div>
     </section>
+</section>
 
 <!--My skills-->
 
     <section class="skills" aria-label="My skills">
         <div class="list">
-        <h3 class="section-title" tabindex="12">SKILLS</h3>
+        <h3 class="section-title" tabindex="14">SKILLS</h3>
         </div>
 
         <div class="skill-box">
@@ -223,7 +249,7 @@
             </div>
             
             <div class="list">
-                <h4 class="project-title" tabindex="13">TOOLBOX</h4>
+                <h4 class="project-title" tabindex="15">TOOLBOX</h4>
                 <p>Slack</p>
                 <p>Figma</p>
                 <p>VS Code</p>
@@ -233,7 +259,7 @@
   
 <!--For more information-->
     <section class="for-more">
-        <h3 class="section-title" tabindex="14">FOR MORE</h3>
+        <h3 class="section-title" tabindex="16">FOR MORE</h3>
         <div class="contact-icons">
         <a href="https://github.com/CeciliaMichele" target=”_blank”>
         <i class="fa-brands fa-github-square fa-2xl" aria-label="My Github"></i>
@@ -242,12 +268,14 @@
     <a href="https://www.linkedin.com/in/ceciliaraden/" target=”_blank”>
         <i class="fa-brands fa-linkedin fa-2xl" aria-label="My Linkedin"></i>
         </a>
-        <span class="sr-only" tabindex="15">Github</span>
-        <span class="sr-only" tabindex="16">Linkedin</span>
+        <span class="sr-only" tabindex="17">Github</span>
+        <span class="sr-only" tabindex="18">Linkedin</span>
     </div>
     </section>
 
-    <footer aria-label="Contact information" tabindex="17">
+</section>
+
+    <footer aria-label="Contact information" tabindex="19">
         <p class="contact-text"> CONTACT  </p>
                 <p> Cecilia Rådén </p>
                 <p> +46 739 547 099 </p>
