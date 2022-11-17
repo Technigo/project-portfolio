@@ -10,4 +10,4 @@ The images in the FEATURED PROJECTS and THOUGHTS sections are not aligned, so mo
 
 # View it live
 
-https://tinabruce.netlify.app/
+https://portfoliotinabruce.netlify.app/
