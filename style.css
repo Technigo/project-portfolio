@@ -42,6 +42,12 @@ p {
     position: relative
 }
 
+.icon-positioner {
+    position: absolute;
+    top: 5%;
+    right: 15%; 
+}
+
 .hero-text {
     position: absolute;
     top: 45%;
@@ -129,14 +135,6 @@ p {
     background-color:#f8f8f8;
     text-align: center;
     padding: 20px;
-    
-    /* display: block;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    gap: 40px;
-    margin: 5% 10% 5% 10%;
-     */
 }
 
 .white-section {
@@ -156,6 +154,7 @@ p {
 .project-parent { 
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .project-item {
@@ -179,8 +178,7 @@ p {
     background-size: contain;
     position: relative;
     align-self: center;
-    
- /*it is not position in center...??*/
+
 }
 
 .weather-img {
@@ -197,12 +195,6 @@ p {
     align-self: center;
 }
 
-/* Need some kind of hover-effect here.  
-.chatbot-img-text:hover {
-    background-color: red;
-} */
-
-
 .project-img-text {
     position: absolute;
     top: 50%;
@@ -217,13 +209,24 @@ p {
     padding: 25px;
 }
 
+.tag {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    padding: 5px 10px;
+    background-color: #5CA382;
+    display: inline;
+    font-size: 0.8rem;
+    margin: 0 6px 6px 0;
+}
+
 .thoughts-text {
     font-family: "Roboto";
 }
 
-.skills {
+
+.skills-wrapper {
     display: flex;
-    
+    justify-content: center;
 }
 
 footer {
@@ -232,6 +235,16 @@ footer {
     text-align: center;
     padding: 20px;
     line-height: 1.5;
+}
+
+.for-more-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.svg-icon {
+    filter: invert(58%) sepia(43%) saturate(351%) hue-rotate(100deg) brightness(92%) contrast(88%);
+    padding: 0 10px;
 }
 
 .footer-title {
@@ -248,7 +261,6 @@ footer {
 
     .profile-pic {
         max-height: 200px;
-        /*Do something about covering text, overlap underlap. maybe change to static instead of absolut...*/ 
     }
 
     .project-parent {
@@ -262,10 +274,10 @@ footer {
     .inner-wrapper {
         width: 80%;
         max-width: 1025px;
+        border: 2x solid salmon; 
     }
 
     .white-section, .grey-section {
         padding: 40px;
     }
-    /*Need to fix profile pic and hero-text moving to far away on big screens*/
 }
