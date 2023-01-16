@@ -150,8 +150,8 @@ h1 {
 }
 
 .projects-inner-wrapper { /* flex-container*/
-  border: 2px solid magenta;
-  width: 90%;
+  border: 2px solid yellowgreen;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -160,6 +160,20 @@ h1 {
   /*align-items: center;*/
   align-content: center;
   
+}
+.skill-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.more-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ ul {
+  font-family: 'Roboto';
+  flex-direction: row;
 }
 
 .container {          /* flex-items*/
@@ -297,18 +311,35 @@ a {
   }
 
 
-
+/* Laptop */
 @media (min-width: 668px) and (max-width: 1024px) {
+  .project-card {
+    width: 35vw;
+    height: 50vh;
+    margin: 3em; 
+  }
+
+ .projects-inner-wrapper {
+  margin-bottom: 5em;
+ }
+
+ .project-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
   .header-outer-wrapper {
    height: 40vh;
- 
   }
+
  .container {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-
 }
+
   .project img {
     width: 25vw;
     height: 18vh;
@@ -321,21 +352,40 @@ a {
 
 
 }
-
+/* Desktop */
 @media (min-width: 1025px) {
-
-  .header-outer-wrapper {
-  
+  .project-card {
+    width: 30vw;
+    height: 50vh;
+    margin: 3em;
   }
+
+  .other-projects {
+    width: 80vw;
+    align-items: center;
+  }
+
+ .projects-inner-wrapper {
+  margin-bottom: 5em;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+ }
+
+ .project-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
 
   .container {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-content: center
 }
 
 .project img {
