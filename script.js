@@ -1,1 +1,0 @@
-//js scrolling effect for intro
