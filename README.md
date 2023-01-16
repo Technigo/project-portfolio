@@ -6,4 +6,4 @@ Portfolio containing my github, linkedin and facebook.
 
 # deployed in
 
-https://maria-porfolio.netlify.app/
+https://maria-portfolio-js-tailwind.netlify.app/
