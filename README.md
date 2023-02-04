@@ -20,4 +20,4 @@ If I had more time, I would work on slimming down the CSS file (a fair amount of
 
 ## View it live
 
-You can find a live version of the project here: [amandas.dev](https://amandas.dev/ "Amanda W - Portfolio")
+You can find a live version of the project here: [amanda-w-portfolio-old.netlify.app](amanda-w-portfolio-old.netlify.app)
