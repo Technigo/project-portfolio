@@ -182,7 +182,6 @@ a {
 }
 .techSection {
   width: 99vw;
-  line-height: 3rem;
   font-family: var(--fontFamily);
   padding-left: 1rem;
 
@@ -196,6 +195,7 @@ a {
 .techSection-P {
   font-weight: bold;
   font-size: 24px;
+  line-height: 3rem;
 
 }
 
@@ -203,6 +203,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   column-gap: 1rem;
+  width: 90%;
 }
 
 .grid-item {
@@ -316,10 +317,10 @@ li {
 /* My thougth */
 
 .thoughtAndCode{
-  width: 90vw;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
-  column-gap: 1rem;
+  column-gap: 2rem;
   padding: 10px 25px 10px 25px;
   /* background-color: var(--secondryColor); */
  
@@ -555,7 +556,7 @@ footer {
 
 
 
-@media screen and (max-width:375px){
+@media screen and (width:375px){
 
 body{
   margin: 5px 0 5px 0;
@@ -608,7 +609,8 @@ body{
 .techSection-P {
   font-weight: normal;
   font-size: 16px;
-}
+
+  }
 
 .sectionWrapper {
   margin-bottom: 2rem;
@@ -652,6 +654,13 @@ body{
 font-size:12px;
 }
 
+.thoughtAndCode{
+  grid-row: 1;
+  justify-content: center;
+  align-items: center;
+
+}
+
 }
 @media screen and (max-width:1024px) {
   .mainHeader{
@@ -684,7 +693,6 @@ min-width:100px;
     height: 30px;
     font-size: 18px;
 }
-
 
 .techSection-P{
   font-size: 16px;
