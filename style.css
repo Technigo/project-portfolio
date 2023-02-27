@@ -61,17 +61,24 @@ p {
     border-radius: 50%;
 }
 
-a {
+.scroll {
     text-decoration: underline 3px ;
 }
 
-a:visited {
+.scroll a:visited {
     color: #0B24F5;
 }
 
 .tech {
     background-color: #EDFFFF;
+    padding-top: 80px;
+    padding-bottom: 120px;
 }
+
+.centered {
+    text-align: center;
+}
+
 
 .featured {
     display: flex;
@@ -85,15 +92,118 @@ a:visited {
 
 .tag-list {
     display: flex;
-    list-style: none;
+    align-items: flex-start;
     font-family: 'Satoshi-Medium';
     font-size: 16px;
     gap: 4px;
-    margin: 0;
+    margin-left: 0px;
 }
 
-.tag-list li {
+.tag-list p {
     background-color: black;
     padding: 4px;
     color: white;
+}
+
+.view-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    margin-bottom: 80px;
+    }
+
+.view-demo-button,
+.view-code-button {
+    display: flex;
+    align-items: center;
+    font-family: 'Satoshi-Medium';
+    font-size: 20px;
+    width: 164px;
+    height: 48px;
+    background: #F5F5F5;
+    border-radius: 40px;
+    border: 0px;
+}
+
+.view-demo-button img,
+.view-code-button img {
+    width: 48px;
+}
+
+
+
+.view-wrapper a {
+    text-decoration: none;
+}
+
+.view-demo-button:hover {
+    background: #0B24F5;
+    color: white;
+}
+
+.view-code-button:hover {
+    background: #EB5577;
+    color: white;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #FDF2E4;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skills-header {
+    background: #EB5577;
+    width: 65px;
+    height: 36px;
+    padding: 2px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 66px;
+}
+
+.skills-header:nth-of-type(2) {
+    background: #2483E0;
+    width: 92px;
+}
+
+.skills-header:nth-of-type(3) {
+    background: #0B24F5;
+}
+
+.skills-header:nth-of-type(4) {
+    background: #6DB486;
+    width: 142px;
+    
+}
+
+
+.skills ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.skills li {
+    list-style: none;
+    font-family: 'EB Garamond';
+    font-size: 22px;
+    text-align: center;
+
 }
