@@ -1,10 +1,15 @@
 @import url('css/satoshi.css');
+@font-face {
+    font-family: EBGaramond;
+    src: url(.fonts/EBGaramond-VariableFont_wght.ttf);
+}
+
 :root{
     margin:0;
     padding:0;
     background-color: #F5F5F5;
-    --primary-font-family: Satoshi-Variable;
-    --secondary-font-family: EB Garamond;
+    --primary-font-family:Satoshi-Variable;
+    --secondary-font-family:EBGaramond;
     font-family:var(--primary-font-family);
     --primary-color: #000000;
     --secondary-color: #565656;
@@ -30,15 +35,30 @@ p{
     display:block;
 }
 
-main{
-    margin:24px;
-}
-
 .center{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.section{
+    padding: 40px 24px;
+    box-sizing: border-box;
+    width:100%;
+}
+
+.section h1{
+    padding: 64px 0;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 108px;
+    color: var(--header-color);
+}
+
+.container{
+    height:100vh;
+
 }
 
 .section-introduction{
@@ -99,7 +119,7 @@ main{
 
 .contact-img{
     width:23px;
-      
+    
 }
 
 .section-contact{
@@ -107,4 +127,187 @@ main{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    /* margin: 24px; */
+}
+
+.contact-icon i{
+    color:#D0D0D0;
+}
+
+.section-scroll{
+    padding:24px;
+}
+
+.section-scroll p{
+    color:var(--header-color);
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-decoration: underline;
+}
+
+.section-scroll a i{
+color: var(--header-color)
+}
+
+.section-tech{
+    background: #EDFFFF;
+    height:530px;
+}
+
+.section-tech p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.section-featured-projects h1{
+    font-size: 72px;
+}
+
+.subsection-featured-project img{
+    height: 280px;
+    width: 327px;
+}
+
+.subsection-featured-project h2{
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 43px;
+}
+
+.subsection-featured-project p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.tech-stack{
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:4px;
+}
+
+.tech-stack p{
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    background-color:#000000;
+    color:#FFFFFF;
+    padding: 2px 6px;
+}
+
+.section-mywords{
+    background: #FCEDEA;
+}
+
+.section-mywords h1{
+    color:#EB5577;
+    font-size: 72px;
+    line-height: 97px;
+}
+
+.subsection-mywords h4{
+    font-family:var(--primary-font-family);
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 27px;
+    color:#EB5577;
+}
+
+.subsection-mywords img{
+    height: 340px;
+    width: 327px;
+}
+
+.subsection-mywords h2{
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 43px;
+}
+
+.subsection-mywords p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+button{
+    font-family: var(--primary-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    height: 48px;
+    width: 178px;
+    border-radius: 40px;
+    padding: 0px 16px 0px 0px;
+    background-color: #FFFFFF;
+    border-style: none;
+}
+
+.section-skills{
+    background-color: #FDF2E4;
+    gap:68px;
+}
+
+.skill-group{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.skill-group h4{
+    color:#FFFFFF;
+    padding: 2px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.code h4{
+    background: #EB5577;
+}
+
+.toolbox h4{
+    background: #2483E0;
+}
+
+.more h4 {
+    background: #0B24F5;
+}
+
+.upcoming h4 {
+    background: #6DB486;
+}
+
+.contact-details h3{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    font-family: var(--primary-font-family);
+}
+
+.section-time-to-talk{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:700px;
+}
+
+.section-time-to-talk h1{
+    color:#EB5577;
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 78px;
+}
+
+footer{
+    padding:0 0 97px 0;
+}
+
+i:hover{
+    color:#000000;
 }
