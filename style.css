@@ -3,28 +3,167 @@
 *{
     box-sizing: border-box;
     font-family: 'Satoshi-Variable';
-}
-
-
-
-
-h1{
-    
    
 }
 
-h2{
-   
+body{
+  margin:0;
 }
 
-/* hollow sm icons */
+/* About Me section */
+
+.cover-image{
+  width:100%;
+  height:auto;
+  display: none;
+}
+
+.top-profile{
+  margin: auto 24px;
+}
+
+.about-me-section{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.about-me-section img{
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+  
+  
+}
+  
+
+.about-me{
+  display:flex;
+  flex-direction: column;
+  
+}
+
+.about-me h2{
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  margin:0;
+}
+
+.about-me h1{
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 43px;
+  margin:0;
+}
+
+.about-me h3{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  margin:0;
+}
+
+.summary-section p{
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.socialbtns{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.scroll{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll p{
+  text-decoration: underline;
+  margin-top:0;
+}
+
+/* Tech section */
+.tech-section{
+  background-color: #EDFFFF;
+  height:530px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-section h2{
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 108px
+}
+
+.tech-section p{
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  margin: 0 24px 120px 24px;
+}
+
+/* Featured Projects */
+
+.featured-projects-section{
+  margin:auto 24px;
+}
+.featured-projects-section h2{
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+}
+
+.project-image{
+  width: 327px;
+  height: 280px;
+}
+.projects-container h3{
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 43px;
+  color: #000000;
+}
+
+.projects-container p{
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: #000000;
+
+}
+
+.project-buttons{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+/* Skills section */
+.skills-section{
+  background-color: #FDF2E4;
+}
+
+/* Social media icons */
 a, a:hover {
   text-decoration: none;
-}
-
-.socialbtns, .socialbtns ul, .socialbtns li {
-  margin: 0;
-  padding: 5px;
 }
 
 .socialbtns li {
@@ -33,21 +172,99 @@ a, a:hover {
 }
 
 .socialbtns .fa {
-  width: 40px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   color:#D0D0D0;
-  /* background-color: #FFF; */
-  /* border: 1px solid #000; */
-  /* padding-top: 12px; */
-  /* border-radius: 22px;
-  -moz-border-radius: 22px;
-  -webkit-border-radius: 22px;
-  -o-border-radius: 22px; */
+  
 }
 
 .socialbtns .fa:hover {
-  /* color: #FFF; */
-  /* background-color: #000; */
-  /* border: 1px solid #000; */
-  color: #000;
+   color: #000;
 }
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+/* Buttons */
+button{
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  width:178px;
+  height: 48px;
+  font-size: 20px;
+  border:none;
+ 
+}
+
+button:hover{
+  background-color: #FFD338;
+}
+
+.button-contents{
+ height:inherit;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+ 
+ 
+}
+
+.article-button-image{
+  width:20px;
+  height:26px;
+  
+}
+
+.project-buttons button{
+  background-color: #F5F5F5;
+  width:164px;
+}
+
+.my-words-section{
+  background-color: #FCEDEA;
+}
+
+.live-demo-button:hover{
+  background-color: #0B24F5;
+  color: #FFFFFF;
+}
+
+.view-code-button:hover{
+  background-color:#EB5577;
+  color: #FFFFFF;
+}
+
+
+.article-image{
+  width:100%;
+  height:auto;
+}
+
+
+/* projects section for non mobile screens */
+/* .projects-container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 24px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "project-image project-title project-title"
+    "project-image project-description project-description"
+    "project-image project-skills project-skills"
+    "project-image project-buttons project-buttons";
+}
+
+.project-image { grid-area: project-image; }
+
+.project-title { grid-area: project-title; }
+
+.project-description { grid-area: project-description; }
+
+.project-skills { grid-area: project-skills; }
+
+.project-buttons { grid-area: project-buttons; } */
