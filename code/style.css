@@ -1,127 +1,244 @@
-/*@import url("../fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");*/
-.flex-parent {
-  background-color: rgb(138, 186, 153);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@import url("../fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");*/
+/* Desktop large: between 1281px and 1512px*/
+/* Desktop large: between 745px and 1280px*/
+/* Tablet: between 376px and 744px - bild 412px hög*/
+/* Mobile: between 0 and 375px*/
+
+/* Color selection */
+:root {
+  --primary-color: rgb(157, 224, 195);
+  --secondary-color: rgb(115, 202, 205);
+  --tertiary-color: rgb(171, 196, 243);
+  --standard-white-color: rgb(255, 255, 255);
+
+  --heading-blue: #0B24F5;
+  --heading-pink: #EB5577;
+
+  --hover-pink: #EB5577;
+  --hover-blue: #0B24F5;
+  --hover-yellow: #FFD338;
 }
-.flex-child-left {
-  /*position: absolute;*/
-  display: flex;
-  height: 250px;
-  width: 50%;
-  /*right: 50%;*/
- /* top: 0%;*/
-  background-color: rgb(100, 141, 203);
-  border: 1px solid red;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
+
+body {
+  font-family: 'EB Garamond', serif;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.flex-child-right {
-  /*position: absolute;*/
-  display: flex;
-  height: 250px;
-  width: 50%;
-  /*left: 50%;*/
-  /*top: 0%;*/
-  background-color: rgb(211, 145, 215);
-  border: 1px solid rgb(248, 238, 57);
-}
-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  padding: 10px;
-}
+
+/* All general heading properties below:*/
 h1 {
-  margin: 0 auto;
-  border: 1px solid red;
-  font-size: 20px;
+  font-family: 'Satoshi';
+  margin: 0;
 }
+
 h2 {
-  margin: auto;
-  border: 1px solid red;
-  text-align: center;
-  display: flex;
+  font-family: 'Satoshi';
+  margin: 0;
 }
+
 h3 {
-  font-size: 20px;
-  margin: auto;
+  font-family: 'Satoshi';
+  margin: 0;
 }
+
 h4 {
-  font-size: small;
-  text-align: center;
-  color: red;
+  font-family: 'Satoshi';
+  margin: 0;
 }
-h5 {
-  font-size: x-large;
-  text-align: center;
-  color: black;
+
+p {
+  margin: 0;
 }
-.main-parent {
-  display: flex;
-  justify-content: center;
-  /*align-items: center;*/
-}
-.main-child {
-  display: flex;
-  height: 350px;
+
+/*CSS FOR MAIN PAGE*/
+.introduction {
+  height: 980px;
   width: 100%;
-  background-color: rgb(136, 189, 194);
-  border: 1px solid rgb(238, 106, 216);
-  align-items: baseline;
-  align-content: space-around;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
+  grid-column: 1 / 2; 
+  background-color: var(--primary-color);
 }
-.fp-parent {
+
+.container {
+  border: 1px solid rgb(144, 0, 255);
+  margin: 250px 80px;
+}
+
+.header {
+  /*border: 1px solid rgb(0, 255, 42);*/
+  display: flex;
+  flex-direction: row;
+}
+
+.container img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+.header-text {
+  /*border: 1px solid yellow;*/
   display: flex;
   flex-direction: column;
-  text-align: center;
-  background: yellow;
+  margin: auto 0 auto 10px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 10px;
-  margin: auto;
-  text-align: center;
-  /*margin: 0 auto;*/
+.container p {
+  margin: 30px;
 }
 
-.grid-mw-1 {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto;
-grid-gap: 10px;
-margin: auto;
-text-align:justify;
+.links {
+  border: 1px solid hotpink;
+  display: flex;
+  margin: 30px;
 }
 
-.grid-mw-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 10px;
-  margin: auto;
-  }
+.links button {
+  background-color: transparent;
+  border: 1px solid white;
+  margin: 5px;
+}
+.introduction-side-image {
+  /*display: none;    - On mobile view */  
+  grid-column: 2 / 3;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1677301988906-aa3ffc0d3014?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60');
+  background-size: cover;
+  background-position: 75%;
+}
 
-.grid-mw-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 10px;
-  margin: auto;
-  }
+/* TECH SECTION */
 
-  .grid-mw-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 10px;
+.tech {
+  background-color: rgb(186, 238, 212);
+  grid-column: 1 / 3;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech h1 {
+  color: var(--heading-blue);
+  font-size: 80px;
+  line-height: 108px;
+  font-weight: 600;
+
+}
+
+.tech p {
+  max-width: 400px;
+  margin: 0 0 0 100px;
+  border: 1px solid red;
+}
+
+/* FEATURED PROJECTS */
+
+:root {
+  --featured-proj-width: 700px;
+}
+
+.featured-projects {
+  grid-column: 1 / 3;
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  }
+  align-items: flex-start;
+}
+
+.featured-projects h1 {
+  color: var(--heading-blue);
+  max-width: var(--featured-proj-width);
+  font-size: 80px;
+  line-height: 108px;
+  font-weight: 700;
+  margin-top: 70px;
+}
+
+.project-container {
+  max-width: var(--featured-proj-width);
+  background-color: rgb(224, 206, 229);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto 50px auto;
+}
+
+.square-project-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 55%;
+}
+
+.square-project-image-weather {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-container-text {
+  background-color: rgb(208, 222, 248);
+  margin: 50px;
+}
+
+.project-container-text p {
+  margin: 10px auto 25px auto;
+}
+
+
+.code-tags {
+  margin: 10px 0 20px 0;
+}
+
+.code-tags p {
+  display: inline;
+  background-color: black;
+  color: white;
+  margin: 0 2px;
+  padding: 2px 5px;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-links button  {
+  background-color: #F5F5F5;
+  border-radius: 40px;
+  max-height: 45px;
+  margin: 10px 5px 5px 5px;
+  padding: 7px 10px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.live-button:hover  {
+  background-color: #7fcb5c;
+  color: white;
+}
+
+.git-code-button:hover  {
+  background-color: #ba95ff;
+  color: white;
+}
+
+.project-links button .icons {
+  fill: rgb(0, 0, 0);
+  width: 32px;
+  height: 32px;
+}
+
+.project-links button .icons:hover {
+  fill: rgb(255, 255, 255);
+}
+
+.project-links button p {
+  margin-left: 10px;
+  margin-top: 20px;
+}
