@@ -24,8 +24,17 @@ header {
     height: 160px;
     border-radius: 50%;
     border: 1px solid #0B24F5;
-    display: block;
-    margin: 55px auto 29px auto;
+    margin: 24px;
+}
+
+.myProfilePic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameAndTitle {
+    margin-left: 24px;
 }
 
 .name {
@@ -35,7 +44,6 @@ font-weight: 700;
 font-size: 28px;
 line-height: 38px;
 color: #0B24F5;
-margin-left: 24px;
 }
 
 .title {
@@ -45,7 +53,6 @@ font-weight: 900;
 font-size: 32px;
 line-height: 43px;
 color: #000000;
-margin-left: 24px;
 }
 
 .introduction {
@@ -61,15 +68,13 @@ margin: 24px;
 .contact-me {
     margin: 24px;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 320px;
 }
 
 .icon {
     font-size: 32px;
     color: black;
     opacity: 0.5;
+    padding-right: 24px;
 }
 
 .icon:hover {
@@ -315,4 +320,34 @@ footer h2 {
 
 .phone-mail {
     margin-left: 24px;
+}
+
+/* TABLET */
+@media (min-width: 667px) and (max-width: 1024px) {
+    .picture {
+        display: block;
+        background-color: #FCEDEA;
+        padding-top: 400px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nameAndTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .introduction {
+        margin: 0 48px 0 48px;
+    }
+
+    .contact-me {
+        margin-left: 48px;
+    }
+
 }
