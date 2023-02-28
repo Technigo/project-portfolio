@@ -1,7 +1,22 @@
 @import url('./assets/fonts/Satoshi-Variable');
 
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 29px;
+}
+
 h2, h3, h4, h5 {
     font-family: 'Satoshi', sans-serif;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
+    color: #0B24F5;
 }
 
 h3 {
@@ -29,11 +44,13 @@ h5 {
 }
 
 .intro img, .contact img {
+    display: flex;
     border-radius: 100px;
     width: 160px;
     height: 160px;
     object-fit: cover;
     object-position: 0 100%;
+    justify-content: center;
 }
 
 p {
@@ -43,6 +60,23 @@ p {
     font-size: 22px;
     line-height: 29px;
     color: #000000;
+}
+
+.intro {
+    margin: 55px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.tech {
+    background-color: #EDFFFF;
+}
+
+.skills {
+    background-color: #FDF2E4;
 }
 
 .contact a {
