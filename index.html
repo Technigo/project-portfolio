@@ -4,35 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio - Leo Thunell</title>
 </head>
 <body>
 
-    <header>
-        <img class="imgLT" src="./assets/LT.jpg" alt="A picture of Leo Thunell">
-        <h3>Leo Thunell</h3>
-        <h2>Frontend developer</h2>
-        <h4>with a diverse background</h4>
-    </header>
+    <div class="firstpagecontainer">
+        <div class="topleftbox">
+            <div class="presentationcontainer">
+                <img class="imgLT" src="./assets/LT.jpg" alt="A picture of Leo Thunell">
+                <div class="presentationcontainerchild">
+                    <h3>Leo Thunell</h3>
+                    <h2>Frontend developer</h2>
+                    <h4>with a softspot for softskills</h4>
+                </div>
+            </div>
+            <div class="introduction">
+                <p>
+                    With extensive experience with cooperative worktasks, workforce management, customer relations amongst others, 
+                    Leo takes his adaptability and high work ethic and applies it to coding. 
+                    Being a quick learner with high versatility he is ready to bring softskills and interprofessional experience to the workplace.
+                    Striving for excellence and getting applicable products is something that drives him to being an asset that is fundamental to the success of the team.
+                </p>
+                <div class="socialmedialinks">
+                    <a href="" class="linkedinlink"><img src="./assets/fadedlinkedinicon.svg" alt="clickable linkedin icon"></a>
+                    <a href="" class="githublink"><img src="./assets/fadedgithubicon.svg" alt="clickable github icon"></a>
+                    <a href="" class="stackoverflowlink"><img src="./assets/fadedstackoverflowicon.svg" alt="clickable stackoverflowicon icon"></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="toprightbox">
+            <img class="toprightimage" src="./assets/oak.jpg" alt="Header-image with a professional, yet artistic feel">
+        </div>
+    </div>
 
-    <div class="introduction">
-        <p>
-            With extensive experience with cooperative worktasks, workforce management, customer relations amongst others, 
-            Leo takes his adaptability and high work ethic and applies it to coding. 
-            Being a quick learner with high versatility he is ready to bring softskills and interprofessional experience to the workplace.
-            Striving for excellence and getting applicable products is something that drives him to being an asset that is fundamental to the success of the team.
-        </p>
-    </div>
-    
-    <div class="socialmedialinks">
-        <a href=""><img src="./assets/fadedlinkedinicon.svg" alt="clickable linkedin icon"></a>
-        <a href=""><img src="./assets/fadedgithubicon.svg" alt="clickable github icon"></a>
-        <a href=""><img src="./assets/fadedstackoverflowicon.svg" alt="clickable stackoverflowicon icon"></a>
-        <a href=""><img src="./assets/fadedtwittericon.svg" alt="clickable twitter icon"></a>
-        <a href=""><img src="./assets/fadedinstagramicon.svg" alt="clickable instagram icon"></a>
-    </div>
-    <img id="headerimage" src="./assets/oak.jpg" alt="Header-image with a professional, yet artistic feel">
-    
     <div class="letsScroll">
         <a href="#tech">
         <img id="arrowImg" src="./assets/arrowicon.svg" alt="An image of a blue downwardfacing arrow">
@@ -53,10 +59,18 @@
             <p>
                 The chatbotproject - Zoltar the great is a homage to a certain film from early 1990's. Being written to give respond to customized user inquiries.
             </p>
-            <div class="descriptiveIcons">Add icons here</div>
-            <button type="button" id="liveDemoChatBot" class="liveDemoBtn">Live Demo</button>
-            <button type="button" id="githubChatBot" class="githubBtn"><link href="">View the code</link></button>
+            
+            <div class="livedemoBtnFrame">
+                
+                <button type="button" id="liveDemoChatBot" class="liveDemoBtn"><img src="./assets/blackglobeicon.svg" class="livedemoimgblack" alt="live demo icon">Demo</button>
+            </div>
+            
+            <div class="githubBtnFrame">
+                <img src="./assets/blackgithubicon.svg" class="githubimgblack" alt="github icon">
+                <button type="button" id="githubChatBot" class="githubBtn"><link href="https://github.com/khleoth">View the code</link></button>
+            </div>
         </div>
+
         <div id="weatherappdiv">
             <h2>Weather app</h2>
             <img id="weatherappimg" src="" alt="picutre of a weather app-website">
@@ -68,6 +82,7 @@
             <button type="button" id="liveDemoWeatherApp" class="liveDemoBtn">Live Demo</button>
             <button type="button" id="githubWeatherApp" class="githubBtn"><link href="">View the code</link></button>
         </div>
+
         <div id="guesswhodiv">
             <h2>Guess who, the game</h2>
             <img id="guesswhoimg" src="" alt="picutre of a game of guess who on a website">
@@ -79,6 +94,7 @@
             <button type="button" id="liveDemoGuessWho" class="liveDemoBtn">Live Demo</button>
             <button type="button" id="githubGuessWho" class="githubBtn"><link href="">View the code</link></button>
         </div>
+
         <div id="musicreleasesdiv">
             <h2>Music Releases</h2>
             <img id="musicreleasesimg" src="" alt="picutre of a website that handle music releases">
@@ -89,6 +105,7 @@
             <button type="button" id="liveDemoMusicReleases" class="liveDemoBtn">Live Demo</button>
             <button type="button" id="githubMusicReleases" class="githubBtn"><link href="">View the code</link></button>
         </div> 
+
         <div id="surveydiv">
             <h2>Survey</h2>
             <img id="surveyimg" src="" alt="picutre of a survey-website">
@@ -99,6 +116,7 @@
             <button type="button" id="liveDemoSurvey" class="liveDemoBtn">Live Demo</button>
             <button type="button" id="githubSurvey" class="githubBtn"><link href="">View the code</link></button>
         </div> 
+
         <div id="happythoughtsdiv">
             <h2>Happy thoughts</h2>
             <img id="guesswhoimg" src="" alt="picutre of a undefined future website">
@@ -109,6 +127,7 @@
             <button type="button" id="liveDemoHappyThoughts" class="liveDemoBtn">Live Demo</button>
             <button type="button" id="githubHappyThoughts" class="githubBtn"><link href="">View the code</link></button>
         </div> 
+
         <div id="moviesdiv">
             <h2>Movies</h2>
             <img id="moviesimg" src="" alt="picutre of a undefined future website">
@@ -119,6 +138,7 @@
             <button type="button" id="liveDemoMovies" class="liveDemoBtn">Live Demo</button>
             <button type="button" id="githubMovies" class="githubBtn"><link href="">View the code</link></button>
         </div> 
+
         <div id="todoappdiv">
             <h2>Todo App</h2>
             <img id="todoappimg" src="" alt="picutre of a undefined future website">
@@ -215,9 +235,7 @@
         <a href=""><img src="./assets/fadedlinkedinicon.svg" alt="clickable linkedin icon"></a>
         <a href=""><img src="./assets/fadedgithubicon.svg" alt="clickable github icon"></a>
         <a href=""><img src="./assets/fadedstackoverflowicon.svg" alt="clickable stackoverflowicon icon"></a>
-        <a href=""><img src="./assets/fadedtwittericon.svg" alt="clickable twitter icon"></a>
-        <a href=""><img src="./assets/fadedinstagramicon.svg" alt="clickable instagram icon"></a>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
