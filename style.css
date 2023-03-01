@@ -1,209 +1,232 @@
-@import url('satoshi.css');
+@import url("satoshi.css");
 
 h1 {
-font-family: 'Satoshi-Bold';
-font-size: 80px;
-color: #0B24F5;
+  font-family: "Satoshi-Bold";
+  font-size: 80px;
+  color: #0b24f5;
 }
 
 .my-name {
-    font-size: 28px;
-    margin-bottom: 0px;
+  font-size: 28px;
+  margin-bottom: 0px;
 }
 
 header {
-    padding-top: 3rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-header h2,
+.personal-info h2,
 h3 {
-    margin: 0px;
+  margin: 0px;
 }
-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.personal-info img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
-    font-family: 'Satoshi-Black';
-    font-size: 32px;
+  font-family: "Satoshi-Black";
+  font-size: 32px;
 }
 
 h3 {
-    font-family: 'Satoshi-Medium';
-    color: #565656;
-    font-size: 24px;
-    margin-bottom: 2rem;
+  font-family: "Satoshi-Medium";
+  color: #565656;
+  font-size: 24px;
+  margin-bottom: 2rem;
 }
 
 h4 {
-    font-family: 'Satoshi-Black';
-    font-size: 16px;
-    text-align: center;
+  font-family: "Satoshi-Black";
+  font-size: 16px;
+  text-align: center;
 }
 
 p {
-    font-family: 'EB Garamond', serif;
-    font-size: 22px;
+  font-family: "EB Garamond", serif;
+  font-size: 22px;
 }
 
 .social-media-links {
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-around;
-    gap: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
 }
 
 .profile-picture {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .scroll {
-    text-decoration: underline 3px ;
+  display: flex;
+  flex-direction: column;
+  text-decoration: underline 3px;
+  align-items: center;
 }
 
 .scroll a:visited {
-    color: #0B24F5;
+  color: #0b24f5;
 }
 
 .tech {
-    background-color: #EDFFFF;
-    padding-top: 80px;
-    padding-bottom: 120px;
+  background-color: #edffff;
+  padding-top: 80px;
+  padding-bottom: 120px;
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
-
 .featured {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .featured-article {
-    margin: auto;
+  margin: auto;
 }
 
 .tag-list {
-    display: flex;
-    align-items: flex-start;
-    font-family: 'Satoshi-Medium';
-    font-size: 16px;
-    gap: 4px;
-    margin-left: 0px;
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  margin-bottom: 1rem;
 }
 
 .tag-list p {
-    background-color: black;
-    padding: 4px;
-    color: white;
+  background-color: black;
+  padding: 4px;
+  font-family: "Satoshi-Medium";
+  font-size: 16px;
+  color: white;
 }
 
 .view-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-    margin-bottom: 80px;
-    }
-
-.view-demo-button,
-.view-code-button {
-    display: flex;
-    align-items: center;
-    font-family: 'Satoshi-Medium';
-    font-size: 20px;
-    width: 164px;
-    height: 48px;
-    background: #F5F5F5;
-    border-radius: 40px;
-    border: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  margin-bottom: 80px;
 }
 
-.view-demo-button img,
-.view-code-button img {
-    width: 48px;
+.view-demo-link,
+.view-code-link {
+  display: flex;
+  align-items: center;
+  font-family: "Satoshi-Medium";
+  font-size: 20px;
+  width: 164px;
+  height: 48px;
+  background: #f5f5f5;
+  border-radius: 40px;
+  border: 0px;
 }
 
-
+.view-demo-link img,
+.view-code-link img {
+  width: 48px;
+}
 
 .view-wrapper a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.view-demo-button:hover {
-    background: #0B24F5;
-    color: white;
+.view-demo-link:hover {
+  background: #0b24f5;
+  color: white;
 }
 
-.view-code-button:hover {
-    background: #EB5577;
-    color: white;
+.view-code-link:hover {
+  background: #eb5577;
+  color: white;
+}
+
+.view-code-link:hover img {
+  content: url(./github-wh.svg);
+}
+
+.view-demo-link:hover img {
+  content: url(./Live-demo-wh.svg);
 }
 
 .skills {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: #FDF2E4;
-    padding-top: 80px;
-    padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fdf2e4;
+  padding-top: 80px;
+  padding-bottom: 120px;
 }
 
 .skills-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-link:hover {
+  filter: brightness(0%)
 }
 
 .skills-header {
-    background: #EB5577;
-    width: 65px;
-    height: 36px;
-    padding: 2px;
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    color: #FFFFFF;
-    text-align: center;
-    margin-top: 66px;
+  background: #eb5577;
+  width: 65px;
+  height: 36px;
+  padding: 2px;
+  font-family: "Satoshi-Bold";
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 66px;
 }
 
 .skills-header:nth-of-type(2) {
-    background: #2483E0;
-    width: 92px;
+  background: #2483e0;
+  width: 92px;
 }
 
 .skills-header:nth-of-type(3) {
-    background: #0B24F5;
+  background: #0b24f5;
 }
 
 .skills-header:nth-of-type(4) {
-    background: #6DB486;
-    width: 142px;
-    
+  background: #6db486;
+  width: 142px;
 }
 
-
 .skills ul {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .skills li {
-    list-style: none;
-    font-family: 'EB Garamond';
-    font-size: 22px;
-    text-align: center;
+  list-style: none;
+  font-family: "EB Garamond";
+  font-size: 22px;
+  text-align: center;
+}
 
+.contact-section {
+  background-color: white;
+}
+
+.contact-header {
+  color: #eb5577;
+  font-size: 58px;
+  text-align: center;
+}
+
+.bottom-p {
+  font-family: "Satoshi-Black";
+  font-size: 24px;
+  margin: 0;
 }
