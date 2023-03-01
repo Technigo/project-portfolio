@@ -1,5 +1,10 @@
 body {
     font-family: 'Satoshi', sans-serif;
+    max-width: 667px;
+}
+
+.container {
+    max-width: 100%;
 }
 
 /* Start h1-h7 */
@@ -13,6 +18,7 @@ h1 {
 h2 {
     font-size: 32px;
     font-weight: 900;
+    margin-top: 7px;
 
 }
 
@@ -25,6 +31,8 @@ h3 {
     font-size: 24px;
     font-weight: 400;
     color: #565656;
+    margin-top: 3px;
+    margin-bottom: 1.5em;
 
 }
 
@@ -33,25 +41,50 @@ h3 {
     color: #000000;
 }
 
-h4 {
+#lets-scroll {
     font-size: 16px;
     font-weight: 900;
     color: #0B24F5;
-
-
+    text-decoration: underline;
+    text-decoration-color: #0B24F5;
+    text-decoration-thickness: 2px;
+    display:block;
 }
 
-h5 {
+h4 {
     font-size: 80px;
     font-weight: 700;
     color: #0B24F5;
+}
+
+.skill {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+#code {
+    background: #EB5577;
+}
+
+#toolbox {
+    background: #2483E0;
+}
+
+#more {
+    background: #0B24F5;
+}
+
+#upcoming {
+    background: #6DB486;
 }
 
 #contact-name {
     font-size: 28px;
 }
 
-h6 {
+h5 {
     font-size: 72px;
     font-weight: 700;
     color: #0B24F5;
@@ -61,7 +94,7 @@ h6 {
     color: #EB5577;
 }
 
-h7 {
+h6 {
     font-size: 32px;
     font-weight: 900;
 }
@@ -70,7 +103,30 @@ h7 {
     font-size: 20px;
     color: #EB5577;
 }
-/* End h1-h7 */
+/* End h1-h6 */
+/* Start span elements */
+.tags {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color:white;
+    background: black;
+}
+
+#tech1 {
+    background: #EB5577;
+    color: white;
+}
+
+#tech2 {
+    background: #0B24F5;
+    color: white;
+}
+
+#tech3 {
+    background: #2483E0;
+    color: white;
+}
 
 p {
     font-family: 'EB Garamond', serif;
@@ -99,10 +155,10 @@ p {
     font-family: 'Satoshi', sans-serif;
     color: #333333;
 }
-/* Hover effect*/
+/* Hover effect
 a:hover {
     fill:"black"
-}
+} */
 /* End Buttons */
 
 .words {
@@ -114,3 +170,54 @@ a:hover {
     background-color: #EDFFFF;
 }
 
+/* Header */
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.headshot-container {
+    display: flex;
+    justify-content: center;
+    margin: 3em auto 2em auto;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.arrow {
+    animation: bounce 1s infinite alternate;
+    margin-bottom: 4px;
+}
+
+@keyframes bounce {
+    0%   {transform: translateY(0);}
+    100% {transform: translateY(5px);}
+  }
+
+/* Bounce animation Link: https://codepen.io/technigo/pen/OJoWwbE */
+
+.scroll-container {
+    margin-top: 3em;
+    margin-bottom: 3.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        overflow-x: hidden !important;
+    }
+}
