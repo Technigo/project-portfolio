@@ -1,0 +1,180 @@
+/*mobile first approach*/
+
+* { 
+    box-sizing: border-box;
+  }
+
+
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin: 24px 55px 24px 40px;
+   padding: 0%;
+   gap: 29px;
+   position: relative;
+}
+
+.img.desktop-image {
+    display: none;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(45, 107, 107);
+}
+
+h3 {
+    font-weight: 900;
+}
+
+img.profile-image {
+   align-self: center;
+   display: flex;
+   justify-content: center;
+   height: 164px;
+    min-width: 164px;
+    border-radius: 50%;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.letscroll {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+h4 {
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    margin: 5px;
+    padding: 5px;
+}
+
+img.arrow {
+    margin: 10px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 10px;
+    /*animation: bounce 1s infinite alternate;*/
+
+}
+
+@keyframes bounce {
+    0%   {transform: translateY(0);}
+    100% {transform: translateY(50px);}
+  }
+
+.tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    gap: 29px;
+    position: relative;
+    background-color: rgb(197, 233, 233);
+    text-align: center;
+    
+ }
+
+
+
+h2 {
+    color: blue;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 24px 50px 24px;
+    
+
+
+}
+
+.chatbot, .weatherapp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.chatbot-box, .weather-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+h5 {
+    font-size: x-large;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.blackboxes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+   max-width: fit-content;
+    
+}
+
+.html-box, .css-box, .javascript-box {
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+
+/* this part has the media queries for tablet size */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+    .chatbot, .weatherapp {
+        flex-direction: row;
+    }
+}
+
+/* this part has the media queries for desktop size */
+  
+@media (min-width: 1025px) {
+
+    .img.desktop-image {
+        float: right;
+    }
+
+    .chatbot, .weatherapp {
+        flex-direction: row;
+    }
+
+    .projects-container {
+        margin-left: 230px;
+        margin-right: 230px;
+    }
+}
+
