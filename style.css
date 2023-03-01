@@ -18,54 +18,60 @@ body{
   display: none;
 }
 
-.top-profile{
+.intro-section{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
   margin: auto 24px;
+
 }
 
-.about-me-section{
+.profile-and-image{
   display: flex;
   flex-direction: column;
-  
+  align-items: flex-start;
+  padding: 0px;
+  gap: 29px;
+  margin-top:55px;
 }
 
-
-.about-me-section img{
-  width: 164px;
-  height: 164px;
+.about-me-image{
+  align-self: center;
+  width:164px;
+  height:164px;
   border-radius: 50%;
-  
-  
 }
-  
 
-.about-me{
-  display:flex;
+.about-me-text{
+  display: flex;
   flex-direction: column;
-  
+  align-items: flex-start;
+  padding: 0px;
+
 }
 
-.about-me h2{
+.about-me-text h2{
   font-weight: 700;
   font-size: 28px;
-  line-height: 38px;
   margin:0;
+  color: #0B24F5;
 }
 
-.about-me h1{
+.about-me-text h1{
   font-weight: 900;
   font-size: 32px;
-  line-height: 43px;
   margin:0;
 }
 
-.about-me h3{
+.about-me-text h3{
   font-weight: 500;
   font-size: 24px;
-  line-height: 32px;
   margin:0;
+  color: #565656;
+  
 }
 
-.summary-section p{
+.summary p{
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 400;
@@ -74,10 +80,10 @@ body{
   color: #000000;
 }
 
-.socialbtns{
+.socialbtns ul{
   display:flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .scroll{
@@ -85,11 +91,23 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #0B24F5;
 }
 
 .scroll p{
-  text-decoration: underline;
   margin-top:0;
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+
+}
+
+.scroll hr{
+  width: 83px;
+  margin:0;
+  background-color: #0B24F5;
+  border-width:0;
 }
 
 /* Tech section */
@@ -314,12 +332,43 @@ background: #2483E0;
   background: #6DB486;
 }
 
-.contact-section h1{
+/* Time to talk */
+.contact-section{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+ 
+
+}
+.time-to-talk{
   font-weight: 900;
   font-size: 58px;
   line-height: 78px;
   text-align: center;
   color: #EB5577;
+}
+
+.contact-container{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  margin: auto 24px;
+}
+
+.contact-info{
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  margin-top:56px;
+  margin-bottom: 99px;
+}
+
+.contact-info h3{
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 32px;
+  margin:0;
+  
 }
 /* Social media icons */
 a, a:hover {
