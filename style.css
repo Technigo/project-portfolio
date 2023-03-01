@@ -7,7 +7,7 @@ body {
   background: #fff0f5;
 }
 
-.header-container {
+.header {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -68,4 +68,61 @@ body {
 .socialmedia-icons {
   display: flex;
   justify-content: space-evenly;
+}
+
+.sm-icon:hover {
+  filter: brightness(0%);
+}
+
+.project-image:hover {
+  filter: brightness(40%);
+}
+
+.arrow-section {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.arrow {
+  width: 100px;
+  border-radius: 50%;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+.tech-section {
+  display: flex;
+  justify-content: center;
+  background-color: #b0e0e6;
+}
+
+.section-title {
+  font-family: "Satoshi", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: blue;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  font-style: black;
 }
