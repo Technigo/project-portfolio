@@ -4,6 +4,8 @@
 /* Tablet: between 376px and 744px - bild 412px hög*/
 /* Mobile: between 0 and 375px*/
 
+/*z-index 1 and filter-brightness with z-index 2, for increased readability*/
+
 :root {
   --primary-color: rgb(157, 224, 195);
   --secondary-color: rgb(115, 202, 205);
@@ -16,31 +18,37 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  z-index: 1;
 }
 
 /*GENERAL HEADING PROPERTIES*/
 h1 {
   font-family: 'Satoshi';
   margin: 0;
+  z-index: 1;
 }
 
 h2 {
   font-family: 'Satoshi';
   margin: 0;
+  z-index: 1;
 }
 
 h3 {
   font-family: 'Satoshi';
   margin: 0;
+  z-index: 1;
 }
 
 h4 {
   font-family: 'Satoshi';
   margin: 0;
+  z-index: 1;
 }
 
 p {
   margin: 0;
+  z-index: 1;
 }
 
 /*CSS FOR MAIN PAGE*/
@@ -64,16 +72,20 @@ p {
 .container img {
   border-radius: 50%;
   max-width: 150px;
+  filter: brightness(70%);
+  z-index: 2;
 }
 
 .header-text {
   display: flex;
   flex-direction: column;
   margin: auto 0 auto 10px;
+  z-index: 1;
 }
 
 .container p {
   margin: 30px;
+  z-index: 1;
 }
 
 .links {
@@ -92,9 +104,10 @@ p {
   grid-column: 2 / 3;
   width: 100%;
   height: 100%;
-  background-image: url('https://images.unsplash.com/photo-1677301988906-aa3ffc0d3014?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60');
+  background-image: url('https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGZhbnRhbnN5JTIwcGFzdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
   background-size: cover;
   background-position: 75%;
+  z-index: 1;
 }
 
 /* TECH SECTION */
@@ -106,6 +119,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .tech h1 {
@@ -113,6 +127,7 @@ p {
   font-size: 80px;
   line-height: 108px;
   font-weight: 600;
+  z-index: 1;
 
 }
 
@@ -120,6 +135,7 @@ p {
   max-width: 400px;
   margin: 0 0 0 100px;
   border: 1px solid red;
+  z-index: 1;
 }
 
 /* FEATURED PROJECTS */
@@ -142,6 +158,7 @@ p {
   line-height: 108px;
   font-weight: 700;
   margin-top: 70px;
+  z-index: 1;
 }
 
 .project-container {
@@ -159,6 +176,8 @@ p {
   height: 200px;
   object-fit: cover;
   object-position: 55%;
+  filter: brigthness(70%);
+  z-index: 2;
 }
 
 .square-project-image-weather {
@@ -170,10 +189,13 @@ p {
 .project-container-text {
   background-color: rgb(208, 222, 248);
   margin: 50px;
+  filter: brigthness(70%);
+  z-index: 2;
 }
 
 .project-container-text p {
   margin: 10px auto 25px auto;
+  z-index: 1;
 }
 
 
@@ -187,6 +209,7 @@ p {
   color: white;
   margin: 0 2px;
   padding: 2px 5px;
+  z-index: 1;
 }
 
 .project-links {
@@ -209,24 +232,33 @@ p {
 .live-button:hover  {
   background-color: #7fcb5c;
   color: white;
+  filter: brigthness(70%);
+  z-index: 2;
 }
 
 .git-code-button:hover  {
   background-color: #ba95ff;
   color: white;
+  filter: brigthness(70%);
+  z-index: 2;
 }
 
 .project-links button .icons {
   fill: rgb(0, 0, 0);
   width: 32px;
   height: 32px;
+  filter: brigthness(70%);
+  z-index: 2;
 }
 
 .project-links button .icons:hover {
   fill: rgb(255, 255, 255);
+  filter: brigthness(70%);
+  z-index: 2;
 }
 
 .project-links button p {
   margin-left: 10px;
   margin-top: 20px;
+  z-index: 1;
 }
