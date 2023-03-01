@@ -122,6 +122,11 @@ body{
 .featured-projects-section{
   margin:auto 24px;
 }
+
+.projects-container{
+  display:flex;
+  flex-direction: column;
+}
 .featured-projects-section h2{
   font-weight: 700;
   font-size: 72px;
@@ -131,6 +136,10 @@ body{
 .project-image{
   width: 327px;
   height: 280px;
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+ 
 }
 .projects-container h3{
   font-weight: 900;
@@ -149,18 +158,169 @@ body{
 
 }
 
+.project-skills{
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap:4px;
+
+}
+
+.project-skills span{
+  background-color: #000;
+  color:white;
+  padding: 2px 6px;
+  
+}
+
 .project-buttons{
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
+.project-buttons button{
+  margin-top:24px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  background-color: #F5F5F5;
 
+}
+
+.view-code-button{
+  width: 200px;
+  height: 48px;
+
+}
+
+.live-demo-button{
+  width: 164px;
+  height: 48px;
+}
+
+/* MyWords Blogposts */
+.my-words-section h1{
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 97px;
+  text-align: center;
+  color: #EB5577;
+  
+}
+.blogpost-container{
+  margin: auto 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 98px;
+  padding-bottom: 98px;
+ 
+}
+
+.article-image{
+  width:100%;
+  height:auto;
+}
+
+.blogpost-date{
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  color: #EB5577;
+}
+
+.blogpost-title{
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 43px;
+  color: #000000;
+}
+
+.blogpost-text{
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: #000000;
+}
 /* Skills section */
 .skills-section{
   background-color: #FDF2E4;
 }
 
+.skills-section h2{
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 108px;
+  text-align: center;
+  color: #0B24F5;
+  margin-top:0;
+}
+
+.skills-list-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 66px;
+  padding-bottom:96px;
+}
+
+.skills-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+
+.skills-list h3{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 2px;
+  margin-bottom:0;
+  color: #FFFFFF;
+}
+
+.skills-list li{
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  /* or 145% */
+  text-align: center;
+  color: #000000;
+}
+
+.code{
+  background: #EB5577;
+}
+
+.toolbox{
+background: #2483E0;
+}
+
+.more{
+  background: #0B24F5;
+}
+
+.upcoming{
+  background: #6DB486;
+}
+
+.contact-section h1{
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 78px;
+  text-align: center;
+  color: #EB5577;
+}
 /* Social media icons */
 a, a:hover {
   text-decoration: none;
@@ -193,14 +353,13 @@ ul {
 button{
   border-radius: 50px;
   background-color: #FFFFFF;
-  width:178px;
-  height: 48px;
   font-size: 20px;
   border:none;
+  text-align: left;
  
 }
 
-button:hover{
+.read-article-button:hover{
   background-color: #FFD338;
 }
 
@@ -214,16 +373,21 @@ button:hover{
  
 }
 
+.read-article-button{
+  width:178px;
+  height: 48px;
+  font-weight: 500;
+  line-height: 27px;
+  
+}
+
 .article-button-image{
   width:20px;
   height:26px;
   
 }
 
-.project-buttons button{
-  background-color: #F5F5F5;
-  width:164px;
-}
+
 
 .my-words-section{
   background-color: #FCEDEA;
@@ -240,10 +404,7 @@ button:hover{
 }
 
 
-.article-image{
-  width:100%;
-  height:auto;
-}
+
 
 
 /* projects section for non mobile screens */
