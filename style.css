@@ -1,3 +1,5 @@
+/* Styling for Fonts */
+
 @font-face {
     font-family: SatoshiBlack;
     font-weight: bolder;
@@ -34,15 +36,24 @@
     src: url('./fonts/Dosis/static/Dosis-Medium.ttf');
 }
 
+body{
+    margin:0;
+    padding:0;
+}
+
+/* Applying fonts to headers */
+
 h1 {
     font-family: SatoshiBold;
     font-size: 26px;
+    margin: 0;
 }
 
 h2 {
     font-family: SatoshiMedium;
     font-size: 65px;
-    text-align: center;
+    text-align: center;  
+    margin: 50px 0 30px 0;
 }
 
 h3 {
@@ -54,11 +65,14 @@ h4 {
     font-family: SatoshiMedium;
     font-size: 22px;
     text-align: center;
+    margin: 40px 0 10px 0;
+    text-decoration: underline;
 }
 
 h5 {
     font-family: SatoshiMedium;
     font-size: 20px;
+    margin: 20px 0 0 0;
 }
 
 p {
@@ -67,34 +81,206 @@ p {
     text-align: justify;
 }
 
-.contact-me h2{
-    font-family: SatoshiBlack;
-    font-size: 50px;
-    
+/* Styling for Header Section */
+
+header{
+    display:grid;
+    box-sizing: border-box;
+    margin: 0 15px;
 }
 
-.project-tech{
+header h3{
+    margin: 0;
+}
+
+.profile-pic {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit:cover;
+    place-self: center;
+    margin: 40px 0;
+}
+
+.contact-icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-icons {
+    width: 30px;
+    height: 30px;
+    margin: 1.5em;
+    opacity: 40%;
+}
+
+.contact-icons:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.scroll-wrapper {
+    margin: 30px 15px;
+    display:flex;
+    flex-direction: column;
+}
+
+.scroll-wrapper p {
+    text-align: center;
+    /* color:blue; */
+    font-family: SatoshiBlack;
+    font-size: 16px;
+}
+
+.scroll-wrapper .material-symbols-outlined {
+    /* color:blue; */
+    text-align: center;
+}
+
+/* Styling for Tech Section */
+
+.tech-section {
+    margin: 75px 15px;
+    box-sizing: border-box;
+}
+
+/* Styling for Featured Projects Section */
+
+.featured-projects {
+    margin: 75px 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+ul.each-project{
+    list-style-type: none;
+    padding: 0;
+    margin: 15px;
+    max-width: 100%;
+}
+
+.project-img {
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px black solid;
+}
+.project-tech {
     font-family: SatoshiMedium;
     font-size: 16px;
+    padding: 2px;
+    margin: 2px;
+    background: black;
+    color: white;
 }
 
 button {
     font-family: SatoshiRegular;
-    font-size: 16px;
-    border-radius: 20px;
+    font-size: 20px;
+    border-radius: 25px;
     margin: 15px 0;
+    padding: 10px;
+    display: flex;
+    /* background-color:lightgray;
+    border: lightgray 1px solid; */ 
 }
 
-ul{
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    padding-right: 5px;
+}
+
+.code-button-icon {
+    width: 24px;
+    height: 24px;
+    padding-right: 5px;
+}
+
+/* Styling for My Words */
+
+.my-words {
+    margin: 75px 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+ul.my-words-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 15px;
+}
+
+.my-words h3{
+    margin: 5px 0 15px 0;
+}
+
+/* Styling for Skills List */
+
+.skills-section {
+    margin: 75px 0;
+    box-sizing: border-box;
+}
+
+ul.skills-list{
     list-style-type: none;
     padding: 0;
 }
 
 .skills-list p {
     text-align: center;
+    margin: 5px 0;
+}
+
+/* Styling for Contact Me */
+
+.contact-me {
+    display:grid;
+    box-sizing: border-box;
+    margin: 0 15px;
+}
+
+.contact-me h2{
+    font-family: SatoshiBlack;
+    font-size: 50px; 
+}
+
+.contact-me h3{
+    margin: 0 0 30px 0;
+}
+
+.contact-icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-icons {
+    width: 30px;
+    height: 30px;
+    margin: 1.5em;
+    opacity: 40%;
+}
+
+.contact-icons:hover {
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 
 
+.header-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
 
 
