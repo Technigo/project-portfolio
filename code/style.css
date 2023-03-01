@@ -88,17 +88,50 @@ p {
   z-index: 1;
 }
 
-.links {
+/*.links {
   border: 1px solid hotpink;
   display: flex;
   margin: 30px;
-}
+}/*
 
-.links button {
-  background-color: transparent;
+/*.links button {
   border: 1px solid white;
   margin: 5px;
+}*/
+
+.links-social-media button  {
+  background-color: #F5F5F5;
+  border-radius: 40px;
+  max-height: 15px;
+  margin: 10px 5px 5px 5px;
+  padding: 7px 10px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
+
+.social-media-button:hover  {
+  background-color: #ba95ff;
+  color: white;
+  filter: brigthness(70%);
+  z-index: 2;
+}
+
+.social-media button .icons {
+  fill: rgb(0, 0, 0);
+  width: 12px;
+  height: 12px;
+  filter: brigthness(70%);
+  z-index: 2;
+}
+
+
+
+
+
+
 .introduction-side-image {
   /*display: none;    - On mobile view */  
   grid-column: 2 / 3;
@@ -353,51 +386,53 @@ p {
   margin: 25px auto;
 }
 
-.skill-lists {
-  padding: 10px;
-  margin: 10px 0 10px 0;
-  border: 1px;
-}
-
-.code dt {
-  background-color: #EB5577;
-  text-align: center;
-}
-.toolbox dt {
-  background-color: #2483E0;
-  text-align: center;
-}
-
-.more dt {
-  background-color: #0B24F4;
-  text-align: center;
-}
-
-.upcoming dt {
-  background-color: #6DB486;
-  text-align: center;
-}
-
-dt {
-  font-size: 20px;
-  color: white;
-  margin: 25px;
-}
-dd {
-  display: grid;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 .row {
-  padding: 150px;
+  padding: 0 20%;
+}
+
+.column-code {
+  float: left;
+  width: 25%;
+}
+.column-code h4{
+  display:inline-flex;
+  background-color:red;
+  padding: 3px;
+}
+
+.column-toolbox {
+  float: left;
+  width: 25%;
+}
+.column-toolbox h4{
+  display:inline-flex;
+  background-color:red;
+  padding: 3px;
+}
+
+.column-more {
+  float: left;
+  width: 25%;
+}
+.column-more h4{
+  display:inline-flex;
+  background-color:red;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+.column-upcoming {
+  float: left;
+  width: 25%;
+}
+.column-upcoming h4{
+  display:inline-flex;
+  background-color:red;
+  padding: 3px;
+  margin-bottom: 5px;
 }
