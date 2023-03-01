@@ -1,319 +1,316 @@
 @import url('css/satoshi.css');
 
-body {
-    display: flex;
-    flex-direction: column;
-}
+/* DESIGN FOR MOBILE */
+@media (max-width: 667px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 
-header, .tech, .featured-projects, .my-words, .skills, footer {
-    /* padding: 10px; */
-}
+    /**** SECTION: HEADER ****/
+    .picture {
+        display: none;
+    }
 
-/**** HEADER ****/
+    .profile-pic {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 1px solid #0B24F5;
+        margin: 24px;
+    }
 
-header {
-    /* border: 2px solid red; */
-}
+    .myProfilePic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.picture {
-    display: none;
-}
+    .nameAndTitle {
+        margin-left: 24px;
+    }
 
-.profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 1px solid #0B24F5;
-    margin: 24px;
-}
-
-.myProfilePic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nameAndTitle {
-    margin-left: 24px;
-}
-
-.name {
-font-family: 'Satoshi-Variable';
-font-style: normal;
-font-weight: 700;
-font-size: 28px;
-line-height: 38px;
-color: #0B24F5;
-}
-
-.title {
-font-family: 'Satoshi-Variable';
-font-style: normal;
-font-weight: 900;
-font-size: 32px;
-line-height: 43px;
-color: #000000;
-}
-
-.introduction {
-font-family: 'EB Garamond';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 29px;
-color: #000000;
-margin: 24px;
-}
-
-.contact-me {
-    margin: 24px;
-    display: flex;
-}
-
-.icon {
-    font-size: 32px;
-    color: black;
-    opacity: 0.5;
-    padding-right: 24px;
-}
-
-.icon:hover {
-    opacity: 1;
-}
-
-.scroll {
-    margin: 24px;
-}
-
-.arrow {
-    color: #0B24F5;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.scroll-text {
-    font-family: 'Satoshi-Variable';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 22px;
-    color: #0B24F5;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    width: fit-content;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/*** TECH ***/
-
-.tech {
-    background-color: #EDFFFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 0 80px 0;
-}
-
-.tech h2 {
-font-family: 'Satoshi-Variable';
-font-style: normal;
-font-weight: 700;
-font-size: 80px;
-line-height: 108px;
-color: #0B24F5;
-}
-
-.tech p {
-font-family: 'EB Garamond';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 32px;
-color: #000000;
-margin: 24px;
-}
-
-/*** FEATURED PROJECTS ***/
-
-.featured-projects img {
-    margin: 24px;
-}
-
-.Project1, .Project2, .Project3, .Project4 {
-    margin-top: 24px;
-}
-
-.featured-projects h2 {
-font-family: 'Satoshi-Variable';
-font-style: normal;
-font-weight: 700;
-font-size: 72px;
-line-height: 80px;
-color: #0B24F5;
-margin: 24px;
-}
-
-.featured-projects h3 {
-font-family: 'Satoshi-Variable';
-font-style: normal;
-font-weight: 900;
-font-size: 32px;
-line-height: 43px;
-color: #000000;
-margin-left: 24px;
-}
-
-.featured-projects p {
-font-family: 'EB Garamond';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 29px;
-color: #000000;
-margin: 24px;
-}
-
-.project-languages {
-    margin-left: 24px;
-}
-
-.featured-projects li {
-    display: inline;
-    padding: 3px;
-    background-color: #000000;
-    color: #ffff;
-    font-family: 'Satoshi-Variable';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.featured-projects button {
-    display: block;
-    margin: 12px 0px 12px 24px;
-    background-color: #F5F5F5;
-    border-radius: 40px;
-    border: none;
-    padding: 12px;
-    font-family: 'Satoshi-Variable';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    color: #333333;
-}
-
-
-.view-code:hover {
-    background-color:#EB5577;
-    color: white;
-}
-
-.live-demo:hover {
-    background-color: #0B24F5;
-    color:white;
-}
-
-.my-words {
-    background-color: #FCEDEA;
-}
-
-.my-words h2 {
+    .name {
     font-family: 'Satoshi-Variable';
     font-style: normal;
     font-weight: 700;
-    font-size: 70px;
-    line-height: 97px;
-    color: #EB5577;
+    font-size: 28px;
+    line-height: 38px;
+    color: #0B24F5;
+    }
+
+    .title {
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43px;
+    color: #000000;
+    }
+
+    .introduction {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
     margin: 24px;
-}
+    }
 
-.skills {
-    background-color: #FDF2E4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-}
+    .contact-me {
+        margin: 24px;
+        display: flex;
+    }
 
-.skills h2 {
+    .icon {
+        font-size: 32px;
+        color: black;
+        opacity: 0.5;
+        padding-right: 24px;
+    }
+
+    .icon:hover {
+        opacity: 1;
+    }
+
+    .scroll {
+        margin: 24px;
+    }
+
+    .arrow {
+        color: #0B24F5;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .scroll-text {
+        font-family: 'Satoshi-Variable';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 22px;
+        color: #0B24F5;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        width: fit-content;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /*** SECTION: TECH ***/
+
+    .tech {
+        background-color: #EDFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0 80px 0;
+    }
+
+    .tech h2 {
     font-family: 'Satoshi-Variable';
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 108px;
     color: #0B24F5;
-    text-align: center;
-    margin: 24px;
-}
+    }
 
-.skills h3 {
-    font-family: 'Satoshi-Variable';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    color: #FFFFFF;
-    width:fit-content;
-    padding: 2px;
-    margin: 10px;
-    text-align: center;
-}
-
-.skills p {
-    text-align: center;
+    .tech p {
     font-family: 'EB Garamond';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 32px;
     color: #000000;
-}
+    margin: 24px;
+    }
 
-.h3-code {
-    background-color: #EB5577;
-}
+    /*** SECTION: FEATURED PROJECTS ***/
 
-.h3-toolbox {
-    background-color: #2483E0;
-}
+    .featured-projects img {
+        margin: 24px;
+    }
 
-.h3-more {
-    background-color: #0B24F5;
-}
+    .Project1, .Project2, .Project3, .Project4 {
+        margin-top: 24px;
+    }
 
-.h3-upcoming {
-    background-color: #6DB486;
-}
+    .featured-projects h2 {
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
+    color: #0B24F5;
+    margin: 24px;
+    }
 
-footer {
-
-}
-
-footer h2 {
+    .featured-projects h3 {
     font-family: 'Satoshi-Variable';
     font-style: normal;
     font-weight: 900;
-    font-size: 50px;
-    line-height: 78px;
-    text-align: center;
-    color: #EB5577;
-}
-
-.phone-mail {
+    font-size: 32px;
+    line-height: 43px;
+    color: #000000;
     margin-left: 24px;
+    }
+
+    .featured-projects p {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+    margin: 24px;
+    }
+
+    .project-languages {
+        margin-left: 24px;
+    }
+
+    .featured-projects li {
+        display: inline;
+        padding: 3px;
+        background-color: #000000;
+        color: #ffff;
+        font-family: 'Satoshi-Variable';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+
+    .featured-projects button {
+        display: block;
+        margin: 12px 0px 12px 24px;
+        background-color: #F5F5F5;
+        border-radius: 40px;
+        border: none;
+        padding: 12px;
+        font-family: 'Satoshi-Variable';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+        color: #333333;
+    }
+
+
+    .view-code:hover {
+        background-color:#EB5577;
+        color: white;
+    }
+
+    .live-demo:hover {
+        background-color: #0B24F5;
+        color:white;
+    }
+
+    .my-words {
+        background-color: #FCEDEA;
+    }
+
+    .my-words h2 {
+        font-family: 'Satoshi-Variable';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 97px;
+        color: #EB5577;
+        margin: 24px;
+    }
+
+    .skills {
+        background-color: #FDF2E4;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .skills h2 {
+        font-family: 'Satoshi-Variable';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 108px;
+        color: #0B24F5;
+        text-align: center;
+        margin: 24px;
+    }
+
+    .skills h3 {
+        font-family: 'Satoshi-Variable';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        width:fit-content;
+        padding: 2px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .skills p {
+        text-align: center;
+        font-family: 'EB Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: #000000;
+    }
+
+    .h3-code {
+        background-color: #EB5577;
+    }
+
+    .h3-toolbox {
+        background-color: #2483E0;
+    }
+
+    .h3-more {
+        background-color: #0B24F5;
+    }
+
+    .h3-upcoming {
+        background-color: #6DB486;
+    }
+
+    footer {
+
+    }
+
+    footer h2 {
+        font-family: 'Satoshi-Variable';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 78px;
+        text-align: center;
+        color: #EB5577;
+    }
+
+    .phone-mail {
+        margin-left: 24px;
+    }
 }
 
-/* TABLET */
+/* RESPONSIVE DESIGN FOR TABLET */
 @media (min-width: 667px) and (max-width: 1024px) {
     .picture {
         display: block;
@@ -322,10 +319,7 @@ footer h2 {
     .cover {
         max-height: 412px;
         width: 100%;
-    }
-
-    header {
-        padding: 30px 30px 0 30px;
+        object-fit: cover;
     }
 
     .about-me {
@@ -346,10 +340,12 @@ footer h2 {
 
     .contact-me {
         margin-left: 48px;
+        padding: 0 30px 0 30px;
     }
 
     .scroll {
         margin: 48px 24px 12px 24px;
+        padding: 0 30px 0 30px;
     }
 
     .tech {
@@ -358,6 +354,62 @@ footer h2 {
 
     .tech h2 {
         margin: 24px;
+    }
+
+    .Project1, .Project2, .Project3, .Project4 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .featured-projects img {
+        width: 184px;
+        height: 280px;
+        border: 1px solid red;
+    }
+
+    .featured-projects button {
+        display: inline;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/* RESPONSIVE DESIGN FOR DESKTOP */
+@media (min-width: 1024px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-height: 980px;
+    }
+
+    .picture {
+        display: grid;
+    }
+
+    .cover {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .tech {
+        padding: 140px 60px 140px 60px;
+    }
+
+    .tech h2 {
+        margin: 24px;
+    }
+
+    .featured-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .Project1, .Project2, .Project3, .Project4 {
