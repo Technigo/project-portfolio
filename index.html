@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="index.css">
+<!--  <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,12 +21,8 @@
   <!-- <div class="container"> -->
 
   <header class="mainHeader">
-    <div class="img">
-      <img src="./imges/tara-img.jpg" alt="tara's profile picture" aria-label="true">
-    </div>
-   
-
-    <div class="socialMedia">
+  
+      <div class="socialMedia">
       <div class="linkedin">
         <a class="icon" title="link to Tara's linkedin" href="https://www.linkedin.com/in/tara-hassani-28383537"
           aria-label="Go to the LinkedIn page"  target="_blank">
@@ -51,6 +48,9 @@
       <h2>Frontend Developer</h2>
       <h2> + leadership & Management</h2>
     </div>
+    <div class="profileImg">
+      <img src="./imges/tara-img.jpg" alt="tara's profile picture" aria-label="true">
+    </div>
   </header>
 
   <!-- About Me -->
@@ -61,13 +61,15 @@
     </p>
   </section>
 
-  <!-- All tech which I learned -->
+  <!-- All tech -->
   <section class="sectionWrapper">
 
-    <h1 class="tiltelForNewPart">TECH </h1>
+    <div class="tiltelForNewPartDiv">
+      <h2 class="tiltelForNewPart">TECH</h2>
+      </div>
 
     <span class="techSection">
-      <p class="techSection-P">
+      <p class="">
         <span class="techSectionBoldText">JavaScript ES6</span>
         &nbsp;HTML &nbsp; CSS &nbsp;
         <span class="techSectionBoldText">React &nbsp;&&nbsp;Redux</span>
@@ -83,7 +85,11 @@
   <!---------- Projects Section ----------->
   <section class="sectionWrapper">
     <!-- prject One -->
-    <h1 class="tiltelForNewPart">FEATURED PROJECTS</h1>
+
+    <div class="tiltelForNewPartDiv">
+    <h2 class="tiltelForNewPart">FEATURED PROJECTS</h2>
+    </div>
+
     <div class="grid">
       <div class="grid-item">
         <p class="projectName">Weather Forecasting App</p>
@@ -92,7 +98,7 @@
           different cities.</p>
 
         <button class="btnProjectShow">
-          <a href="https://weatherapp-2710b8.netlify.app/" target="_blank" >
+          <a href="https://weather-app-10ce68.netlify.app" target="_blank" >
             <p>See live project</p>
           </a>
         </button>
@@ -150,6 +156,26 @@
       </div>
 
       <!-- Prpject Nr 4 -->
+     <!--  <div class="grid-item">
+
+        <p class="projectName">Weather Forecasting App</p>
+
+        <img src="./imges/weatherApp-re.png" alt="">
+        <p class="projectP">Discription</p>
+ 
+        <button class="btnProjectShow">
+          <a href="https://weatherapp-2710b8.netlify.app/" target="_blank">
+            <p id="project4">See live project</p>
+          </a>
+        </button>
+        <div class="tools">
+          <i class="devicon-javascript-plain colored"></i>
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-css3-plain-wordmark cssLogo"></i>
+        </div>
+
+      </div> -->
+<!-- 
       <div class="grid-item">
 
         <p class="projectName">Weather Forecasting App</p>
@@ -168,7 +194,9 @@
           <i class="devicon-css3-plain-wordmark cssLogo"></i>
         </div>
 
-      </div>
+      </div> -->
+
+      
   </section>
 
   <!-- Thought & idea about Code -->
@@ -176,20 +204,23 @@
   <h1 class="tiltelForNewPart">My Opinion About Code</h1>
   <div class="thoughtAndCode">
     <div class="grid-item thought">
+      <h2>JavaScript FormData | API</h2>
       <img src="./imges/api img.webp" alt="api img" class="apiImg">
   <div class="thought">
-    <h2>JavaScript FormData | API</h2>
+    
       <p>September 2022 </p> 
-      <h3>Recently I made a weather App base on API. I read this article on the JavaScript Tutorials website which helped me to have a better understanding of API and how it works and how can I use it in my app</h3>
+      <p>Recently I made a weather App base on API. I read this article on the JavaScript Tutorials website which helped me to have a better understanding of API and how it works and how can I use it in my app</p>
   
-      <h3>JavaScript FormData interface allows you to construct a set of key/value pairs representing form fields and their
-      values. If HTML form element is provided, it automatically captures its fields.</h3>
-      <h3>The FormData is those network methods, such as fetch, that can accept a FormData object as a body.</h3>
+      <p>JavaScript FormData interface allows you to construct a set of key/value pairs representing form fields and their
+      values. If HTML form element is provided, it automatically captures its fields.</p>
+      <p>The FormData is those network methods, such as fetch, that can accept a FormData object as a body.</p>
 
       <p>Tutorials website</p>
      
   <div class="readMore">
-      <a href="https://tutorial.eyehunts.com/js/javascript-formdata-api/" class="readMore" target="_blank"> Read More <i class="fa fa-chevron-right" style="font-size:20px;color:rgb(17, 17, 17)"></i></a>
+      <a href="https://tutorial.eyehunts.com/js/javascript-formdata-api/" class="readMore" target="_blank"> <p>Read More <i class="fa fa-chevron-right" style="font-size:11px;
+      color:rgb(17, 17, 17); font-weight:bold;"></i>
+      </p></a>
 </div>
 
   </div>
@@ -197,16 +228,20 @@
 
 
     <div class="grid-item thought">
-      <h2>My thought and Idea about coding! </h2>
-      <img src="./imges/my thought.jpg" alt="My thought about code">
+      <h2 >My thought and Idea about coding! </h2>
+          <img src="./imges/my thought.jpg" alt="My thought about code">
       <div class="thought">
-        <h3>I have been writing code for not a long time, and there have been times when I struggled, could not figure it out, and gave up.</h3>
-        <h3>1. Do Not Start a New Task, Before the Other Task Is Completed.</h3>
-        <h3>2. Do Not Panic. Take It Easy. Drink a Chamomile Tea.</h3>
-        <h3>3. It Is Not a Disgrace To Ask Questions.</h3>
-        <h3>4. Do Not Run From Your Problems, Find Solutions.</h3>
-        <h2>Bonus: Plan, Take Notes, Move Forward Step by Step.</h2>
-    </div>
+       
+        <p>I have been writing code for not a long time, and there have been times when I struggled, could not figure it out, and gave up.</p>
+        <p>1. Do Not Start a New Task, Before the Other Task Is Completed.</p>
+        <p>2. Do Not Panic. Take It Easy. Drink a Chamomile Tea.</p>
+       <p>3. It Is Not a Disgrace To Ask Questions.</p>
+        <p>4. Do Not Run From Your Problems, Find Solutions.</p>
+        <div class="bonus">
+          <p>Bonus: Plan, Take Notes, Move Forward Step by Step.</p>
+        </div>
+        </div>
+        
 
 </div>
   </div>
@@ -214,7 +249,9 @@
 
   <!-- Skills -->
   <section class="sectionWrapper">
+    <div class="tiltelForNewPartDiv">
     <h2 class="tiltelForNewPart">Skills</h2>
+  </div>
     <div class="sectionWrapper" id="flex">
       <div class="grid-item skills">
         <h5 class="skillsTitle">CODE</h5>

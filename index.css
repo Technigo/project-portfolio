@@ -333,17 +333,20 @@ color: var(--grayText);
 
 }
 
- .thought h3{
-  font-weight:500;
-  font-size: 20px;;
-  line-height:2.2rem;
+.thought p{
+  font-weight:300;
+  font-size: 18px;
+  line-height:2.5rem;
+  color: var(--grayText);
+  /* padding: 10px; */
 
  }
-
- .thought p{
-  margin: 1rem;
-  font-size:14px;
-  color: var(--grayText);
+ .bonus p{
+  font-weight:500;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 1rem;
+  
  }
 
  .thought h2{
@@ -358,15 +361,13 @@ color: var(--grayText);
   height: 250px;
 }
 
-.readMore{
+.readMore p{
   color: var(--grayText);
   font-weight: bold;
   transition: all 0.3s ease;
+  margin-top: 1rem;
 }
-.readMore:hover{
-  font-weight: bolder;
- transition: all 0.3s ease; 
-}
+
 
 /* Skills part */
 .skills {
@@ -480,7 +481,7 @@ footer {
 }
 
 .collapsible {
-  width: 30%;
+  width: 40%;
   overflow: hidden;
   font-weight: 500;
 }
@@ -557,16 +558,13 @@ footer {
 
 
 
-@media screen and (width:375px){
+/* @media screen and (width:375px){
 
 body{
-/*   margin: 5px 0 5px 0; */
+
   width: 100%;
 }
 
-/* .mainHeader{
-  min-height: 25vh;
-} */
 
 .mainHeader img{
   width: 100%;
@@ -666,8 +664,117 @@ font-size:12px;
 
 }
 
-}
-@media screen and (max-width:1024px) {
+} */
+
+@media only screen and (max-width: 600px) {
+
+  .aboutMe p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  
+  .title {
+    margin-top: 1.5rem;
+    margin-left: -1rem;
+  }
+  
+  .title h1{
+    font-size: 22px;
+  }
+  .title h2{
+    font-size:22px;
+    line-height: 2rem;
+    padding-left:-15px;
+  }
+  
+  .socialMedia {
+    width: 30%;
+    margin-right: 20px;
+  }
+  .mainHeader{
+    width:100%;
+    height: auto;
+    }
+  
+  .mainHeader img{
+    height: 120px;
+    width: 120px;
+    top: 70%;
+  
+    }
+    .tiltelForNewPart {
+      width: 300px;
+      height: 40px;
+      font-size: 20px;
+      margin-top: 3rem;
+    
+    }
+  
+  
+  .thought h2{
+    font-size: 18px;
+  }
+  
+  .sectionWrapper{
+    width: 100%;
+  }
+  .thoughtAndCode{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+  
+  .grid{
+    grid-template-columns: 1fr;
+    margin: 0;
+    }
+  
+  .grid-item img{
+    width: 90%;
+    height: auto;
+  }
+  
+    .thought P{
+    font-size: 16px;
+    }
+    #flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .collapsible {
+      width: 300px;
+      overflow: hidden;
+      font-weight: 500;
+     
+    }
+    
+  }
+
+  @media screen and (max-width: 800px){
+    .grid{
+      grid-template-columns: 1fr 1fr;
+      margin: 0;
+      }
+
+      .thoughtAndCode{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-gap: 3rem;
+      }
+
+        
+  .mainHeader img{
+    height: 180px;
+    width: 180px;
+    top: 70%;
+  
+    }
+  };
+    
+
+  
+@media screen and (max-width:1200px) {
   .mainHeader{
 min-width:100px;
   }
