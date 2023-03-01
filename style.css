@@ -23,6 +23,15 @@ header {
    position: relative;
 }
 
+.profile-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.desktopimage {
+    display: none;
+}
+
 .img.desktop-image {
     display: none;
 }
@@ -159,14 +168,48 @@ h5 {
     .chatbot, .weatherapp {
         flex-direction: row;
     }
+
+    .desktopimage {
+        display: flex;
+        justify-content:center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        
+
+    }
+    .img.desktop-image {
+        width: 100%;
+        height: auto;
+        
+      
+    }
+
+    .img.profile-image {
+        display: flex;
+        
+        float: left;
+    }
+
 }
+
+
 
 /* this part has the media queries for desktop size */
   
 @media (min-width: 1025px) {
 
-    .img.desktop-image {
-        float: right;
+    
+    .desktopimage {
+        display: none;
+        
+        
+    }
+
+
+    .profile-information {
+        display: flex;
+        
     }
 
     .chatbot, .weatherapp {
