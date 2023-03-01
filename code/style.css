@@ -21,14 +21,6 @@ p{
 
 }
 
-.hidden{
-    display:none;
-}
-
-.active{
-    display:block;
-}
-
 .center{
     display:flex;
     flex-direction: column;
@@ -41,7 +33,10 @@ p{
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin:0 24px;
+}
+
+.section-header-img{
+    display:none;
 }
 
 .section{
@@ -62,14 +57,11 @@ p{
     color: var(--header-color);
 }
 
-.main-img{
-    width:50vh;
-}
-
 .personal-info{
     display: flex;
     flex-direction: column;
     align-items: start;
+    padding: 0 24px;
 }
 
 .personal-info-profile-img{
@@ -127,6 +119,7 @@ p{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0 24px;
 }
 
 .contact-icon i{
@@ -134,7 +127,7 @@ p{
 }
 
 .section-scroll{
-    padding:24px;
+    padding: 0 24px;
 }
 
 .section-scroll p{
@@ -175,7 +168,14 @@ color: var(--header-color)
     font-size: 72px;
 }
 
-.subsection-featured-project img{
+.featured-project-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-project-img img{
     height: 280px;
     width: 327px;
     padding:0 0 12px 0;
@@ -240,7 +240,14 @@ color: var(--header-color)
     padding: 2px 0 2px 0;
 }
 
-.subsection-mywords img{
+.mywords-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mywords-img img{
     height: 340px;
     width: 327px;
     object-fit: fill;
@@ -367,4 +374,83 @@ color: var(--header-color)
 
 i:hover{
     color:#000000;
+}
+
+/* TABLET */
+@media (min-width: 744px) and (max-width:1024px){
+    .section-header-img {
+        display: block;
+    }
+    .main-img {
+        width: 100%;
+        height:50vh;
+    }
+
+    .personal-info{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .personal-info-profile-img, .personal-info-summary, .personal-info-paragraph{
+        align-self: center;
+    }
+
+    .personal-info-paragraph {
+    margin:0 78px 0 118px;
+
+    }
+
+    .section-contact{
+        justify-content:left;
+        align-items: center;
+        margin:22px 0 41px 123px;
+        gap:24px;
+        width: max-content;
+    }
+
+    .summary{
+        margin: 3px 0 40px 0;
+    }
+
+    .section-tech p {
+        margin:0 122px;
+    }
+
+    .subsection-featured-project {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.1fr 0.2fr;
+        gap: 24px;
+        grid-template-areas:
+            "featured-project-img featured-project-description featured-project-description"
+            "featured-project-img tech-stack tech-stack"
+            "featured-project-img livedemo-btn github-btn";
+    }
+    
+    .github-btn {
+        grid-area: github-btn;
+    }
+
+    .livedemo-btn {
+        grid-area: livedemo-btn;
+    }
+
+    .tech-stack {
+        grid-area: tech-stack;
+    }
+
+    .featured-project-description {
+        grid-area: featured-project-description;
+    }
+
+    .featured-project-img {
+        grid-area: featured-project-img;
+    }
+
+    .featured-project-img img{
+        height:100%;
+        object-fit: cover;
+        width:184px;
+    }
 }
