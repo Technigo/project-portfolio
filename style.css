@@ -1,83 +1,358 @@
-/* mobile first */
-
-body {
+@font-face {
+  font-family: SatoshiBold;
+  font-weight: bold;
+  src: url("./fonts/Satoshi-Bold.otf");
 }
 
-h1 {
+@font-face {
+  font-family: SatoshiMedium;
+  font-weight: medium;
+  src: url("./fonts/Satoshi-Medium.otf");
 }
 
-h2 {
+@font-face {
+  font-family: SatoshiBlack;
+  font-weight: bolder;
+  src: url("./fonts/Satoshi-Black.otf");
 }
 
-h3 {
+@font-face {
+  font-family: EBGaramondRegular;
+  src: url("./fonts/EBGaramond-Regular.ttf");
 }
 
-h4 {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* SPLASH SECTION */
+.splash-section h1 {
+  font-family: "SatoshiBlack";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 43px;
+}
+
+.splash-section h2 {
+  font-family: "SatoshiBold";
+  font-size: 28px;
+  color: #0b24f5;
+}
+.splash-section h3 {
+  font-family: "SatoshiMedium";
+  font-size: 28px;
+  color: #565656;
+}
+
+.splash-section p {
+  font-family: EBGaramondRegular;
+  font-size: 22px;
+  line-height: 29px;
+}
+
 .splash-section {
+  justify-content: center;
 }
 
 .splash-title-card {
+  /*margin-top: 55px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 40px; */
+  margin: 55px 24px 40px 24px;
 }
 
 .splash-title-card-picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  margin-bottom: 29px;
+  margin-top: 55px;
 }
 
 .splash-title-card-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
 }
 
 .splash-text-container {
+  margin: 0 24px 48px 24px;
 }
 
 .splash-text {
 }
 
 .splash-link-icons {
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  height: 32px;
+  margin-bottom: 30px;
+}
+
+.splash-link-icons .fa-linkedin,
+.splash-link-icons .fa-github,
+.splash-link-icons .fa-stack-overflow,
+.splash-link-icons .fa-twitter,
+.splash-link-icons .fa-instagram {
+  color: gray;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-stack-overflow:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+  color: black;
+}
+
+.splash-scroll {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 138px;
+  height: 138px;
+  margin: 0 auto;
 }
 
 .splash-scroll-icon {
+  align-self: center;
+}
+
+.splash-scroll-text {
+  font-family: "SatoshiBlack";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: underline solid #0b24f5 3px;
+  text-underline-offset: 4px;
+  color: #0b24f5;
 }
 
 /* TECH SECTION */
 
 .tech-section {
+  background-color: #edffff;
 }
 
 .tech-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-section h1 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 108px;
+  color: #0b24f5;
+  margin-top: 80px;
+}
+
+.tech-section p {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+}
+.tech-section span.red {
+  background-color: #eb5577;
+  color: white;
+}
+
+.tech-section span.dark-blue {
+  background-color: #0b24f5;
+  color: white;
+}
+
+.tech-section span.light-blue {
+  background-color: #2483e0;
+  color: white;
 }
 
 .tech-text {
+  margin: 60px 24px 120px 24px;
 }
 
 /* PROJECTS SECTION */
 
 .projects-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-section h1 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  color: #0b24f5;
+  margin: 24px;
 }
 
 .projects-featured-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  margin: 24px;
 }
 
 .projects-project {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .projects-project-image {
 }
 
 .projects-project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.projects-project-text h2 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 43px;
+
+  color: #000000;
+}
+
+.projects-project-text p {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+
+  color: #000000;
 }
 
 .projects-project-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+
+.projects-project-tag {
+  padding: 2px 6px;
+  background-color: #000000;
+}
+
+.projects-project-tag span {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
 }
 
 .projects-project-link-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.projects-project-link-buttons p {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #333333;
+}
+
+.projects-project-link-buttons p:hover {
+  color: #fff;
+}
+
+.projects-project-link-buttons i {
+  color: #333333;
+}
+
+.projects-project-link-buttons i:hover {
+  color: #fff;
 }
 
 .projects-project-link-button-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 40px;
+  padding: 0px 16px 0px 0px;
+  height: 48px;
+  width: 200px;
+}
+
+.projects-project-link-button-view:hover {
+  background: #eb5577;
+}
+
+.projects-project-link-button-view:hover p {
+  color: #fff;
+}
+
+.projects-project-link-button-view:hover i {
+  color: #fff;
 }
 
 .projects-project-link-button-demo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 40px;
+  padding: 0px 16px 0px 0px;
+  height: 48px;
+  width: 164px;
+}
+
+.projects-project-link-buttons i {
+  padding: 5px;
+}
+
+.projects-project-link-buttons a {
+  cursor: pointer;
+}
+
+.projects-project-link-button-demo:hover {
+  background-color: #0b24f5;
+}
+
+.projects-project-link-button-demo:hover p {
+  color: #fff;
+}
+
+.projects-project-link-button-demo:hover i {
+  color: #fff;
 }
 
 /* WORDS SECTION */
