@@ -1,10 +1,9 @@
 @import url('./assets/fonts/Satoshi-Variable');
 
-body {
+.grid-layout {
     display: flex;
     flex-direction: column;
-    padding: 0px;
-    gap: 29px;
+    flex-wrap: wrap;
 }
 
 h2, h3, h4, h5 {
@@ -44,13 +43,12 @@ h5 {
 }
 
 .intro img, .contact img {
-    display: flex;
-    border-radius: 100px;
     width: 160px;
     height: 160px;
     object-fit: cover;
     object-position: 0 100%;
     justify-content: center;
+    border-radius: 100%;
 }
 
 p {
@@ -63,12 +61,22 @@ p {
 }
 
 .intro {
-    margin: 0 24px 0 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px;
+    margin: 0 24px 50px 24px;
+}
+
+.some-icon i {
+    color: #D0D0D0;
+    font-size: 2em;
+    margin-right: 32px;
+
+}
+
+.fa-linkedin-in, .fa-github, .fa-envelope {
+    font-size: fa-2xl;
+}
+
+.some-icon i:hover, i:active {
+    color: #000000;
 }
 
 .tech {
@@ -77,11 +85,6 @@ p {
 
 .featured-projects {
     margin: 55px 24px 0 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px;
 }
 
 .featured-projects img {
