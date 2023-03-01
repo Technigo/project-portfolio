@@ -381,18 +381,48 @@ footer h2 {
 /* RESPONSIVE DESIGN FOR DESKTOP */
 @media (min-width: 1024px) {
     header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        max-height: 980px;
+        display: flex;
+        height: 920px;
+        align-items: center;
     }
 
     .picture {
-        display: grid;
+        display: flex;
+        max-width: 100%;
+        min-width: 50%;
+        min-height: 100%;
     }
 
     .cover {
-        object-fit: cover;
+        object-fit: none;
+        object-position: right 0%;
         width: 100%;
+    }
+
+    .about-me {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nameAndTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .introduction {
+        margin: 0 48px 0 48px;
+    }
+
+    .contact-me {
+        margin-left: 48px;
+        padding: 0 30px 0 30px;
+    }
+
+    .scroll {
+        margin: 48px 24px 12px 24px;
+        padding: 0 30px 0 30px;
     }
 
     .tech {
