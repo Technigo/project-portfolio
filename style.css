@@ -3,48 +3,109 @@
 @font-face {
     font-family: SatoshiBold;
     font-weight: bold;
-    src: url('./Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf');
+    src: url('./Code/Fonts/OTF/Satoshi-Bold.otf');
   }
   
   @font-face {
     font-family: SatoshiMedium;
     font-weight: medium;
-    src: url('./Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf');
+    src: url('./Code/Fonts/OTF/Satoshi-Medium.otf');
   }
   
   @font-face {
     font-family: SatoshiBlack;
     font-weight: bolder;
-    src: url('./Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf');
+    src: url('./Code/Fonts/OTF/Satoshi-Black.otf');
   }
 
-body {
-/* font-family: 'Satoshi', sans-serif; */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.outer-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container {
+.inner-wrapper {
+    width: 75%;
+    min-width: 170px;
+    margin: 0;
+}
+
+.profile-picture {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.container img.round-image {
-    /*width: 150px;
-    height: 150px;*/
-    max-width: 100%;
+.profile-picture img {
+    min-width: 164px;
     height: auto;
+    /* max-width: 100%;
+    height: auto; */
     border-radius: 50%;
-    overflow: hidden;
+    margin: 55px 105.5px 29px 105.5px;
+    /* check the dimensions here */ 
+    overflow: hidden; 
  }
   
-
+.header-text {
+    margin-left: 24px;
+    margin-right: 48px;
+}
 
 h2 {
-    font-family: SatoshiMedium;
+    font-family: SatoshiBold;
     color: blue;
+    line-height: 37.8px;
+}
+h1 {
+    font-family: SatoshiMedium;
+    line-height: 43.2px;
 }
 
-p {
-    font-family: Satoshi-MediumItalic;
+.introduction {
+    margin-left: 24px;
+    margin-right: 24px; /*why are these not equal?*/
+    margin-bottom: 54.3px;
 }
+
+
+p {
+    font-family: 'EB Garamond', serif;
+}
+
+.socialmedia-icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blue-section {
+    background-color: #EDFFFF;
+    width: 375px;
+    height: 530px;
+}
+
+.card-container {
+   padding: 20px;  
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-container img {
+    max-width: 90%;
+}
+
 
