@@ -48,6 +48,52 @@
     color: #565656;
   }
 
+  .big-header {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    color: #0B24F5;
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-header{
+    font-family: Satoshi;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .pink{
+    background-color: #EB5577;
+    color: white;
+  }
+
+  .blue {
+    background-color: #0B24F5;
+    color: white;
+  }
+
+  .light-blue {
+    background-color: #2483E0;
+    color: white;
+  }
+
+  .black {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 2px 6px 2px 6px;
+  }
+
   .some-icons {
     display: flex;
     justify-content: space-evenly;
@@ -72,6 +118,7 @@
   }
   
   .header {
+    background-color: lightgoldenrodyellow;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center the entire header section */
@@ -92,10 +139,13 @@
   .arrow-scroll {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-self: center;
+    border-bottom: #0B24F5 solid;
+    gap: 20px;
   }
 
   .arrow-scroll img {
+    align-self: center;
     width: 19px;
     height: 30px; 
     filter: invert(23%) sepia(98%) saturate(7466%) hue-rotate(241deg) brightness(89%) contrast(119%);
@@ -121,11 +171,38 @@
 }
 
 .tech-stack {
-    background-color: lightgrey;
+    background-color: #EDFFFF;
+    padding: 55px 24px 120px 24px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
 }
 
 .projects {
     background-color: lightseagreen;
+    padding: 55px 24px 55px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.project-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.projects img {
+  width: 100% ;
+}
+
+.project-languages {
+  display: flex;
+  flex-direction: row;  
+  gap: 4px;
 }
 
 .blog-section {
@@ -141,7 +218,7 @@
 }
 /*MEDIA QUERY FOR MOBILE*/
 @media (max-width:667px) {
-.portfolio-container {
+.header {
     padding: 55px 24px 55px 24px;
 }
 
