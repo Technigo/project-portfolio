@@ -1,51 +1,59 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nora Terbocs's portfolio</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/aa0e0188fe.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <main class="center">
-        <div class="container center">
-            <image class="main-img hidden" src="images/test-img.png" alt="main-image"></image>
-            <section class="section-introduction section">
-                <section class="subsection-top" id="top-section">
-                    <image class="profile-img" src="images/test-img.png" alt="profile-image"></image>
-                    <h3 class="name">Nora Terbocs</h3>
-                    <h2 class="jobtitle">Frontend developer</h2>
-                    <h4 class="secondary-jobtitle">+ project manager</h4>
-                    <p class="summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, ut doloribus
-                        nihil
-                        pariatur explicabo unde debitis incidunt sit fugit, dolores modi placeat praesentium. Illum
-                        provident,
-                        rerum fugiat modi numquam itaque!
-                    </p>
-                </section>
 
-                <section class="section-contact">
-                    <a class="contact-icon" target="_blank" href="https://www.linkedin.com/in/noraterbocs/"><i
-                            class="fa-brands fa-linkedin-in fa-lg"></i></a>
-                    <a class="contact-icon" target="_blank" href="mailto:nora.terbocs@gmail.com"><i
-                            class="fa-regular fa-envelope fa-lg"></i></a>
-                    <a class="contact-icon" target="_blank" href="https://www.instagram.com/"><i
-                            class="fa-brands fa-instagram fa-lg"></i></a>
-                    <a class="contact-icon" target="_blank" href="https://github.com/noraterbocs"><i
-                            class="fa-brands fa-github fa-lg"></i></a>
-                </section>
-            </section>
-        </div>
-        <section class="center section-scroll">
+    <header class="header">
+        <section class="hidden">
+            <div class="">
+                <image class="main-img hidden" src="images/test-img.png" alt="main-image"></image>
+            </div>
+        </section>
+        <section class="personal-info center section" id="top-section">
+            <div class="personal-info-profile-img">
+                <image class="profile-img" src="images/test-img.png" alt="profile-image"></image>
+            </div>
+            <div class="personal-info-summary">
+                <h3 class="name">Nora Terbocs</h3>
+                <h2 class="jobtitle">Frontend developer</h2>
+                <h4 class="secondary-jobtitle">+ project manager</h4>
+                <p class="summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, ut doloribus
+                    nihil
+                    pariatur explicabo unde debitis incidunt sit fugit, dolores modi placeat praesentium. Illum
+                    provident,
+                    rerum fugiat modi numquam itaque!
+                </p>
+            </div>
+        </section>
+        <section class="section-contact section">
+            <a class="contact-icon" target="_blank" href="https://www.linkedin.com/in/noraterbocs/"><i
+                    class="fa-brands fa-linkedin-in fa-lg"></i></a>
+            <a class="contact-icon" target="_blank" href="mailto:nora.terbocs@gmail.com"><i
+                    class="fa-regular fa-envelope fa-lg"></i></a>
+            <a class="contact-icon" target="_blank" href="https://www.instagram.com/"><i
+                    class="fa-brands fa-instagram fa-lg"></i></a>
+            <a class="contact-icon" target="_blank" href="https://github.com/noraterbocs"><i
+                    class="fa-brands fa-github fa-lg"></i></a>
+        </section>
+        <section class="center section-scroll section">
             <a target="_blank" href="">
                 <i class="fa-solid fa-arrow-down fa-2x"></i>
             </a>
             <p>Let's scroll</p>
         </section>
+    </header>
+
+    <main class="center main">
 
 
         <section class="section-tech section center">
@@ -58,34 +66,46 @@
 
         <section class="section-featured-projects section">
             <h1>Featured projects</h1>
-            <section class="subsection-featured-project center">
-                <image src="images/test-project.png" alt="test-project" />
-                <h2>Project name</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium nesciunt, tempore illo
-                    ipsa accusamus laudantium commodi odio nobis aperiam modi labore. Placeat odit consectetur mollitia
-                    nobis culpa architecto ullam.</p>
-                <div class="tech-stack center section">
+            <section class="subsection-featured-project">
+                <div>
+                    <image src="images/test-project.png" alt="test-project" />
+                </div>
+                <div>
+                    <h2>Project name</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium nesciunt, tempore
+                        illo
+                        ipsa accusamus laudantium commodi odio nobis aperiam modi labore. Placeat odit consectetur
+                        mollitia
+                        nobis culpa architecto ullam.</p>
+                </div>
+
+                <div class="tech-stack center">
                     <p>HTML5</p>
                     <p>CSS3</p>
                     <p>JS</p>
                 </div>
-                <button><i class="fa-brands fa-github fa-lg"></i> View the code</button>
-                <button><i class="fa-light fa-globe fa-lg"></i> Live demo</button>
+                <button class="button github-btn"><embed src="icons/github.svg" />View the code</button>
+                <button class="button livedemo-btn"><embed src="icons/globe.svg" /> Live demo</button>
             </section>
         </section>
 
         <section class="section-mywords section">
             <h1>My words</h1>
             <section class="subsection-mywords">
-                <image src="images/test-article.png" alt="test-article" />
-                <h4>Date</h4>
-                <h2>Article name</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium nesciunt, tempore
-                    illo
-                    ipsa accusamus laudantium commodi odio nobis aperiam modi labore. Placeat odit consectetur
-                    mollitia
-                    nobis culpa architecto ullam.</p>
-                <button>Read article</button>
+                <div>
+                    <image src="images/test-article.png" alt="test-article" />
+                </div>
+                <div class="subsection-mywords-summary">
+                    <h4>Date</h4>
+                    <h2>Article name</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium nesciunt, tempore
+                        illo
+                        ipsa accusamus laudantium commodi odio nobis aperiam modi labore. Placeat odit consectetur
+                        mollitia
+                        nobis culpa architecto ullam.</p>
+                </div>
+                <button class="button read-article-btn">
+                    <embed src="icons/memo.svg" />Read article</button>
             </section>
         </section>
 
@@ -118,33 +138,38 @@
             </div>
         </section>
 
+
+    </main>
+    <footer class="footer">
         <section class="section-time-to-talk section">
             <h1>Time to talk</h1>
-            <div class="subsection-top">
-                <image class="profile-img" src="images/test-img.png" alt="profile-image"></image>
-                <h3 class="name">Nora Terbocs</h3>
-                <h2 class="jobtitle">Frontend developer</h2>
-                <h4 class="secondary-jobtitle">+ project manager</h4>
-            </div>
-
-            <div class="contact-details">
-                <h3>+46(0)790 54 33 45</h3>
-                <h3>nora.terbocs@gmail.com</h3>
-            </div>
-
+            <section class="personal-info center section" id="top-section">
+                <div class="personal-info-profile-img">
+                    <image class="profile-img" src="images/test-img.png" alt="profile-image"></image>
+                </div>
+                <div class="personal-info-summary">
+                    <h3 class="name">Nora Terbocs</h3>
+                    <h2 class="jobtitle">Frontend developer</h2>
+                    <h4 class="secondary-jobtitle">+ project manager</h4>
+                </div>
+                <div class="contact-details">
+                    <h3>+46(0)790 54 33 45</h3>
+                    <h3>nora.terbocs@gmail.com</h3>
+                </div>
+            </section>
+            <section class="section-contact section">
+                <a class="contact-icon" target="_blank" href="https://www.linkedin.com/in/noraterbocs/"><i
+                        class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                <a class="contact-icon" target="_blank" href="mailto:nora.terbocs@gmail.com"><i
+                        class="fa-regular fa-envelope fa-lg"></i></a>
+                <a class="contact-icon" target="_blank" href="https://www.instagram.com/"><i
+                        class="fa-brands fa-instagram fa-lg"></i></a>
+                <a class="contact-icon" target="_blank" href="https://github.com/noraterbocs"><i
+                        class="fa-brands fa-github fa-lg"></i></a>
+            </section>
         </section>
-    </main>
-    <footer class="section-contact">
-        <a class="contact-icon" target="_blank" href="https://www.linkedin.com/in/noraterbocs/"><i
-                class="fa-brands fa-linkedin-in fa-lg"></i></a>
-        <a class="contact-icon" target="_blank" href="mailto:nora.terbocs@gmail.com"><i
-                class="fa-regular fa-envelope fa-lg"></i></a>
-        <a class="contact-icon" target="_blank" href="https://www.instagram.com/"><i
-                class="fa-brands fa-instagram fa-lg"></i></a>
-
-        <a class="contact-icon" target="_blank" href="https://github.com/noraterbocs"><i
-                class="fa-brands fa-github fa-lg"></i></a>
     </footer>
+
 
     <script src="script.js"></script>
 </body>
