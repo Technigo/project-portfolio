@@ -381,7 +381,20 @@ p {
 dt {
   font-size: 20px;
   color: white;
+  margin: 25px;
 }
 dd {
   display: grid;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
