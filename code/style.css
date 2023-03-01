@@ -1,36 +1,140 @@
-@font-face {
-  font-family: SatoshiBold;
-  font-weight: bold;
-  src: url('./Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf');
+* {
+  box-sizing: border-box;
 }
 
-@font-face {
-  font-family: SatoshiMedium;
-  font-weight: medium;
-  src: url('./Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf');
+body {
+  font-family: 'Satoshi', sans-serif;
 }
 
-@font-face {
-  font-family: SatoshiBlack;
-  font-weight: bolder;
-  src: url('./Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf');
-}
-
-
-.header {
-
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #0B24F5;
 }
 
 h2 {
   /*font-family: Arial, Helvetica, sans-serif;*/
-  font-family: SatoshiMedium;
   font-size: 32px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0B24F5;
+  
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #565656;
+  ;
+}
+
+.header {
+ margin: 0px 24px 0px 24px;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /*gap: 29px;*/
+}
+
+.img-and-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 306px;
+  padding: 0px;
+  margin-top: 55px;
+  gap: 29px;
+}
+
+.profile-img {
+  width: 164px; 
+  height: 164px;
+  border-radius: 50%;
+  object-fit: cover;
+  align-self: center;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 7px;
+  height: 113px;
 }
 
 .paragraph {
     font-family: 'EB Garamond';
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 40px;
 }
 
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.icon {
+  color: #D0D0D0;
+}
+
+.icon:hover {
+  color: black;
+
+}
+
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 16px;
+  font-weight: 900;
+  color: #0B24F5;
+  margin: 30px 0px 84px 0px;
+}
+
+.arrow {
+  align-self: center;
+  margin: 37px 0px 20px 0px;
+  width: 27px;
+}
+
+.underline {
+  margin: 3px 0px 19px 0px;
+}
+
+.logo-container {
+  display: none;
+}
+
+.tech-container {
+  display: flex;
+  flex-direction: column;
+  padding: 94px 24px 120px 24px;
+  background: #EDFFFF;
+  ;
+}
+
+.tech-h1 {
+  align-self: center;
+}
+
+.tech-languages {
+  display: flex;
+  flex-direction: row;
+}
 
 /*
 header two-colored background for desktop
