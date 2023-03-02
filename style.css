@@ -1,11 +1,11 @@
 @import url('./assets/fonts/Satoshi-Variable');
 
-.layout {
+/*.layout {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-}
+} */
 
 h1, h2, h3, h4, h5 {
     font-family: 'Satoshi', sans-serif;
@@ -19,7 +19,7 @@ h2 {
     color: #0B24F5;
     margin: auto;
     padding-bottom: 64px;
-    align-self: center;
+   text-align: center;
 }
 
 h3 {
@@ -61,19 +61,54 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
+    line-height: 32px;
     color: #000000;
     margin-bottom: 18px;
 }
 
-.intro, .tech, .featured-projects, .skills, .contact {
+.scroll i {
     display: flex;
     flex-direction: column;
-    margin: 0 24px 50px 24px;
-    padding: 0;
+    color: #0B24F5;
+    text-align: center;
+    margin: 5%;
+}
+
+.scroll span {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Satoshi', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0B24F5;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.scroll {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.intro, .tech, .featured-projects, .my-words, .skills, .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px 24px 0 24px;
+    padding-top: 20px;
+} 
+
+.top-img {
+    display: none;
 }
 
 .intro img, .contact img {
-    min-width: 164px;
+    width: 164px;
     height: 164px;
     object-fit: cover;
     object-position: 0 100%;
@@ -102,19 +137,32 @@ p {
 
 .tech {
     background-color: #EDFFFF;
-    padding: 0 24px 50px 24px;
-    margin: 0 auto;
+    padding: 50px 24px 50px 24px;
+    margin: 10% 0 0 0;
 }
 
-.featured-projects {
-    margin: 55px 24px 0 24px;
+.JS {
+    color: #ffffff; 
+    background-color: #EB5577; 
+    padding: 1px;
 }
 
-.featured-projects img {
-    width: 300px;
+.TBA {
+    color: #ffffff; 
+    background-color: #2483E0;
+    padding: 1px;
 }
 
-.featured-projects span {
+.project {
+    justify-items: flex-start;
+    margin-bottom: 80px;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project span {
     font-family: 'Satoshi', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -123,10 +171,7 @@ p {
     background-color: #000000;
     padding: 2px 6px 2px 6px;
     margin-right: 4px;
-}
-
-.project {
-    margin-bottom: 80px;
+    margin-top: 18px;
 }
 
 .btn-code, .btn-demo {
@@ -159,6 +204,28 @@ p {
     background-color: #0B24F5;
     border: none;
     color: #ffffff;
+}
+
+.my-words {
+    background-color: #FCEDEA;
+    margin: 0;
+    padding: 50px 24px 50px 24px;
+}
+
+.my-words h2 {
+    color: #EB5577;
+    padding: 10%;
+    text-align: center;
+}
+
+.my-words span {
+    font-family: 'Satoshi', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 27px;
+    color: #EB5577;
+    padding-top: 10%;
 }
 
 .skills {
@@ -216,3 +283,76 @@ address {
     margin-bottom: 80px;
     align-self: flex-end;
 }
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+
+.top-img {
+    display: block;
+    background-color: #FCEDEA;
+    height: 412px;
+    margin: 0;
+
+}
+
+
+.intro, .tech, .featured-projects, .my-words, .skills, .contact {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: auto;
+}
+
+.intro img {
+    grid-column: 1/span 2;
+    align-self: center;
+}
+
+.intro-text {
+    grid-column: 2/span 4;
+}
+
+.text p{
+    grid-column: 1/ span 4;
+}
+
+.some-icon {
+    grid-column: 2/5;
+}
+
+.tech h2, p {
+    grid-column: 2/span 3;
+}
+
+.featured-projects {
+    grid-column: 1/span 5;
+}
+
+.featured-projects h2{
+    grid-column: 2/span 3;
+    align-self: start;
+}
+
+.project {
+    grid-column: 1/span 5;
+}
+
+.project img {
+    grid-column: 1/span 2;
+}
+
+.skills {
+    grid-row: repeat (5, 1fr);
+}
+
+.skills h2{
+    grid-column: 2/span 3;
+}
+
+.skills p, span {
+    grid-column: 1/span 4;
+    grid-row: auto;
+    justify-items: start;
+}
+
+}
+
+@media only screen and (min-width: 992px)
