@@ -223,7 +223,7 @@
   gap: 24px;
 }
 
-.projects.project-img{
+.project-img{
   width: 100% ;
 }
 
@@ -233,9 +233,13 @@
   gap: 4px;
 }
 
-.project-buttons a {
-  text-decoration: none;
+.project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
 }
+
 
 .project-btn {
   display: flex;
@@ -252,6 +256,17 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 27px;
+  
+}
+
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-buttons a {
+  text-decoration: none;
 }
 
 .project-btn:hover{
@@ -462,19 +477,37 @@ SMÅ TELEFONER*/
   .projects {
     display: flex;
     flex-direction: column;
-
     padding: 80px 18px 55px 18px;
     gap: 80px;
   }
 
   .project-description {
     display: flex;
-    
+    flex-direction: row;
+    justify-content: flex-start;
   }
 
-  .project-img img {
-    height:100%;
+  .project-img-container{
+    width: 70%;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: 50% 42%;
+  }
+
+  .project-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
 }
@@ -482,5 +515,4 @@ SMÅ TELEFONER*/
 
 /*MEDIA QUEARY FOR DESKTOP*/
 @media (min-width: 1024px) {
-
 }
