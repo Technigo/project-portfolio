@@ -13,7 +13,6 @@ h1 {
 }
 
 h2 {
-  /*font-family: Arial, Helvetica, sans-serif;*/
   font-size: 32px;
   font-weight: 900;
 }
@@ -31,8 +30,9 @@ h4 {
   color: #565656;
   ;
 }
-/* HEADER */
-.header {
+
+/*** HEADER ***/
+.presentation-header {
  margin: 0px 24px 0px 24px;
 }
 
@@ -40,17 +40,14 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /*gap: 29px;*/
 }
 
-.img-and-titles {
+.img-titles-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  height: 306px;
-  padding: 0px;
+  /*align-items: flex-start;*/
   margin-top: 55px;
-  gap: 29px;
+  width: 100%;
 }
 
 .profile-img {
@@ -65,11 +62,11 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 7px;
   height: 113px;
+  margin-top: 34px;
 }
 
-.paragraph {
+.presentation-paragraph {
     font-family: 'EB Garamond';
     font-size: 22px;
     line-height: 30px;
@@ -79,8 +76,9 @@ h4 {
 .social-media-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: space-around;
+  /*align-items: flex-end;*/
+  width: 340px;
   padding: 0px;
   margin-top: 40px;
 }
@@ -119,7 +117,7 @@ h4 {
   display: none;
 }
 
-/* Tech section */
+/*** Tech section ***/
 .tech-container {
   display: flex;
   flex-direction: column;
@@ -127,12 +125,18 @@ h4 {
   background: #EDFFFF;
 }
 
-.tech-h1 {
+.tech-title {
   align-self: center;
 }
 
+.tech-paragraph {
+  font-family: 'EB Garamond';
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 40px;
+}
 
-/* Featured projects section */
+/*** Featured projects section ***/
 .featured-projects {
   display: flex;
   flex-direction: column;
@@ -140,11 +144,35 @@ h4 {
   padding: 0px 24px 0px 24px;
 }
 
+.featured-projects-title {
+  font-size: 80px;
+  font-weight: 700;
+  color: #0B24F5;
+  margin-bottom: 64px;
+}
+
 .project-container {
   display: flex;
   flex-direction: column;
-  margin-top: 64px;
 }
+
+.project-img {
+  object-fit: cover;
+  height: 280px;        
+}
+
+.project-name {
+  margin-top: 24px;
+}
+
+.project-paragraph {
+  font-family: 'EB Garamond';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  margin-top: 18px;
+}
+
 
 .tech-languages {
   display: flex;
@@ -161,6 +189,12 @@ h4 {
   margin-right: 5px;
 }
 
+.view-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
 .view-code {
 width: 200px; 
 height: 48px;
@@ -172,19 +206,19 @@ margin-top: 24px;
   width: 200px; 
   height: 48px;
   background: url("icons/View-Code-Button-Hover.svg");
-  margin-top: 24px;
+  /*margin-top: 24px;*/
 }
 
 .live-demo {
   width: 164px;
   height: 48px;
   background: url("icons/Live-Demo-Button.svg");
-  margin: 24px 0px 80px 0px;
+  margin-top: 24px;
 }
 
 .live-demo:hover {
   background: url("icons/Live-Demo-Button-Hover.svg");
-  margin: 24px 0px 80px 0px;
+  /*margin-top: 24px;*/
 }
 
 /* Skills section */
@@ -196,14 +230,10 @@ margin-top: 24px;
   background: #FDF2E4;
 }
 
-.skills-h1 {
+.skills-title {
   align-self: center;
   line-height: 108px;
 }
-
-/*.skills-lists-container {
-  margin-bottom: 137px;
-}*/
 
 .code-list {
   display: flex;
@@ -215,12 +245,14 @@ margin-top: 24px;
 .code-list-title {
   background: #EB5577;
   color: #FFFFFF;
-  width: 61px;
+  /*width: 61px;*/
+  width: 70px;
   height: 36px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  margin-top: 64px;
+  text-align: center;
+  margin: 64px 0px 16px 0px;
 }
 
 .toolbox-list {
@@ -233,11 +265,14 @@ margin-top: 24px;
 .toolbox-list-title {
   background: #2483E0;
   color: #FFFFFF;
-  width: 92px;
+  /*width: 92px;*/
+  width: 99px;
   height: 36px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .more-list {
@@ -250,11 +285,14 @@ margin-top: 24px;
 .more-list-title {
   background: #0B24F5;
   color: #FFFFFF;
-  width: 62px;
+  /*width: 62px;*/
+  width: 71px;
   height: 36px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .upcoming-list {
@@ -266,11 +304,14 @@ margin-top: 24px;
 .upcoming-list-title {
   background: #6DB486;
   color: #FFFFFF;
-  width: 118px;
+  /*width: 118px;*/
+  width: 127px;
   height: 36px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .list-item {
@@ -284,10 +325,9 @@ margin-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*align-items: flex-start;*/
   margin: 0px 24px 0px 24px;
 }
-.talk-h1 {
+.time-to-talk-title {
   color: #EB5577;
   font-weight: 900;
   font-size: 55px;
@@ -314,7 +354,6 @@ margin-top: 24px;
   flex-direction: row;
   justify-content: space-around;
   width: 340px;
-  /*align-items: flex-end;*/
   margin-bottom: 80px;
 }
 
@@ -327,6 +366,63 @@ margin-top: 24px;
 .icon-last:hover {
   color: black;
 }
+
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+  .quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FCEDEA;
+    height: 412px;
+  }
+  
+.quote {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-size: 22px;
+  color: #EB5577;
+  line-height: 30px;
+  width: 50%;
+}
+
+  .presentation-header {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px;
+  }
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 81px 102px 81px 102px;
+  }
+
+  .img-titles-container {
+    flex-direction: row;
+    margin: 0px;
+    /*align-items: flex-start;*/
+  }
+
+  .profile-img {
+    margin-right: 29px;
+  }
+
+  .scroll-down {
+    margin: 0px;
+  }
+
+  .underline {
+    margin: 3px 0px 0px 0px;
+  }
+  
+}
+
+
+@media (min-width: 1025px)
+
 
 /*
 header two-colored background for desktop

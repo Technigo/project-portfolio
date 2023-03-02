@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property ="og:title" content="Daniels Portfolio"/>
-    <meta property ="og:description" content="The portfolio page of Daniel Mnich code coach at Technigo, lorem ipsum set dolor amet"/>
-    <meta property ="og:image" content="https://placehold.co/400"/>
+    <meta property ="og:title" content="Fridas portfolio"/>
+    <meta property ="og:description" content="The portfolio page of Frida Mordenlöw, student at Technigo Web Development Boot camp Spring 2023"/>
+    <!-- ADD PREVIEW IMAGE -->
+    <meta property ="og:image" content=".img"/>
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,300,400&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/dae95110f4.js" crossorigin="anonymous"></script>
 
 <title>Fridas Portfolio</title>
 </head>
 
 <body>
-    <header class="header">
+    <!-- Presentation -->
+    <header class="presentation-header">
         <section class="presentation">
-        <div class="img-and-titles">
-            <img src="images/profile-pic-test.JPG" alt="Profile picture" class="profile-img">
+        <div class="img-titles-container">
+            <img class="profile-img" src="images/profile-pic-test.JPG" alt="Profile picture">
             <div class="titles">
                 <h3>Frida Nordenlöw</h3>
                 <h2>Frontend developer</h2>
                 <h4>+ textile artist</h4>
             </div>
         </div>
-        <p class="paragraph"> 
+        <p class="presentation-paragraph"> 
+            <!-- Rewrite paragraph -->
             Frida is an exceptional developer known for her innovative solutions and 
             exceptional coding abilities. She creates user-friendly applications and 
             solves complex issues with ease. Her drive for excellence makes her a 
@@ -50,31 +53,35 @@
             </a>
         </div>
         <div class="scroll-down">
-            <!--<i class="fa-solid fa-arrow-down"></i>-->
-            <img class="arrow" src="icons/scroll-arrow.svg">
+            <img class="arrow" src="icons/scroll-arrow.svg" alt="Arrow indicating to scroll down">
             <div>Let's scroll</div>
-            <img class="underline" src="icons/underline.svg">
+            <img class="underline" src="icons/underline.svg" alt="Underline under text">
         </div>
     </section>
-    <section class="logo-container">
-        a logo/quote on the side
+    <section class="quote-container">
+        <p class="quote">You might not think that programmers are artists, but programming is an 
+            extremely creative profession. It's logic-based creativity. 
+            <br>
+            - John Romero
+        </p>
     </section>
     </header>
-
+<!-- Tech section -->
 <section class="tech-container">
-    <h1 class="tech-h1">Tech</h1>
-    <p class="paragraph"> 
+    <h1 class="tech-title">Tech</h1>
+    <p class="tech-paragraph"> 
         HTML, CSS, JavaScript, ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, 
         Flexbox, Web Accessibly, API:s, mob-programming, pair-programming, Github. 
     </p>    
 </section>
-
+<!-- Featured Projects -->
 <section class="featured-projects">
-    <h1>Featured Projects</h1>
+    <h1 class="featured-projects-title">Featured Projects</h1>
     <div class="project-container">
-image 
-        <h2>Weather App</h2>
-        <p class="paragraph">
+        <img class="project-img" src="images/umbrellas.jpg" alt="image of umbrellas">
+        <h2 class="project-name">Weather App</h2>
+        <p class="project-paragraph">
+        <!-- Rewrite paragraph -->
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ut at asperiores 
         magni, tempore eos? Consectetur, sequi aut quidem, velit quisquam officia natus 
         laudantium, illum incidunt nesciunt voluptates impedit. Ut!
@@ -84,15 +91,18 @@ image
             <li class="language">CSS3</li>
             <li class="language">JavaScript ES6</li>
         </ul> 
-        <a class="view-code" href="https://github.com/fridanordenlow/project-weather-app" aria-label="Link to the code of project Weather App on Fridas Github page">
-        </a>
-        <a class="live-demo" href="https://voluble-bonbon-854851.netlify.app/" aria-label="Link to Fridas deployed Weather App website">
-        </a>
+        <div class="view-buttons">
+            <a class="view-code" href="https://github.com/fridanordenlow/project-weather-app" aria-label="Link to the code of project Weather App on Fridas Github page">
+                </a>
+            <a class="live-demo" href="https://voluble-bonbon-854851.netlify.app/" aria-label="Link to Fridas deployed Weather App website">
+                </a>
+        </div>
     </div>
     <div class="project-container">
-        image 
-        <h2>Guess Who? The Game</h2>
-        <p class="paragraph">
+        <img class="project-img" src="images/who-wide.jpg" alt="image of the word who">
+        <h2 class="project-name">Guess Who? The Game</h2>
+        <p class="project-paragraph">
+        <!-- Rewrite paragraph -->
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ut at asperiores 
         magni, tempore eos? Consectetur, sequi aut quidem, velit quisquam officia natus 
         laudantium, illum incidunt nesciunt voluptates impedit. Ut!
@@ -102,15 +112,18 @@ image
                 <li class="language">CSS3</li>
                 <li class="language">JavaScript ES6</li>
             </ul> 
-        <a class="view-code" href="" aria-label="Link to the code of project Guess Who game on Fridas Github page">
-            </a>
-        <a class="live-demo" href="" aria-label="Link to Fridas deployed Guess Who game website">
-            </a>    
+        <div class="view-buttons">    
+            <a class="view-code" href="" aria-label="Link to the code of project Guess Who game on Fridas Github page">
+                </a>
+            <a class="live-demo" href="" aria-label="Link to Fridas deployed Guess Who game website">
+                </a>    
+        </div>       
     </div>
     <div class="project-container">
-        image 
-        <h2>Chat Bot</h2>
-        <p class="paragraph">
+        <img class="project-img" src="images/guy-with-computer.jpg" alt="image of guy with computer">
+        <h2 class="project-name">Chat Bot</h2>
+        <p class="project-paragraph">
+        <!-- Rewrite paragraph -->
         The chat bot app is a conversational AI-powered tool designed to enhance user experience 
         by providing instant, personalized, and automated responses to user inquiries.
         </p>
@@ -119,19 +132,21 @@ image
                 <li class="language">CSS3</li>
                 <li class="language">JavaScript ES6</li>
             </ul> 
-        <a class="view-code" href="" aria-label="Link to the code of project Chat Bot on Fridas Github page">
-            </a>
-        <a class="live-demo" href="" aria-label="Link to Fridas deployed Chat Bot website">
-            </a>        
+        <div class="view-buttons">    
+            <a class="view-code" href="" aria-label="Link to the code of project Chat Bot on Fridas Github page">
+                </a>
+            <a class="live-demo" href="" aria-label="Link to Fridas deployed Chat Bot website">
+                </a>     
+        </div>  
     </div>       
 </section>
-
+<!-- My words section -->
 <section class="my-words">
     <!--Nothing to display here at the moment-->
 </section>
-
+<!-- Skills section -->
 <section class="skills-container">
-    <h1 class="skills-h1">Skills</h1>
+    <h1 class="skills-title">Skills</h1>
     <div class="skills-lists-container">
         <ul class="code-list">
             <li class="code-list-title">Code</li>
@@ -161,9 +176,9 @@ image
         </ul> 
     </div>
 </section>
-
+<!-- Time to talk section -->
 <section class="time-to-talk">
-    <h1 class="talk-h1">Time to talk</h1>
+    <h1 class="time-to-talk-title">Time to talk</h1>
     <div class="img-and-titles">
         <img src="images/profile-pic-test.JPG" alt="Profile picture" class="profile-img-2">
         <div class="titles">
