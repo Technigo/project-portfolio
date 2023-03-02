@@ -1,3 +1,7 @@
+<!--ADD FAVICON-->
+<!--Add more divs or sections for the purpose-->
+<!--Clean up code-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,13 +22,17 @@
     <!--we don't need to add the word "px" below but the number in width and height is the pixels for the video shown-->
     <meta property="og:video:width" content="640"/> 
     <meta property="og:video:height" content="360"/>
-
+<!--Title that shows on top of the website-->
     <title>Ylvas Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header>
+      <div class="header">
       <h1>Ylva Karlsson</h1>
+      <p>Frontend Developer</p>
       <nav>
         <ul>
           <li><a href="#about-me">About Me</a></li>
@@ -32,8 +40,10 @@
           <li><a href="#contact-me">Contact Me</a></li>
         </ul>
       </nav>
+    </div>
     </header>
-
+  
+<!--ABOUT ME-->
     <main>
       <section id="about-me">
         <h2>About Me</h2>
@@ -63,7 +73,9 @@
         </li></ul>
     </section>
 
-      <section id="projects">
+    <!--PROJECTS-->
+    <!--might change this to a div instead-->
+      <section id="projects" class="projects">
         <h2>Projects</h2>
         <ul>
           <li>
@@ -77,6 +89,43 @@
         </ul>
       </section>
       
+      <!--MY ARTICLES - might use this or not-->
+      <section class="my-words"> <!--entire section laout is "grid" 2x2-->
+        <h2>My words</h2>
+        <img src="https://placehold.co/564x340">
+        <time>Date</time>
+        <h4>Headline</h4>
+        <article>Descriptive text about headline</article>
+        <!-- I want to style icon and link together as a button but not finished-->
+        <img src="small screen icon" />
+        <a>Read article</a>
+
+        <img src="Bild till text2">
+        <time>Date</time>
+        <h4>Headline</h4>
+        <article>Descriptive text about headline</article>
+         <!-- I want to style icon and link together as a button but not finished-->
+        <img src="small screen icon" />
+        <a>Read article</a>
+
+        <img src="Bild till text3">
+        <time>Date</time>
+        <h4>Headline</h4>
+        <article>Descriptive text about headline</article>
+         <!-- I want to style icon and link together as a button but not finished-->
+        <img src="small screen icon" />
+        <a>Read article</a>
+
+        <img src="Bild till text4">
+        <time>Date</time>
+        <h4>Headline</h4>
+        <article>Descriptive text about headline</article>
+         <!-- I want to style icon and link together as a button but not finished-->
+        <img src="small screen icon" />
+        <a>Read article</a>
+    </section>
+
+      <!--SKILLS-->
 <section id="skills" class="skills">
     <div class="shadowbox">
         Code
@@ -90,8 +139,60 @@
     <div class="shadowbox">
         Upcoming...
     </div>
+
+    <h2>Skills</h2>
+        <ul>
+            <li>
+                <h6>Code</h6>
+            </li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript ES6</li>
+            <li>Flexbox</li>
+            <li>CSS Grid</li>
+            <li>Web Accessibility</li>
+            <li>APIs</li>
+            <li>Mob-programming</li>
+            <li>Pair-programming</li>
+        </ul>
+        <ul>
+            <li>
+                <h6>Toolbox</h6>
+            </li>
+            <li>Jira</li>
+            <li>Trello</li>
+            <li>Adobe Photoshop</li>
+            <li>Figma</li>
+            <li>Slack</li>
+            <li>VS Code</li>
+            <li>GitHub</li>
+        </ul>
+        <ul>
+            <li>
+                <h6>More</h6>
+            </li>
+            <li>E-commerce Management</li>
+            <li>CMS</li>
+            <li>PIM</li>
+            <li>Agile methodology</li>
+            <li>SEO</li>
+            <li>SEM</li>
+            <li>Google Tag Manager</li>
+            <li>Looker Studio (GDS)</li>
+            <li>Google Analytics, Ads and more.</li>
+        </ul>
+        <ul>
+            <li>
+                <h6>Upcoming</h6>
+            </li>
+            <li>Redux</li>
+            <li>Node.js</li>
+            <li></li>
+            <li></li>
+        </ul>
 </section>
 
+<!--CONTACT-->
       <section id="contact-me">
         <h2>Contact Me</h2>
         <form>
@@ -110,8 +211,23 @@
     </main>
 
     <footer>
+<img src="http://placehold.it/" /> <!--Update with my own picture later-->
+<h2>Ylva Karlsson</h2>
+<p class="myPortfolioTitle">Frontend Developer</p>
+<adress>
+  <p>ylva_87@hotmail.com</p>
+</adress>
+<!--decide which one to keep-->      
+<p>Copyright © Ylva Karlsson</p>
       <p>Copyright © My Portfolio</p>
+      <!--Might change footer links to a div instead - will see-->
+      <!--REMEMBER TO ADD LINKS-->
       <footer-links>
+        <div class="button-container">
+          <button class="linkedIn-button">LinkedIn</button>
+          <button class="github-button">Github</button>
+          <button class="facebook-button">Facebook</button>
+      </div>
         *LINKS HERE*
       </footer-links>
     </footer>
