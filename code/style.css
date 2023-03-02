@@ -6,10 +6,6 @@
   src: url('./css/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf');
 }
 
-/* Desktop large: between 1281px and 1512px*/
-/* Desktop large: between 745px and 1280px*/
-/* Tablet: between 376px and 744px - bild 412px hög*/
-/* Mobile: between 0 and 375px*/
 
 /*z-index 1 and filter-brightness with z-index 2, for increased readability*/
 
@@ -34,25 +30,25 @@ section {
 
 /*---GENERAL HEADING PROPERTIES---*/
 h1 {
-  font-family: 'Satoshi';
+  font-family: 'SatoshiRegular';
   margin: 0;
   z-index: 1;
 }
 
 h2 {
-  font-family: 'Satoshi';
+  font-family:'SatoshiRegular';
   margin: 0;
   z-index: 1;
 }
 
 h3 {
-  font-family: 'Satoshi';
+  font-family: 'SatoshiRegular';
   margin-bottom: 5px;
   z-index: 1;
 }
 
 h4 {
-  font-family: 'Satoshi';
+  font-family: 'SatoshiRegular';
   margin: 0;
   z-index: 1;
 }
@@ -72,7 +68,7 @@ p {
 
 .container {
   border: 1px solid rgb(144, 0, 255);
-  margin: 250px 80px;
+  margin: 200px 40px;
 }
 
 .presentation {
@@ -347,7 +343,7 @@ p {
   color:hotpink;
   font-size:50px;
   margin: 50px auto auto auto;
-  padding-left: 150px;
+  padding-left: 100px;
 }
 
 .article img {
@@ -535,13 +531,99 @@ p {
   margin: 10px;
 }
 
+/*---MOBILE---*/
 
-
-/*---MEDIA AND DEVICES---*/
-/*@media (min-width: 667px) and (max-width: 1024px) {
-
-
-/*
 @media (max-width: 667px) {
 
+body{
+grid-template-columns: 1fr;
 }
+
+.introduction-side-image {
+  display: none;
+}
+.container .presentation{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.tech {
+  grid-column: 1 / 3;
+  flex-direction: column;
+}
+
+.tech p {
+  max-width: 200px;
+  margin: 20px 0 0 0;
+}
+
+.project-container {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px auto 10px auto;
+  background-color: white;
+}
+
+.featured-projects h1 {
+  text-align: center;
+  font-size: 58px;
+  line-height: 78px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 70px;
+  margin-left: 10%;
+}
+
+.project-container-text {
+  background-color: white;
+  margin: 10px;
+}
+
+.square-project-image {
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: 55%;
+  margin: 0 10px;
+}
+.project-links {
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.my-words {
+  grid-column: 1 / 3;
+}
+
+.my-words h1{
+  text-align: center;
+  font-size: 58px;
+  line-height: 78px;
+}
+.article {
+  width: 100%;
+}
+
+.skills {
+  grid-column: 1 / 3;
+  height: 1000px;
+}
+
+.skill-lists-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .presentation {
+  flex-direction: column;
+}
+}
+
+/*------*/
+/*@media (min-width: 667px) and (max-width: 1024px) {
+
