@@ -4,6 +4,7 @@
 body {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .picture { /* This hides the cover-image on mobile */
@@ -42,10 +43,10 @@ body {
 }
 
 .title {
-font-weight: 900;
-font-size: 32px;
-line-height: 43px;
-color: #000000;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43px;
+    color: #000000;
 }
 
 .introduction {
@@ -128,8 +129,11 @@ color: #000000;
 }
 
 /*** SECTION: FEATURED PROJECTS ***/
-.featured-projects img {
-    margin: 24px;
+.featured-projects {
+    margin-left: 24px;
+}
+.projectPicture {
+    margin: 24px 24px 24px 0;
 }
 
 .Project1, .Project2, .Project3, .Project4 {
@@ -146,7 +150,7 @@ color: #000000;
     font-size: 72px;
     line-height: 80px;
     color: #0B24F5;
-    margin: 24px;
+    margin: 24px 24px 24px 0;
 }
 
 .featured-projects h3 {
@@ -154,7 +158,6 @@ color: #000000;
     font-size: 32px;
     line-height: 43px;
     color: #000000;
-    margin-left: 24px;
 }
 
 .featured-projects p {
@@ -164,11 +167,7 @@ color: #000000;
     font-size: 22px;
     line-height: 29px;
     color: #000000;
-    margin: 24px;
-}
-
-.project-languages {
-    margin-left: 24px;
+    margin: 24px 24px 24px 0;
 }
 
 .featured-projects li {
@@ -186,7 +185,7 @@ color: #000000;
 
 .featured-projects button {
     display: block;
-    margin: 12px 0px 12px 24px;
+    margin: 12px 0px 12px 0;
     background-color: #F5F5F5;
     border-radius: 40px;
     border: none;
@@ -301,6 +300,20 @@ footer h2 {
 
 .phone-mail {
     margin-left: 24px;
+}
+
+/* RESPONSIVE DESIGN FOR SMALL MOBILES */
+@media (min-width: 320px) and (max-width: 374px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 6px;
+    }
+    .tech, .skills {
+        background-color: white;    
+    }
 }
 
 /* RESPONSIVE DESIGN FOR TABLET */
