@@ -16,10 +16,14 @@
 
 body {
   font-family: 'EB Garamond', serif;
-  height: 100vh;
+  /*height: 100vh;*/
   display: grid;
   grid-template-columns: 1fr 1fr;
   z-index: 1;
+}
+
+section {
+  display: inline-block;
 }
 
 /*---GENERAL HEADING PROPERTIES---*/
@@ -52,11 +56,12 @@ p {
   z-index: 1;
 }
 
-/*---CSS FOR MAIN PAGE---*/
+/*---INTRO TO EVA---*/
 .introduction {
   height: 980px;
   width: 100%;
-  grid-column: 1 / 2; 
+  position: relative;
+  /*grid-column: 1 / 2; */
   background-color: var(--primary-color);
 }
 
@@ -82,6 +87,29 @@ p {
   flex-direction: column;
   margin: auto 0 auto 10px;
   z-index: 1;
+}
+
+.presentation-text h2 {
+  font-family: SatoshiRegular;
+  color: blue;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.presentation-text h3 {
+  font-family: SatoshiRegular;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 43px;
+}
+
+.presentation-text h4 {
+  font-family: SatoshiRegular;
+  color: #565656;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
 }
 
 .container p {
@@ -123,8 +151,7 @@ p {
 
 
 
-.introduction-side-image {
-  /*display: none;    - On mobile view */  
+.introduction-side-image { 
   grid-column: 2 / 3;
   width: 100%;
   height: 100%;
@@ -462,6 +489,7 @@ p {
 }
 
 .contact h1 {
+  font-family: 'Satoshi';
   font-size: 120px;
   font-weight: 900;
   line-height: 162px;
@@ -502,74 +530,13 @@ p {
   margin: 10px;
 }
 
+
+
 /*---MEDIA AND DEVICES---*/
-@media (min-width: 667px) and (max-width: 1024px) {
-
-body{
-  grid-template-columns: 1.5fr 0.5fr;
-}
-
-.container {
-  border: 1px solid blue;
-  margin: 80px 20px;
-}
-
-.tech p {
-  max-width: 400px;
-  margin: 0 0 0 60px;
-}
-}
+/*@media (min-width: 667px) and (max-width: 1024px) {
 
 
-
+/*
 @media (max-width: 667px) {
 
-  body{
-  grid-template-columns: 1fr;
-}
-
-      
-.introduction-side-image {
-  display: none;
-}
-
-.introduction {
-  height: 800px;
-}
-
-.container {
-  border: 1px solid blue;
-  margin: 50px 20px;
-}
-
-.scroller {
-  background-color: transparent;
-  top: 62%;
-  right: 50%;
-}
-
-.tech {
-  flex-direction: column;
-}
-
-.tech p {
-  max-width: 300px;
-  margin: 20px 0 0 0;
-}
-
-.skill-lists-container {
-  flex-direction: column;
-}
-
-.skills {
-  height: 1300px;
-}
-
-.contact {
-  padding: 20px;
-}
-
-.contact h1 {
-  text-align: center;
-}
 }
