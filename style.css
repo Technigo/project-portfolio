@@ -376,6 +376,12 @@ h5 {
     padding: 0px 48px 48px 24px;
 }
 
+.title2 {
+    padding-top: 5px 0px 0px 24px;
+    text-align: left;
+    padding-left: 15px;
+}
+
 .contact {
     font-family: SatoshiBlack;
     color: black;
@@ -463,10 +469,11 @@ h5 {
         padding-left: 15px;
     }
 
-    .title2 {
-        padding-top: 85px;
-        text-align: left;
-        padding-left: 15px;
+    .techskills {
+        background-color: #EDFFFF;
+        height: 800px;
+        padding: 240px 120px 120px 120px;
+        background: relative;
     }
 
     .personal-info {
@@ -483,6 +490,20 @@ h5 {
     .aboutbox {
         display: flex;
         justify-content: center;
+        position: relative;
+    }
+
+    .vector-pil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 30px 150px 30px;
+        font-weight: bold;
+        color: #EB5577;
+        position: absolute;
+        top: 910px;
+        left: calc(50% - 70px);
     }
 
     .thingsiknow {
@@ -491,8 +512,8 @@ h5 {
         align-items: center;
     }
 
-    .featured-projects {
-        margin: 120px 0px 80px 0px;
+    .featured-projects h4 {
+        padding-bottom: 30px;
     }
 
     .profilepicturebox {
@@ -529,9 +550,26 @@ h5 {
     .guesswhotext {
         padding: 0px 26px 26px 26px;
     }
+    .timetotalktext h4 {
+        padding-top: 120px;
+        font-size: 120px;
+    }
+    .title2 {
+        padding-top: 5px 0px 0px 24px;
+        text-align: center;
+        padding-left: 15px;
+    }
+
+    .timetotalk-info {
+        display: flex;
+    }
+
+    .timetotalkpicturebox {
+        align-items: center;
+    }
 }
     
-/* ----------- MEDIA QUARRIES FOR LAPTOP ---------*/
+/* ----------- MEDIA QUARRIES FOR NORMAL LAPTOPS ---------*/
 
  @media (min-width: 1024px) {
 
@@ -561,6 +599,13 @@ h5 {
         align-items: center;
         justify-content: flex-end;
         position: relative;
+    }
+    
+    .techskills {
+        background-color: #EDFFFF;
+        height: 800px;
+        padding: 0px 24px 0px 24px;
+    
     }
     
     .linkbar {
@@ -651,4 +696,16 @@ h5 {
         align-items: center;
         justify-content: center;
     }
+}
+
+/* ----------- MEDIA QUARRIES FOR NORMAL LARGE SCREENS ---------*/
+
+@media (min-width: 1280px) {
+
+    .techskills {
+        background-color: #EDFFFF;
+        height: 800px;
+        padding: 230px;
+    }
+
 }
