@@ -267,15 +267,33 @@ button p {
     margin-bottom: unset;
   }
 
+  .featured-project h3 {
+    margin-top: unset;
+    margin-bottom: 12px;
+  }
+
   .project {
     display: flex;
     flex-direction: row;
     margin: 40px 0 40px 0;
   }
 
+  .project-img {
+    width: 184px;
+    height: 280px;
+    flex-shrink: 0;
+  }
+
+  .project-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+  }
+
   .project-text {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-left: 24px;
   }
 
@@ -283,7 +301,7 @@ button p {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin-bottom: 80px;
+    gap: 24px;
   }
 
   .live-demo {
