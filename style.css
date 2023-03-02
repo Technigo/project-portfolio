@@ -1,0 +1,128 @@
+@font-face {
+  font-family: SatoshiBold;
+  font-weight: bold;
+  src: url("Assets/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf");
+}
+@font-face {
+  font-family: SatoshiMedium;
+  font-weight: medium;
+  src: url("Assets/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");
+}
+@font-face {
+  font-family: SatoshiBlack;
+  font-weight: bolder;
+  src: url("Assets/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf");
+}
+
+.entire-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.right-image {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  left: 50%;
+  background-image: url(Assets/Technigologo.svg);
+}
+
+.scroll-icon-div {
+  position: absolute;
+  width: 138px;
+  height: 138px;
+  left: calc(50% - 138px / 2);
+  top: 77%;
+}
+
+.scroll-icon {
+  /* this makes the scroll button bounce */
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.antonia-info {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 70px;
+  margin-top: 150px;
+}
+
+.antonia-header {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  height: 164px;
+}
+
+.portrait-photo {
+  width: 164px;
+  height: 164px;
+  border-radius: 100px;
+}
+
+.antonia-title-text {
+  padding-top: 10px;
+}
+
+.antonia-granit {
+  font-family: SatoshiBold;
+  font-size: 20px;
+  color: #0b24f5;
+  margin-bottom: -20px;
+}
+
+.frontend-developer {
+  font-family: SatoshiBlack;
+  font-size: 25px;
+  margin-bottom: -15px;
+}
+
+.digital-designer {
+  font-family: SatoshiMedium;
+  font-size: 17px;
+  color: #565656;
+}
+
+.antonia-info-text {
+  font-family: "EB Garamond";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  padding-left: 20px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
