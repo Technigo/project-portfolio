@@ -77,8 +77,16 @@ p {
 .arrow-down {
    text-align: center;
    color: #0B24F5;
-   margin-bottom: 27px;
+   margin-bottom: 47px;
    max-width: 480px;
+   /* Makes the arroe bounce */
+   animation: bounce 1s infinite alternate;
+}
+
+/*Makes the arrow bounce*/
+@keyframes bounce {
+    0%   {transform: translateY(0);}
+    100% {transform: translateY(50px);}
   }
 
   p1 {
@@ -240,8 +248,8 @@ h4 {
     height: 4140px;
     margin-top: 85px;
     margin-bottom: 62px;
-   display: flex;
-   flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 
@@ -255,6 +263,5 @@ h5 {
     font-family: 'Satoshi', sans-serif;
     font-weight: 700px;
     font-size: 72px;
-   
     flex-wrap: nowrap;
 }
