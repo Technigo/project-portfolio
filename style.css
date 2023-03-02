@@ -236,6 +236,10 @@ p {
     padding-top: 10%;
 }
 
+.post img {
+    width: 100%;
+}
+
 .skills {
     background-color: #FDF2E4;
     margin: 0;
@@ -303,13 +307,10 @@ address {
 @media only screen and (min-width: 600px) and (max-width: 991px) {
 
 .top-img {
-    display: block;
-    background-color: #FCEDEA;
-    height: 412px;
-    margin: 0;
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
-
 
 .intro, .tech, .contact {
     display: grid;
@@ -318,6 +319,7 @@ address {
 }
 
 .intro img {
+    position: absolute;
     align-self: start;
     margin: 0;
 }
@@ -344,11 +346,9 @@ address {
     flex-direction: column;
 }
 
-
 .project {
     display: flex;
-    flex-direction: row;
-   
+    flex-direction: row;  
 }
 
 .project img {
@@ -363,6 +363,10 @@ address {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
+}
+
+.post {
+    margin: 10%;
 }
 
 .skills {
@@ -408,4 +412,100 @@ address {
     justify-self: start;
 }
 }
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 992px) {
+
+.layout {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: no-wrap;
+    height: 980px;
+  }
+
+.top-img {
+    display: flex;
+    flex-basis: 50%;
+    height: 500px;
+}
+
+.top-img img {
+    max-width: 100%;
+    height: 980px;
+    object-fit: cover;
+    object-position: 10% 0;
+}
+
+.intro {
+    flex-basis: 50%;
+    height: 500px;
+    justify-self: flex-start;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.intro img {
+    grid-column: 1/ span 1;
+    align-self: baseline;
+}
+
+.intro-text, .some-icon {
+    display: block;
+    max-width: 100%;
+    grid-column: 2/ span 4;
+}
+
+.tech {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    align-content: center;
+    height: 800px;
+}
+
+.tech h2 {
+    grid-column: 2 / span 1;
+    align-self: center;
+}
+
+.tech p {
+    grid-column: 3 / span 2;
+    align-self: center;
+}
+
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    padding: 0px;
+    margin: 120px 120px 0 120px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+}
+
+.project img {
+    width: 280px;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+.my-words h2 {
+    display: block;
+    position: absolute;
+    justify-self: flex-start;
+} 
+
+.my-words {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+
+.contact 
+
+
+}
