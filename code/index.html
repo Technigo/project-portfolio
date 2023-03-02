@@ -6,110 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    <!-- font and icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
     <script src="https://kit.fontawesome.com/e72a04e006.js" crossorigin="anonymous"></script>
+    <!-- OG tags for social media-->
     <meta property ="og:title" content="Fannys Portfolio"/>
     <meta property ="og:description" content="The portfolio page of Fanny Stenberg Frontend developer"/>
-    <!-- Change the picture below, only a placeholder !! -->
+    <!-- !! Change the picture below, only a placeholder !! -->
     <meta property ="og:image" content="https://placehold.co/400"/>
+    <!--Title of webpage-->
     <title>Fannys Portfolio</title>
 </head>
 <body>
     <header>
-        <div class="picture">
-            <!-- Here goes a picture that's "Technigo" in the design -->
-            <img class="cover" src="./images/Portfolio-Cover.png" alt="portfolio cover" aria-hidden="true">
+        <!-- Here goes a picture that's "Technigo" in the design -->
+        <div class="picture" aria-hidden="true">
+            <img class="cover" src="./images/Portfolio-Cover.png" alt="portfolio cover">
         </div>
         
-        <div class="header-container">
-        <div class="about-me">
+        <div class="header-container" alt="container for content">
             <div class="myProfilePic">
-             <img class="profile-pic" src="../code/images/IMG_0513.jpg" alt="profile image of Fanny">
+                <img class="profile-pic" src="../code/images/IMG_0513.jpg" alt="profile image of Fanny">
             </div>
-
+            
             <div class="nameAndTitle">
-             <h1 class="name">Fanny Stenberg</h1>
-             <h2 class="title">Frontend developer</h2>
+                <h1 class="name">Fanny Stenberg</h1>
+                <h2 class="title">Frontend developer</h2>
             </div>
-
+            
             <div class="introduction">
-             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-             </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
             </div>
-
+        <!-- Here goes icons with links -->
+            <adress class="contact-me">
+                <a class="icon" title="link to Fanny's Linked In page" href="https://www.linkedin.com/in/fanny-stenberg/" aria-label="Go to Fanny's Linked In page">
+                    <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="icon" title="link to Fanny's Github page" href="https://github.com/fannystenberg" aria-label="Go to Fanny's Github page">
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a class="icon" title="link to Fanny's mail" href="mailto:ffannystenberg@gmail.com" aria-label="Send a mail to Fanny">
+                    <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+                </a>
+            </adress>
         </div>
-        <div class="contact-me">
-            <a class="icon" title="link to Fanny's Linked In page" href="https://www.linkedin.com/in/fanny-stenberg/" aria-label="Go to Linked In page">
-                <i aria-hidden="true" class="fab fa-linkedin-in"></i>
-            </a>
-            <a class="icon" title="link to Fanny's Github page" href="https://github.com/fannystenberg" aria-label="Go to Github page">
-                <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a class="icon" title="link to Fanny's mail" href="mailto:ffannystenberg@gmail.com" aria-label="Mail to Fanny Stenberg">
-                <i aria-hidden="true" class="fa-solid fa-envelope"></i>
-            </a>
-        </div>
-        <div aria-hidden="true" class="scroll">
-            <!-- Here goes "Lets scroll" -->
+        <!-- Here goes "Lets scroll" -->
+        <div class="scroll" aria-hidden="true">
             <p class="arrow"><i class="fa-solid fa-arrow-down"></i></p>
             <p class="scroll-text">Lets scroll</p>
         </div>
-    </div>
     </header>
 
-    <section class="tech">
-        <!-- Here goes info about tech-stack -->
-        <h2>Tech</h2>
-        <p>
-            HTML | CSS | JavaScript | React | Redux | Node.js |
-             etc | etc | etc | etc | etc | etc |
-             etc | etc | etc | etc | etc | etc |
-        </p>
-    </section>
+    <main>
+         <!-- Here goes info about tech-stack -->
+        <section class="tech">
+            <h2>Tech</h2>
+            <p>
+                HTML | CSS | JavaScript | React | Redux | Node.js |
+                etc | etc | etc | etc | etc | etc |
+                etc | etc | etc | etc | etc | etc |
+            </p>
+        </section>
 
-    <section class="featured-projects">
         <!-- Here goes a list of projects -->
-        <h2>Featured Projects</h2>
-        <div class="Project1">
-            <div class="projectPicture">
-             <img src="https://placehold.co/320" alt="">
-            </div>
-            <div class="project-info">
-             <h3>Title of project</h3>
-             <p>Short description of project</p>
-             <ul class="project-languages">
-                 <li>HTML</li>
-                 <li>CSS</li>
-                 <li>etc</li>
-             </ul>
-            <button
-              type="button"
-              class="view-code"
-              title="link to project on Github"
-              aria-label="View code on Github"
-              onclick="window.open('länk här');"
-              <span><i aria-hidden="true" class="fab fa-github"></i></span>
-              View the code
-            </button>
-            <button
-              type="button"
-              class="live-demo"
-              title="link to project on Netlify"
-              aria-label="View project live in Netlify"
-              onclick="window.open('länk här');"
-              <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
-              Live demo
-            </button>
-            </div>
-        </div>
-        <div class="Project2">
-            <div class="projectPicture">
+        <section class="featured-projects">
+            <h2>Featured Projects</h2>
+            <div class="Project1">
+                <div class="projectPicture">
                 <img src="https://placehold.co/320" alt="">
-               </div>
-               <div class="project-info">
+                </div>
+                <div class="project-info">
                 <h3>Title of project</h3>
                 <p>Short description of project</p>
                 <ul class="project-languages">
@@ -125,116 +95,149 @@
                 onclick="window.open('länk här');"
                 <span><i aria-hidden="true" class="fab fa-github"></i></span>
                 View the code
-              </button>
-              <button
-                type="button"
-                class="live-demo"
-                title="link to project on Netlify"
-                aria-label="View project live in Netlify"
-                onclick="window.open('länk här');"
-                <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
-                Live demo
-              </button>
-               </div>
-            </div>
-        <div class="Project3">
-            <div class="projectPicture">
-                <img src="https://placehold.co/320" alt="">
-               </div>
-               <div class="project-info">
-                <h3>Title of project</h3>
-                <p>Short description of project</p>
-                <ul class="project-languages">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>etc</li>
-                </ul>
+                </button>
                 <button
                 type="button"
-                class="view-code"
-                title="link to project on Github"
-                aria-label="View code on Github"
-                onclick="window.open('länk här');"
-                <span><i aria-hidden="true" class="fab fa-github"></i></span>
-                View the code
-              </button>
-              <button
-                type="button"
                 class="live-demo"
                 title="link to project on Netlify"
                 aria-label="View project live in Netlify"
                 onclick="window.open('länk här');"
                 <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
                 Live demo
-              </button>
-               </div>
+                </button>
+                </div>
             </div>
-        <div class="Project4">
-            <div class="projectPicture">
-                <img src="https://placehold.co/320" alt="">
-               </div>
-               <div class="project-info">
-                <h3>Title of project</h3>
-                <p>Short description of project</p>
-                <ul class="project-languages">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>etc</li>
-                </ul>
+            <div class="Project2">
+                <div class="projectPicture">
+                    <img src="https://placehold.co/320" alt="">
+                </div>
+                <div class="project-info">
+                    <h3>Title of project</h3>
+                    <p>Short description of project</p>
+                    <ul class="project-languages">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>etc</li>
+                    </ul>
+                    <button
+                    type="button"
+                    class="view-code"
+                    title="link to project on Github"
+                    aria-label="View code on Github"
+                    onclick="window.open('länk här');"
+                    <span><i aria-hidden="true" class="fab fa-github"></i></span>
+                    View the code
+                </button>
                 <button
-                type="button"
-                class="view-code"
-                title="link to project on Github"
-                aria-label="View code on Github"
-                onclick="window.open('länk här');"
-                <span><i aria-hidden="true" class="fab fa-github"></i></span>
-                View the code
-              </button>
-              <button
-                type="button"
-                class="live-demo"
-                title="link to project on Netlify"
-                aria-label="View project live in Netlify"
-                onclick="window.open('länk här');"
-                <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
-                Live demo
-              </button>
-               </div>
-            </div>
-        <div class="Project5"></div>
-        <div class="Project6"></div>
-    </section>
+                    type="button"
+                    class="live-demo"
+                    title="link to project on Netlify"
+                    aria-label="View project live in Netlify"
+                    onclick="window.open('länk här');"
+                    <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
+                    Live demo
+                </button>
+                </div>
+                </div>
+            <div class="Project3">
+                <div class="projectPicture">
+                    <img src="https://placehold.co/320" alt="">
+                </div>
+                <div class="project-info">
+                    <h3>Title of project</h3>
+                    <p>Short description of project</p>
+                    <ul class="project-languages">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>etc</li>
+                    </ul>
+                    <button
+                    type="button"
+                    class="view-code"
+                    title="link to project on Github"
+                    aria-label="View code on Github"
+                    onclick="window.open('länk här');"
+                    <span><i aria-hidden="true" class="fab fa-github"></i></span>
+                    View the code
+                </button>
+                <button
+                    type="button"
+                    class="live-demo"
+                    title="link to project on Netlify"
+                    aria-label="View project live in Netlify"
+                    onclick="window.open('länk här');"
+                    <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
+                    Live demo
+                </button>
+                </div>
+                </div>
+            <div class="Project4">
+                <div class="projectPicture">
+                    <img src="https://placehold.co/320" alt="">
+                </div>
+                <div class="project-info">
+                    <h3>Title of project</h3>
+                    <p>Short description of project</p>
+                    <ul class="project-languages">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>etc</li>
+                    </ul>
+                    <button
+                    type="button"
+                    class="view-code"
+                    title="link to project on Github"
+                    aria-label="View code on Github"
+                    onclick="window.open('länk här');"
+                    <span><i aria-hidden="true" class="fab fa-github"></i></span>
+                    View the code
+                </button>
+                <button
+                    type="button"
+                    class="live-demo"
+                    title="link to project on Netlify"
+                    aria-label="View project live in Netlify"
+                    onclick="window.open('länk här');"
+                    <span><i aria-hidden="true" class="fa-solid fa-globe"></i></span>
+                    Live demo
+                </button>
+                </div>
+                </div>
+            <div class="Project5"></div>
+            <div class="Project6"></div>
+        </section>
+    </main>
 
-    <section class="my-words">
-        <!-- Here goes my thougts about code -->
+    <!-- Here goes my thougts about code, can be skipped for now -->
+     <article class="my-words">
         <h2>My words</h2>
-    </section>
+     </article>
 
-    <section class="skills">
-        <!-- Here goes a list of skills -->
+    <!-- Here goes a list of skills -->
+    <aside class="skills">
         <h2>Skills</h2>
         <div class="skills-container">
-        <div class="Code">
-         <h3 class="h3-code">Code</h3>
-         <p>HTML</p>
+            <div class="Code">
+                <h3 class="h3-code">Code</h3>
+                <p>HTML</p>
+            </div>
+            <div class="Toolbox">
+                <h3 class="h3-toolbox">Toolbox</h3>
+                <p>Figma</p>
+            </div>
+            <div class="More">
+                <h3 class="h3-more">More</h3>
+                <p>Soft skills</p>
+            </div>
+            <div class="Upcoming">
+                    <h3 class="h3-upcoming">Upcoming</h3>
+                    <p>Redux</p>
+            </div>
         </div>
-        <div class="Toolbox">
-         <h3 class="h3-toolbox">Toolbox</h3>
-         <p>Figma</p>
-        </div>
-        <div class="More">
-         <h3 class="h3-more">More</h3>
-         <p>Soft skills</p>
-        </div>
-        <div class="Upcoming">
-            <h3 class="h3-upcoming">Upcoming</h3>
-            <p>Redux</p>
-        </div>
-        </div>
-    </section>
+    </aside>
 
+    <!-- Here goes "Time to talk" -->
     <footer>
-        <!-- Here goes "Time to talk" -->
         <h2>Time to talk</h2>
         <div class="about-me">
             <img class="profile-pic" src="../code/images/IMG_0513.jpg" alt="profile image of Fanny">

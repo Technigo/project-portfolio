@@ -6,8 +6,13 @@ body {
     flex-direction: column;
 }
 
-.picture {
+.picture { /* This hides the cover-image on mobile */
     display: none;
+}
+
+/* SECTION: HEADER */
+.header-container {
+    margin-left: 24px;
 }
 
 .profile-pic {
@@ -15,31 +20,28 @@ body {
     height: 160px;
     border-radius: 50%;
     border: 1px solid #0B24F5;
-    margin: 24px;
 }
 
 .myProfilePic {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 24px;
 }
 
-.nameAndTitle {
-    margin-left: 24px;
+.name, .title {
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
 }
 
 .name {
-font-family: 'Satoshi-Variable';
-font-style: normal;
-font-weight: 700;
-font-size: 28px;
-line-height: 38px;
-color: #0B24F5;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #0B24F5;
 }
 
 .title {
-font-family: 'Satoshi-Variable';
-font-style: normal;
 font-weight: 900;
 font-size: 32px;
 line-height: 43px;
@@ -47,24 +49,24 @@ color: #000000;
 }
 
 .introduction {
-font-family: 'EB Garamond';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 29px;
-color: #000000;
-margin: 24px;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+    margin: 24px 0 24px 0;
 }
 
 .contact-me {
-    margin: 24px;
     display: flex;
+    margin: 24px 0 24px 0;
 }
 
 .icon {
     font-size: 32px;
     color: black;
-    opacity: 0.5;
+    opacity: 0.3;
     padding-right: 24px;
 }
 
@@ -74,34 +76,29 @@ margin: 24px;
 
 .scroll {
     margin: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0B24F5;
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
 }
 
 .arrow {
-    color: #0B24F5;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
+    font-size: 26px;
     margin: 10px;
 }
 
 .scroll-text {
-    font-family: 'Satoshi-Variable';
-    font-style: normal;
     font-weight: 900;
     font-size: 16px;
     line-height: 22px;
-    color: #0B24F5;
     border-bottom-style: solid;
     border-bottom-width: 2px;
     width: fit-content;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-
 /*** SECTION: TECH ***/
-
 .tech {
     background-color: #EDFFFF;
     display: flex;
@@ -112,26 +109,25 @@ margin: 24px;
 }
 
 .tech h2 {
-font-family: 'Satoshi-Variable';
-font-style: normal;
-font-weight: 700;
-font-size: 80px;
-line-height: 108px;
-color: #0B24F5;
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 108px;
+    color: #0B24F5;
 }
 
 .tech p {
-font-family: 'EB Garamond';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 32px;
-color: #000000;
-margin: 24px;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #000000;
+    margin: 24px;
 }
 
 /*** SECTION: FEATURED PROJECTS ***/
-
 .featured-projects img {
     margin: 24px;
 }
@@ -140,34 +136,35 @@ margin: 24px;
     margin-top: 24px;
 }
 
+.featured-projects h2, h3 {
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
+}
+
 .featured-projects h2 {
-font-family: 'Satoshi-Variable';
-font-style: normal;
-font-weight: 700;
-font-size: 72px;
-line-height: 80px;
-color: #0B24F5;
-margin: 24px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
+    color: #0B24F5;
+    margin: 24px;
 }
 
 .featured-projects h3 {
-font-family: 'Satoshi-Variable';
-font-style: normal;
-font-weight: 900;
-font-size: 32px;
-line-height: 43px;
-color: #000000;
-margin-left: 24px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43px;
+    color: #000000;
+    margin-left: 24px;
 }
 
 .featured-projects p {
-font-family: 'EB Garamond';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 29px;
-color: #000000;
-margin: 24px;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+    margin: 24px;
 }
 
 .project-languages {
