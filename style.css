@@ -3,7 +3,6 @@
 *{
     box-sizing: border-box;
     font-family: 'Satoshi-Variable';
-   
 }
 
 body{
@@ -12,9 +11,7 @@ body{
 
 /* About Me section */
 
-.cover-image{
-  width:100%;
-  height:auto;
+.cover-image-container{
   display: none;
 }
 
@@ -50,14 +47,14 @@ body{
 
 }
 
-.about-me-text h2{
+.about-me-text h1{
   font-weight: 700;
   font-size: 28px;
   margin:0;
   color: #0B24F5;
 }
 
-.about-me-text h1{
+.about-me-text h2{
   font-weight: 900;
   font-size: 32px;
   margin:0;
@@ -160,10 +157,8 @@ gap: 8px;
 .light-blue-bg-text{
   background-color: #2483E0;
 }
-
-/* for skills section */
 .green-bg-text{
-  background: #6DB486;
+  background: #6DB486; /* for skills section */
 }
 
 /* Featured Projects */
@@ -474,10 +469,18 @@ button{
 }
 
 /* breakpoints -- https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
-@media (min-width:768px) and (max-width:991px){
+/* @media (min-width:768px) and (max-width:991px){
+  .cover-image-container{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
   .cover-image{
-    display:flex;
-    justify-content: center;
+    width:100%;
+    height:412px;
+    margin:0;
+    object-fit:cover;
   }
 
   .intro-section{
@@ -487,8 +490,6 @@ button{
   .socialbtns ul{
     justify-content: space-evenly;
     align-items: flex-start;
-    
-    
   }
 
   .tech-section h2{
@@ -547,7 +548,7 @@ button{
     align-items: center;
     justify-content: center;
   }
-}
+} */
 
 
 
