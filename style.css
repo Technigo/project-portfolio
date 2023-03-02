@@ -4,13 +4,15 @@ header {
   min-height: 100vh;
 }
 
-h1 {
+h2 {
   font-family: "Satoshi-Bold";
   font-size: 80px;
   color: #0b24f5;
 }
 
 .my-name {
+  font-family: "Satoshi-Bold";
+  color: #0b24f5;
   font-size: 28px;
   margin-bottom: 0px;
 }
@@ -25,8 +27,8 @@ h1 {
   display: none;
 }
 
-.personal-info h2,
-h3 {
+.personal-info h3,
+h4 {
   margin: 0px;
 }
 .personal-info img {
@@ -35,19 +37,19 @@ h3 {
   margin-right: auto;
 }
 
-h2 {
+h3 {
   font-family: "Satoshi-Black";
   font-size: 32px;
 }
 
-h3 {
+h4 {
   font-family: "Satoshi-Medium";
   color: #565656;
   font-size: 24px;
   margin-bottom: 2rem;
 }
 
-h4 {
+h5 {
   font-family: "Satoshi-Black";
   font-size: 16px;
   text-align: center;
@@ -99,6 +101,8 @@ p {
 
 .featured-article {
   margin: auto;
+  border: solid red 1px;
+  margin-bottom: 80px;
 }
 
 .tag-list {
@@ -122,7 +126,6 @@ p {
   align-items: flex-start;
   padding: 0px;
   gap: 24px;
-  margin-bottom: 80px;
 }
 
 .view-demo-link,
@@ -186,7 +189,19 @@ p {
   filter: brightness(0%)
 }
 
-.skills-header {
+.code,
+.toolbox,
+.more,
+.upcoming {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-section h4 {
+  align-self: center;
+}
+
+.skills-section > div h4 {
   background: #eb5577;
   width: 65px;
   height: 36px;
@@ -195,19 +210,20 @@ p {
   font-size: 24px;
   color: #ffffff;
   text-align: center;
-  margin-top: 66px;
+  
+  margin-top: 66px
 }
 
-.skills-header:nth-of-type(2) {
+.skills-section > div:nth-of-type(2) h4 {
   background: #2483e0;
   width: 92px;
 }
 
-.skills-header:nth-of-type(3) {
+.skills-section > div:nth-of-type(3) h4 {
   background: #0b24f5;
 }
 
-.skills-header:nth-of-type(4) {
+.skills-section > div:nth-of-type(4) h4 {
   background: #6db486;
   width: 142px;
 }
@@ -240,7 +256,9 @@ p {
   margin: 0;
 }
 
-@media(min-width:376px) and (max-width:1279px) {
+/* Tablet */
+
+@media(min-width:744px) and (max-width:1279px) {
 
   .logo {
     display: flex;
@@ -272,4 +290,68 @@ p {
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  .article-image {
+    max-width: 184px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .featured-article {
+display: grid;
+grid-template-columns: repeat (4, 1fr);
+gap: 1em;
+  }
+
+.featured-article h2 {
+  margin: 0;
+}
+  .article-text {
+  grid-area: 1 / 2 / auto / 3;
+}
+
+.view-wrapper {
+  flex-direction: row;
+}
+
+
+.skills-section {
+display: grid;
+gap: 2rem;
+grid-template-columns: 2;
+grid-template-rows: 2;
+align-items: unset;
+}
+
+
+.code {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.toolbox {
+  grid-column-start: 2;
+}
+
+.more {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+.upcoming {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.skills-section h4 {
+  align-self: unset;
+}
+
+.skills li {
+  text-align: left;
+}
+
+.skills-header {
+  margin-top: 0;
+}
 }

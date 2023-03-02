@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./satoshi.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,14 +21,14 @@
   <body>
     <header>
       <section class="logo">
-        <img src="logo.svg" alt="logo">
+        <img src="logo.svg" alt="logo"> 
       </section>
       <section class="info-wrapper">
       <div class="personal-info">
       <img class="profile-picture" src="vio.jpg" alt="Close-up of Vio" />
       <h1 class="my-name">Vio Szabo</h1>
-      <h2>Front end developer</h2>
-      <h3>with a background in communications</h3>
+      <h3>Front end developer</h3>
+      <h4>with a background in communications</h4>
       </div>
       <div class="info-text">
       <p>
@@ -47,12 +48,12 @@
     </section>
       <a href class="scroll" src="">
       <img src="arrow.svg" alt="" />
-      <h4>Let's scroll</h4>
+      <h5>Let's scroll</h5>
     </a>
     </header>
     <main>
       <section class="tech">
-        <h1>Tech</h1>
+        <h2>Tech</h2>
         <p>
           HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
           Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
@@ -60,10 +61,12 @@
         </p>
       </section>
       <section class="featured">
-        <h1 class="centered">Featured projects</h1>
+        <h2 class="centered">Featured projects</h2>
         <article class="featured-article">
-          <img src="weatherapp.png" alt="weather from above" />
-          <h2>Chatbot built in JavaScript</h2>
+          <div class="article-image-wrapper">
+          <img src="weatherapp.png" class="article-image" alt="weather from above" /></div>
+          <div class="article-text">
+          <h3>Chatbot built in JavaScript</h3>
           <p>
             The chat bot app is a conversational AI-powered tool designed to
             enhance user experience by providing instant, personalized, and
@@ -85,13 +88,15 @@
               </button>
             </a>
             </div>
+          </div>
           </section>
         </article>
       </section>
       <section class="skills">
-        <h1 class="centered">Skills</h1>
+        <h2 class="centered">Skills</h2>
         <section class="skills-section">
-          <h3 class="skills-header">Code</h3>
+          <div class="code">
+          <h4 class="skills-header">Code</h4>
           <ul>
             <li>HTML5</li>
             <li>CSS3</li>
@@ -100,47 +105,60 @@
             <li>Styled Components</li>
             <li>GitHub</li>
           </ul>
-          <h3 class="skills-header">Toolbox</h3>
+        </div>
+        <div class="toolbox">
+          <h4 class="skills-header">Toolbox</h4>
           <ul>
             <li>Atom</li>
             <li>Postman</li>
             <li>Adobe Photoshop</li>
             <li>Adobe Illustrator</li>
             <li>Figma</li>
-            <li>GitHub</li>
           </ul>
-          <h3 class="skills-header">More</h3>
+        </div>
+        <div class="more">
+          <h4 class="skills-header">More</h4>
           <ul>
             <li>Design lead</li>
             <li>Branding</li>
             <li>Strategy</li>
             <li>Agile methodology</li>
           </ul>
-          <h3 class="skills-header">Upcoming</h3>
+        </div>
+        <div class="upcoming">
+          <h4 class="skills-header">Upcoming</h4>
           <ul>
             <li>Node.js</li>
             <li>Redux</li>
           </ul>
+        </div>
         </section>
       </section>
       <section class="contact-section">
-        <h1 class="contact-header">Time to talk</h1>
-        <div class="personal-info">
-        <img class="profile-picture" src="vio.jpg" alt="Close-up of Vio" />
-        <h1 class="my-name">Vio Szabo</h1>
-        <h2>Front end developer</h2>
-        <h3>+ author, with a background in communications</h3>
-        <p class="bottom-p">+46736383556</p>
-        <p class="bottom-p">vio@vioszabo.se</p>
-        <div class="social-media-links">
-          <a href="https://www.linkedin.com/in/vio-szabo/">
-            <img class="social-link" src="ln-grey.svg" alt="Linkedin profile" />
-          </a>
-          <a href="https://github.com/code-and-cats">
-            <img class="social-link" src="github-grey.svg" alt="GitHub profile"
-          /></a>
+        <h2 class="contact-header">Time to talk</h2>
+        <section class="info-wrapper">
+          <div class="personal-info">
+          <img class="profile-picture" src="vio.jpg" alt="Close-up of Vio" />
+          <h1 class="my-name">Vio Szabo</h1>
+          <h3>Front end developer</h3>
+          <h4>with a background in communications</h4>
+          </div>
+          <div class="info-text">
+          <p>
+            Vio is an exceptional developer known for their innovative solutions and
+            exceptional coding abilities. They create user-friendly applications and
+            solve complex issues with ease.
+          </p>
         </div>
-      </div>
+          <div class="social-media-links">
+            <a href="https://www.linkedin.com/in/vio-szabo/">
+              <img class="social-link" src="ln-grey.svg" alt="Linkedin profile" />
+            </a>
+            <a href="https://github.com/code-and-cats">
+              <img class="social-link" src="github-grey.svg" alt="GitHub profile"
+            /></a>
+          </div>
+        </section>
       </section>
     </main>
   </body>
