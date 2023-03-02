@@ -22,6 +22,10 @@ h1, h2, h3, h4{
     font-family: 'Montserrat', sans-serif
 }
 
+a{
+    text-decoration: none;
+}
+
 .logo{
     display: none;
    
@@ -147,13 +151,10 @@ height: 22.7px;
 
 
 }
-
-.techsister p{
+/*behöver lösa gap*/
+.techchild p{
    
-    grid-column: 1/2;
-    text-align: center;
-    
-    /*font-size: 22px;*/
+    font-size: 22px;
    
 }
 .js{
@@ -170,6 +171,8 @@ height: 22.7px;
 .mob{
     background-color: #12af2c;
 }
+
+
 .projects{
     display: grid;
     grid-template-columns: 1fr;
@@ -177,40 +180,51 @@ height: 22.7px;
     border: solid red;
 
 }
-.projects h3{
-    font-size: 32px;
-
-}
-
 
 .featured h2{
-    justify-self: center;
+   
     color: #0B24F5;
     font-size: 65px;
-    font-weight: 700px;
-    font-family: 'montserrat';
+    
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-
-.featured{
-    margin: 30px;
+.projects h3{
+    font-size: 32px;
+    
 }
 
 .articles p{
     width: 100%;
 height: 145px;
 
-font-family: 'EB Garamond';
-font-style: normal;
-font-weight: 400;
 font-size: 22px;
 line-height: 29px;
 
 color: #000000;
+
 }
 
 .articles{
-    margin: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.tags{
+    display: flex;
+  
+}
+
+.tags p{
+    color: white;
+    background-color: #000000;
+    margin: 4px;
+    padding: 2px 6px;
+    
+
 }
 .newssite{
     justify-self: center;
@@ -233,20 +247,26 @@ color: #000000;
    
 }
 
+.linksproject{
+
+display: flex;
+margin-bottom: 10px;
+align-content: center;
+
+}
 .gitbtn{
 display: flex;
 align-items: center;
-background-color: #EB5577;
-    color: #FFFFFF;
+background: #F5F5F5;
+    color: black;
     border-radius: 40px;
-    width: 200px;
+    width: 150px;
     height: 48px;
     border: none;
+    margin-right: 7px; 
+
 }
 
-.gitbtn p{
-    font-size: 20px;   
-}
 .gitbtn img {
     margin-right: 10px;
 }
@@ -257,12 +277,13 @@ background-color: #EB5577;
     display: flex;
     align-items: center;
    
-    background-color: #0b24f4;
-    color: #FFFFFF;
+    background-color: #F5F5F5;
+    color: black;
     border-radius: 40px;
     width: 164px;
     height: 48px; 
     border: none;
+   
 }
 .livebtn p{
     font-size: 20px;
@@ -280,26 +301,47 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     border: solid violet;
-    justify-items: center;
     background-color: #FCEDEA;
-}
-
-.mywords h2{
-    font-size: 72px;
-    font-weight: bold;
-    color: #EB5577;
-    text-align: center;
-}
-.mywords h3{
-    font-size: 32px;
-    font-weight: bold;
-   color: black;
+    height: 440px;
+    width:100%;
+   
 }
 
 .words{
-    margin: 30px;
+  display: grid;
+   align-items: center;
+   justify-items: center;
+}
+.words h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #EB5577;
+    
+  
+}
+.words h3{
+    font-size: 32px;
+    font-weight: bold;
+   color: black;
+
 }
 
+
+.words p{
+/*text-align: center;*/
+}
+.blog1{
+    display: grid;
+ 
+    
+
+}
+
+.blog2{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
 .bottom{
 display: grid;
 grid-template-columns: 1fr;
