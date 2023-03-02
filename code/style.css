@@ -40,7 +40,8 @@ h2 {
   font-family: 'Satoshi', sans-serif;
   font-size:32px;
   font-weight: 900;
-  padding:20px;
+  padding-top:20px;
+  padding-bottom: 20px;
 }
 .name{
   font-family: 'Satoshi', sans-serif;
@@ -60,6 +61,7 @@ h2 {
  display:flex;
  flex-direction: row;
  flex-wrap: wrap;
+ align-content: left;
  z-index: 1; 
  padding:10px;
  margin-top:40px;
@@ -81,11 +83,14 @@ h2 {
 .scroll-arrow {
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin-left:115px ;
+  margin-top:30px;
   color: #1D01A7;
   font-family: 'Satoshi', sans-serif;
   font-size: 16px;
   font-weight: 900;
+  max-width: 150px;
 }
 
 .down-arrow{
@@ -130,9 +135,10 @@ padding: 20px;
 margin:20px;
 }
 
-.chatbot-img, .weather-img, .guess-img, .microscope-img {
+.chatbot-img, .weather-img, .guess-img, .microscope-img, .lmx1b-img, .hol-img, .rdna-img {
   width: 330px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .chatbot-title, .weather-app, .guess-title{
@@ -142,10 +148,15 @@ margin:20px;
   margin-bottom: 20px;
   
 }
-
+.project-description {
+  font-family: 'EB Garamond';
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .git-button{
   width: 150px;
-  
   padding: 20px;
   margin-top: 20px;
   background-image: url("/assets/gitbutton.svg");
@@ -165,29 +176,140 @@ margin:20px;
   border:none;
   
 }
+.small-boxes{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 .small-box{
   background-color: black;
   color: white;
   font-family: 'Satoshi', sans-serif;
   font-size: 16px;
-  max-height: ;
-  max-width:40px;
-  display: flex;
-  flex-direction: row;
+  width:40px;
+  padding-left:10px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+ 
+  margin-left: 5px;
 }
-.my-words-container {
+.my-words-section {
   text-align: center;
   background-color: #20D252;
+  font-family: 'EB Garamond';
+  font-size: 22px;
+  font-weight: 400;
+  padding:20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.my-words-title{
+  font-family: 'Satoshi', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  padding:5px;
+  margin-bottom: 20px;
+  padding:20px
 }
 
+.my-words-subtitles{
+  font-family: 'Satoshi', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding:20px;
+}
+
+.article-button{
+  width: 150px;
+  padding: 20px;
+  background-color: #510337;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border:none;
+  color: white;
+  font-weight: 600;
+}
 
 .skills-container {
   background-color: #1D01A7;
   text-align: center;
   color: #ecf4f9;
+  padding:20px;
 }
 
+.skills-title{
+  font-family: 'Satoshi', sans-serif;
+  font-size: 60px;
+}
+
+.list-title-one {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 20px;
+  background-color: #20D252;
+  max-width: 100px;
+  color:black;
+  display:flex;
+  justify-content: center;
+  margin-left: 120px;
+  margin-top:25px;
+  margin-bottom:15px;
+}
+
+.list-title-two {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 20px;
+  max-width: 100px;
+  color:black;
+  background-color: aliceblue;
+  display:flex;
+  justify-content: center;
+  margin-left: 120px;
+  margin-top:25px;
+  margin-bottom:15px;
+}
+
+.talk-title {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  margin: 20px;
+  text-align: center;
+  color:#510337
+}
+
+.author-image-footer{
+  max-height: 150px;
+  border-radius: 50%;
+  border: #1D01A7 solid 5px;
+  margin-bottom: 50px;
+  margin-top:30px;
+}
+
+.contact-me-container{
+  font-family: 'EB Garamond';
+  font-size: 28px;
+  font-weight: 600;
+  padding:5px;
+  margin:20px;
+  line-height: normal;
+}
+
+.info{
+  padding:5px;
+  margin-top: 5px;
+}
+
+.botttom-logos{
+  margin-top: 40px;
+
+}
 
 
 @media screen {
