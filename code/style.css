@@ -26,20 +26,27 @@ h3 {
 
 h4 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: #565656;
   ;
 }
 
 /*** HEADER ***/
-.presentation-header {
+.header {
  margin: 0px 24px 0px 24px;
 }
 
-.presentation {
+.presentation-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.presentation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 252px;
 }
 
 .img-titles-container {
@@ -61,7 +68,7 @@ h4 {
 .titles {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 113px;
   margin-top: 34px;
 }
@@ -80,7 +87,7 @@ h4 {
   /*align-items: flex-end;*/
   width: 340px;
   padding: 0px;
-  margin-top: 40px;
+  margin: 40px 0px 0px 0px;
 }
 
 .icon {
@@ -100,7 +107,13 @@ h4 {
   font-size: 16px;
   font-weight: 900;
   color: #0B24F5;
-  margin: 30px 0px 84px 0px;
+  /*margin: 30px 0px 84px 0px;*/
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  /*margin: 0px;*/
+  width: 82px;
+  margin-left: -41px; 
 }
 
 .arrow {
@@ -113,9 +126,11 @@ h4 {
   margin: 3px 0px 19px 0px;
 }
 
-.logo-container {
+.quote-container {
   display: none;
 }
+
+
 
 /*** Tech section ***/
 .tech-container {
@@ -132,26 +147,56 @@ h4 {
 .tech-paragraph {
   font-family: 'EB Garamond';
   font-size: 22px;
+  font-weight: 400;
   line-height: 30px;
   margin-top: 40px;
 }
+
+.span-red {
+  background: #EB5577;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2px;
+}
+
+.span-green {
+  background:#6DB486;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2px;
+}
+
+.span-blue {
+  background: #2483E0;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2px;
+}
+
+
 
 /*** Featured projects section ***/
 .featured-projects {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
-  padding: 0px 24px 0px 24px;
+  margin: 60px 24px 0px 24px;
+  /*margin-top: 60px;
+  padding: 0px 24px 0px 24px;*/
 }
 
 .featured-projects-title {
-  font-size: 80px;
+  font-size: 72px;
   font-weight: 700;
   color: #0B24F5;
   margin-bottom: 64px;
 }
 
 .project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info {
   display: flex;
   flex-direction: column;
 }
@@ -228,6 +273,16 @@ margin-top: 24px;
   align-items: center;
   padding: 94px 24px 137px 24px;
   background: #FDF2E4;
+}
+
+.box-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-two {
+  display: flex;
+  flex-direction: column;
 }
 
 .skills-title {
@@ -332,7 +387,7 @@ margin-top: 24px;
   font-weight: 900;
   font-size: 55px;
   line-height: 78px;
-  margin-top: 64px;
+  margin: 64px 0px 56px 0px;
 }
 
 .profile-img-2 {
@@ -370,6 +425,7 @@ margin-top: 24px;
 
 @media (min-width: 667px) and (max-width: 1024px) {
 
+  /*** @media tablet - Quote section ***/
   .quote-container {
     display: flex;
     justify-content: center;
@@ -378,26 +434,33 @@ margin-top: 24px;
     height: 412px;
   }
   
-.quote {
+  .quote {
   font-family: 'EB Garamond';
   font-style: italic;
   font-size: 22px;
   color: #EB5577;
   line-height: 30px;
   width: 50%;
-}
+  }
 
-  .presentation-header {
+  /*** @media tablet - Header ***/
+  .header {
     display: flex;
     flex-direction: column-reverse;
     margin: 0px;
   }
 
-  .presentation {
+  .presentation-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 81px 102px 81px 102px;
+  }
+
+  .presentation-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .img-titles-container {
@@ -410,6 +473,15 @@ margin-top: 24px;
     margin-right: 29px;
   }
 
+  .presentation-paragraph {
+    padding-left: 40px;
+  }
+
+  .social-media-container {
+    margin-bottom: 81px;
+    padding-left: 40px;
+  }
+
   .scroll-down {
     margin: 0px;
   }
@@ -418,11 +490,351 @@ margin-top: 24px;
     margin: 3px 0px 0px 0px;
   }
   
+
+/*** @media tablet - Tech section ***/
+
+  .tech-container {
+    padding: 254px 24px 287px 24px;
+  }
+
+  .tech-paragraph {
+    width: 500px;
+    height: 91px; 
+    align-self: center;
+    margin: 60px 0px 0px 0px;
+  }
+
+
+  /*** @media tablet - Featured projects ***/
+
+  .featured-projects {
+  padding: 0px 24px 0px 24px;
+  margin-top: 120px;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    height: 280px;
+    margin: 0px 24px 80px 0px;
+  }
+  
+  .project-img {
+    width: 280px;
+    height: 280px;
+    object-position: 40% 60%;
+    margin-right: 24px;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .project-name {
+    margin-top: 5px;
+  }
+
+  .view-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+
+  .view-code {
+    margin-right: 24px;
+  }
+
+  /*** @media tablet - Skills section */
+  .skills-container {
+  align-items: ;
+  }
+
+  .skills-lists-container {
+    display: flex;
+    flex-direction: column;
+    padding: 94px 0px 0px 0px;
+    background: #FDF2E4;
+  }
+
+  .code-list-title {
+    margin: 0px 0px 16px 0px;
+  }
+
+  .box-one {
+    display: flex;
+    flex-direction: row;
+    gap: 66px;
+  }
+
+  .code-list {
+    align-items: flex-start;
+  }
+
+  .toolbox-list {
+    align-items: flex-start;
+  }
+
+  .box-two {
+    display: flex;
+    flex-direction: row;
+    gap: 74px;
+  }
+
+  .more-list {
+    align-items: flex-start;
+  }
+
+  .upcoming-list {
+    align-items: flex-start;
+  }
+
+
+  /*** @media tablet - Time to talk section */
+  .time-to-talk-title {
+    font-size: 115px;
+    margin-top: 196px;
+  }
+
+  .img-and-titles-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+    /*align-items: flex-start;*/
+  }
+
+  .profile-img-2 {
+    margin-right: 29px;
+  }
+
+  .contacts {
+    font-size: 32px;
+    line-height: 43px;
+    margin: 120px 0px 175px 0px;
+  }
+
+  .social-media-container-2 {
+    margin-bottom: 168px;
+  }
+
 }
 
 
-@media (min-width: 1025px)
+@media (min-width: 1025px) {
 
+  /*** @media desktop - Header ***/
+  .header {
+    display: flex;
+    flex-direction: row;
+    height: 980px;
+    margin: 0px;
+  }
+
+  .presentation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  .presentation-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 252px 50px 0px 50px;
+    /*width: 540px;*/
+  }
+
+  .img-titles-container {
+    flex-direction: row;
+    margin: 0px;
+    /*align-items: flex-start;*/
+  }
+
+  .profile-img {
+    margin-right: 29px;
+  }
+
+  .presentation-paragraph {
+    padding-left: 40px;
+  }
+
+  .social-media-container {
+    margin-top: 58px;
+    padding-left: 40px;
+  }
+
+  .quote-container {
+    display: flex;
+    justify-content: center;
+    background: #FCEDEA;
+    /*height: 412px;*/
+    width: 50%;
+  }
+  
+  .quote {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-size: 24px;
+  color: #EB5577;
+  padding-top: 320px;
+  line-height: 40px;
+  width: 60%;
+  }
+
+  /*.scroll-down {
+    same as mobile
+    top: 80%;
+    left: 50%;
+  }*/ 
+
+  .underline {
+    margin: 3px 0px 0px 0px;
+  }
+  
+/*** @media desktop - Tech section ***/
+
+  .tech-container {
+    padding: 254px 24px 287px 24px;
+  }
+
+  .tech-paragraph {
+    width: 500px;
+    height: 91px; 
+    align-self: center;
+    margin: 60px 0px 0px 0px;
+  }
+
+
+  /*** @media desktop - Featured projects ***/
+
+  .featured-projects {
+    width: 820px;
+    margin: 0 auto;
+  }
+  
+  .featured-projects-title {
+    margin-top: 120px;
+  } 
+
+  .project-container {
+    flex-direction: row;
+    height: 280px;
+    margin: 0px 24px 120px 0px;
+  }
+  
+  .project-img {
+    width: 280px;
+    height: 280px;
+    object-position: 40% 60%;
+    margin-right: 24px;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .project-name {
+    margin-top: 5px;
+  }
+
+  .view-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+
+  .view-code {
+    margin-right: 24px;
+  }
+
+  /*** @media desktop - Skills section */
+
+  . .skills-container {
+    padding: 120px 0px 218px 0px;
+  }
+
+  .skills-lists-container {
+    display: flex;
+    flex-direction: row;
+    padding: 79px 0px 0px 0px;
+    background: #FDF2E4;
+  }
+
+  .code-list-title {
+    margin: 0px 0px 16px 0px;
+  }
+
+  .box-one {
+    display: flex;
+    flex-direction: row;
+    /*gap: 66px;*/
+  }
+
+  .code-list {
+    align-items: flex-start;
+    margin-right: 66px;
+  }
+
+  .toolbox-list {
+    align-items: flex-start;
+    margin-right: 66px;
+  }
+
+  .box-two {
+    display: flex;
+    flex-direction: row;
+    /*gap: 74px;*/
+  }
+
+  .more-list {
+    align-items: flex-start;
+    margin-right: 66px;
+  }
+
+  .upcoming-list {
+    align-items: flex-start;
+  }
+
+  /*** @media desktop  - Time to talk section */
+
+  /*.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 81px 102px 81px 102px;
+  }*/
+
+  .time-to-talk-title {
+    font-size: 120px;
+    margin-top: 196px;
+  }
+
+  .img-and-titles-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+    /*align-items: flex-start;*/
+  }
+
+  .profile-img-2 {
+    margin-right: 29px;
+  }
+
+  .contacts {
+    font-size: 32px;
+    line-height: 43px;
+    margin: 120px 0px 175px 0px;
+  }
+
+  .social-media-container-2 {
+    margin-bottom: 168px;
+  }
+
+}
 
 /*
 header two-colored background for desktop
