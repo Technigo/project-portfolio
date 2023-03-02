@@ -1,9 +1,22 @@
 /*///////////////////////////// FONTS AND BODY //////////////////////////*/
 
 @font-face {
-    font-family: "Satoshi";
-    src: url('https://www.fontshare.com/fonts/satoshi');
-}
+    font-family: SatoshiBold;
+    font-weight: bold;
+    src: url('./fonts/Satoshi/Fonts/OTF/Satoshi-Bold.otf');
+  }
+  
+  @font-face {
+    font-family: SatoshiMedium;
+    font-weight: medium;
+    src: url('./fonts/Satoshi/Fonts/OTF/Satoshi-Medium.otf');
+  }
+  
+  @font-face {
+    font-family: SatoshiBlack;
+    font-weight: bolder;
+    src: url('./fonts/Satoshi/Fonts/OTF/Satoshi-Black.otf');
+  }
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
@@ -50,20 +63,25 @@ body {
 
 h1 {
     font-size: 28px;
+    line-height: 100%;
     color: #0B24F5;
     font-weight: 700;
-    font-family:
+    font-family: SatoshiBold;
 }
 
 h2 {
     font-size: 32px;
+    line-height: 100%;
     font-weight: 900;
+    font-family: SatoshiBlack;
 }
 
 h3 {
     color: #565656;
-    font-size: 24;
+    font-size: 24px;
+    line-height: 100%;
     font-weight: 500;
+    font-family: SatoshiMedium;
 }
 
 p {
@@ -118,6 +136,7 @@ h4 {
     color: #0B24F5;
     text-align: center;
     padding: 70px;
+    font-family: SatoshiBold;
 }
 
 /*/////////////////////////////////// FEATURED PROJECTS PART /////////////////////////////////////////*/
@@ -131,6 +150,8 @@ h4 {
 
 .featured-projects h4 {
     font-size: 60px;
+    font-family: SatoshiBold;
+
 }
 
 /*-----------------ALL THE PROJETS CSS----------------*/
@@ -176,6 +197,27 @@ h5 {
     font-size: 16px;
 }
 
+.rounded-button-pink:hover {
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.rounded-button-pink img {
+    width: 32px;
+    height: 32px;
+    filter: invert(0%) sepia(8%) saturate(7500%) hue-rotate(355deg) brightness(103%) contrast(110%);
+}
+
+.rounded-button-pink img:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(103%) contrast(103%);
+}
 /* BLUE BUTTON */
 
 .rounded-button-blue {
@@ -207,6 +249,7 @@ h5 {
 .my-words h4 {
   color: #EB5577;
   padding: 40px;
+  font-family: SatoshiBold;
 }
 
 /*////////////////////////////////////// SKILLS ////////////////////////////////////////////////////*/
@@ -281,6 +324,22 @@ h5 {
     color: white;
 }
 
+/*/////////////////////////////////// TIME TO TALK ////////////////////////////////////////////////////*/
+
+.timetotalk-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.timetotalktext h4 {
+    text-align: center;
+    justify-content: center;
+    color: #EB5577;
+    font-family: SatoshiBold;
+    display: inline-block;
+    padding: 40px;
+}
+
 /*/////////////////////////////////// MEDIA QUERIES ////////////////////////////////////////////////////*/
 
 /* ----------- MEDIA QUARRIES FOR TABLETS ---------*/
@@ -289,6 +348,7 @@ h5 {
 
     .head-picture img {
         width: 100%;
+        height: 412px;
         display: block;
         object-fit: cover;
     }
@@ -400,8 +460,7 @@ h5 {
     }
 
     .chatbottext {
-        padding: 26px;
-        padding: 5px 26px 26px 26px;
+        padding: 0px 26px 26px 26px;
     }
 
     .weather-app {
@@ -410,7 +469,7 @@ h5 {
     }
 
     .weatherapptext {
-        padding: 5px 26px 26px 26px;
+        padding: 0px 26px 26px 26px;
     }
 
     .guess-who-the-game {
@@ -418,8 +477,7 @@ h5 {
         margin-top: 20px;;
     }
     .guesswhotext {
-        padding: 26px;
-        padding: 5px 26px 26px 26px;
+        padding: 0px 26px 26px 26px;
     }
 }
     
@@ -542,5 +600,8 @@ h5 {
     .skills {
         align-items: center;
         justify-content: center;
-
     }
+   .timetotalktext {
+
+   }
+}
