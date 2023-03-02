@@ -299,14 +299,15 @@ address {
     display: grid;
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: auto;
+    column-gap: 10px;
 }
 
-.intro img {
-    grid-column: 1/span 2;
-    align-self: center;
+.intro img, .contact img {
+    align-self: start;
+    margin: 0;
 }
 
-.intro-text {
+.intro-text, address {
     grid-column: 2/span 4;
 }
 
@@ -316,6 +317,7 @@ address {
 
 .some-icon {
     grid-column: 2/5;
+    justify-self: start;
 }
 
 .tech h2, p {
@@ -323,36 +325,46 @@ address {
 }
 
 .featured-projects {
-    grid-column: 1/span 5;
+    display: grid;
+
 }
 
 .featured-projects h2{
-    grid-column: 2/span 3;
-    align-self: start;
+    grid-column: 1/ span 5;
+    justify-items: center;
 }
 
 .project {
-    grid-column: 1/span 5;
+    grid-template-columns: repeat(5 1fr);
 }
 
 .project img {
-    grid-column: 1/span 2;
+    grid-column: 1/ span 2;
+}
+
+.project-text p{
+    grid-column: 3/4;
+}
+
+.my-words {
+    display: block;
 }
 
 .skills {
-    grid-row: repeat (5, 1fr);
+    display: block;
 }
 
-.skills h2{
-    grid-column: 2/span 3;
+.skills span {
+    display: block;
 }
 
-.skills p, span {
-    grid-column: 1/span 4;
-    grid-row: auto;
-    justify-items: start;
+.contact h6 {
+    grid-column: 1/ span 5;
+    justify-self: center;
 }
 
+address {
+    justify-self: start;
 }
 
 @media only screen and (min-width: 992px)
