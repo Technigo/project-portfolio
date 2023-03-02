@@ -1,5 +1,11 @@
 @import url('./Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf');
 
+/* font EB Garamon, ej importerad än....? */
+
+body {
+    margin: 0 auto;
+}
+
     /* Fontsizes delcared */
 h1 {
     font-size: 80px;
@@ -7,13 +13,11 @@ h1 {
 }
 
 h2 {
-    width: 303px;
-    height: 43px;
+    height: fit-content;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
-    line-height: 43px;
     margin: 0;
     color: #000000;
 }
@@ -48,33 +52,30 @@ p {
     /* First page */
 
 .firstpagecontainer {
-    display: flex;
-}
-
+        /* display: flex; */
+    }
+    
 .topleftbox {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    height: 980px;
-    left: 0px;
-    top: 0px;
+    align-items: center;
+    height: fit-content;
     background: #FFFFFF;
+        
 }
-
+    
 .presentationcontainer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+    
+/* felpositionerad, ej i linje med text under */
 .presentationcontainerchild {
     display: flex;
     flex-direction: column;
-    margin-left: 29px;
-}
-
-.introduction {
-    margin-left: 19%;
-    margin-right: 15%;
+    width: 80.8%;
+    margin-bottom: 40px;
 }
 
 .imgLT {
@@ -82,69 +83,310 @@ p {
     height: 164px;
     border-radius: 50%;
     background: #D9D9D9;
-    margin-left: 13.5%;
+    margin-top: 55px;
 }
 
-.fa {
-    width: 32px;
-    height: 32px;
-    color: #D0D0D0;
-    display: flex;
-    margin-right: 5%
-}
-
-.fa:hover {
-    color:black;
-}
-
-.toprightbox {
-    width: 50%;
-    height: 980px;
-    contain: content;
-}
-
-    /* Positioning not complete on this!!! */
-.letsScroll {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-   }
-
-   /* Second page */
-
-.tech {
-    height: 800px;
-    width: 100%;
-    background-color: #EDFFFF;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.techdescription {
-    font-size: 22px;
+.introduction {
+    width: 80.8%;
     font-family: 'EB Garamond';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
+    line-height: 29px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+    
+
+    
+.toprightbox {
+    display: none;
+        /* width: 50%;
+        height: 980px;
+        contain: content; */
+}
+
+.letsScroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.arrowImg {
+    align-items: center;
+}
+
+    /* page 2 */
+
+.tech {
+    height: 530px;
+    background-color: #EDFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.techdescription {
+    width: 279px;
+    height: 160px;
+    font-size: 22px;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
     line-height: 32px;
-    margin-right: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
 }
 
 .pinkbkgrnd {
     color: #FFFFFF;
     background-color: #EB5577;
+    height: fit-content;
 }
 
 .darkbluebkgrnd {
     color: #FFFFFF;
     background-color: #0B24F5;
+    height: fit-content;
 }
 
 .lightbluebkgrnd {
     color: #FFFFFF;
-    background-color: ;
+    background-color: #2483E0;
+    height: fit-content;
 }
-   /*  Buttons-related! */
 
-  
+    /* Page 3 */
+
+.featuredProjects {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 6.4%;
+    margin-right: 6.4%;
+    height: fit-content;
+    justify-content: center;
+}
+
+.ftprojectheader {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
+}
+
+.ftprojectimg {
+    height: auto;
+    max-height: 280px;
+    max-width: 100%;
+ }
+
+.ftprojectdiv {
+    max-width: 100%;
+    height: fit-content;
+}
+
+.ftprojectdescription {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    align-self: stretch;
+}
+
+.blackbkgrnd {
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+    /* Page 4 */
+
+.mywords {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: fit-content;
+    justify-content: center;
+    background: #FCEDEA;
+}
+
+.mywordstitle {
+    /* left: calc(50% - 325px/2 - 1px);
+    top: calc(50% - 97px/2 - 1957.5px); */
+    margin-left: 6.4%;
+    margin-right: 6.4%;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    color: #EB5577;
+}
+
+.articlediv {
+    margin-left: 6.4%;
+    margin-right: 6.4%;
+}
+
+    /* felpositionerad även denna img */
+.articleimg {
+    height: auto;
+    max-height: 280px;
+    max-width: 100%;
+    align-content: center;
+ }
+
+.pink {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: #EB5577;
+}
+
+.articleshort {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+}
+
+    /* page 5 */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: fit-content;
+    justify-content: center;
+    background: #FDF2E4;
+    padding-bottom: 137px;
+}
+
+.skillstitle {
+    margin-left: 6.4%;
+    margin-right: 6.4%;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skillschild {
+    text-align: center;
+    height: fit-content;
+    margin-left: 6.4%;
+    margin-right: 6.4%;
+}
+
+.skillsubgrptitle {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.greenbkgrnd {
+    width: 138px;
+    height: 32px;
+    line-height: 32px;
+    color: #FFFFFF;
+    background-color: #6DB486;
+
+}
+
+    /* Page 5 */
+
+.contact {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: fit-content;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 6.4%;
+    padding-right: 6.4%;
+    padding-bottom: 10%;
+}
+
+.contactTitle {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 78px;
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 0;
+    color: #EB5577;
+}
+
+.footerpresentation {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 40px;
+    
+}
+
+a, .contactinformation {
+    color: #000000;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.contactinformation {
+    margin-bottom: 10%;
+}
+
+   /*  Buttons/Icon-related! */
+
+.articleBtn {
+    margin-bottom: 95px;
+}
+
+.ldviewbuttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.fa-x3 .githubBtn {
+    color: #000000;
+    background-color: #F5F5F5;
+}
+
+.fa-x3:hover .githubBtn:hover {
+    color: #FFFFFF;
+    background-color: #0B24F5;
+}
+
+.fa-lg {
+    width: 32px;
+    height: 32px;
+    color: #D0D0D0;
+    display: flex;
+    margin-right: 41px;
+    margin-top: 35px;
+}
+
+.fa-lg:hover {
+    color:black;
+}
+
+/* Desktop view...  
