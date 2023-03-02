@@ -7,28 +7,26 @@
     <meta property ="og: title" content="Andreas Axelsson Web Dev Portfolio"/>
     <meta property ="og: description" content="This is the portfolio page of Andreas Axelsson. It shows projects and skills."/>
     <meta property ="og: image" content="https://placehold.com/400"/>
-    <link href="https://ap1.fontshare.com/v2/css?f[]=satoshi@700,500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Andreas Axelsson Web Dev Portfolio</title>
+    <title>Andreas Axelsson's Web Development Portfolio - showcasing projects and skills</title>
 </head>
 <body>
 
 <!--////////////////////////////// HEADER PICTURE SHOWN IN LAPTOPS/WIDESCREENS///////////////////////////-->
 
-<header>
+<header role="banner">
     <section class="laptopheader">
         <div class="head">
             <div class="head-picture">
-                <img src="./pictures/familj.JPG" alt="Photograph of Andreas family" aria-describedby="The picture of my family makes a part of the header">
+                <img src="./pictures/familj.JPG" alt="Photograph of Andreas family">
             </div>
         </div>
 
 <!--/////////////////////////////// INTRODUCTION PERSONAL INFO AND PROFILE PIC ///////////////////////////-->
-
 
         <section class="laptopinfo">
             <section class="personal-info">
@@ -48,21 +46,21 @@
                     coding abilities. He creates user-friendly applications and solves complex issues with ease. 
                     His drive for excellence makes her a valuable asset to any project and a standout in the technology field.
                 </p>
-                <nav>
-                    <div class="linkbar">
-                        <a href="https://www.linkedin.com/in/andreas-axelsson-042588253/" title="Link to Andreas Axelsson's LinkedIn profile">
+                <nav role="social media and work links" aria-label="linkbar">
+                    <ul class="linkbar">
+                        <li><a href="https://www.linkedin.com/in/andreas-axelsson-042588253/" title="Link to Andreas Axelsson's LinkedIn profile" aria-label="Link to Andreas LinkedIn profile">
                             <img src="./pictures/linkedin.svg" alt="Linked-In icon">
-                        </a>
-                        <a href="https://github.com/PerErikAndreas" title="Link to Andreas Axelsson's GitHub profile">
+                        </a></li>
+                        <li><a href="https://github.com/PerErikAndreas" title="Link to Andreas Axelsson's GitHub profile" aria-label="Link to Andreas GitHub profile">
                             <img src="./pictures/github.svg" alt="GitHub icon">
-                        </a>
-                        <a href="https://stackoverflowteams.com/c/technigo/users/450/?tab=profile" title="Link to Andreas Axelsson's Stack-Overflow profile">
+                        </a></li>
+                        <li><a href="https://stackoverflowteams.com/c/technigo/users/450/?tab=profile" title="Link to Andreas Axelsson's Stack-Overflow profile" aria-label="Link to Andreas Stack-Overflow">
                             <img src="./pictures/stack-overflow.svg" alt="Stack-Overflow icon">
-                        </a>
-                        <a href="https://www.instagram.com/pererikandreas/?hl=en" title="Link to Andreas Axelsson's Instagram profile">
+                        </a></li>
+                        <li><a href="https://www.instagram.com/pererikandreas/?hl=en" title="Link to Andreas Axelsson's Instagram profile" aria-label="Link to Andreas Instagram profile">
                             <img src="./pictures/instagram.svg" alt="Instagram icon">
-                        </a>
-                    </div>
+                        </a></li>
+                    </ul>
                 </nav>
             </section>
         </section>
@@ -71,9 +69,9 @@
 <!--////////////////////////////////// VECTOR PIL (LETS SCROLL) ////////////////////////////////////////-->
 
     <div class="vector-pil">
-        <img src="./pictures/Arrowpicture.svg" alt="Down arrow, indicating scroll direction" aria-describedby="scroll down">
+        <img src="./pictures/Arrowpicture.svg" alt="Down arrow, indicating scroll direction" aria-label="scroll down arrow">
         <h6>Lets scroll</h6>
-        <img src="./pictures/blueline.svg" alt="Line under Lets Scroll text" aria-describedby="For enfecise that theres more if you scroll">
+        <img src="./pictures/blueline.svg" alt="Line under Lets Scroll text" aria-label="For enfecise that theres more if you scroll">
     </div>
 </header>
 
@@ -82,7 +80,7 @@
 <main>
     <section class="techskills">
         <div class="techtitle">
-            <h4 aria-describedby="This part shows what Andreas Techskills are">Tech</h4>
+            <h4>Tech</h4>
         </div>
         <div class="thingsiknow">
             <p>
@@ -100,19 +98,20 @@
         <h4 class="featured-projects">Featured Projects</h4>
 
     <!-- CHATBOT -->
-
+    
+        <article>
         <div class="chatbot">
             <div class="chatbot picture">
                 <img class="project-images" src="./pictures/chatbotprintscreen.png" alt="Picture of a chatbot">
             </div>
             <div class="chatbottext">
-                <h5 aria-describedby="This part tells more about the chatbot project">Chatbot built in javascript</h5>
+                <h5>Chatbot built in javascript</h5>
                     <p> 
                         The chat bot app is a conversational AI-powered tool designed 
                         to enhance user experience by providing instant, 
                         personalized, and automated responses to user inquiries.<br>
                     </p>
-                    <div class="blackbackgroundbuttons-selection" aria-describedby="This part shows what coding language used in this perticular project">
+                    <div class="blackbackgroundbuttons-selection">
                         <p>
                             <span class="blackbackgroundbuttons">HTML5</span>
                             <span class="blackbackgroundbuttons">CSS3</span>
@@ -120,32 +119,34 @@
                             <span class="blackbackgroundbuttons">Node</span>
                         </p>
                     </div>
-                <button class="rounded-button-pink" type="button">
+                <button class="rounded-button-pink" type="button" aria-label="Git hub link">
                     <a href="https://github.com/PerErikAndreas/project-chatbot" target="_blank" title="Link to Andreas chatbot on GitHub">
                         <img src="./pictures/View-Code-Button.svg" alt="GitHub icon">
                     </a>
                 </button>
-                <button class="rounded-button-blue" type="button">
+                <button class="rounded-button-blue" type="button" aria-label="Git hub link">
                     <a href="https://github.com/PerErikAndreas/project-chatbot" target="_blank" title="Link to Andreas chatbot on GitHub">
                         <img src="./pictures/Live-Demo-Button.svg" alt="GitHub icon">
                     </a>
                 </button>
             </div>
         </div>
+        </article>
 
     <!-- WEATHER APP -->
 
+        <article>
         <div class="weather-app">
             <div class="weatherapp picture">
                 <img class="project-images" src="./pictures/weather.jpg" alt="Picture the Weather App">
             </div>
             <div class="weatherapptext">
-                <h5 aria-describedby="This part tells more about the Weather App project">Weather app</h5>
+                <h5>Weather app</h5>
                     <p> 
                         In this pair-programing project we made a weather app to our beloved capital.
                         This was possible thanks to the OpenWeather API.
                     </p>
-                    <div class="blackbackgroundbuttons-selection" aria-describedby="This part shows what coding language used in this perticular project">
+                    <div class="blackbackgroundbuttons-selection">
                         <p>
                             <span class="blackbackgroundbuttons">HTML5</span>
                             <span class="blackbackgroundbuttons">CSS3</span>
@@ -153,21 +154,23 @@
                             <span class="blackbackgroundbuttons">Node</span>
                         </p>
                     </div>
-                    <button class="rounded-button-pink">
+                    <button class="rounded-button-pink" aria-label="Git hub link">
                         <a href="https://github.com/PerErikAndreas/project-chatbot" title="Link to Andreas chatbot on GitHub">
                             <img src="./pictures/github.svg" alt="GitHub icon">View the Chatbot code
                         </a>
                     </button>
-                    <button class="rounded-button-blue">
+                    <button class="rounded-button-blue" aria-label="Git hub link">
                         <a href="https://github.com/PerErikAndreas/project-chatbot" title="Link to Andreas chatbot on GitHub">
                             <img src="./pictures/github.svg" alt="GitHub icon">View the Chatbot code
                         </a>
                     </button>
             </div>
         </div>
+        </article>
 
     <!-- GUESS WHO GAME -->
 
+        <article>
         <div class="guess-who-the-game">
             <div class="guesswho picture">
                 <img class="project-images" src="./pictures/guesswho.png" alt="Picture the Guess who-game">
@@ -179,7 +182,7 @@
                 to enhance user experience by providing instant, personalized, 
                 and automated responses to user inquiries.
                 </p>
-                <div class="blackbackgroundbuttons-selection" aria-describedby="This part shows what coding language used in this perticular project">
+                <div class="blackbackgroundbuttons-selection">
                     <p>
                         <span class="blackbackgroundbuttons">HTML5</span>
                         <span class="blackbackgroundbuttons">CSS3</span>
@@ -187,17 +190,18 @@
                         <span class="blackbackgroundbuttons">Node</span>
                     </p>
                 </div>
-                <button class="rounded-button-pink">
+                <button class="rounded-button-pink" aria-label="Git hub link">
                     <a href="https://github.com/PerErikAndreas/project-chatbot" title="Link to Andreas chatbot on GitHub">
                         <img src="./pictures/github.svg" alt="GitHub icon">View the Chatbot code
                     </a>
                 </button>
-                <button class="rounded-button-blue">
+                <button class="rounded-button-blue" aria-label="Git hub link">
                     <a href="https://github.com/PerErikAndreas/project-chatbot" title="Link to Andreas chatbot on GitHub">
                         <img src="./pictures/github.svg" alt="GitHub icon">View the Chatbot code
                     </a>
                 </button>
             </div>
+        </article>
         </div>
     </section>
 
@@ -269,21 +273,21 @@
             +46(0)702444938<br>
             pererikandreas@gmail.com
         </h3>
-        <nav>
-            <div class="linkbar">
-                <a href="https://www.linkedin.com/in/andreas-axelsson-042588253/" title="Link to Andreas Axelsson's LinkedIn profile">
+        <nav role="social media and work links" aria-label="linkbar">
+            <ul class="linkbar">
+                <li><a href="https://www.linkedin.com/in/andreas-axelsson-042588253/" title="Link to Andreas Axelsson's LinkedIn profile" aria-label="Link to Andreas LinkedIn profile">
                     <img src="./pictures/linkedin.svg" alt="Linked-In icon">
-                </a>
-                <a href="https://github.com/PerErikAndreas" title="Link to Andreas Axelsson's GitHub profile">
+                </a></li>
+                <li><a href="https://github.com/PerErikAndreas" title="Link to Andreas Axelsson's GitHub profile" aria-label="Link to Andreas GitHub profile">
                     <img src="./pictures/github.svg" alt="GitHub icon">
-                </a>
-                <a href="https://stackoverflowteams.com/c/technigo/users/450/?tab=profile" title="Link to Andreas Axelsson's Stack-Overflow profile">
+                </a></li>
+                <li><a href="https://stackoverflowteams.com/c/technigo/users/450/?tab=profile" title="Link to Andreas Axelsson's Stack-Overflow profile" aria-label="Link to Andreas Stack-Overflow">
                     <img src="./pictures/stack-overflow.svg" alt="Stack-Overflow icon">
-                </a>
-                <a href="https://www.instagram.com/pererikandreas/?hl=en" title="Link to Andreas Axelsson's Instagram profile">
+                </a></li>
+                <li><a href="https://www.instagram.com/pererikandreas/?hl=en" title="Link to Andreas Axelsson's Instagram profile" aria-label="Link to Andreas Instagram profile">
                     <img src="./pictures/instagram.svg" alt="Instagram icon">
-                </a>
-            </div>
+                </a></li>
+            </ul>
         </nav>
     </section>
 </footer>
