@@ -338,6 +338,12 @@ gap: 20px;
     justify-content: center;
   }
 
+  .logo img {
+    max-width: 360px;
+    height: 100%;
+    margin: auto;
+  }
+
   header {
     height: 60vh;
     display: flex;
@@ -523,3 +529,32 @@ align-items: unset;
 }
 
 /* Desktop normal */
+@media(min-width: 1280px) and (max-width: 1511px) {
+
+.desktop-view {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+}
+
+.logo {
+  grid-column-start: 2;
+  grid-row-start: 1;
+ display: flex;
+    background-color: #FCEDEA;
+    height: 980px;
+}
+
+.logo img {
+  max-width: 436px;
+  height: 100%;
+  margin: auto;
+  
+}
+
+header {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  height: 980px;
+}
+}
