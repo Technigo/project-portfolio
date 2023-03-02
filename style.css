@@ -1,4 +1,4 @@
-/* Styling for Fonts */
+/* Defining Fonts */
 
 @font-face {
     font-family: SatoshiBlack;
@@ -81,7 +81,89 @@ p {
     text-align: justify;
 }
 
-/* Styling for Header Section */
+/* Links and Buttons */
+
+a:link {
+    text-decoration: none;
+    /* color: black; */
+}
+
+a:visited {
+    text-decoration: none;
+    /* color: black; */
+}
+
+a:hover {
+    text-decoration: none;
+    cursor:pointer;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+button {
+    font-family: SatoshiRegular;
+    font-size: 20px;
+    border-radius: 25px;
+    margin: 15px 0;
+    padding: 10px;
+    display: flex;
+    /* background-color:lightgray;
+    border: lightgray 1px solid; */ 
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Button Icons */
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    padding-right: 5px;
+}
+
+.code-button-icon {
+    width: 24px;
+    height: 24px;
+    padding-right: 5px;
+}
+
+/* The Scroll Arrow */
+
+.scroll-wrapper {
+    margin: 30px 15px;
+    display:flex;
+    flex-direction: column;
+}
+
+.scroll-wrapper p {
+    text-align: center;
+    /* color:blue; */
+    font-family: SatoshiBlack;
+    font-size: 16px;
+}
+
+.scroll-wrapper .material-symbols-outlined {
+    /* color:blue; */
+    text-align: center;
+}
+
+/* Header Image for Tablet and Larger */
+
+.header-img {
+    display: none;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+/* Header Section */
 
 header{
     display:grid;
@@ -120,54 +202,37 @@ header h3{
     opacity: 1;
 }
 
-.scroll-wrapper {
-    margin: 30px 15px;
-    display:flex;
-    flex-direction: column;
-}
-
-.scroll-wrapper p {
-    text-align: center;
-    /* color:blue; */
-    font-family: SatoshiBlack;
-    font-size: 16px;
-}
-
-.scroll-wrapper .material-symbols-outlined {
-    /* color:blue; */
-    text-align: center;
-}
-
-/* Styling for Tech Section */
+/* Tech Section */
 
 .tech-section {
     margin: 75px 15px;
     box-sizing: border-box;
 }
 
-/* Styling for Featured Projects Section */
+/* Featured Projects Section */
 
 .featured-projects {
     margin: 75px 0;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 15px;
 }
 
-ul.each-project{
-    list-style-type: none;
+.each-project{
     padding: 0;
     margin: 15px;
     max-width: 100%;
 }
 
 .project-img {
-    width: 90%;
+    width: 95%;
+    max-width: 350px;
     height: 200px;
     object-fit: cover;
-    border: 2px black solid;
+    border: 1px black solid;
 }
+
 .project-tech {
     font-family: SatoshiMedium;
     font-size: 16px;
@@ -177,43 +242,18 @@ ul.each-project{
     color: white;
 }
 
-button {
-    font-family: SatoshiRegular;
-    font-size: 20px;
-    border-radius: 25px;
-    margin: 15px 0;
-    padding: 10px;
-    display: flex;
-    /* background-color:lightgray;
-    border: lightgray 1px solid; */ 
-}
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24;
-    padding-right: 5px;
-}
-
-.code-button-icon {
-    width: 24px;
-    height: 24px;
-    padding-right: 5px;
-}
-
-/* Styling for My Words */
+/* My Words */
 
 .my-words {
     margin: 75px 0;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: none; 
+    /* use display: flex; when showing */
+    flex-direction: column;
     gap: 15px;
 }
 
-ul.my-words-list{
+.my-words-list{
     list-style-type: none;
     padding: 0;
     margin: 15px;
@@ -223,7 +263,7 @@ ul.my-words-list{
     margin: 5px 0 15px 0;
 }
 
-/* Styling for Skills List */
+/* Skills List */
 
 .skills-section {
     margin: 75px 0;
@@ -240,7 +280,7 @@ ul.skills-list{
     margin: 5px 0;
 }
 
-/* Styling for Contact Me */
+/* Time to Talk */
 
 .contact-me {
     display:grid;
@@ -248,16 +288,30 @@ ul.skills-list{
     margin: 0 15px;
 }
 
-.contact-me h2{
+.contact-profile-pic {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit:cover;
+    place-self: center;
+    margin: 40px 0;
+}
+
+.contact-me h1 {
+    text-align: center;
+}
+
+.contact-me h2 {
     font-family: SatoshiBlack;
     font-size: 50px; 
 }
 
-.contact-me h3{
+.contact-me h3 {
     margin: 0 0 30px 0;
+    text-align: center;
 }
 
-.contact-icons-wrapper {
+.contact-icons-wrapper-bottom {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -276,11 +330,176 @@ ul.skills-list{
 }
 
 
+@media (min-width:667px) and (max-width:1024px) {
 
-.header-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
+/* Header for Tablet */
+
+    .header-img {
+        display:flex;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        margin: 0 0 50px 0;
+        }
+
+    header{
+        display:grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 200px [row-start] 200px [row-start] 80px [row-start];
+        margin: 0 75px;
+    }
+    
+    .profile-pic {
+        grid-column: 1 / 2;
+        align-self: center;
+        justify-self: end;
+        margin: 40px 15px; 
+    }
+
+    .name-title {
+        display: grid;
+        align-content: center;
+    }
+
+    .self-intro {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+        display: grid;
+        align-items: center;
+    }
+    
+    .contact-icons-wrapper {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+
+    }
+
+/* Tech Section for Tablet */
+
+    .tech-section p {
+        margin: 1em 75px;
+    }
+
+/* Featured Projects for Tablet */
+
+    .featured-projects {
+        margin: 75px 0;
+        box-sizing: border-box;
+        display: grid;       
+    }
+    
+    .each-project{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 75px [row-start] 225px [row-start] 45px [row-start] 80px [row-start];
+        margin: 15px;
+        gap: 2px;
+    }
+    
+    .project-img {
+        width: 80%;
+        height: 400px;
+        object-fit: cover;
+        grid-row: 1 / 5;
+        grid-column: 1 / 2;
+        place-self: center;
+        margin: 10px;
+    }
+
+    .project-title{
+        display: grid;
+        align-content: center;
+        margin-block-start: .5em;
+        margin-block-end: 0;
+    }
+
+    .project-description {
+        max-height: 195px;
+        overflow: scroll;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin: 5px 20px 5px 0;
+    }
+
+    .project-tech-wrapper {
+        display: flex;
+        margin: 5px;
+    }
+
+    .project-tech {
+        margin: 5px 2px;
+    }
+
+    .project-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+/* Skills for Tablet */
+
+    .skills-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 150px [row-start] 175px [row-start] 175px [row-start];
+    }
+
+    .skills-header {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
 
 
+/* Time to Talk for Tablet */
+
+    .contact-me {
+        display:grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 150 [row-start] 200px [row-start] 80px [row-start] 80px [row-start];
+    }
+
+    .time-to-talk{
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+
+    .contact-profile-pic{
+        align-self: center;
+        justify-self: end;
+        margin: 40px 15px 40px 0;
+    }
+
+    .contact-name-title{
+        display: grid;
+        align-self: center;
+        justify-self: start;
+    }
+
+    .contact-name-title h1 {
+        align-self: center;
+        justify-self: start;
+    }
+
+    .contact-email{
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        display: grid;
+        justify-content: center;
+    }
+
+
+    .contact-icons-wrapper-bottom {
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+        margin-bottom: 75px;
+    }
+
+}
+
+@media (min-width:1025px) {
+    /* .header-img {
+        display:flex;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      } */
+}

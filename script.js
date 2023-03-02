@@ -2,7 +2,7 @@ const headerImage = document.getElementById("header-image");
 
 const today = new Date();
 //console.log(today);
-//const month = today.getMonth();
+const month = today.getMonth();
 //console.log(month);
 
 const imageToShow = () => {
