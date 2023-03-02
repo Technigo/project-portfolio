@@ -1,8 +1,13 @@
-// Get the button:
+//Toggle dark and light theme
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark")
+})
+
+//Scroll to top button
 let topButton = document.getElementById("top-button");
 
 // When the user scrolls down 20px from the top of the document, show the button
-
 window.onscroll = function () {
   displayTopButton();
   };
@@ -21,3 +26,4 @@ const scrollToTop = () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   
 }
+

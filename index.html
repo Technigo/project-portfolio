@@ -11,6 +11,7 @@
     <title>Portfolio: Joanna Philips</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="media.css">
+    <link rel="stylesheet" type="text/css" href="toggle.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,14 +26,25 @@
 </head>
     
 <header>
+    <section class = "toggle-theme">
+        <div class ="toggle-container">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+            <i class="fa fa-moon-o"></i>
+            <i class="fa fa-sun-o"></i>
+            <span class="ball"></span>
+            </label>
+        </div>
+    </section>
+
    <section class= "profile-container">
         <div class="cover-image-container">
-            <img class = "cover-image" src="https://images.unsplash.com/photo-1415120735457-ac2559460957?ixlib=rb-4.0.3&ixi" alt="image of mountains">
+            <img class = "cover-image" src="https://images.unsplash.com/photo-1415120735457-ac2559460957?ixlib=rb-4.0.3&ixi" alt="Blue and white umbrella">
         </div>
 
         <section class = "intro-section">
             <div class = "profile-and-image">
-                <img class="about-me-image" src="assets/joanna-profile.jpeg" alt="Blue and white umbrella">
+                <img class="about-me-image" src="assets/joanna-profile.jpeg" alt="Joanna Philips">
                 <div class="about-me-text">
                     <h1>Joanna Philips</h1>
                     <h2>Frontend Developer</h2>
@@ -263,7 +275,7 @@
             <div class="about-me-text">
                 <h1>Joanna Philips</h1>
                 <h2>Frontend Developer</h2>
-                <h3>Extra line of info</h3>
+                <h3>& Javascript enthusiast</h3>
             </div>
         </div>
 
@@ -286,7 +298,8 @@
 
 </section>
  <button onclick="scrollToTop()" class = "top-button" id="top-button" 
- title="Scroll to top">Scroll to top <i class="fa fa-arrow-up"></i></button>   
+ title="Scroll to top">Scroll to top <i class="fa fa-arrow-up"></i></button> 
+
  <script src="topButton.js" defer></script>   
 </body>
 
