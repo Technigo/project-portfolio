@@ -1,5 +1,9 @@
 @import url("satoshi.css");
 
+header {
+  min-height: 100vh;
+}
+
 h1 {
   font-family: "Satoshi-Bold";
   font-size: 80px;
@@ -11,10 +15,14 @@ h1 {
   margin-bottom: 0px;
 }
 
-header {
+.info-wrapper {
   padding-top: 3rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.logo {
+  display: none;
 }
 
 .personal-info h2,
@@ -76,6 +84,7 @@ p {
   background-color: #edffff;
   padding-top: 80px;
   padding-bottom: 120px;
+  min-height: 100vh;
 }
 
 .centered {
@@ -229,4 +238,38 @@ p {
   font-family: "Satoshi-Black";
   font-size: 24px;
   margin: 0;
+}
+
+@media(min-width:376px) and (max-width:1279px) {
+
+  .logo {
+    display: flex;
+    background-color: #FCEDEA;
+    height: 40vh;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+  }
+
+  .personal-info {
+    margin-left: 5%;
+    
+  }
+
+  .info-text {
+    max-width: 540px;
+    margin-right: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
