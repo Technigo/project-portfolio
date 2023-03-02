@@ -93,12 +93,12 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    align-self: center;
     padding: 0px;
-   
     position: absolute;
-    width: 290px;
+    width: 200px;
     height: 32px;
-    top: 681px;
+    top: 661px;
 }
 
 .profile-connect:hover a {
@@ -112,5 +112,38 @@ main {
     max-width: 375px;
     padding: 0px;
     gap: 80px;
+}
+
+.arrow {
+    position: absolute; 
+    width: 138px;
+    height: 50px;
+    text-align: center;
+    top: 770px;
+    left: calc(50% - 138px/2 + 0.5px);
+    margin-bottom: 47px;
+    max-width: 480px;
+    /* Makes the arrow bounce */
+    animation: bounce 1s infinite alternate;
+}
+
+/*Makes the arrow bounce*/
+@keyframes bounce {
+    0%   {transform: translateY(0);}
+    100% {transform: translateY(30px);}
+  }
+
+.arrow p{
+    position: absolute;
+    width: 100px;
+    height: 22px;
+    left: 20px;
+    top: 20px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight:600;
+    font-size: 16px;
+    color: var(--quinary);
+    /* identical to box height */
 }
 
