@@ -34,6 +34,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .section-header-img{
@@ -137,6 +138,10 @@ p{
 
 .section-scroll{
     padding: 0 24px;
+    width:300px;
+    position:absolute;
+    left:calc(50% - 150px);
+    top:98vh;
 }
 
 .section-scroll p{
@@ -203,6 +208,7 @@ color: var(--header-color)
     height: 280px;
     width: 327px;
     padding:0 0 12px 0;
+    width: 100%;
 }
 
 .subsection-featured-project h2{
@@ -272,8 +278,9 @@ color: var(--header-color)
 }
 
 .mywords-img img{
-    height: 340px;
-    width: 327px;
+    /* height: 340px;
+    width: 327px; */
+   width:100%;
     object-fit: fill;
     padding: 0 0 12px 0;
 }
@@ -320,10 +327,17 @@ color: var(--header-color)
     background-color: #FFD338;
 }
 
+.github-btn:hover  svg path{
+    fill: #FFFFFF;    
+}
+
 .github-btn:hover{
-    background-color: #EB5577;
     color: #FFFFFF;
-        
+    background: #EB5577;
+}
+
+.livedemo-btn:hover svg path {
+    fill: #FFFFFF;
 }
 
 .livedemo-btn:hover{
@@ -415,6 +429,7 @@ i:hover{
 
     .section-header-img {
         display: block;
+        width:100%
     }
     
     .main-img {
@@ -425,7 +440,7 @@ i:hover{
 
     .personal-info {
         display: grid;
-        grid-template-columns: 0.1fr 0.6fr;
+        grid-template-columns: 0.1fr 0.8fr;
         grid-template-rows: 0.4fr 0.4fr 0.1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
@@ -472,7 +487,7 @@ i:hover{
         display: grid;
         grid-template-columns: 0.8fr 1fr 1fr;
         grid-template-rows: 0.5fr 0.1fr 0.2fr;
-        gap: 24px;
+        gap: 0 24px;
         grid-template-areas:
             "featured-project-img featured-project-description featured-project-description"
             "featured-project-img tech-stack tech-stack"
@@ -511,8 +526,14 @@ i:hover{
         padding: 0 89px;
     }
 
+    .section-mywords h1 {
+        width: 564px;
+        font-size: 80px;
+    }
+
     .subsection-mywords{
         padding: 24px 0 72px 0;
+        max-width: 564px;
     }
 
     .mywords-img img{
@@ -563,6 +584,7 @@ i:hover{
     .header{
         flex-direction: row-reverse;
         justify-content: stretch;
+        /* max-width: 850px; */
     }
 
     .section-header-img{
@@ -570,14 +592,16 @@ i:hover{
     }
 
     .main-img {
-        max-width: max-content;
+        /* max-width:fit-content; */
         height: 100vh;
         object-fit: cover;
-        width: 50vw;
     }
 
     .personal-info {
         padding: 0 48px;
+        grid-template-columns: 0.1fr 1fr;
+        /* max-width: 850px; */
+        width:50vw;
     }
 
     .section {
@@ -607,9 +631,8 @@ i:hover{
     }
 
     .featured-project-img img{
-        /* width:280px; */
+        width:280px;
         /* height:280px; */
-        width:410px;
     }
 
     /* My words */
@@ -621,6 +644,7 @@ i:hover{
 
     .section-mywords h1 {
         grid-column-end: span 2;
+        width: 540px;
     }
 
     .mywords-img img{
@@ -636,8 +660,10 @@ i:hover{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+    /* Time to talk */
+
     .section-time-to-talk{
-        max-width:max-content;
+        max-width:700px;
     }
 
   }
@@ -645,4 +671,28 @@ i:hover{
 /* DESKTOP - large */
 @media (min-width: 1512px) {
 
+    .header{
+        max-width: 1700px;
+    }
+
+    .section-mywords h1{
+        width: 564px;
+        width:100%;
+    }    
+
+    .subsection-mywords {
+        max-width: 564px;
+    }
+
+    .mywords-img img{
+        width: 564px;
+    }
+
+    /* .header, .main, .footer{
+        max-width: 1618px;
+    } */
+
+    .section-tech p{
+        max-width: 820px;
+    }
 }
