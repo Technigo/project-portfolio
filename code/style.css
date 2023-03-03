@@ -12,8 +12,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 24px;
+    
 }
+
+.header-image {
+    display:none;
+    max-width: 100%;
+
+}
+
+.header-image img {
+    min-width: 100%;
+}
+
+.text-header {
+    
+}
+
 .profile-pic {
     max-width: 164px;
     max-height: 164px;
@@ -30,6 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;   
+    margin: 24px;
 }
 
 .name {
@@ -65,7 +81,19 @@ body {
 .introduction {
     font-family: "EB Garamond";
     text-align: justify;
-    margin: 24px;
+
+}
+
+.introduction p {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+    padding-left: 24px;
+    padding-right: 24px;
+
 }
 
 .social-links{
@@ -77,8 +105,13 @@ body {
 .down-arrow{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin:auto
+    justify-content: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.arrow {
+    align-self: center;
 }
 
 .tech {
@@ -86,13 +119,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .tech-title {
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-    margin:auto;
+    align-self: center;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
@@ -103,10 +135,7 @@ body {
 }
 
 .tech-list {
-
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
+    align-self: center;
     margin:auto;
     font-family: 'EB Garamond';
     font-style: normal;
@@ -117,10 +146,14 @@ body {
     margin: 24px;
 }
 
+.tech-list p {
+    text-align: center;
+}
+
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     margin: 24px;
 }
 
@@ -132,12 +165,14 @@ body {
 .project-title {
     display: flex;
     flex-direction: row;
-    justify-self: center;
-    margin:auto;
+    align-self: center;
+    margin-left:auto;
+    margin-left:auto;
+    max-width: 100%;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 70px;
     line-height: 108px; 
     color: #0B24F5;
     margin: 24px;
@@ -190,7 +225,7 @@ p {
 .my-words-title {
     display: flex;
     flex-direction: row;
-    justify-self: center;
+    align-self: center;
     margin:auto;
     font-family: 'Satoshi';
     font-style: normal;
@@ -257,6 +292,8 @@ h5 {
     font-size: 24px;
     line-height: 32px;
     color: #FFFFFF;
+    margin-top: 24px;
+    margin bottom: 24px;
 }
 
 mark {
@@ -271,6 +308,7 @@ mark {
 }
 
 .contacts-title {
+    align-self: center;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
@@ -288,5 +326,102 @@ mark {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+}
+
+.contact-form {
+    align-self: center;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+    .header-image {
+        display: flex;
+    }
+    .text-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .introduction p {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    .tech {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .tech p {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+}
+
+
+@media (min-width: 1025px) {
+
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-image {
+        display: flex;
+        order:2;
+        width: 50%;
+    }
+
+    .business-card {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        
+    }
+
+    .introduction-social-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction p {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .text-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tech {
+        display: flex;
+        flex-direction: row;
+        justify-content: none;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+    }
+
+    .tech-title {
+        margin: none;
+
+    }
+
+    .tech-list {
+        margin: none;
+        width: 25%;
+       
+    }
+
+    .project-title {
+        
+        width: 50%
+        font-size: 80px;
+
+    }
 
 }
