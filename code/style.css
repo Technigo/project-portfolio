@@ -16,6 +16,11 @@
     font-style: normal;
 }
 
+body{
+min-width: 320px;
+Overflow-x: hidden;
+}
+
 p{
     font-family:var(--secondary-font-family)
 
@@ -29,12 +34,12 @@ p{
 }
 
 .header{
-    /* height:100vh; */
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
+    height: 100vh;
 }
 
 .section-header-img{
@@ -80,24 +85,20 @@ p{
 
 .name{
     color: var(--header-color);
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 38px;
-    letter-spacing: 0em;
     text-align: left;
 }
 
 .jobtitle{
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 900;
-    line-height: 43px;
-    letter-spacing: 0em;
     text-align: left;
 }
 
 .secondary-jobtitle{
   
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 32px;
     letter-spacing: 0em;
@@ -107,9 +108,9 @@ p{
 
 .summary{
     font-weight: 400;
-    font-size: 22px;
-    line-height: 29px;
-    margin:40px 0;
+    font-size: 16px;
+    line-height: 20px;
+    margin:20px 0;
 }
 
 .contact-img{
@@ -139,9 +140,6 @@ p{
 .section-scroll{
     padding: 0 24px;
     width:300px;
-    position:absolute;
-    left:calc(50% - 150px);
-    top:98vh;
 }
 
 .section-scroll p{
@@ -209,6 +207,10 @@ color: var(--header-color)
     width: 327px;
     padding:0 0 12px 0;
     width: 100%;
+}
+
+.subsection-featured-project a{
+    text-decoration: none;
 }
 
 .subsection-featured-project h2{
@@ -415,12 +417,51 @@ i:hover{
     color:#000000;
 }
 
+/* MOBILE */
+ @media (min-width: 375px) {
+
+    .name {
+            color: var(--header-color);
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 38px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    
+        .jobtitle {
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 43px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    
+        .secondary-jobtitle {
+    
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: var(--secondary-color)
+        }
+    
+        .summary {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 29px;
+            margin: 40px 0;
+        }
+
+ }
+
+
 /* TABLET */
     @media (min-width: 744px){
 
     .header{
-        height:100vh;
-        justify-content: space-between;
+        justify-content:space-between;
     }
 
     .section{
@@ -477,6 +518,13 @@ i:hover{
         grid-area: section-contact;
         justify-content: start;
         gap: 41px;
+        padding: 40px 0;
+    }
+
+    .section-scroll {
+        position: absolute;
+        left: calc(50% - 150px);
+        top: 98vh;
     }
 
     .section-tech p {
@@ -584,7 +632,6 @@ i:hover{
     .header{
         flex-direction: row-reverse;
         justify-content: stretch;
-        /* max-width: 850px; */
     }
 
     .section-header-img{
@@ -592,7 +639,6 @@ i:hover{
     }
 
     .main-img {
-        /* max-width:fit-content; */
         height: 100vh;
         object-fit: cover;
     }
@@ -600,7 +646,6 @@ i:hover{
     .personal-info {
         padding: 0 48px;
         grid-template-columns: 0.1fr 1fr;
-        /* max-width: 850px; */
         width:50vw;
     }
 
