@@ -1,12 +1,15 @@
+@media only screen and (max-width: 600px) {
+
 body {
     box-sizing: border-box;
     margin: 0;
 }
 
 .main {
-    width: 100%;
+    width: 600px;
     height: 100%;
     margin-bottom: 101px;
+
 }
 
 /* Section main*/
@@ -26,8 +29,6 @@ body {
 }
 
 h {
-   
-  
     font-weight: 700px;
     font-size: 28px;
     font-family: 'Satoshi', sans-serif;
@@ -128,6 +129,8 @@ h2 {
    
 }
 
+
+
 .featured-projects img {
     flex: none;
     order: 0;
@@ -150,9 +153,6 @@ h3 {
     font-family: 'EB Garamond', sans-serif;
     font-weight: 400px;
     font-size: 22px;
- 
-  
-
 }
 
 .skill-templates {
@@ -252,7 +252,7 @@ h3 {
 .blog-header {
     background-color: #FCEDEA;
     margin-top: 85px;
-    height: 1300px;
+    height: 1500px;
 }
 
 
@@ -288,8 +288,7 @@ h3 {
 }
 
 .read-more-button {  
-   
-    background-color: #FFFFF;
+    background-color: white;
     border-radius: 40px;
     max-height: 45px;
     margin: 10px 5px 5px 5px;
@@ -309,7 +308,7 @@ h3 {
     font-size: 20px;
     font-family: 'Satoshi', sans-serif;
     color: black;
-    background-color: #FFFFF;
+    background-color: white;
     margin: 0 2px;
     padding: 2px 5px;
 }
@@ -328,55 +327,53 @@ h3 {
     text-align: center;
 }
 
-.skills h1{
-    text-align: center;
-font-size: 24px;
-font-family: 'Satoshi', sans-serif;
-font-weight: 700px;
-color: white;
-background-color: #EB5577;
-width: 61px;
-height: 32px;
+.hero-image {
+    display: none;
+}
 }
 
-.skills h3{
-    text-align: center;
-font-size: 24px;
-font-family: 'Satoshi', sans-serif;
-font-weight: 700px;
-color: white;
-background-color: #EB5577;
-width: 61px;
-height: 32px;
+@media screen and (min-width: 768px) {
+
+    .hero-image {
+        min-width: 667;
+        max-width: 100%;
+        width: 744px;
 }
 
-.skills h4{
-    text-align: center;
-font-size: 24px;
-font-family: 'Satoshi', sans-serif;
-font-weight: 700px;
-color: white;
-background-color: #EB5577;
-width: 61px;
-height: 32px;
+body{
+    grid-template-columns: 1fr 1fr;
+    }
+
+.main {
+
+    min-width: 667;
+    max-width: 100%;
+    width: 768px;
 }
 
-.skills h5{
-    text-align: center;
-font-size: 24px;
-font-family: 'Satoshi', sans-serif;
-font-weight: 700px;
-color: white;
-background-color: #EB5577;
-width: 61px;
-height: 32px;
+.profile-image {
+    /*Positioning*/
+    position: absolute, center;
+    right: 230px;
+    bottom: 100px;
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 55px;
+    margin-bottom: 29px;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+.profile-image > img {
+    width: 100%;
+}
+}
 
-/*Tog bort h4, flytta runt.
 
+
+
+
+
+   
