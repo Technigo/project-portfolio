@@ -54,6 +54,7 @@ h4 {
 }
 
 p {
+  font-size: 22px;
   margin: 0;
   z-index: 1;
 }
@@ -182,10 +183,11 @@ p {
 }
 
 .tech p {
-  max-width: 400px;
+  max-width: 45%;
   margin: 0 0 0 100px;
   border: none;
   z-index: 1;
+  font-size: 22px;
 }
 
 .tech-tag {
@@ -220,7 +222,7 @@ p {
 }
 
 .featured-projects h1 {
-  color: var(--heading-blue);
+  color: #0B24F5;
   max-width: var(--featured-proj-width);
   font-size: 80px;
   line-height: 108px;
@@ -231,7 +233,7 @@ p {
 
 .project-container {
   max-width: var(--featured-proj-width);
-  background-color: rgb(224, 206, 229);
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -255,7 +257,7 @@ p {
 }
 
 .project-container-text {
-  background-color: rgb(208, 222, 248);
+  background-color: white;
   margin: 50px;
   filter: brigthness(70%);
   z-index: 2;
@@ -287,6 +289,8 @@ p {
 
 .project-links button  {
   background-color: #F5F5F5;
+  font-weight: 500;
+  font-size: 20px;
   border-radius: 40px;
   max-height: 45px;
   margin: 10px 5px 5px 5px;
@@ -298,7 +302,7 @@ p {
 }
 
 .live-button:hover  {
-  background-color: #7fcb5c;
+  background: #ff9595;
   color: white;
   filter: brigthness(70%);
   z-index: 2;
@@ -311,16 +315,15 @@ p {
   z-index: 2;
 }
 
-.project-links button .icons {
-  fill: rgb(0, 0, 0);
-  width: 32px;
-  height: 32px;
+.project-links button .icons:hover {
+  fill: rgb(255, 255, 255);
   filter: brigthness(70%);
   z-index: 2;
 }
 
-.project-links button .icons:hover {
-  fill: rgb(255, 255, 255);
+.project-links button .icons {
+  width: 32px;
+  height: 32px;
   filter: brigthness(70%);
   z-index: 2;
 }
@@ -331,11 +334,17 @@ p {
   z-index: 1;
 }
 
+.project-links button .icons:hover {
+  fill: rgb(255, 255, 255);
+  filter: brigthness(70%);
+  z-index: 2;
+}
+
 /*--MY WORDS SECTION--*/
 
 .my-words {
   width: 100%;
-  background-color: rgb(208, 222, 248);
+  background-color: #FCEDEA;
   grid-column: 1 / 3;
 }
 .my-words h1{
@@ -345,9 +354,25 @@ p {
   padding-left: 100px;
 }
 
+
 .article img {
   width: 100%;
   max-width: 300px;
+}
+
+.article h2 {
+  font-size: 20px;
+  color: #ff9595;;
+  font-weight: 900;
+  line-height: 27px;
+  margin: 10px 0;
+}
+
+.article h3 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 43px;
+  margin: 0 0 20px 0;
 }
 
 .my-words-container {
@@ -361,9 +386,8 @@ p {
 .article {
   grid-column: 1 / 2;
   width: 50%;
-  max-width: 300px;
+  max-width: 350px;
   margin: 10px auto 10px auto;
-  border: 1px solid white;
   padding: 10px max(2px, (100vw - var(--contentWidth))/ 2);
 }
 .button-read-article{
@@ -522,7 +546,7 @@ p {
   margin: 10px;
 }
 
-/*---MOBILE QUERY---*/
+/*-----MOBILE QUERY------*/
 
 @media (max-width: 667px) {
 
