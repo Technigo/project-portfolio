@@ -13,7 +13,7 @@ body {
 
 
 /***************responsive design for mobile************/
-@media (min-width: 1px) and (max-width: 667px) {
+
 
     .toplogo-Img {
         width: 100%;
@@ -21,12 +21,31 @@ body {
         display: none;
     }
 
+    .introduction,
+    .scroll,
+    .tech,
+    .featured-projects,
+    .myWordSection,
+    .skills,
+    .time-to-talk {
+        width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction,
+    .scroll {
+
+        background-color: #F5F5F5;
+    }
 
     .intro-detail {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 55px 24px 0px 24px;
+        margin-top: 55px;
     }
 
     .intro-detail img {
@@ -42,6 +61,7 @@ body {
         width: 303px;
         height: 113px;
         text-align: left;
+        margin-top: 29px;
 
     }
 
@@ -71,8 +91,7 @@ body {
 
     .summarybox {
         display: flex;
-        margin: 40px 24px 0px 24px;
-
+        margin-top: 40px;
     }
 
     .summarybox p {
@@ -89,15 +108,15 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 48px 24px 0px 24px;
+        margin-top: 48px;
     }
 
     .scroll-icons {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0px 24px 0px 24px;
-
+        margin-top: 71px;
+        padding-bottom: 101px;
     }
 
     .scroll-icons i {
@@ -113,8 +132,10 @@ body {
 
     }
 
+    /*Tech and featured-projects section start*/
     .tech {
         background-color: #EDFFFF;
+
     }
 
     .tech h2 {
@@ -128,6 +149,8 @@ body {
 
     .tech-text {
         display: flex;
+        margin-top: 62px;
+        margin-bottom: 120px;
     }
 
     .tech-text p {
@@ -135,57 +158,404 @@ body {
         font-weight: 400;
         line-height: 32px;
         font: EB Garamond;
-        margin: 62px 24px 120px 24px;
     }
-    .featured-projects{
+
+    .featured-projects {
+        display: flex;
+        flex-direction: column;
         background-color: #F5F5F5;
     }
 
-    .featured-projects>:first-child{
+    .featured-projects>:first-child {
         padding-top: 64px;
         text-align: center;
-        color:  #0B24F5;
+        color: #0B24F5;
         font-size: 72px;
         line-height: 80px;
         font-weight: 700px;
 
     }
-    .chatbot-project img{
-        padding: 64px 24px 0px 24px;
+
+    .chatbot-project img {
+        margin-top: 64px;
 
     }
-    .chatbot-project h2{
-        padding: 24px 24px 0px 24px ;
+
+    .chatbot-project h2 {
+        margin-top: 24px;
         color: #000000;
         font-weight: 900;
         font-size: 32px;
         line-height: 43.2px;
     }
-    .chatbot-project p{
+
+    .chatbot-project p {
+        margin-top: 18px;
         font: EB Garamond;
         font-style: normal;
         font-weight: 400;
         color: #000000;
         font-size: 22px;
-        padding: 18px 24px 0px 24px;
+    }
+
+    .javascriptBtn {
+        margin-top: 18px;
+
+    }
+
+    .javascriptBtn span {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 2px 6px 2px 6px;
+    }
+
+    .BtnBox {
+        margin-bottom: 85px;
+
+    }
+
+    .viewCodeBtn {
+        width: 200px;
+        height: 48px;
+        margin-top: 24px;
+        background-color: #EB5577;
+        border-radius: 40px;
+        border: none;
+        display: block;
+        padding: 0px;
+
+    }
+
+    .viewCodeBtn svg {
+        width: 32px;
+        height: 32px;
+        color: #ffffff;
+        align-items: center;
+        margin: 8px 15px 8px 8px;
+    }
+
+    .viewCodeBtn a {
+        display: block;
+        float: right;
+        width: 129px;
+        height: 27px;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 27px;
+        color: #ffffff;
+        font-family: Satoshi;
+        margin: 10.5px 16px 10.5px 0px;
+    }
+
+    .liveDemoBtn {
+        width: 164px;
+        height: 48px;
+        margin-top: 24px;
+        background-color: #0B24F5;
+        border-radius: 40px;
+        border: none;
+        display: block;
+        padding: 0px;
 
 
     }
-    .chatbot-project ul{
+
+    .liveDemoBtn svg {
+        width: 30.99px;
+        height: 30.99px;
+        color: #ffffff;
+        align-items: center;
+        margin: 9px 15.01px 9px 9px;
+    }
+
+    .liveDemoBtn a {
+        display: block;
+        float: right;
+        width: 93px;
+        height: 27px;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 27px;
+        color: #ffffff;
+        font-family: Satoshi;
+        margin: 10.5px 16px 10.5px 0px;
+
+    }
+
+    /*My words section start*/
+    .myWordSection {
+        display: flex;
+        flex-direction: column;
+        background-color: #FCEDEA;
+    }
+
+    .myWordSection>:first-child {
+        margin-top: 64px;
+        font-size: 72px;
+        font-style: bold;
+        line-height: 100%;
+        font-weight: 700;
+        color: #EB5577;
+        text-align: center;
+    }
+
+    .myWords img {
+        margin-top: 64px;
+    }
+
+    .myWords h4 {
+        margin-top: 40px;
+        color: #EB5577;
+        font-size: 20px;
+        line-height: 100%;
+
+    }
+
+    .myWords h2 {
+        font-family:"Satoshi" ;
+        font-style: Black;
+        font-size: 32px;
+        line-height: 100%
+    }
+
+    .myWords p {
+        margin-top: 24px;
+        font-size: 22px;
+    }
+
+    .myWords button {
+        width: 178px;
+        height: 48px;
+        margin-top: 24px;
+        background-color: #ffffff;
+        border-radius: 40px;
+        border: none;
+        display: block;
+        padding: 0px;
+
+    }
+
+    .myWords button a {
+        display: block;
+        float: right;
+        width: 107px;
+        height: 27px;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000000;
+        font-family: "Satoshi";
+        margin: 10.5px 16px 10.5px 0px;
+
+    }
+
+    .myWords button svg {
+        width: 20px;
+        height: 26px;
+        color: #333333;
+        align-items: center;
+        margin: 11px 21px 11px 14px ;  
+    }
+    .myWords-last img {
+        margin-top: 64px;
+    }
+
+    .myWords-last h4 {
+        margin-top: 40px;
+        color: #EB5577;
+        font-size: 20px;
+        line-height: 100%;
+
+    }
+
+    .myWords-last h2 {
+        font-family: "Satoshi";
+        font-style: Black;
+        font-size: 32px;
+        line-height: 100%
+    }
+
+    .myWords-last p {
+        margin-top: 24px;
+        font-size: 22px;
+    }
+
+    .myWords-last button {
+        width: 178px;
+        height: 48px;
+        margin-top: 24px;
+        background-color: #ffffff;
+        border-radius: 40px;
+        border: none;
+        display: block;
+        padding: 0px;
+        margin-bottom: 93px;
+
+    }
+
+    .myWords-last button a {
+        display: block;
+        float: right;
+        width: 107px;
+        height: 27px;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000000;
+        font-family: "Satoshi";
+        margin: 10.5px 16px 10.5px 0px; 
+    }
+
+    .myWords-last button svg {
+        width: 20px;
+        height: 26px;
+        color: #333333;
+        align-items: center;
+        margin: 11px 21px 11px 14px ;
+    }
+
+    /*skills section start*/
+    .skills {
+        background-color: #FDF2E4;
+    }
+    .my-skills{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my-skills h2 {
+        font-size: 80px;
+        font-weight: 700px;
+        font-family: "satoshi";
+        line-height: 100%;
+        padding-top: 64px;
+        color: #0B24F5;
+        text-align: center;
+    }
+    .code-skill-box{
+        margin-top: 66px;
+        text-align: center;
+    }
+    .tool-skill-box, .other-skill-box, .upcomming-skill-box{
+        margin-top: 68px;
+        text-align: center;
+    }
+
+    .code-skill-box h5{
+        width: 61px;
+        height: 32px;
+        background-color: #EB5577;
+        color: #ffffff;
+        font-size: 24px;
+        font-family: "satoshi";
+        font-weight: 700;
+        line-height: 32.4px;
+    }
+    .tool-skill-box h5{
+        background-color: #2483E0;
+        color: #ffffff;
+        font-size: 24px;
+        font-family: "satoshi";
+        font-weight: 700;
+        line-height: 32.4px;
+
+    }
+
+    .other-skill-box h5{
+        background-color:  #0B24F5;
+        color: #ffffff;
+        font-size: 24px;
+        font-family: "satoshi";
+        font-weight: 700;
+        line-height: 32.4px;
+
+    }
+    .upcomming-skill-box h5{
+        background-color: #6DB486;
+        color: #ffffff;
+        font-size: 24px;
+        font-family: "satoshi";
+        font-weight: 700;
+        line-height: 32.4px;
+
+
+    }
+    .my-skills ul{
+        margin-top: 18px;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 400;
+        font-family: "EB Garamond";
+      
+    }
+    
+    /*time-to-talk section starts*/
+    .time-to-talk {
+        background-color: #F5F5F5;
+    }
+    .time-to-talk h1{
+        margin-top: 64px;
+        color: #EB5577;
+        font-size: "Satoshi";
+        font-weight: 900;
+        font-size: 58px;
+        line-height: 78.3px;
+
+    }
+    .bottom-intro-details{
+        margin-top: 56px;
+    }
+    .bottom-intro-details img{
+        align-self: flex-start;
+        width: 164px;
+        height: 164px;
+        border-radius: 50%;
+
+    }
+    .bottom-intro-details h3 {
+        margin-top: 29px;
+        color: #0B24F5;
+        Font-size: 28px;
+        font-weight: 700;
+        line-height: 37.8px;
+
+    }
+
+    .bottom-intro-details h2 {
+        color: #000000;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 43.2px;
+
+    }
+
+    .bottom-intro-details h4 {
+        color: #565656;
+        font-size: 24px;
+        font-style: medium;
+        font-weight: 500;
+        line-height: 32.4px;
+    }
+    .contactInfo{
+        margin-top: 56px;
+    }
+    .contactInfo h3{
+        font-size: 24px;
+        line-height: 32.4px;
+        font: 900;
+        font-family:"Satoshi";
+        color: #000000;
+
+    }
+    .bottom-media-links ul{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        margin: 20px 24px 0px 24px;
-
+        margin-top: 103px;
+        margin-bottom: 100px;
     }
-    .chatbot-project ul li{
-       font-size: 16px;
-       line-height: 100%;
-       color: white;
-       background-color: #000000;
-       padding: 2px 6px;
-       margin: 4px;
-    }  
+    
 
 
 
@@ -200,7 +570,7 @@ body {
 
 
 
-}
+
 
 
 
@@ -212,7 +582,13 @@ body {
 
 
 /***************responsive design for tablet************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .toplogo-Img {
+        width: 100%;
+        height: 412px;
+        display: flex;
+    }
+}
 
 /***************responsive design for destop************/
 @media only screen and (min-device-width: 1025px) {}
