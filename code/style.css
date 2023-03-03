@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700;900&display=swap');
 
 :root {
-    ---primary:  #92a6db;
-    ---secondary: #a6c6ea;
-    ---main: #e3e3e3;
-    ---highlight: #5f7ac4;
-    ---accent: #5d6886;
+    ---primary:  #9BA17B;
+    ---secondary: #CFB997;
+    ---main: #FAD6A5;
+    ---highlight: #61764B;
+    ---accent: #e2a157;
+    ---text: #b16f24; 
 }
 
 body {
@@ -83,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .right-header {
-  background-color: #5f7ac4;
+  background-color: var(---highlight);
   width: 50%;
   height: 600px;
   display: flex;
@@ -109,11 +110,12 @@ h1, h2, h3, h4, h5, h6, p, a {
   align-items: center;
   justify-content: center;
   height: 600px;
+  background-color: var(---secondary);
 }
 
 .big-header {
   font-size: 70px;
-  color: blue;
+  color: var(---text);
 }
 
 .tech-paragraph {
@@ -127,6 +129,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   justify-content: center;
   gap: 15px;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 .project-img-container {
@@ -151,20 +154,21 @@ h1, h2, h3, h4, h5, h6, p, a {
   width: 820px;
   left: calc(50% - 820px/2);
   top: 2050px;
+  background-color: var(---primary);
 }
 
 .project-btn {
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 16px 0px 0px;
-gap: 7px;
-width: 164px;
-height: 48px;
-left: 320px;
-top: 232px;
-background: #0B24F5;
-border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px 0px 0px;
+  gap: 7px;
+  width: 164px;
+  height: 48px;
+  left: 320px;
+  top: 232px;
+  background: var(---accent);
+  border-radius: 40px;
 }
 
 .project-summary {
@@ -188,8 +192,10 @@ border-radius: 40px;
 /* THOUGHTS SECTION */
 
 .blog-section {
-  left: 0px;
-  right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: var(---highlight);
+  
 }
 
 .articles {
@@ -200,19 +206,19 @@ border-radius: 40px;
   grid-row-gap: 0px;
 }
 
-.blog-buttons {
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 16px 0px 0px;
-gap: 7px;
-width: 178px;
-height: 48px;
-left: 0px;
-top: 690px;
-
-background: #FFFFFF;
-border-radius: 40px;
+.blog-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px 0px 0px;
+  gap: 7px;
+  width: 164px;
+  height: 48px;
+  left: 320px;
+  top: 232px;
+  background: var(---accent);
+  border-radius: 40px;
+  justify-content: center;
 }
 
 .blog-img-container {
@@ -228,7 +234,19 @@ border-radius: 40px;
   height: 100%;
 }
 
+.blog-post-description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0px;
+}
+
 /* SKILL SECTION */
+
+.skills {
+  background-color: var(---secondary);
+}
+
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -243,32 +261,22 @@ border-radius: 40px;
 }
 
 .mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 @media (min-width: 640px) {
-.container {
-    max-width: 640px;
-  }
+
 }
 @media (min-width: 768px) {
-  .container {
-      max-width: 768px;
-  }
+
 }
 @media (min-width: 1024) {
-  .container {
-    max-width: 1024;
-  }
+
 }
 @media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
+
 }
 @media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
+
 }
