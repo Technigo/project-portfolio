@@ -30,7 +30,7 @@ header {
     margin-top: 20px;
 }
 
-.desktopimage {
+.desktopimage, .tablet-image {
     display: none;
 }
 
@@ -206,6 +206,30 @@ button:hover {
 }
 */
 
+
+.skills-section {
+    display: grid;
+    justify-content: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 39px 33px;
+    margin: 24px 55px 24px 40px;
+    justify-content: center;
+    text-align: left;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 24px 55px 24px 40px;
+    padding: 0%;
+    gap: 29px;
+}
+
 /* this part has the media queries for tablet size */
 @media (min-width: 667px) and (max-width: 1024px) {
 
@@ -213,21 +237,26 @@ button:hover {
         flex-direction: row;
     }
 
-    .desktopimage {
-        display: flex;
-        justify-content:center;
-        width: 100%;
-        height: 100%;
+    .tablet-image {
+       /* display: flex;
+        justify-content:center;*/
+        display: block;
+        max-width: 1023px;
+        height: 412px;
+        background-image: url("./images/newflower.jpg");
         background-size: cover;
+        margin: 0;
+        padding: 0;
+        
         
 
     }
-    .img.desktop-image {
-        width: 100%;
+    /* .img.desktop-image { 
+        min-width: 100%;
         height: auto;
-        
+        object-fit: cover;
       
-    }
+    }*/
 
     .img.profile-image {
         display: flex;
@@ -242,6 +271,12 @@ button:hover {
         
     }
 
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 39px 33px;
+    }
+
 }
 
 
@@ -251,21 +286,29 @@ button:hover {
 @media (min-width: 1025px) {
 
     
-    .desktopimage {
+    .header {
         display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row;
+    }
+
+    .desktop-image {
+        
+        display: block;
+        float: right;
+        background-image: url("./images/flower.jpg");
+        background-size: cover;
         
         
     }
+   
 
    
 
-    /*.profile-information {
+    .profile-information {
         display: flex;
+        float: left;
         
-    }*/
+    }
 
     .chatbot, .guess-who, .weatherapp {
         flex-direction: row;
@@ -281,6 +324,12 @@ button:hover {
         flex-direction: row;
         gap: 20px;
         
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 39px 33px;
     }
 }
 
