@@ -12,36 +12,42 @@
 <body>
     <header>
         <div class="header-right-box">
-        <div class="pic-name-title">
-            <img class="profile-pic" src="../images/Usericon.png" alt="Picture of me" />
-            <div class="name-title-column">
-                <h1>Josefin Robertsson</h1>
-                <p>Frontend Developer</p>
-                <p>second title</p>
+            <div class="pic-name-title">
+                <img class="profile-pic" src="../images/Usericon.png" alt="Picture of Josefin" />
+                <div class="name-title-column">
+                    <h1>Josefin Robertsson</h1>
+                    <p>Frontend Developer</p>
+                    <p>second title</p>
+                </div>
             </div>
-        </div>
-        <p>Some text about me Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-        <div class="icon-container">
-            <a href="link">
-            <img src="../images/icons/linked_in_default.svg" alt="link to Linked in" /></a>
-            <a href="link">
-                <img src="../images/icons/small_github_default.svg" alt="link to git hub" /></a>
-        
-        </div>
-        <button class="top-of-page">Sticky home icon</button>
-        <button class="scroll-down">in front of
-            background</button><!--maybe put everything except the footer in main and have it "slide" out when this button
+            <p>Some text about me Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris</p>
+            <div class="icon-container">
+                <a href="link">
+                    <img src="../images/icons/linked_in_default.svg" alt="link to Linked in" /></a>
+                <a href="link">
+                    <img src="../images/icons/small_github_default.svg" alt="link to git hub" /></a>
+
+            </div>
+            <button class="top-of-page">Sticky home icon</button>
+            <button class="scroll-down">in front of
+                background</button><!--maybe put everything except the footer in main and have it "slide" out when this button
         is clicked?-->
+        </div>
+        <div class="banner">
+       <img class="banner-pic" src="../images/mini_me_transparent.png" alt="banner" />
     </div>
-        <img class="banner" src="https://placehold.co/756x980" alt="banner" />
     </header>
 
     <div class="tech-wrapper">
-    <section class="tech">
-        <h2>Tech</h2>
-        <p>HTML5, CSS, JavaScript etc</p>
-    </section>
+        <div class="thin-border"></div>
+        <section class="tech">
+            <h2>Tech</h2>
+            <p>HTML5, CSS, <span class="tech-purple">JavaScript</span>, React, mob-/pairprogramming</p>
+        </section>
     </div>
+</div>
 
     <main>
         <h2>Featured Projects</h2>
@@ -50,15 +56,18 @@
             <div>
                 <h3>Project and language</h3>
                 <p>Description of project</p>
-                <!-- Row of styled elements to look like labels-->
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <a href="link to Netlify"><button class="live-demo-button"><img src="../images/icons/globe_black.svg" /> Live demo</button></a>
-
-                <a href="link to Github"> <button class="view-the-code"></button>View the code</button></a>
+                <ul class="project-code-labels">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript ES6</li>
+                </ul>
+                <button class="live-demo-button" onclick="window.location.href='https://www.netlify.com/';"><img
+                        src="../images/icons/globe_black.svg" />Live demo</button>
+                <button class="view-code-button" onclick="window.location.href='https://github.com/JosefinRobertsson';">
+                    <img src="../images/icons/github_icon_black.svg" />View the code</button>
             </div>
         </div>
+
 
         <div class="project-B-wrapper">
             <img src="https://placehold.co/280x280" />
@@ -69,8 +78,10 @@
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>JavaScript</p>
-                <a href="link to Netlify"><button class="live-demo-button"><img src="../images/icons/globe_black.svg" />Live demo</button></a>
-                <a href="link to Github"> <button class="view-the-code"></button>View the code</button></a>
+                <button class="live-demo-button" onclick="window.location.href='https://www.netlify.com/';"><img
+                        src="../images/icons/globe_black.svg" />Live demo</button>
+                <button class="view-code-button" onclick="window.location.href='https://github.com/JosefinRobertsson';">
+                    <img src="../images/icons/github_icon_black.svg" />View the code</button>
             </div>
         </div>
 
@@ -83,97 +94,97 @@
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>JavaScript</p>
-                <a href="link to Netlify"><button class="live-demo-button"><img src="../images/icons/globe_black.svg" />Live demo</button></a>
-                <a href="link to Github"> <button class="view-the-code"></button>View the code</button></a>
+                <button class="live-demo-button" onclick="window.location.href='https://www.netlify.com/';"><img
+                        src="../images/icons/globe_black.svg" />Live demo</button>
+                <button class="view-code-button" onclick="window.location.href='https://github.com/JosefinRobertsson';">
+                    <img src="../images/icons/github_icon_black.svg" />View the code</button>
             </div>
         </div>
     </main>
 
-<div class="my-words-wrapper">
-    <section class="my-words-grid-container"> <!--entire section laout is "grid" 2x2-->
-        <h2 class="my-words-headline">My words</h2>
+    <div class="my-words-wrapper">
+        <section class="my-words-grid-container"> <!--entire section laout is "grid" 2x2-->
+            <h2 class="my-words-headline">My words</h2>
 
-        <div class="article1">
-            <img src="https://placehold.co/564x340">
-            <time>Date</time>
-            <h4>Headline 1</h4>
-            <article>Descriptive text about headline</article>
-            <!-- icon and link styled together as a button-->
-            <img src="small screen icon" />
-            <a>Read article</a>
-        </div>
+            <div class="article1">
+                <img src="https://placehold.co/564x340">
+                <time>Date</time>
+                <h4>Headline 1</h4>
+                <article>Descriptive text about headline</article>
+                <button class="read-article-button" onclick="window.location.href='https://link to article';"><img
+                        src="../images/icons/read_article.svg" />Read article</button>
+            </div>
 
-        <div class="article2">
-            <img src="https://placehold.co/564x340">
-            <time>Date</time>
-            <h4>Headline 2</h4>
-            <article>Descriptive text about headline</article>
-            <!-- icon and link styled together as a button-->
-            <img src="small screen icon" />
-            <a>Read article</a>
-        </div>
+            <div class="article2">
+                <img src="https://placehold.co/564x340">
+                <time>Date</time>
+                <h4>Headline 2</h4>
+                <article>Descriptive text about headline</article>
+                <button class="read-article-button" onclick="window.location.href='https://link to article';"><img
+                        src="../images/icons/read_article.svg" />Read article</button>
+            </div>
 
-        <div class="article3">
-            <img src="https://placehold.co/564x340">
-            <time>Date</time>
-            <h4>Headline 3</h4>
-            <article>Descriptive text about headline</article>
-            <!-- icon and link styled together as a button-->
-            <img src="small screen icon" />
-            <a>Read article</a>
-        </div>
+            <div class="article3">
+                <img src="https://placehold.co/564x340">
+                <time>Date</time>
+                <h4>Headline 3</h4>
+                <article>Descriptive text about headline</article>
+                <button class="read-article-button" onclick="window.location.href='https://link to article';"><img
+                    src="../images/icons/read_article.svg" />Read article</button>
+            </div>
 
-        <div class="article4">
-            <img src="https://placehold.co/564x340">
-            <time>Date</time>
-            <h4>Headline 4</h4>
-            <article>Descriptive text about headline</article>
-            <!-- icon and link styled together as a button-->
-            <img src="small screen icon" />
-            <a>Read article</a>
-    </section>
-</div>
+            <div class="article4">
+                <img src="https://placehold.co/564x340">
+                <time>Date</time>
+                <h4>Headline 4</h4>
+                <article>Descriptive text about headline</article>
+                <button class="read-article-button" onclick="window.location.href='https://link to article';"><img
+                    src="../images/icons/read_article.svg" />Read article</button>
+        </section>
+    </div>
 
     <section class="skills">
+        <div class="thin-border">
         <h2>Skills</h2>
         <div class="skill-list-wrap">
-        <ul>
-            <li>
-                <h6>Code</h6>
-            </li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript ES6</li>
-            <li></li>
-        </ul>
-        <ul>
-            <li>
-                <h6>Toolbox</h6>
-            </li>
-            <li>Adobe Photoshop</li>
-            <li>Figma</li>
-            <li>Slack</li>
-            <li></li>
-        </ul>
-        <ul>
-            <li>
-                <h6>More</h6>
-            </li>
-            <li>Agile methodology</li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul>
-            <li>
-                <h6>Upcoming</h6>
-            </li>
-            <li>Redux</li>
-            <li>Node.js</li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+            <ul>
+                <li>
+                    <h6 class="code-headline">Code</h6>
+                </li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript ES6</li>
+                <li></li>
+            </ul>
+            <ul>
+                <li>
+                    <h6 class="toolbox-headline">Toolbox</h6>
+                </li>
+                <li>Adobe Photoshop</li>
+                <li>Figma</li>
+                <li>Slack</li>
+                <li></li>
+            </ul>
+            <ul>
+                <li>
+                    <h6 class="more-headline">More</h6>
+                </li>
+                <li>Agile methodology</li>
+                <li>Code reviews</li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li>
+                    <h6 class="upcoming-headline">Upcoming</h6>
+                </li>
+                <li>Redux</li>
+                <li>Node.js</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        </div>
     </section>
 
 
@@ -187,19 +198,21 @@
                 <p>second title</p>
             </div>
         </div>
-            
+
         <address>
             <p>+46(0)762 12 34 56</p>
             <p>josefinrobertsson@hotmail.com</p>
         </address>
-        <div class="button-container">
-        <button class="linkedIn-button">LinkedIn</button>
-        <button class="github-button">Github</button>
-        <button class="facebook-button">Facebook</button>
+        <div class="icon-footer-container">
+            <a href="link">
+                <img src="../images/icons/linked_in_default.svg" alt="link to Linked in" /></a>
+            <a href="link">
+                <img src="../images/icons/small_github_default.svg" alt="link to git hub" /></a>
         </div>
     </footer>
 
 
 
 </body>
+
 </html>
