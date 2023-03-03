@@ -1,30 +1,60 @@
-@import url("satoshi.css");
+@font-face {
+  font-family: SatoshiBold;
+  font-weight: bold;
+  src: url("./fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf");
+}
+
+@font-face {
+  font-family: SatoshiMedium;
+  font-weight: medium;
+  src: url("./fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.ttf");
+}
+
+@font-face {
+  font-family: SatoshiBlack;
+  font-weight: bolder;
+  src: url("./fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.ttf");
+}
+
+@font-face {
+  font-family: SatoshiLight;
+  font-weight: bolder;
+  src: url("./fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Light.ttf");
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.6;
+
   /* border: red solid 1px; */
 }
 
 body {
   width: 100%;
-
-  overflow: hidden;
+  min-width: 1320px;
   background: white;
 }
 
-.top-container {
+/* TOP SECTION */
+
+.section-top {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  /* position: relative; */
+  height: 80vh;
+  position: relative;
 }
 
 .text-container {
   background: white;
   width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .profile {
@@ -52,31 +82,31 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 20px;
-  line-height: 1.6;
 }
 
 .profile h2 {
-  font-family: "Satoshi-Bold", sans-serif;
+  font-family: "SatoshiBold", sans-serif;
   font-weight: 700;
   font-size: 1.3rem;
   color: #0b24f5;
 }
 
 .profile h3 {
-  font-family: "Satoshi-Black", sans-serif;
+  font-family: "SatoshiBlack", sans-serif;
   font-weight: 800;
   font-size: 1.7rem;
   color: #000;
 }
 
 .profile h4 {
-  font-family: "Satoshi-Light", sans-serif;
+  font-family: "SatoshiMedium", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
   color: #565656;
 }
 
 .profile p {
+  font-family: "EB Garamond", serif;
   width: 70%;
   font-size: 18px;
   line-height: 1.5;
@@ -84,11 +114,10 @@ body {
   text-align: left;
 }
 
-/* Social media bar */
+/* SOCIAL MEDIA BAR */
 
 .icons {
   display: inline-flex;
-  font-family: "Satoshi-Light", sans-serif;
   margin-left: 4vw;
 }
 
@@ -101,6 +130,7 @@ body {
   flex-direction: column;
   position: relative;
   z-index: 2;
+  color: #d0d0d0;
 }
 
 /* .icons .icon span {
@@ -120,7 +150,9 @@ body {
   line-height: 1.6;
 }
 
-.icons .icon .tooltip {
+/* This is a really cool hover-effect that i couldnt use because of strict styling guidelines */
+
+/* .icons .icon .tooltip {
   text-align: center;
   top: 0px;
   width: 6.5rem;
@@ -133,9 +165,9 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
+} */
 
-.icons .icon:hover .tooltip {
+/* .icons .icon:hover .tooltip {
   opacity: 1;
   pointer-events: auto;
   top: -45px;
@@ -150,22 +182,25 @@ body {
   bottom: -5px;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
-}
+} */
 
-.icons a {
+/* .icons a {
+  color: #000;
+} */
+
+.icons .icon:hover {
   color: #000;
 }
 
 .icons a:visited {
   text-decoration: none;
-  color: #000;
 }
 
-.icons .icon:hover span .icons .icon:hover .tooltip {
+/* .icons .icon:hover span .icons .icon:hover .tooltip {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
-}
+} */
 
-/* Image container */
+/* IMAGE CONTAINER */
 
 .image-container {
   display: flex;
@@ -173,29 +208,154 @@ body {
   align-items: center;
   background: pink;
   width: 50%;
-  height: 800px;
+  height: 100%;
 }
 
 .image-container img {
   width: 40vw;
 }
 
-@media screen and (max-width: 820px) {
-  .top-container {
+/* TECH SECTION */
+
+.section-tech {
+  height: 60vh;
+  background: #e6f9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-info {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.section-title {
+  color: #0b24f5;
+  font-family: "SatoshiBold", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  width: 50%;
+}
+
+.tech {
+  font-size: 22px;
+}
+
+.highlight {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(to right, rgba(255, 225, 0, 0.1), rgba(255, 225, 0, 0.7) 4%, rgba(255, 225, 0, 0.3));
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.highlight-two {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(to right, rgba(180, 81, 172, 0.1), rgba(223, 139, 198, 0.7) 4%, rgba(189, 64, 172, 0.3));
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* FEATURED PROJECTS */
+
+.featured-projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vw 0vw;
+}
+
+.featured-projects-headline {
+  font-family: "SatoshiBold", sans-serif;
+  font-size: 55px;
+  color: #0b24f5;
+  width: 45%;
+}
+
+.frame {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.project-image img {
+  width: 300px;
+  padding: 2rem;
+}
+
+.project-info h2 {
+  font-family: "SatoshiBold", sans-serif;
+}
+
+.project-info p {
+  margin: 0vw 0vw 1vw 0vw;
+}
+
+.tech-included p {
+  font-family: "SatoshiLight", sans-serif;
+  font-size: 16px;
+  display: inline;
+  padding: 0.2em 0.7em;
+  background: #000000;
+  color: #ffffff;
+}
+
+button {
+  background-color: #f5f5f5;
+  border: none;
+  color: #000;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.button i {
+  font-size: larger;
+}
+
+.button-one:hover {
+  color: #ffffff;
+  background-color: #0b24f5;
+}
+
+.button-two:hover {
+  color: #ffffff;
+  background-color: #eb5577;
+}
+
+@media screen and (max-width: 821px) {
+  /* TOP SECTION */
+
+  .section-top {
     flex-direction: column-reverse;
   }
 
   .text-container {
     width: 90%;
-    margin-left: 25vw;
     display: flex;
     flex-direction: column;
     margin-top: 4vw;
+    margin-left: 10vw;
   }
 
   .image-container {
     width: 100%;
-    height: 500px;
+    height: 100%;
   }
 
   .image-container img {
@@ -240,20 +400,39 @@ body {
     margin-left: -2vw;
     margin-top: 3vw;
   }
+
+  /* TECH SECTION */
+
+  .section-tech {
+    margin-top: 20px;
+  }
+
+  .tech-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tech {
+    margin: 20px 0px;
+  }
 }
 
 @media screen and (max-width: 415px) {
   body {
-    min-height: 90vh;
+    /* min-height: 90vh; */
+  }
+
+  /* TOP SECTION */
+
+  .section-top {
+    height: 90%;
   }
 
   .text-container {
-    margin-top: 3vw;
+    width: 90%;
   }
 
   .profile {
-    width: 100%;
-    margin-left: -10vw;
   }
 
   .picture-and-name {
@@ -275,7 +454,6 @@ body {
 
   .profile p {
     width: 100%;
-    margin-left: -5vw;
   }
 
   .image-container {
@@ -289,5 +467,59 @@ body {
 
   .text-container {
     margin-top: 3vw;
+  }
+
+  /* TECH SECTION */
+
+  .section-tech {
+    height: 30rem;
+  }
+
+  .tech-info {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 100%;
+  }
+
+  /* FEATURED PROJECTS */
+
+  .featured-projects-headline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+  }
+
+  .project-image img {
+    width: 100vw;
+  }
+
+  .project-info {
+    margin-left: 10px;
+  }
+
+  .project-info h2 {
+    font-family: "SatoshiBlack", sans-serif;
+  }
+
+  .project-info p {
+    margin: 20px 0px;
+  }
+
+  .tech-included {
+    margin-bottom: 10px;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 }
