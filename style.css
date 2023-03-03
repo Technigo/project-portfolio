@@ -295,31 +295,45 @@ p {
     margin: 4px;
 }
 
+.code-group, .toolbox-group, .more-group, .upcoming-group {
+    margin-top: 60px;
+    align-self: center;
+}
+
 .code {
     background-color: #EB5577;
     padding: 2px;
+    justify-self: center;
 }
 
 .toolbox {
     background-color: #2483E0;
     padding: 2px;
+    justify-self: center;
 }
 
 .more {
     background: #0B24F5;
     padding: 2px;
+    align-self: center;
 }
 
 .upcoming {
     background: #6DB486;
     padding: 2px;
+    justify-self: center;
 }
 
 .contact {
     display: flex;
     flex-direction: column;
+    justify-items: center;
     margin: 0 24px 50px 24px;
     padding: 0;
+}
+
+.contact img {
+    align-self: flex-start;
 }
 
 .contact a {
@@ -334,7 +348,7 @@ p {
 address {
     margin-top: 50px;
     margin-bottom: 80px;
-    align-self: flex-end;
+    align-self: flex-start;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 991px) {
@@ -345,29 +359,29 @@ address {
     width: 100%;
 }
 
-.intro, .tech, .contact {
+.intro, .tech {
     display: grid;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
 }
 
 .intro img {
-    position: absolute;
     align-self: start;
+    grid-column: 2/ span 1;
     margin: 0;
 }
 
-.intro-text, address {
-    grid-column: 2/span 4;
+.intro-text :not(p){
+    grid-column: span 4;
 }
 
 .text p{
-    grid-column: 1/ span 4;
+    grid-column: span 5;
+    margin-top: 32px;
 }
 
 .some-icon {
-    grid-column: 2/5;
-    justify-self: start;
+    grid-column: 2;
 }
 
 .tech h2, p {
@@ -426,30 +440,36 @@ address {
 }
 
 .contact {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
+    margin-left: 124px;
+    margin-right: 124px;
 }
 
 .contact h6 {
-    grid-column: 1/ span 5;
+    grid-column: span 5;
     justify-self: center;
-    margin: 50px;
     font-size: 120px;
 }
 
 .contact img {
-    grid-column: 1/ span 1;
-    grid-row: 2;
-    justify-self: start;
+    grid-column: 1 / span 1;
     align-self: center;
+    justify-self: center;
+    margin: 0;
 }
 
 .contact-text {
-    grid-column: 2/ span 3;
-
+    grid-column: span 4;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
 }
 
-address {
-
+address, .some-icon {
+    grid-column: span 5;
+    justify-self: center;
 }
 }
 @media only screen and (min-width: 992px) {
@@ -499,6 +519,7 @@ address {
     grid-template-columns: repeat(5, 20%);
     align-content: center;
     height: 800px;
+    margin: 0;
 }
 
 .tech h2 {
@@ -566,19 +587,31 @@ address {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
+    align-items: center;
 }
 
 .contact h6 {
-    grid-column: 1/ span 6;
+    grid-column: span 6;
+    justify-self: center;
+    font-size: 120px;
 }
 
 .contact img {
-    grid-column: 2 / span 1;
-    position: relative;
+    grid-column: 3 / span 1;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
 }
 
-.contact-text, address {
-    grid-column: 2 / span 4;
+.contact-text {
+    grid-column: 3 / span 4;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+}
+
+address, .some-icon {
+    grid-column: span 6;
     justify-self: center;
 }
 
