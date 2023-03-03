@@ -1,0 +1,506 @@
+@import url('satoshi.css');
+@import url('eb-garamond.css');
+
+/*Variables*/
+:root {
+    /*Colors:*/
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+
+    --primary-headline-color: #0B24F5;
+    --secondary-headline-color: #565656;
+
+    --primary-container-color: #FCEDEA;
+    --secondary-container-color: #EDFFFF;
+    
+    --button-color: #F5F5F5;
+
+    --primary-button-hover-color: #EB5577;
+    --secondary-button-hover-color: #0B24F5;
+    --tertiary-button-hover-color: #FFD338; 
+   
+    --icon-color: #D0D0D0;
+    
+    --icon-hover-color: #000000;   
+
+    /*fonts */
+    --primary-font-family: 'Satoshi-Variable';
+    --secondary-font-family: 'EB-Garamond'
+}
+
+body, html {
+    font-family: var(--primary-font-family);
+    max-width: fit-content;
+    block-size: fit-content;
+    width:100%;
+    height:500vh;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height:100vh;
+    padding: 0px;
+    margin: 58px 24px;
+    margin-bottom: 0;
+}
+
+.header-left {
+    display: contents;
+}
+
+.header-presentation {
+    display: contents;
+}
+
+.header-presentation-container {
+    display: contents;
+}
+
+.header-right {
+    display: none;
+}
+
+.header-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width:100%;
+    margin-bottom: 29px;
+}
+
+.header-image img {
+    width: 164px;
+    height: 164px;
+    border-radius:50%;
+    object-fit: cover;
+}
+
+.header-titles {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 0px;
+    box-sizing: border-box;
+    width:100%;
+    margin-bottom: 37px;
+}
+
+.header-titles h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37.8px;
+    color: var(--primary-headline-color);
+}
+
+.header-titles h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43.2px;
+    color: var(--primary-text-color);
+}
+
+.header-titles h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32.4px;
+    color: var(--secondary-headline-color);
+}
+
+header p {
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28.71px;
+    box-sizing: border-box;
+    margin-bottom: 48px;
+}
+
+.header-social-media {
+    display: inline-flex;
+    justify-content: space-between;
+    width:100%;
+    margin-bottom: 30px;
+}
+
+.header-social-media i {
+    color: var(--icon-color);
+    font-size:30px;
+}
+
+.header-social-media i:hover {
+    color: var(--icon-hover-color)
+}
+
+.header-scroll {
+    width: 138px;
+    height: 138px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--primary-button-color);
+}
+
+.header-scroll p {
+    font-family: var(--primary-font-family);
+    margin:0;
+    width:auto;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 3px;
+}
+
+.arrow {
+    width: 19px;
+    height:30px;
+}
+
+.line {
+    width: 76px;
+    height: 3px;
+}
+
+
+/* TECH SECTION */
+
+.tech-section {
+    height:530px;
+    width: 100%;
+    background-color: var(--secondary-container-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 62px;
+}
+
+.tech-section p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    word-break: normal;
+    font-family: var(--secondary-font-family);
+    margin: 0 24px;
+    height: 160px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    color: var(--primary-headline-color)
+}
+
+mark {
+    padding-left: 2px;
+    padding-right:0px;
+    padding-bottom: 1px;
+}
+
+#javascript {
+    background-color: #EB5577;
+    color: var(--primary-color)
+}
+
+#react {
+    background-color: var(--primary-button-color);
+    color: var(--primary-color);
+}
+
+#mob-programming {
+    background-color: #2483E0;
+    color: var(--primary-color);
+}
+
+
+/* FEATURED PROJECTS */
+
+.featured-projects {
+    width:100%;
+}
+
+.featured-projects h4 {
+    font-size: 72px;
+    margin: 64px 24px;
+}
+
+.projects-contaier {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 64px 24px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+article img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.article-container {
+    display: contents;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+article h5 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43.2px;
+}
+
+article p {
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28.71px;
+}
+
+ul li {
+  display:inline;
+}
+
+li {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.6px;
+    padding: 2px 6px;
+}
+
+.featured-buttons {
+    display: contents;
+}
+
+article button {
+    background-color: var(--button-color);
+    border-radius: 40px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+    padding: 10.5px 16px 10.5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.fa-brands.fa-github, .fa-solid.fa-globe  {
+    font-size:28px;
+}
+
+.button-github {
+width: fit-content;
+}
+
+.button-live {
+width: fit-content; 
+}
+
+.button-github:hover {
+    background-color: var(--primary-button-hover-color);
+    color: var(--primary-color);
+}
+
+.button-live:hover {
+    background-color: var(--secondary-button-hover-color);
+    color: var(--primary-color);
+}
+
+@media (min-width:744px) and (max-width:1280px) {}
+
+@media (min-width:1280px) and (max-width:1512px) {
+
+
+    body, html {
+        max-width: 100%;
+    }
+
+
+    /* HEADER */
+
+    header {
+        flex-direction: row;
+        margin:0;
+        width: 100%;
+        height:100vh;
+        gap: 0;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .header-left {
+        display: block;
+        width: 50%;
+        height: 100%;
+        position: relative;
+        background-color: var(--primary-color);
+    }
+
+    .header-presentation {
+        width: 540px;
+        height: 431px;
+        position: absolute;
+        left: calc(50% - 540px/2);
+        top: calc(50% - 431px/2);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-presentation-container {
+        display: flex;
+        justify-content: flex-start;
+        width:100%;
+        align-items: center;
+        gap: 29px;
+        width: 496px;
+        align-self: flex-start;
+        margin-bottom: 32px;
+    }
+
+    .header-image {
+        display: contents;
+    }
+
+    .header-titles {
+        margin: 0px;
+        align-self: center;
+    }
+
+    header p {
+        width: 500px;
+        align-self: flex-end;
+    }
+
+    .header-social-media {
+        width: 288px;
+        margin-left:40px;
+        margin-bottom: 58px;
+    }
+
+    .header-right {
+        display: block;
+        width: 50%;
+        position: relative; 
+        height:100%;
+        background-color: var(--primary-container-color);
+    }
+
+    .header-logo {
+        position: absolute;
+        width: 436px;
+        height: 264px;
+        left: calc(50% - 436px/2);
+        top: calc(50% - 264px/2);
+    }
+
+    .header-scroll {
+        position: absolute;
+        left: calc(50% - 138px/2);
+        top: calc(90% - 138px/2);
+    }
+
+
+    /* TECH SECTION */
+
+    .tech-section {
+        height:100vh;
+        flex-direction: row;
+        gap: 143px;
+    }
+
+    .tech-languages {
+        max-width: 500px;
+    }
+
+    .tech-section p {
+        margin: 0;
+        height: auto;
+    }
+
+
+    /* FEATURED PROJECTS */
+
+    .featured-projects h4 {
+        margin: 120px 0px 40px 230px;
+    }
+
+    article {
+        flex-direction: row;
+        gap:40px;
+        height: 280px;
+    }
+
+    .projects-contaier {
+        gap: 120px;
+        margin: 64px 230px;
+    }
+
+    article img {
+        max-width: 280px;
+    }
+
+    .article-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .article-text {
+        display: contents;
+    }
+
+    article h5 {
+        margin-bottom: 12px;
+    }
+
+    article p {
+        margin-bottom: 24px;
+    }
+
+    .featured-buttons {
+        display: flex;
+        margin-top:50px;
+        gap:24px;
+    }
+
+    .button-github {
+        order: 1;
+    }
+
+}
+
+@media (min-width:1512px) {
+    header {
+    flex-direction: row;
+}
+
+.container-right {
+    display: flex;
+    width:50%;
+}
+
+} 
