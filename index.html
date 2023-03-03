@@ -13,23 +13,22 @@
     <title>Bridget Mailley, Frontend Developer</title>
 </head>
 <body>
-    <section class="big-img">
-        <!-- image for tablet and larger -->
-        <div id="header-image"></div>
-    </section>
-
     <header>
+        
+        <!-- image for tablet and larger -->
+        <div class ="header-image" id="header-image"></div>        
+        
         <img src="./assets/bridgetmailley.jpg" alt="profile picture for Bridget Mailley" class="profile-pic"/>
-        <div class="name-title">
+        <div class="name-title" tabindex="1">
             <h1>Bridget Mailley</h1>
             <h3>Frontend Developer</h3>
         </div>
-        <div class="self-intro">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, totam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quas officia laboriosam id adipisci, distinctio veritatis at numquam laborum repudiandae nihil. Officiis est quaerat illo id nam eos, facilis doloremque.</p>
+        <div class="self-intro" tabindex="2">
+            <p>Bridget is a talented developer with a background in the nonprofit sectors across several continents and contexts. She finds the problem-solving presented by frontend development to be deeply engrossing.  She is excited to keep learning new skills and technologies. Her wealth of experience, curiosity, and dedication to learning new skills make her a valuable asset to any team.</p>
         </div>
         <div class="contact-icons-wrapper">
-            <a href="https://www.linkedin.com/in/bridget-mailley/"><img src="./assets/linkedinlogo.png" alt="LinkedIn logo and link" class="contact-icons"></a>
-            <a href="https://github.com/beemailley"><img src="./assets/githublogo.png" alt="GitHub logo and link" class="contact-icons"></a>
+            <a href="https://www.linkedin.com/in/bridget-mailley/"><img src="./assets/linkedinlogo.png" alt="link to Bridget's linkedin page" class="contact-icons"></a>
+            <a href="https://github.com/beemailley"><img src="./assets/githublogo.png" alt="link to Bridget's github" class="contact-icons"></a>
         </div>
         <!-- <div class="scroll-wrapper">
             <span class="material-symbols-outlined">arrow_downward</span>
@@ -37,129 +36,156 @@
         </div> -->
     </header>
 
-    <section class="tech-section">
+    <section class="tech-section" tabindex="3">
         <h2>Tech</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro delectus, asperiores sequi odit laboriosam doloribus ab nisi. Dolorum nemo voluptatibus soluta adipisci, nam commodi iste, rerum excepturi optio illo pariatur?</p>
+        <p>JavaScript, CSS, Flexbox, Grid, HTML, APIs, pair-programming, mob-programming, GitHub, Figma / <span class="upcoming-tech">Coming Soon: React, React Hooks, Redux, Node.js, Mongo DB</span></p>
     </section>
 
     <section class="featured-projects">
         <h2>Featured Projects</h2>
         
-        <div class="each-project">
-            <img src="./assets/weatherapp.png" alt="weather app screenshot" class="project-img">
+        <div class="each-project" tabindex="4">
+            <img src="./assets/weatherapp.jpg" alt="a picture of sunglasses on sand at the beach" class="project-img">
             <h3 class="project-title">Weather App</h3>
-            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dicta veniam, porro laboriosam error aspernatur consectetur modi laborum nesciunt quas. Tenetur aspernatur praesentium esse, repellat quia vel tempora. Blanditiis, expedita quia nihil quis quod minus. Esse in perspiciatis est laboriosam eaque, delectus sunt quae alias?</p>
+            <p class="project-description">This Weather "App" pulls information from the Open Weather API to update the current and 5-day forecast. It shows temperatures in both Celsius and Fahrenheit, and changes color theme based on the current conditions. I did this project with a partner, so we also had to learn how to branch and merge in git.</p>
             <div class="project-tech-wrapper"><span class="project-tech">APIs</span><span class="project-tech">JavaScript ES6</span><span class="project-tech">CSS3</span><span class="project-tech">HTML5</span></div>
             <div class="project-buttons">
-                <button type="button" class="code-button"><img src="./assets/githublogo.png" alt="GitHub logo and link" class="code-button-icon"/><a href="https://github.com/beemailley/project-weather-app">View Code</a></button>
-                <button type="button" class="demo-button"><span class="material-symbols-outlined">language</span><a href="https://radiant-cobbler-4e855b.netlify.app/">See Demo</a></button></a>
+                <button type="button" class="code-button"><img src="./assets/githublogo.png" alt="link to weather app code" class="code-button-icon"/><a href="https://github.com/beemailley/project-weather-app">View Code</a></button>
+                <button type="button" class="demo-button"><span class="material-symbols-outlined" alt="link to weather app demo">language</span><a href="https://radiant-cobbler-4e855b.netlify.app/">See Demo</a></button>
             </div>
         </div>
 
-        <div class="each-project">
-            <img src="./assets/guesswho.png" alt="guess who game screenshot" class="project-img">
+        <div class="each-project" tabindex="5">
+            <img src="./assets/guesswho.jpg" alt="a blue videogame controller on a blue background" class="project-img">
             <h3 class="project-title">Guess Who?</h3>
-            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam culpa natus provident unde, quos temporibus asperiores autem voluptatibus, iusto quia impedit molestias cupiditate veniam blanditiis odit? Repudiandae beatae, est, dolores repellat alias harum fuga dolorum non praesentium ullam minima quibusdam voluptatem libero velit possimus.</p>
+            <p class="project-description">"Guess Who? Zelda Edition" is an interactive game that has the user trying to narrow down characters on the game board in order to guess the secret character. The main challenge for this project was to write the JavaScript and make the game playable. Once that was accomplished, I was able to change all of the characters and styling to a new theme.</p>
             <div class="project-tech-wrapper"><span class="project-tech">JavaScript ES6</span><span class="project-tech">CSS3</span><span class="project-tech">HTML5</span></div>
             <div class="project-buttons">
-                <button type="button" class="code-button"><img src="./assets/githublogo.png" alt="GitHub logo and link" class="code-button-icon"/><a href="https://github.com/beemailley/project-guess-who">View Code</a></button>
-                <button type="button" class="demo-button"><span class="material-symbols-outlined">language</span><a href="https://voluble-truffle-1251dc.netlify.app/">See Demo</a></button>
+                <button type="button" class="code-button"><img src="./assets/githublogo.png" alt="link to guess who game code" class="code-button-icon"/><a href="https://github.com/beemailley/project-guess-who">View Code</a></button>
+                <button type="button" class="demo-button"><span class="material-symbols-outlined" alt="link to guess who game demo">language</span><a href="https://voluble-truffle-1251dc.netlify.app/">See Demo</a></button>
             </div>
         </div>
 
-        <div class="each-project">
-            <img src="./assets/chatbot.png" alt="craft bot chat bot screenshot" class="project-img">
+        <div class="each-project" tabindex="6">
+            <img src="./assets/chatbot.jpg" alt="a patchwork of colorful fabrics" class="project-img">
             <h3 class="project-title">Chat Bot</h3>
-            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed at ad. Atque incidunt voluptates excepturi possimus soluta distinctio assumenda, harum, veniam dolorum laboriosam porro adipisci itaque ullam ipsa fugiat iusto dicta voluptatibus ipsum dolores vero eaque veritatis saepe eius! Dolore reiciendis vel voluptatibus assumenda!</p>
+            <p class="project-description">The "Craft Bot" is a bot that the user can request new craft ideas from.  The bulk of this project was learning and writing the JavaScript to make the bot responsive and functional. Once the bot offers you an idea, if you don't like it, you can ask for another!</p>
             <div class="project-tech-wrapper"><span class="project-tech">JavaScript ES6</span><span class="project-tech">CSS3</span><span class="project-tech">HTML5</span></div>
             <div class="project-buttons">
-                <button type="button" class="code-button"><img src="./assets/githublogo.png" alt="GitHub logo and link" class="code-button-icon"/><a href="https://github.com/beemailley/project-chatbot">View Code</a></button>
-                <button type="button" class="demo-button"><span class="material-symbols-outlined">language</span><a href="https://kaleidoscopic-puffpuff-67f436.netlify.app/">See Demo</a></button>
+                <button type="button" class="code-button"><img src="./assets/githublogo.png" alt="link to chat bot code" class="code-button-icon"/><a href="https://github.com/beemailley/project-chatbot">View Code</a></button>
+                <button type="button" class="demo-button"><span class="material-symbols-outlined" alt="link to chat bot demo">language</span><a href="https://kaleidoscopic-puffpuff-67f436.netlify.app/">See Demo</a></button>
             </div>
         </div>
 
-        <div class="each-project">
-            <img src="./assets/businesssite.png" alt="crafter's cottage screenshot" class="project-img">
+        <div class="each-project" tabindex="7">
+            <img src="./assets/businesssite.jpg" alt="abstract painting with colorful paints" class="project-img">
             <h3 class="project-title">Team Business Site</h3>
-            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ratione, fugit vel animi veniam nostrum, dignissimos quasi ducimus quibusdam amet facilis libero voluptas illum. Asperiores dolores facilis exercitationem labore magni voluptatibus molestiae sunt officiis porro ullam. Rerum possimus quis enim delectus dignissimos voluptas, optio repellendus.</p>
+            <p class="project-description">To create the "Crafter's Cottage" page, I worked with a team of my peers over the course of two days to mob program the entire site. This was also our first experience learning and implementing JavaScript! </p>
             <div class="project-tech-wrapper"><span class="project-tech">JavaScript ES6</span><span class="project-tech">CSS3</span><span class="project-tech">HTML5</span></div>
             <div class="project-buttons">  
-                <button type="button" class="code-button"><img src="./assets/githublogo.png" alt="GitHub logo and link" class="code-button-icon"/><a href="https://github.com/fridanordenlow/project-business-site">View Code</a></button>
-                <button type="button" class="demo-button"><span class="material-symbols-outlined">language</span><a href="https://endearing-gumption-b7923c.netlify.app/">See Demo</a></button>
+                <button type="button" class="code-button"><img src="./assets/githublogo.png" alt="link to business site code" class="code-button-icon"/><a href="https://github.com/fridanordenlow/project-business-site">View Code</a></button>
+                <button type="button" class="demo-button"><span class="material-symbols-outlined" alt="link to business site demo">language</span><a href="https://endearing-gumption-b7923c.netlify.app/">See Demo</a></button>
             </div>
         </div>
 
-        <div class="each-project">
-            <img src="./assets/newsite.png" alt="Cuppa News screenshot" class="project-img">
+        <div class="each-project" tabindex="8">
+            <img src="./assets/newsite.jpg" alt="brown coffee beans" class="project-img">
             <h3 class="project-title">News Site</h3>
-            <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem qui aperiam in ipsam totam consequuntur aut minima aliquid architecto inventore, dignissimos rem assumenda cupiditate? Quo velit fuga recusandae ducimus. Consequatur consequuntur ipsum saepe delectus temporibus, soluta voluptatum perferendis iusto impedit suscipit pariatur qui odio dolores.</p>
+            <p class="project-description">The "Cuppa News" News site was the first website that I built from scratch.  I used both Flexbox and CSS to style the page. I learned how to make the website responsive and learned a ton about styling.</p>
             <div class="project-tech-wrapper"><span class="project-tech">CSS3</span><span class="project-tech">HTML5</span></div>
             <div class="project-buttons">  
-                <button type="button" class="code-button"><img src="./assets/githublogo.png" alt="GitHub logo and link" class="code-button-icon"/><a href="https://github.com/beemailley/project-news-site">View Code</a></button>
-                <button type="button" class="demo-button"><span class="material-symbols-outlined">language</span><a href="https://superb-pithivier-950ef3.netlify.app/">See Demo</a></button>
+                <button type="button" class="code-button"><img src="./assets/githublogo.png" alt="link to news site code" class="code-button-icon"/><a href="https://github.com/beemailley/project-news-site">View Code</a></button>
+                <button type="button" class="demo-button"><span class="material-symbols-outlined" alt="link to news site demo">language</span><a href="https://superb-pithivier-950ef3.netlify.app/">See Demo</a></button>
             </div>
         </div>
     </section>
 
-    <section class="my-words">
+    <!-- <section class="my-words" tabindex="9">
         <h2>My Words</h2>
-       
-        <div class="my-words-list">
+        <div class="my-words-all">
+
+        <div class="each-my-words" tabindex="10">
             <img src="https://picsum.photos/300/200" alt="placeholder">
             <h5>Date</h5>
             <h3>Post Title</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere cum delectus quidem velit nesciunt.</p>
             <button type="button" class="read-button"><span class="material-symbols-outlined">library_books</span> Read Article</button>
         </div>
-    </section>
 
-    <section class="skills-section">
+        <div class="each-my-words">
+            <img src="https://picsum.photos/300/200" alt="placeholder">
+            <h5>Date</h5>
+            <h3>Post Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere cum delectus quidem velit nesciunt.</p>
+            <button type="button" class="read-button"><span class="material-symbols-outlined">library_books</span> Read Article</button>
+        </div>
+
+        <div class="each-my-words">
+            <img src="https://picsum.photos/300/200" alt="placeholder">
+            <h5>Date</h5>
+            <h3>Post Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere cum delectus quidem velit nesciunt.</p>
+            <button type="button" class="read-button"><span class="material-symbols-outlined">library_books</span> Read Article</button>
+        </div>
+
+        <div class="each-my-words">
+            <img src="https://picsum.photos/300/200" alt="placeholder">
+            <h5>Date</h5>
+            <h3>Post Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere cum delectus quidem velit nesciunt.</p>
+            <button type="button" class="read-button"><span class="material-symbols-outlined">library_books</span> Read Article</button>
+        </div>
+
+        </div>
+    </section> -->
+
+    <section class="skills-section" tabindex="15">
         <h2 class="skills-header">Skills</h2>
         <div class="skills-one">
             <h4>Code</h4>
             <ul class="skills-list">
-                <li><p>Skill</p></li>
-                <li><p>Skill</p></li>
-                <li><p>Skill</p></li>
+                <li><p>HTML5</p></li>
+                <li><p>CSS3</p></li>
+                <li><p>JavaScript ES6</p></li>
             </ul>
         </div>
         <div class="skills-two">
         <h4>Toolbox</h4>
             <ul class="skills-list">
-                <li><p>Skill</p></li>
-                <li><p>Skill</p></li>
-                <li><p>Skill</p></li>
+                <li><p>GitHub</p></li>
+                <li><p>Figma</p></li>
+                <li><p>Salesforce</p></li>
             </ul>
         </div>
         <div class="skills-three">
             <h4>More</h4>
             <ul class="skills-list">
-                <li><p>Skill</p></li>
-                <li><p>Skill</p></li>
-                <li><p>Skill</p></li>
+                <li><p>Project Management</p></li>
+                <li><p>Relationship Managment</p></li>
+                <li><p>Database Management</p></li>
             </ul>
         </div>
         <div class="skills-four">
-            <h4>Coming Soon</h4>
+            <h4>Upcoming</h4>
             <ul class="skills-list">
-                <li><p>Skill</p></li>
-                <li><p>Skill</p></li>
-                <li><p>Skill</p></li>
+                <li><p>React</p></li>
+                <li><p>Redux</p></li>
+                <li><p>Node.js</p></li>
             </ul>
     </div>
     </section>
 
-    <section class="contact-me">
+    <section class="contact-me" tabindex="16">
         <h2 class="time-to-talk">Time to Talk</h2>
         <img src="./assets/bridgetmailley.jpg" alt="profile picture for Bridget Mailley" class="contact-profile-pic"/>
         <div class="contact-name-title">
             <h1>Bridget Mailley</h1>
             <h3>Frontend Developer</h3>
         </div>
-            <h3 class="contact-email"><a href = "mailto: bmailley42@gmail.com">Send Me an Email</a></h3>
+            <h3 class="contact-email"><a href = "mailto:bmailley42@gmail.com">Send Me an Email</a></h3>
         <div class="contact-icons-wrapper-bottom">
-            <a href="https://www.linkedin.com/in/bridget-mailley/"><img src="./assets/linkedinlogo.png" alt="LinkedIn logo and link" class="contact-icons"></a>
-            <a href="https://github.com/beemailley"><img src="./assets/githublogo.png" alt="GitHub logo and link" class="contact-icons"></a>
+            <a href="https://www.linkedin.com/in/bridget-mailley/"><img src="./assets/linkedinlogo.png" alt="link to Bridget's linkedin page" class="contact-icons"></a>
+            <a href="https://github.com/beemailley"><img src="./assets/githublogo.png" alt="link to Bridget's github" class="contact-icons"></a>
         </div>
     </section>
 

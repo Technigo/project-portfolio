@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: SatoshiBlack;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     src: url('./fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf');
 }
 
@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: SatoshiMedium;
-    font-weight: medium;
+    /* font-weight: medium; */
     src: url('./fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf');
 }
 
@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: SatoshiLight;
-    font-weight:lighter;
+    /* font-weight:lighter; */
     src: url('./fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf');
 }
 
@@ -34,6 +34,11 @@
     font-family: DosisMedium;
     font-weight: normal;
     src: url('./fonts/Dosis/static/Dosis-Medium.ttf');
+}
+
+@font-face {
+    font-family: DosisExtraLight;
+    src: url('./fonts/Dosis/static/Dosis-ExtraLight.ttf')
 }
 
 body{
@@ -47,6 +52,7 @@ h1 {
     font-family: SatoshiBold;
     font-size: 26px;
     margin: 0;
+    color: #0e44d8;
 }
 
 h2 {
@@ -54,6 +60,7 @@ h2 {
     font-size: 65px;
     text-align: center;  
     margin: 50px 0 30px 0;
+    color: #086D6D;
 }
 
 h3 {
@@ -85,17 +92,18 @@ p {
 
 a:link {
     text-decoration: none;
-    /* color: black; */
+    color: black;
 }
 
 a:visited {
     text-decoration: none;
-    /* color: black; */
+    color: black;
 }
 
 a:hover {
     text-decoration: none;
     cursor:pointer;
+    color: black;
 }
 
 a:active {
@@ -109,12 +117,28 @@ button {
     margin: 15px 0;
     padding: 10px;
     display: flex;
-    /* background-color:lightgray;
-    border: lightgray 1px solid; */ 
 }
 
 button:hover {
     cursor: pointer;
+}
+
+.code-button, .demo-button {
+    background-color: #eaf8fb;
+}
+
+.code-button:hover, .demo-button:hover {
+    background-color: #afe4e4;
+    transform: scale(1.1);
+}
+
+.read-button {
+    background-color: white;
+}
+
+.read-button:hover {
+    background-color: #E4AFC9;
+    transform: scale(1.1);
 }
 
 /* Button Icons */
@@ -156,11 +180,8 @@ button:hover {
 
 /* Header Image for Tablet and Larger */
 
-.header-img {
+.header-image {
     display: none;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
   }
 
 /* Header Section */
@@ -168,7 +189,7 @@ button:hover {
 header{
     display:grid;
     box-sizing: border-box;
-    margin: 0 15px;
+    /* border: white 5px solid; */
 }
 
 header h3{
@@ -184,10 +205,20 @@ header h3{
     margin: 40px 0;
 }
 
+.name-title {
+    margin: 0 15px;
+}
+
+.self-intro {
+    margin: 0 15px;
+}
+
+
 .contact-icons-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0 0 75px 0;
 }
 
 .contact-icons {
@@ -205,23 +236,39 @@ header h3{
 /* Tech Section */
 
 .tech-section {
-    margin: 75px 15px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: #eaf8fb 5px solid;
+    background-color: #eaf8fb ;
+}
+
+.tech-section h2 {
+    margin: 75px 0 0 0;
+}
+
+.tech-section p {
+    margin: 0 15px 75px 15px;
+}
+
+.upcoming-tech {
+    font-family: DosisExtraLight;
+    color: #4d4d4d;
 }
 
 /* Featured Projects Section */
 
 .featured-projects {
-    margin: 75px 0;
+    margin: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    border: white 5px solid;
 }
 
 .each-project{
     padding: 0;
-    margin: 15px;
+    margin: 10px 15px 50px 15px;
     max-width: 100%;
 }
 
@@ -245,18 +292,24 @@ header h3{
 /* My Words */
 
 .my-words {
-    margin: 75px 0;
+    margin: 0;
     box-sizing: border-box;
-    display: none; 
+    display: flex; 
     /* use display: flex; when showing */
     flex-direction: column;
-    gap: 15px;
+    border: #f8edf2 5px solid;
+    background-color: #f8edf2;
 }
 
-.my-words-list{
+.each-my-words{
     list-style-type: none;
     padding: 0;
-    margin: 15px;
+    margin: 10px 15px 50px 15px;
+}
+
+.my-words h2{
+    margin: 75px 0 30px 0;
+    color:#c00c66;
 }
 
 .my-words h3{
@@ -266,8 +319,14 @@ header h3{
 /* Skills List */
 
 .skills-section {
-    margin: 75px 0;
+    margin: 0;
     box-sizing: border-box;
+    border: #eaf8fb 5px solid;
+    background-color: #eaf8fb ;
+}
+
+.skills-section h2 {
+    margin: 75px 0 30px 0;
 }
 
 ul.skills-list{
@@ -280,12 +339,16 @@ ul.skills-list{
     margin: 5px 0;
 }
 
+.skills-four {
+    margin: 0 0 75px 0;
+}
+
 /* Time to Talk */
 
 .contact-me {
     display:grid;
     box-sizing: border-box;
-    margin: 0 15px;
+    border: white 5px solid;
 }
 
 .contact-profile-pic {
@@ -297,6 +360,10 @@ ul.skills-list{
     margin: 40px 0;
 }
 
+.contact-email:hover {
+    font-size: 30px;
+}
+
 .contact-me h1 {
     text-align: center;
 }
@@ -304,6 +371,7 @@ ul.skills-list{
 .contact-me h2 {
     font-family: SatoshiBlack;
     font-size: 50px; 
+    margin: 75px 0 30px 0;
 }
 
 .contact-me h3 {
@@ -315,6 +383,7 @@ ul.skills-list{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0 0 75px 0;
 }
 
 .contact-icons {
@@ -330,75 +399,85 @@ ul.skills-list{
 }
 
 
-@media (min-width:667px) and (max-width:1024px) {
+@media (min-width: 667px) and (max-width: 1024px) {
 
 /* Header for Tablet */
 
-    .header-img {
-        display:flex;
+    header {
+        display:grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 350px [row-start] 250px [row-start] 150px [row-start] 155px [row-start];
+        margin: 0;
+    }
+
+    .header-image {
+        display: block;
         width: 100%;
         height: 350px;
         object-fit: cover;
-        margin: 0 0 50px 0;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
         }
-
-    header{
-        display:grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 200px [row-start] 200px [row-start] 80px [row-start];
-        margin: 0 75px;
-    }
-    
+  
     .profile-pic {
         grid-column: 1 / 2;
+        grid-row: 2 / 3;
         align-self: center;
         justify-self: end;
         margin: 40px 15px; 
     }
 
     .name-title {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
         display: grid;
         align-content: center;
     }
 
     .self-intro {
-        grid-row: 2 / 3;
+        grid-row: 3 / 4;
         grid-column: 1 / 3;
         display: grid;
         align-items: center;
+        margin: 0 75px;
+        align-self: start;
     }
     
     .contact-icons-wrapper {
-        grid-row: 3 / 4;
+        grid-row: 4 / 5;
         grid-column: 1 / 3;
+        margin: 0 0 75px 0;
 
     }
 
 /* Tech Section for Tablet */
 
     .tech-section p {
-        margin: 1em 75px;
+        margin: 0 75px 75px 75px;
     }
 
 /* Featured Projects for Tablet */
 
     .featured-projects {
-        margin: 75px 0;
+        margin: 0;
         box-sizing: border-box;
         display: grid;       
+    }
+
+    .featured-projects h2{
+        margin: 75px 0 30px 0;
     }
     
     .each-project{
         display: grid;
         grid-template-columns: 40% 60%;
-        grid-template-rows: 75px [row-start] 225px [row-start] 45px [row-start] 80px [row-start];
-        margin: 15px;
-        gap: 2px;
+        grid-template-rows: 75px [row-start] 175px [row-start] 45px [row-start] 80px [row-start];
+        margin: 10px 15px 50px 15px;
     }
     
     .project-img {
         width: 80%;
-        height: 400px;
+        height: 350px;
         object-fit: cover;
         grid-row: 1 / 5;
         grid-column: 1 / 2;
@@ -415,7 +494,7 @@ ul.skills-list{
 
     .project-description {
         max-height: 195px;
-        overflow: scroll;
+        overflow: hidden;
         margin-block-start: 0;
         margin-block-end: 0;
         margin: 5px 20px 5px 0;
@@ -435,12 +514,18 @@ ul.skills-list{
         gap: 10px;
     }
 
+/* My Words for Tablet */
+
+    .each-my-words {
+        margin: 0 75px 50px 75px;
+    }
+
 /* Skills for Tablet */
 
     .skills-section {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 150px [row-start] 175px [row-start] 175px [row-start];
+        grid-template-rows: 150px [row-start] 175px [row-start] 250px [row-start];
     }
 
     .skills-header {
@@ -448,13 +533,20 @@ ul.skills-list{
         grid-column: 1 / 3;
     }
 
+    .skills-four {
+        margin: 0 0 75px 0;
+    }
 
 /* Time to Talk for Tablet */
 
     .contact-me {
         display:grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 150 [row-start] 200px [row-start] 80px [row-start] 80px [row-start];
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 175px [row-start] 250px [row-start] 80px [row-start] 80px [row-start];
+    }
+
+    .contact-me h2 {
+          font-size: 65px; 
     }
 
     .time-to-talk{
@@ -486,20 +578,221 @@ ul.skills-list{
         justify-content: center;
     }
 
-
     .contact-icons-wrapper-bottom {
         grid-row: 4 / 5;
         grid-column: 1 / 3;
-        margin-bottom: 75px;
+        margin: 0 0 75px 0;
     }
 
 }
 
 @media (min-width:1025px) {
-    /* .header-img {
-        display:flex;
+
+/* Header for Desktop */
+
+    header {
+        display: grid;
+        grid-template-columns: 20% 30% 50%;
+        grid-template-rows:  250px [row-start] 200px [row-start] 220px [row-start] 80px [row-start] 250px [row-start];
+        margin: 0;
+    }
+
+    .header-image {
+        display: block;
         width: 100%;
-        height: 200px;
+        height: 1000px;
         object-fit: cover;
-      } */
-}
+        grid-column: 3 / 4;
+        grid-row: 1 / 6;
+        }
+
+  
+    .profile-pic {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        align-self: center;
+        justify-self: end;
+        margin: 40px 15px; 
+    }
+
+    .name-title {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: grid;
+        align-content: center;
+    }
+
+    .self-intro {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        display: grid;
+        align-items: center;
+        margin: 0 75px;
+        align-self: start;
+    }
+
+    .contact-icons-wrapper {
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+
+    }
+
+/* Tech Section for Desktop */
+
+    .tech-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tech-section h2 {
+        margin: auto 20%;
+    }
+
+    .tech-section p {
+        margin: 150px 100px 150px 0;
+    }
+
+/* Featured Projects for Desktop */
+
+    .featured-projects {
+        margin: 0;
+        box-sizing: border-box;
+        display: grid;       
+    }
+
+    .featured-projects h2 {
+        margin: 75px 0 30px 0;
+    }
+    
+    .each-project{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 75px [row-start] 175px [row-start] 45px [row-start] 80px [row-start];
+        margin: 0 100px 50px 100px;
+    }
+    
+    .project-img {
+        width: 80%;
+        height: 350px;
+        object-fit: cover;
+        grid-row: 1 / 5;
+        grid-column: 1 / 2;
+        place-self: center;
+        margin: 10px;
+    }
+
+    .project-title{
+        display: grid;
+        align-content: center;
+        margin-block-start: .5em;
+        margin-block-end: 0;
+    }
+
+    .project-description {
+        max-height: 195px;
+        overflow: hidden;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin: 5px 0;
+    }
+
+    .project-tech-wrapper {
+        display: flex;
+        margin: 5px;
+    }
+
+    .project-tech {
+        margin: 5px 2px;
+    }
+
+    .project-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+/* My Words for Tablet */
+
+    .my-words-all {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .each-my-words {
+        margin: 0 75px 75px 75px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .read-button {
+        width: 175px;
+    }
+
+/* Skills for Desktop */
+
+    .skills-section {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 150px [row-start] 250px [row-start];
+        margin: 0;
+    }
+
+    .skills-header {
+        grid-row: 1 / 2;
+        grid-column: 1 / 5;
+    }
+
+    .skills-four {
+        margin: 0 0 75px 0;
+    }
+
+/* Time to Talk for Desktop */
+
+    .contact-me {
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 175px [row-start] 250px [row-start] 100px [row-start] 80px [row-start];
+    }
+
+    .contact-me h2 {
+        font-size: 65px; 
+  }
+
+    .time-to-talk{
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+
+    .contact-profile-pic{
+        align-self: center;
+        justify-self: end;
+        margin: 40px 15px 40px 0;
+    }
+
+    .contact-name-title{
+        display: grid;
+        align-self: center;
+        justify-self: start;
+    }
+
+    .contact-name-title h1 {
+        align-self: center;
+        justify-self: start;
+    }
+
+    .contact-email{
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        display: grid;
+        justify-content: center;
+    }
+
+    .contact-icons-wrapper-bottom {
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+    }
+
+} 
