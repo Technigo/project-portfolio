@@ -51,15 +51,21 @@ body {
     font-style: normal;
  }
  .round-image {
-    flex: 0 0 100px;
     border-radius: 50%;
     width: 164px;
     height: 164px;
-    padding: 10px;
-    padding-top: 40px;
-    /* margin-bottom: 10px; */
-
+    margin-top: 20px;
+    padding: 20px;
+    object-fit: cover;
+    object-position: center;
 }
+
+.front-img {
+    object-fit: cover;
+    object-position: top;
+}
+
+
 
 /* --------------------------SECOND CONTAINER-------------------------------- */
 .about-container {
@@ -212,10 +218,9 @@ body {
     font-family: 'SatoshiBold';
     font-size: 32px;
     font-weight: 900;
-    letter-spacing: 0em;
     align-self: flex-start;
     color: #000000;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 .project-about {
@@ -440,10 +445,11 @@ body {
     border-radius: 50%;
     width: 164px;
     height: 164px;
-    justify-content: flex-start;
     float: left;
     margin-top: 20px;
     padding: 20px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .phone {
@@ -462,3 +468,9 @@ body {
     line-height: 32px;
     padding: 20px;
 }
+
+@media (max-width: 767px) { /* hide image on mobile */
+    .image {
+      display: none;
+    }
+  }
