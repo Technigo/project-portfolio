@@ -1,9 +1,43 @@
+* {
+    margin: 0;
+    
+  }
 
 
 .column-one {
-    background-color: bisque;
-    border: solid red;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: linen;
 }
+
+
+
+.profile-image {
+    align-self: center;
+    margin: 55px;
+    width: 164px;
+    height: 164px;
+    object-fit: cover;
+    border-radius: 100px;
+    
+}
+  
+.name {
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.title {
+    font-size: 32px;
+    line-height: 43px;
+}
+
+.about-me {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
 
 .tech-header {
     font-size: 65px;
@@ -11,9 +45,12 @@
 }
 
 .tech {
-    display:grid;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: aliceblue;
     row-gap: 5px;
+    padding: 20px;
     
 }
 
@@ -23,17 +60,17 @@
 
 
 .projects {
-    display: grid;
-    border: solid red;
-    gap: 20px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    padding: 20px;
+
 }
 
 .project-image {
     width: 327px;
     height: 280px;
     object-fit: cover;
-    align-items: center;
 }
 
 .projectname {
