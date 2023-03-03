@@ -68,12 +68,12 @@ p {
     flex-direction: column;
 }
     
-/* felpositionerad, ej i linje med text under */
 .presentationcontainerchild {
     display: flex;
     flex-direction: column;
     width: 80.8%;
     margin-bottom: 40px;
+    max-width: 100%;
 }
 
 .imgLT1 {
@@ -81,7 +81,8 @@ p {
     height: 164px;
     border-radius: 50%;
     background: #D9D9D9;
-    align-content: center;
+    margin-left: 52px;
+
 }
 
 .introduction {
@@ -112,7 +113,8 @@ p {
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
-    line-height: 22px;
+    /* line-height: 22px;
+    color: #0B24F5; fungerar ej av någon anledning*/
 }
 
 .arrowImg {
@@ -131,7 +133,8 @@ p {
 }
 
 .techdescription {
-    width: 279px;
+    width: 92%;
+    max-width: 500px;
     height: 160px;
     font-size: 22px;
     font-family: 'EB Garamond';
@@ -238,7 +241,6 @@ p {
     margin-right: 6.4%;
 }
 
-    /* felpositionerad även denna img */
 .articleimg {
     height: auto;
     max-height: 280px;
@@ -304,7 +306,7 @@ p {
 
 }
 
-    /* Page 5 */
+    /* Page 6 */
 
 .contact {
     background-color: #F5F5F5;
@@ -347,7 +349,7 @@ p {
     
 }
 
-a, .contactinformation {
+.contactinformation a {
     color: #000000;
     font-family: 'Satoshi';
     font-style: normal;
@@ -396,14 +398,73 @@ a, .contactinformation {
 }
 
 @media (min-width:600px) and (max-width:767px){
-  
+
+.firstpagecontainer {
+    display: flex;
+    flex-direction: column-reverse;
+} 
+
+.topleftinnercontainer {
+    width: 80.8%;
 }
 
+.imgLT1 {
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    margin-left: 0px;
+    margin-right: 5%;
+    }
 
-@media (min-width:768px) and (max-width:1279px){
+.presentationcontainer {
+    flex-direction: row; 
+}
+
+.introduction {
+margin-left: 40px;
+width: fit-content;
+max-width: 100%;
+margin-bottom: 40px;
+}
+
+.socialmedialinks {
+    margin-top: 15%;
+}
+
+.toprightbox {
+    display: flex;
+    contain: content;
+    height: 412px;
+    display: inline;
+}
+
+    /* Page 2 */
+
   
+    .tech {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .techdescription {
+        width: 67%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 120px;
+    }
+    
+
+}
+/*
+@media (min-width:768px) and (max-width:1279px){
+
 }
 
 
 @media (min-width:1280px){
-  }
+  
+} */
