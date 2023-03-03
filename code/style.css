@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    max-width: 667px;
+    /*max-width: 667px;*/
 
 }
 
@@ -371,6 +371,11 @@ li {
     background: white;
 }
 
+.logo-container {
+    display: none;
+    background: #FCEDEA;
+}
+
 /* Media queries */
 @media screen and (min-width: 350px) and (max-width: 667px) {
     body {
@@ -383,4 +388,39 @@ li {
     h5 {
         font-size: 4.5rem;
     }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1023px) {
+
+    html {
+        max-width: 1023px;
+    }
+
+    .logo-container {
+        display: flex;
+        height: 412px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .header-and-logo {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
+    .logo-container {
+        display: flex;
+        flex-basis: 50%;
+        height: 980px;
+    }
+
+    header {
+        flex-basis: 50%;
+        height: 980px;
+    }
+
+    
 }
