@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: satoshi, sans-serif;
+  font-family: Satoshi, sans-serif;
 }
 
 .desktop-view {
@@ -26,6 +26,16 @@ header {
   flex-direction: column;
   margin: 55px 24px 0 24px;
 }
+.profile-img {
+    height: 164px;
+    width: 164px;
+    border-radius: 50%;
+  }
+
+header img {
+    align-self: center;
+    margin-bottom: 29px;
+}  
 
 header h1 {
   color: var(--secondary);
@@ -49,14 +59,6 @@ header h3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
-}
-
-.profile-img {
-  height: 164px;
-  width: 164px;
-  border-radius: 50%;
-  align-self: center;
-  margin-bottom: 29px;
 }
 
 .personal-summary {
@@ -164,6 +166,7 @@ img:focus {
   font-weight: 700;
   font-size: 72px;
   margin: 64px 0;
+  text-align: center;
 }
 
 .featured-project h3 {
@@ -272,11 +275,15 @@ button p {
     font-size: 22px;
 }
 
-.my-word-section button p{
-    font-family: satoshi;
+.my-word-section button p {
+    font-family: Satoshi;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .my-word-section button {
+    width: 178px;
     margin-top: 24px;
     border: unset;
     display: flex;
@@ -285,6 +292,10 @@ button p {
     background-color: #f5f5f5;
     border-radius: 40px;
     padding: 11px 16px 11px 14px;
+}
+
+.my-word-section button:hover, button:focus {
+    background-color: #FFD338;
 }
 
 .skills-section {
@@ -346,6 +357,47 @@ button p {
 .green {
     background-color: #6DB486;
     color: #FFFFFF;
+}
+
+.talk-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 56px;
+    padding: 64px 24px 63px 24px;
+}
+
+.talk-container h2 {
+    color: #EB5577;
+    font-family: 'Satoshi';
+    font-weight: 900;
+    font-size: 58px;
+    text-align: center;
+}
+
+.talk-container h3 {
+    color: #0B24F5;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 29px;
+}
+
+.talk-container h4 {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.talk-container h5 {
+    color: #565656;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.mail-phone-info {
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: -5px;
 }
 
 /* Tablet */
@@ -454,9 +506,37 @@ button p {
   }
 
   .list-skills {
-    max-width: 50%;
+    max-width: 46%;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .talk-container {
+    padding: 196px 33px 168px 33px;
+  }
+    
+  .talk-container h2 {
+    font-size: 120px;
+  }
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+  }
+
+  .contact-info-main {
+    max-width: 303px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .contact-info-main h3{
+    margin-top: unset;
+  }
+
+  .mail-phone-info {
+    align-self: center;
   }
 }
 
