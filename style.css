@@ -128,7 +128,8 @@ p {
 .section-wrapper,
 .tech-wrapper,
 .featured-wrapper,
-.skills-wrapper {
+.skills-list,
+.words-section-wrapper {
   width: 327px;
   margin: auto;
 }
@@ -180,7 +181,8 @@ p {
 }
 
 .view-demo-link,
-.view-code-link {
+.view-code-link,
+.words-button {
   display: flex;
   align-items: center;
   font-family: "Satoshi-Medium";
@@ -192,8 +194,13 @@ p {
   border: 0px;
 }
 
+.view-code-link {
+  width: 200px;
+}
+
 .view-demo-link img,
-.view-code-link img {
+.view-code-link img,
+.words-button img {
   width: 48px;
 }
 
@@ -211,9 +218,64 @@ p {
   color: white;
 }
 
-
 .view-wrapper a:hover img {
   filter: invert(100%);
+}
+
+/* My words-section */
+
+.words-section {
+  background-color: #FCEDEA;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.words-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 98px;
+}
+
+.words-h2 {
+  font-size: 72px;
+  color: #EB5577;
+  text-align: center;
+}
+
+.words-article {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.words-image {
+height: 340px;
+width: 327px;
+object-fit: cover;
+}
+
+.date-tag {
+  font-family: "Satoshi-Black";
+  color: #EB5577;
+  font-size: 20;
+  margin-bottom: 6px;
+}
+
+.words-button {
+  width: 178px;
+  background: #ffffff;  
+}
+
+.words-h3 {
+margin: unset;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+.words-button:hover {
+  background: #FFD338;
 }
 
 .skills-section {
@@ -349,8 +411,15 @@ gap: 20px;
   }
 
  
+.words-section-wrapper {
+  width: 564px;
+}
 
- 
+.words-image {
+  display: block;
+  width: 564px;
+  max-height: 100%;
+}
 
 .tech {
 height: 800px;
@@ -381,17 +450,15 @@ height: 800px;
   padding-bottom: 0;
 }
 
-.skills-header-wrapper {
-  text-align: center;
-}
-
-.skills-wrapper {
+.skills-header {
   margin: unset;
+  text-align: center;
   margin-top: 60px;
   margin-bottom: 40px;
 }
 
 .skills-list {
+width: 400px;
 display: grid;
 grid-template-columns: 183px 183px;
 gap: 60px;
@@ -593,8 +660,27 @@ header {
   height: 280px;
   width: 280px;
   }
+
+  .words-section-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1112px;
+    gap: 32px;
+  }
+  
+  .words-image {
+    display: block;
+    width: 540px;
+    max-height: 100%;
+  }
+
+  .words-article {
+    margin-bottom: 60px;
+    width: 540px;
+  }
   
 .skills-list {
+  width: 851px;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
