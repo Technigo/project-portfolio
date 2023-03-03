@@ -370,25 +370,26 @@ address {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
+    gap: 32px;
 }
 
 .intro img {
     align-self: start;
-    grid-column: 2/ span 1;
+    grid-column: 1/ span 1;
+    grid-row: 2;
     margin: 0;
 }
 
-.intro-text :not(p){
+.intro-text {
     grid-column: span 4;
-}
-
-.text p{
-    grid-column: span 5;
-    margin-top: 32px;
+    grid-row: 2;
 }
 
 .some-icon {
-    grid-column: 2;
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    margin-top: 50px;
+
 }
 
 .tech h4, p {
@@ -625,33 +626,36 @@ address, .some-icon {
 
 .contact {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
     align-items: center;
 }
 
 .contact h5 {
-    grid-column: span 6;
+    grid-column: span 7;
     justify-self: center;
     font-size: 120px;
+    margin: 50px;
 }
 
 .contact img {
     grid-column: 3 / span 1;
+    grid-row: 2;
     align-self: center;
     justify-self: center;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .contact-text {
-    grid-column: 3 / span 4;
+    grid-column: 4 / span 2;
+    grid-row: 2;
     align-self: center;
     justify-self: center;
     margin: 0;
 }
 
 address, .some-icon {
-    grid-column: span 6;
+    grid-column: span 7;
     justify-self: center;
 }
 
