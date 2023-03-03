@@ -6,6 +6,8 @@
 
 header {
   height: 100vh;
+  padding-bottom: 98px;
+  padding-top: 55px;
 }
 
 h2 {
@@ -13,7 +15,7 @@ h2 {
   font-size: 80px;
   color: #0b24f5;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 
 .info-wrapper {
@@ -72,7 +74,7 @@ h4 {
   font-family: "Satoshi-Medium";
   color: #565656;
   font-size: 24px;
-  margin-bottom: 2rem;
+  margin-bottom: 55px;
 }
 
 .scroll-text {
@@ -88,7 +90,7 @@ p {
 }
 
 .social-media-links {
-  margin-top: 3rem;
+  margin-top: 55px;
   display: flex;
   justify-content: space-around;
   gap: 3rem;
@@ -107,7 +109,7 @@ p {
 }
 
 .scroll img {
-  margin: 1rem;
+  margin-bottom: 25px;
 }
 
 .scroll a:visited {
@@ -116,7 +118,7 @@ p {
 
 .tech {
   background-color: #edffff;
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 120px;
   height: 530px;
   display: flex;
@@ -137,14 +139,15 @@ p {
 .featured {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 92px;
+  padding-bottom: 85px;
 }
 
 .featured h2 {
   font-size: 72px;
   text-align: left;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 76px; 
 }
 
 .featured-article {
@@ -547,6 +550,9 @@ align-items: unset;
   margin-left: 5%;
 }
 
+.featured {
+  padding-bottom: 120px;
+}
 
 .featured h2 {
   margin-bottom: 45px;
@@ -612,8 +618,8 @@ align-items: unset;
 
 }
 
-/* Desktop normal */
-@media(min-width: 1280px) and (max-width: 1511px) {
+/* Desktop */
+@media(min-width: 1280px) {
 
 .desktop-view {
   display: grid;
@@ -649,6 +655,10 @@ header {
   width: 820px;
 }
 
+.featured {
+  padding-bottom: 92px;
+}
+
 .featured-wrapper,
 .featured-article {
   width: 820px;
@@ -659,6 +669,13 @@ header {
   object-fit: cover;
   height: 280px;
   width: 280px;
+  }
+
+  .words-h2 {
+    text-align: unset;
+    width: 1112px;
+    margin: auto;
+    margin-bottom: 60px;
   }
 
   .words-section-wrapper {
@@ -703,4 +720,23 @@ margin-top: 0;
 .skills-section li {
   text-align: left;
 }
+}
+
+/* Desktop large */
+
+@media(min-width: 1512px) {
+
+.words-section-wrapper {
+  width: 1226px;
+  justify-content: space-between;
+}
+
+.words-h2 {
+  width: 1226px;
+}
+
+.words-article {
+  width: 540px;
+}
+
 }
