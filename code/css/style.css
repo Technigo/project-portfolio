@@ -15,11 +15,13 @@
 body {
     font-family: 'Satoshi';
     background: #F5F5F5;
+    max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+    background-color: #F5F5F5;
   }
 /* --------------------------FIRST CONTAINER-------------------------------- */
 
-
-/* test ----------------------------------------------------------------- */
 .hero-container {
     display: flex;
     flex-direction: column;
@@ -66,6 +68,7 @@ body {
 .inspo {
     color: #000000;
     background: #FCEDEA;
+    background-color: #FCEDEA;
     font-weight: 500;
     font-size:40px;
     line-height: 80px;
@@ -75,11 +78,45 @@ body {
     display: none;
     text-align: center;
 }
-.inspo-container {
+
+/* .inspo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
+
+
+/* ---------------test ------------------------------ */
+@media only screen and (max-width: 768px) {
+    .wrapper-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .test-container {
+      order: 2;
+    }
+  }
+  
+/* desktop */
+/* 
+@media only screen and (min-width: 769px) {
+    .wrapper-container {
+      display: flex;
+    }
+  
+    .test-container {
+      flex: 2;
+    }
+  
+    .inspo-container {
+      flex: 0 0 auto;
+    }
+  } */
+  
+
+/* ----------------test ------------------------------ */
+
 /* ----------------hide mobile------------- */
 @media (min-width: 768px) {
     .inspo {
@@ -169,7 +206,8 @@ body {
     flex-direction: column;
     align-items: center;
     background: #EDFFFF;
-    padding-bottom: 40px;
+    background-color: #EDFFFF;
+    /* padding-bottom: 40px; */
 }
 .tech {
     font-size: 80px;
