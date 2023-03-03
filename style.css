@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 body {
   background: #fff0f5;
@@ -37,6 +38,7 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 28px;
+
   color: blue;
 }
 
@@ -79,18 +81,17 @@ body {
 }
 
 .arrow-section {
-  width: 100vw;
-  height: 20vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
 }
 
 .arrow {
-  width: 100px;
+  width: 50px;
   border-radius: 50%;
   animation: bounce 1s infinite alternate;
+  margin-bottom: 79px;
 }
 
 @keyframes bounce {
@@ -104,15 +105,16 @@ body {
 
 .tech-section {
   display: flex;
-  justify-content: center;
   background-color: #b0e0e6;
 }
 
-.section-title {
+.tech-title {
   font-family: "Satoshi", sans-serif;
-  font-size: 72px;
+  font-size: 80px;
   font-weight: 700;
   color: blue;
+  margin: 99px 0px 37px 0px;
+  text-align: center;
 }
 
 .tech-section {
@@ -124,9 +126,43 @@ body {
   font-family: "EB Garamond", serif;
   font-size: 22px;
   font-weight: 400;
-  margin: 24px;
+  margin: 60px 24px;
 }
 
+.pink-highlight {
+  background-color: pink;
+}
+
+.blue-highlight {
+  background-color: blue;
+  color: white;
+}
+
+.pastel-blue-highlight {
+  background-color: rgb(131, 178, 194);
+  color: white;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-title {
+  font-family: "Satoshi", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: blue;
+  text-align: center;
+  padding: 20px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .project-image {
   width: 100%;
   object-fit: cover;
@@ -139,15 +175,21 @@ body {
   font-size: 32px;
   font-style: black;
 }
+
+.project-text-group {
+  margin: 24px;
+}
 .project-text {
   font-family: "EB Garamond", serif;
   font-size: 22px;
   font-weight: 400;
-  margin: 24px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .language-buttons {
   display: flex;
+  align-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
   font-size: 12px;
@@ -161,4 +203,94 @@ body {
   color: white;
   padding: 5px;
   margin-top: 10px;
+}
+.github-link-project {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  width: fit-content;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  padding: 0px 16px 0px 0px;
+  margin-top: 24px;
+  border: none;
+  border-radius: 40px;
+  height: 48px;
+}
+.live-link-project {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  padding: 0px 16px 0px 0px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 40px;
+  height: 48px;
+}
+
+.github-link-project:hover {
+  background-color: hotpink;
+  color: white;
+  background-image: white;
+}
+
+.live-link-project:hover {
+  background-color: blue;
+  color: white;
+  background-image: white;
+}
+
+.my-words-section {
+  flex-direction: column;
+  background-color: rgb(190, 214, 236);
+  display: flex;
+}
+
+.mw-section-title {
+  font-family: "Satoshi", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: purple;
+  text-align: center;
+}
+
+.blog-container {
+  display: flex;
+  gap: 24px;
+}
+.date-text {
+  font-family: "Satoshi", sans-serif;
+  color: hotpink;
+  font-weight: 900;
+  padding-top: 20px;
+}
+.blog-image {
+  width: 100%;
+}
+.read-more-button {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: white;
+  padding: 0px 16px 0px 9px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 40px;
+  height: 48px;
+}
+
+.read-more-button:hover {
+  background: yellow;
+}
+
+@media screen {
 }
