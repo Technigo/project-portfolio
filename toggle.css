@@ -1,29 +1,40 @@
   
   .toggle-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    position: absolute;
+    right:10px;
+    top:10px;
   }
   
-  body.dark {
+  body.dark,
+  body.dark .skills-section {
       background-color: #292c35;
   }
 
-  /* #9b59b6 */
 
-  body.dark h1,
-  body.dark {
+  body.dark, 
+  body.dark h1, 
+  body.dark h2, 
+  body.dark h3,
+  body.dark p,
+  body.dark .skills-list li {
       color: #fff;
   }
 
+  body.dark .tech-section,
+  body.dark .my-words-section,
+  body.dark .contact-section {
+    background-color: #484a52;
+  }
+
+  body.dark .button-contents p{
+    color:#111;
+
+  }
+
+  
   .checkbox {
       opacity: 0;
       position: absolute;
-  }
-
-  .toggle-theme {
-      margin-top: 15px;
-      margin-bottom: 15px;
   }
 
   .checkbox-label {
@@ -41,11 +52,11 @@
   }
 
   .fa-moon-o {
-      color: #f1c40f;
+      color: #ffffff;
   }
 
   .fa-sun-o {
-      color: #f39c12;
+      color:  #ffffff;
   }
 
   .checkbox-label .ball {
