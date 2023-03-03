@@ -9,6 +9,7 @@ body {
     max-width: 1520px;
     border: 2px solid tomato;
     background-color: rgb(102, 128, 128);
+    line-height: 29px;
 }
 
 h1 {
@@ -26,19 +27,29 @@ h3 {
 /*Header*/
 
 header {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 50%;
     max-height: 980px;
     flex-shrink: 1;
 }
 
-.button-container {
+.header-right-box {
+flex-basis: 50%;
+max-width: 756px;
+flex-grow: 1;
+flex-shrink: 1;
+background-color: beige;
+}
+
+.icon-container {
     display: flex;
     flex-direction: row;
     margin-top: 4%;
     margin-left: 10%;
+    gap: 2em;
 }
 
 header button,
@@ -47,16 +58,16 @@ main button {
 }
 
 .banner {
-    align-self: flex-end;
     flex-basis: 50%;
     /*  max-width: 756px;*/
     flex-shrink: 1;
-    min-width: 640px;
+    min-width: 638px;
 }
 
 .pic-name-title {
     display: flex;
     flex-direction: row;
+    flex-shrink: 1;
     margin-top: 12.9%;
     margin-left: 6.8%;
 }
@@ -73,17 +84,33 @@ main button {
     width: 164px;
     margin-right: 20px;
     margin-bottom: 32px;
-    /*  margin: 200px 296px 0 296px;*/
 }
 
 h1+p {
     font-size: 32px;
 }
 
-header>p {
+header > div > p {
     margin-left: 10%;
     max-width: 500px;
     background-color: aquamarine;
+    flex-shrink: 1;
+}
+
+.top-of-page {
+    position: fixed;
+    z-index: 10;
+    top: 5%;
+    right: 5%
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 /*Tech*/
@@ -113,7 +140,7 @@ header>p {
 /*Featured projects (main)*/
 
 main>h2 {
-    margin-left: 23%;
+    margin: 9% 0 6% 23%;
 }
 
 .project-A-wrapper,
@@ -131,6 +158,29 @@ main>h2 {
     margin-left: 40px;
 
 }
+
+.live-demo-button {
+    position: relative;
+    white-space: nowrap;
+    background: aquamarine;
+    border: none;
+    line-height: 27px;
+    padding-left: 50px;
+    padding-right: 12px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.live-demo-button img {
+    position: absolute;
+    left: 10px;
+    bottom: 1px;
+}
+
+
+
+/*My words section*/
 
 .my-words-wrapper {
     position: relative;
