@@ -12,12 +12,6 @@
   }
   
   @font-face {
-    font-family: SatoshiMedium;
-    font-weight: medium;
-    src: url('./Code/Fonts/OTF/Satoshi-Medium.otf'); /*don't need this*/
-  }
-  
-  @font-face {
     font-family: SatoshiBlack;
     font-weight: bolder;
     src: url('./Code/Fonts/OTF/Satoshi-Black.otf');
@@ -45,10 +39,18 @@
 
 /* //////////new section - header/////////// */
 
+
 .header-section {
     min-width: 320px;
-    height: 960px;
+    min-height: 960px;
 }
+
+.picture img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
 .profile-picture {
     display: flex;
     justify-content: center;
@@ -76,13 +78,12 @@ h2 { /*name*/
     line-height: 37.8px;
 }
 
-/*arrow goes missing when 'arrow' added*/
 .scroll-arrow {
     position: absolute;
     left: calc(50% - 9.5px);
     width: 19px;
     height: 30px;
-    margin-top: 30px;
+    margin-top: 23px;
 }
 
 .scroll-text {
@@ -90,7 +91,7 @@ h2 { /*name*/
     left: calc(50% - 39px);
     width: 78px;
     height: 22px;
-    margin-top: 80px;
+    margin-top: 73px;
 }
 
 h1 { /*Frontend Developer*/
@@ -130,7 +131,7 @@ p {
 /*///////// new section - tech /////////////*/
 
 
-.blue-section {
+.second-page {
     display: flex;
     background-color: #EDFFFF;
     width: 100%;
@@ -138,10 +139,11 @@ p {
     height: 530px;
 }
 
+
 .title-tech {
-    /* display: flex;  */
-    /* justify-content: center; */
-    margin-left: 99px;
+    display: flex; 
+    justify-content: center; 
+    /* margin-left: 99px; */
 }
 
 .title-tech h3 {
@@ -282,9 +284,10 @@ p {
 
 /* //////////new section - my words//////////*/
 
-.pink-section {
+.fourth-page {
     background-color: #FCEDEA;
     padding-bottom: 20px;
+    min-width: 375px;
     /* display: flex; */
 }
 
@@ -352,10 +355,10 @@ p {
 
 /* new section -skills*/
 
-.beige-section {
+.fifth-page {
     background-color: #FDF2E4;
     padding-bottom: 137px;
-
+    min-width: 375px;
 }
 
 .title-skills h3 { 
@@ -431,4 +434,92 @@ ul {
     justify-content: space-evenly;
     padding-top: 20px;
     padding-bottom: 40px;
+}
+
+/*MEDIA QUERIES */
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+/*new section - header*/
+
+    .header-section {
+        display: block;
+    }
+
+    .picture img {
+        display: flex;
+        /* flex-grow: ; */
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .profile-picture img {
+        min-width: 164px;
+        height: auto;
+        /* max-width: 100%;
+        height: auto; */
+        border-radius: 50%;
+        margin-top: 81px;
+        margin-left: 102px;
+        margin-bottom: 32px;
+        /* check the dimensions here */ 
+        overflow: hidden; 
+     }
+
+     .header-container { 
+        display: flex;
+        flex-direction: row;
+     }
+
+     .header-text {
+        margin-top: 106.5px;  
+        margin-left: 29px;
+    }
+
+    .socialmedia-icons {
+        padding-bottom: 50px;
+    }
+
+/*new section - tech*/
+
+
+   .tech-info {
+        margin-left: 122px;
+        margin-right: 122px;
+   }
+
+    
+    .title-featured-projects {
+        position: absolute;
+        width: 651px;
+        height: 108px;
+        left: calc(50% - 651px/2 - 22.5px);
+
+    }
+
+    .title-featured-projects h3 {        
+        margin-top: 64px;
+        font-size: 80px;
+        line-height: 108px;
+    }
+
+/*new section - featured projects*/
+
+    .project-image {
+        width: 184px;
+        height: auto;
+
+    }
+
+    .card-content .project-one {
+        display: flex;
+        flex-direction: row;
+    }
+} 
+
+@media (min-width: 1025px) {
+
+    /* .picture img {
+        display: flex; */
+    }
 }
