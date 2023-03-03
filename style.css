@@ -1,16 +1,19 @@
-/*import fonts*/
+@font-face {
+    font-family: SatoshiBold;
+    font-weight: bold;
+    src: url("./fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf");
+  }
 
 body {
-    font-family: satoshi;
+    font-family: SatoshiBold;
     background-color: white;
 }
-
 
 .top-container {
     background-color: rgb(255, 244, 210);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr;
+    grid-template-rows: 6fr;
     padding: 10px;
     grid-gap: 5px;
 }
@@ -19,11 +22,16 @@ body {
         color: rgb(204, 157, 255);
     }
 
+    .frontend-developer {
+        font-size: larger;
+        color: black;
+    }
+
     .presentation {
         display: grid;
         background: rgb(255, 244, 210);
         padding: 10px;
-        grid-row: 2;
+        grid-row: 1;
     }
 
     .links {
@@ -33,21 +41,19 @@ body {
         align-items: row;
         justify-content: center;
         gap: 20px;
+        grid-row: 5;
     }
 
-
+/*Picture that only shows when tablet or desktop*/
     .picture-big {
-        display: grid;
-        background: rgb(255, 244, 210);
-        padding: 10px;
-        grid-row: 1;
-        align-content: center;
-        justify-content: center;
+       display: none;
     }
 
         .emilia-img {
+            display: flex;
             border-radius: 50%;
-            height: 200px;
+            height: 150px;
+            margin-top: 20px;
         }
 
     .scroller {
@@ -55,6 +61,7 @@ body {
         background: rgb(255, 244, 210);
         padding: 10px;
         justify-content: center;
+        grid-row: 6;
     }
 
         .lets-scroll {
@@ -74,6 +81,7 @@ body {
         display: grid;
         background: rgbrgb(229, 209, 250);
         justify-content: center;
+        font-size: xx-large;
     }
 
     .h-headline h1 {
@@ -83,7 +91,14 @@ body {
     .h-skills{
         display: grid;
         background: rgbrgb(229, 209, 250);
-        padding: 10px;
+        padding: 25px;
+    }
+
+    .js-mark {
+        background-color:rgb(120, 120, 255);
+    }
+    .mp-mark {
+        background-color: #fa8072;
     }
 
 .projects {
@@ -94,9 +109,35 @@ body {
     grid-gap: 5px;
 }
 
+.HTML5 {
+    background-color: black;
+    color: white;
+}
+
+.CSS3 {
+    background-color: black;
+    color: white;
+}
+
+.JavaScript {
+    background-color: black;
+    color: white;
+}
+.Mob-programming {
+    background-color: black;
+    color: white;
+}
+.API {
+    background-color: black;
+    color: white;
+}
+.Pair-programming {
+    background-color: black;
+    color: white;
+}
     .p-1 {
         display: grid;
-        background: violet;
+        background: rgb(255, 244, 210);
         padding: 10px;
     }
 
@@ -106,38 +147,51 @@ body {
 
     .p-2{
         display: grid;
-        background: yellow;
+        background: rgb(255, 244, 210);
         padding: 10px;
     }
 
     .p-3 {
         display: grid;
-        background: pink;
+        background: rgb(255, 244, 210);
         padding: 10px;
     }
 
     .p-4 {
         display: grid;
-        background: red;
+        background: rgb(255, 244, 210);
         padding: 10px;
     }
 
     .p-5 {
         display: grid;
-        background: yellow;
+        background: rgb(255, 244, 210);
         padding: 10px;
     }
 
     button {
         display: flex;
-        width: 100px;
+        width: 120px;
         height:fit-content;
-        border-radius: 8px;
+        border-radius: 25px;
         border: none;
         margin: 5px;
         background-color: white;
         justify-content: center;
+        align-items: center;
+        padding: 5px;
     }
+
+    .button-globe:hover {
+        background-color: #fa8072;
+    }
+    .button-git:hover {
+        background-color: rgb(120, 120, 255);
+    }
+a {
+text-decoration: none;
+padding-left: 5px;
+}
 
 .my-words {
     background: rgb(236, 242, 255);
@@ -153,59 +207,75 @@ body {
     grid-template-columns: 1fr;
     padding: 10px;
     grid-gap: 5px;
+    font-family: 'EB Garamond', serif;
 }
 
     .code{
         display: grid;
-        background: #fa8072;
         padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .code-mark{
+        background-color: rgb(120, 120, 255);
+        width:fit-content;
+        font-family: satoshi;
     }
     .toolbox{
         display: grid;
-        background: salmon;
         padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .toolbox-mark{
+        background-color: rgb(120, 120, 255);
+        width:fit-content;
     }
     .more{
         display: grid;
-        background: salmon;
         padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .more-mark{
+        background-color: rgb(120, 120, 255);
+        width:fit-content;
     }
     .upcoming{
         display: grid;
-        background: salmon;
         padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .upcoming-mark{
+        background-color: rgb(120, 120, 255);
+        width:fit-content;
     }
 
  .time-to-talk {
     background: rgb(255, 244, 210);
     display: grid;
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 3fr;
-    padding: 10px;
-    grid-gap: 5px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding: 0px;
+    grid-gap: 0px;
+    }
+
+    .name-title-contact {
+        display: grid;
+        grid-template-columns: 1fr ;
     }
 
         .contact1  {
             display: grid;
-            grid-row: 1;
-            grid-column: 1;
-            align-content: center;
-            justify-content: center;
-        }
-
-        .contact2 {
-            display: grid;
-            grid-row: 1;
-            grid-column: 2;
-            align-content: center;
-            justify-content: center;
+            padding: 10px;
         }
 
         .emilia-img2 {
             background: rgb(255, 244, 210);
             padding: 10px;
             border-radius: 50%;
-            height: 100px;
+            height: 150px;
          }
 
     .time-to-talk h1 {
@@ -215,6 +285,10 @@ body {
         color: salmon;
     }
 
+    .time-to-talk h3 {
+        color: rgb(120, 120, 255);
+    }
+
      .links-bottom {
         display: flex;
         background: rgb(255, 244, 210);
@@ -222,14 +296,25 @@ body {
         align-items: row;
         justify-content: center;
         gap: 20px;
+        padding-bottom: 50px;
      }
 
      .name-title-contact {
         display: grid;
-        grid-template-columns: 1 fr 2fr;
+        
      }
 
      .number-email {
         display: grid;
         justify-content: center;
+        font-size: larger;
+        margin-bottom: 20px;
      }
+
+     .number-email h3 {
+        color: black;
+     }
+
+    
+
+    
