@@ -22,6 +22,7 @@ Photo by Miguel Á. Padriñán: https://www.pexels.com/photo/two-white-message-b
 Photo by Jill Wellington: https://www.pexels.com/photo/red-and-gray-rain-boots-near-pink-umbrella-34519/
 Photo by Anna Shvets: https://www.pexels.com/photo/pills-fixed-as-question-mark-sign-3683053/
 Photo by Moose Photos: https://www.pexels.com/photo/gray-double-bell-clock-1037993/
+Photo by Madison Inouye: https://www.pexels.com/photo/self-care-isn-t-selfish-signage-2821823/
 
 ## The problem
 
@@ -37,3 +38,5 @@ Further improvements:
 This project will be updated regularly along the way in the bootcamp.
 
 ## View it live
+
+Deployed link: https://nora-terbocs-portfolio.netlify.app/
