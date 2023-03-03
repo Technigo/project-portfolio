@@ -150,24 +150,16 @@ body {
     text-align: center;
 }
 
-.project {
+.div-project-title{
     display: flex;
-    flex-direction: column;
-    
-    margin: 24px;
-}
-
-.project-image {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    flex-direction: row;
+    justify-content: center;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .project-title {
-    display: flex;
-    flex-direction: row;
     align-self: center;
-    margin-left:auto;
-    margin-left:auto;
     max-width: 100%;
     font-family: 'Satoshi';
     font-style: normal;
@@ -177,6 +169,18 @@ body {
     color: #0B24F5;
     margin: 24px;
 }
+
+.project {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+}
+
+.project-image {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
 h2{
     font-family: 'Satoshi';
     font-style: normal;
@@ -214,19 +218,16 @@ p {
     background-color: #FCEDEA;
     padding-bottom: 24px;
 }
-
-.my-words {
+.div-my-words-title {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    margin: 24px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .my-words-title {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    margin:auto;
+ 
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
@@ -235,6 +236,13 @@ p {
     color: #EB5577;
     margin: 24px;
     
+}
+
+.my-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 24px;
 }
 
 h5 {
@@ -251,21 +259,18 @@ h5 {
     display: flex;
     padding-left: 24px;
 }
-
-
-.skills{
-    display: flex;
-    flex-direction: column;
+.skills-backgorund {
     background-color: #FDF2E4;
-    justify-items: center;
-    font-family: 'EB Garamond';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-    text-align: center;
-    color: #000000;
+    padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.div-skills-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .skills-title {
@@ -279,6 +284,22 @@ h5 {
     color: #0B24F5;
    
 }
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 24px;
+}
+
+
 
 
 .skills-title-1,.skills-title-2, .skills-title-3, .skills-title-4 {
@@ -329,9 +350,6 @@ mark {
 
 }
 
-.contact-form {
-    align-self: center;
-}
 
 @media (min-width: 667px) and (max-width: 1024px) {
     .header-image {
@@ -357,7 +375,65 @@ mark {
         margin-right: 30%;
     }
 
+    .project {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .project-image {
+        width: 35%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-content p {
+        margin-bottom: 0;
+    }
+
+    .project-content h2, .project-content img {
+        margin-left: 24px;
+    }
+
+    .code-links {
+        margin-left: 0;
+    }
+
+    .blog {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .my-words {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .my-words-right-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my-words-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .my-words-content h2, .my-words-content h5 {
+        margin-left: 24px;
+    }
+
+
 }
+
+
 
 
 @media (min-width: 1025px) {
@@ -424,4 +500,9 @@ mark {
 
     }
 
-}
+    .project {
+        display: flex;
+        flex-direction: row;
+
+    }
+    
