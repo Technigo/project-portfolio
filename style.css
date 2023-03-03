@@ -192,10 +192,6 @@ h5 {
     font-size: 16px;
 }
 
-/* PINK BUTTON*/
-
-/* BLUE BUTTON*/
-
 .pinkandblue-buttons {
     display: flex;
     flex-direction: column;
@@ -206,7 +202,9 @@ h5 {
     text-decoration: none;
   }
 
-.project-button-pink {
+  /* PINK BUTTON*/
+
+  .project-button-pink {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -228,6 +226,8 @@ h5 {
     color: #FFFFFF;
   }
   
+  /* BLUE BUTTON*/
+
   .project-button-blue {
     display: flex;
     flex-direction: row;
@@ -242,7 +242,6 @@ h5 {
     border: none;
     font-family: SatoshiMedium;
     text-decoration: none;
-    
   }
 
   .project-button-blue:hover {
@@ -250,26 +249,57 @@ h5 {
     color: #FFFFFF;
   }
 
+  /* YELLOW (article) BUTTON*/
+
+  .yellow-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .yellow-buttons a {
+    text-decoration: none;
+  }
+
+  .article-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 14px 14px 14px;
+    background: #F5F5F5;
+    border-radius: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    border: none;
+    font-family: SatoshiMedium;
+    text-decoration: none;
+  }
+
+  .article-button:hover {
+    background: #FFD338;
+    color: black;
+  }
 
 .weatherapptext {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .chatbottext {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .newssitetext {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .stuckontext {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
-
 .businesstext {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 /*////////////////////////////////////// MY WORDS ////////////////////////////////////////////////////*/
@@ -286,6 +316,17 @@ h5 {
   font-weight: 700;
   text-align: center;
 }
+
+.my-words-family {
+    padding: 24px;
+}
+
+.my-words-family img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
 
 /*////////////////////////////////////// SKILLS ////////////////////////////////////////////////////*/
 
@@ -385,7 +426,7 @@ h5 {
 }
 
 .timetotalkpicturebox {
-    padding-left: 24px
+    padding: 24px 0px 24px 20px;
 }
 
 .title {
@@ -396,7 +437,11 @@ h5 {
 .title2 {
     padding-top: 5px 0px 0px 24px;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 24px;
+}
+
+.title2 h2{
+    color: #0B24F5;
 }
 
 .contact {
@@ -405,6 +450,7 @@ h5 {
     font-weight: 900;
     line-height: 32px;
     font-size: 24px;
+    padding-top: 24px;
 }
 
 /*/////////////////////////////////// MEDIA QUERIES ////////////////////////////////////////////////////*/
@@ -660,30 +706,27 @@ h5 {
         background-color: #EDFFFF;
         height: 800px;
         padding: 0px 24px 0px 24px;
-    
     }
     
     .linkbar {
-        padding: 50px 0px 0px 0px;
+        display: flex;
+        padding: 50px 0px 50px 0px;
         justify-content: space-evenly;
-    }
-
-    .personal-info {
-        padding-top: 250px;
     }
     
    .about {
-    display: inline-block;
-    width: 500px;
+        display: inline-block;
+        width: 500px;
+        padding: 10px;
    }
 
    h5 {
-    font-size: 32px;
-    padding: 0px 0px 15px 0px;;
-    color: black;
-    font-family: SatoshiBlack;
-    line-height: 43px;
-    font-weight: 900;
+        font-size: 32px;
+        padding: 0px 0px 15px 0px;;
+        color: black;
+        font-family: SatoshiBlack;
+        line-height: 43px;
+        font-weight: 900;
 }
     .aboutbox {
         flex-direction: column;
@@ -695,6 +738,7 @@ h5 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: #EB5577;
         justify-content: center;
         padding: 30px 30px 150px 30px;
         font-weight: bold;
@@ -730,10 +774,10 @@ h5 {
 
     .personal-info {
         display: flex;
-        width: 50%;
+        width: 100%;
         align-items: center;
-        justify-content: center;
-        padding-left: 120px;
+        justify-content: left;
+        padding: 250px 0px 0px 7%;
     }
 
     .techskills {
@@ -770,6 +814,8 @@ h5 {
         align-items: center;
         justify-content: center;
     }
+
+   
 }
 
 /* ----------- MEDIA QUARRIES FOR NORMAL LARGE SCREENS ---------*/
@@ -779,7 +825,9 @@ h5 {
     .techskills {
         background-color: #EDFFFF;
         height: 800px;
-        padding: 230px;
+        padding: 250px;
+        padding-top: 400px;
+       
     }
 
     h5 {
