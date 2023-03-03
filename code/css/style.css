@@ -17,6 +17,9 @@ body {
     background: #F5F5F5;
   }
 /* --------------------------FIRST CONTAINER-------------------------------- */
+
+
+/* test ----------------------------------------------------------------- */
 .hero-container {
     display: flex;
     flex-direction: column;
@@ -60,11 +63,53 @@ body {
     object-position: center;
 }
 
-.front-img {
-    object-fit: cover;
-    object-position: top;
+.inspo {
+    color: #000000;
+    background: #FCEDEA;
+    font-weight: 500;
+    font-size:40px;
+    line-height: 80px;
+    font-style: normal;
+    font-family: 'SatoshiBold';
+    width: 100%;
+    display: none;
+    text-align: center;
+}
+.inspo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------------hide mobile------------- */
+@media (min-width: 768px) {
+    .inspo {
+        display: block;
+    }
 }
 
+/* ----------------tablet------------- */
+/* @media (min-width: 668px){
+    .inspo{
+      display: flex;
+      flex-direction: column;
+    } */
+
+/* .image-container {
+    display: none;
+    background: #FCEDEA;
+    display: inline-block;
+    padding: 10px; 
+}
+.image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+@media (min-width: 768px) {
+    .image-container {
+        display: block;
+    }
+}  */
 
 
 /* --------------------------SECOND CONTAINER-------------------------------- */
@@ -469,8 +514,10 @@ body {
     padding: 20px;
 }
 
-@media (max-width: 767px) { /* hide image on mobile */
+/* @media (max-width: 767px) {  hide image on mobile 
     .image {
       display: none;
-    }
-  }
+    } */
+
+
+
