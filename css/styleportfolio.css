@@ -86,6 +86,7 @@ justify-content: center;
 .icons{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     border: 1px solid pink;
     margin:20px;
 }
@@ -342,13 +343,18 @@ a {
     align-items: center;
     justify-items: center;
 }
-.bottom{
-display: grid;
-grid-template-columns: 1fr;
-border: solid teal;
 
-justify-items: center;
+
+.skills{
+display: flex;
+flex-direction: column;
 background-color: #FDF2E4;
+align-content: center;
+}
+
+
+.skills{
+   justify-content: center;
 }
 
 .skills h3{
@@ -357,22 +363,86 @@ background-color: #FDF2E4;
     font-size: 80px;
 }
 
-.timetotalk{
-display: grid;
-grid-template-columns: 1fr;
-
-justify-items: center;
-border: solid pink;
-}
-
-.contactinfo{
-    grid-column: 1/2;
+.code dt{
+    background-color: #EB5577;
    
 }
-.contactinfo h3{
-    color: #EB5577;
-    font-size: 58px;
+
+.toolbox dt{
+   background-color: #2483E0; 
+ 
 }
+.more{
+    background-color: #0B24F5;
+
+}
+
+.upcomming{
+    background-color: #6DB486;
+}
+dt{
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    color: white ;
+    padding: 2px 6px;
+}
+
+
+
+.timetotalk{
+display: flex;
+flex-direction: column;
+
+min-height: 800px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.timetotalk h3{
+    color: #EB5577;
+    font-size: 50px;
+   margin-top: 40px;
+    margin-bottom: 30px;
+   
+}
+
+
+
+.presentationend img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+
+}
+
+.presentationend h1{
+    color: #0B24F4;
+    font-size: 28px;
+    font-weight: 700px;
+    line-height: 38px;
+}
+
+.presentationend h2{
+    color: black;
+    font-size: 32px;
+    font-weight: 900px;
+    line-height: 43px;
+}
+
+.presentationend p{
+   color: #565656;
+   font-size: 24px;
+   font-weight: 400;
+   line-height:32px ;
+}
+.contactinfo p{
+   font-size: 22px ;
+   font-weight: bold;
+   margin-top: 15px;
+   
+}
+
 
 
 @media(min-width: 768px) and (max-width: 1024px){
