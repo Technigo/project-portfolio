@@ -99,10 +99,9 @@ p {
     margin-bottom: 20px;
 }
 
-.intro, .tech, .featured-projects, .my-words, .skills, .contact {
+.intro, .tech, .featured-projects, .my-words, .contact {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     margin: 20px 24px 0 24px;
     padding-top: 20px;
 } 
@@ -228,7 +227,6 @@ p {
 
 .my-words h4 {
     color: #EB5577;
-    padding: 10%;
     text-align: center;
 }
 
@@ -280,9 +278,12 @@ p {
 }
 
 .skills {
+    display: flex;
+    flex-direction: column;
     background-color: #FDF2E4;
-    margin: 0;
+    margin: 0 auto;
     padding: 80px;
+    justify-content: center;
 }
 
 .skills span {
@@ -404,6 +405,12 @@ address {
     flex-direction: row;  
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
 .project img {
     width: 200px;
     object-fit: cover;
@@ -425,24 +432,35 @@ address {
 .skills {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}
+
+.skills span {
+    margin: 0;
     justify-items: start;
-    align-items: baseline;
+}
+
+.skills p {
+    text-align: left;
+    margin-left: 0;
 }
 
 .skills h4 {
     grid-column: 1/ span 5;
 }
 
-
 .code-group, .toolbox-group {
     grid-column: 2/ span 2;
-    align-self: baseline;
-    justify-self: start;
 }
 
-.more-group, .upcoming-group {
+.more-group {
     grid-column: 4/ span 2;
-    align-self: baseline;
+    grid-row: 2;
+}
+
+.upcoming-group {
+    grid-column: 4/ span 2;
+    grid-row: 3;
+    align-self: start;
 }
 
 .contact {
@@ -523,7 +541,7 @@ address, .some-icon {
 .tech {
     display: grid;
     grid-template-columns: repeat(5, 20%);
-    align-content: center;
+    align-items: center;
     height: 800px;
     margin: 0;
 }
@@ -557,10 +575,15 @@ address, .some-icon {
     margin-right: 40px;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
 .my-words {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
     gap: 32px;
 }
 
@@ -570,23 +593,34 @@ address, .some-icon {
 
 .post {
     grid-column: span 2;
+    justify-items: center;
     
 }
 
 .skills {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
-    align-items: baseline;
-    gap: 66px;
+    column-gap: 66px;
 }
 
 .skills h4 {
     grid-column: 1 / span 6;
 }
 
+.skills span {
+    margin: 0;
+    justify-items: start;
+}
+
+.skills p {
+    text-align: left;
+    margin-left: 0;
+}
+
 .code-group, .toolbox-group, .more-group, .upcoming-group {
-    grid-column: span 1;   
+    grid-column: span 1;
+    align-self: baseline;
+    justify-self: start;   
 }
 
 .contact {
