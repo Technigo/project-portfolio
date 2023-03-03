@@ -131,7 +131,7 @@ body {
 }
 
 .tech-list {
-    align-self: center;
+    text-align: justify;
     font-family: 'EB Garamond';
     font-style: normal;
     font-weight: 400;
@@ -461,6 +461,7 @@ mark {
     .header {
         display: flex;
         flex-direction: row;
+        height: 700px;
     }
 
     .header-image {
@@ -472,6 +473,7 @@ mark {
     .business-card {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         order: 1;
         
     }
@@ -513,6 +515,14 @@ mark {
        
     }
 
+    .tech p {
+        text-align: justify;
+    }
+
+    .featured-projects {
+        padding: 50px;
+    }
+
     .project-title {
         
         width: 50%;
@@ -520,9 +530,88 @@ mark {
 
     }
 
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
     .project {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        gap: 10px;
 
     }
+
+    .project-image {
+        max-width: 40%;
+        max-height: 40%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+
+    .blog-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .my-words {
+        width: 40%;
     
+    }
+
+    .my-words-image {
+        max-width: 40%;
+        max-height: 40%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .skills-backgorund {
+        padding: 24px;
+    }
+    .skills {
+        padding: 24px;
+        display: grid;
+        
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .skills ul {
+        text-align:start;
+    }
+
+    .skills h6 {
+        justify-content:left;
+    }
+    .social-links-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+
+
+}
