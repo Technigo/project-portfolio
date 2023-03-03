@@ -83,7 +83,13 @@ body {
     color: #0B24F5;
     font-family: 'Satoshi-Variable';
     font-style: normal;
+    animation: bounce 1s infinite alternate;
 }
+
+@keyframes bounce {
+    0%   {transform: translateY(0);}
+    100% {transform: translateY(50px);}
+  }
 
 .arrow {
     font-size: 26px;
@@ -285,7 +291,11 @@ body {
 }
 
 footer {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 48px 24px 48px 24px;
 }
 
 footer h2 {
@@ -298,9 +308,24 @@ footer h2 {
     color: #EB5577;
 }
 
-.phone-mail {
-    margin-left: 24px;
+.myProfileImg {
+    margin: 24px 0 12px 0;
 }
+
+.phoneAndMail {
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 48px 0 48px 0;
+}
+
+.contactMe {
+    display: flex;
+    margin-top: 12px;
+}
+
 
 /* RESPONSIVE DESIGN FOR SMALL MOBILES */
 @media (min-width: 320px) and (max-width: 374px) {
@@ -328,29 +353,31 @@ footer h2 {
         object-fit: cover;
     }
 
-    .about-me {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .nameAndTitle {
-        display: flex;
-        flex-direction: column;
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
+        align-items: center;
         margin: 0;
     }
 
-    .introduction {
-        margin: 0 48px 0 48px;
+    .myProfilePic {
+        justify-content: end;
     }
 
-    .contact-me {
-        margin-left: 48px;
-        padding: 0 30px 0 30px;
+    .nameAndTitle {
+        grid-column: 2 / span 2;;
+        
+    }
+
+    .introduction, .contact-me {
+        grid-column: 1 / span 3;
+        width: 80%;
+        margin-left: 100px
     }
 
     .scroll {
-        margin: 48px 24px 12px 24px;
+        margin: 24px 24px 12px 24px;
         padding: 0 30px 0 30px;
     }
 
@@ -385,7 +412,39 @@ footer h2 {
         flex-wrap: wrap;
     }
 
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    footer h2 {
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 162px;
+    }
+
+    .myProfileImg {
+        margin: 16px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 24px;
+    }
+
+    .phoneAndMail {
+        margin: 48px;
+    }
+
+    .contactMe {
+        display: flex;
+        margin: 48px;
+    }
 }
 
 /* RESPONSIVE DESIGN FOR DESKTOP */
@@ -410,30 +469,34 @@ footer h2 {
         width: 100%;
     }
 
-    .about-me {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .nameAndTitle {
-        display: flex;
-        flex-direction: column;
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
+        align-items: center;
         margin: 0;
     }
 
-    .introduction {
-        margin: 0 48px 0 48px;
+    .myProfilePic {
+        justify-content: end;
     }
 
-    .contact-me {
-        margin-left: 48px;
-        padding: 0 30px 0 30px;
+    .nameAndTitle {
+        grid-column: 2 / span 2;
+    }
+
+    .introduction, .contact-me {
+        grid-column: 1 / span 3;
+        width: 80%;
+        margin-left: 100px
     }
 
     .scroll {
-        margin: 48px 24px 12px 24px;
-        padding: 0 30px 0 30px;
+        position: absolute;
+        left: 51%;
+        top: 70%;
+        margin-left: -50px;
+        margin-top: -50px;
     }
 
     .tech {
@@ -474,5 +537,39 @@ footer h2 {
         flex-wrap: wrap;
     }
 
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 62px 0 62px 0;
+    }
+
+    footer h2 {
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 162px;
+    }
+
+    .myProfileImg {
+        margin: 16px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 24px;
+    }
+
+    .phoneAndMail {
+        margin: 48px;
+    }
+
+    .contactMe {
+        display: flex;
+        margin: 48px;
+    }
 
 }
