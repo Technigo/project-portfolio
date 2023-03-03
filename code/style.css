@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700;900&display=swap');
 
 :root {
-    /* ---primary:  #F2A2E4; another option for primary */
     ---primary:  #92a6db;
     ---secondary: #a6c6ea;
     ---main: #e3e3e3;
@@ -10,11 +9,12 @@
 }
 
 body {
-    margin: 0;
-    width: 100%;
-    font-family: 'Work Sans', sans-serif;
-    position: relative;
-  }
+  background-color: var(---main);
+  margin: 0;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  position: relative;
+}
   
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
@@ -50,16 +50,18 @@ h1, h2, h3, h4, h5, h6, p, a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 600px;
+  height: max-content;
 }
 
 .left-header {
   width: 50%;
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin-left: 0px;
 }
 
 .header-intro {
@@ -85,6 +87,8 @@ h1, h2, h3, h4, h5, h6, p, a {
   width: 50%;
   height: 600px;
   display: flex;
+  position: relative;
+  margin-right: 0px;
 }
 
 .devLogo {
@@ -93,14 +97,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .arrow-scroll {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.arrow-scroll img {
+  position: absolute;
+  margin-bottom: 0px;
   display: block;
-  margin: auto;
 }
 
 /* TECH SECTION */
@@ -109,7 +108,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 800px;
+  height: 600px;
 }
 
 .big-header {
@@ -117,7 +116,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: blue;
 }
 
-.paragraph {
+.tech-paragraph {
   margin-left: 15px;
 }
 
@@ -125,13 +124,13 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .project-description{
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  gap: 15px;
+  align-items: center;
 }
 
 .project-img-container {
-  width: 200px;
+  width: 280px;
   aspect-ratio: 1 / 1;
   border-radius: 20px;
   overflow: hidden;
@@ -154,6 +153,38 @@ h1, h2, h3, h4, h5, h6, p, a {
   top: 2050px;
 }
 
+.project-btn {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 16px 0px 0px;
+gap: 7px;
+width: 164px;
+height: 48px;
+left: 320px;
+top: 232px;
+background: #0B24F5;
+border-radius: 40px;
+}
+
+.project-summary {
+  width: fit-content;
+}
+
+.project-languages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+}
+
 /* THOUGHTS SECTION */
 
 .blog-section {
@@ -169,6 +200,34 @@ h1, h2, h3, h4, h5, h6, p, a {
   grid-row-gap: 0px;
 }
 
+.blog-buttons {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 16px 0px 0px;
+gap: 7px;
+width: 178px;
+height: 48px;
+left: 0px;
+top: 690px;
+
+background: #FFFFFF;
+border-radius: 40px;
+}
+
+.blog-img-container {
+  width: 280px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.blog-img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 /* SKILL SECTION */
 .skill-grid {
   display: grid;
@@ -176,6 +235,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 0px;
+  height: 60%;
 }
 
 .container {
