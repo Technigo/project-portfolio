@@ -1,16 +1,165 @@
-body {
-    background-color: tomato;
+/* fonts */
+@font-face {
+    font-family: "satoshi-black";
+    src: url(./fonts/Satoshi-Black.otf);
+}
+
+@font-face {
+    font-family: "satoshi-bold";
+    src: url(./fonts/Satoshi-Bold.otf);
+}
+
+@font-face {
+    font-family: "satoshi-medium";
+    src: url(./fonts/Satoshi-Medium.otf);
+}
+
+@font-face {
+    font-family: "satoshi-regular";
+    src: url(./fonts/Satoshi-Regular.otf);
+}
+
+
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+p, li {
+    font-family: 'EB Garamond', serif;
+}
+
+h4 {
+    font-family: "satoshi-bold", sans-serif;
+    font-size: 80px;
+    color: #0B24F5;
+}
+
+h5 {
+    font-family: "satoshi-black", sans-serif;
+} 
+
+.marked-red {
+    background-color: #EB5577;
+    color: #FFFFFF;
+}
+
+.marked-lightblue {
+    background-color: #2483E0;
+    color: #FFFFFF;
+}
+
+.marked-darkblue {
+    background-color: #0B24F5;
+    color: #FFFFFF;
+}
+
+.marked-green {
+    background-color: #6DB486;
+    color: #FFFFFF;
+}
+
+.marked-black {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* header-section */
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.profile-wrapper {
+    min-width: 327px;
+    max-width: 500px;
+    margin: 55px auto 0px auto;
 
 }
 
+.profile-top {
+    display: flex;
+    flex-direction: column;
+    min-width: 327px;
+    max-width: 500px;
+    margin: auto 20px auto 20px;
+}
+
 .profile-top img {
-    width: 200px;
-    height: 200px;
+    width: 164px;
+    height: 164px;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+
+header h1 {
+    font-family: "satoshi-bold", sans-serif;
+    font-size: 28px;
+    color: #0B24F5;
+}
+
+header h2 {
+    font-family: "satoshi-black", sans-serif;
+    font-size: 32px;
+    color: #000000;
+}
+
+header h3 {
+    font-family: "satoshi-regular", sans-serif;
+    font-size: 24px;
+    color: #565656
+}
+
+
+.profile-summary {
+    display: block;
+    min-width: 327px;
+    max-width: 500px;
+    margin: 25px 20px 25px 20px;
+}
+
+.profile-links {
+    width: 327px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.profile-links img {
+    height: 32px;
+    width: 32px;
+    margin-bottom: 25px;
 }
 
 .header-img-wrapper {
     display: none;
+}
+
+.scroll {
+    height: 138;
+    width: 138;
+}
+
+/* tech-section */
+
+.tech {
+    background-color: #EDFFFF;
+}
+
+
+/* featured projects-section */
+
+.featured-projects {
+    background-color: #FFFFFF;
 }
 
 .project-img img {
@@ -18,7 +167,31 @@ body {
     height: 200px;
 }
 
+/* my words-section */
+
+.words {
+    background-color: #FCEDEA;
+}
+
 .article-img img {
     width: 200px;
     height: 200px;
 }
+
+/* skills-section */
+
+.skills {
+    background-color: #FDF2E4;
+}
+
+
+/* contact-section */
+
+.contact {
+    background-color: #FFFFFF;
+}
+
+
+
+/* media qyeries */
+
