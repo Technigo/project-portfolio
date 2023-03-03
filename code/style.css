@@ -15,8 +15,8 @@ body {
 a {
     text-decoration: unset;
 }
-
-.desktop-view {
+/* styling top section */
+.container-view-logo {
   display: flex;
   flex-direction: column;
 }
@@ -82,7 +82,7 @@ header h3 {
 img:focus {
   filter: brightness(0) saturate(100%);
 }
-
+/* styling arrow and text under */
 .scroll-section {
   align-self: center;
   display: flex;
@@ -105,7 +105,7 @@ img:focus {
   align-self: center;
   margin-top: 37px;
 }
-
+/* styling for tech-section */
 .tech-section {
   background-color: #edffff;
   display: flex;
@@ -126,7 +126,7 @@ img:focus {
   font-weight: 400;
   font-size: 22px;
 }
-
+/* to highlight the specific words, I used <mark> */
 .pink {
   background-color: #eb5577;
   color: #ffffff;
@@ -136,7 +136,7 @@ img:focus {
   background-color: #2483e0;
   color: #ffffff;
 }
-
+/* styling for Featured projects */
 .featured-project {
   display: flex;
   flex-direction: column;
@@ -185,7 +185,7 @@ img:focus {
   font-weight: 400;
   font-size: 22px;
 }
-
+/* added the code languages used to an ul */
 .featured-project ul {
   list-style-type: none;
   padding: 0;
@@ -239,7 +239,7 @@ button p {
   background-color: #0b24f5;
   color: #ffffff;
 }
-
+/* this section is added as example for now */
 .my-word-section {
   background-color: #fcedea;
   padding: 64px 24px 98px 24px;
@@ -301,7 +301,7 @@ button p {
 .my-word-section button:hover, button:focus {
     background-color: #FFD338;
 }
-
+/* styling of the Skills section */
 .skills-section {
     display: flex;
     flex-direction: column;
@@ -362,7 +362,7 @@ button p {
     background-color: #6DB486;
     color: #FFFFFF;
 }
-
+/* styling time-to-talk section */
 .talk-container {
     display: flex;
     flex-direction: column;
@@ -480,6 +480,7 @@ button p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: unset;
   }
 
   .project-text {
@@ -555,7 +556,7 @@ button p {
     margin: 0;
   }
 
-  .desktop-view {
+  .container-view-logo {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -617,6 +618,10 @@ button p {
   }
   .project-img {
     width: 280px;
+  }
+
+  .project-img img {
+    object-position: top;
   }
 
   .project-text {
