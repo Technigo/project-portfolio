@@ -1,6 +1,8 @@
 @media screen and (max-width: 667px) {
+
+    /*Mobile*/
     .headerImg {
-      display: none;
+        display: none;
     }
 
     .infoBox {
@@ -14,9 +16,11 @@
         width: 100%;
         justify-content: center;
     }
+
     .infoText p {
         margin: 25px;
     }
+
     .portraitAndName {
         display: flex;
         width: 100%;
@@ -25,11 +29,13 @@
         align-items: center;
         justify-content: center;
     }
-.portrait {
-    width: 70%;
-    justify-content: center;
-    display: flex;
-}
+
+    .portrait {
+        width: 70%;
+        justify-content: center;
+        display: flex;
+    }
+
     .name {
         display: flex;
         flex-direction: column;
@@ -37,23 +43,33 @@
         width: 100%;
         align-items: flex-start;
         margin-left: 30px;
+        margin-right: 30px;
         margin-top: 15px;
     }
 
-    .socialMediaLinks{
+    .name h2 {
+        margin-left: 25px;
+    }
+
+    .name h3 {
+        margin-left: 25px;
+    }
+
+    .socialMediaLinks {
         justify-content: space-around;
     }
 
     .techBox {
-    display: flex;
-    width: 100%;
-    background: lightblue;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 23px;
-    padding-bottom: 30px;
+        display: flex;
+        width: 100%;
+        background: lightblue;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+        padding-bottom: 30px;
     }
+
     .techText {
         font-weight: 700;
         font-size: 80px;
@@ -66,10 +82,63 @@
     }
 
     .techText h2 {
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
     }
-  }
+}
 
 
+@media screen and (min-width: 668px) and (max-width: 1023px) {
+    /*Tablet*/
 
+    header {
+        flex-direction: column-reverse;
+    }
+
+    .headerImg {
+        width: 100%;
+        height: 270px;
+
+    }
+
+    .infoBox {
+        width: 100%;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;   
+
+      }
+
+      .infoText p {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .portraitAndName {
+        display: flex;
+        width: 100%;
+        margin-top: 70px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .portrait {
+        justify-content: right;
+        display: flex;
+        width: 50%;
+      }
+
+.techBox {
+    flex-direction: column;
+    align-items: center;
+}
+
+      .techText {
+        display: flex;
+        align-items: center;
+
+      }
+}
