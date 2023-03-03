@@ -32,26 +32,27 @@ a{
 }
 
 .maininformation{
-   
-    border: solid aqua;
-    justify-content: center;
-   background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+align-content: center;
+background-color: #F5F5F5;
     
 }
-/*get less gap*/
+/*why is this centered*/
 .maininformation h1{
     color: #0b24f4;
     font-size: 28px;
     }
-    .maininformation h2{
+
+.maininformation h2{
     color: black;
     font-size: 32px;
     }
-
+.maininformation p{
+    margin: 40px;
+}
 .informationpicture{
-    border: 1px solid black;
-    justify-self: center;
-    display:flex;
+  display:flex;
     justify-content: center;
     margin: 20px;
     flex-wrap: wrap;
@@ -59,27 +60,26 @@ a{
 
 .informationpicture img{
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+  padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .infoaboutIru p{
-    width: 327px;
+width: 327px;
 
 left: 24px;
 top: 401px;
-
 font-style: normal;
 font-weight: 400px;
 font-size: 22px;
 line-height: 29px;
 
-
 }
 
 .infoaboutIru{
     display: flex;
-    border: 1px solid green;
 justify-content: center;
 }
 
@@ -87,7 +87,7 @@ justify-content: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 1px solid pink;
+ 
     margin:20px;
 }
 .iconsgithub{
@@ -114,6 +114,7 @@ height: 22.7px;
 .scroll{
     display: flex;
     justify-content: center;
+    padding-bottom: 15px;
 }
 
 .scroll img {
@@ -125,10 +126,9 @@ height: 22.7px;
 .techskills{
     display: grid;
     grid-template-columns: 1fr;
-
     background-color: #EDFFFF;
-    height: 530px;
     width: 100%;
+  
 
 }
 .techskills h2{
@@ -137,7 +137,7 @@ height: 22.7px;
     width: 100%;
     height: 108px;
  
-    padding-top: 80px;
+    padding-top: 60px;
    
 }
 .techtitle{
@@ -145,10 +145,10 @@ height: 22.7px;
 }
 
 .techchild{
-   
+   padding-top: 20px;
     justify-self: center;
     text-align: center;
-    padding-top: 40px;
+   margin: 40px;
 
 
 }
@@ -175,43 +175,24 @@ height: 22.7px;
 
 
 .projects{
-    display: grid;
-    grid-template-columns: 1fr;
+   display: flex;
+   flex-direction: column;
     justify-content: center;
-    border: solid red;
-
+  
+padding-left: 20px;
 }
 
 .featured h2{
-   
     color: #0B24F5;
-    font-size: 65px;
-    
-    text-align: center;
+    font-size: 55px;
     margin-top: 20px;
     margin-bottom: 20px;
+  
 }
 
 .projects h3{
     font-size: 32px;
     
-}
-
-.articles p{
-    width: 100%;
-height: 145px;
-
-font-size: 22px;
-line-height: 29px;
-
-color: #000000;
-
-}
-
-.articles{
-  padding-left: 10px;
-  padding-right: 10px;
-    padding-bottom: 20px;
 }
 
 .tags{
@@ -224,28 +205,49 @@ color: #000000;
     background-color: #000000;
     margin: 4px;
     padding: 2px 6px;
-    
-
-}
-.newssite{
-    justify-self: center;
-    grid-column: 1/2;
 }
 
-
-.bot{
-    grid-column: 1/2;
-    justify-self: center;
+.newssite img{
+    width: 320px;
+    height: 320px;
 }
 
-.guess{
-    grid-column: 1/2;
-    justify-self: center;
+
+.bot img{
+        width: 320px;
+        height: 320px;
+    }
+
+.guess img{
+    width: 320px;
+    height: 320px;
 }
 
-.weather{
-    grid-column: 1/2;
-   
+.weather img{
+    width: 320px;
+    height: 320px;
+}
+.music img{
+    width: 320px;
+    height: 320px;
+
+}
+.survey img{
+    width: 320px;
+    height: 320px;
+}
+.happythoughts img{
+    width: 320px;
+    height: 320px;
+}
+
+.movies img{
+    width: 320px;
+    height: 320px;
+}
+.todo img{
+    width: 320px;
+    height: 320px;
 }
 
 .linksproject{
@@ -268,7 +270,7 @@ background: #F5F5F5;
 
 }
 
-.gitbtn img {
+.gitbtn img{
     margin-right: 10px;
 }
 .gitbtn span{
@@ -299,24 +301,24 @@ a {
     text-decoration: none;
 }
 .mywords{
-    display: grid;
-    grid-template-columns: 1fr;
-    border: solid violet;
+
     background-color: #FCEDEA;
-    height: 440px;
-    width:100%;
-   
+  width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .words{
-  display: grid;
-   align-items: center;
-   justify-items: center;
+padding-top: 45px;
+padding-left: 20px;
+padding-bottom: 15px;
 }
 .words h2{
-    font-size: 50px;
+    font-size: 63px;
     font-weight: bold;
     color: #EB5577;
+   padding-bottom: 45px;
     
   
 }
@@ -324,60 +326,98 @@ a {
     font-size: 32px;
     font-weight: bold;
    color: black;
+}
+
+.words p {
+    font-size: 22px ;
+padding-bottom: 20px;
+}
+
+.blog1 img {
+  width: 327px; 
+  height: 340px; 
+  padding-bottom: 35px;
+}
+
+.blog2 img{
+padding-top: 40px;
+    width: 327px; 
+    height: 340px; 
+    padding-bottom: 35px; 
+}
+
+.blog3 img{
+    padding-top: 40px;
+    width: 327px; 
+  height: 340px; 
+  padding-bottom: 35px;
 
 }
 
-
-.words p{
-/*text-align: center;*/
-}
-.blog1{
-    display: grid;
- 
-    
-
+.blog4 img{
+    padding-top: 40px;
+    width: 327px; 
+  height: 340px; 
+  padding-bottom: 35px;
 }
 
-.blog2{
-    display: grid;
+.articlebtn{
+    border: none;
+    border-radius: 40px;
+    display: flex;
     align-items: center;
-    justify-items: center;
+    padding: 5px 15px;
+    margin: 25px 0 0 0;
+    background-color: white;
 }
-
-
 .skills{
 display: flex;
 flex-direction: column;
 background-color: #FDF2E4;
-align-content: center;
-}
-
-
-.skills{
-   justify-content: center;
+justify-content: center;
+padding-left: 20px;
 }
 
 .skills h3{
+padding-top: 50px;
     color: #0B24F5;
     font-weight: bold;
     font-size: 80px;
+    text-align: center;
+    padding-bottom: 30px;
+   
 }
-
+.code{
+    padding-bottom: 30px;
+    text-align: center;
+}
 .code dt{
     background-color: #EB5577;
    
 }
-
+.toolbox{
+    text-align: center;
+    padding-bottom: 30px;
+}
 .toolbox dt{
    background-color: #2483E0; 
  
 }
+.morelist{
+    text-align: center;
+    padding-bottom: 30px;
+}
 .more{
     background-color: #0B24F5;
-
+   
 }
 
 .upcomming{
+    text-align: center;
+    padding-bottom: 50px;
+   
+}
+.upcomming dt{
     background-color: #6DB486;
 }
 dt{
@@ -388,15 +428,12 @@ dt{
     padding: 2px 6px;
 }
 
-
-
 .timetotalk{
 display: flex;
 flex-direction: column;
+width: 100%;
 
-min-height: 800px;
-padding-left: 10px;
-padding-right: 10px;
+padding-left: 20px;
 }
 
 .timetotalk h3{
@@ -404,16 +441,13 @@ padding-right: 10px;
     font-size: 50px;
    margin-top: 40px;
     margin-bottom: 30px;
-   
 }
-
-
 
 .presentationend img{
     border-radius: 50%;
     width: 150px;
     height: 150px;
-
+    padding-bottom: 10px;
 }
 
 .presentationend h1{
@@ -435,6 +469,7 @@ padding-right: 10px;
    font-size: 24px;
    font-weight: 400;
    line-height:32px ;
+
 }
 .contactinfo p{
    font-size: 22px ;
@@ -446,48 +481,108 @@ padding-right: 10px;
 
 
 @media(min-width: 768px) and (max-width: 1024px){
-.maininformation{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.logo{
-    background-color: #FCEDEA;
-    display: block;
-    height: 412px;
-    width: 100%;
-    grid-column: 1/3;
-}
-
-.logo img{
-    width: 50%;
-}
-
-.aboutIru{
-    /*display: grid;*/
-    border: solid violet;
-    margin: 30px;
+    body{
+       
+       width: 100%;
+      max-height: 1024px;
+        
+    }
+    .maininformation{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+        /*background-color: #F5F5F5;
+        display: grid;
+        grid-template-columns: 1fr;*/
+          
+        }
+    .logo{
+      display: flex
+    }
+    .logo img {
+      width: 100%;
+      height: 500px;
+       
+    }
+
+.maininformation p{
+   padding: 40px;
+    font-size: 22px;
+   }
+    
    
-  /*grid-template-columns: 1fr 1fr;*/
+ .informationpicture{
+        
+   justify-content: flex-start;
+   padding-top: 20px;
+    } 
+    
+    .informationpicture img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+      padding-top: 10px;
+      
+       
+    }   
+.iru{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+    .iru h1{
+        color: #0b24f4;
+        font-size: 28px;
+        }
+    
+    .iru h2{
+        color: black;
+        font-size: 32px;
+        }
+    
+    
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+     
+        margin:20px;
+    }
+    .iconsgithub{
+        width: 32px;
+        width: 32px;
+        order: 1;
+    }
+    .iconsgithub img{
+    width: 23.25px;
+    height: 22.7px;
+    }
+    
+    .iconslinkedin{
+        width: 32px;
+        width: 32px;
+        order: 2;
+      
+    }
+    .iconslinkedin img{
+        width: 23.25px;
+        height: 22.7px;
+    }
+    
+    .scroll{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .scroll img {
+        width: 19px;
+        height: 30px;
+    }
 
-}
-
-.title{
-   padding-left: 29px;
-}
-/*Text and picture needs to get closer and change fonts*/
-.aboutIru{
- grid-column: 1/3;
-}
-
-.infoaboutIru{
-  grid-column: 1/3;
-
-}
-.scroll{
-    text-align: center;
-}
+    
+    
+   
 }
 
 @media(min-width: 1024px) and (max-width: 1440px){
@@ -507,19 +602,12 @@ padding-right: 10px;
     .logo img{
         width: 50%;
     }
-    
-    .aboutIru{
-     grid-column: 1/2;
-        border: solid violet;
-     
-    
-    }
-    
-    .title{
-       padding-left: 29px;
-    }
-    /*Text and picture needs to get closer and change fonts*/
+.informationpicture{
+    display: flex;
+    justify-content: flex-start;
+}
    
+    
     
    
     .scroll{
