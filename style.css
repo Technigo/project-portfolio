@@ -47,7 +47,7 @@ h5 {
 }
 
 h6 {
-    font-family: 'Satoshi';
+    font-family: 'Satoshi', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 58px;
@@ -236,6 +236,39 @@ p {
     padding-top: 10%;
 }
 
+.btn-article {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 10.5px 16px 10.5px 16px;
+    border-radius: 50px;
+    margin-top: 24px;
+    vertical-align: middle;
+    background-color: #F5F5F5;
+    color: #333333;
+    border: none;
+    height: 48px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.btn-article img {
+    height: 26px;
+    padding-right: 8px;
+}
+
+.btn-article:hover {
+    background-color: #FFD338;
+}
+
+.post {
+    margin-bottom: 98px;
+}
+
 .post img {
     width: 100%;
 }
@@ -371,21 +404,29 @@ address {
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(5, 1fr);
     justify-items: start;
+    align-items: baseline;
 }
 
 .skills h2 {
-    grid-column: 1/ span 4;
+    grid-column: 1/ span 5;
 }
 
 
 .code-group, .toolbox-group {
-    grid-column: 1/ span 2;
+    grid-column: 2/ span 2;
+    align-self: baseline;
+    justify-self: start;
 }
 
 .more-group, .upcoming-group {
-    grid-column: 3/ span 2;
+    grid-column: 4/ span 2;
+    align-self: baseline;
+}
+
+.contact {
+    justify-items: center;
 }
 
 .contact h6 {
@@ -404,12 +445,11 @@ address {
 
 .contact-text {
     grid-column: 2/ span 3;
-    justify-self: center;
-    align-self: center;
+
 }
 
 address {
-    justify-self: start;
+
 }
 }
 @media only screen and (min-width: 992px) {
@@ -490,22 +530,56 @@ address {
     margin-right: 40px;
 }
 
-.my-words h2 {
-    display: block;
-    position: absolute;
-    justify-self: flex-start;
-} 
-
 .my-words {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
     gap: 32px;
 }
 
+.my-words h2 {
+    grid-column: 1 / span 6;
+} 
 
-.contact 
+.post {
+    grid-column: span 2;
+    
+}
 
+.skills {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: baseline;
+    gap: 66px;
+}
+
+.skills h2 {
+    grid-column: 1 / span 6;
+}
+
+.code-group, .toolbox-group, .more-group, .upcoming-group {
+    grid-column: span 1;   
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+}
+
+.contact h6 {
+    grid-column: 1/ span 6;
+}
+
+.contact img {
+    grid-column: 2 / span 1;
+    position: relative;
+}
+
+.contact-text, address {
+    grid-column: 2 / span 4;
+    justify-self: center;
+}
 
 }
