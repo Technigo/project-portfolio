@@ -24,13 +24,13 @@
   }
 
 /*general sections*/
-  * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+  } 
 
-.outer-wrapper {
+/* .outer-wrapper {
     width: 100%;
     display: flex;
     align-items: center;
@@ -41,9 +41,9 @@
     width: 75%;
     min-width: 170px;
     margin: 0;
-}
+} */
 
-/* new section - header */
+/* //////////new section - header/////////// */
 
 .header-section {
     min-width: 320px;
@@ -66,34 +66,46 @@
  }
   
 .header-text {
-    /* margin-left: 24px;
-    margin-right: 48px; */
-    width: 303px;
-    height: 113px;
+    margin-left: 24px;
 }
 
-h2 {
+h2 { /*name*/
     font-family: SatoshiBold;
     color: blue;
     font-size: 28px;
     line-height: 37.8px;
 }
 
-.scroll {
+/*arrow goes missing when 'arrow' added*/
+.scroll-arrow {
     position: absolute;
     left: calc(50% - 9.5px);
+    width: 19px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+.scroll-text {
+    position: absolute;
+    left: calc(50% - 39px);
+    width: 78px;
+    height: 22px;
+    margin-top: 80px;
 }
 
 h1 { /*Frontend Developer*/
-    font-family: SatoshiBold;
+    font-family: satoshiBold;
+    font-style: normal;
+    font-weight: 900;
     font-size: 32px;
     line-height: 43px;
 }
 
 .introduction {
-    /* margin-left: 24px;
-    margin-right: 24px; why are these not equal? */
+    margin-left: 24px;
+    margin-right: 24px;
     margin-bottom: 54.3px;
+    padding: 0;
 }
 
 
@@ -115,50 +127,45 @@ p {
     font-size: 32px;
 }
 
-/* new section - tech */
+/*///////// new section - tech /////////////*/
 
 
 .blue-section {
+    display: flex;
     background-color: #EDFFFF;
     width: 100%;
     min-width: 375px;
     height: 530px;
 }
 
-.page-title {
+.title-tech {
     /* display: flex;  */
     /* justify-content: center; */
-    height: 108px;
-    width: 177px;
-    margin: auto;
-    margin-top: 10px;
-
+    margin-left: 99px;
 }
 
-.page-title h3 {
+.title-tech h3 {
     font-family: SatoshiBold;
     color: blue;
     font-size: 80px;
-    line-height: 108px;
+    line-height: 108px;    
+    margin-top: 80px;
 }
 
 .tech-info {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    width: 327px;
-    height: 162px;
     margin-left: 24px;
-    margin-right: 24px; 
+    margin-right: 24px;
+    margin-top: 60px;
+    padding: 0;
 } 
 
 .tech-info p {
     font-size: 22px;
     line-height: 32px;
-    margin: 0;
 }
 
-/* new section - featured projects */
+/* ////////////new section - featured projects /////////////*/
+
 .card-container {
    display: flex;
    flex-direction: column;
@@ -169,117 +176,259 @@ p {
 }
 
 
-/* .card-container {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 80px;
 
-width: 327px;
-height: 6187px;
-left: 24px;
-top: 1778px;
-} */
 
 .card-container img {
-    max-width: 90%;
+    /* max-width: 90%; */
 }
 
 .card-content {
-    width: 100%;
-    box-sizing: border-box;
+    /* width: 100%;
+    box-sizing: border-box; */
 }
 
-
-
-.title-one {
-    display: flex;
-    justify-content: center;
+.title-featured-projects {
     margin: 64px 24px;
+    color: #0B24F5;
+
 }
 
-.title-one h3 {
+.title-featured-projects h3 {
     font-family: SatoshiBold;
     font-size: 72px;
     line-height: 80px;
+    margin-top: 64px;
 }
 
 .project-image {
-    width: 280px; 
-    height: auto;
+    /* width: 280px; 
+    height: auto; */
 }
+
+/*need to add space under image*/
+
 
 .project-text h3 { /*Name of project*/
     font-family: SatoshiBold; /* fix the font*/
     font-size: 32px;
-    line-height: 43.2px;
-    
+    line-height: 43px;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.project-text p{
+    font-family: 'EB Garamond';
+    font-size: 22px;
+    line-height: 29px;
+
+}
+
+.tag-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+
+.tag-wrapper p {
+    font-family: SatoshiRegular;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #000000;
+    padding: 2px 6px;
+    margin-top: 20px;
 }
 
 .link-github {
-    display: block;
-    background-color: #F5F5F5;
-    width: 200px;
-    height: 48px;
-    text-align: center;
+    display: flex;
     margin-top: 24px;
     text-decoration: none;
+    font-family: SatoshiRegular;
+    font-size: 20px;
+    line-height: 27px;    
+}
+
+.link-github p {
+    padding: 10.5px 16px 10.5px 7px;
+    font-family: SatoshiRegular;
     font-size: 20px;
     line-height: 27px;
-    width: 200px;
-    height: 48px;
-    border-radius: 40px;
-
+    color: #000000;
 }
 
 .link-netlify {
-    display: block;
-    background-color: #F5F5F5;
-    width: 200px;
-    height: 48px;
-    text-align: center;
+    display: flex;
     margin-top: 24px;
+    margin-bottom: 80px;
+    /* padding: 10.5px 16px 10.5px 55px; */
     text-decoration: none;
+    font-family: SatoshiRegular;
     font-size: 20px;
     line-height: 27px;
-    width: 164px;
-    height: 48px;
-    border-radius: 40px;
+    /* width: 164px;
+    height: 48px; */
+    /* border-radius: 40px; */
 }
 
-/* new section - my words*/
+.link-netlify p {
+    padding: 10.5px 16px 10.5px 7px;
+    font-family: SatoshiRegular;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+/* //////////new section - my words//////////*/
 
 .pink-section {
     background-color: #FCEDEA;
+    padding-bottom: 20px;
+    /* display: flex; */
 }
 
-.title-two h3 {
+/* also think about placing of words, date, title of article*/
+.my-words {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 64px;
+}
+
+.title-my-words h3 {
     color: #EB5577;
+    font-family: satoshiBold;
     font-size: 72px;
-    line-height: 97.2px;
+    line-height: 97px;
+    margin-bottom: 64px;
+}
+
+.article img {
+    margin-left: 24px;
+}
+
+.link-border {
+    margin-bottom: 98px; /*THIS CAUSES A WHITE BOX*/
+}
+
+
+/* button {
+    margin-bottom: 93px;
+} */
+
+.article-date {
+    font-family: satoshiBold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #EB5577;
+    margin-top: 40px;
+    margin-bottom: 4px;
+}
+
+.article-title {
+    font-family: satoshiBold;
+    font-size: 32px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 24px;
+
+}
+
+.link-doc {
+    display: flex;
+    text-decoration: none;
+    margin-top: 34.5px;
+    padding-bottom: 98px;
+
+}
+.link-doc p {
+    font-family: SatoshiRegular;
+    font-size: 20px;
+    line-height: 27px;
+    color:#000000;
+    padding: 10.5px 16px 10.5px 7px;
+
 }
 
 /* new section -skills*/
 
 .beige-section {
     background-color: #FDF2E4;
+    padding-bottom: 137px;
+
 }
 
-.title-three h3 {
+.title-skills h3 { 
     font-family: satoshiBold;
     font-size: 72px;
     line-height: 97.2px;
+    color: blue;
+    margin-left: 94px;
+    padding-top: 64px; 
 }
 
-/* new section -time to talk*/
+
+h4 { /*Code, tech etc*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px;
+    gap: 8px;
+    font-family: satoshiRegular;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 66px;
+    margin-bottom: 16px;
+}
+
+ul {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+
+}
+
+/* //////////new section -time to talk*/
 
 .final-section {
     background-color: white;
 }
 
-.title-four h3 {
+.title-time-to-talk h3 {
     font-family: satoshiBold;
     font-size: 58px;
-    line-height: 78.3px;
+    line-height: 78px;
+    margin-left: 24px;
+    color: #EB5577;
 }
 
+.profile-picture-again img {
+    min-width: 164px;
+    height: auto;
+    border-radius: 50%;
+    margin: 55px 105.5px 29px 24px;
+    overflow: hidden; 
+ }
+
+.name-occupation-text {
+    margin-left: 24px;
+}
+
+.email-address h2 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin-top: 99px;
+    margin-bottom: 99px;
+    margin-left: 24px;;
+}
+
+.socialmedia-icons-again {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
