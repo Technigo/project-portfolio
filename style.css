@@ -28,7 +28,7 @@
 }
 
 /* SPLASH SECTION */
-.splash-section h1 {
+.splash-title-section h1 {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 900;
@@ -36,7 +36,7 @@
   line-height: 43px;
 }
 
-.splash-section h2 {
+.splash-title-section h2 {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 700;
@@ -44,7 +44,7 @@
   line-height: 38px;
   color: #0b24f5;
 }
-.splash-section h3 {
+.splash-title-section h3 {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 500;
@@ -53,16 +53,20 @@
   color: #565656;
 }
 
-.splash-section p {
+.splash-title-section p {
   font-family: EBGaramondRegular;
   font-size: 22px;
   line-height: 29px;
 }
 
-.splash-section {
+.splash-title-section {
   justify-content: center;
   padding-top: 55px;
   margin: 0 24px;
+}
+
+.splash-hero-picture {
+  display: none;
 }
 
 .splash-title-card {
@@ -147,9 +151,11 @@
 /* TECH SECTION */
 
 .tech-section {
+  display: flex;
   background-color: #edffff;
   padding-top: 80px;
   padding-bottom: 120px;
+  align-content: center;
 }
 
 .tech-container {
@@ -372,8 +378,8 @@
   font-size: 72px;
   line-height: 97px;
   color: #eb5577;
-  margin: 0 24px;
   padding-bottom: 64px;
+  margin: 0 24px;
 }
 
 .words-articles {
@@ -386,6 +392,10 @@
 
 .words-articles-article-image {
   padding-bottom: 40px;
+}
+
+.words-articles-article-image img {
+  width: 327px;
 }
 
 .words-articles-article-text h4 {
@@ -598,6 +608,11 @@
   color: #565656;
 }
 
+.contact-title-card-titles {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-information {
   display: flex;
   flex-direction: row;
@@ -612,16 +627,4 @@
 .contact-section .link-icons {
   padding-top: 99px;
   padding-bottom: 55px;
-}
-
-@media only screen and (min-width: 768px) {
-  /* tablet */
-}
-
-@media only screen and (min-width: 992px) {
-  /* desktop normal */
-}
-
-@media only screen and (min-width: 1200px) {
-  /* desktop large */
 }
