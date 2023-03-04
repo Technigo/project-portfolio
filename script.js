@@ -4,7 +4,7 @@ checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
 
-//Scroll to top button
+//Back to top button
 let topButton = document.getElementById("top-button");
 
 // When the user scrolls down 20px from the top of the document, show the button
