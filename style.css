@@ -1,5 +1,19 @@
-@import url('./Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf');
 /* font EB Garamon, ej importerad än....? */
+@font-face {
+    font-family: 'satoshi';
+    src: url('./Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'satoshi';
+    src: url('./Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'satoshiregular';
+    src: url('./Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf');
+    font-weight: 900;
+}
 
 body {
     margin: 0 auto;
@@ -7,6 +21,9 @@ body {
 
     /* Fontsizes delcared */
 h1 {
+    font-family: 'Satoshi';
+    font-weight: 700;
+    line-height: 108px;
     font-size: 80px;
     color: #0B24F5;
 }
@@ -49,10 +66,6 @@ p {
 }
 
     /* First page */
-
-.firstpagecontainer {
-        /* display: flex; */
-    }
     
 .topleftbox {
     display: flex;
@@ -65,6 +78,10 @@ p {
  
 .topleftinnercontainer {
     width: 87%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .presentationcontainer {
@@ -85,7 +102,7 @@ p {
     height: 164px;
     border-radius: 50%;
     background: #D9D9D9;
-    margin-left: 52px;
+    margin-left: 25%;
 
 }
 
@@ -100,16 +117,21 @@ p {
     margin-bottom: 40px;
 }
     
-
+.socialmedialinks1 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 23px;
+}
     
 .toprightbox {
     display: none;
-        /* width: 50%;
-        height: 980px;
-        contain: content; */
 }
 
 .letsScroll {
+    display: block;
+}
+
+.arrowchild {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,8 +139,18 @@ p {
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
-    /* line-height: 22px;
-    color: #0B24F5; fungerar ej av någon anledning*/
+    top: -50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.arrowtext {
+    font-family: 'Satoshi';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0B24F5;
 }
 
 .arrowImg {
@@ -157,8 +189,8 @@ p {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-left: 6.4%;
-    margin-right: 6.4%;
+    margin: 0 auto;
+    width: 87%;
     height: fit-content;
     justify-content: center;
 }
@@ -173,8 +205,8 @@ p {
 
 .ftprojectimg {
     height: auto;
+    object-fit: cover;
     max-height: 280px;
-    max-width: 100%;
  }
 
 .ftpdivchild1 {
@@ -182,10 +214,15 @@ p {
     flex-direction: column;
     max-width: 100%;
     height: fit-content;
+    margin-bottom: 15%;
 }
 
-.ftpprojectTitles {
-    margin-bottom: 20px;
+/* .ftpdivchild2 {
+    margin-top: 5%;
+} */
+
+.ftprojectTitles {
+    margin-top: 5%;
 }
 
 .ftprojectdescription {
@@ -203,10 +240,11 @@ p {
 .mywords {
     display: flex;
     flex-direction: column;
-    align-content: center;
     height: fit-content;
     justify-content: center;
     background: #FCEDEA;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .mywordstitle {
@@ -221,15 +259,15 @@ p {
 }
 
 .articlediv {
-    margin-left: 6.4%;
-    margin-right: 6.4%;
+    width: 87%;
+    margin-bottom: 10%;
 }
 
 .articleimg {
-    height: auto;
-    max-height: 280px;
+    height: 280px;
     max-width: 100%;
     align-content: center;
+    object-fit: cover;
  }
 
 .pink {
@@ -320,7 +358,7 @@ p {
 .footerpresentation {
     display: flex;
     flex-direction: column;
-    align-content: center;
+/*     align-content: center; */
     margin-bottom: 40px;
     
 }
@@ -338,15 +376,28 @@ p {
     margin-bottom: 10%;
 }
 
+.socialmedialinks2 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 23px;
+}
+
    /*  Buttons/Icon-related! */
 
-.articleBtn {
-    margin-bottom: 95px;
-}
+/* .articleBtn {
+    
+} */
 
 .ldviewbuttons {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.btndivider {
+    width: 24px;
+    height: 24px;
 }
 
 .fa-x3 .githubBtn {
@@ -439,7 +490,9 @@ margin-bottom: 40px;
 }
 
 .socialmedialinks1 {
-    margin-top: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 7%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -449,6 +502,18 @@ margin-bottom: 40px;
     contain: content;
     height: 412px;
     display: inline;
+}
+
+.letsScroll {
+    position: relative;
+}
+
+.arrowchild {
+    position: absolute;
+    top: -50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
     /* Page 2 */
@@ -471,9 +536,12 @@ margin-bottom: 40px;
  /* Page 3 */
 
  .featuredProjects {
-    margin-left: 3.2%;
-    margin-right: 1.6%;
-    margin-bottom: 120px;
+    width: 95%;
+    margin-bottom: 10%;
+}
+
+.ftprojectTitles {
+    margin-top: 0;
 }
 
 .ftprojectimg {
@@ -484,9 +552,19 @@ margin-bottom: 40px;
     margin-right: 3.3%;
  }
 
-.ftprojectdiv {
+.ftpdivchild1 {
     display: flex;
     flex-direction: row;
+    margin-bottom: 10%;
+    height: 280px;
+    object-fit:fill
+}
+
+.ftpdivchild2 {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ldviewbuttons {
@@ -519,7 +597,11 @@ margin-bottom: 40px;
     height: auto;
     width: auto;
     object-fit: cover;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+ }
+
+ .articleBtn {
+    width: 178px;
  }
 
 .pink {
@@ -533,17 +615,26 @@ margin-bottom: 40px;
     padding-bottom: 10%;
 }
 
+.skillsouterbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+}
+
 .skillsinnerbox {
     display: flex;
-    flex-direction: row;
-    width: 52%;
-    
+    width: 389px;
+    justify-content: space-between;
 }
 
 .skillschild {
     text-align: left;
     height: fit-content;
     margin-bottom: 10%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
     /* Page 6 */
@@ -592,9 +683,8 @@ margin-bottom: 40px;
 
 }
 
-}
 
-@media (min-width:768px) and (max-width:1279px){
+@media (min-width:768px){
 
 .firstpagecontainer {
     display: flex;
@@ -653,7 +743,12 @@ margin-bottom: 40px;
 }
 
 .letsScroll {
-    /* ingen aning hur jag ska få till denna positionering! */
+    position: relative;
+}
+
+.arrowchild {
+    position: absolute;
+    top: inherit;
 }
 
     /* Page 2 */
@@ -674,12 +769,12 @@ margin-bottom: 40px;
  /* Page 3 */
 
  .featuredProjects {
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 0px;
-    max-width: 100%;
-    display: flex;
+    flex-wrap: wrap;
     
+}
+
+.ftprojectTitles {
+    margin-top: 0;
 }
 
 .ftprojectimg {
@@ -693,16 +788,14 @@ margin-bottom: 40px;
 .ftpbigdiv {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .ftpdivchild1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
-    max-width: 90%;
     width: 820px;
+    margin-bottom: 10%;
 }
 
 .ftpdivchild2 {
@@ -722,7 +815,9 @@ margin-bottom: 40px;
 
 .mywords {
     padding-top: 4%;
-    align-items: center;
+    padding-bottom: 15%;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .mywordstitle {
@@ -730,9 +825,11 @@ margin-bottom: 40px;
 }
 
 .articlediv {
-    width: 76%;
+    width: 45%;
     display: flex;
     flex-direction: column;
+    margin: 1%;
+    margin-bottom: 4%;
 }
 
 .articleimg {
@@ -740,7 +837,7 @@ margin-bottom: 40px;
     height: auto;
     width: auto;
     object-fit: cover;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
  }
 
 .pink {
@@ -752,13 +849,21 @@ margin-bottom: 40px;
 .skills {
     flex-wrap: wrap;
     padding-bottom: 10%;
+    padding-top: 7%;
+}
+
+.skillsouterbox {
+    display: flex;
+    max-width: 851px;
+    min-width: 66%;
+    margin-left: 5%;
 }
 
 .skillsinnerbox {
     display: flex;
     flex-direction: row;
     width: 52%;
-    
+    justify-content: center;
 }
 
 .skillschild {
@@ -766,6 +871,8 @@ margin-bottom: 40px;
     height: fit-content;
     margin-bottom: 10%;
 }
+
+
 
     /* Page 6 */
 
@@ -781,14 +888,11 @@ margin-bottom: 40px;
 .contactTitle {
     font-size: 120px;
     line-height: 162px;
-    margin-bottom: 0;
     width: 100%;
 }
 
 .footerpresentation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin-left: 5%;    
     
 }
 
@@ -806,20 +910,54 @@ margin-bottom: 40px;
     align-items: center;
 }
 
-.contactinformation {
-    margin-bottom: 10%;
-    margin-top: 10%;
-}
-
 .socialmedialinks2 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-bottom: 10%;
 
 }
 }
 
-/*
-@media (min-width:1280px){
+
+@media (min-width:1300px){
   
-} */
+    /* Page 1 */
+
+.topleftbox {
+    min-width: 50%;
+}
+
+.presentationcontainerchild {
+    margin-left: 5%;
+}
+
+.introduction {
+    max-width: 500px;
+}
+
+.socialmedialinks1 {
+    justify-content: space-between;
+    width: 288px;
+}
+
+.arrowchild {
+    top: -150px;
+}
+
+    /* Page 2 */
+
+.techdescription {
+    height: 96px;
+}
+
+    /* Page 4 */
+
+.articlediv {
+    width: 37.3%;
+    margin: 2.5%;
+}
+
+    /* Page 6 */
+.contactinnercontainer {
+    width: 50%;
+}
+
+}
