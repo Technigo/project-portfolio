@@ -36,6 +36,11 @@ body {
   background: white;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* TOP SECTION */
 
 .section-top {
@@ -87,13 +92,13 @@ body {
   font-family: "SatoshiBold", sans-serif;
   font-weight: 700;
   font-size: 1.3rem;
-  color: #0b24f5;
+  color: #5871ce;
 }
 
 .profile h3 {
   font-family: "SatoshiBlack", sans-serif;
   font-weight: 800;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   color: #000;
 }
 
@@ -105,7 +110,7 @@ body {
 }
 
 .profile p {
-  font-family: "EB Garamond", serif;
+  font-family: "EB Garamond", sans-serif;
   width: 70%;
   font-size: 18px;
   line-height: 1.5;
@@ -205,13 +210,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: pink;
+  background: #85a1b7;
   width: 50%;
   height: 100%;
 }
 
 .image-container img {
-  width: 40vw;
+  width: 50vw;
 }
 
 /* TECH SECTION */
@@ -219,7 +224,7 @@ body {
 .section-tech {
   height: 60vh;
   width: 100%;
-  background: #e6f9ff;
+  background: #ffe1df;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,7 +239,7 @@ body {
 }
 
 .section-title {
-  color: #0b24f5;
+  color: #5871ce;
   font-family: "SatoshiBold", sans-serif;
   font-size: 60px;
   font-weight: 600;
@@ -243,6 +248,7 @@ body {
 
 .tech {
   font-size: 22px;
+  font-family: "EB Garamond", sans-serif;
 }
 
 .highlight {
@@ -272,18 +278,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2vw 0vw;
+  margin: 3vw 0vw;
 }
 
 .featured-projects-headline {
   font-family: "SatoshiBold", sans-serif;
   font-size: 55px;
-  color: #0b24f5;
+  color: #5871ce;
   width: 45%;
 }
 
 .frame {
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
 }
@@ -298,6 +304,7 @@ body {
 }
 
 .project-info p {
+  font-family: "EB Garamond", sans-serif;
   margin: 0vw 0vw 1vw 0vw;
 }
 
@@ -310,7 +317,7 @@ body {
   color: #ffffff;
 }
 
-button {
+.button button {
   background-color: #f5f5f5;
   border: none;
   color: #000;
@@ -336,6 +343,76 @@ button {
 .button-two:hover {
   color: #ffffff;
   background-color: #eb5577;
+}
+
+/* MY WORDS SECTION */
+
+.my-words {
+  background-color: #ffe1df;
+}
+
+.articles h1 {
+  width: 100%;
+  margin-left: 4vw;
+  font-family: "SatoshiBold", sans-serif;
+  color: #5871ce;
+  font-size: 45px;
+}
+
+.articles {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.article {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.article img {
+  width: auto;
+  margin: 10px 0;
+}
+
+.article h3 {
+  font-family: "SatoshiBold", sans-serif;
+  font-size: 16px;
+  color: #eb5577;
+}
+
+.article h2 {
+  font-family: "SatoshiBlack", sans-serif;
+  font-size: 22px;
+}
+
+.article p {
+  font-family: "EB Garamond", sans-serif;
+  font-size: 18px;
+}
+
+.read-article {
+  width: 155px;
+  background-color: #f5f5f5;
+  border: none;
+  color: #000;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.read-article i {
+  font-size: larger;
+  margin: 5px;
 }
 
 @media screen and (max-width: 1025px) {
@@ -424,6 +501,42 @@ button {
 
   .frame {
     width: 80%;
+  }
+
+  /* MY WORDS */
+
+  ..my-words-headline {
+    width: 80%;
+    margin-left: 20vw;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 790px) {
+  .text-container {
+    min-height: 40rem;
+  }
+
+  .frame {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .project-image img {
+    height: 50%;
+    width: 100%;
   }
 }
 
@@ -529,4 +642,6 @@ button {
     flex-direction: column-reverse;
     align-items: flex-start;
   }
+
+  /* MY WORDS */
 }
