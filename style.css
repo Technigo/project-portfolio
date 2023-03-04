@@ -1,7 +1,24 @@
 @font-face {
     font-family: SatoshiBold;
     font-weight: bold;
-    src: url("./fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf");
+    src: url("./fonts/Satoshi-Bold.otf");
+  }
+  
+  @font-face {
+    font-family: SatoshiMedium;
+    font-weight: medium;
+    src: url("./fonts/Satoshi-Medium.otf");
+  }
+  
+  @font-face {
+    font-family: SatoshiBlack;
+    font-weight: bolder;
+    src: url("./fonts/Satoshi-Black.otf");
+  }
+  
+  @font-face {
+    font-family: EBGaramondRegular;
+    src: url("./fonts/EBGaramond-Regular.ttf");
   }
 
 body {
@@ -31,7 +48,7 @@ body {
         display: grid;
         background: rgb(255, 244, 210);
         padding: 10px;
-        grid-row: 1;
+        font-family: 'EB Garamond', serif;
     }
 
     .links {
@@ -107,6 +124,11 @@ body {
     grid-template-columns: 1fr;
     padding: 10px;
     grid-gap: 5px;
+}
+
+.projects h1 {
+    font-size: 48px;
+    color: #fa8072;
 }
 
 .HTML5 {
@@ -188,6 +210,11 @@ body {
     .button-git:hover {
         background-color: rgb(120, 120, 255);
     }
+
+.picture img {
+    width: 184px;
+    height: 280px;
+}
 a {
 text-decoration: none;
 padding-left: 5px;
@@ -315,6 +342,74 @@ padding-left: 5px;
         color: black;
      }
 
-    
+     @media only screen and (min-width: 768px) {
+        /* tablet */
+        body {
+            width: 744px;
+        }
+        .top-container {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+        }
+        
+            .presentation {
+                align-items: center;
+                justify-content: center;
+            }
+        
+        /*Picture that only shows when tablet or desktop*/
+            .picture-big {
+                display: grid;
+            }
+
+            .sky {
+                width: 100%;
+                max-width: 744px;
+                height: 412px;
+            }
+
+            .emilia-img {
+                   display:flex;
+                }
+
+    .h-skills {
+        margin-bottom: 100px;
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+
+.p-1{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr ;
+}
+
+
+.picture{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.p-div{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.p-buttons{
+    grid-row: 4;
+    grid-column: 1;
+}
+
+
+}
+      
+      @media only screen and (min-width: 992px) {
+        /* desktop normal */
+      }
+      
+      @media only screen and (min-width: 1200px) {
+        /* desktop large */
+      }
 
     
