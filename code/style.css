@@ -12,7 +12,7 @@ h1 {
   color: #0B24F5;
 }
 
-.profession-heading {
+.profession-heading, .project-name, .article-title {
   font-size: 32px;
   font-weight: 900;
 }
@@ -63,6 +63,7 @@ h1 {
   border-radius: 50%;
   object-fit: cover;
   align-self: center;
+  object-position: 10% 90%;
 }
 
 .titles {
@@ -73,9 +74,11 @@ h1 {
   margin-top: 34px;
 }
 
-.presentation-paragraph {
+.presentation-paragraph, .tech-paragraph, 
+.project-paragraph, .article-paragraph {
     font-family: 'EB Garamond';
     font-size: 22px;
+    font-weight: 400;
     line-height: 30px;
     margin-top: 40px;
 }
@@ -131,7 +134,6 @@ h1 {
 }
 
 
-
 /*** Tech section ***/
 .tech-container {
   display: flex;
@@ -145,10 +147,6 @@ h1 {
 }
 
 .tech-paragraph {
-  font-family: 'EB Garamond';
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 30px;
   margin-top: 40px;
 }
 
@@ -172,7 +170,6 @@ h1 {
   text-align: center;
   padding: 2px;
 }
-
 
 
 /*** Featured projects section ***/
@@ -211,13 +208,8 @@ h1 {
 }
 
 .project-paragraph {
-  font-family: 'EB Garamond';
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 28px;
   margin-top: 18px;
 }
-
 
 .tech-languages {
   display: flex;
@@ -248,10 +240,7 @@ margin-top: 24px;
 }
 
 .view-code:hover {
-  width: 200px; 
-  height: 48px;
   background: url("icons/View-Code-Button-Hover.svg");
-  /*margin-top: 24px;*/
 }
 
 .live-demo {
@@ -263,8 +252,71 @@ margin-top: 24px;
 
 .live-demo:hover {
   background: url("icons/Live-Demo-Button-Hover.svg");
-  /*margin-top: 24px;*/
 }
+
+
+/*** My Words section ***/
+.my-words-container {
+  display: flex;
+  flex-direction: column;
+  background: #FCEDEA;
+  padding: 64px 24px 0px 24px;
+}
+
+.my-words-title {
+  color: #EB5577;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 97px;
+  margin-bottom: 64px;
+}
+
+.articles-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-img {
+  object-fit: cover;
+  height: 340px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.article-title {
+  margin-top: 4px;
+}
+
+.month-year {
+  color: #EB5577;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 27px;
+  margin-top: 40px;
+}
+
+.article-title {
+  line-height: 43px;
+}
+
+.read-article {
+  display: block;
+  width: 178px; 
+  height: 48px;
+  background: url("icons/Read-On-Medium.svg");
+  margin-top: 24px;
+  }
+  
+  .read-article:hover {
+    background: url("icons/Read-On-Medium-Hover.svg");
+  }
+
+  .article-one, .article-two, 
+  .article-three, .article-four {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 93px;
+  }
 
 /* Skills section */
 .skills-container {
@@ -300,7 +352,6 @@ margin-top: 24px;
 .code-list-title {
   background: #EB5577;
   color: #FFFFFF;
-  /*width: 61px;*/
   width: 70px;
   height: 36px;
   font-weight: 600;
@@ -320,7 +371,6 @@ margin-top: 24px;
 .toolbox-list-title {
   background: #2483E0;
   color: #FFFFFF;
-  /*width: 92px;*/
   width: 99px;
   height: 36px;
   font-weight: 600;
@@ -340,7 +390,6 @@ margin-top: 24px;
 .more-list-title {
   background: #0B24F5;
   color: #FFFFFF;
-  /*width: 62px;*/
   width: 71px;
   height: 36px;
   font-weight: 600;
@@ -359,7 +408,6 @@ margin-top: 24px;
 .upcoming-list-title {
   background: #6DB486;
   color: #FFFFFF;
-  /*width: 118px;*/
   width: 127px;
   height: 36px;
   font-weight: 600;
@@ -382,6 +430,7 @@ margin-top: 24px;
   align-items: center;
   margin: 0px 24px 0px 24px;
 }
+
 .time-to-talk-title {
   color: #EB5577;
   font-weight: 900;
@@ -520,7 +569,8 @@ margin-top: 24px;
   }
   
   .project-img {
-    width: 280px;
+    width: 198px; /* Would like to make this picture more flexible */
+    max-width: 280px;
     height: 280px;
     object-position: 40% 60%;
     margin-right: 24px;
@@ -545,6 +595,28 @@ margin-top: 24px;
   .view-code {
     margin-right: 24px;
   }
+
+  /*** @media tablet - My Words section */
+
+  .my-words-container {
+    padding: 120px 89px 58px 89px;
+  }
+
+  .my-words-title {
+    font-size: 80px;
+    line-height: 108px;
+    margin-bottom: 53px;
+  }
+
+  .article-paragraph {
+    margin-top: 24px;
+  }
+
+  .article-one, .article-two, 
+  .article-three, .article-four {
+    margin-bottom: 98px;
+  }
+
 
   /*** @media tablet - Skills section */
   .skills-container {
@@ -622,7 +694,6 @@ margin-top: 24px;
 
 
 @media (min-width: 1025px) {
-
   /*** @media desktop - Header ***/
   .header {
     display: flex;
@@ -751,9 +822,39 @@ margin-top: 24px;
     margin-right: 24px;
   }
 
-  /*** @media desktop - Skills section */
+  /*** @media desktop - My Words section */
+  .my-words-container {
+    padding: 120px 89px 188px 89px;
+  }
 
-  . .skills-container {
+  .my-words-title {
+    font-size: 80px;
+    line-height: 108px;
+    margin-bottom: 53px;
+  }
+
+  .articles-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .article-paragraph {
+    margin-top: 24px;
+  }
+
+  .article-one, .article-two, 
+  .article-three, .article-four {
+    margin: 0px 15px 59px 15px;
+  }
+
+  /*.article-one, .article-three {
+    margin-right: 32px;
+  }*/
+
+
+  /*** @media desktop - Skills section */
+  .skills-container {
     padding: 120px 0px 218px 0px;
   }
 
