@@ -120,6 +120,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
+    padding-bottom: 60px;
 }
 
 .icon {
@@ -203,8 +204,9 @@ p {
 }
 
 .project-image {
-    /* width: 280px; 
-    height: auto; */
+    width: 327px; 
+    height: 280px;
+    margin-bottom: 40px;
 }
 
 /*need to add space under image*/
@@ -215,7 +217,6 @@ p {
     font-size: 32px;
     line-height: 43px;
     color: #000000;
-    margin-top: 40px;
 }
 
 .project-text p{
@@ -250,7 +251,10 @@ p {
     font-family: SatoshiRegular;
     font-size: 20px;
     line-height: 27px;    
-}
+    background-color: #F5F5F5; 
+    width: 200px; height: 48px; 
+    border-radius: 40px;   
+}    
 
 .link-github p {
     padding: 10.5px 16px 10.5px 7px;
@@ -269,6 +273,9 @@ p {
     font-family: SatoshiRegular;
     font-size: 20px;
     line-height: 27px;
+    background-color: #F5F5F5; 
+    width: 200px; height: 48px; 
+    border-radius: 40px; 
     /* width: 164px;
     height: 48px; */
     /* border-radius: 40px; */
@@ -341,7 +348,10 @@ p {
     display: flex;
     text-decoration: none;
     margin-top: 34.5px;
-    padding-bottom: 98px;
+    background-color: #FFFFFF; 
+    width: 178px; 
+    height: 48px; 
+    border-radius: 40px;
 
 }
 .link-doc p {
@@ -349,16 +359,20 @@ p {
     font-size: 20px;
     line-height: 27px;
     color:#000000;
-    padding: 10.5px 16px 10.5px 7px;
+    margin-top: 10px;
+    /* padding: 10.5px 16px 10.5px 7px; */
 
 }
 
 /* new section -skills*/
 
-.fifth-page {
+.fifth-page { /*this could be my skills page class instead...then change all wrappers to page title*/
     background-color: #FDF2E4;
     padding-bottom: 137px;
     min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title-skills h3 { 
@@ -366,7 +380,7 @@ p {
     font-size: 72px;
     line-height: 97.2px;
     color: blue;
-    margin-left: 94px;
+    /* margin-left: 94px; */
     padding-top: 64px; 
 }
 
@@ -433,7 +447,7 @@ ul {
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 /*MEDIA QUERIES */
@@ -443,13 +457,15 @@ ul {
 /*new section - header*/
 
     .header-section {
-        display: block;
+        /* display: block; */
+        margin-left: 24px;
+        margin-right: 24px;
     }
 
     .picture img {
         display: flex;
         /* flex-grow: ; */
-        max-width: 100%;
+        /* max-width: 100%; */
         object-fit: cover;
     }
 
@@ -462,6 +478,7 @@ ul {
         margin-top: 81px;
         margin-left: 102px;
         margin-bottom: 32px;
+        margin-right: unset;
         /* check the dimensions here */ 
         overflow: hidden; 
      }
@@ -488,38 +505,208 @@ ul {
         margin-right: 122px;
    }
 
-    
-    .title-featured-projects {
-        position: absolute;
-        width: 651px;
-        height: 108px;
-        left: calc(50% - 651px/2 - 22.5px);
-
-    }
+   /*new section - featured projects*/
 
     .title-featured-projects h3 {        
         margin-top: 64px;
         font-size: 80px;
         line-height: 108px;
+        margin-left: 24px;
     }
 
-/*new section - featured projects*/
 
     .project-image {
         width: 184px;
-        height: auto;
-
+        min-height: 280px;
+        object-fit: cover;
+        object-position: center center;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 
-    .card-content .project-one {
+    .card-content { /*Name/info/tags*/
         display: flex;
         flex-direction: row;
     }
-} 
+
+    .project-links {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        
+    }
+
+    .link-netlify {
+        margin-left: 24px;
+    }
+   
+    /*My words section*/
+
+    .title-my-words {
+        margin-left: 25px; /*come back to this later*/
+        padding-top: 64px;
+    }
+
+    .article-image {
+        width: 584px;
+        height: 340px;
+        object-fit: cover;
+    }
+
+    article {
+        margin-left: 25px; /*come back to this later*/
+        margin-right: auto;
+    }
+
+/*new section - skills */
+    
+    .my-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 66px;
+    }
+
+/* new section - time to talk */
+
+    .profile-picture-again img {
+        min-width: 164px;
+        height: auto;
+        border-radius: 50%;
+        margin-top: 81px;
+        margin-bottom: 32px;
+        margin-right: unset;
+        overflow: hidden; 
+    }
+
+    .picture-info-container { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .name-occupation-text {
+        margin-top: 106.5px;  
+        margin-left: 29px;
+    }
+
+    .title-time-to-talk {
+        margin-top: 196px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .email-address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    }
+
+
 
 @media (min-width: 1025px) {
 
-    /* .picture img {
-        display: flex; */
+    /*new section - header*/
+
+    .first-page {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr; */
+        display: flex;
+        flex-direction: row-reverse;
     }
-}
+
+    .picture-container {
+        display: flex;
+    }
+
+    .picture img {
+        display: flex;
+        height: 980px;
+        flex-basis: 50%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    /* .cover-image-container {
+        display: flex;
+        width: 50%;
+    
+      }
+    
+      .cover-image {
+        object-fit: cover;
+        height: 980px;
+        overflow: hidden;
+      } */
+
+    .header-section {
+        /* display: block; */
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+     
+
+    /*My words section*/
+
+    /*new section - skills */
+    
+    .my-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 66px;
+    }
+
+    /*new section - time to talk */
+
+    .profile-picture-again img {
+        min-width: 164px;
+        height: auto;
+        border-radius: 50%;
+        margin-top: 81px;
+        margin-bottom: 32px;
+        margin-right: unset;
+        overflow: hidden; 
+    }
+
+    .picture-info-container { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .name-occupation-text {
+        margin-top: 106.5px;  
+        margin-left: 29px;
+    }
+
+    .title-time-to-talk {
+        margin-top: 196px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .email-address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    }
