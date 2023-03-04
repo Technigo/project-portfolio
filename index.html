@@ -17,42 +17,45 @@
     </title>
 </head>
 <body>
-    <header class="header">
-        <section class="presentation">
-            <div class="profile-picture-and-titles">
-                <img src="https://lh3.googleusercontent.com/Xx0s0hqZsmOV43qqS4i_dTCN0Jq59dkigXRccxFPhCiGkY7GRlnmboQ0sxwHT8TKtTRGr01CWDutDFoZj3VUOcDsuaewWY-cBEq_724zhuTgZlA0bRs7HjrqtNns1DNmnb2YJoQb=w340-h315-p-k" alt="Profile picture" class="profile-picture"/><!-- Looks right?-->
+    <header>
+        <div class="header-img"> <!--Inside of profile div?-->
+            <img src="" alt="" class="">
+        </div>  
+        <div class="profile"><!--Add wrapper?-->
+                <img src="https://lh3.googleusercontent.com/Xx0s0hqZsmOV43qqS4i_dTCN0Jq59dkigXRccxFPhCiGkY7GRlnmboQ0sxwHT8TKtTRGr01CWDutDFoZj3VUOcDsuaewWY-cBEq_724zhuTgZlA0bRs7HjrqtNns1DNmnb2YJoQb=w340-h315-p-k" alt="Picture of Lina Adamsson" class="profile-img"/><!-- Looks right?-->
                 <!--https://media.licdn.com/dms/image/C4D03AQG7XDsOcQblvw/profile-displayphoto-shrink_800_800/0/1591003478639?e=2147483647&v=beta&t=RWzzWNGzWF6zFfK1US8A7ok_hCBFTGLPeD8LjXlRj5g-->
-                <div class="profile-titles">
+                <div class="profile-presentation">
                     <h2>Lina Adamsson</h2>
                     <h3>Frontend developer</h3>
-                    <h4>+ digital editor</h4>
-                    <h4>+ graphic designer</h4>
+                    <h4>+ graphic designer & editor</h4>
                     <p>
-                        Lina is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field.
+                    Lina is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field.
                     </p>
                 </div>
-            </div>
-            <div class="social-media-links">
-                <a class="icon" href="https://www.linkedin.com/in/lina-adamsson/">
+            <div class="contact-links">
+                <a class="icon-linkedin" href="https://www.linkedin.com/in/lina-adamsson/">
                     <i class="fab fa-linkedin-in"></i>
-                  </a>
-                Linkedin
-                Github
-                Stack Overflow
-                Twitter 
-                Instagram 
+                </a>
+                <a class="icon-github" href="https://github.com/LinaAdamsson">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a class="icon-instagram" href="https://www.instagram.com/linaadams/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </div>
             <div>
                 Let's scroll icon
             </div>
-        </section>       
+        </div>      
     </header>
 
     <section>
         <div class="tech">
             <h1>Tech</h1><!--No need for divs?-->
-            <p>
-                HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.
+            <p><!--No need for divs?-->
+                API:s, CSS, ES6, Figma, Flexbox, Github, Grid, HTML, JavaScript, mob & pair programming
+                <span>JSX, Mongo DB, Node.js, React, React Hooks, Redux, Web Accessability
+                </span>
             </p>
         </div>
     </section>
@@ -62,60 +65,49 @@
             <div class="featured-projects-title"><!--Superfluous div? Nested div?-->
                 <h1>Featured Projects</h1>
             </div>
-            <div class="chatbot"><!--Superfluous to call it "project"?-->
-                <div class="chatbot-image"><!--Image to the left-->
-                </div>
-                <div class="chatbot-title"><!--Superfluous div? Nested div?-->
-                    <h3>Chatbot built in javascript</h3>
-                </div>
-                <div class="chatbot-text"><!--Text to the right-->
-                    <p>The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.
-                    </p>
-                </div>
-                <!--Insert black boxes/icons declaring skills-->
-                <div class="chatbot-buttons"><!--Superfluous div? Nested div? Buttons repeatable?-->
-                    <div class="chatbot-button-github">                        
+            <ul>
+                <li id="chatbot"><!--Superfluous to call it "project"? id instead of div+class?-->
+                    <div class="chatbot-image"><!--Image to the left-->
                     </div>
-                    <div class="chatbot-button-browser">                       
+                    <div class="chatbot-title"><!--Superfluous div? Nested div?-->
+                        <h3>Chatbot built in javascript
+                        </h3>
                     </div>
-                </div>
-            </div>
-            <div class="weather-app">
-                <div class="weather-app-image"><!--Image to the left-->
-                </div>
-                <div class="weather-app-title"><!--Superfluous div? Nested div?-->
-                    <h3>Weather app</h3>
-                </div>
-                <div class="weather-app-text"><!--Text to the right-->
-                    <p>The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.
-                    </p>
-                </div>
-                <!--Insert black boxes/icons declaring skills-->
-                <div class="weather-app-buttons"><!--Superfluous div? Nested div? Buttons repeatable?-->
-                    <div class="weather-app-button-github">                        
+                    <div class="chatbot-text"><!--Text to the right-->
+                        <p>The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.
+                        </p>
                     </div>
-                    <div class="weather-app-button-browser">                       
+                    <!--Insert black boxes/icons declaring skills-->
+                    <div class="chatbot-buttons"><!--Superfluous div? Nested div? Buttons repeatable?-->
+                        <div class="chatbot-button-github">                        
+                        </div>
+                        <div class="chatbot-button-browser">                       
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="guess-who-the-game">
-                <div class="guess-who-the-game-image"><!--Image to the left-->
-                </div>
-                <div class="guess-who-the-game-title"><!--Superfluous div? Nested div?-->
-                    <h3>Guess who the game</h3>
-                </div>
-                <div class="guess-who-the-gamep-text"><!--Text to the right-->
-                    <p>The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.
-                    </p>
-                </div>
-                <!--Insert black boxes/icons declaring skills-->
-                <div class="guess-who-the-game-buttons"><!--Superfluous div? Nested div? Buttons repeatable?-->
-                    <div class="guess-who-the-game-button-github">                        
+                </li>
+            </ul>
+            <ul>
+                <li id="weather-app">
+                    <div class="weather-app-image"><!--Image to the left-->
                     </div>
-                    <div class="guess-who-the-game-button-browser">                       
+                    <div class="weather-app-title"><!--Superfluous div? Nested div?-->
+                        <h3>Weather app
+                        </h3>
                     </div>
-                </div>
-            </div>
+                    <div class="weather-app-text"><!--Text to the right-->
+                        <p>The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.
+                        </p>
+                    </div>
+                    <!--Insert black boxes/icons declaring skills-->
+                    <div class="weather-app-buttons"><!--Superfluous div? Nested div? Buttons repeatable?-->
+                        <div class="weather-app-button-github">                        
+                        </div>
+                        <div class="weather-app-button-browser">                       
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul>
         </div>
     </section>
 
@@ -136,7 +128,22 @@
                 </p>
             </div>
             <div class="my-words-button"><!--Superfluous div? Nested div? Buttons repeatable?-->
-                <div class="my-words-button-read-article">                        
+                <div class="my-words-button-read-article"><!--Insert read article buttons-->               
+                </div>
+            </div>
+            <div class="my-words-image"><!--Image to the left-->
+            </div>
+            <!--Insert date-->
+            <div class="my-words-title"><!--Superfluous div? Nested div?-->
+                <h3>How to stop being scared:
+                    Learning to love code</h3>
+            </div>
+            <div class="my-words-text"><!--Text to the right-->
+                <p>Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.
+                </p>
+            </div>
+            <div class="my-words-button"><!--Superfluous div? Nested div? Buttons repeatable?-->
+                <div class="my-words-button-read-article"><!--Insert read article buttons-->               
                 </div>
             </div>
         </div>
@@ -196,7 +203,7 @@
         </div>
     </section>
 
-    <section>
+    <footer>
         <div class="time-to-talk">
             <div class="time-to-talk-title"><!--Superfluous div? Nested div?-->
                 <h1>Time to talk</h1>
@@ -224,7 +231,7 @@
                 </div>    
             </div>
         </div>    
-    </section>
+    </footer>
         
 </body>
 </html>
