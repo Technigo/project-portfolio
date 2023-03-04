@@ -7,15 +7,6 @@
 }
 
 
-/*z-index 1 and filter-brightness with z-index 2, for increased readability*/
-
-:root {
-  --primary-color: rgb(157, 224, 195);
-  --secondary-color: rgb(115, 202, 205);
-  --tertiary-color: rgb(171, 196, 243);
-  --standard-white-color: rgb(255, 255, 255);
-}
-
 body {
   font-family: 'EB Garamond', serif;
   height: 100vh;
@@ -31,33 +22,34 @@ section {
 /*---GENERAL HEADING PROPERTIES---*/
 h1 {
   font-family: 'SatoshiRegular';
+  font-weight: 600;
   margin: 0;
-  z-index: 1;
+
 }
 
 h2 {
   font-family:'SatoshiRegular';
   margin: 0;
-  z-index: 1;
 }
 
 h3 {
   font-family: 'SatoshiRegular';
   margin-bottom: 5px;
-  z-index: 1;
+  
 }
 
 h4 {
   font-family: 'SatoshiRegular';
   margin: 0;
-  z-index: 1;
+ 
 }
 
 p {
   font-family: 'EB Garamond', serif;
   font-size: 22px;
+  font-weight: 400;
   margin: 0;
-  z-index: 1;
+  
 }
 
 /*---INTRO TO EVA---*/
@@ -81,15 +73,12 @@ p {
   border-radius: 50%;
   max-width: 160px;
   max-height: 164px;
-  filter: brightness(70%);
-  z-index: 2;
 }
 
 .presentation-text {
   display: flex;
   flex-direction: column;
   margin: auto 0 auto 10px;
-  z-index: 1;
 }
 
 .presentation-text h2 {
@@ -120,7 +109,7 @@ p {
 }
 
 
-/* Screen reader properties: */
+/*---FOR SCREEN READERS---*/
 
 .sr-only {
   position: absolute;
@@ -137,10 +126,6 @@ p {
 
 /*--SOCIAL MEDIA ICON--*/
 
-
-
-
-
 .links-social-media button  {
   background-color: #bf4d4d;
   border-radius: 40px;
@@ -156,6 +141,7 @@ p {
 .svg-icon1 {
   height: 40px;
   width: 40px;
+  margin: 10px;
 }
 
 .social-media p{
@@ -195,10 +181,10 @@ p {
 }
 
 .tech h1 {
-  color: var(--heading-blue);
+  color: blue;
   font-size: 80px;
   line-height: 108px;
-  font-weight: 600;
+  font-weight: 900;
   z-index: 1;
 
 }
@@ -299,9 +285,7 @@ p {
 }
 
 
-
-
-/*LINKS*/
+/*---LINKS---*/
 a {
   text-decoration: none;
   color: black;
@@ -355,19 +339,10 @@ align-items: center;
   margin-right: 8px;
 }
 
-/*.project-links .button p {
-  font-size: 20px;
-  margin-left: 10px;
-  margin-top: 20px;
-  color: black;
-}*/
 
 .project-links button .icons:hover {
   fill: rgb(255, 255, 255);
 }
-
-
-
 
 
 /*--MY WORDS SECTION--*/
@@ -378,7 +353,7 @@ align-items: center;
   grid-column: 1 / 3;
 }
 .my-words h1{
-  color:hotpink;
+  color: #EB5577;
   font-size:50px;
   margin: 50px auto auto auto;
   padding-left: 100px;
@@ -671,7 +646,7 @@ h1 {
   color: #EB5577;
 }
 
-/*---MOBILE-SKILL SECTION CODE*/
+/*---MOBILE-SKILL SECTION QUERY--*/
 .column-code h4 {
   display: inline-flex;
   text-align: center;
