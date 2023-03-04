@@ -6,14 +6,21 @@
 }
 body {
   background: #fff0f5;
+  margin: 0px 24px; 
+}
+ 
+
+/* Top section with header and logo*/
+
+.top-section {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: center;
-  margin: 24px;
   padding-top: 55px;
 }
 
@@ -38,7 +45,6 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 28px;
-
   color: blue;
 }
 
@@ -62,6 +68,11 @@ body {
   font-weight: 400;
   margin: 24px;
 }
+
+.logo-container {
+  display: none;
+}
+
 .sm-icon {
   padding-top: 15px;
   width: 32px;
@@ -81,17 +92,14 @@ body {
 }
 
 .arrow-section {
-  height: 30vh;
+  height: 20vh;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .arrow {
   width: 50px;
-  border-radius: 50%;
   animation: bounce 1s infinite alternate;
-  margin-bottom: 79px;
 }
 
 @keyframes bounce {
@@ -102,6 +110,8 @@ body {
     transform: translateY(50px);
   }
 }
+
+/* Tech Section */
 
 .tech-section {
   display: flex;
@@ -126,7 +136,6 @@ body {
   font-family: "EB Garamond", serif;
   font-size: 22px;
   font-weight: 400;
-  margin: 60px 24px;
 }
 
 .pink-highlight {
@@ -143,6 +152,8 @@ body {
   color: white;
 }
 
+/* Projects section */
+
 .projects-section {
   display: flex;
   flex-direction: column;
@@ -155,17 +166,17 @@ body {
   font-weight: 700;
   color: blue;
   text-align: center;
-  padding: 20px;
 }
 
 .project-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 .project-image {
   width: 100%;
   object-fit: cover;
+  overflow: hidden;
+  margin-top: 50px; 
 }
 
 .project-title {
@@ -176,9 +187,6 @@ body {
   font-style: black;
 }
 
-.project-text-group {
-  margin: 24px;
-}
 .project-text {
   font-family: "EB Garamond", serif;
   font-size: 22px;
@@ -208,7 +216,6 @@ body {
   display: flex;
   gap: 7px;
   align-items: center;
-  width: fit-content;
   font-family: "Satoshi", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -232,6 +239,7 @@ body {
   border: none;
   border-radius: 40px;
   height: 48px;
+  margin-bottom: 24px;
 }
 
 .github-link-project:hover {
@@ -246,24 +254,54 @@ body {
   background-image: white;
 }
 
+
+/* Skills section */
+
+.skills-title {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  text-align: center; 
+
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-list {
+  font-family: "EB Garamond", serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+}
+
+/* My words section */
+
 .my-words-section {
   flex-direction: column;
-  background-color: rgb(190, 214, 236);
+  background: rgb(177, 222, 222);
   display: flex;
+  padding: 64px 24px;
 }
 
 .mw-section-title {
   font-family: "Satoshi", sans-serif;
   font-size: 72px;
   font-weight: 700;
-  color: purple;
+  color: darkblue;
   text-align: center;
+  padding-bottom: 48px;
 }
 
 .blog-container {
   display: flex;
-  gap: 24px;
 }
+
 .date-text {
   font-family: "Satoshi", sans-serif;
   color: hotpink;
@@ -272,6 +310,8 @@ body {
 }
 .blog-image {
   width: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 .read-more-button {
   display: flex;
@@ -292,5 +332,84 @@ body {
   background: yellow;
 }
 
-@media screen {
+
+
+/* Footer section */
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-image {
+  display: flex;
+  justify-content: flex-start;
+  gap: 29px;
+}
+
+.footer-title {
+  font-family: "Satoshi", sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  color: rgb(227, 122, 227);
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+.contact-card {
+  padding: 10px;
+}
+
+.contact-info {
+  font-family: "Satoshi", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+  .top-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-container {
+    display: flex;
+    height: 412px;
+    background: blue;
+    justify-content: center;
+  }
+
+  .header {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .top-section {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    display: flex;
+    flex-basis: 50%;
+    height: 980px;
+    margin: 0px;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-basis: 50%;
+    height: 980px;
+    background: blue;
+    justify-content: center;
+  }
+
+  .logo {
+    align-self: center;
+  }
 }
