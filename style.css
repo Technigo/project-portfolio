@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Satoshi";
-    src: url("./font/Satoshi_Complete/Fonts/WEB/css/satoshi.css") format("truetype"); /*what does format truetype mean?*/
+    src: url("./font/Satoshi_Complete/Fonts/WEB/css/satoshi.css") format("truetype"); /* what does format truetype mean? */
 }
 
 * { 
@@ -10,20 +10,57 @@
 }
 
 body {
-    font-family: "Satoshi", sans-serif;
+    font-family: "Satoshi", sans-serif; /* Take out? SAns-serif really needed? */
     display: flex;
     flex-direction: column;
 }
 
+h1 { /* Place elsewhere? */
+    font-family: "Satoshi", sans-serif;
+    font-size: 22px;
+    color: rgb(119, 119, 44);
+}
+
+h2 {
+    font-family: "Satoshi", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 108px;
+    color: rgb(119, 119, 44);
+}
+
+h3 {
+    font-family: "Satoshi", sans-serif;
+    font-size: 27px;
+    color:black;
+}
+
+h4 {
+    font-family: "Satoshi";
+    font-size: 20px;
+    color:black;
+}
+
+p {
+    font-family: "EB Garamond";
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 24px;
+}
+
+/* Header MOBILE */
+
 header {
     display: flex;
     flex-direction: row;
-    min-height: 980px; /*check*/
-    border: solid 5px pink;
+    min-height: 980px; /* check */
+    /* border: solid 1px pink; */
 }
 
 .header-img {
     margin-bottom: 20px;
+    opacity: 90%;
 }
 
 .profile {
@@ -31,90 +68,255 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 252px 113px 297px 103px; /*check*/
-    width: fit-content; /*enough?*/
-    block-size: fit-content; /*auto?*/
-    border: solid 2px pink;
+    margin: 252px 113px 297px 103px; /* check */
+    width: fit-content; /* enough? */
+    block-size: fit-content; /* auto? */
+    /* border: solid 1px pink; */
 }
 
 .profile-img {/* Ellipse 1 */
     display: flex;
-    width: 164px; /*min/max-width needed?*/
-    height: 164px; /*min/max-width needed?*/
-    /*background: url(.jpg), #D9D9D9;*/
-    align-items: center; /*which out of four is needed?*/
+    width: 164px; /* min/max-width needed? */
+    height: 164px; /* min/max-width needed? */
+    /* background: url(.jpg), #D9D9D9;*/
+    align-items: center; /* which out of four is needed? */
     align-self: center;
     object-fit: cover;
     justify-content: center;
     border-radius: 50%;
-    border: solid 1px pink;
+    /* border: solid 1px pink; */
 }
 
 .profile-presentation {
     width: 303px;
     min-height: 113px;
-    border: solid 1px pink;
+    /* border: solid 1px pink; */
 }
 
-.contact-links { /* Doesn't work */
-    color: red;
-    size: 300px;
-    border: solid 1px pink;
+.profile-presentation span:nth-child(1) {
+    color: rgb(119, 119, 44);
+    text-shadow:
+    0 0 3px #fff,
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px rgb(159, 167, 97),
+    0 0 20px rgb(159, 167, 97),
+    0 0 25px rgb(159, 167, 97),
+    0 0 25px rgb(159, 167, 97),
+    0 0 50px rgb(159, 167, 97);
+    font-family: "EB Garamond";
+    font-weight: 500; 
+}
+
+.contact-links i {
+    color: rgb(119, 119, 44);
+    font-size: 30px;
+    margin-right: 44px;
+    opacity: 30%;
+    /* border: solid 1px pink; */
+}
+
+.contact-links i:hover, i:active {
+    color: rgb(119, 119, 44);
+    opacity: 100%;
+}
+
+.fa-linkedin-in, .fa-github, .fa-envelope {
+    font-size: 30px;
 }
 
 /* Inside auto layout 
 flex: none;
 order: 0;
-flex-grow: 0;*/
+flex-grow: 0; */
+
+
+/* Tech MOBILE */
 
 .tech {
     font-weight: 800;
     font-family: "EB Garamond";
-    border: solid 5px rgb(176, 212, 31);
+    background-color: rgb(240, 230, 234);
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 143px; /* check */
+    /* border: solid 1px pink; */
 }
 
 .tech span:nth-child(1) {
-    /*background: #ebe5dd;
-    color: white;*/
+    /* background: #ebe5dd;
+    color: white; */
     font-family: "EB Garamond";
     font-weight: 100;
 }
 
-ul {
+.tech h2 {
+    color: rgb(119, 119, 44);
+  }
+
+  /* add white gap */
+
+.featured-projects {
+    font-weight: 800;
+    font-family: "EB Garamond";
+    background-color: lightgoldenrodyellow;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 143px; /* check */
+    /* border: solid 1px pink; */
+}
+
+.featured-projects h2 {
+        margin-bottom: 30px;
+    text-align: center;
+    color:rgb(176, 212, 31);
+}
+
+.projects {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 50px auto;
+    border: solid 8px pink;
+}
+
+.project-img {
+    max-height: 350px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.project-discription p {
+    background-color: white;
+    margin-top: 20px;
+    margin: 10px auto 25px auto;
+}
+
+.labels {
+    margin: 10px 0 15px 0;
+}
+
+.labels p {
+    display: inline;
+    background-color: #cd7f1a;
+    font-family: "Satoshi", sans-serif;
+
+    color: white;
+    margin: 0 2px;
+    padding: 2px 5px;
+}
+
+.buttons i {   
+    color: rgb(119, 119, 44);
+    font-size: 30px;
+    margin-right: 44px;
+    opacity: 30%;
+}
+
+.buttons i:hover, i:active {
+    color: rgb(119, 119, 44);
+    opacity: 100%;
+}
+
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  .posts > ul {
+
+ 
+
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 15px;
-  }
-    
-h1 {
-    font-family: "Satoshi";
-    color: #0B24F5;
-}
 
-.my-words-title h1 {
-    color:#EB5577;
-}
 
-.time-to-talk-title h1 {
-    color:#EB5577;
-}
+/* My words MOBILE */
 
-h2 {
-    color: #0B24F5;
-}
-
-h3 {
-    color: black;
-}
-
-p {
+.my-words {
+    font-weight: 800;
     font-family: "EB Garamond";
-    color: black;
-    margin: 24px;
+    background-color: lightgoldenrodyellow;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 143px; /* check */
+    /* border: solid 1px pink; */
 }
 
+/* Skills MOBILE */
+
+.skills {
+    font-weight: 800;
+    font-family: "EB Garamond";
+    background-color: rgb(240, 230, 234);
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 143px; /* check */
+    /* border: solid 1px pink; */
+}
+
+.skills h2 {
+    color: rgb(119, 119, 44);
+  }
+
+/* Footer/Time to talk MOBILE */
+
+.time-to-talk {
+    font-weight: 800;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 143px; /* check */
+    /* border: solid 1px pink; */
+}
+
+.time-to-talk h2 {  
+color: rgb(240, 230, 234);
+}
+
+
+
+
+/* Header TABLET */
+
+/* Tech TABLET */
+
+/* My words TABLET */
+
+/* Skills TABLET */
+
+/* Footer/Time to talk TABLET */
+
+
+
+
+
+/* Header DESKTOP */
+
+/* Tech DESKTOP */
+
+/* My words DESKTOP */
+
+/* Skills DESKTOP */
+
+/* Footer/Time to talk DESKTOP */
