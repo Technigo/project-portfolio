@@ -1,6 +1,4 @@
 /* Box sizing rules */
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@500,300&display=swap" rel="stylesheet">
-
 *,
 *::before,
 *::after {
@@ -27,6 +25,14 @@ ol[role="list"] {
   list-style: none;
 }
 
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -59,6 +65,10 @@ select {
   font: inherit;
 }
 
+li {
+  list-style: none;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -75,7 +85,222 @@ select {
   }
 }
 
-body {
-  font-family: "Satoshi", sans-serif;
+button {
+  all: unset;
 }
-/* */
+/* Fonts */
+@font-face {
+  font-family: Satoshi-black-italic;
+  src: url(assets/fonts/Satoshi-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Satoshi-bold;
+  src: url(assets/fonts/Satoshi-Bold.ttf);
+}
+@font-face {
+  font-family: Satoshi-bold-italic;
+  src: url(assets/fonts/Satoshi-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Satoshi-italic;
+  src: url(assets/fonts/Satoshi-Italic.ttf);
+}
+@font-face {
+  font-family: Satoshi-light;
+  src: url(assets/fonts/Satoshi-Light.ttf);
+}
+@font-face {
+  font-family: Satoshi-light-italic;
+  src: url(assets/fonts/Satoshi-LightItalic.ttf);
+}
+@font-face {
+  font-family: Satoshi-medium;
+  src: url(assets/fonts/Satoshi-Medium.ttf);
+}
+@font-face {
+  font-family: Satoshi-medium-italic;
+  src: url(assets/fonts/Satoshi-MediumItalic.ttf);
+}
+@font-face {
+  font-family: Satoshi-regular;
+  src: url(assets/fonts/Satoshi-Regular.ttf);
+}
+@font-face {
+  font-family: Satoshi-variable;
+  src: url(assets/fonts/Satoshi-Variable.ttf);
+}
+@font-face {
+  font-family: Satoshi-variable-italic;
+  src: url(assets/fonts/Satoshi-VariableItalic.ttf);
+}
+@font-face {
+  font-family: EB-Garamond;
+  src: url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+}
+
+/* Colors */
+
+/* -------------- */
+body {
+  font-family: "EB Garamond";
+}
+p {
+  font-size: 1.2rem;
+}
+.heading {
+  font-size: 5rem;
+  font-family: "Satoshi-bold", sans-serif;
+  color: #0b24f5;
+}
+
+/* Hero Section*/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-image {
+  width: 100%;
+  height: 412px;
+  background-color: pink;
+}
+
+.hero-info {
+  width: 80%;
+  margin: 2rem;
+}
+
+.hero-info h2 {
+  font-family: "Satoshi-bold", sans-serif;
+  color: #0b24f5;
+}
+.hero-info h1 {
+  font-family: "Satoshi-black", sans-serif;
+}
+.hero-info h3 {
+  font-family: "Satoshi-medium", sans-serif;
+}
+.hero-picture {
+  width: 164px;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+.hero-text {
+  margin: 0 2rem;
+}
+
+.socials-links ul {
+  display: flex;
+  justify-content: end;
+  padding: 0;
+}
+
+.socials-links li {
+  padding: 1rem;
+}
+
+.socials-links li svg {
+  fill: #d0d0d0;
+}
+.socials-links li svg:hover {
+  fill: #171717;
+}
+
+.scroll-down {
+  color: #0b24f5;
+  font-family: "Satoshi-bold", sans-serif;
+  text-decoration: underline;
+}
+.scroll-down svg {
+  fill: #0b24f5;
+}
+
+/* Tech Section */
+.tech {
+  background-color: #edffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  height: 530px;
+}
+
+.js {
+  background-color: #eb5577;
+  color: #ffffff;
+}
+.react {
+  background-color: #0b24f5;
+  color: #ffffff;
+}
+.mob {
+  background-color: #2483e0;
+  color: #ffffff;
+}
+
+/* feat-project */
+
+.feat-project {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  padding: 0 0 2rem;
+}
+.card h2 {
+  padding: 1rem 0 1rem;
+  font-family: "Satoshi-black", sans-serif;
+  font-size: 2rem;
+}
+.card p {
+  font-family: "EB-Garamond", "Times New Roman", Times, serif;
+}
+
+.card ul {
+  display: flex;
+  padding: 0;
+}
+.card li {
+  font-family: "Satoshi", sans-serif;
+  margin: 0.1rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+  background-color: #171717;
+  color: #d0d0d0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button a {
+  background-color: #f5f5f5;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.button p {
+  font-family: "Satoshi-bold";
+  padding: 0 10px;
+}
+.github-button a:hover,
+.github-button a:focus {
+  background-color: #eb5577;
+  color: #edffff;
+  fill: #edffff;
+}
+.demo-button a:hover,
+.demo-button a:focus {
+  background-color: #0b24f5;
+  color: #edffff;
+  fill: #edffff;
+}
