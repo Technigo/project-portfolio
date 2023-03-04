@@ -7,7 +7,7 @@ body {
 .main {
     width: 100%;
     height: 100%;
-    margin-bottom: 101px;
+ 
     max-width: 600px;
     width: 100%;
 }
@@ -28,7 +28,7 @@ body {
     margin-bottom: 29px;
 }
 
-h {
+.main h {
    
   
     font-weight: 700px;
@@ -39,7 +39,7 @@ h {
     margin-right: 24px;
 }
 
-h1 {
+.main h1 {
   
     font-weight: 900px;
     font-size: 32px;
@@ -49,7 +49,7 @@ h1 {
     margin-right: 24px;
 }
 
-p {
+.main p {
    
     font-family: 'EB Garamond', serif;
     font-weight: 400px;
@@ -82,6 +82,18 @@ p {
    color: #0B24F5;
    margin-bottom: 47px;
   
+   top: 78%;
+   left: calc(50% - 50px);
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   margin: 50px auto 50px auto;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
    /* Makes the arroe bounce */
    animation: bounce 1s infinite alternate;
 }
@@ -92,35 +104,68 @@ p {
     100% {transform: translateY(50px);}
   }
 
- p1 {
+  .scroller img {
+    background-color: transparent;
+    height: 20px;
+}
+
+ .main p1 {
     color: #0B24F5;
     font-family: 'Satoshi', sans-serif;
+    padding: 2rem;
  }
 
 /* Section Tech Header*/
 
 .tech-header {
     background-color: #EDFFFF;
-    height: 530px;
-    margin-top: 101px;
-    margin-bottom: 62px;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
-.tech p {
+.tech-header p {
     
     margin-left: 24px;
     margin-right: 24px;
 }
 
-h2 {
+.tech-header h {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 30px;
     color: #0B24F5;
     font-family: 'Satoshi', sans-serif;
     font-weight: 700px;
     font-size: 80px;
-    
+    margin: 0 auto; /* add this line */
 }
+
+
+
+.tech-tag {
+    display: inline-block;
+    padding: 0 2px;
+}
+
+
+.tech-tag-js {
+    background-color: pink;
+    color: #FFFFFF;
+}
+
+.tech-tag-react {
+    background-color: red;
+    color: #FFFFFF;
+}
+
+.tech-tag-mob {
+    background-color: blue;
+    color: #FFFFFF;
+}
+
 
 .featured-projects {
     background-color: white;
@@ -143,19 +188,26 @@ h2 {
     width: 95%;
 }
 
-h3 {
+.featured-projects h1 {
     text-align: center;
     color: #0B24F5;
     font-family: 'Satoshi', sans-serif;
     font-weight: 700px;
     font-size: 80px;
-    
+}
+
+.featured-projects h2 {
+    font-size: 32px;
+    font-weight: 900px;
+    font-family: 'Satoshi', sans-serif;
+    margin-left: 24px;
 }
 
 .projects p {
     font-family: 'EB Garamond', sans-serif;
     font-weight: 400px;
     font-size: 22px;
+    margin-left: 24px;
 }
 
 .skill-templates {
@@ -180,60 +232,42 @@ h3 {
   
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 24px;
+}
 
-
-.github-view-code {  
-   
-     background-color: #EB5577;
+.project-links .button  {
+    background-color: #F5F5F5;
+    font-family: 'SatoshiVariable';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
     border-radius: 40px;
     max-height: 45px;
     margin: 10px 5px 5px 5px;
-    padding: 7px 10px;
+    padding: 7px 15px 7px 10px;
     border: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 26px;
-    margin-left: 24px;
 }
 
-.github-view-code p {
-    font-display: inline;
-    font-weight: 500px;
-    font-size: 20px;
-    font-family: 'Satoshi', sans-serif;
+.live:hover  {
+    background: #ff9595;
     color: white;
-    background-color: #EB5577;
-    margin: 0 2px;
-    padding: 2px 5px;
-   
 }
 
-.live-link-button {  
-    background-color: #0B24F5;
-    border-radius: 40px;
-    max-height: 45px;
-    margin: 10px 5px 5px 5px;
-    padding: 7px 10px;
-    border: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 34.5px;
-    margin-bottom: 80px;
-    margin-left: 24px;
-}
-
-.live-link-button p {
-    font-display: inline;
-    font-weight: 500px;
-    font-size: 20px;
-    font-family: 'Satoshi', sans-serif;
+.git:hover  {
+    background: #ba95ff;
     color: white;
-    background-color: #0B24F5;
-    margin: 0 2px;
-    padding: 2px 5px;
-   
+}
+
+.project-links .button .icons {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
 }
 
 .projects-image {
@@ -260,24 +294,26 @@ h3 {
 
 
 
-.blog-header h4 {
+.blog-header h1{
     color: #EB5577;
     margin-left: 24px;
     font-family: 'Satoshi', sans-serif;
     font-weight: 700px;
     font-size: 72px;
    margin-top: 64px;
+   text-align: center;
 }
 
 
 .blog-header img {
+    display: block;
     margin-top: 64px;
     margin-bottom: 40px;
-    align-items: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.blog-header h5 {
+.blog-header h2 {
     font-family: 'Satoshi', sans-serif;
     color: #EB5577;
     font-size: 20px;
@@ -287,62 +323,207 @@ h3 {
    margin-bottom: 24px;
 }
 
-.blog-header p {
-    font-weight: 400px;
-    font-size: 22px;
-}
-
-.read-more-button {  
-    background-color: white;
-    border-radius: 40px;
-    max-height: 45px;
-    margin: 10px 5px 5px 5px;
-    padding: 7px 10px;
-    border: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 24px;
-    margin-bottom: 98px;
+.blog-header h3 {
+    font-size: 32px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 900px;
     margin-left: 24px;
 }
 
-.read-more-button p {
-    font-display: inline;
-    font-weight: 500px;
-    font-size: 20px;
-    font-family: 'Satoshi', sans-serif;
-    color: black;
-    background-color: white;
-    margin: 0 2px;
-    padding: 2px 5px;
+.blog-header p {
+    font-weight: 400px;
+    font-size: 22px;
+    margin-left: 24px;
 }
 
-.read-more-button .icon {
-    fill: black;
-    height: 26px;
-    width: 20px;
-    margin: 22.92px auto;
+.button-read-article {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 130px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 15px;
+    margin: 25px 0 0 0;
+    font-size: 18px;
+    margin-left: 24px;
 }
+
+.button-read-article .icon {
+    height: 32px;
+    width: 32px;
+}
+
+.button-read-article svg {
+    margin-right: 15px;
+}
+
+.button-read-article p {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 20px;
+}
+
+.button-read-article:hover {
+    background-color: #FFD338;
+    color: white;
+}
+
 
 .skills {
+    background-color: #FDF2E4;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+}
+
+.skills h1 {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 80px;
+    font-weight: 700px;
+    color: blue;
+    text-align: center;
+    margin: 60px auto 25px auto;
+}
+
+.skill-lists-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 60px;
 }
 
-.hero-image {
-    display: none;
+.skill-lists {
+    padding: 20px;
+    margin: 0;
+}
+
+dt {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    color: white;
+    padding: 2px 6px;
+}
+
+dd {
+    margin: 0;
+    font-size: 22px;
+}
+
+.code dt {
+    background-color: pink;
+}
+
+.toolbox dt {
+    background-color: lightskyblue;
+}
+
+.more dt {
+    background-color: blue;
+}
+
+.upcoming dt {
+    background-color: green;
+}
+
+.container img {
     max-width: 600px;
     width: 100%;
+    display: none;
+    /*Gör en display none här för mobile*/
+}
+
+.link-icons {
+    background-color: transparent;
+    border: none;
+    margin-right: 30px;
+}
+
+
+.svg-icon {
+    fill: rgb(0, 0, 0);
+    width: 32px;
+    height: 32px;
+}
+
+.svg-icon:hover {
+    fill: grey;
+}
+
+.footer {
+    min-height: 800px;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer h1 {
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 78px;
+    color: pink;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    text-align: center
+}
+
+.footer img {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.footer .profile-image {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.footer .presentation-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 auto 10px;
+}
+
+.footer p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.footer .links {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.footer .links a {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.btn-top {
+    margin-top: 0;
+    margin-bottom: 200px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 @media (min-width: 667px) and (max-width: 768px) {
 
-    .hero-image {
+    .container {
         width: 768px;
         display: flex;
+        z-index: 1;
     }
 
 .main {
@@ -375,15 +556,19 @@ margin-left: 102px;
   justify-content: center;
 }
 
+
+
 .tech-header {
-    width: 768px;
+    width: 768;
+    /*z-index: 2;*/
+    position: absolute;
 }
 
 .featured-projects {
     width: 768px;
+   
+    position: absolute;
 }
-
-
 
 .blog-header {
     width: 768px;
@@ -403,29 +588,256 @@ margin-left: 102px;
     align-items: center;
     justify-content: center;
 }
+
+.link-icons {
+    background-color: transparent;
+    border: none;
+    margin-right: 30px;
 }
+
+
+.svg-icon {
+    fill: rgb(0, 0, 0);
+    width: 32px;
+    height: 32px;
+}
+
+.svg-icon:hover {
+    fill: var(--hover-grey);
+}
+
+.footer h4 {
+    color: #EB5577;
+    font-size: 120px;
+  }
+}
+
+
 
 @media (min-width: 769px) and (max-width: 1280px) {
 
-   
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
+    .body {
         width: 1280px;
-        height: 800px;
+    }
+
+   .main {
+    max-width: 100%;
+    height: 980px;
+    display: flex; 
+    position: absolute;
+    margin-bottom: 800px;
+   } 
+
+    .container2 {
+        position: absolute;
+        width: 50%;
+        height: 980px;
+        left: 0px;
+        top: 50%;
+        background-color: #FFFFFF;
+        transform: translateY(-50%); /* added */
+        display: flex;
+    flex-direction: column;
+        align-items: center;
       }
       
-      .main {
+      .container {
+        position: absolute;
         width: 50%;
-      height: 800px;
-      }
-      
-      .hero-image2 {
-        width: 50%;
-        height: 800px;
+        height: 980px;
+        right: 0px;
+        top: 50%;
+        background: #FCEDEA;
+        transform: translateY(-50%); /* added */
+        background-size: cover;
+       
       }
 
+      .container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        margin-left: 24px;
+      }
+
+      .profile-image {
+        margin-left: 45px;
+        margin-top: 252px;
+      }
+
+     
+
+      .info {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+
+      
+      
+      .p {
+        margin-bottom: 200px;
+        margin-left: 85px;
+      }
+
+      .bounce-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        position: absolute;
+      }
+      
+      .arrow-down {
+        margin-bottom: 20px;
+      }
+      
+      .p1 {
+        font-size: 24px;
+        line-height: 100px;
+      }
+
+      .tech-header {
+        margin-top: 900px;
+        width: 100%;
+        height: 800px;
+        position: absolute;
+
+    }
+    
+    .featured-projects {
+        margin-top: 1700px;
+        max-width: 100%;
+        position: absolute;
+    }
+    
+    .blog-header {
+        width: 100%;
+        margin-top: 6000px;
+        height: 2089;
+        position: absolute;
+    }
+    
+    .skills {
+        width: 100%;
+        margin-top: 7500px;
+        position: absolute;
+        height: 802px;
+        background-color: #FDF2E4;
+    }
+
+    /*bilden längst ner, reagerar inte. Kolla på detta*/
+    .personal-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .footer {
+        width: 100%;
+        margin-top: 8200px;
+        max-width: 1280px;
+       position: absolute;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    
+
+    .footer h4 {
+      color: #EB5577;
+      font-size: 120px;
+    }
+    
+    .icons-box-footer {
+        display: flex;
+        margin: 30px 0;
+    }
+
+    .link-icons {
+        background-color: transparent;
+        border: none;
+        margin-right: 30px;
+    }
+    
+    
+    .svg-icon {
+        fill: rgb(0, 0, 0);
+        width: 32px;
+        height: 32px;
+    }
+    
+    .svg-icon:hover {
+        fill: grey;
+    }
+
+
+.footer {
+    min-height: 800px;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
-/*Tog bort h4, flytta runt.
 
+.footer h1 {
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 78px;
+    color: pink;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    text-align: center
+}
+
+.footer img {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.footer .profile-image {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.footer .presentation-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 auto 10px;
+}
+
+.footer p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.footer .links {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.footer .links a {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.btn-top {
+    margin-top: 0;
+    margin-bottom: 200px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*Tog bort h4, flytta runt
