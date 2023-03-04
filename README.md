@@ -9,6 +9,7 @@ I started as usual by going through the week's material. Then I moved on to gett
 
 I tested my website in differents browsers, Edge, Firefox and Chrome, and on my mobile. It seems to look and work the same on all of them. Then I checked if my website was good for web accessibility by running it through validator.w3.org and with the WAVE-tool. I was able to get most of the warnings off of my page from the validator except one that was about these signs "[]" in one of my font links, don't know what to do about that, I have posted a question in our code-help group on slack. The WAVE-tool I have studied the results of but I am a bit unsure how to evaluate them and what could be improved. If I had more time I would look further into those results and how to make my page even more accessible. 
 
+
 ## View it live
 
 https://frida-nordenlow-portfolio.netlify.app/

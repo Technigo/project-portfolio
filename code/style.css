@@ -12,7 +12,8 @@ h1 {
   color: #0B24F5;
 }
 
-.profession-heading, .project-name, .article-title {
+.profession-heading, .project-name, 
+.article-title {
   font-size: 32px;
   font-weight: 900;
 }
@@ -31,7 +32,7 @@ h1 {
   ;
 }
 
-/*** HEADER ***/
+/*** Header section ***/
 .header {
  margin: 0px 24px 0px 24px;
 }
@@ -52,7 +53,6 @@ h1 {
 .img-titles-container {
   display: flex;
   flex-direction: column;
-  /*align-items: flex-start;*/
   margin-top: 55px;
   width: 100%;
 }
@@ -110,13 +110,11 @@ h1 {
   font-size: 16px;
   font-weight: 900;
   color: #0B24F5;
-  /*margin: 30px 0px 84px 0px;*/
   position: fixed;
   top: 80%;
   left: 50%;
-  /*margin: 0px;*/
   width: 82px;
-  margin-left: -41px; 
+  margin-left: -41px; /* -half of width to make arrow centered */
 }
 
 .arrow {
@@ -177,8 +175,6 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: 60px 24px 0px 24px;
-  /*margin-top: 60px;
-  padding: 0px 24px 0px 24px;*/
 }
 
 .featured-projects-title {
@@ -318,7 +314,7 @@ margin-top: 24px;
     margin-bottom: 93px;
   }
 
-/* Skills section */
+/*** Skills section ***/
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -423,7 +419,7 @@ margin-top: 24px;
   line-height: 30px;
 }
 
-/* Time to talk */
+/*** Time to talk ***/
 .time-to-talk {
   display: flex;
   flex-direction: column;
@@ -475,25 +471,7 @@ margin-top: 24px;
 
 @media (min-width: 667px) and (max-width: 1024px) {
 
-  /*** @media tablet - Quote section ***/
-  .quote-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #FCEDEA;
-    height: 412px;
-  }
-  
-  .quote {
-  font-family: 'EB Garamond';
-  font-style: italic;
-  font-size: 22px;
-  color: #EB5577;
-  line-height: 30px;
-  width: 50%;
-  }
-
-  /*** @media tablet - Header ***/
+  /*** @media tablet - Header section ***/
   .header {
     display: flex;
     flex-direction: column-reverse;
@@ -516,7 +494,6 @@ margin-top: 24px;
   .img-titles-container {
     flex-direction: row;
     margin: 0px;
-    /*align-items: flex-start;*/
   }
 
   .profile-img {
@@ -540,9 +517,26 @@ margin-top: 24px;
     margin: 3px 0px 0px 0px;
   }
   
+  /*** @media tablet - Quote section ***/
+  .quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FCEDEA;
+    height: 412px;
+  }
+  
+  .quote {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-size: 22px;
+  color: #EB5577;
+  line-height: 30px;
+  width: 50%;
+  }
 
-/*** @media tablet - Tech section ***/
 
+  /*** @media tablet - Tech section ***/
   .tech-container {
     padding: 254px 24px 287px 24px;
   }
@@ -556,7 +550,6 @@ margin-top: 24px;
 
 
   /*** @media tablet - Featured projects ***/
-
   .featured-projects {
   padding: 0px 24px 0px 24px;
   margin-top: 120px;
@@ -597,8 +590,7 @@ margin-top: 24px;
     margin-right: 24px;
   }
 
-  /*** @media tablet - My Words section */
-
+  /*** @media tablet - My Words section ***/
   .my-words-container {
     padding: 120px 89px 58px 89px;
   }
@@ -619,7 +611,7 @@ margin-top: 24px;
   }
 
 
-  /*** @media tablet - Skills section */
+  /*** @media tablet - Skills section ***/
   .skills-container {
   align-items: ;
   }
@@ -664,7 +656,7 @@ margin-top: 24px;
   }
 
 
-  /*** @media tablet - Time to talk section */
+  /*** @media tablet - Time to talk section ***/
   .time-to-talk-title {
     font-size: 115px;
     margin-top: 196px;
@@ -674,7 +666,6 @@ margin-top: 24px;
     display: flex;
     flex-direction: row;
     margin-top: 75px;
-    /*align-items: flex-start;*/
   }
 
   .profile-img-2 {
@@ -695,7 +686,8 @@ margin-top: 24px;
 
 
 @media (min-width: 1025px) {
-  /*** @media desktop - Header ***/
+
+  /*** @media desktop - Header section ***/
   .header {
     display: flex;
     flex-direction: row;
@@ -715,13 +707,11 @@ margin-top: 24px;
     flex-direction: column;
     align-items: flex-start;
     margin: 252px 50px 0px 50px;
-    /*width: 540px;*/
   }
 
   .img-titles-container {
     flex-direction: row;
     margin: 0px;
-    /*align-items: flex-start;*/
   }
 
   .profile-img {
@@ -755,18 +745,12 @@ margin-top: 24px;
   width: 60%;
   }
 
-  /*.scroll-down {
-    same as mobile
-    top: 80%;
-    left: 50%;
-  }*/ 
-
   .underline {
     margin: 3px 0px 0px 0px;
   }
   
-/*** @media desktop - Tech section ***/
 
+/*** @media desktop - Tech section ***/
   .tech-container {
     padding: 254px 24px 287px 24px;
   }
@@ -780,7 +764,6 @@ margin-top: 24px;
 
 
   /*** @media desktop - Featured projects ***/
-
   .featured-projects {
     width: 820px;
     margin: 0 auto;
@@ -823,7 +806,7 @@ margin-top: 24px;
     margin-right: 24px;
   }
 
-  /*** @media desktop - My Words section */
+  /*** @media desktop - My Words section ***/
   .my-words-container {
     padding: 120px 89px 188px 89px;
   }
@@ -849,12 +832,8 @@ margin-top: 24px;
     margin: 0px 15px 59px 15px;
   }
 
-  /*.article-one, .article-three {
-    margin-right: 32px;
-  }*/
 
-
-  /*** @media desktop - Skills section */
+  /*** @media desktop - Skills section ***/
   .skills-container {
     padding: 120px 0px 218px 0px;
   }
@@ -873,7 +852,6 @@ margin-top: 24px;
   .box-one {
     display: flex;
     flex-direction: row;
-    /*gap: 66px;*/
   }
 
   .code-list {
@@ -889,7 +867,6 @@ margin-top: 24px;
   .box-two {
     display: flex;
     flex-direction: row;
-    /*gap: 74px;*/
   }
 
   .more-list {
@@ -901,15 +878,7 @@ margin-top: 24px;
     align-items: flex-start;
   }
 
-  /*** @media desktop  - Time to talk section */
-
-  /*.presentation {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 81px 102px 81px 102px;
-  }*/
-
+  /*** @media desktop  - Time to talk section ***/
   .time-to-talk-title {
     font-size: 120px;
     margin-top: 196px;
@@ -919,7 +888,6 @@ margin-top: 24px;
     display: flex;
     flex-direction: row;
     margin-top: 75px;
-    /*align-items: flex-start;*/
   }
 
   .profile-img-2 {
@@ -939,7 +907,9 @@ margin-top: 24px;
 }
 
 /*
-header two-colored background for desktop
+This is how you could make a two-colored background for 
+desktop, ended up not needing to but good to know.
+
 .header {
 width: 100%;
 height: 100vh;
@@ -950,4 +920,4 @@ background: linear-gradient(
   paleturquoise 50%,
   paleturquoise 100%
 );
-}
+}*/
