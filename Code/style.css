@@ -44,6 +44,12 @@ h5 {
     font-size: 32px;
 } 
 
+h6 {
+    font-family: "satoshi-bold", sans-serif;
+    font-size: 24px; 
+    margin-bottom: 20px;
+}
+
 .marked-red {
     background-color: #EB5577;
     color: #FFFFFF;
@@ -64,6 +70,7 @@ h5 {
     color: #FFFFFF;
 }
 
+
 button {
     border: none;
     padding: 4px 15px 4px 8px;
@@ -76,6 +83,8 @@ button {
     align-items: center;
     justify-content: center;
 }
+
+
 
 
 /* header-section */
@@ -150,6 +159,11 @@ header h3 {
     height: 32px;
     width: 32px;
     margin-bottom: 25px;
+    opacity: 30%;
+}
+
+.profile-links img:hover {
+    opacity: 100%;
 }
 
 .header-img-wrapper {
@@ -232,11 +246,29 @@ header h3 {
     margin-top: 20px;
 }
 
+
 .live, .code {
     background-color: #F5F5F5;
     color: #333333;
 }
 
+.live:hover {
+    background-color: #0B24F5;
+    color: #FFFFFF;
+}
+
+.live:hover img {
+    filter: brightness(800%)
+}
+
+.code:hover {
+    background-color: #EB5577;
+    color: #FFFFFF;
+}
+
+.code:hover img {
+    filter: brightness(900%)
+}
 /* my words-section */
 
 .words {
@@ -290,21 +322,111 @@ header h3 {
     margin-top: 20px;
 }
 
+.read:hover {
+    background-color: #FFD338;
+}
+
 /* skills-section */
 
 .skills {
     background-color: #FDF2E4;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
 }
 
+.skills h4 {
+    margin: 80px auto 80px auto;
+}
 
-/* contact-section */
+.skill-list-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-list {
+
+    margin-bottom: 65px;
+    text-align: center;
+    width: 188px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* contact-section - uses the same code as  */
 
 .contact {
-    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
+.contact h4 {
+    font-size: 58px;
+    margin: 80px auto 65px auto;
+    color: #EB5577;
+}
 
+.contact-wrapper {
+    padding-left: 20px;
+}
 
-/* media qyeries */
+.contact-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-wrapper img {
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px 0px;
+}
+
+.name {
+    font-family: "satoshi-bold";
+    font-size: 28px;
+    color: #0B24F5;
+}
+
+.title {
+    font-family: "satoshi-black", sans-serif;
+    font-size: 32px;
+
+}
+
+.other {
+    font-family: "satoshi-medium", sans-serif;
+    font-size: 24px;
+    margin-bottom: 65px;
+}
+
+.contact-info {
+    font-family: "satoshi-black", sans-serif;
+    font-size: 24px;
+}
+
+.contact-links {
+    width: 327px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px auto 100px auto;
+}
+
+.contact-links img {
+    height: 32px;
+    width: 32px;
+    opacity: 30%;
+}
+
+.contact-links img:hover {
+    opacity: 100%;
+}
+
+/* media queries */
 
