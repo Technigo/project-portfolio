@@ -93,10 +93,22 @@ p {
     bottom: 10px;
     width: 100%;
     margin: auto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .scroll i {
     margin-bottom: 20px;
+}
+
+.bounce-1 {
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
 }
 
 .intro, .tech, .featured-projects, .my-words, .contact {
@@ -305,6 +317,7 @@ p {
 .code-group, .toolbox-group, .more-group, .upcoming-group {
     margin-top: 60px;
     align-self: center;
+    justify-self: center;
 }
 
 .code {
@@ -322,7 +335,7 @@ p {
 .more {
     background: #0B24F5;
     padding: 2px;
-    align-self: center;
+    justify-self: center;
 }
 
 .upcoming {
@@ -550,6 +563,7 @@ address, .some-icon {
 .tech h4 {
     grid-column: 2 / span 1;
     align-self: center;
+    vertical-align: center;
 }
 
 .tech p {
@@ -586,6 +600,7 @@ address, .some-icon {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 32px;
+    justify-content: center;
 }
 
 .my-words h4 {
@@ -594,8 +609,7 @@ address, .some-icon {
 
 .post {
     grid-column: span 2;
-    justify-items: center;
-    
+    justify-self: center;   
 }
 
 .skills {
@@ -647,7 +661,7 @@ address, .some-icon {
 }
 
 .contact-text {
-    grid-column: 4 / span 2;
+    grid-column: 3 / span 4;
     grid-row: 2;
     align-self: center;
     justify-self: center;
