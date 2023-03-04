@@ -67,6 +67,7 @@ body {
         flex-direction: column;
         justify-content: center;
         margin-top: 55px;
+        align-self: center;
     }
 
     .intro-detail img {
@@ -132,7 +133,7 @@ body {
         align-items: center;
         margin-top: 48px;
     }
-
+   
     .scroll-icons {
         display: flex;
         flex-direction: column;
@@ -200,7 +201,6 @@ body {
     .featured-projects {
         display: flex;
         flex-direction: column;
-        background-color: #F5F5F5;
         padding-bottom: 85px;
     }
 
@@ -215,8 +215,11 @@ body {
 
     }
 
-    .chatbot-project img {
+    .projectImg img{
         margin-top: 64px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
 
     }
 
@@ -263,18 +266,28 @@ body {
         width: 200px;
         height: 48px;
         margin-top: 24px;
-        background-color: #EB5577;
         border-radius: 40px;
+        background-color:#F5F5F5;
         border: none;
         display: block;
         padding: 0px;
 
     }
+    .viewCodeBtn:hover{
+        background-color: #EB5577;
+    }
+    /* .viewCodeBtn svg:hover{
+        fill: red;
+
+    } */
+    .viewCodeBtn a:hover{
+        color: #ffffff;
+    }
 
     .viewCodeBtn svg {
         width: 32px;
         height: 32px;
-        color: #ffffff;
+        fill: #333333;
         align-items: center;
         margin: 8px 15px 8px 8px;
     }
@@ -284,7 +297,7 @@ body {
         float: right;
         width: 129px;
         height: 27px;
-        color: #ffffff;
+        color: #333333;
         font-size: 20px;
         line-height: 27px;
         font-family: 500;
@@ -297,19 +310,27 @@ body {
         width: 164px;
         height: 48px;
         margin-top: 24px;
-        background-color: #0B24F5;
         border-radius: 40px;
         border: none;
         display: block;
         padding: 0px;
-
+    }
+    .liveDemoBtn:hover{
+        background-color:#0B24F5;
+    }
+    .liveDemoBtn svg:hover{
+        color: #ffffff;
 
     }
+    .liveDemoBtn a:hover{
+        color: #ffffff;
+    }
+
 
     .liveDemoBtn svg {
         width: 30.99px;
         height: 30.99px;
-        color: #ffffff;
+        color: #333333;
         align-items: center;
         margin: 9px 15.01px 9px 9px;
     }
@@ -319,7 +340,7 @@ body {
         float: right;
         width: 93px;
         height: 27px;
-        color: #ffffff;
+        color: #333333;
         font-size: 20px;
         line-height: 27px;
         font-family: 500;
@@ -347,8 +368,11 @@ body {
         text-align: center;
     }
 
-    .myWords img {
+    .mywordsImgDiv img {
         margin-top: 64px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .myWords h4 {
@@ -424,7 +448,7 @@ body {
         flex-direction: column;
     }
 
-    .my-skills h2 {
+    .skills h2 {
         padding-top: 64px;
         text-align: center;
         color: #0B24F5;
@@ -466,8 +490,10 @@ body {
         background-color: #F5F5F5;
         padding-bottom: 97px;
     }
+
     .time-to-talk h1{
         margin-top: 64px;
+        text-align: center;
         color: #EB5577;
         font-size: "Satoshi";
         font-weight: 900;
@@ -475,44 +501,11 @@ body {
         line-height: 78.3px;
 
     }
-    .bottom-intro-details{
-        margin-top: 56px;
-    }
-    .bottom-intro-details img{
-        align-self: flex-start;
-        width: 164px;
-        height: 164px;
-        border-radius: 50%;
-
-    }
-    .bottom-intro-details h3 {
-        margin-top: 29px;
-        color: #0B24F5;
-        font-size: 28px;
-        line-height: 37.8px;
-        font-weight: 700;
-        font-family: 'Satoshi-Bold';
-
-    }
-
-    .bottom-intro-details h2 {
-        color: #000000;
-        font-size: 32px;
-        line-height: 43.2px;
-        font-weight: 900;
-        font-family: 'Satoshi-Black';
-
-    }
-
-    .bottom-intro-details h4 {
-        color: #565656;
-        font-size: 24px;
-        line-height: 32.4px;
-        font-weight: 500;
-        font-family: 'Satoshi-Medium';
-    }
+  
+    
     .contactInfo{
         margin-top: 56px;
+        text-align: center;
     }
     .contactInfo h3{
         color: #000000;
@@ -540,10 +533,25 @@ body {
         height: auto;
         display: flex;
     }
+
+    .skills h2{
+        margin-top: 121px;
+    }
+    .my-skills{
+        margin-top: 81px;
+        margin-bottom: 155px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+    }
+    
+    
     .intro-detail {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        float: left;
         margin-top: 81px;
     }
   
@@ -552,12 +560,35 @@ body {
         flex-direction: column;
         width: 303px;
         height: 113px;
-        text-align: left;
         margin-left: 29px;
 
     }
-
    
+    .contactInfo{
+        margin-top: 120px;
+        margin-bottom: 180px;
+    }
+
+    .top-media-links ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 147px;
+        margin-right: 319px;
+
+    }
+    .bottom-media-links ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 92px;
+        margin-left: 233px;
+        margin-right: 233px;
+       
+    }
+    
 }
 
 /***************responsive design for destop************/
