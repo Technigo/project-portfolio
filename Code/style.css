@@ -152,6 +152,7 @@ header h3 {
     min-width: 327px;
     max-width: 500px;
     margin: 25px 16px 50px 16px;
+    text-align: justify;
 }
 
 .profile-links {
@@ -192,11 +193,17 @@ header h3 {
 
 .tech {
     background-color: #EDFFFF;
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.tech-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tech p {
@@ -296,8 +303,7 @@ header h3 {
 }
 
 .article-section {
-    margin-top: 80px;
-    margin: 20px;
+    margin: 80px 20px 20px 20px;
 }
 
 .article-section h4 {
@@ -306,12 +312,11 @@ header h3 {
 
 .article-grid-wrapper {
     display: grid;
-    grid-row: 1fr;
-    grid-column: 1fr; 
+    grid-template-columns: 1fr;
 }
 
 .article-wrapper {
-    grid-template-rows: 1;
+    /* grid-template-rows: 1; */
     min-width: 327px;
     max-width: 564px;
     margin-top: 80px;
@@ -467,7 +472,6 @@ ul {
         display: inline;
         height: 412px;
         width: 100%;
-        border: #EB5577 dotted 3px;
     }
 
     .header-img-wrapper img {
@@ -494,6 +498,7 @@ ul {
         padding-top: 270px;
         padding-bottom: 270px;
     }
+
 
     
     .project-wrapper {
@@ -562,16 +567,82 @@ ul {
 /* desktop - small */
 @media (min-width: 1024px) {
    
-   
-   
-    /* .tech {
+    header {
         flex-direction: row;
-    } */
+        padding-bottom: 0;
+    }
+
+    .header-img-wrapper {
+        height: 100%;
+        width: 50%;
+    }
+
+    .profile-wrapper {
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header-img-wrapper img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .scroll-wrapper {
+        margin-top: -500px;
+        background-color: #0B24F5;
+        border-radius: 40px;
+    }
+
+    .scroll-wrapper img {
+        filter: brightness(5000%);
+    }
+
+    .tech-wrapper {
+        flex-direction: row;
+        align-items: end;
+        margin-top: 225px;
+    }
+    
+    .tech-wrapper p {
+        margin-left: 120px;
+    }
+
+
+    .project-img {
+        width: 280px;
+   }
+
+   .project-img img {
+        width: 280px;
+    } 
+    /* (↑ For some reason, image nr. 2 wasn't 250px wide, so I gave the img a 
+    width-property as well - even though I feel it shouldn't be necessary?) */
+
+
+    .article-section {
+        margin: 140px 80px 200px 80px;
+    }
+
+    .article-grid-wrapper {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    .article-wrapper {
+        min-width: 400px;
+        max-width: 564px;
+    }
+
+    .skill-list-wrapper {
+        width: 850px;
+    }
+
+    .skill-list {
+        text-align: left;
     }
 
 
 
-/* desktop - large */
-@media (min-width: 1512px) {
-    
 }
