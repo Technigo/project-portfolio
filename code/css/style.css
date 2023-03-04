@@ -9,6 +9,33 @@
     src: url('./Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.ttf') format('truetype');
   }
 
+
+  :root {
+    --primary-color: rgb(207, 204, 236);
+    --secondary-color: rgb(250, 226, 243);
+    --tertiary-color: rgb(207, 245, 216);
+    --fourth-color: rgb(171, 196, 243);
+    --standard-white-color: rgb(255, 255, 255);
+
+    --heading-blue: #0B24F5;
+    --heading-pink: #EB5577;
+
+    --hover-pink: #EB5577;
+    --hover-blue: #0B24F5;
+    --hover-yellow: #FFD338;
+    --hover-grey: #D0D0D0;
+
+    --scroller-circle-color:  rgb(231, 236, 252, 1);
+    --button-light-grey: #F5F5F5;
+    --tag-blue: #2483E0;
+    --tag-green: #6DB486;
+
+    --side-margins-mobile: 30px;
+    --side-margins-tablet: 50px;
+    --side-margins-desktop: 65px;
+}
+
+
 body {
     display: grid;
     grid-template-columns: 1fr;
@@ -17,13 +44,7 @@ body {
 }
 
 
-h1 {
-    font-family:  'SatoshiVariable';
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 108px;
-    margin: 0;
-}
+
 
 h2 {
     font-family:  'SatoshiVariable';
@@ -52,7 +73,7 @@ h4 {
 }
 
 .container {
-    margin: 50px var(--side-margins-mobile);
+    margin: 25px;
 }
 
 .container img {
@@ -65,7 +86,8 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    padding-top: 30px;
 }
 
 .presentation-text {
@@ -102,16 +124,68 @@ h4 {
 .links {
     display: flex;
     margin: 26px;
+    justify-content: space-between;
+    flex: 1;
+    
   }
   
   .icon {
-    font-size: 32px;
+    font-size: 21px;
     color: black;
     padding: 7px;
     margin: 0 20px 0 0;
+    
   }
   
   .icon:hover {
     opacity: 0.3;
   }
   
+  /* Side image, not visible in mobile view */
+
+.introduction-side-image {
+    display: none;
+}
+
+/* DESKTOP */
+
+@media (min-width: 1025px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .introduction {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        min-height: 980px;
+    }
+
+    .introduction .container {
+        margin: 150px var(--side-margins-desktop);
+    }
+
+    .introduction .container p {
+        margin-left: 30px;
+    }
+
+    .introduction .container .links {
+        margin-left: 30px;
+    }
+
+    .presentation {
+        flex-direction: row;
+    }
+
+    .introduction-side-image {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        width: 100%;
+        height: 100%;
+        background-image: url('./assets/images/photo-flower-unsplash.jfif');
+        background-size: cover;
+        background-position: 75%;
+        display: inline;
+    }
+}
