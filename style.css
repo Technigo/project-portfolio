@@ -38,7 +38,7 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;
-    color: #0B24F5;
+    color: #40513B;
   }
 
   .big-title {
@@ -65,13 +65,13 @@
     font-weight: 700;
     font-size: 80px;
     line-height: 80px;
-    color: #0B24F5;
+    color: #40513B;
     display: flex;
     justify-content: center;
   }
 
   .decription-header{
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 32px;
     font-weight: 900;
     line-height: 43px;
@@ -86,29 +86,29 @@
     font-size: 58px;
     line-height: 78px;
     text-align: center;
-    color: #EB5577;
+    color: #40513B;
   }
 
-  .pink{
-    background-color: #EB5577;
+  .green{
+    background-color: #609966;
     color: white;
     padding: 0px 2px 0px 2px
   }
 
-  .blue {
-    background-color: #0B24F5;
+  .dark-green {
+    background-color: #40513B;
     color: white;
     padding: 0px 2px 0px 2px
   }
 
   .light-blue {
-    background-color: #2483E0;
+    background-color: #3662af;
     color: white;
     padding: 0px 2px 0px 2px
   }
 
-  .green {
-    background-color: #6DB486;
+  .dark-blue {/*former green*/
+    background-color: #113f8f;
     color: white;
     padding: 0px 2px 0px 2px
   }
@@ -122,6 +122,24 @@
     background-color: #000000;
     color: #FFFFFF;
     padding: 2px 6px 2px 6px;
+  }
+
+  .blog-header {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 97px;
+    color: #609966;
+  }
+  
+  .date{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 27px;
+    color: #609966;
   }
 
   /*HEADER*/
@@ -146,7 +164,7 @@
   }
   
   .header {
-    background-color: lightgoldenrodyellow;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center the entire header section */
@@ -173,7 +191,7 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-    border-bottom: #0B24F5 solid;
+    border-bottom: #9DC08B solid;
     gap: 20px;
   }
 
@@ -181,7 +199,7 @@
     align-self: center;
     width: 19px;
     height: 30px; 
-    filter: invert(23%) sepia(98%) saturate(7466%) hue-rotate(241deg) brightness(89%) contrast(119%);
+    filter: brightness(0) saturate(100%) invert(79%) sepia(15%) saturate(608%) hue-rotate(56deg) brightness(89%) contrast(92%);
   }
   
   .arrow-scroll p {
@@ -190,7 +208,7 @@
     font-weight: 900;
     font-size: 16px;
     line-height: 22px;
-    color: #0B24F5;
+    color: #9DC08B;
   }
 
   .titles {
@@ -198,13 +216,10 @@
     align-self: flex-start; /* Align titles section to the left */
   }
   
-.description {
-    background: lightpink;
-}
 
 /* TECH-STACK*/
 .tech-stack {
-    background-color: #EDFFFF;
+    background-color: #EDF1D6;
     padding: 55px 24px 120px 24px;    
     display: flex;
     flex-direction: column;
@@ -214,7 +229,7 @@
 
 /*PROJECTS SECTION*/
 .projects {
-    background-color: lightseagreen;
+    background-color: white;
     padding: 55px 24px 55px 24px;
     display: flex;
     flex-direction: column;
@@ -276,14 +291,14 @@
 }
 
 .project-btn:hover{
-  background: #EB5577;
+  background: #609966;
   color: #FFFFFF;
 }
 
 
 /*BLOG-SECTION*/
 .blog-section {
-    background-color: rgb(255, 202, 202);
+    background-color: #EDF1D6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,23 +323,6 @@
   width: 100%;
 }
 
-.blog-header {
-  font-family: 'Satoshi';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 97px;
-  color: #EB5577;
-}
-
-.date{
-  font-family: 'Satoshi';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 27px;
-  color: #EB5577;
-}
 
 .blog-btn {
   display: flex;
@@ -343,7 +341,8 @@
 }
 
 .blog-btn:hover{
-  background: #FFD338;
+  background: #609966;
+  color: white;
 }
 
 .blog-buttons a {
@@ -352,7 +351,7 @@
 
 /*SKILLS*/
 .skills {
-  background-color: rgb(255, 255, 113);
+  background-color: #bfd3b5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -378,7 +377,7 @@
 
 /*CONTACT*/
 .contact {
-    background-color: rgb(198, 198, 198);
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -415,8 +414,8 @@
 /*The some-icons are styled in the header-section*/
   
 
-/*GLÖM INTE ATT ÄNDRA STORLEKEN PÅ big-header FÖR RIKTIGT
-SMÅ TELEFONER*/
+
+/*------------------MEDIA QUERIES-----------*/
 
 /*MEDIA QUEARY FOR 320-374px*/
 @media(max-width: 374px){
