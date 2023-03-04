@@ -1,13 +1,11 @@
-html {
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
     box-sizing: border-box;
-    /*max-width: 667px;*/
-
 }
 
 body {
     font-family: 'Satoshi', sans-serif;
-    max-width: 100%;
-    overflow-x: hidden !important;
 }
 
 h1 {
@@ -40,11 +38,12 @@ h3 {
 
 }
 
-#contact-details {
+.contact-details {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.5rem;
     font-weight: 900;
     color: #000000;
     margin-top: 0.5em;
-    margin-bottom: 3em;
 }
 
 #lets-scroll {
@@ -273,7 +272,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 1.5em;
+    margin-top: 4.5em;
     margin-bottom: 1.5em;
 }
 
@@ -357,12 +356,23 @@ header {
     border: none;
 }
 
+#code-skills, #toolbox-skills, #more-skills, #upcoming-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
 .skills-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #FDF2E4;
     padding: 20px 20px;
+}
+
+#contact-details {
+    
 }
 
 .contact-content {
@@ -379,12 +389,6 @@ header {
 
 /* Media queries */
 @media screen and (min-width: 350px) and (max-width: 667px) {
-    body {
-        overflow-x: hidden !important;
-    }
-    .container {
-        overflow-x: hidden !important;
-    }
 
     h5 {
         font-size: 4.5rem;
@@ -393,8 +397,9 @@ header {
 
 @media screen and (min-width: 668px) and (max-width: 1023px) {
 
-    html {
-        max-width: 1023px;
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden !important;
     }
 
     .logo-container {
@@ -419,7 +424,6 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        grid-area: hero-text;
         margin-left: 1.5em;
     }
 
@@ -529,19 +533,63 @@ header {
         margin-bottom: 3em;
     }
 
+    #contact-heading {
+        font-size: 7.5rem;
+        margin-top: 1em;
+        text-align: center;
+
+    }
+
+    #contact-info-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-area: hero-text;
+        margin-left: 1.5em;
+    }
+
+    .contact-details {
+        font-size: 2rem;
+        margin: 0.5em;
+
+    }
+
+    #contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2.5em;
+    }
+
+    #contact-info {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+        align-items: center;
+    }
+
+    .contact-content {
+        margin-bottom: 5em;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden !important;
+    }
     
     .header-and-logo {
         display: flex;
         flex-direction: row-reverse;
-        flex-wrap: wrap;
     }
 
     .logo-container {
         display: flex;
-        flex-basis: 50%;
+        width: 50%;
         height: 980px;
         justify-content: center;
     }
@@ -551,8 +599,66 @@ header {
     }
 
     header {
-        flex-basis: 50%;
+        width: 50%;
         height: 980px;
-        padding: 0%;
+        padding: 0 2em 0 2em;
+        margin-bottom: 0;
     } 
+
+    .hero {
+        display: flex;
+        justify-content: flex-start;
+        margin: 2em 4em 1em 3em;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2em;
+        margin-top: 2em;
+        margin-right: 5em;
+    }
+
+    .hero-pitch {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin-left: 2em;
+    }
+
+    .headshot1-container {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .icons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+        width: 500px;
+    }
+
+    .tech-content {
+        padding: 12em 12em;
+    }
+
+    .featured-content {
+        padding: 6em 12em;
+    }
+
+    #words-heading {
+        color: #EB5577;
+        font-size: 4.5rem;
+        margin-bottom: 1em;
+        align-self: flex-start;
+    }
+
+    .words-content {
+        padding: 5em 8em;
+    }
+
 }
