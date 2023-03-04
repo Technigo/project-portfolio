@@ -119,7 +119,27 @@ p {
   margin: 30px;
 }
 
+
+/* Screen reader properties: */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+
 /*--SOCIAL MEDIA ICON--*/
+
+
+
+
 
 .links-social-media button  {
   background-color: #bf4d4d;
@@ -278,19 +298,36 @@ p {
   padding: 2px 5px;
 }
 
-.project-links {
-  display: flex;
-  flex-direction: row;
+
+
+
+/*LINKS*/
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.project-links button{
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: row;*/
+}
+
+.project-links a {
 font-family: 'SatoshiRegular';
 font-size: 20px;
 border-radius: 40px;
 line-height: 27px;
 max-height: 40px;
 margin: 10px 5px 5px 5px;
-padding: 7px 10px 7px 10px;
+padding: 7px 15px 7px 10px;
 border: none;
 display: flex;
 flex-direction: row;
@@ -311,24 +348,27 @@ align-items: center;
   fill: rgb(255, 255, 255);
 }
 
-.project-links button .icons {
+.project-links .icons {
   width: 32px;
   height: 32px;
   padding-right: 10px;
+  margin-right: 8px;
 }
 
-.project-links button p {
+/*.project-links .button p {
   font-size: 20px;
   margin-left: 10px;
   margin-top: 20px;
   color: black;
-}
+}*/
 
 .project-links button .icons:hover {
   fill: rgb(255, 255, 255);
-  filter: brigthness(70%);
-  z-index: 2;
 }
+
+
+
+
 
 /*--MY WORDS SECTION--*/
 
