@@ -196,7 +196,11 @@ a {
   color: #000;
 }
 
-.icons a:visited {
+a {
+  color: #000;
+}
+
+a:visited {
   text-decoration: none;
 }
 
@@ -306,6 +310,7 @@ a {
 .project-info p {
   font-family: "EB Garamond", sans-serif;
   margin: 0vw 0vw 1vw 0vw;
+  font-size: 18px;
 }
 
 .tech-included p {
@@ -415,6 +420,129 @@ a {
   margin: 5px;
 }
 
+/* SKILLS SECTION */
+
+.skills-section {
+  background: #ced2ed;
+  height: 75vh;
+}
+
+.skills-section h2 {
+  font-family: "SatoshiBold", sans-serif;
+  font-size: 45px;
+  color: #0b24f5;
+  text-align: center;
+  padding: 5rem;
+}
+
+.skills-container {
+  font-family: "EB Garamond", sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.pink {
+  background: #eb5577;
+  font-family: "SatoshiBold", sans-serif;
+  color: #fff;
+  text-align: center;
+  width: 10rem;
+}
+
+.light-blue {
+  background: #2483e0;
+  font-family: "SatoshiBold", sans-serif;
+  color: #fff;
+  text-align: center;
+  width: 10rem;
+}
+
+.blue {
+  background: #0b24f5;
+  font-family: "SatoshiBold", sans-serif;
+  color: #fff;
+  text-align: center;
+  width: 10rem;
+}
+
+.green {
+  background: #6db486;
+  font-family: "SatoshiBold", sans-serif;
+  color: #fff;
+  text-align: center;
+  width: 10rem;
+}
+
+/* LETS TALK */
+
+.time-to-talk {
+  text-align: center;
+  color: #eb5577;
+  font-family: "SatoshiBold", sans-serif;
+  font-size: 45px;
+  padding: 5rem;
+}
+
+.lets-talk .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.lets-talk .profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.lets-talk img {
+  width: 10vw;
+  border-radius: 50%;
+}
+
+.talk-picture-and-name {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.phone-and-email {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "SatoshiBold", sans-serif;
+  font-size: 24px;
+  width: 24vw;
+}
+
+.phone-and-email p {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "SatoshiBold", sans-serif;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.phone-and-email a {
+  text-decoration: none;
+}
+
+.lets-talk span {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.lets-talk .icons {
+  margin: 0;
+}
+
 @media screen and (max-width: 1025px) {
   /* TOP SECTION */
 
@@ -505,7 +633,7 @@ a {
 
   /* MY WORDS */
 
-  ..my-words-headline {
+  .my-words-headline {
     width: 80%;
     margin-left: 20vw;
   }
@@ -521,6 +649,60 @@ a {
     display: flex;
     flex-direction: column;
     margin: 20px auto;
+  }
+
+  /* SKILLS SECTION */
+
+  .skills-section {
+    height: 90vh;
+  }
+
+  .skills-section h2 {
+    padding: 35px;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  .skills-code {
+    padding: 15px;
+  }
+
+  .skills-toolbox {
+    padding: 15px;
+  }
+
+  .skills-more {
+    padding: 15px;
+  }
+
+  .skills-upcoming {
+    padding: 15px;
+  }
+
+  /* LETS TALK */
+
+  .time-to-talk {
+    font-size: 50px;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .lets-talk .text-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .phone-and-email {
+    width: 100%;
+  }
+
+  .lets-talk img {
+    width: 23vw;
   }
 }
 
@@ -538,6 +720,10 @@ a {
     height: 50%;
     width: 100%;
   }
+
+  .skills-section {
+    height: 120vh;
+  }
 }
 
 @media screen and (max-width: 415px) {
@@ -549,14 +735,16 @@ a {
 
   .text-container {
     width: 90%;
+    margin: 0 auto;
   }
 
   .profile {
+    margin: 0 auto;
   }
 
   .picture-and-name {
     flex-direction: column;
-    width: 85%;
+    width: 100%;
   }
 
   .profile-name-job {
@@ -643,5 +831,40 @@ a {
     align-items: flex-start;
   }
 
+  /* SKILLS */
+
+  .skills-section {
+    height: 125vh;
+  }
+
+  .skills-container {
+    text-align: center;
+  }
+
   /* MY WORDS */
+
+  .article img {
+    max-width: 250px;
+  }
+
+  /* LETS TALK */
+
+  .lets-talk .text-container {
+    width: 90%;
+  }
+
+  .talk-picture-and-name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phone-and-email {
+    text-align: left;
+    margin: 0;
+  }
+
+  .phone-and-email p {
+    text-align: left;
+    margin: 0;
+  }
 }
