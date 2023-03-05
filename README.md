@@ -8,4 +8,4 @@ Follow the design in Figma and replace with your own info. Make sure you can use
 
 ## View it live
 
-[Malins Portfolio](https://soft-sprite-f17f90.netlify.app/).
+[Malins Portfolio](https://portfolio-m-skill.netlify.app/)
