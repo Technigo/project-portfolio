@@ -34,6 +34,86 @@ ul {
   padding-left: 0px;
 }
 
+#backtotop-btn {
+  padding: 12px;
+  color: white;
+  font-family: Satoshi-regular;
+  font-size: 18px;
+  background-color: #eb5578bb;
+  border-radius: 12px;
+  visibility: hidden;
+  position: fixed;
+  cursor: pointer;
+  right: 16px;
+  bottom: 16px;
+  user-select: none;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#backtotop-btn:hover {
+  opacity: 0.5;
+}
+
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slide-out-top {
+  -webkit-animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+
 .name-and-profilePhoto {
   display: flex;
   flex-direction: column;
@@ -521,27 +601,6 @@ button {
   filter: brightness(600%);
 }
 
-.top-button {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  background-color: #0b24f5;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 18px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  opacity: 0.7;
-}
-
-.top-button:hover {
-  opacity: 1;
-}
-
 /* MQ for tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
   .intro {
@@ -713,6 +772,11 @@ button {
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
     /* box-shadow: 0 10px 10px rgb(0 0 0 / 10%), 0 10px 10px rgb(0 0 0 / 10%),
       0 10px 4px rgb(0 0 0 / 10%), 0 10px 10px rgb(0 0 0 / 10%); */
+  }
+
+  .project-image:hover {
+    opacity: 30%;
+    cursor: pointer;
   }
 
   .project-buttons {
