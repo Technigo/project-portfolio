@@ -181,8 +181,6 @@ p {
 .view-demo-link,
 .view-code-link,
 .words-button {
-  display: flex;
-  align-items: center;
   font-family: "Satoshi-Medium";
   font-size: 20px;
   width: 164px;
@@ -196,14 +194,19 @@ p {
   width: 200px;
 }
 
-.view-demo-link img,
-.view-code-link img,
-.words-button img {
+.icon {
   width: 48px;
 }
 
-.view-wrapper a {
+a {
+  display: flex;
   text-decoration: none;
+  align-items: center;
+  gap: 4px;
+}
+
+a:visited {
+  color: black;
 }
 
 .view-demo-link:hover {
