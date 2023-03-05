@@ -10,7 +10,7 @@
     font-weight: bold;
     src: url('./Code/Fonts/OTF/Satoshi-Bold.otf');
   }
-  
+
   @font-face {
     font-family: SatoshiBlack;
     font-weight: bolder;
@@ -22,7 +22,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  } 
+  }
 
 /* .outer-wrapper {
     width: 100%;
@@ -45,7 +45,7 @@
     min-height: 960px;
 }
 
-.picture img {
+.header-image {
     width: 100%;
     height: auto;
     display: none;
@@ -57,21 +57,21 @@
 }
 
 .profile-picture img {
-    min-width: 164px;
-    height: auto;
+    width: 164px;
+    height: 164px;
     /* max-width: 100%;
     height: auto; */
     border-radius: 50%;
     margin: 55px 105.5px 29px 105.5px;
-    /* check the dimensions here */ 
-    overflow: hidden; 
+    /* check the dimensions here */
+    overflow: hidden;
  }
-  
+
 .header-text {
     margin-left: 24px;
 }
 
-h2 { /*name*/
+h1 { /*name*/
     font-family: SatoshiBold;
     color: blue;
     font-size: 28px;
@@ -94,7 +94,7 @@ h2 { /*name*/
     margin-top: 73px;
 }
 
-h1 { /*Frontend Developer*/
+h2 { /*Frontend Developer*/
     font-family: satoshiBold;
     font-style: normal;
     font-weight: 900;
@@ -129,11 +129,23 @@ p {
     font-size: 32px;
 }
 
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+  }
+  
+
 /*///////// new section - tech /////////////*/
 
 
-.second-page {
+.second-page-tech-section {
     display: flex;
+    flex-direction: column;
     background-color: #EDFFFF;
     width: 100%;
     min-width: 375px;
@@ -142,8 +154,8 @@ p {
 
 
 .title-tech {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     /* margin-left: 99px; */
 }
 
@@ -151,7 +163,7 @@ p {
     font-family: SatoshiBold;
     color: blue;
     font-size: 80px;
-    line-height: 108px;    
+    line-height: 108px;
     margin-top: 80px;
 }
 
@@ -160,7 +172,7 @@ p {
     margin-right: 24px;
     margin-top: 60px;
     padding: 0;
-} 
+}
 
 .tech-info p {
     font-size: 22px;
@@ -204,7 +216,7 @@ p {
 }
 
 .project-image {
-    width: 327px; 
+    width: 327px;
     height: 280px;
     margin-bottom: 40px;
 }
@@ -250,11 +262,11 @@ p {
     text-decoration: none;
     font-family: SatoshiRegular;
     font-size: 20px;
-    line-height: 27px;    
-    background-color: #F5F5F5; 
-    width: 200px; height: 48px; 
-    border-radius: 40px;   
-}    
+    line-height: 27px;
+    background-color: #F5F5F5;
+    width: 200px; height: 48px;
+    border-radius: 40px;
+}
 
 .link-github p {
     padding: 10.5px 16px 10.5px 7px;
@@ -273,9 +285,9 @@ p {
     font-family: SatoshiRegular;
     font-size: 20px;
     line-height: 27px;
-    background-color: #F5F5F5; 
-    width: 200px; height: 48px; 
-    border-radius: 40px; 
+    background-color: #F5F5F5;
+    width: 200px; height: 48px;
+    border-radius: 40px;
     /* width: 164px;
     height: 48px; */
     /* border-radius: 40px; */
@@ -291,18 +303,14 @@ p {
 
 /* //////////new section - my words//////////*/
 
-.fourth-page {
+.fourth-page-my-words {
     background-color: #FCEDEA;
     padding-bottom: 20px;
     min-width: 375px;
-    /* display: flex; */
-}
-
-/* also think about placing of words, date, title of article*/
-.my-words {
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 64px;
+    /* display: flex; */
 }
 
 .title-my-words h3 {
@@ -348,9 +356,9 @@ p {
     display: flex;
     text-decoration: none;
     margin-top: 34.5px;
-    background-color: #FFFFFF; 
-    width: 178px; 
-    height: 48px; 
+    background-color: #FFFFFF;
+    width: 178px;
+    height: 48px;
     border-radius: 40px;
 
 }
@@ -366,7 +374,7 @@ p {
 
 /* new section -skills*/
 
-.fifth-page { /*this could be my skills page class instead...then change all wrappers to page title*/
+.fifth-page-my-skills { 
     background-color: #FDF2E4;
     padding-bottom: 137px;
     min-width: 375px;
@@ -375,13 +383,13 @@ p {
     align-items: center;
 }
 
-.title-skills h3 { 
+.title-skills h3 {
     font-family: satoshiBold;
     font-size: 72px;
     line-height: 97.2px;
     color: blue;
     /* margin-left: 94px; */
-    padding-top: 64px; 
+    padding-top: 64px;
 }
 
 
@@ -415,10 +423,13 @@ ul {
 }
 
 .title-time-to-talk h3 {
+    display: flex;
+    justify-content: center;
     font-family: satoshiBold;
     font-size: 58px;
     line-height: 78px;
     margin-left: 24px;
+    margin-top: 64px;
     color: #EB5577;
 }
 
@@ -427,7 +438,7 @@ ul {
     height: auto;
     border-radius: 50%;
     margin: 55px 105.5px 29px 24px;
-    overflow: hidden; 
+    overflow: hidden;
  }
 
 .name-occupation-text {
@@ -456,18 +467,16 @@ ul {
 
 /*new section - header*/
 
-    .header-section {
-        /* display: block; */
-        margin-left: 24px;
-        margin-right: 24px;
+  
+    .header-image-container {
+        display: flex;
+        
     }
 
-    .picture img {
-        display: flex;
-        /* flex-grow: ; */
-        /* max-width: 100%; */
-        object-fit: cover;
-    }
+    .header-image { /*need to fix this */
+        display: flex; 
+        height: 400px;
+    } 
 
     .profile-picture img {
         min-width: 164px;
@@ -479,17 +488,17 @@ ul {
         margin-left: 102px;
         margin-bottom: 32px;
         margin-right: unset;
-        /* check the dimensions here */ 
-        overflow: hidden; 
+        /* check the dimensions here */
+        overflow: hidden;
      }
 
-     .header-container { 
+     .header-container {
         display: flex;
         flex-direction: row;
      }
 
      .header-text {
-        margin-top: 106.5px;  
+        margin-top: 106.5px;
         margin-left: 29px;
     }
 
@@ -507,7 +516,7 @@ ul {
 
    /*new section - featured projects*/
 
-    .title-featured-projects h3 {        
+    .title-featured-projects h3 {
         margin-top: 64px;
         font-size: 80px;
         line-height: 108px;
@@ -533,13 +542,13 @@ ul {
         display: flex;
         flex-direction: row;
         margin-top: 40px;
-        
+
     }
 
     .link-netlify {
         margin-left: 24px;
     }
-   
+
     /*My words section*/
 
     .title-my-words {
@@ -559,7 +568,7 @@ ul {
     }
 
 /*new section - skills */
-    
+
     .my-skills {
         display: flex;
         flex-direction: column;
@@ -581,10 +590,10 @@ ul {
         margin-top: 81px;
         margin-bottom: 32px;
         margin-right: unset;
-        overflow: hidden; 
+        overflow: hidden;
     }
 
-    .picture-info-container { 
+    .picture-info-container {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -592,7 +601,7 @@ ul {
     }
 
     .name-occupation-text {
-        margin-top: 106.5px;  
+        margin-top: 106.5px;
         margin-left: 29px;
     }
 
@@ -602,7 +611,7 @@ ul {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .email-address {
         display: flex;
         flex-direction: column;
@@ -617,49 +626,82 @@ ul {
 
     /*new section - header*/
 
-    .first-page {
+    header {
         /* display: grid;
         grid-template-columns: 1fr 1fr; */
         display: flex;
         flex-direction: row-reverse;
-    }
-
-    .picture-container {
-        display: flex;
-    }
-
-    .picture img {
-        display: flex;
         height: 980px;
+      
+    }
+
+    .header-image {
+        display: flex;
+        object-fit: cover;
         flex-basis: 50%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-
-    /* .cover-image-container {
-        display: flex;
-        width: 50%;
-    
-      }
-    
-      .cover-image {
-        object-fit: cover;
         height: 980px;
-        overflow: hidden;
-      } */
-
-    .header-section {
-        /* display: block; */
-        margin-left: 24px;
-        margin-right: 24px;
+        margin: 0;
     }
 
-     
+      .profile-picture img {
+        min-width: 164px;
+        height: auto;
+        /* max-width: 100%;
+        height: auto; */
+        border-radius: 50%;
+        margin-top: 81px;
+        margin-left: 102px;
+        margin-bottom: 32px;
+        margin-right: unset;
+        /* check the dimensions here */
+        overflow: hidden;
+     }
 
-    /*My words section*/
+     .header-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-basis: 50%;
+        margin: 0;
+     }
+
+     .header-text {
+        margin-top: 106.5px;
+        margin-left: 29px;
+        margin-right: 29px;
+    }
+
+
+
+
+     /*new section - Tech */
+
+    .second-page-tech-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 0px;
+       
+    }
+
+
+    .tech-info {
+        display: flex;
+        align-self: center;      
+        margin-right: 90px;
+        }
+
+
+    /*new section - My words*/
+
+    .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 
     /*new section - skills */
-    
+
     .my-skills {
         display: flex;
         flex-direction: column;
@@ -681,10 +723,10 @@ ul {
         margin-top: 81px;
         margin-bottom: 32px;
         margin-right: unset;
-        overflow: hidden; 
+        overflow: hidden;
     }
 
-    .picture-info-container { 
+    .picture-info-container {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -692,7 +734,7 @@ ul {
     }
 
     .name-occupation-text {
-        margin-top: 106.5px;  
+        margin-top: 106.5px;
         margin-left: 29px;
     }
 
@@ -702,7 +744,7 @@ ul {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .email-address {
         display: flex;
         flex-direction: column;

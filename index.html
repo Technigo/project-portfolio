@@ -16,135 +16,128 @@
 </head>
 <body>
     <!-------------Header section---------------->
-    <header class="outer-wrapper first-page"> 
-        <div class="picture-container">
-            <div class="picture">
-                <img src="https://placehold.co/744x412" alt="Picture">
+    <header> 
+        <div class="header-image-container">
+            <div class="header-image">
+                <img src="./pexels-evie-shaffer-2512280.jpg" alt="Picture">
             </div>
         </div>
-        <div class ="inner-wrapper-header-section">
+        <div class ="inner-wrapper header-section">
             <div class="header-container">
                 <div class="profile-picture">
-                    <img src="https://placehold.co/164" alt="Profile Picture of Fiona Klacar">
+                    <img src="./Fiona-Klacar-picture.jpg" alt="Profile Picture of Fiona Klacar">
                 </div>
                 <div class ="header-text">
-                    <h2>Fiona Klacar</h2>
-                    <h1>Frontend Developer</h1>
+                    <h1>Fiona Klacar</h1>
+                    <h2>Frontend Developer</h2>
                 </div>    
             </div>    
             <div class ="introduction">
-                <p>Fiona is ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, inventore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex animi laborum qui aliquid odit saepe fugiat ullam. Deleniti doloremque unde ducimus saepe, fugit ad amet nisi beatae. Consequuntur, officiis quasi?</is></p>
+                <p>Fiona is ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, inventore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex animi laborum qui aliquid odit saepe fugiat ullam. Deleniti doloremque unde ducimus saepe, fugit ad amet nisi beatae. Consequuntur, officiis quasi?</p>
             </div>    
             <div class ="socialmedia-icons">
                 <a class="icon" href="https://www.linkedin.com/in/fiona-klacar/">
-                    <i class="fab fa-linkedin-in"></i> <!--add the SR-->
+                    <i class="fab fa-linkedin-in visually-hiddden"></i> 
+                    <span class="sr-only">LinkedIn</span>
                 </a>
                 <a class="icon" href="https://github.com/FionaKlacar">
-                    <i class ="fa-brands fa-github"></i>
+                    <i class ="fa-brands fa-github visually-hiddden"></i>
+                    <span class="sr-only">GitHub</span>
                 </a>
             </div>
-                <img class="scroll-arrow" src="./Vector 1.svg" alt="scroll-arrow">
-                <img class="scroll-text" src="./Lets scroll.svg" alt="scroll-text">
+                <img class="scroll-arrow" src="./Vector-1.svg" alt="scroll-arrow">
+                <img class="scroll-text" src="./Lets-scroll.svg" alt="scroll-text">
         </div>
     </header>
             <!-------------New section TECH---------------->
-    <section class="outer-wrapper second-page">
-        <section class="inner-wrapper tech-section">
-            <div class="title-tech">
-                <h3>Tech</h3>
-            </div>
-            <div class="tech-info"> <!--change the colours for span highlighting later-->
-                <p>HTML, CSS, <span style="background-color: yellow;">JavaScript</span>, API:s, <span style="background-color: green;">mob-programming</span>, pair-programming, Github Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, est.</p>
-            </div>
-        </section>
+    <section class="second-page-tech-section">
+        <div class="title-tech">
+            <h3>Tech</h3>
+        </div>
+        <div class="tech-info"> <!--change the colours for span highlighting later-->
+            <p>HTML, CSS, <span style="background-color: yellow;">JavaScript</span>, API:s, <span style="background-color: green;">mob-programming</span>, pair-programming, Github Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, est.</p>
+        </div>
     </section>
             <!-------------New section FEATURED PROJECTS---------------->
-    <section class="outer-wrapper third-page">
-        <section class="inner-wrapper featured-projects">
-            <div class="title-featured-projects"> 
-                <h3>Featured Projects</h3>
+    <section class="third-page-featured-projects">
+        <div class="title-featured-projects"> 
+            <h3>Featured Projects</h3>
+        </div>
+        <div class="card-container"> 
+            <div class="card-content project-one">
+                <img class="project-image" src="./pexels-christina-morillo-1181216.jpg" alt="Project-image">
+                <div class="project-container">
+                    <div class="project-text">   
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, earum!</p>
+                    </div> 
+                    <div class="tag-wrapper">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="project-links ">
+                        <!-- <div style="background-color: #F5F5F5; width: 200px; height: 48px; border-radius: 40px;"> -->
+                            <a class ="link-github" href="linktoGithub">
+                                <svg viewBox="0 0 48 48" width="48" height="48">
+                                    <use xlink:href="./github.svg#github"></use>
+                                </svg>
+                                <p>View the code</p><!--check if ok to place here-->
+                                </a>
+                        <!-- </div> -->
+                        <!-- <div style="background-color: #F5F5F5; width: 164px; height: 48px; border-radius: 40px; margin-bottom: 80px;"> -->
+                            <a class ="link-netlify" href="linktoNetlify">
+                                <svg viewBox="0 0 48 48" width="48" height="48">
+                                    <use xlink:href="./Live-Demo.svg#Live Demo"></use>
+                                </svg>
+                                <p>Live Demo</p><!--check if ok to place here-->
+                                </a>
+                        <!-- </div> -->
+                    </div> 
+                </div>                
             </div>
-            <div class="card-container"> 
-                <div class="card-content project-one">
-                    <img class="project-image" src="./pexels-christina-morillo-1181216.jpg" alt="Project-image">
-                    <div class="project-container">
-                        <div class="project-text">   
-                            <h3>Name</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, earum!</p>
-                        </div> 
-                        <div class="tag-wrapper">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="project-links ">
-                            <!-- <div style="background-color: #F5F5F5; width: 200px; height: 48px; border-radius: 40px;"> -->
-                                <a class ="link-github" href="linktoGithub">
-                                    <svg viewBox="0 0 48 48" width="48" height="48">
-                                        <use xlink:href="./github.svg#github"></use>
-                                    </svg>
-                                    <p>View the code</p><!--check if ok to place here-->
-                                    </a>
-                            <!-- </div> -->
-                            <!-- <div style="background-color: #F5F5F5; width: 164px; height: 48px; border-radius: 40px; margin-bottom: 80px;"> -->
-                                <a class ="link-netlify" href="linktoNetlify">
-                                    <svg viewBox="0 0 48 48" width="48" height="48">
-                                        <use xlink:href="./Live Demo.svg#Live Demo"></use>
-                                    </svg>
-                                    <p>Live Demo</p><!--check if ok to place here-->
-                                    </a>
-                            <!-- </div> -->
-                        </div> 
-                    </div>                
-                </div>
-                <!--next project-->
-                <div class="card-content project-one">
-                    <img class="project-image" src="./pexels-christina-morillo-1181216.jpg" alt="Project-image">
-                    <div class="project-container">
-                        <div class="project-text">   
-                            <h3>Name</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, earum!</p>
-                        </div> 
-                        <div class="tag-wrapper">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="project-links ">
-                            <!-- <div style="background-color: #F5F5F5; width: 200px; height: 48px; border-radius: 40px;"> -->
-                                <a class ="link-github" href="linktoGithub">
-                                    <svg viewBox="0 0 48 48" width="48" height="48">
-                                        <use xlink:href="./github.svg#github"></use>
-                                    </svg>
-                                    <p>View the code</p><!--check if ok to place here-->
-                                    </a>
-                            <!-- </div> -->
-                            <!-- <div style="background-color: #F5F5F5; width: 164px; height: 48px; border-radius: 40px; margin-bottom: 80px;"> -->
-                                <a class ="link-netlify" href="linktoNetlify">
-                                    <svg viewBox="0 0 48 48" width="48" height="48">
-                                        <use xlink:href="./Live Demo.svg#Live Demo"></use>
-                                    </svg>
-                                    <p>Live Demo</p><!--check if ok to place here-->
-                                    </a>
-                            <!-- </div> -->
-                        </div> 
-                    </div>                
-                </div>
-                <!--next project-->
-
-
-
+            <!--next project-->
+            <div class="card-content project-one">
+                <img class="project-image" src="./pexels-christina-morillo-1181216.jpg" alt="Project-image">
+                <div class="project-container">
+                    <div class="project-text">   
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, earum!</p>
+                    </div> 
+                    <div class="tag-wrapper">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="project-links ">
+                        <!-- <div style="background-color: #F5F5F5; width: 200px; height: 48px; border-radius: 40px;"> -->
+                            <a class ="link-github" href="linktoGithub">
+                                <svg viewBox="0 0 48 48" width="48" height="48">
+                                    <use xlink:href="./github.svg#github"></use>
+                                </svg>
+                                <p>View the code</p><!--check if ok to place here-->
+                                </a>
+                        <!-- </div> -->
+                        <!-- <div style="background-color: #F5F5F5; width: 164px; height: 48px; border-radius: 40px; margin-bottom: 80px;"> -->
+                            <a class ="link-netlify" href="linktoNetlify">
+                                <svg viewBox="0 0 48 48" width="48" height="48">
+                                    <use xlink:href="./Live-Demo.svg#Live Demo"></use>
+                                </svg>
+                                <p>Live Demo</p><!--check if ok to place here-->
+                                </a>
+                        <!-- </div> -->
+                    </div> 
+                </div>                
             </div>
-
-        </section>
-
+        </div>    
+            <!--next project-->
     </section>
             <!-------------New section MY WORDS---------------->
-    <section class="outer-wrapper fourth-page">
-        <section class="inner-wrapper my-words">
-            <div class="title-my-words"> 
-                <h3>My words</h3>
-            </div>
+    <section class="fourth-page-my-words">
+        <div class="title-my-words"> 
+            <h3>My words</h3>
+        </div>
+        <div class="articles">
             <article>
                 <img class ="article-image" src="https://placehold.co/327x280" alt="Article-image">
                 <h5 class="article-date">Date</h5>
@@ -157,7 +150,7 @@
                         </svg> 
                         <p>Read article</p><!--check if ok to place here-->
                         </a>
-                </div>
+                </div>        
             </article>
             <article>
                 <img class ="article-image" src="https://placehold.co/327x280" alt="Article-image">
@@ -173,77 +166,72 @@
                         </a>
                 </div>
             </article>
-        </section>
+        </div>
     </section>
-
     <!-------------New section SKILLS---------------->
-    <section class="outer-wrapper fifth-page">
-        <section class="inner-wrapper my-skills">
-            <div class="title-skills"> 
-                <h3>Skills</h3>
+    <section class="fifth-page-my-skills">
+        <div class="title-skills"> 
+            <h3>Skills</h3>
+        </div>
+        <div class="skills-list">
+            <div class="Code">
+                <h4><span style="background-color: #EB5577; color: #FFFFFF;">Code</span></h4>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div> 
+            <div class="Toolbox">
+                <h4><span style="background-color: #2483E0; color: #FFFFFF;">Toolbox</span></h4>
+                <ul>
+                    <li>Figma</li>
+                    <li>Slack</li>
+                    <li>StackOverflow</li>
+                </ul>
             </div>
-            <div class="skills-list">
-                <div class="Code">
-                    <h4><span style="background-color: #EB5577; color: #FFFFFF;">Code</span></h4>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div> 
-                <div class="Toolbox">
-                    <h4><span style="background-color: #2483E0; color: #FFFFFF;">Toolbox</span></h4>
-                    <ul>
-                        <li>Figma</li>
-                        <li>Slack</li>
-                        <li>StackOverflow</li>
-                    </ul>
-                </div>
-                <div class="More">
-                    <h4><span style="background-color: #0B24F5; color: #FFFFFF;">More</span></h4>
-                    <ul>
-                        <li>Agile methodology</li>
-                    </ul>
-                </div>
-                <div class="Upcoming">
-                    <h4><span style="background-color:#6DB486; color: #FFFFFF;">Upcoming</span></h4>
-                    <ul>
-                        <li>Redux</li>
-                        <li>Node.js</li>
-                    </ul>
-                </div>
+            <div class="More">
+                <h4><span style="background-color: #0B24F5; color: #FFFFFF;">More</span></h4>
+                <ul>
+                    <li>Agile methodology</li>
+                </ul>
             </div>
-        </section>
+            <div class="Upcoming">
+                <h4><span style="background-color:#6DB486; color: #FFFFFF;">Upcoming</span></h4>
+                <ul>
+                    <li>Redux</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+        </div>
     </section>
-
     <!-------------New section TIME TO TALK---------------->
-    <section class="outer-wrapper final-section">
-        <section class="inner-wrapper time-to-talk">
-            <div class="title-time-to-talk"> 
-                <h3>Time to talk</h3>
+    <section class="final-section-time-to-talk">
+        <div class="title-time-to-talk"> 
+            <h3>Time to talk</h3>
+        </div>
+        <div class="picture-info-container">
+            <div class="profile-picture-again">
+                <img src="https://placehold.co/164" alt="Profile Picture of Fiona Klacar">
             </div>
-            <div class="picture-info-container">
-                <div class="profile-picture-again">
-                    <img src="https://placehold.co/164" alt="Profile Picture of Fiona Klacar">
-                </div>
-                <div class ="name-occupation-text">
-                    <h2>Fiona Klacar</h2>
-                    <h1>Frontend Developer</h1>
-                </div>  
-            </div>
-            <div class="email-address">
-                <h2>fiona.klacar@gmail.com</h2>
-            </div>
-            <div class ="socialmedia-icons-again">
-                <a class="icon" href="https://www.linkedin.com/in/fiona-klacar/">
-                    <i class="fab fa-linkedin-in"></i> <!--add the SR-->
-                </a>
-                <a class="icon" href="https://github.com/FionaKlacar">
-                    <i class ="fa-brands fa-github"></i>
-                </a>
-            </div>
-        </section>
+            <div class ="name-occupation-text">
+                <h1>Fiona Klacar</h1>
+                <h2>Frontend Developer</h2>
+            </div>  
+        </div>
+        <div class="email-address">
+            <h2>fiona.klacar@gmail.com</h2>
+        </div>
+        <div class ="socialmedia-icons-again">
+            <a class="icon" href="https://www.linkedin.com/in/fiona-klacar/">
+                <i class="fab fa-linkedin-in visually-hiddden"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+            <a class="icon" href="https://github.com/FionaKlacar">
+                <i class ="fa-brands fa-github visually-hiddden"></i>
+                <span class="sr-only">GitHub</span>
+            </a>
+        </div>
     </section>
-
 </body>
 </html>
