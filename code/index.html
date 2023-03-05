@@ -1,38 +1,88 @@
-<!--ADD FAVICON-->
+
 <!--Add more divs or sections for the purpose-->
 <!--Clean up code-->
+
+
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ylva Karlsson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- HTML Meta Tags -->
+    <title>Ylva Karlssons portfolio, Frontend developer-student at Technigo</title>
+    <meta name="description" content="Ylva Karlsson is a frontend developer with a passion for creating accessible, responsive and user-friendly websites. Visit my portfolio site to see my projects and learn more about current skills and experience." />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+    rel="stylesheet"
+    />
+
     <!--OG Tags for social media-->
-    <meta property="og:title" content="Ylvas Portfolio" />
+     <!--WILL CHANGE THE LINK BELOW ONCE IT'S PUBLISHED ON NETLIFY-->
+    <meta
+      property="og:url"
+      content="https://app.netlify.com/teams/ylvakarlsson/sites"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta 
+      property="og:title"
+      content="Ylvas Portfolio"
+    />
     <meta
       property="og:description"
-      content="The portfolio page of Ylva Karlsson - student of Technigo Web Development Boot Camp Spring 2023"
+      content="Ylva Karlsson is a frontend developer with a passion for creating accessible, responsive and user-friendly websites. Visit my portfolio site to see my projects and learn more about current skills and experience."
     />
-    <meta property="og:image" content="" />
-    <!--OG tags for e website that has a video-->
-    <meta property="og:type" content="video"/>
-    <meta property="og:video" content="https:put-your-video-link-here.com//"/>
-    <meta property="og:video:type" content="video/mp4"/>
-    <!--we don't need to add the word "px" below but the number in width and height is the pixels for the video shown-->
-    <meta property="og:video:width" content="640"/> 
-    <meta property="og:video:height" content="360"/>
-<!--Title that shows on top of the website-->
-    <title>Ylvas Portfolio</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+   <!--OUTCOMMENTED line of text BELOW for the content above, will choose one after feedback, not sure if this HAS to be the same as the HTML meta-title or maybe it even SHOULD be the same...
+    content="The portfolio page of Ylva Karlsson - student of Technigo Web Development Boot Camp Spring 2023"-->
+    <meta
+      property="og:image"
+      content="https://ylva-karlsson-portfolio.netlify.app/images/logo.png" />
+    <!--OUTCOMMENTED BELOW - Seen different solutions for this and not sure if I need an Alt-tag for the favicon or not? And if so
+    the text below is an alt-text for my favicon and not the link above so this might be in the wrong place then -->
+    <meta
+      property="og:image:alt"
+      content="Picture of the logo for the letters of my initials Y and K"
+    />
+
+   <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="ylva-karlsson-portfolio.netlify.app" />
+   <meta
+     property="twitter:url"
+     content="https://ylva-karlsson-portfolio.netlify.app/"
+   />
+   <meta
+     name="twitter:title"
+     content="Ylva Karlsson, Frontend developer portfolio"
+   />
+   <meta
+     name="twitter:description"
+     content="Ylva Karlsson is a frontend developer with a passion for creating accessible, responsive and user-friendly websites. Visit my portfolio site to see my projects and learn more about current skills and experience."
+   />
+   <meta
+     name="twitter:image"
+     content="https://ylva-karlsson-portfolio.netlify.app/images/logo.png"
+   />
   </head>
 
   <body>
+    <!--TOP SECTION-->
     <header>
+      <section class="profile-column
       <div class="header">
       <h1>Ylva Karlsson</h1>
-      <p>Frontend Developer</p>
+      <p>E-commerce Manager currently working on coding skills in Frontend Development</p>
       <nav>
         <ul>
           <li><a href="#about-me">About Me</a></li>
@@ -47,7 +97,9 @@
     <main>
       <section id="about-me">
         <h2>About Me</h2>
-        <p>I'm a current student at Technigo - learning the craft to code at their Web Development Boot Camp Spring 2023</p>
+        <p>Hey, my name is Ylva and I have a background working with horse-business, sales and E-commerce. 
+          With previous experience in mind I'm a flexible, trustworthy and ambitious person with an attitude towards life that nothing is impossible but some things just takes more time to learn.
+          I'm a current student at Technigo - learning the craft to code at their Web Development Boot Camp Spring 2023</p>
         </section>
 
         <section id="accordion-for-pro-and-cons">
@@ -76,7 +128,9 @@
     <!--PROJECTS-->
     <!--might change this to a div instead-->
       <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <h2 class="text-medium">Projects</h2>
+        <h2 class="text-black">Projects</h2>
+        <h2 class="text-bold">Projects</h2>
         <ul>
           <li>
             <h3>Project 1</h3>
@@ -89,6 +143,11 @@
         </ul>
       </section>
       
+      <button class="read-more-button">
+        <span class="icon">🌸</span>
+        <p>Read more</p>
+      </button>
+
       <!--MY ARTICLES - might use this or not-->
       <section class="my-words"> <!--entire section laout is "grid" 2x2-->
         <h2>My words</h2>
@@ -140,24 +199,23 @@
         Upcoming...
     </div>
 
-    <h2>Skills</h2>
+    <h2 class="skills-h2">Skills</h2>
         <ul>
             <li>
-                <h6>Code</h6>
+                <h6 class="skills-code">Code</h6>
             </li>
             <li>HTML5</li>
-            <li>CSS3</li>
+            <li><p>CSS3</li>p><ul><li>Flexbox</li><li>CSS Grid</li></ul></li>
+            
             <li>JavaScript ES6</li>
             <li>Flexbox</li>
             <li>CSS Grid</li>
             <li>Web Accessibility</li>
             <li>APIs</li>
-            <li>Mob-programming</li>
-            <li>Pair-programming</li>
         </ul>
         <ul>
             <li>
-                <h6>Toolbox</h6>
+                <h6 class="skills-toolbox">Toolbox</h6>
             </li>
             <li>Jira</li>
             <li>Trello</li>
@@ -169,7 +227,7 @@
         </ul>
         <ul>
             <li>
-                <h6>More</h6>
+                <h6 class="skills-more">More</h6>
             </li>
             <li>E-commerce Management</li>
             <li>CMS</li>
@@ -183,7 +241,7 @@
         </ul>
         <ul>
             <li>
-                <h6>Upcoming</h6>
+                <h6 class="skills-upcoming">Upcoming</h6>
             </li>
             <li>Redux</li>
             <li>Node.js</li>

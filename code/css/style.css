@@ -4,7 +4,58 @@
 /*red = main*/
 /*blue = other elements*/
 
-/*IMPORT FONT*/
+/*FONTS*/
+@import url('css/satoshi.css'); /*Satoshi*/
+@import url('css/ebgaramond.css'); /*EB Garamond*/
+
+/*Font-classes for Satoshi - MIGHT NOT NEED THESE - will comment them out for now*/
+/* .text-bold {
+	font-family: SatoshiBold;
+  }
+
+.text-medium {
+	font-family: SatoshiMedium;
+  }
+
+.text-black {
+	font-family: SatoshiBlack;
+  } */
+
+/*CODE COPIED FROM DESIGN IN FIGMA - not sure where to put it all yet*/
+/* Primary */
+
+/* position: absolute;
+width: 57px;
+height: 22px;
+left: 93px;
+top: 173px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+/* color: #6D6D6D; */
+
+/*-----------------------*/
+  /* Secondary */
+
+/* position: absolute;
+width: 78px;
+height: 22px;
+left: 93px;
+top: 293px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+color: #6D6D6D; */
 
 body {
     border: solid orange 5px; /*this will be deleted later*/
@@ -56,10 +107,49 @@ section {
 	margin-bottom: 40px;
 }
 
+/*styling for the READ MORE-button*/
+.read-more-button {  
+    border-radius: 40px;
+    padding: 0 20px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+		gap: 16px;   
+}
+
+.read-more-button p {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Satoshi', sans-serif;
+    color: white;
+}
+
+.read-more-button .icon {
+    border: 1px solid red; /*just for checking alignment*/
+}
+/*-----------Styling for the READ MORE-button finishes here--------*/
+
 /*added a blue border around the skills section to see how it works out*/
 .skills {
     border: solid blue 5px; /*this will be deleted later*/
     display: grid 1fr 1fr 1fr 1fr auto;
+}
+
+.skills-code {
+background: #EB5577; /*this is the right HEX-color from the design provided*/
+}
+
+.skills-toolbox {
+background: #2483E0; /*this is the right HEX-color from the design provided*/
+}
+
+.skills-more {
+	background: #0B24F5; /*this is the right HEX-color from the design provided*/
+}
+
+.skills-upcoming {
+	background: #6DB486; /*this is the right HEX-color from the design provided*/
 }
 
 .shadowbox {
@@ -68,7 +158,7 @@ section {
     border: 1px solid #333;
     box-shadow: 8px 8px 5px #444;
     margin: 10px;
-    : 8px 12px;
+    padding: 8px 12px;
     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
   }
 
@@ -99,7 +189,7 @@ section {
     display: none;
     overflow: hidden;
   }
-  /*Styling for accordion finishes here */
+  /*-----------Styling for accordion finishes here--------*/
 
 h2 {
 	margin: 0 0 10px 0;
@@ -154,3 +244,19 @@ footer {
 	padding: 20px;
 	text-align: center;
 }
+
+/*MEDIA QUERIES*/
+  
+  /* Screens that are 992px or less*/
+  @media screen and (max-width: 992px) {
+	body {
+	  background-color: blue;
+	}
+  }
+  
+  /* Screens that are 600px or less */
+  @media screen and (max-width: 600px) {
+	body {
+	  background-color: olive;
+	}
+  }
