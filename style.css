@@ -317,10 +317,6 @@ body {
   padding-bottom: 48px;
 }
 
-.blog-container {
-  display: flex;
-}
-
 .date-text {
   font-family: "Satoshi", sans-serif;
   color: #eb5577;
@@ -397,6 +393,10 @@ body {
     justify-content: center;
   }
 
+  .logo {
+    flex-basis: fit-content;
+  }
+
   .header {
     display: flex;
     margin: 0px 102px;
@@ -470,6 +470,13 @@ body {
 
   .live-link-project {
     margin-top: 24px;
+  }
+
+  .blog-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: auto 60px;
   }
 
   .footer-title {
@@ -661,7 +668,7 @@ body {
   .blog-container {
     display: flex;
     flex-direction: row;
-    gap: 88px 32px;
+    gap: 70px;
     margin: auto 60px;
   }
 
@@ -673,9 +680,9 @@ body {
   }
 
   .blog-image {
-    display: flex;
-    width: 540px;
     height: 340px;
+    object-fit: cover;
+    width: 100%;
   }
 
   .date-text {
@@ -701,7 +708,6 @@ body {
   #moreList,
   #toolboxList,
   #upcomingList {
-    display: flex;
     flex-direction: column;
     text-align: start;
   }
