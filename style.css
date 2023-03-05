@@ -24,19 +24,25 @@
 body {
     font-family: SatoshiBold;
     background-color: white;
+    width: 100%;
 }
 
 .top-container {
     background-color: rgb(255, 244, 210);
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 6fr;
+    
     padding: 10px;
     grid-gap: 5px;
 }
 
-    .top-container h3 {
+.top-container p {
+    margin-left: 10px;
+    margin-right: 10px;;
+}
+
+    .top-container h3  {
         color: rgb(204, 157, 255);
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .frontend-developer {
@@ -51,6 +57,8 @@ body {
         font-family: 'EB Garamond', serif;
     }
 
+
+    
     .links {
         display: flex;
         background: rgb(255, 244, 210);
@@ -105,10 +113,15 @@ body {
         color:rgb(255, 244, 210);
     }
 
+    li {
+        list-style-type: none;
+    }
+
     .h-skills{
         display: grid;
         background: rgbrgb(229, 209, 250);
         padding: 25px;
+        margin-bottom: 50px;
     }
 
     .js-mark {
@@ -126,9 +139,17 @@ body {
     grid-gap: 5px;
 }
 
+.picture img {
+    width:280px;
+    height:100%;
+}
+
 .projects h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-content: center;
     font-size: 48px;
-    color: #fa8072;
+    color: salmon;
 }
 
 .HTML5 {
@@ -157,15 +178,20 @@ body {
     background-color: black;
     color: white;
 }
+
+.skills-listed h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-content: center;
+    font-size: 48px;
+    color: salmon;
+}
+
     .p-1 {
         display: grid;
         background: rgb(255, 244, 210);
         padding: 10px;
     }
-
-        .p-1 img {
-            display: grid;
-        }
 
     .p-2{
         display: grid;
@@ -211,10 +237,8 @@ body {
         background-color: rgb(120, 120, 255);
     }
 
-.picture img {
-    width: 184px;
-    height: 280px;
-}
+
+
 a {
 text-decoration: none;
 padding-left: 5px;
@@ -222,18 +246,30 @@ padding-left: 5px;
 
 .my-words {
     background: rgb(236, 242, 255);
+    color: #fa8072;
+    font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: 1fr;
     padding: 10px;
     grid-gap: 5px;
+}
+
+.my-words p {
+ color: black;
+ font-family: 'EB Garamond', serif;
+}
+
+.my-words img {
+    margin-top: 30px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skills-listed {
     background: rgb(227, 223, 253);
     display: grid;
-    grid-template-columns: 1fr;
     padding: 10px;
-    grid-gap: 5px;
     font-family: 'EB Garamond', serif;
 }
 
@@ -282,15 +318,13 @@ padding-left: 5px;
  .time-to-talk {
     background: rgb(255, 244, 210);
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    padding: 0px;
-    grid-gap: 0px;
+    font-family: Arial, Helvetica, sans-serif;
     }
 
     .name-title-contact {
         display: grid;
-        grid-template-columns: 1fr ;
+        justify-content: center;
+        
     }
 
         .contact1  {
@@ -334,44 +368,48 @@ padding-left: 5px;
      .number-email {
         display: grid;
         justify-content: center;
-        font-size: larger;
+        font-size: 16px;
         margin-bottom: 20px;
+        margin-left: 10px;
      }
 
      .number-email h3 {
         color: black;
      }
 
-     @media only screen and (min-width: 768px) {
-        /* tablet */
-        body {
-            width: 744px;
-        }
-        .top-container {
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr;
-        }
+ @media only screen and (min-width: 768px) {
+    /* tablet */
+    body {
+        width: 744px;
+    }
         
-            .presentation {
-                align-items: center;
-                justify-content: center;
-            }
+    .top-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
         
-        /*Picture that only shows when tablet or desktop*/
-            .picture-big {
-                display: grid;
-            }
+.presentation {
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+}
+        
+    /*Picture that only shows when tablet or desktop*/
+.picture-big {
+     display: grid;
+ }
 
-            .sky {
-                width: 100%;
-                max-width: 744px;
-                height: 412px;
-            }
+.sky {
+    width: 100%;
+    max-width: 744px;
+    height: 412px;
+    }
 
-            .emilia-img {
-                   display:flex;
-                }
+.emilia-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
     .h-skills {
         margin-bottom: 100px;
@@ -381,14 +419,41 @@ padding-left: 5px;
 
 .p-1{
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 2fr;
 grid-template-rows: 1fr ;
 }
 
+.p-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr ;
+    }
+
+.p-3{
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: 1fr ;
+}    
+
+.p-4{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr ;
+    }
+.p-5{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr ;
+    }
 
 .picture{
     grid-row: 2;
     grid-column: 1;
+}
+
+.picture img {
+    width: 184px;
+    height: 280px;
 }
 
 .p-div{
@@ -401,15 +466,70 @@ grid-template-rows: 1fr ;
     grid-column: 1;
 }
 
+.words{
+    margin: 100px;
+}
+
+.my-words img {
+    width: 564px;
+    height: 340px;
+}
+
+.name-title-contact{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+.emilia-img2 {
+    margin-left: 100px;
+}
+
+}
+@media only screen and (min-width: 992px) {
+/* desktop normal */
+body {
+    width: auto;
+}
+.top-container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.picture-big{
+width: 100%;
+}
+
+.picture img {
+    width: 280px;
+    height: 280px;
+    margin-right: 20px;
+}
+.p-1{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.p-2{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.p-3{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.p-4{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.p-5{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
 
 }
       
-      @media only screen and (min-width: 992px) {
-        /* desktop normal */
-      }
-      
-      @media only screen and (min-width: 1200px) {
-        /* desktop large */
-      }
-
+@media only screen and (min-width: 1200px) {
+/* desktop large */
+}
     
