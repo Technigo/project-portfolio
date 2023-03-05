@@ -152,6 +152,7 @@ p {
   font-size: 3rem;
   font-family: "Satoshi-bold", sans-serif;
   color: #0b24f5;
+  width: fit-content;
 }
 
 /* Hero Section*/
@@ -162,6 +163,7 @@ p {
   flex-direction: column;
 }
 .hero-image {
+  display: none;
   width: 100%;
   height: 412px;
   background-color: pink;
@@ -193,7 +195,7 @@ p {
 
 .socials-links ul {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   padding: 0;
 }
 
@@ -204,7 +206,8 @@ p {
 .socials-links li svg {
   fill: #d0d0d0;
 }
-.socials-links li svg:hover {
+.socials-links li svg:hover,
+.socials-links li svg:focus {
   fill: #171717;
 }
 
@@ -324,7 +327,13 @@ p {
 }
 
 .blog-container {
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 2rem 0;
+}
+
+.blog-post {
+  margin: 0 0 2rem 0;
 }
 
 .blog-post .date {
@@ -353,11 +362,10 @@ p {
 /* Skills */
 
 .skills {
-  background-color: #fdf2e4;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  background-color: #fdf2e4;
   padding: 2rem 2rem;
 }
 .skills h3 {
@@ -375,7 +383,14 @@ p {
 }
 
 .skill-block {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.skill-block > * {
+  justify-self: center;
   display: flex;
+  width: fit-content;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem 0;
@@ -433,4 +448,62 @@ footer .footer-info p {
   font-family: "Satoshi-bold", sans-serif;
   font-size: 1.5rem;
   padding: 1.5rem 0;
+}
+
+/* media querries */
+
+@media screen and (min-width: 744px) {
+  .hero-image {
+    display: block;
+  }
+  .hero-text {
+    margin: 2rem 0;
+  }
+
+  .socials-links ul {
+    justify-content: start;
+    margin: 2rem 1rem;
+  }
+
+  .tech {
+    margin: -3rem 0 0 0;
+  }
+
+  .feat-project {
+    margin: 4rem 0 2rem 0;
+  }
+
+  .skill-block {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 5rem;
+  }
+  .skill-block > * {
+    align-items: start;
+    justify-self: start;
+  }
+
+  .skills ul[role="list"] {
+    align-items: start;
+  }
+  .name-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+  .name-info {
+    width: fit-content;
+  }
+  .name-info > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer-info p {
+    padding: 0.2rem;
+  }
 }
