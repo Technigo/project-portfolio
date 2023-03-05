@@ -45,11 +45,9 @@
     min-height: 960px;
 }
 
-.header-image {
-    width: 100%;
-    height: auto;
+.header-image img {
     display: none;
-}
+} 
 
 .profile-picture {
     display: flex;
@@ -130,14 +128,6 @@ p {
 }
 
 
-.visually-hidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    width: 1px;
-    height: 1px;
-    white-space: nowrap;
-  }
   
 
 /*///////// new section - tech /////////////*/
@@ -338,7 +328,7 @@ p {
     font-family: satoshiBold;
     font-size: 20px;
     line-height: 27px;
-    color: #EB5577;
+    color: #87122D;
     margin-top: 40px;
     margin-bottom: 4px;
 }
@@ -470,25 +460,29 @@ ul {
   
     .header-image-container {
         display: flex;
-        
+        object-fit: cover;   
+            
     }
 
-    .header-image { /*need to fix this */
-        display: flex; 
-        height: 400px;
-    } 
+    /*FIX THIS IMAGE LATER */
 
+    .header-image img { 
+        display: flex; 
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        aspect-ratio: 1/0.3;
+    }  
+
+  
     .profile-picture img {
         min-width: 164px;
         height: auto;
-        /* max-width: 100%;
-        height: auto; */
         border-radius: 50%;
         margin-top: 81px;
         margin-left: 102px;
         margin-bottom: 32px;
         margin-right: unset;
-        /* check the dimensions here */
         overflow: hidden;
      }
 
@@ -496,6 +490,17 @@ ul {
         display: flex;
         flex-direction: row;
      }
+
+
+
+     /* .grid-parent-big-news {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        border: 5px solid rgb(100, 132, 169);
+        overflow: hidden;
+      } */
+
 
      .header-text {
         margin-top: 106.5px;
@@ -606,7 +611,8 @@ ul {
     }
 
     .title-time-to-talk {
-        margin-top: 196px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -626,9 +632,8 @@ ul {
 
     /*new section - header*/
 
+    /* THIS IS THE LAST THING I TRIED 
     header {
-        /* display: grid;
-        grid-template-columns: 1fr 1fr; */
         display: flex;
         flex-direction: row-reverse;
         height: 980px;
@@ -646,14 +651,11 @@ ul {
       .profile-picture img {
         min-width: 164px;
         height: auto;
-        /* max-width: 100%;
-        height: auto; */
         border-radius: 50%;
         margin-top: 81px;
         margin-left: 102px;
         margin-bottom: 32px;
         margin-right: unset;
-        /* check the dimensions here */
         overflow: hidden;
      }
 
@@ -664,6 +666,43 @@ ul {
         flex-basis: 50%;
         margin: 0;
      }
+THIS IS THE LAST THING I TRIED */
+
+     header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        ;
+        /* align-items: center; */
+     }
+
+     .header-image-container {
+        display: flex;
+        object-fit: cover;
+     }
+
+     .header-image img {
+        display: inline;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+     }
+
+     /*
+     .header-image {
+        display: flex;
+        object-fit: cover;
+        width: 200px;
+     } */
+
+
+     /* .grid-parent-big-news {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        border: 5px solid rgb(100, 132, 169);
+        overflow: hidden;
+      } */
+
 
      .header-text {
         margin-top: 106.5px;
@@ -739,7 +778,8 @@ ul {
     }
 
     .title-time-to-talk {
-        margin-top: 196px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
