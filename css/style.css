@@ -33,7 +33,15 @@ body {
     display: none;
 }
 
-.introduction,
+.introduction{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    padding-bottom: 71px;
+
+}
 .scroll,
 .tech,
 .featured-projects,
@@ -47,10 +55,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+.introbox{
+    padding-left: 24px;
+    padding-right: 24px;
 
-.introduction {
-    background-color: #F5F5F5;
-    padding-bottom: 71px;
 }
 
 .scroll {
@@ -129,6 +137,10 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 48px;
+}
+.top-media-links svg:hover{
+    fill: #000000;
+   
 }
 
 .scroll-icons {
@@ -565,7 +577,6 @@ h5 {
         height: auto;
         object-fit: cover;
 
-
     }
 
     .introbox {
@@ -677,7 +688,8 @@ h5 {
 }
 
 /***************responsive design for destop normal************/
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-device-width: 1025px) { 
+
     .wraptop {
         display: flex;
         flex-direction: row-reverse;
@@ -695,12 +707,14 @@ h5 {
         object-fit: cover;
     }
 
+
     .introbox {
         display: flex;
         flex-direction: column;
         width: 48%;
         align-items: center;
         justify-content: center;
+        margin: 252px 45px 300px 55px;
     }
 
     .intro-detail {
@@ -717,13 +731,13 @@ h5 {
         margin-left: 29px;
 
     }
-
+/* 
     .summarybox {
         margin-top: 57px;
         margin-left: 85px;
         margin-right: 55px;
 
-    }
+    } */
 
     .top-media-links ul {
         display: flex;
@@ -823,10 +837,7 @@ h5 {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 33px 33px 33px 33px;
         grid-auto-flow: row;
-        margin-left: 200px;
-        margin-right: 200px;
-        margin-bottom: 218px;
-        margin-top: 81px;
+        margin: 81px 230px 218px 230px;
     }
    
     .time-to-talk h1{
@@ -836,13 +847,44 @@ h5 {
         margin-bottom: 175px;
     }
 
-
-
-
-
 }
 
 /***************responsive design for destop large************/
-@media only screen and (min-device-width: 1025px) {
 
-}
+
+@media only screen and (min-device-width: 1281px) {
+    .introbox{
+        margin: 252px 157px 300px 103px;
+    }
+    
+    .tech-text {
+        margin: 356px 346px 350px 346px;
+    }
+    .featured-projects>:first-child {
+      
+        margin-left: 346px;
+    }
+    .project {
+        
+        margin-right: 346px;
+        margin-left: 346px;
+    }
+    .myWordSection>:first-child {
+      
+        margin-left: 143px;
+    }
+
+    .wrapMyWords{
+    
+        margin-left: 143px;
+        margin-bottom: 143px;
+
+    }
+    .my-skills h2{
+        margin-top: 120px;
+    }
+    .my-skills {
+        margin: 81px 346px 218px 346px;
+    }
+   
+} 
