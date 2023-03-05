@@ -8,5 +8,7 @@ I decided to use flexbox for the project. I had som trouble in the beginning wit
 
 Sometimes it was hard using flexbox and the content did not want to end up where I wanted. To solve this I read up on flex-box commands and tried several times and eventually it worked. I had som trouble with the buttons. I first had the buttons nested inside an anchor tag but that was bad for accessibility, I eventually asked in the code help channel and got a tip of using form instead and that worked. It was a time-consuming but fun project!
 
+I am aware that the arrow in the header is not perfect contrast-wise when viewed in the desktop. It was difficult to fint a color that harmonized with the two sections and the general colorscheme. 
+
 # View it live
 https://unique-kheer-221462.netlify.app/ 

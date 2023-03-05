@@ -211,15 +211,22 @@
     width: 19px;
     height: 30px; 
     filter: brightness(0) saturate(100%) invert(84%) sepia(0%) saturate(956%) hue-rotate(164deg) brightness(81%) contrast(94%);
+    animation: bounce 1.5s infinite alternate;
+  }
+
+  @keyframes bounce {
+  0%   {transform: translateY(0);}
+  100% {transform: translateY(10px);}
   }
   
-  .arrow-scroll p {
+  .arrow-scroll a {
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
     line-height: 22px;
     color: #aaaaaa;
+    text-decoration: none;
   }
 
   .titles {
