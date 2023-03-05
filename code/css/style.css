@@ -11,6 +11,11 @@
     src: url('./Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.ttf') format('truetype');
   }
 
+  @font-face {
+  font-family: SatoshiBold;
+  font-weight: bold;
+  src: url("./Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf");
+}
 
   :root {
     --primary-color: rgb(227, 227, 233);
@@ -45,7 +50,9 @@ body {
     padding: 0;
 }
 
-
+section {
+    display: block;
+  }
 
 h1 {
     font-family:  'SatoshiVariable';
@@ -205,6 +212,118 @@ p {
 }
 
 
+/* FEATURED PROJECTS */
+
+:root {
+    --featured-proj-width: 800px;
+  }
+  
+ 
+  .featured-projects {
+    display: flex;
+    flex-direction: column;
+    margin: var(--side-margins-mobile);
+  }
+
+  .featured-projects h1 {
+    color: var(--heading-blue);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 50px auto;
+}
+  
+  .project-image-1 {
+    max-height: 350px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+  }
+  
+  .project-container-text {
+    background-color: var(--standard-white-color);
+    margin-top: 20px;
+  }
+  
+  .featured-projects h1 {
+    color: var(--heading-blue);
+    margin-bottom: 30px;
+    text-align: center;
+}
+  
+  .project-container-text p {
+    font-family: "EB Garamond";
+    margin: 10px auto 25px auto;
+  }
+
+  .code-tags {
+    margin: 10px 0 20px 0;
+  }
+  
+  .code-tags p {
+    font-family: "SatoshiMedium";
+    font-size: 16px;
+    display: inline;
+    background-color: black;
+    color: white;
+    margin: 0 2px;
+    padding: 2px 5px;
+  }
+  
+  .project-links {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .project-links button {
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    max-height: 45px;
+    margin: 10px 5px 5px 5px;
+    padding: 7px 10px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .view-code-button {
+    width: 190px;
+    height: 48px;
+    font-size: 16px;
+  }
+  .live-demo-button {
+    width: 164px;
+    height: 48px;
+    font-size: 16px;
+  }
+  .live-demo-button:hover {
+    background-color: var(--hover-blue);
+    color: white;
+  }
+  
+  .view-code-button:hover {
+    background-color: #5b6d5b;
+    color: white;
+  }
+  
+  .project-links button .icons {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .project-links button i {
+    font-size: 30px;
+    padding: 7px;
+    margin: 5px;
+  }
 
 
 /* DESKTOP */
