@@ -222,6 +222,38 @@ a:visited {
   width: 50vw;
 }
 
+/* LETS SCROLL ANIMATION */
+
+.scroll-icon {
+  margin-bottom: 25rem;
+  z-index: 1;
+}
+
+.scroll-icon img {
+  width: 150px;
+}
+
+.scroll-icon {
+  position: relative;
+  -webkit-animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 5px;
+  }
+  25%,
+  75% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
 /* TECH SECTION */
 
 .section-tech {
@@ -229,6 +261,7 @@ a:visited {
   width: 100%;
   background: #ffe1df;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -239,6 +272,7 @@ a:visited {
   align-items: center;
   text-align: center;
   width: 50%;
+  position: absolute;
 }
 
 .section-title {
@@ -353,6 +387,7 @@ a:visited {
 
 .my-words {
   background-color: #ffe1df;
+  padding: 11vh 0;
 }
 
 .articles h1 {
@@ -605,6 +640,13 @@ ul {
     margin-top: 3vw;
   }
 
+  /* LETS SCROLL ANIMATION */
+
+  .scroll-icon img {
+    width: 100px;
+    margin-bottom: -2rem;
+  }
+
   /* TECH SECTION */
 
   .section-tech {
@@ -781,6 +823,12 @@ ul {
     margin-top: 3vw;
   }
 
+  /* LETS SCROLL ANIMATION */
+
+  .scroll-icon img {
+    margin-bottom: 3rem;
+  }
+
   /* TECH SECTION */
 
   .section-tech {
@@ -801,6 +849,10 @@ ul {
   .featured-projects-headline {
     width: 100%;
     text-align: center;
+  }
+
+  .featured-projects {
+    margin: 10vw 0vw;
   }
 
   .frame {
@@ -847,6 +899,10 @@ ul {
   }
 
   /* MY WORDS */
+
+  .my-words {
+    padding: 8vh 0;
+  }
 
   .article img {
     max-width: 250px;
