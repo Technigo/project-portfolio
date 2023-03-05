@@ -525,7 +525,6 @@ a:active {
 .skills-section {
   background: #fdf2e4;
   padding-top: 64px;
-  padding-bottom: 137px;
 }
 
 .skills-section h1 {
@@ -536,17 +535,34 @@ a:active {
   line-height: 108px;
   text-align: center;
   color: #0b24f5;
+  padding-bottom: 64px;
 }
 
 .skills-categories-category {
-  padding-top: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  list-style-type: none;
+  padding: 0;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
 }
 
-.skills-categories-category-title-code {
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  padding-bottom: 96px;
+}
+
+.skills-list h3 {
   display: flex;
   flex-direction: row;
   font-family: "Satoshi";
@@ -554,36 +570,20 @@ a:active {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  background: #eb5577;
   color: #ffffff;
+  gap: 16px;
 }
-
-.skills-categories-category-title-toolbox {
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  background: #2483e0;
-  color: #ffffff;
+.skills-list .code {
+  background-color: #eb5577;
 }
-.skills-categories-category-title-more {
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  background: #0b24f5;
-  color: #ffffff;
+.skills-list .toolbox {
+  background-color: #2483e0;
 }
-.skills-categories-category-title-upcoming {
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  background: #6db486;
-  color: #ffffff;
+.skills-list .more {
+  background-color: #0b24f5;
+}
+.skills-list .upcoming {
+  background-color: #6db486;
 }
 
 .skills-categories-category-list {
