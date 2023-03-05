@@ -390,10 +390,6 @@ body {
 /* Tablet */
 
 @media screen and (min-width: 667px) and (max-width: 1024px) {
-  .top-section {
-    display: flex;
-  }
-
   .logo-container {
     display: flex;
     height: 412px;
@@ -509,31 +505,58 @@ body {
     gap: 32px;
     margin: 168px 0px;
   }
+}
+/* Desktop */
 
-  @media screen and (min-width: 1024px) {
-    .top-section {
-      display: flex;
-      flex-direction: row-reverse;
-      flex-wrap: wrap;
-    }
+@media (min-width: 1024px) {
+  .top-section {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
 
-    .header {
-      display: flex;
-      flex-basis: 50%;
-      height: 980px;
-      margin: 0px;
-    }
+  .header {
+    flex-basis: 50%;
+    height: 980px;
+    margin: 0px;
+    justify-items: center;
+    padding: 252px 55px 297px 45px;
+  }
 
-    .logo-container {
-      display: flex;
-      flex-basis: 50%;
-      height: 980px;
-      background: blue;
-      justify-content: center;
-    }
+  .header-image-and-text {
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+  }
 
-    .logo {
-      align-self: center;
-    }
+  .header-image {
+    display: block;
+  }
+
+  .header-text {
+    text-align: start;
+    margin-top: 24px;
+  }
+
+  .presentation {
+    line-height: 29px;
+  }
+
+  .socialmedia-icons {
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 32px;
+    padding: 40px 0px;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-basis: 50%;
+    background: blue;
+    justify-content: center;
+  }
+
+  .logo {
+    align-self: center;
   }
 }
