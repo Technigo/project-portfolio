@@ -61,7 +61,7 @@ body {
 
 .contact-me {
     display: flex;
-    margin: 24px 0 24px 0;
+    margin: 24px 0 12px 0;
 }
 
 .icon {
@@ -76,7 +76,6 @@ body {
 }
 
 .scroll {
-    margin: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,6 +133,24 @@ body {
     margin: 24px;
 }
 
+.tech mark {
+    color: #FFFFFF;
+    padding: 2px;
+    gap: 8px;
+  }
+
+.pink-bg-text {
+    background-color: #EB5577;
+  }
+  
+  .blue-bg-text {
+    background-color: #0B24F5;
+  }
+  
+  .light-blue-bg-text {
+    background-color: #2483E0;
+  }
+
 /*** SECTION: FEATURED PROJECTS ***/
 .featured-projects {
     margin-left: 24px;
@@ -142,7 +159,7 @@ body {
     margin: 24px 24px 24px 0;
 }
 
-.Project1, .Project2, .Project3, .Project4 {
+.project {
     margin-top: 24px;
 }
 
@@ -214,57 +231,40 @@ body {
     color:white;
 }
 
-.my-words {
-    background-color: #FCEDEA;
-}
-
-.my-words h2 {
-    font-family: 'Satoshi-Variable';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 97px;
-    color: #EB5577;
-    margin: 24px;
-}
-
 .skills {
     background-color: #FDF2E4;
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
+    text-align: center;
 }
 
 .skills-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
+    gap: 66px;
+    padding-bottom: 96px;
 }
 
 .skills h2 {
-    font-family: 'Satoshi-Variable';
-    font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 108px;
     color: #0B24F5;
-    text-align: center;
     margin: 24px;
 }
 
 .skills h3 {
-    font-family: 'Satoshi-Variable';
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     color: #FFFFFF;
-    width:fit-content;
     padding: 2px;
     margin: 10px;
     text-align: center;
 }
 
-.skills p {
+.skills li {
     text-align: center;
     font-family: 'EB Garamond';
     font-style: normal;
@@ -389,7 +389,11 @@ footer h2 {
         margin: 24px;
     }
 
-    .Project1, .Project2, .Project3, .Project4 {
+    .tech p {
+        width: 75%;
+    }
+
+    .project {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -409,7 +413,9 @@ footer h2 {
     .skills-container {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin: 0 48px 0 48px;
     }
 
     footer {
@@ -495,17 +501,25 @@ footer h2 {
     .scroll {
         position: absolute;
         left: 51%;
-        top: 80%;
+        top: 85%;
         margin-left: -50px;
         margin-top: -50px;
     }
 
     .tech {
-        padding: 140px 60px 140px 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 180px 90px 180px 90px;
     }
 
     .tech h2 {
         margin: 24px;
+    }
+
+    .tech p {
+        width: 75%;
     }
 
     .featured-projects {
@@ -515,17 +529,12 @@ footer h2 {
         align-items: center;
     }
 
-    .Project1, .Project2, .Project3, .Project4 {
+    .project {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-    }
-
-    .featured-projects img {
-        width: 184px;
-        height: 280px;
-        object-fit: cover;
+        justify-content: center;
     }
 
     .featured-projects button {
@@ -535,7 +544,9 @@ footer h2 {
     .skills-container {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin: 0 48px 0 48px;
     }
 
     footer {
