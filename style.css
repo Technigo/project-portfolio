@@ -5,9 +5,9 @@
 }
 
 header {
-  height: 100vh;
-  padding-bottom: 98px;
-  padding-top: 55px;
+  padding-bottom: 6em;
+  min-height: 100vh;
+  
 }
 
 h2 {
@@ -18,13 +18,26 @@ h2 {
   margin-bottom: 90px;
 }
 
+h3 {
+  font-family: "Satoshi-Black";
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-family: "EB Garamond", serif;
+  font-size: 22px;
+  line-height: 29px;
+}
+
 .info-wrapper {
   width: 327px;
+  padding-top: 3em;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -33,11 +46,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-self: center;
-}
-
-.personal-info h3,
-h4 {
-  margin-top: 0.3em;
 }
 
 .profile-picture {
@@ -63,30 +71,17 @@ h4 {
   margin-bottom: 4px;
 }
 
-h3 {
-  font-family: "Satoshi-Black";
-  font-size: 32px;
-  line-height: 38px;
-  margin-bottom: 0.5em;
-}
-
-h4 {
+.second-tagline {
   font-family: "Satoshi-Medium";
   color: #565656;
   font-size: 24px;
-  margin-bottom: 55px;
+  margin-bottom: 1em;
 }
 
 .scroll-text {
   font-family: "Satoshi-Black";
   font-size: 16px;
   text-align: center;
-}
-
-p {
-  font-family: "EB Garamond", serif;
-  font-size: 22px;
-  line-height: 29px;
 }
 
 .social-media-links {
@@ -100,12 +95,12 @@ p {
   filter: brightness(0%)
 }
 
-.scroll {
+.scroll-wrapper {
   display: flex;
   flex-direction: column;
-  text-decoration: underline 3px;
   align-items: center;
   margin: 1rem;
+  text-decoration: underline 3px;
 }
 
 .scroll img {
@@ -306,19 +301,19 @@ margin: unset;
   flex-direction: column;
 }
 
-.skills-list h4 {
-  align-self: center;
+.h4 {
+  font-family: "Satoshi-Bold";
+  font-size: 24px;
+  text-align: center;
 }
 
 .skills-list > div h4 {
+  align-self: center;
   background: #eb5577;
   width: 65px;
   height: 36px;
   padding: 2px;
-  font-family: "Satoshi-Bold";
-  font-size: 24px;
   color: #ffffff;
-  text-align: center;
   margin-top: 66px
 }
 
@@ -646,6 +641,7 @@ header {
   grid-row-start: 1;
   grid-column-start: 1;
   height: 980px;
+  padding-bottom: 0;
 }
 
 .tech-wrapper {
@@ -653,6 +649,21 @@ header {
   flex-direction: row;
   gap: 140px;
   width: 820px;
+}
+
+.pink-mark {
+  background-color: #EB5577;
+  color: white;
+}
+
+.dkblue-mark {
+  background-color: #0B24F5;
+  color: white;
+}
+
+.lghtblue-mark {
+  background-color: #2483E0;
+  color: white;
 }
 
 .featured {
@@ -704,17 +715,14 @@ header {
   gap: 66px;
 }
 
-.skills-list h4 {
-  margin-bottom: 16px;
-  align-self: unset;
-}
-
 .skills-section h2 {
   margin-bottom: 79px;
 }
 
 .skills-list > div h4 {
+margin-bottom: 16px;
 margin-top: 0;
+align-self: unset;
 }
 
 .skills-section li {
