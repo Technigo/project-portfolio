@@ -1,4 +1,4 @@
-Portfolio project for Munther Gustavson 
+Portfolio project. 
 
 We recieved a portfolio design in Figma to use for our own portfolios, with no freedom whatsoever when it comes to layout and design of the elements. We could change colors, fonts and of course images and content.
 
