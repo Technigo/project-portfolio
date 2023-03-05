@@ -11,6 +11,7 @@ body {
     margin: 0;
     width: 100%;
     font-family: Satoshi-Variable;
+    background-color: rgb(242, 242, 236);
 }
 
 .header {
@@ -47,6 +48,15 @@ body {
     align-items: flex-start;
     
 }
+
+img.profile-image {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    height: 164px;
+     min-width: 164px;
+     border-radius: 50%;
+ }
 
 h1 {
     font-weight: bolder;
@@ -89,22 +99,14 @@ h6 {
     margin: 10px 0 10px 0;
 }
 
-img.profile-image {
-   align-self: center;
-   display: flex;
-   justify-content: center;
-   height: 164px;
-    min-width: 164px;
-    border-radius: 50%;
-}
+
 
 .icon-container {
   
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-   
+    align-items: flex-start;
+
   }
 
 
@@ -118,8 +120,8 @@ ul li {
 ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    gap: 55px;
+    align-self: flex-start;
 }
 
 /*.letscroll {
@@ -196,6 +198,7 @@ img.arrow:hover {
     width: 280px;
     height: 280px;
     object-fit: contain;
+    
 }
 
 .blackboxes {
@@ -304,12 +307,25 @@ button:hover {
 
 .contact-container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: 24px 55px 24px 40px;
+    margin: 24px 55px 150px 40px;
     padding: 0%;
     gap: 29px;
+}
+
+.contact  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.information-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* this part has the media queries for TABLET */
