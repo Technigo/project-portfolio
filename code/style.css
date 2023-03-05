@@ -24,6 +24,11 @@ div {
   display: block;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
 .name-and-profilePhoto {
   display: flex;
   flex-direction: column;
@@ -343,6 +348,114 @@ div {
   padding-bottom: 24px;
 }
 
+/* Skills section */
+.skills-section {
+  background-color: #fdf2e4;
+}
+
+.skills-section h2 {
+  font-family: Satoshi-bold;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 108px;
+  text-align: center;
+  color: #0b24f5;
+  margin-top: 0;
+  padding-top: 64px;
+  padding-bottom: 70px;
+}
+
+.skills-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 50px;
+  padding-bottom: 96px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+
+.skills-list h3 {
+  font-family: Satoshi-bold;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 2px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.skills-list li {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  /* or 145% */
+  text-align: center;
+  color: #000000;
+}
+
+/* Time to talk section  */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.time-to-talk {
+  padding-top: 50px;
+  font-family: Satoshi-black;
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 78px;
+  text-align: center;
+  color: #eb5577;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 24px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 56px;
+  margin-bottom: 30px;
+}
+
+.contact-info h3 {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.contact-info h3 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact-info h3 :hover {
+  text-decoration: underline;
+}
+
+.contact {
+  margin-bottom: 100px;
+}
+
 /* Portfolio's Buttons */
 button {
   border-radius: 50px;
@@ -423,13 +536,82 @@ button {
 }
 
 /* MQ for tablet*/
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .intro {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .left {
+    height: 50%;
+    display: flex;
+  }
+  .right {
+    background-image: url(images/logomockup-v2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5% 95%;
+    display: flex;
+    height: 50%;
+  }
+  .signature {
+    width: 235px;
+    height: 120px;
+    position: absolute;
+    bottom: calc(50% - 10px);
+  }
   .project {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
+  }
+  .skills-list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    margin: auto 150px;
+  }
+
+  .skills-list {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .intro {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+  }
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 24px;
+  }
+
+  .signature {
+    width: 235px;
+    height: 120px;
+    position: absolute;
+    bottom: calc(3% - 10px);
+  }
+  .right {
+    background-image: url(images/logomockup-v2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5% 80%;
+    /* background-size: 960px 1100px; */
+    display: block;
+    width: 50%;
   }
 }
 
@@ -447,6 +629,13 @@ button {
     flex-direction: column;
     justify-content: center;
     margin: auto 24px;
+  }
+
+  .signature {
+    width: 235px;
+    height: 120px;
+    position: absolute;
+    bottom: calc(3% - 10px);
   }
 
   .name-and-profilePhoto {
@@ -547,5 +736,22 @@ button {
   .article-image {
     width: 100%;
     height: 340px;
+    object-fit: cover;
+  }
+
+  .skills-list-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 200px;
+  }
+
+  .skills-list {
+    align-self: flex-start;
+  }
+  .contact-info h3 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43px;
   }
 }
