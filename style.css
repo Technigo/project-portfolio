@@ -1,3 +1,5 @@
+/* fonts */
+
 @import url('css/satoshi.css');
 
 @font-face {
@@ -17,19 +19,26 @@
     src: url('./Code/Fonts/OTF/Satoshi-Black.otf');
   }
 
-/*general sections*/
+/* general sections */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
-/* .outer-wrapper {
+
+/* originally I had this
+
+    .outer-wrapper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+*/ 
+
+/* Originally I had this
 
 .inner-wrapper {
     width: 75%;
@@ -37,7 +46,7 @@
     margin: 0;
 } */
 
-/* //////////new section - header/////////// */
+/* new section - header */
 
 
 .header-section {
@@ -130,7 +139,7 @@ p {
 
   
 
-/*///////// new section - tech /////////////*/
+/* new section - tech */
 
 
 .second-page-tech-section {
@@ -169,7 +178,7 @@ p {
     line-height: 32px;
 }
 
-/* ////////////new section - featured projects /////////////*/
+/* new section - featured projects */
 
 .card-container {
    display: flex;
@@ -180,17 +189,6 @@ p {
    margin-left: 24px;
 }
 
-
-
-
-.card-container img {
-    /* max-width: 90%; */
-}
-
-.card-content {
-    /* width: 100%;
-    box-sizing: border-box; */
-}
 
 .title-featured-projects {
     margin: 64px 24px;
@@ -210,9 +208,6 @@ p {
     height: 280px;
     margin-bottom: 40px;
 }
-
-/*need to add space under image*/
-
 
 .project-text h3 { /*Name of project*/
     font-family: SatoshiBold; /* fix the font*/
@@ -246,52 +241,54 @@ p {
     margin-top: 20px;
 }
 
-.link-github {
+.view-code-button {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 24px;
     text-decoration: none;
     font-family: SatoshiRegular;
     font-size: 20px;
     line-height: 27px;
-    background-color: #F5F5F5;
-    width: 200px; height: 48px;
+    color: #000000; 
+    background-color: #F5F5F5; 
+    width: 200px; 
+    height: 48px;
     border-radius: 40px;
+    border: none;
 }
 
-.link-github p {
-    padding: 10.5px 16px 10.5px 7px;
+.view-code-button:hover {
+    color: #FFFFFF;
+    background-color: #EB5577;
+}
+.view-live-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    text-decoration: none;
     font-family: SatoshiRegular;
     font-size: 20px;
     line-height: 27px;
-    color: #000000;
-}
-
-.link-netlify {
-    display: flex;
+    color: #000000; 
+    background-color: #F5F5F5; 
+    width: 164px; 
+    height: 48px;
+    border-radius: 40px;
+    border: none;
     margin-top: 24px;
     margin-bottom: 80px;
-    /* padding: 10.5px 16px 10.5px 55px; */
-    text-decoration: none;
-    font-family: SatoshiRegular;
-    font-size: 20px;
-    line-height: 27px;
-    background-color: #F5F5F5;
-    width: 200px; height: 48px;
-    border-radius: 40px;
-    /* width: 164px;
-    height: 48px; */
-    /* border-radius: 40px; */
 }
 
-.link-netlify p {
-    padding: 10.5px 16px 10.5px 7px;
-    font-family: SatoshiRegular;
-    font-size: 20px;
-    line-height: 27px;
-    color: #000000;
+.view-live-button:hover {
+    color: #FFFFFF;
+    background-color: #0B24F5;
 }
 
-/* //////////new section - my words//////////*/
+
+/* ewn section - my words */
 
 .fourth-page-my-words {
     background-color: #FCEDEA;
@@ -311,18 +308,12 @@ p {
     margin-bottom: 64px;
 }
 
+/* fix sizing of article images for all media queries */
+
 .article img {
     margin-left: 24px;
 }
 
-.link-border {
-    margin-bottom: 98px; /*THIS CAUSES A WHITE BOX*/
-}
-
-
-/* button {
-    margin-bottom: 93px;
-} */
 
 .article-date {
     font-family: satoshiBold;
@@ -342,27 +333,25 @@ p {
 
 }
 
-.link-doc {
+.read-article-button {
     display: flex;
+    align-items: center;
+    text-align: center;
     text-decoration: none;
     margin-top: 34.5px;
     background-color: #FFFFFF;
     width: 178px;
     height: 48px;
     border-radius: 40px;
-
-}
-.link-doc p {
+    border: none;
     font-family: SatoshiRegular;
     font-size: 20px;
     line-height: 27px;
     color:#000000;
-    margin-top: 10px;
-    /* padding: 10.5px 16px 10.5px 7px; */
-
+    margin-bottom: 98px;
 }
 
-/* new section -skills*/
+/* new section - skills */
 
 .fifth-page-my-skills { 
     background-color: #FDF2E4;
@@ -406,7 +395,7 @@ ul {
 
 }
 
-/* //////////new section -time to talk*/
+/* new section - time to talk */
 
 .final-section {
     background-color: white;
@@ -455,7 +444,7 @@ ul {
 
 @media (min-width: 667px) and (max-width: 1024px) {
 
-/*new section - header*/
+/* new section - header */
 
   
     .header-image-container {
@@ -491,17 +480,6 @@ ul {
         flex-direction: row;
      }
 
-
-
-     /* .grid-parent-big-news {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        border: 5px solid rgb(100, 132, 169);
-        overflow: hidden;
-      } */
-
-
      .header-text {
         margin-top: 106.5px;
         margin-left: 29px;
@@ -511,7 +489,7 @@ ul {
         padding-bottom: 50px;
     }
 
-/*new section - tech*/
+/* new section - tech */
 
 
    .tech-info {
@@ -519,7 +497,7 @@ ul {
         margin-right: 122px;
    }
 
-   /*new section - featured projects*/
+   /* new section - featured projects */
 
     .title-featured-projects h3 {
         margin-top: 64px;
@@ -543,18 +521,18 @@ ul {
         flex-direction: row;
     }
 
-    .project-links {
+
+
+    .project-buttons {
         display: flex;
         flex-direction: row;
+        /* flex-direction: row-reverse; this makes it move to the right*/
         margin-top: 40px;
+        gap: 24px;
 
     }
-
-    .link-netlify {
-        margin-left: 24px;
-    }
-
-    /*My words section*/
+ 
+    /* My words section */
 
     .title-my-words {
         margin-left: 25px; /*come back to this later*/
@@ -569,10 +547,10 @@ ul {
 
     article {
         margin-left: 25px; /*come back to this later*/
-        margin-right: auto;
+        margin-right: 25px;
     }
 
-/*new section - skills */
+/* new section - skills */
 
     .my-skills {
         display: flex;
@@ -687,22 +665,6 @@ THIS IS THE LAST THING I TRIED */
         height: 100%;
      }
 
-     /*
-     .header-image {
-        display: flex;
-        object-fit: cover;
-        width: 200px;
-     } */
-
-
-     /* .grid-parent-big-news {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        border: 5px solid rgb(100, 132, 169);
-        overflow: hidden;
-      } */
-
 
      .header-text {
         margin-top: 106.5px;
@@ -710,10 +672,7 @@ THIS IS THE LAST THING I TRIED */
         margin-right: 29px;
     }
 
-
-
-
-     /*new section - Tech */
+     /* new section - Tech */
 
     .second-page-tech-section {
         display: grid;
@@ -723,23 +682,53 @@ THIS IS THE LAST THING I TRIED */
        
     }
 
-
     .tech-info {
         display: flex;
         align-self: center;      
         margin-right: 90px;
         }
 
+    /* new section - featured projects */
 
-    /*new section - My words*/
+
+    .title-featured-projects h3 {
+        margin-top: 64px;
+        font-size: 80px;
+        line-height: 108px;
+        margin-left: 24px;
+    }
+
+    .project-image {
+        width: 184px;
+        min-height: 280px;
+        object-fit: cover;
+        object-position: center center;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .card-content { /*Name/info/tags*/
+        display: flex;
+        flex-direction: row;
+    }
+
+    .project-buttons {
+        display: flex;
+        /* flex-direction: row-reverse; this makes it move to the right */ 
+        margin-top: 40px;
+        gap: 24px;
+    }
+
+    /* new section - My words */
 
     .articles {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 
 
-    /*new section - skills */
+    /* new section - skills */
 
     .my-skills {
         display: flex;
@@ -753,9 +742,9 @@ THIS IS THE LAST THING I TRIED */
         gap: 66px;
     }
 
-    /*new section - time to talk */
+    /* new section - time to talk */
 
-    .profile-picture-again img {
+    .profile-picture img {
         min-width: 164px;
         height: auto;
         border-radius: 50%;
