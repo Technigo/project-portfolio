@@ -1,4 +1,5 @@
 @import url('satoshi.css');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond');
 
 :root {
     --primary: #f8f8f8;
@@ -7,9 +8,10 @@
     /* background colour 2 */
     --tertiary: black;
     /* text color */
-    --quaternary: white;
-    /*Title text colour*/
+    --quaternary: rgb(221, 215, 218);
+    /* button default */
     --quinary: #f49dce;
+    /* accent color */
   
     /*Tech colors*/
     --tech-blue: #0B24F5;
@@ -213,6 +215,7 @@ h1 {
 }
 .projects img {
     width: 90%x;
+    padding-top: 25px;
 }
 
 .projects h3 {
@@ -233,6 +236,48 @@ h1 {
     font-family: 'Satoshi';
     font-size: 16px;
     font-weight: 500;
-    margin: 10px 10px 10px 0;
+    margin: 10px 10px 4px 0;
     padding: 2px 6px;
 }
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-links .button  {
+    background-color: var(--quaternary);
+    color: var(--tertiary);
+    font-family: 'Satoshi';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    border-radius: 30px;
+    max-height: 45px;
+    margin: 10px 5px 5px 0;
+    padding: 7px 15px 7px 10px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.live:hover  {
+    background: var(--quinary);
+    color: var(--secondary);
+}
+
+.git:hover  {
+    background: var(--quinary);
+    color: var(--secondary);
+}
+
+.project-links .button .icons {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+
+  
