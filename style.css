@@ -1,6 +1,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -23,10 +24,20 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .entire-page {
   display: flex;
   flex-direction: column;
 }
+
+/* SECTIONS */
 
 .first-section {
   display: flex;
@@ -35,6 +46,153 @@ body {
   height: 800px;
 }
 
+.tech-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 2;
+  background-color: #edffff;
+  padding-top: 350px;
+  padding-bottom: 350px;
+}
+
+.featured-projects-section {
+  display: flex;
+  order: 3;
+  flex-direction: column;
+  padding-top: 100px;
+  align-items: center;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 4;
+  background-color: #fdf2e4;
+  height: 800px;
+  padding-top: 80px;
+}
+
+.timetotalk-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 5;
+  height: 700px;
+  padding-top: 120px;
+}
+
+/*FONT STYLINGS*/
+
+/*TITLES*/
+.antonia-granit {
+  font-family: SatoshiBold;
+  font-size: 20px;
+  color: #0b24f5;
+}
+
+.black-title {
+  font-family: SatoshiBlack;
+  font-size: 25px;
+}
+
+.digital-designer {
+  font-family: SatoshiMedium;
+  font-size: 17px;
+  color: #565656;
+}
+
+.big-blue-title {
+  font-family: SatoshiBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 108px;
+  color: #0b24f5;
+}
+
+.big-pink-title {
+  font-family: SatoshiBlack;
+  font-size: 90px;
+  line-height: 162px;
+  text-align: center;
+  color: #eb5577;
+  margin-bottom: 75px;
+}
+
+/*BODY TEXT*/
+.paragraph {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 300;
+  color: black;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+/*LINKS AND HIGHLIGHTED TEXT*/
+.pink {
+  background-color: #eb5577;
+  color: white;
+}
+
+.dark-blue {
+  background-color: #0b24f5;
+  color: white;
+}
+
+.light-blue {
+  background-color: #2483e0;
+  color: white;
+}
+
+.code-languages {
+  font-family: SatoshiMedium;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.black {
+  background-color: black;
+  color: white;
+  padding: 2px 6px;
+}
+
+.skills-pink {
+  background-color: #eb5577;
+  color: white;
+  font-family: SatoshiMedium;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.skills-lightblue {
+  background-color: #2483e0;
+  color: white;
+  font-family: SatoshiMedium;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.skills-darkblue {
+  background-color: #0b24f5;
+  color: white;
+  font-family: SatoshiMedium;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.skills-green {
+  background-color: #6db486;
+  color: white;
+  font-family: SatoshiMedium;
+  font-size: 20px;
+  padding: 2px;
+}
+
+/*FIRST SECTION*/
 .left {
   display: flex;
   flex-direction: column;
@@ -57,6 +215,7 @@ body {
   background-image: url(Assets/Technigologo.svg);
 }
 
+/*SCROLL BUTTON*/
 .scroll-icon-div {
   position: absolute;
   width: 138px;
@@ -93,6 +252,7 @@ body {
   flex-direction: row;
   gap: 25px;
   height: 164px;
+  padding-bottom: 20px;
 }
 
 .portrait-photo {
@@ -107,46 +267,6 @@ body {
   justify-content: center;
 }
 
-.antonia-granit {
-  font-family: SatoshiBold;
-  font-size: 20px;
-  color: #0b24f5;
-}
-
-.black-title {
-  font-family: SatoshiBlack;
-  font-size: 25px;
-}
-
-.digital-designer {
-  font-family: SatoshiMedium;
-  font-size: 17px;
-  color: #565656;
-}
-
-.paragraph {
-  font-family: "EB Garamond";
-  font-style: normal;
-  color: black;
-  font-size: 22px;
-  line-height: 32px;
-}
-
-.pink {
-  background-color: #eb5577;
-  color: white;
-}
-
-.dark-blue {
-  background-color: #0b24f5;
-  color: white;
-}
-
-.light-blue {
-  background-color: #2483e0;
-  color: white;
-}
-
 .social-media-icons {
   display: flex;
   align-items: flex-end;
@@ -155,46 +275,22 @@ body {
   height: 40px;
 }
 
-.tech-section {
-  display: flex;
-  flex-direction: column;
-  order: 2;
-  background-color: #edffff;
-  padding: 354px 346px 354px 346px;
-}
+/*TECH SECTION*/
 
 .tech-information {
   width: 820px;
   height: 108px;
-  left: calc(50% - 820px / 2);
   display: flex;
   gap: 143px;
 }
 
-.big-blue-title {
-  font-family: SatoshiBold;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 108px;
-  /* identical to box height */
-  color: #0b24f5;
-}
-
-.featured-projects {
-  display: flex;
-  order: 3;
-  flex-direction: column;
-  padding-top: 200px;
-  padding-left: 346px;
-  width: 820px;
-}
+/*PROJECT SECTION*/
 
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 120px;
-  padding-top: 40px;
+  margin-bottom: 150px;
+  width: 820px;
 }
 
 .project-div {
@@ -202,6 +298,8 @@ body {
   flex-direction: row;
   gap: 40px;
   height: 280px;
+  padding-bottom: 80px;
+  margin-top: 80px;
 }
 
 .project-screenshot {
@@ -209,20 +307,88 @@ body {
   width: 280px;
 }
 
-.code-languages {
-  font-family: SatoshiMedium;
-  font-size: 16px;
-  margin-top: 24px;
-  margin-bottom: 40px;
-}
-
-.black {
-  background-color: black;
-  color: white;
-  padding: 2px 6px;
-}
-
+/*PROJECT BUTTON STYLING*/
 .project-buttons {
   display: flex;
   gap: 40px;
+}
+.project-buttons button .icons {
+  width: 32px;
+  height: 32px;
+}
+.project-buttons button i {
+  font-size: 30px;
+  padding: 7px;
+  margin: 5px;
+}
+.project-buttons button {
+  background-color: #f5f5f5;
+  border-radius: 40px;
+  max-height: 45px;
+  margin: 10px 5px 5px 5px;
+  padding: 7px 10px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.live-demo-button {
+  width: 164px;
+  height: 48px;
+  font-size: 16px;
+}
+.live-demo-button:hover {
+  background-color: #0b24f5;
+  color: white;
+}
+
+.view-code-button {
+  width: 190px;
+  height: 48px;
+  font-size: 16px;
+}
+
+.view-code-button:hover {
+  background-color: #eb5577;
+  color: white;
+}
+
+/*SKILLS SECTION*/
+
+.skills-title {
+  display: flex;
+  margin-top: 121px;
+  justify-content: center;
+  height: fit-content;
+  width: 851px;
+}
+
+.skills-lists {
+  display: flex;
+  justify-content: center;
+  width: 851px;
+  gap: 66px;
+  margin-top: 79px;
+}
+
+ul li {
+  margin-top: 10px;
+  font-family: "EB Garamond";
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/*TIME TO TALK SECTION*/
+
+.contact-info {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+a[href^="mailto:"] {
+  font-family: SatoshiBlack;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
 }
