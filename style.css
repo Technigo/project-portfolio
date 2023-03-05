@@ -13,35 +13,46 @@ body {
     font-family: Satoshi-Variable;
 }
 
-header {
+.header {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   margin: 24px 55px 24px 40px;
+  
    padding: 0%;
    gap: 29px;
    position: relative;
+}
+.top-section {
+    display: flex;
+    flex-direction: column;
 }
 
 .profile-information {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
+    align-items: flex-start;
+    gap: 29px;
+    padding: 0%;
+    margin: 24px 55px 24px 40px;
 }
 
-.desktopimage, .tablet-image {
+.header-container .header-image {
     display: none;
+    
 }
 
-.img.desktop-image {
-    display: none;
+.information-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
 }
 
 h1 {
     font-weight: bolder;
     font-size: 28px;
     color: rgb(60, 80, 169);
+    margin: 10px 0 10px o;
 }
 
 h2 {
@@ -53,6 +64,7 @@ h2 {
 h3 {
     font-weight: 900;
     font-size: 32px;
+    margin: 10px 0 10px 0;
 }
 
 h4 {
@@ -74,6 +86,7 @@ h5 {
 h6 {
     font-size: 24px;
     color: rgb(130, 135, 135);
+    margin: 10px 0 10px 0;
 }
 
 img.profile-image {
@@ -86,12 +99,30 @@ img.profile-image {
 }
 
 .icon-container {
+  
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+   
+  }
+
+
+ul li {
+    display: flex;
+    
+    list-style-type: none;
+    margin-top: 5px;
 }
 
-.letscroll {
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*.letscroll {
     
     display: flex;
     flex-direction: column;
@@ -101,8 +132,6 @@ img.profile-image {
 
 }
 
-
-
 img.arrow {
     margin: 10px;
     padding: 10px;
@@ -111,9 +140,8 @@ img.arrow {
     display: flex;
     margin: 10px;
    
-
 }
-/*making the arrow bounce when pointer hovers over it*/
+making the arrow bounce when pointer hovers over it
 img.arrow:hover {
     animation: bounce 1s infinite alternate;
 }
@@ -122,6 +150,7 @@ img.arrow:hover {
     0%   {transform: translateY(0);}
     100% {transform: translateY(50px);}
   }
+*/
 
 .tech {
     display: flex;
@@ -144,18 +173,17 @@ img.arrow:hover {
 .projects-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
     margin: 50px 24px 50px 24px;
     
-
-
 }
 
 .chatbot, .guess-who, .weatherapp {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
+   
+    margin: 50px 20px 50px 20px;
 }
 
 .chatbot-box, .guess-box, .weather-box {
@@ -164,7 +192,11 @@ img.arrow:hover {
     margin-left: 5px;
 }
 
-
+.image-projects {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+}
 
 .blackboxes {
     display: flex;
@@ -195,7 +227,7 @@ button {
     display: flex;
     align-items: center;
     gap: 7px;
-    padding: 0 16px 0 0;
+    padding: 5px 16px 5px 5px;
     cursor: pointer;
     
    
@@ -203,6 +235,7 @@ button {
 
 a:link {
     text-decoration: none;
+    color: black;
 }
 
 button:hover {
@@ -217,11 +250,47 @@ button:hover {
     position: relative;
 }
 */
+.my-words-title {
+    display: flex;
+   justify-content: center;
+}
 
+.my-words {
+    background-color: lightblue;
+    padding-bottom: 24px;
+}
+
+.my-words-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+   
+}
+
+.my-words-box {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.article-box {
+    width: 327px;
+    height: 340px;
+    object-fit: contain;
+}
+
+.skills-headtitle {
+    display: flex;
+    justify-content: center;
+}
 
 .skills-section {
     display: grid;
     justify-content: center;
+    background-color: blanchedalmond;
 }
 
 .skills-container {
@@ -233,48 +302,55 @@ button:hover {
     text-align: left;
 }
 
-.contact {
+.contact-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
     margin: 24px 55px 24px 40px;
     padding: 0%;
     gap: 29px;
 }
 
-/* this part has the media queries for tablet size */
+/* this part has the media queries for TABLET */
 @media (min-width: 667px) and (max-width: 1024px) {
 
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-container .header-image {
+        display: flex;
+    }
+
+    .header-image {
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+    }
+
+    .top-section {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+        
+    }
+
+   
+   
     .chatbot, .guess-who, .weatherapp {
         flex-direction: row;
     }
-
-    .tablet-image {
-       /* display: flex;
-        justify-content:center;*/
-        display: block;
-        max-width: 1023px;
-        height: 412px;
-        background-image: url("./images/sunsetgreece.jpg");
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-        
-        
-
-    }
-    /* .img.desktop-image { 
-        min-width: 100%;
-        height: auto;
-        object-fit: cover;
-      
-    }*/
-
-    .img.profile-image {
-        display: flex;
-        
-        float: left;
-    }
+    
 
     .button-project {
         display: flex;
@@ -293,7 +369,7 @@ button:hover {
 
 
 
-/* this part has the media queries for desktop size */
+/* this part has the media queries for DESKTOP */
   
 @media (min-width: 1025px) {
 
@@ -301,25 +377,41 @@ button:hover {
     .header {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+       
     }
 
-    .desktop-image {
-        
-        display: block;
-        float: right;
-        background-image: url("./images/sunsetgreece.jpg");
-        background-size: cover;
-        
-        
+    .header-container .header-image {
+        display: flex;
     }
-   
+
+    .top-section {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-basis: 100%;
+        height: 700px;
+    }
+
+    .header-container {
+        display: flex;
+        width: 50%;
+    }
+
+    .header-image {
+        object-fit: cover;
+        height: 980px;
+        overflow: hidden;
+    }
 
    
-
     .profile-information {
         display: flex;
-        float: left;
+        flex-basis: 50%;
         
+        justify-self: flex-start;
+        align-self: center;
     }
 
     .chatbot, .guess-who, .weatherapp {
@@ -343,5 +435,17 @@ button:hover {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 39px 33px;
     }
+    .my-words-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .my-words-box {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
 }
 
