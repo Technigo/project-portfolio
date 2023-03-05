@@ -4,7 +4,7 @@ We were given a design template on Figma and our job was to translate that into 
 
 # The problem
 I think it was hard to know what to start with - so much things to do.
-Tried to split the project into small pieces and started to section-up the page-skeleton with HTM, then moved on with CSS and responsivess. And lastly the accessibility-testing-tingy.
+Tried to split the project into small pieces and started to section-up the page-skeleton with HTML, then moved on with CSS and responsivess. And lastly the accessibility-testing-tingy.
 
 I know there is more work to be done with the site but this is what I managed to come up with this week.
 
