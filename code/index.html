@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property ="og:title" content="Vera's Portfolio"/>
+    <meta property ="og:description" content="The portfolio page of Vera Sjunnesson, student at Technigo"/>
+    <meta property ="og:image" content="https://placehold.co/400"/>
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -11,70 +14,92 @@
 </head>
 <body>
 
+
+    <!-- Header -->
     <header>
+        
         <div class="header-left">
             <div class="header-presentation">
                 <div class="presentation-container">
-                <div class="presentation-image">
-                    <img src="./images/vera-picture.jpeg" alt="picture of Vera Sjunnesson">
+                    <div class="presentation-image">
+                        <img src="./images/vera-picture.jpeg" alt="picture of Vera Sjunnesson">
+                    </div>
+                    <div class="presentation-titles">
+                        <h1>Vera Sjunnesson</h1>
+                        <h2>Frontend developer</h2>
+                        <h3>+ digital designer</h3>
+                    </div>
                 </div>
-                <div class="presentation-titles">
-                    <h1>Vera Sjunnesson</h1>
-                    <h2>Frontend developer</h2>
-                    <h3>+ digital designer</h3>
-                </div>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus nisi maxime fugiat pariatur natus soluta perferendis aut reprehenderit nam tempora magnam placeat earum accusantium, laborum quod delectus beatae dolor facere?</p>
-                <div class="social-media-icons">
-                    <a href="https://www.linkedin.com/in/vera-sjunnesson-8a546a169/" target="_blank"><i aria-label="linkedin" class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Vera-Sjunnesson" target="_blank"><i aria-label="github" class="fa-brands fa-github"></i></a>
-                    <a href="https://stackoverflowteams.com/c/technigo/users/436/" target="_blank"><i aria-label="stack overflow" class="fa-brands fa-stack-overflow"></i></a>
-                    <a href="https://www.facebook.com/vera.sjunnesson" target="_blank"><i aria-label="facebook" class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.instagram.com/verasjunnesson/" target="_blank"><i aria-label="instagram" class="fa-brands fa-instagram"></i></a>
-                </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus nisi maxime fugiat pariatur natus soluta perferendis aut reprehenderit nam tempora magnam placeat earum accusantium, laborum quod delectus beatae dolor facere?</p>
+                    <div class="social-media-icons">
+                        <a href="https://www.linkedin.com/in/vera-sjunnesson-8a546a169/" target="_blank"><i aria-label="linkedin" class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Vera-Sjunnesson" target="_blank"><i aria-label="github" class="fa-brands fa-github"></i></a>
+                        <a href="https://stackoverflowteams.com/c/technigo/users/436/" target="_blank"><i aria-label="stack overflow" class="fa-brands fa-stack-overflow"></i></a>
+                        <a href="https://www.facebook.com/vera.sjunnesson" target="_blank"><i aria-label="facebook" class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/verasjunnesson/" target="_blank"><i aria-label="instagram" class="fa-brands fa-instagram"></i></a>
+                    </div>
             </div>
         </div>
-        <section class="header-right">
-            <img class="header-logo" src="./assets/logo-technigo.svg" alt="">
-        </section>
-        <section class="header-scroll">
-            <img class="arrow" src="./assets/Vector 1.svg" alt="">
-            <div>
-                <p>Lets scroll</p>
-                <img class="line" src="./assets/Rectangle 13.svg" alt="">
-            </div>
-        </section>
-    </header>
-    
+        
+        <div class="header-right">
+            <img class="header-logo" src="./images/leaves.jpg" alt="">
+        </div>
 
-    <section class="tech-section">
-            <div><h4>Tech</h4>
-                </div>
-            <div class="tech-languages">
-                <p>
+        <button onclick="scrollTechSection()" class="scroll header">
+            <img class="arrow" src="./assets/arrow.svg" alt="">
+            <div>
+                <p>lets scroll</p>
+                <img class="line" src="./assets/line.svg" alt="">
+            </div>
+        </button>
+
+    </header>
+
+    
+    <!-- Tech section -->
+    <section class="tech-section" id="tech-section">
+            
+        <div>
+            <h4>
+                Tech
+            </h4>
+        </div>
+        <div class="tech-languages">
+            <p>
                 HTML, CSS, Flexbox, 
-                <mark id="javascript">JavaScript,</mark>
+            <mark id="javascript">JavaScript,</mark>
                 ES6, JSX, 
-                <mark id="react">React,</mark> 
+            <mark id="react">React,</mark> 
                 React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s, 
-                <mark id="mob-programming">mob-programming,</mark>
+            <mark id="mob-programming">mob-programming,</mark>
                 pair-programming, Github. 
             </p>
+        </div>
+        
+        <button onclick="scrollFeaturedProjects()" class="scroll tech">
+            <img class="arrow" src="./assets/arrow.svg" alt="">
+            <div>
+                <p>lets scroll</p>
+                <img class="line" src="./assets/line.svg" alt="">
             </div>
+        </button>
+
     </section>
 
 
-    <section class="featured-projects">
+    <!-- Featured projects section -->
+    <section class="featured-projects" id="featured-projects">
         <h4>Featured Projects</h4>
         
-        <section class="projects-contaier">
+        <div class="projects-contaier">
         
-            <article>
-                <img src="./images/clouds.jpeg" alt="picture of clouds">
+            <article class="project-article">
+                <img class="feature-image" src="./images/wearher.app.narrow.jpg" alt="picture of phone displaying the weather app">
+                
                 <div class="article-container">
                     <div class="article-text">
                         <h5>
-                            Weather app with javascript
+                            Weather app built with javascript
                         </h5>
                         <p>
                             The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.
@@ -86,39 +111,19 @@
                             <li>NODE</li>
                         </ul>
                     </div>
+                    
                     <div class="featured-buttons">
                         <button class="button-github" onClick="window.open('https://github.com/Technigo/project-weather-app/pull/294');"><i class="fa-brands fa-github"></i>View the code</button>
                         <button class="button-live" onClick="window.open('https://vera-matilda-weather-app.netlify.app/');"><i class="fa-solid fa-globe"></i>Live demo</button>
                     </div>
                 </div>
+
             </article>
 
-             <article>
-                <img src="./images/clouds.jpeg" alt="picture of clouds">
-                <div class="article-container">
-                    <div class="article-text">
-                        <h5>
-                            Chatbot built with javascript
-                        </h5>
-                        <p>
-                            The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.
-                        </p>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>REACT</li>
-                            <li>NODE</li>
-                        </ul>
-                    </div>
-                    <div class="featured-buttons">
-                        <button class="button-github" onClick="window.open('https://github.com/Technigo/project-chatbot/pull/186');"><i class="fa-brands fa-github"></i>View the code</button>
-                        <button class="button-live" onClick="window.open('https://eclectic-alfajores-99a972.netlify.app/');"><i class="fa-solid fa-globe"></i>Live demo</button>
-                    </div>
-                </div>
-            </article>
 
-            <article>
-                <img src="./images/clouds.jpeg" alt="picture of clouds">
+            <article class="project-article">
+                <img class="feature-image" src="./images/guess-who-test.png" alt="picture of phone displaying the guess-who game">
+                
                 <div class="article-container">
                     <div class="article-text">
                         <h5>
@@ -134,15 +139,45 @@
                             <li>NODE</li>
                         </ul>
                     </div>
+                    
                     <div class="featured-buttons">
                         <button class="button-github" onClick="window.open('https://github.com/Technigo/project-guess-who/pull/304');"><i class="fa-brands fa-github"></i>View the code</button>
                         <button class="button-live" onClick="window.open('https://effortless-ninja-f73289.netlify.app/');"><i class="fa-solid fa-globe"></i>Live demo</button>
                     </div>
                 </div>
+
             </article>
             
-            <article>
-                <img src="./images/clouds.jpeg" alt="picture of clouds">
+            <article class="project-article">
+                <img class="feature-image" src="./images/chatbot.jpg" alt="picture of phone displaying the chatbot">
+                
+                <div class="article-container">
+                    <div class="article-text">
+                        <h5>
+                            Chatbot built with javascript
+                        </h5>
+                        <p>
+                            The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.
+                        </p>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>REACT</li>
+                            <li>NODE</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="featured-buttons">
+                        <button class="button-github" onClick="window.open('https://github.com/Technigo/project-chatbot/pull/186');"><i class="fa-brands fa-github"></i>View the code</button>
+                        <button class="button-live" onClick="window.open('https://eclectic-alfajores-99a972.netlify.app/');"><i class="fa-solid fa-globe"></i>Live demo</button>
+                    </div>
+                </div>
+
+            </article>
+            
+            <article class="project-article">
+                <img class="feature-image" src="./images/business-site.png" alt="picture of phone displaying the business-site">
+                
                 <div class="article-container">
                     <div class="article-text">
                         <h5>
@@ -163,10 +198,12 @@
                         <button class="button-live" onClick="window.open('https://fluffy-kitsune-4c750d.netlify.app/');"><i class="fa-solid fa-globe"></i>Live demo</button>
                     </div>
                 </div>
+
             </article>
 
-            <article>
-                <img src="./images/clouds.jpeg" alt="picture of clouds">
+            <article class="project-article">
+                <img class="feature-image" src="./images/news-site.jpeg" alt="picture of clouds">
+                
                 <div class="article-container">
                     <div class="article-text">
                         <h5>
@@ -182,68 +219,114 @@
                             <li>NODE</li>
                         </ul>
                     </div>
+                    
                     <div class="featured-buttons">
                         <button class="button-github" onClick="window.open('https://github.com/Technigo/project-news-site/pull/399');"><i class="fa-brands fa-github"></i>View the code</button>
                         <button class="button-live" onClick="window.open('https://spontaneous-otter-5c0599.netlify.app/');"><i class="fa-solid fa-globe"></i>Live demo</button>
                     </div>
                 </div>
+
             </article>
+
+            <button onclick="scrollMyWords()" class="scroll feature">
+                <img class="arrow" src="./assets/arrow.svg" alt="">
+                <div>
+                    <p>lets scroll</p>
+                    <img class="line" src="./assets/line.svg" alt="">
+                </div>
+            </button>
         
-        </section>
+        </div>
+
     </section>
     
-    <section class="my-words">
-        <h4>My words</h4>
+    
+    <!-- My words section -->
+    <section class="my-words" id="my-words">
+        <h4>Some words</h4>
         
-        <section class="my-words-conatiner">
-        <article class="my-words-article">
-            <img src="./images/clouds.jpeg" alt="">
-            <div>
-                <h6>July 2023</h6>
-                <h5>How to stop being scared: Learning to love code</h5>
-            </div>
-            <p>Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.</p>
-            <button class="button-read-article"><i class="fa-regular fa-file-lines"></i>Read article</button>
-        </article>
-
-        <article class="my-words-article">
-            <img src="./images/clouds.jpeg" alt="">
-            <div>
-                <h6>July 2023</h6>
-                <h5>How to stop being scared: Learning to love code</h5>
-            </div>
-            <p>Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.</p>
-            <button class="button-read-article"><i class="fa-regular fa-file-lines"></i>Read article</button>
-        </article>
-
-        <article class="my-words-article">
-            <img src="./images/clouds.jpeg" alt="">
-            <div>
-                <h6>July 2023</h6>
-                <h5>How to stop being scared: Learning to love code</h5>
-            </div>
-            <p>Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.</p>
-            <button class="button-read-article"><i class="fa-regular fa-file-lines"></i>Read article</button>
-        </article>
+        <div class="my-words-conatiner">
         
+            <article class="my-words-article">
+                <img src="./images/guy-with-phone.jpeg" alt="a picture of a laughing guy with a phone">
+                <div>
+                    <h6>July 2023</h6>
+                    <h5>Act now! Here are 4 compelling reasons why should hire junior developers.</h5>
+                </div>
+                <p>Companies have historically undervalued junior IT professionals, but as senior developer recruitment becomes increasingly challenging, the potential of junior talent is gaining recognition. Hiring and training junior IT professionals can be a cost-effective and sustainable approach to building a strong in-house development team.</p>
+                <button 
+                    class="button-read-article" 
+                    onClick="window.open('https://www.crowdcollective.com/blog/junior-developers-are-underrated-asset');">
+                    <i class="fa-regular fa-file-lines"></i>
+                    Read article
+                </button>
+            </article>
 
-        <article class="my-words-article">
-            <img src="./images/clouds.jpeg" alt="">
-            <div>
-                <h6>July 2023</h6>
-                <h5>How to stop being scared: Learning to love code</h5>
-            </div>
-            <p>Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.</p>
-            <button class="button-read-article"><i class="fa-regular fa-file-lines"></i>Read article</button>
-        </article>
+            <article class="my-words-article">
+                <img src="./images/guy-with-phone.jpeg" alt="a picture of a laughing guy with a phone">
+                <div>
+                    <h6>July 2023</h6>
+                    <h5>Act now! Here are 4 compelling reasons why should hire junior developers.</h5>
+                </div>
+                <p>Companies have historically undervalued junior IT professionals, but as senior developer recruitment becomes increasingly challenging, the potential of junior talent is gaining recognition. Hiring and training junior IT professionals can be a cost-effective and sustainable approach to building a strong in-house development team.</p>
+                <button 
+                    class="button-read-article" 
+                    onClick="window.open('https://www.crowdcollective.com/blog/junior-developers-are-underrated-asset');">
+                    <i class="fa-regular fa-file-lines"></i>
+                    Read article
+                </button>
+            </article>
 
-        </section>
+            <article class="my-words-article">
+                <img src="./images/guy-with-phone.jpeg" alt="a picture of a laughing guy with a phone">
+                <div>
+                    <h6>July 2023</h6>
+                    <h5>Act now! Here are 4 compelling reasons why should hire junior developers.</h5>
+                </div>
+                <p>Companies have historically undervalued junior IT professionals, but as senior developer recruitment becomes increasingly challenging, the potential of junior talent is gaining recognition. Hiring and training junior IT professionals can be a cost-effective and sustainable approach to building a strong in-house development team.</p>
+                <button 
+                    class="button-read-article" 
+                    onClick="window.open('https://www.crowdcollective.com/blog/junior-developers-are-underrated-asset');">
+                    <i class="fa-regular fa-file-lines"></i>
+                    Read article
+                </button>
+            </article>
+            
+            <article class="my-words-article">
+                <img src="./images/guy-with-phone.jpeg" alt="a picture of a laughing guy with a phone">
+                <div>
+                    <h6>July 2023</h6>
+                    <h5>Act now! Here are 4 compelling reasons why should hire junior developers.</h5>
+                </div>
+                <p>Companies have historically undervalued junior IT professionals, but as senior developer recruitment becomes increasingly challenging, the potential of junior talent is gaining recognition. Hiring and training junior IT professionals can be a cost-effective and sustainable approach to building a strong in-house development team.</p>
+                <button 
+                    class="button-read-article" 
+                    onClick="window.open('https://www.crowdcollective.com/blog/junior-developers-are-underrated-asset');">
+                    <i class="fa-regular fa-file-lines"></i>
+                    Read article
+                </button>
+            </article>
+
+            <button onclick="scrollSkillsSection()" class="scroll my-words">
+                <img arrow="arrow" src="./assets/arrow.svg" alt="">
+                <div>
+                    <p>lets scroll</p>
+                    <img class="line" src="./assets/line.svg" alt="">
+                </div>
+            </button> 
+
+        </div>
+
     </section>
     
-    <section class="skills">
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
         <h4>Skills</h4>
-        <div class="skills-container">  <!-- måste vara en div - en section ha en heading -->
-            <article>
+        
+        <div class="skills-container">
+            
+            <section class="skills-section">
               <h6 class="h6-code">Code</h6>
               <ul>
                 <li>HTML 5</li>
@@ -253,8 +336,9 @@
                 <li>Styled Components</li>
                 <li>GitHub</li>
               </ul>  
-            </article>
-            <article>
+            </section>
+            
+            <section class="skills-section">
                 <h6 class="h6-toolbox">Toolbox</h6>
                 <ul>
                     <li>Adobe Illustrator</li>
@@ -264,8 +348,9 @@
                     <li>Slack</li>
                     <li>Premiere Pro</li>
                 </ul>
-            </article>
-            <article>
+            </section>
+
+            <section class="skills-section">
                 <h6 class="h6-more">More</h6>
                 <ul>
                     <li>Adobe Illustrator</li>
@@ -275,8 +360,9 @@
                     <li>Slack</li>
                     <li>Premiere Pro</li>
                 </ul>
-            </article>
-            <article>
+            </section>
+
+            <section class="skills-section">
                 <h6 class="h6-upcoming">Upcoming</h6>
                 <ul>
                     <li>Adobe Illustrator</li>
@@ -284,36 +370,57 @@
                     <li>Adobe After Effects</li>
                     <li>Figma</li>
                 </ul>
-            </article>
-        </div>
+            </section>
 
+       </div>
+
+        <button onclick="scrollFooter()" class="scroll skills">
+            <img class="arrow" src="./assets/arrow.svg" alt="">
+            <div>
+                <p>lets scroll</p>
+                <img class="line" src="./assets/line.svg" alt="">
+            </div>
+        </button>
 
     </section>
 
-    <footer>
+
+    <!-- Footer section -->
+    <footer id="footer">
         <h4>Time to talk</h4>
         <div class="presentation-container">
-                    <img src="./images/vera-picture.jpeg" alt="picture of Vera Sjunnesson">
-                <div class="presentation-titles">
-                    <h2>Vera Sjunnesson</h2>
-                    <h2>Frontend developer</h2>
-                    <h3>+ digital designer</h3>
-                </div>
+            <img src="./images/vera-picture.jpeg" alt="picture of Vera Sjunnesson">
+            <div class="presentation-titles">
+                <h1>Vera Sjunnesson</h1>
+                <h2>Frontend developer</h2>
+                <h3>+ digital designer</h3>
             </div>
+        </div>
         
         <address>
-            <p>vera.kastrup@gmail.com</p>
+            <button class="button-contact-me"><a href="mailto:vera.kastruo@gmail.com"><i class="fa-regular fa-paper-plane"></i>Contact me</a></button>
         </address>
         
-            <div class="social-media-icons">
-                <a href="https://www.linkedin.com/in/vera-sjunnesson-8a546a169/" target="_blank"><i aria-label="linkedin" class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/Vera-Sjunnesson" target="_blank"><i aria-label="github" class="fa-brands fa-github"></i></a>
-                <a href="https://stackoverflowteams.com/c/technigo/users/436/" target="_blank"><i aria-label="stack overflow" class="fa-brands fa-stack-overflow"></i></a>
-                <a href="https://www.facebook.com/vera.sjunnesson" target="_blank"><i aria-label="facebook" class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/verasjunnesson/" target="_blank"><i aria-label="instagram" class="fa-brands fa-instagram"></i></a>
+        <div class="social-media-icons">
+            <a href="https://www.linkedin.com/in/vera-sjunnesson-8a546a169/" target="_blank"><i aria-label="linkedin" class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Vera-Sjunnesson" target="_blank"><i aria-label="github" class="fa-brands fa-github"></i></a>
+            <a href="https://stackoverflowteams.com/c/technigo/users/436/" target="_blank"><i aria-label="stack overflow" class="fa-brands fa-stack-overflow"></i></a>
+            <a href="https://www.facebook.com/vera.sjunnesson" target="_blank"><i aria-label="facebook" class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/verasjunnesson/" target="_blank"><i aria-label="instagram" class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <button onclick="scrollToTop()" class="scroll footer">
+            <img class="arrow footer" src="./assets/arrow.svg" alt="">
+            <div>
+                <p>go to top</p>
+                <img class="line" src="./assets/line.svg" alt="">
             </div>
+        </button>
 
     </footer>
+
  
+    <script src="script.js"></script>
+
 </body>
 </html>
