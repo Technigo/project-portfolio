@@ -52,11 +52,13 @@ h1, h2, h3, h4, h5, h6, p, a {
   justify-content: space-evenly;
   align-items: center;
   height: max-content;
+  min-height: 90vh;
+  position: relative;
 }
 
 .left-header {
   width: 50%;
-  height: 500px;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,6 +73,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   margin-bottom: 10px;
   margin-top: auto;
   justify-content: center;
+  gap: 3%;
 }
 
 .summary-icons {
@@ -81,12 +84,13 @@ h1, h2, h3, h4, h5, h6, p, a {
   margin-bottom: auto;
   margin-top: 10px;
   height: 100px;
+  gap: 20px;
 }
 
 .right-header {
   background-color: var(---highlight);
   width: 50%;
-  height: 600px;
+  min-height: 90vh;
   display: flex;
   position: relative;
   margin-right: 0px;
@@ -101,21 +105,29 @@ h1, h2, h3, h4, h5, h6, p, a {
   position: absolute;
   margin-bottom: 0px;
   display: block;
+  bottom: 20px;
 }
 
 /* TECH SECTION */
 
 .tech-section {
+  height: 600px;
+  background-color: var(---secondary);
+  display: flex;
+}
+
+.tech-desktop {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 600px;
-  background-color: var(---secondary);
+  gap: 100px;
 }
 
 .big-header {
   font-size: 70px;
   color: var(---text);
+  display: flex;
+  justify-content: center;
 }
 
 .tech-paragraph {
@@ -245,6 +257,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .skills {
   background-color: var(---secondary);
+  min-height: 40vh;
 }
 
 .skill-grid {
@@ -256,27 +269,149 @@ h1, h2, h3, h4, h5, h6, p, a {
   height: 60%;
 }
 
+/* CONTACT */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
 .container {
   width: 100%;
 }
 
 .mx-auto {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 991.98px){
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  
+  .left-header {
+    width: 50%;
+    min-height: 60vh;
+  }
 
+  .right-header {
+    background-color: var(---highlight);
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .arrow-scroll {
+  bottom: 5px;
+  }
+  
+  .devLogo {
+    width: auto;
+  }
+
+  .tech-desktop {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .projects .mx-auto {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: inherit;
+  }
+
+  .articles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog-post-description {
+    align-items: center;
+  }
+
+  .blog-img-container{
+    width: -webkit-fill-available;
+    min-height: 50vh;
+  }
+
+  .blog-post-title {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .skills {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vh;
+  }
+
+  .contact {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-@media (min-width: 768px) {
 
-}
-@media (min-width: 1024) {
 
-}
-@media (min-width: 1280px) {
+@media (max-width: 575.98px) {
+  .mx-auto {
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+  
+  .right-header {
+    display: none;
+  }
+  
+  .projects .mx-auto {
+    margin-right: 2vw;
+    margin-left: 2vw;
+    width: fit-content
+  }
 
-}
-@media (min-width: 1536px) {
+  .project-description {
+    flex-direction: column;
+  }
 
+  .project-buttons {
+    flex-direction: column;
+  }
+
+  .project-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+
+  .project-img-container {
+    width: -webkit-fill-available;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
