@@ -6,4 +6,4 @@ The portfolio has been made mainly through HTML and CSS, with an eye for detail 
 
 Header Image by <a href="https://pixabay.com/users/medienservice-1888061/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2917553">Nicole Pankalla</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2917553">Pixabay</a>
 
-See the deployed site here: leothunellportfoliowebdev.netlify.app
+See the deployed site here: https://leothunellportfoliowebdev.netlify.app
