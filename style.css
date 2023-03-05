@@ -1,17 +1,10 @@
-html,
-body {
-  overflow-x: hidden;
-  margin: 0;
-}
 
-body {
-  position: relative;
-}
 
 body {
     box-sizing: border-box;
     margin: 0;
     max-width: 600px;
+    position: relative;
 }
 
 .main {
@@ -259,6 +252,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
 }
 
 .live:hover  {
@@ -367,7 +361,7 @@ top: calc(50% - 97px/2 - 1957.5px);
     margin: 25px 0 0 0;
     font-size: 18px;
     margin-left: 24px;
-  
+  text-decoration: none;
 }
 
 .button-read-article .icon {
@@ -457,7 +451,7 @@ dd {
 .container img {
     max-width: 600px;
     width: 100%;
-    display: none;
+    
     /*Gör en display none här för mobile*/
 }
 
@@ -563,22 +557,66 @@ dd {
     cursor: pointer;
 }
 
-@media (min-width: 667px) and (max-width: 768px) {
+@media (min-width: 667px) and (max-width: 1024px) {
+
+    .body {
+        width: 100%;
+    }
 
     .container {
-        width: 768px;
+        width: 100%;
         display: flex;
         z-index: 1;
     }
 
+    .container2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .profile-wrapper {
+        display: flex;
+        flex-direction: row;
+        
+      }
+
+      .profile-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .name {
+        margin-bottom: 0;
+      }
+      
+      .title {
+        margin-top: 0;
+      }
+
 .main {
-    max-width: 768px;
-    width: 768px;
-    background-color: pink;
+    min-height: 700px;
+        width: 100%;
+        position: relative;
+    }
+
+
+.side-image {
+    background-image: url('./images/hero-image.jpg');
+    background-size: cover;
+    background-position: 55%;
+    display: inline-block;
+    height: 350px;
+    width: 100%;
 }
 
 .profile-image {
-margin-left: 102px;
+    margin-left: 24px;
+    margin-bottom: 16px;
+  }
 }
 
 .social-media-links {
@@ -586,7 +624,7 @@ margin-left: 102px;
     display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-top: 24px;
 }
 
 .container .arrow-down {
@@ -594,10 +632,10 @@ margin-left: 102px;
     color: #0B24F5;
     margin-bottom: 47px;
    
-    top: 78%;
-    left: calc(50% - 50px);
-    width: 100px;
-    height: 100px;
+    top: 89%;
+    left: calc(50% - 75px);
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: 50px auto 50px auto;
     padding: 0;
@@ -608,6 +646,9 @@ margin-left: 102px;
     z-index: 1;
     /* Makes the arroe bounce */
     animation: bounce 1s infinite alternate;
+    position: absolute;
+    bottom: 32px;
+    
  }
  
  /*Makes the arrow bounce*/
@@ -621,31 +662,36 @@ margin-left: 102px;
      height: 20px;
  }
 
-
+.info {
+    display: flex;
+}
 
 .tech-header {
-    width: 768;
+    width: 100%;
     /*z-index: 2;*/
-    position: absolute;
+    
+}
+
+.tech p {
+    margin: 0 120px;
 }
 
 .featured-projects {
-    width: 768px;
-   
-    position: absolute;
+   width: 100%;
+  
 }
 
 .blog-header {
-    width: 768px;
+    width: 100%;
 }
 
 .skills {
-    width: 768px;
+    width: 100%;
 }
 
 .footer {
-    width: 768px;
-   background-color: pink;
+    width: 100%;
+   
 }
 
 .icons-box-footer {
@@ -678,20 +724,16 @@ margin-left: 102px;
 }
 
 
+@media (min-width: 1025px) {
 
-@media (min-width: 769px) {
-
-    .body {
-        width: 1280px;
-    }
-
-   .main {
-    max-width: 100%;
-    height: 980px;
-    display: flex; 
-    position: absolute;
-    margin-bottom: 800px;
-   } 
+    .main {
+        min-height: 100vh;
+        height: auto;
+        display: flex;
+        position: absolute;
+        margin-bottom: 800px;
+        width: 100%;
+        }
 
     .container2 {
         position: absolute;
@@ -702,7 +744,7 @@ margin-left: 102px;
         background-color: #FFFFFF;
         transform: translateY(-50%); /* added */
         display: flex;
-    flex-direction: column;
+        flex-direction: column;
         align-items: center;
       }
       
@@ -801,21 +843,21 @@ margin-left: 102px;
        
     
     .featured-projects {
-        margin-top: 1700px;
+      
         max-width: 100%;
         position: absolute;
     }
     
     .blog-header {
         width: 100%;
-        margin-top: 6000px;
+       
         height: 2089;
         position: absolute;
     }
     
     .skills {
         width: 100%;
-        margin-top: 7500px;
+       
         position: absolute;
         height: 802px;
         background-color: #FDF2E4;
@@ -831,8 +873,8 @@ margin-left: 102px;
     
     .footer {
         width: 100%;
-        margin-top: 8200px;
-        max-width: 1280px;
+       
+       
        position: absolute;
        display: flex;
        flex-direction: column;
@@ -880,4 +922,3 @@ margin-left: 102px;
 }
 
 }
-/*Tog bort h4, flytta runt
