@@ -17,13 +17,7 @@ body {
 
 }
 .header-image{
-  max-width: 400px;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
-  position: relative;
   display: none; /* this is only hidden in the mobile view*/
- 
  }
 
  .author-image {
@@ -36,13 +30,20 @@ body {
   margin-bottom: 29px;
 }
 
-.header-title {
-  font-family: 'Satoshi', sans-serif;
-  font-size:2rem;
-  font-weight: 900;
-  padding-top:20px;
-  padding-bottom: 20px;
-}
+.header-container{
+  color: #510337;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.375rem;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: left;
+  z-index: 1; 
+  padding:10px;
+  margin-top:40px;
+  margin-bottom: 28px;
+ }
+
 .name{
   font-family: 'Satoshi', sans-serif;
   font-size: 1.75rem;
@@ -53,24 +54,24 @@ body {
   line-height: 38px;
  }
 
-.header-info{
-  max-width: 300px;
- color: #510337;
- font-family: 'EB Garamond', serif;
- font-size: 1.375rem;
- display:flex;
- flex-direction: row;
- flex-wrap: wrap;
- align-content: left;
- z-index: 1; 
- padding:10px;
- margin-top:40px;
- margin-bottom: 28px;
+ .header-title {
+  font-family: 'Satoshi', sans-serif;
+  font-size:2rem;
+  font-weight: 900;
+  padding-top:20px;
+  padding-bottom: 5px;
+}
+.header-title-part-two{
+  font-family: 'Satoshi', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 500;
+ padding-bottom: 20px;
 }
 
 .contact-logos {
   display:flex;
   justify-content: center;
+  margin-top:25px;
   margin-bottom: 25px;
 }
 
@@ -312,10 +313,132 @@ margin:20px;
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px)  /*tablets*/
+@media screen and (min-width: 768px) and (max-width: 991px) { /*tablets*/
+  .headerimg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black; 
+  }
+  .header-image {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 450px;
+    max-width: 990px;
+    margin-top:0;
+  }
+
+  .header-info {  
+    display: grid;
+    grid-template-areas:
+      ". author-image header-container header-container ."
+      ". . . . .";
+  }
+  
+  .author-image { grid-area: author-image; }
+  
+  .header-container {  
+    display: grid;
+    gap: 0px 0px;
+    grid-template-areas:
+      "name name name"
+      "header-title header-title header-title"
+      "header-title-part-two header-title-part-two header-title-part-two"
+      "p-info p-info p-info";
+    grid-area: header-container;
+    border:red 5px solid;
+  }
+  
+  .name { grid-area: name; }
+  
+  .header-title { grid-area: header-title; }
+  
+  .header-title-part-two { grid-area: header-title-part-two; }
+  
+  .info-about-me { grid-area: info-about-me; }
+
+  .p-info { grid-area: p-info; }
+  
+  
+  /*
+.header-info{
+  position: relative;
+  border:red 5px solid;
+}
+
+.author-image {
+  max-width: 150px;
+  position:absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.header-container{
+  position: relative;
+}
+
+.name, .header-title, .header-title-part-two {
+  position:absolute;
+  top: 10%;
+  right: 20%;
+  transform: translate(-50%, -50%);
+}*/
+
+.projects-title {
+ text-align: center;
+}
+
+.featured-projects-container {
+text-align: right;
+}
+
+.chatbot-img, .weather-img, .guess-img, .microscope-img, .lmx1b-img, .hol-img, .rdna-img {
+  display: flex;
+  align-items: left;
+}
+
+.chatbot-title, .weather-app, .guess-title{
+  font-family: 'Satoshi', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  
+}
+.project-description {
+  font-family: 'EB Garamond';
+  font-weight: 400;
+  font-size: 1.375rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.git-button{
+  width: 150px;
+  padding: 20px;
+  margin-top: 20px;
+  background-image: url("/code/assets/gitbutton.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border:none;
+}
+
+.netifly-button{
+  width: 120px;
+  padding: 20px;
+  background-image: url("/code/assets/demobutton.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border:none;
+  
+}
+
+
+}
 
 @media screen and (min-width: 992px) and (max-width: 1199px)/*large tablets small desktop*/
 
 @media screen and (min-width: 1200px) /*larger desktop*/
     
-}

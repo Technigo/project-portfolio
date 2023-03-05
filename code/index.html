@@ -20,21 +20,27 @@
 </head>
 
 <body>
-    <section class= "header-info" role="banner">
-        <div class="header-container">
+
+        <div class="headerimg-container">
         <img class= "header-image" src="/code/assets/hero_image.jpg" alt="cell immunofluorescence">
+       </div>
+
+       <section class= "header-info" role="banner">
         <img class="author-image" src="/code/assets/jennifer.jpg" alt="author" >
+        
+        <div class="header-container">
         <h1 class="name">Jennifer Feenstra-Arengård</h1>
-        <h2 class="header-title"> Frontend Developer & Scientist</h2>
-        <p> I am a frontend developer with a background in laboratory research. 
+        <h2 class="header-title"> Frontend Developer </h2>
+        <h2 class="header-title-part-two">+ Scientist</h2>
+        <p class="p-info"> I am a frontend developer with a background in laboratory research. 
             Specifically, I worked with drug development tools for breast cancer and the 
             genetic pathways that regulate embryonic limb formation. I believe my 
             diverse background gives me a unique standing in the job market and I 
             hope if you find my portfolio interesting that you will contact me 
             through one of the links below.</p> 
       </div>
-    </section>
 
+    </section>
       <div class="contact-logos">
       
       <a href="https://www.linkedin.com/in/jennifer-feenstra-areng%C3%A5rd-299b1a60/">
@@ -47,7 +53,7 @@
         <img src="/code/assets/StackOverflow.svg" alt="Stackoverflow logo" class="stack-logo"> </a>
 
      </div>
-   
+    </section>
         <div class="scroll-arrow">
            <div><img src="/code/assets/Vector1.png" alt="down arrow" class="down-arrow"> </div>
            <div><p>Lets scroll</p></div>
@@ -59,7 +65,7 @@
     
         <section class="tech-container">
             <h2 class="tech-title">Tech</h2>
-            <p>HTML, CSS, Javascript, Flexbox, ES6, Github, API's, pair-programming, mob programming, Adobe Illustrator, Photoshop</p>
+            <p>HTML, CSS, <span style="color: rgb(138, 138, 224);">Javascript,</span> Flexbox, ES6, <span style="color: rgb(235, 69, 94);">React, </span> Github, API's, pair-programming, <span style="color: rgb(89, 193, 222);">mob programming,</span> Adobe Illustrator, Photoshop</p>
         </section>
    
 
@@ -135,21 +141,21 @@
             <img src="/code/assets/lmx1b.jpg" alt="mouse limb development" class="lmx1b-img">
             <h3 class="my-words-subtitles">Detection of genes regulated by Lmx1b during limb dorsalization</h3>
             <p> somethhing here about the paper </p>
-            <button class="article-button" label= "Read Article" onclick="window.location.href='https://pubmed.ncbi.nlm.nih.gov/22417325/'">Read Article</button>
+            <button class="article-button" aria-label= "Read Article" onclick="window.location.href='https://pubmed.ncbi.nlm.nih.gov/22417325/'">Read Article</button>
         </div>
         
         <div>
             <img src="/code/assets/hol.jpg" alt="endosomes and limb development" class="hol-img">
             <h3 class="my-words-subtitles">ESCRT-II/Vps25 constrains digit number by endosome-mediated selective modulation of FGF-SHH signaling</h3>
             <p> somethhing here about the paper </p>
-            <button class="article-button" label= "Read Article" onclick="window.location.href='https://pubmed.ncbi.nlm.nih.gov/25373905/'">Read Article</button>
+            <button class="article-button" aria-label= "Read Article" onclick="window.location.href='https://pubmed.ncbi.nlm.nih.gov/25373905/'">Read Article</button>
         </div>
         
         <div>
             <img src="/code/assets/rdna.jpg" alt="ribosome in breastcancer" class="rdna-img">
             <h3 class="my-words-subtitles">Ribosome biogenesis during cell cycle arrest fuels EMT in development and disease</h3>
             <p> somethhing here about the paper </p>
-            <button class="article-button" label= "Read Article" onclick="window.location.href='https://pubmed.ncbi.nlm.nih.gov/31068593/'">Read Article</button>
+            <button class="article-button" aria-label= "Read Article" onclick="window.location.href='https://pubmed.ncbi.nlm.nih.gov/31068593/'">Read Article</button>
         </div>
         
     
@@ -161,38 +167,42 @@
         <div class="skills-container">
             <h2 class="skills-title">Skills</h2>
 
-            <h3 class="list-title-one">Code</h3> 
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript ES6</li>
-                <li>React</li>
-                <li>Github</li>
-            </ul>
+            <div class="code-list">
+            <h3 class="list-title-one">Code</h3>  
+                <p>HTML5</p>
+                <p>CSS3</li>
+                <p>Javascript ES6</p>
+                <p>React</p>
+                <p>Github</p>
+            </div>
 
+            <div class="toolbox-list">
             <h3 class="list-title-two">Toolbox</h3>
-            <ul>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>Figma</li>
-                <li>Slack</li>
-            </ul>
+           
+                <p>Adobe Photoshop</p>
+                <p>Adobe Illustrator</p>
+                <p>Figma</p>
+                <p>Slack</p>
+            </div>
             
+            <div class="laboratory-list">
             <h3 class="list-title-one">Laboratory</h3> 
-            <ul>
-                <li>Microsurgery</li>
-                <li>Confocal microscopy</li>
-                <li>Cell culture</li>
-                <li>Animal Husbandry</li>
-                <li>Preclinical phase drug testing</li> 
-            </ul>
-
+            
+                <p>Microsurgery</p>
+                <p>Confocal microscopy</p>
+                <p>Cell culture</p>
+                <p>Animal Husbandry</p>
+                <p>Preclinical phase drug testing</p> 
+        </div>
+            
+        <div class="upcoming-list">
             <h3 class="list-title-two">Upcoming</h3>
-            <ul>
-                <li>Redux</li>
-                <li>Node.js</li>
-                <li>Python</li>
-            </ul>
+            
+                <p>Redux</p>
+                <p>Node.js</p>
+                <p>Python</p>
+        </div>
+           
 
         </div>
     </section>
