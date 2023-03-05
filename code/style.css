@@ -192,7 +192,7 @@ img:focus {
   margin-top: 24px;
   border: unset;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 24px;
 }
 
@@ -390,6 +390,12 @@ button:focus {
   margin-bottom: -5px;
 }
 
+@media (max-width: 315px) {
+  .featured-project h2 {
+    font-size: 50px;
+  }
+}
+
 /* Tablet */
 @media (min-width: 668px) {
   .logo {
@@ -452,13 +458,16 @@ button:focus {
   .project-wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 40px 0 120px 0;
+    gap: 24px;
   }
 
   .project-img {
     width: 26%;
     flex-shrink: 0;
+    margin-bottom: 80px;
   }
 
   .project-img img {
@@ -470,7 +479,9 @@ button:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 24px;
+    margin-bottom: 80px;
+    width: 60%;
+    max-height: 280px;
   }
 
   .project-buttons {
@@ -595,14 +606,11 @@ button:focus {
   .featured-project {
     flex-wrap: wrap;
     align-items: center;
+    padding: 0 230px;
   }
 
   .project-img {
-    width: 280px;
-  }
-
-  .project-text {
-    max-width: 410px;
+    width: 30%;
   }
 
   .skills-section {
