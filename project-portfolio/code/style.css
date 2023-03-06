@@ -1,0 +1,523 @@
+/*@font-face {
+    font-family: SatoshiBold;
+    font-weight: bold;
+    src: url('./fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf');
+  }
+  
+  @font-face {
+    font-family: SatoshiMedium;
+    font-weight: medium;
+    src: url('./Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf');
+  }
+  
+  @font-face {
+    font-family: SatoshiBlack;
+    font-weight: bolder;
+    src: url('./Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf');
+  }*/
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+
+/* FORMAL PRESENTATION SECTION */
+section.formal-presentation {
+display: flex;
+flex-direction: row;
+}
+
+/* LEFT SIDE */
+.big-box {
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  background: rgb(255, 255, 255);
+}
+img#annapic {
+  height: 200px;
+  
+  border-radius: 200px;
+  margin: 5px;
+}
+
+
+/* TEXT */
+.header-text {
+  display: flex;
+  flex-direction: column;
+align-items: center
+}
+/*Kråk-Anna Elvine Sellqvist*/
+.header-text h1 {
+    display: flex;
+    font-weight: 50;
+    justify-content: center;
+    color: rgb(88 116 53);
+    /* margin: 4px; */
+    font-size: x-large;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+/*Frontend developer*/
+.header-text h2 {
+    font-weight: 170;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin-top: -10px;
+    margin-left: 25px;
+}
+/*+Psychosyntetic stundet*/
+.header-text h3 {
+    display: flex;
+    font-weight: 300;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: small;
+    margin-top:-15px;
+}
+/*All I can say*/
+.big-box p {
+    display: flex;
+    color: black;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/*RIGHT SIDE*/
+.side-pic {
+height: 980px;
+width: 640px;
+flex-direction: row-reverse;
+justify-content: center;
+/*border: 8px solid pink; */
+}
+div img {
+    display: flex;
+    height: 100%;
+}
+
+/* LINKS LinkedIn + Github*/
+.links {
+    display: flex;
+    margin: 30px 0;
+}
+.link-icons {
+    background-color: transparent;
+    border: none;
+    margin-right: 30px;
+}
+.svg-icon {
+    fill: rgb(126, 126, 126);
+    width: 30px;
+    height: 30px;
+}
+.svg-icon:hover {
+    fill: var(--hover-grey);
+}
+
+
+
+/* TECH SECTION */
+.tech {
+    background-color: rgb(212 210 210);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tech p {
+    max-width: 400px;
+    margin: 0 0 0 100px;
+    color: rgb(137, 113, 156);
+   /* border: 1px solid red;*/
+}
+  .tech h1 {
+    color: rgb(137, 113, 156);
+    font-size: 80px;
+    line-height: 108px;
+    font-weight: 700;
+    /*border: 1px solid red;    */
+}
+
+
+
+/* FEATURED PROJECTS SECTION */
+
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+    margin: var(--side-margins-mobile);
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(255, 255, 255);
+    padding-bottom: 50px;
+}
+
+.featured-projects h1 {
+    color: var(--heading-blue);
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 68px;
+}
+
+.project-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto 50px auto;
+    margin: 30px;
+}
+.project-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px;
+    padding: 12px;
+    justify-content: center;
+}
+
+.project-container-text {
+    background-color: rgb(252, 252, 252);
+    margin-top: 20px;
+    padding-left: 15px;
+    width: 250px;
+}
+
+.project-container-text p {
+    margin: 10px auto 25px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.project-image {
+    max-height: 350px;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.code-tags {
+    margin: 10px 0 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.code-tags p {
+    display: inline;
+    background-color: #88a291;
+    color: white;
+    margin: 0 2px;
+    padding: 2px 5px;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-links .button  {
+    background-color: #88a291;
+    font-family: 'SatoshiVariable';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    border-radius: 50px;
+    max-height: 45px;
+    margin: 10px 5px 5px 5px;
+    padding: 7px 15px 7px 10px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.project-container-text h2 {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+a.button {
+color: white;
+}
+
+.live:hover  {
+    background: rgb(137, 113, 156);
+    color: white;
+}
+
+.git:hover  {
+    background: rgb(211, 95, 112);
+    color: white;
+}
+
+.project-links .button .icons {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+
+
+/*MY WORDS*/
+.my-words {
+    background-color: #88a2914f;
+    width: 100%;
+    margin: auto;
+}
+
+.article img {
+    width: 300px;
+    max-width: 300px;
+    height: 250px;
+}
+
+.my-words-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article {
+    border: 1px solid #ececec;
+    width: 40%;
+    max-width: 300px;
+    padding: 25px;
+    margin: 10px auto 10px auto;
+}
+
+.article p {
+    display: flex;
+    color: black;
+}
+
+.button-read-article {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(64, 64, 64);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 22px;
+    margin-left: 72px;
+    cursor: pointer;
+}
+
+.article h3 {
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.article h5 {
+    text-align: center;
+    font-weight: 51;
+    font-style: oblique;
+}
+
+.my-words h1 {
+    color: var(--heading-pink);
+    font-size: 72px;
+    padding: 0;
+    width: 100%;
+    margin: 50px auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-read-article .icon {
+    fill: #0d0d0d;
+    height: 35px;
+    width: 55px;
+    margin-right: 5px; 
+}
+
+.button-read-article p {
+    font-size: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.button-read-article:hover {
+    background-color: #717555;
+    color: white;
+}
+
+.button-read-article .icon:hover {
+    fill: white;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+/* SKILLS */
+  /*section class skills*/
+.skills {   
+    background-color: #ddd12c3e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.skills h1 {   
+    color: black  ;  /*(--heading-blue);*/
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.skills-container {   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex;
+}
+
+.skills-lists {  
+    border: 1px solid rgb(65, 65, 65);
+    padding: 20px;
+    margin: 0;
+}
+
+dt {   
+    font-size: 25px;
+    margin: 0 0 15px 0;
+    color: white;
+}
+
+dd {
+    margin: 0;
+    font-size: 22px;
+}
+
+.code dt {
+    background-color: #EB5577;
+}
+
+.toolbox dt {
+    background-color: #777879;
+}
+
+.more dt {
+    background-color: #93639e;
+}
+.upcoming dt {
+    background-color: #6DB486;
+}
+  
+
+
+
+/* TIME TO TALK */
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    text-align: center;
+    background-color: #fbfbfb;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  .timetotalk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+}
+.timetotalk img {
+    display: flex;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.timetotalk-ME {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+    gap: 30px;
+}
+.socialicons {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding-top: 50px;
+}
+
+.links2 {
+    display: flex;
+    flex-direction: row-reverse
+}
+
+/* EMAIL MAIL LOGO */
+.timetotalk a img{
+    display: flex;
+    height: 30px;
+    justify-self: center;
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+}
+
+  .timetotalk-text {
+    padding: 10px;
+}
+
+.contact h1 {
+    color: #eb5577;
+    font-size: 68px;
+}
+.contact h2 {
+    color: rgb(114, 57, 57);
+    font-size: 25px;
+    font-weight: 51;
+}
+.contact h3 {
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+    font-weight: 60;
+}
+.contact h4 {
+    color: #914a4a;
+    font-size: 20px;
+    font-weight: 51;
+}
+
+.mobile-mail {
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+}
