@@ -156,6 +156,7 @@ p {
     margin: 10% 0 0 0;
 }
 
+
 .HTML {
     color: #ffffff; 
     background-color: #0B24F5; 
@@ -196,7 +197,6 @@ p {
 }
 
 .btn-code, .btn-demo {
-    display: flex;
     flex-direction: row;
     font-family: 'Satoshi', sans-serif;
     font-style: normal;
@@ -206,7 +206,7 @@ p {
     padding: 10.5px 16px 10.5px 16px;
     border-radius: 50px;
     margin-top: 24px;
-    vertical-align: middle;
+    display: inline-flex;
     background-color: #F5F5F5;
     color: #333333;
     border: none;
@@ -253,7 +253,6 @@ p {
 }
 
 .btn-article {
-    display: flex;
     flex-direction: row;
     font-family: 'Satoshi', sans-serif;
     font-style: normal;
@@ -263,7 +262,7 @@ p {
     padding: 10.5px 16px 10.5px 16px;
     border-radius: 50px;
     margin-top: 24px;
-    vertical-align: middle;
+    display: inline-flex;
     background-color: #F5F5F5;
     color: #333333;
     border: none;
@@ -299,6 +298,7 @@ p {
 }
 
 .skills span {
+    display: inline-flex;
     font-family: 'Satoshi', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -317,7 +317,11 @@ p {
 .code-group, .toolbox-group, .more-group, .upcoming-group {
     margin-top: 60px;
     align-self: center;
-    justify-self: center;
+}
+
+.more-group {
+    display: flex;
+    flex-direction: column;
 }
 
 .code {
@@ -332,10 +336,10 @@ p {
     justify-self: center;
 }
 
+
 .more {
     background: #0B24F5;
-    padding: 2px;
-    justify-self: center;
+    justify-content: center;
 }
 
 .upcoming {
@@ -616,6 +620,7 @@ address, .some-icon {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 66px;
+    justify-content: center;
 }
 
 .skills h4 {
