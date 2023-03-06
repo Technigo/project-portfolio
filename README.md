@@ -9,4 +9,4 @@ I've used only HTML and CSS for this project. The code is checked by validators 
 If I had more time (and probably in the future) I would add JS to populate the projects and links to written words.
 
 ## View it live 
-https://vioszabo.se/
+https://papaya-youtiao-f59136.netlify.app/
