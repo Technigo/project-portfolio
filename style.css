@@ -1,4 +1,6 @@
-
+* {
+    margin: 0;
+}
 
 
 .column-one {
@@ -19,6 +21,8 @@
     border-radius: 100px;
     
 }
+
+
   
 .profile h1 {
     font-size: 28px;
@@ -38,18 +42,27 @@
     margin-top: 20px;
 }
 
-.social-media-button {
+.social-media-btn {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    
+}
+
+.icon {
+   color: #D0D0D0;
+   font-size: 24px;
+   margin-right: 20px;
+}
+
+.icon:hover {
+    color: black;
 }
 
 
 .scroll-down-arrow {
     width: 19px;
     height: 30px;
-    justify-content: center;
+    align-self: center;
     
     
 }
@@ -57,6 +70,8 @@
 .tech {
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     justify-content: center;
     background-color: rgb(243, 232, 222);
     padding: 20px;
@@ -66,10 +81,8 @@
 
 .tech-header {
     font-size: 80px;
-    align-self: center;
     
 }
-
 
 .tech-language {
     font-family: 'EB Garamond';
@@ -80,9 +93,8 @@
 .featured-title {
     font-size: 72px;
     align-self: center;
-    line-height: 80px;
-    margin-bottom: 30px;
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -113,7 +125,7 @@
     margin-bottom: 20px;
 }
 
-.code-span span {
+.code-tags-span span {
     font-size: 16px;
     line-height: 22px;
     background-color: black;
@@ -122,35 +134,87 @@
 
 }
 
-
-button {
+.github-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    border-radius: 40px; 
-   padding: 0px, 25px, 0px, 0px;
-   background-color: rgb(211, 205, 210);
-   border: none;
+   padding: 30px, 0px, 0px, 30px;
+   background-color: rgb(199, 194, 198);
    color: rgb(0, 0, 0); 
    font-size: 20px;
+   line-height: 27px;
+   text-decoration: none;
    margin-bottom: 10px;
-   width: 200px;
+   width: 170px;
    height: 48px;
    margin-top: 10px;
-   margin-bottom: 10px;
 }
+
+.github-btn:hover {
+    background-color: #EB557B;
+    color: white
+}
+
+.live-demo-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 40px; 
+   padding: 30px, 0px, 0px, 30px;
+   background-color: rgb(199, 194, 198);
+   color: rgb(0, 0, 0); 
+   font-size: 20px;
+   line-height: 27px;
+   text-decoration: none;
+   margin-bottom: 10px;
+   width: 140px;
+   height: 48px;
+   margin-top: 10px;
+}
+
+.live-demo-btn:hover {
+    background-color: #0B24F5;
+    color: white;
+    
+}
+
 
 .skills {
    display:flex;
    flex-direction: column;
-   align-items: center;
    justify-content: center;
-   line-height: 32px;
+   align-items: center;
+   height: 900px;
    background-color: antiquewhite;
    
 }
 
 .skills-list {
-   list-style-type: none;
    font-family: 'EB Garamond';
    font-size: 22px;
+   line-height: 32px;
+   margin-bottom: 20px;
+}
+
+.code-span {
+    background-color: blueviolet;
+    color: white;
+}
+
+.toolbox-span {
+    background-color: blue;
+    color: white;
+}
+
+.more-span {
+    background-color: pink;
+    color: white
+}
+
+.upcoming-span {
+    background-color: black;
+    color:white;
 }
 
 .time-to-talk {
@@ -159,6 +223,5 @@ button {
 }
 
 .contact-title {
-    align-self: center;
     font-size: 58px;
 }
