@@ -310,7 +310,7 @@ time {
 
 .skills {
     position: relative;
-    height: 802px;
+    min-height: 802px;
     background-color: white;
 }
 
@@ -456,7 +456,7 @@ address {
 
 .live-demo-button:hover img,
 .live-demo-button:focus img {
-    content: url(../images/icons/globe_white.svg)
+    content: url(images/icons/globe_white.svg)
 }
 
 .view-code-button:hover,
@@ -467,7 +467,7 @@ address {
 
 .view-code-button:hover img,
 .view-code-button:focus img {
-    content: url(../images/icons/github_icon_white.svg)
+    content: url(images/icons/github_icon_white.svg)
 }
 
 .read-article-button {
@@ -652,7 +652,7 @@ address {
     /*Skills section*/
 
     .skills {
-        height: 800px;
+        min-height: 800px;
     }
 
 
@@ -694,6 +694,17 @@ address {
         width: 300px;
 
     }
+
+    .skills li{
+        margin-right: 1em;
+    }
+}
+@media screen and (max-width: 810px) {
+   /*Skills section*/
+
+.skills ul {
+    width: 280px;
+}
 }
 
 @media screen and (max-width: 744px) {
@@ -703,7 +714,6 @@ address {
         margin-top: 13%;
         margin-left: 0;
     }
-
 
     header>div>p {
         margin-left: 0;
@@ -742,7 +752,6 @@ address {
             margin-left: 0;
         }
     
-
     .bright-ball {
         top: 5%;
         left: 60%;
@@ -754,7 +763,6 @@ address {
         margin-right: 1em;
     }
 
-
     /*Featured projects (main)*/
 
     .project-A-wrapper,
@@ -765,7 +773,6 @@ address {
         justify-content: center;
         max-width: 820px;
         height: fit-content;
-
     }
 
     main div {
@@ -777,8 +784,6 @@ address {
     .project-C-wrapper button {
         position: relative;
     }
-
-
 
     main h2 {
         font-size: 70px;
@@ -814,8 +819,8 @@ address {
         width: 200px;
         margin-top: 1em;
         margin-left: 0;
-
     }
+
     /*My words section*/
 
     .my-words-wrapper {
@@ -845,7 +850,6 @@ address {
             "article3" 
             "article4";
     }
-    
 
     .my-words-wrapper div {
         margin-left: 1em;
@@ -859,7 +863,35 @@ address {
         max-width: 440px;
         margin-bottom: 4rem;
     }
+
+    /*skills section*/
+
+    .skills {
+        min-height: 950px;
+    }
+
+    .skills h2 {
+        margin-bottom: 4rem;
+    }
+
+    .skill-list-wrap {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "code-list"
+            "toolbox-list"
+            "more-list"
+            "upcoming-list"
+        ;
+    }
+
+    .skills ul {
+        width: 300px;
+    }
     
+    /* does not push underlying element down. Why? Only works on .skills even when that has a responsive height
+    .skills ul:last-of-type {
+        margin-bottom: 200px;
+    }*/
 
 
     /*Footer*/
@@ -932,7 +964,11 @@ address {
     right: 0;
 }*/
 
+.skills h2 {
+    margin-top: 12%;
+}
     /*Footer*/
+
 
 }
 
@@ -941,6 +977,9 @@ address {
     .banner-pic {
         max-height: 230px;
         top: 76%;
+    }
+    .skills ul {
+        width: 270px;
     }
 }
 main img {
@@ -963,12 +1002,18 @@ main img {
     .tech {
         margin-top: 6rem;
     }
-
-
     .tech h2 {
         margin-bottom: 5rem;
     }
     .tech p {
         font-size: 0.9em;
+    }
+
+    .skills ul {
+        width: 240px;
+    }
+    .skills li {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
 }
