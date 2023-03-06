@@ -407,6 +407,7 @@ object-fit: cover;
 
 .profile-picture-footer {
   border-radius: 50%;
+  padding-right: 1em;
 }
 
 .p-footer {
@@ -557,11 +558,6 @@ align-items: unset;
     max-height: 100%;
   }
 
-  .profile-pic-wrapper {
-    grid-column-start: 1;
-    grid-row: 1 / span 2;
-  }
-
   .name-wrapper {
     grid-column-start: 2;
     align-self: center;
@@ -638,10 +634,17 @@ align-items: unset;
   margin-top: 120px;
 }
 
+.p-footer {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
 .social-media-links-footer {
+  grid-row-start: 3;
+  grid-column-start: 2;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-bottom: 140px;
 }
 
