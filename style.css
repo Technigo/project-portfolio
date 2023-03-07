@@ -10,9 +10,10 @@
 }
 
 body {
-    font-family: "Satoshi", sans-serif; /* Take out? SAns-serif really needed? */
+    font-family: "Satoshi", sans-serif; /* Take out? Sans-serif really needed? */
     display: flex;
     flex-direction: column;
+    background-color: rgb(240, 239, 225);
 }
 
 h1 { /* Place elsewhere? */
@@ -32,13 +33,15 @@ h2 {
 h3 {
     font-family: "Satoshi", sans-serif;
     font-size: 27px;
-    color:black;
+    color: rgb(185, 104, 133);
 }
 
 h4 {
     font-family: "Satoshi";
     font-size: 20px;
-    color:black;
+    color: rgb(185, 104, 133);
+    opacity: 70%;
+
 }
 
 p {
@@ -67,7 +70,10 @@ header {
 
 .header-img {
     display: none;
+    /* background-image: url("https://lh3.googleusercontent.com/iCFY-UlaQ4l9kEdxhz66GPCyp_NU_FGiWm1YOooCDrLH9zWtyXuB7mrq8mfsY719HChuvXAhwFfwcy9NhXbOEBBlNQoN_kdUPKldUpfbMFruYSrBAHeRqSA-J76a7iVZpfeuFPsp=w2400");
+    background-position: 0 20px; */
 }
+
 
 .profile {
     display: flex;
@@ -99,16 +105,17 @@ header {
     /* border: solid 1px pink; */
 }
 
-.profile-presentation span:nth-child(1) {
-    color: rgb(119, 119, 44);
+.profile-presentation a {
+    color: rgb(58, 53, 53);
     text-shadow:
-    0 0 20px rgb(159, 167, 97),
-    0 0 20px rgb(159, 167, 97),
-    0 0 25px rgb(159, 167, 97),
-    0 0 25px rgb(159, 167, 97),
-    0 0 50px rgb(159, 167, 97);
+    0 0 20px rgb(227, 234, 176),
+    0 0 20px rgb(227, 234, 176),
+    0 0 25px rgb(227, 234, 176),
+    0 0 25px rgb(227, 234, 176),
+    0 0 50px rgb(227, 234, 176);
     font-family: "EB Garamond";
-    font-weight: 500; 
+    font-weight: 500;
+    opacity: 80%;
 }
 
 .profile-presentation span:nth-child(2) {
@@ -205,15 +212,17 @@ flex-grow: 0; */
     margin: 0 auto 50px auto;
     justify-items: flex-start;
     margin-bottom: 80px;
-    border: solid 8px red;
+    border: solid 1px red;
 }
 
 .project-img {
+    width: 300px; /* min/max-width needed? */
+    height: 350px; /* min/max-width needed? */
     max-height: 350px;
-    width: 100%;
-    height: 100%;
+    /*object-position: 30%;*/
     object-fit: cover;
-    object-position: 50%;
+    justify-content: left;
+    border: solid 1px red;
 }
 
 .projects p {
@@ -225,7 +234,7 @@ flex-grow: 0; */
     display: inline;
     background-color: rgb(119, 119, 44);
     font-family: "Satoshi", sans-serif;
-    color: white;
+    color: rgb(240, 239, 225);
     margin: 10px 0 15px 0;
     font-weight: 500;
     font-size: 16px;
@@ -234,7 +243,7 @@ flex-grow: 0; */
     margin-bottom: 20px;
 }
 
-.demo-btn, .code-btn { 
+.btn { 
     display: flex;
     flex-direction: row;
     font-family: 'Satoshi', sans-serif;
@@ -246,34 +255,30 @@ flex-grow: 0; */
     border-radius: 50px;
     margin-top: 24px;
     vertical-align: middle;
-    background-color: #F5F5F5;
-    color: #333333;
+    color: rgb(119, 119, 44);    
     border: none;
     height: 48px;
     align-items: center;
 }
 
-.demo-btn p, .code-btn p { 
+.btn i:hover, i:active {
+    color: rgb(225, 240, 234);
+}
+
+.btn i {
+    font-size: 32px;
+    margin-right: 8px;
     color: rgb(119, 119, 44);
-    font-family: 'Satoshi', sans-serif;
-    font-size: 19px;
     display: inline;
-    
+    vertical-align: middle;
+    align-items: center;
 }
 
-.demo-btn i, .code-btn i {
-    margin-right: 10px;
-    color: rgb(119, 119, 44);    
+.btn:hover {
+    border: none;
+    background-color: rgb(185, 104, 133);
+    color: rgb(225, 240, 234);
 }
-
-.demo-btn i:hover, i:active, .code-btn i:hover, i:active {
-    color: rgb(185, 104, 133);
-}
-
-
-
-
-
 
     list-style: none;
     padding: 0;
@@ -301,7 +306,6 @@ flex-grow: 0; */
     gap: 143px; /* check */
     /* border: solid 1px pink; */
 }
-
 /* Skills MOBILE */
 
 .skills {
@@ -375,6 +379,13 @@ color: rgb(240, 230, 234);
     .tech h2, p {
         grid-column: 2/span 3;
     }
+
+    .project img {
+        width: 200px;
+        object-fit: cover;
+        object-position: 90% 0;
+        margin-right: 24px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -399,7 +410,7 @@ color: rgb(240, 230, 234);
         object-position: 10% 0;
     }
 
-    .iprofile {
+    .profile {
         flex-basis: 50%;
         height: 500px;
         justify-self: flex-start;
@@ -418,7 +429,7 @@ color: rgb(240, 230, 234);
         max-width: 100%;
         grid-column: 2/ span 4;
     }
-    
+
     .tech {
         display: grid;
         grid-template-columns: repeat(5, 20%);
@@ -436,5 +447,11 @@ color: rgb(240, 230, 234);
     .tech p {
         grid-column: 3 / span 2;
         align-self: center;
+    }
+
+    .project img {
+        width: 280px;
+        object-fit: cover;
+        margin-right: 40px;
     }
 }
