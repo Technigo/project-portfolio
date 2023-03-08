@@ -141,9 +141,6 @@ margin:20px;
   width: 330px;
   margin-bottom: 20px;
   margin-top: 20px;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .project-title {
@@ -332,13 +329,15 @@ margin:20px;
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) { /*tablets*/
+@media screen and (min-width: 768px)  { /*tablets (min-width: 768px) and (max-width: 991px)*/  
   .headerimg-container {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color:black; 
+    max-width:100%;
   }
+
   .header-image {
     display:flex;
     justify-content: center;
@@ -346,38 +345,21 @@ margin:20px;
     max-height: 450px;
     max-width: 990px;
     margin-top:0;
-  }
-
-  .header-info {  
-    display: grid;
-    grid-template-areas:
-      ". author-image header-container header-container ."
-      ". . . . .";
+    padding-right: 0;
   }
   
-  .author-image { grid-area: author-image; }
-  
-  .header-container {  
-    display: grid;
-    gap: 0px 0px;
-    grid-template-areas:
-      "name name name"
-      "header-title header-title header-title"
-      "header-title-part-two header-title-part-two header-title-part-two"
-      "p-info p-info p-info";
-    grid-area: header-container;
-    border:red 5px solid;
+  .author-image { 
+    margin-right:0; 
   }
   
-  .name { grid-area: name; }
+  .header-container { 
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    max-width: 900px; 
+  }
   
-  .header-title { grid-area: header-title; }
-  
-  .header-title-part-two { grid-area: header-title-part-two; }
-  
-  .info-about-me { grid-area: info-about-me; }
-
-  .p-info { grid-area: p-info; }
   
   
   /*
@@ -413,10 +395,6 @@ margin:20px;
 text-align: right;
 }
 
-.chatbot-img, .weather-img, .guess-img, .microscope-img, .lmx1b-img, .hol-img, .rdna-img {
-  display: flex;
-  align-items: left;
-}
 
 .chatbot-title, .weather-app, .guess-title{
   font-family: 'Satoshi', sans-serif;
