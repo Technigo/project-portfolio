@@ -1,3 +1,5 @@
+// Changing Header Image by Month
+
 const headerImage = document.getElementById("header-image");
 
 const today = new Date();
@@ -25,3 +27,24 @@ const imageToShow = () => {
 }
 
 imageToShow()
+
+// Scroll Up Button
+
+const upButton = document.getElementById("upButton");
+
+window.onscroll = () => {scrollFunction()};
+
+const scrollFunction = () => {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    upButton.style.display = "block";
+  } else {
+    upButton.style.display = "none"
+  }
+}
+
+const scrollUp = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop =0
+}
+
+upButton.addEventListener('click', scrollUp)
