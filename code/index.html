@@ -21,17 +21,19 @@
 
 <body>
 
-        <div class="headerimg-container">
+    <div class="headerimg-container">
         <img class= "header-image" src="assets/hero_image.jpg" alt="cell immunofluorescence">
-       </div>
+    </div>
 
-       <section class= "header-info" role="banner">
+ <section class= "header-info" role="banner">
         <img class="author-image" src="assets/jennifer.jpg" alt="author" >
         
-        <div class="header-container">
+    <div class="header-container">
         <h1 class="name">Jennifer Feenstra-Arengård</h1>
-        <h2 class="header-title"> Frontend Developer </h2>
-        <h2 class="header-title-part-two">+ Scientist</h2>
+        <h2 class="header-title">
+            <span class="title-part-one">Frontend Developer</span>
+            <span class="title-part-two"> <+ Scientist</span>
+          </h2>
         <p class="p-info"> I am a frontend developer with a background in laboratory research. 
             Specifically, I worked with drug development tools for breast cancer and the 
             genetic pathways that regulate embryonic limb formation. I believe my 
@@ -39,9 +41,9 @@
             hope if you find my portfolio interesting that you will contact me 
             through one of the links below.</p> 
       </div>
+ </section>
 
-    </section>
-      <div class="contact-logos">
+    <div class="contact-logos">
       
       <a href="https://www.linkedin.com/in/jennifer-feenstra-areng%C3%A5rd-299b1a60/" target="_blank" rel="noopener noreferrer">
           <img src="assets/linkdin.svg" alt="linkdin logo" class="linkdin-logo"></a>
@@ -53,52 +55,55 @@
         <img src="assets/StackOverflow.svg" alt="Stackoverflow logo" class="stack-logo"> </a>
 
      </div>
-    </section>
-        <div class="scroll-arrow">
-           <div><img src="assets/Vector1.png" alt="down arrow" class="down-arrow"> </div>
-           <div><p>Lets scroll</p></div>
-           <div>
+
+    <div class="scroll-arrow">
+        <div><img src="assets/Vector1.png" alt="down arrow" class="down-arrow"> </div>
+        <div><p>Lets scroll</p></div>
+        <div>
            <svg width="100" height="100">
            <rect x="10" y="10" width="100" height="5" fill="#1D01A7" />
-          </svg></div>
+          </svg>
         </div>
+    </div>
     
-        <section class="tech-container">
-            <h2 class="tech-title">Tech</h2>
-            <p>HTML, CSS, <span style="color: rgb(138, 138, 224);">Javascript,</span> Flexbox, ES6, <span style="color: rgb(235, 69, 94);">React, </span> Github, API's, pair-programming, <span style="color: rgb(89, 193, 222);">mob programming,</span> Adobe Illustrator, Photoshop</p>
-        </section>
+   <section class="tech-container">
+        <h2 class="tech-title">Tech</h2>
+        <p>HTML, CSS, <span style="color: rgb(138, 138, 224);">Javascript,</span> Flexbox, ES6, <span style="color: rgb(235, 69, 94);">React, </span> Github, API's, pair-programming, <span style="color: rgb(89, 193, 222);">mob programming,</span> Adobe Illustrator, Photoshop</p>
+   </section>
    
 
-        <div class="featured-projects-container" aria-roledescription="featured projects">
-            <h2 class="projects-title">Featured Projects</h2>
+    <section class="featured-projects" aria-roledescription="featured projects">
+        <h2 class="projects-title">Featured Projects</h2>
         
-            <div class="chatbot"> 
-                <div>
+        <div class="projects-wrapper"> 
+            <!-- Chatbot Project  -->
+            <div class="project-container">
                 <img src="assets/chatbot.jpg" alt="chat bot" class= "project-img">
-                <h3 class="project-title">Chatbot built in Javascript</h3>
+                <h3 class="project-title">Chatbot built with Javascript</h3>
                 <p class="project-description">The chat bot app is a conversational AI-powered tool 
                     designed to enhance user experience by providing instant, 
                     personalized, and automated responses to user inquiries.</p>
-                </div> 
+            
 
                 <div class="small-boxes">
                   <div class="small-box">HTML5</div>
                   <div class="small-box">CSS3</div>
                   <div class="small-box">React</div>
                   <div class="small-box">Node</div>
-                  
+                <div class="button-container">
                   <button class="git-button" aria-label="View Code" onclick="window.open('https://github.com/jenster5/project-chatbot','_blank')"></button>
                   <button class="netifly-button" aria-label="View Site" onclick="window.open('https://chat-bot-technigo.netlify.app/','_blank')"></button>
+                </div>
                 </div> 
-            </div>
-
-        <div class="weather-app"> 
+            </div> 
+        </div>
+            <!-- Weather app  -->
+        <div class="project-container"> 
             <div>
                 <img src="assets/weather.jpg" alt="weather application" class= "project-img">
                 <h3 class="project-title">Weather app built in Javascript</h3>
-                <p class="project-description">The chat bot app is a conversational AI-powered tool 
-                    designed to enhance user experience by providing instant, 
-                    personalized, and automated responses to user inquiries.</p>
+                <p class="project-description">The weather app works to deliver a real-time weather report including temperature and description for Stockholm, Swe, 
+                    Crestline, California, Tokyo, Japan and Colombo, Sri Lanka. Sunset and sunrise times are also shown for Stockholm. </p>
             </div>   
             
             <div class="small-boxes">
@@ -111,14 +116,12 @@
               <button class="netifly-button" aria-label="View Site" onclick="window.open('https://weather-app-technigo-jen.netlify.app/','_blank')"></button>
             </div>
         </div>
-            
-        <div class="guess-who"> 
+            <!-- Guess Who Project  --> 
+        <div class="project-container"> 
             <div>
                 <img src="assets/guesswho.jpg" alt="guess-who" class= "project-img">
                 <h3 class="project-title">Guess who game built in Javascript</h3>
-                <p class="project-description">The chat bot app is a conversational AI-powered tool 
-                    designed to enhance user experience by providing instant, 
-                    personalized, and automated responses to user inquiries.</p>
+                <p class="project-description">A playable guess who game where players can eliminate contestents based on characteristics such as hair color and accesories. See if you can pick the correct contestent and win the game. </p>
             </div>
        
             <div class="small-boxes">
@@ -131,36 +134,43 @@
               <button class="netifly-button" aria-label="View Site" onclick="window.open('https://guess-who-game-technigo.netlify.app/', '_blank')"></button>
             </div>
         </div>
-    </div>
+    </section>
 
     <section class="my-words-section">
         <h2 class="my-words-title">My Words and Select Publications</h2>
          
         <div>
             <img src="assets/microscope.jpg" alt="microscope" class="microscope-img">
-            <h3 class="my-words-subtitles">Do scientists make good coders?</h3>
-            <p class="my-words">When I figure this out I will let you know</p>
+            <h3 class="my-words-subtitles">Would a scientists make a good front end developer?</h3>
+            <p class="my-words">A piece I wrote while trying to sort out my thoughts on the first few weeks of my coding boot camp. I wondered how similar or dissimilar for that matter 
+                working in a laboratory and working as a front end developer could possibly be? </p>
             <button class="article-button" onclick="window.open('https://pubmed.ncbi.nlm.nih.gov/22417325/','_blank')">Read Article</button>
         </div>
        
         <div>
             <img src="assets/lmx1b.jpg" alt="mouse limb development" class="lmx1b-img">
             <h3 class="my-words-subtitles">Detection of genes regulated by Lmx1b during limb dorsalization</h3>
-            <p> somethhing here about the paper </p>
+            <p>Ever wonder why the top and bottom of your hand have very different shapes? This different anatomy and functionality comes from a gene called Lmx1b. 
+                Studying the genetic pathways that control how limbs are formed has helped us understand many basic pathways for organ development. 
+                This study is one of many that hopes to contribute to the basic science that will lead to a bright new future of gene therapy in the womb.    </p>
             <button class="article-button" aria-label= "Read Article" onclick="window.open('https://pubmed.ncbi.nlm.nih.gov/22417325/','_blank')">Read Article</button>
         </div>
         
         <div>
             <img src="assets/hol.jpg" alt="endosomes and limb development" class="hol-img">
             <h3 class="my-words-subtitles">ESCRT-II/Vps25 constrains digit number by endosome-mediated selective modulation of FGF-SHH signaling</h3>
-            <p> somethhing here about the paper </p>
+            <p> Another facinating question why do we have 5 fingers? Why not 4? Why not 6? The interaction of Sonic Hedgehog (SHH) and Fibroblast Growth Factor (FGF) is a well known genetic loop that controls this process, 
+                and changes in this loop will lead to an abnormal number of fingers. Here we look at how polydactly meaning hands with more than five fingers can occur using a mouse model which has polydactly.  </p>
             <button class="article-button" aria-label= "Read Article" onclick="window.open('https://pubmed.ncbi.nlm.nih.gov/25373905/','_blank')">Read Article</button>
         </div>
         
         <div>
             <img src="assets/rdna.jpg" alt="ribosome in breastcancer" class="rdna-img">
             <h3 class="my-words-subtitles">Ribosome biogenesis during cell cycle arrest fuels EMT in development and disease</h3>
-            <p> somethhing here about the paper </p>
+            <p> EMT (epithelial mesenchymal transitoin) is when cells change state.This is a tool used by devloping tumors to leave the main tumor and travel through the bloodstream looking for 
+                secondary sites to metastisize. Using a possible new type of chemothereapy agent we tested if blocking ribosome biogenesis could in fact stop tumors from creating metastisis in 
+                a mouse model of breast cancer. This inhibitor shows great promise for future breast cancer treatments and should be tested further.
+            </p>
             <button class="article-button" aria-label= "Read Article" onclick="window.open('https://pubmed.ncbi.nlm.nih.gov/31068593/','_blank')">Read Article</button>
         </div>
         
