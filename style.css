@@ -449,20 +449,21 @@ ul {
   
     .header-image-container {
         display: flex;
-        object-fit: cover;   
+        object-fit: cover;    
             
     }
 
     /*FIX THIS IMAGE LATER */
 
-    .header-image img { 
+     .header-image img { 
         display: flex; 
         object-fit: cover;
         width: 100%;
-        height: 300px;
+        height: 400px;
         aspect-ratio: 1/0.3;
     }  
 
+    
   
     .profile-picture img {
         min-width: 164px;
@@ -647,22 +648,34 @@ ul {
 THIS IS THE LAST THING I TRIED */
 
      header {
-        display: grid;
+        /* display: grid;
         grid-template-columns: 1fr 1fr;
-        ;
+        ; */
         /* align-items: center; */
-     }
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        
+    }
 
      .header-image-container {
-        display: flex;
-        object-fit: cover;
-     }
+        /* display: flex;
+        object-fit: cover; */
+        flex-basis: 50%;
+        box-sizing: border-box;  }
+
+    .header-section {
+        flex-basis: 50%;
+        box-sizing: border-box; 
+    }
 
      .header-image img {
         display: inline;
         object-fit: cover;
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 1/1.9;        
+        object-position: 40% 50%; 
      }
 
 
