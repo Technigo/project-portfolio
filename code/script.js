@@ -46,9 +46,12 @@ PROJECT.forEach((project) => {
 ${project.projectSummary}
 </p>
 <ul>
-<li>${project.tech[0]}</li>
-<li>${project.tech[1]}</li>
-<li>${project.tech[2]}</li>
+${project.tech.map((singleTech) => {
+return `<li>${singleTech}</li>`
+ }).join('') 
+//template literals use the toString() method which by default joins the returned array by map with a  ,.
+// To avoid this "problem" you can use join('')
+}
 </ul>
 <div class="project-buttons">
             <a
