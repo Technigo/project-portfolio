@@ -8,6 +8,8 @@ const PROJECT = [
     projectSummary:
       "A weather site that fetch information from Open Weather API. It show current and 5-day forecast and you can search for desired city. This project was done in pairs, to learn about Gitub branches and merging. We had a specific design to follow. ",
     tech: ["HTML", "CSS3", "JAVASCRIPT"],
+    live: "https://comfy-weatherapp-ea57d9.netlify.app",
+    code: "https://github.com/code-and-cats/project-weather-app",
   },
   {
     img: "assets/guess-who.jpg",
@@ -16,6 +18,8 @@ const PROJECT = [
     projectSummary:
       "Create a game that have a secret person and make it sort out the correct characters based on different values. A lot of practice with filtering and functions in this project",
     tech: ["HTML", "CSS3", "JAVASCRIPT"],
+    live: "https://guess-who-kawaii-edition.netlify.app",
+    code: "https://github.com/MalinSkill/project-guess-who",
   },
   {
     img: "assets/chatbot.jpg",
@@ -24,6 +28,8 @@ const PROJECT = [
     projectSummary:
       "This chat bot is a conversation tool, were you can get suggestion for dinner recipes. For this project the starter code was provided. The challenge to make it work using Javascript, then adapting your own theme.",
     tech: ["HTML", "CSS3", "JAVASCRIPT"],
+    live: "https://dinner-guide.netlify.app/",
+    code: "https://github.com/MalinSkill/project-chatbot",
   },
 ];
 
@@ -46,7 +52,7 @@ ${project.projectSummary}
 </ul>
 <div class="project-buttons">
             <a
-              href="https://github.com/MalinSkill/project-chatbot"
+              href=${project.code}
               target="blank"
               class="view-code"
             >
@@ -65,7 +71,7 @@ ${project.projectSummary}
               View the code
             </a>
             <a
-              href="https://dinner-guide.netlify.app"
+              href=${project.live}
               target="blank"
               class="live-demo"
             >
