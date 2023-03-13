@@ -57,7 +57,7 @@ body {
 .aboutbox {
     display: flex;
     flex-direction: column;
-    padding: 0px 23px 0px 23px;
+    padding: 0px 20px 0px 20px;
 }
 
 h1 {
@@ -69,7 +69,7 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 27px;
     line-height: 43px;
     font-weight: 900;
     font-family: SatoshiBlack;
@@ -106,18 +106,32 @@ p {
     filter: invert(0%) sepia(8%) saturate(7500%) hue-rotate(355deg) brightness(103%) contrast(110%);
 }
 
-/* ///////////////////////////////// VECTOR PIL (LETS SCROLL) /////////////////////////////////////// */
+/* ///////////////////////////////// VECTOR ARROW (LETS SCROLL) /////////////////////////////////////// */
 
-.vector-pil {
+.vector-arrow {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 30px 140px 30px;
+    padding: 20px 30px 40px 30px;
     font-weight: bold;
     color: #EB5577;
     font-size: 16px;
+    position: absolute;
+    animation: bounce 1s infinite alternate;
+    align-items: center;
+    justify-content: center;
+    left: calc(50% - 138px / 2);
+    top: 940px;
+
 }
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
 
 /* ///////////////////////////////// PINK NEWS CIRCLE FOR BIG SCREENS /////////////////////////////////////// */
 
@@ -155,7 +169,7 @@ p {
     color: #0B24F5;
     text-align: center;
     font-family: SatoshiBold;
-    padding: 80px 89px 99px 79px;
+    padding: 80px 89px 99px 60px;
 }
 
 /*/////////////////////////////////// FEATURED PROJECTS PART /////////////////////////////////////////*/
@@ -452,7 +466,7 @@ h5 {
 
 .title {
     text-align: left;
-    padding: 0px 48px 48px 24px;
+    padding: 0px 40px 40px 24px;
 }
 
 .title2 {
@@ -591,7 +605,7 @@ h5 {
         position: relative;
     }
 
-    .vector-pil {
+    .vector-arrow {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -601,7 +615,9 @@ h5 {
         color: #EB5577;
         position: absolute;
         top: 910px;
-        left: calc(50% - 70px);
+        left: calc(50% - 138px / 2);
+        top: 85%;
+
     }
 
     .thingsiknow {
@@ -707,6 +723,7 @@ h5 {
         display: flex;
         flex-direction: row;
     }
+
 }
     
 /* ----------- MEDIA QUARRIES FOR NORMAL LAPTOPS ---------*/
@@ -724,7 +741,7 @@ h5 {
         position: relative;
     }
 
-    .vector-pil {
+    .vector-arrow {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -733,8 +750,9 @@ h5 {
         font-weight: bold;
         color: #EB5577;
         position: absolute;
-        top: 700px;
         left: calc(50% - 70px);
+        top: 85%;
+
     }
 
     .newscircle {
@@ -747,7 +765,7 @@ h5 {
         font-family: SatoshiBlack;
         position: absolute;
         top: 200px;
-        left: calc(50% + 250px);
+        left: calc(50% + 180px);
     }
 
     .laptopinfo {
@@ -766,9 +784,10 @@ h5 {
     
    .about {
         display: inline-block;
-        width: 500px;
-        padding: 10px;
+        width: 470px;
+        padding: 20px;
    }
+
 
    h5 {
         font-size: 32px;
@@ -817,7 +836,7 @@ h5 {
         width: 100%;
         align-items: center;
         justify-content: left;
-        padding: 230px 0px 0px 7%;
+        padding: 110px 0px 0px 7%;
     }
 
     .techskills {
@@ -872,7 +891,7 @@ h5 {
 
 @media (min-width: 1290px) {
 
-    .vector-pil {
+    .vector-arrow {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -927,5 +946,12 @@ h5 {
     .pinkandblue-buttons {
         display: flex;
         flex-direction: row;
+    }
+    .personal-info {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: left;
+        padding: 170px 0px 0px 7%;
     }
 }
