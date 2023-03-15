@@ -6,45 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" type="text/css" href="reset.css" >
     <link rel="stylesheet" type="text/css" href="style.css" >
-    
+   
+    <meta property ="og:title" content="Jennifer's Portfolio">
+    <meta property ="og:description" content="The portfolio page of Jennifer Feenstra-Arengård a frontend web developer">
+    <meta property ="og:image" content="">
+    <title>Jennifer Feenstra-Arengård</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
     
-    <meta property ="og:title" content="Jennifer's Portfolio">
-    <meta property ="og:description" content="The portfolio page of Jennifer Feenstra-Arengård a frontend developer and scientist">
-    <meta property ="og:image" content="">
-
-    <title>Jennifer Feenstra-Arengård</title>
-
 </head>
 
 <body>
-<div class="wrapper">
-    <div class="header-img-container">
+  <div class="wrapper">
+ <!-- Header -->
+    <header>
+      <section class="profile-container">
+    
+      <div class="header-img-container">
         <img class= "header-image" src="assets/hero_image.jpg" alt="cell immunofluorescence">
-    </div>
+      </div>
 
- <section class= "header-info" role="banner">
-        <img class="author-image" src="assets/jennifer.jpg" alt="author" >
-        
-    <div class="header-container">
-        <h1 class="name">Jennifer Feenstra-Arengård</h1>
-        <h2 class="header-title">
-            <span class="title-part-one">Frontend Developer</span>
-            <span class="title-part-two"> + Scientist</span>
-          </h2>
-        <p class="p-info"> I am a frontend developer with a background in laboratory research. 
+ <section class= "intro-section" role="banner">
+   <div class="profile-and-image">
+     <img class="author-image" src="assets/jennifer.jpg" alt="author" >
+   <div class="about-me-text">
+      <h1>Jennifer Feenstra-Arengård</h1>
+      <h2>Frontend Developer</h2>
+      <h3>+ Scientist</h3>
+     </div>
+   </div>
+     
+   <div class="summary">
+   <p class="p-info"> I am a frontend developer with a background in laboratory research. 
             Specifically, I worked with drug development tools for breast cancer and the 
             genetic pathways that regulate embryonic limb formation. I believe my 
             diverse background gives me a unique standing in the job market and I 
             hope if you find my portfolio interesting that you will contact me 
             through one of the links below.</p> 
-      </div>
-
+      
 
     <div class="contact-logos">
-      
       <a href="https://www.linkedin.com/in/jennifer-feenstra-areng%C3%A5rd-299b1a60/" target="_blank" rel="noopener noreferrer">
           <img src="assets/linkdin.svg" alt="linkdin logo" class="linkdin-logo"></a>
 
@@ -53,9 +57,9 @@
       
       <a href="https://stackoverflowteams.com/c/technigo/users/441/?tab=profile" target="_blank" rel="noopener noreferrer">
         <img src="assets/StackOverflow.svg" alt="Stackoverflow logo" class="stack-logo"> </a>
-
      </div>
- </section>
+    </div>
+ 
 
     <div class="scroll-arrow">
         <div><img src="assets/Vector1.png" alt="down arrow" class="down-arrow"> </div>
@@ -65,44 +69,59 @@
            <rect x="10" y="10" width="100" height="5" fill="#1D01A7" />
           </svg>
         </div>
-    </div>
-    
-   <section class="tech-container">
-        <h2 class="tech-title">Tech</h2>
-        <p>HTML, CSS, <span style="color: rgb(138, 138, 224);">Javascript,</span> Flexbox, ES6, <span style="color: rgb(235, 69, 94);">React, </span> Github, API's, pair-programming, <span style="color: rgb(89, 193, 222);">mob programming,</span> Adobe Illustrator, Photoshop</p>
-   </section>
+      </div>
+    </section>
+  </section>
+</header>
+
+<!-- Tech -->
+<section class="tech-section">
+   <h2>Tech</h2>
+   <p>HTML, CSS, <span style="color: rgb(138, 138, 224);">Javascript,</span> 
+    Flexbox, ES6, <span style="color: rgb(235, 69, 94);">React, </span> Github, 
+    API's, pair-programming, <span style="color: rgb(89, 193, 222);">mob programming,</span> 
+    Adobe Illustrator, Photoshop</p>
+</section>
    
-
+<!-- Projects -->
     <section class="featured-projects" aria-roledescription="featured projects">
-        <h2 class="projects-title">Featured Projects</h2>
-        
-            <!-- Chatbot Project  -->
-            <div class="project-container">
+        <h2>Featured Projects</h2>
+    
+        <div class="big-project-container">
+            <!-- Chatbot -->
+            <div class="single-project-container">
+              <div class = project-image>
                 <img src="assets/chatbot.jpg" alt="chat bot" class= "project-img">
-
-            <div class="projects-wrapper">
+              </div>
+            
+              <div class="project-content">
                 <h3 class="project-title">Chatbot built with Javascript</h3>
                 <p class="project-description">The chat bot app is a conversational AI-powered tool 
                     designed to enhance user experience by providing instant, 
                     personalized, and automated responses to user inquiries.</p>
-            
+              </div>
 
                 <div class="small-boxes">
                   <div class="small-box">HTML5</div>
                   <div class="small-box">CSS3</div>
                   <div class="small-box">React</div>
                   <div class="small-box">Node</div>
+               
                 <div class="button-container">
                   <button class="git-button" aria-label="View Code" onclick="window.open('https://github.com/jenster5/project-chatbot','_blank')"></button>
                   <button class="netifly-button" aria-label="View Site" onclick="window.open('https://chat-bot-technigo.netlify.app/','_blank')"></button>
                 </div>
                 </div> 
-            </div> 
-        </div>
+              </div>
+             
+        
             <!-- Weather app  -->
-        <div class="project-container"> 
-                <img src="assets/weather.jpg" alt="weather application" class= "project-img">
-            <div class="projects-wrapper">
+        <div class="single-project-container"> 
+            <div class = project-image>
+              <img src="assets/weather.jpg" alt="weather application" class= "project-img">
+            </div>
+            
+             <div class="project-content">
                 <h3 class="project-title">Weather app built in Javascript</h3>
                 <p class="project-description">The weather app works to deliver a real-time weather report including temperature and description for Stockholm, Swe, 
                     Crestline, California, Tokyo, Japan and Colombo, Sri Lanka. Sunset and sunrise times are also shown for Stockholm. </p>
@@ -113,15 +132,22 @@
               <div class="small-box">CSS3</div>
               <div class="small-box">React</div>
               <div class="small-box">Node</div>
-
+            </div>
+            
+            <div class="button-container">
               <button class="git-button" aria-label="View Code" onclick="window.open('https://github.com/jenster5/project-weather-app','_blank')"></button>
               <button class="netifly-button" aria-label="View Site" onclick="window.open('https://weather-app-technigo-jen.netlify.app/','_blank')"></button>
-            </div>
+            </div>           
+          </div>
         </div>
+
             <!-- Guess Who Project  --> 
-        <div class="project-container">
-                <img src="assets/guesswho.jpg" alt="guess-who" class= "project-img">
-            <div class="projects-wrapper">
+        <div class="single-project-container">
+            <div class = project-image>
+              <img src="assets/guesswho.jpg" alt="guess-who" class= "project-img">
+            </div>
+
+            <div class="project-content">
                 <h3 class="project-title">Guess who game built in Javascript</h3>
                 <p class="project-description">A playable guess who game where players can eliminate contestents based on characteristics such as hair color and accesories. See if you can pick the correct contestent and win the game. </p>
             </div>
@@ -131,42 +157,45 @@
               <div class="small-box">CSS3</div>
               <div class="small-box">React</div>
               <div class="small-box">Node</div>
-           
+            </div>
+            <div class="button-container">
               <button class="git-button" aria-label="View Code" onclick="window.open('https://github.com/jenster5/project-guess-who', '_blank')"></button>
               <button class="netifly-button" aria-label="View Site" onclick="window.open('https://guess-who-game-technigo.netlify.app/', '_blank')"></button>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="my-words-section">
-        <h2 class="my-words-title">My Words and Select Publications</h2>
-         
-        <div>
+        <h1>My Words and Select Publications</h1>
+      <div class="articles-container">
+        <article>
             <img src="assets/microscope.jpg" alt="microscope" class="microscope-img">
             <h3 class="my-words-subtitles">Would a scientists make a good front end developer?</h3>
             <p class="my-words">A piece I wrote while trying to sort out my thoughts on the first few weeks of my coding boot camp. I wondered how similar or dissimilar for that matter 
                 working in a laboratory and working as a front end developer could possibly be? </p>
             <button class="article-button" onclick="window.open('https://pubmed.ncbi.nlm.nih.gov/22417325/','_blank')">Read Article</button>
-        </div>
+        </article>
        
-        <div>
+        <article>
             <img src="assets/lmx1b.jpg" alt="mouse limb development" class="lmx1b-img">
             <h3 class="my-words-subtitles">Detection of genes regulated by Lmx1b during limb dorsalization</h3>
             <p>Ever wonder why the top and bottom of your hand have very different shapes? This different anatomy and functionality comes from a gene called Lmx1b. 
                 Studying the genetic pathways that control how limbs are formed has helped us understand many basic pathways for organ development. 
                 This study is one of many that hopes to contribute to the basic science that will lead to a bright new future of gene therapy in the womb.    </p>
             <button class="article-button" aria-label= "Read Article" onclick="window.open('https://pubmed.ncbi.nlm.nih.gov/22417325/','_blank')">Read Article</button>
-        </div>
+        </article>
         
-        <div>
+        <article>
             <img src="assets/hol.jpg" alt="endosomes and limb development" class="hol-img">
             <h3 class="my-words-subtitles">ESCRT-II/Vps25 constrains digit number by endosome-mediated selective modulation of FGF-SHH signaling</h3>
             <p> Another facinating question why do we have 5 fingers? Why not 4? Why not 6? The interaction of Sonic Hedgehog (SHH) and Fibroblast Growth Factor (FGF) is a well known genetic loop that controls this process, 
                 and changes in this loop will lead to an abnormal number of fingers. Here we look at how polydactly meaning hands with more than five fingers can occur using a mouse model which has polydactly.  </p>
             <button class="article-button" aria-label= "Read Article" onclick="window.open('https://pubmed.ncbi.nlm.nih.gov/25373905/','_blank')">Read Article</button>
-        </div>
+        </article>
         
-        <div>
+        <article>
             <img src="assets/rdna.jpg" alt="ribosome in breastcancer" class="rdna-img">
             <h3 class="my-words-subtitles">Ribosome biogenesis during cell cycle arrest fuels EMT in development and disease</h3>
             <p> EMT (epithelial mesenchymal transitoin) is when cells change state.This is a tool used by devloping tumors to leave the main tumor and travel through the bloodstream looking for 
@@ -174,17 +203,14 @@
                 a mouse model of breast cancer. This inhibitor shows great promise for future breast cancer treatments and should be tested further.
             </p>
             <button class="article-button" aria-label= "Read Article" onclick="window.open('https://pubmed.ncbi.nlm.nih.gov/31068593/','_blank')">Read Article</button>
-        </div>
-        
-    
-            
+        </article>
+      </div>       
     </section>
 
-
+ <!-- Skills section -->
     <section class="skills">
-        <h2 class="skills-title">Skills</h2>
-         
-        <div class="skills-container">
+      <h2>Skills</h2>
+         <div class="skills-container">
             <div class="code-list">
             <h3 class="list-title-one">Code</h3>  
                 <p>HTML5</p>
@@ -195,8 +221,7 @@
             </div>
 
             <div class="toolbox-list">
-            <h3 class="list-title-two">Toolbox</h3>
-           
+              <h3 class="list-title-two">Toolbox</h3>
                 <p>Adobe Photoshop</p>
                 <p>Adobe Illustrator</p>
                 <p>Figma</p>
@@ -204,35 +229,31 @@
             </div>
             
             <div class="laboratory-list">
-            <h3 class="list-title-one">Laboratory</h3> 
-            
+              <h3 class="list-title-one">Laboratory</h3> 
                 <p>Microsurgery</p>
                 <p>Confocal microscopy</p>
                 <p>Cell culture</p>
                 <p>Animal Husbandry</p>
                 <p>Preclinical phase drug testing</p> 
-        </div>
+            </div>
             
-        <div class="upcoming-list">
+           <div class="upcoming-list">
             <h3 class="list-title-two">Upcoming</h3>
-            
-                <p>Redux</p>
-                <p>Node.js</p>
-                <p>Python</p>
-        </div>
-           
-
+               <p>Redux</p>
+               <p>Node.js</p>
+               <p>Python</p>
+            </div>
         </div>
     </section>
     
     <section class="Contact me">
-        <div class="contact-me-container">
-            <h2 class="talk-title">Get in Touch</h2>
-            <img class="author-image-footer" src="assets/jennifer.jpg" alt="author" >
-            <h1 class="name">Jennifer Feenstra-Arengård</h1>
-            <h2 class="header-title"> Frontend Developer </h2>
-            <h2 class="header-title-part-two">+ Scientist</h2>
-            <p class="info">sgjennifer@hotmail.com</p>
+      <div class="contact-me-container">
+        <h2 class="talk-title">Get in Touch</h2>
+          <img class="author-image-footer" src="assets/jennifer.jpg" alt="author" >
+          <h1 class="name">Jennifer Feenstra-Arengård</h1>
+          <h2 class="header-title"> Frontend Developer </h2>
+          <h2 class="header-title-part-two">+ Scientist</h2>
+          <p class="info">sgjennifer@hotmail.com</p>
             <div class="botttom-logos">
             <a href="https://www.linkedin.com/in/jennifer-feenstra-areng%C3%A5rd-299b1a60/" target="_blank" rel="noopener noreferrer">
                 <img src="assets/linkdin.svg" alt="linkdin logo" class="linkdin-logo"></a>
@@ -243,7 +264,7 @@
             <a href="https://stackoverflowteams.com/c/technigo/users/441/?tab=profile" target="_blank" rel="noopener noreferrer">
               <img src="assets/StackOverflow.svg" alt="Stackoverflow logo" class="stack-logo"> </a>
             </div>
-        </div>
+      </div>
     </section>
 
 </div>
