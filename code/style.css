@@ -36,7 +36,7 @@ body {
   margin-left: 100px;
 }
 
-.about-me-text h1{
+.about-me-text h1 {
   font-family: 'Satoshi', sans-serif;
   font-size: 1.65rem;
   font-weight: 700;
@@ -226,7 +226,8 @@ margin:20px;
   font-family: 'EB Garamond';
   font-size: 1.375rem;
   font-weight: 400;
-  padding:10px;
+  padding:15px;
+  margin:5px;
 }
 .my-words-section h1{
   font-family: 'Satoshi', sans-serif;
@@ -364,79 +365,100 @@ margin:20px;
 
   .header-image {
     display:flex;
-    max-height: 450px;
+    max-height: 300px;
     margin-top:0;
    
   }
-  
+
+  .profile-container {
+    margin: auto 102px;
+  }
+
   .author-image { 
-    margin-right:0; 
-    margin-bottom: 0;
+    margin-right:5px; 
+    margin-top: 15px;
   }
   
-  .about-me-text h1 {
-    position:absolute;
-    top: 45%;
-    right: 20%;
+  .profile-and-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
-  .about-me-text h2{
-    position:absolute;
-    top: 48%;
-    right: 25%;
-  }
+  
 
-  .about-me-text h3{
-    position:absolute;
-    top: 52.5%;
-    right: 50%;
-  }
+  .tech-section p {
+    margin-right: 50px;
+    margin-left: 50px;  }
 
-  .featured-projects h2 {
-   text-align: center;
-  }
-
-
-
-
-  .single-project-container {
-position:relative
-}
-
+  
 .project-img{
   align-items: left;
+  margin-left:0 !important;
+  padding-left: 0 !important;
+
+}
+.featured-projects h2{ 
+ text-align: center;
+
 }
 
-.project-title {
-position:absolute;
-left:48%;
-top:8%;
+/*.big-project-container{
+display:grid
+grid-template:inline;
+}
+.single-project-container {
+flex-wrap: wrap;
+
+}
+
+.project-image{
+align-items: flex-start;
+ }
+ .project-content{
+align-content: center;
+justify-content: center;
+ }
+
+.button-container {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 24px;
 }
 
 .project-description {
-  position:absolute;
-  left:48%;
-  top:25%;
+  
   }
 
 .small-boxes{
-  position:absolute;
-  left:48%;
-  top:80%;
-}
-.button-container{
-  display: inline-block;
+  
 }
 
+*/
 .skills-container{
-  display:flex;
- flex-direction: columns;
- flex-wrap: wrap;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    margin: auto 150px;
 }
 
 .code-list, .toolbox-list, .laboratory-list, .upcoming-list{
-  width: 350px;
+  align-self: flex-start;
 }
 
+.talk-title {
+  font-size: 3.5rem;
+  padding-top:20px;
+}
+.about-me-text{
+  display:flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+}
 }
 
 @media screen and (min-width: 992px)/*large tablets small desktop (min-width: 992px) and (max-width: 1199px)*/
