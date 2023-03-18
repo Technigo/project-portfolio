@@ -1,576 +1,756 @@
+@import url("satoshi.css");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Shadows+Into+Light&display=swap");
+
 @font-face {
-    font-family: SatoshiBold;
-    font-weight: bold;
-    src: url("./fonts/Satoshi-Bold.otf");
-  }
-  
-  @font-face {
-    font-family: SatoshiMedium;
-    font-weight: medium;
-    src: url("./fonts/Satoshi-Medium.otf");
-  }
-  
-  @font-face {
-    font-family: SatoshiBlack;
-    font-weight: bolder;
-    src: url("./fonts/Satoshi-Black.otf");
-  }
-  
-  @font-face {
-    font-family: EBGaramondRegular;
-    src: url("./fonts/EBGaramond-Regular.ttf");
-  }
+  font-family: SatoshiBold;
+  font-weight: bold;
+  src: url("../fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf");
+}
+
+@font-face {
+  font-family: SatoshiMedium;
+  font-weight: medium;
+  src: url("../fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");
+}
+
+@font-face {
+  font-family: SatoshiBlack;
+  font-weight: bolder;
+  src: url("../fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf");
+}
+
+:root {
+  --primary-color: rgb(237, 233, 213);
+  --secondary-color: rgb(231, 171, 154);
+  --tertiary-color: rgb(223, 120, 87);
+  --standard-white-color: rgb(97, 113, 67);
+
+  --heading-blue: #6e7cff;
+  --heading-pink: salmon;
+
+  --hover-pink: salmon;
+  --hover-blue: #6e7cff;
+}
+
+a:link {
+  text-decoration: none;
+}
 
 body {
-    font-family: SatoshiBold;
-    background-color: transparent;
-    width: 100%;
+  font-family: "EB Garamond", serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow-x: hidden;
+  background-color: var(--primary-color);
 }
 
-.top-container {
-    background-color: rgb(255, 244, 210);
-    display: grid;
-    padding: 0px;
-    grid-gap: 5px;
+section {
+  display: inline-block;
 }
 
-.top-container p {
-    margin-left: 10px;
-    margin-right: 10px;
+/* PRESENTATION */
+
+.introduction {
+  height: 980px;
+  width: 100%;
+  position: relative;
+  background-color: var(--primary-color);
 }
 
-    .top-container h3  {
-        color: rgb(204, 157, 255);
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .frontend-developer {
-        font-size: larger;
-        color: black;
-    }
-
-    .presentation {
-        display: grid;
-        background: rgb(255, 244, 210);
-        padding: 10px;
-        font-family: 'EB Garamond', serif;
-    }
-
-
-    
-    .links {
-        display: flex;
-        background: rgb(255, 244, 210);
-        padding: 5px;
-        align-items: row;
-        justify-content: center;
-        gap: 20px;
-        grid-row: 5;
-    }
-
-/*Picture that only shows when tablet or desktop*/
-    .picture-big {
-       display: none;
-    }
-
-        .emilia-img {
-            display: flex;
-            border-radius: 50%;
-            height: 150px;
-            margin-top: 20px;
-        }
-
-    .scroller {
-        display: grid;
-        background: rgb(255, 244, 210);
-        padding: 10px;
-        justify-content: center;
-        grid-row: 6;
-    }
-
-        .lets-scroll {
-            border-bottom: 1px solid;
-            color: salmon;
-        }
-
-
-.highlights {
-    background: rgb(229, 209, 250);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
-    padding: 10px;
-}
-    .h-headline {
-        display: grid;
-        background: rgb(229, 209, 250);
-        justify-content: center;
-        font-size: xx-large;
-    }
-
-    .h-headline h1 {
-        color:rgb(255, 244, 210);
-    }
-
-    li {
-        list-style-type: none;
-    }
-
-    .h-skills{
-        display: grid;
-        background: rgbrgb(229, 209, 250);
-        padding: 25px;
-        margin-bottom: 50px;
-    }
-
-    .js-mark {
-        background-color:rgb(120, 120, 255);
-    }
-    .mp-mark {
-        background-color: #fa8072;
-    }
-
-.projects {
-    background: rgb(255, 244, 210);
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px;
-    grid-gap: 5px;
+.container {
+  margin: 200px 60px;
 }
 
-.picture img {
-    width:280px;
-    height:100%;
+.profile-picture {
+  height: 164px;
+  min-width: 164px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.projects h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    justify-content: center;
-    font-size: 48px;
-    color: salmon;
+.about-me {
+  display: flex;
+  flex-direction: row;
 }
 
-.HTML5 {
-    background-color: black;
-    color: white;
+.text-1 {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto 20px;
 }
 
-.CSS3 {
-    background-color: black;
-    color: white;
+.text-1 h1 {
+  font-family: "SatoshiBold";
+  font-size: 28px;
+  
+  font-weight: 700;
+  color: var(--heading-blue);
 }
 
-.JavaScript {
-    background-color: black;
-    color: white;
-}
-.Mob-programming {
-    background-color: black;
-    color: white;
-}
-.API {
-    background-color: black;
-    color: white;
-}
-.Pair-programming {
-    background-color: black;
-    color: white;
+.text-1 h2 {
+  font-family: "SatoshiBlack";
+  font-size: 32px;
+  font-weight: 900;
+  
 }
 
-.skills-listed h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    justify-content: center;
-    font-size: 48px;
-    color: salmon;
+.text-1 h3 {
+  font-family: "SatoshiMedium";
+  font-size: 24px;
+  font-weight: 400;
+  
+  color: rgb(78, 76, 76);
 }
 
-    .p-1 {
-        display: grid;
-        background: rgb(255, 244, 210);
-        padding: 10px;
-    }
-
-    .p-2{
-        display: grid;
-        background: rgb(255, 244, 210);
-        padding: 10px;
-    }
-
-    .p-3 {
-        display: grid;
-        background: rgb(255, 244, 210);
-        padding: 10px;
-    }
-
-    .p-4 {
-        display: grid;
-        background: rgb(255, 244, 210);
-        padding: 10px;
-    }
-
-    .p-5 {
-        display: grid;
-        background: rgb(255, 244, 210);
-        padding: 10px;
-    }
-
-    button {
-        display: flex;
-        width: 120px;
-        height:fit-content;
-        border-radius: 25px;
-        border: none;
-        margin: 5px;
-        background-color: white;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-    }
-
-    .button-globe:hover {
-        background-color: #fa8072;
-    }
-    .button-git:hover {
-        background-color: rgb(120, 120, 255);
-    }
-
-
-
-a {
-text-decoration: none;
-padding-left: 5px;
+.container p {
+  font-family: "EB Garamond";
+  font-size: 22px;
+  margin: 30px;
 }
+
+.links {
+  display: flex;
+  margin: 26px;
+}
+
+.icon {
+  font-size: 32px;
+  color: black;
+  padding: 7px;
+  margin: 0 20px 0 0;
+}
+
+.icon:hover {
+  opacity: 0.3;
+}
+
+.right-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("flowers.jpg");
+  background-size: cover;
+  background-position: 75%;
+}
+/* ARROW */
+
+.scroll {
+  position: fixed;
+  left: calc(50% - 75px);
+  top: 73%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll p {
+  color: var(--heading-blue);
+  font-family: "SatoshiBlack";
+}
+
+/* TECH SECTION */
+
+.tech {
+  background-color: var(--secondary-color);
+  grid-column: 1 / 3;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech h1 {
+  color: var(--heading-blue);
+  font-family: "SatoshiBold";
+  font-size: 80px;
+  line-height: 108px;
+  font-weight: 700;
+}
+
+.tech p {
+  font-family: "EB Garamond";
+  font-size: 22px;
+  max-width: 45%;
+  margin: 0 0 0 100px;
+  line-height: 1.3em;
+}
+
+.tech-tag {
+  color: white;
+  padding: 0 2px;
+}
+
+.js {
+  background-color: rgb(255, 57, 57);
+}
+
+.react {
+  background-color: var(--heading-blue);
+}
+
+.mob {
+  background-color: #279550;
+}
+
+/* FEATURED PROJECTS */
+
+:root {
+  --featured-proj-width: 800px;
+}
+
+.featured-projects {
+  grid-column: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: flex-start;
+  padding-bottom: 50px;
+}
+
+.featured-projects h1 {
+  color: var(--heading-blue);
+  max-width: var(--featured-proj-width);
+  font-family: "SatoshiBold";
+  font-size: 80px;
+  line-height: 108px;
+  font-weight: 700;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.project-container {
+  max-width: var(--featured-proj-width);
+  background-color: var(--standard-white-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 30px auto;
+  border-radius: 5px;
+}
+
+.project-image-1 {
+  width: 250px;
+  height: 250px;
+  max-width: 250px;
+  min-width: 250px;
+  object-fit: cover;
+  object-position: 55%;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.project-container-text {
+  background-color: var(--standard-white-color);
+  margin: 20px 0 20px 40px;
+}
+
+.project-container-text h2 {
+  font-family: "SatoshiBlack";
+  font-size: 32px;
+}
+
+.project-container-text p {
+  font-family: "EB Garamond";
+  margin: 10px auto 25px auto;
+  font-size: 22px;
+}
+
+.code-tags {
+  margin: 10px 0 20px 0;
+}
+
+.code-tags p {
+  font-family: "SatoshiMedium";
+  font-size: 16px;
+  display: inline;
+  background-color: black;
+  color: white;
+  margin: 0 2px;
+  padding: 2px 5px;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-links button {
+  background-color: #f5f5f5;
+  border-radius: 40px;
+  max-height: 45px;
+  margin: 10px 5px 5px 5px;
+  padding: 7px 10px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.view-code-button {
+  width: 190px;
+  height: 48px;
+  font-size: 16px;
+}
+.live-demo-button {
+  width: 164px;
+  height: 48px;
+  font-size: 16px;
+}
+.live-demo-button:hover {
+  background-color: var(--hover-blue);
+  color: white;
+}
+
+.view-code-button:hover {
+  background-color: #5b6d5b;
+  color: white;
+}
+
+.project-links button .icons {
+  width: 32px;
+  height: 32px;
+}
+
+.project-links button i {
+  font-size: 30px;
+  padding: 7px;
+  margin: 5px;
+}
+
+/* MY WORDS */
 
 .my-words {
-    background: rgb(236, 242, 255);
-    color: #fa8072;
-    font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    padding: 10px;
-    grid-gap: 5px;
+  background-color: var(--tertiary-color);
+  width: 100%;
+  grid-column: 1 / 3;
+  margin: auto;
 }
 
-.my-words p {
- color: black;
- font-family: 'EB Garamond', serif;
+.my-words h1 {
+  color: #665a48;
+  font-family: "SatoshiBold";
+  font-size: 72px;
+  padding: 0;
+  width: 100%;
+  margin: 50px auto auto 5%;
+  
 }
 
-.my-words img {
-    margin-top: 30px;
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.article img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 5px;
 }
 
-.skills-listed {
-    background: rgb(227, 223, 253);
-    display: grid;
-    padding: 10px;
-    font-family: 'EB Garamond', serif;
+.my-words-container {
+  width: 80%;
+  max-width: 1300px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-    .code{
-        display: grid;
-        padding: 10px;
-        align-items: center;
-        justify-content: center;
-    }
-    .code-mark{
-        background-color: rgb(120, 120, 255);
-        width:fit-content;
-        font-family: satoshi;
-    }
-    .toolbox{
-        display: grid;
-        padding: 10px;
-        align-items: center;
-        justify-content: center;
-    }
-    .toolbox-mark{
-        background-color: rgb(120, 120, 255);
-        width:fit-content;
-    }
-    .more{
-        display: grid;
-        padding: 10px;
-        align-items: center;
-        justify-content: center;
-    }
-    .more-mark{
-        background-color: rgb(120, 120, 255);
-        width:fit-content;
-    }
-    .upcoming{
-        display: grid;
-        padding: 10px;
-        align-items: center;
-        justify-content: center;
-    }
-    .upcoming-mark{
-        background-color: rgb(120, 120, 255);
-        width:fit-content;
-    }
-
- .time-to-talk {
-    background: rgb(255, 244, 210);
-    display: grid;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .name-title-contact {
-        display: grid;
-        justify-content: center;
-        
-    }
-
-        .contact1  {
-            display: grid;
-            padding: 10px;
-        }
-
-        .emilia-img2 {
-            background: rgb(255, 244, 210);
-            padding: 10px;
-            border-radius: 50%;
-            height: 150px;
-         }
-
-    .time-to-talk h1 {
-        display: grid;
-        justify-content: center;
-        font-size: 48px;
-        color: salmon;
-    }
-
-    .time-to-talk h3 {
-        color: rgb(120, 120, 255);
-    }
-
-     .links-bottom {
-        display: flex;
-        background: rgb(255, 244, 210);
-        padding: 10px;
-        align-items: row;
-        justify-content: center;
-        gap: 20px;
-        padding-bottom: 50px;
-     }
-
-     .name-title-contact {
-        display: grid;
-        
-     }
-
-     .number-email {
-        display: grid;
-        justify-content: center;
-        font-size: 16px;
-        margin-bottom: 20px;
-        margin-left: 10px;
-     }
-
-     .number-email h3 {
-        color: black;
-     }
-
- @media only screen and (min-width: 768px) {
-    /* tablet */
-    body {
-        width: 100%;
-    }
-        
-    .top-container {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-        
-.presentation {
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr 2fr;
-}
-        
-    /*Picture that only shows when tablet or desktop*/
-.picture-big {
-     display: grid;
- }
-
-.sky {
-    width: 100%;
-    height: 412px;
-    }
-
-.emilia-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-    .h-skills {
-        margin-bottom: 100px;
-        margin-right: 200px;
-        margin-left: 200px;
-    }
-
-.p-1{
-display: grid;
-grid-template-columns: 1fr 2fr;
-grid-template-rows: 1fr ;
+.article {
+  grid-column: 1 / 2;
+  width: 40%;
+  max-width: 500px;
+  padding: 25px;
+  margin: 10px auto 10px auto;
 }
 
-.p-2{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr ;
-    }
-
-.p-3{
-display: grid;
-grid-template-columns: 1fr 2fr;
-grid-template-rows: 1fr ;
-}    
-
-.p-4{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr ;
-    }
-.p-5{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr ;
-    }
-
-.picture{
-    grid-row: 2;
-    grid-column: 1;
+.article h2 {
+  font-family: "SatoshiBold";
+  font-size: 20px;
+  color: red;
+  font-weight: 900;
+  line-height: 27px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.picture img {
-    width: 184px;
-    height: 280px;
+.article h3 {
+  font-family: "SatoshiBold";
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 43px;
+  margin: 0 0 20px 0;
 }
 
-.p-div{
-    grid-row: 2;
-    grid-column: 2;
+.article p {
+  font-family: "EB garamond";
+  font-size: 22px;
 }
 
-.p-buttons{
-    grid-row: 4;
-    grid-column: 1;
+.button-read-article {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 15px;
+  margin: 25px 0 0 0;
 }
 
-.words{
-    margin: 100px;
+.button-read-article .icon {
+  fill: black;
+  height: 32px;
+  width: 32px;
+  margin-right: 10px;
 }
 
-.my-words img {
-    width: 564px;
-    height: 340px;
+.button-read-article p {
+  font-size: 18px;
+  font-family: "SatoshiMedium";
 }
 
-.name-title-contact{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr 2fr;
+.button-read-article:hover {
+  background-color: #5b6d5b;
+  color: white;
 }
 
-.emilia-img2 {
-    margin-left: 100px;
+.button-read-article .icon:hover {
+  fill: white;
 }
 
+/* SKILLS */
+
+.skills {
+  background-color: #f0fff0;
+  display: flex;
+  grid-column: 1 / 3;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
 }
 
-
-@media only screen and (min-width: 992px) {
-/* desktop normal */
-body {
-    width: 100%;
+.skills h1 {
+  color: var(--heading-blue);
+  font-family: "SatoshiBold";
+  font-size: 80px;
+  text-align: center;
+  font-weight: 700;
+  margin: 25px auto;
 }
 
-.top-container{
-display: grid;
+.skill-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.top-container p {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-    
-.h-skills p {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-.picture-big{
-width: 100%;
+.skill-list {
+  padding: 20px;
+  margin: 0;
 }
 
-.profile-image {
-    display: grid;
+.skill-list p {
+  font-family: "EB Garamond";
+  font-size: 22px;
+  margin: 0;
 }
 
-
-img.sky {
-    width: 100%;
-    display: grid;
+.skill-list h2 {
+  font-family: "SatoshiBold";
+  font-size: 24px;
+  display: inline-block;
+  margin: 0 0 15px 0;
+  color: white;
+  padding: 2px 6px;
 }
 
-.picture img {
-    width: 280px;
-    height: 280px;
-    margin-right: 20px;
-}
-.p-1{
-    margin-left: 150px;
-    margin-right: 150px;
-}
-.p-2{
-    margin-left: 150px;
-    margin-right: 150px;
-}
-.p-3{
-    margin-left: 150px;
-    margin-right: 150px;
-}
-.p-4{
-    margin-left: 150px;
-    margin-right: 150px;
-}
-.p-5{
-    margin-left: 150px;
-    margin-right: 150px;
+.code h2 {
+  background-color: var(--heading-pink);
 }
 
-.skills-listed {
-    display:grid;
+.toolbox h2 {
+  background-color: #2483e0;
+}
+
+.more h2 {
+  background-color: var(--heading-blue);
+}
+
+.upcoming h2 {
+  background-color: #5b6d5b;
+}
+
+/* TIME TO TALK */
+
+.contact {
+  height: 800px;
+  background-color: var(--primary-color);
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h1 {
+  font-family: "SatoshiBold";
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 162px;
+  color: #5b6d5b;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.contact img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+.contact .header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.text-2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto 10px;
+}
+
+.text-2 h2 {
+  font-family: "SatoshiBold";
+  font-size: 28px;
+  color: var(--heading-blue);
+  line-height: 38px;
+  font-weight: 700;
+}
+
+.text-2 h3 {
+  font-family: "SatoshiBlack";
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 43px;
+  color: black;
+}
+
+.text-2 h4 {
+  font-family: "SatoshiMedium";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgb(78, 76, 76);
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  body {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-.code {
-display: grid;
-grid-row: 2;
-}
-.toolbox {
-grid-row: 2;
-}
-.more {
-grid-row: 3;
-}
-.upcoming{
-    grid-row: 3;
+  }
 
+  .introduction {
+    height: 665px;
+    grid-column: span 2;
+  }
+
+  .container {
+    margin: 30px 25px;
+  }
+
+  .right-image {
+    height: 350px;
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .scroll {
+    position: fixed;
+    left: calc(50% - 75px);
+    top: 70%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tech p {
+    max-width: 400px;
+    margin: 0 0 0 60px;
+  }
+
+  .scroll {
+    top: 89%;
+    left: calc(50% - 75px);
+  }
+
+  .project-container {
+    margin: 0 5px 20px 5px;
+    background-color: var(--standard-white-color);
+  }
+
+  .project-container-text {
+    margin: 10px 25px;
+    background-color: var(--standard-white-color);
+  }
 }
 
+@media (max-width: 667px) {
+  .right-image {
+    display: none;
+  }
+
+  h1 {
+    font-size: 72px;
+  }
+
+  .introduction {
+    height: 100%;
+    min-height: 960px;
+    grid-column: 1 / 3;
+  }
+
+  .profile-picture {
+    margin-bottom: 20px;
+  }
+
+  .container .about-me {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    margin: 20px 20px;
+  }
+
+  .tech {
+    grid-column: 1 / 3;
+    flex-direction: column;
+  }
+
+  .tech h1 {
+    text-align: center;
+    font-size: 58px;
+    line-height: 78px;
+  }
+
+  .tech p {
+    max-width: 300px;
+    margin: 20px 0 0 0;
+  }
+
+  .skill-list-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px auto 10px auto;
+    background-color: var(--standard-white-color);
+  }
+
+  .project-container-text {
+    margin: 10px 15px;
+    background-color: var(--standard-white-color);
+  }
+
+  .project-image-1 {
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: 55%;
+    margin: 0 10px;
+  }
+
+  .project-links {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .project-links button {
+    background-color: var(--tertiary-color);
+  }
+  .featured-projects h1 {
+    text-align: center;
+    font-size: 58px;
+    line-height: 78px;
+    margin-bottom: 20px;
+  }
+
+  .my-words {
+    grid-column: 1 / 3;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .my-words h1 {
+    text-align: center;
+    font-size: 58px;
+    line-height: 78px;
+  }
+
+  .skills {
+    grid-column: 1 / 3;
+    height: 100%;
+    min-height: 1300px;
+  }
+
+  .skills h1 {
+    text-align: center;
+    font-size: 58px;
+    line-height: 78px;
+  }
+
+  .skill-list-container {
+    align-items: center;
+  }
+
+  .skill-list {
+    text-align: center;
+    margin: auto;
+  }
+
+  .contact {
+    grid-column: 1 / 3;
+    padding: 20px;
+  }
+
+  .contact h1 {
+    text-align: center;
+    font-size: 58px;
+    line-height: 78px;
+  }
+
+  .contact .about-me {
+    flex-direction: column;
+  }
+
+  .profile-picture {
+    margin-bottom: 20px;
+  }
+
+  .scroll {
+    grid-column: 1 / 3;
+    position: fixed;
+    top: 80%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .scroll p {
+    font-size: 16px;
+  }
 }
-      
-@media only screen and (min-width: 1200px) {
-/* desktop large */
-}
-    
