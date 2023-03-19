@@ -154,6 +154,33 @@ body {
     text-align: center;
 
 }
+.scroll-icons svg {
+    position: relative;
+    top: 0;
+    animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        top: 0px;
+    }
+
+    25% {
+        top: -10px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    75% {
+        top: -10px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
 
 .scroll-icons a {
     margin-top: 27px;
@@ -568,7 +595,7 @@ h5 {
 
 
 /***************responsive design for tablet************/
-@media screen and (max-width: 1024px) and (min-width: 668px) {
+@media (min-width: 668px)  {
     .toplogo-Img {
         display: flex;
     }
@@ -663,6 +690,7 @@ h5 {
     .project {
         display: flex;
         flex-direction: row;
+        margin-bottom: 80px;
     }
 
     .projectImg {
@@ -699,7 +727,7 @@ h5 {
 
     .toplogo-Img {
         display: flex;
-        width: 50%;
+        width: 50vw;
     }
 
     .toplogo-Img img {
@@ -712,10 +740,10 @@ h5 {
     .introbox {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 50vw;
         align-items: center;
         justify-content: center;
-        margin: 252px 45px 300px 55px;
+        margin: 252px 0px 300px 0px;
     }
 
     .intro-detail {
@@ -764,8 +792,8 @@ h5 {
     .tech {
         display: flex;
         flex-direction: row;
-        padding-top: 350px;
-        padding-bottom: 350px;
+        /* padding-top: 350px;
+        padding-bottom: 350px; */
         justify-content: center;
         align-items: center;
     }
@@ -789,6 +817,7 @@ h5 {
         flex-direction: row;
         margin-right: 230px;
         margin-left: 230px;
+       
     }
 
     .projectImg {
@@ -856,7 +885,7 @@ h5 {
 
 @media only screen and (min-device-width: 1281px) {
     .introbox{
-        margin: 252px 157px 300px 103px;
+        margin: 252px 0px 300px 0px;
     }
     
     .tech-text {
