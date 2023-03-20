@@ -14,7 +14,7 @@ const projects = [
         name: 'Music releases',
         img: 'musicreleases.png',
         alt: 'the site shown on tablet',
-        description: 'Spotify clone fetching music releases from an open API. The 50 latest music relases... from then.',
+        description: 'Spotify clone fetching music releases from an open API. The 50 latest music releases... from then.',
         tags: ['React', 'CSS'],
         demo: 'https://vio-and-fridas-music-release-project.netlify.app/',
         code: 'https://github.com/Technigo/project-music-releases/pull/251',
@@ -81,7 +81,7 @@ projects.map((project) => {
           <div class="tag-list">${project.tags.map(el => `<p>${el}</p>`).join('')}
           </div>
           <div class="project-links-wrapper">
-          <form action=${project.demo }method="get" target="_blank">
+          <form action=${project.demo} method="get" target="_blank">
               <button type="submit" class="view-demo-link">
                 <img src="Live-demo.svg" class="icon" alt="">Live demo</button>
             </form>
