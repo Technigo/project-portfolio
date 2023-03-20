@@ -40,7 +40,7 @@ font-family: 'Satoshi-BlackItalic';
     display: flex;
     flex-direction: column;
     background-color: #F5F5F5;
-    padding-bottom: 71px;
+    /* padding-bottom: 71px; */
 
 }
 .scroll,
@@ -62,11 +62,6 @@ font-family: 'Satoshi-BlackItalic';
 
 }
 
-.scroll {
-
-    background-color: #F5F5F5;
-    padding-bottom: 101px;
-}
 
 .intro-detail {
     display: flex;
@@ -143,22 +138,25 @@ font-family: 'Satoshi-BlackItalic';
     fill: #000000;
    
 }
+/* .scroll {
+    background-color: #F5F5F5;
+    padding-bottom: 101px;
+} */
 
 .scroll-icons {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.scroll-icons i {
-    margin-top: 20px;
+    align-items: center;
     text-align: center;
-
 }
-.scroll-icons svg {
-    position: relative;
-    top: 0;
+
+.scroll-icons {
+    position: fixed; 
+    top: 550px; 
+    left: 50%;
     animation: arrow 2s infinite;
+   
 }
 
 @keyframes arrow {
@@ -181,6 +179,12 @@ font-family: 'Satoshi-BlackItalic';
     100% {
         top: 0px;
     }
+}
+
+.scroll-icons i {
+    margin-top: 20px;
+    text-align: center;
+
 }
 
 .scroll-icons a {
@@ -702,7 +706,6 @@ h5 {
         display: flex;
     }
 
-    /*project img can not fit div height*/
     .projectImg img {
         width: 184px;
         height: 280px;
@@ -836,7 +839,6 @@ h5 {
 
     }
 
-    /*project img can not fit div height*/
     .projectImg img {
         width: 280px;
         height: 280px;
@@ -895,6 +897,10 @@ h5 {
 @media only screen and (min-device-width: 1281px) {
     .introbox{
         margin: 252px 0px 300px 0px;
+    }
+    .scroll-icons{
+       margin-top: 550px;
+       left: 50%;
     }
     
     .tech-text {
