@@ -575,4 +575,405 @@ dd {
 
 @media (min-width: 667px) and (max-width: 1024px) {
 
+    .introduction-side-image {
+        background-image: url('./images/hero-image.jpg');
+        background-size: cover;
+        background-position: 55%;
+        display: inline-block;
+        height: 350px;
+        width: 100%;
+        margin-bottom: 81px;
+    }
+
+    .intro {
+        min-height: 700px;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .intro img {
+        margin: 0;
+    }
+
+    .intro .container {
+        margin: 50px var(--side-margins-tablet);
+    }
+
+    .intro .container p {
+      
+        margin-left: 142px;
+    }
+
+    .intro .container .links {
+        margin-left: 30px;
+    }
+
+    .profile {
+        flex-direction: row;
+        margin-left: 80px;
+    }
+
+  
+    .scroller {
+        background-color: var(--scroller-circle-color);
+        position: absolute;
+        width: 125px;
+        height: 125px;
+        top: 82%;
+        left: calc(50% - 75px);
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        animation: none;
+    }
+
+        
+    .scroller img {
+        background-color: transparent;
+        height: 40px;
+    }
+
+   
+
+    .tech p {
+      margin: 0 120px;
+       
+    }
+
+
+    .featured-projects {
+        grid-column: 1 / 3;
+            margin: auto;
+    }
+
+    .project-container {
+        flex-direction: row;
+        max-width: 900px;
+        gap: 30px;
+        margin-left: 24px;
+       
+    }
+
+    .project-container-text {
+    margin-top: 100;
+    margin-right: 24px;
+    }
+
+    .featured-projects h1 {
+        margin-top:70px;
+         text-align: center;
+    }
+    
+    .project-container .project-image {
+        height: 280px;
+        width: 184px;
+        object-fit: cover;
+        object-position: 50%;
+    }
+
+    .projects-image {
+        width: 184px;
+        height: 280px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-left: 24px;
+    }
+    
+    .blog-header {
+      
+    }
+
+    .blog-header-container {
+        margin-left: 89px;
+        margin-right: 89px;
+    }
+
+    .post img {
+        margin-left: 89px;
+      width: 75%;
+    }
+
+    .post h2 {
+        margin-left: 89px;
+        
+    }
+
+    .post h3 {
+        margin-left: 89px;
+        margin-right: 89px;
+    }
+
+    .post p {
+        margin-left: 89px;
+        margin-right: 89px;
+    }
+
+    .button-read-article {
+        margin-left: 89px;
+    }
+
+    .skills {
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 800px;
+    }
+    
+    
+    .skill-lists-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 15px;
+        margin: 0 70px 60px 70px;
+        max-width: 480px;
+    }
+
+    .skill-lists {
+        text-align: left;
+    }
+
+    .toolbox dt {
+
+        margin-right: 80px;
+    }
+
+    .toolbox dd {
+        margin-right: 80px;
+    }
+
+    .footer {
+        margin: 0;
+    }
+
+    .footer h1 {
+        font-size: 90px;
+        line-height: normal;
+        margin-bottom: 50px;
+    }
+    
+    .footer img {
+        border-radius: 50%;
+        max-width: 164px;
+        max-height: 164px;
+        margin-right: 29px;
+    }
+    
+    .footer .profile {
+        display: flex;
+     flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    .btn-top {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
 }
+
+@media (min-width: 1025px) {
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+
+
+.intro {
+    grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            min-height: 800px;
+            height: 100vh;
+}
+
+.profile {
+    flex-direction: row;
+    
+   }
+
+.profile img {
+    margin-top: 200px;
+}
+
+.profile h1 {
+    margin-top: 200px;
+}
+
+.introduction-side-image {
+  
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/hero-image.jpg');
+    background-size: cover;
+    background-position: 75%;
+    display: inline;
+}
+
+.tech {
+
+}
+
+.tech h1 {
+    margin-left: 100px;
+}
+
+.tech p {
+    width: 100%;
+    max-width: 800px;
+    margin-right: 100px;
+}
+
+
+.featured-projects {
+    grid-column: 1 / 3;
+    margin: auto;
+}
+
+.project-container {
+    flex-direction: row;
+            max-width: 900px;
+            gap: 30px;
+}
+
+.project-container-text {
+    margin-top: 0;
+}
+
+.featured-projects h1 {
+    margin-top: 70px;
+    text-align: left;
+}
+
+.project-container .project-image {
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.my-words {
+    display: none;  /* Until I have something to write here */
+    grid-column: 1 / 3;
+}
+
+.my-words-container {
+    margin: 80px 10% 150px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.my-words-container h1 {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.article {
+    max-width: 700px;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+}
+
+.article img {
+    max-width: 700px;
+}
+
+.skills {
+    grid-column: 1 / 3;
+}
+
+.skill-lists-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.skill-lists {
+    text-align: left;
+}
+
+.contact {
+    grid-column: 1 / 3;
+    gap: 10px;
+}
+
+.contact .presentation {
+    width: 60%;
+    justify-content: center;
+}
+
+.contact h1 {
+    font-size: 120px;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.contact p {
+    margin: 0;
+}
+
+.contact img {
+    border-radius: 50%;
+    max-width: 164px;
+    max-height: 164px;
+}
+
+.contact .presentation {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+
+}
+
+.btn-top {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+
+
+.scroller {
+background-color: var(--scroller-circle-color);
+position: absolute;
+left: calc(50% - 75px);
+top: 80%;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+padding: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+animation: none;
+}
+
+.scroller img {
+background-color: transparent;
+height: 50px;
+}
+
+.scroller p {
+color: var(--heading-blue);
+}
+
+
+}
+
