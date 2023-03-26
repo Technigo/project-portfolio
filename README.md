@@ -26,6 +26,7 @@ Photo by Madison Inouye: https://www.pexels.com/photo/self-care-isn-t-selfish-si
 Photo by Marinko Krsmanovic: https://www.pexels.com/photo/black-speaker-close-up-photography-2651794/
 Photo by Elvis: https://www.pexels.com/photo/photo-of-macbook-pro-near-iphone-and-apple-magic-keyboard-2528116/
 Photo by Thirdman: https://www.pexels.com/photo/green-letter-tiles-on-a-colorful-surface-5767223/
+Photo by DS stories: https://www.pexels.com/photo/text-about-self-awareness-6005013/
 
 ## The problem
 
