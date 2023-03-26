@@ -1,39 +1,79 @@
 const projectWrapper = document.getElementById("projectWrapper");
 
-const PROJECT = [
+const projects = [
+  {
+    img: "assets/happy-thoughts.jpg",
+    imgDescription: "the site shown on phone, with candy background",
+    title: "Happy thoughts",
+    projectSummary:
+      "Tweet all your happy thoughts here! In this project I learned more about fetching APIs, both with GET and POST request. I also learned how to incorporate the useEffect hook.",
+    tech: ["CSS3", "React", "JSX", "JavaScript ES6"],
+    live: "https://happy-vibes.netlify.app",
+    code: "https://github.com/MalinSkill/project-happy-thoughts",
+  },
+  {
+    img: "assets/survey-image.jpg",
+    imgDescription: "the logo for the survey, green with concrete background",
+    title: "Sneaker Survey",
+    projectSummary:
+      "Survey created by using React, components, different kind of form inputs and useState hook. So much fun learning more about React and be able to control the flow of the components with the use of conditionals.",
+    tech: ["CSS3", "React", "JSX", "JavaScript ES6"],
+    live: "https://sneaker-survey.netlify.app",
+    code: "https://github.com/MalinSkill/project-survey",
+  },
+  {
+    img: "assets/music-release.jpg",
+    imgDescription: "The site displayed with mixertable as background",
+    title: "Music release",
+    projectSummary:
+      "First project using React and Components. It was done while pair programming and we fetched the data from an API. We also came to learn a few new CSS tricks, in order to complete the predetermined design.",
+    tech: ["CSS3", "React", "JSX", "JavaScript ES6"],
+    live: "https://music-releases-josefin-malin.netlify.app",
+    code: "https://github.com/MalinSkill/project-music-releases",
+  },
   {
     img: "assets/weather-site.jpg",
-    imgDescription: "Picture of Weather-site",
+    imgDescription: "the site displayed on a phone",
     title: "Weather site",
     projectSummary:
-      "A weather site that fetch information from Open Weather API. It show current and 5-day forecast and you can search for desired city. This project was done in pairs, to learn about Gitub branches and merging. We had a specific design to follow. ",
-    tech: ["HTML", "CSS3", "JAVASCRIPT"],
+      "A weather site that fetch information from Open Weather API. It show current and 5-day forecast and you can search for desired city. This project was done in pairs, to learn about Gitub branches and merging.",
+    tech: ["HTML5", "CSS3", "APIs", "JavaScript ES6"],
     live: "https://comfy-weatherapp-ea57d9.netlify.app",
     code: "https://github.com/code-and-cats/project-weather-app",
   },
   {
     img: "assets/guess-who.jpg",
-    imgDescription: "Picture of Guess who game",
+    imgDescription: "the game displayed on phone, tablet and desktop",
     title: "Guess who? game",
     projectSummary:
       "Create a game that have a secret person and make it sort out the correct characters based on different values. A lot of practice with filtering and functions in this project",
-    tech: ["HTML", "CSS3", "JAVASCRIPT"],
+    tech: ["HTML5", "CSS3", "JavaScript ES6"],
     live: "https://guess-who-kawaii-edition.netlify.app",
     code: "https://github.com/MalinSkill/project-guess-who",
   },
   {
     img: "assets/chatbot.jpg",
-    imgDescription: "Picture of Dinner Guide chatbot",
+    imgDescription: "the chatbot displayed on phone",
     title: "Chatbot built in Javascript",
     projectSummary:
       "This chat bot is a conversation tool, were you can get suggestion for dinner recipes. For this project the starter code was provided. The challenge to make it work using Javascript, then adapting your own theme.",
-    tech: ["HTML", "CSS3", "JAVASCRIPT"],
+    tech: ["HTML5", "CSS3", "JavaScript ES6"],
     live: "https://dinner-guide.netlify.app/",
     code: "https://github.com/MalinSkill/project-chatbot",
   },
+  {
+    img: "assets/hike-the-world.jpg",
+    imgDescription: "the site shown on phone",
+    title: "News site",
+    projectSummary:
+      "My first project, done using flexbox and grid. First introduction to media queries to create a responsive site. I also tried out a few animations.",
+    tech: ["HTML5", "CSS3"],
+    live: "https://hiketheworld.netlify.app",
+    code: "https://github.com/MalinSkill/project-news-site",
+  },
 ];
 
-PROJECT.forEach((project) => {
+projects.forEach((project) => {
   projectWrapper.innerHTML += ` <div class="project-img">
 <img
   src=${project.img}
