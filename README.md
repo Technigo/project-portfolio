@@ -23,6 +23,9 @@ Photo by Jill Wellington: https://www.pexels.com/photo/red-and-gray-rain-boots-n
 Photo by Anna Shvets: https://www.pexels.com/photo/pills-fixed-as-question-mark-sign-3683053/
 Photo by Moose Photos: https://www.pexels.com/photo/gray-double-bell-clock-1037993/
 Photo by Madison Inouye: https://www.pexels.com/photo/self-care-isn-t-selfish-signage-2821823/
+Photo by Marinko Krsmanovic: https://www.pexels.com/photo/black-speaker-close-up-photography-2651794/
+Photo by Elvis: https://www.pexels.com/photo/photo-of-macbook-pro-near-iphone-and-apple-magic-keyboard-2528116/
+Photo by Thirdman: https://www.pexels.com/photo/green-letter-tiles-on-a-colorful-surface-5767223/
 
 ## The problem
 
