@@ -1,0 +1,194 @@
+.logo {
+    display: none;
+}
+
+header {
+    padding-bottom: 1em;
+    min-height: 100vh;
+}
+
+p {
+    font-family: "EB Garamond", serif;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.hero-wrapper {
+    width: 327px;
+    padding-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.profile-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.my-name {
+    font-family: "Satoshi-Bold";
+    color: #137565;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 5px;
+    margin-top: 29px;
+}
+
+.tagline {
+    font-family: "Satoshi-Black";
+    color: black;
+    font-size: 32px;
+    margin-bottom: 4px;
+    text-align: unset;
+}
+
+.second-tagline {
+    font-family: "Satoshi-Medium";
+    color: #565656;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 1em;
+}
+
+.social-media-links {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.social-link:hover {
+    filter: brightness(0%)
+}
+
+.scroll-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline 3px;
+}
+
+.scroll img {
+    margin-bottom: 25px;
+}
+
+.scroll-text {
+    font-family: "Satoshi-Black";
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.scroll-wrapper a {
+    color: black;
+}
+
+@media(min-width:744px) and (max-width:1279px) {
+    .logo {
+        display: flex;
+        background-color: #84B4BF;
+        justify-content: center;
+        min-height: 20vh;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .logo img {
+        width: 100%;
+        max-height: 150px;
+        margin: auto;
+    }
+
+    header {
+        min-height: 40vh;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+}
+
+@media(min-width: 744px) {
+
+.hero-wrapper {
+        width: 540px;
+        display: grid;
+        align-items: center;
+        align-self: center;
+    }
+
+    .info-card {
+        display: grid;
+        gap: 29px;
+        margin-right: 5%;
+    }
+
+    .profile-picture {
+        max-width: 164px;
+        max-height: 100%;
+    }
+
+    .name-wrapper {
+        grid-column-start: 2;
+        align-self: center;
+    }
+
+    .summary-text {
+        margin-left: 5%;
+    }
+
+    .social-media-links {
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 5%;
+    }
+}
+
+@media(min-width: 1280px) {
+
+    .desktop-view {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+    }
+
+    .logo {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        display: flex;
+        background-color: #84B4BF;
+        justify-content: center;
+    }
+
+    .logo img {
+        max-width: 250px;
+    }
+
+    .hero-wrapper {
+        margin-top: 120px;
+    }
+
+    header {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        padding-bottom: 0;
+    }
+
+    .scroll-wrapper {
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+    }
+
+}
