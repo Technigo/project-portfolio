@@ -2,15 +2,6 @@ const featuredWrapper = document.getElementById("featuredWrapper")
 
 const projects = [
     {
-        name: 'Happy thoughts',
-        img: 'happythoughts.png',
-        alt: 'the site shown on mobile',
-        description: 'A twitter-like site, but with happy thoughts only. Practicing API fetches and following a design.',
-        tags: ['React', 'CSS'],
-        demo: 'https://enchanting-halva-88064a.netlify.app/',
-        code: 'https://github.com/code-and-cats/project-happy-thoughts',
-    },
-    {
         name: 'Pet shrimp order form',
         img: 'shrimporder.png',
         alt: 'the site shown on mobile',
@@ -24,7 +15,7 @@ const projects = [
         img: 'musicreleases.png',
         alt: 'the site shown on tablet',
         description: 'Spotify clone fetching music releases from an open API. The 50 latest music releases... from then.',
-        tags: ['React', 'CSS', 'pair-programming'],
+        tags: ['React', 'CSS'],
         demo: 'https://vio-and-fridas-music-release-project.netlify.app/',
         code: 'https://github.com/Technigo/project-music-releases/pull/251',
     },
