@@ -398,48 +398,46 @@ body {
   .featured-projects h2 {
     text-align: center;
   }
+  .featured-projects {
+    padding:0;
+    margin:0;
+  }
+  .project-title {
+    margin-bottom: 0;
+  }
+  .project-description{
+    margin-top:5px;
+    margin-bottom:0;
+  }
+  .project-img{
+    margin-top:0;
+  }
+  .small-boxes {
+    margin-top:5px;
+    margin-bottom:0;
+  }
+
   .single-project-container {
     display: flex;
     flex-direction: row;
-    height: 400px;
     margin: 20px auto 20px 0;
   }
   .single-project-container div {
-    margin: 10px;
+    margin: 5px;
   }
   .project-content-container {
     display: flex;
     flex-direction: column;
   }
-  /*.big-project-container{
-display:grid
-grid-template:inline;
-}
-
-
-.project-image{
-align-items: flex-start;
- }
- .project-content{
-align-content: center;
-justify-content: center;
- }
-
-.button-container {
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  gap: 24px;
-}
-
-.project-description {
-  
+  .git-button {
+    margin-top:0;
+    margin-bottom:0;
+  }
+  .netifly-button {
+    margin-top:0;
+    margin-bottom:0;
   }
 
-.small-boxes{
-  
-}
-
-*/
   .skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -467,16 +465,23 @@ justify-content: center;
     justify-content: center;
     line-height: 30px;
   }
+  .author-image-footer {
+    margin-left: 25%;
+  }
+  .contact-me-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 
-  /* 
-flex-direction: column
-[]
-[]
-[]
-flex-direction: row
-[] [] []
-*/
-  @media screen and (min-width: 992px) {
+  .contact-info{
+   display:flex;
+  }
+  
+  @media screen and (min-width: 992px) /*large tablets small desktop (min-width: 992px) and (max-width: 1199px)*/
+  {
     .main-header {
       display: flex;
       flex-direction: row-reverse;
@@ -487,6 +492,8 @@ flex-direction: row
       width: 50vw;
     }
     .profile-container {
+      width: 50vw;
+      margin:10px;
     }
     .profile-and-image {
       margin-left: 0;
@@ -500,25 +507,8 @@ flex-direction: row
       margin: 0 0 0 auto;
     }
   }
-} /*large tablets small desktop (min-width: 992px) and (max-width: 1199px)
+} 
 
 
-flex-direction
-row:
- 1 2 3
- row - reverse
- 3 2 1
-
- column:
- 1
- 2
- 3
-column-reverse
-3
-2
-1
-
-
-*/
-
-@media screen and (min-width: 1200px); /*larger desktop*/
+/*larger desktop*/
+@media screen and (min-width: 1200px);
