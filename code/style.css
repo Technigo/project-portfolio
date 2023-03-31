@@ -50,8 +50,9 @@ header {
     display: flex;
     flex-direction: row;
     flex-basis: 50%;
-    max-height: 980px;
+    height: 980px;
     flex-shrink: 1;
+    background-color: rgb(250, 249, 244);
 }
 
 .header-box {
@@ -97,7 +98,7 @@ main button {
 }
 
 .name-title-column p:first-of-type {
-    background-color: black;
+    background-color:  #1d1d20;
     width: fit-content;
     color: #FEFEE7;
     font-style: italic;
@@ -159,7 +160,7 @@ a:visited {
     transition: translateX(-100px);
 }*/
 
-.tech-wrapper {
+.tech-wrapper { 
     position: relative;
     height: 800px;
     background-color: #F6c54a;
@@ -247,7 +248,9 @@ main h3 {
 }
 
 
-.project-A-wrapper p {
+.project-A-wrapper p,
+.project-B-wrapper p,
+.project-C-wrapper p {
     max-width: 500px;
 }
 
@@ -596,6 +599,7 @@ address a {
 
     .pic-name-title {
         margin-top: 3%;
+        margin-left: 0;
     }
 
     .profile-pic {
@@ -603,6 +607,10 @@ address a {
         width: 164px;
         margin-right: 20px;
         margin-bottom: 32px;
+    }
+
+    #banner-bio {
+        margin-left: 0;
     }
 
     .scroll-down {
@@ -757,6 +765,15 @@ address a {
         margin-bottom: 6%;
     }
 
+    .banner-pic {
+        top: 5%;
+    }
+
+    .bright-ball {
+        top: 5%;
+        left: 45%;
+    }
+
     .tech {
         padding-left: 1em;
         padding-right: 1em;
@@ -832,16 +849,16 @@ address a {
 
     .banner-pic {
         max-height: 240px;
-        top: 65%;
+        top: 70%;
     }
 
     .icon-container {
-        margin-bottom: 8rem;
+        margin-bottom: 3em;
         margin-left: 0;
     }
 
     .bright-ball {
-        top: 5%;
+
         left: 60%;
     }
 
@@ -964,12 +981,13 @@ address a {
     header {
         flex-direction: row;
         flex-wrap: wrap;
-        height: 1500px;
     }
 
     .pic-name-title {
         flex-direction: column;
         margin-top: 13%;
+        margin-left: 1em;
+        margin-right: 1em;
         align-items: center;
     }
 
@@ -987,6 +1005,10 @@ address a {
         border-radius: 50%;
         margin-right: 0;
         margin-bottom: 32px;
+    }
+
+    #banner-bio {
+        margin-left: 1em;
     }
 
     h1+p {
@@ -1027,7 +1049,7 @@ address a {
 }
 
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 480px) {
     .banner-pic {
         top: 75%;
         right: 4%;
@@ -1036,8 +1058,6 @@ address a {
     #banner-bio {
         font-size: 0.8em;
     }
-
-
 
     .my-words-headline {
         margin-bottom: 0;
@@ -1048,7 +1068,6 @@ address a {
     .skills ul {
         width: 270px;
     }
-}
 
 footer h2 {
     font-size: 45px;
@@ -1057,11 +1076,30 @@ footer h2 {
 address {
     font-size: 0.7em;
 }
+}
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
+
+    header {
+        height: 1100px;
+    }
     .banner-pic {
         visibility: hidden;
+    }  
+
+    .scroll-down {
+        bottom: 3em;
     }
+
+    .tech-wrapper {
+        margin-top: 0;
+        position: relative;
+        height: 800px;
+        background-color: #F6c54a;
+    }
+}
+
+@media screen and (max-width: 380px) {
 
     .name-title-column {
         margin-left: 0.6em;
@@ -1107,8 +1145,17 @@ address {
     }
 }
 
-@media screen and (max-width: 325px) {
-    .scroll-down {
-        visibility: hidden;
+@media screen and (max-width: 350px) {
+
+    header {
+        height: 1200px;
     }
+    .icon-container {
+        margin-top: 2em;
+        justify-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
 }
