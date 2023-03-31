@@ -2,6 +2,15 @@ const featuredWrapper = document.getElementById("featuredWrapper")
 
 const projects = [
     {
+        name: 'Happy thoughts',
+        img: 'happythoughts.png',
+        alt: 'the site shown on mobile',
+        description: 'A twitter-like app but for happy thoughts only. Made according to a design spec.',
+        tags: ['React', 'CSS', 'API'],
+        demo: 'https://enchanting-halva-88064a.netlify.app/',
+        code: 'https://github.com/code-and-cats/project-happy-thoughts',
+    },
+    {
         name: 'Pet shrimp order form',
         img: 'shrimporder.png',
         alt: 'the site shown on mobile',
@@ -15,7 +24,7 @@ const projects = [
         img: 'musicreleases.png',
         alt: 'the site shown on tablet',
         description: 'Spotify clone fetching music releases from an open API. The 50 latest music releases... from then.',
-        tags: ['React', 'CSS'],
+        tags: ['React', 'CSS', 'pair-programming'],
         demo: 'https://vio-and-fridas-music-release-project.netlify.app/',
         code: 'https://github.com/Technigo/project-music-releases/pull/251',
     },
@@ -33,7 +42,7 @@ const projects = [
         img: 'weatherapp.png',
         alt: 'hand holding a mobile phone with the app on it',
         description: 'The weather app fetches weather data from whichever city the user chooses (but will always start in Reykjavik).',
-        tags: ['HTML', 'JavaScript', 'CSS'],
+        tags: ['HTML', 'JavaScript', 'CSS', 'pair-programming'],
         demo: 'https://comfy-weatherapp-ea57d9.netlify.app/',
         code: 'https://github.com/code-and-cats/project-weather-app',
     },
