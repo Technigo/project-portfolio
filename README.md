@@ -27,6 +27,7 @@ Photo by Marinko Krsmanovic: https://www.pexels.com/photo/black-speaker-close-up
 Photo by Elvis: https://www.pexels.com/photo/photo-of-macbook-pro-near-iphone-and-apple-magic-keyboard-2528116/
 Photo by Thirdman: https://www.pexels.com/photo/green-letter-tiles-on-a-colorful-surface-5767223/
 Photo by DS stories: https://www.pexels.com/photo/text-about-self-awareness-6005013/
+Photo by Pixabay: https://www.pexels.com/photo/food-snack-popcorn-movie-theater-33129/
 
 ## The problem
 
