@@ -89,6 +89,7 @@ body {
     color: #000000;
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 24px;
 
 }
 
@@ -108,8 +109,15 @@ body {
 
 .arrow {
     align-self: center;
-    
+
+    /* this is the important stuff 👇 */
+animation: bounce 1s infinite alternate;
 }
+
+@keyframes bounce {
+    0%   {transform: translateY(0);}
+    100% {transform: translateY(50px);}
+    }
 
 .tech {
     background-color: #EDFFFF;
