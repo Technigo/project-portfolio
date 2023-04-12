@@ -1,7 +1,7 @@
 # Portfolio with HTML and CSS
 
 The task was to create a portfolio page, strictly following the Figma design file we were given. Using only vanilla HTML and CSS, the aim was to practice our CSS skills while also proving that we can implement a given design.
-Updating the portfolio content to fit our personal profiles was down-prioritized; the focus was on testing and making the page accessible for everyone.
+Updating the portfolio content to fit our personal profiles was down-prioritized; the focus was on testing and making the page accessible for everyone. We worked individually for this project.
 
 **What you need to do**
 
