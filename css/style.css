@@ -24,17 +24,17 @@ font-family: 'Satoshi-BlackItalic';
 
 }
 
-  body {
+body {
     margin: 0;
 
-} 
+}
 
 /***************responsive design for mobile************/
 .toplogo-Img {
     display: none;
 }
 
-.introduction{
+.introduction {
     width: 100%;
     height: auto;
     display: flex;
@@ -43,6 +43,7 @@ font-family: 'Satoshi-BlackItalic';
     /* padding-bottom: 71px; */
 
 }
+
 .scroll,
 .tech,
 .featured-projects,
@@ -56,7 +57,8 @@ font-family: 'Satoshi-BlackItalic';
     display: flex;
     flex-direction: column;
 }
-.introbox{
+
+.introbox {
     padding-left: 24px;
     padding-right: 24px;
 
@@ -134,10 +136,12 @@ font-family: 'Satoshi-BlackItalic';
     align-items: center;
     margin-top: 48px;
 }
-.top-media-links svg:hover{
-    fill: #000000;
-   
+
+.top-media-links a:hover {
+    fill: #0B24F5;
+
 }
+
 /* .scroll {
     background-color: #F5F5F5;
     padding-bottom: 101px;
@@ -152,11 +156,11 @@ font-family: 'Satoshi-BlackItalic';
 }
 
 .scroll-icons {
-    position: fixed; 
-    top: 550px; 
+    position: fixed;
+    margin-top: 550px;
     left: 50%;
     animation: arrow 2s infinite;
-   
+
 }
 
 @keyframes arrow {
@@ -187,7 +191,7 @@ font-family: 'Satoshi-BlackItalic';
 
 }
 
-.scroll-icons a {
+.scroll-icons span {
     margin-top: 27px;
     text-align: center;
     text-decoration: none;
@@ -592,15 +596,16 @@ h5 {
 .bottom-media-links ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 92px;
 }
 
 
 
+
 /***************responsive design for tablet************/
-@media (min-width: 668px)  {
+@media (min-width: 668px) {
     .toplogo-Img {
         display: flex;
     }
@@ -648,7 +653,9 @@ h5 {
         margin-right: 319px;
 
     }
-    .tech{
+
+
+    .tech {
         justify-content: center;
         align-items: center;
     }
@@ -697,8 +704,9 @@ h5 {
         flex-direction: row;
         margin-bottom: 80px;
     }
+
     .featured-projects>:first-child {
-     margin-bottom: 40px;
+        margin-bottom: 40px;
     }
 
     .projectImg {
@@ -724,7 +732,7 @@ h5 {
 }
 
 /***************responsive design for destop normal************/
-@media only screen and (min-device-width: 1025px) { 
+@media only screen and (min-device-width: 1025px) {
 
     .wraptop {
         display: flex;
@@ -767,7 +775,8 @@ h5 {
         margin-left: 29px;
 
     }
-/* 
+
+    /* 
     .summarybox {
         margin-top: 57px;
         margin-left: 85px;
@@ -796,6 +805,14 @@ h5 {
 
     }
 
+    .scroll-icons {
+        position: fixed;
+        top: 550px;
+        left: 50%;
+        animation: arrow 2s infinite;
+
+    }
+
     .tech {
         display: flex;
         flex-direction: row;
@@ -810,30 +827,33 @@ h5 {
         margin-left: 230px;
 
     }
-    .tech-text{
+
+    .tech-text {
         text-align: center;
         margin-left: 143px;
         margin-right: 230px;
     }
-    .tech-text p{
+
+    .tech-text p {
         margin-top: 150px;
     }
 
     .featured-projects>:first-child {
         padding-top: 120px;
-        text-align:start;
+        text-align: start;
         margin-left: 230px;
     }
+
     .project {
         display: flex;
         flex-direction: row;
         margin-right: 230px;
         margin-left: 230px;
-       
+
     }
 
     .projectImg {
-    
+
         margin-right: 24px;
         display: flex;
 
@@ -853,14 +873,14 @@ h5 {
     .viewCodeBtn {
         margin-right: 24px;
     }
-    
+
     .myWordSection>:first-child {
         margin-top: 120px;
         text-align: start;
         margin-left: 84px;
     }
 
-    .wrapMyWords{
+    .wrapMyWords {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -870,9 +890,11 @@ h5 {
         margin-right: 86px;
 
     }
-    .my-skills h2{
+
+    .my-skills h2 {
         margin-top: 120px;
     }
+
     .my-skills {
         display: grid;
         flex-direction: row;
@@ -881,11 +903,12 @@ h5 {
         grid-auto-flow: row;
         margin: 81px 230px 218px 230px;
     }
-   
-    .time-to-talk h1{
+
+    .time-to-talk h1 {
         margin-top: 191px;
     }
-    .bottom-media-links ul{
+
+    .bottom-media-links ul {
         margin-bottom: 175px;
     }
 
@@ -895,42 +918,48 @@ h5 {
 
 
 @media only screen and (min-device-width: 1281px) {
-    .introbox{
+    .introbox {
         margin: 252px 0px 300px 0px;
     }
-    .scroll-icons{
-       margin-top: 550px;
-       left: 50%;
+
+    .scroll-icons {
+        margin-top: 550px;
+        left: 50%;
     }
-    
+
     .tech-text {
         margin: 0px 346px 0px 346px;
     }
+
     .featured-projects>:first-child {
-      
+
         margin-left: 346px;
     }
+
     .project {
-        
+
         margin-right: 346px;
         margin-left: 346px;
     }
+
     .myWordSection>:first-child {
-      
+
         margin-left: 143px;
     }
 
-    .wrapMyWords{
-    
+    .wrapMyWords {
+
         margin-left: 143px;
         margin-right: 143px;
 
     }
-    .my-skills h2{
+
+    .my-skills h2 {
         margin-top: 120px;
     }
+
     .my-skills {
         margin: 81px 346px 218px 346px;
     }
-   
-} 
+
+}
