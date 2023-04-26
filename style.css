@@ -170,11 +170,6 @@ img.arrow:hover {
     
  }
 
-
-
-
-
-
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -189,18 +184,23 @@ img.arrow:hover {
     justify-content: center;
 }
 
-.chatbot, .guess-who, .weatherapp {
+.todo-project, .chatbot, .guess-who, .weatherapp {
     display: flex;
     flex-direction: column;
    
     margin: 50px 20px 50px 20px;
 }
 
-.chatbot-box, .guess-box, .weather-box {
+.todoproject-box, .chatbot-box, .guess-box, .weather-box {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
 }
+
+.p {
+    max-width: 600px; /* or any other value you prefer */
+  }
+  
 
 .image-projects {
     width: 280px;
@@ -213,11 +213,12 @@ img.arrow:hover {
     display: flex;
     flex-direction: row;
     gap: 10px;
-   max-width: fit-content;
+    max-width: fit-content;
+    flex-wrap: wrap;
     
 }
 
-.html-box, .css-box, .javascript-box {
+.html-box, .css-box, .javascript-box, .styled-components-box, .redux-box, .react-box {
     color: white;
     background-color: black;
     padding: 5px;
@@ -447,7 +448,7 @@ button:hover {
         align-self: center;
     }
 
-    .chatbot, .guess-who, .weatherapp {
+    .chatbot, .guess-who, .weatherapp, .todo-project {
         flex-direction: row;
     }
 
