@@ -4,4 +4,6 @@ This is my portfolio. Built with HTML and Flexbox and styled with CSS, it showca
 
 View it live here: https://antoniagranit.netlify.app
 
-<img width="800" alt="screenshot of Antonia Granit's portfolio page" src="https://user-images.githubusercontent.com/95037306/224045274-c882399c-5341-4854-8216-a45bfcf7ea3c.png">
+<p align="center">
+<img width="800" align="center" alt="Screenshot of my portfolio" src="https://user-images.githubusercontent.com/95037306/235295584-6c371ce8-42c1-4a54-9809-0231dcf36171.png">
+</p>
