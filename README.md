@@ -28,6 +28,10 @@ Photo by Elvis: https://www.pexels.com/photo/photo-of-macbook-pro-near-iphone-an
 Photo by Thirdman: https://www.pexels.com/photo/green-letter-tiles-on-a-colorful-surface-5767223/
 Photo by DS stories: https://www.pexels.com/photo/text-about-self-awareness-6005013/
 Photo by Pixabay: https://www.pexels.com/photo/food-snack-popcorn-movie-theater-33129/
+Photo by picjumbo.com: https://www.pexels.com/photo/white-printer-paper-196645/
+Photo by Karolina Grabowska: https://www.pexels.com/photo/a-set-of-numbers-with-multiplication-sign-on-a-surface-5412108/
+Photo by Polina Kovaleva: https://www.pexels.com/photo/black-and-white-book-on-brown-textile-5546874/
+Photo by Max Ravier: https://www.pexels.com/photo/green-hedge-maze-10290189/
 
 ## The problem
 
