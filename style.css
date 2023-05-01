@@ -72,15 +72,23 @@
     margin: 55px 105.5px 29px 105.5px;
     /* check the dimensions here */
     overflow: hidden;
+    object-fit: cover;
+    object-position: 50% 20%;
+
  }
 
 .header-text {
-    margin-left: 24px;
+    margin-left: 24px; 
+    /* margin-right: 24px;    */
+    padding: 0;
+
 }
 
 h1 { /*name*/
     font-family: SatoshiBold;
-    color: blue;
+    color: #7D1E6A;
+    /* background-color: #FC997C; */
+    display: block;
     font-size: 28px;
     line-height: 37.8px;
 }
@@ -111,7 +119,7 @@ h2 { /*Frontend Developer*/
 
 .introduction {
     margin-left: 24px;
-    margin-right: 24px;
+    /* margin-right: 24px; */
     margin-bottom: 54.3px;
     padding: 0;
 }
@@ -145,7 +153,7 @@ p {
 .second-page-tech-section {
     display: flex;
     flex-direction: column;
-    background-color: #EDFFFF;
+    background-color: #EEB0B0;
     width: 100%;
     min-width: 375px;
     height: 530px;
@@ -160,7 +168,7 @@ p {
 
 .title-tech h3 {
     font-family: SatoshiBold;
-    color: blue;
+    color: #7D1E6A;
     font-size: 80px;
     line-height: 108px;
     margin-top: 80px;
@@ -192,7 +200,7 @@ p {
 
 .title-featured-projects {
     margin: 64px 24px;
-    color: #0B24F5;
+    color: #396EB0;
 
 }
 
@@ -463,19 +471,21 @@ ul {
         width: 100%;
         height: 400px;
         aspect-ratio: 1/0.3;
+
     }  
 
     
   
     .profile-picture img {
-        min-width: 164px;
-        height: auto;
+        width: 164px;
+        height: 164px;
         border-radius: 50%;
         margin-top: 81px;
         margin-left: 102px;
         margin-bottom: 32px;
-        margin-right: unset;
+        /* margin-right: unset; */
         overflow: hidden;
+        object-fit: cover;
      }
 
      .header-container {
@@ -677,16 +687,31 @@ THIS IS THE LAST THING I TRIED */
         max-width: 100%;
         height: auto;
         aspect-ratio: 1/1.9;        
-        object-position: 40% 50%; 
      }
 
 
      .header-text {
         margin-top: 106.5px;
-        margin-left: 29px;
+        /* margin-left: 29px; */
         margin-right: 29px;
     }
 
+    .profile-picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-picture img {
+        width: 164px;
+        height: 164px;
+        border-radius: 50%;
+        margin: 55px 105.5px 29px 105.5px;
+        /* check the dimensions here */
+        overflow: hidden;
+        object-fit: cover;
+        object-position: 50% 20%;
+
+    }
      /* new section - Tech */
 
     .second-page-tech-section {
