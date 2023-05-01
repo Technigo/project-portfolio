@@ -128,7 +128,6 @@ article {
 }
 
 article img {
-    height: 280px;
     width: 100%;
     object-fit: cover;
 }
@@ -178,7 +177,7 @@ header p {
 
 .social-media-icons {
     display: inline-flex;
-    justify-content: space-between;
+    gap: 30px;
     width:100%;
     margin-bottom: 30px;
 }
@@ -297,8 +296,10 @@ mark {
     gap: 18px;
 }
 
-.featured-projects ul li {
-    display:inline;
+.featured-projects ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: row;
 }
 
 .featured-projects li {
@@ -308,6 +309,8 @@ mark {
     font-size: 16px;
     line-height: 21.6px;
     padding: 2px 6px;
+    display: inline-block;
+    margin: 0 5px 5px 0;
 }
 
 .featured-buttons {
@@ -865,8 +868,12 @@ a {
         border-radius: 50%;
     }
 
-    .scroll.feature-scroll, .scroll.my-words-scroll {
-        top: calc(96% - 138px/2);
+    .scroll.feature-scroll {
+        top: calc(98% - 138px/2);
+    }
+
+    .scroll.my-words-scroll {
+        top: calc(93% - 138px/2);
     }
 
 
@@ -913,8 +920,15 @@ a {
     }
 
     .feature-image {
-        min-width: 388px;
-        height: 280px;
+        max-width: 388px;
+    }
+
+    .feature-image.left {
+        object-position: left top;
+    }
+
+    .feature-image.contain {
+        object-fit: contain;
     }
 
     .article-container {
@@ -953,8 +967,11 @@ a {
     /* MY WORDS SECTION */
 
     .my-words {
-        padding: 120px 84px 200px 84px;
+        padding: 120px 400px 200px 400px;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .my-words h4 {
@@ -964,12 +981,7 @@ a {
     }
 
     .my-words-conatiner {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-        gap:88px 32px;
-        justify-content:stretch;
-        align-items: stretch;
+        width: 100%;
     }
 
     .my-words-article {
@@ -980,6 +992,13 @@ a {
         max-width: 100%;
     }
 
+    .my-words-article p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
     /* SKILLS SECTION */
 
@@ -1150,8 +1169,12 @@ a {
         border-radius: 50%;
     }
 
-    .scroll.feature-scroll, .scroll.my-words-scroll {
-        top: calc(96% - 138px/2);
+    .scroll.feature-scroll {
+        top: calc(98% - 138px/2);
+    }
+
+    .scroll.my-words-scroll {
+        top: calc(93% - 138px/2);
     }
 
 
@@ -1238,8 +1261,11 @@ a {
     /* MY WORDS SECTION */
 
     .my-words {
-        padding: 120px 143px 276px 143px;
+        padding: 120px 450px 200px 450px;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .my-words h4 {
@@ -1249,16 +1275,19 @@ a {
     }
 
     .my-words-conatiner {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-        gap:88px 98px;
-        justify-content:stretch;
-        align-items: stretch;
+        width: 100%;
     }
 
     .my-words-article img{
         max-width: 100%;
+    }
+
+    .my-words-article p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
 
