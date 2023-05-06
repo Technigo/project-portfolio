@@ -54,13 +54,7 @@ const projects = [
 projects.forEach((project) =>{
     projectWrapper.innerHTML += `
     <section class="project">
-        <Player
-            autoplay
-            loop
-            src=${project.lottie}
-            style={{ height: '150px', width: '150px' }}>
-            <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-        </Player>
+    <lottie-player id="firstLottie" src=${project.lottie} style="width:400px; height: 400px;"></lottie-player>
         <section class="project-content">
             <h6>${project.title}</h6>
             <p class="text">${project.projectSummary}</p>
