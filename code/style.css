@@ -147,8 +147,8 @@ header>div>p {
     margin-right: auto;
     left: 0;
     right: 0;
+    padding: 0.3rem;
     text-align: center;
-    white-space: pre;
     width: min-content;
     border-radius: 5px;
     border: 1px solid black;
@@ -247,7 +247,8 @@ main h3 {
 
 .project-A-wrapper,
 .project-B-wrapper,
-.project-C-wrapper {
+.project-C-wrapper,
+.project-D-wrapper {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -265,13 +266,15 @@ main h3 {
 
 .project-A-wrapper p,
 .project-B-wrapper p,
-.project-C-wrapper p {
+.project-C-wrapper p,
+.project-D-wrapper p {
     max-width: 500px;
 }
 
 .project-A-wrapper button,
 .project-B-wrapper button,
-.project-C-wrapper button {
+.project-C-wrapper button,
+.project-D-wrapper button {
     position: absolute;
     bottom: 0;
 }
@@ -279,7 +282,7 @@ main h3 {
 main li {
     display: inline-block;
     font-size: 16px;
-    margin-top: 4%;
+    margin-top: 3%;
     padding-left: 4px;
     padding-right: 4px;
     background-color: #1d1d20;
@@ -367,7 +370,7 @@ time {
 
 .skills {
     position: relative;
-    min-height: 800px;
+    min-height: 900px;
     background-color: white;
 }
 
@@ -676,7 +679,8 @@ address a {
 
     .project-A-wrapper,
     .project-B-wrapper,
-    .project-C-wrapper {
+    .project-C-wrapper,
+    .project-D-wrapper {
         position: relative;
         display: flex;
         flex-direction: row;
@@ -689,6 +693,11 @@ address a {
         margin-bottom: 2em;
         ;
         background-color: white;
+    }
+
+    .live-demo-button,
+    .view-code-button {
+        margin-bottom: 0.4rem;
     }
 
     /*My words*/
@@ -814,18 +823,20 @@ address a {
 
     .project-A-wrapper,
     .project-B-wrapper,
-    .project-C-wrapper {
+    .project-C-wrapper,
+    .project-D-wrapper {
         position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 2em;
         max-width: 820px;
-        height: 280px;
+        height: 340px;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 2em;
-        ;
+        border: none;
+        padding: 1rem;
         background-color: white;
     }
 }
@@ -838,6 +849,13 @@ address a {
         width: 100%;
         overflow: hidden;
     }
+    .project-A-wrapper,
+    .project-B-wrapper,
+    .project-C-wrapper,
+    .project-D-wrapper {
+        border: 2px solid black;
+        height: 330px;
+    }
 }
 
 
@@ -846,6 +864,13 @@ address a {
 
     .skills ul {
         width: 280px;
+    }
+
+    .project-A-wrapper,
+    .project-B-wrapper,
+    .project-C-wrapper,
+    .project-D-wrapper {
+        height: 360px;
     }
 }
 
@@ -918,25 +943,23 @@ address a {
 
     .project-A-wrapper,
     .project-B-wrapper,
-    .project-C-wrapper {
+    .project-C-wrapper,
+    .project-D-wrapper {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: fit-content;
         margin-left: 0;
         padding: 0.5em;
-        /* border: 1px solid #F6c54a;
-        border-style: double;
-        border-spacing: 10px;*/
         border: none;
-        outline: 3px solid #F6c54a;
         box-shadow: 0 0 0 7px white, 0 0 0 9px black;
         text-align: center;
     }
 
     .project-A-wrapper button,
     .project-B-wrapper button,
-    .project-C-wrapper button {
+    .project-C-wrapper button,
+    .project-D-wrapper button {
         position: relative;
     }
 
@@ -962,7 +985,7 @@ address a {
     /*skills section*/
 
     .skills {
-        min-height: 950px;
+        min-height: 1260px;
     }
 
     .skills h2 {
