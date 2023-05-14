@@ -39,7 +39,8 @@ h6 {
     font-family: 'Lato', sans-serif;
 }
 
-h4, h6,
+h4,
+h6,
 address {
     font-size: 22px;
 }
@@ -111,7 +112,7 @@ main button {
 }
 
 .name-title-column p:first-of-type {
-    background-color:  #1d1d20;
+    background-color: #1d1d20;
     width: fit-content;
     color: #FEFEE7;
     font-style: italic;
@@ -153,6 +154,14 @@ header>div>p {
     border-radius: 5px;
     border: 1px solid black;
     background-color: #F6c54a;
+    transition-duration: 0.5s;
+
+}
+
+.scroll-down:hover,
+.scroll-down:focus {
+    transform: ease-in-out;
+    filter: drop-shadow(0 0 0.75rem #f4b820) contrast(1.2);
 }
 
 .scroll-down p {
@@ -173,7 +182,7 @@ a:visited {
     transition: translateX(-100px);
 }*/
 
-.tech-wrapper { 
+.tech-wrapper {
     position: relative;
     height: 800px;
     background-color: #F6c54a;
@@ -234,16 +243,27 @@ main h3 {
 }
 
 .project-img-container {
+    position: relative;
+    display: inline-block;
+    max-height: 280px;
     max-width: 280px;
-    width: 100%;
     overflow: hidden;
-}
-
-.project-img {
-    height: 100%;
+  }
+  
+  .project-img {
+    display: block;
     width: 100%;
-    object-fit: cover;
-}
+    height: 100%;
+    overflow: hidden;
+    clip-path: circle(100% at 50% 50%);
+    transition: clip-path 0.3s ease, filter 0.5s ease;
+  }
+  
+  .project-img-container:hover .project-img {
+    clip-path: circle(50% at 50% 50%);
+    filter:brightness(1.4);
+  }
+
 
 .project-A-wrapper,
 .project-B-wrapper,
@@ -289,10 +309,16 @@ main li {
     color: #FEFEE7;
 }
 
+#safari-repo {
+    font-size: 1.2em;
+    margin-top: 6rem;
+}
+
 
 /*My words section*/
 
 .my-words-wrapper {
+    display: none;
     position: relative;
     width: 100%;
     background-color: #1d1d20;
@@ -636,11 +662,7 @@ address a {
     }
 
     .scroll-down {
-        margin-top: 2em;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
+        bottom: 3%
     }
 
     .icon-container {
@@ -849,6 +871,7 @@ address a {
         width: 100%;
         overflow: hidden;
     }
+
     .project-A-wrapper,
     .project-B-wrapper,
     .project-C-wrapper,
@@ -1111,13 +1134,13 @@ address a {
         width: 270px;
     }
 
-footer h2 {
-    font-size: 45px;
-}
+    footer h2 {
+        font-size: 45px;
+    }
 
-address {
-    font-size: 0.7em;
-}
+    address {
+        font-size: 0.7em;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -1125,9 +1148,10 @@ address {
     header {
         height: 1100px;
     }
+
     .banner-pic {
         visibility: hidden;
-    }  
+    }
 
     .scroll-down {
         bottom: 3em;
@@ -1192,12 +1216,11 @@ address {
     header {
         height: 1200px;
     }
+
     .icon-container {
         margin-top: 2em;
         justify-self: flex-end;
     }
 }
 
-@media screen and (max-width: 320px) {
-    
-}
+@media screen and (max-width: 320px) {}
