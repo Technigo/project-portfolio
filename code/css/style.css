@@ -14,26 +14,24 @@
 }
 
 @font-face {
-    font-family: 'EBGaramondItalics';
+    font-family: 'SatoshiBlack';
+    font-weight: bold;
+    src: url('../Fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf');
+}
+
+@font-face {
+    font-family: 'EBGaramond';
     font-weight: normal;
-    src: url('../Fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf')
+    src: url('../Fonts/EB_Garamond/static/EBGaramond-Regular.ttf')
 }
 
 /*mobile*/
-html, body {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+body {
     margin: 0;
     padding: 0;
 }
 
-body {
-    background: #f5f5f5;
-    width: 100%;
-    height: 100vh;
-    
-    
-}
+
 header {
     display: flex;
     flex-direction: column;
@@ -45,36 +43,56 @@ header {
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
-    justify-content: center;
 }
 
 .profile-pic img {
-    width: 170px;
-    height: 170px;
+    width: 164px;
+    height: 164px;
     border-radius: 50%;
-    justify-content: center;
     object-fit: cover;
-    place-self: center;
     object-position: 70% 0%;
-
+    padding: 0;
 }
 
 .name-title {
-    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+.name-title h1 {
     font-family: 'SatoshiBold';
-
-
+    font-weight: 700;
+    font-size: 28px;
+    color: #0B24F5;
+    margin-bottom: 1rem;
 }
-.name-title .h2 {
+
+.name-title h2 {
+    font-family: 'SatoshiBlack';
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.name-title h3 {
+    font-family: 'SatoshiMedium';
     font-weight: 500;
+    font-size: 24px;
+    margin-top: 0;
+    color: #565656
 }
-
 
 
 .about-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'EBGaramond';
+    font-size: 22px;
 }
 
 .summary-section h3 {
@@ -82,13 +100,21 @@ header {
 }
 
 .summary-section p {
-    text-align: center;
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0;
 }
 
+.social-media {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 32px;
+}
 
 .social-media img {
     opacity: 30%;
-   
 }
 
 .social-media img:hover {
@@ -97,12 +123,28 @@ header {
 }
 
 .tech-section {
+    display: flex;
+    flex-direction: column;
     background-color: #EDFFFF;
-    text-align: justify;
+    text-align: left;
+    margin-top: 1rem;
 }
 
-.tech-section h3 {
+.tech-section h1 {
     text-align: center;
+    font-family: 'SatoshiBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    color: #0B24F5;
+
+}
+
+.tech-section p {
+    margin: 0 1rem 0 1rem;
+    font-family: 'EBGaramond';
+    font-weight: 400;
+    font-size: 22px;
 }
 
 .red {
@@ -122,19 +164,55 @@ header {
 
 .featured-projects {
     background-color: #ffffff;
-    text-align: center;
 }
 
+.featured-projects h2 {
+    font-family: 'SatoshiBold';
+    font-style: normal;
+    font-size: 72px;
+    font-weight: 700;
+    color: #0B24F5
+}
+
+.project-text {
+    margin: 0 1rem 0 1rem
+}
+
+.project-text h3 {
+    font-family: 'SatoshiBlack';
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.project-text p {
+    font-family: 'EBGaramond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+
+}
+
+.project-language {
+    font-family: 'SatoshiMedium';
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
 
 .highlight-black {
+    
     background: black;
     color: white
 }
 
 .project-buttons {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .color1-btn {
@@ -151,7 +229,28 @@ header {
 }
 
 .skills {
-   
     background-color: #FDF2E4;
     text-align: center;
 }
+
+.time-to-talk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+/* 
+///////////////MEDIA QUERIES///////////////////
+.project-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+*/
