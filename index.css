@@ -5,7 +5,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 ;
   padding: 0;
 }
 
@@ -32,6 +32,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100%;
 }
 
 p,
@@ -46,7 +47,7 @@ li {
 
 .mainHeader {
   min-height: 55vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,8 +139,9 @@ a {
   font-size: 22px;
   line-height: 3rem;
 }
+
 .sectionWrapper {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -187,9 +189,9 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   column-gap: 1rem;
-  width: 90%;
+  width: 95%;
 }
 
 .grid-item {
@@ -546,7 +548,9 @@ em {
   font-size: 12px;
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px)*/
+@media only screen and (max-width: 768px) 
+ {
   .aboutMe p {
     font-size: 16px;
     line-height: 25px;
@@ -594,12 +598,14 @@ em {
   .sectionWrapper {
     width: 100%;
   }
+
+
   .thoughtAndCode {
     grid-template-columns: 1fr;
     margin-top: 0;
     height: 100%;
     width: 100%;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
 
   .grid {
