@@ -38,10 +38,12 @@ header {
     align-items: center;
 }
 .header-left {
+    display: block;
     display: contents;
 }
 
 .header-right {
+    display: block;
     display: none
 }
 
@@ -180,6 +182,7 @@ header {
 
 .featured-projects {
     background-color: #ffffff;
+    margin: 2rem 0 2rem 0;
 }
 
 .featured-projects h2 {
@@ -380,7 +383,10 @@ header {
     align-items: center;
     text-align: center;
     font-weight: 900;
-    gap: 0;
+    
+}
+.time-to-talk h2 {
+    margin: 1rem 0 1rem 0;
 }
 
 .footer-profile p, a {
@@ -400,22 +406,23 @@ header {
     header {
         flex-direction: row;
     }
+    
+   .summary-section {
+    position: relative;
+    width: 100%;
+    height: 50%;
+   margin: 1rem 2rem 1rem 2rem
+   }
 
-    .header-left{
-        display: block;
-        width: 50%;
-        height: 100%;
-
-    }
     .header-right {
+        order: 1;
         display: block;
-        width: 50%;
-        
-        height:100%;
+        position: relative;
+        width: 120%;
+        height: 100%
     }
 
     .header-right img {
-        position: absolute;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -428,8 +435,8 @@ header {
         gap: 2rem;
     }
 
-    .about-section p {
-        margin: 1rem 30rem 1rem 30rem;
+    .about-section {
+        margin: 1rem 4rem 1rem 4rem;
     }
     
     .tech-section {
@@ -440,9 +447,10 @@ header {
 
     .tech-section h1 {
         margin: 10rem;
+        justify-self: center;
     }
     .tech-section p {
-        margin: 8rem
+        margin: 0 20rem 0 20rem
     }
 
     .featured-projects {
