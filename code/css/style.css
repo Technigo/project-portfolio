@@ -183,6 +183,7 @@ header {
 .featured-projects {
     background-color: #ffffff;
     margin: 2rem 0 2rem 0;
+    text-align: center;
 }
 
 .featured-projects h2 {
@@ -195,6 +196,7 @@ header {
 
 .project-section {
     display: flex;
+    text-align: left;
     flex-direction: column;
     gap: 2rem;
 }
@@ -399,10 +401,71 @@ header {
 
 
 
+/*/////////////////////////////////////////////////
+////////////////MEDIA QUERIES////////////////////
+/////////////////////////////////////////////////*/
 
-/*///////////////MEDIA QUERIES///////////////////*/
+/*//////////////////TABLET/////////////////////*/
+@media (min-width: 540px) and (max-width: 767px){
+.project-wrapper {
+    flex-direction: row;
+    margin: 1rem;
 
-@media (min-width: 766px) {
+}
+}
+/*//////////////////NORMAL DESKTOP/////////////////////*/
+@media (min-width: 768px) and (max-width: 1439px){
+    header {
+        flex-direction: row;
+    }
+    
+   .summary-section {
+    position: relative;
+    width: 100%;
+    height: 50%;
+   margin: 1rem 2rem 1rem 2rem
+   }
+
+    .header-right {
+        order: 1;
+        display: block;
+        position: relative;
+        width: 120%;
+        height: 100%
+    }
+
+    .header-right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .profile-pic {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 2rem;
+    }
+
+    .project-wrapper {
+        flex-direction: row;
+        align-items: center;
+        margin: 2rem 15rem 2rem 15rem;
+    
+    }
+
+    .skill-columns {
+        display: flex;
+        width: 100%;
+    }
+
+    .skill-columns > * {
+        width: calc(100%/3)
+    }
+}
+
+/*//////////////////LARGE DESKTOP/////////////////////*/
+@media (min-width: 1440px) {
     header {
         flex-direction: row;
     }
@@ -453,12 +516,16 @@ header {
         margin: 0 20rem 0 20rem
     }
 
+    .project-section {
+        align-items: center;
+    }
+
     .featured-projects {
         text-align: center;
     }
 
     .project-wrapper {
-        margin: 2rem 25rem 2rem 25rem;
+        margin: 2rem 20rem 2rem 20rem;
         flex-direction: row;
         align-items: center;
     }
