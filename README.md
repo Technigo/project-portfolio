@@ -1,4 +1,4 @@
 # Portfolio
 
-Portfolio of Joanna Philips - Frontend JavaScript Developer 
+Portfolio of Joanna Philips - JavaScript Developer 
 https://joannaphilips.se/
