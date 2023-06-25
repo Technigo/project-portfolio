@@ -3,24 +3,41 @@ for Satoshi.*/
 
 /*There are no accessibility aspects included as I never got that far. Media queries will be placed as soon as I understand why flex
 does not want to be applied anywhere, which means that I can not place items where I want them yet. For that reason, everything is to the right.*/
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
 
 body {
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: row;
 }
 
 header {
     background-color: #99c1b9;
-    margin: 0px;
+    /* margin: 0px; */
     padding: 0px;
+    width: 50%
 }
 
 .quote {
     color:#b27092;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
-    font-size: 55px;
-    padding: 100px 150px 20px 150px;
+    font-size: 35px;
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    padding-left: 15px;
 }
 
 .pooh {
@@ -28,12 +45,12 @@ header {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 25px;
-    padding-left: 150px;
-    padding-bottom: 100px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .introduction {
-    width: 1000px; /*I have just placed this width to make it easier to look at for the reviewer, since I can not make flex work anywhere*/
+    width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -94,11 +111,14 @@ a {
 }
 
 .icons-top {
+    padding-top: 40px;
     padding-bottom: 60px;
+    margin-left: 10px;
 }
 
 .tech {
-    width: 1000px; /*I have just placed this width to make it easier to look at for the reviewer, since I can not make flex work anywhere*/
+    width: 100%;
+    max-height: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -111,7 +131,7 @@ a {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 108px;
     margin-top: 0px;
 }
@@ -140,7 +160,7 @@ h1 {
 }
 
 .featured-projects {
-    width: 1000px; /*I have just placed this width to make it easier to look at for the reviewer, since I can not make flex work anywhere*/
+    width: 100%;
     color:#1c3144;
     padding: 80px 0px 80px 20px;
 }
@@ -149,9 +169,41 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 60px;
     line-height: 80px;
     margin-top: 0px;
+}
+
+.project-container1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.weather-box {
+    flex-direction: column;
+    width: 50%;
+}
+
+.guesswho-box {
+    flex-direction: column;
+    width: 50%;
+}
+
+.project-container2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.chatbot-box {
+    flex-direction: column;
+    width: 50%;
+}
+
+.article-box {
+    flex-direction: column;
+    width: 50%;
 }
 
 .projects-img {
@@ -183,7 +235,7 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 8px;
     padding-top: 20px;
 }
 
@@ -199,7 +251,7 @@ p {
 }
 
 .live-demo {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 20px;
 }
 
@@ -208,8 +260,9 @@ p {
     height: 50px;
 }
 
-.view-demo {
-    padding-bottom: 25px;
+.view-code {
+    padding-bottom: 20px;
+    align-items: flex-end;
 }
 
 .view {
@@ -218,13 +271,28 @@ p {
 }
 
 .my-words {
-    width: 1000px; /*I have just placed this width to make it easier to look at for the reviewer, since I can not make flex work anywhere*/
     background-color: #ceb5b7;
-    padding-top: 80px;
+    width: 100%;
+    padding: 80px 0px 80px 20px;
+    /* padding-top: 80px;
     padding-bottom: 80px;
-    padding-left: 20px;
+    padding-left: 20px; */
+}
+
+.article-container {
     display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.first-article {
     flex-direction: column;
+    width: 50%;
+}
+
+.second-article {
+    flex-direction: column;
+    width: 50%;
 }
 
 .words-headline {
@@ -232,7 +300,7 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 60px;
     line-height: 97px;
     color:#1c3144;
     padding-top: 0px;
@@ -243,6 +311,7 @@ p {
     display: block;
     width: 100%;
     height: 400px;
+    padding-top: 30px;
 }
 
 .calendardate {
