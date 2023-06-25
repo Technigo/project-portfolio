@@ -108,6 +108,7 @@ a {
     font-size: 22px;
     line-height: 29px;
     color: #1c3144;
+    margin-top: 10px;
 }
 
 .icons-top {
@@ -274,9 +275,6 @@ p {
     background-color: #ceb5b7;
     width: 100%;
     padding: 80px 0px 80px 20px;
-    /* padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 20px; */
 }
 
 .article-container {
@@ -331,8 +329,9 @@ p {
     line-height: 43px;
 }
 
-.readbutton-1 {
-    padding-bottom: 70px;
+.readbutton {
+    padding-top: 25px;
+    padding-bottom: 30px;
 }
 
 .read {
@@ -341,7 +340,7 @@ p {
 }
 
 .skills {
-    width: 1000px; /*I have just placed this width to make it easier to look at for the reviewer, since I can not make flex work anywhere*/
+    width: 100%;
     background-color: #ffe6e8;
     padding: 80px 0px 80px 20px;
     color:#1c3144
@@ -351,8 +350,32 @@ p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 108px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+    /* gap: 50px; */
+}
+
+.code {
+    flex-direction: column;
+}
+
+.toolbox {
+    flex-direction: column;
+}
+
+.more {
+    flex-direction: column;
+}
+
+.upcoming {
+    flex-direction: column;
 }
 
 ul {
@@ -390,7 +413,7 @@ h3 {
 }
 
 .timeToTalk {
-    width: 1000px; /*I have just placed this width to make it easier to look at for the reviewer, since I can not make flex work anywhere*/
+    width: 100%;
     padding: 80px 0px 80px 20px;
 }
 
@@ -398,19 +421,9 @@ h3 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 58px;
+    font-size: 60px;
     line-height: 78px;
     color: #d81e5b;
-}
-
-.phone {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    margin-top: 40px;
-    color:#1c3144
 }
  
 .email {
@@ -419,7 +432,8 @@ h3 {
     font-weight: 900;
     font-size: 24px;
     line-height: 32px;
-    color:#1c3144
+    color:#1c3144;
+    margin-top: 15px;
 }
 
 .finishing-icons {
