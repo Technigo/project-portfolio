@@ -1,8 +1,3 @@
-/*@import url("satoshi.css"); I could not get this font to work, all places where Verdana is used should be Satoshi. Size etc is according to instructions
-for Satoshi.*/
-
-/*There are no accessibility aspects included as I never got that far. Media queries will be placed as soon as I understand why flex
-does not want to be applied anywhere, which means that I can not place items where I want them yet. For that reason, everything is to the right.*/
 * {
     margin: 0;
     padding: 0;
@@ -24,9 +19,12 @@ body {
 
 header {
     background-color: #99c1b9;
-    /* margin: 0px; */
     padding: 0px;
-    width: 50%
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote {
@@ -35,9 +33,10 @@ header {
     font-weight: 600;
     font-size: 35px;
     text-align: left;
-    padding-top: 100px;
-    padding-bottom: 10px;
+    padding-bottom: 35px;
     padding-left: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .pooh {
@@ -46,7 +45,6 @@ header {
     font-weight: 500;
     font-size: 25px;
     text-align: center;
-    padding-bottom: 20px;
 }
 
 .introduction {
@@ -114,6 +112,9 @@ a {
 .icons-top {
     padding-top: 40px;
     padding-bottom: 60px;
+}
+
+.icon-link {
     margin-left: 10px;
 }
 
@@ -125,7 +126,7 @@ a {
     flex-wrap: wrap;
     background-color: #d5ecd4;
     color:#1c3144;
-    padding: 80px 0px 80px 20px;
+    padding: 100px 20px 120px 20px;
 }
 
 .tech-headline {
@@ -162,8 +163,9 @@ h1 {
 
 .featured-projects {
     width: 100%;
+    flex-wrap: wrap;
     color:#1c3144;
-    padding: 80px 0px 80px 20px;
+    padding: 80px 20px 80px 20px;
 }
 
 .projects-headline {
@@ -274,7 +276,8 @@ p {
 .my-words {
     background-color: #ceb5b7;
     width: 100%;
-    padding: 80px 0px 80px 20px;
+    flex-wrap: wrap;
+    padding: 80px 20px 80px 20px;
 }
 
 .article-container {
@@ -342,7 +345,7 @@ p {
 .skills {
     width: 100%;
     background-color: #ffe6e8;
-    padding: 80px 0px 80px 20px;
+    padding: 80px 20px 80px 20px;
     color:#1c3144
 }
 
@@ -363,18 +366,22 @@ p {
 
 .code {
     flex-direction: column;
+    margin-top: 0;
 }
 
 .toolbox {
     flex-direction: column;
+    margin-top: 0;
 }
 
 .more {
     flex-direction: column;
+    margin-top: 0;
 }
 
 .upcoming {
     flex-direction: column;
+    margin-top: 0;
 }
 
 ul {
@@ -461,3 +468,115 @@ h3 {
     max-width: 600px;
 }
 
+@media (max-width: 1024px) {
+
+    .top-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        display: none;
+    }
+
+    .tech,
+    .featured-projects,
+    .my-words,
+    .skills {
+        padding-right: 15px;
+    }
+
+    /* .skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } */
+
+    /* .skills-just2 {
+        flex-direction: row;
+    } */
+
+    .toolbox,
+    .upcoming {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 819px) {
+
+    .top-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .final-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .final-img {
+        margin-left: 15px;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 664px) {
+
+    .top-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icons-top {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    .featured-projects {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .article-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* .skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .skills-just2 {
+        flex-direction: column;
+    } */
+
+    .toolbox,
+    .upcoming,
+    .more {
+        margin-top: 10px;
+    }
+
+    .project-container1,
+    .project-container2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .finishing-icons {
+        display:flex;
+        flex-direction: column;
+    }
+}
