@@ -2,6 +2,16 @@ const projectWrapper = document.getElementById("projectWrapper");
 
 const projects = [
   {
+    img: "assets/ux-design-handover.jpg",
+    imgDescription: "The site outdoor-activity shown on multiple screen sizes. All with different content from the site",
+    title: "Design handover",
+    projectSummary:
+      "Create a landing page based on a UX-students design. Great way to practice a design handover. The UX-designer explained the design and we talked about different approaches. We also had great discussion along the way. The scope for this project was a week. I choose to put main focus on the parts I had never tried before, like the hero video and image carousel.",
+    tech: ["HTML", "Styled Components", "React"],
+    live: "https://outdoor-workout.netlify.app/",
+    code: "https://github.com/MalinSkill/project-design-handoff",
+  },
+  {
     img: "assets/project-movies.jpg",
     imgDescription: "the site shown on two phones, one displaying popular movies and the second details for a choosen movie",
     title: "Movie releases",
