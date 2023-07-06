@@ -6,7 +6,7 @@ const projects = [
     imgDescription: "the site shown on two phones, one displaying popular movies and the second details for a choosen movie",
     title: "Movie releases",
     projectSummary:
-      "Site that displays nee releases and popular movies, with use of an API. Multi-page application using React Router. Dynamic routing based on movie id, to get the details page",
+      "Site that displays new releases and popular movies, with the use of an API. Multi-page application using React Router. Dynamic routing based on movie id, to get the movie-details page.",
     tech: ["HTML", "CSS", "JavaScript", "API", "React", "Pair-Programming"],
     live: "https://alex-malin-movies.netlify.app/",
     code: "https://github.com/Alexander-Gabor/project-movies",
