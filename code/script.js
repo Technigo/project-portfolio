@@ -2,6 +2,16 @@ const projectWrapper = document.getElementById("projectWrapper");
 
 const projects = [
   {
+    img: "assets/redux-quiz.jpg",
+    imgDescription: "Different pages of the quiz show on three mockup phones",
+    title: "Quiz - React & Redux",
+    projectSummary:
+      "We created a quiz in React and used Redux as state manager. Learned about how to interact with the store/state using selectors or by dispatching actions. This project was done in a group, both mob-programming and spliting up in branches.",
+    tech: ["HTML", "Styled Components", "JavaScript", "React", "Redux", "Mob-Programming"],
+    live: "https://the-last-quiz.netlify.app/",
+    code: "https://github.com/JosefinRobertsson/project-redux-quiz",
+  },
+  {
     img: "assets/ux-design-handover.jpg",
     imgDescription: "The site outdoor-activity shown on multiple screen sizes. All with different content from the site",
     title: "Design handover",
