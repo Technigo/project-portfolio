@@ -2,6 +2,16 @@ const projectWrapper = document.getElementById("projectWrapper");
 
 const projects = [
   {
+    img: "assets/project-to-do-app.jpg",
+    imgDescription: "To-do application shown on mockup Ihpone",
+    title: "To-do project",
+    projectSummary:
+      "Built in React with Redux as state manager, learned more about slices, reducers, actions and how to structure your store/state. First introduction to local storage.",
+    tech: ["HTML", "Styled Components", "JavaScript", "React", "Redux"],
+    live: "https://to-do-check-list.netlify.app/",
+    code: "https://github.com/MalinSkill/project-todos",
+  },
+  {
     img: "assets/redux-quiz.jpg",
     imgDescription: "Different pages of the quiz show on three mockup phones",
     title: "Quiz - React & Redux",
