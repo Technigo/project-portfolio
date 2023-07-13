@@ -2,6 +2,16 @@ const projectWrapper = document.getElementById("projectWrapper");
 
 const projects = [
   {
+    img: "assets/project-labyrinth.jpg",
+    imgDescription: "3different pages of our version of the game Labyrinth, displayed on 3 mockup Iphones",
+    title: "Labyrinth game",
+    projectSummary:
+      "We created a game in React using an API, Redux as state manager to keep track of which position the player is at and wrote thunks for the API calls. We handle the response delay with a loading component",
+    tech: ["HTML", "Styled Components", "JavaScript", "React", "Redux", "API", "Pair-Programming"],
+    live: "https://zippy-vacherin-041127.netlify.app/",
+    code: "https://github.com/augustaquilon/project-labyrinth",
+  },
+  {
     img: "assets/project-to-do-app.jpg",
     imgDescription: "To-do application shown on mockup Ihpone",
     title: "To-do project",
