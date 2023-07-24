@@ -2,11 +2,21 @@ const projectWrapper = document.getElementById("projectWrapper");
 
 const projects = [
   {
+    img: "assets/final-project.jpg",
+    imgDescription: "4 different sections of the site wave finder displayed on mockup phones",
+    title: "Wave Finder",
+    projectSummary:
+      "For our final project, we decided to team up as a pair to create our vision of a surf community. This is a fullstack project, where we got an excellent opportunity to put everyhting we learned in the bootcamp together. ",
+    tech: ["Styled Components", "JavaScript", "API", "React", "Redux", "Express.js", "MongoDB", "Node.js"],
+    live: "https://wave-finder.netlify.app/",
+    code: "https://github.com/MalinSkill/backend-final-project-technigo",
+  },
+  {
     img: "assets/happy-thoughts.jpg",
     imgDescription: "the site shown on phone, with candy background",
     title: "Happy thoughts",
     projectSummary:
-      "In this project I learned more about fetching data from an API, both with GET and POST request. I have built the API in Node using Express and the data is stored in a mongoDB. It was fun to create the different endpoints to complete this project, which we previously used an external API for.",
+      "In this project I learned more about fetching data from an API, both with GET and POST request. I have built the API in Node using Express and the data is stored in a mongoDB.",
     tech: ["HTML", "CSS", "JavaScript", "API", "React", "Express.js", "MongoDB", "Node.js"],
     live: "https://happy-vibes.netlify.app",
     code: "https://github.com/MalinSkill/project-happy-thoughts",
@@ -56,7 +66,7 @@ const projects = [
     imgDescription: "The site outdoor-activity shown on multiple screen sizes. All with different content from the site",
     title: "Design handover",
     projectSummary:
-      "Create a landing page based on a UX-students design. Great way to practice a design handover. The UX-designer explained the design and we talked about different approaches. We also had great discussion along the way. The scope for this project was a week. I choose to put main focus on the parts I had never tried before, like the hero video and image carousel.",
+      "Create a landing page based on a UX-students design. The UX-designer explained the design and we talked about different approaches. The scope for this project was a week. I choose to put main focus on the parts I had never tried before, like the hero video and image carousel.",
     tech: ["HTML", "Styled Components", "React"],
     live: "https://outdoor-workout.netlify.app/",
     code: "https://github.com/MalinSkill/project-design-handoff",
