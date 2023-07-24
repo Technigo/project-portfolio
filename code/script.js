@@ -2,12 +2,22 @@ const projectWrapper = document.getElementById("projectWrapper");
 
 const projects = [
   {
+    img: "assets/happy-thoughts.jpg",
+    imgDescription: "the site shown on phone, with candy background",
+    title: "Happy thoughts",
+    projectSummary:
+      "In this project I learned more about fetching data from an API, both with GET and POST request. I have built the API in Node using Express and the data is stored in a mongoDB. It was fun to create the different endpoints to complete this project, which we previously used an external API for.",
+    tech: ["HTML", "CSS", "JavaScript", "API", "React", "Express.js", "MongoDB", "Node.js"],
+    live: "https://happy-vibes.netlify.app",
+    code: "https://github.com/MalinSkill/project-happy-thoughts",
+  },
+  {
     img: "assets/project-express-api.jpg",
     imgDescription: "Screenshot of the swagger documentation for the API",
     title: "Express API",
     projectSummary:
       "In this project I learned how to build an API in Node using Express. The data used in this project is hard-coded and stored as a JSON file. I used Postman while building, then deploying to Google cloud.",
-    tech: ["Node.js", "Express"],
+    tech: ["Node.js", "Express.js"],
     live: "https://project-express-api-g54dl7acxq-lz.a.run.app/api-docs/",
     code: "https://github.com/MalinSkill/project-express-api",
   },
@@ -60,16 +70,6 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "API", "React", "Pair-Programming"],
     live: "https://alex-malin-movies.netlify.app/",
     code: "https://github.com/Alexander-Gabor/project-movies",
-  },
-  {
-    img: "assets/happy-thoughts.jpg",
-    imgDescription: "the site shown on phone, with candy background",
-    title: "Happy thoughts",
-    projectSummary:
-      "Tweet all your happy thoughts here! In this project I learned more about fetching APIs, both with GET and POST request. I also learned how to incorporate the useEffect hook.",
-    tech: ["HTML", "CSS", "JavaScript", "API", "React"],
-    live: "https://happy-vibes.netlify.app",
-    code: "https://github.com/MalinSkill/project-happy-thoughts",
   },
   {
     img: "assets/survey-image.jpg",
