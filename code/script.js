@@ -2,6 +2,16 @@ const projectWrapper = document.getElementById("projectWrapper");
 
 const projects = [
   {
+    img: "assets/project-express-api.jpg",
+    imgDescription: "Screenshot of the swagger documentation for the API",
+    title: "Express API",
+    projectSummary:
+      "In this project I learned how to build an API in Node using Express. The data used in this project is hard-coded and stored as a JSON file. I used Postman while building, then deploying to Google cloud.",
+    tech: ["Node.js", "Express"],
+    live: "https://project-express-api-g54dl7acxq-lz.a.run.app/api-docs/",
+    code: "https://github.com/MalinSkill/project-express-api",
+  },
+  {
     img: "assets/project-labyrinth.jpg",
     imgDescription: "3different pages of our version of the game Labyrinth, displayed on 3 mockup Iphones",
     title: "Labyrinth game",
