@@ -13,6 +13,8 @@ body {
     font-family: Satoshi, sans-serif;
 }
 
+/*Header section*/
+
 .header {
     display: flex;    
     flex-direction: column;
@@ -52,7 +54,6 @@ h2 {
     font-weight: 900;
 }
 
-
 p {
     font-family: EB Garamond;
     padding: 0 24px 0 24px;
@@ -64,21 +65,48 @@ p {
     justify-content: space-evenly;
 }
 
-.Tech {
+/*Arrow section*/
+
+.arrow-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounce 1.8s infinite alternate;
+}
+
+@keyframes bounce {
+    0%      {transform: translateY(0);}
+    100%    {transform: translateY(50px);}
+}
+
+/*Tech skill section*/
+
+.Tech-skills {
     background-color: #EDFFFF;
 }
 
-.Projects {
+.pink-highlight {
+  background-color: pink;
+}
+
+.blue-highlight {
+  background-color: blue;
+  color: white;
+}
+
+.pastel-blue-highlight {
+  background-color: rgb(131, 178, 194);
+  color: white;
+}
+
+/*Project section*/
+
+.Projects-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.Skills {
-    display: flex;
-    flex-direction: column;
-    background-color: #FDF2E4;
-}
 
 ul {
     font-family: EB Garamond;
@@ -100,17 +128,15 @@ button.github {
     background-color: #F5F5F5;
 }
 
-.arrow {
+/*Skill section*/
+
+.skills-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: bounce 1.8s infinite alternate;
+    flex-direction: column;
+    background-color: #FDF2E4;
 }
 
-@keyframes bounce {
-    0%      {transform: translateY(0);}
-    100%    {transform: translateY(50px);}
-}
+/*Contact section*/
 
 /*
 Color for "Tech", "Featured Projects" & "Skills" #0B24F5
