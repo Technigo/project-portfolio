@@ -16,17 +16,22 @@
 <body>
     <!-----Header section---->
     <header class="top-section">
-        <section class="portfolio-logo">
-            <img src="./images/logo.jpg" alt="Portfolio logo" width="700">
-        </section>
-        <main>
-        <section class="header">
-            <img class="logo" src="./images/img_profile.png" alt="Image of Emma Engvall" class="profile" width="164">
-            <div class ="header-text">
-            <h1 class="name">Emma Engvall</h1>
-            <h2 class="title">Frontend developer</h2>
-            <h3 class="work">+ business analyst</h3> 
-            </div>
+        <div class="logo-container">
+            <img class="background-logo" src="./images/logo.jpg" alt="Portfolio logo" width="700">
+        </div>
+        
+        <div class="header">
+            <section class="header-image-and-text">
+              <div class="header-image">
+                <img class="profile" src="./images/img_profile.png" alt="Image of Emma Engvall" width="164">
+              </div>
+              <div class ="header-text">
+                <h1 class="name">Emma Engvall</h1>
+                <h2 class="title">Frontend developer</h2>
+                <h3 class="work">+ business analyst</h3> 
+              </div>
+            </section>
+
             <h4 class="presentation"> 
                 My name is Emma and I am an aspiring frontend developer.
                 I have recently completed a 22-week Web Development boot camp with <strong>Technigo</strong>.
@@ -37,7 +42,7 @@
                 Emma<br>
             </h4>
 
-        <section class = "socialmedia-icons">
+          <section class = "socialmedia-icons">
             <a href="https://www.linkedin.com/in/emma-engvall-b8157866/" target="_blank">
             <img class="sm-icon" src="./images/linkedin.svg" alt="linkedin icon"> 
             </a>
@@ -49,7 +54,8 @@
             <a href="https://stackoverflowteams.com/c/technigo/users/461/?tab=profile" target="_blank">
             <img class="sm-icon" src="./images/stackoverflow.svg" alt="stackoverflow icon">
             </a>
-        </section>
+           </section>
+        </div>
     </header>
 
    <!-----Arrow section-----> 
@@ -57,6 +63,7 @@
         <img class="arrow" src = "./images/Scroll arrow.png" alt="Down arrow indicating scrolling down" width="138">
     </div>
 
+    <main>
     <!-----Tech skill section----->
     <section class="tech-skills">
         <div class="tech-header">
@@ -71,24 +78,31 @@
     
 
     <!-----Project section----->
-    <section class="projects-section">
-        <div class="projects-header">
+    <section>
+        <div class="projects-section">
+        <div class="section-title">
             <h2>Featured Projects</h2>
         </div>
 
         <!-----Project Guess Who----->
         <div class ="project-container">
+        <article class="project">
+        <div class="project-image-group">   
             <img class="project-image" src="./images/guess_who_option_4.jpg" alt="Image showing desk with magnifying glass." width="184">
+        </div> 
+        <div class="project-text-and-icons">
+        <div class="project-text-group">
             <h4 class="project-title">The Guess Who game</h4>
             <p class="project-text">The Guess Who game...</p>
-            
-            <div class="language-buttons">
-                <span class="language-text">HTML5</span>
-                <span class="language-text">CSS3</span>
-                <span class="language-text">Javascript ES6</span>
-            </div>
+        </div>
+
+        <div class="language-buttons">
+            <span class="language-text">HTML5</span>
+            <span class="language-text">CSS3</span>
+            <span class="language-text">Javascript ES6</span>
+        </div>
           
-            <div class="link-buttons">
+        <div class="link-buttons">
             <button class="github-link-project" type="button">
                 <a href="https://github.com/EmmaEngvall/project-guess-who" target="_blank">
                 <img src="./images/github.svg" alt="github icon">
@@ -104,20 +118,27 @@
             </button>
         </div>
         </div>
+        </article>
 
         <!-----Project Weather app----->
-        <div class = "project-container">
+        <div class ="project-container">
+        <article class="project">
+        <div class="project-image-group">
             <img class="project-image" src= "./images/weather_app.jpg" alt="Image showing weather." width="200">
+        </div>
+        <div class ="project-text-and-icons">
+        <div class="project-text-group">
             <h4 class="project-title">Weather app</h4>
             <p class="project-text">Using geolocation...</p>
+        </div>
             
-            <div class="language-buttons">
-                <span class="language-text">HTML5</span>
-                <span class="language-text">CSS3</span>
-                <span class="language-text">Javascript ES6</span>
-            </div>
+        <div class="language-buttons">
+            <span class="language-text">HTML5</span>
+            <span class="language-text">CSS3</span>
+            <span class="language-text">Javascript ES6</span>
+        </div>
            
-           <div class="link-buttons">
+        <div class="link-buttons">
            <button class="github-link-project" type="button">
                 <a href="https://github.com/EmmaEngvall/project-weather-app" target="_blank">
                 <img src="./images/github.svg" alt="github icon">
@@ -133,20 +154,27 @@
            </button>
         </div>
         </div>
+        </article> 
 
         <!-----Project Chatbot app----->
         <div class = "project-container">
+        <article class="project">
+        <div class="project-image-group">
             <img class="project-image" src="./images/chat_bot_option_3.jpg" alt="Image showing person in front of computer." width="200">
+        </div>
+        <div class ="project-text-and-icons">
+        <div class="project-text-group">
             <h4 class="project-title">Chat bot built in JavaScript</h4>
             <p class="project-text">Order your favourite ice-cream with this...</p>
-            
-            <div class="language-buttons">
-                <span class="language-text">HTML5</span>
-                <span class="language-text">CSS3</span>
-                <span class="language-text">Javascript ES6</span>
-            </div>
+        </div>
 
-            <div class="link-buttons">
+        <div class="language-buttons">
+            <span class="language-text">HTML5</span>
+            <span class="language-text">CSS3</span>
+            <span class="language-text">Javascript ES6</span>
+        </div>
+
+        <div class="link-buttons">
                 <button class="github-link-project" type="button">
                     <a href="https://github.com/EmmaEngvall/project-chatbot" target="_blank">
                     <img src="./images/github.svg" alt="github icon">
@@ -161,8 +189,9 @@
                     <span>Live demo</span>
                     </a>
                 </button>
-            </div>
         </div>
+        </div>
+        </article>
     </section>
 
     <!-----Skill section----->
@@ -218,10 +247,13 @@
     <!-----Contact section----->
     <footer class="footer-section">
       <div class="footer-title-section">
-        <h4 class="footer-title">Time to talk</h4>
+        <div class="footer-title">
+        <h4>Time to talk</h4>
       </div>
-      <section class="contact-wrapper">
-      <div class="contact-details">
+      </div>
+      <article class="contact-wrapper">
+      <section class="contact-card">
+        <div class="footer-text">
         <h5 class="emma">Emma Engvall</h5>
         <h5 class="job-title">Junior Frontend Developer</h5>
         <h5 class="extra-job-title">+ Business Analyst</h5> 
@@ -230,8 +262,9 @@
             engvall.e@gmail.com
         </h5>
       </div>
+      </section>
 
-      <div class = "social-media-icons">
+      <div class = "social-media-icons-footer">
             <a href="https://www.linkedin.com/in/emma-engvall-b8157866/" target="_blank">
             <img class="sm-icon" src="./images/linkedin.svg" alt="linkedin icon"> 
             </a>
