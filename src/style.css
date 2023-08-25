@@ -1,0 +1,681 @@
+@font-face {
+  font-family: SatoshiBold;
+  font-weight: bold;
+  src: url("./fonts/Satoshi-Bold.otf");
+}
+
+@font-face {
+  font-family: SatoshiMedium;
+  font-weight: medium;
+  src: url("./fonts/Satoshi-Medium.otf");
+}
+
+@font-face {
+  font-family: SatoshiBlack;
+  font-weight: bolder;
+  src: url("./fonts/Satoshi-Black.otf");
+}
+
+@font-face {
+  font-family: EBGaramondRegular;
+  src: url("./fonts/EBGaramond-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* https://stackoverflow.com/questions/46012482/unwanted-white-space-on-right-side-in-mobile-view */
+html,
+body {
+  overflow-x: hidden;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.sr-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* SPLASH SECTION */
+.splash-title-section h2 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 43px;
+}
+
+.splash-title-section h1 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #0b24f5;
+}
+.splash-title-section h3 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #565656;
+}
+
+.splash-title-section p {
+  font-family: EBGaramondRegular;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.splash-title-section {
+}
+
+.splash-hero-picture {
+}
+
+.splash-title-card {
+}
+
+.title-card-picture {
+}
+
+.title-card-picture img {
+  width: 164px;
+  height: 164px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.splash-title-card-titles {
+}
+
+.splash-text-container {
+}
+
+.link-icons {
+}
+
+.splash-section .link-icons {
+  padding-top: 48px;
+  padding-bottom: 60px;
+}
+
+.link-icons .fa-linkedin,
+.link-icons .fa-github,
+.link-icons .fa-stack-overflow,
+.link-icons .fa-twitter,
+.link-icons .fa-instagram {
+  color: gray;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-stack-overflow:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+  color: black;
+}
+
+.fa-linkedin:focus,
+.fa-github:focus,
+.fa-stack-overflow:focus,
+.fa-twitter:focus,
+.fa-instagram:focus {
+  color: black;
+}
+.splash-scroll {
+}
+
+.splash-scroll-icon {
+}
+
+.splash-scroll-text {
+}
+
+/* TECH SECTION */
+
+.tech-section {
+  display: flex;
+  background-color: #edffff;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  align-content: center;
+  justify-content: center;
+}
+
+.tech-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.tech-section h1 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 108px;
+  color: #0b24f5;
+  padding-bottom: 60px;
+}
+
+.tech-section p {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+}
+.tech-section span.red {
+  background-color: #eb5577;
+  color: white;
+}
+
+.tech-section span.dark-blue {
+  background-color: #0b24f5;
+  color: white;
+}
+
+.tech-section span.light-blue {
+  background-color: #2483e0;
+  color: white;
+}
+
+/* PROJECTS SECTION */
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+  padding-bottom: 55px;
+}
+
+.projects-section h1 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  color: #0b24f5;
+  margin: 0 24px;
+}
+
+.projects-featured-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  margin: 24px;
+}
+
+.projects-project {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.projects-project-image img {
+  width: 327px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.projects-project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.projects-project-text h2 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 43px;
+  color: #000000;
+}
+
+.projects-project-text p {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.projects-project-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+
+.projects-project-tag {
+  padding: 2px 6px;
+  background-color: #000000;
+}
+
+.projects-project-tag span {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.projects-project-link-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.projects-project-link-buttons p {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #333333;
+}
+
+.projects-project-link-buttons p:hover {
+  color: #fff;
+}
+
+.projects-project-link-buttons p:focus {
+  color: #fff;
+}
+
+.projects-project-link-buttons i {
+  color: #333333;
+}
+
+.projects-project-link-buttons i:hover {
+  color: #fff;
+}
+.projects-project-link-buttons i:focus {
+  color: #fff;
+}
+
+.projects-project-link-button-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border-radius: 40px;
+  padding: 0px 16px 0px 0px;
+  height: 48px;
+  width: 200px;
+}
+
+.projects-project-link-button-view:hover {
+  background: #eb5577;
+}
+
+.projects-project-link-button-view:hover p {
+  color: #fff;
+}
+
+.projects-project-link-button-view:hover i {
+  color: #fff;
+}
+.projects-project-link-button-view:focus {
+  background: #eb5577;
+}
+
+.projects-project-link-button-view:focus p {
+  color: #fff;
+}
+
+.projects-project-link-button-view:focus i {
+  color: #fff;
+}
+
+.projects-project-link-button-demo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border-radius: 40px;
+  padding: 0px 16px 0px 0px;
+  height: 48px;
+  width: 164px;
+}
+
+.projects-project-link-buttons i {
+  padding: 10px;
+}
+
+.projects-project-link-buttons a {
+  cursor: pointer;
+}
+
+.projects-project-link-button-demo:hover {
+  background-color: #0b24f5;
+}
+
+.projects-project-link-button-demo:hover p {
+  color: #fff;
+}
+
+.projects-project-link-button-demo:hover i {
+  color: #fff;
+}
+.projects-project-link-button-demo:focus {
+  background-color: #0b24f5;
+}
+
+.projects-project-link-button-demo:focus p {
+  color: #fff;
+}
+
+.projects-project-link-button-demo:focus i {
+  color: #fff;
+}
+
+/* WORDS SECTION */
+
+.words-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fcedea;
+  padding-top: 64px;
+}
+
+.words-section h1 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 97px;
+  color: #eb5577;
+  padding-bottom: 64px;
+  margin: 0 24px;
+}
+
+.words-articles {
+  margin: 0 24px;
+}
+
+.words-articles-article {
+  padding-bottom: 98px;
+}
+
+.words-articles-article-image {
+  padding-bottom: 40px;
+}
+
+.words-articles-article-image img {
+  width: 327px;
+}
+
+.words-article-date {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  color: #eb5577;
+}
+
+.words-articles-article-text h2 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 43px;
+  color: #000000;
+  padding-bottom: 24px;
+}
+
+.words-articles-article-text p {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+
+  color: #000000;
+  padding-bottom: 24px;
+}
+
+.words-articles-article-link-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.words-articles-article-link-button-read {
+  background: #ffffff;
+  border-radius: 40px;
+  width: 178px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px 0px 0px;
+  cursor: pointer;
+}
+
+.words-articles-article-link-button-read:hover {
+  background: #ffd338;
+}
+.words-articles-article-link-button-read:focus {
+  background: #ffd338;
+}
+
+.words-articles-article-link-button-read p {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #333333;
+  text-align: center;
+}
+
+.words-articles-article-link-button-read:hover p {
+  color: #000000;
+}
+.words-articles-article-link-button-read:focus p {
+  color: #000000;
+}
+
+.words-articles-article-link-button-read i {
+  padding: 10px;
+  color: #333333;
+}
+
+.words-articles-article-link-button-read:hover i {
+  color: #000000;
+}
+.words-articles-article-link-button-read:focus i {
+  color: #000000;
+}
+
+/* SKILLS SECTION */
+
+.skills-section {
+  background: #fdf2e4;
+  padding-top: 64px;
+}
+
+.skills-section h1 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 108px;
+  text-align: center;
+  color: #0b24f5;
+  padding-bottom: 64px;
+}
+
+.skills-categories-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  padding-bottom: 96px;
+}
+
+.skills-list h2 {
+  display: flex;
+  flex-direction: row;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  gap: 16px;
+}
+.skills-list .code {
+  background-color: #eb5577;
+}
+.skills-list .toolbox {
+  background-color: #2483e0;
+}
+.skills-list .more {
+  background-color: #0b24f5;
+}
+.skills-list .upcoming {
+  background-color: #6db486;
+}
+
+.skills-categories-category-list {
+  list-style-type: none;
+
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px;
+}
+
+.contact-section h1 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 78px;
+  text-align: center;
+  color: #eb5577;
+}
+
+.contact-title-card {
+  padding-top: 55px;
+  padding-bottom: 40px;
+}
+
+.contact-title-card-picture {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 29px;
+}
+
+.contact-title-card-titles h2 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #0b24f5;
+}
+.contact-title-card-titles h3 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 43px;
+}
+
+.contact-title-card-titles h4 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #565656;
+}
+
+.contact-title-card-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: row;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.contact-section .link-icons {
+  padding-top: 99px;
+  padding-bottom: 55px;
+}
