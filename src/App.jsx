@@ -4,6 +4,7 @@ import vatten from './vatten.jpg'
 import happy from './happy.png'
 import pet from './pet.png'
 import music from './music.png'
+import pizza from './pizza.png'
 
 export const App = () => {
     return <form>
@@ -27,6 +28,9 @@ export const App = () => {
         <h2>project music releases</h2>
         <a href="https://stunning-zuccutto-987374.netlify.app"><img src={music} alt="screenshot from project music releases" width="50%" height="50%" /></a>
         <p>this is my first react project! we learned fetching method and asked to use that for this project. we fetched new releasing album list from spotify, and tried to make artist and album data to be showed appropriate way. we even created like and button for each album! also, user can get information about artist or album by just clicking name of them. if so, they will get actual link from spotify so they can easily start to add this new information to their everyday spotify list!</p>
+        <h2>javascript pizzalia</h2>
+        <a href="https://marvelous-bombolone-94bc37.netlify.app"><img src={pizza} alt="screenshot from javascript pizzalia" width="50%" height="50%" /></a>
+        <p>it was my first javascript project and also my first technigo project! haha, i cant even remember how i felt at that time. anyway, by this simple app, user can decide which type of food, and which type of specific dish they will order. user will also be asked for name and age, so sweet greeting and waiting messeage will follow! user will even get specific amount of food based on your age. i sometimes order child's menu for myself and feel little bit guilty, but for this restaurnant, user are not allowed to do that! :D</p>
       </div>
       </form>
 };
