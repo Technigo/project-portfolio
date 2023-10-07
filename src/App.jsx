@@ -3,6 +3,7 @@ import napkin from './napkin.jpg'
 import vatten from './vatten.jpg'
 import happy from './happy.png'
 import pet from './pet.png'
+import music from './music.png'
 
 export const App = () => {
     return <form>
@@ -23,6 +24,9 @@ export const App = () => {
         <h2>project pet survey</h2>
         <a href="https://astounding-bienenstitch-033bb0.netlify.app"><img src={pet} alt="screenshot from project pet survey" width="50%" height="50%" /></a>
         <p>this project is from our pair programming! we worked for making idea specific for our pet we dreamed about. user is asked to put in some of user's personal infomation, but in return user will have non-forgetable journey with user's virtual pet which had dreamt for long time. during the survey, user will name the pet, color the pet, and decide the type of pet that user had dreamt about. there is also progress bar which telling user how questions had gone so far!</p>
+        <h2>project music releases</h2>
+        <a href="https://stunning-zuccutto-987374.netlify.app"><img src={music} alt="screenshot from project music releases" width="50%" height="50%" /></a>
+        <p>this is my first react project! we learned fetching method and asked to use that for this project. we fetched new releasing album list from spotify, and tried to make artist and album data to be showed appropriate way. we even created like and button for each album! also, user can get information about artist or album by just clicking name of them. if so, they will get actual link from spotify so they can easily start to add this new information to their everyday spotify list!</p>
       </div>
       </form>
 };
