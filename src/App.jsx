@@ -5,6 +5,8 @@ import happy from './happy.png'
 import pet from './pet.png'
 import music from './music.png'
 import pizza from './pizza.png'
+import kontakt from './kontakt.jpg'
+import test from './test.jpg'
 
 export const App = () => {
     return <form>
@@ -31,6 +33,12 @@ export const App = () => {
         <h2>javascript pizzalia</h2>
         <a href="https://marvelous-bombolone-94bc37.netlify.app"><img src={pizza} alt="screenshot from javascript pizzalia" width="50%" height="50%" /></a>
         <p>it was my first javascript project and also my first technigo project! haha, i cant even remember how i felt at that time. anyway, by this simple app, user can decide which type of food, and which type of specific dish they will order. user will also be asked for name and age, so sweet greeting and waiting messeage will follow! user will even get specific amount of food based on your age. i sometimes order child's menu for myself and feel little bit guilty, but for this restaurnant, user are not allowed to do that! :D</p>
+      </div>
+      <div style={{backgroundImage: `url(${kontakt})`, padding: `100px`, color: 'yellow'}}>
+        <h1>contact</h1>
+        |<a href="https://www.linkedin.com/in/so-youn-choi-703270212/">linkedin</a>|
+        <a href="https://github.com/catfooo">github</a>|
+        <a href="https://stackoverflowteams.com/c/technigo/users/490/?tab=profile">stackoverflow</a>|
       </div>
       </form>
 };
