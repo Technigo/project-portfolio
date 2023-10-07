@@ -2,6 +2,7 @@ import bild from './bild.jpg'
 import napkin from './napkin.jpg'
 import vatten from './vatten.jpg'
 import happy from './happy.png'
+import pet from './pet.png'
 
 export const App = () => {
     return <form>
@@ -19,6 +20,9 @@ export const App = () => {
         <h2>project happy</h2>
         <a href="https://cozy-khapse-25f81c.netlify.app"><img src={happy} alt="screenshot from project happy" width="50%" height="50%" /></a>
         <p>i tried to gather happy thoughts from people. user can write things here while they are having happy moment. by doing that, user can think again about their happy moments, and get to know how others feel happy in their life. by liking each other, they can send minor signal which means they are thinking same each other, and the list of liked idea is even saving at the very last part of list, so user can easily collect happy moments of others!</p>
+        <h2>project pet survey</h2>
+        <a href="https://astounding-bienenstitch-033bb0.netlify.app"><img src={pet} alt="screenshot from project pet survey" width="50%" height="50%" /></a>
+        <p>this project is from our pair programming! we worked for making idea specific for our pet we dreamed about. user is asked to put in some of user's personal infomation, but in return user will have non-forgetable journey with user's virtual pet which had dreamt for long time. during the survey, user will name the pet, color the pet, and decide the type of pet that user had dreamt about. there is also progress bar which telling user how questions had gone so far!</p>
       </div>
       </form>
 };
