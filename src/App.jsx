@@ -6,11 +6,12 @@ import pet from './pet.png'
 import music from './music.png'
 import pizza from './pizza.png'
 import kontakt from './kontakt.jpg'
-import test from './test.jpg'
+import mig from './mig.jpg'
 
 export const App = () => {
     return <form>
       <div style={{backgroundImage: `url(${bild})`, padding: '100px', color: 'yellow'}}>
+        <img src={mig} alt="image of me" width="50%" height="50%" />
       <h3>So Youn Choi</h3>
       <h1>Frontend Developer</h1>
       <h4>I make web</h4>
