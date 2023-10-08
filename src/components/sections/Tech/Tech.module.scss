@@ -1,0 +1,53 @@
+@use "../../../styles/variables.scss" as *;
+
+.tech_section {
+  background-color: $color-primary;
+  padding-top: 128px;
+  padding-bottom: 128px;
+
+  @media (min-width: 744px) {
+    padding-top: 258px;
+    padding-bottom: 258px;
+  }
+  @media (min-width: 1260px) {
+    height: 980px;
+    padding: 0px 128px 0px 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.text {
+  color: #fff;
+  font-family: Hind;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  @media (min-width: 744px) {
+    text-align: center;
+  }
+
+  @media (min-width: 1260px) {
+    width: 600px;
+    font-size: 32px;
+  }
+}
+
+.inner_tech {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  min-width: 343px;
+  max-width: 450px;
+  margin: 0 auto;
+  @media (min-width: 1269px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 128px;
+    min-width: unset;
+    max-width: unset;
+    margin: 0 auto;
+  }
+}
