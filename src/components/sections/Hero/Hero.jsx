@@ -8,7 +8,9 @@ export default function Hero() {
       <div className={styles.inner_hero}>
         <div className={styles.heading_box}>
           <h1>Hi, I'm Sakura Tanaka</h1>
-          <Heading color={primaryColorText}>Frontend Developer</Heading>
+          <Heading color={primaryColorText} alignStart="start">
+            Frontend Developer
+          </Heading>
         </div>
 
         <img src="/images/sakura.jpeg" className={styles.my_image} alt="Image of Sakura Tanaka" />
