@@ -1,0 +1,41 @@
+@use "../../../styles/variables" as *;
+.frame {
+  width: fit-content;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.projects_img {
+  width: 343px;
+  height: 200px;
+  border-bottom: 20px solid $color-primary;
+  border-left: 20px solid $color-primary;
+
+  @media (min-width: 744px) {
+    width: 200px;
+    height: 280px;
+  }
+  @media (min-width: 1260px) {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.blog_img {
+  height: 200px;
+  align-self: stretch;
+  border-bottom: 20px solid $color-secondary;
+  border-left: 20px solid $color-secondary;
+  @media (min-width: 744px) {
+    height: 340px;
+  }
+  @media (min-width: 1260px) {
+    width: 460px;
+    height: 340px;
+  }
+  @media (min-width: 1512px) {
+    width: 564px;
+    height: 340px;
+  }
+}
