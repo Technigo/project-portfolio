@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react'
+
 import bild from './bild.jpg'
 import napkin from './napkin.jpg'
 import vatten from './vatten.jpg'
@@ -9,7 +11,33 @@ import kontakt from './kontakt.jpg'
 import mig from './mig.jpg'
 
 export const App = () => {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const animatedSection = document.querySelector('.animate-on-scroll');
+      const rect = animatedSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (rect.top < windowHeight / 1.5) {
+        // Apply the slide-up animation to the section when it is in the viewport
+        animatedSection.style.opacity = '1'; 
+        animatedSection.style.transform = 'translateY(-50px)'; // Slide-up effect
+        animatedSection.style.transition = 'transform 1s ease'; // Apply transition for smoother animation
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Trigger the animation when the component mounts (if already in view)
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
     return <form>
+      
       <div style={{backgroundImage: `url(${bild})`, padding: '100px', color: 'yellow'}}>
         <img src={mig} alt="image of me" width="50%" height="50%" />
       <h3>So Youn Choi</h3>
@@ -20,6 +48,17 @@ export const App = () => {
         <h1>what i want to do while we work together</h1>
         <p>HTML, CSS, JavaScript, React, mob-programming, pair-programming</p>
       </div>
+      <div
+        className="animate-on-scroll"
+        style={{
+          backgroundImage: `url(${bild})`,
+          padding: '100px',
+          color: 'yellow',
+          opacity: '0',
+          transform: 'translateY(30px)',
+          transition: 'opacity 0.5s ease, transform 0.5s ease',
+        }}
+      >
       <div style={{backgroundImage: `url(${vatten})`, padding: `100px`, color: 'yellow'}}>
         <h1>what i did while i learn</h1>
         <a href="https://github.com/catfooo/project-happy-thoughts-vite" style={{ color: 'yellow' }}><h2>project happy</h2></a>
@@ -35,6 +74,7 @@ export const App = () => {
         <a href="https://marvelous-bombolone-94bc37.netlify.app"><img src={pizza} alt="screenshot from javascript pizzalia" width="50%" height="50%" /></a>
         <p>it was my first javascript project and also my first technigo project! haha, i cant even remember how i felt at that time. anyway, by this simple app, user can decide which type of food, and which type of specific dish they will order. user will also be asked for name and age, so sweet greeting and waiting messeage will follow! user will even get specific amount of food based on your age. i sometimes order child's menu for myself and feel little bit guilty, but for this restaurnant, user are not allowed to do that! :D</p>
       </div>
+      </div>
       <div style={{backgroundImage: `url(${kontakt})`, padding: `100px`, color: 'yellow'}}>
         <h1>contact</h1>
         <p>fakemail@fakemail.jpg</p>
@@ -42,5 +82,6 @@ export const App = () => {
         <a href="https://github.com/catfooo">github</a>|
         <a href="https://stackoverflowteams.com/c/technigo/users/490/?tab=profile">stackoverflow</a>|
       </div>
+      
       </form>
 };
