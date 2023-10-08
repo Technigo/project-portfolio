@@ -8,10 +8,11 @@ import { Footer } from "./components/sections/Footer";
 
 import "./styles/reset.css";
 import "./styles/global.scss";
+import "./styles/variables.scss";
 
 function App() {
   return (
-    <>
+    <main>
       <Hero />
       <Tech />
       <Projects />
@@ -19,7 +20,7 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
-    </>
+    </main>
   );
 }
 
