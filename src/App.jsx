@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Intro } from './components/Intro'
 import { Tech } from './components/Tech'
 import { Project } from './components/Project'
-import { Contact } from './components/Contact'
+import  Contact  from './components/Contact'
 
 // import kontakt from './kontakt.jpg'
 

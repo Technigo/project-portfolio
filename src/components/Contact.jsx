@@ -1,25 +1,40 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import kontakt from './kontakt.jpg';
+import React, { useEffect, useRef } from 'react';
+import kontakt from './kontakt.jpg'
 
-export const Contact = () => {
-  const animationVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-  };
+const Contact = () => {
+  const animatedSectionRef = useRef(null);
+
+  useEffect(() => {
+    const animatedSection = animatedSectionRef.current;
+
+    const handleScroll = () => {
+      const rect = animatedSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (rect.top < windowHeight / 1.5) {
+        animatedSection.style.opacity = '1';
+        animatedSection.style.transform = 'translateY(-100px)';
+        animatedSection.style.transition = 'transform 1s ease';
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={animationVariants}
-      style={{ backgroundImage: `url(${kontakt})`, padding: `100px`, color: 'yellow' }}
-    >
-      <h1>contact</h1>
+    <div ref={animatedSectionRef} style={{backgroundImage: `url(${kontakt})`, padding: `100px`, color: 'yellow'}}>
+      <h1>Contact</h1>
       <p>fakemail@fakemail.jpg</p>
       |<a href="https://www.linkedin.com/in/so-youn-choi-703270212/">linkedin</a>|
-      <a href="https://github.com/catfooo">github</a>|
-      <a href="https://stackoverflowteams.com/c/technigo/users/490/?tab=profile">stackoverflow</a>|
-    </motion.div>
+        <a href="https://github.com/catfooo">github</a>|
+        <a href="https://stackoverflowteams.com/c/technigo/users/490/?tab=profile">stackoverflow</a>|
+    </div>
   );
 };
+
+export default Contact;
