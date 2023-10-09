@@ -12,6 +12,7 @@ export default function Button({ text, iconPath, url, background = "#f5f5f5", ho
           style={{ backgroundColor: color }}
           onMouseEnter={() => {
             setColor(hoverColor);
+            console.log("mouse");
             if (text !== "Read Article") setIconColor(true);
           }}
           onMouseLeave={() => {

@@ -10,8 +10,8 @@ import { blogsData as data } from "../../../statics/blogsData";
 export default function Blog() {
   return (
     <>
-      <div className={styles.wave_box}></div>
       <section className={styles.blog_section}>
+        <div className={styles.wave_box}></div>
         <div className={styles.blog_inner}>
           <Heading color={secondaryColorText}>My Words</Heading>
           <div className={styles.blogs_wrapper}>
