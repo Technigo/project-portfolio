@@ -20,20 +20,20 @@ export default function Contact() {
             </p>
           </address>
           <div className={styles.icons_box}>
-            <a>
+            <a
+              href="https://www.linkedin.com/in/sakura-tanaka-251a36247/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/icons/linkedin.png" className={styles.icon} />
             </a>
-            <a>
-              <img src="/icons/stack-over-flow.png" className={styles.icon} />
-            </a>
-            <a>
+
+            <a
+              href="https://github.com/sansan-sakura?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/icons/git-light.png" className={styles.icon} />
-            </a>
-            <a>
-              <img src="/icons/twitter.png" className={styles.icon} />
-            </a>
-            <a>
-              <img src="/icons/insta.png" className={styles.icon} />
             </a>
           </div>
         </div>

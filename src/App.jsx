@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Hero } from "./components/sections/Hero";
 import { Tech } from "./components/sections/Tech";
 import { Projects } from "./components/sections/Projects";
@@ -11,10 +12,11 @@ import "./styles/global.scss";
 import "./styles/variables.scss";
 
 function App() {
+  const arrowRef = useRef(null);
   return (
     <main>
-      <Hero />
-      <Tech />
+      <Hero arrowRef={arrowRef} />
+      <Tech arrowRef={arrowRef} />
       <Projects />
       <Blog />
       <Skills />

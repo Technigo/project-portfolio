@@ -2,7 +2,12 @@ import styles from "./Hero.module.scss";
 import { Heading } from "../../ui/Heading";
 import { primaryColorText } from "../../../styles/styleVariable";
 
-export default function Hero() {
+export default function Hero({ arrowRef }) {
+  function handleClick(e) {
+    e.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
   return (
     <section className={styles.hero_section}>
       <div className={styles.inner_hero}>
@@ -22,7 +27,11 @@ export default function Hero() {
           technology field.
         </p>
 
-        <img src="/icons/arrow.png" className={styles.arrow} />
+        <img
+          src="/icons/arrow.png"
+          className={styles.arrow}
+          onClick={() => handleClick(arrowRef)}
+        />
       </div>
     </section>
   );

@@ -1,15 +1,18 @@
 .hero_section {
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 64px;
 
   @media (min-width: 744px) {
-    padding: 128px 64px 0;
+    padding-top: 128px;
   }
 
   @media (min-width: 1260px) {
-    padding: 322px 220px 64px;
+    padding-top: 322px;
+    padding-bottom: 64px;
   }
+
   @media (min-width: 1512px) {
-    padding: 332px 336px 64px;
+    padding-top: 332px;
   }
 }
 
@@ -32,7 +35,7 @@
   @media (min-width: 744px) {
     min-width: 616px;
     max-width: 616px;
-    grid-template-columns: 184px 430px;
+    grid-template-columns: 184px minmax(430px, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
       "heading heading"
@@ -45,7 +48,7 @@
   @media (min-width: 1260px) {
     grid-template-columns: 184px 1fr;
     min-width: 840px;
-    max-width: 840px;
+    max-width: 860px;
     row-gap: 16px;
   }
 }
@@ -98,8 +101,10 @@ h1 {
 }
 
 .arrow {
+  cursor: pointer;
   grid-area: arrow;
   margin: 0 auto 30px;
+  transition: all 0.3s ease-in-out;
   @media (min-width: 744px) {
     grid-row: 3;
     margin-top: 106px;
@@ -107,4 +112,8 @@ h1 {
   @media (min-width: 1260px) {
     margin-top: 183px;
   }
+}
+
+.arrow:hover {
+  transform: translateY(10px);
 }
