@@ -1,5 +1,5 @@
 .projects_section {
-  padding: 128px 16px;
+  padding: 128px auto;
 
   &_cards {
     margin-top: 64px;
@@ -9,21 +9,27 @@
   }
 }
 
-.project_card {
+.projects_inner {
   margin: 0 auto;
-  display: flex;
   width: 343px;
+
+  @media (min-width: 744px) {
+    width: 680px;
+  }
+  @media (min-width: 1260px) {
+    width: 820px;
+  }
+}
+
+.project_card {
+  width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
   @media (min-width: 744px) {
     flex-direction: row;
     justify-content: space-between;
-    width: 680px;
-    height: 280px;
-  }
-  @media (min-width: 1260px) {
-    width: 820px;
     height: 280px;
   }
 }
@@ -43,9 +49,6 @@
   color: #000;
   font-family: Hind;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 
   &_box {
     display: flex;

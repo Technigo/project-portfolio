@@ -25,12 +25,14 @@ export default function Blog() {
         />
       </svg>
       <section className={styles.blog_section}>
-        <Heading color={secondaryColorText}>My Words</Heading>
-        <div className={styles.inner_blog}>
-          <Post />
-          <Post />
-          <Post />
-          <Post />
+        <div className={styles.blog_inner}>
+          <Heading color={secondaryColorText}>My Words</Heading>
+          <div className={styles.blogs_wrapper}>
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+          </div>
         </div>
       </section>
     </>

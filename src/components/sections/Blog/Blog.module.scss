@@ -2,31 +2,33 @@
 
 .blog_section {
   background-color: $color-secondary-light;
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
   padding-top: 128px;
   padding-bottom: 128px;
+}
+
+.blog_inner {
+  margin: 0 auto;
+  display: grid;
+  gap: 64px;
+
   @media (min-width: 1260px) {
+    width: 1018px;
     gap: 128px;
+  }
+  @media (min-width: 1512px) {
+    width: 1226px;
   }
 }
 
 .wave {
 }
 
-.inner_blog {
-  margin: 0 auto;
+.blogs_wrapper {
   display: grid;
   gap: 64px;
 
   @media (min-width: 1260px) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 98px;
-    width: 1018px;
-  }
-  @media (min-width: 1512px) {
-    width: 1226px;
   }
 }
 

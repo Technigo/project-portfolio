@@ -9,11 +9,13 @@ import styles from "./Projects.module.scss";
 export default function Projects() {
   return (
     <section className={styles.projects_section}>
-      <Heading color={primaryColorText}>Featured Projects</Heading>
-      <div className={styles.projects_section_cards}>
-        {data.map((project) => (
-          <ProjectCard project={project} key={project.title} />
-        ))}
+      <div className={styles.projects_inner}>
+        <Heading color={primaryColorText}>Featured Projects</Heading>
+        <div className={styles.projects_section_cards}>
+          {data.map((project) => (
+            <ProjectCard project={project} key={project.title} />
+          ))}
+        </div>
       </div>
     </section>
   );

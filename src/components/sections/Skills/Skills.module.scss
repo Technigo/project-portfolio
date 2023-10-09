@@ -1,0 +1,52 @@
+@use "../../../styles/variables.scss" as *;
+
+.skills_section {
+  background-color: $color-primary;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.skills_inner {
+  display: grid;
+  gap: 64px;
+  margin: 0 auto;
+}
+
+.skills_card_wrapper {
+  display: grid;
+  margin: 0 auto;
+  gap: 64px;
+
+  @media (min-width: 744px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+  }
+  @media (min-width: 744px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 64px;
+  }
+}
+
+.skill_card {
+  width: 153px;
+  color: #fff;
+  text-align: start;
+  font-family: Hind;
+  font-size: 18px;
+  display: grid;
+  gap: 16px;
+}
+
+.skills_ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.tag_wrapper {
+  width: fit-content;
+  padding: 0 3px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+}
