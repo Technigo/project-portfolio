@@ -1,0 +1,72 @@
+.projects_section {
+  padding: 128px 16px;
+
+  &_cards {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+}
+
+.project_card {
+  margin: 0 auto;
+  display: flex;
+  width: 343px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  @media (min-width: 744px) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 680px;
+    height: 280px;
+  }
+  @media (min-width: 1260px) {
+    width: 820px;
+    height: 280px;
+  }
+}
+
+.btn_box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @media (min-width: 744px) {
+    flex-direction: row;
+    margin-top: 16px;
+    gap: 32px;
+  }
+}
+
+.text {
+  color: #000;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+
+    @media (min-width: 744px) {
+      gap: 16px;
+      width: 430px;
+      height: 100%;
+    }
+    @media (min-width: 1260px) {
+      width: 500px;
+    }
+  }
+}
+
+.labels {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
