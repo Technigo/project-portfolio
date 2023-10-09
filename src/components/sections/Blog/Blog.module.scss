@@ -1,0 +1,67 @@
+@use "../../../styles/variables.scss" as *;
+
+.blog_section {
+  background-color: $color-secondary-light;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  @media (min-width: 1260px) {
+    gap: 128px;
+  }
+}
+
+.wave {
+}
+
+.inner_blog {
+  margin: 0 auto;
+  display: grid;
+  gap: 64px;
+
+  @media (min-width: 1260px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 98px;
+    width: 1018px;
+  }
+  @media (min-width: 1512px) {
+    width: 1226px;
+  }
+}
+
+.post {
+  &_card {
+    min-width: 343px;
+    max-width: 343px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+
+    @media (min-width: 744px) {
+      max-width: 680px;
+      gap: 32px;
+    }
+
+    @media (min-width: 1260px) {
+      max-width: 460px;
+      gap: 32px;
+    }
+    @media (min-width: 1512px) {
+      max-width: 564px;
+      gap: 32px;
+    }
+  }
+
+  &_text {
+    color: #000;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
