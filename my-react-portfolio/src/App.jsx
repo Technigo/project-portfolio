@@ -1,37 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { HeaderText } from './header'
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import { HeaderText } from './components/header';
+import { TechText } from './components/tech';
+import GitHubRepos from './components/GitHubRepos';
+import { SkillsText } from './components/skills.jsx'
+import { Contact } from './components/contact.jsx'
+import './App.css';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [repos, setRepos] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const githubUsername = 'isarobertini'; // Replace with the desired GitHub username
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=created&direction=desc`);
+
+        if (response.ok) {
+          const data = await response.json();
+          setRepos(data);
+        } else {
+          console.error('Failed to fetch data');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchData();
+  }, [githubUsername]);
 
   return (
     <>
       <HeaderText />
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <TechText />
+      <GitHubRepos username={githubUsername} repos={repos} loading={loading} />
+      <SkillsText />
+      <Contact />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
