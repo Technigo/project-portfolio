@@ -13,10 +13,14 @@ export default function Contact() {
           <address className={styles.contact_infos}>
             <h3>Sakura Tanaka</h3>
             <p>
-              <a href="tel:+46726664870">+46(0)726664870</a>
+              <a href="tel:+46726664870" aria-label="Sakura's phone number">
+                +46(0)726664870
+              </a>
             </p>
             <p>
-              <a href="mailto:sito6496t@gmail.com">sito6496t@gmail.com</a>
+              <a href="mailto:sito6496t@gmail.com" aria-label="Sakura's email adress">
+                sito6496t@gmail.com
+              </a>
             </p>
           </address>
           <div className={styles.icons_box}>
@@ -25,7 +29,11 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/icons/linkedin.png" className={styles.icon} />
+              <img
+                src="/icons/linkedin.png"
+                className={styles.icon}
+                alt="Visit Sakura's LinkedIn"
+              />
             </a>
 
             <a
@@ -33,7 +41,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/icons/git-light.png" className={styles.icon} />
+              <img src="/icons/git-light.png" className={styles.icon} alt="Visit Sakura's Github" />
             </a>
           </div>
         </div>

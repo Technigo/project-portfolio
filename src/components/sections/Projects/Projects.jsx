@@ -25,7 +25,7 @@ function ProjectCard({ project }) {
   const { imagePath, title, skills, gitUrl, demoUrl, text } = project;
   return (
     <div className={styles.project_card}>
-      <ImageFrame imagePath={imagePath} borderColor="blue" />
+      <ImageFrame imagePath={imagePath} borderColor="blue" description={`Image of ${title}`} />
       <div className={styles.text_box}>
         <Title text={title} />
         <p className={styles.text}>{text}</p>

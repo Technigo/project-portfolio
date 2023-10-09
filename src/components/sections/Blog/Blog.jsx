@@ -26,10 +26,14 @@ export default function Blog() {
 }
 
 function Post({ blog }) {
-  const { text, title, date, url, imagePath } = blog;
+  const { text, title, date, url, imagePath, imageDescription } = blog;
   return (
     <article className={styles.post_card}>
-      <ImageFrame imagePath={imagePath} borderColor={secondaryColorText} />
+      <ImageFrame
+        imagePath={imagePath}
+        borderColor={secondaryColorText}
+        description={imageDescription}
+      />
       <Label labelText={date} />
       <Title text={title} />
       <p className={styles.post_text}>{text}</p>
