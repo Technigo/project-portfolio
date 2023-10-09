@@ -1,3 +1,4 @@
+@use "../../../styles/variables.scss" as *;
 .hero_section {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -116,4 +117,9 @@ h1 {
 
 .arrow:hover {
   transform: translateY(10px);
+}
+
+.arrow:focus-visible,
+.arrow:focus {
+  outline: $color-primary 3px solid;
 }

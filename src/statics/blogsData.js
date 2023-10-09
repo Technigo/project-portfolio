@@ -6,6 +6,7 @@ export const blogsData = [
     text: "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
     url: "#",
     imagePath: "/images/berlin.png",
+    imageDescription: "Image of title",
   },
   {
     id: 2,
@@ -14,5 +15,6 @@ export const blogsData = [
     text: "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
     url: "#",
     imagePath: "/images/guesswho.png",
+    imageDescription: "Image of title",
   },
 ];

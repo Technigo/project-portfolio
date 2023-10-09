@@ -10,8 +10,8 @@ import { blogsData as data } from "../../../statics/blogsData";
 export default function Blog() {
   return (
     <>
-      <div className={styles.wave_box}></div>
       <section className={styles.blog_section}>
+        <div className={styles.wave_box}></div>
         <div className={styles.blog_inner}>
           <Heading color={secondaryColorText}>My Words</Heading>
           <div className={styles.blogs_wrapper}>
@@ -26,10 +26,14 @@ export default function Blog() {
 }
 
 function Post({ blog }) {
-  const { text, title, date, url, imagePath } = blog;
+  const { text, title, date, url, imagePath, imageDescription } = blog;
   return (
     <article className={styles.post_card}>
-      <ImageFrame imagePath={imagePath} borderColor={secondaryColorText} />
+      <ImageFrame
+        imagePath={imagePath}
+        borderColor={secondaryColorText}
+        description={imageDescription}
+      />
       <Label labelText={date} />
       <Title text={title} />
       <p className={styles.post_text}>{text}</p>

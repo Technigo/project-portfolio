@@ -1,3 +1,4 @@
+@use "../../../styles/variables.scss" as *;
 .contact_section {
   padding-top: 128px;
   padding-bottom: 128px;
@@ -55,4 +56,11 @@
   margin: 0 auto;
   display: flex;
   gap: 32px;
+}
+
+.contact_infos a:focus,
+.contact_infos a:focus-visible,
+.icons_box a:focus,
+.icons_box a:focus-visible {
+  outline: $color-primary 3px solid;
 }
