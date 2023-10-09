@@ -43,10 +43,6 @@ export const App = () => {
       <Intro />
       <Tech />
       
-      {/* <div style={{backgroundImage: `url(${napkin})`, padding: `100px`, color: 'yellow'}}>
-        <h1>what i want to do while we work together</h1>
-        <p>HTML, CSS, JavaScript, React, mob-programming, pair-programming</p>
-      </div> */}
       <div
         className="animate-on-scroll"
         style={{
