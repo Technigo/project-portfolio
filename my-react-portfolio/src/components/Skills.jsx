@@ -67,7 +67,7 @@ function Skills() {
       skill: 'Languages',
       description:
       'Fluent in Swedish and English at a high level. Currently learning to speak Latvian.'
-    }
+    },
     {
       skill: 'Professional Organizations',
       description:
