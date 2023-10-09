@@ -7,6 +7,11 @@ import { Project } from './components/Project';
 import Contact from './components/Contact';
 import { Header } from './components/Header';
 
+import happy from './components/happy.png'
+import pet from './components/pet.png'
+import music from './components/music.png'
+import pizza from './components/pizza.png'
+
 export const App = () => {
   // Props for Header component
   const name = "So Youn Choi";
@@ -23,6 +28,39 @@ export const App = () => {
   // Props for Tech component
   const techTitle = "What I want to do while we work together";
   const techDescription = "HTML, CSS, JavaScript, React, mob-programming, pair-programming";
+
+  // Props for Project component
+  const projectTitle = "what i did while i learn";
+  const projectItems = [
+    {
+      name: "project happy",
+      link: "https://github.com/catfooo/project-happy-thoughts-vite",
+      projectLink: "https://cozy-khapse-25f81c.netlify.app",
+      image: happy,
+      description: "i tried to gather happy thoughts from people. user can write things here while they are having happy moment...",
+    },
+    {
+      name: "project pet survey",
+      link: "https://github.com/catfooo/project-survey-vite",
+      projectLink: "https://astounding-bienenstitch-033bb0.netlify.app",
+      image: pet,
+      description: "this project is from our pair programming! we worked for making idea specific for our pet we dreamed about...",
+    },
+    {
+      name: "project music releases",
+      link: "https://github.com/catfooo/project-music-releases-vite",
+      projectLink: "https://stunning-zuccutto-987374.netlify.app",
+      image: music,
+      description: "this is my first react project! we learned fetching method and asked to use that for this project...",
+    },
+    {
+      name: "javascript pizzalia",
+      link: "https://github.com/Technigo/project-pizza/pull/30/commits/32096a773f72ebf0ede783b080f84137b5639eef",
+      projectLink: "https://marvelous-bombolone-94bc37.netlify.app",
+      image: pizza,
+      description: "it was my first javascript project and also my first technigo project! haha, i cant even remember how i felt at that time...",
+    },
+  ];
 
   return (
     <form>
@@ -43,7 +81,10 @@ export const App = () => {
         techTitle={techTitle}
         techDescription={techDescription}
       />
-      <Project />
+      <Project
+        projectTitle={projectTitle}
+        projectItems={projectItems}
+      />
       <Contact />
     </form>
   );
