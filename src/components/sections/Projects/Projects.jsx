@@ -3,7 +3,7 @@ import { Heading } from "../../ui/Heading";
 import { ImageFrame } from "../../ui/ImageFrame";
 import { Label } from "../../ui/Label";
 import { Title } from "../../ui/Title";
-import { primaryColorText } from "../../../styles/styleVariable";
+import { primaryColorText, secondaryColorText } from "../../../styles/styleVariable";
 import { projectsData as data } from "../../../statics/projectsData";
 import styles from "./Projects.module.scss";
 export default function Projects() {
@@ -35,8 +35,18 @@ function ProjectCard({ project }) {
           ))}
         </div>
         <div className={styles.btn_box}>
-          <Button text="Live demo" iconPath="/icons/live-demo.png" url={demoUrl} />{" "}
-          <Button text="View the code" iconPath="/icons/github.png" url={gitUrl} />
+          <Button
+            text="Live demo"
+            iconPath="/icons/live-demo.png"
+            url={demoUrl}
+            hoverColor={primaryColorText.color}
+          />{" "}
+          <Button
+            text="View the code"
+            iconPath="/icons/github.png"
+            url={gitUrl}
+            hoverColor={secondaryColorText.color}
+          />
         </div>
       </div>
     </div>

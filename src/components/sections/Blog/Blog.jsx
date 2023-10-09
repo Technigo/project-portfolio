@@ -1,10 +1,11 @@
 import { Heading } from "../../ui/Heading";
 import styles from "./Blog.module.scss";
-import { secondaryColorText } from "../../../styles/styleVariable";
+import { secondaryColorText, yellowColor } from "../../../styles/styleVariable";
 import { ImageFrame } from "../../ui/ImageFrame";
 import { Label } from "../../ui/Label";
 import { Title } from "../../ui/Title";
 import { Button } from "../../ui/Button";
+import { blogsData as data } from "../../../statics/blogsData";
 
 export default function Blog() {
   return (
@@ -34,10 +35,9 @@ export default function Blog() {
         <div className={styles.blog_inner}>
           <Heading color={secondaryColorText}>My Words</Heading>
           <div className={styles.blogs_wrapper}>
-            <Post />
-            <Post />
-            <Post />
-            <Post />
+            {data.map((blog) => (
+              <Post blog={blog} key={blog.id} />
+            ))}
           </div>
         </div>
       </section>
@@ -45,21 +45,21 @@ export default function Blog() {
   );
 }
 
-function Post() {
+function Post({ blog }) {
+  const { text, title, date, url, imagePath } = blog;
   return (
     <article className={styles.post_card}>
-      <ImageFrame imagePath="/images/berlin.png" borderColor={secondaryColorText} />
-      <Label labelText="Sep 2023" />
-      <Title
-        text="How to stop being scared:
-Learning to love code"
+      <ImageFrame imagePath={imagePath} borderColor={secondaryColorText} />
+      <Label labelText={date} />
+      <Title text={title} />
+      <p className={styles.post_text}>{text}</p>
+      <Button
+        text="Read Article"
+        iconPath="/icons/doc.png"
+        url={url}
+        background="#fff"
+        hoverColor={yellowColor.color}
       />
-      <p className={styles.post_text}>
-        Writing code is less about “just working”. Instead, it’s much more about creativity. It’s
-        similar to creative writing in that the author architecting a story must use an assortment
-        of tools and components (i.e., content) in a way to satisfy a particular objective.
-      </p>
-      <Button text="Read Article" iconPath="/icons/doc.png" url="#" background="#fff" />
     </article>
   );
 }

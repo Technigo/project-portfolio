@@ -1,9 +1,9 @@
 import styles from "./Tech.module.scss";
 import { whiteColorText } from "../../../styles/styleVariable";
 import { Heading } from "../../ui/Heading";
-export default function Tech() {
+export default function Tech({ arrowRef }) {
   return (
-    <section className={styles.tech_section}>
+    <section className={styles.tech_section} ref={arrowRef}>
       <div className={styles.inner_tech}>
         <Heading color={whiteColorText} alignStart="center">
           Tech

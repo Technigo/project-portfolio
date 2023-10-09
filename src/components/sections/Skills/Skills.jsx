@@ -1,6 +1,7 @@
 import styles from "./Skills.module.scss";
 import { whiteColorText, secondaryColorText } from "../../../styles/styleVariable";
 import { Heading } from "../../ui/Heading";
+import { skillsData as data } from "../../../statics/skillsData";
 export default function Skills() {
   return (
     <section className={styles.skills_section}>
@@ -9,22 +10,25 @@ export default function Skills() {
           Skills
         </Heading>
         <div className={styles.skills_card_wrapper}>
-          <SkillCard /> <SkillCard /> <SkillCard /> <SkillCard />
+          {data.map((el) => (
+            <SkillCard props={el} key={el.color} />
+          ))}
         </div>
       </div>
     </section>
   );
 }
 
-function SkillCard() {
+function SkillCard(props) {
+  const { color, tag, skills } = props.props;
+  console.log(props);
   return (
     <div className={styles.skill_card}>
-      <Tag background="red">Code</Tag>
+      <Tag background={color}>{tag}</Tag>
       <ul className={styles.skills_ul}>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        {skills.map((skill) => (
+          <li>{skill}</li>
+        ))}
       </ul>
     </div>
   );
