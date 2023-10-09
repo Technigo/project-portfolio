@@ -27,11 +27,9 @@ export default function Hero({ arrowRef }) {
           technology field.
         </p>
 
-        <img
-          src="/icons/arrow.png"
-          className={styles.arrow}
-          onClick={() => handleClick(arrowRef)}
-        />
+        <button className={styles.arrow} onClick={() => handleClick(arrowRef)}>
+          <img src="/icons/arrow.png" alt=" go the next section" />
+        </button>
       </div>
     </section>
   );
