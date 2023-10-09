@@ -71,7 +71,7 @@ function Skills() {
     {
       skill: 'Professional Organizations',
       description:
-        'Highlight your involvement in professional organizations, like FAI (Föreningen Arkiv Information), to showcase your industry engagement.',
+        'bla blayour involvement in professional organizations, like FAI (Föreningen Arkiv Information), to showcase your industry engagement.',
     },
   ]);
 
