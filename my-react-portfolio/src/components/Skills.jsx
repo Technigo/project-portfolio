@@ -5,42 +5,33 @@ function Skills() {
     {
       skill: 'Project Management',
       description:
-        'Emphasize your extensive experience as a Project Manager and your ability to lead and manage projects effectively.',
+        'Through my years in the business I´ve been both a projectleader as well as a projectmember which gives me insight in both the roles. The projects I´ve lead have been mostly in records management but also in e- archiving where I lead projects handling delivieries to an e- archive as well as producing a requirements specification for an organization looking to procure an e- archive.',
     },
     {
-      skill: 'Information Management',
+      skill: 'Records management',
       description:
-        'Highlight your background in records management, which includes skills related to information organization, retrieval, and compliance.',
+        'Highlight your background in records management, which includes skills related to information organization, retrieval, and compliance.,Showcase your knowledge and experience in archive management, including creating management plans, policies, and handling sensitive information.',
     },
     {
-      skill: 'IT Consulting',
-      description:
-        'Mention your experience in IT consulting, which involves providing expert advice and solutions to clients.',
-    },
+        skill: 'e-Archiving and digital preservation',
+        description:
+          'As mentioned above I worked with delivieries to an e- archive and also the process of producing a requirements specification. I also worked for one of the swedish e- archive companies as a records manager which meant teaching them about the system and being involved in product developement. I also worked with XML and XSD schemas who were the basis of our customers doing deliveries to the e- archive in a structured way.',
+      },
     {
-      skill: 'Archive Management',
+      skill: 'Consulting',
       description:
-        'Showcase your knowledge and experience in archive management, including creating management plans, policies, and handling sensitive information.',
+        'I´ve worked as a consultant for many years now and I really love it. You meet a lot of different people, get to do a lot of different projects and you learn so much. It really is a great way to constantly learn and evolve in your profession.',
     },
-    {
-      skill: 'e-Archiving',
-      description:
-        'Highlight your expertise in e-archiving, which is essential in today\'s digital age.',
-    },
+   
     {
       skill: 'Web Development',
       description:
-        'Mention your recent education in web development and proficiency in JavaScript, React, HTML5, CSS, and Node.js.',
-    },
-    {
-      skill: 'AI and Digital Preservation',
-      description:
-        'If applicable, mention your knowledge in AI and digital preservation, as these are emerging areas in tech.',
+        'I´m in a webdeveloper bootcamp where we learned JavaScript, React, HTML5, CSS, and Node.js. We worked in pair- programming and mob-programming. Even though it was really tough at sometimes you always had to have the mindset that everything would clear in the end. It´s been a learning experience which I hope to incorporate to my work experience in the future.',
     },
     {
       skill: 'Agile Methodology',
       description:
-        'Emphasize your familiarity with Agile development methodologies, such as Scrum and Kanban.',
+        'When I worked at a tech company, we followed the agile methodology, which included sprints, daily stand-ups, and retrospectives. It´s a great way to catch up with your team, see where everyone is at, and determine if you can be of assistance to one another.',
     },
     {
       skill: 'Leadership and Teamwork',
@@ -75,8 +66,8 @@ function Skills() {
     {
       skill: 'Languages',
       description:
-        'Mention your proficiency in languages like English, Swedish, and others, which can be a valuable asset in a global tech environment.',
-    },
+      'Fluent in Swedish and English at a high level. Currently learning to speak Latvian.'
+    }
     {
       skill: 'Professional Organizations',
       description:
@@ -85,7 +76,7 @@ function Skills() {
   ]);
 
   return (
-    <div>
+    <div className="skills">
       <h2>Skills</h2>
       <ul>
         {skillsList.map((item, index) => (

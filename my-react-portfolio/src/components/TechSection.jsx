@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import React, { useState } from 'react';
+
 
 function TechSkills() {
   const techSkills = [
@@ -20,10 +21,11 @@ function TechSkills() {
   const formattedTechSkills = techSkills.join(', ');
 
   return (
-    <div>
-      <h2>Tech Skills</h2>
-      <p>{formattedTechSkills}</p>
-    </div>
+    <div className="tech-skills">
+  <h2 className="tech-skills-heading">Tech Skills</h2>
+  <p className="tech-skills-paragraph">{formattedTechSkills}</p>
+</div>
+
   );
 }
 

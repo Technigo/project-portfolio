@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react';
 import './tailwind.css'
 import Contact from './components/Contact'; // Import your Contact component
 import MyProjects from './components/MyProjects'; // Import your MyProject component

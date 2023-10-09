@@ -4,7 +4,7 @@ function Contact() {
   const linkedinLink = 'https://se.linkedin.com/in/alexandra-meija-0757403b';
 
   return (
-    <div>
+    <div className="contact">
       <h2>Contact</h2>
       <p>You can reach me here:</p>
       <ul>
