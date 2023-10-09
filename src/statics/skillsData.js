@@ -8,7 +8,7 @@ export const skillsData = [
   { color: "#6db486", tag: "UpComing", skills: ["Node.js", "Python", "C", "TypeScript"] },
   {
     color: "#ffde30",
-    tag: "more",
+    tag: "More",
     skills: ["Agile methodology", "Teamwork", "Design skills", "Problem solving", "Trustworthness"],
   },
 ];

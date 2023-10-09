@@ -4,6 +4,7 @@
   background-color: $color-primary;
   padding-top: 128px;
   padding-bottom: 128px;
+  height: fit-content;
 }
 
 .skills_inner {
@@ -18,24 +19,31 @@
   gap: 64px;
 
   @media (min-width: 744px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, min-content);
     gap: 64px;
   }
 
   @media (min-width: 1260px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, min-content);
     gap: 64px;
   }
 }
 
 .skill_card {
+  height: fit-content;
   width: 153px;
   color: #fff;
-  text-align: start;
+  text-align: center;
   font-family: Hind;
   font-size: 18px;
   display: grid;
+  grid-template-rows: 39px 1fr;
   gap: 16px;
+
+  @media (min-width: 744px) {
+    text-align: start;
+    width: fit-content;
+  }
 }
 
 .skills_ul {
@@ -45,9 +53,17 @@
 
 .tag_wrapper {
   width: fit-content;
+  height: 39px;
   padding: 0 3px;
   color: #fff;
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: 744px) {
+    margin: unset;
+  }
 }

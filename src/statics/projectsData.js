@@ -24,7 +24,7 @@ export const projectsData = [
     demoUrl: "https://guess-who2222.netlify.app/",
   },
   {
-    imagePath: "/images/weaherapp.png",
+    imagePath: "/images/music.png",
     title: "Music Releases",
     text: "This app is build with React and static data that was gotten from Spotify. You can check music albuls.",
     skills: ["HTML", "CSS", "React"],
@@ -40,7 +40,7 @@ export const projectsData = [
     demoUrl: "https://tubular-truffle-789263.netlify.app",
   },
   {
-    imagePath: "/images/berlin.png",
+    imagePath: "/images/survey.png",
     title: "Pala Customer Survey",
     text: "This is a pet food company survey form. It was a group project that I worked with two others by using Github.",
     skills: ["HTML", "CSS", "React"],

@@ -6,7 +6,7 @@ export default function Button({ text, iconPath, url, background = "#f5f5f5", ho
 
   return (
     <>
-      <a href={url}>
+      <a href={url} target="_blank" rel="noopener noreferrer">
         <button
           className={styles.button}
           style={{ backgroundColor: color }}
