@@ -1,15 +1,16 @@
 @use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
 
 .tech_section {
   background-color: $color-primary;
-  padding-top: 128px;
-  padding-bottom: 128px;
+  @include padding-reset;
 
-  @media (min-width: 744px) {
+  @include sm {
     padding-top: 258px;
     padding-bottom: 258px;
   }
-  @media (min-width: 1260px) {
+
+  @include md {
     height: 980px;
     padding: 0px 128px 0px 230px;
     display: flex;
@@ -20,15 +21,16 @@
 
 .text {
   color: #fff;
-  font-family: Hind;
-  font-size: 24px;
+  font-family: $font-text;
+  font-size: $font-size-md;
   font-weight: 600;
   padding-left: 8px;
-  @media (min-width: 744px) {
+
+  @include sm {
     text-align: center;
   }
 
-  @media (min-width: 1260px) {
+  @include md {
     width: 600px;
     font-size: 32px;
   }
@@ -37,11 +39,12 @@
 .inner_tech {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: $gap-xlg;
   min-width: 343px;
   max-width: 450px;
   margin: 0 auto;
-  @media (min-width: 1269px) {
+
+  @include md {
     flex-direction: row;
     align-items: center;
     gap: 128px;

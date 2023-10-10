@@ -5,7 +5,10 @@ import { Label } from "../../ui/Label";
 import { Title } from "../../ui/Title";
 import { primaryColorText, secondaryColorText } from "../../../styles/styleVariable";
 import { projectsData as data } from "../../../statics/projectsData";
+
 import styles from "./Projects.module.scss";
+
+
 export default function Projects() {
   return (
     <section className={styles.projects_section}>
@@ -21,7 +24,9 @@ export default function Projects() {
   );
 }
 
+// mapping this card with each project data from projectData array
 function ProjectCard({ project }) {
+  // skills is array, others are string
   const { imagePath, title, skills, gitUrl, demoUrl, text } = project;
   return (
     <div className={styles.project_card}>

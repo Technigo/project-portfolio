@@ -1,14 +1,17 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
 .text {
-  font-family: Montserrat;
+  font-family: $font-display;
   font-size: 32px;
   font-weight: 700;
   height: fit-content;
 
-  @media (min-width: 744px) {
+  @include sm {
     font-size: 56px;
   }
 
-  @media (min-width: 1260px) {
+  @include md {
     font-size: 80px;
   }
 }

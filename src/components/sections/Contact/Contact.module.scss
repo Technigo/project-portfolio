@@ -1,21 +1,22 @@
 @use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
 .contact_section {
-  padding-top: 128px;
-  padding-bottom: 128px;
+  @include padding-reset;
 }
 
 .inner_contact {
   margin: 0 auto;
 }
 
+// Inner div (my Card)
 .my_card {
   margin: 64px auto 0;
   width: 310px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 64px;
-  @media (min-width: 1260px) {
+  gap: $gap-lg;
+  @include flexCenter;
+
+  @include md {
     width: 413px;
   }
 }
@@ -28,22 +29,23 @@
 
 .contact_infos {
   color: #000;
-  font-family: Montserrat;
-  font-size: 24px;
+  font-family: $font-display;
+  font-size: $font-size-xlg;
   text-align: center;
   font-weight: 600;
   display: grid;
   gap: 8px;
 
-  @media (min-width: 1260px) {
+  @include md {
     font-size: 32px;
   }
 }
 
+// Social media Icons
 .icon {
   width: 32px;
   height: 32px;
-  transition: all 0.3s ease-in;
+  transition: $transition;
   cursor: pointer;
 }
 
@@ -55,7 +57,7 @@
 .icons_box {
   margin: 0 auto;
   display: flex;
-  gap: 32px;
+  gap: $gap-md;
 }
 
 .contact_infos a:focus,

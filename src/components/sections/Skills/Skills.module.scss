@@ -1,31 +1,36 @@
 @use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
 
-.skills_section {
-  background-color: $color-primary;
-  padding-top: 128px;
-  padding-bottom: 128px;
-  height: fit-content;
-}
-
-.skills_inner {
-  display: grid;
-  gap: 64px;
-  margin: 0 auto;
-}
-
-.skills_card_wrapper {
-  display: grid;
-  margin: 0 auto;
-  gap: 64px;
-
-  @media (min-width: 744px) {
-    grid-template-columns: repeat(2, min-content);
-    gap: 64px;
+.skills {
+  &_section {
+    background-color: $color-primary;
+    height: fit-content;
+    @include padding-reset;
   }
 
-  @media (min-width: 1260px) {
-    grid-template-columns: repeat(4, min-content);
-    gap: 64px;
+  &_inner {
+    display: grid;
+    gap: $gap-xlg;
+    margin: 0 auto;
+  }
+
+  &_ul {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  &_card_wrapper {
+    display: grid;
+    margin: 0 auto;
+    gap: $gap-xlg;
+
+    @include sm {
+      grid-template-columns: repeat(2, min-content);
+    }
+
+    @include md {
+      grid-template-columns: repeat(4, min-content);
+    }
   }
 }
 
@@ -34,21 +39,16 @@
   width: 153px;
   color: #fff;
   text-align: center;
-  font-family: Hind;
-  font-size: 18px;
+  font-family: $font-text;
+  font-size: $font-size-md;
   display: grid;
   grid-template-rows: 39px 1fr;
-  gap: 16px;
+  gap: $gap-xsm;
 
-  @media (min-width: 744px) {
+  @include sm {
     text-align: start;
     width: fit-content;
   }
-}
-
-.skills_ul {
-  text-decoration: none;
-  list-style: none;
 }
 
 .tag_wrapper {
@@ -56,14 +56,14 @@
   height: 39px;
   padding: 0 3px;
   color: #fff;
-  font-family: Montserrat;
-  font-size: 24px;
+  font-family: $font-display;
+  font-size: $font-size-xlg;
   font-weight: 600;
   display: flex;
   align-items: center;
   margin: 0 auto;
 
-  @media (min-width: 744px) {
+  @include sm {
     margin: unset;
   }
 }

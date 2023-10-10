@@ -1,32 +1,35 @@
 @use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
 
-.blog_section {
-  background-color: $color-secondary-light;
-  padding-top: 128px;
-  padding-bottom: 128px;
-  position: relative;
+.blog {
+  &_section {
+    background-color: $color-secondary-light;
+    position: relative;
+    @include padding-reset;
+  }
+
+  &_inner {
+    margin: 0 auto;
+    display: grid;
+    gap: $gap-lg;
+    width: 343px;
+
+    @include sm {
+      width: 680px;
+    }
+    @include md {
+      width: 1018px;
+      gap: $gap-xlg;
+    }
+    @include lg {
+      width: 1226px;
+    }
+  }
 }
 
-.blog_inner {
-  margin: 0 auto;
-  display: grid;
-  gap: 64px;
-  width: 343px;
-
-  @media (min-width: 744px) {
-    width: 680px;
-  }
-  @media (min-width: 1260px) {
-    width: 1018px;
-    gap: 128px;
-  }
-  @media (min-width: 1512px) {
-    width: 1226px;
-  }
-}
-
+// Wavey line on top of the section
 .wave_box {
-  background-image: url("/images/line.png");
+  background-image: url("/icons/line.png");
   height: 11px;
   width: 100%;
   content: "";
@@ -36,46 +39,40 @@
 
 .blogs_wrapper {
   display: grid;
-  gap: 64px;
+  gap: $gap-lg;
 
-  @media (min-width: 1260px) {
+  @include md {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .post {
   &_card {
-    min-width: 343px;
-    max-width: 343px;
+    width: 343px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: $gap-sm;
     align-self: stretch;
     z-index: 10;
 
-    @media (min-width: 744px) {
-      max-width: 680px;
-      gap: 32px;
+    @include sm {
+      width: 680px;
+      gap: $gap-md;
     }
 
-    @media (min-width: 1260px) {
-      max-width: 460px;
-      gap: 32px;
+    @include md {
+      width: 460px;
     }
-    @media (min-width: 1512px) {
-      max-width: 564px;
-      gap: 32px;
+
+    @include lg {
+      width: 564px;
     }
   }
 
   &_text {
-    color: #000;
-    font-family: Hind;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-family: $font-text;
+    font-size: $font-size-md;
   }
 }

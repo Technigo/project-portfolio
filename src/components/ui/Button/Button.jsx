@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styles from "./Button.module.scss";
+
 export default function Button({ text, iconPath, url, background = "#f5f5f5", hoverColor }) {
+  // using state to change btn background
   const [color, setColor] = useState(background);
   const [iconColor, setIconColor] = useState(false);
 
@@ -12,8 +14,7 @@ export default function Button({ text, iconPath, url, background = "#f5f5f5", ho
           style={{ backgroundColor: color }}
           onMouseEnter={() => {
             setColor(hoverColor);
-            console.log("mouse");
-            if (text !== "Read Article") setIconColor(true);
+            setIconColor(true);
           }}
           onMouseLeave={() => {
             setColor(background);

@@ -1,19 +1,17 @@
 @use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
 .hero_section {
   padding-top: 64px;
   padding-bottom: 64px;
 
-  @media (min-width: 744px) {
+  @include sm {
     padding-top: 128px;
   }
 
-  @media (min-width: 1260px) {
+  @include md {
     padding-top: 322px;
     padding-bottom: 64px;
-  }
-
-  @media (min-width: 1512px) {
-    padding-top: 332px;
   }
 }
 
@@ -31,9 +29,9 @@
     "heading"
     "text"
     "arrow";
-  gap: 32px;
+  gap: $gap-md;
 
-  @media (min-width: 744px) {
+  @include sm {
     min-width: 616px;
     max-width: 616px;
     grid-template-columns: 184px minmax(430px, 1fr);
@@ -43,50 +41,42 @@
       "image text"
       "arrow arrow";
     column-gap: 22px;
-    row-gap: 32px;
+    row-gap: $gap-md;
   }
 
-  @media (min-width: 1260px) {
+  @include md {
     grid-template-columns: 184px 1fr;
     min-width: 840px;
     max-width: 860px;
-    row-gap: 16px;
+    row-gap: $gap-sm;
   }
 }
 
+// heading and h1
 .heading_box {
   grid-area: heading;
 }
 
 h1 {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
+  font-family: $font-display;
+  font-size: $font-size-md;
   font-weight: 600;
-  line-height: normal;
 
-  @media (min-width: 744px) {
-    font-size: 24px;
+  @include sm {
+    font-size: $font-size-xlg;
   }
 
-  @media (min-width: 1260px) {
+  @include md {
     font-size: 32px;
   }
 }
 
 .text {
-  color: #000;
-  font-family: Hind;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
+  font-family: $font-text;
+  font-size: $font-size-md;
   grid-area: text;
-  //   color: red;
 
-  @media (min-width: 1260px) {
+  @include md {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,25 +91,26 @@ h1 {
   margin: 0 auto;
 }
 
+// arrow icon
 .arrow {
   cursor: pointer;
   grid-area: arrow;
   margin: 0 auto 30px;
-  transition: all 0.3s ease-in-out;
-  @media (min-width: 744px) {
+  transition: $transition;
+  @include sm {
     grid-row: 3;
     margin-top: 106px;
   }
-  @media (min-width: 1260px) {
+  @include md {
     margin-top: 183px;
   }
-}
 
-.arrow:hover {
-  transform: translateY(10px);
-}
+  &:hover {
+    transform: translateY(10px);
+  }
 
-.arrow:focus-visible,
-.arrow:focus {
-  outline: $color-primary 3px solid;
+  &:focus-visible,
+  &:focus {
+    outline: $color-primary 3px solid;
+  }
 }
