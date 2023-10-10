@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       {/* arial hidden is for hiding this text from api */}
       <p aria-hidden="true" className={styles.text}>
-        {Array.from({ length: 10 }, (_, i) => (
+        {Array.from({ length: 16 }, (_, i) => (
           <small>
             {" "}
             Sakura Tanaka &nbsp; &#x2022; &nbsp; Frontend Developer &nbsp; &#x2022; &nbsp;{" "}
