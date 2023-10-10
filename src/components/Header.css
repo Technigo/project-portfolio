@@ -1,0 +1,85 @@
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center items horizontally */
+}
+
+header h1 {
+  font-family: Montserrat;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 90%; /* responsive width */
+}
+
+header h2 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0e6655;
+  max-width: 90%; /* responsive width */
+  padding-bottom: auto;
+}
+
+header img {
+  max-width: 164px;
+  height: auto;
+  border-radius: 50%;
+  padding-bottom: 20px;
+  width: 80%; /* responsive width */
+}
+
+.header {
+  font-family: Hind;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+}
+
+/* For tablets and above */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header h1,
+  header h2 {
+    max-width: 60%;
+  }
+
+  header h2 {
+    font-size: 32px; /* revert to original size */
+    line-height: 39px;
+  }
+
+  header img {
+    width: 164px;
+    height: 164px;
+  }
+}
+
+/* For desktops and above */
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  header img {
+    width: 180px;
+    height: 180px;
+  }
+}
