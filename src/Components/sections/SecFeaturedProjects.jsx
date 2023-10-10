@@ -20,10 +20,10 @@ export const SecFeaturedProjects = () => {
       }
 
       const data = await response.json() //parse the response as JSON
-      console.log([data])
+      console.log(data)
       setProjects(data) //update the state with fetched data (putting it into array to get correct fetch)
       console.log(projects)
-      console.log(projects[2])
+  
 
     }catch (error) { 
       console.error('Error fetching data:', error)
@@ -39,12 +39,15 @@ export const SecFeaturedProjects = () => {
   return (
     <>
     <div>
-      {projects.map((project) => (
-        <ProjectCard key={project.id} name={project.name} description={project.description} gitLink={project.html_url} homepage={project.homepage} text={randomConst}/>
-      ))}
+
+     <ProjectCard projects={projects}/>
     
     </div>
       
   </>
   )
 }
+
+// {projects.map((project) => (
+//   <ProjectCard key={project.id} name={project.name} description={project.description} gitLink={project.html_url} homepage={project.homepage} text={randomConst}/>
+// ))}
