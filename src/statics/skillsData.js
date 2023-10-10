@@ -14,6 +14,12 @@ export const skillsData = [
   {
     color: tagYellowColor.color,
     tag: "More",
-    skills: ["Agile methodology", "Teamwork", "Design skills", "Problem solving", "Trustworthness"],
+    skills: [
+      "Agile methodology",
+      "Teamwork",
+      "Design skills",
+      "Problem solving",
+      "Trustworthiness",
+    ],
   },
 ];

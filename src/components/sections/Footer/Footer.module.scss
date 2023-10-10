@@ -13,9 +13,22 @@
   font-size: 26px;
   font-weight: 600;
   line-height: 37px;
-  text-wrap: nowrap;
+  // text-wrap: nowrap;
   // for firefox text wrap could not be applied
   width: max-content;
 }
 
+small {
+  position: relative;
+  display: inline-block;
+  animation: moving 30s infinite linear;
+}
 
+@keyframes moving {
+  from {
+    left: 0;
+  }
+  to {
+    left: -3000px;
+  }
+}

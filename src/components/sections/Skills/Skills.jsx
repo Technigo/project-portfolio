@@ -13,7 +13,7 @@ export default function Skills() {
         </Heading>
         <div className={styles.skills_card_wrapper}>
           {data.map((el) => (
-            <SkillCard props={el} key={el.color} />
+            <SkillCard props={el} key={el.tag} />
           ))}
         </div>
       </div>
@@ -21,7 +21,7 @@ export default function Skills() {
   );
 }
 
-// mapping this card useing data from skillData.js
+// mapping this card using data from skillData.js
 function SkillCard(props) {
   const { color, tag, skills } = props.props;
 
@@ -30,7 +30,7 @@ function SkillCard(props) {
       <Tag background={color}>{tag}</Tag>
       <ul className={styles.skills_ul}>
         {skills.map((skill) => (
-          <li>{skill}</li>
+          <li key={skill}>{skill}</li>
         ))}
       </ul>
     </div>

@@ -6,7 +6,10 @@ export default function Footer() {
       {/* arial hidden is for hiding this text from api */}
       <p aria-hidden="true" className={styles.text}>
         {Array.from({ length: 10 }, (_, i) => (
-          <> Sakura Tanaka &#x2022; Frontend Developer &#x2022;</>
+          <small>
+            {" "}
+            Sakura Tanaka &nbsp; &#x2022; &nbsp; Frontend Developer &nbsp; &#x2022; &nbsp;{" "}
+          </small>
         ))}
       </p>
     </footer>
