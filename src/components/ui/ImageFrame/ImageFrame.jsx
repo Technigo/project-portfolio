@@ -1,6 +1,7 @@
 import styles from "./ImageFrame.module.scss";
 
 export default function ImageFrame({ imagePath, borderColor, description }) {
+  //  projects section border -> blue / blog border->pink
   return (
     <div
       className={`${styles.frame} ${

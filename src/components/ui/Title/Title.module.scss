@@ -1,11 +1,12 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
 .title {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
+  font-family: $font-display;
+  font-size: $font-size-xlg;
   font-weight: 600;
-  line-height: normal;
-  @media (min-width: 1260px) {
+
+  @include md {
     font-size: 32px;
   }
 }

@@ -1,6 +1,8 @@
-import styles from "./Tech.module.scss";
-import { whiteColorText } from "../../../styles/styleVariable";
 import { Heading } from "../../ui/Heading";
+import { whiteColorText } from "../../../styles/styleVariable";
+
+import styles from "./Tech.module.scss";
+
 export default function Tech({ arrowRef }) {
   return (
     <section className={styles.tech_section} ref={arrowRef}>
@@ -9,8 +11,8 @@ export default function Tech({ arrowRef }) {
           Tech
         </Heading>
         <p className={styles.text}>
-          HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web
-          Accessibility, API:s, mob-programming, pair-programming, Github.{" "}
+          HTML, CSS, Tailwind, SCSS, JavaScript, React, Next.js, Astro.js, TypeScript, Node.js,
+          Mongo DB, Web Accessibility, Python, C, Github.
         </p>
       </div>
     </section>

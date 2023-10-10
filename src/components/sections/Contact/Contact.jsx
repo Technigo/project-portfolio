@@ -1,6 +1,7 @@
 import { Heading } from "../../ui/Heading";
-import styles from "./Contact.module.scss";
 import { primaryColorText } from "../../../styles/styleVariable";
+
+import styles from "./Contact.module.scss";
 export default function Contact() {
   return (
     <section className={styles.contact_section}>

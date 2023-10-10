@@ -9,7 +9,6 @@ import { Footer } from "./components/sections/Footer";
 
 import "./styles/reset.css";
 import "./styles/global.scss";
-import "./styles/variables.scss";
 
 function App() {
   const arrowRef = useRef(null);

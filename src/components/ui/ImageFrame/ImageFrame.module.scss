@@ -1,4 +1,6 @@
 @use "../../../styles/variables" as *;
+@use "../../../styles/mixins.scss" as *;
+
 .frame {
   width: fit-content;
   background-position: center;
@@ -11,13 +13,12 @@
   border-bottom: 20px solid $color-primary;
   border-left: 20px solid $color-primary;
 
-  @media (min-width: 744px) {
+  @include sm {
     width: 200px;
     height: 280px;
   }
-  @media (min-width: 1260px) {
+  @include md {
     width: 280px;
-    height: 280px;
   }
 }
 
@@ -27,15 +28,16 @@
   align-self: stretch;
   border-bottom: 20px solid $color-secondary;
   border-left: 20px solid $color-secondary;
-  @media (min-width: 744px) {
+
+  @include sm {
     height: 340px;
     width: 680px;
   }
-  @media (min-width: 1260px) {
+  @include md {
     width: 460px;
     height: 340px;
   }
-  @media (min-width: 1512px) {
+  @include lg {
     width: 564px;
     height: 340px;
   }

@@ -2,7 +2,7 @@ export const projectsData = [
   {
     imagePath: "/images/chatbot.png",
     title: "Chatbot build in JavaScript",
-    text: "You can ask for a recommendation for a museum in Europe from your preference.",
+    text: "You can ask for a recommendation for a museum from your preference.",
     skills: ["HTML", "CSS", "JavaScript"],
     gitUrl: "https://github.com/sansan-sakura/project-chatbot",
     demoUrl: "https://helpful-piroshki-45c88f.netlify.app",
@@ -26,7 +26,7 @@ export const projectsData = [
   {
     imagePath: "/images/music.png",
     title: "Music Releases",
-    text: "This app is build with React and static data that was gotten from Spotify. You can check music albuls.",
+    text: "This app is build with React and static data that was gotten from Spotify. You can check music albums.",
     skills: ["HTML", "CSS", "React"],
     gitUrl: "https://github.com/sansan-sakura/project-music-releases-vite",
     demoUrl: "https://music-releases2222.netlify.app/",
@@ -50,7 +50,7 @@ export const projectsData = [
   {
     imagePath: "/images/happy-thought.png",
     title: "Happy Thoughts",
-    text: "This is a Twitter-like APP. I built it for one of the projects at the Boot Camp at Technigo. You can post your happy thoughts and click the like button to like other people's posts.",
+    text: "This is a Twitter-like APP. You can post your happy thoughts and click the like button to like other people's posts.",
     skills: ["HTML", "CSS", "React"],
     gitUrl: "https://github.com/sansan-sakura/project-happy-thoughts-vite",
     demoUrl: "https://happy-thoughs.netlify.app/",

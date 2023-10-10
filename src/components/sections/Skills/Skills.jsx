@@ -1,7 +1,9 @@
-import styles from "./Skills.module.scss";
-import { whiteColorText, secondaryColorText } from "../../../styles/styleVariable";
+import { whiteColorText } from "../../../styles/styleVariable";
 import { Heading } from "../../ui/Heading";
 import { skillsData as data } from "../../../statics/skillsData";
+
+import styles from "./Skills.module.scss";
+
 export default function Skills() {
   return (
     <section className={styles.skills_section}>
@@ -19,9 +21,10 @@ export default function Skills() {
   );
 }
 
+// mapping this card useing data from skillData.js
 function SkillCard(props) {
   const { color, tag, skills } = props.props;
-  console.log(props);
+
   return (
     <div className={styles.skill_card}>
       <Tag background={color}>{tag}</Tag>
