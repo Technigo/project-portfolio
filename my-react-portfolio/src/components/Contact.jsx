@@ -5,12 +5,17 @@ function Contact() {
 
   return (
     <div className="contact">
-      <h2>Contact</h2>
-      <p>You can reach me here:</p>
-      <ul>
-        <li>
-          <strong>Reach me at </strong>{' '}
-          <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+      <h2 className="heading-classh2">Contact</h2>
+      <p className="contact-text">You can reach me here:</p>
+      <ul className="contact-list">
+        <li className="contact-item">
+          <strong className="contact-strong">Reach me at </strong>{' '}
+          <a
+            href={linkedinLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
             Linkedin for Alexandra Meija
           </a>
         </li>

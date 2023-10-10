@@ -8,9 +8,9 @@ function Presentation() {
 
   return (
     <div className="presentation">
-      <h2>Presentation</h2>
-      <p>{presentationText}</p>
-    </div>
+    <h2 className="presentationh2">My words</h2>
+    <p className="presentation-paragraph">{presentationText}</p>
+  </div>
   );
 }
 

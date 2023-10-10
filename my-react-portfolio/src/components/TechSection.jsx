@@ -21,9 +21,9 @@ function TechSkills() {
   const formattedTechSkills = techSkills.join(', ');
 
   return (
-    <div className="tech-skills">
-  <h2 className="tech-skills-heading">Tech Skills</h2>
-  <p className="tech-skills-paragraph">{formattedTechSkills}</p>
+    <div className="tech">
+  <h2 className="tech-heading">Tech</h2>
+  <p className="tech-paragraph">{formattedTechSkills}</p>
 </div>
 
   );

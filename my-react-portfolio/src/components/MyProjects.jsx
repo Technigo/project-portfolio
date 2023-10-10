@@ -90,8 +90,8 @@ function MyProjects() {
   }, [githubUsername]);
 
   return (
-    <div>
-      <h2>Featured projects</h2>
+    <div className="my-projects"> {/* Add a class for the whole MyProjects section */}
+      <h2 className="heading-classh2">Featured projects</h2>
       <div className="project-list">
         {projectOrder.map((repoName) => {
           const repo = repos.find((repo) => repo.name === repoName);
@@ -102,9 +102,9 @@ function MyProjects() {
             const codeUrl = repo.html_url; // Use the GitHub API URL for the repository
             return (
               <div key={repo.id} className="project-item">
-                <h3>{project.name}</h3>
-                <p>{project.description}</p>
-                <p>{project.techniques}</p>
+                <h3 className="project-name">{project.name}</h3>
+                <p className="project-description">{project.description}</p>
+                <p className="project-techniques">{project.techniques}</p>
                 
                 <div className="project-links">
                   <a
