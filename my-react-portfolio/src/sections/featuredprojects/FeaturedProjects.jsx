@@ -1,10 +1,11 @@
-import { ProjectCard } from "../components/projectcard/ProjectCard";
+import { ProjectCard } from "../../components/projectcard/ProjectCard";
+import "./featuredprojects.css";
 
 export const FeaturedProjects = ({ projectData }) => {
   let repoData = projectData;
   console.log(repoData);
   return (
-    <div>
+    <div className="featured-projects">
       {repoData
         ? repoData.map((item) => (
             <ProjectCard

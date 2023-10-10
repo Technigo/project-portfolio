@@ -2,7 +2,7 @@ import { Header } from "./components/header/Header";
 import { Footer } from "./components/footer/Footer";
 import { Bio } from "./sections/Bio";
 import { Tech } from "./sections/Tech";
-import { FeaturedProjects } from "./sections/FeaturedProjects";
+import { FeaturedProjects } from "./sections/featuredprojects/FeaturedProjects";
 import { MyWords } from "./sections/MyWords";
 import { Skills } from "./sections/Skills";
 import { LetsTalk } from "./sections/LetsTalk";
