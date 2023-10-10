@@ -2,7 +2,7 @@ import './button.css'
 export const Button = ({ text, hoverColor }) => {
     return (
         <div>
-            <button className={`button ${hoverColor}`}>{text}</button>
+            <button className={`button ${hoverColor}`}><img src='../assets/github.png'/>{text}</button>
         </div>
     )
 }
