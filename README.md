@@ -9,6 +9,7 @@
 Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
 
 ## Instructions
+
 [Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
 
 ## Set up your own version of your portfolio
@@ -57,7 +58,7 @@ Open up a terminal inside VS code and lets run the project in a local environmen
 
 PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 
-### Hi, I'm Technigo! 👋
+### Hi, I'm Frida! 👋
 
 Welcome to my first React portfolio project! I am Technigo, a student who has completed Sprint 2 of the boot camp and is now taking my skills to the next level. This portfolio showcases my mastery of React concepts, implementing components, props, hooks, and web APIs to create a dynamic and interactive website.
 
