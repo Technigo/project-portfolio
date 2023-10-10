@@ -85,7 +85,12 @@ export const App = () => {
         projectTitle={projectTitle}
         projectItems={projectItems}
       />
-      <Contact />
+      <Contact 
+      email={email}
+      linkedinLink={linkedinLink}
+      githubLink={githubLink}
+      stackoverflowLink={stackoverflowLink}
+      />
     </form>
   );
 };

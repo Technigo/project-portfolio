@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import kontakt from './kontakt.jpg';
 
-const Contact = ({ linkedinLink, githubLink, stackoverflowLink, mail }) => {
+const Contact = ({ linkedinLink, githubLink, stackoverflowLink, email }) => {
   const animatedSectionRef = useRef(null);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Contact = ({ linkedinLink, githubLink, stackoverflowLink, mail }) => {
   return (
     <div ref={animatedSectionRef} style={{ backgroundImage: `url(${kontakt})`, padding: `100px`, color: 'yellow' }}>
       <h1>Contact</h1>
-      <p>{mail}</p>
+      <p>{email}</p>
       |<a href={linkedinLink}>linkedin</a>|
       <a href={githubLink}>github</a>|
       <a href={stackoverflowLink}>stackoverflow</a>|
