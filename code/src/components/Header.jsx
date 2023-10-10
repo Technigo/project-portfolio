@@ -4,14 +4,12 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <header className="header">
-            {/* Video goes here */}
-            <video autoPlay loop muted className="header-video">
-                <source src="code.mp4" type="video/mp4" />
-                {/* Add additional source elements for different video formats */}
-            </video>
-            {/* Other content goes here */}
-        </header>
+        <div className="header">
+            <h2>Hi, I'm Lisa Dahlkar</h2>
+            <h1>Front End Developer</h1>
+            <img className="img-me" src="Lisa.JPG" alt="A picture of Lisa Dahlkar" />
+            <p>hejhej text lalalal </p>
+        </div>
     );
 };
 
