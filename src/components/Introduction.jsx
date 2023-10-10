@@ -17,6 +17,7 @@ export const Introduction = (props) => {
                 <img src={mig} alt="picture of me" width="150px" height="150px" style={{ borderRadius: '50%', objectFit: 'cover', float: 'left', marginRight: '10px' }} />
                 <p style={{ fontSize: '10px' }}>{props.description}</p>
             </div>
+            <div style={{color: 'rgb(235, 85, 118)'}}>⬇</div>
         </div>
     );
 };
