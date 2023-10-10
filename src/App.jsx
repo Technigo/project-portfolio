@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { HeaderText } from './components/header';
+import { HeaderText } from './components/Header';
 import { TechText } from './components/tech';
-import GitHubRepos from './components/GitHubRepos';
-import { SkillsText } from './components/skills.jsx'
-import { Contact } from './components/contact.jsx'
+import { Headline } from './components/Headline';
+import { Section } from './components/Section';
+import { SkillsText } from './components/skills'
+import "./components/ProjectCard.module.css";
 import './App.css';
-
+import './index.css';
 
 function App() {
   const [repos, setRepos] = useState([]);
-  const [loading, setLoading] = useState(true);
   const githubUsername = 'isarobertini'; // Replace with the desired GitHub username
 
   useEffect(() => {
@@ -25,8 +25,6 @@ function App() {
         }
       } catch (error) {
         console.error('Error:', error);
-      } finally {
-        setLoading(false);
       }
     }
 
@@ -37,12 +35,15 @@ function App() {
     <>
       <HeaderText />
       <TechText />
-      <GitHubRepos username={githubUsername} repos={repos} loading={loading} />
+      <Headline />
+      <Section
+        repos={repos}
+        githubUsername={githubUsername}
+      />
       <SkillsText />
-      <Contact />
+
     </>
-  );
+  )
 }
 
 export default App;
-
