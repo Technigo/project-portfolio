@@ -13,7 +13,7 @@ export const Header = (props) => {
   return (
     <div style={{ position: 'fixed', zIndex: '3000', color: 'yellow', backgroundColor: 'black' }}>
       {/* Button to toggle header */}
-      <button onClick={(e) => toggleHeader(e)}>
+      <button onClick={(e) => toggleHeader(e)} style={{backgroundColor: 'yellow'}}>
         {showHeader ? 'not now' : 'contact me'}
       </button>
 
