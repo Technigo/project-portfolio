@@ -6,6 +6,7 @@ import { Tech } from './components/Tech';
 import { Project } from './components/Project';
 import Contact from './components/Contact';
 import { Header } from './components/Header';
+import { Introduction } from './components/Introduction';
 
 import happy from './components/happy.png'
 import pet from './components/pet.png'
@@ -64,6 +65,9 @@ export const App = () => {
 
   return (
     <form>
+      <Introduction 
+      name={name}
+      description={description}/>
       <Header
         name={name}
         email={email}
