@@ -1,0 +1,47 @@
+.circle-img {
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.arrow-divider {
+    padding: 0 16px 64px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Animation to make the arrow move */
+    position: relative;
+    top: 0;
+    /* Animation is animated here */
+    animation: arrowMove 1.7s ease-in infinite;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+/* ------------ Tablet only ------------ */
+@media (max-width: 1279px) and (min-width: 744px) {
+    .arrow-divider {
+        padding: 128px 64px 0 64px;
+    }
+}
+
+/* ------------ Desktop only ------------ */
+@media (min-width: 1280px) {
+    .arrow-divider {
+        padding: 199px 220px 64px 220px;
+    }
+}
+
+/* Keyframes för animation med namnet arrowMove som sedan används i .arrow-divider ovan för att animera */
+@keyframes arrowMove {
+
+    0%,
+    100% {
+        top: 0;
+    }
+
+    50% {
+        top: 30px;
+        /* Go down to 30px at 50% */
+    }
+}
