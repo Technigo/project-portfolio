@@ -19,8 +19,8 @@ export const Skills4 = () => {
                 <h4>Toolbox</h4>
                 <ul>
                     <li>Figma</li>
+                    <li>Postman</li>
                     <li>Slack</li>
-                    <li>?</li>
                     <li>?</li>
                 </ul>
             </div>
@@ -28,7 +28,7 @@ export const Skills4 = () => {
                 <h4>Upcoming</h4>
                 <ul>
                     <li>Node.js</li>
-                    <li>Postman</li>
+                    <li>UX</li>
                     <li>?</li>
                     <li>?</li>
                 </ul>

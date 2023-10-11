@@ -1,24 +1,44 @@
+import React, { useState, useEffect } from 'react'
 
-//import React { useState } from 'react'
-
-//import project card here
+import { ProjectCard } from './ProjectCard/ProjectCard.jsx'
 
 
 export const FeaturedP3 = () => {
-    //const ..... map array här?
-    // const [name, setName] = useState("")
-    // const [description, setDescription] = useState("")
-    //skills, vart hittar jag det???
-    //Hur kopplar till demo-linken via API?
-    //Nedan för knappen till visa kod?
-    //const [html_url, setHtml_url] = useState("")
+    const [projects, setProjects] = useState([])
+    const [name, setName] = useState("")
+    const [description, setDescription] = useState("")
+    const [topics, setTopics] = useState("")
+    const [homepage, setHomepage] = useState("")
+    const [html_url, setHtml_url] = useState("")
 
-    //const API = "https://api.github.com/users/IdahCollin/repos"
+    const API = "https://api.github.com/users/IdahCollin/repos"
 
-    //const fetcha här??? try mm...??? awai, if, throw?
-    //catch error?
+    const fetchProjects = async () => {
+        try {
+            const response = await fetch(API)
+
+            if (!response.ok) {
+                throw new Error('Error when fetching data')
+            }
+
+            const data = await response.json()
+            console.log(data)
+            setProjects(data)
+            console.log(projects)
+        }
+        catch (error) {
+            console.error('Error when fetching data:', error)
+        }
+    }
+    useEffect(() => {
+        fetchProjects()
+    }, [])
+
+
 
     return (
-        <div>FeaturedP3</div>
+        <div>
+            <ProjectCard projects={projects} />
+        </div>
     )
 }
