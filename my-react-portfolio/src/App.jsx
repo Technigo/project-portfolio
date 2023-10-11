@@ -1,11 +1,11 @@
-import { Header } from "./components/header/Header";
+// import { Header } from "./components/header/Header";
 import { Footer } from "./components/footer/Footer";
-import { Bio } from "./sections/Bio";
-import { Tech } from "./sections/Tech";
+import { Bio } from "./sections/bio/Bio";
+import { Tech } from "./sections/tech/Tech";
 import { FeaturedProjects } from "./sections/featuredprojects/FeaturedProjects";
-import { MyWords } from "./sections/MyWords";
-import { Skills } from "./sections/Skills";
-import { LetsTalk } from "./sections/LetsTalk";
+import { MyWords } from "./sections/mywords/MyWords";
+import { Skills } from "./sections/skills/Skills";
+import { LetsTalk } from "./sections/letstalk/LetsTalk";
 import { useEffect, useState } from "react";
 
 const App = () => {
@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <Header />
+      {/* <Header /> */}
       <Bio />
       <Tech />
       {loading ? (
