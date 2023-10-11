@@ -55,148 +55,157 @@ color: #000000;
 
 .top-section {
   width: 1280px;
-  height: 980px;
-  padding: 332px, 220px, 64px, 220px;
-  background-color:  #FFFFFF;
+  height: 200px;
+  padding: 332px 0 64px 336px; /* Adjust left padding to 336px */
+  background-color: #FFFFFF;
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+.heading-container {
+  width: 839px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
 }
 
 .heading-classh1 {
-font: Montserrat;
-font-size: 32px;
-font-weight: 600;
-line-height: 39px;
-letter-spacing: 0em;
-text-align: left;
-color: #000000;
-}
-.heading-classh2 {
-font: Montserrat;
-font-size: 80px;
-font-weight: 700;
-line-height: 98px;
-letter-spacing: 0em;
-text-align: center;
-color: #0B24F5;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0em;
+  color: #000000;
 }
 
+.heading-classh2 {
+  font-family: Montserrat;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 97px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0B24F5;
+  display: inline;
+  width: 100%;  /* Display h2 text on the same line */
+}
 .heading-paragraph-class {
-font: Hind;
-font-size: 18px;
-font-weight: 400;
-line-height: 29px;
-letter-spacing: 0em;
-text-align: left;
-color:black;
+  font-family: Hind;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center; /* Center text horizontally */
+  color: black;
 }
 
 .image-another-class {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin-top: 20px;
 }
 
+
 .tech {
-width: 1280px;
-height: 980px;
-top: 982px;
-padding: 0px, 128px, 0px, 230px;
-background-color: blue
+  width: 1280px;
+  height: 980px;
+  top: 982px;
+  padding: 0px 128px 0px 230px; /* Removed the commas and changed to one comma */
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .tech-heading {
   color: white;
-  /* Other styles for .tech-skills-heading class */
-}
+  width: 198px;
+  height: 98px;
+  margin-right: 16px; /* Add space between heading and paragraph */
+  }
+
 
 .tech-paragraph {
   color: white;
-  /* Other styles for .tech-skills-paragraph class */
+  width: 600px;
+  height: 100px;
+}
+
+.my-projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 128px 0;
+  background-color: white;
+  height: auto;
 }
 
 .project-list {
-width: 1280px;
-height: 3000px;
-top: 1962px;
-padding: 128px, 230px, 124px, 230px;
-background-color: white;
+  margin-left: 346px; /* Add margin-left to push it 346px from the left of its containing element */
+  gap: 128px; /* Add gap between its children */
 }
 
-.project-name
-.project-description
+.classh2project {
+  font: Montserrat;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 98px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: blue;
+  margin-left: 346px; /* Horizontal centering */
+  margin-top: 128px; /* Vertical positioning */
+}
+
 
 
 .project-techniques {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
   width: 251px;
   height: 24px;
   background-color: #000000;
   color: white;
+  padding: 2px;
 }
 
-.btn live-demo-link {
-  /* Live-Demo-Button */
-  
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+
+.btn-live,
+.btn-view {
+  /* Button Styles */
+  width: 120px;
+  height: 48px;
+  top: 708px;
+  left: 968px;
   padding: 0px 16px 0px 0px;
-  gap: 7px;
-  
-  position: absolute;
-  width: 179px;
-  height: 48px;
-  left: 338px;
-  top: 106px;
-  
-  background: #F5F5F5;
   border-radius: 40px;
-  
-  
-  /* Live Demo */
-  
-  width: 48px;
-  height: 48px;
-  
-  
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  
-  
-  /* globe */
-  
-  position: absolute;
-  left: 18.75%;
-  right: 16.69%;
-  top: 18.75%;
-  bottom: 16.69%;
-  
-  background: #333333;
-  
-  
-  /* Live demo */
-  
-  width: 108px;
-  height: 24px;
-  
-  font: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  
-  color: #333333;
-  
-  
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  }
+  gap: 7px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 120px;
+}
+
+.btn-live::after,
+.btn-view::after {
+
+  margin-left: 8px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.btn-live:hover,
+.btn-view:hover {
+  background-color: #0B24F5; /* Blue background color on hover */
+  color: #FFFFFF; /* Text color on hover */
+}
+
 
   .presentation {
   width: 1280px;
@@ -211,89 +220,128 @@ background-color: white;
     font-weight: 700;
     line-height: 98px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
+    padding-left: 143px;
     color: #FF4575;
-    ;
   }
 
-  .presentation-text
+  .presentation-paragraph {
+    font: Hind;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:black;
+  padding-right: 500px;
+  padding-left: 143px;
+  }
 
 
-  .skills-header {
-    font: Montserrat;
-font-size: 80px;
-font-weight: 700;
-line-height: 98px;
-letter-spacing: 0em;
-text-align: left;
+  .skills {
+    width: 1280px;
+  height: auto;
+  padding: 128px 338px;
+  background-color: #0B24F5;
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+  justify-content: space-between;
     color: white;
   }
   
-  .skills-item {
-    font: Hind;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;   
-    color: white; 
-  }
-  
-  .skills {
-    width: 1280px;
-    height: 1000px;
-    top: 7608px;
-    padding: 128px, 222px, 128px, 222px;
-    background-color: #0B24F5;
-  }
-  
-  .skills-columns {
-    display: flex;
-    justify-content: space-between;
-  }
-  
   .skills-column {
-    width: auto;
-    height: auto;
-    padding: 2px;
-    gap: 8px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1;
+    color: white;
   }
   
-  .code {
+  .code-header {
     background: #EB5577;
-    width: 90px;
-    height: 43px;
-    padding: 2px;
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    color: white;
   }
   
-  .toolbox {
+  .toolbox-header {
     background: #6DB486;
-    width: 178px;
-    height: 43px;
-    padding: 2px;
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    color: white;
   }
   
-  .more {
+  .more-header {
     background: #2483E0;
-    width: 133px;
-    height: 43px;
-    padding: 2px;
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    color: white;
   }
-
-  .code h3,
-  .toolbox h3,
-  .more h3 {
-  color: white;
+  
+  .skills-header {
+    color: #FFF;
+    text-align: center;
+  font: Montserrat;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   }
+  
+  .skills-item {
+    color: #FFF;
+font: Hind;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  
   .contact {
-  width: 1512px;
-  height: 800px;
-  top: 12000px;
-  padding: 128px, 0px, 128px, 0px;
+    width: 1512px;
+    padding: 128px 0; /* Adjust the padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Remove height and top properties */
   }
+  
+  .classh2contact {
+    font: Montserrat;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 98px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: blue;
+    width: 379px; /* Set the width */
+    height: 98px; /* Set the height */
+    /* Remove position, top, and left properties */
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .contact-text {
+    font: Montserrat; /* Updated font-family property */
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center; /* Center the text */
+    color: black;
+  }
+  
   

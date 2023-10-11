@@ -11,10 +11,13 @@ function TopSection() {
 
     return (
       <div>
-           <div className="top-section"></div>
+           <div className="top-section">
+        <div className="heading-container">
+        <h1 className="heading-classh1">Hi, I'm Alexandra Meija</h1>
+       <h2 className="heading-classh2">A project manager/records manager with coding skills.</h2>
+        </div>
+      </div>
         <img src="src/original.jpg" alt="Your Image Description" className="image-another-class" />
-        <h1 className="heading-classh1">{introText}</h1>
-        <h2 className="heading-classh2">A project manager/records manager with coding skills.</h2>
         <p className="heading-paragraph-class">{paragraphText}</p>
       </div>
     );

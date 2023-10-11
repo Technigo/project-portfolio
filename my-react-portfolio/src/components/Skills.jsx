@@ -40,7 +40,7 @@ function Skills() {
       <h2 className="skills-header">Skills</h2>
       <div className="skills-columns">
         <div className="skills-column code">
-          <h3>Code</h3>
+          <h3 className="code-header">Code</h3>
           <ul>
             {skillsList.map((item, index) => (
               <li key={index} className="skills-item">
@@ -49,9 +49,9 @@ function Skills() {
             ))}
           </ul>
         </div>
-
+  
         <div className="skills-column toolbox">
-          <h3>Toolbox</h3>
+          <h3 className="toolbox-header">Toolbox</h3>
           <ul>
             {toolbox.map((item, index) => (
               <li key={index} className="skills-item">
@@ -60,9 +60,9 @@ function Skills() {
             ))}
           </ul>
         </div>
-
+  
         <div className="skills-column more">
-          <h3>More</h3>
+          <h3 className="more-header">More</h3>
           <ul>
             {more.map((item, index) => (
               <li key={index} className="skills-item">
@@ -77,3 +77,4 @@ function Skills() {
 }
 
 export default Skills;
+

@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import ViewCodeButton from '../assets/View-Code-Button.svg';
+import LiveDemoButton from '../assets/Live-Demo-Button.svg';
+
 
 const projectOrder = [
   'project-happy-thoughts-vite',
@@ -90,8 +93,8 @@ function MyProjects() {
   }, [githubUsername]);
 
   return (
-    <div className="my-projects"> {/* Add a class for the whole MyProjects section */}
-      <h2 className="heading-classh2">Featured projects</h2>
+    <div className="my-projects">
+      <h2 className="classh2project">Featured projects</h2>
       <div className="project-list">
         {projectOrder.map((repoName) => {
           const repo = repos.find((repo) => repo.name === repoName);
@@ -100,30 +103,31 @@ function MyProjects() {
 
           if (repo && project) {
             const codeUrl = repo.html_url; // Use the GitHub API URL for the repository
+
             return (
               <div key={repo.id} className="project-item">
                 <h3 className="project-name">{project.name}</h3>
                 <p className="project-description">{project.description}</p>
                 <p className="project-techniques">{project.techniques}</p>
-                
-                <div className="project-links">
-                  <a
-                    href={codeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn"
-                  >
-                    <i className="fas fa-code"></i> View Code
-                  </a>
-                  <a
-                    href={netlifyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn live-demo-link"
-                  >
-                    <i className="fas fa-external-link-alt"></i> Live Demo
-                  </a>
-                </div>
+
+              <div className="project-links">
+                <a
+              href={codeUrl}
+              target="_blank"
+               rel="noopener noreferrer"
+              className="btn-view"
+                >
+               <img src={ViewCodeButton} alt="View Code Button" />
+              </a>
+              <a
+              href={netlifyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+                className="btn-live"
+                >
+                <img src={LiveDemoButton} alt="Live Demo Button" />
+                </a>
+              </div>
               </div>
             );
           }
