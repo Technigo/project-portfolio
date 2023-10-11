@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 /* Header container */
 .header-container {
     display: flex;
@@ -5,51 +12,95 @@
     align-items: center;
     text-align: center;
     max-width: 90%;
-    margin: 64px auto; /* Centered horizontally */
-    padding: 64px 16px; /* 64px top and bottom padding, 16px left and right padding */
-  }
-  
-  /* Profile image */
-  .profile-img {
-    width: 150px;
-    height: 150px;
+    margin: 64px auto;
+    /* Centered horizontally */
+}
+
+.profile-wrapper-tablet {
+    display: none;
+}
+
+/* Profile image */
+.profile-img {
+    /* Positioning */
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img img {
     border-radius: 50%;
-    border: 2px solid whitesmoke;
+    width: 164px;
+    height: 164px;
     overflow: hidden;
-    margin: 32px 0; /* 32px margin at the top, centered horizontally */
-  }
-  
-  .profile-img img {
-    width: 100%;
-  }
-  
-  /* H2 */
-  h2 {
-    margin: 32px 0; /* 32px margin at the top, centered horizontally */
-  }
-  
-  /* Heading component */
-  .header-heading {
-    margin: 32px 0; /* 32px margin at the top, centered horizontally */
-  }
-  
-  /* Paragraph */
-  p {
-    margin: 32px 0; /* 32px margin at the top, centered horizontally */
-  }
-  
-  /* Arrow animation/icon */
-  .arrow-container {
+}
+
+/* H2 */
+h2 {
+    margin: 32px 0 0 0;
+    /* 32px margin at the top, centered horizontally */
+}
+
+/* Heading component */
+.header-heading {
+    margin: 0px;
+}
+
+/* Paragraph */
+p {
+    margin: 32px 0;
+    /* 32px margin at the top, centered horizontally */
+}
+
+/* Arrow animation/icon */
+.arrow-container {
     position: relative;
     animation: moveUpDown 2s linear infinite;
-    margin: 32px 0; /* 32px margin at the top, centered horizontally */
-  }
-  
-  @keyframes moveUpDown {
-    0%, 100% {
-      transform: translateY(0);
+    margin: 0;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
+
     50% {
-      transform: translateY(-10px); /* Adjust the distance the arrow moves */
+        transform: translateY(-10px);
+        /* Adjust the distance the arrow moves */
     }
-  }
+}
+
+/**** TABLET ****/
+@media (min-width: 744px) {
+    .profile-wrapper {
+        display: none;
+    }
+
+    .profile-wrapper-tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 22px;
+    }
+
+    .profile-description {
+        display: flex;
+        justify-content: center;
+        flex: row;
+        gap: 22px;
+    }
+
+    .arrow-container {
+        margin-top: 128px;
+    }
+
+}
+
+
+/**** DESKTOP ****/
+@media (min-width: 1280px) {}
+
+/**** DESKTOP ****/
+@media (min-width: 1512px) {}
