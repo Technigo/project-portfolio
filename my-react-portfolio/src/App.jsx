@@ -1,15 +1,28 @@
 // import { useState } from 'react'
 
-import './App.css'
-import { Introduction } from './Sections/Introduction'
+import { Introduction } from "./Sections/Introduction";
+import { Projects } from "./Sections/Projects";
+import "./App.css";
 
-export const App = () => {
+
+const App = () => {
 
   return (
-    <div>
-      <Introduction />
+    <div className="main-wrapper">
+      <div className="intro">
+        <Introduction />
+      </div>
+      <div className="tech">
+        <h1>Tech</h1>
+        <p>HTML, CSS, JavaScript, ES6, JSX, React, Node.js, Mongo DB, Web Accessibility, API:s, GitHub, mob-programming, pair-programming, code review</p>
+      </div>
+      <div className="projects">
+        <Projects />
+      </div>
     </div>
   )
 }
+
+export default App
 
 
