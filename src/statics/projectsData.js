@@ -56,17 +56,3 @@ export const projectsData = [
     demoUrl: "https://happy-thoughs.netlify.app/",
   },
 ];
-
-const fetchData = async () => {
-  try {
-    const res = await fetch("https://api.github.com/users/sansan-sakura/repos");
-    const data = await res.json();
-    if (!res.ok) throw new Error("something went wrong");
-
-    console.log(data);
-  } catch (error) {
-    console.error(error);
-  }
-};
-
-fetchData();
