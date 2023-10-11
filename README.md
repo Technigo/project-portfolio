@@ -4,6 +4,27 @@
   </a>
 </h1>
 
+
+Notes:
+
+/* ------------ MEDIA QUERIES ------------ */
+/* ------------ Tablet and up ------------ */
+@media (min-width: 744px) {
+
+
+}
+
+/* ------------ Tablet only ------------ */
+@media (max-width: 1279px) and (min-width: 744px) {
+
+
+}
+
+/* ------------ Desktop only ------------ */
+@media (min-width: 1280px) {
+
+}
+
 # Technigo - React Portfolio Project
 
 Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
