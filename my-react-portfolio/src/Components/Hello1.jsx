@@ -8,7 +8,7 @@ export const Hello1 = () => {
                 <h3>Hi, I'm Idah Collin</h3>
                 <h1>Frontend Developer</h1> </div>
             <div className="profile-photo"><ProfilePhoto /> </div>{/*Reusable component*/}
-            <div className="intro"><p> I'm a junior frontend developer known for my structure and leader-skills. I create user-friendly applications and solves complex issues with ease. My drive for getting the whole team succeed makes me a valuable asset to any project.</p></div>
+            <div className="intro"><p> I'm a junior frontend developer known for my structure and leader-skills. I create user-friendly applications and solve complex issues with ease. My drive of getting the whole team succeed makes me a valuable asset to any project.</p></div>
             <div className="arrow">
                 <img src="/src/assets/arrow.svg" alt="" /> </div>
         </header>
