@@ -1,26 +1,45 @@
-import React from 'react'
+import { Tags } from "/src/Components/Reusablecomponents/Tags.jsx";
+import { Button } from "/src/Components/Reusablecomponents/Button.jsx";
 
+import repoImages from "./repoImages.json";
 
-//fler imports här om reusable components?
+export const ProjectCard = ({ repos }) => {
 
-export const ProjectCard = ({ projects }) => {
-    const allProjectsArray = projects
-    console.log(allProjectsArray)
-
-    const namesToFilter = ["project-chatbot", "project-guess-who", "project-happy-thoughts-vite", "project-music-releases-vite", "project-pizza"]
-    const filteredProjects = projects.filter((project) => namesToFilter.includes(project.name)) //filtering projects I want to show
-    console.log(filteredProjects)
+    const orderedRepoNames = repoImages.map((image) => image.repoName);
 
     return (
-        <section className="project-card-wrapper">
-            {filteredProjects.map((project) => (
-                <div key={project.name}>
-                    <div>{project.name}</div>
-                    <div>{project.description}</div>
-                    <div>{project.topics}</div>
-                    <div>{project.homepage}</div>
-                    <div>{project.html_url}</div>
-                </div>))}
-        </section>
-    )
-}
+        <div className="featured-projects-wrapper">
+            <h1>Featured projects</h1>
+            <div>
+                {orderedRepoNames.map((repoName) => {
+                    const repo = repos.find((repo) => repo.name === repoName);
+                    const repoImage = repoImages.find((img) => img.repoName === repoName);
+
+                    if (repo && repoImage) {
+                        return (
+                            <div key={repo.id} className="project-card-inner">
+                                <img src={repoImage.imageUrl} alt={repo.name} className="repo-image" />
+                                <div className="project-info">
+                                    <h3>{repo.name}</h3>
+                                    <p>{repo.description} </p>
+                                    <Tags tags={repo.topics} />
+                                    <div className="buttons-container">
+                                        <Button buttonName={`Live Demo`} link={repo.homepage} icon={`src/assets/livedemo.svg`} iconAlt={`Web icon`} />
+                                        <Button buttonName={`View the Code`} link={repo.html_url} icon={`src/assets/github.svg`} iconAlt={`GitHub logo`} />
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    } else {
+                        return null; // Handle missing data or skip if not found
+                    }
+                })}
+            </div>
+        </div>
+    );
+};
+
+
+
+
+

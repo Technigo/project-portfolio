@@ -5,7 +5,21 @@
 }
 
 h1 {
+  color: blue;
+  font-family: Montserrat;
   font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .name-title {
@@ -33,17 +47,125 @@ header {
   grid-template-areas:
     "nametitle nametitle nametitle nametitle"
     "profilephoto introtext introtext intro";
+  padding: 332px 337px 263px 336px;
 }
 
+.intro {
+  color: #000;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 600px;
+}
+
+/*.arrow {
+
+}*/
+
+/* ------ Tech2 secion ----- */
 .tech-wrap {
+  display: inline-flex;
+  height: 980px;
+  padding: 0px 244px 0px 346px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 124px;
+  flex-shrink: 0;
+  background: #0B24F5;
+}
+
+.tech-wrap h1 {
+  color: #FFF;
+}
+
+.tech-wrap p {
+  color: #FFF;
+  font-family: Hind;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  width: 600px;
+}
+
+/* ----- Featured projects3/Project card ----- */
+.featured-projects-wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.skills-wrap {
-  display: flex;
+.repo-image {
+  width: 280px;
+  height: 280px;
+  flex-shrink: 0;
+  border-bottom: 20px solid #0B24F5;
+  border-left: 20px solid #0B24F5;
 }
 
+.project-card-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 128px;
+}
+
+.project-info {
+  flex: 1;
+  display: grid;
+  padding: 10px;
+  grid-template-rows: auto auto 1fr;
+}
+
+.project-info p {
+  width: 500px;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.buttons-container {
+  display: flex;
+  padding-right: 0px;
+  align-items: center;
+  gap: 7px;
+}
+
+
+.tag ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+  padding: 15px;
+  color: #FFF;
+  background-color: black;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* ----- Skills4 section ----- */
+.skills-wrap {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  background-color: #0B24F5;
+  padding: 128px 338px;
+}
+
+.skills-wrap h1 {
+  color: white;
+}
+
+.skills-wrap ul {
+  list-style-type: none;
+}
+
+/* ----- Contact5 section ----- */
 .contact-container {
   display: flex;
   flex-direction: column;

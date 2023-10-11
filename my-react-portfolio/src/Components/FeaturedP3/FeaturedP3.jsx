@@ -4,41 +4,34 @@ import { ProjectCard } from './ProjectCard/ProjectCard.jsx'
 
 
 export const FeaturedP3 = () => {
-    const [projects, setProjects] = useState([])
-    const [name, setName] = useState("")
-    const [description, setDescription] = useState("")
-    const [topics, setTopics] = useState("")
-    const [homepage, setHomepage] = useState("")
-    const [html_url, setHtml_url] = useState("")
 
-    const API = "https://api.github.com/users/IdahCollin/repos"
+    const [repos, setRepos] = useState([])
 
-    const fetchProjects = async () => {
-        try {
-            const response = await fetch(API)
+    const REPOSAPI = "https://api.github.com/users/IdahCollin/repos"
 
-            if (!response.ok) {
-                throw new Error('Error when fetching data')
-            }
-
-            const data = await response.json()
-            console.log(data)
-            setProjects(data)
-            console.log(projects)
-        }
-        catch (error) {
-            console.error('Error when fetching data:', error)
-        }
-    }
     useEffect(() => {
-        fetchProjects()
-    }, [])
+        const fetchRepos = async () => {
+            try {
+                const response = await fetch(REPOSAPI);
+                if (!response.ok) {
+                    throw new Error("Network response was not ok" + response.statusText);
+                }
+                const data = await response.json();
+                setRepos(data);
+            } catch (error) {
+                console.error(
+                    "There has been a problem with your fetch operation:",
+                    error
+                );
+            }
+        };
 
-
+        fetchRepos();
+    }, []);
 
     return (
         <div>
-            <ProjectCard projects={projects} />
+            <ProjectCard repos={repos} />
         </div>
     )
 }
