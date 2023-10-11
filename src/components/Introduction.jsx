@@ -23,7 +23,7 @@ export const Introduction = (props) => {
                 <p style={{ fontSize: '10px' }}>{props.description}</p>
             </div>
             <div
-                style={{ color: 'rgb(235, 85, 118)', cursor: 'pointer' }}
+                style={{ marginBottom: '-60px' }}
                 onMouseEnter={() => setIsHovered(true)} // Set hover state to true on mouse enter
                 onMouseLeave={() => setIsHovered(false)} // Set hover state to false on mouse leave
             >

@@ -7,6 +7,7 @@ import { Project } from './components/Project';
 import Contact from './components/Contact';
 import { Header } from './components/Header';
 import { Introduction } from './components/Introduction';
+import { Technology } from './components/Technology';
 
 import happy from './components/happy.png'
 import pet from './components/pet.png'
@@ -28,7 +29,7 @@ export const App = () => {
 
   // Props for Tech component
   const techTitle = "What I want to do while we work together";
-  const techDescription = "HTML, CSS, JavaScript, React, mob-programming, pair-programming";
+  const techDescription = "HTML, CSS, JavaScript, React, React Hooks, Node.js, Web Accessibility, APIs, mob-programming, pair-programming, GitHub.";
 
   // Props for Project component
   const projectTitle = "what i did while i learn";
@@ -68,6 +69,7 @@ export const App = () => {
       <Introduction 
       name={name}
       description={description}/>
+      <Technology techDescription={techDescription}/>
       <Header
         name={name}
         email={email}
