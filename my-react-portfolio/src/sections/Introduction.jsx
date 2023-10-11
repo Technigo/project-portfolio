@@ -15,7 +15,7 @@ export const Introduction = () => {
     return (
         <section className="introduction-section">
             <SubHeading text={`Hello, I'm Vera Witting`}/>
-            <MainHeading className={`dark-h2`} text={`Frontend Developer`}/>
+            <MainHeading className={`dark-h2-introduction`} text={`Frontend Developer`}/>
             <div className="image-cropper">
             <img src="src/assets/profile-pic.jpg" alt="A picture of Vera Witting" />
             </div>

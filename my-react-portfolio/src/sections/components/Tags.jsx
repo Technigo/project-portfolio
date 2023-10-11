@@ -1,4 +1,4 @@
-export const Tags = ({ tags }) => {
+export const Tags = ({ tags, id }) => {
 
     console.log("tags", tags)
 
@@ -7,7 +7,7 @@ export const Tags = ({ tags }) => {
             <ul>
                 {tags.map((tag) => {
                     return (
-                        <li className="tag">
+                        <li className="tag" > {/*CAN I ADD A KEY??? HOW ELSE?!*/}
                             {tag}
                         </li>
                     )

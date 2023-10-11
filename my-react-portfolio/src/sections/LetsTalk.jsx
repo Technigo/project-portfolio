@@ -1,5 +1,6 @@
 import { MainHeading } from "./components/Typo/MainHeading.jsx";
 import { SubHeading } from "./components/Typo/SubHeading.jsx";
+import { SocialMedia } from "./components/SocialMedia.jsx";
 
 export const LetsTalk = () => {
 
@@ -16,7 +17,7 @@ export const LetsTalk = () => {
             <SubHeading text={contactInfoName}/>
             <SubHeading text={contactInfoPhone}/>
             <SubHeading text={contactInfoMail}/>
-            HERE GOES THE SOCIAL MEDIA LINK-ICONS
+            <SocialMedia />
         </section>
     )
 }

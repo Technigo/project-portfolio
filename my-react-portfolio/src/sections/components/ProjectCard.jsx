@@ -20,7 +20,6 @@ export const ProjectCard = ({repos}) => {
 
     return (
         <div>
-            This is the project card
             <ul>
                 {filteredRepos.map((repo) => {
                     const repoImage = repoImages.find((img) => img.repoName === repo.name);
@@ -29,7 +28,7 @@ export const ProjectCard = ({repos}) => {
                             <img src={repoImage?.imageUrl} alt={repo.name} />
                             <SubHeading text={repo.name} />
                             <BodyText text={repo.description} />
-                            <Tags tags={repo.topics} />
+                            <Tags tags={repo.topics} id={repo.id}/>
                             <Button buttonName={`Live Demo`} link={repo.homepage} icon={`src/assets/button-icons/live-demo.svg`} iconAlt={`Web icon`} />
                             <Button buttonName={`View the Code`}link={repo.html_url} icon={`src/assets/button-icons/github.svg`} iconAlt={`GitHub logo`} />
                         </li>
