@@ -6,8 +6,6 @@ export const App = () => {
   return (
     <>
       <div className="main-container">
-        <Headline text="Featured Projects" level={1} />{" "}
-        {/* Use the Headline component */}
         <Section />
       </div>
     </>

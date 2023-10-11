@@ -1,16 +1,17 @@
-import { Headline } from "./Headline";
+//import { Headline } from "./Headline";
+import { Intro } from "./Intro";
 import "./Section.css";
+import { Tech } from "./Tech";
 
 export const Section = () => {
   return (
     <>
-      <Headline text="Featured Projects" level={1} />
       <div className="projectGrid">
-        <div className="projectCard">
-          <p>Group number 2 is making Project Card. We just adjusted the css</p>
+        <div className="project-intro">
+          <Intro />
         </div>
-        <div className="projectCard">
-          <p>Group number 2 is making Project Card. We just adjusted the css</p>
+        <div className="projecttech">
+          <Tech />
         </div>
         <div className="projectCard">
           <p>Group number 2 is making Project Card. We just adjusted the css</p>
