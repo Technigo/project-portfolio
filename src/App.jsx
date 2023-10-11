@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import { Header } from './components/Header';
 import { Introduction } from './components/Introduction';
 import { Technology } from './components/Technology';
+import { Projects } from './components/Projects';
 
 import happy from './components/happy.png'
 import pet from './components/pet.png'
@@ -70,6 +71,7 @@ export const App = () => {
       name={name}
       description={description}/>
       <Technology techDescription={techDescription}/>
+      <Projects projectItems={projectItems}/>
       <Header
         name={name}
         email={email}
