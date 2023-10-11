@@ -2,56 +2,78 @@ export const Words = (props) => {
     const containerStyle = {
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center', // Center align vertically
-      textAlign: 'center', // Center-align the text
+      alignItems: 'center',
+      textAlign: 'center',
+      marginBottom: '20px',
     };
   
     const titleStyle = {
-      marginBottom: '10px', // Add space below the title
-      fontSize: '14px', // Set the font size for the title to 14px
-      marginLeft: '-19%', // Move the title a bit to the left
+      marginBottom: '10px',
+      fontSize: '14px',
+      marginLeft: '-18%',
     };
   
     const imageStyle = {
-      width: '20%', // Adjust the image width as needed
+      width: '20%',
       height: 'auto',
-      marginLeft: '-10%', // Move the image a bit to the left
+      marginLeft: '-10%',
+    };
+  
+    const secondImageStyle = {
+      width: '20%',
+      height: 'auto',
+      marginLeft: '40%',
+      marginTop: '-13.40%',
     };
   
     const tagContainerStyle = {
       display: 'flex',
       flexWrap: 'wrap',
-      justifyContent: 'flex-start', // Align tags to the left
-      alignItems: 'flex-start', // Align tags to the top
-      marginTop: '10px', // Add space to the top of tags
-      marginLeft: '-21%', // Move the tags a bit to the left
+      justifyContent: 'center',
+      marginTop: '10px',
     };
   
     const tagItemStyle = {
       backgroundColor: 'black',
       color: 'white',
       padding: '4px 8px',
-      marginRight: '8px',
+      marginRight: '220px',
       marginBottom: '8px',
       fontSize: '14px',
     };
   
+    const firstTagItemStyle = {
+      ...tagItemStyle,
+      marginLeft: '260px',
+    };
+  
+    const secondTagItemStyle = {
+      ...tagItemStyle,
+      marginLeft: '-10px',
+    };
+  
     const descriptionStyle = {
-      fontSize: '10px', // Set the font size for the description to 10px
+      fontSize: '10px',
+      marginLeft: '35%',
+      marginRight: '40%',
+      textAlign: 'left',
     };
   
     return (
       <div style={containerStyle}>
-        <img src={props.wordsImage} alt="" style={imageStyle} />
+        <div style={titleStyle}><strong>My Words</strong></div>
+        <img src={props.wordsData[0].image} alt="" style={imageStyle} />
+        <img src={props.wordsData[1].image} alt="" style={secondImageStyle} />
         <div style={tagContainerStyle}>
-          {props.wordsTags.map((tag, index) => (
-            <div key={index} style={tagItemStyle}>
-              {tag}
-            </div>
-          ))}
+          <div style={firstTagItemStyle}>
+            {props.wordsData[0].tags}
+          </div>
+          <div style={secondTagItemStyle}>
+            {props.wordsData[1].tags}
+          </div>
         </div>
-        <div style={titleStyle}>{props.wordsTitle}</div> {/* Display the title */}
-        <div style={descriptionStyle}>{props.wordsDescription}</div> {/* Display the description */}
+        <div style={titleStyle}><strong>{props.wordsData[0].title}</strong></div>
+        <div style={descriptionStyle}>{props.wordsData[0].description}</div>
       </div>
     );
   };

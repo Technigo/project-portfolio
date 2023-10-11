@@ -17,6 +17,7 @@ import music from './components/music.png'
 import pizza from './components/pizza.png'
 import path from './components/path.png'
 import test from './test.jpg'
+import vatten from './vatten.jpg'
 
 export const App = () => {
   // Props for Header component
@@ -72,11 +73,30 @@ export const App = () => {
     },
   ];
 
-  // props for words component
-  const wordsImage = test
-  const wordsTags = ["october 2023"]
-  const wordsTitle = "What's your ambition? "
-  const wordsDescription = "You are all Front-End Developers now, but if you aspire to be a Fullstack Developer, that's great and we need to know. If you have a UX/design ambition, team-lead/product owner ambition, or anything else, write that down : I am Front-End Developer, but i aspire to be a Fullstack Developer. I want to develop all kind of program in my future, including web and especially, game."
+  // // props for words component
+  // const wordsImage = [test, vatten]
+  // const wordsTags = ["october 2023"]
+  // const wordsTitle = "What's your ambition? "
+  // const wordsDescription = "You are all Front-End Developers now, but if you aspire to be a Fullstack Developer, that's great and we need to know. If you have a UX/design ambition, team-lead/product owner ambition, or anything else, write that down : I am Front-End Developer, but i aspire to be a Fullstack Developer. I want to develop all kind of program in my future, including web and especially, game."
+
+// Data for Words component
+const wordsData = [
+  {
+    image: test,
+    tags: "october 2023",
+    title: "What's your ambition?",
+    description:
+      "You are all Front-End Developers now, but if you aspire to be a Fullstack Developer, that's great and we need to know. If you have a UX/design ambition, team-lead/product owner ambition, or anything else, write that down: I am a Front-End Developer, but I aspire to be a Fullstack Developer. I want to develop all kinds of programs in my future, including web and especially games.",
+  },
+  {
+    image: vatten,
+    tags: "october 2023",
+    title: "Skills",
+    description: "Don't hold back! Write down everything code-related that you have done, even if it's just a very small project in Java, or if you are interested in learning WordPress – add it to your skills. HTML, Javascript, React what i have done: https://roaring-halva-3e37f7.netlify.app additionally, i tried to make fan-made-client for a game. it was in Java. i am interested in learning everything, including WordPress or some type of social networking media."
+  }
+  // Add more items as needed
+];
+
 
   return (
     <form>
@@ -88,10 +108,7 @@ export const App = () => {
       <Projects projectItems={projectItems}/>
       <Divider imagePath={path} altText="Divider" width="30px" height="auto" count={5} />
       <Words 
-        wordsImage={wordsImage}
-        wordsTags={wordsTags}
-        wordsTitle={wordsTitle}
-        wordsDescription={wordsDescription}      
+        wordsData={wordsData}     
       />
       <Header
         name={name}
