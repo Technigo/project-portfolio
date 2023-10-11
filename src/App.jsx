@@ -1,5 +1,4 @@
-// App.jsx
-
+// App.js
 import React from 'react';
 import { Intro } from './components/Intro';
 import { Tech } from './components/Tech';
@@ -9,11 +8,14 @@ import { Header } from './components/Header';
 import { Introduction } from './components/Introduction';
 import { Technology } from './components/Technology';
 import { Projects } from './components/Projects';
+import { Words } from './components/Words'
+import Divider from './components/Divider'; // Import the Divider component
 
 import happy from './components/happy.png'
 import pet from './components/pet.png'
 import music from './components/music.png'
 import pizza from './components/pizza.png'
+import path from './components/path.png'
 
 export const App = () => {
   // Props for Header component
@@ -26,21 +28,21 @@ export const App = () => {
   // Props for Intro component
   const job = "Frontend Developer";
   const title = "I make web";
-  const description = "when i was little, i played with web. kids at that time are just thrown to the new virtual world called web. we were happy there and adventurous. while this journey, i wanted to remember that. i was willing to create things that i loved. we were communicating while making web and providing a safe place to each other. we all had a different situation and different interest, but because we could gather we could grow up together. i wanted to remember that, again, and continue my life at the same mood. because my whole journey is saving myself, i wanted to make others feel the same as me. we are still growing in some way, and we will do that together, with our own environment created by ourselves.";
+  const description = "when I was little, I played with web. Kids at that time were just thrown into the new virtual world called the web. We were happy there and adventurous. During this journey, I wanted to remember that. I was willing to create things that I loved. We were communicating while making the web and providing a safe place for each other. We all had different situations and different interests, but because we could gather, we could grow up together. I wanted to remember that, again, and continue my life in the same mood. Because my whole journey is saving myself, I wanted to make others feel the same as me. We are still growing in some way, and we will do that together, with our own environment created by ourselves.";
 
   // Props for Tech component
   const techTitle = "What I want to do while we work together";
   const techDescription = "HTML, CSS, JavaScript, React, React Hooks, Node.js, Web Accessibility, APIs, mob-programming, pair-programming, GitHub.";
 
   // Props for Project component
-  const projectTitle = "what i did while i learn";
+  const projectTitle = "What I did while I learned";
   const projectItems = [
     {
       name: "project happy thoughts",
       link: "https://github.com/catfooo/project-happy-thoughts-vite",
       projectLink: "https://cozy-khapse-25f81c.netlify.app",
       image: happy,
-      description: "i tried to gather happy thoughts from people. user can write things here while they are having happy moment...",
+      description: "I tried to gather happy thoughts from people. Users can write things here while they are having happy moments...",
       tags: ["React", "API"]
     },
     {
@@ -48,7 +50,7 @@ export const App = () => {
       link: "https://github.com/catfooo/project-survey-vite",
       projectLink: "https://astounding-bienenstitch-033bb0.netlify.app",
       image: pet,
-      description: "this project is from our pair programming! we worked for making idea specific for our pet we dreamed about...",
+      description: "This project is from our pair programming! We worked on making ideas specific for the pet we dreamed about...",
       tags: ["React", "pair-programming"]
     },
     {
@@ -56,7 +58,7 @@ export const App = () => {
       link: "https://github.com/catfooo/project-music-releases-vite",
       projectLink: "https://stunning-zuccutto-987374.netlify.app",
       image: music,
-      description: "this is my first react project! we learned fetching method and asked to use that for this project...",
+      description: "This is my first React project! We learned fetching methods and were asked to use them for this project...",
       tags: ["React", "API"]
     },
     {
@@ -64,7 +66,7 @@ export const App = () => {
       link: "https://github.com/Technigo/project-pizza/pull/30/commits/32096a773f72ebf0ede783b080f84137b5639eef",
       projectLink: "https://marvelous-bombolone-94bc37.netlify.app",
       image: pizza,
-      description: "it was my first javascript project and also my first technigo project! haha, i cant even remember how i felt at that time...",
+      description: "It was my first JavaScript project and also my first Technigo project! Haha, I can't even remember how I felt at that time...",
       tags: ["Javascript"]
     },
   ];
@@ -72,10 +74,13 @@ export const App = () => {
   return (
     <form>
       <Introduction 
-      name={name}
-      description={description}/>
+        name={name}
+        description={description}
+      />
       <Technology techDescription={techDescription}/>
       <Projects projectItems={projectItems}/>
+      <Words />
+      <Divider imagePath={path} altText="Divider" width="30px" height="auto" count={5} />
       <Header
         name={name}
         email={email}
@@ -98,11 +103,13 @@ export const App = () => {
         projectItems={projectItems}
       />
       <Contact 
-      email={email}
-      linkedinLink={linkedinLink}
-      githubLink={githubLink}
-      stackoverflowLink={stackoverflowLink}
+        email={email}
+        linkedinLink={linkedinLink}
+        githubLink={githubLink}
+        stackoverflowLink={stackoverflowLink}
       />
     </form>
   );
 };
+
+export default App;
