@@ -23,19 +23,18 @@ const Projects = () => {
     return (
         <div className="projects">
             <h2>Github Repositories</h2>
-
             {repos.map((project) => (
-                <li key={project.id}>
+                <div key={project.id} className="project-child">
                     <h3>{project.name}</h3>
                     <p>{project.description}</p>
                     <a href={project.url} target="_blank" rel="noopener noreferrer">
                         View on GitHub
                     </a>
-                </li>
+                </div>
             ))}
-
         </div>
     );
+
 };
 
 export default Projects;
