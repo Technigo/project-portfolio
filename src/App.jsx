@@ -36,11 +36,12 @@ export const App = () => {
   const projectTitle = "what i did while i learn";
   const projectItems = [
     {
-      name: "project happy",
+      name: "project happy thoughts",
       link: "https://github.com/catfooo/project-happy-thoughts-vite",
       projectLink: "https://cozy-khapse-25f81c.netlify.app",
       image: happy,
       description: "i tried to gather happy thoughts from people. user can write things here while they are having happy moment...",
+      tags: ["React", "API"]
     },
     {
       name: "project pet survey",
@@ -48,6 +49,7 @@ export const App = () => {
       projectLink: "https://astounding-bienenstitch-033bb0.netlify.app",
       image: pet,
       description: "this project is from our pair programming! we worked for making idea specific for our pet we dreamed about...",
+      tags: ["React", "pair-programming"]
     },
     {
       name: "project music releases",
@@ -55,6 +57,7 @@ export const App = () => {
       projectLink: "https://stunning-zuccutto-987374.netlify.app",
       image: music,
       description: "this is my first react project! we learned fetching method and asked to use that for this project...",
+      tags: ["React", "API"]
     },
     {
       name: "javascript pizzalia",
@@ -62,6 +65,7 @@ export const App = () => {
       projectLink: "https://marvelous-bombolone-94bc37.netlify.app",
       image: pizza,
       description: "it was my first javascript project and also my first technigo project! haha, i cant even remember how i felt at that time...",
+      tags: ["Javascript"]
     },
   ];
 
