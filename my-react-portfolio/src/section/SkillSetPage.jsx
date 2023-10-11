@@ -4,7 +4,7 @@ import { SkillSets } from "../components/SkillSetComponent/SkillSets";
 
 
 
-export const SkillSet = () => {
+export const SkillSetPage = () => {
     let headerText = "Skills";
 
 

@@ -4,8 +4,8 @@ import { ContactInfo } from './section/ContactInfo'
 import { FeatureProjects } from './section/FeatureProjects'
 import { Footer } from './section/Footer'
 import { FrontPage } from './section/FrontPage'
-import { MyWords } from './section/MyWords'
-import { SkillSet } from './section/SkillSetContainer'
+import { MyWordsPage } from './section/MyWordsPage'
+import { SkillSetPage } from './section/SkillSetPage'
 import { TechSkills } from './section/TechSkills'
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
       <section className="front-page"><FrontPage /></section>
       <section className="tech-skills"><TechSkills /></section>
       <section className="featured-projects"><FeatureProjects /></section>
-      <section className="my-words"><MyWords /></section>
-      <section className="skillSet-page"><SkillSet /></section>
+      <section className="my-words"><MyWordsPage /></section>
+      <section className="skillSet-page"><SkillSetPage /></section>
       <section className="contact-info"><ContactInfo /></section>
       <section className="footer"><Footer /></section>
     </>

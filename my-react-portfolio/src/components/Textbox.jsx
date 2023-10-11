@@ -1,10 +1,10 @@
 
 
-export const Textbox = ({text}) => {
+export const Textbox = ({ text }) => {
 
-  return (
-    <div className="textbox-wrapper">
-        <p>{text}</p>
-    </div>
-  )
+    return (
+        <div className="textbox-wrapper">
+            <p>{text}</p>
+        </div>
+    )
 }
