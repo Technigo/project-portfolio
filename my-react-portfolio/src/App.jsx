@@ -1,7 +1,7 @@
 
 import './App.css'
 import { ContactInfo } from './section/ContactInfo'
-import { FeatureProjects } from './section/FeatureProjects'
+import { FeatureProjectsPage } from './section/FeatureProjectsPage'
 import { Footer } from './section/Footer'
 import { FrontPage } from './section/FrontPage'
 import { MyWordsPage } from './section/MyWordsPage'
@@ -15,7 +15,7 @@ function App() {
     <>
       <section className="front-page"><FrontPage /></section>
       <section className="tech-skills"><TechSkills /></section>
-      <section className="featured-projects"><FeatureProjects /></section>
+      <section className="featured-projects"><FeatureProjectsPage /></section>
       <section className="my-words"><MyWordsPage /></section>
       <section className="skillSet-page"><SkillSetPage /></section>
       <section className="contact-info"><ContactInfo /></section>
