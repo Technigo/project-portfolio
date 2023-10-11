@@ -1,4 +1,6 @@
 import "./project-card.css";
+import demodark from "../../assets/demodark.svg";
+import githubdark from "../../assets/githubdark.svg";
 
 import { Tags } from "./Tags.jsx";
 
@@ -27,10 +29,12 @@ export const ProjectCard = ({
         </div>
         <div className="buttons">
           <button className="deployedBtn" href={deployedLink}>
+            <img src={demodark} alt="globe-icon-dark" />
             View Live
           </button>
-          <button className="GitBtn" href={gitLink}>
-            View Code
+          <button className="gitBtn" href={gitLink}>
+            <img src={githubdark} alt="github-icon-dark" />
+            View the code
           </button>
         </div>
       </div>
