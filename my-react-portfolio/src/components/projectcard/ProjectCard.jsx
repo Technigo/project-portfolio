@@ -30,7 +30,7 @@ export const ProjectCard = ({
         <div className="buttons">
           <button className="deployedBtn" href={deployedLink}>
             <img src={demodark} alt="globe-icon-dark" />
-            View Live
+            Live Demo
           </button>
           <button className="gitBtn" href={gitLink}>
             <img src={githubdark} alt="github-icon-dark" />
