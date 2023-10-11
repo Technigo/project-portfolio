@@ -16,6 +16,7 @@ import pet from './components/pet.png'
 import music from './components/music.png'
 import pizza from './components/pizza.png'
 import path from './components/path.png'
+import test from './test.jpg'
 
 export const App = () => {
   // Props for Header component
@@ -71,6 +72,10 @@ export const App = () => {
     },
   ];
 
+  // props for words component
+  const wordsImage = test
+  const wordsTags = ["october 2023"]
+
   return (
     <form>
       <Introduction 
@@ -79,8 +84,11 @@ export const App = () => {
       />
       <Technology techDescription={techDescription}/>
       <Projects projectItems={projectItems}/>
-      <Words />
       <Divider imagePath={path} altText="Divider" width="30px" height="auto" count={5} />
+      <Words 
+        wordsImage={wordsImage}
+        wordsTags={wordsTags}      
+      />
       <Header
         name={name}
         email={email}
