@@ -75,6 +75,8 @@ export const App = () => {
   // props for words component
   const wordsImage = test
   const wordsTags = ["october 2023"]
+  const wordsTitle = "What's your ambition? "
+  const wordsDescription = "You are all Front-End Developers now, but if you aspire to be a Fullstack Developer, that's great and we need to know. If you have a UX/design ambition, team-lead/product owner ambition, or anything else, write that down : I am Front-End Developer, but i aspire to be a Fullstack Developer. I want to develop all kind of program in my future, including web and especially, game."
 
   return (
     <form>
@@ -87,7 +89,9 @@ export const App = () => {
       <Divider imagePath={path} altText="Divider" width="30px" height="auto" count={5} />
       <Words 
         wordsImage={wordsImage}
-        wordsTags={wordsTags}      
+        wordsTags={wordsTags}
+        wordsTitle={wordsTitle}
+        wordsDescription={wordsDescription}      
       />
       <Header
         name={name}
