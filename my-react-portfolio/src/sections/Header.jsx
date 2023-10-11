@@ -1,4 +1,6 @@
+import './Header.css'
 import { Heading } from '/src/components/Heading.jsx';
+import arrowImage from '/src/assets/social-icons/arrow.svg'
 
 export const Header = () => {
 
@@ -11,6 +13,9 @@ export const Header = () => {
                 <h2>Hi, I'm Maria Pettersson</h2>
                 <Heading level={1} text="Frontend Developer" className="header-heading" />
                 <p>Maria is an exceptional developer lorem lorem</p>
+                <div className="arrow-container">
+                    <img src={arrowImage} alt="Animated Arrow" className="arrow" />
+                </div>
             </div>
         </header>
     );

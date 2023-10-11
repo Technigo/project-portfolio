@@ -1,0 +1,42 @@
+header {
+    position: relative;
+}
+
+.profile-img {
+    /* Positioning */
+    position: relative;
+    right: 230px;
+    bottom: 100px;
+  
+    width: 150px;
+    height: 150px;
+  
+    /*  Rounded corners */
+    border-radius: 50%;
+  
+    /* An outline on the circle */
+    border: 2px solid whitesmoke;
+  
+    /* Makes sure nothing sticks out of the circle */
+    overflow: hidden;
+  }
+  
+  .profile-img > img {
+    width: 100%;
+  }
+
+ 
+.arrow-container {
+    position: relative;
+    animation: moveUpDown 2s linear infinite;
+  }
+  
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); // Adjust the distance the arrow moves
+    }
+  }
+  
