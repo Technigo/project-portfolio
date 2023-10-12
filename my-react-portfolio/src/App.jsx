@@ -9,14 +9,15 @@ import TopSection from './components/TopSection'; // Import your TopSection comp
 
 function App() {
   return (
-    <div>
-      {/* Render your components here */}
+    <div className="App">
+    <div className="container">
       <TopSection />
       <TechSection />
       <MyProjects />
       <Presentation />
       <Skills />
       <Contact />
+    </div>
     </div>
   );
 }
