@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-import { ProjectCard } from  '../ProjectCard'
+import { ProjectCard } from  '../projectCard/ProjectCard'
 
 export const SecFeaturedProjects = () => {
   const [projects, setProjects] = useState([])
@@ -35,7 +35,6 @@ export const SecFeaturedProjects = () => {
     fetchProjects()
   }, [])
 
-  const randomConst = "Hello World"
   return (
     <>
     <div>
