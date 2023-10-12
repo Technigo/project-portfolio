@@ -4,7 +4,6 @@ import { FeaturedProjects } from "./components/Featured Projects/FeaturedProject
 import { MyWords } from "./components/My Words/MyWords.jsx";
 import { Skills } from "./components/Skills/Skills.jsx";
 import { ContactInfo } from "./components/ContactInfo/ContactInfo.jsx";
-import "./App.css";
 
 export const App = () => {
   return (

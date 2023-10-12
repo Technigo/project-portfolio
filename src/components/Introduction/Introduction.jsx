@@ -1,3 +1,5 @@
+import { MainHeadingBlue } from "../Headings/MainHeadings/MainHeadingBlue.jsx";
+import { SubHeading } from "../Headings/SubHeading.jsx";
 import profilePhoto from "../../assets/Profile-photo.jpg";
 import arrowIcon from "../../assets/Arrow.svg";
 import "./Introduction.css";
@@ -14,8 +16,8 @@ export const Introduction = () => {
           />
         </div>
         <div className="heading-wrapper">
-          <h3>Hi, I&apos;m Anna Robertsson</h3>
-          <h1>Frontend Developer</h1>
+          <SubHeading text={"Hi, I'm Anna Robertsson"} />
+          <MainHeadingBlue text={"Frontend Developer"} />
         </div>
         <div className="presentation-wrapper">
           <p>
@@ -26,12 +28,12 @@ export const Introduction = () => {
             in the technology field.
           </p>
         </div>
-        <img
-          src={arrowIcon}
-          className="arrow-icon"
-          alt="Icon of an arrow pointing down"
-        />
       </div>
+      <img
+        src={arrowIcon}
+        className="arrow-icon"
+        alt="Icon of an arrow pointing down"
+      />
     </div>
   );
 };
