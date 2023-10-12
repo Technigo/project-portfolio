@@ -33,7 +33,7 @@ export const FeatureProjectsPage = () => {
 
 
     return (
-        <div>
+        <div className="featured-page-wrapper">
             <Headline headerText={headerText} />
             <FeaturedProjects
                 repos={repos}

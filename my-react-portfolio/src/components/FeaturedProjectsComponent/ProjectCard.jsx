@@ -1,20 +1,18 @@
 
+import { TagComponent } from "../TagComponent";
 import { ProjectHeadline } from "./ProjectHeadline";
 
 export const ProjectCard = ({ repo }) => {
 
   return (
-    <div className="projectWrapper">
-      <div className='projectContainer'>
-        <img src="" />
-        <div className="projectDescription">
-          <ProjectHeadline repo={repo} />
-          <div className="projectDescription">
-            <p>{repo.description}</p>
-          </div>
-          <div className="project-tags"></div>
-          <div className="project-buttons"><button>test</button></div>
+    <div className="project-card-wrapper">
+      <img src="" />
+      <div className="project-description">
+        <ProjectHeadline repo={repo} />
+        <div className="project-tags">
+            <TagComponent tag={repo.topics} />
         </div>
+        <div className="project-buttons"><button>test</button></div>
       </div>
     </div>
   );

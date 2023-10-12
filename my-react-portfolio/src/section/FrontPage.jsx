@@ -8,7 +8,7 @@ export const FrontPage = () => {
 
     let mediumSizeHeader = "Hi, I'm Veronica Åström";
     let headerText = "Frontend Developer";
-    let text ="add info about my self here :)"
+    let text = "add info about my self here :)"
 
 
     return (
@@ -18,7 +18,7 @@ export const FrontPage = () => {
                 <Headline headerText={headerText} />
             </div>
             <div className="intropage-info">
-                <Textbox text={text}/>
+                <Textbox text={text} />
             </div>
         </>
     )
