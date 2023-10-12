@@ -1,9 +1,9 @@
 import "./tag.css";
 
-export const Tag = ({ tagText }) => {
+export const Tag = ({ tagText, className }) => {
     return (
-        <span className="tag-background">
+        <span className={`tag-background ${className}`}>
             <p className="tag-text">{tagText}</p>
         </span>
-    )
-}
+    );
+};

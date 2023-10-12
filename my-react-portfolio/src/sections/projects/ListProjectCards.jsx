@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import './projects.css';
 import { ProjectCard } from './ProjectCard';
 
+import repoImages from '/src/image-repo.json'; // Import the JSON file
+
 export const ListProjectCards = () => {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -15,12 +17,29 @@ export const ListProjectCards = () => {
                     throw new Error('Network response was not ok');
                 }
                 const data = await response.json();
-                setProjects(data.slice(0, 8));
+
+                // Filter repositories based on the names defined in the JSON file
+                const desiredRepoNames = repoImages.map((img) => img.repoName);
+                const filteredProjects = data.filter((project) =>
+                    desiredRepoNames.includes(project.name)
+                );
+
+                // Sort the filtered projects by creation date (most recent first)
+                filteredProjects.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+                // Match repositories with images based on the JSON data
+                const projectsWithImages = filteredProjects.map((project) => ({
+                    ...project,
+                    imageUrl: repoImages.find((img) => img.repoName === project.name)?.imageUrl,
+                }));
+
+                setProjects(projectsWithImages);
                 setLoading(false);
             } catch (err) {
                 setError(err);
             }
         }
+
         fetchData();
     }, []);
 
