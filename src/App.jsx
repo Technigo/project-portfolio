@@ -9,13 +9,13 @@ import "./App.css";
 
 export const App = () => {
   return (
-    <>
+    <div className="big-wrapper">
       <Intro />
       <Tech />
       <ProjectList />
       <Article />
       <Skills />
       <Contact />
-    </>
+    </div>
   );
 };
