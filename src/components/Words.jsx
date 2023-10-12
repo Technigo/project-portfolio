@@ -11,8 +11,8 @@ export const Words = (props) => {
       marginBottom: '10px',
       fontSize: '14px',
       marginLeft: '-18%',
-      background: 'none', // Remove background color
-      color: 'black', // Set text color to black
+      background: 'none',
+      color: 'black',
     };
   
     const imageStyle = {
@@ -25,7 +25,14 @@ export const Words = (props) => {
       width: '20%',
       height: 'auto',
       marginLeft: '40%',
-      marginTop: '-27.85%',
+      marginTop: '-63.25%',
+    };
+  
+    const thirdImageStyle = {
+      width: '20%',
+      height: 'auto',
+      marginLeft: 'X%', // Adjust X% as needed
+      marginTop: 'Y%', // Adjust Y% as needed
     };
   
     const tagContainerStyle = {
@@ -54,54 +61,55 @@ export const Words = (props) => {
       marginLeft: '-55px',
     };
   
-    const descriptionStyle = {
+    // Description styles for the first and second descriptions
+    const firstDescriptionStyle = {
       fontSize: '10px',
       marginLeft: '35%',
-      marginRight: '40%',
+      marginRight: '550px', // Move the second description to the right
+      textAlign: 'left',
+    };
+  
+    const secondDescriptionStyle = {
+      fontSize: '10px',
+      marginLeft: '60%',
+      marginRight: '200px',
       textAlign: 'left',
     };
   
     const secondTitleStyle = {
-      fontSize: '14px', // Adjust font size
-      marginLeft: '290px', // Move the second title to the right
+      fontSize: '14px',
+      marginLeft: '290px',
     };
-  
-    const secondDescriptionStyle = {
-        fontSize: '10px',
-        marginLeft: '60%', // Keep the original left margin
-        marginRight: '170px', // Add right margin to move the second description to the right
-        textAlign: 'left', // Align the second description to the right
-      };
-      
   
     return (
       <div style={containerStyle}>
         <div style={titleStyle}><strong>My Words</strong></div>
         <img src={props.wordsData[0].image} alt="" style={imageStyle} />
         <div style={tagContainerStyle}>
-          <div style={firstTagItemStyle}>
-            {props.wordsData[0].tags}
-          </div>
+          <div style={firstTagItemStyle}>{props.wordsData[0].tags}</div>
         </div>
-        {/* Display the title for the first set of words under the first tag */}
-        <div style={titleStyle}> {/* Apply the titleStyle */}
+        <div style={titleStyle}>
           <strong>{props.wordsData[0].title}</strong>
         </div>
-        <div style={descriptionStyle}>{props.wordsData[0].description}</div>
+        <div style={firstDescriptionStyle}>{props.wordsData[0].description}</div>
+        {/* Display the "bild" image under the first description */}
+        <img src={props.wordsData[2].image} alt="" style={imageStyle} />
+        <div style={tagContainerStyle}>
+          <div style={secondTagItemStyle}>{props.wordsData[2].tags}</div>
+        </div>
+        <div style={secondTitleStyle}>
+          <strong>{props.wordsData[2].title}</strong>
+        </div>
+        <div style={secondDescriptionStyle}>{props.wordsData[2].description}</div>
+        {/* Add margin to the second image */}
         <img src={props.wordsData[1].image} alt="" style={secondImageStyle} />
         <div style={tagContainerStyle}>
-          <div style={secondTagItemStyle}>
-            {props.wordsData[1].tags}
-          </div>
+          <div style={secondTagItemStyle}>{props.wordsData[1].tags}</div>
         </div>
-        {/* Display the title for the second set of words under the second tag */}
-        <div style={{ ...titleStyle, ...secondTitleStyle }}> {/* Apply both styles */}
+        <div style={{ ...titleStyle, ...secondTitleStyle }}>
           <strong>{props.wordsData[1].title}</strong>
         </div>
-        {/* Display the second description */}
-        <div style={{ ...descriptionStyle, ...secondDescriptionStyle }}>
-          {props.wordsData[1].description}
-        </div>
+        <div style={secondDescriptionStyle}>{props.wordsData[1].description}</div>
       </div>
     );
   };

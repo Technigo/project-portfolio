@@ -18,6 +18,7 @@ import pizza from './components/pizza.png'
 import path from './components/path.png'
 import test from './test.jpg'
 import vatten from './vatten.jpg'
+import bild from './bild.jpg'
 
 export const App = () => {
   // Props for Header component
@@ -73,12 +74,6 @@ export const App = () => {
     },
   ];
 
-  // // props for words component
-  // const wordsImage = [test, vatten]
-  // const wordsTags = ["october 2023"]
-  // const wordsTitle = "What's your ambition? "
-  // const wordsDescription = "You are all Front-End Developers now, but if you aspire to be a Fullstack Developer, that's great and we need to know. If you have a UX/design ambition, team-lead/product owner ambition, or anything else, write that down : I am Front-End Developer, but i aspire to be a Fullstack Developer. I want to develop all kind of program in my future, including web and especially, game."
-
 // Data for Words component
 const wordsData = [
   {
@@ -93,6 +88,13 @@ const wordsData = [
     tags: "october 2023",
     title: "Skills",
     description: "Don't hold back! Write down everything code-related that you have done, even if it's just a very small project in Java, or if you are interested in learning WordPress – add it to your skills. HTML, Javascript, React what i have done: https://roaring-halva-3e37f7.netlify.app additionally, i tried to make fan-made-client for a game. it was in Java. i am interested in learning everything, including WordPress or some type of social networking media."
+  },
+  {
+    image: bild,
+    tags: "october 2023",
+    title: "Experience",
+    description: "Add your two strongest, most relevant experiences. It can be a business area, area of responsibility, assignment, or title. If you can’t choose, add more experiences. i tried to gather how each individual think about certain situation and solve the problem based on people’s idea. i focused on people, not their outer situation or powerful group that has allowed to rule and determine all without any consent from ‘object’ they ‘rule’. i worked for various NGOs. i tried to keep doing my daily assignments by playing certain online computer game developed by two swedish college students for 15 years. because we players were allowed to use extensions to get better result, i learned java little to make things work automatic."
+
   }
   // Add more items as needed
 ];
