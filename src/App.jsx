@@ -3,33 +3,18 @@ import { HeaderText } from './components/Header';
 import { TechText } from './components/tech';
 import { Headline } from './components/Headline';
 import { Section } from './components/Section';
-import { SkillsText } from './components/skills'
+import { SkillsText } from './components/skills';
 import "./components/ProjectCard.module.css";
 import './App.css';
 import './index.css';
 
+
+// Import the JSON data directly
+import projectData from './projects.json';
+
 function App() {
-  const [repos, setRepos] = useState([]);
-  const githubUsername = 'isarobertini'; // Replace with the desired GitHub username
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=created&direction=desc`);
-
-        if (response.ok) {
-          const data = await response.json();
-          setRepos(data);
-        } else {
-          console.error('Failed to fetch data');
-        }
-      } catch (error) {
-        console.error('Error:', error);
-      }
-    }
-
-    fetchData();
-  }, [githubUsername]);
+  // Use the JSON data directly
+  const projects = projectData.projects;
 
   return (
     <>
@@ -37,13 +22,11 @@ function App() {
       <TechText />
       <Headline />
       <Section
-        repos={repos}
-        githubUsername={githubUsername}
+        projects={projects}
       />
       <SkillsText />
-
     </>
-  )
+  );
 }
 
 export default App;

@@ -1,25 +1,29 @@
+import React from 'react';
 
-import "./ProjectCard.module.css";
-
-export const ProjectCard = ({ repo }) => {
+export const ProjectCard = ({ project }) => {
   return (
     <div className="projectWrapper">
       <div className='projectContainer'>
-        <img src="https://imageio.forbes.com/blogs-images/forbestechcouncil/files/2019/01/canva-photo-editor-8-7.png?format=png&width=1200" height={200} />
+        <img src={project.image} height={200} alt="Project Image" />
         <div className="projectDescription">
-          <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-            {repo.name}
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            {project.name}
           </a>
-          <h2 className="project-title">{repo.name}</h2>
+          <h2 className="project-title">{project.name}</h2>
 
           <div className="readmeContent">
-            <p>{repo.description}</p>
+            <p>{project.description}</p>
           </div>
-          <div className="project-tags"></div>
+          <div className="project-tags">
+            {project.tags.map((tag, index) => (
+              <span key={index}>{tag}</span>
+            ))}
+          </div>
           <div className="project-buttons">
             <button>test</button>
             <button>test</button>
-            <button>test</button></div>
+            <button>test</button>
+          </div>
         </div>
       </div>
     </div>

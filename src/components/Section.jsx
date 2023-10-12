@@ -1,11 +1,11 @@
 import { ProjectCard } from "./ProjectCard"
 
-export const Section = ({ repos }) => {
+export const Section = ({ projects }) => {
     return (
         <section>
-            {repos.map((repo) => (
-                <div key={repo.id}>
-                    <ProjectCard repo={repo} />
+            {projects.map((project, index) => (
+                <div key={index}>
+                    <ProjectCard project={project} />
                 </div>
             ))}
         </section>
