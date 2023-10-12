@@ -3,10 +3,12 @@ import { BodyText } from "./Typo/BodyText"
 export const SkillsList = ({ list }) => {
 
     return (
-        <div>
+        <div className="skills-list">
             {list.map((item) => {
                 return(
-                <BodyText text={item} />
+                    <div key={item}>
+                        <BodyText text={item} />
+                    </div>
                 )
             })}
         </div>

@@ -1,9 +1,18 @@
 :root {
+  margin: 0px 16px; 
+  font-family: "Hind", sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aqua;
   /*VAD SKA MAN HA HÄR EGEEENTLIGEN?*/
+  /*VARFÖR ÄR DEN SÅ STOOOOOR?!?!?*/
 }
 
 *{
-  margin: 0px; 
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -24,16 +33,41 @@ h2 {
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
+}
+
+.arrow {
+  height: 30px;
+}
+
+/*NOT WORKING PROPERLY*/
+.line-container {
+  margin: 0 -20px;
+  width: 100%;
+  overflow: hidden; /* Hide any overflow */
+}
+
+.line-container img {
+  width: 100%;
+  object-fit: repeat; /* Repeat the image */
 }
 
 /*INTRODUCTION*/
 .introduction-section {
-  
+  padding: 64px 0px; 
+  display: flex;
+  flex-direction: column;
+  gap: 32px; 
 }
 .dark-h2-introduction {
   font-size: 32px;
+  color: blue;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .image-cropper {
@@ -41,6 +75,7 @@ h3 {
   height: 164px;
   overflow: hidden;
   border-radius: 50%;
+  
 }
 
 .image-cropper img {
@@ -53,9 +88,185 @@ h3 {
 /*TECH*/
 .tech-section {
   background-color: blue;
+  color: antiquewhite;
+
+  padding: 128px 16px;
+  margin: 0px -16px; 
+}
+
+.tech-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.headings-tech {
+  display: flex;
+  justify-content: center;
+}
+
+.tech-p {
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  font-size: 24px; 
+}
+
+/*FEATURED PROJECTS*/
+.featuredprojects-section {
+  display: flex;
+  flex-direction: column;
+  padding: 128px 16px;
+}
+
+.headings-featured-projects {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-list {
+  padding: 64px 0;
+}
+
+.projects-list-item {
+  list-style-type: none;
+  padding: 16px 0;
+
+}
+
+.project-img {
+  width: 100%;
+  border-bottom: solid 10px blue ;
+  border-left: solid 10px blue ;
+}
+
+.tag ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 4px;
+  padding: 2px 6px;
+  color: #FFF;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+} 
+
+.button {
+  display: inline-block;
+}
+
+.button a {
+  display: inline-block;
+  background-color: #F5F5F5;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-right: 12px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.button img {
+  height: 40px;
+}
+
+.button-content-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 
+/*ARTICLE SECTION*/
+.mywords-section {
+  margin: 0 -16px;
+  background-color: pink;
+}
+
+.myword-wrapper {
+  margin: 0 16px;
+}
+
+.article-img {
+  width: 100%;
+  border-bottom: solid 10px hotpink ;
+  border-left: solid 10px hotpink ;
+}
+
+.article-date {
+  display: inline;
+  padding: 2px 6px;
+  color: #FFF;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*SKILLS*/
+.skills-section {
+  margin: 0 -16px; 
+  background-color: bisque;
+}
+
+.skills-wrapper {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*LEtS TALK*/
+.letstalk-section {
+  margin: 128px 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px; 
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media-wrapper {
+  display: flex;
+  gap: 32px; 
+}
+
+
+/*FOOTER*/
+.footer {
+  margin: 0 -16px;
+  padding: 40px 0px;
+  position: relative;
+  overflow: hidden;
+  background-color: hotpink;
+}
+.moving-text {
+  white-space: nowrap;
+  animation: moveLeftToRight 10s linear infinite;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #FFF;
+}
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(100%);
+    /* Start from the right of the container. */
+  }
+  100% {
+    transform: translateX(-100%);
+    /* Move to the left of the container. */
+  }
+}
 
 
 

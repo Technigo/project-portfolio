@@ -10,13 +10,12 @@ export const ArticleCard = ( ) => {
 
     return (
         <div>
-            THIS IS THE CARD
             <ul>
                 {articles.map((article) => {
                  return (
                     <li key={article.id}>
-                        <img src={article.image} alt={article.imageAlt} />
-                        <p>{article.date}</p>
+                        <img className="article-img" src={article.image} alt={article.imageAlt} />
+                        <p className="article-date">{article.date}</p>
                         <SubHeading className={`dark-h3`} text={article.name}/>
                         <BodyText text={article.text}/>
                         <Button link={article.link} buttonName={`Read Article`} icon={`src/assets/button-icons/doc.svg`} iconAlt={`A document icon`}/>

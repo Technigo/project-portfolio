@@ -14,13 +14,17 @@ export const Introduction = () => {
 
     return (
         <section className="introduction-section">
+            <div className="image-wrapper">
+                <div className="image-cropper">
+                <img src="src/assets/profile-pic.jpg" alt="A picture of Vera Witting" />
+                </div>
+            </div>
+            <div className="headings-introduction">
             <SubHeading text={`Hello, I'm Vera Witting`}/>
             <MainHeading className={`dark-h2-introduction`} text={`Frontend Developer`}/>
-            <div className="image-cropper">
-            <img src="src/assets/profile-pic.jpg" alt="A picture of Vera Witting" />
             </div>
             <BodyText text={BodyContent} />
-            <img src="src/assets/elements/arrow.png" alt="" />
+            <img className="arrow" src="src/assets/elements/arrow.svg" alt="arrow" />
         </section>
     )
 }

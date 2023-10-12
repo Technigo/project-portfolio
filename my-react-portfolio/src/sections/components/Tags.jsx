@@ -1,13 +1,13 @@
-export const Tags = ({ tags, id }) => {
+export const Tags = ({ tags }) => {
 
     console.log("tags", tags)
 
     return(
-        <div>
+        <div className="tag">
             <ul>
                 {tags.map((tag) => {
                     return (
-                        <li className="tag" > {/*CAN I ADD A KEY??? HOW ELSE?!*/}
+                        <li className="tag" key={tag}> 
                             {tag}
                         </li>
                     )

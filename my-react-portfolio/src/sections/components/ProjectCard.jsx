@@ -20,17 +20,19 @@ export const ProjectCard = ({repos}) => {
 
     return (
         <div>
-            <ul>
+            <ul className="projects-list">
                 {filteredRepos.map((repo) => {
                     const repoImage = repoImages.find((img) => img.repoName === repo.name);
                     return (
-                        <li key={repo.id}>
-                            <img src={repoImage?.imageUrl} alt={repo.name} />
-                            <SubHeading text={repo.name} />
+                        <li key={repo.id} className="projects-list-item">
+                            <img className="project-img" src={repoImage?.imageUrl} alt={repo.name} />
+                            <SubHeading text={repoImage?.prettyName} />
                             <BodyText text={repo.description} />
-                            <Tags tags={repo.topics} id={repo.id}/>
-                            <Button buttonName={`Live Demo`} link={repo.homepage} icon={`src/assets/button-icons/live-demo.svg`} iconAlt={`Web icon`} />
-                            <Button buttonName={`View the Code`}link={repo.html_url} icon={`src/assets/button-icons/github.svg`} iconAlt={`GitHub logo`} />
+                            <Tags tags={repo.topics} />
+                            <div className="btn-wrapper-projects">
+                                <Button className={`demo-button`} buttonName={`Live Demo`} link={repo.homepage} icon={`src/assets/button-icons/live-demo.svg`} iconAlt={`Web icon`} />
+                                <Button className={`code-button`} buttonName={`View the Code`}link={repo.html_url} icon={`src/assets/button-icons/github.svg`} iconAlt={`GitHub logo`} />
+                            </div>
                         </li>
                     );
                 })}

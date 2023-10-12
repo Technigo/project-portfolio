@@ -9,8 +9,12 @@ export const Tech = () => {
 
     return (
         <section className="tech-section">
-            <MainHeading className={`light-h2`} text={`Tech`}/>
-            <BodyBold className={`tech-p`} text={TechText}/>
+            <div className="tech-wrapper">
+                <div className="headings-tech">
+                    <MainHeading className={`light-h2`} text={`Tech`}/>
+                </div>
+                <BodyBold className={`tech-p`} text={TechText}/>
+            </div>
         </section>
     )
 }  

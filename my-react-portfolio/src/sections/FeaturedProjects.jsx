@@ -33,7 +33,9 @@ export const FeaturedProjects = () => {
 
     return (
         <section className="featuredprojects-section">
-            <MainHeading className={`dark-h2`} text={`Featured Projects`}/>
+            <div className="headings-featured-projects">
+                <MainHeading className={`dark-h2`} text={`Featured Projects`}/>
+            </div>
             <ProjectCard repos={repos}/>
         </section>
     )

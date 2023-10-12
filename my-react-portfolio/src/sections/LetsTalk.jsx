@@ -12,11 +12,13 @@ export const LetsTalk = () => {
         <section className="letstalk-section">
             <MainHeading className={`dark-h2`} text={`Let's Talk!`}/>
             <div className="image-cropper">
-            <img src="src/assets/profile-pic.jpg" alt="A picture of Vera Witting" />
+                <img src="src/assets/profile-pic.jpg" alt="A picture of Vera Witting" />
             </div>
-            <SubHeading text={contactInfoName}/>
-            <SubHeading text={contactInfoPhone}/>
-            <SubHeading text={contactInfoMail}/>
+            <div className="info-wrapper">
+                <SubHeading text={contactInfoName}/>
+                <SubHeading text={contactInfoPhone}/>
+                <SubHeading text={contactInfoMail}/>
+            </div>
             <SocialMedia />
         </section>
     )
