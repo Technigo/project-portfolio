@@ -1,5 +1,5 @@
 import './Tech.css'
-import { Heading } from '/src/components/Heading.jsx';
+import { Heading } from '/src/components/typography/Heading.jsx';
 
 export const Tech = () => {
     const techText = "HTML, CSS, Flexbox, Grids, JavaScript, ES7, JSX, React, React Hooks, Node.js, Npm, Web Accessibility, APIs, mob-programming, pair-programming, GitHub."

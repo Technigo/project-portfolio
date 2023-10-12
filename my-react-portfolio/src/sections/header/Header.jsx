@@ -1,5 +1,5 @@
 import './Header.css'
-import { Heading } from '/src/components/Heading.jsx';
+import { Heading } from '/src/components/typography/Heading.jsx';
 import arrowImage from '/src/assets/social-icons/arrow.svg'
 
 export const Header = () => {

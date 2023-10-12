@@ -1,5 +1,4 @@
 import './Projects.css'
-import { Heading } from '/src/components/Heading.jsx';
 
 export const Projects = () => {
 
@@ -14,7 +13,7 @@ export const Projects = () => {
 
 import "./projects.css";
 import { useEffect, useState } from "react";
-import { Heading } from '/src/components/Heading.jsx';
+import { Heading } from '/src/components/typography/Heading.jsx';
 import { ProjectCard } from "./ProjectCard";
 
 const API = "https://api.github.com/users/mariateresepettersson/repos";

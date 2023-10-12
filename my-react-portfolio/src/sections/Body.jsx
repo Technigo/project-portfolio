@@ -1,12 +1,12 @@
 // Importing `useState` and `useEffect` hooks from "react" library
 import { useState, useEffect } from "react";
 
-import { Header } from './Header';
-import { Tech } from './Tech';
-import { Projects } from './Projects';
-import { Article } from './Article';
-import { Skills } from './Skills';
-import { Contact } from './Contact';
+import { Header } from './header/Header';
+import { Tech } from './tech/Tech';
+import { Projects } from './projects/Projects';
+import { Article } from './articles/Article';
+import { Skills } from './skills/Skills';
+import { Contact } from './contact/Contact';
 
 // Declaring a functional component named `Distributive`
 export const Body = () => {
