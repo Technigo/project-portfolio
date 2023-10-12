@@ -25,7 +25,6 @@ export const Contact = () => {
       </div>
       <button
         type="button"
-        role="back to top"
         onClick={scrollToTop}
         className="back"
         aria-label="Back to Top"
