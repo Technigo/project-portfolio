@@ -1,11 +1,9 @@
-// geberic linkbutton, import this in Links.jsx
+import "./LinkButton.css";
 
 export const LinkButton = ({ buttonText, url, icon }) => {
   const handleClick = () => {
     console.log(`Clicked ${buttonText}`);
     window.open(url, "_blank");
-    // Add your logic to open the provided URL
-    // For example: window.open(url);
   };
 
   return (

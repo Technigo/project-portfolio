@@ -1,11 +1,11 @@
 import "./Headline.css";
 
-export const Headline = ({ text, level }) => {
+export const Headline = ({ text, level, className }) => {
   const Tag = `h${level}`;
 
   return (
     <>
-      <Tag>{text}</Tag>
+      <Tag className={className}>{text}</Tag>
     </>
   );
 };

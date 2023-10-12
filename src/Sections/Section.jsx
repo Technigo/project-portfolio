@@ -1,5 +1,6 @@
 //import { Headline } from "./Headline";
 import { Intro } from "./Intro";
+import { Projects } from "./Projects";
 import "./Section.css";
 import { Tech } from "./Tech";
 
@@ -13,8 +14,8 @@ export const Section = () => {
         <div className="projecttech">
           <Tech />
         </div>
-        <div className="projectCard">
-          <p>Group number 2 is making Project Card. We just adjusted the css</p>
+        <div className="projects">
+          <Projects />
         </div>
       </div>
     </>
