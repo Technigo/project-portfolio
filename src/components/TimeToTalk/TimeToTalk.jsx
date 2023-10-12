@@ -5,7 +5,7 @@ export const TimeToTalk = () => {
         <section className="timetotalk-wrapper">
         <h1 className="h1-timetotalk">Let's talk</h1>
         <section className="profile-image">
-        <img src="./src/images/profilepic.jpg" alt="Profile picture of Jenny"></img>
+        <img src="./src/assets/images/profilepic.jpg" alt="Profile picture of Jenny" className="profile-img"></img>
         </section>
         <section className="contact-information">
             <h3>Jenny Larsen</h3>
