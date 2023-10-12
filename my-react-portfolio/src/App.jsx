@@ -1,18 +1,15 @@
-
-
 import './App.css'
+import { Header } from './Components/Header/Header'
 
 export const App = () => {
 
 
   return (
     <>
+   <main>
    
-      <h1>Vite + React</h1>
-  
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <Header />
+  </main>
     </>
   )
 }

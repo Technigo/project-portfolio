@@ -1,5 +1,5 @@
-export const MyPhoto = () => {
+export const Photo = ({path , altText, className}) => {
   return (
-<img src="./klaudia.png" alt="profile picture of Klaudia" />
+    <img src={path} alt={ altText} className={className} />
   )
 }
