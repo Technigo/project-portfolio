@@ -1,12 +1,9 @@
-// eslint-disable-next-line react/prop-types
-export const Tag = ({ tagItem }) => {
+import "./tag.css";
+
+export const Tag = ({ tagText, className }) => {
   return (
-    // HTMLS
-    // CSS3
-    // React
-    // Node
-    <div className="the-tag">{tagItem}</div>
-    // Live demo
-    // Github (Text: View the code)
+    <span className={`tag-background ${className}`}>
+      <p className="tag-text">{tagText}</p>
+    </span>
   );
 };

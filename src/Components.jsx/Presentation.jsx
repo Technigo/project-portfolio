@@ -1,3 +1,6 @@
+import { Headline } from "./Headlines";
+import "./Presentation.css";
+
 export const Presentation = () => {
   return (
     <div className="presentation">
@@ -7,7 +10,9 @@ export const Presentation = () => {
         I'm a beginner at coding, it's really hard, but at the same time it's
         super fun! I'm looking forward to keep learning new things.
       </p>
-      <img src="./src/pictures/me" alt="" />
+      <div className="image">
+        <img src="./src/pictures/me.jpg" alt="" />
+      </div>
     </div>
   );
 };
