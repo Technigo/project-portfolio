@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { HeaderText } from './HeaderComponents/HeaderText';
+
 
 export const SkillsText = () => {
     return (
         <div className='techContainer'>
-            <h1>Skills</h1>
-            <h2>here i will place the skill.
-            </h2>
+            <HeaderText
+                h1Text="Skills"
+                h2Text="Here I will write my skills."
+            />
         </div>
 
 

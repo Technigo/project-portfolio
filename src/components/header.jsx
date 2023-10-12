@@ -1,19 +1,21 @@
 import CvPic from '/CV_pic.jpg'
-import './headerStyle.css';
+import './HeaderComponents/headerStyle.css';
+import { HeaderText } from './HeaderComponents/HeaderText';
+import { HeaderImg } from './HeaderComponents/HeaderImg';
 
-export const HeaderText = () => {
+export const HeaderSection = () => {
     return (
-        <div className="presentationContainer">
-            <h2>Hi, I'm Isa Robertini</h2>
-            <h1>Frontend Developer</h1>
 
-            <div className='subPresentation'>
-                <img src={CvPic} className="CvPic" alt="Picture of Isa Robertini" />
-                <p>This is a long text about me This is a long text about me
-                </p>
-            </div>
-
+        <div className='HeaderSection'>
+            <p>im isa</p>
+            <HeaderText
+                h1Text="Frontend Developer"
+            />
+            <HeaderImg
+                src={CvPic}
+                alt="Picture of Isa Robertini"
+                pText="This is a long text about me This is a long text about me"
+            />
         </div>
-
-    )
+    );
 }

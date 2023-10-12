@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { HeaderText } from './components/Header';
+import { HeaderSection } from './components/Header';
 import { TechText } from './components/tech';
-import { Headline } from './components/Headline';
 import { Section } from './components/Section';
 import { SkillsText } from './components/skills';
 import "./components/ProjectCard.module.css";
 import './App.css';
 import './index.css';
+
+
 
 
 // Import the JSON data directly
@@ -18,9 +19,8 @@ function App() {
 
   return (
     <>
-      <HeaderText />
+      <HeaderSection />
       <TechText />
-      <Headline />
       <Section
         projects={projects}
       />
