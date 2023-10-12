@@ -30,9 +30,16 @@ h3 {
   line-height: normal;
 }
 
+.skills p {
+  color: white;
+}
+
+.footer p {
+  color: white;
+}
+
 /*------ Hello1 "header" -----*/
 header {
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -45,6 +52,7 @@ header {
 
 .name-title {
   grid-area: nametitle;
+  margin-top: 2px;
 }
 
 .profile-photo {
@@ -66,9 +74,10 @@ header {
   grid-column: intro /span 3;
 }
 
-/*.arrow {
-
-}*/
+.arrow {
+  display: flex;
+  justify-content: center;
+}
 
 /* ------ Tech2 secion ----- */
 .tech-wrap {
@@ -167,6 +176,7 @@ header {
   gap: 64px;
   background-color: #00473E;
   padding: 128px 338px;
+  color: white
 }
 
 .skills-wrap h1 {
@@ -186,7 +196,28 @@ header {
 }
 
 /* ----- Footer6 section ----- */
+
 .footer {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #EB5577;
+}
+
+.moving-text {
+  white-space: nowrap;
+  animation: moveLeftToRight 20s linear infinite;
+  font-family: Montserrat;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(100%);
+    /* Start from the right of the container. */
+  }
+
+  100% {
+    transform: translateX(-100%);
+    /* Move to the left of the container. */
+  }
 }

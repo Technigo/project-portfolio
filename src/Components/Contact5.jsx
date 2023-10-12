@@ -1,5 +1,6 @@
-//import React from 'react'
+
 import { ProfilePhoto } from "./Reusablecomponents/ProfilePhoto.jsx";
+import { SocialMedia } from "/src/Components/SocialMedia.jsx"
 
 export const Contact5 = () => {
     return (
@@ -9,6 +10,7 @@ export const Contact5 = () => {
             <p>Idah Collin <br />
                 idah_collin@hotmail.com
             </p>
+            <SocialMedia />
         </div>
     )
 }
