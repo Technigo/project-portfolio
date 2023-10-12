@@ -11,6 +11,7 @@ import { Projects } from './components/Projects';
 import { Words } from './components/Words'
 import Divider from './components/Divider'; // Import the Divider component
 import { Skills } from './components/Skills'
+import { Talk } from './components/Talk'
 
 import happy from './components/happy.png'
 import pet from './components/pet.png'
@@ -135,6 +136,11 @@ const wordsData = [
         wordsData={wordsData}     
       />
       <Skills title={skillsTitle} sections={skillsSections} />
+      <Talk 
+      name={name}
+      email={email}
+      job={job}
+      />
       <Header
         name={name}
         email={email}
