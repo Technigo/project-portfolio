@@ -21,15 +21,7 @@ export const FeaturedProjects = () => {
             }
 
             const rawData = await response.json();
-            // Destructuring the properties in the response, so that I only get the ones I need
-            const processedData = rawData.map(({ name, id, description, topics }) => ({
-                name,
-                id,
-                description,
-                topics,
-            }));
-
-            setProjectData(processedData);
+            setProjectData(rawData);
         } catch (error) {
             setError(error);
 
