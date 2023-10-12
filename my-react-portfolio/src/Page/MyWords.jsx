@@ -1,7 +1,10 @@
-import React from "react";
-
+import Headlines from "../Components/Headlines";
 const MyWords = () => {
-  return <div>MyWords</div>;
+  return (
+    <div>
+      <Headlines title="My Words" />
+    </div>
+  );
 };
 
 export default MyWords;

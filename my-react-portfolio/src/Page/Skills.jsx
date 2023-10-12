@@ -1,7 +1,11 @@
-import React from "react";
+import Headlines from "../Components/Headlines";
 
 const Skills = () => {
-  return <div>Skills</div>;
+  return (
+    <div>
+      <Headlines title="Skills" />
+    </div>
+  );
 };
 
 export default Skills;

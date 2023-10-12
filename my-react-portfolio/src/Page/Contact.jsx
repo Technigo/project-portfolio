@@ -1,7 +1,10 @@
-import React from "react";
-
+import Headlines from "../Components/Headlines";
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <div>
+      <Headlines title="Let's talk" />
+    </div>
+  );
 };
 
 export default Contact;

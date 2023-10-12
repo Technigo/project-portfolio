@@ -7,7 +7,7 @@ import Contact from "./Page/Contact";
 
 export const App = () => {
   return (
-    <div>
+    <div className="body">
       <Introduction />
       <Tech />
       <FeaturedProjects />
