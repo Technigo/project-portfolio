@@ -12,7 +12,7 @@ export const Bio = () => {
           className="profile-picture"
         />
         <div className="name-and-title">
-          <hi className="presentation">Hi, I'm Andrej Kavržić</hi>
+          <h1 className="presentation">Hi, I'm Andrej Kavržić</h1>
           <h2 className="profession">Frontend Developer</h2>
         </div>
         <p className="about-me">

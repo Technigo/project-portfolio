@@ -16,11 +16,20 @@ export const ArticleCard = ({
         articlePublished={monthPublished}
         className="article-month"
       />
-          <h3 className="article-title">{articleTitle}</h3>
-          <p className="article-intro">{articleIntro}</p>
-          <button className="readMoreBtn" href={articleLink} target="_blank" rel="noreferrer">
+      <h3 className="article-title">{articleTitle}</h3>
+      <p className="article-intro">{articleIntro}</p>
+      <button
+        className="readMoreBtn"
+        href={articleLink}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img src={readMore} alt="read-more-icon" />
+        <span className="btnText">Read article</span>
+      </button>
+      {/* <button className="readMoreBtn" href={articleLink} target="_blank" rel="noreferrer">
               <img src={readMore} alt="read-more-icon"/> Read article
-          </button>
+          </button> */}
     </div>
   );
 };
