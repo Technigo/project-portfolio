@@ -22,7 +22,7 @@ export const Introduction = () => {
           <div>
             <img
               className="profile-pic"
-              src="public/assets/dog.jpg"
+              src="public/dog.jpg"
               alt="Profile picture of Inna"
             />
           </div>
