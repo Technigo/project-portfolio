@@ -13,11 +13,9 @@ export const TimeToTalk = () => {
             <h3>jennymarikalarsen@gmail.com</h3>
         </section>
         <section className="contact-buttons">
-            <a href="https://www.linkedin.com/in/jenny-larsen-b51140219/">
-        <button role="link">LinkedIn</button>
+            <a href="https://www.linkedin.com/in/jenny-larsen-b51140219/"><img src="./src/assets/icons/linkedin=default.svg" alt="Clickable button that goes to Jenny's LinkedIn"></img>
              </a>
-             <a href="https://github.com/jennylarsen">
-        <button role="link" img src="./icons.github=default=svg">GitHub</button>
+             <a href="https://github.com/jennylarsen"><img src="./src/assets/icons/github=default.svg" alt="Clickable button that goes to Jenny's Github"></img>
              </a>
         </section>
         </section>
