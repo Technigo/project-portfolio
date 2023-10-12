@@ -1,12 +1,21 @@
-import { useState } from "react";
-import { ProjectList } from "./Components/ProjectList";
+import { ProjectList } from "./Components/FeaturedProjects/ProjectList";
+import { Intro } from "./Components/Intro/Intro";
+import { Tech } from "./Components/Tech/Tech";
+import { Article } from "./Components/Articles/Article";
+import { Skills } from "./Components/Skills/Skills";
+import { Contact } from "./Components/Contact/Contact";
 
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  return <ProjectList />;
-}
-
-export default App;
+export const App = () => {
+  return (
+    <>
+      <Intro />
+      <Tech />
+      <ProjectList />
+      <Article />
+      <Skills />
+      <Contact />
+    </>
+  );
+};

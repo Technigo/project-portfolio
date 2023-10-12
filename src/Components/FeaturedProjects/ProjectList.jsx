@@ -1,8 +1,7 @@
 //här mappar jag
+import React from "react";
 import { useEffect, useState } from "react";
 import { ProjectCard } from "./ProjectCard";
-
-import React from "react";
 
 export const ProjectList = () => {
   const [projectList, setProjectList] = useState([]);
