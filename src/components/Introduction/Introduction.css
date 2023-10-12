@@ -17,7 +17,7 @@
 }
 
 .presentation-wrapper {
-  font-family: Hind;
+  font-family: "Hind", sans-serif;
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -27,6 +27,17 @@
   width: 27px;
   height: 68px;
   margin: 32px auto 0;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @media (min-width: 744px) and (max-width: 1279px) {
