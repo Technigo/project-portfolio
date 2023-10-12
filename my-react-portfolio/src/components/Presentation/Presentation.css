@@ -1,8 +1,8 @@
 .presentation-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   background-color: white;
   padding: 4rem 1rem;
   color: #000;
@@ -14,16 +14,11 @@
   gap: 2rem;
 }
 
-.image-text-wrapper {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
 .presentation-image {
   margin-right: 20px;
   border-radius: 10.25rem;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  align-self: center;
 }
 
 .presentation-container h1 {
@@ -33,6 +28,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 0.5rem;
 }
 
 .presentation-container h3 {
@@ -42,11 +38,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  text-align: left;
-}
-
-.centered-image {
-  margin-top: 20px;
+  margin-top: 0.5rem;
 }
 
 h3 {
@@ -57,9 +49,11 @@ h3 {
   border-radius: 50%;
   width: 10.25rem;
   height: 10.25rem;
+  align-self: center;
 }
 
 .arrow {
   width: 1.6875rem;
   height: 4.25rem;
+  align-self: center;
 }
