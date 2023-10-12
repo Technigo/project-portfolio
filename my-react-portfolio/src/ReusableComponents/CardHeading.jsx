@@ -1,7 +1,7 @@
 
-export const CardHeading = ({ text }) => {
+export const CardHeading = ({ text, className }) => {
   return (
-    <h2>{text}</h2>
+    <h2 className={className}>{text}</h2>
   )
 }
 
