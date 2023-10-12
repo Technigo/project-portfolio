@@ -29,7 +29,7 @@ export default function Hero({ arrowRef }) {
           science as well 💻
         </p>
         <button className={styles.arrow} onClick={() => handleClick(arrowRef)}>
-          <img src="/icons/arrow.png" alt=" go the next section" />
+          <img src="/icons/arrow.svg" alt=" go the next section" />
         </button>
       </div>
     </section>

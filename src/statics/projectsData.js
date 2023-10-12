@@ -37,7 +37,7 @@ export const projectsData = [
     text: "I made this site out of my love for Berlin. It collects news about Berlin.",
     skills: ["HTML", "CSS"],
     gitUrl: "https://github.com/sansan-sakura/project-news-site",
-    demoUrl: "https://tubular-truffle-789263.netlify.app",
+    demoUrl: "https://tourmaline-cendol-e09256.netlify.app/",
   },
   {
     imagePath: "/images/survey.png",
