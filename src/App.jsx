@@ -10,6 +10,7 @@ import { Technology } from './components/Technology';
 import { Projects } from './components/Projects';
 import { Words } from './components/Words'
 import Divider from './components/Divider'; // Import the Divider component
+import { Skills } from './components/Skills'
 
 import happy from './components/happy.png'
 import pet from './components/pet.png'
@@ -99,6 +100,27 @@ const wordsData = [
   // Add more items as needed
 ];
 
+ // Define data for Skills component
+ const skillsTitle = "Skills"; // Title for the Skills section
+ const skillsSections = [
+   {
+     name: "Code",
+     items: ["HTML", "CSS", "Javascript", "React", "GitHub"],
+   },
+   {
+     name: "Toolbox",
+     items: ["Postman", "Figma", "Slack"],
+   },
+   {
+     name: "Upcoming",
+     items: ["Node.js"],
+   },
+   {
+     name: "More",
+     items: ["Agile Methodology"],
+   },
+ ];
+
 
   return (
     <form>
@@ -112,6 +134,7 @@ const wordsData = [
       <Words 
         wordsData={wordsData}     
       />
+      <Skills title={skillsTitle} sections={skillsSections} />
       <Header
         name={name}
         email={email}
