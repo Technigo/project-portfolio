@@ -54,13 +54,16 @@ color: #000000;
 }
 .container {
   max-width: 1280px; /* Set your desired maximum width */
+  height: auto;
+  padding: 128px 0;
   margin: 0 auto; /* Center the container horizontally */
   padding: 0 20px; /* Add some padding to the sides for spacing */
 }
 .top-section {
   width: 1280px;
-  height: 300px;
-  padding: 332px 0 64px 336px; /* Adjust left padding to 336px */
+  height: auto;
+  padding: 128px 0;
+  height: 400px;
   background-color: #FFFFFF;
   display: flex; /* Enable flexbox layout */
   align-items: center; /* Center content horizontally */
@@ -101,23 +104,28 @@ color: #000000;
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
-  text-align: center; /* Center text horizontally */
+  text-align: left; /* Center text horizontally */
   color: black;
+  width: 600px;
 }
 
+.image-paragraph-section {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Add some space between the image and the paragraph */
+}
 .image-another-class {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-top: 20px;
 }
 
 
 .tech {
   width: 1280px;
+  padding: 128px 0;
   height: 980px;
   top: 982px;
-  padding: 0px 128px 0px 230px; /* Removed the commas and changed to one comma */
   background-color: blue;
   display: flex;
   flex-direction: row;
@@ -139,7 +147,7 @@ color: #000000;
   height: 100px;
 }
 
-.my-projects {
+.centered-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -169,16 +177,27 @@ color: #000000;
 }
 
 
-
 .project-techniques {
-  width: 251px;
-  height: 24px;
   background-color: #000000;
-  color: white;
-  padding: 2px;
+  color: #FFF;
+  font: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  gap: 6px; /* Add a 6px gap between techniques */
+  flex-wrap: wrap;
 }
 
-
+.technique-box {
+  background-color: #000;
+  color: #FFF;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 4px; /* Add right margin for the 4px gap between words */
+  margin-bottom: 4px; /* Add bottom margin for the 4px gap between lines */
+}
 .btn-live,
 .btn-view {
   /* Button Styles */
@@ -243,17 +262,33 @@ color: #000000;
 
 
   .skills {
-    width: 1280px;
+  width: 1280px;
   height: auto;
-  padding: 128px 338px;
+  padding: 128px 0;
   background-color: #0B24F5;
   display: flex;
   align-items: flex-start;
-  gap: 64px;
   justify-content: space-between;
-    color: white;
+  flex-direction: column;
   }
-  
+  .skills-header {
+    color: #FFF;
+    font: Montserrat;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 98px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 647px;
+    margin-bottom: 128px;
+  }
+  .skills-columns {
+    display: flex;
+    gap: 64px;
+    flex-direction: row; /* Set to row for columns in a row */
+    width: auto; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+  }
   .skills-column {
     display: flex;
     flex-direction: column;
@@ -261,6 +296,16 @@ color: #000000;
     gap: 16px;
     flex: 1;
     color: white;
+    flex: 1;
+    margin-left: 336px; 
+  }
+  
+  .skills-column ul {
+    list-style: none;
+  }
+  
+  .skills-column ul li {
+    margin-bottom: 8px;
   }
   
   .code-header {
@@ -290,24 +335,16 @@ color: #000000;
     color: white;
   }
   
-  .skills-header {
-    color: #FFF;
-    text-align: center;
-  font: Montserrat;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  }
-  
   .skills-item {
     color: #FFF;
-font: Hind;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
+  
+ 
   
   .contact {
     width: 1512px;
@@ -348,4 +385,20 @@ line-height: normal;
     color: black;
   }
   
+  .contact-list {
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+    list-style: none;
+  }
   
+  .contact-link {
+    text-align: center; /* Center the icon and text vertically */
+  }
+  
+  .contact-link svg {
+    transition: fill 0.3s; /* Add a transition effect for the fill property */
+  }
+  
+  .contact-link:hover svg {
+    fill: #000; /* Set the color to black on hover */
+  }

@@ -39,7 +39,7 @@ function Skills() {
     <div className="skills">
       <h2 className="skills-header">Skills</h2>
       <div className="skills-columns">
-        <div className="skills-column code">
+        <div className="skills-column">
           <h3 className="code-header">Code</h3>
           <ul>
             {skillsList.map((item, index) => (
@@ -50,7 +50,7 @@ function Skills() {
           </ul>
         </div>
   
-        <div className="skills-column toolbox">
+        <div className="skills-column">
           <h3 className="toolbox-header">Toolbox</h3>
           <ul>
             {toolbox.map((item, index) => (
@@ -61,7 +61,7 @@ function Skills() {
           </ul>
         </div>
   
-        <div className="skills-column more">
+        <div className="skills-column">
           <h3 className="more-header">More</h3>
           <ul>
             {more.map((item, index) => (
