@@ -1,4 +1,17 @@
-import { useState } from 'react'
+// import { useState, useEffect } from 'react'
+import { Intro } from "./Sections/Introduction/Intro";
+
+export const App = () => {
+  return (
+    <main>
+      <Intro />
+    </main>
+  );
+};
+
+export default App;
+
+/*import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -33,3 +46,4 @@ function App() {
 }
 
 export default App
+*/
