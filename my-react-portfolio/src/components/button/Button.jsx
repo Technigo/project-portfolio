@@ -19,3 +19,11 @@ export const Button = ({ icon, label, link}) => {
     </button>
   );  
 };
+
+{/* HOW TO USE in component
+     <Button
+        icon="icon.png" // Replace with icon path
+        label="Visit Example.com"
+        link="https://www.example.com"
+      />
+*/}
