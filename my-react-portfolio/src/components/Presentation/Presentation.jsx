@@ -1,31 +1,26 @@
 import React from 'react';
+import { Headline } from '../Headline/Headline';
+import { Image } from '../Image/Image';
+import avatar from './assets/avatar.png';
 import './Presentation.css';
-
-// const Presentation = ({ headlineText, contentText }) => (
-//   <div className="presentation">
-//     <h1 className="headline">{headlineText}</h1>
-//     <p className="content">{contentText}</p>
-//   </div>
-// );
-
-// export default Presentation;
-
-
-
-// export const Presentation = () => {
-//   return (
-//     <div>Presentation</div>
-//   )
-// }
 
 export const Presentation = () => {
   return (
     <div className="presentation-container">
-        <img src="top_image.jpg" alt="Top Image" className="top-image"/>
-        <h3>Hi, i'm Manne Johansson</h3>
-        <h1>Frontend Developer</h1>
-        <p className="small-text">Lorem ipsum</p>
-        <img src="bottom_image.jpg" alt="Bottom Image" className="bottom-image"/>
+        <Image src={avatar} alt="Avatar" className="avatar"/>
+        <Headline className="headline" text="Hi, i'm Manne Johansson" level={3} />
+        <Headline className="headline" text="Frontend Developer" level={1} />
+        <p>Lorem ipsum</p>
+        <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 68">
+            <path 
+            d="M24 23.5L14.5 33M14.5 33L5 23.5M14.5 33L14.5 3" 
+            stroke="#FF4575" 
+            strokeWidth="6" 
+            strokeLinecap="square" 
+            strokeLinejoin="round"
+            />
+        </svg>
     </div>
   );
 }
+

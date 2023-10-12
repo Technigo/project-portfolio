@@ -11,21 +11,6 @@ import { Tech } from './components/Tech/Tech'
 import React from 'react'
 
 
-// export const App = () => {
-//   return (
-//     <>
-//     <div><Presentation /></div>
-//     <div><Tech /></div>
-//     <div><Projects /></div>
-//     <div><Articles /></div>
-//     <div><Skills /></div>
-//     <div><Contact /></div>
-//     <div><Footer /></div>
-
-//     </>
-//   )
-// }
-
 export const App = () => {
   return (
     <div className="app-container">

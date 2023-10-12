@@ -1,8 +1,16 @@
 import React from 'react';
+import { Headline } from '../Headline/Headline';
+import ProjectsData from '../../../projects.json';
+import { ProjectCard } from '../ProjectCard/ProjectCard';
 import './Projects.css';
 
 export const Projects = () => {
   return (
-    <div>Projects</div>
-  )
+    <div className="projects-container">
+    <Headline className="headline" text="Featured projects" level={1} />
+      {ProjectsData.projects.map(project => (
+        <ProjectCard key={project.name} project={project} />
+      ))}
+    </div>
+  );
 }
