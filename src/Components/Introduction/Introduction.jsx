@@ -7,31 +7,24 @@ export const Introduction = () => {
 
   return (
     <section className="intro-section">
-      {/* ------------------------------------- */}
       <div className="info-wrapper">
-        {/* ------------------------------------- */}
-        <div className="name-summary-box">
-          <h3>Hi, Im Inna Kokic</h3>
+        <img
+          className="profile-pic"
+          src="/assets/example2.png"
+          alt="Profile picture of Inna"
+        />
+        <div className="name-headline-wrapper">
+          <h3 className="my-name">Hi, Im Inna Kokic</h3>
+
           <MainHeading
             className={"heading-text intro"}
             text={"Frontend Developer"}
           />
         </div>
-        {/* ------------------------------------- */}
-        <div className="pic-text-box">
-          <div>
-            <img
-              className="profile-pic"
-              src="public/dog.jpg"
-              alt="Profile picture of Inna"
-            />
-          </div>
-          <p>{introText}</p>
+        <p className="introText">{introText}</p>
+        <div className="arrow bounce">
+          {/* <img src={images[currentImage]} alt="down arrow icon" /> */}
         </div>
-        {/* ------------------------------------- */}
-      </div>
-      <div className="arrow">
-        <img src="public/assets/Arrow.svg" alt="down arrow icon" />
       </div>
     </section>
   );

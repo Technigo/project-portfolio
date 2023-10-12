@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { MainHeading } from "../MainHeading/MainHeading";
-// import repoImages from "/src/RepoImages.json";
 import "./FeaturedProjects.css";
 
 export const FeaturedProjects = () => {
@@ -71,7 +70,7 @@ export const FeaturedProjects = () => {
                 <button className="icon-button github">
                   <img
                     className="icon"
-                    src="public/assets/Live Demo.svg"
+                    src="/assets/Live Demo.svg"
                     alt="github icon"
                   />
                   Live demo
@@ -82,7 +81,7 @@ export const FeaturedProjects = () => {
                 <button className="icon-button github">
                   <img
                     className="icon"
-                    src="public/assets/github.svg"
+                    src="/assets/github.svg"
                     alt="github icon"
                   />
                   View the code

@@ -17,7 +17,7 @@ export const MyWords = () => {
           <button className="icon-button read-article">
             <img
               className="icon"
-              src="public/assets/ReadArticle.svg"
+              src="/assets/ReadArticle.svg"
               alt="github icon"
             />
             Read Article
@@ -30,7 +30,7 @@ export const MyWords = () => {
           <button className="icon-button read-article">
             <img
               className="icon"
-              src="public/assets/ReadArticle.svg"
+              src="/assets/ReadArticle.svg"
               alt="github icon"
             />
             Read Article
@@ -43,7 +43,7 @@ export const MyWords = () => {
           <button className="icon-button read-article">
             <img
               className="icon"
-              src="public/assets/ReadArticle.svg"
+              src="/assets/ReadArticle.svg"
               alt="github icon"
             />
             Read Article
@@ -56,7 +56,7 @@ export const MyWords = () => {
           <button className="icon-button read-article">
             <img
               className="icon"
-              src="public/assets/ReadArticle.svg"
+              src="/assets/ReadArticle.svg"
               alt="github icon"
             />
             Read Article
