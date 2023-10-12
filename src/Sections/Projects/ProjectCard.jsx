@@ -1,9 +1,9 @@
 import "./projects.css";
-import { Tag } from "../../Reusablecomponents/Typography/Tag.jsx";
 //import { Button } from "../../Reusablecomponents/FormElements/Button.jsx";
 import repoImages from "./repoImages.json";
 import { SubHeading } from "../../ReusableComponents/Typography/SubHeading.jsx";
 import { ImageComponent } from "../../ReusableComponents/ImageElements/ImageComponent";
+import { Tag } from "../../Reusablecomponents/Typography/Tag.jsx";
 
 export const ProjectCard = ({ repositories }) => {
     const filteredRepos = repositories.filter((repo) => {
