@@ -19,8 +19,8 @@ Welcome to my personal portfolio! I'm [Huadan Zhu], a [Full-Stack/Front-End] Dev
 
 ## Project Setup
 `npm i && npm run dev`
-`npm react-scroll`
-`npm react-typing-effect`
+`npm i react-scroll`
+`npm i react-typing-effect`
 
 ## Contact
 I'm always open to new opportunities and collaborations. Feel free to reach out to me through the following channels:

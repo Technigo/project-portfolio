@@ -33,28 +33,34 @@ export const About = () => {
       >
         <img src={music} alt="music record jazz" />
       </div>
-      <h3 className="miko-name">👋 Hi! My name is Huadan Zhu</h3>
-      <h1 className="developer">
-        <ReactTypingEffect
-          text={[" Full-Stack Developer", "Front-end Developer"]}
-          speed="100"
-          typingDelay="200"
-          eraseDelay="200"
-        />
-      </h1>
-      <img src={miko} alt="Huadan's image" />
-      <p className="place">Based in Stockholm, Sweden.</p>
-      <article className="introduction">
-        Huadan is a talented developer who is embarking on a career transition
-        from the field of HRM to web development. With a master's degree in HRM
-        and seven years of experience in human resources management, I have
-        developed strong skills in adaptability, a growth mindset, and the
-        confidence to tackle new challenges. As a web developer, I am excited to
-        leverage these qualities to solve complex problems, continue exploring
-        new skills, and further improve as a developer. My background in HRM
-        provides me with a unique perspective that I believe will make a
-        positive contribution to the world of web development.
-      </article>
+      <section className="name-developer-wrapper">
+        <h3 className="miko-name">👋 Hi! My name is Huadan Zhu</h3>
+        <h1 className="developer">
+          <ReactTypingEffect
+            text={[" Full-Stack Developer", "Front-end Developer"]}
+            speed="100"
+            typingDelay="200"
+            eraseDelay="200"
+          />
+        </h1>
+      </section>
+      <section className="about-main-wrapper">
+        <div className="img_place_container">
+          <img src={miko} alt="Huadan's image" />
+          <p className="place">Based in Stockholm, Sweden.</p>
+        </div>
+        <article className="introduction">
+          Huadan is a talented developer who is embarking on a career transition
+          from the field of HRM to web development. With a master's degree in
+          HRM and seven years of experience in human resources management, I
+          have developed strong skills in adaptability, a growth mindset, and
+          the confidence to tackle new challenges. As a web developer, I am
+          excited to leverage these qualities to solve complex problems,
+          continue exploring new skills, and further improve as a developer. My
+          background in HRM provides me with a unique perspective that I believe
+          will make a positive contribution to the world of web development.
+        </article>
+      </section>
       <div className="contact-top-icons">
         <ContactIcon />
       </div>
