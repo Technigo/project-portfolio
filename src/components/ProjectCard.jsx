@@ -2,7 +2,9 @@ import React from 'react';
 
 export const ProjectCard = ({ project }) => {
   return (
+
     <div className="projectWrapper">
+
       <div className='projectContainer'>
         <img src={project.image} height={200} alt="Project Image" />
         <div className="projectDescription">

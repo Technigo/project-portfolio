@@ -7,7 +7,7 @@ export const HeaderSection = () => {
     return (
 
         <div className='HeaderSection'>
-            <p>im isa</p>
+            <h2>Hi! I'm Isa Robertini</h2>
             <HeaderText
                 h1Text="Frontend Developer"
             />

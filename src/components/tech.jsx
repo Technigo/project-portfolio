@@ -15,7 +15,5 @@ export const TechText = () => {
 
         </div>
 
-
-
     )
 }

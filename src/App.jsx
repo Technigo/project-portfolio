@@ -3,7 +3,7 @@ import { HeaderSection } from './components/Header';
 import { TechText } from './components/tech';
 import { Section } from './components/Section';
 import { SkillsText } from './components/skills';
-import "./components/ProjectCard.module.css";
+
 import './App.css';
 import './index.css';
 

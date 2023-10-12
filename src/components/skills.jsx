@@ -12,6 +12,5 @@ export const SkillsText = () => {
         </div>
 
 
-
     )
 }
