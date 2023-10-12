@@ -24,8 +24,8 @@ export const ProjectCard = ({ repos }) => {
                                     <p>{repo.description} </p>
                                     <Tags tags={repo.topics} />
                                     <div className="buttons-container">
-                                        <Button buttonName={`Live Demo`} link={repo.homepage} icon={`src/assets/livedemo.svg`} iconAlt={`Web icon`} />
-                                        <Button buttonName={`View the Code`} link={repo.html_url} icon={`src/assets/github.svg`} iconAlt={`GitHub logo`} />
+                                        <Button buttonName={`Live Demo`} link={repo.homepage} icon={`public/assets/livedemo.svg`} iconAlt={`Web icon`} />
+                                        <Button buttonName={`View the Code`} link={repo.html_url} icon={`public/assets/github.svg`} iconAlt={`GitHub logo`} />
                                     </div>
                                 </div>
                             </div>
