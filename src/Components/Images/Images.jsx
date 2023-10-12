@@ -5,7 +5,7 @@ export const Images = () => {
     <div>
       <img
         className="butterfly"
-        src="./src/assets/butterfly.jpg"
+        src="public/assets/butterfly.jpg"
         alt="Image of butterfly"
       />
     </div>

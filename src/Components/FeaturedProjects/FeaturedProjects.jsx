@@ -71,7 +71,7 @@ export const FeaturedProjects = () => {
                 <button className="icon-button github">
                   <img
                     className="icon"
-                    src="./src/assets/Live Demo.svg"
+                    src="public/assets/Live Demo.svg"
                     alt="github icon"
                   />
                   Live demo
@@ -82,7 +82,7 @@ export const FeaturedProjects = () => {
                 <button className="icon-button github">
                   <img
                     className="icon"
-                    src="./src/assets/github.svg"
+                    src="public/assets/github.svg"
                     alt="github icon"
                   />
                   View the code

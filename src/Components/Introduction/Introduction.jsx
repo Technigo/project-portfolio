@@ -22,7 +22,7 @@ export const Introduction = () => {
           <div>
             <img
               className="profile-pic"
-              src="./src/assets/dog.jpg"
+              src="public/assets/dog.jpg"
               alt="Profile picture of Inna"
             />
           </div>
@@ -31,7 +31,7 @@ export const Introduction = () => {
         {/* ------------------------------------- */}
       </div>
       <div className="arrow">
-        <img src="./src/assets/Arrow.svg" alt="down arrow icon" />
+        <img src="public/assets/Arrow.svg" alt="down arrow icon" />
       </div>
     </section>
   );
