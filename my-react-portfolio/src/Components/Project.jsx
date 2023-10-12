@@ -1,12 +1,15 @@
 /* eslint-disable react/prop-types */
+import { Images } from "./Images";
+import { Tags } from "./Tags";
 import { Buttons } from "./Buttons";
 
 export const Project = ({ name, description, tags, homepage, url }) => {
   return (
     <div className="project-card">
-      <h3>{name}</h3>
+      <Images />
+      <h3>{name[0].toUpperCase()+name.replace("-", " ").slice(1)}</h3>
       <p>{description}</p>
-      <div className="tags">{tags}</div>
+      <Tags tags={tags} />
       <Buttons homepage={homepage} url={url}/>
     </div>
   )

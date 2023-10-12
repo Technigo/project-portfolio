@@ -1,5 +1,5 @@
 export const Buttons = ({ homepage, url }) => {
-        return (
+    return (
         <div className="buttons">
             <button type="button" className="live-demo button" onClick={window.location.href = homepage}>
                 <span className="button-icon">
