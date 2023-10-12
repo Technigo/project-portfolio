@@ -1,0 +1,19 @@
+.banner {
+    width: 100%; /* Make it full width or set a specific width */
+    overflow: hidden; /* Hide the overflowing content */
+  }
+  
+  .scrolling-text {
+    white-space: nowrap; /* Prevent the text from wrapping to the next line */
+    animation: marquee 10s linear infinite; /* Configure the scrolling animation */
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%); /* Start offscreen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move offscreen to the left */
+    }
+  }
+  

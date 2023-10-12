@@ -15,7 +15,7 @@ export const ListProjectCards = () => {
                     throw new Error('Network response was not ok');
                 }
                 const data = await response.json();
-                setProjects(data.slice(0, 5));
+                setProjects(data.slice(0, 8));
                 setLoading(false);
             } catch (err) {
                 setError(err);
