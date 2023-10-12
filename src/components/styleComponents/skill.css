@@ -1,0 +1,102 @@
+.skills-container{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Define the animation keyframes */
+@keyframes moveUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); } 
+  }
+  
+  /* Apply the animation to the image */
+  .animated-arrow {
+    width:130px;
+    height:120px;
+    animation: moveUpDown 2s ease-in-out infinite; 
+    position: absolute;
+    left:0.3rem;
+  }
+
+  /* Skill title h1 */
+.skills-container h1{
+    font-size: 55px;
+    color:#445D48;
+    font-family: "Caveat-Bold";
+    margin:20px 0 10px 0;
+}
+
+.skill-code,
+.skill-tool,
+.skill-more,
+.skill-upcoming{
+  margin:0;
+  width:100%;
+  text-align: center;
+}
+.skills-container h3{
+    font-size: 30px;
+    color:#FAF1E4;
+    background-color:#96C291;
+    width:auto;
+    display: inline-flex;
+}
+
+.skills-list{
+    padding-right: 2rem;
+}
+.skills-list li{
+    list-style-type: none;
+    font-size:20px;
+    font-weight: 400;
+    line-height: 1.5rem;  
+}
+.skills-list li:hover{
+    text-decoration: underline;
+}
+.wavy{
+    width:100%;
+}
+/* Desktop responsive design */
+@media (min-width:1024px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Create four equal columns */
+        align-items: flex-start;
+        width: 80%;
+      }
+      
+      /* Style the "Skills" header (h1) */
+      .skills-container h1 {
+        grid-column: 1 / span 4; /* Span all four columns */
+        text-align: center; 
+      }
+      .skills-list li{
+        font-size:22px;
+        line-height: 1.8rem;  
+        padding-left: 8px;
+    }
+      
+      
+}
+/* Table responsive design */
+@media (min-width:678px) and (max-width:1023px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        width: 80%;
+      }
+      
+      /* Style the "Skills" header (h1) */
+      .skills-container h1 {
+        grid-column: 1 / span 2; /* Span all two columns */
+        text-align: center;
+      }
+      .skills-list li{
+        font-size:22px;
+        line-height: 1.8rem;  
+        padding-left: 8px;
+    }
+}

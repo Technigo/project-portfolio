@@ -1,0 +1,127 @@
+/* About Section  */
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 80%;
+    box-sizing: border-box;
+  }
+/* Music record Image */
+.music-record img{
+    position: absolute;
+    top:40px;
+    right: 20px;
+    height: 67px;
+    cursor: pointer;
+    z-index: 999;
+    max-width:60px;
+    max-height:60px;
+}
+
+  .spinning img{
+    animation: spin 5s linear infinite;
+  }
+  @keyframes spin{
+    0%{transform: rotate(0deg)}
+    100%{ transform: rotate(1turn)}
+  }
+/* ----------------------------- */
+/* Image */
+.about-section img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
+/* ----------------------------- */
+/* Name, location Part */
+.place{
+    font-size: 17px;
+    color:black;
+    font-weight: 800;
+    text-decoration: #FF4575 wavy underline ;
+}
+.miko-name{
+    font-size: 18px;
+    font-weight: 800;
+    color:black;
+}
+/* ----------------------------- */
+/* Animation for developer, ReactTypeEffect Part*/
+.developer{
+    font-family: "Caveat-Bold";
+    font-size: 38px;
+    max-width: 100%;
+    height:5vh;
+    padding:0;
+    margin-top:0;
+    color:#445D48;
+}
+/* ----------------------------- */
+/* Self-Introduction*/
+.introduction{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    font-style: normal;
+    color:black;
+    text-align:justify ;
+}
+
+/* ----------------------------- */
+/* Button-- Next Section */
+.next-button{
+    border-style: none;
+    background-color: transparent;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0%   {transform: translateY(0);}
+    100% {transform: translateY(20px);}
+    }
+
+
+@media (min-width:1024px) {
+.about-section img{
+    width:200px;
+    height:200px;
+}
+/* Name */
+.miko-name{
+    font-size: 26px;
+}
+/* Animation for developer, ReactTypeEffect Part*/
+.developer{
+    font-size: 40px;
+}
+/* Self-Introduction*/
+.introduction{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+}
+@media (min-width:678px) and (max-width:1023px) {
+.about-section img{
+    width:200px;
+    height:200px;
+}
+    /* Name */
+.miko-name{
+    font-size: 26px;
+}
+/* Animation for developer, ReactTypeEffect Part*/
+.developer{
+    font-size: 50px;
+}
+/* Self-Introduction*/
+.introduction{
+    font-size: 22px;
+    line-height: 1.5rem;
+}
+
+.contact-top-icons{
+    padding-top:3rem;
+}
+}

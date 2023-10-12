@@ -1,6 +1,11 @@
 import { Link } from "react-scroll";
-import "../asserts/css/navbar.css";
+import "./styleComponents/navbar.css";
 import { About } from "../components/About";
+import { Tech } from "../components/Tech";
+import { Skill } from "../components/Skill";
+import { Myword } from "../components/Myword";
+import { Contact } from "../components/Contact";
+import { Projects } from "./Projects";
 
 export const Navbar = () => {
   return (
@@ -9,33 +14,69 @@ export const Navbar = () => {
         <nav className="nav__container__actions">
           <ul>
             <li>
-              <Link activeClass="active" smooth spy to="about">
+              <Link
+                activeClass="active"
+                smooth
+                spy
+                to="about"
+                aria-label="Navigate to About section"
+              >
                 ABOUT
               </Link>
             </li>
             <li>
-              <Link activeClass="active" smooth spy to="tech">
+              <Link
+                activeClass="active"
+                smooth
+                spy
+                to="tech"
+                aria-label="Navigate to Tech section"
+              >
                 TECH
               </Link>
             </li>
             <li>
-              <Link activeClass="active" smooth spy to="projects">
+              <Link
+                activeClass="active"
+                smooth
+                spy
+                to="projects"
+                aria-label="Navigate to Project section"
+              >
                 PROJECTS
               </Link>
             </li>
             <li>
-              <Link activeClass="active" smooth spy to="skills">
+              <Link
+                activeClass="active"
+                smooth
+                spy
+                to="skills"
+                aria-label="Navigate to Projects section"
+              >
                 SKILLS
               </Link>
             </li>
             <li>
-              <Link activeClass="active" smooth spy to="mywords">
+              <Link
+                activeClass="active"
+                smooth
+                spy
+                to="mywords"
+                aria-label="Navigate to Mywords section"
+              >
                 MY WORDS
               </Link>
             </li>
 
             <li>
-              <Link activeClass="active" smooth spy to="contact">
+              <Link
+                activeClass="active"
+                smooth
+                spy
+                to="contact"
+                aria-label="Navigate to Contact section"
+              >
                 LES'S TALK
               </Link>
             </li>
@@ -45,11 +86,21 @@ export const Navbar = () => {
       <section id="about">
         <About />
       </section>
-      <section id="tech">TECH</section>
-      <section id="projects">PROJECTS</section>
-      <section id="skills">SKILLS</section>
-      <section id="mywords">MY WORDS</section>
-      <section id="contact">LES'S TALK</section>
+      <section id="tech">
+        <Tech />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="skills">
+        <Skill />
+      </section>
+      <section id="mywords">
+        <Myword />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </>
   );
 };
