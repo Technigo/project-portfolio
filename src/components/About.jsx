@@ -47,7 +47,7 @@ export const About = () => {
       <section className="about-main-wrapper">
         <div className="img_place_container">
           <img src={miko} alt="Huadan's image" />
-          <p className="place">Based in Stockholm, Sweden.</p>
+          <p className="place">Stockholm, Sweden</p>
         </div>
         <article className="introduction">
           Huadan is a talented developer who is embarking on a career transition
