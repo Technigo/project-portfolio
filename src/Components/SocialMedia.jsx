@@ -6,12 +6,12 @@ export const SocialMedia = () => {
             <a href="https://www.linkedin.com/in/idah-collin"
                 target="_blank"
                 rel="noreferrer noopener">
-                <img src="/public/assets/linkedin.svg" alt="Icon LinkedIn" />
+                <img src="/assets/linkedin.svg" alt="Icon LinkedIn" />
             </a>
             <a href="https://github.com/idahcollin"
                 target="_blank"
                 rel="noreferrer noopener">
-                <img src="/public/assets/githubsocial.svg" alt="Icon GitHub" />
+                <img src="/assets/githubsocial.svg" alt="Icon GitHub" />
             </a>
         </div>
     )
