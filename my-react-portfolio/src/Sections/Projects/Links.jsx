@@ -20,7 +20,7 @@
 //                 setRepoData(data[0].description);
 //             }
 
-//         } catch (error) { 
+//         } catch (error) {
 //             console.error(error);
 //         }
 //     };
@@ -33,46 +33,47 @@
 
 // };
 
+// // ---------------------------------------------------
 
 // export const Links = () => {
 
-// const fetchGithubData = async () => {
+//     const fetchGithubData = async () => {
 
-//     await fetch("https://api.github.com/users/YourGitHubProfile/repos")
-//         .then((res) => res.json())
-//         .then((data) => console.log(data))
-//         .catch((err) => console.log(err));
-// };
+//         await fetch("https://api.github.com/users/YourGitHubProfile/repos")
+//             .then((res) => res.json())
+//             .then((data) => console.log(data))
+//             .catch((err) => console.log(err));
+//     };
 
-// useEffect(() => {
-//     fetchGithubData;
-// }, []);
+//     useEffect(() => {
+//         fetchGithubData;
+//     }, []);
 
-// return (
+//     return (
 
-//     <div className={styles.button - wrapper}>
-//         <a
-//             href=""
-//             target="_blank"
-//             rel="noopener noreferrer"
-//         >
-//             <button type="button">
-//                 <img src="" alt="github image" />
-//                 <span>""</span>
-//             </button>
-//         </a>
-//         <a
-//             href=""
-//             target="_blank"
-//             rel="noopener noreferrer"
-//         >
-//             <button type="button">
-//                 <img src="" alt="Live Demo Image" />
-//                 <span> "" </span>
-//             </button>
-//         </a>
-//     </div>
-// )
+//         <div className={styles.button - wrapper}>
+//             <a
+//                 href=""
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//             >
+//                 <button type="button">
+//                     <img src="" alt="github image" />
+//                     <span>""</span>
+//                 </button>
+//             </a>
+//             <a
+//                 href=""
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//             >
+//                 <button type="button">
+//                     <img src="" alt="Live Demo Image" />
+//                     <span> "" </span>
+//                 </button>
+//             </a>
+//         </div>
+//     )
 
 // };
 
