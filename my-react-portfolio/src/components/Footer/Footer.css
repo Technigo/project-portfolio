@@ -1,0 +1,25 @@
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: gold;
+  }
+  
+  .rolling-text {
+    white-space: nowrap;
+    animation: roll 5s linear infinite;
+  }
+  
+  @keyframes roll {
+    0%, 20% {
+      transform: translateX(0%);
+    }
+    40%, 100% {
+      transform: translateX(-100%);
+    }
+  }
+  
