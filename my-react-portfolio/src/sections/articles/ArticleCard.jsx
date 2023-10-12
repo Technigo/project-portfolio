@@ -6,30 +6,23 @@ import { Tag } from '/src/components/tag/Tag.jsx';
 import { Button } from '/src/components/button/Button.jsx';
 
 
-
-export const ArticleCard = () => {
+export const ArticleCard = ({ title, imageUrl, tagText, description, link }) => {
     return (
         <div className="project-card">
             <Image
                 sectionClassName={"project-img"}
                 elementClassName={"project-img"}
-                link={"/src/assets/dummy-image.jpg"}
-                ImageAltText={"dummy image"}
+                link={imageUrl} // Use the passed imageUrl
+                ImageAltText={title} // Use the title as alt text
             />
-            <Tag tagText="Future Post" className="custom-class" />
+            <Tag tagText={tagText} className="custom-class" />
             <Heading
                 level={3}
-                text="article-heading"
+                text={title}
                 aria-label="This is the main heading"
-                className="give-it-a-name"
-            />
-            <Paragraph text="some short text abou the article" />
-            {/* Add more project details you want to display */}
-            <Button
-                icon="/src/assets/social-icons/read.svg" // Replace with icon path
-                label="Read article"
-                link="https://www.example.com"
-            />
+                className="give-it-a-name" />
+            <Paragraph text={description} />
+            <Button icon="/src/assets/social-icons/read.svg" label="Read article" link={link} />
         </div>
     );
 };
