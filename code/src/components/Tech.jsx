@@ -4,7 +4,10 @@ import React from "react";
 const Tech = () => {
     return (
         <div className="tech">
-            <p>hej</p>
+            <div className="tech-content">
+                <h1>Tech</h1>
+                <p>hej</p>
+            </div>
         </div>
     );
 };
