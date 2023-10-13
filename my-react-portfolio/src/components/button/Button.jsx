@@ -1,11 +1,11 @@
-export const Button = ({ icon, label, link}) => {
+export const Button = ({ icon, label, link, className }) => {
     const handleClick = () => {
         window.open(link, '_blank');
     };
 
   return (
     <button
-      className="icon-button"
+      className={className}
       onClick={handleClick}
       aria-label={label} // Provide a meaningful label
     >

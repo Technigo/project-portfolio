@@ -1,3 +1,4 @@
+import './body.css'
 import { Header } from './header/Header';
 import { Tech } from './tech/Tech';
 import { Projects } from './projects/Projects';

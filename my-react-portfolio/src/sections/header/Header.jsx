@@ -9,35 +9,37 @@ const introText = "Maria is a versatile professional at the intersection of UX d
 export const Header = () => {
     return (
         <header>
-            <Image
-                sectionClassName={"profile-img"}
-                elementClassName={"circle-img"}
-                link={"/src/assets/profile-image.png"}
-                ImageAltText={"Profile Image of Maria"}
-            />
-            <section className="headings">
-                <Heading
-                    level={4}
-                    text="Hi, I'm Maria Pettersson"
-                    aria-label="Designer greeting"
-                    className="hello-text"
+            <section className='introduction'>
+                <Image
+                    sectionClassName={"profile-img"}
+                    elementClassName={"circle-img"}
+                    link={"/src/assets/profile-image.png"}
+                    ImageAltText={"Profile Image of Maria"}
                 />
-                <Heading
-                    level={2}
-                    text="Frontend Developer & UX Designer"
-                    aria-label="Frontend Developer & UX Designer"
-                    className="introduction-h2"
-                />
-            </section>
-            <section className="intro-text">
-                <Paragraph text={introText} />
-            </section>
-            <section className="arrow-container">
-                <img
-                    src={arrowImage}
-                    alt="Animated Arrow"
-                    className="arrow"
-                />
+                <section className="headings">
+                    <Heading
+                        level={4}
+                        text="Hi, I'm Maria Pettersson"
+                        aria-label="Designer greeting"
+                        className="hello-text"
+                    />
+                    <Heading
+                        level={2}
+                        text="Frontend Developer & UX Designer"
+                        aria-label="Frontend Developer & UX Designer"
+                        className="introduction-h2"
+                    />
+                </section>
+                <section className="intro-text">
+                    <Paragraph text={introText} />
+                </section>
+                <section className="arrow-container">
+                    <img
+                        src={arrowImage}
+                        alt="Animated Arrow"
+                        className="arrow"
+                    />
+                </section>
             </section>
         </header>
     );
