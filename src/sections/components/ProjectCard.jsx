@@ -17,7 +17,7 @@ export const ProjectCard = ({repos}) => {
         return repoImages.find((img) => img.repoName === repo.name);
     });
     // console.log("the filtered repos:",filteredRepos);
-
+ 
 
     return (
         <div>
