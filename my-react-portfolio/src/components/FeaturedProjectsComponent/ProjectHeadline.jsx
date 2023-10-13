@@ -1,8 +1,6 @@
 import { MediumHeadline } from "../MediumHeadline";
 
-export const ProjectHeadline = ({ repo }) => {
-
-    let projectTitle = repo.name;
+export const ProjectHeadline = ({ projectTitle }) => {
 
     // my project titles are written like project-react-portfolio. In order for them to look like Project - react portfolio, I added this function:
 
