@@ -1,7 +1,7 @@
 import { Headline } from "./Headline";
 import articles from "../../articles.json";
 import { ArticleCard } from "../components/ArticleCard";
-import "./articles.css";
+import "./Articles.css";
 
 export const Articles = ({ name, photo, tags, text }) => {
   return (
