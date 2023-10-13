@@ -3,7 +3,7 @@ import { MainHeading } from "./components/Typo/MainHeading.jsx";
 import { SubHeading } from "./components/Typo/SubHeading.jsx";
 import { BodyText } from "./components/Typo/BodyText.jsx"
 
-import profile from "./src/assets/profile-pic.jpg";
+import profile from "../assets/extraaa/profile-pic.jpg";
 
 
 export const Introduction = () => {
