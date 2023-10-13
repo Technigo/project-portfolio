@@ -5,7 +5,7 @@ import { Headline } from "../components/Headline";
 export const FeatureProjectsPage = () => {
     const headerText = "Featured Projects";
     const githubUsername = 'VAstrom';
-        const specificRepositories = ['project-happy-thoughts-vite', 'project-survey-vite', 'project-music-releases-vite', 'project-weather-app', 'project-guess-who', 'project-chatbot', 'project-news-site'];  // Add the specific repositories you want to fetch
+    const specificRepositories = ['project-happy-thoughts-vite', 'project-survey-vite', 'project-music-releases-vite', 'project-weather-app', 'project-guess-who', 'project-chatbot', 'project-news-site'];  // Add the specific repositories you want to fetch
 
     const [repos, setRepos] = useState([]);
     const [loading, setLoading] = useState(true);
