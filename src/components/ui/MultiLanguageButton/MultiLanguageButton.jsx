@@ -1,5 +1,30 @@
-function MultiLanguageButton() {
-  return <button>lang</button>;
+import { useEffect, useState } from "react";
+import styles from "./MultiLanguageButton.module.scss";
+function MultiLanguageButton({ lang, onLang }) {
+  const [currentPosition, setCurrentPosition] = useState({});
+
+  function handleClick(e) {
+    onLang(e.target.id);
+  }
+
+  useEffect(() => {
+    if (lang === "en") setCurrentPosition({ transform: "translateX(4px)" });
+    if (lang === "ja") setCurrentPosition({ transform: "translateX(-38px)" });
+  }, [lang]);
+
+  return (
+    <div className={styles.btn_box}>
+      <div className={styles.country_box}>
+        <span>🇯🇵</span>
+        <span>🇬🇧</span>
+      </div>
+      <div className={styles.outer_btn}>
+        <span className={styles.circle} style={currentPosition}></span>
+        <button className={styles.inner_btn} id="ja" onClick={handleClick}></button>
+        <button className={styles.inner_btn} id="en" onClick={handleClick}></button>
+      </div>
+    </div>
+  );
 }
 
 export default MultiLanguageButton;

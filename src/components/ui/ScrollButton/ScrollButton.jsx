@@ -14,7 +14,6 @@ export const ScrollButton = () => {
   useEffect(() => {
     const toggleVisible = () => {
       const scrolled = document.documentElement.scrollTop;
-      console.log(scrolled);
 
       if (scrolled > 1000) {
         setVisible(true);

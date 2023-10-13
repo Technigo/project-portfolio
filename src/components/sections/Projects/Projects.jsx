@@ -8,14 +8,14 @@ import { projectsData as data } from "../../../statics/projectsData";
 
 import styles from "./Projects.module.scss";
 
-export default function Projects() {
+export default function Projects({ lang }) {
   return (
     <section className={styles.projects_section}>
       <div className={styles.projects_inner}>
         <Heading color={primaryColorText}>Featured Projects</Heading>
         <div className={styles.projects_section_cards}>
           {data.map((project) => (
-            <ProjectCard project={project} key={project.title} />
+            <ProjectCard project={project} key={project.title} lang={lang} />
           ))}
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function Projects() {
 }
 
 // mapping this card with each project data from projectData array
-function ProjectCard({ project }) {
+function ProjectCard({ project, lang }) {
   // skills is array, others are string
   const { imagePath, title, skills, gitUrl, demoUrl, text } = project;
   return (
@@ -38,7 +38,9 @@ function ProjectCard({ project }) {
       </div>
       <div className={styles.text_box}>
         <Title text={title} />
-        <p className={styles.text}>{text}</p>
+        <p className={styles.text} lang={lang}>
+          {text[lang]}
+        </p>
         <div className={styles.labels}>
           {skills.map((skill) => (
             <Label labelText={skill} key={skill} />

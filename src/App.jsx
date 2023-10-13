@@ -5,10 +5,14 @@ import { BlogPage } from "./pages/BlogPage";
 import "./styles/reset.css";
 import "./styles/global.scss";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [lang, setLang] = useState("en");
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
   return (
     <BrowserRouter>
       <Routes>

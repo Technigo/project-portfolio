@@ -14,9 +14,9 @@ function Home({ lang, onLang }) {
   return (
     <>
       <main>
-        <Hero arrowRef={arrowRef} />
+        <Hero arrowRef={arrowRef} lang={lang} onLang={onLang} />
         <Tech arrowRef={arrowRef} />
-        <Projects />
+        <Projects lang={lang} />
         <Blog />
         <Skills />
         <Contact />

@@ -39,7 +39,7 @@ function BlogPage() {
               />
             </div>
           </div>
-          <div className={styles.text_box}>
+          <div className={styles.text_box} lang="en">
             <Title text={title} />
             <Label labelText={date} />
             <p>{text}</p>
