@@ -5,9 +5,9 @@ import { HeaderText } from '../HeaderComponents/HeaderText';
 export const Section = ({ projects }) => {
     return (
         <section>
-            <HeaderText className="ProjectTitle"
-                h1Text="FeaturedProjects"
-            />
+            <div className="card-header-wrapper">
+                <HeaderText h1Text="Featured Projects" />
+            </div>
 
             {projects.map((project, index) => (
                 <div key={index}>

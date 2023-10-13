@@ -8,7 +8,10 @@ export const SkillsText = () => {
 
             <div className='SkillsContainer'>
 
-                <HeaderText h1Text="Skills" />
+                <div className='skills-container'>
+                    <HeaderText h1Text="Skills" />
+                </div>
+
 
                 <li className='listOne'>
 
