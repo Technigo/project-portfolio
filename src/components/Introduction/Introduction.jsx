@@ -20,11 +20,12 @@ export const Introduction = () => {
         </div>
         <div className="presentation-wrapper">
           <p>
-            Anna is an exceptional developer known for her innovative solutions
-            and exceptional coding abilities. She creates user-friendly
-            applications and solves complex issues with ease. Her drive for
-            excellence makes her a valuable asset to any project and a standout
-            in the technology field.
+            Anna is a talented developer recognized for her innovative solutions
+            and strong coding skills. With a background in healthcare, she
+            places a strong emphasis on accessibility, aiming to create
+            solutions that are inclusive and user-friendly. Her commitment to
+            excellence and interest in design makes her a valuable asset to any
+            project in the technology field.
           </p>
         </div>
       </div>
