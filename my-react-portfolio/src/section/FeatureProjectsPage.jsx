@@ -8,7 +8,9 @@ export const FeatureProjectsPage = () => {
 
     const [repos, setRepos] = useState([]);
     const githubUsername = 'VAstrom'; // Replace with the desired GitHub username
-    const maxReposToShow = 6; // Set the maximum number of repositories to display
+    const maxReposToShow = 8; // Set the maximum number of repositories to display
+  // IMPORTANT!!! added .slice(2) since my github repo for the group projects gets included in the portfolio. Once I have removed the group project/made it private I should remove this!
+
 
     useEffect(() => {
 
@@ -18,7 +20,7 @@ export const FeatureProjectsPage = () => {
 
                 if (response.ok) {
                     const data = await response.json();
-                    const filteredRepos = data.slice(0, maxReposToShow); // Filter the repositories
+                    const filteredRepos = data.slice(2, maxReposToShow); // Filter the repositories
                     setRepos(filteredRepos);
                 } else {
                     console.error('Failed to fetch data');
@@ -29,6 +31,7 @@ export const FeatureProjectsPage = () => {
         }
 
         fetchData();
+        console.log(repos);
     }, [githubUsername, maxReposToShow]);
 
 

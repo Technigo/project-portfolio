@@ -5,7 +5,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export const FeaturedProjects = ({ repos }) => {
 
-
+  
     return (
         <section>
             {repos.map((repo) => (
