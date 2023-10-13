@@ -7,7 +7,7 @@
   padding: 4rem 1rem;
   color: #000;
   font-family: Hind;
-  font-size: 1.125rem;
+  font-size: calc(0.8rem + 0.5vw);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -17,32 +17,30 @@
 .presentation-image {
   margin-right: 20px;
   border-radius: 10.25rem;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
   align-self: center;
 }
 
 .presentation-container h1 {
   color: #0B24F5;
   font-family: Montserrat;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-bottom: 0.5rem;
+  font-size: calc(1.5rem + 1vw);
+  margin-top: 0px;
 }
 
 .presentation-container h3 {
   color: #000;
   font-family: Montserrat;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-top: 0.5rem;
+  font-size: calc(1rem + 0.5vw);
+  margin-bottom: 0px;
 }
 
-h3 {
-  font-family: 'Hind', Arial, Helvetica, sans-serif;
+@media (max-width: 600px) {
+  .presentation-container h1 {
+    font-size: 1.8rem;
+  }
+  .presentation-container h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .avatar {

@@ -8,7 +8,7 @@ export const ProjectCard = ({ project }) => {
       <div className="project-image-wrapper">
         <img src={project.image} alt={project.name} className="project-image" />
       </div>
-      <h2>{project.name}</h2>
+      <h3>{project.name}</h3>
       <p>{project.description}</p>
       <ul className="tag-list">
         {project.tags.map(tag => <li key={tag}>{tag}</li>)}

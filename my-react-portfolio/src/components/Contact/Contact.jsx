@@ -1,12 +1,13 @@
 import React from 'react';
+import { Headline } from '../Headline/Headline';
 import './Contact.css';
 
 export const Contact = () => {
     return (
       <div className="contact-container">
-          <h1>Let's talk</h1>
+        <Headline className="headline" text="Let's talk" level={1} />
           
-          <img src="path_to_your_image.jpg" alt="Description" className="contact-image"/>
+          <img src="testimage.jpg" alt="Description" className="contact-image"/>
           
           <h3>Lorem ipsum</h3>
           <h3>Lorem ipsum</h3>
