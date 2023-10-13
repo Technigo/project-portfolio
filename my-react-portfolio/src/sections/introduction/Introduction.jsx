@@ -2,6 +2,7 @@ import { SectionTitle } from '../../reusableComponents/texts/SectionTitle'
 import { MediumsizedTitle } from '../../reusableComponents/texts/MediumsizedTitle'
 import { NormalText } from '../../reusableComponents/texts/NormalText'
 import { CircleImage } from '../../reusableComponents/images/CircleImage'
+import arrow from '../../assets/icons/arrow.png'
 import './Introduction.css'
 
 export const Introduction = () => {
@@ -18,6 +19,7 @@ export const Introduction = () => {
                 <CircleImage />
                 <NormalText text={text} />
             </div>
+            <img src={arrow} alt="arrow pointing downwards" />
         </header>
     );
 };
