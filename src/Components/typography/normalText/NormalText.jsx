@@ -2,8 +2,8 @@ import React from 'react'
 
 import './normalText.css'
 
-export const NormalText = ({text}) => {
+export const NormalText = ({className, text}) => {
   return (
-    <p>{text}</p>
+    <p className={className}>{text}</p>
   )
 }

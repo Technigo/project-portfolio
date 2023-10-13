@@ -4,10 +4,6 @@ import { ProjectCard } from  '../projectCard/ProjectCard'
 
 export const SecFeaturedProjects = () => {
   const [projects, setProjects] = useState([])
-  const [name, setName] = useState("")
-  const [description, setDescription] = useState("")
-  const [homepage, setHomepage] = useState("")
-  const [gitLink, setGitLink] = useState("")
 
   const API = "https://api.github.com/users/emmydieden/repos"
 
