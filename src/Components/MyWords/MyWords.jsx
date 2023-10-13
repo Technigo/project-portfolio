@@ -1,6 +1,6 @@
 import React from "react";
-import "./Article.css";
+import "./MyWords.css";
 
-export const Article = () => {
+export const MyWords = () => {
   return <div>Suddenly 4 lorem ipsum articles will appear!</div>;
 };

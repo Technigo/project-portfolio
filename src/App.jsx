@@ -1,7 +1,7 @@
 import { ProjectList } from "./Components/FeaturedProjects/ProjectList";
 import { Intro } from "./Components/Intro/Intro";
 import { Tech } from "./Components/Tech/Tech";
-import { Article } from "./Components/Articles/Article";
+import { MyWords } from "./Components/MyWords/MyWords";
 import { Skills } from "./Components/Skills/Skills";
 import { Contact } from "./Components/Contact/Contact";
 
@@ -13,7 +13,7 @@ export const App = () => {
       <Intro />
       <Tech />
       <ProjectList />
-      <Article />
+      <MyWords />
       <Skills />
       <Contact />
     </div>
