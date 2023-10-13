@@ -1,5 +1,6 @@
 import { LinkButton } from "./LinkButton";
 import projects from "../../projects.json";
+
 import "./Links.css";
 
 export const Links = () => {
@@ -8,17 +9,15 @@ export const Links = () => {
       <div className="project-links">
         <LinkButton
           buttonText=""
-          url={projects.projects[0].netlify} // Use the appropriate project index
-          icon="/src/assets/Live-Demo-Button.png"
+          url={projects.projects[0].netlify}
+          icon="/src/assets/livedemo.png"
         />
         <LinkButton
           buttonText=""
-          url={projects.projects[0].github} // Use the appropriate project index
-          icon="/src/assets/View-Code-Button.svg"
+          url={projects.projects[0].github}
+          icon="/src/assets/view.png"
         />
       </div>
-
-      {/* Add similar code for other projects if needed */}
     </div>
   );
 };

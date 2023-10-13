@@ -13,7 +13,7 @@ export const Intro = () => {
         bla vla bla bla bla bla bla bla b
       </p>
       <img
-        src="/src/assets/Arrow.png"
+        src="/src/assets/Position=down.png"
         alt="arrowicon"
         className="arrow-icon"
       ></img>
