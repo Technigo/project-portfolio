@@ -4,7 +4,7 @@ import { FeaturedProjects } from "./Components/FeaturedProjects/FeaturedProjects
 import { MyWords } from "./Components/MyWords/MyWords";
 import { Skills } from "./Components/Skills/Skills";
 import { Contact } from "./Components/Contact/Contact";
-// import { Footer } from "./Components/Footer/Footer";
+import { Footer } from "./Components/Footer/Footer";
 import "./App.css";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <MyWords />
       <Skills />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

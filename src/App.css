@@ -1,10 +1,17 @@
-/* .portfolio-container {
-  width: 1512px;
-} */
+section {
+  width: 375px;
+}
 
-body {
+.divider {
+  box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: 200px;
+  background-image: url("./src/assets/path.svg");
+  background-repeat: repeat-x;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* --- Heading text styling ----- */
@@ -30,10 +37,20 @@ body {
 }
 /*----------------------------------*/
 
-.divider {
-  box-sizing: border-box;
-  width: 100%;
-  height: 200px;
-  background-image: url("./src/assets/path.svg");
-  background-repeat: repeat-x;
+/* ---- Media queries ------ */
+
+@media (min-width: 667px) {
+  section {
+    width: 100%;
+    margin: 0;
+  }
 }
+
+@media (min-width: 1025px) {
+  section {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* ------------------------------- */

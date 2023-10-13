@@ -39,7 +39,7 @@ export const FeaturedProjects = () => {
   }, []);
 
   return (
-    <div className="projects-section">
+    <section className="projects-section">
       <div className="projects-wrapper">
         <MainHeading
           className={"heading-text projects"}
@@ -91,6 +91,6 @@ export const FeaturedProjects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };

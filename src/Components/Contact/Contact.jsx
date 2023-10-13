@@ -2,7 +2,7 @@ import { MainHeading } from "../MainHeading/MainHeading";
 import "./Contact.css";
 export const Contact = () => {
   return (
-    <div className="contact-section">
+    <section className="contact-section">
       <MainHeading className={"heading-text lets-talk"} text={"Let's Talk"} />
       <div className="contact-wrapper">
         <img
@@ -23,6 +23,6 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

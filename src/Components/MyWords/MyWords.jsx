@@ -7,7 +7,7 @@ export const MyWords = () => {
     "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.";
 
   return (
-    <div className="my-words-section">
+    <section className="my-words-section">
       <MainHeading className={"heading-text my-words"} text={"My Words"} />
       <div className="my-words-wrapper">
         <div className="article-box">
@@ -63,6 +63,6 @@ export const MyWords = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

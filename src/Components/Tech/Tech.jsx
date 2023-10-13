@@ -6,7 +6,7 @@ export const Tech = () => {
     "HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, APIs, mob-programming, pair-programming, GitHub. ";
 
   return (
-    <div className="tech-section">
+    <section className="tech-section">
       <div>
         <MainHeading className={"heading-text tech"} text={"Tech"} />
       </div>
@@ -14,6 +14,6 @@ export const Tech = () => {
       <div>
         <p className="skills-text">{skills}</p>
       </div>
-    </div>
+    </section>
   );
 };

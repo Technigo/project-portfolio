@@ -22,8 +22,12 @@ export const Introduction = () => {
           />
         </div>
         <p className="introText">{introText}</p>
-        <div className="arrow bounce">
-          {/* <img src={images[currentImage]} alt="down arrow icon" /> */}
+        <div className="arrow jump">
+          <img
+            className="vert-move"
+            src="/assets/Position=down.svg"
+            alt="down arrow icon"
+          />
         </div>
       </div>
     </section>

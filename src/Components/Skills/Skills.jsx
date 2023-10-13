@@ -2,7 +2,7 @@ import { MainHeading } from "../MainHeading/MainHeading";
 import "./Skills.css";
 export const Skills = () => {
   return (
-    <div className="skills-section">
+    <section className="skills-section">
       <div className="skills-wrapper">
         <MainHeading className={"heading-text skills"} text={"Skills"} />
 
@@ -34,6 +34,6 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
