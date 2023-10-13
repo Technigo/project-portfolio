@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ViewGithubBtn from "./ViewGithubBtn";
+import LiveDemoBtn from "./LiveDemoBtn";
 
 const Projects = () => {
     const [repos, setRepos] = useState([]);
@@ -30,6 +31,9 @@ const Projects = () => {
                     <p>{project.description}</p>
                     <a href={project.url} target="_blank" rel="noopener noreferrer">
                         <ViewGithubBtn />
+                    </a>
+                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                        <LiveDemoBtn />
                     </a>
                 </div>
             ))}
