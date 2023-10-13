@@ -1,7 +1,7 @@
 import { SubHeading } from "./Typo/SubHeading.jsx";
 import { BodyText } from "./Typo/BodyText.jsx";
 import { Button } from "./Button.jsx";
-import articles from "./data/articles.json";
+import articles from "./Data/articles.json";
 
 export const ArticleCard = ( ) => {
 
