@@ -1,22 +1,15 @@
-
+import repoImages from "../../repoImages.json";
 import { TagComponent } from "../TagComponent";
 import { ProjectHeadline } from "./ProjectHeadline";
-
-import happyThoughts from "../../assets/happyThoughts.png";
-import project2 from "../../assets/article2.png";
-import project3 from "../../assets/article3.png";
-import project4 from "../../assets/article4.png";
-import project5 from "../../assets/article4.png";
-import project6 from "../../assets/article4.png";
 import { ButtonComponent } from "./ButtonComponent";
 
 export const ProjectCard = ({ repo }) => {
-
-  // add images
+  // Find the corresponding image for the repo
+  const repoImage = repoImages.find((img) => img.repoName === repo.name);
 
   return (
     <div className="project-card-wrapper">
-      <img src="" alt="Project Image" />
+      <img src={repoImage?.imageUrl} alt={repo.name} />
       <div className="project-description">
         <ProjectHeadline projectTitle={repo.name} />
         <div className="project-tags">
@@ -26,9 +19,7 @@ export const ProjectCard = ({ repo }) => {
             </span>
           ))}
         </div>
-        <ButtonComponent
-          repoURL={repo.html_url}
-          deployedSite={repo.homepage} />
+        <ButtonComponent repoURL={repo.html_url} deployedSite={repo.homepage} />
       </div>
     </div>
   );

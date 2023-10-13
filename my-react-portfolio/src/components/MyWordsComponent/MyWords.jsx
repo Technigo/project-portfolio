@@ -1,10 +1,10 @@
 import { MediumHeadline } from "../MediumHeadline";
 import { TagComponent } from "../TagComponent";
 import { Textbox } from "../Textbox";
-import article1 from "../../assets/article1.png";
-import article2 from "../../assets/article2.png";
-import article3 from "../../assets/article3.png";
-import article4 from "../../assets/article4.png";
+import article1 from "../../assets/articleImages/article1.png";
+import article2 from "../../assets/articleImages/article2.png";
+import article3 from "../../assets/articleImages/article3.png";
+import article4 from "../../assets/articleImages/article4.png";
 
 
 

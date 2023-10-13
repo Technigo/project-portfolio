@@ -1,5 +1,5 @@
 import "./imagePortrait.css"
-import imageVeronica from "../assets/imageVeronica.png";
+import imageVeronica from "../assets/portrait/imageVeronica.png";
 
 
 export const ImagePortrait = () => {
