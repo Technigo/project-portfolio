@@ -1,0 +1,197 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* CSS General Styles */
+
+body {
+  margin: 0;
+
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Hind", sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat";
+  line-height: normal;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CSS for each Component */
+
+/* Component 2 - Tech Section */
+
+.tech-section-container {
+  background-color: #0b24f5;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tech-section-heading,
+.tech-section-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 0;
+}
+
+/* Component 3 - Featured Projects */
+
+/* grid parent for featured projects */
+.featured-projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em;
+  width: 820px;
+  margin: 1em;
+}
+
+/* grid child for featured project */
+.projects-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: black;
+  border: 1px solid black;
+
+  padding: 1em;
+}
+
+.projects-box-text h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.projects-box-img {
+  height: 280px;
+  border-left: 1px solid #0b24f5;
+  border-bottom: 2px solid #0b24f5;
+  object-fit: cover;
+}
+
+/* Component 4 - My Words */
+
+.my-words-container {
+  background-color: #ffecea;
+  color: #ff4575;
+  padding: 15px;
+  /* border-image: url(/assets/mywords-squiggleline.png) 70 round; */
+}
+
+.my-words-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3em;
+}
+
+.my-words-column {
+  float: left;
+  width: 100%;
+  padding: 1em;
+}
+
+.my-words-column img {
+  max-width: 30%;
+}
+
+.read-article-button:hover {
+  content: url("/assets/Read-On-Medium-Hover.png");
+}
+
+/* Component 5 - Skills */
+
+.skills-section {
+  background-color: #0b24f5;
+  color: #ffffff;
+  padding-left: 2em;
+}
+
+/* grid parent for skills */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.skills-container ul {
+  list-style-type: none;
+}
+
+/* Component 6 - Let's Talk */
+
+.lets-talk-container h1 {
+  color: #0b24f5;
+  padding-left: 2em;
+}
+
+/* Component 7 - Footer
+
+.footer-container {
+  background-color: #ff4575;
+  color: #ffffff;
+  padding: 1px 0 1px;
+  overflow: hidden;
+  text-align: center;
+} */
+
+/*media query for tablet*/
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  .projects-box {
+    grid-column: span 2;
+  }
+
+  .skills-container div {
+    grid-column: span 2;
+  }
+}
+
+/*media query for mobile*/
+@media screen and (max-width: 667px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .skills-container div {
+    grid-column: span 4;
+  }
+}

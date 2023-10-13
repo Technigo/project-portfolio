@@ -1,0 +1,78 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* CSS General Styles */
+
+body {
+  margin: 0;
+
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Hind", sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat";
+  line-height: normal;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*media query for tablet*/
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  .projects-box {
+    grid-column: span 2;
+  }
+
+  .skills-container div {
+    grid-column: span 2;
+  }
+}
+
+/*media query for mobile*/
+@media screen and (max-width: 667px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .skills-container div {
+    grid-column: span 4;
+  }
+}
