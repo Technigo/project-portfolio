@@ -2,12 +2,13 @@
 import { TagComponent } from "../TagComponent";
 import { ProjectHeadline } from "./ProjectHeadline";
 
-import project1 from "../../assets/article1.png"; 
+import project1 from "../../assets/article1.png";
 import project2 from "../../assets/article2.png";
-import project3 from "../../assets/article3.png"; 
-import project4 from "../../assets/article4.png"; 
-import project5 from "../../assets/article4.png"; 
-import project6 from "../../assets/article4.png"; 
+import project3 from "../../assets/article3.png";
+import project4 from "../../assets/article4.png";
+import project5 from "../../assets/article4.png";
+import project6 from "../../assets/article4.png";
+import { ButtonComponent } from "./ButtonComponent";
 
 export const ProjectCard = ({ repo }) => {
 
@@ -25,9 +26,7 @@ export const ProjectCard = ({ repo }) => {
             </span>
           ))}
         </div>
-        <div className="project-buttons">
-          <button>test</button>
-        </div>
+        <ButtonComponent />
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 import { MediumHeadline } from "../MediumHeadline";
 import { TagComponent } from "../TagComponent";
 import { Textbox } from "../Textbox";
-import article1 from "../../assets/article1.png"; 
+import article1 from "../../assets/article1.png";
 import article2 from "../../assets/article2.png";
-import article3 from "../../assets/article3.png"; 
-import article4 from "../../assets/article4.png"; 
+import article3 from "../../assets/article3.png";
+import article4 from "../../assets/article4.png";
 
 
 
@@ -63,7 +63,7 @@ export const MyWords = () => {
                     <MediumHeadline mediumSizeHeader={article.mediumSizeHeader} />
                     <Textbox text={article.text} />
                     <a href={article.link} target="_blank">
-                        <button type="button">
+                        <button type="button" aria-label="Read article">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="48"
