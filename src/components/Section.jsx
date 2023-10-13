@@ -6,9 +6,9 @@ export const Section = ({ projects }) => {
     return (
         <section>
             <HeaderText
-                h1Text="Projects"
-
+                h1Text="Featured Projects"
             />
+
             {projects.map((project, index) => (
                 <div key={index}>
                     <ProjectCard project={project} />
@@ -17,3 +17,4 @@ export const Section = ({ projects }) => {
         </section>
     );
 };
+

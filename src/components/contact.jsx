@@ -1,5 +1,5 @@
 import CvPic from '/CV_pic.jpg'
-import './headerStyle.css';
+
 
 export const Contact = () => {
     return (
