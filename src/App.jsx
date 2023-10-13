@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './App.css'
 
-import { SecPresentation } from './components/sections/SecPresentation.jsx'
+import { SecPresentation } from './components/sections/SecPresentation'
 import { SecTech } from './components/sections/SecTech.jsx'
 import { SecFeaturedProjects } from './components/sections/SecFeaturedProjects.jsx'
 import { SecMywords } from './components/sections/SecMywords.jsx'
