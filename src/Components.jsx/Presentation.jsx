@@ -1,4 +1,3 @@
-import { Headline } from "./Headlines";
 import "./Presentation.css";
 
 export const Presentation = () => {
