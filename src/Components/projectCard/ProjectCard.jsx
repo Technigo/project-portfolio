@@ -1,6 +1,7 @@
 import React, {useState}from 'react'
 import { HeadingH1 } from '../typography/headingH1/HeadingH1'
 import { HeadingH3 } from '../typography/headingH3/HeadingH3'
+import { NormalText } from '../typography/normalText/NormalText'
 import { ProjectImg } from '../images/projectImg'
 import { Button } from '../button/Button'
 import { Tag } from '../tag/Tag'
@@ -29,10 +30,10 @@ export const ProjectCard = ({projects}) => {
           <div className="project-card" key={project.id}> 
             <ProjectImg />
 
-            
             <div className="project-card-info">
-              <HeadingH3 className={"project-heading"}text={project.name}/>
-              <p className="project-card-text">{project.description}</p>
+              <HeadingH3 className={"project-h3"}text={project.name}/>
+
+              <NormalText className="project-card-text" text={project.description}/>
 
                 <div className="project-card-tags"> 
                     <Tag topics={project.topics}/>

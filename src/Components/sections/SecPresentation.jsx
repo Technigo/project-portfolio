@@ -4,6 +4,8 @@ import { HeadingH1 } from '../typography/headingH1/HeadingH1'
 import { HeadingH4 } from '../typography/headingH4/HeadingH4'
 import { NormalText } from '../typography/normalText/NormalText'
 
+const presentationText = "Emmy is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field."
+
 import './sections.css'
 
 
@@ -19,7 +21,7 @@ export const SecPresentation = () => {
             <HeadingH4 text={"Hi, I am Emmy Dieden"}/>
             <HeadingH1 text={"Frontend Developer"} className={"presentation-h1"}/>
             </div>
-            <NormalText className={"presentation-text"}text={"Emmy is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field."}/>
+            <NormalText className={"presentation-text"}text={presentationText}/>
           </div>
           <div className="arrow-box">
             <img  src={'assets/ArrowPositionUp.svg'} 
