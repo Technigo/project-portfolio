@@ -29,10 +29,18 @@ export const ProjectCard = ({repos}) => {
                             <BodyText text={repo.description} />
                             <Tags tags={repo.topics} id={repo.id}/>
                             <div className="livedemo">
-                            <Button buttonName={`Live Demo`} link={repo.homepage} icon={`src/assets/buttons/Live-Demo-Button.svg`} iconAlt={`Web icon`} />
+                            <Button 
+                            link={repo.homepage} 
+                            normalImage="src/assets/buttons/Live-Demo-Button.svg"
+                            hoverImage="src/assets/buttons/Live-Demo-Button-Hover.svg"
+                            />
                             </div>
                             <div className="viewthecode">
-                            <Button buttonName={`View the Code`}link={repo.html_url} icon={`src/assets/buttons/View-Code-Button.svg`} iconAlt={`GitHub logo`} />
+                            <Button 
+                            link={repo.html_url} 
+                            normalImage="src/assets/buttons/View-Code-Button.svg"
+                            hoverImage="src/assets/buttons/View-Code-Button-Hover.svg"
+                            />
                             </div>
                         </div>
                     );
