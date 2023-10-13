@@ -12,6 +12,7 @@ import { Words } from './components/Words'
 import Divider from './components/Divider'; // Import the Divider component
 import { Skills } from './components/Skills'
 import { Talk } from './components/Talk'
+import { API } from './components/API'
 
 import happy from './components/happy.png'
 import pet from './components/pet.png'
@@ -125,6 +126,7 @@ const wordsData = [
 
   return (
     <form>
+      <API />
       <Introduction 
         name={name}
         description={description}
