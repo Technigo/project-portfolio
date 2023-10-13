@@ -1,5 +1,6 @@
 import { LinkButton } from "./LinkButton";
 import projects from "../../projects.json";
+import view from "../assets/view.png";
 
 import "./Links.css";
 
@@ -15,7 +16,7 @@ export const Links = () => {
         <LinkButton
           buttonText=""
           url={projects.projects[0].github}
-          icon="/src/assets/view.png"
+          icon={view}
         />
       </div>
     </div>
