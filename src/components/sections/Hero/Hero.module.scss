@@ -1,0 +1,168 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.hero_section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  @include sm {
+    padding-top: 128px;
+  }
+
+  @include md {
+    padding-top: 322px;
+    padding-bottom: 64px;
+  }
+}
+
+.inner_hero {
+  padding-left: 8px;
+  padding-right: 8px;
+  display: grid;
+  margin: 0 auto;
+  min-width: 343px;
+  max-width: 450px;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "image"
+    "heading"
+    "text"
+    "arrow";
+  gap: $gap-md;
+
+  @include sm {
+    min-width: 616px;
+    max-width: 616px;
+    grid-template-columns: 184px minmax(430px, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "heading heading"
+      "image text"
+      "arrow arrow";
+    column-gap: 22px;
+    row-gap: $gap-md;
+  }
+
+  @include md {
+    grid-template-columns: 184px 1fr;
+    min-width: 840px;
+    max-width: 860px;
+    row-gap: $gap-sm;
+  }
+}
+
+// heading and h1
+.heading_box {
+  grid-area: heading;
+  animation: moveInFromLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+
+.heading_box h1 {
+  font-family: $font-display;
+  font-size: $font-size-md;
+  font-weight: 600;
+
+  @include sm {
+    font-size: $font-size-xlg;
+  }
+
+  @include md {
+    font-size: 32px;
+  }
+}
+
+.text {
+  font-family: $font-text;
+  font-size: $font-size-md;
+  grid-area: text;
+
+  @include md {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.my_image {
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+  grid-area: image;
+  margin: 0 auto;
+}
+
+// arrow icon
+.arrow {
+  cursor: pointer;
+  grid-area: arrow;
+  margin: 0 auto 30px;
+  transition: $transition;
+  animation: bounce 1.4s infinite ease;
+
+  @include sm {
+    grid-row: 3;
+    margin-top: 106px;
+  }
+  @include md {
+    margin-top: 183px;
+  }
+
+  &:hover {
+    transform: translateY(10px);
+  }
+
+  &:focus-visible {
+    outline: $color-primary 3px solid;
+  }
+}
+
+@keyframes moveInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes bounce {
+  1% {
+    transform: translateY(1px);
+  }
+  10% {
+    transform: translateY(10px);
+  }
+  20% {
+    transform: translateY(20px);
+  }
+  30% {
+    transform: translateY(30px);
+  }
+
+  40% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  60% {
+    transform: translateY(40px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(20px);
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  99% {
+    transform: translateY(1px);
+  }
+}

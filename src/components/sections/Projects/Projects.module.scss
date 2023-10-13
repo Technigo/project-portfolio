@@ -1,0 +1,90 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.projects {
+  &_section {
+    @include padding-reset;
+    &_cards {
+      margin-top: 64px;
+      display: flex;
+      flex-direction: column;
+      gap: $gap-xlg;
+    }
+  }
+
+  &_inner {
+    margin: 0 auto;
+    width: 343px;
+    @include sm {
+      width: 680px;
+    }
+    @include md {
+      width: 820px;
+    }
+  }
+}
+
+.image_wrapper {
+  width: 343px;
+  height: 200px;
+  @include sm {
+    width: 200px;
+    height: 280px;
+  }
+  @include md {
+    width: 280px;
+  }
+}
+
+.project_card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $gap-sm;
+
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 280px;
+  }
+}
+
+.btn_box {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-xsm;
+
+  @include sm {
+    flex-direction: row;
+    margin-top: 16px;
+    gap: $gap-md;
+  }
+}
+
+.text {
+  font-family: Hind;
+  font-size: $font-size-md;
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: $gap-sm;
+    @include sm {
+      gap: $gap-xsm;
+      width: 430px;
+      height: 100%;
+    }
+    @include md {
+      width: 500px;
+    }
+  }
+}
+
+.labels {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}

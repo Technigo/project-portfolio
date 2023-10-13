@@ -1,0 +1,66 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.contact_section {
+  @include padding-reset;
+}
+
+.inner_contact {
+  margin: 0 auto;
+}
+
+// Inner div (my Card)
+.my_card {
+  margin: 64px auto 0;
+  width: 310px;
+  gap: $gap-lg;
+  @include flexCenter;
+
+  @include md {
+    width: 413px;
+  }
+}
+
+.my_image {
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+}
+
+.contact_infos {
+  color: #000;
+  font-family: $font-display;
+  font-size: $font-size-xlg;
+  text-align: center;
+  font-weight: 600;
+  display: grid;
+  gap: 8px;
+
+  @include md {
+    font-size: 32px;
+  }
+}
+
+// Social media Icons
+.icon {
+  width: 32px;
+  height: 32px;
+  transition: $transition;
+  cursor: pointer;
+}
+
+.icon:hover {
+  filter: brightness(10%);
+  transform: translateX(1px);
+}
+
+.icons_box {
+  margin: 0 auto;
+  display: flex;
+  gap: $gap-md;
+}
+
+.contact_infos a:focus-visible,
+.icons_box a:focus-visible {
+  outline: $color-primary 3px solid;
+}

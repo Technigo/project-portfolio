@@ -1,0 +1,69 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.skills {
+  &_section {
+    background-color: $color-primary;
+    height: fit-content;
+    @include padding-reset;
+  }
+
+  &_inner {
+    display: grid;
+    gap: $gap-xlg;
+    margin: 0 auto;
+  }
+
+  &_ul {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  &_card_wrapper {
+    display: grid;
+    margin: 0 auto;
+    gap: $gap-xlg;
+
+    @include sm {
+      grid-template-columns: repeat(2, max-content);
+    }
+
+    @include md {
+      grid-template-columns: repeat(4, max-content);
+    }
+  }
+}
+
+.skill_card {
+  height: fit-content;
+  width: 153px;
+  color: #fff;
+  text-align: center;
+  font-family: $font-text;
+  font-size: $font-size-md;
+  display: grid;
+  grid-template-rows: 39px 1fr;
+  gap: $gap-xsm;
+
+  @include sm {
+    text-align: start;
+    width: fit-content;
+  }
+}
+
+.tag_wrapper {
+  width: fit-content;
+  height: 39px;
+  padding: 0 3px;
+  color: #fff;
+  font-family: $font-display;
+  font-size: $font-size-xlg;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  @include sm {
+    margin: unset;
+  }
+}

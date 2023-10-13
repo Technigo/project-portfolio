@@ -1,0 +1,33 @@
+@use "../../../styles/variables.scss" as *;
+
+.footer {
+  padding-top: 41px;
+  padding-bottom: 35px;
+  overflow: hidden;
+}
+
+.text {
+  color: #fff;
+  font-family: $font-display;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 37px;
+  // text-wrap: nowrap;
+  // for firefox text wrap could not be applied
+  width: max-content;
+}
+
+small {
+  position: relative;
+  display: inline-block;
+  animation: moving 30s infinite linear;
+}
+
+@keyframes moving {
+  from {
+    left: 0;
+  }
+  to {
+    left: -3000px;
+  }
+}
