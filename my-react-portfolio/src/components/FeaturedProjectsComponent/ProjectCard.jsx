@@ -26,7 +26,9 @@ export const ProjectCard = ({ repo }) => {
             </span>
           ))}
         </div>
-        <ButtonComponent />
+        <ButtonComponent 
+        repoURL={repo.html_url}
+        deployedSite={repo.homepage}/>
       </div>
     </div>
   );

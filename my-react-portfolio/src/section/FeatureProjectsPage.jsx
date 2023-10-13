@@ -5,7 +5,7 @@ import { Headline } from "../components/Headline";
 export const FeatureProjectsPage = () => {
     const headerText = "Featured Projects";
     const githubUsername = 'VAstrom';
-    const specificRepositories = ['project-happy-thoughts-vite', 'project-survey-vite', 'project-music-releases-vite', 'project-weather-app', 'project-guess-who', 'project-chatbot', 'project-news-site'];  // Add the specific repositories you want to fetch
+        const specificRepositories = ['project-happy-thoughts-vite', 'project-survey-vite', 'project-music-releases-vite', 'project-weather-app', 'project-guess-who', 'project-chatbot', 'project-news-site'];  // Add the specific repositories you want to fetch
 
     const [repos, setRepos] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -30,15 +30,16 @@ export const FeatureProjectsPage = () => {
                 const specificReposData = await Promise.all(specificReposPromises);
                 // the spread operator is used to create a new array with a shallow copy of all the elements from the specificReposData array. Essentially, it's creating a new array with the same data as specificReposData.
                 setRepos([...specificReposData]);
+                console.log('data is:', repos);
             } catch (error) {
                 setError('Error fetching data');
             } finally {
                 setLoading(false);
             }
         };
-
-        fetchData();
-    }, [githubUsername, specificRepositories]);
+       
+        fetchData();    
+    }, []);
 
     return (
         <div className="featured-page-wrapper">
