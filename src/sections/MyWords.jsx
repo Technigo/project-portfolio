@@ -4,10 +4,11 @@ import { ArticleCard } from "./components/ArticleCard.jsx";
 export const MyWords = () => {
     return (
         <section className="mywords-section">
-            <img src="src/assets/elements/divider.svg" alt="a wavy line" />
+            <div className="wavy-line-wrapper">
+                <img className="wavy-line" src="src/assets/elements/divider.svg" alt="a wavy line" />
+            </div>
             <div className="mywords-wrapper">
-                    
-                <MainHeading className={`dark-h2`} text={`My Words`}/>
+                <MainHeading className={`mywords-h2`} text={`My Words`}/>
                 <ArticleCard />
             </div>
         </section>

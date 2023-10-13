@@ -2,6 +2,8 @@ import { MainHeading } from "./components/Typo/MainHeading.jsx";
 import { SubHeading } from "./components/Typo/SubHeading.jsx";
 import { SocialMedia } from "./components/SocialMedia.jsx";
 
+import profile  from "../assets/extraaa/profile-pic.jpg";
+
 export const LetsTalk = () => {
 
     const contactInfoName = "Vera Witting"
@@ -11,8 +13,10 @@ export const LetsTalk = () => {
     return (
         <section className="letstalk-section">
             <MainHeading className={`dark-h2`} text={`Let's Talk!`}/>
-            <div className="image-cropper">
-                <img src="src/assets/profile-pic.jpg" alt="A picture of Vera Witting" />
+            <div className="image-wrapper">
+                <div className="image-cropper">
+                    <img src={profile} alt="A picture of Vera Witting" />
+                </div>
             </div>
             <div className="info-wrapper">
                 <SubHeading text={contactInfoName}/>

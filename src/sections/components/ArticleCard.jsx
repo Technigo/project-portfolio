@@ -9,7 +9,7 @@ export const ArticleCard = ( ) => {
     console.log("TESTING ARRAY:",articles[0].name);
 
     return (
-        <div>
+        <div className="article-cards">
             <ul>
                 {articles.map((article) => {
                  return (
@@ -18,7 +18,7 @@ export const ArticleCard = ( ) => {
                         <p className="article-date">{article.date}</p>
                         <SubHeading className={`dark-h3`} text={article.name}/>
                         <BodyText text={article.text}/>
-                        <Button link={article.link} buttonName={`Read Article`} icon={`src/assets/button-icons/doc.svg`} iconAlt={`A document icon`}/>
+                        <Button className={`article-button`} buttonName={`Read Article`} link={article.link} icon={`src/assets/button-icons/doc.svg`} iconAlt={`A document icon`}/>
                     </li>
                     )
                 })}

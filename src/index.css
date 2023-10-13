@@ -4,9 +4,6 @@
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /*VAD SKA MAN HA HÄR EGEEENTLIGEN?*/
-  /*VARFÖR ÄR DEN SÅ STOOOOOR?!?!?*/
 }
 
 *{
@@ -42,71 +39,29 @@ h3 {
   margin-bottom: 16px;
 }
 
-.arrow {
-  height: 30px;
-}
 
-/*NOT WORKING PROPERLY*/
-.line-container {
-  margin: 0 -20px;
-  width: 100%;
-  overflow: hidden; /* Hide any overflow */
-}
-
-.line-container img {
-  width: 100%;
-  object-fit: repeat; /* Repeat the image */
-}
 
 /*INTRODUCTION*/
-.introduction-section {
-  padding: 64px 0px; 
-  display: flex;
-  flex-direction: column;
-  gap: 32px; 
-}
-.dark-h2-introduction {
-  font-size: 32px;
-  color: blue;
-}
 
+/*PROFILBILD LÅT STÅ*/
 .image-wrapper {
   display: flex;
   justify-content: center;
 }
 
 .image-cropper {
-  max-width: 164px;
+  display: inline-block;
+  position: relative;
+  width: 164px;
   height: 164px;
   overflow: hidden;
   border-radius: 50%;
-  
 }
 
-.image-cropper img {
-  display: inline;
-  margin: -14px 0 0 0;
-  height: 140%;
-  width: auto;
-}
-
-/*the arrow*/
-
-@keyframes moveUpDown {
-
-  0%, 100% {
-    transform: translateY(0);
-  }
-  25%, 75% {
-    transform: translateY(-10px);
-  }
-}
-
-.arrow {
-  margin: 20px 0 0 ; 
-  display: flex;
-  justify-content: center;
-  animation: moveUpDown 1s linear infinite;
+.image-cropper > img {
+  width: 100%;
+  height: auto;
+  margin-top: -15px;
 }
 
 /*TECH*/
@@ -143,6 +98,7 @@ h3 {
 }
 
 .headings-featured-projects {
+  text-align: center;
   display: flex;
   justify-content: center;
 }
@@ -154,11 +110,9 @@ h3 {
 .projects-list-item {
   list-style-type: none;
   padding: 16px 0;
-
 }
 
 .project-img {
-  width: 100%;
   border-bottom: solid 10px blue ;
   border-left: solid 10px blue ;
   height: 200px;
@@ -183,55 +137,48 @@ h3 {
   font-weight: 600;
 } 
 
-.button {
-  display: inline-block;
-}
-
-.button a {
-  display: inline-block;
-  background-color: #F5F5F5;
-  color: #333;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  padding-right: 12px;
-  text-decoration: none;
-  border-radius: 25px;
-}
-
-.button img {
-  height: 40px;
-}
-
-.button-content-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-
 /*ARTICLE SECTION*/
 .mywords-section {
   margin: 0 -16px;
   background-color: pink;
   z-index: 2; 
   position: relative; 
-
 }
 
 .mywords-wrapper {
   margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 128px 16px;
 }
 
-.mywords-section img {
+/*WAVYLINE (ÄVEN I MYWORDS-SECTION)*/
+.wavy-line-wrapper img {
   z-index: 1;
   position: relative; 
   top: -13px;
   overflow: hidden;
 }
 
+.mywords-h2 {
+  color: hotpink;
+  display: flex;
+  justify-content: center;
+}
+
+.article-cards ul li {
+  list-style-type: none;
+  padding: 64px 0;
+}
+
 .article-img {
-  width: 100%;
   border-bottom: solid 10px hotpink ;
   border-left: solid 10px hotpink ;
+  height: 200px;
+  width: 100%;
+  object-fit: cover; 
+  margin-bottom: 10px;
+  
 }
 
 .article-date {
@@ -241,13 +188,13 @@ h3 {
   background-color: black;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 600; 
 }
 
 /*SKILLS*/
 .skills-section {
   margin: 0 -16px; 
-  background-color: bisque;
+  background-color: blue;
 }
 
 .skills-wrapper {
@@ -255,19 +202,33 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 128px 16px;
+  gap: 64px;
+}
+
+.single-list-wrapper {
+  width: 100%;
 }
 
 .sub-heading-skills {
+  display: inline-block;
+  text-align: center;
   background-color: #ff69b4;
+  color: #fffdf6;
 }
 
 .skills-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #fffdf6;
 }
 
-/*LEtS TALK*/
+.skills-list p {
+  margin-bottom: 0px;
+}
+
+/*LETS TALK*/
 .letstalk-section {
   margin: 128px 0 ;
   display: flex;
@@ -281,38 +242,5 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-
-.social-media-wrapper {
-  display: flex;
-  gap: 32px; 
-}
-
-
-/*FOOTER*/
-.footer {
-  margin: 0 -16px;
-  padding: 40px 0px;
-  position: relative;
-  overflow: hidden;
-  background-color: hotpink;
-}
-.moving-text {
-  white-space: nowrap;
-  animation: moveLeftToRight 10s linear infinite;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  color: #FFF;
-}
-@keyframes moveLeftToRight {
-  0% {
-    transform: translateX(100%);
-    /* Start from the right of the container. */
-  }
-  100% {
-    transform: translateX(-100%);
-    /* Move to the left of the container. */
-  }
-}
-
 
 

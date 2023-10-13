@@ -17,15 +17,23 @@ export const Skills = () => {
     return(
         <section className="skills-section">
             <div className="skills-wrapper">
-                <MainHeading className={`dark-h2`} text={`Skills`}/>
-                <SubHeading className={`sub-heading-skills`} text={`Code`} />
-                <SkillsList list={CodeList} />
-                <SubHeading className={`sub-heading-skills`} text={`Toolbox`} />
-                <SkillsList list={ToolboxList}/>
-                <SubHeading className={`sub-heading-skills`} text={`Upcoming`} />
-                <SkillsList list={UpcomingList}/>
-                <SubHeading className={`sub-heading-skills`} text={`More`} />
-                <SkillsList list={MoreList}/>
+                <MainHeading className={`light-h2`} text={`Skills`}/>
+                <div className="single-list-wrapper">
+                    <SubHeading className={`sub-heading-skills`} text={`Code`} />
+                    <SkillsList list={CodeList} />
+                </div>
+                <div className="single-list-wrapper">
+                    <SubHeading className={`sub-heading-skills`} text={`Toolbox`} />
+                    <SkillsList list={ToolboxList}/>
+                </div>
+                <div className="single-list-wrapper">
+                    <SubHeading className={`sub-heading-skills`} text={`Upcoming`} />
+                    <SkillsList list={UpcomingList}/>
+                </div>
+                <div className="single-list-wrapper">
+                    <SubHeading className={`sub-heading-skills`} text={`More`} />
+                    <SkillsList list={MoreList}/>
+                </div>
             </div>
         </section>
     )
