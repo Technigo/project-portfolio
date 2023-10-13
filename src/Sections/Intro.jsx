@@ -1,10 +1,11 @@
 import "./Intro.css";
 //import { Headline } from "./Headline";
+import jag from "../assets/jag1.png";
 
 export const Intro = () => {
   return (
     <div className="intro-container">
-      <img src="/src/assets/jag1.png" alt="Image" className="centered"></img>
+      <img src={jag} alt="Image" className="centered"></img>
       <h2>Hi, I'm Frida Lindskog</h2>
       <h1>Frontend Developer</h1>
       <p>

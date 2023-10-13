@@ -1,6 +1,7 @@
 import { LinkButton } from "./LinkButton";
 import projects from "../../projects.json";
 import view from "../assets/view.png";
+import livedemo from "../assets/livedemo.png";
 
 import "./Links.css";
 
@@ -11,7 +12,7 @@ export const Links = () => {
         <LinkButton
           buttonText=""
           url={projects.projects[0].netlify}
-          icon="/src/assets/livedemo.png"
+          icon={livedemo}
         />
         <LinkButton
           buttonText=""
