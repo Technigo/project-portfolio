@@ -5,6 +5,7 @@ import { Projects } from "./Projects";
 import "./Section.css";
 import { Tech } from "./Tech";
 import { Skills } from "./Skills";
+import { Info } from "./Info";
 
 export const Section = () => {
   return (
@@ -19,6 +20,8 @@ export const Section = () => {
         <Articles />
 
         <Skills />
+
+        <Info />
       </div>
     </>
   );
