@@ -22,25 +22,12 @@
 
 .presentation-container h1 {
   color: #0B24F5;
-  font-family: Montserrat;
-  font-size: calc(1.5rem + 1vw);
   margin-top: 0px;
 }
 
 .presentation-container h3 {
   color: #000;
-  font-family: Montserrat;
-  font-size: calc(1rem + 0.5vw);
   margin-bottom: 0px;
-}
-
-@media (max-width: 600px) {
-  .presentation-container h1 {
-    font-size: 1.8rem;
-  }
-  .presentation-container h3 {
-    font-size: 1.2rem;
-  }
 }
 
 .avatar {
@@ -54,4 +41,19 @@
   width: 1.6875rem;
   height: 4.25rem;
   align-self: center;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  
+  40% {
+    transform: translateY(-30px);
+  }
+  
+  60% {
+    transform: translateY(-15px);
+  }
 }
