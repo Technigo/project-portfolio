@@ -1,15 +1,17 @@
-import { useState } from 'react'
 import './App.css'
-import { Introduction } from './components/sections/Introduction'
-import { Tech } from './components/sections/Tech'
+import { Introduction } from './components/sections/Introduction.jsx'
+import { Tech } from './components/sections/Tech.jsx'
+import { Contact } from './components/sections/Contact.jsx'
+import { Projects } from './components/sections/Projects.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
 
   return (
     <>
     <Introduction />
     <Tech />
+    <Projects />
+    <Contact />
     </>
   )
 }
