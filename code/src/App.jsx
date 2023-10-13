@@ -1,5 +1,5 @@
 import './App.css'
-import TopSection from './components/TopSection.jsx';
+import Header from './components/Header.jsx';
 import Tech from './components/Tech.jsx';
 import Projects from './components/Projects.jsx'
 import Thoughts from './components/Thoughts.jsx';
@@ -9,11 +9,8 @@ function App() {
 
   return (
     <body>
-      <TopSection />
-      <Tech />
-      <Projects />
-      <Thoughts />
-      <Contact />
+      <Header />
+
     </body>
   )
 }
