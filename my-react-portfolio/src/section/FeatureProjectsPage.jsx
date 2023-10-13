@@ -1,3 +1,4 @@
+import "./featuredProjectsPage.css"
 import { useState, useEffect } from "react";
 import { FeaturedProjects } from "../components/FeaturedProjectsComponent/FeaturedProjects";
 import { Headline } from "../components/Headline";
