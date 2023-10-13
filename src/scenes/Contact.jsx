@@ -14,7 +14,7 @@ export const Contact = () => {
           <div className="profile-image-container">
             <img src={profileImg} alt="profile image" />
           </div>
-          <p className="contact-info">
+          <p className="contact-info titles">
             Julia Holm <br /> +46(0)768 23 17 17 <br /> juliat.holm@gmail.com
           </p>
           <div className="social-icons">

@@ -13,7 +13,7 @@ export const Skills = () => {
                 className="category-title"
                 style={{ backgroundColor: skill.bg_color }}
               >
-                <h4>{skill.category} </h4>
+                <h3 className="titles">{skill.category} </h3>
               </div>
               <ul className="text-css">
                 {Array.isArray(skill.items)
