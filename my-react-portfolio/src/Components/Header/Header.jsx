@@ -1,4 +1,4 @@
-import { Description } from "../../ReusableComponents/Button"
+import { Description } from "../../ReusableComponents/Description"
 import { CardHeading } from "../../ReusableComponents/CardHeading.jsx"
 import { MyPhoto } from "../../ReusableComponents/MyPhoto.jsx"
 
