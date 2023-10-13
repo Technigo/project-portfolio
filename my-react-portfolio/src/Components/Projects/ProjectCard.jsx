@@ -1,9 +1,9 @@
 
 import { Description } from "../../ReusableComponents/Description.jsx"
-import { CardHeading } from "../../ReusableComponents/CardHeading.jsx"
 import { SectionHeading } from "../../ReusableComponents/SectionHeading.jsx"
 import { Tag } from "../../ReusableComponents/Tag.jsx"
 import { Button } from "../../ReusableComponents/Button.jsx"
+import "./ProjectCard.css"
 
 
 
@@ -18,18 +18,23 @@ export const ProjectCard = ( props ) => {
 
   return (
    <>
-       <CardHeading className="blue-heading" text="Frontend Developer" />
+    
    <div className="card-wrapper">
         <div className="image-wrapper">
           <img src={imgProject} alt={nameProject} />
+        </div>
+        <div className="description-wrapper">
           <div className="details-wrapper">
-            <SectionHeading text={nameProject} />
-            <Description text={descriptionProject} />
-            <Tag tagItem={techniquesProject} />
+            <SectionHeading  className="project-heading" text={nameProject} />
+            <Description   className="project-paragraph" text={descriptionProject} />
+          <Tag tagItem={techniquesProject} />
+          </div>
+          <div className="button-wrapper">
             <Button label="Netlify" path={netlifyProject} className="button-netlify" />
             <Button label="GitHub" path={githubProject} className="button-github" />
+            </div>
           </div>
-        </div>
+        
       </div>
       </>
   );

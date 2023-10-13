@@ -14,7 +14,7 @@ export const App = () => {
   return (
     <>
    <main>
-    <Header />
+       <Header />
         <Tech />
         <Projects />
         <Articles />

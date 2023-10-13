@@ -1,45 +1,35 @@
 .skills-wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 128px 16px;
-  align-items: center;
-  background-color: var(--firstly-color);
-  gap: 64px;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 20px;
+  background-color: #0B24F5;
+  color: white;
+}
+.skills h4{
+  background-color: #e95778;
+  display: inline;
+  padding: 0 2px;
 }
 .description-skills{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
-@media (min-width: 667px) and (max-width: 1024px){
+.description-skills ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
+@media (min-width: 667px) and (max-width: 1024px){
+  .description-skills{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1025px){
-.skills-wrapper{
-display: grid;
-grid-template-rows: repeat(12, 1fr);
-height: 500px;
-background-color: var(--firstly-color);
+  .description-skills{
+    grid-template-columns: repeat(4, 1fr);
   }
-  /* .white-heading{
-    grid-column: 4 / span 4;
-  } */
-.skills p{
-  color: #FFF;
-  font-family: Hind;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.skills h4{
-  background-color: var( --secondly-color) ;
-  
-}
-.description-skills{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap:20px;
-}
 }

@@ -1,5 +1,6 @@
 import { ProjectCard } from "./ProjectCard"
 import projectData from "../../projectData.json"
+import { CardHeading } from "../../ReusableComponents/CardHeading.jsx"
 
 let projectsArray = projectData.projects;
 console.log(projectsArray);
@@ -7,8 +8,8 @@ console.log(projectsArray);
 export const  Projects = () => {
   return (
     <>
-       <div>
-      <h2>Projects</h2>
+       <div className="project-wrapper">
+       <CardHeading className="blue-heading" text="Frontend Developer" />
       {projectsArray.map((project, index) => (
         <ProjectCard key={index} projects={project} />
       ))}

@@ -7,40 +7,47 @@ return (
 
   <div className="description-skills">
     <div className="skills">
-      <h4>Code</h4>
-        <p> HTML5
-          CSS3
-          Javascript
-          ES6 React
-          Styled Components
-          GitHub</p>
+        <h4>Code</h4>
+        
+        <ul>
+          <li>HTML5</li>
+          <li> CSS3</li>
+          <li>Javascript</li>
+          <li>ES6 React</li>
+          <li>Styled Components</li>
+          <li>GitHub</li>
+          </ul>
 
     </div>
     <div className="skills">
       <h4>Toolbox</h4>
-      <p>Atom
-        Postman
-        Adobe Photoshop
-        Adobe Illustrator
-        Figma
-        Keynote
-        Slack</p>
+        <ul>
+          <li>Atom</li>
+          <li>Postman</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+          <li>Figma</li>
+          <li>Keynote</li>
+          <li>Slack</li>
+        </ul>
 
     </div>
     <div className="skills">
       <h4>Upcoming</h4>
-      <p>Node.js</p>
+      <ul>Node.js</ul>
 
     </div>
     <div className="skills">
       <h4>More</h4>
-      <p>Design Lead
-        Branding
-        Strategy
-        Process design
-        Concept development
-        Agile methodology
-        Hyper Island toolbox</p>
+        <ul>
+        <li>Design Lead</li>
+        <li>Branding</li>
+        <li>Strategy</li>
+        <li>Process design</li>
+        <li>Concept development</li>
+        <li>Agile methodology</li>
+        <li> Hyper Island toolbox</li>
+       </ul>
 
     </div>
   </div>

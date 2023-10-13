@@ -1,8 +1,8 @@
-
+import "./Articles.css"
 
 export const Articles = () => {
   return (
-    <div>Articles</div>
+    <div className="article-wrapper">Articles</div>
   )
 }
 
