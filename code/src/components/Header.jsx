@@ -11,9 +11,9 @@ const TopSection = () => {
             </div>
             <div className="content">
                 <h2>Hi, I'm Lisa Dahlkar</h2>
-                <h1>Front End Developer</h1>
-                <img className="img-me" src="Lisa.JPG" alt="A picture of Lisa Dahlkar" />
+                <h1>Junior Front End Developer</h1>
                 <p>hejhej text lalalal</p>
+                <img className="img-me" src="Lisa.JPG" alt="A picture of Lisa Dahlkar" />
             </div>
         </div>
     );
