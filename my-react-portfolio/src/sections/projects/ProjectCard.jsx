@@ -1,7 +1,14 @@
 import React from 'react'
 
-export const ProjectCard = () => {
+export const ProjectCard = ({ name, image, description, tags, netlify, github }) => {
     return (
-        <div>ProjectCard</div>
+        <div>ProjectCard
+            {image}
+            {name}
+            {description}
+            {tags}
+            {netlify}
+            {github}
+        </div>
     )
 }
