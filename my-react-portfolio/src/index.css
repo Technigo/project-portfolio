@@ -1,25 +1,26 @@
 :root {
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: blue;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+
 }
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body {
-  background: white;
+* {
+  box-sizing: border-box;
 }
 
 
@@ -53,25 +54,24 @@ text-align: left;
 color: #000000;
 }
 .container {
-  max-width: 1280px; /* Set your desired maximum width */
-  height: auto;
-  padding: 128px 0;
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 0 20px; /* Add some padding to the sides for spacing */
+  width: 1512px; /* Changed to 100% for responsiveness */
+  max-width: 1512px; /* Set max-width to the value you originally wanted */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Retained your padding */
 }
 .top-section {
-  width: 1280px;
+  width: 100%; /* Full width of the parent container */
   height: auto;
   padding: 128px 0;
-  height: 400px;
   background-color: #FFFFFF;
-  display: flex; /* Enable flexbox layout */
-  align-items: center; /* Center content horizontally */
-  justify-content: center; /* Center content vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 337px 0 336px; /* Left margin 336px, Right margin 337px */
 }
 
 .heading-container {
-  width: 839px;
+  margin: 0 auto; /* Center the container horizontally */
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -95,34 +95,32 @@ color: #000000;
   letter-spacing: 0em;
   text-align: left;
   color: #0B24F5;
-  display: inline;
-  width: 100%;  /* Display h2 text on the same line */
 }
+
 .heading-paragraph-class {
   font-family: Hind;
   font-size: 18px;
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
-  text-align: left; /* Center text horizontally */
+  text-align: left;
   color: black;
-  width: 600px;
 }
 
 .image-paragraph-section {
   display: flex;
   align-items: center;
-  gap: 16px; /* Add some space between the image and the paragraph */
+  gap: 32px;  /* Increase or decrease this value to adjust the spacing */
 }
+
 .image-another-class {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-
 .tech {
-  width: 1280px;
+  width: 100%; 
   padding: 128px 0;
   height: 980px;
   top: 982px;
@@ -162,6 +160,7 @@ color: #000000;
 .project-list {
   margin-left: 346px; /* Add margin-left to push it 346px from the left of its containing element */
   gap: 128px; /* Add gap between its children */
+  background-color: #FFFFFF;
 }
 
 .classh2project {
@@ -205,10 +204,10 @@ color: #000000;
   height: 48px;
   top: 708px;
   left: 968px;
-  padding: 0px 16px 0px 0px;
+  padding: 0px 16px;
   border-radius: 40px;
   gap: 7px;
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
@@ -231,7 +230,7 @@ color: #000000;
 
 
   .presentation {
-  width: 1280px;
+  width: 100%;
   height: 500px;
   top: 5580px;
   Background-color: #FFECEA;
@@ -262,7 +261,7 @@ color: #000000;
 
 
   .skills {
-  width: 1280px;
+  width: 100%;
   height: auto;
   padding: 128px 0;
   background-color: #0B24F5;
@@ -347,12 +346,13 @@ color: #000000;
  
   
   .contact {
-    width: 1512px;
+    width: 100%;
     padding: 128px 0; /* Adjust the padding */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #FFFFFF;
     /* Remove height and top properties */
   }
   
@@ -402,3 +402,37 @@ color: #000000;
   .contact-link:hover svg {
     fill: #000; /* Set the color to black on hover */
   }
+
+  @keyframes swooshText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+  .footer {
+    width: 100%;
+    height: 114px;
+    background-color: #FF4575;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-text {
+    width: 1480px;
+    height: 38px;
+    top: 41px;
+    left: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    position: absolute;
+    animation: swooshText 15s linear infinite;
+    white-space: nowrap;
+  }
+  

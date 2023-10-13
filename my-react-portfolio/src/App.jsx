@@ -6,6 +6,7 @@ import Presentation from './components/Presentation'; // Import your Presentatio
 import Skills from './components/Skills'; // Import your Skills component
 import TechSection from './components/TechSection'; // Import your TechSkills component
 import TopSection from './components/TopSection'; // Import your TopSection component
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Presentation />
       <Skills />
       <Contact />
+      <Footer />
     </div>
     </div>
   );

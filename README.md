@@ -51,15 +51,15 @@ Open up a terminal inside VS code and lets run the project in a local environmen
 
 ## Author
 
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.technigo.io/)
-[![@Technigo](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://se.linkedin.com/school/technigo/)
-[![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/Technigo)
+[![portfolio]
+[![@Technigo](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://se.linkedin.com/school/)
+[![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/Cocofnas)
 
 PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 
 ### Hi, I'm Technigo! 👋
 
-Welcome to my first React portfolio project! I am Technigo, a student who has completed Sprint 2 of the boot camp and is now taking my skills to the next level. This portfolio showcases my mastery of React concepts, implementing components, props, hooks, and web APIs to create a dynamic and interactive website.
+Welcome to my first React portfolio project! I am Alexandra, a student who has completed Sprint 2 of the boot camp and is now taking my skills to the next level. This portfolio showcases my mastery of React concepts, implementing components, props, hooks, and web APIs to create a dynamic and interactive website.
 
 By breaking down the project into reusable components and efficiently passing data with props, I've ensured a well-structured and organized codebase. Utilizing React hooks, particularly the useState hook, has allowed me to manage reactive data and create an engaging user experience.
 
@@ -75,15 +75,13 @@ PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 
 ### Lessons Learned
 
-Through this project, I, Technigo, have learned invaluable lessons in React development. I now understand the power of components and props in creating a modular and organized codebase. React hooks, especially useState, have allowed me to manage state and interactivity effectively. Integrating web APIs taught me the importance of data fetching and dynamic content display, keeping my portfolio up-to-date effortlessly. Additionally, focusing on accessibility has made me more aware of creating inclusive user experiences. Overall, this project has honed my skills in clean coding practices and emphasized the significance of continuous testing and deployment for a successful web application. The experience has been enriching, and I am excited to apply these lessons in future projects to further enhance my coding journey.
+So I struggled quite a bit and I have this left:
+-I realized now that I lack the outer containers for the different components.
+-I don't have thumbnails
+-I didn't figure out how to make the hover effect 
 
-PLEASE SWAP INFORMATION FOR YOUR OWN 😉
+For me now it's more an acceptance that hey I don´t know everything yet and hand in what I have.
 
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 
 ##### Want to create your own README.md ?
 
