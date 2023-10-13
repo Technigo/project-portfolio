@@ -1,10 +1,8 @@
-import styles from "./Tag.module.css";
-
 const Tag = ({ children }) => {
     return (
-        <div className={styles.tag}>
+        <span className="bg-black text-white px-2 py-1 text-sm">
             {children}
-        </div>
+        </span>
     )
 }
 

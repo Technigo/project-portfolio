@@ -1,13 +1,11 @@
 import Articles from './components/articles/Articles';
-import Button from './components/button/Button';
-import Tag from './components/tag/Tag';
+import Introducton from './components/introduction/Introduction';
 
 const App = () => {
     return (
         <>
+            <Introducton />
             <Articles />
-            <Tag>HTML</Tag>
-            <Button>Test</Button>
         </>
     );
 }

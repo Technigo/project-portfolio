@@ -1,5 +1,6 @@
+import Button from "../button/Button";
 import Photo from "../photo/Photo";
-import styles from "./Article.module.css";
+import Tag from "../tag/Tag";
 
 const Article = ({
     title,
@@ -15,11 +16,12 @@ const Article = ({
                 src={imageUrl}
                 alt={imageAlt}
                 color="#FF4575"
+                className="mb-6"
             />
-            {/* TODO: Insert Tag component here with createdAt as value */}
-            <h3>{title}</h3>
-            <p>{preview}</p>
-            {/* TODO: Insert Button component here */}
+            <Tag>{createdAt}</Tag>
+            <h3 className="mt-2 mb-4 text-2xl font-semibold">{title}</h3>
+            <p className="mb-6">{preview}</p>
+            <Button href={articleUrl} className="bg-gray-100 hover:bg-gray-300">Read more</Button>
         </div>
     )
 }

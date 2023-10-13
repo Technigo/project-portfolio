@@ -1,20 +1,20 @@
-import styles from "./Photo.module.css";
-
 const Photo = ({
     src,
     alt,
     color,
+    className,
 }) => {
+    const border = `20px solid ${color}`;
     return (
-        <div className={styles.wrapper}>
+        <div className={`relative ${className}`}>
             <div
-                style={{ boxShadow: `${color} 20px -20px 0 0 inset` }}
-                className={styles.border}
+                style={{ borderLeft: border, borderBottom: border }}
+                className="absolute w-full h-full"
             />
             <img
                 src={src}
                 alt={alt}
-                className={styles.photo}
+                className="w-full object-cover"
             />
         </div>
     );
