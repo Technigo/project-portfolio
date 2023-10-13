@@ -10,8 +10,8 @@ export const ArticleCard = ({ title, imageUrl, tagText, description, link }) => 
     return (
         <div className="project-card">
             <Image
-                sectionClassName={"project-img"}
-                elementClassName={"project-img"}
+                sectionClassName={"article-img"}
+                elementClassName={"article-img"}
                 link={imageUrl} // Use the passed imageUrl
                 ImageAltText={title} // Use the title as alt text
             />

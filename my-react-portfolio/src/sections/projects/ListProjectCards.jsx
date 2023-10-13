@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './projects.css';
 import { ProjectCard } from './ProjectCard';
 
-import repoImages from '/src/image-repo.json'; // Import the JSON file
+import repoData from '/src/repo-data.json'; // Import the JSON file
 
 export const ListProjectCards = () => {
     const [projects, setProjects] = useState([]);
@@ -19,7 +19,7 @@ export const ListProjectCards = () => {
                 const data = await response.json();
 
                 // Filter repositories based on the names defined in the JSON file
-                const desiredRepoNames = repoImages.map((img) => img.repoName);
+                const desiredRepoNames = repoData.map((img) => img.repoName);
                 const filteredProjects = data.filter((project) =>
                     desiredRepoNames.includes(project.name)
                 );
@@ -30,7 +30,7 @@ export const ListProjectCards = () => {
                 // Match repositories with images based on the JSON data
                 const projectsWithImages = filteredProjects.map((project) => ({
                     ...project,
-                    imageUrl: repoImages.find((img) => img.repoName === project.name)?.imageUrl,
+                    imageUrl: repoData.find((img) => img.repoName === project.name)?.imageUrl,
                 }));
 
                 setProjects(projectsWithImages);
