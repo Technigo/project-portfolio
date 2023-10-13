@@ -6,6 +6,7 @@ import { Headline } from "./Components.jsx/Headlines";
 import { Presentation } from "./Components.jsx/Presentation";
 import { Tech } from "./Components.jsx/Tech";
 import { Projects } from "./Components.jsx/Projects";
+import { MyWords } from "./Components.jsx/MyWords";
 import { Skills } from "./Components.jsx/Skills";
 import { Contact } from "./Components.jsx/Contact";
 import { Footer } from "./Components.jsx/Footer";
@@ -17,6 +18,7 @@ function App() {
       <Headline />
       <Tech />
       <Projects />
+      <MyWords />
       <Skills />
       <Contact />
       <Footer />
