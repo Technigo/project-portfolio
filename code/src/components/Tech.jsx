@@ -1,12 +1,12 @@
 import React from "react";
-import "./src/assets/components/tech.css";
+
 
 const Tech = () => {
     return (
         <div className="tech">
-            <h1>hej</h1>
+            <p>hej</p>
         </div>
     );
 };
 
-export default Tech; 
+export default Tech;
