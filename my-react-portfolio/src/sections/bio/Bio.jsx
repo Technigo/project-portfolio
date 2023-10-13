@@ -1,5 +1,5 @@
 import "./bio.css";
-// import arrowDown from "../../assets/arrowDown.svg";
+import arrowDown from "../../assets/arrowDown.svg";
 import profilePic from "../../assets/Bild.jpg";
 
 export const Bio = () => {
@@ -21,7 +21,7 @@ export const Bio = () => {
           beatae cum praesentium at. Expedita officiis ullam asperiores deleniti
           numquam tempora perferendis a?
         </p>
-        {/* <img className="arrow-down" src={arrowDown} alt="arrow-pointing-down" /> */}
+        <img className="arrow-down" src={arrowDown} alt="arrow-pointing-down" />
       </div>
     </div>
   );
