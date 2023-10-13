@@ -29,21 +29,19 @@ function Post({ blog }) {
   const { text, title, date, url, imagePath, imageDescription } = blog;
   return (
     <article className={styles.post_card}>
-      <ImageFrame
-        imagePath={imagePath}
-        borderColor={secondaryColorText}
-        description={imageDescription}
-      />
+      <div className={styles.image_wrapper}>
+        <ImageFrame
+          imagePath={imagePath}
+          borderColor={secondaryColorText.color}
+          description={imageDescription}
+        />
+      </div>
       <Label labelText={date} />
       <Title text={title} />
       <p className={styles.post_text}>{text}</p>
-      <Button
-        text="Read Article"
-        iconPath="/icons/doc.png"
-        url={url}
-        background="#fff"
-        hoverColor={yellowColor.color}
-      />
+      <Button iconPath="/icons/doc.png" url={url} background="#fff" hoverColor={yellowColor.color}>
+        Read Article
+      </Button>
     </article>
   );
 }

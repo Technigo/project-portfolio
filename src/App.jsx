@@ -10,34 +10,11 @@ import { Button } from "./components/ui/Button";
 
 import "./styles/reset.css";
 import "./styles/global.scss";
+import { ScrollButton } from "./components/ui/ScrollButton/ScrollButton";
 
 function App() {
   const arrowRef = useRef(null);
-  const [visible, setVisible] = useState(false);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  useEffect(() => {
-    const toggleVisible = () => {
-      const scrolled = document.documentElement.scrollTop;
-      console.log(scrolled);
-
-      if (scrolled > 1000) {
-        setVisible(true);
-      } else if (scrolled <= 1000) {
-        setVisible(false);
-      }
-    };
-    window.addEventListener("scroll", toggleVisible);
-    return () => {
-      window.removeEventListener("scroll", toggleVisible);
-    };
-  }, []);
   return (
     <main>
       <Hero arrowRef={arrowRef} />
@@ -46,14 +23,8 @@ function App() {
       <Blog />
       <Skills />
       <Contact />
+      <ScrollButton />
       <Footer />
-      <button
-        onClick={scrollToTop}
-        className="toTop-btn"
-        style={{ display: visible ? "inline" : "none" }}
-      >
-        <img src="/icons/arrow.svg" />
-      </button>
     </main>
   );
 }

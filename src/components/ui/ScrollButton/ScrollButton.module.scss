@@ -1,0 +1,21 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+.button img {
+  position: fixed;
+  transform: rotate(180deg);
+  bottom: 120px;
+  right: 56px;
+  z-index: 1000;
+}
+
+.button:after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  background-color: #f5f5f5;
+  z-index: 10;
+  border-radius: 50%;
+}

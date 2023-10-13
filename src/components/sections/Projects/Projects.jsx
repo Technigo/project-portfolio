@@ -8,7 +8,6 @@ import { projectsData as data } from "../../../statics/projectsData";
 
 import styles from "./Projects.module.scss";
 
-
 export default function Projects() {
   return (
     <section className={styles.projects_section}>
@@ -30,7 +29,13 @@ function ProjectCard({ project }) {
   const { imagePath, title, skills, gitUrl, demoUrl, text } = project;
   return (
     <div className={styles.project_card}>
-      <ImageFrame imagePath={imagePath} borderColor="blue" description={`Image of ${title}`} />
+      <div className={styles.image_wrapper}>
+        <ImageFrame
+          imagePath={imagePath}
+          borderColor={primaryColorText.color}
+          description={`Image of ${title}`}
+        />
+      </div>
       <div className={styles.text_box}>
         <Title text={title} />
         <p className={styles.text}>{text}</p>
@@ -40,18 +45,12 @@ function ProjectCard({ project }) {
           ))}
         </div>
         <div className={styles.btn_box}>
-          <Button
-            text="Live demo"
-            iconPath="/icons/live-demo.png"
-            url={demoUrl}
-            hoverColor={primaryColorText.color}
-          />{" "}
-          <Button
-            text="View the code"
-            iconPath="/icons/github.png"
-            url={gitUrl}
-            hoverColor={secondaryColorText.color}
-          />
+          <Button iconPath="/icons/live-demo.png" url={demoUrl} hoverColor={primaryColorText.color}>
+            Live demo
+          </Button>
+          <Button iconPath="/icons/github.png" url={gitUrl} hoverColor={secondaryColorText.color}>
+            View the code
+          </Button>
         </div>
       </div>
     </div>
