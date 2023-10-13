@@ -7,6 +7,7 @@ import { SecFeaturedProjects } from './components/sections/SecFeaturedProjects'
 import { SecMywords } from './components/sections/SecMywords'
 import { SecSkills } from './components/sections/SecSkills'
 import { SecContact } from './components/sections/SecContact'
+import { Footer } from './components/footer/Footer'
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
         <SecMywords/>
         <SecSkills/>
         <SecContact/>
+        <Footer />
       </div>
         
     </>

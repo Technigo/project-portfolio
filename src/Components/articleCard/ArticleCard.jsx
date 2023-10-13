@@ -13,7 +13,7 @@ export const ArticleCard = ({articles}) => {
   return (
     <>
     <section className="article-wrapper">
-      <HeadingH1 className="article-heading" text="My words"/>
+      <HeadingH1 className="article-h1" text="My words"/>
 
       {articles.map((article, index)=> {
         return (
