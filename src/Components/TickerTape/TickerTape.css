@@ -1,0 +1,27 @@
+.ticker-tape {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #eb5577;
+  height: 114px;
+}
+
+.moving-text {
+  white-space: nowrap;
+  animation: moveLeftToRight 20s linear infinite;
+  font-family: Montserrat;
+  font-size: 26.04px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(100%);
+    /* Start from the right of the container. */
+  }
+  100% {
+    transform: translateX(-100%);
+    /* Move to the left of the container. */
+  }
+}
