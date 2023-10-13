@@ -1,3 +1,5 @@
+import './button.css'
+
 export const Button = ({ icon, label, link, className, onClick, ariaLabel }) => {
   const handleClick = () => {
     window.open(link, '_blank');
@@ -19,4 +21,3 @@ export const Button = ({ icon, label, link, className, onClick, ariaLabel }) => 
     </button>
   );
 };
-

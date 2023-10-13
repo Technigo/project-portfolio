@@ -20,9 +20,11 @@ export const ProjectCard = ({ project }) => {
                 level={3}
                 text={project.name}
                 aria-label="This is the main heading"
-                className="give-it-a-name"
+                className="project-card-heading"
             />
-            <Paragraph text={project.description} />
+            <Paragraph
+                text={project.description}
+            />
             {/* Add more project details you want to display */}
             <section className="tags">
                 <Tag tagText="HTML" className="custom-class" />
@@ -34,11 +36,13 @@ export const ProjectCard = ({ project }) => {
                 icon="/src/assets/social-icons/live-demo.svg" // Replace with icon path
                 label="Live demo"
                 link="https://www.example.com"
+                className="netlify-btn"
             />
             <Button
                 icon="/src/assets/social-icons/github-btn.svg" // Replace with icon path
                 label="View the code"
                 link={project.svn_url}
+                className="github-btn"
             />
         </div>
     );

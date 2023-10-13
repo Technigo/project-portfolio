@@ -6,7 +6,8 @@ import { articles } from './articlesData'; // Import the articles array
 export const Article = () => {
   return (
     <article className="article-container">
-      <Heading level={1} text="My Words" className="featured-articles" />
+      <article className="article-wrapper">
+      <Heading level={1} text="My Words" className="article-heading" />
       <div className="article-list">
         {articles.map((article, index) => (
           <ArticleCard
@@ -19,6 +20,7 @@ export const Article = () => {
           />
         ))}
       </div>
+      </article>
     </article>
   );
 };
