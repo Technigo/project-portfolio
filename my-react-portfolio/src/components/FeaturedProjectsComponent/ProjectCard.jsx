@@ -20,15 +20,15 @@ export const ProjectCard = ({ repo }) => {
       <div className="project-description">
         <ProjectHeadline repo={repo} />
         <div className="project-tags">
-          {repo.topics.map((topic, index) => (
-            <span key={index}>
+          {repo.topics.map((topic) => (
+            <span key={topic}>
               <TagComponent tag={topic} />
             </span>
           ))}
         </div>
-        <ButtonComponent 
-        repoURL={repo.html_url}
-        deployedSite={repo.homepage}/>
+        <ButtonComponent
+          repoURL={repo.html_url}
+          deployedSite={repo.homepage} />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { Headline } from "../components/Headline";
+import { ImagePortrait } from "../components/ImagePortrait";
 import { Textbox } from "../components/Textbox";
 
 export const ContactInfo = () => {
@@ -12,6 +13,7 @@ export const ContactInfo = () => {
     return (
         <div>
             <Headline headerText={headerText} />
+            <ImagePortrait />
             <div className="contact-information">
                 {contactInformation.map((info) => (
                     <Textbox key={info.id} text={info.text} />
