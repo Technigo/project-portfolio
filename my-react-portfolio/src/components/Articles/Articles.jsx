@@ -7,7 +7,7 @@ import './Articles.css';
 export const Articles = () => {
   return (
     <div className="articles-container">
-      <Headline className="headline" text="Articles" level={1} />
+      <Headline className="headline" text="My words" level={1} />
 
       {ArticleData.articles.map((article, index) => (
         <ArticleCard key={index} article={article} />
