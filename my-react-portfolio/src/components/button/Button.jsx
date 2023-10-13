@@ -1,13 +1,13 @@
-export const Button = ({ icon, label, link, className }) => {
-    const handleClick = () => {
-        window.open(link, '_blank');
-    };
+export const Button = ({ icon, label, link, className, onClick, ariaLabel }) => {
+  const handleClick = () => {
+    window.open(link, '_blank');
+  };
 
   return (
     <button
-      className={className}
-      onClick={handleClick}
-      aria-label={label} // Provide a meaningful label
+      className={`button ${className || ''}`}
+      onClick={onClick || handleClick}
+      aria-label={ariaLabel || label} // Allow custom aria-label
     >
       <img
         src={icon}
@@ -17,13 +17,6 @@ export const Button = ({ icon, label, link, className }) => {
       />
       <span className="label">{label}</span>
     </button>
-  );  
+  );
 };
 
-{/* HOW TO USE in component
-     <Button
-        icon="icon.png" // Replace with icon path
-        label="Visit Example.com"
-        link="https://www.example.com"
-      />
-*/}
