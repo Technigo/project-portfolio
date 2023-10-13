@@ -1,6 +1,7 @@
 import { Project } from "../components/Project";
+import projects from "../projects.json";
 
-fetch("https://api.github.com/users/YourGitHubProfile/repos")
+fetch("https://api.github.com/users/KroLuna/repos")
   .then((res) => res.json())
   .then((json) => console.log(json));
 

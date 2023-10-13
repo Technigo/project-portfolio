@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/prop-types */
 import { Photo } from "../components/Photo";
 
 export const Project = ({ name, photo, tags }) => {

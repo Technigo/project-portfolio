@@ -1,5 +1,14 @@
-import React from "react";
-
 export const Tech = () => {
-  return <div>Tech</div>;
+  return (
+    <section className="tech grid-parent">
+      <div className="wrapper">
+        <h1>Tech</h1>
+        <p>
+          HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js,
+          Mongo DB, Web Accessibility, API:s, mob-programming, pair-programming,
+          Github.
+        </p>
+      </div>
+    </section>
+  );
 };
