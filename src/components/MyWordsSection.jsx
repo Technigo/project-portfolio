@@ -4,15 +4,19 @@ import { HeaderText } from './HeaderComponents/HeaderText';
 
 export const MyWordsSection = ({ mywords }) => {
     return (
-        <div>
-            <HeaderText h1Text="My Words" />
+        <div className='MyWordsMap'>
+            <div className="myword-header-wrapper">
 
-            {mywords.map((myword, index) => ( // Changed MyWordsCard to mywords and variable names
-                <div key={index}>
-                    <MyWordsCard mywords={myword} /> {/* Changed MyWordsCard to mywords and variable names */}
-                </div>
-            ))}
+
+                <HeaderText h1Text="My Words" />
+            </div>
+            <div className="myword-card-container">
+                {mywords.map((myword, index) => ( // Changed MyWordsCard to mywords and variable names
+                    <div key={index}>
+                        <MyWordsCard mywords={myword} /> {/* Changed MyWordsCard to mywords and variable names */}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
-

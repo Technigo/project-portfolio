@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeaderSection } from './components/Header';
 import { TechText } from './components/tech';
-import { Section } from './components/Section';
+import { Section } from './components/CardComponent/Section';
 import { SkillsText } from './components/skills';
 import { Contact } from './components/contact';
 import { MyWordsSection } from './components/MyWordsSection';

@@ -1,12 +1,12 @@
 import React from 'react';
 import { ProjectCard } from './ProjectCard';
-import { HeaderText } from './HeaderComponents/HeaderText';
+import { HeaderText } from '../HeaderComponents/HeaderText';
 
 export const Section = ({ projects }) => {
     return (
         <section>
-            <HeaderText
-                h1Text="Featured Projects"
+            <HeaderText className="ProjectTitle"
+                h1Text="FeaturedProjects"
             />
 
             {projects.map((project, index) => (
