@@ -1,7 +1,6 @@
-
 # Technigo - React Portfolio Project
 
-Week 8 of Technigo boot camp: building my own portfolio website using API and React hooks. Got a design to follow. Accessibility has been taken into thought.
+Week 8 of Technigo boot camp: building my own portfolio website using API and React hooks. Got a design to follow. Accessibility has been taken into thought. Cross browser test.
 
 
 ### Info and Problem-solving
@@ -11,7 +10,7 @@ Performance: 100, Accessibility: 96, Best practices: 95, SEO: 80.
 
 A lot of time was put into the styling. Stack overflow, course material and my team were used when problems occured. Got help and helped others which has been really good for the learning process!
 
-With more time I would (I will) work on the reponsiveness.
+With more time I would (I will) work on the reponsiveness and also update my info on GitHub. Will also find another color for the arrow to draw the attention there and put the same color on the TickerTape.
 
 
 ##### View it live

@@ -5,7 +5,7 @@ export const Skills4 = () => {
         <div className="skills-wrap">
             <h1>Skills</h1>
             <div className="code">
-                <h4>Code</h4>
+                <h3>Code</h3>
                 <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
@@ -16,31 +16,25 @@ export const Skills4 = () => {
                 </ul>
             </div>
             <div className="toolbox">
-                <h4>Toolbox</h4>
+                <h3>Toolbox</h3>
                 <ul>
                     <li>Figma</li>
                     <li>Postman</li>
                     <li>Slack</li>
-                    <li>?</li>
                 </ul>
             </div>
             <div className="upcoming">
-                <h4>Upcoming</h4>
+                <h3>Upcoming</h3>
                 <ul>
                     <li>Node.js</li>
                     <li>UX</li>
-                    <li>?</li>
-                    <li>?</li>
                 </ul>
             </div>
             <div className="more">
-                <h4>More</h4>
+                <h3>More</h3>
                 <ul>
                     <li>Leader</li>
                     <li>Agile methodology</li>
-                    <li>?</li>
-                    <li>?</li>
-                    <li>?</li>
                 </ul>
             </div>
         </div>
