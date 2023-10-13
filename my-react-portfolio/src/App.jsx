@@ -2,6 +2,7 @@
 import { Intro } from './Sections/Introduction/Intro'
 import { Projects } from './Sections/Projects/Projects';
 import { Tech } from "./Sections/Tech/Tech";
+import { Skills } from "./Sections/Skills/Skills";
 
 // Import the JSON data directly
 import projectData from './Sections/Projects/projects.json';
@@ -16,6 +17,7 @@ export const App = () => {
       <Intro />
       <Tech />
       <Projects projects={projects} />
+      <Skills />
     </main>
   );
 };
