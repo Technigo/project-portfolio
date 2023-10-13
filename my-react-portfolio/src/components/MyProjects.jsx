@@ -71,7 +71,7 @@ const netlifyUrls = {
   'project-weather-app': 'https://mam-weatherapp.netlify.app/',
   'project-guess-who': 'https://cocofnasguesswho.netlify.app/',
   'project-chatbot': 'https://cocofnaschatbot.netlify.app/',
-  'project-pizza': 'https://cocofnaspizza.netlify.app/',
+  'project-pizza': 'https://comfy-bombolone-1e5fac.netlify.app/',
   'project-business-site': 'https://quiet-maamoul-e254ec.netlify.app/',
   'project-news': 'https://cute-meringue-8f9187.netlify.app/',
 };
