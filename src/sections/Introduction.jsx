@@ -3,6 +3,8 @@ import { MainHeading } from "./components/Typo/MainHeading.jsx";
 import { SubHeading } from "./components/Typo/SubHeading.jsx";
 import { BodyText } from "./components/Typo/BodyText.jsx"
 
+import profile from "..assets/profile-pic.jpg";
+
 
 export const Introduction = () => {
 
@@ -15,7 +17,7 @@ export const Introduction = () => {
     return (
         <section className="introduction-section">
             <div className="image-wrapper">
-                <img src="src/assets/profile-pic.jpg" alt="A picture of Vera Witting" />
+                <img src={profile} alt="A picture of Vera Witting" />
             </div>
             <div className="headings-introduction">
             <SubHeading text={`Hello, I'm Vera Witting`}/>
