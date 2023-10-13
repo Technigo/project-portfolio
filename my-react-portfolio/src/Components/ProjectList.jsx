@@ -1,22 +1,23 @@
-import Headlines from "../Components/Headlines";
 import ProjectCard from "../Components/ProjectCard";
-import projects from "../Page/projects.json";
+import projects from "../Sections/projects.json";
 
-export const FeaturedProjects = () => {
+const ProjectList = () => {
   console.log(projects);
+
   return projects.projects.map((project) => {
     return (
       <>
-        <Headlines />
         <ProjectCard
           key={project.id}
           name={project.name}
           photo={project.image}
           tags={project.tags}
+          liveLink={project.netlify}
+          githubLink={project.github}
         />
       </>
     );
   });
 };
 
-export default FeaturedProjects;
+export default ProjectList;

@@ -1,9 +1,9 @@
-import Introduction from "./Page/Introduction";
-import Tech from "./Page/Tech";
-import FeaturedProjects from "./Page/FeaturedProjects";
-import MyWords from "./Page/MyWords";
-import Skills from "./Page/Skills";
-import Contact from "./Page/Contact";
+import Introduction from "./Sections/Introduction";
+import Tech from "./Sections/Tech";
+import FeaturedProjects from "./Sections/FeaturedProjects";
+import MyWords from "./Sections/MyWords";
+import Skills from "./Sections/Skills";
+import Contact from "./Sections/Contact";
 
 export const App = () => {
   return (
