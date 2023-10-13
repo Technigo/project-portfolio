@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import GitHubButton from "./GithubButton";
 
 const Projects = () => {
     const [repos, setRepos] = useState([]);
@@ -28,7 +29,7 @@ const Projects = () => {
                     <h3>{project.name}</h3>
                     <p>{project.description}</p>
                     <a href={project.url} target="_blank" rel="noopener noreferrer">
-                        View on GitHub
+                        <GitHubButton />
                     </a>
                 </div>
             ))}
