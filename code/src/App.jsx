@@ -12,6 +12,7 @@ function App() {
     <body>
       <Header />
       <Intro />
+      <Tech />
     </body>
   )
 }
