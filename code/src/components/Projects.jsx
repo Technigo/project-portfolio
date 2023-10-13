@@ -22,7 +22,7 @@ const Projects = () => {
 
     return (
         <div className="projects">
-            <h2>Github Repositories</h2>
+            <h1>Github Repositories</h1>
             {repos.map((project) => (
                 <div key={project.id} className="project-child">
                     <h3>{project.name}</h3>

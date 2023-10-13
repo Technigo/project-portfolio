@@ -9,11 +9,12 @@ import Contact from './components/Contact.jsx';
 function App() {
 
   return (
-    <body>
+    <div>
       <Header />
       <Intro />
       <Tech />
-    </body>
+      <Projects />
+    </div>
   )
 }
 
