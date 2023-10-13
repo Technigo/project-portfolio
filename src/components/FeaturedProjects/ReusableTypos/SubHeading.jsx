@@ -1,3 +1,5 @@
+import "./subheading.css";
+
 export const SubHeading = ({ text, className }) => {
     
     return (

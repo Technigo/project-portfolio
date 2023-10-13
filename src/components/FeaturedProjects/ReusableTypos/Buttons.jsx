@@ -1,9 +1,11 @@
-export const Button = ({ link, buttonName, icon, iconAlt }) => {
+export const Button = ({ link, icon, iconAlt }) => {
 
 
     return(
-        <div>
-            <a href={link}><img src={icon} alt={iconAlt} />{buttonName}</a>
+        <div className="button-container">
+            <a href={link} className="livedemoandviewlivebutton">
+            <img src={icon} alt={iconAlt} />
+            </a>
         </div>
     )
 }

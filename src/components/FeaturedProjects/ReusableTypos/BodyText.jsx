@@ -1,3 +1,5 @@
+import "./bodytext.css";
+
 export const BodyText = ({ text }) => {
     
     return (
