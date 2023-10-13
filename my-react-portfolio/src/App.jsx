@@ -1,6 +1,6 @@
 import { TopSection } from "./Components/TopSection/TopSection";
 
-import "./Index.css";
+import "./index.css";
 
 export const App = () => {
   return (
