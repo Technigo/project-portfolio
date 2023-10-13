@@ -1,46 +1,51 @@
 import { useState, useEffect } from "react";
 import { FeaturedProjects } from "../components/FeaturedProjectsComponent/FeaturedProjects";
-import { Headline } from "../components/Headline"
+import { Headline } from "../components/Headline";
 
 export const FeatureProjectsPage = () => {
-
-    let headerText = "Featured Projects";
+    const headerText = "Featured Projects";
+    const githubUsername = 'VAstrom';
+    const specificRepositories = ['project-happy-thoughts-vite', 'project-survey-vite', 'project-music-releases-vite', 'project-weather-app', 'project-guess-who', 'project-chatbot', 'project-news-site'];  // Add the specific repositories you want to fetch
 
     const [repos, setRepos] = useState([]);
-    const githubUsername = 'VAstrom'; // Replace with the desired GitHub username
-    const maxReposToShow = 8; // Set the maximum number of repositories to display
-  // IMPORTANT!!! added .slice(2) since my github repo for the group projects gets included in the portfolio. Once I have removed the group project/made it private I should remove this!
-
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-
-        async function fetchData() {
+        const fetchData = async () => {
             try {
-                const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=created&direction=desc`);
+                // Fetch specific repositories
+                /*Explanation:
+                I use Promise.all() to wait for all promises in specificReposPromises array to settle (either resolve or reject).
+                This ensures that we wait for all repositories to be fetched.
+                */
+                const specificReposPromises = specificRepositories.map(async (repo) => {
+                    const response = await fetch(`https://api.github.com/repos/${githubUsername}/${repo}`);
+                    if (!response.ok) {
+                        throw new Error(`Failed to fetch repository ${repo}`);
+                    }
+                    return await response.json();
+                });
 
-                if (response.ok) {
-                    const data = await response.json();
-                    const filteredRepos = data.slice(2, maxReposToShow); // Filter the repositories
-                    setRepos(filteredRepos);
-                } else {
-                    console.error('Failed to fetch data');
-                }
+                const specificReposData = await Promise.all(specificReposPromises);
+                // the spread operator is used to create a new array with a shallow copy of all the elements from the specificReposData array. Essentially, it's creating a new array with the same data as specificReposData.
+                setRepos([...specificReposData]);
             } catch (error) {
-                console.error('Error:', error);
+                setError('Error fetching data');
+            } finally {
+                setLoading(false);
             }
-        }
+        };
 
         fetchData();
-        console.log(repos);
-    }, [githubUsername, maxReposToShow]);
-
+    }, [githubUsername, specificRepositories]);
 
     return (
         <div className="featured-page-wrapper">
             <Headline headerText={headerText} />
-            <FeaturedProjects
-                repos={repos}
-            />
+            {loading && <p>Loading...</p>}
+            {error && <p>{error}</p>}
+            {repos.length > 0 && <FeaturedProjects repos={repos} />}
         </div>
-    )
-}
+    );
+};
