@@ -3,7 +3,7 @@ import Header from './components/Header.jsx';
 import Intro from './components/Intro.jsx';
 import Tech from './components/Tech.jsx';
 import Projects from './components/Projects.jsx'
-import Thoughts from './components/Thoughts.jsx';
+import Mywords from './components/Mywords.jsx';
 import Contact from './components/Contact.jsx';
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
       <Intro />
       <Tech />
       <Projects />
+      <Mywords />
     </div>
   )
 }
