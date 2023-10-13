@@ -6,7 +6,10 @@ const Tech = () => {
         <div className="tech">
             <div className="tech-content">
                 <h1>Tech</h1>
-                <p>hej</p>
+                <p>HTML, CSS, Flexbox, JavaScript,<br />
+                    JSX, React,Web Accessibility, APIs,<br />
+                    mob-programming, pair-programming, <br />
+                    GitHub. </p>
             </div>
         </div>
     );
