@@ -11,10 +11,12 @@ import projectData from './Sections/Projects/projects.json';
 import mywordsData from './Sections/MyWordSection/mywords.json';
 
 // Use the JSON data directly
-const projects = projectData.projects;
-const mywords = mywordsData.mywords;
+
 
 export const App = () => {
+
+  const projects = projectData.projects;
+  const mywords = mywordsData.mywords;
 
   return (
     <main>
