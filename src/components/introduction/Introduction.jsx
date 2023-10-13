@@ -10,15 +10,15 @@ const Introducton = () => {
                     src={data.profileImage}
                     alt={data.profileImageAlt}
                 />
-                <h2 className="text-lg font-semibold">{data.title}</h2>
-                <h1 className="text-blue-700 font-bold text-4xl mb-6">{data.subtitle}</h1>
+                <h2 className="text-center md:text-left text-xl font-semibold mb-4">{data.title}</h2>
+                <h1 className="text-center md:text-left text-6xl font-bold mb-8 text-blue-700">{data.subtitle}</h1>
                 <div className="flex items-center gap-4">
                     <img
                         className="hidden w-40 rounded-full md:block"
                         src={data.profileImage}
                         alt={data.profileImageAlt}
                     />
-                    <p>{data.introduction}</p>
+                    <p className="text-center md:text-left">{data.introduction}</p>
                 </div>
             </div>
             <ArrowDownIcon className="h-8 mx-auto text-blue-700" />
