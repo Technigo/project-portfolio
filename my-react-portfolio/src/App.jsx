@@ -3,6 +3,7 @@ import { Intro } from './Sections/Introduction/Intro'
 import { Projects } from './Sections/Projects/Projects';
 import { Tech } from "./Sections/Tech/Tech";
 import { Skills } from "./Sections/Skills/Skills";
+import { Footer } from "./Sections/Footer/Footer"
 
 // Import the JSON data directly
 import projectData from './Sections/Projects/projects.json';
@@ -18,6 +19,7 @@ export const App = () => {
       <Tech />
       <Projects projects={projects} />
       <Skills />
+      <Footer />
     </main>
   );
 };
