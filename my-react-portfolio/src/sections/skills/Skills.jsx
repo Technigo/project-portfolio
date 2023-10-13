@@ -1,19 +1,20 @@
 import { Heading } from '/src/components/typography/Heading.jsx';
 import { SkillCard } from './SkillCard.jsx';
-
-
+import './skills.css'
 
 export const Skills = () => {
 
     return (
-        <section className='skills'>
+        <section className='skills-container'>
             <Heading
                 level={1}
                 text="Skills"
-                aria-label="SKills section label"
-                className="hello-text"
+                aria-label="Skills section label"
+                className="skills-heading"
             />
-            <SkillCard />
+            <section className='skills-wrapper'>
+                <SkillCard />
+            </section>
         </section>
     );
 };
