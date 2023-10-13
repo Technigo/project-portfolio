@@ -1,17 +1,22 @@
 import Headlines from "../Components/Headlines";
-import Photo from "../Components/Photo";
+import ProjectCard from "../Components/ProjectCard";
+import projects from "../Page/projects.json";
 
 export const FeaturedProjects = () => {
-  return (
-    <div>
-      <Headlines title="Featured Projects" />
-      <Photo
-        source="/src/assets/closeup-young-female-professional-making-eye-contact-against-colored-background_662251-651.avif"
-        color="blue"
-        size="sqaure"
-      />
-    </div>
-  );
+  console.log(projects);
+  return projects.projects.map((project) => {
+    return (
+      <>
+        <Headlines />
+        <ProjectCard
+          key={project.id}
+          name={project.name}
+          photo={project.image}
+          tags={project.tags}
+        />
+      </>
+    );
+  });
 };
 
 export default FeaturedProjects;
