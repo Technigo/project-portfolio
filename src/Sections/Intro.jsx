@@ -1,6 +1,7 @@
 import "./Intro.css";
 //import { Headline } from "./Headline";
 import jag from "../assets/jag1.png";
+import arrow from "../assets/Position=down.png";
 
 export const Intro = () => {
   return (
@@ -13,11 +14,7 @@ export const Intro = () => {
         bla bla bla bla bsome text bla vla bla bla bla bla bla bla bsome text
         bla vla bla bla bla bla bla bla b
       </p>
-      <img
-        src="/src/assets/Position=down.png"
-        alt="arrowicon"
-        className="arrow-icon"
-      ></img>
+      <img src={arrow} alt="arrowicon" className="arrow-icon"></img>
     </div>
   );
 };
