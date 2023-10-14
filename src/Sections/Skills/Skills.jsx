@@ -6,7 +6,9 @@ export const Skills = () => {
     return (
         <section className="skills">
             <MainHeading className={"skills-heading"} text={"Skills"} />
-            <SkillsList />
+            <div className="skill-cards-section">
+                <SkillsList />
+            </div>
         </section>
     )
 }

@@ -20,7 +20,7 @@ export const ProjectCard = ({ repositories }) => {
 
     return (
         <>
-            {filteredRepos.map((repo) => {
+            {filteredRepos.map((repo, index) => {
 
                 const repoImage = repoImages.find((img) => img.repoName === repo.name);
                 const topics = repo.topics || []; // Saving repo.topics in a variable and provide an empty array as a default
@@ -47,21 +47,21 @@ export const ProjectCard = ({ repositories }) => {
                                     className={"demo-btn"}
                                     btnURL={repo.homepage}
                                     imgAlt={"Web icon"}
-                                    iconURL={isDemoButtonHovered ? '/icons/globe-white.svg' : '/icons/globe.svg'} // checks if the state of the button is hovered, and then change the icon url, otherwise leaves the one that is default
+                                    /* checks if the state of the button is hovered, and then change the icon url, otherwise leaves the one that is default */
+                                    iconURL={isDemoButtonHovered[index] ? '/icons/globe-white.svg' : '/icons/globe.svg'}
                                     btnText={"Live demo"}
                                     /* the methods onMouseEnter and onMouseLeave states to true and false depending on the pointer*/
-                                    onMouseEnter={() => setIsDemoButtonHovered(true)}
-                                    onMouseLeave={() => setIsDemoButtonHovered(false)}
+                                    onMouseEnter={() => setIsDemoButtonHovered({ ...isDemoButtonHovered, [index]: true })}
+                                    onMouseLeave={() => setIsDemoButtonHovered({ ...isDemoButtonHovered, [index]: false })}
                                 />
                                 <Button
                                     className={"github-btn"}
                                     btnURL={repo.html_url}
                                     imgAlt={"Github icon"}
-                                    iconURL={isGithubButtonHovered ? '/icons/github-white.svg' : '/icons/github.svg'} // checks if the state of the button is hovered, and then change the icon url, otherwise leaves the one that is default
+                                    iconURL={isGithubButtonHovered[index] ? '/icons/github-white.svg' : '/icons/github.svg'}
                                     btnText={"View the code"}
-                                    /* Passes on the props onMouseEnter and onMouseLeave to set the state to true and false depending on the hover */
-                                    onMouseEnter={() => setIsGithubButtonHovered(true)}
-                                    onMouseLeave={() => setIsGithubButtonHovered(false)}
+                                    onMouseEnter={() => setIsGithubButtonHovered({ ...isGithubButtonHovered, [index]: true })}
+                                    onMouseLeave={() => setIsGithubButtonHovered({ ...isGithubButtonHovered, [index]: false })}
                                 />
                             </div>
                         </div>
