@@ -17,7 +17,10 @@ export const TechSkills = () => {
     return (
         <>
             <section className="techSkills-page-wrapper">
-                <Headline className="big-heading" headerText={headerText} />
+                <Headline
+                    className="big-heading"
+                    headerText={headerText}
+                />
                 <MediumHeadline
                     id="hind-h2"
                     className="white-h2"

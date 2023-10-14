@@ -10,9 +10,13 @@ export const ProjectCard = ({ repo }) => {
   const repoImage = repoImages.find((img) => img.repoName === repo.name);
 
   return (
-    <>
-      <img src={repoImage?.imageUrl} alt={repo.name} className="project-card-image" />
-      <div className="project-description">
+    <div className="project-card">
+      <img
+        src={repoImage?.imageUrl}
+        alt={repo.name}
+        className="project-card-image"
+      />
+      <div className="project-info-wrapper">
         <ProjectHeadline projectTitle={repo.name} />
         <Textbox text={repo.description} />
         <div className="project-tags">
@@ -22,11 +26,15 @@ export const ProjectCard = ({ repo }) => {
             return <TagComponent key={key} tag={topic.toUpperCase()} />;
           })}
         </div>
-        <ButtonComponent repoURL={repo.html_url} deployedSite={repo.homepage} />
       </div>
-    </>
+      <div className="button-wrapper">
+        <ButtonComponent
+          repoURL={repo.html_url}
+          deployedSite={repo.homepage}
+        />
+      </div>
+    </div>
   );
-
 };
 
 

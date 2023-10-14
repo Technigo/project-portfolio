@@ -40,13 +40,16 @@ export const FeatureProjectsPage = () => {
                 setLoading(false);
             }
         };
-       
-        fetchData();    
+
+        fetchData();
     }, []);
 
     return (
         <section className="featured-page-wrapper">
-            <Headline className="big-heading blue-h1" headerText={headerText} />
+            <Headline
+                className="big-heading blue-h1"
+                headerText={headerText}
+            />
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
             {repos.length > 0 && <FeaturedProjects repos={repos} />}

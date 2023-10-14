@@ -22,19 +22,21 @@ export const FrontPage = () => {
         <>
             <section className="intro-page-wrapper">
                 <ImagePortrait />
-                <MediumHeadline
-                    mediumSizeHeader={mediumSizeHeader}
-                    id="smaller-h2"
-                    useSpan={false}
-                />
-                <Headline
-                    id="smaller-h1"
-                    className="big-heading blue-h1"
-                    headerText={headerText} />
+                <div className="front-page-headings">
+                    <MediumHeadline
+                        mediumSizeHeader={mediumSizeHeader}
+                        id="smaller-h2"
+                        useSpan={false}
+                    />
+                    <Headline
+                        id="smaller-h1"
+                        className="big-heading blue-h1"
+                        headerText={headerText} />
+                </div>
                 <div className="intropage-info">
                     <Textbox text={text} />
                 </div>
-                <div class="arrow-container">
+                <div className="arrow-animation">
                     <Arrow />
                 </div>
             </section>
