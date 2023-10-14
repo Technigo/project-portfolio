@@ -3,7 +3,7 @@ import { TbView360 } from "react-icons/tb";
 import { AiFillGithub } from "react-icons/ai";
 import { BsFileText } from "react-icons/bs";
 
-export const LinkBtns = ({ demo_url, github_url}) => {
+export const LinkBtns = ({ demo_url, github_url }) => {
   console.log(demo_url);
   console.log(github_url);
   return (

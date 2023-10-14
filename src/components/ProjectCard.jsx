@@ -10,7 +10,7 @@ export const ProjectCard = () => {
         ({ id, title, description, tags, image, github_url, demo_url }) => {
           return (
             <div className="project-item card" key={id}>
-              <img src={image} alt="" className="project-image-border"/>
+              <img src={image} alt="" className="project-image-border" />
               <div className="project-info">
                 <h3 className="titles">{title}</h3>
                 <p className="text-css">{description}</p>
