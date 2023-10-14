@@ -3,7 +3,11 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { ProjectCard } from "./ProjectCard";
 
+import "./ProjectList.css";
+
 export const ProjectList = () => {
+  // const projects = [{ id: 698935612 }];
+
   const [projectList, setProjectList] = useState([]);
 
   useEffect(() => {
@@ -17,7 +21,7 @@ export const ProjectList = () => {
   }, []);
 
   return (
-    <section className="featured-projects">
+    <section className="featured-projects-wrapper">
       {projectList
         .filter((project) => project.description)
         .map((project) => (
