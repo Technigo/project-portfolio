@@ -1,4 +1,4 @@
-
+import "../tagComponent.css";
 import { MediumHeadline } from "../MediumHeadline";
 import { Textbox } from "../Textbox";
 
@@ -8,7 +8,8 @@ export const SkillSets = () => {
     const skillCategories = [
         {
             id: "100",
-            mediumSizeHeader: 'Technologies',
+            className: "code",
+            mediumSizeHeader: 'Code',
             text: [
                 { id: "101", name: 'HTML5' },
                 { id: "102", name: 'CSS3' },
@@ -19,6 +20,7 @@ export const SkillSets = () => {
         },
         {
             id: "200",
+            className: "toolbox",
             mediumSizeHeader: 'Toolbox',
             text: [
                 { id: "201", name: 'Slack' },
@@ -27,6 +29,7 @@ export const SkillSets = () => {
         },
         {
             id: "300",
+            className: "upcoming",
             mediumSizeHeader: 'Upcoming',
             text: [
                 { id: "301", name: 'Node.js' }
@@ -34,6 +37,7 @@ export const SkillSets = () => {
         },
         {
             id: "400",
+            className: "more",
             mediumSizeHeader: 'More',
             text: [
                 { id: "401", name: 'Agile Methodology' },
@@ -48,7 +52,10 @@ export const SkillSets = () => {
         <div className="skill-sets-card">
             {skillCategories.map((category) => (
                 <div key={category.id}>
-                    <MediumHeadline mediumSizeHeader={category.mediumSizeHeader} />
+                    <MediumHeadline
+                        className={category.className}
+                        mediumSizeHeader={category.mediumSizeHeader}
+                    />
                     <ul className="list-without-bullets">
                         {category.text.map((skill) => (
                             <li key={skill.id}><Textbox text={skill.name} /></li>

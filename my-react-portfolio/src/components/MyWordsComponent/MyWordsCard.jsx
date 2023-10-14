@@ -1,3 +1,4 @@
+import "../tagComponent.css"
 import { MediumHeadline } from "../MediumHeadline";
 import { TagComponent } from "../TagComponent";
 import { Textbox } from "../Textbox";
