@@ -2,10 +2,10 @@ import React from "react";
 
 import { HeadingH1 } from "../typography/headingH1/HeadingH1";
 import { ArticleImg } from "../images/articleImg/ArticleImg";
-import { Date } from "../date/Date";
+import { Date } from "../../components2/date/Date";
 import { HeadingH3 } from "../typography/headingH3/HeadingH3";
 import { NormalText } from "../typography/normalText/NormalText";
-import { Button } from "../button/Button";
+import { Button } from "../../components2/button/Button";
 
 import "./articleCard.css";
 
