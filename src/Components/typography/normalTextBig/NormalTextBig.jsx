@@ -4,6 +4,6 @@ import './normalTextBig.css'
 
 export const NormalTextBig = ({text}) => {
   return (
-    <p className="big">{text}</p>
+    <p className="normal-text-big">{text}</p>
   )
 }

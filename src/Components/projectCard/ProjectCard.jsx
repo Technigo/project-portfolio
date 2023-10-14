@@ -22,7 +22,7 @@ export const ProjectCard = ({projects}) => {
     
     <>
     <section className="project-wrapper">
-      <HeadingH1 className="projects"text={"Featured Projects"}/>
+      <HeadingH1 className="project-h1"text={"Featured Projects"}/>
 
       {filteredProjects.map((project)=> {
          

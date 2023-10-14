@@ -8,7 +8,7 @@ import { ImgLink } from '../imgLink/ImgLink'
 export const SecContact = () => {
   return (
     <div className="contact-wrapper">
-      <HeadingH1 text={"Let's talk"}/>
+      <HeadingH1 className="contact-h1"text={"Let's talk"}/>
       <RoundImg/>
 
       <div>
