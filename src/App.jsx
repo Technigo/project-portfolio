@@ -8,8 +8,6 @@ import { Skills } from "./sections/Skills.jsx"
 import { LetsTalk } from "./sections/LetsTalk.jsx"
 import { Footer } from "./sections/Footer.jsx";
 
-import './App.css'
-
 function App() {
   
 
