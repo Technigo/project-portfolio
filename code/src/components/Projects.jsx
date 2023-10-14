@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ViewGithubBtn from "./ViewGithubBtn";
 import LiveDemoBtn from "./LiveDemoBtn";
 import projectsData from "../data/projects.json"; // Adjust the path as needed
+import '/.projects.css';
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
