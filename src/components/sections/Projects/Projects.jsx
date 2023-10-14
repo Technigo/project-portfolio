@@ -7,18 +7,21 @@ import { primaryColorText, secondaryColorText } from "../../../styles/styleVaria
 import { projectsData as data } from "../../../statics/projectsData";
 
 import styles from "./Projects.module.scss";
+import { ObserverWrapper } from "../../ui/ObserverWrapper";
 
 export default function Projects({ lang }) {
   return (
     <section className={styles.projects_section}>
-      <div className={styles.projects_inner}>
-        <Heading color={primaryColorText}>Featured Projects</Heading>
-        <div className={styles.projects_section_cards}>
-          {data.map((project) => (
-            <ProjectCard project={project} key={project.title} lang={lang} />
-          ))}
+      <ObserverWrapper>
+        <div className={styles.projects_inner}>
+          <Heading color={primaryColorText}>Featured Projects</Heading>
+          <div className={styles.projects_section_cards}>
+            {data.map((project) => (
+              <ProjectCard project={project} key={project.title} lang={lang} />
+            ))}
+          </div>
         </div>
-      </div>
+      </ObserverWrapper>
     </section>
   );
 }
