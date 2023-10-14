@@ -42,7 +42,7 @@ Open up a terminal inside VS code and lets run the project in a local environmen
 Sakura Tanaka
 Linkedin: https://www.linkedin.com/in/sakura-tanaka-251a36247/
 
-### Hi, I'm Technigo! 👋
+### Hi, I'm Sakura 👋
 
 Welcome to my first React portfolio project! I am Sakura Tanaka, a student who has completed Sprint 2 of the boot camp and is now taking my skills to the next level. This portfolio showcases my mastery of React concepts, implementing components, props, hooks, and web APIs to create a dynamic and interactive website.
 
