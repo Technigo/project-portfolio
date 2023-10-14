@@ -2,6 +2,6 @@ import React from "react";
 
 import "./Heading1.css";
 
-export const Heading1 = ({ text }) => {
-  return <h1 className="heading1">{text}</h1>;
+export const Heading1 = ({ className, text }) => {
+  return <h1 className={`${className}`}>{text}</h1>;
 };
