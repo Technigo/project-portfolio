@@ -24,7 +24,7 @@ export const SecPresentation = () => {
             <NormalText className={"presentation-text"}text={presentationText}/>
           </div>
           <div className="arrow-box">
-            <img  src={'assets/ArrowPositionUp.svg'} 
+            <img  src={'/assets/ArrowPositionUp.svg'} 
                   alt="Arrow that points down to next page"/>
           </div>
       </div>

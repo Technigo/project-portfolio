@@ -40,8 +40,8 @@ export const ProjectCard = ({projects}) => {
                 </div>
 
               <div className="project-card-buttons">
-              <Button text={"Live demo"} hoverColor={"blue"} src={'assets/icons/globe.png'} link={project.homepage}/>
-              <Button text={"View the code"} hoverColor={"pink"} src={'assets/icons/github.png'} link={project.html_url}/>
+              <Button text={"Live demo"} hoverColor={"blue"} src={'/assets/icons/globe.png'} link={project.homepage}/>
+              <Button text={"View the code"} hoverColor={"pink"} src={'/assets/icons/github.png'} link={project.html_url}/>
            
             </div>
             </div> 

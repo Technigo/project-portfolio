@@ -11,6 +11,7 @@ export const SecMywords = () => {
     console.log(articles)
   return (
     <>
+    
     <ArticleCard articles={articles}/>
     </>
   )

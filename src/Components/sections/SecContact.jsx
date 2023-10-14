@@ -12,13 +12,13 @@ export const SecContact = () => {
       <RoundImg/>
 
       <div>
-        <HeadingH3 className="contact-name" text={"Emmy Dieden"}/>
-        <HeadingH3 className="contact-phone" text={"+46(0)737 44 00 84"}/>
-        <HeadingH3 className="contact-email" text={"emmy.dieden@"}/>
+        <HeadingH3 className="contact-h3" text={"Emmy Dieden"}/>
+        <HeadingH3 className="contact-h3" text={"+46(0)737 44 00 84"}/>
+        <HeadingH3 className="contact-h3" text={"emmy.dieden@gmail.com"}/>
       </div>
       
       <div className="social-media">
-            <ImgLink text={"Link to LinkedIn"} src={'./assets/icons/linkedin_grey.svg'} link={'www.linkedin.com/in/emmy-dieden-774574283'} className={"link-linkedin"}/>
+            <ImgLink text={"Link to LinkedIn"} src={'/assets/icons/linkedin_grey.svg'} link={'https://www.linkedin.com/in/emmy-dieden-774574283'} className={"link-linkedin"}/>
             <ImgLink text={"Link to GitHub"} src={'/assets/icons/github_grey.svg'} link={'https://github.com/emmydieden'}className={"link-github"}/>
             <ImgLink text={"Link to Instagram"} src={'/assets/icons/instagram_grey.svg'} className={"link-instagram"} link={'https://www.instagram.com/emmydieden_art/'}/>
       </div>
