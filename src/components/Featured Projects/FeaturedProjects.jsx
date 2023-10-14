@@ -4,7 +4,7 @@ import "./FeaturedProjects.css";
 import { MainHeading } from "../Headings/MainHeading/MainHeading";
 
 export const FeaturedProjects = () => {
-  const [repos, setRepos] = useState([]);
+  const [sortedRepos, setSortedRepos] = useState([]);
 
   useEffect(() => {
     const fetchRepos = async () => {
@@ -16,8 +16,15 @@ export const FeaturedProjects = () => {
           throw new Error("Network response was not ok" + response.statusText);
         }
         const data = await response.json();
-        setRepos(data);
-        console.log(data);
+
+        // Filter the repositories to include only those with matching images
+        const filteredRepos = data.filter((repo) =>
+          repoImages.some((img) => img.repoId === repo.id)
+        );
+        console.log(filteredRepos);
+        // Sort the repositories and set the sorted array in state
+        const sortedData = [...filteredRepos].sort((a, b) => b.id - a.id);
+        setSortedRepos(sortedData);
       } catch (error) {
         console.error(
           "There has been a problem with your fetch operation:",
@@ -30,8 +37,11 @@ export const FeaturedProjects = () => {
   }, []);
 
   const formatRepoName = (name) => {
-    // Split the name by hyphens and capitalize each word
-    const words = name.split("-");
+    // Split the name by hyphens and filter out unwanted words
+    const words = name
+      .split("-")
+      .filter((word) => word !== "vite" && word !== "project");
+    // Capitalize each word
     const capitalizedWords = words.map(
       (word) => word.charAt(0).toUpperCase() + word.slice(1)
     );
@@ -39,11 +49,6 @@ export const FeaturedProjects = () => {
     // Join the capitalized words with spaces
     return capitalizedWords.join(" ");
   };
-
-  // Filter the repos array to only include repositories with matching img.repoId
-  const filteredRepos = repos.filter((repo) =>
-    repoImages.some((img) => img.repoId === repo.id)
-  );
 
   return (
     <div className="project-card-container">
@@ -53,7 +58,7 @@ export const FeaturedProjects = () => {
           text={"Featured Projects"}
         />
         <ul>
-          {filteredRepos.map((repo) => {
+          {sortedRepos.map((repo) => {
             const repoImage = repoImages.find((img) => img.repoId === repo.id);
             return (
               <li key={repo.id}>
