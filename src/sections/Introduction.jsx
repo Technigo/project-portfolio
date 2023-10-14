@@ -31,7 +31,7 @@ export const Introduction = () => {
                 <BodyText text={BodyContent} />
             </div>
             <div className="arrow">
-                <img className="arrow" src="arrow" alt="Arrow jumping, pointing down to the rest of the page" />
+                <img className="arrow" src={arrow} alt="Arrow jumping, pointing down to the rest of the page" />
             </div>
         </section>
     )
