@@ -1,4 +1,5 @@
 import "./myWordsPage.css";
+import "../components/headline.css";
 
 import { Headline } from "../components/Headline";
 import { MyWords } from "../components/MyWordsComponent/MyWords";
@@ -7,7 +8,7 @@ import { MyWords } from "../components/MyWordsComponent/MyWords";
 
 
 export const MyWordsPage = () => {
-    let headerText = "My Words";
+    let headerText = "My words";
 
 
     return (

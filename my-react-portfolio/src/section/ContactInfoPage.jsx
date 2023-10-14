@@ -1,3 +1,7 @@
+import "../components/headline.css";
+import "../components/mediumHeadline.css";
+
+
 import { ContactInfoButton } from "../components/ContactInfoComponent/ContactInfoButton";
 import { Headline } from "../components/Headline";
 import { ImagePortrait } from "../components/ImagePortrait";

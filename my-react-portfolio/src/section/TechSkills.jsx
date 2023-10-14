@@ -1,5 +1,5 @@
-import "../components/mediumHeadline.css"
-import "../components/headline.css"
+import "../components/mediumHeadline.css";
+import "../components/headline.css";
 
 import { Headline } from "../components/Headline";
 import { MediumHeadline } from "../components/MediumHeadline";

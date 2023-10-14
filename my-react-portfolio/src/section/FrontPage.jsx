@@ -1,3 +1,6 @@
+import "../components/headline.css";
+import "../components/mediumheadline.css";
+import "../components/textbox.css";
 import { Headline } from "../components/Headline";
 import { ImagePortrait } from "../components/ImagePortrait";
 import { MediumHeadline } from "../components/MediumHeadline";
