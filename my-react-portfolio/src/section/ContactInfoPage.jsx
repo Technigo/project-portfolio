@@ -1,8 +1,9 @@
+import { ContactInfoButton } from "../components/ContactInfoComponent/ContactInfoButton";
 import { Headline } from "../components/Headline";
 import { ImagePortrait } from "../components/ImagePortrait";
 import { Textbox } from "../components/Textbox";
 
-export const ContactInfo = () => {
+export const ContactInfoPage = () => {
     const headerText = "Let's talk";
     const contactInformation = [
         { id: 'contact0', text: "Veronica Åström" },
@@ -19,6 +20,7 @@ export const ContactInfo = () => {
                     <Textbox key={info.id} text={info.text} />
                 ))}
             </div>
+            <ContactInfoButton />
         </div>
     );
 };
