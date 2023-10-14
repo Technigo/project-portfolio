@@ -64,8 +64,15 @@
 @media (min-width: 1280px) {
     .projects-section {
         display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 128px 230px 124px 230px;
         gap: 128px;
+    }
+
+    .featured-projects-heading {
+        margin-left: -90px;
+        /* My css was really bugging me out, so this is a quick fix to get the headline to not be centered, text-align: left wasn't working*/
     }
 
     .buttons-section {
@@ -74,11 +81,11 @@
     }
 
     .project-cards {
-
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 2;
         gap: 40px;
+        max-width: 820px;
     }
 
     .image {
