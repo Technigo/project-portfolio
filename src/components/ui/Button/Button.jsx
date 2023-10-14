@@ -9,6 +9,7 @@ export default function Button({
   hoverColor = "",
   onclick = null,
   borderColor = "",
+  altText = "",
 }) {
   // using state to change btn background
   const [color, setColor] = useState(background);
@@ -38,6 +39,7 @@ export default function Button({
           src={iconPath}
           className={styles.icon}
           style={{ filter: iconColor ? "brightness(10)" : "" }}
+          alt={altText}
         />
 
         <p className={styles.text} style={{ color: iconColor ? "#fff" : "#333" }}>

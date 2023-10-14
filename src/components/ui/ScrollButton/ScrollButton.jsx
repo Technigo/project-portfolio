@@ -31,6 +31,7 @@ export const ScrollButton = () => {
       onClick={scrollToTop}
       className={styles.button}
       style={{ display: visible ? "inline" : "none" }}
+      aria-label="Go to Top page"
     >
       <img src="/icons/arrow.svg" alt="arrow image of scroll to top button" />
     </button>

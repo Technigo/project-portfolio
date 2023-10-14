@@ -18,10 +18,24 @@ function MultiLanguageButton({ lang, onLang }) {
         <span>🇯🇵</span>
         <span>🇬🇧</span>
       </div>
-      <div className={styles.outer_btn}>
+      <div
+        className={styles.outer_btn}
+        aria-description="Choose a language to read, in Japanese or English."
+      >
         <span className={styles.circle} style={currentPosition}></span>
-        <button className={styles.inner_btn} id="ja" onClick={handleClick}></button>
-        <button className={styles.inner_btn} id="en" onClick={handleClick}></button>
+        <button
+          className={styles.inner_btn}
+          id="ja"
+          onClick={handleClick}
+          aria-label="日本語で読む"
+          lang="ja"
+        ></button>
+        <button
+          className={styles.inner_btn}
+          id="en"
+          onClick={handleClick}
+          aria-label="Read in English"
+        ></button>
       </div>
     </div>
   );
