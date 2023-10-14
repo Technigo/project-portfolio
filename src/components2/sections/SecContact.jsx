@@ -3,7 +3,7 @@ import React from "react";
 import { HeadingH1 } from "../typography/headingH1/HeadingH1";
 import { RoundImg } from "../images/RoundImg";
 import { HeadingH3 } from "../typography/headingH3/HeadingH3";
-import { ImgLink } from "../../components/imgLink/ImgLink";
+import { ImgLink } from "../imgLink/ImgLink";
 
 export const SecContact = () => {
   return (
