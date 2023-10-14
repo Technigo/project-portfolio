@@ -1,5 +1,5 @@
 import React from "react";
-import { RoundImg } from "../../components/images/RoundImg";
+import { RoundImg } from "../images/RoundImg";
 import { HeadingH1 } from "../typography/headingH1/HeadingH1"
 import { HeadingH4 } from "../typography/headingH4/HeadingH4";
 import { NormalText } from "../typography/normalText/NormalText";

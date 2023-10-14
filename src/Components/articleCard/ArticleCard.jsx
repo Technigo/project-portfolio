@@ -1,7 +1,7 @@
 import React from "react";
 
 import { HeadingH1 } from "../../components2/typography/headingH1/HeadingH1";
-import { ArticleImg } from "../images/articleImg/ArticleImg";
+import { ArticleImg } from "../../components2/images/articleImg/ArticleImg";
 import { Date } from "../date/Date";
 import { HeadingH3 } from "../../components2/typography/headingH3/HeadingH3";
 import { NormalText } from "../../components2/typography/normalText/NormalText";
