@@ -1,4 +1,4 @@
-import "../tagComponent.css"
+
 import { MediumHeadline } from "../MediumHeadline";
 import { TagComponent } from "../TagComponent";
 import { Textbox } from "../Textbox";
@@ -10,7 +10,7 @@ export const MyWordsCard = ({ articleImage, articleDate, articleTitle, articleTe
 
     return (
         <>
-            <img src={articleImage} alt="article image" className="article-card-image"/>
+            <img src={articleImage} alt="article image" className="article-card-image" />
             <TagComponent tag={articleDate} />
             <MediumHeadline mediumSizeHeader={articleTitle} />
             <Textbox text={articleText} />

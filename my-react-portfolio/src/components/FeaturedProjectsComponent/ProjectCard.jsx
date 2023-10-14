@@ -10,20 +10,21 @@ export const ProjectCard = ({ repo }) => {
 
   return (
     <>
-      <img src={repoImage?.imageUrl} alt={repo.name} className="project-card-image"/>
+      <img src={repoImage?.imageUrl} alt={repo.name} className="project-card-image" />
       <div className="project-description">
         <ProjectHeadline projectTitle={repo.name} />
         <div className="project-tags">
-          {repo.topics.map((topic) => (
-            <span key={uuidv4()}>
-              <TagComponent tag={topic} />
-            </span>
-          ))}
+          {repo.topics.map((topic) => {
+            const key = uuidv4();  // Generate a unique key
+            console.log('Key for tag:', key);
+            return <TagComponent key={key} tag={topic} />;
+          })}
         </div>
         <ButtonComponent repoURL={repo.html_url} deployedSite={repo.homepage} />
       </div>
     </>
   );
+
 };
 
 

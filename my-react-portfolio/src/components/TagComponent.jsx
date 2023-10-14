@@ -1,10 +1,9 @@
 
 
-
 export const TagComponent = ({ tag }) => {
 
 
     return (
-        <p className="black-tag">{tag}</p>
+        <p><span className="black-tag">{tag}</span></p>
     )
 }
