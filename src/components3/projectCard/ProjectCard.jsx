@@ -6,7 +6,7 @@ import { HeadingH3 } from "../../components2/typography/headingH3/HeadingH3";
 import { NormalText } from "../../components2/typography/normalText/NormalText";
 import { ProjectImg } from "../../components2/images/projectImg";
 import { Button } from "../../components2/button/Button"
-import { Tag } from "../../components/tag/Tag"
+import { Tag } from "../../components2/tag/Tag"
 
 import "./projectCard.css";
 
