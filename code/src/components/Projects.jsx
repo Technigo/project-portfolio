@@ -1,45 +1,35 @@
 import React, { useEffect, useState } from "react";
 import ViewGithubBtn from "./ViewGithubBtn";
 import LiveDemoBtn from "./LiveDemoBtn";
+import projectsData from "../data/projects.json"; // Adjust the path as needed
+
 
 const Projects = () => {
-    const [repos, setRepos] = useState([]);
-    const apiUrl = "https://api.github.com/users/lisawh0/repos";
+    const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch(apiUrl)
-            .then((response) => response.json())
-            .then((data) => {
-                // Extract relevant information from the API response
-                const projectData = data.map((repo) => ({
-                    id: repo.id,
-                    name: repo.name,
-                    description: repo.description,
-                    url: repo.html_url,
-                }));
-                setRepos(projectData);
-            })
-            .catch((error) => console.error("Error fetching data:", error));
+        // Set the projects data from the imported JSON
+        setProjects(projectsData.projects);
     }, []);
 
     return (
         <div className="projects">
-            <h1>Feautred Projects</h1>
-            {repos.map((project) => (
-                <div key={project.id} className="project-child">
+            <h1>Featured Projects</h1>
+            {projects.map((project, index) => (
+                <div key={index} className="project-child">
                     <h3>{project.name}</h3>
+                    <img src={project.image} alt={project.name} />
                     <p>{project.description}</p>
-                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <ViewGithubBtn />
                     </a>
-                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                    <a href={project.netlify} target="_blank" rel="noopener noreferrer">
                         <LiveDemoBtn />
                     </a>
                 </div>
             ))}
         </div>
     );
-
 };
 
 export default Projects;
