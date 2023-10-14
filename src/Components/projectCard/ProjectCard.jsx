@@ -1,4 +1,6 @@
-import React, {useState}from 'react'
+import React, {useState} from 'react'
+import repoImages from '/src/repoImages.json'
+
 import { HeadingH1 } from '../typography/headingH1/HeadingH1'
 import { HeadingH3 } from '../typography/headingH3/HeadingH3'
 import { NormalText } from '../typography/normalText/NormalText'
@@ -25,10 +27,13 @@ export const ProjectCard = ({projects}) => {
       <HeadingH1 className="project-h1"text={"Featured Projects"}/>
 
       {filteredProjects.map((project)=> {
+        const repoImage = repoImages.find((img)=> img.repoName === project.name)
+        console.log(repoImages)
+        
          
         return (
           <div className="project-card" key={project.id}> 
-            <ProjectImg />
+            <ProjectImg src={repoImage?.imageUrl} alt={repoImage.name}/>
 
             <div className="project-card-info">
               <HeadingH3 className={"project-h3"}text={project.name}/>
