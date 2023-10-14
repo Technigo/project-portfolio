@@ -28,15 +28,15 @@ const Projects = () => {
                                     </span>
                                 ))}
                             </div>
+                            <div className="project-actions">
+                                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                    <ViewGithubBtn />
+                                </a>
+                                <a href={project.netlify} target="_blank" rel="noopener noreferrer">
+                                    <LiveDemoBtn />
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div className="project-actions">
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
-                            <ViewGithubBtn />
-                        </a>
-                        <a href={project.netlify} target="_blank" rel="noopener noreferrer">
-                            <LiveDemoBtn />
-                        </a>
                     </div>
                 </div>
             ))}
