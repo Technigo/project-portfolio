@@ -9,7 +9,7 @@ export const ProjectCard = ({ repo }) => {
   const repoImage = repoImages.find((img) => img.repoName === repo.name);
 
   return (
-    <div className="project-card-wrapper">
+    <>
       <img src={repoImage?.imageUrl} alt={repo.name} className="project-card-image"/>
       <div className="project-description">
         <ProjectHeadline projectTitle={repo.name} />
@@ -22,7 +22,7 @@ export const ProjectCard = ({ repo }) => {
         </div>
         <ButtonComponent repoURL={repo.html_url} deployedSite={repo.homepage} />
       </div>
-    </div>
+    </>
   );
 };
 

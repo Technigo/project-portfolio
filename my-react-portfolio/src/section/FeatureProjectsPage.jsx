@@ -43,11 +43,11 @@ export const FeatureProjectsPage = () => {
     }, []);
 
     return (
-        <div className="featured-page-wrapper">
+        <section className="featured-page-wrapper">
             <Headline headerText={headerText} />
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
             {repos.length > 0 && <FeaturedProjects repos={repos} />}
-        </div>
+        </section>
     );
 };
