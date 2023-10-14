@@ -18,9 +18,13 @@ export const FrontPage = () => {
                 <ImagePortrait />
                 <MediumHeadline
                     mediumSizeHeader={mediumSizeHeader}
+                    id="smaller-h2"
                     useSpan={false}
                 />
-                <Headline id="smaller-h1" className="big-heading blue-h1" headerText={headerText} />
+                <Headline
+                    id="smaller-h1"
+                    className="big-heading blue-h1"
+                    headerText={headerText} />
             </div>
             <div className="intropage-info">
                 <Textbox text={text} />

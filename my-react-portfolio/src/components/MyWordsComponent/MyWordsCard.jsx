@@ -13,6 +13,7 @@ export const MyWordsCard = ({ articleImage, articleDate, articleTitle, articleTe
             <img src={articleImage} alt="article image" className="article-card-image" />
             <TagComponent tag={articleDate} />
             <MediumHeadline
+                className="medium-headline"
                 mediumSizeHeader={articleTitle}
                 useSpan={false}
             />

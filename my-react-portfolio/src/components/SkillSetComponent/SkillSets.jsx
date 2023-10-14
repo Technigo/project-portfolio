@@ -1,4 +1,6 @@
-import "../tagComponent.css";
+
+import "../mediumHeadline.css";
+import "../textbox.css";
 import { MediumHeadline } from "../MediumHeadline";
 import { Textbox } from "../Textbox";
 
@@ -8,7 +10,7 @@ export const SkillSets = () => {
     const skillCategories = [
         {
             id: "100",
-            className: "code white-h2",
+            className: "code",
             mediumSizeHeader: 'Code',
             text: [
                 { id: "101", name: 'HTML5' },
@@ -20,7 +22,7 @@ export const SkillSets = () => {
         },
         {
             id: "200",
-            className: "toolbox white-h2",
+            className: "toolbox",
             mediumSizeHeader: 'Toolbox',
             text: [
                 { id: "201", name: 'Slack' },
@@ -29,7 +31,7 @@ export const SkillSets = () => {
         },
         {
             id: "300",
-            className: "upcoming white-h2",
+            className: "upcoming",
             mediumSizeHeader: 'Upcoming',
             text: [
                 { id: "301", name: 'Node.js' }
@@ -53,7 +55,7 @@ export const SkillSets = () => {
             {skillCategories.map((category) => (
                 <div key={category.id}>
                     <MediumHeadline
-                        className={category.className}
+                        className={`${category.className}`}
                         mediumSizeHeader={category.mediumSizeHeader}
                         useSpan={true}
                     />

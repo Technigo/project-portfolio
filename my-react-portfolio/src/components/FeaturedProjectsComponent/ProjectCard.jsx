@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { TagComponent } from "../TagComponent";
 import { ProjectHeadline } from "./ProjectHeadline";
 import { ButtonComponent } from "./ButtonComponent";
+import { Textbox } from "../Textbox";
 
 export const ProjectCard = ({ repo }) => {
   // Find the corresponding image for the repo
@@ -13,11 +14,12 @@ export const ProjectCard = ({ repo }) => {
       <img src={repoImage?.imageUrl} alt={repo.name} className="project-card-image" />
       <div className="project-description">
         <ProjectHeadline projectTitle={repo.name} />
+        <Textbox text={repo.description} />
         <div className="project-tags">
           {repo.topics.map((topic) => {
             const key = uuidv4();  // Generate a unique key
             console.log('Key for tag:', key);
-            return <TagComponent key={key} tag={topic} />;
+            return <TagComponent key={key} tag={topic.toUpperCase()} />;
           })}
         </div>
         <ButtonComponent repoURL={repo.html_url} deployedSite={repo.homepage} />

@@ -1,3 +1,6 @@
+import "../components/mediumHeadline.css"
+import "../components/headline.css"
+
 import { Headline } from "../components/Headline";
 import { MediumHeadline } from "../components/MediumHeadline";
 
@@ -12,7 +15,7 @@ export const TechSkills = () => {
 
     return (
         <>
-            <div className="techSkills-page-wrapper">
+            <section className="techSkills-page-wrapper">
                 <Headline className="big-heading" headerText={headerText} />
                 <MediumHeadline
                     id="hind-h2"
@@ -20,7 +23,7 @@ export const TechSkills = () => {
                     mediumSizeHeader={mediumSizeHeader}
                     useSpan={false}
                 />
-            </div>
+            </section>
         </>
     )
 }

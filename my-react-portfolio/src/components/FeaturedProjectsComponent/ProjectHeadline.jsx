@@ -15,6 +15,7 @@ export const ProjectHeadline = ({ projectTitle }) => {
         <>
             <MediumHeadline
                 mediumSizeHeader={replaceHyphensWithSpacesExceptFirst(projectTitle.charAt(0).toUpperCase() + projectTitle.slice(1))}
+                className="medium-headline"
                 useSpan={false}
             />
         </>

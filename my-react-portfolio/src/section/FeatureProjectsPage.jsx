@@ -1,5 +1,6 @@
-import "../components/headline.css"
-import "./featuredProjectsPage.css"
+import "../components/headline.css";
+import "../components/tagComponent.css";
+import "./featuredProjectsPage.css";
 import { useState, useEffect } from "react";
 import { FeaturedProjects } from "../components/FeaturedProjectsComponent/FeaturedProjects";
 import { Headline } from "../components/Headline";

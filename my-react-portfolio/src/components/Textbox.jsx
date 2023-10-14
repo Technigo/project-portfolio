@@ -1,4 +1,4 @@
-
+import "./textbox.css"
 
 export const Textbox = ({ text }) => {
 
