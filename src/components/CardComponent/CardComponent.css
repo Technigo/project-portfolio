@@ -1,31 +1,28 @@
 /* SECTION_____________________________________ */
 .card-header-wrapper {
     color: blue;
-    border: 5px solid darkcyan;
     display: flex;
-    align-items: left;
     justify-content: center;
     align-content: center;
+
+
 }
 
 .projectWrapper {
     color: rgb(0, 0, 0);
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 50%;
-    margin: auto;
     padding: 10px;
     display: flex;
-
+    justify-content: center;
+    align-content: center;
 }
 
-section {
-    color: blue;
-
-}
 
 .projectContainer {
+    border: 5px solid rgb(29, 49, 49);
     display: flex;
+    width: 700px;
     /* Use flexbox layout */
     align-items: center;
     /* Vertically align items */
@@ -53,18 +50,25 @@ section {
     width: 300px;
 }
 
+button {
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 110px;
+    padding-top: 10px;
+
+}
 
 .project-buttons img {
     height: 25px;
     display: flex;
-    width: 100px;
+    transition: filter 0.3s;
+    /* Add a transition for a smooth effect */
 }
 
-button {
-    border-radius: 40px;
-    background: transparent;
-    border: solid 1px black;
-    margin-right: 10px;
-    margin-top: 5px;
-    width: 110px;
+.project-buttons img:hover {
+    filter: brightness green(1.2);
+    /* Adjust the filter value as desired */
 }

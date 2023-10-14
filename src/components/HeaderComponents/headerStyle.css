@@ -1,32 +1,35 @@
-.HeaderSection {
-
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 200px;
-    text-align: center;
-    color: blue;
-    padding: 0;
+.headerBody {
     height: 980px;
-}
 
-.header-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
 }
 
-.header-text h1 {
-    white-space: nowrap;
+.HeaderSection {
+    width: 900px;
+    margin: auto;
+    margin-top: 100px;
+
+
 }
 
-.HeaderSection h3 {
-    text-align: left;
+.HeaderSection h1 {
+    color: blue;
 }
 
 .subPresentation {
+    margin-top: 100px;
     display: flex;
     padding: 10px;
+}
+
+.picText {
+    width: 50%;
+    margin: auto;
+
+}
+
+.picText h1 {
+    color: blue;
 }
 
 .CvPic {
@@ -34,4 +37,24 @@
     border-radius: 100%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+.arrow {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: jump 1s infinite alternate;
+    /* Adjust duration and timing as needed */
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+        /* Adjust the jump height as needed */
+    }
 }

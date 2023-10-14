@@ -1,0 +1,93 @@
+/* Add this CSS for horizontal layout with two items per row */
+.MyWords-container {
+    background-color: rgb(255, 236, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.myword-header-wrapper {
+
+    background-color: rgb(255, 236, 243);
+    color: rgb(255, 69, 117);
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    /* Set a z-index to make the content appear above the pink background */
+}
+
+.divider {
+    height: 20px;
+    margin: 0;
+    position: relative;
+    background: linear-gradient(to bottom, transparent 50%, rgb(255, 236, 243) 50%);
+}
+
+
+.mywords-wrapper button {
+    border: none;
+}
+
+.MyWords-img {
+    border-left: 20px solid rgb(255, 69, 117);
+    border-bottom: 20px solid rgb(255, 69, 117);
+}
+
+/* Your other styles here */
+
+.MyWords-item {
+    width: calc(10% - 40px);
+    /* Adjust the width and margin as needed */
+    margin-bottom: 20px;
+    /* Adjust the margin as needed */
+    border: black solid 10px;
+
+}
+
+.mywords-tags span:nth-child(1),
+.mywords-tags span:nth-child(2),
+.mywords-tags span:nth-child(3),
+.mywords-tags span:nth-child(4) {
+    background-color: black;
+    color: white;
+    margin-right: 5px;
+    width: auto;
+    padding: 2px;
+    font-size: 10px;
+
+}
+
+@media (min-width:1024px) {
+    .MyWords-container {
+        display: grid;
+        width: 100%;
+    }
+
+    .MyWords-item {
+        width: 100%;
+    }
+
+    .MyWordsMap {}
+
+
+    .myword-header-wrapper {
+        background-color: rgb(255, 236, 243);
+        color: rgb(255, 69, 117);
+        display: flex;
+        width: 100%;
+
+
+    }
+
+    .myword-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+
+    }
+}

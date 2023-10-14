@@ -11,7 +11,12 @@ export const MyWordsCard = ({ mywords }) => {
                     564} height={340} alt="MyWords Image" />
 
                 <div className="MyWords-description">
-                    <p className="project-tags">{mywords.tags}</p>
+                    <div className="mywords-tags">
+                        {mywords.tags.map((tag, index) => (
+                            <span key={index}>{tag}</span>
+                        ))}
+                    </div>
+
                     <h2 className="MyWords-title">{mywords.name}</h2>
                     <p>{mywords.description}</p>
                 </div>

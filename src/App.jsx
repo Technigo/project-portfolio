@@ -1,13 +1,13 @@
 import React from 'react';
 import { HeaderSection } from './components/Header';
-import { TechText } from './components/tech';
+import { TechText } from './components/TechSkillsComponent/tech';
 import { Section } from './components/CardComponent/Section';
-import { SkillsText } from './components/skills';
+import { SkillsText } from './components/TechSkillsComponent/skills';
 import { Contact } from './components/contact';
-import { MyWordsSection } from './components/MyWordsSection';
+import { MyWordsSection } from './components/Article/MyWordsSection';
 
 import './components/CardComponent/CardComponent.css';
-import './components/MyWords.css';
+import './components//Article/MyWords.css';
 import './App.css';
 import './index.css';
 

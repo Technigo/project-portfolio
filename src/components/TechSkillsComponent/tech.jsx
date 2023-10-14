@@ -1,6 +1,6 @@
 import React from 'react';
-import './TechSkillsComponent/tech.css';
-import { HeaderText } from './HeaderComponents/HeaderText';
+import './tech.css';
+import { HeaderText } from '../HeaderComponents/HeaderText';
 
 export const TechText = () => {
     return (
