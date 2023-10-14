@@ -1,5 +1,6 @@
 import "../components/headline.css";
 import "../components/mediumHeadline.css";
+import "./contactInfoPage.css";
 
 
 import { ContactInfoButton } from "../components/ContactInfoComponent/ContactInfoButton";
@@ -17,7 +18,7 @@ export const ContactInfoPage = () => {
     ];
 
     return (
-        <div>
+        <div className="contact-info-wrapper">
             <Headline className="big-heading blue-h1" headerText={headerText} />
             <ImagePortrait />
             <div className="contact-information">

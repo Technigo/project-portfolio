@@ -1,5 +1,6 @@
 import "../components/mediumHeadline.css";
 import "../components/headline.css";
+import "./techSkills.css";
 
 import { Headline } from "../components/Headline";
 import { MediumHeadline } from "../components/MediumHeadline";

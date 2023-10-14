@@ -1,6 +1,7 @@
 import "../components/headline.css";
 import "../components/mediumheadline.css";
 import "../components/textbox.css";
+import "./frontPage.css";
 import { Headline } from "../components/Headline";
 import { ImagePortrait } from "../components/ImagePortrait";
 import { MediumHeadline } from "../components/MediumHeadline";
@@ -17,7 +18,7 @@ export const FrontPage = () => {
 
     return (
         <>
-            <div className="intro-page-wrapper">
+            <section className="intro-page-wrapper">
                 <ImagePortrait />
                 <MediumHeadline
                     mediumSizeHeader={mediumSizeHeader}
@@ -28,10 +29,10 @@ export const FrontPage = () => {
                     id="smaller-h1"
                     className="big-heading blue-h1"
                     headerText={headerText} />
-            </div>
-            <div className="intropage-info">
-                <Textbox text={text} />
-            </div>
+                <div className="intropage-info">
+                    <Textbox text={text} />
+                </div>
+            </section>
         </>
     )
 }

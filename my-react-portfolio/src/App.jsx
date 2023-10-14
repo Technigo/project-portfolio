@@ -1,5 +1,5 @@
 
-import './App.css'
+
 import { ContactInfoPage } from './section/ContactInfoPage'
 import { FeatureProjectsPage } from './section/FeatureProjectsPage'
 import { Footer } from './section/Footer'
@@ -13,13 +13,13 @@ function App() {
 
   return (
     <>
-      <section className="front-page"><FrontPage /></section>
-      <section className="tech-skills"><TechSkills /></section>
-      <section className="featured-projects"><FeatureProjectsPage /></section>
-      <section className="my-words"><MyWordsPage /></section>
-      <section className="skillSet-page"><SkillSetPage /></section>
-      <section className="contact-info"><ContactInfoPage /></section>
-      <section className="footer"><Footer /></section>
+      <FrontPage />
+      <TechSkills />
+      <FeatureProjectsPage />
+      <MyWordsPage />
+      <SkillSetPage />
+      <ContactInfoPage />
+      <Footer />
     </>
   )
 }
