@@ -3,6 +3,7 @@ import { SubHeading } from "./components/Typo/SubHeading.jsx";
 import { BodyText } from "./components/Typo/BodyText.jsx"
 
 import profile from "../assets/extraaa/profile-pic.jpg";
+import arrow from "../assets/elements/arrow.svg"
 
 import "./Introduction.css"
 import "./Arrow.css"
@@ -30,7 +31,7 @@ export const Introduction = () => {
                 <BodyText text={BodyContent} />
             </div>
             <div className="arrow">
-                <img className="arrow" src="src/assets/elements/arrow.svg" alt="Arrow jumping, pointing down to the rest of the page" />
+                <img className="arrow" src="arrow" alt="Arrow jumping, pointing down to the rest of the page" />
             </div>
         </section>
     )
