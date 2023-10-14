@@ -2,7 +2,7 @@ import { GithubRepos } from "./Components/GithubRepos"
 import { PortfolioSec } from "./Components/PortfolioSec"
 import { Words } from "./Components/Words"
 import { Tech } from "./Components/Tech"
-import { Skill } from "./Components/skill"
+import { Skill } from "./Components/Skill"
 import { Media } from "./Components/Media"
 import { Footer } from "./Components/Footer"
 
