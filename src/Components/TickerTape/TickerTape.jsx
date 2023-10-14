@@ -6,7 +6,9 @@ export const TickerTape = () => {
     <div className="ticker-tape">
       <p className="moving-text">
         Susanne Ekenheim · Frontend Developer · Susanne Ekenheim · Frontend
-        Developer · Susanne Ekenheim · Frontend Developer
+        Developer · Susanne Ekenheim · Frontend Developer · Frontend Developer ·
+        Susanne Ekenheim · Frontend Developer · Frontend Developer · Susanne
+        Ekenheim · Frontend Developer · Frontend Developer · Susanne Ekenheim
       </p>
     </div>
   );

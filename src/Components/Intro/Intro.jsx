@@ -1,5 +1,7 @@
 import React from "react";
 import { ProfilePicture } from "../ProfilePicture/ProfilePicture";
+import { Heading1 } from "../Heading1/Heading1";
+import { Heading3 } from "../Heading3/Heading3";
 
 import "./Intro.css";
 
@@ -9,8 +11,8 @@ export const Intro = () => {
       <ProfilePicture />
       <div className="info-text">
         <div>
-          <h3>Hi, I'm Susanne Ekenheim</h3>
-          <h1>Frontend Developer</h1>
+          <Heading3 text={"Hi, I'm Susanne Ekenheim"} />
+          <Heading1 text={"Frontend Developer"} />
         </div>
         <p>
           Susanne is an exceptional developer known for her innovative solutions
