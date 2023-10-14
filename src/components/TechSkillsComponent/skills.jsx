@@ -1,6 +1,6 @@
 import React from 'react';
 import './skills.css';
-import { HeaderText } from './HeaderText';
+import { HeaderText } from '../HeaderComponents/HeaderText';
 
 export const SkillsText = () => {
     return (

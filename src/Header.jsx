@@ -1,8 +1,8 @@
 import CvPic from '/CV_pic.jpg'
 import arrow from '../arrow.png'
-import './components/headerStyle.css';
-import { HeaderText } from './components/HeaderText';
-import { HeaderImg } from './components/HeaderImg';
+import './components/HeaderComponents/headerStyle.css';
+import { HeaderText } from './components/HeaderComponents/HeaderText';
+import { HeaderImg } from './components/HeaderComponents/HeaderImg';
 
 export const HeaderSection = () => {
     return (

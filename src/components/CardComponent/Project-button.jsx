@@ -7,12 +7,12 @@ export const Buttons = ({ project }) => {
 
                 <a href={project.github}>
                     <button role="button" tabindex="0" onclick="yourFunction()">
-                        <img src={project.githubBtn} alt="Description of the image" />
+                        <img src={project.githubBtn} alt="Github Link to project" />
                     </button>
                 </a>
                 <a href={project.netlify}>
                     <button role="button" tabindex="0" onclick="yourFunction()">
-                        <img src={project.liveDemoBtn} alt="Description of the image" />
+                        <img src={project.liveDemoBtn} alt="Netlify Link to project" />
                     </button>
                 </a>
 
