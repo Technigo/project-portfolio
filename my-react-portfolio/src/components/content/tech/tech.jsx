@@ -1,11 +1,22 @@
 //import {useState, useEffect} from "react"
-//import {style} from './tech.module.css'
+import style from './tech.module.css'
+import { SubHeader } from '../../reusable/subheader/subheader.jsx'
+import { MainHeader } from '../../reusable/mainheader/mainheader.jsx'
 
 export const Tech = () => {
 
     return (
-        <div>
-            < />
+        <div className={style.techBox}>
+            <MainHeader
+                mainHeading="Tech"
+                className={style.h1}
+            />
+            <div >
+                <SubHeader
+                    subHeading="text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text"
+                    className={style.h2}
+                />
+            </div>
         </div>
     )
 }
