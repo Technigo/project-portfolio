@@ -4,11 +4,11 @@ import { skills } from "../Data";
 export const Skills = () => {
   return (
     <section className="skills" id="skills">
-      <div className="page-wrapper">
-        <div className="page-container bg-page-container">
-          <h2 className="page-title">Skills</h2>
+      <div className="page-container bg-page-container">
+        <h2 className="page-title">Skills</h2>
+        <div className="skills-list">
           {skills.map((skill) => (
-            <div className="skills-list" key={skill.id}>
+            <div className="skill-list" key={skill.id}>
               <div
                 className="category-title"
                 style={{ backgroundColor: skill.bg_color }}

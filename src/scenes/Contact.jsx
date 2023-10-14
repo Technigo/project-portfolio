@@ -8,7 +8,6 @@ import { AiOutlineInstagram } from "react-icons/ai";
 export const Contact = () => {
   return (
     <section className="contact" id="contact">
-      <div className="page-wrapper">
         <div className="page-container">
           <h2 className="page-title">Let's talk</h2>
           <div className="profile-image-container">
@@ -24,7 +23,6 @@ export const Contact = () => {
             <AiOutlineInstagram className="footer-icon" />
           </div>
         </div>
-      </div>
     </section>
   );
 };

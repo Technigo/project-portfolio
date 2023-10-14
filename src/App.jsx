@@ -14,9 +14,9 @@ export const App = () => {
         <Tech />
         <Projects />
         <Articles />
-        <Skills />
-        <Contact />
       </div>
+      <Skills />
+      <Contact />
     </main>
   );
 };
