@@ -1,25 +1,30 @@
+.divider {
+  width: 100%;
+}
+
 .my-words-section {
   background: #ede4ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2;
-  position: relative;
-}
-
-.divider img {
-  z-index: 1;
-  position: relative;
-  top: -13px;
-  overflow: hidden;
-  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 128px;
 }
 
 .my-words-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 64px;
+}
+
+.date-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  margin: 0;
 }
 
 .article-box {
@@ -28,4 +33,42 @@
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
+  width: 343px;
+}
+
+.article-date {
+  background-color: black;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: fit-content;
+  padding: 3px;
+  margin: 0;
+}
+
+.article-title {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+.article-text {
+  margin: 0;
+  width: 100%;
+}
+
+.read-article {
+  width: 200px;
+  display: flex;
+  padding-right: 0px;
+  align-items: center;
+  gap: 7px;
+  border: none;
 }

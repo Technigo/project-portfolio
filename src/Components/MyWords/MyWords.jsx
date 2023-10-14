@@ -14,9 +14,11 @@ export const MyWords = () => {
       <div className="my-words-wrapper">
         <div className="article-box">
           <Images />
-          <p>July 2023</p>
-          <h3>{articleTitle}</h3>
-          <p>{articleText} </p>
+          <div className="date-title-wrapper">
+            <p className="article-date">July 2023</p>
+            <h3 className="article-title">{articleTitle}</h3>
+          </div>
+          <p className="article-text">{articleText} </p>
           <button className="icon-button read-article">
             <img
               className="icon"
@@ -28,9 +30,11 @@ export const MyWords = () => {
         </div>
         <div className="article-box">
           <Images />
-          <p>July 2023</p>
-          <h3>{articleTitle}</h3>
-          <p>{articleText} </p>
+          <div className="date-title-wrapper">
+            <p className="article-date">July 2023</p>
+            <h3 className="article-title">{articleTitle}</h3>
+          </div>
+          <p className="article-text">{articleText} </p>
           <button className="icon-button read-article">
             <img
               className="icon"
@@ -40,11 +44,14 @@ export const MyWords = () => {
             Read Article
           </button>
         </div>
+
         <div className="article-box">
           <Images />
-          <p>July 2023</p>
-          <h3>{articleTitle}</h3>
-          <p>{articleText} </p>
+          <div className="date-title-wrapper">
+            <p className="article-date">July 2023</p>
+            <h3 className="article-title">{articleTitle}</h3>
+          </div>
+          <p className="article-text">{articleText} </p>
           <button className="icon-button read-article">
             <img
               className="icon"
@@ -54,11 +61,14 @@ export const MyWords = () => {
             Read Article
           </button>
         </div>
+
         <div className="article-box">
           <Images />
-          <p>July 2023</p>
-          <h3>{articleTitle}</h3>
-          <p>{articleText} </p>
+          <div className="date-title-wrapper">
+            <p className="article-date">July 2023</p>
+            <h3 className="article-title">{articleTitle}</h3>
+          </div>
+          <p className="article-text">{articleText} </p>
           <button className="icon-button read-article">
             <img
               className="icon"
