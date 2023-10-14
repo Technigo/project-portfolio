@@ -3,8 +3,7 @@ import { BodyText } from "./Typo/BodyText.jsx";
 import { Tags } from "./Tags.jsx"
 import { Button } from "./Button.jsx"
 
-//import  repoImages  from "./data/repoImages.json";
-import repoImages from "./Data/repoImages.json";
+import repoImages from "./Data/repoImages.json"
 
 
 export const ProjectCard = ({repos}) => {
