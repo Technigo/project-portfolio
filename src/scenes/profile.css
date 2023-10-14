@@ -11,7 +11,6 @@
 .profile-content {
   display: grid;
   row-gap: 2rem;
-
 }
 
 .profile-image-container {
@@ -44,14 +43,27 @@
   max-width: 600px;
 }
 
+/*---------- ARROW ANIMATION ----------*/
 .arrow-down {
   color: var(--pink);
-  font-size: 30px;
+  font-size: 2rem;
   margin: 0 auto;
+  animation: moveUpDown 1s linear infinite;
 }
 
-@media (min-width: 744px) {
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    transform: translateY(-10px);
+  }
+}
+/*---------- ARROW ANIMATION END ----------*/
 
+@media (min-width: 744px) {
   .profile {
     padding: 8rem 4rem 4rem;
   }

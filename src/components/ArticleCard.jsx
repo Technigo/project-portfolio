@@ -9,15 +9,17 @@ export const ArticleCard = () => {
         return (
           <div className="article-item card" key={id}>
             <img src={image} alt={imageAlt} className="article-image-border"/>
-            <div className="article-heading">
-                <div className="tags">
-                    <span>{date}</span>
-                </div>
-                <h3>{title}</h3>
+            <div className="test">
+              <div className="article-heading">
+                  <div className="tags">
+                      <span>{date}</span>
+                  </div>
+                  <h3>{title}</h3>
+              </div>
+              <p className="text-css">{text}</p>
+              <ArticleLinkBtn article_url={article_url} />
+                        </div>
             </div>
-            <p className="text-css">{text}</p>
-            <ArticleLinkBtn article_url={article_url} />
-          </div>
         );
       })}
      
