@@ -9,6 +9,8 @@ export const ObserverWrapper = ({ children }) => {
     threshold: 0,
   });
 
+  // this is for scroll animation. This observes screen, and then css will be applied when an elemnt is shown on a screen.
+
   function handleScroll(isView, entry) {
     if (isView) setIsVisible(true);
     else setIsVisible(false);

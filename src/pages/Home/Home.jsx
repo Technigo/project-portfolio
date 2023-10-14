@@ -10,8 +10,10 @@ import { Footer } from "../../components/sections/Footer";
 import { ScrollButton } from "../../components/ui/ScrollButton";
 
 function Home({ lang, onLang }) {
+  // arrow icon to go down in hero
   const arrowRef = useRef(null);
 
+  // animation for scroll bar on the top
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -21,6 +23,7 @@ function Home({ lang, onLang }) {
 
   return (
     <main>
+      {/* This is scroll bar */}
       <motion.div className="progress-bar" style={{ scaleX }} />
       <Hero arrowRef={arrowRef} lang={lang} onLang={onLang} />
       <Tech arrowRef={arrowRef} />

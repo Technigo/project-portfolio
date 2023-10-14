@@ -28,6 +28,7 @@ function BlogPage() {
   const { date, title, text, url, imagePath } = currentPost;
   return (
     <section className={styles.blog_page}>
+      <div className={styles.wave_box}></div>
       <div className={styles.inner_blog}>
         <div className={styles.blog_content}>
           <div className={styles.image_box}>

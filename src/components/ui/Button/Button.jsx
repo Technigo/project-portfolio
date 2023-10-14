@@ -24,7 +24,7 @@ export default function Button({
         target="_blank"
         rel="noopener noreferrer"
         className={styles.button}
-        style={{ backgroundColor: color }}
+        style={{ backgroundColor: color, border: borderColor ? borderColor : "" }}
         onClick={onclick}
         onMouseEnter={() => {
           setColor(hoverColor);
