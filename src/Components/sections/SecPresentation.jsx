@@ -18,7 +18,7 @@ export const SecPresentation = () => {
           <RoundImg/>
           </div>
           <div className="presentation-headings">
-            <HeadingH4 text={"Hi, I am Emmy Dieden"}/>
+            <HeadingH4 text={"Hi, I am Emmy Dieden"} className={"presentation-h4"}/>
             <HeadingH1 text={"Frontend Developer"} className={"presentation-h1"}/>
             </div>
             <NormalText className={"presentation-text"}text={presentationText}/>

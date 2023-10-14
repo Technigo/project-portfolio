@@ -8,7 +8,7 @@ export const SecTech = () => {
     <>
     <div className="tech-wrapper">
       <HeadingH1 text="Tech" className="tech-h1"/>
-      <NormalTextBig text="HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, API:s, 
+      <NormalTextBig className={"tech-normal-big-text"} text="HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, API:s, 
       mob-programming, pair-programming, Github."/>
     </div>
     </>

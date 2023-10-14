@@ -18,37 +18,30 @@ export const SecSkills = () => {
 
   return (
     <>
-    <section className="skills-wrapper">
-      <HeadingH1 className="skills-h1" text="Skills"/>
-        <div className="skills-inner-wrapper">
-          <HeadingH3 text={"Code"} className={"heading-skill heading-skill-code"}/>
-          <SkillList list={codeList}/>
-        </div>
-
-        <div className="skills-inner-wrapper">
-          <HeadingH3 text={"Toolbox"} className={"heading-skill heading-skill-toolbox"}/>
-          <SkillList list={toolboxList}/>
-        </div>
-
-        <div className="skills-inner-wrapper">
-          <HeadingH3 text={"Upcoming"} className={"heading-skill heading-skill-upcoming"}/>
-          <SkillList list={upcomingList}/>
-        </div>
-
-        <div className="skills-inner-wrapper">
-          <HeadingH3 text={"More"} className={"heading-skill heading-skill-more"}/>
-          <SkillList list={moreList}/>
-        </div>
-
-        
-        
-        
-
-        
-
+    <section className="skills-section">
       
+        <HeadingH1 className="skills-h1" text="Skills"/>
+        <div className="skills-wrapper">
+          <div className="skills-inner-wrapper code-wrapper">
+            <HeadingH3 text={"Code"} className={"heading-skill heading-skill-code"}/>
+            <SkillList list={codeList}/>
+          </div>
 
-      
+          <div className="skills-inner-wrapper toolbox-wrapper">
+            <HeadingH3 text={"Toolbox"} className={"heading-skill heading-skill-toolbox"}/>
+            <SkillList list={toolboxList}/>
+          </div>
+
+          <div className="skills-inner-wrapper upcoming-wrapper">
+            <HeadingH3 text={"Upcoming"} className={"heading-skill heading-skill-upcoming"}/>
+            <SkillList list={upcomingList}/>
+          </div>
+
+          <div className="skills-inner-wrapper more-wrapper">
+            <HeadingH3 text={"More"} className={"heading-skill heading-skill-more"}/>
+            <SkillList list={moreList}/>
+          </div>
+        </div>
       
       </section>
     </>

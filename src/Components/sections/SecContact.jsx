@@ -18,9 +18,9 @@ export const SecContact = () => {
       </div>
       
       <div className="social-media">
-            <ImgLink text={"Link to LinkedIn"} src={'./public/assets/icons/linkedin_grey.svg'} link={'www.linkedin.com/in/emmy-dieden-774574283'} className={"link-linkedin"}/>
-            <ImgLink text={"Link to GitHub"} src={'public/assets/icons/github_grey.svg'} link={'https://github.com/emmydieden'}className={"link-github"}/>
-            <ImgLink text={"Link to Instagram"} src={'public/assets/icons/instagram_grey.svg'} className={"link-instagram"} link={'https://www.instagram.com/emmydieden_art/'}/>
+            <ImgLink text={"Link to LinkedIn"} src={'./assets/icons/linkedin_grey.svg'} link={'www.linkedin.com/in/emmy-dieden-774574283'} className={"link-linkedin"}/>
+            <ImgLink text={"Link to GitHub"} src={'/assets/icons/github_grey.svg'} link={'https://github.com/emmydieden'}className={"link-github"}/>
+            <ImgLink text={"Link to Instagram"} src={'/assets/icons/instagram_grey.svg'} className={"link-instagram"} link={'https://www.instagram.com/emmydieden_art/'}/>
       </div>
     
     </div>

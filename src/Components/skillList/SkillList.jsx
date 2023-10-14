@@ -6,10 +6,10 @@ import './skillList.css'
 export const SkillList = ({list}) => {
   return (
     <>
-    {list.map((listItem)=> {
+    {list.map((listItem, index)=> {
         return (
             <>
-            <NormalText  className="skill-list"text={listItem}/>
+            <NormalText  className="skill-list"text={listItem} key={index}/>
             </>
         )
 
