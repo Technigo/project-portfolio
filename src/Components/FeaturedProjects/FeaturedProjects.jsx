@@ -78,7 +78,7 @@ export const FeaturedProjects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="icon-button github">
+                <button className="icon-button live-demo-button">
                   <img
                     className="icon"
                     src="/assets/Live Demo.svg"
@@ -88,8 +88,13 @@ export const FeaturedProjects = () => {
                 </button>
               </a>
 
-              <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                <button className="icon-button github">
+              <a
+                className="github-repo-link"
+                href={repo.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="icon-button github-button">
                   <img
                     className="icon"
                     src="/assets/github.svg"
