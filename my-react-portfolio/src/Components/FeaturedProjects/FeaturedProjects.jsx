@@ -11,12 +11,15 @@ export const FeaturedProjects = () => {
 
   const myGitHubURL = "https://api.github.com/users/BeckieMorton/repos";
 
+  const sortedbyPush =
+    "https://api.github.com/users/BeckieMorton/repos?sort=pushed_at";
+
   useEffect(() => {
     getMyProjects();
   }, []);
 
   const getMyProjects = () => {
-    fetch(myGitHubURL)
+    fetch(sortedbyPush)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -27,7 +30,7 @@ export const FeaturedProjects = () => {
 
   console.log(myGits);
   //slice array so we only display first 6 github projects
-  let first6Gits = myGits.slice(0, 5);
+  let first6Gits = myGits.slice(0, 6);
 
   return (
     <>
@@ -59,11 +62,19 @@ export const FeaturedProjects = () => {
                     &nbsp;React&nbsp;
                   </span>
                   <p>
-                    <img
-                      className="live-demo-button"
-                      src="\Assets\Live-Demo-Button.png"
-                      alt="live demo"
-                    />
+                    <a
+                      target="_blank"
+                      className="live-code-link"
+                      href={myGit.homepage}
+                      key={myGit.id}
+                      rel="noreferrer noopener"
+                    >
+                      <img
+                        className="live-demo-button"
+                        src="\Assets\Live-Demo-Button.png"
+                        alt="live demo"
+                      />
+                    </a>
                     <a
                       target="_blank"
                       className="my-git-hub-link"
