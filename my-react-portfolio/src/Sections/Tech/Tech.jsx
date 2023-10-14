@@ -9,7 +9,6 @@ export const Tech = () => {
         <section className="tech">
             <MainTitle className={"heading"} text={"Tech"} />
             <LargeText text={techText} />
-
         </section>
     )
 

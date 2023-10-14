@@ -13,8 +13,8 @@ export const Intro = () => {
                 <CircleImage />
             </section>
             <section className="headings">
-                <SubTitle text={"Hi I am evelyn"} />
-                <MainTitle text={"Fronend Dev"} />
+                <SubTitle text={"Hi! I am Evelyn Del Carmen"} />
+                <MainTitle text={"Fronend Developer"} />
             </section>
             <section className="normal-text">
                 <NormalText text={introText} />
