@@ -12,6 +12,9 @@ export const Presentation = () => {
       <div className="image">
         <img src="./src/pictures/me.jpg" alt="" />
       </div>
+      <div className="Arrow">
+        <img src="./src/Icons/Vector.png" />
+      </div>
     </div>
   );
 };

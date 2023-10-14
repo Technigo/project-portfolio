@@ -13,3 +13,18 @@
   max-width: 150px;
   border-radius: 45%;
 }
+
+.Arrow img {
+  margin: 30px;
+  animation: jump 1.5s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end position (no translation) */
+  }
+  50% {
+    transform: translateY(-10px); /* Midway position (move up 10 pixels) */
+  }
+}

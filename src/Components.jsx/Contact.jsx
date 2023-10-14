@@ -14,9 +14,24 @@ export const Contact = () => {
       <h3>E-mail: emmybengtsson@live.se</h3>
       <div className="contact-buttons">
         <LinkButton
-          buttonText="Instagram"
+          buttonText=""
           url="https://www.instagram.com/emmy.linneaa/"
-          icon="./Icons/instagram.png"
+          icon="./src/Icons/instagram.png"
+        />
+        <LinkButton
+          buttonText=""
+          url="https://www.linkedin.com/in/emmy-jansson-2104a3293/"
+          icon="./src/Icons/linkedin.png"
+        />
+        <LinkButton
+          buttonText=""
+          url="https://stackoverflowteams.com/c/technigo/users/520/?tab=profile"
+          icon="./src/Icons/stackoverflow.png"
+        />
+        <LinkButton
+          buttonText=""
+          url="https://github.com/EmmyLJ/"
+          icon="./src/Icons/github.png"
         />
       </div>
     </div>

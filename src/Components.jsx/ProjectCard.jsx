@@ -55,15 +55,18 @@ export const ProjectCard = ({
 
           <div className="buttons">
             <LinkButton
-              buttonText="Live Demo"
+              buttonText=""
               url="https://app.netlify.com/" // Add the path to the specific deploy
-              icon="Live.Demo-Button.png" // Add the path to the icon image
+              icon="./src/Icons/Live-Demo-Button.png" // Add the path to the icon image
             />
             <LinkButton
-              buttonText="View the Code"
+              buttonText=""
               url="https://github.com/EmmyLJ/"
-              icon="View-Code-Button.png"
+              icon="./src/Icons/View-Code-Button.png"
             />
+          </div>
+          <div className="Path">
+            <img src="./src/Icons/path.png" />
           </div>
         </div>
       </div>
