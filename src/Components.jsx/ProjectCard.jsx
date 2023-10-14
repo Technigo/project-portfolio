@@ -9,7 +9,7 @@ export const Projects = () => {
 
   useEffect(() => {
     fetch("https://api.github.com/users/EmmyLJ/repos")
-      .then((response) => response.json()) // Add parentheses to call json()
+      .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
 
