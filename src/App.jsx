@@ -16,7 +16,7 @@ export const App = () => {
       <ImageComponent sectionClassName={"arrow-divider"} elementClassName={"image"} link={"/assets/arrow.svg"} ImageAltText={"Follow arrow down"} />
       <Tech />
       <FeaturedProjects />
-      <ImageComponent sectionClassName={"wave-divider"} elementClassName={"image"} link={"/divider.svg"} ImageAltText={"Wave divider"} />
+      <ImageComponent sectionClassName={"wave-divider"} elementClassName={"image"} link={"/assets/divider.svg"} ImageAltText={"Wave divider"} />
       <Articles />
       <Skills />
       <Footer />
