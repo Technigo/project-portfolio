@@ -3,6 +3,8 @@ import { BodyText } from "./Typo/BodyText.jsx";
 import { Button } from "./Button.jsx";
 import articles from "./Data/articles.json";
 
+import doc from "/src/assets/button-icons/doc.svg"
+
 export const ArticleCard = ( ) => {
 
     console.log("These are the articles:",articles);
@@ -17,7 +19,7 @@ export const ArticleCard = ( ) => {
                         <p className="article-date">{article.date}</p>
                         <SubHeading className={`dark-h3`} text={article.name}/>
                         <BodyText text={article.text}/>
-                        <Button className={`article-button`} buttonName={`Read Article`} link={article.link} icon={`src/assets/button-icons/doc.svg`} iconAlt={`A document icon`}/>
+                        <Button className={`article-button`} buttonName={`Read Article`} link={article.link} icon={doc} iconAlt={`A document icon`}/>
                     </div>
                     )
                 })}

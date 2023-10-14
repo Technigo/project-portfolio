@@ -4,6 +4,8 @@ import { Tags } from "./Tags.jsx"
 import { Button } from "./Button.jsx"
 
 import repoImages from "./Data/repoImages.json"
+import liveDemo from "/src/assets/button-icons/live-demo.svg"
+import gitHub from "/src/assets/button-icons/github.svg"
 
 
 export const ProjectCard = ({repos}) => {
@@ -33,8 +35,8 @@ export const ProjectCard = ({repos}) => {
                                 <BodyText text={repo.description} />
                                 <Tags tags={repo.topics} />
                                 <div className="btn-wrapper-projects">
-                                    <Button className={`demo-button`} buttonName={`Live Demo`} link={repo.homepage} icon={`src/assets/button-icons/live-demo.svg`} iconAlt={`Web icon`} />
-                                    <Button className={`code-button`} buttonName={`View the Code`}link={repo.html_url} icon={`src/assets/button-icons/github.svg`} iconAlt={`GitHub logo`} />
+                                    <Button className={`demo-button`} buttonName={`Live Demo`} link={repo.homepage} icon={liveDemo} iconAlt={`Web icon`} />
+                                    <Button className={`code-button`} buttonName={`View the Code`}link={repo.html_url} icon={gitHub} iconAlt={`GitHub logo`} />
                                 </div>
                             </div>
                         </li>
