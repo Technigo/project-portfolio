@@ -14,22 +14,18 @@ export const Introduction = () => {
           alt="Profile picture of Inna"
         />
         <div className="name-headline-wrapper">
-          <h3 className="my-name">Hi, Im Inna Kokic</h3>
-
-          {/* <MainHeading
-            className={"heading-text intro"}
-            text={"Frontend Developer"}
-          /> */}
+          <h3 className="my-name">Hi, I&apos;m Inna Kokic</h3>
           <h2 className="job-title">Frontend Developer</h2>
         </div>
         <p className="introText">{introText}</p>
-        <div className="arrow jump">
-          <img
-            className="vert-move"
-            src="/assets/Position=down.svg"
-            alt="down arrow icon"
-          />
-        </div>
+      </div>
+
+      <div className="arrow jump">
+        <img
+          className="vert-move"
+          src="/assets/Position=down.svg"
+          alt="down arrow icon"
+        />
       </div>
     </section>
   );

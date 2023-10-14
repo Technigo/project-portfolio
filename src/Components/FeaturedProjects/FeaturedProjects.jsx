@@ -60,49 +60,51 @@ export const FeaturedProjects = () => {
                 src={repo.imageUrl}
                 alt={`Image for ${repo.name}`}
               />
-              <h3 className="repo-name">{repo.name}</h3>
-              <p className="repo-desc"> {repo.description} </p>
+              <div className="all-text-wrapper">
+                <h3 className="repo-name">{repo.name}</h3>
+                <p className="repo-desc"> {repo.description} </p>
 
-              <div className="topics-wrapper">
-                {repo.topics.map((topic) => (
-                  <div className="topics" key={topic}>
-                    {topic}
-                  </div>
-                ))}
+                <div className="topics-wrapper">
+                  {repo.topics.map((topic) => (
+                    <div className="topics" key={topic}>
+                      {topic}
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            <div className="repo-button-wrapper">
-              <a
-                href="https://app.netlify.com/teams/innakokic/sites"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="icon-button live-demo-button">
-                  <img
-                    className="icon"
-                    src="/assets/Live Demo.svg"
-                    alt="live demo icon"
-                  />
-                  Live demo
-                </button>
-              </a>
+              <div className="repo-button-wrapper">
+                <a
+                  href="https://app.netlify.com/teams/innakokic/sites"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="icon-button live-demo-button">
+                    <img
+                      className="icon"
+                      src="/assets/Live Demo.svg"
+                      alt="live demo icon"
+                    />
+                    Live demo
+                  </button>
+                </a>
 
-              <a
-                className="github-repo-link"
-                href={repo.html_url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="icon-button github-button">
-                  <img
-                    className="icon"
-                    src="/assets/github.svg"
-                    alt="github icon"
-                  />
-                  View the code
-                </button>
-              </a>
+                <a
+                  className="github-repo-link"
+                  href={repo.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="icon-button github-button">
+                    <img
+                      className="icon"
+                      src="/assets/github.svg"
+                      alt="github icon"
+                    />
+                    View the code
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         ))}

@@ -1,6 +1,7 @@
 .tech-section {
   height: 700px;
-  background: #ad7be9;
+  /* background: #ad7be9; */
+  background-color: #6f1ab6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,4 +24,22 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: center;
+}
+
+@media (min-width: 667px) {
+  .tech-wrapper {
+    width: 616px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .tech-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-text {
+    width: 400px;
+  }
 }

@@ -12,7 +12,7 @@ export const Tech = () => {
           <MainHeading className={"heading-text tech"} text={"Tech"} />
         </div>
 
-        <div>
+        <div className="skills-text-box">
           <p className="skills-text">{skills}</p>
         </div>
       </div>

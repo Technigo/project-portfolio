@@ -8,77 +8,80 @@ export const MyWords = () => {
 
   const articleTitle = "Lorem Ipsum";
   return (
-    <section className="my-words-section">
-      <img className="divider" src="/assets/divider.svg" alt="" />
-      <MainHeading className={"heading-text my-words"} text={"My Words"} />
-      <div className="my-words-wrapper">
-        <div className="article-box">
-          <Images />
-          <div className="date-title-wrapper">
-            <p className="article-date">July 2023</p>
-            <h3 className="article-title">{articleTitle}</h3>
-          </div>
-          <p className="article-text">{articleText} </p>
-          <button className="icon-button read-article">
-            <img
-              className="icon"
-              src="/assets/ReadArticle.svg"
-              alt="github icon"
-            />
-            Read Article
-          </button>
-        </div>
-        <div className="article-box">
-          <Images />
-          <div className="date-title-wrapper">
-            <p className="article-date">July 2023</p>
-            <h3 className="article-title">{articleTitle}</h3>
-          </div>
-          <p className="article-text">{articleText} </p>
-          <button className="icon-button read-article">
-            <img
-              className="icon"
-              src="/assets/ReadArticle.svg"
-              alt="github icon"
-            />
-            Read Article
-          </button>
-        </div>
+    <>
+      <section className="my-words-section">
+        <img className="divider" src="/assets/divider.svg" alt="" />
+        <MainHeading className={"heading-text my-words"} text={"My Words"} />
 
-        <div className="article-box">
-          <Images />
-          <div className="date-title-wrapper">
-            <p className="article-date">July 2023</p>
-            <h3 className="article-title">{articleTitle}</h3>
+        <div className="my-words-wrapper">
+          <div className="article-box">
+            <Images />
+            <div className="date-title-wrapper">
+              <p className="article-date">July 2023</p>
+              <h3 className="article-title">{articleTitle}</h3>
+            </div>
+            <p className="article-text">{articleText} </p>
+            <button className="icon-button read-article">
+              <img
+                className="icon"
+                src="/assets/ReadArticle.svg"
+                alt="github icon"
+              />
+              Read Article
+            </button>
           </div>
-          <p className="article-text">{articleText} </p>
-          <button className="icon-button read-article">
-            <img
-              className="icon"
-              src="/assets/ReadArticle.svg"
-              alt="github icon"
-            />
-            Read Article
-          </button>
-        </div>
+          <div className="article-box">
+            <Images />
+            <div className="date-title-wrapper">
+              <p className="article-date">July 2023</p>
+              <h3 className="article-title">{articleTitle}</h3>
+            </div>
+            <p className="article-text">{articleText} </p>
+            <button className="icon-button read-article">
+              <img
+                className="icon"
+                src="/assets/ReadArticle.svg"
+                alt="github icon"
+              />
+              Read Article
+            </button>
+          </div>
 
-        <div className="article-box">
-          <Images />
-          <div className="date-title-wrapper">
-            <p className="article-date">July 2023</p>
-            <h3 className="article-title">{articleTitle}</h3>
+          <div className="article-box">
+            <Images />
+            <div className="date-title-wrapper">
+              <p className="article-date">July 2023</p>
+              <h3 className="article-title">{articleTitle}</h3>
+            </div>
+            <p className="article-text">{articleText} </p>
+            <button className="icon-button read-article">
+              <img
+                className="icon"
+                src="/assets/ReadArticle.svg"
+                alt="github icon"
+              />
+              Read Article
+            </button>
           </div>
-          <p className="article-text">{articleText} </p>
-          <button className="icon-button read-article">
-            <img
-              className="icon"
-              src="/assets/ReadArticle.svg"
-              alt="github icon"
-            />
-            Read Article
-          </button>
+
+          <div className="article-box">
+            <Images />
+            <div className="date-title-wrapper">
+              <p className="article-date">July 2023</p>
+              <h3 className="article-title">{articleTitle}</h3>
+            </div>
+            <p className="article-text">{articleText} </p>
+            <button className="icon-button read-article">
+              <img
+                className="icon"
+                src="/assets/ReadArticle.svg"
+                alt="github icon"
+              />
+              Read Article
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
