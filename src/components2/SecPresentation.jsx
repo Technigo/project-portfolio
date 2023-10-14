@@ -1,13 +1,13 @@
 import React from "react";
-import { RoundImg } from "../images/RoundImg";
-import { HeadingH1 } from "../typography/headingH1/HeadingH1"
-import { HeadingH4 } from "../typography/headingH4/HeadingH4";
-import { NormalText } from "../typography/normalText/NormalText";
+import { RoundImg } from "../components/images/RoundImg";
+import { HeadingH1 } from "../components/typography/headingH1/HeadingH1"
+import { HeadingH4 } from "../components/typography/headingH4/HeadingH4";
+import { NormalText } from "../components/typography/normalText/NormalText";
 
 const presentationText =
   "Emmy is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field.";
 
-import "./sections.css";
+import "../components/sections/sections.css";
 
 export const SecPresentation = () => {
   return (
