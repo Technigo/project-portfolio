@@ -1,6 +1,6 @@
 import React from 'react';
 import { MyWordsCard } from './MyWords'; // Corrected the import
-import { HeaderText } from '../HeaderComponents/HeaderText';
+import { HeaderText } from './HeaderText';
 import CurlyDevider from './divider.png'
 
 export const MyWordsSection = ({ mywords }) => {

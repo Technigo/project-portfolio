@@ -10,7 +10,7 @@ export const Contact = () => {
     return (
         <div className="contactContainer">
 
-            <div className='title'>
+            <div clzassName='title'>
                 <h1>Let's talk</h1>
 
             </div>

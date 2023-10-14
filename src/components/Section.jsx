@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProjectCard } from './ProjectCard';
-import { HeaderText } from '../HeaderComponents/HeaderText';
+import { HeaderText } from './HeaderText';
 
 export const Section = ({ projects }) => {
     return (
