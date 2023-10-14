@@ -1,4 +1,5 @@
 import CvPic from '/CV_pic.jpg'
+import ContactPic from '/CV_pic.jpg'
 import GithubPic from '../assets/BtnGithub.png'
 import InstaPic from '../assets/BtnInstagram.png'
 import StackPic from '../assets/BtnStackoverflow.png'
@@ -11,8 +12,11 @@ export const Contact = () => {
 
             <div className='title'>
                 <h1>Let's talk</h1>
-            </div>
 
+            </div>
+            <div className="ContactPicture">
+                <img src={ContactPic} className="CvPic" alt="Picture of Isa Robertini" />
+            </div>
             <div className="cvPicture">
                 <img src={CvPic} className="CvPic" alt="Picture of Isa Robertini" />
             </div>

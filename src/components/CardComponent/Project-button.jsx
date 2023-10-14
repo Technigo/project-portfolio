@@ -10,7 +10,7 @@ export const Buttons = ({ project }) => {
                         <img src={project.githubBtn} alt="Description of the image" />
                     </button>
                 </a>
-                <a href={project.liveDemo}>
+                <a href={project.netlify}>
                     <button role="button" tabindex="0" onclick="yourFunction()">
                         <img src={project.liveDemoBtn} alt="Description of the image" />
                     </button>

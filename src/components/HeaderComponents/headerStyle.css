@@ -1,14 +1,13 @@
 .headerBody {
-    height: 980px;
-
+    height: 800px;
+    max-width: 100%;
 
 }
 
 .HeaderSection {
     width: 900px;
     margin: auto;
-    margin-top: 100px;
-
+    margin-top: 200px;
 
 }
 
@@ -16,8 +15,8 @@
     color: blue;
 }
 
+
 .subPresentation {
-    margin-top: 100px;
     display: flex;
     padding: 10px;
 }
@@ -32,12 +31,19 @@
     color: blue;
 }
 
+.CvPicUpper img {
+    display: none;
+}
+
 .CvPic {
     height: 160px;
     border-radius: 100%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    padding-right: 15px;
 }
+
+
 
 .arrow {
     margin-top: 200px;
@@ -56,5 +62,71 @@
     100% {
         transform: translateY(-20px);
         /* Adjust the jump height as needed */
+    }
+}
+
+@media (max-width: 1024px) {
+    .HeaderSection {
+        width: 90%;
+    }
+
+    .HeaderSection h1 {
+        font-size: 60px;
+    }
+
+    .subPresentation {
+        margin-top: 20px;
+
+    }
+
+    .subPresentation p {
+        font-size: 20px;
+    }
+
+    .picText {
+        width: 90%;
+        margin: auto;
+
+    }
+}
+
+@media (max-width: 667px) {
+    .CvPicUpper img {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .subPresentation {
+        flex-direction: column;
+        /* Change the flex direction to stack elements vertically */
+    }
+
+    .CvPic {
+        display: none;
+
+    }
+
+    .HeaderSection {
+        font-size: 20px;
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .HeaderSection h1 {
+        font-size: 30px;
+        text-align: left;
+    }
+
+
+
+    .picText {
+        width: 100%;
+
+    }
+
+    .arrow {
+        margin-top: 20px;
     }
 }

@@ -1,51 +1,60 @@
-/* Add this CSS for horizontal layout with two items per row */
+body {
+    max-width: 100%;
+}
+
+
 .MyWords-container {
     background-color: rgb(255, 236, 243);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
     width: 100%;
-
 
 }
 
 .myword-header-wrapper {
-
+    width: 100%;
     background-color: rgb(255, 236, 243);
     color: rgb(255, 69, 117);
     display: flex;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    /* Set a z-index to make the content appear above the pink background */
+}
+
+.myword-header-wrapper h1 {
+    padding-left: 30px;
 }
 
 .divider {
     height: 20px;
     margin: 0;
+    margin-top: 200px;
     position: relative;
     background: linear-gradient(to bottom, transparent 50%, rgb(255, 236, 243) 50%);
 }
 
+.divider img {
+    width: 100%;
+}
 
 .mywords-wrapper button {
     border: none;
+    margin-bottom: 100px;
+    position: relative;
+    /* Make the button a positioning context for the pseudo-element */
+
 }
+
 
 .MyWords-img {
     border-left: 20px solid rgb(255, 69, 117);
     border-bottom: 20px solid rgb(255, 69, 117);
 }
 
-/* Your other styles here */
 
 .MyWords-item {
-    width: calc(10% - 40px);
-    /* Adjust the width and margin as needed */
     margin-bottom: 20px;
-    /* Adjust the margin as needed */
-    border: black solid 10px;
+    width: 90%;
 
 }
 
@@ -58,36 +67,66 @@
     margin-right: 5px;
     width: auto;
     padding: 2px;
-    font-size: 10px;
+    font-size: 20px;
 
 }
 
 @media (min-width:1024px) {
+    body {
+        width: 100%;
+    }
+
     .MyWords-container {
         display: grid;
+
+
+    }
+
+    .divider img {
         width: 100%;
     }
 
     .MyWords-item {
-        width: 100%;
+        width: 90%;
+        margin: 20px;
+
     }
-
-    .MyWordsMap {}
-
 
     .myword-header-wrapper {
         background-color: rgb(255, 236, 243);
-        color: rgb(255, 69, 117);
         display: flex;
-        width: 100%;
 
+    }
 
+    .myword-header-wrapper h1 {
+        margin-left: 20px;
     }
 
     .myword-card-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
 
+
+
+    }
+}
+
+@media (max-width:667px) {
+    body {
+        width: 100%;
+    }
+
+    .MyWords-item {
+        width: 80%;
+        margin: 20px;
+    }
+
+    .MyWords-img {
+        width: 250px;
+        height: 220px;
+    }
+
+    .myword-header-wrapper h1 {
+        font-size: 60px;
     }
 }

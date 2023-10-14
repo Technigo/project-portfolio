@@ -10,8 +10,13 @@ export const HeaderSection = () => {
         <div className="headerBody">
             <div className='HeaderSection'>
 
+                <div className="CvPicUpper"><HeaderImg
+                    src={CvPic}
+                    alt="Picture of Isa Robertini" />
+                </div>
+
                 <HeaderText
-                    h3Text="Hi, im Isa"
+                    h3Text="Hi, I'm Isa Robertini"
                     h1Text="Frontend Developer"
                 />
             </div>
@@ -19,12 +24,11 @@ export const HeaderSection = () => {
                 <HeaderImg
                     src={CvPic}
                     alt="Picture of Isa Robertini"
-                    pText="This is a long text about me This is a long text about me
-                This is a long text about me This is a long text about me
-                This is a long text about me This is a long text about me
-                This is a long text about me This is a long text about me
-                This is a long text about me This is a long text about me
-                This is a long text about me This is a long text about me"
+                    pText="Isa is an exceptional developer known for her 
+                    innovative solution and exceptional coding abilities.
+                    She creates user-friendly applications and solves
+                    complex issues with ease. Her drive for excellence makes 
+                    her a valuable asset to any project and a standout in the technology fiel"
                 />
             </div>
             <div className="arrow">

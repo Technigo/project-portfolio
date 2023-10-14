@@ -16,16 +16,15 @@
     display: flex;
     justify-content: center;
     align-content: center;
+
 }
 
 
 .projectContainer {
-    border: 5px solid rgb(29, 49, 49);
     display: flex;
     width: 700px;
-    /* Use flexbox layout */
     align-items: center;
-    /* Vertically align items */
+
 
 }
 
@@ -39,7 +38,7 @@
     margin-right: 5px;
     width: auto;
     padding: 2px;
-    font-size: 10px;
+    font-size: 15px;
 
 }
 
@@ -54,21 +53,54 @@ button {
     border-radius: 40px;
     background: transparent;
     border: none;
-    margin-right: 10px;
-    margin-top: 5px;
+    margin-right: 55px;
+    margin-top: 20px;
     width: 110px;
     padding-top: 10px;
 
 }
 
 .project-buttons img {
-    height: 25px;
+    height: 35px;
     display: flex;
     transition: filter 0.3s;
-    /* Add a transition for a smooth effect */
+
 }
 
 .project-buttons img:hover {
-    filter: brightness green(1.2);
-    /* Adjust the filter value as desired */
+    filter: brightness(1.2);
+
+}
+
+@media (max-width: 667px) {
+    .card-header-wrapper h1 {
+        font-size: 80px;
+    }
+
+    .projectContainer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .project-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        border: none;
+        width: 100%;
+    }
+
+    .project-buttons {
+        margin-top: 10px;
+
+    }
+
+    button {
+        margin-right: 0;
+        margin-top: 10px;
+        width: 100%;
+
+    }
 }
