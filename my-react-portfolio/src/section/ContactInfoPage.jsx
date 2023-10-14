@@ -1,7 +1,8 @@
 import { ContactInfoButton } from "../components/ContactInfoComponent/ContactInfoButton";
 import { Headline } from "../components/Headline";
 import { ImagePortrait } from "../components/ImagePortrait";
-import { Textbox } from "../components/Textbox";
+import { MediumHeadline } from "../components/MediumHeadline";
+
 
 export const ContactInfoPage = () => {
     const headerText = "Let's talk";
@@ -17,7 +18,11 @@ export const ContactInfoPage = () => {
             <ImagePortrait />
             <div className="contact-information">
                 {contactInformation.map((info) => (
-                    <Textbox key={info.id} text={info.text} />
+                    <MediumHeadline
+                        key={info.id}
+                        mediumSizeHeader={info.text}
+                        useSpan={false}
+                    />
                 ))}
             </div>
             <ContactInfoButton />

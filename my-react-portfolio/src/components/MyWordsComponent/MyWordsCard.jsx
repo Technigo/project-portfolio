@@ -12,7 +12,10 @@ export const MyWordsCard = ({ articleImage, articleDate, articleTitle, articleTe
         <>
             <img src={articleImage} alt="article image" className="article-card-image" />
             <TagComponent tag={articleDate} />
-            <MediumHeadline mediumSizeHeader={articleTitle} />
+            <MediumHeadline
+                mediumSizeHeader={articleTitle}
+                useSpan={false}
+            />
             <Textbox text={articleText} />
             <a href={articleLink} target="_blank">
                 <button type="button" aria-label="Read article">

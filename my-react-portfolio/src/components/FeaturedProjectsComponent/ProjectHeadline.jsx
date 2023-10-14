@@ -13,7 +13,10 @@ export const ProjectHeadline = ({ projectTitle }) => {
 
     return (
         <>
-            <MediumHeadline mediumSizeHeader={replaceHyphensWithSpacesExceptFirst(projectTitle.charAt(0).toUpperCase() + projectTitle.slice(1))} />
+            <MediumHeadline
+                mediumSizeHeader={replaceHyphensWithSpacesExceptFirst(projectTitle.charAt(0).toUpperCase() + projectTitle.slice(1))}
+                useSpan={false}
+            />
         </>
     )
 }

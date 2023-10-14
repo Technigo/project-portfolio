@@ -14,8 +14,13 @@ export const TechSkills = () => {
         <>
             <div className="techSkills-page-wrapper">
                 <Headline className="big-heading" headerText={headerText} />
-                <MediumHeadline className="white-h2" mediumSizeHeader={mediumSizeHeader} />
-                </div>
+                <MediumHeadline
+                    id="hind-h2"
+                    className="white-h2"
+                    mediumSizeHeader={mediumSizeHeader}
+                    useSpan={false}
+                />
+            </div>
         </>
     )
 }

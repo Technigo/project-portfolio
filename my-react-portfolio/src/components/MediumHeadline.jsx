@@ -1,12 +1,19 @@
 import "./mediumHeadline.css"
 
 
-export const MediumHeadline = ({ mediumSizeHeader, className }) => {
+export const MediumHeadline = ({ mediumSizeHeader, id, className, useSpan }) => {
+    const mediumHeading = (
+        <h2 id={id} className="medium-headline">
+            {useSpan ? <span className={`${className}`}>{mediumSizeHeader}</span> : mediumSizeHeader}
+        </h2>
+    );
+
     return (
         <>
-            <h2 className="medium-headline"><span className={`${className}`}>{mediumSizeHeader}</span></h2>
+            {useSpan ? <>{mediumHeading}</> : mediumHeading}
         </>
-    )
+    );
 }
+
 
 

@@ -55,6 +55,7 @@ export const SkillSets = () => {
                     <MediumHeadline
                         className={category.className}
                         mediumSizeHeader={category.mediumSizeHeader}
+                        useSpan={true}
                     />
                     <ul className="list-without-bullets">
                         {category.text.map((skill) => (

@@ -16,7 +16,10 @@ export const FrontPage = () => {
         <>
             <div className="intro-page-wrapper">
                 <ImagePortrait />
-                <MediumHeadline mediumSizeHeader={mediumSizeHeader} />
+                <MediumHeadline
+                    mediumSizeHeader={mediumSizeHeader}
+                    useSpan={false}
+                />
                 <Headline id="smaller-h1" className="big-heading blue-h1" headerText={headerText} />
             </div>
             <div className="intropage-info">
