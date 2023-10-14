@@ -14,14 +14,13 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div className="Projects">
-      <h1>Featured projects</h1>
-      {data.map((project) => (
+    <div>
+      {data.map((response) => (
         <ProjectCard
-          key={project.id}
-          projectTitle={project.name}
-          projectText={project.description}
-          tagArray={project.topics}
+          key={response.id}
+          projectTitle={response.name}
+          projectText={response.description}
+          tagArray={response.topics}
           projectLiveLink="Netlify" // This should be replaced with the actual link
           gitHubLink="https://api.github.com/users/EmmyLJ/repos"
         />
@@ -38,23 +37,34 @@ export const ProjectCard = ({
   gitHubLink,
 }) => {
   return (
-    <div className="project-card">
-      <div className="project-photo">
-        {/* You may render the project photo here */}
-      </div>
-
-      <div className="project-info">
-        <h2>{projectTitle}</h2>
-        <p>{projectText}</p>
-        <div className="tag-container">
-          {tagArray.map((item) => (
-            <Tag key={item} tagItem={item} />
-          ))}
+    <div className="Projects">
+      <h1>Featured projects</h1>
+      <div className="project-card">
+        <div className="project-photo">
+          {/* You may render the project photo here */}
         </div>
 
-        <div className="buttons">
-          <LinkButton buttonText="Live Demo" url={projectLiveLink} />
-          <LinkButton buttonText="GitHub" url={gitHubLink} />
+        <div className="project-info">
+          <h2>{projectTitle}</h2>
+          <p>{projectText}</p>
+          <div className="tag-container">
+            {/* {tagArray.map((item) => (
+            <Tag key={item} tagItem={item} />
+          ))} */}
+          </div>
+
+          <div className="buttons">
+            <LinkButton
+              buttonText="Live Demo"
+              url="https://app.netlify.com/" // Add the path to the specific deploy
+              icon="Live.Demo-Button.png" // Add the path to the icon image
+            />
+            <LinkButton
+              buttonText="View the Code"
+              url="https://github.com/EmmyLJ/"
+              icon="View-Code-Button.png"
+            />
+          </div>
         </div>
       </div>
     </div>

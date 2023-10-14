@@ -4,7 +4,13 @@ import "./Footer.css";
 export const Footer = () => {
   return (
     <div className="Footer">
-      <footer>Emmy Jansson Web Developer Student at Technigo 2023-2024</footer>
+      <div className="FooterText">
+        Emmy Jansson Web Developer Student at Technigo 2023-2024 * Emmy Jansson
+        Web Developer Student at Technigo 2023-2024 * Emmy Jansson Web Developer
+        Student at Technigo 2023-2024 * Emmy Jansson Web Developer Student at
+        Technigo 2023-2024 * Emmy Jansson Web Developer Student at Technigo
+        2023-2024
+      </div>
     </div>
   );
 };

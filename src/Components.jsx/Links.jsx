@@ -6,12 +6,12 @@ export const Links = () => {
       <LinkButton
         buttonText="Live Demo"
         url="https://app.netlify.com/" // Add the path to the specific deploy
-        icon="your-live-demo-icon.png" // Add the path to the icon image
+        icon="Live-Demo-Button.png" // Add the path to the icon image
       />
       <LinkButton
         buttonText="View the Code"
         url="https://github.com/EmmyLJ/"
-        icon="your-github-icon.png"
+        icon="View-Code-Button.png"
       />
       <LinkButton
         buttonText="Instagram"
