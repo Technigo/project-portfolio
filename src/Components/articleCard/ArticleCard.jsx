@@ -5,7 +5,7 @@ import { ArticleImg } from "../images/articleImg/ArticleImg";
 import { Date } from "../../components/date/Date";
 import { HeadingH3 } from "../typography/headingH3/HeadingH3";
 import { NormalText } from "../typography/normalText/NormalText";
-import { Button } from "../../components/button/Button";
+import { Button } from "../../components2/button/Button";
 
 import "./articleCard.css";
 
