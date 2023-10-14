@@ -5,6 +5,7 @@ import { NormalText } from "../../ReusableComponents/Typography/NormalText.jsx";
 import { Button } from "../../ReusableComponents/FormElements/Button.jsx";
 
 export const ArticleCard = ({ data }) => {
+
     const articles = data.articles;
     return (
         <>
@@ -12,10 +13,15 @@ export const ArticleCard = ({ data }) => {
                 return (
                     <article className="article-card" key={article.name}>
                         <ImageComponent sectionClassName={"image"} elementClassName={"rectangle-img"} link={article.image} ImageAltText={article.name} />
-                        <Tag tagText={article.date} />
-                        <SubHeading text={article.name} />
-                        <NormalText text={article.description} />
-                        <Button btnURL={article.link} imgAlt={"Web icon"} iconURL={`/icons/read-more.svg`} btnText={"Read article"} />
+                        <div className="article-text-section">
+                            <div className="subheading-section">
+                                <Tag tagText={article.date} />
+                                <SubHeading text={article.name} />
+                            </div>
+                            <NormalText text={article.description} />
+                            <Button className={"read-more-btn"} btnURL={article.link} imgAlt={"Web icon"} iconURL={`/icons/read-more.svg`} btnText={"Read article"}
+                            />
+                        </div>
                     </article>
                 )
             })

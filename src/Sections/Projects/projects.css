@@ -7,4 +7,87 @@
 
 .image {
     margin-right: 10px;
+    margin-bottom: 14px;
+}
+
+.project-text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.buttons-section {
+    display: flex;
+    gap: 16px;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+/* ------------ Tablet and up ------------
+@media (min-width: 744px) {
+
+
+} */
+
+/* ------------ Tablet only ------------ */
+@media (max-width: 1279px) and (min-width: 744px) {
+    .projects-section {
+        display: flex;
+        gap: 64px;
+    }
+
+    .buttons-section {
+        display: flex;
+        gap: 32px;
+    }
+
+    .project-cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 2;
+        gap: 37px;
+    }
+
+    .image {
+        grid-column: 1 /span 2;
+        grid-row: 1 / span 2;
+    }
+
+    .project-text-section {
+        grid-column: 3 / span 6;
+        grid-row: 1 / span 2;
+    }
+
+}
+
+/* ------------ Desktop only ------------ */
+@media (min-width: 1280px) {
+    .projects-section {
+        display: flex;
+        padding: 128px 230px 124px 230px;
+        gap: 128px;
+    }
+
+    .buttons-section {
+        display: flex;
+        gap: 32px;
+    }
+
+    .project-cards {
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 2;
+        gap: 40px;
+    }
+
+    .image {
+        grid-column: 1 /span 4;
+        grid-row: 1 / span 2;
+    }
+
+    .project-text-section {
+        grid-column: 5 / span 12;
+        grid-row: 1 / span 2;
+    }
 }

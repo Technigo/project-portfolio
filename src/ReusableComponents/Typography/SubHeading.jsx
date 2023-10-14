@@ -1,6 +1,6 @@
 // Component for subheadings, in my portfolio these are H3:s
-export const SubHeading = ({ text }) => {
+export const SubHeading = ({ className, text }) => {
     return (
-        <h3>{text}</h3>
+        <h3 className={className}>{text}</h3>
     )
 }

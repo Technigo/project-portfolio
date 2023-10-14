@@ -1,6 +1,7 @@
-import { ImageComponent } from "../../ReusableComponents/ImageElements/ImageComponent"
-import { LargeText } from "../../ReusableComponents/Typography/LargeText"
-import { MainHeading } from "../../ReusableComponents/Typography/MainHeading"
+import "./footer.css";
+import { ImageComponent } from "../../ReusableComponents/ImageElements/ImageComponent";
+import { MainHeading } from "../../ReusableComponents/Typography/MainHeading";
+import { SubHeading } from "../../ReusableComponents/Typography/SubHeading";
 
 export const Footer = () => {
     return (
@@ -8,12 +9,12 @@ export const Footer = () => {
             <MainHeading text={"Let's talk"} />
             <ImageComponent sectionClassName={"profile-image"} elementClassName={"circle-img"} link={"/profile-image.jpg"} ImageAltText={"Profile Image of Laura"} />
             <div className="contact-info">
-                <LargeText text={"Laura Lyckholm"} />
+                <SubHeading text={"Laura Lyckholm"} />
                 <a href="tel:+707597396">
-                    <LargeText text={"+46 707 597 396"} />
+                    <SubHeading text={"+46(0)707 597 396"} />
                 </a>
                 <a href="mailto:laura.lyckholm@gmail.com">
-                    <LargeText text={"laura.lyckholm@gmail.com"} />
+                    <SubHeading text={"laura.lyckholm@gmail.com"} />
                 </a>
             </div>
             <div className="icons">
@@ -30,7 +31,6 @@ export const Footer = () => {
                     <ImageComponent sectionClassName={"icon-box"} elementClassName={"icon"} link={"/icons/instagram.svg"} ImageAltText={"Link to Instagram"} />
                 </a>
             </div>
-            <ImageComponent sectionClassName={"footer-banner-image"} elementClassName={"footer-img"} link={"/assets/TickerTapeContent.svg"} ImageAltText={"Footer image"} />
         </footer>
     )
 }

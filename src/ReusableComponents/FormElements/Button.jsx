@@ -1,10 +1,12 @@
-export const Button = ({ btnURL, iconURL, imgAlt, btnText }) => {
+import "./button.css";
+
+export const Button = ({ className, btnURL, iconURL, imgAlt, btnText, onMouseEnter, onMouseLeave }) => {
     return (
         <a href={btnURL}>
-            <button type="button">
+            <button className={`button ${className}`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                 <img src={iconURL} alt={imgAlt} />
                 {btnText}
-            </button >
+            </button>
         </a>
     )
 }

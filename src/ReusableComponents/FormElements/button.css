@@ -1,14 +1,44 @@
-button {
-    display: inline-flex;
-    padding-right: 0px;
+.button {
+    display: flex;
+    /* padding-right: 0px; */
+    justify-content: center;
     align-items: center;
-    gap: 7px;
+    gap: 8px;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    background-color: var(--btn-gray);
+    border: none;
+    border-radius: 40px;
+    color: var(--text);
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    transition: ease 0.3s;
+    width: fit-content;
+    height: fit-content;
     cursor: pointer;
-    transition: border-color 0.25s;
+    margin-bottom: 16px;
 }
 
+a {
+    text-decoration: none;
+}
 
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+.demo-btn:hover {
+    background-color: var(--primary);
+    color: white;
+    background-image: url('/assets/icons/globe-white.svg');
+}
+
+.github-btn:hover {
+    background-color: var(--hover-pink);
+    color: white;
+}
+
+.read-more-btn:hover {
+    background-color: var(--hover-yellow);
+    color: var(--text);
+}
+
+.read-more-btn {
+    background-color: white;
 }
