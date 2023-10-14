@@ -1,9 +1,9 @@
 import CvPic from '/CV_pic.jpg'
 import ContactPic from '/CV_pic.jpg'
-import GithubPic from '../assets/BtnGithub.png'
-import InstaPic from '../assets/BtnInstagram.png'
-import StackPic from '../assets/BtnStackoverflow.png'
-import LinkedinPic from '../assets/BtnLinkedin.png'
+import GithubPic from '/BtnGithub.png'
+import InstaPic from '/BtnInstagram.png'
+import StackPic from '/BtnStackoverflow.png'
+import LinkedinPic from '/BtnLinkedin.png'
 import './contact.css';
 
 export const Contact = () => {

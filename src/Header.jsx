@@ -1,5 +1,5 @@
 import CvPic from '/CV_pic.jpg'
-import arrow from './assets/arrow.png'
+import arrow from '../arrow.png'
 import './components/headerStyle.css';
 import { HeaderText } from './components/HeaderText';
 import { HeaderImg } from './components/HeaderImg';
