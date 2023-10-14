@@ -1,28 +1,35 @@
 .project-card {
     width: 100%;
     padding: 16px;
-    margin: 16px 0;
+    background-color: bisque;
 }
 
 .project-image-wrapper {
     width: 100%;
-    height: 12.5rem;
-    overflow: hidden;
+    height: calc(12.5rem - 20px);
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
     border-bottom: 10px solid #0B24F5;
     border-left: 10px solid #0B24F5;
+    overflow: hidden;
 }
 
 .project-image {
-    display: block;
-    min-width: 100%;
-    min-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.project-details {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.project-name {
+    margin-top: 0 !important;
 }
 
 p, h3, .tag-list, .link-container {
@@ -47,4 +54,33 @@ p, h3, .tag-list, .link-container {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+    margin-top: auto;
+}
+
+@media (min-width: 376px) and (max-width: 743px) {
+    .project-card {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .project-details {
+        padding-left: 16px;
+    }
+}
+
+@media (min-width: 744px) {
+    .project-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .project-image-wrapper {
+        width: 30%;
+        height: auto;
+    }
+
+    .project-details {
+        width: 70%;
+        padding-left: 16px;
+    }
 }

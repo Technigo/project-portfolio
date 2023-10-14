@@ -2,7 +2,7 @@
     width: 100%;
     padding: 16px;
     margin: 16px 0;
-    background-color: #ffd0b2;
+    background-color: #b2ffea;
 }
 
 .article-image-wrapper {
@@ -34,4 +34,38 @@ p, h2, .link-container {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+}
+
+.article-time {
+    background-color: #000000;
+    color: white;
+    padding: 1px 4px;
+  }
+
+  @media (min-width: 376px) and (max-width: 743px) {
+    .article-card {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .article-details {
+        padding-left: 16px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .article-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .article-image-wrapper {
+        width: 30%;
+        height: auto;
+    }
+
+    .article-details {
+        width: 70%;
+        padding-left: 16px;
+    }
 }

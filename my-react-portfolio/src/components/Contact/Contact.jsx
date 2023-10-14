@@ -9,9 +9,9 @@ export const Contact = () => {
           
           <img src="testimage.jpg" alt="Description" className="contact-image"/>
           
-          <h3>Lorem ipsum</h3>
-          <h3>Lorem ipsum</h3>
-          <h3>Lorem ipsum</h3>
+          <h3>Manne Johansson</h3>
+          <h3>+46(0)701 23 45 67</h3>
+          <h3>example@example.com</h3>
       </div>
     );
   }
