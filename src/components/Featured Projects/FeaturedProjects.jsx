@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import { MainHeading } from "../Headings/MainHeading/MainHeading.jsx";
+import { ProjectCard } from "../Featured Projects/ProjectCard/ProjectCard.jsx";
 import repoImages from "../../repoImages.json";
 import "./FeaturedProjects.css";
-import { MainHeading } from "../Headings/MainHeading/MainHeading";
 
 export const FeaturedProjects = () => {
   const [sortedRepos, setSortedRepos] = useState([]);
@@ -22,7 +23,7 @@ export const FeaturedProjects = () => {
           repoImages.some((img) => img.repoId === repo.id)
         );
         console.log(filteredRepos);
-        // Sort the repositories and set the sorted array in state
+        // Sort the repositories by id, so that the newest project (the one with the highest id) is presented first and set the sorted array in state
         const sortedData = [...filteredRepos].sort((a, b) => b.id - a.id);
         setSortedRepos(sortedData);
       } catch (error) {
@@ -36,20 +37,6 @@ export const FeaturedProjects = () => {
     fetchRepos();
   }, []);
 
-  const formatRepoName = (name) => {
-    // Split the name by hyphens and filter out unwanted words
-    const words = name
-      .split("-")
-      .filter((word) => word !== "vite" && word !== "project");
-    // Capitalize each word
-    const capitalizedWords = words.map(
-      (word) => word.charAt(0).toUpperCase() + word.slice(1)
-    );
-
-    // Join the capitalized words with spaces
-    return capitalizedWords.join(" ");
-  };
-
   return (
     <div className="project-card-container">
       <div className="project-card-wrapper">
@@ -61,10 +48,12 @@ export const FeaturedProjects = () => {
           {sortedRepos.map((repo) => {
             const repoImage = repoImages.find((img) => img.repoId === repo.id);
             return (
-              <li key={repo.id}>
-                <img src={repoImage?.imageUrl} alt={repo.name} />
-                {formatRepoName(repo.name)}
-              </li>
+              <ProjectCard
+                className={"project-card"}
+                key={repo.id}
+                repo={repo}
+                repoImage={repoImage}
+              />
             );
           })}
         </ul>

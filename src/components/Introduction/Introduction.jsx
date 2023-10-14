@@ -1,5 +1,5 @@
 import { MainHeading } from "../Headings/MainHeading/MainHeading.jsx";
-import { SubHeading } from "../Headings/SubHeading.jsx";
+import { SubHeading } from "../Headings/SubHeading/SubHeading.jsx";
 import { ProfilePhoto } from "../ProfilePhoto/ProfilePhoto.jsx";
 import arrowIcon from "../../assets/ArrowUp.svg";
 import "./Introduction.css";
@@ -12,7 +12,10 @@ export const Introduction = () => {
           <ProfilePhoto />
         </div>
         <div className="heading-wrapper">
-          <SubHeading text={"Hi, I'm Anna Robertsson"} />
+          <SubHeading
+            className={"introduction-h3"}
+            text={"Hi, I'm Anna Robertsson"}
+          />
           <MainHeading
             className={"introduction-h2"}
             text={"Frontend Developer"}
