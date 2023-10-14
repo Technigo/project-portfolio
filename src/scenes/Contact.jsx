@@ -1,7 +1,7 @@
 import "./contact.css";
 import profileImg from "/dude.png";
 import { LiaLinkedinIn } from "react-icons/lia";
-import { AiFillGithub } from "react-icons/ai";
+import {AiFillGithub} from "react-icons/ai"
 import { FaStackOverflow } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 
@@ -19,7 +19,7 @@ export const Contact = () => {
           </p>
           <div className="social-icons">
             <LiaLinkedinIn className="footer-icon" />
-            <AiFillGithub className="footer-icon" />
+            <AiFillGithub className="footer-icon"/>
             <FaStackOverflow className="footer-icon" />
             <AiOutlineInstagram className="footer-icon" />
           </div>

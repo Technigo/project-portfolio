@@ -10,10 +10,10 @@ export const ProjectCard = () => {
         ({ id, title, description, tags, image, github_url, demo_url }) => {
           return (
             <div className="project-item card" key={id}>
-              <img src={image} alt="" />
+              <img src={image} alt="" className="project-image-border"/>
               <div className="project-info">
                 <h3 className="titles">{title}</h3>
-                <p className="text-cs">{description}</p>
+                <p className="text-css">{description}</p>
                 <Tags tags={tags} />
               </div>
               <LinkBtns github_url={github_url} demo_url={demo_url} />

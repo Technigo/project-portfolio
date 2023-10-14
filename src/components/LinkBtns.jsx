@@ -1,8 +1,9 @@
 import "./linkBtns.css";
 import { TbView360 } from "react-icons/tb";
 import { AiFillGithub } from "react-icons/ai";
+import { BsFileText } from "react-icons/bs";
 
-export const LinkBtns = ({ demo_url, github_url }) => {
+export const LinkBtns = ({ demo_url, github_url, article_url}) => {
   console.log(demo_url);
   console.log(github_url);
   return (
@@ -14,6 +15,21 @@ export const LinkBtns = ({ demo_url, github_url }) => {
       <a href={github_url} className="code-btn" target="_blank">
         <AiFillGithub className="code-btn-icon" />
         View the code
+      </a>
+      <a href={article_url} className="article-btn" target="_blank">
+        <BsFileText className="article-btn-icon" />
+        Read article
+      </a>
+    </div>
+  );
+};
+
+export const ArticleLinkBtn = ({ article_url }) => {
+  return (
+    <div className="btns">
+      <a href={article_url} className="article-btn" target="_blank">
+        <BsFileText className="article-btn-icon" />
+        Read article
       </a>
     </div>
   );

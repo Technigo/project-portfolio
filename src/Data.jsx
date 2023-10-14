@@ -48,6 +48,31 @@ export const projects = [
   },
 ];
 
+export const myWords = [
+  {
+    title: "Thinking about React",
+    id: "01",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    image:
+      "https://i.etsystatic.com/18966527/r/il/7b3560/3090782918/il_fullxfull.3090782918_gxvs.jpg",
+    imageAlt:
+      "A mug with a code printed on it, basically saying coffe should be in it.",
+    date: "today",
+    url_article: "link",
+  },
+  {
+    title: "Coding is super fun, everyone should do it!",
+    id: "02",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    image:
+      "https://i.etsystatic.com/18966527/r/il/7b3560/3090782918/il_fullxfull.3090782918_gxvs.jpg",
+    imageAlt:
+      "A mug with a code printed on it, basically saying coffe should be in it.",
+    date: "yesterday",
+    url_article: "link",
+  },
+];
+
 export const skills = [
   {
     id: 1,
