@@ -1,31 +1,27 @@
-import { useRef, useState, useEffect } from "react";
-import { Hero } from "./components/sections/Hero";
-import { Tech } from "./components/sections/Tech";
-import { Projects } from "./components/sections/Projects";
-import { Blog } from "./components/sections/Blog";
-import { Skills } from "./components/sections/Skills";
-import { Contact } from "./components/sections/Contact";
-import { Footer } from "./components/sections/Footer";
-import { Button } from "./components/ui/Button";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { Home } from "./pages/Home";
+import { BlogPage } from "./pages/BlogPage";
 
 import "./styles/reset.css";
 import "./styles/global.scss";
-import { ScrollButton } from "./components/ui/ScrollButton/ScrollButton";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import { useEffect, useState } from "react";
 
 function App() {
-  const arrowRef = useRef(null);
+  const [lang, setLang] = useState("en");
 
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
   return (
-    <main>
-      <Hero arrowRef={arrowRef} />
-      <Tech arrowRef={arrowRef} />
-      <Projects />
-      <Blog />
-      <Skills />
-      <Contact />
-      <ScrollButton />
-      <Footer />
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home lang={lang} onLang={setLang} />} />
+        <Route path="/blog/:id" element={<BlogPage />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

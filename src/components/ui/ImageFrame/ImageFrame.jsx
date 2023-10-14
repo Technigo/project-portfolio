@@ -1,11 +1,6 @@
 import styles from "./ImageFrame.module.scss";
-import { primaryColorText } from "../../../styles/styleVariable";
 
-export default function ImageFrame({
-  imagePath,
-  borderColor = primaryColorText.color,
-  description,
-}) {
+export default function ImageFrame({ imagePath, borderColor, description }) {
   //   this frame needs a wrapper div to define width/height-> cover ImageFrame component with div
   return (
     <div

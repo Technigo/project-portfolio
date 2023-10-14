@@ -3,20 +3,23 @@ import { Heading } from "../../ui/Heading";
 import { skillsData as data } from "../../../statics/skillsData";
 
 import styles from "./Skills.module.scss";
+import { ObserverWrapper } from "../../ui/ObserverWrapper";
 
 export default function Skills() {
   return (
     <section className={styles.skills_section}>
-      <div className={styles.skills_inner}>
-        <Heading color={whiteColorText} alignStart="center">
-          Skills
-        </Heading>
-        <div className={styles.skills_card_wrapper}>
-          {data.map((el) => (
-            <SkillCard props={el} key={el.tag} />
-          ))}
+      <ObserverWrapper>
+        <div className={styles.skills_inner}>
+          <Heading color={whiteColorText} alignStart="center">
+            Skills
+          </Heading>
+          <div className={styles.skills_card_wrapper}>
+            {data.map((el) => (
+              <SkillCard props={el} key={el.tag} />
+            ))}
+          </div>
         </div>
-      </div>
+      </ObserverWrapper>
     </section>
   );
 }
