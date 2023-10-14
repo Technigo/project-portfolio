@@ -50,11 +50,17 @@ function ProjectCard({ project, lang }) {
           ))}
         </div>
         <div className={styles.btn_box}>
-          <Button iconPath="/icons/live-demo.svg" url={demoUrl} hoverColor={primaryColorText.color}>
+          <Button
+            iconPath="/icons/live-demo.svg"
+            url={demoUrl}
+            hoverColor={primaryColorText.color}
+            altText="live-demo icon image"
+          >
             Live demo
           </Button>
           <Button
             iconPath="/icons/git-large.svg"
+            altText="github icon image"
             url={gitUrl}
             hoverColor={secondaryColorText.color}
           >

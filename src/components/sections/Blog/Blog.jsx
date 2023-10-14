@@ -45,7 +45,12 @@ function Post({ blog }) {
       <Title text={title} />
       <p className={styles.post_text}>{introText}</p>
       <Link to={`/blog/${id}/`}>
-        <Button iconPath="/icons/doc.svg" background="#fff" hoverColor={yellowColor.color}>
+        <Button
+          iconPath="/icons/doc.svg"
+          background="#fff"
+          hoverColor={yellowColor.color}
+          altText="read article icon image"
+        >
           Read Article
         </Button>
       </Link>
