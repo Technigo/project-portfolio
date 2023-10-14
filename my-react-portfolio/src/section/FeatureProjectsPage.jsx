@@ -1,3 +1,4 @@
+import "../components/headline.css"
 import "./featuredProjectsPage.css"
 import { useState, useEffect } from "react";
 import { FeaturedProjects } from "../components/FeaturedProjectsComponent/FeaturedProjects";
@@ -44,7 +45,7 @@ export const FeatureProjectsPage = () => {
 
     return (
         <section className="featured-page-wrapper">
-            <Headline headerText={headerText} />
+            <Headline className="big-heading blue-h1" headerText={headerText} />
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
             {repos.length > 0 && <FeaturedProjects repos={repos} />}

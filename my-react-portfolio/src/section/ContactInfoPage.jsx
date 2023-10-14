@@ -13,7 +13,7 @@ export const ContactInfoPage = () => {
 
     return (
         <div>
-            <Headline headerText={headerText} />
+            <Headline className="big-heading blue-h1" headerText={headerText} />
             <ImagePortrait />
             <div className="contact-information">
                 {contactInformation.map((info) => (

@@ -1,4 +1,4 @@
-import "./myWordsPage.css"
+import "./myWordsPage.css";
 
 import { Headline } from "../components/Headline";
 import { MyWords } from "../components/MyWordsComponent/MyWords";
@@ -12,7 +12,7 @@ export const MyWordsPage = () => {
 
     return (
         <section className="my-words-page-wrapper">
-            <Headline headerText={headerText} />
+            <Headline className="big-heading pink-h1" headerText={headerText} />
             <MyWords />
         </section>
     )

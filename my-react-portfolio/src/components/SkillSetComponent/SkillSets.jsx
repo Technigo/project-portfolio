@@ -8,7 +8,7 @@ export const SkillSets = () => {
     const skillCategories = [
         {
             id: "100",
-            className: "code",
+            className: "code white-h2",
             mediumSizeHeader: 'Code',
             text: [
                 { id: "101", name: 'HTML5' },
@@ -20,7 +20,7 @@ export const SkillSets = () => {
         },
         {
             id: "200",
-            className: "toolbox",
+            className: "toolbox white-h2",
             mediumSizeHeader: 'Toolbox',
             text: [
                 { id: "201", name: 'Slack' },
@@ -29,7 +29,7 @@ export const SkillSets = () => {
         },
         {
             id: "300",
-            className: "upcoming",
+            className: "upcoming white-h2",
             mediumSizeHeader: 'Upcoming',
             text: [
                 { id: "301", name: 'Node.js' }

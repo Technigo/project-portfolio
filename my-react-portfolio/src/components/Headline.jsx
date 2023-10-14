@@ -1,8 +1,10 @@
+import "./headline.css"
 
-export const Headline = ({ headerText }) => {
+
+export const Headline = ({ headerText, id, className }) => {
     return (
-        <div className="headline">
-            <h1>{headerText}</h1>
-        </div>
+        <>
+            <h1 id={id} className={`"big-heading" ${className}`}>{headerText}</h1>
+        </>
     )
 }

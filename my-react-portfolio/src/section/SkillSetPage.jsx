@@ -10,7 +10,7 @@ export const SkillSetPage = () => {
 
     return (
         <div>
-            <Headline headerText={headerText} />
+            <Headline className="big-heading" headerText={headerText} />
             <div className="skills-container-wrapper">
                 <SkillSets />
             </div>

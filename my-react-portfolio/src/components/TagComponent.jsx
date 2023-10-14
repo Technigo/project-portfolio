@@ -1,4 +1,4 @@
-
+import "./tagComponent.css"
 
 export const TagComponent = ({ tag }) => {
 
