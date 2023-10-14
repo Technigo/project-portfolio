@@ -17,7 +17,7 @@ export const Hero = () => {
                     className={style.heroHeader}
                 />
                 <Photos selectedMode="me" className={style.imgMe} />
-                <p className={style.text}>Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test TestTest Test Test Test Test Test Test Test Test Test Test Test Test Test Test TestTest Test Test Test Test Test Test Test Test Test Test </p>
+                <p className={style.text}>Test Test Test Test Test Test Test Tesjhjklt Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Tejhgfhjkst Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test </p>
                 <Photos selectedMode="arrow" className={style.imgArrow} />
             </div>
         </div>

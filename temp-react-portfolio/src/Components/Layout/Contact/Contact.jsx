@@ -23,7 +23,7 @@ export const Contact = () => {
                     <SmallerHeader
                         key={index}
                         smallHeading={header.heading}
-                        className={`${style.smallerHeadingSkills} ${header.className}`}
+                        className={`${style.smallerHeadingContact} ${header.className}`}
                     /> //ClassName: Makes it possible to style headers as a section and each inividually. 
                 ))}
                 <Buttons className={style.githubIcon} />

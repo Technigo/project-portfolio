@@ -1,7 +1,6 @@
 .outer_containerWrapperContact {
     max-width: 1512px;
     max-height: 980px;
-    padding: 128px 0px 128px 0px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -10,7 +9,6 @@
 .wrapper_contact {
     margin: auto;
     display: grid;
-    grid-gap: 16px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     overflow: hidden;
@@ -27,6 +25,7 @@
 h1.contactHeader {
     color: blue;
     grid-area: SectionHeader;
+    padding-top: 128px;
 }
 
 .imgMe {
@@ -36,22 +35,25 @@ h1.contactHeader {
     justify-self: center;
 }
 
+.smallerHeadingContact {}
+
 .smallerHeadingNumber {
     grid-area: Number;
+
 }
 
 .smallerHeadingMe {
     grid-area: Name;
+    padding-top: 64px;
+
 }
 
 .smallerHeadingEmail {
     grid-area: Email;
+
 }
 
 .githubIcon {
+    padding: 64px 0 128px 0;
     grid-area: Github;
-}
-
-h1.contactHeader {
-    color: blue;
 }
