@@ -1,7 +1,8 @@
 import React from "react";
 import ViewGithubBtn from "./ViewGithubBtn";
 import LiveDemoBtn from "./LiveDemoBtn";
-import projectsData from "./projects.json"; // Import the JSON data
+import projectsData from "../path/to/projects.json"; // Use the correct relative path
+
 
 const Projects = () => {
     const projects = projectsData.projects; // Access the projects array from the imported JSON data
