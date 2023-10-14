@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { ProjectCard } from "../projectCard/ProjectCard";
+import { ProjectCard } from "../../components/projectCard/ProjectCard";
 
 export const SecFeaturedProjects = () => {
   const [projects, setProjects] = useState([]);
