@@ -7,7 +7,7 @@ import { SecFeaturedProjects } from "./components2/sections/SecFeaturedProjects"
 import { SecMywords } from "./components2/sections/SecMywords";
 import { SecSkills } from "./components2/sections/SecSkills"
 import { SecContact } from "./components2/sections/SecContact";
-import { Footer } from "./components/footer/Footer";
+import { Footer } from "./components2/footer/Footer";
 
 function App() {
   return (
