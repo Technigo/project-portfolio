@@ -27,7 +27,7 @@ export const ArticleCard = ({articles}) => {
             <Date date={article.date}/>
             <HeadingH3 className="article-h3" text={article.title} />
             <NormalText className="article-card-text" text={article.content}/>
-            <Button text={"Read article"} hoverColor={"yellow"} src={'assets/icons/reading.png'}/> 
+            <Button text={"Read article"} hoverColor={"yellow"}/> 
           </div>
         )
       }

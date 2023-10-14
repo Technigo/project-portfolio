@@ -3,10 +3,12 @@ import React from 'react'
 import './articleImg.css'
 
 export const ArticleImg = () => {
+
+  const articleImage = "https://cdn.pixabay.com/photo/2014/12/15/14/02/notebooks-569121_1280.jpg"
   return (
     <>
     <img className="article-img"
-    src="https://media.istockphoto.com/id/1451456915/sv/foto/female-freelance-developer-coding-and-programming-coding-on-two-with-screens-with-code.jpg?s=1024x1024&w=is&k=20&c=V3PwHFHly4TbVipIDJu6efK8IwTwhQhPkSimV0pAp4A=" alt="Image of woman coding at a computer"/>
+    src={articleImage} alt="Image of woman coding at a computer"/>
     </>
   )
 }
