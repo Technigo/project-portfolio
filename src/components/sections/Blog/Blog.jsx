@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { Heading } from "../../ui/Heading";
 import { ImageFrame } from "../../ui/ImageFrame";
 import { Label } from "../../ui/Label";
@@ -6,10 +8,8 @@ import { Button } from "../../ui/Button";
 import { ObserverWrapper } from "../../ui/ObserverWrapper";
 import { secondaryColorText, yellowColor } from "../../../styles/styleVariable";
 import { blogsData as data } from "../../../statics/blogsData";
-import { useInView } from "react-intersection-observer";
 
 import styles from "./Blog.module.scss";
-import { Link } from "react-router-dom";
 
 export default function Blog() {
   return (

@@ -3,11 +3,12 @@ import { Heading } from "../../ui/Heading";
 import { ImageFrame } from "../../ui/ImageFrame";
 import { Label } from "../../ui/Label";
 import { Title } from "../../ui/Title";
+import { ObserverWrapper } from "../../ui/ObserverWrapper";
+
 import { primaryColorText, secondaryColorText } from "../../../styles/styleVariable";
 import { projectsData as data } from "../../../statics/projectsData";
 
 import styles from "./Projects.module.scss";
-import { ObserverWrapper } from "../../ui/ObserverWrapper";
 
 export default function Projects({ lang }) {
   return (
