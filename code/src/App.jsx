@@ -4,6 +4,7 @@ import Intro from './components/Intro.jsx';
 import Tech from './components/Tech.jsx';
 import Projects from './components/Projects.jsx'
 import Mywords from './components/Mywords.jsx';
+import Skills from './components/Skills';
 import Contact from './components/Contact.jsx';
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
       <Tech />
       <Projects />
       <Mywords />
+      <Skills />
+      <Contact />
     </div>
   )
 }
