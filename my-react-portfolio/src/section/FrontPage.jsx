@@ -2,10 +2,12 @@ import "../components/headline.css";
 import "../components/mediumheadline.css";
 import "../components/textbox.css";
 import "./frontPage.css";
+import "../components/FrontPage/arrow.css";
 import { Headline } from "../components/Headline";
 import { ImagePortrait } from "../components/ImagePortrait";
 import { MediumHeadline } from "../components/MediumHeadline";
 import { Textbox } from "../components/Textbox";
+import { Arrow } from "../components/FrontPage/Arrow";
 
 
 
@@ -31,6 +33,9 @@ export const FrontPage = () => {
                     headerText={headerText} />
                 <div className="intropage-info">
                     <Textbox text={text} />
+                </div>
+                <div class="arrow-container">
+                    <Arrow />
                 </div>
             </section>
         </>
