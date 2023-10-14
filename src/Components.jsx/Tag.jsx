@@ -1,4 +1,4 @@
-import "./tag.css";
+// import "Tag.css";
 
 export const Tag = ({ tagText, className }) => {
   return (
