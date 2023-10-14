@@ -1,20 +1,18 @@
-import React from 'react'
-import { NormalText } from '../typography/normalText/NormalText'
+import React from "react";
+import { NormalText } from "../typography/normalText/NormalText";
 
-import './skillList.css'
+import "./skillList.css";
 
-export const SkillList = ({list}) => {
+export const SkillList = ({ list }) => {
   return (
     <>
-    {list.map((listItem, index)=> {
+      {list.map((listItem, index) => {
         return (
-            <>
-            <NormalText  className="skill-list"text={listItem} key={index}/>
-            </>
-        )
-
-    })}
-    
+          <>
+            <NormalText className="skill-list" text={listItem} key={index} />
+          </>
+        );
+      })}
     </>
-  )
-}
+  );
+};

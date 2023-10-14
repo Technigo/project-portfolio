@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import './headingH4.css'
+import "./headingH4.css";
 
-export const HeadingH4 = ({text, className}) => {
-  return (
-    <h4 className={className}>{text}</h4>
-  )
-}
+export const HeadingH4 = ({ text, className }) => {
+  return <h4 className={className}>{text}</h4>;
+};

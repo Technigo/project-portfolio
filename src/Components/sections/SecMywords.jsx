@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 
-import {ArticleCard} from '../articleCard/ArticleCard'
+import { ArticleCard } from "../articleCard/ArticleCard";
+import blogData from "../../blogData.json";
 
-import blogData from '../../blogData.json'
+import "./sections.css";
 
-import './sections.css'
 export const SecMywords = () => {
-    const [articles, setArticles] = useState([])
-    useEffect (() => {setArticles(blogData)}, [])
-    console.log(articles)
+  const [articles, setArticles] = useState([]);
+  useEffect(() => {
+    setArticles(blogData);
+  }, []);
+  console.log(articles);
   return (
     <>
-    
-    <ArticleCard articles={articles}/>
+      <ArticleCard articles={articles} />
     </>
-  )
-}
+  );
+};

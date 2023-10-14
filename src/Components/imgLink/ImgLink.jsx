@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import './imgLink.css'
+import "./imgLink.css";
 
-export const ImgLink = ({text, src, link, className}) => {
+export const ImgLink = ({ text, src, link, className }) => {
   return (
     <div>
-        <a href={link} className={className}>
+      <a href={link} className={className}>
         <img src={src} alt={text} />
-        </a>
+      </a>
     </div>
-  )
-}
+  );
+};
