@@ -32,32 +32,56 @@ export const FeaturedProjects = () => {
   return (
     <>
       <div className="featured-projects-container">
-        <h1 style={{ color: "blue" }}>Featured Projects</h1>
+        {" "}
+        <h1>Featured Projects</h1>
         {first6Gits.map((myGit) => (
-          <a
-            target="_blank"
-            className="my-git-hub-link"
-            href={myGit.html_url}
-            key={myGit.id}
-            rel="noreferrer noopener"
-          >
-            <div className="projects-box" key={myGit._id}>
-              <div className="projects-box-img">
-                <img src="/Assets/featured-projects-temp.jpg" />
-              </div>
-              <div className="projects-box-text">
-                <h2>{myGit.name}</h2>
+          <div className="projects-parent" key={myGit._id}>
+            <div className="projects-child">
+              <img
+                className="project-img"
+                src="/Assets/featured-projects-temp.jpg"
+              />
+            </div>
+            <div className="projects-child">
+              <h2>{myGit.name}</h2>
+              <p>
+                {myGit.description}
                 <p>
-                  {myGit.description}
+                  <span style={{ backgroundColor: "black", color: "white" }}>
+                    &nbsp;HTML5&nbsp;
+                  </span>
+                  &nbsp;
+                  <span style={{ backgroundColor: "black", color: "white" }}>
+                    &nbsp;CSS3&nbsp;
+                  </span>
+                  &nbsp;
+                  <span style={{ backgroundColor: "black", color: "white" }}>
+                    &nbsp;React&nbsp;
+                  </span>
                   <p>
-                    <span style={{ backgroundColor: "black", color: "white" }}>
-                      HTML5
-                    </span>
+                    <img
+                      className="live-demo-button"
+                      src="\Assets\Live-Demo-Button.png"
+                      alt="live demo"
+                    />
+                    <a
+                      target="_blank"
+                      className="my-git-hub-link"
+                      href={myGit.html_url}
+                      key={myGit.id}
+                      rel="noreferrer noopener"
+                    >
+                      <img
+                        className="view-code-button"
+                        src="\Assets\View-Code-Button.png"
+                        alt="view code"
+                      />
+                    </a>
                   </p>
                 </p>
-              </div>
+              </p>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </>
