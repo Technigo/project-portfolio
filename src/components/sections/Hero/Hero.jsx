@@ -28,7 +28,7 @@ export default function Hero({ arrowRef, lang, onLang }) {
             </Heading>
           </div>
 
-          <img src="/images/sakura.jpeg" className={styles.my_image} alt="Image of Sakura Tanaka" />
+          <img src="/images/sakura.webp" className={styles.my_image} alt="Image of Sakura Tanaka" />
 
           <p className={styles.text} lang={lang}>
             {heroText[lang]}

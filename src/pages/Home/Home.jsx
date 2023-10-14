@@ -20,19 +20,17 @@ function Home({ lang, onLang }) {
   });
 
   return (
-    <>
-      <main>
-        <motion.div className="progress-bar" style={{ scaleX }} />
-        <Hero arrowRef={arrowRef} lang={lang} onLang={onLang} />
-        <Tech arrowRef={arrowRef} />
-        <Projects lang={lang} />
-        <Blog />
-        <Skills />
-        <Contact />
-        <ScrollButton />
-        <Footer />
-      </main>
-    </>
+    <main>
+      <motion.div className="progress-bar" style={{ scaleX }} />
+      <Hero arrowRef={arrowRef} lang={lang} onLang={onLang} />
+      <Tech arrowRef={arrowRef} />
+      <Projects lang={lang} />
+      <Blog />
+      <Skills />
+      <Contact />
+      <ScrollButton />
+      <Footer />
+    </main>
   );
 }
 

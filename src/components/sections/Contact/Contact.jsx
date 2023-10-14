@@ -13,7 +13,7 @@ export default function Contact() {
           </Heading>
           <div className={styles.my_card}>
             <img
-              src="/images/sakura.jpeg"
+              src="/images/sakura.webp"
               alt="image of Sakura Tanaka"
               className={styles.my_image}
             />
@@ -37,7 +37,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/icons/linkedin.png"
+                  src="/icons/linkedin.svg"
                   className={styles.icon}
                   alt="Visit Sakura's LinkedIn"
                 />
@@ -48,11 +48,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="/icons/git-light.png"
-                  className={styles.icon}
-                  alt="Visit Sakura's Github"
-                />
+                <img src="/icons/git.svg" className={styles.icon} alt="Visit Sakura's Github" />
               </a>
             </div>
           </div>
