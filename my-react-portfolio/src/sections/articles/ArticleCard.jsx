@@ -9,12 +9,14 @@ import { Button } from '/src/components/button/Button.jsx';
 export const ArticleCard = ({ title, imageUrl, tagText, description, link }) => {
     return (
         <div className="article-card">
-            <Image
-                sectionClassName={"article-img"}
-                elementClassName={"article-img"}
-                link={imageUrl} // Use the passed imageUrl
-                ImageAltText={title} // Use the title as alt text
-            />
+            <div className="article-img-container">
+                <Image
+                    sectionClassName={"article-img"}
+                    elementClassName={"article-img"}
+                    link={imageUrl} // Use the passed imageUrl
+                    ImageAltText={title} // Use the title as alt text
+                />
+            </div>
             <Tag tagText={tagText} className="article-tag" />
             <Heading
                 level={3}
@@ -28,6 +30,6 @@ export const ArticleCard = ({ title, imageUrl, tagText, description, link }) => 
                 link={link}
                 className="article-btn"
             />
-        </div>
+        </div >
     );
 };

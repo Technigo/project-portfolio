@@ -9,13 +9,15 @@ import { Tag } from '/src/components/tag/Tag.jsx';
 
 export const ProjectCard = ({ project }) => {
     return (
-        <div className="project-card">
+        <aside className="project-card">
+            <div className="project-img-container">
             <Image
                 sectionClassName={"project-img"}
                 elementClassName={"project-img"}
                 link={"/src/assets/dummy-image.jpg"}
                 ImageAltText={"Profile Image of Maria"}
             />
+            </div>
             <Heading
                 level={3}
                 text={project.name}
@@ -44,6 +46,6 @@ export const ProjectCard = ({ project }) => {
                 link={project.svn_url}
                 className="github-btn"
             />
-        </div>
+        </aside>
     );
 };
