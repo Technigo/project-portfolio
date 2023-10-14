@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 
-import { SecPresentation } from "./components2/SecPresentation";
-import { SecTech } from "./components/sections/SecTech"
+import { SecPresentation } from "./components2/sections/SecPresentation";
+import { SecTech } from "./components2/sections/SecTech"
 import { SecFeaturedProjects } from "./components/sections/SecFeaturedProjects";
 import { SecMywords } from "./components/sections/SecMywords";
 import { SecSkills } from "./components/sections/SecSkills";

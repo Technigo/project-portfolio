@@ -1,7 +1,7 @@
 import React from "react";
 
-import { HeadingH1 } from "../typography/headingH1/HeadingH1";
-import { NormalTextBig } from "../typography/normalTextBig/NormalTextBig";
+import { HeadingH1 } from "../../components/typography/headingH1/HeadingH1";
+import { NormalTextBig } from "../../components/typography/normalTextBig/NormalTextBig";
 
 export const SecTech = () => {
   const techText =
