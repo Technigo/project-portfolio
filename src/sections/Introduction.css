@@ -1,5 +1,8 @@
 .introduction-section {
-    padding: 64px 0px; 
+  padding: 64px 0px;
+}
+
+.introduction-wrapper { 
     display: flex;
     flex-direction: column;
     gap: 32px; 
@@ -10,6 +13,44 @@
     color: blue;
 }
 
-@media (min-width: 745px) and (max-width: 1279) {
-  
+.dark-h3-introduction {
+  margin-bottom: 0px;
+}
+
+@media (min-width: 745px) {
+
+  .introduction-wrapper {
+    margin: 128px 64px;
+    display: grid;
+    grid-template-columns: 164px 1fr;
+    grid-template-rows: 1fr 164px;
+    column-gap: 22px;
+    row-gap: 32px; 
+  }
+
+  .headings-introduction {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+
+  }
+
+  .dark-h2-introduction {
+    font-size: 56px;
+  }
+ 
+  .bodytext {
+    align-self: center;
+  }
+}
+
+@media (min-width: 1279px) {
+  .introduction-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction-wrapper {
+    max-width: 840px;
+  }
+
 }

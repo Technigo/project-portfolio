@@ -27,14 +27,16 @@ export const ProjectCard = ({repos}) => {
                     return (
                         <li key={repo.id} className="projects-list-item">
                             <div className="project-img-wrapper">
-                                <img className="project-img" src={repoImage?.imageUrl} alt={repo.name} />
+                                <img className="project-img" src={repoImage?.imageUrl} alt={repoImage?.prettyName} />
                             </div>
-                            <SubHeading text={repoImage?.prettyName} />
-                            <BodyText text={repo.description} />
-                            <Tags tags={repo.topics} />
-                            <div className="btn-wrapper-projects">
-                                <Button className={`demo-button`} buttonName={`Live Demo`} link={repo.homepage} icon={`src/assets/button-icons/live-demo.svg`} iconAlt={`Web icon`} />
-                                <Button className={`code-button`} buttonName={`View the Code`}link={repo.html_url} icon={`src/assets/button-icons/github.svg`} iconAlt={`GitHub logo`} />
+                            <div className="projects-list-item-info">
+                                <SubHeading text={repoImage?.prettyName} />
+                                <BodyText text={repo.description} />
+                                <Tags tags={repo.topics} />
+                                <div className="btn-wrapper-projects">
+                                    <Button className={`demo-button`} buttonName={`Live Demo`} link={repo.homepage} icon={`src/assets/button-icons/live-demo.svg`} iconAlt={`Web icon`} />
+                                    <Button className={`code-button`} buttonName={`View the Code`}link={repo.html_url} icon={`src/assets/button-icons/github.svg`} iconAlt={`GitHub logo`} />
+                                </div>
                             </div>
                         </li>
                     );

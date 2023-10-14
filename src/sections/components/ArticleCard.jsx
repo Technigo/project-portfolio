@@ -10,19 +10,17 @@ export const ArticleCard = ( ) => {
 
     return (
         <div className="article-cards">
-            <ul>
                 {articles.map((article) => {
                  return (
-                    <li key={article.id}>
+                    <div className="single-article" key={article.id}>
                         <img className="article-img" src={article.image} alt={article.imageAlt} />
                         <p className="article-date">{article.date}</p>
                         <SubHeading className={`dark-h3`} text={article.name}/>
                         <BodyText text={article.text}/>
                         <Button className={`article-button`} buttonName={`Read Article`} link={article.link} icon={`src/assets/button-icons/doc.svg`} iconAlt={`A document icon`}/>
-                    </li>
+                    </div>
                     )
                 })}
-            </ul>
         </div>
     )
 }

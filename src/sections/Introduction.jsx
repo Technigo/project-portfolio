@@ -1,12 +1,11 @@
-
 import { MainHeading } from "./components/Typo/MainHeading.jsx";
 import { SubHeading } from "./components/Typo/SubHeading.jsx";
 import { BodyText } from "./components/Typo/BodyText.jsx"
 
-import "./Introduction.css"
-import "./Arrow.css"
 import profile from "../assets/extraaa/profile-pic.jpg";
 
+import "./Introduction.css"
+import "./Arrow.css"
 
 export const Introduction = () => {
 
@@ -18,16 +17,18 @@ export const Introduction = () => {
 
     return (
         <section className="introduction-section">
-            <div className="image-wrapper">
-                <div className="image-cropper">
-                    <img src={profile} alt="A picture of Vera Witting" />
+            <div className="introduction-wrapper">
+                <div className="image-wrapper">
+                    <div className="image-cropper">
+                        <img src={profile} alt="A picture of Vera Witting" />
+                    </div>
                 </div>
+                <div className="headings-introduction">
+                <SubHeading className={`dark-h3-introduction`} text={`Hello, I'm Vera Witting`}/>
+                <MainHeading className={`dark-h2-introduction`} text={`Frontend Developer`}/>
+                </div>
+                <BodyText text={BodyContent} />
             </div>
-            <div className="headings-introduction">
-            <SubHeading text={`Hello, I'm Vera Witting`}/>
-            <MainHeading className={`dark-h2-introduction`} text={`Frontend Developer`}/>
-            </div>
-            <BodyText text={BodyContent} />
             <div className="arrow">
                 <img className="arrow" src="src/assets/elements/arrow.svg" alt="Arrow jumping, pointing down to the rest of the page" />
             </div>
