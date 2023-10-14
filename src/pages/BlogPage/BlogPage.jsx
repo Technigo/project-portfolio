@@ -3,15 +3,14 @@ import { Footer } from "../../components/sections/Footer";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../../components/ui/Button";
 import { ImageFrame } from "../../components/ui/ImageFrame";
-import { Heading } from "../../components/ui/Heading";
 import { Label } from "../../components/ui/Label";
 import { primaryColorText, secondaryColorText, yellowColor } from "../../styles/styleVariable";
 import { Title } from "../../components/ui/Title";
 import { useParams } from "react-router-dom";
-import { Home } from "../Home";
 
 import { blogsData as data } from "../../statics/blogsData";
 import { useEffect, useMemo, useState } from "react";
+import PageNotFound from "../PageNotFound/PageNotFound";
 
 function BlogPage() {
   const navigate = useNavigate();
@@ -24,7 +23,9 @@ function BlogPage() {
       return;
     });
   }, [id]);
-  if (!currentPost) return <Home />;
+
+  // if the id is not exist, then will directs to pagenotfound
+  if (!currentPost) return <PageNotFound />;
   const { date, title, text, url, imagePath } = currentPost;
   return (
     <section className={styles.blog_page}>
