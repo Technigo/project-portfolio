@@ -22,7 +22,7 @@ export const MyWords = () => {
           </p>
           <img
             className="read-article-button"
-            src="/assets/Read-On-Medium.png"
+            src="/Assets/Read-On-Medium.png"
             alt="read article"
           />
         </div>
@@ -39,11 +39,11 @@ export const MyWords = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida
             cum sociis natoque penatibus et. Nisl condimentum id venenatis a
-            condimentum vitae sapien pellentesque.
+            condimentum vitae.
           </p>
           <img
             className="read-article-button"
-            src="/assets/Read-On-Medium.png"
+            src="/Assets/Read-On-Medium.png"
             alt="read article"
           />
         </div>

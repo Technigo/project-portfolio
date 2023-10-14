@@ -1,18 +1,30 @@
 import "./FeaturedProjects.css";
 
 import { useEffect, useState } from "react";
-//import moment from "moment";
-//{moment(myGit.created_at).format("MMMM YYYY")}
 
 export const FeaturedProjects = () => {
-  //URL to my github: https://api.github.com/users/BeckieMorton/repos
-
   const [myGits, setMyGits] = useState([]);
 
   const myGitHubURL = "https://api.github.com/users/BeckieMorton/repos";
 
   const sortedbyPush =
     "https://api.github.com/users/BeckieMorton/repos?sort=pushed_at";
+
+  const formatGitName = (name) => {
+    console.log(`this is in the name:${name}`);
+    let newName = name.split("-").join(" ");
+    console.log(newName);
+
+    const capitals = newName.split(" ");
+    for (var i = 0; i < capitals.length; i++) {
+      capitals[i] = capitals[i].charAt(0).toUpperCase() + capitals[i].slice(1);
+    }
+
+    const newCapitalisedName = capitals.join(" ");
+    console.log(newCapitalisedName);
+
+    return newCapitalisedName;
+  };
 
   useEffect(() => {
     getMyProjects();
@@ -34,8 +46,7 @@ export const FeaturedProjects = () => {
 
   return (
     <>
-      <div className="featured-projects-container">
-        {" "}
+      <div className="featured-projects-container" key={myGits._id}>
         <h1>Featured Projects</h1>
         {first6Gits.map((myGit) => (
           <div className="projects-parent" key={myGit._id}>
@@ -46,7 +57,7 @@ export const FeaturedProjects = () => {
               />
             </div>
             <div className="projects-child">
-              <h2>{myGit.name}</h2>
+              <h2>{formatGitName(myGit.name)}</h2>
               <p>
                 {myGit.description}
                 <p>
