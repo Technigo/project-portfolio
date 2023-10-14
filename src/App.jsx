@@ -3,10 +3,10 @@ import "./App.css";
 
 import { SecPresentation } from "./components2/sections/SecPresentation";
 import { SecTech } from "./components2/sections/SecTech"
-import { SecFeaturedProjects } from "./components/sections/SecFeaturedProjects";
-import { SecMywords } from "./components/sections/SecMywords";
-import { SecSkills } from "./components/sections/SecSkills";
-import { SecContact } from "./components/sections/SecContact";
+import { SecFeaturedProjects } from "./components2/sections/SecFeaturedProjects";
+import { SecMywords } from "./components2/sections/SecMywords";
+import { SecSkills } from "./components2/sections/SecSkills"
+import { SecContact } from "./components2/sections/SecContact";
 import { Footer } from "./components/footer/Footer";
 
 function App() {
