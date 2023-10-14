@@ -4,7 +4,7 @@ import "./mywordscard.css";
 
 export const MyWordsCard = ({ mywords }) => {
     return (
-        <div className="projectWrapper">
+        <div className="projWrapperMywords">
             <div className="projectContainer">
                 <img src={mywords.image} height={200} alt="Project Image" />
                 <div className="projectDescription">

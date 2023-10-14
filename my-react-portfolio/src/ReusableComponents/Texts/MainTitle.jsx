@@ -1,5 +1,8 @@
-export const MainTitle = ({ text, className }) => {
+import "./text.css";
+
+
+export const MainTitle = ({ text }) => {
     return (
-        <h2 className={`${className}`}>{text}</h2>
+        <h2 className="main-title">{text}</h2>
     )
 }

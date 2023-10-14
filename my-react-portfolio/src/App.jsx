@@ -10,8 +10,6 @@ import { MyWords } from "./Sections/MyWordSection/MyWords";
 import projectData from './Sections/Projects/projects.json';
 import mywordsData from './Sections/MyWordSection/mywords.json';
 
-// Use the JSON data directly
-
 
 export const App = () => {
 

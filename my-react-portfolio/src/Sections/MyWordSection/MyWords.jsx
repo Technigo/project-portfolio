@@ -5,9 +5,9 @@ import { MyWordsCard } from "./MyWordsCard";
 export const MyWords = ({ mywords }) => {
     return (
         <section>
-            {mywords.map((mywords, index) => (
+            {mywords.map((myword, index) => (
                 <div key={index}>
-                    <MyWordsCard mywords={mywords} />
+                    <MyWordsCard mywords={myword} />
                 </div>
 
             ))}
