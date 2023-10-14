@@ -18,8 +18,8 @@ export const ProjectCard = ( props ) => {
 
   return (
    <>
-    
-   <div className="card-wrapper">
+    {/* change for projectCardwrapper */}
+   <div className="card-wrapper">  
         <div className="image-wrapper">
           <img src={imgProject} alt={nameProject} />
         </div>
