@@ -5,8 +5,8 @@ import { HeadingH1 } from "../../components2/typography/headingH1/HeadingH1";
 import { HeadingH3 } from "../../components2/typography/headingH3/HeadingH3";
 import { NormalText } from "../../components2/typography/normalText/NormalText";
 import { ProjectImg } from "../../components2/images/projectImg";
-import { Button } from "../button/Button";
-import { Tag } from "../tag/Tag";
+import { Button } from "../../components/button/Button"
+import { Tag } from "../../components/tag/Tag"
 
 import "./projectCard.css";
 
