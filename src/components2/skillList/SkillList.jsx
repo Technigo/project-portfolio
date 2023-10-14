@@ -1,5 +1,5 @@
 import React from "react";
-import { NormalText } from "../../components2/typography/normalText/NormalText";
+import { NormalText } from "../typography/normalText/NormalText";
 
 import "./skillList.css";
 

@@ -1,8 +1,8 @@
 import React from "react";
 
-import { HeadingH1 } from "../typography/headingH1/HeadingH1";
-import { SkillList } from "../skillList/SkillList";
-import { HeadingH3 } from "../typography/headingH3/HeadingH3";
+import { HeadingH1 } from "../../components2/typography/headingH1/HeadingH1";
+import { SkillList } from "../../components2/skillList/SkillList";
+import { HeadingH3 } from "../../components2/typography/headingH3/HeadingH3";
 
 import "./sections.css";
 
