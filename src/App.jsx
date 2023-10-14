@@ -7,19 +7,19 @@ import { Contact } from "./Components/Contact/Contact";
 import { Footer } from "./Components/Footer/Footer";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="portfolio-container">
       <Introduction />
       <Tech />
       <FeaturedProjects />
-      <div className="divider"></div>
+
       <MyWords />
       <Skills />
       <Contact />
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

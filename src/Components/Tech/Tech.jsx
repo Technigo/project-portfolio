@@ -7,12 +7,14 @@ export const Tech = () => {
 
   return (
     <section className="tech-section">
-      <div>
-        <MainHeading className={"heading-text tech"} text={"Tech"} />
-      </div>
+      <div className="tech-wrapper">
+        <div>
+          <MainHeading className={"heading-text tech"} text={"Tech"} />
+        </div>
 
-      <div>
-        <p className="skills-text">{skills}</p>
+        <div>
+          <p className="skills-text">{skills}</p>
+        </div>
       </div>
     </section>
   );

@@ -1,25 +1,26 @@
-import { MainHeading } from "../MainHeading/MainHeading";
+// import { MainHeading } from "../MainHeading/MainHeading";
 import "./Introduction.css";
 
 export const Introduction = () => {
   const introText =
-    "Sara is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field.";
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
   return (
     <section className="intro-section">
       <div className="info-wrapper">
         <img
           className="profile-pic"
-          src="/assets/example2.png"
+          src="/assets/profile.jpeg"
           alt="Profile picture of Inna"
         />
         <div className="name-headline-wrapper">
           <h3 className="my-name">Hi, Im Inna Kokic</h3>
 
-          <MainHeading
+          {/* <MainHeading
             className={"heading-text intro"}
             text={"Frontend Developer"}
-          />
+          /> */}
+          <h2 className="job-title">Frontend Developer</h2>
         </div>
         <p className="introText">{introText}</p>
         <div className="arrow jump">

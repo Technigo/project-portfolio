@@ -2,10 +2,10 @@ import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <div>
+    <section>
       <footer className="moving-text">
         <p>Inna Kokic Fullstack developer</p>
       </footer>
-    </div>
+    </section>
   );
 };

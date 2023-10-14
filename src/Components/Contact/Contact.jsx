@@ -7,7 +7,7 @@ export const Contact = () => {
       <div className="contact-wrapper">
         <img
           className="profile-pic"
-          src="/assets/example2.png"
+          src="/assets/profile.jpeg"
           alt="Profile picture of Inna"
         />
 

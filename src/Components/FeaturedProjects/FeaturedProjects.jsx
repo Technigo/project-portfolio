@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { MainHeading } from "../MainHeading/MainHeading";
 import "./FeaturedProjects.css";
+import repoImages from "./repoImages.json";
 
 export const FeaturedProjects = () => {
   const [repos, setRepos] = useState([]);
@@ -8,7 +9,7 @@ export const FeaturedProjects = () => {
   const defaultDescription = //Use if description is null or empty
     "A React project showcasing various features and functionalities.";
 
-  function formatRepoName(name) {
+  const formatRepoName = (name) => {
     // Split the name by hyphens and capitalize each word
     const words = name.split("-");
     const capitalizedWords = words.map(
@@ -17,22 +18,27 @@ export const FeaturedProjects = () => {
 
     // Join the capitalized words with spaces
     return capitalizedWords.join(" ");
-  }
+  };
+
+  // Function to fetch the image URL based on the repository name
+  const getImageUrlForRepo = (repoName) => {
+    const matchedRepo = repoImages.find((repo) => repo.repoName === repoName);
+    return matchedRepo ? matchedRepo.imageUrl : ""; // Return the image URL if found, otherwise an empty string
+  };
 
   useEffect(() => {
     // Fetch data from the GitHub API
     fetch("https://api.github.com/users/InnaKokic/repos")
       .then((response) => response.json())
       .then((data) => {
-        // Extract the required data (name and topics) from the response
         const formattedRepos = data.map((repo) => ({
-          name: formatRepoName(repo.name), // Format the repository name
+          name: formatRepoName(repo.name),
           topics: repo.topics,
-          html_url: repo.html_url, // Include URL for the button
+          html_url: repo.html_url,
           description: repo.description || defaultDescription,
+          imageUrl: getImageUrlForRepo(repo.name), // Fetch the image URL
         }));
 
-        // Set the formatted data in the state
         setRepos(formattedRepos);
       })
       .catch((error) => console.error("Error fetching data:", error));
@@ -45,14 +51,19 @@ export const FeaturedProjects = () => {
           className={"heading-text projects"}
           text={"Featured Projects"}
         />
+
         {repos.map((repo) => (
           <div className="projectCard" key={repo.name}>
             <div className="projects-text-box">
-              <strong>{repo.name}</strong>
-              <p> {repo.description} </p>
+              <img
+                className="repo-image"
+                src={repo.imageUrl}
+                alt={`Image for ${repo.name}`}
+              />
+              <h3 className="repo-name">{repo.name}</h3>
+              <p className="repo-desc"> {repo.description} </p>
 
               <div className="topics-wrapper">
-                {" "}
                 {repo.topics.map((topic) => (
                   <div className="topics" key={topic}>
                     {topic}
@@ -61,7 +72,7 @@ export const FeaturedProjects = () => {
               </div>
             </div>
 
-            <div>
+            <div className="repo-button-wrapper">
               <a
                 href="https://app.netlify.com/teams/innakokic/sites"
                 target="_blank"
@@ -71,7 +82,7 @@ export const FeaturedProjects = () => {
                   <img
                     className="icon"
                     src="/assets/Live Demo.svg"
-                    alt="github icon"
+                    alt="live demo icon"
                   />
                   Live demo
                 </button>
