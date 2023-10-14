@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { ArticleCard } from "../../components/articleCard/ArticleCard";
+import { ArticleCard } from "../articleCard/ArticleCard";
 import blogData from "../../blogData.json";
 
 import "./sections.css";
