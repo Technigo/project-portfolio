@@ -8,7 +8,7 @@ import './Articles.css';
 export const Articles = () => {
   return (
     <>    
-<div class="svg-background"></div>
+<div className="svg-background"></div>
 
     <div className="articles-container">
       <Headline className="headline" text="My words" level={1} />
