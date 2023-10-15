@@ -4,11 +4,13 @@ import { SubHeading } from "../../ReusableComponents/Typography/SubHeading.jsx";
 import { NormalText } from "../../ReusableComponents/Typography/NormalText.jsx";
 import { Button } from "../../ReusableComponents/FormElements/Button.jsx";
 
+// Component for each individual article-card. Takes in data as a prop from its parent the Articles.jsx where the import is made.
 export const ArticleCard = ({ data }) => {
 
     const articles = data.articles;
     return (
         <>
+            {/* Mapping through all the data from the jsonfile, and displaying each individual article data along with button-element */}
             {articles.map((article) => {
                 return (
                     <article className="article-card" key={article.name}>

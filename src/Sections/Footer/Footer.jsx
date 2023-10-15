@@ -3,6 +3,7 @@ import { ImageComponent } from "../../ReusableComponents/ImageElements/ImageComp
 import { MainHeading } from "../../ReusableComponents/Typography/MainHeading";
 import { SubHeading } from "../../ReusableComponents/Typography/SubHeading";
 
+// Component for the footer. Structure of the footer is set up, along with relevant information using reusable components. 
 export const Footer = () => {
     return (
         <footer>

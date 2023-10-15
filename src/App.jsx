@@ -8,6 +8,7 @@ import { Skills } from "./Sections/Skills/Skills";
 import { Footer } from "./Sections/Footer/Footer";
 import { FooterNameBanner } from "./Sections/Footer/FooterNameBanner";
 
+// Main component to render all the child components.
 export const App = () => {
 
   return (

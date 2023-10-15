@@ -5,8 +5,9 @@ import { ProjectCard } from "./ProjectCard";
 
 const API = "https://api.github.com/users/LauraLyckholm/repos";
 
+// Component for the featured projects section. Data is fetched here from the Github API and the structure of the section is set up. 
 export const FeaturedProjects = () => {
-    // Initialize projectData and error as empty arrays
+    // Initializing projectData and error as empty arrays
     const [projectData, setProjectData] = useState([]);
     const [error, setError] = useState(null);
 
@@ -16,7 +17,7 @@ export const FeaturedProjects = () => {
             const response = await fetch(API);
 
             if (!response.ok) {
-                // Handle error, show an error-message in validation p-tag
+                // Handle error, show an error-message in validation p-tag if something goes wrong.
                 throw new Error("Response was not ok");
             }
 
@@ -24,21 +25,25 @@ export const FeaturedProjects = () => {
             setProjectData(rawData);
         } catch (error) {
             setError(error);
-
+            console.error(error); // Log the error to the console
         }
     }
 
-    // Gets the fetch from fetchProjects.js
+    // Handles the fetch from above
     useEffect(() => {
         fetchProjects();
     }, []);
 
-    console.log(error);
-
     return (
         <section className="projects-section">
+            {/* Shows mainheading, and then IF something goes wrong, it displays an error message, otherwise the cards are shown. */}
             <MainHeading className={"featured-projects-heading"} text={"Featured Projects"} />
-            <ProjectCard repositories={projectData} />
+            {error ? (
+                <p className="error-message">An error occurred: {error.message}</p>
+            ) : (
+                <ProjectCard repositories={projectData} />
+            )}
+
         </section>
     )
 }

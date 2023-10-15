@@ -1,6 +1,7 @@
 import { SubHeading } from "../../ReusableComponents/Typography/SubHeading";
 import skills from "./skills.json";
 
+// Component for each individual skills list.
 export const SkillsList = () => {
     return (
         <>
@@ -11,6 +12,7 @@ export const SkillsList = () => {
                         <SubHeading className={skillCategory.name.toLowerCase().replace(/ /g, "-")} text={skillCategory.name} />
                     </div>
                     <ul>
+                        {/* Mapping through the skills to show them as a list */}
                         {skillCategory.skillset.map((skill, index) => (
                             <li key={index}>{skill}</li>
                         ))}
