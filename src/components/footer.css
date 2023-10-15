@@ -1,0 +1,35 @@
+.footer-banner {
+    background-color: #FF4575;
+    color: #fff;
+    padding: 40px;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* Keyframes for the rolling animation */
+@keyframes roll {
+    0% {
+        transform: translateX(100%);
+        /* Start off the screen to the right */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move to the left edge of the screen */
+    }
+}
+
+
+/* Apply the animation to the <h3> element */
+.footer-banner h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: roll 20s linear infinite;
+}

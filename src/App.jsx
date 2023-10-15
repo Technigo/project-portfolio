@@ -6,6 +6,7 @@ import Projects from './components/Projects.jsx'
 import Mywords from './components/Mywords.jsx';
 import Skills from './components/Skills';
 import Contact from './components/Contact.jsx';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Mywords />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   )
 }
