@@ -4,16 +4,21 @@ import article2 from "/file-images/article2.png"
 import article3 from "/file-images/article3.png"
 import article4 from "/file-images/article4.png"
 import readArticle from "/icons/readArticle.png"
+import readArticleHover from "/icons/readArticleHover.png"
+import { SectionTitle } from '../../reusableComponents/texts/SectionTitle'
+import { MediumsizedTitle } from '../../reusableComponents/texts/MediumsizedTitle'
+import { NormalText } from '../../reusableComponents/texts/NormalText'
 
 export const MyWords = () => {
 
+    const myWordTitle = "My words"
     const mywordList = [
         {
             id: 1,
             image: article1,
             time: "September 2023",
             title: "Spring One Reflection",
-            text: "The Spring One ",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
             link: "The spring One ######", //change your article link
         },
         {
@@ -21,7 +26,7 @@ export const MyWords = () => {
             image: article2,
             time: "October 2023",
             title: "Spring Two Reflection",
-            text: "The Sprint Two",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             link: "The spring Two ######", //change your article link
         },
         {
@@ -29,7 +34,7 @@ export const MyWords = () => {
             image: article3,
             time: "November 2023",
             title: "Spring Three Reflection",
-            text: "The spring three ######",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             link: "The spring three ######", //change your article link
         },
         {
@@ -37,30 +42,30 @@ export const MyWords = () => {
             image: article4,
             time: "December 2023",
             title: "Spring Four Reflection",
-            text: "The spring four ######",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             link: "The spring four ######", //change your article link
         }
     ];
     return (
         <div className="myword-container">
-            <header>
-                <h1>My Words</h1>
-            </header>
+
+            <SectionTitle sectionTitletext={myWordTitle} />
 
             <article className="frame">
                 {mywordList.map((myword) => {
                     return (
                         <div key={myword.id} className="article-container">
                             <img src={myword.image} alt="article's picture" />
-                            <p>{myword.time}</p>
-                            <h3>{myword.title}</h3>
-                            <h5>{myword.text}</h5>
+                            <p className='article-tag'>{myword.time}</p>
+                            <MediumsizedTitle mediumHeader={myword.title} />
+                            <NormalText text={myword.text} />
                             <a
                                 href={myword.link}
                                 target="_blank"
                                 rel='noopener noreferrer'>
                                 <button type="button">
-                                    <img src={readArticle} alt="" />
+                                    <img className="read-article" src={readArticle} alt="" />
+                                    <img className="read-article-hover" src={readArticleHover} alt="" />
                                 </button>
                             </a>
                         </div>

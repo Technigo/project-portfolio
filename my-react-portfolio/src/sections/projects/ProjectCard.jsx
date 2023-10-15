@@ -1,9 +1,11 @@
 import githubBtn from "/icons/githubBtn.png";
+import githubBtnHover from "/icons/githubBtnHover.png"
 import liveDemoBtn from "/icons/liveDemoBtn.png";
-import "./ProjectCard.css";
+import liveDemoBtnHover from "/icons/liveDemoBtnHover.png";
 import { MediumsizedTitle } from "../../reusableComponents/texts/MediumsizedTitle";
 import { NormalText } from "../../reusableComponents/texts/NormalText";
 import { Tags } from "../../reusableComponents/buttons/Tags";
+import "./ProjectCard.css";
 
 export const ProjectCard = ({ name, image, description, tags, netlify, github }) => {
     return (
@@ -23,7 +25,8 @@ export const ProjectCard = ({ name, image, description, tags, netlify, github })
                         aria-label="link to the github"
                     >
                         <button type="button">
-                            <img src={githubBtn} alt="github image" />
+                            <img className="github-btn" src={githubBtn} alt="github image" />
+                            <img className="github-btn-hover" src={githubBtnHover} alt="github image" />
                             <span></span>
                         </button>
                     </a>
@@ -33,7 +36,8 @@ export const ProjectCard = ({ name, image, description, tags, netlify, github })
                         rel="noopener noreferrer"
                         aria-label="link to live demo">
                         <button type="button">
-                            <img src={liveDemoBtn} alt="Live Demo Image" />
+                            <img className="livedemo-btn" src={liveDemoBtn} alt="Live Demo Button" />
+                            <img className="livedemo-btn-hover" src={liveDemoBtnHover} alt="Live Demo Button" />
                             <span></span>
                         </button>
                     </a>
