@@ -14,7 +14,9 @@ const Mywords = () => {
 
     return (
         <div className="mywords">
-            <div className="background-image"></div>
+            <div className="path">
+                <img src="/path.png" alt="line" />
+            </div>
             <h1>My Words</h1>
             <div className="mywords-container">
                 {articles.map((articles, index) => (
