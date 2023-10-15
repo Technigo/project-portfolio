@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { SubHeader } from "../../reusable/subheader/subheader"
+import { MainHeader } from "../../reusable/mainheader/mainheader"
 import style from './myprojects.module.css'
 
 export const MyProjects = () => {
@@ -17,18 +17,20 @@ export const MyProjects = () => {
 
     return (
         <div className={style.myProjectsBox}>
-            <SubHeader
-                subHeading="Hi, I'm Mirela Cacan"
-                className={style.h1}
-            />
-            {/*subHeader importet from subHeader component for easer acces to styling of similar headers on the page*/}
-            <ul className="myProjects">
-                {projects.map((project) => (
-                    <li className="eachProject" key={project.id}>
-                        <p>{project.name}</p>
-                    </li>
-                ))}
-            </ul>
+            <div className={style.projectsWrapper}>
+                <MainHeader
+                    className={style.h1}
+                    mainHeading="Featured Projects"
+                />
+                {/*subHeader imported from subHeader component for easer acces to styling of similar headers on the page*/}
+                <ul>
+                    {projects.map((project) => (
+                        <li className={style.eachProject} key={project.id}>
+                            <p>{project.name}</p>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }

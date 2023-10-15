@@ -13,8 +13,8 @@ export const Tech = () => {
             />
             <div >
                 <SubHeader
-                    subHeading="text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text"
                     className={style.h2}
+                    subHeading="text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text"
                 />
             </div>
         </div>

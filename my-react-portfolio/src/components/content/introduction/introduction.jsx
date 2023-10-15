@@ -8,14 +8,14 @@ export const Introduction = () => {
 
     return (
         <div className={style.introBox}>
-            <MainHeader
-                mainHeading="Frontend Development"
-                className={style.h1}
-            />
             <div className={style.innerBox}>
                 <SubHeader
                     subHeading="Hi, I'm Mirela Cacan"
                     className={style.h2}
+                />
+                <MainHeader
+                    mainHeading="Frontend Development"
+                    className={style.h1}
                 />
                 {/*Headers imported for easer acces to styling of similar headers on the page*/}
                 <div className={style.introPicTextBox}>
@@ -24,6 +24,6 @@ export const Introduction = () => {
                     {/*picture, header and introduction text displayed*/}
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
