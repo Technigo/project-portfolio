@@ -3,7 +3,7 @@ import { BodyText } from "./Typo/BodyText.jsx";
 import { Tags } from "./Tags.jsx"
 import { Button } from "./Button.jsx"
 
-import repoImages from "/repoImages.json"
+import repoImages from "../../repoImages.json"
 import liveDemo from "/src/assets/button-icons/live-demo.svg"
 import gitHub from "/src/assets/button-icons/github.svg"
 
