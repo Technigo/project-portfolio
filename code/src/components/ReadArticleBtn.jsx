@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useState } from 'react';
 import './ReadArticleBtn.css';
 
 const ReadArticleBtn = () => {
+    const [isHovered, setIsHovered] = useState(false);
 
-    return {
-        < div className = "article-button" >
-        <a href="#" img src="Doc.svg"><span>Read Article</span></a>
-        </div >
+    const handleMouseEnter = () => {
+        setIsHovered(true);
     };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
+
+    return (
+        <div
+            className={`article-button ${isHovered ? 'hovered' : ''}`}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
+            <img
+                src="Doc.svg"
+                alt="Document Icon"
+            />
+            <span>Read Article</span>
+        </div>
+    );
 };
 
-export default ReadArticleBtn; 
+export default ReadArticleBtn;
