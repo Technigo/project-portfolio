@@ -1,9 +1,8 @@
-import './MediumSizedTitle.css'
-
+import './MediumsizedTitle.css'
 export const MediumsizedTitle = ({ mediumHeader }) => {
     return (
-        <div className='medium-title'>
-            <h2>{mediumHeader}</h2>
-        </div>
+        <>
+            <h2 className='medium-title'>{mediumHeader}</h2>
+        </>
     )
 }
