@@ -19,7 +19,7 @@ const GithubBtn = () => {
             onMouseLeave={handleMouseLeave}
         >
             <img
-                src={isHovered ? 'github2.png' : 'github3.png'}
+                src={isHovered ? 'github1.png' : 'github3.png'}
                 alt="Github Icon"
             />
 
