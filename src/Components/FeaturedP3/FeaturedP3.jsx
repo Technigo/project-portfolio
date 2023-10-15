@@ -10,6 +10,8 @@ export const FeaturedP3 = () => {
 
     const REPOSAPI = "https://api.github.com/users/IdahCollin/repos" //Defining a constant for the GitHub API URL
 
+
+
     //useEffect hook to fetch data
     useEffect(() => {
         const fetchRepos = async () => {

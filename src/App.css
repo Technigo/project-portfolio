@@ -6,9 +6,9 @@
 
 a {
   text-decoration: none;
-  color: black
+  color: black;
+  font-family: Montserrat;
 }
-
 
 .main-wrapper {
   display: grid;
@@ -138,12 +138,17 @@ h3 {
   align-items: center;
 }
 
+.featured-projects-wrapper h1 {
+  padding: 128px 128px 128px 0px;
+}
+
 .repo-image {
   width: 280px;
   height: 280px;
   flex-shrink: 0;
   border-bottom: 20px solid #00473E;
   border-left: 20px solid #00473E;
+  object-fit: cover;
 }
 
 .project-card-inner {
@@ -155,7 +160,9 @@ h3 {
 .project-info {
   flex: 1;
   display: grid;
-  padding: 10px;
+  height: 315px;
+
+  padding-left: 35px;
   grid-template-rows: auto auto 1fr;
 }
 
@@ -170,9 +177,13 @@ h3 {
 
 .buttons-container {
   display: flex;
-  padding-right: 0px;
   align-items: center;
   gap: 7px;
+}
+
+.button-content-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .button a {
@@ -183,17 +194,15 @@ h3 {
   border-radius: 25px;
 }
 
-.button-content-wrapper {
+.tag ul {
   display: flex;
-  align-items: center;
 }
-
 
 .tag ul li {
   list-style-type: none;
   display: inline;
   margin-right: 10px;
-  padding: 15px;
+  padding: 5px;
   color: #FFF;
   background-color: black;
   font-family: Montserrat;
@@ -217,20 +226,39 @@ h3 {
 
 .mywords-wrapper {
   display: grid;
-  grid-template-columns: 564px 564px;
+  grid-template-columns: 460px 460px;
   grid-gap: 98px;
 }
 
+.date {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  font-family: Montserrat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
 .mywords-wrapper img {
-  width: 564px;
+  width: 460px;
   border-bottom: 20px solid #00473E;
   border-left: 20px solid #00473E;
 }
 
+/*Will change so that it's not a button if articles section are to be used later on. Depending on how it will be used I'll use API instead.*/
+.mywords-wrapper button {
+  padding: 10px;
+  border-radius: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+}
+
 /* ----- Skills4 section ----- */
 .skills-wrap {
-  display: flex;
-  align-items: center;
+  /*display: flex;*/
+  /*align-items: center;*/
   gap: 64px;
   background-color: #00473E;
   padding: 128px 338px;
@@ -239,30 +267,44 @@ h3 {
 
 .skills-wrap h1 {
   color: white;
+  text-align: center;
+  padding-bottom: 128px;
+}
+
+.skills-wrap-info {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
 }
 
 .skills-wrap ul {
   list-style-type: none;
+  font-family: Hind;
+  font-size: 18px;
 }
 
 .code h3 {
   background-color: #EB5577;
   color: white;
+  margin-bottom: 16px;
 }
 
 .toolbox h3 {
   background-color: #2483E0;
   color: white;
+  margin-bottom: 16px;
 }
 
 .upcoming h3 {
   background-color: #6DB486;
   color: white;
+  margin-bottom: 16px;
 }
 
 .more h3 {
   background-color: #FFDE30;
   color: #0B24F5;
+  margin-bottom: 16px;
 }
 
 /* ----- Contact5 section ----- */
@@ -271,8 +313,32 @@ h3 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 128px 433px;
 }
 
+.contact-photo {
+  margin-top: 128px;
+  margin-bottom: 64px;
+}
+
+.contact-container p {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 64px;
+}
+
+.social-media-wrapper a {
+  filter: brightness(1);
+  transition: filter 0.3s ease-in-out;
+  /* Smooth transition for the filter property */
+}
+
+.social-media-wrapper a:hover {
+  filter: brightness(0);
+}
 
 /* ----- Footer6 section ----- */
 
@@ -281,23 +347,28 @@ h3 {
   width: 100%;
   overflow: hidden;
   background-color: #00473E;
-  padding: 16px;
+  height: 114px;
+  display: flex;
+  align-items: center;
 }
 
 .moving-text {
   white-space: nowrap;
-  animation: moveLeftToRight 20s linear infinite;
   font-family: Montserrat;
+  font-size: 26.038px;
+  position: absolute;
+  left: 100%;
+  animation: moveLeftToRight 20s linear infinite;
 }
 
 @keyframes moveLeftToRight {
   0% {
-    transform: translateX(100%);
+    left: 100%;
     /* Start from the right of the container. */
   }
 
   100% {
-    transform: translateX(-100%);
+    left: -100%;
     /* Move to the left of the container. */
   }
 }

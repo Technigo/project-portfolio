@@ -1,6 +1,7 @@
 export const Tags = ({ tags }) => {
 
 
+
     return (
         <div className="tag">
             <ul>
