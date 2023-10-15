@@ -16,7 +16,6 @@ function App() {
       <Intro />
       <Tech />
       <Projects />
-      <Path />
       <Mywords />
       <Skills />
       <Contact />

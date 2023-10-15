@@ -1,8 +1,22 @@
 .mywords {
     background-color: #FFECEA;
     padding: 70px 0;
+    position: relative;
+    /* Make the .mywords container a positioning context */
 }
 
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    /* Adjust the height as needed to control the line thickness */
+    background-image: url('path.png');
+    /* Replace 'path.png' with the actual path to your image */
+    background-repeat: repeat-x;
+    z-index: 1;
+}
 
 
 .mywords-container {

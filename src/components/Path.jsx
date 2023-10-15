@@ -1,6 +1,6 @@
 // ImageComponent.jsx
 import React from 'react';
-import './path.css'
+import './path.css';
 
 const ImageComponent = () => {
     return (
