@@ -5,6 +5,7 @@ import article3 from "/file-images/article3.png"
 import article4 from "/file-images/article4.png"
 import readArticle from "/icons/readArticle.png"
 import readArticleHover from "/icons/readArticleHover.png"
+import divider from "/icons/divider.png"
 import { SectionTitle } from '../../reusableComponents/texts/SectionTitle'
 import { MediumsizedTitle } from '../../reusableComponents/texts/MediumsizedTitle'
 import { NormalText } from '../../reusableComponents/texts/NormalText'
@@ -48,7 +49,10 @@ export const MyWords = () => {
     ];
     return (
         <div className="myword-container">
+            <div className="divider">
+                <img src={divider} alt="" />
 
+            </div>
             <SectionTitle sectionTitletext={myWordTitle} />
 
             <article className="frame">
