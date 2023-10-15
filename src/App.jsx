@@ -13,7 +13,7 @@ export const App = () => {
       <div className="wavy-line-wrapper">
         <FeaturedProjects />
         <img
-          src="src/assets/Wavyline-Divider.svg"
+          src="public/assets/Wavyline-Divider.svg"
           className="wavy-line"
           alt="A wavy line for decoration"
         />

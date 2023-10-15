@@ -17,7 +17,7 @@ export const ArticleCard = () => {
             className={`article-button`}
             buttonName={`Read article`}
             link={article.articleLink}
-            icon={`src/assets/Doc-article.svg`}
+            icon={`public/assets/Doc-article.svg`}
             iconAlt={`Read the article, opening in a new window`}
             target="_blank"
             rel="noopener noreferrer"

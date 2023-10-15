@@ -50,14 +50,14 @@ export const ProjectCard = ({ className, repo, repoImage }) => {
           className={`demo-button`}
           buttonName={`Live demo`}
           link={repo.homepage}
-          icon={`src/assets/LiveDemo.svg`}
+          icon={`public/assets/LiveDemo.svg`}
           iconAlt={`Live demo, opening in a new window`}
         />
         <Button
           className={`code-button`}
           buttonName={`View the code`}
           link={repo.html_url}
-          icon={`src/assets/Github.svg`}
+          icon={`public/assets/Github.svg`}
           iconAlt={`View the code, opening in a new window`}
         />
       </div>
