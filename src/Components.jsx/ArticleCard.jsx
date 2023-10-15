@@ -2,6 +2,7 @@
 import { LinkButton } from "./LinkButton";
 import "./ArticleCard.css";
 
+// The over all info about the articles //
 export const ArticleCard = () => {
   const publishedDate = "Oct 2023";
   const articleTitle = "From Healthcare Worker to Frontend Developer";
@@ -9,6 +10,7 @@ export const ArticleCard = () => {
   const url =
     "https://www.technigo.io/stories/antonia-from-healhtcare-to-development";
 
+  //The articles that'll show on my page //
   return (
     <div className="article-card-container">
       <div className="article-card">

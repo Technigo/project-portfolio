@@ -7,12 +7,14 @@ import "./ProjectCard.css";
 export const Projects = () => {
   const [data, setData] = useState([]);
 
+  // WHere I get the data //
   useEffect(() => {
     fetch("https://api.github.com/users/EmmyLJ/repos")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
 
+  // The values that will show on my page //
   return (
     <div>
       {data.map((response) => (

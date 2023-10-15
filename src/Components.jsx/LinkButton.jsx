@@ -1,3 +1,4 @@
+// The functions of all buttons on my page //
 export const LinkButton = ({ buttonText, url, icon }) => {
   const handleClick = () => {
     console.log(`Clicked ${buttonText}`);

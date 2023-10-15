@@ -1,5 +1,6 @@
 import "./Tech.css";
 
+//The content on the tech page //
 export const Tech = () => {
   return (
     <div className="Tech">

@@ -1,5 +1,6 @@
 import "./Presentation.css";
 
+// My presentation page with text, image and arrow //
 export const Presentation = () => {
   return (
     <div className="presentation">

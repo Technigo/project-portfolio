@@ -1,5 +1,6 @@
 import "./Skills.css";
 
+// My skills in coding //
 export const Skills = () => {
   return (
     <div className="Skills">

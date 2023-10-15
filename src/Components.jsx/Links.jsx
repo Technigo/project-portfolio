@@ -1,5 +1,6 @@
 import { LinkButton } from "LinkButton";
 
+// The links that are connected to each button //
 export const Links = () => {
   return (
     <div>
