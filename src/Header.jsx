@@ -4,12 +4,14 @@ import './components/HeaderComponents/headerStyle.css';
 import { HeaderText } from './components/HeaderComponents/HeaderText';
 import { HeaderImg } from './components/HeaderComponents/HeaderImg';
 
+//Header, importing pics and headertext
 export const HeaderSection = () => {
     return (
 
         <div className="headerBody">
             <div className='HeaderSection'>
 
+                {/*display this pic when on mobile screen, otherwise hide */}
                 <div className="CvPicUpper"><HeaderImg
                     src={CvPic}
                     alt="Picture of Isa Robertini" />
@@ -20,6 +22,7 @@ export const HeaderSection = () => {
                     h1Text="Frontend Developer"
                 />
             </div>
+            {/*display this pic when on wide screen, otherwise hide */}
             <div className="picText">
                 <HeaderImg
                     src={CvPic}

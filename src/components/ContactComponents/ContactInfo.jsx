@@ -1,6 +1,7 @@
 
 import React from 'react';
 
+//contact info
 export const ContactInfo = () => (
     <div className="contactInfo" aria-label="Contact Information">
         <h3> Isa Robertini</h3>

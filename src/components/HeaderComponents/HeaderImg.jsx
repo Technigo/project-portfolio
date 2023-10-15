@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Subpresentation containing pic and presentation text
 export const HeaderImg = ({ src, alt, pText }) => {
     return (
         <figure className='subPresentation'>

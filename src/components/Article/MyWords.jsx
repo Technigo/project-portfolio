@@ -2,6 +2,7 @@ import React from 'react';
 import './MyWords.css';
 import { MyWordsButton } from './MyWordsButton';
 
+//Gets the img, tags, name, description from mywords.json file
 export const MyWordsCard = ({ mywords }) => {
     return (
 
@@ -12,6 +13,8 @@ export const MyWordsCard = ({ mywords }) => {
 
                 <div className="MyWords-description">
                     <div className="mywords-tags">
+
+                        {/*maps over the tags */}
                         {mywords.tags.map((tag, index) => (
                             <span key={index}>{tag}</span>
                         ))}

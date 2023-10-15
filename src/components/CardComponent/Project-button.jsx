@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+//Gets the buttons and links from project.json
 export const Buttons = ({ project }) => {
     return (
         <div className="project-wrapper">
