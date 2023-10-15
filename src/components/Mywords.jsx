@@ -1,5 +1,6 @@
 import React from "react";
 import ReadArticleBtn from "./ReadArticleBtn";
+import "/.mywords.css";
 
 const Mywords = () => {
     return (
