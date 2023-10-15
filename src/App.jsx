@@ -22,12 +22,9 @@ const App = () => {
     )
       .then((response) => response.json())
       .then((data) => {
-        setRepoList(data);
-        // data.map((item) => {
-        //   // console.log(item);
-        //   setRepoList(item);
-        //   setLoading(!loading);
-        // });
+        //Filter the repolist to the five latest project
+        const fiveLatest = data.slice(0, 5);
+        setRepoList(fiveLatest);
       })
       .catch((error) => console.log(error));
   };

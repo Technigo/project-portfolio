@@ -10,8 +10,8 @@ export const MyWords = () => {
     <div className="my-words-frame">
       <img src={squiggly} alt="squiggly-line" className="squiggly" />
       <div className="my-words-container">
+        <h2 className="my-words-title">My words</h2>
         <div className="my-words">
-          <h2 className="my-words-title">My words</h2>
           {articles.map((article) => (
             <ArticleCard
               key={article.id}
