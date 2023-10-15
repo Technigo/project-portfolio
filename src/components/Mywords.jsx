@@ -24,11 +24,10 @@ const Mywords = () => {
                         <div className="mywords-details">
                             <img className="articlesimg" src={articles.image} alt={articles.name} />
                             <div className="date">{articles.date}</div>
-
                             <h2>{articles.name}</h2>
                             <p>{articles.description}</p>
                             <div className="mywords-actions">
-                                <a href={articles.github} target="_blank" rel="noopener noreferrer">
+                                <a href={articles.link} target="_blank" rel="noopener noreferrer">
                                     <ReadArticleBtn />
                                 </a>
 
