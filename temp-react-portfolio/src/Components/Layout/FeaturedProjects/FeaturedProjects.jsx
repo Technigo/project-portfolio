@@ -1,7 +1,7 @@
 import style from './FeaturedProjects.module.css';
 import { SectionHeader } from '../../UI/SectionHeader/SectionHeader.jsx';
 import { Photos } from '../../UI/Photos/Photos.jsx';
-import { projectData as data } from "../../../Statics/projectData.js";
+import { projectData as data } from "../../../Data/projectData.js";
 
 export const FeaturedProjects = () => {
 
