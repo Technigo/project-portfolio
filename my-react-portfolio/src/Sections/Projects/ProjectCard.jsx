@@ -1,6 +1,7 @@
-// import React from "react";
+
 import "./projectcard.css";
-// import { MainTitle } from "../../ReusableComponents/Texts/MainTitle";
+import { Tag } from "../../ReusableComponents/Texts/Tag";
+import { ProjectButtons } from "./ProjectButtons";
 
 export const ProjectCard = ({ project }) => {
     return (
@@ -17,19 +18,18 @@ export const ProjectCard = ({ project }) => {
                         <p>{project.description}</p>
                     </div>
                     <div className="project-tags">
-                        {project.tags.map((tag, index) => (
-                            <span key={index}></span>
-                        ))}
+                        {project.tags && (
+                            <Tag tagText={project.tags} />
+                        )}
                     </div>
                     <div className="project-buttons">
-                        <button>button</button>
-                        <button>button</button>
-                        <button>button</button>
-                    </div>
 
+                        <ProjectButtons project={project} />
+
+                    </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
