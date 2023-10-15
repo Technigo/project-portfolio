@@ -79,10 +79,11 @@ So I struggled quite a bit and I have this left:
 -I realized now that I lack the outer containers for the different components.
 -I don't have thumbnails
 -I didn't figure out how to make the hover effect 
-- I haven't been able to get it to deploy, i only get at 404 page not found
+
 
 For me now it's more an acceptance that hey I don´t know everything yet and hand in what I have.
 
+Deployed site https://superlative-gumdrop-514b04.netlify.app/
 
 ##### Want to create your own README.md ?
 
