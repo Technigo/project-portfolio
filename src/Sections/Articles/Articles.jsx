@@ -6,7 +6,7 @@ import { ArticleCard } from "./ArticleCard.jsx";
 
 export const Articles = () => {
     return (
-        <section className="articles-section">
+        <section id="articles-section" className="articles-section">
             {/* <Wavyline /> */}
             <MainHeading className={"articles-heading"} text={"My words"} />
             <div className="article-cards-section">
