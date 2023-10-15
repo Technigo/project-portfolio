@@ -22,13 +22,13 @@ export const ContactInfo = () => {
           <Button
             className={`linkedin-button`}
             link={`www.linkedin.com/in/anna-robertsson-829967272`}
-            icon={`public/assets/GreyLinkedIn.svg.svg`}
+            icon={`/assets/GreyLinkedIn.svg.svg`}
             iconAlt={`Clickable icon of the LinkedIn logo`}
           />
           <Button
             className={`github-button`}
             link={`https://github.com/AnnaRobertsson`}
-            icon={`public/assets/GreyGitHub.svg.svg`}
+            icon={`/assets/GreyGitHub.svg.svg`}
             iconAlt={`Clickable icon of the GitHub logo`}
           />
         </div>
