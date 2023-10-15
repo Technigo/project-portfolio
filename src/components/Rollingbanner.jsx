@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const RollingBanner = () => {
-    const initialText = 'Lisa Dahlkar · Front End Developer · ';
+    const initialText = 'Lisa Dahlkar · Front End Developer · Lisa Dahlkar · Front End Developer · Lisa Dahlkar · Front End Developer · Lisa Dahlkar · Front End Developer · Lisa Dahlkar · ';
 
     // Use useState to manage the rolling text
     const [rollingText, setRollingText] = useState(initialText);
