@@ -5,11 +5,13 @@ import './Projects.css'
 export const Projects = () => {
     return (
         <article className="projects">
+            <section className="main-container">
             <section className="projects-wrapper">
                 <Heading
                     heading="Featured projects"
                     className="projects-heading" />
                 <ProjectBox />
+            </section>
             </section>
         </article>
     )

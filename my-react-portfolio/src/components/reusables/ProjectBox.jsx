@@ -1,5 +1,4 @@
 import { InfoButton } from './InfoButton.jsx'
-import { ProjectImage } from './ProjectImage.jsx'
 import { SubHeading } from './SubHeading.jsx'
 import { Paragraph } from './Paragraph.jsx'
 import { LinkButton } from './LinkButton.jsx'
@@ -48,7 +47,7 @@ export const ProjectBox = () => {
                 {first6Gits.map((gitProject) => (
                     <div className="box-wrapper">
                         <div class="img-container">
-                            <ProjectImage />
+                            <img class="project-img" src="src/assets/happythoughts.png" alt="Project image"/>
                         </div>
                         <div className="project-info" key={gitProject._id}>
                             <div className="project-headings">

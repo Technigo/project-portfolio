@@ -6,6 +6,7 @@ import './Contact.css'
 export const Contact = () => {
     return (
         <article className="contact">
+            <section className="main-container">
             <section className="contact-wrapper">
                 <Heading
                     heading="Contact me"
@@ -21,6 +22,7 @@ export const Contact = () => {
                 <SubHeading
                     subHeading="olga.lepisto@gmail.com"
                     className="contact-info" />
+            </section>
             </section>
         </article>
     )

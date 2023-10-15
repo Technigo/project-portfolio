@@ -6,11 +6,32 @@
 .tech-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 332px 220px 332px 220px;
 }
 
 .tech-skills {
     display: flex;
     text-align: left;
     align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+    .tech {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 744px) {
+    .tech {
+        padding: 128px 64px 128px 64px;
+    }
+
+    .tech-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
 }

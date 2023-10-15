@@ -6,10 +6,13 @@ import { Paragraph } from '../reusables/Paragraph'
 export const Skills = () => {
     return (
         <article className="skills">
+            <section className="main-container">
             <section className="skills-wrapper">
-                <Heading
-                    heading="Skills"
-                    className="skills-heading" />
+                <div class="heading-wrapper">
+                    <Heading
+                        heading="Skills"
+                        className="skills-heading" />
+                </div>
                 <div className="skills-container">
                     <div className="skills-box">
                         <SubHeading
@@ -46,6 +49,7 @@ export const Skills = () => {
                             className="skills-text" />
                     </div>
                 </div>
+            </section>
             </section>
         </article>
     )

@@ -1,12 +1,12 @@
 header {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 150px 220px 150px 220px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 332px 220px 332px 220px;
 }
 
-.heading-wrapper {
+.heading-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -16,4 +16,20 @@ header {
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .intro-info {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 744px) {
+    header {
+        padding: 128px 64px 128px 64px;
+    }
 }
