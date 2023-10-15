@@ -23,7 +23,7 @@ export const Introduction = () => {
       <div className="arrow jump">
         <img
           className="vert-move"
-          src="/assets/Position=down.svg"
+          src="/assets/Arrow.svg"
           alt="down arrow icon"
         />
       </div>
