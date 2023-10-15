@@ -1,63 +1,67 @@
-.blue-heading{
+h2{
 color: var(--firstly-color);
 font-family: Montserrat;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+font-size: 22px;
 }
 p{
 color: var( --text);
 font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-header{
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap:32px;
-padding: 64px 16px;
+font-size: 14px;
+line-height: 1.5;
 
 }
 
-img{
-width: 164px;
-height: 164px;
-border-radius: 164px;
-}
-.header-paragraph {
-color: var( --text);
-font-family:var(--default-font-family);
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-align-self: stretch;
+.profile-image {
+width: 200px;
+height: 200px;
+border-radius: 50%;
 
+}
+.header-paragraph{
+  text-align: left;
+  padding-left: 5px;
+}
+.heading-wrapper{
+  text-align: left;
+}
+header {
+  margin: 64px 16px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .arrow{
   display: block;
-  margin: auto;
+  margin: 0 auto;
 }
+
 @media (min-width: 667px) and (max-width: 1024px){
   p{
     font-size: 24px;
   }
- .blue-heading{
-    font-size: 40px; /*56 */
+  h2{
+    font-size: 56px;
   }
-  header{
-    padding: 128px 64px 0px 64px;
+  header {
+    justify-content: center;
+    align-items: center;
   }
-.description-wrapper{
+  .header-wrapper{
   display: flex;
-  flex-direction: row;
-  gap:2rem;
-  margin-bottom: 128px;
-}
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  
+  }
+  .description-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+   align-items: center;
+  
+  }
 
 }
 
@@ -65,20 +69,31 @@ align-self: stretch;
 p{
   font-size: 32px;
 }
-.blue-heading{
+h2{
   font-size: 80px;
 }
-.header-paragraph {
-  width: 600px;
+header {
+  justify-content: center;
+  align-items: center;
+}
+.header-wrapper{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+max-width: 1000px;
+
+
 }
 .description-wrapper{
   display: flex;
   flex-direction: row;
-  gap:2rem;
-  margin-bottom:199px;;
+  gap: 30px;
+  justify-content: center;
+ align-items: center;
+
 }
-header{
-  padding: 332px 220px 64px 220px;
-  }
+
+
 }
 

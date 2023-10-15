@@ -18,20 +18,25 @@ export const ProjectCard = ( props ) => {
 
   return (
    <>
-    {/* change for projectCardwrapper */}
-   <div className="card-wrapper">  
+
+   <div className="projectCardWrapper">  
         <div className="image-wrapper">
-          <img src={imgProject} alt={nameProject} />
+          <img src={imgProject} alt={nameProject} className="project-image" />
         </div>
-        <div className="description-wrapper">
+        <div className="info-wrapper">
           <div className="details-wrapper">
             <SectionHeading  className="project-heading" text={nameProject} />
-            <Description   className="project-paragraph" text={descriptionProject} />
-          <Tag tagItem={techniquesProject} />
+            <Description className="project-paragraph" text={descriptionProject} />
+            <div className="tag-wrapper"> 
+            {techniquesProject.map((technique, index) => (
+  <Tag key={index} tagItem={technique} className="tag-project" />
+            ))}
+              </div>
           </div>
           <div className="button-wrapper">
-            <Button label="Netlify" path={netlifyProject} className="button-netlify" />
-            <Button label="GitHub" path={githubProject} className="button-github" />
+            <Button label="Live Demo" path={netlifyProject} className="button-netlify"
+            />
+            <Button label="View the code" path={githubProject} className="button-github" />
             </div>
           </div>
         

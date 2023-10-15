@@ -6,7 +6,7 @@ import "./Tech.css"
  export const Tech = () => {
    return (
      
-    <section className="tech-wrapper">
+    <section className="tech-wrapper size-wrapper">
        <CardHeading className="white-heading"  text="Tech" />
        <Description className="tech-paragraph" text="HTML, CSS, Flexbox, JavaScript, ES6, 
 JSX, React, React Hooks, Node.js, 

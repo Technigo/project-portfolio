@@ -1,6 +1,7 @@
 import { ProjectCard } from "./ProjectCard"
 import projectData from "../../projectData.json"
 import { CardHeading } from "../../ReusableComponents/CardHeading.jsx"
+import "./Projects.css"
 
 let projectsArray = projectData.projects;
 console.log(projectsArray);

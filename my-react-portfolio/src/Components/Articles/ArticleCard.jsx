@@ -1,6 +1,7 @@
 import { Description } from "../../ReusableComponents/Description.jsx"
 import { SectionHeading } from "../../ReusableComponents/SectionHeading.jsx"
 import { Button } from "../../ReusableComponents/Button.jsx"
+import "./ArticleCard.css"
 
 export const ArticleCard = (props) => {
   
@@ -14,13 +15,13 @@ export const ArticleCard = (props) => {
   return (
     <>
       <div className="articleCard-wrapper">
-      <div className="image-wrapper">
-          <img src={imgArticle}  />
-        </div>
+        <div className="img-wrapper">
+          <img src={imgArticle} alt={ nameArticle }  />
+     </div>
         <div className="article-description">
-          <p>{timeArticle}</p>
-          <SectionHeading  className="project-heading" text={nameArticle} />
-          <Description className="project-paragraph" text={descriptionArticle} />
+          <p className="timeArticle">{timeArticle} </p>
+          <SectionHeading  className="article-heading" text={nameArticle} />
+          <Description className="article-paragraph" text={descriptionArticle} />
           <Button label="Read article" path={linkArticle} className="button-article" />
           
         </div>
