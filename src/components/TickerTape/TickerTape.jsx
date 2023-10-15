@@ -1,5 +1,14 @@
 import "./TickerTape.css";
 
 export const TickerTape = () => {
-  return <p>Here you will see my tickertape</p>;
+  return (
+    <div className="tickertape">
+      <p className="moving-text">
+        Anna Robertsson • Frontend Developer • Anna Robertsson • Frontend
+        Developer • Anna Robertsson • Frontend Developer • Anna Robertsson •
+        Frontend Developer • Anna Robertsson • Frontend Developer • Anna
+        Robertsson • Frontend Developer
+      </p>
+    </div>
+  );
 };

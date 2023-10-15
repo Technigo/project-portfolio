@@ -4,6 +4,7 @@ import { FeaturedProjects } from "./components/Featured Projects/FeaturedProject
 import { MyWords } from "./components/My Words/MyWords.jsx";
 import { Skills } from "./components/Skills/Skills.jsx";
 import { ContactInfo } from "./components/ContactInfo/ContactInfo.jsx";
+import { TickerTape } from "./components/TickerTape/TickerTape.jsx";
 
 export const App = () => {
   return (
@@ -21,6 +22,7 @@ export const App = () => {
       </div>
       <Skills />
       <ContactInfo />
+      <TickerTape />
     </div>
   );
 };
