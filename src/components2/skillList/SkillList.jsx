@@ -6,6 +6,7 @@ import "./skillList.css";
 export const SkillList = ({ list }) => {
   return (
     <>
+      {/*Mapping over the list sent as a prop to render a list */}
       {list.map((listItem, index) => {
         return (
           <>

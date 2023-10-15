@@ -7,6 +7,7 @@ export const SecFeaturedProjects = () => {
 
   const API = "https://api.github.com/users/emmydieden/repos";
 
+  //Function to fetch projects/repos from my github
   const fetchProjects = async () => {
     try {
       const response = await fetch(API);
@@ -16,7 +17,6 @@ export const SecFeaturedProjects = () => {
       }
 
       const data = await response.json(); //parse the response as JSON
-      console.log(data);
       setProjects(data); //update the state with fetched data (putting it into array to get correct fetch)
       console.log(projects);
     } catch (error) {
@@ -25,7 +25,7 @@ export const SecFeaturedProjects = () => {
   };
   useEffect(() => {
     fetchProjects();
-  }, []);
+  }, []) //Using useEffect to do fetch when the component is mounted first time. 
 
   return (
     <>

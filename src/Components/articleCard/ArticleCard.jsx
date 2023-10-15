@@ -1,3 +1,5 @@
+//THIS COMPONENT IS A COPY. COULD BE DELETED? 
+
 import React from "react";
 
 import { HeadingH1 } from "../typography/headingH1/HeadingH1";

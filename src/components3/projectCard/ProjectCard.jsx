@@ -28,9 +28,10 @@ export const ProjectCard = ({ projects }) => {
         <HeadingH1 className="project-h1" text={"Featured Projects"} />
 
         {filteredProjects.map((project) => {
+          // Finding the corresponding image data in 'repoImages' based on the project's name
           const repoImage = repoImages.find(
             (img) => img.repoName === project.name
-          );
+          )
 
           return (
             <div className="project-card" key={project.id}>

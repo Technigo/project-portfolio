@@ -2,6 +2,7 @@ import React from "react";
 
 import "./tag.css";
 
+//"topics" is an array sent as prop from "ProjectCard", from the API-fetch
 export const Tag = ({ topics }) => {
   const tags = topics;
 
