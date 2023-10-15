@@ -25,11 +25,11 @@ export const FrontPage = () => {
                 <div className="front-page-headings">
                     <MediumHeadline
                         mediumSizeHeader={mediumSizeHeader}
-                        id="smaller-h2"
+                        id="smaller-intro-h2"
                         useSpan={false}
                     />
                     <Headline
-                        id="smaller-h1"
+                        id="smaller-intro-h1"
                         className="big-heading blue-h1"
                         headerText={headerText} />
                 </div>

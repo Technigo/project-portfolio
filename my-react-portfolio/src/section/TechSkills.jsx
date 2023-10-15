@@ -22,7 +22,7 @@ export const TechSkills = () => {
                     headerText={headerText}
                 />
                 <MediumHeadline
-                    id="hind-h2"
+                    id="tech-hind-h2"
                     className="white-h2"
                     mediumSizeHeader={mediumSizeHeader}
                     useSpan={false}
