@@ -17,7 +17,7 @@ export const Contact = () => {
                 <p>Hang Nguyen<br />+46 720 319534<br />nguyenvuhang@gmail.com</p>
             </div>
             <div className="social-media">
-                <ul class="socials">
+                <ul className="socials">
                     <li>
                         <a href="#">
                             <FontAwesomeIcon icon={faLinkedin} style={{color: "#d0d0d0",}} />
