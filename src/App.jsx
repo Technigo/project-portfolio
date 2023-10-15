@@ -9,11 +9,10 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div className="portfolio-container">
+    <div>
       <Introduction />
       <Tech />
       <FeaturedProjects />
-
       <MyWords />
       <Skills />
       <Contact />

@@ -6,7 +6,7 @@ import repoImages from "./repoImages.json";
 export const FeaturedProjects = () => {
   const [repos, setRepos] = useState([]);
 
-  const defaultDescription = //Use if description is null or empty
+  const defaultDescription = //Use if description in API is null or empty
     "A React project showcasing various features and functionalities.";
 
   const formatRepoName = (name) => {
@@ -20,7 +20,7 @@ export const FeaturedProjects = () => {
     return capitalizedWords.join(" ");
   };
 
-  // Function to fetch the image URL based on the repository name
+  // Function to fetch the image URL fon the json-file based on the repository name
   const getImageUrlForRepo = (repoName) => {
     const matchedRepo = repoImages.find((repo) => repo.repoName === repoName);
     return matchedRepo ? matchedRepo.imageUrl : ""; // Return the image URL if found, otherwise an empty string

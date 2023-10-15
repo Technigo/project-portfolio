@@ -1,4 +1,3 @@
-// import { MainHeading } from "../MainHeading/MainHeading";
 import "./Introduction.css";
 
 export const Introduction = () => {

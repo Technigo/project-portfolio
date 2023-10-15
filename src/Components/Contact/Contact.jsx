@@ -1,5 +1,6 @@
 import { MainHeading } from "../MainHeading/MainHeading";
 import "./Contact.css";
+
 export const Contact = () => {
   return (
     <section className="contact-section">
@@ -23,6 +24,7 @@ export const Contact = () => {
             Innakokic1@gmail.com
           </a>
         </div>
+
         <div className="social-icon-wrapper">
           <a
             className="icon-link github-link"
