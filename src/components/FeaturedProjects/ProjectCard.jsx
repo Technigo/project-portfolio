@@ -6,6 +6,7 @@ import { Button } from "./ReusableTypos/Buttons.jsx";
 import "./projectcard.css";
 
 // Import a JSON file containing data about repository images.
+//import repoImages from "../data/repoImages.json";
 import repoImages from "../data/repoImages.json";
 
 export const ProjectCard = ({repos}) => {
