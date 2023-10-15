@@ -51,7 +51,7 @@ export const SkillSets = () => {
 
     // I chose to create an array that contains all the different skills as objects. I did this in order to be able to map() them in case I want to add or remove things in the future. First I mapped the whole skill set card. Since the header for each category is the same as the orther pages regarding styling I chose to import the H2 text component. Second I mapped an unordered list of different skills. The text for each skill is using the textbox component which is the regular body text.
     return (
-        <>
+        <div className="skillset-card-container">
             {skillCategories.map((category) => (
                 <div className="skill-sets-card" key={category.id}>
                     <MediumHeadline
@@ -61,11 +61,13 @@ export const SkillSets = () => {
                     />
                     <ul className="list-without-bullets">
                         {category.text.map((skill) => (
-                            <li key={skill.id}><Textbox text={skill.name} /></li>
+                            <li key={skill.id}>
+                                <Textbox text={skill.name} />
+                            </li>
                         ))}
                     </ul>
                 </div>
             ))}
-        </>
+        </div>
     );
 };

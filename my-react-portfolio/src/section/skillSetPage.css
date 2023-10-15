@@ -1,5 +1,5 @@
 .list-without-bullets {
-    list-style-type: none
+    list-style-type: none;
 }
 
 .skillset-page-wrapper {
@@ -11,7 +11,7 @@
     gap: 64px;
 }
 
-.skills-container-wrapper {
+.skillset-card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,4 +24,54 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+}
+
+.list-without-bullets li .textbox-wrapper p {
+    color: white;
+}
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+    .skillset-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 153px);
+        gap: 64px;
+    }
+}
+
+.skill-sets-card {
+    align-items: start;
+    height: 100%;
+    text-align: left;
+}
+
+
+@media (min-width: 1025px) {
+
+    .skillset-page-wrapper {
+        display: flex;
+        padding: 128px 0;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 128px;
+    }
+    
+    .skillset-card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        text-align: left;
+        gap: 64px;
+    }
+    
+    .skill-sets-card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+        width: 100%;
+    }
+
 }
