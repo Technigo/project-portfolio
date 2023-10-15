@@ -14,4 +14,4 @@ export const Footer = () => {
         </div>
     )
 }
-//Decided on many copies to achive the effect i want wthout worring that it wil be cut off if screen is bigger.
+//Decided on many copies of text to achive the effect i want wthout worring that it wil be cut off if screen is bigger.

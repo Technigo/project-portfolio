@@ -1,17 +1,27 @@
 import { useState, useEffect } from 'react';
 import style from './FeaturedProjects.module.css';
 import { SectionHeader } from '../../UI/SectionHeader/SectionHeader.jsx';
-import { SmallerHeader } from '../../UI/SmallerHeader/SmallerHeader.jsx';
+import { Photos } from '../../UI/Photos/Photos.jsx';
 
 export const FeaturedProjects = () => {
     const [myGitProjects, setmyGitProjects] = useState([])
 
     const featuredProjects = [
-        { repoName: 'project-chatbot', displayName: 'Plant Chatbot' },
-        { repoName: 'EmE-weather-app', displayName: 'Weather App' },
-        { repoName: 'project-guess-who-elbine', displayName: 'Game: Guess the Taylor Swift song' }
+        { repoName: 'project-happy-thoughts-elbine-vite', displayName: 'Happy Thoughts', netlifyUrl: 'https://happy-thoughts-elbine.netlify.app', className: style.HappyThoughts },
+
+        { repoName: 'EmE-weather-app', displayName: 'Weather App', netlifyUrl: 'https://eme-weather-app.netlify.app/', className: style.WeatherApp },
+
+        { repoName: 'project-guess-who-elbine', displayName: 'Game: Guess the song', netlifyUrl: 'https://guess-who-elbine.netlify.app/', className: style.GuessSong },
+
+        { repoName: 'project-survey-vite-EMS', displayName: 'Pala Survey', netlifyUrl: 'https://pala-customer-survey.netlify.app', className: style.PalaSurvey },
+
+        { repoName: 'project-music-releases-elbine', displayName: 'New music releases', netlifyUrl: 'https://app.netlify.com/sites/music-releases-by-elbine/overview', className: style.MusicRelease },
     ];
     //Makes it possible for me to choose the name of the project I display, and what projects to display. 
+
+
+
+
 
     useEffect(() => {
         fetch('https://api.github.com/users/elbines/repos')
@@ -27,36 +37,39 @@ export const FeaturedProjects = () => {
     }, [])
 
     return (
-        <div className={style.wrapper_projects}>
-            <SectionHeader
-                heading="FeaturedProjects"
-                className={style.projectsHeader}
-            />
-            <SmallerHeader
-                smallHeading="test"
-                className={style.smallerHeadingProject1}
-            />
-            <div>
-                <ul>
-                    {myGitProjects.map((project) => {
-                        const foundProject = featuredProjects.find(itemFromGit => itemFromGit.repoName === project.name);
-                        //.find() will return the first element in the array that satisfies the provided testing function, or undefined if none found. If I for example write: repoName: 'weather-app' instead of repoName: repoName: 'EmE-weather-app', and will be logged:
-                        if (!foundProject) {
-                            console.log('Project not found for:', project.name);
-                        }
-                        return (
-                            <li key={project.id}>
-                                <p>{foundProject ? foundProject.displayName : 'Project not found'}</p>
+        <div className={style.outer_containerWrapper}>
+            <div className={style.wrapper_projects}>
+                <SectionHeader
+                    heading="FeaturedProjects"
+                    className={style.projectsHeader}
+                />
 
-                                {foundProject && (
-                                    <a href={project.html_url} target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                                )}
-                                {/* View on GitHub: add a Wiev the code button instead */}
-                            </li>
-                        );
-                    })}
-                </ul>
+                {myGitProjects.map((project) => {
+                    const foundProject = featuredProjects.find(itemFromGit => itemFromGit.repoName === project.name);
+                    //.find() will return the first element in the array that satisfies the provided testing function, or undefined if none found. If I for example write: repoName: 'weather-app' instead of repoName: repoName: 'EmE-weather-app', and will be logged:
+                    if (!foundProject) {
+                        console.log('Project not found for:', project.name);
+                        return null; // Dette vil hindre at en tom div blir opprettet for prosjekter som ikke ble funnet
+                    }
+                    return (
+                        <div key={project.id} className={foundProject.className}>
+
+                            <p>{foundProject.displayName}</p>
+                            <div className="buttonWrapper">
+                                <a href={foundProject.netlifyUrl} target="_blank" rel="noopener noreferrer">
+                                    <Photos selectedMode="Live" />
+                                </a>
+                                <a href={project.html_url} target="_blank" rel="noopener noreferrer">
+                                    <Photos selectedMode="ViewCode" />
+                                </a>
+                                {/* Display name of project, button to github and to git*/}
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     )
+
+
 }

@@ -1,13 +1,59 @@
-h1.projectsHeader {
-    color: blue;
+.outer_containerWrapper {
+    max-width: 1512px;
+    /*max-height: 980px;*/
+    padding: 332px 300px 332px 300px;
+    display: flex;
+    justify-content: center;
 }
 
 .wrapper_projects {
     background-color: white;
-    padding-top: 50px;
+    margin: auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    overflow: hidden;
+    grid-template-areas:
+        "SectionHeader SectionHeader SectionHeader"
+        "PalaSurvey  PalaSurvey PalaSurvey"
+        "HappyThoughts  HappyThoughts HappyThoughts"
+        "WeatherApp WeatherApp WeatherApp"
+        "GuessSong GuessSong GuessSong "
+        "MusicRelease MusicRelease MusicRelease"
 }
 
+h1.projectsHeader {
+    color: blue;
+    grid-area: SectionHeader;
 
-.smallerHeadingProject1 {
-    padding: 50px 0;
+}
+
+.buttonWrapper {
+    grid-area: NetlifyAndGit;
+}
+
+.HappyThoughts {
+    grid-area: HappyThoughts;
+    font-size: 50px;
+}
+
+.WeatherApp {
+    grid-area: WeatherApp;
+    font-size: 50px;
+}
+
+.GuessSong {
+    grid-area: GuessSong;
+    font-size: 50px;
+}
+
+.MusicRelease {
+    grid-area: MusicRelease;
+    font-size: 50px;
+}
+
+.PalaSurvey {
+    grid-area: PalaSurvey;
+    font-size: 50px;
 }
