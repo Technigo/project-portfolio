@@ -40,3 +40,26 @@ img.centered {
 .intro-container p {
   margin-bottom: 32px;
 }
+
+@media (min-width: 768px) {
+  .intro-container h2 {
+    order: 1;
+  }
+
+  .intro-container h1 {
+    order: 2;
+  }
+
+  .intro-container img.centered {
+    order: 3;
+    flex: 1;
+  }
+
+  .intro-container p {
+    order: 4; /* Set the order to display the paragraph second */
+    flex: 2; /* Grow to fill available space */
+    display: inline-block;
+  }
+
+  /* Optionally, you can use justify-content to control alignment */
+}

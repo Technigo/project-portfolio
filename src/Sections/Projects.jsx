@@ -3,11 +3,16 @@ import { Headline } from "./Headline";
 import { ProjectCard } from "../components/ProjectCard";
 import { Tag } from "../components/Tag";
 import projects from "../../projects.json";
+import "./Projects.css";
 
 export const Projects = () => {
   return (
     <div className="project-card2">
-      <Headline text="Featured Projects" level={1} />
+      <Headline
+        text="Featured Projects"
+        className="featured-projects"
+        level={1}
+      />
       {projects.projects.map((project) => (
         <ProjectCard
           key={project.name}

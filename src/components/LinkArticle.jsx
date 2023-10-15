@@ -6,7 +6,7 @@ import readhover from "../assets/read-hover.svg";
 
 export const ArticlesLinks = () => {
   return (
-    <div className="project-links">
+    <div className="article-links">
       <LinkButton
         buttonText=""
         url={articles.articles[0].link}
