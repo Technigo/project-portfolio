@@ -9,9 +9,9 @@ export const ImagePortrait = () => {
     <>
       <img
         className="circle-image"
+        role="img"
         src={imageVeronica}
-        alt="Avatar">
-
+        alt="Portrait of Veronica Åström">
       </img>
     </>
   )

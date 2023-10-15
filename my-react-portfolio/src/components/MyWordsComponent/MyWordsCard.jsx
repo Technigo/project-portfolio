@@ -7,11 +7,11 @@ import { ReadMoreButton } from "./ReadMoreButton";
 
 
 
-export const MyWordsCard = ({ articleImage, articleDate, articleTitle, articleText, articleLink }) => {
+export const MyWordsCard = ({ articleImage, articleDate, articleTitle, articleText, articleLink, imageAltText }) => {
 
     return (
         <div className="my-words-card">
-            <img src={articleImage} alt="article image" className="article-card-image" />
+            <img src={articleImage} alt={imageAltText} className="article-card-image" />
             <div className="my-words-heading-wrapper">
                 <TagComponent tag={articleDate} />
                 <MediumHeadline

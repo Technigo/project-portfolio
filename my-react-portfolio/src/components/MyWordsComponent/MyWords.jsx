@@ -19,6 +19,7 @@ export const MyWords = () => {
             text: [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             ],
+            alt: 'image description',
             link: "#", //change your article link
         },
         {
@@ -29,6 +30,7 @@ export const MyWords = () => {
             text: [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             ],
+            alt: 'image description',
             link: "#", //change your article link
         },
         {
@@ -39,6 +41,7 @@ export const MyWords = () => {
             text: [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             ],
+            alt: 'image description',
             link: "#", //change your article link
         },
         {
@@ -49,6 +52,7 @@ export const MyWords = () => {
             text: [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             ],
+            alt: 'image description',
             link: "#", //change your article link
         }
     ];
@@ -62,6 +66,7 @@ export const MyWords = () => {
                         articleDate={article.time}
                         articleLink={article.link}
                         articleTitle={article.mediumSizeHeader}
+                        imageAltText={article.alt}
                         articleText={article.text}
                     />
                 </div>
