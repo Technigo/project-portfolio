@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="">
-    <img src="/assets/react-portfolio.svg" alt="Project Banner Image">
+    <img src="public/assets/react-portfolio.svg" alt="Project Banner Image">
   </a>
 </h1>
 
@@ -30,4 +30,4 @@ Through this project, I, Laura, have learned invaluable lessons in React develop
 
 ## Screenshots
 
-![App Screenshot]("/assets/screenshot-of-portfolio.png")
+![App Screenshot](public/assets/screenshot-of-portfolio.png)
