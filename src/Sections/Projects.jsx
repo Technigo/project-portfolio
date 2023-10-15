@@ -14,6 +14,7 @@ export const Projects = () => {
         const filteredProjectListOne = data.filter(project => project.name.includes("project"));
         const filteredProjectListFinal = filteredProjectListOne.filter(project => !project.name.includes("portfolio"));
         setProjectList(filteredProjectListFinal);
+        console.log(filteredProjectListFinal);
       })
       .catch((error) => console.error(error));
   }
