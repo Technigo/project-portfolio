@@ -1,7 +1,7 @@
 import React from 'react';
 import { Headline } from '../Headline/Headline';
 import { Image } from '../Image/Image';
-import avatar from './assets/avatar.png';
+import avatar from '../../assets/avatar.png';
 import './Presentation.css';
 
 export const Presentation = () => {
@@ -9,7 +9,7 @@ export const Presentation = () => {
     <div className="presentation-container">
         <Image src={avatar} alt="Avatar" className="avatar"/>
         <Headline className="headline" text="Hi, i'm Manne Johansson" level={3} />
-        <Headline className="headline" text="Frontend Developer" level={1} />
+        <Headline className="headline" text="Web Developer" level={1} />
         <p>Manne is an exceptional developer known for his innovative solutions and exceptional coding abilities. He creates user-friendly applications and solves complex issues with ease. His drive for excellence makes him a valuable asset to any project and a standout in the technology field.</p>
         <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 68">
             <path 

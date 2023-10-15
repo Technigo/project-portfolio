@@ -1,10 +1,19 @@
 import React from 'react';
 import './Footer.css';
+import Image1 from './assets/TickerTape.svg';
+import Image2 from './assets/TickerTape.svg';
 
 export const Footer = () => {
     return (
-      <footer className="footer-container">
-          <h3 className="rolling-text">Manne Johansson · Frontend Developer</h3>
-      </footer>
+        <footer className="footer-container">
+            <div className="ticker">
+                <img src={Image1} alt="Image 1" className="ticker-item"/>
+                <img src={Image2} alt="Image 2" className="ticker-item"/>
+
+                <img src={Image1} alt="Image 1" className="ticker-item"/>
+                <img src={Image2} alt="Image 2" className="ticker-item"/>
+
+            </div>
+        </footer>
     );
-  }
+}

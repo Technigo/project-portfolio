@@ -1,26 +1,29 @@
 .footer-container {
   position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #FF4575;
+}
+
+.ticker {
   overflow: hidden;
   width: 100%;
-  height: 50px;
-  background-color: #FF4575;
-  color: white;
-}
-
-.rolling-text {
-  width: calc(100% + 100vw); 
+  height: 100%;
+  position: relative;
   white-space: nowrap;
-  font-size: 1.5rem;
-  position: absolute;
-  transform: translateY(-50%);
-  animation: roll 10s linear infinite; 
 }
 
-@keyframes roll {
+.ticker-item {
+  display: inline-block;
+  height: 100%;
+  animation: moveTicker 10s linear infinite;
+}
+
+@keyframes moveTicker {
   0% {
-    transform: translateX(100vw) translateY(-50%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%) translateY(-50%);
+    transform: translateX(-100%);
   }
 }
