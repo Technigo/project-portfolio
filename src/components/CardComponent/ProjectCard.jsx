@@ -6,7 +6,7 @@ export const ProjectCard = ({ project }) => {
   return (
     <div className="projectWrapper">
       <div className='projectContainer'>
-        <img className="project-img" src={project.image} height={280} width={280} alt="Project Image" />
+        <img className="project-img" src={project.image} height={280} width={280} alt={`Image of project: ${project.name}`} />
         <div className="projectDescription">
           <h2 className="project-title">{project.name}</h2>
           <div className="readmeContent">

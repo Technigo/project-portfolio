@@ -1,11 +1,15 @@
-.title {
-    color: blue;
-}
-
 .contactContainer {
+    margin: auto;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
+
+.title h1 {
+    color: blue;
+
+}
+
 
 .ContactPicture img {
     display: none;
@@ -17,7 +21,15 @@
     margin-top: 50px;
     margin-bottom: 50px;
     width: 50px;
+    transition: transform 0.3s, filter 0.3s;
 }
+
+.soMe button:hover {
+    transform: scale(1.1);
+    filter: brightness(0.5);
+
+}
+
 
 .rollingtext-container {
     margin-top: 20px;
@@ -30,13 +42,11 @@
 .rollingtext {
     display: inline-block;
     animation: scroll 80s linear infinite;
-    /* Adjust the animation duration as needed */
+
 }
 
 
-
-
-
+/* animation roling text */
 @keyframes scroll {
     0% {
         transform: translateX(100%);
@@ -55,7 +65,7 @@
     }
 
     .rollingtext-container {
-        margin-bottom: 40%;
+        margin-bottom: 56%;
     }
 }
 
@@ -75,7 +85,7 @@
     }
 
     .rollingtext-container {
-        margin-bottom: 40%;
+        margin-bottom: 15%;
     }
 
 

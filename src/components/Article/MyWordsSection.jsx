@@ -8,7 +8,7 @@ export const MyWordsSection = ({ mywords }) => {
         <div className='MyWordsMap'>
 
             <div className="divider">
-                <img src={CurlyDevider} alt="Curly banner that devides the page" />
+                <img src={CurlyDevider} alt="" aria-label="Decorative curly divider" aria-hidden="true" />
             </div>
 
             <div className="myword-header-wrapper">

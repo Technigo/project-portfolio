@@ -8,7 +8,7 @@ export const MyWordsCard = ({ mywords }) => {
         <div className='MyWords-container'>
             <div className="MyWords-item">
                 <img className="MyWords-img" src={mywords.image} width={
-                    564} height={340} alt="MyWords Image" />
+                    564} height={340} alt={`Image from article: ${mywords.name}`} />
 
                 <div className="MyWords-description">
                     <div className="mywords-tags">
@@ -16,7 +16,6 @@ export const MyWordsCard = ({ mywords }) => {
                             <span key={index}>{tag}</span>
                         ))}
                     </div>
-
                     <h2 className="MyWords-title">{mywords.name}</h2>
                     <p>{mywords.description}</p>
                 </div>

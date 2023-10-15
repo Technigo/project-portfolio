@@ -2,10 +2,10 @@ import React from 'react';
 
 export const HeaderImg = ({ src, alt, pText }) => {
     return (
-        <div className='subPresentation'>
-            <img src={src} className="CvPic" alt={alt} />
+        <figure className='subPresentation'>
+            <img src={src} className="CvPic" alt="Picture of Isa Robertini" />
             <p>{pText}</p>
-        </div>
+        </figure>
     );
 }
 

@@ -5,9 +5,9 @@ export const MyWordsButton = ({ mywords }) => {
         <div className="mywords-container">
             <div className="mywords-wrapper">
 
-                <a href="">
-                    <button role="button" tabindex="0" onclick="yourFunction()">
-                        <img src={mywords.articleBtn} alt="Description of the image" />
+                <a href={mywords.articleLink} target="_blank" rel="noopener noreferrer">
+                    <button role="button" tabIndex="0">
+                        <img src={mywords.articleBtn} alt={`Click here to read the article: ${mywords.articleTitle}`} />
                     </button>
                 </a>
 

@@ -6,13 +6,13 @@ export const Buttons = ({ project }) => {
             <div className="button-wrapper">
 
                 <a href={project.github}>
-                    <button role="button" tabindex="0" onclick="yourFunction()">
-                        <img src={project.githubBtn} alt="Github Link to project" />
+                    <button role="button" tabIndex="0" onClick={() => window.location = project.github}>
+                        <img src={project.githubBtn} alt="Github Link to project" aria-label="View on GitHub" />
                     </button>
                 </a>
                 <a href={project.netlify}>
-                    <button role="button" tabindex="0" onclick="yourFunction()">
-                        <img src={project.liveDemoBtn} alt="Netlify Link to project" />
+                    <button role="button" tabIndex="0" onClick={() => window.location = project.netlify}>
+                        <img src={project.liveDemoBtn} alt="Netlify Link to project" aria-label="View live demo on Netlify" />
                     </button>
                 </a>
 
