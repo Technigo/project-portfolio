@@ -28,6 +28,13 @@
   gap: 64px;
 }
 
+.my-words-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
 /*   My Words article card*/
 .article-card-image {
   border-bottom: 20px solid #FF4575;
@@ -58,7 +65,7 @@
     width: 680px;
     padding: 128px 0px;
     margin: 0 auto;
-    display: grid;
+    display: flex;
     flex-direction: column;
     align-items: start;
     gap: 64px;
@@ -84,10 +91,14 @@
   .my-words-article-content {
     margin: 0 auto;
     padding: 128px 0px;
+    gap: 0;
   }
 
   .my-words-page-wrapper .big-heading {
-    margin-bottom: 64px;
+    padding-bottom: 128px;
+    margin: 0 auto;
+    width: 1018px;
+    text-align: left;
   }
 
   /*   My Words article card*/
@@ -97,15 +108,8 @@
     width: 460px;
   }
 
-  .my-words-card-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 460px);
-    column-gap: 98px;
-    row-gap: 64px;
-  }
-
+ 
   .my-words-card {
-    height: 739px;
     gap: 32px;
   }
 
@@ -123,6 +127,19 @@
   .my-words-page-wrapper>img {
     top: -9px;
     /* Change this for other devices */
+  }
+
+  .my-words-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 460px);
+    column-gap: 98px;
+    row-gap: 64px;
+  }
+
+  .my-words-card-wrapper {
+    height: 100%; /* Ensure each card takes full height */
+    display: flex;
+    flex-direction: column;
   }
 
 }

@@ -54,7 +54,7 @@ export const MyWords = () => {
     ];
 
     return (
-        <>
+        <div className="my-words-card-container">
             {articleInformation.map((article) => (
                 <div className="my-words-card-wrapper" key={article.id}>
                     <MyWordsCard
@@ -67,6 +67,6 @@ export const MyWords = () => {
                 </div>
             ))
             }
-        </>
+        </div>
     )
 }
