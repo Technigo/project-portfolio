@@ -1,9 +1,10 @@
 import data from "./data.json";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
     return (
-        <div className="bg-red-400 py-4 text-center">
-            <p className="text-white font-medium">{data.tags.join(' • ')}</p>
+        <div className="bg-technigo-pink py-4">
+            <p className={`text-white font-medium whitespace-nowrap ${styles.scroll}`}>{data.tags.join(' • ')}</p>
         </div>
     );
 }
