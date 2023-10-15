@@ -1,8 +1,9 @@
 import repoImages from "../image-collection.json";
 
-export const Images = (projectName) => {
+export const Images = ({ projectName }) => {
   const repoImage = repoImages.find((img) => img.projectName === projectName);
-  
+  console.log(repoImages);
+  console.log(repoImage);
   return (
     <div className="project-image">
       <ul>

@@ -3,11 +3,12 @@
 import { Introduction } from "./Sections/Introduction";
 import { Tech } from "./Sections/Tech";
 import { Projects } from "./Sections/Projects";
+import { MyWords } from "./Sections/MyWords";
 import "./App.css";
 
 
 const App = () => {
-
+  
   return (
     <div className="main-wrapper">
       <div className="intro">
@@ -18,6 +19,9 @@ const App = () => {
       </div>
       <div className="projects">
         <Projects />
+      </div>
+      <div className="my-words">
+        <MyWords />
       </div>
     </div>
   )

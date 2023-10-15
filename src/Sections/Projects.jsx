@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { BigHeadlines } from "../Components/BigHeadlines";
 import { Project } from "../Components/Project";
 
 export const Projects = () => {
+  const sectionId = 3;
   const [projectList, setProjectList] = useState([]);
 
   const fetchProjectsFromGithubAPI = () => {
@@ -22,7 +24,7 @@ export const Projects = () => {
 
   return (
     <>
-      <h1>Featured Projects</h1>
+      <BigHeadlines sectionId={sectionId}/>
         
       <div className="project-list">
         {projectList.map((project) => {
@@ -34,6 +36,7 @@ export const Projects = () => {
               tags={project.topics}
               homepage={project.homepage}
               url={project.html_url}
+              sectionId={sectionId}
             />
           )
         })}
