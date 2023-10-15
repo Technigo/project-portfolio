@@ -2,20 +2,22 @@
   background-color: #FFECEA;
 }
 
-.my-words-page-wrapper > img {
+.my-words-page-wrapper>img {
   z-index: 1;
   position: relative;
-  top: -15px;  /* Change this for other devices */
+  top: -15px;
+  /* Change this for other devices */
 }
 
-.my-words-page-wrapper > div {
+.my-words-page-wrapper>div {
   z-index: 10;
   position: relative;
 }
+
 /* Wavy divider */
 
 .wavy-divider {
-  width:100%;
+  width: 100%;
 }
 
 .my-words-article-content {
@@ -31,7 +33,6 @@
   border-bottom: 20px solid #FF4575;
   border-left: 20px solid #FF4575;
   height: 200px;
-  /* Set a fixed height */
   object-fit: cover;
   width: 100%;
 }
@@ -48,4 +49,80 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+}
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+  .my-words-article-content {
+    width: 680px;
+    padding: 128px 0px;
+    margin: 0 auto;
+    display: grid;
+    flex-direction: column;
+    align-items: start;
+    gap: 64px;
+  }
+
+  /*   My Words article card*/
+  .article-card-image {
+    height: 340px;
+    object-fit: cover;
+    width: 680px;
+  }
+
+  .my-words-card {
+    gap: 32px;
+  }
+
+
+}
+
+
+@media (min-width: 1025px) {
+
+  .my-words-article-content {
+    margin: 0 auto;
+    padding: 128px 0px;
+  }
+
+  .my-words-page-wrapper .big-heading {
+    margin-bottom: 64px;
+  }
+
+  /*   My Words article card*/
+  .article-card-image {
+    height: 340px;
+    object-fit: cover;
+    width: 460px;
+  }
+
+  .my-words-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 460px);
+    column-gap: 98px;
+    row-gap: 64px;
+  }
+
+  .my-words-card {
+    height: 739px;
+    gap: 32px;
+  }
+
+  .my-words-card-wrapper {
+    overflow: hidden;
+  }
+
+  .my-words-heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .my-words-page-wrapper>img {
+    top: -9px;
+    /* Change this for other devices */
+  }
+
 }
