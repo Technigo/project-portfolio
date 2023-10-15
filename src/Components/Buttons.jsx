@@ -9,7 +9,7 @@ export const Buttons = ({ homepage, url, sectionId }) => {
                     rel="noreferrer noopener"
                 >
                     <span role="button" className="live-demo button">
-                        <img src="../../public/buttons/Live-Demo-Button.png" alt="Button to view live demo" />
+                        <img src="/buttons/Live-Demo-Button.png" alt="Button to view live demo" />
                     </span>
                 </a>
 
@@ -19,7 +19,7 @@ export const Buttons = ({ homepage, url, sectionId }) => {
                     rel="noreferrer noopener"
                 >
                     <span role="button" className="github button">
-                        <img src="../../public/buttons/View-Code-Button.png" alt="Button to view code on Github" />
+                        <img src="/buttons/View-Code-Button.png" alt="Button to view code on Github" />
                     </span>
                 </a>
             </div>
@@ -35,7 +35,7 @@ export const Buttons = ({ homepage, url, sectionId }) => {
                     rel="noreferrer noopener"
                 >
                     <span role="button" className="read-more button">
-                        <img src="../../public/buttons/Read-On-Medium.png" alt="Button to view whole article on Medium" />
+                        <img src="/buttons/Read-On-Medium.png" alt="Button to view whole article on Medium" />
                     </span>
                 </a>
             </div>
