@@ -391,8 +391,12 @@
 
 
 /* Skills.css */
-/* Skills.css */
+.skils-background{
+  background: #FFECEA;
+}
+
 .skills-container {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -402,12 +406,23 @@
   max-width: 70%;
 }
 
+
+.skills-title {
+  color: #FF4575;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .skills-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 98px;
+  gap: 6rem;
+  margin-bottom: 8rem;
 }
 
 .skills-card {
@@ -424,7 +439,7 @@
 }
 
 .skills-card:hover {
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
 }
 
 .skills-img {
@@ -449,6 +464,128 @@
   color: #666;
   padding: 20px;
 }
+
+.card-button {
+
+  display: flex;
+  
+  align-items: center;
+  gap: 7px;
+  border-radius: 40px;
+  background: #FFF;
+  width: 30%;
+  margin-left: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
+.dates {
+  background-color: #000;
+  color: white;
+  width: 25%;
+  margin-left: 1rem;
+}
+
+.skills-myname {
+  width: 90%;
+  margin-left: 1rem;
+}
+
+.mywords_container {
+  width: 100%;
+  background: #0B24F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px; /* Adjust the gap as needed */
+  padding: 64px; /* Adjust the padding as needed */
+  text-align: center; /* Center align the text content */
+}
+
+.mywords_container_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: flex-start; /* Align items to the top within each column */
+  width: 100%;
+  margin-top: 2rem; /* Adjust the margin as needed */
+  margin-bottom: 2rem; /* Adjust the margin as needed */
+}
+
+.mywords_container_box > div {
+  color: white;
+  flex: 1; /* Allow each column to take equal space */
+  padding: 16px; /* Adjust the padding as needed */
+  background-color: #0B24F5; /* Background color for each card */
+  border-radius: 8px; /* Add some border radius for a card-like effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: transform 0.2s; /* Add a hover effect */
+  margin: 4rem;
+}
+
+.mywords_container_box > div:hover {
+  transform: scale(1.02); /* Scale up the card on hover */
+}
+
+.mywords_myname {
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem; /* Adjust the font size as needed */
+  font-weight: 700;
+  margin-bottom: 16px; /* Add some margin at the bottom of the title */
+}
+
+.mywords_desc {
+  background-color: #FF4575;
+}
+
+.mywords_desc_2 {
+  background-color: purple;
+}
+
+.mywords_desc_3 {
+  background-color: green;
+}
+
+.mywords_desc_4 {
+  background-color: lightblue;
+}
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  background: rgb(161, 61, 175);
+  color: white;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.marquee h2 {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.contact_myname {
+  color: #0B24F5;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 
 
 
