@@ -15,24 +15,27 @@ const Mywords = () => {
     return (
         <div className="mywords">
             <h1>My Words</h1>
-            {articles.map((articles, index) => (
-                <div key={index} className="mywords-child">
-                    <div className="mywords-details">
-                        <img className="articlesimg" src={articles.image} alt={articles.name} />
-                        <div className="text-details">
+            <div className="mywords-container">
+                {articles.map((articles, index) => (
+                    <div key={index} className="mywords-child">
+                        <div className="mywords-details">
+                            <img className="articlesimg" src={articles.image} alt={articles.name} />
+                            <div className="date">{articles.date}</div>
+
                             <h2>{articles.name}</h2>
                             <p>{articles.description}</p>
-                            <div className="date">{articles.date}</div>
-                            <div className="mywords-action">
+                            <div className="mywords-actions">
                                 <a href={articles.github} target="_blank" rel="noopener noreferrer">
                                     <ReadArticleBtn />
                                 </a>
 
                             </div>
+
                         </div>
                     </div>
-                </div>
-            ))}
+
+                ))}
+            </div>
         </div>
     );
 };

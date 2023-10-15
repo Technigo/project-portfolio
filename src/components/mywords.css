@@ -1,26 +1,39 @@
 .mywords {
     background-color: #FFECEA;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 
-.mywords-child {
+
+.mywords-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* Center articles horizontally */
     align-items: center;
-    flex-basis: calc(50% - 20px);
-    /* 50% width with some spacing */
-    margin-bottom: 20px;
+    /* Center articles vertically */
 }
+
+.mywords-child {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+    /* Reduce the margin to make them more compact */
+}
+
+.mywords-details {
+    width: 400px;
+    /* Adjust the width as needed */
+}
+
+
 
 .mywords h1 {
     color: #FF4575;
     font-family: Montserrat;
     font-size: 60px;
     text-align: left;
-    padding-top: 40px;
     margin-left: 100px;
+    margin-bottom: 80px;
 }
 
 
@@ -36,30 +49,28 @@
     font-family: 'Montserrat', sans-serif;
     color: black;
     font-weight: 400;
+    text-align: left;
+}
+
+.mywords p {
+    text-align: left;
 }
 
 
 .date {
+    display: inline-block;
     background-color: black;
     padding: 4px 8px;
     margin: 2px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    text-align: left;
+
 }
 
-.mywords-details {
-    display: flex;
-    align-items: flex-start;
-    /* Align items at the top */
-    margin-bottom: 20px;
-}
-
-.text-details {
-    flex: 1;
-    width: 500px;
-}
 
 .mywords-actions {
+    display: inline-block;
     margin-top: 8px;
 }
