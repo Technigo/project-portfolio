@@ -21,7 +21,7 @@ export const ContactInfo = () => {
         <div className="contact-links">
           <Button
             className={`linkedin-button`}
-            link={`www.linkedin.com/in/anna-robertsson-829967272`}
+            link={`https://www.linkedin.com/in/anna-robertsson-829967272/`}
             icon={`/assets/GreyLinkedIn.svg.svg`}
             iconAlt={`Clickable icon of the LinkedIn logo`}
           />
