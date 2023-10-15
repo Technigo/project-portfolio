@@ -28,7 +28,7 @@ export const HeaderSection = () => {
                     innovative solution and exceptional coding abilities.
                     She creates user-friendly applications and solves
                     complex issues with ease. Her drive for excellence makes 
-                    her a valuable asset to any project and a standout in the technology fiel"
+                    her a valuable asset to any project and a standout in the technology field."
                 />
             </div>
             <div className="arrow">
