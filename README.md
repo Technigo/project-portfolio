@@ -12,7 +12,7 @@
 
 ### Hi, I'm Laura! 👋
 
-Welcome to my portfolio! I am Laura, a student who has completed Sprint 2 of Technigos Web Dev Bootcamp and is now taking my skills to the next level. This is a living project, constantly changing as it fits. In creating this portfolio, I got to further excercise the use of React hooks, components and props in React, as well as deep-diving into CSS, accessibility and following and implementing a Figma design to create a dynamic and interactive website. 
+Welcome to my portfolio! I am Laura, a student who has completed Sprint 2 of Technigos Web Dev Bootcamp and is now taking my skills to the next level. This is a living project, constantly changing as it fits. In creating this portfolio, I got to further exercise the use of React hooks, components and props in React, as well as deep-diving into CSS, accessibility and following and implementing a Figma design to create a dynamic and interactive website. 
 
 By breaking down the project into reusable components and efficiently passing data with props, I've ensured a well-structured and organized codebase. Utilizing React hooks has allowed me to manage reactive data and create an engaging user experience.
 
