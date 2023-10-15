@@ -1,5 +1,14 @@
 .project-card {
   display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  height: 200px;
+  align-self: stretch;
+  border-bottom: 10px solid #0b24f5;
+
+  border-left: 10px solid #0b24f5;
 }
 
 .project-title {
@@ -87,6 +96,14 @@
 @media (min-width: 376px) and (max-width: 744px) {
   .project-card {
     display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .project-image {
+    width: 200px;
+    height: 280px;
+    flex-shrink: 0;
   }
 
   .project-data {
@@ -182,6 +199,14 @@
 @media (min-width: 745px) and (max-width: 1280px) {
   .project-card {
     display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .project-image {
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
   }
 
   .project-data {
@@ -212,6 +237,9 @@
 @media screen and (min-width: 1281px) {
   .project-card {
     display: flex;
+    flex-direction: row;
+    max-height: 280px;
+    gap: 40px;
   }
 
   .project-data {
@@ -236,5 +264,10 @@
     align-items: flex-start;
     gap: 32px;
     width: 100%;
+  }
+
+  .project-image {
+    height: 280px;
+    width: 280px;
   }
 }

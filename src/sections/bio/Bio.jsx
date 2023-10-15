@@ -21,8 +21,8 @@ export const Bio = () => {
           beatae cum praesentium at. Expedita officiis ullam asperiores deleniti
           numquam tempora perferendis a?
         </p>
-        <img className="arrow-down" src={arrow} alt="arrow-pointing-down" />
       </div>
+      <img className="arrow-down" src={arrow} alt="arrow-pointing-down" />
     </div>
   );
 };

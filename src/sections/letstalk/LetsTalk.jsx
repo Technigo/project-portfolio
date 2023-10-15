@@ -17,9 +17,9 @@ export const LetsTalk = () => {
         <div className="contact-info">
           <p className="contact-name">Andrej Kavržić</p>
           <a href="tel:+46737332619" className="phone-number">
-            +46(0)737332619
+            +46(0) 737 33 26 19
           </a>
-          <a href="mailto:andrej.Kavržić@gmail.com">andrej.Kavržić@gmail.com</a>
+          <a href="mailto:andrej.kavrzic@gmail.com">andrej.kavrzic@gmail.com</a>
         </div>
         <div className="social-bar">
           <button className="gitIconBtn" href="" rel="noreferrer">

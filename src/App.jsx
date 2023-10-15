@@ -30,7 +30,7 @@ const App = () => {
   };
   useEffect(() => {
     apiCall();
-    console.log(repoList);
+    // console.log(repoList);
   }, []);
 
   return (
