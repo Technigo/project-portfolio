@@ -11,16 +11,21 @@
     margin: auto;
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     overflow: hidden;
     grid-template-areas:
-        "SectionHeader SectionHeader SectionHeader"
-        "PalaSurvey  PalaSurvey PalaSurvey"
-        "HappyThoughts  HappyThoughts HappyThoughts"
-        "WeatherApp WeatherApp WeatherApp"
-        "GuessSong GuessSong GuessSong "
-        "MusicRelease MusicRelease MusicRelease"
+        "SectionHeader SectionHeader"
+        "PalaSurvey  PalaSurvey"
+        "PalaSurveyGit PalaSurveyLive"
+        "HappyThoughts  HappyThoughts"
+        "HappyThoughtsGit HappyThoughtsLive"
+        "WeatherApp WeatherApp "
+        "WeatherAppGit WeatherAppLive"
+        "GuessSong GuessSong"
+        "GuessSongGit GuessSongLive"
+        "MusicRelease MusicRelease"
+        "MusicReleaseGit MusicReleaseLive"
 }
 
 h1.projectsHeader {
@@ -29,9 +34,7 @@ h1.projectsHeader {
 
 }
 
-.buttonWrapper {
-    grid-area: NetlifyAndGit;
-}
+/*  PROJECT HEADERS */
 
 .HappyThoughts {
     grid-area: HappyThoughts;
@@ -56,4 +59,49 @@ h1.projectsHeader {
 .PalaSurvey {
     grid-area: PalaSurvey;
     font-size: 50px;
+}
+
+/* GIT AND NETLIFY(wiev it live) BUTTONS */
+
+/* Git */
+.HappyThoughtsGit {
+    grid-area: HappyThoughtsGit;
+}
+
+.WeatherAppGit {
+    grid-area: WeatherAppGit;
+}
+
+.GuessSongGit {
+    grid-area: GuessSongGit;
+}
+
+.MusicReleaseGit {
+    grid-area: MusicReleaseGit;
+}
+
+.PalaSurveyGit {
+    grid-area: PalaSurveyGit;
+}
+
+/* Netlify / Wiev it live */
+
+.HappyThoughtsLive {
+    grid-area: HappyThoughtsLive;
+}
+
+.WeatherAppLive {
+    grid-area: WeatherAppLive;
+}
+
+.GuessSongLive {
+    grid-area: GuessSongLive;
+}
+
+.MusicReleaseLive {
+    grid-area: MusicReleaseLive;
+}
+
+.PalaSurveyLive {
+    grid-area: PalaSurveyLive;
 }

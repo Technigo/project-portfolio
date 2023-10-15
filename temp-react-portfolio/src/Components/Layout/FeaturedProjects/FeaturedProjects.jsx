@@ -46,30 +46,30 @@ export const FeaturedProjects = () => {
 
                 {myGitProjects.map((project) => {
                     const foundProject = featuredProjects.find(itemFromGit => itemFromGit.repoName === project.name);
-                    //.find() will return the first element in the array that satisfies the provided testing function, or undefined if none found. If I for example write: repoName: 'weather-app' instead of repoName: repoName: 'EmE-weather-app', and will be logged:
+                    //.find() will return the first element in the array that satisfies the provided testing function, or undefined if none found. 
+                    //If I for example write: repoName: 'weather-app' instead of repoName: repoName: 'EmE-weather-app', and will be logged with the console log. I think this will be handy when changing the portofolio.
                     if (!foundProject) {
                         console.log('Project not found for:', project.name);
-                        return null; // Dette vil hindre at en tom div blir opprettet for prosjekter som ikke ble funnet
+                        //return null;
                     }
                     return (
-                        <div key={project.id} className={foundProject.className}>
-
-                            <p>{foundProject.displayName}</p>
-                            <div className="buttonWrapper">
-                                <a href={foundProject.netlifyUrl} target="_blank" rel="noopener noreferrer">
-                                    <Photos selectedMode="Live" />
-                                </a>
-                                <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-                                    <Photos selectedMode="ViewCode" />
-                                </a>
-                                {/* Display name of project, button to github and to git*/}
+                        <>
+                            <div key={project.id} className={foundProject.className} style={{ gridArea: foundProject.gridAreaName }}>
+                                <p>{foundProject.displayName}</p>
                             </div>
-                        </div>
+
+                            <a className={style[`${foundProject.className}Git`]} href={project.html_url} target="_blank" rel="noopener noreferrer">
+                                <Photos selectedMode="ViewCode" />
+                            </a>
+                            {/*`{style[...]}` fetches a CSS class from the style module and`${foundProject.className}` "fetches" the project's name( like 'HappyThoughts'.) and adding 'Live' I get a specific style class:  'HappyThoughtsLive'*/}
+                            <a className={style[`${foundProject.className}Live`]} href={foundProject.netlifyUrl} target="_blank" rel="noopener noreferrer">
+                                <Photos selectedMode="Live" />
+                            </a>
+                        </>
+                        //Photos component is where the hover effect is. No use of button (componant) here because netlifyURL from the API is linked to each project, and the photo of the "button" takes you to the correct link as they are "connected"
                     );
                 })}
             </div>
-        </div>
+        </div >
     )
-
-
 }
