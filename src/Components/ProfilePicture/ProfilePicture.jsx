@@ -5,7 +5,7 @@ export const ProfilePicture = () => {
   return (
     <div className="profile-picture">
       <img
-        src="src/assets/ProfilePicture.jpg"
+        src="public/ProfilePicture.jpg"
         alt="Profile image"
         className="profile-image"
       />

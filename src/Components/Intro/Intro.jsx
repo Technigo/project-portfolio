@@ -30,7 +30,7 @@ export const Intro = () => {
         </p>
       </div>
       <div className="arrow">
-        <img src="/src/assets/arrow_up.svg" />
+        <img src="public/arrow_down.svg" />
       </div>
     </section>
   );
