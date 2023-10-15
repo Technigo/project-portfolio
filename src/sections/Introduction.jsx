@@ -10,11 +10,10 @@ import "./Arrow.css"
 
 export const Introduction = () => {
 
-    const BodyContent = `Vera is an exceptional developer known for her innovative solutions and 
-    exceptional coding abilities. She creates user-friendly applications and 
-    solves complex issues with ease. Her drive for excellence makes her a 
-    valuable asset to any project and a standout in the technology field.`
-
+    const BodyContent = `Vera is a dedicated developer with a background in graphic design. 
+    She's well-regarded for her innovative problem-solving and coding skills. 
+    Vera excels at creating user-friendly applications and adeptly handling complex challenges. 
+    Her commitment to excellence makes her a valuable addition to any project and a respected figure in the technology field.`
 
     return (
         <section className="introduction-section">
