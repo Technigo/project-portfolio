@@ -24,11 +24,7 @@ export const HeaderSection = () => {
                 <HeaderImg
                     src={CvPic}
                     alt="Picture of Isa Robertini"
-                    pText="Isa is an exceptional developer known for her 
-                    innovative solution and exceptional coding abilities.
-                    She creates user-friendly applications and solves
-                    complex issues with ease. Her drive for excellence makes 
-                    her a valuable asset to any project and a standout in the technology field."
+                    pText="Isa Robertini, an outstanding developer, is renowned for her innovative problem-solving and remarkable coding skills. She adeptly crafts user-friendly applications and effortlessly tackles intricate challenges. Her unwavering commitment to excellence renders her an indispensable contributor to any project and a standout figure in the technology domain."
                 />
             </div>
             <div className="arrow">
