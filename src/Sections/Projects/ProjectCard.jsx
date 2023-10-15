@@ -54,6 +54,8 @@ export const ProjectCard = ({ repositories }) => {
                                     iconURL={isDemoButtonHovered[index] ? '/icons/globe-white.svg' : '/icons/globe.svg'}
                                     btnText={"Live demo"}
                                     /* The methods onMouseEnter and onMouseLeave states to true and false depending on the pointer*/
+                                    onTouchStart={() => setIsDemoButtonHovered(index, true)} // onTouchStart for mobile devices where there is no hover
+                                    onTouchEnd={() => setIsDemoButtonHovered(index, false)}   // onTouchEnd for mobile devices where there is no hover
                                     onMouseEnter={() => setIsDemoButtonHovered({ ...isDemoButtonHovered, [index]: true })}
                                     onMouseLeave={() => setIsDemoButtonHovered({ ...isDemoButtonHovered, [index]: false })}
                                 />
@@ -63,6 +65,8 @@ export const ProjectCard = ({ repositories }) => {
                                     imgAlt={"Github icon"}
                                     iconURL={isGithubButtonHovered[index] ? '/icons/github-white.svg' : '/icons/github-darkgray.svg'}
                                     btnText={"View the code"}
+                                    onTouchStart={() => setIsGithubButtonHovered(index, true)} // Touch start event
+                                    onTouchEnd={() => setIsGithubButtonHovered(index, false)}   // Touch end event
                                     onMouseEnter={() => setIsGithubButtonHovered({ ...isGithubButtonHovered, [index]: true })}
                                     onMouseLeave={() => setIsGithubButtonHovered({ ...isGithubButtonHovered, [index]: false })}
                                 />
