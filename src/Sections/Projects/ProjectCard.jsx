@@ -9,9 +9,6 @@ import { NormalText } from "../../ReusableComponents/Typography/NormalText";
 
 // Component for each individual project-card. Takes in data as a prop from its parent the FeaturedProjects.jsx where the fetch from Github is made.
 export const ProjectCard = ({ repositories }) => {
-    // State that checks if buttons are in hover-state or not. Default is false. 
-    // const [isDemoButtonHovered, setIsDemoButtonHovered] = useState(false);
-    // const [isGithubButtonHovered, setIsGithubButtonHovered] = useState(false);
 
     // Declaring a variable that uses the images to find the relevant repositories. If the name in the image-json is in the list of repos in the Fetch it will be saved in the filteredRepos. 
     const filteredRepos = repositories.filter((repo) => {
