@@ -29,14 +29,14 @@ export const MyWords = () => {
           </p>
           <Button
             className={`read-article`}
-            link={"https://in.pinterest.com/pin/612630355540252288/"}
+            link={
+              "https://in.pinterest.com/pin/data-science--942800503220719912/"
+            }
             icon={`src/assets/btn-article-default.svg`}
             iconAlt={`Article logo`}
             buttonName={`Read article`}
           />
         </div>
-      </article>
-      <article className="article-wrapper">
         <div className="single-article">
           <img
             src="src/assets/article-image2.jpg"
@@ -61,8 +61,7 @@ export const MyWords = () => {
             buttonName={`Read article`}
           />
         </div>
-      </article>
-      <article className="article-wrapper">
+
         <div className="single-article">
           <img
             src="src/assets/article-image3.jpg"
@@ -81,14 +80,15 @@ export const MyWords = () => {
           </p>
           <Button
             className={`read-article`}
-            link={"https://in.pinterest.com/pin/612630355540252288/"}
+            link={
+              "https://in.pinterest.com/pin/data-science--942800503220719912/"
+            }
             icon={`src/assets/btn-article-default.svg`}
             iconAlt={`Article logo`}
             buttonName={`Read article`}
           />
         </div>
-      </article>
-      <article className="article-wrapper">
+
         <div className="single-article">
           <img
             src="src/assets/article-image4.jpg"
