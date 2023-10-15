@@ -9,7 +9,7 @@ const introText = "Laura is a frontend developer with a background in web design
 export const Introduction = () => {
     return (
         <header tabIndex="0">
-            <ImageComponent sectionClassName={"profile-image"} elementClassName={"circle-img"} link={"/profile-image.jpg"} ImageAltText={"Laura"} />
+            <ImageComponent sectionClassName={"profile-image"} elementClassName={"circle-img"} link={"/profile-image-2.webp"} ImageAltText={"Laura"} />
             <section className="headings">
                 <SubHeading text={"Hi, I'm Laura Lyckholm"} />
                 <h1 className="introduction-h2">Frontend Developer & Web Designer</h1>

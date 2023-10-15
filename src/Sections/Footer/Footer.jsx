@@ -8,7 +8,7 @@ export const Footer = () => {
     return (
         <footer>
             <MainHeading text={"Let's talk"} />
-            <ImageComponent sectionClassName={"profile-image"} elementClassName={"circle-img"} link={"/profile-image.jpg"} ImageAltText={"Profile Image of Laura"} />
+            <ImageComponent sectionClassName={"profile-image"} elementClassName={"circle-img"} link={"/profile-image-2.webp"} ImageAltText={"Profile Image of Laura"} />
             <div className="contact-info">
                 <SubHeading text={"Laura Lyckholm"} />
                 {/* Aria-label to clarify that there is a phonenumber here */}
