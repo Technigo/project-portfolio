@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReadArticleBtn from "./ReadArticleBtn";
-import '/.mywords.css';
+import articlesData from "../data/articles.json";
+import './mywords.css';
 
 const Mywords = () => {
+
+    const [articles, setArticles] = useState([]);
+
+    useEffect(() => {
+        // Set the projects data from the imported JSON
+        setArticles(articlesData.articles);
+    }, []);
+
     return (
         <div className="mywords">
             <h1>My Words</h1>
-            <ReadArticleBtn />
-        </div>
+            {articles.map((articles, index) => (
+                <div key={index} className="mywords-child">
+                    <div className="mywords-details">
+                        <img className="articlesimg" src={articles.image} alt={articles.name} />
+                        <div className="text-details">
+                            <h2>{articles.name}</h2>
+                            <p>{articles.description}</p>
+                            <div className="date">{articles.date}</div>
+                            <div className="mywords-action">
+                                <a href={articles.github} target="_blank" rel="noopener noreferrer">
+                                    <ReadArticleBtn />
+                                </a>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
     );
 };
 
