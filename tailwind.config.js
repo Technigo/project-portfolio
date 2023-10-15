@@ -17,7 +17,7 @@ export default {
                 "technigo-light-yellow": "#FFDE30"
             },
             maxWidth: {
-                "default": "700px"
+                "default": "800px"
             },
             borderWidth: {
                 "photo": "20px"

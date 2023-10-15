@@ -9,7 +9,7 @@ const Articles = () => {
             <div className={styles.squiggle} />
             <Container className="bg-technigo-salmon">
                 <h2 className="text-center md:text-left text-6xl font-bold mb-16 text-technigo-pink">{data.title}</h2>
-                <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
+                <div className="grid gap-24 grid-cols-1 md:grid-cols-2">
                     {data.articles.map((article, index) => (
                         <Article
                             key={index}

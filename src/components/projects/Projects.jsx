@@ -10,7 +10,7 @@ const Projects = () => {
         <Container className="bg-white">
             <h2 className="text-center md:text-left text-6xl font-bold mb-16 text-technigo-blue">{data.title}</h2>
             {data.projects.map((project, index) => (
-                <div key={index} className="flex gap-8 flex-col md:flex-row mb-8 md:items-center">
+                <div key={index} className="flex gap-8 flex-col md:flex-row mb-16 md:items-center">
                     <Photo
                         src={project.imageUrl}
                         alt={project.imageAlt}
