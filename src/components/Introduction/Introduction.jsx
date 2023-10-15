@@ -1,7 +1,7 @@
 import { MainHeading } from "../Headings/MainHeading/MainHeading.jsx";
 import { SubHeading } from "../Headings/SubHeading/SubHeading.jsx";
 import { ProfilePhoto } from "../ProfilePhoto/ProfilePhoto.jsx";
-import arrowIcon from "../../../public/assets/ArrowUp.svg";
+import arrowIcon from "/assets/ArrowUp.svg";
 import "./Introduction.css";
 
 export const Introduction = () => {
