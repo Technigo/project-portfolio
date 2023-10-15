@@ -1,5 +1,3 @@
-// ViewGithubBtn.jsx
-
 import React, { useState } from 'react';
 import './ViewGithubBtn.css';
 
@@ -16,7 +14,7 @@ const ViewGithubBtn = () => {
 
     return (
         <div
-            className={`github-button ${isHovered ? 'hovered' : ''}`}
+            className={`viewgithub-button ${isHovered ? 'hovered' : ''}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
