@@ -253,9 +253,11 @@ export const Featuredproj = () => {
 
         {combinedData.map((project) => (
           <div key={project.name} className="repo-item">
-            <h4>{project.name}</h4>
+            <img src={project.image} alt={project.name} className="project-image" />
+            <div className="repo-item-detail">
+            <h4 className="repo-item-name">{project.name}</h4>
             {project.description && (
-              <p>{project.description}</p>
+              <p className="repo-item-desc">{project.description}</p>
             )}
             {project.language && (
               <p>Language: {project.language}</p>
@@ -263,17 +265,28 @@ export const Featuredproj = () => {
             {project.stargazers_count && (
               <p>Stars: {project.stargazers_count}</p>
             )}
-            <img src={project.image} alt={project.name} />
+            {/* <img src={project.image} alt={project.name} className="project-image" /> */}
             {Array.isArray(project.tags) && project.tags.length > 0 && (
-              <p>Tags: {project.tags.join(', ')}</p>
+              <p className ="tag-name">Tags: {project.tags.join(', ')}</p>
             )}
+            <div className="project-links">
             {project.netlify && (
-              <p>Netlify: <a href={project.netlify}>{project.netlify}</a></p>
+                <p>
+                <button onClick={() => window.open(project.netlify, "_blank")}>Deploy</button>
+              </p>
+            //   <p><button onClick={() => handleButtonClick(project.netlify)}>Submit</button></p>
+            //   <button onClick={project.netlify} id="submitPostBtn" aria-label="button for submitting your post"> 
             )}
             {project.github && (
-              <p>GitHub: <a href={project.github}>{project.github}</a></p>
+            //   <p>GitHub: <a href={project.github}>{project.github}</a></p>
+            <p>
+                <button onClick={() => window.open(project.github, "_blank")}>Github</button>
+              </p>
+        
             )}
             {/* You can add more details from the project objects */}
+            </div>
+            </div>
           </div>
         ))}
       </div>
