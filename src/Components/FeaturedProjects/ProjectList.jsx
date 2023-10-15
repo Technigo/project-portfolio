@@ -2,12 +2,11 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { ProjectCard } from "./ProjectCard";
+import { Heading1 } from "../Heading1/Heading1";
 
 import "./ProjectList.css";
 
 export const ProjectList = () => {
-  // const projects = [{ id: 698935612 }];
-
   const [projectList, setProjectList] = useState([]);
 
   useEffect(() => {
@@ -22,11 +21,14 @@ export const ProjectList = () => {
 
   return (
     <section className="featured-projects-wrapper">
-      {projectList
-        .filter((project) => project.description)
-        .map((project) => (
-          <ProjectCard project={project} />
-        ))}
+      <Heading1 className={"featured-heading"} text={"Featured Projects"} />
+      <div className="individual-project-info">
+        {projectList
+          .filter((project) => project.description)
+          .map((project) => (
+            <ProjectCard project={project} key={project.id} />
+          ))}
+      </div>
     </section>
   );
 };

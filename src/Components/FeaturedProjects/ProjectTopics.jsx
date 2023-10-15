@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./ProjectTopics.css";
+
 export const ProjectTopics = ({ topics }) => {
   if (!topics) return;
   return (
