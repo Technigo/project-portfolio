@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './LinkedBtn.css';
+import './GithubBtn.css';
 
-const LinkedBtn = () => {
+const GithubBtn = () => {
     const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -14,17 +14,17 @@ const LinkedBtn = () => {
 
     return (
         <div
-            className={`linked-button ${isHovered ? 'hovered' : ''}`}
+            className={`github-button ${isHovered ? 'hovered' : ''}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
             <img
-                src={isHovered ? 'linkedin2.png' : 'linkedin1.png'}
-                alt="LinkedIn Icon"
+                src={isHovered ? 'github2.png' : 'github1.png'}
+                alt="Github Icon"
             />
 
         </div>
     );
 };
 
-export default LinkedBtn;
+export default GithubBtn;
