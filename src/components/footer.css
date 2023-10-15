@@ -7,22 +7,26 @@
 .container {
     text-align: center;
     margin: 0 auto;
+    width: 100%;
 }
 
+/* Specify the width of the rolling banner container */
+.rolling-banner {
+    width: 100%;
+    /* Adjust to your desired width, e.g., 100% or a fixed value like 1200px */
+    overflow: hidden;
+}
 
 /* Keyframes for the rolling animation */
 @keyframes roll {
     0% {
         transform: translateX(100%);
-        /* Start off the screen to the right */
     }
 
     100% {
         transform: translateX(-100%);
-        /* Move to the left edge of the screen */
     }
 }
-
 
 /* Apply the animation to the <h3> element */
 .footer-banner h3 {
@@ -32,4 +36,5 @@
     white-space: nowrap;
     overflow: hidden;
     animation: roll 20s linear infinite;
+    /* Adjust duration for the speed of the roll */
 }
