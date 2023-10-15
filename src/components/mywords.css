@@ -1,13 +1,28 @@
 .mywords {
+    position: relative;
     background-color: #FFECEA;
     padding: 70px 0;
 }
 
-.path>img {
+.mywords::before {
+    content: "";
+    background: url('path.png') repeat-x;
+    /* Replace 'path.png' with the actual path to your image */
+    height: 10px;
+    /* Adjust the height as needed to control the line thickness */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1;
-    position: relative;
-    top: -11px;
+    /* Ensure the line is above the background color but behind content */
+    display: block;
+    /* Add this line to prevent default inline behavior */
+    vertical-align: bottom;
+    /* Add this line to remove the spacing */
 }
+
+
 
 .mywords-container {
     display: flex;
