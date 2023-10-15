@@ -7,6 +7,7 @@ import { ContactInfoButton } from "../components/ContactInfoComponent/ContactInf
 import { Headline } from "../components/Headline";
 import { ImagePortrait } from "../components/ImagePortrait";
 import { MediumHeadline } from "../components/MediumHeadline";
+import { FooterComponent } from "./FooterComponent";
 
 
 export const ContactInfoPage = () => {
@@ -18,19 +19,27 @@ export const ContactInfoPage = () => {
     ];
 
     return (
-        <div className="contact-info-wrapper">
-            <Headline className="big-heading blue-h1" headerText={headerText} />
-            <ImagePortrait />
-            <div className="contact-information">
-                {contactInformation.map((info) => (
-                    <MediumHeadline
-                        key={info.id}
-                        mediumSizeHeader={info.text}
-                        useSpan={false}
-                    />
-                ))}
+        <section className="contact-info-page">
+            <div className="contact-info-wrapper">
+                <Headline
+                    className="big-heading blue-h1"
+                    headerText={headerText}
+                />
+                <ImagePortrait />
+                <div className="contact-information">
+                    {contactInformation.map((info) => (
+                        <MediumHeadline
+                            key={info.id}
+                            mediumSizeHeader={info.text}
+                            useSpan={false}
+                        />
+                    ))}
+                </div>
+                <div className="contact-info-button-wrapper">
+                    <ContactInfoButton />
+                </div>
             </div>
-            <ContactInfoButton />
-        </div>
+            <FooterComponent />
+        </section>
     );
 };

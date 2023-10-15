@@ -2,7 +2,6 @@
 
 import { ContactInfoPage } from './section/ContactInfoPage'
 import { FeatureProjectsPage } from './section/FeatureProjectsPage'
-import { Footer } from './section/Footer'
 import { FrontPage } from './section/FrontPage'
 import { MyWordsPage } from './section/MyWordsPage'
 import { SkillSetPage } from './section/SkillSetPage'
@@ -19,7 +18,6 @@ function App() {
       <MyWordsPage />
       <SkillSetPage />
       <ContactInfoPage />
-      <Footer />
     </>
   )
 }
