@@ -1,5 +1,5 @@
-import { MainHeading } from "../Headings/MainHeading";
-import { SubHeading } from "../Headings/SubHeading";
+import { MainHeading } from "../Headings/MainHeading/MainHeading.jsx";
+import { SubHeading } from "../Headings/SubHeading/SubHeading.jsx";
 import "./Skills.css";
 
 export const Skills = () => {
