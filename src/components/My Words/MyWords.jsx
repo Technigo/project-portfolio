@@ -1,5 +1,14 @@
+import { MainHeading } from "../Headings/MainHeading/MainHeading";
+import { ArticleCard } from "./ArticleCard/ArticleCard";
 import "./MyWords.css";
 
 export const MyWords = () => {
-  return <p>Here you will see my words</p>;
+  return (
+    <div className="my-words-container">
+      <div className="my-words-wrapper">
+        <MainHeading className={"my-words-h2"} text={"My words"} />
+        <ArticleCard />
+      </div>
+    </div>
+  );
 };

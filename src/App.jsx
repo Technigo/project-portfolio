@@ -10,8 +10,15 @@ export const App = () => {
     <div className="main-wrapper">
       <Introduction />
       <Tech />
-      <FeaturedProjects />
-      <MyWords />
+      <div className="wavy-line-wrapper">
+        <FeaturedProjects />
+        <img
+          src="src/assets/Wavyline-Divider.svg"
+          className="wavy-line"
+          alt="A wavy line for decoration"
+        />
+        <MyWords />
+      </div>
       <Skills />
       <ContactInfo />
     </div>
