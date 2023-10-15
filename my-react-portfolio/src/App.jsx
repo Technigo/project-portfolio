@@ -4,24 +4,24 @@ import { Projects } from './Sections/Projects/Projects';
 import { Tech } from "./Sections/Tech/Tech";
 import { Skills } from "./Sections/Skills/Skills";
 import { Footer } from "./Sections/Footer/Footer";
-import { MyWords } from "./Sections/MyWordSection/MyWords";
+// import { MyWords } from "./Sections/MyWordSection/MyWords";
 
 // Import the JSON data directly
 import projectData from './Sections/Projects/projects.json';
-import mywordsData from './Sections/MyWordSection/mywords.json';
+// import mywordsData from './Sections/MyWordSection/mywords.json';
 
 
 export const App = () => {
 
   const projects = projectData.projects;
-  const mywords = mywordsData.mywords;
+  // const mywords = mywordsData.mywords;
 
   return (
     <main>
       <Intro />
       <Tech />
       <Projects projects={projects} />
-      <MyWords mywords={mywords} />
+      {/* <MyWords mywords={mywords} /> */}
       <Skills />
       <Footer />
     </main>
@@ -29,6 +29,8 @@ export const App = () => {
 };
 
 export default App;
+
+// MyWords is commented out because I do not have any time to do that section for now.
 
 
 

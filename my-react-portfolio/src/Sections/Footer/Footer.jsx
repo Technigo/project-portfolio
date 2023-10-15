@@ -1,21 +1,24 @@
 import "./footer.css";
 import { CircleImage } from "../../ReusableComponents/Images/CircleImage";
 import { MainTitle } from "../../ReusableComponents/Texts/MainTitle";
-import { NormalText } from "../../ReusableComponents/Texts/NormalText";
 
-const footerText = "Evelyn is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field."
+
+
 
 export const Footer = () => {
     return (
         <header>
+            <section className="main-title">
+                <MainTitle text={"Let's Talk!"} />
+            </section>
             <section className="profile-image">
                 <CircleImage />
             </section>
-            <section className="main-title">
-                <MainTitle text={"Fronend Dev"} />
-            </section>
+
             <section className="normal-text">
-                <NormalText text={footerText} />
+                <h2>Evelyn Del Carmen</h2>
+                <h2>+46 (0)704420524</h2>
+                <h2>hey@evelyndelcarmen.com</h2>
             </section>
         </header>
     );

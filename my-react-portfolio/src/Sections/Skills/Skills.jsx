@@ -1,14 +1,18 @@
-import "./skills.css";
 import { MainTitle } from "../../ReusableComponents/Texts/MainTitle";
-import { LargeText } from "../../ReusableComponents/Texts/LargeText";
+import { SkillsList } from "./SkillsList";
+import "./skills.css";
 
-const skillsText = "Photoshop"
+
 
 export const Skills = () => {
     return (
         <section className="skills">
             <MainTitle className={"heading"} text={"Skills"} />
-            <LargeText text={skillsText} />
+
+            <div className="skill-section">
+                <SkillsList />
+            </div>
+
 
         </section>
     )

@@ -1,14 +1,13 @@
-
 import { MainTitle } from "../../ReusableComponents/Texts/MainTitle";
 import { ProjectCard } from "../Projects/ProjectCard";
+import "./projects.css"
 
 export const Projects = ({ projects }) => {
     return (
         <section>
             <div className="card-header-wrapper">
-                <MainTitle h1Text="Featured Projects" />
+                <MainTitle className={"featured-projects-heading"} text={"Featured Projects"} />
             </div>
-
             {projects.map((project, index) => (
                 <div key={index}>
                     <ProjectCard project={project} />
