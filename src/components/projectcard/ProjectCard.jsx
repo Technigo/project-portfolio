@@ -11,11 +11,11 @@ export const ProjectCard = ({
   deployedLink,
   tags,
 }) => {
-  console.log(title);
-  console.log(description);
-  console.log(gitLink);
-  console.log(deployedLink);
-  console.log(tags);
+  // console.log(title);
+  // console.log(description);
+  // console.log(gitLink);
+  // console.log(deployedLink);
+  // console.log(tags);
   return (
     <div className="project-card">
       <div className="image-div">Image</div>

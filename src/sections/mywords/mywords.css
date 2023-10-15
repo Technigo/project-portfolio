@@ -1,40 +1,63 @@
-.divider {
-  background-image: url(../../assets/divider.svg);
-
-  display: flex;
+.my-words-frame {
+  background: #ffecea;
+}
+.my-words-frame > img {
+  z-index: 1;
+  position: relative;
+  top: -9px;
+  width: 100%;
 }
 
-.my-words {
-  /* height: 100vh; */
-  background: #ffecea;
+.my-words-frame > div {
+  z-index: 2;
+  position: relative;
 }
 
 .my-words-container {
-  padding: 16px;
+  padding: 128px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-words {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
 }
 
 .my-words-title {
   color: #ff4575;
-  text-align: center;
-  font-family: Montserrat;
+  /* text-align: center; */
+  font-family: "Montserrat";
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.test-relative {
-  /* position: relative; */
-  background: #ffecea;
-}
+@media (min-width: 376px) and (max-width: 743px) {
+  .my-words-container {
+    padding: 128px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.test-relative > img {
-  z-index: 1;
-  position: relative;
-  top: -9px;
-}
-
-.test-relative > div {
-  z-index: 2;
-  position: relative;
+  .my-words {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    width: 100%;
+  }
+  .my-words-title {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 }

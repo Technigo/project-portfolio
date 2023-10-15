@@ -1,13 +1,20 @@
 .skills-container {
   background-color: blue;
-  padding: 130px 100px;
+  padding: 128px 0;
 }
 
 .skills {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   gap: 64px;
+}
+
+.skill-set {
+  gap: 64px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .skills-title {
@@ -36,12 +43,11 @@
 .upcoming-title,
 .more-title {
   display: flex;
-  padding: 2px;
   align-items: flex-start;
   gap: 8px;
   /* background: #eb5577; */
   color: #fff;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -74,9 +80,63 @@ li {
   color: #fff;
 
   text-align: center;
-  font-family: Hind;
+  font-family: "Hind";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (min-width: 376px) and (max-width: 743px) {
+  .skills-container {
+    background-color: blue;
+    padding: 128px 0;
+  }
+
+  .skill-set {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+
+  .skills-title {
+    color: #fff;
+
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .code,
+  .toolbox,
+  .upcoming,
+  .more {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .code-title,
+  .toolbox-title,
+  .upcoming-title,
+  .more-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    /* background: #eb5577; */
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  li {
+    text-align: left;
+  }
 }
