@@ -8,12 +8,14 @@ import { Projects } from './components/Projects/Projects';
 import { Skills } from './components/Skills/Skills';
 import { Tech } from './components/Tech/Tech';
 import { Articles } from './components/Articles/Articles';
+import { Arrow } from './components/Arrow/Arrow';
 
 export const App = () => {
   return (
     <div className="app-container">
       <div className="content-container">
         <Presentation />
+        <Arrow />
         <Tech />
         <Projects />
         <Articles />

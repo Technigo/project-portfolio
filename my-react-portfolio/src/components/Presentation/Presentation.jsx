@@ -2,28 +2,29 @@ import React from 'react';
 import { Headline } from '../Headline/Headline';
 import { Image } from '../Image/Image';
 import avatar from '../../assets/avatar.png';
+import { Arrow } from '../Arrow/Arrow';
 import './Presentation.css';
 
 export const Presentation = () => (
+  <>
     <div className="presentation-container">
+      <div className="avatar-container">
         <Image src={avatar} alt="Manne Johansson Avatar" className="avatar"/>
-        <Headline className="headline" text="Hi, I'm Manne Johansson" level={3} />
-        <Headline className="headline" text="Web Developer" level={1} />
+      </div>
+      
+      <div className="headline-container">
+        <Headline text="Hi, I'm Manne Johansson" level={3} />
+      </div>
+      
+      <div className="subheadline-container">
+        <Headline text="Web Developer" level={1} />
+      </div>
+      
+      <div className="description-container">
         <p className="description">
-            Manne is an exceptional developer known for his innovative solutions and exceptional coding abilities. He creates user-friendly applications and solves complex issues with ease. His drive for excellence makes him a valuable asset to any project and a standout in the technology field.
+          Manne is an exceptional developer known for his innovative solutions and exceptional coding abilities. He creates user-friendly applications and solves complex issues with ease. His drive for excellence makes him a valuable asset to any project and a standout in the technology field.
         </p>
-        <Arrow />
+      </div>
     </div>
-);
-
-const Arrow = () => (
-    <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 68">
-        <path 
-        d="M24 23.5L14.5 33M14.5 33L5 23.5M14.5 33L14.5 3" 
-        stroke="#FF4575" 
-        strokeWidth="6" 
-        strokeLinecap="square" 
-        strokeLinejoin="round"
-        />
-    </svg>
+  </>
 );
