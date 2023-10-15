@@ -30,4 +30,4 @@ Through this project, I, Laura, have learned invaluable lessons in React develop
 
 ## Screenshots
 
-![App Screenshot](/assets/screenshot-of-portfolio.png)
+![App Screenshot]("/assets/screenshot-of-portfolio.png")
