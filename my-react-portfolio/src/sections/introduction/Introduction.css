@@ -3,10 +3,10 @@ header {
 }
 
 .intro-content {
-    display: inline-flex;
+    display: flex;
     padding: 160px 220px 64px 220px;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     gap: 150px;
 }
@@ -14,14 +14,23 @@ header {
 .half-intro-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: self-start;
     gap: 16px;
-
 }
 
 .intro-title {
-    padding: 0;
-    border: 0;
+    margin-top: 150px;
+    margin-left: 200px;
+
+}
+
+.intro-title h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.intro-title h2 {
+    margin-left: -280px;
 }
 
 .intro-flex {
@@ -36,17 +45,25 @@ header {
     text-align: justify;
 }
 
-/* .intro-container>img {
-
-    padding: 0 16px 64px 16px;
+.half-intro-arrow img {
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* Animation to make the arrow move */
-position: relative;
-top: 0;
-/* Animation is animated here */
-animation: arrowMove 1.7s ease-in infinite;
+    animation: downwards 2s linear infinite;
 }
 
-*/
+/* Downwards animation for the arrow*/
+@keyframes downwards {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Start and end position */
+    }
+
+    25%,
+    75% {
+        transform: translateY(-10px);
+        /* Move up 10 pixels */
+
+    }
+}

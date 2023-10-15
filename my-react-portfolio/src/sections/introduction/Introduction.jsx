@@ -25,7 +25,7 @@ export const Introduction = () => {
                     </div>
                 </div>
                 <div className="half-intro-arrow">
-                    <img src={arrow} alt="arrow pointing downwards" />
+                    <img src={arrow} alt="arrow pointing downwards to guide user to scroll down" />
                 </div>
             </div>
         </header>
