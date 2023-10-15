@@ -1,8 +1,3 @@
-<h1 align="center">
-  <a href="">
-    <img src="/happy-thoughts.webp" alt="Project Banner Image">
-  </a>
-</h1>
 
 # Technigo - React Portfolio Project
 
@@ -39,8 +34,10 @@ Open up a terminal inside VS code and lets run the project in a local environmen
 ```
 
 ## Author
-Sakura Tanaka
-Linkedin: https://www.linkedin.com/in/sakura-tanaka-251a36247/
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://sakura-tanaka.netlify.app/)
+[![@Sakura Tanaka](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sakura-tanaka-251a36247/)
+[![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sansan-sakura)
+
 
 ### Hi, I'm Sakura 👋
 
