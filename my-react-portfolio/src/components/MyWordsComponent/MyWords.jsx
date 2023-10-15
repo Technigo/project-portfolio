@@ -19,7 +19,7 @@ export const MyWords = () => {
             text: [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             ],
-            link: "", //change your article link
+            link: "#", //change your article link
         },
         {
             id: "2a",
@@ -29,7 +29,7 @@ export const MyWords = () => {
             text: [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             ],
-            link: "", //change your article link
+            link: "#", //change your article link
         },
         {
             id: "3a",
@@ -39,7 +39,7 @@ export const MyWords = () => {
             text: [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             ],
-            link: "", //change your article link
+            link: "#", //change your article link
         },
         {
             id: "4a",
@@ -49,14 +49,14 @@ export const MyWords = () => {
             text: [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             ],
-            link: "", //change your article link
+            link: "#", //change your article link
         }
     ];
 
     return (
-        <section className="my-words-card-wrapper">
+        <>
             {articleInformation.map((article) => (
-                <div className="my-words-card" key={article.id}>
+                <div className="my-words-card-wrapper" key={article.id}>
                     <MyWordsCard
                         articleImage={article.image}
                         articleDate={article.time}
@@ -67,6 +67,6 @@ export const MyWords = () => {
                 </div>
             ))
             }
-        </section>
+        </>
     )
 }
