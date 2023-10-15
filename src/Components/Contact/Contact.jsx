@@ -19,13 +19,13 @@ export const Contact = () => {
         <div className="social-icons">
           <SocialIcons
             text={"Link to GitHub"}
-            src={"src/assets/btn-sociallinks-github-default.svg"}
+            src={"/btn-sociallinks-github-default.svg"}
             link={"https://github.com/smExlex"}
             className={"link-github"}
           />
           <SocialIcons
             text={"Link to LinkedIn"}
-            src={"src/assets/btn-sociallinks-linkedin-default.svg"}
+            src={"/btn-sociallinks-linkedin-default.svg"}
             link={"https://www.linkedin.com/in/susanne-e-6915a087/"}
             className={"link-linkedin"}
           />
