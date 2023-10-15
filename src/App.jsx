@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Articles } from './components/Articles/Articles';
 import { Contact } from './components/Contact/Contact';
 import { Footer } from './components/Footer/Footer';
 import './App.css';
