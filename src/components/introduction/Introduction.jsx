@@ -1,10 +1,10 @@
-import { ArrowDownIcon } from '@heroicons/react/24/solid';
 import data from "./data.json";
+import { IconArrowDown } from '@tabler/icons-react';
 
 const Introducton = () => {
     return (
-        <div className="py-8">
-            <div className="container mx-auto py-32 px-8">
+        <div className="py-16">
+            <div className="container mx-auto py-24 px-8">
                 <img
                     className="block w-40 rounded-full mx-auto mb-8 md:hidden"
                     src={data.profileImage}
@@ -18,10 +18,10 @@ const Introducton = () => {
                         src={data.profileImage}
                         alt={data.profileImageAlt}
                     />
-                    <p className="text-center md:text-left">{data.introduction}</p>
+                    <p className="text-center md:text-left font-medium">{data.introduction}</p>
                 </div>
             </div>
-            <ArrowDownIcon className="h-8 mx-auto text-blue-700" />
+            <IconArrowDown className="h-12 w-12 mx-auto text-blue-700" />
         </div>
     )
 }
