@@ -1,107 +1,98 @@
 .outer_containerWrapper {
-    max-width: 1512px;
-    /*max-height: 980px;*/
-    padding: 332px 300px 332px 300px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding: 128px 0;
 }
 
 .wrapper_projects {
-    background-color: white;
-    margin: auto;
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    overflow: hidden;
-    grid-template-areas:
-        "SectionHeader SectionHeader"
-        "PalaSurvey  PalaSurvey"
-        "PalaSurveyGit PalaSurveyLive"
-        "HappyThoughts  HappyThoughts"
-        "HappyThoughtsGit HappyThoughtsLive"
-        "WeatherApp WeatherApp "
-        "WeatherAppGit WeatherAppLive"
-        "GuessSong GuessSong"
-        "GuessSongGit GuessSongLive"
-        "MusicRelease MusicRelease"
-        "MusicReleaseGit MusicReleaseLive"
+    width: 820px;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    margin: 0 auto;
 }
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+}
+
+
 
 h1.projectsHeader {
-    color: blue;
-    grid-area: SectionHeader;
+    color: #0B24F5;
+    text-align: center;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: calc(100% - 280px - 24px);
+    max-height: 280px;
+
 
 }
 
-/*  PROJECT HEADERS */
-
-.HappyThoughts {
-    grid-area: HappyThoughts;
-    font-size: 50px;
+.projectImage {
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-bottom: 10px solid #0B24F5;
+    border-left: 10px solid #0B24F5;
+    background: lightgray 50% / cover no-repeat;
 }
 
-.WeatherApp {
-    grid-area: WeatherApp;
-    font-size: 50px;
+.displayName {
+    font-style: normal;
+    line-height: normal;
 }
 
-.GuessSong {
-    grid-area: GuessSong;
-    font-size: 50px;
+.text {
+    color: #000;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 500px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px 0;
 }
 
-.MusicRelease {
-    grid-area: MusicRelease;
-    font-size: 50px;
+.skillsList {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-.PalaSurvey {
-    grid-area: PalaSurvey;
-    font-size: 50px;
+.skillsList li {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 2px 6px;
+    background: #000;
 }
 
-/* GIT AND NETLIFY(wiev it live) BUTTONS */
 
-/* Git */
-.HappyThoughtsGit {
-    grid-area: HappyThoughtsGit;
-}
-
-.WeatherAppGit {
-    grid-area: WeatherAppGit;
-}
-
-.GuessSongGit {
-    grid-area: GuessSongGit;
-}
-
-.MusicReleaseGit {
-    grid-area: MusicReleaseGit;
-}
-
-.PalaSurveyGit {
-    grid-area: PalaSurveyGit;
-}
-
-/* Netlify / Wiev it live */
-
-.HappyThoughtsLive {
-    grid-area: HappyThoughtsLive;
-}
-
-.WeatherAppLive {
-    grid-area: WeatherAppLive;
-}
-
-.GuessSongLive {
-    grid-area: GuessSongLive;
-}
-
-.MusicReleaseLive {
-    grid-area: MusicReleaseLive;
-}
-
-.PalaSurveyLive {
-    grid-area: PalaSurveyLive;
+.iconContainer {
+    display: inline-flex;
+    align-items: flex-start;
+    margin-top: auto;
+    gap: 32px;
+    margin-top: 60px;
 }

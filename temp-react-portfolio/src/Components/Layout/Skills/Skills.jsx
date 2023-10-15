@@ -25,22 +25,25 @@ export const Skills = () => {
                     /> //ClassName: Makes it possible to style headers as a section and each inividually. 
                 ))}
                 <li className={style.textBoxCode}>
-                    <p>test</p>
-                    <p>test</p>
-                    <p>test</p>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>Javascript ES6</p>
+                    <p>React</p>
+                    <p>Styled Components</p>
+                    <p>GitHub</p>
                 </li>
-                <li className={style.textBoxToolbox}> <p>test</p>
-                    <p>test</p>
-                    <p>test</p>
+                <li className={style.textBoxToolbox}>
+                    {/*<p>Figma</p>*/}
+                    <p>Slack</p>
+                    <p>Github</p>
+                    <p>VScode</p>
+                </li>
+                <li className={style.textBoxMore}>
+                    <p>Postman</p>
+                    <p>Node.js</p>
                 </li>
                 <li className={style.textBoxUpcoming}>
-                    <p>test</p>
-                    <p>test</p>
-                    <p>test</p>
-                </li>
-                <li className={style.textBoxMore}> <p>test</p>
-                    <p>test</p>
-                    <p>test</p>
+                    {/*<p></p>*/}
                 </li>
             </div>
         </div>

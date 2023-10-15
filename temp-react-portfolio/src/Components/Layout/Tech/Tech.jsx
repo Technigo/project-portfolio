@@ -11,7 +11,9 @@ export const Tech = () => {
                     className={style.techHeader}
                 />
                 <SmallerHeader
-                    smallHeading="The text is just a Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test TestTest Test Test Test Test Test Test Test Test Test Test Test Test Test Test TestTest Test Test Test Test Test Test Test Test Test Test  "
+                    smallHeading="HTML, CSS, Flexbox, JavaScript, ES6, 
+                    JSX, React, React Hooks, Web Accessibility, APIs, 
+                    mob-programming, pair-programming, GitHub.   "
                     className={style.smallerHeadingTech}
                 />
             </div>
