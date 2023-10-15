@@ -23,7 +23,7 @@ export const projectData = [
     },
 
     {
-        imagePath: './public/images/GuessSong.jpg',
+        imagePath: './public/images/ME!.png',
         repoName: 'project-guess-who-elbine',
         displayName: 'Game: Guess the song',
         netlifyUrl: 'https://guess-who-elbine.netlify.app/',
