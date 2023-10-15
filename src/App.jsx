@@ -1,4 +1,5 @@
 import "./App.css";
+import { useRef } from "react";
 import { Introduction } from "./Sections/Header/Introduction.jsx";
 import { ImageComponent } from "./ReusableComponents/ImageElements/ImageComponent";
 import { Tech } from "./Sections/Tech/Tech.jsx";
@@ -11,11 +12,25 @@ import { FooterNameBanner } from "./Sections/Footer/FooterNameBanner";
 // Main component to render all the child components.
 export const App = () => {
 
+  // Sets a useRef default as null and saves it in the variable name techSectionRef
+  const techSectionRef = useRef(null);
+
+  // Function to handle the scroll effect on techSectionRef
+  const handleScrollToTech = () => {
+    techSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <main className="main-wrapper">
       <Introduction />
-      <ImageComponent sectionClassName={"arrow-divider"} elementClassName={"image"} link={"/assets/arrow.svg"} ImageAltText={"Follow arrow down"} />
-      <Tech />
+      {/* Handles the Scroll effect onclick of the arrow */}
+      <a onClick={handleScrollToTech}>
+        <ImageComponent sectionClassName={"arrow-divider"} elementClassName={"image"} link={"/assets/arrow.svg"} ImageAltText={"Follow arrow down"} />
+      </a>
+      {/* The refrence for the scroll-effect on the arrow */}
+      <div ref={techSectionRef} >
+        <Tech />
+      </div>
       <FeaturedProjects />
       <ImageComponent sectionClassName={"wave-divider"} elementClassName={"image"} link={"/assets/divider.svg"} ImageAltText={"Wave divider"} />
       <Articles />
