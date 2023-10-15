@@ -8,8 +8,8 @@ const introText = "Laura is a frontend developer with a background in web design
 // Component for the introduction section. Structure of the section is set up and all relevant information is injected. I decided to put the introtext in it's own variable for a cleaner code in the component it self.  
 export const Introduction = () => {
     return (
-        <header>
-            <ImageComponent sectionClassName={"profile-image"} elementClassName={"circle-img"} link={"/profile-image.jpg"} ImageAltText={"Profile Image of Laura"} />
+        <header tabIndex="0">
+            <ImageComponent sectionClassName={"profile-image"} elementClassName={"circle-img"} link={"/profile-image.jpg"} ImageAltText={"Laura"} />
             <section className="headings">
                 <SubHeading text={"Hi, I'm Laura Lyckholm"} />
                 <h1 className="introduction-h2">Frontend Developer & Web Designer</h1>

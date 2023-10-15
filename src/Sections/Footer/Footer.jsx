@@ -11,10 +11,12 @@ export const Footer = () => {
             <ImageComponent sectionClassName={"profile-image"} elementClassName={"circle-img"} link={"/profile-image.jpg"} ImageAltText={"Profile Image of Laura"} />
             <div className="contact-info">
                 <SubHeading text={"Laura Lyckholm"} />
-                <a href="tel:+707597396">
+                {/* Aria-label to clarify that there is a phonenumber here */}
+                <a aria-label="Phone number" href="tel:+707597396">
                     <SubHeading text={"+46(0)707 597 396"} />
                 </a>
-                <a href="mailto:laura.lyckholm@gmail.com">
+                {/* Aria-label to clarify that there is an e-mail address here */}
+                <a aria-label="E-mail adress" href="mailto:laura.lyckholm@gmail.com">
                     <SubHeading text={"laura.lyckholm@gmail.com"} />
                 </a>
             </div>

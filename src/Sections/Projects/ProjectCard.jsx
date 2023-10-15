@@ -37,13 +37,15 @@ export const ProjectCard = ({ repositories }) => {
                         <div className="project-text-section">
                             <SubHeading text={cleanProjectName} />
                             <NormalText text={repo.description} />
-                            <div className="tags">
+                            {/* Adding aria-labels here to make it clear that the small texts read by the screen reader are tags */}
+                            <div role="tag" aria-label="Tags" className="tags">
                                 {/* Mapping through tags, to display them next to each other */}
                                 {topics.map((topic, index) => (
                                     <Tag key={index} tagText={topic} />
                                 ))}
                             </div>
-                            <div className="buttons-section">
+                            <div aria-label="Buttons" className="buttons-section">
+                                {/* Adding aria-labels here to make it clear that the buttons are coming up */}
                                 <Button
                                     className={"demo-btn"}
                                     btnURL={repo.homepage}
