@@ -2,6 +2,7 @@ import CvPic from '/CV_pic.jpg';
 import ContactPic from '/CV_pic.jpg';
 import './contact.css';
 import { SoMeButtons } from './contactButtons';
+import { ContactInfo } from './ContactInfo';
 
 export const Contact = () => {
     return (
@@ -18,12 +19,7 @@ export const Contact = () => {
                 <img src={CvPic} className="CvPic" alt="Picture of Isa Robertini" />
             </div>
 
-            <div className='contactInfo' aria-label="Contact Information">
-                <h3> Isa Robertini</h3>
-                <h3> +46709170174</h3>
-                <h3> robertiniisa@gmail.com</h3>
-            </div>
-
+            <ContactInfo />
             <SoMeButtons />
 
             <footer className='rollingtext-container' role="contentinfo">
