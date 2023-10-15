@@ -22,7 +22,7 @@ export const Presentation = () => (
       
       <div className="description-container">
         <p className="description">
-          Manne is an exceptional developer known for his innovative solutions and exceptional coding abilities. He creates user-friendly applications and solves complex issues with ease. His drive for excellence makes him a valuable asset to any project and a standout in the technology field.
+        Manne stands out as a phenomenal developer, renowned for crafting innovative solutions and showcasing extraordinary coding skills. He effortlessly engineers user-centric applications and navigates through complex problems with ease. His relentless pursuit of excellence not only elevates him in the technology arena but also renders him an invaluable contributor to any project.
         </p>
       </div>
     </div>
