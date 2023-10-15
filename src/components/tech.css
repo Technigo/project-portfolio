@@ -24,3 +24,37 @@
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Mobile */
+@media (max-width: 390px) {
+    .tech-content {
+        flex-direction: column;
+        /* Stack items vertically */
+        padding: 20px;
+    }
+
+    .tech p,
+    .tech h1 {
+        font-size: 4px;
+        /* Adjust font size for mobile */
+        margin: 10px;
+        /* Adjust margin as needed */
+    }
+}
+
+/* Tablet */
+@media (min-width: 391px) and (max-width: 1024px) {
+    .tech-content {
+        flex-direction: row;
+        /* Revert to row layout for tablets */
+        padding: 50px;
+    }
+
+    .tech p,
+    .tech h1 {
+        font-size: 24px;
+        /* Adjust font size for tablets */
+        margin: 20px;
+        /* Adjust margin as needed */
+    }
+}
