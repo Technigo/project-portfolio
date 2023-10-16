@@ -40,6 +40,7 @@ export const TopSection = () => {
                 href="https://github.com/BeckieMorton"
                 target="_blank"
                 rel="noreferrer noopener"
+                aria-label="See Beckie's git hub"
               >
                 <img
                   alt="git hub icon"
@@ -51,6 +52,7 @@ export const TopSection = () => {
                 href="https://www.linkedin.com/in/rebecca-morton-739446204/"
                 target="_blank"
                 rel="noreferrer noopener"
+                aria-label="See Beckie's linkedin account"
               >
                 <img
                   alt="linkedin icon"
@@ -62,6 +64,7 @@ export const TopSection = () => {
                 href="https://stackoverflowteams.com/c/technigo/users/487/?tab=profile"
                 target="_blank"
                 rel="noreferrer noopener"
+                aria-label="See Beckie's stack overflow account"
               >
                 <img
                   alt="stack overflow icon"
