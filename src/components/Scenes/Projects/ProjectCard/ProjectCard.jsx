@@ -14,28 +14,29 @@ export const ProjectCard = () => {
               <img
                 src={image}
                 alt={`Image for project ${title}`}
-                className="project-image-border"
+                className="project-image"
               />
               <div className="project-info">
                 <h3 className="titles">{title}</h3>
                 <p className="p-text">{description}</p>
                 <Tags tags={tags} />
-              </div>
-              <div className="btn-container">
-                <LinkButton
-                  url={demo_url}
-                  className="demo-btn"
-                  title="View the live demo in a new tab"
-                  icon={<TbView360 className="btn-icon" />}
-                  text="Live demo"
-                />
-                <LinkButton
-                  url={github_url}
-                  className="code-btn"
-                  title="View the code on GitHub in a new tab"
-                  icon={<AiFillGithub className="btn-icon" />}
-                  text="View the code"
-                />
+
+                <div className="btn-container">
+                  <LinkButton
+                    url={demo_url}
+                    className="demo-btn"
+                    title="View the live demo in a new tab"
+                    icon={<TbView360 className="btn-icon" />}
+                    text="Live demo"
+                  />
+                  <LinkButton
+                    url={github_url}
+                    className="code-btn"
+                    title="View the code on GitHub in a new tab"
+                    icon={<AiFillGithub className="btn-icon" />}
+                    text="View the code"
+                  />
+                </div>
               </div>
             </div>
           );
