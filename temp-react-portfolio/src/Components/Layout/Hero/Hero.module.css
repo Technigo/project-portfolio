@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+.outer_containerWrapper {
+    max-width: 1512px;
+    max-height: 980px;
+    padding: 200px 300px 64px 300px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Center the grid*/
+
+
+.wrapper_header {
+    margin: auto;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: auto auto;
+    overflow: hidden;
+    grid-template-areas:
+        "SmallHeader SmallHeader  "
+        "SectionHeader SectionHeader  "
+        "me text "
+        "arrow arrow";
+}
+
+h1.heroHeader {
+    color: blue;
+    grid-area: SectionHeader;
+}
+
+
+.herosmallHeader {
+    grid-area: SmallHeader;
+}
+
+.imgMe {
+    grid-area: me;
+    padding-top: 0px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+.text {
+    grid-area: text;
+    padding-top: 15px;
+    white-space: normal;
+    word-wrap: break-word;
+    max-height: 200px;
+    width: 615px;
+    font-size: 18px;
+    line-height: 28.82px;
+    font-weight: 400;
+    font-family: 'Hind', sans-serif;
+}
+
+.imgArrow {
+    grid-area: arrow;
+    text-align: center;
+    padding-top: 130px;
+
+
+}
+
+/*.imgMe img {
+    max-width: 100%;
+    height: auto;
+}
+*/
+
+@media screen and (max-width: 1280px) {
+    .outer_containerWrapper {
+        max-width: 1280px;
+        max-height: 980px;
+        padding: 332px 220px 64px 220px;
+    }
+
+}
