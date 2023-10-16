@@ -8,7 +8,6 @@ const Mywords = () => {
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
-        // Set the projects data from the imported JSON
         setArticles(articlesData.articles);
     }, []);
 
