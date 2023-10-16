@@ -6,7 +6,6 @@ import "./articlecard.css";
 
 // Import an array of article data from the JSON file.
 //import articles from "../data/articles.json";
-//import articles from "../data/articles.json";
 import articles from "../data/articles.json";
 
 export const ArticleCard = () => {
