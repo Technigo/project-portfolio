@@ -4,17 +4,20 @@
     color: #fff;
     padding: 40px;
     overflow: hidden;
-    /* Hide overflowing content */
     position: relative;
-    /* Create a positioning context for absolute positioning */
+    margin: 0px;
+    height: 4vw;
+    max-height: 4vw;
+    bottom: 20%;
+    margin-bottom: -4vw;
 }
 
 .footer {
     text-align: center;
     margin: 0 auto;
     width: 100%;
+    overflow: hidden;
     white-space: nowrap;
-    /* Prevent text from wrapping */
     animation: roll 40s linear infinite;
     /* Start the animation */
 }
@@ -38,8 +41,6 @@
     }
 }
 
-
-/* Specify the width of the rolling banner container */
 .rolling-banner {
     width: 100%;
     overflow: hidden;
@@ -54,15 +55,4 @@
     100% {
         transform: translateX(-100%);
     }
-}
-
-/* Apply the animation to the <h3> element */
-.footer-banner h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    margin-bottom: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: roll 20s linear infinite;
-    /* Adjust duration for the speed of the roll */
 }
