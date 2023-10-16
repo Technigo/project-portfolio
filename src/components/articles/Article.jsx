@@ -35,7 +35,7 @@ const Article = ({
                 <Button
                     href={articleUrl}
                     ariaLabel="Read more"
-                    className="bg-white hover-bg-technigo-yellow"
+                    className="bg-white hover:bg-technigo-yellow"
                 >
                     {/* Displaying an article icon */}
                     <IconArticle className="h-8 w-8 inline-block mr-2" />
