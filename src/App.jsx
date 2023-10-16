@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <div>
+    <div className="main-wrapper">
       <Header />
       <Intro />
       <Tech />
