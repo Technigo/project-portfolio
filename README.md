@@ -88,3 +88,91 @@ PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 ##### Want to create your own README.md ?
 
 [Go to this link](https://readme.so/)
+
+
+# React Portfolio Project - Stenli Suryadinata
+
+Welcome to my React Portfolio Project, a showcase of my development skills and projects. This portfolio is the culmination of the knowledge and experience gained during my React journey. It incorporates React components, props, hooks, and external APIs to create a dynamic and interactive web experience.
+
+![Project Screenshot](https://via.placeholder.com/700x400?text=Project+Screenshot)
+
+## Table of Contents
+
+- [Instructions](#instructions)
+- [View Online](#view-online)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Author](#author)
+- [Lessons Learned](#lessons-learned)
+- [Screenshots](#screenshots)
+
+## Instructions
+
+For the original project instructions, you can refer to the [Technigo project page](https://github.com/Technigo/project-portfolio).
+
+## View Online
+
+You can view this project live on the web [here](https://652c7d1a51d6bb500088d706--boisterous-cendol-d5d8bd.netlify.app/).
+
+## Getting Started
+
+To set up this project, follow these steps:
+
+1. Use Vite to create a new React project:
+
+   ```bash
+   npm create vite@latest my-react-portfolio --template
+   ```
+
+2. Navigate into your project folder:
+
+   ```bash
+   cd my-react-portfolio
+   ```
+
+3. Install the project dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Open the project in your code editor:
+
+   ```bash
+   code .
+   ```
+5. Start the local development server:
+
+   ```bash
+   npm run dev
+   ```
+
+ ## Features
+
+ - Responsive design for various screen sizes.
+ - Integration of web APIs for dynamic project data.
+ - Use of popular CSS frameworks for efficient styling.
+ - Accessibility improvements for an inclusive user experience.
+
+## Author
+
+Stenli Suryadinata
+
+[LinkedIn Profile](https://www.linkedin.com/in/stenli-suryadinata-31972a43/)
+
+[Project-portfolio](https://652c7d1a51d6bb500088d706--boisterous-cendol-d5d8bd.netlify.app/)
+
+
+
+## Lessons Learned
+
+Through this project, I have learned valuable lessons in React development:
+
+The power of components and props in creating modular and organized code.
+Effective state management with React hooks, especially useState.
+The importance of data fetching and dynamic content display through web APIs.
+The significance of accessibility for an inclusive user experience.
+Clean coding practices and continuous testing and deployment for successful web applications.
+
+
+
