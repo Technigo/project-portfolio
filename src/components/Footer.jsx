@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import RollingBanner from './RollingBanner';
+import RollingBanner from './RollingBanner.jsx';
 
 function Footer() {
     return (
