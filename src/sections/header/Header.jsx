@@ -12,7 +12,7 @@ export const Header = () => {
                 <Image
                     sectionClassName={"profile-img"}
                     elementClassName={"circle-img"}
-                    link={"/public/assets/profile-img-maria.JPG"}
+                    link={"/assets/profile-img-maria.JPG"}
                     ImageAltText={"Profile Image of Maria"}
                 />
                 <section className="headings">
