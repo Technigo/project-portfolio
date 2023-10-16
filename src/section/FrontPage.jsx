@@ -1,5 +1,5 @@
 import "../components/headline.css";
-import "../components/mediumheadline.css";
+import "../components/mediumHeadline.css";
 import "../components/textbox.css";
 import "./frontPage.css";
 import "../components/FrontPage/arrow.css";
