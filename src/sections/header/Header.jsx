@@ -21,24 +21,17 @@ export const Header = () => {
                         level={4}
                         text="Hi, I'm Maria Pettersson"
                         aria-label="Designer greeting"
-                        className="hello-text"
+                        className="header-h4"
                     />
                     <Heading
                         level={2}
                         text="Frontend Developer & UX Designer"
                         aria-label="Frontend Developer & UX Designer"
-                        className="introduction-h2"
+                        className="header-h2"
                     />
                 </section>
                 <section className="intro-text">
                     <Paragraph text={introText} />
-                </section>
-                <section className="arrow-container">
-                    <img
-                        src={arrowImage}
-                        alt="Animated Arrow"
-                        className="arrow"
-                    />
                 </section>
             </section>
         </header>
