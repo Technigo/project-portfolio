@@ -1,4 +1,3 @@
-import './Mywords.css'
 import article1 from "/file-images/article1.png"
 import article2 from "/file-images/article2.png"
 import article3 from "/file-images/article3.png"
@@ -9,6 +8,7 @@ import divider from "/icons/divider.png"
 import { SectionTitle } from '../../reusableComponents/texts/SectionTitle'
 import { MediumsizedTitle } from '../../reusableComponents/texts/MediumsizedTitle'
 import { NormalText } from '../../reusableComponents/texts/NormalText'
+import './MyWords.css'
 
 export const MyWords = () => {
 
