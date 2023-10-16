@@ -12,7 +12,7 @@ export const Skills = () => {
             <div className="skills-flex">
                 <div className="code">
                     <MediumsizedTitle mediumHeader={'Code'} />
-                    <p>
+                    <>
                         <ul>
                             <li>HTML5</li>
                             <li>CSS3</li>
@@ -22,11 +22,11 @@ export const Skills = () => {
                             <li>GitHub</li>
 
                         </ul>
-                    </p>
+                    </>
                 </div>
                 <div className="toolbox">
                     <MediumsizedTitle mediumHeader={'Toolbox'} />
-                    <p>
+                    <>
                         <ul>
                             <li>Figma</li>
                             <li>Slack</li>
@@ -34,11 +34,11 @@ export const Skills = () => {
                             <li></li>
                             <li></li>
                         </ul>
-                    </p>
+                    </>
                 </div>
                 <div className="upcoming">
                     <MediumsizedTitle mediumHeader={'Upcoming'} />
-                    <p>
+                    <>
                         <ul>
                             <li>Node.js</li>
                             <li></li>
@@ -46,11 +46,11 @@ export const Skills = () => {
                             <li></li>
                             <li></li>
                         </ul>
-                    </p>
+                    </>
                 </div>
                 <div className="more">
                     <MediumsizedTitle mediumHeader={'More'} />
-                    <p>
+                    <>
                         <ul>
                             <li>Agile methology</li>
                             <li></li>
@@ -58,7 +58,7 @@ export const Skills = () => {
                             <li></li>
                             <li></li>
                         </ul>
-                    </p>
+                    </>
                 </div>
             </div>
         </section>
