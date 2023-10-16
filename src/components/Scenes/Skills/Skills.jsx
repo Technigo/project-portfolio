@@ -1,5 +1,5 @@
 import "./Skills.css";
-import { skills } from "../../../Data";
+import { SkillList } from "./SkillList";
 
 export const Skills = () => {
   return (
@@ -7,7 +7,7 @@ export const Skills = () => {
       <div className="page-wrapper">
         <h2 className="page-title">Skills</h2>
         <div className="skills-list">
-          {skills.map((skill) => (
+          {SkillList.map((skill) => (
             <div className="skill-list" key={skill.id}>
               <h3
                 className="category"
