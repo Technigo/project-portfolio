@@ -21,7 +21,7 @@ export const FeaturedProjects = () => {
                     <div key={project.repoName} className={style.projectContainer}>
 
                         <img src={project.imagePath} alt={project.displayName} className={style.projectImage} />
-                        <div class="textContainer">
+                        <div className={style.textContainer}>
                             <h2 className={style.displayName}>{project.displayName}</h2>
 
                             <p className={style.text}>{project.text}</p>
