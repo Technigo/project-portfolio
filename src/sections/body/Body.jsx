@@ -25,7 +25,7 @@ export const Body = () => {
                 <Image
                     sectionClassName={"arrow-down"}
                     elementClassName={"image"}
-                    link={"/public/assets/arrow.svg"}
+                    link={"/assets/arrow.svg"}
                     ImageAltText={"Follow arrow down"}
                     tabIndex="1"
                 />
