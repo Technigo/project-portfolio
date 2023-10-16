@@ -19,7 +19,6 @@
 .skills-content {
     display: flex;
     justify-content: center;
-
 }
 
 .skills-child {
@@ -58,4 +57,49 @@ h2 {
     font-family: 'Hind', sans-serif;
     text-align: left;
     margin-bottom: 80px;
+}
+
+/* Mobile */
+@media (max-width: 390px) {
+
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .skills-child {
+        margin-bottom: 20px;
+    }
+
+    .skills h1 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .skills p {
+        margin-bottom: 10px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 391px) and (max-width: 1024px) {
+    .skills h1 {
+        font-size: 30px;
+        /* Further adjust font size for tablets */
+    }
+
+    h2 {
+        font-size: 18px;
+        /* Further adjust font size for tablets */
+    }
+
+    .skills p {
+        margin-bottom: 10px;
+        /* Further reduce the margin for tablets */
+    }
 }
