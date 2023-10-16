@@ -1,6 +1,6 @@
 import "./myWordsPage.css";
 import "../components/headline.css";
-import waveDivider from "../assets/wave-divider/waveDivider.png";
+import waveDivider from "../assets/wave-divider/wavedivider.png";
 
 import { Headline } from "../components/Headline";
 import { MyWords } from "../components/MyWordsComponent/MyWords";
