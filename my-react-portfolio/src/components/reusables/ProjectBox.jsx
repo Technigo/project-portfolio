@@ -47,7 +47,7 @@ export const ProjectBox = () => {
                 {first6Gits.map((gitProject) => (
                     <div className="box-wrapper">
                         <div class="img-container">
-                            <img class="project-img" src="src/assets/happythoughts.png" alt="Project image"/>
+                            <img class="project-img" src="./happythoughts.png" alt="Project image"/>
                         </div>
                         <div className="project-info" key={gitProject._id}>
                             <div className="project-headings">
