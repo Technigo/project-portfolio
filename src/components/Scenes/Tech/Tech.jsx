@@ -1,9 +1,9 @@
-import "./tech.css";
+import "./Tech.css";
 
 export const Tech = () => {
   return (
-    <section className="tech" id="tech">
-      <div className="page-container bg-page-container">
+    <section id="tech" aria-label="Technologies section">
+      <div className="page-wrapper">
         <h2 className="page-title">Tech</h2>
         <p className="tech-text">
           HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js,

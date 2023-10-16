@@ -1,21 +1,21 @@
-import "./skills.css";
-import { skills } from "../Data";
+import "./Skills.css";
+import { skills } from "../../../Data";
 
 export const Skills = () => {
   return (
-    <section className="skills" id="skills">
-      <div className="page-container bg-page-container">
+    <section id="skills" aria-label="Skills and Competencies">
+      <div className="page-wrapper">
         <h2 className="page-title">Skills</h2>
         <div className="skills-list">
           {skills.map((skill) => (
             <div className="skill-list" key={skill.id}>
-              <div
-                className="category-title"
+              <h3
+                className="category"
                 style={{ backgroundColor: skill.bg_color }}
               >
-                <h3 className="titles">{skill.category} </h3>
-              </div>
-              <ul className="text-css">
+                {skill.category}{" "}
+              </h3>
+              <ul className="p-text">
                 {Array.isArray(skill.items)
                   ? skill.items.map((item, index) => (
                       <li key={index}>{item}</li>

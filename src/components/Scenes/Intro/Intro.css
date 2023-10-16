@@ -1,0 +1,38 @@
+#intro .page-wrapper {
+  padding: 4rem 1rem;
+  display: grid;
+  row-gap: 2rem;
+}
+
+.profile-subtitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.profile-title {
+  background-image: var(--gradient);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2rem;
+}
+
+/*---------- ARROW ANIMATION ----------*/
+.arrow-down {
+  color: var(--pink);
+  font-size: 2rem;
+  margin: 0 auto;
+  animation: moveUpDown 1s linear infinite;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    transform: translateY(-10px);
+  }
+}
+/*---------- ARROW ANIMATION END ----------*/

@@ -1,27 +1,27 @@
 export const navLinks = [
   {
     page: "Profile",
-    path: "profile",
+    path: "#profile",
   },
   {
     page: "Tech",
-    path: "tech",
+    path: "#tech",
   },
   {
     page: "Projects",
-    path: "projects",
+    path: "#projects",
   },
   {
     page: "Articles",
-    path: "articles",
+    path: "#articles",
   },
   {
     page: "Skills",
-    path: "skills",
+    path: "#skills",
   },
   {
     page: "Contact",
-    path: "contact",
+    path: "#contact",
   },
 ];
 

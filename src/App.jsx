@@ -1,22 +1,22 @@
 import { useState } from "react";
-import { Profile } from "./scenes/Profile";
-import { Projects } from "./scenes/Projects";
-import { Tech } from "./scenes/Tech";
-import { Articles } from "./scenes/Articles";
-import { Skills } from "./scenes/Skills";
-import { Contact } from "./scenes/Contact";
+// import { Navbar } from "./components/Navbar/Navbar";
+import { Intro } from "./components/Scenes/Intro/Intro";
+import { Tech } from "./components/Scenes/Tech/Tech";
+import { Projects } from "./components/Scenes/Projects/Projects";
+import { Articles } from "./components/Scenes/Articles/Articles";
+import { Skills } from "./components/Scenes/Skills/Skills";
+import { Contact } from "./components/Scenes/Contact/Contact";
 
 export const App = () => {
   return (
-    <main className="main">
-      <Profile />
-      <div className="page-wrapper">
-        <Tech />
-        <Projects />
-        <Articles />
-      </div>
+    <div className="wrapper">
+      {/* <Navbar /> */}
+      <Intro />
+      <Tech />
+      <Projects />
+      <Articles />
       <Skills />
       <Contact />
-    </main>
+    </div>
   );
 };
