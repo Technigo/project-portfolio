@@ -48,6 +48,19 @@ p {
     font-size: 18px;
 }
 
+/* ------------ ARROW ------------ */
+.arrow-container {
+    padding: 0 16px 64px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Animation to make the arrow move */
+    position: relative;
+    top: 0;
+    /* Animation is animated here */
+    animation: arrowJump 1s infinite;
+}
+
 /* ------------ MEDIA QUERIES ------------ */
 /* ------------ Tablet and up ------------ */
 @media (min-width: 744px) {
@@ -94,14 +107,16 @@ p {
 
 }
 
-@keyframes jump {
+
+
+@keyframes arrowJump {
   
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-  
-    50% {
-      transform: translateY(20px);
-    }
+  0%,
+  100% {
+    transform: translateY(0);
   }
+
+  50% {
+    transform: translateY(20px);
+  }
+}

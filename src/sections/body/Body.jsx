@@ -6,7 +6,7 @@ import { Projects } from '/src/sections//projects/Projects';
 import { Articles } from '/src/sections//articles/Articles';
 import { Skills } from '/src/sections//skills/Skills';
 import { Footer } from '/src/sections//footer/Footer';
-import { Image } from '/src/components/images/Image';
+import arrowImage from '/assets/arrow.svg'
 
 export const Body = () => {
 
@@ -22,13 +22,13 @@ export const Body = () => {
         <div className="main-wrapper">
             <Header />
             <a href="#tech-link" onClick={handleScrollToTech} >
-                <Image
-                    sectionClassName={"arrow-down"}
-                    elementClassName={"image"}
-                    link={"/assets/arrow.svg"}
-                    ImageAltText={"Follow arrow down"}
-                    tabIndex="1"
-                />
+                <section className="arrow-container">
+                    <img
+                        src={arrowImage}
+                        alt="Animated Arrow"
+                        className="arrow"
+                    />
+                </section>
             </a>
             <Tech />
             <Projects />
