@@ -1,16 +1,25 @@
-section {
+.header {
   background-color: #ffffff;
-  /* padding: 20px; */
+
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* center items horizontally */
   width: 375px;
-  height: 720px;
+  height: 592px;
   padding: 64px 16px 64px 16px;
 }
 
-section h1 {
+.header .wrapper {
+  grid-column: 1 / 4;
+}
+
+.my-image {
+  max-width: 164px;
+  height: auto;
+  border-radius: 50%;
+  padding-bottom: 20px;
+  width: 80%; /* responsive width */
+}
+
+.header h1 {
   font-family: Montserrat;
   color: black;
   font-size: 14px;
@@ -21,28 +30,20 @@ section h1 {
   max-width: 90%; /* responsive width */
 }
 
-section h2 {
-  font-family: Montserrat;
-  font-size: 20px;
+.header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
   font-weight: 700;
-  line-height: 25px;
+  line-height: normal;
   letter-spacing: 0em;
   text-align: left;
-  color: #0e6655;
+  color: #0b24f5;
   max-width: 90%; /* responsive width */
   padding-bottom: auto;
 }
 
-section img {
-  max-width: 164px;
-  height: auto;
-  border-radius: 50%;
-  padding-bottom: 20px;
-  width: 80%; /* responsive width */
-}
-
-.header-container p {
-  font-family: Hind;
+.header .wrapper p {
+  font-family: "Hind", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 22px;
@@ -53,36 +54,44 @@ section img {
 
 /* For tablets and above */
 @media (min-width: 768px) {
-  section {
+  .header {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  section h1,
-  section h2 {
+  /* .header .wrapper {
+    grid-column: 2 / 7;
+  } */
+
+  .my-image {
+    width: 164px;
+    height: 164px;
+  }
+
+  .header h1,
+  h2 {
     max-width: 60%;
   }
 
-  section h2 {
+  .header h2 {
     font-size: 32px; /* revert to original size */
     line-height: 39px;
-  }
-
-  section img {
-    width: 164px;
-    height: 164px;
   }
 }
 
 /* For desktops and above */
 @media (min-width: 1024px) {
-  section h1 {
-    font-size: 24px;
-    line-height: 28px;
+  .header .wrapper {
+    grid-column: 3 / 11;
   }
 
-  section img {
+  .my-image {
     width: 180px;
     height: 180px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+    line-height: 28px;
   }
 }

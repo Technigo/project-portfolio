@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "../index.css";
+import "./Photo.css";
 
 export const Photo = ({ mode, color, source }) => {
   console.log(source);

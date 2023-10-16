@@ -1,6 +1,8 @@
+import "./Tech.css";
+
 export const Tech = () => {
   return (
-    <section className="tech grid-parent">
+    <div className="tech grid-parent">
       <div className="wrapper">
         <h1>Tech</h1>
         <p>
@@ -9,6 +11,6 @@ export const Tech = () => {
           Github.
         </p>
       </div>
-    </section>
+    </div>
   );
 };

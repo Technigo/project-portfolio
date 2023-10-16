@@ -1,8 +1,40 @@
 .tech {
   background: blue;
+  display: grid; /* or flex, depending on your layout intention */
+  background: blue;
+  width: 375px;
+  gap: 64px;
+  padding: 128px 16px;
 }
 
 .tech .wrapper {
-  display: flex;
-  gap: 20px;
+  grid-column: 2 / 4;
 }
+
+.tech h1 {
+  color: #ffffff;
+  font-size: 56px;
+  font-family: Montserrat;
+}
+
+.tech .wrapper p {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Hind;
+}
+
+/* For tablets and above */
+/* @media (min-width: 768px) {
+  .tech .wrapper {
+    display: flex;
+    gap: 20px;
+  }
+} */
+
+/* For desktops and above */
+/* @media (min-width: 1024px) {
+  .tech .wrapper {
+    display: flex;
+    gap: 20px;
+  }
+} */
