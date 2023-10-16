@@ -1,7 +1,7 @@
 
 export const projectData = [
     {
-        imagePath: './public/images/happythoughts.png',
+        imagePath: './images/happythoughts.png',
         repoName: 'project-happy-thoughts-elbine-vite',
         displayName: 'Happy Thoughts',
         netlifyUrl: 'https://happy-thoughts-elbine.netlify.app',
@@ -12,7 +12,7 @@ export const projectData = [
     },
 
     {
-        imagePath: './public/images/weatherapp.png',
+        imagePath: './images/weatherapp.png',
         repoName: 'EmE-weather-app',
         displayName: 'Weather App',
         netlifyUrl: 'https://eme-weather-app.netlify.app/',
@@ -23,7 +23,7 @@ export const projectData = [
     },
 
     {
-        imagePath: './public/images/GuessSong.jpg',
+        imagePath: './images/GuessSong.jpg',
         repoName: 'project-guess-who-elbine',
         displayName: 'Game: Guess the song',
         netlifyUrl: 'https://guess-who-elbine.netlify.app/',
@@ -34,7 +34,7 @@ export const projectData = [
     },
 
     {
-        imagePath: './public/images/Pala.png',
+        imagePath: './images/Pala.png',
         repoName: 'project-survey-vite-EMS',
         displayName: 'Pala Survey',
         netlifyUrl: 'https://pala-customer-survey.netlify.app',
@@ -45,7 +45,7 @@ export const projectData = [
     },
 
     {
-        imagePath: './public/images/MusicRelease.png',
+        imagePath: './images/MusicRelease.png',
         repoName: 'project-music-releases-elbine',
         displayName: 'New music releases',
         netlifyUrl: 'https://app.netlify.com/sites/music-releases-by-elbine/overview',

@@ -3,9 +3,6 @@ import { SectionHeader } from '../../UI/SectionHeader/SectionHeader.jsx';
 import { Photos } from '../../UI/Photos/Photos.jsx';
 import { projectData as data } from '../../Data/projectData.js';
 
-
-
-
 export const FeaturedProjects = () => {
 
     return (
@@ -21,6 +18,7 @@ export const FeaturedProjects = () => {
                     <div key={project.repoName} className={style.projectContainer}>
 
                         <img src={project.imagePath} alt={project.displayName} className={style.projectImage} />
+
                         <div className={style.textContainer}>
                             <h2 className={style.displayName}>{project.displayName}</h2>
 
