@@ -1,14 +1,43 @@
+/* Add this CSS to your footer.css */
 .footer-banner {
     background-color: #FF4575;
     color: #fff;
     padding: 40px;
+    overflow: hidden;
+    /* Hide overflowing content */
+    position: relative;
+    /* Create a positioning context for absolute positioning */
 }
 
-.container {
+.footer {
     text-align: center;
     margin: 0 auto;
     width: 100%;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    animation: roll 40s linear infinite;
+    /* Start the animation */
 }
+
+.footer p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(100%);
+        /* Start off-screen to the right */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move off-screen to the left */
+    }
+}
+
 
 /* Specify the width of the rolling banner container */
 .rolling-banner {
