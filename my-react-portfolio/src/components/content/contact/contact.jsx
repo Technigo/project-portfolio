@@ -1,4 +1,7 @@
-//import {useState, useEffect} from "react"
+//NOT DONE:
+//Picture is streched
+//Buttons are not linked to my social media
+
 import style from './contact.module.css'
 import { MainHeader } from "../../reusable/mainheader/mainheader"
 
@@ -14,8 +17,8 @@ export const Contact = () => {
                 <img className={style.imgMe} src="/images/me.jpg" alt="Me" />
                 <div className={style.contactInfoBox}>
                     <div className={style.contactInfo}>
-                        <p>Name</p>
-                        <p>Phone</p>
+                        <p>Mirela Cacan</p>
+                        <p>+47 410 45 384</p>
                         <p>mirelacacan@gmail.com</p>
                     </div>
                     <div className={style.socialMedia}>

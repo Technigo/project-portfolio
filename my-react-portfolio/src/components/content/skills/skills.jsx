@@ -1,3 +1,6 @@
+//NOT DONE:
+//Add skills
+
 //import {useState, useEffect} from "react"
 import style from './skills.module.css'
 import { SubHeader } from '../../reusable/subheader/subheader.jsx'

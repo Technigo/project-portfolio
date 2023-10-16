@@ -1,3 +1,6 @@
+//NOT DONE:
+//Not displaying this page as I have nothing to display, but will still make it ready
+
 //import {useState, useEffect} from "react"
 import style from './mywords.module.css'
 import { SubHeader } from '../../reusable/subheader/subheader.jsx'

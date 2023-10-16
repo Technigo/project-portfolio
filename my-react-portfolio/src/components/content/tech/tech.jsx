@@ -1,3 +1,7 @@
+//NOT DONE:
+//write text
+//Extra blue box in the corner??
+
 //import {useState, useEffect} from "react"
 import style from './tech.module.css'
 import { SubHeader } from '../../reusable/subheader/subheader.jsx'
