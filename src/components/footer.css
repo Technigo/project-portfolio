@@ -58,3 +58,71 @@
         transform: translateX(-100%);
     }
 }
+
+/* Mobile  */
+@media (max-width: 375px) {
+    .footer-banner {
+        width: 100%;
+        background-color: #FF4575;
+        color: #fff;
+        padding: 20px;
+        overflow: hidden;
+        position: relative;
+        margin: 0px;
+
+        height: 20vw;
+        max-height: 20vw;
+        bottom: 20%;
+        margin-bottom: -20vw;
+    }
+
+    .footer {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: roll 40s linear infinite;
+    }
+
+    .footer p {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+/* Tablet  */
+@media (min-width: 376px) and (max-width: 1024px) {
+    .footer-banner {
+        background-color: #FF4575;
+        color: #fff;
+        padding: 40px;
+        overflow: hidden;
+        position: relative;
+        margin: 0px;
+
+        /* This part make the footer stretch to full bottom without white space */
+        height: 4vw;
+        max-height: 4vw;
+        bottom: 20%;
+        margin-bottom: -4vw;
+    }
+
+    .footer {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: roll 40s linear infinite;
+    }
+
+    .footer p {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
