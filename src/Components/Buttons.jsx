@@ -1,3 +1,5 @@
+import "./Buttons.css";
+
 export const Buttons = ({ homepage, url, sectionId }) => {
     //How to switch from normal to hover state?
     if (sectionId === 3) {

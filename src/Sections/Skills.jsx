@@ -1,10 +1,12 @@
 import { BigHeadlines } from "../Components/BigHeadlines";
 
+import "./Skills.css";
+
 export const Skills = () => {
     const sectionId = 5;
 
     return (
-        <div className="skills">
+        <div className="skills-wrapper">
             <BigHeadlines sectionId={sectionId}/>
             <figure className="code">
                 <figcaption>Code</figcaption>

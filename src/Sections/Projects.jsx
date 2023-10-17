@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { BigHeadlines } from "../Components/BigHeadlines";
 import { Project } from "../Components/Project";
 
+import "./Projects.css";
+
 export const Projects = () => {
   const sectionId = 3;
   const [projectList, setProjectList] = useState([]);
@@ -23,7 +25,7 @@ export const Projects = () => {
   }, []);
 
   return (
-    <>
+    <div className="project-list-wrapper">
       <BigHeadlines sectionId={sectionId}/>
         
       <div className="project-list">
@@ -41,6 +43,6 @@ export const Projects = () => {
           )
         })}
       </div>
-    </>
+    </div>
   )
 }

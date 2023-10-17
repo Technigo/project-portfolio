@@ -3,6 +3,8 @@ import { Images } from "./Images";
 import { Tags } from "./Tags";
 import { Buttons } from "./Buttons";
 
+import "./Project.css";
+
 export const Project = ({ name, description, tags, homepage, url, sectionId }) => {
   return (
     <div className="project-card">

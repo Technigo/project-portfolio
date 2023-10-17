@@ -1,6 +1,7 @@
 import { BigHeadlines } from "../Components/BigHeadlines";
 import { Article } from "../Components/Article";
 
+import "./MyWords.css";
 
 export const MyWords = () => {
   const sectionId = 4;
@@ -23,20 +24,22 @@ export const MyWords = () => {
   ];
 
   return (
-    <div>
+    <div className="article-list-wrapper">
       <BigHeadlines sectionId={sectionId}/>
-      {articleList.map((article) => {
-        return (
-          <Article 
-            key={article.id} 
-            imageURL={article.imageURL} 
-            title={article.title} 
-            date={article.date} 
-            articleText={article.text}
-            sectionId={sectionId}
-          />
-        )
-      })}
+      <div className="article-list">
+        {articleList.map((article) => {
+          return (
+            <Article 
+              key={article.id} 
+              imageURL={article.imageURL} 
+              title={article.title} 
+              date={article.date} 
+              articleText={article.text}
+              sectionId={sectionId}
+            />
+          )
+        })}
+      </div>
     </div>
   )
 }

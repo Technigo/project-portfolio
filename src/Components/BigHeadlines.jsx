@@ -1,3 +1,5 @@
+import "./BigHeadlines.css";
+
 export const BigHeadlines = ({ sectionId }) => {
 
   const bigHeadlineCollection = [
@@ -29,8 +31,10 @@ export const BigHeadlines = ({ sectionId }) => {
   
 
   return (
-    <>
-      <h1 key={sectionId}>{bigHeadlineCollection.map((headline) => headline.text)[sectionId - 1]}</h1>
-    </>
+    <h1 key={sectionId} className={
+      `${sectionId}` == 2 || `${sectionId}` == 5 ? "white" : 
+      `${sectionId}`== 4 ? "pink" : "blue"}>
+      {bigHeadlineCollection.map((headline) => headline.text)[sectionId - 1]}
+    </h1>
   )
 }
