@@ -1,60 +1,45 @@
-import { useState, useEffect } from 'react';
-import './projects.css';
+import "./projects.css";
+import React, { useEffect, useState } from 'react';
 import { ProjectCard } from './ProjectCard';
-import repoData from './repo-data.json'; // Import the JSON file
 
-export const ProjectList = () => {
-    const [projects, setProjects] = useState([]);
-    const [loading, setLoading ] = useState(true);
+const API = "https://api.github.com/users/mariateresepettersson/repos";
+
+//Component to fetch data from API
+export const Project = () => {
+    const [gitData, setGitData] = useState([]);
     const [error, setError] = useState(null);
 
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const response = await fetch('https://api.github.com/users/mariateresepettersson/repos');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
+    //function to fetch the API data
+    const fetchProjetcs = async () =>{
+        try {
+            const response = await fetch (API);
 
-                // Access the 'projects' array within 'repoData'
-                const desiredRepoNames = repoData.projects.map((project) => project.repoName);
-                const filteredProjects = data.filter((project) =>
-                    desiredRepoNames.includes(project.name)
-                );
-
-                // Sort the filtered projects by creation date (most recent first)
-                filteredProjects.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-
-                // Match repositories with images based on the JSON data
-                const projectsWithImages = filteredProjects.map((project) => ({
-                    ...project,
-                    imageUrl: repoData.projects.find((img) => img.repoName === project.name)?.imageUrl,
-                }));
-
-                setProjects(projectsWithImages);
-                setLoading(false);
-            } catch (err) {
-                setError(err);
+            if (!response.ok) {
+                throw new Error("Problem fethcing API data");
             }
-        }
 
-        fetchData();
+            const rawData =await response.json();
+            setGitData(rawData);
+        }   catch (error) {
+                setError(error);
+                console.error(error);
+        }
+    }
+
+    //Handle fetch
+    useEffect(() => {
+        fetchProjects();
     }, []);
 
-    if (loading) {
-        return <div>Loading...</div>;
-    }
-
-    if (error) {
-        return <div>Error: {error.message}</div>;
-    }
-
     return (
-        <div className="project-list">
-            {projects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-            ))}
-        </div>
+        <section className="project-list">
+ 
+ <MainHeading className={"featured-projects-heading"} text={"Featured Projects"} />
+            {error ? (
+                <p className="error-message">An error occurred: {error.message}</p>
+            ) : (
+                <ProjectCard repositories={projectData} />
+            )}
+        </section>
     );
-};
+}
