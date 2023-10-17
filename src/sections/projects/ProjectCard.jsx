@@ -18,7 +18,6 @@ export const ProjectCard = ({ repositories }) => {
     return (
         <>
             {filteredRepos.map((repo) => {
-                const projectName = repo.name;
 
                 // Find the corresponding data in repoData.projects based on repoName
                 const matchingData = repoData.projects.find((data) => data.repoName === repo.name);
@@ -34,7 +33,7 @@ export const ProjectCard = ({ repositories }) => {
                                 sectionClassName={"project-img"}
                                 elementClassName={"project-img"}
                                 link={matchingData.imageUrl}
-                                ImageAltText={`Profile Image of ${projectName}`}
+                                ImageAltText={`Image of ${matchingData.publicName} project`}
                             />
                         </div>
                         <Heading
@@ -46,12 +45,12 @@ export const ProjectCard = ({ repositories }) => {
                         <Paragraph
                             text={repo.description} // Retrieve the description from the API
                         />
-                        <section className="tags">
-                            {/* Add tags if available */
-                                matchingData.topics.map((topics, index) => (
-                                    <Tag key={index} text={topics} className="tag" />
+                        <div role="tag" aria-label="Tags" className="tags">
+                                {/* Mapping through tags, to display them next to each other */}
+                                {matchingData.topics.map((topic, index) => (
+                                    <Tag key={index} tagText={topic} />
                                 ))}
-                        </section>
+                            </div>
                         <Button
                             icon="/assets/icons/live-demo.svg" // Replace with the actual icon path
                             label="Live demo"
