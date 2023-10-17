@@ -36,33 +36,37 @@ export const ProjectCard = ({ repositories }) => {
                                 ImageAltText={`Image of ${matchingData.publicName} project`}
                             />
                         </div>
-                        <Heading
-                            level={3}
-                            text={matchingData.publicName}
-                            aria-label="This is the main heading"
-                            className="project-card-heading"
-                        />
-                        <Paragraph
-                            text={repo.description} // Retrieve the description from the API
-                        />
-                        <div role="tag" aria-label="Tags" className="tags">
+                        <div className="project-text-section">
+                            <Heading
+                                level={3}
+                                text={matchingData.publicName}
+                                aria-label="This is the main heading"
+                                className="project-card-heading"
+                            />
+                            <Paragraph
+                                text={repo.description} // Retrieve the description from the API
+                            />
+                            <div role="tag" aria-label="Tags" className="tags">
                                 {/* Mapping through tags, to display them next to each other */}
                                 {matchingData.topics.map((topic, index) => (
                                     <Tag key={index} tagText={topic} />
                                 ))}
                             </div>
-                        <Button
-                            icon="/assets/icons/live-demo.svg" // Replace with the actual icon path
-                            label="Live demo"
-                            link={matchingData.netlifyUrl} // Use the URL from the JSON data
-                            className="netlify-btn"
-                        />
-                        <Button
-                            icon="/assets/icons/github-btn.svg" // Replace with the actual icon path
-                            label="View the code"
-                            link={repo.svn_url} // Retrieve GitHub link from the API
-                            className="github-btn"
-                        />
+                        </div>
+                        <div className='button-wrapper'>
+                            <Button
+                                icon="/assets/icons/live-demo.svg" // Replace with the actual icon path
+                                label="Live demo"
+                                link={matchingData.netlifyUrl} // Use the URL from the JSON data
+                                className="netlify-btn"
+                            />
+                            <Button
+                                icon="/assets/icons/github-btn.svg" // Replace with the actual icon path
+                                label="View the code"
+                                link={repo.svn_url} // Retrieve GitHub link from the API
+                                className="github-btn"
+                            />
+                        </div>
                     </article>
                 );
             })}

@@ -33,9 +33,9 @@ export const Projects = () => {
     }, []);
 
     return (
-        <section className="projects-section">
+        <section className="projects-container">
             {/* Shows mainheading, and then IF something goes wrong, it displays an error message, otherwise the cards are shown. */}
-            <Heading level={1} className={"featured-projects-heading"} text={"Featured Projects"} />
+            <Heading level={1} className={"projects-heading"} text={"Featured Projects"} />
             {error ? (
                 <p className="error-message">An error occurred: {error.message}</p>
             ) : (
