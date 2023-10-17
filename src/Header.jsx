@@ -1,4 +1,4 @@
-import CvPic from '/CV_pic.jpg'
+import CvPic from '/CV_pic.png'
 import arrow from '../arrow.png'
 import './components/HeaderComponents/headerStyle.css';
 import { HeaderText } from './components/HeaderComponents/HeaderText';

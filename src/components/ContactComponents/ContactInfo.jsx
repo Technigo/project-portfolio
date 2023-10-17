@@ -4,9 +4,9 @@ import React from 'react';
 //contact info
 export const ContactInfo = () => (
     <div className="contactInfo" aria-label="Contact Information">
-        <h3> Isa Robertini</h3>
-        <h3> +46709170174</h3>
-        <h3> robertiniisa@gmail.com</h3>
+        <p> Isa Robertini</p>
+        <p> +46709170174</p>
+        <p> robertiniisa@gmail.com</p>
     </div>
 );
 

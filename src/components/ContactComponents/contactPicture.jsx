@@ -1,5 +1,5 @@
-import CvPic from '/CV_pic.jpg';
-import ContactPic from '/CV_pic.jpg';
+import CvPic from '/CV_pic.png';
+import ContactPic from '/CV_pic.png';
 import './contact.css';
 
 
@@ -7,11 +7,11 @@ import './contact.css';
 export const ContactPicture = () => {
     return (
         <div className="">
-            <div className="ContactPicture" aria-label="Picture of Isa Robertini">
-                <img src={ContactPic} className="CvPic" alt="Picture of Isa Robertini" />
+            <div className="ContactPicture" aria-label="CV Picture of Isa Robertini">
+                <img src={ContactPic} className="CvPic" alt="CV Picture of Isa Robertini" />
             </div>
-            <div className="cvPicture" aria-label="Picture of Isa Robertini">
-                <img src={CvPic} className="CvPic" alt="Picture of Isa Robertini" />
+            <div className="cvPicture" aria-label="CV Picture of Isa Robertini">
+                <img src={CvPic} className="CvPic" alt="CV Picture of Isa Robertini" />
             </div>
         </div>
 
