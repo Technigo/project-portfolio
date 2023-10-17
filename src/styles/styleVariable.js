@@ -1,4 +1,4 @@
-export const primaryColorText = { color: "#1e3799" };
+export const primaryColorText = { color: "#0a3d62" };
 export const secondaryColorText = { color: "#e55039" };
 export const whiteColorText = { color: "#fff" };
 export const yellowColor = { color: "#fa983a" };

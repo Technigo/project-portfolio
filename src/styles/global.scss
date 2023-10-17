@@ -1,5 +1,5 @@
+@use "./variables.scss" as *;
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap");
-
 #root {
   min-width: 100%;
 }
@@ -23,4 +23,15 @@ button {
 
 html {
   scroll-behavior: smooth;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: $color-secondary;
+  transform-origin: 0%;
+  z-index: 1000;
 }

@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
+
 import { Heading } from "../../ui/Heading";
 import { ImageFrame } from "../../ui/ImageFrame";
 import { Label } from "../../ui/Label";
 import { Title } from "../../ui/Title";
 import { Button } from "../../ui/Button";
+import { ObserverWrapper } from "../../ui/ObserverWrapper";
 import { secondaryColorText, yellowColor } from "../../../styles/styleVariable";
 import { blogsData as data } from "../../../statics/blogsData";
 
@@ -11,22 +14,24 @@ import styles from "./Blog.module.scss";
 export default function Blog() {
   return (
     <section className={styles.blog_section}>
-      <div className={styles.wave_box}></div>
-      <div className={styles.blog_inner}>
-        <Heading color={secondaryColorText}>My Words</Heading>
-        <div className={styles.blogs_wrapper}>
-          {data.map((blog) => (
-            <Post blog={blog} key={blog.id} />
-          ))}
+      <ObserverWrapper>
+        <div className={styles.wave_box}></div>
+        <div className={styles.blog_inner}>
+          <Heading color={secondaryColorText}>My Words</Heading>
+          <div className={styles.blogs_wrapper}>
+            {data.map((blog) => (
+              <Post blog={blog} key={blog.id} />
+            ))}
+          </div>
         </div>
-      </div>
+      </ObserverWrapper>
     </section>
   );
 }
 
 // Post component (mapping a post data from blogsData array)
 function Post({ blog }) {
-  const { text, title, date, url, imagePath, imageDescription } = blog;
+  const { introText, title, date, url, imagePath, imageDescription, id } = blog;
   return (
     <article className={styles.post_card}>
       <div className={styles.image_wrapper}>
@@ -38,10 +43,17 @@ function Post({ blog }) {
       </div>
       <Label labelText={date} />
       <Title text={title} />
-      <p className={styles.post_text}>{text}</p>
-      <Button iconPath="/icons/doc.png" url={url} background="#fff" hoverColor={yellowColor.color}>
-        Read Article
-      </Button>
+      <p className={styles.post_text}>{introText}</p>
+      <Link to={`/blog/${id}/`}>
+        <Button
+          iconPath="/icons/doc.svg"
+          background="#fff"
+          hoverColor={yellowColor.color}
+          altText="read article icon image"
+        >
+          Read Article
+        </Button>
+      </Link>
     </article>
   );
 }
