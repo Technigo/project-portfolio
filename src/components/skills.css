@@ -68,11 +68,12 @@ h2 {
 }
 
 /* Mobile */
-@media (max-width: 390px) {
+@media (max-width: 375px) {
 
     .skills-content {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
+        align-items: center;
     }
 
     .skills-child {
@@ -81,21 +82,30 @@ h2 {
     }
 
     .skills h1 {
-        font-size: 40px;
+        font-size: 56px;
         padding-bottom: 20px;
     }
 
+    .code,
+    .toolbox,
+    .upcoming,
+    .more {
+        text-align: center;
+    }
+
     h2 {
-        font-size: 14px;
+        font-size: 24px;
+        text-align: center;
     }
 
     .skills p {
         margin-bottom: 4px;
+        text-align: center;
     }
 }
 
 /* Tablet */
-@media (min-width: 391px) and (max-width: 1024px) {
+@media (min-width: 376px) and (max-width: 1024px) {
 
     .skills-child {
         width: 100%;
