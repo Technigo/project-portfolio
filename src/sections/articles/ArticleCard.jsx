@@ -17,12 +17,14 @@ export const ArticleCard = ({ title, imageUrl, tagText, description, link }) => 
                     ImageAltText={title} // Use the title as alt text
                 />
             </div>
-            <Tag tagText={tagText} className="article-tag" />
-            <Heading
-                level={3}
-                text={title}
-                aria-label="This is the main heading"
-                className="give-it-a-name" />
+            <div className="article-text">
+                <Tag tagText={tagText} className="article-tag" />
+                <Heading
+                    level={3}
+                    text={title}
+                    aria-label="This is the main heading"
+                    className="give-it-a-name" />
+            </div>
             <Paragraph text={description} />
             <Button
                 icon="/assets/icons/read.svg"
