@@ -6,6 +6,7 @@ import { Projects } from '/src/sections//projects/Projects';
 import { Articles } from '/src/sections//articles/Articles';
 import { Skills } from '/src/sections//skills/Skills';
 import { Footer } from '/src/sections//footer/Footer';
+import { FooterBanner } from '/src/sections//footer/FooterBanner';
 import arrowImage from '/assets/arrow.svg'
 
 export const Body = () => {
@@ -35,6 +36,7 @@ export const Body = () => {
             <Articles />
             <Skills />
             <Footer />
+            <FooterBanner />
         </div>
     );
 };

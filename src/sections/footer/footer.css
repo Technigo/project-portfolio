@@ -1,0 +1,75 @@
+.contact-container {
+    padding: 128px 32px 128px 33px;
+}
+
+.contact-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
+/* ------------ TYPOGRAPHY ------------ */
+footer h2 {
+    color: var(--primary);
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+/* Styling added to make the links look like links on hover only */
+.contact-info a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    background-color: var(--secondary);
+    overflow: hidden;
+}
+
+/* Animation moveLeftToRight is brought in */
+.banner h3 {
+    color: white;
+    padding: 41px 0 35px 0;
+    white-space: nowrap;
+    animation: moveLeftToRight 20s linear infinite;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.icons .icon-box {
+    opacity: 0.2;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.icons .icon-box:hover {
+    opacity: 1;
+}
+
+/* Animation moveLeftToRight is set up using keyframes */
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
