@@ -2,6 +2,8 @@ import React from 'react';
 import { Buttons } from './Project-button';
 import './CardComponent.css';
 
+
+//gets the project info from project.json file 
 export const ProjectCard = ({ project }) => {
   return (
     <div className="projectWrapper">
@@ -12,6 +14,8 @@ export const ProjectCard = ({ project }) => {
           <div className="readmeContent">
             <p>{project.description}</p>
           </div>
+
+          {/* maps over the tags*/}
           <div className="project-tags">
             {project.tags.map((tag, index) => (
               <span key={index}>{tag}</span>

@@ -31,7 +31,7 @@ export const HeaderSection = () => {
                 />
             </div>
             <div className="arrow">
-                <img src={arrow} alt="" />
+                <img src={arrow} alt="Jumping arrow pointing indicating to scroll down" />
             </div>
         </div>
 

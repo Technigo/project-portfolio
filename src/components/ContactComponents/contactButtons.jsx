@@ -2,6 +2,8 @@ import GithubPic from '/BtnGithub.png'
 import InstaPic from '/BtnInstagram.png'
 import StackPic from '/BtnStackoverflow.png'
 import LinkedinPic from '/BtnLinkedin.png'
+
+//Buttons for SocialMedia
 export const SoMeButtons = () => {
     return (
         <div className='soMe'>

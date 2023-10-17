@@ -1,47 +1,47 @@
 export const SkillsList = () => {
     return (
         <section className='SkillsContainer'>
-            <li className='code'>
-                <ul>
+            <ul className='code'>
+                <li>
                     <h2>Code</h2>
-                </ul>
-                <ul> HTML5</ul>
-                <ul>CSS3</ul>
-                <ul>Javascript ES6</ul>
-                <ul>React</ul>
-                <ul>Styled Components</ul>
-                <ul>GitHub</ul>
-            </li>
+                </li>
+                <li> HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript ES6</li>
+                <li>React</li>
+                <li>Styled Components</li>
+                <li>GitHub</li>
+            </ul>
 
 
-            <li className='toolbox'>
-                <ul>
+            <ul className='toolbox'>
+                <li>
                     <h2>Toolbox</h2>
-                </ul>
-                <ul>Atom</ul>
-                <ul>Postmam</ul>
-                <ul>Adobe Photoshop</ul>
-                <ul>Adobe Illustator</ul>
-                <ul>Figma</ul>
-                <ul>Keynote</ul>
-                <ul>Slack</ul>
-            </li>
+                </li>
+                <li>Atom</li>
+                <li>Postmam</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustator</li>
+                <li>Figma</li>
+                <li>Keynote</li>
+                <li>Slack</li>
+            </ul>
 
-            <li className='upcoming'>
-                <ul>
+            <ul className='upcoming'>
+                <li>
                     <h2>Upcoming</h2>
-                </ul>
-                <ul>Node.js</ul>
-            </li>
+                </li>
+                <li>Node.js</li>
+            </ul>
 
-            <li className='more'>
-                <ul>
+            <ul className='more'>
+                <li>
                     <h2>More</h2>
-                </ul>
-                <ul>Design Lead</ul>
-                <ul>Branding</ul>
-                <ul>Strategy</ul>
-            </li>
+                </li>
+                <li>Design Lead</li>
+                <li>Branding</li>
+                <li>Strategy</li>
+            </ul>
         </section>
 
     )

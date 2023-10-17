@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Gets the buttons from mywords.json file
 export const MyWordsButton = ({ mywords }) => {
     return (
         <div className="mywords-container">
