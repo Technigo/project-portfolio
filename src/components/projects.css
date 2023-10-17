@@ -29,10 +29,11 @@
 .projects h2 {
     font-family: 'Montserrat', sans-serif;
     color: black;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .projects p {
+    font-family: 'Hind', sans-serif;
     color: black;
 }
 
@@ -71,67 +72,86 @@
     gap: 15px;
 }
 
+/* 
+
 .tags-and-buttons {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
 
-@media (max-width: 390px) {
+/* Mobile */
+@media (max-width: 375px) {
 
     .project-child {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: left;
     }
 
     .project-details {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        text-align: center;
         margin-bottom: 40px;
+        text-align: left;
     }
 
     .projectimg {
-        width: 50%;
+        width: 90%;
         margin: 0 auto;
+        border-bottom: 10px solid #0025FF;
+        border-left: 10px solid #0025FF;
+        margin-bottom: 20px;
     }
 
     .projects h1 {
-        font-size: 30px;
+        font-size: 56px;
     }
 
     .projects h2 {
-        margin: 15px;
         font-size: 24px;
+        margin-left: 12px;
+        margin-bottom: 10px;
+        text-align: left;
     }
 
     .projects p {
-        width: 60%;
-        margin: 0 auto;
+        font-size: 18px;
+        width: 70%;
+        margin-left: 12px;
+        text-align: left;
     }
 
     .text-details {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         margin: 0 auto;
     }
 
     .project-actions {
-        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 12px;
+        margin-bottom: 20px;
     }
 
     .tags {
-        margin: 0 auto;
+        font-size: 12px;
         margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 12px;
     }
 
 }
 
 /* Tablet */
-@media (min-width: 391px) and (max-width: 1024px) {
+@media (min-width: 376px) and (max-width: 1024px) {
     .projectimg {
         width: 200px;
         /* Adjust image width for tablets */
