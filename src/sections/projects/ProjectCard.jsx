@@ -1,5 +1,5 @@
 import './projects.css';
-import repoData from './repo-data.json'; // Assuming you have a JSON file with project data
+import repoData from './repo-data.json';
 import { Heading } from '/src/components/typography/Heading.jsx';
 import { Image } from '/src/components/images/Image.jsx';
 import { Tag } from '/src/components/typography/Tag.jsx';
@@ -7,11 +7,18 @@ import { Paragraph } from '/src/components/typography/Paragraph.jsx';
 import { Button } from '/src/components/button/Button.jsx';
 
 export const ProjectCard = ({ repositories }) => {
+    // Filter and match repositories with data in repoData.projects
+    const filteredRepos = repositories.filter((repo) => {
+        return repoData.projects.some((data) => data.repoName === repo.name);
+    });
+
+    // Sort the filtered repositories by their creation date (most recent first)
+    filteredRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
     return (
         <>
-            {repositories.map((repo) => {
+            {filteredRepos.map((repo) => {
                 const projectName = repo.name;
-                const cleanProjectName = projectName.replace(/-/g, " "); // Cleaning the project name
 
                 // Find the corresponding data in repoData.projects based on repoName
                 const matchingData = repoData.projects.find((data) => data.repoName === repo.name);
@@ -32,29 +39,29 @@ export const ProjectCard = ({ repositories }) => {
                         </div>
                         <Heading
                             level={3}
-                            text={cleanProjectName}
+                            text={matchingData.publicName}
                             aria-label="This is the main heading"
                             className="project-card-heading"
                         />
                         <Paragraph
-                            text={matchingData.description} // Assuming you have a description property
+                            text={repo.description} // Retrieve the description from the API
                         />
                         <section className="tags">
                             {/* Add tags if available */
-                            matchingData.tags.map((tag, index) => (
-                                <Tag key={index} text={tag} className="tag" />
-                            ))}
+                                matchingData.topics.map((topics, index) => (
+                                    <Tag key={index} text={topics} className="tag" />
+                                ))}
                         </section>
                         <Button
                             icon="/assets/icons/live-demo.svg" // Replace with the actual icon path
                             label="Live demo"
-                            link={matchingData.netlifyUrl}
+                            link={matchingData.netlifyUrl} // Use the URL from the JSON data
                             className="netlify-btn"
                         />
                         <Button
                             icon="/assets/icons/github-btn.svg" // Replace with the actual icon path
                             label="View the code"
-                            link={matchingData.repoName}
+                            link={repo.svn_url} // Retrieve GitHub link from the API
                             className="github-btn"
                         />
                     </article>
