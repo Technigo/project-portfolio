@@ -1,6 +1,6 @@
 import React from "react";
-import LinkedBtn from "./LinkedBtn";
-import GithubBtn from "./GithubBtn";
+import LinkedBtn from "./buttons/LinkedBtn";
+import GithubBtn from "./buttons/GithubBtn";
 import "./contact.css";
 
 const Contact = () => {

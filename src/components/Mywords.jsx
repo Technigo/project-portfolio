@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ReadArticleBtn from "./ReadArticleBtn";
+import ReadArticleBtn from "./buttons/ReadArticleBtn";
 import articlesData from "../data/articles.json";
 import './mywords.css';
 
