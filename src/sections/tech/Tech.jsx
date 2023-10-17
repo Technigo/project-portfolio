@@ -1,4 +1,4 @@
-import './Tech.css'
+import './tech.css'
 import { Heading } from '/src/components/typography/Heading.jsx';
 import { Paragraph } from '/src/components/typography/Paragraph.jsx';
 
