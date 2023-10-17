@@ -7,10 +7,10 @@ import './contact.css';
 export const ContactPicture = () => {
     return (
         <div className="">
-            <div className="ContactPicture" aria-label="CV Picture of Isa Robertini">
+            <div className="ContactPicture">
                 <img src={ContactPic} className="CvPic" alt="CV Picture of Isa Robertini" />
             </div>
-            <div className="cvPicture" aria-label="CV Picture of Isa Robertini">
+            <div className="cvPicture">
                 <img src={CvPic} className="CvPic" alt="CV Picture of Isa Robertini" />
             </div>
         </div>
