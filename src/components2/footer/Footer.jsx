@@ -7,7 +7,7 @@ export const Footer = () => {
     <div className="footer">
       <p className="moving-text">
         Emmy Dieden • Fullstack developer • Emmy Dieden • Fullstack Developer •
-        Emmy Dieden • Fullstack Developer • Emmy Dieden • Fullstack Developer{" "}
+        Emmy Dieden • Fullstack Developer • Emmy Dieden • Fullstack Developer • Fullstack Developer • Emmy Dieden • Fullstack Developer • Fullstack Developer • Emmy Dieden • Fullstack Developer{" "}
       </p>
     </div>
   );

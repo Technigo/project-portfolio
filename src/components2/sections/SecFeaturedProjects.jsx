@@ -27,6 +27,8 @@ export const SecFeaturedProjects = () => {
     fetchProjects();
   }, []) //Using useEffect to do fetch when the component is mounted first time. 
 
+  {console.log(projects)}
+
   return (
     <>
       <div>

@@ -11,8 +11,8 @@ import { Footer } from "./components2/footer/Footer";
 
 function App() {
   return (
-    <>
-      <div>
+    
+      <div className="main-section">
         <SecPresentation />
         <SecTech />
         <SecFeaturedProjects />
@@ -21,7 +21,7 @@ function App() {
         <SecContact />
         <Footer />
       </div>
-    </>
+    
   );
 }
 
