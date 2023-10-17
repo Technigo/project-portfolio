@@ -2,7 +2,11 @@ import "./Animation.css"
 
 export const Animation = () => {
   return (
-    <h3 className="rolling-text">Klaudia Wróblewska· Frontend Developer</h3>
+    <div className="footer">
+    <p className="moving-text">
+    Klaudia Wróblewska· Frontend Developer
+    </p>
+</div>
   )
 }
 

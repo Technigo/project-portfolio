@@ -1,42 +1,29 @@
-/* .rolling-text {
-  background-color: aqua;
-  width: 100%;
-  white-space: nowrap;
-  font-size: 1.5rem;
-  position: absolute;
-  transform: translateY(-50%);
-  animation: roll 10s linear infinite;
-}
 
-@keyframes roll {
-  0% {
-    transform: translateX(100%) translateY(-50%);
-  }
-  100% {
-    transform: translateX(-100%) translateY(-50%);
-  }
-} */
-h3{
+.footer {
+  margin: 0 -75px;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+  position: relative;
+  overflow: hidden;
   background-color: var(--firstly-color);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   color: white;
 }
 
-/*  
-.rolling-text {
-overflow: hidden;
-white-space: nowrap;
-font-size: 1rem;
-text-align: center;
-width: 100%;
+.moving-text {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+animation: ticker 15s linear infinite;
 }
 
 @keyframes ticker {
-0% {
-transform: translateX(calc(-100% - 35vw)) ;
-}
-100% {
-transform: translateX(calc(100% + 35vw));
-}
-} */
+  0% {
+  transform: translateX(calc(100% - 35vw)) ;
+  }
+  100% {
+  transform: translateX(calc(-100% + 35vw));
+  }
+  }
