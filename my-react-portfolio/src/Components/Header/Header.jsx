@@ -6,23 +6,27 @@ import "./Header.css"
 
 export const Header = () => {
   
-
+const aboutMe = "After completing my studies and gaining experience as a steel construction technologist with SolidWorks and CAD design, I decided to change my career and started learning web development. Currently studying at Technigo for Web Development Bootcamp."
   return (
   <>
       <header>
         <div className="header-wrapper">
-    <section className="heading-wrapper">
-      <p>Hi, I &apos; m Klaudia Wróblewska </p>
+               <div className="image-content">
+                    <div className="image-cropper">
+                    <MyPhoto className="person-img"/>
+                    </div>
+          </div>
+          <section className="heading-wrapper">
+      <p className="header-paragraph">Hi, I &apos; m Klaudia Wróblewska </p>
           <CardHeading className="blue-heading" text="Frontend Developer" />
         </section>
-      <section className="description-wrapper">
-        <MyPhoto className="person-img"/>
-             <Description className="header-paragraph" text="After completing my studies and gaining experience as a steel construction technologist with SolidWorks and CAD design, I decided to change my career and started learning web development. Currently studying at Technigo for Web Development Bootcamp." />
-          </section>
+            <Description className="header-description" text={aboutMe} />
         </div>
-      
-      <img src="./Arrow.svg" alt="arrow" className="arrow" />
-  </header>
+        <div className="arrow">
+        <img src="./arrow.svg" alt="arrow" className="arrow" />
+        </div>
+      </header>
+    
     </>
   )
 }
