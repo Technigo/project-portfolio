@@ -1,4 +1,4 @@
-//Import react if needed here
+
 import { ProfilePhoto } from "./Reusablecomponents/ProfilePhoto.jsx";
 
 export const Hello1 = () => {

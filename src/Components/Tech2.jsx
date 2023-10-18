@@ -1,4 +1,4 @@
-//import React from 'react'
+
 
 export const Tech2 = () => {
     return (
