@@ -125,35 +125,27 @@ function MyProjects() {
 
             return (
               <div key={repo.id} className="project-item">
-                <img src={project.thumbnail} alt={`${project.name} thumbnail`} className="project-thumbnail"/>
-                <h3 className="project-name">{project.name}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-techniques">
-                  {project.techniques.split(', ').map((technique, index) => (
-                    <div key={index} className="technique-box">
-                      {technique}
-                    </div>
-                  ))}
-                </div>
-                <div className="project-links">
-                  <a
-                    href={codeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-view"
-                  >
-                    <img src={ViewCodeButton} alt="View Code Button" />
-                  </a>
-                  <a
-                    href={netlifyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-live"
-                  >
-                    <img src={LiveDemoButton} alt="Live Demo Button" />
-                  </a>
-                </div>
+              <img src={project.thumbnail} alt={`${project.name} thumbnail`} className="project-thumbnail"/>
+              <div className="project-content">
+                  <h3 className="project-name">{project.name}</h3>
+                  <p className="project-description">{project.description}</p>
+                  <div className="project-techniques">
+                      {project.techniques.split(', ').map((technique, index) => (
+                          <div key={index} className="technique-box">
+                              {technique}
+                          </div>
+                      ))}
+                  </div>
+                  <div className="project-links">
+                      <a href={codeUrl} target="_blank" rel="noopener noreferrer" className="btn-view">
+                          <img src={ViewCodeButton} alt="View Code Button" />
+                      </a>
+                      <a href={netlifyUrl} target="_blank" rel="noopener noreferrer" className="btn-live">
+                          <img src={LiveDemoButton} alt="Live Demo Button" />
+                      </a>
+                  </div>
               </div>
+          </div>
             );
           }
 
