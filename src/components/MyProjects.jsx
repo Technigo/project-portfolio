@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import ViewCodeButton from '../assets/View-Code-Button.svg';
 import LiveDemoButton from '../assets/Live-Demo-Button.svg';
+import paperFlowerNews from '../assets/WeekNewsapp.jpg';
+import Week0Businesswebsite from '../assets//Week0Businesswebsite.jpg';
+import Week1Pizza from '../assets//Week1Pizza.jpg';
+import Week2Chatbot from '../assets/Week2Chatbot.jpg';
+import Week3GuessWho from '../assets/Week3GuessWho.jpg';
+import Week4Weather from '../assets/Week4Weather.jpg';
+import Week5Music from '../assets/Week5Music.jpg';
+import Week6Christmas from '../assets/Week6Christmas.jpg';
+import Week7Happy from '../assets/Week7Happy.jpg';
 
 
 
@@ -21,46 +30,55 @@ const projectDetails = {
     name: 'Technigo Week 7 Happy Thoughts',
     description: 'The Happy Thoughts project is an application which can be described as happy and nice twitter.',
     techniques: 'React, API',
+    thumbnail: Week7Happy
   },
   'project-survey-vite': {
     name: 'Technigo Week 6 Christmas Survey App',
     description: 'The Christmas Survey App is a fun and interactive survey about Christmas. It features radio buttons, checkboxes, and a radio handler.',
     techniques: 'React, pair-programming',
-  },
+    thumbnail: Week6Christmas
+},
   'project-music-releases-vite': {
     name: 'Technigo Week 5 Music Releases',
     description: 'The Music Releases project displays the latest music releases from the time of the API.',
     techniques: 'React, Spotify API, CSS',
-  },
+    thumbnail: Week5Music
+},
   'project-weather-app': {
     name: 'Technigo Week 4 Weather App',
     description: 'The Weather App provides current weather information for Stockholm.',
     techniques: 'React, OpenWeather API, CSS, HTML, pair-programming',
-  },
+    thumbnail: Week4Weather
+},
   'project-guess-who': {
     name: 'Technigo Week 3 Guess Who Game',
     description: 'The Guess Who Game is a classic game where you guess the hidden character.',
     techniques: 'HTML, CSS, JavaScript',
-  },
+    thumbnail: Week3GuessWho
+},
   'project-chatbot': {
     name: 'Chatbot Built in JavaScript',
     description: 'The Chatbot app is a conversational AI-powered tool designed to take your food order.',
     techniques: 'JavaScript, HTML5, CSS3',
-  },
+    thumbnail: Week2Chatbot
+},
   'project-pizza': {
     name: 'Technigo Week 1 Pizza App',
     description: 'The Pizza App allows you to customize and order your favorite pizza using a simple user interface.',
     techniques: 'HTML5, CSS3, JavaScript',
-  },
+    thumbnail: Week1Pizza
+},
   'project-business-site': {
     name: 'Technigo Precourse Business Website',
     description: 'The Business Website is a simple website for a fictional tattoo parlor.',
     techniques: 'HTML5, CSS3',
+    thumbnail: Week0Businesswebsite
   },
   'project-news': {
     name: 'Technigo News App',
     description: 'The News App displays the latest news from the world of paper flowers.',
     techniques: 'React, News API',
+    thumbnail: paperFlowerNews
   },
 };
 
@@ -107,6 +125,7 @@ function MyProjects() {
 
             return (
               <div key={repo.id} className="project-item">
+                <img src={project.thumbnail} alt={`${project.name} thumbnail`} className="project-thumbnail"/>
                 <h3 className="project-name">{project.name}</h3>
                 <p className="project-description">{project.description}</p>
                 <div className="project-techniques">
