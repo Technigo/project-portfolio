@@ -10,7 +10,6 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
     <div className="container">
       <TopSection />
       <TechSection />
@@ -19,7 +18,6 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
-    </div>
     </div>
   );
 }

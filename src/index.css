@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: blue;
+  background-color: transparent;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,6 +16,12 @@
 }
 * {
   box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;  /* Centers the container */
 }
 
 
@@ -28,7 +34,6 @@ letter-spacing: 0em;
 text-align: left;
 color: black;
 }
-
 
 h2 {
   font: Montserrat;
@@ -48,21 +53,14 @@ letter-spacing: 0em;
 text-align: left;
 color: #000000;
 }
-.container {
-  width: 1512px; /* Changed to 100% for responsiveness */
-  max-width: 1512px; /* Set max-width to the value you originally wanted */
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Retained your padding */
-}
+
 .top-section {
-  width: 100%; /* Full width of the parent container */
-  height: auto;
-  padding: 128px 0;
-  background-color: #FFFFFF;
+  width: 100%;
+  padding: 128px 0; /* Adjust the padding as needed */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 337px 0 336px; /* Left margin 336px, Right margin 337px */
+  flex-direction: column;
+  align-items: center; /* This keeps your content centered horizontally */
+  background-color: #FFFFFF;
 }
 
 .heading-container {
@@ -140,6 +138,15 @@ color: #000000;
   height: 100px;
 }
 
+.my-projects {
+  width: 100%;
+  padding: 128px 0; /* Adjust the padding as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This keeps your content centered horizontally */
+  background-color: #FFFFFF;
+}
+
 .centered-container {
   width: 100%;
   display: flex;
@@ -153,9 +160,10 @@ color: #000000;
 }
 
 .project-list {
-  margin-left: 346px; /* Add margin-left to push it 346px from the left of its containing element */
-  gap: 128px; /* Add gap between its children */
-  background-color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap; /* Allows the projects to wrap to the next line */
+  justify-content: space-between; /* Evenly spaced projects */
+  width: 80%; /* Adjust the width based on your design preference */
 }
 
 .classh2project {
@@ -180,17 +188,24 @@ color: #000000;
   font-weight: 600;
   line-height: normal;
   display: flex;
-  gap: 6px; /* Add a 6px gap between techniques */
+  gap: 8px; /* Add a 6px gap between techniques */
   flex-wrap: wrap;
+  margin-bottom: 16px; 
 }
 
 .technique-box {
   background-color: #000;
   color: #FFF;
+  border: 1px solid #333; /* Border color */
   padding: 4px 8px;
   border-radius: 4px;
   margin-right: 4px; /* Add right margin for the 4px gap between words */
   margin-bottom: 4px; /* Add bottom margin for the 4px gap between lines */
+}
+
+.project-links {
+  display: flex;
+  gap: 16px; /* Space between the View Code and Live Demo buttons */
 }
 .btn-live,
 .btn-view {
@@ -256,46 +271,40 @@ color: #000000;
 
 
   .skills {
-  width: 100%;
-  height: auto;
-  padding: 128px 0;
-  background-color: #0B24F5;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: column;
+    width: 100%;
+    padding: 128px 0;
+    background-color: #0B24F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  
   .skills-header {
     color: #FFF;
-    font: Montserrat;
+    font: 'Montserrat', sans-serif;
     font-size: 80px;
     font-weight: 700;
-    line-height: 98px;
-    letter-spacing: 0em;
     text-align: center;
-    margin-left: 647px;
     margin-bottom: 128px;
   }
+  
   .skills-columns {
     display: flex;
     gap: 64px;
-    flex-direction: row; /* Set to row for columns in a row */
-    width: auto; /* Adjust as needed */
-    height: auto; /* Adjust as needed */
+    width: 80%; /* Adjust width as per requirement */
   }
+  
   .skills-column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
-    flex: 1;
     color: white;
     flex: 1;
-    margin-left: 336px; 
   }
   
   .skills-column ul {
     list-style: none;
+    padding-left: 0;
   }
   
   .skills-column ul li {
@@ -303,39 +312,24 @@ color: #000000;
   }
   
   .code-header {
-    background: #EB5577;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    color: white;
+    background-color: #EB5577;
+    padding: 10px;
   }
   
   .toolbox-header {
-    background: #6DB486;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    color: white;
+    background-color: #6DB486;
+    padding: 10px;
   }
   
   .more-header {
-    background: #2483E0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    color: white;
+    background-color: #2483E0;
+    padding: 10px;
   }
   
   .skills-item {
     color: #FFF;
-    font: Hind;
+    font: 'Hind', sans-serif;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
   
  
