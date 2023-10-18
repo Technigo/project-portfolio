@@ -11,12 +11,43 @@
   text-decoration: none;
   border-radius: 25px;
 }
-.button img {
-  height: 48px;
-  width: 48px;
-  padding-right: 16px;
-}
+
 .button-content-wrapper {
   display: flex;
   align-items: center;
+}
+
+.button-image {
+  height: 48px;
+  width: 48px;
+  padding-right: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.demo-button .button-image {
+  background-image: url(/btn-live_demo-globe-default.svg);
+}
+
+.demo-button:hover .button-image {
+  background-image: url(/btn-live_demo-globe-hover.svg);
+}
+
+.demo-button:hover {
+  background-color: #0b24f5;
+  color: #fff;
+}
+
+.code-button .button-image {
+  background-image: url(/btn-view-code-default.svg);
+}
+
+.code-button:hover .button-image {
+  background-image: url(/btn-view-code-hover.svg);
+}
+
+.code-button:hover {
+  background-color: #eb5577;
+  color: #fff;
 }

@@ -25,14 +25,12 @@ export const ProjectCard = ({ project }) => {
             className={`demo-button`}
             buttonName={`Live Demo`}
             link={project.homepage}
-            icon={`/btn-live_demo-globe-default.svg`}
             iconAlt={`Web icon`}
           />
           <Button
             className={`code-button`}
             buttonName={`View the Code`}
             link={project.html_url}
-            icon={`/btn-view-code-default.svg`}
             iconAlt={`GitHub logo`}
           />
         </div>

@@ -14,10 +14,10 @@ export const App = () => {
       <Intro />
       <Tech />
       <ProjectList />
-      <MyWords />
+      {/* <MyWords />
       <Skills />
       <Contact />
-      <TickerTape />
+      <TickerTape /> */}
     </div>
   );
 };
