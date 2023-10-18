@@ -25,6 +25,7 @@ export const ProjectList = () => {
       <div className="individual-project-info">
         {projectList
           .filter((project) => project.description)
+          .sort((a, b) => b.id - a.id)
           .map((project) => (
             <ProjectCard project={project} key={project.id} />
           ))}
