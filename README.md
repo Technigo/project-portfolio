@@ -9,7 +9,7 @@ Hello1.jsx, Tech2.jsx, FeaturedP3.jsx, Mywords.jsx, Skills4.jsx, Contact5.jsx, F
 ### Info and Problem-solving
 
 The project was the biggest one so far. I had four days to try to finalize it. Re-usable components and accessibility was new this week. Accessibility is something I've worked with before, allthough not in coding, but this made this week extra interesting for me. And I think I've got a lot for free keeping the accessibility in my mind throughout the project. The test with Lighthouse gave the following values:
-Performance: 100, Accessibility: 88, Best practices: 95, SEO: 80.
+Performance: 100, Accessibility: 89, Best practices: 100, SEO: 90.
 
 Main part of time was put into the styling that was handed in the assignment. Stack overflow, course material and my team were used when problems occured. Got help and helped others which has been really good for the learning process!
 
