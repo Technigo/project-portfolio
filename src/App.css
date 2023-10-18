@@ -1,3 +1,4 @@
+/*CSS reset*/
 * {
   margin: 0;
   padding: 0;
@@ -51,12 +52,12 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-
   grid-template-areas:
     "nametitle nametitle nametitle nametitle"
     "profilephoto intro intro intro";
   padding: 220px 220px 220px 332px;
 }
+
 
 .name-title {
   grid-area: nametitle;
@@ -104,6 +105,41 @@ h3 {
   justify-content: center;
   /* Applies the animation to the .arrow element */
   animation: moveUpDown 1s linear infinite;
+}
+
+
+/* ----- Media queries ----- */
+/* Mobile */
+@media (max-width: 743px) {
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro {
+    order: 3;
+    text-align: left;
+    align-self: center;
+  }
+
+  .name-title {
+    order: 2;
+    text-align: left;
+  }
+
+  .name-title h1 {
+    font-size: 32px;
+  }
+
+  .name-title h3 {
+    font-size: 18px;
+  }
+
+  .profile-photo {
+    order: 1;
+  }
 }
 
 /* ------ Tech2 secion ----- */
