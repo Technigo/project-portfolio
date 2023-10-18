@@ -1,3 +1,5 @@
+//Entry point for rendering components. 
+
 import React from 'react'
 import './App.css'
 
@@ -10,6 +12,7 @@ import { Contact5 } from './Components/Contact5'
 import { Footer6 } from './Components/Footer6'
 
 const App = () => {
+  //Renders components
   return (
     <div className="main-wrapper">
       <Hello1 />

@@ -1,4 +1,4 @@
-
+//Tech section with info and divs to show in broswer.
 
 export const Tech2 = () => {
     return (

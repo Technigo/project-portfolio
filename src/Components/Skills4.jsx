@@ -1,4 +1,4 @@
-
+//Skills section with div's and info.
 
 export const Skills4 = () => {
     return (

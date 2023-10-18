@@ -1,6 +1,7 @@
-
+//Import of reusable component 'ProfilePhoto'
 import { ProfilePhoto } from "./Reusablecomponents/ProfilePhoto.jsx";
 
+// Export without props. Displays the Hello/Header-section. ProfilePhoto, reusable component, is imoprted and below it's exported.
 export const Hello1 = () => {
     return (
         <header>
@@ -8,7 +9,7 @@ export const Hello1 = () => {
                 <div className="name-title">
                     <h3>Hi, I'm Idah Collin</h3>
                     <h1>Frontend Developer</h1> </div>
-                <div className="profile-photo"><ProfilePhoto /> </div>{/*Reusable component*/}
+                <div className="profile-photo"><ProfilePhoto /> </div>
                 <div className="intro"><p> I'm a junior frontend developer known for my structure and leader-skills. I create user-friendly applications and solve complex issues. My drive of getting the whole team succeed makes me a valuable asset to any project.</p></div>
             </div>
             <div className="arrow">

@@ -13,7 +13,7 @@ Performance: 100, Accessibility: 88, Best practices: 95, SEO: 80.
 
 Main part of time was put into the styling that was handed in the assignment. Stack overflow, course material and my team were used when problems occured. Got help and helped others which has been really good for the learning process!
 
-With more time I would (I will) work on the styling, comment my code and make it reponsive. 
+With more time I would (I will) work on the styling and make it reponsive. 
 
 
 ##### View it live

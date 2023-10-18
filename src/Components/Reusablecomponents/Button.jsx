@@ -1,3 +1,4 @@
+//Reusable component
 
 export const Button = ({ link, buttonName, icon, iconAlt, className }) => {
     return (

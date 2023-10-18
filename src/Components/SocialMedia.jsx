@@ -1,5 +1,6 @@
-export const SocialMedia = () => {
+//Component to display social media icons and linking to profiles.
 
+export const SocialMedia = () => {
 
     return (
         <div className="social-media-wrapper">

@@ -1,5 +1,6 @@
 //Leaving this component like this until I know if I'll use it in my portfolio or not. If I create articles further on I'll use API and fetch it.
 
+//Export with info to show in browser.
 export const Mywords = () => {
     return (
         <div className="mywords-section">
