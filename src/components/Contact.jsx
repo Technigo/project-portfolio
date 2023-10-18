@@ -1,6 +1,7 @@
 import React from 'react';
 import linkedinIcon from '../assets/linkedin.svg'; // Import your LinkedIn icon SVG
 import githubIcon from '../assets/github.svg'; // Import your GitHub icon SVG
+import profileImage from '../assets/original.jpg';
 
 function Contact() {
   const linkedinLink = 'https://se.linkedin.com/in/alexandra-meija-0757403b';
@@ -9,7 +10,7 @@ function Contact() {
   return (
     <div className="contact">
       <h2 className="classh2contact">Let's talk</h2>
-      <img src="src/original.jpg" alt="Your Name" className="profile-image" />
+      <img src={profileImage} alt="Your Name" className="profile-image" />
       <p className="contact-text">You can reach me here:</p>
       <ul className="contact-list">
         <li className="contact-link">
