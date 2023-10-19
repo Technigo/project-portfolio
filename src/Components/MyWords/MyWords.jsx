@@ -34,7 +34,7 @@ export const MyWords = () => {
               link={
                 "https://in.pinterest.com/pin/data-science--942800503220719912/"
               }
-              icon={`/btn-article-default.svg`}
+              // icon={`/btn-article-default.svg`}
               iconAlt={`Article logo`}
               buttonName={`Read article`}
             />
@@ -60,7 +60,7 @@ export const MyWords = () => {
             <Button
               className={`read-article`}
               link={"https://in.pinterest.com/pin/612630355540252288/"}
-              icon={`/btn-article-default.svg`}
+              // icon={`/btn-article-default.svg`}
               iconAlt={`Article logo`}
               buttonName={`Read article`}
             />
@@ -89,7 +89,7 @@ export const MyWords = () => {
               link={
                 "https://in.pinterest.com/pin/data-science--942800503220719912/"
               }
-              icon={`/btn-article-default.svg`}
+              // icon={`/btn-article-default.svg`}
               iconAlt={`Article logo`}
               buttonName={`Read article`}
             />
@@ -116,7 +116,7 @@ export const MyWords = () => {
             <Button
               className={`read-article`}
               link={"https://in.pinterest.com/pin/612630355540252288/"}
-              icon={`/btn-article-default.svg`}
+              // icon={`/btn-article-default.svg`}
               iconAlt={`Article logo`}
               buttonName={`Read article`}
             />
