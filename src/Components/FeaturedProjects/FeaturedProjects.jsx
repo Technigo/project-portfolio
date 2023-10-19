@@ -31,18 +31,24 @@ export const FeaturedProjects = () => {
     fetch("https://api.github.com/users/InnaKokic/repos")
       .then((response) => response.json())
       .then((data) => {
-        const formattedRepos = data.map((repo) => ({
-          name: formatRepoName(repo.name),
-          topics: repo.topics,
-          html_url: repo.html_url,
-          description: repo.description || defaultDescription,
-          imageUrl: getImageUrlForRepo(repo.name), // Fetch the image URL
-        }));
-
+        const formattedRepos = data
+          .filter((repo) => {
+            //filter to only show repos that exist in the repoImages json
+            return repoImages.find((img) => img.repoName === repo.name);
+          })
+          .map((repo) => ({
+            name: formatRepoName(repo.name),
+            topics: repo.topics,
+            html_url: repo.html_url,
+            description: repo.description || defaultDescription,
+            imageUrl: getImageUrlForRepo(repo.name), // Fetch the image URL
+          }));
+  
         setRepos(formattedRepos);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
+  
 
   return (
     <section className="projects-section">
