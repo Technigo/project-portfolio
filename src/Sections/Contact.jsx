@@ -6,6 +6,8 @@ import { faStackOverflow } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
+import "./Contact.css";
+
 export const Contact = () => {
     const sectionId = 6;
 

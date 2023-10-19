@@ -12,19 +12,22 @@ export const MyWords = () => {
       imageURL: "/images/article_img_default.jpg",
       title: "Article One",
       date: "June 2023",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et. Nisl condimentum id venenatis a condimentum vitae."
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et. Nisl condimentum id venenatis a condimentum vitae.",
+      link: "#"
     },
     {
       id: 2,
       imageURL: "/images/article_img_default.jpg",
       title: "Article Two",
       date: "September 2023",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et. Nisl condimentum id venenatis a condimentum vitae."
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et. Nisl condimentum id venenatis a condimentum vitae.",
+      link: "#"
     }
   ];
 
   return (
     <div className="article-list-wrapper">
+      <img src="/images/wavedivider.png" alt="" className="wavy-divider" />
       <BigHeadlines sectionId={sectionId}/>
       <div className="article-list">
         {articleList.map((article) => {
@@ -35,6 +38,7 @@ export const MyWords = () => {
               title={article.title} 
               date={article.date} 
               articleText={article.text}
+              link={article.link}
               sectionId={sectionId}
             />
           )
