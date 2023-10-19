@@ -15,7 +15,7 @@ Main part of time was put into the styling that was handed in the assignment. St
 
 I started to style the desk-top as it seemed to be the trickiest design.
 
-With more time I would (I will) work on the reponsiveness for tablets. 
+With more time I would (I will) work on the reponsiveness for tablets and also split the css-file into smaller files as it's very heavy now.
 
 
 ##### View it live
