@@ -78,13 +78,11 @@ export const MyWords = () => {
                                         src={readArticle}
                                         alt=""
                                         aria-labelledby={myword.link}
-                                        role="button"
                                         tabIndex={0} />
                                     <img className="read-article-hover"
                                         src={readArticleHover}
                                         alt=""
                                         aria-labelledby={myword.link}
-                                        role="button"
                                         tabIndex={0}
                                     />
                                 </button>
