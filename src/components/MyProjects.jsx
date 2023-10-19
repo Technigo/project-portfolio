@@ -10,12 +10,12 @@ import Week4Weather from '../assets/Week4Weather.jpg';
 import Week5Music from '../assets/Week5Music.jpg';
 import Week6Christmas from '../assets/Week6Christmas.jpg';
 import Week7Happy from '../assets/Week7Happy.jpg';
-import Week8Movie from '../assets/Week8Movie.jpg';
+import Week9Movie from '../assets/Week9Movie.jpg';
 
 
 
 const projectOrder = [
-  'project-movies',
+  'project-movies-vite',
   'project-happy-thoughts-vite',
   'project-survey-vite',
   'project-music-releases-vite',
@@ -28,11 +28,11 @@ const projectOrder = [
 ];
 
 const projectDetails = {
-  'project-movies': {
-    name: 'Technigo Week 8 Movieapp',
-    description: 'A movieapp which displays the most popular movies right now with desciprion and ratings',
+  'project-movies-vite': {
+    name: 'Technigo Week 9 Movieapp',
+    description: 'A movieapp which displays the most popular movies right now with description and ratings',
     techniques: 'React router, API',
-    thumbnail: Week8Movie
+    thumbnail: Week9Movie
   },
   'project-happy-thoughts-vite': {
     name: 'Technigo Week 7 Happy Thoughts',
@@ -91,7 +91,7 @@ const projectDetails = {
 };
 
 const netlifyUrls = {
-  'project-movies': 'https://subtle-macaron-96a6c5.netlify.app/',
+  'project-movies-vite': 'https://subtle-macaron-96a6c5.netlify.app/',
   'project-happy-thoughts-vite': 'https://cocofnashappythoughts.netlify.app/',
   'project-survey-vite': 'https://stunning-faloodeh-3e176a.netlify.app/',
   'project-music-releases-vite': 'https://cocofnasspotify.netlify.app/',
