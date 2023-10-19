@@ -72,7 +72,7 @@ export const MyWords = () => {
                                 target="_blank"
                                 rel='noopener noreferrer'
                                 aria-label="link to article">
-                                <button type="button">
+                                <button type="button" aria-label="go to article">
                                     <img
                                         className="read-article"
                                         src={readArticle}

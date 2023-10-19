@@ -24,7 +24,7 @@ export const ProjectCard = ({ name, image, description, tags, netlify, github })
                         rel="noopener noreferrer"
                         aria-label="link to the github"
                     >
-                        <button type="button">
+                        <button type="button" aria-label="go to the github">
                             <img
                                 className="github-btn"
                                 src={githubBtn}
@@ -44,7 +44,7 @@ export const ProjectCard = ({ name, image, description, tags, netlify, github })
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="link to live demo">
-                        <button type="button">
+                        <button type="button" aria-label="go to live demo">
                             <img
                                 className="livedemo-btn"
                                 src={liveDemoBtn}

@@ -28,7 +28,7 @@ export const Footer = () => {
                     rel="noopener noreferrer"
                     aria-label="link to github account"
                 >
-                    <button type="button">
+                    <button type="button" aria-label="go to github account">
                         <img className="btn-github" src={BtnGithub} alt="github image" />
                         <img className="btn-github-hover" src={BtnGithubHover} alt="github image hovered" />
                         <span></span>
@@ -40,7 +40,7 @@ export const Footer = () => {
                     rel="noopener noreferrer"
                     aria-label="link to Linkedin"
                 >
-                    <button type="button">
+                    <button type="button" aria-label="go to Linkedin">
                         <img className="btn-linkedin" src={BtnLinkedin} alt="linkedin image" />
                         <img className="btn-linkedin-hover" src={BtnLinkedinHover} alt="linkedin image hovered" />
                         <span></span>
