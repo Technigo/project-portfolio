@@ -91,7 +91,7 @@ const projectDetails = {
 };
 
 const netlifyUrls = {
-  'project-movies': 'https://subtle-macaron-96a6c5.netlify.app/movielist/',
+  'project-movies': 'https://subtle-macaron-96a6c5.netlify.app/',
   'project-happy-thoughts-vite': 'https://cocofnashappythoughts.netlify.app/',
   'project-survey-vite': 'https://stunning-faloodeh-3e176a.netlify.app/',
   'project-music-releases-vite': 'https://cocofnasspotify.netlify.app/',
