@@ -1,7 +1,7 @@
 import { Introduction } from "./Sections/Introduction/Introduction"
 import { Tech } from "./Sections/Tech/Tech" 
 import { FeaturedProjects } from "./Sections/FeaturedProjects/FeaturedProjects"
-import { MyWords } from "./Sections/MyWords"
+import { MyWords } from "./Sections/MyWords/MyWords"
 import { Skills } from "./Sections/Skills"
 import { LetsTalk } from "./Sections/LetsTalk"
 import { TickerTape } from "./Sections/TickerTape"
@@ -16,8 +16,8 @@ export const App = () => {
       <Introduction />
       <Tech />
       <FeaturedProjects />
-
       <MyWords />
+      
       <Skills />
       <LetsTalk />
       <TickerTape />
