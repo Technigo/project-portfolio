@@ -17,8 +17,8 @@ export const Project = ({ project }) => {
             </div>
 
             <div className="button-container">
-                <Buttons url={github} text="View the code" hovColor="github" />
                 <Buttons url={netlify} text="Live demo" hovColor="netlify" />
+                <Buttons url={github} text="View the code" hovColor="github" />
             </div>
         </>
     )

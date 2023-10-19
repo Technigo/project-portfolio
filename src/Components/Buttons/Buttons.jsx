@@ -11,7 +11,7 @@ export const Buttons = ({ url, text, hovColor }) => {
             {hovColor === "github" && <img className="github icon-btn" src="../../assets/github.svg" />}
             {hovColor === "netlify" && <img className="netlify icon-btn" src="../../assets/globe.svg" />}
             {/* FOR ARTICLE LATER {hovColor === "github" && <img src="../../assets/github.svg" />} */}
-            <p>{text}</p>
+            <p className="button-text">{text}</p>
         </button>
     )
 }
