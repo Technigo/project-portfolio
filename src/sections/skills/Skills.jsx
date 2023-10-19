@@ -31,8 +31,7 @@ export const Skills = () => {
                             <li>Figma</li>
                             <li>Slack</li>
                             <li>Postman</li>
-                            <li></li>
-                            <li></li>
+
                         </ul>
                     </p>
                 </div>
@@ -41,10 +40,6 @@ export const Skills = () => {
                     <p>
                         <ul>
                             <li>Node.js</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
                         </ul>
                     </p>
                 </div>
@@ -53,10 +48,6 @@ export const Skills = () => {
                     <p>
                         <ul>
                             <li>Agile methology</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
                         </ul>
                     </p>
                 </div>

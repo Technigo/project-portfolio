@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Tech } from './sections/tech/Tech'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'

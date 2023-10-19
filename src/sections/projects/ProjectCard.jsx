@@ -25,9 +25,18 @@ export const ProjectCard = ({ name, image, description, tags, netlify, github })
                         aria-label="link to the github"
                     >
                         <button type="button">
-                            <img className="github-btn" src={githubBtn} alt="github image" />
-                            <img className="github-btn-hover" src={githubBtnHover} alt="github image" />
-                            <span></span>
+                            <img
+                                className="github-btn"
+                                src={githubBtn}
+                                alt="github image"
+                                role="button"
+                                tabIndex={0} />
+                            <img
+                                className="github-btn-hover"
+                                src={githubBtnHover}
+                                alt="github image"
+                                role="button"
+                                tabIndex={0} />
                         </button>
                     </a>
                     <a
@@ -36,9 +45,18 @@ export const ProjectCard = ({ name, image, description, tags, netlify, github })
                         rel="noopener noreferrer"
                         aria-label="link to live demo">
                         <button type="button">
-                            <img className="livedemo-btn" src={liveDemoBtn} alt="Live Demo Button" />
-                            <img className="livedemo-btn-hover" src={liveDemoBtnHover} alt="Live Demo Button" />
-                            <span></span>
+                            <img
+                                className="livedemo-btn"
+                                src={liveDemoBtn}
+                                alt="Live Demo Button"
+                                role="button"
+                                tabIndex={0} />
+                            <img
+                                className="livedemo-btn-hover"
+                                src={liveDemoBtnHover}
+                                alt="Live Demo Button"
+                                role="button"
+                                tabIndex={0} />
                         </button>
                     </a>
                 </div>
