@@ -9,7 +9,6 @@ import { TickerTape } from "./Sections/TickerTape/TickerTape"
 import './App.css'
 
 export const App = () => {
-
   return (
     <>
       <div className="app-wrapper">
