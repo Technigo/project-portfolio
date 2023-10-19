@@ -15,17 +15,35 @@
 }
 
 /* grid parent for skills */
-
 .skills-container {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 60%;
-  justify-content: center;
+  background-color: #0b24f5;
+  color: #ffffff;
+  display: grid;
+}
+
+.skills-box {
+  display: flex;
   align-items: center;
-  border: 2px solid black;
-  text-align: center;
+  justify-content: center;
+  padding: 2em 0;
+  max-width: 80%;
 }
 
 .skills-container ul {
   list-style-type: none;
+}
+
+/*media query for tablet*/
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+  .skills-box {
+    grid-column: span 2;
+  }
+}
+
+/*media query for mobile*/
+@media screen and (max-width: 667px) {
+  .skills-box {
+    grid-column: span 4;
+  }
 }

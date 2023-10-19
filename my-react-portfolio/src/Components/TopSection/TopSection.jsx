@@ -29,11 +29,10 @@ export const TopSection = () => {
               className="profile-image"
             />
             <p className="topsection-text">
-              This is where you sell in your new self. You're happy to combine
-              your previous experience with your new frontend skills or
-              basically use this area to describe yourself the way you see your
-              role in the future. "Frontend developer with a background in
-              communications".
+              Former International School teacher, and Police Officer, turned
+              passionate Frontend developer. Beckie has a Master of Teaching as
+              well as a Bachelor of Computing, and brings both skills and
+              experience to a new career.
             </p>
             <p>
               <a
