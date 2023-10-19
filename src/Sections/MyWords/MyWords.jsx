@@ -1,16 +1,15 @@
+import { Article } from "../../Components/Article/Article"
+import articles from "../../../articles.json"
 import "./MyWords.css"
 
 export const MyWords = () => {
-    const wordsHeader = "My words"
-    let wordsContent = ""
-
     return (
         <>
         <div className="border">
             <div className="grid-parent pink">
                 <div className="section my-words">
-                    <h1>{wordsHeader}</h1>
-                    <h3 className="words-text">{wordsContent}.</h3>
+                    <h1>My words</h1>
+                    {articles.articles.map(article => (<Article key={article.name} article={article} />))}
                 </div>
             </div>
         </div>

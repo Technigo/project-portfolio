@@ -8,8 +8,8 @@ export const Tech = () => {
         <>
         <div className="grid-parent dark">
             <div className="section tech">
-            <h1>{techHeader}</h1>
-            <h3 className="tech-text">{techContent.join(", ")}.</h3>
+                <h1>{techHeader}</h1>
+                <h3 className="tech-text">{techContent.join(", ")}.</h3>
             </div>
         </div>
         </>

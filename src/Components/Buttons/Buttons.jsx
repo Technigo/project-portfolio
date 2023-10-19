@@ -10,7 +10,7 @@ export const Buttons = ({ url, text, hovColor }) => {
         <a href={url} target="_blank" className={hovColor + "-button" + " button"} rel="noreferrer">
             {hovColor === "github" && <img className="github icon-btn" src="../../assets/github.svg" />}
             {hovColor === "netlify" && <img className="netlify icon-btn" src="../../assets/globe.svg" />}
-            {/* FOR ARTICLE LATER {hovColor === "github" && <img src="../../assets/github.svg" />} */}
+            {hovColor === "article" && <img src="../../assets/document.svg" />}
             <p className="button-text">{text}</p>
         </a>
     )

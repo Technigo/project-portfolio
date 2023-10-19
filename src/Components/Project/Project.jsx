@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import { Tags } from "../../Components/Tags/Tags"
-import { Buttons } from "../../Components/Buttons/Buttons"
+import { Tags } from "../Tags/Tags"
+import { Buttons } from "../Buttons/Buttons"
 import "./project.css"
 
 export const Project = ({ project }) => {

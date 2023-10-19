@@ -1,4 +1,4 @@
-import { Project } from "../../Sections/Project/Project"
+import { Project } from "../../Components/Project/Project"
 import { projects } from "../../../projects.json"
 
 export const FeaturedProjects = () => {
