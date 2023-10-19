@@ -18,7 +18,7 @@ const aboutMe = "After completing my studies and gaining experience as a steel c
           </div>
           <section className="heading-wrapper">
       <p className="header-paragraph">Hi, I &apos; m Klaudia Wróblewska </p>
-          <CardHeading className="blue-heading" text="Frontend Developer" />
+          <CardHeading className="green-heading" text="Frontend Developer" />
         </section>
             <Description className="header-description" text={aboutMe} />
         </div>

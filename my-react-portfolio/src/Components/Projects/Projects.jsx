@@ -10,7 +10,7 @@ export const  Projects = () => {
   return (
     <>
        <div className="project-wrapper">
-       <CardHeading className="blue-heading" text="Frontend Developer" />
+       <CardHeading className="green-main-heading" text="Frontend Developer" />
       {projectsArray.map((project, index) => (
         <ProjectCard key={index} projects={project} />
       ))}
