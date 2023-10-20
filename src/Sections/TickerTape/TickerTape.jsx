@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Ticker } from "./Ticker.jsx"
 import "./TickerTape.css"
 
-const data = ["Frida Kristiansson", "|", "Frontend Developer", "|", "Frida Kristiansson", "|", "Frontend Developer", "|", "Frida Kristiansson", "|", "Frontend Developer", "|", "Frida Kristiansson", "|", "Frontend Developer", "|", "Frida Kristiansson", "|", "Frontend Developer", "|"]
+const data = ["Frida Kristiansson", "|", "Frontend Developer", "|", "Frida Kristiansson", "|", "Frontend Developer", "|", "Frida Kristiansson", "|", "Frontend Developer", "|", "Frida Kristiansson", "|", "Frontend Developer", "|", "Frida Kristiansson", "|", "Frontend Developer", "|", "Frida Kristiansson", "|", "Frontend Developer", "|", "Frida Kristiansson", "|", "Frontend Developer", "|", "Frida Kristiansson", "|", "Frontend Developer", "|"]
 
 export const TickerTape = () => {
     const [loading, SetLoading] = useState(true);

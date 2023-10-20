@@ -32,6 +32,10 @@
     from {top: -3rem}
     to {top: 0}
   }
+  @keyframes arrow-icon-large {
+    from {top: -6rem}
+    to {top: 0}
+  }
 
   @media (min-width: 700px) {
     .my-words {
@@ -64,5 +68,16 @@
     .grid-parent .intro {
       max-width: 65dvw;
       grid-column: 4/11;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .grid-parent .intro {
+      max-width: 55dvw;
+      grid-column: 5/10;
+    }
+    .arrow {
+      width: 4.5rem;
+      animation: arrow-icon-large 3.4s ease-in alternate infinite;
     }
   }
