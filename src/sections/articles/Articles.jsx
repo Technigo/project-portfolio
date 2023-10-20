@@ -7,7 +7,6 @@ export const Articles = () => {
   return (
 
     <article className="article-container">
-      <article className="article-wrapper">
         <Heading level={1} text="My Words" className="article-heading" />
         <div className="article-list">
           {articles.map((article, index) => (
@@ -21,7 +20,6 @@ export const Articles = () => {
             />
           ))}
         </div>
-      </article>
     </article>
   );
 };
