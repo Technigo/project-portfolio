@@ -1,7 +1,7 @@
 import React from "react";
 import { ProfilePicture } from "../ProfilePicture/ProfilePicture";
 import { Heading1 } from "../Heading1/Heading1";
-import { Heading3 } from "../Heading3/Heading3";
+import { SubHeading } from "../SubHeading/SubHeading";
 
 import "./Intro.css";
 
@@ -14,7 +14,7 @@ export const Intro = () => {
         </div>
 
         <div className="header-wrapper">
-          <Heading3 text={"Hi, I'm Susanne Ekenheim"} />
+          <SubHeading text={"Hi, I'm Susanne Ekenheim"} />
           <Heading1 className={"info-h1"} text={"Frontend Developer"} />
         </div>
         <div className="info-text">

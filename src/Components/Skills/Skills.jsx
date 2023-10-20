@@ -1,6 +1,6 @@
 import React from "react";
 import { Heading1 } from "../Heading1/Heading1";
-import { Heading3 } from "../Heading3/Heading3";
+import { SubHeading } from "../SubHeading/SubHeading";
 
 import "./Skills.css";
 
@@ -11,7 +11,7 @@ export const Skills = () => {
         <Heading1 className={"skills-heading1"} text={"Skills"} />
         <div className="skills-category">
           <div className="skills-section">
-            <Heading3 className={"skills-heading3 code"} text={"Code"} />
+            <SubHeading className={"skills-heading3 code"} text={"Code"} />
             <ul className="skills-listing">
               <li>HTML5</li>
               <li>CSS3</li>
@@ -23,7 +23,10 @@ export const Skills = () => {
           </div>
 
           <div className="skills-section">
-            <Heading3 className={"skills-heading3 toolbox"} text={"Toolbox"} />
+            <SubHeading
+              className={"skills-heading3 toolbox"}
+              text={"Toolbox"}
+            />
             <ul className="skills-listing">
               <li>Atom</li>
               <li>Postman</li>
@@ -36,7 +39,7 @@ export const Skills = () => {
           </div>
 
           <div className="skills-section">
-            <Heading3
+            <SubHeading
               className={"skills-heading3 upcoming"}
               text={"Upcoming"}
             />
@@ -46,7 +49,7 @@ export const Skills = () => {
           </div>
 
           <div className="skills-section">
-            <Heading3 className={"skills-heading3 more"} text={"More"} />
+            <SubHeading className={"skills-heading3 more"} text={"More"} />
             <ul className="skills-listing">
               <li>Design Lead</li>
               <li>Branding Strategy</li>
