@@ -22,13 +22,17 @@
 
 @media (min-width: 700px) {
     .project-container {
+        height: 28rem;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         margin: 3rem 0;
     }
+    .project-container h4 {
+        margin-top: 0;
+    }
     .project-pic {
         grid-column: 1/span 2;
-        height: 28rem;
+        height: 100%;
         width: 20rem;
         margin-top: 0;
     }
@@ -45,5 +49,21 @@
         gap: 2rem;
         position: absolute;
         bottom: 0;
+    }
+    .button-container .button {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1100px) {
+    .project-container {
+        height: 28rem;
+        margin: 6.4rem 0;
+    }
+    .project-pic {
+        width: 28rem;
+        height: 100%;
+        border-left: 2rem solid var(--primary-color);
+        border-bottom: 2rem solid var(--primary-color);
     }
 }

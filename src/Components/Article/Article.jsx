@@ -8,6 +8,7 @@ export const Article = ({ article }) => {
     const { name, image, textContent, articleLink, date } = article
     return (
         <>
+        <div>
             <img className="article-pic" src={image} alt={name} />
 
             <div className="article-text">
@@ -19,6 +20,7 @@ export const Article = ({ article }) => {
                     <Buttons url={articleLink} text="Read article" hovColor="article" />
                 </div>
             </div>
+        </div>
         </>
     )
 }

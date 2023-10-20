@@ -13,7 +13,7 @@ export const Introduction = () => {
     return(
         <>
         <div className="grid-parent light">
-            <div className="section intro">
+            <div className="intro section">
                 <img className="profile-pic" src={imageURL} alt="Picture of Frida Kristiansson" width="20px" />
                 
                 <h3 className="title-sub-header">{introGreeting}</h3>

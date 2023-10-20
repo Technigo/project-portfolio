@@ -1,5 +1,6 @@
 import { Project } from "../../Components/Project/Project"
 import { projects } from "../../../projects.json"
+import "./FeaturedProjects.css"
 
 export const FeaturedProjects = () => {
 
