@@ -1,0 +1,94 @@
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 128px;
+  border: #0B24F5;
+}
+.project-card {
+  display: flex;
+  align-items: start;
+  width: 820px;
+  height: 280px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.project-name {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.project-image {
+  width: 90%;
+  margin-bottom: 20px;
+}
+.project-image img {
+  width: 100%;
+}
+.description-container {
+  color: #000;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  margin: 0 0 0 20px;
+}
+.tag-container {
+  font-family: Montserrat;
+  font-size: 14px;
+  margin-left: 40px;
+  display: flex;
+}
+
+.tag {
+  background-color: black;
+  color: white;
+  padding: 4px 8px;
+  margin-right: 5px;
+}
+
+.link-container {
+  display: flex;
+  border-radius: 5px;
+  gap: 20px;
+  margin: 30px 0 0 30px;
+}
+
+.link-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000; /* Adjust the link color */
+  transition: color 0.3s ease; /* Smooth transition for the hover effect */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-container a img {
+  margin-right: 5px;
+  transition: color 0.4s ease
+}
+.link-container a:hover img {
+  filter: brightness(0) invert(1); /* Change icon color to white on hover */
+  transition: color 0.4s ease
+}
+.link-container a[href*="github"] {
+  border-radius: 40px;
+  background-color: #F5F5F5;
+  width: 35%;
+}
+.link-container a[href*="netlify"] {
+  border-radius: 40px;
+  background-color: #F5F5F5;
+  width: 30%;
+}
+.link-container a[href*="netlify"]:hover {
+  background-color: #0B24F5;
+  color: white;
+}
+.link-container a[href*="github"]:hover {
+  background-color: #EB5577;
+  color: white;
+}
