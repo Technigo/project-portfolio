@@ -9,11 +9,17 @@ import { NormalText } from "../../ReusableComponents/Typography/NormalText";
 
 // Component for each individual project-card. Takes in data as a prop from its parent the FeaturedProjects.jsx where the fetch from Github is made.
 export const ProjectCard = ({ repositories }) => {
-
+    console.log(repositories);
     // Declaring a variable that uses the images to find the relevant repositories. If the name in the image-json is in the list of repos in the Fetch it will be saved in the filteredRepos. 
-    const filteredRepos = repositories.filter((repo) => {
-        return repoImages.find((img) => img.repoName === repo.name);
-    });
+    const filteredRepos = repositories
+        .filter((repo) => repoImages.find((img) => img.repoName === repo.name))
+        .sort((a, b) => {// Parsing the "created_at" dates into Date objects
+            const dateA = new Date(a.created_at);
+            const dateB = new Date(b.created_at);
+
+            // Compare the dates to determine the order
+            return dateB - dateA;
+        });
 
     return (
         <>
