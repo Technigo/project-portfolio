@@ -1,16 +1,11 @@
+import "./Footer.css";
+
 export const Footer = () => {
   return (
-    <footer>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-        </ul>
-      </nav>
+    <footer className="scrolling-text">
+      <div className="text">
+        <span>Carolina Luna - Frontend Developer -</span>
+      </div>
     </footer>
   );
 };

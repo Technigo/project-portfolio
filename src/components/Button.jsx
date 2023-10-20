@@ -1,18 +1,28 @@
 import "./Button.css";
 import liveDemoImage from "../assets/LiveDemo.svg";
+import githubImage from "../assets/github.svg";
 
 export const Button = () => {
   return (
     <>
-      <button type="button" onClick="" className="live-demo-button">
-        <img
-          className="my-image"
-          src={liveDemoImage}
-          alt="A picture of a globe"
-        />
-        Live demo
-      </button>
-      <button className="view-code-button">View the code</button>
+      <div className="button">
+        <button type="button" onClick="" className="live-demo-button">
+          <img
+            className="demo-image"
+            src={liveDemoImage}
+            alt="An icon of a globe"
+          />
+          Live demo
+        </button>
+        <button className="view-code-button">
+          <img
+            className="view-code-image"
+            src={githubImage}
+            alt="An icon of a cat"
+          />
+          View the code
+        </button>
+      </div>
     </>
   );
 };

@@ -1,6 +1,6 @@
 // import { useState, useEffect } from "react";
 import { Project } from "../components/Project";
-
+import { Button } from "../components/Button";
 import projects from "../projects.json";
 import "./Projects.css";
 
@@ -11,12 +11,15 @@ fetch("https://api.github.com/users/KroLuna/repos")
 export const Projects = () => {
   return projects.projects.map((project) => {
     return (
-      <Project
-        key={project.id}
-        photo={project.image}
-        name={project.name}
-        tags={project.tags}
-      />
+      <>
+        <Project
+          key={project.id}
+          photo={project.image}
+          name={project.name}
+          tags={project.tags}
+        />
+        <Button />
+      </>
     );
   });
 };
