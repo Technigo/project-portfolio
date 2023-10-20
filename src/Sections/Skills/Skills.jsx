@@ -7,13 +7,14 @@ export const Skills = () => {
     return (
         <>
         <div className="grid-parent dark">
-            <div className="section tech">
+            <div className="section skills">
                 <h1>Skills</h1>
-                <SkillSet type="code" typeArray={code} />
-                <SkillSet type="toolbox" typeArray={toolbox} />
-                <SkillSet type="upcoming" typeArray={upcoming} />
-                <SkillSet type="more" typeArray={more} />
-
+                <div className="skillset-container">
+                    <SkillSet type="code" typeArray={code} />
+                    <SkillSet type="toolbox" typeArray={toolbox} />
+                    <SkillSet type="upcoming" typeArray={upcoming} />
+                    <SkillSet type="more" typeArray={more} />
+                </div>
             </div>
         </div>
         </>

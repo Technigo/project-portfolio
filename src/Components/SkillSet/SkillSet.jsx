@@ -5,7 +5,7 @@ const capitalize = (str) => {
 
 export const SkillSet = ({ type, typeArray }) => {
     return(
-        <div className={`${type}-skills`}>
+        <div className={`${type}-skills skill-card`}>
             <h4 className={`${type}-skills-header`}>{capitalize(type)}</h4>
             <p>
                 {typeArray.map(item => <span key={item}>{item}</span>)}

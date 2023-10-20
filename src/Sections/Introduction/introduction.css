@@ -3,6 +3,7 @@
     display: block;
     margin: auto;
     border-radius: 50%;
+    object-fit: cover;
   }
   
   .title-header {
@@ -11,16 +12,50 @@
     width: 100%;
     text-align: left;
   }
-  
-  .icon {
-    position: relative;
-    left: 50%;
+
+  .icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative;
+    top: 0; */
   }
 
   .arrow {
     width: 4rem;
+    position: relative;
+    top: 0;
+    animation: arrow-icon 1.7s ease-in alternate infinite;
   }
 
-  @media (min-width: var(--tablet-min-width)) {
+  @keyframes arrow-icon {
+    from {top: -3rem}
+    to {top: 0}
+  }
+
+  @media (min-width: 700px) {
+    .my-words {
+      grid-column: 3/11;
+    }
+    .title-header {
+      font-size: 5.4rem;
+    }
+
+    .intro .profile-pic {
+      grid-row: 3;
+    }
+
+    .intro-text {
+      grid-row: 3;
+      grid-column: 2/span 4;
+      margin-left: 2.2rem;
+    }
+
+    .icon-container {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      place-content: center;
+    }
     
   }

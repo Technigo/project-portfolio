@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0;
   text-align: left;
@@ -43,12 +42,18 @@
   align-content: center;
 }
 
-@media (min-width: var(--tablet-min-width)) and (max-width: (var(--desktop-min-width)-1)) {
-  .light{
-    background-color: brown;
-  }
+@media (min-width: 700px) {
   .grid-parent{
-    grid-template-columns: 8rem repeat(10, 1fr) 8rem;
+    grid-template-columns: 4rem 4rem repeat(8, 1fr) 4rem 4rem;
+    grid-template-rows: 12.8rem 1fr 12.8rem;
   }
 
+  .title-sub-header {
+    grid-column: 1/span 10;
+    grid-row: 1;
+  }
+  .title-header {
+    grid-column: 1/span 10;
+    grid-row: 2;
+  }
 }

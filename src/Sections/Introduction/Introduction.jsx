@@ -15,11 +15,16 @@ export const Introduction = () => {
         <div className="grid-parent light">
             <div className="section intro">
                 <img className="profile-pic" src={imageURL} alt="Picture of Frida Kristiansson" width="20px" />
-                <h3>{introGreeting}</h3>
+                
+                <h3 className="title-sub-header">{introGreeting}</h3>
                 <h1 className="title-header">{introHeader}</h1>
-                <p>{introText}</p>
-                <img className="arrow icon" src={Arrow} alt="Arrow-icon" />
+                <p className="intro-text">{introText}</p>
             </div>
+        </div>
+        <div className="icon-container">
+            <a href="">
+                <img className="arrow icon" src={Arrow} alt="Arrow-icon" />
+            </a>
         </div>
         </>
     )

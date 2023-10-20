@@ -17,5 +17,33 @@
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
-    margin-top: 2.4rem;
+    margin-top: 2.6rem;
+}
+
+@media (min-width: 700px) {
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin: 3rem 0;
+    }
+    .project-pic {
+        grid-column: 1/span 2;
+        height: 28rem;
+        width: 20rem;
+        margin-top: 0;
+    }
+    .project-text {
+        grid-column: 3/span 4;
+        margin-left: 5rem;
+        position: relative;
+    }
+    .tag-container {
+        grid-column: 3/span 4;
+    }
+    .button-container {
+        flex-direction: row;
+        gap: 2rem;
+        position: absolute;
+        bottom: 0;
+    }
 }
