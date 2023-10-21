@@ -1,4 +1,5 @@
-import Arrow from "/assets/Arrow.svg"
+// import Arrow from "/assets/Arrow.svg"
+import { FaArrowDownLong } from "react-icons/fa6";
 import "/Frida.jpeg"
 import "./introduction.css"
 
@@ -23,7 +24,8 @@ export const Introduction = () => {
         </div>
         <div className="icon-container">
             <a href="">
-                <img className="arrow icon" src={Arrow} alt="Arrow-icon" />
+                <FaArrowDownLong className="arrow icon" />
+                {/* <img className="arrow icon" src={FaArrowDownLong} alt="Arrow-icon" /> */}
             </a>
         </div>
         </>
