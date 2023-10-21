@@ -9,7 +9,10 @@ export const Article = ({ article }) => {
     return (
         <>
         <div>
-            <img className="article-pic" src={image} alt={name} />
+            <img
+                className="article-pic"
+                src={image} 
+                alt={`Image for article about the ${name} project`} />
 
             <div className="article-text">
                 <Tags tag={date} />
@@ -17,7 +20,10 @@ export const Article = ({ article }) => {
                 <p>{textContent}</p>
 
                 <div className="button-container">
-                    <Buttons url={articleLink} text="Read article" hovColor="article" />
+                    <Buttons 
+                        url={articleLink} 
+                        text="Read article" 
+                        hovColor="article" />
                 </div>
             </div>
         </div>
