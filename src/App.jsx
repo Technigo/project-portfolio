@@ -3,7 +3,7 @@
 import React from 'react'
 import './App.css'
 
-import { Hello1 } from './Components/Hello1'
+import { Hello } from './Components/Hello'
 import { Tech2 } from './Components/Tech2'
 import { FeaturedP3 } from './Components/FeaturedP3/FeaturedP3'
 import { Mywords } from './Components/Mywords'
@@ -15,7 +15,7 @@ const App = () => {
   //Renders components
   return (
     <div className="main-wrapper">
-      <Hello1 />
+      <Hello />
       <Tech2 />
       <FeaturedP3 />
       <Mywords />

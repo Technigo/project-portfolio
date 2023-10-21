@@ -1,8 +1,10 @@
 //Import of reusable component 'ProfilePhoto'
 import { ProfilePhoto } from "./Reusablecomponents/ProfilePhoto.jsx";
 
+import './hello.css'
+
 // Export without props. Displays the Hello/Header-section. ProfilePhoto, reusable component, is imoprted and below it's exported.
-export const Hello1 = () => {
+export const Hello = () => {
     return (
         <header>
             <div className="header-wrapper">

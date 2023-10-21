@@ -1,0 +1,111 @@
+/*------ Hello1 "header" -----*/
+
+.header-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nametitle nametitle nametitle nametitle"
+        "profilephoto intro intro intro";
+    padding: 200px 220px 200px 220px;
+}
+
+.name-title {
+    grid-area: nametitle;
+}
+
+.profile-photo {
+    width: 164px;
+    height: 164px;
+    border-radius: 164px;
+    grid-area: profilephoto;
+}
+
+.intro {
+    color: #000;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 600px;
+    grid-area: intro;
+    grid-column: intro /span 3;
+    padding-top: 25px;
+}
+
+/* Defining a keyframe animation for the arrow*/
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Start and end position */
+    }
+
+    25%,
+    75% {
+        transform: translateY(-10px);
+        /* Move up 10 pixels */
+
+    }
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    /* Applies the animation to the .arrow element */
+    animation: moveUpDown 1s linear infinite;
+}
+
+/* ----- Media queries ----- */
+/* Tablet */
+@media (max-width: 1279px) {
+
+    .header-wrapper {
+        padding: 128px 64px;
+    }
+
+    .name-title h3 {
+        font-size: 24px;
+    }
+
+    .profile-photo {
+        padding-bottom: 20px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 743px) {
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 16px;
+    }
+
+    .intro {
+        order: 3;
+        width: 343px;
+    }
+
+    .name-title {
+        order: 2;
+    }
+
+    .name-title h1 {
+        font-size: 32px;
+    }
+
+    .name-title h3 {
+        font-size: 18px;
+    }
+
+    .profile-photo {
+        order: 1;
+        padding-bottom: 20px;
+    }
+
+}
