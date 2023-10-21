@@ -2,6 +2,7 @@ import './App.css'
 import { Articles } from './Sections/Articles/Articles'
 import { FeaturedProjects } from './Sections/FeaturedProjects/FeaturedProjects'
 import { Header } from './Sections/Header/Header'
+import { Skills } from './Sections/Skills/Skills'
 import { Tech } from './Sections/Tech/Tech'
 
 export const App = () => {
@@ -11,6 +12,7 @@ return (
     <Tech />
     <FeaturedProjects />
     <Articles />
+    <Skills />
      
 
     
