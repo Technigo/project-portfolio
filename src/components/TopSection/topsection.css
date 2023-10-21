@@ -1,0 +1,74 @@
+.top-section {
+    width: 100%;
+}
+
+/* Profile picture used in both TopSection but also TimeToTalk */
+.profile-img {
+    width: 164px;
+    height: 164px;
+    border-radius: 164px;
+}
+
+.h3-topsection {
+    font-family: Montserrat;
+    margin: 0;
+}
+
+.h1-topsection {
+color: #0B24F5;
+font-family: Montserrat;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 0;
+margin: 0;
+}
+
+.p-topsection {
+    color: #000;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+}
+
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 80px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 1.5s infinite;
+    color: #FF4575;
+  }
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+    color: #FF4575;
+  }
+  
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
