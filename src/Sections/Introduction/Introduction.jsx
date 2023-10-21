@@ -24,8 +24,7 @@ export const Introduction = () => {
         </div>
         <div className="icon-container">
             <a href="">
-                <FaArrowDownLong className="arrow icon" />
-                {/* <img className="arrow icon" src={FaArrowDownLong} alt="Arrow-icon" /> */}
+                <FaArrowDownLong className="arrow icon" aria-label="Scroll down to learn more" />
             </a>
         </div>
         </>
