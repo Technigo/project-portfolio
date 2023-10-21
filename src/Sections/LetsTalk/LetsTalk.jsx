@@ -15,7 +15,7 @@ export const LetsTalk = () => {
                 <div className="contact-info">
                     <h4>Frida Kristiansson</h4>
                     <h4>+46(0)70 376 35 62</h4>
-                    <h4>frida.kristiansson@gmail.com</h4>
+                    <h4><a href="mailto:frida.kristiansson@gmail.com">frida.kristiansson@gmail.com</a></h4>
                 </div>
                 <div className="social-media-buttons">
                     {socialmedia.map(item => (
