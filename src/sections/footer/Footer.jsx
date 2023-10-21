@@ -34,7 +34,7 @@ export const Footer = () => {
                     <a href="https://github.com/mariateresepettersson">
                         <Image sectionClassName={"icon-box"} elementClassName={"icon"} link={"/assets/icons/github.svg"} ImageAltText={"Link to GitHub"} />
                     </a>
-                    <a href="https://https://stackoverflowteams.com/c/technigo/users/492/?tab=profile">
+                    <a href="https://stackoverflowteams.com/c/technigo/users/492/">
                         <Image sectionClassName={"icon-box"} elementClassName={"icon"} link={"/assets/icons/stackoverflow.svg"} ImageAltText={"Link to StackOverflow"} />
                     </a>
                     <a href="https://www.instagram.com/grekmaria/">
