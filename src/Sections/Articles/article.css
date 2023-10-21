@@ -1,0 +1,65 @@
+/* ------------ OVERALL ------------ */
+.articles-section {
+    position: relative;
+    z-index: 1;
+    padding: 114px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    background-color: var(--light-secondary);
+}
+
+.articles-heading {
+    text-align: center;
+}
+
+.subheading-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.image {
+    margin-right: 20px;
+    margin-bottom: 14px;
+}
+
+.article-text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+/* ------------ Tablet only ------------ */
+@media (max-width: 1279px) and (min-width: 744px) {
+    .articles-section {
+        display: flex;
+        gap: 64px;
+    }
+
+    .article-card {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+/* ------------ Desktop only ------------ */
+@media (min-width: 1280px) {
+    .articles-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 128px 143px;
+    }
+
+    .article-cards-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 98px;
+        row-gap: 64px;
+        max-width: 1226px;
+    }
+}
