@@ -30,8 +30,6 @@ export const Skills = () => {
             <ul className="skills-listing">
               <li>Atom</li>
               <li>Postman</li>
-              <li>Adobe Photoshop</li>
-              <li>Adobe Illustrator</li>
               <li>Figma</li>
               <li>Keynote</li>
               <li>Slack</li>
@@ -45,6 +43,8 @@ export const Skills = () => {
             />
             <ul className="skills-listing">
               <li>Node.js</li>
+              <li>Flutter</li>
+              <li>React Redux</li>
             </ul>
           </div>
 

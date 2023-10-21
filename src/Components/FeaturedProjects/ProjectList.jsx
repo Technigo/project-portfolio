@@ -2,7 +2,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { ProjectCard } from "./ProjectCard";
-import { Heading1 } from "../Heading1/Heading1";
+import { MainHeading } from "../Typo/MainHeading";
 
 import "./ProjectList.css";
 
@@ -21,10 +21,12 @@ export const ProjectList = () => {
 
   return (
     <section className="featured-projects-wrapper">
-      <Heading1 className={"featured-heading"} text={"Featured Projects"} />
+      <MainHeading className={"featured-heading"} text={"Featured Projects"} />
       <div className="individual-project-info">
         {projectList
+          // Filter to only list project with descriptions in GitHub
           .filter((project) => project.description)
+          // This sort lists the lates project at the top of the list
           .sort((a, b) => b.id - a.id)
           .map((project) => (
             <ProjectCard project={project} key={project.id} />

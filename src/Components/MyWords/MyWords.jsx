@@ -6,13 +6,19 @@ import "../MyWords/MyWords.css";
 
 export const MyWords = () => {
   return (
-    <section className="mywords-section">
-      <div className="mywords-section-content">
-        <div className="mywords-wrapper">
-          <MainHeading className={`mywords-h2`} text={`My Words`} />
-          <ArticleCard />
+    <>
+      {/* A devider between two sections to make it pretty */}
+      <div className="divider"></div>
+      {/* Listing the articles */}
+      <section className="mywords-section">
+        <div className="mywords-section-content">
+          <div className="mywords-wrapper">
+            {/* Inserting components for heading and article */}
+            <MainHeading className={`mywords-h2`} text={`My Words`} />
+            <ArticleCard />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };

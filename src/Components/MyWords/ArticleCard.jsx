@@ -23,7 +23,7 @@ export const ArticleCard = () => {
             <Button
               className={`article-button`}
               buttonName={`Read Article`}
-              link={article.link}
+              link={article.url}
               iconAlt={`A document icon`}
             />
           </div>

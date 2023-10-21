@@ -1,6 +1,6 @@
 import React from "react";
-import { ProjectTopics } from "./ProjectTopics";
 import { Button } from "../Button/Button";
+import { ProjectTopics } from "./ProjectTopics";
 
 import "./ProjectCard.css";
 
