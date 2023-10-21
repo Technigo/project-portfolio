@@ -13,7 +13,7 @@ export const Projects = () => {
     return (
       <>
         <Project
-          key={project.id}
+          key={projects.id}
           photo={project.image}
           name={project.name}
           tags={project.tags}

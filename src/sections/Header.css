@@ -1,64 +1,82 @@
+.header .grid-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .header {
   background-color: #ffffff;
-
   text-align: center;
   width: 375px;
   height: 592px;
   padding: 64px 16px 64px 16px;
-  grid-column: 1 / 4;
 }
 
+.wrapper {
+  grid-column: 1 / 5;
+}
 .my-image {
-  max-width: 164px;
-  height: auto;
+  display: block;
+  width: 164px;
+  height: 164px;
   border-radius: 50%;
-  padding-bottom: 20px;
-  width: 80%; /* responsive width */
+  object-fit: cover;
+  margin: 0 auto;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .header h1 {
   font-family: Montserrat;
   color: black;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 12px;
   letter-spacing: 0em;
   text-align: left;
-  max-width: 90%; /* responsive width */
+  max-width: 90%;
+  margin: 30px 0 0 0;
 }
 
 .header h2 {
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0em;
   text-align: left;
   color: #0b24f5;
-  max-width: 90%; /* responsive width */
+  max-width: 90%;
   padding-bottom: auto;
+  margin-top: 0;
 }
 
 .header .wrapper p {
   font-family: "Hind", sans-serif;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
   color: black;
+  grid-column: 1 / 5;
+}
+
+.arrow-icon {
+  width: 27px;
+  height: 68px;
+  margin-top: 14px;
 }
 
 /* For tablets and above */
-@media (min-width: 768px) {
+@media (min-width: 376px) and (max-width: 744px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  /* .header .wrapper {
+  .header .wrapper {
     grid-column: 2 / 7;
-  } */
+  }
 
   .my-image {
     width: 164px;
@@ -77,7 +95,7 @@
 }
 
 /* For desktops and above */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .header .wrapper {
     grid-column: 3 / 11;
   }

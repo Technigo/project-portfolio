@@ -1,23 +1,31 @@
+.text span {
+  width: 1512px;
+  height: 114px;
+  flex-shrink: 0;
+  background-color: #ff4575;
+  padding: 25px;
+}
+
 .scrolling_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   overflow: hidden;
   display: flex;
   white-space: nowrap;
-  background-color: #ff4575;
   height: 30px;
   align-items: center;
 }
 
 .text {
-  font-size: 80px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
   animation: animate_text 30s linear infinite;
-}
-
-.text span {
-  margin: 0 40px;
 }
 
 @keyframes animate_text {

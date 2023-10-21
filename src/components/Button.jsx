@@ -6,7 +6,7 @@ export const Button = () => {
   return (
     <>
       <div className="button">
-        <button type="button" onClick="" className="live-demo-button">
+        <button type="button" onClick={() => {}} className="live-demo-button">
           <img
             className="demo-image"
             src={liveDemoImage}
@@ -18,7 +18,7 @@ export const Button = () => {
           <img
             className="view-code-image"
             src={githubImage}
-            alt="An icon of a cat"
+            alt="An icon of a github"
           />
           View the code
         </button>
