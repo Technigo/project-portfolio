@@ -19,7 +19,7 @@ export const ArticleCard = ({ data }) => {
                                 <SubHeading text={article.name} />
                             </div>
                             <NormalText text={article.description} />
-                            <Button className={"read-more-btn"} btnURL={article.link} imgAlt={"Web icon"} iconURL={`/icons/Read-On-Medium.svg`} btnText={"Read article"}
+                            <Button className={"read-more-btn"} btnURL={article.link} imgAlt={"Web icon"} iconURL={`/icons/Read-On-Medium.svg`} 
                             />
                         </div>
                     </article>

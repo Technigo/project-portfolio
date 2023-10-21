@@ -48,7 +48,7 @@ export const ProjectCard = ({ repositories }) => {
                                     btnURL={repo.homepage}
                                     imgAlt={"Web icon"}
                                     iconURL={"/icons/Live-Demo-Button.svg"}
-                                    btnText={"Live demo"}
+                                    //btnText={"Live demo"}
                                 />
                                 <Button
                                     className={"github-btn"}
