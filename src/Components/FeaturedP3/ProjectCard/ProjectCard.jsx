@@ -20,12 +20,12 @@ export const ProjectCard = ({ repos }) => {
                     const repoImage = repoImages.find((img) => img.repoName === repoName);
 
                     if (repo && repoImage) {
-                        //Structure of a single project card. Includes image, title, description, tags and buttons/links. Two reusable components are used (tags and buttons).
+                        //Structure of a single project card. Includes image, title, description, tags and buttons/links. If a new Portfolio Name is added to the .json-file that will be shown instead of the repoName. Two reusable components are used (tags and buttons).
                         return (
                             <div key={repo.id} className="project-card-inner">
                                 <img src={repoImage.imageUrl} alt={repo.name} className="repo-image" />
                                 <div className="project-info">
-                                    <h3>{repo.name}</h3>
+                                    <h3>{repoImage.portfolioName || repo.name}</h3>
                                     <p>{repo.description} </p>
                                     <Tags tags={repo.topics} />
                                     <div className="buttons-container">
