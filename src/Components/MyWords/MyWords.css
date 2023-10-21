@@ -38,6 +38,7 @@
   height: 200px;
   width: 100%;
   object-fit: cover;
+  object-position: 0 25%;
 }
 
 .single-article {
@@ -81,20 +82,35 @@
 }
 
 @media (min-width: 744px) {
-  .single-article img {
-    height: 340px;
-    width: 460px;
+  .mywords-wrapper {
+    padding: 128px 32px;
   }
-  .my-wordsh1 {
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 97.52px;
+
+  .mywords-h2 {
+    line-height: 68.26px;
     text-align: left;
   }
-  .button .read-article {
-    line-height: 24.38px;
+  .single-article img {
+    height: 340px;
+    width: 100%;
   }
-  .button .icon {
-    size: 48px 48px;
+}
+
+@media (min-width: 1280px) {
+  .mywords-wrapper {
+    padding: 128px 143px;
+  }
+  .mywords-h2 {
+    font-size: 80px;
+    line-height: 97.52px;
+    padding-bottom: 96px;
+    text-align: left;
+  }
+  .article-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 98px;
+    grid-row-gap: 32px;
+    max-width: 1226px;
   }
 }
