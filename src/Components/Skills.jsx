@@ -1,6 +1,8 @@
 //Skills section with div's and info.
 
-export const Skills4 = () => {
+import './skills.css'
+
+export const Skills = () => {
     return (
         <div className="skills-wrap">
             <h1>Skills</h1>

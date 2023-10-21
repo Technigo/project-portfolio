@@ -2,7 +2,9 @@
 import { ProfilePhoto } from "./Reusablecomponents/ProfilePhoto.jsx";
 import { SocialMedia } from "/src/Components/SocialMedia.jsx"
 
-export const Contact5 = () => {
+import './contact.css'
+
+export const Contact = () => {
     //Shows info in browser. ProfilePhoto and SocialMedia are imported and used here and then exported.
     return (
         <div className="contact-container">

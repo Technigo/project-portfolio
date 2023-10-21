@@ -1,6 +1,8 @@
 //Tech section with info and divs to show in broswer.
 
-export const Tech2 = () => {
+import './tech.css'
+
+export const Tech = () => {
     return (
         <div className="tech-wrap">
             <h1>Tech</h1>

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { ProjectCard } from './ProjectCard/ProjectCard.jsx'
 
 //Export and initialize state using the useState hook
-export const FeaturedP3 = () => {
+export const FeaturedP = () => {
 
     const [repos, setRepos] = useState([]) //Will update the repos
 

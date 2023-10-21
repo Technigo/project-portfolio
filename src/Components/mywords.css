@@ -1,0 +1,106 @@
+/* ----- Mywords section ----- */
+
+.mywords-section {
+    text-align: left;
+    background: #C5FFF6;
+    padding: 128px 143px;
+}
+
+.mywords-section h1 {
+    padding-bottom: 128px;
+}
+
+.mywords-wrapper {
+    display: grid;
+    grid-template-columns: 460px 460px;
+    grid-gap: 98px;
+}
+
+.date {
+    background: black;
+    display: inline-block;
+    color: white;
+    font-family: Montserrat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.mywords-wrapper img {
+    width: 460px;
+    border-bottom: 20px solid #00473E;
+    border-left: 20px solid #00473E;
+}
+
+/*Will change so that it's not a button if articles section are to be used later on. Depending on how it will be used I'll use API instead.*/
+.mywords-wrapper button {
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+
+/* ----- Media queries ----- */
+/* Tablet */
+@media (max-width: 1279px) {
+    .mywords-section {
+        padding: 0;
+        padding-top: 128px;
+    }
+
+    .mywords-section h1 {
+        text-align: center;
+    }
+
+    .mywords-wrapper {
+        grid-template-columns: 680px;
+        justify-content: center;
+    }
+
+    .mywords-wrapper img {
+        width: auto;
+        height: 340;
+        border-bottom: 20px solid #00473E;
+        border-left: 20px solid #00473E;
+    }
+
+    .date {
+        display: block;
+    }
+
+    .article4 {
+        margin-bottom: 128px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 743px) {
+    .mywords-section {
+        padding: 0;
+        padding-top: 128px;
+    }
+
+    .mywords-section h1 {
+        text-align: center;
+    }
+
+    .mywords-wrapper {
+        grid-template-columns: 343px;
+        justify-content: center;
+    }
+
+    .mywords-wrapper img {
+        width: 320px;
+        border-bottom: 20px solid #00473E;
+        border-left: 20px solid #00473E;
+    }
+
+    .date {
+        display: block;
+    }
+
+    .article4 {
+        margin-bottom: 128px;
+    }
+}
