@@ -1,10 +1,10 @@
-import React from "react";
 import { ProfilePicture } from "../ProfilePicture/ProfilePicture";
-import { MainHeading } from "../Typo/MainHeading";
-import { SocialIcons } from "../SocialIcons/SocialIcons.jsx";
+import { MainHeading } from "../Typography/MainHeading";
+import { SocialIcons } from "../Button/SocialIcons.jsx";
 
 import "./Contact.css";
 
+// This component renders a contact section with a main heading, profile picture and some contact information.
 export const Contact = () => {
   return (
     <section className="contact-wrapper">

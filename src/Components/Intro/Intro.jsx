@@ -1,7 +1,6 @@
-import React from "react";
 import { ProfilePicture } from "../ProfilePicture/ProfilePicture";
-import { Heading1 } from "../Heading1/Heading1";
-import { SubHeading } from "../SubHeading/SubHeading";
+import { Heading1 } from "../Typography/Heading1";
+import { SubHeading } from "../Typography/SubHeading";
 
 import "./Intro.css";
 
@@ -34,6 +33,7 @@ export const Intro = () => {
           </p>
         </div>
       </div>
+      {/* Inserts a bouncing arrow to show that's more below */}
       <div className="arrow">
         <img src="/arrow_down.svg" />
       </div>

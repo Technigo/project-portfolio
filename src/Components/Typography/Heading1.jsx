@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./Heading1.css";
 
 export const Heading1 = ({ className, text }) => {

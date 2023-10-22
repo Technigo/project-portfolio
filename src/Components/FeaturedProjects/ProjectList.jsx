@@ -1,8 +1,6 @@
-//här mappar jag
-import React from "react";
 import { useEffect, useState } from "react";
 import { ProjectCard } from "./ProjectCard";
-import { MainHeading } from "../Typo/MainHeading";
+import { MainHeading } from "../Typography/MainHeading";
 
 import "./ProjectList.css";
 
@@ -26,7 +24,7 @@ export const ProjectList = () => {
         {projectList
           // Filter to only list project with descriptions in GitHub
           .filter((project) => project.description)
-          // This sort lists the lates project at the top of the list
+          // Sort list so the lates project is at the top of the list
           .sort((a, b) => b.id - a.id)
           .map((project) => (
             <ProjectCard project={project} key={project.id} />

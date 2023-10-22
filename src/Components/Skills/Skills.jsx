@@ -1,6 +1,5 @@
-import React from "react";
-import { Heading1 } from "../Heading1/Heading1";
-import { SubHeading } from "../SubHeading/SubHeading";
+import { MainHeading } from "../Typography/MainHeading";
+import { SubHeading } from "../Typography/SubHeading";
 
 import "./Skills.css";
 
@@ -8,7 +7,7 @@ export const Skills = () => {
   return (
     <section className="skills-container">
       <div className="skills-wrapper">
-        <Heading1 className={"skills-heading1"} text={"Skills"} />
+        <MainHeading className={"skills-heading2"} text={"Skills"} />
         <div className="skills-category">
           <div className="skills-section">
             <SubHeading className={"skills-heading3 code"} text={"Code"} />
@@ -28,11 +27,11 @@ export const Skills = () => {
               text={"Toolbox"}
             />
             <ul className="skills-listing">
-              <li>Atom</li>
               <li>Postman</li>
               <li>Figma</li>
               <li>Keynote</li>
               <li>Slack</li>
+              <li>Sourcetree</li>
             </ul>
           </div>
 
@@ -45,18 +44,20 @@ export const Skills = () => {
               <li>Node.js</li>
               <li>Flutter</li>
               <li>React Redux</li>
+              <li>Atom</li>
             </ul>
           </div>
 
           <div className="skills-section">
             <SubHeading className={"skills-heading3 more"} text={"More"} />
             <ul className="skills-listing">
+              <li>Agile Methodology</li>
               <li>Design Lead</li>
               <li>Branding Strategy</li>
               <li>Process Design</li>
               <li>Concept Development</li>
-              <li>Agile Methodology</li>
               <li>Hyper Island toolbox</li>
+              <li>Trilingual</li>
             </ul>
           </div>
         </div>

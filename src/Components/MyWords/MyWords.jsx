@@ -1,6 +1,5 @@
-import React from "react";
 import { ArticleCard } from "./ArticleCard.jsx";
-import { MainHeading } from "../Typo/MainHeading.jsx";
+import { MainHeading } from "../Typography/MainHeading.jsx";
 
 import "../MyWords/MyWords.css";
 

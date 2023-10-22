@@ -1,8 +1,9 @@
-import { SubHeading } from "../SubHeading/SubHeading.jsx";
-import { BodyText } from "../Typo/BodyText.jsx";
+import { SubHeading } from "../Typography/SubHeading.jsx";
+import { BodyText } from "../Typography/BodyText.jsx";
 import { Button } from "../Button/Button.jsx";
 import articles from "../../Data/articles.json";
 
+// This component renders a list of article cards. Each card displays an image, date, heading, and a "Read Article" button. The content is generated dynamically based on the articles array.
 export const ArticleCard = () => {
   console.log("Here comes the articles:", articles);
 

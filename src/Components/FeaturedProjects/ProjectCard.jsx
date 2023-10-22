@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../Button/Button";
 import { ProjectTopics } from "./ProjectTopics";
 
@@ -6,6 +5,16 @@ import "./ProjectCard.css";
 
 export const ProjectCard = ({ project }) => {
   console.log(project.topics);
+
+  // Formatting the repo-name to remove hyphens and changing the first letter of each word to uppercase
+  const formatRepoName = (name) => {
+    const words = name.split("-");
+    const capitalizedWords = words.map(
+      (word) => word.charAt(0).toUpperCase() + word.slice(1)
+    );
+    return capitalizedWords.join(" ");
+  };
+
   return (
     <div className="project-card-wrapper" key={project.id}>
       <div className="project-image">
@@ -16,7 +25,7 @@ export const ProjectCard = ({ project }) => {
         />
       </div>
       <div className="project-info">
-        <h2 className="project-name">{project.name}</h2>
+        <h2 className="project-name">{formatRepoName(project.name)}</h2>
         <p className="project-description">{project.description}</p>
 
         <ProjectTopics topics={project.topics} />
