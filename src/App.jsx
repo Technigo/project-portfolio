@@ -20,8 +20,8 @@ return (
           tabIndex="1"
         />
     <Tech />
-    <FeaturedProjects />
     <div className="wavy-line-wrapper"></div>
+    <FeaturedProjects />
         <img
           src="/icons/Wavyline-Divider.svg"
           className="wavy-line"
