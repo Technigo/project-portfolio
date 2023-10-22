@@ -1,11 +1,11 @@
 import "./mywords.css";
 import squiggly from "../../assets/squiggly.svg";
-import articleData from "../../assets/articles.json";
 import { ArticleCard } from "../../components/articlecard/ArticleCard";
+import { ArticleAssets } from "../../assets/Assets";
 
 export const MyWords = () => {
-  const articles = articleData.articles;
-  // console.log(articles);
+  const articles = ArticleAssets.articles;
+  console.log(articles);
   return (
     <div className="my-words-frame">
       <img src={squiggly} alt="squiggly-line" className="squiggly" />

@@ -6,6 +6,7 @@ import portfolio from "../../assets/clark-tibbs-oqStl2L5oxI-unsplash.jpg";
 import happyThoughts from "../../assets/madison-oren-uGP_6CAD-14-unsplash.jpg";
 import weather from "../../assets/johannes-plenio-600dw3-1rv4-unsplash.jpg";
 import music from "../../assets/heidi-fin-H4fYXZ1hyco-unsplash.jpg";
+import movie from "../../assets/alex-litvin-MAYsdoYpGuk-unsplash.jpg";
 
 import { Tags } from "./Tags.jsx";
 import { useState } from "react";
@@ -35,6 +36,8 @@ export const ProjectCard = ({
     case "Weather-App-Project":
       imagedirectory = weather;
       break;
+    case "Movie-Project":
+      imagedirectory = movie;
   }
 
   return (

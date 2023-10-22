@@ -11,7 +11,7 @@ export const ArticleCard = ({
 }) => {
   return (
     <div className="article-card">
-      <p>Image</p>
+      <img src={articleImage} alt={articleTitle} className="article-image" />
       <div className="date-and-title">
         <ArticleMonth
           articlePublished={monthPublished}
