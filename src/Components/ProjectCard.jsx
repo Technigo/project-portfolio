@@ -2,6 +2,8 @@
 import Photo from "./Photo";
 import Button from "./Button";
 import "/src/Components/projectCard.css";
+import liveDemoIcon from "/src/assets/Btn-liveDemo.svg";
+import githubIcon from "/src/assets/Btn-github-dark.svg";
 
 export const Projectcard = ({
   name,
@@ -29,13 +31,13 @@ export const Projectcard = ({
         <div className="btn-container">
           <Button
             style="btn-live"
-            icon="/src/assets/Btn-liveDemo.svg"
+            icon={liveDemoIcon}
             name="Live demo"
             link={liveLink}
           />
           <Button
             style="btn-github"
-            icon="/src/assets/Btn-github-dark.svg"
+            icon={githubIcon}
             name="View the code"
             link={githubLink}
           />

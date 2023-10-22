@@ -1,5 +1,9 @@
 import Headlines from "../Components/Headlines";
 import Profile from "../Components/Profile";
+import linkedinIcon from "/src/assets/Btn-linkedin.svg";
+import githubIcon from "/src/assets/Btn-github.svg";
+import stackoverflowIcon from "/src/assets/Btn-stackoverflow.svg";
+import instagramIcon from "/src/assets/Btn-instagram.svg";
 
 const Contact = () => {
   return (
@@ -12,10 +16,10 @@ const Contact = () => {
         <li>jjanice.cheng@gmail.com</li>
       </ul>
       <div className="icons">
-        <img src="/src/assets/Btn-linkedin.svg" />
-        <img src="/src/assets/Btn-github.svg" />
-        <img src="/src/assets/Btn-stackoverflow.svg" />
-        <img src="/src/assets/Btn-instagram.svg" />
+        <img src={linkedinIcon} />
+        <img src={githubIcon} />
+        <img src={stackoverflowIcon} />
+        <img src={instagramIcon} />
       </div>
     </div>
   );

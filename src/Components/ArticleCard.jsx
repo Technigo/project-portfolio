@@ -2,6 +2,7 @@
 import Photo from "./Photo";
 import Button from "./Button";
 import "/src/Components/articleCard.css";
+import readMoreIcon from "/src/assets/Btn-readMore.svg";
 
 export const Articlecard = ({ title, photo, date, content, link }) => {
   return (
@@ -13,7 +14,7 @@ export const Articlecard = ({ title, photo, date, content, link }) => {
         <p>{content}</p>
         <Button
           style="btn-read"
-          icon="/src/assets/Btn-readMore.svg"
+          icon={readMoreIcon}
           name="Read article"
           link={link}
         />
