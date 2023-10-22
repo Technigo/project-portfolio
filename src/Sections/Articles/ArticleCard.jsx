@@ -12,14 +12,24 @@ export const ArticleCard = ({ data }) => {
             {articles.map((article) => {
                 return (
                     <article className="article-card" key={article.name}>
-                        <ImageComponent sectionClassName={"image"} elementClassName={"rectangle-img"} link={article.image} ImageAltText={article.name} />
+                        <ImageComponent 
+                        sectionClassName={"image"} 
+                        elementClassName={"rectangle-img"} 
+                        imagePath={article.image}
+                        //link={article.image} 
+                        ImageAltText={article.name} />
                         <div className="article-text-section">
                             <div className="subheading-section">
                                 <Tag tagText={article.date} />
                                 <SubHeading text={article.name} />
                             </div>
                             <NormalText text={article.description} />
-                            <Button className={"read-more-btn"} btnURL={article.link} imgAlt={"Web icon"} iconURL={`/icons/Read-On-Medium.svg`} 
+                            <Button 
+                            className={"read-more-btn"} 
+                            btnURL={article.link} 
+                            imgAlt={"Web icon"} 
+                            iconURL={`/icons/Doc.svg`} 
+                            btnText={"Read Article"}
                             />
                         </div>
                     </article>

@@ -31,7 +31,7 @@ export const ProjectCard = ({ repositories }) => {
                         <ImageComponent
                             sectionClassName={"image"}
                             elementClassName={"square-img"}
-                            link={repoImage?.imageUrl}
+                            imagePath={repoImage?.imageUrl}
                             ImageAltText={cleanProjectName}
                         />
                         <div className="project-text-section">
@@ -47,14 +47,14 @@ export const ProjectCard = ({ repositories }) => {
                                     className={"demo-btn"}
                                     btnURL={repo.homepage}
                                     imgAlt={"Web icon"}
-                                    iconURL={"/icons/Live-Demo-Button.svg"}
-                                    //btnText={"Live demo"}
+                                    iconURL={"/icons/Live Demo.svg"}
+                                    btnText={"Live demo"}
                                 />
                                 <Button
                                     className={"github-btn"}
                                     btnURL={repo.html_url}
                                     imgAlt={"Github icon"}
-                                    iconURL={"/icons/github=default.svg"}
+                                    iconURL={"/icons/github.svg"}
                                     btnText={"View the code"}
                                 />
                             </div>

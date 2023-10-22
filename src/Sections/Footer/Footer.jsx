@@ -7,7 +7,11 @@ export const Footer = () => {
     return (
         <footer>
             <MainHeading text={"Let's talk"} />
-            <ImageComponent sectionClassName={"profile-image"} elementClassName={"circle-img"} link={"/profilepic.jpg"} ImageAltText={"Image of Jenny"} />
+            <ImageComponent 
+            sectionClassName={"profile-image"} 
+            elementClassName={"circle-img"} 
+            imagePath={"./profilepic.jpg"}
+            ImageAltText={"Image of Jenny"} />
             <div className="contact-info">
                 <SubHeading text={"Jenny Larsen"} />
                 <a aria-label="Phone number" href="tel:+0727402484">
@@ -19,10 +23,18 @@ export const Footer = () => {
             </div>
             <div className="icons">
                 <a href="https://www.linkedin.com/in/jenny-larsen-b51140219/">
-                    <ImageComponent sectionClassName={"icon-box"} elementClassName={"icon"} link={"/icons/linkedin=default.svg"} ImageAltText={"Link to LinkedIn"} />
+                    <ImageComponent 
+                    sectionClassName={"icon-box"} 
+                    elementClassName={"icon"} 
+                    imagePath={"/icons/linkedin.svg"} 
+                    ImageAltText={"Link to LinkedIn"} />
                 </a>
                 <a href="https://github.com/jennylarsen">
-                    <ImageComponent sectionClassName={"icon-box"} elementClassName={"icon"} link={"/icons/github=default.svg"} ImageAltText={"Link to GitHub"} />
+                    <ImageComponent 
+                    sectionClassName={"icon-box"} 
+                    elementClassName={"icon"} 
+                    imagePath={"/icons/github.socials.svg"} 
+                    ImageAltText={"Link to GitHub"} />
                 </a>
             </div>
         </footer>
