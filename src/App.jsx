@@ -8,7 +8,7 @@ import "./index.css";
 
 export const App = () => {
   return (
-    <div className="body">
+    <div className="body page-grid">
       <Introduction />
       <Tech />
       <FeaturedProjects className="projects" />

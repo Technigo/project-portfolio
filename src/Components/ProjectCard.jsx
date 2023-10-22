@@ -12,9 +12,8 @@ export const Projectcard = ({
   githubLink,
 }) => {
   return (
-    <div className="container">
-      <Photo source={photo} color="blue" mode="square" />
-
+    <div className="project-container">
+      <Photo source={photo} color="blue" size="square" />
       <div className="project-content">
         <h2>{name}</h2>
         <p className="description">{description}</p>
@@ -36,7 +35,7 @@ export const Projectcard = ({
           />
           <Button
             style="btn-github"
-            icon="/src/assets/Btn-github.svg"
+            icon="/src/assets/Btn-github-dark.svg"
             name="View the code"
             link={githubLink}
           />

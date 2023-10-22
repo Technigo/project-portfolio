@@ -2,11 +2,7 @@
 import "/src/Components/headlines.css";
 
 export const Headlines = ({ title }) => {
-  return (
-    <div>
-      <h1 className="title">{title}</h1>
-    </div>
-  );
+  return <h1 className="title">{title}</h1>;
 };
 
 export default Headlines;

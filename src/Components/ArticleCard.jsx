@@ -6,8 +6,7 @@ import "/src/Components/articleCard.css";
 export const Articlecard = ({ title, photo, date, content, link }) => {
   return (
     <div className="container">
-      <Photo source={photo} color="pink" mode="square" />
-
+      <Photo source={photo} color="pink" size="article-square" />
       <div className="article-content">
         <p className="date">{date}</p>
         <h2>{title}</h2>

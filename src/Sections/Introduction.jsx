@@ -4,13 +4,13 @@ import "/src/index.css";
 
 export const Introduction = () => {
   return (
-    <div>
+    <div className="intro-wrapper">
       <h1>Hi, I'm Janice</h1>
       <Headlines title="Frontend Developer" />
       <div className="intro">
+        <Profile />
         <p>A self-initiative team worker and ready for further challenges.</p>
       </div>
-      <Profile source="/src/assets/closeup-young-female-professional-making-eye-contact-against-colored-background_662251-651.avif" />
     </div>
   );
 };
