@@ -59,8 +59,8 @@ export const FeaturedProjects = () => {
         />
 
         {repos.map((repo) => (
-          <div className="projectCard" key={repo.name}>
-            <div className="projects-text-box">
+          
+            <div className="projects-text-box" key={repo.name}>
               <img
                 className="repo-image"
                 src={repo.imageUrl}
@@ -113,7 +113,7 @@ export const FeaturedProjects = () => {
                 </a>
               </div>
             </div>
-          </div>
+
         ))}
       </div>
     </section>
