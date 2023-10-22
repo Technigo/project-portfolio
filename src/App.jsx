@@ -25,6 +25,8 @@ const App = () => {
         //Filter the repolist to the five latest project
         const fiveLatest = data.slice(0, 5);
         setRepoList(fiveLatest);
+        setLoading(!loading);
+        console.log(repoList);
       })
       .catch((error) => console.log(error));
   };
@@ -38,7 +40,7 @@ const App = () => {
       {/* <Header /> */}
       <Bio />
       <Tech />
-      {loading ? (
+      {!loading ? (
         <FeaturedProjects projectData={repoList} />
       ) : (
         console.log("Loading...")
