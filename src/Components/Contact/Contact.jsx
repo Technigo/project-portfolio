@@ -1,7 +1,7 @@
 import React from "react";
 import { ProfilePicture } from "../ProfilePicture/ProfilePicture";
-import { SocialIcons } from "../SocialIcons/SocialIcons";
 import { MainHeading } from "../Typo/MainHeading";
+import { SocialIcons } from "../SocialIcons/SocialIcons.jsx";
 
 import "./Contact.css";
 
@@ -19,15 +19,9 @@ export const Contact = () => {
         <div className="social-icons">
           <SocialIcons
             text={"Link to GitHub"}
-            src={"public/btn-sociallinks-github-default.svg"}
+            src={"/public/btn-sociallinks-github-default.svg"}
             link={"https://github.com/smExlex"}
             className={"link-github"}
-          />
-          <SocialIcons
-            text={"Link to LinkedIn"}
-            src={"public/btn-sociallinks-linkedin-default.svg"}
-            link={"https://www.linkedin.com/in/susanne-e-6915a087/"}
-            className={"link-linkedin"}
           />
         </div>
       </div>
