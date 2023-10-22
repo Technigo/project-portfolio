@@ -37,14 +37,10 @@
   font-weight: 700;
   line-height: normal;
 }
-
+/* 
 @media (min-width: 376px) and (max-width: 744px) {
   .my-words-container {
     padding: 128px 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .my-words {
@@ -60,28 +56,29 @@
     font-weight: 700;
     line-height: normal;
   }
-}
+} */
 
 @media (min-width: 745px) and (max-width: 1280px) {
   .my-words-container {
-    padding: 128px 128px;
+    padding: 128px 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 128px;
   }
 
   .my-words {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: flex-start;
+    grid-template-columns: 1fr;
+    /* align-items: flex-start; */
     padding: 0;
     width: 100%;
+    gap: 64px;
   }
   .my-words-title {
-    font-size: 80px;
+    font-size: 56px;
     align-self: flex-start;
+    margin-bottom: 64px;
   }
 }
 
@@ -108,6 +105,6 @@
   }
 
   .my-words-frame > img {
-    top: -13px;
+    top: -20px;
   }
 }

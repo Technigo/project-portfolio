@@ -8,6 +8,7 @@ import weather from "../../assets/johannes-plenio-600dw3-1rv4-unsplash.jpg";
 import music from "../../assets/heidi-fin-H4fYXZ1hyco-unsplash.jpg";
 
 import { Tags } from "./Tags.jsx";
+import { useState } from "react";
 
 export const ProjectCard = ({
   title,
@@ -16,11 +17,6 @@ export const ProjectCard = ({
   deployedLink,
   tags,
 }) => {
-  // console.log(title);
-  // console.log(description);
-  // console.log(gitLink);
-  // console.log(deployedLink);
-  // console.log(tags);
   let imagedirectory;
   console.log(title);
   switch (title) {

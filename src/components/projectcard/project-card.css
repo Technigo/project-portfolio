@@ -1,13 +1,14 @@
 .project-card {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .project-image {
   height: 200px;
   align-self: stretch;
   border-bottom: 10px solid #0b24f5;
-
   border-left: 10px solid #0b24f5;
 }
 
@@ -29,7 +30,6 @@
   font-weight: 400;
   line-height: normal;
   align-self: stretch;
-  margin: 16px 0;
 }
 
 .tags {
@@ -68,6 +68,7 @@
   font-weight: 600;
   line-height: normal;
   border: none;
+  cursor: pointer;
 }
 
 .gitBtn {
@@ -85,6 +86,21 @@
   font-weight: 600;
   line-height: normal;
   border: none;
+  cursor: pointer;
+}
+
+.gitBtn:hover {
+  background: #eb5577;
+  color: #fff;
+}
+.deployedBtn:hover {
+  background: #0b24f5;
+  color: #fff;
+}
+
+.gitBtn:hover img,
+.deployedBtn:hover img {
+  filter: brightness(0) invert(1);
 }
 
 .project-tags {
@@ -93,10 +109,10 @@
   margin: 15px 0;
 }
 
-@media (min-width: 376px) and (max-width: 744px) {
+/* @media (min-width: 376px) and (max-width: 744px) {
   .project-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
   }
 
@@ -194,17 +210,17 @@
     gap: 5px;
     margin: 15px 0;
   }
-}
+} */
 
 @media (min-width: 745px) and (max-width: 1280px) {
   .project-card {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 16px;
   }
 
   .project-image {
-    width: 280px;
+    width: 200px;
     height: 280px;
     flex-shrink: 0;
   }
@@ -217,7 +233,7 @@
   }
 
   .project-title {
-    font-size: 32px;
+    font-size: 24px;
     align-self: normal;
   }
 

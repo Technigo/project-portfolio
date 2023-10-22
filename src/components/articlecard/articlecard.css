@@ -1,7 +1,9 @@
 .article-card {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
+  align-items: flex-start;
+  align-self: stretch;
 }
 
 .article-title {
@@ -36,6 +38,9 @@
   border: none;
 }
 
+.readMoreBtn:hover {
+  background-color: #ffd338;
+}
 .btnText {
   font-family: "Montserrat";
   font-size: 20px;
@@ -58,6 +63,10 @@
   line-height: normal;
 }
 
+.date-and-title {
+  gap: 8px;
+}
+/* 
 @media (min-width: 376px) and (max-width: 744px) {
   .article-card {
     flex-direction: column;
@@ -65,15 +74,26 @@
     gap: 32px;
     align-self: stretch;
   }
-}
+} */
 
 @media (min-width: 745px) and (max-width: 1280px) {
+  .article-card {
+    gap: 32px;
+  }
   .article-title {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .date-month {
     display: inline-flex;
+  }
+
+  .date-and-title {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
   }
 }
 
