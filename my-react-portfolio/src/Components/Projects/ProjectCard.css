@@ -1,115 +1,73 @@
 .projectCardWrapper{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-}
-.image-wrapper{
-width: 280px;
-height: 280px;
-flex-shrink: 0;
-border-bottom: 20px solid var(--firstly-color);
-border-left: 20px solid var(--firstly-color);
-margin-top: 20px;
-margin-right: 20px;
-}
-.details-wrapper{
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
-}
-
-.info-wrapper{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 64px;
+  gap: 10px;
+
 }
 .project-image{
-width: 260px;
-height: 258px;
-}
-.project-heading{
-  color: black;
-  font-size: 20px;
-  padding: 20px;
-}
-.button-netlify{
-  display: inline-block;
-  padding: 15px 30px;
-  border-radius: 40px;
-  border: none;
-  background-color:rgb(204, 199, 199);
-  cursor: pointer;
-}
-.button-github{
-  display: inline;
-  padding: 15px 30px;
-  border-radius: 40px;
-  background-color:rgb(204, 199, 199);
-  border: none;
-  cursor: pointer;
-}
-.button-netlify:hover{
-  color: white;
-  background-color:var( --secondly-color);
-}
-.button-github:hover{
-  color: white;
-  background-color:var( --secondly-color);
+  border-bottom: solid 10px var(--firstly-color);
+    border-left: solid 10px var(--firstly-color);
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 24px;
   
 }
-.button-wrapper{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+.project-heading{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
 
+ 
+}
 .tag-wrapper{
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap:20px;
   margin-bottom: 20px;
 }
 .theTag{
   background-color: black;
-  color:white;
+  color: white;
 }
-@media (min-width: 667px) and (max-width: 1024px){
-.projectCardWrapper{
+.button-wrapper{
   display: flex;
-  flex-direction: row;
- 
+  gap: 20px;
+}
+.button{
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 20px;
+  border: none;
+}
+.img-button{
+  height: 40px;
+  width: 40px;
+}
+.button-content {
+  display: flex;
+  align-items: center; 
+}
+@media (min-width: 745px){
+  .project-image {
+    height: 280px;
+    width: 200px;
 }
 }
-
-@media (min-width: 1025px){
-  .project-heading{
-    font-size: 56px;
-    color: black;
-  }
+@media (min-width: 1279px){
   .projectCardWrapper{
     display: flex;
     flex-direction: row;
-    max-width: 1000px;
-   
+    justify-content: center;
+    gap: 20px;
+  
   }
-  .info-wrapper{
-    width: 840px;
-    display: flex;
-    flex-direction: row;
-  }
-  .project-heading{
-    font-size: 20px;
-  }
-  .project-paragraph{
-    font-size: 15px;
-  }
-  .button-wrapper{
-    display: flex;
-    flex-direction: row;
-  }
+  .project-image{
+    width: 280px;
+}
+.project-paragraph{
+width: 600px;
+}
 }

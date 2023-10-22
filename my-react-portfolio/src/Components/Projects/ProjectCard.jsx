@@ -29,14 +29,14 @@ export const ProjectCard = ( props ) => {
             <Description className="project-paragraph" text={descriptionProject} />
             <div className="tag-wrapper"> 
             {techniquesProject.map((technique, index) => (
-  <Tag key={index} tagItem={technique} className="tag-project" />
+  <Tag key={index} tagItem={technique}/>
             ))}
               </div>
           </div>
           <div className="button-wrapper">
-            <Button label="Live Demo" path={netlifyProject} className="button-netlify"
+            <Button label="Live Demo" path={netlifyProject} imageSrc="../Icons/liveDemo.png"className="button-netlify button"  imgClass="img-button"
             />
-            <Button label="View the code" path={githubProject} className="button-github" />
+            <Button label="View the code" path={githubProject}  imageSrc="../Icons/github-button.png" className="button-github button" imgClass="img-button" />
             </div>
           </div>
         

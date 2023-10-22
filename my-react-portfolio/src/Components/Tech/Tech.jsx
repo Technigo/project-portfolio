@@ -2,6 +2,7 @@ import { Description } from "../../ReusableComponents/Description"
 import { CardHeading } from "../../ReusableComponents/CardHeading"
 import "./Tech.css"
 
+// Component for the tech section.
 
 export const Tech = () => {
 
@@ -14,7 +15,7 @@ export const Tech = () => {
        <div className="headings-tech">
           <CardHeading className="white-heading" text="Tech" />
           </div>
-       <Description className="tech-paragraph" text={ TechText} />
+       <Description className="tech-paragraph" text={ TechText } />
 </div>
        </section>
   )
