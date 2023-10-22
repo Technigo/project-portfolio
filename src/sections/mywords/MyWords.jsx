@@ -1,7 +1,7 @@
 import "./mywords.css";
 import squiggly from "../../assets/squiggly.svg";
 import { ArticleCard } from "../../components/articlecard/ArticleCard";
-import { ArticleAssets } from "../../assets/Assets";
+import { ArticleAssets } from "../../assets/ArticleAssets";
 
 export const MyWords = () => {
   const articles = ArticleAssets.articles;
