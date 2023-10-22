@@ -81,6 +81,7 @@ export const FeaturedProjects = () => {
 
               <div className="repo-button-wrapper">
                 <a
+                  className="button-text"
                   href="https://app.netlify.com/teams/innakokic/sites"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -96,7 +97,7 @@ export const FeaturedProjects = () => {
                 </a>
 
                 <a
-                  className="github-repo-link"
+                className="button-text"
                   href={repo.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
