@@ -114,17 +114,28 @@ color: #000000;
 }
 
 .centered-arrow {
-  position: absolute;  
-  bottom: 10px;        /* Positions it 10px from the bottom */
-  left: 50%;           /* Centers it horizontally */
-  transform: translateX(-50%); /* Ensures the centering is accurate */
+  position: absolute;
+  bottom: 10px;             
+  left: 50%;                 
+  transform: translateX(-50%); 
   width: 19px;
   height: 30px;
-  transition: transform 0.3s ease;  
+  transition: transform 0.3s ease;
+  animation: bounce 0.5s infinite alternate; 
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); 
+  }
+  100% {
+    transform: translateY(15px); 
+  }
 }
 
 .enlarged {
-  transform: scale(1.5);  
+  transform: scale(1.5);
+  animation: none; 
 }
 .tech {
   width: 100%; 
@@ -235,6 +246,7 @@ color: #000000;
   display: flex;
   gap: 16px; /* Space between the View Code and Live Demo buttons */
 }
+
 .btn-live, .btn-view {
   position: relative;
   display: inline-block;  
@@ -248,13 +260,20 @@ color: #000000;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 255, 0.5); /* This is a semi-transparent blue */
+  background-color: rgba(255, 255, 255, 0.5); /* This will be used as the overlay color */
+  mix-blend-mode: multiply; /* This blends the overlay color with the image */
   opacity: 0;
   transition: opacity 0.3s;  /* Smooth transition for the overlay */
 }
 
-.btn-live:hover::before, .btn-view:hover::before {
+.btn-live:hover::before {
   opacity: 1;
+  background-color: pink; /* Pink-ish overlay for the .btn-live hover state */
+}
+
+.btn-view:hover::before {
+  opacity: 1;
+  background-color:blue; /* Blue overlay for the .btn-view hover state */
 }
 
 .btn-live::after, .btn-view::after {
@@ -263,12 +282,16 @@ color: #000000;
   vertical-align: middle;
 }
 
-.btn-live:hover, .btn-view:hover {
-  background-color: blue;
+.btn-view:hover svg {
+  fill: blue;
+}
+
+.btn-live:hover svg {
+  fill: pink;
 }
 
 
-  .presentation {
+.presentation {
   width: 100%;
   min-height: 600px;
   Background-color: #FFECEA;
@@ -296,7 +319,7 @@ color: #000000;
   padding-right: 500px;
   padding-left: 143px;
   }
-
+ 
 
   .skills {
     width: 100%;
@@ -412,12 +435,13 @@ color: #000000;
   }
   
   .contact-link svg {
-    transition: fill 0.3s; /* Add a transition effect for the fill property */
-  }
-  
-  .contact-link:hover svg {
-    fill: #000; /* Set the color to black on hover */
-  }
+    fill: gray; /* default color */
+    transition: fill 0.3s; /* smooth transition */
+}
+
+.contact-link:hover svg {
+    fill: black; /* color when hovered */
+}
 
   @keyframes swooshText {
     from {
@@ -452,3 +476,71 @@ color: #000000;
     white-space: nowrap;
   }
   
+
+  @media only screen and (min-width: 768px) {
+    p, .heading-paragraph-class, .presentation-paragraph {
+        font-size: 20px;
+    }
+
+    h2, .heading-classh2,  .classh2contact {
+        font-size: 60px; 
+        width: auto;
+      height: auto;
+       position: relative;
+       top: 0;
+       left: 0;
+       }
+
+    .container {
+        max-width: 768px;
+        padding: 20px; /* Added some padding to not make it touch the edge of the screen */
+    }
+    .centered-arrow {
+      bottom: -60px;
+    }
+
+    .image-another-class {
+        width: 200px;
+        height: 200px; /* Reduced slightly from the desktop's 250px */
+    }
+    .tech {
+      height: auto;
+      top: auto;
+    }
+    .project-item {
+      margin: 30px; /* Increase margin for better spacing on larger screens */
+    }
+  
+    .project-thumbnail {
+      max-width: 400px; /* Adjust the maximum width for project thumbnails */
+    }
+  
+    .classh2project {
+      font-size: 100px; /* Adjust heading font size for larger screens */
+      margin-left: 0; /* Reset margin for horizontal centering */
+      margin-top: 0; /* Reset margin for vertical positioning */
+    }
+    .contact-text {
+      font-size: 40px; /* Adjust text size for larger screens */
+    }
+  }
+  @media only screen and (min-width: 500px) {
+    p, .heading-paragraph-class, .presentation-paragraph {
+        font-size: 18px;
+    }
+
+    h2, .heading-classh2, .classh2project, .classh2contact {
+        font-size: 45px; /* Reduced further from the tablet's 60px */
+    }
+
+    .container {
+        max-width: 90%; 
+        padding: 15px;
+    }
+
+    .image-another-class {
+        width: 175px;
+        height: 175px; /* Reduced again from the tablet's 200px */
+    }
+  
+}

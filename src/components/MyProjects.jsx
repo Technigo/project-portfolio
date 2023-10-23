@@ -146,13 +146,13 @@ function MyProjects() {
                       ))}
                   </div>
                   <div className="project-links">
-                      <a href={codeUrl} target="_blank" rel="noopener noreferrer" className="btn-view">
-                          <img src={ViewCodeButton} alt="View Code Button" />
-                      </a>
-                      <a href={netlifyUrl} target="_blank" rel="noopener noreferrer" className="btn-live">
-                          <img src={LiveDemoButton} alt="Live Demo Button" />
-                      </a>
-                  </div>
+                   <a href={codeUrl} target="_blank" rel="noopener noreferrer" className="btn-view">
+                <img src={ViewCodeButton} alt="View Code Button" />
+                  </a>
+                <a href={netlifyUrl} target="_blank" rel="noopener noreferrer" className="btn-live">
+                <img src={LiveDemoButton} alt="Live Demo Button" />
+                </a>
+              </div>
               </div>
           </div>
             );
