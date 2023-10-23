@@ -1,0 +1,143 @@
+.headerBody {
+    height: 800px;
+
+}
+
+.HeaderSection {
+    width: 900px;
+    margin: auto;
+}
+
+.HeaderSection h1 {
+    color: rgb(181, 5, 5);
+
+}
+
+
+.subPresentation {
+    display: flex;
+    padding: 10px;
+
+}
+
+.picText {
+    width: 50%;
+    margin: auto;
+
+}
+
+
+.CvPicUpper img {
+    display: none;
+
+}
+
+.CvPic {
+    height: 164px;
+    width: 184px;
+    border-radius: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    padding-right: 15px;
+}
+
+
+
+.arrow {
+    margin-top: 60px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: jump 1s infinite alternate;
+
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+        /* Adjust the jump height as needed */
+    }
+}
+
+@media (max-width: 1024px) {
+    .HeaderSection {
+        width: 90%;
+    }
+
+    .HeaderSection h1 {
+        font-size: 60px;
+    }
+
+    .subPresentation {
+        margin-top: 20px;
+
+    }
+
+    .subPresentation p {
+        font-size: 20px;
+
+    }
+
+    .picText {
+        width: 90%;
+        margin: auto;
+
+    }
+}
+
+@media (max-width: 667px) {
+    .headerBody {
+        height: 1200px;
+    }
+
+    .CvPicUpper img {
+        display: block;
+        height: 164px;
+        width: 184px;
+        margin: auto;
+    }
+
+    .subPresentation {
+        flex-direction: column;
+
+    }
+
+    .CvPic {
+        display: none;
+
+    }
+
+    .HeaderSection {
+        font-size: 17px;
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+
+
+    }
+
+    .HeaderSection h1 {
+        font-size: 27px;
+        text-align: left;
+        margin-left: 45px;
+    }
+
+    .HeaderSection h3 {
+        margin-left: 45px;
+    }
+
+
+    .picText {
+        width: 100%;
+
+    }
+
+    .arrow {
+        margin-top: 20px;
+    }
+}

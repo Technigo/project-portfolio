@@ -1,0 +1,150 @@
+.MyWords-container {
+    font-weight: 600;
+    background-color: rgb(255, 198, 247);
+    color: rgb(181, 5, 5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.myword-header-wrapper {
+    background-color: rgb(255, 198, 247);
+    color: rgb(181, 5, 5);
+    display: flex;
+    padding-left: 80px;
+}
+
+.myword-header-wrapper h1 {
+    padding-left: 30px;
+}
+
+.divider {
+    height: 20px;
+    margin: 0;
+    margin-top: 200px;
+    position: relative;
+    background: linear-gradient(to bottom, transparent 50%, rgb(255, 198, 247) 50%);
+}
+
+.divider img {
+    width: 100%;
+    height: 10px;
+}
+
+.mywords-wrapper button {
+    border: none;
+    margin-bottom: 100px;
+    position: relative;
+    height: 48px;
+    width: 179px;
+
+}
+
+.mywords-wrapper img {
+    height: 40px;
+    width: 160px;
+}
+
+
+.MyWords-img {
+    border-left: 20px solid rgb(181, 5, 5);
+    border-bottom: 20px solid rgb(181, 5, 5);
+    width: 564px;
+    height: 340px;
+}
+
+
+.MyWords-item {
+    width: 564px;
+    margin-bottom: 20px;
+}
+
+.mywords-tags span:nth-child(1),
+.mywords-tags span:nth-child(2),
+.mywords-tags span:nth-child(3),
+.mywords-tags span:nth-child(4) {
+    background-color: black;
+    color: white;
+    width: auto;
+    font-size: 16px;
+
+}
+
+@media (min-width:1025px) {
+
+    .MyWords-container {
+        display: grid;
+
+    }
+
+    .divider img {
+        width: 100%;
+    }
+
+    .MyWords-img {
+        height: 340px;
+        width: 564px;
+        margin-bottom: 30px;
+    }
+
+    .MyWords-item {
+        background-color: rgb(255, 198, 247);
+        width: 564px;
+    }
+
+    .myword-header-wrapper {
+        padding-left: 10px;
+        background-color: rgb(255, 198, 247);
+        display: flex;
+
+    }
+
+    .myword-header-wrapper h1 {
+        margin-left: 20px;
+    }
+
+    .myword-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+
+    }
+}
+
+@media (max-width: 667px) {
+    .MyWords-item {
+        margin: 20px;
+        width: 90%;
+    }
+
+    .MyWords-img {
+        width: 90%;
+        height: 190px;
+        margin-bottom: 30px;
+    }
+
+    .myword-header-wrapper {
+        padding-left: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .myword-header-wrapper h1 {
+        padding-left: 0px;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .divider img {
+        width: 100%;
+        height: 5px;
+    }
+
+
+}
