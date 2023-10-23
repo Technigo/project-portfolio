@@ -8,9 +8,9 @@ import { Skills } from "../../components/sections/Skills";
 import { Contact } from "../../components/sections/Contact";
 import { Footer } from "../../components/sections/Footer";
 import { ScrollButton } from "../../components/ui/ScrollButton";
+import { ScrollToTop } from "../../components/ui/ScrollToTop";
 
 function Home({ lang, onLang }) {
-  // arrow icon to go down in hero
   const arrowRef = useRef(null);
 
   // animation for scroll bar on the top
@@ -23,7 +23,7 @@ function Home({ lang, onLang }) {
 
   return (
     <main>
-      {/* This is scroll bar */}
+      <ScrollToTop />
       <motion.div className="progress-bar" style={{ scaleX }} />
       <Hero arrowRef={arrowRef} lang={lang} onLang={onLang} />
       <Tech arrowRef={arrowRef} />

@@ -7,28 +7,34 @@ import { Label } from "../../components/ui/Label";
 import { primaryColorText, secondaryColorText, yellowColor } from "../../styles/styleVariable";
 import { Title } from "../../components/ui/Title";
 import { useParams } from "react-router-dom";
+import { ScrollToTop } from "../../components/ui/ScrollToTop";
 
 import { blogsData as data } from "../../statics/blogsData";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import PageNotFound from "../PageNotFound/PageNotFound";
+import { Loading } from "../../components/ui/Loading";
 
 function BlogPage() {
   const navigate = useNavigate();
   const { id } = useParams();
   const [currentPost, setCurrentPost] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    setIsLoading(true);
     data.forEach((obj, i) => {
       if (Object.values(obj).includes(Number(id))) setCurrentPost(obj);
       return;
     });
+    setIsLoading(false);
   }, [id]);
 
-  // if the id is not exist, then will directs to pagenotfound
   if (!currentPost) return <PageNotFound />;
+  if (isLoading) return <Loading />;
   const { date, title, text, url, imagePath } = currentPost;
   return (
     <section className={styles.blog_page}>
+      <ScrollToTop />
       <div className={styles.wave_box}></div>
       <div className={styles.inner_blog}>
         <div className={styles.blog_content}>

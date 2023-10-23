@@ -43,7 +43,7 @@ function Post({ blog }) {
       </div>
       <Label labelText={date} />
       <Title text={title} />
-      <p className={styles.post_text}>{introText}</p>
+      <p className={styles.post_text}>{introText}...</p>
       <Link to={`/blog/${id}/`}>
         <Button
           iconPath="/icons/doc.svg"
