@@ -84,24 +84,33 @@ img.centered {
 }
 
 @media (min-width: 768px) {
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .intro-container h2 {
     order: 1;
+    text-align: center; /* Optional: Center the text */
   }
 
   .intro-container h1 {
     order: 2;
+    text-align: center; /* Optional: Center the text */
   }
 
-  .intro-container img.centered {
+  img.centered,
+  .intro-container p {
     order: 3;
     flex: 1;
+    margin: 0;
   }
 
-  .intro-container p {
-    order: 4; /* Set the order to display the paragraph second */
-    flex: 2; /* Grow to fill available space */
-    display: inline-block;
+  .arrow-icon {
+    display: flex;
+    order: 4;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Optional: Center the text */
   }
-
-  /* Optionally, you can use justify-content to control alignment */
 }
