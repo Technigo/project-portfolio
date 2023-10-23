@@ -18,8 +18,3 @@ export const Intro = () => {
     </div>
   );
 };
-
-{
-  /* <Headline text="Hi, I'm Frida Lindskog" level={2} className="intro-h2" />
-      <Headline text="Frontend Developer" level={1} className="intro-h1" /> */
-}
