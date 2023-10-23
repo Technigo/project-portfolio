@@ -2,7 +2,7 @@
 
 ## Author
 
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.technigo.io/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://jennylarsen-portfolio.netlify.app/)
 [![@Technigo](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jenny-larsen-b51140219/)
 [![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jennylarsen)
 
@@ -27,4 +27,4 @@ Through this project, I, Jenny, have learned invaluable lessons in React develop
 
 
 ## View it live
-
+https://jennylarsen-portfolio.netlify.app/
