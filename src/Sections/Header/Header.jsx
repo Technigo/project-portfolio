@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <header tabIndex="0">
             <ImageComponent 
-            sectionClassName={"profilepic.jpg"} 
+            sectionClassName={"profile-image"} 
             elementClassName={"circle-img"} 
             imagePath={"./profilepic.jpg"}
             ImageAltText={"Picture of Jenny"} />
