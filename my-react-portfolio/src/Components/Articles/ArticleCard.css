@@ -1,82 +1,88 @@
-
-.img-wrapper{
-  width: 343px;
-height: 200px;
-
-  flex-shrink: 0;
-  border-bottom: 20px solid var(--secondly-color);
-
-  border-left: 20px solid var(--secondly-color);
-  }
-  .details-wrapper{
-    display: flex;
+.articleCard-wrapper {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  }
-  
-  .info-wrapper{
-    display: flex;
-    flex-direction: column;
-  }
- .img-wrapper img{
-  width: 320px;
-  height: 179px;
-  
-  }
-  .button-article{
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 40px;
-    border: none;
-    background-color:var( --btn-gray);
-    cursor: pointer;
-  }
-  .button-article:hover{
-    background-color: var(--secondly-color);
-    color: white;
-  }
-  .article-heading{
-    color: black;
-    font-size: 15px;
-    text-align: left;
-  }
-  .article-paragraph{
-    text-align: left;
-  }
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
 
-.timeArticle{
+.article-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 24px;
+  border-bottom: 1.25rem solid var(--secondly-color); 
+  border-left: 1.25rem solid var(--secondly-color); 
+}
+
+.timeArticle {
   background-color: #000;
   color: #fff;
-display: inline;
-  padding: 2px 4px;
-  margin: 8px 4px;
+  display: inline;
+  padding: 0.125rem 0.25rem;  
   font-family: Montserrat;
   font-weight: 600;
   text-align: left;
+}
+.article-description{
+  margin-top: rem;
+}
+.article-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article-paragraph {
+  text-align: left;
+  font-size: 1rem; 
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+
+.button-article {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-article:hover {
+  background-color: var(--secondly-color);
+  color: white;
+}
+
+
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .articleCard-wrapper {
+   padding: 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .articleCard-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 667px) and (max-width: 1024px){
+  .article-heading {
+    font-size: 3.5rem; 
+    color: black;
+  }
 
+  .article-heading {
+    color: black;
+    font-size:1rem; 
+    text-align: left;
   }
-  
-  @media (min-width: 1025px){
-    .articleCard-wrapper{
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     
-    }
-    .article-heading{
-      font-size: 56px;
-      color: black;
-    }
-    .article-heading{
-      color: black;
-      font-size: 15px;
-      text-align: left;
-    }
-    .article-paragraph{
-      text-align: left;
-      font-size: 15px;
-    }
-  }
+
+  .article-paragraph {
+    text-align: left;
+    font-size: 1rem; 
+}
+}

@@ -1,17 +1,29 @@
+.article-container{
+  background-color: var(--thirdly-color);
+  border-top: 3px solid var( --firstly-color) ;
+  padding: 128px 25px;
+
+}
+.purple-main-heading{
+  margin-bottom: 100px;
+  font-size: 56px;
+}
+
 .article-wrapper{
 display: grid;
-background-color: var(--thirdly-color);
-margin:50px -70px;
-padding: 50px;
-border-top: 3px solid var( --firstly-color) ;
+grid-template-columns: 1fr;
+
 }
 
 
-/* @media (min-width: 667px) and (max-width: 1024px){
+@media (min-width: 667px) and (max-width: 1024px){
 
 }
 
 @media (min-width: 1025px){
- 
-    
-} */
+
+  .article-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -8,14 +8,15 @@ console.log(articleArray);
 
 export const Articles = () => {
   return (
+    <div className="article-container">
+    <CardHeading className="purple-main-heading" text="My words" />
     <div className="article-wrapper">
-        <CardHeading className="pink-heading" text="My words" />
       {articleArray.map((article, index) => (
        <ArticleCard key={index} articles={article} />
 
       )
       )}
-    
+     </div>
     </div>
   )
 }

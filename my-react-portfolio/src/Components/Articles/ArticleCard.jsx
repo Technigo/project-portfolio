@@ -16,16 +16,17 @@ export const ArticleCard = (props) => {
     <>
       <div className="articleCard-wrapper">
         <div className="img-wrapper">
-          <img src={imgArticle} alt={ nameArticle }  />
+          <img src={imgArticle} alt={ nameArticle } className="article-image" />
      </div>
         <div className="article-description">
           <p className="timeArticle">{timeArticle} </p>
           <SectionHeading  className="article-heading" text={nameArticle} />
           <Description className="article-paragraph" text={descriptionArticle} />
-          <Button label="Read article" path={linkArticle} className="button-article" />
+          <Button label="Read article" imageSrc="../Icons/Doc.png"  path={linkArticle} className="button-article" imgClass="img-button" />
           
         </div>
     </div>
     </>
   )
 }
+

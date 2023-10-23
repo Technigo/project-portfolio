@@ -10,12 +10,10 @@ export const Footer = ()  =>{
   return (
     <>
     <footer>
-      <CardHeading className="blue-heading" text="Let’s talk" />
-      <MyPhoto />
+      <CardHeading className="green-main-heading" text="Let&apos; s talk" />
+      <MyPhoto  className="img-skills"/>
       <Contact />
-      <div className="icons">
         <SocialLinks />
-      </div>
     </footer>
       <Animation />
       </>
