@@ -4,7 +4,7 @@ import { LargeText } from "../../ReusableComp/Typo/LargeText";
 
 export const Tech = () => {
 
-    const techText = "HTML, CSS, Flexbox, Grids, JavaScript, ES7, JSX, React, React Hooks, Node.js, Npm, Web Accessibility, APIs, mob-programming, pair-programming, GitHub."
+    const techText = "HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, API:s, mob-programming, pair-programming, GitHub."
 
     return (
         <section className="tech">

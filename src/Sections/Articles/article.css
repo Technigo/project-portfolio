@@ -1,14 +1,14 @@
-/* ------------ OVERALL ------------ */
-
+/* Styling for the wavy line */
 .wavy-line-wrapper {
     height: 15px;
     position: absolute;
-    width: 100%;
+    width: 100%; /* Set the width to cover the full width of the parent element */
     top: -6px;
     left: -2px;
-    background: url(/icons/Wavyline-Divider.svg) center/auto 100%;
+    background: url(/icons/Wavyline-Divider.svg) center/auto 100%; /* Set the image */
   }
 
+/* Styling for the articles section */
 .articles-section {
     position: relative;
     z-index: 1;
@@ -19,21 +19,25 @@
     background-color: var(--light-secondary);
 }
 
+/* Styling for the articles section heading */
 .articles-heading {
     text-align: center;
 }
 
+/* Styling for the subheading section */
 .subheading-section {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
+/* Styling for images within the article cards */
 .image {
     margin-right: 20px;
     margin-bottom: 14px;
 }
 
+/* Styling for the article text section */
 .article-text-section {
     display: flex;
     flex-direction: column;
@@ -41,8 +45,7 @@
     margin-bottom: 24px;
 }
 
-/* ------------ MEDIA QUERIES ------------ */
-/* ------------ Tablet only ------------ */
+/* --- Tablet --- */
 @media (max-width: 1279px) and (min-width: 744px) {
     .articles-section {
         display: flex;
@@ -56,7 +59,7 @@
     }
 }
 
-/* ------------ Desktop only ------------ */
+/* --- Desktop --- */
 @media (min-width: 1280px) {
     .articles-section {
         display: flex;

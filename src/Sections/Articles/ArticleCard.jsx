@@ -16,7 +16,6 @@ export const ArticleCard = ({ data }) => {
                         sectionClassName={"image"} 
                         elementClassName={"rectangle-img"} 
                         imagePath={article.image}
-                        //link={article.image} 
                         ImageAltText={article.name} />
                         <div className="article-text-section">
                             <div className="subheading-section">
