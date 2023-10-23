@@ -1,20 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Montserrat:wght@300;400;600;700&display=swap");
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
 code {
   font-family: "Hind", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
 
-body {
-  width: 375px;
-  height: 5620px;
-  top: 1336px;
-  padding: 16px;
+body,
+html {
+  width: 100%;
+  height: 100%;
   background-color: #ffffff;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tech .header .wrapper {
+  grid-column: 1 / 5;
+}
+
+/* For tablets and above */
+@media (min-width: 376px) and (max-width: 744px) {
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
 }
