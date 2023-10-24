@@ -22,20 +22,19 @@
 
 .mywords-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     width: 1000px;
-    margin-left: 220px;
+    margin: 0 auto;
+    gap: 40px;
 }
 
 .mywords-child {
-    flex-basis: calc(50% - 0px);
-    margin-bottom: 20px;
     display: flex;
-    justify-content: space-around;
-    height: 600px;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
 }
+
 
 .mywords-details {
     width: 450px;
@@ -174,40 +173,44 @@
 
     .mywords-container {
         width: 100%;
-        margin-left: 12px;
+        margin: 0 auto;
+        padding-left: 50px;
+        padding-bottom: 60px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
+        align-items: center;
+        justify-content: center;
     }
 
     .mywords-child {
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         margin-top: 20px;
+        margin: 0 auto;
     }
 
     .mywords-details {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
-        text-align: left;
+        text-align: center;
     }
 
+
     .mywords h1 {
-        font-size: 2.2em;
+        font-size: 2.8em;
         margin-left: 12px;
         text-align: center;
-        padding-top: 30px;
-        margin-bottom: 10px;
+        padding-top: 80px;
+
     }
 
     .articlesimg {
-        width: 90%;
-        height: 25%;
+        width: 80%;
+        height: auto;
         border-bottom: 8px solid #FF4575;
         border-left: 8px solid #FF4575;
     }
@@ -215,11 +218,13 @@
     .mywords h2 {
         font-size: 1.6em;
         text-align: left;
+        width: 80%;
     }
 
     .mywords p {
         font-size: 1.2em;
         text-align: left;
+        width: 80%;
     }
 
     .mywords-actions {
