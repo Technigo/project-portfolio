@@ -16,3 +16,5 @@ export const Tech = () => {
     </section>
   );
 };
+
+// lägga till en extra div?

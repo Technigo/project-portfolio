@@ -19,17 +19,19 @@
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
+
 .tech-stack p {
   font-family: "Hind", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 38.42px;
+  max-width: 820px;
 }
 /* ---------- MEDIA QUERIES ---------- */
 /* ---------- Tablet and up ---------- */
 
 /* ---------- Tablet only ---------- */
-@media (min-width: 744px) and (max-width: 1279px) {
+@media (min-width: 744px) {
   .tech-container {
     padding: 256px 64px;
   }
@@ -37,6 +39,7 @@
   .tech-stack p {
     text-align: center;
     padding: 0 64px;
+    max-width: 950px;
   }
 }
 
@@ -56,9 +59,15 @@
     gap: 124px;
   }
 
+  .tech-wrapper h2 {
+    font-size: 80px;
+  }
+
   .tech-stack p {
     font-size: 32px;
+    text-align: left;
     line-height: 51.23px;
+    max-width: 950px;
   }
 }
 /* --------- Desktop only, from 1512px --------- */
@@ -75,5 +84,14 @@
     display: flex;
     flex-direction: row;
     gap: 124px;
+    /* max-width: 950px; */
+  }
+
+  .tech-wrapper h2 {
+    font-size: 80px;
+  }
+
+  .tech-stack p {
+    max-width: 950px;
   }
 }
