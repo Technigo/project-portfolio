@@ -19,7 +19,7 @@ export const ProjectCard = ({ className, repo, repoImage }) => {
   // Function to capitalize specific words in a string
   const capitalizeSpecificWords = (text) => {
     return text
-      .replace(/\b(html5|css3)\b/g, (match) => match.toUpperCase())
+      .replace(/\b(html5|css3|api)\b/g, (match) => match.toUpperCase())
       .replace(/(^|\s)([a-z])/g, (match) => match.toUpperCase());
   };
 
