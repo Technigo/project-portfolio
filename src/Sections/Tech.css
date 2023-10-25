@@ -1,6 +1,27 @@
 .tech-container {
-  background-color: blue;
+  background: linear-gradient(
+    -45deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient 25s ease infinite;
+
   padding-top: 128px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .tech-h1 {

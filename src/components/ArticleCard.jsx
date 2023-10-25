@@ -11,16 +11,18 @@ export const ArticleCard = ({ name, photo, tags, text }) => {
         mode="square"
         className="article-photo"
       />
-      <div className="tags">
-        {tags.map((tag) => (
-          <p key={tag.id} className="tag">
-            {tag.name}
-          </p>
-        ))}
+      <div className="article-info">
+        <div className="tags">
+          {tags.map((tag) => (
+            <p key={tag.id} className="tag">
+              {tag.name}
+            </p>
+          ))}
+        </div>
+        <h2>{name}</h2>
+        <p className="article-text">{text}</p>
+        <ArticlesLinks />
       </div>
-      <h2>{name}</h2>
-      <p className="project-text">{text}</p>
-      <ArticlesLinks />
     </div>
   );
 };
