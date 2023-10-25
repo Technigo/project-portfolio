@@ -12,6 +12,7 @@
     padding-right: 11px;
     text-decoration: none;
     border-radius: 25px;
+    width: 100%; 
   }
   
   .button img {
@@ -27,9 +28,19 @@
 
   .btn-wrapper-projects {
     display: flex;
+    flex-direction: column;
     gap: 10px;
   }
 
   .button a:hover {
     background-color: var(--hover);
+  }
+
+  @media (min-width:450px) {
+    .btn-wrapper-projects {
+      flex-direction: row;
+    }
+    .button {
+      width: 100%;
+    }
   }
