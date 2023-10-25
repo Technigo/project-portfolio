@@ -1,6 +1,6 @@
 
-import { MainHeading } from "./components/Typo/MainHeading.jsx";
-import { BodyBold } from "./components/Typo/BodyBold.jsx";
+import { MainHeading } from "./components/Typo/MainHeading.jsx"
+import { BodyBold } from "./components/Typo/BodyBold.jsx"
 
 import "./Tech.css"
 

@@ -1,8 +1,8 @@
-import { MainHeading } from "./components/Typo/MainHeading.jsx";
-import { SubHeading } from "./components/Typo/SubHeading.jsx";
-import { SocialMedia } from "./components/SocialMedia.jsx";
+import { MainHeading } from "./components/Typo/MainHeading.jsx"
+import { SubHeading } from "./components/Typo/SubHeading.jsx"
+import { SocialMedia } from "./components/SocialMedia.jsx"
 
-import profile  from "../assets/extraaa/profile-pic.jpg";
+import profile  from "../assets/extraaa/profile-pic.jpg"
 
 export const LetsTalk = () => {
 

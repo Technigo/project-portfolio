@@ -1,8 +1,8 @@
-import { MainHeading } from "./components/Typo/MainHeading.jsx";
-import { SubHeading } from "./components/Typo/SubHeading.jsx";
+import { MainHeading } from "./components/Typo/MainHeading.jsx"
+import { SubHeading } from "./components/Typo/SubHeading.jsx"
 import { BodyText } from "./components/Typo/BodyText.jsx"
 
-import profile from "../assets/extraaa/profile-pic.jpg";
+import profile from "../assets/extraaa/profile-pic.jpg"
 import arrow from "../assets/elements/arrow.svg"
 
 import "./Introduction.css"

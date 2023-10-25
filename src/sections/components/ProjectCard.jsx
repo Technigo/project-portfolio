@@ -1,5 +1,5 @@
-import { SubHeading } from "./Typo/SubHeading.jsx";
-import { BodyText } from "./Typo/BodyText.jsx";
+import { SubHeading } from "./Typo/SubHeading.jsx"
+import { BodyText } from "./Typo/BodyText.jsx"
 import { Tags } from "./Tags.jsx"
 import { Button } from "./Button.jsx"
 
@@ -15,7 +15,7 @@ export const ProjectCard = ({repos}) => {
 
     //creating a variable to store the repos with a matching name to the names from the repoImages array.
     const filteredRepos = repos.filter((repo) => {
-        return repoImages.find((img) => img.repoName === repo.name);
+        return repoImages.find((img) => img.repoName === repo.name)
     });
     // console.log("the filtered repos:",filteredRepos
 
@@ -24,7 +24,7 @@ export const ProjectCard = ({repos}) => {
         <div>
             <ul className="projects-list">
                 {filteredRepos.map((repo) => {
-                    const repoImage = repoImages.find((img) => img.repoName === repo.name);
+                    const repoImage = repoImages.find((img) => img.repoName === repo.name)
                     return (
                         <li key={repo.id} className="projects-list-item">
                             <div className="project-img-wrapper">

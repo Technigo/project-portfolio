@@ -6,7 +6,7 @@ import { FeaturedProjects } from "./sections/FeaturedProjects.jsx"
 import { MyWords } from "./sections/MyWords.jsx"
 import { Skills } from "./sections/Skills.jsx"
 import { LetsTalk } from "./sections/LetsTalk.jsx"
-import { Footer } from "./sections/Footer.jsx";
+import { Footer } from "./sections/Footer.jsx"
 
 function App() {
   

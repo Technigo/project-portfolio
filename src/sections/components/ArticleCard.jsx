@@ -1,14 +1,14 @@
-import { SubHeading } from "./Typo/SubHeading.jsx";
-import { BodyText } from "./Typo/BodyText.jsx";
-import { Button } from "./Button.jsx";
-import articles from "./Data/articles.json";
+import { SubHeading } from "./Typo/SubHeading.jsx"
+import { BodyText } from "./Typo/BodyText.jsx"
+import { Button } from "./Button.jsx"
+import articles from "./Data/articles.json"
 
 import doc from "/src/assets/button-icons/doc.svg"
 
 export const ArticleCard = ( ) => {
 
-    console.log("These are the articles:",articles);
-    console.log("TESTING ARRAY:",articles[0].name);
+    console.log("These are the articles:",articles)
+    console.log("TESTING ARRAY:",articles[0].name)
 
     return (
         <div className="article-cards">

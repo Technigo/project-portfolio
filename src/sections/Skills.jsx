@@ -1,6 +1,6 @@
-import { MainHeading } from "./components/Typo/MainHeading.jsx";
-import { SubHeading } from "./components/Typo/SubHeading.jsx";
-import { SkillsList } from "./components/SkillsList.jsx";
+import { MainHeading } from "./components/Typo/MainHeading.jsx"
+import { SubHeading } from "./components/Typo/SubHeading.jsx"
+import { SkillsList } from "./components/SkillsList.jsx"
 
 import "./Skills.css"
 

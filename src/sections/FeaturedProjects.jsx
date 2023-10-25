@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
 
-import { MainHeading } from "./components/Typo/MainHeading.jsx";
-import { ProjectCard } from "./components/ProjectCard.jsx";
+import { MainHeading } from "./components/Typo/MainHeading.jsx"
+import { ProjectCard } from "./components/ProjectCard.jsx"
 
 import "./FeaturedProjects.css"
 
@@ -14,19 +14,19 @@ export const FeaturedProjects = () => {
     useEffect(() => {
         const fetchRepos = async () => {
             try {
-                const response = await fetch(REPOSAPI);
+                const response = await fetch(REPOSAPI)
                 if (!response.ok) {
                     throw new Error("Network response was not ok" + response.statusText)
                 }
-                const data = await response.json();
+                const data = await response.json()
                 setRepos(data);
             } catch (error) {
                 console.error(
                     "There has been a problem with your fetch operation:", error
-                );
+                )
             }
         }
-        fetchRepos();
+        fetchRepos()
     }, [])
 
 
