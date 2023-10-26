@@ -5,16 +5,14 @@ export const Tech = () => {
     <section className="tech-container">
       <div className="tech-wrapper">
         <h2 className="tech-heading">Tech</h2>
-      </div>
-      <div className="tech-stack">
-        <p>
-          HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js,
-          Mongo DB, Web Accessibility, API:s, mob-programming, pair-programming,
-          Github.
-        </p>
+        <div className="tech-stack">
+          <p>
+            HTML, CSS, Flexbox, Grids, JavaScript, ES7, JSX, React, React Hooks,
+            Node.js, Mongo DB, Web Accessibility, API:s, mob-programming,
+            pair-programming, Npm, Github.
+          </p>
+        </div>
       </div>
     </section>
   );
 };
-
-// lägga till en extra div?
