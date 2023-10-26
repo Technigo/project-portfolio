@@ -41,15 +41,13 @@
   }
   
   .classh2project {
-    font: Montserrat;
+    letter-spacing: 0em;
+    color: blue;
+    font: 'Montserrat', sans-serif;
     font-size: 80px;
     font-weight: 700;
-    line-height: 98px;
-    letter-spacing: 0em;
     text-align: center;
-    color: blue;
-    margin-left: 40px; /* Horizontal centering */
-    margin-top: 128px; /* Vertical positioning */
+    margin-bottom: 128px;
   }
   
   
@@ -75,57 +73,5 @@
     margin-right: 4px; 
     margin-bottom: 4px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);  /* Added box shadow */
-  }
-  
-  .project-links {
-    display: flex;
-    gap: 16px; /* Space between the View Code and Live Demo buttons */
-
-  }
-  
-  .btn-live, .btn-view {
-    position: relative;
-    display: inline-block;  
-    overflow: hidden; 
-  }
-  
-  .btn-live::before, .btn-view::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* This will be used as the overlay color */
-    mix-blend-mode: multiply; /* This blends the overlay color with the image */
-    opacity: 0;
-    transition: opacity 0.3s;  /* Smooth transition for the overlay */
-    border-radius: 25px;
-    background-color: transparent; 
-  }
-  
-  .btn-live:hover::before {
-    opacity: 1;
-    background-color: pink; /* Pink-ish overlay for the .btn-live hover state */
-  }
-  
-  .btn-view:hover::before {
-    opacity: 1;
-    background-color:blue; /* Blue overlay for the .btn-view hover state */
-  }
-  
-  .btn-live::after, .btn-view::after {
-    margin-left: 8px;
-    font-size: 14px;
-    vertical-align: middle;
-    border-radius: 25px;
-  }
-  
-  .btn-view:hover svg {
-    fill: blue;
-  }
-  
-  .btn-live:hover svg {
-    fill: pink;
   }
   

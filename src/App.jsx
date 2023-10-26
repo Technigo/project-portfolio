@@ -14,6 +14,7 @@ function App() {
       <TopSection />
       <TechSection />
       <MyProjects />
+      <Presentation />
       <Skills />
       <Contact />
       <Footer />
