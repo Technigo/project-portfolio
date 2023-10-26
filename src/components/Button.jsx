@@ -1,11 +1,12 @@
 import React from 'react';
+import './Button.css';
 
-function Button({ icon, label, link, className }) {
+function Button({ type, label, icon, onClick }) {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className={`btn ${className}`}>
-      <img src={icon} alt={`${label} Button`} />
-      {label}
-    </a>
+    <button className={`custom-button ${type}`} onClick={onClick}>
+      {icon && <span className="icon">{icon}</span>}
+      {label && <span className="label">{label}</span>}
+    </button>
   );
 }
 

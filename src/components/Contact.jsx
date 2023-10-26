@@ -3,6 +3,7 @@ import linkedinIcon from '../assets/linkedin.svg'; // Import your LinkedIn icon 
 import githubIcon from '../assets/github.svg'; // Import your GitHub icon SVG
 import profileImage from '../assets/original.jpg';
 import './Contact.css';
+import Button from './Button';
 
 function Contact() {
   const linkedinLink = 'https://se.linkedin.com/in/alexandra-meija-0757403b';
@@ -14,25 +15,17 @@ function Contact() {
       <img src={profileImage} alt="Your Name" className="profile-image" />
       <p className="contact-text">You can reach me here:</p>
       <ul className="contact-list">
-        <li className="contact-link">
-          <a
-            href={linkedinLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={linkedinIcon} alt="LinkedIn" />
-          </a>
-        </li>
-        <li className="contact-link">
-          <a
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={githubIcon} alt="GitHub" />
-          </a>
-        </li>
-      </ul>
+    <Button
+        type="contact-link" 
+        icon={<img src={linkedinIcon} alt="LinkedIn" />} 
+        onClick={() => window.open(linkedinLink, '_blank')} 
+    />
+    <Button
+        type="contact-link" 
+        icon={<img src={githubIcon} alt="GitHub" />} 
+        onClick={() => window.open(githubLink, '_blank')} 
+    />
+</ul>
     </div>
   );
 }
