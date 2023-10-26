@@ -11,6 +11,7 @@ import Week5Music from '../assets/Week5Music.jpg';
 import Week6Christmas from '../assets/Week6Christmas.jpg';
 import Week7Happy from '../assets/Week7Happy.jpg';
 import Week9Movie from '../assets/Week9Movie.jpg';
+import './MyProjects.css';
 
 
 

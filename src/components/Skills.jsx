@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Skills.css';
 
 function Skills() {
   const [skillsList] = useState([

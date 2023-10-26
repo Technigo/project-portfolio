@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Presentation.css';
 
 function Presentation() {
   const [presentationText, setPresentationText] = useState(

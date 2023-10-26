@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CenteredArrow from '../assets/PinkArrow.svg';  // Correct the import here
 import OriginalImage from '../assets/original.jpg';
+import './TopSection.css';
 
 function TopSection() {
   // Define a state variable for the introductory text

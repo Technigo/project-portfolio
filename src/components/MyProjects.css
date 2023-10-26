@@ -1,0 +1,127 @@
+.my-projects {
+    width: 100%;
+    padding: 128px 0; /* Adjust the padding as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This keeps your content centered horizontally */
+    background-color: #FFFFFF;
+  }
+  
+  .centered-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    height: auto;
+  }
+  
+  .project-item {
+    display: flex;
+    align-items: center;
+    margin: 20px; /* This will vertically center align items if they have different heights */
+  }
+  .project-thumbnail {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: -10px 10px 0px 0px #0000FF; /* blue shadow */
+    transition: 0.3s; /* smooth transition for hover effects, optional */
+    margin-right: 20px;
+  }
+  .project-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows the projects to wrap to the next line */
+    justify-content: space-between; /* Evenly spaced projects */
+    width: 80%; /* Adjust the width based on your design preference */
+  }
+  
+  .classh2project {
+    font: Montserrat;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 98px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: blue;
+    margin-left: 40px; /* Horizontal centering */
+    margin-top: 128px; /* Vertical positioning */
+  }
+  
+  
+  .project-techniques {
+    color: #FFF;
+    font: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    gap: 8px; 
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  
+  .technique-box {
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #333;
+    padding: 8px 12px;  /* Adjusted padding */
+    border-radius: 4px;
+    margin-right: 4px; 
+    margin-bottom: 4px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);  /* Added box shadow */
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 16px; /* Space between the View Code and Live Demo buttons */
+  }
+  
+  .btn-live, .btn-view {
+    position: relative;
+    display: inline-block;  
+    overflow: hidden; 
+  }
+  
+  .btn-live::before, .btn-view::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* This will be used as the overlay color */
+    mix-blend-mode: multiply; /* This blends the overlay color with the image */
+    opacity: 0;
+    transition: opacity 0.3s;  /* Smooth transition for the overlay */
+  }
+  
+  .btn-live:hover::before {
+    opacity: 1;
+    background-color: pink; /* Pink-ish overlay for the .btn-live hover state */
+  }
+  
+  .btn-view:hover::before {
+    opacity: 1;
+    background-color:blue; /* Blue overlay for the .btn-view hover state */
+  }
+  
+  .btn-live::after, .btn-view::after {
+    margin-left: 8px;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  
+  .btn-view:hover svg {
+    fill: blue;
+  }
+  
+  .btn-live:hover svg {
+    fill: pink;
+  }
+  

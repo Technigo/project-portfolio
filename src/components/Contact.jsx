@@ -2,6 +2,7 @@ import React from 'react';
 import linkedinIcon from '../assets/linkedin.svg'; // Import your LinkedIn icon SVG
 import githubIcon from '../assets/github.svg'; // Import your GitHub icon SVG
 import profileImage from '../assets/original.jpg';
+import './Contact.css';
 
 function Contact() {
   const linkedinLink = 'https://se.linkedin.com/in/alexandra-meija-0757403b';

@@ -14,7 +14,6 @@ function App() {
       <TopSection />
       <TechSection />
       <MyProjects />
-      <Presentation />
       <Skills />
       <Contact />
       <Footer />
@@ -23,3 +22,4 @@ function App() {
 }
 
 export default App;
+//Add the presentation when I have something to add there//
