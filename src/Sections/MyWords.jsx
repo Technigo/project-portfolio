@@ -1,5 +1,6 @@
 import { BigHeadlines } from "../Components/BigHeadlines";
 import { Article } from "../Components/Article";
+import { WaveDivider } from "./WaveDivider";
 
 import "./MyWords.css";
 
@@ -26,24 +27,26 @@ export const MyWords = () => {
   ];
 
   return (
-    <div className="article-list-wrapper">
-      <img src="/images/wavedivider.png" alt="" className="wavy-divider" />
-      <BigHeadlines sectionId={sectionId}/>
-      <div className="article-list">
-        {articleList.map((article) => {
-          return (
-            <Article 
-              key={article.id} 
-              imageURL={article.imageURL} 
-              title={article.title} 
-              date={article.date} 
-              articleText={article.text}
-              link={article.link}
-              sectionId={sectionId}
-            />
-          )
-        })}
+    <>
+      <WaveDivider />
+      <div className="article-list-wrapper">
+        <BigHeadlines sectionId={sectionId}/>
+        <div className="article-list">
+          {articleList.map((article) => {
+            return (
+              <Article 
+                key={article.id} 
+                imageURL={article.imageURL} 
+                title={article.title} 
+                date={article.date} 
+                articleText={article.text}
+                link={article.link}
+                sectionId={sectionId}
+              />
+            )
+          })}
+        </div>
       </div>
-    </div>
+    </>
   )
 }

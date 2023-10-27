@@ -9,10 +9,12 @@ export const Project = ({ name, description, tags, homepage, url, sectionId }) =
   return (
     <div className="project-card">
       <Images projectName={name}/>
-      <h3>{name[0].toUpperCase()+name.replaceAll("-", " ").slice(1)}</h3>
-      <p>{description}</p>
-      <Tags tags={tags} />
-      <Buttons homepage={homepage} url={url} sectionId={sectionId} />
+      <div className="project-description">
+        <h3>{name[0].toUpperCase()+name.replaceAll("-", " ").slice(1)}</h3>
+        <p>{description}</p>
+        <Tags tags={tags} />
+        <Buttons homepage={homepage} url={url} sectionId={sectionId} />
+      </div>      
     </div>
   )
 }

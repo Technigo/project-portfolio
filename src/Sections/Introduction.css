@@ -36,38 +36,22 @@
     line-height: normal;
 }
 
-.arrow {
-    width: 27px;
-    height: 68px;
-    flex-shrink: 0;
-    animation: bounce 1s ease-in infinite alternate;
-}
-
-@keyframes bounce {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
 /********* MEDIA QUERIES *********/
 /********* TABLETS *********/
 @media (min-width: 376px) {
     .introduction-wrapper {
-        padding: 128px 64px 0px 64px;
+        padding: 128px 64px 128px 64px;
         display: grid;
         grid-template-columns: 1fr;
     }
 
+    .name-title {
+        grid-column: 1 / span 3; 
+        grid-row: 1;
+    }
+    
     .name-title h3 {
         font-size: 24px;
-        /* grid-column: span 3; */
-        grid-row: 1;
     }
 
     .profile-pic {
@@ -81,12 +65,6 @@
         grid-row: 2;
         grid-column: span 2;
     }
-
-    .arrow {
-        grid-row: 3;
-        grid-column: 2 / span 2;
-    }
-
 }
 
 /********* DESKTOP max-width 1280px *********/

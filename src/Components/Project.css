@@ -1,4 +1,4 @@
-.project-card {
+.project-card, .project-description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -6,11 +6,36 @@
     padding: 16px;
 }
 
-.project-card h3, .project-card p {
+.project-description h3, .project-description p {
     padding: 0;
     margin: 0;
 }
 
-.project-card p {
+.project-description h3 {
+    font-size: 24px;
+}
+
+.project-description p {
+    font-size: 18px;
     text-align: left;
+}
+
+/********* MEDIA QUERIES *********/
+/********* TABLETS *********/
+@media (min-width: 376px) {
+    .project-card {
+        flex-direction: row;
+    }
+
+
+}
+
+/********* DESKTOP max-width 1280px *********/
+@media (min-width: 745px) {
+
+}
+
+/********* DESKTOP max-width 1512px *********/
+@media (min-width: 1281px) {
+
 }
