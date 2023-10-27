@@ -3,6 +3,7 @@ import { ProfileImage } from "../../ProfileImage/ProfileImage";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
+import { TickerTape } from "../../TickerTape/TickerTape";
 
 export const Contact = () => {
   return (
@@ -49,6 +50,7 @@ export const Contact = () => {
           </a>
         </div>
       </div>
+      <TickerTape />
     </section>
   );
 };
