@@ -13,7 +13,7 @@ export const Intro = () => {
         </div>
 
         <div className="header-wrapper">
-          <SubHeading text={"Hi, I'm Susanne Ekenheim"} />
+          <SubHeading className="header-hi" text={"Hi, I'm Susanne Ekenheim"} />
           <Heading1 className={"info-h1"} text={"Frontend Developer"} />
         </div>
         <div className="info-text">
