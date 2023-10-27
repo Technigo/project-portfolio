@@ -17,12 +17,10 @@ export const SkillList = [
     bg_color: "#2483E0",
     category: "Toolbox",
     items: [
-      "Atom",
       "Postman",
       "Adobe Photoshop",
       "Adobe Illustrator",
       "Figma",
-      "Keynote",
       "Slack",
     ],
   },
@@ -37,13 +35,11 @@ export const SkillList = [
     bg_color: "#EB5577",
     category: "More",
     items: [
-      "Design Lead",
       "Branding",
       "Strategy",
       "Process design",
       "Concept development",
       "Agile methodology",
-      "Hyper Island toolbox",
     ],
   },
 ];
