@@ -1,5 +1,6 @@
 import { CircleImage } from "../../reusableComponents/images/CircleImage"
 import { SectionTitle } from "../../reusableComponents/texts/SectionTitle"
+import { MediumsizedTitle } from "../../reusableComponents/texts/MediumsizedTitle"
 import BtnGithub from "/icons/BtnGithub.png"
 import BtnGithubHover from "/icons/BtnGithubHover.png"
 import BtnLinkedin from "/icons/BtnLinkedin.png"
@@ -7,20 +8,25 @@ import BtnLinkedinHover from "/icons/BtnLinkedinHover.png"
 
 import "./Footer.css"
 
+
 export const Footer = () => {
     const footerTitle = "Let's talk"
+    const myContactInfo = ["Sheryll Poo-Cheong", "+55(0)55 555 5555", "sheryll@mail.com"]
 
     return (
         <div className="contact-info">
             <SectionTitle sectionTitletext={footerTitle} />
             <CircleImage />
-            <h2>
+            <div className="contact-info-list">
                 <ul>
-                    <li>Sheryll Poo-Cheong</li>
-                    <li> +55(0)55 555 5555</li>
-                    <li>sheryll@mail.com</li>
+                    {myContactInfo.map((info) => (
+                        <li key={info}>
+                            <MediumsizedTitle mediumHeader={info} />
+                        </li>
+                    ))}
                 </ul>
-            </h2>
+            </div>
+
             <div className="footer-links">
                 <a
                     href='https://github.com/Sheryll-Ann'
@@ -31,19 +37,17 @@ export const Footer = () => {
                     <button type="button" aria-label="go to github account">
                         <img className="btn-github" src={BtnGithub} alt="github image" />
                         <img className="btn-github-hover" src={BtnGithubHover} alt="github image hovered" />
-                        <span></span>
                     </button>
                 </a>
                 <a
                     href='#'
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="link to Linkedin"
+                    aria-label="link to Linkedin profile"
                 >
-                    <button type="button" aria-label="go to Linkedin">
+                    <button type="button" aria-label="go to Linkedin profile">
                         <img className="btn-linkedin" src={BtnLinkedin} alt="linkedin image" />
                         <img className="btn-linkedin-hover" src={BtnLinkedinHover} alt="linkedin image hovered" />
-                        <span></span>
                     </button>
                 </a>
             </div>
