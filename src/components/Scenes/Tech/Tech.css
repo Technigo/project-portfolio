@@ -1,0 +1,40 @@
+#tech {
+  background: var(--bg-gradient);
+  color: #fff;
+}
+
+.tech-text {
+  font-family: "Hind", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* For medium devices */
+@media (min-width: 744px) {
+  #tech .page-wrapper {
+    padding: 16rem 4rem;
+    justify-content: center;
+  }
+
+  .tech-text {
+    width: 34rem;
+    text-align: center;
+  }
+}
+
+/* For bigger devices */
+@media (min-width: 1024px) {
+  #tech .page-wrapper {
+    grid-template-columns: auto auto;
+    max-width: 920px;
+    align-items: center;
+    margin: auto;
+    gap: 7.75rem;
+  }
+
+  .tech-text {
+    width: 34rem;
+    text-align: left;
+    font-size: 2rem;
+  }
+}

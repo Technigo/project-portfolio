@@ -1,0 +1,40 @@
+#skills {
+  background: var(--bg-gradient);
+  color: #fff;
+}
+
+.skills-list {
+  display: grid;
+  gap: 4rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.category {
+  margin: 0 auto 1rem;
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.125rem;
+}
+
+/* For medium devices */
+@media (min-width: 744px) {
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: start;
+    width: 25rem;
+    margin: auto;
+  }
+
+  .category {
+    margin: 0 0 1rem;
+  }
+}
+
+/* For medium devices */
+@media (min-width: 1024px) {
+  .skills-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

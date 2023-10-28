@@ -1,0 +1,50 @@
+.ticker-tape-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 7.125rem;
+  background: var(--bg-gradient);
+  overflow: hidden;
+  white-space: nowrap;
+  bottom: 0;
+}
+
+.ticker {
+  display: inline-block;
+  animation: marquee 50s linear infinite;
+}
+
+.collection-1 {
+  position: relative;
+  left: 0%;
+  animation: swap 50s linear infinite;
+}
+
+.item {
+  display: inline-block;
+  padding: 0 0.3rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Transition */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes swap {
+  0%,
+  50% {
+    left: 0%;
+  }
+  50.01%,
+  100% {
+    left: 100%;
+  }
+}
