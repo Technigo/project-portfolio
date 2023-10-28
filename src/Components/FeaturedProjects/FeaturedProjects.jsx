@@ -68,6 +68,8 @@ export const FeaturedProjects = () => {
               />
               <div className="all-text-wrapper">
                 <h3 className="repo-name">{repo.name}</h3>
+
+                <div className="desc-topics-wrapper">
                 <p className="repo-desc"> {repo.description} </p>
 
                 <div className="topics-wrapper">
@@ -76,6 +78,8 @@ export const FeaturedProjects = () => {
                       {topic}
                     </div>
                   ))}
+                  </div>
+
                 </div>
               </div>
 

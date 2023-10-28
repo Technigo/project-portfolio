@@ -6,15 +6,16 @@ export const MyWords = () => {
   const articleText =
     "Writing code is less about “just working”. Instead, it's much more about creativity. It's similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.";
 
-  const articleTitle = "Lorem Ipsum";
+  const articleTitle = "How to stop being scared: Learning to love code";
 
   return (
     <>
       <section className="my-words-section">
         <img className="divider" src="/assets/divider.svg" alt="" />
+        <div className="my-words-wrapper">
         <MainHeading className={"heading-text my-words"} text={"My Words"} />
 
-        <div className="my-words-wrapper">
+        
           <div className="article-box">
             <Images />
             <div className="date-title-wrapper">

@@ -2,7 +2,7 @@ import "./Images.css";
 
 export const Images = () => {
   return (
-    <div>
+    <div className="image">
       <img
         className="butterfly"
         src="/assets/butterfly.jpg"

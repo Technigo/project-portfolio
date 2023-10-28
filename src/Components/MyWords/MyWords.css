@@ -40,8 +40,8 @@
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
-  width: 343px;
-}
+  max-width: 343px;
+  }
 
 .article-date {
   background-color: black;
@@ -64,6 +64,7 @@
   font-weight: 600;
   line-height: normal;
   margin: 0;
+  max-width: 350px;
 }
 
 .article-text {
@@ -73,9 +74,10 @@
 }
 
 .read-article {
-  width: 200px;
+  max-width: 200px;
   display: flex;
-  padding-right: 0px;
+  padding-right: 16px;
+  text-wrap: nowrap;
   align-items: center;
   gap: 7px;
   border: none;
@@ -87,18 +89,25 @@
 
 /* ---- Media queries ------ */
 
-@media (min-width: 667px) {
+@media (min-width: 667px) and (max-width: 1024px) {
   .divider {
     top: -3px;
   }
 
-  .article-box {
-    width: 750px;
-    align-items: flex-start;
-  }
-
   .my-words-section {
     align-items: flex-start;
+    }
+
+  .my-words-wrapper {
+    margin: 128px 32px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .article-box {
+   max-width: 100%; 
   }
 }
 
@@ -111,14 +120,20 @@
     gap: 64px;
   }
 
+    .my-words {
+      grid-column-start:1 ;
+      grid-column-end: 3;
+    }
+
   .article-box {
-    width: 500px;
+    max-width: 500px;
     align-items: flex-start;
   }
 
   .my-words-section {
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
 
   .heading-wrapper {
