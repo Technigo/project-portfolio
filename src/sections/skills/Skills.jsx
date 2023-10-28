@@ -1,57 +1,37 @@
 import { MediumsizedTitle } from '../../reusableComponents/texts/MediumsizedTitle'
 import { SectionTitle } from '../../reusableComponents/texts/SectionTitle'
+import skills from '../../skills.json'
 import './Skills.css'
 
 export const Skills = () => {
 
-    const skillsTitle = 'Skills'
     return (
 
         <section className="skills-section">
-            <SectionTitle sectionTitletext={skillsTitle} />
+            <SectionTitle sectionTitletext={skills.skillsTitle} />
             <div className="skills-flex">
-                <div className="code">
-                    <MediumsizedTitle mediumHeader={'Code'} />
-                    <p>
+                {skills.categories.map((category, index) => (
+                    <div key={category.mediumTitle}>
+                        <div style={{
+                            backgroundColor: `${category.bgColour}`
+                            // color: `${category.colour}`                                                  
+                        }}
+                            className={category.mediumTitle.toLowerCase()}>
+                            <MediumsizedTitle
+                                mediumHeader={category.mediumTitle}
+                            // className={category.mediumTitle.toLowerCase().replace(/ /g, "-")} 
+                            />
+                        </div>
                         <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Javascript ES6</li>
-                            <li>React</li>
-                            <li>Styled Components</li>
-                            <li>GitHub</li>
-
+                            {category.skills.map((skill) => (
+                                <li key={skill}>{skill}</li>
+                            ))}
                         </ul>
-                    </p>
-                </div>
-                <div className="toolbox">
-                    <MediumsizedTitle mediumHeader={'Toolbox'} />
-                    <p>
-                        <ul>
-                            <li>Figma</li>
-                            <li>Slack</li>
-                            <li>Postman</li>
-
-                        </ul>
-                    </p>
-                </div>
-                <div className="upcoming">
-                    <MediumsizedTitle mediumHeader={'Upcoming'} />
-                    <p>
-                        <ul>
-                            <li>Node.js</li>
-                        </ul>
-                    </p>
-                </div>
-                <div className="more">
-                    <MediumsizedTitle mediumHeader={'More'} />
-                    <p>
-                        <ul>
-                            <li>Agile methology</li>
-                        </ul>
-                    </p>
-                </div>
+                    </div>
+                ))}
             </div>
-        </section>
+        </section >
     )
 }
+
+// Note: Difficulty in only targeting the "more" h2 living in MediumSizedTitle component inheriting styling .medium-title and isolating it from the other MediumSizedTitle through the array in standardised json (not working) to finally create on top a classname with toLowerCase() method to get .more h2
