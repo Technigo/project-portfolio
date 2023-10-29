@@ -84,72 +84,77 @@
     margin-bottom: 4px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);  /* Added box shadow */
   }
-  /* Existing styles ... */
 
-/* For tablets and medium devices */
-@media (min-width: 376px) and (max-width: 744px) {
+
+/* Tablets */
+@media (min-width: 744px) and (max-width: 1279px) {
   .my-projects {
-      padding: 80px 0; /* Reduced padding for medium screens */
+      padding: 80px 0;
   }
 
   .classh2project {
-      font-size: 60px; /* Reduced font size for medium screens */
-      margin-bottom: 80px; /* Adjusted margin for medium screens */
+      font-size: 60px;
+      margin-bottom: 80px;
   }
 
   .project-thumbnail {
-      max-width: 250px; /* Reduced size for medium screens */
+      max-width: 250px;
   }
 
   .project-list {
-      width: 90%; /* Adjusted width for medium screens */
+      width: 90%;
   }
 
   p {
-      font-size: 18px; /* Reduced font size for medium screens */
-      line-height: 30px; /* Adjusted line height for medium screens */
+      font-size: 18px;
+      line-height: 30px;
   }
+  
   .project-item {
-    flex-direction: column; /* Stacks elements vertically by default */
+    flex-direction: row; /* Stack items vertically */
+  }
+
+  .project-thumbnail {
+    width: 200px;      /* Adjust width as desired */
+    height: 250px;  
+    margin-right: 0; 
+    margin-bottom: 20px;
+    padding-right: 15px;
+  }
 }
 
-.project-thumbnail {
-    margin-right: 0; /* Removes the margin on the right */
-    margin-bottom: 20px; /* Adds margin to the bottom */
-}
-  /* Adjust any other styles as needed for this breakpoint */
-}
 
-/* For mobile devices */
-@media (max-width: 375px) {
+/* Mobile */
+@media (min-width: 374px) and (max-width: 743px){
   .my-projects {
-      padding: 40px 0; /* Reduced padding for small screens */
-  }
+    padding: 40px 0;
+}
 
-  .classh2project {
-      font-size: 40px; /* Reduced font size for small screens */
-      margin-bottom: 60px; /* Adjusted margin for small screens */
-  }
-
-  .project-thumbnail {
-      max-width: 200px; /* Reduced size for small screens */
-  }
-
-  .project-list {
-      width: 100%; /* Full width for small screens */
-  }
-
-  p {
-      font-size: 16px; /* Reduced font size for small screens */
-      line-height: 28px; /* Adjusted line height for small screens */
-  }
-  .project-item {
-    flex-direction: row; /* Thumbnail on the left, details on the right */
+.classh2project {
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
 .project-thumbnail {
-    margin-right: 20px; /* Restores the margin on the right */
-    margin-bottom: 0; /* Removes the bottom margin */
+    max-width: 90%; /* Making the image larger */
+    border-radius: 20px; /* Optional: This gives a slight rounded edge */
 }
-  /* Adjust any other styles as needed for this breakpoint */
+
+.project-list {
+    width: 100%;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.project-item {
+  flex-direction: column;
+}
+
+.project-thumbnail {
+  margin-right: 0;
+  margin-bottom: 15px;
+}
 }

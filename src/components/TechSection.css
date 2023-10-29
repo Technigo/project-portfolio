@@ -23,31 +23,10 @@
     width: 600px;
     height: 100px;
   }
-  /* Mobile */
-@media (max-width: 375px) {
-  .tech {
-      flex-direction: column; /* Stack items vertically */
-      padding: 64px 16px; /* Adjusted padding for mobile */
-      height: auto; /* Auto height to fit content */
-  }
 
-  .tech-heading {
-      width: auto; /* Let it resize based on content */
-      height: auto; /* Let it resize based on content */
-      margin-bottom: 16px; /* Space between heading and paragraph in a vertical layout */
-      text-align: center; /* Center the text */
-  }
-
-  .tech-paragraph {
-      width: auto; /* Adjust to the container width with some padding */
-      height: auto; /* Let it resize based on content */
-      text-align: center; /* Center the text */
-      padding: 0 16px; /* Padding on sides for better word wrap */
-  }
-}
 
 /* Tablet */
-@media (min-width: 376px) and (max-width: 744px) {
+@media (min-width: 744px) and (max-width: 1279px) {
   .tech {
       flex-direction: column; /* Stack items vertically */
       padding: 80px 32px; /* Adjusted padding for tablet */
@@ -69,4 +48,25 @@
   }
 }
 
-
+  /* Mobile */
+  @media (min-width: 374px) and (max-width: 743px){
+    .tech {
+        flex-direction: column; /* Stack items vertically */
+        padding: 64px 16px; /* Adjusted padding for mobile */
+        height: auto; /* Auto height to fit content */
+    }
+  
+    .tech-heading {
+        width: auto; /* Let it resize based on content */
+        height: auto; /* Let it resize based on content */
+        margin-bottom: 16px; /* Space between heading and paragraph in a vertical layout */
+        text-align: center; /* Center the text */
+    }
+  
+    .tech-paragraph {
+        width: auto; /* Adjust to the container width with some padding */
+        height: auto; /* Let it resize based on content */
+        text-align: center; /* Center the text */
+        padding: 0 16px; /* Padding on sides for better word wrap */
+    }
+  }
