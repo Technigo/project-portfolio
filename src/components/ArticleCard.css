@@ -49,3 +49,41 @@
 .read-article-button:hover {
     background-color: #FF637C;
 }
+
+.article-card {
+    width: 400px;
+    border: 1px solid #ccc;
+    margin: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* ... rest of the styles ... */
+}
+
+/* For tablets and medium devices */
+@media (min-width: 376px) and (max-width: 744px) {
+    .article-card {
+        width: 90%; /* Adjusted width for better fit on tablets */
+        margin: 10px auto; /* Centering the card with auto margin on left and right */
+    }
+
+    /* Adjust any other styles as needed for this breakpoint */
+}
+
+/* For mobile devices */
+@media (max-width: 375px) {
+    .article-card {
+        width: 95%; /* Adjusted width for better fit on mobile */
+        margin: 10px auto; /* Centering the card with auto margin on left and right */
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .article-title {
+        font-size: 24px; /* Reduced font size for better fit */
+    }
+
+    .article-description {
+        font-size: 16px; /* Reduced font size for better fit */
+    }
+
+    /* Adjust any other styles as needed for this breakpoint */
+}

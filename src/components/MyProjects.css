@@ -84,4 +84,72 @@
     margin-bottom: 4px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);  /* Added box shadow */
   }
-  
+  /* Existing styles ... */
+
+/* For tablets and medium devices */
+@media (min-width: 376px) and (max-width: 744px) {
+  .my-projects {
+      padding: 80px 0; /* Reduced padding for medium screens */
+  }
+
+  .classh2project {
+      font-size: 60px; /* Reduced font size for medium screens */
+      margin-bottom: 80px; /* Adjusted margin for medium screens */
+  }
+
+  .project-thumbnail {
+      max-width: 250px; /* Reduced size for medium screens */
+  }
+
+  .project-list {
+      width: 90%; /* Adjusted width for medium screens */
+  }
+
+  p {
+      font-size: 18px; /* Reduced font size for medium screens */
+      line-height: 30px; /* Adjusted line height for medium screens */
+  }
+  .project-item {
+    flex-direction: column; /* Stacks elements vertically by default */
+}
+
+.project-thumbnail {
+    margin-right: 0; /* Removes the margin on the right */
+    margin-bottom: 20px; /* Adds margin to the bottom */
+}
+  /* Adjust any other styles as needed for this breakpoint */
+}
+
+/* For mobile devices */
+@media (max-width: 375px) {
+  .my-projects {
+      padding: 40px 0; /* Reduced padding for small screens */
+  }
+
+  .classh2project {
+      font-size: 40px; /* Reduced font size for small screens */
+      margin-bottom: 60px; /* Adjusted margin for small screens */
+  }
+
+  .project-thumbnail {
+      max-width: 200px; /* Reduced size for small screens */
+  }
+
+  .project-list {
+      width: 100%; /* Full width for small screens */
+  }
+
+  p {
+      font-size: 16px; /* Reduced font size for small screens */
+      line-height: 28px; /* Adjusted line height for small screens */
+  }
+  .project-item {
+    flex-direction: row; /* Thumbnail on the left, details on the right */
+}
+
+.project-thumbnail {
+    margin-right: 20px; /* Restores the margin on the right */
+    margin-bottom: 0; /* Removes the bottom margin */
+}
+  /* Adjust any other styles as needed for this breakpoint */
+}

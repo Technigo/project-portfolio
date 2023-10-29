@@ -1,9 +1,9 @@
 .top-section {
     width: 100%;
-    padding: 128px 0; /* Adjust the padding as needed */
+    padding: 128px 0; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* This keeps your content centered horizontally */
+    align-items: center; 
     background-color: #FFFFFF;
   }
   
@@ -12,7 +12,7 @@
     flex-direction: column;
     gap: 8px;
     align-items: flex-start;
-    max-width: 1100px; /* You can adjust this value based on how wide you want your content */
+    max-width: 1100px; 
     margin: 0 auto;
   }
   
@@ -48,7 +48,7 @@
   .image-paragraph-section {
     display: flex;
     align-items: center;
-    gap: 36px;  /* Increase or decrease this value to adjust the spacing */
+    gap: 36px;  
   }
   
   .image-another-class {
@@ -81,3 +81,110 @@
     transform: scale(1.5);
     animation: none; 
   }
+
+ 
+
+/* Mobile */
+@media (max-width: 375px) {
+  .top-section {
+      padding: 64px 0; 
+  }
+
+  .left-content {
+      align-items: center; 
+      text-align: center; 
+  }
+
+  .heading-classh1 {
+      font-size: 24px; 
+      line-height: 30px; 
+  }
+
+  .heading-classh2 {
+      font-size: 40px; 
+      line-height: 48px; 
+  }
+
+  .heading-paragraph-class {
+      font-size: 16px; 
+      line-height: 24px; 
+  }
+
+  .image-paragraph-section {
+      flex-direction: column; 
+      gap: 16px;  
+      align-items: center; 
+  }
+
+  .image-another-class {
+      width: 150px; /* Adjusted for mobile */
+      height: 150px; /* Adjusted for mobile */
+  }
+
+  .centered-arrow {
+      bottom: 16px;  /* Adjust this value for positioning on mobile */
+  }
+}
+
+
+
+/* Tablet  */
+@media (min-width: 376px) and (max-width: 744px) {
+  .top-section {
+    padding: 128px 0;
+    align-items: flex-start; /* Aligns content to the top */
+    padding-left: 128px; /* Padding on the left to account for design offset */
+    background-color: #FFFFFF;
+  }
+
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px; /* Space between text and image sections */
+    align-items: flex-start;
+    max-width: 744px;
+    margin: 0; /* Removes auto margin */
+  }
+
+  .heading-classh1 {
+    font-size: 24px; /* Adjust based on design */
+    line-height: 30px;
+    margin-bottom: 16px; /* Space between the title and subtitle */
+  }
+
+  .heading-classh2 {
+    font-size: 32px; /* Adjust based on design */
+    line-height: 40px;
+    margin-bottom: 64px; /* Space between the subtitle and paragraph */
+  }
+
+
+  .heading-paragraph-class {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 500px; /* Adjust based on design width */
+    margin-bottom: 64px; /* Space between the paragraph and the image */
+  }
+
+  .image-paragraph-section {
+    display: flex;
+    flex-direction: column; /* Stack the image and arrow vertically */
+    align-items: center;
+    gap: 128px; /* Space between the image and the arrow */
+  }
+
+  .image-another-class {
+    width: 150px; /* Adjust based on design */
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .centered-arrow {
+    width: 19px;
+    height: 30px;
+    position: absolute;
+    bottom: -400px;  /* Adjust this value to position the arrow closer or farther from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -26,56 +26,23 @@
 
 
 
-
-
-  @media only screen and (min-width: 768px) {
-    p, .heading-paragraph-class, .presentation-paragraph {
-        font-size: 20px;
-    }
-
-    h2, .heading-classh2,  .classh2contact {
-        font-size: 60px; 
-        width: auto;
-      height: auto;
-       position: relative;
-       top: 0;
-       left: 0;
-       }
-
-    .container {
-        max-width: 768px;
-        padding: 20px; /* Added some padding to not make it touch the edge of the screen */
-    }
-    .centered-arrow {
-      bottom: -60px;
-    }
-
-    .image-another-class {
-        width: 200px;
-        height: 200px; /* Reduced slightly from the desktop's 250px */
-    }
- 
-  @media only screen and (min-width: 500px) {
-    p, .heading-paragraph-class, .presentation-paragraph {
-        font-size: 18px;
-    }
-
-    h2, .heading-classh2, .classh2project, .classh2contact {
-        font-size: 45px; /* Reduced further from the tablet's 60px */
-    }
-
-    .container {
-        max-width: 90%; 
-        padding: 15px;
-    }
-
-    .centered-arrow {
-      bottom: -60px;
-    }
-    .image-another-class {
-        width: 175px;
-        height: 175px; /* Reduced again from the tablet's 200px */
-    }
-  
-}
+/* Mobile */
+@media (max-width: 375px) {
+  .container {
+    max-width: 90%;
   }
+}
+
+/* Tablet  */
+@media (min-width: 376px) and (max-width: 744px) {
+  .container {
+    max-width: 92%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 745px) and (max-width: 1278px) {
+  .container {
+    max-width: 95%;
+  }
+}

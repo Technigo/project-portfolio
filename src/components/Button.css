@@ -74,3 +74,43 @@
 .contact-link:hover img {
     filter: brightness(0); /* This will turn the image black on hover */
 }
+
+/* Existing styles ... */
+
+/* For tablets and medium devices */
+@media (min-width: 376px) and (max-width: 744px) {
+  .project-links {
+      gap: 10px; /* Reduced gap for medium screens */
+  }
+
+  .btn-live::after, .btn-view::after {
+      font-size: 12px; /* Reduced font size for medium screens */
+  }
+
+  .contact-list {
+      gap: 15px; /* Reduced gap for medium screens */
+  }
+
+  /* Adjust any other styles as needed for this breakpoint */
+}
+
+/* For mobile devices */
+@media (max-width: 375px) {
+  .project-links {
+      flex-direction: column; /* Stack the buttons vertically for small screens */
+      align-items: center; /* Center the buttons horizontally */
+      gap: 8px; /* Reduced gap for small screens */
+  }
+
+  .btn-live::after, .btn-view::after {
+      font-size: 10px; /* Reduced font size for small screens */
+  }
+
+  .contact-list {
+      flex-wrap: wrap; /* Allow the list to wrap to the next line if there's not enough space */
+      justify-content: center; /* Center the items horizontally */
+      gap: 10px; /* Reduced gap for small screens */
+  }
+
+  /* Adjust any other styles as needed for this breakpoint */
+}
