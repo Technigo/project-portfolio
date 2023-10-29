@@ -21,12 +21,20 @@ export const Contact = () => {
             <div className="social-media">
                 <ul className="socials">
                     <li>
-                        <a href="#">
+                        <a 
+                            href="https://www.linkedin.com/in/hang-nguyen-07a734b0"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
                             <FontAwesomeIcon icon={faLinkedin} style={{color: "#d0d0d0",}} />
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a 
+                            href="https://github.com/Hang-Nguyen-Vu"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
                             <FontAwesomeIcon icon={faGithub} style={{color: "#d0d0d0",}} />
                         </a>
                     </li>
