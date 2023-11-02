@@ -1,14 +1,14 @@
 export const projectsData = [
   {
-    imagePath: "/images/chatbot.webp",
-    title: "Chatbot build in JavaScript",
+    imagePath: "/images/happy-thoughts.webp",
+    title: "Happy Thoughts",
     text: {
-      en: "You can ask for a recommendation for a museum from your preference.",
-      ja: "好きな美術館を選んでくれるChatbotです。ジャンル、アーティストから一つ選んでくれ、その美術館のURLを教えてくれます。",
+      en: "This is a Twitter-like APP. You can post your happy thoughts and click the like button to like other people's posts.",
+      ja: "ツイッターのようなアプリです。自分をハッピーにしてくれていることを投稿してみてください！他の投稿にいいねもできます。",
     },
-    skills: ["HTML", "CSS", "JavaScript"],
-    gitUrl: "https://github.com/sansan-sakura/project-chatbot",
-    demoUrl: "https://helpful-piroshki-45c88f.netlify.app",
+    skills: ["HTML", "CSS", "React"],
+    gitUrl: "https://github.com/sansan-sakura/project-happy-thoughts-vite",
+    demoUrl: "https://happy-thoughs.netlify.app/",
   },
   {
     imagePath: "/images/weatherapp.webp",
@@ -32,17 +32,7 @@ export const projectsData = [
     gitUrl: "https://github.com/sansan-sakura/project-guess-who",
     demoUrl: "https://guess-who2222.netlify.app/",
   },
-  {
-    imagePath: "/images/music.webp",
-    title: "Music Releases",
-    text: {
-      en: "This app is build with React and static data that was gotten from Spotify. You can check music albums.",
-      ja: "Spotifyのアルバムデータをもとに作ったReactのプロジェクトです。",
-    },
-    skills: ["HTML", "CSS", "React"],
-    gitUrl: "https://github.com/sansan-sakura/project-music-releases-vite",
-    demoUrl: "https://music-releases2222.netlify.app/",
-  },
+
   {
     imagePath: "/images/berlin.webp",
     title: "Berlin Berlin",
@@ -54,26 +44,40 @@ export const projectsData = [
     gitUrl: "https://github.com/sansan-sakura/project-news-site",
     demoUrl: "https://tourmaline-cendol-e09256.netlify.app/",
   },
-  {
-    imagePath: "/images/survey.webp",
-    title: "Pala Customer Survey",
-    text: {
-      en: "This is a pet food company survey form. It was a group project that I worked with two others by using Github.",
-      ja: "プログラミングスクールのグループワークで作った、ペットフード会社の顧客サーベイフォームです。",
-    },
-    skills: ["HTML", "CSS", "React"],
-    gitUrl: "https://github.com/elbines/project-survey-vite-EMS",
-    demoUrl: "https://pala-customer-survey.netlify.app/",
-  },
-  {
-    imagePath: "/images/happy-thoughts.webp",
-    title: "Happy Thoughts",
-    text: {
-      en: "This is a Twitter-like APP. You can post your happy thoughts and click the like button to like other people's posts.",
-      ja: "ツイッターのようなアプリです。自分をハッピーにしてくれていることを投稿してみてください！他の投稿にいいねもできます。",
-    },
-    skills: ["HTML", "CSS", "React"],
-    gitUrl: "https://github.com/sansan-sakura/project-happy-thoughts-vite",
-    demoUrl: "https://happy-thoughs.netlify.app/",
-  },
 ];
+
+// {
+//   imagePath: "/images/chatbot.webp",
+//   title: "Chatbot build in JavaScript",
+//   text: {
+//     en: "You can ask for a recommendation for a museum from your preference.",
+//     ja: "好きな美術館を選んでくれるChatbotです。ジャンル、アーティストから一つ選んでくれ、その美術館のURLを教えてくれます。",
+//   },
+//   skills: ["HTML", "CSS", "JavaScript"],
+//   gitUrl: "https://github.com/sansan-sakura/project-chatbot",
+//   demoUrl: "https://helpful-piroshki-45c88f.netlify.app",
+// },
+
+// {
+//   imagePath: "/images/survey.webp",
+//   title: "Pala Customer Survey",
+//   text: {
+//     en: "This is a pet food company survey form. It was a group project that I worked with two others by using Github.",
+//     ja: "プログラミングスクールのグループワークで作った、ペットフード会社の顧客サーベイフォームです。",
+//   },
+//   skills: ["HTML", "CSS", "React"],
+//   gitUrl: "https://github.com/elbines/project-survey-vite-EMS",
+//   demoUrl: "https://pala-customer-survey.netlify.app/",
+// },
+
+// {
+//   imagePath: "/images/music.webp",
+//   title: "Music Releases",
+//   text: {
+//     en: "This app is build with React and static data that was gotten from Spotify. You can check music albums.",
+//     ja: "Spotifyのアルバムデータをもとに作ったReactのプロジェクトです。",
+//   },
+//   skills: ["HTML", "CSS", "React"],
+//   gitUrl: "https://github.com/sansan-sakura/project-music-releases-vite",
+//   demoUrl: "https://music-releases2222.netlify.app/",
+// },

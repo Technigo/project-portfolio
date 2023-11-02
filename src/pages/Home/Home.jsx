@@ -28,7 +28,7 @@ function Home({ lang, onLang }) {
       <Hero arrowRef={arrowRef} lang={lang} onLang={onLang} />
       <Tech arrowRef={arrowRef} />
       <Projects lang={lang} />
-      <Blog />
+      {/* <Blog /> */}
       <Skills />
       <Contact />
       <ScrollButton />
