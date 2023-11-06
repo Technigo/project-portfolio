@@ -95,15 +95,30 @@
 }
 
 /* mobile  */
-@media (max-width: 375px) {@media (min-width: 374px) and (max-width: 743px){  .project-links {
+@media (max-width: 375px) {@media (min-width: 374px) and (max-width: 743px)
+  {  .project-links {
       flex-direction: column; /* Stack the buttons vertically for small screens */
       align-items: center; /* Center the buttons horizontally */
       gap: 8px; /* Reduced gap for small screens */
   }
 
-  .btn-live::after, .btn-view::after {
-      font-size: 10px; /* Reduced font size for small screens */
+  .btn-live, .btn-view {
+    display: block; /* Each button will take up the full width of its container */
+    width: 100%; /* Adjust the width to what is needed, 100% makes the button full width */
+    margin-bottom: 10px; /* Adds space between the buttons */
+    text-align: center; /* Center-align the text within the button if needed */
   }
+
+  .btn-live::before, .btn-view::before {
+    border-radius: 15px; /* Optional: Adjust the border radius if necessary */
+  }
+
+  .btn-live::after, .btn-view::after {
+    font-size: 12px; /* Smaller font size for text within the buttons, if there is any */
+    /* Adjust margin, padding, or any other properties that affect the size of the content after the button */
+  }
+  
+
 
   .contact-list {
       flex-wrap: wrap; /* Allow the list to wrap to the next line if there's not enough space */

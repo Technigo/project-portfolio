@@ -151,41 +151,56 @@
 /* Mobile */
 @media (min-width: 374px) and (max-width: 743px){
   .top-section {
-      padding: 64px 0; 
+    padding: 64px 0;
   }
 
   .left-content {
-      align-items: center; 
-      text-align: center; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .heading-classh1 {
-      font-size: 24px; 
-      line-height: 30px; 
+    font-size: 24px;
+    line-height: 30px;
+    order: 2; /* Adjusted the order */
   }
 
   .heading-classh2 {
-      font-size: 40px; 
-      line-height: 48px; 
-  }
-
-  .heading-paragraph-class {
-      font-size: 16px; 
-      line-height: 24px; 
+    font-size: 40px;
+    line-height: 48px;
+    order: 3; /* Adjusted the order */
   }
 
   .image-paragraph-section {
-      flex-direction: column; 
-      gap: 16px;  
-      align-items: center; 
+    flex-direction: column;
+    gap: 16px;
   }
 
   .image-another-class {
-      width: 150px; /* Adjusted for mobile */
-      height: 150px; /* Adjusted for mobile */
+    order: 1; /* Image comes first */
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    margin-bottom: 16px; /* Adds space between the image and the following text */
+  }
+
+  .heading-paragraph-class {
+    order: 4; /* Ensuring the paragraph comes last */
+    font-size: 16px;
+    line-height: 24px;
+    /* Add margin as needed to create space */
   }
 
   .centered-arrow {
-      bottom: -90px;  /* Adjust this value for positioning on mobile */
+    bottom: -90px; /* Adjust this value for positioning on mobile */
   }
 }
+
+
+
+
+
+
+
+
+
