@@ -1,9 +1,12 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@700&family=Montserrat:wght@300;600;700&family=Quicksand:wght@700&family=Roboto+Mono:ital,wght@1,700&family=Roboto+Serif:ital,opsz,wght@1,8..144,900&display=swap"); */
 
 .intro-container {
-  margin-bottom: 64px;
-  margin-left: 16px;
-  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 10px;
 }
 
 img.centered {
@@ -11,6 +14,8 @@ img.centered {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
+  border: 5px solid rgba(35, 21, 87, 0.7); /* Border with 50% opacity */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .intro-container h2 {
@@ -19,13 +24,13 @@ img.centered {
   font-weight: 600;
   text-align: start;
   margin: 0;
-  margin-top: 32px;
+  /* margin-top: 32px; */
 }
 
 .intro-container h1 {
   margin: 0;
 
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   font-family: Montserrat;
   font-size: 32px;
   font-weight: 900;
@@ -36,7 +41,7 @@ img.centered {
     #231557 0%,
     #44107a 29%,
     #ff1361 67%,
-    #fff800 100%
+    #f7ede2 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -57,7 +62,7 @@ img.centered {
 }
 
 .intro-container p {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 .arrow-icon {
   display: block;
@@ -80,32 +85,19 @@ img.centered {
 
 @media (min-width: 768px) {
   .intro-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .intro-container h2 {
-    order: 1;
-    text-align: center; /* Optional: Center the text */
-  }
-
-  .intro-container h1 {
-    order: 2;
-    text-align: center; /* Optional: Center the text */
-  }
-
-  img.centered,
-  .intro-container p {
-    order: 3;
-    flex: 1;
-    margin: 0;
+    margin: 128px 64px;
+    display: grid;
+    grid-template-columns: 164px 1fr;
+    grid-template-rows: 1fr 164px;
+    column-gap: 22px;
+    row-gap: 32px;
   }
 
   .arrow-icon {
     display: flex;
-    order: 4;
+
     justify-content: center;
     align-items: center;
-    text-align: center; /* Optional: Center the text */
+    text-align: center;
   }
 }
