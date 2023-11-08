@@ -16,6 +16,7 @@ export const Projects = () => {
           key={projects.id}
           photo={project.image}
           name={project.name}
+          text={project.description}
           tags={project.tags}
         />
         <Button />
