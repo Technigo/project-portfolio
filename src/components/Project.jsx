@@ -8,7 +8,7 @@ export const Project = ({ name, photo, tags, id, description }) => {
     <>
       <Photo source={photo} color="blue" mode="square" />
       <h2>{name}</h2>
-      {/* <p>{description}</p> */}
+      <p>{description}</p>
       {tags.map((tag) => {
         return (
           <p key={`${id} ${tag}`} className="tag">

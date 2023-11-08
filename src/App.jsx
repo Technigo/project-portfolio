@@ -11,6 +11,7 @@ export const App = () => {
     <>
       <Header />
       <Tech />
+      <h1 className="projects">Featured Projects</h1>
       <Projects />
 
       <Footer />

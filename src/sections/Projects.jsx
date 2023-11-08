@@ -4,9 +4,9 @@ import { Button } from "../components/Button";
 import projects from "../projects.json";
 import "./Projects.css";
 
-fetch("https://api.github.com/users/KroLuna/repos")
-  .then((res) => res.json())
-  .then((json) => console.log(json));
+// fetch("https://api.github.com/users/KroLuna/repos")
+//   .then((res) => res.json())
+//   .then((json) => console.log(json));
 
 export const Projects = () => {
   return projects.projects.map((project) => {
@@ -16,7 +16,7 @@ export const Projects = () => {
           key={projects.id}
           photo={project.image}
           name={project.name}
-          text={project.description}
+          description={project.description}
           tags={project.tags}
         />
         <Button />
