@@ -5,7 +5,7 @@ export const BigHeadlines = ({ sectionId }) => {
   const bigHeadlineCollection = [
     {
       sectionId: 1,
-      text: "Frontend Developer"
+      text: "Fullstack Developer"
     },
     {
       sectionId: 2,
