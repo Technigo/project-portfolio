@@ -63,11 +63,6 @@ figure ul li {
         padding: 128px 186px 148px 186px;
     }
 
-    .skill-details {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     figcaption, figure ul li {
         text-align: left;
     }
@@ -82,17 +77,25 @@ figure ul li {
 
     .skill-details {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     figcaption {
         font-size: 32px;
     }
+
+    figcaption, figure ul li {
+        text-align: left;
+    }
 }
 
 /********* DESKTOP max-width 1512px *********/
-@media (min-width: 1281px) {
+@media (min-width: 1280px) {
     .skills-wrapper {
         padding: 128px 338px;
+    }
+
+    .skill-details {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

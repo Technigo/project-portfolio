@@ -43,6 +43,7 @@
         padding: 128px 64px 128px 64px;
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 
     .name-title {
@@ -70,16 +71,19 @@
 @media (min-width: 745px) {
     .introduction-wrapper {
         padding: 332px 220px 64px 220px;
-        justify-content: flex-end;
+        grid-template-columns: 1fr 280px;
         gap: 199px;
     } 
+
+    .name-title h3 {
+        font-size: 32px;
+    }
 }
 
 /********* DESKTOP max-width 1512px *********/
 @media (min-width: 1281px) {
     .introduction-wrapper {
         padding: 332px 337px 64px 336px;
-        justify-content: flex-end;
-        gap: 199px;
+        grid-template-columns: 1fr 400px;
     }
 }
