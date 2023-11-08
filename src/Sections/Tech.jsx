@@ -6,7 +6,7 @@ export const Tech = () => {
   return (
     <div className="tech">
         <BigHeadlines sectionId={sectionId}/>
-        <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, API:s, GitHub, mob-programming, pair-programming, code review</p>
+        <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, MongoDB, Web Accessibility, API:s, GitHub, mob-programming, pair-programming, code review</p>
     </div>
   )
 }

@@ -19,6 +19,7 @@ export const Skills = () => {
                         <li>React</li>
                         <li>Styled Components</li>
                         <li>GitHub</li>
+                        <li>Third-party libraries</li>
                     </ul>
                 </figure>
                 <figure>
@@ -34,6 +35,7 @@ export const Skills = () => {
                     <figcaption className="upcoming">Upcoming</figcaption>
                     <ul>
                         <li>Node.js</li>
+                        <li>MongoDB</li>
                         <li>Python</li>
                     </ul>
                 </figure>
