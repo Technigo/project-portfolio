@@ -22,23 +22,23 @@ const Projects = () => {
                         <div className="text-details">
                             <h2>{project.name}</h2>
                             <p>{project.description}</p>
-                            <div className="tags-and-buttons">
-                                <div className="tags">
-                                    {project.tags.map((tag, index) => (
-                                        <span key={index} className="tag">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-                                <div className="project-actions">
-                                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                        <ViewGithubBtn />
-                                    </a>
-                                    <a href={project.netlify} target="_blank" rel="noopener noreferrer">
-                                        <LiveDemoBtn />
-                                    </a>
-                                </div>
+
+                            <div className="tags">
+                                {project.tags.map((tag, index) => (
+                                    <span key={index} className="tag">
+                                        {tag}
+                                    </span>
+                                ))}
                             </div>
+                            <div className="project-actions">
+                                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                    <ViewGithubBtn />
+                                </a>
+                                <a href={project.netlify} target="_blank" rel="noopener noreferrer">
+                                    <LiveDemoBtn />
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
