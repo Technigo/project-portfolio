@@ -4,18 +4,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
   padding: 10px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 img.centered {
   width: 164px;
   border-radius: 50%;
-  display: block;
   margin: 0 auto;
+  margin-bottom: 32px;
   border: 5px solid rgba(35, 21, 87, 0.7); /* Border with 50% opacity */
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
 }
 
 .intro-container h2 {
@@ -24,12 +28,16 @@ img.centered {
   font-weight: 600;
   text-align: start;
   margin: 0;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
   /* margin-top: 32px; */
 }
 
 .intro-container h1 {
   margin: 0;
-
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  margin-top: 0;
   /* margin-bottom: 32px; */
   font-family: Montserrat;
   font-size: 32px;
@@ -51,7 +59,7 @@ img.centered {
   /* text-fill-color: transparent; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 5s linear infinite;
+  animation: textclip 6s linear infinite;
   display: inline-block;
 }
 
@@ -62,11 +70,30 @@ img.centered {
 }
 
 .intro-container p {
-  /* margin-bottom: 32px; */
+  margin-bottom: 32px;
+  margin-top: 32px;
+  text-align: start;
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+  font-family: Hind;
+  font-size: 18px;
+
+  font-weight: 400;
 }
+.arrow-icon a .arrowIcon {
+  font-size: 2em;
+}
+.arrowIcon {
+  height: 40px;
+}
+.arrowIcon img {
+  height: 100%;
+}
+
 .arrow-icon {
   display: block;
   margin: 0 auto;
+  background: none;
   text-align: center;
   animation: updown 1s ease-in-out infinite;
 }
@@ -85,12 +112,21 @@ img.centered {
 
 @media (min-width: 768px) {
   .intro-container {
-    margin: 128px 64px;
     display: grid;
-    grid-template-columns: 164px 1fr;
+    grid-template-columns: 164px 1fr 1fr;
     grid-template-rows: 1fr 164px;
     column-gap: 22px;
-    row-gap: 32px;
+    row-gap: 10px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  .intro-container h1 {
+    margin-top: 25px;
+    font-size: 56px;
+    animation: textclip 10s linear infinite;
   }
 
   .arrow-icon {
@@ -99,5 +135,23 @@ img.centered {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .intro-container {
+    padding-top: 332px;
+    padding-bottom: 199px;
+    margin-left: 220px;
+    margin-right: 220px;
+  }
+
+  .intro-container h1 {
+    font-size: 66px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+  }
+  .intro-container h2 {
+    font-size: 32px;
   }
 }

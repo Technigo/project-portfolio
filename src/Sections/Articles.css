@@ -1,14 +1,70 @@
 .articles {
-  background-color: #ffecea;
-  background-image: url("../assets/divider.svg");
-  background-repeat: repeat-x;
-  background-position: center -5px;
+  position: relative;
+  background-color: #fdf2f0;
   padding-top: 5px;
   padding-bottom: 64px;
-  position: relative;
-  z-index: 1;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.wave {
+  --c: red;
+  --t: 1px;
+  --h: 15px;
+  --w: 60px;
+  --p: 2.5px; /* adjust this to correct the position when changing the other values*/
+
+  background: radial-gradient(
+      farthest-side at 50% calc(100% + var(--p)),
+      #0000 47%,
+      var(--c) 50% calc(50% + var(--t)),
+      transparent calc(52% + var(--t))
+    ),
+    radial-gradient(
+      farthest-side at 50% calc(0% - var(--p)),
+      #0000 47%,
+      var(--c) 50% calc(50% + var(--t)),
+      transparent calc(52% + var(--t))
+    );
+
+  background-size: var(--w) var(--h);
+  background-position: calc(var(--w) / 2) calc(var(--h) / 2),
+    0px calc(var(--h) / 2);
+
+  margin: 5px 0;
+  display: inline-block;
+  width: 300px;
+  height: 10px;
 }
 
 .articles h1 {
-  color: #ff4575;
+  color: rgba(35, 21, 87);
+}
+
+@media (min-width: 744px) {
+  .articles {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .articles {
+    padding-left: 131px;
+    padding-right: 131px;
+  }
+
+  .articles h1 {
+    text-align: start; /* Center the h1 within the two columns */
+  }
+
+  .article-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 98px;
+    width: 100%;
+    padding-top: 3px;
+  }
 }
