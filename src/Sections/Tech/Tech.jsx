@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import "./tech.css"
 
 export const Tech = () => {
     let techHeader = "Tech"
-    let techContent = ["HTML", "CSS", "JavaScript", "JSX", "React", "React Hooks", "Flexbox", "API:s", "Web Accessibility", "Mob programming", "Pair programming", "Github"]
+    let techContent = ["HTML", "CSS", "JavaScript", "JSX", "React", "React Hooks", "Flexbox", "Grid", "API:s", "Web Accessibility", "Mob programming", "Pair programming", "Github"]
 
     return (
         <>

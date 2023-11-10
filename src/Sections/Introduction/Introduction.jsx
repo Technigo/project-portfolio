@@ -1,4 +1,3 @@
-// import Arrow from "/assets/Arrow.svg"
 import { FaArrowDownLong } from "react-icons/fa6";
 import "/Frida.jpeg"
 import "./introduction.css"
