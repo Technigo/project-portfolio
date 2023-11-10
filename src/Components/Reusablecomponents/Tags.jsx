@@ -4,9 +4,9 @@ export const Tags = ({ tags }) => {
     return (
         <div className="tag">
             <ul>
-                {tags.map((tag) => {
+                {tags.map((tag, index) => {
                     return (
-                        <li>
+                        <li key={index}>
                             {tag}
                         </li>
                     )

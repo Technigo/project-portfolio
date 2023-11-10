@@ -2,16 +2,22 @@
 
 .header-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
         "nametitle nametitle nametitle nametitle"
         "profilephoto intro intro intro";
-    padding: 200px 220px 200px 220px;
+    padding: 8rem 0;
 }
 
 .name-title {
     grid-area: nametitle;
+}
+
+.wrapper-container {
+    max-width: 51rem;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .profile-photo {
@@ -28,7 +34,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     grid-area: intro;
     grid-column: intro /span 3;
     padding-top: 25px;
@@ -64,7 +71,7 @@
 @media (max-width: 1279px) {
 
     .header-wrapper {
-        padding: 128px 64px;
+        /* padding: 128px 64px; */
     }
 
     .name-title h3 {
@@ -83,8 +90,8 @@
     .header-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 64px 16px;
+        /* align-items: center; */
+        /* padding: 64px 16px; */
     }
 
     .header-wrapper p {
@@ -93,7 +100,7 @@
 
     .intro {
         order: 3;
-        width: 343px;
+        /* width: 343px; */
     }
 
     .name-title {
@@ -109,6 +116,7 @@
     }
 
     .profile-photo {
+        align-self: center;
         order: 1;
         padding-bottom: 20px;
     }
