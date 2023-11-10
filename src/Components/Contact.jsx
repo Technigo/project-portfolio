@@ -1,5 +1,5 @@
 //Imports
-import { ProfilePhoto } from "./Reusablecomponents/ProfilePhoto.jsx";
+import { ProfilePhoto } from "./Reusablecomponents/ProfilePhoto.jsx"
 import { SocialMedia } from "/src/Components/SocialMedia.jsx"
 
 import './contact.css'

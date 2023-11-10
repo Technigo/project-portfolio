@@ -1,5 +1,5 @@
 //Import of reusable component 'ProfilePhoto'
-import { ProfilePhoto } from "./Reusablecomponents/ProfilePhoto.jsx";
+import { ProfilePhoto } from "./Reusablecomponents/ProfilePhoto.jsx"
 
 import './hello.css'
 
