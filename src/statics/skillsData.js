@@ -3,14 +3,14 @@ export const skillsData = [
   {
     color: secondaryColorText.color,
     tag: "Code",
-    skills: ["HTML", "CSS", "SCSS", "JavaScript", "React", "Next.js", "Astro.js"],
+    skills: ["HTML", "CSS", "SCSS", "JavaScript", "React", "Next.js", "Astro.js", "TypeScript"],
   },
   {
     color: blueColor.color,
     tag: "ToolBox",
     skills: ["Github", "Figma", "Slack", "Postman", "VScode"],
   },
-  { color: greenColor.color, tag: "UpComing", skills: ["Node.js", "Python", "C", "TypeScript"] },
+  { color: greenColor.color, tag: "UpComing", skills: ["Node.js", "Python", "C", "Three.js"] },
   {
     color: tagYellowColor.color,
     tag: "More",

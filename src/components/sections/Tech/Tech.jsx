@@ -14,7 +14,7 @@ export default function Tech({ arrowRef }) {
           </Heading>
           <p className={styles.text}>
             HTML, CSS, Tailwind, SCSS, JavaScript, React, Next.js, Astro.js, TypeScript, Node.js,
-            Mongo DB, Web Accessibility, Python, C, Github.
+            Mongo DB, Web Accessibility, Python, C, Three.js, Github.
           </p>
         </div>
       </ObserverWrapper>

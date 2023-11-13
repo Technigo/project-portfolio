@@ -29,7 +29,6 @@ export default function Blog() {
   );
 }
 
-// Post component (mapping a post data from blogsData array)
 function Post({ blog }) {
   const { introText, title, date, url, imagePath, imageDescription, id } = blog;
   return (

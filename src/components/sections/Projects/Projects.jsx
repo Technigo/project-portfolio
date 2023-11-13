@@ -27,9 +27,7 @@ export default function Projects({ lang }) {
   );
 }
 
-// mapping this card with each project data from projectData array
 function ProjectCard({ project, lang }) {
-  // skills is array, others are string
   const { imagePath, title, skills, gitUrl, demoUrl, text } = project;
   return (
     <div className={styles.project_card}>
