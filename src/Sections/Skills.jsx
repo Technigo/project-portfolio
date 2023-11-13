@@ -36,6 +36,8 @@ export const Skills = () => {
                     <ul>
                         <li>Node.js</li>
                         <li>MongoDB</li>
+                        <li>Express</li>
+                        <li>Tailwind CSS</li>
                         <li>Python</li>
                     </ul>
                 </figure>
