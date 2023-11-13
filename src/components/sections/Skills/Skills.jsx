@@ -24,7 +24,6 @@ export default function Skills() {
   );
 }
 
-// mapping this card using data from skillData.js
 function SkillCard(props) {
   const { color, tag, skills } = props.props;
 
