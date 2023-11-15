@@ -14,7 +14,7 @@ export const ProjectCard = ({ repos }) => {
     return (
         <div className="featured-projects-wrapper">
             <h1>Featured projects</h1>
-            <div>
+            <div className="extra-wrapper">
                 {orderedRepoNames.map((repoName) => {
                     const repo = repos.find((repo) => repo.name === repoName)
                     const repoImage = repoImages.find((img) => img.repoName === repoName)
