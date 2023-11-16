@@ -20,6 +20,7 @@ export const Projects = () => {
           photo={project.image}
           tags={project.tags}
           text={project.text}
+          links={{ netlify: project.netlify, github: project.github }}
         />
       ))}
     </div>

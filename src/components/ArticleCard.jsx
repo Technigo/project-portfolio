@@ -2,15 +2,17 @@ import { Photo } from "./Photo";
 import { ArticlesLinks } from "./LinkArticle";
 import "./ArticleCard.css";
 
-export const ArticleCard = ({ name, photo, tags, text }) => {
+export const ArticleCard = ({ name, photo, tags, text, links }) => {
   return (
     <div className="article-card">
-      <Photo
-        source={photo}
-        color="blue"
-        mode="square"
-        className="article-photo"
-      />
+      <div className="article-photo-box">
+        <Photo
+          source={photo}
+          color="blue"
+          mode="square"
+          className="article-photo"
+        />
+      </div>
       <div className="article-info">
         <div className="tags">
           {tags.map((tag) => (
@@ -21,7 +23,7 @@ export const ArticleCard = ({ name, photo, tags, text }) => {
         </div>
         <h2>{name}</h2>
         <p className="article-text">{text}</p>
-        <ArticlesLinks />
+        <ArticlesLinks link={links.link} />
       </div>
     </div>
   );

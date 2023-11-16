@@ -35,6 +35,7 @@ export const Articles = ({ name, photo, tags, text }) => {
               photo={articles.image}
               tags={articles.tags}
               text={articles.text}
+              links={{ link: articles.link }}
             />
           ))}
         </div>
