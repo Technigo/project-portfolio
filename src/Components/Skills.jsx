@@ -14,16 +14,17 @@ export const Skills = () => {
                         <li>CSS3</li>
                         <li>Javascript ES6</li>
                         <li>React</li>
-                        <li>Styled Components</li>
-                        <li>GitHub</li>
+                        <li>.</li>
                     </ul>
                 </div>
                 <div className="toolbox">
                     <h3>Toolbox</h3>
                     <ul>
+                        <li>GitHub</li>
                         <li>Figma</li>
                         <li>Postman</li>
                         <li>Slack</li>
+                        <li>Vs Code</li>
                     </ul>
                 </div>
                 <div className="upcoming">
@@ -31,14 +32,19 @@ export const Skills = () => {
                     <ul>
                         <li>Node.js</li>
                         <li>UX</li>
+                        <li>.</li>
+                        <li>.</li>
+                        <li>.</li>
                     </ul>
                 </div>
                 <div className="more">
                     <h3>More</h3>
                     <ul>
-                        <li>Leader</li>
                         <li>Agile</li>
                         <li>Strategy</li>
+                        <li>Manager</li>
+                        <li>Diversity</li>
+                        <li>Health develop.</li>
                     </ul>
                 </div></div>
         </div>
