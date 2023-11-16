@@ -44,7 +44,7 @@ export const Skills = () => {
                         <li>Strategy</li>
                         <li>Manager</li>
                         <li>Diversity</li>
-                        <li>Health develop.</li>
+                        <li>Health dev.</li>
                     </ul>
                 </div></div>
         </div>

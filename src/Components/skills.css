@@ -55,9 +55,19 @@
 @media (max-width: 1279px) {
 
     .skills-wrap-info {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 50% 50%;
         align-items: center;
-        text-align: center;
+        text-align: left;
+        margin-left: 25%;
+        grid-column-gap: 50%;
+    }
+
+    .code h3,
+    .toolbox h3,
+    .upcoming h3,
+    .more h3 {
+        display: inline-block;
     }
 }
 
@@ -72,5 +82,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-left: 0;
     }
 }
