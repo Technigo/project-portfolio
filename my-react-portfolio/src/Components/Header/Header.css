@@ -1,26 +1,49 @@
 header {
   padding: 40px 0px;
 }
-.header-wrapper{
+.header-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px; 
+  gap: 32px;
   padding: 10px;
 }
 
-.header-paragraph{
-   margin-bottom: 0px;
-  
+.header-paragraph {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0px;
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 1025px) {
+    font-size: 32px;
+  }
 }
-.green-heading{
+
+.green-heading {
   color: var(--firstly-color);
   font-size: 32px;
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+    font-size: 56px;
+  }
+
+  @media (min-width: 1025px) {
+    font-size: 80px;
+  }
 }
-.header-description{
-  line-height: 2;
+.header-description {
   padding: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* arrow animation  */
@@ -30,18 +53,19 @@ header {
 }
 
 .arrow {
-  margin: 20px 0 0 ; 
+  margin: 20px 0 0;
   display: flex;
   justify-content: center;
   animation: moveUpDown 1s linear infinite;
 }
 
 @keyframes moveUpDown {
-
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
-  25%, 75% {
+  25%,
+  75% {
     transform: translateY(-10px);
   }
 }
@@ -53,50 +77,42 @@ header {
   margin-right: 20px;
 }
 
-
- .profile-image {
+.profile-image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border:  10px solid var(--firstly-color);
-  } 
-
+  border: 10px solid var(--firstly-color);
+}
 
 @media (min-width: 667px) {
-
-  .header-wrapper{
+  .header-wrapper {
     margin: 128px 64px;
     display: grid;
     grid-template-columns: 164px 1fr;
     grid-template-rows: 1fr 164px;
     column-gap: 22px;
-    row-gap: 32px;  
+    row-gap: 32px;
   }
-  .heading-wrapper{
+  .heading-wrapper {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
   }
-  .green-heading{
+  .green-heading {
     font-size: 56px;
   }
-  .header-description{
+  .header-description {
     align-self: center;
     margin-left: 20px;
   }
-
 }
 
-@media (min-width: 1025px){
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: 1025px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-wrapper {
+    max-width: 840px;
+  }
 }
-.header-wrapper{
-  max-width: 840px;
-  
-}
-
-}
-
