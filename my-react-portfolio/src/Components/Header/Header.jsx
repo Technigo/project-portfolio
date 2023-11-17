@@ -8,7 +8,7 @@ import "./Header.css"
 
 export const Header = () => {
 
-  const aboutMe = "After completing my studies and gaining experience as a steel construction technologist with SolidWorks and CAD design, I decided to change my career and started learning web development. Currently studying at Technigo for Web Development Bootcamp."
+  const aboutMe = "After completing my studies and gaining experience as a steel construction technologist with SolidWorks and CAD design, I decided to change my career and started learning web development. Currently studying at Technigo for Web Development Bootcamp. 💻"
   return (
     <>
       <header>
