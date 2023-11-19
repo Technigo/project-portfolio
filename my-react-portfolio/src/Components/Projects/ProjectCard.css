@@ -46,7 +46,8 @@
 .button-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 16px;
 }
 .button {
   margin-bottom: 20px;
@@ -58,11 +59,9 @@
 }
 .button-netlify:hover {
   background-color: var(--secondly-color);
-  color: white;
 }
 .button-github:hover {
-  background-color: var(--secondly-color);
-  color: white;
+  background-color: var(--firstly-color);
 }
 .img-button {
   height: 40px;
@@ -85,6 +84,10 @@
   .project-image {
     width: 200px;
     height: 280px;
+  }
+  .button-wrapper {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (min-width: 1025px) {
