@@ -35,31 +35,33 @@ export const ProjectCard = ({ className, repo, repoImage }) => {
       <div className="project-photo-wrapper">
         <img src={repoImage?.imageUrl} alt={repo.name} />
       </div>
-      <div className="project-card-info-wrapper">
-        <SubHeading
-          text={formatRepoName(repo.name)}
-          className={"featured-projects-h3"}
-        />
-        <p>{repo.description}</p>
-        <div className="tag-wrapper">
-          <div className="tags">{tags}</div>
+      <div className="text-links">
+        <div className="project-card-info-wrapper">
+          <SubHeading
+            text={formatRepoName(repo.name)}
+            className={"featured-projects-h3"}
+          />
+          <p>{repo.description}</p>
+          <div className="tag-wrapper">
+            <div className="tags">{tags}</div>
+          </div>
         </div>
-      </div>
-      <div className="link-wrapper">
-        <Button
-          className={`demo-button`}
-          buttonName={`Live demo`}
-          link={repo.homepage}
-          icon={`/assets/LiveDemo.svg`}
-          iconAlt={`Live demo, opening in a new window`}
-        />
-        <Button
-          className={`code-button`}
-          buttonName={`View the code`}
-          link={repo.html_url}
-          icon={`/assets/Github.svg`}
-          iconAlt={`View the code, opening in a new window`}
-        />
+        <div className="link-wrapper">
+          <Button
+            className={`demo-button`}
+            buttonName={`Live demo`}
+            link={repo.homepage}
+            icon={`/assets/LiveDemo.svg`}
+            iconAlt={`Live demo, opening in a new window`}
+          />
+          <Button
+            className={`code-button`}
+            buttonName={`View the code`}
+            link={repo.html_url}
+            icon={`/assets/Github.svg`}
+            iconAlt={`View the code, opening in a new window`}
+          />
+        </div>
       </div>
     </li>
   );
