@@ -22,7 +22,7 @@ export const Introduction = () => {
             </div>
         </div>
         <div className="icon-container">
-            <a href="">
+            <a href="#tech-section">
                 <FaArrowDownLong className="arrow icon" aria-label="Scroll down to learn more" />
             </a>
         </div>

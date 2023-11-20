@@ -7,7 +7,7 @@ export const Tech = () => {
 
     return (
         <>
-        <div className="grid-parent dark">
+        <div className="grid-parent dark" id="tech-section">
             <div className="section tech">
                 <h1>{techHeader}</h1>
                 <h3 className="tech-text">{techContent.join(", ")}.</h3>
