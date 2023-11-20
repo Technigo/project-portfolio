@@ -1,0 +1,43 @@
+.box,
+.green {
+  background-color: var(--firstly-color);
+  --mask: radial-gradient(22.65px at 50% 30.8px, #000 99%, #0000 101%) calc(50% - 22px) 0/44px 100%,
+    radial-gradient(22.65px at 50% -19.8px, #0000 99%, #000 101%) 50% 11px/44px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  position: relative;
+}
+.green {
+  top: 0.65rem;
+}
+
+.article-container {
+  background-color: var(--thirdly-color);
+  padding-top: 30px;
+}
+
+.purple-main-heading {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.article-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 680px;
+  margin: 3rem auto;
+}
+
+@media (min-width: 1025px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
