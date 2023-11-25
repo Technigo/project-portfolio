@@ -5,7 +5,7 @@ import "./App.css";
 import { Headline } from "./Components.jsx/Headlines";
 import { Presentation } from "./Components.jsx/Presentation";
 import { Tech } from "./Components.jsx/Tech";
-import { ProjectCard } from "./Components.jsx/ProjectCard";
+// import { ProjectCard } from "./Components.jsx/ProjectCard";
 import { MyWords } from "./Components.jsx/MyWords";
 import { Skills } from "./Components.jsx/Skills";
 import { Contact } from "./Components.jsx/Contact";
@@ -17,7 +17,7 @@ function App() {
       <Presentation />
       <Headline />
       <Tech />
-      <ProjectCard />
+      {/* <ProjectCard /> */}
       <MyWords />
       <Skills />
       <Contact />
