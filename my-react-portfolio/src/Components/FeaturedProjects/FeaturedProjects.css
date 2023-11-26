@@ -1,20 +1,27 @@
 /* Component 3 - Featured Projects */
 
 .featured-projects-container {
-  padding: 1em;
-  width: 820px;
-  margin: auto;
+  background-color: #ffffff;
+  color: #0b24f5;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 5em 0 5em 0;
+}
+
+.projects-child {
+  grid-column: span 2;
 }
 
 .featured-projects-container h1 {
   text-align: center;
   color: blue;
+  font-size: 56px;
 }
 
 /* grid parent for featured project */
 .projects-parent {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   color: black;
   align-items: center;
   justify-content: center;
@@ -22,27 +29,32 @@
 }
 
 .projects-img {
-  height: 260px;
-  width: 260px;
-  border-bottom: 20px solid #0025ff;
-  border-left: 20px solid #0025ff;
+  width: 100%;
+  border-bottom: 10px solid #0025ff;
+  border-left: 10px solid #0025ff;
+  margin-top: 3em;
+}
+
+.projects-child img {
+  object-fit: contain;
 }
 
 .projects-child h2 {
   font-weight: 600;
   font-size: 32px;
+  padding: 0 1em 0 1em;
+  text-align: left;
 }
 
 .projects-child p {
   font-size: 18px;
+  padding: 0 1.5em 0 1.5em;
+  text-align: left;
 }
 
-.live-demo-button {
-  max-width: 30%;
-}
-
+.live-demo-button,
 .view-code-button {
-  max-width: 36%;
+  margin-top: 0.5em;
 }
 
 .live-demo-button:hover {
@@ -64,13 +76,21 @@
   }
 }
 
-/*media query for mobile*/
-@media screen and (max-width: 667px) {
-  .featured-projects-container h1 {
-    font-size: 32px;
+/*media query for desktop */
+@media (min-width: 1025px) {
+  .projects-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
-  .projects-child {
-    grid-column: span 2;
+  .projects-img {
+    height: 260px;
+    width: 260px;
+    border-bottom: 20px solid #0025ff;
+    border-left: 20px solid #0025ff;
   }
 }

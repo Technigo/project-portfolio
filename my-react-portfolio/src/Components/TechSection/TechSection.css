@@ -1,25 +1,26 @@
-/* Component 2 - Tech Section */
-
 .tech-section-container {
   background-color: #0b24f5;
   color: #ffffff;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 5em;
+  padding: 5em 0 5em 0;
 }
 
-.tech-section-heading,
+.tech-section-heading {
+  text-align: center;
+  font-size: 56px;
+}
+
 .tech-section-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2em 0;
-  max-width: 80%;
+  padding: 0 2em 0 2em;
+  text-align: center;
+  font-size: 24px;
 }
 
-/*media query for mobile*/
-@media screen and (max-width: 667px) {
-  .tech-section-heading,
-  .tech-section-text {
-    grid-column: span 2;
+/*media query for desktop - 2 rows */
+@media (min-width: 1025px) {
+  .tech-section-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
