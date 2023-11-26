@@ -3,6 +3,9 @@ import arrow from "../../assets/arrowdown.svg";
 import profilePic from "../../assets/Bild.jpg";
 
 export const Bio = () => {
+  const scrollTo = () =>
+    document.getElementById("scrollTo").scrollIntoView({ behavior: "smooth" });
+
   return (
     <div className="bio-container">
       <div className="bio">
@@ -22,7 +25,9 @@ export const Bio = () => {
           numquam tempora perferendis a?
         </p>
       </div>
-      <img className="arrow-down" src={arrow} alt="arrow-pointing-down" />
+      <button className="next-section-arrow" onClick={scrollTo}>
+        <img className="arrow-down" src={arrow} alt="arrow-pointing-down" />
+      </button>
     </div>
   );
 };

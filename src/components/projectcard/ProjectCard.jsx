@@ -7,9 +7,9 @@ import happyThoughts from "../../assets/madison-oren-uGP_6CAD-14-unsplash.jpg";
 import weather from "../../assets/johannes-plenio-600dw3-1rv4-unsplash.jpg";
 import music from "../../assets/heidi-fin-H4fYXZ1hyco-unsplash.jpg";
 import movie from "../../assets/alex-litvin-MAYsdoYpGuk-unsplash.jpg";
+import qrcode from "../../assets/qrcode.png";
 
 import { Tags } from "./Tags.jsx";
-import { useState } from "react";
 
 export const ProjectCard = ({
   title,
@@ -38,14 +38,33 @@ export const ProjectCard = ({
       break;
     case "Movie-Project":
       imagedirectory = movie;
+      break;
+    case "project-qr-code-generator":
+      imagedirectory = qrcode;
+      break;
   }
+
+  const transformString = (str) => {
+    // Split the string into an array of words
+    const words = str.split("-");
+
+    // Capitalize the first letter of each word
+    const capitalizedWords = words.map(
+      (word) => word.charAt(0).toUpperCase() + word.slice(1)
+    );
+
+    // Join the words back into a string with spaces
+    const transformedStr = capitalizedWords.join(" ");
+
+    return transformedStr;
+  };
 
   return (
     <div className="project-card">
       <img src={imagedirectory} className="project-image" alt="project-image" />
 
       <div className="project-data">
-        <h2 className="project-title">{title}</h2>
+        <h2 className="project-title">{transformString(title)}</h2>
         <p className="project-description"> {description}</p>
         <div className="project-tags">
           {tags.map((tag) => (
