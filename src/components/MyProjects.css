@@ -162,9 +162,15 @@
     width: 50%;
 } 
 
+.project-techniques {
+  display: flex;
+  gap: 8px; /* Adjust the gap as needed */
+  overflow-x: auto; /* Allows horizontal scrolling if content overflows */
+}
 
 .technique-box {
-  Width: 50%;
+  width: auto; /* Allows the box to grow with the content */
+  padding: 8px 12px; /* Adjust padding as needed */
   background-color: #000;
   color: #FFF;
   border: 1px solid #333;
@@ -172,5 +178,19 @@
   margin-right: 4px; 
   margin-bottom: 4px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);  /* Added box shadow */
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: left; /* Center the buttons */
+  gap: 10px; /* Add space between the buttons */
+}
+
+/* Adjust the .btn-view and .btn-live styles if needed */
+.btn-view,
+.btn-live {
+  /* Apply any specific mobile styles to the buttons here */
+  width: auto; /* Or any specific width you prefer */
 }
 }

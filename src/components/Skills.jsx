@@ -26,8 +26,8 @@ function Skills() {
   ];
 
   const more = [
-    'DiSC certification',
     'Project manager',
+    'DiSC certification',
     'Chief editor',
     'Records management',
     'E-archiving',

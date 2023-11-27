@@ -1,99 +1,94 @@
 .top-section {
-    width: 100%;
-    padding: 128px 0; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    background-color: #FFFFFF;
-  }
-  
-  .left-content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
-    max-width: 1100px; 
-    margin: 0 auto;
-  }
-  
-  .heading-classh1 {
-    font-family: Montserrat;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 39px;
-    letter-spacing: 0em;
-    color: #000000;
-  }
-  
-  .heading-classh2 {
-    font-family: Montserrat;
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 97px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #0B24F5;
-  }
-  
-  .heading-paragraph-class {
-    font-family: Hind;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: black;
-  }
-  
-  .image-paragraph-section {
-    display: flex;
-    align-items: center;
-    gap: 36px;  
-  }
-  
-  .image-another-class {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
-  
-  .centered-arrow {
-    position: absolute;
-    bottom: 10px;             
-    left: 50%;                 
-    transform: translateX(-50%); 
-    width: 19px;
-    height: 30px;
-    transition: transform 0.3s ease;
-    animation: bounce 0.5s infinite alternate; 
-  }
-  
-  @keyframes bounce {
-    0% {
-      transform: translateY(0); 
-    }
-    100% {
-      transform: translateY(15px); 
-    }
-  }
-  
-  .enlarged {
-    transform: scale(1.5);
-    animation: none; 
-  }
+  width: 100%;
+  padding: 128px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+}
 
- 
+.left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
+.heading-classh1 {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0em;
+  color: #000000;
+}
 
+.heading-classh2 {
+  font-family: Montserrat;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 97px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0B24F5;
+}
 
+.heading-paragraph-class {
+  font-family: Hind;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+  margin-left: 30%;
+}
 
-/* Tablet  */
+.image-container {
+  /* Adjust the width and height as needed for desktop view */
+  width: 200px;
+  height: 200px;
+}
+
+.image-another-class {
+  width: 100%; /* Make the image responsive within its container */
+  height: auto;
+  border-radius: 50%;
+}
+
+.centered-arrow {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 19px;
+  height: 30px;
+  transition: transform 0.3s ease;
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+.enlarged {
+  transform: scale(1.5);
+  animation: none;
+}
+
+/* Tablet */
 @media (min-width: 744px) and (max-width: 1279px) {
   .top-section {
     padding: 128px 0;
     align-items: flex-start; /* Aligns content to the top */
     padding-left: 128px; /* Padding on the left to account for design offset */
-    background-color: #FFFFFF;
   }
 
   .left-content {
@@ -102,7 +97,6 @@
     gap: 64px; /* Space between text and image sections */
     align-items: flex-start;
     max-width: 744px;
-    margin: 0; /* Removes auto margin */
   }
 
   .heading-classh1 {
@@ -117,84 +111,70 @@
     margin-bottom: 64px; /* Space between the subtitle and paragraph */
   }
 
-
   .heading-paragraph-class {
     font-size: 18px;
     line-height: 24px;
     max-width: 500px; /* Adjust based on design width */
     margin-bottom: 64px; /* Space between the paragraph and the image */
+    margin-left: 0;
   }
 
-  .image-paragraph-section {
-    display: flex;
-    flex-direction: column; /* Stack the image and arrow vertically */
-    align-items: center;
-    gap: 128px; /* Space between the image and the arrow */
-  }
-
-  .image-another-class {
-    width: 150px; /* Adjust based on design */
+  .image-container {
+    /* Adjust the width and height as needed for tablet view */
+    width: 150px;
     height: 150px;
-    border-radius: 50%;
   }
 
   .centered-arrow {
-    width: 19px;
-    height: 30px;
-    position: absolute;
-    bottom: -400px;  /* Adjust this value to position the arrow closer or farther from the bottom */
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -400px; /* Adjust this value to position the arrow closer or farther from the bottom */
   }
 }
 
 /* Mobile */
-@media (min-width: 374px) and (max-width: 743px){
+@media (min-width: 374px) and (max-width: 743px) {
   .top-section {
     padding: 64px 0;
   }
 
   .left-content {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start; /* Aligns content to the left */
   }
 
   .heading-classh1 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
-    order: 2; /* Adjusted the order */
+    text-align: left; /* Aligns this heading to the left */
   }
 
   .heading-classh2 {
-    font-size: 40px;
+    font-size: 24px;
     line-height: 48px;
-    order: 3; /* Adjusted the order */
+    text-align: left; /* Aligns this heading to the left */
   }
 
-  .image-paragraph-section {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .image-another-class {
-    order: 1; /* Image comes first */
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
-    margin-bottom: 16px; /* Adds space between the image and the following text */
-  }
+  .image-container {
+    order: -1; /* Image goes first */
+    align-self: center; /* Keeps the image centered */
+    width: 120px; /* Adjust as needed for mobile */
+    height: 120px; /* Adjust as needed for mobile */
+    margin-bottom: 60px; /* Space between image and text */
+  }  
 
   .heading-paragraph-class {
-    order: 4; /* Ensuring the paragraph comes last */
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
-    /* Add margin as needed to create space */
+    margin-left: 0;
   }
 
   .centered-arrow {
-    bottom: -90px; /* Adjust this value for positioning on mobile */
+    position: absolute;
+    bottom: -40px; /* Adjust this value for positioning on mobile */
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
+
 
 
 

@@ -12,17 +12,17 @@ function TopSection() {
     "Alexandra identifies herself as a coder with exceptional adjustment skills. She comes from a background in records management and later on project management. In the future, she sees herself combining those skills with her new coding experience.";
 
     return (
-      <div>
-        <div className="top-section">
-          <div className="left-content">
-            <h1 className="heading-classh1">Hi, I'm Alexandra Meija</h1>
-            <h2 className="heading-classh2">A project manager/records manager with coding skills.</h2>
-            <div className="image-paragraph-section">
-              <img src={OriginalImage} alt="Your Image Description" className="image-another-class" />
-              <p className="heading-paragraph-class">{paragraphText}</p>
-              <img src={CenteredArrow} alt="Downward Arrow" className="centered-arrow" />   {/* Use className and the imported SVG */}
-            </div>
+      <div className="top-section">
+        <div className="left-content">
+          <h1 className="heading-classh1">{introText}</h1>
+          <h2 className="heading-classh2">A project manager/records manager with coding skills.</h2>
+          <div className="image-container">
+            <img src={OriginalImage} alt="Alexandra Meija" className="image-another-class" />
           </div>
+          <div className="paragraph-container">
+            <p className="heading-paragraph-class">{paragraphText}</p>
+          </div>
+          <img src={CenteredArrow} alt="Downward Arrow" className="centered-arrow" />
         </div>
       </div>
     );

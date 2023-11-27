@@ -11,11 +11,15 @@ import Week5Music from '../assets/Week5Music.jpg';
 import Week6Christmas from '../assets/Week6Christmas.jpg';
 import Week7Happy from '../assets/Week7Happy.jpg';
 import Week9Movie from '../assets/Week9Movie.jpg';
+import Week10Oceanquiz from "../assets/Week10Oceanquiz.jpg";
+import Week12QR from '../assets/Week12QR.jpg';
 import './MyProjects.css';
 import Button from './Button';
 
 
 const projectOrder = [
+  'project-custom-hooks-qr-code-generator-vite',
+  'project-state-management-quiz-vite',
   'project-movies-vite',
   'project-happy-thoughts-vite',
   'project-survey-vite',
@@ -29,6 +33,18 @@ const projectOrder = [
 ];
 
 const projectDetails = {
+  'project-custom-hooks-qr-code-generator-vite': {
+    name: 'Technigo Week 12 QR code generator',
+    description: 'A an app with an oceanquiz',
+    techniques: 'API, Hooks, Lottieanimations, WCAG',
+    thumbnail: Week12QR
+  },
+  'project-state-management-quiz-vite': {
+    name: 'Technigo Week 10 Oceanquiz',
+    description: 'A an app with an oceanquiz',
+    techniques: 'React router, group-project',
+    thumbnail: Week10Oceanquiz
+  },
   'project-movies-vite': {
     name: 'Technigo Week 9 Movieapp',
     description: 'A movieapp which displays the most popular movies right now with description and ratings',
@@ -92,9 +108,11 @@ const projectDetails = {
 };
 
 const netlifyUrls = {
+  'project-custom-hooks-qr-code-generator-vite':'https://cocofnasqrcode.netlify.app/',
+  'project-state-management-quiz-vite': 'https://theoceanquiz.netlify.app/',
   'project-movies-vite': 'https://subtle-macaron-96a6c5.netlify.app/',
   'project-happy-thoughts-vite': 'https://cocofnashappythoughts.netlify.app/',
-  'project-survey-vite': 'https://stunning-faloodeh-3e176a.netlify.app/',
+  'project-survey-vite': 'https://cocofnaschristmassurvey.netlify.app/',
   'project-music-releases-vite': 'https://cocofnasspotify.netlify.app/',
   'project-weather-app': 'https://mam-weatherapp.netlify.app/',
   'project-guess-who': 'https://cocofnasguesswho.netlify.app/',
