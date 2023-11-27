@@ -1,0 +1,86 @@
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+    max-height: 100vh;
+    gap: 64px;
+    margin-top: 128px;
+}
+
+.contact-info h1 {
+    margin-bottom: 60px;
+}
+
+/* .contact-info-list {
+    margin: 20px;
+} */
+
+.contact-info-list li {
+    color: black;
+    list-style: none;
+    text-align: center;
+}
+
+.footer-links button {
+    background-color: #FFFFFF;
+    border: none;
+    margin-bottom: 40px;
+}
+
+/* hover effects */
+
+.footer-links .btn-github,
+.footer-links .btn-linkedin {
+    display: block;
+}
+
+.footer-links .btn-github-hover,
+.footer-links .btn-linkedin-hover {
+    display: none;
+}
+
+.footer-links button:hover .btn-github,
+.footer-links button:hover .btn-linkedin {
+    display: none;
+}
+
+.contact-info button:hover .btn-github-hover,
+.contact-info button:hover .btn-linkedin-hover {
+    display: block;
+}
+
+nav {
+    background-color: #FF4575;
+    color: #FFFFFF;
+    width: 100vw;
+    height: 114px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-text {
+    transform: translateX(100%);
+    animation: my-animation 20s linear infinite;
+}
+
+@keyframes my-animation {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+nav p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 26.038px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 37.874px;
+    display: inline-block;
+}
