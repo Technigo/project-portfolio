@@ -1,4 +1,3 @@
-// import { FaArrowDownLong } from "react-icons/fa6";
 import arrow from "/down-arrow.svg"
 import "/Frida.jpeg"
 import "./introduction.css"
@@ -27,7 +26,6 @@ export const Introduction = () => {
         <div className="icon-container">
             <a href="#tech-section">
                 <img className="arrow icon" src={arrow} alt="arrow icon, click to get to Tech-section" aria-label="Scroll down to learn more" />
-                {/* <FaArrowDownLong className="arrow icon" aria-label="Scroll down to learn more" /> */}
             </a>
         </div>
         </>
