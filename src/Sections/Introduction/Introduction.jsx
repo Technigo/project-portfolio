@@ -1,13 +1,16 @@
-import { FaArrowDownLong } from "react-icons/fa6";
+// import { FaArrowDownLong } from "react-icons/fa6";
+import arrow from "/down-arrow.svg"
 import "/Frida.jpeg"
 import "./introduction.css"
 
 export const Introduction = () => {
     // #region Variables containing text-content
+
     let introHeader = "Frontend Developer"
     let introGreeting = "Hi, I'm Frida Kristiansson"
     let introText = "Frida is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field."
     let imageURL = "Frida.jpeg"
+    
     // #endregion
 
     return(
@@ -23,7 +26,8 @@ export const Introduction = () => {
         </div>
         <div className="icon-container">
             <a href="#tech-section">
-                <FaArrowDownLong className="arrow icon" aria-label="Scroll down to learn more" />
+                <img className="arrow icon" src={arrow} alt="arrow icon, click to get to Tech-section" aria-label="Scroll down to learn more" />
+                {/* <FaArrowDownLong className="arrow icon" aria-label="Scroll down to learn more" /> */}
             </a>
         </div>
         </>
