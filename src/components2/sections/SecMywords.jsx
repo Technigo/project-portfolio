@@ -10,7 +10,6 @@ export const SecMywords = () => {
   useEffect(() => {
     setArticles(blogData);
   }, [])//Using useEffect to fetch blogdata from json when component is mounted
-  console.log(articles);
   return (
     <>
       <ArticleCard articles={articles} />

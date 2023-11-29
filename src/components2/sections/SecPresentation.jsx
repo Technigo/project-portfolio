@@ -4,7 +4,7 @@ import { HeadingH1 } from "../typography/headingH1/HeadingH1"
 import { HeadingH4 } from "../typography/headingH4/HeadingH4";
 import { NormalText } from "../typography/normalText/NormalText";
 
-const presentationText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, iure ipsa! Reprehenderit natus perspiciatis, maxime quod sapiente nihil molestiae quasi libero tenetur animi quis illum modi consequatur sint repellat corporis!"
+const presentationText = `I'm a creative and curious developer with a diverse background in both speech and language therapy and forestry science. My interest for solving complex communication puzzles as a speech and language therapist has translated into my passion for untangling coding challenges. When I'm not crafting code, you'll find me crafting, literally! My love for being creative also influences my work in development, where I aim to create attractive and user-friendly digital experiences.`
 
 import "./sections.css";
 

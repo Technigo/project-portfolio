@@ -18,7 +18,6 @@ export const SecFeaturedProjects = () => {
 
       const data = await response.json(); //parse the response as JSON
       setProjects(data); //update the state with fetched data (putting it into array to get correct fetch)
-      console.log(projects);
     } catch (error) {
       console.error("Error fetching data:", error);
     }

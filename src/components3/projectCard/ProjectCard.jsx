@@ -17,6 +17,7 @@ export const ProjectCard = ({ projects }) => {
     "Survey",
     "Music-Releases",
     "Guess-Who",
+    "Quiz-Coding-Myths"
   ]; //Array including the projects I want to show in portfolio
   const filteredProjects = projects.filter((project) =>
     namesToFilter.includes(project.name)
@@ -27,7 +28,7 @@ export const ProjectCard = ({ projects }) => {
       <section className="project-wrapper">
         <HeadingH1 className="project-h1" text={"Featured Projects"} />
 
-        {filteredProjects.map((project) => {
+        {filteredProjects.reverse().map((project) => {
           // Finding the corresponding image data in 'repoImages' based on the project's name
           const repoImage = repoImages.find(
             (img) => img.repoName === project.name

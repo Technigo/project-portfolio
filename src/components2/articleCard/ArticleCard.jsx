@@ -10,7 +10,7 @@ import { Button } from "../button/Button";
 import "./articleCard.css";
 
 export const ArticleCard = ({ articles }) => {
-  console.log(articles);
+
   return (
     <>
       <section className="article-wrapper">

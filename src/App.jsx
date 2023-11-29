@@ -16,10 +16,10 @@ function App() {
         <SecPresentation />
         <SecTech />
         <SecFeaturedProjects />
-        <SecMywords />
+        {/* <SecMywords /> */}
         <SecSkills />
         <SecContact />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     
   );
