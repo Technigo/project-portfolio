@@ -6,6 +6,25 @@
   padding-left: 16px;
   padding-right: 16px;
 }
+.box,
+.wave {
+  background-color: #231557;
+  --mask: radial-gradient(22.65px at 50% 30.8px, #000 99%, #0000 101%)
+      calc(50% - 22px) 0/44px 100%,
+    radial-gradient(22.65px at 50% -19.8px, #0000 99%, #000 101%) 50% 11px/44px
+      100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  position: relative;
+}
+.wave {
+  top: 0.35rem;
+}
+
+.article-container {
+  background-color: #fdf2f0;
+  padding-top: 30px;
+}
 
 /* .wave {
   --c: red;
@@ -45,7 +64,7 @@
   .articles {
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 128px;
+
     padding-bottom: 128px;
   }
 }
@@ -64,8 +83,11 @@
   .article-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 98px;
+    /* gap: 98px; */
     width: 100%;
     padding-top: 3px;
   }
+}
+
+@media (min-width: 1512px) {
 }

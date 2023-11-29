@@ -14,6 +14,8 @@ export const Skills = () => {
           <p>React</p>
           <p>Components</p>
           <p>Github</p>
+          <p>MongoDB</p>
+          <p>Models</p>
         </div>
 
         <div className="toolbox">
@@ -22,20 +24,22 @@ export const Skills = () => {
           <p>Adobe Illustrator</p>
           <p>Adobe Indesign</p>
           <p>Figma</p>
-          <p>Slack</p>
-          <p>Stack Overflow</p>
-          <p>Netlify</p>
+          <p>Postman</p>
         </div>
 
         <div className="upcoming">
           <Headline text="Upcoming" level={2} className="upcoming-h2" />
-          <p>Node.js</p>
-          <p>Redux</p>
+          <p>Fullstack Project</p>
         </div>
 
         <div className="more">
           <Headline text="More" level={2} className="more-h2" />
-          <p>write some</p>
+          <p>Slack</p>
+          <p>Stack Overflow</p>
+          <p>Netlify</p>
+          <p>Collaborative Work</p>
+          <p>Strategy</p>
+          <p>Agile Methodology</p>
         </div>
       </div>
     </div>

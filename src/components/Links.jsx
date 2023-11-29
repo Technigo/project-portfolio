@@ -7,48 +7,6 @@ import liveDemoHover from "../assets/livedemo-hover.svg";
 
 import "./Links.css";
 
-// export const Links = ({ project }) => {
-//   return (
-//     <div className="project-links">
-//       {project.netlify && (
-//         <LinkButton
-//           buttonText=""
-//           url={project.netlify}
-//           icon={livedemo}
-//           hoverIcon={liveDemoHover}
-//         />
-//       )}
-//       {project.github && (
-//         <LinkButton
-//           buttonText=""
-//           url={project.github}
-//           icon={view}
-//           hoverIcon={viewHover}
-//         />
-//       )}
-//     </div>
-//   );
-// };
-
-// export const Links = () => {
-//   return (
-//     <div className="project-links">
-//       <LinkButton
-//         buttonText=""
-//         url={projects.projects[0].netlify}
-//         icon={livedemo}
-//         hoverIcon={liveDemoHover}
-//       />
-//       <LinkButton
-//         buttonText=""
-//         url={projects.projects[0].github}
-//         icon={view}
-//         hoverIcon={viewHover}
-//       />
-//     </div>
-//   );
-// };
-
 export const Links = ({ netlify, github }) => {
   return (
     <div className="project-links">
