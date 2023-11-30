@@ -17,7 +17,11 @@ export const ProjectCard = ({ projects }) => {
     "Survey",
     "Music-Releases",
     "Guess-Who",
-    "Quiz-Coding-Myths"
+    "Quiz-Coding-Myths", 
+    "Design-Handoff", 
+    "Weather-App", 
+    "QR-code-generator", 
+    "Movie-Site-Project"
   ]; //Array including the projects I want to show in portfolio
   const filteredProjects = projects.filter((project) =>
     namesToFilter.includes(project.name)
