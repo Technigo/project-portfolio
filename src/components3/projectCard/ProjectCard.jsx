@@ -15,7 +15,7 @@ export const ProjectCard = ({ projects }) => {
   console.log(repos)
   console.log(projects)
   const namesToFilter = [
-    "Happy-Thoughts",
+    "Happy-Thoughts-API",
     "Chatbot",
     "Survey",
     "Music-Releases",
@@ -30,7 +30,7 @@ export const ProjectCard = ({ projects }) => {
 
   //Specify the desired order of projects: 
   const projectOrder = [
-    "Happy-Thoughts",
+    "Happy-Thoughts-API",
     "QR-code-generator", 
     "Design-Handoff", 
     "Quiz-Coding-Myths", 
