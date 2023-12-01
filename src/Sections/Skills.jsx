@@ -17,15 +17,20 @@ export const Skills = () => {
                         <li>Javascript</li>
                         <li>ES6</li>
                         <li>React</li>
+                        <li>Zustand</li>
                         <li>Styled Components</li>
-                        <li>GitHub</li>
                         <li>Third-party libraries</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>Express</li>
                     </ul>
                 </figure>
                 <figure>
                     <figcaption className="toolbox">Toolbox</figcaption>
                     <ul>
+                        <li>GitHub</li>
                         <li>Postman</li>
+                        <li>Render</li>
                         <li>Figma</li>
                         <li>Slack</li>
                         <li>Notion</li>
@@ -34,11 +39,9 @@ export const Skills = () => {
                 <figure>
                     <figcaption className="upcoming">Upcoming</figcaption>
                     <ul>
-                        <li>Node.js</li>
-                        <li>MongoDB</li>
-                        <li>Express</li>
                         <li>Tailwind CSS</li>
                         <li>Python</li>
+                        <li>User Experience</li>
                     </ul>
                 </figure>
                 <figure>

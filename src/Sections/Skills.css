@@ -37,6 +37,7 @@ figure ul li {
     font-weight: 400;
     line-height: normal;
     text-align: center;
+    white-space: nowrap;
 }
 
 .code {
@@ -63,6 +64,11 @@ figure ul li {
         padding: 128px 186px 148px 186px;
     }
 
+    .skill-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     figcaption, figure ul li {
         text-align: left;
     }
@@ -76,8 +82,7 @@ figure ul li {
     }
 
     .skill-details {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     figcaption {
@@ -93,9 +98,5 @@ figure ul li {
 @media (min-width: 1280px) {
     .skills-wrapper {
         padding: 128px 338px;
-    }
-
-    .skill-details {
-        grid-template-columns: repeat(4, 1fr);
     }
 }
