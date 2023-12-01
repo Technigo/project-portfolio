@@ -1,5 +1,6 @@
 import React from "react";
 import repoImages from "/src/repoImages.json";
+import repos from "../../../repos.json" //IMPORTING REPOS AS JSON AS MY API ISN'T WORKING???
 
 import { HeadingH1 } from "../../components2/typography/headingH1/HeadingH1";
 import { HeadingH3 } from "../../components2/typography/headingH3/HeadingH3";
@@ -11,6 +12,8 @@ import { Tag } from "../../components2/tag/Tag"
 import "./projectCard.css";
 
 export const ProjectCard = ({ projects }) => {
+  console.log(repos)
+  console.log(projects)
   const namesToFilter = [
     "Happy-Thoughts",
     "Chatbot",
@@ -21,7 +24,8 @@ export const ProjectCard = ({ projects }) => {
     "Design-Handoff", 
     "Weather-App", 
     "QR-code-generator", 
-    "Movie-Site-Project"
+    "Movie-Site-Project", 
+    "Quiz"
   ]; //Array including the projects I want to show in portfolio
 
   //Specify the desired order of projects: 
@@ -30,18 +34,21 @@ export const ProjectCard = ({ projects }) => {
     "QR-code-generator", 
     "Design-Handoff", 
     "Quiz-Coding-Myths", 
+    "Quiz",
+    "Movie-Site-Project", 
     "Survey",
     "Music-Releases",
-    "Movie-Site-Project", 
     "Weather-App", 
     "Guess-Who",
     "Chatbot",
   ]
 
   //Filtering the projects I want to display in portfolio
-  const filteredProjects = projects.filter((project) =>
+  const filteredProjects = repos.filter((project) =>
     namesToFilter.includes(project.name)
   ); 
+
+  console.log(filteredProjects)
 
   // Use the specified order to display projects
 const orderedProjects = projectOrder.map((projectName) =>

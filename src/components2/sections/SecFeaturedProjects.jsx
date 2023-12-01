@@ -5,7 +5,7 @@ import { ProjectCard } from "../../components3/projectCard/ProjectCard";
 export const SecFeaturedProjects = () => {
   const [projects, setProjects] = useState([]);
 
-  const API = "https://api.github.com/users/emmydieden/repos?per_page=100";
+  const API = "https://api.github.com/users/emmydieden/repos";
 
   //Function to fetch projects/repos from my github
   const fetchProjects = async () => {
