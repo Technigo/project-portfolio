@@ -23,16 +23,37 @@ export const ProjectCard = ({ projects }) => {
     "QR-code-generator", 
     "Movie-Site-Project"
   ]; //Array including the projects I want to show in portfolio
+
+  //Specify the desired order of projects: 
+  const projectOrder = [
+    "Happy-Thoughts",
+    "QR-code-generator", 
+    "Design-Handoff", 
+    "Quiz-Coding-Myths", 
+    "Survey",
+    "Music-Releases",
+    "Movie-Site-Project", 
+    "Weather-App", 
+    "Guess-Who",
+    "Chatbot",
+  ]
+
+  //Filtering the projects I want to display in portfolio
   const filteredProjects = projects.filter((project) =>
     namesToFilter.includes(project.name)
-  ); //Filtering the projects I want to display in portfolio
+  ); 
+
+  // Use the specified order to display projects
+const orderedProjects = projectOrder.map((projectName) =>
+filteredProjects.find((project) => project.name === projectName)
+)
 
   return (
     <>
       <section className="project-wrapper">
         <HeadingH1 className="project-h1" text={"Featured Projects"} />
 
-        {filteredProjects.reverse().map((project) => {
+        {orderedProjects.map((project) => {
           // Finding the corresponding image data in 'repoImages' based on the project's name
           const repoImage = repoImages.find(
             (img) => img.repoName === project.name
