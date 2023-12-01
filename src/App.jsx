@@ -8,7 +8,6 @@ import { Footer } from "./Sections/Footer";
 
 import "./App.css";
 
-
 const App = () => {
   
   return (
@@ -21,9 +20,9 @@ const App = () => {
       <Contact />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
 
 

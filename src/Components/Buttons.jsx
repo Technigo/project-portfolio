@@ -83,6 +83,5 @@ export const Buttons = ({ homepage, url, link, sectionId }) => {
                 </a>
             </div>
         )
-    }
-
-}
+    };
+};

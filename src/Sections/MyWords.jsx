@@ -48,5 +48,5 @@ export const MyWords = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};

@@ -7,9 +7,9 @@ export const Article = ({ imageURL, title, date, articleText, link, sectionId })
     <div className="article-card">
       <img src={imageURL} className="post-image" />
       <span className="date">{date}</span>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <p>{articleText}</p>
       <Buttons sectionId={sectionId} link={link} />
     </div>
-  )
-}
+  );
+};

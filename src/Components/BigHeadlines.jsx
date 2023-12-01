@@ -36,5 +36,5 @@ export const BigHeadlines = ({ sectionId }) => {
       `${sectionId}`== 4 ? "pink" : "blue"}>
       {bigHeadlineCollection.map((headline) => headline.text)[sectionId - 1]}
     </h1>
-  )
-}
+  );
+};

@@ -18,7 +18,7 @@ export const Projects = () => {
         setProjectList(filteredProjectListFinal);
       })
       .catch((error) => console.error(error));
-  }
+  };
 
   useEffect(() => {
     fetchProjectsFromGithubAPI();
@@ -44,5 +44,5 @@ export const Projects = () => {
         })}
       </div>
     </div>
-  )
-}
+  );
+};

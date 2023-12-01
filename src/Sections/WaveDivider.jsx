@@ -5,5 +5,5 @@ export const WaveDivider = () => {
     <div>
         <img src="/images/wavedivider.png" alt="" className="wavy-divider" />
     </div>
-  )
-}
+  );
+};

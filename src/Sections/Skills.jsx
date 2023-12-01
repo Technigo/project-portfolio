@@ -50,5 +50,5 @@ export const Skills = () => {
                 </figure>
             </div>
         </div>
-    )
-}
+    );
+};
