@@ -16,6 +16,7 @@ export const Skills = () => {
           <p>Github</p>
           <p>MongoDB</p>
           <p>Models</p>
+          <p>Node.js</p>
         </div>
 
         <div className="toolbox">
