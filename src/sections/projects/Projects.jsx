@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Heading } from '/src/components/typography/Heading.jsx';
 import { ProjectCard } from './ProjectCard';
 
-const API = "https://api.github.com/users/mariateresepettersson/repos";
+const API = "https://api.github.com/users/mariateresepettersson/repos?per_page=100"; //Added query-param to fetch all projects (100) becaus ethey were dissapearing even though they're public
 
 //Component to fetch data from API
 export const Projects = () => {

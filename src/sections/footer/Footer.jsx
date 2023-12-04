@@ -19,12 +19,12 @@ export const Footer = () => {
                     ImageAltText={"Profile Image of Maria"}
                 />
                 <div className="contact-info">
-                    <Heading level={3} text={"Maria Pettersson"} />
+                    <Heading level={4} text={"Maria Pettersson"} />
                     <a href="tel:+730300766">
-                        <Heading level={3} text={"+46(0)730 300 766"} />
+                        <Heading level={4} text={"+46(0)730 300 766"} />
                     </a>
                     <a href="mailto:mariateresepettersson@gmail.com">
-                        <Heading level={3} text={"mariateresepettersson@gmail.com"} />
+                        <Heading level={4} text={"mariateresepettersson\n@gmail.com"} />
                     </a>
                 </div>
                 <div className="icons">

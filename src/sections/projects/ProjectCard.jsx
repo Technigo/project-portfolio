@@ -52,20 +52,20 @@ export const ProjectCard = ({ repositories }) => {
                                     <Tag key={index} tagText={topic} />
                                 ))}
                             </div>
-                        </div>
-                        <div className='button-wrapper'>
-                            <Button
-                                icon="/assets/icons/live-demo.svg" // Replace with the actual icon path
-                                label="Live demo"
-                                link={matchingData.netlifyUrl} // Use the URL from the JSON data
-                                className="netlify-btn"
-                            />
-                            <Button
-                                icon="/assets/icons/github-btn.svg" // Replace with the actual icon path
-                                label="View the code"
-                                link={repo.svn_url} // Retrieve GitHub link from the API
-                                className="github-btn"
-                            />
+                            <div className='button-wrapper'>
+                                <Button
+                                    icon="/assets/icons/live-demo.svg" // Replace with the actual icon path
+                                    label="Live demo"
+                                    link={matchingData.netlifyUrl} // Use the URL from the JSON data
+                                    className="netlify-btn"
+                                />
+                                <Button
+                                    icon="/assets/icons/github-btn.svg" // Replace with the actual icon path
+                                    label="View the code"
+                                    link={repo.svn_url} // Retrieve GitHub link from the API
+                                    className="github-btn"
+                                />
+                            </div>
                         </div>
                     </article>
                 );
