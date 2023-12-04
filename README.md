@@ -6,15 +6,12 @@
 
 # React Portfolio Project
 
-Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
-
 ## Author
 
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.technigo.io/)
-[![@Technigo](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://se.linkedin.com/school/technigo/)
-[![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/Technigo)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mariateresepettersson.netlify.app/)
+[![@Technigo](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/mariateresepettersson/)
+[![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/mariateresepettersson/)
 
-PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 
 ### Hi, I'm Maria! 👋
 
@@ -42,10 +39,4 @@ https://mariateresepettersson.netlify.app/
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-PLEASE SWAP INFORMATION FOR YOUR OWN 😉
-
-##### Want to create your own README.md ?
-
-[Go to this link](https://readme.so/)
+![App Screenshot](/screenshot-1.png)
