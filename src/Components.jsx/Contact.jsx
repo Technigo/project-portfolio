@@ -1,6 +1,7 @@
 import { Headline } from "./Headlines";
 import { LinkButton } from "./LinkButton";
 import React from "react";
+import "./Contact.css";
 
 //My contact information and buttons/links to different channels to reach me //
 export const Contact = () => {
