@@ -20,18 +20,21 @@
   }
 
   .arrow {
-    scale: 4;
+    scale: 4.5;
     position: relative;
     top: 0;
-    filter: invert(68%) sepia(16%) saturate(842%) hue-rotate(88deg) brightness(93%) contrast(87%);
+    color: var(--border-color);
     width: 17px;
     animation: arrow-icon 1.3s ease-in alternate infinite;
-    /* -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0); */
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 
   @keyframes arrow-icon {
-    from {top: -9rem}
+    from {top: -7rem}
     to {top: -4rem}
   }
   @keyframes arrow-icon-large {
@@ -63,6 +66,10 @@
       display: flex;
       place-content: center;
     }
+    .arrow{
+      scale: 8;
+      animation: arrow-icon-large 1.7s ease-in alternate infinite;
+    }
     
   }
 
@@ -85,7 +92,6 @@
       font-size: 8rem;
     }
     .arrow {
-      scale: 4;
       animation: arrow-icon-large 1.7s ease-in alternate infinite;
     }
   }

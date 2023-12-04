@@ -1,4 +1,7 @@
-import arrow from "/down-arrow.svg"
+// import arrow from "/down-arrow.svg"
+// import { TiArrowDownThick } from "react-icons/ti"
+import { FaUpLong } from "react-icons/fa6";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "/Frida.jpeg"
 import "./introduction.css"
 
@@ -25,7 +28,10 @@ export const Introduction = () => {
         </div>
         <div className="icon-container">
             <a href="#tech-section">
-                <img className="arrow icon" src={arrow} alt="arrow icon, click to get to Tech-section" aria-label="Scroll down to learn more" />
+                {/* <img className="arrow icon" src={arrow} alt="arrow icon, click to get to Tech-section" aria-label="Scroll down to learn more" /> */}
+                {/* <TiArrowDownThick /> */}
+                <FaUpLong className="arrow icon" />
+
             </a>
         </div>
         </>
