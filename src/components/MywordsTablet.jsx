@@ -3,7 +3,7 @@ import ReadArticleBtn from "./buttons/ReadArticleBtn";
 import articlesData from "../data/articles.json";
 import './mywordstablet.css';
 
-const Mywords = () => {
+const MywordsTablet = () => {
 
     const [articles, setArticles] = useState([]);
 
