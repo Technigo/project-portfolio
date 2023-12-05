@@ -15,7 +15,7 @@ import Footer from './components/Footer.jsx';
 
 const App = () => {
   const isMobile = useMediaQuery({ maxWidth: 390 });
-  const isTablet = useMediaQuery({ minWidth: 391, maxWidth: 1024 });
+  const isTablet = useMediaQuery({ minWidth: 391, maxWidth: 1023 });
 
   return (
     <div className="main-wrapper">
