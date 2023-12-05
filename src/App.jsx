@@ -3,14 +3,15 @@ import { useMediaQuery } from "react-responsive";
 import './App.css'
 import Header from './components/Header.jsx';
 import Intro from './components/Intro.jsx';
-import Arrow from './components/Arrow';
+import Arrow from './components/Arrow.jsx';
 import Tech from './components/Tech.jsx';
 import Projects from './components/Projects.jsx'
+import ProjectsTablet from "./components/ProjectsTablet.jsx";
 import Mywords from './components/Mywords.jsx';
-import MywordsTablet from './components/MywordsTablet';
-import Skills from './components/Skills';
+import MywordsTablet from './components/MywordsTablet.jsx';
+import Skills from './components/Skills.jsx';
 import Contact from './components/Contact.jsx';
-import Footer from './components/Footer';
+import Footer from './components/Footer.jsx';
 
 const App = () => {
   const isMobile = useMediaQuery({ maxWidth: 390 });
@@ -22,7 +23,15 @@ const App = () => {
       <Intro />
       <Arrow />
       <Tech />
-      <Projects />
+
+      {isMobile ? (
+        <Projects />
+      ) : isTablet ? (
+        <ProjectsTablet />
+      ) : (
+        <Projects />
+      )}
+
       {isMobile ? (
         <MywordsTablet />
       ) : isTablet ? (
@@ -30,6 +39,7 @@ const App = () => {
       ) : (
         <Mywords />
       )}
+
       <Skills />
       <Contact />
       <Footer />
