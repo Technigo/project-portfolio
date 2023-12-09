@@ -37,7 +37,7 @@ export const Intro = () => {
       <div className="arrow">
         <img
           src="/arrow_down.svg"
-          alt="A bouncin arrow pointing down to indicate that there's more to read below."
+          alt="A bouncing arrow pointing down to indicate that there's more to read below."
         />
       </div>
     </section>
