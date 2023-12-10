@@ -1,31 +1,32 @@
 import github from "/icons/github-button.png";
 import liveDemo from "/icons/LiveDemo.png";
-import "../styleComponents/projects.css";
-import data from "../../project.json";
+import styles from "../styling/projects.module.css";
+import data from "../project.json";
 export const Project = () => {
   const projectLists = data.projects;
-  // console.log(projectLists);
 
   return (
-    <div className="project-wrapper">
+    <div className={styles.project_wrapper}>
       {projectLists.map((project) => (
-        <figure className="project-frame" key={project.id}>
+        <figure className={styles.project_frame} key={project.id}>
           <figcaption>
-            <div className="project">
+            <div className={styles.project}>
               <img
                 src={project.image}
                 alt={project.project_title}
-                className="project-image"
+                className={styles.project_image}
               />
-              <div className="project-text-wrapper">
-                <h1 className="project-title">{project.project_title}</h1>
-                <p className="project-content">{project.content}</p>
-                <div className="tags">
+              <div className={styles.project_text_wrapper}>
+                <h1 className={styles.project_title}>
+                  {project.project_title}
+                </h1>
+                .<p className={styles.project_content}>{project.content}</p>
+                <div className={styles.tags}>
                   {project.tags.map((tag, index) => (
                     <span key={index}>{tag}</span>
                   ))}
                 </div>
-                <div className="button-wrapper">
+                <div className={styles.button_wrapper}>
                   <a
                     href={project.github}
                     target="_blank"

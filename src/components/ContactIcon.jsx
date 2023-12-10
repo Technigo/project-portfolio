@@ -1,7 +1,7 @@
 import linkedIn from "/icons/LinkedIn.png";
 import github from "/icons/github.png";
 import email from "/icons/email.png";
-import "../styleComponents/contactIcon.css";
+import "../styling/contactIcon.css";
 export const ContactIcon = () => {
   return (
     <div className="contact-icons-wrapper">

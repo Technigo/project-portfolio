@@ -1,11 +1,11 @@
 import miko from "/images/huadanimage.png";
 import music from "/icons/music-record.png";
 import jazz from "/icons/jazz.mp3";
-import "./styleComponents/about.css";
+import styles from "../styling/about.module.css";
 import ReactTypingEffect from "react-typing-effect";
 import { Link } from "react-scroll";
 import { useState, useRef } from "react";
-import { ContactIcon } from "./reuseCompoents/ContactIcon";
+import { ContactIcon } from "../components/ContactIcon";
 
 export const About = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -23,9 +23,9 @@ export const About = () => {
     setIsPlaying(!isPlaying);
   };
   return (
-    <div className="about-section" aria-label="About Huadan Zhu">
+    <div className={styles.about} aria-label="About Huadan Zhu">
       <div
-        className={`music-record ${isPlaying ? "spinning" : ""}`}
+        className={`${styles.music_record} ${isPlaying ? styles.spinning : ""}`}
         onClick={toggleMusic}
         role="button"
         tabIndex={0}
@@ -33,9 +33,11 @@ export const About = () => {
       >
         <img src={music} alt="music record jazz" />
       </div>
-      <section className="name-developer-wrapper">
-        <h3 className="miko-name">👋 Hi! My name is Huadan Zhu</h3>
-        <h1 className="developer">
+      <div className={styles.name}>
+        <h3 className={styles.miko_name}>
+          👋 Hi! My name is Huadan Zhu (Miko)
+        </h3>
+        <h1 className={styles.developer}>
           <ReactTypingEffect
             text={[" Full-Stack Developer", "Front-end Developer"]}
             speed="100"
@@ -43,13 +45,13 @@ export const About = () => {
             eraseDelay="200"
           />
         </h1>
-      </section>
-      <section className="about-main-wrapper">
-        <div className="img_place_container">
+      </div>
+      <div className={styles.about_main_wrapper}>
+        <div className={styles.img_place_container}>
           <img src={miko} alt="Huadan's image" />
-          <p className="place">Stockholm, Sweden</p>
+          <p className={styles.place}>Stockholm, Sweden</p>
         </div>
-        <article className="introduction">
+        <article className={styles.introduction}>
           Huadan is a talented developer who is embarking on a career transition
           from the field of HRM to web development. With a master's degree in
           HRM and seven years of experience in human resources management, I
@@ -60,13 +62,12 @@ export const About = () => {
           background in HRM provides me with a unique perspective that I believe
           will make a positive contribution to the world of web development.
         </article>
-      </section>
-      <div className="contact-top-icons">
-        <ContactIcon />
       </div>
 
-      <button type="button" name="next-button" className="next-button">
-        <Link activeClass="active" smooth spy to="tech">
+      <ContactIcon />
+
+      <button type="button" name="next-button" className={styles.next_button}>
+        <Link activeClass="active" smooth spy to="projects">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="29"

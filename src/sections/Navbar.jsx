@@ -1,21 +1,21 @@
 import { Link } from "react-scroll";
-import "./styleComponents/navbar.css";
-import { About } from "../components/About";
-import { Tech } from "../components/Tech";
-import { Skill } from "../components/Skill";
-import { Myword } from "../components/Myword";
-import { Contact } from "../components/Contact";
+import styles from "../styling/navbar.module.css";
+import { About } from "./About";
+import { Tech } from "../sections/Tech";
+import { Skill } from "../sections/Skill";
+import { Myword } from "./Myword";
+import { Contact } from "./Contact";
 import { Projects } from "./Projects";
 
 export const Navbar = () => {
   return (
     <>
-      <header className="nav">
-        <nav className="nav__container__actions">
+      <header className={styles.header}>
+        <nav className={styles.nav__container__actions}>
           <ul>
             <li>
               <Link
-                activeClass="active"
+                activeClass={styles.active}
                 smooth
                 spy
                 to="about"
@@ -24,20 +24,10 @@ export const Navbar = () => {
                 ABOUT
               </Link>
             </li>
+
             <li>
               <Link
-                activeClass="active"
-                smooth
-                spy
-                to="tech"
-                aria-label="Navigate to Tech section"
-              >
-                TECH
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
+                activeClass={styles.active}
                 smooth
                 spy
                 to="projects"
@@ -48,7 +38,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                activeClass="active"
+                activeClass={styles.active}
                 smooth
                 spy
                 to="skills"
@@ -59,7 +49,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                activeClass="active"
+                activeClass={styles.active}
                 smooth
                 spy
                 to="mywords"
@@ -71,7 +61,7 @@ export const Navbar = () => {
 
             <li>
               <Link
-                activeClass="active"
+                activeClass={styles.active}
                 smooth
                 spy
                 to="contact"
@@ -83,22 +73,22 @@ export const Navbar = () => {
           </ul>
         </nav>
       </header>
-      <section id="about">
+      <section id="about" className={styles.about}>
         <About />
       </section>
-      <section id="tech">
+      <section className={styles.tech}>
         <Tech />
       </section>
-      <section id="projects">
+      <section id="projects" className={styles.projects}>
         <Projects />
       </section>
-      <section id="skills">
+      <section id="skills" className={styles.skills}>
         <Skill />
       </section>
-      <section id="mywords">
+      <section id="mywords" className={styles.mywords}>
         <Myword />
       </section>
-      <section id="contact">
+      <section id="contact" className={styles.contact}>
         <Contact />
       </section>
     </>

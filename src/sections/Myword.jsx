@@ -1,57 +1,56 @@
 import wavy from "/images/divider.png";
-import "./styleComponents/myword.css";
-import article1 from "/images/article1.png";
-import article2 from "/images/article2.png";
-import article3 from "/images/article3.png";
-import article4 from "/images/article4.png";
+import styles from "../styling/myword.module.css";
+import data from "../project.json";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+
+const buttonStyle = {
+  border: "none",
+  background: "none",
+  width: "30px",
+};
+const properties = {
+  prevArrow: (
+    <button style={{ ...buttonStyle }}>
+      <img
+        src="/icons/left-arrow.png"
+        alt="left arrow"
+        style={{ width: "30px" }}
+      />
+    </button>
+  ),
+  nextArrow: (
+    <button style={{ ...buttonStyle }}>
+      <img
+        src="/icons/double-right.png"
+        alt="right arrow"
+        style={{ width: "30px" }}
+      />
+    </button>
+  ),
+};
 export const Myword = () => {
-  const mywordList = [
-    {
-      id: 1,
-      image: article1,
-      time: "September 2023",
-      title: "Spring One Reflection",
-      text: "The Spring One have been very fulfilling, and coding every day has made me feel like I've fallen into a flow.",
-      link: "https://www.linkedin.com/feed/update/urn:li:activity:7106181718683922432/",
-    },
-    {
-      id: 2,
-      image: article2,
-      time: "October 2023",
-      title: "Spring Two Reflection",
-      text: "BootCamp Sprint Two: Building with React, the LEGO of Web Development",
-      link: "https://www.linkedin.com/pulse/bootcamp-sprint-two-building-react-lego-web-development-huadan-zhu",
-    },
-    {
-      id: 3,
-      image: article3,
-      time: "November 2023",
-      title: "Spring Three Reflection",
-      text: "The spring three have been very fulfilling, and coding every day has made me feel like I've fallen into a flow.",
-    },
-    {
-      id: 4,
-      image: article4,
-      time: "December 2023",
-      title: "Spring Four Reflection",
-      text: "The spring four have been very fulfilling, and coding every day has made me feel like I've fallen into a flow.",
-    },
-  ];
+  const slideImages = data.mywordList.map((myword) => myword.image);
   return (
-    <div className="myword-container">
-      <header>
-        <img src={wavy} alt="wavy image" className="wavy" />
-        <h1>My Words</h1>
-      </header>
-      <article className="frame">
-        {mywordList.map((myword) => {
-          return (
-            <div key={myword.id} className="article-wrapper">
+    <div className={styles.myword_container}>
+      <h1>My Words</h1>
+
+      <article className={styles.frame}>
+        <Slide
+          images={slideImages}
+          slidesToScroll={1}
+          slidesToShow={1}
+          indicators={true}
+          autoplay={false}
+          {...properties}
+        >
+          {data.mywordList.map((myword) => (
+            <div key={myword.id} className={styles.article_wrapper}>
               <img src={myword.image} alt="article's picture" />
               <p>{myword.time}</p>
               <h3>{myword.title}</h3>
               <h5>{myword.text}</h5>
-              <a href={myword.link} target="_blank">
+              <a href={myword.link} target="_blank" rel="noopener noreferrer">
                 <button type="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -69,10 +68,9 @@ export const Myword = () => {
                 </button>
               </a>
             </div>
-          );
-        })}
+          ))}
+        </Slide>
       </article>
-      <img src={wavy} alt="wavy image" className="wavy-bottom" />
     </div>
   );
 };

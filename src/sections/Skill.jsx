@@ -1,14 +1,14 @@
-import "./styleComponents/skill.css";
+import styles from "../styling/skill.module.css";
 import arrow from "/images/arrow.png";
 
 export const Skill = () => {
   return (
-    <div className="skills-container" aria-label="Skills Container">
-      <img src={arrow} alt="arrow picture" className="animated-arrow" />
+    <div className={styles.skills_container} aria-label="Skills Container">
+      <img src={arrow} alt="arrow picture" className={styles.animated_arrow} />
       <h1>Skills</h1>
-      <div className="skill-code">
+      <div className={styles.skill_code}>
         <h3>CODE</h3>
-        <ul className="skills-list">
+        <ul className={styles.skills_list}>
           <li>HTML5</li>
           <li>CSS3</li>
           <li>SCSS</li>
@@ -19,14 +19,14 @@ export const Skill = () => {
           <li>MongoDB</li>
           <li>Mongoose</li>
           <li>Express.js</li>
-          <li>Restful & API </li>
+          <li>Restful API </li>
           <li>Python</li>
           <li>C#</li>
         </ul>
       </div>
-      <div className="skill-tool">
+      <div className={styles.skill_tool}>
         <h3>TOOL</h3>
-        <ul className="skills-list">
+        <ul className={styles.skills_list}>
           <li>Slack</li>
           <li>Github</li>
           <li>Figma</li>
@@ -36,9 +36,9 @@ export const Skill = () => {
           <li>Keynote</li>
         </ul>
       </div>
-      <div className="skill-more">
+      <div className={styles.skill_more}>
         <h3>More</h3>
-        <ul className="skills-list">
+        <ul className={styles.skills_list}>
           <li>Mob/Pair Programming</li>
           <li>Agile Methodology</li>
           <li>Database Management</li>
@@ -48,13 +48,14 @@ export const Skill = () => {
           <li>Soft Skills</li>
         </ul>
       </div>
-      <div className="skill-upcoming">
+      <div className={styles.skill_upcoming}>
         <h3>Upcoming</h3>
-        <ul className="skills-list">
+        <ul className={styles.skills_list}>
           <li>.Net</li>
           <li>Three.js</li>
           <li>UX/UI</li>
           <li>Typescript</li>
+          <li>Next.js</li>
         </ul>
       </div>
     </div>
