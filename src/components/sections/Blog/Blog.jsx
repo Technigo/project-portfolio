@@ -30,7 +30,7 @@ export default function Blog() {
 }
 
 function Post({ blog }) {
-  const { introText, title, date, url, imagePath, imageDescription, id } = blog;
+  const { text, title, date, url, imagePath, imageDescription, id } = blog;
   return (
     <article className={styles.post_card}>
       <div className={styles.image_wrapper}>
@@ -42,8 +42,9 @@ function Post({ blog }) {
       </div>
       <Label labelText={date} />
       <Title text={title} />
-      <p className={styles.post_text}>{introText}...</p>
-      <Link to={`/blog/${id}/`}>
+      <p className={styles.post_text}>{text.split(" ").slice(0, 40).join(" ")}...</p>
+      {/* <Link to={`/blog/${id}/`}> */}
+      <a href={url} target="_blank" rel="noopener noreferrer">
         <Button
           iconPath="/icons/doc.svg"
           background="#fff"
@@ -52,7 +53,8 @@ function Post({ blog }) {
         >
           Read Article
         </Button>
-      </Link>
+      </a>
+      {/* </Link> */}
     </article>
   );
 }

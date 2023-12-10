@@ -1,14 +1,14 @@
 export const projectsData = [
   {
-    imagePath: "/images/movie.webp",
-    title: "S x S Movie",
+    imagePath: "/images/saku-movie.webp",
+    title: "Saku Movie",
     text: {
       en: "This is a film app that lets you check out the latest films. I challenged myself not to use libraries and everything is built from scratch.",
       ja: "最新の映画をチェックできるアプリです。出来るだけ軽いカルーセルを実現するためにライブラリをしよせず全て自分で作りました。またSWRやPromisALLを使うことにより、パフォーマンスにこだわりました。",
     },
-    skills: ["HTML", "CSS", "React", "React Router"],
-    gitUrl: "https://github.com/sansan-sakura/project-movies-vite",
-    demoUrl: "https://s-s-movies.netlify.app/",
+    skills: ["SCSS", "React", "React Router", "SWR"],
+    gitUrl: "https://github.com/sansan-sakura/Saku-Movies",
+    demoUrl: "https://saku-movie.netlify.app/",
   },
   {
     imagePath: "/images/saq.webp",
