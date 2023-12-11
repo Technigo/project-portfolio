@@ -12,8 +12,6 @@
 [![@Technigo](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anna-robertsson-829967272/)
 [![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnnaRobertsson)
 
-PLEASE SWAP INFORMATION FOR YOUR OWN 😉
-
 ### Hi, I'm Anna! 👋
 
 Welcome to my first React portfolio project! I am Anna, a student who has completed Sprint 2 of the boot camp and is now taking my skills to the next level. This portfolio showcases my mastery of React concepts, implementing components, props, hooks, and web APIs to create a dynamic and interactive website.
@@ -34,4 +32,4 @@ Through this project, I have learned invaluable lessons in React development. I 
 
 ## Screenshots
 
-![App Screenshot](![Screenshot of the portfolio](public/assets/Screenshot-portfolio.png))
+![App Screenshot]![Screenshot of the portfolio](public/assets/Screenshot-portfolio.png)
