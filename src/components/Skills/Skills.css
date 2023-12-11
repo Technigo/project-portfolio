@@ -37,7 +37,10 @@
   .skills-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: minmax(
+      auto,
+      max-content
+    ); /* Set rows to adjust based on content */
     gap: 64px;
     height: auto;
     min-width: 410px;

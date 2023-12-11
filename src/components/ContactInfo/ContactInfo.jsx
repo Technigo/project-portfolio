@@ -17,7 +17,7 @@ export const ContactInfo = () => {
             className={"contact-h3"}
             text={"robertsson_anna@hotmail.com"}
           />
-          <SocialMediaLinks />
+          <SocialMediaLinks className={"contact-links"} />
         </div>
       </div>
     </div>

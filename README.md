@@ -8,9 +8,9 @@
 
 ## Author
 
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.technigo.io/)
-[![@Technigo](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://se.linkedin.com/school/technigo/)
-[![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/Technigo)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://project-portfolio-anna-robertsson.netlify.app/)
+[![@Technigo](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anna-robertsson-829967272/)
+[![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnnaRobertsson)
 
 PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 
@@ -28,20 +28,10 @@ Accessibility has been a priority, following guidelines to make my website usabl
 
 This portfolio is just the beginning of my coding journey. As I continue to grow and evolve, my portfolio will reflect my progress and creativity. Feel free to explore my GitHub repository and visit the live deployment link to see my work in action. Happy coding and enjoy the journey with me!
 
-PLEASE SWAP INFORMATION FOR YOUR OWN 😉
-
 ### Lessons Learned
 
-Through this project, I, Anna, have learned invaluable lessons in React development. I now understand the power of components and props in creating a modular and organized codebase. React hooks, especially useState, have allowed me to manage state and interactivity effectively. Integrating web APIs taught me the importance of data fetching and dynamic content display, keeping my portfolio up-to-date effortlessly. Additionally, focusing on accessibility has made me more aware of creating inclusive user experiences. Overall, this project has honed my skills in clean coding practices and emphasized the significance of continuous testing and deployment for a successful web application. The experience has been enriching, and I am excited to apply these lessons in future projects to further enhance my coding journey.
-
-PLEASE SWAP INFORMATION FOR YOUR OWN 😉
+Through this project, I have learned invaluable lessons in React development. I now understand the power of components and props in creating a modular and organized codebase. React hooks, especially useState, have allowed me to manage state and interactivity effectively. Integrating web APIs taught me the importance of data fetching and dynamic content display, keeping my portfolio up-to-date effortlessly. Additionally, focusing on accessibility has made me more aware of creating inclusive user experiences. Overall, this project has honed my skills in clean coding practices and emphasized the significance of continuous testing and deployment for a successful web application. The experience has been enriching, and I am excited to apply these lessons in future projects to further enhance my coding journey.
 
 ## Screenshots
 
-![App Screenshot](public/RepoImages/Technigo/Portfolio.jpg)
-
-PLEASE SWAP INFORMATION FOR YOUR OWN 😉
-
-##### Want to create your own README.md ?
-
-[Go to this link](https://readme.so/)
+![App Screenshot](![Screenshot of the portfolio](public/assets/Screenshot-portfolio.png))
