@@ -32,4 +32,4 @@ Through this project, I have learned invaluable lessons in React development. I 
 
 ## Screenshots
 
-![App Screenshot]![Screenshot of the portfolio](public/assets/Screenshot-portfolio.png)
+![Screenshot of the portfolio](public/assets/Screenshot-portfolio.png)
