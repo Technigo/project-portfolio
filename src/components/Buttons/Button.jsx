@@ -1,6 +1,6 @@
 import "./Button.css";
 
-export const Button = ({ link, buttonName, icon, iconAlt, className }) => {
+export const Button = ({ link, buttonName, iconAlt, className }) => {
   return (
     <div className="button">
       <a
@@ -10,7 +10,7 @@ export const Button = ({ link, buttonName, icon, iconAlt, className }) => {
         rel="noreferrer noopener"
       >
         <div className="button-content-wrapper">
-          <img src={icon} alt={iconAlt} />
+          <div className="button-image" alt={iconAlt} />
           {buttonName}
         </div>
       </a>
