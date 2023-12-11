@@ -8,9 +8,9 @@ export const Tech = () => {
         <MainHeading className={"tech-h2"} text={"Tech"} />
         <div className="techstack-wrapper">
           <p>
-            HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks,
+            HTML, CSS, Flexbox, Grids, JavaScript, ES6, JSX, React, React Hooks,
             Node.js, Mongo DB, Web Accessibility, API:s, mob-programming,
-            pair-programming, Github.
+            pair-programming, Github, Lottie Files.
           </p>
         </div>
       </div>

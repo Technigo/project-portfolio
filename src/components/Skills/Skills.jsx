@@ -5,10 +5,10 @@ import "./Skills.css";
 export const Skills = () => {
   return (
     <div className="skills-container">
+      <MainHeading className={"skills-h2"} text={"Skills"} />
       <div className="skills-wrapper">
-        <MainHeading className={"skills-h2"} text={"Skills"} />
-        <div className="code-skills-wrapper code">
-          <SubHeading className={"skills-h3"} text={"Code"} />
+        <div className="code-skills-wrapper">
+          <SubHeading className={"skills-h3 code"} text={"Code"} />
           <ul className="skills-list-wrapper">
             <li>
               <p>HTML5</p>
@@ -23,27 +23,39 @@ export const Skills = () => {
               <p>React</p>
             </li>
             <li>
+              <p>Mongo DB</p>
+            </li>
+            <li>
+              <p>Zustand</p>
+            </li>
+            <li>
+              <p>Node.js</p>
+            </li>
+            <li>
               <p>Styled Components</p>
+            </li>
+          </ul>
+        </div>
+        <div className="code-skills-wrapper">
+          <SubHeading className={"skills-h3 toolbox"} text={"Toolbox"} />
+          <ul className="skills-list-wrapper">
+            <li>
+              <p>VS Code</p>
             </li>
             <li>
               <p>GitHub</p>
             </li>
-          </ul>
-        </div>
-        <div className="code-skills-wrapper toolbox">
-          <SubHeading className={"skills-h3"} text={"Toolbox"} />
-          <ul className="skills-list-wrapper">
             <li>
-              <p>Atom</p>
+              <p>Stack Overflow</p>
+            </li>
+            <li>
+              <p>CodePen</p>
             </li>
             <li>
               <p>Postman</p>
             </li>
             <li>
-              <p>Adobe Photoshop</p>
-            </li>
-            <li>
-              <p>Adobe Illustrator</p>
+              <p>Lottie Files</p>
             </li>
             <li>
               <p>Figma</p>
@@ -52,44 +64,41 @@ export const Skills = () => {
               <p>Canva</p>
             </li>
             <li>
-              <p>Keynote</p>
+              <p>Netlify</p>
+            </li>
+            <li>
+              <p>Render</p>
             </li>
             <li>
               <p>Slack</p>
             </li>
           </ul>
         </div>
-        <div className="code-skills-wrapper upcoming">
-          <SubHeading className={"skills-h3"} text={"Upcoming"} />
+        <div className="code-skills-wrapper">
+          <SubHeading className={"skills-h3 upcoming"} text={"Upcoming"} />
           <ul className="skills-list-wrapper">
             <li>
-              <p>Node.js</p>
+              <p>To be determined</p>
             </li>
           </ul>
         </div>
-        <div className="code-skills-wrapper more">
-          <SubHeading className={"skills-h3"} text={"More"} />
+        <div className="code-skills-wrapper">
+          <SubHeading className={"skills-h3 more"} text={"More"} />
           <ul className="skills-list-wrapper">
-            <li>
-              <p>Design Lead</p>
-            </li>
-            <li>
-              <p>Branding</p>
-            </li>
-            <li>
-              <p>Strategy</p>
-            </li>
-            <li>
-              <p>Process design</p>
-            </li>
-            <li>
-              <p>Concept development</p>
-            </li>
             <li>
               <p>Agile methodology</p>
             </li>
             <li>
-              <p>Hyper Island toolbox</p>
+              <p>Team work</p>
+            </li>
+            <li>
+              <p>Soft skills</p>
+            </li>
+            <li>
+              <p>Problem solver</p>
+            </li>
+            <li>
+              <p>Design interest</p>
             </li>
           </ul>
         </div>

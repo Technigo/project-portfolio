@@ -1,7 +1,7 @@
 import { MainHeading } from "../Headings/MainHeading/MainHeading";
 import { SubHeading } from "../Headings/SubHeading/SubHeading";
 import { ProfilePhoto } from "../ProfilePhoto/ProfilePhoto";
-import { Button } from "../Buttons/Button";
+import { SocialMediaLinks } from "../SocialMedia/SocialMediaLinks";
 import "./ContactInfo.css";
 
 export const ContactInfo = () => {
@@ -17,20 +17,7 @@ export const ContactInfo = () => {
             className={"contact-h3"}
             text={"robertsson_anna@hotmail.com"}
           />
-        </div>
-        <div className="contact-links">
-          <Button
-            className={`linkedin-button`}
-            link={`https://www.linkedin.com/in/anna-robertsson-829967272/`}
-            icon={`/assets/GreyLinkedIn.svg.svg`}
-            iconAlt={`Clickable icon of the LinkedIn logo`}
-          />
-          <Button
-            className={`github-button`}
-            link={`https://github.com/AnnaRobertsson`}
-            icon={`/assets/GreyGitHub.svg.svg`}
-            iconAlt={`Clickable icon of the GitHub logo`}
-          />
+          <SocialMediaLinks />
         </div>
       </div>
     </div>
