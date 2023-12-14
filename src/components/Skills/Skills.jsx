@@ -78,7 +78,7 @@ export const Skills = () => {
           <SubHeading className={"skills-h3 upcoming"} text={"Upcoming"} />
           <ul className="skills-list-wrapper">
             <li>
-              <p>To be determined</p>
+              <p>React Native</p>
             </li>
           </ul>
         </div>
