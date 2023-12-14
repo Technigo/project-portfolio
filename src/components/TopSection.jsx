@@ -16,11 +16,13 @@ function TopSection() {
         <div className="left-content">
           <h1 className="heading-classh1">{introText}</h1>
           <h2 className="heading-classh2">A project manager/records manager with coding skills.</h2>
+          <div class="content-container">
           <div className="image-container">
             <img src={OriginalImage} alt="Alexandra Meija" className="image-another-class" />
           </div>
           <div className="paragraph-container">
             <p className="heading-paragraph-class">{paragraphText}</p>
+          </div>
           </div>
           <img src={CenteredArrow} alt="Downward Arrow" className="centered-arrow" />
         </div>

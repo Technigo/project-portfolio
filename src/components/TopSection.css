@@ -39,13 +39,19 @@ line-height: normal;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-margin-bottom: 0px;
+margin-bottom: 16px;
+}
+.content-container {
+  display: flex; /* This will enable flexbox */
+  align-items: center; /* This will vertically align the children in the middle */
+  gap: 22px; /* This is the space between the image and the paragraph */
 }
 
 .paragraph-container {
   display: flex;
   align-items: center;
   gap: 22px;
+  margin-left: 0; 
 }
 
 .heading-paragraph-class {
@@ -56,25 +62,22 @@ margin-bottom: 0px;
   letter-spacing: 0em;
   text-align: left;
   color: black;
-  margin-left: 30%;
-  margin-top:20px;
+  margin-left: 0px;
+  margin-top: 0px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-}
 
+}
 .image-container {
-  /* Adjust the width and height as needed for desktop view */
-  width: 200px;
-  height: 150px;
   display: flex;
 align-items: center;
 gap: 22px;
 }
 
 .image-another-class {
-  width: 100%; /* Make the image responsive within its container */
-  height: 130%;
+  width: 164px;
+  height: 164px;
   border-radius: 50%;
 }
 
@@ -174,19 +177,26 @@ height: 68px;
     line-height: 48px;
     text-align: left; /* Aligns this heading to the left */
   }
-
+  .content-container { /* This should be the parent container of the image and text */
+    flex-direction: column;
+    align-items: center; /* This will center-align the flex children horizontally */
+  }
   .image-container {
     order: -1; /* Image goes first */
     align-self: center; /* Keeps the image centered */
-    width: 120px; /* Adjust as needed for mobile */
-    height: 120px; /* Adjust as needed for mobile */
+    width: 100%; /* Adjust the width as needed for your design */
+    height: auto;
     margin-bottom: 60px; /* Space between image and text */
   }  
 
   .heading-paragraph-class {
-    font-size: 14px;
-    line-height: 24px;
-    margin-left: 0;
+    color: #000;
+    font-family: 'Hind', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    order: 3;
   }
 
   .centered-arrow {
