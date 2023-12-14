@@ -1,4 +1,4 @@
-import { MainHeading } from "../Headings/MainHeading/MainHeading.jsx";
+import { IntroHeading } from "../Headings/MainHeading/IntroHeading.jsx";
 import { SubHeading } from "../Headings/SubHeading/SubHeading.jsx";
 import { ProfilePhoto } from "../ProfilePhoto/ProfilePhoto.jsx";
 import { SocialMediaLinks } from "../SocialMedia/SocialMediaLinks.jsx";
@@ -17,7 +17,7 @@ export const Introduction = () => {
             className={"introduction-h3"}
             text={"Hi, I'm Anna Robertsson"}
           />
-          <MainHeading
+          <IntroHeading
             className={"introduction-h1"}
             text={"Frontend Developer"}
           />
