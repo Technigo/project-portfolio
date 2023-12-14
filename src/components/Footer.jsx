@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Footer.css';
 
 function Footer() {
-  const [text, setText] = useState("Alexandra Meija- Webdeveloper Alexandra Meija- Webdeveloper Alexandra Meija- Webdeveloper Alexandra Meija- Webdeveloper Alexandra Meija- Webdeveloper Alexandra Meija- Webdeveloper Alexandra Meija- Webdeveloper Alexandra Meija- Webdeveloper Alexandra Meija- Webdeveloper");
+  const [text, setText] = useState("🌸Alexandra Meija- Webdeveloper  🌸 Alexandra Meija- Webdeveloper  🌸 Alexandra Meija- Webdeveloper  🌸 Alexandra Meija- Webdeveloper 🌸 Alexandra Meija- Webdeveloper 🌸 Alexandra Meija- Webdeveloper 🌸 Alexandra Meija- Webdeveloper 🌸 Alexandra Meija- Webdeveloper  🌸 Alexandra Meija- Webdeveloper🌸");
 
 
   return (

@@ -15,6 +15,8 @@ function Skills() {
     'Flexbox',
     'Web Accessibility',
     'GitHub',
+    'Zustand',
+    'Mongo DB'
   ]);
 
   const toolbox = [

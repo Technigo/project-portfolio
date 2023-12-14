@@ -14,7 +14,7 @@ import Week9Movie from '../assets/Week9Movie.jpg';
 import Week10Oceanquiz from "../assets/Week10Oceanquiz.jpg";
 import Week12QR from '../assets/Week12QR.jpg';
 import './MyProjects.css';
-import Button from './Button';
+import './Button.css';
 
 
 const projectOrder = [
@@ -35,7 +35,7 @@ const projectOrder = [
 const projectDetails = {
   'project-custom-hooks-qr-code-generator-vite': {
     name: 'Technigo Week 12 QR code generator',
-    description: 'A an app with an oceanquiz',
+    description: 'Make your own qr- code',
     techniques: 'API, Hooks, Lottieanimations, WCAG',
     thumbnail: Week12QR
   },

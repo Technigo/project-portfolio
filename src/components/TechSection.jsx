@@ -15,7 +15,9 @@ function TechSkills() {
     'APIs',
     'Flexbox',
     'Web Accessibility',
-    'GitHub'
+    'GitHub',
+    'Zustand',
+    'Mongo DB'
   ];
 
   // Join the techSkills array into a single string with commas
