@@ -22,7 +22,7 @@ A standout feature of my portfolio is the seamless integration of web APIs, usin
 
 I've paid close attention to responsive design and CSS, utilizing CSS Grid and Flexbox to adapt the layout to various devices. The use of popular CSS frameworks like Tailwind CSS has streamlined my styling process, resulting in a consistent and visually appealing design.
 
-Accessibility has been a priority, following guidelines to make my website usable by all users. Additionally, I've made effective use of comments and code documentation to explain complex logic and ensure maintainable code.
+Accessibility has been a priority, following guidelines to make my website usable by all users. It is among many things validated and keyboard accessible. Additionally, I've made effective use of comments and code documentation to explain complex logic and ensure maintainable code.
 
 This portfolio is just the beginning of my coding journey. As I continue to grow and evolve, my portfolio will reflect my progress and creativity. Feel free to explore my GitHub repository and visit the live deployment link to see my work in action. Happy coding and enjoy the journey with me!
 
