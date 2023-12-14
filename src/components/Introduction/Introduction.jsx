@@ -18,7 +18,7 @@ export const Introduction = () => {
             text={"Hi, I'm Anna Robertsson"}
           />
           <MainHeading
-            className={"introduction-h2"}
+            className={"introduction-h1"}
             text={"Frontend Developer"}
           />
         </div>

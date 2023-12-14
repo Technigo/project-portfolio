@@ -1,7 +1,4 @@
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaSlack } from "react-icons/fa";
-
+import { FaLinkedinIn, FaGithub, FaSlack } from "react-icons/fa";
 import "./SocialMediaLinks.css";
 
 export const SocialMediaLinks = ({ className }) => {
@@ -12,27 +9,30 @@ export const SocialMediaLinks = ({ className }) => {
         target="_blank"
         rel="noopener noreferrer"
         className={"linkedin-button"}
-        alt={`Clickable icon of the LinkedIn logo`}
+        aria-label={`LinkedIn Profile`}
       >
-        <FaLinkedinIn />
+        <FaLinkedinIn aria-hidden="true" />
+        <span className="sr-only">LinkedIn</span>
       </a>
       <a
         href={`https://github.com/AnnaRobertsson`}
         target="_blank"
         rel="noopener noreferrer"
         className={"github-button"}
-        alt={`Clickable icon of the GitHub logo`}
+        aria-label={`GitHub Profile`}
       >
-        <FaGithub />
+        <FaGithub aria-hidden="true" />
+        <span className="sr-only">GitHub</span>
       </a>
       <a
         href={`https://technigo.slack.com/team/U055LN8GBQA`}
         target="_blank"
         rel="noopener noreferrer"
         className={"slack-button"}
-        alt={`Clickable icon of the Slack logo`}
+        aria-label={`Technigo Slack Team`}
       >
-        <FaSlack />
+        <FaSlack aria-hidden="true" />
+        <span className="sr-only">Slack</span>
       </a>
     </div>
   );
