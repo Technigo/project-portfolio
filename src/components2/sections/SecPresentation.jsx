@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import { RoundImg } from "../images/RoundImg";
 import { HeadingH1 } from "../typography/headingH1/HeadingH1"
 import { HeadingH4 } from "../typography/headingH4/HeadingH4";
@@ -9,6 +9,12 @@ const presentationText = `I'm a creative and curious developer with a diverse ba
 import "./sections.css";
 
 export const SecPresentation = () => {
+  const nextSectionRef = useRef(null)
+
+  const handleArrowClick = () => {
+    // Scroll to the next section when the arrow is clicked
+    nextSectionRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <div className="presentation-wrapper">
@@ -28,13 +34,15 @@ export const SecPresentation = () => {
           </div>
           <NormalText className={"presentation-text"} text={presentationText} />
         </div>
-        <div className="arrow-box">
+        <div className="arrow-box"> 
           <img
             src={"/assets/ArrowPositionUp.svg"}
             alt="Arrow that points down to next page"
+            onClick={handleArrowClick}
           />
         </div>
       </div>
+      <div ref={nextSectionRef}></div>
     </>
   );
 };
