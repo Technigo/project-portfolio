@@ -5,7 +5,7 @@ import { NormalTextBig } from "../typography/normalTextBig/NormalTextBig";
 
 export const SecTech = () => {
   const techText =
-    "HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, API:s, mob-programming, pair-programming, Github.";
+    "JavaScript ES6, React, Node.js, MongoDB, HTML, CSS, Flexbox, JSX, React Hooks, Web Accessibility, API:s, GitHub, mob-programming, pair-programming.";
 
   return (
     <>

@@ -8,34 +8,32 @@ import "./sections.css";
 
 export const SecSkills = () => {
   const codeList = [
+    "JavaScript ES6",
+    "React",
+    "Node.js",
+    "MongoDB",
     "HTML5",
     "CSS3",
-    "Adobe Photoshop",
-    "React",
-    "Styled Components",
-    "GitHub",
+    "Styled Components"
   ];
 
   const toolboxList = [
-    "Atom",
-    "Postman",
-    "Adobe Photoshop",
-    "Adobe Illustrator",
+    "GitHub",
     "Figma",
-    "Keynote",
     "Slack",
+    "Postman",
+    "VSCode",
+    "Affinity Designer",
   ];
 
   const upcomingList = ["Node.js"];
 
   const moreList = [
-    "Design Lead",
-    "Branding",
-    "Strategy",
-    "Process design",
-    "Concept development",
     "Agile methodology",
-    "Hyper Island toolbox",
+    "Design skills",
+    "Collaborative work",
+    
+   
   ];
 
   return (
@@ -59,13 +57,13 @@ export const SecSkills = () => {
             <SkillList list={toolboxList} />
           </div>
 
-          <div className="skills-inner-wrapper upcoming-wrapper">
+          {/* <div className="skills-inner-wrapper upcoming-wrapper">
             <HeadingH3
               text={"Upcoming"}
               className={"heading-skill heading-skill-upcoming"}
             />
             <SkillList list={upcomingList} />
-          </div>
+          </div> */}
 
           <div className="skills-inner-wrapper more-wrapper">
             <HeadingH3
