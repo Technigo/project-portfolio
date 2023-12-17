@@ -13,7 +13,7 @@ export const SecPresentation = () => {
 
   const handleArrowClick = () => {
     // Scroll to the next section when the arrow is clicked
-    nextSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
   return (
     <>
@@ -34,15 +34,17 @@ export const SecPresentation = () => {
           </div>
           <NormalText className={"presentation-text"} text={presentationText} />
         </div>
-        <div className="arrow-box"> 
+        <div className="btn-div"><button className="contact-button" onClick={handleArrowClick}>Contact me!</button></div>
+        {/* <div className="arrow-box"> 
           <img
             src={"/assets/ArrowPositionUp.svg"}
             alt="Arrow that points down to next page"
             onClick={handleArrowClick}
           />
-        </div>
+        </div> */}
+       
       </div>
-      <div ref={nextSectionRef}></div>
+      {/* <div ref={nextSectionRef}></div> */}
     </>
   );
 };
