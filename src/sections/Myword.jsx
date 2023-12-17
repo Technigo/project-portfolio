@@ -33,7 +33,7 @@ export const Myword = () => {
   const slideImages = data.mywordList.map((myword) => myword.image);
   return (
     <div className={styles.myword_container}>
-      <h1>My Words</h1>
+      <h1>Published Articles</h1>
 
       <article className={styles.frame}>
         <Slide

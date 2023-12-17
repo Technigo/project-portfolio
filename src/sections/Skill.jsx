@@ -34,6 +34,8 @@ export const Skill = () => {
           <li>Canva</li>
           <li>Adobe Photoshop</li>
           <li>Keynote</li>
+          <li>Trello</li>
+          <li>Cloudinary</li>
         </ul>
       </div>
       <div className={styles.skill_more}>

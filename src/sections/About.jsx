@@ -14,7 +14,9 @@ export const About = () => {
 
   const toggleMusic = () => {
     const audio = audioRef.current; // Get the audio element from the ref
+
     audio.loop = true; // Set the audio to loop
+
     if (isPlaying) {
       audio.pause();
     } else {
@@ -22,6 +24,7 @@ export const About = () => {
     }
     setIsPlaying(!isPlaying);
   };
+
   return (
     <div className={styles.about} aria-label="About Huadan Zhu">
       <div
