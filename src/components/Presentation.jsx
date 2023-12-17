@@ -11,7 +11,6 @@ function Presentation() {
   return (
     <div className="presentation">
       <h2 className="presentationh2">My words</h2>
-      <p className="presentation-paragraph">{presentationText}</p>
       <div className="articles-grid">
         <ArticleCard title="Article 1" description="Content to come" imageUrl={Article1} />
         {/* Replace the path/to/image2.jpg with the appropriate image URL */}
