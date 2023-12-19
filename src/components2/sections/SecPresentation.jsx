@@ -34,7 +34,7 @@ export const SecPresentation = () => {
           </div>
           <NormalText className={"presentation-text"} text={presentationText} />
         </div>
-        <div className="btn-div"><button className="contact-button" onClick={handleArrowClick}>Contact me!</button></div>
+        <div className="btn-div"><button className="contact-button" onClick={handleArrowClick}>Contact</button></div>
         {/* <div className="arrow-box"> 
           <img
             src={"/assets/ArrowPositionUp.svg"}
