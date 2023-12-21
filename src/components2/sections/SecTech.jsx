@@ -10,8 +10,10 @@ export const SecTech = () => {
   return (
     <>
       <div className="tech-wrapper">
+        <div className="tech-inner-wrapper">
         <HeadingH1 text="Tech" className="tech-h1" />
         <NormalTextBig className={"tech-normal-big-text"} text={techText} />
+        </div>
       </div>
     </>
   );
