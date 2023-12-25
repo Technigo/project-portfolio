@@ -10,11 +10,11 @@ export const Skills = () => {
                 <div className="code">
                     <h3>Code</h3>
                     <ul>
+                        <li>JavaScript ES6</li>
+                        <li>React</li>
                         <li>HTML5</li>
                         <li>CSS3</li>
-                        <li>Javascript ES6</li>
-                        <li>React</li>
-                        <li>.</li>
+                        <li>Node.js</li>
                     </ul>
                 </div>
                 <div className="toolbox">
@@ -30,11 +30,11 @@ export const Skills = () => {
                 <div className="upcoming">
                     <h3>Upcoming</h3>
                     <ul>
-                        <li>Node.js</li>
-                        <li>UX</li>
-                        <li>.</li>
-                        <li>.</li>
-                        <li>.</li>
+                        <li>Wordpress</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
                     </ul>
                 </div>
                 <div className="more">
@@ -42,8 +42,8 @@ export const Skills = () => {
                     <ul>
                         <li>Agile</li>
                         <li>Strategy</li>
-                        <li>Manager</li>
-                        <li>Diversity</li>
+                        <li>Communication</li>
+                        <li>Collaboration</li>
                         <li>Health dev.</li>
                     </ul>
                 </div></div>

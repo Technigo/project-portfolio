@@ -13,7 +13,7 @@ export const Hello = () => {
                         <h3>Hi, I'm Idah Collin</h3>
                         <h1>Frontend Developer</h1> </div>
                     <div className="profile-photo"><ProfilePhoto /> </div>
-                    <div className="intro"><p> I'm a junior frontend developer with a background as a Health developer, project leader and manager. I create user-friendly applications and solve complex issues. When I'm not coding, being out-doors is how I recharge. A hike, skiing or just enjoying time with family and friends are what gives me energy!</p></div>
+                    <div className="intro"><p> I'm a frontend developer with a background as a Health developer, project leader and manager. I create user-friendly applications and solve complex issues. When I'm not coding, being out-doors is how I recharge. A hike, skiing or just enjoying time with family and friends are what gives me energy! </p></div>
                 </div>
             </div>
             <div className="arrow">

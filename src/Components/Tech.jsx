@@ -6,7 +6,7 @@ export const Tech = () => {
     return (
         <div className="tech-wrap">
             <h1>Tech</h1>
-            <p>HTML, CSS, Flexbox, JavaScript, JSX, React, React Hooks, Web Accessibility, APIs, mob-programming, pair-programming, GitHub (Node.js, Mongo DB)</p>
+            <p>React, JavaScript, JSX, HTML, CSS, React Hooks, Flexbox, Web Accessibility, APIs, GitHub, Node.js, Mongo DB, mob-programming, pair-programming </p>
         </div>
     )
 }
