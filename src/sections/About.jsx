@@ -6,10 +6,11 @@ import ReactTypingEffect from "react-typing-effect";
 import { Link } from "react-scroll";
 import { useState, useRef } from "react";
 import { ContactIcon } from "../components/ContactIcon";
-
+import { useTranslation } from "react-i18next";
 export const About = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(new Audio(jazz));
+  const { t } = useTranslation();
   //use the useRef hook to create a persistent reference to the Audio object. This ensures that the same audio element is used across renders.
 
   const toggleMusic = () => {
@@ -37,12 +38,10 @@ export const About = () => {
         <img src={music} alt="music record jazz" />
       </div>
       <div className={styles.name}>
-        <h3 className={styles.miko_name}>
-          👋 Hi! My name is Huadan Zhu (Miko)
-        </h3>
+        <h3 className={styles.miko_name}>👋 {t("about.name")}</h3>
         <h1 className={styles.developer}>
           <ReactTypingEffect
-            text={[" Full-Stack Developer", "Front-end Developer"]}
+            text={[t("about.developer.0"), t("about.developer.1")]}
             speed="100"
             typingDelay="200"
             eraseDelay="200"
@@ -52,18 +51,10 @@ export const About = () => {
       <div className={styles.about_main_wrapper}>
         <div className={styles.img_place_container}>
           <img src={miko} alt="Huadan's image" />
-          <p className={styles.place}>Stockholm, Sweden</p>
+          <p className={styles.place}>{t("about.place")}</p>
         </div>
         <article className={styles.introduction}>
-          Huadan is a talented developer who is embarking on a career transition
-          from the field of HRM to web development. With a master's degree in
-          HRM and seven years of experience in human resources management, I
-          have developed strong skills in adaptability, a growth mindset, and
-          the confidence to tackle new challenges. As a web developer, I am
-          excited to leverage these qualities to solve complex problems,
-          continue exploring new skills, and further improve as a developer. My
-          background in HRM provides me with a unique perspective that I believe
-          will make a positive contribution to the world of web development.
+          {t("about.introduction")}
         </article>
       </div>
 

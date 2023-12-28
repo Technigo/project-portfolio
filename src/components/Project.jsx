@@ -1,13 +1,18 @@
 import github from "/icons/github-button.png";
 import liveDemo from "/icons/LiveDemo.png";
 import styles from "../styling/projects.module.css";
-import data from "../project.json";
+import data from "../translations/en.json";
+import { useTranslation } from "react-i18next";
+const projectLists = data.projects.project;
+console.log(projectLists);
 export const Project = () => {
-  const projectLists = data.projects;
+  const { t } = useTranslation();
+
+  const projectList = t("projects.project", { returnObjects: true });
 
   return (
     <div className={styles.project_wrapper}>
-      {projectLists.map((project) => (
+      {projectList.map((project) => (
         <figure className={styles.project_frame} key={project.id}>
           <figcaption>
             <div className={styles.project}>
@@ -18,9 +23,9 @@ export const Project = () => {
               />
               <div className={styles.project_text_wrapper}>
                 <h1 className={styles.project_title}>
-                  {project.project_title}
+                  {t(project.project_title)}
                 </h1>
-                .<p className={styles.project_content}>{project.content}</p>
+                <p className={styles.project_content}>{t(project.content)}</p>
                 <div className={styles.tags}>
                   {project.tags.map((tag, index) => (
                     <span key={index}>{tag}</span>
@@ -35,7 +40,7 @@ export const Project = () => {
                   >
                     <button type="button">
                       <img src={github} alt="github image" />
-                      <span>{project.button[0]}</span>
+                      <span>{t(project.button[0])}</span>
                     </button>
                   </a>
                   <a
@@ -45,7 +50,7 @@ export const Project = () => {
                   >
                     <button type="button">
                       <img src={liveDemo} alt="Live Demo Image" />
-                      <span>{project.button[1]}</span>
+                      <span>{t(project.button[1])}</span>
                     </button>
                   </a>
                 </div>

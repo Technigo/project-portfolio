@@ -6,8 +6,16 @@ import { Skill } from "../sections/Skill";
 import { Myword } from "./Myword";
 import { Contact } from "./Contact";
 import { Projects } from "./Projects";
+import global from "/icons/global.svg";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <>
       <header className={styles.header}>
@@ -21,7 +29,7 @@ export const Navbar = () => {
                 to="about"
                 aria-label="Navigate to About section"
               >
-                ABOUT
+                {t("navbar.0")}
               </Link>
             </li>
 
@@ -33,7 +41,7 @@ export const Navbar = () => {
                 to="projects"
                 aria-label="Navigate to Project section"
               >
-                PROJECTS
+                {t("navbar.1")}
               </Link>
             </li>
             <li>
@@ -44,7 +52,7 @@ export const Navbar = () => {
                 to="skills"
                 aria-label="Navigate to Projects section"
               >
-                SKILLS
+                {t("navbar.2")}
               </Link>
             </li>
             <li>
@@ -55,7 +63,7 @@ export const Navbar = () => {
                 to="mywords"
                 aria-label="Navigate to Mywords section"
               >
-                MY WORDS
+                {t("navbar.3")}
               </Link>
             </li>
 
@@ -67,8 +75,23 @@ export const Navbar = () => {
                 to="contact"
                 aria-label="Navigate to Contact section"
               >
-                LES'S TALK
+                {t("navbar.4")}
               </Link>
+            </li>
+            <li>
+              {/* {t("navbar.5")} */}
+              <img
+                src={global}
+                alt="language selection icon"
+                className={styles.global}
+              />
+              <select
+                className={styles.language}
+                onChange={(e) => changeLanguage(e.target.value)}
+              >
+                <option value="en">English</option>
+                <option value="se">Swedish</option>
+              </select>
             </li>
           </ul>
         </nav>
