@@ -1,11 +1,13 @@
 import React from 'react';
-import Headline from './Components/Headline'; // Import the Headline component without curly braces
+import Headline from './Components/Headline'; 
+import Tech from './Components/Tech';
 import './App.css';
 
 const App = () => {
   return (
     <>
       <Headline />
+      <Tech />
     </>
   );
 };
