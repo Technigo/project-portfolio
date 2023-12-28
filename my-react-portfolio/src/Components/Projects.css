@@ -47,7 +47,8 @@
 }
 
 .tech-tags span {
-  background-color: #e7e7e7;
+  background-color: black;
+  color: white;
   padding: 5px 10px;
   margin-right: 10px;
   border-radius: 5px;
@@ -57,17 +58,38 @@
   text-align: left;
 }
 
-.project-actions button {
-  background-color: #0056b3;
-  color: white;
-  border: none;
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 20px;
-  margin: 0 10px;
+  border: none;
+  border-radius: 20px; /* Adjust as needed to match your design */
+  background-color: #e0e0e0; /* This is a grey background, adjust the color as needed */
+  color: #333; /* Text color */
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
+  text-decoration: none; /* Remove underline from links */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+  margin: 0 5px; /* Spacing between buttons */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.project-actions button:hover {
-  background-color: #003d82;
+.icon-button:hover {
+  background-color: #d0d0d0; /* Slightly darker on hover */
 }
+
+.icon-button .icon {
+  margin-right: 10px; /* Space between icon and text */
+  width: 30px; /* Icon size */
+  height: 30px; /* Maintain the aspect ratio of the icon */
+  fill: currentColor; /* Icon color inherits from text color */
+}
+
+/* If your icons are SVGs and you want to change the color on hover */
+.icon-button:hover .icon {
+  fill: #333; /* Darker icon color on hover */
+}
+
+
 

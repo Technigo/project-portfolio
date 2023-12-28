@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Projects.css';
 import projectsData from './projects.json';
-import chatbotImage from '../assets/chatbot-image.jpg'; 
-import weatherAppImage from '../assets/weather-app-image.jpg'; 
+import chatbotImage from '../assets/chatbot-image.jpg';
+import weatherAppImage from '../assets/weather-app-image.jpg';
+import githubIcon from '../assets/github.jpg'; // Update path if necessary
+import liveDemoIcon from '../assets/Live Demo.jpg'; // Update path if necessary
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -43,12 +45,18 @@ const Projects = () => {
             <div className="project-actions">
               {project.netlify && (
                 <a href={project.netlify} target="_blank" rel="noopener noreferrer">
-                  <button>Live demo</button>
+                  <button className="icon-button live-demo-button">
+                    <img className="icon" src={liveDemoIcon} alt="live demo icon" />
+                    Live demo
+                  </button>
                 </a>
               )}
               {project.github && (
                 <a href={project.github} target="_blank" rel="noopener noreferrer">
-                  <button>View the code</button>
+                  <button className="icon-button view-code-button">
+                    <img className="icon" src={githubIcon} alt="github icon" />
+                    View the code
+                  </button>
                 </a>
               )}
             </div>
@@ -60,4 +68,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
