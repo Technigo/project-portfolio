@@ -1,23 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import './Projects.css';
-import projectsData from './projects.json'; 
+import projectsData from './projects.json';
+import chatbotImage from '../assets/chatbot-image.jpg'; 
+import weatherAppImage from '../assets/weather-app-image.jpg'; 
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    setProjects(projectsData.projects);
-  }, []);
+    // Manually assign images to projects based on the project name
+    const updatedProjects = projectsData.projects.map(project => {
+      switch (project.name) {
+        case "Chatbot":
+          return { ...project, image: chatbotImage };
+        case "Weather app":
+          return { ...project, image: weatherAppImage };
+        default:
+          return project; // If no image is matched, the original project data is returned
+      }
+    });
 
-  // Helper function to require images dynamically
-  const getImage = imageName => {
-    try {
-      return require(`../assets/${imageName}`);
-    } catch (err) {
-      console.error(err);
-      return ''; // Return a fallback image or empty string if the require fails
-    }
-  };
+    setProjects(updatedProjects);
+  }, []);
 
   return (
     <div className="projects-container">
@@ -25,8 +29,8 @@ const Projects = () => {
       {projects.map((project, index) => (
         <div className="project" key={index}>
           <div className="image-container">
-            {/* Use the getImage function to dynamically load images */}
-            <img src={getImage(project.image)} alt={project.name} />
+            {/* Display the image from the project data */}
+            <img src={project.image} alt={project.name} />
           </div>
           <div className="project-content">
             <h2>{project.name}</h2>
