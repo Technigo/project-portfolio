@@ -1,38 +1,59 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Projects.css';
-import chatbotImage from '../assets/chatbot-image.jpg';
-import weatherAppImage from '../assets/weather-app-image.jpg';
+import projectsData from './projects.json'; 
 
 const Projects = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    setProjects(projectsData.projects);
+  }, []);
+
+  // Helper function to require images dynamically
+  const getImage = imageName => {
+    try {
+      return require(`../assets/${imageName}`);
+    } catch (err) {
+      console.error(err);
+      return ''; // Return a fallback image or empty string if the require fails
+    }
+  };
+
   return (
     <div className="projects-container">
       <h1>Featured Projects</h1>
-      <div className="project">
-        <img src={chatbotImage} alt="Chatbot" />
-        <h2>Chatbot built in javascript</h2>
-        <p>The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.</p>
-        <div className="tech-tags">
-          <span>HTML5</span> <span>CSS3</span> <span>React</span> <span>Node</span>
+      {projects.map((project, index) => (
+        <div className="project" key={index}>
+          <div className="image-container">
+            {/* Use the getImage function to dynamically load images */}
+            <img src={getImage(project.image)} alt={project.name} />
+          </div>
+          <div className="project-content">
+            <h2>{project.name}</h2>
+            <p>{project.description}</p>
+            <div className="tech-tags">
+              {project.tags.map((tag, tagIndex) => (
+                <span key={tagIndex}>{tag}</span>
+              ))}
+            </div>
+            <div className="project-actions">
+              {project.netlify && (
+                <a href={project.netlify} target="_blank" rel="noopener noreferrer">
+                  <button>Live demo</button>
+                </a>
+              )}
+              {project.github && (
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <button>View the code</button>
+                </a>
+              )}
+            </div>
+          </div>
         </div>
-        <div className="project-actions">
-          <button>Live demo</button>
-          <button>View the code</button>
-        </div>
-      </div>
-      <div className="project">
-        <img src={weatherAppImage} alt="Weather app" />
-        <h2>Weather app</h2>
-        <p>The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.</p>
-        <div className="tech-tags">
-          <span>HTML5</span> <span>CSS3</span> <span>React</span> <span>Node</span>
-        </div>
-        <div className="project-actions">
-          <button>Live demo</button>
-          <button>View the code</button>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };
 
 export default Projects;
+
