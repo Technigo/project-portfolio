@@ -5,6 +5,7 @@ import Projects from './Components/Projects';
 import Words from './Components/Words';
 import Skills from './Components/Skills';
 import Talk from './Components/Talk';
+import Footer from './Components/Footer';
 import './App.css';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Words />
       <Skills />
       <Talk />
+      <Footer />
     </>
   );
 };

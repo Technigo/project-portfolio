@@ -2,7 +2,7 @@ import React from 'react';
 import './Words.css';
 import article1Image from '../assets/article1.jpg';
 import article2Image from '../assets/article2.jpg';
-import wrigglyLine from '../assets/path.png'; // Imported wriggly line image
+import wrigglyLine from '../assets/path.png'; 
 
 const Words = () => {
   return (
