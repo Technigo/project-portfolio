@@ -2,12 +2,12 @@ import React from 'react';
 import './Words.css';
 import article1Image from '../assets/article1.jpg';
 import article2Image from '../assets/article2.jpg';
-import wrigglyLine from '../assets/path.png'; 
+import divider from '../assets/divider.jpg'; 
 
 const Words = () => {
   return (
     <div className="words-container">
-      <div className="wriggly-line" style={{ backgroundImage: `url(${wrigglyLine})` }}></div>
+      <img className="divider" src={divider} alt="Divider" />
       <h1>My words</h1>
       <div className="articles-container">
         <div className="article">
