@@ -1,26 +1,27 @@
-import React, { useState } from 'react';
-import './tailwind.css'
-import Contact from './components/Contact'; // Import your Contact component
-import MyProjects from './components/MyProjects'; // Import your MyProject component
-import Presentation from './components/Presentation'; // Import your Presentation component
-import Skills from './components/Skills'; // Import your Skills component
-import TechSection from './components/TechSection'; // Import your TechSkills component
-import TopSection from './components/TopSection'; // Import your TopSection component
+import React, { useRef } from 'react';
+import './tailwind.css';
+import Contact from './components/Contact';
+import MyProjects from './components/MyProjects';
+import Presentation from './components/Presentation';
+import Skills from './components/Skills';
+import TechSection from './components/TechSection';
+import TopSection from './components/TopSection';
 import Footer from './components/Footer';
 
 function App() {
+  const contactRef = useRef(null); // Create a ref for the Contact component
+
   return (
     <div className="container">
-      <TopSection />
+      <TopSection scrollToContact={() => contactRef.current.scrollIntoView({ behavior: 'smooth' })} />
       <TechSection />
       <MyProjects />
-      <Presentation />
+  {/* <Presentation /> */} 
       <Skills />
-      <Contact />
+      <Contact ref={contactRef} /> {/* Attach the ref to the Contact component */}
       <Footer />
     </div>
   );
 }
 
 export default App;
-//Add the presentation when I have something to add there//
