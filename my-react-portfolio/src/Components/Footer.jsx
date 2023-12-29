@@ -6,7 +6,7 @@ const Footer = () => {
     return(
         <div className="footer">
             <p className="moving-text">
-                Linnea Johansson  ·  Frontend Developer     
+                Linnea Johansson  ·  Frontend Developer  
             </p>
         </div>
     );
