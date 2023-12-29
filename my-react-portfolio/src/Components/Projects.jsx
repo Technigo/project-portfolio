@@ -3,8 +3,8 @@ import './Projects.css';
 import projectsData from './projects.json';
 import chatbotImage from '../assets/chatbot-image.jpg';
 import weatherAppImage from '../assets/weather-app-image.jpg';
-import githubIcon from '../assets/github.jpg'; // Update path if necessary
-import liveDemoIcon from '../assets/Live Demo.jpg'; // Update path if necessary
+import githubIcon from '../assets/github.jpg'; 
+import liveDemoIcon from '../assets/Live Demo.jpg'; 
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
