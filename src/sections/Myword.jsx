@@ -1,8 +1,11 @@
 import wavy from "/images/divider.png";
 import styles from "../styling/myword.module.css";
-import data from "../project.json";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import { useTranslation } from "react-i18next";
+import data from "../translations/en.json";
+
+const list = data.mywordList.article;
 
 const buttonStyle = {
   border: "none",
@@ -30,10 +33,13 @@ const properties = {
   ),
 };
 export const Myword = () => {
-  const slideImages = data.mywordList.map((myword) => myword.image);
+  const { t } = useTranslation();
+  const articles = t("mywordList.article", { returnObjects: true });
+  const slideImages = list.map((myword) => myword.image);
+
   return (
     <div className={styles.myword_container}>
-      <h1>Published Articles</h1>
+      <h1>{t("mywordList.title")}</h1>
 
       <article className={styles.frame}>
         <Slide
@@ -44,12 +50,12 @@ export const Myword = () => {
           autoplay={false}
           {...properties}
         >
-          {data.mywordList.map((myword) => (
+          {articles.map((myword) => (
             <div key={myword.id} className={styles.article_wrapper}>
               <img src={myword.image} alt="article's picture" />
-              <p>{myword.time}</p>
-              <h3>{myword.title}</h3>
-              <h5>{myword.text}</h5>
+              <p>{t(myword.time)}</p>
+              <h3>{t(myword.title)}</h3>
+              <h5>{t(myword.text)}</h5>
               <a href={myword.link} target="_blank" rel="noopener noreferrer">
                 <button type="button">
                   <svg
@@ -64,7 +70,7 @@ export const Myword = () => {
                       fill="currentColor"
                     />
                   </svg>
-                  Read article
+                  {t("mywordList.button")}
                 </button>
               </a>
             </div>

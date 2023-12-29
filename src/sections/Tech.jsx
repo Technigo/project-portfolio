@@ -1,5 +1,5 @@
 import styles from "../styling/tech.module.css";
-import data from "../project.json";
+import data from "../translations/en.json";
 
 export const Tech = () => {
   return (

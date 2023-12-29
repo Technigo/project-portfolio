@@ -4,7 +4,7 @@ import styles from "../styling/projects.module.css";
 import data from "../translations/en.json";
 import { useTranslation } from "react-i18next";
 const projectLists = data.projects.project;
-console.log(projectLists);
+
 export const Project = () => {
   const { t } = useTranslation();
 
