@@ -3,6 +3,12 @@ import './Projects.css';
 import projectsData from './projects.json';
 import chatbotImage from '../assets/chatbot-image.jpg';
 import weatherAppImage from '../assets/weather-app-image.jpg';
+import guessWhoGameImage from '../assets/guess-who-game-image.jpg';
+import yogaImage from '../assets/yoga.jpg';
+import movieImage from '../assets/movie.jpg';
+import musicImage from '../assets/music.jpg';
+import thoughtsImage from '../assets/thoughts.jpg';
+import fitnessImage from '../assets/fitness.jpg';
 import githubIcon from '../assets/github.jpg'; 
 import liveDemoIcon from '../assets/Live Demo.jpg'; 
 
@@ -10,15 +16,26 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    // Manually assign images to projects based on the project name
     const updatedProjects = projectsData.projects.map(project => {
       switch (project.name) {
         case "Chatbot":
           return { ...project, image: chatbotImage };
         case "Weather app":
           return { ...project, image: weatherAppImage };
+        case "Serenity Yoga":
+          return { ...project, image: yogaImage };
+        case "Guess Who, the game":
+          return { ...project, image: guessWhoGameImage };
+        case "Movies":
+          return { ...project, image: movieImage };
+        case "Music releases":
+          return { ...project, image: musicImage };
+        case "Happy Thoughts":
+          return { ...project, image: thoughtsImage };
+        case "Fitness survey":
+          return { ...project, image: fitnessImage };
         default:
-          return project; // If no image is matched, the original project data is returned
+          return project; 
       }
     });
 
