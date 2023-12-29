@@ -1,6 +1,6 @@
 import React from 'react';
 import linneaImage from '../assets/Linnea.jpg';
-import arrowImage from '../assets/arrow.png';
+import arrowImage from '../assets/icons8-arrow-down-100.png';
 import './Headline.css';
 
 const Headline = () => {
