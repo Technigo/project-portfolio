@@ -22,6 +22,6 @@ This portfolio is just the beginning of my coding journey. As I continue to grow
 
 Through this project, I, Inna, have learned invaluable lessons in React development. I now understand the power of components and props in creating a modular and organized codebase. React hooks, especially useState, have allowed me to manage state and interactivity effectively. Integrating web APIs taught me the importance of data fetching and dynamic content display, keeping my portfolio up-to-date effortlessly. Additionally, focusing on accessibility has made me more aware of creating inclusive user experiences. Overall, this project has honed my skills in clean coding practices and emphasized the significance of continuous testing and deployment for a successful web application. The experience has been enriching, and I am excited to apply these lessons in future projects to further enhance my coding journey.
 
-## Screenshots
+<!-- ## Screenshots -->
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<!-- ![App Screenshot](/public/assets/Skärmavbild 2023-12-30 kl. 11.57.36.png) -->
