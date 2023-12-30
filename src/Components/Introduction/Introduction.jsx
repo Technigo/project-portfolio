@@ -1,8 +1,7 @@
 import "./Introduction.css";
 
 export const Introduction = () => {
-  const introText =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+  const introText = `And a passionate, driven individual who is currently embarking on a transformative journey from a background in social work to a promising career in web development. My dedication to making a positive impact on people's lives and communities has led me to explore new horizons. My career transition represents more than just a change; it is a new chapter in my journey to empower others through technology. I look forward to leveraging my diverse background in social work to create web solutions that address real-world problems, enhance accessibility, and foster unity among different communities.`;
 
   return (
     <section className="intro-section">

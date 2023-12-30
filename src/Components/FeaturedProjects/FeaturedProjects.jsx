@@ -13,7 +13,7 @@ export const FeaturedProjects = () => {
     // Split the name by hyphens and capitalize each word
     const words = name.split("-");
     const capitalizedWords = words.map(
-      (word) => word.charAt(0).toUpperCase() + word.slice(1)
+      (word) => word.charAt(0).toUpperCase() + word.slice(1) 
     );
 
     // Join the capitalized words with spaces
@@ -24,6 +24,11 @@ export const FeaturedProjects = () => {
   const getImageUrlForRepo = (repoName) => {
     const matchedRepo = repoImages.find((repo) => repo.repoName === repoName);
     return matchedRepo ? matchedRepo.imageUrl : ""; // Return the image URL if found, otherwise an empty string
+  };
+
+  const getLiveLinkRepo = (repoName) => {
+    const matchRepo = repoImages.find((repo) => repo.repoName === repoName);
+    return matchRepo ? matchRepo.repoLive : "";
   };
 
   useEffect(() => {
@@ -42,6 +47,7 @@ export const FeaturedProjects = () => {
             html_url: repo.html_url,
             description: repo.description || defaultDescription,
             imageUrl: getImageUrlForRepo(repo.name), // Fetch the image URL
+            liveLink: getLiveLinkRepo(repo.name)
           }));
   
         setRepos(formattedRepos);
@@ -83,7 +89,7 @@ export const FeaturedProjects = () => {
               <div className="repo-button-wrapper">
                 <a
                   className="button-text"
-                  href="https://app.netlify.com/teams/innakokic/sites"
+                  href={repo.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
