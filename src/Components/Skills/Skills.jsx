@@ -39,7 +39,7 @@ export const Skills = () => {
 
           <div className="text-box">
             <h2 className="skill-headline upcoming-headline">Upcoming</h2>
-            <p className="skills-p">PHP</p>
+            <p className="skills-p"></p>
           </div>
 
         </div>
