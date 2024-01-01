@@ -27,7 +27,7 @@ export const blogsData = [
     title: "How to make a carousel from scratch as a React Beginner",
     introText: "Making a carousel as a beginner??",
     text: "I heard that making a carousel from scratch was difficult before, and I wondered if that was true. I did some research about it and found that actually, it is fairly easy. Moreover, it is lighter than using a library, so why not? So I would like to share how to make one from scratch...",
-    url: "https://medium.com/@sito6496t/how-to-make-your-website-internationalized-without-react-i18n-0525f74d2530",
+    url: "https://medium.com/@sito6496t/how-to-make-a-carousel-from-scratch-as-a-react-beginner-a58250aaf1ab",
     imagePath: "https://miro.medium.com/v2/resize:fit:4800/format:webp/0*yz46iW8nHamHOvVj",
     imageDescription: "Cover Image of this Article",
   },

@@ -1,5 +1,16 @@
 export const projectsData = [
   {
+    imagePath: "/images/gengo.webp",
+    title: "Gengo",
+    text: {
+      en: "This is a flashcard fullstack app. I tried to go as far as I can with technologies that are new to me (such as, Recoil, React Query, zod ...) and more advanced archtecture that is a feature based archtecture. Moreover, as my final goal is to build this app with Next App Router with SSR, so that is now under construction!",
+      ja: "フラッシュカードのアプリです。Coding bootcampのファイナルプロジェクトとして作りました。バックエンドは MongoDB, Express, Mongoose, Node.jsで、フロントエンドは Reactで作っています。私は、どうしてもこのプロジェクトを　Next.jsで作りたいと考えるので、現在作成中です。",
+    },
+    skills: ["Tailwind", "TypeScript", "React", "React-Query", "Recoil", "MongoDB", "Express"],
+    gitUrl: "https://github.com/sansan-sakura/GENGO",
+    demoUrl: "https://gengo.netlify.app/",
+  },
+  {
     imagePath: "/images/saku-movie.webp",
     title: "Saku Movie",
     text: {
@@ -32,17 +43,16 @@ export const projectsData = [
     gitUrl: "https://github.com/sansan-sakura/SaKu-Trivia",
     demoUrl: "https://saku-trivia.netlify.app/",
   },
-
   {
-    imagePath: "/images/legz.webp",
-    title: "Legz",
+    imagePath: "/images/berlin.webp",
+    title: "Berlin Berlin",
     text: {
-      en: "This project is a collaboration with a UX/UI student from Technigo. This design was created by Thomas Read. ",
-      ja: "UX/UIのTechnigoの学生とのコラボ作品です。できるだけデザイナーの意向に添えるように、細かいところまで再現しました。",
+      en: "I made this site out of my love for Berlin. It collects news about Berlin.",
+      ja: "ベルリンが好きなので、ベルリンらしいものを作ろうと思いこのサイトを作りました。ベルリンのニュースを集めてあります。",
     },
-    skills: ["React", "Content API", "SCSS"],
-    gitUrl: "https://github.com/sansan-sakura/project-Legz",
-    demoUrl: "https://legz.netlify.app/",
+    skills: ["HTML", "CSS"],
+    gitUrl: "https://github.com/sansan-sakura/project-news-site",
+    demoUrl: "https://tourmaline-cendol-e09256.netlify.app/",
   },
 ];
 
@@ -125,4 +135,15 @@ export const projectsData = [
 //   skills: ["HTML", "CSS"],
 //   gitUrl: "https://github.com/sansan-sakura/project-news-site",
 //   demoUrl: "https://tourmaline-cendol-e09256.netlify.app/",
+// },
+// {
+//   imagePath: "/images/legz.webp",
+//   title: "Legz",
+//   text: {
+//     en: "This project is a collaboration with a UX/UI student from Technigo. This design was created by Thomas Read. ",
+//     ja: "UX/UIのTechnigoの学生とのコラボ作品です。できるだけデザイナーの意向に添えるように、細かいところまで再現しました。",
+//   },
+//   skills: ["React", "Content API", "SCSS"],
+//   gitUrl: "https://github.com/sansan-sakura/project-Legz",
+//   demoUrl: "https://legz.netlify.app/",
 // },
