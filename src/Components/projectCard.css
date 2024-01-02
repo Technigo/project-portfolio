@@ -71,3 +71,51 @@
 .project-content {
   margin-left: 20px;
 }
+
+@media (max-width: 600px) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .square {
+    border-bottom: 1em solid #0b24f5;
+    border-left: 1em solid #0b24f5;
+    width: 26em;
+    height: 15em;
+    object-fit: cover;
+  }
+  .project-content {
+    margin: 2em 0 0 0;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tag-container {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  @media (max-width: 600px) {
+    .btn-live,
+    .btn-github {
+      display: flex;
+      padding-left: 1em;
+      width: 13em;
+      font-size: 1em;
+      justify-content: flex-start;
+    }
+
+    .divider {
+      background-image: url(../assets/path.svg);
+      position: relative;
+      top: 12px;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+    }
+  }
+}

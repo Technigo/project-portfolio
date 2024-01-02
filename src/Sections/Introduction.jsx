@@ -1,15 +1,32 @@
 import Headlines from "../Components/Headlines";
 import Profile from "../Components/Profile";
+import profileImg from "../assets/profile.jpg";
+import arrow from "../assets/arrow.json";
+import Lottie from "lottie-react";
 import "/src/index.css";
 
 export const Introduction = () => {
+  const style = { height: 100 };
   return (
     <div className="intro-wrapper">
-      <h1>Hi, I'm Janice</h1>
-      <Headlines title="Frontend Developer" />
       <div className="intro">
-        <Profile />
-        <p>A self-initiative team worker and ready for further challenges.</p>
+        <h1 className="intro-subtitle">
+          Hi, I'm Janice
+          <h1 className="job-title">Frontend Developer</h1>
+        </h1>
+        <Profile source={profileImg} />
+      </div>
+      <p>
+        I am a dynamic professional with a marketing background and four years
+        in retail management. Motivated by a deep interest in technology, I've
+        expanded my skills into project management, UX design, and front-end
+        development. Known for my self-initiative, I excel in team environments
+        and am dedicated to staying ahead through continuous learning. My unique
+        blend of experience, curiosity, and adaptability positions me as an
+        enthusiastic contributor to the dynamic realm of full-stack design.
+      </p>
+      <div className="arrow">
+        <Lottie animationData={arrow} style={style} />
       </div>
     </div>
   );

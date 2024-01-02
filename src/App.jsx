@@ -4,6 +4,7 @@ import FeaturedProjects from "./Sections/FeaturedProjects";
 import MyWords from "./Sections/MyWords";
 import Skills from "./Sections/Skills";
 import Contact from "./Sections/Contact";
+
 import "./index.css";
 
 export const App = () => {

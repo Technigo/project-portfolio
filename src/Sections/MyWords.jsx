@@ -1,5 +1,6 @@
 import ArticleList from "../Components/ArticleList";
 import Headlines from "../Components/Headlines";
+
 const MyWords = () => {
   return (
     <div className="mywords-bg page-grid">
