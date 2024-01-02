@@ -1,5 +1,5 @@
 import ProjectCard from "../Components/ProjectCard";
-import projects from "../Sections/projects.json";
+import projects from "../projects.json";
 
 const ProjectList = () => {
   console.log(projects);
