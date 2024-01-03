@@ -3,7 +3,7 @@ import "./featuredprojects.css";
 
 export const FeaturedProjects = ({ projectData }) => {
   let repoData = projectData;
-  // console.log(repoData);
+  console.log(repoData);
   return (
     <div className="featured-projects-container">
       <div className="featured-projects">

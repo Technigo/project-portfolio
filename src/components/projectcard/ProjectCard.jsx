@@ -44,6 +44,10 @@ export const ProjectCard = ({
       break;
   }
 
+  const handleClick = (link) => {
+    window.open(link, "_blank");
+  };
+
   const transformString = (str) => {
     // Split the string into an array of words
     const words = str.split("-");
@@ -72,11 +76,11 @@ export const ProjectCard = ({
           ))}
         </div>
         <div className="buttons">
-          <button className="deployedBtn" href={deployedLink}>
+          <button className="deployedBtn" onClick={handleClick(deployedLink)}>
             <img src={demodark} alt="globe-icon-dark" />
             Live Demo
           </button>
-          <button className="gitBtn" href={gitLink}>
+          <button className="gitBtn" onClick={handleClick(gitLink)}>
             <img src={githubdark} alt="github-icon-dark" />
             View the code
           </button>
