@@ -13,10 +13,12 @@ export const ArticleCard = ({
     <div className="article-card">
       <img src={articleImage} alt={articleTitle} className="article-image" />
       <div className="date-and-title">
-        <ArticleMonth
-          articlePublished={monthPublished}
-          className="article-month"
-        />
+        <div className="month-tag">
+          <ArticleMonth
+            articlePublished={monthPublished}
+            className="article-month"
+          />
+        </div>
         <h3 className="article-title">{articleTitle}</h3>
       </div>
       <p className="article-intro">{articleIntro}</p>
