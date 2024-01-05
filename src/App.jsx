@@ -8,6 +8,9 @@ import TechSection from './components/TechSection';
 import TopSection from './components/TopSection';
 import Footer from './components/Footer';
 
+
+
+
 function App() {
   const contactRef = useRef(null); // Create a ref for the Contact component
 
@@ -16,7 +19,7 @@ function App() {
       <TopSection scrollToContact={() => contactRef.current.scrollIntoView({ behavior: 'smooth' })} />
       <TechSection />
       <MyProjects />
-  {/* <Presentation /> */} 
+  <Presentation /> 
       <Skills />
       <Contact ref={contactRef} /> {/* Attach the ref to the Contact component */}
       <Footer />

@@ -3,6 +3,7 @@ import './Presentation.css';
 import ArticleCard from './ArticleCard';
 import Article1 from '../assets/Article1.jpg'; 
 import Article2 from '../assets/Article2.jpg'; 
+import SquigglyLine from './squigglyline'; 
 
 function Presentation() {
   const [presentationText, setPresentationText] = useState(
@@ -10,6 +11,7 @@ function Presentation() {
 
   return (
     <div className="presentation">
+       <SquigglyLine />
       <h2 className="presentationh2">My words</h2>
       <div className="articles-grid">
         <ArticleCard title="Article 1" description="Content to come" imageUrl={Article1} />
