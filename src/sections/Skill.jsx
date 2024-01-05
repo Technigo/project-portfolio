@@ -22,6 +22,7 @@ export const Skill = () => {
           <li>MySQL</li>
           <li>Express.js</li>
           <li>Restful API </li>
+          <li>Jest </li>
           <li>Python</li>
           <li>C#</li>
         </ul>
@@ -55,6 +56,7 @@ export const Skill = () => {
       <div className={styles.skill_upcoming}>
         <h3>{t("skills.4")}</h3>
         <ul className={styles.skills_list}>
+          <li>CI/CD</li>
           <li>.Net</li>
           <li>Three.js</li>
           <li>UX/UI</li>
