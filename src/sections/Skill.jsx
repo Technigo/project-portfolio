@@ -19,6 +19,7 @@ export const Skill = () => {
           <li>Node.js</li>
           <li>MongoDB</li>
           <li>Mongoose</li>
+          <li>MySQL</li>
           <li>Express.js</li>
           <li>Restful API </li>
           <li>Python</li>
