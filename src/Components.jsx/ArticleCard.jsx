@@ -55,9 +55,11 @@ export const ArticleCard = () => {
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>
         <LinkButton
+          className="read-on"
           buttonText=""
           url={url}
           icon="./src/Icons/Read-On-Medium.png"
+          hover="./src/Icons/Read-On-Medium-Hover.png"
         />
       </div>
     </div>

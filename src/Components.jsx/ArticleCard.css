@@ -10,7 +10,7 @@
 /* The styling of each card */
 .article-card {
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 10% 5% 10% 5%;
   text-align: center;
   width: 50%;
   box-shadow: 0px 6px 10px rgba(66, 2, 52, 0.2);
@@ -20,13 +20,15 @@
 
 /* Article picture styling */
 .article-card img {
-  height: 60%;
-  width: 60%;
+  height: 40%;
+  width: 50%;
 }
 
 @media (min-width: 667px) and (max-width: 1024px) {
   .article-card {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 1025px) {
@@ -38,5 +40,7 @@
 @media (min-width: 480px) and (max-width: 666px) {
   .article-card {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }

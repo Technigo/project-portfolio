@@ -5,7 +5,7 @@ export const Tech = () => {
   return (
     <div className="Tech">
       <h1>Tech</h1>
-      <p>
+      <p className="tech-details">
         HTML, CSS, Flexbox, JavaScript, React, React Hooks, Node.js, Web
         Accessibility, APIs, Mongoose, MongoDB, Express, Mob-Programming,
         Pair-Programming, Code review, Stack Overflow, GitHub
