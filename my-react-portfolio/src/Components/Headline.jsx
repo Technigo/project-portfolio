@@ -12,10 +12,7 @@ const Headline = () => {
         <div className="profile-content"> 
           <img src={linneaImage} alt="Linnea Johansson" className="profile-image" />
           <p className="profile-description">
-            Linnea is an exceptional developer known for her innovative solutions and
-            exceptional coding abilities. She creates user-friendly applications and solves
-            complex issues with ease. Her drive for excellence makes her a valuable asset
-            to any project and a standout in the technology field.
+          With a background in customer service, I've always enjoyed solving problems and making connections. Now, I'm channeling that passion into a new career as a Frontend Developer. Embracing the tech world's dynamic nature, I find joy in coding and bringing ideas to life.
           </p>
         </div>
         <img src={arrowImage} alt="Arrow" className="arrow-image" />
