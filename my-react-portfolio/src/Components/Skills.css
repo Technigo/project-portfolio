@@ -79,11 +79,11 @@
   }
 }
 
-/* Mobile styles */
+ /* Mobile styles */
 @media (max-width: 480px) {
   .skills-container {
-    padding-left: 50px; 
-    padding-right: 50px; 
+    padding-left: 30px; 
+    padding-right: 30px; 
   }
 
   .skills-container h2 {
@@ -92,15 +92,34 @@
   }
 
   .skills-grid {
-    grid-template-columns: 1fr; 
+    display: flex;
+    flex-direction: column;
     gap: 15px; 
+  }
+
+  .skills-category {
+    align-items: center; 
   }
 
   .skills-category h3 {
     font-size: 1em; 
+    margin: 0 auto 20px auto;
+    width: fit-content; 
+  }
+
+  .category-title {
+    padding: 5px 20px;
+  }
+  
+  .skills-category ul {
+    padding-left: 0; 
+    text-align: center;
   }
 
   .skills-category li {
     font-size: 0.8em; 
+    text-align: center;
+    margin: 10px auto;
   }
 }
+ 
