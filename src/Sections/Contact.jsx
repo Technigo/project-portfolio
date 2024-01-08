@@ -2,9 +2,9 @@ import { BigHeadlines } from "../Components/BigHeadlines";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faStackOverflow } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+// import { faStackOverflow } from "@fortawesome/free-brands-svg-icons";
+// import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+// import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import "./Contact.css";
 
@@ -38,7 +38,7 @@ export const Contact = () => {
                             <FontAwesomeIcon icon={faGithub} style={{color: "#d0d0d0",}} />
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="#">
                             <FontAwesomeIcon icon={faStackOverflow} style={{color: "#d0d0d0",}} />
                         </a>
@@ -52,7 +52,7 @@ export const Contact = () => {
                         <a href="#">
                             <FontAwesomeIcon icon={faInstagram} style={{color: "#d0d0d0",}} />
                         </a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </div>

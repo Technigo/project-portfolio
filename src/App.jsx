@@ -1,7 +1,7 @@
 import { Introduction } from "./Sections/Introduction";
 import { Tech } from "./Sections/Tech";
 import { Projects } from "./Sections/Projects";
-import { MyWords } from "./Sections/MyWords";
+// import { MyWords } from "./Sections/MyWords";
 import { Skills } from "./Sections/Skills";
 import { Contact } from "./Sections/Contact";
 import { Footer } from "./Sections/Footer";
@@ -15,7 +15,7 @@ const App = () => {
       <Introduction />
       <Tech />
       <Projects />
-      <MyWords />
+      {/* <MyWords /> */}
       <Skills />
       <Contact />
       <Footer />

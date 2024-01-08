@@ -40,7 +40,9 @@ export const Skills = () => {
                     <figcaption className="upcoming">Upcoming</figcaption>
                     <ul>
                         <li>Tailwind CSS</li>
+                        <li>React Native</li>
                         <li>Python</li>
+                        <li>SQL</li>
                         <li>User Experience</li>
                     </ul>
                 </figure>
@@ -48,7 +50,9 @@ export const Skills = () => {
                     <figcaption className="more">More</figcaption>
                     <ul>
                         <li>Project Management</li>
-                        <li>Agile Methodology</li>
+                        <li>Agile Methodology</li>                        
+                        <li>Problem Solving</li>
+                        <li>Communications</li>
                     </ul>
                 </figure>
             </div>
