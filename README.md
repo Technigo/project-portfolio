@@ -1,6 +1,5 @@
 
 https://linneajohansson-portfolio.netlify.app/
-https://www.linkedin.com/in/linnea-johansson-68886828a/
 
 ### Hi, I'm Linnea! 👋
 
