@@ -2,7 +2,7 @@ import React from 'react';
 import './Words.css';
 import article1Image from '../assets/article1.jpg';
 import article2Image from '../assets/article2.jpg';
-import divider from '../assets/divider.jpg'; 
+import divider from '../assets/divider.jpg';
 import docIcon from '../assets/Doc.jpg';
 
 const Words = () => {

@@ -10,7 +10,7 @@ import musicImage from '../assets/music.jpg';
 import thoughtsImage from '../assets/thoughts.jpg';
 import fitnessImage from '../assets/fitness.jpg';
 import githubIcon from '../assets/github.jpg'; 
-import liveDemoIcon from '../assets/Live Demo.jpg'; 
+import liveDemoIcon from '../assets/Live Demo.png'; 
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
