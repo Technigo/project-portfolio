@@ -28,7 +28,7 @@ function Presentation() {
   return (
     <div className="presentation">
       <SquigglyLine />
-      <h2 className="presentation-h2">My words</h2>
+      <h2 className="presentation-heading">My words</h2>
       <div className="articles-grid">
         {articles.map(article => (
           <ArticleCard

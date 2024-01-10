@@ -1,11 +1,20 @@
 
 .skills {
-    width: 100%;
-    background-color: #0B24F5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  width: 100%;
+  background-color: #0B24F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-columns {
+  display: flex;
+  gap: 64px;
+  width: 836px;; /* Adjust width as per requirement */
+  margin: 0 auto; /* Center the container */
+  justify-content: center; /* Center items horizontally in the container */
+  padding: 128px 338px; /* Adjusted padding format */
+}
   
   .skills-header {
     color: #FFF;
@@ -13,15 +22,9 @@
     font-size: 80px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 128px;
     line-height: normal;
   }
-  
-  .skills-columns {
-    display: flex;
-    gap: 64px;
-    width: 80%; /* Adjust width as per requirement */
-  }
+
   
   .skills-column {
     display: flex;
@@ -43,16 +46,22 @@
   .code-header {
     background-color: #EB5577;
     padding: 10px;
+    width: 86px;
+   height: 39px;
   }
   
   .toolbox-header {
     background-color: #6DB486;
     padding: 10px;
+    width: 86px;
+    height: 39px;
   }
   
   .more-header {
     background-color: #2483E0;
     padding: 10px;
+    width: 86px;
+    height: 39px;
   }
   
   .skills-item {
@@ -82,6 +91,7 @@ line-height: normal;
         flex-wrap: wrap;     /* Allows items to wrap onto the next line */
         gap: 8px;
         width: 80%;
+        padding: 128px 186px 148px 186px; /* Adjusted padding format */
     }
   
     /* All skill columns will take up half of the container's width on tablet devices */
@@ -99,7 +109,11 @@ line-height: normal;
   
   
  /* Mobile */
- @media (min-width: 374px) and (max-width: 743px){
+@media (min-width: 374px) and (max-width: 743px){
+  .skills {
+      padding: 64px 20px; /* Reduced padding for smaller screens */
+  }
+
   .skills-header {
     color: #FFF;
     text-align: center;
@@ -111,12 +125,23 @@ line-height: normal;
   }
 
   .skills-columns {
+      width: 100%; /* Use full width for mobile */
       flex-direction: column;
       gap: 32px;
       width: 90%; /* Increase width to better fit mobile */
+      margin: 0 auto; /* Center the container */
+      justify-content: center; /* Center items horizontally in the container */
+      padding: 128px 99px 157px 103px; /* Adjusted padding format */
+  }
   }
 
-  .skills-column ul li {
-      margin-bottom: 4px;
+  .skills-column {
+      /* Each column takes full width on mobile */
+      flex: 0 0 100%;
+      max-width: 100%;
   }
-}
+
+  .skills-item {
+      font-size: 16px; /* Smaller font size for items */
+  }
+
