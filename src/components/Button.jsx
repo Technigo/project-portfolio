@@ -9,7 +9,7 @@ const ProjectLinks = styled.div`
         gap: 10px;
     }
 
-    @media (max-width: 375px) {
+    @media (min-width: 375px) {
         flex-direction: column;
         align-items: center;
         gap: 8px;
@@ -63,7 +63,7 @@ const ContactList = styled.ul`
         gap: 15px;
     }
 
-    @media (max-width: 375px) {
+    @media (min-width: 375px) {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
