@@ -14,7 +14,7 @@ export const ArticleCard = () => {
   return (
     <div className="article-card-container">
       <div className="article-card">
-        <img src="./src/pictures/article.jpg" alt="" />
+        <img src="./public/article.jpg" alt="" />
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>
@@ -22,7 +22,7 @@ export const ArticleCard = () => {
       </div>
 
       <div className="article-card">
-        <img src="./src/pictures/article.jpg" alt="" />
+        <img src="./public/article.jpg" alt="" />
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>
@@ -30,7 +30,7 @@ export const ArticleCard = () => {
       </div>
 
       <div className="article-card">
-        <img src="./src/pictures/article.jpg" alt="" />
+        <img src="./public/article.jpg" alt="" />
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>
@@ -38,7 +38,7 @@ export const ArticleCard = () => {
       </div>
 
       <div className="article-card">
-        <img src="./src/pictures/article.jpg" alt="" />
+        <img src="./public/article.jpg" alt="" />
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>

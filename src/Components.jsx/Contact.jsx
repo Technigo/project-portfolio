@@ -18,22 +18,22 @@ export const Contact = () => {
         <LinkButton
           buttonText=""
           url="https://www.instagram.com/emmy.linneaa/"
-          icon="./src/Icons/instagram.png"
+          icon="./public/instagram.png"
         />
         <LinkButton
           buttonText=""
           url="https://www.linkedin.com/in/emmy-jansson-2104a3293/"
-          icon="./src/Icons/linkedin.png"
+          icon="./public/linkedin.png"
         />
         <LinkButton
           buttonText=""
           url="https://stackoverflowteams.com/c/technigo/users/520/?tab=profile"
-          icon="./src/Icons/stackoverflow.png"
+          icon="./public/stackoverflow.png"
         />
         <LinkButton
           buttonText=""
           url="https://github.com/EmmyLJ/"
-          icon="./src/Icons/github.png"
+          icon="./public/github.png"
         />
       </div>
     </div>

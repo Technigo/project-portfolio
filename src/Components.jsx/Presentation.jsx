@@ -17,10 +17,10 @@ export const Presentation = () => {
         coding and keep on learning!
       </p>
       <div className="image">
-        <img src="./src/pictures/me.jpg" alt="" />
+        <img src="./public/me.jpg" alt="" />
       </div>
       <div className="Arrow">
-        <img src="./src/Icons/Vector.png" />
+        <img src="./public/Vector.png" />
       </div>
     </div>
   );
