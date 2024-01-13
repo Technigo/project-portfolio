@@ -3,6 +3,7 @@ import { LinkButton } from "./LinkButton";
 import { Tag } from "./Tag";
 import projectsData from "./projects";
 import "./Project.css";
+import "./Tag.css";
 
 export const Project = () => {
   return (
@@ -24,12 +25,13 @@ export const Project = () => {
               <h3>{name}</h3>
               <p>{description}</p>
               <img className="project-images" src={image} alt={name} />
-              {/* Uncomment the following lines if you have a 'tags' property in your project data */}
-              {/* <div className="tag-container">
-                {tags.map((item) => (
-                  <Tag key={item} tag={item} />
-                ))}
-              </div> */}
+              <div className="tag-container">
+                {tags &&
+                  Array.isArray(tags) &&
+                  tags.map((item) => (
+                    <Tag className="tag" key={item} tagText={item} />
+                  ))}
+              </div>
               <div className="button-container">
                 <LinkButton url={deployed_page_url} buttonText="Live demo" />
                 <LinkButton url={github_url} buttonText="View the code" />
