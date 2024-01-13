@@ -20,7 +20,7 @@ export const Presentation = () => {
         <img src="./public/me.jpg" alt="" />
       </div>
       <div className="Arrow">
-        <img src="/Vector.png" />
+        <img src="./public/Vector.png" />
       </div>
     </div>
   );
