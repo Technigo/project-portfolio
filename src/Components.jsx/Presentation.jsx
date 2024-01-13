@@ -17,7 +17,7 @@ export const Presentation = () => {
         coding and keep on learning!
       </p>
       <div className="image">
-        <img src="/me.jpg" alt="" />
+        <img src="./public/me.jpg" alt="" />
       </div>
       <div className="Arrow">
         <img src="/Vector.png" />
