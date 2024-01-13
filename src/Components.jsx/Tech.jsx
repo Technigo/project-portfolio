@@ -6,8 +6,8 @@ export const Tech = () => {
     <div className="Tech">
       <h1>Tech</h1>
       <p className="tech-details">
-        HTML, CSS, Flexbox, JavaScript, React, React Hooks, Node.js, Web
-        Accessibility, APIs, Mongoose, MongoDB, Express, Mob-Programming,
+        HTML, CSS, Flexbox, JavaScript, React, React Hooks, Node.js, <br /> Web
+        Accessibility, APIs, Mongoose, MongoDB, Express, <br /> Mob-Programming,
         Pair-Programming, Code review, Stack Overflow, GitHub
       </p>
     </div>

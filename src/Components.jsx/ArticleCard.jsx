@@ -18,11 +18,7 @@ export const ArticleCard = () => {
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>
-        <LinkButton
-          buttonText=""
-          url={url}
-          icon="./src/Icons/Read-On-Medium.png"
-        />
+        <LinkButton buttonText="Read more" url={url} />
       </div>
 
       <div className="article-card">
@@ -30,11 +26,7 @@ export const ArticleCard = () => {
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>
-        <LinkButton
-          buttonText=""
-          url={url}
-          icon="./src/Icons/Read-On-Medium.png"
-        />
+        <LinkButton buttonText="Read more" url={url} />
       </div>
 
       <div className="article-card">
@@ -42,11 +34,7 @@ export const ArticleCard = () => {
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>
-        <LinkButton
-          buttonText=""
-          url={url}
-          icon="./src/Icons/Read-On-Medium.png"
-        />
+        <LinkButton buttonText="Read more" url={url} />
       </div>
 
       <div className="article-card">
@@ -54,13 +42,7 @@ export const ArticleCard = () => {
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>
-        <LinkButton
-          className="read-on"
-          buttonText=""
-          url={url}
-          icon="./src/Icons/Read-On-Medium.png"
-          hover="./src/Icons/Read-On-Medium-Hover.png"
-        />
+        <LinkButton buttonText="Read more" url={url} />
       </div>
     </div>
   );

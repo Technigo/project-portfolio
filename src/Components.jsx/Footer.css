@@ -14,17 +14,19 @@
 /* The text that scrolls on the footer */
 .FooterText {
   white-space: nowrap;
+  overflow: hidden;
   animation: scroll 25s linear infinite;
   position: relative;
   right: 0;
 }
 
-/* The scrolling effect */
 @keyframes scroll {
   0% {
-    left: 0; /* Start with no translation */
+    transform: translateX(
+      100%
+    ); /* Start with the text off-screen to the right */
   }
   100% {
-    left: -100%; /* Move the text to the left */
+    transform: translateX(-100%); /* Move the text to the left off-screen */
   }
 }

@@ -1,3 +1,4 @@
+import "./LinkButton.css";
 // The functions of all buttons on my page //
 export const LinkButton = ({ buttonText, url, icon }) => {
   const handleClick = () => {
@@ -7,7 +8,7 @@ export const LinkButton = ({ buttonText, url, icon }) => {
 
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <button onClick={handleClick} className="link-button">
+      <button className="link-button" onClick={handleClick}>
         {icon && <img src={icon} alt="Icon" />}
         {buttonText}
       </button>

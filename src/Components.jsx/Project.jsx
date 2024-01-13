@@ -31,16 +31,8 @@ export const Project = () => {
                 ))}
               </div> */}
               <div className="button-container">
-                <LinkButton
-                  url={deployed_page_url}
-                  text="Live demo"
-                  hovColor="netlify"
-                />
-                <LinkButton
-                  url={github_url}
-                  text="View the code"
-                  hovColor="github"
-                />
+                <LinkButton url={deployed_page_url} buttonText="Live demo" />
+                <LinkButton url={github_url} buttonText="View the code" />
               </div>
             </div>
           );
