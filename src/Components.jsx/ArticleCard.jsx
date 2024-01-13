@@ -4,7 +4,6 @@ import "./ArticleCard.css";
 
 // The over all info about the articles //
 export const ArticleCard = () => {
-  const publishedDate = "Oct 2023";
   const articleTitle = "From Healthcare Worker to Frontend Developer";
   const articleText = `"That's why I like tech as a community. Because it's helpful and inviting, especially to newbies."`;
   const url =
@@ -14,7 +13,7 @@ export const ArticleCard = () => {
   return (
     <div className="article-card-container">
       <div className="article-card">
-        <img src="./public/article.jpg" alt="" />
+        <img src="article.jpg" alt="" />
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>
@@ -22,7 +21,7 @@ export const ArticleCard = () => {
       </div>
 
       <div className="article-card">
-        <img src="./public/article.jpg" alt="" />
+        <img src="article.jpg" alt="" />
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>
@@ -30,7 +29,7 @@ export const ArticleCard = () => {
       </div>
 
       <div className="article-card">
-        <img src="./public/article.jpg" alt="" />
+        <img src="article.jpg" alt="" />
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>
@@ -38,7 +37,7 @@ export const ArticleCard = () => {
       </div>
 
       <div className="article-card">
-        <img src="../public/article.jpg" alt="" />
+        <img src="/article.jpg" alt="" />
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>

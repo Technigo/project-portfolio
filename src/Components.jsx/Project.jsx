@@ -40,7 +40,7 @@ export const Project = () => {
           );
         })}
       </div>
-      <img className="divider" src="../public/divider.png" />
+      <img className="divider" src="/divider.png" />
     </>
   );
 };
