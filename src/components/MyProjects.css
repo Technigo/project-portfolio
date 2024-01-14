@@ -94,9 +94,10 @@ line-height: normal;
         font-size: 56px;
         font-weight: 700;
         line-height: 66px;
-        padding: 128px 32px 128px 32px; /* Adjusted left padding to 16px */
+        padding: 128px 32px 64px 32px; /* Adjusted left padding to 16px */
         height: 98px;
         width: 522px;
+        margin: 50px;
     }
 
     .project-name {
@@ -105,12 +106,27 @@ line-height: normal;
         font-size: 24px;
         font-weight: 600;
         line-height: normal;
+        display: flex;
+      flex-wrap: wrap;  
+      width: 321px;
+height: 29px;
+
     }
 
     .project-list {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center; /* Center items horizontally */
       padding: 128px 32px 128px 32px; 
-    }
-
+      width: 820px; /* Adjust width as needed */
+      height: auto; /* Adjust height as needed */
+  }
+  .project-item {
+    display: flex;
+    justify-content: center; /* Center the thumbnail within the item */
+    align-items: center; /* Align vertically */
+    margin: 20px;
+}
     .project-description {
         color: #000;
         font-family: 'Hind', sans-serif;
@@ -119,19 +135,17 @@ line-height: normal;
         line-height: 29px;
         text-align: left;
         width: 430px;
+        height: 116px;
     }
 
-    .project-item {
-        flex-direction: row;
-    }
 
     .project-thumbnail {
-      width: 200px;
-  height: 280px;
-  flex-shrink: 0;
-      box-shadow: -10px 10px 0px 0px #0000FF; /* blue shadow */
-      transition: 0.3s; /* smooth transition for hover effects, optional */
-  
+        width: 200px; /* Adjust width as needed */
+        height: 280px; /* Adjust height as needed */
+        flex-shrink: 0;
+        box-shadow: -10px 10px 0px 0px #0000FF;
+        transition: 0.3s;
+    margin: 20px;
     }
 
     .project-techniques {
@@ -139,10 +153,13 @@ line-height: normal;
         font-weight: 600;
         line-height: 20px;
         text-align: left;
-        width: 57px;
+        width: 45px;
+        height: 20px;
         display: flex;
         gap: 8px;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        width: 430px;
+        padding-bottom: 76px;
     }
 }
 
@@ -183,7 +200,7 @@ letter-spacing: 0em;
 
   .project-list {
     width: 100vw;
-    padding: 128px 16px 128px 16px;
+    padding: 128px 32px 128px 32px;
   }
 
   .project-description {
@@ -195,6 +212,7 @@ letter-spacing: 0em;
 line-height: 29px;
 letter-spacing: 0em;
 text-align: left;
+
   }
 
   .project-item {
