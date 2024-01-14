@@ -1,5 +1,5 @@
 var granimInstance = new Granim({
-    element: '#myCanvas',
+    element: '#gradientheader',
     direction: 'top-bottom',
     isPausedWhenNotInView: true,
     states : {
