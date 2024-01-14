@@ -37,7 +37,7 @@ export const ArticleCard = () => {
       </div>
 
       <div className="article-card">
-        <img src="/article.jpg" alt="" />
+        <img src="./assets/article.jpg" alt="" />
         <h2>{articleTitle}</h2>
         <p>{articleText}</p>
         <a href={url} target="_blank" rel="noopener noreferrer"></a>

@@ -9,7 +9,7 @@ export const Contact = () => {
     <div className="contact">
       <h1>Let's talk!</h1>
       <div className="image">
-        <img src="./public/me.jpg" alt="" />
+        <img src="./assets/me.jpg" alt="" />
       </div>
       <h2>Emmy Jansson</h2>
       <h3>Mobile: +4673-719 77 49</h3>
@@ -18,22 +18,22 @@ export const Contact = () => {
         <LinkButton
           buttonText=""
           url="https://www.instagram.com/emmy.linneaa/"
-          icon="/instagram.png"
+          icon="./assets/instagram.png"
         />
         <LinkButton
           buttonText=""
           url="https://www.linkedin.com/in/emmy-jansson-2104a3293/"
-          icon="/linkedin.png"
+          icon="./assets/linkedin.png"
         />
         <LinkButton
           buttonText=""
           url="https://stackoverflowteams.com/c/technigo/users/520/?tab=profile"
-          icon="/stackoverflow.png"
+          icon="./assets/stackoverflow.png"
         />
         <LinkButton
           buttonText=""
           url="https://github.com/EmmyLJ/"
-          icon="/github.png"
+          icon="./assets/github.png"
         />
       </div>
     </div>

@@ -7,17 +7,17 @@ export const Links = () => {
       <LinkButton
         buttonText="Instagram"
         url="https://www.instagram.com/emmy.linneaa/"
-        icon="/instagram(1).png"
+        icon="./assets/instagram(1).png"
       />
       <LinkButton
         buttonText="Linkedin"
         url="https://www.linkedin.com/in/emmy-jansson-2104a3293/"
-        icon="/linkedin.png"
+        icon="./assets/linkedin.png"
       />
       <LinkButton
         buttonText=""
         url="https://stackoverflowteams.com/c/technigo/users/520/?tab=profile"
-        icon="/stackoverflow.png"
+        icon="./assets/stackoverflow.png"
       />
     </div>
   );
