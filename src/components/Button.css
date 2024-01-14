@@ -97,16 +97,20 @@
 /* mobile  */
 @media (min-width: 375px) and (max-width: 743px)
   {  .project-links {
-      flex-direction: column; /* Stack the buttons vertically for small screens */
-      align-items: center; /* Center the buttons horizontally */
-      gap: 8px; /* Reduced gap for small screens */
+    padding: 0 16px 0 0; /* Top, Right, Bottom, Left padding */
+    border-radius: 40px; /* Rounded corners */
+    display: flex;
+    gap: 7px; /* Space between child elements */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
   }
 
   .btn-live, .btn-view {
     display: block; /* Each button will take up the full width of its container */
     width: 100%; /* Adjust the width to what is needed, 100% makes the button full width */
     margin-bottom: 10px; /* Adds space between the buttons */
-    text-align: center; /* Center-align the text within the button if needed */
   }
 
   .btn-live::before, .btn-view::before {

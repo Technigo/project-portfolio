@@ -1,6 +1,6 @@
 
 .skills {
-  width: 100%;
+  width: 100vw;
   background-color: #0B24F5;
   display: flex;
   flex-direction: column;
@@ -74,44 +74,50 @@ line-height: normal;
   }
   
 
-/* Tablet */
   @media (min-width: 744px) and (max-width: 1279px) {
+    .skills {
+        width: 100vw;
+    }
+
     .skills-header {
       color: #FFF;
       text-align: center;
-      font: 'Montserrat', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: 56px;
-      font-style: normal;
       font-weight: 700;
-      line-height: normal;
-    }
-  
+      line-height: 68px; /* Adjusted for clarity */
+      letter-spacing: 0em;
+      width: 153px;
+      padding-top: 128px; /* Corrected the syntax error */
+  }
+
     .skills-columns {
-        flex-direction: row; /* Setting direction to row for the 2x2 layout */
-        flex-wrap: wrap;     /* Allows items to wrap onto the next line */
-        gap: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+        grid-template-rows: auto auto; /* Two rows, height adjusts to content */
+        gap:64px;
         width: 80%;
-        padding: 128px 186px 148px 186px; /* Adjusted padding format */
+        padding: 128px 186px 148px 186px;
+        margin: 0 auto; /* Center the grid horizontally */
     }
-  
-    /* All skill columns will take up half of the container's width on tablet devices */
-    .skills-column {
-        flex: 0 0 calc(50% - 28px);  /* Flex-basis is set to 50% minus the gap */
-        max-width: calc(50% - 28px);
-    }
-  
+
     /* Adjust the margins and padding for items for a tighter layout */
     .skills-item {
         margin-bottom: 4px;
     }
-  }
+
+    .skills-column:nth-child(3) {
+        grid-column: 1 / span 2; /* Make the third column span two columns */
+    }
+}
   
   
   
  /* Mobile */
  @media (min-width: 375px) and (max-width: 743px){
   .skills {
-      padding: 64px 20px; /* Reduced padding for smaller screens */
+      padding: 128px 99px 157px 103px; /* Reduced padding for smaller screens */
+      width: 100vw;
   }
 
   .skills-header {
@@ -129,9 +135,10 @@ line-height: normal;
       flex-direction: column;
       gap: 32px;
       width: 90%; /* Increase width to better fit mobile */
-      margin: 0 auto; /* Center the container */
       justify-content: center; /* Center items horizontally in the container */
       padding: 128px 99px 157px 103px; /* Adjusted padding format */
+      margin: 0 auto; /* Center the columns horizontally */
+      justify-content: center;
   }
   }
 

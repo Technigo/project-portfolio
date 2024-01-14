@@ -1,5 +1,5 @@
 .presentation {
-    width: 100%;
+    width: 100vw;
     max-height: 1500px;
     background-color: #FFECEA;
     overflow: hidden; /* Add this to prevent child elements from overflowing */
@@ -15,6 +15,7 @@
     padding-left: 143px;
     margin: 0; /* Add this to reset any default margins */
     color: #FF4575;
+    padding: 128px 964px 0px 143px;
 }
 
 .presentation-paragraph {
@@ -37,6 +38,11 @@
 
 /* Tablet */
 @media (min-width: 744px) and (max-width: 1279px) {
+
+    .presentation {
+        width: 100vw;
+    }
+
     .presentation-heading {
         color: #FF4575;
         font-family: 'Montserrat', sans-serif; 
@@ -44,16 +50,14 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        width: 284px;
+        height: 68px;
+        padding: 128px 56px 128px 143px;
     }
 
-    .presentation-paragraph {
-        font-size: 16px; /* Reduced font size for medium screens */
-        padding-right: 150px; /* Reduced padding for medium screens */
-        padding-left: 70px; /* Reduced padding for medium screens */
-    }
 
     .articles-grid {
-        padding: 15px 70px; /* Adjusted padding for medium screens */
+        padding: 0px 131px 0px 131px; /* Adjust padding as needed */
     }
 
     /* Adjust any other styles as needed for this breakpoint */
@@ -61,6 +65,10 @@
 
 /* Mobile */
 @media (min-width: 375px) and (max-width: 743px){
+    .presentation {
+        width: 100vw;
+    }
+    
     .presentation-heading {
         font-family: 'Montserrat', sans-serif; 
         color: #FF4575;
@@ -70,16 +78,15 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 width: 343px;
+padding: 128px 16px 0px 16px;
     }
 
-    .presentation-paragraph {
-        font-size: 14px; /* Reduced font size for small screens */
-        padding-right: 20px; /* Reduced padding for small screens */
-        padding-left: 20px; /* Reduced padding for small screens */
-    }
+
 
     .articles-grid {
-        padding: 15px 20px; /* Adjusted padding for small screens */
+       width: 343px;/* Adjusted padding for small screens */
+       padding: 0px 16px 0px 16px;
+       margin: 0 auto;
     }
 
     /* Adjust any other styles as needed for this breakpoint */

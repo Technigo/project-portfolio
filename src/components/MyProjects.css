@@ -1,5 +1,5 @@
 .my-projects {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
@@ -83,84 +83,74 @@ line-height: normal;
   }
 
 
-/* Tablet */
-@media (min-width: 744px) and (max-width: 1279px) {
-  .my-projects {
-  width: 100%;
-  }
+  @media (min-width: 744px) and (max-width: 1279px) {
+    .my-projects {
+        width: 100vw;
+    }
 
-  .classh2project {
-    color: #0B24F5;
-font-family: 'Montserrat', sans-serif;
-font-size: 80px;
-font-style: normal;
-font-weight: 700;
-line-height: 97,52px; /* 117.857% */
-padding: 128px 230px 124px 230px;
-align-items: center;
-height: 98px;
-  }
-  .project-name {
-    color: #000;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
+    .classh2project {
+        color: #0B24F5;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 66px;
+        padding: 128px 32px 128px 32px; /* Adjusted left padding to 16px */
+        height: 98px;
+        width: 522px;
+    }
 
-  .project-list {
-      padding: 128px 32px 128px 32px;
+    .project-name {
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+    }
 
-  }
+    .project-list {
+      padding: 128px 32px 128px 32px; 
+    }
 
-  .project-description {
-    color: #000;
-    font-family: 'Hind', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    align-self: stretch;
-    width: 430px;
-line-height: 29px;
-letter-spacing: 0em;
-text-align: left;
+    .project-description {
+        color: #000;
+        font-family: 'Hind', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+        text-align: left;
+        width: 430px;
+    }
 
+    .project-item {
+        flex-direction: row;
+    }
 
-  }
+    .project-thumbnail {
+      width: 200px;
+  height: 280px;
+  flex-shrink: 0;
+      box-shadow: -10px 10px 0px 0px #0000FF; /* blue shadow */
+      transition: 0.3s; /* smooth transition for hover effects, optional */
   
-  .project-item {
-    flex-direction: row; /* Stack items vertically */
-  }
-  .project-thumbnail {
-    width: 200px;
-height: 280px;
-flex-shrink: 0;
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    box-shadow: -10px 10px 0px 0px #0000FF; /* blue shadow */
-    transition: 0.3s; /* smooth transition for hover effects, optional */
-    margin-right: 20px;
-  }
-  .project-techniques {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 57px;
-display: flex;
-gap: 8px; 
-flex-wrap: nowrap;
-  }
+    }
+
+    .project-techniques {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+        width: 57px;
+        display: flex;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
 }
+
 
 
 @media (min-width: 375px) and (max-width: 743px){
   .my-projects {
-    width: 100%;
+    width: 100vw;
   }
 
   .classh2project {
@@ -184,16 +174,15 @@ font-style: normal;
 font-weight: 600;
 line-height: 29,26px;
 letter-spacing: 0em;
-
 }
   .project-thumbnail {
     width: 343px;
     height: 200px;
-    border: 0px, 0px, 10px, 10px;
+    border-width: 0 0 10px 10px;
   }
 
   .project-list {
-    width: 100%;
+    width: 100vw;
     padding: 128px 16px 128px 16px;
   }
 
@@ -206,7 +195,6 @@ letter-spacing: 0em;
 line-height: 29px;
 letter-spacing: 0em;
 text-align: left;
-
   }
 
   .project-item {
@@ -233,14 +221,4 @@ text-align: left;
   height: auto; /* Adjust height or set to auto to accommodate wrapped items */
 }
 
-
-.project-links {
-  width: 343px; /* Set the width to match your design tool */
-  height: auto; /* Height is set to auto to contain its children */
-  padding: 0 16px 0 0; /* Adjusted padding to match the design tool */
-  gap: 16px; /* Gap between items */
-  display: flex;
-  flex-direction: column;
-  align-items: left; /* Align items to the left */
-}
 }
