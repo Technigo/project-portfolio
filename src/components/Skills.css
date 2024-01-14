@@ -116,8 +116,11 @@ line-height: normal;
  /* Mobile */
  @media (min-width: 375px) and (max-width: 743px){
   .skills {
-      padding: 128px 99px 157px 103px; /* Reduced padding for smaller screens */
-      width: 100vw;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    padding: 128px 99px 157px 99px; /* Adjusted for symmetry */
+    width: 100vw;
   }
 
   .skills-header {
@@ -128,26 +131,21 @@ line-height: normal;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    width: 97px;
   }
 
   .skills-columns {
-      width: 100%; /* Use full width for mobile */
-      flex-direction: column;
-      gap: 32px;
-      justify-content: center; /* Center items horizontally in the container */
-      padding: 128px 99px 157px 103px; /* Adjusted padding format */
-      margin: 0 auto; /* Center the columns horizontally */
-      justify-content: center;
-  }
+    width: 140px; /* Full width for mobile */
+    flex-direction: column;
+    gap: 32px;
+    display: flex; /* Enable Flexbox */
+    align-items: center; /* Center children horizontally */
+    padding: 0;
+    padding: 64px 99px 64px 99px; /* Adjusted for symmetry */
   }
 
-  .skills-column {
-      /* Each column takes full width on mobile */
-      flex: 0 0 100%;
-      max-width: 100%;
-  }
 
   .skills-item {
       font-size: 16px; /* Smaller font size for items */
   }
-
+}
