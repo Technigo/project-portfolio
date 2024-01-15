@@ -1,0 +1,64 @@
+.wordsContainer {
+  background-color: #ffecea;
+  color: #ff4575;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.wordsContainer h1 {
+  text-align: center;
+  font-size: 80px;
+}
+
+.mobileLinks {
+  display: none;
+}
+
+.read-article-button:hover {
+  content: url("/Assets/Read-On-Medium-Hover.png");
+}
+
+/* Media query for desktop - 2 rows */
+@media (min-width: 1025px) {
+  .wordsContainer {
+    display: grid;
+    background-color: #ffecea;
+    color: #ff4575;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .wordsContainer h1 {
+    font-size: 80px;
+  }
+
+  .wordsContainer h2 {
+    font-size: 24px;
+    color: black; /* Set the color here if it's specific to the desktop view */
+  }
+
+  .mobileLinks {
+    display: none;
+  }
+
+  .read-article-button:hover,
+  .articleButton:hover {
+    content: url("./assets/Read-On-Medium-Hover.png");
+  }
+
+  .wordsBox {
+    display: grid;
+    padding: 1em 20em;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .wordsBox img {
+    max-width: 50%;
+  }
+}

@@ -1,18 +1,35 @@
-import "./FeaturedProjects.css";
+import styles from "./FeaturedProjects.module.css";
 
 import { useEffect, useState } from "react";
 
 export const FeaturedProjects = () => {
   const [myGits, setMyGits] = useState([]);
+  const [NamesOfGits, setNamesOfGits] = useState([
+    "final-project-airportfinder",
+    "project-design-handoff-vite",
+    "project-happy-thoughts-vite",
+  ]);
 
   const myGitHubURL = "https://api.github.com/users/BeckieMorton/repos";
 
-  const sortedbyPush =
-    "https://api.github.com/users/BeckieMorton/repos?sort=pushed_at";
+  //const sortedbyPush = "https://api.github.com/users/BeckieMorton/repos?sort=pushed_at";
+
+  //get my GitHub info from the GitHub API
+  useEffect(() => {
+    const getMyProjects = () => {
+      fetch(myGitHubURL)
+        .then((response) => response.json())
+        .then((data) => {
+          setMyGits(data);
+        })
+        .catch((error) => console.error("Failed to fetch info", error));
+    };
+
+    getMyProjects();
+  }, [myGitHubURL]);
 
   const formatGitName = (name) => {
     let newName = name.split("-").join(" ");
-    console.log(newName);
 
     const capitals = newName.split(" ");
     for (var i = 0; i < capitals.length; i++) {
@@ -25,85 +42,53 @@ export const FeaturedProjects = () => {
     return newCapitalisedName;
   };
 
-  useEffect(() => {
-    getMyProjects();
-  }, []);
-
-  const getMyProjects = () => {
-    fetch(sortedbyPush)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setMyGits(data);
-      })
-      .catch((error) => console.error("Failed to fetch info", error));
-  };
-
-  //----///
-
-  const topicsArray = myGits.filter(
-    (item) => item.topics && item.topics.includes("portfolio")
-  );
-
-  //slice array so we only display first 6 github projects
-  //let first6Gits = myGits.slice(0, 6);
+  console.log(`myGits`, myGits);
 
   return (
     <>
-      <div className="featured-projects-container">
-        <h1 className="featured-projects-heading">Featured Projects</h1>
-        {topicsArray.map((myGit) => (
-          <div className="projects-parent" key={myGit._id}>
-            <div className="projects-child">
-              <img className="projects-img" src="/Assets/airport.jpg" />
-            </div>
-            <div className="projects-child">
-              <h2>{formatGitName(myGit.name)}</h2>
-              <p>{myGit.description}</p>
-            </div>
-            <div className="projects-child">
-              <p>
-                <span style={{ backgroundColor: "black", color: "white" }}>
-                  &nbsp; HTML5 &nbsp;
-                </span>
-                &nbsp;
-                <span style={{ backgroundColor: "black", color: "white" }}>
-                  &nbsp; CSS3 &nbsp;
-                </span>
-                &nbsp;
-                <span style={{ backgroundColor: "black", color: "white" }}>
-                  &nbsp; React &nbsp;
-                </span>
-                <a
-                  target="_blank"
-                  className="live-code-link"
-                  href={myGit.homepage}
-                  key={myGit.id}
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    className="live-demo-button"
-                    src="\Assets\Live-Demo-Button.png"
-                    alt="live demo"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  className="my-git-hub-link"
-                  href={myGit.html_url}
-                  key={myGit.id}
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    className="view-code-button"
-                    src="\Assets\View-Code-Button.png"
-                    alt="view code"
-                  />
-                </a>
-              </p>
-            </div>
-          </div>
-        ))}
+      <div className={styles.projectsHeader}>
+        <h1>Featured Projects</h1>
+      </div>
+      <div className={styles.projectsContainer}>
+        <div className={styles.projectsBox}>
+          <img
+            src="./assets/happy-thoughts.jpg"
+            className={styles.projectsThumbnail}
+          />
+        </div>
+        <div className={styles.projectsBox}>
+          <h2>Project Name</h2>
+          <p>info about project</p>
+          <p>
+            <span style={{ backgroundColor: "black", color: "white" }}>
+              &nbsp; HTML5 &nbsp;
+            </span>
+            &nbsp;
+            <span style={{ backgroundColor: "black", color: "white" }}>
+              &nbsp; CSS3 &nbsp;
+            </span>
+            &nbsp;
+            <span style={{ backgroundColor: "black", color: "white" }}>
+              &nbsp; React &nbsp;
+            </span>
+          </p>
+          <p>
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              className={styles.liveDemoButton}
+            >
+              <img src=".\assets\Live-Demo-Button.png" alt="live demo" />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              className={styles.viewCodeButton}
+            >
+              <img src=".\assets\View-Code-Button.png" alt="view code" />
+            </a>
+          </p>
+        </div>
       </div>
     </>
   );

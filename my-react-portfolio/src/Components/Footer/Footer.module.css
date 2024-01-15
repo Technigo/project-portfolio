@@ -1,0 +1,43 @@
+/*media query for desktop - 2 rows */
+@media (min-width: 1025px) {
+  .footerContainer img {
+    max-width: 164px;
+    max-height: 164px;
+    border-radius: 50%;
+  }
+
+  .footer-container {
+    background-color: #ff4575;
+    color: #ffffff;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .footer-text {
+    color: white;
+    font-size: 26.04px;
+    display: inline-block;
+    animation: ticker 17s linear infinite;
+    white-space: nowrap;
+    padding-left: 100%;
+    list-style: 37.87px;
+    font-weight: 600;
+  }
+
+  .ticker {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  @keyframes ticker {
+    0% {
+      transform: translateX(-33.33%);
+    }
+
+    100% {
+      transform: translateX(-66.66%);
+    }
+  }
+}
+/* (-33.33%)I think this makes the animation start with the text partially off-screen to the left. */
+/*(-66.66%); then scrolls to the left, making the next part of the text visible, creating a loop. */

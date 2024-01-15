@@ -1,52 +1,37 @@
-import "./MyWords.css";
+import styles from "./MyWords.module.css";
 
 export const MyWords = () => {
   return (
-    <div className="my-words-container">
+    <div className={styles.wordsContainer}>
       <h1>My Words</h1>
-      <div className="my-words-box">
-        <div className="my-words-column">
-          <img
-            src="\Assets\featured-projects-temp.jpg"
-            alt="image placer for my words"
-          />
-          <h2>Article One</h2>
+      <div className={styles.wordsBox}>
+        <img src="./assets/mywords.jpg" alt="image placer for my words" />
+      </div>
+      <div className={styles.wordsBox}>
+        <p>
           <span style={{ backgroundColor: "black", color: "white" }}>
-            &nbsp;August 2023&nbsp;
+            &nbsp;December 2023&nbsp;
           </span>
-          <p>
-            Diam sit amet nisl suscipit adipiscing bibendum. Id aliquet risus
-            feugiat in. Facilisi nullam vehicula ipsum a arcu cursus vitae
-            congue mauris. Lacus suspendisse faucibus interdum posuere lorem.
-            Sit amet massa vitae tortor condimentum lacinia.
-          </p>
+        </p>
+
+        <h2>
+          Transitioning into Web Development: Navigating 2023 with My
+          20-Year-Old Computer Science Degree.
+        </h2>
+
+        <p>
+          I have almost completed my Technigo Web Development bootcamp, and
+          guess what? My 20-year-old computer science degree is proving to be a
+          pretty handy guide through the twists and turns of building web
+          applications....
+        </p>
+        <a href="https://www.linkedin.com/pulse/transitioning-web-development-navigating-2023-my-computer-morton-4d4de%3FtrackingId=s2H8u0ibRZ%252BwYg1HlsOq1w%253D%253D/?trackingId=s2H8u0ibRZ%2BwYg1HlsOq1w%3D%3D">
           <img
-            className="read-article-button"
-            src="/Assets/Read-On-Medium.png"
+            className={styles.articleButton}
+            src="./assets/Read-On-Medium.png"
             alt="read article"
           />
-        </div>
-        <div className="my-words-column">
-          <img
-            src="\Assets\featured-projects-temp.jpg"
-            alt="image placer for my words"
-          />
-          <h2>Article Two</h2>
-          <span style={{ backgroundColor: "black", color: "white" }}>
-            &nbsp;June 2023&nbsp;
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida
-            cum sociis natoque penatibus et. Nisl condimentum id venenatis a
-            condimentum vitae.
-          </p>
-          <img
-            className="read-article-button"
-            src="/Assets/Read-On-Medium.png"
-            alt="read article"
-          />
-        </div>
+        </a>
       </div>
     </div>
   );

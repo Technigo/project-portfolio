@@ -1,0 +1,80 @@
+.projectsContainer {
+  background-color: #ffffff;
+  color: #0b24f5;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 5em 0 5em 0;
+}
+
+.projectsContainer h1 {
+  text-align: center;
+  color: blue;
+  font-size: 56px;
+}
+
+.live-demo-button,
+.view-code-button {
+  margin-top: 0.5em;
+}
+
+.live-demo-button:hover {
+  content: url("./assets/Live-Demo-Button-Hover.png");
+}
+
+.view-code-button:hover {
+  content: url("./assets/View-Code-Button-Hover.png");
+}
+
+/*media query for tablet*/
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+  .projectsContainer h1 {
+    font-size: 56px;
+  }
+
+  .projects-child {
+    grid-column: span 2;
+  }
+}
+
+/*media query for desktop */
+@media (min-width: 1025px) {
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .projectsContainer > div:first-child .projectsBox {
+    grid-column: span 2;
+  }
+
+  .projectsContainer img {
+    padding: 1em;
+  }
+
+  .projectsHeader h1 {
+    color: #0025ff;
+    text-align: center;
+    font-size: 80px;
+    padding: 1em 0;
+  }
+
+  .projectsThumbnail {
+    height: 260px;
+    width: 260px;
+    border-bottom: 20px solid #0025ff;
+    border-left: 20px solid #0025ff;
+  }
+
+  .liveDemoButton:hover {
+    content: url("./assets/Live-Demo-Button-Hover.png");
+  }
+
+  .viewCodeButton:hover {
+    content: url("./assets/View-Code-Button-Hover.png");
+  }
+}

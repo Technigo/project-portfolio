@@ -1,10 +1,10 @@
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 export const Footer = () => {
   return (
-    <div className="footer-container">
-      <div className="footer-text">
-        <p className="ticker">
+    <div className={styles.footerContainer}>
+      <div className={styles.footerTxt}>
+        <p className={styles.ticker}>
           Beckie Morton &#x2022; Fullstack Developer &#x2022; Beckie Morton
           &#x2022; Fullstack Developer &#x2022; Beckie Morton &#x2022; Fullstack
           Developer &#x2022; Beckie Morton &#x2022; Fullstack Developer &#x2022;
