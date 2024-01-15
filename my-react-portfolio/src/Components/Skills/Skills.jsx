@@ -16,6 +16,7 @@ export const Skills = () => {
             <li>React</li>
             <li>Styled Components</li>
             <li>GitHub</li>
+            <li>Node.js</li>
           </ul>
         </div>
         <div className={styles.skillsBox}>
@@ -29,6 +30,9 @@ export const Skills = () => {
             <li>Gimp</li>
             <li>Slack</li>
             <li>Seesaw + ClassDojo </li>
+            <li>Stack OVerflow</li>
+            <li>Figma</li>
+            <li>Postman</li>
           </ul>
         </div>
         <div className={styles.skillsBox}>
@@ -38,7 +42,8 @@ export const Skills = () => {
                 Upcoming
               </span>
             </h2>
-            <li>Node.js</li>
+            <li>Typescript</li>
+            <li>Tailwind</li>
           </ul>
         </div>
         <div className={styles.skillsBox}>
