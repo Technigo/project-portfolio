@@ -6,6 +6,7 @@ import { Skills } from "../../Components/Skills/Skills";
 import { LetsTalk } from "../../Components/LetsTalk/LetsTalk";
 import { Footer } from "../../Components/Footer/Footer";
 import { RedArrow } from "../../Components/RedArrow/RedArrow";
+import { TechSection } from "../../Components/TechSection/TechSection";
 
 import styles from "./Home.module.css";
 
@@ -14,6 +15,7 @@ export const Home = () => {
     <div>
       <Header />
       <RedArrow />
+      <TechSection />
       <FeaturedProjects />
       <MyWords />
       <Skills />

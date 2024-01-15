@@ -15,14 +15,14 @@ export const Header = () => {
           <h1>Frontend Developer</h1>
         </div>
         <div className={styles.headerBox}>
-          <img src="/Assets/profile-bec-sqr.jpg" alt="profile pic of beckie" />
+          <img src="./assets/profile-bec-sqr.jpg" alt="profile pic of beckie" />
         </div>
         <div className={styles.headerBox}>
-          <p>
-            Former International School teacher, and Police Officer, turned
-            passionate Frontend developer. Beckie has a Master of Teaching as
-            well as a Bachelor of Computing, and brings both skills and
-            experience to a new career.
+          <p className={styles.blurb}>
+            Former International School teacher and Police Officer turned
+            passionate Frontend developer, I have a Master of Teaching as well
+            as a Bachelor of Computing and bring both skills and experience to a
+            new career.
           </p>
         </div>
         <div className={styles.headerBox}>
