@@ -1,11 +1,11 @@
-import { TopSection } from "./Components/TopSection/TopSection";
+import { Home } from "./pages/Home/Home";
 
 import "./index.css";
 
 export const App = () => {
   return (
     <div>
-      <TopSection />
+      <Home />
     </div>
   );
 };

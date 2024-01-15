@@ -1,0 +1,103 @@
+.headerContainer h1 {
+  font-size: 30px;
+  text-align: center;
+  color: blue;
+}
+
+.HeaderContainer h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.headerContainer p {
+  padding-bottom: 1em;
+  font-size: 16px;
+  text-align: center;
+}
+
+.headerContainer img {
+  max-width: 164px;
+  max-height: 164px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.stack-img:hover {
+  content: url("/Assets/stackoverflow-hover.png");
+}
+
+.linkedin-img:hover {
+  content: url("/Assets/linkedin-hover.png");
+}
+
+.github-img:hover {
+  content: url("/Assets/github-hover.png");
+}
+
+.mobileLinks {
+  display: block;
+}
+
+/*media query for desktop - 2 rows */
+@media (min-width: 1025px) {
+  .mobileLinks {
+    display: none;
+  }
+
+  .headerContainer {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 19em 19em 10em 19em;
+  }
+
+  .headerContainer > div:nth-child(1) {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+  }
+
+  .headerContainer > div:nth-child(2) {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+  }
+
+  .headerContainer > div:nth-child(3),
+  .headerContainer > div:nth-child(4) {
+    grid-row: 3 / span 1;
+    grid-column: span 1;
+  }
+
+  .headerContainer h1,
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .headerBox {
+    grid-column: span 2;
+    margin: 0;
+    border: 1px solid blue;
+  }
+
+  .headerContainer h1 {
+    font-size: 80px;
+    color: blue;
+    text-align: left;
+  }
+
+  .headerContainer h2 {
+    font-size: 32px;
+    padding: 0;
+  }
+
+  .headerContainer p {
+    padding-bottom: 1em;
+    font-size: 16px;
+  }
+
+  .headerContainer img {
+    max-width: 164px;
+    max-height: 164px;
+    border-radius: 50%;
+  }
+}
