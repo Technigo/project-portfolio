@@ -39,6 +39,7 @@ export const Skills = () => {
                 <figure>
                     <figcaption className="upcoming">Upcoming</figcaption>
                     <ul>
+                        <li>TypeScript</li>
                         <li>Tailwind CSS</li>
                         <li>React Native</li>
                         <li>Python</li>
