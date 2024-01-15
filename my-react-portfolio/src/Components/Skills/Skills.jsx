@@ -1,11 +1,11 @@
-import "./Skills.css";
+import styles from "./Skills.module.css";
 
 export const Skills = () => {
   return (
-    <div className="skills-section">
+    <div className={styles.skillsSection}>
       <h1>Skills</h1>
-      <div className="skills-container">
-        <div className="skills-box">
+      <div className={styles.skillsContainer}>
+        <div className={styles.skillsBox}>
           <ul>
             <h2>
               <span style={{ backgroundColor: "#ff4575" }}>Code</span>
@@ -18,7 +18,7 @@ export const Skills = () => {
             <li>GitHub</li>
           </ul>
         </div>
-        <div className="skills-box">
+        <div className={styles.skillsBox}>
           <ul>
             <h2>
               <span style={{ backgroundColor: "#2483e0", color: "white" }}>
@@ -31,7 +31,7 @@ export const Skills = () => {
             <li>Seesaw + ClassDojo </li>
           </ul>
         </div>
-        <div className="skills-box">
+        <div className={styles.skillsBox}>
           <ul>
             <h2>
               <span style={{ backgroundColor: "#6db486", color: "white" }}>
@@ -41,17 +41,17 @@ export const Skills = () => {
             <li>Node.js</li>
           </ul>
         </div>
-        <div className="skills-box">
+        <div className={styles.skillsBox}>
           <ul>
             <h2>
               <span style={{ backgroundColor: "#ffde30", color: "#0b24f5" }}>
                 More
               </span>
             </h2>
-            <li>Computing Science Teacher - Key Stage 3</li>
-            <li>Educational Curriculum design</li>
-            <li>Policing, crime mapping + intelligence systems</li>
-            <li>Website maintanence - Wix and Word Press</li>
+            <li>ICT Teacher</li>
+            <li>Curriculum Design</li>
+            <li>Resourceful</li>
+            <li>Team player</li>
           </ul>
         </div>
       </div>
