@@ -1,6 +1,24 @@
 /*----- media query for desktop -----*/
 @media (min-width: 1025px) {
   .redArrow {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  /* Define the animation */
+  @keyframes jumpUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .redArrow:hover {
+    animation: jumpUpDown 1s infinite;
   }
 }
