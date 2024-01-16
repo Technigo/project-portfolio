@@ -27,7 +27,7 @@ export const ProjectCard = ({ repositories }) => {
 
                 const repoImage = repoImages.find((img) => img.repoName === repo.name);
                 const topics = repo.topics || []; // Saving repo.topics in a variable and sets an empty array as a default
-                const projectName = repo.name;
+                const projectName = repo.name.charAt(0).toUpperCase() + repo.name.slice(1); // Capitalizing the first letter of the project name
                 const cleanProjectName = projectName.replace(/-/g, " "); // Saving the name of the project in a cleaner format, removing the dashes from the API name.
 
                 return (
