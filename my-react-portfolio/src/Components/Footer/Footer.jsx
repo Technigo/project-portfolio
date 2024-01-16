@@ -10,7 +10,11 @@ export const Footer = () => {
         Beckie Morton &#x2022; Beckie Morton &#x2022; Fullstack Developer
         &#x2022; Beckie Morton &#x2022; Fullstack Developer &#x2022; Beckie
         Morton &#x2022; Fullstack Developer &#x2022; Beckie Morton &#x2022;
-        Fullstack Developer &#x2022; Beckie Morton &#x2022;
+        Fullstack Developer &#x2022; Beckie Morton &#x2022; Beckie Morton
+        &#x2022; Fullstack Developer &#x2022; Beckie Morton &#x2022; Fullstack
+        Developer &#x2022; Beckie Morton &#x2022; Fullstack Developer &#x2022;
+        Beckie Morton &#x2022; Fullstack Developer &#x2022; Beckie Morton
+        &#x2022;
       </div>
     </div>
   );

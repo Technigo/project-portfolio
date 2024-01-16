@@ -54,6 +54,7 @@ export const FeaturedProjects = () => {
                   href={project.netlifyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="See Live demo of project"
                 >
                   <img
                     src="./assets/Live-Demo-Button.png"
@@ -66,6 +67,7 @@ export const FeaturedProjects = () => {
                   href={project.gitUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="See view code of project"
                 >
                   <img
                     src="./assets/View-Code-Button.png"
