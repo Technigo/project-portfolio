@@ -8,7 +8,9 @@ export const Skills = () => {
         <div className={styles.skillsBox}>
           <ul>
             <h2>
-              <span style={{ backgroundColor: "#ff4575" }}>Code</span>
+              <span style={{ backgroundColor: "#ff4575", color: "white" }}>
+                Code
+              </span>
             </h2>
             <li>HTML5</li>
             <li>CSS3</li>
