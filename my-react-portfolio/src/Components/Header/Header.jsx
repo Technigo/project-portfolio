@@ -8,28 +8,45 @@ export const Header = () => {
     <>
       <div className={styles.headerContainer}>
         <div className={styles.headerBox}>
-          {/* <h2>Hi, I'm Beckie Morton</h2> */}
-          <TypeAnimation
-            sequence={[
-              // Same substring at the start will only be typed out once, initially
-              "I'm Beckie Morton",
-              1000,
-            ]}
-            wrapper="span"
-            speed={30}
-            style={{
-              fontSize: "32px",
-              display: "inline-block",
-              fontFamily: "Montserrat",
-              fontWeight: "900",
-            }}
-            repeat={Infinity}
-          />
+          <div className={styles.headerImageMobile}>
+            <img
+              src="./assets/profile-bec-sqr.jpg"
+              alt="profile pic of beckie"
+            />
+          </div>
+          <div className={styles.nameTxtDesktop}>
+            <TypeAnimation
+              sequence={["I'm Beckie Morton", 1000]}
+              wrapper="span"
+              speed={30}
+              style={{
+                fontSize: "32px",
+                display: "inline-block",
+                fontFamily: "Montserrat",
+                fontWeight: "900",
+              }}
+              repeat={Infinity}
+            />
+          </div>
+          <div className={styles.nameTxtMobile}>
+            <TypeAnimation
+              sequence={["I'm Beckie Morton", 1000]}
+              wrapper="span"
+              speed={30}
+              style={{
+                fontSize: "18px",
+                display: "inline-block",
+                fontFamily: "Montserrat",
+                fontWeight: "900",
+              }}
+              repeat={Infinity}
+            />
+          </div>
         </div>
         <div className={styles.headerBox}>
           <h1>Frontend Developer</h1>
         </div>
-        <div className={styles.headerBox}>
+        <div className={styles.headerImageDesktop}>
           <img src="./assets/profile-bec-sqr.jpg" alt="profile pic of beckie" />
         </div>
         <div className={styles.headerBox}>

@@ -1,66 +1,68 @@
 /* default styles for mobile */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .outer_containerWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 128px 0;
+  background-color: #fff;
 }
 
-.wrapper_projects {
-  width: 820px;
-  display: flex;
-  flex-direction: column;
-  gap: 128px;
-  margin: 0 auto;
-}
-
-.projectContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 100%;
-  gap: 24px;
-}
-
-.projectsHeader h1 {
+.wrapper_projects h1 {
   color: #0b24f5;
+
+  font-size: 56px;
   text-align: center;
-  font-size: 80px;
+  padding: 1.5em 0 1em 0;
 }
 
-.textContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  width: calc(100% - 280px - 24px);
-  max-height: 280px;
+.wrapper_projects h2 {
+  font-size: 29px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  padding: 0 0.6em;
 }
 
-.textContainer h2 {
-  font-size: 32px;
-  padding-bottom: 0;
+.wrapper_projects p {
+  padding: 0.5em 1em;
+  text-align: left;
+  color: black;
+  max-width: 100%;
 }
 
-.textContainer p {
-  padding-top: 0;
-  padding-bottom: 0;
+.mobileLinks {
+  display: none;
+}
+
+.articleButton {
+  text-align: left;
+}
+
+.read-article-button:hover,
+.articleButton:hover {
+  content: url("./assets/Read-On-Medium-Hover.png");
 }
 
 .projectImage {
-  width: 280px;
-  height: 280px;
+  width: calc(100% - 2em);
+  max-width: 470px;
+  height: 240px;
   flex-shrink: 0;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: top;
   border-bottom: 10px solid #0b24f5;
   border-left: 10px solid #0b24f5;
   background: lightgray 50% / cover no-repeat;
+  margin: 0 1em;
+  box-sizing: content-box;
 }
 
-.displayName {
-  font-style: normal;
-  line-height: normal;
+.articleButton {
+  padding: 1.5em 0 3em 1em;
+  display: flex;
+  justify-content: left;
 }
 
 .text {
@@ -80,7 +82,7 @@
 .skillsList {
   display: flex;
   list-style-type: none;
-  padding: 0;
+  padding-left: 1em;
   gap: 10px;
   margin-bottom: 10px;
 }

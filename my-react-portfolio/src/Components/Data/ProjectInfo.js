@@ -6,7 +6,7 @@ export const ProjectInfo = [
     netlifyUrl: "https://airportfinder.netlify.app/",
     gitUrl: "https://github.com/BeckieMorton/final-project-airportfinder",
     className: "AirportFinder",
-    skills: ["HTML", "CSS", "React", "Zustand", "MongoDB", "APIs"],
+    skills: ["HTML", "CSS", "React", "Zustand", "APIs"],
     text: "My final bootcamp project. An accessible airport search application (search by name, Iata code, city, country), links to 5 APIs (inlcuding my own) and several react libraries including zustand global state management.",
   },
 
