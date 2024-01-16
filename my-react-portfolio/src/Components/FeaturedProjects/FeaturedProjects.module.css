@@ -1,80 +1,110 @@
-.projectsContainer {
-  background-color: #ffffff;
+.outer_containerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 128px 0;
+}
+
+.wrapper_projects {
+  width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+  margin: 0 auto;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  gap: 24px;
+}
+
+h1.projectsHeader {
   color: #0b24f5;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 5em 0 5em 0;
-}
-
-.projectsContainer h1 {
   text-align: center;
-  color: blue;
-  font-size: 56px;
 }
 
-.live-demo-button,
-.view-code-button {
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: calc(100% - 280px - 24px);
+  max-height: 280px;
+}
+
+.textContainer h2 {
+  font-size: 32px;
+}
+
+.projectImage {
+  width: 280px;
+  height: 280px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-bottom: 10px solid #0b24f5;
+  border-left: 10px solid #0b24f5;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.displayName {
+  font-style: normal;
+  line-height: normal;
+}
+
+.text {
+  color: #000;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 500px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px 0;
+}
+
+.skillsList {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.skillsList li {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 2px 6px;
+  background: #000;
+}
+
+.iconContainer {
+  display: inline-flex;
+  align-items: flex-start;
+  margin-top: auto;
+  gap: 32px;
+  margin-top: 60px;
+}
+
+.liveDemo,
+.viewCode {
   margin-top: 0.5em;
 }
 
-.live-demo-button:hover {
+.liveDemo:hover {
   content: url("./assets/Live-Demo-Button-Hover.png");
 }
 
-.view-code-button:hover {
+.viewCode:hover {
   content: url("./assets/View-Code-Button-Hover.png");
-}
-
-/*media query for tablet*/
-@media screen and (min-width: 668px) and (max-width: 1024px) {
-  .projectsContainer h1 {
-    font-size: 56px;
-  }
-
-  .projects-child {
-    grid-column: span 2;
-  }
-}
-
-/*media query for desktop */
-@media (min-width: 1025px) {
-  .projectsContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    color: black;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid black;
-  }
-
-  .projectsContainer > div:first-child .projectsBox {
-    grid-column: span 2;
-  }
-
-  .projectsContainer img {
-    padding: 1em;
-  }
-
-  .projectsHeader h1 {
-    color: #0025ff;
-    text-align: center;
-    font-size: 80px;
-    padding: 1em 0;
-  }
-
-  .projectsThumbnail {
-    height: 260px;
-    width: 260px;
-    border-bottom: 20px solid #0025ff;
-    border-left: 20px solid #0025ff;
-  }
-
-  .liveDemoButton:hover {
-    content: url("./assets/Live-Demo-Button-Hover.png");
-  }
-
-  .viewCodeButton:hover {
-    content: url("./assets/View-Code-Button-Hover.png");
-  }
 }
