@@ -1,3 +1,5 @@
+/* default styles for mobile */
+
 .headerContainer h1 {
   font-size: 30px;
   text-align: center;
@@ -36,6 +38,82 @@
 
 .mobileLinks {
   display: block;
+}
+
+/* Media query for tablet */
+@media screen and (min-width: 600px) and (max-width: 824px) {
+  .mobileLinks {
+    display: none;
+  }
+
+  .headerContainer {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 5em 0 0 3em;
+  }
+
+  .headerContainer > div:nth-child(1) {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+  }
+
+  .headerContainer > div:nth-child(2) {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+  }
+
+  .headerContainer > div:nth-child(3),
+  .headerContainer > div:nth-child(4) {
+    grid-row: 3 / span 1;
+    grid-column: span 1;
+  }
+
+  .headerContainer > div:nth-child(3),
+  .headerContainer > div:nth-child(4) p {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  .headerContainer > div:nth-child(4) {
+    align-items: center;
+    padding: 0.5em 0 0 4em;
+  }
+
+  .headerContainer h1,
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .headerBox {
+    grid-column: span 2;
+    margin: 0;
+  }
+
+  .headerContainer h1 {
+    font-size: 56px;
+    color: blue;
+    text-align: left;
+  }
+
+  .headerContainer h2 {
+    font-size: 24px;
+    padding: 0;
+  }
+
+  .headerBox p {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .headerContainer img {
+    max-width: 164px;
+    max-height: 164px;
+    border-radius: 50%;
+  }
 }
 
 /*media query for desktop - 2 rows */

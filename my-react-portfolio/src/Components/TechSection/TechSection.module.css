@@ -1,8 +1,41 @@
+/* default styles for mobile */
 .techContainer {
   background-color: #0b24f5;
   color: #ffffff;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+}
+
+/* Media query for tablet */
+@media screen and (min-width: 600px) and (max-width: 824px) {
+  .techContainer {
+    display: block;
+    margin-top: 2em;
+    padding: 8em 7em;
+  }
+
+  .leftBox {
+    background-color: #0b24f5;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .leftBox h1 {
+    font-size: 56px;
+    color: #ffffff;
+  }
+
+  .rightBox {
+    background-color: #0b24f5;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5em 2em 0 2em;
+    font-weight: 800;
+  }
+
+  .rightBox p {
+    font-size: 24px;
+  }
 }
 
 /*media query for desktop - 2 rows */

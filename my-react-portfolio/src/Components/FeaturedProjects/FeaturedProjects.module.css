@@ -1,3 +1,4 @@
+/* default styles for mobile */
 .outer_containerWrapper {
   display: flex;
   flex-direction: column;
@@ -114,7 +115,7 @@
 
 .liveDemo::before,
 .viewCode::before {
-  content: ""; /* Empty content for pseudo-element */
+  content: "";
   position: absolute;
   top: -5px;
   left: 0;
@@ -122,8 +123,8 @@
   height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  transition: opacity 0.3s ease; /* Add a smooth transition effect for opacity */
-  opacity: 0; /* Initially hide the pseudo-element */
+  transition: opacity 0.3s ease;
+  opacity: 0;
 }
 
 .liveDemo::before {
@@ -136,5 +137,293 @@
 
 .liveDemo:hover::before,
 .viewCode:hover::before {
-  opacity: 1; /* Show the pseudo-element on hover */
+  opacity: 1;
+}
+
+/* Media query for tablet */
+@media screen and (min-width: 600px) and (max-width: 824px) {
+  .outer_containerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 128px 0;
+  }
+
+  .wrapper_projects {
+    width: 820px;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    margin: 0 auto;
+  }
+
+  .projectContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .projectsHeader h1 {
+    color: #0b24f5;
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: calc(100% - 280px - 24px);
+    max-height: 280px;
+  }
+
+  .textContainer h2 {
+    font-size: 32px;
+    padding-bottom: 0;
+  }
+
+  .textContainer p {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .projectImage {
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-bottom: 10px solid #0b24f5;
+    border-left: 10px solid #0b24f5;
+    background: lightgray 50% / cover no-repeat;
+  }
+
+  .displayName {
+    font-style: normal;
+    line-height: normal;
+  }
+
+  .text {
+    color: #000;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 500px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px 0;
+  }
+
+  .skillsList {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .skillsList li {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 2px 6px;
+    background: #000;
+  }
+
+  .iconContainer {
+    display: inline-flex;
+    align-items: flex-start;
+    margin-top: auto;
+    gap: 2px;
+    margin-top: 6px;
+  }
+
+  /* redone for accessibility in Edge, Firefox and Chrome */
+  .liveDemo,
+  .viewCode {
+    margin-top: 0.5em;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .liveDemo::before,
+  .viewCode::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .liveDemo::before {
+    background-image: url("./assets/Live-Demo-Button-Hover.png");
+  }
+
+  .viewCode::before {
+    background-image: url("./assets/View-Code-Button-Hover.png");
+  }
+
+  .liveDemo:hover::before,
+  .viewCode:hover::before {
+    opacity: 1;
+  }
+}
+
+/* media query for desktop */
+@media screen and (min-width: 825px) {
+  .outer_containerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 128px 0;
+  }
+
+  .wrapper_projects {
+    width: 820px;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    margin: 0 auto;
+  }
+
+  .projectContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .projectsHeader h1 {
+    color: #0b24f5;
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: calc(100% - 280px - 24px);
+    max-height: 280px;
+  }
+
+  .textContainer h2 {
+    font-size: 32px;
+    padding-bottom: 0;
+  }
+
+  .textContainer p {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .projectImage {
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-bottom: 10px solid #0b24f5;
+    border-left: 10px solid #0b24f5;
+    background: lightgray 50% / cover no-repeat;
+  }
+
+  .displayName {
+    font-style: normal;
+    line-height: normal;
+  }
+
+  .text {
+    color: #000;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 500px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px 0;
+  }
+
+  .skillsList {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .skillsList li {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 2px 6px;
+    background: #000;
+  }
+
+  .iconContainer {
+    display: inline-flex;
+    align-items: flex-start;
+    margin-top: auto;
+    gap: 2px;
+    margin-top: 6px;
+  }
+
+  /* redone for accessibility in Edge, Firefox and Chrome */
+  .liveDemo,
+  .viewCode {
+    margin-top: 0.5em;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .liveDemo::before,
+  .viewCode::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .liveDemo::before {
+    background-image: url("./assets/Live-Demo-Button-Hover.png");
+  }
+
+  .viewCode::before {
+    background-image: url("./assets/View-Code-Button-Hover.png");
+  }
+
+  .liveDemo:hover::before,
+  .viewCode:hover::before {
+    opacity: 1;
+  }
 }
