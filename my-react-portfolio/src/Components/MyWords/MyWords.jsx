@@ -11,8 +11,13 @@ export const MyWords = () => {
       <div className={styles.wordsBox}>
         <p>
           <img
-            className={styles.wordsBoxImage}
+            className={styles.wordsBoxImageDesktop}
             src="./assets/mywords.jpg"
+            alt="image placer for my words"
+          />
+          <img
+            className={styles.wordsBoxImageTablet}
+            src="./assets/mywords-tablet.jpg"
             alt="image placer for my words"
           />
         </p>
