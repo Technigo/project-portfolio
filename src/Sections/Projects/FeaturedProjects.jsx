@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { MainHeading } from "../../ReusableComponents/Typography/MainHeading";
 import { ProjectCard } from "./ProjectCard";
 
+const token = import.meta.env.GH_TOKEN;
 const API = "https://api.github.com/users/LauraLyckholm/repos";
 
 // Component for the featured projects section. Data is fetched here from the Github API and the structure of the section is set up. 
@@ -14,7 +15,11 @@ export const FeaturedProjects = () => {
     // Function to fetch projects from the GitHub API.
     const fetchProjects = async () => {
         try {
-            const response = await fetch(API);
+            const response = await fetch(API, {
+                headers: {
+                    "Authorization": `${token}`,
+                }
+            });
 
             if (!response.ok) {
                 // Handle error, show an error-message in validation p-tag if something goes wrong.
