@@ -1,15 +1,30 @@
 import { useState } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 import styles from "./Header.module.css";
 
 export const Header = () => {
-  const [hideInfo, setHideInfo] = useState(false);
-
   return (
     <>
       <div className={styles.headerContainer}>
         <div className={styles.headerBox}>
-          <h2>Hi, I'm Beckie Morton</h2>
+          {/* <h2>Hi, I'm Beckie Morton</h2> */}
+          <TypeAnimation
+            sequence={[
+              // Same substring at the start will only be typed out once, initially
+              "I'm Beckie Morton",
+              1000,
+            ]}
+            wrapper="span"
+            speed={70}
+            style={{
+              fontSize: "32px",
+              display: "inline-block",
+              fontFamily: "Montserrat",
+              fontWeight: "900",
+            }}
+            repeat={Infinity}
+          />
         </div>
         <div className={styles.headerBox}>
           <h1>Frontend Developer</h1>

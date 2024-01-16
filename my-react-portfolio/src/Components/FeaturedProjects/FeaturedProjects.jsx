@@ -6,45 +6,24 @@ import { useEffect, useState } from "react";
 
 export const FeaturedProjects = () => {
   const [myGits, setMyGits] = useState([]);
-  const [NamesOfGits, setNamesOfGits] = useState([
-    "final-project-airportfinder",
-    "project-design-handoff-vite",
-    "project-happy-thoughts-vite",
-  ]);
 
-  const myGitHubURL = "https://api.github.com/users/BeckieMorton/repos";
+  ///--REMOVED API Fetch from github for my resubmit and have created my own object data file to keep information about the exact projects I wanted to display.
 
+  // const myGitHubURL = "https://api.github.com/users/BeckieMorton/repos";
   //const sortedbyPush = "https://api.github.com/users/BeckieMorton/repos?sort=pushed_at";
-
   //get my GitHub info from the GitHub API
-  useEffect(() => {
-    const getMyProjects = () => {
-      fetch(myGitHubURL)
-        .then((response) => response.json())
-        .then((data) => {
-          setMyGits(data);
-        })
-        .catch((error) => console.error("Failed to fetch info", error));
-    };
+  // useEffect(() => {
+  //   const getMyProjects = () => {
+  //     fetch(myGitHubURL)
+  //       .then((response) => response.json())
+  //       .then((data) => {
+  //         setMyGits(data);
+  //       })
+  //       .catch((error) => console.error("Failed to fetch info", error));
+  //   };
 
-    getMyProjects();
-  }, [myGitHubURL]);
-
-  const formatGitName = (name) => {
-    let newName = name.split("-").join(" ");
-
-    const capitals = newName.split(" ");
-    for (var i = 0; i < capitals.length; i++) {
-      capitals[i] = capitals[i].charAt(0).toUpperCase() + capitals[i].slice(1);
-    }
-
-    const newCapitalisedName = capitals.join(" ");
-    console.log(newCapitalisedName);
-
-    return newCapitalisedName;
-  };
-
-  console.log(`myGits`, myGits);
+  //   getMyProjects();
+  // }, [myGitHubURL]);
 
   return (
     <div className={styles.outer_containerWrapper}>
@@ -62,9 +41,7 @@ export const FeaturedProjects = () => {
 
             <div className={styles.textContainer}>
               <h2 className={styles.displayName}>{project.displayName}</h2>
-
               <p className={styles.text}>{project.text}</p>
-
               <ul className={styles.skillsList}>
                 {project.skills.map((skill) => (
                   <li key={skill}>{skill}</li>
@@ -74,7 +51,7 @@ export const FeaturedProjects = () => {
               <div className={styles.iconContainer}>
                 <a
                   className={styles.liveDemo}
-                  href={project.gitUrl}
+                  href={project.netlifyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -86,7 +63,7 @@ export const FeaturedProjects = () => {
 
                 <a
                   className={styles.viewCode}
-                  href={project.netlifyUrl}
+                  href={project.gitUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
