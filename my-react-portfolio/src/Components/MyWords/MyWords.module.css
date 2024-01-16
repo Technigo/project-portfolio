@@ -1,9 +1,29 @@
 .wordsContainer {
   background-color: #ffecea;
   color: #ff4575;
-  padding: 15px;
   align-items: center;
   text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wordsContainer {
+  background-color: #ffecea;
+}
+
+h1.mywordsHeader {
+  color: #ff4575;
+  padding: 50px 0;
+}
+
+.waveLine {
+  background: url("./assets/waveline-cropped.png");
+  background-repeat: repeat-x;
+  width: 100%;
 }
 
 .wordsContainer h1 {
@@ -21,15 +41,35 @@
 
 /* Media query for desktop - 2 rows */
 @media (min-width: 1025px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   .wordsContainer {
-    display: grid;
     background-color: #ffecea;
+  }
+
+  .wordsContainer h1 {
     color: #ff4575;
-    padding: 15px;
-    align-items: center;
+    padding: 50px 0;
+    font-size: 80px;
     text-align: center;
-    margin: auto;
-    width: 100%;
+  }
+
+  .waveLine {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, [col] minmax(auto, 1fr));
+    grid-auto-flow: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .waveLine img {
+    margin: 0;
+    padding: 0;
+    border: none;
   }
 
   .wordsContainer h1 {
@@ -38,7 +78,7 @@
 
   .wordsContainer h2 {
     font-size: 24px;
-    color: black; /* Set the color here if it's specific to the desktop view */
+    color: black;
   }
 
   .mobileLinks {

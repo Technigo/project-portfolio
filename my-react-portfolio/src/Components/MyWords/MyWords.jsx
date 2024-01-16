@@ -3,6 +3,10 @@ import styles from "./MyWords.module.css";
 export const MyWords = () => {
   return (
     <div className={styles.wordsContainer}>
+      <div className={styles.waveLine}>
+        <p>&nbsp;</p>
+      </div>
+
       <h1>My Words</h1>
       <div className={styles.wordsBox}>
         <img src="./assets/mywords.jpg" alt="image placer for my words" />
