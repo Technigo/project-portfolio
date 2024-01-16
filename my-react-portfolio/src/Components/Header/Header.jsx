@@ -16,7 +16,7 @@ export const Header = () => {
               1000,
             ]}
             wrapper="span"
-            speed={70}
+            speed={30}
             style={{
               fontSize: "32px",
               display: "inline-block",
