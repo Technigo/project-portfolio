@@ -39,6 +39,5 @@ https://wk8-beckiemorton-react-portfolio.netlify.app/
 
 ### Screenshots
 
-![Screenshot of App](/my-react-portfolio/public/assets//screenshot1.png?raw=true "Screenshot of frontpage") 
-
+![Screenshot of App](/my-react-portfolio/public/Assets//screenshot1.png?raw=true "Screenshot of frontpage") 
 
