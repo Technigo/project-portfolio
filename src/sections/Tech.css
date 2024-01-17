@@ -1,0 +1,88 @@
+.tech .wrapper {
+  display: flex;
+  background: blue;
+  width: 100%;
+  height: 616px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 56px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 128px 16px 64px 16px;
+}
+
+.tech p {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 343px;
+  margin: 0 16px 128px 16px;
+}
+
+/* For tablets and above*/
+@media (min-width: 744px) and (max-width: 1280px) {
+  .tech .wrapper {
+    display: flex;
+    height: 796px;
+    padding: 256px 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .tech p {
+    width: 616px;
+    color: #fff;
+    text-align: center;
+    font-family: Hind;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+/* For desktops and above */
+@media (min-width: 1281px) {
+  .tech .wrapper {
+    flex-direction: row;
+    height: 980px;
+
+    grid-column: 1 / 12;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0px 128px 0px 230px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 124px;
+    flex-shrink: 0;
+    height: 980px;
+  }
+
+  .tech h1 {
+    font-size: 80px;
+  }
+
+  .tech p {
+    font-size: 32px;
+    width: 600px;
+    height: 255px;
+  }
+
+  /* .tech h1,
+  p {
+    display: inline-flex;
+  } */
+}
