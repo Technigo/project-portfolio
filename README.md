@@ -41,3 +41,7 @@ https://wk8-beckiemorton-react-portfolio.netlify.app/
 
 ![Screenshot of App](/my-react-portfolio/public/Assets//screenshot1.png?raw=true "Screenshot of frontpage") 
 
+![Screenshot of App](/my-react-portfolio/public/Assets//screenshot1.png?raw=true "Screenshot of featured projects") 
+
+![Screenshot of App](/my-react-portfolio/public/Assets//screenshot1.png?raw=true "Screenshot of my words") 
+
