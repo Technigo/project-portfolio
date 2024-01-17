@@ -1,3 +1,9 @@
+.divider-container {
+  width: 100%;
+  display: block; 
+  justify-content: center; 
+}
+
 .divider {
   width: 100%;
   display: block; 
@@ -10,6 +16,9 @@
   padding: 20px;
   text-align: left;
   background-color: #fff;
+  max-width: 1300px; /* Match the width of articles-container */
+  margin-left: auto;
+  margin-right: auto; 
 }
 
 .words-container h1 {
@@ -17,16 +26,15 @@
   font-size: 4em;
   font-family: "Montserrat", sans-serif;
   text-align: left;
+  margin-left: 40px; /* This should be equal to the left padding + left margin of .article-image */
+  margin-bottom: 0;
 }
 
 .articles-container {
   display: flex;
   gap: 100px;
   padding: 20px;
-  text-align: left;
-  max-width: 1300px; 
-  margin-left: auto;
-  margin-right: auto; 
+  text-align: left; 
 }
 
 .article {
@@ -101,16 +109,19 @@
 
 /* Tablet styles */
 @media (max-width: 768px) {
+  .words-container {
+    padding: 20px; /* Adjust padding to match the articles container on tablet */
+  }
+  
   .words-container h1 {
-    margin-left: 0; 
-    font-size: 3em; 
+    font-size: 3em;
+    margin-left: 20px;
   }
 
   .articles-container {
+    padding: 20px;
     display: block; 
-    max-width: 600px; 
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 600px;
   }
 
   .article-date, .article h2, .article p, .read-article-btn {
@@ -126,9 +137,15 @@
 
 /* Mobile styles */
 @media (max-width: 480px) {
+  .words-container {
+    padding: 10px; /* Adjust padding to match the articles container on mobile */
+  }
+  
   .words-container h1 {
     font-size: 2em; 
-    text-align: center;
+    text-align: left;
+    margin-left: 10px; /* Adjust this to match the left margin of the article-image on mobile */
+    margin-top: 0; 
   }
 
   .articles-container {

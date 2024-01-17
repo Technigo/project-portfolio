@@ -7,8 +7,11 @@ import docIcon from '../assets/Doc.jpg';
 
 const Words = () => {
   return (
-    <div className="words-container">
+    <>
+    <div className="divider-container">
       <img className="divider" src={divider} alt="Divider" />
+    </div>
+    <div className="words-container">
       <h1>My words</h1>
       <div className="articles-container">
         <div className="article">
@@ -33,6 +36,7 @@ const Words = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
