@@ -9,7 +9,7 @@ import { FeaturedP } from './Components/FeaturedP/FeaturedP'
 //import { Mywords } from './Components/Mywords'
 import { Skills } from './Components/Skills'
 import { Contact } from './Components/Contact'
-import { Footer } from './Components/Footer'
+// import { Footer } from './Components/Footer'
 
 const App = () => {
   //Renders components
@@ -20,7 +20,6 @@ const App = () => {
       <FeaturedP />
       <Skills />
       <Contact />
-      <Footer />
     </div>
   )
 }
