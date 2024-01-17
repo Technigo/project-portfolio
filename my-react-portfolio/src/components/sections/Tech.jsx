@@ -4,9 +4,8 @@ import { Paragraph } from "../reusables/Paragraph"
 
 export const Tech = () => {
     return (
-        <article className="tech">
-            <section className="main-container">
-            <section className="tech-wrapper">
+            <div className="tech-container">
+            <div className="tech-text-wrapper">
                 <div className="tech-heading">
                     <Heading
                         heading="Tech"
@@ -14,11 +13,10 @@ export const Tech = () => {
                 </div>
                 <div className="tech-skills">
                     <Paragraph
-                        text="HTML, CSS, JavaScript, ReactJS, GitHub, mob programming, APIs, Web Accessibility."
+                        text="HTML, CSS, JavaScript, ReactJS, GitHub, mob programming, APIs, Web Accessibility, Express.js, MongoDB."
                         className="tech-text" />
                 </div>
-            </section>
-            </section>
-        </article>
+            </div>
+            </div>
     )
 }

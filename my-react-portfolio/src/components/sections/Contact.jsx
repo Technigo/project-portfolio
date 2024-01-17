@@ -13,6 +13,7 @@ export const Contact = () => {
                     className="contact-heading" />
                 <ProfileImage
                     className="contact-img" />
+                    <div className="contact-info-wrapper">
                 <SubHeading
                     subHeading="Olga Lepistö"
                     className="contact-info" />
@@ -22,6 +23,7 @@ export const Contact = () => {
                 <SubHeading
                     subHeading="olga.lepisto@gmail.com"
                     className="contact-info" />
+                    </div>
             </section>
             </section>
         </article>

@@ -1,4 +1,3 @@
-import { InfoButton } from './InfoButton.jsx'
 import { SubHeading } from './SubHeading.jsx'
 import { Paragraph } from './Paragraph.jsx'
 import { LinkButton } from './LinkButton.jsx'
@@ -59,12 +58,8 @@ export const ProjectBox = () => {
                                     className="project-text" />
                             </div>
                             <div className="info-buttons">
-                                <InfoButton 
-                                    buttonText="HTML"
-                                    className="info-button" />
-                                <InfoButton
-                                    buttonText="CSS"
-                                    className="info-button" />
+                                <p className="tech-details">HTML</p>
+                                <p className="tech-details">CSS</p>
                             </div>
                             <div className="link-buttons">
                                 <LinkButton

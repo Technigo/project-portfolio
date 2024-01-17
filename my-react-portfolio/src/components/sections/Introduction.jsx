@@ -6,27 +6,25 @@ import { Paragraph } from '../reusables/Paragraph.jsx'
 
 export const Introduction = () => {
     return (
-        <header>
-            <section className="main-container">
-            <section className="heading-container">
-                <SubHeading 
+        <div className="header-container">
+            <div className="heading-container">
+                <SubHeading
                     subHeading="Hi, I'm Olga Lepistö"
                     className="intro-sub" />
                 <Heading
                     heading="Frontend Developer"
                     className="intro-heading" />
-            </section>
-            <section className="intro-info">
+            </div>
+            <div className="intro-info">
                 <ProfileImage
                     className="intro-img" />
-                <div className="intro-info">
+                <div className="intro-text">
                     <Paragraph
                         text="Olga is a web development student at Technigo's boot camp in autumn 2023.
                         She especially loves working with CSS and React."
                         className="about-me" />
                 </div>
-            </section>
-            </section>
-        </header>
+            </div>
+        </div>
     )
 }
