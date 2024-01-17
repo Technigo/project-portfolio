@@ -9,6 +9,11 @@
   background-color: #fff;
 }
 
+.iconContainer {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .wrapper_projects h1 {
   color: #0b24f5;
 
@@ -34,6 +39,10 @@
 
 .mobileLinks {
   display: none;
+}
+
+.iconContainer {
+  padding-bottom: 3em;
 }
 
 .articleButton {
@@ -158,18 +167,31 @@
     margin: 0 auto;
   }
 
+  .iconContainer {
+    display: inline-flex;
+    align-items: flex-start;
+    margin-top: 3em;
+    gap: 2px;
+    margin-top: 6px;
+  }
+
+  .iconContainer {
+    padding-bottom: 3em;
+  }
+
   .projectContainer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
-    padding: 0 3em 0 1em;
+    padding: 1em 3em 7em 1em;
   }
 
   .projectsHeader h1 {
     color: #0b24f5;
-    text-align: center;
-    font-size: 80px;
+    text-align: left;
+    font-size: 56px;
+    padding-left: 1em;
   }
 
   .textContainer {
@@ -188,6 +210,12 @@
   .textContainer p {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .iconContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 2em;
   }
 
   .projectImage {
@@ -222,7 +250,6 @@
   .skillsList {
     display: flex;
     list-style-type: none;
-    padding: 0;
     gap: 10px;
     margin-bottom: 10px;
   }
@@ -383,11 +410,12 @@
   }
 
   .iconContainer {
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
     margin-top: auto;
     gap: 2px;
     margin-top: 6px;
+    flex-wrap: wrap;
   }
 
   /* redone for accessibility in Edge, Firefox and Chrome */

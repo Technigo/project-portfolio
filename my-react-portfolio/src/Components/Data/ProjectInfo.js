@@ -40,7 +40,7 @@ export const ProjectInfo = [
     gitUrl:
       "https://github.com/BeckieMorton/project-custom-hooks-qr-code-generator-vite",
     className: "QrCode",
-    skills: ["HTML", "CSS", "React", "React Custom Hooks"],
+    skills: ["HTML", "CSS", "React", "Custom Hooks"],
     text: "React & Vite Boiler Plate project to Generate QR codes from URLs, utilising custom hooks for efficient state management.",
   },
 
