@@ -36,3 +36,9 @@ Through this project, I have learned invaluable lessons in React development. I 
 ## View it live here!
 
 https://wk8-beckiemorton-react-portfolio.netlify.app/
+
+### Screenshots
+
+![Screenshot of App](/my-react-portfolio/public/assets//screenshot1.png?raw=true "Screenshot of frontpage") 
+
+
