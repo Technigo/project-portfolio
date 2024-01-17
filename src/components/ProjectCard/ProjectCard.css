@@ -1,85 +1,107 @@
 .project-card {
-    width: 100%;
-    padding: 16px;
+  width: 100%;
+  padding: 16px;
 }
 
 .project-image-wrapper {
-    width: 100%;
-    height: calc(12.5rem - 20px);
-    position: relative;
-    margin-bottom: 0px;
-    border-bottom: 10px solid #0B24F5;
-    border-left: 10px solid #0B24F5;
-    overflow: hidden;
+  width: 100%;
+  height: calc(12.5rem - 20px);
+  position: relative;
+  margin-bottom: 0px;
+  border-bottom: 10px solid #0b24f5;
+  border-left: 10px solid #0b24f5;
+  overflow: hidden;
 }
 
 .project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project-details {
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .project-name {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
-p, h3, .tag-list, .link-container {
-    text-align: left;
+p,
+h3,
+.tag-list,
+.link-container {
+  text-align: left;
+}
+
+h3 {
+  color: #000;
+
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+p {
+  color: #000;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .tag-list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .tag-list li {
-    background-color: #000000;
-    color: white;
-    padding: 1px 4px;
+  background-color: #000000;
+  color: white;
+  padding: 1px 4px;
 }
 
 .link-container {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-top: auto;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: auto;
 }
 
 @media (min-width: 376px) and (max-width: 743px) {
-    .project-card {
-        width: 100%;
-        flex-direction: row;
-    }
+  .project-card {
+    width: 100%;
+    flex-direction: row;
+  }
 
-    .project-details {
-        padding-left: 16px;
-    }
+  .project-details {
+    padding-left: 16px;
+  }
 }
 
 @media (min-width: 744px) {
-    .project-card {
-        display: flex;
-        flex-direction: row;
-    }
+  .project-card {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .project-image-wrapper {
-        width: 30%;
-        height: auto;
-    }
+  .project-image-wrapper {
+    width: 30%;
+    height: auto;
+  }
 
-    .project-details {
-        width: 70%;
-        padding-left: 16px;
-    }
+  .project-details {
+    width: 70%;
+    padding-left: 16px;
+  }
 }
