@@ -1,4 +1,3 @@
-// import { useState, useEffect } from "react";
 import { Project } from "../../components/Project/Project";
 import "./Projects.css";
 
@@ -7,7 +6,7 @@ export const Projects = ({ projectData }) => {
   return (
     <div className="featured-projects-container">
       <div className="featured-projects">
-        <h2 className="featured-projects-title">Featured Projects</h2>
+        <h1 className="featured-projects-title">Featured Projects</h1>
         {repoData
           ? repoData.map((item) => (
               <Project

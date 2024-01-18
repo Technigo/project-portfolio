@@ -1,12 +1,14 @@
 import caroLImage from "../../assets/CaroL.jpg";
 import arrowImage from "../../assets/Arrow.svg";
 import "./Header.css";
-// import "././App.css";
+// import "App.css";
 import "animate.css";
 
 export const Header = () => {
   // const scrollTo = () =>
-  //   document.getElementById("scrollTo").scrollIntoView({ behavior: "smooth" });
+  //   document
+  //     .getElementById("next-section")
+  //     .scrollIntoView({ behavior: "smooth" });
   return (
     <div className="header grid-parent">
       <div className="wrapper">
@@ -15,6 +17,7 @@ export const Header = () => {
           src={caroLImage}
           alt="A picture of CaroLuna"
         />
+
         <div className="name-and-title">
           <h1>Hi! I&apos;m Carolina Luna</h1>
           <h2>Frontend Developer</h2>
