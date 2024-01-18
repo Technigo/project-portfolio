@@ -5,6 +5,7 @@ import { Skills } from './components/Skills/Skills'
 import { Footer } from './components/Footer/Footer'
 import { Articles } from './components/Articles/Articles'
 import './App.css'
+import { Contact } from './components/Contact/Contact'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Section/>
       <Articles/>
       <Skills/>
+      <Contact/>
       <Footer/>
     </>
   )

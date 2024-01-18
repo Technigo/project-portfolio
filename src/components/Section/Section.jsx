@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import './Section.css';
 import projectsData from '../../../projects.json';
 import { Buttons } from '../Buttons/Buttons';
 import GithubIcon from '../../../public/Icons/GithubIcon.svg';
 import LiveDemoIcon from '../../../public/Icons/NetlifyIcon.svg';
+import './Section.css';
 
 
 export const Section = () => {

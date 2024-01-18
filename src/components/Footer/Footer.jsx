@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className="footer-text">
-        {Array(100).fill("Sandra Gustafsson · Frontend Developer · ").join(' ')}
+        {Array(100).fill("Isaac Kamran · Frontend Developer · ").join(' ')}
       </div>
     </footer>
   );

@@ -5,23 +5,23 @@ import waveLine from "../../assets/dividerLarge.png";
 
 const exampleArticles = [
   {
-    imageUrl: "images/img.png",
+    imageUrl: "Images/Article.png",
     title: "Emotions during a bootcamp!",
     preview:
       "Attending a web developer bootcamp is an emotional rollercoaster. It's a constant....",
-    link: "https://www.linkedin.com/posts/sandra-gustafsson-3665061a5_frontend-developer-bootcamp-activity-7130534507249606656-mJbW/?utm_source=share&utm_medium=member_desktop",
+    link: "https://www.linkedin.com/in/isaac-kamran/",
     publishDate: "November 24, 2023",
   },
   {
-    imageUrl: "images/img-2.png",
+    imageUrl: "Images/Article.png",
     title: "Exited to share our final project",
     preview:
       "After weeks of hard work and collaboration, our team  consisting of myself, Frida, Caro, and Emmy is thrilled to present our.... ",
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7152998899408871425/",
+    link: "https://www.linkedin.com/in/isaac-kamran/",
     publishDate: "January 16, 2024",
   },
   {
-    imageUrl: "images/img-3.png",
+    imageUrl: "Images/Article.png",
     title: "The Future of Web",
     preview:
       "A look into the future trends and technologies that are shaping the web...",
@@ -29,7 +29,7 @@ const exampleArticles = [
     publishDate: "October 1, 2023",
   },
   {
-    imageUrl: "images/img-4.png",
+    imageUrl: "Images/Article.png",
     title: "CSS Secrets and Tips",
     preview:
       "Unravel the secrets of CSS to build beautiful and responsive designs...",
