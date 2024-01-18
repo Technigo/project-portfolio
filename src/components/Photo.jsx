@@ -2,6 +2,7 @@
 import "./Photo.css";
 
 export const Photo = ({ mode, color, source }) => {
-  console.log(source);
-  return <img src={source} className={`photo ${color} ${mode}`} />;
+  return (
+    <img src={source} className={`photo ${color} ${mode}`} alt="description" />
+  );
 };

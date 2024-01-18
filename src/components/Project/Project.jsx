@@ -57,24 +57,23 @@ export const Project = ({
           </p>
         );
       })}
-      <div className="project-buttons">
-        <Button
-          type="live-demo"
-          text="Live Demo"
-          onClick={() => handleClick(deployedLink)}
-          iconSrc={liveDemoImage}
-          iconAlt="An icon of a globe"
-          href={deployedLink}
-        />
-        <Button
-          type="view-code"
-          text="View the Code"
-          href={gitLink}
-          onClick={() => handleClick(gitLink)}
-          iconSrc={githubImage}
-          iconAlt="An icon of GitHub"
-        />
-      </div>
+
+      <Button
+        type="live-demo"
+        text="Live Demo"
+        onClick={() => handleClick(deployedLink)}
+        iconSrc={liveDemoImage}
+        iconAlt="An icon of a globe"
+        href={deployedLink}
+      />
+      <Button
+        type="view-code"
+        text="View the Code"
+        href={gitLink}
+        onClick={() => handleClick(gitLink)}
+        iconSrc={githubImage}
+        iconAlt="An icon of GitHub"
+      />
     </>
   );
 };

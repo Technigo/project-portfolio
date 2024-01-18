@@ -1,9 +1,8 @@
-// import { useState } from "react";
 import "./App.css";
 import { Header } from "./sections/Header/Header";
 import { Tech } from "./sections/Tech/Tech";
 import { Projects } from "./sections/Projects/Projects";
-// import { MyWords } from "./sections/MyWords/MyWords";
+import { MyWords } from "./sections/MyWords/MyWords";
 import { Skills } from "./sections/Skills/Skills";
 import { LetsTalk } from "./sections/LetsTalk/LetsTalk";
 import { Footer } from "./sections/Footer/Footer";
@@ -27,7 +26,8 @@ export const App = () => {
   };
   useEffect(() => {
     apiCall();
-    // console.log(repoList);
+    console.log(repoList);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -39,7 +39,7 @@ export const App = () => {
       ) : (
         console.log("Loading...")
       )}
-      {/* <MyWords /> */}
+      <MyWords />
       <Skills />
       <LetsTalk />
       <Footer />

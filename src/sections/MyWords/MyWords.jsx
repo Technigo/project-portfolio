@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import "./MyWords.css";
 import { Button } from "../../components/Button";
-import ReadMore from "../../assets/Doc.svg";
+import readMore from "../../assets/Doc.svg";
 import waveLine from "../../assets/waveline.png";
 
 const MyWordsArticles = [
@@ -48,7 +49,8 @@ const ArticleCard = ({ imageUrl, title, preview, link, publishDate }) => {
       <Button
         type="read-more"
         text="Read More"
-        icon={<img src={ReadMore} alt="Icon" />}
+        iconSrc={readMore}
+        iconAlt="Read More Icon"
         href={link}
       />
     </div>
@@ -78,4 +80,12 @@ export const MyWords = () => {
       </div>
     </>
   );
+};
+
+ArticleCard.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  preview: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  publishDate: PropTypes.string.isRequired,
 };
