@@ -51,7 +51,7 @@ export const Header = () => {
         </div>
         <div className={styles.headerBox}>
           <p className={styles.blurb}>
-            Former International School teacher and Police Officer turned
+            Former International School teacher, turned
             passionate Frontend developer, I have a Master of Teaching as well
             as a Bachelor of Computing and bring both skills and experience to a
             new career.
