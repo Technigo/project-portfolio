@@ -1,12 +1,12 @@
-import caroLImage from "../assets/CaroL.jpg";
-import arrowImage from "../assets/Arrow.svg";
+import caroLImage from "../../assets/CaroL.jpg";
+import arrowImage from "../../assets/Arrow.svg";
 import "./Header.css";
-import "../App.css";
+// import "././App.css";
 import "animate.css";
 
 export const Header = () => {
-  const scrollTo = () =>
-    document.getElementById("scrollTo").scrollIntoView({ behavior: "smooth" });
+  // const scrollTo = () =>
+  //   document.getElementById("scrollTo").scrollIntoView({ behavior: "smooth" });
   return (
     <div className="header grid-parent">
       <div className="wrapper">
@@ -27,13 +27,13 @@ export const Header = () => {
           the technology field.
         </p>
       </div>
-      <button className="next-section-arrow" onClick={scrollTo}>
+      <div className="next-section-arrow">
         <img
           className="arrow-down"
           src={arrowImage}
           alt="arrow-pointing-down"
         />
-      </button>
+      </div>
     </div>
   );
 };

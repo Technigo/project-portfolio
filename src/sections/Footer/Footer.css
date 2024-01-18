@@ -1,0 +1,29 @@
+footer {
+  background-color: #ff4575;
+  height: 70px;
+  overflow: hidden; /* ensures the content outside the div boundaries is hidden */
+  position: relative;
+}
+
+.footer-text {
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  animation: slideText 60s linear infinite;
+}
+
+@keyframes slideText {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1000%; /* Adjust this to control the restart point */
+  }
+}

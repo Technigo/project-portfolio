@@ -1,12 +1,12 @@
 // import { useState } from "react";
 import "./App.css";
-import { Header } from "./sections/Header";
-import { Tech } from "./sections/Tech";
-import { Projects } from "./sections/Projects";
-// import { MyWords } from "./sections/mywords/MyWords";
-// import { Skills } from "./sections/skills/Skills";
-// import { LetsTalk } from "./sections/letstalk/LetsTalk";
-import { Footer } from "./sections/Footer";
+import { Header } from "./sections/Header/Header";
+import { Tech } from "./sections/Tech/Tech";
+import { Projects } from "./sections/Projects/Projects";
+// import { MyWords } from "./sections/MyWords/MyWords";
+import { Skills } from "./sections/Skills/Skills";
+import { LetsTalk } from "./sections/LetsTalk/LetsTalk";
+import { Footer } from "./sections/Footer/Footer";
 import { useEffect, useState } from "react";
 export const App = () => {
   const [repoList, setRepoList] = useState([]);
@@ -39,6 +39,9 @@ export const App = () => {
       ) : (
         console.log("Loading...")
       )}
+      {/* <MyWords /> */}
+      <Skills />
+      <LetsTalk />
       <Footer />
     </>
   );

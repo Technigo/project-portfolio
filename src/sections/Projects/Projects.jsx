@@ -1,5 +1,5 @@
 // import { useState, useEffect } from "react";
-import { Project } from "../components/Project/Project";
+import { Project } from "../../components/Project/Project";
 import "./Projects.css";
 
 export const Projects = ({ projectData }) => {
