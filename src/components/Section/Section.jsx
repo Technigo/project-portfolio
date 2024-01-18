@@ -1,40 +1,40 @@
-import { Headline } from "../Headline/Headline";
-import "./Section.css";
-import projectData from '../../../projects.json';
-import linksData from '../../../links.json';
+/* eslint-disable react/prop-types */
+import './Section.css';
+import projectsData from '../../../projects.json';
+import { Buttons } from '../Buttons/Buttons';
+import GithubIcon from '../../../public/Icons/GithubIcon.svg';
+import LiveDemoIcon from '../../../public/Icons/NetlifyIcon.svg';
+
 
 export const Section = () => {
-  return (
-    <>
-      <Headline text="Featured Projects" level={1} />
-      <div className="project-grid">
-        {projectData.projects.map((project, index) => (
-          <div className="project-card" key={index}>
-            <div className="project-image">
-              <img src={project.image} alt={project.name} />
-            </div>
-            <div className="project-details">
-              <h2 className="project-name">{project.name}</h2>
-              <div className="description-container">
-                <p>{project.description}</p>
-              </div>
-              <div className="tag-container">
-                {project.tags.map((tag, index) => (
-                  <span key={index} className="tag">{tag}</span>
-                ))}
-              </div>
-              <div className="link-container">
-                {linksData.links.map((link) => (
-                  <a key={link.id} href={link.url} target="_blank" rel="noopener noreferrer" className={link.className}>
-                    <img src={link.icon} alt={`${link.text} Icon`} className="icon" />
-                    {link.text}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        ))}
+const ProjectCard = ({ project }) => {
+
+
+return (
+  <div className='project-card'>
+    <img src={project.image} alt={`Project thumbnail for ${project.name}`} className='project-image'/>
+    <div className='project-details'>
+      <h3>{project.name}</h3>
+      <p>{project.description}</p>
+      <div className='project-tags'  aria-label="Technologies used">
+        {project.tags.map(tag => <span key={tag}>{tag}</span>)}
       </div>
-    </>
+      <div className='project-buttons'>
+      <Buttons type="live-demo" text="Live Demo" icon={<img src={LiveDemoIcon} alt="Live demo icon" />} href={project.netlify} />
+      <Buttons type="view-code" text="View the Code" icon={<img src={GithubIcon} alt="GitHub icon"/>} href={project.github} />
+      </div>
+    </div>
+  </div>
+);
+  };
+
+
+  return (
+    <div className='projects-wrapper'>
+      <div className='project-content-wrapper'>
+      <h1 className='projects-title'>Featured Projects</h1>
+      {projectsData.projects.map(project => <ProjectCard key={project.name} project={project} />)}
+    </div>
+    </div>
   );
 };

@@ -1,10 +1,11 @@
-import "./Footer.css";
+import './Footer.css';
 
 export const Footer = () => {
   return (
-    <div className="name-container">
-        <div className="isaac">Isaac Kamran &#8226; Fullstack Developer &#8226; Isaac Kamran &#8226; Fullstack Developer &#8226; Isaac Kamran &#8226; Fullstack Developer &#8226; Isaac Kamran &#8226; Fullstack Developer &#8226; Isaac Kamran &#8226; Fullstack Developer &#8226; Isaac Kamran &#8226; Fullstack Developer &#8226; Isaac Kamran &#8226; Fullstack Developer &#8226; Isaac Kamran &#8226; Fullstack Developer &#8226; Isaac Kamran &#8226; Fullstack Developer &#8226; Isaac Kamran &#8226; Fullstack Developer &#8226; Isaac Kamran &#8226; Fullstack Developer &#8226;
-        </div>
-    </div>
-  )
-}
+    <footer>
+      <div className="footer-text">
+        {Array(100).fill("Sandra Gustafsson · Frontend Developer · ").join(' ')}
+      </div>
+    </footer>
+  );
+};
