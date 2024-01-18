@@ -16,7 +16,7 @@ const exampleArticles = [
     imageUrl: "Images/Article.png",
     title: "Exited to share our final project",
     preview:
-      "After weeks of hard work and collaboration, our team  consisting of myself, Frida, Caro, and Emmy is thrilled to present our.... ",
+      "After weeks of hard work and collaboration, our team  consisting of myself, Andrej and Manne is thrilled to present our.... ",
     link: "https://www.linkedin.com/in/isaac-kamran/",
     publishDate: "January 16, 2024",
   },
