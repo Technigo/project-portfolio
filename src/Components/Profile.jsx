@@ -1,4 +1,5 @@
-export const Profile = ({ source }) => {
-  return <img src={source} className="profile-img" />;
+import "../Components/profile.css";
+export const Profile = () => {
+  return <div className="profile-img" />;
 };
 export default Profile;

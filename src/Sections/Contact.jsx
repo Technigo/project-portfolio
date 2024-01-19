@@ -3,17 +3,13 @@ import Profile from "../Components/Profile";
 import linkedinIcon from "/src/assets/Btn-linkedin.svg";
 import githubIcon from "/src/assets/Btn-github.svg";
 import instagramIcon from "/src/assets/Btn-instagram.svg";
-import profileImg from "../assets/profile.jpg";
 import TickerTape from "../Components/TickerTape";
 
 const Contact = () => {
-  const tickerText = [
-    "Janice Cheng · Fullstack Developer · Janice Cheng · Fullstack Developer ·Janice Cheng ",
-  ];
   return (
     <div className="contact-wrapper">
       <Headlines title="Let's talk" />
-      <Profile source={profileImg} />
+      <Profile />
       <ul>
         <li>Janice Cheng</li>
         <li>+46(0)763 12 33 45</li>
@@ -36,7 +32,7 @@ const Contact = () => {
         </a>
         <img src={instagramIcon} alt="linkedinIcon" />
       </div>
-      <TickerTape text={tickerText} />
+      <TickerTape />
     </div>
   );
 };

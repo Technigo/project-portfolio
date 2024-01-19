@@ -1,6 +1,5 @@
 import Headlines from "../Components/Headlines";
 import Profile from "../Components/Profile";
-import profileImg from "../assets/profile.jpg";
 import arrow from "../assets/arrow.json";
 import Lottie from "lottie-react";
 import "/src/index.css";
@@ -14,7 +13,7 @@ export const Introduction = () => {
           Hi, I'm Janice
           <h1 className="job-title">Frontend Developer</h1>
         </h1>
-        <Profile source={profileImg} />
+        <Profile />
       </div>
       <p>
         I am a dynamic professional with a marketing background and four years
