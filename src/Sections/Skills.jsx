@@ -28,10 +28,10 @@ export const Skills = () => {
           <p>Postman</p>
         </div>
 
-        <div className="upcoming">
+        {/* <div className="upcoming">
           <Headline text="Upcoming" level={2} className="upcoming-h2" />
           <p>Fullstack Project</p>
-        </div>
+        </div> */}
 
         <div className="more">
           <Headline text="More" level={2} className="more-h2" />
@@ -41,6 +41,7 @@ export const Skills = () => {
           <p>Collaborative Work</p>
           <p>Strategy</p>
           <p>Agile Methodology</p>
+          <p>Fullstack Project</p>
         </div>
       </div>
     </div>
