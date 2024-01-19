@@ -8,13 +8,15 @@ import TickerTape from "../Components/TickerTape";
 const Contact = () => {
   return (
     <div className="contact-wrapper">
-      <Headlines title="Let's talk" />
-      <Profile />
-      <ul>
-        <li>Janice Cheng</li>
-        <li>+46(0)763 12 33 45</li>
-        <li>jjanice.cheng@gmail.com</li>
-      </ul>
+      <div className="contact-content">
+        <Headlines title="Let's talk" />
+        <Profile />
+        <ul>
+          <li>Janice Cheng</li>
+          <li>+46(0)763 12 33 45</li>
+          <li>jjanice.cheng@gmail.com</li>
+        </ul>
+      </div>
       <div className="icons">
         <a
           href="https://www.linkedin.com/in/janice-cheng-4ab007113/"

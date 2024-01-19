@@ -1,5 +1,5 @@
 import Articlecard from "../Components/ArticleCard";
-import mywords from "../Sections/mywords.json";
+import mywords from "../mywords.json";
 
 const ArticleList = () => {
   console.log(mywords);

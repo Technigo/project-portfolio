@@ -10,20 +10,25 @@ export const Introduction = () => {
     <div className="intro-wrapper">
       <div className="intro">
         <h1 className="intro-subtitle">
-          Hi, I'm Janice
-          <h1 className="job-title">Frontend Developer</h1>
+          Hi, I'm Janice Cheng
+          <Headlines title="Frontend Developer" />
         </h1>
-        <Profile />
+
+        <div className="intro-content">
+          <Profile />
+          <p>
+            I am a dynamic professional with a marketing background and four
+            years in retail management. Motivated by a deep interest in
+            technology, I've expanded my skills into project management, UX
+            design, and front-end development. Known for my self-initiative, I
+            excel in team environments and am dedicated to staying ahead through
+            continuous learning. My unique blend of experience, curiosity, and
+            adaptability positions me as an enthusiastic contributor to the
+            dynamic realm of full-stack design.
+          </p>
+        </div>
       </div>
-      <p>
-        I am a dynamic professional with a marketing background and four years
-        in retail management. Motivated by a deep interest in technology, I've
-        expanded my skills into project management, UX design, and front-end
-        development. Known for my self-initiative, I excel in team environments
-        and am dedicated to staying ahead through continuous learning. My unique
-        blend of experience, curiosity, and adaptability positions me as an
-        enthusiastic contributor to the dynamic realm of full-stack design.
-      </p>
+
       <div className="arrow">
         <Lottie animationData={arrow} style={style} />
       </div>

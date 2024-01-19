@@ -6,10 +6,12 @@ import readMoreIcon from "/src/assets/Btn-readMore.svg";
 
 export const Articlecard = ({ title, photo, date, content, link }) => {
   return (
-    <div className="container">
+    <div className="article-container">
       <Photo source={photo} color="pink" size="article-square" />
       <div className="article-content">
-        <p className="date">{date}</p>
+        <div className="date-container">
+          <p className="date">{date}</p>
+        </div>
         <h2>{title}</h2>
         <p>{content}</p>
         <Button

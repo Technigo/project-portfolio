@@ -12,7 +12,7 @@ body {
 }
 
 .body {
-  font-size: 12px;
+  font-size: 18px;
   background-color: white;
   font-family: Hind;
   color: black;
@@ -25,16 +25,24 @@ body {
 }
 
 .intro-wrapper {
-  grid-column: 4 / 11;
+  grid-column: 3 / 11;
   grid-row: 1;
   margin: 10em 0 10em 0;
 }
 
-.intro-wrapper .title {
+.intro-wrapper {
   margin-top: 0;
 }
 
+.intro-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
 .job-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   color: #0b24f5;
   font-size: 1.5em;
 }
@@ -104,6 +112,7 @@ body {
   background-color: var(--color-blue);
   grid-column: 1/13;
   grid-row: 5;
+  padding: 8em 0 8em 0;
 }
 
 .skill-wrapper {
@@ -153,8 +162,9 @@ body {
 }
 
 .intro {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -198,6 +208,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 2em;
+  align-items: center;
 }
 
 .ticker-container {
@@ -219,13 +230,22 @@ body {
   animation-duration: 20s; /* Adjust the duration based on your preference */
 }
 
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  gap: 1em;
+}
+
 @keyframes tickerMove {
   to {
     transform: translateX(-100%);
   }
 }
 
-@media (max-width: 600px) {
+/* Tablet size*/
+@media only screen and (max-width: 768px) {
   .intro-wrapper {
     grid-column: 2 / 12;
     grid-row: 1;
@@ -243,7 +263,10 @@ body {
 
   .intro {
     display: flex;
-    flex-direction: column-reverse;
+  }
+
+  .tech-bg {
+    height: 600px;
   }
 
   .tech-wrapper {
@@ -270,10 +293,8 @@ body {
 
   .skill-wrapper,
   .skill-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    grid-column: 2 / 12;
+    gap: 50px;
   }
 
   .contact-wrapper ul {
@@ -281,7 +302,40 @@ body {
     line-height: 1.5em;
   }
 
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+  }
+
   .mywords-wrapper {
     grid-column: 2 / 12;
+  }
+}
+
+/* Mobile size*/
+@media only screen and (max-width: 414px) {
+  .intro {
+    display: flex;
+  }
+
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .skill-wrapper,
+  .skill-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-content li {
+    font-size: 0.8em;
   }
 }
