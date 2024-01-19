@@ -14,7 +14,7 @@ import { Tag } from "../../components2/tag/Tag"
 import "./projectCard.css";
 
 export const ProjectCard = ({ projects }) => {
-  console.log(repos)
+  // console.log(repos)
   console.log(projects)
   const namesToFilter = [
     "Happy-Thoughts-API",
@@ -28,11 +28,13 @@ export const ProjectCard = ({ projects }) => {
     "QR-code-generator", 
     "Movie-Site-Project", 
     "Quiz", 
-    "Authentication-Project"
+    "Authentication-Project", 
+    "Open-Air-Feast"
   ]; //Array including the projects I want to show in portfolio
 
   //Specify the desired order of projects: 
   const projectOrder = [
+    "Open-Air-Feast",
     "Authentication-Project",
     "Happy-Thoughts-API",
     "QR-code-generator", 
