@@ -5,10 +5,9 @@ import "./Header.css";
 import "animate.css";
 
 export const Header = () => {
-  // const scrollTo = () =>
-  //   document
-  //     .getElementById("next-section")
-  //     .scrollIntoView({ behavior: "smooth" });
+  const scrollTo = () =>
+    document.getElementById("scrollTo").scrollIntoView({ behavior: "smooth" });
+
   return (
     <div className="header grid-parent">
       <div className="wrapper">
@@ -30,13 +29,13 @@ export const Header = () => {
           the technology field.
         </p>
       </div>
-      <div className="next-section-arrow">
+      <button className="next-section-arrow" onClick={scrollTo}>
         <img
           className="arrow-down"
           src={arrowImage}
           alt="arrow-pointing-down"
         />
-      </div>
+      </button>
     </div>
   );
 };

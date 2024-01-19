@@ -1,7 +1,7 @@
 // /* eslint-disable react/jsx-key */
 // /* eslint-disable react/prop-types */
 import PropTypes from "prop-types";
-import { Button } from "../../components/Button";
+import { Button } from "../Button/Button";
 import finalProject from "../../assets/final-project.png";
 import chatbot from "../../assets/chatbot.png";
 import music from "../../assets/music.png";

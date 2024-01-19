@@ -1,6 +1,7 @@
 import { Project } from "../../components/Project/Project";
 import "./Projects.css";
 
+// eslint-disable-next-line react/prop-types
 export const Projects = ({ projectData }) => {
   console.log("Project Data:", projectData);
   let repoData = projectData;

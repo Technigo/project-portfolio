@@ -2,7 +2,7 @@ import "./Tech.css";
 
 export const Tech = () => {
   return (
-    <div className="tech grid-parent">
+    <div className="tech grid-parent" id="scrollTo">
       <div className="wrapper">
         <h1>Tech</h1>
         <p>

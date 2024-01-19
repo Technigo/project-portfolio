@@ -1,38 +1,43 @@
 import PropTypes from "prop-types";
 import "./MyWords.css";
-import { Button } from "../../components/Button";
+import { Button } from "../../components/Button/Button";
+import mywords1 from "../../assets/mywords1.png";
+import mywords2 from "../../assets/mywords2.png";
+import mywords3 from "../../assets/mywords3.png";
+import mywords4 from "../../assets/mywords4.png";
 import readMore from "../../assets/Doc.svg";
 import waveLine from "../../assets/waveline.png";
 
 const MyWordsArticles = [
   {
-    imageUrl: "images/img.png",
-    title: "Amazing experience",
+    imageUrl: mywords1,
+    title: "How to stop being scared: Learning to love code",
     preview:
       "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
     link: "https://www.linkedin.com/posts/",
     publishDate: "July 24, 2023",
   },
   {
-    imageUrl: "images/img-2.png",
-    title: "Final project!",
-    preview: "Final Project adventure",
+    imageUrl: mywords2,
+    title: "How to stop being scared: Learning to love code!",
+    preview:
+      "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7152998899408871425/",
     publishDate: "January 16, 2024",
   },
   {
-    imageUrl: "images/img-3.png",
-    title: "The Future of Web",
+    imageUrl: mywords3,
+    title: "How to stop being scared: Learning to love code",
     preview:
-      "A look into the future trends and technologies that are shaping the web...",
+      "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
     link: "https://www.google.se",
     publishDate: "October 1, 2023",
   },
   {
-    imageUrl: "images/img-4.png",
-    title: "CSS Secrets and Tips",
+    imageUrl: mywords4,
+    title: "How to stop being scared: Learning to love code",
     preview:
-      "Unravel the secrets of CSS to build beautiful and responsive designs...",
+      "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
 
     link: "https://www.google.se",
     publishDate: "October 1, 2023",
