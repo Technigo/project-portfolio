@@ -8,7 +8,9 @@ export const Project = ({ project }) => {
     return (
         <>
         <div className="project-container">
-            <img className="project-pic" src={image} alt={name} />
+            <div className="project-pic">
+                <img className="the-project-pic" src={image} alt={name} />
+            </div>
 
             <div className="project-text">
                 <h4>{name}</h4>
