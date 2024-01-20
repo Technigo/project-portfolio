@@ -156,11 +156,25 @@ align-self: stretch;
     /* Adjust the width and height as needed for tablet view */
     width: 150px;
     height: 150px;
+    padding-bottom: 80px;
   }
 
   .centered-arrow {
     position: relative;
   }
+
+  .paragraph-container {
+    display: flex;
+    align-items: center;
+    width: 430px;
+    height: 174px;
+    font-family: 'Hind', sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+}
 }
 
 /* Mobile */
@@ -170,6 +184,7 @@ align-self: stretch;
   }
 
   .left-content {
+    display: flex; /* Ensure that flex is defined */
     flex-direction: column;
     align-items: flex-start; /* Aligns content to the left */
   }
@@ -194,9 +209,11 @@ align-self: stretch;
     align-self: stretch;
   }
   .content-container { /* This should be the parent container of the image and text */
+    display: flex; /* Ensure that flex is defined */
     flex-direction: column;
     align-items: center; /* This will center-align the flex children horizontally */
   }
+
   .image-container {
     order: -1; /* Image goes first */
     flex-direction: column;
@@ -223,14 +240,17 @@ align-self: stretch;
     width: 27px;
 height: 68px;
   }
+
+  .paragraph-container {
+    display: flex;
+    align-items: center;
+    width: 343px;
+    height: 203px;
+    font-family: 'Hind', sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+  }
 }
-
-
-
-
-
-
-
-
-
-
