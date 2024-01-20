@@ -4,7 +4,7 @@ import './TechSection.css';
 
 function TechSkills() {
   const techSkills = [
-    'React',
+  'React',
     'Node.js',
     'JavaScript',
     'HTML',
