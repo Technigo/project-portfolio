@@ -13,7 +13,14 @@ export const ProjectCard = ({ repositories }) => {
     });
 
     // Sort the filtered repositories by their creation date (most recent first)
-    filteredRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+    //filteredRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+     // Sort the filtered repositories by their id (highest first)
+     filteredRepos.sort((a, b) => {
+        const aData = repoData.projects.find(data => data.repoName === a.name);
+        const bData = repoData.projects.find(data => data.repoName === b.name);
+        return bData.id - aData.id;
+    });
 
     return (
         <>
