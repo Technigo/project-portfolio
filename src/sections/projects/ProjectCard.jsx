@@ -10,7 +10,6 @@ import { Button } from '/src/components/button/Button.jsx';
 export const ProjectCard = ({ repositories }) => {
     // State to track the number of cards to display
     const [visibleCards, setVisibleCards] = useState(5);
-    console.log("Repositories:", repositories); // Debug log
 
     // Filter and match repositories with data in repoData.projects
     const filteredRepos = repositories.filter((repo) => {
@@ -26,9 +25,6 @@ export const ProjectCard = ({ repositories }) => {
         const bData = repoData.projects.find(data => data.repoName === b.name);
         return bData.id - aData.id;
     });
-
-    console.log("Filtered Repos:", filteredRepos); // Debug log
-
 
     const toggleVisibleCards = () => {
         // Show 5 cards or all cards based on current state
