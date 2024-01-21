@@ -1,4 +1,5 @@
 import './projects.css';
+import { useState } from 'react';
 import repoData from './repo-data.json';
 import { Heading } from '/src/components/typography/Heading.jsx';
 import { Image } from '/src/components/images/Image.jsx';
@@ -7,6 +8,10 @@ import { Paragraph } from '/src/components/typography/Paragraph.jsx';
 import { Button } from '/src/components/button/Button.jsx';
 
 export const ProjectCard = ({ repositories }) => {
+    // State to track the number of cards to display
+    const [visibleCards, setVisibleCards] = useState(5);
+    console.log("Repositories:", repositories); // Debug log
+
     // Filter and match repositories with data in repoData.projects
     const filteredRepos = repositories.filter((repo) => {
         return repoData.projects.some((data) => data.repoName === repo.name);
@@ -15,16 +20,27 @@ export const ProjectCard = ({ repositories }) => {
     // Sort the filtered repositories by their creation date (most recent first)
     //filteredRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
-     // Sort the filtered repositories by their id (highest first)
-     filteredRepos.sort((a, b) => {
+    // Sort the filtered repositories by their id (highest first)
+    filteredRepos.sort((a, b) => {
         const aData = repoData.projects.find(data => data.repoName === a.name);
         const bData = repoData.projects.find(data => data.repoName === b.name);
         return bData.id - aData.id;
     });
 
+    console.log("Filtered Repos:", filteredRepos); // Debug log
+
+
+    const toggleVisibleCards = () => {
+        // Show 5 cards or all cards based on current state
+        setVisibleCards(prevVisibleCards => (prevVisibleCards === 5 ? filteredRepos.length : 5));
+    };
+
+    const showMoreLessLabel = visibleCards === 5 ? 'Show More' : 'Show Less';
+
+
     return (
         <>
-            {filteredRepos.map((repo) => {
+            {filteredRepos.slice(0, visibleCards).map((repo) => {
 
                 // Find the corresponding data in repoData.projects based on repoName
                 const matchingData = repoData.projects.find((data) => data.repoName === repo.name);
@@ -61,13 +77,13 @@ export const ProjectCard = ({ repositories }) => {
                             </div>
                             <div className='button-wrapper'>
                                 <Button
-                                    icon="/assets/icons/live-demo.svg" // Replace with the actual icon path
+                                    icon="/assets/icons/live-demo.svg"
                                     label="Live demo"
                                     link={matchingData.netlifyUrl} // Use the URL from the JSON data
                                     className="netlify-btn"
                                 />
                                 <Button
-                                    icon="/assets/icons/github-btn.svg" // Replace with the actual icon path
+                                    icon="/assets/icons/github-btn.svg"
                                     label="View the code"
                                     link={repo.svn_url} // Retrieve GitHub link from the API
                                     className="github-btn"
@@ -77,6 +93,14 @@ export const ProjectCard = ({ repositories }) => {
                     </article>
                 );
             })}
+            <div className="tn-wrapper">
+                <Button
+                    label={showMoreLessLabel}
+                    className="show-more-btn"
+                    onClick={toggleVisibleCards}
+                    ariaLabel={showMoreLessLabel}
+                />
+            </div>
         </>
     );
 };
