@@ -9,45 +9,8 @@
 Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
 
 ## Instructions
+
 [Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
-
-## Set up your own version of your portfolio
-
-We will use [Vite](https://vitejs.dev/guide/) to setup our project 😉
-
-```bash
-  npm create vite@latest my-react-portfolio --template
-```
-
-#### Follow this GIF to setup your project
-
-![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WEB/Sprint-2/week-8/vite-react_vjp0ep.gif)
-
-## Installation
-
-Use the `cd` command to move into the folder
-
-```bash
-  cd my-react-portfolio
-```
-
-Install the dependencies
-
-```bash
-  npm i
-```
-
-Open the project in a separate VS Code editor
-
-```bash
-  code .
-```
-
-Open up a terminal inside VS code and lets run the project in a local environment
-
-```bash
-  npm run dev
-```
 
 ## Author
 
@@ -57,9 +20,9 @@ Open up a terminal inside VS code and lets run the project in a local environmen
 
 PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 
-### Hi, I'm Technigo! 👋
+### Hi, I'm Andrej! 👋
 
-Welcome to my first React portfolio project! I am Technigo, a student who has completed Sprint 2 of the boot camp and is now taking my skills to the next level. This portfolio showcases my mastery of React concepts, implementing components, props, hooks, and web APIs to create a dynamic and interactive website.
+Welcome to my first React portfolio project! I am Andrej, a student who has completed Sprint 2 of the boot camp and is now taking my skills to the next level. This portfolio showcases my mastery of React concepts, implementing components, props, hooks, and web APIs to create a dynamic and interactive website.
 
 By breaking down the project into reusable components and efficiently passing data with props, I've ensured a well-structured and organized codebase. Utilizing React hooks, particularly the useState hook, has allowed me to manage reactive data and create an engaging user experience.
 
@@ -75,7 +38,7 @@ PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 
 ### Lessons Learned
 
-Through this project, I, Technigo, have learned invaluable lessons in React development. I now understand the power of components and props in creating a modular and organized codebase. React hooks, especially useState, have allowed me to manage state and interactivity effectively. Integrating web APIs taught me the importance of data fetching and dynamic content display, keeping my portfolio up-to-date effortlessly. Additionally, focusing on accessibility has made me more aware of creating inclusive user experiences. Overall, this project has honed my skills in clean coding practices and emphasized the significance of continuous testing and deployment for a successful web application. The experience has been enriching, and I am excited to apply these lessons in future projects to further enhance my coding journey.
+Through this project, I, Andrej, have learned invaluable lessons in React development. I now understand the power of components and props in creating a modular and organized codebase. React hooks, especially useState, have allowed me to manage state and interactivity effectively. Integrating web APIs taught me the importance of data fetching and dynamic content display, keeping my portfolio up-to-date effortlessly. Additionally, focusing on accessibility has made me more aware of creating inclusive user experiences. Overall, this project has honed my skills in clean coding practices and emphasized the significance of continuous testing and deployment for a successful web application. The experience has been enriching, and I am excited to apply these lessons in future projects to further enhance my coding journey.
 
 PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 

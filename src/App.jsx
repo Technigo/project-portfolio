@@ -26,13 +26,12 @@ const App = () => {
         const fiveLatest = data.slice(0, 5);
         setRepoList(fiveLatest);
         setLoading(!loading);
-        console.log(repoList);
+        // console.log(repoList);
       })
       .catch((error) => console.log(error));
   };
   useEffect(() => {
     apiCall();
-    // console.log(repoList);
   }, []);
 
   return (

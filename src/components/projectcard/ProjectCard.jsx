@@ -8,6 +8,8 @@ import weather from "../../assets/johannes-plenio-600dw3-1rv4-unsplash.jpg";
 import music from "../../assets/heidi-fin-H4fYXZ1hyco-unsplash.jpg";
 import movie from "../../assets/alex-litvin-MAYsdoYpGuk-unsplash.jpg";
 import qrcode from "../../assets/qrcode.png";
+import piggyback from "../../assets/piggyback.png";
+import auth from "../../assets/franck-DoWZMPZ-M9s-unsplash.jpg";
 
 import { Tags } from "./Tags.jsx";
 
@@ -42,11 +44,16 @@ export const ProjectCard = ({
     case "project-qr-code-generator":
       imagedirectory = qrcode;
       break;
+    case "final-project-technigo":
+      imagedirectory = piggyback;
+      break;
+    case "project-happy-thoughts-api":
+      imagedirectory = happyThoughts;
+      break;
+    case "project-auth":
+      imagedirectory = auth;
+      break;
   }
-
-  const handleClick = (link) => {
-    window.open(link, "_blank");
-  };
 
   const transformString = (str) => {
     // Split the string into an array of words
@@ -76,11 +83,18 @@ export const ProjectCard = ({
           ))}
         </div>
         <div className="buttons">
-          <button className="deployedBtn" onClick={handleClick(deployedLink)}>
+          <button
+            className="deployedBtn"
+            onClick={() => window.open(deployedLink, "_blank")}
+          >
+            {console.log("deployed: " + deployedLink)}
             <img src={demodark} alt="globe-icon-dark" />
             Live Demo
           </button>
-          <button className="gitBtn" onClick={handleClick(gitLink)}>
+          <button
+            className="gitBtn"
+            onClick={() => window.open(gitLink, "_blank")}
+          >
             <img src={githubdark} alt="github-icon-dark" />
             View the code
           </button>

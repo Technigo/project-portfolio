@@ -22,10 +22,20 @@ export const LetsTalk = () => {
           <a href="mailto:andrej.kavrzic@gmail.com">andrej.kavrzic@gmail.com</a>
         </div>
         <div className="social-bar">
-          <button className="gitIconBtn" href="" rel="noreferrer">
+          <button
+            className="gitIconBtn"
+            onClick={() =>
+              window.open("https://github.com/andrkavr/", "_blank")
+            }
+          >
             <img src={git} alt="github-image" />
           </button>
-          <button className="linkedInBtn" href="" rel="noreferrer">
+          <button
+            className="linkedInBtn"
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/kavrzic/", "_blank")
+            }
+          >
             <img src={linkedIn} alt="linkedIn-image" />
           </button>
         </div>
