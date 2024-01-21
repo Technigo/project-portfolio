@@ -1,7 +1,6 @@
 import caroLImage from "../../assets/CaroL.jpg";
 import arrowImage from "../../assets/Arrow.svg";
 import "./Header.css";
-// import "App.css";
 import "animate.css";
 
 export const Header = () => {

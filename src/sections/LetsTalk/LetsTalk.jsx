@@ -16,7 +16,7 @@ export const LetsTalk = () => {
         </div>
         <div className="social-media-icons">
           <a
-            href="linkedin.com/in/carolina-luna-b1659251"
+            href="https://www.linkedin.com/in/carolina-luna-b1659251/"
             target="_blank"
             rel="noreferrer">
             <img src={linkedInIcon} alt="LinkedIn link" />

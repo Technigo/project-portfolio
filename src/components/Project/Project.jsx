@@ -27,7 +27,7 @@ export const Project = ({
     case "Final-project":
       imagedirectory = finalProject;
       break;
-    case "Project-chatbot":
+    case "Project-Chatbot":
       imagedirectory = chatbot;
       break;
     case "Project_Music_Releases_vite":
@@ -63,22 +63,24 @@ export const Project = ({
             );
           })}
         </div>
-        <Button
-          type="live-demo"
-          text="Live Demo"
-          onClick={() => handleClick(deployedLink)}
-          iconSrc={liveDemoImage}
-          iconAlt="An icon of a globe"
-          href={deployedLink}
-        />
-        <Button
-          type="view-code"
-          text="View the Code"
-          href={gitLink}
-          onClick={() => handleClick(gitLink)}
-          iconSrc={githubImage}
-          iconAlt="An icon of GitHub"
-        />
+        <div className="buttons">
+          <Button
+            type="live-demo"
+            text="Live Demo"
+            onClick={() => handleClick(deployedLink)}
+            iconSrc={liveDemoImage}
+            iconAlt="An icon of a globe"
+            href={deployedLink}
+          />
+          <Button
+            type="view-code"
+            text="View the Code"
+            href={gitLink}
+            onClick={() => handleClick(gitLink)}
+            iconSrc={githubImage}
+            iconAlt="An icon of GitHub"
+          />
+        </div>
       </div>
     </div>
   );
