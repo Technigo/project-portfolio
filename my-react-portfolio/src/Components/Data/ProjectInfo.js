@@ -7,7 +7,7 @@ export const ProjectInfo = [
     gitUrl: "https://github.com/BeckieMorton/final-project-airportfinder",
     className: "AirportFinder",
     skills: ["HTML", "CSS", "React", "Zustand", "APIs"],
-    text: "My final bootcamp project. An accessible airport search application (search by name, Iata code, city, country), links to 5 APIs (inlcuding my own) and several react libraries including zustand global state management.",
+    text: "My final bootcamp project. An accessible airport search application (search by name, Iata code, city, country), links to 5 APIs (including my own backend created with Mongo DB) and several react libraries including Zustand global state management.",
   },
 
   {
@@ -46,10 +46,10 @@ export const ProjectInfo = [
 
   {
     imagePath: "./assets/projects/moviesite.png",
-    repoName: "",
+    repoName: "project-movies-vite",
     displayName: "Movie site",
-    netlifyUrl: "",
-    gitUrl: "",
+    netlifyUrl: "https://wk9-project-movie-site-c05bc5.netlify.app/",
+    gitUrl: "https://github.com/BeckieMorton/project-movies-vite",
     className: "MovieSite",
     skills: ["HTML", "CSS", "JavaScript"],
     text: "Utilising themoviedb.org's API to showcase movies and their details. Fetures fetching popular movie specifics, and managing image URLS. Using react router functionality, error handling, and loading states.",
@@ -57,7 +57,7 @@ export const ProjectInfo = [
 
   {
     imagePath: "./assets/projects/weatherapp.png",
-    repoName: "",
+    repoName: "project-weather-app",
     displayName: "Weather App",
     netlifyUrl: "https://wk4-weatherapp-api-a735bf.netlify.app/",
     gitUrl: "https://github.com/BeckieMorton/project-weather-app",
@@ -89,7 +89,7 @@ export const ProjectInfo = [
 
   {
     imagePath: "./assets/projects/newssite.png",
-    repoName: "",
+    repoName: "project-news-site ",
     displayName: "News Site",
     netlifyUrl: "https://sensational-toffee-a14f18.netlify.app/",
     gitUrl: "https://github.com/BeckieMorton/project-news-site",
