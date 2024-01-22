@@ -47,14 +47,12 @@ export const ProjectCard = ({ repositories }) => {
 
                 return (
                     <article className="project-card" key={matchingData.id}>
-                        <div className="project-img-container">
                             <Image
-                                sectionClassName={"project-img"}
+                                sectionClassName={"image"}
                                 elementClassName={"project-img"}
                                 link={matchingData.imageUrl}
                                 ImageAltText={`Image of ${matchingData.publicName} project`}
                             />
-                        </div>
                         <div className="project-text-section">
                             <Heading
                                 level={3}
