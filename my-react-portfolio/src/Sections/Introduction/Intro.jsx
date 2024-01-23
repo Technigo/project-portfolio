@@ -14,7 +14,7 @@ export const Intro = () => {
             </section>
             <section className="headings">
                 <SubTitle text={"Hi! I am Evelyn Del Carmen"} />
-                <MainTitle text={"Fronend Developer"} />
+                <MainTitle text={"Frontend Developer"} />
             </section>
             <section className="normal-text">
                 <NormalText text={introText} />
