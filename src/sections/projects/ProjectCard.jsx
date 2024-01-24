@@ -65,7 +65,7 @@ export const ProjectCard = ({ repositories }) => {
                             />
                             <div role="tag" aria-label="Tags" className="tags">
                                 {/* Mapping through tags, to display them next to each other */}
-                                {matchingData.topics.map((topic, index) => (
+                                {repo.topics.map((topic, index) => (
                                     <Tag key={index} tagText={topic} />
                                 ))}
                             </div>
