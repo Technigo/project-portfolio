@@ -1,8 +1,6 @@
 //NOT DONE:
 // Wawy line in bottom
-// Later: In Github: Change project Names
-// Later: Make sure link to github is fetched from github if not present in json
-// Later: Get tags from github instead of json?
+// Later: In Github: Change project Name, Make sure link to github is fetched from github if not present in json, Get links and tags from github instead of json?
 
 import style from "./myprojects.module.css"
 import { useState, useEffect } from "react"
@@ -29,7 +27,7 @@ export const MyProjects = () => {
                         return {
                             ...githubProject,
                             ...additionalData,
-                            name: additionalData.name, // Use the name from JSON data
+                            name: additionalData.name, // Use the name from JSON data instead of github
                         };
                     } else {
                         // If no additionalData is found, just return the GitHub project data
@@ -74,11 +72,11 @@ export const MyProjects = () => {
                                     {/* Project Links */}
                                     <div className={style.projectLinks}>
                                         <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                            <img src="/images/github-icon.svg" alt="GitHub" /> {/* Update the file name as needed */}
+                                            <img src="/images/github-icon.svg" alt="GitHub" />
                                         </a>
                                         {project.netlify && (
                                             <a href={project.netlify} target="_blank" rel="noopener noreferrer">
-                                                <img src="/images/netlify-icon.svg" alt="Netlify" /> {/* Update the file name as needed */}
+                                                <img src="/images/netlify-icon.svg" alt="Netlify" />
                                             </a>
                                         )}
                                     </div>
