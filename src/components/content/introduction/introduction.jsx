@@ -26,9 +26,9 @@ export const Introduction = ({ arrow }) => {
                 mainHeading="Frontend Developer"
                 className={style.h1}
             />
-            <p className={style.introText}> Mirela has been wokring with product user compatability and testing for a while, and has lately deepened her knowledge to include web development. She is a fast learner and is quick to understand how things are related and how to solve problems. </p>
+            <p className={style.introText}> Mirela has been working with product user compatability and testing for a while, and has lately deepened her knowledge to include web development. She is a fast learner and is quick to understand how things are related and how to solve problems. </p>
             <button className={style.arrow} onClick={() => handleClick(arrow)}>
-                <img src="../public/images/Arrow.svg" alt="next section" />
+                <img src="./images/Arrow.svg" alt="next section" />
             </button>
         </div>
     )
