@@ -1,19 +1,21 @@
 .project-list {
     display: flex;
     flex-direction: column;
+    gap: 3em;
+    width: 50%;
 }
 
 .box-wrapper {
     display: flex;
     flex-direction: row;
     gap: 2em;
-    /* padding: 100px; */
 }
 
-.project-headings {
+.project-card {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: 70%;
 }
 
 .project-info {
@@ -22,13 +24,36 @@
     gap: 1em;
 }
 
-.link-buttons {
+.project-text p {
+    color: black;
+    font-family: 'Hind';
+    font-weight: 400;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.project-headings {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.tech-details {
     display: flex;
     flex-direction: row;
     gap: 0.5em;
 }
 
-.info-buttons {
+.tech-block {
+    background-color: black;
+    padding: 0px 2px 0px 2px;
+}
+
+.link-buttons {
     display: flex;
     flex-direction: row;
     gap: 0.5em;
@@ -36,16 +61,25 @@
 
 .img-container {
     background-color: blue;
-    /* width: 210px;
-    height: 210px; */
+    width: 10em;
+    height: 10em;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
 }
 
 .project-img {
-    /* width: 200px;
-    height: 200px; */
+    max-width: 95%;
+}
+
+.view-code:hover {
+    fill: #FF4575;
+    color: #FFFFFF;
+}
+
+.live-demo {
+    fill: blue;
+    color: #FFFFFF;
 }
 
 @media screen and (max-width: 744px) {

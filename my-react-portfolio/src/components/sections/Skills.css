@@ -9,6 +9,7 @@
 .skills-content-wrapper {
     display: flex;
     flex-direction: column;
+    gap: 6em;
 }
 
 .heading-wrapper {
@@ -20,12 +21,14 @@
 .skills-box-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 3em;
+    max-width: 80%;
 }
 
 .skills-box {
     display: flex;
     flex-direction: column;
+    gap: 1em;
     align-items: flex-start;
 }
 
@@ -35,10 +38,21 @@ ul {
 }
 
 .skills-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-list p {
     font-family: 'Hind';
     color: white;
     font-size: 15px;
     display: flex;
     justify-content: flex-start;
+}
+
+@media screen and (max-width: 667px) {
+    .skills-box-wrapper {
+        flex-direction: column;
+    }
 }
 

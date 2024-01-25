@@ -1,78 +1,119 @@
 import { SubHeading } from './SubHeading.jsx'
-import { Paragraph } from './Paragraph.jsx'
-import { LinkButton } from './LinkButton.jsx'
+import LiveDemo from '../../assets/LiveDemo.svg'
+import ViewCode from '../../assets/ViewCode.svg'
 import './ProjectBox.css'
-import { useState, useEffect } from 'react'
 
 export const ProjectBox = () => {
-    const [gitProjects, setGitProjects] = useState([])
-  
-    const gitHubAPI = "https://api.github.com/users/olgalepisto/repos"
-  
-    const sortedbyPush =
-      "https://api.github.com/users/olgalepisto/repos?sort=pushed_at"
-  
-    const formatName = (name) => {
-      let formattedName = name.split("-").join(" ")
-  
-      const upperCase = formattedName.split(" ")
-      for (var i = 0; i < upperCase.length; i++) {
-        upperCase[i] = upperCase[i].charAt(0).toUpperCase() + upperCase[i].slice(1)
-      }
-  
-      const upperCaseName = upperCase.join(" ")
-  
-      return upperCaseName;
 
-    };
-  
-    useEffect(() => {
-      listProjects();
-    }, []);
-  
-    const listProjects = () => {
-      fetch(sortedbyPush)
-        .then((response) => response.json())
-        .then((data) => {
-          setGitProjects(data);
-        })
-        .catch((error) => console.error("Failed to fetch info", error));
-    };
-  
-    let first6Gits = gitProjects.slice(0, 6);
+  return (
+    <div className="project-list">
 
-    return (
-        <section className="project-list" key={gitProjects._id}>
-                {first6Gits.map((gitProject) => (
-                    <div className="box-wrapper">
-                        <div class="img-container">
-                            <img class="project-img" src="./happythoughts.png" alt="Project image"/>
-                        </div>
-                        <div className="project-info" key={gitProject._id}>
-                            <div className="project-headings">
-                                <SubHeading 
-                                    subHeading={formatName(gitProject.name)}
-                                    className="project-sub" />
-                                <Paragraph 
-                                    text={gitProject.description}
-                                    className="project-text" />
-                            </div>
-                            <div className="info-buttons">
-                                <p className="tech-details">HTML</p>
-                                <p className="tech-details">CSS</p>
-                            </div>
-                            <div className="link-buttons">
-                                <LinkButton
-                                    className="live-demo"
-                                    buttonText="Live demo"
-                                    url={gitProject.homepage} />
-                                <LinkButton 
-                                    className="view-live"
-                                    buttonText="View the code" />
-                            </div>
-                        </div>
-                    </div>
-            ))}
-        </section>
-    )
+      <div className="box-wrapper">
+        <div className="img-container">
+          <img className="project-img" src="./happythoughts.png" alt="Project image" />
+        </div>
+        <div className="project-card">
+          <SubHeading
+            subHeading="Rescue Helper"
+            className="project-sub" />
+          <div className="project-info">
+            <div className="project-text">
+              <p>An imaginary dog adoption site, that displays dogs across multiple dog shelters.
+                Users can filter dogs with a search form, and shelters can log in to add and delete dogs from the database.
+              </p>
+            </div>
+            <div className="tech-details">
+              <p className="tech-block">REACT</p>
+              <p className="tech-block">CSS MODULES</p>
+              <p className="tech-block">EXPRESS.JS</p>
+              <p className="tech-block">MONGODB</p>
+            </div>
+            <div className="link-buttons">
+              <img src={ViewCode} className="view-code" />
+              <img src={LiveDemo} className="live-demo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="box-wrapper">
+        <div className="img-container">
+          <img className="project-img" src="./happythoughts.png" alt="Project image" />
+        </div>
+        <div className="project-card">
+          <SubHeading
+            subHeading="Project Happy Thoughts"
+            className="project-sub" />
+          <div className="project-info">
+            <div className="project-text">
+              <p>An application where the user can send happy thoughts, view others' entries and like them.</p>
+            </div>
+            <div className="tech-details">
+              <p className="tech-block">REACT</p>
+              <p className="tech-block">CSS</p>
+              <p className="tech-block">EXPRESS.JS</p>
+              <p className="tech-block">MONGODB</p>
+            </div>
+            <div className="link-buttons">
+              <img src={ViewCode} className="view-code" />
+              <img src={LiveDemo} className="live-demo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="box-wrapper">
+        <div className="img-container">
+          <img className="project-img" src="./happythoughts.png" alt="Project image" />
+        </div>
+        <div className="project-card">
+          <SubHeading
+            subHeading="Guess Who: Middle-Earth Quest"
+            className="project-sub" />
+          <div className="project-info">
+            <div className="project-text">
+              <p>A Lord of the Rings themed Guess Who game.</p>
+            </div>
+            <div className="tech-details">
+              <p className="tech-block">JAVASCRIPT</p>
+              <p className="tech-block">CSS</p>
+              <p className="tech-block">HTML</p>
+            </div>
+            <div className="link-buttons">
+              <img src={ViewCode} className="view-code" />
+              <img src={LiveDemo} className="live-demo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="box-wrapper">
+        <div className="img-container">
+          <img className="project-img" src="./happythoughts.png" alt="Project image" />
+        </div>
+        <div className="project-card">
+          <SubHeading
+            subHeading="Hot Java Coffee Chatbot"
+            className="project-sub" />
+          <div className="project-info">
+            <div className="project-text">
+              <p>A chatbot where a charming coffee cup Cuppa takes your order.</p>
+            </div>
+            <div className="tech-details">
+              <p className="tech-block">JAVASCRIPT</p>
+              <p className="tech-block">CSS</p>
+              <p className="tech-block">HTML</p>
+            </div>
+            <div className="link-buttons">
+              <img src={ViewCode} className="view-code" />
+              <img src={LiveDemo} className="live-demo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  )
 }
+
+export default ProjectBox

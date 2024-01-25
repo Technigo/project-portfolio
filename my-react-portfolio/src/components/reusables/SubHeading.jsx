@@ -5,3 +5,5 @@ export const SubHeading = ({ subHeading, className }) => {
         <h3 className={className}>{subHeading}</h3>
     )
 }
+
+export default SubHeading

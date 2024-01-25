@@ -5,15 +5,15 @@ import './Contact.css'
 
 export const Contact = () => {
     return (
-        <article className="contact">
-            <section className="main-container">
-            <section className="contact-wrapper">
+        <div className="contact-container">
+            <div className="top-wrapper">
                 <Heading
                     heading="Contact me"
                     className="contact-heading" />
                 <ProfileImage
                     className="contact-img" />
-                    <div className="contact-info-wrapper">
+            </div>
+            <div className="contact-info-wrapper">
                 <SubHeading
                     subHeading="Olga Lepistö"
                     className="contact-info" />
@@ -23,9 +23,9 @@ export const Contact = () => {
                 <SubHeading
                     subHeading="olga.lepisto@gmail.com"
                     className="contact-info" />
-                    </div>
-            </section>
-            </section>
-        </article>
+            </div>
+        </div>
     )
 }
+
+export default Contact
