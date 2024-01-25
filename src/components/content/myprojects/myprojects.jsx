@@ -1,11 +1,8 @@
 //NOT DONE:
-//Picture
-//Remove bulletpoints
-//Change project Names
-//icons to github and netlify
-//link to netlify
-//Change descriptions
-//Tags
+// Wawy line in bottom
+// Later: In Github: Change project Names
+// Later: Make sure link to github is fetched from github if not present in json
+// Later: Get tags from github instead of json?
 
 import style from "./myprojects.module.css"
 import { useState, useEffect } from "react"
@@ -71,6 +68,13 @@ export const MyProjects = () => {
                                         <SubHeader className={style.h2} subHeading={project.name} />
                                         <p className={style.pDescription}>{project.description}</p>
                                     </div>
+                                    <div className={style.tags}>
+                                        {project.tags && project.tags.length > 0 && (
+                                            project.tags?.map((tag, index) => (
+                                                <span key={index} className={style.tag}>{tag}</span>
+                                            ))
+                                        )}
+                                    </div>
                                     {/* Project Links */}
                                     <div className={style.projectLinks}>
                                         <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -81,11 +85,6 @@ export const MyProjects = () => {
                                                 <img src="/images/netlify-icon.svg" alt="Netlify" /> {/* Update the file name as needed */}
                                             </a>
                                         )}
-                                    </div>
-                                    <div className={style.tags}>
-                                        {project.tags?.map((tag, index) => (
-                                            <span key={index} className={style.tag}>{tag}</span>
-                                        ))}
                                     </div>
                                 </div>
                             </li>
