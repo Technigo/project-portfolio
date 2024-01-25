@@ -13,6 +13,7 @@ import { MainHeader } from "../../reusable/mainheader/mainheader"
 import { SubHeader } from "../../reusable/subheader/subheader"
 import myProjectsData from "../../../../myprojects.json"
 
+
 export const MyProjects = () => {
     const [projects, setProjects] = useState([])
 
@@ -21,23 +22,32 @@ export const MyProjects = () => {
             .then((response) => response.json())
             .then((githubData) => {
                 const mergedProjects = githubData.map((githubProject) => {
-                    // Find the project in your JSON data that matches the GitHub project
+                    // Find the project in your JSON data that matches the GitHub project URL
                     const additionalData = myProjectsData.projects.find(
                         p => p.github === githubProject.html_url
                     );
 
-                    // Merge GitHub data with data from your JSON file
-                    return {
-                        ...githubProject,
-                        ...additionalData,
-                        // Override the name with the one from your JSON file, if available
-                        name: additionalData?.name || githubProject.name,
-                    };
+                    if (additionalData) {
+                        // If additionalData is found in JSON, use its name and other details
+                        return {
+                            ...githubProject,
+                            ...additionalData,
+                            name: additionalData.name, // Use the name from JSON data
+                        };
+                    } else {
+                        // If no additionalData is found, just return the GitHub project data
+                        return githubProject;
+                    }
                 });
                 setProjects(mergedProjects);
             })
             .catch((error) => console.error('Error fetching data:', error));
     }, []);
+
+
+
+
+
 
     return (
         <div className={style.myProjectsBox}>
@@ -47,29 +57,36 @@ export const MyProjects = () => {
                     {projects && projects.length > 0 ? ( // Check if projects is an array and has elements
                         projects.map((project) => (
                             <li className={style.eachProject} key={project.id}>
-                                <div className={style.eachProjectTextBox}>
-                                    <SubHeader className={style.h2} subHeading={project.name} />
-                                    <p className={style.pDescription}>{project.description}</p>
+                                {/* Project Image */}
+                                <div className={style.projectPicContainer}>
+                                    <img
+                                        src={project.image}
+                                        alt={project.name}
+                                        className={style.projectPic}
+                                    />
                                 </div>
-                                <img
-                                    className={style.projectPic}
-                                    src={project.image}
-                                    alt={project.name}
-                                />
-                                <div className={style.projectLinks}>
-                                    <a className={style.gitButton} href={project.github} target="_blank" rel="noopener noreferrer">
-                                        View the Code
-                                    </a>
-                                    {project.netlify && (
-                                        <a className={style.netButton} href={project.netlify} target="_blank" rel="noopener noreferrer">
-                                            Live Demo
+                                {/* Project Text Content */}
+                                <div>
+                                    <div className={style.eachProjectTextBox}>
+                                        <SubHeader className={style.h2} subHeading={project.name} />
+                                        <p className={style.pDescription}>{project.description}</p>
+                                    </div>
+                                    {/* Project Links */}
+                                    <div className={style.projectLinks}>
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                            <img src="/images/github-icon.svg" alt="GitHub" /> {/* Update the file name as needed */}
                                         </a>
-                                    )}
-                                </div>
-                                <div className={style.tagContainer}>
-                                    {project.tags?.map((tag, index) => (
-                                        <span key={index} className={style.tag}>{tag}</span>
-                                    ))}
+                                        {project.netlify && (
+                                            <a href={project.netlify} target="_blank" rel="noopener noreferrer">
+                                                <img src="/images/netlify-icon.svg" alt="Netlify" /> {/* Update the file name as needed */}
+                                            </a>
+                                        )}
+                                    </div>
+                                    <div className={style.tags}>
+                                        {project.tags?.map((tag, index) => (
+                                            <span key={index} className={style.tag}>{tag}</span>
+                                        ))}
+                                    </div>
                                 </div>
                             </li>
                         ))
