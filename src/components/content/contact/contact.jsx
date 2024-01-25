@@ -1,6 +1,6 @@
 //NOT DONE:
-//Picture is streched
-//Buttons are not linked to my social media
+// Find better picture
+// Button Hover
 
 import style from './contact.module.css'
 import { MainHeader } from "../../reusable/mainheader/mainheader"
@@ -22,10 +22,18 @@ export const Contact = () => {
                         <p>mirelacacan@gmail.com</p>
                     </div>
                     <div className={style.socialMedia}>
-                        <img src="./public/images/github.svg" alt="Github" />
-                        <img src="./public/images/linkedin.svg" alt="LinkedIn" />
-                        <img src="./public/images/stackoverflow.svg" alt="StackOverflow" />
-                        <img src="./public/images/instagram.svg" alt="Instagram" />
+                        <a href="https://github.com/mirelcac" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/github.svg" alt="Github" />
+                        </a>
+                        <a href="https://linkedin.com/in/mirela-cacan-724aba71" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/linkedin.svg" alt="LinkedIn" />
+                        </a>
+                        <a href="https://stackoverflow.com/users/23298387/mirelc" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/stackoverflow.svg" alt="StackOverflow" />
+                        </a>
+                        <a href="https://instagram.com/mirelacacan" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/instagram.svg" alt="Instagram" />
+                        </a>
                     </div>
                 </div>
             </div>

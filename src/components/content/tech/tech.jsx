@@ -1,8 +1,6 @@
 //NOT DONE:
-//write text
-//Extra blue box in the corner??
+// Need to check why the blue color is different
 
-//import {useState, useEffect} from "react"
 import style from './tech.module.css'
 import { SubHeader } from '../../reusable/subheader/subheader.jsx'
 import { MainHeader } from '../../reusable/mainheader/mainheader.jsx'
@@ -18,7 +16,10 @@ export const Tech = () => {
             <div >
                 <SubHeader
                     className={style.h2}
-                    subHeading="text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text"
+                    subHeading="HTML, CSS, Flexbox, JavaScript, ES6, 
+                    JSX, React, React Hooks, Zustand, Node.js, 
+                    Mongo DB, Postman, Web Accessibility, APIs, 
+                    mob-programming, pair-programming, GitHub"
                 />
             </div>
         </div>
