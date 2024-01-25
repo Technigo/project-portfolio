@@ -13,11 +13,13 @@ import Week7Happy from '../assets/Week7Happy.jpg';
 import Week9Movie from '../assets/Week9Movie.jpg';
 import Week10Oceanquiz from "../assets/Week10Oceanquiz.jpg";
 import Week12QR from '../assets/Week12QR.jpg';
+import finalproject from '../assets/Finalproject.jpg';
 import './MyProjects.css';
 import './Button.css';
 
 
 const projectOrder = [
+  'final-boiler-plate-monorepo',
   'project-custom-hooks-qr-code-generator-vite',
   'project-state-management-quiz-vite',
   'project-movies-vite',
@@ -33,62 +35,69 @@ const projectOrder = [
 ];
 
 const projectDetails = {
+  'final-boiler-plate-monorepo': {
+    name: 'Foodie Moodie- Technigo finalproject',
+    description: 'Choose a restaurant depending on occasion and mood',
+    techniques: 'API, Zustand, styled components, WCAG, MongoDB, React Router',
+    thumbnail: finalproject
+  },
+
   'project-custom-hooks-qr-code-generator-vite': {
-    name: 'Technigo Week 12 QR code generator',
+    name: 'QR code generator',
     description: 'Make your own qr- code',
     techniques: 'API, Hooks, Lottieanimations, WCAG',
     thumbnail: Week12QR
   },
   'project-state-management-quiz-vite': {
-    name: 'Technigo Week 10 Oceanquiz',
+    name: 'Oceanquiz',
     description: 'A an app with an oceanquiz',
-    techniques: 'React router, group-project',
+    techniques: 'React router, group-project, hooks',
     thumbnail: Week10Oceanquiz
   },
   'project-movies-vite': {
-    name: 'Technigo Week 9 Movieapp',
+    name: 'Movieapp',
     description: 'A movieapp which displays the most popular movies right now with description and ratings',
     techniques: 'React router, API',
     thumbnail: Week9Movie
   },
   'project-happy-thoughts-vite': {
-    name: 'Technigo Week 7 Happy Thoughts',
-    description: 'The Happy Thoughts project is an application which can be described as happy and nice twitter.',
-    techniques: 'React, API',
+    name: 'Happy Thoughts',
+    description: 'The Happy Thoughts project is an application which can be described as happy and nice twitter. It´s my first fullstack project where we first did the frontend and a few weeks later our own backend',
+    techniques: 'React, API, MongoDB',
     thumbnail: Week7Happy
   },
   'project-survey-vite': {
-    name: 'Technigo Week 6 Christmas Survey App',
+    name: 'Christmas Survey App',
     description: 'The Christmas Survey App is a fun and interactive survey about Christmas. It features radio buttons, checkboxes, and a radio handler.',
     techniques: 'React, pair-programming',
     thumbnail: Week6Christmas
 },
   'project-music-releases-vite': {
-    name: 'Technigo Week 5 Music Releases',
+    name: 'Music Releases on Spotify',
     description: 'The Music Releases project displays the latest music releases from the time of the API.',
     techniques: 'React, Spotify API, CSS',
     thumbnail: Week5Music
 },
   'project-weather-app': {
-    name: 'Technigo Week 4 Weather App',
+    name: 'Weather App',
     description: 'The Weather App provides current weather information for Stockholm.',
     techniques: 'React, OpenWeather API, CSS, HTML, pair-programming',
     thumbnail: Week4Weather
 },
   'project-guess-who': {
-    name: 'Technigo Week 3 Guess Who Game',
+    name: 'Guess Who Game',
     description: 'The Guess Who Game is a classic game where you guess the hidden character.',
     techniques: 'HTML, CSS, JavaScript',
     thumbnail: Week3GuessWho
 },
   'project-chatbot': {
-    name: 'Chatbot Built in JavaScript',
+    name: 'The order chatbot',
     description: 'The Chatbot app is a conversational AI-powered tool designed to take your food order.',
     techniques: 'JavaScript, HTML5, CSS3',
     thumbnail: Week2Chatbot
 },
   'project-pizza': {
-    name: 'Technigo Week 1 Pizza App',
+    name: 'The Pizza App',
     description: 'The Pizza App allows you to customize and order your favorite pizza using a simple user interface.',
     techniques: 'HTML5, CSS3, JavaScript',
     thumbnail: Week1Pizza
@@ -100,7 +109,7 @@ const projectDetails = {
     thumbnail: Week0Businesswebsite
   },
   'project-news': {
-    name: 'Technigo News App',
+    name: 'News App',
     description: 'The News App displays the latest news from the world of paper flowers.',
     techniques: 'React, News API',
     thumbnail: paperFlowerNews
@@ -108,6 +117,7 @@ const projectDetails = {
 };
 
 const netlifyUrls = {
+  'final-boiler-plate-monorepo': 'https://foodiemoodie.netlify.app/',
   'project-custom-hooks-qr-code-generator-vite':'https://cocofnasqrcode.netlify.app/',
   'project-state-management-quiz-vite': 'https://theoceanquiz.netlify.app/',
   'project-movies-vite': 'https://subtle-macaron-96a6c5.netlify.app/',
