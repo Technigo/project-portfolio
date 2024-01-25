@@ -1,5 +1,5 @@
 import "./projects.css";
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Heading } from '/src/components/typography/Heading.jsx';
 import { ProjectCard } from './ProjectCard';
 
@@ -41,7 +41,6 @@ export const Projects = () => {
             ) : (
                 <ProjectCard repositories={gitData} />
             )}
-
         </section>
     );
 }
