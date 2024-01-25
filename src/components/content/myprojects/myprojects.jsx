@@ -42,10 +42,6 @@ export const MyProjects = () => {
     }, []);
 
 
-
-
-
-
     return (
         <div className={style.myProjectsBox}>
             <div className={style.projectsWrapper}>
