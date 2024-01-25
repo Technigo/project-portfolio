@@ -24,7 +24,7 @@ export const Header = () => {
                     />
                     <Heading
                         level={2}
-                        text="Frontend Developer & UX Designer"
+                        text="Full Stack Developer & UX Designer"
                         aria-label="Frontend Developer & UX Designer"
                         className="header-h2"
                     />
