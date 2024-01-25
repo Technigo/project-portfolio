@@ -1,8 +1,7 @@
 //NOT DONE:
 //Have written in each component what is not finished yet
 //I have removed "My words" for now as I have no articles, but I started making it in code in case I want to use it later
-//Not done responsiveness and adapting to different screens
-//Not done acessability
+
 
 import style from './main-wrapper.module.css'
 import { Introduction } from './introduction/introduction.jsx'
