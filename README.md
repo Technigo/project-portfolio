@@ -10,7 +10,7 @@ I have completed Sprint 2 of the boot camp! For the final phase, I took my skill
 
 ## Author
 
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://wk8-beckiemorton-react-portfolio.netlify.app/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://beckiemorton-portfolio.netlify.app/)
 [![@Technigo](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rebecca-morton-739446204/)
 [![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BeckieMorton)
 
@@ -35,7 +35,7 @@ Through this project, I have learned invaluable lessons in React development. I 
 
 ## View it live here!
 
-https://wk8-beckiemorton-react-portfolio.netlify.app/
+https://beckiemorton-portfolio.netlify.app/
 
 ### Screenshots
 
