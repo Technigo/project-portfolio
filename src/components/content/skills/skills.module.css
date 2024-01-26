@@ -6,8 +6,7 @@
     justify-content: center;
     align-items: center;
     gap: 128px;
-    width: 1280px;
-    /*had to add width to make the box align with the others, if not there was an indent--*/
+    width: 100;
 }
 
 h1.h1 {
@@ -16,10 +15,11 @@ h1.h1 {
 }
 
 .innerBox {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 64px;
-
+    justify-content: center;
+    align-items: start;
 }
 
 .headerCode {
@@ -67,4 +67,45 @@ h1.h1 {
     list-style-type: none;
     padding-left: 0;
     padding-bottom: 30px;
+}
+
+
+@media screen and (min-width: 744px) and (max-width: 1280px) {
+    .skillBox {
+        height: auto;
+        top: 260px;
+        left: 186px;
+        gap: 64px
+    }
+
+    .innerBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .h1.h1 {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 68px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .headerCode,
+    .headerUpcoming,
+    .headerMore,
+    .headerToolbox {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+
+}
+
+@media (max-width: 744px) {
+    .innerBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

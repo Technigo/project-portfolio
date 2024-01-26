@@ -1,6 +1,8 @@
 //NOT DONE:
+// Button Hover
 // Wawy line in bottom
 // Later: In Github: Change project Name, Make sure link to github is fetched from github if not present in json, Get links and tags from github instead of json?
+// Later: Move all projects to second page and only display featured projects on frontpage
 
 import style from "./myprojects.module.css"
 import { useState, useEffect } from "react"
@@ -16,27 +18,34 @@ export const MyProjects = () => {
         fetch('https://api.github.com/users/mirelcac/repos')
             .then((response) => response.json())
             .then((githubData) => {
-                const mergedProjects = githubData.map((githubProject) => {
-                    // Find the project in your JSON data that matches the GitHub project URL
-                    const additionalData = myProjectsData.projects.find(
-                        p => p.github === githubProject.html_url
-                    );
-
-                    if (additionalData) {
-                        // If additionalData is found in JSON, use its name and other details
-                        return {
-                            ...githubProject,
-                            ...additionalData,
-                            name: additionalData.name, // Use the name from JSON data instead of github
-                        };
-                    } else {
-                        // If no additionalData is found, just return the GitHub project data
-                        return githubProject;
-                    }
+                // Filter out unwanted projects
+                const filteredGithubData = githubData.filter(project => {
+                    // Define the names of projects you want to exclude
+                    const excludedProjects = ['Web-Fall-23'];
+                    return !excludedProjects.includes(project.name);
                 });
-                setProjects(mergedProjects);
+
+                // Create a map of GitHub projects by URL for quick access
+                const githubProjectsByUrl = new Map(
+                    filteredGithubData.map(project => [project.html_url, project])
+                );
+
+                // Merge your JSON projects with GitHub data
+                const mergedProjects = myProjectsData.projects.map(jsonProject => {
+                    const githubProject = githubProjectsByUrl.get(jsonProject.github);
+                    if (githubProject) {
+                        // Remove the GitHub project from the map if it's used
+                        githubProjectsByUrl.delete(jsonProject.github);
+                        return { ...githubProject, ...jsonProject };
+                    }
+                    return jsonProject;
+                });
+
+                // Add any remaining GitHub projects (not in JSON) at the top
+                const newGithubProjects = Array.from(githubProjectsByUrl.values());
+                setProjects([...newGithubProjects, ...mergedProjects]);
             })
-            .catch((error) => console.error('Error fetching data:', error));
+            .catch(error => console.error('Error fetching data:', error));
     }, []);
 
 
