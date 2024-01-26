@@ -10,7 +10,7 @@ export const TechSection = () => {
         <div className={styles.rightBox}>
           <p>
             HTML, CSS, JavaScript, ES6, JSX, React, React Hooks, Node.js,
-            Express API, Web Accessibility, APIs, mob-programming,
+            Tailwind CSS, Express API, Web Accessibility, APIs, mob-programming,
             pair-programming, GitHub.
           </p>
         </div>
