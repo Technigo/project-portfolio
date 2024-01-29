@@ -43,7 +43,26 @@ export const ProjectInfo = [
     skills: ["HTML", "CSS", "React", "Custom Hooks"],
     text: "React & Vite Boiler Plate project to Generate QR codes from URLs, utilising custom hooks for efficient state management.",
   },
-
+  {
+    imagePath: "./assets/projects/weatherapp.png",
+    repoName: "project-weather-app",
+    displayName: "Weather App",
+    netlifyUrl: "https://wk4-weatherapp-api-a735bf.netlify.app/",
+    gitUrl: "https://github.com/BeckieMorton/project-weather-app",
+    className: "WeatherApp",
+    skills: ["HTML", "CSS", "JavaScript"],
+    text: "A SPA crafted for mobile that uses a weather API to tell today's weather and give a 5-day forecast. A paried project to practice working in branches.",
+  },
+  {
+    imagePath: "./assets/projects/chatbot.png",
+    repoName: "project-chatbot",
+    displayName: "Chatbot",
+    netlifyUrl: "https://wk2-chatbot-project-7b3823.netlify.app/",
+    gitUrl: "https://github.com/BeckieMorton/project-chatbot",
+    className: "ChatBot",
+    skills: ["HTML", "CSS", "JavaScript"],
+    text: "A functional chatbot interface. The user can interact, and the bot can ask questions, display messages, and respond with precision. Book a flight with Myhem Mystery flights today!",
+  },
   {
     imagePath: "./assets/projects/moviesite.png",
     repoName: "project-movies-vite",
@@ -55,27 +74,6 @@ export const ProjectInfo = [
     text: "Utilising themoviedb.org's API to showcase movies and their details. Fetures fetching popular movie specifics, and managing image URLS. Using react router functionality, error handling, and loading states.",
   },
 
-  {
-    imagePath: "./assets/projects/weatherapp.png",
-    repoName: "project-weather-app",
-    displayName: "Weather App",
-    netlifyUrl: "https://wk4-weatherapp-api-a735bf.netlify.app/",
-    gitUrl: "https://github.com/BeckieMorton/project-weather-app",
-    className: "WeatherApp",
-    skills: ["HTML", "CSS", "JavaScript"],
-    text: "A SPA crafted for mobile that uses a weather API to tell today's weather and give a 5-day forecast. A paried project to practice working in branches.",
-  },
-
-  {
-    imagePath: "./assets/projects/chatbot.png",
-    repoName: "project-chatbot",
-    displayName: "Chatbot",
-    netlifyUrl: "https://wk2-chatbot-project-7b3823.netlify.app/",
-    gitUrl: "https://github.com/BeckieMorton/project-chatbot",
-    className: "ChatBot",
-    skills: ["HTML", "CSS", "JavaScript"],
-    text: "A functional chatbot interface. The user can interact, and the bot can ask questions, display messages, and respond with precision. Book a flight with Myhem Mystery flights today!",
-  },
   {
     imagePath: "./assets/projects/guesswho.png",
     repoName: "project-guess-who",

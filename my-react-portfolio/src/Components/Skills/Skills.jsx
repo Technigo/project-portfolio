@@ -16,7 +16,7 @@ export const Skills = () => {
             <li>CSS3</li>
             <li>Javascript ES6</li>
             <li>React</li>
-            <li>Styled Components</li>
+            <li>Tailwind CSS</li>
             <li>GitHub</li>
             <li>Node.js</li>
           </ul>
