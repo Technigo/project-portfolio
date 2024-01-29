@@ -2,6 +2,9 @@
     background-color: var(--primary);
     color: white;
     padding: 128px 16px;
+}
+
+.tech-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,4 +13,48 @@
 
 .tech h3 {
     color: white;
+}
+
+.tech p {
+    font-family: var(--paragraph-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+/* ------------ TABLET ------------ */
+@media (max-width: 1279px) and (min-width: 744px) {
+    .tech {
+        padding: 256px 64px;
+    }
+
+    .tech h3 {
+        text-align: center;
+        max-width: 616px;
+    }
+}
+
+/* ------------ DESKTOP ------------ */
+@media (min-width: 1280px) {
+    .tech {
+        padding: 256px 64px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tech-wrapper {
+        max-width: 820px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 124px;
+    }
+
+    .tech h3 {
+        text-align: left;
+    }
 }

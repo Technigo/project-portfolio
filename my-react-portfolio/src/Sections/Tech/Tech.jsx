@@ -7,9 +7,10 @@ const techText = "HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, 
 export const Tech = () => {
     return (
         <section className="tech">
-            <LargeText text={"Tech"} />
-            <SubTitle text={techText} />
-
+            <section className="tech-wrapper">
+                <LargeText text={"Tech"} />
+                <SubTitle text={techText} />
+            </section>
         </section>
     )
 
