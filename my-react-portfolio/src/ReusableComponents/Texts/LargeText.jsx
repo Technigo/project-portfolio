@@ -1,5 +1,5 @@
 export const LargeText = ({ text }) => {
     return (
-        <p className="large">{text}</p>
+        <h1 className="largetext">{text}</h1>
     )
 }

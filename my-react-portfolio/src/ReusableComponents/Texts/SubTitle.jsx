@@ -1,5 +1,5 @@
 export const SubTitle = ({ text }) => {
     return (
-        <h3>{text}</h3>
+        <h3 className="subtitle">{text}</h3>
     )
 }
