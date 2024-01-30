@@ -3,7 +3,7 @@ import { Heading } from '/src/components/typography/Heading.jsx';
 import { Image } from '/src/components/images/Image.jsx';
 import { Paragraph } from '/src/components/typography/Paragraph.jsx';
 
-const introText = "Maria is a versatile professional at the intersection of UX design and frontend development. Her diverse background in finance, coupled with international experience, equips her with a unique perspective. She has a deep-rooted passion for technology with the mission to create seamless, user-centric digital solutions that bridge the gap between finance and innovation.";
+const introText = "I am a Full Stack Developer with a flair for UX design and a background in finance and people management. My goal is to keep on having fun while I’m learning new languages and frameworks to create great products for the world. I thrive in a roles where I can combine my management and problem solving skills.";
 
 export const Header = () => {
     return (
@@ -24,8 +24,8 @@ export const Header = () => {
                     />
                     <Heading
                         level={2}
-                        text="Full Stack Developer & UX Designer"
-                        aria-label="Frontend Developer & UX Designer"
+                        text="Full Stack Developer"
+                        aria-label="Full Stack Developer"
                         className="header-h2"
                     />
                 </section>
