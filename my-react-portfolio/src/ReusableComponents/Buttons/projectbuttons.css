@@ -1,23 +1,51 @@
-.netlifyButton,
-.githubButton {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-}
-
-
-.netlifyButton button,
-.githubButton button {
-    background: #F5F5F5;
-    color: #333333;
-    border-radius: 40px;
-    border: none;
+.common-button {
+    border-radius: var(--corner-radius);
+    background-color: var(--btn-gray);
+    color: var(--btn-text);
+    font-family: var(--heading-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
     display: flex;
     align-items: center;
     gap: 7px;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    padding-right: 16px;
 }
 
+.show-more-button {
+    border-radius: var(--corner-radius);
+    background-color: var(--btn-gray);
+    color: var(--btn-text);
+    font-family: var(--heading-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.show-more-button:hover {
+    color: white;
+    background-color: var(--primary);
+}
+
+
+
+
+
+
+
+/* 
 .netlifyButton p,
 .githubButton p {
     padding-right: 16px;
@@ -26,11 +54,11 @@
 .netlifyButton a,
 .githubButton a {
     text-decoration: none;
-    /* Remove underlines for linked text within buttons */
-}
+
+} */
 
 
-.netlifyButton button svg,
+/* .netlifyButton button svg,
 .githubButton button svg {
     fill: #333333;
 }
@@ -55,4 +83,4 @@
 .githubButton button:hover p {
     color: white;
     transition: color 0.3s ease-in-out;
-}
+} */
