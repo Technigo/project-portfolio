@@ -5,7 +5,6 @@ import { ArticleAssets } from "../../assets/ArticleAssets";
 
 export const MyWords = () => {
   const articles = ArticleAssets.articles;
-  console.log(articles);
   return (
     <div className="my-words-frame">
       <img src={squiggly} alt="squiggly-line" className="squiggly" />

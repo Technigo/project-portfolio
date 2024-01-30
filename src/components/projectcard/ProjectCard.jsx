@@ -21,7 +21,6 @@ export const ProjectCard = ({
   tags,
 }) => {
   let imagedirectory;
-  console.log(title);
   switch (title) {
     case "Portfolio-Project":
       imagedirectory = portfolio;
@@ -87,7 +86,6 @@ export const ProjectCard = ({
             className="deployedBtn"
             onClick={() => window.open(deployedLink, "_blank")}
           >
-            {console.log("deployed: " + deployedLink)}
             <img src={demodark} alt="globe-icon-dark" />
             Live Demo
           </button>

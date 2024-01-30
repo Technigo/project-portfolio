@@ -39,11 +39,7 @@ const App = () => {
       {/* <Header /> */}
       <Bio />
       <Tech />
-      {!loading ? (
-        <FeaturedProjects projectData={repoList} />
-      ) : (
-        console.log("Loading...")
-      )}
+      {!loading && <FeaturedProjects projectData={repoList} />}
       {/* <MyWords /> */}
       <Skills />
       <LetsTalk />
