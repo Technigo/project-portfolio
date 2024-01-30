@@ -44,7 +44,7 @@ const App = () => {
       ) : (
         console.log("Loading...")
       )}
-      <MyWords />
+      {/* <MyWords /> */}
       <Skills />
       <LetsTalk />
       <Footer />
