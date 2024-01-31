@@ -7,7 +7,7 @@ export const ProjectButtons = ({ project }) => {
       <div className="netlifyButton common-button">
         <a href={project.netlify} target="_blank" rel="noreferrer">
           <button type="button" className="show-more-button" aria-label="live demo">
-            <img src="my-react-portfolio/src/assets/icons/live-demo.svg" alt="Live demo" />
+            <img src="/src/assets/icon/live-demo.svg" alt="" />
             <p>Live demo</p>
           </button>
         </a>
@@ -15,6 +15,7 @@ export const ProjectButtons = ({ project }) => {
       <div className="githubButton common-button">
         <a href={project.github} target="_blank" rel="noreferrer">
           <button type="button" className="show-more-button" aria-label="View the code">
+            <img src="/src/assets/icon/github.svg" alt="" />
             <p>View the code</p>
           </button>
         </a>
