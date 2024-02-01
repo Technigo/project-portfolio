@@ -1,6 +1,6 @@
 import { LinkButton } from "./LinkButton";
 import projects from "../../projects.json";
-import view from "../assets/githubbtn.svg";
+import view from "../assets/github-hover.svg";
 import viewHover from "../assets/githubbtn-hover.svg";
 import livedemo from "../assets/livedemo.svg";
 import liveDemoHover from "../assets/livedemo-hover.svg";
@@ -12,18 +12,18 @@ export const Links = ({ netlify, github }) => {
     <div className="project-links">
       {netlify && (
         <LinkButton
-          buttonText=""
+          buttonText="Live Demo"
           url={netlify}
           icon={livedemo}
-          hoverIcon={liveDemoHover}
+          // hoverIcon={liveDemoHover}
         />
       )}
       {github && (
         <LinkButton
-          buttonText=""
+          buttonText="View the code"
           url={github}
           icon={view}
-          hoverIcon={viewHover}
+          // hoverIcon={viewHover}
         />
       )}
     </div>
