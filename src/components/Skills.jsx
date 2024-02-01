@@ -13,10 +13,10 @@ function Skills() {
     'JSX',
     'APIs',
     'Flexbox',
-    'Web Accessibility',
     'GitHub',
     'Zustand',
-    'Mongo DB'
+    'Mongo DB',
+    'SQL'
   ]);
 
   const toolbox = [
@@ -25,16 +25,20 @@ function Skills() {
     'Notion',
     'Postman',
     'Wordpress',
+    'Netlify',
+    'Render'
   ];
 
   const more = [
     'Project manager',
+    'Web Accessibility',
+    'Information security/GDPR',
+    'Consultancy work',
+    'Agile methodology',
     'DiSC certification',
     'Chief editor',
     'Records management',
     'E-archiving',
-    'Consultancy work',
-    'Agile methodology',
     'Communication skills',
   ];
 
