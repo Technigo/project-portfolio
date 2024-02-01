@@ -21,10 +21,10 @@ export const Intro = () => {
       </div>
       <div className="arrow-icon">
         <a href="">
-          <FaArrowDownLong
+          {/* <FaArrowDownLong
             className="arrowIcon"
             aria-label="Scroll down to learn more"
-          />
+          /> */}
         </a>
         {/* <img src={arrow} alt="arrowicon" /> */}
       </div>
