@@ -2,17 +2,20 @@
 import "./projectcard.css";
 import { Tag } from "../../ReusableComponents/Texts/Tag";
 import { ProjectButtons } from "../../ReusableComponents/Buttons/ProjectButtons";
+import { NormalText } from "../../ReusableComponents/Texts/NormalText";
+import { SubTitle } from "../../ReusableComponents/Texts/SubTitle";
+import { ProjectImage } from "../../ReusableComponents/Images/ProjectImage";
+
+
 
 export const ProjectCard = ({ project }) => {
     return (
         <div className="projectWrapper">
             <div className="projectContainer">
-                <img src={project.image} height={280} width={280} alt="Project Image" />
+                <ProjectImage className="ProjectImage" src={project.image} alt="Project Image" />
                 <div className="projectDescription">
-                    <h2 className="project-title">{project.name}</h2>
-                    <div className="readmeContent">
-                        <p>{project.description}</p>
-                    </div>
+                    <SubTitle className="subtitle" text={project.name} />
+                    <NormalText className="normaltext" text={project.description} />
                     <div className="project-tags">
                         {project.tags && (
                             <Tag tagText={project.tags} />
@@ -26,4 +29,6 @@ export const ProjectCard = ({ project }) => {
         </div>
     );
 };
+
+
 

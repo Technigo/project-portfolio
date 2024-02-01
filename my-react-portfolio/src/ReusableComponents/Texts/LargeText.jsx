@@ -1,5 +1,7 @@
-export const LargeText = ({ text }) => {
+import "./text.css";
+
+export const LargeText = ({ className, text }) => {
     return (
-        <h1 className="largetext">{text}</h1>
+        <h1 className={className}>{text}</h1>
     )
 }

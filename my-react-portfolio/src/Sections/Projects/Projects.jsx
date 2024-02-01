@@ -6,7 +6,7 @@ export const Projects = ({ projects }) => {
     return (
         <section>
             <div className="card-header-wrapper">
-                <MainTitle className={"featured-projects-heading"} text={"Featured Projects"} />
+                <MainTitle className="maintitle" text={"Featured Projects"} />
             </div>
             {projects.map((project, index) => (
                 <div key={index}>
