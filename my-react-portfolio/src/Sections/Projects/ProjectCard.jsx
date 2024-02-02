@@ -8,25 +8,26 @@ import { ProjectImage } from "../../ReusableComponents/Images/ProjectImage";
 
 
 
+
 export const ProjectCard = ({ project }) => {
     return (
-        <div className="projectWrapper">
-            <div className="projectContainer">
-                <ProjectImage className="ProjectImage" src={project.image} alt="Project Image" />
-                <div className="projectDescription">
-                    <SubTitle className="subtitle" text={project.name} />
-                    <NormalText className="normaltext" text={project.description} />
-                    <div className="project-tags">
-                        {project.tags && (
-                            <Tag tagText={project.tags} />
-                        )}
-                    </div>
-                    <div className="project-buttons">
-                        <ProjectButtons project={project} />
-                    </div>
+
+        <div className="projectContainer">
+            <ProjectImage className="ProjectImage" src={project.image} alt="Project Image" />
+            <div className="projectDescription">
+                <SubTitle className="subtitle" text={project.name} />
+                <NormalText className="normaltext" text={project.description} />
+                <div className="project-tags">
+                    {project.tags && (
+                        <Tag tagText={project.tags} />
+                    )}
+                </div>
+                <div className="project-buttons">
+                    <ProjectButtons project={project} />
                 </div>
             </div>
         </div>
+
     );
 };
 

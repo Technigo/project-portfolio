@@ -1,11 +1,32 @@
-/* .card-header-wrapper {
+.projectWrapper {
     padding: 128px 16px;
     display: flex;
     flex-direction: column;
     gap: 64px;
 }
 
-.card-header-wrapper h2 {
-    font-size: 56px;
+.heading-project {
+    color: var(--primary);
     text-align: center;
-} */
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+/* ------------ Tablet only ------------ */
+@media (max-width: 1279px) and (min-width: 744px) {
+    .projectWrapper {
+        padding: 128px 32px;
+        display: flex;
+        gap: 64px;
+    }
+}
+
+/* ------------ Desktop only ------------ */
+@media (min-width: 1280px) {
+    .projectWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 128px 230px 124px 230px;
+        gap: 128px;
+    }
+}
