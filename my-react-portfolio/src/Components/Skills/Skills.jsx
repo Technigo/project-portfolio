@@ -45,6 +45,7 @@ export const Skills = () => {
               </span>
             </h2>
             <li>Typescript</li>
+            <li>Bootstrap</li>
             <li>Tailwind</li>
           </ul>
         </div>
