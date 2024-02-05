@@ -13,7 +13,7 @@ export const ProjectCard = ({ project }) => {
     return (
 
         <div className="projectContainer">
-            <ProjectImage className="ProjectImage" src={project.image} alt="Project Image" />
+            <ProjectImage className="project-image" src={project.image} alt="Project Image" />
             <div className="projectDescription">
                 <SubTitle className="subtitle" text={project.name} />
                 <NormalText className="normaltext" text={project.description} />
