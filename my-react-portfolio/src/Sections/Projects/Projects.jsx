@@ -1,7 +1,7 @@
 
 import "./projects.css"
 
-import { LargeText } from "../../ReusableComponents/Texts/Largetext";
+import { LargeText } from "../../ReusableComponents/Texts/LargeText";
 import { ProjectCard } from "../Projects/ProjectCard";
 
 export const Projects = ({ projects }) => {

@@ -57,58 +57,20 @@
     background-color: var(--hover-yellow);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------ TYPOGRAPHY ------------ */
-/* .skills p.large {
-    text-align: left;
-} */
-
-/* ------------ MEDIA QUERIES ------------ */
-/* ------------ Tablet only ------------ */
+/*----------- Media Query ------------*/
+/*----------- TABLET ------------*/
 @media (max-width: 1279px) and (min-width: 744px) {
-    .skills {
-        padding: 256px 64px;
-    }
-
-
-    .skill-cards-section {
-        display: grid;
+    .skill-section {
         grid-template-columns: repeat(2, 1fr);
-        /* Two columns */
-        gap: 64px;
+        /* 2 columns for tablets */
     }
 }
 
-
-/* ------------ Desktop only ------------ */
+/*----------- Media Query -----------*/
+/*----------- DESKTOP ------------*/
 @media (min-width: 1280px) {
-    .skills {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        gap: 128px;
-    }
-
-    /* .skills p.large {
-            text-align: left;
-            max-width: 600px;
-        } */
-
-    .skill-cards-section {
-        display: flex;
-        gap: 128px;
+    .skill-section {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columns for desktop */
     }
 }
