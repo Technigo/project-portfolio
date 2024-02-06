@@ -1,7 +1,7 @@
 import { Header } from "./sections/Header/Header";
 import { Tech } from "./sections/Tech/Tech";
 import { Projects } from "./sections/Projects/Projects";
-import { MyWords } from "./sections/MyWords/MyWords";
+// import { MyWords } from "./sections/MyWords/MyWords";
 import { Skills } from "./sections/Skills/Skills";
 import { LetsTalk } from "./sections/LetsTalk/LetsTalk";
 import { Footer } from "./sections/Footer/Footer";
@@ -48,7 +48,7 @@ export const App = () => {
       <Header />
       <Tech />
       {!loading ? <Projects projectData={repoList} /> : <p>Loading...</p>}
-      <MyWords />
+      {/* <MyWords /> */}
       <Skills />
       <LetsTalk />
       <Footer />
