@@ -1,9 +1,7 @@
 import "./image.css";
-import evelyn from "../Images/cvimage/evelyn.png"
 
-
-export const CircleImage = () => {
+export const CircleImage = ({ className, src, altImagetext }) => {
     return (
-        <img className="circle-image" src={evelyn} alt="Profile Image of Evelyn" />
+        <img className={`CircleImage ${className}`} src={src} alt={altImagetext} />
     );
 };
