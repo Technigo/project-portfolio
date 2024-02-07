@@ -15,16 +15,20 @@ const Contact = React.forwardRef((props, ref) => { // Use forwardRef
       <img src={profileImage} alt="Your Name" className="profile-image" />
       <p className="contact-text">You can reach me here:</p>
       <ul className="contact-list">
+      <div className="button-container">
         <Button
           type="contact-link" 
           icon={<img src={linkedinIcon} alt="LinkedIn" />} 
           onClick={() => window.open(linkedinLink, '_blank')} 
         />
-        <Button
-          type="contact-link" 
-          icon={<img src={githubIcon} alt="GitHub" />} 
-          onClick={() => window.open(githubLink, '_blank')} 
-        />
+        </div>
+<div className="button-container">
+  <Button
+    type="contact-link"
+    icon={<img src={githubIcon} alt="GitHub" />}
+    onClick={() => window.open(githubLink, '_blank')}
+  />
+</div>
       </ul>
     </div>
   );
