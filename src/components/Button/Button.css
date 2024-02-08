@@ -2,19 +2,18 @@
   display: flex;
   padding: 5px;
   margin-top: 10px;
-
   align-items: center;
   gap: 3px;
   border-radius: 40px;
   background: #f5f5f5;
   text-decoration: none;
   color: black;
-  font-family: "Hind", sans-serif;
+  font-size: 12px;
   padding-right: 10px;
   padding-left: 10px;
   box-sizing: border-box;
-  width: 179px;
-  height: 48px;
+  width: 170px;
+  height: 36px;
 }
 
 .button-icon span {
@@ -36,26 +35,17 @@
   padding-top: 3px;
 }
 
-.button-text span {
-  color: #333;
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
 .Button.live-demo:hover {
-  background-color: #7fb3d5;
+  background-color: #fadbd8;
   color: white;
 }
 
 .Button.live-demo:hover img {
-  filter: invert(1);
+  filter: invert(1) brightness(150%);
 }
 
 .Button.view-code:hover {
-  background-color: #f1948a;
+  background-color: #c5cfc3;
   color: white;
 }
 
@@ -68,9 +58,17 @@
 }
 
 /* Tablets */
-/* @media (min-width: 745px) and (max-width: 1279px) {
+@media (min-width: 745px) and (max-width: 1279px) {
   .Button {
-    flex-direction: row;
-    gap: 20px;
+    width: 179px;
+    height: 48px;
   }
-} */
+}
+
+/* Desktop */
+@media (min-width: 1279px) {
+  .Button {
+    width: 179px;
+    height: 48px;
+  }
+}
