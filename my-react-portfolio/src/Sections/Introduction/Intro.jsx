@@ -4,6 +4,7 @@ import { MainTitle } from "../../ReusableComponents/Texts/MainTitle";
 import { NormalText } from "../../ReusableComponents/Texts/NormalText";
 import { SmallSubTitle } from "../../ReusableComponents/Texts/SmallSubTitle"
 import evelynImage from "../../assets/cvimage/evelyn.png";
+import { ArrowDownAnimation } from "../../ReusableComponents/Animation/Arrow/ArrowDownAnimation";
 
 const introText = "Evelyn is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field."
 
@@ -20,6 +21,7 @@ export const Intro = () => {
             <section className="intro-text">
                 <NormalText className="normaltext" text={introText} />
             </section>
+            <ArrowDownAnimation />
         </header>
     );
 };
