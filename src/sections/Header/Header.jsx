@@ -21,11 +21,16 @@ export const Header = () => {
           <h2>Frontend Developer</h2>
         </div>
         <p>
-          Caro is an exceptional developer known for her innovative solutions
-          and exceptional coding abilities. She creates user-friendly
-          applications and solves complex issues with ease. Her drive for
-          excellence makes her a valuable asset to any project and a standout in
-          the technology field.
+          Caro is a dedicated web developer with a foundation in modern web
+          technologies, gained from an intensive bootcamp in web development.
+          She has developed proficiency in HTML, CSS, JavaScript, React and
+          backend fundamentals using Node.js and databases. Caro approaches
+          problem-solving with patience and a willingness to tackle challenges,
+          striving to contribute effectively to projects with a focus on
+          functionality and user experience. Her journey in web development is
+          driven by a continuous desire to learn and improve, making her a
+          collaborative and adaptable team member in the ever-evolving tech
+          landscape.
         </p>
       </div>
       <button className="next-section-arrow" onClick={scrollTo}>
