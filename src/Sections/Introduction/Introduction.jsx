@@ -1,37 +1,26 @@
-// import arrow from "/down-arrow.svg"
-// import { TiArrowDownThick } from "react-icons/ti"
 import { FaUpLong } from "react-icons/fa6";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "/Frida.jpeg"
 import "./introduction.css"
 
 export const Introduction = () => {
-    // #region Variables containing text-content
-
-    let introHeader = "Frontend Developer"
-    let introGreeting = "Hi, I'm Frida Kristiansson"
-    let introText = "Frida is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field."
-    let imageURL = "Frida.jpeg"
-    
-    // #endregion
 
     return(
         <>
         <div className="grid-parent light">
             <div className="intro section">
-                <img className="profile-pic" src={imageURL} alt="Picture of Frida Kristiansson" width="20px" />
+                <img className="profile-pic" src="Frida.jpeg" alt="Picture of Frida Kristiansson" width="20px" />
                 
-                <h3 className="title-sub-header">{introGreeting}</h3>
-                <h1 className="title-header">{introHeader}</h1>
-                <p className="intro-text">{introText}</p>
+                <h3 className="title-sub-header">Hi, I&apos;m Frida Kristiansson</h3>
+                <h1 className="title-header">Frontend Developer</h1>
+                <p className="intro-text">
+                    {`I am a Frontend Developer with a love for innovative solutions and clean code. With a background as a medical doctor and a love for mathematics I have a unique foundation as I step into the Tech-field. 
+My drive for excellence and my passion to learn makes me a valuable asset to any project.`}
+                </p>
             </div>
         </div>
         <div className="icon-container">
             <a href="#tech-section">
-                {/* <img className="arrow icon" src={arrow} alt="arrow icon, click to get to Tech-section" aria-label="Scroll down to learn more" /> */}
-                {/* <TiArrowDownThick /> */}
                 <FaUpLong className="arrow icon" />
-
             </a>
         </div>
         </>
