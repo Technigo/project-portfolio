@@ -1,12 +1,29 @@
-// useGSAP.js
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-export const useGSAP = (ref, animationOptions) => {
+gsap.registerPlugin(ScrollTrigger);
+
+export const useGSAP = (ref, animationOptions, scrollTriggerOptions = null) => {
     useEffect(() => {
         if (ref.current) {
-            gsap.to(ref.current, animationOptions);
+            const animation = gsap.to(ref.current, {
+                ...animationOptions,
+                scrollTrigger: scrollTriggerOptions ? {
+                    trigger: ref.current,
+                    ...scrollTriggerOptions,
+                } : null,
+            });
+
+            // Clean up function to kill animations and ScrollTriggers when component unmounts or ref changes
+            return () => {
+                if (scrollTriggerOptions) {
+                    animation.scrollTrigger.kill();
+                }
+                animation.kill();
+            };
         }
-    }, [ref, animationOptions]); // Dependencies array ensures effect runs when ref or animationOptions change
+    }, [ref, animationOptions, scrollTriggerOptions]); // Include scrollTriggerOptions in dependencies array
 };
+
 

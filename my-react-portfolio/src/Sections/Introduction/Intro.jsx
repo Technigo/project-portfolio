@@ -21,7 +21,9 @@ export const Intro = () => {
             <section className="intro-text">
                 <NormalText className="normaltext" text={introText} />
             </section>
-            <ArrowDownAnimation />
+            <div className="arrow-container">
+                <ArrowDownAnimation className="arrow-down" aria-label="this is a arrow down" />
+            </div>
         </header>
     );
 };

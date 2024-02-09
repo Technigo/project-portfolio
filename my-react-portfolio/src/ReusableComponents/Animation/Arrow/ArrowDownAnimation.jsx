@@ -7,11 +7,17 @@ export const ArrowDownAnimation = () => {
     const arrowRef = useRef(null);
 
     useGSAP(arrowRef, {
-        y: 20, // Move the arrow 20 pixels down
-        repeat: -1, // Infinite loop
-        yoyo: true, // Go back and forth
-        duration: 1, // Duration of 1 second for each animation cycle
-        ease: 'Power1.easeInOut'
+        y: 20, // Animation options
+        repeat: -1,
+        yoyo: true,
+        duration: 1,
+        ease: 'Power1.easeInOut',
+    }, {
+        // ScrollTrigger options
+        start: "top center",
+        end: "bottom center",
+        toggleActions: "play none none none",
+        // markers: true, // Uncomment for debugging
     });
 
     return <ArrowDown ref={arrowRef} />;
