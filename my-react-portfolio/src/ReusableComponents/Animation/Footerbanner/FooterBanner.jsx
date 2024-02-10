@@ -14,7 +14,7 @@ export const FooterBanner = () => {
         gsap.to(banner, {
             x: -bannerWidth, // Move the banner to the left by its own width
             ease: "none",
-            // repeat: -1, // Infinite loop
+            repeat: -2, // Infinite loop
             duration: 20, // Duration to complete one loop, adjust as needed for speed
         });
     }, []);
