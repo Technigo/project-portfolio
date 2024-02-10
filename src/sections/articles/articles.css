@@ -1,0 +1,120 @@
+.article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light-secondary);
+    color: var(--text);
+    padding: 128px 16px;
+    gap: 64px;
+    position: relative;
+}
+
+.article-container::before {
+    content: '';
+    position: absolute;
+    top: -4px; /* Adjust to position the line properly */
+    left: 0;
+    width: 100%;
+    height: 20px; /* Adjust the height of the line */
+    background-image: url('/assets/divider.svg'); /* Use your SVG file path */
+    background-repeat: repeat-x; /* Repeat the image along the x-axis */
+    z-index: 1; /* Place infront of the article content */
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.article-img-container {
+    height: 200px;
+    /* Limit the container width to its parent */
+    overflow: hidden;
+    /* Hide any content that goes beyond the container */
+    border-bottom: 20px solid var(--secondary);
+}
+
+.article-list {
+    display: grid;
+    justify-content: center;
+    gap: 64px;
+    max-width: 100%;
+}
+
+.article-heading {
+    color: var(--secondary);
+    text-align: center;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+/* ------------ Tablet only ------------ */
+@media (max-width: 1279px) and (min-width: 744px) {
+    .article-container {
+        padding: 128px 32px;
+        gap: 98px;
+    }
+
+    .article-heading {
+        text-align: left;
+    }
+
+    .article-img-container {
+        height: 340px;
+        align-self: stretch;
+        border-bottom: 20px solid var(--secondary);
+    }
+}
+
+/* ------------ Desktop only ------------ */
+@media (min-width: 1280px) {
+    .article-container {
+        padding: 128px auto;
+        /* Set the padding to "auto" to center the container horizontally */
+        gap: 64px;
+        display: flex;
+        /* Change to flex layout to center the heading and article-list */
+        flex-direction: column;
+        /* Stack the heading and article-list vertically */
+        align-items: center;
+        /* Center items horizontally within the container */
+    }
+
+    .article-heading {
+        text-align: center;
+    }
+
+    .article-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for desktop */
+        gap: 98px;
+        max-width: 1226px;
+        justify-content: center;
+        /* Center the content within the grid */
+    }
+
+    .article-img-container {
+        height: 460px;
+        align-self: stretch;
+        border-bottom: 20px solid var(--secondary);
+    }
+}
+
+/* ------------ Large screen only ------------ */
+@media (min-width: 1520px) {
+    .article-img-container {
+        height: 564px;
+        align-self: stretch;
+        border-bottom: 20px solid var(--secondary);
+    }
+}
