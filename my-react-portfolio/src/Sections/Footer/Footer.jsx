@@ -9,6 +9,7 @@ import evelynImage from "../../assets/cvimage/evelyn.png";
 
 
 
+
 export const Footer = () => {
     return (
         <footer className="contact-container">
