@@ -1,0 +1,52 @@
+.article-wrapper {
+    display: flex; 
+    flex-direction: column;
+    padding: 128px 32px; 
+    background-color: #FFECEA; 
+    gap: 64px; 
+    background-image: url('/assets/icons/wavy_line.svg');
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+.article-card {
+    display: flex; 
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start; 
+    
+}
+
+.article-inner-wrapper {
+    display: flex; 
+    flex-direction: column;
+    gap: 64px; 
+}
+
+@media (max-width: 1279px) and (min-width: 744px) {
+
+.article-card {
+    gap: 32px; 
+}
+
+}
+
+@media (min-width: 1280px) { 
+
+    .article-wrapper {
+        padding: 128px 131px;
+        /* display: grid; 
+        grid-template-columns: 50% 50%; */
+    }
+
+    .article-inner-wrapper {
+        display: grid; 
+        grid-template-columns: 50% 50%;
+        gap: 50px; 
+        justify-items: center;
+    }
+
+    .article-card {
+        width: 460px; 
+    }
+}
