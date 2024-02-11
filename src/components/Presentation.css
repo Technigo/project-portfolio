@@ -1,0 +1,93 @@
+.presentation {
+    width: 100vw;
+    max-height: 1500px;
+    background-color: #AFDBF5;
+    overflow: hidden; /* Add this to prevent child elements from overflowing */
+}
+
+.presentation-heading {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 80px;
+    font-weight: 700; /* Remove "px" from font-weight */
+    line-height: 97,52px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 143px;
+    margin: 0; /* Add this to reset any default margins */
+    color: #26619C;
+    padding: 128px 964px 0px 143px;
+}
+
+.presentation-paragraph {
+    font-family: 'Hind', sans-serif; /* Use font-family instead of just font */
+    color: #1E2749;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 460px;
+}
+
+.articles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 143px; /* Adjust padding as needed */
+}
+
+
+/* Tablet */
+@media (min-width: 744px) and (max-width: 1279px) {
+
+    .presentation {
+        width: 100vw;
+    }
+
+    .presentation-heading {
+        color: f06c9b;
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 284px;
+        height: 68px;
+        padding: 128px 56px 128px 143px;
+    }
+
+
+    .articles-grid {
+        padding: 0px 131px 0px 131px; /* Adjust padding as needed */
+    }
+
+    /* Adjust any other styles as needed for this breakpoint */
+}
+
+/* Mobile */
+@media (min-width: 375px) and (max-width: 743px){
+    .presentation {
+        width: 100vw;
+    }
+    
+    .presentation-heading {
+        font-family: 'Montserrat', sans-serif; 
+        color: #26619C;
+text-align: center;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+width: 343px;
+padding: 128px 16px 0px 16px;
+    }
+
+
+
+    .articles-grid {
+       width: 343px;/* Adjusted padding for small screens */
+       padding: 0px 16px 0px 16px;
+       margin: 0 auto;
+    }
+
+    /* Adjust any other styles as needed for this breakpoint */
+}

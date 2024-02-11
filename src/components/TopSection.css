@@ -1,0 +1,256 @@
+.top-section {
+  width: 100vw;
+  background-color: #FFFFFF;
+  display: inline-flex;
+padding: 332px 336px  336px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+gap: 199px;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.heading-classh1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  color: #1E2749;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.heading-classh2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #61a0af;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 16px;
+}
+.content-container {
+  display: flex; /* This will enable flexbox */
+  align-items: center; /* This will vertically align the children in the middle */
+  gap: 22px; /* This is the space between the image and the paragraph */
+}
+
+.paragraph-container {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-left: 0; 
+}
+
+.heading-paragraph-class {
+  font-family: 'Hind', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1E2749;
+  margin-left: 0px;
+  margin-top: 0px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+.image-container {
+  display: flex;
+align-items: center;
+gap: 22px;
+}
+
+.image-another-class {
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+}
+
+.centered-arrow {
+  position: relative;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 18px;
+  transition: transform 0.3s ease;
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+.enlarged {
+  transform: scale(1.5);
+  animation: none;
+}
+
+/* Tablet */
+@media (min-width: 744px) and (max-width: 1279px) {
+  .top-section {
+    padding: 128px 0;
+    align-items: flex-start; /* Aligns content to the top */
+    padding-left: 128px; /* Padding on the left to account for design offset */
+  }
+
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px; /* Space between text and image sections */
+    align-items: flex-start;
+    max-width: 744px;
+  }
+
+  .heading-classh1 {
+    color: #1E2749;
+    font-family: 'Montserrat', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+align-self: stretch;
+  }
+
+  .heading-classh2 {
+    color: #61a0af;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  .heading-paragraph-class {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 500px; /* Adjust based on design width */
+    margin-bottom: 64px; /* Space between the paragraph and the image */
+    margin-left: 0;
+  }
+
+  .image-container {
+    /* Adjust the width and height as needed for tablet view */
+    width: 150px;
+    height: 150px;
+    padding-bottom: 80px;
+  }
+
+  .centered-arrow {
+    position: relative;
+    width: 20px;
+    height: 18px;
+  }
+
+  .paragraph-container {
+    display: flex;
+    align-items: center;
+    width: 430px;
+    height: 174px;
+    font-family: 'Hind', sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+}
+}
+
+/* Mobile */
+@media (min-width: 375px) and (max-width: 743px){
+  .top-section {
+    padding: 64px 0;
+  }
+
+  .left-content {
+    display: flex; /* Ensure that flex is defined */
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left */
+  }
+
+  .heading-classh1 {
+    color: #1E2749;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  .heading-classh2 {
+    color: #61a0af;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+  }
+  .content-container { /* This should be the parent container of the image and text */
+    display: flex; /* Ensure that flex is defined */
+    flex-direction: column;
+    align-items: center; /* This will center-align the flex children horizontally */
+  }
+
+  .image-container {
+    order: -1; /* Image goes first */
+    flex-direction: column;
+    align-self: center; /* Keeps the image centered */
+    width: 100%; /* Adjust the width as needed for your design */
+    height: auto;
+    margin-bottom: 60px; /* Space between image and text */
+  }  
+
+  .heading-paragraph-class {
+    color: #1E2749;
+    font-family: 'Hind', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    order: 3;
+  }
+
+  .centered-arrow {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+  height: 18px;
+  }
+
+  .paragraph-container {
+    display: flex;
+    align-items: center;
+    width: 343px;
+    height: 203px;
+    font-family: 'Hind', sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+  }
+}
