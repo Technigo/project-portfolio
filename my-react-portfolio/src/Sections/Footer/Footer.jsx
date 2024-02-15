@@ -2,11 +2,9 @@ import "./footer.css";
 import { CircleImage } from "../../ReusableComponents/Images/CircleImage";
 import { LargeText } from "../../ReusableComponents/Texts/LargeText";
 import { SmallSubTitle } from "../../ReusableComponents/Texts/SmallSubTitle";
-import { ProjectImage } from "../../ReusableComponents/Images/ProjectImage";
 import LinkedInIcon from '../../assets/icon/linkedin.svg';
 import GithubIcon from '../../assets/icon/github.svg';
 import StackOverflowIcon from '../../assets/icon/stackoverflow.svg';
-// Assuming Instagram icon is also located in the same directory
 import InstagramIcon from '../../assets/icon/instagram.svg';
 
 import evelynImage from "../../assets/cvimage/evelyn.png";
@@ -37,13 +35,13 @@ export const Footer = () => {
                         <LinkedInIcon className="icons"/>
                     </a>
                     <a href="https://github.com/EvelynDelCarmen">
-                        <ProjectImage className="icons" src={"./src/assets/icon/github.svg"} />
+                    <GithubIcon className="icons"/>
                     </a>
                     <a href="https://stackoverflowteams.com/c/technigo/users/510/?tab=profile">
-                        <ProjectImage className="icons" src={"./src/assets/icon/stackoverflow.svg"} />
+                        <StackOverflowIcon className="icons" />
                     </a>
                     <a href="https://www.instagram.com/evelyn._delcarmen/">
-                        <ProjectImage className="icons" src={"/instagram.svg"} />
+                        <InstagramIcon className="icons" />
                     </a>
                 </div>
             </section>
