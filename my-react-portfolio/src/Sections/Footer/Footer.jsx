@@ -37,7 +37,7 @@ export const Footer = () => {
                         <ProjectImage className="icons" src={"./src/assets/icon/stackoverflow.svg"} />
                     </a>
                     <a href="https://www.instagram.com/evelyn._delcarmen/">
-                        <ProjectImage className="icons" src={"./src/assets/icon/instagram.svg"} />
+                        <ProjectImage className="icons" src={"/assets/icon/instagram.svg"} />
                     </a>
                 </div>
             </section>
