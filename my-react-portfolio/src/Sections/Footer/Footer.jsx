@@ -28,16 +28,16 @@ export const Footer = () => {
                 </div>
                 <div className="contact-icons" >
                     <a href="https://www.linkedin.com/in/evelyn-del-carmen-736552175/">
-                        <ProjectImage className="icons" src={"/src/assets/icon/linkedin.svg"} />
+                        <ProjectImage className="icons" src={"./src/assets/icon/linkedin.svg"} />
                     </a>
                     <a href="https://github.com/EvelynDelCarmen">
-                        <ProjectImage className="icons" src={"/src/assets/icon/github.svg"} />
+                        <ProjectImage className="icons" src={"./src/assets/icon/github.svg"} />
                     </a>
                     <a href="https://stackoverflowteams.com/c/technigo/users/510/?tab=profile">
-                        <ProjectImage className="icons" src={"/src/assets/icon/stackoverflow.svg"} />
+                        <ProjectImage className="icons" src={"./src/assets/icon/stackoverflow.svg"} />
                     </a>
                     <a href="https://www.instagram.com/evelyn._delcarmen/">
-                        <ProjectImage className="icons" src={"/src/assets/icon/instagram.svg"} />
+                        <ProjectImage className="icons" src={"./src/assets/icon/instagram.svg"} />
                     </a>
                 </div>
             </section>
