@@ -3,6 +3,12 @@ import { CircleImage } from "../../ReusableComponents/Images/CircleImage";
 import { LargeText } from "../../ReusableComponents/Texts/LargeText";
 import { SmallSubTitle } from "../../ReusableComponents/Texts/SmallSubTitle";
 import { ProjectImage } from "../../ReusableComponents/Images/ProjectImage";
+import LinkedInIcon from '../../assets/icon/linkedin.svg';
+import GithubIcon from '../../assets/icon/github.svg';
+import StackOverflowIcon from '../../assets/icon/stackoverflow.svg';
+// Assuming Instagram icon is also located in the same directory
+import InstagramIcon from '../../assets/icon/instagram.svg';
+
 import evelynImage from "../../assets/cvimage/evelyn.png";
 
 
@@ -28,7 +34,7 @@ export const Footer = () => {
                 </div>
                 <div className="contact-icons" >
                     <a href="https://www.linkedin.com/in/evelyn-del-carmen-736552175/">
-                        <ProjectImage className="icons" src={"./src/assets/icon/linkedin.svg"} />
+                        <LinkedInIcon className="icons"/>
                     </a>
                     <a href="https://github.com/EvelynDelCarmen">
                         <ProjectImage className="icons" src={"./src/assets/icon/github.svg"} />
