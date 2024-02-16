@@ -35,18 +35,18 @@ export const MyWords = () => {
           My 20-year-old computer science degree is proving to be a pretty handy
           guide through the twists and turns of building web applications....
         </p>
-        <a
-          href="https://www.linkedin.com/pulse/transitioning-web-development-navigating-2023-my-computer-morton-4d4de%3FtrackingId=s2H8u0ibRZ%252BwYg1HlsOq1w%253D%253D/?trackingId=s2H8u0ibRZ%2BwYg1HlsOq1w%3D%3D"
-          target="_blank"
-          rel="noreferrer noopener"
-          aria-label="See Beckie's LinkedIn article"
-        >
-          <img
-            className={styles.articleButton}
-            src="./assets/Read-On-Medium.png"
-            alt="read article"
-          />
-        </a>
+        <div className={styles.iconContainer}>
+          <a
+            className={styles.readMore}
+            href="https://www.linkedin.com/pulse/transitioning-web-development-navigating-2023-my-computer-morton-4d4de%3FtrackingId=s2H8u0ibRZ%252BwYg1HlsOq1w%253D%253D/?trackingId=s2H8u0ibRZ%2BwYg1HlsOq1w%3D%3D"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="See Beckie's LinkedIn article"
+          >
+            <img src="./assets/readmore.png" alt="read more button" />
+            Read More
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,24 @@
+import { useState, useEffect } from "react";
+
 import styles from "./LetsTalk.module.css";
 
 export const LetsTalk = () => {
+  const [showButton, setShowButton] = useState(false);
+  useEffect(() => {
+    const handleScrollButtonVisibility = () => {
+      window.scrollY > 10 ? setShowButton(true) : setShowButton(false);
+    };
+
+    window.addEventListener("scroll", handleScrollButtonVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollButtonVisibility);
+    };
+  }, []);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className={styles.talkContainer}>
       <h1>Let's Talk</h1>
@@ -37,6 +55,13 @@ export const LetsTalk = () => {
           </a>
         </p>
       </div>
+      {showButton && (
+        <div className={styles.scrollToTop}>
+          <button className={styles.scrollButton} onClick={handleScrollToTop}>
+            <img src="./assets/scrollup.png" alt="scroll up icon" />
+          </button>
+        </div>
+      )}
     </div>
   );
 };

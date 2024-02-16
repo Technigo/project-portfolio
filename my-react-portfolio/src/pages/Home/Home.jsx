@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Header } from "../../Components/Header/Header";
 import { FeaturedProjects } from "../../Components/FeaturedProjects/FeaturedProjects";
 import { MyWords } from "../../Components/MyWords/MyWords";

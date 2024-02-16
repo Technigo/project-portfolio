@@ -83,6 +83,41 @@
   justify-content: left;
 }
 
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.iconContainer a {
+  text-decoration: none;
+  margin: 1em 0.6em;
+}
+
+.readMore {
+  gap: 7px;
+  font-size: 20px;
+  border-radius: 40px;
+  width: 164px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+
+.readMore:hover {
+  background-color: #fad02c;
+  color: white;
+}
+
+.readMore:hover img {
+  filter: brightness(500%);
+}
+
 /*media query for tablet*/
 @media screen and (min-width: 667px) and (max-width: 1023px) {
   * {
@@ -168,6 +203,41 @@
     display: flex;
     justify-content: left;
   }
+
+  .iconContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .iconContainer a {
+    text-decoration: none;
+    margin: 1em 0.6em;
+  }
+
+  .readMore {
+    gap: 7px;
+    font-size: 20px;
+    border-radius: 40px;
+    width: 164px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+  }
+
+  .readMore:hover {
+    background-color: #fad02c;
+    color: white;
+  }
+
+  .readMore:hover img {
+    filter: brightness(500%);
+  }
 }
 
 /* Media query for desktop - 2 rows */
@@ -242,6 +312,7 @@
   }
 
   .wordsBoxImageDesktop {
+    display: block;
     width: 558px;
     height: 340px;
     flex-shrink: 0;
@@ -257,5 +328,40 @@
 
   .articleButton {
     padding-top: 1em;
+  }
+
+  .iconContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .iconContainer a {
+    text-decoration: none;
+    margin: 1em 0.6em;
+  }
+
+  .readMore {
+    gap: 7px;
+    font-size: 20px;
+    border-radius: 40px;
+    width: 164px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+  }
+
+  .readMore:hover {
+    background-color: #fad02c;
+    color: white;
+  }
+
+  .readMore:hover img {
+    filter: brightness(500%);
   }
 }

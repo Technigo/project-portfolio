@@ -37,6 +37,28 @@
   padding: 1.5em 0 1em 0;
 }
 
+.scrollToTop {
+  text-align: right;
+  padding: 0 3rem;
+  margin-top: -100px; /* Example negative margin */
+}
+
+.scrollButton {
+  transition: transform 0.3s ease;
+  animation: jumpUpDown 1s infinite;
+}
+
+/* Define the animation */
+@keyframes jumpUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 /*media query for tablet*/
 @media screen and (min-width: 667px) and (max-width: 1023px) {
   .talkContainer {
@@ -90,6 +112,28 @@
 
   .stack:hover {
     content: url("./assets/stackoverflow-hover.png");
+  }
+
+  .scrollToTop {
+    text-align: right;
+    padding: 0 3rem;
+    margin-top: -100px; /* Example negative margin */
+  }
+
+  .scrollButton {
+    transition: transform 0.3s ease;
+    animation: jumpUpDown 1s infinite;
+  }
+
+  /* Define the animation */
+  @keyframes jumpUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 }
 
@@ -145,5 +189,27 @@
 
   .stack:hover {
     content: url("./assets/stackoverflow-hover.png");
+  }
+
+  .scrollToTop {
+    text-align: right;
+    padding: 0 3rem;
+    margin-top: -100px; /* Example negative margin */
+  }
+
+  .scrollButton {
+    transition: transform 0.3s ease;
+    animation: jumpUpDown 1s infinite;
+  }
+
+  /* Define the animation */
+  @keyframes jumpUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 }
