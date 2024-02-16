@@ -35,7 +35,7 @@ export const LetsTalk = () => {
             rel="noreferrer noopener"
             aria-label="See Beckie's github"
           >
-            <img className={styles.github} src="./assets/github.png" />
+            <img className={styles.socialIcon} src="./assets/github.png" />
           </a>
           <a
             href="https://www.linkedin.com/in/rebecca-morton-739446204/"
@@ -43,7 +43,7 @@ export const LetsTalk = () => {
             rel="noreferrer noopener"
             aria-label="See Beckie's LinkedIn"
           >
-            <img className={styles.linked} src="./assets/linkedin.png" />
+            <img className={styles.socialIcon} src="./assets/linkedin.png" />
           </a>
           <a
             href="https://stackoverflowteams.com/c/technigo/users/487/?tab=profile"
@@ -51,7 +51,10 @@ export const LetsTalk = () => {
             rel="noreferrer noopener"
             aria-label="See Beckie's StackOverflow"
           >
-            <img className={styles.stack} src="./assets/stackoverflow.png" />
+            <img
+              className={styles.socialIcon}
+              src="./assets/stackoverflow.png"
+            />
           </a>
         </p>
       </div>
