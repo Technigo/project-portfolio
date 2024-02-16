@@ -31,7 +31,7 @@ export const Skills = () => {
             <li>Microsoft Office</li>
             <li>Gimp</li>
             <li>Slack</li>
-            <li>Seesaw + ClassDojo </li>
+            <li>WordPress</li>
             <li>Stack OVerflow</li>
             <li>Figma</li>
             <li>Postman</li>
@@ -46,7 +46,7 @@ export const Skills = () => {
             </h2>
             <li>Typescript</li>
             <li>Bootstrap</li>
-            <li>Tailwind</li>
+            <li>React Native</li>
           </ul>
         </div>
         <div className={styles.skillsBox}>
@@ -56,7 +56,7 @@ export const Skills = () => {
                 More
               </span>
             </h2>
-            <li>ICT Teacher</li>
+            <li>Ex-teacher and Police Officer</li>
             <li>Curriculum Design</li>
             <li>Resourceful</li>
             <li>Team player</li>
