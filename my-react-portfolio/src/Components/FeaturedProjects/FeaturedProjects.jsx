@@ -56,10 +56,8 @@ export const FeaturedProjects = () => {
                   rel="noopener noreferrer"
                   aria-label="See Live demo of project"
                 >
-                  <img
-                    src="./assets/Live-Demo-Button.png"
-                    alt="live demo button"
-                  />
+                  <img src="./assets/livedemo.svg" alt="live demo button" />
+                  Live Demo
                 </a>
 
                 <a
@@ -69,10 +67,8 @@ export const FeaturedProjects = () => {
                   rel="noopener noreferrer"
                   aria-label="See view code of project"
                 >
-                  <img
-                    src="./assets/View-Code-Button.png"
-                    alt="view code button"
-                  />
+                  <img src="./assets/viewcode.png" alt="view code button" />
+                  View Code
                 </a>
               </div>
             </div>

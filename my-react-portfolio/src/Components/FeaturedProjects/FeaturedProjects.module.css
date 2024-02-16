@@ -115,42 +115,6 @@
   margin-top: 6px;
 }
 
-/* redone for accessibility in Edge, Firefox and Chrome */
-.liveDemo,
-.viewCode {
-  margin-top: 0.5em;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-}
-
-.liveDemo::before,
-.viewCode::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: opacity 0.3s ease;
-  opacity: 0;
-}
-
-.liveDemo::before {
-  background-image: url("./assets/Live-Demo-Button-Hover.png");
-}
-
-.viewCode::before {
-  background-image: url("./assets/View-Code-Button-Hover.png");
-}
-
-.liveDemo:hover::before,
-.viewCode:hover::before {
-  opacity: 1;
-}
-
 /* Media query for tablet */
 @media screen and (min-width: 667px) and (max-width: 1023px) {
   .outer_containerWrapper {
@@ -272,54 +236,6 @@
     gap: 2px;
     margin-top: 6px;
   }
-
-  /* redone for accessibility in Edge, Firefox and Chrome
-  .liveDemo,
-  .viewCode {
-    margin-top: 0.5em;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .liveDemo::before,
-  .viewCode::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-  }
-
-  .liveDemo::before {
-    background-image: url("./assets/Live-Demo-Button-Hover.png");
-  }
-
-  .viewCode::before {
-    background-image: url("./assets/View-Code-Button-Hover.png");
-  }
-
-  .liveDemo:hover::before,
-  .viewCode:hover::before {
-    opacity: 1;
-  } */
-
-  .liveDemo:hover {
-    background-image: url("./assets/Live-Demo-Button-Hover.png");
-    transition: background-image 0.3s ease-in-out;
-    background-repeat: no-repeat;
-  }
-
-  .viewCode:hover {
-    background-image: url("./assets/View-Code-Button-Hover.png");
-    transition: background-image 0.3s ease-in-out;
-    background-repeat: no-repeat;
-  }
 }
 
 /* media query for desktop */
@@ -423,58 +339,42 @@
 
   .iconContainer {
     display: flex;
-    align-items: flex-start;
-    margin-top: auto;
-    gap: 2px;
-    margin-top: 6px;
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
   }
 
-  /* redone for accessibility in Edge, Firefox and Chrome
+  .iconContainer a {
+    text-decoration: none;
+  }
+
   .liveDemo,
   .viewCode {
-    margin-top: 0.5em;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
+    gap: 7px;
+    font-size: 20px;
+    border-radius: 40px;
+    width: 164px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: #e8e8e8;
   }
-
-  .liveDemo::before,
-  .viewCode::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-  }
-
-  .liveDemo::before {
-    background-image: url("./assets/Live-Demo-Button-Hover.png");
-  }
-
-  .viewCode::before {
-    background-image: url("./assets/View-Code-Button-Hover.png");
-  }
-
-  .liveDemo:hover::before,
-  .viewCode:hover::before {
-    opacity: 1;
-  } */
 
   .liveDemo:hover {
-    background-image: url("./assets/Live-Demo-Button-Hover.png");
-    transition: background-image 0.3s ease-in-out;
-    background-repeat: no-repeat;
+    background-color: #ff847c;
+    color: white;
   }
 
   .viewCode:hover {
-    background-image: url("./assets/View-Code-Button-Hover.png");
-    transition: background-image 0.3s ease-in-out;
-    background-repeat: no-repeat;
+    background-color: #79c2d0;
+    color: white;
+  }
+
+  .liveDemo:hover img,
+  .viewCode:hover img {
+    filter: brightness(500%);
   }
 }
