@@ -1,0 +1,33 @@
+.border, .pink {
+    background-color: var(--border-color);
+    --mask:
+    radial-gradient(22.65px at 50% 30.80px,#000 99%,#0000 101%) calc(50% - 22px) 0/44px 100%,
+    radial-gradient(22.65px at 50% -19.8px,#0000 99%,#000 101%) 50% 11px/44px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    position: relative;
+}
+.pink {
+    top: 0.65rem;
+  }
+
+  @media (min-width: 700px) {
+    .my-words h1 {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .grid-parent .my-words {
+      grid-column: 3/11;
+      padding: 0 8rem;
+    }
+    .my-words {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+    .my-words h1 {
+        grid-column: 1/span 2;
+    }
+  }

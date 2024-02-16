@@ -1,0 +1,105 @@
+.profile-pic {
+    width: 16.4rem;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .intro-text {
+    white-space: pre-wrap;
+  }
+  
+  .title-header {
+    font-size: 3.2rem;
+    color: var(--primary-color);
+    width: 100%;
+    text-align: left;
+  }
+
+  .icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow {
+    position: relative;
+    top: 0;
+    color: var(--border-color);
+    width: 17px;
+    animation: arrow-icon 1.3s ease-in alternate infinite;
+    /* -webkit-transform: rotate(180deg) scale(4.5);
+    -moz-transform: rotate(180deg) scale(4.5);
+    -ms-transform: rotate(180deg) scale(4.5);
+    -o-transform: rotate(180deg) scale(4.5); */
+    transform: rotate(180deg) scale(4.5);
+  }
+
+  @keyframes arrow-icon {
+    from {top: -7rem}
+    to {top: -4rem}
+  }
+  @keyframes arrow-icon-large {
+    from {top: -12rem}
+    to {top: -6rem}
+  }
+
+  @media (min-width: 700px) {
+    .my-words {
+      grid-column: 3/11;
+    }
+    .title-header {
+      font-size: 5.4rem;
+    }
+
+    .intro .profile-pic {
+      grid-row: 3;
+    }
+
+    .intro-text {
+      grid-row: 3;
+      grid-column: 2/span 4;
+      margin-left: 2.2rem;
+    }
+
+    .icon-container {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      place-content: center;
+    }
+    .arrow{
+      /* scale: 8; */
+      /* -webkit-transform: rotate(180deg) scale(6);
+      -moz-transform: rotate(180deg) scale(6);
+      -ms-transform: rotate(180deg) scale(6);
+      -o-transform: rotate(180deg) scale(6); */
+      transform: rotate(180deg) scale(6);
+      animation: arrow-icon-large 1.7s ease-in alternate infinite;
+    }
+    
+  }
+
+  @media (min-width: 1100px) {
+    .grid-parent .intro {
+      max-width: 65vw;
+      grid-column: 4/11;
+    }
+    .title-header {
+      font-size: 6.3rem;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .grid-parent .intro {
+      max-width: 55vw;
+      grid-column: 5/10;
+    }
+    .title-header {
+      font-size: 8rem;
+    }
+    .arrow {
+      animation: arrow-icon-large 1.7s ease-in alternate infinite;
+    }
+  }

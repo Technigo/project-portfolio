@@ -1,0 +1,59 @@
+.skills {
+    text-align: center;
+}
+.skills span {
+    display: block;
+}
+.skills h4 {
+    display: inline;
+    padding: 0 0.2rem;
+}
+.skills div {
+    margin-bottom: 4rem;
+}
+
+.code-skills-header {
+    background-color: var(--code-background);
+}
+.toolbox-skills-header {
+    background-color: var(--toolbox-background);
+}
+.upcoming-skills-header {
+    background-color: var(--upcoming-background);
+}
+.more-skills-header {
+    background-color: var(--more-background);
+    color: var(--primary-color);
+}
+
+@media (min-width: 700px) {
+    .skillset-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 17vw;
+    }
+    .skill-card {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6.4rem;
+    }
+    span {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1100px) {
+    .skillset-container {
+        grid-template-columns: repeat(4,1fr);
+        gap: 6.4rem;
+        margin: 12rem 14vw 0 14vw;
+    }
+    .skill-card {
+        align-items:flex-start;
+    }
+    span {
+        text-align: left;
+    }
+}
