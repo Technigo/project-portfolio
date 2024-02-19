@@ -18,7 +18,8 @@ function TechSkills() {
     'GitHub',
     'Zustand',
     'Mongo DB',
-    'SQL'
+    'SQL',
+    'XML/XSD'
   ];
 
   // Join the techSkills array into a single string with commas
