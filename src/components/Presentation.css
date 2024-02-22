@@ -30,9 +30,15 @@
 
 .articles-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Allow articles to wrap to the next row */
+    justify-content: space-between; /* Spread articles evenly across the container */
     padding: 15px 143px; /* Adjust padding as needed */
+    width: 100vw;
+}
+
+.article-card {
+    width: calc(50% - 20px); /* Each article card takes up half of the container width with some spacing */
+    margin-bottom: 20px; /* Add space between rows */
 }
 
 
