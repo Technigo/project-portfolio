@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 const App = () => {
   //State that tracks repos
   const [repoList, setRepoList] = useState([]);
+  const [testList, setTestList] = useState([]);
 
   //State that tracks if the data from the API is loading
   const [loading, setLoading] = useState(true);
@@ -23,8 +24,23 @@ const App = () => {
       .then((response) => response.json())
       .then((data) => {
         //Filter the repolist to the five latest project
-        const fiveLatest = data.slice(0, 5);
-        setRepoList(fiveLatest);
+        let lis = [];
+        data.map((x) => {
+          if (
+            x.id === 731980649 ||
+            x.id === 725012770 ||
+            x.id === 745699768 ||
+            x.id === 716024241 ||
+            x.id === 718734905
+          ) {
+            lis.push(x);
+          }
+        });
+        console.log(data);
+        setTestList(lis);
+        console.log("testList: " + testList);
+        // const fiveLatest = data.slice(0, 5);
+        setRepoList(lis);
         setLoading(!loading);
         // console.log(repoList);
       })

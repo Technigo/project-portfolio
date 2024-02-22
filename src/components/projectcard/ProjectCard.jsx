@@ -10,6 +10,8 @@ import movie from "../../assets/alex-litvin-MAYsdoYpGuk-unsplash.jpg";
 import qrcode from "../../assets/qrcode.png";
 import piggyback from "../../assets/piggyback.png";
 import auth from "../../assets/franck-DoWZMPZ-M9s-unsplash.jpg";
+import ecom from "../../assets/mike-petrucci-c9FQyqIECds-unsplash.jpg";
+import expr from "../../assets/ilya-pavlov-OqtafYT5kTw-unsplash.jpg";
 
 import { Tags } from "./Tags.jsx";
 
@@ -52,6 +54,12 @@ export const ProjectCard = ({
     case "project-auth":
       imagedirectory = auth;
       break;
+    case "fullstack-ecommerce":
+      imagedirectory = ecom;
+      break;
+    case "project-express-api":
+      imagedirectory = expr;
+      break;
   }
 
   const transformString = (str) => {
@@ -72,7 +80,6 @@ export const ProjectCard = ({
   return (
     <div className="project-card">
       <img src={imagedirectory} className="project-image" alt="project-image" />
-
       <div className="project-data">
         <h2 className="project-title">{transformString(title)}</h2>
         <p className="project-description"> {description}</p>
