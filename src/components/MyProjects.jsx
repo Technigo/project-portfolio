@@ -27,7 +27,7 @@ const projectOrder = [
   'project-survey-vite',
   'project-music-releases-vite',
   'project-weather-app',
-  'project-guess-who',
+  'guesswhodogs',
   'project-chatbot',
   'project-pizza',
   'project-business-site',
@@ -84,9 +84,9 @@ const projectDetails = {
     techniques: 'React, OpenWeather API, CSS, HTML, pair-programming',
     thumbnail: Week4Weather
 },
-  'project-guess-who': {
+  'guesswhodogs': {
     name: 'Guess Who Game',
-    description: 'The Guess Who Game is a classic game where you guess the hidden character.',
+    description: 'The Guess Who Game is a classic game where you guess the hidden dog.',
     techniques: 'HTML, CSS, JavaScript',
     thumbnail: Week3GuessWho
 },
@@ -125,7 +125,7 @@ const netlifyUrls = {
   'project-survey-vite': 'https://cocofnaschristmassurvey.netlify.app/',
   'project-music-releases-vite': 'https://cocofnasspotify.netlify.app/',
   'project-weather-app': 'https://mam-weatherapp.netlify.app/',
-  'project-guess-who': 'https://cocofnasguesswho.netlify.app/',
+  'project-guess-who': 'https://guessthedog.netlify.app/',
   'project-chatbot': 'https://cocofnaschatbot.netlify.app/',
   'project-pizza': 'https://cocofnaspizza.netlify.app/',
   'project-business-site': 'https://quiet-maamoul-e254ec.netlify.app/',
