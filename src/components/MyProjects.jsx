@@ -125,7 +125,7 @@ const netlifyUrls = {
   'project-survey-vite': 'https://cocofnaschristmassurvey.netlify.app/',
   'project-music-releases-vite': 'https://cocofnasspotify.netlify.app/',
   'project-weather-app': 'https://mam-weatherapp.netlify.app/',
-  'project-guess-who': 'https://guessthedog.netlify.app/',
+  'guesswhodogs': 'https://guessthedog.netlify.app/',
   'project-chatbot': 'https://cocofnaschatbot.netlify.app/',
   'project-pizza': 'https://cocofnaspizza.netlify.app/',
   'project-business-site': 'https://quiet-maamoul-e254ec.netlify.app/',
