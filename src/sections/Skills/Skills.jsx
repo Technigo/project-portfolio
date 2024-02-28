@@ -45,6 +45,8 @@ export const Skills = () => {
           <p>WebAssembly</p>
           <p>Streamlit</p>
           <p>Microsoft Azure</p>
+          <p>WordPress</p>
+          <p>ServiceNow</p>
         </div>
         <div className="skills-column">
           <h3 className="more-heading">More</h3>
