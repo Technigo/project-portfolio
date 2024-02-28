@@ -31,7 +31,7 @@ export const Skills = () => {
                     <h3>Upcoming</h3>
                     <ul>
                         <li>Wordpress</li>
-                        <li>&nbsp;</li>
+                        <li><a href="https://idahcollin.wordpress.com/">Link to project</a></li>
                         <li>&nbsp;</li>
                         <li>&nbsp;</li>
                         <li>&nbsp;</li>
