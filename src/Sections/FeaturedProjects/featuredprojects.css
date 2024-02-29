@@ -1,0 +1,98 @@
+/* Styling for the projects section */
+.projects-section {
+    padding: 128px 16px; /* Add padding to the projects section */
+    display: flex; /* Use flex display for layout */
+    flex-direction: column; /* Set the flex direction to column */
+    gap: 64px; /* Add spacing between child elements */
+}
+
+/* Styling for images within the project cards */
+.image {
+    margin-right: 10px; /* Add right margin to the image */
+    margin-bottom: 14px; /* Add bottom margin to the image */
+}
+
+/* Styling for the project text section */
+.project-text-section {
+    display: flex; /* Use flex display for layout */
+    flex-direction: column; /* Set the flex direction to column */
+    gap: 16px; /* Add spacing between child elements */
+    margin-bottom: 24px; /* Add bottom margin to the project text section */
+}
+
+/* Styling for the buttons section */
+.buttons-section {
+    display: flex; /* Use flex display for layout */
+    gap: 16px; /* Add spacing between child elements */
+}
+
+/* Styling for error messages */
+.error-message {
+    color: red; /* Set the text color to red for error messages */
+}
+
+/* --- Tablet --- */
+@media (max-width: 1279px) and (min-width: 744px) {
+    .projects-section {
+        display: flex; /* Use flex display for layout */
+        gap: 64px; /* Add spacing between child elements */
+    }
+
+    .buttons-section {
+        display: flex; /* Use flex display for layout */
+        gap: 32px; /* Add spacing between buttons */
+    }
+
+    .project-cards {
+        display: grid; /* Use grid display for layout */
+        grid-template-columns: repeat(6, 1fr); /* Create a six-column grid */
+        gap: 37px; /* Add spacing between grid items */
+    }
+
+    .image {
+        grid-column: 1 / span 2; /* Set grid placement for the image */
+        grid-row: 1 / span 2;
+    }
+
+    .project-text-section {
+        grid-column: 3 / span 6; /* Set grid placement for the project text section */
+        grid-row: 1 / span 2;
+    }
+}
+
+/* --- Desktop --- */
+@media (min-width: 1280px) {
+    .projects-section {
+        display: flex; /* Use flex display for layout */
+        justify-content: center; /* Center-align content horizontally */
+        align-items: center; /* Center-align content vertically */
+        padding: 128px 230px 124px 230px; /* Adjust padding for the projects section */
+        gap: 128px; /* Add spacing between child elements */
+    }
+
+    .featured-projects-heading {
+        margin-left: -90px; /* Adjust the margin for the featured projects heading */
+    }
+
+    .buttons-section {
+        display: flex; /* Use flex display for layout */
+        gap: 32px; /* Add spacing between buttons */
+    }
+
+    .project-cards {
+        display: grid; /* Use grid display for layout */
+        grid-template-columns: repeat(12, 1fr); /* Create a twelve-column grid */
+        gap: 40px; /* Add spacing between grid items */
+        max-width: 820px; /* Set a maximum width for the grid */
+    }
+
+    .image {
+        grid-column: 1 / span 4; /* Set grid placement for the image */
+        grid-row: 1 / span 2;
+    }
+
+    .project-text-section {
+        grid-column: 5 / span 12; /* Set grid placement for the project text section */
+        grid-row: 1 / span 2;
+    }
+}
