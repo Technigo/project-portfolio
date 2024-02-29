@@ -21,16 +21,13 @@ export const Header = () => {
           <h2>Frontend Developer</h2>
         </div>
         <p>
-          Caro is a dedicated web developer with a foundation in modern web
-          technologies, gained from an intensive bootcamp in web development.
-          She has developed proficiency in HTML, CSS, JavaScript, React and
-          backend fundamentals using Node.js and databases. Caro approaches
-          problem-solving with patience and a willingness to tackle challenges,
-          striving to contribute effectively to projects with a focus on
-          functionality and user experience. Her journey in web development is
-          driven by a continuous desire to learn and improve, making her a
-          collaborative and adaptable team member in the ever-evolving tech
-          landscape.
+          Caro is a newly graduated web developer with a comprehensive skill set
+          acquired through an intensive web development bootcamp. Experienced in
+          frontend and backend development, including JavaScript, React, AI
+          integration, and database management. Skilled in pair programming and
+          problem-solving, combining technical expertise with creativity. Fluent
+          in English, Swedish, and Spanish, passionate about coding and
+          continuously learning within the technology industry.
         </p>
       </div>
       <button className="next-section-arrow" onClick={scrollTo}>
