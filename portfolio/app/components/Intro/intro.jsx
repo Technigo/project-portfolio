@@ -8,7 +8,7 @@ const Intro = () => {
                 {/* This image will be visible on mobile devices to make sure it is shown on top */}
                 <Image
                 className="mx-auto md:hidden"
-                src="/ProfileImg.png"
+                src="/ProfileImage/ProfileImg.png"
                 width={250}
                 height={250}
                 alt="Profile"
@@ -19,7 +19,7 @@ const Intro = () => {
                         {/* This image will be visible on larger devices */}
                         <Image
                         className="hidden mx-auto md:block"
-                        src="/ProfileImg.png"
+                        src="/ProfileImage/ProfileImg.png"
                         width={250}
                         height={250}
                         alt="Profile"
