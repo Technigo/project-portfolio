@@ -13,7 +13,7 @@ const LetsTalk = () => {
                     <div className="mt-16 gap-16">
                         <Image
                             className="mx-auto"
-                            src="/ProfileImage/ProfileImg.png"
+                            src="/ProfileImg.png"
                             width={250}
                             height={250}
                             alt="Profile"
