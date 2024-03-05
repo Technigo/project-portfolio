@@ -1,0 +1,147 @@
+.introduction-container {
+  padding: 64px 16px;
+  width: 100%;
+}
+
+.introduction-wrapper {
+  display: grid;
+  gap: 32px;
+}
+
+.presentation-wrapper {
+  font-family: "Hind", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.introduction-links {
+  display: flex;
+  gap: 32px;
+  margin-top: 0;
+}
+
+.arrow-icon {
+  width: 27px;
+  height: 68px;
+  margin: 32px auto 0;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (min-width: 744px) and (max-width: 1279px) {
+  .introduction-container {
+    padding: 128px 64px 0;
+  }
+
+  .introduction-wrapper {
+    gap: 32px;
+    column-gap: 0;
+  }
+
+  .photo-wrapper {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .heading-wrapper {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .presentation-wrapper {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 22px;
+  }
+
+  .introduction-links-wrapper {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .arrow-icon {
+    margin-top: 128px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1511px) {
+  .introduction-container {
+    padding: 332px 220px 64px;
+  }
+
+  .introduction-wrapper {
+    gap: 16px;
+    column-gap: 0;
+  }
+
+  .photo-wrapper {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .heading-wrapper {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .presentation-wrapper {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 22px;
+  }
+
+  .introduction-links-wrapper {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .arrow-icon {
+    margin-top: 100px; /*Adjusted from the design due to the addition of the social media links*/
+  }
+}
+
+@media (min-width: 1512px) {
+  .introduction-container {
+    padding: 332px 336px 64px;
+  }
+
+  .introduction-wrapper {
+    gap: 16px;
+    column-gap: 0;
+  }
+
+  .photo-wrapper {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .heading-wrapper {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .presentation-wrapper {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 22px;
+  }
+
+  .introduction-links-wrapper {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .arrow-icon {
+    margin-top: 100px; /*Adjusted from the design due to the addition of the social media links*/
+  }
+}

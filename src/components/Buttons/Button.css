@@ -1,0 +1,90 @@
+.link-wrapper {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button {
+  display: inline-block;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button a {
+  display: inline-block;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.button-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-right: 16px;
+}
+
+.button-image {
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.code-button,
+.demo-button {
+  background-color: #f5f5f5;
+}
+
+.demo-button .button-image {
+  background-image: url("/assets/LiveDemo.svg");
+}
+
+.demo-button:hover .button-image {
+  background-image: url("/assets/LiveDemoHover.svg");
+}
+
+.demo-button:hover {
+  background-color: #0b24f5;
+  color: #fff;
+}
+
+.code-button .button-image {
+  background-image: url("/assets/Github.svg");
+}
+
+.code-button:hover .button-image {
+  background-image: url("/assets/GithubHover.svg");
+}
+
+.code-button:hover {
+  background-color: #eb5577;
+  color: #fff;
+}
+
+.article-button {
+  background-color: #fff;
+}
+
+.article-button .button-image {
+  background-image: url("/assets/Doc-article.svg");
+}
+
+.article-button:hover {
+  background-color: #ffd338;
+}
+
+@media (min-width: 650px) {
+  .link-wrapper {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 0;
+  }
+}
