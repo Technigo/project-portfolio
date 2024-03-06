@@ -6,7 +6,7 @@ export const RoundImg = () => {
     <div>
       <img
         className="avatar"
-        src="/assets/gifs/Profilbild-min.JPG"
+        src="/assets/ljusrosa-smutsig.jpg"
         alt="Profile picture of Emmy"
       />
     </div>

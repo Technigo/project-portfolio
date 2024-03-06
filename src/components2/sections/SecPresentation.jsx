@@ -1,15 +1,15 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import { RoundImg } from "../images/RoundImg";
-import { HeadingH1 } from "../typography/headingH1/HeadingH1"
+import { HeadingH1 } from "../typography/headingH1/HeadingH1";
 import { HeadingH4 } from "../typography/headingH4/HeadingH4";
 import { NormalText } from "../typography/normalText/NormalText";
 
-const presentationText = `I'm a creative and curious developer with a diverse background in both speech and language therapy and forestry science. My interest for solving complex communication puzzles as a speech and language therapist has translated into my passion for untangling coding challenges. When I'm not crafting code, you'll find me crafting, literally! My love for being creative also influences my work in development, where I aim to create attractive and user-friendly digital experiences.`
+const presentationText = `I'm a creative and curious developer with a diverse background in both speech and language therapy and forestry science. My interest for solving complex communication puzzles as a speech and language therapist has translated into my passion for untangling coding challenges. When I'm not crafting code, you'll find me crafting, literally! My love for being creative also influences my work in development, where I aim to create attractive and user-friendly digital experiences.`;
 
 import "./sections.css";
 
 export const SecPresentation = () => {
-  const nextSectionRef = useRef(null)
+  const nextSectionRef = useRef(null);
 
   const handleArrowClick = () => {
     // Scroll to the next section when the arrow is clicked
@@ -34,7 +34,11 @@ export const SecPresentation = () => {
           </div>
           <NormalText className={"presentation-text"} text={presentationText} />
         </div>
-        <div className="btn-div"><button className="contact-button" onClick={handleArrowClick}>Contact</button></div>
+        <div className="btn-div">
+          <button className="contact-button" onClick={handleArrowClick}>
+            Connect
+          </button>
+        </div>
         {/* <div className="arrow-box"> 
           <img
             src={"/assets/ArrowPositionUp.svg"}
@@ -42,7 +46,6 @@ export const SecPresentation = () => {
             onClick={handleArrowClick}
           />
         </div> */}
-       
       </div>
       {/* <div ref={nextSectionRef}></div> */}
     </>
