@@ -7,7 +7,7 @@ import './hello.css'
 // Export without props. Displays the Hello/Header-section. ProfilePhoto, reusable component, is imoprted and below it's exported.
 export const Hello = () => {
     const [wordIndex, setWordIndex] = useState(0);
-    const words = ["curious", "positive", "creative", "social"];
+    const words = ["curious", "positive", "creative"];
 
     useEffect(() => {
         const interval = setInterval(() => {
