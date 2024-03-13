@@ -1,0 +1,89 @@
+.introduction-wrapper {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-two);
+    gap: 32px;
+    text-align: left;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 164px;
+    height: 164px;
+}
+
+.name-title h2 {
+    margin: 0;
+    align-self: stretch;
+    color: var(--text);
+    font-family: var(--heading-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.introduction-wrapper p {
+    align-self: stretch;
+    color: var(--text);
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/********* MEDIA QUERIES *********/
+/********* TABLETS *********/
+@media (min-width: 535px) {
+    .introduction-wrapper {
+        width: 100%;
+        padding: 128px 64px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .name-title {
+        grid-column: 1 / span 3; 
+        grid-row: 1;
+    }
+    
+    .name-title h2 {
+        font-size: 24px;
+    }
+
+    .profile-pic {
+        grid-row: 2;
+    }
+
+    .introduction-wrapper p {
+        font-size: 18px;
+        font-weight: 400;
+        grid-row: 2;
+        grid-column: span 2;
+    }
+}
+
+/********* DESKTOP max-width 1280px *********/
+@media (min-width: 745px) {
+    .introduction-wrapper {
+        padding: 332px 220px 64px 220px;
+        grid-template-columns: 1fr 280px;
+    } 
+
+    .name-title h2 {
+        font-size: 32px;
+    }
+}
+
+/********* DESKTOP max-width 1512px *********/
+@media (min-width: 1281px) {
+    .introduction-wrapper {
+        padding: 332px 337px 64px 336px;
+        grid-template-columns: 1fr 400px;
+    }
+}

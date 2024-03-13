@@ -1,0 +1,43 @@
+.article-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 128px 16px;
+    background: var(--light-secondary);
+    gap: 64px;
+}
+
+.article-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+/********* MEDIA QUERIES *********/
+/********* TABLETS *********/
+@media (min-width: 376px) {
+    .article-list-wrapper {
+        padding: 128px 32px;
+    }
+}
+
+@media (min-width: 802px) {
+    .article-list-wrapper {
+        padding: 128px 131px;
+    }
+
+    .article-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        text-align: left;
+        gap: 98px;
+    }
+}
+
+/********* DESKTOP max-width 1512px *********/
+@media (min-width: 1280px) {
+    .article-list-wrapper {
+        padding: 128px 143px;
+    }
+}

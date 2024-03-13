@@ -1,0 +1,67 @@
+.article-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.post-image {
+    height: 200px;
+    align-self: stretch;
+    border-bottom: 10px solid var(--secondary);
+    border-left: 10px solid var(--secondary);
+}
+
+.article-card h2, .article-card p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.article-card h2 {
+    font-family: var(--heading-font);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.article-card p {
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.date {
+    background-color: var(--text);
+    color: var(--primary-two);
+    padding: 2px 6px;
+    font-size: 16px;
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/********* MEDIA QUERIES *********/
+/********* TABLETS *********/
+@media (min-width: 376px) {
+    .article-card {
+        gap: 32px;
+    }
+    
+    .post-image {
+        height: 340px;
+    }
+}
+
+/********* DESKTOP max-width 1280px *********/
+@media (min-width: 745px) {
+    .article-card h2 {
+        font-size: 32px;
+    }
+
+    .post-image {
+        height: 280px;
+    }
+}
+
+

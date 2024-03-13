@@ -1,0 +1,42 @@
+.ticker-tape {
+    height: 114px;
+    margin: auto;
+    background: var(--secondary);
+    color: var(--primary-two);
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.ticker-tape p {
+    font-size: 26.038px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    line-height: 37.874px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    align-items: center;
+    animation: scroll 10s linear infinite;
+}
+  
+@keyframes scroll {
+    0% {
+      transform: translateX(10px);
+    }
+
+    70% {
+      transform: translateX(calc(-225px));
+    }
+
+    100% {
+      transform: translateX(calc(-375px));
+    }
+}
+

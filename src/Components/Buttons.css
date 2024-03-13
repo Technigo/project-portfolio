@@ -1,0 +1,64 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.live-demo, .github, .read-more {
+    background: var(--btn-gray);
+    color: var(--btn-text);
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 6px;
+    gap: 7px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.live-demo svg, .github svg, .read-more svg {
+    fill: var(--btn-text);
+}
+
+.live-demo p, .github p, .read-more p {
+    font-size: 20px;
+    font-family: var(--heading-font);
+}
+
+.live-demo:hover {
+    background: var(--primary-one);
+    color: var(--primary-two);
+}
+
+.github:hover {
+    background: var(--hover-pink);
+    color: var(--primary-two);
+}
+
+.read-more:hover {
+    background: var(--hover-yellow);
+    color: var(--text);
+}
+
+/********* MEDIA QUERIES *********/
+/********* TABLETS *********/
+@media (min-width: 376px) {
+    .buttons {
+        flex-direction: row;
+    }
+}
+
+/********* DESKTOP max-width 1280px *********/
+@media (min-width: 745px) {
+
+}
+
+/********* DESKTOP max-width 1512px *********/
+@media (min-width: 1281px) {
+
+}
