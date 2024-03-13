@@ -1,0 +1,32 @@
+/* The styling of the footer */
+.Footer {
+  background-color: #810262;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  width: 98%;
+  margin-top: 90px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* The text that scrolls on the footer */
+.FooterText {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 25s linear infinite;
+  position: relative;
+  right: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(
+      100%
+    ); /* Start with the text off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move the text to the left off-screen */
+  }
+}

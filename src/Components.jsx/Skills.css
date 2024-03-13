@@ -1,0 +1,75 @@
+/* The styling on my skills page  */
+.Skills {
+  font-size: 30px;
+  background-color: rgb(210, 225, 249);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Define styles for different h2 classes */
+.code-heading {
+  background-color: #939243;
+  color: white;
+  width: 70%;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: 30px;
+}
+
+.toolbox-heading {
+  background-color: #2d6f3a;
+  color: white;
+  width: 90%;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: 30px;
+}
+
+.upcoming-heading {
+  background-color: #42357e;
+  color: white;
+  width: 100%;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: 30px;
+}
+
+.more-heading {
+  background-color: #a3513f;
+  color: white;
+  width: 70%;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: 50px;
+}
+
+/*  How to display the lists */
+h2,
+p {
+  display: block;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .Skills {
+    font-size: 20px;
+    background-color: rgb(210, 225, 249);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .code-heading,
+  .toolbox-heading,
+  .upcoming-heading,
+  .more-heading {
+    width: 60%;
+    margin-left: 20%;
+  }
+}

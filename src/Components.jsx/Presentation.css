@@ -1,0 +1,36 @@
+/* The styling of my presentation page */
+.presentation {
+  margin-top: 40px;
+  align-items: center;
+  padding: 0px;
+  color: #810262;
+}
+
+.presentation p {
+  font-size: 20px;
+}
+
+/* Styling of my profile picture */
+.image img {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: 25%;
+  border-radius: 250px;
+}
+
+/*  The jumping arrow on the bottom at this part */
+.Arrow img {
+  margin: 30px;
+  animation: jump 1.5s ease-in-out infinite;
+}
+
+/* Animation styling */
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end position (no translation) */
+  }
+  50% {
+    transform: translateY(-10px); /* Midway position (move up 10 pixels) */
+  }
+}
