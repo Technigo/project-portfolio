@@ -1,0 +1,144 @@
+.divider {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  top: -1px;
+  overflow: hidden;
+}
+
+.my-words-section {
+  background: #ede4ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 128px;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+
+.my-words-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 64px;
+  margin-top: 35px;
+}
+
+.date-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  margin: 0;
+}
+
+.article-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  max-width: 343px;
+  }
+
+.article-date {
+  background-color: black;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: fit-content;
+  padding: 3px;
+  margin: 0;
+}
+
+.article-title {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  max-width: 350px;
+}
+
+.article-text {
+  margin: 0;
+  width: 100%;
+  font-family: Hind;
+}
+
+.read-article {
+  max-width: 200px;
+  display: flex;
+  padding-right: 16px;
+  text-wrap: nowrap;
+  align-items: center;
+  gap: 7px;
+  border: none;
+}
+
+.read-article:hover {
+  background-color: #ffd338;
+}
+
+/* ---- Media queries ------ */
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .divider {
+    top: -3px;
+  }
+
+  .my-words-section {
+    align-items: flex-start;
+    }
+
+  .my-words-wrapper {
+    margin: 128px 32px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .article-box {
+   max-width: 100%; 
+  }
+}
+
+@media (min-width: 1025px) {
+  .divider {
+    top: -6px;
+  }
+  .my-words-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+
+    .my-words {
+      grid-column-start:1 ;
+      grid-column-end: 3;
+    }
+
+  .article-box {
+    max-width: 500px;
+    align-items: flex-start;
+  }
+
+  .my-words-section {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .heading-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+}
