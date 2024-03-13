@@ -1,0 +1,144 @@
+.divider {
+  background-image: url(/wavyline-divider.svg);
+  height: 20px;
+  width: 100%;
+  background-repeat: repeat-x;
+  top: 15px;
+  position: relative;
+  left: -2px;
+}
+
+.mywords-section content {
+  display: flex;
+  justify-content: center;
+}
+
+.mywords-wrapper {
+  background-color: #ffecea;
+  padding: 128px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mywords-h2 {
+  color: #ff4575;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  padding-bottom: 32px;
+}
+
+.article-img {
+  margin-bottom: 16px;
+  border-bottom: solid 20px #ff4575;
+  border-left: solid 20px #ff4575;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 25%;
+}
+
+.single-article {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+  gap: 8px;
+}
+
+.article-date {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #000000;
+  color: #ffffff;
+  width: fit-content;
+  padding: 2px 6px;
+  line-height: 19.5px;
+}
+
+.dark-h3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  margin-bottom: 16px;
+  line-height: 29.26px;
+}
+
+.bodytext {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.82px;
+  font-family: "Hind", sans-serif;
+  margin-bottom: 16px;
+}
+
+.article-button {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 24.38px;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+/* ---------- Small devices ---------- */
+/* @media screen and (max-width: 743px) {
+  .article-img {
+    height: 340px;
+  }
+} */
+
+/* ---------- Tablet and up ---------- */
+
+/* ---------- Tablet only ---------- */
+@media (width: 744px) {
+  .mywords-wrapper {
+    padding: 128px 32px;
+  }
+
+  .mywords-h2 {
+    line-height: 68.26px;
+    text-align: left;
+  }
+  .article img {
+    height: 340px;
+    width: 100%;
+    max-width: 680px;
+  }
+}
+
+@media (min-width: 745px) {
+  .article-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 32px;
+    max-width: 1226px;
+  }
+
+  .mywords-h2 {
+    font-size: 65px;
+  }
+}
+
+/* ---------- Desktop only ---------- */
+@media (min-width: 1280px) {
+  .mywords-wrapper {
+    padding: 128px 143px;
+  }
+  .mywords-h2 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 97.52px;
+    padding-bottom: 96px;
+    text-align: left;
+  }
+  .article-cards {
+    grid-column-gap: 98px;
+    max-width: 1226px;
+  }
+
+  .article-img {
+    width: 460px;
+    object-fit: cover;
+  }
+}
