@@ -1,0 +1,135 @@
+/* ----- Mywords section ----- */
+
+.mywords-section {
+    text-align: left;
+    background: #C5FFF6;
+    padding: 8% 8%;
+}
+
+.mywords-section h1 {
+    padding-bottom: 128px;
+    padding-left: 6%;
+}
+
+.mywords-section h3 {
+    padding-bottom: 30px;
+}
+
+.mywords-wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
+    grid-gap: 98px;
+    font-family: Hind;
+}
+
+.mywords-wrapper p {
+    text-align: justify;
+}
+
+.date {
+    background: black;
+    display: inline-block;
+    color: white;
+    font-family: Montserrat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.mywords-wrapper img {
+    width: 100%;
+    border-bottom: 20px solid #00473E;
+    border-left: 20px solid #00473E;
+}
+
+/*Will change so that it's not a button if articles section are to be used later on. Depending on how it will be used I'll use API instead.*/
+.mywords-wrapper button {
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+
+.mywords-wrapper button:hover {
+    background-color: #007d6d;
+    cursor: pointer;
+}
+
+/* ----- Media queries ----- */
+/* Tablet */
+@media (max-width: 1279px) {
+    .mywords-section {
+        padding: 0;
+        padding-top: 128px;
+    }
+
+    .mywords-section h1 {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .mywords-wrapper {
+        grid-template-columns: 680px;
+        justify-content: center;
+    }
+
+    .mywords-wrapper img {
+        width: auto;
+        height: 330;
+        border-bottom: 20px solid #00473E;
+        border-left: 20px solid #00473E;
+    }
+
+    .date {
+        display: inline-block;
+        color: white;
+        background-color: black;
+    }
+
+    .article4 {
+        margin-bottom: 128px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 743px) {
+    .mywords-section {
+        padding: 0;
+        padding-top: 25%;
+    }
+
+    .mywords-section h1 {
+        text-align: center;
+    }
+
+    .mywords-section h3 {
+        padding-bottom: 22px;
+    }
+
+    .mywords-wrapper {
+        grid-template-columns: 343px;
+        justify-content: center;
+    }
+
+    .mywords-wrapper img {
+        width: 320px;
+        border-bottom: 20px solid #00473E;
+        border-left: 20px solid #00473E;
+    }
+
+    .date {
+        display: inline-block;
+        color: white;
+        background-color: black;
+    }
+
+    .mywords-wrapper button {
+        margin-top: 20px;
+    }
+
+    .article4 {
+        margin-bottom: 128px;
+    }
+}

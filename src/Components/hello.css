@@ -1,0 +1,140 @@
+/*------ Hello1 "header" -----*/
+
+.header-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nametitle nametitle nametitle"
+        "profilephoto intro intro";
+    padding: 8rem 0;
+    margin: 4%;
+}
+
+.name-title {
+    grid-area: nametitle;
+}
+
+.wrapper-container {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 164px;
+    height: 164px;
+    border-radius: 164px;
+    grid-area: profilephoto;
+}
+
+.intro {
+    color: #000;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    max-width: 600px;
+    grid-area: intro;
+    grid-column: intro /span 3;
+    padding-top: 15px;
+}
+
+.hello-link-contact {
+    font-weight: bold;
+    cursor: pointer;
+    color: #00473E;
+    text-decoration: underline;
+    transition: filter 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hello-link-contact:hover {
+    text-decoration: none;
+}
+
+/* Defining a keyframe animation for the arrow*/
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Start and end position */
+    }
+
+    25%,
+    75% {
+        transform: translateY(-10px);
+        /* Move up 10 pixels */
+
+    }
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    /* Applies the animation to the .arrow element */
+    animation: moveUpDown 1s linear infinite;
+}
+
+/* ----- Media queries ----- */
+
+/* Tablet */
+@media (max-width: 1279px) {
+    .wrapper-container {
+        max-width: 45rem;
+    }
+
+    .name-title h3 {
+        font-size: 24px;
+    }
+
+    .profile-photo {
+        padding-bottom: 20px;
+    }
+
+    .intro {
+        padding-top: 0px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 743px) {
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* padding: 64px 16px; */
+    }
+
+    .header-wrapper p {
+        text-align: justify;
+    }
+
+    .intro {
+        order: 3;
+        padding-top: 25px;
+        /* width: 343px; */
+    }
+
+    .name-title {
+        order: 2;
+    }
+
+    .name-title h1 {
+        font-size: 32px;
+    }
+
+    .name-title h3 {
+        font-size: 18px;
+    }
+
+    .profile-photo {
+        align-self: center;
+        order: 1;
+        padding-bottom: 20px;
+    }
+
+}

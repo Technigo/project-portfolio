@@ -1,0 +1,96 @@
+/* ----- Skills4 section ----- */
+.skills-wrap {
+    gap: 64px;
+    background-color: #00473E;
+    padding: 128px 222px;
+    color: white;
+}
+
+.skills-wrap a {
+    color: grey;
+    transition: color 0.3s ease;
+}
+
+.skills-wrap a:hover {
+    color: lightgray;
+}
+
+.skills-wrap h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 128px;
+}
+
+.skills-wrap-info {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    justify-content: center;
+}
+
+.skills-wrap ul {
+    list-style-type: none;
+    font-family: Hind;
+    font-size: 18px;
+
+}
+
+.code h3 {
+    background-color: #EB5577;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.toolbox h3 {
+    background-color: #2483E0;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.upcoming h3 {
+    background-color: #6DB486;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.more h3 {
+    background-color: #FFDE30;
+    color: #0B24F5;
+    margin-bottom: 16px;
+}
+
+/* ----- Media queries ----- */
+/* Tablet */
+@media (max-width: 1279px) {
+
+    .skills-wrap-info {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        text-align: left;
+        margin-left: 25%;
+        grid-column-gap: 50%;
+    }
+
+    .code h3,
+    .toolbox h3,
+    .upcoming h3,
+    .more h3 {
+        display: inline-block;
+    }
+}
+
+/* Mobile */
+@media (max-width: 743px) {
+    .skills-wrap {
+        padding: 128px 0;
+    }
+
+    .skills-wrap-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+}

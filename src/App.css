@@ -1,0 +1,278 @@
+/*CSS for App, FeaturedP and ProjectCard
+
+/*CSS reset*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Montserrat;
+}
+
+.main-wrapper {
+  display: grid;
+  flex-direction: column;
+}
+
+
+/* ----- Typography ----- */
+h1 {
+  color: #00473E;
+  font-family: Montserrat;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.skills p {
+  color: white;
+}
+
+.footer p {
+  color: white;
+}
+
+/* Tablet */
+@media (max-width: 1279px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  .main-wrapper {
+    display: block;
+  }
+
+}
+
+@media (max-width: 743px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+}
+
+
+/* ----- Featured projects section and Project card ----- */
+.featured-projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 65rem;
+  margin-top: 10%;
+}
+
+.featured-projects-wrapper h1 {
+  padding-bottom: 8%;
+}
+
+.repo-image {
+  width: 280px;
+  height: 280px;
+  flex-shrink: 0;
+  border-bottom: 20px solid #00473E;
+  border-left: 20px solid #00473E;
+  object-fit: cover;
+}
+
+.project-card-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 128px;
+}
+
+.project-info {
+  flex: 1;
+  display: grid;
+  height: 315px;
+  padding-left: 35px;
+  grid-template-rows: auto auto 1fr;
+}
+
+.project-info p {
+  width: 100%;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: justify;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.button-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.button a {
+  display: inline-block;
+  background-color: #F5F5F5;
+  padding: 0px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.button a:hover {
+  background-color: #007d6d;
+}
+
+.tag ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  color: #FFF;
+  background-color: black;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  /* Making first letter of each tag capitalized */
+}
+
+/* ----- Media queries ----- */
+/* Added to make desktop look good */
+@media (min-width: 1280px) {
+  .extra-wrapper {
+    margin: 0 4%;
+  }
+
+  .featured-projects-wrapper h1 {
+    margin: 0 4%;
+  }
+
+  .featured-projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    margin: 10% auto 0 auto;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1279px) {
+  .featured-projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 45rem;
+    margin: 10% auto 0 auto;
+  }
+
+  .featured-projects-wrapper h1 {
+    overflow-wrap: break-word;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 64px;
+  }
+
+  .repo-image {
+    width: 200px;
+    height: 280px;
+    border-bottom: 10px solid #00473E;
+    border-left: 10px solid #00473E;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    padding-left: 37px;
+  }
+
+  .project-info p {
+    width: 430px;
+    margin-top: 16px;
+  }
+
+  .tag ul {
+    padding-top: 0;
+  }
+
+  .buttons-container {
+    padding-top: 16px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 743px) {
+  .featured-projects-wrapper h1 {
+    overflow-wrap: break-word;
+    text-align: center;
+    padding-top: 15%;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 20%;
+  }
+
+  .repo-image {
+    width: 300px;
+    height: 200px;
+    border-bottom: 10px solid #00473E;
+    border-left: 10px solid #00473E;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    height: 315px;
+    width: 343px;
+    padding-top: 16px;
+    padding-left: 40px;
+  }
+
+  .project-info p {
+    width: 308px;
+    margin-top: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .project-card-inner {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+
+  .tag ul {
+    padding-top: 16px;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 24px;
+  }
+}
