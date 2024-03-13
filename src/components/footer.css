@@ -1,0 +1,163 @@
+/* Add this CSS to your footer.css */
+.footer-banner {
+    background-color: #FF4575;
+    color: #fff;
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+
+    /* This part make the footer stretch to full bottom without white space*/
+    height: 4vw;
+    max-height: 4vw;
+    bottom: 20%;
+    margin-bottom: -4vw;
+}
+
+.footer {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: roll 40s linear infinite;
+    /* Start the animation */
+}
+
+.footer p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(100%);
+        /* Start off-screen to the right */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move off-screen to the left */
+    }
+}
+
+.rolling-banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Keyframes for the rolling animation */
+@keyframes roll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Mobile  */
+@media (max-width: 390px) {
+    .footer-banner {
+        width: 100%;
+        background-color: #FF4575;
+        color: #fff;
+        padding: 20px;
+        overflow: hidden;
+        position: relative;
+        margin: 0px;
+
+        height: 20vw;
+        max-height: 20vw;
+        bottom: 20%;
+        margin-bottom: -20vw;
+    }
+
+    .footer {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: roll 40s linear infinite;
+    }
+
+    .footer p {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+/* Tablet small */
+@media (min-width: 391px) and (max-width: 744px) {
+    .footer-banner {
+        width: 100%;
+        background-color: #FF4575;
+        color: #fff;
+        padding: 20px;
+        overflow: hidden;
+        position: relative;
+        margin: 0px;
+        height: 6vw;
+        max-height: 10vw;
+        bottom: 20%;
+        margin-bottom: -10vw;
+    }
+
+    .footer {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: roll 40s linear infinite;
+    }
+
+    .footer p {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+
+    }
+}
+
+
+/* Tablet  */
+@media (min-width: 745px) and (max-width: 1023px) {
+    .footer-banner {
+        background-color: #FF4575;
+        color: #fff;
+        padding: 40px;
+        overflow: hidden;
+        position: relative;
+        margin: 0px;
+
+        /* This part make the footer stretch to full bottom without white space */
+        height: 4vw;
+        max-height: 4vw;
+        bottom: 20%;
+        margin-bottom: -4vw;
+    }
+
+    .footer {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: roll 40s linear infinite;
+    }
+
+    .footer p {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}

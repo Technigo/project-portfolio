@@ -1,0 +1,85 @@
+.tech {
+    background-color: #0B24F5;
+    width: 100%;
+    margin: 0;
+}
+
+.tech-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px;
+}
+
+.tech p {
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.tech h1 {
+    color: white;
+    margin: 40px;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Mobile */
+@media (max-width: 390px) {
+    .tech-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .tech h1 {
+        font-size: 56px;
+        margin: 60px;
+    }
+
+    .tech p {
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 60px;
+    }
+}
+
+/* Tablet small */
+@media (min-width: 391px) and (max-width: 744px) {
+    .tech-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .tech h1 {
+        font-size: 2.6em;
+        margin: 30px;
+    }
+
+    .tech p {
+        font-size: 1.4em;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 745px) and (max-width: 1023px) {
+    .tech-content {
+        flex-direction: row;
+        /* Revert to row layout for tablets */
+        padding: 50px;
+    }
+
+    .tech p,
+    .tech h1 {
+        font-size: 24px;
+        /* Adjust font size for tablets */
+        margin: 20px;
+        /* Adjust margin as needed */
+    }
+}

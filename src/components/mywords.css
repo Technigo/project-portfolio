@@ -1,0 +1,101 @@
+.mywords {
+    position: relative;
+    background-color: #FFECEA;
+    padding: 70px 0;
+}
+
+.mywords::before {
+    content: "";
+    background: url('/path.png');
+    background-repeat: repeat-x;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Ensure the line is above the background color but behind content */
+    display: block;
+    margin-top: -7px;
+}
+
+
+.mywords-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.mywords-child {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+}
+
+
+.mywords-details {
+    width: 450px;
+    text-align: left;
+}
+
+
+.mywords h1 {
+    color: #FF4575;
+    font-family: Montserrat;
+    font-size: 60px;
+    text-align: left;
+    margin-left: 200px;
+    margin-bottom: 80px;
+}
+
+
+.articlesimg {
+    width: 400px;
+    height: 240px;
+    border-bottom: 15px solid #FF4575;
+    border-left: 15px solid #FF4575;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.mywords h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    font-size: 30px;
+}
+
+.mywords p {
+    text-align: left;
+}
+
+
+.date {
+    display: inline-block;
+    background-color: black;
+    padding: 4px 8px;
+    margin: 2px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.mywords-actions {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+
+    .mywords {
+        background-color: #dcb8b8;
+    }
+}
