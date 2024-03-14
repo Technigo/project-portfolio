@@ -1,0 +1,190 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.project-image {
+  height: 200px;
+  align-self: stretch;
+  border-bottom: 10px solid #0b24f5;
+  border-left: 10px solid #0b24f5;
+  object-fit: cover;
+}
+
+.project-title {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  align-self: stretch;
+}
+
+.project-description {
+  color: #000;
+  font-family: "Hind";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+}
+
+.tags {
+  display: flex;
+  padding: 2px 6px;
+  align-items: flex-start;
+  background: #000;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.deployedBtn {
+  display: flex;
+  padding: 7px 16px 7px 7px;
+  align-items: center;
+  gap: 7px;
+  border-radius: 40px;
+  background: #f5f5f5;
+
+  color: #333;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+}
+
+.gitBtn {
+  display: flex;
+  padding-right: 16px;
+  border-radius: 40px;
+  align-items: center;
+  gap: 7px;
+  background: #f5f5f5;
+
+  color: #333;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+}
+
+.gitBtn:hover {
+  background: #eb5577;
+  color: #fff;
+}
+.deployedBtn:hover {
+  background: #0b24f5;
+  color: #fff;
+}
+
+.gitBtn:hover img,
+.deployedBtn:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.project-tags {
+  display: flex;
+  gap: 5px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 745px) and (max-width: 1280px) {
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 800px;
+  }
+
+  .project-image {
+    width: 200px;
+    height: 280px;
+    flex-shrink: 0;
+  }
+
+  .project-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .project-title {
+    font-size: 24px;
+    align-self: normal;
+  }
+
+  .project-description {
+    align-self: normal;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    max-height: 280px;
+    gap: 40px;
+    max-width: 820px;
+  }
+
+  .project-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .project-title {
+    font-size: 32px;
+    align-self: normal;
+  }
+
+  .project-description {
+    align-self: normal;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .project-image {
+    height: 280px;
+    width: 280px;
+  }
+}

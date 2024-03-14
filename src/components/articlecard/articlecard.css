@@ -1,0 +1,121 @@
+.article-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.article-title {
+  color: #000;
+
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.article-intro {
+  color: #000;
+
+  font-family: "Hind";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+}
+
+.article-image {
+  height: 200px;
+  align-self: stretch;
+  border-bottom: 20px solid #ff4575;
+  border-left: 20px solid #ff4575;
+  object-fit: cover;
+}
+
+.readMoreBtn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 40px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  border: none;
+}
+
+.readMoreBtn:hover {
+  background-color: #ffd338;
+}
+.btnText {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-right: 16px;
+}
+
+.date-month {
+  display: flex;
+  padding: 2px 6px;
+  align-items: flex-start;
+  background: #000;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.date-and-title {
+  gap: 10px;
+}
+
+.month-tag {
+  display: flex;
+}
+
+@media (min-width: 745px) and (max-width: 1280px) {
+  .article-card {
+    gap: 32px;
+  }
+
+  .article-title {
+    font-size: 24px;
+  }
+
+  .article-image {
+    height: 340px;
+  }
+
+  .date-month {
+    display: inline-flex;
+  }
+
+  .date-and-title {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .article-title {
+    font-size: 32px;
+  }
+
+  .date-month {
+    display: inline-flex;
+  }
+
+  .article-image {
+    height: 340px;
+    width: 95%;
+  }
+}

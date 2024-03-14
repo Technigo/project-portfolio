@@ -1,0 +1,162 @@
+.skills-container {
+  background-color: blue;
+  padding: 128px 0;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 64px;
+}
+
+.skill-set {
+  gap: 64px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.skills-title {
+  color: #fff;
+
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.code,
+.toolbox,
+.upcoming,
+.more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.code-title,
+.toolbox-title,
+.upcoming-title,
+.more-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  /* background: #eb5577; */
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0 5px;
+}
+
+.code-title {
+  background: #eb5577;
+}
+
+.toolbox-title {
+  background: #2483e0;
+}
+
+.upcoming-title {
+  background: #6db486;
+}
+
+.more-title {
+  background: #ffde30;
+  color: #0b24f5;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+}
+
+li {
+  color: #fff;
+
+  text-align: center;
+  font-family: "Hind";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* @media (min-width: 376px) and (max-width: 744px) {
+  .skill-set {
+    margin: 0 auto;
+  }
+
+  .code,
+  .toolbox,
+  .upcoming,
+  .more {
+    align-items: flex-start;
+  }
+
+  li {
+    text-align: left;
+  }
+} */
+
+@media (min-width: 745px) and (max-width: 1280px) {
+  .skills-title {
+    font-size: 80px;
+  }
+
+  .code-title,
+  .toolbox-title,
+  .upcoming-title,
+  .more-title {
+    font-size: 32px;
+  }
+
+  .skill-set {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .code,
+  .toolbox,
+  .upcoming,
+  .more {
+    align-items: flex-start;
+  }
+
+  li {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .skills-title {
+    font-size: 80px;
+  }
+
+  .code-title,
+  .toolbox-title,
+  .upcoming-title,
+  .more-title {
+    font-size: 32px;
+  }
+
+  .skill-set {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .code,
+  .toolbox,
+  .upcoming,
+  .more {
+    align-items: flex-start;
+  }
+
+  li {
+    text-align: left;
+  }
+}

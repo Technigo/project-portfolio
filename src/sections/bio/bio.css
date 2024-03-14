@@ -1,0 +1,169 @@
+.bio-container {
+  display: flex;
+  padding: 64px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.profile-picture {
+  height: 164px;
+  width: 164px;
+  border-radius: 50%;
+}
+
+.presentation {
+  align-self: stretch;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.profession {
+  color: #0b24f5;
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: stretch;
+}
+
+.about-me {
+  color: #000;
+  font-family: "Hind";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.arrow-down {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  animation: updown 2s ease-in-out infinite;
+}
+
+.next-section-arrow {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 745px) and (max-width: 1280px) {
+  .bio-container {
+    padding: 128px 64px;
+    gap: 128px;
+  }
+
+  .bio {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    grid-template-rows: auto;
+  }
+
+  .name-and-title {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .profile-picture {
+    grid-row: 2;
+  }
+
+  .about-me {
+    grid-column: span 2;
+    grid-row: 2;
+  }
+
+  .presentation {
+    font-size: 24px;
+  }
+
+  .profession {
+    font-size: 56px;
+  }
+
+  .arrow-down {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .arrow-down img {
+    width: 27px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .bio-container {
+    padding: 332px 220px 64px 220px;
+    gap: 199px;
+  }
+
+  .bio {
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    grid-template-rows: auto;
+    gap: 16px;
+    max-width: 880px;
+  }
+
+  .presentation {
+    font-size: 32px;
+  }
+
+  .profession {
+    font-size: 80px;
+  }
+
+  .profile-picture {
+    grid-row: 2;
+  }
+
+  .name-and-title {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .about-me {
+    grid-row: 2;
+    grid-column: span 2;
+    max-width: 90%;
+  }
+
+  .arrow-down {
+    grid-row: 3;
+    grid-column-start: 1;
+    text-align: center;
+  }
+
+  .arrow-down img {
+    width: 27px;
+    height: 200px;
+  }
+}

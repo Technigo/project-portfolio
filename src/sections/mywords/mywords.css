@@ -1,0 +1,98 @@
+.my-words-frame {
+  background: #ffecea;
+}
+.my-words-frame > img {
+  z-index: 1;
+  position: relative;
+  top: -9px;
+  width: 100%;
+}
+
+.my-words-frame > div {
+  z-index: 2;
+  position: relative;
+}
+
+.my-words-container {
+  padding: 128px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-words {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.my-words-title {
+  color: #ff4575;
+  /* text-align: center; */
+  font-family: "Montserrat";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 745px) and (max-width: 1280px) {
+  .my-words-container {
+    padding: 128px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .my-words {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* align-items: flex-start; */
+    padding: 0;
+    width: 100%;
+    gap: 64px;
+  }
+  .my-words-title {
+    font-size: 56px;
+    align-self: flex-start;
+    margin-bottom: 64px;
+  }
+
+  .my-words-frame > img {
+    top: -14px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .my-words-container {
+    padding: 128px 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+  }
+
+  .my-words {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    padding: 0;
+  }
+  .my-words-title {
+    font-size: 80px;
+    align-self: flex-start;
+  }
+
+  .my-words-frame > img {
+    top: -20px;
+  }
+}
