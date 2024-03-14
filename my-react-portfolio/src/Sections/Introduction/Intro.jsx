@@ -15,7 +15,7 @@ export const Intro = () => {
                 <CircleImage className="profile-img" src={evelynImage} alt="evelyn profile image" />
             </section>
             <section className="headings">
-                <SmallSubTitle className="subtitle" text={"Hi! I am Evelyn Del Carmen"} />
+                <SmallSubTitle className="subtitle" text={"Hey! I'm Evelyn Del Carmen"} />
                 <MainTitle className="maintitle" text={"Frontend Developer"} />
             </section>
             <section className="intro-text">

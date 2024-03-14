@@ -14,7 +14,7 @@ export const Footer = () => {
     return (
         <footer className="contact-container">
             <section className="contact-wrapper">
-                <LargeText className="footer-heading" text="Let's talk" aria-label="This is the footer heading" />
+                <LargeText className="footer-heading" text="Let's talk!" aria-label="This is the footer heading" />
                 <CircleImage className="profile-img" src={evelynImage} alt="evelyn profile image" />
 
                 <div className="contact-info">
