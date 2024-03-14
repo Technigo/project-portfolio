@@ -1,0 +1,113 @@
+.skills_container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--night-flight);
+    padding:1rem 0 1rem 0;
+}
+/* Define the animation keyframes */
+@keyframes moveUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); } 
+  }
+  
+  /* Apply the animation to the image */
+  .animated_arrow {
+    width:130px;
+    height:120px;
+    animation: moveUpDown 2s ease-in-out infinite; 
+    position: absolute;
+    left:0.3rem;
+  }
+
+  /* Skill title h1 */
+.skills_container h1{
+    font-size: 36px;
+    color:#fff;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 800;
+    margin:30px 0 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.skill_code,
+.skill_tool,
+.skill_more,
+.skill_upcoming{
+  margin:0;
+  width:100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.skills_container h3{
+    font-size: 26px;
+    color:var(--font-color);
+    background-color:#fdf4ee;
+    padding:0 1rem 0 1rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.skills_list{
+    color: #fff;
+}
+.skills_list li{
+    list-style-type: none;
+    font-size:20px;
+    font-weight: 400;
+    line-height: 1.5rem;  
+}
+.skills_list li:hover{
+    text-decoration: underline;
+}
+.wavy{
+    width:100%;
+}
+/* Desktop responsive design */
+@media (min-width:1024px) {
+    .skills_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Create four equal columns */
+        align-items: flex-start;
+        width: 100%;
+      }
+      
+      /* Style the "Skills" header (h1) */
+      .skills_container h1 {
+        grid-column: 1 / span 4; /* Span all four columns */
+        text-align: center; 
+        font-size: 48px;
+      }
+      .skills_list li{
+        font-size:22px;
+        line-height: 1.8rem;  
+        padding-left: 8px;
+    }
+      
+      
+}
+/* Table responsive design */
+@media (min-width:678px) and (max-width:1023px) {
+    .skills_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        width: 100%;
+      }
+      
+      /* Style the "Skills" header (h1) */
+      .skills_container h1 {
+        grid-column: 1 / span 2; /* Span all two columns */
+        text-align: center;
+      }
+      .skills_list li{
+        font-size:22px;
+        line-height: 1.8rem;  
+        padding-left: 8px;
+    }
+}
