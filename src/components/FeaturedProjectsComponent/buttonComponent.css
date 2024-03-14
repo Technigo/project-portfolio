@@ -1,0 +1,68 @@
+.netlifyButton,
+.githubButton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+
+.netlifyButton button,
+.githubButton button {
+    background: #F5F5F5;
+    color: #333333;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.netlifyButton p,
+.githubButton p {
+    padding-right: 16px;
+    font-family: Montserrat;
+}
+
+.netlifyButton button svg,
+.githubButton button svg {
+    fill: #333333;
+}
+
+.netlifyButton button:hover {
+    background: #0B24F5;
+    color: white;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.netlifyButton button:hover p {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.githubButton button:hover {
+    background: #EB5577;
+    color: white;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.githubButton button:hover p {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+    .netlifyButton p,
+    .githubButton p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .netlifyButton p,
+    .githubButton p {
+        font-size: 20px;
+    }
+}

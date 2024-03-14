@@ -1,0 +1,145 @@
+.my-words-page-wrapper {
+  background-color: #FFECEA;
+}
+
+.my-words-page-wrapper>img {
+  z-index: 1;
+  position: relative;
+  top: -15px;
+  /* Change this for other devices */
+}
+
+.my-words-page-wrapper>div {
+  z-index: 10;
+  position: relative;
+}
+
+/* Wavy divider */
+
+.wavy-divider {
+  width: 100%;
+}
+
+.my-words-article-content {
+  padding: 128px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.my-words-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+/*   My Words article card*/
+.article-card-image {
+  border-bottom: 20px solid #FF4575;
+  border-left: 20px solid #FF4575;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.my-words-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.my-words-heading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+  .my-words-article-content {
+    width: 680px;
+    padding: 128px 0px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 64px;
+  }
+
+  /*   My Words article card*/
+  .article-card-image {
+    height: 340px;
+    object-fit: cover;
+    width: 680px;
+  }
+
+  .my-words-card {
+    gap: 32px;
+  }
+
+
+}
+
+
+@media (min-width: 1025px) {
+
+  .my-words-article-content {
+    margin: 0 auto;
+    padding: 128px 0px;
+    gap: 0;
+  }
+
+  .my-words-page-wrapper .big-heading {
+    padding-bottom: 128px;
+    margin: 0 auto;
+    width: 1018px;
+    text-align: left;
+  }
+
+  /*   My Words article card*/
+  .article-card-image {
+    height: 340px;
+    object-fit: cover;
+    width: 460px;
+  }
+
+ 
+  .my-words-card {
+    gap: 32px;
+  }
+
+  .my-words-card-wrapper {
+    overflow: hidden;
+  }
+
+  .my-words-heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .my-words-page-wrapper>img {
+    top: -9px;
+    /* Change this for other devices */
+  }
+
+  .my-words-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 460px);
+    column-gap: 98px;
+    row-gap: 64px;
+  }
+
+  .my-words-card-wrapper {
+    height: 100%; /* Ensure each card takes full height */
+    display: flex;
+    flex-direction: column;
+  }
+
+}

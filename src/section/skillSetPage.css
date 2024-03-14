@@ -1,0 +1,77 @@
+.list-without-bullets {
+    list-style-type: none;
+}
+
+.skillset-page-wrapper {
+    display: flex;
+    padding: 128px 99px 157px 99px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0B24F5;
+    gap: 64px;
+}
+
+.skillset-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.skill-sets-card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.list-without-bullets li .textbox-wrapper p {
+    color: white;
+}
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+    .skillset-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 153px);
+        gap: 64px;
+    }
+}
+
+.skill-sets-card {
+    align-items: start;
+    height: 100%;
+    text-align: left;
+}
+
+
+@media (min-width: 1025px) {
+
+    .skillset-page-wrapper {
+        display: flex;
+        padding: 128px 0;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 128px;
+    }
+
+    .skillset-card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        text-align: left;
+        gap: 64px;
+    }
+
+    .skill-sets-card {
+        align-items: start;
+        gap: 16px;
+        width: 100%;
+        text-align: left;
+    }
+
+}
