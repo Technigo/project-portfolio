@@ -71,13 +71,11 @@ Accessibility has been a priority, following guidelines to make my website usabl
 
 This portfolio is just the beginning of my coding journey. As I continue to grow and evolve, my portfolio will reflect my progress and creativity. Feel free to explore my GitHub repository and visit the live deployment link to see my work in action. Happy coding and enjoy the journey with me!
 
-PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 
 ### Lessons Learned
 
 Through this project, I, Technigo, have learned invaluable lessons in React development. I now understand the power of components and props in creating a modular and organized codebase. React hooks, especially useState, have allowed me to manage state and interactivity effectively. Integrating web APIs taught me the importance of data fetching and dynamic content display, keeping my portfolio up-to-date effortlessly. Additionally, focusing on accessibility has made me more aware of creating inclusive user experiences. Overall, this project has honed my skills in clean coding practices and emphasized the significance of continuous testing and deployment for a successful web application. The experience has been enriching, and I am excited to apply these lessons in future projects to further enhance my coding journey.
 
-PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 
 ## Screenshots
 
@@ -88,3 +86,9 @@ PLEASE SWAP INFORMATION FOR YOUR OWN 😉
 ##### Want to create your own README.md ?
 
 [Go to this link](https://readme.so/)
+
+# View it live!
+
+https://amandarh-portfolio.netlify.app/
+
+
