@@ -6,7 +6,7 @@ import { SmallSubTitle } from "../../ReusableComponents/Texts/SmallSubTitle"
 import evelynImage from "../../assets/cvimage/evelyn.png";
 import { ArrowDownAnimation } from "../../ReusableComponents/Animation/Arrow/ArrowDownAnimation";
 
-const introText = "Evelyn is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field."
+const introText = "Fueled by her passion for visual communication, Evelyn works as a creative Frontend Developer and Photographer. She has a degree in Photography and Fullstack Web Development that she uses to create user-friendly applications on the daily. "
 
 export const Intro = () => {
     return (
