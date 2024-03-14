@@ -1,0 +1,73 @@
+/* default styles for mobile */
+.redArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+/* Define the animation */
+@keyframes jumpUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.redArrow {
+  animation: jumpUpDown 1s infinite;
+}
+
+/* Media query for tablet */
+@media screen and (min-width: 600px) and (max-width: 824px) {
+  .redArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    padding: 6em 0 1.5em 0;
+  }
+
+  /* Define the animation */
+  @keyframes jumpUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .redArrow:hover {
+    animation: jumpUpDown 1s infinite;
+  }
+}
+
+/*----- media query for desktop -----*/
+@media (min-width: 1025px) {
+  .redArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  /* Define the animation */
+  @keyframes jumpUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .redArrow:hover {
+    animation: jumpUpDown 1s infinite;
+  }
+}
