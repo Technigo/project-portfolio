@@ -2,7 +2,7 @@ import "./tech.css";
 import { LargeText } from "../../ReusableComponents/Texts/LargeText";
 import { NormalText } from "../../ReusableComponents/Texts/NormalText";
 
-const techText = "HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, API:s, mob-programming, pair programming, Github."
+const techText = "HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, API:s, pair programming, Github."
 
 export const Tech = () => {
     return (
