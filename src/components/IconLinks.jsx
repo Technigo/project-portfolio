@@ -1,13 +1,13 @@
-import Github from "../assets/github.svg";
-import GithubHover from "../assets/github-hover.svg";
-import Insta from "../assets/instagram.svg";
-import Instahover from "../assets/instagram-hover.svg";
-import Linkedin from "../assets/linkedin.svg";
-import Linkedinhover from "../assets/linkedin-hover.svg";
-import Stack from "../assets/stackoverflow.svg";
-import Stackhover from "../assets/stackoverflow-hover.svg";
-import { LinkButton } from "./LinkButton";
-import "./IconLinks.css";
+import Github from '../assets/github.svg';
+import GithubHover from '../assets/github-hover.svg';
+import Insta from '../assets/instagram.svg';
+import Instahover from '../assets/instagram-hover.svg';
+import Linkedin from '../assets/linkedin.svg';
+import Linkedinhover from '../assets/linkedin-hover.svg';
+import Stack from '../assets/stackoverflow.svg';
+import Stackhover from '../assets/stackoverflow-hover.svg';
+import { LinkButton } from './LinkButton';
+import './IconLinks.css';
 
 export const IconLinks = () => {
   return (
@@ -21,14 +21,14 @@ export const IconLinks = () => {
         alt="Github-button"
       />
 
-      <LinkButton
+      {/* <LinkButton
         className="insta-icon"
         buttonText=""
         url="https://www.instagram.com/fridafridal/"
         icon={Insta}
         hoverIcon={Instahover}
         alt="Instagram-button"
-      />
+      /> */}
 
       <LinkButton
         buttonText=""

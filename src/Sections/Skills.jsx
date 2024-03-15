@@ -1,5 +1,5 @@
-import { Headline } from "./Headline";
-import "./Skills.css";
+import { Headline } from './Headline';
+import './Skills.css';
 
 export const Skills = () => {
   return (
@@ -28,10 +28,10 @@ export const Skills = () => {
           <p>Postman</p>
         </div>
 
-        {/* <div className="upcoming">
+        <div className="upcoming">
           <Headline text="Upcoming" level={2} className="upcoming-h2" />
-          <p>Fullstack Project</p>
-        </div> */}
+          <p>Typescript</p>
+        </div>
 
         <div className="more">
           <Headline text="More" level={2} className="more-h2" />
