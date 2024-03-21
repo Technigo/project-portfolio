@@ -10,7 +10,8 @@ Create a JSON file that contains an array of objects, each object representing a
 [
   {
     "repoName": "example-repo-1",
-    "imageUrl": "src/assets/repo-images/image1.png"
+    "imageUrl": "src/assets/repo-images/image1.png",
+    "tags": ["JavaScript", "React.js"]
   },
   {
     "repoName": "example-repo-2",
@@ -25,15 +26,15 @@ Create a JSON file that contains an array of objects, each object representing a
 #### A. Set up a react component and state
 
 ```js
-import { useState, useEffect } from "react";
-import repoImages from "./path-to-your-json-file.json";
+import { useState, useEffect } from 'react'
+import repoImages from './path-to-your-json-file.json'
 
 export const GithubRepos = () => {
-  const [repos, setRepos] = useState([]);
+  const [repos, setRepos] = useState([])
   // ... (rest of the code will go here)
 
-  return <div>{/* Render your repositories and images here */}</div>;
-};
+  return <div>{/* Render your repositories and images here */}</div>
+}
 ```
 
 #### B. Fetch Repositories using async Function
@@ -44,22 +45,24 @@ export const GithubRepos = () => {
 useEffect(() => {
   const fetchRepos = async () => {
     try {
-      const response = await fetch("https://api.github.com/users/YourGithubProfile/repos");
+      const response = await fetch(
+        'https://api.github.com/users/YourGithubProfile/repos'
+      )
       if (!response.ok) {
-        throw new Error("Network response was not ok" + response.statusText);
+        throw new Error('Network response was not ok' + response.statusText)
       }
-      const data = await response.json();
-      setRepos(data);
+      const data = await response.json()
+      setRepos(data)
     } catch (error) {
       console.error(
-        "There has been a problem with your fetch operation:",
+        'There has been a problem with your fetch operation:',
         error
-      );
+      )
     }
-  };
+  }
 
-  fetchRepos();
-}, []);
+  fetchRepos()
+}, [])
 ```
 
 ### 2. Match and Render Repositories and Images:
@@ -80,6 +83,11 @@ return (
             <img src={repoImage?.imageUrl} alt={repo.name} />
             {repo.name}
           </li>
+          //what I added👇🏻
+          <p>description</p>
+          <div>
+          <Tag tags={repo.tags.join("")}/>
+          </div>
         );
       })}
     </ul>
