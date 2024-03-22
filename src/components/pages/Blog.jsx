@@ -12,7 +12,7 @@ export default function Blog() {
           alt="a wiggly pink line"
         />
         <div className="blog-container">
-          <h1 className="my-words" style={{ color: "#FF4575" }}>
+          <h1 className="my-words" style={{ color: "black" }}>
             My words
           </h1>
           <img className="code-img" src={Code} alt="img of code" />

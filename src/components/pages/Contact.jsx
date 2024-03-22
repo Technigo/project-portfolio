@@ -13,6 +13,8 @@ export default function Contact() {
         className="profile-image"
         src={myImage}
         alt="Portrait of Josephine Oderland"
+        width="200"
+        height="200"
       />
 
       <div className="about-me-info">

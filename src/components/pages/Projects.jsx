@@ -6,6 +6,7 @@ import projects from "/src/projects.json"
 import { fetchRepos } from "/src/helpers/github/repos"
 import "./projects.css"
 
+
 export default function Projects() {
   const [repos, setRepos] = useState([])
   const [isTablet, setIsTablet] = useState(false)
@@ -41,6 +42,7 @@ export default function Projects() {
                 href={project.netlify}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="project photo"
               >
                 <Photo
                   src={project.image}
@@ -64,12 +66,12 @@ export default function Projects() {
                 <div className="buttons">
                   <Button
                     text="Live demo"
-                    icon="/src/assets/live-button.png"
+                    icon="/img/live-button.png"
                     url={project.netlify}
                   />
                   <Button
                     text="View the code"
-                    icon="/src/assets/view-button.png"
+                    icon="/img/view-button.png"
                     url={repo.html_url}
                   />
                 </div>

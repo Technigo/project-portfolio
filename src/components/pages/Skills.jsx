@@ -23,7 +23,7 @@ export default function Skills() {
         >
           <div className="skills-info">
             <div className="code">
-              <h3
+              <h4
                 style={{
                   paddingLeft: "3px",
                   paddingRight: "3px",
@@ -34,7 +34,7 @@ export default function Skills() {
                 }}
               >
                 Code
-              </h3>
+              </h4>
               <p
                 style={{
                   textAlign: "center",
@@ -57,7 +57,7 @@ export default function Skills() {
             </div>
 
             <div className="toolbox">
-              <h3
+              <h4
                 style={{
                   paddingLeft: "3px",
                   paddingRight: "3px",
@@ -68,7 +68,7 @@ export default function Skills() {
                 }}
               >
                 Toolbox
-              </h3>
+              </h4>
               <p
                 style={{
                   textAlign: "center",
@@ -87,18 +87,18 @@ export default function Skills() {
             </div>
 
             <div className="upcoming">
-              <h3
+              <h4
                 style={{
                   paddingLeft: "3px",
                   paddingRight: "3px",
                   margin: "2px",
                   display: "inline-block",
-                  backgroundColor: "#6DB486",
+                  backgroundColor: "#9436B3",
                   color: "white",
                 }}
               >
                 Upcoming
-              </h3>
+              </h4>
               <p
                 style={{
                   textAlign: "center",
@@ -115,7 +115,7 @@ export default function Skills() {
             </div>
 
             <div className="more">
-              <h3
+              <h4
                 style={{
                   paddingLeft: "3px",
                   paddingRight: "3px",
@@ -126,7 +126,7 @@ export default function Skills() {
                 }}
               >
                 More
-              </h3>
+              </h4>
               <p
                 style={{
                   textAlign: "center",

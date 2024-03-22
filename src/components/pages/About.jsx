@@ -1,5 +1,5 @@
 import myImage from "/src/assets/me.png"
-import arrow from "/src/assets/arrow.png"
+import arrow from "/src/assets/arrow.svg"
 import "./about.css"
 
 export default function About() {
@@ -16,6 +16,8 @@ export default function About() {
           className="profile-image"
           src={myImage}
           alt="Portrait of Josephine Oderland"
+          width="200"
+          height="200"
         />
         <div className="name-dev">
           <h6>Hi, I&apos;m Josephine Oderland</h6>

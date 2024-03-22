@@ -15,6 +15,7 @@ export default function Button({ icon, text, url }) {
   const handleMouseLeave = () => {
     setHovered(false)
   }
+
   return (
     <button
       style={{
@@ -38,7 +39,7 @@ export default function Button({ icon, text, url }) {
     >
       <img
         src={icon}
-        alt={text}
+        alt=""
         style={{
           width: "30px",
           height: "30px",
