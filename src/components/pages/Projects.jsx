@@ -6,9 +6,9 @@ import projects from "/src/projects.json"
 import { fetchRepos } from "/src/helpers/github/repos"
 import "./projects.css"
 
-
 export default function Projects() {
   const [repos, setRepos] = useState([])
+  const [isSmal, setIsSmal] = useState(false)
   const [isTablet, setIsTablet] = useState(false)
   const [isDesktop, setIsDesktop] = useState(false)
 
@@ -22,6 +22,7 @@ export default function Projects() {
   }, [])
 
   const handleWindowSizeChange = () => {
+    setIsSmal(window.innerWidth >= 320 && window.innerWidth <= 371)
     setIsTablet(window.innerWidth >= 744 && window.innerWidth <= 1279)
     setIsDesktop(window.innerWidth > 1279)
   }
@@ -47,7 +48,15 @@ export default function Projects() {
                 <Photo
                   src={project.image}
                   color={"#0B24F5"}
-                  width={isTablet ? "200px" : isDesktop ? "280px" : "350px"}
+                  width={
+                    isSmal
+                      ? "300px"
+                      : isTablet
+                      ? "200px"
+                      : isDesktop
+                      ? "280px"
+                      : "350px"
+                  }
                   height={isTablet ? "280px" : isDesktop ? "280px" : "200px"}
                   alt={repo.name}
                   url={project.netlify}
