@@ -5,7 +5,7 @@ export const Introduction = () => {
     <div className="introSection">
       <div className="introContainer">
         <div className="image"></div>
-        <h2>Hi,I&apos;m Vittoria Matteoli</h2>
+        <h2>Hi, I&apos;m Vittoria Matteoli</h2>
         <h1>Frontend Developer</h1>
         <p>write some text </p>
         <button>

@@ -1,0 +1,81 @@
+.contactSection {
+  display: inline-flex;
+  padding: 128px 32px 128px 33px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactSectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.socialLinks {
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+}
+.contactInfo a {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+.contactSectionContainer h1 {
+  color: #0b24f5;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #0b24f5;
+}
+
+.socialLinks img:hover {
+  filter: invert(100%);
+}
+footer {
+  display: flex;
+  /* width: 1512px;
+  height: 114px; */
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: #ff4575;
+  color: white;
+  white-space: nowrap;
+}
+.loopName {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26.038px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 37.874px; /* 145.455% */
+  animation: moveX 5s linear infinite;
+}
+@keyframes moveX {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+  101% {
+    transform: translateX(-100%);
+  }
+}
+.loopName:hover {
+  animation-play-state: paused;
+}
