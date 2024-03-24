@@ -1,4 +1,5 @@
 import { ProjectCard } from './ProjectCard'
+import './projectSection.css'
 import { useState, useEffect } from 'react'
 export const ProjectsSection = () => {
   const [projectList, setProjectList] = useState([])
@@ -16,7 +17,7 @@ export const ProjectsSection = () => {
       .catch((error) => console.error(error))
   }, [projectList])
   return (
-    <div>
+    <div className="projectsContainer">
       <h1 className="projectSectionTitle">Featured Projects</h1>
       <ProjectCard projectList={projectList} />
     </div>

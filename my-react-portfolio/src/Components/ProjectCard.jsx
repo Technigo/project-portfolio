@@ -2,6 +2,7 @@ import liveDemoIcon from './Live Demo.svg'
 import gitHubIcon from './github.svg'
 import { Image } from './Image'
 import { Tag } from './Tag'
+import './projectCard.css'
 
 export const ProjectCard = ({ projectList }) => {
   return (
@@ -9,11 +10,13 @@ export const ProjectCard = ({ projectList }) => {
       {projectList.map(
         (items) =>
           items.homepage && (
-            <div key={items.id}>
-              <Image />
-              <h2>{items.name}</h2>
-              <p>{items.description}</p>
-              <Tag />
+            <div className="projectCard" key={items.id}>
+              <Image items={items} />
+              <div className="projectTextWrapper">
+                <h2>{items.name}</h2>
+                <p>{items.description}</p>
+                <Tag items={items} />
+              </div>
               <a href={items.html_url}>
                 <img src={liveDemoIcon} alt="github-icon" />
                 Live Demo
