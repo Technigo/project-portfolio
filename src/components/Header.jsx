@@ -1,9 +1,9 @@
-import "../src/styling/header.css"
+import "../styling/header.css"
 
 export const Header = () => {
 	return (
 		<div className='header-container'>
-			<p>Hi, I&aposm Nathalie Tu</p>
+			<p>Hi, I&apos;m Nathalie Tu</p>
 			<h1>SEO Consultant & Frontend Developer</h1>
 			<div className='person-container'>
 				<img src='' alt='Portrait of Nathalie Tu' />
