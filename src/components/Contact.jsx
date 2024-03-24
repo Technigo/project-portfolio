@@ -6,7 +6,7 @@ import { Portrait } from "./Portrait"
 
 export const Contact = () => {
 	return (
-		<div className='contant-container'>
+		<div className='contact-container'>
 			<h2>How to reach me</h2>
 			<Portrait />
 			<p>Nathalie Tu</p>
