@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import repoImages from './images-tags.json'
+import repoImages from '../images-tags.json'
 import './images.css'
 
 export const Image = ({ items }) => {

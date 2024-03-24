@@ -30,7 +30,7 @@ export const ContactSection = () => {
       <footer>
         <h2 className="loopName">
           Vittoria Matteoli • Frontend Developer • Vittoria Matteoli • Frontend
-          Developer • Vittoria Matteoli • Frontend Developer{' '}
+          Developer • Vittoria Matteoli • Frontend Developer
         </h2>
       </footer>
     </div>
