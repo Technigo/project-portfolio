@@ -1,5 +1,5 @@
 import "../styling/contact.css"
-import linkedinLogo from "../assets/linkedin-grey.svg"
+import linkedinIcon from "../assets/linkedin-grey.svg"
 
 export const Contact = () => {
 	return (
@@ -8,7 +8,7 @@ export const Contact = () => {
 			<p>Nathalie Tu</p>
 			<div className='social-links'>
 				<a href='https://www.linkedin.com/in/nathalie-tu/'>
-					<img src={linkedinLogo} alt='Linkedin icon' />
+					<img src={linkedinIcon} alt='Linkedin icon' />
 				</a>
 			</div>
 		</div>
