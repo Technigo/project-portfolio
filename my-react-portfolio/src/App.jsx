@@ -5,7 +5,7 @@ import Projects from "../src/components/Projects.jsx"
 import Skills from "../src/components/Skills.jsx"
 import Contact from "../src/components/Contact.jsx"
 
-function App() {
+export const App = () => {
 	return (
 		<>
 			<Header />
