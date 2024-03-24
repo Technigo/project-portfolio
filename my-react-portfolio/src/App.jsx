@@ -1,6 +1,6 @@
 import { Introduction } from "./components/Introduction";
 import { Tech } from "./components/Tech";
-import { Project } from "./components/Project";
+import { Projects } from "./components/Project";
 import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 
@@ -11,7 +11,7 @@ export const App = () => {
     <div>
       <Introduction />
       <Tech />
-      <Project />
+      <Projects />
       {/* <Articles/> */}
       <Skills />
       <Contact />

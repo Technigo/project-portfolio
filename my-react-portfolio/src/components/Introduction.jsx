@@ -1,11 +1,13 @@
+import "./introduction.css";
+
 export const Introduction = () => {
   return (
     <section className="flex intro-section">
       <div className="flex intro-container">
         <div className="flex intro-image"></div>
         <div className="flex intro-wrapper">
-          <h2>Hi, I&#39;m Eliane Weber</h2>
-          <h1>Marketing Manager with coding skills</h1>
+          <h5>Hi, I&#39;m Eliane Weber</h5>
+          <h2 className="blue">Marketing Manager with coding skills</h2>
         </div>
         <div className="flex text-wrapper">
           <p>
@@ -19,7 +21,7 @@ export const Introduction = () => {
           </p>
         </div>
         <button>
-          <img src="..src/assets/arrow.svg" alt="scroll-down-button" />
+          <img src="../src/assets/arrow.svg" alt="scroll-down-button" />
         </button>
       </div>
     </section>
