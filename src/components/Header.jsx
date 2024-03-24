@@ -7,7 +7,7 @@ export const Header = () => {
 		<div className='header-container'>
 			<Portrait />
 			<div className='header-titles'>
-				<p>Hi, I&apos;m Nathalie</p>
+				<p>Hi, I&apos;m Nathalie.</p>
 				<h1>SEO Consultant & Junior Web Developer</h1>
 			</div>
 			<p className='intro-text'>
