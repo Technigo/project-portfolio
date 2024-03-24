@@ -9,7 +9,7 @@ export const Contact = () => {
 		<div className='contact-container'>
 			<h2>How to reach me</h2>
 			<Portrait />
-			<p>Nathalie Tu</p>
+			<p>@ohistnathalie</p>
 			<div className='social-links'>
 				<a href='https://www.linkedin.com/in/nathalie-tu/'>
 					<img className='icon' src={linkedinIcon} alt='Linkedin icon' />
