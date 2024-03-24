@@ -4,47 +4,17 @@
   </a>
 </h1>
 
-# Technigo - React Portfolio Project
+# Portfolio Project
 
-Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
+This is the last project in sprint 2 of the bootcamp.
+With this porftolio we showcase our project we created through out the past weeks.
 
 ## Instructions
+
 [Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
 
-## Set up your own version of your portfolio
+## The Problem
 
-We will use [Vite](https://vitejs.dev/guide/) to setup our project 😉
+## View it live
 
-```bash
-  npm create vite@latest my-react-portfolio --template
-```
-
-#### Follow this GIF to setup your project
-
-![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WEB/Sprint-2/week-8/vite-react_vjp0ep.gif)
-
-## Installation
-
-Use the `cd` command to move into the folder
-
-```bash
-  cd my-react-portfolio
-```
-
-Install the dependencies
-
-```bash
-  npm i
-```
-
-Open the project in a separate VS Code editor
-
-```bash
-  code .
-```
-
-Open up a terminal inside VS code and lets run the project in a local environment
-
-```bash
-  npm run dev
-```
+Here you can see my portfolio after deployment.
