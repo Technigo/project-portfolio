@@ -7,7 +7,7 @@ import { Portrait } from "./../miscellaneous/Portrait"
 export const Contact = () => {
 	return (
 		<div className='contact-container'>
-			<h2>How to reach me</h2>
+			<h2>Where to find me</h2>
 			<Portrait />
 			<p>@ohistnathalie</p>
 			<div className='social-links'>
