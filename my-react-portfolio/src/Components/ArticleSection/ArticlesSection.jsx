@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ArticleCard } from '../ArticleCard/ArticleCard'
-import Line from '../path-line.svg'
+
 import articleImages from '../article-images.json'
 import './articleSection.css'
 export const ArticlesSection = () => {
@@ -27,7 +27,6 @@ export const ArticlesSection = () => {
   }, [])
   return (
     <div className="articleSectionContainer">
-      <img src={Line} alt="divisor" />
       <h1>My Words</h1>
       <ArticleCard articles={articles} descriptions={descriptions} />
     </div>

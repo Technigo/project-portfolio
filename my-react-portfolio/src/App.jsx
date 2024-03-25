@@ -6,6 +6,7 @@ import { SkillSection } from './Components/SkillSection/SkillSection'
 import { ContactSection } from './Components/ContactSection/ContactSection'
 
 import './App.css'
+import Line from './path-line.svg'
 
 export const App = () => {
   return (
@@ -13,6 +14,9 @@ export const App = () => {
       <Introduction />
       <TechSection />
       <ProjectsSection />
+      <div className="lineContainer">
+        <img src={Line} className="wavyLine" alt="decorative line" />
+      </div>
       <ArticlesSection />
       <SkillSection />
       <ContactSection />
