@@ -21,7 +21,7 @@ export const Introduction = () => {
           </p>
         </div>
         <button>
-          <img src="../src/assets/arrow.svg" alt="scroll-down-button" />
+          <img src="../arrow.svg" alt="scroll-down-button" />
         </button>
       </div>
     </section>

@@ -14,13 +14,13 @@ export const Contact = () => {
           </div>
           <div className="social-wrapper">
             <button>
-              <img src="../src/assets/linkedin.svg" alt="linkedin-icon" />
+              <img src="../linkedin.svg" alt="linkedin-icon" />
             </button>
             <button>
-              <img src="../src/assets/instagram.svg" alt="instagram-icon" />
+              <img src="../instagram.svg" alt="instagram-icon" />
             </button>
             <button>
-              <img src="../src/assets/github.svg" alt="github-icon" />
+              <img src="../github.svg" alt="github-icon" />
             </button>
           </div>
         </div>
