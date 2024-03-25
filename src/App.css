@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@300;500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap")
 html {
   box-sizing: border-box;
 }
@@ -19,6 +19,101 @@ body {
   line-height: 1.6;
 }
 
+body {
+  margin: 0;
+}
+
+.intro {
+  display: grid;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
+  grid-template-areas:
+    "avatar"
+    "name"
+    "role"
+    "bio"
+    "arrow";
+  padding: 16px;
+}
+
+.name {
+  grid-area: name;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+.role {
+  grid-area: role;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #0b24f5;
+  margin: 0;
+  line-height: 1;
+  margin-bottom: 32px;
+}
+
+.avatar {
+  border-radius: 50%;
+  grid-area: avatar;
+  max-width: 164px;
+  justify-self: center;
+  margin-bottom: 32px;
+}
+
+.bio {
+  grid-area: bio;
+  font-family: Hind, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.2px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.arrow {
+  grid-area: arrow;
+  justify-self: center;
+}
+
+@media (min-width: 745px) {
+  .intro {
+    grid-template-columns: 164px 1fr;
+    grid-template-areas:
+      "name name"
+      "role role"
+      "avatar bio"
+      "arrow arrow";
+    max-width: 958px;
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: 29px;
+  }
+
+  .role {
+    font-size: 56px;
+  }
+
+  .bio {
+    margin-left: 16px;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1281px) {
+  .name {
+    font-size: 32px;
+  }
+
+  .role {
+    font-size: 80px;
+  }
+}
+
+/* 
 .home {
   background-color: #94f7aa;
 }
@@ -227,4 +322,4 @@ footer {
 
 a:hover {
   color: #fce803;
-}
+} */
