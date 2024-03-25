@@ -1,7 +1,7 @@
 import globe from "../../assets/globe-black.svg"
 import github from "../../assets/github-black.svg"
 
-export const ProjectButton = ({ svn_url, homepage }) => {
+export const ProjectButton = ({ githubURL, homepage }) => {
 	return (
 		<>
 			<div className='globe'>
@@ -13,7 +13,7 @@ export const ProjectButton = ({ svn_url, homepage }) => {
 				</a>
 			</div>
 			<div className='github'>
-				<a href={svn_url} target='_blank'>
+				<a href={githubURL} target='_blank'>
 					<button className='github-btn'>
 						<img src={github} alt='Github icon' />
 						<p>View the code</p>

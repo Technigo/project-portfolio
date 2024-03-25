@@ -1,4 +1,4 @@
-import { ProjectElement } from "./ProjectElement.jsx"
+import { ProjectText } from "./ProjectText.jsx"
 import "../../styling/projects.css"
 import { useEffect, useState } from "react"
 
@@ -23,7 +23,6 @@ export const Projects = () => {
 				)
 			}
 		}
-
 		fetchRepos()
 	}, [])
 
@@ -34,7 +33,7 @@ export const Projects = () => {
 				{repos &&
 					repos.map((repo) => {
 						return (
-							<ProjectElement
+							<ProjectText
 								key={repo.id}
 								name={repo.name}
 								description={repo.description}
