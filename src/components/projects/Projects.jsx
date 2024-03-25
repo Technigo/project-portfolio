@@ -1,6 +1,6 @@
 import { ProjectElement } from "./ProjectElement.jsx"
 import "../styling/projects.css"
-// import projects from "projects.json"
+// use github API https://api.github.com/users/ohitsnathalie/repos
 
 export const Projects = () => {
 	return (

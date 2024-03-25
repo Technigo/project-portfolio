@@ -2,7 +2,7 @@ import "../styling/contact.css"
 import linkedinIcon from "../assets/linkedin-grey.svg"
 import githubIcon from "../assets/github-grey.svg"
 import instagramIcon from "../assets/instagram-grey.svg"
-import { Portrait } from "./Portrait"
+import { Portrait } from "../miscellaneous/Portrait"
 
 export const Contact = () => {
 	return (
