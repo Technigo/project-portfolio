@@ -1,5 +1,5 @@
 import { ProjectElement } from "./ProjectElement.jsx"
-import "../styling/projects.css"
+import "../../styling/projects.css"
 // use github API https://api.github.com/users/ohitsnathalie/repos
 
 export const Projects = () => {

@@ -1,6 +1,6 @@
-import "../styling/header.css"
+import "../../styling/header.css"
 import { Portrait } from "../miscellaneous/Portrait"
-import arrowDown from "../assets/Vector 1.png"
+import arrowDown from "../../assets/Vector 1.png"
 
 export const Header = () => {
 	return (

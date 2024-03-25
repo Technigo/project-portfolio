@@ -1,4 +1,4 @@
-import "../styling/lead.css"
+import "../../styling/lead.css"
 
 export const Lead = () => {
 	return (
