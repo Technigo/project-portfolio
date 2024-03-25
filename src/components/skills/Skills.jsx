@@ -1,4 +1,4 @@
-import "../styling/skills.css"
+import ".../styling/skills.css"
 
 export const Skills = () => {
 	return (
