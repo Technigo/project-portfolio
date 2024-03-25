@@ -1,6 +1,6 @@
 import { Introduction } from "./components/Introduction";
 import { Tech } from "./components/Tech";
-import { Projects } from "./components/Project";
+import { Projects } from "./components/projects/Projects";
 import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 
