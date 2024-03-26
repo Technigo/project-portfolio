@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Intro } from "./Intro";
 import "./App.css";
+import { Tech } from "./Tech";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,6 +10,7 @@ function App() {
     <>
       <main>
         <Intro />
+        <Tech />
 
         {/* <section className="skills-container">
           <h2 className="my-skills">Skills:</h2>
