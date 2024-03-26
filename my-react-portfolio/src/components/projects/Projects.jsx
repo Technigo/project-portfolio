@@ -2,8 +2,8 @@ import "./projects.css";
 import { SingleProject } from "./SingleProject";
 import { useState, useEffect } from "react";
 
+//fetching data from personal github API
 export const Projects = () => {
-  // Corrected initialization of state
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
