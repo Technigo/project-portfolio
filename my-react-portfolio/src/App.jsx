@@ -1,18 +1,26 @@
 import './App.css'
+import { Header } from './assets/components/Header'
 import { Introduction } from './assets/components/Introduction'
 import { Tech } from './assets/components/Tech'
-import { IndividualProject } from './assets/components/FeaturedProjects/IndividualProject'
+import { FeaturedProjects } from './assets/components/FeaturedProjects/FeaturedProjects'
+import { MyWords } from './assets/components/myWords/MyWords'
+import { Skills } from './assets/components/Skills'
+import { Contact } from './assets/components/Contact'
+
 
 export const App = () => {
   
   return (
     <>
       <main>
+        <Header />
         <Introduction />
         <Tech />
-        <IndividualProject />
+        <FeaturedProjects />
+        <MyWords />
+        <Skills />
+        <Contact />
       </main>
-      
     </>
   )
 }
