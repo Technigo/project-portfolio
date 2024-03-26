@@ -1,15 +1,17 @@
 /* eslint-disable react/prop-types */
+import "./projects.css";
 
 //access data from Projects.jsx via props
 export const SingleProject = ({ projects }) => {
   return (
-    <div>
+    <>
       {projects.map(
         (dataset) =>
-          //only render projects that contain homepage, and exclude gihub in homepage so that Github profile repo is not showing
+          //only render projects that contain homepage and exclude gihub in homepage so that Github profile repo is not showing
           dataset.homepage &&
           !dataset.homepage.includes("github") && (
-            <div key={dataset.id}>
+            <div className="flex singleproject-card" key={dataset.id}>
+              <div className="image-wrapper">Bild</div>
               <h2>{dataset.name}</h2>
               <p>{dataset.description}</p>
               <p>{dataset.topics}</p>
@@ -18,6 +20,6 @@ export const SingleProject = ({ projects }) => {
             </div>
           )
       )}
-    </div>
+    </>
   );
 };
