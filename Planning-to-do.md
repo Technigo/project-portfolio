@@ -1,3 +1,7 @@
+### Planning and general thoughts
+All text is Montserrat, except for paragraphs which is Hind
+
+
 ### Requirements
 - Your portfolio should have components and props
 - Your portfolio should contain:

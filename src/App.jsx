@@ -1,11 +1,11 @@
-import { Intro } from "./components/Intro"
-import { Tech } from "./components/Tech"
-import { Projects } from "./components/Projects"
-import { MyWords } from "./components/MyWords"
-import { Skills } from "./components/Skills"
-import { Contact } from "./components/Contact"
-import { Banner } from "./components/Banner"
-import { ProfilePicture } from "./components/ProfilePicture"
+import { Intro } from "./components/sections/Intro"
+import { Tech } from "./components/sections/Tech"
+import { Projects } from "./components/sections/Projects"
+import { MyWords } from "./components/sections/Articles"
+import { Skills } from "./components/sections/Skills"
+import { Contact } from "./components/sections/Contact"
+import { Banner } from "./components/sections/Banner"
+import { ProfilePicture } from "./components/sections/ProfilePicture"
 import "./App.css"
 
 export const App = () => {
@@ -22,4 +22,3 @@ export const App = () => {
     </div>
   )
 }
-
