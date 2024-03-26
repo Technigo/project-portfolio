@@ -3,7 +3,7 @@ export const ArrowDown = () => {
     <div className="arrow-down">
       <img
         className="arrow-down"
-        src="./src/assets/arrow.svg"
+        src="./src/assets/arrow.png"
         alt="profile picture of alma"
       />
     </div>
