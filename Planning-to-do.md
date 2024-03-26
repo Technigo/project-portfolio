@@ -1,9 +1,9 @@
 ### Next up To do:
 
-- correct size on all text (do on paper later)
 - github API
 - articles json
--
+- responsiveness
+- details like hovering etc.
 
 ### Planning and general thoughts
 
