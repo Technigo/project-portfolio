@@ -1,3 +1,5 @@
+import { ProjectPhoto } from "../reusable/ProjectPhoto"
+
 export const Projects = () => {
   return (
     <div className="projects">
@@ -5,6 +7,7 @@ export const Projects = () => {
       <p>
         Here all the projects will be featured. Maybe in different components?
       </p>
+      <ProjectPhoto />
     </div>
   )
 }

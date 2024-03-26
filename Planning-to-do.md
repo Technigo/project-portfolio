@@ -1,9 +1,16 @@
 ### Next up To do:
 
-- github API
-- articles json
+- Style article cards
+- Style project cards
+- Style buttons
+- Style tags
+
+- get github API
+- make articles json
+
 - responsiveness
 - details like hovering etc.
+- make sure images are deployed
 
 ### Planning and general thoughts
 

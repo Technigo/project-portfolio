@@ -9,9 +9,7 @@ export const Skills = () => {
             <li>HTML5</li>
             <li>CSS3</li>
             <li>Javascript ES6</li>
-            <li>React</li>
-            <li>Styled Components</li>
-            <li>GitHub</li>
+            <li>ReactJS</li>
           </ul>
         </div>
         <div className="skill-toolbox">
@@ -19,21 +17,27 @@ export const Skills = () => {
           <ul>
             <li>Postman</li>
             <li>Figma</li>
-            <li>Slack</li>
+            <li>Styled Components</li>
+            <li>RESTful API</li>
+            <li>GitHub</li>
           </ul>
         </div>
         <div className="skill-upcoming">
           <h3>Upcoming</h3>
           <ul>
-            <li>Node.js</li>
+            <li>NodeJS</li>
+            <li>Redux</li>
+            <li>MongoDB</li>
+            <li>Express</li>
           </ul>
         </div>
         <div className="skill-more">
           <h3>More</h3>
           <ul>
-            <li>Power BI</li>
-            <li>Excel</li>
-            <li>Agile methodology</li>
+            <li>Agile Methodology</li>
+            <li>Pair Programming</li>
+            <li>Responsive Design</li>
+            <li>Web Accessibility</li>
           </ul>
         </div>
       </div>
