@@ -4,7 +4,8 @@ export const ProfilePicture = () => {
       <img
         className="profile-img"
         src="./src/assets/profilepic.png"
-        alt="profile picture of alma"></img>
+        alt="profile picture of alma"
+      />
     </div>
   )
 }

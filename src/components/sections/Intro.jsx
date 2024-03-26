@@ -1,3 +1,5 @@
+import { ArrowDown } from "../reusable/ArrowDown"
+
 export const Intro = () => {
   return (
     <div className="intro">
@@ -10,6 +12,7 @@ export const Intro = () => {
         my attention to detail and problem-solving skills to create
         user-friendly digital experiences.
       </p>
+      <ArrowDown />
     </div>
   )
 }
