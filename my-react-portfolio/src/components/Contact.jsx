@@ -9,8 +9,8 @@ export const Contact = () => {
           <div className="flex intro-image"></div>
           <div className="flex contact-wrapper">
             <h4>Eliane Weber</h4>
-            <h4>+41 78 824 64 39</h4>
-            <h4>eliane.weber@yahoo.com</h4>
+            <h4>+41 99 111 22 33</h4>
+            <h4>example@example.com</h4>
           </div>
           <div className="social-wrapper">
             <button>
