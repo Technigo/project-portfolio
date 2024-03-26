@@ -13,7 +13,7 @@ export const ProjectCard = ({ projectList }) => {
             <div className="projectCard" key={items.id}>
               <Image items={items} />
               <div className="projectTextWrapper">
-                <h2>{items.name}</h2>
+                <h2>{items.name.replace(/-/g, ' ')}</h2>
                 <p>{items.description}</p>
                 <div id="tagsContainer">
                   {items.topics.map((topic, index) => (
