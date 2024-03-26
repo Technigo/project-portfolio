@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import "./projects.css";
 
+import images from "./images.json";
+
 //access data from Projects.jsx via props
 export const SingleProject = ({ projects }) => {
   return (
@@ -11,7 +13,15 @@ export const SingleProject = ({ projects }) => {
           dataset.homepage &&
           !dataset.homepage.includes("github") && (
             <div className="flex singleproject-card" key={dataset.id}>
-              <div className="image-wrapper">Bild</div>
+              <div className="image-wrapper">
+                <img
+                  src={
+                    images.find((img) => img.projectName === dataset.name)
+                      ?.imageUrl || "" // Fallback for missing image
+                  }
+                  alt={dataset.name} // Use project name as alt text
+                />
+              </div>
               <h2>{dataset.name}</h2>
               <p>{dataset.description}</p>
               <p>{dataset.topics}</p>
@@ -23,3 +33,9 @@ export const SingleProject = ({ projects }) => {
     </>
   );
 };
+
+// Function to get image URL based on project name from images.json
+// const getImage = (projectName) => {
+//   const image = images.find((img) => img.projectName === projectName);
+//   return image ? `/images/${image.imageUrl}` : "";
+// };
