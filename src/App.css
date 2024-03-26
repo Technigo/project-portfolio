@@ -1,8 +1,4 @@
 /*General styling*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
 
 :root {
   --color-1: #0b24f5;
@@ -26,6 +22,16 @@
   --french-rose: #f44174ff;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /*Fonts*/
 .hind,
 li {
@@ -43,13 +49,24 @@ h3 {
   padding-top: 50px;
 }
 
-.intro,
 .tech,
 .projects,
-.articles,
 .skills,
 .contact {
-  padding: 15px;
+  padding: 80px 15px;
+}
+
+.title {
+  font-size: 56px;
+}
+
+/*Intro styling*/
+.intro {
+  padding: 10px 15px 80px 15px;
+}
+
+.intro p {
+  font-size: 18px;
 }
 
 /*Profile pic styling*/
@@ -97,9 +114,25 @@ li {
   background-color: var(--color-1);
 }
 
+.tech p {
+  font-size: 24px;
+}
+
 /*Articles styling*/
 .articles {
   background-color: var(--color-3);
+}
+
+.articles-container {
+  padding: 80px 15px;
+}
+
+.wavy-line {
+  height: 10px;
+  width: 100%;
+  background: url(/src/assets/wavyline.svg) center/auto 100%;
+  top: -6px;
+  position: relative;
 }
 
 /*Skills styling*/
@@ -111,11 +144,13 @@ li {
 ul {
   list-style-type: none;
   padding: 0;
+  font-size: 18px;
 }
 
 .skill-container h3 {
   width: fit-content;
   display: inline-block;
+  font-size: 24px;
 }
 
 .skill-code h3 {
@@ -132,6 +167,13 @@ ul {
 
 .skill-more h3 {
   background-color: var(--color-7);
+}
+
+/*Contact styling*/
+.contact p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }
 
 /*Banner styling*/

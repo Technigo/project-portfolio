@@ -1,7 +1,6 @@
 ### Next up To do:
 
-- Center all h2
-- correct size on all text
+- correct size on all text (do on paper later)
 - github API
 - articles json
 -
