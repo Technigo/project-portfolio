@@ -2,6 +2,7 @@
 import "./projects.css";
 
 import images from "./images.json";
+import { ProjectImage } from "./ProjectImage";
 
 //access data from Projects.jsx via props
 export const SingleProject = ({ projects }) => {
@@ -13,15 +14,17 @@ export const SingleProject = ({ projects }) => {
           dataset.homepage &&
           !dataset.homepage.includes("github") && (
             <div className="flex singleproject-card" key={dataset.id}>
-              <div className="image-wrapper">
+              <ProjectImage projectName={dataset.name} images={images} />{" "}
+              {/* Pass props */}
+              {/* <div className="image-wrapper">
                 <img
                   src={
                     images.find((img) => img.projectName === dataset.name)
-                      ?.imageUrl || "" // Fallback for missing image
+                      ?.imageUrl || "" // Fallback for missing image?? define this in json file??
                   }
-                  alt={dataset.name} // Use project name as alt text
+                  alt={dataset.name} 
                 />
-              </div>
+              </div> */}
               <h2>{dataset.name}</h2>
               <p>{dataset.description}</p>
               <p>{dataset.topics}</p>
