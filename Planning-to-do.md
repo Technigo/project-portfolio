@@ -1,6 +1,25 @@
 ### Planning and general thoughts
 All text is Montserrat, except for paragraphs which is Hind
 
+### Färger
+1. Mörkblå 
+- h1 (intro, projects, let's talk) 
+- bakgrund (tech, skills)
+- border projects
+
+2. Mörkrosa
+- h1 (articles)
+- border articles
+- pil intro
+- wavy border articles
+- background banner
+
+3. Ljusrosa 
+- background articles
+
+4. Mörkrosa, ljusblå, grön, gul
+- bakgrund h3 skills
+
 
 ### Requirements
 - Your portfolio should have components and props

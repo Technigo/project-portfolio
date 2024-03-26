@@ -10,15 +10,17 @@ import "./App.css"
 
 export const App = () => {
   return (
-    <div className="app-container">
-      <Intro />
-      <ProfilePicture />
-      <Tech />
-      <Projects />
-      <MyWords />
-      <Skills />
-      <Contact />
+    <>
+      <div className="app-container">
+        <ProfilePicture />
+        <Intro />
+        <Tech />
+        <Projects />
+        <MyWords />
+        <Skills />
+        <Contact />
+      </div>
       <Banner />
-    </div>
+    </>
   )
 }
