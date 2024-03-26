@@ -1,8 +1,7 @@
 // import { useState } from "react";
-import { Header } from "./components/Header";
 import { Profile } from "./components/Profile";
 import { Tech } from "./components/Tech";
-import { Projects } from "./components/Projects";
+import { Projectlist } from "./components/Projectlist";
 import { Words } from "./components/Words";
 import { Skills } from "./components/Skills";
 import { Talk } from "./components/Talk";
@@ -13,10 +12,9 @@ export const App = () => {
   return (
     <>
       <div className="App">
-        <Header />
         <Profile />
         <Tech />
-        <Projects />
+        <Projectlist />
         <Words />
         <Skills />
         <Talk />
