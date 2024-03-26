@@ -69,6 +69,15 @@ h3 {
   font-size: 18px;
 }
 
+.intro h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.intro h3 {
+  font-size: 18px;
+}
+
 /*Profile pic styling*/
 .profile-picture {
   display: flex;
@@ -82,23 +91,11 @@ h3 {
   margin-bottom: 20px;
 }
 
-.intro h2 {
-  font-size: 32px;
-}
-
-.intro h3 {
-  font-size: 18px;
-}
-
-/*Titles styling*/
-.intro h2,
+/*Titles font color*/
+.intro h1,
 .projects h2,
 .contact h2 {
   color: var(--color-1);
-}
-
-.articles h2 {
-  color: var(--color-2);
 }
 
 .skills h2,
@@ -123,6 +120,10 @@ li {
   background-color: var(--color-3);
 }
 
+.articles h2 {
+  color: var(--color-2);
+}
+
 .articles-container {
   padding: 80px 15px;
 }
@@ -131,7 +132,7 @@ li {
   height: 10px;
   width: 100%;
   background: url(/src/assets/wavyline.svg) center/auto 100%;
-  top: -6px;
+  top: -5px;
   position: relative;
 }
 
@@ -147,10 +148,16 @@ ul {
   font-size: 18px;
 }
 
+.skills h2 {
+  margin-bottom: 0;
+}
+
 .skill-container h3 {
   width: fit-content;
   display: inline-block;
   font-size: 24px;
+  color: white;
+  margin: 50px 0 10px 0;
 }
 
 .skill-code h3 {
@@ -167,6 +174,7 @@ ul {
 
 .skill-more h3 {
   background-color: var(--color-7);
+  color: var(--color-1);
 }
 
 /*Contact styling*/
@@ -194,7 +202,7 @@ ul {
 
 .rolling-text {
   white-space: nowrap;
-  animation: moveLeftToRight 60s linear infinite -10s;
+  animation: moveLeftToRight 60s linear infinite;
 }
 
 @keyframes moveLeftToRight {

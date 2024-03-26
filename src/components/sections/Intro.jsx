@@ -2,7 +2,7 @@ export const Intro = () => {
   return (
     <div className="intro">
       <h3>Hi, I'm Alma Herrström</h3>
-      <h2>Frontend Developer</h2>
+      <h1>Frontend Developer</h1>
       <p className="hind">
         I'm merging my background in financial audit with a passion for web
         development. Currently in a fast-paced web development boot camp

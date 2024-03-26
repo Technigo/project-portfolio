@@ -5,7 +5,7 @@ import { MyWords } from "./components/sections/Articles"
 import { Skills } from "./components/sections/Skills"
 import { Contact } from "./components/sections/Contact"
 import { Banner } from "./components/sections/Banner"
-import { ProfilePicture } from "./components/sections/ProfilePicture"
+import { ProfilePicture } from "./components/reusable/ProfilePicture"
 import "./App.css"
 
 export const App = () => {
