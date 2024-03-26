@@ -21,7 +21,11 @@ export const Portfolio = () => {
         return response.json();
       })
       .then((data) => {
-        setRepositories(data);
+        // Sort the repositories based on the created_at date with newest first
+        const sortedRepositories = data.sort(
+          (a, b) => new Date(b.created_at) - new Date(a.created_at)
+        );
+        setRepositories(sortedRepositories);
       })
       .catch((error) => {
         setError(error.message); // Set error message in state

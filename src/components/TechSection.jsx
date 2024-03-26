@@ -1,11 +1,10 @@
 import "./TechSection.css";
+import Heading from "./Heading";
 
 export const TechSection = () => {
   return (
     <div className="tech-section">
-      <div className="tech-title">
-        <h2>Tech</h2>
-      </div>
+      <Heading text="Tech" />
       <p className="tech-text">
         HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js,
         Mongo DB, Web Accessibility, API:s, <br />
