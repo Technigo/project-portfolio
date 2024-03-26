@@ -1,7 +1,13 @@
-import { Tags } from "./Tags.jsx"
-import { ProjectButton } from "./ProjectButtons.jsx"
-import { ProjectImage } from "./ProjectImage.jsx"
+export const ProjectText = ({ title, description }) => {
+	const projectTypography = {
+		title: title.replaceAll("-", " ").toUpperCase(),
+		description: description,
+	}
 
-export const ProjectText = ({ name, description, topics }) => {
-	const projectTitle = name.replaceAll("-", " ")
+	return (
+		<div className='project-text'>
+			<h3>{projectTypography.title}</h3>
+			<p>{projectTypography.description}</p>
+		</div>
+	)
 }
