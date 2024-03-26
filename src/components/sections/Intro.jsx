@@ -1,4 +1,4 @@
-import { GoArrowDown } from "react-icons/go"
+import { HiArrowDown } from "react-icons/hi"
 
 export const Intro = () => {
   return (
@@ -12,7 +12,7 @@ export const Intro = () => {
         my attention to detail and problem-solving skills to create
         user-friendly digital experiences.
       </p>
-      <GoArrowDown className="go-arrow-down"/>
+      <HiArrowDown className="arrow-down" />
     </div>
   )
 }
