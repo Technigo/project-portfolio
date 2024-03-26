@@ -40,7 +40,16 @@ h3 {
 
 /*Overall app styling*/
 .app-container {
-  margin: 50px 15px;
+  padding-top: 50px;
+}
+
+.intro,
+.tech,
+.projects,
+.articles,
+.skills,
+.contact {
+  padding: 15px;
 }
 
 /*Profile pic styling*/
@@ -56,6 +65,14 @@ h3 {
   margin-bottom: 20px;
 }
 
+.intro h2 {
+  font-size: 32px;
+}
+
+.intro h3 {
+  font-size: 18px;
+}
+
 /*Titles styling*/
 .intro h2,
 .projects h2,
@@ -63,9 +80,58 @@ h3 {
   color: var(--color-1);
 }
 
+.articles h2 {
+  color: var(--color-2);
+}
+
+.skills h2,
+.tech h2,
+.tech p,
+li {
+  color: white;
+}
+
+/*Tech styling*/
+.tech,
+.skills {
+  background-color: var(--color-1);
+}
+
+/*Articles styling*/
+.articles {
+  background-color: var(--color-3);
+}
+
 /*Skills styling*/
+
+.skills {
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
+  padding: 0;
+}
+
+.skill-container h3 {
+  width: fit-content;
+  display: inline-block;
+}
+
+.skill-code h3 {
+  background-color: var(--color-4);
+}
+
+.skill-toolbox h3 {
+  background-color: var(--color-5);
+}
+
+.skill-upcoming h3 {
+  background-color: var(--color-6);
+}
+
+.skill-more h3 {
+  background-color: var(--color-7);
 }
 
 /*Banner styling*/
@@ -75,8 +141,8 @@ ul {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background-color: var(--light-orange);
-  color: var(--bittersweet);
+  background-color: var(--color-2);
+  color: white;
   width: 100%;
   height: 114px;
   font-family: "Montserrat", sans-serif;
@@ -98,10 +164,4 @@ ul {
   }
 }
 
-/*Media queries 
-
-Skills styling
-.skill-container {
-    display: flex;
-    justify-content: space-evenly;
-  }*/
+/*Media queries*/
