@@ -8,11 +8,11 @@ export const ProjectWrapper = ({projectImg, projectName, projectTags, demoLink, 
             <p className="about">{about}</p>
             <p className="tag">{projectTags}</p>
             <p>
-                <span className="demoLink">{demoLink}</span><span className="codeLink">{codeLink}</span>
+                <span className="link-btn"><a href={demoLink}><img src="../../../public/icons/liveDemo.svg"/>Live demo</a></span>
+                <span className="link-btn"><a href={codeLink}><img src="../../../public/icons/viewTheCode.svg"/>View the code</a></span>
             </p>
         </div>
-        </>
-        
+        </> 
     )
 }
 //img -> component

@@ -11,8 +11,6 @@ export const Contact = () => {
                 <img src="../../../public/icons/gitHub.svg" />
                 <img src="../../../public/icons/instagram.svg"/>
             </div>
-            
         </div>
     )
-
 }
