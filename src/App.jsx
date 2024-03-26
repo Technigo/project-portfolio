@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Intro } from "./Intro";
 import "./App.css";
 import { Tech } from "./Tech";
+import { FeaturedProjects } from "./FeaturedProjects";
+import theDailySleep from "./assets/the-daily-sleep.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,6 +13,19 @@ function App() {
       <main>
         <Intro />
         <Tech />
+        <FeaturedProjects
+          projects={[
+            {
+              title: "The Daily Sleep",
+              image: theDailySleep,
+              alt: "screenshots of the daily sleep website on a mobile device, a tablet, and a desktop monitor",
+              description: "A news site.",
+              demoUrl: "",
+              codeUrl: "",
+              tech: ["HTML", "CSS"],
+            },
+          ]}
+        />
 
         {/* <section className="skills-container">
           <h2 className="my-skills">Skills:</h2>
