@@ -3,8 +3,8 @@ export const projectsData = [
     imagePath: "/images/gengo.webp",
     title: "Gengo",
     text: {
-      en: "This is a flashcard fullstack app. I tried to go as far as I can with technologies that are new to me (such as, Recoil, React Query, zod ...) and more advanced archtecture that is a feature based archtecture. Moreover, as my final goal is to build this app with Next App Router with SSR, so that is now under construction!",
-      ja: "フラッシュカードのアプリです。Coding bootcampのファイナルプロジェクトとして作りました。バックエンドは MongoDB, Express, Mongoose, Node.jsで、フロントエンドは Reactで作っています。私は、どうしてもこのプロジェクトを　Next.jsで作りたいと考えるので、現在作成中です。",
+      en: "This is a flashcard fullstack app. I tried to go as far as I can with technologies that are new to me (such as, Recoil, React Query, zod ...) and more advanced archtecture that is a feature based archtecture.",
+      ja: "フラッシュカードのアプリです。Coding bootcampのファイナルプロジェクトとして作りました。バックエンドは MongoDB, Express, Mongoose, Node.jsで、フロントエンドは Reactで作っています。",
     },
     skills: ["Tailwind", "TypeScript", "React", "React-Query", "Recoil", "MongoDB", "Express"],
     gitUrl: "https://github.com/sansan-sakura/GENGO",
@@ -42,6 +42,39 @@ export const projectsData = [
     skills: ["React", "Zustand", "SCSS"],
     gitUrl: "https://github.com/sansan-sakura/SaKu-Trivia",
     demoUrl: "https://saku-trivia.netlify.app/",
+  },
+  {
+    imagePath: "/images/happy-thoughts.webp",
+    title: "Happy Thoughts",
+    text: {
+      en: "This is a Twitter-like APP. You can post your happy thoughts and click the like button to like other people's posts.",
+      ja: "ツイッターのようなアプリです。自分をハッピーにしてくれていることを投稿してみてください！他の投稿にいいねもできます。",
+    },
+    skills: ["HTML", "CSS", "React"],
+    gitUrl: "https://github.com/sansan-sakura/project-happy-thoughts-vite",
+    demoUrl: "https://happy-thoughs.netlify.app/",
+  },
+  {
+    imagePath: "/images/weatherapp.webp",
+    title: "Weather App",
+    text: {
+      en: "This is a vanilla JavaScript weather application. You can add and remove cities. The data is stored locally, so when you come back to the app, you can still see the weather focus from the cities of your choice.",
+      ja: "天気予報のアプリです。天気を知りたい場所の名前を検索すると、その後５日間の天気予報が出てきます。",
+    },
+    skills: ["HTML", "CSS", "JavaScript"],
+    gitUrl: "https://github.com/sansan-sakura/project-weather-app",
+    demoUrl: "https://sakura-world-weather-app.netlify.app/",
+  },
+  {
+    imagePath: "/images/legz.webp",
+    title: "Legz",
+    text: {
+      en: "This project is a collaboration with a UX/UI student from Technigo. This design was created by Thomas Read. ",
+      ja: "UX/UIのTechnigoの学生とのコラボ作品です。できるだけデザイナーの意向に添えるように、細かいところまで再現しました。",
+    },
+    skills: ["React", "Content API", "SCSS"],
+    gitUrl: "https://github.com/sansan-sakura/project-Legz",
+    demoUrl: "https://legz.netlify.app/",
   },
   {
     imagePath: "/images/berlin.webp",
