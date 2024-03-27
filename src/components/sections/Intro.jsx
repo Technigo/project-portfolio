@@ -1,6 +1,11 @@
 import { HiArrowDown } from "react-icons/hi"
 
 export const Intro = () => {
+  const scrollToTechSection = () => {
+    const techSection = document.getElementById("tech-section")
+    techSection.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <div className="intro">
       <h3>Hi, I'm Alma Herrström</h3>
@@ -12,7 +17,9 @@ export const Intro = () => {
         my attention to detail and problem-solving skills to create
         user-friendly digital experiences.
       </p>
-      <HiArrowDown className="arrow-down" />
+      <a onClick={scrollToTechSection}>
+        <HiArrowDown className="arrow-down" />
+      </a>
     </div>
   )
 }

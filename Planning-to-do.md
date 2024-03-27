@@ -12,6 +12,8 @@
 - details like hovering etc.
 - make sure images are deployed
 
+- og tags
+
 ### Planning and general thoughts
 
 All text is Montserrat, except for paragraphs which is Hind
