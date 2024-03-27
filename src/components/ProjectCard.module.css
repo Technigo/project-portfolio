@@ -1,7 +1,6 @@
 /* CSS style for ProjectCard.jsx */
 .container {
-  /* Rectangle 5 */
-  width: 400px;
+  width: 250px;
   margin: 20px;
   background: #ffffff;
   box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
@@ -13,21 +12,20 @@
 }
 
 .imgContainer {
-  width: 400px;
-  height: 300px;
+  width: 250px;
+  height: calc(250px * 3 / 4);
   overflow: hidden;
   border-radius: 20px 20px 0 0;
 }
 
 .imgContainer > * {
-  width: 400px;
-  height: 280px;
+  width: 250px;
+  height: calc(250px * 7 / 10);
 }
 
 .description {
   padding: 0 20px;
   word-wrap: break-word;
-  height: 180px;
 }
 
 .reference {
@@ -40,4 +38,22 @@
   display: flex;
   place-items: center;
   gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 400px;
+  }
+  .imgContainer {
+    width: 400px;
+    height: 300px;
+  }
+
+  .imgContainer > * {
+    width: 400px;
+    height: 280px;
+  }
+  .description {
+    height: 180px;
+  }
 }
