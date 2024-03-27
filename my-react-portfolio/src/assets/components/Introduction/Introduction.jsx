@@ -2,7 +2,7 @@ import { Tech } from "../Tech/Tech"
 import { FeaturedProjects } from "../FeaturedProjects/FeaturedProjects"
 import { MyWords } from "../myWords/MyWords"
 import { Skills } from "../Skills"
-import { Contact } from "../Contact"
+import { Contact } from "../Contact/Contact"
 import { useState } from "react"
 import './Introduction.css'
 

@@ -5,7 +5,7 @@ import { Tech } from './assets/components/Tech/Tech'
 import { FeaturedProjects } from './assets/components/FeaturedProjects/FeaturedProjects'
 import { MyWords } from './assets/components/myWords/MyWords'
 import { Skills } from './assets/components/Skills'
-import { Contact } from './assets/components/Contact'
+import { Contact } from './assets/components/Contact/Contact'
 
 
 export const App = () => {

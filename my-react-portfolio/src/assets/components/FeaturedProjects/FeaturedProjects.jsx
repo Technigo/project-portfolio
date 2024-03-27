@@ -13,7 +13,8 @@ export const FeaturedProjects = () => {
             projectName={project.name} 
             projectTags={project.tags}
             demoLink={project.netlify}
-            codeLink={project.github}/>)
+            codeLink={project.github}/>
+            )
     )
     }
 
