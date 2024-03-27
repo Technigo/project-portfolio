@@ -3,6 +3,8 @@ import FeatureProjects from "./components/FeatureProjects";
 import Introduction from "./components/Introduction";
 import { MyWords } from "./components/MyWords";
 import Tech from "./components/Tech";
+import { Footer } from "./components/Footer";
+import { ContactInfo } from "./components/ContactInfo";
 
 export const App = () => {
   const techRef = useRef(null);
@@ -20,6 +22,8 @@ export const App = () => {
       </div>
       <FeatureProjects />
       {/*<MyWords/>*/}
+      <ContactInfo />
+      <Footer />
     </div>
   );
 };
