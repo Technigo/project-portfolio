@@ -1,11 +1,14 @@
-export const Tags = ({ tags }) => {
+export const Button = ({ url, className, icon, text }) => {
   return (
-    <div className="tags">
-      {tags.map((tag, index) => (
-        <p className="montserrat" key={index}>
-          {tag}
-        </p>
-      ))}
+    <div className="button-container">
+      <a
+        href={url}
+        className={className}
+        target="_blank"
+        rel="noopener noreferrer">
+        {icon}
+        {text}
+      </a>
     </div>
   )
 }
