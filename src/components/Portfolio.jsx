@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ProjectCard } from "./ProjectCard";
 import { TechSection } from "./TechSection";
 import { Header } from "./Header";
+import Heading from "./Heading"; // Import the Heading component
 
 export const Portfolio = () => {
   const [repositories, setRepositories] = useState([]);
@@ -35,11 +36,12 @@ export const Portfolio = () => {
 
   return (
     <div>
-      {repositories.length > 0 && <Header repo={repositories[0]} />}{" "}
-      {/* Pass the first repository's data */}
+      <Header repo={repositories[0]} />
       <TechSection />
       <div className="repositories-container">
         {error && <p>{error}</p>}
+        <Heading text="Featured Projects" />{" "}
+        {/* Render the Heading component once */}
         {repositories.map((repo) => (
           <ProjectCard key={repo.id} repo={repo} />
         ))}
@@ -85,7 +87,8 @@ export const Portfolio = () => {
 
 //   return (
 //     <div>
-//       <Header repo={repo} />
+//       {repositories.length > 0 && <Header repo={repositories[0]} />}{" "}
+//       {/* Pass the first repository's data */}
 //       <TechSection />
 //       <div className="repositories-container">
 //         {error && <p>{error}</p>}
