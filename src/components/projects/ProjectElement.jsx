@@ -4,6 +4,7 @@ import { ProjectButton } from "./ProjectButtons"
 import { Tags } from "./Tags.jsx"
 
 export const ProjectElement = ({ name, description, topics }) => {
+	console.log(typeof html_url)
 	return (
 		<>
 			<article>

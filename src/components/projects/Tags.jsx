@@ -1,3 +1,12 @@
 export const Tags = ({ topics }) => {
-	return <li className='tags'>{topics}</li>
+	if (!topics) return
+	return (
+		<div className='tag-container'>
+			{topics.map((topic) => (
+				<div className='tag' key={topic}>
+					{topic}
+				</div>
+			))}
+		</div>
+	)
 }

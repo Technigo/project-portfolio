@@ -1,4 +1,5 @@
 import projectImage from "/project-images.json"
+import "../../styling/projectImage.css"
 
 export const ProjectImage = ({ repo }) => {
 	const repoImage = projectImage.find((img) => img.repoName === repo)
