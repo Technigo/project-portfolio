@@ -1,5 +1,5 @@
 export const Button = (image, text, source) => {
-    let icon;
+    let icon = "";
     if (image === "globe") {
         return icon = "../../assets/world_icon.svg";
     }
@@ -10,6 +10,6 @@ export const Button = (image, text, source) => {
         return icon = "../assets/article.png";
     }
     return (
-            <a className="link-button" href={source}><img src={icon} alt="Icon"></img> {text}</a>
+        <a className="link-button" href={source}><img src={icon} alt={`${image} icon`}></img> {text}</a>
     );
 }

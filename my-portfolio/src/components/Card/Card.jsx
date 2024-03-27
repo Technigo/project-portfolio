@@ -29,8 +29,8 @@ export const Card = ({
         ))}
       </div>
       <div className="buttons">
-        <Button source={netlify} image="globe" text="See it live" />
-        <Button source={github} image="github" text="View the code" />
+        {/* <Button source={netlify} image="globe" text="See it live" />
+        <Button source={github} image="github" text="View the code" /> */}
       </div>
     </section>
   );
