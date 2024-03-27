@@ -1,42 +1,90 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* ------------ General settings ------------ */
+:root {
+  font-family: var(--font);
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Text elements */
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+}
+
+p.large {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Skills = Title-2, MyWords (Articles= Title-3) Featured projects- title-4. Happy thoughts/Survey/how to stop being scared = header. Front-end-developer är INTE titel */
+
+/* Media Queries  */
+/* Tablets & up */
+@media (min-width: 744px) {
+  h1,
+  h2 {
+    font-size: 56px;
   }
-  to {
-    transform: rotate(360deg);
+
+  p.large {
+    font-size: 32px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/* --- Tablet --- */
+@media (min-width: 744px) and (max-width: 1280) {
+  h1,
+  h2 {
+    font-size: 56px;
+  }
+
+  h3 {
+    font-size: 32px;
   }
 }
 
-.card {
-  padding: 2em;
-}
+/* --- Desktop --- */
+@media (min-width: 1280px) {
+  h1,
+  h2 {
+    font-size: 80px;
+  }
 
-.read-the-docs {
-  color: #888;
+  h3 {
+    font-size: 32px;
+  }
 }

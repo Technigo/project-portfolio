@@ -2,5 +2,10 @@ import { ProjectCard } from "./ProjectCard";
 import "./FeaturedProjects.css";
 
 export const FeaturedProjects = () => {
-  return <div>FeaturedProjects</div>;
+  return (
+    <section className="projects-container">
+      FeaturedProjects
+      <ProjectCard />
+    </section>
+  );
 };

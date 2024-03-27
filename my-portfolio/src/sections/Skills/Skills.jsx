@@ -2,5 +2,5 @@ import { SkillsList } from "./SkillsList";
 import "./Skills.css";
 
 export const Skills = () => {
-  return <div>Skills</div>;
+  return <section className="skills-container">Skills</section>;
 };

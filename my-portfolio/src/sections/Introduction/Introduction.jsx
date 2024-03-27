@@ -4,6 +4,7 @@ import { Image } from "../../components/ImageElements/Image";
 import { NormalText } from "../../components/TextElements/NormalText";
 import "./Introduction.css";
 
-export const Introduction = () => {
-  return <div>Introduction</div>;
+export const Introduction = (repo) => {
+
+  return <section className="introduction">Introduction</section>;
 };

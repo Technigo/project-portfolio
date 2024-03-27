@@ -7,5 +7,5 @@ import { TickerTape } from "../../components/TickerTape/TickerTape";
 import "./Contact.css";
 
 export const Contact = () => {
-  return <div>Contact</div>;
+  return <section className="contact-container">Contact</section>;
 };
