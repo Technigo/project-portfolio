@@ -1,5 +1,5 @@
-import profilePicture from "./assets/profile-picture.jpeg";
-import arrow from "./assets/arrow.svg"
+import profilePicture from "../assets/profile-picture.jpeg";
+import arrow from "../assets/arrow.svg"
 import "./Introduction.css"
 
 const Introduction = () => {

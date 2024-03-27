@@ -1,13 +1,16 @@
-import './App.css'
-import Introduction from './Introduction'
+import "./App.css";
+import { FeaturedProjects } from "./components/FeaturedProjects";
+import Introduction from "./components/Introduction";
+import Tech from "./components/Tech";
 
 function App() {
-
   return (
     <>
       <Introduction />
+      <Tech />
+      <FeaturedProjects />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
