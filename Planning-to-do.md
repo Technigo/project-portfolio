@@ -1,16 +1,14 @@
 ### Next up To do:
 
-- Style article cards
-- Style project cards
-- Style buttons
-- Style tags
+- make mockup photos
 
-- get github API
+- Style article cards
+- Style buttons
+
 - make articles json
 
 - responsiveness
 - details like hovering etc.
-- make sure images are deployed
 
 - og tags
 

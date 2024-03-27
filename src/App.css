@@ -9,7 +9,8 @@
   --color-5: #2483e0;
   --color-6: #6db486;
   --color-7: #ffde30;
-  --icon-grey: #d0d0d0;
+  --contact-icon-grey: #d0d0d0;
+  --link-btn-grey: #f5f5f5;
 
   --argentinian-blue: #5aa9e6ff;
   --light-sky-blue: #7fc8f8ff;
@@ -46,6 +47,7 @@ li {
 }
 
 .montserrat,
+.project-buttons,
 h2,
 h3,
 h4 {
@@ -182,6 +184,31 @@ li {
   color: white;
 }
 
+/*.project-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}*/
+
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  background-color: var(--link-btn-grey);
+  color: #333333;
+  padding: 5px;
+  border-radius: 40px;
+  width: fit-content;
+}
+
+.button-icon {
+  margin-right: 3px;
+}
+
 /*Articles styling*/
 .articles {
   background-color: var(--color-3);
@@ -261,7 +288,7 @@ ul {
   margin-top: 40px;
   display: flex;
   justify-content: space-around;
-  color: var(--icon-grey);
+  color: var(--contact-icon-grey);
   font-size: 30px;
 }
 

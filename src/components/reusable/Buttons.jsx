@@ -1,6 +1,6 @@
 export const Button = ({ url, className, icon, text }) => {
   return (
-    <div className="button-container">
+    <>
       <a
         href={url}
         className={className}
@@ -9,6 +9,6 @@ export const Button = ({ url, className, icon, text }) => {
         {icon}
         {text}
       </a>
-    </div>
+    </>
   )
 }
