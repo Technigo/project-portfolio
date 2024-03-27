@@ -1,4 +1,4 @@
-import "../../styling/contact.css"
+import "./contact.css"
 import linkedinIcon from "../../assets/linkedin-grey.svg"
 import githubIcon from "../../assets/github-grey.svg"
 import instagramIcon from "../../assets/instagram-grey.svg"

@@ -1,4 +1,4 @@
-import "../../styling/projects.css"
+import "./Projects.css"
 import { ProjectElement } from "./ProjectElement.jsx"
 import { useEffect, useState } from "react"
 

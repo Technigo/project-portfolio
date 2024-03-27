@@ -1,6 +1,6 @@
 import globe from "../../assets/globe-black.svg"
 import github from "../../assets/github-black.svg"
-import "../../styling/projectButton.css"
+import "./ProjectButton.css"
 
 export const ProjectButton = ({ svn_url, homepage }) => {
 	const buttonInfo = {
