@@ -1,8 +1,8 @@
-import { Contact } from "./contact/contact";
-import { Projects } from "./projects/projects";
-import { Skills } from "./skills/skills";
-import { TechSection } from "./tech-section/tech-section";
-import { TopSection } from "./top-section/top-section";
+import { Contact } from "./contact/ContactSection";
+import { Projects } from "./projects/ProjectSection";
+import { Skills } from "./skills/SkillsSection";
+import { TechSection } from "./tech-section/TechSection";
+import { TopSection } from "./top-section/TopSection";
 
 export const App = () => {
   return (

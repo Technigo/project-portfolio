@@ -1,4 +1,4 @@
-import "./top-section.css";
+import "./TopSection.css";
 import { FaArrowDown } from "react-icons/fa6";
 import Linda from "../assets/FotoLinda.jpg";
 
