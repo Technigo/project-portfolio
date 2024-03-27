@@ -1,5 +1,6 @@
 import './Heading.css'
 import myImage from '../assets/image.me.png'
+import { GoArrowDown } from 'react-icons/go'
 
 export const Introduction = () => {
 	return (
@@ -22,6 +23,9 @@ export const Introduction = () => {
 						</p>
 					</div>
 				</div>
+        <div className='arrow'>
+          <GoArrowDown />
+        </div>
 			</div>
 		</>
 	)
