@@ -1,4 +1,4 @@
-import { Tech } from "../Tech"
+import { Tech } from "../Tech/Tech"
 import { FeaturedProjects } from "../FeaturedProjects/FeaturedProjects"
 import { MyWords } from "../myWords/MyWords"
 import { Skills } from "../Skills"
