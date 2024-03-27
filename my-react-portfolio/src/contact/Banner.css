@@ -1,0 +1,44 @@
+:root {
+  --darkblue: #200e3a;
+  --midblue: #38419d;
+  --lightblue: #3887be;
+  --green: #52d3d8;
+}
+
+.banner-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--darkblue);
+  color: #ffffff;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: banner 20s linear infinite;
+  height: 114px;
+  gap: 10px;
+}
+
+.banneritem {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+}
+
+@keyframes banner {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+.dot {
+  font-size: 20px;
+}
