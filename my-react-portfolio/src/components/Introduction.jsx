@@ -1,8 +1,10 @@
+import { FaArrowDownLong } from "react-icons/fa6";
+
 const Introduction = ({ scrollToTech }) => {
   return (
     <div className="intro-element">
       <div className="intro-container">
-        <span className="intro-main-header">Hello!, I am Etna Zuñiga</span>
+        <span className="intro-main-header">Hello, I am Etna Zuñiga</span>
         <span className="intro-second-header">Frontend Developer</span>
       </div>
       <div className="intro-paragraph">
@@ -15,7 +17,9 @@ const Introduction = ({ scrollToTech }) => {
           the technology field.
         </p>
       </div>
-      <button onClick={scrollToTech}>🔽</button>
+      <button onClick={scrollToTech}>
+        <FaArrowDownLong color="#FF4575" size={34} />
+      </button>
     </div>
   );
 };

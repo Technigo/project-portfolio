@@ -8,7 +8,7 @@ export const Project = ({ projectData }) => {
   };
 
   return (
-    <div>
+    <div className="projects-container">
       <img src={projectData.imageSrc} />
       <h1>{projectData.title}</h1>
       <p>{projectData.text}</p>

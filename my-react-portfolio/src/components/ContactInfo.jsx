@@ -6,10 +6,12 @@ export const ContactInfo = () => {
           <h1 className="info-header">Lets talk</h1>
 
           <div className="info-paragrah">
-            <img className="intro-image" src="./photo.jpg" alt="Avatar" />
-            <span>Etna Zuñiga Ruiz</span>
-            <span>+46(0)724 43 51 00</span>
-            <span>ettzu1962@gmail.com</span>
+            <img className="info-image" src="./photo.jpg" alt="Avatar" />
+            <div className="info-text">
+              <span>Etna Zuñiga Ruiz</span>
+              <span>+46(0)724 43 51 00</span>
+              <span>ettzu1962@gmail.com</span>
+            </div>
           </div>
         </div>
       </div>
