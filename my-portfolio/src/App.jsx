@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Profile } from "./components/Profile";
 import { Tech } from "./components/Tech";
 import { Projectlist } from "./components/Projectlist";
-import { Words } from "./components/Words";
+// import { Words } from "./components/Words";
 import { Skills } from "./components/Skills";
 import { Talk } from "./components/Talk";
 import { Footer } from "./components/Footer";
@@ -33,13 +33,13 @@ export const App = () => {
       <Profile />
       <Tech />
       {fetched && fetched ? (
-        <Projectlist repos={repos} />
+        <Projectlist />
       ) : (
         <div className="thought">
           <p>Loading...</p>
         </div>
       )}
-      <Words />
+      {/* <Words />  add when written articles*/}
       <Skills />
       <Talk />
       <Footer />

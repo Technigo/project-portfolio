@@ -1,17 +1,23 @@
 import PropTypes from "prop-types";
 import { Project } from "./Project";
 import "./projectlist.css";
+import { projects } from "./project.json";
 
-export const Projectlist = ({ repos } ) => {
-  console.log("Projectlist: ", repos);
-
+export const Projectlist = () => {
   return (
     <div className="projectlist">
       <h2>Featured Projects</h2>
-      <Project />
       <div>
-        {repos.map((project, id) => (
-          <Project key={id} project={project} />
+        {projects.map((project, index) => (
+          <Project
+            key={index}
+            name={project.name}
+            image={project.image}
+            description={project.description}
+            tags={project.tags}
+            netlify={project.netlify}
+            github={project.github}
+          />
         ))}
       </div>
     </div>
@@ -19,5 +25,5 @@ export const Projectlist = ({ repos } ) => {
 };
 
 Projectlist.propTypes = {
-  repos: PropTypes.array,
+  projects: PropTypes.array,
 };
