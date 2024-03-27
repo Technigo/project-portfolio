@@ -1,0 +1,163 @@
+header {
+  display: flex;
+  width: 375px;
+  padding: 64px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 64px 16px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 375px;
+  padding: 64px 16px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  /*text-align: left;*/
+  color: blue;
+}
+
+.circle-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 164px;
+  background: url("https://ca.slack-edge.com/T6RP2QWTG-U03HGMT40CQ-1c34b07098e6-512"),
+    lightgray 50% / cover no-repeat;
+}
+
+.normal-text {
+  color: #000;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 343px;
+  height: 203px;
+  align-self: stretch;
+}
+
+.sub-title {
+  align-self: stretch;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 343px;
+  height: 22px;
+
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.arrow {
+  padding: 0 16px 64px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Animation to make the arrow move */
+  position: relative;
+  top: 0;
+  /* Animation is animated here */
+  animation: arrowMove 1.7s ease-in infinite;
+}
+
+/*TABLET */
+@media (max-width: 1279px) and (min-width: 744px) {
+  header {
+    display: inline-flex;
+    padding: 128px 64px 0px 64px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 128px;
+  }
+
+  .sub-title {
+    align-self: stretch;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .main-title {
+    align-self: stretch;
+    color: #0b24f5;
+    font-family: Montserrat;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .normal-text {
+    flex: 1 0 0;
+    color: #000;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .circle-image {
+    width: 164px;
+    height: 164px;
+    border-radius: 164px;
+    background: url("https://ca.slack-edge.com/T6RP2QWTG-U03HGMT40CQ-1c34b07098e6-512"),
+      lightgray 50% / cover no-repeat;
+  }
+
+  .arrow {
+    padding: 0 16px 64px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Animation to make the arrow move */
+    position: relative;
+    top: 0;
+    /* Animation is animated here */
+    animation: arrowMove 1.7s ease-in infinite;
+  }
+}
+
+/*DESKTOP
+@media (min-width: 1280px) {
+  header {
+    display: inline-flex;
+    padding: 332px 220px 64px 220px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 199px;
+    background: #fff;
+  }
+
+  
+
+  .circle-image {
+    width: 164px;
+    height: 164px;
+    border-radius: 164px;
+    background: url("https://ca.slack-edge.com/T6RP2QWTG-U03HGMT40CQ-1c34b07098e6-512"),
+      lightgray 50% / cover no-repeat;
+  }
+}
+*/
