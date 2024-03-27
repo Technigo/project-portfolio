@@ -20,10 +20,15 @@ export const Contact = () => {
         <a
           href="https://www.linkedin.com/in/lindafrischknecht/"
           target="_blank"
+          aria-label="Click here to get to my linkedIn."
         >
           <FaLinkedinIn />
         </a>
-        <a href="https://github.com/linda-f" target="_blank">
+        <a
+          href="https://github.com/linda-f"
+          target="_blank"
+          aria-label="Click here to get to my GitHub."
+        >
           <FaGithub />
         </a>
       </div>
