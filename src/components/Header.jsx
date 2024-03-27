@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import arrowIcon from "../assets/images/noun-arrow-2989497-FFFFFF.svg";
 // import Heading from "./Heading";
 
 export const Header = ({ repo }) => {
@@ -19,6 +20,7 @@ export const Header = ({ repo }) => {
         and eager to master coding as a great complement to my background in
         e-commerce and graphic design. I'm a focused and creative doeer.
       </p>
+      <img className="arrow-icon" src={arrowIcon} alt="Arrow" />
     </div>
   );
 };
