@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
+import styles from "./Icon.module.css";
 
 const Icon = ({ name }) => {
   const ImportedIconRef = useRef(null);
@@ -22,7 +23,9 @@ const Icon = ({ name }) => {
 
   if (!loading && ImportedIconRef.current) {
     const { current: ImportedIcon } = ImportedIconRef;
-    return <img src={ImportedIcon} alt={`${name} icon`} />;
+    return (
+      <img className={styles.icon} src={ImportedIcon} alt={`${name} icon`} />
+    );
   }
 
   return null;

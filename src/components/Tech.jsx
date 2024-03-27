@@ -1,10 +1,5 @@
-// import html from "../assets/html.svg";
-// import css from "../assets/css.svg";
-// import js from "../assets/javascript.svg";
-// import react from "../assets/react.svg";
-// import npm from "../assets/npm.svg";
-// import nodejs from "../assets/nodejs.svg";
 import Icon from "./Icon";
+import styles from "./Tech.module.css";
 
 const icons = [
   "html",
@@ -22,8 +17,14 @@ const icons = [
 ];
 const Tech = () => {
   return (
-    <section id="tech">
-      <div>
+    <section id="tech" className={styles.section}>
+      <div className={styles.descr}>
+        <h2 className={styles.title}>Tech Stack</h2>
+        <p className={styles.subtitle}>
+          Technoloies I&apos;ve been working with
+        </p>
+      </div>
+      <div className={styles.techIcons}>
         {icons.map((icon, index) => (
           <Icon key={index} name={icon} />
         ))}
