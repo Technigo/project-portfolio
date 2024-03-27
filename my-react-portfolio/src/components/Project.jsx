@@ -8,13 +8,15 @@ export const Project = ({ projectData }) => {
   };
 
   return (
-    <div className="projects-container">
-      <img src={projectData.imageSrc} />
-      <h1>{projectData.title}</h1>
-      <p>{projectData.text}</p>
-      {getTechnologies()}
-      <a href={projectData.demoLink}>Live Demo </a>
-      <a href={projectData.gitLink}>Git Link </a>
-    </div>
+    <>
+      <div className="projects-container">
+        <img src={projectData.imageSrc} />
+        <h1>{projectData.title}</h1>
+        <p>{projectData.text}</p>
+        {getTechnologies()}
+        <a href={projectData.demoLink}>Live Demo </a>
+        <a href={projectData.gitLink}>Git Link </a>
+      </div>
+    </>
   );
 };
