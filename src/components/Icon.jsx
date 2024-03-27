@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
+
 const Icon = ({ name }) => {
   const ImportedIconRef = useRef(null);
   const [loading, setLoading] = useState(false);
@@ -27,3 +29,7 @@ const Icon = ({ name }) => {
 };
 
 export default Icon;
+
+Icon.propTypes = {
+  name: PropTypes.string.isRequired,
+};
