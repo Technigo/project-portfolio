@@ -1,5 +1,11 @@
+import ProjectCard from "./ProjectCard";
+
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <div>
+      <ProjectCard />
+    </div>
+  );
 };
 
 export default Projects;
