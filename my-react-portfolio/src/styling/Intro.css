@@ -1,11 +1,13 @@
 .introContainer {
-  border: 5px solid red;
-  margin: 50px 10px 0 10px;
+  margin: 30px 15px 0 15px;
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .myImage {
   display: block;
-  margin: 0 auto;
   height: 150px;
   width: 150px;
   object-fit: cover;
@@ -14,12 +16,62 @@
 
 .introPhrase {
   font-size: 16px;
-  margin-top: 20px;
+  margin: 30px 0 0 0;
 }
 
 .jobTitle {
-  text-align: center;
+  font-size: 27px;
+  margin: 0 0 30px 0;
+  color: #0a25f5;
 }
 
 .introDescription {
+  font-size: 16px;
+}
+
+/*** Tablet ***/
+@media (min-width: 745px) {
+  .introContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    margin: 0;
+    padding: 0 30px 0 30px;
+  }
+
+  .intro {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .introImg {
+    grid-row: 2;
+  }
+
+  .introInfo {
+    grid-row: 2;
+    padding-left: 30px;
+  }
+
+  .introPhrase {
+    font-size: 30px;
+  }
+
+  .jobTitle {
+    font-size: 55px;
+  }
+}
+
+/*** Desktop ***/
+@media (min-width: 1024px) {
+  .introContainer {
+    padding: 0 100px;
+  }
+}
+
+/*** Desktop L ***/
+@media (min-width: 1500px) {
+  .introContainer {
+    padding: 0 200px;
+  }
 }
