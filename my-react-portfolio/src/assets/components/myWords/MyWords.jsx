@@ -1,4 +1,5 @@
 import { PageTopic } from "../smallComps/PageTopic"
+import "../smallComps/pageTopic.css"
 
 export const MyWords = () => {
     return(

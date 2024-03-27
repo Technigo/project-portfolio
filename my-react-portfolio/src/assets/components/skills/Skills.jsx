@@ -1,7 +1,11 @@
+import { PageTopic } from "../smallComps/PageTopic"
+import "./skills.css"
 
 export const Skills = () => {
     return (
         <>
+        <section className="skill-wrapper">
+          <PageTopic className={'skills'} pageTopic={'SKILLS'} />
           <div className="code">
             <h4>Code</h4>
             <p>HTML5</p>
@@ -31,6 +35,8 @@ export const Skills = () => {
             <p>Mob programming</p>
             <p>Pair programming</p>
           </div>
+        </section>
+          
         </>
     )
 }

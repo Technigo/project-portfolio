@@ -4,7 +4,7 @@ import { Introduction } from './assets/components/Introduction/Introduction'
 import { Tech } from './assets/components/Tech/Tech'
 import { FeaturedProjects } from './assets/components/FeaturedProjects/FeaturedProjects'
 import { MyWords } from './assets/components/myWords/MyWords'
-import { Skills } from './assets/components/Skills'
+import { Skills } from './assets/components/skills/Skills'
 import { Contact } from './assets/components/Contact/Contact'
 
 

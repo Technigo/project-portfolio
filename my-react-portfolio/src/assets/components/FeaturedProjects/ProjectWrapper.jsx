@@ -12,8 +12,8 @@ export const ProjectWrapper = ({projectImg, projectName, projectTags, demoLink, 
     return (
         <>
           <PageTopic pageTopic={'PROJECTS'} className={'project'}/>
-        <div className="project-wrapper">
-            <Image image={projectImg} alt={alt} />
+        <section className="project-wrapper">
+            <Image image={projectImg} alt={alt} className={'blue'}/>
             <p className="projectName">{projectName}</p>
             <p className="about">{about}</p>
             <Tag projectTags={projectTags} />
@@ -21,7 +21,7 @@ export const ProjectWrapper = ({projectImg, projectName, projectTags, demoLink, 
                 <BtnLink link={demoLink} src={liveDemoBtn} alt={'demo link'} btnContent={'Live demo'} />
                 <BtnLink link={codeLink} src={viewTheCodeBtn} alt={'code link'} btnContent={'View the code'} />
             </div>
-        </div>
+        </section>
         </> 
     )
 }
