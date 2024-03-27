@@ -1,6 +1,6 @@
+import projects from "../../json/projects.json"
 import { IoGlobeOutline } from "react-icons/io5"
 import { FaGithub } from "react-icons/fa"
-import projects from "../../json/projects.json"
 import { Tags } from "../reusable/Tags"
 import { Button } from "../reusable/Buttons"
 
@@ -24,13 +24,13 @@ export const ProjectCard = () => {
               <div className="project-buttons">
                 <Button
                   url={netlify_url}
-                  className="link-button"
+                  className="link-button-project"
                   icon={<IoGlobeOutline className="button-icon" />}
                   text="Live demo"
                 />
                 <Button
                   url={github_url}
-                  className="link-button"
+                  className="link-button-project"
                   icon={<FaGithub className="button-icon" />}
                   text="View the code"
                 />

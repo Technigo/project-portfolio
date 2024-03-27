@@ -3,7 +3,6 @@
 - make mockup photos
 
 - Style article cards
-- Style buttons
 
 - make articles json
 

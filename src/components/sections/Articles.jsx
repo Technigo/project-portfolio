@@ -1,4 +1,4 @@
-import { ArticlePhoto } from "../reusable/ArticlePhoto"
+import { ArticleCard } from "./ArticleCard"
 
 export const MyWords = () => {
   return (
@@ -7,8 +7,7 @@ export const MyWords = () => {
         <div className="wavy-line"></div>
         <div className="articles-container">
           <h2 className="title">My Words</h2>
-          <p>If I decide to write any text, I will feature it here.</p>
-          <ArticlePhoto />
+          <ArticleCard />
         </div>
       </div>
     </>
