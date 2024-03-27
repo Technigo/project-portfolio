@@ -1,4 +1,5 @@
-// import { useState } from "react";
+
+import { useState, useEffect } from "react";
 import { Profile } from "./components/Profile";
 import { Tech } from "./components/Tech";
 import { Projectlist } from "./components/Projectlist";
@@ -9,8 +10,27 @@ import { Footer } from "./components/Footer";
 import "./App.css";
 
 export const App = () => {
+  const [repos, setRepos] = useState();
+  const [fetched, setFetched] = useState(false);
+  const gitHubRepo = "https://api.github.com/users/Martin-Joensson/repos";
+
+  useEffect(() => {
+    setFetched(false);
+    fetch(gitHubRepo)
+      .then((result) => result.json())
+      .then((json) => {
+        setRepos(json);
+        setFetched(true);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  console.log(fetched);
+  console.log(repos);
+
   return (
-    <>
       <div className="App">
         <Profile />
         <Tech />
@@ -20,6 +40,5 @@ export const App = () => {
         <Talk />
         <Footer />
       </div>
-    </>
   );
 };
