@@ -23,7 +23,7 @@ export const ArticleCard = () => {
               <Button
                 url={link}
                 className="link-button-article"
-                icon={<BsFileText className="button-icon" />}
+                icon={<BsFileText className="button-icon-article" />}
                 text="Read article"
               />
             </div>

@@ -67,6 +67,7 @@ h3,
 h4,
 .montserrat,
 .project-buttons,
+.link-button-article,
 .date {
   font-family: "Montserrat", sans-serif;
 }
@@ -100,6 +101,25 @@ li {
 .tech,
 .skills {
   background-color: var(--color-1);
+}
+
+/*Other common styling*/
+.tags p,
+.date {
+  margin-right: 5px;
+  background-color: black;
+  width: fit-content;
+  padding: 2px 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.project-card,
+.article-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
 }
 
 /*Intro styling*/
@@ -177,23 +197,6 @@ li {
   margin-bottom: 10px;
 }
 
-.tags p,
-.date {
-  margin-right: 5px;
-  background-color: black;
-  width: fit-content;
-  padding: 2px 5px;
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-}
-
-.project-card {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 50px;
-}
-
 .project-buttons {
   display: flex;
   flex-direction: column;
@@ -211,7 +214,7 @@ li {
   margin-bottom: 10px;
 }
 
-.button-icon {
+.button-icon-project {
   margin-right: 7px;
   font-size: 30px;
 }
@@ -254,8 +257,12 @@ li {
   color: #333333;
   font-weight: 600;
   border-radius: 40px;
-  padding: 5px 15px;
-  margin-bottom: 10px;
+  padding: 10px 15px;
+}
+
+.button-icon-article {
+  margin-right: 10px;
+  font-size: 25px;
 }
 
 /*Skills styling*/

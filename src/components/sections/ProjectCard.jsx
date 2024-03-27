@@ -25,13 +25,13 @@ export const ProjectCard = () => {
                 <Button
                   url={netlify_url}
                   className="link-button-project"
-                  icon={<IoGlobeOutline className="button-icon" />}
+                  icon={<IoGlobeOutline className="button-icon-project" />}
                   text="Live demo"
                 />
                 <Button
                   url={github_url}
                   className="link-button-project"
-                  icon={<FaGithub className="button-icon" />}
+                  icon={<FaGithub className="button-icon-project" />}
                   text="View the code"
                 />
               </div>
