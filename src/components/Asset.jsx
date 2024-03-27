@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import styles from "./Icon.module.css";
 
-const Icon = ({ name }) => {
+const Asset = ({ name, format, folder }) => {
   const ImportedIconRef = useRef(null);
   const [loading, setLoading] = useState(false);
 
@@ -10,7 +9,9 @@ const Icon = ({ name }) => {
     setLoading(true);
     const importIcon = async () => {
       try {
-        const { default: namedImport } = await import(`../assets/${name}.svg`);
+        const { default: namedImport } = await import(
+          `../assets/${folder}/${name}.${format}`
+        );
         ImportedIconRef.current = namedImport;
       } catch (err) {
         console.log(err);
@@ -19,20 +20,20 @@ const Icon = ({ name }) => {
       }
     };
     importIcon();
-  }, [name]);
+  }, [name, folder, format]);
 
   if (!loading && ImportedIconRef.current) {
     const { current: ImportedIcon } = ImportedIconRef;
-    return (
-      <img className={styles.icon} src={ImportedIcon} alt={`${name} icon`} />
-    );
+    return <img src={ImportedIcon} alt={`${name} icon`} />;
   }
 
   return null;
 };
 
-export default Icon;
+export default Asset;
 
-Icon.propTypes = {
+Asset.propTypes = {
   name: PropTypes.string.isRequired,
+  format: PropTypes.string.isRequired,
+  folder: PropTypes.string.isRequired,
 };

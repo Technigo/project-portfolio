@@ -1,9 +1,12 @@
 import ProjectCard from "./ProjectCard";
+import { projects } from "../projects.json";
 
 const Projects = () => {
   return (
     <div>
-      <ProjectCard />
+      {projects.map((project, index) => (
+        <ProjectCard key={index} project={project} />
+      ))}
     </div>
   );
 };

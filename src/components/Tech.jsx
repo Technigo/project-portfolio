@@ -1,4 +1,4 @@
-import Icon from "./Icon";
+import Asset from "./Asset";
 import styles from "./Tech.module.css";
 
 const icons = [
@@ -26,7 +26,13 @@ const Tech = () => {
       </div>
       <div className={styles.techIcons}>
         {icons.map((icon, index) => (
-          <Icon key={index} name={icon} />
+          <Asset
+            key={index}
+            name={icon}
+            // className={styles.icon}
+            folder="icons"
+            format="svg"
+          />
         ))}
       </div>
     </section>
