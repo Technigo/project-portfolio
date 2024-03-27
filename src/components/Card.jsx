@@ -1,19 +1,37 @@
-import PropTypes from "prop-types";
-import "./Card.css"
-import World from "../assets/world_icon.svg"
-import GitHub from "../assets/github_icon.svg"
+import PropTypes from 'prop-types'
+import './Card.css'
+import { IoGlobeOutline } from 'react-icons/io5'
+import { FaGithub } from 'react-icons/fa'
 
-export const Card = ({project}) => {
+export const Card = ({ project }) => {
 	return (
 		<div className="card">
 			<img src={project.image}></img>
-      <p>{ project.name }</p>
-      <p>{project.description}</p>
-      <div className="tags">
-      {project.tags.map((tag, index) => (<p className="tag" key={index}>{tag}</p>))}
-      </div>
-			<a href={project.netlify} className="button"><img src={World} alt="world icon"></img>Live demo</a>
-      <a href={project.github} className="button"><img src={GitHub} alt="github icon"></img>View the code</a>
+			<div className="card-content">
+				<h3>{project.name}</h3>
+				<p>{project.description}</p>
+				<div className="tags">
+					{project.tags.map((tag, index) => (
+						<p className="tag" key={index}>
+							{tag}
+						</p>
+					))}
+				</div>
+				<div className="button-wrapper">
+					<a href={project.netlify} className="button">
+						<button>
+							{' '}
+							<IoGlobeOutline /> Live demo
+						</button>
+					</a>
+					<a href={project.github} className="button">
+						<button>
+							{' '}
+							<FaGithub /> View the code
+						</button>
+					</a>
+				</div>
+			</div>
 		</div>
 	)
 }
