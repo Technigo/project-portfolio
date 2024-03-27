@@ -19,7 +19,7 @@ export const ProjectCard = () => {
                 <Tags tags={tags} />
               </div>
               <div className="project-buttons">
-                <p>Button1 button2</p>
+                <p className="montserrat">Button1 button2</p>
               </div>
             </div>
           )
