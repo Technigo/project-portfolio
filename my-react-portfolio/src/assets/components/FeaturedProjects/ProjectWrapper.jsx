@@ -11,7 +11,7 @@ export const ProjectWrapper = ({projectImg, projectName, projectTags, demoLink, 
     const viewTheCodeBtn = "../../../public/icons/viewTheCode.svg"
     return (
         <>
-          <PageTopic pageTopic={'PROJECTS'}/>
+          <PageTopic pageTopic={'PROJECTS'} className={'project'}/>
         <div className="project-wrapper">
             <Image image={projectImg} alt={alt} />
             <p className="projectName">{projectName}</p>

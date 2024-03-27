@@ -1,5 +1,5 @@
-export const PageTopic = ({pageTopic})=>{
+export const PageTopic = ({pageTopic, className})=>{
     return (
-        <h3 className="pageTopic">{pageTopic}</h3>
+        <h3 className={className}>{pageTopic}</h3>
     )
 }

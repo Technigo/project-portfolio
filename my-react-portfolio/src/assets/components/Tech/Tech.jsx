@@ -1,10 +1,11 @@
+import { PageTopic } from '../smallComps/PageTopic'
 import './Tech.css'
 
 export const Tech = () => {
     return (
         <div className="tech-wrapper">
             <div className='tech-title'>
-                <h3 className='tech'>TECH</h3>
+                <PageTopic className={'tech'} pageTopic={'TECH'} />
             </div>
             <div className='tech-details'>
               <p>HTML5</p>
@@ -21,8 +22,7 @@ export const Tech = () => {
               <p>Git</p>
               <p>Node.js</p>
               <p>Mongo DB</p> 
-            </div>
-            
+            </div>  
         </div>
     )
 }
