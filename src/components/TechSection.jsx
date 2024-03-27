@@ -1,5 +1,5 @@
 import "./TechSection.css";
-import Heading from "./Heading";
+import { Heading } from "./Heading";
 
 export const TechSection = () => {
   return (

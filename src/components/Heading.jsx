@@ -1,7 +1,7 @@
 import React from "react";
 import "./Heading.css";
 
-const Heading = ({ text, color }) => {
+export const Heading = ({ text, color }) => {
   return (
     <div className="heading">
       <h2 style={{ color: color }}>{text}</h2>
@@ -9,4 +9,4 @@ const Heading = ({ text, color }) => {
   );
 };
 
-export default Heading;
+// export default Heading;

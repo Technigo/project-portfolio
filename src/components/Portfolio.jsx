@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { ProjectCard } from "./ProjectCard";
 import { TechSection } from "./TechSection";
 import { Header } from "./Header";
-import Heading from "./Heading"; // Import the Heading component
+import { Heading } from "./Heading";
+import { Skills } from "./Skills";
 
 export const Portfolio = () => {
   const [repositories, setRepositories] = useState([]);
@@ -45,6 +46,7 @@ export const Portfolio = () => {
         {repositories.map((repo) => (
           <ProjectCard key={repo.id} repo={repo} />
         ))}
+        <Skills />
       </div>
     </div>
   );
