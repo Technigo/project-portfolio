@@ -1,5 +1,7 @@
 import React from "react";
 import "./ProjectCard.css";
+import githubIcon from "../assets/images/github.svg";
+import livedemoIcon from "../assets/images/live-demo.svg";
 
 export const ProjectCard = ({ repo }) => {
   // Replace "-" with an empty space in the project name
@@ -23,8 +25,14 @@ export const ProjectCard = ({ repo }) => {
         ))}
       </div>
       <div className="button-container">
-        <button onClick={handleLiveDemoClick}>Live demo</button>
-        <button onClick={handleViewCodeClick}>View the code</button>
+        <button onClick={handleLiveDemoClick}>
+          <img src={livedemoIcon} alt="Live Demo Icon" className="icon" />
+          Live demo
+        </button>
+        <button onClick={handleViewCodeClick}>
+          <img src={githubIcon} alt="GitHub Icon" className="icon" />
+          View the code
+        </button>
       </div>
     </div>
   );
