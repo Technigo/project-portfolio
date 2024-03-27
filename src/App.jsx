@@ -3,6 +3,7 @@ import { Card } from './components/Card'
 import './App.css'
 import { projects } from "../projects.json"
 import { Introduction } from './components/Introduction'
+import { TechSection } from './components/Tech'
 
 //import H from '@nicodes/react-heading'
 
@@ -11,13 +12,18 @@ export const App = () => {
 	
 
 	return (
-    <section>
-			<Introduction />
+		<>
 			<section>
-			{projects.map((project, index) => (
-				<Card key={index} project={project} />
-			))}
+				<Introduction />
 			</section>
-		</section>
+			<section>
+				<TechSection />
+			</section>
+			<section>
+				{projects.map((project, index) => (
+					<Card key={index} project={project} />
+				))}
+			</section>
+		</>
 	)
 }
