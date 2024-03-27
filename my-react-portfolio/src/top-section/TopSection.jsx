@@ -14,7 +14,8 @@ export const TopSection = () => {
         <p className="description">
           With a background in Marketing and Tourism I embarqued on a coding
           adventure with a Bootcamp. Now I create user friendly
-          Web-Applications! More about my background on my LinkedIn.
+          Web-Applications! I am a remote work enthusiast and I believe that
+          working in teams helps everyone get more creative.
         </p>
       </div>
       <div className="arrow-box">
