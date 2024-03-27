@@ -2,6 +2,7 @@
 import { Card } from './components/Card'
 import './App.css'
 import { projects } from "../projects.json"
+import { Introduction } from './components/Introduction'
 
 //import H from '@nicodes/react-heading'
 
@@ -10,11 +11,13 @@ export const App = () => {
 	
 
 	return (
-    <div>
+    <section>
+			<Introduction />
+			<section>
 			{projects.map((project, index) => (
 				<Card key={index} project={project} />
 			))}
-			{/* <Card projects={projects}/> */}
-		</div>
+			</section>
+		</section>
 	)
 }
