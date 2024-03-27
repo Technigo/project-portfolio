@@ -7,7 +7,7 @@ export const Talk = () => {
       <p>martin.t.joensson@gmail.com</p>
       <div className="socialmedia">
         <img src="../src/assets/linkedin.png" alt="LinkedIn"></img>
-        <img src="../src/assets/github.png" alt="GitHub"></img>
+        <img src="../src/assets/git.png" alt="GitHub"></img>
         <img src="../src/assets/linkedin.png" alt="StackOverflow"></img>
         <img src="../src/assets/instagram.png" alt="Instagram"></img>
       </div>

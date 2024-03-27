@@ -1,29 +1,23 @@
-import { Project } from "./Project"
+import PropTypes from "prop-types";
+import { Project } from "./Project";
+import "./projectlist.css";
 
-export const Projectlist = () => {
+export const Projectlist = ({ repos } ) => {
+  console.log("Projectlist: ", repos);
+
   return (
-    <div>
+    <div className="projectlist">
       <h2>Featured Projects</h2>
       <Project />
+      <div>
+        {repos.map((project, id) => (
+          <Project key={id} project={project} />
+        ))}
+      </div>
     </div>
   );
 };
 
-// //import { useState } from 'react'
-// import { Card } from './components/Card'
-// import './App.css'
-// import { projects } from "../projects.json"
-
-// export const App = () => {
-// 	console.log(projects)
-	
-
-// 	return (
-//     <div>
-// 			{projects.map((project, index) => (
-// 				<Card key={index} project={project} />
-// 			))}
-// 			{/* <Card projects={projects}/> */}
-// 		</div>
-// 	)
-// }
+Projectlist.propTypes = {
+  repos: PropTypes.array,
+};
