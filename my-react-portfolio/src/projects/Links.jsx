@@ -7,7 +7,7 @@ export const Link = ({ project }) => {
   return (
     <div className="button-box">
       <a href={project.netlify} target="_blank">
-        <button className="button">
+        <button className="button hover-blue">
           <div className="button-flex">
             <TbWorld className="icon" />
             <p>Live demo</p>
@@ -16,7 +16,7 @@ export const Link = ({ project }) => {
       </a>
       <div className="button-box">
         <a href={project.github} target="_blank">
-          <button className="button">
+          <button className="button hover-green">
             <div className="button-flex">
               <FaGithub className="icon" />
               <p>View the code</p>
