@@ -6,7 +6,7 @@ export const Introduction = () => {
       <img className="profile-img" src="src/assets/profileImg.jpg" alt="profile image of Maja" />
       <div className="intro-header-box">
         <Headline style="sub-header" title="Hi, I'm Maja Schouenke" />
-        <Headline style="title" title="Frontend Developer" />
+        <Headline style="intro-title" title="Frontend Developer" />
       </div>
       <div className="intro-text-box">
         <p>Presentational text</p>
