@@ -1,4 +1,5 @@
 import styles from "./Skills.module.css";
+import { skills } from "../skills.json";
 
 const Skills = () => {
   return (
