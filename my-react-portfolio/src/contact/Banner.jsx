@@ -23,6 +23,18 @@ export const Banner = () => {
         <div className="banneritem">
           <p>Web Developer</p> <GoDotFill className="dot" />{" "}
         </div>
+        <div className="banneritem">
+          <p>Linda Frischknecht</p> <GoDotFill className="dot" />{" "}
+        </div>
+        <div className="banneritem">
+          <p>Web Developer</p> <GoDotFill className="dot" />{" "}
+        </div>
+        <div className="banneritem">
+          <p>Linda Frischknecht</p> <GoDotFill className="dot" />{" "}
+        </div>
+        <div className="banneritem">
+          <p>Web Developer</p> <GoDotFill className="dot" />{" "}
+        </div>
       </div>
     </div>
   );

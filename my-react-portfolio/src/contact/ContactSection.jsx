@@ -9,10 +9,7 @@ export const Contact = () => {
     <div>
       <div className="contact-section">
         <h1 className="contact-title">Let&apos;s talk</h1>
-        <img
-          src={Linda}
-          alt="Picture of Linda Frischknecht, Frontend Developer."
-        />
+        <img src={Linda} alt="Picture of Linda Frischknecht, Web Developer." />
         <div className="contact">
           <p>Linda Frischknecht</p>
           <p>+41 (0)76 329 67 97</p>
