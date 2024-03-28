@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import { Profile } from "./components/Profile";
-import { Tech } from "./components/Tech";
-import { Projectlist } from "./components/Projectlist";
+import { Profile } from "./Sections/Profile/Profile";
+import { Tech } from "./Sections/Tech/Tech";
+import { Projectlist } from "./Sections/Projects/Projectlist";
 // import { Words } from "./components/Words";
-import { Skills } from "./components/Skills";
-import { Talk } from "./components/Talk";
-import { Footer } from "./components/Footer";
+import { Skills } from "./Sections/Skills/Skills";
+import { Talk } from "./Sections/Talk/Talk";
+import { Footer } from "./Sections/Footer/Footer";
 import "./App.css";
 
 export const App = () => {

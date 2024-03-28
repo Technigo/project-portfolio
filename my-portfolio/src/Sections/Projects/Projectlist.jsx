@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import { Project } from "./Project";
+import { Project } from "../../components/Project/Project";
 import "./projectlist.css";
-import { projects } from "./project.json";
+import { projects } from "../../components/project.json";
 
 export const Projectlist = () => {
   return (

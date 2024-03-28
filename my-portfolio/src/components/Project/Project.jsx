@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import "./project.css";
-import { Card } from "./Card/Card";
+import { Card } from "../Card/Card";
 
 export const Project = ({
   name,
