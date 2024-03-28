@@ -1,7 +1,5 @@
 import PropTypes from "prop-types";
 import "./project.css";
-import World from "../assets/world_icon.svg";
-import GitHub from "../assets/github_icon.svg";
 import { Card } from "./Card/Card";
 
 export const Project = ({
