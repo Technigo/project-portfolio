@@ -22,6 +22,7 @@ export const Skills = () => {
             <p>Netlify</p>
             <p>Slack</p>
             <p>Postman</p>
+            <p>Lighthouse</p>
           </div>
           <div className="skills-part">
             <h2 className="more">More</h2>
@@ -30,6 +31,7 @@ export const Skills = () => {
             <p>Mob-Programming</p>
             <p>Asynchronous Working</p>
             <p>Marketing</p>
+            <p>Entrepreneurship</p>
           </div>
         </div>
       </div>

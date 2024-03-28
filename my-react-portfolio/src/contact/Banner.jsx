@@ -4,38 +4,24 @@ import { GoDotFill } from "react-icons/go";
 export const Banner = () => {
   return (
     <div className="banner-wrapper">
-      <div className="banner">
+      <marquee className="banner">
         <div className="banneritem">
-          <p>Linda Frischknecht</p> <GoDotFill className="dot" />{" "}
+          <p>
+            Linda Frischknecht <span className="banner-span"></span>
+            <GoDotFill className="dot" /> <span className="banner-span"></span>
+            Web Developer <span className="banner-span"></span>
+            <GoDotFill className="dot" /> <span className="banner-span"></span>
+            Linda Frischknecht <span className="banner-span"></span>
+            <GoDotFill className="dot" /> <span className="banner-span"></span>
+            Web Developer <span className="banner-span"></span>
+            <GoDotFill className="dot" /> <span className="banner-span"></span>
+            Linda Frischknecht <span className="banner-span"></span>
+            <GoDotFill className="dot" /> <span className="banner-span"></span>
+            Web Developer <span className="banner-span"></span>
+            <GoDotFill className="dot" /> <span className="banner-span"></span>
+          </p>
         </div>
-        <div className="banneritem">
-          <p>Web Developer</p> <GoDotFill className="dot" />{" "}
-        </div>
-        <div className="banneritem">
-          <p>Linda Frischknecht</p> <GoDotFill className="dot" />{" "}
-        </div>
-        <div className="banneritem">
-          <p>Web Developer</p> <GoDotFill className="dot" />{" "}
-        </div>
-        <div className="banneritem">
-          <p>Linda Frischknecht</p> <GoDotFill className="dot" />{" "}
-        </div>
-        <div className="banneritem">
-          <p>Web Developer</p> <GoDotFill className="dot" />{" "}
-        </div>
-        <div className="banneritem">
-          <p>Linda Frischknecht</p> <GoDotFill className="dot" />{" "}
-        </div>
-        <div className="banneritem">
-          <p>Web Developer</p> <GoDotFill className="dot" />{" "}
-        </div>
-        <div className="banneritem">
-          <p>Linda Frischknecht</p> <GoDotFill className="dot" />{" "}
-        </div>
-        <div className="banneritem">
-          <p>Web Developer</p> <GoDotFill className="dot" />{" "}
-        </div>
-      </div>
+      </marquee>
     </div>
   );
 };
