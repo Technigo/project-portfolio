@@ -2,6 +2,7 @@ import React from "react";
 import "./ProjectCard.css";
 import githubIcon from "../assets/images/github.svg";
 import livedemoIcon from "../assets/images/live-demo.svg";
+import mockupImage from "../assets/images/mockup-weather-app.png";
 
 export const ProjectCard = ({ repo }) => {
   // Replace "-" with an empty space in the project name
@@ -17,6 +18,7 @@ export const ProjectCard = ({ repo }) => {
 
   return (
     <div className="project-card-container">
+      <img src={mockupImage} alt="Mockup image" className="mockup-image" />
       <h3 className="project-name">{formattedProjectName}</h3>
       <p className="project-description">{repo.description}</p>
       <div className="project-tags-container">
