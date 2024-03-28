@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./HeaderSection.css";
 import arrowIcon from "../assets/images/noun-arrow-2989497-FFFFFF.svg";
 // import Heading from "./Heading";
 

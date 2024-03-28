@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ProjectCard } from "./ProjectCard";
 import { TechSection } from "./TechSection";
-import { Header } from "./Header";
+import { Header } from "./HeaderSection";
 import { Heading } from "./Heading";
 import { Skills } from "./Skills";
 import { Contact } from "./ContactSection";
