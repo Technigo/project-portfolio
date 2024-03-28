@@ -33,7 +33,7 @@ export const App = () => {
       {fetched && fetched ? (
         <Projectlist />
       ) : (
-        <div className="thought">
+        <div className="projectlist">
           <p>Loading...</p>
         </div>
       )}

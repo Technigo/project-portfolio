@@ -1,4 +1,5 @@
-import "./profile.css" 
+import arrowImage from "/Arrow2.svg";
+import "./profile.css";
 
 export const Profile = () => {
   return (
@@ -8,7 +9,11 @@ export const Profile = () => {
         <h1>Frontend Developer</h1>
       </div>
       <div className="profile-info">
-        <img src="../src/assets/Martin-square.jpg" alt="Martin Jönsson" />
+        <img
+          className="profile-picture"
+          src="../src/assets/Martin-square.jpg"
+          alt="Martin Jönsson"
+        />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
           possimus iure expedita labore alias laborum voluptatum est quasi sint?
@@ -17,6 +22,9 @@ export const Profile = () => {
           nisi aspernatur, quaerat doloremque sit officiis magnam velit sint?
           Blanditiis, voluptate facilis?
         </p>
+      </div>
+      <div className="profile-arrow">
+        <img className="arrow" src={arrowImage} alt="Down arrow"></img>
       </div>
     </div>
   );

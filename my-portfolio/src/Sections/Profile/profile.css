@@ -1,24 +1,63 @@
-.profile img {
+.profile-picture {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 2px solid Black;
-  margin: 2rem;
+  margin: 0 25px 0 0;
 }
 .profile {
   background-color: white;
-  height: 75vh;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+  padding: 200px 0 0 0 ;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .profile-title {
-  display: flex;
-  flex-direction: column;
+  grid-column: 2 / -2;
 }
 
 .profile-info {
+  font-size: 18;
   display: flex;
+  place-items: center;
+  grid-column: 2 / -2;
+}
+
+.profile-title h1 {
+  font-size: 80px;
+  color: rebeccapurple;
+  margin: 0;
+}
+.profile-title h2 {
+  font-size: 32px;
+  color: black;
+  margin: 0;
+}
+
+.profile-arrow {
+  grid-column: 1 / -1;
+  padding: 64px 16px 64px 16px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
+  animation: bounce 1s infinite;
+}
+
+.arrow {
+  width: 30px;
+  height: 68px;
+  stroke: 6px;
+  filter: invert(82%) sepia(68%) saturate(1195%) hue-rotate(336deg)
+    brightness(101%) contrast(101%);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(16px);
+  }
 }

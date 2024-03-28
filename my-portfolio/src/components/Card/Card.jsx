@@ -13,7 +13,7 @@ export const Card = ({
   netlify,
   github,
 }) => {
-    const renderLink = netlify
+  const renderLink = netlify;
 
   return (
     <section className={`article-container ${direction}`}>
@@ -35,12 +35,14 @@ export const Card = ({
           source={renderLink}
           image="Globe"
           text="See it live"
+          color="purple"
         />
         <Button
           className="button"
           source={github}
           image="GitHub"
           text="View the code"
+          color="grey"
         />
       </div>
     </section>

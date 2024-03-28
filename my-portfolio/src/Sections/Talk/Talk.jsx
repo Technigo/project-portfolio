@@ -3,7 +3,7 @@ export const Talk = () => {
   return (
     <div className="talk">
       <h2>Let&apos;s Talk</h2>
-      <img src="../src/assets/Martin-square.jpg" alt="Martin Jönsson" />
+      <img className="profile-picture" src="../src/assets/Martin-square.jpg" alt="Martin Jönsson" />
       <p>+46(0)73-909 11 99</p>
       <p>martin.t.joensson@gmail.com</p>
       <div className="socialmedia">
