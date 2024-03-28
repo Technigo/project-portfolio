@@ -1,0 +1,167 @@
+.top{
+  height: 100%;
+  padding-top: 33vh;
+  padding-bottom: 63px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 1044px;
+}
+
+.mobilePortrait{
+  display: none;
+}
+
+.frame{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 100%;
+  height: 137px;
+}
+
+.topGreeting{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  margin: 0;
+}
+
+.titleBlue{
+  color: #0B24F5;
+  font-size: 62px;
+  font-weight: 760;
+  line-height: 98px;
+  margin: 0;
+}
+
+.topDetails{
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+  margin-bottom: 200px;
+  align-items: center;
+  gap: 22px;
+}
+
+.portrait{
+  width:164px;
+  border-radius: 50%;
+}
+
+.selfIntro{
+  font-family: "Hind";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.arrow{
+  height: 68px;
+  cursor: pointer;
+}
+
+@media (min-width:1025px) and (max-width:1280px){  
+  .content{
+    width: 958px;
+  }
+
+  .titleBlue{
+    font-size: 57px;
+  }
+}
+
+
+/* For Tablet Device */
+@media (min-width:667px) and (max-width:1024px) {
+  .top{
+    height: 50vh;
+    width: 100%;
+    padding-top: 128px;
+    padding-bottom: 0;
+  }
+
+  .content{
+    width: 680px;
+  }
+
+  .frame{
+    height: 97px;
+  }
+
+  .topGreeting{
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .titleBlue{
+    font-size: 41px;
+    line-height: 68px;
+  }
+
+  .topDetails{
+    margin-top: 32px;
+    margin-bottom: 138px;
+  }
+}
+
+/* For Mobile Device */
+@media (max-width: 667px) {
+  .top{
+    height: 100vh;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+  }
+
+  .content{
+    width: 343px;
+  }
+
+  .mobilePortrait{
+    width:164px;
+    border-radius: 50%;
+    display: block;
+  }
+
+  .frame{
+    height: 100px;
+    margin-top: 32px;
+  }
+
+  .topGreeting{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .titleBlue{
+    font-size: 32px;
+    line-height: 39px;
+    text-align: start;
+  }
+
+  .topDetails{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .selfIntro{
+    margin: 0;
+    text-align: justify;
+  }
+
+  .portrait{
+    display: none;
+  }
+
+}
