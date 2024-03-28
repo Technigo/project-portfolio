@@ -3,7 +3,7 @@ import { FeaturedProjects } from "./components/FeaturedProjects";
 import Introduction from "./components/Introduction";
 import Tech from "./components/Tech";
 
-function App() {
+const App = () => {
   return (
     <>
       <Introduction />
@@ -11,6 +11,6 @@ function App() {
       <FeaturedProjects />
     </>
   );
-}
+};
 
 export default App;

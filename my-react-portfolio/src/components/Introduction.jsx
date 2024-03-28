@@ -1,6 +1,6 @@
-import profilePicture from "../assets/profile-picture.jpeg";
-import arrow from "../assets/arrow.svg"
-import "./Introduction.css"
+import profilePicture from "/profile-picture.jpeg";
+import arrow from "/arrow.svg";
+import "./Introduction.css";
 
 const Introduction = () => {
   return (
