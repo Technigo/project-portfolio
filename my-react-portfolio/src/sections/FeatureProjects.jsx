@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import projectsData from "../projects.json";
 import Tags from "../components/Tags";
 import ProjectButtons from "../components/ProjectButtons";
+import Photos from "../components/Photos";
 
 const FeatureProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -23,6 +24,7 @@ const FeatureProjects = () => {
             gitHubLink={project.github}
             netlifyLink={project.netlify}
           />
+          <Photos images={[project.image]} />
         </div>
       ))}
     </div>
