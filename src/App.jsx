@@ -20,6 +20,9 @@ export const App = () => {
 				<TechSection />
 			</section>
 			<section>
+				<div className="card-h1">
+					<h1>Featured Projects</h1>
+				</div>
 				{projects.map((project, index) => (
 					<Card key={index} project={project} />
 				))}
