@@ -1,5 +1,6 @@
 import { Button } from "../Button/Button";
 import { Photo } from "../Photo/Photo";
+import "./Card.css";
 
 export const Card = ({
   color,
@@ -12,7 +13,7 @@ export const Card = ({
   netlify,
   github,
 }) => {
-  const renderTags = [tags];
+    const renderLink = netlify
 
   return (
     <section className={`article-container ${direction}`}>
@@ -22,15 +23,25 @@ export const Card = ({
         <p>{description}</p>
       </div>
       <div className="tags">
-        {renderTags.map((tag, index) => (
+        {tags.map((tag, index) => (
           <p className="tag" key={index}>
             {tag}
           </p>
         ))}
       </div>
       <div className="buttons">
-        {/* <Button source={netlify} image="globe" text="See it live" />
-        <Button source={github} image="github" text="View the code" /> */}
+        <Button
+          className="button"
+          source={renderLink}
+          image="Globe"
+          text="See it live"
+        />
+        <Button
+          className="button"
+          source={github}
+          image="GitHub"
+          text="View the code"
+        />
       </div>
     </section>
   );

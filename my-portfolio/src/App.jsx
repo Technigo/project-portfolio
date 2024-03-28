@@ -26,8 +26,6 @@ export const App = () => {
       });
   }, []);
 
-  console.log("Repos: ",  repos);
-
   return (
     <div className="App">
       <Profile />
