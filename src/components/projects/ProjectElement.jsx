@@ -6,7 +6,7 @@ import { Tags } from "./Tags.jsx"
 export const ProjectElement = ({
 	name,
 	description,
-	topic,
+	topics,
 	githubURL,
 	homepage,
 }) => {
@@ -15,9 +15,7 @@ export const ProjectElement = ({
 			<article>
 				<ProjectImage repo={name} />
 				<ProjectText title={name} description={description} />
-				<ul className='tags'>
-					<Tags topics={topic} />
-				</ul>
+				<Tags tags={topics} />
 				<ProjectButton githubURL1={githubURL} homepage={homepage} />
 			</article>
 		</>

@@ -1,11 +1,12 @@
-export const Tags = ({ topics }) => {
-	if (!topics) return null
+import "./Tags.css"
+
+export const Tags = ({ tags }) => {
 	return (
 		<div className='tag-container'>
-			{topics.map((topic) => (
-				<div className='tag' key={topic}>
-					{topic}
-				</div>
+			{tags.map((topic) => (
+				<li className='tag' key={topic}>
+					{topic.toUpperCase()}
+				</li>
 			))}
 		</div>
 	)

@@ -1,10 +1,10 @@
-import "./lead.css"
+import "./Lead.css"
 
 export const Lead = () => {
 	return (
 		<div className='leadtext-container'>
 			<h2>Tech</h2>
-			<p>
+			<p className='tech-keywords'>
 				HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js,
 				Mongo DB, Web Accessibility, APIs, mob-programming, pair-programming,
 				GitHub.{" "}

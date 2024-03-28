@@ -1,7 +1,8 @@
-.globe-wrapper,
-.github-wrapper {
+.btn-container {
 	display: flex;
-	padding: 7px;
+	flex-direction: column;
+	padding: 8px 0;
+	text-align: left;
 }
 
 .globe-btn,
@@ -15,9 +16,16 @@
 	border: none;
 }
 
-button > img {
+button > svg path {
 	width: 48px;
 	height: 48px;
+	fill: black;
+}
+
+button > p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	text-align: left;
 }
 
 .globe-btn:hover {
@@ -30,6 +38,11 @@ button > img {
 	cursor: pointer;
 	background-color: var(--technigo-pink);
 	color: white;
+}
+
+.github-btn:hover svg path,
+.globe-btn:hover svg path {
+	fill: white;
 }
 
 button:focus,

@@ -1,3 +1,5 @@
+import "./ProjectText.css"
+
 export const ProjectText = ({ title, description }) => {
 	const projectTypography = {
 		title: title.replaceAll("-", " ").toUpperCase(),

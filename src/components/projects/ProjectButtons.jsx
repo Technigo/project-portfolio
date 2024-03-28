@@ -1,5 +1,4 @@
-import { GlobeIcon } from "../miscellaneous/Icons"
-import { GithubIcon } from "../miscellaneous/Icons"
+import { GlobeIcon, GithubIcon } from "../miscellaneous/Icons"
 
 import "./ProjectButton.css"
 
