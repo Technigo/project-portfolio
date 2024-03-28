@@ -1,3 +1,5 @@
+import "./ProfilePicture.css"
+
 export const ProfilePicture = () => {
   return (
     <div className="profile-picture">

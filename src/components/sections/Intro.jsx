@@ -1,5 +1,6 @@
 import { HiArrowDown } from "react-icons/hi"
 import { ProfilePicture } from "../reusable/ProfilePicture"
+import "./Intro.css"
 
 export const Intro = () => {
   const scrollToTechSection = () => {

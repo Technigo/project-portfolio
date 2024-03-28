@@ -1,3 +1,5 @@
+import "./Tech.css"
+
 export const Tech = () => {
   return (
     <div className="tech" id="tech-section">

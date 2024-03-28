@@ -1,4 +1,5 @@
 import { ArticleCard } from "./ArticleCard"
+import "./Articles.css"
 
 export const MyWords = () => {
   return (

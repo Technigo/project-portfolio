@@ -5,6 +5,7 @@ import {
   FaStackOverflow,
   FaInstagram,
 } from "react-icons/fa"
+import "./Contact.css"
 
 export const Contact = () => {
   return (
