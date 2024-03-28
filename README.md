@@ -1,50 +1,10 @@
-<h1 align="center">
-  <a href="">
-    <img src="/react-p.svg" alt="Project Banner Image">
-  </a>
-</h1>
+# Linda's React Portfolio Project
 
-# Technigo - React Portfolio Project
+This is the first version of my portfolio.
+It assembles all the projects I did so far in the Technigo Bootcamp.
 
-Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
+## Future outlook
 
-## Instructions
-[Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
+When I have time I will go over the structure of my components and make the more reusable. I will also probably change the layout from flexbox to grid since it is better for responsivness. However I didn't do that yet, since the Theorie this week was a little late and I was already almost done. ;)
 
-## Set up your own version of your portfolio
-
-We will use [Vite](https://vitejs.dev/guide/) to setup our project 😉
-
-```bash
-  npm create vite@latest my-react-portfolio --template
-```
-
-#### Follow this GIF to setup your project
-
-![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WEB/Sprint-2/week-8/vite-react_vjp0ep.gif)
-
-## Installation
-
-Use the `cd` command to move into the folder
-
-```bash
-  cd my-react-portfolio
-```
-
-Install the dependencies
-
-```bash
-  npm i
-```
-
-Open the project in a separate VS Code editor
-
-```bash
-  code .
-```
-
-Open up a terminal inside VS code and lets run the project in a local environment
-
-```bash
-  npm run dev
-```
+## View it live:
