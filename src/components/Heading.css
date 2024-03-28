@@ -1,6 +1,7 @@
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	color: blue;
+	font-size: 70px;
 }
 
 h2 {
@@ -16,7 +17,7 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	padding: 0;
-
+	margin: 20% 10% 20% 10%;
 }
 
 .heading-name {
@@ -70,10 +71,18 @@ h3 {
 /* Nedan är stylingen till komponenten Tech.jsx */
 
 .color-wrapper {
-	display: grid;
-	grid-template-columns: 30% 70%;
-  margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0;
 	background-color: blue;
 	height: 500px;
 	width: 100%;
+}
+
+.color-wrapper h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	justify-content: flex-start;
+	margin-left: 20%;
+	align-content: center;
 }

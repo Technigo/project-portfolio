@@ -12,7 +12,7 @@ export const Introduction = () => {
 				<div className="heading-title">
 					<h1>Frontend Developer</h1>
 				</div>
-				<div className='heading-card'>
+				<div className="heading-card">
 					<img src={myImage} alt="Sofie" className="my-image"></img>
 					<div className="heading-text">
 						<p>
@@ -23,9 +23,9 @@ export const Introduction = () => {
 						</p>
 					</div>
 				</div>
-        <div className='arrow'>
-          <GoArrowDown />
-        </div>
+				<div className="arrow">
+					<GoArrowDown />
+				</div>
 			</div>
 		</>
 	)
