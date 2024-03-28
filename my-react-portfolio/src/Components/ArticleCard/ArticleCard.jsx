@@ -1,6 +1,7 @@
 import docIcon from '../Doc.svg'
 import { ImageArticle } from '../ImageArticle/ImageArticle'
 import './articleCard.css'
+import { Doc } from '../Icons/Icons'
 import moment from 'moment'
 export const ArticleCard = ({ articles, descriptions }) => {
   const formatDate = (dateString) => {
@@ -14,10 +15,12 @@ export const ArticleCard = ({ articles, descriptions }) => {
           <span>{formatDate(items.pubDate)}</span>
           <h1>{items.title}</h1>
           <p>{descriptions}</p>
-          <a href={items.link}>
-            <img src={docIcon} alt="doc-icon" />
-            Read Article
-          </a>
+          <button id="articleBtn">
+            <a href={items.link}>
+              <Doc alt="doc-icon" />
+              Read Article
+            </a>
+          </button>
         </div>
       ))}
     </div>

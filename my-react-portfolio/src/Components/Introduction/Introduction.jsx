@@ -29,7 +29,11 @@ export const Introduction = () => {
         <div className="image"></div>
         <h2>Hi, I&apos;m Vittoria Matteoli</h2>
         <h1>Frontend Developer</h1>
-        <p>write some text </p>
+        <p>
+          I&apos;m a Frontend Developer with recent experience in freelancing
+          who is excited about learning new things and skills | Digging into
+          JavaScript and React{' '}
+        </p>
         <button>
           <img
             src={isdown ? ArrowDown : Arrow}

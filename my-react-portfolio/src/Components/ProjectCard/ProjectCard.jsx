@@ -3,6 +3,7 @@ import gitHubIcon from './github.svg'
 import { Image } from '..//ImageProject/Image'
 import './projectCard.css'
 import './tag.css'
+import { Demo, Git } from '../Icons/Icons'
 
 export const ProjectCard = ({ projectList }) => {
   return (
@@ -23,13 +24,13 @@ export const ProjectCard = ({ projectList }) => {
               </div>
               <button id="liveDemoBtn">
                 <a href={items.homepage}>
-                  <img src={liveDemoIcon} alt="github-icon" />
+                  <Demo alt="github-icon" />
                   Live Demo
                 </a>
               </button>
               <button id="gitBtn">
                 <a href={items.html_url}>
-                  <img src={gitHubIcon} alt="github-icon" />
+                  <Git alt="github-icon" />
                   View the Code
                 </a>
               </button>
