@@ -16,35 +16,39 @@ export const Card = ({
   const renderLink = netlify;
 
   return (
-    <section className={`article-container ${direction}`}>
-      <Photo color={color} mode={mode} source={source} />
-      <div className="text-box">
-        <h3>{title}</h3>
-        <p>{description}</p>
+    <div className={`project-card ${direction}`}>
+      <div className="project-image">
+        <Photo color={color} mode={mode} source={source} />
       </div>
-      <div className="tags">
-        {tags.map((tag, index) => (
-          <p className="tag" key={index}>
-            {tag}
-          </p>
-        ))}
+      <div className="project-info">
+        <div className="text-box">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+        <div className="tags">
+          {tags.map((tag, index) => (
+            <p className="tag" key={index}>
+              {tag}
+            </p>
+          ))}
+        </div>
+        <div className="buttons">
+          <Button
+            className="button"
+            source={renderLink}
+            image="Globe"
+            text="Live demo"
+            color="purple"
+          />
+          <Button
+            className="button"
+            source={github}
+            image="GitHub"
+            text="View the code"
+            color="grey"
+          />
+        </div>
       </div>
-      <div className="buttons">
-        <Button
-          className="button"
-          source={renderLink}
-          image="Globe"
-          text="See it live"
-          color="purple"
-        />
-        <Button
-          className="button"
-          source={github}
-          image="GitHub"
-          text="View the code"
-          color="grey"
-        />
-      </div>
-    </section>
+    </div>
   );
 };

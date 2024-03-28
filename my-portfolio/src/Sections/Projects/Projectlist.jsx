@@ -7,7 +7,7 @@ export const Projectlist = () => {
   return (
     <div className="projectlist">
       <h2>Featured Projects</h2>
-      <div>
+      <div className="project-container">
         {projects.map((project, index) => (
           <Project
             key={index}
