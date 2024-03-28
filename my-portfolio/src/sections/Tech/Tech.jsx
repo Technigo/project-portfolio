@@ -1,8 +1,8 @@
 import "./Tech.css";
 
-export const Tech = () => {
+export const Tech = ({ techSectionRef }) => {
   return (
-    <section className="tech">
+    <section className="tech" ref={techSectionRef}>
       <div className="tech-wrapper">
         <h2 className="tech-heading">Tech</h2>
         <p className="large">

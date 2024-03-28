@@ -1,15 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Introduction } from "../Introduction/Introduction";
 import { Tech } from "../Tech/Tech";
 import { FeaturedProjects } from "../Featured projects/FeaturedProjects";
-import { Article } from "../Articles/Article";
 import { Skills } from "../Skills/Skills";
 import { Contact } from "../Contact/Contact";
 import "./Portfolio.css";
 
 export const Portfolio = () => {
-  const [repositories, setRepositories] = useState([]);
   const [error, setError] = useState(null);
+  const techSectionRef = useRef(null);
+  const [avatarUrl, setAvatarUrl] = useState("");
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     // Fetch repositories when component mounts
@@ -30,25 +31,48 @@ export const Portfolio = () => {
       })
       .then((data) => {
         console.log(data);
-        // Sort repositories based on the newest projects first, according to pins?
-        setRepositories(data);
+        const avatar = data[0]?.owner?.avatar_url;
+        // Filter out the "Portfolio"-project
+        const filteredProjects = data.filter(
+          (project) => project.name !== "Portfolio"
+        );
+        const projectsData = filteredProjects.map((project) => ({
+          id: project.id,
+          name: project.name,
+          description: project.description,
+          gitUrl: project.git_url,
+          topics: project.topics,
+          homepage: project.homepage,
+        }));
+        setAvatarUrl(avatar);
+        setProjects(projectsData);
       })
       .catch((error) => {
         setError("Error loading repositories. Please try again later");
       })
-      .finally(() => {});
+      .finally(() => {
+        setLoading(false); // Update loading state when fetching is done
+      });
+  };
+
+  const scrollToTechSection = () => {
+    if (techSectionRef.current) {
+      techSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
     <div className="main-wrapper">
       <header>
-        <Introduction />{" "}
+        <Introduction
+          scrollToTechSection={scrollToTechSection}
+          avatarUrl={avatarUrl}
+        />{" "}
       </header>
-      <Tech />
-      <FeaturedProjects />
-      <Article />
+      <Tech techSectionRef={techSectionRef} />
+      <FeaturedProjects projects={projects} />
       <Skills />
-      <Contact />
+      <Contact avatarUrl={avatarUrl} />
     </div>
   );
 };
