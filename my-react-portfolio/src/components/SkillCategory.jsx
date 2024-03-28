@@ -1,14 +1,21 @@
 export const SkillCategory = ({ skillSet }) => {
   return (
-    <>
-      <h1 style={{ backgroundColor: skillSet.backGroundColor }}>
+    <div className="skill flex-box">
+      <h1
+        className="skill-title"
+        style={{ backgroundColor: skillSet.backGroundColor }}
+      >
         {skillSet.title}
       </h1>
-      <ul>
+      <ul className="skill-items">
         {skillSet.items.map((item) => {
-          return <li key={item}>{item}</li>;
+          return (
+            <li className="skill-item" key={item}>
+              {item}
+            </li>
+          );
         })}
       </ul>
-    </>
+    </div>
   );
 };

@@ -9,9 +9,11 @@ const FeatureProjects = () => {
   };
 
   return (
-    <div>
-      <h1>Featured Projects</h1>
-      {getProjects()}
+    <div className="project-page">
+      <div className="project-page-content">
+        <h1 className="project-main-title">Featured Projects</h1>
+        {getProjects()}
+      </div>
     </div>
   );
 };
