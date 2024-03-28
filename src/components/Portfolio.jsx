@@ -4,6 +4,7 @@ import { TechSection } from "./TechSection";
 import { Header } from "./Header";
 import { Heading } from "./Heading";
 import { Skills } from "./Skills";
+import { Contact } from "./ContactSection";
 
 export const Portfolio = () => {
   const [repositories, setRepositories] = useState([]);
@@ -47,6 +48,7 @@ export const Portfolio = () => {
           <ProjectCard key={repo.id} repo={repo} />
         ))}
         <Skills />
+        <Contact repo={repositories[0]} />
       </div>
     </div>
   );
