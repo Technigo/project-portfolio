@@ -1,6 +1,6 @@
 import { ProjectText } from "./ProjectText.jsx"
 import { ProjectImage } from "./ProjectImage.jsx"
-import { ProjectButton } from "./ProjectButtons"
+import { ProjectButton } from "./ProjectButtons.jsx"
 import { Tags } from "./Tags.jsx"
 
 export const ProjectElement = ({

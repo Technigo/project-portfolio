@@ -1,4 +1,4 @@
-import "./header.css"
+import "./Header.css"
 import { Portrait } from "../miscellaneous/Portrait"
 import arrowDown from "../../assets/Vector 1.png"
 
