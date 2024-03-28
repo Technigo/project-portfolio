@@ -3,7 +3,7 @@ import arrowSvg from "../../assets/icons/Arrow.svg";
 
 export const Introduction = ({ avatarUrl, scrollToTechSection }) => {
   return (
-    <section className="introduction">
+    <section className="introduction-container">
       <div className="profile-image">
         <img src={avatarUrl} alt="profile-image" className="circle-image" />
       </div>
