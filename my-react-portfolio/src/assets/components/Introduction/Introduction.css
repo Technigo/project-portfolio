@@ -18,7 +18,7 @@
     border-radius: 50%;
     border: 13px dotted #FFD337;  
     /* animation: shake 4s ease infinite; */
-}
+} 
 
 /* @keyframes shake {
     0% {
@@ -76,7 +76,37 @@
     font-weight: 400;
     line-height: normal;
 }
-    
+
+.arrow{
+  animation: move 2.5s infinite ease-in-out;
+}
+
+.arrow :nth-of-type(2){
+  transform: rotate(180deg);
+}
+
+@keyframes move {
+  0%{margin-top: 0;}
+  50%{margin-top: 16px}
+}
+
+/* can change the dev-title to the color which match the tech page background, or yellow and blue linear gradient*/
 
 
+/*.intro-page {
+  max-width: 1512px;
+  /* width: 100%; */
+   /* padding: 332px 234px 63px 234px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
 
+.profilePhoto {
+  width: 400px;
+  height: 500px;
+  border-radius: 50%;
+  border: 13px dotted #FFD337;  
+  /* animation: shake 4s ease infinite; */
+  /*grid-column: 2 /span 3;;
+}

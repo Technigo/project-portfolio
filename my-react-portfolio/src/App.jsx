@@ -6,6 +6,7 @@ import { FeaturedProjects } from './assets/components/FeaturedProjects/FeaturedP
 import { MyWords } from './assets/components/myWords/MyWords'
 import { Skills } from './assets/components/skills/Skills'
 import { Contact } from './assets/components/Contact/Contact'
+import { Footer } from './assets/components/footer/Footer'
 
 
 export const App = () => {
@@ -20,6 +21,7 @@ export const App = () => {
         <MyWords />
         <Skills />
         <Contact />
+        <Footer />
       </main>
     </>
   )

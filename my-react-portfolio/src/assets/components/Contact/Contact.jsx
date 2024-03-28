@@ -19,9 +19,7 @@ export const Contact = () => {
                 <p className='phone'>phone number</p>
                 <p className='email'>email</p>
               </div>
-              
             </div>
-            
             <div className="contactIcons">
             <BtnLink link={linkedin} src={linkedinBtn} alt={'linkednin button'} btnContent={''} />
             <BtnLink link={linkedin} src={gitHubBtn} alt={'gitHub button'} btnContent={''} />
