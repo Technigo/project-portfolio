@@ -16,7 +16,6 @@ export const Projects = () => {
             id="screenshot"
             className="happy"
             src={happy}
-            width="500px"
           ></img>
           <h4>Title of project</h4>
           <h5>Information text about project</h5>
@@ -33,7 +32,6 @@ export const Projects = () => {
             id="screenshot"
             className="survey"
             src={survey}
-            width="500px"
           ></img>
           <h4>Title of project</h4>
           <h5>Information text about project</h5>
@@ -50,7 +48,6 @@ export const Projects = () => {
             id="screenshot"
             className="music"
             src={music}
-            width="500px"
           ></img>
           <h4>Title of project</h4>
           <h5>Information text about project</h5>
@@ -67,7 +64,6 @@ export const Projects = () => {
             id="screenshot"
             className="weather"
             src={weather}
-            width="500px"
           ></img>
           <h4>Title of project</h4>
           <h5>Information text about project</h5>
@@ -84,7 +80,6 @@ export const Projects = () => {
             id="screenshot"
             className="library"
             src={library}
-            width="500px"
           ></img>
           <h4>Title of project</h4>
           <h5>Information text about project</h5>
@@ -101,7 +96,6 @@ export const Projects = () => {
             id="screenshot"
             className="chatbot"
             src={chatbot}
-            width="500px"
           ></img>
           <h4>Title of project</h4>
           <h5>Information text about project</h5>
