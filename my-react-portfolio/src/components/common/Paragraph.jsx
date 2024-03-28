@@ -1,3 +1,5 @@
+import "./common.css";
+
 export const Paragraph = ({ text, className }) => {
-  return <p className={className}>{text}</p>;
+  return <p className={`custom-paragraph ${className}`}>{text}</p>; // Apply the custom class
 };
