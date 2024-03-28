@@ -16,13 +16,23 @@ const ProjectCard = ({ project }) => {
       <div className={styles.reference}>
         <span className={styles.refItem}>
           <IoIosLink />
-          <a href={project.netlify} rel="noopener noreferrer" target="_blank">
+          <a
+            href={project.netlify}
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label={`Go to the live preview of ${project.name}`}
+          >
             Live Preview
           </a>
         </span>
         <span className={styles.refItem}>
           <FaGithub />
-          <a href={project.github} rel="noopener noreferrer" target="_blank">
+          <a
+            href={project.github}
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label={`Go to the code behind ${project.name}`}
+          >
             View Code
           </a>
         </span>
