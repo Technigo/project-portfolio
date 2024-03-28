@@ -43,7 +43,7 @@ const Navbar = () => {
         <li>
           <a
             className={styles.navItem}
-            href="#"
+            href="#contact"
             aria-label="Go to contact section"
           >
             Contact
