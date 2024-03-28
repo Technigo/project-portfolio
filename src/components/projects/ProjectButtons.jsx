@@ -1,27 +1,28 @@
-import globe from "../../assets/globe-black.svg"
-import github from "../../assets/github-black.svg"
+import { GlobeIcon } from "../miscellaneous/Icons"
+import { GithubIcon } from "../miscellaneous/Icons"
+
 import "./ProjectButton.css"
 
-export const ProjectButton = ({ svn_url, homepage }) => {
+export const ProjectButton = ({ githubURL1, homepage }) => {
 	const buttonInfo = {
-		githubURL: svn_url,
-		deplyedURL: homepage,
+		githubURL2: githubURL1,
+		homepage: homepage,
 	}
 	return (
 		<>
 			<div className='btn-container'>
 				<div className='globe-wrapper'>
-					<a href={buttonInfo.deployedURL} target='_blank'>
+					<a href={buttonInfo.homepage} target='_blank'>
 						<button className='globe-btn'>
-							<img src={globe} alt='Globe icon' />
+							<GlobeIcon alt='Globe icon' />
 							<p>Live Demo</p>
 						</button>
 					</a>
 				</div>
 				<div className='github-wrapper'>
-					<a href={buttonInfo.githubURL} target='_blank'>
+					<a href={buttonInfo.githubURL2} target='_blank'>
 						<button className='github-btn'>
-							<img src={github} alt='Github icon' />
+							<GithubIcon alt='Github icon' />
 							<p>View the code</p>
 						</button>
 					</a>

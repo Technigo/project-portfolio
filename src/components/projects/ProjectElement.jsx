@@ -3,25 +3,23 @@ import { ProjectImage } from "./ProjectImage.jsx"
 import { ProjectButton } from "./ProjectButtons"
 import { Tags } from "./Tags.jsx"
 
-export const ProjectElement = ({ name, description, topics }) => {
-	console.log(typeof html_url)
+export const ProjectElement = ({
+	name,
+	description,
+	topic,
+	githubURL,
+	homepage,
+}) => {
 	return (
 		<>
 			<article>
 				<ProjectImage repo={name} />
 				<ProjectText title={name} description={description} />
 				<ul className='tags'>
-					<Tags topics={topics} />
+					<Tags topics={topic} />
 				</ul>
-				<ProjectButton />
+				<ProjectButton githubURL1={githubURL} homepage={homepage} />
 			</article>
 		</>
 	)
 }
-
-// key={repo.id}
-// name={repo.name}
-// description={repo.description}
-// homepage={repo.homepage}
-// github={repo.svn_url}
-// topics={repo.tpoics}

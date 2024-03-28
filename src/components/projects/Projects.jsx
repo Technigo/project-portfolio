@@ -24,7 +24,7 @@ export const Projects = () => {
 			}
 		}
 		fetchRepos()
-	}, [])
+	}, [repos])
 
 	return (
 		<div className='project-container'>
@@ -37,8 +37,8 @@ export const Projects = () => {
 							name={repo.name}
 							description={repo.description}
 							homepage={repo.homepage}
-							github={repo.svn_url}
-							topics={repo.tpoics}
+							githubURL={repo.svn_url}
+							topics={repo.topics}
 						/>
 					)
 				})}

@@ -1,5 +1,5 @@
 export const Tags = ({ topics }) => {
-	if (!topics) return
+	if (!topics) return null
 	return (
 		<div className='tag-container'>
 			{topics.map((topic) => (
