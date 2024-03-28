@@ -4,6 +4,7 @@
 - make mockup photos
 - og tags
 - split up css
+- find colors
 
 ### Planning and general thoughts
 
