@@ -1,5 +1,5 @@
 import "./ContactSection.css";
-import Linda from "../assets/FotoLinda.jpg";
+import Linda from "/FotoLinda.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Banner } from "./Banner";

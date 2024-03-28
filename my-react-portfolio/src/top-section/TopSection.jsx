@@ -1,6 +1,6 @@
 import "./TopSection.css";
 import { FaArrowDown } from "react-icons/fa6";
-import Linda from "../assets/FotoLinda.jpg";
+import Linda from "/FotoLinda.jpg";
 
 export const TopSection = () => {
   return (
