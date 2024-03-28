@@ -1,10 +1,11 @@
 import { useRef } from "react";
 import FeatureProjects from "./components/FeatureProjects";
 import Introduction from "./components/Introduction";
-import { MyWords } from "./components/MyWords";
+
 import Tech from "./components/Tech";
 import { Footer } from "./components/Footer";
 import { ContactInfo } from "./components/ContactInfo";
+import { SkillPage } from "./components/SkillPage";
 
 export const App = () => {
   const techRef = useRef(null);
@@ -21,7 +22,8 @@ export const App = () => {
         <Tech />
       </div>
       <FeatureProjects />
-      {/*<MyWords/>*/}
+
+      <SkillPage />
       <ContactInfo />
       <Footer />
     </div>

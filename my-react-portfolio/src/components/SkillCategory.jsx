@@ -1,14 +1,13 @@
-export const SkillCategory = () => {
+export const SkillCategory = ({ skillSet }) => {
   return (
     <>
-      <h1>Title</h1>
+      <h1 style={{ backgroundColor: skillSet.backGroundColor }}>
+        {skillSet.title}
+      </h1>
       <ul>
-        <li>HTML</li>
-        <li>CSS3</li>
-        <li>JavaScript ES6</li>
-        <li>React</li>
-        <li>Styled Components</li>
-        <li>GitHub</li>
+        {skillSet.items.map((item) => {
+          return <li key={item}>{item}</li>;
+        })}
       </ul>
     </>
   );

@@ -8,7 +8,12 @@ const FeatureProjects = () => {
     ));
   };
 
-  return <div>{getProjects()}</div>;
+  return (
+    <div>
+      <h1>Featured Projects</h1>
+      {getProjects()}
+    </div>
+  );
 };
 
 export default FeatureProjects;
