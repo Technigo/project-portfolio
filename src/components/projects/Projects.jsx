@@ -26,6 +26,7 @@ export const Projects = () => {
 		fetchRepos()
 	}, [])
 
+	//Filter through only repos with deployed website.
 	const filteredRepos = repos.filter((repo) => repo.homepage)
 
 	return (
