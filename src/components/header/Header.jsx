@@ -5,7 +5,9 @@ import arrowDown from "../../assets/Vector 1.png"
 export const Header = () => {
 	return (
 		<div className='header-container'>
-			<Portrait />
+			<div className='portrait-wrapper'>
+				<Portrait />
+			</div>
 			<div className='header-titles'>
 				<p>Hi, I&apos;m Nathalie.</p>
 				<h1>SEO Consultant & Junior Web Developer</h1>
