@@ -18,6 +18,9 @@ export const Card = () => {
           </p>
           <div className="tech-tags">
             <Tag tagName="HTML5" />
+            <Tag tagName="CSS3" />
+            <Tag tagName="React" />
+            <Tag tagName="Node" />
           </div>
         </div>
         <div className="button-wrapper">
