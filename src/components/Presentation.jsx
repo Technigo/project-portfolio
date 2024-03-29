@@ -4,10 +4,19 @@ import ArticleCard from './ArticleCard';
 import SquigglyLine from './squigglyline'; 
 import Article1 from '../assets/Article1.jpg'; // Path to your image
 import Article2 from '../assets/Article2.jpg'; // Path to your image
+import Article2 from '../assets/Article3.jpg'; // Path to your image
 
 function Presentation() {
   // Define the articles array here
   const articles = [
+    {
+      id: 3,
+      title: "Imposter syndrome and when it hits you",
+      description: "My everlasting feeling of being an imposter and how I deal with it",
+      imageUrl: Article3,
+      date: "March 2024",
+      url: "https://medium.com/@alexandrameija/impostor-syndrome-and-when-it-hits-you-d794c6d4cd69" // Add the article's URL here
+    },
     {
       id: 2,
       title: "GLOW",
