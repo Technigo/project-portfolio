@@ -1,9 +1,10 @@
-import repoData from "./projects.json";
+import localProjectsData from "./projects.json";
 import { Header } from "../common/Header";
 import { Paragraph } from "../common/Paragraph";
-import { useState } from "react";
+import { Label } from "../common/Label";
 import { Button } from "../common/Button";
 import { Image } from "../common/Image";
+import { useState } from "react";
 
 export const ProjectCard = ({ repositories }) => {
   //state to track the number of cards to display
@@ -11,15 +12,23 @@ export const ProjectCard = ({ repositories }) => {
 
   // Filter and match repositories with data in projects.json
   const filteredRepos = repositories.filter((repo) => {
-    return repoData.projects.some((data) => data.repoName === repo.name);
+    return localProjectsData.projects.some(
+      (data) => data.repoName === repo.name
+    );
   });
+  //This checks if a project name (repo.name) from the repositories array exists in any of the project names (data.repoName) within repoData.projects.
 
+  /*  // Sort the filtrered repositories
   filteredRepos.sort((a, b) => {
-    const aData = repoData.projects.find((data) => data.name === a.name);
-    const bData = repoData.projects.find((data) => data.name === b.name);
+    const aData = localProjectsData.projects.find(
+      (data) => data.name === a.name
+    );
+    const bData = localProjectsData.projects.find(
+      (data) => data.name === b.name
+    );
     return bData.id - aData.id;
   });
-
+ */
   const toggleVisibleCards = () => {
     //show 5 cards or all card based on the current state
     setVisisbleCards((prevVisibleCards) =>
@@ -31,13 +40,15 @@ export const ProjectCard = ({ repositories }) => {
 
   return (
     <>
+      {/* Map over filtered repositories to display project cards */}
       {filteredRepos.slice(0, visibleCards).map((repo) => {
-        const matchingData = repoData.projects.find(
+        const matchingData = localProjectsData.projects.find(
           (data) => data.repoName === repo.name
         );
 
+        //Handle missing data
         if (!matchingData) {
-          return null; //Handle missing data
+          return null;
         }
 
         return (
@@ -55,7 +66,13 @@ export const ProjectCard = ({ repositories }) => {
                 aria-labek="This is the main heading"
                 className="project-card-heading"
               />
-              <Paragraph text={repo.description} />
+              <Paragraph text={matchingData.description} />
+              {/* Displaying tags */}
+              <div role="tag" aria-label="Tags" className="tags">
+                {matchingData.tags.map((tag, index) => (
+                  <Label key={index} tagText={tag} />
+                ))}
+              </div>
             </div>
             <div className="button-wrapper">
               <Button
@@ -74,7 +91,8 @@ export const ProjectCard = ({ repositories }) => {
           </article>
         );
       })}
-      <div className="tn-wtrapper">
+      {/* Button to toggle visibility of project cards */}
+      <div className="tn-wrapper">
         <Button
           label={showMoreLessLabel}
           className="show-more-btn"

@@ -1,11 +1,10 @@
 import { Header } from "../common/Header";
 import { Image } from "../common/Image";
 import { Paragraph } from "../common/Paragraph";
-import { Tech } from "./components/tech/Tech";
+import { Tech } from "../tech/Tech";
 import { useRef } from "react";
-import arrowImage from "/public/icons/Arrow.svg";
-
-import "../../components/intro/intro.css";
+import arrowImage from "/icons/Arrow.svg";
+import "./intro.css";
 /* import "../../components/common/common.css"; */
 
 //Define the Intro component
@@ -27,7 +26,7 @@ export const Intro = () => {
         <Image
           sectionClassName={"profile-image"}
           elementClassName={"circle-image"}
-          src="public/images/profile.jpg"
+          src="/images/profile.jpg"
           alt="Introduction Image of Maria-Manuela"
         />
         <section className="headings">

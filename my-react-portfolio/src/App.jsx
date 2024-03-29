@@ -1,4 +1,4 @@
-import { Intro } from "./components/intro/Intro";
+import { Intro } from "./components/introduction/Intro";
 import { Projects } from "./components/projects/Projects";
 import { Articles } from "./components/blog/Articles";
 import { Skills } from "./components/skills/Skills";

@@ -20,7 +20,6 @@ export const Projects = () => {
       }
 
       const rawData = await response.json();
-      console.log(rawData);
       setGitData(rawData);
     } catch (error) {
       setError(error);
