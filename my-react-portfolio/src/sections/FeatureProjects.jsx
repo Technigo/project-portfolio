@@ -18,6 +18,7 @@ const FeatureProjects = () => {
       <h1>Featured Projects</h1>
       {projects.map((project, index) => (
         <div key={index} className="projects">
+          <Photos images={project.image} />
           <h2>{project.name}</h2>
           <p>{project.description}</p>
           <Tags tags={project.tags} />
@@ -25,7 +26,6 @@ const FeatureProjects = () => {
             gitHubLink={project.github}
             netlifyLink={project.netlify}
           />
-          <Photos images={project.image} />
         </div>
       ))}
     </div>
