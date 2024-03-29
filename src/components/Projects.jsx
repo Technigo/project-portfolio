@@ -15,6 +15,7 @@ export const Projects = () => {
             name={project.name}
             description={project.description}
             tags={project.tags}
+            liveDemoLink={project.netlify}
           />
         ))}
       </div>
