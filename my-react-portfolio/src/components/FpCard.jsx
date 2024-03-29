@@ -1,6 +1,7 @@
 import { Photo } from "./Photo";
 import techImage from "/tech-image.jpg";
 import "./FpCard.css";
+import { Tag } from "./Tag";
 
 export const FpCard = () => {
   return (
@@ -15,7 +16,7 @@ export const FpCard = () => {
             automated responses to user inquiries.
           </p>
           <div className="tech-tags">
-            <p>tags</p>
+            <Tag tagName="HTML5" />
           </div>
         </div>
         <div className="buttons">
