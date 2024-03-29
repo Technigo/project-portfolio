@@ -22,7 +22,7 @@ export const Projects = () => {
   return (
     <section className="flex projects-section">
       <div className="flex projects-container">
-        <Heading level="1" text="Featured Projects" className="blue" />
+        <Heading level="2" text="Featured Projects" className="blue" />
         <SingleProject projects={projects} />
       </div>
     </section>

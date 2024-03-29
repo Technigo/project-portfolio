@@ -17,8 +17,8 @@ export const SingleProject = ({ projects }) => {
           !dataset.homepage.includes("github") && (
             <div className="flex singleproject-card" key={dataset.id}>
               {/* Pass props */}
-              <ProjectImage projectName={dataset.name} images={images} />{" "}
-              <Heading level={2} text={dataset.name} />
+              <ProjectImage projectName={dataset.name} images={images} />
+              <Heading level={3} text={dataset.name} />
               <p>{dataset.description}</p>
               <Tags tags={dataset.topics} />
               <Button

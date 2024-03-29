@@ -10,9 +10,9 @@ export const Introduction = () => {
 
         {/* <div className="flex intro-image"></div> */}
         <div className="flex intro-wrapper">
-          <Heading level="5" text="Hi, I'm Eliane Weber" />
+          <p className="welcome">Hi, I&apos;m Eliane</p>
           <Heading
-            level="2"
+            level="1"
             text="Marketing Manager with coding skills"
             className="blue"
           />
