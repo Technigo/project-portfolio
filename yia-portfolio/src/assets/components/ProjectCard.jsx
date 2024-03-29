@@ -1,5 +1,5 @@
-import { ProjectImage } from "./ProjectImages";
-import { Tag } from "./Tag"; 
+import { ProjectImages } from "./ProjectImages";
+import { Tags } from "./Tags"; 
 import { Buttons } from "./Buttons";
 
 export const ProjectCard = ({
@@ -12,13 +12,13 @@ export const ProjectCard = ({
 }) => {
   return (
     <div>
-      <ProjectImage projectName={name} />
+      <ProjectImages projectName={name} />
           <div className="project-description">
             <h2>
               {name[0].toUpperCase() + name.replaceAll("-", " ").slice(1)}
             </h2>
             <p>{description}</p>
-            <Tag tags={tags} />
+            <Tags tags={tags} />
             <Buttons homepage={homepage} url={url} headlineId={headlineId} />
           </div>
         </div>

@@ -1,11 +1,10 @@
-import repoImages from "../images.json";
+import projectImagesData from "./images.json";
 
-export const Images = ({ projectName }) => {
-  const projectImage = repoImages.find(
+export const ProjectImages = ({ projectName }) => {
+  const projectImage = projectImagesData.find(
     (img) => img.projectName === projectName
   );
-  console.log(repoImages);
-  console.log(projectImage);
+
   return (
     <div className="project-image">
       <ul>

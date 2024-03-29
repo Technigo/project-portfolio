@@ -1,4 +1,4 @@
-import "./Buttons.css";
+
 
 export const Buttons = ({ homepage, url, link, headlineId }) => {
   if (headlineId === 3) {
