@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const Project = ({ projectData }) => {
   const getTechnologies = () => {
     return projectData.technologies.map((technology) => (
@@ -23,7 +25,7 @@ export const Project = ({ projectData }) => {
                 className="project-demo-link project-link flex-box"
                 href={projectData.demoLink}
               >
-                <img className="project-link-image" src="./liveDemo.svg" />
+                <img src="./liveDemo.svg" />
                 <span className="project-link-text">Live Demo </span>
               </a>
               <a
@@ -39,4 +41,15 @@ export const Project = ({ projectData }) => {
       </div>
     </>
   );
+};
+
+Project.propTypes = {
+  projectData: PropTypes.shape({
+    technologies: PropTypes.array.isRequired,
+    imageSrc: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    demoLink: PropTypes.string.isRequired,
+    gitLink: PropTypes.string.isRequired,
+  }),
 };

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const SkillCategory = ({ skillSet }) => {
   return (
     <div className="skill flex-box">
@@ -18,4 +20,12 @@ export const SkillCategory = ({ skillSet }) => {
       </ul>
     </div>
   );
+};
+
+SkillCategory.propTypes = {
+  skillSet: PropTypes.shape({
+    backGroundColor: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    items: PropTypes.array.isRequired,
+  }),
 };
