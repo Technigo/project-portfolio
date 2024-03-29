@@ -6,7 +6,7 @@ const Introduction = () => {
   return (
     <section className="introduction">
       <div className="profile-box">
-        <h2>Hi, Im Frida Svensson</h2>
+        <h2>Hi, I’m Frida Svensson</h2>
         <h1>Frontend Developer</h1>
         <div className="profile-wrapper">
           <img className="profile-picture" src={profilePicture} />

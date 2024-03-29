@@ -1,0 +1,29 @@
+.ticker-tape {
+  background-color: #ff4575;
+  color: white;
+  width: 100vw;
+  height: 114px;
+}
+
+.ticker-tape-scroll {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  height: 114px;
+  animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.ticker-tape p {
+  font-size: 26.038px;
+  font-weight: 600;
+  line-height: 37.874px;
+}

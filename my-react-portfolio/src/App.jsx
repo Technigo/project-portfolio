@@ -4,6 +4,7 @@ import Introduction from "./components/Introduction";
 import { LetsTalk } from "./components/LetsTalk";
 import { Skills } from "./components/Skills";
 import Tech from "./components/Tech";
+import { TickerTape } from "./components/TickerTape";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <FeaturedProjects />
       <Skills />
       <LetsTalk />
+      <TickerTape />
     </>
   );
 };
