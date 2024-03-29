@@ -1,10 +1,11 @@
 import { Image } from "../Image/Image";
+import { ProjectContent } from "../ProjectContent/ProjectContent";
 
-export const ProjectCard = ({ image }) => {
+export const ProjectCard = ({ image, name, description, tags }) => {
   return (
     <article>
-      <Image src={image} />
-      {/* <TextBox title={name} /> */}
+      <Image image={image} />
+      <ProjectContent name={name} description={description} tags={tags} />
     </article>
   );
 };
