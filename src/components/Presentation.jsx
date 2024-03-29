@@ -4,7 +4,7 @@ import ArticleCard from './ArticleCard';
 import SquigglyLine from './squigglyline'; 
 import Article1 from '../assets/Article1.jpg'; // Path to your image
 import Article2 from '../assets/Article2.jpg'; // Path to your image
-import Article2 from '../assets/Article3.jpg'; // Path to your image
+import Article3 from '../assets/Article3.jpg'; // Path to your image
 
 function Presentation() {
   // Define the articles array here
