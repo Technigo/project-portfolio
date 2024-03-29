@@ -4,6 +4,7 @@ import './App.css'
 import { projects } from "../projects.json"
 import { Introduction } from './components/Introduction'
 import { TechSection } from './components/Tech'
+import { MySkills } from './components/Skills'
 
 //import H from '@nicodes/react-heading'
 
@@ -26,6 +27,9 @@ export const App = () => {
 				{projects.map((project, index) => (
 					<Card key={index} project={project} />
 				))}
+			</section>
+			<section>
+				<MySkills />
 			</section>
 		</>
 	)
