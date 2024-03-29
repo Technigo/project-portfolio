@@ -1,4 +1,4 @@
-import "./projects.css";
+import "./Projects.css";
 
 import { SingleProject } from "../singleProject/SingleProject";
 import { useState, useEffect } from "react";
