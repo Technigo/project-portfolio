@@ -141,7 +141,6 @@ li {
   }
 
   .tech,
-  .skills,
   .contact {
     padding: 200px 120px;
   }
@@ -151,11 +150,13 @@ li {
   }
 
   .skill-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
-  .skill-card {
-    width: 50%;
+
+  .skills {
+    padding: 200px;
   }
 
   .project-item {
@@ -180,7 +181,7 @@ li {
   }
 
   .link-button-netlify {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 
   .contact-icons {
@@ -210,13 +211,8 @@ li {
   .intro,
   .projects,
   .articles-container,
-  .skills,
   .contact {
     padding: 100px;
-  }
-
-  .skills {
-    padding: 150px 100px;
   }
 
   .skills h2 {
@@ -252,8 +248,8 @@ li {
   }
 
   .skill-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
   }
 }
