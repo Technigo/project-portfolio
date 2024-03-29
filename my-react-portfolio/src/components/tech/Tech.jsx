@@ -1,4 +1,4 @@
-import "./tech.css";
+import "./Tech.css";
 
 export const Tech = () => {
   return (
