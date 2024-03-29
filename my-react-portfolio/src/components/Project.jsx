@@ -7,14 +7,18 @@ import "../styling/featureProjects/FeatureProjects.css";
 const Project = ({ project }) => {
   return (
     <div className="project">
-      <Photos images={project.image} />
-      <h2>{project.name}</h2>
-      <p>{project.description}</p>
-      <Tags tags={project.tags} />
-      <ProjectButtons
-        gitHubLink={project.github}
-        netlifyLink={project.netlify}
-      />
+      <div className="projectImage">
+        <Photos images={project.image} />
+      </div>
+      <div className="projectContainer">
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+        <Tags tags={project.tags} />
+        <ProjectButtons
+          gitHubLink={project.github}
+          netlifyLink={project.netlify}
+        />
+      </div>
     </div>
   );
 };

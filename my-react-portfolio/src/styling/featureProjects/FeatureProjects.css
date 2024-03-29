@@ -2,21 +2,29 @@
   text-align: center;
   color: #0a25f5;
   font-family: Montserrat;
-  margin: 80px 0 50px 0;
+  margin: 80px 0 60px 0;
 }
 
 .project {
-  margin: 0 15px 40px 15px;
-  display: flex;
-  flex-direction: column;
-  font-family: Montserrat;
+  margin: 0 15px 50px 15px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .project h2 {
   margin-bottom: 0;
 }
 
-.projectImage {
-  display: block;
-  margin: 0 auto;
+/*** Tablet ***/
+
+@media (min-width: 745px) {
+  .project {
+    margin: 0 30px 50px 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projectContainer {
+    margin-left: 30px;
+    grid-column: 2 / 4;
+  }
 }
