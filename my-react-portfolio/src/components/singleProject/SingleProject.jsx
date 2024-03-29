@@ -3,6 +3,7 @@ import "./SingleProject.css";
 
 import images from "./images.json";
 import { ProjectImage } from "../projectImage/ProjectImage";
+import { Button } from "../button/Button";
 
 //access data from Projects.jsx via props
 export const SingleProject = ({ projects }) => {
@@ -19,17 +20,19 @@ export const SingleProject = ({ projects }) => {
               <h2>{dataset.name}</h2>
               <p>{dataset.description}</p>
               <p>{dataset.topics}</p>
-              <button>{dataset.homepage}</button>
-              <button>{dataset.html_url}</button>
+              <Button
+                label="Live demo"
+                buttonType="liveDemo"
+                onClick={() => window.open(dataset.homepage)}
+              />
+              <Button
+                label="View the code"
+                buttonType="github"
+                onClick={() => window.open(dataset.html_url)}
+              />
             </div>
           )
       )}
     </>
   );
 };
-
-// Function to get image URL based on project name from images.json
-// const getImage = (projectName) => {
-//   const image = images.find((img) => img.projectName === projectName);
-//   return image ? `/images/${image.imageUrl}` : "";
-// };
