@@ -1,11 +1,12 @@
 import { Photo } from "./Photo";
-import techImage from "/tech-image.jpg";
-import "./FpCard.css";
 import { Tag } from "./Tag";
+import { Button } from "./Button";
+import techImage from "/tech-image.jpg";
+import "./Card.css";
 
-export const FpCard = () => {
+export const Card = () => {
   return (
-    <div className="FpCard-box">
+    <div className="Card-box">
       <Photo source={techImage} color="blue" size="small" />
       <div className="project-info-wrapper">
         <div className="description-and-tags">
@@ -19,8 +20,17 @@ export const FpCard = () => {
             <Tag tagName="HTML5" />
           </div>
         </div>
-        <div className="buttons">
-          <button className="button">Live demo</button>
+        <div className="button-wrapper">
+          <Button
+            className="live-demo"
+            label="Live demo"
+            icon="fa-solid fa-globe"
+          />
+          <Button
+            className="view-the-code"
+            label="View the code"
+            icon="fab fa-github"
+          />
         </div>
       </div>
     </div>
