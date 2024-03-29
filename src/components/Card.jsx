@@ -26,7 +26,7 @@ export const Card = ({ project }) => {
 							</button>
 						</a>
 						<a href={project.github} className="button">
-							<button>
+							<button className='github-btn'>
 								{' '}
 								<FaGithub /> View the code
 							</button>
