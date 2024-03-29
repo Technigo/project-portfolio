@@ -2,6 +2,7 @@ import { ProjectText } from "./ProjectText.jsx"
 import { ProjectImage } from "./ProjectImage.jsx"
 import { ProjectButton } from "./ProjectButtons.jsx"
 import { Tags } from "./Tags.jsx"
+import "./ProjectElement.css"
 
 export const ProjectElement = ({
 	name,
@@ -14,9 +15,11 @@ export const ProjectElement = ({
 		<>
 			<article>
 				<ProjectImage repo={name} />
-				<ProjectText title={name} description={description} />
-				<Tags tags={topics} />
-				<ProjectButton githubURL1={githubURL} homepage={homepage} />
+				<div className='project-element-container'>
+					<ProjectText title={name} description={description} />
+					<Tags tags={topics} />
+					<ProjectButton githubURL1={githubURL} homepage={homepage} />
+				</div>
 			</article>
 		</>
 	)

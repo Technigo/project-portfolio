@@ -48,13 +48,35 @@
 	color: white;
 }
 
-.code-container > ul,
-.toolbox-container > ul,
-.upcoming-container > ul,
-.more-container > ul {
+#skill-container > ul {
 	list-style-type: none;
 	padding-inline-start: 0;
 	color: white;
 	font-weight: 400;
 	font-size: 18px;
+}
+
+@media screen and (min-width: 667px) {
+	.skills-block {
+		flex-wrap: wrap;
+		flex-direction: row;
+		padding: 0 105px;
+		text-align: center;
+		justify-content: space-around;
+	}
+
+	#skill-container {
+		margin: 0 25px;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.skills-block {
+		padding: 0 161px;
+		justify-content: space-around;
+		gap: 26px;
+	}
+	#skill-container {
+		margin: 10px auto;
+	}
 }

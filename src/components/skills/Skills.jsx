@@ -5,7 +5,7 @@ export const Skills = () => {
 		<div className='skill-container'>
 			<h2>Skills</h2>
 			<div className='skills-block'>
-				<div className='code-container'>
+				<div id='skill-container' className='code-container'>
 					<h3>Code</h3>
 					<ul>
 						<li>HTML5</li>
@@ -15,7 +15,7 @@ export const Skills = () => {
 						<li>Styled Components</li>
 					</ul>
 				</div>
-				<div className='toolbox-container'>
+				<div id='skill-container' className='toolbox-container'>
 					<h3>Toolbox</h3>
 					<ul>
 						<li>Visual Studio Code</li>
@@ -27,7 +27,7 @@ export const Skills = () => {
 						<li>Google Tools</li>
 					</ul>
 				</div>
-				<div className='upcoming-container'>
+				<div id='skill-container' className='upcoming-container'>
 					<h3>Upcoming</h3>
 					<ul>
 						<li>Node.js</li>
@@ -36,10 +36,10 @@ export const Skills = () => {
 						<li>Typescript</li>
 					</ul>
 				</div>
-				<div className='more-container'>
+				<div id='skill-container' className='more-container'>
 					<h3>More</h3>
 					<ul>
-						<li>Search Engine Optimization</li>
+						<li>SEO</li>
 						<li>Keyword Research</li>
 						<li>Core Web Vitals</li>
 						<li>Website Relaunch</li>
