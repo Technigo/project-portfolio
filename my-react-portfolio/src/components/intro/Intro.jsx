@@ -1,21 +1,22 @@
-import { useRef } from "react";
 import { Header } from "../common/Header";
 import { Image } from "../common/Image";
 import { Paragraph } from "../common/Paragraph";
+import { Tech } from "./components/tech/Tech";
+import { useRef } from "react";
 import arrowImage from "/public/icons/Arrow.svg";
+
 import "../../components/intro/intro.css";
-import "../../components/common/common.css";
-import { Tech } from "../tech/Tech";
+/* import "../../components/common/common.css"; */
 
 //Define the Intro component
 export const Intro = () => {
+  // Define the introduction text
   const techSectionRef = useRef(null); // Create a ref for the Tech Section
 
   const handleArrowClick = () => {
     // Scroll to the Tech section when the arrow is clicked
     techSectionRef.current.scrollIntoView({ behaviour: "smooth" });
   };
-  // Define the introduction text
   const introText =
     "Maria-Manuela, a frontend developer, excels in crafting user-friendly applications with a focus on accessibility. Her dedication to inclusivity and innovative solutions sets her apart in the technology field.";
 
