@@ -1,12 +1,14 @@
-import Homescreen from "./sections/Homescreen"
-import './App.css'
+import { Homescreen } from "./assets/sections/Homescreen.jsx";
+import { Tech } from "./assets/sections/Tech.jsx";
+import { FeaturedProject } from "./assets/sections/FeaturedProject.jsx";
+import "./App.css";
 
-export unction App() {
-  
-
+export const App = () => {
   return (
-
-  <Homescreen />
-  )
-}
-
+    <>
+      <Homescreen />
+      <Tech />
+      <FeaturedProject />
+    </>
+  );
+};
