@@ -18,9 +18,19 @@
 }
 
 .arrow {
+  animation: arrowJump 1.5s infinite alternate-reverse;
   display: block;
   margin: auto;
   bottom: 63px;
+}
+
+@keyframes arrowJump {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
 }
 
 .profile-wrapper img {
