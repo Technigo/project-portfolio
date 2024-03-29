@@ -16,6 +16,7 @@ export const Projects = () => {
             description={project.description}
             tags={project.tags}
             liveDemoLink={project.netlify}
+            viewTheCodeLink={project.github}
           />
         ))}
       </div>
