@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "../styling/featureProjects/Photos.css";
 
 const Photos = ({ images }) => {
   return (

@@ -15,16 +15,17 @@ const FeatureProjects = () => {
 
   return (
     <div className="featureProjects">
+      <h1>Featured Projects</h1>
       {projects.map((project, index) => (
         <div key={index} className="projects">
           <h2>{project.name}</h2>
           <p>{project.description}</p>
-          <Tags text={project.tags.join(", ")} />
+          <Tags tags={project.tags} />
           <ProjectButtons
             gitHubLink={project.github}
             netlifyLink={project.netlify}
           />
-          <Photos images={[project.image]} />
+          <Photos images={project.image} />
         </div>
       ))}
     </div>
