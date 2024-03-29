@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import projectsData from "../projects.json";
-import Tags from "../components/Tags";
-import ProjectButtons from "../components/ProjectButtons";
-import Photos from "../components/Photos";
+import Project from "../components/Project";
+import "../styling/featureProjects/FeatureProjects.css";
 
 const FeatureProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -15,18 +14,9 @@ const FeatureProjects = () => {
 
   return (
     <div className="featureProjects">
-      <h1>Featured Projects</h1>
+      <h1 className="featureProjectsTitle">Featured Projects</h1>
       {projects.map((project, index) => (
-        <div key={index} className="projects">
-          <Photos images={project.image} />
-          <h2>{project.name}</h2>
-          <p>{project.description}</p>
-          <Tags tags={project.tags} />
-          <ProjectButtons
-            gitHubLink={project.github}
-            netlifyLink={project.netlify}
-          />
-        </div>
+        <Project key={index} project={project} />
       ))}
     </div>
   );
