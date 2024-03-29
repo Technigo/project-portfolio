@@ -13,7 +13,7 @@ export const Introduction = () => {
           <p className="welcome">Hi, I&apos;m Eliane</p>
           <Heading
             level="1"
-            text="Marketing Manager with coding skills"
+            text="Project Manager & Frontend Developer"
             className="blue"
           />
         </div>
