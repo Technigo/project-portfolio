@@ -1,5 +1,5 @@
 import "./projects.css";
-
+import { Heading } from "../heading/Heading";
 import { SingleProject } from "../singleProject/SingleProject";
 import { useState, useEffect } from "react";
 
@@ -22,7 +22,7 @@ export const Projects = () => {
   return (
     <section className="flex projects-section">
       <div className="flex projects-container">
-        <h1 className="blue">Featured Projects</h1>
+        <Heading level="1" text="Featured Projects" className="blue" />
         <SingleProject projects={projects} />
       </div>
     </section>

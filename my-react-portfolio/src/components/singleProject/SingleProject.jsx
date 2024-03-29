@@ -4,6 +4,7 @@ import { Tags } from "../tags/Tags";
 import images from "./images.json";
 import { ProjectImage } from "../projectImage/ProjectImage";
 import { Button } from "../button/Button";
+import { Heading } from "../heading/Heading";
 
 //access data from Projects.jsx via props
 export const SingleProject = ({ projects }) => {
@@ -17,9 +18,8 @@ export const SingleProject = ({ projects }) => {
             <div className="flex singleproject-card" key={dataset.id}>
               {/* Pass props */}
               <ProjectImage projectName={dataset.name} images={images} />{" "}
-              <h2>{dataset.name}</h2>
+              <Heading level={2} text={dataset.name} />
               <p>{dataset.description}</p>
-              {/* <p>{dataset.topics}</p> */}
               <Tags tags={dataset.topics} />
               <Button
                 label="Live demo"

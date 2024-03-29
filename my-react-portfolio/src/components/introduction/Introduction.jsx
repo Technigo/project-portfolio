@@ -1,4 +1,5 @@
 import { ProfileImage } from "../profileImage/ProfileImage";
+import { Heading } from "../heading/Heading";
 import "./Introduction.css";
 
 export const Introduction = () => {
@@ -9,8 +10,12 @@ export const Introduction = () => {
 
         {/* <div className="flex intro-image"></div> */}
         <div className="flex intro-wrapper">
-          <h5>Hi, I&#39;m Eliane Weber</h5>
-          <h2 className="blue">Marketing Manager with coding skills</h2>
+          <Heading level="5" text="Hi, I'm Eliane Weber" />
+          <Heading
+            level="2"
+            text="Marketing Manager with coding skills"
+            className="blue"
+          />
         </div>
         <div className="flex text-wrapper">
           <p>
@@ -23,7 +28,7 @@ export const Introduction = () => {
             next level seitan copper mug.
           </p>
         </div>
-        <button>
+        <button className="arrow-container">
           <img src="../arrow.svg" alt="scroll-down-button" />
         </button>
       </div>
