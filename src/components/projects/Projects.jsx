@@ -24,24 +24,25 @@ export const Projects = () => {
 			}
 		}
 		fetchRepos()
-	}, [repos])
+	}, [])
+
+	const filteredRepos = repos.filter((repo) => repo.homepage)
 
 	return (
 		<div className='project-container'>
 			<h2>Featured Projects</h2>
-			{repos &&
-				repos.map((repo) => {
-					return (
-						<ProjectElement
-							key={repo.id}
-							name={repo.name}
-							description={repo.description}
-							homepage={repo.homepage}
-							githubURL={repo.svn_url}
-							topics={repo.topics}
-						/>
-					)
-				})}
+			{filteredRepos.map((repo) => {
+				return (
+					<ProjectElement
+						key={repo.id}
+						name={repo.name}
+						description={repo.description}
+						homepage={repo.homepage}
+						githubURL={repo.svn_url}
+						topics={repo.topics}
+					/>
+				)
+			})}
 		</div>
 	)
 }
