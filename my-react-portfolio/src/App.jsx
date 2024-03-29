@@ -1,6 +1,7 @@
 import "./App.css";
 import { FeaturedProjects } from "./components/FeaturedProjects";
 import Introduction from "./components/Introduction";
+import { Skills } from "./components/Skills";
 import Tech from "./components/Tech";
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
       <Introduction />
       <Tech />
       <FeaturedProjects />
+      <Skills />
     </>
   );
 };
