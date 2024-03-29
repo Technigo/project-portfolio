@@ -1,10 +1,13 @@
+import { ProfileImage } from "../profileImage/ProfileImage";
 import "./Introduction.css";
 
 export const Introduction = () => {
   return (
     <section className="flex intro-section">
       <div className="flex intro-container">
-        <div className="flex intro-image"></div>
+        <ProfileImage />
+
+        {/* <div className="flex intro-image"></div> */}
         <div className="flex intro-wrapper">
           <h5>Hi, I&#39;m Eliane Weber</h5>
           <h2 className="blue">Marketing Manager with coding skills</h2>

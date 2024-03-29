@@ -1,3 +1,4 @@
+import { ProfileImage } from "../profileImage/ProfileImage";
 import "./Contact.css";
 
 export const Contact = () => {
@@ -6,7 +7,7 @@ export const Contact = () => {
       <section className="flex contact-section">
         <div className="flex contact-container">
           <h1 className="blue">Let&#39;s Talk</h1>
-          <div className="flex intro-image"></div>
+          <ProfileImage />
           <div className="flex contact-wrapper">
             <h4>Eliane Weber</h4>
             <h4>+41 99 111 22 33</h4>

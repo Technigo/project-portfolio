@@ -1,8 +1,8 @@
-import { Introduction } from "./components/Introduction";
-import { Tech } from "./components/Tech";
+import { Introduction } from "./components/introduction/Introduction";
+import { Tech } from "./components/tech/Tech";
 import { Projects } from "./components/projects/Projects";
-import { Skills } from "./components/Skills";
-import { Contact } from "./components/Contact";
+import { Skills } from "./components/skills/Skills";
+import { Contact } from "./components/contact/Contact";
 
 import "./App.css";
 
