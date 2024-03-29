@@ -33,7 +33,7 @@ export const Project = ({ projectData }) => {
                 href={projectData.gitLink}
               >
                 <img src="./github.svg" />
-                <span className="project-link-text">Git Link</span>
+                <span className="project-link-text">View the code</span>
               </a>
             </div>
           </div>
