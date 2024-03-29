@@ -9,7 +9,7 @@ export const ProjectImage = ({ repo }) => {
 			<img
 				className='project-image'
 				src={repoImage?.imageUrl}
-				alt={repo.altImage}
+				alt={repoImage?.altImage}
 			/>
 		)
 	)
