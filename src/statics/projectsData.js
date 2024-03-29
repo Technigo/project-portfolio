@@ -4,7 +4,7 @@ export const projectsData = [
     title: "Gengo",
     text: {
       en: "This is a flashcard fullstack app. I tried to go as far as I can with technologies that are new to me (such as, Recoil, React Query, zod ...) and more advanced archtecture that is a feature based archtecture.",
-      ja: "フラッシュカードのアプリです。Coding bootcampのファイナルプロジェクトとして作りました。バックエンドは MongoDB, Express, Mongoose, Node.jsで、フロントエンドは Reactで作っています。",
+      ja: "フラッシュカードのアプリです。Coding bootcampのファイナルプロジェクトとして作りました。バックエンドは MongoDB, Express, Mongoose, Node.jsで、フロントエンドは Reactです。",
     },
     skills: ["Tailwind", "TypeScript", "React", "React-Query", "Recoil", "MongoDB", "Express"],
     gitUrl: "https://github.com/sansan-sakura/GENGO",
@@ -48,7 +48,7 @@ export const projectsData = [
     title: "Happy Thoughts",
     text: {
       en: "This is a Twitter-like APP. You can post your happy thoughts and click the like button to like other people's posts.",
-      ja: "ツイッターのようなアプリです。自分をハッピーにしてくれていることを投稿してみてください！他の投稿にいいねもできます。",
+      ja: "ツイッターのようなアプリです。自分をハッピーにしてくれていることを投稿してみてください！",
     },
     skills: ["HTML", "CSS", "React"],
     gitUrl: "https://github.com/sansan-sakura/project-happy-thoughts-vite",
@@ -59,7 +59,7 @@ export const projectsData = [
     title: "Weather App",
     text: {
       en: "This is a vanilla JavaScript weather application. You can add and remove cities. The data is stored locally, so when you come back to the app, you can still see the weather focus from the cities of your choice.",
-      ja: "天気予報のアプリです。天気を知りたい場所の名前を検索すると、その後５日間の天気予報が出てきます。",
+      ja: "天気予報のアプリです。vanilla JavaScriptのプロジェクトです。",
     },
     skills: ["HTML", "CSS", "JavaScript"],
     gitUrl: "https://github.com/sansan-sakura/project-weather-app",
@@ -70,7 +70,7 @@ export const projectsData = [
     title: "Legz",
     text: {
       en: "This project is a collaboration with a UX/UI student from Technigo. This design was created by Thomas Read. ",
-      ja: "UX/UIのTechnigoの学生とのコラボ作品です。できるだけデザイナーの意向に添えるように、細かいところまで再現しました。",
+      ja: "UX/UIのTechnigoの学生とのコラボ作品です。できるだけデザイナーの意向に添えるように、デザイナーとのコミュニケーションを細かくとることによりより良い作品にしました。",
     },
     skills: ["React", "Content API", "SCSS"],
     gitUrl: "https://github.com/sansan-sakura/project-Legz",
