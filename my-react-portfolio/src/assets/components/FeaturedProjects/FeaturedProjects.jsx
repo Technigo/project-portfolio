@@ -1,21 +1,37 @@
 // import {useState, useEffect} from "react";
 import data from '../../../../projects.json';
+import { PageTopic } from '../smallComps/PageTopic';
 import { ProjectWrapper } from './ProjectWrapper';
+import "./projects.css"
+
 
 export const FeaturedProjects = () => {
     const projects = data.projects
 
     return (
-        projects.map(project=> 
-            <ProjectWrapper key={project.id} 
-            projectImg={project.image} 
-            alt={project.alt}
-            projectName={project.name} 
-            projectTags={project.tags}
-            demoLink={project.netlify}
-            codeLink={project.github}/>
-            )
-    )
+      <>
+        <section className="project-wrapper">
+            <div className='topicDiv'>
+                <PageTopic pageTopic={"Featured Projects"} className={"project"} />
+            </div>
+          
+          <div className="detail-container">
+            {projects.map((project) => (
+              <ProjectWrapper
+                key={project.id}
+                projectImg={project.image}
+                alt={project.alt}
+                projectName={project.name}
+                description={project.about}
+                projectTags={project.tags.join(" ")}
+                demoLink={project.netlify}
+                codeLink={project.github}
+              />
+            ))}
+          </div>
+        </section>
+      </>
+    );
     }
 
 

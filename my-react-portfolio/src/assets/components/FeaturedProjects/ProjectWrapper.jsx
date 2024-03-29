@@ -1,29 +1,43 @@
-import { BtnLink } from "../smallComps/BtnLink"
-import { PageTopic } from "../smallComps/PageTopic"
-import { Tag } from "../smallComps/Tag"
+import { BtnLink } from "../smallComps/BtnLink/BtnLink"
+// import { Tag } from "../smallComps/tags/Tag"
 import { Image } from "../smallComps/Image"
+import "./projects.css"
 
-
-
-export const ProjectWrapper = ({projectImg, projectName, projectTags, demoLink, codeLink, about, alt }) => {
+export const ProjectWrapper = ({projectImg, projectName, demoLink, codeLink, description, alt}) => {
 
     const liveDemoBtn = "../../../public/icons/liveDemo.svg"
     const viewTheCodeBtn = "../../../public/icons/viewTheCode.svg"
     return (
-        <>
-          <PageTopic pageTopic={'PROJECTS'} className={'project'}/>
-        <section className="project-wrapper">
-            <Image image={projectImg} alt={alt} className={'blue'}/>
-            <p className="projectName">{projectName}</p>
-            <p className="about">{about}</p>
+      <>
+        <div className="card-image">
+          <Image image={projectImg} alt={alt} className={"blue"} />
+        </div>
+        <div className="detail">
+          <p className="projectName">{projectName}</p>
+          <p className="description">{description}</p>
+          {/* <div className="tags">
             <Tag projectTags={projectTags} />
-            <div className="btn">
-                <BtnLink link={demoLink} src={liveDemoBtn} alt={'demo link'} btnContent={'Live demo'} />
-                <BtnLink link={codeLink} src={viewTheCodeBtn} alt={'code link'} btnContent={'View the code'} />
-            </div>
-        </section>
-        </> 
-    )
+          </div> */}
+          
+          <div className="btn">
+            <BtnLink
+              link={demoLink}
+              src={liveDemoBtn}
+              alt={"demo link"}
+              btnContent={"Live demo"}
+              btnName={"codeBtn"}
+            />
+            <BtnLink
+              link={codeLink}
+              src={viewTheCodeBtn}
+              alt={"code link"}
+              btnContent={"View the code"}
+              btnName={"linkBtn"}
+            />
+          </div>
+        </div>
+      </>
+    );
 }
 //img -> component
 //project name -> component

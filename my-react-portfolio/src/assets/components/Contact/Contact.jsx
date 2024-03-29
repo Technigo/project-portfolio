@@ -1,6 +1,6 @@
 import './Contact.css'
 import { PageTopic } from '../smallComps/PageTopic'
-import { BtnLink } from '../smallComps/BtnLink'
+import { BtnLink } from '../smallComps/BtnLink/BtnLink'
 
 export const Contact = () => {
     const linkedin = "https://www.linkedin.com/in/trista-shan-62074471/"
@@ -11,7 +11,7 @@ export const Contact = () => {
 
     return (
         <div className='contact-wrapper'>
-            <PageTopic pageTopic={"LET'S TALK"} className={'contact'}/>
+            <PageTopic pageTopic={"Let's Talk"} className={'contact'}/>
             <div className='picInfo'>
               <img src={profilePhoto} alt='profile photo' className='profilePhoto2'/>
               <div className='info'>

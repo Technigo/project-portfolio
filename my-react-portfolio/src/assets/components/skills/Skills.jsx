@@ -5,7 +5,7 @@ export const Skills = () => {
     return (
       <>
         <section className="skill-wrapper">
-          <PageTopic className={"skills"} pageTopic={"SKILLS"} />
+          <PageTopic className={"skills"} pageTopic={"Skills"} />
           <div className="skill-conainer">
             <div className="code">
               <h4 className="code-head">Code</h4>

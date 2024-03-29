@@ -1,112 +1,67 @@
 .intro-page{
-    display: flex;
-    flex-direction: column;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    align-items: center;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
 }
 
-.nameSentance{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 40px;
+.content{
+  padding: 232px 234px 63px 234px;
+}
+.profilePhoto{
+  width: fixed 164px;
+  height: fixed 164px;
+  border-radius: 50%;
+
 }
 
-.profilePhoto {
-    width: 400px;
-    height: 500px;
-    border-radius: 50%;
-    border: 13px dotted #FFD337;  
-    /* animation: shake 4s ease infinite; */
-} 
-
-/* @keyframes shake {
-    0% {
-      transform: translateX(0) rotate(0deg);
-    }
-    20% {
-      transform: translateX(-5px) rotate(-5deg);
-    }
-    40% {
-      transform: translateX(5px) rotate(5deg);
-    }
-    60% {
-      transform: translateX(-5px) rotate(-5deg);
-    }
-    80% {
-      transform: translateX(5px) rotate(5deg);
-    }
-    100% {
-      transform: translateX(0) rotate(0deg);
-    }
-  } */
-
-.content {
-    display: flex;
-    flex-direction: column;
-    width:500px;
-    justify-content: center;
-    padding-left: 40px;
+.dev-name{
+  color: var(--color-3);
+font-family: Montserrat;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: left;
 }
 
-
-.dev-name {
-    color: #000;
-    font-family: Montserrat;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+.dev-title{
+  color: #0B24F5;
+font-family: Montserrat;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: left;
 }
 
- .dev-title{
-    color: #0B24F5;
-    font-family: Montserrat;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.imageAndIntro{
+  display: flex;
+align-items: center;
+gap: 22px;
+align-self: stretch;
 }
 
 .dev-intro{
-    color: #000;
-    font-family: Hind;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  width: 100% 858px;
+  text-align: left;
+}
+
+.arrow-contaner{
+  height: fixed 68px;
+  padding-bottom: 68px;
 }
 
 .arrow{
-  animation: move 2.5s infinite ease-in-out;
-}
-
-.arrow :nth-of-type(2){
-  transform: rotate(180deg);
+  animation: move 2s linear infinite;
 }
 
 @keyframes move {
-  0%{margin-top: 0;}
-  50%{margin-top: 16px}
-}
-
-/* can change the dev-title to the color which match the tech page background, or yellow and blue linear gradient*/
-
-
-/*.intro-page {
-  max-width: 1512px;
-  /* width: 100%; */
-   /* padding: 332px 234px 63px 234px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 10px;
-}
-
-.profilePhoto {
-  width: 400px;
-  height: 500px;
-  border-radius: 50%;
-  border: 13px dotted #FFD337;  
-  /* animation: shake 4s ease infinite; */
-  /*grid-column: 2 /span 3;;
+  0%, 100% {
+    transform: translateY(0);}
+  25%, 75% {
+    transform: translateY(-10px);
+  }
 }

@@ -6,20 +6,15 @@ export const Introduction = () => {
     return (
       <>
         <div className="intro-page">
-          <div className="nameSentance">
-            <div>
+          <div className="content">
+            <p className="dev-name">Hi, I&apos;m Trista Shan</p>
+            <p className="dev-title">Fronted Developer</p>
+            <div className="imageAndIntro">
               <img
                 className="profilePhoto"
-                src="../../../public/images/profilePicture.JPG"
+                src="../../../public/images/profilePhoto.jpg"
                 alt="developer's photo"
               />
-            </div>
-            <div className="content">
-              <p className="dev-name">
-                Hi, I&apos;m Trista Shan
-                <br />
-                <span className="dev-title">Fronted Developer</span>
-              </p>
               <article className="dev-intro">
                 I am a frontend developer with a background in healthcare. I
                 have a passion for learning new skills and being creative. I
@@ -30,15 +25,14 @@ export const Introduction = () => {
                 like magic and it&apos;s incredibly fun.
               </article>
             </div>
-            {/* <h3>INTRODUCTION<br /><span>ABOUT ME</span></h3>  */}
           </div>
-          <div className="arrow-contaner">
+          <section className="arrow-contaner">
             <Image
-              image ="../../../public/arrow.svg"
+              image="../../../public/arrowdown.svg"
               alt="an arrow to show the next page"
               className={"arrow"}
             />
-          </div>
+          </section>
         </div>
       </>
     );

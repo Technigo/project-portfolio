@@ -1,5 +1,5 @@
 import './App.css'
-import { Header } from './assets/components/Header/Header'
+// import { Header } from './assets/components/Header/Header'
 import { Introduction } from './assets/components/Introduction/Introduction'
 import { Tech } from './assets/components/Tech/Tech'
 import { FeaturedProjects } from './assets/components/FeaturedProjects/FeaturedProjects'
@@ -13,7 +13,7 @@ export const App = () => {
   
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         <Introduction />
         <Tech />
