@@ -1,3 +1,3 @@
-export const TitleH1 = () => {
-  return <div>TitleH1</div>;
+export const Heading = () => {
+  return <div>Heading</div>;
 };
