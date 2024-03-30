@@ -6,6 +6,7 @@ import { Introduction } from './components/Introduction'
 import { TechSection } from './components/Tech'
 import { MySkills } from './components/Skills'
 import { ContactMe } from './components/Contact'
+import { Footer } from './components/Footer'
 
 //import H from '@nicodes/react-heading'
 
@@ -35,6 +36,7 @@ export const App = () => {
 			<section>
 				<ContactMe />
 			</section>
+			<Footer />
 		</>
 	)
 }
