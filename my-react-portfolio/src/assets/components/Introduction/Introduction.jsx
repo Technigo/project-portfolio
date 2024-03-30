@@ -1,6 +1,7 @@
 import { Image } from '../projectImage/Image';
 import './Introduction.css'
 
+
 export const Introduction = () => {
 
     return (
@@ -12,7 +13,7 @@ export const Introduction = () => {
             <div className="imageAndIntro">
               <img
                 className="profilePhoto"
-                src="public/images/profilePhoto.jpg"
+                src="../../../assets/profilePhoto.jpg"
                 alt="developer's photo"
               />
               <article className="dev-intro">
