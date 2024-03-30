@@ -10,12 +10,7 @@ export const Ticker = () => {
 				<span>{tickerContent}</span>
 				<span>{tickerContent}</span>
 			</span>
-			<span className='ticker'>
-				<span>{tickerContent}</span>
-				<span>{tickerContent}</span>
-				<span>{tickerContent}</span>
-			</span>
-			<span className='ticker'>
+			<span className='ticker' aria-hidden='true'>
 				<span>{tickerContent}</span>
 				<span>{tickerContent}</span>
 				<span>{tickerContent}</span>
