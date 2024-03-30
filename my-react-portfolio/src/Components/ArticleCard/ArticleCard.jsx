@@ -1,4 +1,3 @@
-import docIcon from '../Doc.svg'
 import { ImageArticle } from '../ImageArticle/ImageArticle'
 import './articleCard.css'
 import { Doc } from '../Icons/Icons'
@@ -8,7 +7,7 @@ export const ArticleCard = ({ articles, descriptions }) => {
     return moment(dateString).format('MMMM YYYY') // Format to "March 2024"
   }
   return (
-    <div>
+    <div className="articleContainer2">
       {articles.map((items) => (
         <div id="articleCard" key={items.guid}>
           <ImageArticle items={items} />

@@ -1,5 +1,3 @@
-import liveDemoIcon from './Live Demo.svg'
-import gitHubIcon from './github.svg'
 import { Image } from '..//ImageProject/Image'
 import './projectCard.css'
 import './tag.css'
@@ -21,19 +19,21 @@ export const ProjectCard = ({ projectList }) => {
                     <p key={index}>{topic}</p>
                   ))}
                 </div>
+                <div className="buttonWrapper">
+                  <button id="liveDemoBtn">
+                    <a href={items.homepage}>
+                      <Demo alt="github-icon" />
+                      Live Demo
+                    </a>
+                  </button>
+                  <button id="gitBtn">
+                    <a href={items.html_url}>
+                      <Git alt="github-icon" />
+                      View the Code
+                    </a>
+                  </button>
+                </div>
               </div>
-              <button id="liveDemoBtn">
-                <a href={items.homepage}>
-                  <Demo alt="github-icon" />
-                  Live Demo
-                </a>
-              </button>
-              <button id="gitBtn">
-                <a href={items.html_url}>
-                  <Git alt="github-icon" />
-                  View the Code
-                </a>
-              </button>
             </div>
           )
       )}

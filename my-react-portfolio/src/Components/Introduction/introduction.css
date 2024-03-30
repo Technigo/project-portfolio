@@ -1,24 +1,30 @@
 .introSection {
   display: flex;
-  /* width: 375px; */
-  padding: 64px 16px;
+  padding: 32px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.headerContainer h1,
+h2 {
+  margin: 0;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
 .introContainer {
   display: flex;
-  /* width: 343px; */
   flex-direction: column;
   align-items: center;
   gap: 32px;
 }
-.image {
+.profilePic {
   width: 164px;
   height: 164px;
-  border-radius: 164px;
-  background: url(../profile-picture.png) lightgray 50% / cover no-repeat;
 }
+
 .introSection h2 {
   font-size: 18px;
   line-height: 22px;
@@ -37,17 +43,109 @@
   background-color: white;
 }
 .arrowDown {
-  animation-name: arrowUp;
-  animation-duration: 1s;
-  animation-delay: 1ms;
-  animation-fill-mode: forwards;
+  animation: arrowUp 1.5s infinite;
 }
-
+.BioContainerBigDev {
+  display: none;
+}
 @keyframes arrowUp {
-  0% {
+  0%,
+  100% {
     transform: translateY(0);
   }
-  100% {
+  50% {
     transform: translateY(-10px);
+  }
+}
+
+@media (min-width: 669px) and (max-width: 1022px) {
+  .introSection h2 {
+    font-size: 24px;
+  }
+  .introSection h1 {
+    font-size: 56px;
+  }
+  .headerContainer {
+    order: 1;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .profilePic {
+    display: none;
+  }
+
+  .BioMobDev {
+    display: none;
+  }
+  .profilePicMob {
+    width: 164px;
+    height: 164px;
+  }
+
+  .introContainer button {
+    order: 4;
+  }
+  .BioContainerBigDev {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    order: 2;
+  }
+  .introSection {
+    display: flex;
+    padding: 46px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 138px;
+  }
+}
+@media (min-width: 1025px) {
+  .introSection h2 {
+    font-size: 32px;
+  }
+  .introSection h1 {
+    font-size: 80px;
+  }
+  .headerContainer {
+    order: 1;
+    white-space: nowrap;
+    gap: 20px;
+  }
+
+  .profilePic {
+    display: none;
+  }
+
+  .BioMobDev {
+    display: none;
+  }
+  .profilePicMob {
+    width: 164px;
+    height: 164px;
+  }
+
+  .introContainer button {
+    order: 4;
+    margin-top: 200px;
+  }
+  .BioContainerBigDev {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    order: 2;
+  }
+  .introSection {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+  }
+  .introSection p {
+    max-width: 500px;
+  }
+  .introContainer {
+    padding: 250px 50px 100px;
   }
 }

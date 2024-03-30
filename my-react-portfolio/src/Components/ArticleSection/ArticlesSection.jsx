@@ -8,7 +8,7 @@ export const ArticlesSection = () => {
   const [descriptions, setDescriptions] = useState([])
   useEffect(() => {
     fetch(
-      'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@lavicafra'
+      'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/@lavicafra/feed'
     )
       .then((resp) => resp.json())
       .then((data) => {
@@ -26,9 +26,11 @@ export const ArticlesSection = () => {
       .catch((error) => console.error(error))
   }, [])
   return (
-    <div className="articleSectionContainer">
+    <div className="articleSection">
       <h1>My Words</h1>
-      <ArticleCard articles={articles} descriptions={descriptions} />
+      <div className="articleSectionContainer">
+        <ArticleCard articles={articles} descriptions={descriptions} />
+      </div>
     </div>
   )
 }
