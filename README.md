@@ -21,7 +21,11 @@ At first I created all the basic components I thought is needed according the Fi
 
 Components are one thing, fetching data and passing the right needed props is another. At one point I had an eureka moment and it clicked. Before I never really understood how the props are passed, because the names were all the same.
 
-Moving on, after I finally had all the needed data I tried to arrange it according to the Figma file. I was not completely happy how this design looked, because it didn't reflect my personality. But that was the least issue I had. The responsiveness was giving me a hard time. CSS is a humbling experience with every project.
+Moving on, after I finally had all the needed data I tried to arrange it according to the Figma file. I was not completely happy how this design looked, because it didn't reflect my personality. But that was the least issue I had. The responsiveness was giving me a hard time. CSS is a humbling experience with every project. Epsecially when working on responsiveness.
+
+At the end I did added a ticker tape. I am not a huge fan of animation like that, but since it's in the bottom of the page, I don't mind.
+
+What I'd consider is to make it more SEO friendly. SPA is not really best friend with SEO and I'd like take more time to make the page more readable with SEO best practise.
 
 ## View it live
 
