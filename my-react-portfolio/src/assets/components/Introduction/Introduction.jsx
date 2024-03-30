@@ -1,5 +1,6 @@
 import { Image } from '../projectImage/Image';
 import './Introduction.css'
+import profilePhoto from "../../../assets/profilePhoto.jpg"
 
 
 export const Introduction = () => {
@@ -13,7 +14,7 @@ export const Introduction = () => {
             <div className="imageAndIntro">
               <img
                 className="profilePhoto"
-                src="../../../assets/profilePhoto.jpg"
+                src={profilePhoto}
                 alt="developer's photo"
               />
               <article className="dev-intro">
