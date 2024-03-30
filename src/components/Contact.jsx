@@ -10,14 +10,20 @@ const Contact = () => {
         </p>
       </div>
       <form name="contact form" className={styles.form}>
-        <label>
-          <input type="text" placeholder="Name"></input>
+        <label className={styles.label}>
+          Name
+          <input className={styles.text} type="text"></input>
         </label>
-        <label>
-          <input type="email" placeholder="Email"></input>
+        <label className={styles.label}>
+          Email
+          <input className={styles.email} type="email"></input>
         </label>
-        <label>
-          <textarea placeholder="Type your message here"></textarea>
+        <label className={styles.label}>
+          Message
+          <textarea
+            className={styles.message}
+            placeholder="Type your message here"
+          ></textarea>
         </label>
         <button type="submit" className={styles.submit}>
           Submit

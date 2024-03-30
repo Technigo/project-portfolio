@@ -1,10 +1,11 @@
 /* CSS Style for Contact.jsx */
 .section {
-  margin-bottom: 3rem;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  max-width: 1335px;
 }
 
 .descr {
@@ -16,18 +17,57 @@
 }
 
 .form {
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
-  background-color: lightgray;
-  padding: 20px 0;
+  background: #ffffff;
+  box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+  padding: 20px 10px;
+  /* border: 2px solid;
+  box-shadow: 8px 8px;
+  padding: 20px 0; */
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.text,
+.email {
+  /* width: 250px; */
+  height: 25px;
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.message {
+  height: 150px;
+  /* width: 250px; */
+  background-color: #f3f3f3;
+  border: none;
 }
 
 .submit {
+  margin-top: 20px;
   width: 120px;
   border-radius: 10px;
   border: none;
   padding: 10px 0;
+}
+
+@media screen and (min-width: 601px) {
+  .text,
+  .email,
+  .message {
+    width: 300px;
+  }
+
+  .form {
+    width: 400px;
+  }
 }
