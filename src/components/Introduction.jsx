@@ -1,6 +1,6 @@
 import './Heading.css'
 import myImage from '../assets/image.me.png'
-import { GoArrowDown } from 'react-icons/go'
+import { TbArrowNarrowDown } from "react-icons/tb"
 
 export const Introduction = () => {
 	return (
@@ -24,7 +24,7 @@ export const Introduction = () => {
 					</div>
 				</div>
 				<div className="arrow">
-					<GoArrowDown />
+					<TbArrowNarrowDown />
 				</div>
 			</div>
 		</>
