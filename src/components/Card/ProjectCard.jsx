@@ -12,19 +12,20 @@ export const ProjectCard = ({
 }) => {
   return (
     <article>
-      <Image image={image} />
+      <Image image={image} alt={name} />
       <ProjectContent
         name={name}
         description={description}
-        tags={tags}
         liveDemoLink={liveDemoLink}
         viewTheCodeLink={viewTheCodeLink}
+        tags={tags}
       />
     </article>
   );
 };
 
 ProjectCard.propTypes = {
+  image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
