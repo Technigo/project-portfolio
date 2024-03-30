@@ -25,6 +25,15 @@ const Navbar = () => {
         <li>
           <a
             className={styles.navItem}
+            href="#tech"
+            aria-label="Go to Tech Stack section"
+          >
+            Tech
+          </a>
+        </li>
+        <li>
+          <a
+            className={styles.navItem}
             href="#projects"
             aria-label="Go to Projects section"
           >
