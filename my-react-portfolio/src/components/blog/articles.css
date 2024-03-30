@@ -1,0 +1,120 @@
+.article-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-secondary);
+  color: var(--text);
+  padding: 128px 16px;
+  gap: 64px;
+  position: relative;
+}
+
+.article-container::before {
+  content: "";
+  position: absolute;
+  top: -4px; /* Adjust the position of the divider */
+  left: 0;
+  width: 100%;
+  height: 20px; /* Adjust the height of the line */
+  background-image: url("/public/icons/divider.svg");
+  background-repeat: repeat-x; /* Repest the svg along the x-axis */
+  z-index: 1;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.article-img-container {
+  height: 340px;
+  overflow: hidden;
+}
+
+.article-list {
+  display: grid;
+  justify-content: center;
+  gap: 64px;
+  max-width: 100%;
+}
+
+.article-heading {
+  color: var(--secondary);
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 80px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+/* ------------ Tablet only ------------ */
+@media (max-width: 1279px) and (min-width: 744px) {
+  .article-container {
+    gap: 98px;
+  }
+
+  .article-heading {
+    text-align: left;
+  }
+
+  .article-img-container {
+    height: 340px;
+    align-self: stretch;
+  }
+}
+/* Add border bottom conditionally based on screen size */
+
+/* ------------ Desktop only ------------ */
+@media (min-width: 1280px) {
+  .article-container {
+    padding: 128px auto;
+    /* Set the padding to "auto" to center the container horizontally */
+    gap: 64px;
+    display: flex;
+    /* Change to flex layout to center the heading and article-list */
+    flex-direction: column;
+    /* Stack the heading and article-list vertically */
+    align-items: center;
+    /* Center items horizontally within the container */
+  }
+
+  .article-heading {
+    text-align: center;
+  }
+
+  .article-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* two columns for desktop */
+    gap: 98px;
+    max-width: 1226px;
+    justify-content: center;
+  }
+
+  .article-img-container {
+    align-self: stretch;
+    border-bottom: 20px solid var(--secondary);
+  }
+}
+
+/* ------------ Large screen only ------------ */
+
+@media (min-width: 1520px) {
+  .article-img-container {
+    height: 564px;
+    align-self: stretch;
+    border-bottom: 20px solid var(--secondary);
+  }
+}

@@ -28,6 +28,12 @@ h3 {
   font-family: var(--heading-font);
 }
 
+.article-img {
+  width: 100%;
+  object-fit: cover;
+  border-left: 20px solid var(--secondary);
+}
+
 /* ------------ Styling labels/tags ------------ */
 .tag-text {
   font-family: var(--heading-font);
@@ -92,6 +98,7 @@ h3 {
 
 .article-btn {
   background-color: white;
+  margin-top: auto;
 }
 
 .article-btn:hover {
@@ -116,6 +123,11 @@ h3 {
   h3 {
     font-size: 24px;
   }
+
+  .article-img {
+    max-height: 100%;
+    object-fit: cover;
+  }
 }
 
 /* ------------ Desktop only ------------ */
@@ -126,5 +138,9 @@ h3 {
     height: 280px;
     border-bottom: 20px solid var(--primary);
     border-left: 20px solid var(--primary);
+  }
+
+  .article-img {
+    max-height: 100%;
   }
 }
