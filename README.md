@@ -25,5 +25,5 @@ Moving on, after I finally had all the needed data I tried to arrange it accordi
 
 ## View it live
 
-https://portfoilo-nathalie.netlify.app/
+https://portfolio-nathalie.netlify.app/
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5c1e2e1c-e8e7-4f19-a861-5c57750228df/deploy-status)](https://app.netlify.com/sites/portfoilo-nathalie/deploys)
