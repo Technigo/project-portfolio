@@ -1,5 +1,5 @@
-import { ProjectCard } from "./Card/ProjectCard";
-import { projects } from "../../projects.json";
+import { ProjectCard } from "../Card/ProjectCard";
+import { projects } from "./projects.json";
 
 export const Projects = () => {
   return (
