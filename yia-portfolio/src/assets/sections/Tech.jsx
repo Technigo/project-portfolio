@@ -1,4 +1,5 @@
 import { SectionHead } from "../components/SectionHead.jsx";
+import "./Tech.css";
 
 export const Tech = () => {
     const headlineId = 2;
