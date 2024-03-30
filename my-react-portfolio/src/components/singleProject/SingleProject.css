@@ -1,5 +1,68 @@
 .singleproject-card {
-  width: 343px;
-  align-items: flex-start;
-  gap: 24px;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
+  padding-bottom: 64px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "image image image image"
+    "name name name name"
+    "description description description description"
+    "tags tags tags tags"
+    "demo demo demo demo"
+    "git git git git";
+}
+
+.project-name {
+  grid-area: name;
+}
+
+.project-description {
+  grid-area: description;
+}
+
+.tag-wrapper {
+  grid-area: tags;
+}
+
+.demo-button {
+  grid-area: demo;
+}
+
+.git-button {
+  grid-area: git;
+}
+
+.image-wrapper {
+  grid-area: image;
+  height: 200px;
+  width: 100%;
+  align-self: stretch;
+  border-bottom: 10px solid var(--color-4);
+  border-left: 10px solid var(--color-4);
+  overflow: hidden;
+}
+
+.heading-wrapper {
+  padding-bottom: 64px;
+}
+
+.button {
+  display: flex;
+  padding-right: 16px;
+  align-items: center;
+  gap: 7px;
+  border-radius: 40px;
+  background: #f5f5f5;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button-icon {
+  width: 48px;
+  height: 48px;
 }

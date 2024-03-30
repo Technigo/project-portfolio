@@ -1,16 +1,40 @@
 .skills-section {
-  padding: 128px 99px 157px 103px;
-  align-items: center;
-  background: #0b24f5;
+  padding: 128px 16px;
+  background-image: linear-gradient(
+    var(--color-3),
+    var(--color-4),
+    var(--color-5)
+  );
 }
 
 .skills-container {
-  align-items: center;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+  row-gap: 64px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". heading heading ."
+    ". code code ."
+    ". toolbox toolbox ."
+    ". upcoming upcoming ."
+    ". more more .";
 }
 
-.skills-wrapper {
-  align-items: center;
-  padding-top: 64px;
+.code {
+  grid-area: code;
+}
+.more {
+  grid-area: more;
+}
+
+.upcoming {
+  grid-area: upcoming;
+}
+
+.toolbox {
+  grid-area: toolbox;
 }
 
 .skills-text {
@@ -25,12 +49,70 @@
   gap: 8px;
 }
 
-/*Media Queries*/
+#bkgr-code {
+  background: var(--color-5);
+  padding: 0 3px;
+}
 
+#bkgr-toolbox {
+  background: var(--color-2);
+  padding: 0 3px;
+}
+
+#bkgr-upcoming {
+  background: var(--color-3);
+  padding: 0 3px;
+}
+
+#bkgr-more {
+  background: var(--color-7);
+  padding: 0 3px;
+}
+
+/*Media Queries*/
+@media all and (min-width: 668px) {
+  .skills-section {
+    padding: 128px 32px 148px, 32px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      ". . . heading heading . . ."
+      ". code code code toolbox toolbox toolbox ."
+      ". upcoming upcoming upcoming more more more .";
+  }
+
+  .style {
+    justify-content: left;
+    padding-right: 64px;
+  }
+
+  .skills-text {
+    text-align: start;
+    padding-right: 64px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .skills-section {
+    padding: 128px 161px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 128px;
+
+    grid-template-areas:
+      ". heading heading heading heading heading heading heading heading heading heading ."
+      "code code code toolbox toolbox toolbox upcoming upcoming upcoming more more more";
+  }
+}
+
+/* 
 @media all and (min-width: 668px) {
   .skills-section {
     padding: 128px 32px 148px 32px;
-    /* align-items: center; */
     background: #0b24f5;
   }
   .skills-container {
@@ -57,4 +139,4 @@
     flex-wrap: nowrap;
     padding: 128px;
   }
-}
+} */

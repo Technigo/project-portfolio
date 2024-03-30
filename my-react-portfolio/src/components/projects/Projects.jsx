@@ -20,9 +20,12 @@ export const Projects = () => {
   }, []);
 
   return (
-    <section className="flex projects-section">
-      <div className="flex projects-container">
-        <Heading level="2" text="Featured Projects" className="blue" />
+    <section className="projects-section">
+      <div className="projects-container">
+        <div className="heading-wrapper">
+          <Heading level="2" text="Featured Projects" className="blue" />
+        </div>
+
         <SingleProject projects={projects} />
       </div>
     </section>
