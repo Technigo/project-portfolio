@@ -9,18 +9,18 @@
   width: 100%;
   background-color: var(--darkblue);
   color: #ffffff;
-}
-
-.banner {
   height: 114px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .banneritem {
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   font-weight: 600;
-  padding: 44px;
+  animation: marquee 20s linear 0s infinite;
 }
 
 .dot {
@@ -29,4 +29,13 @@
 
 .banner-span {
   padding: 0 20px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
