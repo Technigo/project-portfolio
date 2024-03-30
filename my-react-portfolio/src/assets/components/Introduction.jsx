@@ -9,6 +9,6 @@ export const Introduction = () => {
           <img src="" alt="developer's photo" />
           <p>introduce self...</p>
         </>
-        //arrow here?
+
     )
 }
