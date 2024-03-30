@@ -5,6 +5,7 @@ import { projects } from "../projects.json"
 import { Introduction } from './components/Introduction'
 import { TechSection } from './components/Tech'
 import { MySkills } from './components/Skills'
+import { ContactMe } from './components/Contact'
 
 //import H from '@nicodes/react-heading'
 
@@ -30,6 +31,9 @@ export const App = () => {
 			</section>
 			<section>
 				<MySkills />
+			</section>
+			<section>
+				<ContactMe />
 			</section>
 		</>
 	)
