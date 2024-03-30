@@ -3,11 +3,11 @@ import { Heading } from "../heading/Heading";
 
 export const Ticker = () => {
   return (
-    <section className="flex footer">
+    <section className="footer">
       <Heading
         level="3"
         text=" Eliane Weber • Project Manager & Frontend Developer"
-        className="white"
+        className="light"
       />
     </section>
   );

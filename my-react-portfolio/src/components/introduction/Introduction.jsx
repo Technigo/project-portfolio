@@ -4,28 +4,26 @@ import "./Introduction.css";
 
 export const Introduction = () => {
   return (
-    <section className="flex intro-section">
-      <div className="flex intro-container">
-        <ProfileImage />
-
-        {/* <div className="flex intro-image"></div> */}
-        <div className="flex intro-wrapper">
+    <section className="intro-section">
+      <div className="intro-container">
+        <div className="profile-wrapper">
+          <ProfileImage />
+        </div>
+        <div className="welcome-wrapper">
           <p className="welcome">Hi, I&apos;m Eliane</p>
           <Heading
             level="1"
             text="Project Manager & Frontend Developer"
-            className="blue"
+            className="dark"
           />
         </div>
-        <div className="flex text-wrapper">
+        <div className="intro-wrapper">
           <p>
-            I&#39;m baby lomo kickstarter celiac keffiyeh austin shoreditch
-            seitan sustainable. Paleo pickled pour-over gastropub. Godard umami
-            biodiesel, small batch meggings portland farm-to-table chambray
-            slow-carb echo park enamel pin man braid letterpress prism. Shaman
-            selvage kitsch plaid fam meggings forage VHS organic post-ironic
-            drinking vinegar vice bruh narwhal vinyl. Locavore literally cliche
-            next level seitan copper mug.
+            I&#39;m a project and marketing manager with a passion for scuba
+            instruction, now diving into the world of coding. Currently immersed
+            in a fast paced 6 month web development bootcamp, where I&#39;m
+            learning a set of new skills like HTML, CSS, JavaScript, React,
+            MongoDB and Node.js.
           </p>
         </div>
         <button className="arrow-container">

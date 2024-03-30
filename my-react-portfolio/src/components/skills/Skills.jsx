@@ -4,17 +4,20 @@ import "./Skills.css";
 export const Skills = () => {
   return (
     <section className="skills-section">
-      <Heading level={2} text="Skills" className="white" />
       <div className="skills-container">
-        <div className="skills-wrapper">
+        <div className="heading-wrapper">
+          <Heading level={2} text="Skills" className="light" />
+        </div>
+
+        <div className="code">
           <Heading
             level={3}
             text="Code"
-            className="style white"
-            id="bkgr-pink"
+            className="style light"
+            id="bkgr-code"
           />
 
-          <div className="white skills-text">
+          <div className="light skills-text">
             <p>HTML5</p>
             <p>CSS3</p>
             <p>Javascript</p>
@@ -23,15 +26,16 @@ export const Skills = () => {
             <p>GitHub</p>
           </div>
         </div>
-        <div className="skills-wrapper">
+
+        <div className="toolbox">
           <Heading
             level={3}
             text="Toolbox"
-            className="style white"
-            id="bkgr-blue"
+            className="style light"
+            id="bkgr-toolbox"
           />
 
-          <div className="white skills-text">
+          <div className="light skills-text">
             <p>Atom</p>
             <p>Postman</p>
             <p>Adobe Photoshop</p>
@@ -41,27 +45,27 @@ export const Skills = () => {
             <p>Slack</p>
           </div>
         </div>
-        <div className="skills-wrapper">
+        <div className="upcoming">
           <Heading
             level={3}
-            text="Toolbox"
-            className="style white"
-            id="bkgr-green"
+            text="Upcoming"
+            className="style light"
+            id="bkgr-upcoming"
           />
 
-          <div className="white skills-text">
+          <div className="light skills-text">
             <p>Node.js</p>
           </div>
         </div>
-        <div className="skills-wrapper">
+        <div className="more">
           <Heading
             level={3}
             text="More"
-            className="style white"
-            id="bkgr-yellow"
+            className="style light"
+            id="bkgr-more"
           />
 
-          <div className="white skills-text">
+          <div className="light skills-text">
             <p>Branding</p>
             <p>Strategy</p>
             <p>Concept development</p>

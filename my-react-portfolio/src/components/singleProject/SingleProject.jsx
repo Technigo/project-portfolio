@@ -15,22 +15,26 @@ export const SingleProject = ({ projects }) => {
           //only render projects that contain homepage and exclude gihub in homepage so that Github profile repo is not showing
           dataset.homepage &&
           !dataset.homepage.includes("github") && (
-            <div className="flex singleproject-card" key={dataset.id}>
+            <div className="singleproject-card" key={dataset.id}>
               {/* Pass props */}
               <ProjectImage projectName={dataset.name} images={images} />
-              <Heading level={3} text={dataset.name} />
-              <p>{dataset.description}</p>
+              <Heading className="project-name" level={3} text={dataset.name} />
+              <p className="project-description">{dataset.description}</p>
               <Tags tags={dataset.topics} />
-              <Button
-                label="Live demo"
-                buttonType="liveDemo"
-                onClick={() => window.open(dataset.homepage)}
-              />
-              <Button
-                label="View the code"
-                buttonType="github"
-                onClick={() => window.open(dataset.html_url)}
-              />
+              <div className="demo-button">
+                <Button
+                  label="Live demo"
+                  buttonType="liveDemo"
+                  onClick={() => window.open(dataset.homepage)}
+                />
+              </div>
+              <div className="git-button">
+                <Button
+                  label="View the code"
+                  buttonType="github"
+                  onClick={() => window.open(dataset.html_url)}
+                />
+              </div>
             </div>
           )
       )}
