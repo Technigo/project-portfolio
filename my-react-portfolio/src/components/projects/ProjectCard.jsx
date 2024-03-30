@@ -5,6 +5,7 @@ import { Label } from "../common/Label";
 import { Button } from "../common/Button";
 import { Image } from "../common/Image";
 import { useState } from "react";
+import "./projects.css";
 
 export const ProjectCard = ({ repositories }) => {
   //state to track the number of cards to display
@@ -42,6 +43,7 @@ export const ProjectCard = ({ repositories }) => {
     <>
       {/* Map over filtered repositories to display project cards */}
       {filteredRepos.slice(0, visibleCards).map((repo) => {
+        // Find the corresponding data in repoData.projects based on repoName
         const matchingData = localProjectsData.projects.find(
           (data) => data.repoName === repo.name
         );
@@ -66,27 +68,29 @@ export const ProjectCard = ({ repositories }) => {
                 aria-labek="This is the main heading"
                 className="project-card-heading"
               />
-              <Paragraph text={matchingData.description} />
+              <Paragraph text={repo.description} className="custom-paragraph" />
+
               {/* Displaying tags */}
-              <div role="tag" aria-label="Tags" className="tags">
+              <div role="group" aria-label="Project Tags" className="tags">
                 {matchingData.tags.map((tag, index) => (
                   <Label key={index} tagText={tag} />
                 ))}
               </div>
-            </div>
-            <div className="button-wrapper">
-              <Button
-                icon="public/icons/live-demo.svg"
-                label="Live demo"
-                link={matchingData.netlifyUrl}
-                className="netlify-btn"
-              />
-              <Button
-                icon="public/icons/github.svg"
-                label="View the code"
-                link={repo.svn_url} // Retrieve GitHub link from the API
-                className="github-btn"
-              />
+
+              <div className="button-wrapper">
+                <Button
+                  icon="/icons/live-demo.svg"
+                  label="Live demo"
+                  link={matchingData.netlifyUrl}
+                  className="netlify-btn"
+                />
+                <Button
+                  icon="/icons/github.svg"
+                  label="View the code"
+                  link={repo.svn_url} // Retrieve GitHub link from the API
+                  className="github-btn"
+                />
+              </div>
             </div>
           </article>
         );

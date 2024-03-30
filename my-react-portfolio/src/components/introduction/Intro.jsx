@@ -43,9 +43,8 @@ export const Intro = () => {
             className="header-h2"
           />
         </section>
-        <section className="intro-text">
-          <Paragraph text={introText} />
-        </section>
+        <Paragraph text={introText} className="custom-paragraph" />
+
         <div className="arrow-container" onClick={handleArrowClick}>
           <img src={arrowImage} alt="Animated Arrow" className="arrow" />
         </div>
