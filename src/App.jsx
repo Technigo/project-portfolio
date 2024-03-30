@@ -4,6 +4,7 @@ import "./App.css";
 import { Tech } from "./Tech";
 import { FeaturedProjects } from "./FeaturedProjects";
 import theDailySleep from "./assets/the-daily-sleep.png";
+import { MyWords } from "./MyWords";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,6 +24,49 @@ function App() {
               demoUrl: "",
               codeUrl: "",
               tech: ["HTML", "CSS"],
+            },
+          ]}
+        />
+
+        <div className="waves" />
+
+        <MyWords
+          posts={[
+            {
+              title: "How to stop being scared: Learning to love code",
+              date: "2023-07-01",
+              image: theDailySleep,
+              alt: "screenshots of the daily sleep website on a mobile device, a tablet, and a desktop monitor",
+              description:
+                "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
+              url: "",
+            },
+            {
+              title: "How to stop being scared: Learning to love code",
+              date: "2023-07-01",
+              image: theDailySleep,
+              alt: "screenshots of the daily sleep website on a mobile device, a tablet, and a desktop monitor",
+              description:
+                "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
+              url: "",
+            },
+            {
+              title: "How to stop being scared: Learning to love code",
+              date: "2023-07-01",
+              image: theDailySleep,
+              alt: "screenshots of the daily sleep website on a mobile device, a tablet, and a desktop monitor",
+              description:
+                "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
+              url: "",
+            },
+            {
+              title: "How to stop being scared: Learning to love code",
+              date: "2023-07-01",
+              image: theDailySleep,
+              alt: "screenshots of the daily sleep website on a mobile device, a tablet, and a desktop monitor",
+              description:
+                "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
+              url: "",
             },
           ]}
         />
