@@ -2,13 +2,15 @@ import "./Contact.css"
 import linkedinIcon from "../../assets/linkedin-grey.svg"
 import githubIcon from "../../assets/github-grey.svg"
 import instagramIcon from "../../assets/instagram-grey.svg"
-import { Portrait } from "./../miscellaneous/Portrait"
+import { PortraitContact } from "./../miscellaneous/Portrait"
 
 export const Contact = () => {
 	return (
 		<div className='contact-container'>
 			<h2>Where to find me</h2>
-			<Portrait />
+			<div className='contact-img'>
+				<PortraitContact />
+			</div>
 			<p>@ohistnathalie</p>
 			<div className='social-links'>
 				<a href='https://www.linkedin.com/in/nathalie-tu/'>

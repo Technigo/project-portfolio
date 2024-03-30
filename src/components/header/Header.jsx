@@ -1,12 +1,12 @@
 import "./Header.css"
-import { Portrait } from "../miscellaneous/Portrait"
+import { PortraitHeader } from "../miscellaneous/Portrait"
 import arrowDown from "../../assets/Vector 1.png"
 
 export const Header = () => {
 	return (
 		<div className='header-container'>
 			<div className='portrait-wrapper'>
-				<Portrait />
+				<PortraitHeader />
 			</div>
 			<div className='header-titles'>
 				<p>Hi, I&apos;m Nathalie.</p>
