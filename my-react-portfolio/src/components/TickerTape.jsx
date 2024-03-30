@@ -4,7 +4,7 @@ export const TickerTape = () => {
   return (
     <section className="ticker-tape">
       <div className="ticker-tape-scroll">
-        <p>
+        <h2>
           Frida Svensson · Frontend Developer · Frida Svensson · Frontend
           Developer · Frida Svensson · Frontend Developer · Frida Svensson ·
           Frontend Developer · Frida Svensson · Frontend Developer · Frida
@@ -14,7 +14,7 @@ export const TickerTape = () => {
           Frontend Developer · Frida Svensson · Frontend Developer · Frida
           Svensson · Frontend Developer · Frida Svensson · Frontend Developer ·
           Frida Svensson · Frontend Developer ·
-        </p>
+        </h2>
       </div>
     </section>
   );

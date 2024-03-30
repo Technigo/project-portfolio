@@ -5,10 +5,10 @@ import "./Introduction.css";
 const Introduction = () => {
   return (
     <section className="introduction">
-      <div className="profile-box">
+      <div className="introduction-box">
         <h2>Hi, I’m Frida Svensson</h2>
         <h1>Frontend Developer</h1>
-        <div className="profile-wrapper">
+        <div className="introduction-wrapper">
           <img className="profile-picture" src={profilePicture} />
           <p>
             Frida is an exceptional developer known for her innovative solutions
