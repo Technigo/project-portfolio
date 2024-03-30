@@ -5,7 +5,6 @@ import articleImages from '../article-images.json'
 import './articleSection.css'
 export const ArticlesSection = () => {
   const [articles, setArticles] = useState([])
-  const [descriptions, setDescriptions] = useState([])
   useEffect(() => {
     fetch(
       'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/@lavicafra/feed'
@@ -15,13 +14,17 @@ export const ArticlesSection = () => {
         const sortedList = data.items.sort(
           (a, b) => new Date(b.pubDate) - new Date(a.pubDate)
         )
-        setArticles(sortedList)
-        const extractedDescriptions = sortedList.map(
-          (item) =>
-            articleImages.find((img) => img.articleTitle === item.title)
-              ?.description || ''
-        )
-        setDescriptions(extractedDescriptions)
+        const pairedArticles = sortedList.map((article) => {
+          const matchingImage = articleImages.find(
+            (img) => img.articleTitle === article.title
+          )
+          return {
+            ...article,
+            image: matchingImage?.image || '',
+            description: matchingImage?.description || '',
+          }
+        })
+        setArticles(pairedArticles)
       })
       .catch((error) => console.error(error))
   }, [])
@@ -29,7 +32,9 @@ export const ArticlesSection = () => {
     <div className="articleSection">
       <h1>My Words</h1>
       <div className="articleSectionContainer">
-        <ArticleCard articles={articles} descriptions={descriptions} />
+        {articles.map((article, index) => (
+          <ArticleCard key={index} article={article} />
+        ))}
       </div>
     </div>
   )
