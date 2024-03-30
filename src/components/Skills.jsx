@@ -10,7 +10,6 @@ export const MySkills = () => {
 					<h3 className="toolbox">Toolbox</h3>
 					<h3 className="upcomming">Upcomming</h3>
 					<h3 className="more">More</h3>
-
 					<ul className="tech-skills-code">
 						<li>HTML5</li>
 						<li>CSS3</li>
@@ -19,24 +18,22 @@ export const MySkills = () => {
 						<li>Styled Components</li>
 						<li>Github</li>
 					</ul>
-				</div>
-				<div>
 					<ul className="tech-skills-toolbox">
 						<li>Figma</li>
 						<li>Postman</li>
 						<li>Slack</li>
 						<li>Notion</li>
 					</ul>
-				</div>
-				<div>
 					<ul className="tech-skills-upcomming">
 						<li>Node.js</li>
 						<li>Python</li>
 						<li>C#</li>
 					</ul>
-				</div>
-				<div>
-					<ul className="tech-skills-more"></ul>
+					<ul className="tech-skills-more">
+						<li>Communication</li>
+						<li>Problem solver</li>
+						<li>Analytic</li>
+					</ul>
 				</div>
 			</div>
 		</>
