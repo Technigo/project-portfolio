@@ -10,9 +10,15 @@ const ProjectCard = ({ project }) => {
       <div className={styles.imgContainer}>
         <Asset name={project.image} format="png" folder="projects" />
       </div>
-      <h3>{project.name}</h3>
+      <h3 className={styles.name}>{project.name}</h3>
       <p className={styles.description}>{project.description}</p>
-      <p>{project.tags.join(" ")}</p>
+      <div className={styles.tags}>
+        {project.tags.map((tag, index) => (
+          <span className={styles.tag} key={index}>
+            {tag}
+          </span>
+        ))}
+      </div>
       <div className={styles.reference}>
         <span className={styles.refItem}>
           <IoIosLink />
