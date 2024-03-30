@@ -11,6 +11,7 @@ export const Portfolio = () => {
   const techSectionRef = useRef(null);
   const [avatarUrl, setAvatarUrl] = useState("");
   const [projects, setProjects] = useState([]);
+  const [showAllProjects, setShowAllProjects] = useState(false);
 
   useEffect(() => {
     // Fetch repositories when component mounts
@@ -40,7 +41,7 @@ export const Portfolio = () => {
           id: project.id,
           name: project.name,
           description: project.description,
-          gitUrl: project.git_url,
+          htmlUrl: project.html_url,
           topics: project.topics,
           homepage: project.homepage,
         }));
@@ -59,6 +60,11 @@ export const Portfolio = () => {
     if (techSectionRef.current) {
       techSectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
+
+    // Function to toggle showing all projects or only starred projects
+    const toggleShowAllProjects = () => {
+      setShowAllProjects(!showAllProjects);
+    };
   };
 
   return (
@@ -70,7 +76,7 @@ export const Portfolio = () => {
         />{" "}
       </header>
       <Tech techSectionRef={techSectionRef} />
-      <FeaturedProjects projects={projects} />
+      <FeaturedProjects projects={projects} showAllProjects={showAllProjects} />
       <Skills />
       <Contact avatarUrl={avatarUrl} />
     </div>

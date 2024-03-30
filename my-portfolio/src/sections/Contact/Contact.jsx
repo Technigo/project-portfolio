@@ -1,6 +1,6 @@
 import { Image } from "../../components/ImageElements/Image";
-import linkedinSvg from "../../../public/icons/linkedin-social.svg";
-import githubSvg from "../../../public/icons/github-social.svg";
+import linkedinSocialSvg from "/icons/linkedin-social.svg";
+import githubSocialSvg from "/icons/github-social.svg";
 import { TickerTape } from "../../components/TickerTape/TickerTape";
 import "./Contact.css";
 
