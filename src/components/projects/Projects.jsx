@@ -15,6 +15,7 @@ export const Projects = () => {
 					throw new Error("Network response was not ok" + response.statusText)
 				}
 				const data = await response.json()
+				data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
 				setRepos(data)
 			} catch (error) {
 				console.error(
