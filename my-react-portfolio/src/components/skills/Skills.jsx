@@ -11,7 +11,7 @@ export const Skills = () => {
             level={3}
             text="Code"
             className="style white"
-            id="bkgr-pink"
+            id="bkgr-code"
           />
 
           <div className="white skills-text">
@@ -28,7 +28,7 @@ export const Skills = () => {
             level={3}
             text="Toolbox"
             className="style white"
-            id="bkgr-blue"
+            id="bkgr-toolbox"
           />
 
           <div className="white skills-text">
@@ -44,9 +44,9 @@ export const Skills = () => {
         <div className="skills-wrapper">
           <Heading
             level={3}
-            text="Toolbox"
+            text="Upcoming"
             className="style white"
-            id="bkgr-green"
+            id="bkgr-upcoming"
           />
 
           <div className="white skills-text">
@@ -58,7 +58,7 @@ export const Skills = () => {
             level={3}
             text="More"
             className="style white"
-            id="bkgr-yellow"
+            id="bkgr-more"
           />
 
           <div className="white skills-text">
