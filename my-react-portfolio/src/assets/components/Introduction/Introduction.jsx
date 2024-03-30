@@ -12,7 +12,7 @@ export const Introduction = () => {
             <div className="imageAndIntro">
               <img
                 className="profilePhoto"
-                src="../../../public/images/profilePhoto.jpg"
+                src="public/images/profilePhoto.jpg"
                 alt="developer's photo"
               />
               <article className="dev-intro">
@@ -28,7 +28,7 @@ export const Introduction = () => {
           </div>
           <section className="arrow-contaner">
             <Image
-              image="../../../public/arrowdown.svg"
+              image="public/arrowdown.svg"
               alt="an arrow to show the next page"
               className={"arrow"}
             />
