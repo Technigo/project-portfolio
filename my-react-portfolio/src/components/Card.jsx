@@ -1,26 +1,27 @@
 import { Photo } from "./Photo";
 import { Tag } from "./Tag";
 import { Button } from "./Button";
-import techImage from "/tech-image.jpg";
 import "./Card.css";
 
-export const Card = () => {
+export const Card = ({
+  title,
+  image,
+  description,
+  tags,
+  netlifyUrl,
+  githubUrl,
+}) => {
   return (
     <div className="Card-box">
-      <Photo source={techImage} color="blue" size="small" />
+      <Photo source={image} color="blue" size="small" />
       <div className="project-info-wrapper">
         <div className="description-and-tags">
-          <h2>Chatbot</h2>
-          <p>
-            The chat bot app is a conversational AI-powered tool designed to
-            enhance user experience by providing instant, personalized, and
-            automated responses to user inquiries.
-          </p>
+          <h2>{title}</h2>
+          <p>{description}</p>
           <div className="tech-tags">
-            <Tag tagName="HTML5" />
-            <Tag tagName="CSS3" />
-            <Tag tagName="React" />
-            <Tag tagName="Node" />
+            {tags.map((tag) => {
+              return <Tag tagName={tag} key={tag}/>
+            })}
           </div>
         </div>
         <div className="button-wrapper">
@@ -28,11 +29,13 @@ export const Card = () => {
             className="live-demo"
             label="Live demo"
             icon="fa-solid fa-globe"
+            url={netlifyUrl}
           />
           <Button
             className="view-the-code"
             label="View the code"
             icon="fab fa-github"
+            url={githubUrl}
           />
         </div>
       </div>
