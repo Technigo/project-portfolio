@@ -18,7 +18,7 @@ export const Header = () => {
 				my horizons in digital marketing. My goal is to transfer from a simple
 				marketing girl to a front-end developer.
 			</p>
-			<img className='arrow' src={arrowDown} alt='Pink Arrow pointing down' />
+			<img className='arrow' src={arrowDown} alt='Arrow pointing down' />
 		</div>
 	)
 }
