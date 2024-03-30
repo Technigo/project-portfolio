@@ -1,6 +1,7 @@
 /* CSS Style for Skills.jsx */
 .section {
-  margin-bottom: 3rem;
+  margin: 3rem auto;
+  max-width: 1335px;
 }
 
 .descr {
@@ -20,9 +21,25 @@
 .skillset {
   /* display: flex;
   align-items: flex-start;
-  justify-content: center; */
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  justify-items: center;
+  justify-content: center;
   margin: 0 auto;
+  flex-flow: row wrap; */
+
+  display: grid;
+  /* grid-template-columns: repeat(2, auto); */
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-row-gap: 1rem;
+}
+
+@media screen and (min-width: 601px) {
+  .skillset {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .skillset {
+    grid-template-columns: repeat(4, auto);
+  }
 }
