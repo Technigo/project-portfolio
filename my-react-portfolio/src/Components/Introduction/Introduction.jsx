@@ -7,7 +7,7 @@ export const Introduction = () => {
       <div className="introContainer">
         <img
           className="profilePic"
-          src="src/Components/profile-picture.png"
+          src="profile-picture.png"
           alt="profile-image"
         />
         <div className="headerContainer">
@@ -23,7 +23,7 @@ export const Introduction = () => {
         <div className="BioContainerBigDev">
           <img
             className="profilePicMob"
-            src="src/Components/profile-picture.png"
+            src="profile-picture.png"
             alt="profile-image"
           />
           <p>

@@ -10,7 +10,7 @@ export const ContactSection = () => {
           <h1>Let&apos;s talk</h1>
           <img
             className="contactPic"
-            src="src/Components/profile-picture.png"
+            src="profile-picture.png"
             alt="profile-image"
           />
           <div className="contactInfo">
