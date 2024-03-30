@@ -23,8 +23,6 @@ export const Contact = () => {
           />
           <div className="info">
             <p className="name">Trista Shan</p>
-            {/* <p className="phone">phone number</p>
-            <p className="email">email</p> */}
           </div>
         </div>
         <div className="contactIcons">
@@ -41,7 +39,6 @@ export const Contact = () => {
               <Instagram />
             </a>
           </div>
-
       </section>
     );
 }
