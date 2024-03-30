@@ -1,4 +1,4 @@
-import './Image.css'
+import "./image.css"
 
 export const Image = ({image, alt, className}) =>{
     return (

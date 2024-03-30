@@ -42,29 +42,36 @@ export const FeaturedProjects = () => {
         }
       }, [])
 
-      return(
+      return (
         <>
           {error && setError}
           <section className="project-wrapper">
-            {loading ? (<p>Loading...</p>) : 
-            <>
-            <div className='topicDiv'>
-            <PageTopic pageTopic={"Featured Projects"} className={"project"} />
-        </div>
-            <div className="project-container">
-                {projects.map(project => {
-                    return(
-                    <ProjectWrapper 
-                    key={project.id} 
-                    projectName={project.name}
-                    topics={project.topics}
-                    codeLink={project.html_url}
-                    demoLink={project.homepage}
-                    projectIntro={project.description}/>)
-                })}</div>
-            </>
-}
+            {loading ? (
+              <p>Loading...</p>
+            ) : (
+              <>
+                <div className="topicDiv">
+                  <PageTopic
+                    pageTopic={"Featured Projects"}
+                    className={"project"}
+                  />
+                </div>
+                {projects.map((project) => {
+                  return (
+                    <ProjectWrapper
+                      key={project.id}
+                      projectName={project.name}
+                      topics={project.topics}
+                      codeLink={project.html_url}
+                      demoLink={project.homepage}
+                      projectIntro={project.description}
+                    />
+                  );
+                })}
+              </>
+            )}
           </section>
         </>
-      )
+      );
     }
+//useEffect need to change

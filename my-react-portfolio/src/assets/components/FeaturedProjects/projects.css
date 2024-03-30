@@ -1,28 +1,24 @@
+
 .project {
-    color: #0B24F5;
-    font-family: Montserrat;
+    color: var(--color-1);
+    font-family: "Montserrat", sans-serif;
     font-size: 80px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     padding-bottom: 128px;
-    justify-items: left;
- 
+    text-align: left;
 }
 
 .project-wrapper{
     padding: 128px 234px 124px 234px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
 }
 
-.detail-container{
+.projet-container{
     display: grid;
     grid-template-columns: 428px 620px;
     column-gap: 16px;
-    row-gap: 128px;
+    padding-bottom: 128px;
 }
 
 .detail {
@@ -30,13 +26,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    flex: 1 0 0;
-    align-self: stretch;
 }
 
-.projectName{
+.heading{
     color: var(--color-3);
-    font-family: Montserrat;
+    font-family: "Montserrat",sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -44,12 +38,14 @@
 }
 .description {
     color: var(--color-3);
-    font-family: Hind;
+    font-family: "Hind", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: left;
+    word-wrap: break-word;
+
 }
 
 .btn {
@@ -57,3 +53,91 @@
     align-items: flex-start;
     gap: 32px;
 }
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .project-wrapper{
+        padding: 128px 16px;
+    }
+    .project{
+        text-align: center;
+        font-size: 58px;
+    }
+    .heading{
+        font-size: 24px;
+    }
+    .projet-container{
+       display: grid;
+       grid-template-rows: 250px 375px;
+       row-gap: 16px;
+    }
+    .detail{
+        grid-area: 2/1/3/-2;
+    }
+    .btn{
+        flex-direction: column;
+    }
+    .description{
+        word-wrap: break-word;
+        font-size: 14px;
+
+    }
+  
+    
+}
+  @media (min-width: 501px) and (max-width: 768px) {
+      .project {
+          font-size: 56px;
+      }
+
+      .heading {
+          font-size: 24px;
+      }
+
+      .projet-container {
+          display: grid;
+          grid-template-columns: 200px 430px;
+          column-gap: 20px;
+      }
+
+      .detail {
+          max-width: 430px;
+      }
+
+      .description {
+          font-size: 16px;
+          word-wrap: break-word;
+      }
+
+      .project-wrapper {
+          padding: 128px 32px;
+      }
+  }
+  @media (min-width: 769px) and (max-width: 1280px) {
+      .project-wrapper {
+          padding: 80px 100px;
+      }
+
+      .projet-container {
+          display: grid;
+          grid-template-rows: 408px 534px;
+          row-gap: 10px;
+      }
+
+      .detail {
+          max-width: 534px;
+      }
+
+      .project {
+          font-size: 60px;
+      }
+
+      .heading {
+          font-size: 24px;
+      }
+
+      .description {
+          font-size: 16px;
+          word-wrap: break-word;
+
+      }
+  }

@@ -1,67 +1,113 @@
-.intro-page{
-  
+.intro-page {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
-}
-
-.content{
   padding: 232px 234px 63px 234px;
 }
-.profilePhoto{
+
+.profilePhoto {
   width: fixed 164px;
   height: fixed 164px;
   border-radius: 50%;
-
 }
 
-.dev-name{
+.dev-name {
   color: var(--color-3);
-font-family: Montserrat;
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-align: left;
-}
-
-.dev-title{
-  color: #0B24F5;
-font-family: Montserrat;
-font-size: 80px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-align: left;
-}
-
-.imageAndIntro{
-  display: flex;
-align-items: center;
-gap: 22px;
-align-self: stretch;
-}
-
-.dev-intro{
-  width: 100% 858px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   text-align: left;
 }
 
-.arrow-contaner{
+.dev-title {
+  color: var(--color-1);
+  font-family:"Montserrat", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+}
+
+.imageAndIntro {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  align-self: stretch;
+}
+
+.dev-intro {
+  width: 100% 858px;
+  text-align: left;
+  word-wrap: break-word;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: "Hind", sans-serif;
+}
+
+.arrow-contaner {
   height: fixed 68px;
   padding-bottom: 68px;
 }
 
-.arrow{
+.arrow {
   animation: move 2s linear infinite;
+  margin-top: 138px ;
 }
 
 @keyframes move {
-  0%, 100% {
-    transform: translateY(0);}
-  25%, 75% {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25%,
+  75% {
     transform: translateY(-10px);
   }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .intro-page{
+    padding: 64px 16px; 
+  }
+  .imageAndIntro{
+    display: flex;
+    flex-direction: column;
+  }
+  .dev-title{
+    font-size: 28px;
+  }
+  .dev-name{
+    font-size: 18px;
+  }
+  .profilePhoto{
+    width: 164px;
+    height: 164px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .intro-page{
+    padding: 128px 32px;
+  }
+  .dev-title{
+    font-size: 40px;
+  }
+  .dev-intro{
+    max-width: 494px ;
+  }
+  .profilePhoto {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1280px) {
+  .intro-page{
+    padding: 332px 161px;
+  } 
 }

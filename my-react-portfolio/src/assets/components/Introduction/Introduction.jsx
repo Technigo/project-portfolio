@@ -1,4 +1,4 @@
-import { Image } from '../smallComps/Image'
+import { Image } from '../projectImage/Image';
 import './Introduction.css'
 
 export const Introduction = () => {

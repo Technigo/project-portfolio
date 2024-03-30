@@ -6,13 +6,13 @@
 }
 .contact {
     color: var(--color-1);
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;;
     font-style: normal;
     font-size: 80px;
     font-weight: 700;
     line-height: normal;
     height: 98px;
-    padding-bottom: 128px;
+
 }
 
 .contactContent{
@@ -22,20 +22,12 @@
     gap: 64px;
     height: 457px;
 }
-.name,
-.phone,
-.email {
+.name {
     color: var(--color-3);
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-size: 32px;
     font-weight: 600;
     line-height: normal;
-}
-
-.profilePhoto2{
-    width: 140px;
-    height: 160px;
-    border-radius: 50%;
 }
 
 .info{
@@ -54,3 +46,42 @@
         fill: var(--color-3)
     }
 }
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .contact-wrapper {
+        padding: 128px 16px;
+    }
+
+    .contact {
+        font-size: 56px;
+        height: 68px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+}
+  
+  @media (min-width: 501px) and (max-width: 768px) {
+
+      .contact-wrapper {
+          padding: 128px 32px;
+          gap: 64px;
+      }
+
+      .contact {
+          font-size: 56px;
+          height: 68px;
+      }
+
+      .name {
+          font-size: 24px;
+      }
+  }
+  @media (min-width: 769px) and (max-width: 1280px) {
+    .contact-wrapper {
+        padding: 128px 162px;
+    }
+
+  }

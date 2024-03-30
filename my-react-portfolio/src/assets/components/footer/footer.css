@@ -1,22 +1,24 @@
 .ticker-tape {
     background-color: var(--color-7);
-    color: var(--color-2);
+    color: var(--color-3);
     height: 114px;
-    
-    
+
 }
+
+
 .ticker-tape p {
     display: inline-block;
     white-space: nowrap;
-    font-family: Montserrat;
+    font-family: "Montserrat",sans-serif;
     font-size: 26.038px;
     font-weight: 600;
     padding-top: 41px;
     padding-bottom: 35px;
-    animation: moveLeftToRight 60s linear infinite;
-
+    animation: wrap 60s linear infinite;
 }
-@keyframes moveLeftToRight {
+   
+
+@keyframes wrap {
     0% {
         transform: translateX(100%);
     }

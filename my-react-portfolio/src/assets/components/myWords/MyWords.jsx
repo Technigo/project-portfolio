@@ -1,6 +1,6 @@
 import { PageTopic } from "../smallComps/PageTopic"
 import "./myWords.css"
-import { Image } from "../smallComps/Image"
+import { Image } from "../projectImage/Image"
 // import {PinkPath} from "../iconfoler/PinkPath"
 
 export const MyWords = () => {

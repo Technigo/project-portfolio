@@ -19,12 +19,12 @@ export const Contact = () => {
           <img
             src={profilePhoto}
             alt="profile photo"
-            className="profilePhoto2"
+            className="profilePhoto"
           />
           <div className="info">
             <p className="name">Trista Shan</p>
-            <p className="phone">phone number</p>
-            <p className="email">email</p>
+            {/* <p className="phone">phone number</p>
+            <p className="email">email</p> */}
           </div>
         </div>
         <div className="contactIcons">
@@ -45,7 +45,3 @@ export const Contact = () => {
       </section>
     );
 }
-//email need to work on for spam
-//hover svg doesn't work, need to add hovered svg 
-//link need to be changed
-//button animation not yet
