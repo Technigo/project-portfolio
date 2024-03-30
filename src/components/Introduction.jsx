@@ -16,10 +16,10 @@ export const Introduction = () => {
 					<img src={myImage} alt="Sofie" className="my-image"></img>
 					<div className="heading-text">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-							est labore accusantium, iure officia earum, a porro, voluptatum
-							quibusdam officiis fugiat explicabo. Magni blanditiis ea debitis
-							quasi, omnis iste inventore?
+							With a background in speech pathology, I combine my passion for
+							learning new skills and technology with great communication,
+							problem-solving abilities, and an analytical mind with a keen
+							attention to detail.
 						</p>
 					</div>
 				</div>
