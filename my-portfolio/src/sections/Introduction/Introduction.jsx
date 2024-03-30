@@ -1,12 +1,16 @@
 import "./Introduction.css";
-import arrowSvg from "../../assets/icons/Arrow.svg";
+import arrowSvg from "../../../public/icons/arrow.svg";
+import { Image } from "../../components/ImageElements/Image";
 
 export const Introduction = ({ avatarUrl, scrollToTechSection }) => {
   return (
     <section className="introduction-container">
-      <div className="profile-image">
-        <img src={avatarUrl} alt="profile-image" className="circle-image" />
-      </div>
+      <Image
+        divClassName={"profile-image"}
+        elementClassName={"circle-image"}
+        imagePath={avatarUrl}
+        imageAltText={"Profile-picture of Erica"}
+      />
       <div className="heading-wrapper">
         <h3>Hi, I&apos;m Erica Mechler</h3>
         <h1 className="introduction-heading">Frontend Developer</h1>
