@@ -1,11 +1,12 @@
 
+import { ProjectImage } from "../projectImage/ProjectImages"
 import { ProjectName } from "../projectName/ProjectName"
 import { Tag } from "../tag/Tag"
 export const ProjectWrapper = ({ projectName, projectIntro, topics, demoLink, codeLink }) => {
     const projectHeading = projectName.replaceAll('-', ' ')
     return (
         <div>
-            {/* <img src={projectImg} alt="" />  */}
+            <ProjectImage repo={projectName} url={demoLink} alt={projectName} />
             <ProjectName projectName={projectHeading}/>
             <p>{projectIntro}</p>
             <ul className="tag">
