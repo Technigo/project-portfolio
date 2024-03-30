@@ -4,10 +4,10 @@ import { Linkedin } from '../iconfoler/Linkedin'
 import { Github } from '../iconfoler/Github'
 import { Stackover } from '../iconfoler/Stackoverflow'
 import { Instagram } from '../iconfoler/ig'
+import profilePhoto from '../../otherImages/profilePhoto.jpg'
 
 export const Contact = () => {
     const linkedin = "https://www.linkedin.com/in/trista-shan-62074471/"
-    const profilePhoto ="/images/profilePhoto.jpg" 
     const github = "https://github.com/trista1987"
     const stackover="https://stackoverflowteams.com/c/technigo/users/598/?tab=profile"
     const instagram = "https://www.instagram.com/trista_shan/"

@@ -1,6 +1,7 @@
 import { Image } from '../projectImage/Image';
 import './Introduction.css'
-import profilePhoto from "../../../assets/profilePhoto.jpg"
+import profilePhoto from '../../otherImages/profilePhoto.jpg'
+import arrow from '../../otherImages/arrowdown.svg'
 
 
 export const Introduction = () => {
@@ -30,7 +31,7 @@ export const Introduction = () => {
           </div>
           <section className="arrow-contaner">
             <Image
-              image="public/arrowdown.svg"
+              image={arrow}
               alt="an arrow to show the next page"
               className={"arrow"}
             />
