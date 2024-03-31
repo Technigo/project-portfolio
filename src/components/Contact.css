@@ -1,112 +1,79 @@
 .contact {
     width: 100vw;
-    padding: 128px 0; 
+    padding: 128px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-
-}
-
-.classh2contact {
-    color: #5FA8D3;;
+  }
+  
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Aligns the buttons vertically in the center */
+  }
+  
+  .classh2contact {
+    color: #5FA8D3;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 80px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-}
-
-.profile-image {
+  }
+  
+  .profile-image {
     width: 164px;
     height: 164px;
-    border-radius: 164px;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9;
-}
-
-.contact-text {
-    font: 'Montserrat', sans-serif;
+    border-radius: 50%; /* Makes the image fully rounded */
+    background: url('path-to-your-image.jpg') lightgray 50% / cover no-repeat, #D9D9D9;
+  }
+  
+  
+  .contact-text {
+    font-family: 'Montserrat', sans-serif;
     color: #1E2749;
     font-size: 32px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
-}
-
+  }
+  
   /* Tablet */
   @media (min-width: 744px) and (max-width: 1279px) {
     .contact {
-        width: 100vw; 
-        padding: 128 px 217 px 128px 217 px;
+      padding: 128px 217px;
     }
-
+  
     .classh2contact {
-        color: #5FA8D3;;
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-font-size: 56px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+      font-size: 56px;
     }
-
-    .profile-image {
-        width: 164px;
-height: 164px;
-border-radius: 164px;
-background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9;
-    }
-
-    .contact-text {
-        color: #1E2749;
-        font-family:  'Montserrat', sans-serif;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-    }
-}
-/* Mobile */
-@media (min-width: 375px) and (max-width: 743px){
+  }
+  
+  /* Mobile */
+  @media (min-width: 375px) and (max-width: 743px) {
     .contact {
-        padding: 60px 0; 
-        width: 100vw;
+      padding: 60px 0;
     }
-
-    .classh2contact {
-        color: #5FA8D3;;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 56px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    .profile-image {
-        width: 164px;
-        height: 164px;
-        border-radius: 164px;
-        background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9;
-    }
-
+  
+    .classh2contact,
     .contact-text {
-        color: #1E2749;
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+      font-size: 56px;
     }
-
+  
+    .contact-text {
+      font-size: 24px;
+    }
+  
     .button-container {
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        padding-right: 30px;
-      }
-      
-}
+      display: flex;
+      justify-content: center;
+      padding-right: 30px;
+    }
+  }
+  
 
 
 
