@@ -1,0 +1,103 @@
+/* CSS Style for Contact.jsx */
+.section {
+  margin: 0 auto;
+  padding: 7rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #b4d4ee;
+  clip-path: polygon(
+    0 50px,
+    calc(50% - 50px) 50px,
+    50% 0,
+    calc(50% + 50px) 50px,
+    100% 50px,
+    100% 100%,
+    0 100%
+  );
+  margin-top: -40px;
+}
+
+.section:target h2 {
+  text-decoration: underline #ffdc58 20px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -10px;
+}
+
+.descr {
+  text-align: center;
+  padding: 0 10px;
+}
+.title,
+.subtitle {
+  margin: 0;
+}
+.subtitle {
+  font-size: 20px;
+}
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+  padding: 20px 10px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.text,
+.email {
+  height: 25px;
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.message {
+  height: 150px;
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.submit {
+  margin-top: 20px;
+  width: 120px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 0;
+}
+
+.toTop {
+  width: 60px;
+  position: absolute;
+  right: 5%;
+  bottom: 2%;
+  cursor: pointer;
+
+  /* bottom: -20%; */
+  /* bottom: 200px; */
+  /* right: -40%; */
+  /* bottom: -100px; */
+  /* bottom: 100px; */
+}
+
+@media screen and (min-width: 601px) {
+  .text,
+  .email,
+  .message {
+    width: 300px;
+  }
+
+  .form {
+    width: 400px;
+  }
+}

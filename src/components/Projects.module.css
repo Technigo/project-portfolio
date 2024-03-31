@@ -1,0 +1,70 @@
+/* CSS Style for Projects.jsx */
+.section {
+  margin: 0 auto;
+  /* max-width: 1335px; */
+  /* background-color: #3d4b9c; */
+  /* background: url(../assets/background-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  /* background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  ); */
+  /* background-color: #fff6d2; */
+  padding: 10rem 0;
+  clip-path: polygon(
+    0 0,
+    calc(50% - 4.14px - 50px) 0,
+    50% calc(50px + 4.14px),
+    calc(50% + 4.14px + 50px) 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+  margin-top: -40px;
+  background-color: #b4d4ee;
+}
+
+.section:target h2 {
+  text-decoration: underline #ffdc58 20px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -10px;
+}
+
+.descr {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.title,
+.subtitle {
+  /* color: white; */
+
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+.container {
+  flex-flow: row wrap;
+  justify-content: center;
+  display: flex;
+  gap: 64px;
+  padding: 0 2rem;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    gap: auto;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .container {
+    gap: 1.8rem;
+  }
+}
