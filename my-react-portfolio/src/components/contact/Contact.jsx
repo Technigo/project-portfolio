@@ -14,7 +14,7 @@ export const Contact = () => {
         </div>
         <div className="flex contact-wrapper">
           <Heading level="3" text="Eliane Weber" />
-          <Heading level="3" text="eliane.weber(at)yahoo.com" />
+          <Heading level="3" text="eliane.weber@yahoo.com" />
         </div>
         <div className="social-wrapper">
           <a

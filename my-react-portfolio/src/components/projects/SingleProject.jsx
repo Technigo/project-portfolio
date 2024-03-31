@@ -33,15 +33,15 @@ export const SingleProject = ({ projects }) => {
                   <Tags tags={dataset.topics} />
                 </div>
                 <div className="button-wrapper">
-                  <button id="demo-button">
+                  <button className="demo-button">
                     <a href={dataset.homepage}>
-                      <Demo alt="github-icon" />
+                      <Demo alt="github-icon" id="livedemo" />
                       Live Demo
                     </a>
                   </button>
-                  <button id="git-button">
+                  <button className="git-button">
                     <a href={dataset.html_url}>
-                      <Git alt="github-icon" />
+                      <Git alt="github-icon" id="github" />
                       View the Code
                     </a>
                   </button>

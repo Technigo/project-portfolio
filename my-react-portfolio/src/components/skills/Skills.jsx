@@ -20,7 +20,7 @@ export const Skills = () => {
           <div className="light skills-text">
             <p>HTML5</p>
             <p>CSS3</p>
-            <p>Javascript</p>
+            <p>JavaScript</p>
             <p>ES6</p> <p>React</p>
             <p>Styled Components</p>
             <p>GitHub</p>
@@ -36,13 +36,12 @@ export const Skills = () => {
           />
 
           <div className="light skills-text">
-            <p>Atom</p>
-            <p>Postman</p>
+            <p>Visual Studio Code</p>
             <p>Adobe Photoshop</p>
             <p>Adobe InDesign</p>
-            <p>Keynote</p>
             <p>Figma</p>
             <p>Slack</p>
+            <p>Google Analytics</p>
           </div>
         </div>
         <div className="upcoming">
@@ -55,6 +54,8 @@ export const Skills = () => {
 
           <div className="light skills-text">
             <p>Node.js</p>
+            <p>MongoDB</p>
+            <p>Typescript</p>
           </div>
         </div>
         <div className="more">
@@ -66,9 +67,10 @@ export const Skills = () => {
           />
 
           <div className="light skills-text">
-            <p>Branding</p>
-            <p>Strategy</p>
-            <p>Concept development</p>
+            <p>Project management</p>
+            <p>Event management</p>
+            <p>Media planning</p>
+            <p>Reports</p>
           </div>
         </div>
       </div>
