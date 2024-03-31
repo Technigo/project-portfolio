@@ -24,7 +24,7 @@ const Asset = ({ name, format, folder }) => {
 
   if (!loading && ImportedIconRef.current) {
     const { current: ImportedIcon } = ImportedIconRef;
-    return <img src={ImportedIcon} alt={`${name} icon`} />;
+    return <img src={ImportedIcon} alt={`${name} icon`} title={name} />;
   }
 
   return null;
