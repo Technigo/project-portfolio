@@ -15,7 +15,7 @@ import Week10Oceanquiz from "../assets/Week10Oceanquiz.jpg";
 import Week12QR from '../assets/Week12QR.jpg';
 import finalproject from '../assets/Finalproject.jpg';
 import './MyProjects.css';
-import './Button.css';
+
 
 
 const projectOrder = [
