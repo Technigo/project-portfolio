@@ -3,7 +3,7 @@ export const ContactInfo = () => {
     <>
       <div className="info-element">
         <div className="info-container">
-          <h1 className="info-header">Lets talk</h1>
+          <h1 className="info-header">Let’s talk</h1>
 
           <div className="info-paragrah">
             <img className="info-image" src="./photo.jpg" alt="Avatar" />
