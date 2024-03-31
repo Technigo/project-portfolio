@@ -1,7 +1,12 @@
 body {
   margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
   background-color: rgb(216, 189, 189);
   color: black;
+  display: flex;
+  place-items: center;
+  font-family: 'Modern-sans';
 }
 
 h1,
@@ -15,6 +20,8 @@ p {
 
 h1 {
   font-family: 'Beluno';
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
 .loading {
@@ -25,7 +32,7 @@ h1 {
 }
 
 .loading h1 {
-  padding-top: 50%;
+  padding-top: 5em;
   font-size: 60px;
 }
 
@@ -69,20 +76,6 @@ a:hover::after {
   color: black;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  font-family: 'Modern-sans';
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -104,7 +97,7 @@ button:focus-visible {
 
 @media screen and (min-width: 768px) {
   .loading h1 {
-    padding-top: 20%;
+    padding-top: 3em;
     font-size: 120px;
   }
 }

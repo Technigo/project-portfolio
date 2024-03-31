@@ -33,7 +33,7 @@ export const Introduction = () => {
           <Lottie
             animationData={animation}
             loop
-            style={{ width: 120, height: 120 }}
+            style={{ width: 100, height: 100 }}
           />
         </a>
       </div>
