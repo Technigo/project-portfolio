@@ -4,6 +4,7 @@ import { FeaturedProject } from "./assets/sections/FeaturedProject/FeaturedProje
 import { MyWords } from "./assets/sections/MyWords/MyWords.jsx";
 import { Skills } from "./assets/sections/MySkills/Skills.jsx";
 import { ContactMe } from "./assets/sections/ContactMe/ContactMe.jsx";
+import { Footer } from "./assets/sections/Footer/Footer.jsx";
 import "./App.css";
 
 export const App = () => {
@@ -15,6 +16,7 @@ export const App = () => {
       <MyWords />
       <Skills />
       <ContactMe />
+      <Footer />
     </>
   );
 };
