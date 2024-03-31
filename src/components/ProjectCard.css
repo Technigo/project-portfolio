@@ -10,6 +10,9 @@
 
 .mockup-image {
   margin: 0 16px 24px 16px;
+  height: 200px;
+  width: 280px;
+  object-fit: cover;
 }
 
 .project-name {
@@ -69,4 +72,20 @@
 
 .button-container button:hover img {
   filter: brightness(0) invert(1);
+}
+
+/* Media Queries for tablet*/
+@media screen and (min-width: 667px) {
+  .mockup-image {
+    height: 280px;
+    width: 200px;
+  }
+}
+
+/* Media Queries for desktop */
+@media screen and (min-width: 1024px) {
+  .mockup-image {
+    height: 200px;
+    width: 200px;
+  }
 }

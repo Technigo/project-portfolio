@@ -19,22 +19,24 @@ export const ProjectCard = ({ repo }) => {
   return (
     <div className="project-card-container">
       <img src={mockupImage} alt="Mockup image" className="mockup-image" />
-      <h3 className="project-name">{formattedProjectName}</h3>
-      <p className="project-description">{repo.description}</p>
-      <div className="project-tags-container">
-        {repo.topics.map((topic, index) => (
-          <p key={index}>{topic}</p>
-        ))}
-      </div>
-      <div className="button-container">
-        <button onClick={handleLiveDemoClick}>
-          <img src={livedemoIcon} alt="Live Demo Icon" className="icon" />
-          Live demo
-        </button>
-        <button onClick={handleViewCodeClick}>
-          <img src={githubIcon} alt="GitHub Icon" className="icon" />
-          View the code
-        </button>
+      <div className="project-content">
+        <h3 className="project-name">{formattedProjectName}</h3>
+        <p className="project-description">{repo.description}</p>
+        <div className="project-tags-container">
+          {repo.topics.map((topic, index) => (
+            <p key={index}>{topic}</p>
+          ))}
+        </div>
+        <div className="button-container">
+          <button onClick={handleLiveDemoClick}>
+            <img src={livedemoIcon} alt="Live Demo Icon" className="icon" />
+            Live demo
+          </button>
+          <button onClick={handleViewCodeClick}>
+            <img src={githubIcon} alt="GitHub Icon" className="icon" />
+            View the code
+          </button>
+        </div>
       </div>
     </div>
   );
