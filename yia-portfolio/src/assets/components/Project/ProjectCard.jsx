@@ -1,6 +1,7 @@
 import { ProjectImages } from "./ProjectImages";
 import { Tags } from "../Tag/Tags";
 import { Buttons } from "../ButtonComponents/Buttons";
+import "./ProjectCard.css";
 
 export const ProjectCard = ({
   name,
@@ -11,7 +12,7 @@ export const ProjectCard = ({
   headlineId,
 }) => {
   return (
-    <div>
+    <div className="project-card">
       <ProjectImages projectName={name} />
       <div className="project-description">
         <h2>{name[0].toUpperCase() + name.replaceAll("-", " ").slice(1)}</h2>

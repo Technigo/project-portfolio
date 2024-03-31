@@ -1,4 +1,4 @@
-
+import "../Tag/Tag.css";
 
 export const Tags = ({ tags }) => {
   return (
