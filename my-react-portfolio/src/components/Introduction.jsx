@@ -1,4 +1,5 @@
 import { FaArrowDownLong } from "react-icons/fa6";
+import PropTypes from "prop-types";
 
 const Introduction = ({ scrollToTech }) => {
   return (
@@ -10,11 +11,11 @@ const Introduction = ({ scrollToTech }) => {
       <div className="intro-paragraph">
         <img className="intro-image" src="./photo.jpg" alt="Avatar" />
         <p className="intro-text">
-          Etna is an exceptional developer known for her innovative solutions
-          and exceptional coding abilities. She creates user-friendly
-          applications and solves complex issues with ease. Her drive for
-          excellence makes her a valuable asset to any project and a standout in
-          the technology field.
+          I am a developer known for my eager to learn and innovative solutions
+          with exceptional coding abilities. I develop user-friendly
+          applications and solves complex issues with ease. Am highly
+          responsible with sefl-drive that makes me valuable asset to any
+          project and a standout in the technology field.
         </p>
       </div>
       <button onClick={scrollToTech}>
@@ -23,5 +24,7 @@ const Introduction = ({ scrollToTech }) => {
     </div>
   );
 };
+
+Introduction.propTypes = { scrollToTech: PropTypes.func.isRequired };
 
 export default Introduction;
