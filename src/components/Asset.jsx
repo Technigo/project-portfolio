@@ -10,7 +10,7 @@ const Asset = ({ name, format, folder }) => {
     const importIcon = async () => {
       try {
         const { default: namedImport } = await import(
-          `../assets/${folder}/${name}.${format}`
+          `public/assets/${folder}/${name}.${format}`
         );
         ImportedIconRef.current = namedImport;
       } catch (err) {
