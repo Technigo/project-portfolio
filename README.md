@@ -1,50 +1,17 @@
 <h1 align="center">
   <a href="">
-    <img src="/react-p.svg" alt="Project Banner Image">
+    <img src="./my-react-portfolio//public/design-preview.png" alt="Project Banner Image">
   </a>
 </h1>
 
 # Technigo - React Portfolio Project
 
-Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
+As a end to spring 3 (focusing on React), we made a portfolio presenting the works we've done so far in the Bootcamp.
 
-## Instructions
-[Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
+# Approach
 
-## Set up your own version of your portfolio
+I approached the project by following the design layout as closely as possible, while going a bit further away from the default design when choosing the fonts and colors. I was planning to use the API from Github, but because I missed the info on how to add images separetly I didn't understand how to do so and went with the JSON instead. When I have the time I will fix this. 
 
-We will use [Vite](https://vitejs.dev/guide/) to setup our project 😉
+# See it live
 
-```bash
-  npm create vite@latest my-react-portfolio --template
-```
-
-#### Follow this GIF to setup your project
-
-![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WEB/Sprint-2/week-8/vite-react_vjp0ep.gif)
-
-## Installation
-
-Use the `cd` command to move into the folder
-
-```bash
-  cd my-react-portfolio
-```
-
-Install the dependencies
-
-```bash
-  npm i
-```
-
-Open the project in a separate VS Code editor
-
-```bash
-  code .
-```
-
-Open up a terminal inside VS code and lets run the project in a local environment
-
-```bash
-  npm run dev
-```
+https://izabellindfarnstrand.netlify.app/
