@@ -8,14 +8,13 @@ function Skills() {
     'JavaScript',
     'HTML',
     'CSS',
-    'Pair Programming',
-    'Mob Programming',
     'JSX',
     'APIs',
     'Flexbox',
     'GitHub',
     'Zustand',
-    'Mongo DB',
+    'Mongoose',
+    'Mongo',
     'SQL',
     'XML'
   ]);
@@ -27,13 +26,16 @@ function Skills() {
     'Postman',
     'Wordpress',
     'Netlify',
-    'Render'
+    'Render',
+    'Mongo DB Atlas'
   ];
 
   const more = [
     'Project manager',
     'Web Accessibility',
     'Information security/GDPR',
+    'Pair Programming',
+    'Mob Programming',
     'Consultancy work',
     'Agile methodology',
     'DiSC certification',
@@ -50,8 +52,8 @@ function Skills() {
         <div className="skills-column">
           <h3 className="code-header">Code</h3>
           <ul>
-            {skillsList.map((item, index) => (
-              <li key={index} className="skills-item">
+            {skillsList.map((item) => (
+              <li key={item} className="skills-item">
                 {item}
               </li>
             ))}
@@ -61,8 +63,8 @@ function Skills() {
         <div className="skills-column">
           <h3 className="toolbox-header">Toolbox</h3>
           <ul>
-            {toolbox.map((item, index) => (
-              <li key={index} className="skills-item">
+            {toolbox.map((item) => (
+              <li key={item} className="skills-item">
                 {item}
               </li>
             ))}
@@ -72,8 +74,8 @@ function Skills() {
         <div className="skills-column">
           <h3 className="more-header">More</h3>
           <ul>
-            {more.map((item, index) => (
-              <li key={index} className="skills-item">
+            {more.map((item) => (
+              <li key={item} className="skills-item">
                 {item}
               </li>
             ))}
