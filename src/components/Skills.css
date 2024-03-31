@@ -21,7 +21,7 @@
 	grid-template-columns: 25% 25% 25% 25%;
 	grid-template-rows: 1fr;
 	padding: 0;
-	margin: 0;
+	margin: 0 10% 0 10%;
 	place-items: center;
 	font-weight: 500;
 }
@@ -100,6 +100,9 @@
 
 	.skills ul {
 		display: grid;
+		list-style-type: none;
+		color: whitesmoke;
+		font-family: 'Montserrat', sans-serif;
 	}
 
 	.code {
@@ -111,7 +114,10 @@
 		width: auto;
 	}
 
-	.code p {
+	.code p,
+	.more p,
+	.toolbox p,
+	.upcomming p {
 		font-size: 20px;
 		font-weight: 500;
 	}
@@ -125,11 +131,6 @@
 		width: auto;
 	}
 
-	.toolbox p {
-		font-size: 20px;
-		font-weight: 500;
-	}
-
 	.upcomming {
 		order: -4;
 		font-size: 30px;
@@ -138,11 +139,6 @@
 		border: solid 1px #6db486;
 		height: 25px;
 		width: auto;
-	}
-
-	.upcomming p {
-		font-size: 20px;
-		font-weight: 500;
 	}
 
 	.more {
@@ -154,43 +150,28 @@
 		height: 25px;
 		width: auto;
 	}
-
-	.more p {
-		font-size: 20px;
-		font-weight: 500;
-	}
-
 	.tech-skills-code {
 		order: -7;
-	}
-	.tech-skills-code ul {
-		list-style-type: none;
-		color: whitesmoke;
-		font-family: 'Montserrat', sans-serif;
 	}
 
 	.tech-skills-toolbox {
 		order: -5;
 	}
-	.tech-skills-toolbox ul {
-		list-style-type: none;
-		color: whitesmoke;
-		font-family: 'Montserrat', sans-serif;
-	}
 
 	.tech-skills-upcomming {
 		order: -3;
 	}
+}
 
-	.tech-skills-upcomming ul {
-		list-style-type: none;
-		color: whitesmoke;
-		font-family: 'Montserrat', sans-serif;
-	}
-
-	.tech-skills-more ul {
-		list-style-type: none;
-		color: whitesmoke;
-		font-family: 'Montserrat', sans-serif;
-	}
+/* tablet */
+@media (min-width: 668) and (max-width: 1025) {
+	.skills {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 1fr;
+	padding: 0;
+	margin: 0 5% 0 5%;
+	place-items: center;
+	font-weight: 500;
+}
 }
