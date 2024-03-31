@@ -1,3 +1,4 @@
+import "./ReadMoreButton.css";
 
 export const ReadMoreButton = ({ articleLink }) => {
   return (

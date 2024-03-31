@@ -1,4 +1,5 @@
-import { Buttons } from "../ButtonComponents/Buttons";
+import { ReadMoreButton } from "../ButtonComponents/ReadMoreButton";
+import "./Articles.css";
 
 export const Articles = ({
   imageURL,
@@ -12,9 +13,11 @@ export const Articles = ({
     <div className="article-card">
       <img src={imageURL} className="post-image" />
       <span className="date">{date}</span>
-      <h2>{title}</h2>
-      <p>{articleText}</p>
-      <Buttons headlineId={headlineId} link={link} />
+      <div className="article-text">
+        <h2>{title}</h2>
+        <p>{articleText}</p>
+        <ReadMoreButton headlineId={headlineId} link={link} />
+      </div>
     </div>
   );
 };

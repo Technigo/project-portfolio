@@ -1,10 +1,11 @@
 import { SectionHead } from "../../components/SectionHead";
+import "./ContactMe.css";
 
 export const ContactMe = () => {
   const headlineId = 6;
 
   return (
-    <div>
+    <div className="contact-info-container">
       <SectionHead headlineId={headlineId} />
       <img
         className="profile-pic"
@@ -21,7 +22,7 @@ export const ContactMe = () => {
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/yiatsai33/" target="_blank">
-              <button type="button">
+              <button type="button" className="linkedin-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -44,7 +45,7 @@ export const ContactMe = () => {
               target="_blank"
               aria-label="Github profile link"
             >
-              <button type="button">
+              <button type="button" className="github-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"

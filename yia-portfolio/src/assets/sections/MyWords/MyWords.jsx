@@ -17,7 +17,7 @@ export const MyWords = () => {
     },
     {
       id: 2,
-      imageURL: "/images/MyWords-2.jpg",
+      imageURL: "/images/MyWords-2.png",
       title: "Article Two",
       date: "Feb 2024",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et. Nisl condimentum id venenatis a condimentum vitae.",
@@ -43,23 +43,23 @@ export const MyWords = () => {
 
   return (
     <>
-      <WaveDivider />
+      <WaveDivider backgroundColor="#ffecea" />
       <div className="article-list-wrapper">
-        <SectionHead headlineId={headlineId} />
-        <div className="article-list">
-          {articleList.map((article) => {
-            return (
-              <Articles
-                key={article.id}
-                imageURL={article.imageURL}
-                title={article.title}
-                date={article.date}
-                articleText={article.text}
-                link={article.link}
-                headlineId={headlineId}
-              />
-            );
-          })}
+        <div className="section-head-container">
+          <SectionHead headlineId={headlineId} />
+        </div>
+        <div className="articles-container">
+          {articleList.map((article) => (
+            <Articles
+              key={article.id}
+              imageURL={article.imageURL}
+              title={article.title}
+              date={article.date}
+              articleText={article.text}
+              link={article.link}
+              headlineId={headlineId}
+            />
+          ))}
         </div>
       </div>
     </>
