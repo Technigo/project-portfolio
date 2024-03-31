@@ -6,6 +6,7 @@ import './articleSection.css'
 export const ArticlesSection = () => {
   const [articles, setArticles] = useState([])
   useEffect(() => {
+    // fetching medium api👇🏻
     fetch(
       'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/@lavicafra/feed'
     )
@@ -14,10 +15,13 @@ export const ArticlesSection = () => {
         const sortedList = data.items.sort(
           (a, b) => new Date(b.pubDate) - new Date(a.pubDate)
         )
+
+        // matching the images of the json file trought the article title
         const pairedArticles = sortedList.map((article) => {
           const matchingImage = articleImages.find(
             (img) => img.articleTitle === article.title
           )
+          // Assigning image and description properties to each article, if found
           return {
             ...article,
             image: matchingImage?.image || '',

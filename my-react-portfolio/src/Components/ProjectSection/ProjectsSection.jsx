@@ -5,6 +5,7 @@ export const ProjectsSection = () => {
   const [projectList, setProjectList] = useState([])
 
   useEffect(() => {
+    // fetching GitHub api
     fetch('https://api.github.com/users/vittoriamatteoli/repos')
       .then((resp) => resp.json())
       .then((data) => {
@@ -19,6 +20,7 @@ export const ProjectsSection = () => {
   return (
     <div className="projectsContainer">
       <h1 className="projectSectionTitle">Featured Projects</h1>
+      {/* passing the updated projectList to the projectCard */}
       <ProjectCard projectList={projectList} />
     </div>
   )

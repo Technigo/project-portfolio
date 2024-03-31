@@ -13,7 +13,6 @@ export const App = () => {
       <Introduction />
       <TechSection />
       <ProjectsSection />
-      <hr className="lineContainer"></hr>
       <ArticlesSection />
       <SkillSection />
       <ContactSection />

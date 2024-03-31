@@ -8,13 +8,16 @@ export const ProjectCard = ({ projectList }) => {
     <>
       {projectList.map(
         (items) =>
+          // display the projects only if they have a deploy link(homepage's value)
           items.homepage && (
             <div className="projectCard" key={items.id}>
               <Image items={items} />
               <div className="projectTextWrapper">
+                {/* remove the - sign that is by default in gitHub titles */}
                 <h2>{items.name.replace(/-/g, ' ')}</h2>
                 <p>{items.description}</p>
                 <div id="tagsContainer">
+                  {/* display for each tag element a paragraph */}
                   {items.topics.map((topic, index) => (
                     <p key={index}>{topic}</p>
                   ))}

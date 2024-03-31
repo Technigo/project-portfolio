@@ -10,7 +10,7 @@ export const ArticleCard = ({ article }) => {
     <div className="articleContainer2">
       <div id="articleCard">
         <div className="imgArticleWrapper">
-          {article.image && <img src={article.image} alt="Article visual" />}
+          {article.image && <img src={article.image} alt="article-image" />}
         </div>
         <span>{formatDate(article.pubDate)}</span>
         <h2>{article.title}</h2>

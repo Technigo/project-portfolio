@@ -33,6 +33,7 @@ export const ContactSection = () => {
           </div>
         </div>
       </div>
+      {/* tape with name 👇🏻 */}
       <div className="ticker-wrap">
         <div className="ticker">
           <span className="item-collection-1">
