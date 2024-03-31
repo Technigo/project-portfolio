@@ -17,30 +17,30 @@ export const ProjectWrapper = ({
 }) => {
   const projectHeading = projectName.replaceAll("-", " ");
   return (
-    <div className="projet-container">
+    <div className="projet-container" aria-label="Previous projects' information">
       <ProjectImage
         repo={projectName}
         url={demoLink}
         alt={projectName}
         className={"blue"}
       />
-      <div className="detail">
+      <div className="detail" aria-label="Previous projects' information">
         <ProjectName projectName={projectHeading}/>
-        <p className="description">{projectIntro} </p>
+        <p className="description" aria-label="About the project">{projectIntro} </p>
         <ul className="tag">
           {topics.map(
             (topic) =>
               topic !== "portfolio" && <Tag key={topic} topic={topic} />
           )}
         </ul>
-        <div className="btn">
-          <div id="liveDemoBtn">
+        <div className="btn" >
+          <div id="liveDemoBtn" aria-label="Button of live demo">
             <a href={demoLink}>
               <Demo />
               Live Demo
             </a>
           </div>
-          <div id="viewCodeBtn">
+          <div id="viewCodeBtn" aria-label="Button of veiwing code">
             <a href={codeLink}>
               <Code />
               View the code

@@ -26,7 +26,6 @@ export const FeaturedProjects = () => {
 
                 
                 setProjects(projects)
-                console.log(projects.topics)
             } catch (error) {
                 console.error ('Error fetching data:', error)
             } finally {
@@ -35,11 +34,11 @@ export const FeaturedProjects = () => {
         }
         fetchData()
 
-        const intervalID = setInterval(fetchData, 5000)
+        // const intervalID = setInterval(fetchData, 5000)
   
-        return () => {
-          clearInterval(intervalID)
-        }
+        // return () => {
+        //   clearInterval(intervalID)
+        // }
       }, [])
 
       return (

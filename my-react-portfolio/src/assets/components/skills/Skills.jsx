@@ -6,7 +6,7 @@ export const Skills = () => {
       <>
         <section className="skill-wrapper">
           <PageTopic className={"skills"} pageTopic={"Skills"} />
-          <div className="skill-container">
+          <div className="skill-container" aria-label="Tech skills"> 
             <div className="code">
               <h4 className="code-head">Code</h4>
               <p>HTML5</p>

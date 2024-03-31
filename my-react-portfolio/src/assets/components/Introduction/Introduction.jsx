@@ -8,7 +8,7 @@ export const Introduction = () => {
 
     return (
       <>
-        <div className="intro-page">
+        <div className="intro-page" aria-label="A page of introduction">
           <div className="content">
             <p className="dev-name">Hi, I&apos;m Trista Shan</p>
             <p className="dev-title">Fronted Developer</p>
