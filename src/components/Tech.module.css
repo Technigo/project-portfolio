@@ -1,7 +1,19 @@
 /* css style for Tech.jsx */
 .section {
-  margin: 3rem auto;
-  max-width: 1335px;
+  margin: 0 auto;
+  padding: 10rem 0;
+  background-color: #efebe0;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 50px),
+    calc(50% + 50px) calc(100% - 50px),
+    50% 100%,
+    calc(50% - 50px) calc(100% - 50px),
+    0 calc(100% - 50px)
+  );
+  height: 500px;
+  place-content: center;
 }
 
 .section:target h2 {
@@ -17,6 +29,10 @@
 .title,
 .subtitle {
   margin: 0;
+  color: #01264c;
+}
+.subtitle {
+  font-size: 20px;
 }
 
 .techIcons {

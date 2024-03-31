@@ -1,7 +1,6 @@
 /* CSS style for ProjectCard.jsx */
 .container {
   width: 300px;
-  /* margin: 20px; */
   background: #ffffff;
   box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -9,21 +8,21 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
+
   /* width: 100%; */
-  /* flex-basis: 80%; */
 }
 
 .imgContainer {
-  width: 300px;
-  height: calc(300px * 3 / 4);
+  width: 100%;
+  height: calc(width * 3 / 4);
   overflow: hidden;
   border-radius: 20px 20px 0 0;
   margin-bottom: 12px;
 }
 
 .imgContainer > * {
-  width: 300px;
-  height: calc(300px * 7 / 10);
+  width: 100%;
+  height: calc(width * 7 / 10);
 }
 
 .name {
@@ -32,17 +31,20 @@
 }
 
 .description {
-  padding: 0 20px;
   word-wrap: break-word;
   font-size: 18px;
   margin-bottom: 16px;
+  padding: 0 20px;
 }
 .tags {
   margin-bottom: 2rem;
+  padding: 0 20px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .tag {
-  margin: 5px;
+  margin: 2px;
   background-color: black;
   color: white;
   padding: 2px 6px;
@@ -51,16 +53,29 @@
 .reference {
   width: inherit;
   display: flex;
-  justify-content: space-around;
+  gap: 10px;
+  justify-content: center;
   position: relative;
   bottom: 0;
-  font-size: 20px;
+  font-size: 18px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .refItem {
   display: flex;
-  place-items: center;
-  gap: 8px;
+  align-items: center;
+  gap: 6px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: #ede8e8;
+  &:hover {
+    background-color: #ffdc58;
+  }
+}
+.refItem a {
+  text-decoration: none;
+  color: black;
 }
 
 @media screen and (min-width: 601px) {
@@ -69,7 +84,6 @@
   }
   .imgContainer {
     width: 400px;
-    height: 300px;
   }
 
   .imgContainer > * {

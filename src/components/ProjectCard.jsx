@@ -1,7 +1,7 @@
 import Asset from "./Asset";
 import styles from "./ProjectCard.module.css";
 import PropTypes from "prop-types";
-import { IoIosLink } from "react-icons/io";
+import { IoIosGlobe } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
       </div>
       <div className={styles.reference}>
         <span className={styles.refItem}>
-          <IoIosLink />
+          <IoIosGlobe />
           <a
             href={project.netlify}
             rel="noopener noreferrer"

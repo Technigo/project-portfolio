@@ -3,7 +3,7 @@ import styles from "./SkillList.module.css";
 const SkillList = ({ skillList }) => {
   return (
     <ul className={styles.skillType}>
-      <h3>{skillList.name}</h3>
+      <p className={styles.title}>{skillList.name}</p>
       {skillList.list.map((skill, index) => (
         <li key={index}>{skill}</li>
       ))}
