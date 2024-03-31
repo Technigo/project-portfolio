@@ -12,8 +12,8 @@ export const Introduction = () => {
 				<div className="heading-title">
 					<h1>Frontend Developer</h1>
 				</div>
-				<div className="heading-card">
-					<img src={myImage} alt="Sofie" className="my-image"></img>
+				{/* <div className="heading-card"> */}
+					<img src={myImage} alt="Picture of Sofie" className="my-image"></img>
 					<div className="heading-text">
 						<p>
 							With a background in speech pathology, I combine my passion for
@@ -22,7 +22,7 @@ export const Introduction = () => {
 							attention to detail.
 						</p>
 					</div>
-				</div>
+				{/* </div> */}
 				<div className="arrow">
 					<TbArrowNarrowDown />
 				</div>
