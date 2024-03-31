@@ -21,7 +21,13 @@
 	grid-template-columns: 25% 25% 25% 25%;
 	grid-template-rows: 1fr;
 	padding: 0;
-	margin: 0% 0% 0% 15%;
+	margin: 0;
+}
+
+.skills ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .code {
@@ -29,8 +35,9 @@
 	color: whitesmoke;
 	border: solid 1px #e95577;
 	background-color: #e95577;
+	text-align: center;
 	height: auto;
-	width: 75px;
+	width: 100px;
 }
 .toolbox {
 	font-size: 30px;
@@ -87,4 +94,125 @@
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
 	padding: 0;
+}
+
+/* mobile */
+@media (min-width: 0px) and (max-width: 667px) {
+	.skill-section {
+		margin: 0;
+		background-color: #2148f5;
+		height: auto;
+		width: 100%;
+	}
+
+	.skill-section h1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: whitesmoke;
+	}
+
+	.skills {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: fit-content(8, 1fr);
+		place-items: center;
+	}
+
+	.skills ul {
+		display: grid;
+	}
+
+	.code {
+		order: -8;
+		color: whitesmoke;
+		border: solid 1px #e95577;
+		background-color: #e95577;
+		height: 25px;
+		width: auto;
+	}
+
+	.code p {
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.toolbox {
+		order: -6;
+		color: whitesmoke;
+		border: solid 1px #2483e0;
+		background-color: #2483e0;
+		height: 25px;
+		width: auto;
+	}
+
+	.toolbox p {
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.upcomming {
+		order: -4;
+		font-size: 30px;
+		color: whitesmoke;
+		background-color: #6db486;
+		border: solid 1px #6db486;
+		height: 25px;
+		width: auto;
+	}
+
+	.upcomming p {
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.more {
+		order: -2;
+		font-size: 30px;
+		color: #2148f5;
+		background-color: #e0c749;
+		border: solid 1px #e0c749;
+		height: 25px;
+		width: auto;
+	}
+
+	.more p {
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.tech-skills-code {
+		order: -7;
+	}
+	.tech-skills-code ul {
+		list-style-type: none;
+		color: whitesmoke;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.tech-skills-toolbox {
+		order: -5;
+	}
+	.tech-skills-toolbox ul {
+		list-style-type: none;
+		color: whitesmoke;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.tech-skills-upcomming {
+		order: -3;
+	}
+
+	.tech-skills-upcomming ul {
+		list-style-type: none;
+		color: whitesmoke;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.tech-skills-more ul {
+		list-style-type: none;
+		color: whitesmoke;
+		font-family: 'Montserrat', sans-serif;
+	}
 }

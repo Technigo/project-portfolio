@@ -6,34 +6,50 @@ export const MySkills = () => {
 			<div className="skill-section">
 				<h1>Skills</h1>
 				<div className="skills">
-					<h3 className="code">Code</h3>
-					<h3 className="toolbox">Toolbox</h3>
-					<h3 className="upcomming">Upcomming</h3>
-					<h3 className="more">More</h3>
-					<ul className="tech-skills-code">
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>JavaScript ES6</li>
-						<li>React</li>
-						<li>Styled Components</li>
-						<li>Github</li>
-					</ul>
-					<ul className="tech-skills-toolbox">
-						<li>Figma</li>
-						<li>Postman</li>
-						<li>Slack</li>
-						<li>Notion</li>
-					</ul>
-					<ul className="tech-skills-upcomming">
-						<li>Node.js</li>
-						<li>Python</li>
-						<li>C#</li>
-					</ul>
-					<ul className="tech-skills-more">
-						<li>Communication</li>
-						<li>Problem solver</li>
-						<li>Analytic</li>
-					</ul>
+					<div className="code">
+						<p>Code</p>
+					</div>
+					<div className="toolbox">
+						<p>Toolbox</p>
+					</div>
+					<div className="upcomming">
+						<p>Upcomming</p>
+					</div>
+					<div className="more">
+						<p>More</p>
+					</div>
+					<div className="tech-skills-code">
+						<ul>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>JavaScript ES6</li>
+							<li>React</li>
+							<li>Styled Components</li>
+							<li>Github</li>
+						</ul>
+					</div>
+					<div className="tech-skills-toolbox">
+						<ul>
+							<li>Figma</li>
+							<li>Postman</li>
+							<li>Slack</li>
+							<li>Notion</li>
+						</ul>
+					</div>
+					<div className="tech-skills-upcomming">
+						<ul>
+							<li>Node.js</li>
+							<li>Python</li>
+							<li>C#</li>
+						</ul>
+					</div>
+					<div className="tech-skills-more">
+						<ul>
+							<li>Communication</li>
+							<li>Problem solver</li>
+							<li>Analytic</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</>
