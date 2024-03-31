@@ -5,7 +5,7 @@ export const Tech = () => {
   return (
     <section className="tech-section">
       <div className="tech-container">
-        <div className="heading-wrapper">
+        <div className="title-wrapper">
           <Heading level="2" text="Tech" className="light" />
         </div>
         <div className="tech-wrapper">

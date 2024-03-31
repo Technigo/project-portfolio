@@ -6,7 +6,7 @@ export const Contact = () => {
   return (
     <section className="contact-section">
       <div className="contact-container">
-        <div className="heading-wrapper">
+        <div className="title-wrapper">
           <Heading level="2" text="Let's talk" className="dark" />
         </div>
         <div className="profile-wrapper">
