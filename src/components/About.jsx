@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import avatar from "../assets/avatar.jpeg";
+import avatar from "../../public/assets/avatar.jpeg";
 
 const About = () => {
   return (

@@ -1,5 +1,5 @@
 import styles from "./Navbar.module.css";
-import logo from "../assets/logo.svg";
+import logo from "../../public/assets/logo.svg";
 import { SlGlobe } from "react-icons/sl";
 
 const Navbar = () => {
