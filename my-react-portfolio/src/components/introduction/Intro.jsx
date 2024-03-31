@@ -38,7 +38,7 @@ export const Intro = () => {
           />
           <Header
             level={2}
-            text="Frontend Developer"
+            text="Full-Stack Developer"
             aria-label="Frontend Developer"
             className="header-h2"
           />
