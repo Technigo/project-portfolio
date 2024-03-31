@@ -1,8 +1,14 @@
-.skills-list-container {
+.skills-list-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 128px;
+}
+
+.skills-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-section h3 {
@@ -22,4 +28,34 @@
   text-align: center;
   list-style: none;
   font-size: 18px;
+}
+
+/* Media Queries for tablet*/
+@media screen and (min-width: 667px) {
+  .skills-list-section {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 400px;
+    gap: 40px;
+    margin-bottom: 128px;
+  }
+
+  .skills-list-container {
+    align-items: flex-start;
+  }
+
+  .skills-section li {
+    text-align: left;
+  }
+}
+
+/* Media Queries for desktop */
+@media screen and (min-width: 1024px) {
+  .skills-list-section {
+    flex-wrap: nowrap;
+    gap: 60px;
+  }
 }
