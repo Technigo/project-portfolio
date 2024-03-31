@@ -24,8 +24,8 @@ export const Introduction = () => {
           <p>
             I develop creative & userfriendly websites, with an eye for details.
           </p>
-          <p>Based in Stockholm, Sweden.</p>
-          <p>Available anywhere</p>
+          <p>Based in Stockholm, Sweden</p>
+          <p>Available worldwide</p>
         </div>
       </div>
       <div className="arrow-container">
