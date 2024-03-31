@@ -7,7 +7,7 @@ export const Skills = () => {
         <h2 className="skills-heading">Skills</h2>
 
         <section className="skills-box">
-          <h4 className="skills-subheading">Code</h4>
+          <h3 className="skills-subheading">Code</h3>
           <ul className="list-box">
             <li>HTML5</li>
             <li>CSS3</li>
@@ -19,7 +19,7 @@ export const Skills = () => {
         </section>
 
         <section className="skills-box">
-          <h4 className="skills-subheading">Toolbox</h4>
+          <h3 className="skills-subheading">Toolbox</h3>
           <ul className="list-box">
             <li>Atom</li>
             <li>Postman</li>
@@ -32,14 +32,14 @@ export const Skills = () => {
         </section>
 
         <section className="skills-box">
-          <h4 className="skills-subheading">Upcoming</h4>
+          <h3 className="skills-subheading">Upcoming</h3>
           <ul className="list-box">
             <li>Node.js</li>
           </ul>
         </section>
 
         <section className="skills-box">
-          <h4 className="skills-subheading">More</h4>
+          <h3 className="skills-subheading">More</h3>
           <ul className="list-box">
             <li>User Experience</li>
             <li>Agile methodology</li>

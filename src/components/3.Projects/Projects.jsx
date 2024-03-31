@@ -6,7 +6,8 @@ import "./Projects.css";
 
 const githubIcon = "../../assets/github.svg";
 const netlifyIcon = "../../assets/Live-demo.svg";
-const githubHoverIcon = "../../assets/github-hover.svg";
+
+const githubHoverIcon = "../../assets/github-hover-wht.svg";
 const netlifyHoverIcon = "../../assets/Live-demo-hover.svg";
 
 export const Projects = () => {
@@ -22,7 +23,7 @@ export const Projects = () => {
             />
           </div>
           <div className="project-info">
-            <h4 className="project-title">{project.name}</h4>
+            <h3 className="project-title">{project.name}</h3>
             <p className="project-description">{project.description}</p>
             <Tags tags={project.tags} />
           </div>

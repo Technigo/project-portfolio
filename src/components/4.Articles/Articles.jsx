@@ -18,13 +18,14 @@ export const Articles = () => {
           </div>
           <div className="article-info">
             <p className="article-tag">{article.releaseDate}</p>
-            <h4 className="article-title">{article.title}</h4>
+            <h3 className="article-title">{article.title}</h3>
           </div>
           <p className="article-description">{article.description}</p>
           <div className="article-button" aria-label="Read more button">
             <Button
               url={article.link}
               icon={documentIcon}
+              alt={"Read more icon"}
               text={"Read article"}
               className={"article-btn"}
               hoverIcon={documentIcon}
