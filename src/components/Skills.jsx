@@ -16,7 +16,8 @@ function Skills() {
     'GitHub',
     'Zustand',
     'Mongo DB',
-    'SQL'
+    'SQL',
+    'XML'
   ]);
 
   const toolbox = [
