@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import "./SingleProject.css";
-import { Tags } from "../tags/Tags";
+import { Tags } from "./Tags";
 import images from "./images.json";
-import { ProjectImage } from "../projectImage/ProjectImage";
-import { Button } from "../button/Button";
+import { ProjectImage } from "./ProjectImage";
+import { Button } from "./Button";
 import { Heading } from "../heading/Heading";
 
 //access data from Projects.jsx via props
