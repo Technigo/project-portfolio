@@ -15,7 +15,7 @@ export const Contact = () => {
       <div className="email"><a href="mailto:contact@izabellind.com"><img src={email} alt="email" id="email"/><h3>contact@izabellind.com</h3></a>
       </div>
       <div className="social-media">
-        <a href="www.linkedin.com/in/izabel-lind-färnstrand-6336071a2" target="_blank"><img src={linkedin} alt="linkedin link"/></a>
+        <a href="https://www.linkedin.com/in/izabel-lind-färnstrand-6336071a2" target="_blank"><img src={linkedin} alt="linkedin link"/></a>
         <a href="https://github.com/Izzibizz" target="_blank"><img src={githubProfile} alt="github profile link" /></a>
         <a href="https://www.instagram.com/izabellind.official/" target="_blank"><img src={instagram} alt="instagram profile link" /></a>
         </div>
