@@ -9,9 +9,7 @@ export const ProjectImages = ({ projectName }) => {
   return (
     <div className="project-image">
       <ul>
-        <li>
           <img src={projectImage?.imageUrl} alt={projectName} />
-        </li>
       </ul>
     </div>
   );

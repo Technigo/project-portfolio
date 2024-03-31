@@ -1,7 +1,7 @@
 .tech-container {
   display: flex;
-  flex-direction: row; 
-  justify-content: center; 
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding: 128px 20px;
   height: 100vh;
@@ -22,5 +22,36 @@
   font-size: 32px;
   font-family: "Hind", sans-serif;
   margin: 0;
+}
 
+@media screen and (max-width: 576px) {
+  .tech-title {
+    font-size: 70px;
+  }
+
+  .tech-content {
+    font-size: 18px;
+  }
+
+  .tech-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tech-container {
+    padding: 80px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tech-title {
+    font-size: 60px;
+  }
+
+  .tech-content {
+    font-size: 28px;
+  }
 }

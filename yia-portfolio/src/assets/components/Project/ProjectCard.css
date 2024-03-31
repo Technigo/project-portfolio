@@ -2,11 +2,13 @@
   display: flex;
   align-items: center;
   margin-bottom: 64px;
+  flex-direction: column; 
 }
 
 .project-description {
-  margin-left: 20px;
-  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .project-description h2 {
@@ -21,4 +23,61 @@
   font-weight: 400;
   margin-top: 20px;
   margin-bottom: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .project-description {
+    margin-left: 10px;
+    margin-top: 0;
+    max-width: 500px;
+  }
+
+  .project-description h2 {
+    font-size: 25px;
+  }
+
+  .project-description p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project-container {
+    padding: 32px 16px;
+  }
+
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .project-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-description {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+
+  .live-demo-button,
+  .github-button {
+    width: 100%;
+  }
 }

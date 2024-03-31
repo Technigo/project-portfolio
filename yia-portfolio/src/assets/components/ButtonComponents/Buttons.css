@@ -1,6 +1,6 @@
 .buttons-container {
   display: flex;
-  gap: 16px; 
+  gap: 16px;
   margin-top: 20px;
 }
 
@@ -10,6 +10,7 @@
   align-items: flex-start;
   gap: 16px;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .live-demo-button a,
@@ -31,7 +32,9 @@
 .live-demo-button p,
 .github-button p {
   padding-right: 16px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 0;
 }
 
 .live-demo-button button svg,
@@ -59,4 +62,18 @@
 .github-button button:hover p {
   color: white;
   transition: color 0.3s ease-in-out;
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+  .live-demo-button p,
+  .github-button p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .live-demo-button p,
+  .github-button p {
+    font-size: 20px;
+  }
 }
