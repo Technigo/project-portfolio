@@ -311,6 +311,127 @@ body {
   text-align: left;
 }
 
+.skills {
+  background-color: hsl(234, 92%, 50%);
+  color: white;
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.skillsCategories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skillsCategory {
+}
+
+.skillsCategory h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: center;
+  display: inline-block;
+  padding: 2px;
+}
+
+.skillsCategory:nth-child(1) h3 {
+  background: #eb5577;
+}
+
+.skillsCategory:nth-child(2) h3 {
+  background: #2483e0;
+}
+
+.skillsCategory:nth-child(3) h3 {
+  background: #6db486;
+}
+
+.skillsCategory:nth-child(4) h3 {
+  background: #ffde30;
+  color: #0b24f5;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  font-family: Hind;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.82px;
+  text-align: center;
+}
+
+.letsTalk {
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+}
+
+.letsTalk h2 {
+  font-family: Montserrat;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 68.26px;
+  text-align: center;
+}
+
+.letsTalkAvatar {
+  border-radius: 50%;
+  height: 164px;
+  width: 164px;
+}
+
+.letsTalkText {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: center;
+}
+
+.letsTalkIcons {
+  align-items: center;
+  display: flex;
+  column-gap: 16px;
+}
+
+.marquee {
+  background: #ff4575;
+  color: white;
+  font-family: Montserrat;
+  font-size: 26.04px;
+  font-weight: 600;
+  line-height: 37.87px;
+  text-align: left;
+  padding: 16px;
+}
+
+.marqueeText {
+  margin-right: 10px;
+}
+
 @media (min-width: 745px) {
   .intro {
     grid-template-columns: 164px 1fr;
@@ -321,6 +442,7 @@ body {
       "arrow arrow";
     max-width: 958px;
     margin: 0 auto;
+    padding: 128px 0;
   }
 
   .name {
@@ -380,6 +502,19 @@ body {
   }
 
   .projectLinks a {
+  }
+
+  .skillsCategories {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    max-width: 958px;
+    row-gap: 64px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .skillsCategories li {
+    text-align: left;
   }
 }
 
@@ -442,6 +577,12 @@ body {
   }
 
   .post {
+  }
+
+  .skillsCategories {
+    display: flex;
+    flex-direction: row;
+    column-gap: 64px;
   }
 }
 

@@ -5,6 +5,9 @@ import { Tech } from "./Tech";
 import { FeaturedProjects } from "./FeaturedProjects";
 import theDailySleep from "./assets/the-daily-sleep.png";
 import { MyWords } from "./MyWords";
+import { Skills } from "./Skills";
+import { LetsTalk } from "./LetsTalk";
+import { Marquee } from "./Marquee";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -70,6 +73,9 @@ function App() {
             },
           ]}
         />
+        <Skills />
+        <LetsTalk />
+        <Marquee />
 
         {/* <section className="skills-container">
           <h2 className="my-skills">Skills:</h2>
