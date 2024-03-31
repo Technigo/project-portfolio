@@ -1,5 +1,5 @@
-import { SectionHead } from "../components/SectionHead.jsx";
-import { Arrow } from "../components/Arrow.jsx";
+import { SectionHead } from "../../components/SectionHead.jsx";
+import { Arrow } from "../../components/Arrow/Arrow.jsx";
 import "./Homescreen.css";
 
 export const Homescreen = () => {

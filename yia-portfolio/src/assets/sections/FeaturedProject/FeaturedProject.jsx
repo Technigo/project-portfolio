@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { SectionHead } from "../components/SectionHead";
-import { ProjectCard } from "../components/ProjectCard";
+import { SectionHead } from "../../components/SectionHead";
+import { ProjectCard } from "../../components/Project/ProjectCard";
 import "./FeaturedProject.css";
 
 export const FeaturedProject = () => {

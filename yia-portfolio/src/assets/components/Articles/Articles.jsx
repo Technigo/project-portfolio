@@ -1,4 +1,4 @@
-import { Buttons } from "./Buttons";
+import { Buttons } from "../ButtonComponents/Buttons";
 
 export const Articles = ({
   imageURL,

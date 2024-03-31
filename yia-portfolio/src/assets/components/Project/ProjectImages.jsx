@@ -1,4 +1,4 @@
-import projectImagesData from "./images.json";
+import projectImagesData from "../images.json";
 import "./ProjectImages.css";
 
 export const ProjectImages = ({ projectName }) => {

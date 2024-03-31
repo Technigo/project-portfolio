@@ -1,4 +1,4 @@
-import { SectionHead } from "../components/SectionHead";
+import { SectionHead } from "../../components/SectionHead";
 
 export const ContactMe = () => {
   const headlineId = 6;

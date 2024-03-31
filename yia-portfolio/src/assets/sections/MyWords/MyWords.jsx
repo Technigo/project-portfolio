@@ -1,6 +1,6 @@
-import { WaveDivider } from "../components/WaveDivider";
-import { SectionHead } from "../components/SectionHead";
-import { Articles } from "../components/Articles";
+import { WaveDivider } from "../../components/WaveDivider";
+import { SectionHead } from "../../components/SectionHead";
+import { Articles } from "../../components/Articles/Articles";
 
 export const MyWords = () => {
   const headlineId = 4;

@@ -1,5 +1,4 @@
-import { SectionHead } from "../components/SectionHead";
-
+import { SectionHead } from "../../components/SectionHead";
 
 export const Skills = () => {
   const headlineId = 5;
