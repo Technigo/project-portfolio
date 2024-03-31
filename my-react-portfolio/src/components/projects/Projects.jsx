@@ -23,9 +23,8 @@ export const Projects = () => {
     <section className="projects-section">
       <div className="projects-container">
         <div className="heading-wrapper">
-          <Heading level="2" text="Featured Projects" className="blue" />
+          <Heading level="2" text="Featured Projects" className="dark" />
         </div>
-
         <SingleProject projects={projects} />
       </div>
     </section>

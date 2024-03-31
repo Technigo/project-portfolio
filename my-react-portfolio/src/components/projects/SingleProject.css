@@ -7,40 +7,39 @@
   justify-items: start;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 16px;
-  row-gap: 16px;
+  row-gap: 24px;
   padding-bottom: 64px;
   grid-template-rows: auto;
   grid-template-areas:
     "image image image image"
-    "name name name name"
-    "description description description description"
-    "tags tags tags tags"
-    "demo demo demo demo"
-    "git git git git";
+    "description description description description";
 }
 
-.project-name {
-  grid-area: name;
+.image-container {
+  grid-area: image;
 }
 
-.project-description {
+.description-container {
   grid-area: description;
 }
 
-.tag-wrapper {
-  grid-area: tags;
+.description-wrapper {
+  padding-bottom: 16px;
 }
 
-.demo-button {
-  grid-area: demo;
+.tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 24px;
 }
 
-.git-button {
-  grid-area: git;
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .image-wrapper {
-  grid-area: image;
   height: 200px;
   width: 100%;
   align-self: stretch;
@@ -50,44 +49,123 @@
 }
 
 .project-image {
-  width: 343px;
+  width: 100%;
   height: auto;
-  max-width: 100%;
+  overflow: hidden;
 }
 
 .heading-wrapper {
   padding-bottom: 64px;
+  display: flex;
 }
 
-.button {
+.description-heading {
+  padding-bottom: 16px;
+}
+
+/* .button, */
+#demo-button,
+#git-button {
   display: flex;
   padding-right: 16px;
+  margin: 0 0 16px 0;
   align-items: center;
   gap: 7px;
   border-radius: 40px;
-  background: #f5f5f5;
+  background: var(--color-8);
+  font-family: Montserrat;
+  font-size: 20px;
 }
 
-.button:hover {
+/* .button:hover, */
+#demo-button:hover,
+#git-button:hover {
   cursor: pointer;
 }
 
-.button-icon {
-  width: 48px;
-  height: 48px;
+#demo-button:hover {
+  background: var(--color-4);
 }
 
-.tag-wrapper {
+#git-button:hover {
+  background: var(--color-3);
+}
+
+a {
   display: flex;
-  flex-wrap: wrap;
+  color: black;
+  text-decoration: none;
+  align-items: center;
+}
+
+#demo-button a:hover,
+#git-button a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#demo-button:hover svg path,
+#git-button:hover svg path {
+  fill: white;
 }
 
 .tag {
   font-family: Montserrat;
   font-size: 16px;
   color: white;
-  background: var(--color-5);
+  background: var(--color-9);
   display: flex;
   padding: 2px 6px;
   margin: 2px;
+}
+
+/*Media Queries*/
+@media all and (min-width: 668px) {
+  .projects-section {
+    padding: 128px 32px;
+  }
+
+  .singleproject-card {
+    display: flex;
+  }
+
+  .image-wrapper {
+    height: 280px;
+    width: 200px;
+  }
+
+  .description-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+  }
+
+  /* .button, */
+  #demo-button,
+  #git-button {
+    margin: 0 16px 0 0;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .projects-section {
+    padding: 100px;
+  }
+
+  .image-wrapper {
+    height: 280px;
+    width: 408px;
+    border-bottom: 20px solid var(--color-4);
+    border-left: 20px solid var(--color-4);
+  }
 }

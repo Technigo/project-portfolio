@@ -3,8 +3,8 @@ import "./SingleProject.css";
 import { Tags } from "./Tags";
 import images from "./images.json";
 import { ProjectImage } from "./ProjectImage";
-import { Button } from "./Button";
 import { Heading } from "../heading/Heading";
+import { Demo, Git } from "./Button";
 
 //access data from Projects.jsx via props
 export const SingleProject = ({ projects }) => {
@@ -17,23 +17,35 @@ export const SingleProject = ({ projects }) => {
           !dataset.homepage.includes("github") && (
             <div className="singleproject-card" key={dataset.id}>
               {/* Pass props */}
-              <ProjectImage projectName={dataset.name} images={images} />
-              <Heading className="project-name" level={3} text={dataset.name} />
-              <p className="project-description">{dataset.description}</p>
-              <Tags tags={dataset.topics} />
-              <div className="demo-button">
-                <Button
-                  label="Live demo"
-                  buttonType="liveDemo"
-                  onClick={() => window.open(dataset.homepage)}
-                />
+              <div className="image-container">
+                <ProjectImage projectName={dataset.name} images={images} />
               </div>
-              <div className="git-button">
-                <Button
-                  label="View the code"
-                  buttonType="github"
-                  onClick={() => window.open(dataset.html_url)}
-                />
+              <div className="description-container">
+                <div className="description-wrapper">
+                  <Heading
+                    className="description-heading"
+                    level={3}
+                    text={dataset.name}
+                  />
+                  <p>{dataset.description} </p>
+                </div>
+                <div className="tags-wrapper">
+                  <Tags tags={dataset.topics} />
+                </div>
+                <div className="button-wrapper">
+                  <button id="demo-button">
+                    <a href={dataset.homepage}>
+                      <Demo alt="github-icon" />
+                      Live Demo
+                    </a>
+                  </button>
+                  <button id="git-button">
+                    <a href={dataset.html_url}>
+                      <Git alt="github-icon" />
+                      View the Code
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
           )

@@ -14,19 +14,26 @@ export const Contact = () => {
         </div>
         <div className="flex contact-wrapper">
           <Heading level="3" text="Eliane Weber" />
-          <Heading level="3" text="+41 99 111 22 33" />
-          <Heading level="3" text="example@example.com" />
+          <Heading level="3" text="eliane.weber(at)yahoo.com" />
         </div>
         <div className="social-wrapper">
-          <button className="social-btn">
+          <a
+            href="https://www.linkedin.com/in/eliane-b-weber/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="../linkedin.svg" alt="linkedin-icon" />
-          </button>
-          <button className="social-btn">
+          </a>
+          <a
+            href="https://www.instagram.com/itselianeweber/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="../instagram.svg" alt="instagram-icon" />
-          </button>
-          <button className="social-btn">
+          </a>
+          <a href="https://github.com/El1an3/" target="_blank" rel="noreferrer">
             <img src="../btngithub.svg" alt="github-icon" />
-          </button>
+          </a>
         </div>
       </div>
     </section>
