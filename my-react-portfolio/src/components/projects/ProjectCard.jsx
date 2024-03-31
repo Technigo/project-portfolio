@@ -68,7 +68,10 @@ export const ProjectCard = ({ repositories }) => {
                 aria-labek="This is the main heading"
                 className="project-card-heading"
               />
-              <Paragraph text={repo.description} className="custom-paragraph" />
+              <Paragraph
+                text={matchingData.description}
+                className="custom-paragraph"
+              />
 
               {/* Displaying tags */}
               <div role="group" aria-label="Project Tags" className="tags">

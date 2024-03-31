@@ -2,8 +2,8 @@ import "./common.css";
 
 export const Label = ({ tagText }) => {
   return (
-    <span role="tag" className={"tag-background"}>
+    <div className={"tag-container"}>
       <p className="tag-text">{tagText}</p>
-    </span>
+    </div>
   );
 };

@@ -27,7 +27,7 @@ export const Intro = () => {
           sectionClassName={"profile-image"}
           elementClassName={"circle-image"}
           src="/images/profile.jpg"
-          alt="Introduction Image of Maria-Manuela"
+          alt="Profile picture of Maria-Manuela, a frontend developer"
         />
         <section className="headings">
           <Header
