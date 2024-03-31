@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { SectionHead } from "../components/SectionHead";
 import { ProjectCard } from "../components/ProjectCard";
+import "./FeaturedProject.css";
 
 export const FeaturedProject = () => {
   const headlineId = 3;
@@ -30,12 +31,12 @@ export const FeaturedProject = () => {
   }, []);
 
   return (
-    <div className="project-list-wrapper">
-      <SectionHead headlineId={headlineId} />
+    <div className="project-container">
+      <SectionHead headlineId={headlineId} className="feature-project-title" />
       <div className="project-list">
         {projectList.map((project) => (
           <ProjectCard
-            key={project.id}
+            key={project.name}
             name={project.name}
             description={project.description}
             tags={project.topics}
