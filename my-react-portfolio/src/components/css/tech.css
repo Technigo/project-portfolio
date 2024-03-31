@@ -1,23 +1,22 @@
 .tech-section {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--green);
   color: var(--pink);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .tech {
   width: 90%;
-  height: 80%;
+  height: 70%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5 1fr;
   text-align: center;
-  padding-top: 2em;
+  padding-top: 15%;
 }
 
 .tech h1 {
@@ -27,26 +26,34 @@
 
 .tech p {
   font-size: 1.5rem;
-}
-
-#plus {
-  padding: 3em 0;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .second-arrow-container {
-  margin-top: 1.5em;
+  margin-bottom: 15%;
 }
 
 .second-arrow-container:hover {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1024px) {
+  .tech h1 {
+    font-size: 5rem;
+  }
+
+  .tech p {
+    font-size: 3rem;
+    max-width: 600px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .tech {
-    display: grid;
-    height: 500px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    padding-top: 10em;
   }
 
   .tech h1 {
@@ -60,7 +67,6 @@
 
   #title-tech {
     grid-area: 1 / 2 / 2 / 3;
-    gap: 4em;
   }
 
   #tech-description {
@@ -73,10 +79,13 @@
 
   #art-title {
     grid-area: 3 / 2 / 4 / 3;
-    gap: 4em;
   }
 
   #art-description {
     grid-area: 3 / 3 / 4 / 6;
+  }
+
+  .second-arrow-container {
+    margin-top: 0;
   }
 }
