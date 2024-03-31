@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "./Tags.css";
+import "./SingleProject.css";
 
 export const Tags = ({ tags }) => {
   return (

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 //single button with conditional rendering
-import "./Button.css";
+import "./SingleProject.css";
 
 export const Button = ({ label, buttonType, onClick }) => {
   return (

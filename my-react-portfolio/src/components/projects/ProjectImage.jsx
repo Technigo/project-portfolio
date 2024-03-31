@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "./ProjectImage.css";
+import "./SingleProject.css";
 
 export const ProjectImage = ({ projectName, images }) => {
   const imageObject = images.find((img) => img.projectName === projectName);

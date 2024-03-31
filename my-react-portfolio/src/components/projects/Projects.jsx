@@ -1,6 +1,6 @@
-import "./projects.css";
+import "./SingleProject.css";
 import { Heading } from "../heading/Heading";
-import { SingleProject } from "../singleProject/SingleProject";
+import { SingleProject } from "./SingleProject";
 import { useState, useEffect } from "react";
 
 //fetching data from personal github API
