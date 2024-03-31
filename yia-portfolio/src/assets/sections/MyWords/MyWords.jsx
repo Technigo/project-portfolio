@@ -9,7 +9,7 @@ export const MyWords = () => {
   const articleList = [
     {
       id: 1,
-      imageURL: "/images/MyWords-1.jpg",
+      imageURL: "/images/MyWords-1.png",
       title: "Article One",
       date: "Jan 2024",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et. Nisl condimentum id venenatis a condimentum vitae.",
@@ -25,7 +25,7 @@ export const MyWords = () => {
     },
     {
       id: 3,
-      imageURL: "/images/MyWords-3.jpg",
+      imageURL: "/images/MyWords-3.png",
       title: "Article Three",
       date: "Feb 2024",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et. Nisl condimentum id venenatis a condimentum vitae.",

@@ -1,6 +1,6 @@
 .post-image {
-  width: 400px;
-  height: 300px;
+  height: 340px;
+  max-width: 100%;
   border-bottom: 10px solid #ff4575;
   border-left: 15px solid #ff4575;
 }
@@ -36,4 +36,41 @@
 .article-text p {
   font-weight: 400;
   font-family: "Hind", sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+  .my-words-title {
+    text-align: center;
+  }
+
+  .articles-container {
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .article-card {
+    width: 100%;
+  }
+
+  .article-list-wrapper {
+    padding: 100px 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .post-image {
+    height: 340px;
+    width: 600px;
+  }
+  .article-card {
+    width: 100%;
+  }
+
+  .article-list-wrapper {
+    padding: 100px 10px;
+    width: 100%;
+  }
 }

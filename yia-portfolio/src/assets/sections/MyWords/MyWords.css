@@ -1,6 +1,6 @@
 .article-list-wrapper {
   padding: 128px 16px;
-  text-align: left;
+  text-align: center;
   background-color: #ffecea;
 }
 
@@ -9,13 +9,14 @@
   font-weight: 700;
   font-size: 70px;
   color: #ff4575;
-  padding-bottom: 100px;
+
   text-align: left;
-  padding-left: 120px;
 }
 
 .section-head-container {
-  max-width: 500px;
+  max-width: 600px;
+  padding-left: 180px;
+  padding-bottom: 100px;
 }
 
 .articles-container {
@@ -24,29 +25,24 @@
   justify-content: center;
   gap: 32px;
   padding: 0 16px;
+  align-items: center;
 }
 
 .article-card {
   text-align: center;
-  width: 500px;
+  max-width: 500px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .article-list-wrapper {
     padding: 100px 16px;
     text-align: left;
-    margin: 0 auto;
   }
 
   .my-words-title {
     font-size: 60px;
     padding-bottom: 80px;
     text-align: center;
-    align-items: center;
-  }
-
-  .section-head-container {
-    max-width: 600px;
   }
 
   .articles-container {
@@ -55,10 +51,37 @@
     align-items: center;
     justify-content: center;
   }
+
+  .section-head-container {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .articles-container {
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .article-card {
+    width: 100%;
+  }
+
+  .article-list-wrapper {
+    padding: 100px 10px;
+  }
+
+  .section-head-container {
+    padding: 0;
+    margin-bottom: 64px;
+  }
+
   .my-words-title {
     text-align: center;
+    justify-content: center;
   }
 }

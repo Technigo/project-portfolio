@@ -1,6 +1,5 @@
 .buttons-container {
   display: flex;
-  gap: 16px;
   margin-top: 20px;
 }
 
@@ -64,16 +63,34 @@
   transition: color 0.3s ease-in-out;
 }
 
-@media (min-width: 576px) and (max-width: 1024px) {
-  .live-demo-button p,
-  .github-button p {
-    font-size: 20px;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project-container {
+    padding: 64px 16px;
+    margin: 0 auto;
+  }
+
+  .project-list {
+    gap: 32px;
+  }
+
+  .feature-project-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .project-card {
+    width: 100%;
   }
 }
 
-@media (min-width: 1025px) {
-  .live-demo-button p,
-  .github-button p {
-    font-size: 20px;
+@media screen and (max-width: 576px) {
+  .project-card {
+    width: 100%;
+  }
+
+  .live-demo-button,
+  .github-button {
+    width: 100%;
+    margin-top: 16px;
   }
 }
