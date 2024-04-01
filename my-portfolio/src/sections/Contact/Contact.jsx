@@ -16,15 +16,26 @@ export const Contact = ({ avatarUrl, project }) => {
       />
       <div className="contact-info">
         <h3>Erica Mechler</h3>
-        <a aria-label="Phone number" href="tel:+708740282">
+        <a
+          aria-label="Phone number"
+          href="tel:+708740282"
+          rel=" noopener noreferrer"
+        >
           <h3>+46(0)708 74 02 82</h3>
         </a>
-        <a aria-label="E-mail adress" href="mailto:erica.mechler1@gmail.com">
+        <a
+          aria-label="E-mail adress"
+          href="mailto:erica.mechler1@gmail.com"
+          rel=" noopener noreferrer"
+        >
           <h3>erica.mechler1@gmail.com</h3>
         </a>
       </div>
       <div className="icons">
-        <a href="https://www.linkedin.com/in/erica-mechler-a39b73a8/">
+        <a
+          href="https://www.linkedin.com/in/erica-mechler-a39b73a8/"
+          rel=" noopener noreferrer"
+        >
           <Image
             divClassName={"icon-box"}
             elementClassName={"icon"}
@@ -32,7 +43,7 @@ export const Contact = ({ avatarUrl, project }) => {
             imageAltText={"Link to Linkedin"}
           />
         </a>
-        <a href="https://github.com/ericamechler">
+        <a href="https://github.com/ericamechler" rel=" noopener noreferrer">
           <Image
             divClassName={"icon-box"}
             elementClassName={"icon"}
