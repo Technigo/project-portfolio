@@ -1,9 +1,8 @@
 import "./Contact.css";
 import profilePicture from "../../assets/profile-picture.png";
-
-const linkedInIcon = "../../assets/linkedin.svg";
-const githubIcon = "../../assets/github-contact.svg";
-const stackOverflowIcon = "../../assets/stackoverflow.svg";
+import linkedInIcon from "../../assets/linkedin.svg";
+import githubIcon from "../../assets/github-contact.svg";
+import stackOverflowIcon from "../../assets/stackoverflow.svg";
 
 export const Contact = () => {
   return (

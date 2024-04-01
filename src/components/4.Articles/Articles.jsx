@@ -1,8 +1,7 @@
 import { articles } from "../../../articles.json";
-import { Button } from "../resuable/Button";
+import { Button } from "../resuable components/Button";
+import documentIcon from "../../assets/doc.svg";
 import "./Articles.css";
-
-const documentIcon = "../../assets/doc.svg";
 
 export const Articles = () => {
   return (

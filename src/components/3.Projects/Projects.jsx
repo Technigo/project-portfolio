@@ -1,14 +1,11 @@
 import { projects } from "../../../projects.json";
-import { Button } from "../resuable/Button";
-import { Tags } from "../resuable/Tags";
-
+import { Button } from "../resuable components/Button";
+import { Tags } from "../resuable components/Tags";
 import "./Projects.css";
-
-const githubIcon = "../../assets/github.svg";
-const netlifyIcon = "../../assets/Live-demo.svg";
-
-const githubHoverIcon = "../../assets/github-hover-wht.svg";
-const netlifyHoverIcon = "../../assets/Live-demo-hover.svg";
+import githubIcon from "../../assets/github.svg";
+import netlifyIcon from "../../assets/Live-demo.svg";
+import githubHoverIcon from "../../assets/github-hover-wht.svg";
+import netlifyHoverIcon from "../../assets/Live-demo-hover.svg";
 
 export const Projects = () => {
   return (
