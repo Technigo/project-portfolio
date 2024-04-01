@@ -9,7 +9,7 @@ I started with the structure of components. Then I started from the top and took
 A lot of time was used to follow the design we were given, I wish I had more knowledge of CSS and how rules and propertys work.
 That is something I would like to put more time into, how to style after a design - though I'm pretty satisfied how it turned out.
 
-## View it live
+## View it livegit add
 
 https://lovisaaberg-portfolio.netlify.app
 
