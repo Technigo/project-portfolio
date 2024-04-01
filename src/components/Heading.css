@@ -2,7 +2,7 @@
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	color: #2148f5;
-	font-size: 70px;
+	font-size: 80px;
 }
 
 h2 {
@@ -41,40 +41,27 @@ h3 {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	font-size: 70px;
 	text-align: left;
-	position: relative;
-	top: -90px;
-}
-
-.heading-card {
-	display: grid;
-	grid-template-columns: 30% 70%;
 	position: relative;
 	top: -90px;
 }
 
 .my-image {
-	display: grid;
-	grid-column: 30%;
-	height: 300px;
-	width: 300px;
+	display: flex;
+	margin-top: -30px;
+}
+
+.my-image img {
 	border-radius: 100%;
-	background-color: white;
+	height: 300px;
 	border: none;
 }
 
-.heading-text {
-	display: grid;
-	grid-column: 70%;
-	max-width: 90%;
-	max-height: auto;
-	text-align: left;
-	align-items: center;
-}
-
-.heading-text p {
-	font-size: 20px;
+.my-image p {
+	display: flex;
+	margin-left: 5%;
+	margin-top: 10%;
+	font-size: 15px;
 	font-weight: 300;
 	font-family: 'Hind', sans-serif;
 }
@@ -174,20 +161,27 @@ h3 {
 
 	.my-image {
 		display: flex;
-		align-self: center;
-		max-width: 300px;
-		max-width: auto;
+		flex-direction: column;
+		justify-content: center;
+		/* display: grid;
+	grid-column: 30%;
+	*/
+		height: 300px;
+		width: 300px;
 		border-radius: 100%;
 		background-color: white;
 		border: none;
-		margin: 10%;
 	}
 
-	.heading-text {
-		order: 3;
+	.my-image p {
 		display: flex;
-		text-align: left;
-		padding: 0;
+		flex-direction: column;
+		align-self: flex-end;
+		/* display: grid;
+	grid-column: 70%;
+	*/
+		max-width: 90%;
+		max-height: auto;
 		font-size: 15px;
 		font-weight: 300;
 		font-family: 'Hind', sans-serif;
