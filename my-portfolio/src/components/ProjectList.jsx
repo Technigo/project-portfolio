@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import repoImages from "../repoImages.json";
-import { Headline } from "./Headline.jsx";
 import { ProjectCard } from "./ProjectCard.jsx";
 
 export const ProjectList = () => {
@@ -28,20 +27,23 @@ export const ProjectList = () => {
   }, []);
 
   return (
-    <section className="project-list-container">
-      <Headline style="colored-title" title="Featured Projects" />
-      <ul>
-        {repoData.map((gitHubRepo) => {
-          const localRepo = repoImages.find((img) => img.repoName === gitHubRepo.name);
-          console.log(localRepo);
-          return (
-            <li key={gitHubRepo.id}>
-              <img src={localRepo?.imageUrl} alt={gitHubRepo.name} />
-              {localRepo.name}
-            </li>
-          );
-        })}
-      </ul>
-    </section>
+    <ul className="project-card">
+      {repoData.map((gitHubRepo) => {
+        const localRepo = repoImages.find((img) => img.repoName === gitHubRepo.name);
+        console.log(localRepo);
+        return (
+          <>
+            <ProjectCard
+              name={localRepo.name}
+              gitHubLink={gitHubRepo.html_url}
+              topics={gitHubRepo.topics}
+              deployedLink={gitHubRepo.homepage}
+              repoImage={localRepo.imageUrl}
+              description={gitHubRepo.description}
+            />
+          </>
+        );
+      })}
+    </ul>
   );
 };
