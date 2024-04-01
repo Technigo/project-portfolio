@@ -1,6 +1,6 @@
 import "./Contact.css"
 import "./TopSection.css"
-import portrait from "../assets/portrait.jpg";
+import portrait from "/src/assets/portrait.jpg";
 
 export const Contact=()=> {
   return (

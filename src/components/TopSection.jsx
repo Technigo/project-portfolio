@@ -1,6 +1,6 @@
 import "./TopSection.css"
-import portrait from "../assets/portrait.jpg";
-import arrow from "../assets/Arrow.svg"
+import portrait from "/src/assets/portrait.jpg";
+import arrow from "/src/assets/Arrow.svg"
 
 export const TopSection =()=> {
   const ScrollDown =()=>{
@@ -19,7 +19,7 @@ export const TopSection =()=> {
           <p className="titleBlue">Frontend Developer + Designer</p>
         </div>
         <div className="topDetails">
-          <img src="src/assets/portrait.JPG" alt="JingPortrait" className="portrait" />
+          <img src={portrait} alt="JingPortrait" className="portrait" />
           <p className="selfIntro">Jing is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field.</p>
         </div>
         <img src={arrow} alt="arrow" className="arrow" onClick={ScrollDown}/>
