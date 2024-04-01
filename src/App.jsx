@@ -18,7 +18,8 @@ function App() {
         <Intro />
         <Tech />
         <FeaturedProjects
-          projects={[
+        // this is an array. the square brackets are the array. the curly braces are the object.
+          projects={[ 
             {
               title: "The Daily Sleep",
               image: theDailySleep,
