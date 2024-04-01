@@ -1,5 +1,6 @@
 import "./Contact.css"
 import "./TopSection.css"
+import portrait from "src/assets/portrait.JPG";
 
 export const Contact=()=> {
   return (
@@ -7,7 +8,7 @@ export const Contact=()=> {
       <div className="content">
         <p className="titleBlue">Let's talk</p>
         
-        <img src="src/assets/portrait.JPG" alt="JingPortrait" className="portrait" />
+        <img src={portrait} alt="JingPortrait" className="portrait" />
         <div className="contactDetail">
           <p>Jing Huang</p>
           <p>+46(0)732 16 95 08</p>

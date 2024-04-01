@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Project.css";
 import data from "../data.json";
 
+
 console.log(data);
 
 export const Project = () => {

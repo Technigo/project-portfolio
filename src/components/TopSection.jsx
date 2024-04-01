@@ -1,4 +1,5 @@
 import "./TopSection.css"
+import portrait from "src/assets/portrait.JPG";
 
 export const TopSection =()=> {
   const ScrollDown =()=>{
@@ -11,7 +12,7 @@ export const TopSection =()=> {
   return (
     <div className="top">
       <div className="content">
-        <img src="src/assets/portrait.JPG" alt="JingPortrait" className="mobilePortrait"/>
+        <img src={portrait} alt="JingPortrait" className="mobilePortrait"/>
         <div className="frame">
           <p className="topGreeting">Hi, I'm Jing Huang</p>
           <p className="titleBlue">Frontend Developer + Designer</p>
