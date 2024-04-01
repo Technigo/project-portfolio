@@ -1,6 +1,8 @@
 import Lottie from "lottie-react";
 import scrollDownAnimation from "../../animation/scroll-down.json";
 import scrollUpAnimation from "../../animation/scroll-up.json";
+import PropTypes from "prop-types";
+import styles from "./ScrollButtons.module.css";
 
 export const ScrollDown = ({ scrollTo }) => {
   const handleScrollDown = () => {
@@ -14,9 +16,12 @@ export const ScrollDown = ({ scrollTo }) => {
   };
 
   return (
-    <div>
+    <div className={styles.scrollDownContainer}>
       <a onClick={handleScrollDown}>
-        <Lottie animationData={scrollDownAnimation} />
+        <Lottie
+          animationData={scrollDownAnimation}
+          className={styles.scrollDown}
+        />
       </a>
     </div>
   );
@@ -32,10 +37,17 @@ export const ScrollUp = () => {
   };
 
   return (
-    <div>
+    <div className={styles.scrollUpContainer}>
       <a onClick={handleScrollUp}>
-        <Lottie animationData={scrollUpAnimation} />
+        <Lottie
+          animationData={scrollUpAnimation}
+          className={styles.scrollUp}
+        />
       </a>
     </div>
   );
+};
+
+ScrollDown.propTypes = {
+  scrollTo: PropTypes.string.isRequired,
 };
