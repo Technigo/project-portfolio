@@ -1,8 +1,14 @@
 import ProjectCard from "./ProjectCard";
 import { projects } from "../projects.json";
 import styles from "./Projects.module.css";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation();
+  console.log(t);
+  const projectList = t("projects", { returnDetails: true });
+  console.log(projectList);
+
   return (
     <section id="projects" className={styles.section}>
       <div className={styles.descr}>

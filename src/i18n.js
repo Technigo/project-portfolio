@@ -1,21 +1,22 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import enTrans from "./translations/en.json";
-import seTrans from "./translations/se.json";
+import enTranslations from "./translation/en.json";
+import svTranslations from "./translation/sv.json";
 
 const resourses = {
   en: {
-    translation: enTrans,
+    translation: enTranslations,
   },
-  se: {
-    translation: seTrans,
+  sv: {
+    translation: svTranslations,
   },
 };
 
 i18n.use(initReactI18next).init({
   resourses,
   lng: "en",
-  fallbackLng: "en",
+  debug: true,
+  // fallbackLng: "en",
   interpolation: {
     escapeValue: false,
   },

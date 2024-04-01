@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import avatar from "../../public/assets/avatar.jpeg";
+import Avatar from "./Avatar";
 
 const About = () => {
   return (
@@ -8,13 +8,7 @@ const About = () => {
         <p className={styles.myName}>Hi I&apos;m Wen Zhao</p>
         <h1 className={styles.frontend}>Frontend Developer</h1>
         <div className={styles.intro}>
-          <div className={styles.avatarContainer}>
-            <img
-              className={styles.avatar}
-              src={avatar}
-              alt="profile image"
-            ></img>
-          </div>
+          <Avatar />
           <p className={styles.description}>
             Wen is a budding junior frontend developer passionate about crafting
             seamless user experiences on web and mobile. With a strong
