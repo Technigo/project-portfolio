@@ -1,18 +1,28 @@
-import { PageTopic } from "../smallComps/PageTopic"
+import {PageTopic} from "../PageTopic"
 import "./myWords.css"
 import { Image } from "../projectImage/Image"
 import coffeeImage from "../../otherImages/coffee.jpg"
+import { PinkDivider } from "../pinkwave/PinkDivider"
 
 export const MyWords = () => {
+  return (
+    <>
+      <PinkDivider />
+      <section className="myWords-wrapper">
+        <PageTopic pageTopic={"My Words"} className={"myWords"} />
+        <Image
+          image={coffeeImage}
+          alt={"news paper and a cup of coffee"}
+          className={"pink"}
+        />
+        <h4>To be continued...</h4>
+        <p>
+          This page is currently under construction. Check back later for
+          updates!
+        </p>
+      </section>
+    </>
+  );
+};
 
-    return(
-        <>
-        <section className="myWords-wrapper">
-            <PageTopic pageTopic={'My Words'} className={'myWords'} />
-            <Image image={coffeeImage} alt={'news paper and a cup of coffee'} className={'pink'}/>
-            <h4>To be continued...</h4>
-            <p>This page is currently under construction. Check back later for updates!</p>
-        </section>
-        </> 
-    )
-}
+//later will use component Heading, Tag and Image once get the articles

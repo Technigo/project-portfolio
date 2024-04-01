@@ -1,10 +1,10 @@
 import './Contact.css'
-import { PageTopic } from '../smallComps/PageTopic'
+import { PageTopic } from '../PageTopic'
 import { Linkedin } from '../iconfoler/Linkedin'
 import { Github } from '../iconfoler/Github'
 import { Stackover } from '../iconfoler/Stackoverflow'
 import { Instagram } from '../iconfoler/ig'
-import profilePhoto from '../../otherImages/profilePhoto.jpg'
+import { ProfilePhoto } from '../profilePhoto/ProfilePhoto'
 
 export const Contact = () => {
     const linkedin = "https://www.linkedin.com/in/trista-shan-62074471/"
@@ -16,11 +16,7 @@ export const Contact = () => {
       <section className="contact-wrapper">
         <PageTopic pageTopic={"Let's Talk"} className={"contact"} />
         <div className="contactContent">
-          <img
-            src={profilePhoto}
-            alt="profile photo"
-            className="profilePhoto"
-          />
+          <ProfilePhoto />
           <div className="info">
             <p className="name">Trista Shan</p>
           </div>

@@ -1,12 +1,12 @@
-import { ProjectImage } from "../projectImage/ProjectImages"
-import { ProjectName } from "../projectName/ProjectName"
-import { Tag } from "../tag/Tag"
-import {Demo} from "../iconfoler/Demo"
-import {Code} from "../iconfoler/Code"
-import "./iconBtn.css"
-import "./projects.css"
-import "../tag/tag.css"
-import "../projectImage/image.css"
+import { ProjectImage } from "../projectImage/ProjectImages";
+import { Heading } from "../Heading/Heading";
+import { Tag } from "../tag/Tag";
+import { Demo } from "../iconfoler/Demo";
+import { Code } from "../iconfoler/Code";
+import "./iconBtn.css";
+import "./projects.css";
+import "../tag/tag.css";
+import "../projectImage/image.css";
 
 export const ProjectWrapper = ({
   projectName,
@@ -17,7 +17,10 @@ export const ProjectWrapper = ({
 }) => {
   const projectHeading = projectName.replaceAll("-", " ");
   return (
-    <div className="projet-container" aria-label="Previous projects' information">
+    <div
+      className="projet-container"
+      aria-label="Previous projects' information"
+    >
       <ProjectImage
         repo={projectName}
         url={demoLink}
@@ -25,15 +28,17 @@ export const ProjectWrapper = ({
         className={"blue"}
       />
       <div className="detail" aria-label="Previous projects' information">
-        <ProjectName projectName={projectHeading}/>
-        <p className="description" aria-label="About the project">{projectIntro} </p>
+        <Heading heading={projectHeading} />
+        <p className="description" aria-label="About the project">
+          {projectIntro}{" "}
+        </p>
         <ul className="tag">
           {topics.map(
             (topic) =>
               topic !== "portfolio" && <Tag key={topic} topic={topic} />
           )}
         </ul>
-        <div className="btn" >
+        <div className="btn">
           <div id="liveDemoBtn" aria-label="Button of live demo">
             <a href={demoLink}>
               <Demo />

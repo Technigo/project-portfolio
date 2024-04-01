@@ -7,8 +7,6 @@ import { Skills } from './assets/components/skills/Skills'
 import { Contact } from './assets/components/Contact/Contact'
 import { Footer } from './assets/components/footer/Footer'
 
-
-
 export const App = () => {
   
   return (
@@ -25,5 +23,3 @@ export const App = () => {
     </>
   )
 }
-
-
