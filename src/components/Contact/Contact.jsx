@@ -1,5 +1,6 @@
 import { Profile } from "../Image/Image";
 import { IconMappings } from "../IconMappings";
+import { ScrollUp } from "../ScrollButtons/ScrollButtons";
 
 export const Contact = () => {
   const GmailIcon = IconMappings.Gmail;
@@ -46,6 +47,9 @@ export const Contact = () => {
           >
             <InstagramIcon />
           </a>
+        </div>
+        <div>
+          <ScrollUp />
         </div>
       </div>
     </section>
