@@ -3,8 +3,9 @@ import linkedinSocialSvg from "/icons/linkedin-social.svg";
 import githubSocialSvg from "/icons/github-social.svg";
 import { TickerTape } from "../../components/TickerTape/TickerTape";
 import "./Contact.css";
+import PropTypes from "prop-types";
 
-export const Contact = ({ avatarUrl, project }) => {
+export const Contact = ({ avatarUrl }) => {
   return (
     <section className="contact-container">
       <h2>Let&apos;s talk</h2>
@@ -55,4 +56,9 @@ export const Contact = ({ avatarUrl, project }) => {
       <TickerTape />
     </section>
   );
+};
+
+// Prop type validation
+Contact.propTypes = {
+  avatarUrl: PropTypes.string.isRequired,
 };

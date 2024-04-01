@@ -1,4 +1,5 @@
 import "./Tech.css";
+import PropTypes from 'prop-types';
 
 export const Tech = ({ techSectionRef }) => {
   return (
@@ -13,4 +14,11 @@ export const Tech = ({ techSectionRef }) => {
       </div>
     </section>
   );
+};
+
+Tech.propTypes = {
+  techSectionRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  ]),
 };

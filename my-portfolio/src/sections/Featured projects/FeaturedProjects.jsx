@@ -1,6 +1,7 @@
 import { ProjectCard } from "./ProjectCard";
 import "./FeaturedProjects.css";
 import { MainHeading } from "../../components/TextElements/MainHeading";
+import PropTypes from "prop-types";
 
 export const FeaturedProjects = ({ projects }) => {
   return (
@@ -13,4 +14,12 @@ export const FeaturedProjects = ({ projects }) => {
   );
 };
 
+// Prop type validation
+FeaturedProjects.propTypes = {
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    }).isRequired
+  ).isRequired,
+};
 // Sort on the starred ones ("stargazers_count": 1)

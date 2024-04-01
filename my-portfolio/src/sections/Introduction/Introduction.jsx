@@ -1,8 +1,9 @@
 import "./Introduction.css";
 import { Subheading } from "../../components/TextElements/Subheading";
 import arrowSvg from "/icons/arrow.svg";
-import { Image } from "../../components/ImageElements/Image";
 import { NormalText } from "../../components/TextElements/NormalText";
+import { Image } from "../../components/ImageElements/Image";
+import PropTypes from "prop-types";
 
 export const Introduction = ({ avatarUrl, scrollToTechSection }) => {
   const introText =
@@ -30,4 +31,10 @@ export const Introduction = ({ avatarUrl, scrollToTechSection }) => {
       </div>
     </section>
   );
+};
+
+// PropTypes validation for Introduction component
+Introduction.propTypes = {
+  avatarUrl: PropTypes.string.isRequired, // Required string prop
+  scrollToTechSection: PropTypes.func.isRequired, // Required function prop
 };

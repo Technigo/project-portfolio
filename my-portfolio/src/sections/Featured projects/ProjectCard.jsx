@@ -5,6 +5,7 @@ import { Subheading } from "../../components/TextElements/Subheading";
 import { NormalText } from "../../components/TextElements/NormalText";
 import githubPng from "/icons/github.png";
 import liveDemoPng from "/icons/live-demo.png";
+import PropTypes from "prop-types";
 
 export const ProjectCard = ({ project }) => {
   // Define the function to render tags
@@ -50,4 +51,16 @@ export const ProjectCard = ({ project }) => {
       </div>
     </article>
   );
+};
+
+// Prop type validation
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    topics: PropTypes.arrayOf(PropTypes.string).isRequired,
+    homepage: PropTypes.string,
+    htmlUrl: PropTypes.string.isRequired,
+    imagePath: PropTypes.string.isRequired,
+  }).isRequired,
 };
