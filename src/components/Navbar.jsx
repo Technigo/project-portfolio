@@ -1,11 +1,8 @@
 import styles from "./Navbar.module.css";
 import logo from "../../public/assets/logo.svg";
 import { SlGlobe } from "react-icons/sl";
-import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
-  const { t, i18n } = useTranslation(["en", "sv"]);
-
   return (
     <nav className={styles.navbar}>
       <img src={logo} alt="Website Logo" className={styles.logo}></img>
@@ -22,7 +19,7 @@ const Navbar = () => {
             href="#about"
             aria-label="Go to About section"
           >
-            {t("about")}
+            About
           </a>
         </li>
         <li>
@@ -64,13 +61,7 @@ const Navbar = () => {
         <li>
           <span className={styles.language}>
             <SlGlobe className={styles.globe} />
-            <select
-              className={styles.langOption}
-              defaultValue="en"
-              onChange={e => {
-                i18n.changeLanguage(e.target.value);
-              }}
-            >
+            <select className={styles.langOption} defaultValue="en">
               <option value="en">EN</option>
               <option value="sv">SV</option>
             </select>
