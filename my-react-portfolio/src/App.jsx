@@ -23,7 +23,7 @@ const App = () => {
   }, [])
 
   return (
-    <div className="main-container">
+    <>
       {loading && (
         <div className="loading">
           <h1>
@@ -45,7 +45,7 @@ const App = () => {
           <Contact />
         </Transition>
       )}
-    </div>
+    </>
   )
 }
 
