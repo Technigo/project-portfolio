@@ -18,10 +18,10 @@ export const ProjectCard = ({ project }) => {
     <article className="project-card">
       {/* Render the image */}
       <Image
-        divClassName={"project-image"}
+        divClassName={"image"}
         elementClassName={"square-image"} // Set the class for the image element itself
         imagePath={project.imagePath} // Pass the image path from the project data
-        imageAltText={`${project.name}-image`} // Set the alt text for the image
+        imageAltText={`image of ${project.name} project`} // Set the alt text for the image
       />
       <div className="project-text-section">
         <Subheading className={"card-heading"} text={project.name} />
