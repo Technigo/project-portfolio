@@ -59,7 +59,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <label className={styles.language} name="lanuage">
+          <label className={styles.language} name="language">
             <SlGlobe className={styles.globe} aria-label="language icon" />
             <select className={styles.langOption} defaultValue="en">
               <option value="en">EN</option>
