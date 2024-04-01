@@ -1,42 +1,47 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+	--main-color: #0B24F5;
+	--secondary-color: #FF4575;
+	--text-color: #000;
+	--text-color-bright: #fff;
+	--bg-color-bright: #fff;
+	--bg-color-dark: #0B24F5;
+	--code--bg-color: #eb5577;
+	--toolbox--bg-color: #2483e0;
+	/*had to change the color of the design for this element (upcoming header) in order to pass the accessibility test (contrast in original design was not good enough)*/
+	--upcoming--bg-color: #4d9867;
+	--more--bg-color: #f2c94c;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg-color-bright);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+body {
+	color: var(--text-color);
+	font-family: hind-regular, sans-serif;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: montserrat, sans-serif;
+	color: var(--main-color);
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+p {
+	font-family: "Hind", sans-serif;
 }
