@@ -10,7 +10,9 @@ export const Introduction = () => {
 					<h2 className="heading-name">Hi, I'm Sofie Ferrari Strahl</h2>
 					<h1 className="heading-title">Frontend Developer</h1>
 				</div>
-				<img src={myImage} alt="Picture of Sofie" className="image"></img>
+				<div className="image">
+					<img src={myImage} alt="Picture of Sofie"></img>
+				</div>
 				<p className="image-text">
 					With a background in speech pathology, I combine my passion for
 					learning new skills and technology with great communication,
