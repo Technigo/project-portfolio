@@ -18,37 +18,41 @@
 
 .skills {
 	display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-columns: 15% 15% 15% 15%;
 	grid-template-rows: 1fr;
 	padding: 0;
-	margin: 0 10% 0 10%;
+	margin-left: 10%;
+	column-gap: 10%;
 	place-items: center;
 	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .skills ul {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
+	padding: 0;
 	list-style-type: none;
 	color: whitesmoke;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
+	margin: 0;
+	margin-left: 0;
 }
 
 .code {
 	color: whitesmoke;
 	border: solid 1px #e95577;
 	background-color: #e95577;
-	text-align: center;
 	height: 25px;
-	width: auto;
+	width: 75px;
 }
 .code p,
 .toolbox p,
 .upcomming p,
 .more p {
 	font-size: 25px;
+	margin-top: -5px;
+	text-align: center;
 }
 .toolbox {
 	color: whitesmoke;
@@ -58,7 +62,6 @@
 	width: auto;
 }
 .upcomming {
-	font-size: 30px;
 	color: whitesmoke;
 	background-color: #6db486;
 	border: solid 1px #6db486;
@@ -66,12 +69,12 @@
 	width: auto;
 }
 .more {
-	font-size: 30px;
 	color: #2148f5;
 	background-color: #e0c749;
 	border: solid 1px #e0c749;
 	height: 25px;
-	width: auto;
+	width: 75px;
+	margin-left: -100px;
 }
 
 /* mobile */
@@ -103,6 +106,7 @@
 		list-style-type: none;
 		color: whitesmoke;
 		font-family: 'Montserrat', sans-serif;
+		margin-top: 0;
 	}
 
 	.code {
@@ -118,7 +122,7 @@
 	.more p,
 	.toolbox p,
 	.upcomming p {
-		font-size: 20px;
+		font-size: 25px;
 		font-weight: 500;
 	}
 
@@ -166,12 +170,12 @@
 /* tablet */
 @media (min-width: 668) and (max-width: 1025) {
 	.skills {
-	display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: 1fr;
-	padding: 0;
-	margin: 0 5% 0 5%;
-	place-items: center;
-	font-weight: 500;
-}
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-rows: 1fr;
+		padding: 0;
+		margin: 0 5% 0 5%;
+		place-items: center;
+		font-weight: 500;
+	}
 }
