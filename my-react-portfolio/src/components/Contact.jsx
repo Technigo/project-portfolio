@@ -8,8 +8,8 @@ import {  ToTopButton } from './ToTopButton'
 
 export const Contact = () => {
   return (
-    <>
     <div className="contact">
+    <div className="contact-info">
       <h1>Let&apos;s talk</h1>
       <img src={portrait} id="portrait" alt="portait of Izabel" />
       <h3>Izabel Lind Färnstrand</h3>
@@ -23,6 +23,6 @@ export const Contact = () => {
         </div>
     </div>
         <ToTopButton />
-        </>
+        </div>
   )
 }
