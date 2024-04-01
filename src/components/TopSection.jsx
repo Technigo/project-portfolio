@@ -1,6 +1,6 @@
 import "./TopSection.css"
-import portrait from "../assets/portrait.jpg";
-import arrow from "../assets/Arrow.svg"
+import portrait from "/src/assets/portrait.jpg";
+import arrow from "/src/assets/Arrow.svg"
 
 export const TopSection =()=> {
   const ScrollDown =()=>{
