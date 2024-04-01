@@ -9,6 +9,7 @@ import projectImages from "./projectImages.json";
 
 export const Portfolio = () => {
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true); // Add loading state
   const techSectionRef = useRef(null);
   const [avatarUrl, setAvatarUrl] = useState("");
   const [projects, setProjects] = useState([]);
