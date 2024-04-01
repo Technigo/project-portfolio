@@ -1,0 +1,58 @@
+export const PortfolioImages = [
+  {
+    id: 775896846,
+    name: "project-happy-thoughts-vite",
+    prettyname: "Happy Thoughts",
+    url: "../src/assets/projectimages/happythoughts.png",
+    webp: "../src/assets/projectimages/happythoughts.webp",
+  },
+  {
+    id: 770027347,
+    name: "project-survey-vite",
+    prettyname: "Pirate name generator",
+    url: "../src/assets/projectimages/pirate.png",
+    webp: "../src/assets/projectimages/pirate.webp",
+  },
+  {
+    id: 765330479,
+    name: "project-weather-app",
+    prettyname: "Weather App",
+    url: "../src/assets/projectimages/weather.png",
+    webp: "../src/assets/projectimages/weather.webp",
+  },
+  {
+    id: 767646855,
+    name: "project-music-releases-vite",
+    prettyname: "Music Releases",
+    url: "../src/assets/projectimages/musiclibrary.png",
+    webp: "../src/assets/projectimages/musiclibrary.webp",
+  },
+  {
+    id: 758265166,
+    name: "project-chatbot",
+    prettyname: "Bobatea Chatbot",
+    url: "../src/assets/projectimages/bobateabot.png",
+    webp: "../src/assets/projectimages/bobateabot.webp",
+  },
+  {
+    id: 752318308,
+    name: "project-pizza",
+    prettyname: "Pizza Bytez",
+    url: "../src/assets/projectimages/pizzabytez.png",
+    webp: "../src/assets/projectimages/pizzabytez.webp",
+  },
+  {
+    id: 740093160,
+    name: "project-news-site",
+    prettyname: "Veganomnomicon",
+    url: "../src/assets/projectimages/Veganomnomicon.png",
+    webp: "../src/assets/projectimages/Veganomnomicon.webp",
+  },
+  {
+    id: 759483271,
+    name: "project-library",
+    prettyname: "Book Library",
+    url: "../src/assets/projectimages/Booklibrary.png",
+    webp: "../src/assets/projectimages/Booklibrary.webp",
+  },
+];
