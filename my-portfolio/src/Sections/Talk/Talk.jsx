@@ -5,7 +5,7 @@ export const Talk = () => {
       <h2>Let&apos;s Talk</h2>
       <img
         className="profile-picture"
-        src="../src/assets/Martin-square.jpg"
+        src="./Martin-square.jpg"
         alt="Martin Jönsson"
       />
       <p>Martin Jönsson</p>
