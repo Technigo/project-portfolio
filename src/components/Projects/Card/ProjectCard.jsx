@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Image } from "../../Image/Image";
+import { Images } from "../../Images/Images";
 import { ProjectContent } from "../ProjectContent/ProjectContent";
 
 export const ProjectCard = ({
@@ -12,7 +12,7 @@ export const ProjectCard = ({
 }) => {
   return (
     <article>
-      <Image image={image} alt={name} />
+      <Images image={image} alt={name} />
       <ProjectContent
         name={name}
         description={description}
