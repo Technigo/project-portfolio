@@ -3,8 +3,8 @@ import { Socialbar } from './Socialbar.jsx';
 import './contact.css';
 
 export const Contact = () => {
-  const profileImage = "../src/assets/kat.webp";
-  const profileImageBackUp = "../src/assets/kat.jpeg";
+  const profileImage = "./src/assets/kat.jpeg";
+  const profileImageBackUp = "./src/assets/kat.jpeg";
   return (
     <section className="contact">
       <h2>Let&lsquo;s talk</h2>
