@@ -1,4 +1,4 @@
-import { Profile } from "../Image/Image";
+import { Profile } from "../Images/Images";
 import { IconMappings } from "../IconMappings";
 import { ScrollUp } from "../ScrollButtons/ScrollButtons";
 
