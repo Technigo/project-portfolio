@@ -6,26 +6,20 @@ export const Introduction = () => {
 	return (
 		<>
 			<div className="wrapper">
-				<div className="heading-name">
-					<h2>Hi, I'm Sofie Ferrari Strahl</h2>
+				<div className="introtext">
+					<h2 className="heading-name">Hi, I'm Sofie Ferrari Strahl</h2>
+					<h1 className="heading-title">Frontend Developer</h1>
 				</div>
-				<div className="heading-title">
-					<h1>Frontend Developer</h1>
-				</div>
-				<div className="image">
-					<img src={myImage} alt="Picture of Sofie"></img>
-				<div className='image-text'>
-					<p>
-						With a background in speech pathology, I combine my passion for
-						learning new skills and technology with great communication,
-						problem-solving abilities, and an analytical mind with a keen
-						attention to detail.
-					</p>
-					</div>
-				</div>
-				<div className="arrow">
-					<TbArrowNarrowDown />
-				</div>
+				<img src={myImage} alt="Picture of Sofie" className="image"></img>
+				<p className="image-text">
+					With a background in speech pathology, I combine my passion for
+					learning new skills and technology with great communication,
+					problem-solving abilities, and an analytical mind with a keen
+					attention to detail.
+				</p>
+			</div>
+			<div className="arrow">
+				<TbArrowNarrowDown />
 			</div>
 		</>
 	)
