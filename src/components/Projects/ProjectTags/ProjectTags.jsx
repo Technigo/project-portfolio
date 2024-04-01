@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { IconMappings } from "../IconMappings";
+import { IconMappings } from "../../IconMappings";
 
 export const ProjectTags = ({ tags }) => {
   return (

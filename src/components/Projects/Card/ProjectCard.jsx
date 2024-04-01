@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Image } from "../Image/Image";
+import { Image } from "../../Image/Image";
 import { ProjectContent } from "../ProjectContent/ProjectContent";
 
 export const ProjectCard = ({
