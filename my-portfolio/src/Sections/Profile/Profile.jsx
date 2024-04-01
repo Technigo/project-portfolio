@@ -15,7 +15,7 @@ export const Profile = () => {
           alt="Martin Jönsson"
         />
         <p>
-          With my strong foundation in research and teaching, I bring a unique
+          With a strong foundation in research and teaching, I bring a unique
           perspective to solving complex problems and communicating technical
           concepts clearly. My analytical skills and passion for education now
           fuel my journey into crafting intuitive and accessible web
