@@ -1,3 +1,5 @@
+import "./image.css";
+
 export const Image = ({ sectionClassName, elementClassName, src, alt }) => {
   return (
     <section className={sectionClassName}>

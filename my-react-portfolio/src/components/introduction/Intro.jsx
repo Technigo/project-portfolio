@@ -5,7 +5,7 @@ import { Tech } from "../tech/Tech";
 import { useRef } from "react";
 import arrowImage from "/icons/Arrow.svg";
 import "./intro.css";
-/* import "../../components/common/common.css"; */
+import "../../components/common/common.css";
 
 //Define the Intro component
 export const Intro = () => {
@@ -17,7 +17,7 @@ export const Intro = () => {
     techSectionRef.current.scrollIntoView({ behaviour: "smooth" });
   };
   const introText =
-    "Maria-Manuela, a frontend developer, excels in crafting user-friendly applications with a focus on accessibility. Her dedication to inclusivity and innovative solutions sets her apart in the technology field.";
+    "I am a full stack developer, who excels in crafting user-friendly applications with a focus on accessibility. My dedication is to inclusivity and innovative solutions whic sets me apart in the technology field.";
 
   // Return the JSX structure of the Intro component
   return (
@@ -27,27 +27,32 @@ export const Intro = () => {
           sectionClassName={"profile-image"}
           elementClassName={"circle-image"}
           src="/images/profile.jpg"
-          alt="Profile picture of Maria-Manuela, a frontend developer"
+          alt="Profile picture of Maria-Manuela"
         />
         <section className="headings">
           <Header
             level={4}
             text="Hello, I´m Maria-Manuela"
             aria-label="user gretting"
-            className="header-h4"
+            className="intro-heading"
           />
           <Header
             level={2}
             text="Full-Stack Developer"
-            aria-label="Frontend Developer"
-            className="header-h2"
+            aria-label="Full-Stack Developer"
+            className="intro-subheading"
           />
         </section>
         <Paragraph text={introText} className="custom-paragraph" />
 
-        <div className="arrow-container" onClick={handleArrowClick}>
-          <img src={arrowImage} alt="Animated Arrow" className="arrow" />
-        </div>
+        <section className="arrow-container">
+          <img
+            src={arrowImage}
+            alt="Animated Arrow"
+            className="arrow"
+            onClick={handleArrowClick}
+          />
+        </section>
       </section>
       <Tech refProp={techSectionRef} />
     </header>

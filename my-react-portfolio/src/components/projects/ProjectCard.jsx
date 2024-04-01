@@ -19,7 +19,7 @@ export const ProjectCard = ({ repositories }) => {
   });
   //This checks if a project name (repo.name) from the repositories array exists in any of the project names (data.repoName) within repoData.projects.
 
-  /*  // Sort the filtrered repositories
+  /* // Sort the filtrered repositories
   filteredRepos.sort((a, b) => {
     const aData = localProjectsData.projects.find(
       (data) => data.name === a.name
@@ -28,8 +28,8 @@ export const ProjectCard = ({ repositories }) => {
       (data) => data.name === b.name
     );
     return bData.id - aData.id;
-  });
- */
+  }); */
+
   const toggleVisibleCards = () => {
     //show 5 cards or all card based on the current state
     setVisisbleCards((prevVisibleCards) =>
@@ -65,7 +65,7 @@ export const ProjectCard = ({ repositories }) => {
               <Header
                 level={3}
                 text={matchingData.displayName}
-                aria-labek="This is the main heading"
+                aria-label="This is the main heading"
                 className="project-card-heading"
               />
               <Paragraph

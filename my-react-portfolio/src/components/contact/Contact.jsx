@@ -1,6 +1,5 @@
 import { Header } from "../common/Header";
 import { Image } from "../common/Image";
-
 import "./contact.css";
 
 export const Contact = () => {

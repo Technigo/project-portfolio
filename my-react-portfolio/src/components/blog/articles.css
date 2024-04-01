@@ -12,12 +12,15 @@
 .article-container::before {
   content: "";
   position: absolute;
-  top: -4px; /* Adjust the position of the divider */
+  top: -4px;
+  /* Adjust the position of the divider */
   left: 0;
   width: 100%;
-  height: 20px; /* Adjust the height of the line */
-  background-image: url("/icons/divider.svg");
-  background-repeat: repeat-x; /* Repest the svg along the x-axis */
+  height: 20px;
+  /* Adjust the height of the line */
+  background-image: url("/icons/path.svg");
+  background-repeat: repeat-x;
+  /* Repeat the path along the x-axis */
   z-index: 1;
 }
 
@@ -32,7 +35,6 @@
 .article-img-container {
   height: 340px;
   overflow: hidden;
-  border-bottom: 20px solid var(--secondary);
 }
 
 .article-list {
@@ -44,7 +46,7 @@
 
 .article-heading {
   color: var(--secondary);
-  text-align: left;
+  text-align: center;
   font-family: Montserrat;
   font-size: 80px;
   font-weight: 700;
@@ -77,6 +79,7 @@
     border-bottom: 20px solid var(--secondary);
   }
 }
+
 /* Add border bottom conditionally based on screen size */
 
 /* ------------ Desktop only ------------ */
@@ -109,7 +112,7 @@
   .article-img-container {
     height: 460px;
     align-self: stretch;
-    border-bottom: 20px solid var(--secondary);
+    /*    border-bottom: 20px solid var(--secondary); */
   }
 }
 
