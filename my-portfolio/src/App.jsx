@@ -1,5 +1,6 @@
 import { FeaturedProjects } from "./sections/FeaturedProjects.jsx";
 import { Introduction } from "./sections/Introduction.jsx";
+import { Skills } from "./sections/Skills.jsx";
 import { Tech } from "./sections/Tech.jsx";
 
 export const App = () => {
@@ -8,6 +9,7 @@ export const App = () => {
       <Introduction />
       <Tech />
       <FeaturedProjects />
+      <Skills />
     </div>
   );
 };

@@ -27,7 +27,7 @@ export const ProjectList = () => {
   }, []);
 
   return (
-    <ul className="project-card">
+    <ul className="project-list">
       {repoData.map((gitHubRepo) => {
         const localRepo = repoImages.find((img) => img.repoName === gitHubRepo.name);
         console.log(localRepo);

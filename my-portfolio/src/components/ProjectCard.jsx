@@ -3,7 +3,7 @@ import { Button } from "./Button.jsx";
 
 export const ProjectCard = ({ name, gitHubLink, topics, deployedLink, description, repoImage }) => {
   return (
-    <li>
+    <li className="project-card">
       <img className="repo-image" src={repoImage} alt="displays the frontpage of the webpage" />
       <div className="projectcard-textbox">
         <h2>{name}</h2>
@@ -13,6 +13,8 @@ export const ProjectCard = ({ name, gitHubLink, topics, deployedLink, descriptio
             return <p key={tag}>{tag}</p>;
           })}
         </div>
+      </div>
+      <div className="button-container">
         <Button
           buttonIcon="src/assets/icons/live-icon.svg"
           url={deployedLink}
