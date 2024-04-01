@@ -1,0 +1,43 @@
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 16px 0 16px;
+  gap: 32px;
+}
+
+.heading-wrapper {
+  text-align: center;
+}
+.introduction-heading {
+  color: var(--primary);
+}
+
+.intro-text {
+  margin-top: 32px;
+}
+
+.arrow-container {
+  padding: 0 16px 32px 16px;
+  position: relative;
+  top: 0;
+  animation: arrowJump 1.7s ease infinite;
+}
+
+.arrow-container button {
+  background: none;
+  border: none;
+}
+
+/* Animation for pink arrow */
+@keyframes arrowJump {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50% {
+    top: 30px;
+  }
+}
