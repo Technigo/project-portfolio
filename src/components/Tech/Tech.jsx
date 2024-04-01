@@ -1,18 +1,13 @@
-import { ScrollDown } from "../ScrollButtons/ScrollButtons";
+import styles from "./Tech.module.css";
 
 export const Tech = () => {
   return (
-    <section id="tech">
-      <div>
+    <section id="tech" className={styles.section}>
         <h2>Tech</h2>
-      </div>
-      <div>
-        <p>
-          HTML, CSS, JavaScript, ES6, JSX, React Node.js, Mongo DB, Web
-          Accessibility, APIs, mob-programming, pair-programming
+        <p className={styles.techList}>
+          HTML, CSS, JavaScript, React, Node.js, Mongo DB, APIs, Web
+          Accessibility
         </p>
-      </div>
-      <ScrollDown scrollTo="projects" />
     </section>
   );
 };
