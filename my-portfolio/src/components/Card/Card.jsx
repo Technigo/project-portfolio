@@ -38,7 +38,7 @@ export const Card = ({
             source={renderLink}
             image="Globe"
             text="Live demo"
-            color="purple"
+            color="grey"
           />
           <Button
             className="button"
