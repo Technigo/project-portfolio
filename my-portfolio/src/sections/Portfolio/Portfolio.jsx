@@ -5,6 +5,7 @@ import { FeaturedProjects } from "../Featured projects/FeaturedProjects";
 import { Skills } from "../Skills/Skills";
 import { Contact } from "../Contact/Contact";
 import "./Portfolio.css";
+import projectImages from "./projectImages.json";
 
 export const Portfolio = () => {
   const [error, setError] = useState(null);
@@ -34,19 +35,22 @@ export const Portfolio = () => {
         console.log(data);
         const avatar = data[0]?.owner?.avatar_url;
         // Filter out the "Portfolio"-project
-        const filteredProjects = data.filter(
-          (project) => project.name !== "Portfolio"
-        );
-        const projectsData = filteredProjects.map((project) => ({
-          id: project.id,
-          name: project.name,
-          description: project.description,
-          htmlUrl: project.html_url,
-          topics: project.topics,
-          homepage: project.homepage,
-        }));
+        const filteredProjects = data
+          .filter((project) => project.name !== "Portfolio")
+          .map((project) => ({
+            id: project.id,
+            name: project.name,
+            description: project.description,
+            htmlUrl: project.html_url,
+            topics: project.topics,
+            homepage: project.homepage,
+            // Find the corresponding image path from the JSON data
+            imagePath:
+              projectImages.find((image) => image.projectName === project.name)
+                ?.imagePath || "",
+          }));
         setAvatarUrl(avatar);
-        setProjects(projectsData);
+        setProjects(filteredProjects);
       })
       .catch((error) => {
         setError("Error loading repositories. Please try again later");
