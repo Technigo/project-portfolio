@@ -7,6 +7,12 @@ import {
   SiPostman,
   SiGithub,
   SiFigma,
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiAdobelightroom,
+  SiLinkedin,
+  SiInstagram,
+  SiGmail,
 } from "react-icons/si";
 
 export const IconMappings = {
@@ -18,4 +24,10 @@ export const IconMappings = {
   Postman: SiPostman,
   GitHub: SiGithub,
   Figma: SiFigma,
+  Adobeillustrator: SiAdobeillustrator,
+  Adobephotoshop: SiAdobephotoshop,
+  Adobelightroom: SiAdobelightroom,
+  Linkedin: SiLinkedin,
+  Instagram: SiInstagram,
+  Gmail: SiGmail,
 };
