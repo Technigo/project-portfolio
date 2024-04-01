@@ -1,45 +1,34 @@
-import "./Project.css"
+import React, { useEffect, useState } from "react";
+import "./Project.css";
+import data from "../data.json";
 
-export const Project=()=> {
-   /* const userName = [
-    'jingh999',
-    'vittoriamatteoli',
-    'lunek1'
-  ] */
+console.log(data);
 
-  fetch(`https://api.github.com/users/jingh999/repos`)
-    .then(res => res.json())
-    .then(
-      json=>{
-        const filteredRepo=json.filter(repo=>projectNames.includes(repo.name))
-        console.log(filteredRepo)
-      })
-
-  const projectNames = [
-    'Chatbot',
-    'w3-project-library',
-    'w4-project-weather-app',
-    'w5-project-music-releases-vite',
-    'project-survey-vite',
-    'w7-project-happy-thoughts-vite',
-  ]  
-
-
+export const Project = () => {
 
   return (
-    <div className="project">
-      <img src="" alt="" className="projectCover" />
-      <div className="projectDetail">
-        <h4 className="projectTitle">Chatbox built in JavaScript</h4>
-        
-        <p className="projectIntro">The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.</p>
-        
-        {/* <div className="skills">HTML5</div>
-        <div className="external link">
-          <button>Live demo</button>
-          <button>View the code</button>
-        </div> */}
-      </div>
+    <div className="projectContainer">
+      {data.map(e => (
+        <div key={e.id} className="project">
+          <img src={e.cover} alt="Project cover" className="projectCover" />
+          <div className="projectDetail">
+            <h4 className="projectTitle">{e.name}</h4>
+            <p className="projectIntro">{e.description}</p>
+            
+            <div className="techContainer">
+              {e.technics.map(t=>(
+                <div className="technich">{t}</div>
+              ))}
+            </div>
+            
+            <div className="externalLink">
+              <a href={e.live_url} target="_blank"><button>Live Demo</button></a>
+              <a href={e.git_url} target="_blank"><button>View the code</button></a>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
-  )
-}
+  );
+};
+
