@@ -8,12 +8,13 @@ export const Profile = () => {
         <h2>Hi, I&apos;m Martin Jönsson</h2>
         <h1>Frontend Developer</h1>
       </div>
+
+      <img
+        className="profile-picture"
+        src="./Martin-square.jpg"
+        alt="Martin Jönsson"
+      />
       <div className="profile-info">
-        <img
-          className="profile-picture"
-          src="./Martin-square.jpg"
-          alt="Martin Jönsson"
-        />
         <p>
           With a strong foundation in research and teaching, I bring a unique
           perspective to solving complex problems and communicating technical
