@@ -1,18 +1,17 @@
-import { Profile } from "../Image/Image";
+import { Profile } from "../Images/Images";
 import { ScrollDown } from "../ScrollButtons/ScrollButtons";
+import styles from "./About.module.css";
 
 export const About = () => {
   return (
-    <section>
-      <div>
-        <p>Mai Kanetaka</p>
-        <h1>Frontend Developer</h1>
+    <section className={styles.section}>
+      <div className={styles.headerContainer}>
+        <p className={styles.myName}>Hi! I am Mai Kanetaka</p>
+        <h1 className={styles.frontend}>Frontend Developer</h1>
       </div>
-      <div>
-        <div>
-          <Profile />
-        </div>
-        <div>
+      <div className={styles.description}>
+        <Profile />
+        <div className={styles.descriptionText}>
           <p>
             As a marketing professional with a deep fascination for storytelling
             and SEO efficacy, my expertise lies in creating captivating content
@@ -29,8 +28,8 @@ export const About = () => {
             strategic and inventive input to cutting-edge tech projects.
           </p>
         </div>
-        <ScrollDown scrollTo="tech" />
       </div>
+      <ScrollDown scrollTo="tech" />
     </section>
   );
 };
