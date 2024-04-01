@@ -33,6 +33,7 @@ export const Skills = () => {
           <p>Agile methodology</p>
           <p>Concept development</p>
           <p>Pair/mob-programming</p>
+          <p>Data analysis</p>
         </div>
       </div>
     </div>
