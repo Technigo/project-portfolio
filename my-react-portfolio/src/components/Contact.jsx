@@ -4,9 +4,11 @@ import linkedin from '../assets/linkedin.svg'
 import githubProfile from '../assets/github-profile.svg'
 import instagram from '../assets/instagram.svg'
 import './css/contact.css'
+import {  ToTopButton } from './ToTopButton'
 
 export const Contact = () => {
   return (
+    <>
     <div className="contact">
       <h1>Let&apos;s talk</h1>
       <img src={portrait} id="portrait" alt="portait of Izabel" />
@@ -20,5 +22,7 @@ export const Contact = () => {
         <a href="https://www.instagram.com/izabellind.official/" target="_blank"><img src={instagram} alt="instagram profile link" /></a>
         </div>
     </div>
+        <ToTopButton />
+        </>
   )
 }
