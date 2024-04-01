@@ -6,7 +6,7 @@ import "../styling/Contact.css";
 const Contact = () => {
   return (
     <div className="contactContainer">
-      <h1 className="contact">Let's talk</h1>
+      <h1 className="contact">Let&apos;s talk</h1>
       <img src={myImage} alt="My picture" className="myImage" />
       <div className="contactInfo">
         <h2>Paula Jungåker</h2>
