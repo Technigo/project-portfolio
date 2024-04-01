@@ -79,35 +79,17 @@
 
 /* mobile */
 @media (min-width: 0px) and (max-width: 667px) {
-	.skill-section {
-		margin: 0;
-		background-color: #2148f5;
-		height: auto;
-		width: 100%;
-	}
-
-	.skill-section h1 {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		color: whitesmoke;
-	}
-
 	.skills {
 		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: fit-content(8, 1fr);
-		place-items: center;
+		grid-template-columns: repeat(8, auto);
 	}
 
 	.skills ul {
-		display: grid;
 		list-style-type: none;
 		color: whitesmoke;
 		font-family: 'Montserrat', sans-serif;
 		margin-top: 0;
-	}
+	} 
 
 	.code {
 		order: -8;
@@ -116,14 +98,6 @@
 		background-color: #e95577;
 		height: 25px;
 		width: auto;
-	}
-
-	.code p,
-	.more p,
-	.toolbox p,
-	.upcomming p {
-		font-size: 25px;
-		font-weight: 500;
 	}
 
 	.toolbox {
@@ -154,6 +128,7 @@
 		height: 25px;
 		width: auto;
 	}
+
 	.tech-skills-code {
 		order: -7;
 	}
