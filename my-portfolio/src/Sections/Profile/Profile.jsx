@@ -15,12 +15,11 @@ export const Profile = () => {
           alt="Martin Jönsson"
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-          possimus iure expedita labore alias laborum voluptatum est quasi sint?
-          Praesentium, ea, porro excepturi doloribus debitis eveniet quos quidem
-          vitae impedit dolorum nam? Accusantium magni aut ipsum, dicta sunt,
-          nisi aspernatur, quaerat doloremque sit officiis magnam velit sint?
-          Blanditiis, voluptate facilis?
+          With my strong foundation in research and teaching, I bring a unique
+          perspective to solving complex problems and communicating technical
+          concepts clearly. My analytical skills and passion for education now
+          fuel my journey into crafting intuitive and accessible web
+          experiences.
         </p>
       </div>
       <div className="profile-arrow">

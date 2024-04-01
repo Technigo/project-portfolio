@@ -12,13 +12,13 @@ export const Talk = () => {
       <p>+46(0)73-909 11 99</p>
       <p>martin.t.joensson@gmail.com</p>
       <div className="socialmedia">
-        <img src="../src/assets/Btn - linkedin.png" alt="LinkedIn"></img>
-        <img src="../src/assets/Btn - github.png" alt="GitHub"></img>
+        <img src="./Btn - linkedin.png" alt="LinkedIn"></img>
+        <img src="./Btn - github.png" alt="GitHub"></img>
         <img
-          src="../src/assets/Btn - stackoverflow.png"
+          src="./Btn - stackoverflow.png"
           alt="StackOverflow"
         ></img>
-        <img src="../src/assets/Btn - instagram.png" alt="Instagram"></img>
+        <img src="./Btn - instagram.png" alt="Instagram"></img>
       </div>
     </div>
   );
