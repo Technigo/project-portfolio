@@ -22,7 +22,7 @@ If you work as a designer and really dislike our design, you could pitch to us w
 
 ### **Top section**
 
-This is where you sell in your new self. You're happy to combine your previous experience with your new Frontend skills or use this area to describe yourself and how you see your future role. Either you do something like "Web dev + design" or more of a sentence like; "Web developer with a background in communications". Or if you don't see yourself as a Frontend Developer in the future, maybe you want to write something like; "Project manager with coding skills". It's your portfolio. Add a photo of yourself and summarise what you have been doing in the past and what you want to do in the future. This gives the reader an idea of who you are. Keep it short and personal. 
+This is where you sell in your new self. You're happy to combine your previous experience with your new Frontend skills or use this area to describe yourself and how you see your future role. Either you do something like "Web dev + design" or more of a sentence like; "Web developer with a background in communications". Or if you don't see yourself as a Frontend Developer in the future, maybe you want to write something like; "Project manager with coding skills". It's your portfolio. Add a photo of yourself and summarise what you have been doing in the past and what you want to do in the future. This gives the reader an idea of who you are. Keep it short and personal.
 
 ### **Tech section**
 
@@ -40,11 +40,11 @@ During the career coaching program, you will be asked to post reflections on Lin
 
 ### **Skills**
 
-Place ALL your skills here. Feel free to add tech skills that are not in the course but things you have knowledge of from before. In the other columns, place everything that you think will be useful for a tech job. Softwares that you know, methodologies, leadership frameworks and basically whatever. 
+Place ALL your skills here. Feel free to add tech skills that are not in the course but things you have knowledge of from before. In the other columns, place everything that you think will be useful for a tech job. Softwares that you know, methodologies, leadership frameworks and basically whatever.
 
 ### **Time to talk**
 
-Make it super clear how a person can contact you. Again, add the social media links that *you* are using. 
+Make it super clear how a person can contact you. Again, add the social media links that _you_ are using.
 
 ## Tips on how to work with this project
 
@@ -64,17 +64,17 @@ To use the icons from the design, simply mark the icon you want to export and sa
 
 - Your portfolio should have components and props
 - Your portfolio should contain:
-    - A picture of you.
-    - A presentation of your tech skills.
-    - A presentation of your projects linking to GitHub and Netlify.
-    - A presentation of some thoughts that you have around code.
-    - A clear way to get in contact with you.
+  - A picture of you.
+  - A presentation of your tech skills.
+  - A presentation of your projects linking to GitHub and Netlify.
+  - A presentation of some thoughts that you have around code.
+  - A clear way to get in contact with you.
 - Your portfolio should follow the design as closely as possible
 - Your portfolio should be responsive (it should look good on devices from 320px width up to 1600px)
 - Your portfolio should be following accessibility guidelines to ensure your website is usable by a diverse range of users:
-    - You should have a score of at least 95 in [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)
-    - All images should have alt attributes and proper sizes
-    - All contrasts should be OK
+  - You should have a score of at least 95 in [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)
+  - All images should have alt attributes and proper sizes
+  - All contrasts should be OK
 - Follow the guidelines on [how to write good code](https://www.notion.so/Guidelines-for-how-to-write-good-code-59abdd4307a24f5ca7914d566326f4df?pvs=21)
 
 ## Stretch goals
@@ -89,4 +89,4 @@ To use the icons from the design, simply mark the icon you want to export and sa
 
 - Give your portfolio a custom domain and connect to your deployed site. [Read more](https://docs.netlify.com/domains-https/custom-domains/).
 - Utilise the GitHub API to fetch your public projects from your GitHub account, ensuring your portfolio stays up-to-date with your latest work.
-    - Use the following URL link [**https://api.github.com/users/YourGitHubProfile/repos**] as an example. Replace "YourGitHubProfile" with your actual GitHub profile name to fetch your repository data. Example: [Technigo GitHub profile](https://api.github.com/users/Technigo/repos)
+  - Use the following URL link [**https://api.github.com/users/YourGitHubProfile/repos**] as an example. Replace "YourGitHubProfile" with your actual GitHub profile name to fetch your repository data. Example: [Technigo GitHub profile](https://api.github.com/users/Technigo/repos)
