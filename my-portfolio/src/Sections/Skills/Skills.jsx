@@ -17,11 +17,12 @@ export const Skills = () => {
           <p>GitHub</p>
         </div>
         <div className="sub subTools">
-          <h3>Tools</h3>
+          <h3>Toolbox</h3>
           <p>Postman</p>
           <p>GIMP</p>
           <p>Figma</p>
           <p>Slack</p>
+          <p>Keynote</p>
         </div>
         <div className="sub subUpcoming">
           <h3>Upcoming</h3>
@@ -31,6 +32,7 @@ export const Skills = () => {
           <h3>More</h3>
           <p>Agile methodology</p>
           <p>Concept development</p>
+          <p>Pair/mob-programming</p>
         </div>
       </div>
     </div>
