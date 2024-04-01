@@ -1,4 +1,4 @@
-# Happy thoughts Project
+# Portfolio Project
 ### The Problem
 The problem was to build a portfolio site for myself, following the provided design as close as possible.
 
