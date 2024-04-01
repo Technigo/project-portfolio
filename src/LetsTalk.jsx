@@ -7,11 +7,11 @@ export const LetsTalk = () => {
 
       <img className="letsTalkAvatar" src={johanna} />
       <div className="letsTalkText">
-        Sara Svensson
+        Johanna Catalini Smith
         <br />
-        +46(0)763 12 33 45
+        +46(0)000 00 00 00
         <br />
-        sara.svensson@mail.com
+        johannacatalini@gmail.com
       </div>
 
       <div className="letsTalkIcons">
@@ -30,7 +30,7 @@ export const LetsTalk = () => {
           </svg>
         </a>
 
-        <a href="https://www.linkedin.com/in/johanna-catalini-smith-b08a771b5/">
+        <a href="https://github.com/johannacatalinismith">
           <svg
             width="24"
             height="24"
@@ -45,7 +45,7 @@ export const LetsTalk = () => {
           </svg>
         </a>
 
-        <a href="https://www.linkedin.com/in/johanna-catalini-smith-b08a771b5/">
+        <a href="https://stackoverflow.com/users/23249176/johanna-catalini-smith">
           <svg
             width="33"
             height="32"

@@ -8,10 +8,13 @@ export const Intro = () => {
       <p className="role">Frontend Developer</p>
       <img className="avatar" src={johanna} alt="Johanna Catalini Smith" />
       <p className="bio">
-        Sara is an exceptional developer known for her innovative solutions and
-        exceptional coding abilities. She creates user-friendly applications and
-        solves complex issues with ease. Her drive for excellence makes her a
-        valuable asset to any project and a standout in the technology field.
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum."
       </p>
       <img className="arrow" src={arrow} alt="" />
     </section>
