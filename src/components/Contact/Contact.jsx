@@ -8,7 +8,7 @@ export const Contact = () => {
   const GitHubIcon = IconMappings.GitHub;
   const InstagramIcon = IconMappings.Instagram;
   return (
-    <section>
+    <section id="contact">
       <div>
         <h2>Contact</h2>
         <p>For more details, contact me!</p>

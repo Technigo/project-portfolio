@@ -1,9 +1,10 @@
 import { ProjectCard } from "./Card/ProjectCard";
 import { projects } from "./projects.json";
+import { ScrollDown } from "../ScrollButtons/ScrollButtons";
 
 export const Projects = () => {
   return (
-    <section>
+    <section id="projects">
       <div>
         <h2>Featured Projects</h2>
       </div>
@@ -20,6 +21,7 @@ export const Projects = () => {
           />
         ))}
       </div>
+      <ScrollDown scrollTo="skills" />
     </section>
   );
 };

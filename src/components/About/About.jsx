@@ -1,4 +1,5 @@
 import { Profile } from "../Image/Image";
+import { ScrollDown } from "../ScrollButtons/ScrollButtons";
 
 export const About = () => {
   return (
@@ -28,6 +29,7 @@ export const About = () => {
             strategic and inventive input to cutting-edge tech projects.
           </p>
         </div>
+        <ScrollDown scrollTo="tech" />
       </div>
     </section>
   );
