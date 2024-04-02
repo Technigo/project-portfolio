@@ -6,45 +6,16 @@
 
 # Technigo - React Portfolio Project
 
-Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
+In this project we are practicing using what we have learned the earlier weeks and creating our own portfolio.
 
-## Instructions
-[Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
+## The problem
 
-## Set up your own version of your portfolio
+I planned this project using a Figjam board and also used already made components from Figma. I had some issues deploying the project that learned that the images needs to be in the public folder. If I had more time I would like to advance the page more and also work with the strech goals.
 
-We will use [Vite](https://vitejs.dev/guide/) to setup our project 😉
+### View it live
 
-```bash
-  npm create vite@latest my-react-portfolio --template
+https://amazing-pegasus-a92fd6.netlify.app/
+
 ```
 
-#### Follow this GIF to setup your project
-
-![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WEB/Sprint-2/week-8/vite-react_vjp0ep.gif)
-
-## Installation
-
-Use the `cd` command to move into the folder
-
-```bash
-  cd my-react-portfolio
-```
-
-Install the dependencies
-
-```bash
-  npm i
-```
-
-Open the project in a separate VS Code editor
-
-```bash
-  code .
-```
-
-Open up a terminal inside VS code and lets run the project in a local environment
-
-```bash
-  npm run dev
 ```
