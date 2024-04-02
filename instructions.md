@@ -16,7 +16,7 @@ If you have any written articles or blog posts that you consider relevant, there
 
 We want you to practise following a design strictly. This is normally how the workflow is for a Frontend Developer: to work together with a designer who provides a design file (in Figma) for you to translate into code.
 
-If you work as a designer and really hate our design, you could pitch to us why you would do a better job and hand in your own design file for us to evaluate. But otherwise, this design comes from an experienced designer in collaboration with the expertise of a recruiter who knows what recruiters look at.
+If you work as a designer and really dislike our design, you could pitch to us why you would do a better job and hand in your own design file for us to evaluate. But otherwise, this design comes from an experienced designer in collaboration with the expertise of a recruiter who knows what recruiters look at.
 
 ## Content guide
 
