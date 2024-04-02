@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
-import { Images } from "../../Images/Images";
 import { ProjectContent } from "../ProjectContent/ProjectContent";
+import styles from "./ProjectCard.module.css";
+
 
 export const ProjectCard = ({
   image,
@@ -11,16 +12,16 @@ export const ProjectCard = ({
   viewTheCodeLink,
 }) => {
   return (
-    <article>
-      <Images image={image} alt={name} />
+    <div className={styles.projectCard}>
       <ProjectContent
+        image={image}
         name={name}
         description={description}
         liveDemoLink={liveDemoLink}
         viewTheCodeLink={viewTheCodeLink}
         tags={tags}
       />
-    </article>
+    </div>
   );
 };
 

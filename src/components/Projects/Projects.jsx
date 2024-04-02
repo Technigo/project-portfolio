@@ -1,14 +1,12 @@
 import { ProjectCard } from "./Card/ProjectCard";
 import { projects } from "./projects.json";
-import { ScrollDown } from "../ScrollButtons/ScrollButtons";
+import styles from "./Projects.module.css";
 
 export const Projects = () => {
   return (
-    <section id="projects">
-      <div>
-        <h2>Featured Projects</h2>
-      </div>
-      <div>
+    <section id="projects" className={styles.section}>
+      <h2>Projects</h2>
+      <div className={styles.projects}>
         {projects.map((project) => (
           <ProjectCard
             key={project.name}
@@ -21,7 +19,6 @@ export const Projects = () => {
           />
         ))}
       </div>
-      <ScrollDown scrollTo="skills" />
     </section>
   );
 };
