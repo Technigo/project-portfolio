@@ -9,7 +9,6 @@ export const Ticker = () => {
   return (
     <div>
       <div className="styling ticker-container">
-        {/*  The following div is the ticker-tape that scrolls horizontally on the bottom of the page */}
         {/* first I created an array with space for 200 items and map over it to display the content of items array 200 times  - to avoid having to write the same text over and over again and give the illusion of a never ending ticker
         */
         }

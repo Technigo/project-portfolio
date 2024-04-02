@@ -1,4 +1,4 @@
 ## Netlify link
-[link.](https://kathinkasewell-portfolio.netlify.app/)
+[link.](https://kathinka-portfolio.netlify.app/)
 
 

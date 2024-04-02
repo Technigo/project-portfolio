@@ -27,7 +27,7 @@ export const Projects = () => {
     //could change if we want to add pagination or a button to fetch more projects in the future.
   }, [url]);
 
-  // lets only get the data we need from the API - saves bandwidth and makes the app faster.
+  // lets save bandwidth and makes the app faster and only get what we need from the API.
   //destructuring the data we need from the API response.
   const projectObject = projects.map(({ id, name, html_url, description, language, created_at, updated_at, pushed_at, full_name, homepage, topics, stargazers_count }) => ({
     id,

@@ -7,7 +7,7 @@ export const Socialbar = () => {
       {Socials.map((social) => (
         <div className="socials" key={social.id}>
           <a href={social.url}>
-            <img className="some" src={social.img} alt={social.name} aria-label={social.aria} />
+            <img className="some" src={social.img} alt={social.name} aria-label={social.name} />
           </a>
         </div>
       ))}

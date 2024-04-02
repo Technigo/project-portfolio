@@ -8,5 +8,5 @@
 
 
 ## Instructions
-[check it out here]([https://github.com/Technigo/project-portfolio/blob/main/instructions.md](https://kathinkasewell-portfolio.netlify.app/))
+[check it out here]([https://github.com/Technigo/project-portfolio/blob/main/instructions.md](https://kathinka-portfolio.netlify.app/)
 
