@@ -36,6 +36,7 @@ export const Contact = ({ avatarUrl }) => {
         <a
           href="https://www.linkedin.com/in/erica-mechler-a39b73a8/"
           rel=" noopener noreferrer"
+          target="_blank"
         >
           <Image
             divClassName={"icon-box"}
@@ -44,7 +45,11 @@ export const Contact = ({ avatarUrl }) => {
             imageAltText={"Link to Linkedin"}
           />
         </a>
-        <a href="https://github.com/ericamechler" rel=" noopener noreferrer">
+        <a
+          href="https://github.com/ericamechler"
+          rel=" noopener noreferrer"
+          target="_blank"
+        >
           <Image
             divClassName={"icon-box"}
             elementClassName={"icon"}
