@@ -40,7 +40,6 @@ export const Skills =()=> {
               <p>Node.js</p>
               <p>Atom</p>
               <p>Mongo DB</p>
-              <p>...</p>
             </div>
           </div>
 

@@ -1,6 +1,7 @@
 .tech{
   display: flex;
   height: 980px;
+  width: 100%;
   align-items: center;
   justify-content: center;
   background-color: #0B24F5;
@@ -71,23 +72,27 @@
 }
 
 /* For Mobile Device */
-@media (max-width: 667px) {
+@media (max-width: 666px) {
   .tech{
     height: 100vh;
     width: 100%;
   }
   
   .techContent{
-    width: 375px;
-    height: 616px;
+    flex-direction: column;
+    gap: 64px;
+    width: 343px;
   }
   
   .titleWhite{
-    width: 139px;
+    font-size: 56px;
+    font-weight: 700;
   }
   
   .techDetails{
-    width: 343px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
   }
 
 }

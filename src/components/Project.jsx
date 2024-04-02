@@ -12,13 +12,15 @@ export const Project = () => {
         <div key={e.id} className="project">
           <img src={e.cover} alt="Project cover" className="projectCover" />
           <div className="projectDetail">
-            <h4 className="projectTitle">{e.name}</h4>
-            <p className="projectIntro">{e.description}</p>
-            
-            <div className="techContainer">
-              {e.technics.map(t=>(
-                <div className="technic">{t}</div>
-              ))}
+            <div className="projectInfo">
+              <h4 className="projectTitle">{e.name}</h4>
+              <p className="projectIntro">{e.description}</p>
+              
+              <div className="techContainer">
+                {e.technics.map(t=>(
+                  <div className="technic">{t}</div>
+                ))}
+              </div>
             </div>
             
             <div className="externalLink">
