@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "../styling/featureProjects/ProjectButtons.css";
-import GitHubIcon from "../assets/View-Code-Button.svg";
-import NetlifyIcon from "../assets/Live-Demo-Button.svg";
+import GithubButton from "../../public/View-Code-Button.svg";
+import NetlifyButton from "../../public/Live-Demo-Button.svg";
 
 const ProjectButtons = ({ gitHubLink, netlifyLink }) => {
   return (
@@ -12,7 +12,7 @@ const ProjectButtons = ({ gitHubLink, netlifyLink }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={NetlifyIcon} alt="Live Demo Icon" />
+        <img src={NetlifyButton} alt="Live Demo Icon" />
       </a>
       <a
         href={gitHubLink}
@@ -20,7 +20,7 @@ const ProjectButtons = ({ gitHubLink, netlifyLink }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={GitHubIcon} alt="GitHub Icon" />
+        <img src={GithubButton} alt="GitHub Icon" />
       </a>
     </div>
   );

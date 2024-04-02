@@ -1,6 +1,6 @@
-import myImage from "../assets/myImage.jpg";
-import githubIcon from "../assets/githubIcon.png";
-import linkedinIcon from "../assets/linkedinIcon.png";
+import myImage from "../../public/myImage.jpg";
+import githubIcon from "../../public/githubIcon.png";
+import linkedinIcon from "../../public/linkedinIcon.png";
 import "../styling/Contact.css";
 
 const Contact = () => {

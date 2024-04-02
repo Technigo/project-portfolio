@@ -1,5 +1,5 @@
 import "../styling/Intro.css";
-import myImage from "../assets/myImage.jpg";
+import myImage from "../../public/myImage.jpg";
 
 const Intro = () => {
   return (
