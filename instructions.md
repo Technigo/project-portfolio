@@ -4,8 +4,6 @@
 
 The portfolio will be a great test of your React, HTML and CSS skills but we will also take the opportunity to get started with accessibility and build websites for everyone -- something every frontend developer should know. Don't save until the last day to do the testing -- it's very much the task of this project and will take some time.
 
-<img src="https://github.com/Technigo/project-portfolio/blob/main/Preview-PortfolioWebDev-Technigo.png" alt="" />
-
 We've created a [portfolio design](https://www.figma.com/file/ZMIWBimuoSDHXp7CdtkrA3/Web-Dev-Portfolio-%7C-new-version?type=design&node-id=1862-60&mode=design&t=clNc4tmMHa8uA3GO-0) for you that you should follow. You are free to change:
 
 - the colours (find inspiration on [ColorHunt](https://colorhunt.co/) or [Adobe](https://color.adobe.com/create/color-wheel/))

@@ -1,50 +1,12 @@
-<h1 align="center">
-  <a href="">
-    <img src="/react-p.svg" alt="Project Banner Image">
-  </a>
-</h1>
+## Technigo - React Portfolio Project
 
-# Technigo - React Portfolio Project
+The objective of this project is to build a personal portfolio that showcases my tech stack, skill set, projects, and contact information. Components are organized into section components and reusable utilities. Each JSX component file is paired with a dedicated module.css file to ensure that styling remains locally scoped and readability is maintained.
 
-Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
+## Problems
 
-## Instructions
-[Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
+In this project, I prioritized dividing the application into as many components as possible. Initially, this approach was somewhat confusing, but I've come to realize that it significantly enhances maintainability. Moving forward, I intend to continue utilizing this method. For future developments, I'm planning to incorporate Japanese translations, add more animations, and expand the content further.
+Also, CSS in mobile view does not work as I wanted. I would like to fix it as well.
 
-## Set up your own version of your portfolio
+## View it live
 
-We will use [Vite](https://vitejs.dev/guide/) to setup our project 😉
-
-```bash
-  npm create vite@latest my-react-portfolio --template
-```
-
-#### Follow this GIF to setup your project
-
-![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WEB/Sprint-2/week-8/vite-react_vjp0ep.gif)
-
-## Installation
-
-Use the `cd` command to move into the folder
-
-```bash
-  cd my-react-portfolio
-```
-
-Install the dependencies
-
-```bash
-  npm i
-```
-
-Open the project in a separate VS Code editor
-
-```bash
-  code .
-```
-
-Open up a terminal inside VS code and lets run the project in a local environment
-
-```bash
-  npm run dev
-```
+https://maikanetaka.netlify.app/

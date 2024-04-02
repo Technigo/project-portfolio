@@ -1,0 +1,33 @@
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiNpm,
+  SiPostman,
+  SiGithub,
+  SiFigma,
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiAdobelightroom,
+  SiLinkedin,
+  SiInstagram,
+  SiGmail,
+} from "react-icons/si";
+
+export const IconMappings = {
+  HTML5: SiHtml5,
+  CSS3: SiCss3,
+  JavaScript: SiJavascript,
+  React: SiReact,
+  NPM: SiNpm,
+  Postman: SiPostman,
+  GitHub: SiGithub,
+  Figma: SiFigma,
+  Adobeillustrator: SiAdobeillustrator,
+  Adobephotoshop: SiAdobephotoshop,
+  Adobelightroom: SiAdobelightroom,
+  Linkedin: SiLinkedin,
+  Instagram: SiInstagram,
+  Gmail: SiGmail,
+};
