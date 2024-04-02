@@ -7,7 +7,7 @@ import { Tech } from './components/Tech'
 import { Projects } from './components/Projects'
 import { Transition } from './components/Transition'
 import { ReactTyped } from 'react-typed'
-//import { Articles } from "./components/Articles"
+import { Articles } from "./components/Articles"
 
 const App = () => {
   const [loading, setloading] = useState(true)
@@ -41,6 +41,7 @@ const App = () => {
           <Introduction />
           <Tech />
           <Projects />
+          <Articles />
           <Skills />
           <Contact />
         </Transition>

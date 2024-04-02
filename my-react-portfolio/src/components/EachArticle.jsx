@@ -1,13 +1,23 @@
-import imgIdea from "../assets/izabel-lind-farnstrand-foto-jesper-mattsson-orebro.jpg"
+import articles from "../libraries/articles.json"
+import readMore from "../assets/read.svg"
+
 
 export const EachArticle = () => {
 
     return(
         <>
-    <div className="each-article">
-                <a href="https://medium.com/@izabel.lindfarnstrand/the-idea-of-the-web-developer-bd55c2389fb2?source=friends_link&sk=8f7a497acfcd0c81b291066020873abf" target="_blank">
-                <img src={imgIdea} rel="animations on a computer screen" />
-                <h3>The idea of the Web Developer</h3>
-          </a></div>
+    {articles.articles.map((item) => (
+    <div className="each-article" key={item.id}>
+            <img className="article-img" src={item.image} rel="article image" />
+                <div className="description">
+                    <h2>{item.title}</h2>
+                    <p>{item.description}</p>
+                <a href={item.url}
+                target="_blank" >
+                <img src={readMore} alt="read more" className="button read-more"/>
+                </a>
+            </div>
+        </div>
+         ))}
     </>
 )}

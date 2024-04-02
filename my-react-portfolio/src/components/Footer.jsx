@@ -1,4 +1,4 @@
-
+//for future use
 export const Footer = () => {
     return(
         <div className="footer">
