@@ -21,7 +21,8 @@ We will use [Vite](https://vitejs.dev/guide/) to setup our project 😉
 
 #### Follow this GIF to setup your project
 
-![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WEB/Sprint-2/week-8/vite-react_vjp0ep.gif)
+![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WE
+B/Sprint-2/week-8/vite-react_vjp0ep.gif)
 
 ## Installation
 

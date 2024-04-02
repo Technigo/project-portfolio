@@ -1,0 +1,76 @@
+.btncontainer{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  border-radius: 30px;
+  padding-right: 15px;
+}
+
+.btncontainer > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+.btncontainer > a > img {
+  margin-right: 7px;
+}
+
+.btncontainer > a > p{
+  color: #333333;
+  margin: 0;
+}
+
+.btncontainer:hover > a > img{
+  filter: invert(100%) brightness(100%)
+}
+
+.btncontainer:hover,
+.btncontainer:hover > a > p{
+  background-color: #0B24F5;
+  color: white;
+}
+
+.btnViewCode:hover,
+.btnViewCode:hover > a > p {
+  background-color: #eb5577;
+  color: white;
+}
+
+.arrowContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowDown {
+  animation: down 2s ease-in infinite;
+}
+
+.arrowUp {
+  animation: down 2s ease-in infinite;
+}
+
+@keyframes up {
+  0%,
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-400px);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-30px);
+  }
+  20%,
+  100% {
+    transform: translateY(0px);
+  }
+}

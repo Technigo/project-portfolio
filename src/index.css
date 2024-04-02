@@ -1,0 +1,81 @@
+:root {
+  font-family: Montserrat, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #333;
+  --blue: #0B24F5;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* MOBILE SCREENS MAX 745px------------------------------------------------------------ */
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.titleSection{
+  font-size: 56px;
+  text-align: center;
+  color: #0B25F5;
+}
+
+
+h2 {
+  font-size: 18px;
+}
+
+
+
+/* TABLET SCREENS 745px to 1281px------------------------------------------------------------ */
+
+@media (min-width:745px) and (max-width:1280px){
+  h1 {
+    grid-column: 2 / 6;
+    font-size: 56px;
+  }
+
+  body{
+    grid-template-columns: repeat (8, 1fr);
+    padding:32px;
+  }
+}
+
+/* TABLET SCREENS 1281px to 1513xp------------------------------------------------------------ */
+
+@media (min-width: 1281px) and (max-width: 1512px) {
+  h1 {
+    grid-column: 2 / 8;
+    font-size: 80px;
+  }
+
+  body{
+    grid-template-columns: repeat (12, 1fr);
+    padding:132px;
+  }
+}
+
+/* TABLET SCREENS MIN 1513xp------------------------------------------------------------ */
+
+@media (min-width: 1513px) {
+  h1 {
+    grid-column: 2 / 8;
+    font-size: 80px;
+  }
+
+  body{
+    grid-template-columns: repeat (12, 1fr);
+    padding:132px;
+  }
+}
