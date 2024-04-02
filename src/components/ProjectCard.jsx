@@ -21,7 +21,11 @@ export const ProjectCard = ({ repo }) => {
       <img src={mockupImage} alt="Mockup image" className="mockup-image" />
       <div className="project-content">
         <h3 className="project-name">{formattedProjectName}</h3>
-        <p className="project-description">{repo.description}</p>
+        <p className="project-description">
+          {repo.description
+            ? repo.description
+            : "A detailed description of this project is currently being crafted and will be available soon."}
+        </p>
         <div className="project-tags-container">
           {repo.topics.map((topic, index) => (
             <p key={index}>{topic}</p>
@@ -42,29 +46,27 @@ export const ProjectCard = ({ repo }) => {
   );
 };
 
-// import React from "react";
-// import "./ProjectCard.css";
-
-// export const ProjectCard = ({ repo }) => {
-//   // Replace "-" with an empty space in the project name
-//   const formattedProjectName = repo.name.replace(/-/g, " ");
-
 //   return (
 //     <div className="project-card-container">
-//       <h3 className="project-name">{formattedProjectName}</h3>
-//       <p className="project-description">{repo.description}</p>
-//       <div className="project-tags-container">
-//         {repo.topics.map((topic, index) => (
-//           <p key={index}>{topic}</p>
-//         ))}
-//       </div>
-//       <div className="button-container">
-//         <button>
-//           <a href={repo.homepage}>Live demo</a>
-//         </button>
-//         <button>
-//           <a href={repo.html_url}>View the code</a>
-//         </button>
+//       <img src={mockupImage} alt="Mockup image" className="mockup-image" />
+//       <div className="project-content">
+//         <h3 className="project-name">{formattedProjectName}</h3>
+//         <p className="project-description">{repo.description}</p>
+//         <div className="project-tags-container">
+//           {repo.topics.map((topic, index) => (
+//             <p key={index}>{topic}</p>
+//           ))}
+//         </div>
+//         <div className="button-container">
+//           <button onClick={handleLiveDemoClick}>
+//             <img src={livedemoIcon} alt="Live Demo Icon" className="icon" />
+//             Live demo
+//           </button>
+//           <button onClick={handleViewCodeClick}>
+//             <img src={githubIcon} alt="GitHub Icon" className="icon" />
+//             View the code
+//           </button>
+//         </div>
 //       </div>
 //     </div>
 //   );
