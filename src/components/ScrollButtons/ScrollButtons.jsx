@@ -37,7 +37,7 @@ export const ScrollUp = () => {
   };
 
   return (
-    <div className={styles.scrollUpContainer}>
+    <div>
       <a onClick={handleScrollUp}>
         <Lottie
           animationData={scrollUpAnimation}
