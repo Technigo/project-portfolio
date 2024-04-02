@@ -14,16 +14,16 @@ export const ProjectContent = ({
   return (
     <div className={styles.project}>
       <Images image={image} alt={name} />
-      <h3 className={styles.title}>{name}</h3>
-      <p className={styles.description}>{description}</p>
-      <div className={styles.tagsAndButtons}>
-        <span className={styles.tagContainer}>
+      <h3 className={styles.projectTitle}>{name}</h3>
+      <p className={styles.projectDescription}>{description}</p>
+      <div className={styles.projectTagsAndButtons}>
+        <span className={styles.projectTagContainer}>
           <ProjectTags tags={tags} />
         </span>
-        <div className={styles.buttons}>
+        <div className={styles.projectButtons}>
           <a
             href={liveDemoLink}
-            className={styles.link}
+            className={styles.projectLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -31,7 +31,7 @@ export const ProjectContent = ({
           </a>
           <a
             href={viewTheCodeLink}
-            className={styles.link}
+            className={styles.projectLink}
             target="_blank"
             rel="noopener noreferrer"
           >

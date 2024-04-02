@@ -4,14 +4,14 @@ import styles from "./About.module.css";
 
 export const About = () => {
   return (
-    <section className={styles.section}>
-      <div className={styles.headerContainer}>
+    <section className={styles.aboutSection}>
+      <div className={styles.aboutHeaderContainer}>
         <p className={styles.myName}>Hi! I am Mai Kanetaka</p>
         <h1 className={styles.frontend}>Frontend Developer</h1>
       </div>
-      <div className={styles.description}>
+      <div className={styles.aboutDescription}>
         <Profile />
-        <div className={styles.descriptionText}>
+        <div className={styles.aboutDescriptionText}>
           <p>
             As a marketing professional with a deep fascination for storytelling
             and SEO efficacy, my expertise lies in creating captivating content
