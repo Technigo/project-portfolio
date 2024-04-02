@@ -1,5 +1,5 @@
 import './Contact.css'
-import myImage from '../assets/image.me.png'
+import myImage from '/image.me.png'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import { FaStackOverflow } from 'react-icons/fa'

@@ -1,5 +1,5 @@
 import './Heading.css'
-import myImage from '../assets/image.me.png'
+import myImage from '/image.me.png'
 import { TbArrowNarrowDown } from 'react-icons/tb'
 
 export const Introduction = () => {
