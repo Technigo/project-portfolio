@@ -1,5 +1,5 @@
 .tech-container {
-  padding: 128px 16px 128px 16px;
+  padding: 128px 16px;
   background-color: var(--primary);
 }
 
@@ -8,4 +8,30 @@
   flex-direction: column;
   text-align: center;
   gap: 64px;
+}
+
+/* Media Queries  */
+/* --- Tablet --- */
+@media screen and (min-width: 745px) {
+  .tech-container {
+    padding: 256px 64px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tech-container {
+    padding: 256px 64px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tech-wrapper {
+    max-width: 820px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 124px;
+    text-align: start;
+  }
 }
