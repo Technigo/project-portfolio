@@ -7,4 +7,4 @@ This is an elaborate portfolio made in React using Vite. It primarily utilizes c
 This week, the main challenge was being sick for three days. I also had to deal with a delivery and begin working on the documentation for the comming week. 
 
 ## View it live
-Click [here](https://arnaus-react-portafolio.netlify.app/)
+[here](https://arnaus-react-portafolio.netlify.app/)
