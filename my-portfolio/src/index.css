@@ -61,7 +61,7 @@ li {
 }
 
 .skills-text-box li,
-h2 {
+.skills-container h2 {
   text-align: center;
 }
 
@@ -87,7 +87,6 @@ h2 {
 
 footer p {
   color: #fff;
-
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -126,6 +125,12 @@ ul {
   gap: 64px;
 }
 
+.skill-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
 .intro-header-box {
   display: flex;
   flex-direction: column;
@@ -154,6 +159,13 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.arrow-box {
+  display: flex;
+  justify-content: center;
+  height: 10px;
+  margin-top: 50px;
 }
 
 .tags-box {
@@ -194,35 +206,12 @@ footer {
   align-self: center;
 }
 
-.arrow-box {
-  display: flex;
-  justify-content: center;
-  height: 30px;
-  margin-top: 50px;
-}
-
 .arrow-icon {
   color: #70180a;
   width: 27px;
   height: 68px;
   align-self: center;
   animation: 2s bounce infinite;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
 }
 
 .repo-image {
@@ -291,11 +280,106 @@ a {
   animation: 100s slide infinite linear;
 }
 
+/* --------------- animations -------------- */
+
+/* footer text slide  */
 @keyframes slide {
   from {
     transform: translateX(100%);
   }
   to {
     transform: translateX(-100%);
+  }
+}
+
+/* bouncing key in the intro section */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive design */
+
+@media (min-width: 575px) {
+  .intro-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+    gap: 22px;
+    grid-template-areas:
+      "title title"
+      "profile-image intro-text"
+      "arrow arrow";
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  .intro-header-box {
+    grid-area: title;
+  }
+
+  .profile-img {
+    grid-area: profile-image;
+  }
+
+  .intro-title {
+    font-size: 52px;
+  }
+
+  .name-title {
+    font-size: 24px;
+  }
+
+  .arrow-box {
+    grid-area: arrow;
+    justify-self: center;
+    align-self: center;
+    margin-top: 150px;
+  }
+
+  .tech-container {
+    padding-top: 256px;
+    padding-bottom: 256px;
+  }
+
+  .tech-container p {
+    text-align: center;
+    width: 575px;
+  }
+  .repo-image {
+    width: 200px;
+    height: 280px;
+  }
+  .project-card {
+    flex-direction: row;
+  }
+
+  .project-card-desktop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectcard-textbox {
+    gap: 10px;
+  }
+
+  .button-container {
+    flex-direction: row;
+    margin-top: auto;
+  }
+
+  .skill-boxes {
+    flex-direction: row;
   }
 }

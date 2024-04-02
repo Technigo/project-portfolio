@@ -11,9 +11,11 @@ export const Skills = () => {
   return (
     <section className="skills-container">
       <Headline style="skills-title" title="Skills" />
-      <SkillsList skillsItems={codeSkills} skillsTitle="Code" />
-      <SkillsList skillsItems={toolBox} skillsTitle="Toolbox" />
-      <SkillsList skillsItems={upcomingSkills} skillsTitle="Upcoming" />
+      <div className="skill-boxes">
+        <SkillsList skillsItems={codeSkills} skillsTitle="Code" />
+        <SkillsList skillsItems={toolBox} skillsTitle="Toolbox" />
+        <SkillsList skillsItems={upcomingSkills} skillsTitle="Upcoming" />
+      </div>
     </section>
   );
 };
