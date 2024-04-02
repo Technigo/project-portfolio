@@ -6,10 +6,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
 .footerText{
   font-size: 26.038px;
   font-weight: 600;
   line-height: 37.874px; 
+
+  white-space: nowrap;
+  animation: scrollText 40s linear infinite;
+}
+
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* For Tablet Device */
+@media (min-width:667px) and (max-width:1024px) {
+
+}
+
+/* For Mobile Device */
+@media (max-width: 667px) {
+
 }

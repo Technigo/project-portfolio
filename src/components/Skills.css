@@ -10,7 +10,6 @@
 
 .skillContent{
   width: 1044px;
-  height: 488px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,14 +24,30 @@
   grid-template-columns: repeat(4,1fr);
 }  
 
+.skillSection{
+  width: fit-content;
+}
 
-
-
-
+.skillDetails p{
+  font-family: "Hind";
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
 
 /* For Tablet Device */
 @media (min-width:667px) and (max-width:1025px) {
- 
+  .skillContent{
+    width: 1044px;
+    gap: 64px;
+  }
+
+  .skillSections{
+    width: fit-content;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 64px;
+  } 
 }
 
 /* For Mobile Device */

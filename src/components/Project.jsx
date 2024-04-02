@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Project.css";
 import data from "../data.json";
-
-
-console.log(data);
+import live from "/assets/Live Demo.svg"
+import github from "/assets/github.svg"
 
 export const Project = () => {
 
@@ -18,13 +17,20 @@ export const Project = () => {
             
             <div className="techContainer">
               {e.technics.map(t=>(
-                <div className="technich">{t}</div>
+                <div className="technic">{t}</div>
               ))}
             </div>
             
             <div className="externalLink">
-              <a href={e.live_url} target="_blank"><button>Live Demo</button></a>
-              <a href={e.git_url} target="_blank"><button>View the code</button></a>
+              <button className="live">
+                <img src={live} alt="demo_live_logo" />
+                <a href={e.live_url} target="_blank">Live Demo</a>
+              </button>
+
+              <button className="viewCodes">
+                <img src={github} alt="github_logo" />
+                <a href={e.git_url} target="_blank">View the code</a>
+              </button>
             </div>
           </div>
         </div>

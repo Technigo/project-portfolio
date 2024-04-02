@@ -6,9 +6,7 @@ export const ProjectList=()=> {
   return (
     <div className="projects">
       <p className="titleBlue">Featured Projects</p>
-      
       <Project />
-      
     </div>
   )
 }
