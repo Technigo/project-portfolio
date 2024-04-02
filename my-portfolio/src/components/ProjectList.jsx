@@ -34,6 +34,7 @@ export const ProjectList = () => {
           <li key={gitHubRepo.id} className="project-card">
             <ProjectCard
               name={localRepo.name}
+              altText={localRepo.altText}
               gitHubLink={gitHubRepo.html_url}
               topics={gitHubRepo.topics}
               deployedLink={gitHubRepo.homepage}

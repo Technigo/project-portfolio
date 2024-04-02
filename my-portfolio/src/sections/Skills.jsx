@@ -6,7 +6,7 @@ export const Skills = () => {
 
   const toolBox = ["Visual Studio Code", "Postman", "GitHub", "Figma", "Slack"];
 
-  const upcomingSkills = ["Node.js"];
+  const upcomingSkills = ["Node.js", "MongoDB", "Express.js"];
 
   return (
     <section className="skills-container">

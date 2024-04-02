@@ -173,6 +173,7 @@ ul {
   gap: 4px;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 24px;
 }
 
 .contact-text-box {
@@ -277,7 +278,7 @@ a {
 
 .text-slide {
   white-space: nowrap;
-  animation: 100s slide infinite linear;
+  animation: 10s slide infinite linear;
 }
 
 /* --------------- animations -------------- */
@@ -285,10 +286,10 @@ a {
 /* footer text slide  */
 @keyframes slide {
   from {
-    transform: translateX(100%);
+    transform: translateX(25%);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-25%);
   }
 }
 
@@ -309,7 +310,7 @@ a {
   }
 }
 
-/* Responsive design */
+/* --------------- Responsive design --------------- */
 
 @media (min-width: 575px) {
   .intro-container {
@@ -357,10 +358,12 @@ a {
     text-align: center;
     width: 575px;
   }
+
   .repo-image {
     width: 200px;
     height: 280px;
   }
+
   .project-card {
     flex-direction: row;
   }
@@ -376,10 +379,77 @@ a {
 
   .button-container {
     flex-direction: row;
-    margin-top: auto;
   }
 
   .skill-boxes {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 750px) {
+  .intro-container {
+    grid-template-columns: 0.5fr 3fr;
+  }
+}
+
+@media (min-width: 1280px) {
+  .intro-container {
+    padding: 331px 161px 55px 161px;
+  }
+
+  .arrow-box {
+    margin-top: 250px;
+    margin-bottom: 0;
+  }
+
+  .tech-container {
+    flex-direction: row;
+    padding: 390px 161px;
+    gap: 124px;
+  }
+
+  .featured-projects-container {
+    padding: 128px 161px;
+    gap: 128px;
+  }
+
+  .tech-title,
+  .skills-title,
+  .contact-title,
+  .intro-title {
+    font-size: 80px;
+  }
+
+  .tech-container p,
+  .contact-container p {
+    font-size: 32px;
+  }
+
+  .repo-image {
+    width: 408px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .intro-container {
+    padding: 331px 234px;
+  }
+  .intro-title {
+    font-size: 80px;
+  }
+
+  .skills-container,
+  .contact-container {
+    padding: 128px 161px;
+  }
+
+  .project-list {
+    gap: 128px;
+  }
+
+  .skills-text-box h2,
+  .contact-text {
+    font-size: 32px;
   }
 }

@@ -1,10 +1,10 @@
 import { PropTypes } from "prop-types";
 import { Button } from "./Button.jsx";
 
-export const ProjectCard = ({ name, gitHubLink, topics, deployedLink, description, repoImage }) => {
+export const ProjectCard = ({ name, gitHubLink, topics, deployedLink, description, repoImage, altText }) => {
   return (
     <>
-      <img className="repo-image" src={repoImage} alt="displays the frontpage of the webpage" />
+      <img className="repo-image" src={repoImage} alt={altText} />
       <div className="project-card-desktop">
         <div className="projectcard-textbox">
           <h2>{name}</h2>
@@ -41,4 +41,5 @@ ProjectCard.propTypes = {
   deployedLink: PropTypes.string,
   repoImage: PropTypes.string,
   description: PropTypes.string,
+  altText: PropTypes.string,
 };
