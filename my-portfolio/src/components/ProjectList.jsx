@@ -30,9 +30,8 @@ export const ProjectList = () => {
     <ul className="project-list">
       {repoData.map((gitHubRepo) => {
         const localRepo = repoImages.find((img) => img.repoName === gitHubRepo.name);
-        console.log(localRepo);
         return (
-          <>
+          <div key={gitHubRepo.id}>
             <ProjectCard
               name={localRepo.name}
               gitHubLink={gitHubRepo.html_url}
@@ -41,7 +40,7 @@ export const ProjectList = () => {
               repoImage={localRepo.imageUrl}
               description={gitHubRepo.description}
             />
-          </>
+          </div>
         );
       })}
     </ul>

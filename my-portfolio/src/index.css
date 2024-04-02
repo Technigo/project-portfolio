@@ -2,7 +2,6 @@
   --header-font: Montserrat;
   --text-font: Hind;
   --primary-color: #27672a;
-  --secondary-color: #8b3d2d;
   --accent-color: #b33305;
 }
 
@@ -13,6 +12,8 @@
   font-size: 18px;
 }
 
+/* ----------------- Headers and Text --------------- */
+
 .intro-title {
   color: var(--primary-color);
   font-family: var(--header-font);
@@ -21,11 +22,19 @@
 }
 
 .tech-title,
-.skills-title {
+.skills-title,
+.project-list-title,
+.contact-title {
   text-align: center;
   font-family: var(--header-font);
   font-size: 56px;
   font-weight: 700;
+}
+
+.project-list-title,
+.contact-title {
+  color: var(--primary-color);
+  line-height: 66px;
 }
 
 .name-title {
@@ -33,17 +42,14 @@
   font-weight: 600;
 }
 
-.project-list-title {
-  color: var(--primary-color);
-  text-align: center;
-  font-family: var(--header-font);
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 66px;
-}
-
 h2 {
   font-family: var(--header-font);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.tech-container p {
+  font-family: var(--text-font);
   font-size: 24px;
   font-weight: 600;
 }
@@ -54,9 +60,47 @@ li {
   font-weight: 400;
 }
 
+.skills-text-box li,
+h2 {
+  text-align: center;
+}
+
+.skills-text-box h2 {
+  background-color: var(--accent-color);
+  padding: 1px 15px;
+}
+
+.tags-box p {
+  color: #fff;
+  background-color: #000;
+  font-family: var(--header-font);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 2px 6px;
+}
+
+.contact-text {
+  font-family: var(--header-font);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer p {
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 37.874px;
+}
+/* ----- Featured project and skills lists styling ----- */
+
 ul {
   list-style-type: none;
 }
+
+/* ------- Containers for the different sections ------- */
 
 .intro-container {
   display: flex;
@@ -65,11 +109,21 @@ ul {
   gap: 32px;
 }
 
-.profile-img {
-  width: 164px;
-  height: 164px;
-  border-radius: 164px;
-  align-self: center;
+.tech-container,
+.skills-container {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.tech-container,
+.skills-container,
+.featured-projects-container,
+.contact-container {
+  display: flex;
+  padding: 128px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
 }
 
 .intro-header-box {
@@ -80,46 +134,6 @@ ul {
 
 .intro-text-box {
   gap: 22px;
-}
-
-.arrow-icon {
-  color: #70180a;
-  width: 27px;
-  height: 68px;
-  align-self: center;
-}
-
-.tech-container,
-.skills-container {
-  display: flex;
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 128px 16px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 64px;
-}
-
-.tech-container p {
-  font-family: var(--text-font);
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.featured-projects-container {
-  display: flex;
-  padding: 128px 16px;
-  flex-direction: column;
-  align-items: center;
-  gap: 64px;
-}
-
-.repo-image {
-  height: 200px;
-  width: 100%;
-  border-bottom: 10px solid var(--primary-color);
-  border-left: 10px solid var(--primary-color);
 }
 
 .project-list {
@@ -149,14 +163,86 @@ ul {
   flex-wrap: wrap;
 }
 
-.tags-box p {
-  color: #fff;
-  background-color: #000;
-  font-family: var(--header-font);
-  font-size: 16px;
-  font-weight: 600;
-  padding: 2px 6px;
+.contact-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
+
+.platform-icons-container {
+  display: flex;
+  gap: 32px;
+}
+
+footer {
+  display: flex;
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 114px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* --------------- Images and icons --------------- */
+
+.profile-img {
+  width: 164px;
+  height: 164px;
+  border-radius: 164px;
+  align-self: center;
+}
+
+.arrow-box {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-top: 50px;
+}
+
+.arrow-icon {
+  color: #70180a;
+  width: 27px;
+  height: 68px;
+  align-self: center;
+  animation: 2s bounce infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.repo-image {
+  height: 200px;
+  width: 100%;
+  border-bottom: 10px solid var(--primary-color);
+  border-left: 10px solid var(--primary-color);
+}
+
+.wavy-border {
+  background: url("src/assets/icons/wavy-line.svg");
+  background-repeat: repeat;
+  background-size: 174px 11px;
+  position: relative;
+  top: 5px;
+  height: 11px;
+  width: 100%;
+}
+
+/* --------------- Buttons and a-tags --------------- */
 
 .github-button,
 .live-button {
@@ -195,21 +281,21 @@ a {
   filter: invert(100%) brightness(2);
 }
 
-.wavy-border {
-  background: url("src/assets/icons/wavy-line.svg");
-  background-repeat: repeat-x;
-  position: relative;
-  top: 15px;
-  height: 20px;
-  width: 100%;
+.platform-icons-container a:hover {
+  cursor: pointer;
+  filter: invert(100%);
 }
 
-.skills-text-box li,
-h2 {
-  text-align: center;
+.text-slide {
+  white-space: nowrap;
+  animation: 100s slide infinite linear;
 }
 
-.skills-text-box h2 {
-  background-color: var(--accent-color);
-  padding: 0 15px;
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }

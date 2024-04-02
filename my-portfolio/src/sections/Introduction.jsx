@@ -11,7 +11,9 @@ export const Introduction = () => {
       <div className="intro-text-box">
         <p>Presentational text</p>
       </div>
-      <img className="arrow-icon" src="src/assets/icons/arrow.svg" alt="an arrow" />
+      <div className="arrow-box">
+        <img className="arrow-icon" src="src/assets/icons/arrow.svg" alt="an arrow" />
+      </div>
     </section>
   );
 };

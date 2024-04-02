@@ -14,6 +14,6 @@ export const SkillsList = ({ skillsItems, skillsTitle }) => {
 };
 
 SkillsList.propTypes = {
-  skillsItems: PropTypes.string,
+  skillsItems: PropTypes.array,
   skillsTitle: PropTypes.string,
 };
