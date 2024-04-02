@@ -1,6 +1,6 @@
 import "./FeaturedProjects.css";
 import { Card } from "./Card";
-import { projects } from "/public/projects.json";
+import { projects } from "/src/projects.json";
 
 export const FeaturedProjects = () => {
   return (

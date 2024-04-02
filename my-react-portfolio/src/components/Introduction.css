@@ -1,10 +1,9 @@
 .introduction {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   border: 2px solid pink;
   height: 100vh;
-  padding: 332px 234px 63px 234px;
 }
 
 .introduction-box {
@@ -21,7 +20,11 @@
 .arrow {
   animation: arrowJump 1.5s infinite alternate-reverse;
   display: block;
-  margin: auto;
+  position: absolute;
+  
+  /* position arrow in the middle of the screen: */
+  left: calc(50vw - 14.5px);
+  bottom: 63px;
 }
 
 @keyframes arrowJump {
