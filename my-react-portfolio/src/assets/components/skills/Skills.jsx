@@ -1,4 +1,4 @@
-import { PageTopic } from "../smallComps/PageTopic"
+import {PageTopic} from "../PageTopic"
 import "./skills.css"
 
 export const Skills = () => {

@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import { ProjectWrapper } from "./ProjectWrapper";
-import { PageTopic } from "../smallComps/PageTopic";
+import { PageTopic } from "../PageTopic";
 
 
 export const FeaturedProjects = () => {
