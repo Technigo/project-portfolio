@@ -3,7 +3,7 @@ import { Headline } from "../components/Headline.jsx";
 export const Introduction = () => {
   return (
     <section className="intro-container">
-      <img className="profile-img" src="src/assets/profileImg.jpg" alt="profile image of Maja" />
+      <img className="profile-img" src="public/profileImg.jpg" alt="profile image of Maja" />
       <div className="intro-header-box">
         <Headline style="name-title" title="Hi, I'm Maja Schouenke" />
         <Headline style="intro-title" title="Frontend Developer" />
@@ -18,7 +18,7 @@ export const Introduction = () => {
         </p>
       </div>
       <div className="arrow-box">
-        <img className="arrow-icon" src="src/assets/icons/arrow.svg" alt="an arrow" />
+        <img className="arrow-icon" src="public/icons/arrow.svg" alt="an arrow" />
       </div>
     </section>
   );
