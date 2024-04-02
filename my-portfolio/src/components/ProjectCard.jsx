@@ -17,13 +17,13 @@ export const ProjectCard = ({ name, gitHubLink, topics, deployedLink, descriptio
         </div>
         <div className="button-container">
           <Button
-            buttonIcon="public/icons/live-icon.svg"
+            buttonIcon="icons/live-icon.svg"
             url={deployedLink}
             buttonStyle="live-button"
             buttonName="Live demo"
           />
           <Button
-            buttonIcon="public/icons/github-icon.svg"
+            buttonIcon="icons/github-icon.svg"
             url={gitHubLink}
             buttonStyle="github-button"
             buttonName="View the code"
