@@ -1,8 +1,7 @@
 .project-container {
 	display: flex;
 	flex-direction: column;
-	padding: 0 16px;
-	margin-bottom: 64px;
+	padding: 128px 16px;
 }
 
 .project-container > h2 {
@@ -12,4 +11,25 @@
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	color: var(--dark-accent);
+	margin: 0;
+}
+
+@media all and (min-width: 745px) {
+	.project-container {
+		padding: 128px 32px;
+	}
+
+	.project-container > h2 {
+		text-align: left;
+	}
+}
+
+@media all and (min-width: 1281px) {
+	.project-container {
+		padding: 128px 161px 124px 161px;
+	}
+
+	.project-container > h2 {
+		font-size: 80px;
+	}
 }

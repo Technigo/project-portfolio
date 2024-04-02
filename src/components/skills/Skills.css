@@ -1,5 +1,5 @@
 .skill-container {
-	display: inline-flex;
+	display: flex;
 	width: 100%;
 	padding: 128px 0 157px 0;
 	flex-direction: column;
@@ -13,54 +13,80 @@
 	font-family: "Montserrat", sans-serif;
 	font-size: 56px;
 	font-weight: 700;
+	margin: 0;
 }
 
 .skills-block {
 	display: flex;
 	flex-direction: column;
+	align-self: center;
+	text-align: center;
 }
 
-/* Had different color for the H3 but changed my mind. 
-Not the driest solution. But can still change when need to.*/
-.code-container > h3,
-.toolbox-container > h3,
-.upcoming-container > h3,
-.more-container > h3 {
-	background-color: var(--dark-accent);
+#skill-box > h3 {
 	font-size: 24px;
 	font-weight: 600;
 	color: var(--light-shade);
+	margin: 64px 0 0 0;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
 }
 
-#skill-container > ul {
+#skill-box > h3 span {
+	background-color: var(--dark-accent);
+}
+
+.skill-keywords > p {
 	list-style-type: none;
 	padding-inline-start: 0;
 	color: white;
 	font-weight: 400;
 	font-size: 18px;
+	font-family: "Hind", sans-serif;
+	line-height: 1.5;
+	margin: 0;
 }
 
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 745px) {
+	.skill-container {
+		padding: 128px 0 148px 0;
+	}
+
 	.skills-block {
 		flex-wrap: wrap;
 		flex-direction: row;
-		padding: 0 105px;
-		text-align: center;
+		padding: 0 150px;
+		text-align: left;
 		justify-content: space-around;
 	}
 
-	#skill-container {
-		margin: 0 25px;
+	#skill-box > h3 {
+		text-align: left;
+	}
+
+	#skill-box {
+		margin: 0;
+		width: 180px;
 	}
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1281px) {
 	.skills-block {
-		padding: 0 161px;
-		justify-content: space-around;
-		gap: 26px;
+		padding: 0;
+		justify-content: space-between;
+		gap: 180px;
+		align-items: flex-start;
 	}
-	#skill-container {
-		margin: 10px auto;
+	#skill-box {
+		margin-top: 128px;
+	}
+	.skill-container {
+		padding: 128px 161px;
+		width: 100vw;
+	}
+
+	#skill-box > h3 {
+		font-size: 32px;
+		margin: 0;
 	}
 }

@@ -14,12 +14,12 @@ export const ProjectButton = ({ githubURL1, homepage }) => {
 					<a href={buttonInfo.homepage} target='_blank'>
 						<button className='globe-btn'>
 							<GlobeIcon alt='Globe icon' />
-							<p>Live Demo</p>
+							<p>Live demo</p>
 						</button>
 					</a>
 				</div>
 				<div className='github-wrapper'>
-					<a href={buttonInfo.githubURL2} target='_blank'>
+					<a href={buttonInfo.githubURL2} role='link' target='_blank'>
 						<button className='github-btn'>
 							<GithubIcon alt='Github icon' />
 							<p>View the code</p>
