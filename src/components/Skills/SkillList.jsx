@@ -1,15 +1,18 @@
 import PropTypes from "prop-types";
+import styles from "./SkillList.module.css";
 
 export const SkillList = ({ name, skills }) => {
   return (
-    <>
-      <h3>{name}</h3>
-      <ul>
+    <div className={styles.skillListContainer}>
+      <h3 className={styles.skillListTitle}>{name}</h3>
+      <ul className={styles.skillList}>
         {skills.map((skill) => (
-          <li key={skill}>{skill}</li>
+          <li key={skill} className={styles.skillListItem}>
+            {skill}
+          </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 
