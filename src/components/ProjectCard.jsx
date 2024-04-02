@@ -2,7 +2,7 @@ import React from "react";
 import "./ProjectCard.css";
 import githubIcon from "../assets/images/github.svg";
 import livedemoIcon from "../assets/images/live-demo.svg";
-import mockupImage from "../assets/images/mockup-weather-app.png";
+import mockupImage from "../assets/images/default-project-image.png";
 
 export const ProjectCard = ({ repo }) => {
   // Replace "-" with an empty space in the project name
