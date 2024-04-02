@@ -3,7 +3,7 @@ import "./Photo.css";
 export const Photo = ({ source, color, size }) => {
   return (
     <div className="photo-wrapper">
-      <img src={source} className={`${color} ${size}`} alt="photo" />
+      <img src={source} className={`${color} ${size}`} alt="Project image" />
     </div>
   );
 };
