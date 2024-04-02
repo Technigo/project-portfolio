@@ -5,7 +5,7 @@ import "./Projects.css";
 
 // Projects component fetches data from the GitHub API and displays the projects in the portfolio.
 export const Projects = () => {
-  const [projects, setProjectList] = useState([]);
+  const [projectsList, setProjectList] = useState([]);
 
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
@@ -29,7 +29,7 @@ export const Projects = () => {
 
   // lets save bandwidth and makes the app faster and only get what we need from the API.
   //destructuring the data we need from the API response.
-  const projectObject = projects.map(({ id, name, html_url, description, language, created_at, updated_at, pushed_at, full_name, homepage, topics, stargazers_count }) => ({
+  const projectObject = projectsList.map(({ id, name, html_url, description, language, created_at, updated_at, pushed_at, full_name, homepage, topics, stargazers_count }) => ({
     id,
     name,
     html_url,

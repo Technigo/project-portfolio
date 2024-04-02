@@ -10,19 +10,22 @@
 	/*had to change the color of the design for this element (upcoming header) in order to pass the accessibility test (contrast in original design was not good enough)*/
 	--upcoming--bg-color: #4d9867;
 	--more--bg-color: #f2c94c;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 
-
-html,
-body {
+html{
 	margin: 0;
 	padding: 0;
-	background-color: var(--bg-color-bright);
+
 }
 
-
 body {
+	box-sizing: border-box;
+	background-color: var(--bg-color-bright);
 	color: var(--text-color);
 	font-family: hind-regular, sans-serif;
 	margin: 0 auto;
@@ -45,3 +48,5 @@ h6 {
 p {
 	font-family: "Hind", sans-serif;
 }
+
+

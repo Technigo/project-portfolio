@@ -7,19 +7,14 @@ export const Introduction = () => {
   const arrow = "../assets/Arrow.svg";
   const copy = "Frontend Developer with a background in Graphic design, UX/UI, Art Direction and with experience leading agile development projects as a scrum master. Passionate about creating web applications that not only looks good, but also are user-friendly and accessible. Always eager to learn new technologies and improve her skills."
   return (
-    <section className="center-wrap">
+    <section className= "center-wrap">
       <main className="wrapper">
         <section className="title">
-          <picture className="profile-image mobile">
-            <source srcSet={profileImage}
-              alt="Kathinka Sewell" type="image/webp" />
-            <source srcSet={profileImageBackUp}
-              alt="Kathinka Sewell" type="image/png" />
-            <img className="profile-image mobile"
-              src={profileImageBackUp}
-              alt="Kathinka Sewell"
-            />
-          </picture>
+        <picture className="profile-image mobile">
+    <source srcSet={profileImage} type="image/webp" />
+    <source srcSet={profileImageBackUp} type="image/png" />
+    <img className="profile-image mobile" src={profileImageBackUp} alt="Kathinka Sewell" />
+  </picture>
           <h1>Hi, I&apos;m Kathinka Sewell</h1>
           <h2>Frontend Developer</h2>
         </section>

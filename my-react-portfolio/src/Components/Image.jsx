@@ -6,15 +6,10 @@ const style ="profile-image";
 
 return (
   <picture className={style}>
-<source srcSet={profileImage}
-  alt="Kathinka Sewell" type="image/webp" />
-<source srcSet={profileImageBackUp}
-  alt="Kathinka Sewell" type="image/png" />
-<img className="profile-image wide"
-  src={profileImageBackUp}
-  alt="Kathinka Sewell"
-/>
-</picture>
+    <source srcSet={profileImage} type="image/webp" />
+    <source srcSet={profileImageBackUp} type="image/png" />
+    <img className="profile-image wide" src={profileImageBackUp} alt="Kathinka Sewell" />
+  </picture>
 )
 }
 
