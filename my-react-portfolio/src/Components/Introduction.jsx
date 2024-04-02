@@ -1,9 +1,9 @@
 import "./introduction.css";
 
 export const Introduction = () => {
-  const profileImage = "./public/assets/kat.webp";
-  const profileImageBackUp = "./public/assets/kat.webp";
-  const arrow = "./public/assets/Arrow.svg";
+  const profileImage = "../public/assets/kat.webp";
+  const profileImageBackUp = "../public/assets/kat.webp";
+  const arrow = "/public/assets/Arrow.svg";
   return (
     <section className="center-wrap">
       <main className="wrapper">
