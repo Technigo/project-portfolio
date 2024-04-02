@@ -15,6 +15,8 @@ export const Skills = () => {
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>Node.js</li>
+                        <li>Zustand</li>
+                        <li>&nbsp;</li>
                     </ul>
                 </div>
                 <div className="toolbox">
@@ -25,6 +27,8 @@ export const Skills = () => {
                         <li>Postman</li>
                         <li>Slack</li>
                         <li>Vs Code</li>
+                        <li>Netlify</li>
+                        <li>Canva</li>
                     </ul>
                 </div>
                 <div className="upcoming">
@@ -32,6 +36,8 @@ export const Skills = () => {
                     <ul>
                         <li>Wordpress</li>
                         <li><a href="https://idahcollin.wordpress.com/">Link to project</a></li>
+                        <li>Typescript</li>
+                        <li>&nbsp;</li>
                         <li>&nbsp;</li>
                         <li>&nbsp;</li>
                         <li>&nbsp;</li>
@@ -45,6 +51,8 @@ export const Skills = () => {
                         <li>Communication</li>
                         <li>Collaboration</li>
                         <li>Health dev.</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
                     </ul>
                 </div></div>
         </div>
