@@ -7,6 +7,7 @@ import { Contact } from "../Contact/Contact";
 import "./Portfolio.css";
 import projectImages from "./projectImages.json";
 import { TickerTapeBanner } from "../Contact/TickerTapeBanner";
+import arrowSvg from "/icons/arrow.svg";
 
 export const Portfolio = () => {
   const [error, setError] = useState(null);
@@ -80,6 +81,11 @@ export const Portfolio = () => {
           scrollToTechSection={scrollToTechSection}
           avatarUrl={avatarUrl}
         />{" "}
+        <div className="arrow-container">
+          <button onClick={scrollToTechSection}>
+            <img className="arrow" src={arrowSvg} alt="arrow icon" />
+          </button>
+        </div>
       </header>
       <main>
         <Tech techSectionRef={techSectionRef} />
