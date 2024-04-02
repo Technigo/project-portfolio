@@ -1,14 +1,14 @@
-import { Image } from "../../components/ImageElements/TempName";
 import linkedinSocialSvg from "/icons/linkedin-social.svg";
 import githubSocialSvg from "/icons/github-social.svg";
 import "./Contact.css";
 import PropTypes from "prop-types";
+import { ImageComponent } from "../../components/ImageComponents/ImageComponent";
 
 export const Contact = ({ avatarUrl }) => {
   return (
     <section className="contact-container">
       <h2>Let&apos;s talk</h2>
-      <Image
+      <ImageComponent
         divClassName={"profile-image"}
         elementClassName={"circle-image"}
         imagePath={avatarUrl}
@@ -37,7 +37,7 @@ export const Contact = ({ avatarUrl }) => {
           rel=" noopener noreferrer"
           target="_blank"
         >
-          <Image
+          <ImageComponent
             divClassName={"icon-box"}
             elementClassName={"icon"}
             imagePath={linkedinSocialSvg}
@@ -49,7 +49,7 @@ export const Contact = ({ avatarUrl }) => {
           rel=" noopener noreferrer"
           target="_blank"
         >
-          <Image
+          <ImageComponent
             divClassName={"icon-box"}
             elementClassName={"icon"}
             imagePath={githubSocialSvg}

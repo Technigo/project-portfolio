@@ -1,4 +1,3 @@
-import { Image } from "../../components/ImageElements/TempName";
 import { TagText } from "../../components/TextElements/TagText";
 import { Button } from "../../components/FormElements/Button";
 import { Subheading } from "../../components/TextElements/Subheading";
@@ -6,6 +5,7 @@ import { NormalText } from "../../components/TextElements/NormalText";
 import githubPng from "/icons/github.png";
 import liveDemoPng from "/icons/live-demo.png";
 import PropTypes from "prop-types";
+import { ImageComponent } from "../../components/ImageComponents/ImageComponent";
 
 export const ProjectCard = ({ project }) => {
   // Define the function to render tags
@@ -18,7 +18,7 @@ export const ProjectCard = ({ project }) => {
   return (
     <article className="project-card">
       {/* Render the image */}
-      <Image
+      <ImageComponent
         divClassName={"image"}
         elementClassName={"square-image"} // Set the class for the image element itself
         imagePath={project.imagePath} // Pass the image path from the project data

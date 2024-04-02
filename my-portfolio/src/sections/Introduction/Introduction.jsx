@@ -2,7 +2,7 @@ import "./Introduction.css";
 import { Subheading } from "../../components/TextElements/Subheading";
 import arrowSvg from "/icons/arrow.svg";
 import { NormalText } from "../../components/TextElements/NormalText";
-import { Image } from "../../components/ImageElements/TempName";
+import { ImageComponent } from "../../components/ImageComponents/ImageComponent";
 import PropTypes from "prop-types";
 
 export const Introduction = ({ avatarUrl, scrollToTechSection }) => {
@@ -11,7 +11,7 @@ export const Introduction = ({ avatarUrl, scrollToTechSection }) => {
 
   return (
     <section className="introduction-container">
-      <Image
+      <ImageComponent
         divClassName={"profile-image"}
         elementClassName={"circle-image"}
         imagePath={avatarUrl}

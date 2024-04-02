@@ -1,7 +1,7 @@
 import "./Image.css";
 import PropTypes from "prop-types";
 
-export const Image = ({
+export const ImageComponent = ({
   divClassName,
   elementClassName,
   imagePath,
@@ -15,7 +15,7 @@ export const Image = ({
 };
 
 // Prop type validation
-Image.propTypes = {
+ImageComponent.propTypes = {
   divClassName: PropTypes.string,
   elementClassName: PropTypes.string,
   imagePath: PropTypes.string.isRequired,
