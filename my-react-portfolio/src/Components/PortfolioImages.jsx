@@ -32,7 +32,7 @@ export const PortfolioImages = [
     name: "project-chatbot",
     prettyname: "Bobatea Chatbot",
     url: "../public/assets/Projectimages/bobateabot.png",
-    webp: "../public/assetsPprojectimages/bobateabot.webp",
+    webp: "../public/assets/Projectimages/bobateabot.webp",
   },
   {
     id: 752318308,
