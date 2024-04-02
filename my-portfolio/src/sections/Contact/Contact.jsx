@@ -1,4 +1,4 @@
-import { Image } from "../../components/ImageElements/Image";
+import { Image } from "../../components/ImageElements/TempName";
 import linkedinSocialSvg from "/icons/linkedin-social.svg";
 import githubSocialSvg from "/icons/github-social.svg";
 import "./Contact.css";

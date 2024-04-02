@@ -1,4 +1,4 @@
-import { Image } from "../../components/ImageElements/Image";
+import { Image } from "../../components/ImageElements/TempName";
 import { TagText } from "../../components/TextElements/TagText";
 import { Button } from "../../components/FormElements/Button";
 import { Subheading } from "../../components/TextElements/Subheading";

@@ -2,7 +2,7 @@ import "./Introduction.css";
 import { Subheading } from "../../components/TextElements/Subheading";
 import arrowSvg from "/icons/arrow.svg";
 import { NormalText } from "../../components/TextElements/NormalText";
-import { Image } from "../../components/ImageElements/Image";
+import { Image } from "../../components/ImageElements/TempName";
 import PropTypes from "prop-types";
 
 export const Introduction = ({ avatarUrl, scrollToTechSection }) => {
