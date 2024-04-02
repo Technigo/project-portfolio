@@ -4,7 +4,7 @@ export const Introduction = () => {
   const profileImage = "../assets/kat.webp";
   const profileImageBackUp = "../assets/kat.webp";
   const arrow = "../assets/Arrow.svg";
-  const copy = "Frontend Developer with a background in Graphic design, UX/UI, Art Direction and with experience leading agile development projects as a scrum master. Passionate about creating web applications that not only looks good, but also is user-friendly and accessible. Always eager to learn new technologies and improve her skills."
+  const copy = "Frontend Developer with a background in Graphic design, UX/UI, Art Direction and with experience leading agile development projects as a scrum master. Passionate about creating web applications that not only looks good, but also are user-friendly and accessible. Always eager to learn new technologies and improve her skills."
   return (
     <section className="center-wrap">
       <main className="wrapper">
