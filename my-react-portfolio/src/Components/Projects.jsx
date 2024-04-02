@@ -63,7 +63,7 @@ export const Projects = () => {
                 <div className="project" key={id}>
                   {/* comparing the Ids in PortofolioImages with the Ids in the API response to get the correct image for each project.
               */}
-                  <picture className="project-image">
+                  <picture className="border" >
                     <source srcSet={PortfolioImages.find((image) => image.id === id)?.webp}
                       alt={name} type="image/webp" />
                     <source srcSet={PortfolioImages.find((image) => image.id === id)?.url}

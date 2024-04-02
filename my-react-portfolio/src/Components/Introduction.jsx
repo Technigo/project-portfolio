@@ -1,4 +1,5 @@
 import "./introduction.css";
+import { Image } from "./Image";
 
 export const Introduction = () => {
   const profileImage = "../assets/kat.webp";
@@ -22,17 +23,8 @@ export const Introduction = () => {
           <h1>Hi, I&apos;m Kathinka Sewell</h1>
           <h2>Frontend Developer</h2>
         </section>
-        <section className="introduction">
-          <picture className="profile-image wide">
-            <source srcSet={profileImage}
-              alt="Kathinka Sewell" type="image/webp" />
-            <source srcSet={profileImageBackUp}
-              alt="Kathinka Sewell" type="image/png" />
-            <img className="profile-image wide"
-              src={profileImageBackUp}
-              alt="Kathinka Sewell"
-            />
-          </picture>
+        <section className="introduction wide">
+          <Image/>
           <article className="intro">
             <p>
               {copy}

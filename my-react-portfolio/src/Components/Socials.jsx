@@ -28,7 +28,7 @@ export const Socials = [
 
   },
   {
-    id: 5,
+    id: 55,
     name: "Stack Overflow",
     url: "https://stackoverflowteams.com/c/technigo/users/618/",
     img: "../assets/Buttons/stackoverflow.svg",
@@ -39,7 +39,7 @@ export const Socials = [
     name: "Signal",
     url: "https://signal.group/#CjQKICPHNkxUx9QIRTLvq-vqwOgbrod_YAr0AgNEDGGvT-S4EhDMQTziEtbeh_IAT3ghFQxp",
     img: "../assets/Buttons/signal-black.svg",
-   
+
   }
 
 

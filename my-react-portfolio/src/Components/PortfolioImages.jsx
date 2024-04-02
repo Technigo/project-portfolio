@@ -46,7 +46,7 @@ export const PortfolioImages = [
     name: "project-news-site",
     prettyname: "Veganomnomicon",
     url: "../assets/Projectimages/Veganomnomicon.png",
-    webp: "../assets/projectimages/Veganomnomicon.webp",
+    webp: "../assets/Projectimages/Veganomnomicon.webp",
   },
   {
     id: 759483271,
