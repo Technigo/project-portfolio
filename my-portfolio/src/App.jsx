@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Portfolio } from "./sections/Portfolio/Portfolio";
 import "./sections/Portfolio/Portfolio.css";
 
