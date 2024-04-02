@@ -6,6 +6,7 @@ import { Skills } from "../Skills/Skills";
 import { Contact } from "../Contact/Contact";
 import "./Portfolio.css";
 import projectImages from "./projectImages.json";
+import { TickerTapeBanner } from "../Contact/TickerTapeBanner";
 
 export const Portfolio = () => {
   const [error, setError] = useState(null);
@@ -80,10 +81,18 @@ export const Portfolio = () => {
           avatarUrl={avatarUrl}
         />{" "}
       </header>
-      <Tech techSectionRef={techSectionRef} />
-      <FeaturedProjects projects={projects} showAllProjects={showAllProjects} />
-      <Skills />
-      <Contact avatarUrl={avatarUrl} />
+      <main>
+        <Tech techSectionRef={techSectionRef} />
+        <FeaturedProjects
+          projects={projects}
+          showAllProjects={showAllProjects}
+        />
+        <Skills />
+      </main>
+      <footer>
+        <Contact avatarUrl={avatarUrl} />
+        <TickerTapeBanner />
+      </footer>
     </div>
   );
 };
