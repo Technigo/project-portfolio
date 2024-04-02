@@ -13,13 +13,19 @@ export const Introduction = () => {
           <div className="imageAndIntro">
             <ProfilePhoto />
             <article className="dev-intro">
-              I am a frontend developer with a background in healthcare. I have
-              a passion for learning new skills and being creative. I enjoy
-              taking on challenges because I believe they help me grow and
-              become stronger. My hospital experience taught me how to handle
-              stress and pay attention to detail. I particularly enjoy working
-              in teams and creating things together. To me, coding is like magic
-              and it&apos;s incredibly fun.
+              with a background in healthcare, passionate
+              about challenges, flowers and all the colourful creations🎨
+              <br />
+              I&apos;m someone who thrives on challenges and embraces new
+              experiences. From my
+              background in healthcare, I&apos;ve honed valuable skills such as
+              communication, resilience and attention to detail, which I now
+              apply to my coding endeavours. <br/>
+              Collaborating within teams and solving complex problems energies
+              me, and I find immense joy in the transformative power of coding.
+              Each line of code represents a new possibility, and I&apos;m
+              passionate about leveraging this tool to unleash creativity and
+              drive positive change🌻
             </article>
           </div>
         </div>
