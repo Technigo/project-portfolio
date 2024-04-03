@@ -34,7 +34,8 @@
 .intro-content {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
 }
 
 .intro-content div {
@@ -48,12 +49,13 @@
   display: flex;
   max-width: 800px;
   margin: 0 auto;
+  margin-left: 30px;
 }
 
 @media screen and (max-width: 576px) {
   .profile-pic {
-    margin-bottom: 20px; /* Adjust spacing between image and title */
-    order: -1; /* Move the profile image to the top */
+    margin-bottom: 20px;
+    margin-right: 20px;
   }
 
   .intro-title {
@@ -61,22 +63,22 @@
   }
 
   .intro-title h2 {
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  .intro-content p {
+    align-items: center;
+    font-size: 15px;
+    max-width: 300px;
+  }
+
+  .homescreen-title {
+    font-size: 29px;
   }
 
   .intro-content {
+    flex-direction: column;
     align-items: center;
-  }
-}
-
-@media screen and (min-width: 577px) {
-  .intro-content {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .profile-pic {
-    margin-right: 20px;
   }
 }
 
@@ -91,6 +93,16 @@
 
   .intro-content p {
     font-size: 18px;
-    max-width: 600px;
+    max-width: 500px;
+  }
+
+  .intro-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #0b24f5;
+  }
+
+  .intro-title h2 {
+    font-size: 18px;
   }
 }
