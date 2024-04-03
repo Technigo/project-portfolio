@@ -18,8 +18,8 @@ export const App = () => {
         <MyWords />
         <Skills />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
-  )
+  );
 }
