@@ -1,5 +1,6 @@
 import { ProjectList } from "../components/ProjectList.jsx";
 import { Headline } from "../components/Headline.jsx";
+import "./FeaturedProjects.css";
 
 export const FeaturedProjects = () => {
   return (

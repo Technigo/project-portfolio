@@ -1,4 +1,5 @@
 import { Headline } from "../components/Headline.jsx";
+import "./Introduction.css";
 
 export const Introduction = () => {
   return (
@@ -18,7 +19,9 @@ export const Introduction = () => {
             I&apos;m able to do the things I really like to do - be creative, organise and create reliable methods.
           </p>
         </div>
-        <img className="arrow-icon" src="icons/arrow.svg" alt="an arrow" />
+        <div className="arrow-box">
+          <img className="arrow-icon" src="icons/arrow.svg" alt="an arrow" />
+        </div>
       </section>
     </div>
   );

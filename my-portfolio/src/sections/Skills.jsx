@@ -1,5 +1,6 @@
 import { Headline } from "../components/Headline.jsx";
 import { SkillsList } from "../components/SkillsList.jsx";
+import "./Skills.css";
 
 export const Skills = () => {
   const codeSkills = ["HTML5", "CSS3", "JavaScript", "React"];

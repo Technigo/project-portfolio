@@ -1,4 +1,5 @@
 import { Headline } from "../components/Headline.jsx";
+import "./Tech.css";
 
 export const Tech = () => {
   return (
