@@ -1,4 +1,4 @@
-.Card-box {
+.card-box {
   display: flex;
   flex-direction: row;
   gap: 16px;
@@ -33,4 +33,21 @@
 .button-wrapper {
   display: flex;
   gap: 32px;
+}
+
+@media (max-width: 600px) {
+  .card-box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .button-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .project-info-wrapper {
+    gap: 24px;
+  }
 }

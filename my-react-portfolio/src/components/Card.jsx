@@ -12,7 +12,7 @@ export const Card = ({
   githubUrl,
 }) => {
   return (
-    <div className="Card-box">
+    <div className="card-box">
       <Photo source={image} color="blue" size="small" />
       <div className="project-info-wrapper">
         <div className="description-and-tags">

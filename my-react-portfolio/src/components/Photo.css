@@ -7,7 +7,22 @@
   border-left: 10px solid blue;
 }
 
-.small {
-  width: 408px;
-  height: 280px;
+@media (min-width: 1025px) {
+  .small {
+    width: 408px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .small {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .small {
+    width: 100%
+  }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   height: 100vh;
-  padding: 128px 234px;
+  padding: 16px 32px;
 }
 
 .lets-talk-box {
@@ -13,6 +13,13 @@
   gap: 128px;
   width: 1044px;
   margin: auto;
+}
+
+.lets-talk-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
 }
 
 h1 {
@@ -38,4 +45,16 @@ a {
 
 a:hover {
   color: black;
+}
+
+@media (max-width: 1024px) {
+  .lets-talk-box {
+    gap: 64px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-info h2 {
+    font-size: 18px;
+  }
 }

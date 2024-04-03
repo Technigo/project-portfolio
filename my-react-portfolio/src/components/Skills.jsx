@@ -46,6 +46,8 @@ export const Skills = () => {
             </h2>
             <ul>
               <li>Agile methodology</li>
+              <li>Accessibility</li>
+              <li>Mob programming</li>
             </ul>
           </div>
         </div>

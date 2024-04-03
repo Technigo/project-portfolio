@@ -1,5 +1,8 @@
 .featured-projects {
-  padding: 128px 234px 124px 234px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 128px 50px;
 }
 
 .featured-projects-box {
@@ -8,5 +11,21 @@
   align-items: center;
   gap: 128px;
   max-width: 1044px;
-  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .featured-projects {
+    padding: 128px 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-projects-box {
+    gap: 64px;
+  }
+
+  .featured-projects-box h1 {
+    text-align: center;
+    line-height: 66px;
+  }
 }

@@ -14,7 +14,7 @@ const App = () => {
       <FeaturedProjects />
       <Skills />
       <LetsTalk />
-      <TickerTape />
+      {/* <TickerTape /> */}
     </>
   );
 };

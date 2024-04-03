@@ -22,16 +22,6 @@
   grid-column: 1 / span 2;
 }
 
-.profile-picture {
-  align-self: center;
-  grid-row: 3;
-  width: 164px;
-  height: 164px;
-  border-radius: 82px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
 .introduction-text {
   align-self: center;
 }
@@ -52,22 +42,25 @@
   }
 }
 
-/* Media queries for phone : */
-@media (max-width: 660px) {
-  .introduction-box {
-    margin: 16px;
-  }
+/* MEDIA QUERIES */
 
+@media (max-width: 768px) {
   .introduction-box {
     display: flex;
     flex-direction: column;
+    margin: 32px;
   }
 
-  .profile-picture {
+  .introduction-box h1 {
+    font-size: 32px;
+  }
+
+  .introduction-box h2 {
+    font-size: 18px;
+  }
+
+  .introduction-box .profile-picture {
     grid-column: 1;
-  }
-
-  .profile-picture {
     margin-bottom: 32px;
   }
 
@@ -76,8 +69,12 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .arrow {
     bottom: -20px;
   }
+}
+
+/* Media queries for phone : */
+@media (max-width: 660px) {
 }
