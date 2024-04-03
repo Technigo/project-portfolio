@@ -2,14 +2,16 @@ import { PropTypes } from "prop-types";
 
 export const SkillsList = ({ skillsItems, skillsTitle }) => {
   return (
-    <div className="skills-text-box">
-      <h2>{skillsTitle}</h2>
+    <>
+      <div className="skill-list-title-box">
+        <h2>{skillsTitle}</h2>
+      </div>
       <ul>
         {skillsItems.map((skill, index) => (
           <li key={index}>{skill}</li>
         ))}
       </ul>
-    </div>
+    </>
   );
 };
 

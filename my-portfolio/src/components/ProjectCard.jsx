@@ -5,16 +5,24 @@ export const ProjectCard = ({ name, gitHubLink, topics, deployedLink, descriptio
   return (
     <>
       <img className="repo-image" src={repoImage} alt={altText} />
-      <div className="project-card-desktop">
-        <div className="projectcard-textbox">
+      {/* <div className="project-card-desktop"> */}
+      <div className="projectcard-content-container">
+        <div className="projectcard-text-container">
           <h2>{name}</h2>
           <p>{description}</p>
-          <div className="tags-box">
+          <div className="tags-container">
             {topics.map((tag) => {
-              return <p key={tag}>{tag}</p>;
+              return (
+                <>
+                  <div className="tag-box">
+                    <p key={tag}>{tag}</p>
+                  </div>
+                </>
+              );
             })}
           </div>
         </div>
+
         <div className="button-container">
           <Button
             buttonIcon="icons/live-icon.svg"
@@ -30,6 +38,7 @@ export const ProjectCard = ({ name, gitHubLink, topics, deployedLink, descriptio
           />
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 };

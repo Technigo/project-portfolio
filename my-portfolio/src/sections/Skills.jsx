@@ -9,13 +9,22 @@ export const Skills = () => {
   const upcomingSkills = ["Node.js", "MongoDB", "Express.js"];
 
   return (
-    <section className="skills-container">
-      <Headline style="skills-title" title="Skills" />
-      <div className="skill-boxes">
-        <SkillsList skillsItems={codeSkills} skillsTitle="Code" />
-        <SkillsList skillsItems={toolBox} skillsTitle="Toolbox" />
-        <SkillsList skillsItems={upcomingSkills} skillsTitle="Upcoming" />
+    <>
+      <div className="wavy-border"></div>
+      <div className="skills-container">
+        <section className="skills-content-container">
+          <Headline style="skills-title" title="Skills" />
+          <div className="skill-box">
+            <SkillsList skillsItems={codeSkills} skillsTitle="Code" />
+          </div>
+          <div className="skill-box">
+            <SkillsList skillsItems={toolBox} skillsTitle="Toolbox" />
+          </div>
+          <div className="skill-box">
+            <SkillsList skillsItems={upcomingSkills} skillsTitle="Upcoming" />
+          </div>
+        </section>
       </div>
-    </section>
+    </>
   );
 };

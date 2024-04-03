@@ -7,13 +7,13 @@ import { Tech } from "./sections/Tech.jsx";
 
 export const App = () => {
   return (
-    <>
+    <div className="outer-container">
       <Introduction />
       <Tech />
       <FeaturedProjects />
       <Skills />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
