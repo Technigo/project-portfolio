@@ -13,7 +13,7 @@ export const ArticleCard = ({ article }) => {
           {article.image && <img src={article.image} alt="article-image" />}
         </div>
         <span>{formatDate(article.pubDate)}</span>
-        <h2>{article.title}</h2>
+        <h2 className="articleTile">{article.title}</h2>
         <p>{article.description}</p>
         <button id="articleBtn">
           <a href={article.link}>
