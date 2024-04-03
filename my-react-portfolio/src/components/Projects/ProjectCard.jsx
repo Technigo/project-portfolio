@@ -35,7 +35,7 @@ export const ProjectCard = () => {
                 rel="noopener noreferrer"
               >
                 <button>
-                  <img src="src/assets/live.png" alt="GitHub" />
+                  <img src="src/assets/github.png" alt="GitHub" />
                   {project.buttonText2}
                 </button>
               </a>
