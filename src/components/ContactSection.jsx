@@ -1,14 +1,13 @@
 import profilePic from "../assets/profile_pic.jpg"
-import githubIcon from "../assets/Btn-github.svg"
-import IconLinkedin from "../assets/Btn-linkedin.svg"
-import IconStackoverflow from "../assets/Btn-stackoverflow.svg"
-import IconTwitter from "../assets/Btn-twitter.svg"
+import githubIcon from "../assets/Icon-github.svg"
+import IconLinkedin from "../assets/Icon-linkedin.svg"
+import IconStackoverflow from "../assets/Icon-stackoverflow.svg"
 import styles from "./ContactSection.module.css"
 
 export const ContactSection = () => {
   return (
   <div className={styles.contactSection}>
-    <h1 className="titleSection">Let's talk</h1>
+    <h1 className="section-title">Let's talk</h1>
     <img className={styles.profilepic} src={profilePic} width="150" alt="profile-picuture"/>
     <h2>Arnau Vidal</h2>
     <h2>+46(0)063123345</h2>

@@ -1,9 +1,9 @@
 .project {
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  padding: 16px 16px;
-  gap: 32px 16px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 128px auto;
+  gap: 37px;
 }
 
 .project > h2{  
@@ -15,7 +15,7 @@
 }
 
 .featuredImg{
-  height: 200px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   border-bottom: 10px solid #0B24F5;
@@ -30,7 +30,6 @@
 .project > h2,
 .project > div,
 .project > p {
-  grid-column: 1 / 5;
   margin: 0;
 }
 
@@ -48,4 +47,51 @@
   padding: 2px 6px;
   color: white;
   background-color: black;
+}
+
+/* TABLET SCREENS max 745px ------------------------------------------------------------ */
+
+@media (max-width:745px){ 
+  .project {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 16px;
+    gap: 32px 16px;
+    margin: 0;
+  }
+}
+
+/* TABLET SCREENS 745px to 1281px------------------------------------------------------------ */
+
+@media (min-width:746px) and (max-width:1280px){
+  .project{
+    max-width: 700px;
+    margin: 64px auto;
+  }
+  
+  .featuredImg{
+    height: 300px;
+    width: 200px;
+  }
+
+  .project h2 {
+    font-size: 32px;
+    margin-top: 0;
+  }
+}
+
+/* SCREENS min 1281px ------------------------------------------------------------ */
+
+@media (min-width: 1281px) {
+  .featuredImg{
+    height: 280px;
+    width: 408px;
+    object-fit: fill; 
+  }
+  
+  .project h2 {
+    font-size: 32px;
+    margin-top: 0;
+  }
 }

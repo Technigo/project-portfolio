@@ -1,28 +1,67 @@
 .tech {
-  display: grid;
-  grid-template-columns: repeat (4 1fr);
   padding: 128px 16px;
   gap: 32px 16px;
-  background-color: #0B24F5;
   color: white;
 }
 
 .tech > h1{
-  color: #ffffff;
+  color: white;
+}
+
+.tech > p {
+  margin: 0;
 }
 
 .tech > p{
   font-size: 24px;
 }
 
-.tech > h1,
-.tech > p {
-  grid-column: 1 / 5;
-  margin: 0;
+/* TABLET SCREENS max 745px ------------------------------------------------------------ */
+
+@media (max-width:745px){ 
+
 }
 
-.tech > div > h1 {
-  color: #0B24F5;
-  grid-column: 1 / 5;
+/* TABLET SCREENS 745px to 1281px------------------------------------------------------------ */
+
+@media (min-width:746px) and (max-width:1280px){
+  .tech{
+    padding:128px 32px;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .tech h1 {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .tech > p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* SCREENS 1281px to 1513xp------------------------------------------------------------ */
+
+@media (min-width: 1281px) {
+  .tech{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    padding:332px 0px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .tech > h1,
+  .tech > p {
+    margin: 0;
+  }
+
+  .tech h1 {
+    font-size: 80px;
+  }
 }
 
