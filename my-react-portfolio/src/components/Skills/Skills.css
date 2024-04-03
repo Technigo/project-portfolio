@@ -1,0 +1,63 @@
+.skills-section {
+  width: 100%;
+  height: auto;
+  background-color: #9cafaa;
+}
+
+.skills-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills-heading h1 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.skills-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.skill-category h2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0;
+  background-color: black;
+  display: inline-block;
+  padding: 2px 3px;
+}
+
+.skill-category p {
+  font-family: "Mulish", sans-serif;
+  font-size: 12px;
+  white-space: pre-line;
+  margin-top: 10px;
+}
+
+/* Media query */
+/* Screens up to 480px */
+@media screen and (max-width: 480px) {
+  .skills-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Screens up to 1000px */
+@media screen and (max-width: 1000px) {
+  .skills-cards {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+}

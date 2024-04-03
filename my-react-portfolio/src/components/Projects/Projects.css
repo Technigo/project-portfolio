@@ -1,0 +1,171 @@
+/* Styling relative to Projects.jsx */
+.project-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.project-container {
+  width: 800px;
+}
+
+.project-heading {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.project-heading h1 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 50px;
+  color: #3f4b3f;
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+/* Styling relative to ProjectCard.jsx */
+.project-card {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.project-image {
+  width: 270px;
+  height: 160px;
+  border-left: 10px solid #3f4b3f;
+  border-bottom: 10px solid #3f4b3f;
+}
+
+.content-container {
+  flex: 1;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.content-container h2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 22px;
+  padding-top: 3px;
+}
+
+.content-container p {
+  font-family: "Mulish", sans-serif;
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+.tag {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 1px 3px;
+  margin-right: 3px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.buttons-container button {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  font-family: "Mulish", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000000;
+  border: none;
+  margin-top: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #f1f1f1;
+}
+
+.buttons-container button:hover {
+  text-decoration-color: #e3e3e3;
+  background-color: #e3e3e3;
+}
+
+.buttons-container button img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border: none;
+}
+
+/* Media query */
+/* Screens up to 480px */
+@media (max-width: 480px) {
+  .project-section {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .project-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .project-heading h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .content-container {
+    width: 270px;
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .buttons-container {
+    display: block;
+  }
+
+  .buttons-container button {
+    margin-top: 5px;
+  }
+}
+
+/* Screens up to 1000px */
+@media (max-width: 1000px) {
+  .project-section {
+    height: auto;
+  }
+
+  .project-container {
+    width: 700px;
+  }
+
+  .project-heading {
+    margin-bottom: 30px;
+  }
+
+  .project-image {
+    width: 270px;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .content-container {
+    height: 190px;
+    padding-bottom: 20px;
+  }
+}

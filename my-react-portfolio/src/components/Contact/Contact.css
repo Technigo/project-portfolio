@@ -1,0 +1,109 @@
+.contact-section {
+  width: 100%;
+  height: auto;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-heading {
+  padding-top: 30px;
+}
+
+.contact-heading h1 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 50px;
+  color: #9cafaa;
+}
+
+.contact-content {
+  text-align: center;
+  height: 330px;
+}
+
+.contact-content img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.contact-content p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  white-space: pre-line;
+  margin-bottom: -15px;
+}
+
+.social-icons {
+  margin-top: 50px;
+  color: #cbcbcb;
+}
+
+.social-icons > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-icons > *:hover {
+  color: #7e7e7e;
+  cursor: pointer;
+}
+
+/* Styling footer */
+.footer {
+  background-color: #3f4b3f;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px;
+  height: 20px; 
+  overflow: hidden; 
+}
+
+.marquee-section {
+  position: relative;
+  min-height: 82px;
+}
+
+.marquee-section,
+.marquee-section * {
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+}
+
+.marquee-div {
+  position: absolute;
+  animation: move-left-to-right linear 12.5s infinite;
+}
+
+@keyframes move-left-to-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-right-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Media query */
+/* Screens up to 1000px */
+@media (max-width: 1000px) {
+  .contact-content p {
+    font-size: 18px;
+  }
+}
