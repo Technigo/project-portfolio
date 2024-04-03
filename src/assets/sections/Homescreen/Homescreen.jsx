@@ -21,9 +21,8 @@ export const Homescreen = () => {
           <div>
             <p>
               I am Frontend Developer with more than 4 years of experience in
-              digital marketing and SEO in SaaS industry.
-              <br /> I am passionate about learning new things and the process
-              of finding solutions.
+              digital marketing and SEO in SaaS industry. I am passionate about
+              learning new things and the process of finding solutions.
             </p>
           </div>
         </div>

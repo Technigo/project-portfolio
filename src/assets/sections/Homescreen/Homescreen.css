@@ -33,21 +33,29 @@
 
 .intro-content {
   display: flex;
-  align-items: flex-start;
   align-items: center;
+  flex-direction: column;
 }
 
 .intro-content div {
-  margin-left: 20px;
+  margin-top: 20px;
 }
 
-.intro-title p {
-  font-size: 30px;
+.intro-content p {
+  font-size: 18px;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 576px) {
+  .profile-pic {
+    margin-bottom: 20px; /* Adjust spacing between image and title */
+    order: -1; /* Move the profile image to the top */
+  }
+
   .intro-title {
     font-size: 28px;
   }
@@ -59,10 +67,16 @@
   .intro-content {
     align-items: center;
   }
+}
+
+@media screen and (min-width: 577px) {
+  .intro-content {
+    flex-direction: row;
+    align-items: center;
+  }
 
   .profile-pic {
-    width: 100px;
-    height: 100px;
+    margin-right: 20px;
   }
 }
 
@@ -72,10 +86,11 @@
   }
 
   .intro-title {
-    font-size: 30px;
+    font-size: 40px;
   }
 
-  .intro-title p {
-    font-size: 40px;
+  .intro-content p {
+    font-size: 18px;
+    max-width: 600px;
   }
 }
