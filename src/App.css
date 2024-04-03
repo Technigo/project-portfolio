@@ -97,6 +97,7 @@ body {
   margin: 0;
   padding: 16px;
   text-align: center;
+  line-height: 66px;
 }
 
 .tech p {
@@ -200,7 +201,7 @@ body {
   align-items: center;
   background-color: #f5f5f5;
   width: max-content;
-  border-radius: 18px;
+  border-radius: 22px;
   padding: 8px;
   text-decoration: none;
   color: #333333;
@@ -209,6 +210,10 @@ body {
   font-weight: 600;
   line-height: 24.38px;
   text-align: left;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
 }
 
 .projectDemo {
@@ -221,7 +226,7 @@ body {
 .waves {
   max-width: 100%;
   height: 13px;
-  background-image: url(/waves.svg);
+  background-image: url(/waves.png);
   background-repeat: repeat-x;
   position: absolute;
   left: 0;
@@ -246,10 +251,13 @@ body {
   padding: 16px;
   text-align: center;
   color: #ff4575;
-  line-height: 1.4;
+  line-height: 66px;
 }
 
 .posts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 64px;
 }
 
 .post {
@@ -285,6 +293,7 @@ body {
   font-weight: 600;
   line-height: 29.26px;
   text-align: left;
+  margin-top: 9px;
 }
 
 .postDescription {
@@ -310,6 +319,9 @@ body {
   font-weight: 600;
   line-height: 24.38px;
   text-align: left;
+  &:hover {
+    background-color: #e5e5e5;
+  }
 }
 
 .skills {
@@ -328,7 +340,7 @@ body {
   margin: 0;
   padding: 16px;
   text-align: center;
-  line-height: 1.4;
+  line-height: 66px;
 }
 
 .skillsCategories {
@@ -394,7 +406,7 @@ body {
   font-family: Montserrat;
   font-size: 56px;
   font-weight: 700;
-  line-height: 68.26px;
+  line-height: 66px;
   text-align: center;
 }
 
@@ -406,7 +418,7 @@ body {
 
 .letsTalkText {
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 29.26px;
   text-align: center;
@@ -548,6 +560,7 @@ body {
 
   .project {
     grid-template-columns: max-content 1fr;
+    width: 958px;
   }
 
   .projectImage {
@@ -575,15 +588,19 @@ body {
     grid-template-columns: repeat(2, 1fr);
     max-width: 958px;
     row-gap: 64px;
+    column-gap: 32px;
   }
 
   .post {
+    padding: 0;
   }
 
   .skillsCategories {
     display: flex;
     flex-direction: row;
     column-gap: 64px;
+    width: 958px;
+    justify-content: space-between;
   }
 }
 
