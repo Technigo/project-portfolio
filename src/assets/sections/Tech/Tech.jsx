@@ -10,8 +10,8 @@ export const Tech = () => {
       </div>
       <div className="tech-content">
         <p>
-          HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, <br />
-          React Hooks, Node.js, MongoDB, Web Accessibility, API:s, <br />{" "}
+          HTML, CSS, Flexbox, JavaScript, ES6, JSX, React,
+          React Hooks, Node.js, MongoDB, Web Accessibility, API:s,
           GitHub, mob-programming, pair-programming, code review
         </p>
       </div>
