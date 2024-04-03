@@ -39,7 +39,7 @@ export default function Contact() {
           >
             <img
               className="github-img"
-              src={github}
+              src="/img/github-2.svg"
               alt="a github img linkt to my accont"
             />
           </a>
@@ -50,7 +50,7 @@ export default function Contact() {
           >
             <img
               className="insta-img"
-              src={insta}
+              src="/img/instagram-2.svg"
               alt="a insta img linkt to my accont"
             />
           </a>

@@ -1,28 +1,38 @@
-h3 {
-  padding-left: 20px;
+.tech-container h1,
+.tech-container h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.tech-container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
 }
 
 @media (min-width: 744px) and (max-width: 1279px) {
-  .tech-info {
-    margin: 0 0 100px;
-    padding: 0px 100px 100px;
+  .tech-container {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+    padding: 0px 100px;
   }
 
-  .tech {
-    padding-top: 200px;
+  .tech-info>h3 {
+    text-align: center;
   }
 }
 
 @media (min-width: 1280px) {
-  .tech {
-    padding: 300px 100px 200px;
-  }
-
   .tech-container {
     display: flex;
-  }
-
-  .tech-info {
-    padding: 300px 100px 200px;
+    height: 900px;
+    align-items: center;
+    flex-direction: row;
+    gap: 120px;
   }
 }

@@ -4,12 +4,14 @@ export default function Tag({ text }) {
   return (
     <div
       style={{
-        paddingLeft: "3px",
-        paddingRight: "3px",
+        paddingLeft: "7px",
+        paddingRight: "7px",
         margin: "2px",
         display: "inline-block",
         backgroundColor: "black",
-        color: "white"
+        color: "white",
+        fontWeight: "600",
+        fontFamily: "Montserrat"
       }}
     >
       {text}

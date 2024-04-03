@@ -8,9 +8,10 @@ export default function Photo({ src, color, width, height, alt }) {
       style={{
         borderLeft: `10px solid ${color}`,
         borderBottom: `10px solid ${color}`,
-        boxShadow: `0px 0px 5px 0px, 5px 0px 5px 0px `,
+        objectFit: "cover",
         width: width,
         height: height,
+        boxSizing: "border-box"
       }}
     />
   )

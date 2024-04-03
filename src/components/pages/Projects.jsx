@@ -50,14 +50,14 @@ export default function Projects() {
                   color={"#0B24F5"}
                   width={
                     isSmal
-                      ? "300px"
+                      ? "100%"
                       : isTablet
                       ? "200px"
                       : isDesktop
                       ? "280px"
-                      : "350px"
+                      : "100%"
                   }
-                  height={isTablet ? "280px" : isDesktop ? "280px" : "200px"}
+                  height={isTablet ? "280px" : isDesktop ? "280px" : "auto"}
                   alt={repo.name}
                   url={project.netlify}
                 />
@@ -75,13 +75,15 @@ export default function Projects() {
                 <div className="buttons">
                   <Button
                     text="Live demo"
-                    icon="/img/live-button.png"
+                    icon="/img/globe.svg"
                     url={project.netlify}
+                    hoverColor="#0B24F5"
                   />
                   <Button
                     text="View the code"
-                    icon="/img/view-button.png"
+                    icon="/img/github.svg"
                     url={repo.html_url}
+                    hoverColor="#EB5577"
                   />
                 </div>
               </div>

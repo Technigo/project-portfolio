@@ -1,5 +1,7 @@
 import Wiggly from "/src/assets/wiggly-line.png"
 import Code from "/src/assets/code.png"
+import Tag from "/src/components/Tag.jsx"
+import Button from "/src/components/Button.jsx"
 import "./blog.css"
 
 export default function Blog() {
@@ -11,19 +13,18 @@ export default function Blog() {
           src={Wiggly}
           alt="a wiggly pink line"
         />
-        <div className="blog-container">
+        <div className="blog-container" style={{ textAlign: "start" }}>
           <h1 className="my-words" style={{ color: "black" }}>
             My words
           </h1>
           <img className="code-img" src={Code} alt="img of code" />
-          <h4 style={{ color: "black", paddingLeft: "15px" }}>
+          <Tag text={"July 2023"} />
+          <h4 style={{ color: "black" }}>
             A presentation of thoughts on code:
           </h4>
           <p
             style={{
               color: "black",
-              paddingRight: "10px",
-              paddingLeft: "15px",
             }}
           >
             <span className="highlighted-text">In the realm of coding</span>, I
@@ -90,6 +91,13 @@ export default function Blog() {
             </span>{" "}
             that our thoughts and actions can have on the world around us.
           </p>
+          <Button
+            text="Read article"
+            icon="/img/notepad.svg"
+            url={"https://google.com"}
+            hoverColor="#FFD338"
+            
+          />
         </div>
       </div>
     </div>

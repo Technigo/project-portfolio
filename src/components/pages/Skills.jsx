@@ -37,7 +37,7 @@ export default function Skills() {
               </h4>
               <p
                 style={{
-                  textAlign: "center",
+                  // textAlign: "center",
                   paddingBottom: "30px",
                   paddingLeft: "0",
                 }}
@@ -71,7 +71,7 @@ export default function Skills() {
               </h4>
               <p
                 style={{
-                  textAlign: "center",
+                  // textAlign: "center",
                   paddingBottom: "30px",
                   paddingLeft: "0",
                 }}
@@ -101,7 +101,7 @@ export default function Skills() {
               </h4>
               <p
                 style={{
-                  textAlign: "center",
+                  // textAlign: "center",
                   paddingBottom: "30px",
                   paddingLeft: "0",
                 }}
@@ -129,7 +129,7 @@ export default function Skills() {
               </h4>
               <p
                 style={{
-                  textAlign: "center",
+                  // textAlign: "center",
                   paddingBottom: "30px",
                   paddingLeft: "0",
                 }}

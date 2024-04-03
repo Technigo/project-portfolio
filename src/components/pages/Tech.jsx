@@ -4,7 +4,7 @@ export default function Tech() {
   return (
     <div
       className="page"
-      style={{ backgroundColor: "#0B24F5", paddingBottom: "100px" }}
+      style={{ backgroundColor: "#0B24F5"}}
     >
       <div className="tech-container">
         <div className="tech">
