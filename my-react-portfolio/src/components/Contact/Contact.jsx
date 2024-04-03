@@ -1,10 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithub,
-  faStackOverflow,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 import "./Contact.css";
 
 export const Contact = () => {
@@ -19,12 +12,6 @@ export const Contact = () => {
           <p>Cornelia Dahlin</p>
           <p>+46(0)766422217</p>
           <p>cornelia.dahlin@proton.me</p>
-          <div className="social-icons">
-            <FontAwesomeIcon icon={faLinkedin} />
-            <FontAwesomeIcon icon={faGithub} />
-            <FontAwesomeIcon icon={faStackOverflow} />
-            <FontAwesomeIcon icon={faInstagram} />
-          </div>
         </div>
       </div>
       <footer className="footer">
