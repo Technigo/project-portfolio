@@ -1,54 +1,34 @@
+/* --------------- Containers and boxes ---------------- */
+
 .skills-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 128px 16px 157px 16px;
   background-color: var(--primary-color);
+  gap: 64px;
 }
 
-.skills-content-container {
+.skills-mobile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
 }
 
-.skill-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+.skills-desktop-container {
+  display: none;
 }
 
-.skill-list-title-box {
-  display: flex;
-  align-items: flex-start;
-  padding: 2px;
-  gap: 8px;
-  background-color: var(--accent-color);
-}
+/* ------------------ Headers and text ------------------- */
 
 .skills-title {
-  color: #fff;
   font-family: var(--header-font);
   font-size: var(--font-size-56);
   font-weight: var(--font-weight-700);
   text-align: center;
-}
-
-.skill-list-title-box h2 {
   color: #fff;
-  font-family: var(--header-font);
-  font-size: var(--font-size-24);
-  font-weight: var(--font-weight-600);
-}
-
-.skill-box li {
-  color: #fff;
-  font-family: var(--text-font);
-  font-size: var(--font-size-18);
-  font-weight: var(--font-weight-400);
-  text-align: center;
 }
 
 /* a wavy border at the top of the skills section */
@@ -60,68 +40,56 @@
   width: 100%;
 }
 
-/* ----- Responsive design ----- */
+/* --------------- // RESPONSIVE DESIGN // ---------------- */
 
 @media (min-width: 745px) {
   .skills-container {
+    display: inline-flex;
+    gap: 64px;
     padding: 128px 32px 148px 32px;
   }
 
-  .skills-tablet-layout {
+  .skills-mobile-container {
+    display: none;
+  }
+
+  .skills-desktop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    width: 680px;
+  }
+
+  .skills-desktop-box {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    align-self: stretch;
     gap: 64px;
-  }
-
-  .skills-tablet-layout2 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     align-self: stretch;
-    gap: 64px;
-  }
-
-  .skill-box {
-    align-items: flex-start;
-  }
-
-  .skill-box li {
-    text-align: left;
   }
 }
 
 @media (min-width: 1281px) {
   .skills-container {
     padding: 128px 161px;
-  }
-
-  .skills-content-container {
     gap: 128px;
   }
 
-  .skills-desktop-layout {
+  .skills-desktop-container {
+    display: none;
+  }
+
+  .skills-mobile-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: flex-start;
-    gap: 80px;
-  }
-
-  .skills-tablet-layout {
-    gap: 80px;
-  }
-
-  .skills-tablet-layout2 {
-    gap: 80px;
+    justify-content: space-between;
+    width: 958px;
   }
 
   .skills-title {
     font-size: var(--font-size-80);
-  }
-
-  .skill-list-title-box h2 {
-    font-size: var(--font-size-32);
   }
 }
 
@@ -130,15 +98,7 @@
     padding: 128px 234px;
   }
 
-  .skills-desktop-layout {
-    gap: 120px;
-  }
-
-  .skills-tablet-layout {
-    gap: 120px;
-  }
-
-  .skills-tablet-layout2 {
-    gap: 120px;
+  .skills-mobile-container {
+    width: 1044px;
   }
 }

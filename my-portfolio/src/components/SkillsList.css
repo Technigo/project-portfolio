@@ -1,0 +1,51 @@
+/* --------------- Containers and boxes ---------------- */
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.skill-list-title-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 2px;
+  background-color: var(--accent-color);
+}
+
+/* ------------------ Headers and text ------------------- */
+
+.skill-list-title-box h2 {
+  font-family: var(--header-font);
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-600);
+  color: #fff;
+}
+
+.skill-box li {
+  font-family: var(--text-font);
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-400);
+  text-align: center;
+  color: #fff;
+}
+
+/* --------------- // RESPONSIVE DESIGN // ---------------- */
+
+@media (min-width: 745px) {
+  .skill-box {
+    align-items: flex-start;
+  }
+
+  .skill-box li {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1281px) {
+  .skill-list-title-box h2 {
+    font-size: var(--font-size-32);
+  }
+}

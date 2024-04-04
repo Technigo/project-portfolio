@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import repoImages from "../repoImages.json";
 import { ProjectCard } from "./ProjectCard.jsx";
+import "./ProjectList.css";
 
 export const ProjectList = () => {
   const [repoData, setRepoData] = useState([]);

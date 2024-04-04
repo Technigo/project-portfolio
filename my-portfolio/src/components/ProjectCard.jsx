@@ -1,5 +1,6 @@
 import { PropTypes } from "prop-types";
 import { Button } from "./Button.jsx";
+import "./ProjectCard.css";
 
 export const ProjectCard = ({ name, gitHubLink, topics, deployedLink, description, repoImage, altText }) => {
   return (

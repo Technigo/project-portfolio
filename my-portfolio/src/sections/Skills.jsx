@@ -14,29 +14,45 @@ export const Skills = () => {
   return (
     <>
       <div className="wavy-border"></div>
-      <div className="skills-container">
-        <section className="skills-content-container">
-          <Headline style="skills-title" title="Skills" />
-          <div className="skills-desktop-layout">
-            <div className="skills-tablet-layout">
-              <div className="skill-box">
-                <SkillsList skillsItems={codeSkills} skillsTitle="Code" />
-              </div>
-              <div className="skill-box">
-                <SkillsList skillsItems={toolBox} skillsTitle="Toolbox" />
-              </div>
+      <section className="skills-container">
+        <Headline style="skills-title" title="Skills" />
+        <div className="skills-mobile-container">
+          <div className="skill-box">
+            <SkillsList skillsItems={codeSkills} skillsTitle="Code" />
+          </div>
+          <div className="skill-box">
+            <SkillsList skillsItems={toolBox} skillsTitle="Toolbox" />
+          </div>
+
+          <div className="skill-box">
+            <SkillsList skillsItems={upcomingSkills} skillsTitle="Upcoming" />
+          </div>
+          <div className="skill-box">
+            <SkillsList skillsItems={more} skillsTitle="More" />
+          </div>
+        </div>
+
+        {/* Layout for smaller tablet, is hidden until required screensize is achieved */}
+        <div className="skills-desktop-container">
+          <div className="skills-desktop-box">
+            <div className="skill-box">
+              <SkillsList skillsItems={codeSkills} skillsTitle="Code" />
             </div>
-            <div className="skills-tablet-layout2">
-              <div className="skill-box">
-                <SkillsList skillsItems={upcomingSkills} skillsTitle="Upcoming" />
-              </div>
-              <div className="skill-box">
-                <SkillsList skillsItems={more} skillsTitle="More" />
-              </div>
+            <div className="skill-box">
+              <SkillsList skillsItems={toolBox} skillsTitle="Toolbox" />
             </div>
           </div>
-        </section>
-      </div>
+
+          <div className="skills-desktop-box">
+            <div className="skill-box">
+              <SkillsList skillsItems={upcomingSkills} skillsTitle="Upcoming" />
+            </div>
+            <div className="skill-box">
+              <SkillsList skillsItems={more} skillsTitle="More" />
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
