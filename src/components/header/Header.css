@@ -2,9 +2,10 @@
 	display: inline-block;
 	flex-direction: column;
 	display: flex;
-	width: 100%;
-	padding: 64px 0;
+	padding: 64px 16px;
 	align-items: center;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -16,11 +17,11 @@ h1 {
 	text-wrap: pretty;
 	text-align: left;
 	line-height: 1.2;
+	margin: 0;
 }
 
-.header-titles,
-.intro-text {
-	padding: 0 16px;
+.header-titles {
+	margin: 32px 0;
 }
 
 .header-titles > p {
@@ -28,9 +29,8 @@ h1 {
 	font-size: 18px;
 	font-weight: 600;
 	color: black;
-	margin: 32px 0 0 0;
+	margin: 0;
 	text-align: left;
-	align-self: stretch;
 }
 
 .intro-text {
@@ -39,6 +39,7 @@ h1 {
 	text-wrap: pretty;
 	font-size: 18px;
 	margin: 0;
+	padding: 0;
 }
 
 .arrow {
@@ -66,7 +67,7 @@ h1 {
 		display: grid;
 		grid-template-rows: 1fr 164px auto 138px auto;
 		grid-template-columns: 32px 164px auto 164px 32px;
-		padding: 128px 0 48px 0;
+		padding: 128px 32px 48px 32px;
 	}
 
 	.header-titles {
@@ -107,6 +108,7 @@ h1 {
 @media screen and (min-width: 1281px) {
 	.header-container {
 		grid-template-columns: 161px 164px auto 164px 161px;
+		padding: 128px 161px 48px 161px;
 	}
 
 	.intro-text {
