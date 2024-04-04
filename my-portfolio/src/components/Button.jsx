@@ -6,7 +6,7 @@ export const Button = ({ buttonStyle, buttonName, buttonIcon, url }) => {
       <a href={url} target="_blank" rel="noreferrer noopener">
         <button className={buttonStyle}>
           <img src={buttonIcon} alt="icon" />
-          <p>{buttonName}</p>
+          {buttonName}
         </button>
       </a>
     </>
