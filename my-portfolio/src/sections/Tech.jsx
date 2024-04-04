@@ -3,7 +3,7 @@ import "./Tech.css";
 
 export const Tech = () => {
   return (
-    <section className="tech-container">
+    <section className="tech-content-container">
       <Headline style="tech-title" title="Tech" />
       <p>
         HTML, CSS, JavaScript, ES6, JSX, React, React Hooks, Redux.js, Node.js, Mongo DB, Web Accessibility, API:s,

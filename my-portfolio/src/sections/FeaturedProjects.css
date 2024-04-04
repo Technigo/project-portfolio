@@ -140,3 +140,71 @@
 .github-button:hover img {
   filter: invert(100%) brightness(2);
 }
+
+/* ----- Responsive design ----- */
+
+@media (min-width: 745px) {
+  .featured-projects-container {
+    padding: 128px 32px;
+    justify-content: center;
+  }
+
+  .project-list-title {
+    text-align: left;
+  }
+
+  .project-card {
+    flex-direction: row;
+  }
+
+  .repo-image {
+    width: 200px;
+    height: 280px;
+  }
+
+  .projectcard-text-container {
+    gap: 16px;
+  }
+
+  .button-container {
+    flex-direction: row;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 1281px) {
+  .featured-projects-container {
+    padding: 128px 161px 124px 161px;
+  }
+
+  .featured-projects-content-container {
+    gap: 128px;
+  }
+
+  .project-list {
+    gap: 128px;
+  }
+
+  .project-list-title {
+    font-size: var(--font-size-80);
+  }
+
+  .projectcard-text-container h2 {
+    font-size: var(--font-size-32);
+  }
+
+  .repo-image {
+    width: 408px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 1513px) {
+  .featured-projects-container {
+    padding: 128px 234px 124px 234px;
+  }
+
+  .project-card {
+    width: 1044px;
+  }
+}
