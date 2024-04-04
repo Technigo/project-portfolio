@@ -18,7 +18,7 @@ export const Contact = () => {
             <a href="https://github.com/schouenkes" target="_blank" rel="noreferrer noopener">
               <img src="icons/github-tag.svg" alt="GitHub icon" />
             </a>
-            <a href="www.linkedin.com/in/maja-schouenke-0a09842a7" target="_blank" rel="noreferrer noopener">
+            <a href="https://www.linkedin.com/in/maja-schouenke-0a09842a7" target="_blank" rel="noreferrer noopener">
               <img src="icons/linkedIn-icon.svg" alt="LinkedIn icon" />
             </a>
           </div>
