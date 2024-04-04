@@ -6,7 +6,7 @@ export const ProjectCard = ({ name, gitHubLink, topics, deployedLink, descriptio
   return (
     <>
       <img className="repo-image" src={repoImage} alt={altText} />
-      {/* <div className="project-card-desktop"> */}
+
       <div className="projectcard-content-container">
         <div className="projectcard-text-container">
           <h2>{name}</h2>
@@ -39,7 +39,6 @@ export const ProjectCard = ({ name, gitHubLink, topics, deployedLink, descriptio
           />
         </div>
       </div>
-      {/* </div> */}
     </>
   );
 };

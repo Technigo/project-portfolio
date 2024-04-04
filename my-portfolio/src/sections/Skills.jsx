@@ -33,6 +33,7 @@ export const Skills = () => {
         </div>
 
         {/* Layout for smaller tablet, is hidden until required screensize is achieved */}
+
         <div className="skills-desktop-container">
           <div className="skills-desktop-box">
             <div className="skill-box">
