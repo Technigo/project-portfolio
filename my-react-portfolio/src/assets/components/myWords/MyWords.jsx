@@ -10,7 +10,8 @@ export const MyWords = () => {
       <PinkDivider />
       <section className="myWords-wrapper">
         <PageTopic pageTopic={"My Words"} className={"myWords"} />
-        <Image
+        <div>
+          <Image
           image={coffeeImage}
           alt={"news paper and a cup of coffee"}
           className={"pink"}
@@ -20,6 +21,8 @@ export const MyWords = () => {
           This page is currently under construction. Check back later for
           updates!
         </p>
+        </div>
+        
       </section>
     </>
   );
