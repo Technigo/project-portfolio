@@ -10,7 +10,7 @@ export const Skills =()=> {
 
         <div className="skillSections">
           <div className="skillSection">
-            <h3 className="code">Code</h3>
+            <p className="code">Code</p>
             <div className="skillDetails">
               <p>HTML5</p>
               <p>CSS3</p>
@@ -22,7 +22,7 @@ export const Skills =()=> {
           </div>
 
           <div className="skillSection">
-            <h3 className="Toolbox">Toolbox</h3>
+            <p className="Toolbox">Toolbox</p>
             <div className="skillDetails">
               <p>Postman</p>
               <p>CSS3</p>
@@ -35,7 +35,7 @@ export const Skills =()=> {
           </div>
 
           <div className="skillSection">
-            <h3 className="Upcoming">Upcoming</h3>
+            <p className="Upcoming">Upcoming</p>
             <div className="skillDetails">
               <p>Node.js</p>
               <p>Atom</p>
@@ -44,7 +44,7 @@ export const Skills =()=> {
           </div>
 
           <div className="skillSection">
-            <h3 className="More">More</h3>
+            <p className="More">More</p>
             <div className="skillDetails">
               <p>Branding</p>
               <p>Strategy</p>

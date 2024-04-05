@@ -1,16 +1,14 @@
-.projectsContainer {
+.projectContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 128px;
+  gap: 128px;
 }
 
 .project{
-  width: 1044px;
   height: 280px;
   display: flex;
   flex-direction: row;
   gap: 12px;
-  margin-bottom: 128px;
 }
 
 .projectCover{
@@ -108,15 +106,13 @@ a{
   color: black;
 }
 
+@media (min-width:1025px) and (max-width:1280px){
+  
+} 
 
 /* For Tablet Device */
 @media (min-width:667px) and (max-width:1024px) {
-  .projectsContainer {
-    margin-top: 64px;
-  }
-
   .project{
-    width: 680px;
     gap: 37px;
   }
   
@@ -140,7 +136,7 @@ a{
 /* For Mobile Device */
 @media (max-width: 667px) {
   .project{
-    width: 333px;
+    width: 100%;
     height: 590px;
     flex-direction: column;
     gap: 24px;
@@ -149,6 +145,7 @@ a{
   
   .projectCover{
     width: 100%;
+    max-width: 333px;
     height: 190px;
     border-bottom: 10px solid #0B24F5;
     border-left: 10px solid #0B24F5;

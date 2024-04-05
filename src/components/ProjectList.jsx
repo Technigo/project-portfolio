@@ -5,7 +5,7 @@ import "./TopSection.css"
 export const ProjectList=()=> {
   return (
     <div className="projects">
-      <p className="titleBlue">Featured Projects</p>
+      <p className="titleFeature">Featured Projects</p>
       <Project />
     </div>
   )
