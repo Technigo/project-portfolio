@@ -14,7 +14,7 @@ export const ProjectData = [
     tags: ["HTML5", "CSS3", "JavaScript"],
     buttonText1: "View on Netlify",
     buttonText2: "View the code",
-    demoLink: "url_to_demo_2",
+    demoLink: "https://incandescent-medovik-162441.netlify.app/",
     codeLink: "https://github.com/lunek1/project-chatbot",
   },
   {
@@ -24,7 +24,7 @@ export const ProjectData = [
     tags: ["HTML5", "CSS3", "JavaScript"],
     buttonText1: "View on Netlify",
     buttonText2: "View the code",
-    demoLink: "url_to_demo_2",
+    demoLink: "https://zesty-cat-324549.netlify.app/",
     codeLink: "https://github.com/lunek1/project-library",
   },
   {
@@ -34,7 +34,7 @@ export const ProjectData = [
     tags: ["HTML5", "CSS3", "JavaScript", "API"],
     buttonText1: "View on Netlify",
     buttonText2: "View the code",
-    demoLink: "url_to_demo_1",
+    demoLink: "https://fanciful-melomakarona-4e6d38.netlify.app/",
     codeLink: "https://github.com/lunek1/project-weather-app",
   },
   {
@@ -44,7 +44,7 @@ export const ProjectData = [
     tags: ["HTML5", "CSS3", "React", "API"],
     buttonText1: "View on Netlify",
     buttonText2: "View the code",
-    demoLink: "url_to_demo_2",
+    demoLink: "https://cornelia-trista-music-releases-vite.netlify.app/",
     codeLink:
       "https://github.com/Technigo/project-music-releases-vite/pull/79/files",
   },
@@ -55,7 +55,7 @@ export const ProjectData = [
     tags: ["HTML5", "CSS3", "React"],
     buttonText1: "View on Netlify",
     buttonText2: "View the code",
-    demoLink: "url_to_demo_2",
+    demoLink: "https://jing-cornelia-music-survey.netlify.app/",
     codeLink: "https://github.com/lunek1/project-survey-vite",
   },
   {
@@ -65,7 +65,7 @@ export const ProjectData = [
     tags: ["HTML5", "CSS3", "React", "API"],
     buttonText1: "View on Netlify",
     buttonText2: "View the code",
-    demoLink: "url_to_demo_2",
+    demoLink: "https://celebrated-shortbread-0673ce.netlify.app/",
     codeLink: "https://github.com/lunek1/project-happy-thoughts-vite",
   },
   {
