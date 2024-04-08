@@ -26,7 +26,7 @@ export const ProjectCard = () => {
             )}
             <div className="buttons-container">
               <button>
-                <img src="src/assets/netlify.png" alt="Netlify" />
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/netlify-512.png" alt="Netlify" />
                 {project.buttonText1}
               </button>
               <a
