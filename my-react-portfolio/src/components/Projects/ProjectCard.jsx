@@ -25,17 +25,29 @@ export const ProjectCard = () => {
               </div>
             )}
             <div className="buttons-container">
-              <button>
-                <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/netlify-512.png" alt="Netlify" />
-                {project.buttonText1}
-              </button>
               <a
                 href={project.demoLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <button>
-                  <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
+                  <img
+                    src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/netlify-512.png"
+                    alt="Netlify"
+                  />
+                  {project.buttonText1}
+                </button>
+              </a>
+              <a
+                href={project.codeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt="GitHub"
+                  />
                   {project.buttonText2}
                 </button>
               </a>
