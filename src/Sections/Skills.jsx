@@ -31,6 +31,7 @@ export const Skills = () => {
         <div className="upcoming">
           <Headline text="Upcoming" level={2} className="upcoming-h2" />
           <p>Typescript</p>
+          <p>Vue</p>
         </div>
 
         <div className="more">
