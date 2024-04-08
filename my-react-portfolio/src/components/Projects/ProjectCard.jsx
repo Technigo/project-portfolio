@@ -35,7 +35,7 @@ export const ProjectCard = () => {
                 rel="noopener noreferrer"
               >
                 <button>
-                  <img src="src/assets/github.png" alt="GitHub" />
+                  <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
                   {project.buttonText2}
                 </button>
               </a>
