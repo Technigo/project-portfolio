@@ -1,45 +1,221 @@
-.projects-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.projects-header {
     color: var(--seafoam);
-    padding-top: 20px;
-    padding-bottom: 30px; 
+    margin-top: 50px;
+    margin-bottom: 60px;
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
     margin-right: auto;
-    gap: 30px;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
     color: var(--maroon);
+    max-width: 320px;
 }
 
-#screenshot {
+.screenshot {
     border: solid;
     border-width: 0px 00px 20px 20px;
     border-color: var(--wine);
-    margin-left: 30px;
-    margin-right: 30px;
     width: 300px;
+    object-fit: cover;
 }
 
-.tools {
+.description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: auto;
+}
+
+.projects-title {
+    color: var(--olive);
+    margin-bottom: -10px;
+}
+
+.tags {
     display: flex;
     flex-direction: row;
+    justify-content: left;
+    gap: 10px;
 }
 
-.tool {
-    background-color: var(--olive);
-    padding: 5px 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+.tag {
+    background-color: var(--daffodil);
+    padding: 2px 6px;
     border-radius: 8px;
-    color: white;
+    color: var(--wine);
+    font-weight: bold;
+    font-size: 11px;
 }
 
-button {
-    background-color: var(--seafoam);
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 35px;
+    margin-top: 15px; 
+}
+
+.link {
+    background-color: var(--wine);
+    padding: 8px 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: auto;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items:center
+}
+
+.link:hover{
+    background-color: var(--lilac);
+    color: white;
+    transition: ease 0.3s;
+}
+
+.icon {
+    padding-right: 5px;
+}
+
+@media (min-width: 465px) AND (max-width: 910px) {
+.screenshot {
+    width: 200px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.projects {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.description {
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: auto;
+}
+
+.tags {
+    flex-wrap: wrap;
+    row-gap: 1px;
+}
+
+.link {
+    margin-right: 5px;
+}
+}
+
+/*@media (min-width: 660px) AND (max-width: 910px) {
+.screenshot {
+    width: 250px;
+    height: 380px;
+    object-fit: cover;
+}
+
+.projects {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+}
+
+.description {
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: -20px;
+}
+
+.links {
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.link {
+    margin-right: 5px;
+}
+}*/
+
+@media (min-width: 910px) AND (max-width: 1200px) {
+.screenshot {
+    max-width: 400px;
+    max-height: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.projects {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+.description {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.links {
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.link {
+    margin-right: 8px;
+}
+}
+
+@media (min-width: 1200px) {
+.screenshot {
+    max-width: 400px;
+    max-height: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.projects {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+}
+
+.description {
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: -10px;
+}
+
+.links {
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.link {
+    margin-right: 10px;
+}
 }
 
