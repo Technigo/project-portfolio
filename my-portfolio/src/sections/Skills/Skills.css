@@ -1,7 +1,7 @@
 .skills-container {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   gap: 64px;
   padding: 128px 16px 157px 16px;
   background-color: var(--primary);
@@ -10,6 +10,7 @@
 .skills-wrapper {
   display: grid;
   gap: 64px;
+  text-align: center;
 }
 .code,
 .toolbox,
@@ -40,6 +41,7 @@
   line-height: 2;
   font-size: 18px;
   font-family: var(--text-font);
+  font-weight: 400;
 }
 
 @media screen and (min-width: 745px) {
@@ -49,16 +51,14 @@
   .skills-wrapper {
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
-  }
-
-  .skill-list li {
-    font-size: 18px;
+    text-align: left;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .skills-container {
     padding: 128px 161px;
+    gap: 128px;
   }
 
   .skills-wrapper {
