@@ -1,0 +1,74 @@
+.link-button img {
+  width: 32px;
+  height: 32px;
+  padding: 0 10px 0 0;
+}
+
+.link-button {
+  height: 48px;
+  background-color: lightblue;
+  border-radius: 48px;
+  padding: 0 10px;
+  margin: 0 7px 0 0;
+}
+.link-button p {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 34px;
+}
+
+.buttons a {
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+.button-interior {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background-color: #2C7865;
+  color: white;
+}
+
+.link-button {
+  background-color: lightgrey;
+  transition: 0.2;
+}
+
+.link-button:hover {
+  background-color: #2C7865;
+  transition: 0.2s;
+}
+
+.link-button:hover p {
+  color: white;
+  transition: 0.2s;
+}
+
+.link-button:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg)
+    contrast(100%);
+  transition: 0.2s;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1280px) {
+}
+
+/* Phone */
+@media only screen and (max-width: 745px) {
+  .buttons {
+    position: static;
+  }
+}
