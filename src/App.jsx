@@ -36,7 +36,6 @@ export const App = () => {
           <p>Loading...</p>
         </div>
       )}
-      {/* <Words />  add when written articles*/}
       <Skills />
       <Talk />
       <Footer />
