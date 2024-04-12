@@ -28,7 +28,6 @@ export const Skills = () => {
           <h3 className="upcoming-title">Upcoming</h3>
           <ul>
             <li>NodeJS</li>
-            <li>Redux</li>
             <li>MongoDB</li>
             <li>Express</li>
           </ul>

@@ -28,20 +28,16 @@ a {
 }
 
 /*Overall app styling*/
-.app-container {
-  padding-top: 50px;
-}
 
 .tech,
 .projects,
 .articles-container,
-.skills,
-.contact {
+.skills {
   padding: 80px 20px;
 }
 
 .title {
-  font-size: 56px;
+  font-size: 48px;
 }
 
 /*Common fonts and font color styling*/
@@ -101,6 +97,12 @@ li {
 }
 
 /*Other common styling*/
+h2,
+.skills h2,
+.profile-picture {
+  margin-bottom: 64px;
+}
+
 .tags p,
 .date {
   margin-right: 5px;
@@ -139,11 +141,13 @@ li {
   }
 }
 
-/*Tablet*/
+/*TABLET*/
 @media (min-width: 744px) {
-  h2 {
-    margin-bottom: 50px;
+  .title {
+    font-size: 56px;
   }
+
+  /*Intro tablet*/
 
   .intro h3 {
     font-size: 24px;
@@ -151,6 +155,7 @@ li {
 
   .intro h1 {
     font-size: 56px;
+    margin-bottom: 32px;
   }
 
   .intro-container {
@@ -161,29 +166,21 @@ li {
   .profilepic-container {
     padding-right: 40px;
   }
-  .skills {
-    text-align: left;
+
+  .intro-container {
+    margin: 128px 64px;
   }
 
-  .tech,
-  .contact {
-    padding: 200px 180px;
+  /*Tech tablet*/
+  .tech {
+    padding: 300px 180px;
   }
 
   .tech p {
     text-align: center;
   }
 
-  .skill-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .skills {
-    padding: 200px;
-  }
-
+  /*Projects tablet*/
   .project-item {
     display: flex;
   }
@@ -211,10 +208,56 @@ li {
     margin-right: 20px;
   }
 
+  .articles h2,
+  .projects h2 {
+    text-align: left;
+  }
+
+  .projects,
+  .articles-container {
+    padding: 128px 32px;
+  }
+
+  /*Articles tablet*/
+  .article-photo {
+    height: 340px;
+  }
+
+  .article-photo,
+  .article-data h4 {
+    margin-bottom: 32px;
+  }
+  
+
+  /*Skills tablet*/
+  .skills {
+    text-align: left;
+  }
+  .skill-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+  }
+
+  .skills {
+    padding: 186px 260px;
+  }
+
+  /*Contact tablet*/
   .contact-icons {
-    margin-top: 70px;
-    width: 40%;
-    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 64px;
+    font-size: 30px;
+  }
+
+  .contact p {
+    font-size: 24px;
+  }
+
+  .contact {
+    padding: 130px 217px;
   }
 }
 
@@ -279,12 +322,6 @@ li {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-  }
-
-  .contact-icons {
-    margin-top: 70px;
-    width: 20%;
-    margin-left: 40%;
   }
 }
 

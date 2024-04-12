@@ -20,7 +20,7 @@ export const Intro = () => {
           <p className="hind">
             I'm merging my background in financial audit with a passion for web
             development. Currently in a fast-paced web development boot camp
-            learning tools like JavaScript, React, Redux and Node.js, I'm
+            learning tools like JavaScript, React and Node.js, I'm
             blending my attention to detail and problem-solving skills to create
             user-friendly digital experiences.
           </p>
