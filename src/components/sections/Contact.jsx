@@ -11,7 +11,7 @@ export const Contact = () => {
   return (
     <div className="contact">
       <h2 className="title">Let's talk</h2>
-      <ProfilePicture />
+      <div className="contact-profpic"><ProfilePicture /></div>
       <p className="montserrat">Alma Herrström</p>
       <p className="montserrat">almaherrstrom@hotmail.com</p>
       <div className="contact-icons">
