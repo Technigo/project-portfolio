@@ -159,7 +159,6 @@ h2,
   }
 
   .intro-container {
-    max-width: 1085px;
     margin-top: 50px;
     display: flex;
     margin: 128px 64px;
@@ -267,10 +266,15 @@ h2,
   }
 }
 
-/*Desktop*/
+/*SMALL DESKTOP*/
 @media (min-width: 1280px) {
   h2 {
     margin-bottom: 70px;
+  }
+
+  /*Intro small desktop*/
+  .intro-container {
+    margin: 332px 220px 200px 220px;
   }
 
   .intro h3 {
@@ -279,38 +283,41 @@ h2,
 
   .intro h1 {
     font-size: 60px;
+    margin-bottom: 16px;
   }
 
   .arrow-down {
-    margin-top: 80px;
-  }
-
-  .intro,
-  .projects,
-  .articles-container,
-  .contact {
-    padding: 100px;
-  }
-
-  .skills h2 {
     margin-bottom: 40px;
   }
 
+  /*Tech small desktop*/
   .tech {
     display: flex;
     justify-content: center;
-    padding: 300px 120px 300px 100px;
+    padding: 362px 120px 362px 228px;
   }
 
   .tech p {
     text-align: left;
-    margin-left: 100px;
+    margin-left: 124px;
     width: 500px;
   }
 
+  /*Projects small desktop*/
+
+  .projects {
+    padding: 128px 230px;
+  }
+
   .project-photo {
-    width: 408px;
+    width: 280px;
     height: 280px;
+  }
+
+  /*Articles small desktop*/
+
+  .articles-container {
+    padding: 125px 131px;
   }
 
   .article-card {
@@ -324,9 +331,33 @@ h2,
     height: 340px;
   }
 
+  /*Skills small desktop*/
+
+  .skills h2 {
+    margin-bottom: 128px;
+  }
+
+  .skills h3 {
+    margin-top: 0;
+  }
+
+  .skills {
+    padding: 128px 200px;
+  }
+
   .skill-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 64px;
+  }
+
+  /*Contact small desktop*/
+
+  .contact h2 {
+    margin-bottom: 128px;
+  }
+
+  .contact {
+    padding: 128px 434px;
   }
 }
