@@ -454,7 +454,7 @@ body {
       "arrow arrow";
     max-width: 958px;
     margin: 0 auto;
-    padding: 128px 0;
+    padding: 128px 16px;
   }
 
   .name {
@@ -484,17 +484,24 @@ body {
       "image technologies"
       "image ."
       "image links";
-    grid-template-columns: 200px 1fr;
+
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content min-content min-content auto min-content;
     column-gap: 32px;
+
+    width: 100%;
+    padding: 0 16px;
+    max-width: 958px;
   }
 
   .projectImage {
     overflow: hidden;
-    width: 200px;
+    width: 100%;
     object-fit: cover;
 
-    height: 280px;
+    /* height: 280px; */
+
+    aspect-ratio: 290 / 181;
   }
 
   .projectTitle {
@@ -516,13 +523,25 @@ body {
   .projectLinks a {
   }
 
-  .skillsCategories {
+  .posts {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 1fr);
     max-width: 958px;
     row-gap: 64px;
+    column-gap: 32px;
+  }
+
+  .skillsCategories {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: space-between;
+    max-width: 958px;
+    row-gap: 32px;
     align-items: flex-start;
     text-align: left;
+    padding: 0 16px;
+    width: 100%;
+    overflow: hidden;
   }
 
   .skillsCategories li {
@@ -531,6 +550,11 @@ body {
 }
 
 @media (min-width: 1281px) {
+  .intro {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .name {
     font-size: 32px;
   }
@@ -558,8 +582,9 @@ body {
   }
 
   .project {
-    grid-template-columns: max-content 1fr;
     width: 958px;
+    padding: 0;
+    width: 100%;
   }
 
   .projectImage {
@@ -600,12 +625,8 @@ body {
     column-gap: 64px;
     width: 958px;
     justify-content: space-between;
-  }
-}
 
-@media (min-width: 1513px) {
-  .posts {
-    max-width: 1044px;
+    padding: 0;
   }
 }
 
