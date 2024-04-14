@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
-  justify-content: center;
   align-items: center;
   text-align: left;
   gap: 32px;
   padding: 16px;
   height: 100vh;
+  padding-top: 200px;
 }
 
 .profile-pic {
@@ -53,9 +53,17 @@
 }
 
 @media screen and (max-width: 576px) {
+  .introduction-container {
+    position: relative;
+    justify-content: flex-start;
+    padding-top: 260px;
+  }
+
   .profile-pic {
-    margin-bottom: 20px;
-    margin-right: 20px;
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .intro-title {
@@ -70,6 +78,7 @@
     align-items: center;
     font-size: 15px;
     max-width: 300px;
+    margin-left: 0;
   }
 
   .homescreen-title {
