@@ -34,31 +34,46 @@ h4 {
   font-family: var(--heading-font);
 }
 
-h1 {
-  font-size: 56px;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-h1,
-h2 {
-  font-weight: 700;
-}
 
 h3 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 600;
+  font-style: normal;
+  line-height: normal;
 }
 
 h4 {
   font-weight: 600;
 }
 
+/* ------------ ARROW ------------ */
+.arrow-container {
+  padding: 0 16px 64px 16px;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translate(-50%);
+  animation: arrowJump 1s infinite;
+}
+
+@keyframes arrowJump {
+
+  0%,
+  100% {
+    transform: translateY(0);
+    /* move up and down/* (vertically) */
+  }
+
+  50% {
+    transform: translateY(-20px);
+    /* Move up by 20px */
+  }
+}
+
+
 /* ------------ MEDIA QUERIES ------------ */
 /* ------------ Tablet and up ------------ */
-@media (min-width: 744px) {
+/* @media (min-width: 744px) {
 
   h1,
   h2 {
@@ -72,10 +87,10 @@ h4 {
   h4 {
     font-size: 32px;
   }
-}
+} */
 
 /* ------------ Tablet only ------------ */
-@media (max-width: 1279px) and (min-width: 744px) {
+/* @media (max-width: 1279px) and (min-width: 744px) {
   h3 {
     font-size: 24px;
   }
@@ -83,10 +98,10 @@ h4 {
   h4 {
     font-size: 32px;
   }
-}
+} */
 
 /* ------------ Desktop only ------------ */
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
 
   h1,
   h2 {
@@ -96,4 +111,4 @@ h4 {
   h3 {
     font-size: 32px;
   }
-}
+} */

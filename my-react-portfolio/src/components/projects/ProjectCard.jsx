@@ -70,7 +70,6 @@ export const ProjectCard = ({ repositories }) => {
               />
               <Paragraph
                 text={matchingData.description}
-                className="custom-paragraph"
               />
 
               {/* Displaying tags */}
