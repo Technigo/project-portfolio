@@ -94,7 +94,11 @@ export const Portfolio = () => {
   }
 
   if (error) {
-    return <div className="error-message">{error}</div>;
+    return (
+      <div className="error-message">
+        <h3>{error}</h3>
+      </div>
+    );
   }
 
   return (
