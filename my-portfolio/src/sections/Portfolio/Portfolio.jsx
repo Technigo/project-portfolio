@@ -1,13 +1,15 @@
-import { useState, useEffect, useRef } from "react";
-import { Introduction } from "../Introduction/Introduction";
-import { Tech } from "../Tech/Tech";
-import { FeaturedProjects } from "../Featured projects/FeaturedProjects";
-import { Skills } from "../Skills/Skills";
-import { Contact } from "../Contact/Contact";
-import "./Portfolio.css";
-import projectImages from "./projectImages.json";
-import { TickerTapeBanner } from "../Contact/TickerTapeBanner";
 import arrowSvg from "/icons/arrow.svg";
+import { useEffect, useRef, useState } from "react";
+
+import { Contact } from "../Contact/Contact";
+import { TickerTapeBanner } from "../Contact/TickerTapeBanner";
+import { FeaturedProjects } from "../Featured projects/FeaturedProjects";
+import { Introduction } from "../Introduction/Introduction";
+import { Skills } from "../Skills/Skills";
+import { Tech } from "../Tech/Tech";
+import projectImages from "./projectImages.json";
+
+import "./Portfolio.css";
 
 export const Portfolio = () => {
   const [error, setError] = useState(null);
@@ -22,45 +24,51 @@ export const Portfolio = () => {
     fetchRepositories();
   }, []);
 
-  const fetchRepositories = () => {
+  const fetchRepositories = async () => {
     const URL = "https://api.github.com/users/ericamechler/repos";
 
-    setError(null);
+    try {
+      setError(null);
+      setLoading(true);
 
-    fetch(URL)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Could not load repositories");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-        const avatar = data[0]?.owner?.avatar_url;
-        // Filter out the "Portfolio"-project
-        const filteredProjects = data
-          .filter((project) => project.name !== "Portfolio")
-          .map((project) => ({
-            id: project.id,
-            name: project.name,
-            description: project.description,
-            htmlUrl: project.html_url,
-            topics: project.topics,
-            homepage: project.homepage,
-            // Find the corresponding image path from the JSON data
-            imagePath:
-              projectImages.find((image) => image.projectName === project.name)
-                ?.imagePath || "",
-          }));
-        setAvatarUrl(avatar);
-        setProjects(filteredProjects);
-      })
-      .catch((error) => {
-        setError("Error loading repositories. Please try again later");
-      })
-      .finally(() => {
-        setLoading(false); // Update loading state when fetching is done
-      });
+      const response = await fetch(URL);
+      if (!response.ok) {
+        throw new Error("Could not load repositories");
+      }
+
+      const data = await response.json();
+      console.log(data);
+      const avatar = data[0]?.owner?.avatar_url;
+
+      // Filter out the "Portfolio"-project and check for topics and description
+      const filteredProjects = data
+        .filter(
+          (project) =>
+            project.name !== "Portfolio" &&
+            project.description &&
+            project.topics &&
+            project.topics.length > 0
+        )
+        .map((project) => ({
+          id: project.id,
+          name: project.name,
+          description: project.description,
+          htmlUrl: project.html_url,
+          topics: project.topics,
+          homepage: project.homepage,
+          // Find the corresponding image path from the JSON data
+          imagePath:
+            projectImages.find((image) => image.projectName === project.name)
+              ?.imagePath || "",
+        }));
+
+      setAvatarUrl(avatar);
+      setProjects(filteredProjects);
+    } catch (error) {
+      setError("Error loading repositories. Please try again later");
+    } finally {
+      setLoading(false); // Update loading state when fetching is done
+    }
   };
 
   const scrollToTechSection = () => {

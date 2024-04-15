@@ -1,11 +1,12 @@
-import { TagText } from "../../components/TextElements/TagText";
-import { Button } from "../../components/FormElements/Button";
-import { Subheading } from "../../components/TextElements/Subheading";
-import { NormalText } from "../../components/TextElements/NormalText";
-import githubPng from "/icons/github.png";
-import liveDemoPng from "/icons/live-demo.png";
+import githubSvg from "/icons/github.svg";
+import liveDemoSvg from "/icons/live-demo.svg";
 import PropTypes from "prop-types";
+
+import { Button } from "../../components/FormElements/Button";
 import { ImageComponent } from "../../components/ImageComponents/ImageComponent";
+import { NormalText } from "../../components/TextElements/NormalText";
+import { Subheading } from "../../components/TextElements/Subheading";
+import { TagText } from "../../components/TextElements/TagText";
 
 export const ProjectCard = ({ project }) => {
   // Define the function to render tags
@@ -36,7 +37,7 @@ export const ProjectCard = ({ project }) => {
             className={"demo-btn"}
             btnUrl={project.homepage}
             iconAlt={"Web icon"}
-            iconUrl={liveDemoPng}
+            iconUrl={liveDemoSvg}
             btnText={"Live demo"}
           />
           {/* Render a button for viewing the code with provided information */}
@@ -44,7 +45,7 @@ export const ProjectCard = ({ project }) => {
             className={"github-btn"}
             btnUrl={project.htmlUrl}
             iconAlt={"Github icon"}
-            iconUrl={githubPng}
+            iconUrl={githubSvg}
             btnText={"View the code"}
           />
         </div>
