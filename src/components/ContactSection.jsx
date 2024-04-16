@@ -10,8 +10,8 @@ export const ContactSection = () => {
     <h1 className="section-title">Let's talk</h1>
     <img className={styles.profilepic} src={profilePic} width="150" alt="profile-picuture"/>
     <h2>Arnau Vidal</h2>
-    <h2>+46(0)063123345</h2>
-    <h2>arnauvidal@gmail.com</h2>
+    <h2>+46(0)708927033</h2>
+    <h2 className="long-word">arnauvidal@gmail.com</h2>
     <div className={styles.contactIcons}>
       <a href="https://github.com/vidalhuix" target="_blank"><img src={githubIcon} alt="github-icon"/></a>  
       <a href="https://www.linkedin.com/in/arnau-vidal-i-huix-4266a940/" target="_blank"><img src={IconLinkedin} alt="icon linkedin" /></a>
