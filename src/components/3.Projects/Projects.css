@@ -1,6 +1,6 @@
 .image-card {
   height: 200px;
-  width: 343px;
+  width: 280px;
   object-fit: cover;
   align-self: stretch;
   margin-bottom: 24px;
@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: auto;
   gap: 16px;
   align-self: stretch;
 }
@@ -31,6 +32,11 @@
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .project-buttons {
@@ -58,10 +64,25 @@
   color: #ffff;
 }
 
+@media (min-width: 350px) and (max-width: 667px) {
+  .project-card {
+    width: auto;
+  }
+
+  .project-info {
+    width: auto;
+  }
+
+  .image-card {
+    width: 343px;
+  }
+}
+
 @media (min-width: 667px) and (max-width: 1024px) {
   .project-card {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
   }
 
   .image-card {
@@ -77,6 +98,7 @@
     margin-left: 38px;
     margin-top: 64px;
     height: 280px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -86,10 +108,29 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    gap: 8px;
+  }
+
+  .button {
+    padding: 0;
+  }
+
+  .github-button,
+  .netlify-button {
+    min-width: 220px;
+  }
+
+  .netlify-button:hover,
+  .github-button:hover {
+    min-width: 220px;
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
+  .project-content {
+    width: 958px;
+  }
+
   .project-card {
     display: flex;
     align-items: flex-start;
@@ -107,6 +148,7 @@
   .project-info {
     margin-left: 38px;
     margin-top: 64px;
+    max-width: 959px;
     height: 280px;
     display: flex;
     flex-direction: column;
@@ -121,5 +163,16 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+  }
+
+
+  .github-button,
+  .netlify-button {
+    min-width: 220px;
+  }
+
+  .netlify-button:hover,
+  .github-button:hover {
+    min-width: 220px;
   }
 }

@@ -1,6 +1,6 @@
 .article-image-card {
   height: 200px;
-  width: 343px;
+  width: 280px;
   object-fit: cover;
   align-self: stretch;
   margin-bottom: 24px;
@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: auto;
   gap: 8px;
   align-self: stretch;
 }
@@ -63,11 +64,22 @@
   background-color: #d2b2d8;
 }
 
+@media (min-width: 340px) and (max-width: 667px) {
+  .article-image-card {
+    width: 343px;
+  }
+}
+
 @media (min-width: 667px) and (max-width: 1024px) {
   .article-image-card {
     height: 340px;
     width: 680px;
   }
+
+  .article-description {
+    width: 680px;
+  }
+
 }
 
 @media (min-width: 1025px) {

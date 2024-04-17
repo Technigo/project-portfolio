@@ -1,9 +1,10 @@
 .projects-container {
   display: flex;
-  width: 375px;
+  width: 320px;
   padding: 128px 16px 128px 16px;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .projects-heading {
@@ -15,6 +16,13 @@
   font-weight: 700;
   line-height: 66px;
 }
+
+@media (min-width: 340px) {
+  .projects-container {
+    width: auto;
+  }
+}
+
 
 @media (min-width: 667px) and (max-width: 1024px) {
   .projects-container {
@@ -31,7 +39,7 @@
 @media (min-width: 1025px) {
   .projects-container {
     width: auto;
-    padding: 128px 161px 124px 161px;
+    padding: 128px 100px 124px 100px;
   }
 
   .projects-heading {
