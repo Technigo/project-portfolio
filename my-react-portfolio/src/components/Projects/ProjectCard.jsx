@@ -6,11 +6,10 @@ export const ProjectCard = () => {
     <div className="project-card-section">
       {ProjectData.map((project, index) => (
         <div key={index} className="project-card">
-          {/* Apply styles directly to the img element */}
           <img
             src={project.imageUrl}
             alt={project.heading}
-            className="project-image" // Add a class for styling
+            className="project-image" 
           />
           <div className="content-container">
             <h2>{project.heading}</h2>
