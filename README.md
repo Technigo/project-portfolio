@@ -6,7 +6,7 @@
 
 # Technigo - React Portfolio Project
 
-As a end to spring 3 (focusing on React), we made a portfolio presenting the works we've done so far in the Bootcamp.
+As a end to sprint 3 (focusing on React), we made a portfolio presenting the works we've done so far in the Bootcamp.
 
 # Approach
 
