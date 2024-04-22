@@ -1,4 +1,4 @@
-import portrait from '../assets/portrait.png'
+import portrait from '../assets/portrait-small.png'
 import Lottie from 'lottie-react'
 import animation from '../assets/Animation-arrow-black.json'
 import './css/introduction.css'
@@ -12,31 +12,25 @@ export const Introduction = () => {
   return (
     <div className="intro-container">
       <div className="intro">
-        <div className="name">
-          <h2>Izabel Lind Färnstrand</h2>
-          <h1>
-            <span>Creative</span>
-          </h1>
-          <h1>Frontend Developer</h1>
-        </div>
+          <h1 className><span>Izabel Lind Färnstrand</span><br></br>
+          Creative<br /> Frontend Developer</h1>
         <div className="img-text">
           <img src={portrait} id="portrait" alt="portait of Izabel" />
           <p>
             I develop creative & userfriendly websites, with an eye for details.
-          </p>
-          <p>Based in Stockholm, Sweden</p>
-          <p>Available worldwide</p>
+          Based in Stockholm, Sweden
+          Available worldwide</p>
         </div>
-      </div>
-      <div className="arrow-container">
+      
         <a onClick={scrollDown}>
           <Lottie
+            id="arrow-down"
             animationData={animation}
             loop
-            style={{ width: 100, height: 100 }}
+            style={{ width: 80, height: 80 }}
           />
         </a>
+        </div>
       </div>
-    </div>
   )
 }

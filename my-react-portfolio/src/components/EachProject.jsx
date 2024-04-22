@@ -11,11 +11,11 @@ return(
             <div className="description">
                 <h2>{item.name}</h2>
                     <p>{item.description}</p>
-                    <div className="tags">
+                    <ul className="tags">
                     {item.tags.map((tag, index) => (
-                        <p className="tag" key={index}>{tag}</p>
+                        <li className="tag" key={index}>{tag}</li>
                     ))}
-                    </div>
+                    </ul>
                     <div className="links">
                     <a href={item.netlify_url} target="_blank"><img src={netlify} alt="button for viewing site" className="button"/></a>
                     <a href={item.github_url} target="_blank"><img src={github} alt="button to view in github" className="button"/></a>

@@ -10,37 +10,25 @@ export const Tech = () => {
   return (
     <section className="tech-section" id="tech">
       <div className="tech">
-        <div id="title-tech">
-          <h1>Tech</h1>
-        </div>
-        <div id="tech-description">
-          <p>
+          <h1 id="title-tech">Tech</h1>
+          <p id="tech-description">
             HTML, CSS, JAVASCRIPT ES6, React, Node.js, Mongo DB, Web
             Accesibility, APIs, Mob-programming
           </p>
-        </div>
-        <div id="plus">
-          <h1>+</h1>
-        </div>
-        <div id="art-title">
-          <h1>Art</h1>
-        </div>
-        <div id="art-description">
-          <p>
+          <h1 id="plus">+</h1>
+          <h1 id="art-title">Art</h1>
+          <p id="art-description">
             Visual identity & Concept Development, Design Lead & Art Direction,
             Digital Art & Illustrations
           </p>
-        </div>
       </div>
-      <div className="second-arrow-container">
         <a onClick={scrollDown}>
           <Lottie
             animationData={animation}
             loop
-            style={{ width: 100, height: 100 }}
+            style={{ width: 80, height: 80 }}
           />
         </a>
-      </div>
     </section>
   )
 }

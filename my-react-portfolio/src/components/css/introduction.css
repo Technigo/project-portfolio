@@ -10,20 +10,19 @@
   width: 90%;
   margin: 0 auto;
   height: fit-content;
-  padding: 6% 5% 0 5%;
+  padding: 0 5% 0 5%;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.intro h1 {
-  font-size: 4.5rem;
+.intro h1 span{
+  font-family: 'Modern-sans';
+  font-size: 26px;
 }
 
-.intro h2 {
-  color: rgb(138, 60, 60);
-  font-size: 2rem;
-  padding-bottom: 0.3em;
+.intro h1 {
+  font-size: 60px;
 }
 
 #portrait {
@@ -47,13 +46,11 @@
   line-height: 1.3;
 }
 
-.arrow-container {
-  max-width: 200px;
-  align-self: center;
-  margin-top: 1em;
+.intro a {
+ align-self: center;
 }
 
-.arrow-container:hover {
+.intro a:hover {
   cursor: pointer;
 }
 
@@ -65,11 +62,6 @@
   .intro h1 span {
     letter-spacing: 2px;
     line-height: 0.6;
-  }
-
-  .intro h2 {
-    font-size: 40px;
-    padding-bottom: 0;
   }
 
   #portrait {
@@ -95,17 +87,17 @@
 
 @media screen and (min-width: 1024px) {
   .intro {
-    flex-direction: row;
     text-align: left;
   }
   .intro h1 {
-    font-size: 180px;
+    font-size: 170px;
     word-spacing: 30px;
   }
 
   .intro h1 span {
-    font-size: 170px;
+    font-size: 50px;
     letter-spacing: 2px;
+    word-spacing: 2px;
     line-height: 0.6;
   }
 
@@ -130,13 +122,16 @@
     margin-bottom: 2em;
   }
 
-  .arrow-container {
-    margin-top: 3em;
-  }
 }
 @media screen and (min-width: 1200px) {
+  .intro{
+    margin-top: 10rem;
+  }
   .intro h2 {
     font-size: 60px;
     margin-top: 1em;
   }
+  .intro a {
+    margin-top: 4rem;
+   }
 }
