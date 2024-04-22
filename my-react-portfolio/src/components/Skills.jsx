@@ -4,7 +4,7 @@ export const Skills = () => {
     return (
         <section className="skills-section">
         <div className="skills">
-            <div id="skills-title"><h1>Skills</h1></div>
+            <h2 id="skills-title">Skills</h2>
             <div className="skill-category">
                 <h3><span id="code">Code</span></h3>
                 <ul>
@@ -28,6 +28,18 @@ export const Skills = () => {
                     <li>Figma</li>
                     <li>Keynote</li>
                     <li>Slack</li>
+                    </ul>
+            </div>
+            <div className="skill-category">
+                <h3><span id="upcoming">Art</span></h3>
+                <ul>
+                    <li>VR</li>
+                    <li>Light scultpures</li>
+                    <li>Live digital art</li>
+                    <li>Public art projects</li>
+                    <li>3D printing</li>
+                    <li>Welding and Casting</li>
+                    <li>Bronze</li>
                     </ul>
             </div>
             <div className="skill-category">
