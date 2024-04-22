@@ -4,47 +4,30 @@
   </a>
 </h1>
 
-# Technigo - React Portfolio Project
+# Portfolio Project
 
-Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
+This is the last project in sprint 2 of the bootcamp.
+With this porftolio we showcase our project we created through out the past weeks.
 
 ## Instructions
+
 [Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
 
-## Set up your own version of your portfolio
+## The Process
 
-We will use [Vite](https://vitejs.dev/guide/) to setup our project 😉
+Where do I start? At first glance the project seemed to be a simple task. Oh boy, was I wrong.
 
-```bash
-  npm create vite@latest my-react-portfolio --template
-```
+At first I created all the basic components I thought is needed according the Figma. What started with four components ended with 13 components (keep'em coming). In between there was a realization, that we should create reusable components and also breaking down as much as possible.
 
-#### Follow this GIF to setup your project
+Components are one thing, fetching data and passing the right needed props is another. At one point I had an eureka moment and it clicked. Before I never really understood how the props are passed, because the names were all the same.
 
-![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WEB/Sprint-2/week-8/vite-react_vjp0ep.gif)
+Moving on, after I finally had all the needed data I tried to arrange it according to the Figma file. I was not completely happy how this design looked, because it didn't reflect my personality. But that was the least issue I had. The responsiveness was giving me a hard time. CSS is a humbling experience with every project. Epsecially when working on responsiveness.
 
-## Installation
+At the end I did added a ticker tape. I am not a huge fan of animation like that, but since it's in the bottom of the page, I don't mind.
 
-Use the `cd` command to move into the folder
+What I'd consider is to make it more SEO friendly. SPA is not really best friend with SEO and I'd like take more time to make the page more readable with SEO best practise.
 
-```bash
-  cd my-react-portfolio
-```
+## View it live
 
-Install the dependencies
-
-```bash
-  npm i
-```
-
-Open the project in a separate VS Code editor
-
-```bash
-  code .
-```
-
-Open up a terminal inside VS code and lets run the project in a local environment
-
-```bash
-  npm run dev
-```
+https://portfolio-nathalie.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c1e2e1c-e8e7-4f19-a861-5c57750228df/deploy-status)](https://app.netlify.com/sites/portfoilo-nathalie/deploys)

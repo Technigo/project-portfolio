@@ -1,0 +1,42 @@
+.ticker-band {
+	overflow-x: hidden;
+	display: flex;
+	height: 114px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	width: 100vw;
+	max-width: 100%;
+	color: white;
+	background-color: var(--main-color);
+}
+
+.ticker {
+	--direction: normal;
+	--duration: 60s;
+	--delay: 0s;
+	--iteration-count: infinite;
+	display: flex;
+	gap: 1rem;
+	flex: 0 0 auto;
+	overflow: visible;
+	align-items: center;
+	animation: marquee var(--duration) linear var(--delay) var(--iteration-count);
+	animation-play-state: var(--play);
+	animation-delay: var(--delay);
+	animation-direction: var(--direction);
+}
+
+.ticker-band:hover .ticker {
+	animation-play-state: paused;
+}
+
+/* Animations */
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}

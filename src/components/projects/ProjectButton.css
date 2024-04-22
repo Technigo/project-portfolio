@@ -1,0 +1,69 @@
+.btn-container {
+	display: flex;
+	flex-direction: column;
+	padding: 24px 0 0 0;
+	text-align: left;
+	gap: 16px;
+}
+
+.globe-btn,
+.github-btn {
+	display: inline-flex;
+	border-radius: 40px;
+	padding: 0;
+	align-items: center;
+	border: none;
+	gap: 7px;
+}
+
+button > svg path {
+	width: 48px;
+	height: 48px;
+	fill: #333;
+}
+
+button > p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: left;
+	color: #333;
+	padding: 0 16px 0 0;
+	margin: 0;
+}
+
+.globe-btn:hover {
+	cursor: pointer;
+	background-color: var(--dark-shade);
+	color: white;
+	transition: 0.3s ease-in-out;
+}
+
+.github-btn:hover {
+	cursor: pointer;
+	background-color: var(--dark-accent);
+	color: white;
+	transition: 0.3s ease-in-out;
+}
+
+button:hover > p {
+	color: white;
+}
+
+.github-btn:hover svg path,
+.globe-btn:hover svg path {
+	fill: white;
+}
+
+button:focus,
+button:focus-visible {
+	outline: 4px auto var(--dark-accent);
+}
+
+@media screen and (min-width: 745px) {
+	.btn-container {
+		display: flex;
+		flex-direction: row;
+		gap: 32px;
+	}
+}
