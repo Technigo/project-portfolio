@@ -10,13 +10,13 @@ export const Tech = () => {
   return (
     <section className="tech-section" id="tech">
       <div className="tech">
-          <h1 id="title-tech">Tech</h1>
+          <h2 id="title-tech">Tech</h2>
           <p id="tech-description">
             HTML, CSS, JAVASCRIPT ES6, React, Node.js, Mongo DB, Web
             Accesibility, APIs, Mob-programming
           </p>
-          <h1 id="plus">+</h1>
-          <h1 id="art-title">Art</h1>
+          <h2 id="plus">+</h2>
+          <h2 id="art-title">Art</h2>
           <p id="art-description">
             Visual identity & Concept Development, Design Lead & Art Direction,
             Digital Art & Illustrations

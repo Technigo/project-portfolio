@@ -9,7 +9,7 @@ return(
             <div className="each-project" key={item.id}>
                 <img id="project-img" src={item.image} alt={item.name}/>
             <div className="description">
-                <h2>{item.name}</h2>
+                <h3>{item.name}</h3>
                     <p>{item.description}</p>
                     <ul className="tags">
                     {item.tags.map((tag, index) => (

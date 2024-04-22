@@ -10,7 +10,7 @@ export const Contact = () => {
   return (
     <div className="contact">
     <div className="contact-info">
-      <h1>Let&apos;s talk</h1>
+      <h2>Let&apos;s talk</h2>
       <img src={portrait} id="portrait" alt="portait of Izabel" />
       <h3>Izabel Lind Färnstrand</h3>
       <h3><a href="tel:0046729632973">+46729632973</a></h3>
