@@ -5,8 +5,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-  margin-right: 16px;
-  margin-left: 16px;
 }
 
 .projectcard-content-container {
@@ -29,6 +27,7 @@
   display: flex;
   align-items: flex-start;
   gap: 4px;
+  flex-wrap: wrap;
 }
 
 .tag-box {
@@ -59,6 +58,7 @@
 
 .repo-image {
   height: 200px;
+  width: 320px;
   border-bottom: 10px solid var(--primary-color);
   border-left: 10px solid var(--primary-color);
   align-self: stretch;
@@ -115,6 +115,16 @@
 }
 
 /* --------------- // RESPONSIVE DESIGN // ---------------- */
+
+@media (max-width: 375px) {
+  .project-card {
+    max-width: 288px;
+  }
+
+  .repo-image {
+    max-width: 288px;
+  }
+}
 
 @media (min-width: 745px) {
   .project-card {
