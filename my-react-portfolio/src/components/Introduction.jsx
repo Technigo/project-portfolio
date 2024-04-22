@@ -1,5 +1,4 @@
-import portrait from '../assets/portrait-small.jpgq
-'
+import portrait from '../assets/portrait-small.jpg'
 import Lottie from 'lottie-react'
 import animation from '../assets/Animation-arrow-black.json'
 import './css/introduction.css'
