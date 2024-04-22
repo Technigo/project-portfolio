@@ -1,6 +1,4 @@
 import myImage from "/src/assets/me.png"
-import github from "/src/assets/github.png"
-import insta from "/src/assets/insta.png"
 import "./contact.css"
 
 export default function Contact() {
