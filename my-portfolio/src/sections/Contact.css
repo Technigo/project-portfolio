@@ -1,0 +1,103 @@
+/* --------------- Containers and boxes ---------------- */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 128px 16px;
+}
+
+.contact-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.contact-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ------------------ Headers and text ------------------- */
+
+.contact-title {
+  color: var(--primary-color);
+  font-family: var(--header-font);
+  font-size: var(--font-size-56);
+  font-weight: var(--font-weight-700);
+  text-align: center;
+}
+
+.contact-text-box p {
+  font-family: var(--header-font);
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-600);
+}
+
+/* contains social media icons */
+.platform-icons-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.platform-icons-container a:hover {
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+/* --------------- // RESPONSIVE DESIGN // ---------------- */
+
+@media (max-width: 375px) {
+  .contact-text-box p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 745px) {
+  .contact-container {
+    padding: 128px 32px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .contact-container {
+    padding: 128px 162px 128px 161px;
+  }
+
+  .contact-content-container {
+    gap: 128px;
+  }
+
+  .contact-title {
+    font-size: var(--font-size-80);
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .contact-text-box p {
+    font-size: var(--font-size-32);
+  }
+}
+
+@media (min-width: 1513px) {
+  .contact-container {
+    padding: 128px 234px;
+  }
+}

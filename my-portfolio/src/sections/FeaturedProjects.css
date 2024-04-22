@@ -1,0 +1,60 @@
+/* --------------- Containers and boxes ---------------- */
+
+.featured-projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 128px 16px;
+}
+
+.featured-projects-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+/* ----------------- Headers and text ------------------ */
+
+.project-list-title {
+  color: var(--primary-color);
+  font-family: var(--header-font);
+  font-size: var(--font-size-56);
+  font-weight: var(--font-weight-700);
+  line-height: 66px;
+  text-align: center;
+  align-self: stretch;
+}
+
+/* --------------- // RESPONSIVE DESIGN // ---------------- */
+
+@media (min-width: 745px) {
+  .featured-projects-container {
+    padding: 128px 32px;
+    justify-content: center;
+  }
+
+  .project-list-title {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1281px) {
+  .featured-projects-container {
+    padding: 128px 161px 124px 161px;
+  }
+
+  .featured-projects-content-container {
+    gap: 128px;
+  }
+
+  .project-list-title {
+    font-size: var(--font-size-80);
+  }
+}
+
+@media (min-width: 1513px) {
+  .featured-projects-container {
+    padding: 128px 234px 124px 234px;
+  }
+}

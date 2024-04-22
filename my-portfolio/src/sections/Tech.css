@@ -1,0 +1,86 @@
+/* --------------- Containers and boxes ---------------- */
+.tech-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 128px 16px;
+  background-color: var(--primary-color);
+}
+
+.tech-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+/* ------------------ Headers and text ------------------- */
+
+.tech-title {
+  font-family: var(--header-font);
+  font-size: var(--font-size-56);
+  font-weight: var(--font-weight-700);
+  color: #fff;
+  text-align: center;
+}
+
+.tech-content-container p {
+  font-family: var(--text-font);
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-600);
+  color: #fff;
+}
+
+/* --------------- // RESPONSIVE DESIGN // ---------------- */
+
+@media (min-width: 745px) {
+  /* Containers and boxes */
+  .tech-container {
+    padding: 256px 32px;
+  }
+
+  .tech-content-container {
+    width: 680px;
+  }
+
+  /* Headers and text */
+  .tech-content-container p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* Containers and boxes */
+  .tech-container {
+    height: 980px;
+    padding: 0 161px;
+  }
+
+  .tech-content-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 124px;
+    width: 958px;
+  }
+
+  /* Headers and text */
+  .tech-title {
+    font-size: var(--font-size-80);
+  }
+
+  .tech-content-container p {
+    font-size: var(--font-size-32);
+    text-align: left;
+  }
+}
+
+@media (min-width: 1513px) {
+  /* Containers and boxes */
+  .tech-container {
+    padding: 0 234px;
+  }
+
+  .tech-content-container {
+    width: 1044px;
+  }
+}

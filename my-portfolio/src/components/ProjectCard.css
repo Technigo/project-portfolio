@@ -1,0 +1,163 @@
+/* --------------- Containers and boxes ---------------- */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.projectcard-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 24px;
+}
+
+.projectcard-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 16px;
+}
+
+.tags-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.tag-box {
+  display: flex;
+  align-items: flex-start;
+  padding: 2px 6px;
+  background-color: #000;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 16px;
+}
+
+.button-container button {
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+  gap: 7px;
+  border-radius: 40px;
+  background-color: #f5f5f5;
+  border: none;
+}
+/* ----- Project image ----- */
+
+.repo-image {
+  height: 200px;
+  width: 320px;
+  border-bottom: 10px solid var(--primary-color);
+  border-left: 10px solid var(--primary-color);
+  align-self: stretch;
+}
+
+/* ------------------ Headers and text ------------------- */
+
+.projectcard-text-container h2 {
+  font-family: var(--header-font);
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-600);
+  align-self: stretch;
+}
+
+.projectcard-text-container p {
+  font-family: var(--text-font);
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-400);
+  align-self: stretch;
+}
+
+.tag-box p {
+  color: #fff;
+  font-family: var(--header-font);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-600);
+}
+
+.button-container button {
+  color: #333;
+  font-family: var(--header-font);
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-600);
+}
+
+/* Hovering effects of buttons in the project cards */
+
+.live-button:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.live-button:hover img {
+  filter: invert(100%) brightness(2);
+}
+
+.github-button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.github-button:hover img {
+  filter: invert(100%) brightness(2);
+}
+
+/* --------------- // RESPONSIVE DESIGN // ---------------- */
+
+@media (max-width: 375px) {
+  .project-card {
+    max-width: 288px;
+  }
+
+  .repo-image {
+    max-width: 288px;
+  }
+}
+
+@media (min-width: 745px) {
+  .project-card {
+    flex-direction: row;
+  }
+  .repo-image {
+    width: 200px;
+    height: 280px;
+  }
+
+  .projectcard-text-container {
+    gap: 16px;
+  }
+
+  .button-container {
+    flex-direction: row;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 1281px) {
+  .projectcard-text-container h2 {
+    font-size: var(--font-size-32);
+  }
+
+  .repo-image {
+    width: 408px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 1513px) {
+  .project-card {
+    width: 1044px;
+  }
+}
