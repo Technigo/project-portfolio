@@ -1,9 +1,8 @@
 .projectlist {
   background-color: white;
   color: black;
-  /* display: grid;
-  grid-template-columns: repeat(8, 1fr); */
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
   margin: 128px 16px;
 }
 
@@ -11,26 +10,51 @@
   font-size: 80px;
   grid-column: 2 / -2;
   color: rebeccapurple;
-  text-align: center;
+  text-align: left;
 }
 
-.project-container h2{
-
-    /* margin: 5rem 16px; */
+.project-container h2 {
+  margin: 5rem 16px;
 }
 
 .project-container {
   grid-column: 2 / -2;
 }
+.project-card {
+  margin: 124px 0;
+}
 
 /* Tablet */
 @media only screen and (max-width: 1280px) {
+  .projectlist h2 {
+    text-align: left;
+    grid-column: 1 / -1;
+    margin: 0 16px;
+  }
 
+  .project-container h2 {
+  }
+  .project-card {
+    margin: 64px 0;
+  }
+  .project-container {
+    grid-column: 1 / -1;
+    margin: 0 16px;
+  }
 }
 
 /* Phone */
 @media only screen and (max-width: 745px) {
- .projectlist h2 {
-  font-size: 56px;
- }
+  .projectlist h2 {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .project-container {
+    grid-column: 1 / -1;
+  }
+
+  .project-card {
+    margin: 64px 0;
+  }
 }
