@@ -13,7 +13,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(8, 1fr);
-  margin: 332px 16px;
+  margin: 332px 16px 0 0;
 }
 
 .profile-title {
@@ -46,6 +46,7 @@
   align-items: center;
   position: relative;
   animation: bounce 2s infinite;
+  margin: 300px 0 0 0;
 }
 
 .arrow {
@@ -60,7 +61,7 @@
   0% {
     transform: translateY(0px);
   }
-  50%{
+  50% {
     transform: translateY(16px);
   }
 }
@@ -68,14 +69,14 @@
 /* Tablet */
 @media only screen and (max-width: 1280px) {
   .profile {
-      margin: 128px 32px 0 32px;
-      padding: 0;
+    margin: 128px 32px 0 32px;
+    padding: 0;
   }
 
-  .profile-picture{
+  .profile-picture {
     grid-column: 1;
   }
-  
+
   .profile-title {
     grid-column: 1 / -1;
   }
@@ -84,7 +85,10 @@
     /* padding: 0 2rem; */
     grid-column: 2 / -1;
     font-size: 18px;
+  }
 
+  .profile-arrow {
+    margin: 0;
   }
 
   .profile-title h2 {
@@ -124,5 +128,8 @@
   }
   .profile-title h1 {
     font-size: 32px;
+  }
+  .profile-arrow {
+    margin: 0;
   }
 }
