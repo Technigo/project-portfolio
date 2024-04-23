@@ -12,16 +12,16 @@ export const Talk = () => {
       <p>+46(0)73-909 11 99</p>
       <p>martin.t.joensson@gmail.com</p>
       <div className="socialmedia">
-        <a href="www.linkedin.com/in/martin-jönsson-058064163">
+        <a href="https://www.linkedin.com/in/martin-jönsson-058064163">
           <img src="./Btn - linkedin.png" alt="LinkedIn" />
         </a>
-        <a href="www.linkedin.com/in/martin-jönsson-058064163">
+        <a href="https://github.com/Martin-Joensson">
           <img src="./Btn - github.png" alt="GitHub" />
         </a>
-        <a href="www.linkedin.com/in/martin-jönsson-058064163">
+        <a href="https://stackoverflow.com/users/24608323/martin-j%c3%b6nsson">
           <img src="./Btn - stackoverflow.png" alt="StackOverflow" />
         </a>
-        <a href="www.linkedin.com/in/martin-jönsson-058064163">
+        <a href="https://www.instagram.com/sajkiq/">
           <img src="./Btn - instagram.png" alt="Instagram" />
         </a>
       </div>
@@ -29,4 +29,4 @@ export const Talk = () => {
   );
 };
 
-// https://github.com/Martin-Joensson
+// 
