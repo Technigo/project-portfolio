@@ -13,7 +13,7 @@ export const Skills = () => {
           <p>CSS3</p>
           <p>Javascript ES6</p>
           <p>React</p>
-          <p>Styled Components</p>
+          <p>Tailwind CSS</p>
           <p>GitHub</p>
         </div>
         <div className="sub subTools">
@@ -26,7 +26,8 @@ export const Skills = () => {
         </div>
         <div className="sub subUpcoming">
           <h3>Upcoming</h3>
-          <p>Node.js</p>
+          <p>Angular</p>
+          <p>MongoDB</p>
         </div>
         <div className="sub subMore">
           <h3>More</h3>
