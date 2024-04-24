@@ -1,4 +1,4 @@
-import "../Texts/text.css";
+import "./Tags";
 
 export const Tag = ({ tagText }) => {
   return (
@@ -8,6 +8,8 @@ export const Tag = ({ tagText }) => {
           <p className="tag-text">{tag}</p>
         </span>
       ))}
+
+      <tagText />
     </div>
   );
 };

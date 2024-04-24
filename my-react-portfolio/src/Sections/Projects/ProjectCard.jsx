@@ -1,6 +1,6 @@
 import "./projectcard.css";
-import { Tag } from "../../ReusableComponents/Texts/Tag";
-import { ProjectButtons } from "../../ReusableComponents/Buttons/ProjectButtons";
+import { Tag } from "../../ReusableComponents/Texts/Tags";
+/*import { ProjectButtons } from "../../ReusableComponents/Buttons/ProjectButtons";*/
 
 export const ProjectCard = ({ project }) => {
   return (
