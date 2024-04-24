@@ -1,114 +1,45 @@
-header {
-  height: 100vh;
+.contact-container {
+  padding: 128px 32px 128px 33px;
+}
+
+.contact-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
   display: flex;
-  padding: 64px 16px;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.footer-heading {
+  color: var(--primary);
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: var(--primary);
+}
+
+.contact-icons {
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
+.contact-icons .icons {
+  transition: opacity 0.2s ease-in-out;
 }
 
-.profile-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.header h3 {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.main-title h2 {
-  color: #0b24f5;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.normal-text h2 {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-align: center;
-}
-
-/* TABLET */
-@media (max-width: 1279px) and (min-width: 744px) {
-  header {
-    margin: 0 auto;
-    height: 100vh;
-    padding: 128px 64px 0px 64px;
-    display: grid;
-    grid-template-columns: 1fr 430px;
-    grid-template-rows: auto;
-    gap: 0px;
-  }
-
-  section {
-    gap: 0 px;
-  }
-
-  .headings {
-    grid-column: 1 / span 3;
-    grid-row: 1;
-  }
-
-  .profile-image {
-    grid-row: 2;
-  }
-
-  .normal-text {
-    grid-row: 2;
-    grid-column: span 2;
-  }
-}
-
-@media (min-width: 1280px) {
-  header {
-    margin: 0 auto;
-    height: 100vh;
-    padding: 332px 220px 64px 220px;
-    display: grid;
-    grid-template-columns: 1fr 600px;
-    grid-template-rows: auto;
-    max-width: 840px;
-    gap: 0;
-  }
-
-  section {
-    gap: 0 px;
-  }
-
-  .headings {
-    grid-column: 1 / span 2;
-    grid-row: 1;
-  }
-
-  .profile-image {
-    grid-row: 2;
-  }
-
-  .normal-text {
-    grid-row: 2;
-    grid-column: 2;
-  }
+.contact-icons .icons:hover {
+  filter: invert(100%) brightness(100%);
 }

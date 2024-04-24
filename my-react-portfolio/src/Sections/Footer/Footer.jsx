@@ -1,22 +1,43 @@
 import "./footer.css";
 import { CircleImage } from "../../ReusableComponents/Images/CircleImage";
-import { MainTitle } from "../../ReusableComponents/Texts/MainTitle";
+import { LargeText } from "../../ReusableComponents/Texts/LargeText";
+import { SmallSubTitle } from "../../ReusableComponents/Texts/SmallSubTitle";
+import { ProjectImage } from "../../ReusableComponents/Images/ProjectImage";
+import evelynImage from "../../assets/cvimage/evelyn.png";
 
 export const Footer = () => {
   return (
-    <header>
-      <section className="main-title">
-        <MainTitle text={"Let's Talk!"} />
-      </section>
-      <section className="profile-image">
-        <CircleImage />
-      </section>
+    <footer className="contact-container">
+      <section className="contact-wrapper">
+        <LargeText
+          className="footer-heading"
+          text="Let's talk!"
+          aria-label="This is the footer heading"
+        />
+        <CircleImage
+          className="profile-img"
+          src={evelynImage}
+          alt="evelyn profile image"
+        />
 
-      <section className="normal-text">
-        <h2>Hamdi Olad</h2>
-        <h2>+46 (0)765669571</h2>
-        <h2>oladhamdi@gmail.com</h2>
+        <div className="contact-info">
+          <SmallSubTitle text={"Hamdi Olad"} />
+          <a href="tel:+46765669571">
+            <SmallSubTitle text={"+46(0)765669571"} />
+          </a>
+          <a href="mailto:oladhamdi@gmail.com">
+            <SmallSubTitle text={"oladhamdi@gmail.com"} />
+          </a>
+        </div>
+        <div className="contact-icons">
+          <a href="https://www.linkedin.com/in/hamdi-olad/">
+            <ProjectImage className="icons" src={"/icon/linkedin.svg"} />
+          </a>
+          <a href="https://github.com/hamdiolad">
+            <ProjectImage className="icons" src={"/icon/github.svg"} />
+          </a>
+        </div>
       </section>
-    </header>
+    </footer>
   );
 };
