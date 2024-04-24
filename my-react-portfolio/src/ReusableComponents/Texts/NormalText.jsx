@@ -1,5 +1,5 @@
-import "../Texts/text.css";
+import "./text.css";
 
-export const NormalText = ({ text }) => {
-  return <p className="normal">{text}</p>;
+export const NormalText = ({ className, text }) => {
+  return <p className={className}>{text}</p>;
 };
