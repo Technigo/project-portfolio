@@ -5,10 +5,19 @@ import SquigglyLine from './squigglyline';
 import Article1 from '../assets/Article1.jpg'; // Path to your image
 import Article2 from '../assets/Article2.jpg'; // Path to your image
 import Article3 from '../assets/Article3.jpg'; // Path to your image
+import Article4 from '../assets/Article4.jpg'; // Path to your image
 
 function Presentation() {
   // Define the articles array here
   const articles = [
+    {
+      id: 4,
+      title: "Coding and ADHD- a match made in heaven?",
+      description: "I struggled a lot in going into code because of the diagnosis, but now, I realize that coding is exactly what my ADHD brain needs",
+      imageUrl: Article4,
+      date: "April 2024",
+      url: "https://medium.com/@alexandrameija/coding-and-adhd-a-match-made-in-heaven-d8f564b17df5" // Add the article's URL here
+    },
     {
       id: 3,
       title: "Imposter syndrome and when it hits you",
