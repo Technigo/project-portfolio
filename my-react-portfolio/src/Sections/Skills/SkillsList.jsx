@@ -1,5 +1,4 @@
 import skills from "./skills.json";
-
 import { SubTitle } from "../../ReusableComponents/Texts/SubTitle";
 
 // Component for each individual skills list.
@@ -8,19 +7,17 @@ export const SkillsList = () => {
     <>
       {skills.map((skillCategory) => (
         <article key={skillCategory.name}>
-          {/* Setting the skillcategory-name as a classname, but in lowercase */}
-          <div className="skill-heading">
+          <div className="skill-box">
             <SubTitle
-              className={skillCategory.name.toLowerCase().replace(/ /g, "-")}
+              className={`category-title title-${skillCategory.id}`}
               text={skillCategory.name}
             />
+            <ul>
+              {skillCategory.skillset.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))}
+            </ul>
           </div>
-          <ul>
-            {/* Mapping through the skills to show them as a list */}
-            {skillCategory.skillset.map((skill, index) => (
-              <li key={index}>{skill}</li>
-            ))}
-          </ul>
         </article>
       ))}
     </>

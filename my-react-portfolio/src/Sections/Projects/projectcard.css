@@ -1,0 +1,114 @@
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.project-image {
+  width: 97%;
+  min-width: 200px;
+  max-height: 100%;
+  object-fit: cover;
+  border-bottom: 10px solid var(--primary);
+  border-left: 10px solid var(--primary);
+}
+
+.normaltext {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  margin-top: 10px;
+}
+
+.projectDescription {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 16px;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.tag {
+  display: flex;
+  margin-top: 4px;
+  gap: 4px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+/* ------------ TABLET ------------ */
+@media (max-width: 1279px) and (min-width: 744px) {
+  .projectContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* Two columns for image and content */
+    grid-template-rows: auto;
+    /* Single row for each item */
+    gap: 37px;
+  }
+
+  .project-image {
+    height: 280px;
+    width: 200px;
+    flex-shrink: 0;
+  }
+
+  .normaltext {
+    grid-column: 2 / 3;
+    /* Place the text section in the second column */
+    grid-row: 1 / 2;
+    /* Place the text section in the first row */
+  }
+
+  .project-buttons {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 32px;
+  }
+}
+
+/* ------------ DESKTOP ------------ */
+@media (min-width: 1280px) {
+  .projectContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 40px;
+    max-width: 820px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 280px;
+    border-bottom: 20px solid var(--primary);
+    border-left: 20px solid var(--primary);
+    flex-shrink: 0;
+  }
+
+  .normaltext {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project-buttons {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 15px;
+    gap: 32px;
+    align-items: end;
+  }
+}

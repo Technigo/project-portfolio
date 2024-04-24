@@ -3,7 +3,7 @@ import { CircleImage } from "../../ReusableComponents/Images/CircleImage";
 import { LargeText } from "../../ReusableComponents/Texts/LargeText";
 import { SmallSubTitle } from "../../ReusableComponents/Texts/SmallSubTitle";
 import { ProjectImage } from "../../ReusableComponents/Images/ProjectImage";
-import hamdi from "./assets/hamdi.jpg";
+import hamdi from "../assets/hamdi.jpg";
 
 export const Footer = () => {
   return (

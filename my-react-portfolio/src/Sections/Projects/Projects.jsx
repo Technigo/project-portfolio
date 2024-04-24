@@ -1,16 +1,12 @@
-import { MainTitle } from "../../ReusableComponents/Texts/MainTitle";
-import { ProjectCard } from "../Projects/ProjectCard";
 import "./projects.css";
+
+import { LargeText } from "../../ReusableComponents/Texts/LargeText";
+import { ProjectCard } from "../Projects/ProjectCard";
 
 export const Projects = ({ projects }) => {
   return (
-    <section>
-      <div className="card-header-wrapper">
-        <MainTitle
-          className={"featured-projects-heading"}
-          text={"Featured Projects"}
-        />
-      </div>
+    <section className="projectWrapper">
+      <LargeText className="heading-project" text="Featured Projects" />
       {projects.map((project, index) => (
         <div key={index}>
           <ProjectCard project={project} />

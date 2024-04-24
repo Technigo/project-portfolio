@@ -1,163 +1,91 @@
 header {
   display: flex;
-  width: 375px;
-  padding: 64px 16px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 64px 16px 32px 16px;
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 64px 0;
   gap: 32px;
-  width: 375px;
-  padding: 64px 16px;
-
-  justify-content: center;
-  align-items: center;
 }
 
-.main-title {
-  font-family: Montserrat;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 39px;
-  letter-spacing: 0em;
-  /*text-align: left;*/
-  color: blue;
+.headings {
+  align-self: start;
 }
 
-.circle-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 164px;
-  background: url("https://ca.slack-edge.com/T6RP2QWTG-U03HGMT40CQ-1c34b07098e6-512"),
-    lightgray 50% / cover no-repeat;
+.subtitle {
+  margin-bottom: 7px;
 }
 
-.normal-text {
-  color: #000;
-  font-family: Hind;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  width: 343px;
-  height: 203px;
-  align-self: stretch;
-}
-
-.sub-title {
-  align-self: stretch;
-  color: #000;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  width: 343px;
-  height: 22px;
-
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-.arrow {
-  padding: 0 16px 64px 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Animation to make the arrow move */
-  position: relative;
-  top: 0;
-  /* Animation is animated here */
-  animation: arrowMove 1.7s ease-in infinite;
-}
-
-/*TABLET */
+/* ------------ MEDIA QUERIES ------------ */
+/* ------------ TABLET ------------ */
 @media (max-width: 1279px) and (min-width: 744px) {
   header {
-    display: inline-flex;
-    padding: 128px 64px 0px 64px;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 128px;
+    margin: 0 auto;
+    padding: 128px 64px 128px 64px;
+    display: grid;
+    grid-template-columns: 1fr 430px;
+    grid-template-rows: auto;
   }
 
-  .sub-title {
-    align-self: stretch;
-    color: #000;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+  .headings {
+    grid-column: 1 / span 2;
+    grid-row: 1;
   }
 
-  .main-title {
-    align-self: stretch;
-    color: #0b24f5;
-    font-family: Montserrat;
+  .headings h2 {
     font-size: 56px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
   }
 
-  .normal-text {
-    flex: 1 0 0;
-    color: #000;
-    font-family: Hind;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  .profile-image {
+    grid-row: 2;
   }
 
-  .circle-image {
-    width: 164px;
-    height: 164px;
-    border-radius: 164px;
-    background: url("https://ca.slack-edge.com/T6RP2QWTG-U03HGMT40CQ-1c34b07098e6-512"),
-      lightgray 50% / cover no-repeat;
+  .intro-text {
+    grid-row: 2;
+    grid-column: span 2;
   }
 
-  .arrow {
-    padding: 0 16px 64px 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Animation to make the arrow move */
-    position: relative;
-    top: 0;
-    /* Animation is animated here */
-    animation: arrowMove 1.7s ease-in infinite;
+  .arrow-container {
+    grid-column: 1 / -1;
+    /* Span full width */
+    justify-self: center;
+    /* Center horizontally in the grid cell */
   }
 }
 
-/*DESKTOP
+/* ------------ DESKTOP ------------ */
 @media (min-width: 1280px) {
   header {
-    display: inline-flex;
+    margin: 0 auto;
     padding: 332px 220px 64px 220px;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 199px;
-    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    grid-template-rows: auto;
+    max-width: 840px;
   }
 
-  
+  .headings {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
 
-  .circle-image {
-    width: 164px;
-    height: 164px;
-    border-radius: 164px;
-    background: url("https://ca.slack-edge.com/T6RP2QWTG-U03HGMT40CQ-1c34b07098e6-512"),
-      lightgray 50% / cover no-repeat;
+  .headings h2 {
+    font-size: 75px;
+  }
+
+  .profile-image {
+    grid-row: 2;
+  }
+
+  .intro-text {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .arrow-container {
+    grid-column: 1 / -1;
+    /* Adjust if it needs to span fewer columns */
+    justify-self: center;
   }
 }
-*/

@@ -1,70 +1,76 @@
 .skills {
-  background-color: blue;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--text);
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Center horizontally */
+  justify-content: center;
   padding: 128px 16px;
+}
+
+.heading {
+  color: white;
+  padding-bottom: 64px;
+}
+
+.skill-section {
+  display: grid;
+  text-align: center;
   gap: 64px;
-  text-align: center;
 }
 
-.skill-heading h3 {
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.skill-heading li {
-  color: #fff;
-  text-align: center;
-  font-family: Hind;
+.skill-box ul {
+  color: white;
+  font-family: var(--paragraph-font);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-.skills ul {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
-/* ------------ MEDIA QUERIES ------------ */
-/* ------------ Tablet only ------------ */
-@media (max-width: 1279px) and (min-width: 744px) {
-  .skills {
-    padding: 256px 64px;
-  }
+.category-title {
+  display: inline-flex;
+  padding: 2px 6px;
+  align-items: flex-start;
+  margin-right: 4px;
+  color: white;
+  margin-bottom: 16px;
+}
 
-  .skill-cards-section {
-    display: grid;
+.title-code {
+  background-color: var(--hover-pink);
+}
+
+.title-toolbox {
+  background-color: #2483e0;
+}
+
+.title-upcoming {
+  background-color: #6db486;
+}
+
+.title-more {
+  background-color: var(--hover-yellow);
+}
+
+/*----------- Media Query ------------*/
+/*----------- TABLET ------------*/
+@media (max-width: 1279px) and (min-width: 744px) {
+  .skill-section {
     grid-template-columns: repeat(2, 1fr);
-    /* Two columns */
-    gap: 64px;
+    /* 2 columns for tablets */
   }
 }
 
-/* ------------ Desktop only ------------ */
+/*----------- Media Query -----------*/
+/*----------- DESKTOP ------------*/
 @media (min-width: 1280px) {
-  .skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    gap: 128px;
-  }
-
-  /* .skills p.large {
-            text-align: left;
-            max-width: 600px;
-        } */
-
-  .skill-cards-section {
-    display: flex;
-    gap: 128px;
+  .skill-section {
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns for desktop */
   }
 }

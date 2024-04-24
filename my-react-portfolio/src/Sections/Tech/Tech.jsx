@@ -1,13 +1,17 @@
-import { MainTitle } from "../../ReusableComponents/Texts/MainTitle";
+import "./tech.css";
 import { LargeText } from "../../ReusableComponents/Texts/LargeText";
+import { NormalText } from "../../ReusableComponents/Texts/NormalText";
+
+const techText =
+  "HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, API:s, pair programming, Github.";
 
 export const Tech = () => {
-  const techText =
-    "HTML, CSS, Flexbox, Grids, JavaScript, ES7, JSX, React, React Hooks, Node.js, Npm, Web Accessibility, APIs, mob-programming, pair-programming, GitHub.";
   return (
     <section className="tech">
-      <MainTitle className={"tech-text"} text={"Tech"} />
-      <LargeText text={techText} />
+      <section className="tech-wrapper">
+        <LargeText className="tech-heading" text={"Tech"} />
+        <NormalText className="tech-paragraph" text={techText} />
+      </section>
     </section>
   );
 };
