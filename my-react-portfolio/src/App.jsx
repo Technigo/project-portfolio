@@ -4,7 +4,7 @@ import { Projects } from "./Sections/Projects/Projects";
 import { Tech } from "./Sections/Tech/Tech";
 import { Skills } from "./Sections/Skills/Skills";
 import { Footer } from "./Sections/Footer/Footer";
-//import { FooterBanner } from "../src/ReusableComponents/Animation/Footerbanner/FooterBanner";
+import { FooterBanner } from "../src/ReusableComponents/Animation/Footerbanner/FooterBanner";
 // import { MyWords } from "./Sections/MyWordSection/MyWords";
 
 // Import the JSON data directly

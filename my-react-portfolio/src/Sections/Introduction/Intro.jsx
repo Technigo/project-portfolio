@@ -3,7 +3,9 @@ import { CircleImage } from "../../ReusableComponents/Images/CircleImage";
 import { MainTitle } from "../../ReusableComponents/Texts/MainTitle";
 import { NormalText } from "../../ReusableComponents/Texts/NormalText";
 import { SmallSubTitle } from "../../ReusableComponents/Texts/SmallSubTitle";
-import hamdi from "./assets/hamdi.jpg";
+//import hamdi from "../../assets/hamdi.jpg";
+import hamdi from "../../../public/assets/hamdi.jpg";
+
 import { ArrowDownAnimation } from "../../ReusableComponents/Animation/Arrow/ArrowDownAnimation";
 
 const introText =

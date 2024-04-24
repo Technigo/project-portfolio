@@ -1,6 +1,6 @@
 import "./projectbuttons.css";
-import blackLiveDemoIcon from "/icon/live-demo-black.svg";
-import blackGitHubIcon from "/icon/github-black.svg";
+import blackLiveDemoIcon from "../../../public/icons/live-demo-black.svg";
+import blackGitHubIcon from "../../../public/icons/github-black.svg";
 
 export const ProjectButtons = ({ project }) => {
   return (

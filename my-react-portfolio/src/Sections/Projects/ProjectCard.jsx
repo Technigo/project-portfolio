@@ -1,5 +1,5 @@
 import "./projectcard.css";
-import { Tag } from "../ReusableComponents/Texts/Tag";
+import { Tag } from "../../ReusableComponents/Texts/Tags";
 import { ProjectButtons } from "../../ReusableComponents/Buttons/ProjectButtons";
 import { NormalText } from "../../ReusableComponents/Texts/NormalText";
 import { SubTitle } from "../../ReusableComponents/Texts/SubTitle";
