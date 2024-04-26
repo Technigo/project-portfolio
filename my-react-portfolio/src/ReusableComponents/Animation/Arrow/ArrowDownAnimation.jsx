@@ -1,13 +1,21 @@
 // ArrowDownAnimation.jsx
 // eslint-disable-next-line no-unused-vars
 import React, { useRef } from "react";
-import { useGSAP } from "../useGSAP"; // Adjust the import path as necessary
+//import { useGSAP } from "../useGSAP.js"; // Adjust the import path as necessary
 import ArrowDown from "./ArrowDown.jsx"; // Adjust the import path as necessary
 
 export const ArrowDownAnimation = () => {
   const arrowRef = useRef(null);
 
-  useGSAP(
+  return <ArrowDown ref={arrowRef} />;
+};
+
+export default ArrowDownAnimation; // Add this line to export the component
+
+/*
+
+
+useGSAP(
     arrowRef,
     {
       y: 20, // Animation options
@@ -25,12 +33,9 @@ export const ArrowDownAnimation = () => {
     }
   );
 
-  return <ArrowDown ref={arrowRef} />;
-};
 
-export default ArrowDownAnimation; // Add this line to export the component
 
-/*ArrowDownAnimation.jsx
+ArrowDownAnimation.jsx
 import React, { useRef } from 'react';
 import { useGSAP } from '../useGSAP'; 
 import { ArrowDown } from './ArrowDown'; 
