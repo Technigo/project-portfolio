@@ -6,7 +6,7 @@ export const Footer = () => {
 	return (
 		<>
 			<div className="footer">
-				<h4>{footerBorder}</h4>
+				<h3>{footerBorder}</h3>
 			</div>
 		</>
 	)
