@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../Texts/text.css";
 
 export const SubTitle = ({ className, text }) => {

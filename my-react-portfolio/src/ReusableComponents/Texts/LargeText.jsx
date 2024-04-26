@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./text.css";
 
 export const LargeText = ({ className, text }) => {

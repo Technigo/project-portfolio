@@ -2,7 +2,8 @@ import "./footer.css";
 import { CircleImage } from "../../ReusableComponents/Images/CircleImage";
 import { LargeText } from "../../ReusableComponents/Texts/LargeText";
 import { SmallSubTitle } from "../../ReusableComponents/Texts/SmallSubTitle";
-import { ProjectImage } from "../../ReusableComponents/Images/ProjectImage";
+//import { Icons } from "../../../public/icons";
+
 //import hamdi from "./assets/hamdi.jpg";
 import hamdi from "../../../public/assets/hamdi.jpg";
 
@@ -32,10 +33,10 @@ export const Footer = () => {
         </div>
         <div className="contact-icons">
           <a href="https://www.linkedin.com/in/hamdi-olad/">
-            <ProjectImage className="icons" src={"/icon/linkedin.svg"} />
+            <img className="icons" src="/icons/linkedin4.svg" alt="LinkedIn" />
           </a>
           <a href="https://github.com/hamdiolad">
-            <ProjectImage className="icons" src={"/icon/github.svg"} />
+            <img className="icons" src="/icons/github1.svg" alt="GitHub" />
           </a>
         </div>
       </section>

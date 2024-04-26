@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./projects.css";
 
 import { LargeText } from "../../ReusableComponents/Texts/LargeText";

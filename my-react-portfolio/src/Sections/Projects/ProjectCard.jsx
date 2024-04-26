@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 import "./projectcard.css";
 import { Tag } from "../../ReusableComponents/Texts/Tags";
 import { ProjectButtons } from "../../ReusableComponents/Buttons/ProjectButtons";
 import { NormalText } from "../../ReusableComponents/Texts/NormalText";
 import { SubTitle } from "../../ReusableComponents/Texts/SubTitle";
 import { ProjectImage } from "../../ReusableComponents/Images/ProjectImage";
+//import PropTypes from "prop-types"; // Import PropTypes for prop validation
 
 export const ProjectCard = ({ project }) => {
   return (
@@ -26,3 +28,14 @@ export const ProjectCard = ({ project }) => {
     </div>
   );
 };
+
+/*Define prop types for ProjectCard component
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string), // Assuming tags is an array of strings
+    // Define other properties of 'project' here
+  }).isRequired,
+};*/
