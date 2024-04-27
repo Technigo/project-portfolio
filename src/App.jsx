@@ -15,16 +15,16 @@ export const App = () => {
 
 	return (
 		<>
-				<Introduction />
-				<TechSection />
-				<div className="card-h1">
-					<h1>Featured Projects</h1>
-				</div>
-				{projects.map((project, index) => (
-					<Card key={index} project={project} />
-				))}
-				<MySkills />
-				<ContactMe />
+			<Introduction />
+			<TechSection />
+			<div className="card-h1">
+				<h1>Featured Projects</h1>
+			</div>
+			{projects.map((project, index) => (
+				<Card key={index} project={project} />
+			))}
+			<MySkills />
+			<ContactMe />
 			<Footer />
 		</>
 	)
