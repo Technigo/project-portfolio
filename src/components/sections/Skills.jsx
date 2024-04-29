@@ -19,7 +19,7 @@ export const Skills = () => {
           <ul>
             <li>Postman</li>
             <li>Figma</li>
-            <li>Styled Components</li>
+            <li>Tailwind CSS</li>
             <li>RESTful API</li>
             <li>GitHub</li>
           </ul>
