@@ -1,4 +1,4 @@
-import "./Skills.css";
+import "./Skills.css"
 
 export const Skills = () => {
   return (
@@ -13,6 +13,7 @@ export const Skills = () => {
             <li>Javascript ES6</li>
             <li>React</li>
             <li>Styled Components</li>
+            <li>Tailwind CSS</li>
             <li>GitHub</li>
           </ul>
         </section>
@@ -49,5 +50,5 @@ export const Skills = () => {
         </section>
       </div>
     </div>
-  );
-};
+  )
+}
