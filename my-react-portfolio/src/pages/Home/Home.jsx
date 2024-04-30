@@ -17,7 +17,7 @@ export const Home = () => {
       <RedArrow />
       <TechSection />
       <FeaturedProjects />
-      <MyWords />
+      {/* <MyWords /> */}
       <Skills />
       <LetsTalk />
       <Footer />
