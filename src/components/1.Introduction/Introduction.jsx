@@ -1,6 +1,6 @@
-import "./Introduction.css";
-import arrowImage from "../../assets/arrow.svg";
-import profilePicture from "../../assets/profile-picture.png";
+import "./Introduction.css"
+import arrowImage from "../../assets/arrow.svg"
+import profilePicture from "../../assets/profile-picture.png"
 
 export const Introduction = () => {
   return (
@@ -14,15 +14,13 @@ export const Introduction = () => {
         <h1 className="introduction-heading">Hi, I&apos;m Lovisa Åberg</h1>
         <h2 className="introduction-subheading">Frontend Developer</h2>
         <p className="introduction-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur
-          debitis, error, tenetur ipsum voluptates doloremque repudiandae
-          dignissimos veritatis assumenda officiis reiciendis fugit commodi
-          impedit laudantium. Aspernatur ea exercitationem laudantium.
+          I’m a Front end developer with a background in UX Design, and I want
+          to create great, accessible apps and websites with people in focus.
         </p>
       </section>
       <section className="arrow-container">
         <img src={arrowImage} alt="Animated arrow" className="arrow" />
       </section>
     </div>
-  );
-};
+  )
+}
