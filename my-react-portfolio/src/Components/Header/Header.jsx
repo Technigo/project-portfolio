@@ -44,14 +44,14 @@ export const Header = () => {
           </div>
         </div>
         <div className={styles.headerBox}>
-          <h1>Frontend Developer</h1>
+          <h1>Full Stack Developer</h1>
         </div>
         <div className={styles.headerImageDesktop}>
           <img src="./assets/profile-bec-sqr.jpg" alt="profile pic of beckie" />
         </div>
         <div className={styles.headerBox}>
           <p className={styles.blurb}>
-            Frontend developer with extensive experience in the education
+            Full Stack developer with extensive experience in the education
             sector. I have a Master of Teaching as well as a Bachelor of
             Computing, and combine my knowledge with a passion to contribute
             creatively to meaningful projects.
