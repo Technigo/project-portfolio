@@ -13,7 +13,7 @@ export const Contact = () => {
         <div className="contact">
           <p>Linda Frischknecht</p>
           <p>+41 (0)76 329 67 97</p>
-          <p>linda.frischknecht@gmail.com</p>
+          <p>linda.frischknecht@bluewin.ch</p>
         </div>
         <div className="icons">
           <a
