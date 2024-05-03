@@ -44,24 +44,21 @@ export const FeaturedProjects = () => {
           <p>Loading...</p>
         ) : (
           <>
-            <div className="topicDiv">
-              <PageTopic
-                pageTopic={"Featured Projects"}
-                className={"project"}
-              />
+            <PageTopic pageTopic={"Featured Projects"} className={"project"} />
+            <div className="project-container">
+              {projects.map((project) => {
+                return (
+                  <ProjectWrapper
+                    key={project.id}
+                    projectName={project.name}
+                    topics={project.topics}
+                    codeLink={project.html_url}
+                    demoLink={project.homepage}
+                    projectIntro={project.description}
+                  />
+                );
+              })}
             </div>
-            {projects.map((project) => {
-              return (
-                <ProjectWrapper
-                  key={project.id}
-                  projectName={project.name}
-                  topics={project.topics}
-                  codeLink={project.html_url}
-                  demoLink={project.homepage}
-                  projectIntro={project.description}
-                />
-              );
-            })}
           </>
         )}
       </section>

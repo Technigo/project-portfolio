@@ -6,7 +6,6 @@ import { Code } from "../iconfoler/Code";
 import "./iconBtn.css";
 import "./projects.css";
 import "../tag/tag.css";
-import "../projectImage/image.css";
 
 export const ProjectWrapper = ({
   projectName,
@@ -17,27 +16,26 @@ export const ProjectWrapper = ({
 }) => {
   const projectHeading = projectName.replaceAll("-", " ");
   return (
-    <div
-      className="projet-container"
-      aria-label="Previous projects' information"
-    >
+    <div className="project-box" aria-label="Previous projects' information">
       <ProjectImage
         repo={projectName}
         url={demoLink}
         alt={projectName}
         className={"blue"}
       />
-      <div className="detail" aria-label="Previous projects' information">
-        <Heading heading={projectHeading} />
-        <p className="description" aria-label="About the project">
-          {projectIntro}{" "}
-        </p>
-        <ul className="tag">
-          {topics.map(
-            (topic) =>
-              topic !== "portfolio" && <Tag key={topic} topic={topic} />
-          )}
-        </ul>
+      <div className="detail-box">
+        <div className="detail" aria-label="Previous projects' information">
+          <Heading heading={projectHeading} />
+          <p className="description" aria-label="About the project">
+            {projectIntro}{" "}
+          </p>
+          <div className="tag">
+            {topics.map(
+              (topic) =>
+                topic !== "portfolio" && <Tag key={topic} topic={topic} />
+            )}
+          </div>
+        </div>
         <div className="btn">
           <div id="liveDemoBtn" aria-label="Button of live demo">
             <a href={demoLink}>

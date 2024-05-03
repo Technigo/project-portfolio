@@ -1,134 +1,131 @@
+.project-wrapper {
+    display: flex;
+    padding: 128px 16px 2608px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
 
 .project {
     color: var(--color-1);
+    font-size: 56px;
     font-family: "Montserrat", sans-serif;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-bottom: 64px;
-    text-align: left;
+
 }
 
-.project-wrapper{
-    padding: 128px 234px 124px 234px;
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    align-self: stretch;
 }
 
-.projet-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 16px;
-    padding-bottom: 128px;
+.blue {
+    width: 343px;
+    height: 200px;
+    border-bottom: 10px solid var(--color-1);
+    border-left: 10px solid var(--color-1);
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.detail-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
 }
 
 .detail {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
     gap: 16px;
 }
 
 .description {
-    color: var(--color-3);
-    font-family: "Hind", sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    font-family: "Hind", sans-serif;
+    color: var(--color-3);
     text-align: left;
     word-wrap: break-word;
 }
 
+.tag {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 4px;
+}
+
 .btn {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    gap: 16px;
+    align-self: stretch;
 }
 
-@media (min-width: 320px) and (max-width: 500px) {
-    .project-wrapper{
-        padding: 128px 16px;
+@media (min-width:667px) and (max-width:1024px) {
+    .project-wrapper {
+        padding: 128px 32px;
     }
-    .project{
-        text-align: center;
-        font-size: 58px;
+
+    .blue {
+        width: 200px;
+        height: 280px;
     }
-    .heading{
-        font-size: 24px;
+
+    .project-box {
+        flex-direction: row;
     }
-    .projet-container{
-       display: grid;
-       grid-template-rows: 250px 375px;
-       row-gap: 16px;
-       padding-bottom: 64px;
+
+    .detail-box {
+        justify-content: space-between;
     }
-    .detail{
-        grid-area: 2/1/3/-2;
+
+    .btn {
+        flex-direction: row;
+        gap: 32px;
     }
-    .btn{
-        flex-direction: column;
-    }
-    .description{
-        word-wrap: break-word;
-        font-size: 14px;
-    } 
 }
 
-  @media (min-width: 501px) and (max-width: 768px) {
-      .project {
-          font-size: 56px;
-      }
+@media (min-width: 1025px) {
+    .project-wrapper {
+        padding: 128px 161px 124px 161px;
+    }
 
-      .heading {
-          font-size: 24px;
-      }
+    .project {
+        font-size: 80px;
+    }
 
-      .projet-container {
-          display: grid;
-          grid-template-columns: 200px 430px;
-          column-gap: 20px;
-          padding-bottom: 64px;
-      }
+    .blue {
+        width: 408px;
+        height: 280px;
+    }
 
-      .detail {
-          max-width: 430px;
-      }
+    .project-container {
+        gap: 128px;
+    }
 
-      .description {
-          font-size: 16px;
-          word-wrap: break-word;
-      }
+    .project-box {
+        flex-direction: row;
+    }
 
-      .project-wrapper {
-          padding: 128px 32px;
-      }
-  }
-  @media (min-width: 769px) and (max-width: 1280px) {
-      .project-wrapper {
-          padding: 80px 100px;
-      }
+    .detail-box {
+        justify-content: space-between;
+    }
 
-      .projet-container {
-          display: grid;
-          grid-template-columns: 408px 534px;
-          row-gap: 10px;
-      }
-
-      .detail {
-          max-width: 534px;
-      }
-
-      .project {
-          font-size: 60px;
-      }
-
-      .heading {
-          font-size: 24px;
-      }
-
-      .description {
-          font-size: 16px;
-          word-wrap: break-word;
-      }
-  }
+    .btn {
+        flex-direction: row;
+        gap: 32px;
+    }
+}
