@@ -13,16 +13,16 @@ export const Talk = () => {
       <p>martin.t.joensson@gmail.com</p>
       <div className="socialmedia">
         <a href="https://www.linkedin.com/in/martin-jönsson-058064163">
-          <img src="./Btn - linkedin.png" alt="LinkedIn" />
+          <img src="./linkedin.svg" alt="LinkedIn" />
         </a>
         <a href="https://github.com/Martin-Joensson">
-          <img src="./Btn - github.png" alt="GitHub" />
+          <img src="./github.svg" alt="GitHub" />
         </a>
         <a href="https://stackoverflow.com/users/24608323/martin-j%c3%b6nsson">
-          <img src="./Btn - stackoverflow.png" alt="StackOverflow" />
+          <img src="./stack-overflow.svg" alt="StackOverflow" />
         </a>
         <a href="https://www.instagram.com/sajkiq/">
-          <img src="./Btn - instagram.png" alt="Instagram" />
+          <img src="./instagram.svg" alt="Instagram" />
         </a>
       </div>
     </div>
