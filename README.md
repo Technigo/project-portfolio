@@ -1,50 +1,13 @@
-<h1 align="center">
-  <a href="">
-    <img src="/react-p.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
 # Technigo - React Portfolio Project
 
-Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
+This is my portfolio.
 
-## Instructions
-[Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
+For the list of featured projects and the articles I've used json-files because I felt that it would give me more control over the content. Right now I only have one article, but I left some space for more to come and then I could use a similar layout-structure as the one I have for the skills-section, to make it responsive as well.
 
-## Set up your own version of your portfolio
+For this project, I also wanted to practise using different css-files for each component, so I did. But I have also tried to keep the code as clean as possible, which meant going through all the different files and gather things with the same css-rules under the same class-name. The css for these elements can be found in App.css.
 
-We will use [Vite](https://vitejs.dev/guide/) to setup our project 😉
+If I were to do it all over again, I would analyze the Figma-design more thoroughly in the beginning, since that would help me with the layouting. Now it took a long time to style things that I added at the end of the process, and it was also really hard to debug the code when it was repeated in several different files.
 
-```bash
-  npm create vite@latest my-react-portfolio --template
-```
+# View it live
 
-#### Follow this GIF to setup your project
-
-![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WEB/Sprint-2/week-8/vite-react_vjp0ep.gif)
-
-## Installation
-
-Use the `cd` command to move into the folder
-
-```bash
-  cd my-react-portfolio
-```
-
-Install the dependencies
-
-```bash
-  npm i
-```
-
-Open the project in a separate VS Code editor
-
-```bash
-  code .
-```
-
-Open up a terminal inside VS code and lets run the project in a local environment
-
-```bash
-  npm run dev
-```
+https://tejpex.netlify.app/

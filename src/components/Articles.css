@@ -1,0 +1,38 @@
+#article-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.article-image {
+    max-height: 200px;
+    align-self: stretch;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 20px solid var(--cerise);
+    border-left: 20px solid var(--cerise);
+}
+
+.header-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+#article-button:hover {
+    background-color: var(--blue);
+}
+
+@media (min-width:668px) {
+    #article-card {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        gap: 32px;
+    }
+
+    .article-image {
+        max-height: 340px;
+    }
+}
