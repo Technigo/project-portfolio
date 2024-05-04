@@ -1,83 +1,62 @@
-.tech-wrapper{
-background-color: var(--color-1);
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 388px 234px;
-color: var(--color-2);
-gap: 90px;
-width: 100%;
+.tech-wrapper {
+  padding: 128px 16px;
+  background-color: var(--color-1);
+  width: 100%;
+}
+
+.tech-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
 }
 
 .tech {
-    width: auto 198px;
-    height: auto 98px;
-    font-size: 60px;
-    font-weight: 700;
-    font-style: "Montserrat", sans-serif;
-  }
-
-.tech-details{
-    width: 100%;
-    max-width: 722px;
-    height: auto 204px; 
-    font-family: "Hind", sans-serif;
-    font-size: 28px;
-    font: 500;
-    font-style: normal;
-    line-height: 1.5;
-    word-wrap: break-word;
+  color: var(--color-2);
+  font-size: 56px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
-@media (min-width: 320px) and (max-width: 500px) {
-  .tech-wrapper{
-    padding: 128px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 64px;
-    width: 100%;
-  }
-  .tech{
-    font-size: 56px;
-  }
-  .tech-details{
-    font-size: 24px;
-  }
-
+.tech-details {
+  color: var(--color-2);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Hind", sans-serif;
+  text-align: left;
 }
 
-@media (min-width: 501px) and (max-width: 768px) {
-  .tech-wrapper{
+@media (min-width:667px) and (max-width: 1024px) {
+  .tech-wrapper {
     padding: 256px 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 64px;
-    width: 100%;
   }
-  .tech{
-    font-size: 56px;
-  }
-  .tech-details{
-    font-size: 24px;
-    word-wrap: break-word;
+
+  .tech-details {
+    text-align: center;
   }
 }
-@media (min-width: 769px) and (max-width: 1280px) {
-  .tech-wrapper{
-   display: grid;
-   grid-template-columns: 198px 636px;
-    padding: 0 161px;
+
+@media (min-width:1025px) {
+  .tech-wrapper {
+    padding: 0px 161px;
     height: 980px;
-    gap: 80px;
+    display: flex;
   }
-  .tech{
-    font-size: 56px;
+
+  .tech-container {
+    flex-direction: row;
+    gap: 124px;
+    justify-content: center;
+    align-items: center;
   }
-  .tech-details{
-    width: auto 204px;
+
+  .tech {
+    font-size: 80px;
+  }
+
+  .tech-details {
+    font-size: 32px;
   }
 }

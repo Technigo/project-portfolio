@@ -1,5 +1,5 @@
 import projectImages from "../../../projectImage.json"
-import "./image.css"
+// import "./image.css"
 
 export const ProjectImage = ({repo, url, alt, className}) => {
     const repoImage = projectImages.find(img => img.repoName === repo)
