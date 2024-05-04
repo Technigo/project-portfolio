@@ -1,8 +1,8 @@
 import "./profilePhoto.css"
 import profilePhoto from "./profilePhoto.jpg"
 
-export const ProfilePhoto = () => {
+export const ProfilePhoto = ({className} ) => {
   return (
-    <img className="profilePhoto" src={profilePhoto} alt="developer's photo" />
+    <img className={className} src={profilePhoto} alt="Trista's photo" />
   );
 };

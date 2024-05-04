@@ -16,7 +16,7 @@ export const Contact = () => {
       <section className="contact-wrapper">
         <PageTopic pageTopic={"Let's Talk"} className={"contact"} />
         <div className="contactContent">
-          <ProfilePhoto />
+          <ProfilePhoto className={"profilePhoto"}/>
           <div className="info">
             <p className="name">Trista Shan</p>
           </div>
