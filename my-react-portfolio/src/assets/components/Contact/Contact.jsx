@@ -16,25 +16,25 @@ export const Contact = () => {
       <section className="contact-wrapper">
         <PageTopic pageTopic={"Let's Talk"} className={"contact"} />
         <div className="contactContent">
-          <ProfilePhoto className={"profilePhoto"}/>
+          <ProfilePhoto className={"profilePhoto"} />
           <div className="info">
             <p className="name">Trista Shan</p>
           </div>
         </div>
         <div className="contactIcons">
-            <a href={linkedin} alt="Linkedin button">
-              <Linkedin />
-            </a>
-            <a href={github} alt="Github button">
-              <Github />
-            </a>
-            <a href={stackover} alt="Stack over flow button">
-              <Stackover />
-            </a>
-            <a href={instagram} alt="Instagram button">
-              <Instagram />
-            </a>
-          </div>
+          <a href={linkedin} alt="Linkedin button">
+            <Linkedin />
+          </a>
+          <a href={github} alt="Github button">
+            <Github />
+          </a>
+          <a href={stackover} alt="Stack over flow button">
+            <Stackover />
+          </a>
+          <a href={instagram} alt="Instagram button">
+            <Instagram />
+          </a>
+        </div>
       </section>
     );
 }
