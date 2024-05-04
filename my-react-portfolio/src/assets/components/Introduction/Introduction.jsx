@@ -6,7 +6,7 @@ import { ProfilePhoto } from '../profilePhoto/ProfilePhoto';
 export const Introduction = () => {
   return (
     <>
-      <secion className="intro-wrapper" aria-label="A page of introduction">
+      <section className="intro-wrapper" aria-label="A page of introduction">
         <ProfilePhoto className={"dev-photo"} />
         <div className="intro-box">
           <p className="dev-name">Hi, I&apos;m Trista Shan</p>
@@ -22,7 +22,7 @@ export const Introduction = () => {
           alt="an arrow to show the next page"
           className={"arrow"}
         />
-      </secion>
+      </section>
     </>
   );
 };
