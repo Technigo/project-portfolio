@@ -15,7 +15,7 @@ export const Introduction = () => {
         <article className="dev-intro">
           I&apos;m a developer with a healthcare background, driven by a passion
           for overcoming challenges and appreciating the beauty of nature&apos;s
-          colorful creations🎨
+          colorful creations.
         </article>
         <Image
           image={arrow}
