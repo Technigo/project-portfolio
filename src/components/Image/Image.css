@@ -1,0 +1,34 @@
+.profile-picture {
+  width: 164px;
+  height: 164px;
+  border-radius: 164px;
+}
+
+.project-image {
+  width: 100%;
+  border-bottom: 10px solid var(--blue);
+  border-left: 10px solid var(--blue);
+  margin: 0 0 24px 0;
+}
+
+/***** Tablet *****/
+@media (min-width: 745px) and (max-width: 1023px) {
+  .project-image {
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}
+
+/***** Desktop *****/
+@media (min-width: 1024px) {
+  .project-image {
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+    border-bottom: 20px solid var(--blue);
+    border-left: 20px solid var(--blue);
+  }
+}

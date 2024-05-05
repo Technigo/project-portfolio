@@ -1,14 +1,19 @@
-<h1 align="center">
-  <a href="">
-    <img src="/react-p.svg" alt="Project Banner Image">
-  </a>
-</h1>
+# React Portfolio Project
 
-# Technigo - React Portfolio Project
+This week's project was to build a personal portfolio website using React.
 
-Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
+### The Problem
+
+I started out by mapping out what reusable and sectional components would be needed. For the featured projects section, I implemented the GitHub API fetch, and filtered out the ones I did not want featured. More components were added along the way, as I realised it would make the design more streamlined.
+
+If I had more time, I would have liked to try out more of the stretch goals.
+
+### View it live
+
+https://remarkable-shortbread-2696c2.netlify.app/
 
 ## Instructions
+
 [Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
 
 ## Set up your own version of your portfolio
@@ -29,22 +34,4 @@ Use the `cd` command to move into the folder
 
 ```bash
   cd my-react-portfolio
-```
-
-Install the dependencies
-
-```bash
-  npm i
-```
-
-Open the project in a separate VS Code editor
-
-```bash
-  code .
-```
-
-Open up a terminal inside VS code and lets run the project in a local environment
-
-```bash
-  npm run dev
 ```

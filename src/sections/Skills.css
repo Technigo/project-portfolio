@@ -1,0 +1,108 @@
+.skills-section {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 128px 16px;
+  display: grid;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  place-items: center;
+  grid-template-areas:
+    "headline"
+    "code"
+    "toolbox"
+    "upcoming"
+    "more";
+}
+
+.skills-section li {
+  font-size: 18px;
+}
+
+.section-headline {
+  grid-area: headline;
+  margin: 0;
+  padding: 0;
+}
+
+.code {
+  grid-area: code;
+}
+
+.code h1 {
+  color: var(--white);
+  background-color: var(--pink);
+  margin: 0;
+}
+
+.toolbox {
+  grid-area: toolbox;
+}
+
+.toolbox h1 {
+  color: #fff;
+  background-color: var(--jeans);
+  margin: 0;
+}
+
+.upcoming {
+  grid-area: upcoming;
+}
+
+.upcoming h1 {
+  color: #fff;
+  background-color: var(--lilac);
+  margin: 0;
+}
+
+.more {
+  grid-area: more;
+}
+
+.more h1 {
+  color: var(--blue);
+  background-color: var(--yellow);
+  margin: 0;
+}
+
+/***** Tablet *****/
+@media (min-width: 745px) and (max-width: 1023px) {
+  .skills-section {
+    grid-template-areas:
+      "headline headline"
+      "code toolbox"
+      "upcoming more";
+    align-items: baseline;
+    text-align: left;
+    gap: 64px;
+    padding: 128px 32px;
+  }
+
+  .section-headline {
+    grid-column: 1 / span 2;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/***** Desktop *****/
+@media (min-width: 1024px) {
+  .skills-section {
+    grid-template-areas:
+      "headline headline headline headline"
+      "code toolbox upcoming more";
+    align-items: baseline;
+    text-align: left;
+    row-gap: 128px;
+    column-gap: 80px;
+    padding: 128px 161px;
+  }
+}
+
+/***** Widescreen Desktop *****/
+@media (min-width: 1441px) {
+  .skills-section {
+    padding: 128px 234px;
+  }
+}
