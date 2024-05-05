@@ -38,13 +38,13 @@ export const ProjectWrapper = ({
         </div>
         <div className="btn">
           <div id="liveDemoBtn" aria-label="Button of live demo">
-            <a href={demoLink}>
+            <a href={demoLink} aria-label="Link to project">
               <Demo />
               Live Demo
             </a>
           </div>
           <div id="viewCodeBtn" aria-label="Button of veiwing code">
-            <a href={codeLink}>
+            <a href={codeLink} aria-label="Link to Github">
               <Code />
               View the code
             </a>

@@ -6,7 +6,7 @@ export const ProjectImage = ({repo, url, alt, className}) => {
 
     return (
         repoImage && (
-            <a href={url} className="image-wrapper">
+            <a href={url} className="image-wrapper" aria-label="Link to project site">
                 <img className={`${className}`}
                 src={repoImage?.imageUrl}
                 alt={alt}

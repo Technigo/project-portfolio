@@ -23,16 +23,16 @@ export const Contact = () => {
           </div>
         </div>
         <div className="contactIcons">
-          <a href={linkedin} alt="Linkedin button">
+          <a href={linkedin} alt="Linkedin button" aria-label="Link to Linkedin profile page">
             <Linkedin />
           </a>
-          <a href={github} alt="Github button">
+          <a href={github} alt="Github button" aria-label="Link to Github page">
             <Github />
           </a>
-          <a href={stackover} alt="Stack over flow button">
+          <a href={stackover} alt="Stack over flow button" aria-label="Link to stack overflow page">
             <Stackover />
           </a>
-          <a href={instagram} alt="Instagram button">
+          <a href={instagram} alt="Instagram button" aria-label="Link to instagram page">
             <Instagram />
           </a>
         </div>
