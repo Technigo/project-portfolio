@@ -1,11 +1,11 @@
 import './App.css'
-import { Introduction } from './assets/components/Introduction/Introduction'
-import { Tech } from './assets/components/Tech/Tech'
-import { FeaturedProjects } from './assets/components/FeaturedProjects/FeatureProjects'
+import { Introduction } from './components/Introduction/Introduction'
+import { Tech } from './components/Tech/Tech'
+import { FeaturedProjects } from './components/FeaturedProjects/FeatureProjects'
 // import { MyWords } from './assets/components/myWords/MyWords'
-import { Skills } from './assets/components/skills/Skills'
-import { Contact } from './assets/components/Contact/Contact'
-import { Footer } from './assets/components/footer/Footer'
+import { Skills } from './components/skills/Skills'
+import { Contact } from './components/Contact/Contact'
+import { Footer } from './components/footer/Footer'
 
 export const App = () => {
   
