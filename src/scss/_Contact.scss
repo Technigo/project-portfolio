@@ -1,0 +1,81 @@
+@import "./varables";
+
+.contact-section {
+  margin: 8rem 0 0 23vw;
+
+  @include tablet {
+    @include tablet-position;
+  }
+  @include mobile {
+    @include mobile-position;
+  }
+
+  .section-title {
+    @include title-text;
+    @include tablet {
+      @include tablet-title-text-size;
+    }
+    @include mobile {
+      @include mobile-title-text-size;
+    }
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+
+    .contact-info {
+      color: $sub-text-color;
+      font-size: 1.3rem;
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @include mobile {
+        font-size: 1rem;
+      }
+
+      img {
+        width: 120px;
+        border-radius: 50%;
+      }
+    }
+
+    .contact-media {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0;
+      width: 100%;
+
+      li {
+        font-size: 2rem;
+        margin: 0 1rem;
+        list-style-type: none;
+        color: $sub-text-color;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+
+      li:hover {
+        color: $title-color;
+        text-shadow: 0 0 30px $title-glow-color;
+      }
+    }
+  }
+}
