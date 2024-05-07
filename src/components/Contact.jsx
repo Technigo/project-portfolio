@@ -16,18 +16,21 @@ const Contact = React.forwardRef((props, ref) => {
       <p className="contact-text">You can reach me here:</p>
       <ul className="contact-list">
         <li className="contact-item">
-          <Button
-            type="contact-link" 
-            icon={<img src={linkedinIcon} alt="LinkedIn" />} 
-            onClick={() => window.open(linkedinLink, '_blank')}
-          />
+          <p className="contact-mail">alexandrameija.tech@gmail.com</p>
         </li>
         <li className="contact-item">
-          <Button
-            type="contact-link"
-            icon={<img src={githubIcon} alt="GitHub" />}
-            onClick={() => window.open(githubLink, '_blank')}
-          />
+          <div className="button-container">
+            <Button
+              type="contact-link" 
+              icon={<img src={linkedinIcon} alt="LinkedIn" />} 
+              onClick={() => window.open(linkedinLink, '_blank')}
+            />
+            <Button
+              type="contact-link"
+              icon={<img src={githubIcon} alt="GitHub" />}
+              onClick={() => window.open(githubLink, '_blank')}
+            />
+          </div>
         </li>
       </ul>
     </div>
@@ -35,6 +38,8 @@ const Contact = React.forwardRef((props, ref) => {
 });
 
 export default Contact;
+
+  
 
 
 
