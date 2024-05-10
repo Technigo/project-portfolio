@@ -10,7 +10,7 @@ export const About = () => {
         <h1 className="title-desc">A passionate problem solver with coding skills</h1>
       </div>
       <div className="intro-text">
-        <img src={profilePhoto} width="200px" />
+        <img src={profilePhoto} width="200px" alt="headshot"/>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
           delectus corrupti. Minus ex dolore temporibus aperiam corrupti saepe
@@ -18,7 +18,7 @@ export const About = () => {
           nobis veritatis!
         </p>
       </div>
-      <img className="arrow-seafoam" src={arrow} width="60px" />
+      <img className="arrow-seafoam" src={arrow} width="60px" alt="arrow"/>
     </div>
 
     

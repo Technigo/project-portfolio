@@ -11,7 +11,7 @@ export const Projects = () => {
       <h1 className="projects-header">Projects</h1>
       {projectData.map((item) => (
         <div className="projects" key={item.id}>
-          <img className="screenshot" src={item.image}/>
+          <img className="screenshot" src={item.image} alt="screenshot"/>
           <div className="description">
             <h2 className="projects-title">{item.name}</h2>
             <p>{item.description}</p>
@@ -24,10 +24,10 @@ export const Projects = () => {
             </div>
             <div className="links">
               <a className="link" href={item.netlify} target="_blank">
-                <img className="icon" src={netlifyImage} width="25px"></img> Live demo
+                <img className="icon" src={netlifyImage} alt="netlifylogo" width="25px"></img> Live demo
               </a>
               <a className="link" href={item.github} target="_blank">
-                <img className="icon" src={githubImage} width="25px"></img> View the code
+                <img className="icon" src={githubImage} alt="githublogo" width="25px"></img> View the code
               </a>
             </div>
           </div>
