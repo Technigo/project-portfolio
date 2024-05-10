@@ -1,22 +1,9 @@
-{
-  "projects": [
-    {
-      "name": "New Movie Releases",
-      "image": "src/components/3. Projects/assets/happythoughts.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "tags": [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "React",
-        "APIs"
-      ],
-      "netlify": "https://newmoviereleases.netlify.app/",
-      "github": "link"
-    },
+import happyThoughts from "/src/components/Projects/assets/happythoughts.png";
+
+export const ProjectData = [
     {
       "name": "Happy Thoughts",
-      "image": "src/components/3. Projects/assets/happythoughts.png",
+      "image": {happyThoughts},
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
         "HTML5",
@@ -30,7 +17,7 @@
     },
     {
       "name": "Survey",
-      "image": "src/components/3. Projects/assets/survey.png",
+      "image": "src/components/Projects/assets/survey.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
         "HTML5",
@@ -43,7 +30,7 @@
     },
     {
       "name": "Music releases",
-      "image": "src/components/3. Projects/assets/musicreleases.png",
+      "image": "src/components/Projects/assets/musicreleases.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
         "HTML5",
@@ -56,7 +43,7 @@
     },
     {
       "name": "Weather app",
-      "image": "src/components/3. Projects/assets/weather.png",
+      "image": "src/components/Projects/assets/weather.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
         "HTML5",
@@ -69,7 +56,7 @@
     },
     {
       "name": "Library",
-      "image": "src/components/3. Projects/assets/library.png",
+      "image": "src/components/Projects/assets/library.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
         "HTML5",
@@ -81,7 +68,7 @@
       "github": "link"
     },
     {
-      "image": "src/components/3. Projects/assets/chatbot.png",
+      "image": "src/components/Projects/assets/chatbot.png",
       "name": "Chatbot",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
@@ -92,5 +79,6 @@
       "netlify": "https://mathewthemathbot.netlify.app/",
       "github": "link"
     }
-  ]
-}
+]
+
+export default ProjectData
