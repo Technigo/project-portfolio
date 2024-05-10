@@ -2,8 +2,8 @@ import happyThoughts from "/src/components/Projects/assets/happythoughts.png";
 import survey from "/src/components/Projects/assets/survey.png";
 import musicreleases from "/src/components/Projects/assets/musicreleases.png";
 import weather from "/src/components/Projects/assets/weather.png";
-import library from "/src/components/Projects/assets/survey.png";
-import chatbot from "/src/components/Projects/assets/survey.png";
+import library from "/src/components/Projects/assets/library.png";
+import chatbot from "/src/components/Projects/assets/chatbot.png";
 
 export const ProjectData = [
     {
