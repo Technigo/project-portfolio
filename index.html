@@ -20,5 +20,30 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- JSON-LD structured data for organization SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Idah Collin's Portfolio",
+        "url": "https://idah-collin-portfolio.netlify.app/",
+        "description": "Explore Idah Collin's portfolio showcasing projects in React, JavaScript, HTML, and CSS."
+      }
+    </script>
+
+    <!-- JSON-LD structured data for website SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "https://idah-collin-portfolio.netlify.app/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://idah-collin-portfolio.netlify.app/search?q={search_term_string}", <!-- Updated URL -->
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </body>
 </html>
