@@ -1,9 +1,14 @@
 import happyThoughts from "/src/components/Projects/assets/happythoughts.png";
+import survey from "/src/components/Projects/assets/survey.png";
+import musicreleases from "/src/components/Projects/assets/musicreleases.png";
+import weather from "/src/components/Projects/assets/weather.png";
+import library from "/src/components/Projects/assets/survey.png";
+import chatbot from "/src/components/Projects/assets/survey.png";
 
 export const ProjectData = [
     {
       "name": "Happy Thoughts",
-      "image": {happyThoughts},
+      "image": happyThoughts,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
         "HTML5",
@@ -17,7 +22,7 @@ export const ProjectData = [
     },
     {
       "name": "Survey",
-      "image": "src/components/Projects/assets/survey.png",
+      "image": survey,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
         "HTML5",
@@ -30,7 +35,7 @@ export const ProjectData = [
     },
     {
       "name": "Music releases",
-      "image": "src/components/Projects/assets/musicreleases.png",
+      "image": musicreleases,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
         "HTML5",
@@ -43,7 +48,7 @@ export const ProjectData = [
     },
     {
       "name": "Weather app",
-      "image": "src/components/Projects/assets/weather.png",
+      "image": weather,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
         "HTML5",
@@ -56,7 +61,7 @@ export const ProjectData = [
     },
     {
       "name": "Library",
-      "image": "src/components/Projects/assets/library.png",
+      "image": library,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
         "HTML5",
@@ -68,8 +73,8 @@ export const ProjectData = [
       "github": "link"
     },
     {
-      "image": "src/components/Projects/assets/chatbot.png",
       "name": "Chatbot",
+      "image": chatbot,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "tags": [
         "HTML5",
