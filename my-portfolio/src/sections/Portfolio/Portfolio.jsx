@@ -59,6 +59,7 @@ export const Portfolio = () => {
           imagePath:
             projectImages.find((image) => image.projectName === project.name)
               ?.imagePath || "",
+          stargazers_count: project.stargazers_count,
         }));
 
       setAvatarUrl(avatar);
@@ -80,9 +81,10 @@ export const Portfolio = () => {
     }
   };
 
-  const toggleShowAllProjects = () => {
-    setShowAllProjects(!showAllProjects);
-  };
+    // Function to toggle showing all projects or only favorized projects
+    const toggleShowAllProjects = () => {
+      setShowAllProjects(!showAllProjects);
+    };
 
   // Show loading spinner if either the content or the image is loading
   if (loading || imageLoading) {
@@ -116,10 +118,7 @@ export const Portfolio = () => {
       </header>
       <main>
         <Tech techSectionRef={techSectionRef} />
-        <FeaturedProjects
-          projects={projects}
-          showAllProjects={showAllProjects}
-        />
+        <FeaturedProjects projects={projects} showAllProjects={showAllProjects} toggleShowAllProjects={toggleShowAllProjects} />
         <Skills />
       </main>
       <footer>
@@ -129,116 +128,3 @@ export const Portfolio = () => {
     </div>
   );
 };
-
-/* export const Portfolio = () => {
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true); // Add loading state
-  const techSectionRef = useRef(null);
-  const [avatarUrl, setAvatarUrl] = useState("");
-  const [projects, setProjects] = useState([]);
-  const [showAllProjects, setShowAllProjects] = useState(false);
-
-  useEffect(() => {
-    // Fetch repositories when component mounts
-    fetchRepositories();
-  }, []);
-
-  const fetchRepositories = async () => {
-    const URL = "https://api.github.com/users/ericamechler/repos";
-
-    try {
-      setError(null);
-      setLoading(true);
-
-      const response = await fetch(URL);
-      if (!response.ok) {
-        throw new Error("Could not load repositories");
-      }
-
-      const data = await response.json();
-      console.log(data);
-      const avatar = data[0]?.owner?.avatar_url;
-
-      // Filter out the "Portfolio"-project and check for topics and description
-      const filteredProjects = data
-        .filter(
-          (project) =>
-            project.name !== "Portfolio" &&
-            project.description &&
-            project.topics &&
-            project.topics.length > 0
-        )
-        .map((project) => ({
-          id: project.id,
-          name: project.name,
-          description: project.description,
-          htmlUrl: project.html_url,
-          topics: project.topics,
-          homepage: project.homepage,
-          // Find the corresponding image path from the JSON data
-          imagePath:
-            projectImages.find((image) => image.projectName === project.name)
-              ?.imagePath || "",
-        }));
-
-      setAvatarUrl(avatar);
-      setProjects(filteredProjects);
-    } catch (error) {
-      setError("Error loading repositories. Please try again later");
-    } finally {
-      setLoading(false); // Update loading state when fetching is done
-    }
-  };
-
-  const scrollToTechSection = () => {
-    if (techSectionRef.current) {
-      techSectionRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-
-    // Function to toggle showing all projects or only starred projects
-    const toggleShowAllProjects = () => {
-      setShowAllProjects(!showAllProjects);
-    };
-  };
-
-  if (loading) {
-    return (
-      <div className="loading-wrapper">
-        <Triangle width={200} color="black" aria-label="Loading triangle" />
-      </div>
-    );
-  }
-
-  if (error) {
-    return <div className="error-message">{error}</div>;
-  }
-
-  return (
-    <div className="main-wrapper">
-      <header>
-        <Introduction
-          scrollToTechSection={scrollToTechSection}
-          avatarUrl={avatarUrl}
-        />{" "}
-        <div className="arrow-container">
-          <button onClick={scrollToTechSection}>
-            <img className="arrow" src={arrowSvg} alt="arrow icon" />
-          </button>
-        </div>
-      </header>
-      <main>
-        <Tech techSectionRef={techSectionRef} />
-        <FeaturedProjects
-          projects={projects}
-          showAllProjects={showAllProjects}
-        />
-        <Skills />
-      </main>
-      <footer>
-        <Contact avatarUrl={avatarUrl} />
-        <TickerTapeBanner />
-      </footer>
-    </div>
-  );
-};
- */
