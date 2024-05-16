@@ -13,10 +13,10 @@ export const Header = () => {
         </div>
         <div className="flex-row">
           <img className="profile-pic picOthers" src={profilePic} alt="profile-picuture"/>
-          <p>I'm a dynamic and ambitious junior frontend developer. Fluent in modern 
+          <p>I'm a dynamic and ambitious junior frontend developer. Trained in modern 
             JavaScript and React, fueled by a hunger for knowledge and growth. 
             With fluency in four languages and a background in architecture, I can bring a unique
-            blend of creativity and technical expertise to every project.
+            blend of creativity and technical expertise.
           </p>
         </div>
       </div>
