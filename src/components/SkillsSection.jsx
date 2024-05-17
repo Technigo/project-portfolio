@@ -35,10 +35,10 @@ export const SkillsSection = () => {
           <p>+10 years working experience:</p>
           <p>in large projects</p>
           <p>in collaboration</p>
-          <p>in high paste</p>
+          <p>in high paced</p>
           <p>in process design</p>
           <p>in concept development</p>
-          <p>in planning and deliverys</p>
+          <p>in planning and delivery</p>
         </div>
       </div>
     </div>
