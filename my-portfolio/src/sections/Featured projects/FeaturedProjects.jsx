@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
 
 import { Button } from "../../components/FormElements/Button";
 import { MainHeading } from "../../components/TextElements/MainHeading";
