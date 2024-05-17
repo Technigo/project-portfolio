@@ -8,15 +8,14 @@ export const Header = () => {
       <div className={styles.header}>
         <img className="profile-pic picMobile" src={profilePic} alt="profile-picuture"/>
         <div>
-          <h2>Hi, I'm Arnau Vidal 👋</h2>
+          <h2>Hi, I'm Arnau Vidal👋</h2>
           <h1 className={styles.profession}>Frontend Developer</h1>
         </div>
         <div className="flex-row">
           <img className="profile-pic picOthers" src={profilePic} alt="profile-picuture"/>
-          <p>I'm a dynamic and ambitious junior frontend developer. Trained in modern 
-            JavaScript and React, fueled by a hunger for knowledge and growth. 
-            With fluency in four languages and a background in architecture, I can bring a unique
-            blend of creativity and technical expertise.
+          <p>I'm an ambitious frontend developer looking for an intership. <br></br>
+            Trained in modern JavaScript and React with a background in architecture. <br></br>
+            I can bring a unique blend of creativity and technics.
           </p>
         </div>
       </div>
