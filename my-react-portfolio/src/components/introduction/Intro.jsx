@@ -10,7 +10,7 @@ export const Intro = () => {
   // Define the introduction text
 
   const introText =
-    "I am a frontend developer, who excels in crafting user-friendly applications with a focus on accessibility. My dedication is to inclusivity and innovative solutions whic sets me apart in the technology field.";
+    "I am a frontend developer, who excels in crafting user-friendly applications with a focus on accessibility. My dedication is to inclusivity and innovative solutions which sets me apart in the technology field.";
 
   // Return the JSX structure of the Intro component
   return (

@@ -56,7 +56,7 @@ export const ProjectCard = ({ repositories }) => {
         return (
           <article className="project-card" key={matchingData.id}>
             <Image
-              sectionClassName={"image"}
+              /*  sectionClassName={"image"} */
               elementClassName={"project-img"}
               src={matchingData.imageUrl}
               alt={`Image of ${matchingData.displayName} project`}
@@ -70,6 +70,7 @@ export const ProjectCard = ({ repositories }) => {
               />
               <Paragraph
                 text={matchingData.description}
+                className="project-paragraph"
               />
 
               {/* Displaying tags */}
