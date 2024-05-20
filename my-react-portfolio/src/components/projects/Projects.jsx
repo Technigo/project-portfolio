@@ -8,6 +8,7 @@ const API = "https://api.github.com/users/Maria-Manuela/repos";
 //component to fetch data from API
 export const Projects = () => {
   const [gitData, setGitData] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   //function to fetch the API data
@@ -21,8 +22,10 @@ export const Projects = () => {
 
       const rawData = await response.json();
       setGitData(rawData);
+      setLoading(false); // Set loading to false after data is fetched
     } catch (error) {
       setError(error);
+      setLoading(false); // Set loading to false if there's an error
       console.error(error);
     }
   };
@@ -39,7 +42,9 @@ export const Projects = () => {
         className={"projects-heading"}
         text={"Featured Projects"}
       />
-      {error ? (
+      {loading ? ( // Display loading state while fetching data
+        <p className="loading-message">Loading...</p>
+      ) : error ? ( // Display error message if there's an error
         <p className="error-message">An error occurred: {error.message}</p>
       ) : (
         <ProjectCard repositories={gitData} />

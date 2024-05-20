@@ -91,4 +91,8 @@ To use the icons from the design, simply mark the icon you want to export and sa
 - Utilise the GitHub API to fetch your public projects from your GitHub account, ensuring your portfolio stays up-to-date with your latest work.
   - Use the following URL link [**https://api.github.com/users/YourGitHubProfile/repos**] as an example. Replace "YourGitHubProfile" with your actual GitHub profile name to fetch your repository data. Example: [Technigo GitHub profile](https://api.github.com/users/Technigo/repos)
 
+Credits
+https://unsplash.com/photos/text-jf1EomjlQi0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+Photo by <a href="https://unsplash.com/@mike_van_den_bos?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mike van den Bos</a> on <a href="https://unsplash.com/photos/text-jf1EomjlQi0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
 https://api.github.com/users/Maria-Manuela/repos

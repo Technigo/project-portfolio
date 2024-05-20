@@ -13,11 +13,7 @@ export const App = () => {
     <div>
       <Intro />
       <section className="arrow-container">
-        <img
-          src={arrowImage}
-          alt="Animated Arrow"
-          className="arrow"
-        />
+        <img src={arrowImage} alt="Animated Arrow" className="arrow" />
       </section>
       <Tech />
       <Projects />

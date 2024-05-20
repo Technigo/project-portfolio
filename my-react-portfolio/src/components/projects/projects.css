@@ -14,18 +14,24 @@
   align-self: baseline;
 }
 
-.project-card-heading {
-  padding-top: 24px;
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
+
+.project-card-heading {}
 
 /* ------------ Styling project img ------------ */
 
 .project-img {
-  width: 100%;
-  height: 200px;
-  object-fit: contain;
+  /*  width: 100%; */
+  flex-shrink: 0;
+  background: lightgrey 50% / cover no-repeat;
+  object-fit: cover;
   border-bottom: 10px solid var(--primary);
   border-left: 10px solid var(--primary);
+  align-self: stretch;
 }
 
 .project-text-section {
@@ -33,7 +39,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  align-self: stretch;
   gap: 16px;
 }
 
@@ -54,6 +59,14 @@
 
 
 /* ------------ MEDIA QUERIES ------------ */
+/* Mobile styles */
+@media (max-width: 743px) {
+  .project-img {
+    width: 343px;
+    height: 200px;
+  }
+}
+
 /* ------------ Tablet only ------------ */
 @media (min-width: 744px) and (max-width: 1279px) {
   .projects-container {
@@ -68,40 +81,39 @@
     /* Two columns for image and content */
     grid-template-rows: auto;
     /* Single row for each item */
-    gap: 37px;
-  }
+    gap: 64px;
 
-  /* 
-  .project-img-container {
-    height: 280px;
-    width: 200px;
-    border-bottom: 10px solid #0025ff;
-  } */
 
-  .project-img {
-    grid-column: 1 / 2;
-    /* Place the image container in the first column */
-    grid-row: 1 / 2;
-    /* Place the image container in the first row */
-  }
+    .project-img {
+      height: 280px;
+    }
 
-  .project-text-section {
-    grid-column: 2 / 3;
-    /* Place the text section in the second column */
-    grid-row: 1 / 2;
-    /* Place the text section in the first row */
-  }
+    .project-img {
+      grid-column: 1 / 2;
+      /* Place the image container in the first column */
+      grid-row: 1 / 2;
+      /* Place the image container in the first row */
+      height: 280px;
+    }
 
-  .button-wrapper {
-    grid-column: 2 / 3;
-    /* Place the button wrapper in the second column */
-    grid-row: 2 / 3;
-    /* Place the button wrapper in the second row */
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    width: 100%;
-    gap: 32px;
+    .project-text-section {
+      grid-column: 2 / 3;
+      /* Place the text section in the second column */
+      grid-row: 1 / 2;
+      /* Place the text section in the first row */
+    }
+
+    .button-wrapper {
+      grid-column: 2 / 3;
+      /* Place the button wrapper in the second column */
+      grid-row: 2 / 3;
+      /* Place the button wrapper in the second row */
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      width: 100%;
+      gap: 32px;
+    }
   }
 }
 
@@ -125,11 +137,10 @@
   }
 
 
-  /* project-img-container {
+  project-img {
     height: 280px;
     width: 408px;
-    border-bottom: 20px solid #0025ff;
-  } */
+  }
 
   .project-img {
     grid-column: 1 / 2;
