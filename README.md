@@ -12,4 +12,4 @@ The future plans include refining responsiveness and accessibility for a better 
 
 ## Netlify Link
 
-bmmportfolio.netlify.app
+https://bmmportfolio.netlify.app
