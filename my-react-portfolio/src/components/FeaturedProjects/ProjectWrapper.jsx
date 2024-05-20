@@ -1,0 +1,56 @@
+import { ProjectImage } from "../projectImage/ProjectImages";
+import { Heading } from "../Heading/Heading";
+import { Tag } from "../tag/Tag";
+import { Demo } from "../iconfoler/Demo";
+import { Code } from "../iconfoler/Code";
+import "./iconBtn.css";
+import "./projects.css";
+import "../tag/tag.css";
+
+export const ProjectWrapper = ({
+  projectName,
+  projectIntro,
+  topics,
+  demoLink,
+  codeLink,
+}) => {
+  const projectHeading = projectName.replaceAll("-", " ");
+  return (
+    <div className="project-box" aria-label="Previous projects' information">
+      <ProjectImage
+        repo={projectName}
+        url={demoLink}
+        alt={projectName}
+        className={"blue"}
+      />
+      <div className="detail-box">
+        <div className="detail" aria-label="Previous projects' information">
+          <Heading heading={projectHeading} />
+          <p className="description" aria-label="About the project">
+            {projectIntro}{" "}
+          </p>
+          <div className="tag">
+            {topics.map(
+              (topic) =>
+                topic !== "portfolio" && <Tag key={topic} topic={topic} />
+            )}
+          </div>
+        </div>
+        <div className="btn">
+          <div id="liveDemoBtn" aria-label="Button of live demo">
+            <a href={demoLink} aria-label="Link to project">
+              <Demo />
+              Live Demo
+            </a>
+          </div>
+          <div id="viewCodeBtn" aria-label="Button of veiwing code">
+            <a href={codeLink} aria-label="Link to Github">
+              <Code />
+              View the code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
