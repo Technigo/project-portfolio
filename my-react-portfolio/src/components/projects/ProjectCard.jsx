@@ -10,8 +10,9 @@ import "./projects.css";
 export const ProjectCard = ({ repositories }) => {
   // Filter and match repositories with data in projects.json
   const filteredRepos = repositories.filter((repo) =>
-    localProjectsData.projects.some((data) => data.repoName === repo.name)
+    repo.name.startsWith("project")
   );
+  const [visibleCards, setVisibleCards] = useState(5);
 
   //This checks if a project name (repo.name) from the repositories array exists in any of the project names (data.repoName) within repoData.projects.
 
@@ -26,12 +27,9 @@ export const ProjectCard = ({ repositories }) => {
     return indexA - indexB;
   });
 
-  //state to track the number of cards to display
-  const [visibleCards, setVisibleCards] = useState(5);
-
   const toggleVisibleCards = () => {
     setVisibleCards((prevVisibleCards) =>
-      prevVisibleCards === filteredRepos.length ? 5 : filteredRepos.length
+      prevVisibleCards === 5 ? filteredRepos.length : 5
     );
   };
 
