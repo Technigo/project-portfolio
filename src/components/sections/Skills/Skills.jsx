@@ -1,9 +1,9 @@
-import { whiteColorText } from "../../../styles/styleVariable";
-import { Heading } from "../../ui/Heading";
-import { skillsData as data } from "../../../statics/skillsData";
+import { whiteColorText } from '../../../styles/styleVariable';
+import { Heading } from '../../ui/Heading';
+import { skillsData as data } from '../../../statics/skillsData';
 
-import styles from "./Skills.module.scss";
-import { ObserverWrapper } from "../../ui/ObserverWrapper";
+import styles from './Skills.module.scss';
+import { ObserverWrapper } from '../../ui/ObserverWrapper';
 
 export default function Skills() {
   return (
@@ -29,7 +29,7 @@ function SkillCard(props) {
 
   return (
     <div className={styles.skill_card}>
-      <Tag background={color}>{tag}</Tag>
+      <Tag background={color} text={tag} />
       <ul className={styles.skills_ul}>
         {skills.map((skill) => (
           <li key={skill}>{skill}</li>
@@ -39,10 +39,10 @@ function SkillCard(props) {
   );
 }
 
-function Tag({ children, background }) {
+function Tag({ text, background }) {
   return (
-    <div className={styles.tag_wrapper} style={{ backgroundColor: background }}>
-      {children}
-    </div>
+    <p className={styles.tag_wrapper} style={{ backgroundColor: background }}>
+      {text}
+    </p>
   );
 }

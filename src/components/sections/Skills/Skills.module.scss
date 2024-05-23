@@ -1,5 +1,5 @@
-@use "../../../styles/variables.scss" as *;
-@use "../../../styles/mixins.scss" as *;
+@use '../../../styles/variables.scss' as *;
+@use '../../../styles/mixins.scss' as *;
 
 .skills {
   &_section {
@@ -36,16 +36,16 @@
 
 .skill_card {
   height: fit-content;
-  width: 153px;
   color: #fff;
   text-align: center;
   font-family: $font-text;
-  font-size: $font-size-md;
+  font-size: 22px;
   display: grid;
   grid-template-rows: 39px 1fr;
   gap: $gap-xsm;
 
   @include sm {
+    font-size: 24px;
     text-align: start;
     width: fit-content;
   }
@@ -53,8 +53,7 @@
 
 .tag_wrapper {
   width: fit-content;
-  height: 39px;
-  padding: 0 3px;
+  padding: 3px 10px;
   color: #fff;
   font-family: $font-display;
   font-size: $font-size-xlg;
@@ -65,5 +64,7 @@
 
   @include sm {
     margin: unset;
+    padding: 10px 16px;
+    font-size: 28px;
   }
 }
