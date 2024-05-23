@@ -1,5 +1,5 @@
-@use "../../../styles/variables.scss" as *;
-@use "../../../styles/mixins.scss" as *;
+@use '../../../styles/variables.scss' as *;
+@use '../../../styles/mixins.scss' as *;
 
 .contact_section {
   @include padding-reset;
@@ -25,6 +25,12 @@
   width: 164px;
   height: 164px;
   border-radius: 50%;
+  object-fit: cover;
+
+  @include md {
+    width: 240px;
+    height: 240px;
+  }
 }
 
 .contact_infos {

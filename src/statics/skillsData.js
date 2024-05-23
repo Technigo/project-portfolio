@@ -1,38 +1,35 @@
-import { tagYellowColor, greenColor, blueColor, secondaryColorText } from "../styles/styleVariable";
+import { tagYellowColor, greenColor, blueColor, secondaryColorText } from '../styles/styleVariable';
 
 export const skillsData = [
   {
     color: secondaryColorText.color,
-    tag: "Code",
+    tag: 'Code',
     skills: [
-      "HTML",
-      "CSS",
-      "SCSS",
-      "JavaScript",
-      "React",
-      "Next.js",
-      "Vue",
-      "Astro.js",
-      "TypeScript",
-      "Node.js",
-      "PHP",
+      'HTML',
+      'CSS / SCSS / Tailwind CSS',
+      'JavaScript / TypeScript',
+      'React / Next.js',
+      'Astro.js',
+      'Node.js',
+      'PHP',
+      'SQL',
     ],
   },
   {
     color: blueColor.color,
-    tag: "ToolBox",
-    skills: ["Github", "Figma", "Slack", "Postman", "VScode"],
+    tag: 'ToolBox',
+    skills: ['Github', 'Figma', 'Slack', 'Postman', 'VScode'],
   },
-  { color: greenColor.color, tag: "UpComing", skills: ["Python", "C", "C++"] },
+  { color: greenColor.color, tag: 'UpComing', skills: ['Python', 'C', 'C++'] },
   {
     color: tagYellowColor.color,
-    tag: "More",
+    tag: 'More',
     skills: [
-      "Agile methodology",
-      "Teamwork",
-      "Design skills",
-      "Problem solving",
-      "Trustworthiness",
+      'Agile methodology',
+      'Teamwork',
+      'Design skills',
+      'Problem solving',
+      'Trustworthiness',
     ],
   },
 ];

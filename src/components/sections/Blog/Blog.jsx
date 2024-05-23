@@ -1,15 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import { Heading } from "../../ui/Heading";
-import { ImageFrame } from "../../ui/ImageFrame";
-import { Label } from "../../ui/Label";
-import { Title } from "../../ui/Title";
-import { Button } from "../../ui/Button";
-import { ObserverWrapper } from "../../ui/ObserverWrapper";
-import { secondaryColorText, yellowColor } from "../../../styles/styleVariable";
-import { blogsData as data } from "../../../statics/blogsData";
+import { Heading } from '../../ui/Heading';
+import { ImageFrame } from '../../ui/ImageFrame';
+import { Label } from '../../ui/Label';
+import { Title } from '../../ui/Title';
+import { Button } from '../../ui/Button';
+import { ObserverWrapper } from '../../ui/ObserverWrapper';
+import { primaryColorText, secondaryColorText, yellowColor } from '../../../styles/styleVariable';
+import { blogsData as data } from '../../../statics/blogsData';
 
-import styles from "./Blog.module.scss";
+import styles from './Blog.module.scss';
 
 export default function Blog() {
   return (
@@ -17,7 +17,7 @@ export default function Blog() {
       <ObserverWrapper>
         <div className={styles.wave_box}></div>
         <div className={styles.blog_inner}>
-          <Heading color={secondaryColorText}>My Words</Heading>
+          <Heading color={primaryColorText}>My Words</Heading>
           <div className={styles.blogs_wrapper}>
             {data.map((blog) => (
               <Post blog={blog} key={blog.id} />
@@ -36,13 +36,13 @@ function Post({ blog }) {
       <div className={styles.image_wrapper}>
         <ImageFrame
           imagePath={imagePath}
-          borderColor={secondaryColorText.color}
+          borderColor={primaryColorText.color}
           description={imageDescription}
         />
       </div>
       <Label labelText={date} />
       <Title text={title} />
-      <p className={styles.post_text}>{text.split(" ").slice(0, 40).join(" ")}...</p>
+      <p className={styles.post_text}>{text.split(' ').slice(0, 40).join(' ')}...</p>
       {/* <Link to={`/blog/${id}/`}> */}
       <a href={url} target="_blank" rel="noopener noreferrer">
         <Button
