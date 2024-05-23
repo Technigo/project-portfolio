@@ -1,5 +1,5 @@
-@use "./variables.scss" as *;
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap");
+@use './variables.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap');
 #root {
   min-width: 100%;
 }
@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Hind", monospace;
+  font-family: 'Hind', monospace;
   color: #000;
 }
 
@@ -34,4 +34,25 @@ html {
   background: $color-secondary;
   transform-origin: 0%;
   z-index: 1000;
+}
+
+.text-blue {
+  color: #079992;
+  transition: all 0.3s ease-in;
+  border-bottom: solid 4px transparent;
+  font-weight: bold;
+
+  &:hover {
+    border-bottom: solid 4px #079992;
+  }
+}
+
+.text-red {
+  color: #e55039;
+  transition: all 0.3s ease-in;
+  border-bottom: solid 4px transparent;
+  font-weight: bold;
+  &:hover {
+    border-bottom: solid 4px #e55039;
+  }
 }

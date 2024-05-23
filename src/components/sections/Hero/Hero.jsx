@@ -39,9 +39,12 @@ export default function Hero({ arrowRef, lang, onLang }) {
 
           <img src="/images/sakura.webp" className={styles.my_image} alt="Image of Sakura Tanaka" />
 
-          <p className={styles.text} lang={lang}>
-            {heroText[lang]}
-          </p>
+          <p
+            className={styles.text}
+            lang={lang}
+            dangerouslySetInnerHTML={{ __html: heroText[lang] }}
+          />
+
           <button className={styles.arrow} onClick={() => handleClick(arrowRef)}>
             <img src="/icons/arrow.svg" alt=" go the next section" />
           </button>
