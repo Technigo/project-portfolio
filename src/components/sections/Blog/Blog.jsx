@@ -47,7 +47,6 @@ function Post({ blog }) {
       <a href={url} target="_blank" rel="noopener noreferrer">
         <Button
           iconPath="/icons/doc.svg"
-          background="#fff"
           hoverColor={yellowColor.color}
           altText="read article icon image"
         >
