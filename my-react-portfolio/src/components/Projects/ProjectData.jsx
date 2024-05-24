@@ -11,7 +11,7 @@ export const ProjectData = [
   {
     imageUrl: dateBotImage,
     heading: "DateBot",
-    text: "Meet DateBot, your go-to companion for effortless date planning. Powered by JavaScript, HTML, and CSS, DateBot offers personalized suggestions based on your preferences, budget, and setting. ",
+    text: "Meet DateBot, your go-to companion for effortless date planning. Powered by JavaScript, HTML, and CSS, DateBot offers personalized suggestions based on your preferences, budget, and setting.",
     tags: ["HTML5", "CSS3", "JavaScript"],
     buttonText1: "View on Netlify",
     buttonText2: "View the code",
@@ -41,7 +41,7 @@ export const ProjectData = [
   {
     imageUrl: musicReleasesImage,
     heading: "Music Releases",
-    text: "Introducing a meticulously crafted music release library, driven by React and powered by an API. Immerse yourself in a curated selection of the latest musical releases, elegantly presented through a seamless interface. ",
+    text: "Introducing a meticulously crafted music release library, driven by React and powered by an API. Immerse yourself in a curated selection of the latest musical releases, elegantly presented through a seamless interface.",
     tags: ["HTML5", "CSS3", "React", "API"],
     buttonText1: "View on Netlify",
     buttonText2: "View the code",
@@ -82,7 +82,7 @@ export const ProjectData = [
   {
     imageUrl: todoAppImage,
     heading: "Todo App",
-    text: "This todo app helps users stay organized by allowing them to add, list, and check off tasks. The app is versatile and adaptable, catering to both work-related tasks and personal to-dos. Whether you're managing projects or organizing your daily chores. React Context is used to handle global state.  ",
+    text: "This todo app helps users stay organized by allowing them to add, list, and check off tasks. The app is versatile and adaptable, catering to both work-related tasks and personal to-dos. Whether you're managing projects or organizing your daily chores. React Context is used to handle global state. ",
     tags: ["HTML5", "CSS3", "JavaScript", "React"],
     buttonText1: "View on Netlify",
     buttonText2: "View the code",
