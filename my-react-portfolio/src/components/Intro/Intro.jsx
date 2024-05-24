@@ -22,7 +22,11 @@ export const Intro = () => {
             her talent for creating delightful customer experiences.
           </p>
         </div>
-        <a href="#tech-section" className="down-arrow-container">
+        <a
+          href="#tech-section"
+          className="down-arrow-container"
+          aria-label="Scroll to Tech Section"
+        >
           <div className="down-arrow">
             <svg
               width="25"
@@ -34,9 +38,9 @@ export const Intro = () => {
               <path
                 d="M24 23.5L14.5 33M14.5 33L5 23.5M14.5 33L14.5 3"
                 stroke="#000000"
-                stroke-width="6"
-                stroke-linecap="square"
-                stroke-linejoin="round"
+                strokeWidth="6"
+                strokeLinecap="square"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
