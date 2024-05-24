@@ -16,19 +16,32 @@ export const Contact = () => {
           <p>+46(0)766422217</p>
           <p>cornelia.dahlin@proton.me</p>
           <div className="social-icons">
-            <a href="https://www.linkedin.com/in/cornelia-dahlin-940684295/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/cornelia-dahlin-940684295/"
+              target="_blank"
+            >
+              LinkedIn Profile
               <i className="fab fa-linkedin" style={{ color: "#bababa" }}></i>
             </a>
             <a href="https://github.com/lunek1" target="_blank">
+              GitHub Profile
               <i className="fab fa-github" style={{ color: "#bababa" }}></i>
             </a>
-            <a href="https://stackoverflow.com/users/23121233/cornelia" target="_blank">
+            <a
+              href="https://stackoverflow.com/users/23121233/cornelia"
+              target="_blank"
+            >
+              Stack Overflow Profile
               <i
                 className="fab fa-stack-overflow"
                 style={{ color: "#bababa" }}
               ></i>
             </a>
-            <a href="https://www.instagram.com/prettycultivated/" target="_blank">
+            <a
+              href="https://www.instagram.com/prettycultivated/"
+              target="_blank"
+            >
+              Instagram Profile
               <i className="fab fa-instagram" style={{ color: "#bababa" }}></i>
             </a>
           </div>
