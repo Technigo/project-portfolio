@@ -5,7 +5,7 @@ export const Intro = () => {
     <div className="intro-section">
       <div className="intro-container">
         <div className="intro-heading">
-          <p>Hi, I&apos;m Cornelia Dahlin!</p>
+          <h2>Hi, I&apos;m Cornelia Dahlin!</h2>
           <h1>Frontend Developer</h1>
         </div>
         <div className="introduction">
