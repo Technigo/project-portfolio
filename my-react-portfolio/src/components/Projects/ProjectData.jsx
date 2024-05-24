@@ -82,7 +82,7 @@ export const ProjectData = [
   {
     imageUrl: todoAppImage,
     heading: "Todo App",
-    text: "This platform offers users access to top-rated movie releases from an external API. Users can scroll through movies, view IMDb ratings, genres, director and actor details, release dates, and summaries. It's an intuitive way to explore the latest films.",
+    text: "This todo app helps users stay organized by allowing them to add, list, and check off tasks. The app is versatile and adaptable, catering to both work-related tasks and personal to-dos. Whether you're managing projects or organizing your daily chores. React Context is used to handle global state.  ",
     tags: ["HTML5", "CSS3", "JavaScript", "React"],
     buttonText1: "View on Netlify",
     buttonText2: "View the code",
