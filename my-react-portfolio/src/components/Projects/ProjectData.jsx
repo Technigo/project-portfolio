@@ -5,6 +5,7 @@ import musicReleasesImage from "../../assets/musicreleases.png";
 import musicSurveyImage from "../../assets/musicsurvey.png";
 import happyThoughtsImage from "../../assets/happythoughts.png";
 import movieReleasesImage from "../../assets/moviereleases.png";
+import todoAppImage from "../../assets/todoapp.png";
 
 export const ProjectData = [
   {
@@ -77,5 +78,15 @@ export const ProjectData = [
     buttonText2: "View the code",
     demoLink: "https://inquisitive-capybara-aede80.netlify.app/",
     codeLink: "https://github.com/lunek1/project-movies-vite",
+  },
+  {
+    imageUrl: todoAppImage,
+    heading: "Todo App",
+    text: "This platform offers users access to top-rated movie releases from an external API. Users can scroll through movies, view IMDb ratings, genres, director and actor details, release dates, and summaries. It's an intuitive way to explore the latest films.",
+    tags: ["HTML5", "CSS3", "JavaScript", "React"],
+    buttonText1: "View on Netlify",
+    buttonText2: "View the code",
+    demoLink: "https://majestic-moxie-414767.netlify.app/",
+    codeLink: "https://github.com/lunek1/project-todos-context-vite",
   }
 ];
