@@ -19,19 +19,22 @@ export const Contact = () => {
             <a
               href="https://www.linkedin.com/in/cornelia-dahlin-940684295/"
               target="_blank"
+              aria-label="LinkedIn Profile"
             >
-              LinkedIn Profile
               <i className="fab fa-linkedin" style={{ color: "#bababa" }}></i>
             </a>
-            <a href="https://github.com/lunek1" target="_blank">
-              GitHub Profile
+            <a
+              href="https://github.com/lunek1"
+              target="_blank"
+              aria-label="GitHub Profile"
+            >
               <i className="fab fa-github" style={{ color: "#bababa" }}></i>
             </a>
             <a
               href="https://stackoverflow.com/users/23121233/cornelia"
               target="_blank"
+              aria-label="Stack Overflow Profile"
             >
-              Stack Overflow Profile
               <i
                 className="fab fa-stack-overflow"
                 style={{ color: "#bababa" }}
@@ -40,8 +43,8 @@ export const Contact = () => {
             <a
               href="https://www.instagram.com/prettycultivated/"
               target="_blank"
+              aria-label="Instagram Profile"
             >
-              Instagram Profile
               <i className="fab fa-instagram" style={{ color: "#bababa" }}></i>
             </a>
           </div>
