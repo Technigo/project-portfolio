@@ -15,7 +15,6 @@ export const ArticleCard = ({
     <div className="article-card">
       <div className="article-img-container">
         <Image
-          /*   sectionClassName={"article-img"} */
           elementClassName={"article-img"}
           src={imageUrl}
           alt={title}

@@ -7,7 +7,7 @@ export const Footer = () => {
       <Header
         level={3}
         text={
-          "Maria-Manuela Bîrnat · Fullstack Developer · Maria-Manuela Bîrnat · Fullstack Developer · Maria-Manuela Bîrnat · Fullstack Developer · Maria-Manuela Bîrnat · Fullstack Developer · Maria-Manuela Bîrnat · Fullstack Developer · Maria-Manuela Bîrnat · Fullstack Developer · Maria-Manuela Bîrnat · Fullstack Developer · Maria-Manuela Bîrnat · Fullstack Developer"
+          "Maria-Manuela Bîrnat · Frontend Developer · Maria-Manuela Bîrnat · Frontend Developer · Maria-Manuela Bîrnat · Frontend Developer · Maria-Manuela Bîrnat · Frontend Developer · Maria-Manuela Bîrnat · Frontend Developer · Maria-Manuela Bîrnat · Frontend Developer · Maria-Manuela Bîrnat · Frontend Developer · Maria-Manuela Bîrnat · Frontend Developer"
         }
         aria-label="true"
         className="scroll-text"

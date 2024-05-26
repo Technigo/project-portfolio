@@ -12,7 +12,7 @@ export const ProjectCard = ({ repositories }) => {
   const filteredRepos = repositories.filter((repo) =>
     repo.name.startsWith("project")
   );
-  const [visibleCards, setVisibleCards] = useState();
+  const [visibleCards, setVisibleCards] = useState(5);
 
   //This checks if a project name (repo.name) from the repositories array exists in any of the project names (data.repoName) within repoData.projects.
 
