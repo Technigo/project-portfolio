@@ -13,6 +13,7 @@
   font-size: 56px;
   font-weight: 700;
   font-style: normal;
+  text-align: center;
 }
 
 .skills-subheading {
@@ -43,11 +44,13 @@
 .skills-wrapper {
   display: grid;
   gap: 64px;
+  text-align: center;
 }
 
 .skill-box {
-  text-align: center;
+  align-items: center;
 }
+
 
 .skill-box ul {
   color: #fff;
@@ -63,20 +66,44 @@
 
 /*----------- Media Query for Tablets ------------*/
 @media (max-width: 1279px) and (min-width: 744px) {
+  .skills-container {
+    padding: 128px 32px 148px 32px;
+  }
+
   .skills-wrapper {
     grid-template-columns: repeat(2, 1fr);
     /* 2 columns for tablets */
+    text-align: left;
   }
 }
 
 /*----------- Media Query for Desktop -----------*/
 @media (min-width: 1280px) {
+  .skills-container {
+    padding: 128px 161px;
+    justify-content: space-between;
+    gap: 128px;
+  }
+
   .skills-wrapper {
     grid-template-columns: repeat(4, 1fr);
     /* 4 columns for desktop */
+    text-align: left;
+    width: 958px;
   }
 
   .skills-heading {
     font-size: 80px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1513px) {
+  .skills-container {
+    padding: 128px 234px;
+  }
+
+  .skills-wrapper {
+    width: 1044px;
   }
 }
