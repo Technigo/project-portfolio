@@ -12,9 +12,18 @@ export const ProjectCard = ({ repositories }) => {
   const filteredRepos = repositories.filter((repo) =>
     repo.name.startsWith("project")
   );
-  const [visibleCards, setVisibleCards] = useState(5);
+  const [visibleCards, setVisibleCards] = useState();
 
   //This checks if a project name (repo.name) from the repositories array exists in any of the project names (data.repoName) within repoData.projects.
+
+
+  const toggleVisibleCards = () => {
+    setVisibleCards((prevVisibleCards) =>
+      prevVisibleCards === 5 ? filteredRepos.length : 5
+    );
+  };
+
+  const showMoreLessLabel = visibleCards === 5 ? "Show More" : "Show Less";
 
   // Sort the filtered repositories based on their order in projects.json
   filteredRepos.sort((a, b) => {
@@ -26,14 +35,6 @@ export const ProjectCard = ({ repositories }) => {
     );
     return indexA - indexB;
   });
-
-  const toggleVisibleCards = () => {
-    setVisibleCards((prevVisibleCards) =>
-      prevVisibleCards === 5 ? filteredRepos.length : 5
-    );
-  };
-
-  const showMoreLessLabel = visibleCards === 5 ? "Show More" : "Show Less";
 
   return (
     <>
@@ -51,12 +52,14 @@ export const ProjectCard = ({ repositories }) => {
 
         return (
           <article className="project-card" key={matchingData.id}>
-            <Image
-              sectionClassName={"image"}
-              elementClassName={"project-img"}
-              src={matchingData.imageUrl}
-              alt={`Image of ${matchingData.displayName} project`}
-            />
+            <div className="project-img-container">
+              <Image
+                sectionClassName={"image"}
+                elementClassName={"project-img"}
+                src={matchingData.imageUrl}
+                alt={`Image of ${matchingData.displayName} project`}
+              />
+            </div>
             <div className="project-text-section">
               <Header
                 level={3}
