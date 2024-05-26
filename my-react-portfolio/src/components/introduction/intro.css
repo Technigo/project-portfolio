@@ -1,0 +1,139 @@
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 64px 16px;
+  gap: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h4 {
+  color: var(--text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.headings {
+  align-self: baseline;
+}
+
+
+.profile-text {
+  color: var(--text);
+  font-family: var(--paragraph-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.82px;
+  text-align: left;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+
+/* ------------ Tablet only ------------ */
+
+@media (min-width: 744px) and (max-width: 1279px) {
+  .intro-section {
+    padding: 128px 32px 0 32px;
+    display: grid;
+    /*  grid-template-columns: 1fr 430px; */
+    grid-template-rows: auto;
+    width: 100%;
+    max-width: 980px;
+  }
+
+  .headings {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 56px;
+  }
+
+  .profile-image {
+    grid-row: 2;
+  }
+
+  .intro-text {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  .arrow-container {
+    grid-row: 3;
+    justify-self: center;
+  }
+}
+
+/* ------------ Desktop Only ------------ */
+@media (min-width: 1280px) and (max-width: 1512px) {
+  .intro-section {
+    padding: 128px 161px 0 161px;
+    /* the padding adjusted to avoid extra space between arrow and intro */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .headings {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 80px;
+  }
+
+  .profile-image {
+    grid-row: 2;
+  }
+
+  .intro-text {
+    grid-row: 2;
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 1513px) {
+  .intro-section {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 1044px;
+  }
+
+  .headings {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .profile-image {
+    grid-column: 1;
+    /* Place the image in the first column */
+    grid-row: 2;
+    align-self: center;
+  }
+
+  .intro-text {
+    grid-column: 2;
+    /* Place the text in the second column */
+    grid-row: 2;
+  }
+}

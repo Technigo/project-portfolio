@@ -1,0 +1,108 @@
+/* --------- General Styling --------- */
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Colors */
+  --primary: #0b24f5;
+  --secondary: #ff4575;
+  --light-secondary: #ffecea;
+  --btn-gray: #f5f5f5;
+  --btn-text: #333333;
+  --hover-pink: #eb5577;
+  --hover-yellow: #ffd338;
+  --text: #000000;
+  /* Font */
+  --heading-font: "Montserrat", sans-serif;
+  --paragraph-font: "Hind", sans-serif;
+  --corner-radius: 40px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* remove margins on all relevant tags */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h3 {
+  font-family: var(--heading-font);
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+/* ------------ ARROW ------------ */
+.arrow-container {
+  padding: 0 16px 64px 16px;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translate(-50%);
+  animation: arrowJump 1s infinite;
+}
+
+@keyframes arrowJump {
+
+  0%,
+  100% {
+    transform: translateY(0);
+    /* move up and down/* (vertically) */
+  }
+
+  50% {
+    transform: translateY(-20px);
+    /* Move up by 20px */
+  }
+}
+
+
+/* ------------ MEDIA QUERIES ------------ */
+/* ------------ Tablet and up ------------ */
+@media (min-width: 744px) and (max-width: 1279px) {
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .arrow-container {
+    padding: 138px 0 0 0;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .arrow-container {
+    padding: 200px 0 63px 0;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+}
