@@ -8,7 +8,8 @@ export const TechSection = () => {
         <p className="tech-description">
           HTML5, CSS, CSS Flexbox, CSS Grid, JavaScriptES6, API&apos;s, Node.js,
           Vite, React.js, React Router, React Context, Zustand, Styled
-          Components, Web-Accessibility.
+          Components, Web-Accessibility, RESTful API, Express.js, MongoDB,
+          Mongoose.
         </p>
       </div>
     </div>

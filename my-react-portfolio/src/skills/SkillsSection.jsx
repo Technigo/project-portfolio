@@ -12,6 +12,7 @@ export const Skills = () => {
             <p>CSS</p>
             <p>JavaScriptES6</p>
             <p>React</p>
+            <p>MongoDB</p>
           </div>
           <div className="skills-part">
             <h2 className="toolbox">Toolbox</h2>
@@ -19,6 +20,7 @@ export const Skills = () => {
             <p>Netlify</p>
             <p>Postman</p>
             <p>Lighthouse</p>
+            <p>Render</p>
           </div>
           <div className="skills-part">
             <h2 className="more">More</h2>
@@ -26,6 +28,7 @@ export const Skills = () => {
             <p>Pair-Programming</p>
             <p>Asynchronous Working</p>
             <p>Agile Web Development</p>
+            <p>Problem Solving</p>
           </div>
         </div>
       </div>
