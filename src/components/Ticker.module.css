@@ -1,0 +1,37 @@
+.tickerContainer {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #FF4575;
+  width: 100%;
+  height: 114px;
+  font-size: 24px;
+  color: white;
+
+}
+
+.tickerScroll{
+  white-space: nowrap;
+  margin: 0 2em;
+}
+
+.tickerScroll div{
+  display: flex;
+}
+
+.tickerScroll span{
+  margin-left: 5px;
+}
+
+
+.LeftToRight {
+  animation: LeftToRight 400s infinite linear;
+}
+
+@keyframes LeftToRight {
+  from{
+    transform: translateX(0%)
+  } to {
+    transform: translateX(-50%)
+  }
+}

@@ -1,0 +1,120 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 16px;
+  gap: 32px 16px;
+}
+
+.header > div,
+.header > div > h2,
+.header > div > h1,
+.header > p {
+  margin: 0;
+}
+
+.header > div > h1 {
+  text-align: left;
+  color: #0B24F5;
+}
+
+.header img{
+  align-self: center;
+}
+
+
+/* TABLET SCREENS max 745px ------------------------------------------------------------ */
+
+@media (max-width:745px){ 
+  .profession{ /* it just changes here */
+    font-size: 32px;
+  }
+}
+
+/* TABLET SCREENS 745px to 1281px------------------------------------------------------------ */
+
+@media (min-width:746px) and (max-width:1280px){
+  .header{
+    padding:128px 32px;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .header p {
+    font-size: 24px;
+    line-height: 1.6;
+  }
+
+  .header > div,
+  .header > div > h2,
+  .header > div > h1,
+  .header > p {
+    margin: 0;
+  }
+
+  .header h1 {
+    font-size: 56px;
+  }
+
+  .header h2 {
+    font-size: 24px;
+  }
+
+  .header img{
+    align-self: center;
+  }
+
+}
+
+/* SCREENS 1281px to 1513xp------------------------------------------------------------ */
+
+@media (min-width: 1281px) and (max-width: 1512px) {
+  .header{
+    padding:332px 0px;
+    max-width: 1000px;
+    margin: auto;
+
+  }
+
+  .header p {
+    font-size: 24px;
+    line-height: 1.6;
+  }
+
+  .header > div,
+  .header > div > h2,
+  .header > div > h1,
+  .header > p {
+    margin: 0;
+  }
+
+  .header h1 {
+    font-size: 80px;
+  }
+  
+  .header h2 {
+    font-size: 32px;
+  }
+}
+
+/* SCREENS MIN 1513xp------------------------------------------------------------ */
+
+@media (min-width: 1513px) {
+  .header{
+    padding:332px 0px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .header p {
+    font-size: 24px;
+    line-height: 1.6;
+  }
+
+  .header h1 {
+    font-size: 80px;
+  }
+    
+  .header h2 {
+    font-size: 32px;
+  }
+}

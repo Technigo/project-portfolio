@@ -1,0 +1,114 @@
+:root {
+  font-family: Montserrat, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #333;
+  --blue: #0B24F5;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+.section-title{
+  text-align: center;
+  color: #0B24F5;
+}
+
+.profile-pic {
+  width: 164px;
+  border-radius: 50%;
+}
+
+.picMobile {
+  display: none;
+}
+
+.picOthers {
+  display: block;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 22px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.background-box{
+  width: 100%;
+  background-color: #0B24F5;
+}
+
+.long-word {
+  word-wrap: break-word;
+}
+
+/* MOBILE SCREENS MAX 745px------------------------------------------------------------ */
+@media (max-width:745px) {
+
+  .picMobile {
+    display: block;
+  }
+
+  .picOthers {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #0B25F5;
+  }
+
+
+  h2 {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+
+
+
+/* TABLET SCREENS 745px to 1281px------------------------------------------------------------ */
+
+@media (min-width:745px) and (max-width:1280px){
+  .flex-row {
+    max-width: 700px;
+  }
+}
+
+/* TABLET SCREENS 1281px to 1513xp------------------------------------------------------------ */
+
+@media (min-width: 1281px) and (max-width: 1512px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+/* TABLET SCREENS MIN 1513xp------------------------------------------------------------ */
+
+@media (min-width: 1513px) {
+  h1 {
+    grid-column: 2 / 8;
+    font-size: 80px;
+  }
+}
