@@ -12,7 +12,7 @@ export const Contact = () => {
         <img src={Linda} alt="Picture of Linda Frischknecht, Web Developer." />
         <div className="contact">
           <p>Linda Frischknecht</p>
-          <p>+41 (0)76 329 67 97</p>
+          {/* <p>+41 (0)76 329 67 97</p> */}
           <p>linda.frischknecht@bluewin.ch</p>
         </div>
         <div className="icons">
