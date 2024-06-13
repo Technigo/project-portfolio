@@ -10,7 +10,7 @@ export const Intro = () => {
         </div>
         <div className="introduction">
           <img
-            src="https://media.licdn.com/dms/image/D4D03AQEHAtt3SlUKOQ/profile-displayphoto-shrink_800_800/0/1697014709384?e=1718236800&v=beta&t=Ikjt59Bq8qp6FoKDNJzLA2St8PS4ECaZKGMNb60D4OI"
+            src="https://media.licdn.com/dms/image/D4D03AQEHAtt3SlUKOQ/profile-displayphoto-shrink_80[…]23680000&v=beta&t=XDnGbLSdq_93EceR86FOBLRNrfaxqEEuy4nsXOvdKxY"
             alt="Profile Picture"
           />
           <p>
