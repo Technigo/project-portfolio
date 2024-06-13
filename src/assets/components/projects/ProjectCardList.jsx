@@ -15,11 +15,13 @@ import auth from "../images/auth.png";
 import qr from "../images/qr.png";
 import portfolio from "../images/portfolio.png";
 import final from "../images/final.png";
+import mp from "../images/mpentreprenad.png";
 
 
 export const ProjectCardList = () => {
   const [repos, setRepos] = useState([]);
   const projectsList = [
+    'mp-entreprenad',
     'final-project',
     'project-portfolio',
     'project-state-management-quiz-vite',
@@ -36,6 +38,11 @@ export const ProjectCardList = () => {
   ];
 
   const projectInfo = {
+    'mp-entreprenad': {
+      name: 'M&P i Katrineholm AB',
+      description: 'This is my first business-site I did for a local company, I did everything from planning, design, building it and lastly transfered and published it on a domain.',
+      techniques: 'HTML5, CSS3, Javascript, React, Routes, Responsive design, Filezilla, Strato',
+    },
     'final-project': {
       name: 'Final-Project-Foodie-Moodie',
       description: 'This Foodie Moodie -project was the final project within Technigos Web Development Bootcamp and it was a group-programming project using a lot of the different techniques we learned in both frontend and backend. It is a restaurant app that gives the user recommendations of restaurants based on what occasion and mood(s) the user selects. Fun and modern project with real data from our own database.',
@@ -44,7 +51,7 @@ export const ProjectCardList = () => {
     'project-portfolio': {
       name: 'Project-Portfolio',
       description: 'This project is the one you are looking at now, my Portfolio made with React and with implementing a fixed design, even though I personalized it a bit.',
-      techniques: 'React, Web Accessibility, CSS3',
+      techniques: 'HTML5, CSS3, Javascript, React, Responsive design, Filezilla, Strato',
     },
     'project-state-management-quiz-vite': {
       name: 'Project-State-Management-Quiz-Vite',
@@ -104,6 +111,7 @@ export const ProjectCardList = () => {
   };
   
   const netlifyURLs = {
+    'mp-entreprenad': 'https://mp-katrineholm.netlify.app/',
     'final-project': 'https://foodiemoodie.netlify.app/',
     'project-portfolio': 'https://malin-lunde-portfolio.netlify.app',
     'project-state-management-quiz-vite': 'https://teamwork-quiz-vite-zustand.netlify.app',
@@ -120,6 +128,7 @@ export const ProjectCardList = () => {
   };
 
   const githubURLs = {
+    'mp-entreprenad': 'https://github.com/malinlunde/mp-business-site',
     'final-project': 'https://github.com/malinlunde/final-project',
     'project-portfolio': 'https://github.com/malinlunde/project-portfolio',
     'project-state-management-quiz-vite': 'https://github.com/malinlunde/project-state-management-quiz-vite',
@@ -136,6 +145,7 @@ export const ProjectCardList = () => {
   }
 
   const imageForProject = {
+    'mp-entreprenad': mp,
     'final-project': final,
     'project-portfolio': portfolio,
     'project-state-management-quiz-vite': quiz, 
