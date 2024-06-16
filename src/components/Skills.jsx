@@ -12,6 +12,7 @@ export const MySkills = () => {
 							<li>HTML5</li>
 							<li>CSS3</li>
 							<li>JavaScript ES6</li>
+							<li>Node.js</li>
 							<li>React</li>
 							<li>Styled Components</li>
 							<li>Github</li>
@@ -29,7 +30,6 @@ export const MySkills = () => {
 					<div className="upcomming">
 						<p>Upcomming</p>
 						<ul className="tech-skills-upcomming">
-							<li>Node.js</li>
 							<li>Python</li>
 							<li>C#</li>
 						</ul>
