@@ -1,4 +1,4 @@
-import './Heading.css'
+import '../styling/Heading.css'
 import myImage from '/image.me.png'
 import { TbArrowNarrowDown } from 'react-icons/tb'
 

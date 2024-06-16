@@ -1,4 +1,4 @@
-import './Heading.css'
+import '../styling/Tech.css'
 
 export const TechSection = () => {
 	return (

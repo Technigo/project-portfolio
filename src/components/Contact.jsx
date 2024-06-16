@@ -1,4 +1,4 @@
-import './Contact.css'
+import '../styling/Contact.css'
 import myImage from '/image.me.png'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'

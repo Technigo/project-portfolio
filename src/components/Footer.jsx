@@ -1,4 +1,4 @@
-import './Heading.css'
+import '../styling/Heading.css'
 
 const footerBorder = 'Sofie Ferrari Strahl ∙ Frontend Developer '
 
