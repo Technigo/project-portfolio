@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+*:focus {
+  outline: 1px solid var(--primary);
+}
+
+/* ------------ General CSS with roots, reseting margin etc ------------ */
+:root {
+  /* Colors */
+  --primary: #339988;
+  --secondary: #ff4575;
+  --light-secondary: #ffecea;
+  --btn-gray: #f5f5f5;
+  --btn-text: #333;
+  --hover-pink: #eb5577;
+  --hover-yellow: #ffd338;
+  --text: #000000;
+
+  /* Font */
+  --header-font: "Montserrat", sans-serif;
+  --text-font: "Hind", sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Other styles */
+  --corner-radius: 40px;
+}
+
+/* Text elements */
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-family: var(--header-font);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--header-font);
+}
+
+p.normal {
+  font-size: 18px;
+  font-family: var(--text-font);
+}
+
+p.large {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--text-font);
+}
+
+.arrow-container {
+  padding: 32px 16px 0 16px;
+  position: relative;
+  top: 0;
+  animation: arrowJump 1.7s ease infinite;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-container button {
+  background: none;
+  border: none;
+}
+
+/* Centering loading spinner */
+.loading-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Centering error-message */
+.error-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Animation for pink arrow */
+@keyframes arrowJump {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50% {
+    top: 30px;
+  }
+}
+
+/* Media Queries  */
+/* --- Tablet --- */
+@media screen and (min-width: 745px) {
+  h1,
+  h2 {
+    font-size: 56px;
+  }
+
+  p.normal {
+    font-size: 18px;
+  }
+  p.large {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .arrow-container {
+    padding: 0 32px 0 32px;
+  }
+}
+
+/* --- Desktop --- */
+@media screen and (min-width: 1280px) {
+  h1,
+  h2 {
+    font-size: 66px;
+  }
+
+  p.large {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+
+  .arrow-container {
+    padding: 0 161px 63px;
+  }
+}
+
+@media screen and (min-width: 1513px) {
+  .arrow-container {
+    padding: 0 234px 63px;
+  }
+}
