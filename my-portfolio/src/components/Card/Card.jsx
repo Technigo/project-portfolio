@@ -17,9 +17,11 @@ export const Card = ({
 
   return (
     <div className={`project-card ${direction}`}>
-      <div className="project-image">
-        <Photo color={color} mode={mode} source={source} />
-      </div>
+      <a href={renderLink}>
+        <div className="project-image">
+          <Photo color={color} mode={mode} source={source} />
+        </div>
+      </a>
       <div className="project-info">
         <div className="text-box">
           <h3>{title}</h3>
