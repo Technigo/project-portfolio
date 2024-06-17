@@ -1,28 +1,30 @@
 .project-image img {
-  height: 300px;
-  width: 350px;
+  width: 408px;
+  height: 280px;
+  flex-shrink: 0;
   border-bottom: 13px solid #0b24f5;
   border-left: 10px solid #0b24f5;
   object-fit: cover;
   display: flex;
-  margin-right: 10px;
 }
 
 ul {
   list-style-type: none;
 }
 
-@media (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .project-image img {
-    width: 300px;
     height: 200px;
-    object-fit: cover;
+    align-self: stretch;
+    width: 343px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .project-image img {
-    width: 380px;
+    width: 200px;
     height: 280px;
+    flex-shrink: 0;
+    object-fit: cover;
   }
 }
