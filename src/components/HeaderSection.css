@@ -32,17 +32,17 @@ h2 {
   color: #a6bd9d;
 }
 
-.header-text {
+p {
   font-family: hind;
   font-size: 18px;
   font-weight: 400;
 }
 
 /* Media Queries for tablet*/
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 745px) {
   .header-container {
     display: grid;
-    padding: 128px 32px;
+    padding: 128px 32px 0 32px;
     grid-template-columns: 1fr 430px;
     grid-template-rows: auto auto auto;
   }
@@ -56,8 +56,12 @@ h2 {
     grid-row: 1;
   }
 
-  .header-title-title {
-    font-size: 55px;
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 56px;
   }
 
   .header-text {
@@ -69,7 +73,18 @@ h2 {
 }
 
 /* Media Queries for desktop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1281px) {
   .header-container {
+    margin: 0 auto;
+    padding: 200px 161px 63px 161px;
+    grid-template-columns: 1fr 600px;
+    grid-template-rows: auto;
+  }
+}
+
+/* Media Queries for extra large screens */
+@media screen and (min-width: 1513px) {
+  .introduction-container {
+    padding: 332px 234px 63px 234px;
   }
 }

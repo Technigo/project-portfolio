@@ -27,7 +27,7 @@ export const Header = ({ repo }) => {
           Loves to build beautiful things - both digital and in real life.
           Curious and eager to master coding as a great complement to my
           background in e-commerce and graphic design. I'm a focused and
-          creative dooer.
+          creative dooer who loves to find the small bugs - and to solve them!
         </p>
       </div>
       <Arrow />
