@@ -30,9 +30,9 @@ export const Header = ({ repo }) => {
           creative doeer.
         </p>
       </div>
-      {/* <div className="arrow-container">
+      <div className="arrow-container">
         <img className="arrow-icon" src={arrowIcon} alt="Arrow" />
-      </div> */}
+      </div>
     </div>
   );
 };
