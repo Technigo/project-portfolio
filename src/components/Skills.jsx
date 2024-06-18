@@ -3,47 +3,49 @@ import '../styling/Skills.css'
 export const MySkills = () => {
 	return (
 		<>
-			<div className="skill-section">
-				<h1>Skills</h1>
-				<div className="skills">
-					<div className="code">
-						<p>Code</p>
-						<ul className="tech-skills-code">
-							<li>HTML5</li>
-							<li>CSS3</li>
-							<li>JavaScript ES6</li>
-							<li>Node.js</li>
-							<li>React</li>
-							<li>Styled Components</li>
-							<li>Github</li>
-						</ul>
-					</div>
-					<div className="toolbox">
-						<p>Toolbox</p>
-						<ul className="tech-skills-toolbox">
-							<li>Figma</li>
-							<li>Postman</li>
-							<li>Slack</li>
-							<li>Notion</li>
-						</ul>
-					</div>
-					<div className="upcomming">
-						<p>Upcomming</p>
-						<ul className="tech-skills-upcomming">
-							<li>Python</li>
-							<li>C#</li>
-						</ul>
-					</div>
-					<div className="more">
-						<p>More</p>
-						<ul className="tech-skills-more">
-							<li>Communication</li>
-							<li>Problem solver</li>
-							<li>Analytic</li>
-						</ul>
+			<section>
+				<div className="skill-section">
+					<h1>Skills</h1>
+					<div className="skills">
+						<div className="code">
+							<p>Code</p>
+							<ul className="tech-skills-code">
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>JavaScript ES6</li>
+								<li>Node.js</li>
+								<li>React</li>
+								<li>Styled Components</li>
+								<li>Github</li>
+							</ul>
+						</div>
+						<div className="toolbox">
+							<p>Toolbox</p>
+							<ul className="tech-skills-toolbox">
+								<li>Figma</li>
+								<li>Postman</li>
+								<li>Slack</li>
+								<li>Notion</li>
+							</ul>
+						</div>
+						<div className="upcomming">
+							<p>Upcomming</p>
+							<ul className="tech-skills-upcomming">
+								<li>Python</li>
+								<li>C#</li>
+							</ul>
+						</div>
+						<div className="more">
+							<p>More</p>
+							<ul className="tech-skills-more">
+								<li>Communication</li>
+								<li>Problem solver</li>
+								<li>Analytic</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		</>
 	)
 }
