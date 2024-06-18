@@ -2,6 +2,7 @@
   background-color: black;
   display: flex;
   justify-content: center;
+  align-items: center;
   animation: arrowJump 1s infinite;
 }
 
@@ -17,4 +18,18 @@
   50% {
     transform: translateY(-20px); /* Move up by 20px */
   }
+}
+
+/* Media Queries for tablet*/
+@media screen and (min-width: 667px) {
+  .arrow-container {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    /* justify-self: center; */
+    /* width: 100%; */
+  }
+}
+
+/* Media Queries for desktop */
+@media screen and (min-width: 1024px) {
 }
