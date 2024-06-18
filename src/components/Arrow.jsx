@@ -1,5 +1,5 @@
 import React from "react";
-import arrowIcon from "../assets/images/noun-arrow-2989497-FFFFFF.svg";
+import arrowIcon from "../assets/images/arrow.svg";
 import "./Arrow.css";
 
 export const Arrow = () => {
