@@ -6,7 +6,6 @@ import { FaGithub } from 'react-icons/fa'
 export const Card = ({ project }) => {
 	return (
 		<section>
-			<body>
 				<div className="color-wrapper-card">
 					<div className="card">
 						<img src={project.image}></img>
@@ -37,7 +36,6 @@ export const Card = ({ project }) => {
 						</div>
 					</div>
 				</div>
-			</body>
 		</section>
 	)
 }

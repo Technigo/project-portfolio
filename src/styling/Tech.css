@@ -1,26 +1,36 @@
-.color-wrapper {
-	display: grid;
-	grid-template-columns: 30% 60%;
+.tech-section {
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #db938f;
+}
+
+.tech-wrapper {
+	display: flex;
+	flex-direction: column;
 	margin: 0;
 	background-color: #db938f;
-	height: 800px;
-	width: 100%;
+	height: 616px;
+	min-width: 100vw;
 }
 
-.color-wrapper h1 {
+.tech-wrapper h1 {
 	font-family: "Montserrat", sans-serif;
-	background-color: #db938f;
 	color: #092d4c;
-	justify-content: flex-start;
-	margin-left: 40%;
-	align-content: center;
+	font-size: 56px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 68.26px;
 }
 
-.color-wrapper h2 {
+.tech-wrapper h2 {
 	font-family: "Hind", sans-serif;
-	font-size: 25px;
-	font-weight: 500;
-	background-color: #db938f;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 38.42px;
 	color: #092d4c;
 	justify-content: flex-start;
 	margin-left: 20%;
@@ -29,25 +39,36 @@
 	align-content: center;
 }
 
-@media (max-width: 667px) and (min-width: 0px) {
-	.color-wrapper {
-		display: flex;
-		flex-direction: column;
-		margin: 0;
-		background-color: #db938f;
-		height: 700px;
-		width: 100%;
-	}
+@media (min-width: 668px) {
+	.tech-section {
+	height: 800px;
+	min-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #db938f;
+}
 
-	.color-wrapper h1 {
+.tech-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	background-color: #db938f;
+	min-width: 100vw;
+}
+
+	.tech-wrapper h1 {
 		font-family: "Montserrat", sans-serif;
 		color: #092d4c;
+		justify-content: flex-start;
+		align-content: center;
 	}
 
-	.color-wrapper h2 {
+	.tech-wrapper h2 {
 		font-family: "Hind", sans-serif;
-		font-size: 25px;
-		font-weight: 500;
+		font-size: 24px;
+		font-weight: 600;
 		color: #092d4c;
 		justify-content: flex-start;
 		margin-left: 20%;
@@ -57,10 +78,8 @@
 	}
 }
 
-@media (min-width: 668px) and (max-width: 1060px) {
-	/* Nedan är stylingen till komponenten Tech.jsx */
-
-	.color-wrapper {
+@media (min-width: 1025px) {
+	.tech-wrapper {
 		display: grid;
 		grid-template-columns: 30% 60%;
 		margin: 0;
@@ -69,18 +88,24 @@
 		width: 100%;
 	}
 
-	.color-wrapper h1 {
+	.tech-wrapper h1 {
 		font-family: "Montserrat", sans-serif;
+		font-size: 80px;
+		line-height: 97.52px;
+		font-weight: 700;
+		background-color: #db938f;
 		color: #092d4c;
 		justify-content: flex-start;
 		margin-left: 40%;
 		align-content: center;
 	}
 
-	.color-wrapper h2 {
+	.tech-wrapper h2 {
 		font-family: "Hind", sans-serif;
-		font-size: 25px;
-		font-weight: 500;
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 52.23px;
+		background-color: #db938f;
 		color: #092d4c;
 		justify-content: flex-start;
 		margin-left: 20%;

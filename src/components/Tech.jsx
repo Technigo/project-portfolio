@@ -3,8 +3,8 @@ import '../styling/Tech.css'
 export const TechSection = () => {
 	return (
 		<>
-			<section>
-				<div className="color-wrapper">
+			<section className='tech-section'>
+				<div className="tech-wrapper">
 					<h1>Tech</h1>
 					<h2>
 						HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks,
