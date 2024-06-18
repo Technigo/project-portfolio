@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import '../styling/Card.css'
 import { IoGlobeOutline } from 'react-icons/io5'
 import { FaGithub } from 'react-icons/fa'
