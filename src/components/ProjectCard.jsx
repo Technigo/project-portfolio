@@ -4,10 +4,18 @@ import githubIcon from "../assets/images/github.svg";
 import livedemoIcon from "../assets/images/live-demo.svg";
 import defaultImage from "../assets/images/default-project-image.png";
 
+// Function to capitalize the first letter of each word
+const capitalizeFirstLetter = (string) => {
+  return string.replace(/\b\w/g, (char) => char.toUpperCase());
+};
+
 export const ProjectCard = ({ repo, imageUrl }) => {
   const imageSrc = imageUrl ? imageUrl : defaultImage;
-  // Replace "-" with an empty space in the project name
-  const formattedProjectName = repo.name.replace(/-/g, " ");
+
+  // Replace "-" with an empty space in the project name and capitalize first letter
+  const formattedProjectName = capitalizeFirstLetter(
+    repo.name.replace(/-/g, " ")
+  );
 
   const handleLiveDemoClick = () => {
     window.location.href = repo.homepage;
