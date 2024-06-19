@@ -31,12 +31,10 @@ To get a local copy up and running, follow these steps:
 
 ## Project Structure
 
-The project is organized into several key components and pages:
+The project is organized into several key components:
 
 - `src/components`: Contains reusable components such as Header, Footer, ProjectCard, etc.
-- `src/pages`: Contains the main pages like Home, About, Projects, and Contact.
 - `src/assets`: Stores images and other static assets.
-- `src/styles`: Contains CSS and style files for the project.
 
 ## Features
 
