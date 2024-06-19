@@ -1,30 +1,59 @@
 .contact-section {
-  background-color: #275868;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: white;
   margin: 0 auto;
-  padding-bottom: 64px;
+  padding: 128px 0;
   /* gap: 64px; */
 }
 
-.contact-section img {
-  margin: 0 0 64px 0;
+.contact-section h1 {
+  font-family: "Montserrat";
+  font-size: 56px;
+  color: #275868;
+  margin-bottom: 64px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
 }
 
 .contact-section p {
-  font-size: px;
-  color: white;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
   text-align: center;
 }
 
 .contact-social-icons {
   display: flex;
   flex-direction: row;
-  gap: 36px;
-  margin-top: 64px;
+  gap: 32px;
 }
 
 .contact-social-icons a:hover img {
   filter: invert(1);
+}
+
+/* Media Queries for tablet */
+@media screen and (min-width: 745px) {
+  .contact-section {
+    padding: 128px 32px;
+  }
+}
+
+/* Media Queries for desktop */
+@media screen and (min-width: 1281px) {
+  .contact-section {
+    padding: 128px 162px;
+  }
+  .contact-section h1 {
+    font-size: 80px;
+    margin-bottom: 128px;
+  }
+  .contact-section p {
+    font-size: 32px;
+  }
 }
