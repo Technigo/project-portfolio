@@ -4,6 +4,7 @@ import { Header } from "./HeaderSection";
 import { Skills } from "./Skills";
 import { Contact } from "./ContactSection";
 import { ProjectSection } from "./ProjectSection";
+import repoImages from "../project-images.json";
 
 export const Portfolio = () => {
   const [repositories, setRepositories] = useState([]);
@@ -40,7 +41,10 @@ export const Portfolio = () => {
           <>
             <Header repo={repositories[0]} />
             <TechSection />
-            <ProjectSection repositories={repositories} />
+            <ProjectSection
+              repositories={repositories}
+              repoImages={repoImages}
+            />
             <Skills />
             <Contact repo={repositories[0]} />
           </>
@@ -49,24 +53,3 @@ export const Portfolio = () => {
     </div>
   );
 };
-
-// import React, { useState, useEffect } from "react";
-// import { TechSection } from "./TechSection";
-// import { Header } from "./HeaderSection";
-// import { Skills } from "./Skills";
-// import { Contact } from "./ContactSection";
-// import { ProjectSection } from "./ProjectSection";
-
-// export const Portfolio = () => {
-//   return (
-//     <div>
-//       <>
-//         <Header repo={repositories[0]} />
-//         <TechSection />
-//         <ProjectSection />
-//         <Skills />
-//         <Contact repo={repositories[0]} />
-//       </>
-//     </div>
-//   );
-// };
