@@ -16,6 +16,7 @@ export const Skills = () => {
             <li>React</li>
             <li>Styled Components</li>
             <li>GitHub</li>
+            <li>Node.js</li>
           </ul>
         </div>
         <div className="skills-list-container">
@@ -31,19 +32,19 @@ export const Skills = () => {
           </ul>
         </div>
         <div className="skills-list-container">
-          <h3>Upcoming</h3>
-          <ul className="skills-upcoming-list">
-            <li>Node.js</li>
-          </ul>
-        </div>
-        <div className="skills-list-container">
           <h3>More</h3>
-          <ul className="skills-more-list">
+          <ul className="skills-upcoming-list">
             <li>E-commerce</li>
             <li>Branding</li>
             <li>Social Media</li>
             <li>Marketing</li>
             <li>Agile methodology</li>
+          </ul>
+        </div>
+        <div className="skills-list-container">
+          <h3>Wan't to learn</h3>
+          <ul className="skills-more-list">
+            <li>Typescript</li>
           </ul>
         </div>
       </div>
