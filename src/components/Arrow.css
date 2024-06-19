@@ -1,0 +1,40 @@
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: arrowJump 1s infinite;
+}
+
+.arrow-icon {
+  width: 27px;
+  height: 68px;
+}
+
+@keyframes arrowJump {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end position (no movement) */
+  }
+  50% {
+    transform: translateY(20px); /* Move up by 20px */
+  }
+}
+
+/* Media Queries for tablet*/
+@media screen and (min-width: 745px) {
+  .arrow-container {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    padding-top: 138px;
+  }
+  .arrow-icon {
+    margin-bottom: 20px;
+  }
+}
+
+/* Media Queries for desktop */
+@media screen and (min-width: 1281px) {
+  .arrow-container {
+    padding-top: 200px;
+  }
+}
