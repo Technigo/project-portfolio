@@ -1,14 +1,14 @@
 import React from "react";
 import "./ContactSection.css";
 import { Heading } from "./Heading";
-import linkedinLogo from "../assets/images/icon-linkedin.svg";
-import githubLogo from "../assets/images/icon-github.svg";
-import instagramLogo from "../assets/images/icon-instagram.svg";
+import linkedinLogo from "../assets/images/linkedin-grey.svg";
+import githubLogo from "../assets/images/github-grey.svg";
+import instagramLogo from "../assets/images/instagram-grey.svg";
 
 export const Contact = ({ repo }) => {
   return (
     <div className="contact-section">
-      <Heading text="Get in touch" color="white" />
+      <Heading text="Let's talk" />
       {repo && repo.owner && repo.owner.avatar_url && (
         <img
           className="header-img"
