@@ -8,7 +8,7 @@ export const Skills = () => {
       <Heading text="Skills" />
       <div className="skills-list-section">
         <div className="skills-list-container">
-          <h3>Code</h3>
+          <h4>Code</h4>
           <ul className="skills-code-list">
             <li>HTML5</li>
             <li>CSS3</li>
@@ -20,7 +20,7 @@ export const Skills = () => {
           </ul>
         </div>
         <div className="skills-list-container">
-          <h3>Toolbox</h3>
+          <h4>Toolbox</h4>
           <ul className="skills-toolbox-list">
             <li>Adobe Photoshop</li>
             <li>Adobe Illustrator</li>
@@ -32,7 +32,7 @@ export const Skills = () => {
           </ul>
         </div>
         <div className="skills-list-container">
-          <h3>More</h3>
+          <h4>More</h4>
           <ul className="skills-upcoming-list">
             <li>E-commerce</li>
             <li>Branding</li>
@@ -42,7 +42,7 @@ export const Skills = () => {
           </ul>
         </div>
         <div className="skills-list-container">
-          <h3>Wan't to learn</h3>
+          <h4>Wan't to learn</h4>
           <ul className="skills-more-list">
             <li>Typescript</li>
             <li>MySQL</li>
