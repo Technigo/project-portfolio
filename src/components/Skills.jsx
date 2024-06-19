@@ -45,6 +45,7 @@ export const Skills = () => {
           <h3>Wan't to learn</h3>
           <ul className="skills-more-list">
             <li>Typescript</li>
+            <li>MySQL</li>
           </ul>
         </div>
       </div>
