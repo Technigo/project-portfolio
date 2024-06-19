@@ -5,7 +5,8 @@ import { ProjectCard } from "./ProjectCard";
 
 export const ProjectSection = ({ repositories, repoImages }) => {
   return (
-    <div>
+    <div className="repositories-container">
+      <Heading text="Featured Projects" />
       {repositories.map((repo) => {
         const repoImage = repoImages.find((img) => img.repoName === repo.name);
         const imageUrl = repoImage ? repoImage.imageUrl : "";

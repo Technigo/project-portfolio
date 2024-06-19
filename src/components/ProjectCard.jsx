@@ -19,7 +19,7 @@ export const ProjectCard = ({ repo, imageUrl }) => {
 
   return (
     <div className="project-card-container">
-      <img src={imageUrl} alt={repo.name} />
+      <img src={imageUrl} alt={repo.name} className="mockup-image" />
       <div className="project-content">
         <h3 className="project-name">{formattedProjectName}</h3>
         <p className="project-description">
