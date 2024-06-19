@@ -52,13 +52,11 @@
   .skills-list-section {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     margin: 0 auto;
     align-items: flex-start;
     flex-wrap: wrap;
     max-width: 400px;
     gap: 64px;
-    /* margin-bottom: 128px; */
   }
 
   .skills-list-container {
@@ -71,9 +69,22 @@
 }
 
 /* Media Queries for desktop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1281px) {
+  .skills-section {
+    padding: 128px 161px;
+  }
+
   .skills-list-section {
     flex-wrap: nowrap;
-    gap: 60px;
+    max-width: 1000px;
+    gap: 84px;
+  }
+
+  .skills-section h1 {
+    font-size: 80px;
+  }
+
+  .skills-section h3 {
+    font-size: 32px;
   }
 }
