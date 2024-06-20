@@ -1,109 +1,36 @@
-import '../styling/Skills.css'
+import "../styling/Skills.css"
 
 export const MySkills = () => {
+	const categories = [
+		{
+			heading: "Code",
+			text: "HTML5\nCSS3\nJavascript ES6\nReact\nNode.js\nTailwindCSS\nStyled Components\nGitHub\nMongoose",
+		},
+		{
+			heading: "Toolbox",
+			text: "Figma\nSlack\nNotion\nPostman\nMongoDB\nCloudinary",
+		},
+		{
+			heading: "Upcomming", text: "Redux\nJava\nC#"
+		},
+		{
+			heading: "More", text: "Communication\nProblem solver\nAnalytic"
+		}
+	]
+
 	return (
 		<>
-			<section>
-				<div className="skill-section">
-					<h1>Skills</h1>
-					<div className="skills">
-						<div className="code">
-							<p>Code</p>
-							<ul className="tech-skills-code">
-								<li>HTML5</li>
-								<li>CSS3</li>
-								<li>JavaScript ES6</li>
-								<li>Node.js</li>
-								<li>React</li>
-								<li>Styled Components</li>
-								<li>Github</li>
-							</ul>
+			<div className="skill-section">
+				<h1>Skills</h1>
+				<div className="skills">
+					{categories.map((category, index) => (
+						<div className="skill-category" key={index}>
+							<h2>{category.heading}</h2>
+							<p>{category.text}</p>
 						</div>
-						<div className="toolbox">
-							<p>Toolbox</p>
-							<ul className="tech-skills-toolbox">
-								<li>Figma</li>
-								<li>Postman</li>
-								<li>Slack</li>
-								<li>Notion</li>
-							</ul>
-						</div>
-						<div className="upcomming">
-							<p>Upcomming</p>
-							<ul className="tech-skills-upcomming">
-								<li>Python</li>
-								<li>C#</li>
-							</ul>
-						</div>
-						<div className="more">
-							<p>More</p>
-							<ul className="tech-skills-more">
-								<li>Communication</li>
-								<li>Problem solver</li>
-								<li>Analytic</li>
-							</ul>
-						</div>
-					</div>
+					))}
 				</div>
-			</section>
+			</div>
 		</>
 	)
 }
-
-// import './Skills.css'
-
-// export const MySkills = () => {
-// 	return (
-// 		<>
-// 			<div className="skill-section">
-// 				<h1>Skills</h1>
-// 				<div className="skills">
-// 					<div className="code">
-// 						<p>Code</p>
-// 					</div>
-// 					<div className="toolbox">
-// 						<p>Toolbox</p>
-// 					</div>
-// 					<div className="upcomming">
-// 						<p>Upcomming</p>
-// 					</div>
-// 					<div className="more">
-// 						<p>More</p>
-// 					</div>
-// 					<div className="tech-skills-code">
-// 						<ul>
-// 							<li>HTML5</li>
-// 							<li>CSS3</li>
-// 							<li>JavaScript ES6</li>
-// 							<li>React</li>
-// 							<li>Styled Components</li>
-// 							<li>Github</li>
-// 						</ul>
-// 					</div>
-// 					<div className="tech-skills-toolbox">
-// 						<ul>
-// 							<li>Figma</li>
-// 							<li>Postman</li>
-// 							<li>Slack</li>
-// 							<li>Notion</li>
-// 						</ul>
-// 					</div>
-// 					<div className="tech-skills-upcomming">
-// 						<ul>
-// 							<li>Node.js</li>
-// 							<li>Python</li>
-// 							<li>C#</li>
-// 						</ul>
-// 					</div>
-// 					<div className="tech-skills-more">
-// 						<ul>
-// 							<li>Communication</li>
-// 							<li>Problem solver</li>
-// 							<li>Analytic</li>
-// 						</ul>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		</>
-// 	)
-// }

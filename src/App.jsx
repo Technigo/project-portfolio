@@ -8,10 +8,7 @@ import { ContactMe } from "./components/Contact"
 import { Footer } from "./components/Footer"
 import "./styling/Card.css"
 
-//import H from '@nicodes/react-heading'
-
 export const App = () => {
-	console.log(projects)
 
 	return (
 		<>

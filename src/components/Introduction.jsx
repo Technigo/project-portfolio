@@ -8,7 +8,7 @@ export const Introduction = () => {
 			<section className="introduction">
 					<div className="intro-container">
 						<div className="intro-heading">
-							<h2>Hi, I&apos;m Sofie Ferrari Strahl</h2>
+							Hi, I&apos;m Sofie Ferrari Strahl
 							<h1>Frontend Developer</h1>
 						</div>
 
