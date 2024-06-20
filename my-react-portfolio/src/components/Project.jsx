@@ -11,8 +11,8 @@ const Project = ({ project }) => {
         <Photos images={project.image} />
       </div>
       <div className="projectContainer">
-        <h2>{project.name}</h2>
-        <p>{project.description}</p>
+        <h2 className="projectTitle">{project.name}</h2>
+        <p className="projectDescription">{project.description}</p>
         <Tags tags={project.tags} />
         <ProjectButtons
           gitHubLink={project.github}

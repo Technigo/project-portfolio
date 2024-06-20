@@ -1,20 +1,22 @@
 .projectButtons {
-  margin-top: 30px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .netlifyButton {
   display: inline-block;
-  margin: 0 15px 10px 10px;
-}
-
-.gitHubButton {
-  margin-left: 10px;
+  margin: 0 0 16px 0;
 }
 
 /*** Tablet ***/
-
 @media (min-width: 745px) {
+  .projectButtons {
+    flex-direction: row;
+    margin-top: 16px;
+  }
+
   .netlifyButton {
-    margin-right: 0;
+    margin-right: 32px;
   }
 }
