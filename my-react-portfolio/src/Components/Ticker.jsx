@@ -3,7 +3,7 @@ import "./Ticker.css";
 export const Ticker = () => {
   const items = [
     { text: "Kathinka Sewell" },
-    { text: "Frontend Developer" },
+    { text: "Fullstack Developer" },
   ];
 
   return (

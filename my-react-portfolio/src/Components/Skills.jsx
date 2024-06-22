@@ -1,27 +1,25 @@
 
-import "./Skills.css";
+//import "./Skills.css";
 
 export const Skills = () => {
 
-  const codeSkills = ["HTML5", "CSS3", "JavaScript ES6", "React", "Ruby", "Github"];
+  const codeSkills = ["HTML5", "CSS3", "JavaScript ES6", "React", "Ruby", "Node.js", "MongoDB", "Github", "Web Accessibility", "API:s", "Tailwind", "Styled Components", "Flexbox", "Grids"];
   const toolboxSkills = [
     "VS Code", "Atom", "Postman", "Figma", "Adobe Photoshop", "Adobe Illustrator",
     "Adobe Indesign", "Adobe XD", "Sketch", "Affinity Designer", "Keynote", "Office 365",
-    "Slack", "Notion"
+    "Slack", "Notion", "Jira", "Confluence", "Mural"
   ];
-  const upcomingSkills = ["Node.js", "Typescript", "Svelte", "Flutter"];
+  const upcomingSkills = ["Typescript", "Svelte", "Flutter", "Next.js"];
   const moreSkills = [
-    "Concept development", "Art direction", "UX/UI", "Agile methodology",
-    "Scrum master", "Product owner", "Digital producer", "Workshop facilitator",
-    "Design sprints", "Design thinking", "Project management", "Team lead"
+    "Concept Development", "Art Direction", "UX/UI", "Agile Methodology",
+    "Scrum Master", "Product Owner", "Digital Producer", "Workshop facilitator",
+    "Design Sprints", "Design Thinking", "Project Management", "Team Lead"
   ];
 
   return (
     <section className="skills">
-      <div className="skillwrapper">
-        <div className="skills-header">
-          <h2>Skills</h2>
-        </div>
+      <h2>Skills</h2>
+      <div className="skills-container">
         <div className="code container">
           <h3>Code</h3>
           {codeSkills.map((skill, index) => (

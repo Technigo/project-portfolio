@@ -1,5 +1,4 @@
 import { Socials } from "./Socials";
-import "./Socialbar.css";
 
 export const Socialbar = () => {
   return (

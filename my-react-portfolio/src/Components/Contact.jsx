@@ -1,8 +1,6 @@
 import { Email } from './Email.jsx';
-import {Image} from './Image.jsx';
+import { Image } from './Image.jsx';
 import { Socialbar } from './Socialbar.jsx';
-
-import './contact.css';
 
 export const Contact = () => {
 

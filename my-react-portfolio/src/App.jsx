@@ -6,17 +6,18 @@ import { Skills } from './Components/Skills'
 import { Contact } from './Components/Contact'
 import { Ticker } from './Components/Ticker'
 
-
 const App = () => {
 
   return (
     <>
-      <Introduction />
-      <Technologies />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Ticker />
+      <section className='center-wrap'>
+        <Introduction />
+        <Technologies />
+        <Projects />
+        <Skills />
+        <Contact />
+        <Ticker />
+      </section>
     </>
   )
 }
