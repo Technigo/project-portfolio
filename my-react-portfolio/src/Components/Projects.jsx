@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { PortfolioImages } from "./PortfolioImages";
 import { fetchProjects } from "./Utility";
+import noImage from "../../dist/assets/Projectimages/noimage.jpg";
 
 // Projects component fetches data from the GitHub API and displays the projects in the portfolio.
 export const Projects = () => {
@@ -68,7 +69,7 @@ export const Projects = () => {
                         <img className="project-image" src={PortfolioImages.find((image) => image.id === id)?.url} alt={name} />
                       </>
                     )
-                    : <p>Image not found</p>
+                    : <><img className="project-image" src={noImage} alt={name}></img></>
                 }
               </picture>
               {/* comparing the Ids in PortofolioImages with the Ids in the API response to display a "prettier" name for each project. */}

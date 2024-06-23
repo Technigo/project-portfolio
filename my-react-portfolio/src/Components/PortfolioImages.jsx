@@ -24,8 +24,8 @@ export const PortfolioImages = [
     id: 767646855,
     name: "project-music-releases-vite",
     prettyname: "Music Releases",
-    url: "../assets/Projectimages/musiclibrary.jpg",
-    webp: "../assets/Projectimages/musiclibrary.webp",
+    url: "../assets/Projectimages/music.jpg",
+    webp: "../assets/Projectimages/music.webp",
   },
   {
     id: 758265166,
