@@ -46,7 +46,6 @@ export const Projects = () => {
 
   //filtering the projects to only display the ones that have a homepage.
   const websiteProjects = projectObject.filter((project) => project.homepage);
-console.log(websiteProjects)
 
   return (
     <div className="project-wrap">
