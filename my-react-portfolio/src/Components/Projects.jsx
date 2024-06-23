@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { PortfolioImages } from "./PortfolioImages";
 import { fetchProjects } from "./Utility";
-import noImage from "../../dist/assets/Projectimages/noimage.jpg";
+import noImage from "../../public/assets/Projectimages/noimage.jpg";
 
 // Component for displaying project images
 const ProjectImage = ({ id, name }) => {
