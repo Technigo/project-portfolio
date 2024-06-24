@@ -11,11 +11,13 @@ export const MySkills = () => {
 			text: "Figma\nSlack\nNotion\nPostman\nMongoDB\nCloudinary",
 		},
 		{
-			heading: "Upcomming", text: "Redux\nJava\nC#"
+			heading: "Upcomming",
+			text: "Redux\nJava\nC#",
 		},
 		{
-			heading: "More", text: "Communication\nProblem solver\nAnalytic"
-		}
+			heading: "More",
+			text: "Communication\nProblem solver\nAnalytic",
+		},
 	]
 
 	return (

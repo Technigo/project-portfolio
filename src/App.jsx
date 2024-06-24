@@ -9,7 +9,6 @@ import { Footer } from "./components/Footer"
 import "./styling/Card.css"
 
 export const App = () => {
-
 	return (
 		<>
 			<Introduction />
