@@ -1,4 +1,3 @@
-import portrait from '../assets/portrait-small.jpg'
 import Lottie from 'lottie-react'
 import animation from '../assets/Animation-arrow-black.json'
 import './css/introduction.css'
@@ -15,7 +14,7 @@ export const Introduction = () => {
           <h1 className><span>Izabel Lind Färnstrand</span><br></br>
           Creative<br /> Frontend Developer</h1>
         <div className="img-text">
-          <img src={portrait} id="portrait" alt="portait of Izabel" />
+          <img src="/portrait-small.jpg" id="portrait" alt="portait of Izabel" />
           <p>
             I develop creative & userfriendly websites, with an eye for details.
           Based in Stockholm, Sweden

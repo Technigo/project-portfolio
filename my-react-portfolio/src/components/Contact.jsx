@@ -1,4 +1,3 @@
-import portrait from '../assets/portrait.png'
 import email from '../assets/email.svg'
 import linkedin from '../assets/linkedin.svg'
 import githubProfile from '../assets/github-profile.svg'
@@ -11,7 +10,7 @@ export const Contact = () => {
     <div className="contact">
     <div className="contact-info">
       <h2>Let&apos;s talk</h2>
-      <img src={portrait} id="portrait" alt="portait of Izabel" />
+      <img src="/portrait-small.jpg" id="portrait" alt="portait of Izabel" />
       <h3>Izabel Lind Färnstrand</h3>
       <h3><a href="tel:0046729632973">+46729632973</a></h3>
       <div className="email"><a href="mailto:contact@izabellind.com"><img src={email} alt="email" id="email"/><h3>contact@izabellind.com</h3></a>
