@@ -8,7 +8,7 @@ return(
         {projects.projects.map((item) => (
             <div className="each-project" key={item.id}>
                 <div className="links-container">
-                <img id="project-img" src={item.image} alt={item.name}/>
+                <a href={item.netlify_url} target="_blank"> <img id="project-img" src={item.image} alt={item.name}/></a>
                 <div className="links">
                     <a href={item.netlify_url} target="_blank"><img src={netlify} alt="button for viewing site" className="button"/></a>
                     <a href={item.github_url} target="_blank"><img src={github} alt="button to view in github" className="button"/></a>

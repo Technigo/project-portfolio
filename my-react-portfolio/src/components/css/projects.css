@@ -23,7 +23,7 @@
 }
 
 .each-project {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -81,20 +81,28 @@
 @media screen and (min-width: 768px) {
   .each-project {
     grid-template-columns: 1fr 1fr;
+    width:80%;
   }
   #project-img {
     padding-bottom: 0;
     justify-self: flex-end;
     margin-right: 1em;
     margin-bottom: 0;
-    max-width: 400px;
+    max-width: 600px;
   }
   .description {
     padding-left: 1em;
-    max-width: 400px;
+
   }
   .links-container {
     margin-left: auto;
     
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .description {
+    min-width: 500px;
+    max-width: 600px;
+}
 }
