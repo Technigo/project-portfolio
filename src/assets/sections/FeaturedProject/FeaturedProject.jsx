@@ -8,6 +8,7 @@ export const FeaturedProject = () => {
   const [projectList, setProjectList] = useState([]);
 
   const selectedProjectNames = [
+    "project-final",
     "project-happy-thoughts-vite",
     "project-music-releases-vite",
     "project-survey-vite",
