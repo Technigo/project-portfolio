@@ -46,6 +46,7 @@ export const Skills = () => {
           <ul>
             <li>SEO</li>
             <li>Data Analytics</li>
+            <li>Paid Ads</li>
             <li>Problem Solving</li>
             <li>Communications</li>
           </ul>
