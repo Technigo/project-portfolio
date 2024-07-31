@@ -9,8 +9,8 @@ export const Introduction = () => {
       <section className="intro-wrapper" aria-label="A page of introduction">
         <ProfilePhoto className={"dev-photo"} />
         <div className="intro-box">
-          <p className="dev-name">Hi, I&apos;m Trista Shan</p>
-          <p className="dev-title">Frontend Developer</p>
+          <h1 className="dev-name">Hi, I&apos;m Trista Shan</h1>
+          <h2 className="dev-title">Frontend Developer</h2>
         </div>
         <article className="dev-intro">
           I&apos;m a developer with a healthcare background, driven by a passion

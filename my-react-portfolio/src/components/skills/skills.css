@@ -39,35 +39,27 @@
     padding: 2px;
 }
 
+.listbox p:hover{
+    background-color:var(--color-1);
+    cursor: default;
+}
+
 .code-head,
 .toolbox-head,
-.upcoming-head {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--color-8);
-}
-
+.upcoming-head,
 .more-head {
     font-size: 24px;
     font-weight: 600;
     color: var(--color-8);
+    
 }
 
-.code-head {
+.code-head:hover,
+.toolbox-head:hover,
+.upcoming-head:hover,
+.more-head:hover {
     background-color: var(--color-1);
-
-}
-
-.toolbox-head {
-    background-color: var(--color-1);
-}
-
-.upcoming-head {
-    background-color: var(--color-1);
-}
-
-.more-head {
-    background-color: var(--color-1)
+    cursor:default;
 }
 
 @media (min-width:667px) and (max-width:1024px) {
@@ -113,7 +105,7 @@
         text-align: left;
     }
 
-    .skill-container h4 {
+    .skill-container h3 {
         font-size: 32px;
 
     }

@@ -19,7 +19,8 @@ export const Contact = () => {
           <ProfilePhoto className={"profilePhoto"} />
           <div className="info">
             <p className="name">Trista Shan</p>
-            <p className='location'>📍 Helsinki, Finland</p>
+            <p className='location'>📍 Based in Helsinki, Finland</p>
+            <p className='worldwide'>👩‍💻 Working worldwide</p>
           </div>
         </div>
         <div className="contactIcons">

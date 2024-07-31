@@ -7,9 +7,10 @@ export const Tech = () => {
       <div className="tech-container">
         <PageTopic className={"tech"} pageTopic={"Tech"} />
         <p className="tech-details">
-          HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js,
-          Mongo DB, Web Accessibility, APIs, mob-programming, pair-programming,
-          GitHub.
+          React, JavaScript/ES6, HTML5, CSS3,
+          Node.js, Express, MongoDB, Mongoose, RESTful API, Authentication, Responsive Design, 
+          Tailwind CSS, Styled Components, Accessibility, Figma,
+          GitHub
         </p>
       </div>
     </section>

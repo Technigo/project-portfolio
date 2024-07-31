@@ -1,6 +1,6 @@
 import "./heading.css"
 export const Heading = ({heading})=>{
     return (
-        <h4 className="heading">{heading}</h4>
+        <h3 className="heading">{heading}</h3>
     )
 }
