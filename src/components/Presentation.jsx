@@ -6,10 +6,19 @@ import Article1 from '../assets/Article1.jpg'; // Path to your image
 import Article2 from '../assets/Article2.jpg'; // Path to your image
 import Article3 from '../assets/Article3.jpg'; // Path to your image
 import Article4 from '../assets/Article4.jpg'; // Path to your image
+import Article5 from '../assets/Article5.png'; // Path to your image
 
 function Presentation() {
   // Define the articles array here
   const articles = [
+    {
+      id: 5,
+      title: "Job searching during a bad economy",
+      description: "Job searching is hell, but one day you will catch a break",
+      imageUrl: Article5,
+      date: "August 2024",
+      url: "https://medium.com/@alexandrameija/job-searching-during-a-bad-economy-36fa0fee115c" // Add the article's URL here
+    },
     {
       id: 4,
       title: "Coding and ADHD- a match made in heaven?",
