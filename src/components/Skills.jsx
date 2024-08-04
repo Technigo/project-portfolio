@@ -16,7 +16,8 @@ function Skills() {
     'Mongoose',
     'Mongo',
     'SQL',
-    'XML'
+    'XML',
+    'XSD'
   ]);
 
   const toolbox = [
