@@ -22,7 +22,7 @@ export const Skills = () => {
               <p>Express</p>
               <p>MongoDB</p>
               <p>Mongoose</p>
-              <p>RESPECTFUL API</p>
+              <p>REST API</p>
               <p>Authentication</p>
             </div>
           </div>
