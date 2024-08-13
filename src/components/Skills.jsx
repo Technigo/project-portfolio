@@ -12,7 +12,7 @@ export const MySkills = () => {
 		},
 		{
 			heading: "Upcomming",
-			text: "Redux\nJava\nC#",
+			text: "TypeScript\nRedux\nSQL",
 		},
 		{
 			heading: "More",

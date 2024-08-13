@@ -7,9 +7,8 @@ export const TechSection = () => {
 			<div className="tech-wrapper">
 				<h1>Tech</h1>
 				<h2>
-					HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js,
-					Mongo DB, Web Accessibility, APIs, mob-programming, pair-programming,
-					GitHub.
+					HTML, CSS, JavaScript ES6, JSX, React, Node.js, Git, API's, Mongo DB,
+					Web Accessibility, Agile project management.
 				</h2>
 			</div>
 			{/* </section> */}
