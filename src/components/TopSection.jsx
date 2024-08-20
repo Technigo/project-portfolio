@@ -13,11 +13,13 @@ export const TopSection =()=> {
   return (
     <div className="top">
       <div className="content">
-        <img src={portrait} alt="JingPortrait" className="mobilePortrait"/>
+        <div className="mobilePortraitContainer">
+          <img src={portrait} alt="JingPortrait" className="mobilePortrait"/>
+        </div>
         
         <div className="frame">
           <p className="topGreeting">Hi, I'm Jing Huang</p>
-          <p className="titleBlue">Frontend Developer + Designer</p>
+          <p className="titleBlue">Frontend Developer</p>
         </div>
         
         <div className="topDetails">
