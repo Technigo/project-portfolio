@@ -1,0 +1,91 @@
+#intro-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    row-gap: 32px;
+}
+
+#greeting-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: stretch;
+}
+
+#intro-heading {
+    color: var(--green);
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+#top-intro-picture {
+    display: none;
+}
+/*Use order to make it move instead of having it double.*/
+#intro-picture {
+    margin-right: 22px;
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-box {
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: arrowJump 1s infinite;
+}
+
+.arrow {
+    width: 27px;
+    height: 68px;
+}
+
+@keyframes arrowJump {
+    from { top: 0;}
+    to {top: 34px;}
+}
+
+@media (max-width:667px) {
+    #top-intro-picture {
+        display: flex;
+        margin: 0 0 32px;
+        align-self: center;
+    }
+    
+    #intro-picture {
+        display: none;
+    }
+    
+    #greeting {
+        font-size: 18px;
+    }
+
+    #intro-heading {
+        font-size: 32px;
+    }
+}
+
+@media (min-width:668px) and (max-width:1024px) {
+    #intro-section {
+        padding-top: 128px;
+        padding-bottom: 20px;
+        row-gap: 118px;
+    }    
+}
+
+@media (min-width:1025px) {
+    #intro-section {
+        padding-top: 332px;
+        padding-bottom: 63px;
+        row-gap: 200px;
+    }
+
+    #intro-heading {
+        margin-bottom: 16px;
+    }
+}
