@@ -93,3 +93,4 @@ Feel free to reach out to me through the following channels:
 - **Email**: [johanna@billingskognyberg.se](mailto:johanna@billingskognyberg.se)
 - **LinkedIn**: [Johanna Billingskog Nyberg](www.linkedin.com/in/johanna-billingskog-nyberg-b28b4738)
 - **GitHub**: [JohannaBN](https://github.com/JohannaBN)
+- **View it live: [Portfolio] (https://johannabillingskognyberg.netlify.app/)
