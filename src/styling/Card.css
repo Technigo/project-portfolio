@@ -1,7 +1,10 @@
+#root {
+  background-color: #195078;
+}
+
 .color-wrapper-card {
 	margin: 0;
 	background-color: #195078;
-	width: 100%;
 	max-width: 100%;
 }
 
@@ -26,14 +29,14 @@
 	align-items: center;
 	margin: 0;
 	padding: 10px;
-	max-width: 90%;
+	width: 90%;
 	height: auto;
 }
 
 img {
 	display: flex;
 	align-items: center;
-	max-width: 90%;
+	max-width: 100%;
 	border-left: solid 15px #db938f;
 	border-bottom: solid 15px #db938f;
 	object-fit: cover;
@@ -65,8 +68,9 @@ img {
 
 .tags {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-wrap: wrap; 
+	justify-content: flex-start; 
+	gap: 5px;
 }
 
 .tag {
@@ -75,8 +79,8 @@ img {
 	font-weight: 500;
 	color: white;
 	padding: 5px;
-	margin-bottom: 20px;
 }
+
 
 .button-wrapper {
 	display: flex;
@@ -226,7 +230,9 @@ a button:hover {
 
 	.tags {
 		display: flex;
-		justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+		
 	}
 
 	.tag {
@@ -235,6 +241,7 @@ a button:hover {
 		font-weight: 500;
 		color: #f4f4f4;
 		padding: 5px;
+    margin-right: 5px;
 	}
 
 	.button-wrapper {
@@ -253,7 +260,7 @@ a button:hover {
 		background-color: white;
 		border-radius: 50px;
 		border: none;
-		margin-top: 30px;
+		margin-top: 5px;
 		padding: 5px 10px;
 	}
 
@@ -270,7 +277,7 @@ a button:hover {
 		background-color: white;
 		border-radius: 50px;
 		border: none;
-		margin-top: 30px;
+		margin-top: 5px;
 		padding: 5px 10px;
 	}
 
