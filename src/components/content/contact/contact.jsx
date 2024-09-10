@@ -14,7 +14,7 @@ export const Contact = () => {
                 mainHeading="Let's talk"
             />
             <div className={style.innerBox}>
-                <img className={style.imgMe} src="/images/me.jpg" alt="Me" />
+                <img className={style.imgMe} src="/images/portrait.png" alt="Portrait" />
                 <div className={style.contactInfoBox}>
                     <div className={style.contactInfo}>
                         <p>Mirela Cacan</p>

@@ -16,7 +16,7 @@ export const Tech = () => {
             <div >
                 <SubHeader
                     className={style.h2}
-                    subHeading="HTML, CSS, Flexbox, JavaScript, ES6, 
+                    subHeading="HTML, CSS, Flexbox, JavaScript,
                     JSX, React, React Hooks, Zustand, Node.js, 
                     Mongo DB, Postman, Web Accessibility, APIs, 
                     mob-programming, pair-programming, GitHub"

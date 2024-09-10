@@ -6,13 +6,14 @@ import { MainHeader } from '../../reusable/mainheader/mainheader.jsx'
 
 export const Skills = () => {
     const code = [
-        "HTML 5", "CSS", "Javascript ES6", "React",
-        "Styled Components", "GitHub", "Mongo DB Atlas",
-        "Mongoose", "Authentication"
+        "HTML 5", "CSS", "JavaScript ES6", "React",
+        "Styled Components", "Zustand", "API", "Mongo DB",
+        "Mongoose", "Authentication", "GitHub"
     ];
 
     const toolbox = [
-        "Terminal", "Postman", "Mongo DB", "Compass", "Express", "Figma", "Slack", "Adobe PRO", "Netlify", "Render"];
+        "Terminal", "Postman", "Compass", "Express", "Netlify", "Render", "Mongo DB Atlas", "Figma", "Slack", "Adobe PRO", "Azure DevOps"
+    ];
 
     const upcoming = [
         "PRINCE2 Forundation", "PRINCE2 Foundation Agile"
@@ -46,7 +47,7 @@ export const Skills = () => {
                     </SubHeader>
                 </div>
                 <div className={style.skillList}>
-                    <SubHeader className={style.headerUpcoming} subHeading="Upcoming">
+                    <SubHeader className={style.headerUpcoming} subHeading="Certified">
                         <ul className={style.commonP}>
                             {upcoming.map((skill, index) => (
                                 <li key={index}>{skill}</li>
