@@ -11,13 +11,6 @@ export const Card = ({ project }) => {
 					<div className="card-content">
 						{project.name}
 						<p>{project.description}</p>
-						<div className="tags">
-							{project.tags.map((tag, index) => (
-								<p className="tag" key={index}>
-									{tag}
-								</p>
-							))}
-						</div>
 						<div className="button-wrapper">
 							<a href={project.netlify} className="button">
 								<button aria-label="Netlify Button">
@@ -31,6 +24,13 @@ export const Card = ({ project }) => {
 									<FaGithub /> View the code
 								</button>
 							</a>
+						</div>
+						<div className="tags">
+							{project.tags.map((tag, index) => (
+								<p className="tag" key={index}>
+									{tag}
+								</p>
+							))}
 						</div>
 					</div>
 				</div>
