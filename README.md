@@ -4,18 +4,33 @@
   </a>
 </h1>
 
-### Hi, I'm Technigo! 👋
+### About My Portfolio
 
-Welcome to my first React portfolio project! I'm Mirela, a student who has recently completed Sprint 2 of my boot camp and is eager to take my skills to the next level. This portfolio showcases my journey into the world of React, where I've mastered core concepts such as components, props, hooks, and web APIs to craft a dynamic and interactive website.
+This portfolio project showcases my web development projects. The project highlights a well-structured codebase, employing reusable components, state management through React hooks, and integration with web APIs and JSON files. The design ensures responsiveness and accessibility, providing a positive user experience. 
 
-Throughout this project, I've followed a design and diligently structured the codebase by breaking it down into reusable components and effectively passing data through props. Leveraging the power of React hooks, especially the useState hook, I've brought reactivity to my projects and created a captivating user experience. In addition I have focused on responsiveness and accessability for all.
+This project initially followed a design. I made a few changes to it, including adding a new page with all projects through React Router.
 
-One highlight of my portfolio is the seamless integration of web APIs. I've employed the useEffect hook to pull project information from the GitHub API and merging it to the JSON file, ensuring that my portfolio remains up-to-date with my latest work. Project details and descriptions are displayed dynamically, reflecting my ongoing journey in the coding world.
+## Technologies
 
+- React: Core framework for building the user interface with components and hooks.
+- JavaScript: For interactive functionality and data manipulation.
+- React Router - for routing to a new page
+- CSS: For styling and ensuring a responsive layout.
+- GitHub API: Integrated to dynamically fetch and display project information.
+- Netlify: Used for deploying the application and showcasing the portfolio online.
 
-### Lessons Learned
+## Challenges
 
-Through this project, I've had the opportunity to learn valuable lessons in React development. It has provided insights into the power of components and props for creating a modular and well-organized codebase. React hooks, especially useState, have proven to be effective tools for managing state and interactivity. The experience of integrating web APIs highlighted the importance of data fetching and dynamic content display, making it easier to keep my portfolio up-to-date.
+- API Integration: Fetching and merging data from the GitHub API with local JSON files to ensure real-time updates.
+- State Management: Efficiently managing state using React hooks, particularly useState, to maintain interactivity and responsiveness.
+- Responsive Design: Ensuring the portfolio is accessible and functional across various devices and screen sizes.
+
+## Learning Outcomes
+
+- Component-Based Architecture: The creation and management of reusable components for a modular and maintainable codebase.
+- State Management: Gained knowledge in managing application state with React hooks, enhancing dynamic behavior and interactivity.
+- Dynamic Content Handling: Developed skills in integrating and updating content dynamically through API calls and data merging techniques.
+
 
 #### Deployed page
 

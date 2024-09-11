@@ -1,6 +1,8 @@
 //NOT DONE:
 //I have removed "My words" for now as I have no articles, but I started making it in code in case I want to use it later
 
+import React from 'react';
+import { Link } from 'react-router-dom';
 import style from './main-wrapper.module.css'
 import { Introduction } from './introduction/introduction.jsx'
 import { Tech } from './tech/tech.jsx'

@@ -1,30 +1,24 @@
-//NOT DONE:
-// Button Hover
-// Wawy line in bottom
-// Later: In Github: Change project Name, Make sure link to github is fetched from github if not present in json, Get links and tags from github instead of json?
-// Later: Move all projects to second page and only display featured projects on frontpage
 
-import style from "./myprojects.module.css"
+import React from 'react'
+import { Link } from 'react-router-dom'
+import style from "./allprojects.module.css"
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
 import { MainHeader } from "../../reusable/mainheader/mainheader"
 import { SubHeader } from "../../reusable/subheader/subheader"
 import myProjectsData from "../../../../myprojects.json"
 
-
-export const MyProjects = () => {
+export const AllProjectsPage = () => {
     const [projects, setProjects] = useState([])
 
     useEffect(() => {
         fetch('https://api.github.com/users/mirelcac/repos')
             .then((response) => response.json())
             .then((githubData) => {
-                // Define the names of projects you want to exclude
-                const excludedGithubProjects = ['Web-Fall-23', 'mc-happy-thoughts-api', 'mc-project-mongo-api', 'mc-express-api', 'project-pizza-MC', 'Business-Site-Order', 'mc-project-portfolio'];
-
-                // Filter out unwanted GitHub projects
+                // Filter out unwanted projects
                 const filteredGithubData = githubData.filter(project => {
-                    return !excludedGithubProjects.includes(project.name.trim());
+                    // Define the names of projects you want to exclude
+                    const excludedProjects = ['Web-Fall-23'];
+                    return !excludedProjects.includes(project.name);
                 });
 
                 // Create a map of GitHub projects by URL for quick access
@@ -32,20 +26,8 @@ export const MyProjects = () => {
                     filteredGithubData.map(project => [project.html_url, project])
                 );
 
-                // Define the ID of JSON projects you want to exclude
-                const excludedProjectIds = [3, 4, 5, 9, 16, 17];
-
-                // Filter out specific projects from JSON data using IDs
-                const filteredJsonProjects = myProjectsData.projects.filter(project => {
-                    return !excludedProjectIds.includes(project.id);
-                });
-
-                // Debugging: log filtered data
-                console.log('Filtered JSON projects:', filteredJsonProjects);
-
-
                 // Merge your JSON projects with GitHub data
-                const mergedProjects = filteredJsonProjects.map(jsonProject => {
+                const mergedProjects = myProjectsData.projects.map(jsonProject => {
                     const githubProject = githubProjectsByUrl.get(jsonProject.github);
                     if (githubProject) {
                         // Remove the GitHub project from the map if it's used
@@ -65,9 +47,9 @@ export const MyProjects = () => {
 
     return (
         <div className={style.myProjectsBox}>
-            <div className={style.viewAllProjects}>
-                <Link to="/all-projects" className={style.allProjectsLink}>View All Projects</Link>
-            </div>
+            <nav className={style.navigation}>
+                <Link to="/" className={style.homeLink}>Home</Link>
+            </nav>
             <div className={style.projectsWrapper}>
                 <MainHeader className={style.h1} mainHeading="Featured Projects" />
                 <ul className={style.projectsList}>
