@@ -51,7 +51,7 @@ export const AllProjectsPage = () => {
                 <Link to="/" className={style.homeLink}>Home</Link>
             </nav>
             <div className={style.projectsWrapper}>
-                <MainHeader className={style.h1} mainHeading="Featured Projects" />
+                <MainHeader className={style.h1} mainHeading="All Projects" />
                 <ul className={style.projectsList}>
                     {projects && projects.length > 0 ? ( // Check if projects is an array and has elements
                         projects.map((project) => (
