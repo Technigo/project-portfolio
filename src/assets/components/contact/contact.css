@@ -1,0 +1,69 @@
+.contact {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: white;
+}
+
+.h2contact {
+  font-size: 56px;
+  color:#272727;
+}
+
+.contact-name,
+.contact-number,
+.contact-mail {
+  font-weight: 200;
+  font-size: 18px;
+  margin: 0;
+  color: #272727;
+}
+
+.profile-image {
+  margin-bottom: 30px;
+}
+
+.scroll-text-wrapper {
+    position: relative;
+    width: 100%;
+    height: 114px;
+    overflow: hidden; 
+    background: #FF70D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px; 
+}
+
+.scroll-text {
+white-space: nowrap;
+position: absolute;
+animation: scroll-text 80s linear infinite;
+color: white;
+font-size: 26px;
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform:translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contact-name,
+  .contact-number,
+  .contact-mail {
+    font-weight: 400;
+    font-size: 26px;
+    margin: 0;
+    color: #272727;
+  }
+}
