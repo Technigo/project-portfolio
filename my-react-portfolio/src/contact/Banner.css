@@ -1,0 +1,41 @@
+:root {
+  --darkblue: #200e3a;
+  --midblue: #38419d;
+  --lightblue: #3887be;
+  --green: #52d3d8;
+}
+
+.banner-wrapper {
+  width: 100%;
+  background-color: var(--darkblue);
+  color: #ffffff;
+  height: 114px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.banneritem {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  animation: marquee 20s linear 0s infinite;
+}
+
+.dot {
+  font-size: 20px;
+}
+
+.banner-span {
+  padding: 0 20px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

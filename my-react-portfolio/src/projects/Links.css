@@ -1,0 +1,50 @@
+:root {
+  --darkblue: #200e3a;
+  --midblue: #38419d;
+  --lightblue: #3887be;
+  --green: #52d3d8;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button {
+  border-radius: 40px;
+  border: none;
+  padding: 8px 16px 8px 8px;
+  font-size: 20px;
+  background-color: #d0d0d0;
+  cursor: pointer;
+}
+
+.button-flex {
+  display: flex;
+  align-items: center;
+}
+
+.button-flex p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 35px;
+  padding-right: 7px;
+}
+
+.hover-blue:hover {
+  background-color: var(--lightblue);
+}
+
+.hover-green:hover {
+  background-color: var(--green);
+}
+
+@media (min-width: 620px) {
+  .button-box {
+    flex-direction: row;
+  }
+}
