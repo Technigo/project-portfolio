@@ -1,0 +1,23 @@
+.banner-container {
+  position: relative;
+  width: 100%;
+  background-color: var(--secondary);
+  overflow: hidden;
+}
+
+.banner-container h3 {
+  color: white;
+  padding: 41px 0 35px 0;
+  white-space: nowrap;
+  animation: moveLeftToRight 20s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
