@@ -1,22 +1,24 @@
-import { projects } from "../../../projects.json";
-import { Button } from "../resuable components/Button";
-import { Tags } from "../resuable components/Tags";
-import "./Projects.css";
-import githubIcon from "../../assets/github.svg";
-import netlifyIcon from "../../assets/Live-demo.svg";
-import githubHoverIcon from "../../assets/github-hover-wht.svg";
-import netlifyHoverIcon from "../../assets/Live-demo-hover.svg";
+import { projects } from "../../../projects.json"
+import { Button } from "../resuable components/Button"
+import { Tags } from "../resuable components/Tags"
+import "./Projects.css"
+import githubIcon from "../../assets/github.svg"
+import netlifyIcon from "../../assets/Live-demo.svg"
+import githubHoverIcon from "../../assets/github-hover-wht.svg"
+import netlifyHoverIcon from "../../assets/Live-demo-hover.svg"
 
 export const Projects = () => {
   return (
     <div className="Projects">
       {projects.map((project, index) => (
         <section className="project-card" key={index}>
-          <img
-            src={project.image}
-            alt={`image of project ${project.name}`}
-            className="image-card"
-          />
+          <a href={project.netlify} target="_blank" rel="noopener noreferrer">
+            <img
+              src={project.image}
+              alt={`image of project ${project.name}`}
+              className="image-card"
+            />
+          </a>
           <div className="project-info">
             <h3 className="project-title">{project.name}</h3>
             <p className="project-description">{project.description}</p>
@@ -45,5 +47,5 @@ export const Projects = () => {
         </section>
       ))}
     </div>
-  );
-};
+  )
+}

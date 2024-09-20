@@ -15,6 +15,7 @@ export const Skills = () => {
             <li>Styled Components</li>
             <li>Tailwind CSS</li>
             <li>GitHub</li>
+            <li>Node.js</li>
           </ul>
         </section>
 
@@ -24,19 +25,17 @@ export const Skills = () => {
             <li>Atom</li>
             <li>Postman</li>
             <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
             <li>Figma</li>
-            <li>Keynote</li>
             <li>Slack</li>
           </ul>
         </section>
-
+        {/* 
         <section className="skills-box">
           <h3 className="skills-subheading">Upcoming</h3>
           <ul className="list-box">
-            <li>Node.js</li>
+            <li></li>
           </ul>
-        </section>
+        </section> */}
 
         <section className="skills-box">
           <h3 className="skills-subheading">More</h3>

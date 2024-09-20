@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./Footer.css"
 
 export const Footer = () => {
   return (
@@ -12,5 +12,5 @@ export const Footer = () => {
         Lovisa Åberg • Frontend Developer • Lovisa Åberg • Frontend Developer •
       </div>
     </div>
-  );
-};
+  )
+}

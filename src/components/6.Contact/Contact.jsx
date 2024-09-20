@@ -1,14 +1,14 @@
-import "./Contact.css";
-import profilePicture from "../../assets/profile-picture.png";
-import linkedInIcon from "../../assets/linkedin.svg";
-import githubIcon from "../../assets/github-contact.svg";
-import stackOverflowIcon from "../../assets/stackoverflow.svg";
+import "./Contact.css"
+import profilePicture from "../../assets/profile-picture.png"
+import linkedInIcon from "../../assets/linkedin.svg"
+import githubIcon from "../../assets/github-contact.svg"
+import stackOverflowIcon from "../../assets/stackoverflow.svg"
 
 export const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-content">
-        <h2 className="contact-heading">Let&apos;s talk</h2>
+        <h2 className="contact-heading">Let&apos;s talk </h2>
         <img
           src={profilePicture}
           alt="Profile picture"
@@ -43,5 +43,5 @@ export const Contact = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
