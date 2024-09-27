@@ -1,0 +1,199 @@
+.image-card {
+  height: 200px;
+  width: 280px;
+  object-fit: cover;
+  align-self: stretch;
+  margin-bottom: 24px;
+  border-bottom: 10px solid #252B51;
+  border-left: 10px solid #252B51;
+  margin-top: 64px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.project-title {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.project-description {
+  color: #000;
+  font-family: "Hind";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.github-button,
+.netlify-button {
+  color: #333;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 40px;
+  background: #f5f5f5;
+}
+
+.netlify-button:hover,
+.github-button:hover {
+  background-color: #252B51;
+  color: #FFF;
+}
+
+@media (min-width: 350px) and (max-width: 667px) {
+  .project-card {
+    width: auto;
+  }
+
+  .project-info {
+    width: auto;
+  }
+
+  .image-card {
+    width: 343px;
+    transition: transform 0.2s ease;
+  }
+
+  .image-card:hover {
+    border-bottom: 10px solid #FF255B;
+    border-left: 10px solid #FF255B;
+    transform: scale(1.06);
+  }
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .project-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .image-card {
+    height: 280px;
+    width: 200px;
+    object-fit: cover;
+    align-self: stretch;
+    border-bottom: 10px solid #252B51;
+    border-left: 10px solid #252B51;
+    transition: transform 0.2s ease;
+  }
+
+  .image-card:hover {
+    border-bottom: 10px solid #FF255B;
+    border-left: 10px solid #FF255B;
+    transform: scale(1.06);
+  }
+
+  .project-info {
+    margin-left: 38px;
+    margin-top: 64px;
+    height: 280px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .project-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 8px;
+  }
+
+  .button {
+    padding: 0;
+  }
+
+  .github-button,
+  .netlify-button {
+    min-width: 220px;
+  }
+
+  .netlify-button:hover,
+  .github-button:hover {
+    min-width: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-content {
+    width: 958px;
+  }
+
+  .project-card {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .image-card {
+    height: 280px;
+    width: 408px;
+    object-fit: cover;
+    align-self: stretch;
+    border-bottom: 10px solid #252B51;
+    border-left: 10px solid #252B51;
+    transition: transform 0.2s ease;
+  }
+
+  .image-card:hover {
+    border-bottom: 10px solid #FF255B;
+    border-left: 10px solid #FF255B;
+    transform: scale(1.06);
+  }
+
+  .project-info {
+    margin-left: 38px;
+    margin-top: 64px;
+    max-width: 959px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .project-title {
+    font-size: 32px;
+  }
+
+  .project-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+
+  .github-button,
+  .netlify-button {
+    min-width: 220px;
+  }
+
+  .netlify-button:hover,
+  .github-button:hover {
+    min-width: 220px;
+  }
+}
