@@ -1,0 +1,52 @@
+$background-color: #08111c;
+$main-text-color: #ffffff;
+$sub-text-color: #cfcfcf;
+$indicator-color: #cfcfcfaa;
+$title-color: #0093fd;
+$title-glow-color: #0094fd8a;
+$sub-text-glow-color: #cfcfcfa3;
+$ball-glow-color: #cfcfcf3c;
+
+@mixin title-text {
+  color: $title-color;
+  text-shadow: 0 0 30px $title-glow-color;
+  font-size: 3.5rem;
+  margin-top: 0;
+}
+@mixin mobile-title-text-size {
+  font-size: 2.5rem;
+}
+
+@mixin mobile-position {
+  margin: 8rem 24px;
+  padding-top: 0;
+}
+
+@mixin tablet-title-text-size {
+  font-size: 2.5rem;
+}
+
+@mixin tablet-position {
+  margin: 5rem 0 0 7.5rem;
+  padding-top: 1.5rem;
+}
+@mixin laptop-position {
+  margin: 12rem 0 0 23vw;
+  padding-top: 1.5rem;
+}
+
+@mixin mobile {
+  @media screen and (max-width: 425px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
