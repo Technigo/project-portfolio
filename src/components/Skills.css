@@ -1,0 +1,85 @@
+.skills{
+  display: flex;
+  height: 980px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #0B24F5;
+  color: white;
+}
+
+.skillContent{
+  width: 1044px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  gap: 128px;
+}
+
+.skillSections{
+  width: 100%;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+}  
+
+.skillSection{
+  width: fit-content;
+}
+
+.skillSection p{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  margin: 0 0 16px 0;
+}
+
+.skillDetails p{
+  font-family: "Hind";
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* For Tablet Device */
+@media (min-width:667px) and (max-width:1025px) {
+  .skillContent{
+    width: 1044px;
+    gap: 64px;
+  }
+
+  .skillSections{
+    width: fit-content;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 64px;
+  } 
+
+  .skillSection p{
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+/* For Mobile Device */
+@media (max-width: 667px) {
+
+  .skills{
+    height: auto;
+  }
+
+  .skillContent{
+    margin: 128px auto;
+    gap: 64px;
+  }
+
+  .skillSections{
+    display:flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+  } 
+  
+}
