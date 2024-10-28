@@ -1,33 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import projects from "../src/Libraries/projects.json"
+import netlify from "../src/assets/icon/Ic-Web.svg"
+import github from "../src/assets/icon/Ic-Github.svg"
 
-function App() {
-  const [count, setCount] = useState(0)
+export const App = () => {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {projects.projects.map((item) => (
+          <div className="each-project" key={item.id}>
+              <div className="links-container">
+              <a href={item.netlify} target="_blank"> <img id="project-img" src={item.image} alt={item.name}/></a>
+              <div className="links">
+                  <a href={item.netlify} target="_blank"><img src={netlify} alt="button for viewing site" className="button"/></a>
+                  <a href={item.github} target="_blank"><img src={github} alt="button to view in github" className="button"/></a>
+                  </div>
+              </div>
+          <div className="description">
+              <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                  <ul className="tags">
+                  {item.tags.map((tag, index) => (
+                      <li className="tag" key={index}>{tag}</li>
+                  ))}
+                  </ul>
+              </div>
+          </div>
+      ))}
     </>
   )
 }
