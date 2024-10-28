@@ -1,10 +1,13 @@
 import "./Introduction.css"
 import arrowImage from "../../assets/arrow.svg"
 import profilePicture from "../../assets/profile-picture.png"
+import Lottie from "lottie-react"
+import animationData from "../../assets/halloween.json"
 
 export const Introduction = () => {
   return (
     <div className="introduction-container">
+      <Lottie animationData={animationData} loop={true} className="animation" />
       <section className="introduction">
         <img
           src={profilePicture}

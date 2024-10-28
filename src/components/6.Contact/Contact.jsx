@@ -3,6 +3,8 @@ import profilePicture from "../../assets/profile-picture.png"
 import linkedInIcon from "../../assets/linkedin.svg"
 import githubIcon from "../../assets/github-contact.svg"
 import stackOverflowIcon from "../../assets/stackoverflow.svg"
+import Lottie from "lottie-react"
+import animationData from "../../assets/pumpkins.json"
 
 export const Contact = () => {
   return (
@@ -40,6 +42,11 @@ export const Contact = () => {
               />
             </a>
           </div>
+          <Lottie
+            animationData={animationData}
+            loop={true}
+            className="animation"
+          />
         </div>
       </div>
     </div>
