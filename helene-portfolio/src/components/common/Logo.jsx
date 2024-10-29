@@ -4,7 +4,7 @@ import "./Logo.css";
 const Logo = () => {
   return (
     <a
-      className="site-logo"
+      className="logo__link"
       href="/"
       aria-label="Home page of Helene Westrin's portfolio"
     >
