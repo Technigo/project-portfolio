@@ -6,8 +6,10 @@
   --color-neutral-200: #e9f2f9;
   --color-neutral-50: #fff;
   --color-headings: var(--color-neutral-900);
-  --color-text: var(var(--color-neutral-700));
-  --color-background-main: var(var(--color-neutral-50));
+  --color-text: var(--color-neutral-700);
+  --color-text-inverted: var(--color-neutral-50);
+  --color-background-main: var(--color-neutral-50);
+  --color-background-footer: var(--color-neutral-900);
 
   /* Body Typography */
   --font-family-body: "Chivo", "Helvetica Neue", Arial, sans-serif;
@@ -25,7 +27,22 @@
   --font-size-heading-lg: 1.75rem;
   --font-size-heading-md: 1.25rem;
   --font-size-heading-sm: 1rem;
-  --line-height-heading: 1.2;
+  --line-height-heading: 128%;
+  --line-height-compact: 105%;
+
+  @media (min-width: 768px) {
+    --font-size-heading-xl: 3.5rem;
+    --font-size-heading-lg: 2.75rem;
+    --font-size-heading-md: 2rem;
+    --font-size-heading-sm: 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    --font-size-heading-xl: 6rem;
+    --font-size-heading-lg: 4.5rem;
+    --font-size-heading-md: 2.75rem;
+    --font-size-heading-sm: 1.75rem;
+  }
 
   /* Spacing */
   --spacing-1: 0.125rem; /* 2px */
@@ -45,4 +62,6 @@
 
 [data-theme="dark"] {
   --color-background-main: var(--color-neutral-900);
+  --color-headings: var(--color-neutral-50);
+  --color-text: var(--color-neutral-200);
 }

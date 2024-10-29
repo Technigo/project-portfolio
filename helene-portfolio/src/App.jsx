@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 /* Components */
+import Header from "./components/common/Header";
 import Hero from "./components/layout/Hero";
 import TechWords from "./components/layout/TechWords";
 import Projects from "./components/layout/Projects";
@@ -27,17 +28,7 @@ function App() {
 
   return (
     <>
-      <nav>
-        Helene
-        <button
-          onClick={() =>
-            setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"))
-          }
-          aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-        >
-          Toggle Theme
-        </button>
-      </nav>
+      <Header theme={theme} onSetTheme={setTheme} />
       <main>
         <Hero />
         <TechWords />
