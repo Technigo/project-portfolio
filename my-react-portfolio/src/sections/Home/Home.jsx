@@ -5,6 +5,10 @@ import "./home.css";
 
 import { Introduction } from "../Introduction/Introduction";
 import { Projects } from "../Projects/Projects";
+import { Tech } from "../Tech/Tech";
+import { Skills } from "../Skills/Skills";
+import { Articles } from "../Articles/Articles";
+import { Contact } from "../Contact/Contact";
 
 
 
@@ -13,10 +17,10 @@ export const Home = () => {
     <>
       <Introduction />
       <Projects />
-      {/* <h2>Tech</h2> */}
-      {/* <h2>Skills</h2>       */}
-      {/* <h2>My Words</h2> */}
-      {/* <h2>Let&apos;s Talk</h2> */}
+      <Tech />
+      <Skills/>
+      <Articles />
+      <Contact/>
     </>
   )
  }

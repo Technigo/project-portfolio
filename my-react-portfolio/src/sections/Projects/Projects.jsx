@@ -1,4 +1,4 @@
-import "./projects.css"
+import "./projects.css";
 import { ProjectCard } from "../../components/ProjectCard";
 
 export const Projects = () => { 
@@ -8,8 +8,6 @@ export const Projects = () => {
         <h2 className="projects-heading">Featured Projects</h2>
         <ProjectCard />
       </div>
-    </section>
-    
+    </section>    
   )
-
  }
