@@ -4,6 +4,10 @@ import Logo from "./Logo";
 import "./Header.css";
 
 const Header = ({ theme, onSetTheme }) => {
+  const handleButtonClick = () => {
+    onSetTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
+
   return (
     <header className="header">
       <div className="header__logo">
@@ -13,15 +17,15 @@ const Header = ({ theme, onSetTheme }) => {
         className="button-toggle-theme"
         type="button"
         aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-        onClick={() =>
-          onSetTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"))
-        }
+        onClick={handleButtonClick}
       >
         <DarkModeSwitch
           checked={theme === "dark"}
+          onChange={() => {}}
           moonColor="#fff"
           sunColor="#2b2d31"
           size={40}
+          style={{ pointerEvents: "none" }} // Disable pointer events
         />
       </button>
     </header>

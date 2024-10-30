@@ -1,5 +1,5 @@
 .button {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   min-height: 3.5rem;
@@ -7,8 +7,10 @@
   font-family: var(--font-family-headings);
   font-weight: var(--font-weight-medium);
   font-size: 1.125rem;
+  text-decoration: none;
 
   border: 2px solid transparent;
+  border-radius: var(--border-radius-md);
 
   cursor: pointer;
   padding: var(--spacing-4) var(--spacing-8);
@@ -17,7 +19,12 @@
   &.primary {
     color: var(--color-neutral-900);
     background-color: var(--color-primary);
-    border: 2px solid transparent;
+    border-color: transparent;
+  }
+
+  &.secondary {
+    color: var(--color-headings);
+    border-color: var(--color-primary);
   }
 
   &:hover,
@@ -31,4 +38,10 @@
     outline: 2px solid var(--color-neutral-900);
     outline-offset: 2px;
   }
+}
+
+.button-group {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--spacing-4);
 }

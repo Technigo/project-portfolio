@@ -1,0 +1,34 @@
+.project {
+  align-items: center;
+
+  @media screen and (min-width: 1025px) {
+    &:nth-child(even) {
+      .project__info {
+        order: 1;
+        padding-left: 0;
+        padding-right: var(--spacing-7);
+      }
+      .project__image {
+        order: 2;
+      }
+    }
+  }
+}
+
+.project__image {
+  img {
+    aspect-ratio: 6 / 4;
+    object-fit: cover;
+    border-radius: var(--border-radius-lg);
+  }
+}
+
+.project__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-7);
+
+  @media screen and (min-width: 1025px) {
+    padding-left: var(--spacing-7);
+  }
+}

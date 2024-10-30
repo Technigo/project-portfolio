@@ -1,10 +1,21 @@
-import Button from "../common/Button";
+import { H2 } from "../common/Typography";
+import projectsData from "../../data/projects.json";
+import ProjectItem from "./ProjectItem";
+import "./Projects.css";
 
 const Projects = () => {
   return (
-    <section>
-      <h2>Here I will display projects</h2>
-      <Button>View live</Button>
+    <section className="section-projects section-spacing">
+      <div className="grid-container">
+        <div className="col-12">
+          <H2 className="section-heading">Selected work</H2>
+          <div className="projects">
+            {projectsData.projects.map((project) => (
+              <ProjectItem key={project.id} data={project} />
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

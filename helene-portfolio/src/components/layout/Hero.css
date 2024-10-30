@@ -12,7 +12,7 @@
 }
 
 .hero {
-  padding: calc(var(--spacing-12) * 1.4) var(--spacing-6);
+  padding: calc(var(--spacing-12) * 1.4) var(--spacing-3) var(--spacing-10);
 
   @media screen and (min-width: 768px) {
     padding: calc(var(--spacing-12) * 1.5) var(--spacing-10);
@@ -29,39 +29,4 @@
   align-items: flex-start;
   gap: var(--spacing-8);
   text-wrap: pretty;
-}
-
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-4);
-  padding-right: var(--spacing-4);
-  background-color: var(--color-background-subtle);
-  border: 0.25rem solid var(--color-background-subtle);
-  border-radius: 6rem;
-  font-size: var(--font-size-heading-sm);
-  font-weight: var(--font-weight-regular);
-
-  @media screen and (min-width: 1025px) {
-    gap: var(--spacing-8);
-    padding-right: var(--spacing-8);
-  }
-}
-
-.pill__avatar {
-  border-radius: 6rem;
-  background-color: var(--color-neutral-50);
-  border: 0.25rem solid var(--color-neutral-200);
-
-  height: 2.5rem;
-  width: 2.5rem;
-
-  @media screen and (min-width: 1025px) {
-    height: 4.5rem;
-    width: 4.5rem;
-  }
-}
-
-.pill__text {
-  line-height: 1;
 }

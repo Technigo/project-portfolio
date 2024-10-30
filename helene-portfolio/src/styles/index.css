@@ -15,6 +15,10 @@ body {
   background-color: var(--color-background-main);
 }
 
+/* ***************************************
+ Typography
+ *************************************** */
+
 h1,
 h2,
 h3,
@@ -50,6 +54,19 @@ h3,
   font-weight: var(--font-weight-medium);
 }
 
+.section-heading {
+  font-family: var(--font-family-headings);
+  font-size: var(--font-size-heading-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-headings);
+  text-transform: uppercase;
+  letter-spacing: 2%;
+}
+
+p {
+  font-size: var(--font-size-large);
+}
+
 /* ***************************************
  Grid classes
  *************************************** */
@@ -61,6 +78,10 @@ h3,
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 var(--spacing-6);
+
+  .grid-container {
+    padding: 0;
+  }
 }
 
 /* Tablet screens and above */
@@ -192,5 +213,24 @@ h3,
   }
   .col-lg-12 {
     grid-column: span 12;
+  }
+}
+
+/* ***************************************
+ Spacing classes
+ *************************************** */
+
+.section-spacing {
+  padding-top: var(--spacing-10);
+  padding-bottom: var(--spacing-10);
+
+  @media (min-width: 768px) {
+    padding-top: var(--spacing-11);
+    padding-bottom: var(--spacing-11);
+  }
+
+  @media (min-width: 1025px) {
+    padding-top: var(--spacing-12);
+    padding-bottom: var(--spacing-12);
   }
 }

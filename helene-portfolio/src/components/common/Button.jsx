@@ -6,9 +6,22 @@ const Button = ({
   size = "medium",
   variant = "primary",
   children,
+  href,
+  onClick,
+  ...rest
 }) => {
+  const className = `button ${size} ${variant}`;
+
+  if (href) {
+    return (
+      <a className={className} href={href} {...rest}>
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <button className={`button ${size} ${variant}`} type={type}>
+    <button className={className} type={type} onClick={onClick} {...rest}>
       {children}
     </button>
   );
@@ -19,6 +32,8 @@ Button.propTypes = {
   size: PropTypes.oneOf(["small", "medium", "large"]),
   variant: PropTypes.oneOf(["primary", "secondary", "inverted"]),
   children: PropTypes.node.isRequired,
+  href: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 export default Button;
