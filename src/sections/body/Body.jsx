@@ -1,15 +1,15 @@
-import "./body.css";
+import "./Body.css";
 import { useState, useEffect } from "react";
 import { useRef } from "react";
 import { ProgressBar } from "/src/components/progressBar/ProgressBar";
 import { Header } from "/src/sections/header/Header";
-import { Tech } from "/src/sections//tech/Tech";
-import { Projects } from "/src/sections//projects/Projects";
-import { Articles } from "/src/sections//articles/Articles";
-import { Skills } from "/src/sections//skills/Skills";
-import { Footer } from "/src/sections//footer/Footer";
-import { FooterBanner } from "/src/sections//footer/FooterBanner";
-import arrowImage from "/assets/arrow.svg";
+import { Tech } from "/src/sections/tech/Tech";
+import { Projects } from "/src/sections/projects/Projects";
+import { Articles } from "/src/sections/myWords/Articles";
+import { Skills } from "/src/sections/skills/Skills";
+import { Footer } from "/src/sections/footer/Footer";
+import { FooterBanner } from "/src/sections/footer/FooterBanner";
+import arrowImage from "../../assets/arrow.svg";
 
 export const Body = () => {
   const [progress, setProgress] = useState(0);

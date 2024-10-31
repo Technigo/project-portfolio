@@ -1,4 +1,4 @@
-import "./progressBar.css";
+import "./ProgressBar.css";
 
 // eslint-disable-next-line react/prop-types
 export const ProgressBar = ({ progress }) => {
