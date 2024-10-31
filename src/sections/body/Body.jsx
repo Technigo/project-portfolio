@@ -1,7 +1,7 @@
 import "./body.css";
 import { useState, useEffect } from "react";
 import { useRef } from "react";
-import { ProgressBar } from "/src/components/progress-bar/ProgressBar";
+import { ProgressBar } from "/src/components/progressBar/ProgressBar";
 import { Header } from "/src/sections/header/Header";
 import { Tech } from "/src/sections//tech/Tech";
 import { Projects } from "/src/sections//projects/Projects";
