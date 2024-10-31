@@ -9,7 +9,7 @@ import { Articles } from "/src/sections/myWords/Articles";
 import { Skills } from "/src/sections/skills/Skills";
 import { Footer } from "/src/sections/footer/Footer";
 import { FooterBanner } from "/src/sections/footer/FooterBanner";
-import arrowImage from "../../assets/arrow.svg";
+import arrowImage from "/assets/arrow.svg";
 
 export const Body = () => {
   const [progress, setProgress] = useState(0);

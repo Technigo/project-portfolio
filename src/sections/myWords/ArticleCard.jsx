@@ -34,7 +34,7 @@ export const ArticleCard = ({
       </div>
       <Paragraph text={description} />
       <Button
-        icon="src/assets/icons/read.svg"
+        icon="/assets/icons/read.svg"
         label="Read article"
         link={link}
         className="article-btn"

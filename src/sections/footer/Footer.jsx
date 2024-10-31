@@ -15,7 +15,7 @@ export const Footer = () => {
         <Image
           sectionClassName={"profile-img"}
           elementClassName={"circle-img"}
-          link={"src/assets/profile-img-zoe.jpg"}
+          link={"/assets/profile-img-zoe.jpg"}
           ImageAltText={"Profile Image of zoe"}
         />
         <div className="contact-info">
@@ -32,7 +32,7 @@ export const Footer = () => {
             <Image
               sectionClassName={"icon-box"}
               elementClassName={"icon"}
-              link={"src/assets/icons/linkedin.svg"}
+              link={"/assets/icons/linkedin.svg"}
               ImageAltText={"Link to LinkedIn"}
             />
           </a>
@@ -40,7 +40,7 @@ export const Footer = () => {
             <Image
               sectionClassName={"icon-box"}
               elementClassName={"icon"}
-              link={"src/assets/icons/github.svg"}
+              link={"/assets/icons/github.svg"}
               ImageAltText={"Link to GitHub"}
             />
           </a>
@@ -48,7 +48,7 @@ export const Footer = () => {
             <Image
               sectionClassName={"icon-box"}
               elementClassName={"icon"}
-              link={"src/assets/icons/stackoverflow.svg"}
+              link={"/assets/icons/stackoverflow.svg"}
               ImageAltText={"Link to StackOverflow"}
             />
           </a>
@@ -56,7 +56,7 @@ export const Footer = () => {
             <Image
               sectionClassName={"icon-box"}
               elementClassName={"icon"}
-              link={"src/assets/icons/instagram.svg"}
+              link={"/assets/icons/instagram.svg"}
               ImageAltText={"Link to Instagram"}
             />
           </a>

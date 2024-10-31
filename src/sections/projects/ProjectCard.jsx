@@ -75,13 +75,13 @@ export const ProjectCard = ({ repositories }) => {
               </div>
               <div className="button-wrapper">
                 <Button
-                  icon="src/assets/icons/live-demo.svg"
+                  icon="/assets/icons/live-demo.svg"
                   label="Live demo"
                   link={matchingData.netlifyUrl} // Use the URL from the JSON data
                   className="netlify-btn"
                 />
                 <Button
-                  icon="src/assets/icons/github-btn.svg"
+                  icon="/assets/icons/github-btn.svg"
                   label="View the code"
                   link={repo.svn_url} // Retrieve GitHub link from the API
                   className="github-btn"
