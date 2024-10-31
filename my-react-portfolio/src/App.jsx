@@ -8,6 +8,7 @@ import { LinkButton } from "./components/UI-components/LinkButton";
 import arrow from "./assets/ic-arrowdown.svg";
 import { TextBlock } from "./components/UI-components/TextBlock";
 import { Skills } from "./components/Skills";
+import { AnimatedSection } from "./components/UI-components/AnimatedSection";
 
 const SectionWrapper = styled.div`
   display: flex;
@@ -80,25 +81,30 @@ const App = () => {
         <Header />
       </SectionWrapper>
       <SectionWrapper>
-        <h2>Featured Projects</h2>
+        <AnimatedSection>
+          <h2>Featured Projects</h2>
+        </AnimatedSection>
         {ProjectData.map((project, index) => (
-          <Projects
-            src={project.src}
-            title={project.title}
-            description={project.description}
-            key={project.title}
-            leftAligned={index % 2 === 0}
-          />
+          <AnimatedSection key={project.title}>
+            <Projects
+              src={project.src}
+              title={project.title}
+              description={project.description}
+              leftAligned={index % 2 === 0}
+            />
+          </AnimatedSection>
         ))}
-        <ButtonWrapper>
-          <LinkButton
-            color="#000000"
-            text="See More Projects"
-            href=""
-            icon={arrow}
-            borderColor="#000000"
-          />
-        </ButtonWrapper>
+        <AnimatedSection>
+          <ButtonWrapper>
+            <LinkButton
+              color="#000000"
+              text="See More Projects"
+              href=""
+              icon={arrow}
+              borderColor="#000000"
+            />
+          </ButtonWrapper>
+        </AnimatedSection>
       </SectionWrapper>
       <SectionWrapper dark>
         <TextBlock
@@ -107,10 +113,14 @@ const App = () => {
         />
       </SectionWrapper>
       <SectionWrapper>
-        <Skills />
+        <AnimatedSection>
+          <Skills />
+        </AnimatedSection>
       </SectionWrapper>
       <SectionWrapper dark>
-        <h2>My Words</h2>
+        <AnimatedSection>
+          <h2>My Words</h2>
+        </AnimatedSection>
         {ArticleData.map((article) => (
           <Articles
             title={article.title}
@@ -119,15 +129,17 @@ const App = () => {
             key={article.title}
           />
         ))}
-        <ButtonWrapper>
+        <AnimatedSection>
+          <ButtonWrapper>
           <LinkButton
             color="#ffffff"
             text="See More Articles"
             href=""
             icon={arrow}
             borderColor="#ffffff"
-          />
-        </ButtonWrapper>
+            />
+          </ButtonWrapper>
+        </AnimatedSection>
       </SectionWrapper>
       <SectionWrapper>
         <Footer />
