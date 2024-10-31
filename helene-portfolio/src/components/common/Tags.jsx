@@ -1,7 +1,11 @@
 import "./Tags.css";
 
-const Tags = ({ children }) => {
-  return <ul className="tags">{children}</ul>;
+const Tags = ({ label, children }) => {
+  return (
+    <ul className="tags" aria-label={label}>
+      {children}
+    </ul>
+  );
 };
 
 export default Tags;

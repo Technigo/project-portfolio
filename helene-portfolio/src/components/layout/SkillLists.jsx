@@ -1,20 +1,29 @@
+import skills from "../../data/skills.json";
+import "./SkillLists.css";
+
 const SkillLists = () => {
   return (
-    <>
-      <h3>Design</h3>
-      <ul>
-        <li>Figma wizard</li>
-        <li>UI champion</li>
-        <li>User first, always</li>
-      </ul>
-      <h3>Development</h3>
-      <ul>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-      </ul>
-    </>
+    <section className="skill-lists section-spacing-vertical section-spacing-horizontal">
+      <div className="grid-container">
+        {skills.categories.map((skillCategory, index) => (
+          <div key={index} className="col-3">
+            <div>
+              <h3
+                className="skill-lists-heading section-heading"
+                id="skill-list-title"
+              >
+                {skillCategory.name}
+              </h3>
+              <ul aria-labelledby="skill-list-title" className="skill-list">
+                {skillCategory.skills.map((skill, index) => (
+                  <li key={index}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

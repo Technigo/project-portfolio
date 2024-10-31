@@ -18,26 +18,39 @@
   transition-property: color, border, background;
 
   &.primary {
-    color: var(--color-neutral-900);
-    background-color: var(--color-primary);
+    color: var(--color-button-primary-text);
+    background-color: var(--color-button-primary-bg);
     border-color: transparent;
 
     &:hover,
     &:focus {
       outline: none;
-      color: var(--color-neutral-50);
-      background-color: black;
+      color: var(--color-button-primary-hover-text);
+      background-color: var(--color-button-primary-hover-bg);
     }
   }
 
   &.secondary {
-    color: var(--color-headings);
-    border-color: var(--color-primary);
+    color: var(--color-button-secondary-text);
+    border-color: var(--color-button-secondary-border);
 
     &:hover,
     &:focus {
-      color: var(--color-headings);
-      border-color: var(--color-neutral-900);
+      color: var(--color-button-secondary-hover-text);
+      background-color: var(--color-button-secondary-hover-bg);
+      border-color: var(--color-button-secondary-hover-border);
+    }
+  }
+
+  &.inverted {
+    color: var(--color-button-inverted-text);
+    border-color: var(--color-button-inverted-border);
+
+    &:hover,
+    &:focus {
+      color: var(--color-button-inverted-hover-text);
+      background-color: var(--color-button-inverted-hover-bg);
+      border-color: var(--color-button-inverted-hover-border);
     }
   }
 

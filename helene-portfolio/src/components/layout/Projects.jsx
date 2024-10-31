@@ -5,7 +5,7 @@ import "./Projects.css";
 
 const Projects = () => {
   return (
-    <section className="section-projects section-spacing">
+    <section className="section-projects section-spacing-vertical section-spacing-horizontal">
       <div className="grid-container">
         <div className="col-12">
           <H2 className="section-heading">Selected work</H2>

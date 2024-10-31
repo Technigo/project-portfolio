@@ -60,7 +60,7 @@ h3,
   font-weight: var(--font-weight-medium);
   color: var(--color-headings);
   text-transform: uppercase;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.06rem;
 }
 
 p {
@@ -220,7 +220,7 @@ p {
  Spacing classes
  *************************************** */
 
-.section-spacing {
+.section-spacing-vertical {
   padding-top: var(--spacing-10);
   padding-bottom: var(--spacing-10);
 
@@ -232,5 +232,20 @@ p {
   @media (min-width: 1025px) {
     padding-top: var(--spacing-12);
     padding-bottom: var(--spacing-12);
+  }
+}
+
+.section-spacing-horizontal {
+  padding-left: var(--spacing-3);
+  padding-right: var(--spacing-3);
+
+  @media screen and (min-width: 768px) {
+    padding-left: var(--spacing-10);
+    padding-right: var(--spacing-10);
+  }
+
+  @media screen and (min-width: 1025px) {
+    padding-left: var(--spacing-11);
+    padding-right: var(--spacing-11);
   }
 }

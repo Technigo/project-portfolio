@@ -18,7 +18,7 @@ const ProjectItem = ({ data }) => {
         {description && <p>{description}</p>}
 
         {tags && tags.length > 0 && (
-          <Tags>
+          <Tags label="Technologies used in this project">
             {tags.map((tag, index) => (
               <Tag key={index}>{tag}</Tag>
             ))}
