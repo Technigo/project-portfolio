@@ -14,3 +14,4 @@ const HeaderInfo = () => {
     );
 };
 
+export default HeaderInfo;
