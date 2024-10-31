@@ -1,4 +1,4 @@
-import icArrowdown from "../assets/Ic-ArrowDown.svg";
+import icArrowdown from "../../assets/Ic-ArrowDown.svg";
 import "./ButtonMore.css"
 
 export const BtnMore = () => {

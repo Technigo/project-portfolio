@@ -1,0 +1,30 @@
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 64px 80px;
+  justify-items: center;
+  /* Centrera innehåll i gridden */
+}
+
+@media (min-width: 640px) {
+  .grid-section {
+    grid-template-columns: repeat(8, 1fr);
+    /* Tablet: 8 kolumner */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-section {
+    grid-template-columns: repeat(12, 1fr);
+    /* Desktop: 12 kolumner */
+  }
+}
+
+.white-background {
+  background: white;
+}
+
+.black-background {
+  background: black;
+}

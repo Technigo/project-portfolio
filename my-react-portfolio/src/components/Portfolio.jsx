@@ -1,10 +1,12 @@
-import { BtnLive } from './ButtonLive.jsx';
-import { BtnMore } from './ButtonMore.jsx';
+import { BtnLive } from './buttons/ButtonLive.jsx';
+import { BtnMore } from './buttons/ButtonMore.jsx';
 import { Tag } from './Tag.jsx';
-import { Info } from './Projects.jsx'
 import { TopImages } from './TopImages.jsx'
 import { HeaderIntro } from './Header.jsx'
 import { BioSection } from './MyBio.jsx'
+import { ProjectSection } from './sections/ProjectSection.jsx';
+
+import "../App.css";
 
 
 export const Portfolio = () => {
@@ -16,7 +18,7 @@ export const Portfolio = () => {
       <BtnLive />
       <BtnMore />
       <Tag />
-      <Info />
+      <ProjectSection />
     </>
   );
 };

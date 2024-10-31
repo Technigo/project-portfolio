@@ -1,11 +1,11 @@
-import { BtnLive } from './ButtonLive.jsx';
-import { BtnCode } from './ButtonCode.jsx';
+import { BtnLive } from './buttons/ButtonLive.jsx';
+import { BtnCode } from './buttons/ButtonCode.jsx';
 import { Tag } from './Tag.jsx';
 import { projects } from './ProjectsArray.jsx';
 
 import "./Projects.css";
 
-export const Info = () => {
+export const ProjectInfo = () => {
   return (
     <div className="info">
       {projects.map((project) => (

@@ -1,11 +1,12 @@
+import { Grid } from "./ui/Grid";
 import "./Header.css";
 
 export const HeaderIntro = () => (
-  <div className="intro-container">
-    <div className="intro-text">Hi there, I’m</div>
-    <div className="intro-name">Nella Edvardsson</div>
-    <div className="intro-description">
-      Creative Frontend Developer with a Background in HR & Teaching
-    </div>
-  </div>
-);
+  <Grid background="black">
+    <div className="intro-text">
+      <h3>Hi there, I&apos;m</h3>
+      <h2>Nella Edvardsson</h2>
+      <h3>
+        Creative Frontend Developer with a Background in HR & Teaching
+      </h3></div>
+  </Grid>);

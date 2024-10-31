@@ -5,7 +5,7 @@ import Top3 from "../assets/Top3.jpg";
 import './TopImages.css';
 
 export const TopImages = () => (
-  <div className="img-container">
+  <div className="img-container"> {/* Lägg till img-container här */}
     <div className="image-wrapper">
       <img className="image-1" src={Top1} alt="Top image 1" />
       <img className="image-2" src={Top2} alt="Top image 2" />

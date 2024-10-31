@@ -1,4 +1,4 @@
-import icWeb from "../assets/Ic-Web.svg";
+import icWeb from '../../assets/Ic-Web.svg';
 import "./ButtonLive.css"
 
 export const BtnLive = () => {
