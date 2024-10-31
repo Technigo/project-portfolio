@@ -16,9 +16,11 @@
 }
 
 .project__image {
+  height: 100%;
   img {
     aspect-ratio: 6 / 4;
     object-fit: cover;
+    height: 100%;
     border-radius: var(--border-radius-lg);
   }
 }
@@ -27,8 +29,16 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-7);
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
 
   @media screen and (min-width: 1025px) {
     padding-left: var(--spacing-7);
+    padding-top: var(--spacing-9);
+    padding-bottom: var(--spacing-9);
+  }
+
+  .tags {
+    margin-bottom: var(--spacing-3);
   }
 }

@@ -14,24 +14,31 @@
 
   cursor: pointer;
   padding: var(--spacing-4) var(--spacing-8);
-  transition: box-shadow 0.3s ease-out;
+  transition: 0.25s ease-out;
+  transition-property: color, border, background;
 
   &.primary {
     color: var(--color-neutral-900);
     background-color: var(--color-primary);
     border-color: transparent;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: var(--color-neutral-50);
+      background-color: black;
+    }
   }
 
   &.secondary {
     color: var(--color-headings);
     border-color: var(--color-primary);
-  }
 
-  &:hover,
-  &:focus {
-    outline: none;
-    color: var(--color-neutral-50);
-    background-color: black;
+    &:hover,
+    &:focus {
+      color: var(--color-headings);
+      border-color: var(--color-neutral-900);
+    }
   }
 
   &:focus-visible {

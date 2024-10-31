@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import Button from "../common/Button";
 import { H3 } from "../common/Typography";
+import Tags from "../common/Tags";
+import Tag from "../common/Tag";
 import "./ProjectItem.css";
 
 const ProjectItem = ({ data }) => {
@@ -16,13 +18,11 @@ const ProjectItem = ({ data }) => {
         {description && <p>{description}</p>}
 
         {tags && tags.length > 0 && (
-          <ul className="project__tags">
+          <Tags>
             {tags.map((tag, index) => (
-              <li key={index} className="project__tag">
-                {tag}
-              </li>
+              <Tag key={index}>{tag}</Tag>
             ))}
-          </ul>
+          </Tags>
         )}
 
         <div className="button-group">
