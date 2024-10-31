@@ -29,7 +29,7 @@ export const ArticleCard = ({
           level={3}
           text={title}
           aria-label="This is the main heading"
-          className="give-it-a-name"
+          className="main-heading"
         />
       </div>
       <Paragraph text={description} />

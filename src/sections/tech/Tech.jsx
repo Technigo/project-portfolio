@@ -4,7 +4,7 @@ import { Paragraph } from "/src/components/typography/Paragraph.jsx";
 
 export const Tech = () => {
   const techText =
-    "HTML, CSS, Flexbox, Grids, JavaScript, ES7, JSX, React, React Hooks, Node.js, Npm, Web Accessibility, APIs, mob-programming, pair-programming, GitHub.";
+    "HTML, CSS, Flexbox, Grids, JavaScript, ES7, JSX, React, React Hooks, Node.js, Npm, Web Accessibility, APIs, mob-programming, pair-programming, Git, GitHub";
 
   return (
     <section className="tech">
