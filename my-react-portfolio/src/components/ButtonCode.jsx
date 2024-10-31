@@ -6,7 +6,7 @@ export const BtnCode = () => {
 
     <a className="btn-primary" href="#" aria-label="Live demo" >
       <img className="ic-web" alt="Ic github" src={github} />
-      <div className="text-wrapper" > View demo </div>
+      <div className="text-wrapper" > View code </div>
     </a>
   );
 };

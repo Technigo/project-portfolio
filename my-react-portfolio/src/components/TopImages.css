@@ -1,0 +1,55 @@
+.img-container {
+  width: 100%;
+  height: auto;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper {
+  display: flex;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  padding: 20px 0;
+}
+
+.image-1,
+.image-2,
+.image-3 {
+  width: 35%;
+  height: auto;
+  background: linear-gradient(0deg, #d9d9d9 0%, #d9d9d9 100%);
+  border-radius: 12px;
+}
+
+.image-1,
+.image-3 {
+  position: relative;
+  z-index: 1;
+  top: 15%;
+  /* Flyttar sidobilderna uppåt */
+}
+
+.image-1 {
+  transform: rotate(-15deg);
+  margin-right: -15%;
+  /* Skjuter bilden åt vänster */
+}
+
+.image-3 {
+  transform: rotate(15deg);
+  margin-left: -15%;
+  /* Skjuter bilden åt höger */
+}
+
+.image-2 {
+  position: relative;
+  z-index: 2;
+  /* Lägger mittenbilden ovanpå */
+  transform: rotate(0);
+}
