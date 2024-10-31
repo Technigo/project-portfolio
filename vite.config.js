@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["/src/components/progressBar/ProgressBar.jsx"], // Add the problematic module here
+      external: ["/src/components/progressBar/ProgressBar"], // Add the problematic module here
     },
   },
 });
