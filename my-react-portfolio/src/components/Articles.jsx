@@ -11,12 +11,24 @@ const ArticleInfo = styled.div`
   align-items: flex-start;
   gap: 8px;
   margin-bottom: 24px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    > img {
+      width: 100%;
+    }
+  }
 `;
 
 const ArticleText = styled.div`
   align-self: stretch;
   text-align: left;
   max-width: 580px;
+
+  @media (max-width: 768px) {
+    text-align: left;
+    max-width: 350px;
+  }
 `;
 
 export const Articles = ({ src, title, description }) => {

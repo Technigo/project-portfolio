@@ -7,7 +7,7 @@ import { SharedLayout } from "./UI-components/SharedStyles";
 
 const ProjectInfo = styled.div`
   display: flex;
-  width: 580px;
+  max-width: 580px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -27,8 +27,11 @@ const ProjectText = styled.div`
   max-width: 580px;
   margin: 24px 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1025px) {
     text-align: left;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
     max-width: 350px;
   }
 `;

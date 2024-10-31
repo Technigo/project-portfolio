@@ -17,7 +17,8 @@ export const Pill = styled.div`
   line-height: normal;
 
   @media (max-width: 768px) {
-    width: 76px;
+    width: 73px;
     margin-top: 8px;
+    font-size: 12px;
   }
 `;

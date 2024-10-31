@@ -4,7 +4,6 @@ export const SharedLayout = styled.div`
   display: flex;
   align-items: center;
   width: 1184px;
-  align-self: stretch;
   justify-content: space-between;
   margin: 0 auto;
   background-color: ${(props) => (props.dark ? "black" : "white")};
@@ -16,12 +15,18 @@ export const SharedLayout = styled.div`
     border-radius: 12px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     width: 100%;
+    max-width: 768px;
+    padding: 0 24px;
+    gap: 32px;
+    box-sizing: border-box;
 
     > img {
       width: 100%;
+      height: auto;
+      margin-bottom: 24px;
     }
   }
 `;

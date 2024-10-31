@@ -20,7 +20,6 @@ const SectionWrapper = styled.div`
   color: ${(props) => (props.dark ? "#ffffff" : "#000000")};
 
   @media (max-width: 768px) {
-    width: calc(100% - 48px);
     padding: 128px 24px;
   }
 `;

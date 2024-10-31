@@ -32,7 +32,6 @@ img {
   height: fit-content;
   padding: 60px;
   gap: 16px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +58,19 @@ img {
 @media (max-width: 768px) {
   img {
     width: 156px;
-    height: auto;
+    height: 156px;
+  }
+  .images img:nth-child(1) {
+    transform: rotate(-6deg) translate(70px, 35px);
+  }
+
+  .images img:nth-child(2) {
+    left: 0;
+    z-index: 1;
+    top: 0;
+  }
+
+  .images img:nth-child(3) {
+    transform: rotate(6deg) translate(-70px, 35px);
   }
 }
