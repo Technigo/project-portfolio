@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import "./App.css";
 import Header from "./components/Header";
+import Skills from "./components/Skills";
+import skillsData from "./skills.json";
 
-function App() {
-  const [count, setCount] = useState(0)
+console.log(skillsData);
+
+const App = () => {
 
   return (
     <>
       <Header />
+      <Skills skillsData={skillsData} />
     </>
   )
 }
 
-export default App
+export default App;

@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/Header.css"
+import SocialLinks from "./SocialLinks";
 
 
 const HeaderInfo = () => {
@@ -9,7 +10,10 @@ const HeaderInfo = () => {
             <h1 className="h1-header">Frontend Developer</h1>
             <p className="long-text-header">Sara is an exceptional developer known for her innovative solutions and exceptional coding abilities.
                 She creates user-friendly applications and solves complex issues with ease. Her drive for excellence
-                makes her a valuable asset to any project and a standout in the technology field.</p>
+                makes her a valuable asset to any project and a standout in the technology field.
+            </p>
+
+            <SocialLinks />
         </section>
     );
 };

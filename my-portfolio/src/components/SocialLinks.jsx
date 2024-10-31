@@ -3,6 +3,7 @@ import instaIcon from "../assets/Btn - instagram.svg"
 import linkedinIcon from "../assets/Btn - linkedin.svg"
 import stackoverflowIcon from "../assets/Btn - stackoverflow.svg"
 import twitterIcon from "../assets/Btn - twitter.svg"
+import "./css/SocialLinks.css"
 
 
 const SocialLinks = () => {

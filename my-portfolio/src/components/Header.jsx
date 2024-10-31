@@ -2,7 +2,7 @@ import React from "react";
 import "./css/Header.css"
 import HeaderInfo from "./HeaderInfo";
 import ProfileImage from "./ProfileImage";
-import SocialLinks from "./SocialLinks";
+
 
 
 const Header = () => {
@@ -12,7 +12,6 @@ const Header = () => {
                 <HeaderInfo />
                 <ProfileImage />
             </div>
-            <SocialLinks />
         </header>
     );
 };
