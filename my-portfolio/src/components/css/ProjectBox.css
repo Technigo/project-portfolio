@@ -5,5 +5,74 @@
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    background-color: var(--white);
+}
+
+/* Box image */
+.box-image {
+    height: 300px;
+    align-self: stretch;
+    background: linear-gradient(0deg, rgba(253, 111, 0, 0.20) 0%, rgba(253, 111, 0, 0.20) 100%), url(image={image}) lightgray 50% / cover no-repeat, var(--white);
+}
+.box-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Box Text */
+.box-content {
+    padding: 1rem;
+}
+
+.box-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.box-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+
+
+/* Button Base */
+.box-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.btn-base {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button primary */
+.primary-btn {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+}
+.primary-btn:hover {
+    background-color: var(--orange);
+}
+
+/* Button secondary */
+.secondary-btn {
     background-color: white;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+.secondary-btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
 }

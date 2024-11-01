@@ -3,9 +3,10 @@ import "./App.css";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import skillsData from "./skills.json";
+/* import { demoUrl, codeUrl } from "./projects.json"; */
 import ProjectBox from "./components/ProjectBox";
 
-console.log(skillsData);
+
 
 const App = () => {
 
@@ -13,7 +14,13 @@ const App = () => {
     <>
       <Header />
       <Skills skillsData={skillsData} />
-      {/* <ProjectBox /> */}
+      <ProjectBox 
+        title={title}
+        description={description}
+        image={image}
+        demoUrl={projects.netlify}
+        codeUrl={projects.github}
+      />
     </>
   )
 }
