@@ -6,7 +6,7 @@ import "./FeaturedProjects.css";
 
 export const FeaturedProjects = () => {
   return (
-    <>
+    <section className="featured-projects-container">
       <h2>Featured Projects</h2>
       <div className="project-container">
         {projects.map((project, index) => (
@@ -20,7 +20,7 @@ export const FeaturedProjects = () => {
           />
         ))}
       </div>
-    </>
+    </section>
 
   );
 };
