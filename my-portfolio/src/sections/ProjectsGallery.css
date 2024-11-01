@@ -1,9 +1,12 @@
 .projects-gallery .gallery {
   display: flex;
-  gap: 1rem;
-  /* Optional: Adds space between images */
   justify-content: center;
-  /* Centers the images horizontally */
+  position: relative;
+}
+
+.project-1,
+.project-3 {
+  position: absolute;
 }
 
 .project-1 {
@@ -11,13 +14,17 @@
   height: 381.335px;
   transform: rotate(-4.695deg);
   flex-shrink: 0;
+  z-index: 1;
+  left: 200px;
+  top: 20px;
 }
 
 .project-2 {
   width: 358px;
   height: 382px;
   flex-shrink: 0;
-
+  z-index: 2;
+  position: relative;
 }
 
 .project-3 {
@@ -25,4 +32,53 @@
   height: 381.335px;
   transform: rotate(4.695deg);
   flex-shrink: 0;
+  right: 200px;
+  z-index: 1;
+  top: 20px;
 }
+
+
+
+
+
+
+/* .projects-gallery .gallery {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.project-1,
+.project-2,
+.project-3 {
+  position: relative;
+}
+
+.project-1 {
+  width: 357.97px;
+  height: 381.335px;
+  transform: rotate(-4.695deg);
+  flex-shrink: 0;
+  z-index: 1;
+  /* Layer it behind project 2 */
+/* }
+
+.project-2 {
+  width: 358px;
+  height: 382px;
+  flex-shrink: 0;
+  z-index: 2;
+  /* Bring this one to the front */
+/* margin: 0 -40px;
+  /* Adjust for overlap as needed */
+/* } */
+
+/* .project-3 {
+  width: 357.97px;
+  height: 381.335px;
+  transform: rotate(4.695deg);
+  flex-shrink: 0;
+  flex-shrink: 0;
+  z-index: 1;
+  /* Layer it behind project 2 */
+/* }  */
