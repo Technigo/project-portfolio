@@ -16,12 +16,12 @@
   transition: 0.25s ease-out;
   transition-property: color, border, background;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 744px) {
     padding: var(--spacing-3) var(--spacing-7);
   }
 
   @media screen and (min-width: 1200px) {
-    padding: var(--spacing-3) var(--spacing-7);
+    padding: var(--spacing-3) var(--spacing-7) calc(var(--spacing-3) + 0.175rem);
   }
 
   &.small {
@@ -31,7 +31,11 @@
 
   &.large {
     font-size: var(--font-size-large);
-    padding: var(--spacing-4) var(--spacing-8);
+    padding: var(--spacing-3) var(--spacing-7);
+
+    @media screen and (min-width: 744px) {
+      padding: var(--spacing-4) var(--spacing-8);
+    }
   }
 
   svg {
@@ -47,7 +51,7 @@
       height: 2rem;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 744px) {
       height: 1.5rem;
 
       .small & {

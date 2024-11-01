@@ -11,7 +11,7 @@ const Footer = () => {
         <BackToTop aria-label="Go back to the top" className="back-to-top" />
       </a>
       <div className="grid-container">
-        <div className="col-12 col-md-12 col-lg-6">
+        <div className="col-6">
           <H2 className="footer__title heading-xl">
             Let&apos;s work together!
           </H2>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 /* Components */
+import ScrollClasses from "./components/common/ScrollClasses";
 import Header from "./components/common/Header";
 import Hero from "./components/layout/Hero";
 import TechWords from "./components/layout/TechWords";
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <>
+      <ScrollClasses />
       <Header theme={theme} onSetTheme={setTheme} />
       <main id="main">
         <Hero />

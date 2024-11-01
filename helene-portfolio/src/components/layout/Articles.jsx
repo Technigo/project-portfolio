@@ -9,7 +9,7 @@ const Articles = () => {
       <div className="grid-container">
         <div className="col-12">
           <H2 className="articles__title">Curated thoughts 💭</H2>
-          <div className="articles grid-container">
+          <div className="articles">
             {articlesData.articles.map((article, index) => (
               <ArticleItem key={index} data={article} />
             ))}

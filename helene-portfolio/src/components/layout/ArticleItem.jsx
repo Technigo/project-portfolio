@@ -6,7 +6,7 @@ import "./ArticleItem.css";
 const ArticleItem = ({ data }) => {
   const { name, excerpt, image, link } = data;
   return (
-    <article className="article col-4">
+    <article className="article">
       <img
         className="border-radius-lg"
         width="512"
