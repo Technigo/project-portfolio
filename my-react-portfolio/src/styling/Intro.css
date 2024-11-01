@@ -1,0 +1,117 @@
+.introContainer {
+  padding: 64px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffefe8;
+}
+
+.introWrapper {
+  width: 343px;
+}
+
+.myImage {
+  display: block;
+  height: 164px;
+  width: 164px;
+  object-fit: cover;
+  border-radius: 126px;
+}
+
+.introPhrase {
+  font-size: 18px;
+  margin: 32px 0 0 0;
+  font-weight: 600;
+}
+
+.jobTitle {
+  font-size: 32px;
+  margin: 0 0 32px 0;
+  font-weight: 700;
+  color: #5f5d9c;
+}
+
+.introDescription {
+  font-size: 18px;
+  font-family: Hind;
+  margin-bottom: 32px;
+}
+
+.introIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.arrowIcon {
+  width: 27px;
+  height: 68px;
+}
+
+/*** Tablet ***/
+@media (min-width: 745px) {
+  .introContainer {
+    padding: 128px 32px 0 32px;
+  }
+
+  .introWrapper {
+    width: 680px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .intro {
+    grid-row: 1;
+    grid-column: span 3;
+  }
+
+  .introPhrase {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .jobTitle {
+    font-size: 56px;
+  }
+
+  .introDescription {
+    margin: 0 0 0 22px;
+  }
+
+  .introIcon {
+    margin-top: 138px;
+  }
+}
+
+/*** Desktop ***/
+@media (min-width: 1024px) {
+  .introContainer {
+    padding: 332px 161px 0 161px;
+  }
+
+  .introWrapper {
+    width: 958px;
+  }
+
+  .introPhrase {
+    font-size: 32px;
+  }
+
+  .jobTitle {
+    font-size: 80px;
+  }
+  .introDescription {
+    margin-top: 32px;
+  }
+
+  .introIcon {
+    margin: 200px 0 63px 0;
+  }
+}
+
+/*** Desktop L ***/
+@media (min-width: 1500px) {
+  .introContainer {
+    padding: 332px 234px 0 234px;
+  }
+}

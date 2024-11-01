@@ -1,0 +1,138 @@
+.skillsContainer {
+  background-color: #5f5d9c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: Montserrat;
+  padding: 128px 16px 157px 16px;
+}
+
+.skills {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 64px;
+}
+
+.skill {
+  margin: 0;
+  font-family: hind;
+  font-size: 18px;
+}
+
+.skillsContainer h2 {
+  font-weight: 600;
+  padding: 0 5px;
+}
+
+.codeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.code {
+  background-color: #eb5578;
+  margin-bottom: 0 0 16px 0;
+}
+
+.toolboxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.toolbox {
+  background-color: #2383e0;
+  margin-bottom: 0 0 16px 0;
+}
+
+.upcomingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.upcoming {
+  background-color: #6eb486;
+  margin-bottom: 0 0 16px 0;
+}
+
+.moreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more {
+  background-color: #ffde30;
+  color: #0a25f5;
+  margin-bottom: 0 0 16px 0;
+}
+
+/*** Tablet ***/
+
+@media (min-width: 745px) {
+  .skillsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    margin: 0 auto;
+  }
+
+  .skills {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .codeContainer {
+    align-items: start;
+    margin-left: 64px;
+  }
+
+  .toolboxContainer {
+    align-items: start;
+    margin-left: 64px;
+  }
+
+  .upcomingContainer {
+    align-items: start;
+    margin-left: 64px;
+  }
+
+  .moreContainer {
+    align-items: start;
+    margin-left: 34px;
+  }
+}
+
+/*** Desktop ***/
+
+@media (min-width: 1024px) {
+  .skillsWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 958px;
+  }
+
+  .skills {
+    grid-column: span 4;
+    font-size: 80px;
+    margin-bottom: 128px;
+  }
+
+  .skillsContainer h2 {
+    font-size: 32px;
+  }
+}
+
+/*** Desktop L ***/
+
+@media (min-width: 1500px) {
+  .skillsWrapper {
+    width: 1044px;
+  }
+}
