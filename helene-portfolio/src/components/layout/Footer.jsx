@@ -11,10 +11,8 @@ const Footer = () => {
         <BackToTop aria-label="Go back to the top" className="back-to-top" />
       </a>
       <div className="grid-container">
-        <div className="col-6">
-          <H2 className="footer__title heading-xl">
-            Let&apos;s work together!
-          </H2>
+        <div className="col-8">
+          <H2 className="footer__title heading-xl">Let&apos;s connect!</H2>
           <div className="button-group">
             <Button
               href="mailto:hej@helenewestrin.se"
