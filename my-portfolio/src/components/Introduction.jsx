@@ -4,13 +4,13 @@ import Img from "./Img";
 import Bio from "./Bio";
 
 const Introduction = () => {
-    return (
+  return (
     <div className="introduction-container">
-        <Header />
-        <Img />
-        <Bio />
+      <Header />
+      <Img />
+      <Bio />
     </div>
-    );
+  );
 }
 
 export default Introduction;

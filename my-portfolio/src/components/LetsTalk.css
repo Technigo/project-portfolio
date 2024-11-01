@@ -1,35 +1,53 @@
 h2 {
-    font-size: 80px;
-    font-weight: 700;
-    line-height: normal;
-    color: var(--primary-color);
+  font-size: 80px;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .lets-talk-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 580px;
-    height: 475px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 580px;
+  height: 475px;
+  margin: 0 auto;
+  padding-top: 128px;
+  margin-bottom: 100px;
+  color: var(--primary-color);
 }
 
 .lets-talk-text {
-    padding-bottom: 64px;
+  padding-bottom: 64px;
 }
 
 .lets-talk-box {
-    color: #000;
-    font-family: Poppins;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    border: none;
+  color: #000;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
 }
 
 .profile-picture {
-    width: 164px;
-    height: 164px;
-    border-radius: 50%;
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  cursor: pointer; /* Indicates clickable items */
+  transition: transform 0.2s, filter 0.2s;
+  margin-right: 32px;
+}
+
+.logo:last-child {
+  margin-right: 0; /* Removes the right margin on the last logo */
+}
+
+.logo:hover {
+  transform: scale(1.2); /* Slightly enlarges the icon */
 }

@@ -5,7 +5,7 @@ import Tech from "./components/Tech";
 import Skills from "./components/Skills";
 import FeaturedProjects from "./components/FeaturedProjects";
 import LetsTalk from "./components/LetsTalk";
-import Footer from "./components/Footer";
+import MyWords from "./components/MyWords";
 
 function App() {
   return (
@@ -14,11 +14,11 @@ function App() {
       <FeaturedProjects />
       <Tech />
       <Skills />
+      <MyWords />
       <LetsTalk />
-      <Footer />
       {/* Other components can go here */}
     </div>
   );
-}
+};
 
 export default App;

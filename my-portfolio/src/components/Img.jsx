@@ -1,11 +1,15 @@
 import React from "react";
 import "./Img.css";
-import computerImage from "../assets/computer.jpg";
+import ImageRed from "../assets/ImageRed.jpeg";
+import ImageGrey from "../assets/ImageGrey.jpeg";
+import ImagePink from "../assets/ImagePink.jpeg";
 
 const Img = () => {
   return (
-    <section className="computer-section">
- <img src={computerImage} alt="Computer" className="computer-image" />
+    <section className="image-section">
+      <img src={ImageGrey} alt="Abstract art" className="image-grey" />
+      <img src={ImagePink} alt="Abstract art" className="image-pink" />
+      <img src={ImageRed} alt="Abstract art" className="image-red" />
     </section>
   );
 };
