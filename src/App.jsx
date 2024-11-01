@@ -1,11 +1,11 @@
 import './App.css'
-import { HeaderSection } from './sections/HeaderSection'
+import { BioSection } from './sections/BioSection'
 
 function App() {
 
   return (
     <>
-      <HeaderSection />
+      <BioSection />
     </>
   )
 }

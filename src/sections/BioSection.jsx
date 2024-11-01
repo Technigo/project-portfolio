@@ -1,11 +1,11 @@
-import { HeaderCard } from "../components/HeaderCard/HeaderCard"
+import { BioCard } from "../components/BioCard/BioCard"
 import { Grid } from "../ui/Grid/Grid"
 import "../ui/Grid/Grid.css"
 
-export const HeaderSection = () => {
+export const BioSection = () => {
     return (
         <Grid background="neutral">
-            <HeaderCard />
+            <BioCard />
         </Grid>
     )
 }

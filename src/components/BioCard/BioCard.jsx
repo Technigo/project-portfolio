@@ -1,11 +1,11 @@
 import { HeaderOne, HeaderThree, Body } from "../../ui/Typography/Typography"
 import { MediaButtonContainer } from "../MediaButtonContainer/MediaButtonContainer"
-import "./HeaderCard.css"
+import "./BioCard.css"
 
-export const HeaderCard = () => {
+export const BioCard = () => {
     return (
         <>
-            <div className="header-card-container">
+            <div className="bio-card-container">
                 <HeaderThree>
                     I am Gitte Beckmann
                 </HeaderThree>
