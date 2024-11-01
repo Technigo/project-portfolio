@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap");
+
+.intro-section {
+  padding: 64px 16px;
+}
+
+.intro-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+  row-gap: 32px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "image image image image"
+    "welcome welcome welcome welcome"
+    "intro intro intro intro"
+    "arrow arrow arrow arrow";
+}
+
+.profile-wrapper {
+  grid-area: image;
+  align-self: center;
+}
+
+.welcome-wrapper {
+  grid-area: welcome;
+}
+
+.intro-wrapper {
+  grid-area: intro;
+  align-self: center;
+}
+
+.arrow-container {
+  grid-area: arrow;
+}
+
+.welcome {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*Media Queries*/
+
+@media all and (min-width: 668px) {
+  .intro-section {
+    padding: 128px 32px 0 32px;
+  }
+
+  .intro-container {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+    grid-template-areas:
+      "welcome welcome welcome welcome welcome welcome welcome welcome"
+      "image image intro intro intro intro intro intro"
+      "arrow arrow arrow arrow arrow arrow arrow arrow";
+  }
+
+  .intro-container > :nth-child(4) {
+    margin-top: 106px;
+  } /*sets bigger margin before the arrow; 32px + 106px = 138px*/
+
+  .welcome {
+    font-size: 24px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .intro-section {
+    padding: 332px 234px 63 234px;
+  }
+
+  .intro-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+    row-gap: 16px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome ."
+      ". image image intro intro intro intro intro intro intro intro ."
+      ". arrow arrow arrow arrow arrow arrow arrow arrow arrow arrow .";
+  }
+
+  .welcome {
+    font-size: 32px;
+  }
+}
