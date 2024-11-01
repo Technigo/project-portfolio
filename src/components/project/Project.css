@@ -1,0 +1,99 @@
+:root {
+    --darkblue: #200e3a;
+    --midblue: #38419d;
+    --lightblue: #3887be;
+    --green: #52d3d8;
+}
+
+.projects-container {
+    margin-top: 64px;
+}
+
+.project-card {
+    margin: 9px 0px 4px 17px;
+}
+
+.project-image {
+    width: 90vw;
+    border-bottom: var(--midblue) solid 10px;
+    border-left: var(--midblue) solid 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.project-body {
+    margin: 16px 0;
+    font-family: "Hind", sans-serif;
+    font-size: 18px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-tag {
+    padding: 2px 6px;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0 6px 6px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.project-button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--midblue);
+    font-weight: 600;
+}
+
+@media (min-width: 620px) {
+    .project-card {
+        display: flex;
+    }
+
+    .project-image {
+        height: 280px;
+        width: 200px;
+        margin-right: 32px;
+    }
+
+    .project-box {
+        margin: 0 0 32px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .project-image {
+        width: 408px;
+        height: 280px;
+        border-bottom: var(--midblue) solid 20px;
+        border-left: var(--midblue) solid 20px;
+    }
+
+    .project-title {
+        font-size: 32px;
+    }
+
+    .projects-container {
+        margin-top: 128px;
+    }
+}
