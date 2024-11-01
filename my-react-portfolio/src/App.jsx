@@ -1,7 +1,7 @@
 
 import './App.css'
 import { HeaderSection } from "./sections/HeaderSection"
-// import { ImageSection } from "./sections/ImageSection"
+import { ImageSection } from "./sections/ImageSection"
 // import { BioSection } from "./sections/BioSection"
 // import { ProjectSection } from "./sections/ProjectSection"
 // import { TechSection } from "./sections/TechSection"
@@ -14,6 +14,7 @@ const App = () => {
   return (
     <main>
       <HeaderSection />
+      <ImageSection />
       {/* <HeaderSection />
       <ImageSection />
       <BioSection />
