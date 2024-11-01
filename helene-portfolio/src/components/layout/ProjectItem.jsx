@@ -8,11 +8,11 @@ import "./ProjectItem.css";
 const ProjectItem = ({ data }) => {
   const { name, description, image, tags, netlify, github } = data;
   return (
-    <article className="project grid-container">
-      <div className="project__image col-6">
+    <article className="project">
+      <div className="project__image">
         <img className="border-radius-lg" width="784" src={image} alt="" />
       </div>
-      <div className="project__info col-6">
+      <div className="project__info">
         <H3 className="heading-md">{name}</H3>
 
         {description && <p>{description}</p>}

@@ -1,13 +1,23 @@
 .project {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-9);
 
   @media screen and (min-width: 1200px) {
+    align-items: stretch;
+    flex-direction: row;
+
+    > * {
+      flex-basis: 50%;
+    }
+
     &:nth-child(even) {
       .project__info {
         order: 1;
         padding-left: 0;
         padding-right: var(--spacing-7);
       }
+
       .project__image {
         order: 2;
       }
@@ -16,18 +26,33 @@
 }
 
 .project__image {
-  height: 100%;
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    min-height: 27rem;
+  }
+
+  @media screen and (min-width: 1600px) {
+    min-height: 30rem;
+  }
+
   img {
-    aspect-ratio: 6 / 4;
     object-fit: cover;
     height: 100%;
     width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }
 
 .project__info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: var(--spacing-7);
   padding-top: var(--spacing-4);
   padding-bottom: var(--spacing-4);
