@@ -1,18 +1,11 @@
 import "./css/ProjectBox.css";
+import Button from "./Button";
 
 const BoxButtons = ({ demoUrl, codeUrl }) => {
     return (
         <div className="box-btns">
-            { demoUrl.map((project, index) => (
-            <a key={index} href={project.netlify} target="_blank" className="btn-base primary-btn">
-                Live Demo
-            </a>
-            ))}
-            { codeUrl.map((code, i) => (
-            <a key={i} href={code.github} target="_blank" className="btn-base secondary-btn">
-                View Code
-            </a>
-            ))}
+            <Button text="Live demo" url={demoUrl} className="btn-base primary-btn" />
+            <Button text="View Code" url={codeUrl} className="btn-base secondary-btn" />
         </div>
     );
 };
