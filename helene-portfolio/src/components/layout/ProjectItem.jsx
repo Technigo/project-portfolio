@@ -10,7 +10,7 @@ const ProjectItem = ({ data }) => {
   return (
     <article className="project grid-container">
       <div className="project__image col-6">
-        <img width="784" src={image} alt="" />
+        <img className="border-radius-lg" width="784" src={image} alt="" />
       </div>
       <div className="project__info col-6">
         <H3 className="heading-md">{name}</H3>
@@ -27,12 +27,24 @@ const ProjectItem = ({ data }) => {
 
         <div className="button-group">
           {netlify && (
-            <Button variant="primary" href={netlify}>
+            <Button
+              variant="primary"
+              href={netlify}
+              target="_blank"
+              iconOnHover="mystery"
+              aria-label={`View live demo of ${name}`}
+            >
               View live
             </Button>
           )}
           {github && (
-            <Button variant="secondary" href={github}>
+            <Button
+              variant="secondary"
+              href={github}
+              target="_blank"
+              iconOnHover="gitHub"
+              aria-label={`View code for ${name} on GitHub`}
+            >
               View on GitHub
             </Button>
           )}

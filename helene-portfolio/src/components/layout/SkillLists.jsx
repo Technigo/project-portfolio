@@ -10,11 +10,14 @@ const SkillLists = () => {
             <div>
               <h3
                 className="skill-lists-heading section-heading"
-                id="skill-list-title"
+                id={`skill-list-title-${index}`}
               >
                 {skillCategory.name}
               </h3>
-              <ul aria-labelledby="skill-list-title" className="skill-list">
+              <ul
+                aria-labelledby={`skill-list-title-${index}`}
+                className="skill-list"
+              >
                 {skillCategory.skills.map((skill, index) => (
                   <li key={index}>{skill}</li>
                 ))}

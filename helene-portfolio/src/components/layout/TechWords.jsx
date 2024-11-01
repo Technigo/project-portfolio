@@ -3,7 +3,7 @@ import "./TechWords.css";
 
 const TechWords = () => {
   return (
-    <section className="tech-words">
+    <section className="tech-words section-spacing-horizontal">
       <div className="grid-container">
         <div className="col-12">
           <ul className="tech-words__list" aria-label="List of my tech skills">

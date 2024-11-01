@@ -9,12 +9,48 @@
 }
 
 .header__logo {
-  padding: var(--spacing-10);
+  padding: var(--spacing-8);
+
+  @media screen and (min-width: 768px) {
+    padding: var(--spacing-9);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: var(--spacing-10);
+  }
+
+  svg {
+    height: 1.875rem;
+    width: auto;
+
+    @media screen and (min-width: 768px) {
+      height: 2.25rem;
+      width: auto;
+    }
+  }
 }
 
 .button-toggle-theme {
   border: none;
   background-color: transparent;
-  padding: var(--spacing-9);
+  padding: var(--spacing-7);
   cursor: pointer;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: var(--spacing-8);
+
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: var(--spacing-9);
+  }
 }

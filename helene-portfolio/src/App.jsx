@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <Header theme={theme} onSetTheme={setTheme} />
-      <main>
+      <main id="main">
         <Hero />
         <TechWords />
         <Projects />
