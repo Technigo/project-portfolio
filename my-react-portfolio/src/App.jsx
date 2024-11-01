@@ -15,8 +15,7 @@ const App = () => {
     <main>
       <HeaderSection />
       <ImageSection />
-      {/* <HeaderSection />
-      <ImageSection />
+      {/* 
       <BioSection />
       <ProjectSection />
       <TechSection />

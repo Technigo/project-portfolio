@@ -10,7 +10,7 @@ export const HeaderSection = () => {
         <header className="header-content">
           <Subheading>Hi there, I&#39;m</Subheading>
           <NameHeader>Joyce Kuo</NameHeader>
-          <Subheading>Creative Frontend Developer with a Background in Music Performance</Subheading>
+          <Subheading>Creative Frontend Developer with a Background in Music Performance & Education</Subheading>
         </header>
       </Grid >
     </div>
