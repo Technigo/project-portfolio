@@ -1,0 +1,42 @@
+/* Default (Mobile) */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: span 4;
+}
+
+.black-background {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+.white-background {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-section {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .grid-section {
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1184px;
+    margin: 0 auto;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1440px) {
+  .grid-section {
+    max-width: 1184px;
+    margin: 0 auto;
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+}

@@ -1,0 +1,38 @@
+.full-width-background {
+  background-color: var(--color-primary);
+  width: 100%
+}
+
+.header-content {
+  grid-column: span 4;
+  display: flex;
+  padding: 4rem 1rem;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+  text-align: center;
+}
+
+.last-name {
+  display: block;
+}
+
+.subheading {
+  color: red;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .header-content {
+    grid-column: span 8;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .header-content {
+    grid-column: span 12;
+  }
+}
