@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./Projects.css";
 import { useState } from "react";
 import repoData from "./repo-data.json";
@@ -7,19 +8,14 @@ import { Tag } from "/src/components/typography/Tag.jsx";
 import { Paragraph } from "/src/components/typography/Paragraph.jsx";
 import { Button } from "/src/components/button/Button.jsx";
 
-// eslint-disable-next-line react/prop-types
 export const ProjectCard = ({ repositories }) => {
   // State to track the number of cards to display
   const [visibleCards, setVisibleCards] = useState(5);
 
   // Filter and match repositories with data in repoData.projects
-  // eslint-disable-next-line react/prop-types
   const filteredRepos = repositories.filter((repo) => {
     return repoData.projects.some((data) => data.repoName === repo.name);
   });
-
-  // Sort the filtered repositories by their creation date (most recent first)
-  //filteredRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
   // Sort the filtered repositories by their id (highest first)
   filteredRepos.sort((a, b) => {
@@ -29,7 +25,6 @@ export const ProjectCard = ({ repositories }) => {
   });
 
   const toggleVisibleCards = () => {
-    // Show 5 cards or all cards based on current state
     setVisibleCards((prevVisibleCards) =>
       prevVisibleCards === 5 ? filteredRepos.length : 5
     );
@@ -40,13 +35,14 @@ export const ProjectCard = ({ repositories }) => {
   return (
     <>
       {filteredRepos.slice(0, visibleCards).map((repo) => {
-        // Find the corresponding data in repoData.projects based on repoName
+        console.log(`Repo: ${repo.name}, Description: ${repo.description}`); // Check if description exists
+
         const matchingData = repoData.projects.find(
           (data) => data.repoName === repo.name
         );
 
         if (!matchingData) {
-          return null; // Handle missing data
+          return null;
         }
 
         return (
@@ -64,26 +60,24 @@ export const ProjectCard = ({ repositories }) => {
                 aria-label="This is the main heading"
                 className="project-card-heading"
               />
-              <Paragraph
-                text={repo.description} // Retrieve the description from the API
-              />
+              <Paragraph text={repo.description} />
               <div role="tag" aria-label="Tags" className="tags">
-                {/* Mapping through tags, to display them next to each other */}
-                {repo.topics.map((topic, index) => (
-                  <Tag key={index} tagText={topic} />
-                ))}
+                {repo.topics &&
+                  repo.topics.map((topic, index) => (
+                    <Tag key={index} tagText={topic} />
+                  ))}
               </div>
               <div className="button-wrapper">
                 <Button
                   icon="/assets/icons/live-demo.svg"
                   label="Live demo"
-                  link={matchingData.netlifyUrl} // Use the URL from the JSON data
+                  link={matchingData.netlifyUrl}
                   className="netlify-btn"
                 />
                 <Button
                   icon="/assets/icons/github-btn.svg"
                   label="View the code"
-                  link={repo.svn_url} // Retrieve GitHub link from the API
+                  link={repo.svn_url}
                   className="github-btn"
                 />
               </div>
@@ -102,3 +96,14 @@ export const ProjectCard = ({ repositories }) => {
     </>
   );
 };
+
+// ProjectCard.propTypes = {
+//   repositories: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       name: PropTypes.string.isRequired,
+//       description: PropTypes.string,
+//       topics: PropTypes.arrayOf(PropTypes.string),
+//       svn_url: PropTypes.string,
+//     })
+//   ).isRequired,
+// };
