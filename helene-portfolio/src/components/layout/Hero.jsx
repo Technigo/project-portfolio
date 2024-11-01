@@ -1,5 +1,6 @@
 import Pill from "../common/Pill";
 import { H1 } from "../common/Typography";
+import helene from "../../assets/images/helene-westrin.png";
 import "./Hero.css";
 
 const Hero = () => {
@@ -8,7 +9,7 @@ const Hero = () => {
       <div className="grid-container">
         <div className="col-12">
           <H1 className="hero__title">
-            <Pill>
+            <Pill image={helene}>
               Hi, I&apos;m Helene! <span className="wave">👋</span>
             </Pill>
             A product designer with a knack for frontend finesse, creating

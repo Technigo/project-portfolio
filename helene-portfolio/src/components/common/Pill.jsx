@@ -1,16 +1,9 @@
-import helene from "../../assets/images/helene-westrin.png";
 import "./Pill.css";
 
-const Pill = ({ children }) => {
+const Pill = ({ image, children }) => {
   return (
     <div className="pill">
-      <img
-        className="pill__avatar"
-        width="72"
-        height="72"
-        alt=""
-        src={helene}
-      />
+      <img className="pill__avatar" width="72" height="72" alt="" src={image} />
       <span className="pill__text">{children}</span>
     </div>
   );
