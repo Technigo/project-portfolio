@@ -35,7 +35,7 @@ export const ProjectCard = ({ repositories }) => {
   return (
     <>
       {filteredRepos.slice(0, visibleCards).map((repo) => {
-        console.log(`Repo: ${repo.name}, Description: ${repo.description}`); // Check if description exists
+        console.log("Topics for repo:", repo.name, repo.topics); // Debugging line
 
         const matchingData = repoData.projects.find(
           (data) => data.repoName === repo.name
@@ -96,14 +96,3 @@ export const ProjectCard = ({ repositories }) => {
     </>
   );
 };
-
-// ProjectCard.propTypes = {
-//   repositories: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       name: PropTypes.string.isRequired,
-//       description: PropTypes.string,
-//       topics: PropTypes.arrayOf(PropTypes.string),
-//       svn_url: PropTypes.string,
-//     })
-//   ).isRequired,
-// };
