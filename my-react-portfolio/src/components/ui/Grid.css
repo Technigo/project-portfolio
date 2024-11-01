@@ -1,24 +1,41 @@
 .grid-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  /* Ändra till 12 kolumner för konsekvent responsivitet */
   gap: 12px;
-  padding: 64px 80px;
   justify-items: center;
-  /* Centrera innehåll i gridden */
+  padding: 0 12px;
 }
 
 @media (min-width: 640px) {
   .grid-section {
     grid-template-columns: repeat(8, 1fr);
-    /* Tablet: 8 kolumner */
+  }
+
+  .grid-section h1,
+  .grid-section h2,
+  .grid-section h3 {
+    grid-column: span 8;
   }
 }
 
 @media (min-width: 1024px) {
   .grid-section {
     grid-template-columns: repeat(12, 1fr);
-    /* Desktop: 12 kolumner */
   }
+
+  .grid-section h1,
+  .grid-section h2,
+  .grid-section h3 {
+    grid-column: span 12;
+  }
+}
+
+.grid-section h1,
+.grid-section h2,
+.grid-section h3 {
+  grid-column: span 4;
+  text-align: center;
 }
 
 .white-background {

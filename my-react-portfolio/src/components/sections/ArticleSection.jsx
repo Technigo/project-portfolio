@@ -6,7 +6,6 @@ export const ArticleSection = () => {
   return (
     <Grid background="pink">
       <SectionTitle>My articles</SectionTitle>
-
       <Card />
     </Grid>
   )

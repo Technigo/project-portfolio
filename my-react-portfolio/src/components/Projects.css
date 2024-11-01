@@ -1,80 +1,71 @@
+/* Mobile-first styling (mobiler och tablets) */
 .info {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  position: relative;
-  max-width: 580px;
-}
-
-.info .div {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  position: relative;
+  grid-column: span 4;
   width: 100%;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  margin: 22px auto;
+  gap: 20px;
+}
+
+/* Bildstil */
 .project-image {
   width: 100%;
-  /* Justera till önskad bredd */
   height: auto;
-  /* Bevara proportioner */
   border-radius: 12px;
-  /* Lägg till rundade hörn */
-  margin-bottom: 16px;
-  /* Avstånd under bilden */
+  margin: 16px 0;
 }
 
-.info .tech-tags {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: #ffffff;
+/* Projektinformation */
+.project-details {
   display: flex;
-  flex: 0 0 auto;
-  gap: 4px;
-  position: relative;
-  width: 100%;
-}
-
-.info .tag-instance {
-  flex: 1 !important;
-  flex-grow: 1 !important;
-  width: unset !important;
-}
-
-.info .h {
-  align-self: stretch;
-  color: #000000;
-  font-family: "Poppins-Medium", Helvetica;
-  font-size: 30px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: normal;
-  position: relative;
-}
-
-.info .body {
-  align-self: stretch;
-  color: #000000;
-  font-family: "Poppins-Regular", Helvetica;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  position: relative;
-}
-
-.info .btns {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
   flex-direction: column;
-  gap: 8px;
-  position: relative;
+  align-items: flex-start;
+  gap: 16px;
   width: 100%;
+  text-align: left;
+}
+
+.tech-tags,
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Tablet-storlek */
+@media (min-width: 640px) {
+  .info {
+    grid-column: span 8;
+  }
+
+  .project-image {
+    height: 350px;
+    object-fit: cover;
+  }
+}
+
+/* Laptop-storlek */
+@media (min-width: 1024px) {
+  .info {
+    grid-column: span 12;
+  }
+
+  .project-image {
+    width: 35%;
+  }
+
+  .project {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project:nth-child(even) .project-image {
+    order: 2;
+    /* För att få bilden på höger sida för varje jämnt projekt */
+  }
 }

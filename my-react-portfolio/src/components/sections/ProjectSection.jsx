@@ -1,6 +1,9 @@
 import { ProjectInfo } from "../Projects.jsx";
 import { Grid } from "../ui/Grid.jsx";
 
+import "../ui/Grid.css"
+
+
 export const ProjectSection = () => {
   return (
     <Grid background="white">

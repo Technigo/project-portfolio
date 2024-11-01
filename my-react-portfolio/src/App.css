@@ -1,29 +1,41 @@
 body {
   margin: 0 auto;
   padding: 0;
+  background: gray;
 }
-
 
 :root {
-  /* COLORS */
-  --color-primary: black;
-  --color-secondary: white;
-
-  /* TYPOGRAPHY */
-  --font-size-h1: 80px;
-  --font-size-h2: 60px;
-  --font-size-h3: 24px;
-  --font-size-p: 16px;
-  ---fontFamily: 'Poppins';
-  ---wordWrap: 'break-word';
+  font-family: 'Poppins';
+  word-wrap: 'break-word';
 }
 
-/* Desktop and up */
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+
+/* Anpassning för tablet-storlek (640px och uppåt) */
+@media (min-width: 640px) {
+  .grid-section h2 {
+    grid-column: span 8;
+  }
+}
+
+/* Anpassning för laptop-storlek (1024px och uppåt) */
 @media (min-width: 1024px) {
-  :root {
-    --font-size-h1: 100px;
-    --font-size-h2: 80px;
-    --font-size-h3: 30px;
-    --font-size-p: 18px;
+  .grid-section h2 {
+    grid-column: span 12;
   }
 }
