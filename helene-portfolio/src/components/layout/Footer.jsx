@@ -6,7 +6,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="section-spacing-horizontal">
       <a className="back-to-top-link" href="#main">
         <BackToTop aria-label="Go back to the top" className="back-to-top" />
       </a>
