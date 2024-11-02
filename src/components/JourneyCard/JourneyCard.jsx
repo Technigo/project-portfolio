@@ -2,8 +2,8 @@ import { useState, useEffect } from "react"
 import { ProjectButton } from "../../ui/ProjectButton/ProjectButton"
 import { HeaderThree } from "../../ui/Typography/Typography"
 import { CardImage } from "../../ui/CardImage/CardImage"
+import journeyData from "../../../journey.json"
 import "./JourneyCard.css"
-import journeyData from "../../../"
 
 export const JourneyCard = () => {
     const [journey, setJourney] = useState([])
