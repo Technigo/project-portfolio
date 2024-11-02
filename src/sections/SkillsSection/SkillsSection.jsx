@@ -1,6 +1,6 @@
-import { SkillsCard } from "../components/SkillsCard/SkillsCard";
-import { Grid } from "../ui/Grid/Grid";
-import { HeaderTwo } from "../ui/Typography/Typography";
+import { SkillsCard } from "../../components/SkillsCard/SkillsCard";
+import { Grid } from "../../ui/Grid/Grid";
+import { HeaderTwo } from "../../ui/Typography/Typography";
 import "./SkillsSection.css"
 
 export const SkillsSection = () => {
