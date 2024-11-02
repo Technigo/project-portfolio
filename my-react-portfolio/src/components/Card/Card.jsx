@@ -21,11 +21,11 @@ export const Card = ({ image, title, description, tags, netlifyLink, githubLink 
         </header>
         <p className="card-description">
           {description}</p>
+        <footer className="card-buttons">
+          <Button link={netlifyLink} text="Live demo" icon={webIcon} />
+          <Button link={githubLink} text="View code" icon={githubIcon} />
+        </footer>
       </div>
-      <footer className="card-buttons">
-        <Button link={netlifyLink} text="Live demo" icon={webIcon} />
-        <Button link={githubLink} text="View code" icon={githubIcon} />
-      </footer>
     </article>
   );
 };
