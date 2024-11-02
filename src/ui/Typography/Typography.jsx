@@ -3,10 +3,10 @@ import "./Typography.css"
 
 export const HeaderOne = ({ children }) => <h1 className="header-one">{children}</h1>
 export const HeaderThree = ({ children }) => <h2 className='header-three'>{children}</h2>
-export const SectionTitle = ({ children }) => <h2 className="section-title">{children}</h2>
+export const HeaderTwo = ({ children }) => <h2 className="header-two">{children}</h2>
 export const Body = ({ children }) => <p className='body'>{children}</p>
 
-SectionTitle.propTypes = {
+HeaderTwo.propTypes = {
     children: PropTypes.node.isRequired,
 }
 HeaderOne.propTypes = {
