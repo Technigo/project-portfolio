@@ -1,12 +1,14 @@
-import { Card } from "../components/Card/Card"
-import { Grid } from "../ui/Grid/Grid"
-import { SectionTitle } from "../ui/Typography/Typography"
+import { Articles } from "../Articles.jsx";
+import { Grid } from "../ui/Grid.jsx";
+
+import "../ui/Grid.css"
+
 
 export const ArticleSection = () => {
   return (
-    <Grid background="pink">
-      <SectionTitle>My articles</SectionTitle>
-      <Card />
+    <Grid background="white">
+      <h2>My Articles</h2>
+      <Articles />
     </Grid>
   )
 }
