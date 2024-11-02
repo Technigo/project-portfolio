@@ -16,7 +16,9 @@ export const ProjectCard = () => {
       {projects.map((project, index) => (
         <div key={index} className="project-card" >
           <CardImage cardImage={project.cardImage} alt={project.alt} />
-          <HeaderThree>{project.header}</HeaderThree>
+          <div className="project-title">
+            <HeaderThree>{project.header}</HeaderThree>
+          </div>
           <div className="button-container">
             <ProjectButton label="Live demo" background="primary"></ProjectButton>
             <ProjectButton label="View Code" background="neutral"></ProjectButton>
