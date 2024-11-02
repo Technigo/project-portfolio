@@ -1,15 +1,13 @@
 import React from 'react';
 import './Tech.css';
 
-const TechStack = ({ technologies }) => (
-  <section className="tech-section">
-    <h2>Tech</h2>
-    <ul className="tech-list">
-      {technologies.map((tech, index) => (
-        <li key={index} className="tech-item">{tech}</li>
-      ))}
-    </ul>
-  </section>
-);
+const Tech = () => {
+  return (
+    <section id="tech" className="tech">
+      <h2>Tech</h2>
+      <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, MongoDB, Web Accessibility, APIs, mob-programming, pair-programming, GitHub.</p>
+    </section>
+  );
+};
 
-export default TechStack;
+export default Tech;
