@@ -22,6 +22,7 @@ export const ProjectSection = () => {
               tags={project.tags}
               netlifyLink={project.netlify}
               githubLink={project.github}
+              reverse={index % 2 !== 0} // Reverse for odd index cards
             />
           ))}
         </div>

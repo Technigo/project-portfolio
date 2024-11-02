@@ -5,9 +5,9 @@ import { Button } from '../Button/Button'
 import webIcon from '../../assets/web-icon.svg'
 import githubIcon from '../../assets/github-icon.svg'
 
-export const Card = ({ image, title, description, tags, netlifyLink, githubLink }) => {
+export const Card = ({ image, title, description, tags, netlifyLink, githubLink, reverse }) => {
   return (
-    <article className="card">
+    <article className={`card ${reverse ? 'reverse' : ''}`}>
       <div className="card-image-container">
         <img src={image} alt={title} className="card-image" />
       </div>
