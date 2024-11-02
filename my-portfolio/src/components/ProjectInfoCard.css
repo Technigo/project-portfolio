@@ -1,17 +1,19 @@
+/* ProjectInfoCard.css */
 .project-card {
   display: flex;
-  gap: 3rem; /* Increased gap for more space */
+  gap: 3rem;
   width: 80%;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .project-wrapper {
-  margin-bottom: 1rem; /* Adjust as needed */
+  margin-bottom: 4rem;
 }
 
 .project-wrapper:nth-child(even) .project-card {
-  flex-direction: row-reverse; /* Reverse layout for even items */
+  flex-direction: row-reverse;
 }
 
 .project-image {
@@ -23,46 +25,83 @@
 }
 
 .project-info {
-  max-width: 479px; /* Ensure content aligns with image width */
+  max-width: 479px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align content to the start */
+  justify-content: space-between;
+  height: 100%;
 }
 
-.project-wrapper:nth-child(even) .project-info {
-  align-items: flex-end; /* Align content to the end for even items */
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 1rem 0;
 }
 
 .project-tag {
-  background: white;
   color: black;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.875rem;
+  display: flex;
+  padding: 2px 6px;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 0 0;
   border-radius: 4px;
   border: 1px solid #000;
+  background: #FFF;
+}
+
+.project-description {
+  margin: 1rem 0;
 }
 
 .project-links {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* Alignment for even-numbered projects */
+.project-wrapper:nth-child(even) .project-content {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.project-wrapper:nth-child(even) .project-tags {
+  justify-content: flex-end;
+}
+
+.project-wrapper:nth-child(even) .project-links {
+  align-items: flex-end;
+}
+
+.project-description {
+  color: black;
 }
 
 .demo-button,
 .code-button {
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem;
   border-radius: 4px;
   border: none;
   cursor: pointer;
   font-weight: 500;
   transition: all 0.3s ease;
+  width: 120px;
+  text-align: center; */
+  display: flex;
+  width: 303px;
+  height: 48px;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
 }
 
 .demo-button {
@@ -79,4 +118,16 @@
 .code-button:hover {
   opacity: 0.9;
   transform: translateY(-1px);
+}
+
+.button.icon {
+  width: 30.99px;
+  height: 30.99px;
+  flex-shrink: 0;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: black;
 }

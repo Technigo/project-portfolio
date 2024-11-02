@@ -37,8 +37,9 @@ const Skills = () => {
         <div className="skills-category">
           <h3>Toolbox</h3>
           <ul className="skills-list">
-            <li>Atom</li>
             <li>Postman</li>
+            <li>Figma</li>
+            <li>Slack</li>
             {/* Add more skills in this category */}
           </ul>
         </div>
