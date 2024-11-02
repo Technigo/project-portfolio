@@ -1,12 +1,17 @@
 .project-card {
   display: flex;
-  gap: 2rem;
+  gap: 3rem; /* Increased gap for more space */
   width: 80%;
   align-items: center;
+  justify-content: space-between; 
+}
+
+.project-wrapper {
+  margin-bottom: 1rem; /* Adjust as needed */
 }
 
 .project-wrapper:nth-child(even) .project-card {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; /* Reverse layout for even items */
 }
 
 .project-image {
@@ -18,7 +23,14 @@
 }
 
 .project-info {
-  flex: 1;
+  max-width: 479px; /* Ensure content aligns with image width */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the start */
+}
+
+.project-wrapper:nth-child(even) .project-info {
+  align-items: flex-end; /* Align content to the end for even items */
 }
 
 .project-tags {

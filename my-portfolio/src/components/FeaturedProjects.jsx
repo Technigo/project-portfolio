@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import ProjectInfoCard from "./ProjectInfoCard";
 import "./FeaturedProjects.css";
+import ArrowIcon from "../assets/ArrowIcon.svg";
 
 const FeaturedProjects = () => {
   const [projects, setProjects] = useState([]);
+  const [displayedProjects, setDisplayedProjects] = useState(4); // Start by displaying 4 projects
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -27,6 +29,11 @@ const FeaturedProjects = () => {
       });
   }, []);
 
+  // Load more projects when the button is clicked
+  const loadMoreProjects = () => {
+    setDisplayedProjects((prev) => prev + 2); // Load 2 more projects at a time
+  };
+
   if (error) {
     return <div>Error loading projects: {error}</div>;
   }
@@ -35,12 +42,17 @@ const FeaturedProjects = () => {
     <section className="featured-projects">
       <h2>Featured Projects</h2>
       <div className="projects-grid">
-        {projects.map((project, index) => (
+        {projects.slice(0, displayedProjects).map((project, index) => (
           <div key={project.name || index} className="project-wrapper">
             <ProjectInfoCard project={project} />
           </div>
         ))}
       </div>
+      {displayedProjects < projects.length && ( // Show the button only if there are more projects to load
+        <button onClick={loadMoreProjects} className="load-more-button">
+          <img src={ArrowIcon} alt="Arrow see more icon" className="button-icon" /> See more projects
+        </button>
+      )}
     </section>
   );
 };

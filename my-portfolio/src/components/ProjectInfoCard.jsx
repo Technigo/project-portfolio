@@ -18,34 +18,39 @@ const ProjectInfoCard = ({ project }) => {
   };
 
   return (
-    <div className="project-card">
-      <img 
-        src={ImageGrey}  // Use the imported image here
-        alt={`${project.name} screenshot`} 
-        className="project-image" 
-      />
-      <div className="project-info">
-        <h3>{project.name}</h3>
-        <div className="project-tags">
-          {project.tags.map((tag, index) => (
-            <span key={index} className="project-tag">
-              {tag}
-            </span>
-          ))}
-        </div>
-        <div className="project-links">
-          <button 
-            className="demo-button"
-            onClick={() => handleDemoClick(project.netlify)}
-          >
-            Live Demo
-          </button>
-          <button 
-            className="code-button"
-            onClick={() => handleCodeClick(project.github)}
-          >
-            View Code
-          </button>
+    <div className="project-wrapper">
+      <div className="project-card">
+        <img 
+          src={ImageGrey}  // Use the imported image here
+          alt={`${project.name} screenshot`} 
+          className="project-image" 
+        />
+        <div className="project-info">
+          <h3>{project.name}</h3>
+          <p className="project-description">
+            {project.description} {/* This text would come from your project data */}
+          </p>
+          <div className="project-tags">
+            {project.tags.map((tag, index) => (
+              <span key={index} className="project-tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div className="project-links">
+            <button 
+              className="demo-button"
+              onClick={() => handleDemoClick(project.netlify)}
+            >
+              Live Demo
+            </button>
+            <button 
+              className="code-button"
+              onClick={() => handleCodeClick(project.github)}
+            >
+              View Code
+            </button>
+          </div>
         </div>
       </div>
     </div>
