@@ -9,7 +9,7 @@ export const ProjectCard = () => {
       {projects.projects.map((item) => (
         <div className="project-card" key={item.id}>
           <div className="image-container">
-            <a href={item.netlify} target="_blank">
+            <a href={item.global} target="_blank">
               <img className="project-image" src={item.image} alt={item.name} /></a>
           </div>
           
@@ -27,8 +27,8 @@ export const ProjectCard = () => {
             <div className="buttons">
               <Button
                 className="button"
-                source={item.netlify}
-                image="Netlify"
+                source={item.global}
+                image="global"
                 text="Live demo"
                 color="grey"
               />

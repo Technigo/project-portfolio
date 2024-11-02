@@ -9,4 +9,4 @@ export const Tech = () => {
       </div>
     </section>
   )
- }
+ } 

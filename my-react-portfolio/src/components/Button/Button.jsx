@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import "./Button.css";
-import netlify from "../../assets/icon/Ic-Web.svg";
+import global from "../../assets/icon/Ic-Web.svg";
 import github from "../../assets/icon/Ic-Github.svg";
 
 export const Button = ({ image, text, source, color }) => {
-  let icon = image === "Github" ? github : netlify;
+  let icon = image === "Github" ? github : global;
   
   return (
     <div className={`link-button ${color}`}>
@@ -19,7 +19,7 @@ export const Button = ({ image, text, source, color }) => {
 };
 
 Button.propTypes = {
-  image: PropTypes.oneOf(["Netlify", "Github"]).isRequired,
+  image: PropTypes.oneOf(["global", "Github"]).isRequired,
   text: PropTypes.string.isRequired,
   source: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
