@@ -21,7 +21,6 @@
 .image-3 {
   width: 35%;
   height: auto;
-  background: linear-gradient(0deg, #d9d9d9 0%, #d9d9d9 100%);
   border-radius: 12px;
 }
 
@@ -50,4 +49,42 @@
   z-index: 2;
   /* Lägger mittenbilden ovanpå */
   transform: rotate(0);
+}
+
+@media (min-width: 640px) {
+
+  .image-1,
+  .image-2,
+  .image-3 {
+    width: 25%;
+  }
+
+  .image-1 {
+    margin-right: -10%;
+    /* Mindre förskjutning eftersom bredden minskar */
+  }
+
+  .image-3 {
+    margin-left: -10%;
+    /* Mindre förskjutning */
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .image-1,
+  .image-2,
+  .image-3 {
+    width: 25%;
+  }
+
+  .image-1 {
+    margin-right: -5%;
+    /* Ännu mindre förskjutning för bredare skärmar */
+  }
+
+  .image-3 {
+    margin-left: -5%;
+    /* Ännu mindre förskjutning */
+  }
 }

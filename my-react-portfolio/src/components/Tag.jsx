@@ -1,4 +1,3 @@
-// Tag.jsx
 import PropTypes from 'prop-types';
 import "./Tag.css";
 

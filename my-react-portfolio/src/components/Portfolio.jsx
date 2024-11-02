@@ -5,8 +5,7 @@ import { ProjectSection } from './sections/ProjectSection.jsx';
 import { TechSection } from './MyTech.jsx'
 import { Skill } from './MySkills.jsx'
 import { ArticleSection } from './sections/ArticleSection.jsx';
-
-
+import { ContactInfo } from './ContactMe.jsx';
 
 import "../App.css";
 
@@ -21,6 +20,7 @@ export const Portfolio = () => {
       <TechSection />
       <Skill />
       <ArticleSection />
+      <ContactInfo />
 
     </>
   );
