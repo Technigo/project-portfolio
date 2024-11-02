@@ -8,22 +8,23 @@ export const ProjectSection = () => {
   const projects = data.projects;
 
   return (
-    <section className="projects-section">
-      <Grid background="white">
+    <Grid background="white">
+      <section className="project-section">
         <SectionTitle>Featured Projects</SectionTitle>
         <div className="project-cards">
           {projects.map((project, index) => (
             <Card
               key={index}
               image={project.image}
-              title={project.description}
+              title={project.name}
+              description={project.description}
               tags={project.tags}
               netlifyLink={project.netlify}
               githubLink={project.github}
             />
           ))}
         </div>
-      </Grid>
-    </section>
+      </section>
+    </Grid>
   )
 }
