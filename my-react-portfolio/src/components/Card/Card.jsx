@@ -1,4 +1,4 @@
-import './card.css';
+import './Card.css';
 import '../../ui/Typography/Typography'
 import { Tag } from '../Tag/Tag';
 import { Button } from '../Button/Button';
