@@ -16,17 +16,20 @@ const App = () => {
     <>
       <Header />
       <Skills skillsData={skillsData} />
-      <section className="project-box-grid">
-      {projectsData.projects.map((project, index) => (
-        <ProjectBox
-          key={index}
-          title={project.name}
-          description={project.description}
-          image={project.image}
-          demoUrl={project.netlify}
-          codeUrl={project.github}
-        />
-      ))}
+      <section className="projects-section">
+        <h2>Featured Projects</h2>
+        <article className="project-box-grid">
+          {projectsData.projects.map((project, index) => (
+            <ProjectBox
+            key={index}
+            title={project.name}
+            description={project.description}
+            image={project.image}
+            demoUrl={project.netlify}
+            codeUrl={project.github}
+            />
+          ))}
+        </article>
       </section>
     </>
   )
