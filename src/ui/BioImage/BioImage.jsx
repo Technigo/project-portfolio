@@ -3,7 +3,7 @@ import BioImageDown from "../../assets/BioImageDown.png"
 import BioImageUp from "../../assets/BioImageUp.png"
 import "./BioImage.css"
 
-export const BioImage = ({ src, alt }) => {
+export const BioImage = ({ alt }) => {
   return (
     <div className="bio-image-container">
       <div className="bio-image">
@@ -15,6 +15,5 @@ export const BioImage = ({ src, alt }) => {
 }
 
 BioImage.propTypes = {
-  src: PropTypes.string.isRequired,
   alt: PropTypes.string,
 }
