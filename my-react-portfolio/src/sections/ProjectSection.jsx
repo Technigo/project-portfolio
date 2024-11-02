@@ -1,11 +1,11 @@
-import { Grid } from '../ui/Grid/Grid';
-import { SectionTitle } from '../ui/Typography/Typography';
-import { Card } from '../components/Card/Card';
-import data from '../../../projects.json';
-import './ProjectSection.css';
+import { Grid } from '../ui/Grid/Grid'
+import { SectionTitle } from '../ui/Typography/Typography'
+import { Card } from '../components/Card/Card'
+import data from '../../../projects.json'
+import './ProjectSection.css'
 
 export const ProjectSection = () => {
-  const projects = data.projects;
+  const projects = data.projects
 
   return (
     <Grid background="white">

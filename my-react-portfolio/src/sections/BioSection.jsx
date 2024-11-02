@@ -1,6 +1,6 @@
-import { Grid } from "../ui/Grid/Grid";
-import { BodyText, SectionTitle } from "../ui/Typography/Typography";
-import './BioSection.css';
+import { Grid } from "../ui/Grid/Grid"
+import { BodyText, SectionTitle } from "../ui/Typography/Typography"
+import './BioSection.css'
 
 export const BioSection = () => {
   return (

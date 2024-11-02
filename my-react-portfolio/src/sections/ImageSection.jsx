@@ -1,10 +1,10 @@
-import { Grid } from "../ui/Grid/Grid";
-import data from '../../../projects.json';
-import './ImageSection.css';
+import { Grid } from "../ui/Grid/Grid"
+import data from '../../../projects.json'
+import './ImageSection.css'
 
 export const ImageSection = () => {
   // Select the first 3 projects for display
-  const displayProjects = data.projects.slice(0, 3);
+  const displayProjects = data.projects.slice(0, 3)
 
   return (
 

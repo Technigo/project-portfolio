@@ -4,7 +4,7 @@ import { HeaderSection } from "./sections/HeaderSection"
 import { ImageSection } from "./sections/ImageSection"
 import { BioSection } from "./sections/BioSection"
 import { ProjectSection } from "./sections/ProjectSection"
-// import { TechSection } from "./sections/TechSection"
+import { TechSection } from "./sections/TechSection"
 // import { SkillSection } from "./sections/SkillSection"
 // import { ArticleSection } from "./sections/ArticleSection"
 import { ContactSection } from "./sections/ContactSection"
@@ -17,8 +17,8 @@ const App = () => {
       <ImageSection />
       <BioSection />
       <ProjectSection />
-      {/* 
       <TechSection />
+      {/* 
       <SkillSection />
       <ArticleSection />
       <ContactSection /> */}

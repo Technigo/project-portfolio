@@ -1,4 +1,4 @@
-import './Button.css';
+import './Button.css'
 
 export const Button = ({ link, text, icon }) => {
   return (
@@ -6,5 +6,5 @@ export const Button = ({ link, text, icon }) => {
       {icon && <img src={icon} alt="Icon" className="button-icon" />}
       {text}
     </a>
-  );
-};
+  )
+}

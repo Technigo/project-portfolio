@@ -1,9 +1,9 @@
 import './Card.css';
 import '../../ui/Typography/Typography'
-import { Tag } from '../Tag/Tag';
-import { Button } from '../Button/Button';
-import webIcon from '../../assets/web-icon.svg';
-import githubIcon from '../../assets/github-icon.svg';
+import { Tag } from '../Tag/Tag'
+import { Button } from '../Button/Button'
+import webIcon from '../../assets/web-icon.svg'
+import githubIcon from '../../assets/github-icon.svg'
 
 export const Card = ({ image, title, description, tags, netlifyLink, githubLink }) => {
   return (
@@ -27,5 +27,5 @@ export const Card = ({ image, title, description, tags, netlifyLink, githubLink 
         </footer>
       </div>
     </article>
-  );
-};
+  )
+}
