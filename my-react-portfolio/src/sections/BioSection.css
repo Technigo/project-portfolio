@@ -1,0 +1,25 @@
+/* Default (Mobile) */
+.bio-section {
+  display: flex;
+  padding: 4rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+  grid-column: 1 / -1;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .bio-section {
+    padding: 4rem 1.5rem 8rem 1.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .bio-section {
+    grid-column: 3 / span 8;
+    padding: 4rem 0rem 8rem 0rem;
+  }
+}

@@ -1,6 +1,5 @@
 import { Grid } from "../ui/Grid/Grid"
-import { NameHeader } from "../ui/Typography/Typography"
-import { Subheading } from "../ui/Typography/Typography"
+import { NameHeader, Subheading } from "../ui/Typography/Typography"
 import './HeaderSection.css';
 
 export const HeaderSection = () => {
@@ -14,5 +13,5 @@ export const HeaderSection = () => {
         </header>
       </Grid >
     </div>
-  )
-}
+  );
+};
