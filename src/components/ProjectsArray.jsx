@@ -9,8 +9,8 @@ export const projects = [
     title: "Chatbot Built in JavaScript",
     description: "The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.",
     tags: ["HTML5", "CSS3", "React", "Node"],
-    liveLink: "https://your-live-link.com",
-    codeLink: "https://github.com/your-repo",
+    liveLink: "https://google.com",
+    codeLink: "https://github.com/",
     image: Top1, // Lägg till bildreferensen här
   },
   {
@@ -18,8 +18,8 @@ export const projects = [
     title: "Another Project Title",
     description: "Description for the second project.",
     tags: ["JavaScript", "CSS", "HTML"],
-    liveLink: "https://another-live-link.com",
-    codeLink: "https://github.com/another-repo",
+    liveLink: "https://facebook.com",
+    codeLink: "https://elle.se/",
     image: Top2, // Lägg till bildreferensen här
   },
   {
@@ -27,8 +27,8 @@ export const projects = [
     title: "Third Project Title",
     description: "Description for the third project.",
     tags: ["React", "Node", "API"],
-    liveLink: "https://third-live-link.com",
-    codeLink: "https://github.com/third-repo",
+    liveLink: "https://malmo.se",
+    codeLink: "https://sydsvenskan.se/",
     image: Top3, // Lägg till bildreferensen här
   },
 ];

@@ -8,6 +8,7 @@ export const articles = [
     date: 'July 5th',
     title: 'How to stop being scared: Learning to love code',
     description: 'The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.',
+    articleLink: "https://dn.se/",
     image: Top3,
   },
   {
@@ -15,6 +16,7 @@ export const articles = [
     date: 'July 12th',
     title: 'How to stop being scared: Learning to love code',
     description: 'The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.',
+    articleLink: "https://expressen.se/",
     image: Top1,
   },
   {
@@ -22,6 +24,7 @@ export const articles = [
     date: 'July 15th',
     title: 'How to stop being scared: Learning to love code',
     description: 'The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.',
+    articleLink: "https://aftonbladet.se/",
     image: Top2,
   },
 ];

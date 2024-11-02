@@ -1,5 +1,8 @@
 import { Tag } from './Tag.jsx';
 import { articles } from './ArticlesArray.jsx';
+import { BtnArticle } from './buttons/ButtonArticle.jsx';
+
+import WEB from "../assets/Ic-Web.svg";
 
 import "./Articles.css";
 
@@ -18,7 +21,7 @@ export const Articles = () => {
               </div>
               <h3 className="article-title">{article.title}</h3>
               <p className="article-description">{article.description}</p>
-              <button className="read-article-btn">Read article</button>
+              <BtnArticle url={article.articleLink} text="Live Demo" img={WEB} />
             </div>
           </div>
         ))}

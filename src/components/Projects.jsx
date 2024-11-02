@@ -1,7 +1,9 @@
-import { BtnLive } from './buttons/ButtonLive.jsx';
-import { BtnCode } from './buttons/ButtonCode.jsx';
+import { BtnLink } from './buttons/ButtonLink.jsx';
 import { Tag } from './Tag.jsx';
 import { projects } from './ProjectsArray.jsx';
+import GH from "../assets/github2.svg";
+import WEB from "../assets/Ic-Web2.svg";
+
 import "./Projects.css";
 
 export const ProjectInfo = () => {
@@ -19,8 +21,8 @@ export const ProjectInfo = () => {
             <h3 className="project-title">{project.title}</h3>
             <p className="project-description">{project.description}</p>
             <div className="project-buttons">
-              <BtnLive link={project.liveLink} />
-              <BtnCode link={project.codeLink} />
+              <BtnLink url={project.liveLink} text="Live Demo" img={WEB} />
+              <BtnLink url={project.codeLink} text="View Code" img={GH} />
             </div>
           </div>
         </div>

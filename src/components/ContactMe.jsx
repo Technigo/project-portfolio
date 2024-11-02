@@ -1,6 +1,5 @@
 import { Grid } from "./ui/Grid";
 import NE from "../assets/NE-linkedin.jpg";
-import STO from "../assets/stackoverflow.svg";
 import GH from "../assets/github.svg";
 import LI from "../assets/linkedin.svg";
 
@@ -19,15 +18,12 @@ export const ContactInfo = () => {
             <p className="contact-email">nellax@me.com</p>
           </div>
           <div className="icons">
-            <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">
-              <img className="ic-web" alt="Stack Overflow" src={STO} />
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <button className="btn-icon" onClick={() => window.open("https://github.com", "_blank")}>
               <img className="ic-web" alt="GitHub" src={GH} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            </button>
+            <button className="btn-icon" onClick={() => window.open("https://linkedin.com", "_blank")}>
               <img className="ic-web" alt="LinkedIn" src={LI} />
-            </a>
+            </button>
           </div>
         </div>
       </div>
