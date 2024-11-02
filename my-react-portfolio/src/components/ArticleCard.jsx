@@ -7,21 +7,22 @@ export const ArticleCard = () => {
     <>
       {articles.articles.map((item) => (
         <div className="article-card" key={item.id}>
-          <img className="article-img" src={item.image} rel="article image" />d
-                
+          <img className="article-img" src={item.image} rel="article image" />
+          
           <div className="description">
+            <p className="date">October 28, 2024</p>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
-          </div>
             
-          <div className="buttons">
-            <Button
-              className="button"
-              source={item.global}
-              image="global"
-              text="Read article"
-              color="pink"
-            />
+            <div className="buttons">
+              <Button
+                className="button"
+                source={item.global}
+                image="global"
+                text="Read article"
+                color="pink"
+              />
+            </div>
           </div>
         </div>
       ))}

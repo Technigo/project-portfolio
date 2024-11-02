@@ -10,4 +10,5 @@ export const Articles = () => {
       </div>
     </section>    
   )
- }
+}
+ 
