@@ -1,4 +1,9 @@
 import "./contact.css";
+import LinkedIn from "../../assets/icon/Btn-linkedin.svg"
+import GitHub from "../../assets/icon/Btn-github.svg"
+import StackOverFlow from "../../assets/icon/Btn-stackoverflow.svg"
+import Twitter from "../../assets/icon/Btn-twitter.svg"
+import Instagram from "../../assets/icon/Btn-instagram.svg"
 
 export const Contact = () => { 
   return (
@@ -14,13 +19,15 @@ export const Contact = () => {
         </div>
         
         <div className="socialmedia">
-          <img src="./Btn-linkedin.png" alt="LinkedIn"></img>
-            <img src="./Btn-github.png" alt="GitHub"></img>
-            <img
-              src="./Btn-stackoverflow.png"
-              alt="StackOverflow"
-            ></img>
-      </div>
+          <img src={LinkedIn} alt="LinkedIn"></img>
+          <img src={GitHub} alt="GitHub"></img>
+          <img src={StackOverFlow} alt="StackOverflow"
+          ></img>
+          <img src={Twitter} alt="Twitter"
+          ></img>
+          <img src={Instagram} alt="Instagram"
+          ></img>
+        </div>
       </div>
     </section>
   )
