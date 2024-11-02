@@ -4,13 +4,13 @@ import "./css/ProjectBox.css"
 import Button from "./Button";
 
 
-const ArticleBox = ({ title, description, image, articleUrl }) => {
+const ArticleBox = ({ title, description, image, buttonUrl }) => {
     return (
         
             <article className="project-box">
                 <BoxImage image={image} />
                 <BoxText title={title} description={description} />
-                <Button articleUrl={articleUrl} />
+                <Button text="Read More" url={buttonUrl} className="secondary-btn" />
             </article>
     );
 };

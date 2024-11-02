@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import skillsData from "./skills.json";
 import ProjectBox from "./components/ProjectBox";
 import projectsData from "./projects.json";
+import ArticleBox from "./components/ArticleBox";
 
 console.log(projectsData);
 
@@ -16,7 +17,8 @@ const App = () => {
     <>
       <Header />
       <Skills skillsData={skillsData} />
-      <section className="projects-section">
+      {/* projects */}
+      {<section className="projects-section">
         <h2>Featured Projects</h2>
         <article className="project-box-grid">
           {projectsData.projects.map((project, index) => (
@@ -29,6 +31,21 @@ const App = () => {
             codeUrl={project.github}
             />
           ))}
+        </article>
+      </section>}
+      {/* articles */}
+      <section className="projects-section">
+        <h2>Articles</h2>
+        <article className="project-box-grid">
+        {projectsData.projects.map((art, i) => (
+            <ArticleBox
+            key={i}
+            title={art.name}
+            description={art.description}
+            image={art.image}
+            buttonUrl={art.buttonUrl}
+            />
+        ))}
         </article>
       </section>
     </>

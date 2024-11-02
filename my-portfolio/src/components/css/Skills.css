@@ -15,7 +15,7 @@
 
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .skills-flex-boxes {
@@ -47,4 +47,16 @@
 .skills-flex-boxes:not(:last-child) {
     border-right: 2px solid var(--orange);
     padding-right: 1rem;
+}
+
+@media screen and (max-width: 776px) {
+    .skills-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .skills-flex-boxes:not(:last-child) {
+        border-bottom: 2px solid var(--orange);
+        padding-bottom: 1rem;
+        border-right: none;
+    }
 }
