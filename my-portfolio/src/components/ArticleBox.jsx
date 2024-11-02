@@ -10,7 +10,9 @@ const ArticleBox = ({ title, description, image, buttonUrl }) => {
             <article className="project-box">
                 <BoxImage image={image} />
                 <BoxText title={title} description={description} />
-                <Button text="Read More" url={buttonUrl} className="secondary-btn" />
+                <div className="div-button">
+                    <Button text="Read More" url={buttonUrl} className="secondary-btn" />
+                </div>
             </article>
     );
 };

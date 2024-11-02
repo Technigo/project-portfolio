@@ -3,11 +3,13 @@ import "./App.css";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import skillsData from "./skills.json";
+import techData from "./tech.json"
 import ProjectBox from "./components/ProjectBox";
 import projectsData from "./projects.json";
 import ArticleBox from "./components/ArticleBox";
+import TechStack from "./components/Tech";
 
-console.log(projectsData);
+
 
 const App = () => {
 
@@ -17,6 +19,7 @@ const App = () => {
     <>
       <Header />
       <Skills skillsData={skillsData} />
+      
       {/* projects */}
       {<section className="projects-section">
         <h2>Featured Projects</h2>
@@ -33,6 +36,9 @@ const App = () => {
           ))}
         </article>
       </section>}
+
+      <TechStack techData={techData} />
+
       {/* articles */}
       <section className="projects-section">
         <h2>Articles</h2>
