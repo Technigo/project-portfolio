@@ -1,7 +1,9 @@
 import './Tag.css'
 
-export const Tag = ({ text }) => {
+export const Tag = ({ text, variant, className }) => {
+  const classNames = `tag ${variant || ''} ${className} || ''}`.trim()
+
   return (
-    <span className="tag">{text}</span>
+    <span className={classNames}>{text}</span>
   )
 }
