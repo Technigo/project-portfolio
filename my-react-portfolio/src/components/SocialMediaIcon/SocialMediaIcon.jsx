@@ -1,3 +1,5 @@
+import './SocialMediaIcon.css'
+
 export const SocialMediaIcon = ({ link, icon, altText, ariaLabel }) => {
 
   return (
