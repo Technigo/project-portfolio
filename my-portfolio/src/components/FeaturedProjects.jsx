@@ -18,14 +18,12 @@ const FeaturedProjects = () => {
       })
       .then((data) => {
         if (data && data.projects) {
-          console.log("Fetched projects:", data.projects); // Log fetched data
           setProjects(data.projects);
         } else {
           throw new Error("Invalid data format");
         }
       })
       .catch((error) => {
-        console.error("Error:", error);
         setError(error.message);
       });
   }, []);
