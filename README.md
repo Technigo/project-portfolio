@@ -18,7 +18,7 @@ I stumbled on some design issues. For instance, manipulating the images in the h
 
 ## Next Steps
 
-I would love to tackle some of the stretch goals, like adding a favicon and creating a custom domain name. Creating placeholder articles also got me inspired to write the articles for real 😅
+I would love to tackle some of the stretch goals, like adding a favicon and creating a custom domain name. I would also create functionality for the "See more projects" button to display more than 4 projects. Creating placeholder articles also got me inspired to write the articles for real 😅
 
 ## View it Live
 https://joyce-kuo-portfolio.netlify.app/
