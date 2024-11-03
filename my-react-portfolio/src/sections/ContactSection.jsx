@@ -16,7 +16,7 @@ export const ContactSection = () => {
         <SectionTitle>Let&#39;s Talk</SectionTitle>
         <div className="contact-container">
           <div className="contact-photo-container">
-            <img className="contact-photo" src={PortfolioPic} alt="photo of Joyce Kuo" />
+            <img className="contact-photo" src={PortfolioPic} alt="headshot of Joyce Kuo" />
           </div>
           <div className="contact-info">
             <p>Joyce Kuo</p>

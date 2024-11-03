@@ -4,49 +4,21 @@
   </a>
 </h1>
 
-# Technigo - React Portfolio Project
+# Joyce Kuo - React Portfolio Project
 
-Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
+In this project, I use React to build a portfolio website with a responsive Figma design to follow. 
 
-In this project, I use React to build a portfolio website.
+## The Process
 
-## Instructions
-[Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
+Throughout the development of this project, I adopted a component-driven approach. I began by outlining the overall structure and making sure I knew how all the elements were related. 
 
-## Set up your own version of your portfolio
+As I designed each component, I focused on maintaining the design and referring back to Figma frequently, and paying special attention to responsive layouts.  Incorporating data from JSON files made it easy to update and edit data without disrupting the design.
 
-We will use [Vite](https://vitejs.dev/guide/) to setup our project 😉
+I stumbled on some design issues. For instance, manipulating the images in the hero section so that they were layered correctly and looked good in all layouts was especially tricky. I used mostly rubber ducking, trial and error, and ChatGPT to help me resolve design issues. 
 
-```bash
-  npm create vite@latest my-react-portfolio --template
-```
+## Next Steps
 
-#### Follow this GIF to setup your project
+I would love to tackle some of the stretch goals, like adding a favicon and creating a custom domain name. Creating placeholder articles got me inspired to write the articles for real 😅
 
-![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WEB/Sprint-2/week-8/vite-react_vjp0ep.gif)
-
-## Installation
-
-Use the `cd` command to move into the folder
-
-```bash
-  cd my-react-portfolio
-```
-
-Install the dependencies
-
-```bash
-  npm i
-```
-
-Open the project in a separate VS Code editor
-
-```bash
-  code .
-```
-
-Open up a terminal inside VS code and lets run the project in a local environment
-
-```bash
-  npm run dev
-```
+## View it Live
+https://joyce-kuo-portfolio.netlify.app/
