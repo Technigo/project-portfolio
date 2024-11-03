@@ -17,19 +17,19 @@ export const Skill = () => {
               JavaScript ES6<br />
               React<br />
               Styled Components<br />
-              GitHub
+              Responsive Design<br />
+              Accessibility
             </div>
           </div>
 
           <div className="skills-section">
             <Tag text="Toolbox" />
             <div className="skills-section-content">
-              Atom<br />
+              Visual Studio Code<br />
+              Git<br />
+              Github<br />
               Postman<br />
-              Adobe Photoshop<br />
-              Adobe Illustrator<br />
               Figma<br />
-              Keynote<br />
               Slack
             </div>
           </div>
@@ -37,6 +37,7 @@ export const Skill = () => {
           <div className="skills-section">
             <Tag text="Upcoming" />
             <div className="skills-section-content">
+              TypeScript<br />
               Node.js
             </div>
           </div>
@@ -44,11 +45,11 @@ export const Skill = () => {
           <div className="skills-section">
             <Tag text="More" />
             <div className="skills-section-content">
-              Branding<br />
-              Strategy<br />
-              Process Design<br />
-              Concept Development<br />
-              Agile methodology
+              Problem Solving<br />
+              Learning Agility<br />
+              Design<br />
+              Collaboration<br />
+              Communication<br />
             </div>
           </div>
         </div>
