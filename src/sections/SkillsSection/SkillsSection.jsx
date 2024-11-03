@@ -14,16 +14,16 @@ export const SkillsSection = () => {
         <div className="skills-container">
           <SkillsCard
             header="Code"
-            body={["HTML5", "CSS3", "JavaScrip", "React", "Styled Components", "GitHub"]} />
+            body={["HTML5", "CSS3", "JavaScrip", "React", "GitHub"]} />
           <SkillsCard
             header="Toolbox"
-            body={["Atom", "Postman", "Figma", "Slack", "Adobe Photoshop"]} />
+            body={["Postman", "Figma", "Slack"]} />
           <SkillsCard
             header="Upcoming"
             body={["Node.js"]} />
           <SkillsCard
             header="More"
-            body={["Concept", "Development", "Agile Methodology"]} />
+            body={["Concept", "Development"]} />
         </div>
       </section>
     </Grid>
