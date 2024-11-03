@@ -7,12 +7,14 @@ export const FooterCard = () => {
   return (
     <div className="footer-card">
       <FooterImage />
-      <HeaderTwo>
-        Let's talk
-      </HeaderTwo>
-      <Body>Gitte Beckmann</Body>
-      <Body>+46(0)721 70 43 58</Body>
-      <Body> gittebeckmann@hotmail.com</Body>
+      <div className="footer-text-container">
+        <HeaderTwo>
+          Let's talk
+        </HeaderTwo>
+        <Body>Gitte Beckmann</Body>
+        <Body>+46(0)721 70 43 58</Body>
+        <Body> gittebeckmann@hotmail.com</Body>
+      </div>
       <div className="media-button-div">
         <MediaButtonContainer />
       </div>

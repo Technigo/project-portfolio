@@ -10,6 +10,7 @@ export const SkillsSection = () => {
                 <HeaderTwo>
                     Skills
                 </HeaderTwo>
+                <div className="spacer-one"></div>
                 <SkillsCard
                     header="Code"
                     body={["HTML5", "CSS3", "JavaScrip", "React", "Styled Components", "GitHub"]} />
