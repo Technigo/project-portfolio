@@ -2,11 +2,8 @@ import { HeaderTwo } from "../../ui/Typography/Typography";
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 import "./ProjectsSection.css"
 
-import "./ProjectsSection.css"
-
 export const ProjectsSection = () => {
   return (
-
     <section className="projects-section">
       <HeaderTwo>
         Featured Projects

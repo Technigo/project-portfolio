@@ -7,14 +7,14 @@ export const HeaderTwo = ({ children }) => <h2 className="header-two">{children}
 export const Body = ({ children }) => <p className='body'>{children}</p>
 
 HeaderTwo.propTypes = {
-    children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 }
 HeaderOne.propTypes = {
-    children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 }
 HeaderThree.propTypes = {
-    children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 }
 Body.propTypes = {
-    children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 }
