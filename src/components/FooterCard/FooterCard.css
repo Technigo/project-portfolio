@@ -1,5 +1,7 @@
 .footer-card {
-    grid: span 4;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -18,4 +20,16 @@
 
 .spacer {
     height: 2rem;
+}
+
+@media(min-width: 667px) {
+    .footer-card {
+        grid-column: span 8;
+    }
+}
+
+@media(min-width: 1024px) {
+    .footer-card {
+        grid-column: span 12;
+    }
 }
