@@ -1,6 +1,7 @@
 import { Heading } from "../ui/Heading";
 import skillsData from "../data/skills.json";
 import "./Skills.css";
+import "../ui/Tag.css"
 
 export const Skills = () => {
   return (
@@ -9,7 +10,7 @@ export const Skills = () => {
       <div className="skills-list">
         {skillsData.skills.map((skillItem, index) => (
           <div key={index} className="skill-item">
-            <button className="skills-tag-button">
+            <button className="tag-button">
               {skillItem.skill}
             </button>
             <ul className="sub-skills">

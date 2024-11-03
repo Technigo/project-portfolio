@@ -23,27 +23,22 @@
 .skills-list {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 8rem;
   /* Allows items to wrap to the next row */
 }
 
 .skill-item {
   flex: 1;
   /* Adjusts to fill available space */
-  margin: 1rem;
+  margin: 0.5rem;
   /* Space between skill items */
   text-align: center;
   /* Centers the text */
-}
-
-.skills-tag-button {
   display: flex;
-  width: 18rem;
-  height: 3rem;
-  padding: 0rem 1rem;
-  align-items: center;
-  gap: 1rem;
-  border-radius: 0.75rem;
-  background: #000;
+  flex-direction: column;
+  /* Stack the button and list vertically */
+  align-items: flex-start;
+  /* Align items to the start (left) */
 }
 
 .sub-skills {
@@ -52,9 +47,9 @@
   /* Stacks sub-skills vertically */
   margin-top: 0.5rem;
   /* Space between button and sub-skills */
-  align-items: center;
   list-style-type: none;
   /* Removes the bullets */
+  text-align: left;
 }
 
 .sub-skill {

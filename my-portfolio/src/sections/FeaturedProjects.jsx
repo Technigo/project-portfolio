@@ -2,6 +2,7 @@ import { Heading } from "../ui/Heading";
 import { ProjectCard } from "../ui/ProjectCard"
 import projectsData from "../data/projects.json"
 import "./FeaturedProjects.css";
+import "../ui/Tag.css"
 
 export const FeaturedProjects = () => {
   return (

@@ -1,4 +1,4 @@
-.project-card {
+.article-card {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -15,14 +15,19 @@
   /* Ensure padding is included in width */
 }
 
-.project-image {
+.article-image {
   width: 29.9375rem;
   height: auto;
   border-radius: 0.75rem;
 }
 
+.article-content {
+  color: #FFF;
+  padding-bottom: 8rem;
+}
+
 @media (max-width: 768px) {
-  .project-card {
+  .article-card {
     flex-direction: column;
     /* Stack on smaller screens */
     align-items: center;
@@ -33,7 +38,7 @@
     /* Optional: Remove padding from the project card */
   }
 
-  .project-image {
+  .article-image {
     width: 100%;
     /* Make the image responsive */
     height: auto;
@@ -44,8 +49,7 @@
     /* Ensure padding is zero */
   }
 
-  .project-content {
-    padding: 1rem;
-    /* Adjust content padding as needed */
+  .article-content {
+    padding-bottom: 8rem;
   }
 }

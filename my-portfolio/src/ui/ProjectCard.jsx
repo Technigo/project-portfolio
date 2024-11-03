@@ -12,6 +12,8 @@ export const ProjectCard = ({
   description,
   button1Link,
   button2Link,
+  isArticle = false, // New prop to indicate if it's an article
+  button1Text = "Live Demo", // Default text
 }) => {
   return (
     <div className="project-card">
@@ -19,7 +21,7 @@ export const ProjectCard = ({
       <div className="project-content">
         <div className="tags">
           {tags.map((tag, index) => (
-            <button key={index} className="project-tag-button">
+            <button key={index} className="tag-button">
               {tag}
             </button>
           ))}
@@ -29,16 +31,26 @@ export const ProjectCard = ({
           <Heading heading={title} level={3} className="project-title" />
           <p className="project-description">{description}</p>
           <div className="buttons">
-            <Button
-              text="Live Demo"
-              onClick={() => window.open(button1Link, "_blank")}
-              icon={webIcon} // This should be the web icon for "Live Demo"
-            />
-            <Button
-              text="View Code"
-              onClick={() => window.open(button2Link, "_blank")}
-              icon={gitHubIcon} // This should be the GitHub icon for "View Code"
-            />
+            {isArticle ? (
+              <Button
+                text="Read Article"
+                onClick={() => window.open(button1Link, "_blank")}
+                styleType="white" // Apply white style for articles
+              />
+            ) : (
+              <>
+                <Button
+                  text={button1Text}
+                  onClick={() => window.open(button1Link, "_blank")}
+                  icon={webIcon} // Web icon for "Live Demo"
+                />
+                <Button
+                  text="View Code"
+                  onClick={() => window.open(button2Link, "_blank")}
+                  icon={gitHubIcon} // GitHub icon for "View Code"
+                />
+              </>
+            )}
           </div>
         </div>
       </div>

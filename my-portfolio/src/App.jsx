@@ -4,6 +4,8 @@ import { Bio } from "./sections/Bio"
 import { FeaturedProjects } from "./sections/FeaturedProjects"
 import { Tech } from "./sections/Tech"
 import { Skills } from "./sections/Skills"
+import { Words } from "./sections/Words"
+import { Contact } from "./sections/Contact"
 import "./App.css"
 
 
@@ -15,9 +17,9 @@ export const App = () => {
       <Bio />
       <FeaturedProjects />
       <Tech />
-      <Skills /></>
-    // <Words />
-    // <Contact/>
+      <Skills />
+      <Words />
+      <Contact /></>
   )
 }
 
