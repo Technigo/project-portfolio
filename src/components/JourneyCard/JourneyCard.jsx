@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { ProjectButton } from "../../ui/ProjectButton/ProjectButton"
 import { HeaderThree } from "../../ui/Typography/Typography"
 import { CardImage } from "../../ui/CardImage/CardImage"
-import journeyData from "../../../journey.json"
+import journeyData from "../../../src/journey.json"
 import "./JourneyCard.css"
 
 export const JourneyCard = () => {
