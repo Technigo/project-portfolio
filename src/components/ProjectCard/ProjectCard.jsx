@@ -3,7 +3,7 @@ import { CardImage } from "../../ui/CardImage/CardImage"
 import { ProjectButton } from "../../ui/ProjectButton/ProjectButton"
 import { HeaderThree } from "../../ui/Typography/Typography"
 import "./ProjectCard.css"
-import projectData from "./../../json/projects.json"
+import projectData from "../../../projects.json"
 
 export const ProjectCard = () => {
   const [projects, setProjects] = useState([])
