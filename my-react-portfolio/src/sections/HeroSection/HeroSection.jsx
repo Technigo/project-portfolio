@@ -1,6 +1,6 @@
 import './HeroSection.css'; 
 import scrollArrow from '../../assets/Arrow.svg';
-import SectionTitle from '../../ui/SectionTitle';
+// import SectionTitle from '../../ui/SectionTitle';
 
 const HeroSection = ({ name, title, description, imageSrc }) => {
   return (
@@ -8,7 +8,7 @@ const HeroSection = ({ name, title, description, imageSrc }) => {
       <div className="hero-section">
         <div className="hero-content">
           <h1>Hi, I’m {name}</h1>
-          <SectionTitle color="#0041ff">{title}</SectionTitle>
+          <h2 color="#0041ff">{title}</h2>
           <div className="hero-description">
             <img src={imageSrc} alt={`${name}'s photo`} className="hero-image" />
             <p>{description}</p>

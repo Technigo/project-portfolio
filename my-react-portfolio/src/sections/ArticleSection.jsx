@@ -1,21 +1,18 @@
-import { Grid } from "../ui/Grid"
-import { Card } from "../components/Card"
-import SectionTitle from '../../ui/SectionTitle';
+import { Grid } from "../ui/Grid";
+import { Card } from "../components/Card";
 
 
 export const ArticleSection = () => {
     return (
-<Grid background="pink">
-<SectionTitle color="#ff1493"> My articles </SectionTitle>
-    <Card
-    // imageSource={}
-    borderColor="pink"
-    cardTitle="This is article version on the card"
-    cardDescription="This is article description"
-    sectionType="article"
-    
-    
-    />
-</Grid>
-    )
-}
+        <Grid background="pink">
+            <h2 color="#ff1493"> My articles </h2>
+            <Card
+                // imageSource={}  // Uncomment and provide a source if needed
+                borderColor="pink"
+                cardTitle="This is article version on the card"
+                cardDescription="This is article description"
+                sectionType="article"
+            />
+        </Grid>
+    );
+};
