@@ -24,7 +24,7 @@ export const Footer = () => {
             <Heading level={4} text={"+46(0)762 704 816"} />
           </a>
           <a href="mailto:zoe.lindqvist@gmail.com">
-            <Heading level={4} text={"zoe.lindqvist\n@gmail.com"} />
+            <Heading level={4} text={"zoe.lindqvist@gmail.com"} />
           </a>
         </div>
         <div className="icons">

@@ -9,7 +9,7 @@ import { Paragraph } from "/src/components/typography/Paragraph.jsx";
 import { Button } from "/src/components/button/Button.jsx";
 
 export const ProjectCard = ({ repositories }) => {
-  // State to track the number of cards to display
+  // State to track the number of cards currently visible
   const [visibleCards, setVisibleCards] = useState(5);
 
   // Filter and match repositories with data in repoData.projects
@@ -19,17 +19,20 @@ export const ProjectCard = ({ repositories }) => {
 
   // Sort the filtered repositories by their id (highest first)
   filteredRepos.sort((a, b) => {
+    // Find the corresponding data for each repository in repoData
     const aData = repoData.projects.find((data) => data.repoName === a.name);
     const bData = repoData.projects.find((data) => data.repoName === b.name);
-    return bData.id - aData.id;
+    return bData.id - aData.id; // Sort from highest ID to lowest
   });
 
+  // Function to toggle the number of visible cards between 5 and all
   const toggleVisibleCards = () => {
     setVisibleCards((prevVisibleCards) =>
       prevVisibleCards === 5 ? filteredRepos.length : 5
     );
   };
 
+  // Determine the button label based on the current visibleCards state
   const showMoreLessLabel = visibleCards === 5 ? "Show More" : "Show Less";
 
   return (

@@ -8,8 +8,10 @@ const introText =
 
 export const Header = () => {
   return (
+    // The main header element with a tabIndex for accessibility
     <header tabIndex="0">
       <section className="introduction">
+        {/* Image component to display profile pic */}
         <Image
           sectionClassName={"profile-img"}
           elementClassName={"circle-img"}
@@ -17,8 +19,9 @@ export const Header = () => {
           ImageAltText={"Profile Image of Zoe"}
         />
         <section className="headings">
+          {/* First heading element with greeting message */}
           <Heading
-            level={4}
+            level={4} //renders as <h4>
             text="Hi, I'm Zoe Lindqvist"
             aria-label="Developer greeting"
             className="header-h4"
@@ -31,6 +34,7 @@ export const Header = () => {
           />
         </section>
         <section className="intro-text">
+          {/* Paragraph component to display the introduction text */}
           <Paragraph text={introText} />
         </section>
       </section>

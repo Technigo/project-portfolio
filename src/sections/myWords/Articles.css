@@ -1,3 +1,9 @@
+/*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
 .article-container {
   display: flex;
   flex-direction: column;
@@ -5,7 +11,7 @@
   background-color: var(--light-secondary);
   color: var(--text);
   padding: 128px 16px;
-  /* gap: 64px; */
+  gap: 64px;
   position: relative;
 }
 
@@ -16,7 +22,7 @@
   left: 0;
   width: 100%;
   height: 20px; /* Adjust the height of the line */
-  background-image: url("/assets/divider.svg");
+  background-image: url("/assets/divider.svg"); /* Use your SVG file path */
   background-repeat: repeat-x; /* Repeat the image along the x-axis */
   z-index: 1; /* Place infront of the article content */
 }
@@ -31,7 +37,6 @@
 
 .article-img-container {
   height: 200px;
-  width: 100%;
   /* Limit the container width to its parent */
   overflow: hidden;
   /* Hide any content that goes beyond the container */
@@ -41,7 +46,6 @@
 .article-list {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 64px;
   max-width: 100%;
 }
@@ -59,7 +63,7 @@
 }
 
 /* ------------ MEDIA QUERIES ------------ */
-/* ------------ Tablet only ------------ */
+/* ------------ Tablet ------------ */
 @media (max-width: 1279px) and (min-width: 744px) {
   .article-container {
     padding: 128px 32px;
@@ -73,12 +77,11 @@
   .article-img-container {
     height: 340px;
     align-self: stretch;
-    border-bottom: 20px solid var(--secondary);
   }
 }
 
-/* ------------ Desktop only ------------ */
-@media (min-width: 2250px) {
+/* ------------ Desktop------------ */
+@media (min-width: 1280px) {
   .article-container {
     padding: 128px auto;
     /* Set the padding to "auto" to center the container horizontally */
@@ -88,7 +91,6 @@
     flex-direction: column;
     /* Stack the heading and article-list vertically */
     align-items: center;
-    /* Center items horizontally within the container */
   }
 
   .article-heading {
@@ -108,7 +110,7 @@
   .article-img-container {
     height: 460px;
     align-self: stretch;
-    border-bottom: 20px solid var(--secondary);
+    border-bottom: none; /* Remove the pink line border on mobile */
   }
 }
 
@@ -117,27 +119,38 @@
   .article-img-container {
     height: 564px;
     align-self: stretch;
-    border-bottom: 20px solid var(--secondary);
   }
 }
-/* Extra small screens (below 395px) */
-@media (max-width: 375px) {
-  .article-img-container {
-    border-bottom: none; /* Hide the pink border on small screens */
+
+/* Small Mobile (376px and below) */
+@media (max-width: 376px) {
+  .article-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
   }
-}
-/* Media query for larger screens to show two columns */
-@media (min-width: 768px) {
+
+  .article-heading {
+    text-align: center;
+  }
+
   .article-list {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Switch to two columns on larger screens */
-    gap: 32px;
-    max-width: 1200px;
-    margin: 0 auto; /* Center the grid within the container */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
   }
+
   .article-img-container {
-    border-bottom: none; /* Hide the pink border on small screens */
+    height: 200px;
+    align-self: stretch;
+    border-bottom: none; /* Remove the pink line border on mobile */
+  }
+
+  .article-img-container img {
+    max-width: 100%;
+    display: block;
   }
 }

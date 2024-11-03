@@ -17,7 +17,7 @@ export const Button = ({
     <button
       className={`button ${className || ""}`}
       onClick={onClick || handleClick}
-      aria-label={ariaLabel || label} // Allow custom aria-label
+      aria-label={ariaLabel || label}
     >
       <img
         src={icon}
