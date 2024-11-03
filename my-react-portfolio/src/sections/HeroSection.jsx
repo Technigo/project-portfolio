@@ -1,5 +1,7 @@
 import './HeroSection.css'; 
 import scrollArrow from '../assets/Arrow.svg';
+import imageSrc from '../assets/Cholpon.png'; 
+
 
 const HeroSection = ({ name, title, description, imageSrc }) => {
   return (
