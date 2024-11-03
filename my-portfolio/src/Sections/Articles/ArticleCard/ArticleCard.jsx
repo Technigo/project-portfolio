@@ -25,7 +25,9 @@ export const ArticleCard = ({
 
         <CardContent description={content} />
 
-        <CardButton url={url} btnText="Read Article" />
+        <div className="card-btn-container">
+          <CardButton url={url} btnText="Read Article" />
+        </div>
       </div>
     </article>
   );
