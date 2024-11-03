@@ -3,7 +3,7 @@ import { H2, P } from "./Typography"
 
 const Contact = () => {
     return (
-        <section>
+        <section className="section-header-info">
             <article>
                 <H2>Let's talk</H2>
                 <P>Erika Olsson</P>
