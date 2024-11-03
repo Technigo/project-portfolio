@@ -10,13 +10,13 @@ export const ImageSection = () => {
     <Grid background="black" >
       <section className="image-section">
         <div className="image-card left-image">
-          <img src={displayProjects[1].image} alt={displayProjects[1].name} />
+          <img src={displayProjects[1].image} alt={`Image of ${displayProjects[1].name}`} />
         </div>
         <div className="image-card center-image">
-          <img src={displayProjects[0].image} alt={displayProjects[0].name} />
+          <img src={displayProjects[0].image} alt={`Image of ${displayProjects[0].name}`} />
         </div>
         <div className="image-card right-image">
-          <img src={displayProjects[2].image} alt={displayProjects[2].name} />
+          <img src={displayProjects[2].image} alt={`Image of ${displayProjects[2].name}`} />
         </div>
       </section>
     </Grid >

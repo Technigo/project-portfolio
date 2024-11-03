@@ -1,5 +1,5 @@
-import './SkillCard.css'
 import { Tag } from '../Tag/Tag'
+import './SkillCard.css'
 
 export const SkillCard = ({ title, skills }) => {
   return (

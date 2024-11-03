@@ -1,13 +1,19 @@
+// Assets
+import PortfolioPic from '../assets/portfolio-pic.jpg'
 import LinkedInBtn from '../assets/linkedin-btn.svg'
 import GithubBtn from '../assets/github-btn.svg'
 import StackoverflowBtn from '../assets/stackoverflow-btn.svg'
-import TwitterBtn from '../assets/twitter-btn.svg'
 import InstagramBtn from '../assets/instagram-btn.svg'
+
+// Components
+import { SocialMediaIcon } from '../components/SocialMediaIcon/SocialMediaIcon'
+
+// UI elements
 import { Grid } from '../ui/Grid/Grid'
 import { SectionTitle } from '../ui/Typography/Typography'
+
+// Styles
 import './ContactSection.css'
-import PortfolioPic from '../assets/portfolio-pic.jpg'
-import { SocialMediaIcon } from '../components/SocialMediaIcon/SocialMediaIcon'
 
 export const ContactSection = () => {
   return (
@@ -43,13 +49,7 @@ export const ContactSection = () => {
               ariaLabel="Visit Stack Overflow profile (opens in a new window)"
             />
             <SocialMediaIcon
-              link="https://stackoverflowteams.com/c/technigo/users/646/?tab=profile"
-              icon={TwitterBtn}
-              altText="Twitter profile"
-              ariaLabel="Visit Twitter profile (opens in a new window)"
-            />
-            <SocialMediaIcon
-              link="https://stackoverflowteams.com/c/technigo/users/646/?tab=profile"
+              link="https://www.instagram.com/statiskuo/"
               icon={InstagramBtn}
               altText="Instagram profile"
               ariaLabel="Visit Instagram profile (opens in a new window)"

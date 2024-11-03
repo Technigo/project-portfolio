@@ -1,7 +1,7 @@
-import { Grid } from '../ui/Grid/Grid'
-import { SectionTitle } from '../ui/Typography/Typography'
 import { Card } from '../components/Card/Card'
 import { ArrowButton } from '../components/ArrowButton/ArrowButton'
+import { Grid } from '../ui/Grid/Grid'
+import { SectionTitle } from '../ui/Typography/Typography'
 import data from '../../../projects.json'
 import './ProjectSection.css'
 

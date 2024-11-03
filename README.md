@@ -12,13 +12,13 @@ In this project, I use React to build a portfolio website with a responsive Figm
 
 Throughout the development of this project, I adopted a component-driven approach. I began by outlining the overall structure and making sure I knew how all the elements were related. 
 
-As I designed each component, I focused on maintaining the design and referring back to Figma frequently, and paying special attention to responsive layouts.  Incorporating data from JSON files made it easy to update and edit data without disrupting the design.
+As I created each component, I focused on maintaining the design and referring back to Figma frequently, and paying special attention to responsive layouts. All of my section files had a corresponding CSS file so that I could apply styling unique to each section. Incorporating data from JSON files made it easy to update and edit data without disrupting the design.
 
 I stumbled on some design issues. For instance, manipulating the images in the hero section so that they were layered correctly and looked good in all layouts was especially tricky. I used mostly rubber ducking, trial and error, and ChatGPT to help me resolve design issues. 
 
 ## Next Steps
 
-I would love to tackle some of the stretch goals, like adding a favicon and creating a custom domain name. Creating placeholder articles got me inspired to write the articles for real 😅
+I would love to tackle some of the stretch goals, like adding a favicon and creating a custom domain name. Creating placeholder articles also got me inspired to write the articles for real 😅
 
 ## View it Live
 https://joyce-kuo-portfolio.netlify.app/

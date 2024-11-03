@@ -1,9 +1,9 @@
-import './Card.css';
-import '../../ui/Typography/Typography'
-import { Tag } from '../Tag/Tag'
-import { Button } from '../Button/Button'
 import webIcon from '../../assets/web-icon.svg'
 import githubIcon from '../../assets/github-icon.svg'
+import { Tag } from '../Tag/Tag'
+import { Button } from '../Button/Button'
+import '../../ui/Typography/Typography'
+import './Card.css';
 
 export const Card = ({ image, title, description, tags, netlifyLink, githubLink, reverse }) => {
   return (
@@ -22,8 +22,8 @@ export const Card = ({ image, title, description, tags, netlifyLink, githubLink,
         <p className="card-description">
           {description}</p>
         <footer className="card-buttons">
-          <Button link={netlifyLink} text="Live demo" icon={webIcon} variant="white-on-black" />
-          <Button link={githubLink} text="View code" icon={githubIcon} variant="white-on-black" />
+          <Button link={netlifyLink} text="Live demo" icon={webIcon} variant="white-on-black" aria-label={`View live demo for ${title}`} />
+          <Button link={githubLink} text="View code" icon={githubIcon} variant="white-on-black" aria-label={`View code for ${title}`} />
         </footer>
       </div>
     </article>

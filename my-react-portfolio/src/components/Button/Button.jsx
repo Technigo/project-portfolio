@@ -5,8 +5,8 @@ export const Button = ({ link, text, icon, variant }) => {
   const iconClass = variant === 'white-on-black' ? 'button-icon inverted' : 'button-icon'
 
   return (
-    <a href={link} className={buttonClass} target="_blank" rel="noopener noreferrer">
-      {icon && <img src={icon} alt="Icon" className={iconClass} />}
+    <a href={link} className={buttonClass} target="_blank" rel="noopener noreferrer" aria-label={text}>
+      {icon && <img src={icon} alt={`${text} icon`} className={iconClass} />}
       {text}
     </a>
   )
