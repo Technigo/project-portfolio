@@ -6,11 +6,11 @@ import "./FooterCard.css"
 export const FooterCard = () => {
   return (
     <div className="footer-card">
-      <FooterImage />
       <div className="footer-text-container">
         <HeaderTwo>
           Let's talk
         </HeaderTwo>
+        <div className="spacer"></div>
         <Body>Gitte Beckmann</Body>
         <Body>+46(0)721 70 43 58</Body>
         <Body> gittebeckmann@hotmail.com</Body>
