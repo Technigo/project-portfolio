@@ -1,12 +1,11 @@
 import { Grid } from "../ui/Grid/Grid"
 import { SectionTitle } from "../ui/Typography/Typography"
-import './ArticleSection.css'
-import data from '../../../articles.json'
 import { ArticleCard } from "../components/ArticleCard/ArticleCard"
+import data from '../../../articles.json'
+import './ArticleSection.css'
 
 export const ArticleSection = () => {
   const articles = data.articles
-  console.log(articles)
 
   return (
     <Grid background="black">
@@ -28,11 +27,3 @@ export const ArticleSection = () => {
     </Grid>
   )
 }
-
-// import { Grid } from '../ui/Grid/Grid'
-// import { SectionTitle } from '../ui/Typography/Typography'
-// import { Card } from '../components/Card/Card'
-// import { ArrowButton } from '../components/ArrowButton/ArrowButton'
-// import data from '../../../projects.json'
-// import './ProjectSection.css'
-

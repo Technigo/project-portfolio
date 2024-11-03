@@ -4,17 +4,15 @@ import './TechSection.css'
 
 export const TechSection = () => {
   return (
-    <div className="full-width-background">
-      <Grid background="black">
-        <section className="tech-section">
-          <div className="text-container">
-            <SectionTitle>Tech</SectionTitle>
-            <BodyText>
-              HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js,  Mongo DB, Web Accessibility, APIs, mob-programming, pair-programming, GitHub.
-            </BodyText>
-          </div>
-        </section>
-      </Grid>
-    </div>
+    <Grid background="black">
+      <section className="tech-section">
+        <div className="text-container">
+          <SectionTitle>Tech</SectionTitle>
+          <BodyText>
+            HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js,  Mongo DB, Web Accessibility, APIs, mob-programming, pair-programming, GitHub.
+          </BodyText>
+        </div>
+      </section>
+    </Grid>
   )
 }
