@@ -14,11 +14,11 @@ This portfolio is built using Vite as a framework, with React as the core librar
 
 ## Solutions
 
-_Component-Based Structure:_ I broke the design into reusable components (e.g., Button, Tag, Header, Footer) for better maintainability. Each component is isolated, allowing me to adjust or reuse them across different sections without duplicating code.
+**Component-Based Structure:** I broke the design into reusable components (e.g., Button, Tag, Header, Footer) for better maintainability. Each component is isolated, allowing me to adjust or reuse them across different sections without duplicating code.
 
-_Modular Layouts:_ I separated layout-specific components (e.g., Hero, Projects, Articles) into a layout folder, keeping the structure clear and making it easy to locate each section of the site.
+**Modular Layouts:** I separated layout-specific components (e.g., Hero, Projects, Articles) into a layout folder, keeping the structure clear and making it easy to locate each section of the site.
 
-_Data:_ Stored project and skill data in JSON files to easily add or update content without hardcoding it in the components.
+**Data:** Stored project and skill data in JSON files to easily add or update content without hardcoding it in the components.
 
 ## Future improvements
 
