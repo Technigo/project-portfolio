@@ -7,10 +7,8 @@ export const TechSection = () => {
             <div className="tech-box">
                 <h1 className="tech-title">Tech</h1>
                 <p className="tech-description">
-                    HTML5, CSS, CSS Flexbox, CSS Grid, JavaScriptES6, API&apos;s, Node.js,
-                    Vite, React.js, React Router, React Context, Zustand, Styled
-                    Components, Web-Accessibility, RESTful API, Express.js, MongoDB,
-                    Mongoose.
+                    HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, API:s,
+                    mob-programming, pair-programming, Github.
                 </p>
             </div>
         </div>

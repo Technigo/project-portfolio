@@ -1,5 +1,7 @@
 import React from "react";
 import projectsData from "../../projects.json";
+import { FaGithub } from "react-icons/fa";
+import { IoEarth } from "react-icons/io5";
 import './Project.css'
 
 export const Project = () => {
@@ -18,10 +20,10 @@ export const Project = () => {
                         </div>
                         <div className="project-buttons">
                             <button className="project-button">
-                                <a href={project.netlify} target="_blank" rel="noopener noreferrer" className="project-link">Live demo</a>
+                                <a href={project.netlify} target="_blank" rel="noopener noreferrer" className="project-link"><IoEarth /> Live demo</a>
                             </button>
                             <button className="project-button">
-                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">View code</a>
+                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link"><FaGithub /> View code</a>
                             </button>
                         </div>
                     </div>

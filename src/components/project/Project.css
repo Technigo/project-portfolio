@@ -4,6 +4,10 @@
     --lightblue: #3887be;
     --green: #52d3d8;
     --font-color: #333;
+    --button-bg: #d1cbcb;
+    /* Ljus bakgrundsfärg för knappen */
+    --button-font-color: #333;
+    /* Textfärg för knappen */
 }
 
 body {
@@ -16,7 +20,6 @@ body {
 /* Container for all projects */
 .projects-container {
     width: 100%;
-    padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -83,20 +86,43 @@ body {
 }
 
 .project-button {
-    background-color: var(--midblue);
-    color: white;
-    text-align: center;
-    padding: 8px;
-    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    /* Mellanrum mellan ikonen och texten */
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--button-bg);
+    /* Ljus bakgrundsfärg */
+    color: var(--button-font-color);
+    /* Textfärg */
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
+    transition: background-color 0.3s ease;
     text-decoration: none;
+    /* Ingen understrykning */
+}
+
+.project-button:hover {
+    background-color: #e0e0e0;
+    /* Ändra färg vid hover */
+}
+
+.project-button svg {
+    font-size: 20px;
+    /* Storlek på ikonen */
+    color: var(--button-font-color);
+    /* Färg på ikonen */
 }
 
 .project-button a {
-    color: white;
+    color: var(--button-font-color);
+    /* Textfärg på länken */
     text-decoration: none;
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 /* Tablet View */
@@ -122,10 +148,6 @@ body {
 
     .project-buttons {
         flex-direction: row;
-    }
-
-    .project-button {
-        width: 48%;
     }
 }
 
@@ -160,5 +182,17 @@ body {
 
     .project-buttons {
         justify-content: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .project-button {
+        max-width: 200px;
+        /* Begränsar bredden på mobil */
+    }
+
+    .project-buttons {
+        align-items: flex-start;
+        /* Vänsterjusterar knapparna i sin container */
     }
 }
