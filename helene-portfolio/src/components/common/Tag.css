@@ -1,0 +1,25 @@
+.tag {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+
+  &:before {
+    content: "◆";
+    font-size: 0.5em;
+  }
+
+  @media screen and (min-width: 744px) {
+    &:before {
+      content: "";
+    }
+    &:after {
+      content: "◆";
+      font-size: 0.5em;
+    }
+  }
+}

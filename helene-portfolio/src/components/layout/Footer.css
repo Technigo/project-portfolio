@@ -1,0 +1,114 @@
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text-footer);
+  background-color: var(--color-background-footer);
+  gap: var(--spacing-10);
+  padding: var(--spacing-10) 0 0;
+
+  @media screen and (min-width: 345px) {
+    gap: var(--spacing-11);
+    padding: var(--spacing-11) 0 0;
+  }
+
+  @media screen and (min-width: 744px) {
+    gap: calc(var(--spacing-11) * 2);
+    padding: calc(var(--spacing-11) * 2) var(--spacing-10) 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: calc(var(--spacing-11) * 2);
+    padding: calc(var(--spacing-11) * 2) var(--spacing-10) 0;
+  }
+
+  .footer__title {
+    color: var(--color-text-footer);
+    margin-bottom: var(--spacing-9);
+
+    @media screen and (min-width: 744px) {
+      margin-bottom: var(--spacing-10);
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: var(--spacing-11);
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-right: var(--spacing-12);
+    }
+  }
+
+  .footer__bottom {
+    border-top: 1px solid var(--color-border-footer);
+  }
+
+  .footer__bottom__content {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--spacing-5);
+    padding: var(--spacing-10) 0;
+  }
+
+  .footer__links {
+    display: flex;
+    gap: var(--spacing-6);
+
+    a {
+      display: flex;
+      gap: var(--spacing-2);
+      color: var(--color-text-footer);
+      text-decoration: none;
+
+      &:hover,
+      &:focus-visible {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  svg {
+    width: 1.25rem;
+    height: 1.25rem;
+
+    path {
+      fill: var(--color-text-footer);
+    }
+  }
+
+  .back-to-top-link {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+    @media screen and (min-width: 744px) {
+      top: 2rem;
+      right: 2rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 3.75rem;
+      right: 3.75rem;
+    }
+  }
+
+  .back-to-top {
+    height: 4.375rem;
+    width: auto;
+
+    .circle {
+      animation: rotate-animation 10s infinite linear;
+      transform-origin: center;
+    }
+
+    @media screen and (min-width: 744px) {
+      height: 5rem;
+      width: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 8.75rem;
+      width: auto;
+    }
+  }
+}

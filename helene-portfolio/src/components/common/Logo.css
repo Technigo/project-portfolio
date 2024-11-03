@@ -1,0 +1,47 @@
+.logo__link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+
+  .logo__container {
+    stroke: var(--color-headings);
+  }
+
+  .logo .line {
+    transition: transform 0.2s ease-in;
+  }
+
+  .line--top {
+    transform: translate(22.5px, 7.610834px) rotate(-72deg)
+      translate(-22.5px, -7.610834px);
+  }
+
+  .line--bottom {
+    transform: translate(22.5px, 20.721668px) rotate(-72deg)
+      translate(-22.5px, -20.721668px);
+  }
+
+  &:hover {
+    .line--top {
+      transform: translate(22.5px, 7.610834px) rotate(-108deg)
+        translate(-22.5px, -7.610834px);
+    }
+
+    .line--bottom {
+      transform: translate(22.5px, 20.721668px) rotate(-108deg)
+        translate(-22.5px, -20.721668px);
+    }
+  }
+
+  span {
+    font-size: 1.25rem;
+    font-family: var(--font-family-headings);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-headings);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.tags {
+  display: flex;
+  flex-flow: column wrap;
+  gap: var(--spacing-3);
+  list-style: none;
+  padding: 0;
+  color: var(--color-headings);
+
+  @media screen and (min-width: 744px) {
+    flex-flow: row wrap;
+  }
+
+  .tag:last-child:after {
+    content: "";
+  }
+}

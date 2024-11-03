@@ -1,0 +1,289 @@
+@import "./fonts.css";
+@import "./reset.css";
+@import "./variables.css";
+
+*:focus-visible {
+  outline: 2px solid var(--color-headings);
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-default);
+  color: var(--color-text);
+  background-color: var(--color-background-main);
+}
+
+main {
+  overflow: hidden;
+}
+
+/* ***************************************
+ Typography
+ *************************************** */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-headings);
+  line-height: var(--line-height-heading);
+  color: var(--color-headings);
+}
+
+.heading-xl {
+  font-size: var(--font-size-heading-xl);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-compact);
+}
+
+h1,
+.heading-lg {
+  font-size: var(--font-size-heading-lg);
+  font-weight: var(--font-weight-regular);
+}
+
+h2,
+.heading-md {
+  font-size: var(--font-size-heading-md);
+  font-weight: var(--font-weight-medium);
+}
+
+h3,
+.heading-sm {
+  font-size: var(--font-size-heading-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.section-heading {
+  font-family: var(--font-family-headings);
+  font-size: var(--font-size-heading-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-headings);
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+}
+
+p,
+.text-large {
+  font-size: var(--font-size-large);
+}
+
+.text-medium {
+  font-size: var(--font-size-medium);
+}
+
+.text-small {
+  font-size: var(--font-size-small);
+}
+
+/* ***************************************
+ Grid classes
+ *************************************** */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+
+  @media (min-width: 345px) {
+    padding: 0 var(--spacing-6);
+  }
+
+  .grid-container {
+    padding: 0;
+  }
+}
+
+/* Tablet screens and above */
+@media (min-width: 744px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0;
+  }
+}
+
+/* Column Span Utility Classes */
+.col-1 {
+  grid-column: span 1;
+}
+.col-2 {
+  grid-column: span 12;
+}
+.col-3 {
+  grid-column: span 1;
+}
+.col-4 {
+  grid-column: span 1;
+}
+.col-5 {
+  grid-column: span 1;
+}
+.col-6 {
+  grid-column: span 1;
+}
+.col-7 {
+  grid-column: span 1;
+}
+.col-8 {
+  grid-column: span 1;
+}
+.col-9 {
+  grid-column: span 1;
+}
+.col-10 {
+  grid-column: span 1;
+}
+.col-11 {
+  grid-column: span 1;
+}
+.col-12 {
+  grid-column: span 1;
+}
+
+@media (min-width: 744px) and (max-width: 1200px) {
+  .col-1 {
+    grid-column: span 1;
+  }
+  .col-2 {
+    grid-column: span 2;
+  }
+  .col-3 {
+    grid-column: span 3;
+  }
+  .col-4 {
+    grid-column: span 4;
+  }
+  .col-5 {
+    grid-column: span 4;
+  }
+  .col-6 {
+    grid-column: span 4;
+  }
+  .col-7 {
+    grid-column: span 4;
+  }
+  .col-8 {
+    grid-column: span 4;
+  }
+  .col-9 {
+    grid-column: span 4;
+  }
+  .col-10 {
+    grid-column: span 4;
+  }
+  .col-11 {
+    grid-column: span 4;
+  }
+  .col-12 {
+    grid-column: span 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-1 {
+    grid-column: span 1;
+  }
+  .col-2 {
+    grid-column: span 2;
+  }
+  .col-3 {
+    grid-column: span 3;
+  }
+  .col-4 {
+    grid-column: span 4;
+  }
+  .col-5 {
+    grid-column: span 5;
+  }
+  .col-6 {
+    grid-column: span 6;
+  }
+  .col-7 {
+    grid-column: span 7;
+  }
+  .col-8 {
+    grid-column: span 8;
+  }
+  .col-9 {
+    grid-column: span 9;
+  }
+  .col-10 {
+    grid-column: span 10;
+  }
+  .col-11 {
+    grid-column: span 11;
+  }
+  .col-12 {
+    grid-column: span 12;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+/* ***************************************
+ Spacing classes
+ *************************************** */
+
+.section-spacing-vertical {
+  padding-top: var(--spacing-10);
+  padding-bottom: var(--spacing-10);
+
+  @media (min-width: 744px) {
+    padding-top: var(--spacing-11);
+    padding-bottom: var(--spacing-11);
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: var(--spacing-12);
+    padding-bottom: var(--spacing-12);
+  }
+}
+
+.section-spacing-horizontal {
+  padding-left: var(--spacing-3);
+  padding-right: var(--spacing-3);
+
+  @media screen and (min-width: 744px) {
+    padding-left: calc(var(--spacing-10) + 5vw);
+    padding-right: calc(var(--spacing-10) + 5vw);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: var(--spacing-11);
+    padding-right: var(--spacing-11);
+  }
+}
+
+/* ***************************************
+ Utility classes
+ *************************************** */
+
+.border-radius-lg {
+  border-radius: var(--border-radius-lg);
+}
