@@ -1,9 +1,10 @@
 import './SkillsSection.css'; // Importing CSS for styling
+import { SectionTitle } from '../../ui/Typography'; // Import SectionTitle
 
 const SkillsSection = ({ title, categories }) => {
   return (
     <section className="skills-section">
-      <h2 className="skills-title">{title}</h2>
+      <SectionTitle>{title}</SectionTitle> {/* Use SectionTitle instead of h2 */}
       <div className="skills-grid">
         {categories.map((category, index) => (
           <div key={index} className="skills-category">

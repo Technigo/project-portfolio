@@ -1,10 +1,12 @@
 import './ConnectSection.css'; 
-import profileImage from '../assets/Cholpon.png'; 
+import profileImage from '../../assets/Cholpon.png'; 
+import { SectionTitle } from '../../ui/Typography';
+
 
 const ConnectSection = ({ name, phone, email, socialLinks }) => {
   return (
     <section className="connect-section">
-      <h2 className="connect-title">Let's talk</h2>
+      <SectionTitle>Let's talk</SectionTitle>
       <div className="connect-content">
         <img src={profileImage} alt={`${name}`} className="connect-image" />
         <div className="connect-info">

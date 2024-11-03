@@ -1,7 +1,6 @@
-
 import { Grid } from "../ui/Grid"
 import { Card } from "../components/Card"
-import { SectionTitle } from "../ui/Typography"
+import { SectionTitle } from '../ui/Typography'; // Import SectionTitle
 
 export const ArticleSection = () => {
     return (
