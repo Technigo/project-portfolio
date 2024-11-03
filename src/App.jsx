@@ -1,6 +1,7 @@
 import { TopSection } from "./components/top-section/TopSection";
 import { TechSection } from "./components/tech-section/TechSection";
 import { Project } from "./components/project/Project";
+import { Articles } from "./components/articles/Articles";
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       < TopSection />
       < TechSection />
       < Project />
+      < Articles />
 
 
 
