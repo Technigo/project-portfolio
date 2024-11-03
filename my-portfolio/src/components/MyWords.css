@@ -1,44 +1,64 @@
 .my-words-container {
   display: flex;
-  padding: 128px 0px;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Aligns all child elements to the left by default */
   gap: 16px;
-  align-self: stretch;
+  padding: 128px;
   background-color: var(--primary-color);
   height: 1485px;
 }
 
 .my-words-container h2 {
-  color: var(--secondary-color);
+  color: var(--secondary-color)!important;
   text-align: center;
-  font-size: 100px;
-  font-style: normal;
+  font-size: 80px;
   font-weight: 700;
+  align-self: center; /* Centers the h2 within the flex container */
+}
+
+.my-words-container h3 {
+  color: white;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
 }
 
-h2 {
-  color: var(--seocandary-color);
+.words-images {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: flex-start; /* Aligns images to the left */
+  gap: 16px; /* Add spacing between images */
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
 
-.images {
-  align-items: left;
-  justify-content: left;
+.words-images img {
+  width: 479px;
+  height: 311px;
   border-radius: 12px;
 }
 
-.image-pink {
-  width: 479px;
-  align-self: stretch;
+.words-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1184px;
+  height: 311px;
+  border: 1px solid red; /* Temporary border to make it visible */
+  padding: 10px;
 }
 
-.image-grey {
-  width: 479px;
+.word-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
   align-self: stretch;
-}
-
-.image-red {
-  width: 479px;
-  align-self: stretch;
+  text-align: left;
 }
