@@ -4,7 +4,7 @@ import "./CardImage.css"
 export const CardImage = ({ cardImage, alt }) => {
   return (
     <div className="card-image-container">
-      <img src={cardImage} alt={alt} className='card-image' />
+      <img src={cardImage} alt={alt} className="card-image" />
     </div>
   )
 }
