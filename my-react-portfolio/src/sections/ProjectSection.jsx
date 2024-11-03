@@ -1,11 +1,11 @@
 import { Grid } from "../ui/Grid"
-import { SectionTitle } from "../ui/Typography"
 import { Card } from "../components/Card"
+import SectionTitle from '../../ui/SectionTitle';
 
 export const ProjectSection = () => {
     return (
 <Grid background="white">
-    <SectionTitle> My projects</SectionTitle>
+<SectionTitle color="#0041ff">Featured Projects </SectionTitle>
     <Card
     // imageSource={}
     borderColor="blue"

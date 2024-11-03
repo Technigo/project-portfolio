@@ -1,16 +1,14 @@
 import "./TechSection.css"; 
-import { SectionTitle } from '../../ui/Typography';
+import SectionTitle from '../../ui/SectionTitle';
+
+
 
 const TechSection = ({ title, techList }) => {
   return (
     <section className="tech-section">
-      <SectionTitle>{title}</SectionTitle>
+     <SectionTitle color="#ffffff">{title}</SectionTitle>
       <div className="tech-content">
-        <ul>
-          {techList.map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
-        </ul>
+      <p>{techList.join(', ')}</p>
       </div>
     </section>
   );
