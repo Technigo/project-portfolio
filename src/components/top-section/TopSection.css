@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400&display=swap');
+
+
+
 :root {
     --darkblue: #200e3a;
     --midblue: #38419d;
@@ -5,17 +10,23 @@
     --green: #52d3d8;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .profile {
     display: flex;
+    margin: 4rem 1rem 0rem;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 64px 16px 0 16px;
-    text-align: center;
 }
 
 .profile img {
     margin-bottom: 32px;
     height: 164px;
+    width: 164px;
     border-radius: 50%;
 }
 
@@ -24,28 +35,38 @@
 }
 
 .jonas {
+    margin: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    line-height: normal;
 }
 
 .job {
+    margin: 0;
+    color: #0B24F5;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    color: var(--midblue);
-    font-family: "Montserrat", sans-serif;
+    line-height: normal;
 }
 
 .description {
-    margin-bottom: 32px;
-    font-family: "Hind", sans-serif;
-    font-size: 18px;
-    max-width: 600px;
+    color: #000;
+    font-family: Hind;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 2rem;
 }
 
 .arrow-box {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
 }
 
 .arrow {
@@ -69,5 +90,62 @@
 
     60% {
         transform: translateY(-5px);
+    }
+}
+
+/* Tablet View */
+/* @media (min-width: 768px) {
+    .profile {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 120px auto 0 auto;
+    }
+
+    .job {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+} */
+
+/* Desktop View */
+@media (min-width: 768px) and (max-width: 1800px) {
+    .profile {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 120px auto 0 auto;
+    }
+
+    .profile img {
+        margin-right: 32px;
+        margin-bottom: 0;
+        height: 200px;
+        width: 200px;
+    }
+
+    .person {
+        margin-bottom: 0;
+    }
+
+    .job {
+        font-size: 48px;
+    }
+
+    .description {
+        max-width: 600px;
+        font-size: 20px;
+    }
+
+    .arrow-box {
+        margin-top: 32px;
+        text-align: center;
     }
 }
