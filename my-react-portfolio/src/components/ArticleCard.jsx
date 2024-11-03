@@ -7,7 +7,7 @@ export const ArticleCard = () => {
     <>
       {articles.articles.map((item) => (
         <div className="article-card" key={item.id}>
-          <img className="article-img" src={item.image} rel="article image" />
+          <img className="article-img" src={item.image} alt="article image" />
           
           <div className="description">
             <p className="date">October 28, 2024</p>
