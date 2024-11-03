@@ -18,11 +18,11 @@ export const ContactInfo = () => {
             <p className="contact-email">nellax@me.com</p>
           </div>
           <div className="icons">
-            <button className="btn-icon" onClick={() => window.open("https://github.com", "_blank")}>
-              <img className="ic-web" alt="GitHub" src={GH} />
+            <button className="btn-icon" onClick={() => window.open("https://github.com/nella-x")}>
+              <img alt="GitHub" src={GH} />
             </button>
-            <button className="btn-icon" onClick={() => window.open("https://linkedin.com", "_blank")}>
-              <img className="ic-web" alt="LinkedIn" src={LI} />
+            <button className="btn-icon" onClick={() => window.open("https://www.linkedin.com/in/nella-edvardsson-018460300/")}>
+              <img alt="LinkedIn" src={LI} />
             </button>
           </div>
         </div>

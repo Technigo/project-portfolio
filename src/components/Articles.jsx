@@ -19,7 +19,7 @@ export const Articles = () => {
               <div className="article-date">
                 <Tag text={article.date} />
               </div>
-              <h3 className="article-title">{article.title}</h3>
+              <h3>{article.title}</h3>
               <p className="article-description">{article.description}</p>
               <BtnArticle url={article.articleLink} text="Read Article" img={WEB} />
             </div>
