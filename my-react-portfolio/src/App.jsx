@@ -9,6 +9,8 @@ import arrow from "./assets/ic-arrowdown.svg";
 import { TextBlock } from "./components/UI-components/TextBlock";
 import { Skills } from "./components/Skills";
 import { AnimatedSection } from "./components/UI-components/AnimatedSection";
+import { ProjectData } from "./data/projectData";
+import { ArticleData } from "./data/articleData";
 
 const SectionWrapper = styled.div`
   display: flex;
@@ -32,55 +34,13 @@ const ButtonWrapper = styled.div`
   width: 100%;
 `;
 
-const ArticleData = [
-  {
-    title: "How to stop being scared: Learning to love code",
-    description:
-      "The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.",
-    src: "https://images.unsplash.com/photo-1729731322011-f945437445be?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    title: "How to stop being scared: Learning to love code",
-    description:
-      "The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.",
-    src: "https://images.unsplash.com/photo-1729731322011-f945437445be?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    title: "How to stop being scared: Learning to love code",
-    description:
-      "The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.",
-    src: "https://images.unsplash.com/photo-1729731322011-f945437445be?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-];
-
-const ProjectData = [
-  {
-    title: "Chatbot built in javascript",
-    description:
-      "The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.",
-    src: "https://images.unsplash.com/photo-1729731322011-f945437445be?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    title: "Chatbot built in javascript",
-    description:
-      "The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.",
-    src: "https://images.unsplash.com/photo-1729731322011-f945437445be?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    title: "Chatbot built in javascript",
-    description:
-      "The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.",
-    src: "https://images.unsplash.com/photo-1729731322011-f945437445be?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-];
-
 const App = () => {
   return (
     <>
       <SectionWrapper dark tight>
         <Header />
       </SectionWrapper>
-      <SectionWrapper>
+      <SectionWrapper id="projects">
         <AnimatedSection>
           <h2>Featured Projects</h2>
         </AnimatedSection>
@@ -106,18 +66,18 @@ const App = () => {
           </ButtonWrapper>
         </AnimatedSection>
       </SectionWrapper>
-      <SectionWrapper dark>
+      <SectionWrapper dark id="tech">
         <TextBlock
           title="Tech"
           description="HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, APIs, mob-programming, pair-programming, GitHub."
         />
       </SectionWrapper>
-      <SectionWrapper>
+      <SectionWrapper id="skills">
         <AnimatedSection>
           <Skills />
         </AnimatedSection>
       </SectionWrapper>
-      <SectionWrapper dark>
+      <SectionWrapper dark id="articles">
         <AnimatedSection>
           <h2>My Words</h2>
         </AnimatedSection>
@@ -131,17 +91,17 @@ const App = () => {
         ))}
         <AnimatedSection>
           <ButtonWrapper>
-          <LinkButton
-            color="#ffffff"
-            text="See More Articles"
-            href=""
-            icon={arrow}
-            borderColor="#ffffff"
+            <LinkButton
+              color="#ffffff"
+              text="See More Articles"
+              href=""
+              icon={arrow}
+              borderColor="#ffffff"
             />
           </ButtonWrapper>
         </AnimatedSection>
       </SectionWrapper>
-      <SectionWrapper>
+      <SectionWrapper id="contact">
         <Footer />
       </SectionWrapper>
     </>

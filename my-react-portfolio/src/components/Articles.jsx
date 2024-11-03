@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Pill } from "./UI-components/Pill";
 import { LinkButton } from "./UI-components/LinkButton";
 import websiteIcon from "../assets/ic-web-white.svg";
-import { SharedLayout } from "./UI-components/SharedStyles";
+import { SharedLayout } from "./SharedStyles";
 
 const ArticleInfo = styled.div`
   display: flex;

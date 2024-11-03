@@ -59,9 +59,6 @@ export const Footer = () => {
           <i className="fab fa-github"></i>
         </a>
         <a href="#">
-          <i className="fab fa-medium-m"></i>
-        </a>
-        <a href="#">
           <i className="fab fa-twitter"></i>
         </a>
         <a href="#">
