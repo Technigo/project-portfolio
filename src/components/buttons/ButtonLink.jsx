@@ -9,7 +9,7 @@ export const BtnLink = ({ text = "View Code", img = null, url }) => {
   return (
     <button className="btn-primary" onClick={handleClick} aria-label={text}>
       {img && <img src={img} alt="" />}
-      <p>{text}</p>
+      {text}
     </button>
   );
 };

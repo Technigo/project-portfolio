@@ -21,7 +21,7 @@ export const Articles = () => {
               </div>
               <h3 className="article-title">{article.title}</h3>
               <p className="article-description">{article.description}</p>
-              <BtnArticle url={article.articleLink} text="Live Demo" img={WEB} />
+              <BtnArticle url={article.articleLink} text="Read Article" img={WEB} />
             </div>
           </div>
         ))}

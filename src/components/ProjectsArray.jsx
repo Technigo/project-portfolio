@@ -1,7 +1,7 @@
 // ProjectsArray.jsx
-import Top1 from "../assets/Top1.jpg";
-import Top2 from "../assets/Top2.jpg";
-import Top3 from "../assets/Top3.jpg";
+import happii from "../assets/Happii.jpg";
+import franzy from "../assets/Franzy.jpg";
+import survey from "../assets/Survey.jpg";
 
 export const projects = [
   {
@@ -11,7 +11,7 @@ export const projects = [
     tags: ["HTML5", "CSS3", "React", "Node"],
     liveLink: "https://google.com",
     codeLink: "https://github.com/",
-    image: Top1, // Lägg till bildreferensen här
+    image: happii, // Lägg till bildreferensen här
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const projects = [
     tags: ["JavaScript", "CSS", "HTML"],
     liveLink: "https://facebook.com",
     codeLink: "https://elle.se/",
-    image: Top2, // Lägg till bildreferensen här
+    image: franzy, // Lägg till bildreferensen här
   },
   {
     id: 3,
@@ -29,6 +29,6 @@ export const projects = [
     tags: ["React", "Node", "API"],
     liveLink: "https://malmo.se",
     codeLink: "https://sydsvenskan.se/",
-    image: Top3, // Lägg till bildreferensen här
+    image: survey, // Lägg till bildreferensen här
   },
 ];
