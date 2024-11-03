@@ -4,6 +4,7 @@ import { SkillsSection } from "./sections/SkillsSection/SkillsSection"
 import { ProjectsSection } from "./sections/ProjectsSection/ProjectsSection"
 import { TechSection } from './sections/TechSection/TechSection'
 import { JourneySection } from './sections/JourneySection/JourneySection'
+import { FooterSection } from './sections/FooterSection/FooterSection'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <ProjectsSection />
       <TechSection />
       <JourneySection />
+      <FooterSection />
     </>
   )
 }
