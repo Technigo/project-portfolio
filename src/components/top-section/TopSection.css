@@ -8,29 +8,30 @@
 .profile {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 64px 16px 0 16px;
+    text-align: center;
 }
 
 .profile img {
-    align-self: center;
     margin-bottom: 32px;
     height: 164px;
     border-radius: 50%;
 }
 
 .person {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .jonas {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 24px;
     font-family: "Montserrat", sans-serif;
 }
 
 .job {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 36px;
     color: var(--midblue);
     font-family: "Montserrat", sans-serif;
 }
@@ -39,6 +40,7 @@
     margin-bottom: 32px;
     font-family: "Hind", sans-serif;
     font-size: 18px;
+    max-width: 600px;
 }
 
 .arrow-box {
@@ -49,4 +51,23 @@
 .arrow {
     font-size: 3em;
     animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
 }

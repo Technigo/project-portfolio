@@ -8,65 +8,49 @@
 .tech-section {
     background-color: var(--midblue);
     color: #ffffff;
-}
-
-.tech-box {
     padding: 128px 16px;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
 }
 
 .tech-title {
-    align-self: center;
-    padding-bottom: 64px;
     font-family: "Montserrat", sans-serif;
     font-size: 56px;
     font-weight: 700;
+    margin-bottom: 64px;
 }
 
 .tech-description {
     font-family: "Hind", sans-serif;
     font-size: 24px;
     font-weight: 600;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-@media (min-width: 620px) {
+@media (min-width: 768px) {
     .tech-section {
-        display: flex;
-        justify-content: center;
-    }
-
-    .tech-box {
         padding: 256px 32px;
     }
 
+    .tech-title {
+        font-size: 64px;
+    }
+
     .tech-description {
-        text-align: center;
+        font-size: 28px;
     }
 }
 
 @media (min-width: 1200px) {
-    .tech-box {
-        padding: 0 161px;
-        flex-direction: row;
-        height: 980px;
-        align-items: center;
-        gap: 124px;
-    }
-
-    .tech-description {
-        text-align: left;
-        font-size: 32px;
+    .tech-section {
+        padding: 256px 161px;
     }
 
     .tech-title {
-        padding: 0;
-        font-size: 80px;
+        font-size: 72px;
     }
-}
 
-@media (min-width: 1500px) {
-    .tech-box {
-        padding: 0 234px;
+    .tech-description {
+        font-size: 32px;
     }
 }
