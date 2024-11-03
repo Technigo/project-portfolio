@@ -3,7 +3,7 @@ import githubIcon from "../assets/ic-github.svg";
 import websiteIcon from "../assets/ic-web-white.svg";
 import { Pill } from "./UI-components/Pill";
 import { LinkButton } from "./UI-components/LinkButton";
-import { SharedLayout } from "./UI-components/SharedStyles";
+import { SharedLayout } from "./SharedStyles";
 
 const ProjectInfo = styled.div`
   display: flex;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { TextBlock } from "./UI-components/TextBlock";
 import { TextBlockSection } from "./UI-components/TextBlock";
-import { motion } from "framer-motion";
 
 export const StyledH2 = styled.h2`
   color: ${(props) => (props.white ? "#ffffff" : "#000000")};
@@ -12,6 +11,9 @@ const images = [
   "https://images.unsplash.com/photo-1728815235820-3a894b2f2807?q=80&w=3240&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://images.unsplash.com/photo-1728327511854-fb04fa8fb2e4?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 ];
+
+const description =
+  "Sara is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field.";
 
 export const Header = () => {
   return (
@@ -26,48 +28,11 @@ export const Header = () => {
       </TextBlockSection>
 
       <div className="images">
-        <motion.img
-          src={images[0]}
-          alt=""
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            rotate: -6,
-            x: 170,
-            y: 35,
-          }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        />
-        <motion.img
-          src={images[1]}
-          alt=""
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            rotate: 0,
-            x: 0,
-            y: 0,
-            zIndex: 1,
-          }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        />
-        <motion.img
-          src={images[2]}
-          alt=""
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            rotate: 6,
-            x: -170,
-            y: 35,
-          }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        />
+        <img src={images[0]} alt="placeholder" />
+        <img src={images[1]} alt="placeholder" />
+        <img src={images[2]} alt="placeholder" />
       </div>
-      <TextBlock
-        title="Bio"
-        description="Sara is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field."
-      />
+      <TextBlock title="Bio" description={description} />
     </>
   );
 };
