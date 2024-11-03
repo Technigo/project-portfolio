@@ -15,7 +15,7 @@ export const ProjectsGallery = () => {
     <section className="projects-gallery">
       <div className="gallery">
         {projects.map((project) => (
-          <div key={project.id} className="project-card">
+          <div key={project.id} className="gallery-card">
             <img src={project.image} alt={`Project ${project.id}`} />
           </div>
         ))}

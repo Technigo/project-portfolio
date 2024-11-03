@@ -2,6 +2,8 @@ import { Header } from "./sections/Header"
 import { ProjectsGallery } from "./sections/ProjectsGallery"
 import { Bio } from "./sections/Bio"
 import { FeaturedProjects } from "./sections/FeaturedProjects"
+import { Tech } from "./sections/Tech"
+import { Skills } from "./sections/Skills"
 import "./App.css"
 
 
@@ -11,9 +13,9 @@ export const App = () => {
     <><Header />
       <ProjectsGallery />
       <Bio />
-      <FeaturedProjects /></>
-    // <Tech />
-    // <Skills />
+      <FeaturedProjects />
+      <Tech />
+      <Skills /></>
     // <Words />
     // <Contact/>
   )

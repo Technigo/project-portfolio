@@ -1,5 +1,52 @@
 .bio-card {
   background-color: #000;
+  max-width: 782px;
+  /* Prevents the card from getting too wide */
+  width: 100%;
+  /* Responsive width */
+  margin: 0 auto;
+  /* Center the card */
+  padding: 64px 0px 128px 0px;
+
+}
+
+.bio-card .bio-heading,
+.bio-text {
+  color: #FFF;
+}
+
+.bio-text {
+  text-align: center;
+  font-size: 1.125rem;
+  /* Keep your current font size */
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 1.5; */
+  display: block;
+  margin-top: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  .bio-card {
+    padding: 15px;
+    /* Adjust padding */
+  }
+
+  .bio-text {
+    font-size: 1rem;
+    /* Slightly smaller font size on small screens */
+  }
+}
+
+
+
+
+/* .bio-card {
+  background-color: #000;
 }
 
 .bio-card .bio-heading,
@@ -13,4 +60,5 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
+  display: block;
+} */
