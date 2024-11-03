@@ -16,7 +16,6 @@ function App() {
       <Skills />
       <MyWords />
       <LetsTalk />
-      {/* Other components can go here */}
     </div>
   );
 };

@@ -1,19 +1,3 @@
-// import React from "react"; 
-// import "./Skills.css";
-
-// const Skills = () => {
-//   return (
-//     <section className="skill-container">
-//       <h2>Skills</h2>
-//       <div className="info-container">
-//         hejhejhej
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Skills;
-
 import React from "react";
 import "./Skills.css";
 

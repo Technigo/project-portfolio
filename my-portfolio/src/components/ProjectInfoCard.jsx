@@ -1,4 +1,3 @@
-// ProjectInfoCard.jsx
 import React from "react";
 import "./ProjectInfoCard.css";
 import ImageGrey from "../assets/ImageGrey.jpeg";
