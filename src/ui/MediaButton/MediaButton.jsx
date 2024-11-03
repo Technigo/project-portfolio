@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types'
 import "./MediaButton.css"
 
-export const MediaButton = ({ src, alt }) => {
+export const MediaButton = ({ src, alt, link }) => {
     return (
-        <button className="media-button">
+        <a href={link} className="media-button" target="_blank" rel="noopener noreferrer">
             <img src={src} alt={alt} />
-        </button>
+        </a>
     )
 }
 
 MediaButton.propTypes = {
     src: PropTypes.string.isRequired,
     alt: PropTypes.string,
+    link: PropTypes.string.isRequired,
 }
