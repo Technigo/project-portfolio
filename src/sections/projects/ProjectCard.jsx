@@ -64,10 +64,12 @@ export const ProjectCard = ({ repositories }) => {
                 className="project-card-heading"
               />
               <Paragraph text={repo.description} />
-              <div role="tag" aria-label="Tags" className="tags">
+              <div role="list" aria-label="Tags" className="tags">
                 {repo.topics &&
                   repo.topics.map((topic, index) => (
-                    <Tag key={index} tagText={topic} />
+                    <div role="listitem" key={index} className="tag-item">
+                      <Tag tagText={topic} />
+                    </div>
                   ))}
               </div>
               <div className="button-wrapper">
