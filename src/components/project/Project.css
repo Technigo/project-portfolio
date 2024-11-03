@@ -10,11 +10,27 @@
     /* Textfärg för knappen */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: var(--font-color);
+
+h2 {
+
+    color: #0B24F5;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.125rem;
+    /* 117.857% */
+}
+
+
+.project-body {
+    color: #000;
+    font-family: Hind;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 /* Container for all projects */
@@ -27,20 +43,30 @@ body {
 
 /* Individual Project Card */
 .project-card {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+
     overflow: hidden;
     display: flex;
     flex-direction: column;
     padding: 16px;
 }
 
+.project-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+
+}
+
 /* Project Image */
 .project-image {
     width: 100%;
-    border-radius: 8px;
     margin-bottom: 12px;
+    border-bottom: var(--midblue) solid 10px;
+    border-left: var(--midblue) solid 10px;
 }
 
 /* Project Content */
@@ -57,11 +83,6 @@ body {
     margin: 0;
 }
 
-.project-body {
-    font-size: 14px;
-    color: var(--font-color);
-    margin: 0 0 12px 0;
-}
 
 /* Tags */
 .project-tags {

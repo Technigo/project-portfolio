@@ -6,21 +6,21 @@
     --button-bg-color: #fff;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-    background-color: var(--bg-color);
+.article-body {
+    color: #000;
+    font-family: Hind;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .articles-container {
     width: 100%;
-    padding: 16px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 24px;
+    gap: 16px;
+    background-color: #FFECEA;
 }
 
 .section-title {
@@ -31,21 +31,17 @@ body {
 }
 
 .article-card {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: #FFECEA;
     overflow: hidden;
-    width: 100%;
-    max-width: 600px;
-    padding: 16px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    padding: 16px;
 }
 
 .article-image {
     width: 100%;
-    border-radius: 8px;
+    border-bottom: 10px solid #FF4575;
+    border-left: 10px solid #FF4575;
 }
 
 .article-title {
@@ -54,37 +50,54 @@ body {
     color: var(--text-color);
 }
 
-.article-date {
+.article-tag {
     font-size: 12px;
     color: var(--primary-color);
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 8px;
+    background-color: #333;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
 }
 
-.article-body {
+/* .article-body {
     font-size: 14px;
     color: var(--text-color);
     margin: 0 0 12px 0;
-}
+} */
 
+/* Buttons */
 .article-buttons {
-    display: flex;
+    max-width: 200px;
     flex-direction: column;
     gap: 8px;
 }
 
 .article-button {
-    padding: 8px 12px;
-    background-color: var(--button-bg-color);
-    color: var(--button-color);
-    border: 1px solid var(--button-color);
-    border-radius: 4px;
-    text-align: center;
-    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    /* Mellanrum mellan ikonen och texten */
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    /* Ljus bakgrundsfärg */
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
+    transition: background-color 0.3s ease;
     text-decoration: none;
-    display: inline-block;
+    /* Ingen understrykning */
+}
+
+.article-link {
+    color: black;
+
 }
 
 /* Tablet View */
@@ -135,5 +148,18 @@ body {
     .article-card {
         max-width: none;
         flex-direction: column;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .article-button {
+        max-width: 200px;
+        /* Begränsar bredden på mobil */
+    }
+
+    .article-buttons {
+        align-items: flex-start;
+        /* Vänsterjusterar knapparna i sin container */
     }
 }

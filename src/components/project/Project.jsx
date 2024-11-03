@@ -7,6 +7,8 @@ import './Project.css'
 export const Project = () => {
     return (
         <div className="projects-container">
+            <h2 className="featured-title">Featured Projects</h2>
+
             {projectsData.projects.map((project, index) => (
                 <div key={index} className="project-card">
                     <img src={project.image} alt={project.title} className="project-image" />
