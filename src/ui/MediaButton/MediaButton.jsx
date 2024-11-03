@@ -12,5 +12,5 @@ export const MediaButton = ({ src, alt, link }) => {
 MediaButton.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string,
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
 }

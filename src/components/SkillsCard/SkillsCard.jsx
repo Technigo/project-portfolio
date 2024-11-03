@@ -22,5 +22,5 @@ export const SkillsCard = ({ header, body }) => {
 
 SkillsCard.propTypes = {
   header: PropTypes.string.isRequired,
-  body: PropTypes.string.isRequired
+  body: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
