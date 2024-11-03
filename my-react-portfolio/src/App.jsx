@@ -1,4 +1,3 @@
-
 import './App.css'
 import { HeaderSection } from "./sections/HeaderSection"
 import { ImageSection } from "./sections/ImageSection"
