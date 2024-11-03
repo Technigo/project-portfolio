@@ -27,12 +27,13 @@ const LetsTalk = () => {
 
       {/* Social media icons with clickable onClick handlers */}
       <div className="logo-container">
-        <img 
+        <img
           src={LinkedinIcon} 
-          alt="LinkedIn Logo" className="linkedin-logo"
-          className="logo" 
+          alt="LinkedIn Logo" 
+          className="linkedin-logo logo" 
           onClick={() => handleLinkClick("https://www.linkedin.com")} 
         />
+
         <img 
           src={GitIcon} 
           alt="GitHub Logo" 
