@@ -1,6 +1,6 @@
 // SocialLinks.jsx
 
-import LinkedIn from "../../assets/linkedIn.svg"
+import LinkedIn from "../../assets/linkedIn.svg";
 import Github from "../../assets/github.svg"
 import Stackoverflow from "../../assets/stackoverflow.svg"
 import Instagram from "../../assets/instagram.svg"
@@ -47,5 +47,3 @@ export const SocialLinks = () => {
     </div>
   );
 };
-
-// FORTSÄTT GÖRA ALLA SOCIAL LINKS

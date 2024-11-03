@@ -17,13 +17,16 @@ export const ProjectCard = ({
     <article className="card-container">
       <CardPicture image={image} />
 
-      <CardHeadline name={name} />
+      <div>
+        <CardHeadline name={name} />
 
-      <CardContent description={description} />
-      <div className="card-btn-container">
-        <CardButton url={netlify} btnText="Live Demo" color="orange" />
+        <CardContent description={description} />
 
-        <CardButton url={github} btnText="View Code" />
+        <div className="card-btn-container">
+          <CardButton url={netlify} btnText="Live Demo" color="orange" />
+
+          <CardButton url={github} btnText="View Code" />
+        </div>
       </div>
     </article>
   );

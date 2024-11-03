@@ -1,13 +1,7 @@
 // CardContent.jsx
 
+import "./CardContent.css"
+
 export const CardContent = ({ description }) => {
-
-
-  return (
-    <>
-      <p>
-        {description}
-      </p>
-    </>
-  );
+  return <p className="card-content">{description}</p>;
 };

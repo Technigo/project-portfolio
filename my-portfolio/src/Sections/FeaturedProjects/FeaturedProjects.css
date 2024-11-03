@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  text-align: center;
   padding: 4rem 0;
+}
+
+.featured-projects-container h2 {
+  text-align: center;
 }
 
 .project-container {
@@ -12,5 +15,16 @@
   gap: 4rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  /* Snappar till varje kort när du scrollar */
+  /* Snap card when scrolling */
+}
+
+.project-container::-webkit-scrollbar {
+  height: 5px;
+  /* display: none; if I want to remove the scrollbar*/
+}
+
+.project-container::-webkit-scrollbar-thumb {
+  /* background-color: rgba(253, 111, 0, 0.3); if I want it to be orange instead*/
+  background-color: rgb(32, 32, 32, 0.3);
+  border-radius: 2px;
 }

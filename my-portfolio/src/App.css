@@ -1,9 +1,9 @@
 @import "@fontsource/urbanist/700.css";
-/* Vikt 700 för Urbanist */
+/* weight 700 for Urbanist */
 @import "@fontsource/poppins/500.css";
-/* Vikt 500 för Poppins */
+/* weight 500 for Poppins */
 @import "@fontsource/poppins/400.css";
-/* Vikt 400 för Poppins */
+/* weight 400 for Poppins */
 
 * {
   margin: 0;
@@ -18,7 +18,7 @@
 }
 
 h1 {
-  color: #000;
+  color: var(--color-secondary);
   font-family: Urbanist;
   font-size: 6.25rem;
   font-style: normal;
@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  color: #000;
+  color: var(--color-secondary);
   font-family: Urbanist;
   font-size: 5rem;
   font-style: normal;
@@ -36,7 +36,7 @@ h2 {
 }
 
 h3 {
-  color: #000;
+  color: var(--color-secondary);
   font-family: Poppins;
   font-size: 1.875rem;
   font-style: normal;
@@ -45,7 +45,7 @@ h3 {
 }
 
 h4 {
-  color: #202020;
+  color: var(--color-secondary);
   font-family: Poppins;
   font-size: 1.125rem;
   font-style: normal;
@@ -54,7 +54,7 @@ h4 {
 }
 
 p {
-  color: #000;
+  color: var(--color-secondary);
   font-family: Poppins;
   font-size: 1.125rem;
   font-style: normal;
@@ -66,4 +66,28 @@ p {
   width: 29.96456rem;
   height: 34.16569rem;
   flex-shrink: 0;
+}
+
+/* For mobile phones and tablets*/
+@media (max-width: 1024px) {
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }

@@ -9,7 +9,7 @@ export const About = () => {
       <div className="about-content">
         <div>
           <h3>
-            I am Emelie Nyberg
+            I am Emelie Nyberg Kedert
           </h3>
 
           <h1>

@@ -21,6 +21,5 @@ export const FeaturedProjects = () => {
         ))}
       </div>
     </section>
-
   );
 };

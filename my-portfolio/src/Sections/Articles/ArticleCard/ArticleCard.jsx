@@ -4,6 +4,7 @@ import { CardPicture } from "../../../components/CardPicture/CardPicture";
 import { CardHeadline } from "../../../components/CardHeadline/CardHeadline";
 import { CardContent } from "../../../components/CardContent/CardContent";
 import { CardButton } from "../../../components/CardButton/CardButton";
+import "./ArticleCard.css"
 
 export const ArticleCard = ({
   heading,
@@ -17,13 +18,15 @@ export const ArticleCard = ({
     <article className="card-container">
       <CardPicture image={image} />
 
-      <h4>{date}</h4>
+      <div>
+        <h4>{date}</h4>
 
-      <CardHeadline name={heading} />
+        <CardHeadline name={heading} />
 
-      <CardContent description={content} />
+        <CardContent description={content} />
 
-      <CardButton url={url} btnText="Read Article" />
+        <CardButton url={url} btnText="Read Article" />
+      </div>
     </article>
   );
 };
