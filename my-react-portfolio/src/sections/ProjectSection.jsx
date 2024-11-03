@@ -26,7 +26,7 @@ export const ProjectSection = () => {
             />
           ))}
         </div>
-        <ArrowButton />
+        <ArrowButton text="See more projects" variant="black-on-white" />
       </section>
     </Grid>
   )

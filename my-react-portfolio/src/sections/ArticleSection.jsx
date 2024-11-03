@@ -1,6 +1,7 @@
 import { Grid } from "../ui/Grid/Grid"
 import { SectionTitle } from "../ui/Typography/Typography"
 import { ArticleCard } from "../components/ArticleCard/ArticleCard"
+import { ArrowButton } from "../components/ArrowButton/ArrowButton"
 import data from '../../../articles.json'
 import './ArticleSection.css'
 
@@ -23,6 +24,7 @@ export const ArticleSection = () => {
             />
           ))}
         </div>
+        <ArrowButton text="See more articles" variant="white-on-black" />
       </section>
     </Grid>
   )
