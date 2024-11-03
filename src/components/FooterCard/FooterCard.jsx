@@ -1,3 +1,4 @@
+import { FooterImage } from "../../ui/FooterImage/FooterImage"
 import { HeaderTwo, Body } from "../../ui/Typography/Typography"
 import { MediaButtonContainer } from "../MediaButtonContainer/MediaButtonContainer"
 import "./FooterCard.css"
@@ -5,6 +6,7 @@ import "./FooterCard.css"
 export const FooterCard = () => {
   return (
     <div className="footer-card">
+      <FooterImage />
       <HeaderTwo>
         Let's talk
       </HeaderTwo>
