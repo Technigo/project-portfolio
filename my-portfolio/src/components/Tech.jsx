@@ -1,15 +1,16 @@
 import "./css/Tech.css";
+import { H2 } from "./Typography"
 
 const TechStack = ({ techData }) => {
 
     return (
         <section className="tech-stack">
-            <h2>Tech</h2>
+            <H2>Tech</H2>
             <div className="tech-list">
                 {techData.tech.map((tech, index) => (
                     <span key={index} className="tech-item">
                         {tech}
-                        {index < tech.length - 1 && ", "}
+                        {index < techData.tech.length - 1 && ", "}
                     </span>
                 ))}
             </div>

@@ -53,18 +53,7 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 16px;
-}
-
-.box-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0.5rem 0;
-}
-
-.box-description {
-    font-size: 0.9rem;
-    margin: 0;
+    gap: 32px;
 }
 
 
@@ -78,6 +67,8 @@
 
 .div-button {
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn-base {
@@ -117,4 +108,10 @@
 .secondary-btn:hover {
     background-color: var(--orange);
     color: var(--white);
+}
+
+@media screen and (max-width: 776px) {
+    .box-btns {
+        flex-direction: column;
+    }
 }

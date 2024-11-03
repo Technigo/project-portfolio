@@ -2,7 +2,7 @@ import BoxImage from "./BoxImage";
 import BoxText from "./BoxText";
 import "./css/ProjectBox.css"
 import Button from "./Button";
-
+ 
 
 const ArticleBox = ({ title, description, image, buttonUrl }) => {
     return (
