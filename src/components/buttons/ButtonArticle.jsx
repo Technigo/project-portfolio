@@ -3,7 +3,7 @@ import "./ButtonArticle.css";
 
 export const BtnArticle = ({ text = "View Code", img = null, url }) => {
   const handleClick = () => {
-    window.open(url, "_blank"); // Opens the link in a new tab
+    window.open(url, "_blank");
   };
 
   return (
@@ -14,7 +14,6 @@ export const BtnArticle = ({ text = "View Code", img = null, url }) => {
   );
 };
 
-// Define PropTypes to validate props
 BtnArticle.propTypes = {
   text: PropTypes.string,
   img: PropTypes.string,

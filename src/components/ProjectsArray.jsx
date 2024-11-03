@@ -1,4 +1,3 @@
-// ProjectsArray.jsx
 import happii from "../assets/Happii.jpg";
 import franzy from "../assets/Franzy.jpg";
 import survey from "../assets/Survey.jpg";
@@ -13,7 +12,7 @@ export const projects = [
     tags: ["HTML5", "CSS3", "React", "API"],
     liveLink: "https://happii.netlify.app/",
     codeLink: "https://github.com/nella-x/project-happy-thoughts-vite",
-    image: happii, // Lägg till bildreferensen här
+    image: happii,
   },
   {
     id: 2,

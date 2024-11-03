@@ -5,7 +5,7 @@ import GH from "../assets/github2.svg";
 import WEB from "../assets/Ic-Web2.svg";
 import down from "../assets/arrow-circle-down.svg";
 import up from "../assets/arrow-circle-up.svg";
-import { BtnLink } from './buttons/ButtonLink.jsx'; // Import BtnLink
+import { BtnLink } from './buttons/ButtonLink.jsx';
 import './Projects.css';
 
 export const ProjectInfo = () => {

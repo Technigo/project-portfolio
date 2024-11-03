@@ -3,7 +3,7 @@ import "./ButtonLink.css";
 
 export const BtnLink = ({ text = "View Code", img = null, url }) => {
   const handleClick = () => {
-    window.open(url, "_blank"); // Opens the link in a new tab
+    window.open(url, "_blank");
   };
 
   return (
