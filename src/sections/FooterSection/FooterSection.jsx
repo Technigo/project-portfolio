@@ -7,7 +7,9 @@ export const FooterSection = () => {
     return (
         <Grid background="neutral">
             <section className="footer-section">
-                <FooterImage />
+                <div className="footer-image-container">
+                    <FooterImage />
+                </div>
                 <FooterCard />
             </section>
         </Grid>
