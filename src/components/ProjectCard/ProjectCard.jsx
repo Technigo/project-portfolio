@@ -9,6 +9,7 @@ export const ProjectCard = () => {
   const [projects, setProjects] = useState([])
   useEffect(() => {
     setProjects(projectData)
+    console.log(projectData)
   }, [])
 
   return (
