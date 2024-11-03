@@ -8,7 +8,6 @@ export const CardImage = ({ cardImage, alt }) => {
     </div>
   )
 }
-
 CardImage.propTypes = {
   alt: PropTypes.string,
   cardImage: PropTypes.string
