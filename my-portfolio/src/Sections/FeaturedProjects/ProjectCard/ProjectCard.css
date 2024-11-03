@@ -1,0 +1,30 @@
+.card-container {
+  width: 25rem;
+  padding-bottom: 0.5rem;
+  scroll-snap-align: start;
+  /* Snap card to start when scrolling */
+}
+
+.card-btn-container {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* For mobile phones and tablets*/
+@media (max-width: 1024px) {
+  .card-container:first-child {
+    padding-left: 1.5rem;
+  }
+
+  .card-btn-container {
+    flex-direction: column;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 667px) {
+  .card-btn-container {
+    padding-top: 2rem;
+  }
+}
