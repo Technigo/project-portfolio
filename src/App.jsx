@@ -18,9 +18,6 @@ function App() {
       < Skills />
       < Contact />
 
-
-
-
     </>
   )
 }

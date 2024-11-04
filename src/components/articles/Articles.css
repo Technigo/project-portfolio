@@ -1,142 +1,126 @@
 :root {
-    --primary-color: #ff5a5f;
-    --text-color: #333;
-    --bg-color: #f9f9f9;
-    --button-bg-color: #fff;
+  --primary-color: #ff5a5f;
+  --text-color: #333;
+  --bg-color: #f9f9f9;
+  --button-bg-color: #fff;
 }
 
 .article-body {
-    color: #000;
-    font-family: Hind;
-    font-size: 1.125rem;
-    font-weight: 400;
+  color: #000;
+  font-family: Hind;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 .article-title {
-    color: #000000;
-    font-family: Montserrat;
-    font-size: 1.3rem;
-    font-weight: 700;
-    line-height: 2.125rem;
-    text-align: left;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2.125rem;
+  text-align: left;
 }
 
-.my-words-title {
-    color: #f50b74;
-    font-family: Montserrat;
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 2.125rem;
-    text-align: left;
+h2.articles-title {
+  color: #f50b74;
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .articles-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    background-color: #FFECEA;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #FFECEA;
 }
 
 .article-card {
-    background-color: #FFECEA;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
+  background-color: #FFECEA;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
 }
 
 .article-image {
-    width: 100%;
-    border-bottom: 10px solid #FF4575;
-    border-left: 10px solid #FF4575;
+  width: 100%;
+  border-bottom: 10px solid #FF4575;
+  border-left: 10px solid #FF4575;
 }
 
 .article-tag {
-    font-size: 12px;
-    color: #ffffff;
-    background-color: #333;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 4px 8px;
-    border-radius: 4px;
-    margin-bottom: 8px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .article-buttons {
-    max-width: 200px;
-    flex-direction: column;
-    gap: 8px;
+  max-width: 200px;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .article-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    border-radius: 30px;
-    border: none;
-    background-color: white;
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--button-bg-color);
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .article-link {
-    color: black;
+  color: black;
 }
 
-/* Tablet View */
 @media (min-width: 768px) {
-    .articles-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-        padding: 32px;
-    }
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 32px;
+  }
 
-    .article-card {
-        padding: 24px;
-    }
+  .article-card {
+    padding: 24px;
+  }
 
-    .article-title {
-        font-size: 20px;
-    }
+  .article-title {
+    font-size: 20px;
+  }
 
-    .article-body {
-        font-size: 16px;
-    }
+  .article-body {
+    font-size: 16px;
+  }
 }
 
-/* Desktop View */
 @media (min-width: 1024px) {
-    .articles-container {
-        justify-content: center;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 40px;
-        margin: 0 auto;
-    }
+  .articles-container {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 40px;
+    margin: 0 auto;
+  }
 
-    .article-card {
-        max-width: 600px;
-        /* Begränsar bredden på korten */
-        padding: 10px;
-        /* Minskar padding */
-        margin: 0 auto;
-        /* Centrerar korten inom grid */
-    }
-
-    .article-title {
-        font-size: 20px;
-        /* Gör titeln mindre om det behövs */
-    }
-
-    .article-body {
-        font-size: 16px;
-        /* Gör brödtexten mindre om det behövs */
-    }
+  .article-card {
+    max-width: 600px;
+    padding: 10px;
+    margin: 0 auto;
+  }
 }
