@@ -1,12 +1,13 @@
 import React from 'react';
 import './Contact.css';
+import contacttImage from '../assets/contact.jpg';
 
 const Contact = () => {
   return (
     <section id="contact" className="contact">
       <h2>Let’s Talk</h2>
       <div className="contact-details">
-        <img src="/contact.jpg" alt="Kelly hunt" className="contact-image" />
+        <img src={contacttImage} alt="Kelly hunt" className="contact-image" />
         <p>Jacqueline Kelly Hunt</p>
         <p>+372 56488815</p>
         <p>jacquelinekelly.hunt@gmail.com</p>

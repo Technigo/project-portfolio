@@ -4,9 +4,10 @@ import Projects from './components/Projects';
 import Tech from './components/Tech';
 import Contact from './components/Contact';
 import './App.css';
+import projectsData from '../projects.json'; 
 
 const App = () => {
-  const projects = require('./projects.json').projects;
+  const projects = projectsData.projects;
 
   return (
     <div className="App">
