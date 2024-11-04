@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './components/Introduction/Header';
 import Img from './components/Introduction/Img';
 import Bio from './components/Introduction/Bio';
+import Contact from './components/Contact/Contact'; 
+import Tech from './components/Tech/Tech';
 import './App.css';
 
 const App = () => {
@@ -10,6 +12,8 @@ const App = () => {
       <Header />
       <Img />
       <Bio />
+      <Tech /> 
+      <Contact /> 
     </div>
   );
 };
