@@ -27,7 +27,7 @@ export const FeaturedArticles = () => {
         />
       ))}
       <Button
-        text="View More Projects"
+        text="Read More Articles"
         isViewMore={true}
         icon={iconArrow}
         onClick={() => {/* Handle the click event, e.g., navigate to projects page */ }}
