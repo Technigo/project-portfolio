@@ -4,6 +4,7 @@ import Img from './components/Introduction/Img';
 import Bio from './components/Introduction/Bio';
 import Contact from './components/Contact/Contact'; 
 import Tech from './components/Tech/Tech';
+import Skills from './components/Skills/Skills';
 import './App.css';
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Header />
       <Img />
       <Bio />
+      <Skills /> 
       <Tech /> 
       <Contact /> 
     </div>
