@@ -4,7 +4,7 @@ import { Image } from "/src/components/images/Image.jsx";
 import { Paragraph } from "/src/components/typography/Paragraph.jsx";
 
 const introText =
-  "Zoe is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field.";
+  "I’m a Junior Software Developer, currently pursuing a Bachelor’s in Computer & Systems Science at Stockholm University while building hands-on experience in web development through Technigo's bootcamp. With a background in teaching and linguistics, I bring good communication skills, adaptability and a keen eye for problem-solving. I’m looking for a place where I can combine my skills with my passion for tech — a team that values collaboration, learning and creating something meaningful together.";
 
 export const Header = () => {
   return (
