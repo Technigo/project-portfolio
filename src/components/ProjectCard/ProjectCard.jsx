@@ -21,8 +21,18 @@ export const ProjectCard = () => {
             <HeaderThree>{project.header}</HeaderThree>
           </div>
           <div className="button-container">
-            <ProjectButton label="Live demo" background="primary"></ProjectButton>
-            <ProjectButton label="View Code" background="neutral"></ProjectButton>
+            <ProjectButton
+              label="Live demo"
+              background="primary"
+              onClick={() => window.open(project.liveDemo, "_blank")}
+            >
+            </ProjectButton>
+            <ProjectButton
+              label="View Code"
+              background="neutral"
+              onClick={() => window.open(project.viewCode, "_blank")}
+            >
+            </ProjectButton>
           </div>
         </div>
       ))}
