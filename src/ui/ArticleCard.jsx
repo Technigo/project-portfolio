@@ -8,7 +8,8 @@ export const ArticleCard = ({ image, title, description, link }) => {
     <div className="article-card">
       <img src={image} alt={title} className="article-image" />
       <div className="article-content">
-        <span className="article-date">October 21</span>
+      <button className="tag-button-date">
+        <span className="article-date">October 21</span></button>
         <h3 className="article-title">{title}</h3>
         <p className="article-description">{description}</p>
         <a href={link} target="_blank" rel="noopener noreferrer">

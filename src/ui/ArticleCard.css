@@ -1,11 +1,10 @@
 .article-card {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
   padding: 1rem;
   align-self: stretch;
   width: 74rem;
-  gap: 2rem;
+  gap: 7.8125rem;
   width: 100%;
   /* Allow full width */
   max-width: 74rem;
@@ -52,6 +51,16 @@
   /* Darker gray on hover */
 }
 
+/* Ensure that links styled as buttons do not show underlines */
+.article-card a {
+  text-decoration: none; /* Remove underline from link */
+}
+
+/* In case of hover effects, you may want to define those as well */
+.article-card a:hover {
+  text-decoration: none; /* Ensure underline is removed on hover */
+}
+
 @media (max-width: 768px) {
   .article-card {
     flex-direction: column;
@@ -60,8 +69,6 @@
     /* Center align items */
     text-align: left;
     /* Left-align text */
-    padding-bottom: 8rem;
-
   }
 
   .article-image {
