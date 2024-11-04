@@ -6,7 +6,7 @@ export const Button = ({ text, onClick, className, icon }) => {
   return (
     <button onClick={onClick} className={`button ${className}`}>
       {icon && <img src={icon} alt="" className="button-icon" />} {/* Render icon if provided */}
-      {text}
+      <span>{text}</span>
     </button>
   );
 };
