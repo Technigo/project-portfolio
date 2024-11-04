@@ -2,7 +2,6 @@
     --primary-color: #ff5a5f;
     --text-color: #333;
     --bg-color: #f9f9f9;
-    --button-color: #333;
     --button-bg-color: #fff;
 }
 
@@ -10,9 +9,25 @@
     color: #000;
     font-family: Hind;
     font-size: 1.125rem;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+}
+
+.article-title {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 2.125rem;
+    text-align: left;
+}
+
+.my-words-title {
+    color: #f50b74;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.125rem;
+    text-align: left;
 }
 
 .articles-container {
@@ -21,13 +36,6 @@
     flex-direction: column;
     gap: 16px;
     background-color: #FFECEA;
-}
-
-.section-title {
-    font-size: 24px;
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 16px;
 }
 
 .article-card {
@@ -44,32 +52,17 @@
     border-left: 10px solid #FF4575;
 }
 
-.article-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--text-color);
-}
-
 .article-tag {
     font-size: 12px;
-    color: var(--primary-color);
+    color: #ffffff;
+    background-color: #333;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 8px;
-    background-color: #333;
-    color: #ffffff;
     padding: 4px 8px;
     border-radius: 4px;
-    font-size: 12px;
+    margin-bottom: 8px;
 }
 
-/* .article-body {
-    font-size: 14px;
-    color: var(--text-color);
-    margin: 0 0 12px 0;
-} */
-
-/* Buttons */
 .article-buttons {
     max-width: 200px;
     flex-direction: column;
@@ -80,38 +73,32 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    /* Mellanrum mellan ikonen och texten */
     padding: 8px 16px;
     border-radius: 30px;
     border: none;
     background-color: white;
-    /* Ljus bakgrundsfärg */
     color: black;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-decoration: none;
-    /* Ingen understrykning */
 }
 
 .article-link {
     color: black;
-
 }
 
 /* Tablet View */
 @media (min-width: 768px) {
     .articles-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
         padding: 32px;
     }
 
-    .section-title {
-        font-size: 28px;
-    }
-
     .article-card {
-        max-width: 700px;
         padding: 24px;
     }
 
@@ -122,44 +109,34 @@
     .article-body {
         font-size: 16px;
     }
-
-    .article-button {
-        font-size: 16px;
-    }
 }
 
 /* Desktop View */
 @media (min-width: 1024px) {
     .articles-container {
-        display: grid;
+        justify-content: center;
         grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
+        gap: 10px;
         padding: 40px;
-        max-width: 1200px;
         margin: 0 auto;
     }
 
-    .section-title {
-        font-size: 32px;
-        grid-column: span 2;
-        margin-bottom: 32px;
-    }
-
     .article-card {
-        max-width: none;
-        flex-direction: column;
-    }
-}
-
-
-@media (max-width: 767px) {
-    .article-button {
-        max-width: 200px;
-        /* Begränsar bredden på mobil */
+        max-width: 600px;
+        /* Begränsar bredden på korten */
+        padding: 10px;
+        /* Minskar padding */
+        margin: 0 auto;
+        /* Centrerar korten inom grid */
     }
 
-    .article-buttons {
-        align-items: flex-start;
-        /* Vänsterjusterar knapparna i sin container */
+    .article-title {
+        font-size: 20px;
+        /* Gör titeln mindre om det behövs */
+    }
+
+    .article-body {
+        font-size: 16px;
+        /* Gör brödtexten mindre om det behövs */
     }
 }

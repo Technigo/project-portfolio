@@ -1,39 +1,48 @@
 :root {
-    --darkblue: #200e3a;
-    --midblue: #38419d;
-    --lightblue: #3887be;
-    --green: #52d3d8;
+    --blue: #0B24F5;
+    --pink: #EB5577;
+    --lightblue: #2483E0;
+    --yellow: #FFDE30;
 }
 
 .skills-section {
     background-color: var(--blue);
     color: #ffffff;
     display: flex;
-
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    padding: 6rem 1rem;
 }
 
 .skills-box {
-    padding: 128px 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
+    width: 100%;
 }
 
 .skills-title {
     font-family: "Montserrat", sans-serif;
     font-size: 56px;
     font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+
+.skills-part-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .skills-part {
-
     display: flex;
-    align-content: space-between;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .skills-part p {
@@ -44,8 +53,9 @@
 }
 
 .tech {
-    background-color: var(--darkblue);
-    padding: 2px;
+    background-color: var(--pink);
+    color: white;
+    padding: 4px 16px;
     margin-bottom: 16px;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
@@ -54,7 +64,8 @@
 
 .toolbox {
     background-color: var(--lightblue);
-    padding: 2px;
+    color: white;
+    padding: 4px 16px;
     margin-bottom: 16px;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
@@ -62,61 +73,35 @@
 }
 
 .more {
-    background-color: var(--green);
-    padding: 2px;
-    margin-bottom: 16px;
+    background-color: var(--yellow);
     color: #000000;
+    padding: 4px 16px;
+    margin-bottom: 16px;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 600;
 }
 
-.skills-part p {
-    font-family: "Hind", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-}
+/* Tablet View */
+@media (min-width: 768px) {
+    .skills-part-box {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 
-@media (min-width: 620px) {
-    .skills-box {
-        padding: 128px 32px;
+    .skills-title {
+        font-size: 64px;
     }
 }
 
-@media (min-width: 1200px) {
-    .skills-box {
-        padding: 128px 161px;
+/* Desktop View */
+@media (min-width: 1024px) {
+    .skills-part-box {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
     }
 
     .skills-title {
         font-size: 80px;
-    }
-
-    .skills-part-box {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .skills-part {
-        align-items: flex-start;
-    }
-
-    .tech {
-        font-size: 32px;
-    }
-
-    .toolbox {
-        font-size: 32px;
-    }
-
-    .more {
-        font-size: 32px;
-    }
-}
-
-@media (min-width: 1500px) {
-    .skills-box {
-        padding: 128px 234px;
     }
 }

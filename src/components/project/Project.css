@@ -1,88 +1,26 @@
+/* Box-sizing för att inkludera padding och border i elementets bredd */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
-    --darkblue: #200e3a;
-    --midblue: #38419d;
+    --blue: #0B24F5;
     --lightblue: #3887be;
     --green: #52d3d8;
     --font-color: #333;
     --button-bg: #d1cbcb;
-    /* Ljus bakgrundsfärg för knappen */
     --button-font-color: #333;
-    /* Textfärg för knappen */
 }
 
-
-h2 {
-
-    color: #0B24F5;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 3.125rem;
-    /* 117.857% */
-}
-
-
-.project-body {
-    color: #000;
-    font-family: Hind;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/* Container for all projects */
-.projects-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-/* Individual Project Card */
-.project-card {
-
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-}
-
-.project-title {
-    color: #000;
-    font-family: Montserrat;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-
-
-}
-
-/* Project Image */
-.project-image {
-    width: 100%;
-    margin-bottom: 12px;
-    border-bottom: var(--midblue) solid 10px;
-    border-left: var(--midblue) solid 10px;
-}
-
-/* Project Content */
-.project-content {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-/* Title and Body */
-.project-title {
-    font-size: 20px;
-    color: var(--darkblue);
+html,
+body {
+    overflow-x: hidden;
+    /* Förhindrar sidrullning */
     margin: 0;
+    padding: 0;
 }
-
 
 /* Tags */
 .project-tags {
@@ -99,7 +37,68 @@ h2 {
     font-size: 12px;
 }
 
-/* Buttons */
+
+
+h2 {
+    color: var(--blue);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.125rem;
+}
+
+.project-body {
+    color: #000;
+    font-family: Hind;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.projects-container {
+    width: 100%;
+    max-width: 1200px;
+    /* Begränsar maxbredd för att undvika sidrullning */
+    margin: 0 auto;
+    /* Centrerar innehållet */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+    /* Extra padding för att undvika att innehåll går utanför */
+}
+
+.project-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #fff;
+    max-width: 100%;
+    /* Begränsar bredd för att undvika sidrullning */
+}
+
+.project-image {
+    width: 100%;
+    max-width: 100%;
+    /* Säkerställer att bilden inte överskrider kortets bredd */
+    margin-bottom: 12px;
+    border-bottom: var(--blue) solid 10px;
+    border-left: var(--blue) solid 10px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-title {
+    font-size: 20px;
+    color: var(--darkblue);
+    margin: 0;
+}
+
 .project-buttons {
     display: flex;
     flex-direction: column;
@@ -110,43 +109,29 @@ h2 {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    /* Mellanrum mellan ikonen och texten */
     padding: 8px 16px;
     border-radius: 30px;
     border: none;
     background-color: var(--button-bg);
-    /* Ljus bakgrundsfärg */
     color: var(--button-font-color);
-    /* Textfärg */
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-decoration: none;
-    /* Ingen understrykning */
 }
 
 .project-button:hover {
     background-color: #e0e0e0;
-    /* Ändra färg vid hover */
-}
-
-.project-button svg {
-    font-size: 20px;
-    /* Storlek på ikonen */
-    color: var(--button-font-color);
-    /* Färg på ikonen */
 }
 
 .project-button a {
     color: var(--button-font-color);
-    /* Textfärg på länken */
     text-decoration: none;
     display: flex;
     align-items: center;
 }
 
-/* Tablet View */
 @media (min-width: 768px) {
     .projects-container {
         padding: 32px;
@@ -172,7 +157,6 @@ h2 {
     }
 }
 
-/* Desktop View */
 @media (min-width: 1024px) {
     .projects-container {
         max-width: 1200px;
@@ -181,7 +165,8 @@ h2 {
     }
 
     .project-card {
-        max-width: 1000px;
+        max-width: 100%;
+        /* Håller kortet inom maxbredden för containern */
         margin: 0 auto;
     }
 
