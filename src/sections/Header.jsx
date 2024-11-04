@@ -9,7 +9,7 @@ export const Header = () => {
       </h1>
       <h1 className="name">Anna Hansen</h1>
       <p className="intro-text">
-        Creative Frontend Developer with a background in Finance and Sales Administration
+        Creative Frontend Developer with a background in Finance and Business Operations.
       </p>
     </div>
   );
