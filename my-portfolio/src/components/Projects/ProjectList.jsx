@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import projectsData from '../../../../projects.json'; // Adjust the import path as necessary
+import projectsData from '../../../../projects.json'; 
 
 const ProjectList = () => {
     return (
@@ -10,7 +10,7 @@ const ProjectList = () => {
                 <ProjectCard 
                     key={project.name}
                     project={project}
-                    layout={index % 2 === 0 ? 'left' : 'right'} // This should toggle left and right classes
+                    layout={index % 2 === 0 ? 'left' : 'right'} 
                 />
             ))}
         </div>
