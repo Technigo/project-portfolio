@@ -1,4 +1,3 @@
-import "./ProjectImages.css";
 
 import imgOne from "../assets/project-images/img-one.png";
 import imgTwo from "../assets/project-images/img-two.png";

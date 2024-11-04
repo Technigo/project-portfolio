@@ -1,7 +1,6 @@
-// src/components/Buttons.jsx
 import "./Buttons.css";
-import netlifyIcon from "../assets/icons/netlify.svg"; // Import the Netlify icon
-import githubIcon from "../assets/icons/github.svg"; // Import the GitHub icon
+import netlifyIcon from "../assets/icons/netlify.svg";
+import githubIcon from "../assets/icons/github.svg";
 
 export const Buttons = ({ buttons }) => {
     const handleButtonClick = (url) => {
@@ -17,7 +16,7 @@ export const Buttons = ({ buttons }) => {
                     className="button"
                 >
                     <img
-                        src={button.icon} // Use the icon from the button object
+                        src={button.icon}
                         alt={`${button.text} Icon`}
                         className="icon"
                     />

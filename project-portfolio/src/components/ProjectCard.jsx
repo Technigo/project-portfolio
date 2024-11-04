@@ -1,5 +1,4 @@
-// src/components/ProjectCard.jsx
-import React from "react";
+
 import "./ProjectCard.css";
 import { Buttons } from "./Buttons";
 import imgLeft from "../assets/project-images/img-one.png";
@@ -9,7 +8,6 @@ import netlifyIcon from "../assets/icons/netlify.svg";
 import githubIcon from "../assets/icons/github.svg";
 
 export const ProjectCard = ({ title, image, description, tags, netlifyUrl, githubUrl }) => {
-	// Create an array of button objects with their respective icons
 	const projectButtons = [
 		{
 			url: netlifyUrl,
@@ -23,7 +21,7 @@ export const ProjectCard = ({ title, image, description, tags, netlifyUrl, githu
 		},
 	];
 
-	// Mapping images based on the `image` prop
+	// Mapping images 
 	let displayedImage;
 	if (image === "img-one.png") displayedImage = imgLeft;
 	if (image === "img-two.png") displayedImage = imgMiddle;
@@ -31,7 +29,6 @@ export const ProjectCard = ({ title, image, description, tags, netlifyUrl, githu
 
 	return (
 		<div className="project-card">
-			{/* Wrap the image in a container for centering */}
 			<div className="project-image-wrapper">
 				<img src={displayedImage} alt={`${title} screenshot`} className="project-image" />
 			</div>
