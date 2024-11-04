@@ -1,0 +1,13 @@
+import React from 'react';
+import './Tech.css';
+
+const Tech = () => {
+  return (
+    <section id="tech" className="tech">
+      <h2>Tech</h2>
+      <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, MongoDB, Web Accessibility, APIs, mob-programming, pair-programming, GitHub.</p>
+    </section>
+  );
+};
+
+export default Tech;

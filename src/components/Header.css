@@ -1,0 +1,92 @@
+.header {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 128px 0;
+    text-align: center;
+  }
+  
+  .header h3 {
+    font-size: 1rem; /* Small and subtle */
+    font-weight: 300; /* Light weight */
+    color: #B0B0B0; /* Light gray color for contrast */
+    margin-bottom: 5px; /* Spacing below 'Hi there, I’m' */
+  }
+  
+  .header h1 {
+    font-size: 4rem; /* Bold and large */
+    font-family: Poppins, sans-serif;
+    font-weight: 800; /* Extra bold for prominence */
+    color: #FFFFFF; /* Pure white */
+    margin-bottom: 15px;
+  }
+  
+  .header h1 .highlight {
+    display: inline-block; /* Separate styling for the highlight */
+    font-weight: 800;
+    color: #FFFFFF; /* Ensure contrast */
+  }
+  
+  .header .tagline {
+    font-size: 1.5rem; /* Medium-sized */
+    font-weight: 400; /* Lighter font weight */
+    color: #FFFFFF; /* Pure white */
+    margin-top: 10px;
+    margin-bottom: 50px; /* Space between tagline and gallery */
+  }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: -40px; /* Slight overlap for images */
+    margin-top: 30px;
+  }
+  
+  .image-gallery img {
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Subtle box shadow for depth */
+    max-width: 300px;
+    width: 100%; /* Responsive width */
+    height: auto;
+  }
+  
+  .bio-section {
+    margin-top: 60px; /* Adjusted for space */
+    text-align: center;
+  }
+  
+  .bio-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .bio-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #FFFFFF;
+  }
+  
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2.5rem; /* Responsive for smaller screens */
+    }
+    .header h3 {
+      font-size: 0.9rem; /* Smaller font for smaller screens */
+    }
+    .header .tagline {
+      font-size: 1.2rem;
+    }
+    .image-gallery {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Adjust for mobile display */
+    }
+    .image-gallery img {
+      margin-bottom: 15px;
+      max-width: 90%;
+    }
+  }
