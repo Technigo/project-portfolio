@@ -5,10 +5,12 @@ import Bio from './components/Introduction/Bio';
 import Contact from './components/Contact/Contact'; 
 import Tech from './components/Tech/Tech';
 import Skills from './components/Skills/Skills';
-import Projects from './components/Projects/Projects';
+import Projects from './components/Projects/ProjectList';
 import './App.css';
 
 const App = () => {
+  console.log('Rendering App...');
+
   return (
     <div className="app-container">
       <Header />
