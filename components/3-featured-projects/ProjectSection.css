@@ -1,0 +1,121 @@
+/* ProjectSection.css  */
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Main section layout */
+.project-section {
+  width: 100%;
+}
+
+/* Horizontal scrolling container */
+.project-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 0px 0 0 24px;
+  padding-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+/* Custom scrollbar styling */
+.project-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Project card layout */
+.project-card {
+  min-width: 300px;
+  max-width: 300px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.project-title {
+  text-align: left;
+}
+
+.project-info {
+  color: black;
+  text-align: left;
+}
+
+/* Button styles */
+.button-section {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 32px;
+  width: 100%;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 8px 0;
+}
+
+/* Live demo button */
+.btn.netlify {
+  background-color: #F27630;
+  color: white;
+  border: none;
+}
+
+.btn.netlify:hover {
+  background-color: #E06520;
+}
+
+/* View code button */
+.btn.github {
+  background-color: transparent;
+  color: #F27630;
+  border: 2px solid #F27630;
+}
+
+.btn.github:hover {
+  background-color: #FFF1EB;
+}
+
+/* Tablet and Desktop styles (667px and above) */
+@media (min-width: 667px) {
+  .project-card {
+    min-width: 400px;
+    max-width: 400px;
+    flex: 0 0 400px;
+  }
+
+  .project-container {
+    padding: 0 24px 20px 24px;
+    gap: 64px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}

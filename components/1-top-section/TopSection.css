@@ -1,0 +1,104 @@
+/* TopSection.css */
+
+/* Mobile-first base styles */
+.top-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: left;
+  padding: 64px 24px 24px 24px;
+}
+
+.profile-img-section {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+}
+
+/* Circular profile image container */
+.profile-image {
+  width: 90%;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-info {
+  width: 100%;
+}
+
+/* Social media icons layout */
+.social-icons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 40px 0 0 0;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.social-icons-left {
+  justify-content: flex-start;
+}
+
+/* Tablet layout (667px - 1023px) */
+@media (min-width: 667px) and (max-width: 1023px) {
+  .profile-image {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .profile-img-section {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop layout (1024px and above) */
+@media (min-width: 1024px) {
+  .top-section-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 24px;
+  }
+
+  .top-section {
+    flex: 1;
+    max-width: 50%;
+    padding: 0;
+  }
+
+  .profile-img-section {
+    width: auto;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .profile-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .profile-info {
+    width: 100%;
+  }
+}
