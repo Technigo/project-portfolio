@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "./Button.css";
+import "./Button.css"
 
 export const Button = ({ text, onClick, className, icon }) => {
   console.log(`Rendering Button: ${text}`); // Log the button text

@@ -12,14 +12,16 @@ import "./App.css"
 export const App = () => {
 
   return (
-    <><Header />
+    <>
+      <Header />
       <ProjectsGallery />
       <Bio />
       <FeaturedProjects />
       <Tech />
       <Skills />
       <Words />
-      <Contact /></>
+      <Contact />
+    </>
   )
 }
 

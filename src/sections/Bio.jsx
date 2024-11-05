@@ -1,5 +1,5 @@
-import { Heading } from "../ui/Heading";
-import "./Bio.css";
+import { Heading } from "../ui/Heading"
+import "./Bio.css"
 
 export const Bio = () => {
   return (

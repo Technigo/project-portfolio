@@ -1,7 +1,7 @@
-import { Heading } from "../ui/Heading";
-import articlesData from "../data/articles.json";
+import { Heading } from "../ui/Heading"
+import articlesData from "../data/articles.json"
 import "./Words.css";
-import { ArticleCard } from "../ui/ArticleCard"; // Adjust path as necessary
+import { ArticleCard } from "../ui/ArticleCard"
 
 export const Words = () => {
   return (

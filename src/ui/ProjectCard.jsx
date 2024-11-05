@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import { Heading } from "./Heading";
-import { Button } from "./Button";
-import webIcon from "../assets/Web_Icon.svg";
-import gitHubIcon from "../assets/Github_Icon.svg";
-import "./ProjectCard.css";
+import { Heading } from "./Heading"
+import { Button } from "./Button"
+import webIcon from "../assets/Web_Icon.svg"
+import gitHubIcon from "../assets/Github_Icon.svg"
+import "./ProjectCard.css"
 
 export const ProjectCard = ({
   image,
@@ -55,5 +55,5 @@ export const ProjectCard = ({
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

@@ -1,6 +1,6 @@
-import { Heading } from "../ui/Heading";
-import skillsData from "../data/skills.json";
-import "./Skills.css";
+import { Heading } from "../ui/Heading"
+import skillsData from "../data/skills.json"
+import "./Skills.css"
 import "../ui/Tag.css"
 
 export const Skills = () => {
