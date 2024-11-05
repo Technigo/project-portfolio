@@ -1,104 +1,102 @@
 .project-card-container {
-    overflow-x: hidden;
     display: flex;
     font-family: 'Poppins', sans-serif;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    flex-direction: column;
     background-color: #fff;
-    padding: 16px; overflow-x: hidden;
-    margin-bottom: 40px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    border-radius: 16px;
+    border-radius: 12px; 
+    overflow: hidden;
+    box-shadow: none;
+    margin: 0;
+    transition: transform 0.3s;
+    padding: 60px 80px; 
+    width: calc(100% - 160px);
+}
+
+.project-card-container.left {
+    flex-direction: row;
+}
+
+.project-card-container.right {
+    flex-direction: row-reverse;
 }
 
 .project-card-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 16px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
+    max-width: 600px;
+    border-radius: 12px; 
 }
 
 .project-card-content {
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    max-width: 600px;
 }
 
 .project-card-tags {
     display: flex;
-    gap: 8px;
+    gap: 4px; 
+    margin-bottom: 5px;
 }
 
 .project-card-tag {
     background-color: transparent;
-    border: 2px solid black;
-    border-radius: 12px;
-    padding: 4px 12px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 6px 0; 
+    width: 120px; 
     font-size: 16px;
     font-weight: 500;
-    flex: 1;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    box-sizing: border-box; 
 }
 
+
 .project-card-title {
-    color: black;
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 32px; /
+    font-weight: 700; /* Bolder weight for title */
 }
 
 .project-card-description {
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-top: 8px;
+    font-size: 20px; /* Increased font size for description */
+    margin-bottom: 30px;
+    color: #555;
 }
 
 .project-card-links {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
+    gap: 8px; /* Increased gap for buttons */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start;
 }
 
 .project-card-button {
     display: flex;
     align-items: center;
-    gap: 12px;
-    background-color: black;
-    color: white;
-    padding: 6px 8px;
-    border-radius: 24px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 12px; 
+    padding: 14px 24px; 
     text-decoration: none;
-    font-size: 16px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 18px; 
+    font-weight: 500;
+    max-width: 303px; /* Set a fixed maximum width as per Figma */
+    min-width: 303px;
+    transition: background-color 0.3s;
 }
 
 .project-card-button:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #333;
 }
 
 .icon {
-    width: 24px;
+    margin-right: 10px; /* Space between icon and text */
+    width: 24px; /* Larger icon size */
     height: 24px;
-}
-
-/* Media Queries */
-@media (max-width: 1200px) {
-    .project-card-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .project-card-image {
-        width: 100%;
-        height: auto;
-    }
-
-    .project-card-content {
-        max-width: 100%; overflow-x: hidden;
-    }
 }
