@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ProjectList.css';
 import ProjectCard from './ProjectCard';
-import projectsData from '../../../../projects.json'; 
+import projectsData from '../../../projects.json'; 
 import MoreButton from './MoreButton';
 
 const ProjectList = () => {

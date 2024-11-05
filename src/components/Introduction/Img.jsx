@@ -1,5 +1,5 @@
 import './Img.css';
-import projects from '../../../../projects.json';
+import projects from '../../../projects.json';
 
 const Img = () => {
   return (
