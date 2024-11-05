@@ -27,23 +27,37 @@ export const App = () => {
 //Structure of folders and components
 ///src
 // ├── ui                   // Reusable components
-// │   ├── Button.js
-// │   ├── Card.js          // Generic card component for articles and projects
-// │   ├── Heading.js       //H2 Heading
+// │   ├── Button.jsx
+// │   ├── ArticleCard.js   // Generic card component for articles
+//      ── ProjectCard.js   // Generic card component for projects
+// │   ├── Heading.js       //H2 and H3 Headings
 // │   ├── Icon.js
 // │   ├── Image.js
-// │   ├── TagButton.js
-// │   └── TextBox.js
+// │   ├── Tag.css
+// │   
 // │
 // ├── sections             // Specific sections of the portfolio
 // │   ├── Header.js         H1 heading and H3 headings
-// │   ├── ProjectsGallery.js 
+// │   ├── ProjectsGallery.jsx 
 // │   ├── Bio.js
-// │   ├── FeaturedProjects.js 
+// ├   ├── FeaturedProjects.jsx
 // │   ├── Tech.js
-// │   ├── Skills.js
-// │   ├── Words.js         
-// │   ├── Contact.js       
-// │   └── Footer.js
+// │   ├── Skills.jsx
+// │   ├── Words.jsx         
+//     └── Contact.jsx
+// │  
+// │   
 // │
-// └── styles               // CSS or styling files
+// └── styles               // CSS for all sections
+// │  
+// │   
+// │
+// └──Data  // articles.json, projects.json and skills.json
+ 
+// │   
+// │
+// └──Public  // Images that are linked in the json files.
+
+// │   
+// │
+// └──Assets  // Other images on the page.
