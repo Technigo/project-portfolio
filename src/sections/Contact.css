@@ -35,8 +35,7 @@
   /* Create ellipse shape */
   object-fit: cover;
   /* Ensure the image covers the shape */
-  margin-bottom: 1rem;
-  /* Space below image */
+  margin-top: 1rem;
 }
 
 
@@ -44,9 +43,7 @@
   color: #000;
   font-family: Poppins;
   font-size: 30px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   padding: 4rem 0rem;
 }
 
@@ -68,8 +65,32 @@
   /* Maintain aspect ratio */
 }
 
+@media (max-width: 786px) {
+.contact-info {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 4rem 0rem 2rem;
+ }
+}
+
 @media (max-width: 480px) {
-  .contact-heading {
-    padding-top: 4rem;
-  }
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+ }
+.contact-info {
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+  .social-links {
+    display: flex;
+    flex-direction: row; /* Keep icons in a row */
+    justify-content: flex-start; /* Align icons to the left */
+    align-items: flex-start; /* Align social icons to the left */
+    gap: 1rem;
+    margin-bottom: 4rem;
+    padding-right: 2rem;
+ }
 }
