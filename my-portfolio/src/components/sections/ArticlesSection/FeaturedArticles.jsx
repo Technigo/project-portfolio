@@ -4,7 +4,7 @@ import { Grid } from "../../ui/GridLayout/Grid.jsx";
 import { images } from "../../ui/Images/Images.jsx";
 import articlesData from "../../../data/articles.json";
 import { Button } from "../../ui/Buttons/Button.jsx";
-import iconArrow from "../../../assets/iconArrow.svg";
+import iconArrowWhite from "../../../assets/iconArrowWhite.svg";
 import "./FeaturedArticles.css"
 
 
@@ -31,7 +31,7 @@ export const FeaturedArticles = () => {
         text="Read More Articles"
         isViewMore={true}
         sectionType="article"
-        icon={iconArrow}
+        icon={iconArrowWhite}
         onClick={() => { }}
       />
       </div>

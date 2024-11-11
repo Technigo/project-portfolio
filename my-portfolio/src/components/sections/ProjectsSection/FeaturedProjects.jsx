@@ -5,7 +5,7 @@ import { images } from "../../ui/Images/Images.jsx";
 import { Button } from "../../ui/Buttons/Button.jsx";
 import { Tag } from "../../ui/Tags/Tags.jsx";
 import projectsData from "../../../data/projects.json";
-import iconArrow from "../../../assets/iconArrow.svg";
+import iconArrow from "../../../assets/iconArrow.svg"; 
 import "./FeaturedProjects.css"
 
 export const FeaturedProjects = () => {
