@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Card } from "../components/Card/Card";
 import { ArrowButton } from "../components/ArrowButton/ArrowButton";
 import { Grid } from "../ui/Grid/Grid";
@@ -6,14 +7,19 @@ import data from "../../projects.json";
 import "./ProjectSection.css";
 
 export const ProjectSection = () => {
+  const [visibleProjects, setVisibleProjects] = useState(4); // Start with 4 projects
   const projects = data.projects;
+
+  const handleShowMore = () => {
+    setVisibleProjects((prevCount) => prevCount + 2); // Show 2 more on click
+  };
 
   return (
     <Grid background="white">
       <section className="project-section">
         <SectionTitle>Featured Projects</SectionTitle>
         <div className="project-cards">
-          {projects.map((project, index) => (
+          {projects.slice(0, visibleProjects).map((project, index) => (
             <Card
               key={index}
               image={project.image}
@@ -26,7 +32,13 @@ export const ProjectSection = () => {
             />
           ))}
         </div>
-        <ArrowButton text="See more projects" variant="black-on-white" />
+        {visibleProjects < projects.length && (
+          <ArrowButton
+            text="See more projects"
+            variant="black-on-white"
+            onClick={handleShowMore}
+          />
+        )}
       </section>
     </Grid>
   );
