@@ -11,7 +11,7 @@ import "./FeaturedArticles.css"
 export const FeaturedArticles = () => {
   console.log(articlesData);
   return (
-    <Grid background="black">
+    <Grid background="black" sectionType="article">
       <div className="articles-container">
       <div className="title">
         <H2> My words</H2>
@@ -27,11 +27,12 @@ export const FeaturedArticles = () => {
           button={<Button text="Read Article" isReadArticle={true} />}
         />
       ))}
-      <Button
+      <Button 
         text="Read More Articles"
         isViewMore={true}
+        sectionType="article"
         icon={iconArrow}
-        onClick={() => {/* Handle the click event, e.g., navigate to projects page */ }}
+        onClick={() => { }}
       />
       </div>
     </Grid>

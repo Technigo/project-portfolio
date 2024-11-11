@@ -14,7 +14,7 @@ export const Card = ({ imageSource, sectionType, children, cardTitle, cardDescri
       <div className="tags-container"> 
         {children} 
         </div>
-        <p>{cardTitle}</p>
+        <BodyText>{cardTitle}</BodyText>
         <BodyText>{cardDescription}</BodyText>
         <div className="button-container">
           {sectionType === "project" ? (
