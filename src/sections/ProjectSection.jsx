@@ -1,12 +1,12 @@
-import { Card } from '../components/Card/Card'
-import { ArrowButton } from '../components/ArrowButton/ArrowButton'
-import { Grid } from '../ui/Grid/Grid'
-import { SectionTitle } from '../ui/Typography/Typography'
-import data from '../../../projects.json'
-import './ProjectSection.css'
+import { Card } from "../components/Card/Card";
+import { ArrowButton } from "../components/ArrowButton/ArrowButton";
+import { Grid } from "../ui/Grid/Grid";
+import { SectionTitle } from "../ui/Typography/Typography";
+import data from "../../projects.json";
+import "./ProjectSection.css";
 
 export const ProjectSection = () => {
-  const projects = data.projects
+  const projects = data.projects;
 
   return (
     <Grid background="white">
@@ -29,5 +29,5 @@ export const ProjectSection = () => {
         <ArrowButton text="See more projects" variant="black-on-white" />
       </section>
     </Grid>
-  )
-}
+  );
+};

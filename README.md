@@ -1,24 +1,8 @@
-<h1 align="center">
-  <a href="">
-    <img src="/react-p.svg" alt="Project Banner Image">
-  </a>
-</h1>
+# React + Vite
 
-# Joyce Kuo - React Portfolio Project
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-In this project, I use React to build a portfolio website with a responsive Figma design to follow. 
+Currently, two official plugins are available:
 
-## The Process
-
-Throughout the development of this project, I adopted a component-driven approach. I began by outlining the overall structure and making sure I knew how all the elements were related. 
-
-As I created each component, I focused on maintaining the design and referring back to Figma frequently, and paying special attention to responsive layouts. All of my section files had a corresponding CSS file so that I could apply styling unique to each section. Incorporating data from JSON files made it easy to update and edit data without disrupting the design.
-
-I stumbled on some design issues. For instance, manipulating the images in the hero section so that they were layered correctly and looked good in all layouts was especially tricky. I used mostly rubber ducking, trial and error, and ChatGPT to help me resolve design issues. 
-
-## Next Steps
-
-I would love to tackle some of the stretch goals, like adding a favicon and creating a custom domain name. I would also create functionality for the "See more projects" button to display more than 4 projects. Creating placeholder articles also got me inspired to write the articles for real 😅
-
-## View it Live
-https://joyce-kuo-portfolio.netlify.app/
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

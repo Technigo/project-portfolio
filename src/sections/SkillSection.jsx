@@ -1,11 +1,11 @@
 import { SkillCard } from "../components/SkillCard/SkillCard";
 import { Grid } from "../ui/Grid/Grid";
 import { SectionTitle } from "../ui/Typography/Typography";
-import data from '../../../skills.json'
-import './SkillSection.css'
+import data from "../../skills.json";
+import "./SkillSection.css";
 
 export const SkillSection = () => {
-  const skills = data.skills
+  const skills = data.skills;
 
   return (
     <Grid background="white">
@@ -22,5 +22,5 @@ export const SkillSection = () => {
         </div>
       </section>
     </Grid>
-  )
-}
+  );
+};

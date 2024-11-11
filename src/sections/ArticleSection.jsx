@@ -1,12 +1,12 @@
-import { ArticleCard } from "../components/ArticleCard/ArticleCard"
-import { ArrowButton } from "../components/ArrowButton/ArrowButton"
-import { Grid } from "../ui/Grid/Grid"
-import { SectionTitle } from "../ui/Typography/Typography"
-import data from '../../../articles.json'
-import './ArticleSection.css'
+import { ArticleCard } from "../components/ArticleCard/ArticleCard";
+import { ArrowButton } from "../components/ArrowButton/ArrowButton";
+import { Grid } from "../ui/Grid/Grid";
+import { SectionTitle } from "../ui/Typography/Typography";
+import data from "../../articles.json";
+import "./ArticleSection.css";
 
 export const ArticleSection = () => {
-  const articles = data.articles
+  const articles = data.articles;
 
   return (
     <Grid background="black">
@@ -27,5 +27,5 @@ export const ArticleSection = () => {
         <ArrowButton text="See more articles" variant="white-on-black" />
       </section>
     </Grid>
-  )
-}
+  );
+};
