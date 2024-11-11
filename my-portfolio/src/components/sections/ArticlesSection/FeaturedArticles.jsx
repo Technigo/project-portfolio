@@ -12,8 +12,9 @@ export const FeaturedArticles = () => {
   console.log(articlesData);
   return (
     <Grid background="black">
+      <div className="articles-container">
       <div className="title">
-        <H2> Featured Articles</H2>
+        <H2> My words</H2>
       </div>
       {articlesData.articles.map((article) => (
         <Card
@@ -32,6 +33,7 @@ export const FeaturedArticles = () => {
         icon={iconArrow}
         onClick={() => {/* Handle the click event, e.g., navigate to projects page */ }}
       />
+      </div>
     </Grid>
   );
 };

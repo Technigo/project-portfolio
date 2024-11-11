@@ -10,6 +10,7 @@ import iconArrow from "../../../assets/iconArrow.svg";
 export const FeaturedProjects = () => {
   return (
     <Grid background="white">
+      <div className="projects-container">
       <H2>Featured Projects</H2>
       {projectsData.projects.map((project) => (
         <Card
@@ -35,6 +36,7 @@ export const FeaturedProjects = () => {
         icon={iconArrow}
         onClick={() => {}}
       />
+      </div>
     </Grid>
   )
 };

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "./Grid.css"
+import "./Grid.css";
 
   const spacing = {
     xsmall: "16px",
@@ -11,17 +11,27 @@ import "./Grid.css"
   };
 
 
-  export const Grid = ({ sectionType, gap, paddingTop, paddingBottom, paddingLeft, paddingRight, children }) => {
+  export const Grid = ({ 
+    sectionType, 
+    gap, 
+    paddingTop, 
+    paddingBottom, 
+    paddingLeft, 
+    paddingRight, 
+    background,
+    children 
+  }) => {
     const gapValue = sectionType === "article" ? spacing.xlarge : spacing.large;
     const paddingTopValue = sectionType === "article" ? spacing.large : spacing.xlarge;
     const paddingBottomValue = sectionType === "article" ? spacing.xlarge : spacing.large;
     const paddingLeftValue = sectionType === "article" ? spacing.small : spacing.xsmall;
     const paddingRightValue = sectionType === "article" ? spacing.small : spacing.xsmall;
 
+    const backgroundClass = background === "black" ? "black-background" : "white-background";
+
     return (
-      <div
+      <div className={`${backgroundClass} grid-section`}
         style={{
-          display: "grid",
           gap: spacing[gap] || gapValue,
           paddingTop: spacing[paddingTop] || paddingTopValue,
           paddingBottom: spacing[paddingBottom] || paddingBottomValue,
