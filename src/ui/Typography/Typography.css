@@ -1,3 +1,12 @@
+.header-one {
+  font-family: Urbanist;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+  margin: 0;
+  padding: 0;
+}
+
 .header-two {
   grid-column: span 4;
   color: var(--color-secondary);
@@ -5,15 +14,6 @@
   font-family: Urbanist;
   font-size: 3.75rem;
   font-weight: 700;
-  margin: 0;
-  padding: 0;
-}
-
-.header-one {
-  font-family: Urbanist;
-  font-size: 3.75rem;
-  font-weight: 700;
-  line-height: 3.75rem;
   margin: 0;
   padding: 0;
 }
@@ -38,10 +38,6 @@
 }
 
 @media(min-width: 667px) {
-  .header-two {
-    grid-column: span 8;
-  }
-
   .header-one {
     font-size: 5rem;
     line-height: 6.25rem;
@@ -49,16 +45,20 @@
     padding-top: 2.5rem;
   }
 
+  .header-two {
+    grid-column: span 8;
+  }
 }
 
 @media(min-width: 1024px) {
-  .header-two {
-    grid-column: span 12;
-  }
-
   .header-one {
     font-size: 6.25rem;
     line-height: 6.25rem;
+  }
+
+  .header-two {
+    grid-column: span 12;
+    font-size: 5rem;
   }
 
   .header-three {
