@@ -1,6 +1,6 @@
 import { Heading } from "../ui/Heading"
 import linkedInIcon from "../assets/Linkedin-icon.svg"
-import githubIcon from '../assets/Github_Icon.svg'
+import githubIcon from '../assets/Github_Icon_Black.svg'
 import stackOverflowIcon from '../assets/Stack_Icon.svg'
 import Twitter_Icon from "../assets/Twitter_Icon.svg"
 import Instagram_Icon from "../assets/Instagram_Icon.svg"
