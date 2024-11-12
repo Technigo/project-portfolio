@@ -7,8 +7,10 @@
     box-shadow: none;
     margin: 0;
     transition: transform 0.3s;
-    padding: 60px 80px; 
+    padding: 40px 40px; 
     width: calc(100% - 160px);
+    padding-top: 80px; 
+    padding-bottom: 80px;
 }
 
 .project-card-container.left {
@@ -35,14 +37,14 @@
 
 .project-card-tags {
     display: flex;
-    gap: 4px; 
+    gap: 8px; 
     margin-bottom: 5px;
 }
 
 .project-card-tag {
     background-color: transparent;
     border: 1px solid #000;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 6px 0; 
     width: 120px; 
     font-size: 16px;
@@ -57,12 +59,16 @@
 
 
 .project-card-title {
-    font-size: 32px;
-    font-weight: 700; 
+    font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: 500;
+    word-wrap: break-word;
 }
 
 .project-card-description {
-    font-size: 20px; 
+    font-size: 16px; 
+    font-weight: 400;
     margin-bottom: 30px;
     color: #555;
 }
@@ -107,13 +113,18 @@
         width: 100%;
     }
 
+    .project-card-content {
+        padding: 10px;
+    }
+
     .project-card-image {
         max-width: 100%;
         border-radius: 12px;
     }
 
     .project-card-content {
-        padding: 20px;
+        padding-left: 0px;
+        padding-top: 20px;
     }
 
     .project-card-title {
@@ -129,13 +140,20 @@
         min-width: unset;
         padding: 10px 16px;
     }
+
+    .project-card-tag{
+        font-size: 12px;
+    }
+
+    .project-card-tags {
+        gap: 4px;
+    }
 }
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
     .project-card-container {
-        padding: 40px;
-        width: calc(100% - 80px);
+        padding: 20px 20px 20px 0; 
     }
 
     .project-card-image {
@@ -167,4 +185,3 @@
         flex-direction: column;
     }
 }
-
