@@ -21,7 +21,9 @@ export const FeaturedProjects = () => {
           cardTitle={project.name}
           cardDescription={project.description}
           sectionType="project"
-          button={project.button}
+          // button={project.button}
+          netlify={project.netlify} // Pass the netlify link here
+          github={project.github} 
         >
           <div className="tag-container">
           {project.tags.map((tag, index) => (

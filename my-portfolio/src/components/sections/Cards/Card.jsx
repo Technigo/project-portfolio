@@ -7,7 +7,16 @@ import iconGithubWhite from "../../../assets/iconGithubWhite.svg";
 import iconWebWhite from "../../../assets/iconWebWhite.svg";
 import { Tag } from "../../ui/Tags/Tags.jsx";
 
-export const Card = ({ imageSource, sectionType, cardTag, cardTitle, cardDescription }) => {
+export const Card = ({ 
+  imageSource, 
+  sectionType, 
+  cardTag, 
+  cardTitle, 
+  cardDescription, 
+  netlify,
+  github,
+  link
+}) => {
   return (
     <article className={`${sectionType}-card`}>
       <img src={imageSource} className={`${sectionType}-img`} />
@@ -23,14 +32,23 @@ export const Card = ({ imageSource, sectionType, cardTag, cardTitle, cardDescrip
         <div className="button-container">
           {sectionType === "project" ? (
             <>
-              <Button text="Live Demo" icon={iconWeb} sectionType={sectionType}
-                onClick={() => { }} />
-              <Button text="View Code" icon={iconGithubWhite} sectionType={sectionType}
-                onClick={() => { }} />
-            </>
+              <Button text="Live Demo" 
+              icon={iconWeb} 
+              sectionType={sectionType}
+              onClick={() => window.open(netlify, "_blank")}
+              />
+              <Button text="View Code" 
+              icon={iconGithubWhite} 
+              sectionType={sectionType}
+              onClick={() => window.open(github, "_blank")}
+              />
+              </>
           ) : (
-            <Button text="Read Article" icon={iconWebWhite} sectionType={sectionType}
-              onClick={() => { }} />
+            <Button text="Read Article" 
+            icon={iconWebWhite} 
+            sectionType={sectionType}
+            onClick={() => window.open(link, "_blank")}
+            />
           )}
         </div>
         </div>

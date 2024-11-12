@@ -24,7 +24,8 @@ export const FeaturedArticles = () => {
           cardTitle={article.name}
           cardDescription={article.description}
           sectionType="article"
-          button={<Button text="Read Article" isReadArticle={true} />}
+          // button={<Button text="Read Article" isReadArticle={true} />}
+          link={article.link}
         />
       ))}
       </div>

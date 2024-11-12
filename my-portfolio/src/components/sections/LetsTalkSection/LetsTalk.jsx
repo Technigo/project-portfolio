@@ -1,6 +1,6 @@
 import "./LetsTalk.css"
 import profileImg from "../../../assets/profile-img.jpg";
-import { H2, BodyText } from "../../ui/Typography/Typography";
+import { H2, BodyTextLarge } from "../../ui/Typography/Typography";
 import { IconButton } from "../../ui/Buttons/IconButtons";
 
 export const LetsTalk = () => {
@@ -19,9 +19,9 @@ export const LetsTalk = () => {
         <H2>Lets talk</H2>
         <img className="profile-img" src={profileImg} alt="profile picture" />
         <div className="contact-section">
-          <BodyText>Fanny Henriques</BodyText>
-          <BodyText>+46(0)763 12 33 45</BodyText>
-          <BodyText>sara.svensson@mail.com</BodyText>
+          <BodyTextLarge>Fanny Henriques</BodyTextLarge>
+          <BodyTextLarge>+46(0)763 12 33 45</BodyTextLarge>
+          <BodyTextLarge>sara.svensson@mail.com</BodyTextLarge>
         </div>
         <div className="icons-container">
           {iconData.map(({ id, iconName, onClick }) => (
