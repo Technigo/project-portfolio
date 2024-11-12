@@ -6,7 +6,7 @@ export const Bio = () => {
     <div className="bio-card">
       <Heading heading="Bio" className="bio-heading" level={2} />
       <div className="bio-text">
-        Anna is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field.
+        Anna is a developer with a keen eye for detail, blending technical expertise with strong design sensibilities. She creates visually appealing, user-friendly interfaces while ensuring accessibility and inclusivity for all users. Her attention to detail and focus on functionality make her a valuable asset to any project.
       </div>
     </div>
   );
