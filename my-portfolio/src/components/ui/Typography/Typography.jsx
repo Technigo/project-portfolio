@@ -12,4 +12,6 @@ export const H3 = ({ children }) => <h3 className="heading3">{children}</h3>;
 
 export const BodyText = ({ children }) => <p className="bodytext">{children}</p>;
 
+export const BodyTextMedium = ({children}) => <p className="bodytext-medium">{children}</p>
+
 export const BodyTextLarge = ({ children }) => <p className="bodytext-large">{children}</p> 

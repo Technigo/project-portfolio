@@ -9,3 +9,34 @@
   padding-bottom: 128px;
 }
 
+.article-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.view-more-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Breakpoint for tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  .articles-container {
+    grid-column: span 8;
+   
+  }
+}
+/* breakpoint for small desktop */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .articles-container {
+    grid-column: span 12;
+ 
+  }
+}
+@media (min-width: 1024px) {
+  .articles-container { 
+    grid-column: span 12;
+   
+  }
+}

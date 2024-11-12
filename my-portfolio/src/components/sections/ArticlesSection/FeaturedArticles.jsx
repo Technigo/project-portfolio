@@ -11,11 +11,12 @@ import "./FeaturedArticles.css"
 export const FeaturedArticles = () => {
   console.log(articlesData);
   return (
-    <Grid background="black" sectionType="article">
+    <Grid background="black">
+      <div className="articles-container">
       <div className="title">
         <H2> My words</H2>
       </div>
-      <div className="articles-container">
+      <div className="article-wrapper"> 
       {articlesData.articles.map((article) => (
         <Card
           key={article.name}
@@ -29,6 +30,7 @@ export const FeaturedArticles = () => {
         />
       ))}
       </div>
+      <div className="view-more-container"> 
       <Button 
         text="Read More Articles"
         isViewMore={true}
@@ -36,6 +38,8 @@ export const FeaturedArticles = () => {
         icon={iconArrowWhite}
         onClick={() => { }}
       />
+      </div>
+      </div>
     </Grid>
   );
 };

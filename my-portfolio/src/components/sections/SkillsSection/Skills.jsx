@@ -1,4 +1,4 @@
-import { H2 } from "../../ui/Typography/Typography.jsx"; // Import H2 for the section title
+import { H2, BodyTextMedium } from "../../ui/Typography/Typography.jsx"; // Import H2 for the section title
 import skillsData from "../../../data/skills.json"; // Adjust the path to your JSON file
 import "./Skills.css";
 import { Grid } from "../../ui/GridLayout/Grid.jsx";
@@ -13,10 +13,10 @@ export const Skills = () => {
           <Tag sectionType="skill" text={skill.name} />
           <ul>
             {typeof skill.tags === "string" ? (
-              <li className="skills-list">{skill.tags}</li>
+              <BodyTextMedium>{skill.tags}</BodyTextMedium>
             ) : (
               skill.tags.map((tag, index) => (
-                <li key={index}>{tag}</li>
+                <BodyTextMedium key={index}>{tag}</BodyTextMedium>
               ))
             )}
           </ul>

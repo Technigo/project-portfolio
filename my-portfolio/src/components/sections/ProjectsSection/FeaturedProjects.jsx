@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { H2 } from "../../ui/Typography/Typography";
 import { Card } from "../Cards/Card.jsx";
 import { Grid } from "../../ui/GridLayout/Grid.jsx";
@@ -8,12 +9,25 @@ import projectsData from "../../../data/projects.json";
 import iconArrow from "../../../assets/iconArrow.svg"; 
 import "./FeaturedProjects.css"
 
+
 export const FeaturedProjects = () => {
+// display every other card in reversed row on desktop
+const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsDesktop(window.innerWidth >= 1024);
+  };
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+  
   return (
     <Grid background="white">
       <div className="projects-container">
-       <H2>Featured Projects</H2>   
-      {projectsData.projects.map((project) => (
+       <H2>Featured Projects</H2> 
+       <div className="project-wrapper">
+      {projectsData.projects.map((project, index) => (
         <Card
           key={project.name}
           imageSource={images[project.image] || project.image}
@@ -21,18 +35,19 @@ export const FeaturedProjects = () => {
           cardTitle={project.name}
           cardDescription={project.description}
           sectionType="project"
-          // button={project.button}
-          netlify={project.netlify} // Pass the netlify link here
+          netlify={project.netlify} 
           github={project.github} 
+          isReversed={isDesktop && index % 2 === 1}
         >
           <div className="tag-container">
           {project.tags.map((tag, index) => (
           <Tag key={index} sectionType="project" text={tag} />  
          ))}  
           </div>
-        
       </Card>
     ))}
+      </div>  
+    <div className="view-more-container">
       <Button
         text="View More Projects"
         isViewMore={true}
@@ -40,6 +55,7 @@ export const FeaturedProjects = () => {
         icon={iconArrow}
         onClick={() => {}}
       />
+      </div>
       </div>
     </Grid>
   )

@@ -15,12 +15,13 @@ export const Card = ({
   cardDescription, 
   netlify,
   github,
-  link
+  link,
+  isReversed
 }) => {
   return (
-    <article className={`${sectionType}-card`}>
+    <article className={`${sectionType}-card ${isReversed ? 'reversed' : ''}`}>
       <img src={imageSource} className={`${sectionType}-img`} />
-      <div className="info-box">
+      <div className={`${sectionType}-info-box`}>
       <div className="tags-container"> 
         {Array.isArray(cardTag)
             ? cardTag.map((tag, index) => <Tag key={index} sectionType={sectionType} text={tag} />)

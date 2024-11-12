@@ -6,11 +6,11 @@ import { IconButton } from "../../ui/Buttons/IconButtons";
 export const LetsTalk = () => {
 
   const iconData = [
-    { id: 1, iconName: "facebook", onClick: () => { console.log("Facebook clicked"); } },
-    { id: 2, iconName: "linkedin", onClick: () => { console.log("LinkedIn clicked"); } },
-    { id: 3, iconName: "twitter", onClick: () => { console.log("Twitter clicked"); } },
-    { id: 4, iconName: "instagram", onClick: () => { console.log("Instagram clicked"); } },
-    { id: 5, iconName: "github", onClick: () => { console.log("GitHub clicked"); } },
+    { id: 1, iconName: "facebook", onClick: () => window.open("_blank")},
+    { id: 2, iconName: "linkedin", onClick: () => window.open("_blank")},
+    { id: 3, iconName: "twitter", onClick: () => window.open("_blank")},
+    { id: 4, iconName: "instagram", onClick: () => window.open("_blank")},
+    { id: 5, iconName: "github", onClick: () => window.open("_blank")},
   ];
 
   return (
