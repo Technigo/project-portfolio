@@ -16,8 +16,8 @@ export const FeaturedProjects = () => {
             description={project.description}
             tags={project.tags}
             title={project.name}
-            button1Text="View on Netlify"
-            button2Text="View on GitHub"
+            button1Text="Live demo"
+            button2Text="View code"
             button1Link={project.netlify}
             button2Link={project.github}
           />
