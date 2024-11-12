@@ -6,7 +6,6 @@ import { JourneySection } from './sections/JourneySection/JourneySection'
 import { FooterSection } from './sections/FooterSection/FooterSection'
 
 function App() {
-
   return (
     <>
       <BioSection />
