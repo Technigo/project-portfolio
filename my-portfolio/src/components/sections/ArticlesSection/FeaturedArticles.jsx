@@ -20,7 +20,7 @@ export const FeaturedArticles = () => {
         <Card
           key={article.name}
           imageSource={images[article.image] || article.image}
-          cardTag={article.tags}
+          cardTag={article.tags} 
           cardTitle={article.name}
           cardDescription={article.description}
           sectionType="article"

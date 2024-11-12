@@ -1,20 +1,23 @@
 /* eslint-disable react/prop-types */
 import "./Card.css"
-import { BodyText } from "../../ui/Typography/Typography.jsx"
+import { BodyText, H3 } from "../../ui/Typography/Typography.jsx"
 import { Button } from "../../ui/Buttons/Button.jsx";
 import iconWeb from "../../../assets/iconWeb.svg";
 import iconGithubWhite from "../../../assets/iconGithubWhite.svg";
 import iconWebWhite from "../../../assets/iconWebWhite.svg";
+import { Tag } from "../../ui/Tags/Tags.jsx";
 
-export const Card = ({ imageSource, sectionType, children, cardTitle, cardDescription }) => {
+export const Card = ({ imageSource, sectionType, cardTag, cardTitle, cardDescription }) => {
   return (
     <article className={`${sectionType}-card`}>
       <img src={imageSource} className={`${sectionType}-img`} />
       <div className="info-box">
       <div className="tags-container"> 
-        {children} 
+        {Array.isArray(cardTag)
+            ? cardTag.map((tag, index) => <Tag key={index} sectionType={sectionType} text={tag} />)
+            : <Tag sectionType={sectionType} text={cardTag} />}
         </div>
-        <BodyText>{cardTitle}</BodyText>
+        <H3>{cardTitle}</H3>
         <BodyText>{cardDescription}</BodyText>
         <div className="button-container">
           {sectionType === "project" ? (

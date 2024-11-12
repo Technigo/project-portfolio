@@ -17,7 +17,7 @@ export const FeaturedProjects = () => {
         <Card
           key={project.name}
           imageSource={images[project.image] || project.image}
-          cardTag={project.tags.join(" ")}
+          cardTag={project.tags}
           cardTitle={project.name}
           cardDescription={project.description}
           sectionType="project"
