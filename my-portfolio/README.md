@@ -1,8 +1,17 @@
-# React + Vite
+<h1 align="center">
+  <a href="">
+    <img src="/react-p.svg" alt="Project Banner Image">
+  </a>
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Technigo - React Portfolio Project
 
-Currently, two official plugins are available:
+# Challanges:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Spacing:
+
+- Had problems creating gaps in the grid.jsx whixh is why i used margin bottom in some places. If more time == i would fix this.
+
+## Instructions
+
+[Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)

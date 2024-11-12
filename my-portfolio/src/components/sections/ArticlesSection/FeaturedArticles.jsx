@@ -12,10 +12,10 @@ export const FeaturedArticles = () => {
   console.log(articlesData);
   return (
     <Grid background="black" sectionType="article">
-      <div className="articles-container">
       <div className="title">
         <H2> My words</H2>
       </div>
+      <div className="articles-container">
       {articlesData.articles.map((article) => (
         <Card
           key={article.name}
@@ -27,6 +27,7 @@ export const FeaturedArticles = () => {
           button={<Button text="Read Article" isReadArticle={true} />}
         />
       ))}
+      </div>
       <Button 
         text="Read More Articles"
         isViewMore={true}
@@ -34,7 +35,6 @@ export const FeaturedArticles = () => {
         icon={iconArrowWhite}
         onClick={() => { }}
       />
-      </div>
     </Grid>
   );
 };

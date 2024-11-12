@@ -18,6 +18,7 @@ export const Card = ({ imageSource, sectionType, cardTag, cardTitle, cardDescrip
             : <Tag sectionType={sectionType} text={cardTag} />}
         </div>
         <H3>{cardTitle}</H3>
+        <div className="description-box"> 
         <BodyText>{cardDescription}</BodyText>
         <div className="button-container">
           {sectionType === "project" ? (
@@ -31,6 +32,7 @@ export const Card = ({ imageSource, sectionType, cardTag, cardTitle, cardDescrip
             <Button text="Read Article" icon={iconWebWhite} sectionType={sectionType}
               onClick={() => { }} />
           )}
+        </div>
         </div>
       </div>
     </article>
