@@ -5,7 +5,7 @@ import { Grid } from "../../ui/GridLayout/Grid.jsx";
 import { images } from "../../ui/Images/Images.jsx";
 import { Button } from "../../ui/Buttons/Button.jsx";
 import iconArrowWhite from "../../../assets/iconArrowWhite.svg";
-import "./FeaturedArticles.css"
+import "./FeaturedArticles.css";
 
 
 export const FeaturedArticles = () => {
