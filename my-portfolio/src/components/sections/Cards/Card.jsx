@@ -16,10 +16,9 @@ export const Card = ({
   netlify,
   github,
   link,
-  isReversed
 }) => {
   return (
-    <article className={`${sectionType}-card ${isReversed ? 'reversed' : ''}`}>
+    <article className={`${sectionType}-card`}>
       <img src={imageSource} className={`${sectionType}-img`} />
       <div className={`${sectionType}-info-box`}>
       <div className="tags-container"> 
