@@ -1,5 +1,5 @@
-import "./Bio.css"
-import { H2, BodyText } from "../../ui/Typography/Typography"
+import "./Bio.css";
+import { H2, BodyText } from "../../ui/Typography/Typography";
 
 export const Bio = () => {
   return (
@@ -12,6 +12,4 @@ export const Bio = () => {
       </div>
     </section>
   );
-  ;
-}
-
+};

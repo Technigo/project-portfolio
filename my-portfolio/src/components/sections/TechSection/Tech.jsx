@@ -1,5 +1,5 @@
-import "./Tech.css"
-import { H2, BodyText } from "../../ui/Typography/Typography"
+import "./Tech.css";
+import { H2, BodyText } from "../../ui/Typography/Typography";
 
 export const Tech = () => {
   return (

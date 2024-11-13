@@ -1,11 +1,11 @@
-import { H1, H3 } from "../../ui/Typography/Typography"
+import { H1, H3 } from "../../ui/Typography/Typography";
 import { Gallery } from "../GallerySection/Gallery";
 import { Bio } from "../BioSection/Bio";
-import "./Header.css"
+import "./Header.css";
 
 export const Header = () => {
   return (
-    <div className="header"> 
+  <div className="header"> 
     <section className="header-container">
       <div className="header-section">
         <H3> Hi there, I’m</H3>
@@ -15,8 +15,8 @@ export const Header = () => {
         </H3>
       </div>
     </section>
-     <Gallery/>
-     <Bio/>
-     </div>
+    <Gallery/>
+    <Bio/>
+  </div>
   );
 };

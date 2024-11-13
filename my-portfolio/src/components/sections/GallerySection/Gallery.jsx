@@ -1,5 +1,5 @@
 import { images } from "../../ui/Images/Images";
-import "./Gallery.css"
+import "./Gallery.css";
 
 
 
