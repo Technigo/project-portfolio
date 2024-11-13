@@ -19,7 +19,11 @@ export const Card = ({
 }) => {
 return (
   <article className={`${sectionType}-card`}>
-    <img src={imageSource} className={`${sectionType}-img`} />
+    <img 
+    src={imageSource} 
+    className={`${sectionType}-img`}
+    alt="portfolio-img" 
+    />
     <div className={`${sectionType}-info-box`}>
     <div className="tags-container"> 
       {Array.isArray(cardTag)

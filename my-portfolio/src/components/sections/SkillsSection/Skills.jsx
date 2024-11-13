@@ -14,10 +14,10 @@ return (
         <Tag sectionType="skill" text={skill.name} />
         <ul>
           {typeof skill.tags === "string" ? (
-            <BodyTextMedium>{skill.tags}</BodyTextMedium>
+            <li>{skill.tags}</li>
           ) : (
             skill.tags.map((tag, index) => (
-              <BodyTextMedium key={index}>{tag}</BodyTextMedium>
+              <li key={index}>{tag}</li>
             ))
           )}
         </ul>
