@@ -1,3 +1,4 @@
+/* default styling */
 .articles-container {
   grid-column: span 4;
   display: flex;
@@ -18,6 +19,31 @@
 .view-more-container {
   display: flex;
   justify-content: center;
+}
+
+/* added media queries for default styling so the site deployed to netlify will work below 480px */
+@media (max-width: 479px) {
+  .articles-container {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    color: white;
+    padding-bottom: 128px;
+  }
+  
+  .article-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+  
+  .view-more-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Breakpoint for tablet */
