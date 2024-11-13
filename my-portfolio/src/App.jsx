@@ -1,7 +1,5 @@
 import './App.css'
 import { Header } from "./components/sections/HeaderSection/Header.jsx"
-import { Library } from "./components/sections/LibrarySection/Library.jsx"
-import { Bio } from "./components/sections/BioSection/Bio.jsx"
 import { FeaturedProjects } from "./components/sections/ProjectsSection/FeaturedProjects.jsx"
 import { Tech } from './components/sections/TechSection/Tech.jsx'
 import { Skills } from './components/sections/SkillsSection/Skills.jsx'
@@ -13,8 +11,6 @@ export const App = () => {
   return (
     <>
       <Header />
-      <Library />
-      <Bio />
       <FeaturedProjects />
       <Tech />
       <Skills />

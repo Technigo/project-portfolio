@@ -1,11 +1,11 @@
 import { images } from "../../ui/Images/Images";
-import "./Library.css"
+import "./Gallery.css"
 
 
 
-export const Library = () => {
+export const Gallery = () => {
   return (
-    <div className="library-container">
+    <div className="gallery-container">
       <div className="image-container">
         <div className="image-wrapper"> 
         <img className="img1" src={images.img1} alt="Image 1" />
