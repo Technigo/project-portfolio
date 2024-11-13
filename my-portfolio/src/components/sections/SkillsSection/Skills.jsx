@@ -1,13 +1,14 @@
-import { H2, BodyTextMedium } from "../../ui/Typography/Typography.jsx"; // Import H2 for the section title
-import skillsData from "../../../data/skills.json"; // Adjust the path to your JSON file
-import "./Skills.css";
-import { Grid } from "../../ui/GridLayout/Grid.jsx";
+import { H2, BodyTextMedium } from "../../ui/Typography/Typography.jsx"; 
+import skillsData from "../../../data/skills.json"; 
 import { Tag } from "../../ui/Tags/Tags.jsx";
+import "./Skills.css";
+
 
 export const Skills = () => {
   return (
     <section className="skill-section">
       <H2>Skills</H2>
+      <div className="skill-wrapper"> 
       {skillsData.skills.map((skill) => (
         <div key={skill.name} className="skill-category">
           <Tag sectionType="skill" text={skill.name} />
@@ -22,6 +23,7 @@ export const Skills = () => {
           </ul>
         </div>
       ))}
+      </div>
     </section>
   );
 };
