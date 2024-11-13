@@ -4,12 +4,10 @@ import iconLinkedin from "../../../assets/iconLinkedin.svg";
 import iconTwitter from "../../../assets/iconTwitter.svg";
 import iconInstagram from "../../../assets/iconInstagram.svg";
 import iconGithub from "../../../assets/iconGithub.svg";
-import iconStackOverflow from "../../../assets/iconStackOverflow.svg";
 
 const iconMap = {
   linkedin: iconLinkedin,
   github: iconGithub,
-  stackOverflow: iconStackOverflow,
   twitter: iconTwitter,
   instagram: iconInstagram,
 };
