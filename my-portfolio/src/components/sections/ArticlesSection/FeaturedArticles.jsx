@@ -36,7 +36,7 @@ export const FeaturedArticles = () => {
         isViewMore={true}
         sectionType="article"
         icon={iconArrowWhite}
-        onClick={() => { }}
+        onClick={() => window.open("https://www.linkedin.com", "_blank")}
       />
       </div>
       </div>

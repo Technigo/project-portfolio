@@ -53,7 +53,7 @@ return (
       isViewMore={true}
       sectionType="project"
       icon={iconArrow}
-      onClick={() => {}}
+      onClick={() => window.open("https://github.com/Fannyhenriques?tab=repositories", "_blank")}
     />
     </div>
     </div>
