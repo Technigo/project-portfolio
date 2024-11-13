@@ -7,13 +7,12 @@ import iconGithub from "../../../assets/iconGithub.svg";
 import iconStackOverflow from "../../../assets/iconStackOverflow.svg";
 
 const iconMap = {
-  stackOverflow: iconStackOverflow,
   linkedin: iconLinkedin,
+  github: iconGithub,
+  stackOverflow: iconStackOverflow,
   twitter: iconTwitter,
   instagram: iconInstagram,
-  github: iconGithub,
 };
-
 
 export const IconButton = ({ iconName, onClick }) => {
   const icon = iconMap[iconName]; 
