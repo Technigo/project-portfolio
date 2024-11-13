@@ -1,8 +1,8 @@
+import articlesData from "../../../data/articles.json";
 import { H2 } from "../../ui/Typography/Typography.jsx";
 import { Card } from "../Cards/Card.jsx";
 import { Grid } from "../../ui/GridLayout/Grid.jsx";
 import { images } from "../../ui/Images/Images.jsx";
-import articlesData from "../../../data/articles.json";
 import { Button } from "../../ui/Buttons/Button.jsx";
 import iconArrowWhite from "../../../assets/iconArrowWhite.svg";
 import "./FeaturedArticles.css"
