@@ -24,8 +24,8 @@ return (
     className={`${sectionType}-img`}
     alt="portfolio-img" 
     />
-    <div className={`${sectionType}-info-box`}>
-    <div className="tags-container"> 
+      <div className={`${sectionType}-info-box`}>
+      <div className="tags-container"> 
       {Array.isArray(cardTag)
           ? cardTag.map((tag, index) => <Tag key={index} sectionType={sectionType} text={tag} />)
           : <Tag sectionType={sectionType} text={cardTag} />}
@@ -36,17 +36,17 @@ return (
       <div className="button-container">
         {sectionType === "project" ? (
           <>
-            <Button text="Live Demo" 
-            icon={iconWeb} 
-            sectionType={sectionType}
-            onClick={() => window.open(netlify, "_blank")}
-            />
-            <Button text="View Code" 
-            icon={iconGithubWhite} 
-            sectionType={sectionType}
-            onClick={() => window.open(github, "_blank")}
-            />
-            </>
+          <Button text="Live Demo" 
+          icon={iconWeb} 
+          sectionType={sectionType}
+          onClick={() => window.open(netlify, "_blank")}
+          />
+          <Button text="View Code" 
+          icon={iconGithubWhite} 
+          sectionType={sectionType}
+          onClick={() => window.open(github, "_blank")}
+          />
+          </>
         ) : (
           <Button text="Read Article" 
           icon={iconWebWhite} 
@@ -60,4 +60,3 @@ return (
   </article>
 );
 };
-

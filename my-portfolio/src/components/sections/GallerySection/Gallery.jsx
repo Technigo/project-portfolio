@@ -1,8 +1,6 @@
 import { images } from "../../ui/Images/Images";
 import "./Gallery.css";
 
-
-
 export const Gallery = () => {
   return (
     <div className="gallery-container">

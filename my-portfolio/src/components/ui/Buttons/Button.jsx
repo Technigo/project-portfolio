@@ -13,4 +13,3 @@ export const Button = ({ text, icon, onClick, sectionType = "default", isViewMor
     </button>
   );
 };
-
