@@ -1,0 +1,32 @@
+/* Default (Mobile) */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.black-background {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+.white-background {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-section {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .grid-section {
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    width: 100%;
+    padding: 0rem 8rem;
+  }
+}

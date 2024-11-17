@@ -1,0 +1,42 @@
+/* Default (Mobile) */
+.project-section {
+  display: flex;
+  padding: 4rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  grid-column: 1 / -1;
+  gap: 4rem;
+  width: 100%;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-section {
+    padding: 8rem 1.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .project-section {
+    padding: 8rem 0rem;
+    gap: 8rem;
+    max-width: 100%;
+  }
+
+  .project-cards {
+    gap: 8rem;
+  }
+
+  .card-info {
+    width: 36.25rem;
+  }
+}
