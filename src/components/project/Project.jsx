@@ -25,7 +25,7 @@ export const Project = () => {
                 <a href={project.netlify} target="_blank" rel="noopener noreferrer" className="project-link"><IoEarth /> Live demo</a>
               </button>
               <button className="project-button">
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link"><FaGithub /> View code</a>
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link"><FaGithub /> View the code</a>
               </button>
             </div>
           </div>

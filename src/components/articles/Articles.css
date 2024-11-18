@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+
+
 :root {
   --primary-color: #ff5a5f;
   --text-color: #333;
@@ -15,7 +19,7 @@
 .article-title {
   color: #000;
   font-family: Montserrat;
-  font-size: 1.3rem;
+  font-size: 24px;
   font-weight: 700;
   line-height: 2.125rem;
   text-align: left;
@@ -35,6 +39,7 @@ h2.my-words-title {
   flex-direction: column;
   gap: 16px;
   background-color: #FFECEA;
+  padding-bottom: 64px;
 }
 
 .article-card {
@@ -47,41 +52,46 @@ h2.my-words-title {
 
 .article-image {
   width: 100%;
-  border-bottom: 10px solid #FF4575;
-  border-left: 10px solid #FF4575;
+  border-bottom: 20px solid #FF4575;
+  border-left: 20px solid #FF4575;
+  margin-bottom: 24px;
+
 }
 
 .article-tag {
   font-size: 12px;
   color: #fff;
-  background-color: #333;
+  background-color: #000000;
   font-weight: bold;
   text-transform: uppercase;
   padding: 4px 8px;
   border-radius: 4px;
-  margin-bottom: 8px;
-}
+  margin-top: 8px;
 
-.article-buttons {
-  max-width: 200px;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .article-button {
-  display: inline-flex;
+  color: #333;
+  font-family: Montserrat;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   padding: 8px 16px;
-  border-radius: 30px;
-  border: none;
-  background-color: var(--button-bg-color);
+  border-radius: 40px;
+  background: var(--button-bg-color);
   color: black;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
+  line-height: normal;
   cursor: pointer;
+  font-style: normal;
   transition: background-color 0.3s ease;
   text-decoration: none;
+
+}
+
+.article-button:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .article-link {

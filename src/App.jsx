@@ -4,6 +4,7 @@ import { Project } from "./components/project/Project";
 import { Articles } from "./components/articles/Articles";
 import { Skills } from "./components/skills/Skills";
 import { Contact } from "./components/contact/Contact";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       < Articles />
       < Skills />
       < Contact />
+      < Footer />
 
     </>
   )
