@@ -3,7 +3,6 @@
   --marquee-speed: 40s;
   --direction: scroll-left;
   background-color: #FF4575;
-  /* Fixat syntaxfel */
   overflow: hidden;
   height: 114px;
   display: flex;
@@ -28,18 +27,17 @@
 /* Apply the animation to the text items */
 .scrolling-text-inner>div {
   animation: scroll-left var(--marquee-speed) linear infinite;
-  /* Fixad syntax */
 }
 
 /* Setting the Animation using Keyframes */
 @keyframes scroll-left {
   0% {
     transform: translateX(100%);
-    /* Börjar utanför från höger */
+
   }
 
   100% {
     transform: translateX(-100%);
-    /* Scrollar ut till vänster */
+
   }
 }

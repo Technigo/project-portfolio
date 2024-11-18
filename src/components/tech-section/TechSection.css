@@ -47,40 +47,80 @@
   .tech-section {
     display: flex;
     flex-direction: column;
-    /* Lägg elementen i en kolumn */
     justify-content: center;
     align-items: center;
     padding: 128px 147px;
-    /* Anpassa padding */
     background-color: var(--blue);
-    /* Behåll den blåa bakgrunden */
+
   }
 
   .tech-title {
     font-family: Montserrat, sans-serif;
     font-size: 36px;
-    /* Minska fontstorleken */
     font-weight: 700;
     text-align: center;
     margin-bottom: 14px;
-    /* Ge lite mellanrum till texten nedan */
     color: #fff;
-    /* Behåll vit text */
+
   }
 
   .tech-description {
     font-family: Hind, sans-serif;
     font-size: 20px;
-    /* Anpassad storlek för surfplatta */
     line-height: 1.6;
-    /* Öka radavståndet lite */
     text-align: center;
-    /* Centrerad text */
     max-width: 680px;
-    /* Begränsa textens bredd */
     margin: 0 auto;
-    /* Centrerar innehållet */
     color: #fff;
-    /* Vit text */
+
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .tech-section {
+    grid-column: 2 / -2;
+    display: grid;
+    align-items: center;
+    text-align: left;
+
+  }
+
+
+
+  .tech-title {
+    font-family: Montserrat;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 200px;
+    color: #fff;
+
+  }
+
+  .tech-description {
+
+    font-family: Hind, sans-serif;
+    color: #FFF;
+    font-family: Hind;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px;
+    padding: 0px 200px 0px 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tech-box {
+
+
+    grid-column: 2 / -2;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 100px 16px;
   }
 }
