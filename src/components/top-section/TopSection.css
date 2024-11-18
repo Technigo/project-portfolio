@@ -95,14 +95,59 @@ body {
 
 
 
-/* Desktop View */
-@media (min-width: 768px) and (max-width: 1800px) {
+/* Surfplatta View: iPad Mini och uppåt (768px till 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profile {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    /* Justerat för surfplattor */
+    margin: 80px auto 0 auto;
+    /* Mindre marginal för surfplattor */
+  }
+
+
+
+  .profile img {
+    margin-right: 24px;
+    margin-bottom: 0;
+    height: 150px;
+    width: 150px;
+    /* Mindre bildstorlek för surfplattor */
+  }
+
+  .person {
+    margin-bottom: 0;
+  }
+
+  .job {
+    font-size: 32px;
+  }
+
+  .description {
+    max-width: 500px;
+    font-size: 18px;
+    /* Lite mindre text */
+  }
+
+  .arrow-box {
+    margin-top: 24px;
+    text-align: center;
+    margin-bottom: 1px;
+  }
+}
+
+/* Desktop View: 1024px och uppåt */
+@media (min-width: 1024px) {
   .profile {
     flex-direction: row;
     text-align: left;
     align-items: center;
     justify-content: center;
     max-width: 1200px;
+    /* Större bredd för desktop */
     margin: 120px auto 0 auto;
   }
 
@@ -111,6 +156,7 @@ body {
     margin-bottom: 0;
     height: 200px;
     width: 200px;
+    /* Standardstorlek för desktop */
   }
 
   .person {
@@ -119,6 +165,7 @@ body {
 
   .job {
     font-size: 48px;
+    /* Större textstorlek för desktop */
   }
 
   .description {
@@ -129,5 +176,6 @@ body {
   .arrow-box {
     margin-top: 32px;
     text-align: center;
+
   }
 }

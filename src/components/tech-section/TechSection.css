@@ -43,36 +43,44 @@
   line-height: normal;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .tech-section {
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 3.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-
+    display: flex;
+    flex-direction: column;
+    /* Lägg elementen i en kolumn */
+    justify-content: center;
+    align-items: center;
+    padding: 128px 147px;
+    /* Anpassa padding */
+    background-color: var(--blue);
+    /* Behåll den blåa bakgrunden */
   }
 
   .tech-title {
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 3.5rem;
-    font-style: normal;
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    /* Minska fontstorleken */
     font-weight: 700;
-    line-height: normal;
+    text-align: center;
+    margin-bottom: 14px;
+    /* Ge lite mellanrum till texten nedan */
+    color: #fff;
+    /* Behåll vit text */
   }
 
   .tech-description {
-    color: #FFF;
+    font-family: Hind, sans-serif;
+    font-size: 20px;
+    /* Anpassad storlek för surfplatta */
+    line-height: 1.6;
+    /* Öka radavståndet lite */
     text-align: center;
-    font-family: Hind;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    padding: 0rem 16rem 0rem;
+    /* Centrerad text */
+    max-width: 680px;
+    /* Begränsa textens bredd */
+    margin: 0 auto;
+    /* Centrerar innehållet */
+    color: #fff;
+    /* Vit text */
   }
 }

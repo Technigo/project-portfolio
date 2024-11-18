@@ -10,7 +10,7 @@ export const Contact = () => {
         <img src="ph-jonas.jpg" alt="Picture of Jonas Hellström, Web Developer." />
         <div className="contact">
           <p>Jonas Hellström</p>
-          <p>+43 738 39 66 38</p>
+          <p>+46 738 39 66 38</p>
           <p>Jonas.hellstrom89@gmail.com</p>
         </div>
         <div className="icons">
