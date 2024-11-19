@@ -12,7 +12,7 @@ function ContactSection() {
     return (
         <section className="contact-section">
             <h2>Let&apos;s talk</h2>
-            <img src="/images/contactIcon.jpg" alt="Foto de perfil" className="contact-img" />
+            <img src="/images/contact-icon.jpg" alt="Foto de perfil" className="contact-img" />
             <h3>María Fernández Huerta</h3>
             <h3>+46 73 364 5225</h3>
             <h3>maria.fernandez703@yahoo.com</h3>
