@@ -12,7 +12,7 @@ const projects = [
 
                 <ul>
                     <li><strong>Page 1:</strong> The first page features a clean and user-friendly layout, providing an intuitive introduction to the project’s content.</li>
-                    <li><strong>Page 2:</strong> The second page presents a distinct design, offering a fresh user experience while maintaining the overall theme of the project. This page includes a <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">link to an external URL</a>, giving users access to more detailed content or resources.</li>
+                    <li><strong>Page 2:</strong> The second page presents a distinct design, offering a fresh user experience while maintaining the overall theme of the project. This page includes a <a href="https://www.slowlifesweden.com/" target="_blank" rel="noopener noreferrer">link to an external URL</a>, giving users access to more detailed content or resources.</li>
                 </ul>
 
                 <p>Both pages are accessible via a link, demonstrating the ability to create seamless navigation and diverse page layouts.</p>
