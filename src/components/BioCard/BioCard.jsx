@@ -7,14 +7,14 @@ export const BioCard = () => {
     <>
       <div className="bio-card-container">
         <HeaderThree>
-          I am Gitte Beckmann
+          I am Daniel
         </HeaderThree>
         <HeaderOne>
           Frontend Developer
         </HeaderOne>
         <div className="spacer-one"></div>
         <Body>
-          Sara is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field.
+          Daniel is an exceptional developer known for her innovative solutions and exceptional coding abilities. He creates user-friendly applications and solves complex issues with ease. His drive for excellence makes him a valuable asset to any project and a standout in the technology field.
         </Body>
         <div className="spacer-two"></div>
         <MediaButtonContainer />

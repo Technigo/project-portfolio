@@ -10,9 +10,9 @@ export const FooterCard = () => {
           Let's talk
         </HeaderTwo>
         <div className="spacer"></div>
-        <Body>Gitte Beckmann</Body>
-        <Body>+46(0)721 70 43 58</Body>
-        <Body> gittebeckmann@hotmail.com</Body>
+        <Body>Daniel</Body>
+        <Body>+46(0)...</Body>
+        <Body> daniel@xyz.com</Body>
       </div>
       <div className="media-button-div">
         <MediaButtonContainer />

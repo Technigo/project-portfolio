@@ -12,7 +12,5 @@ export const ProjectsSection = () => {
         <ProjectCard></ProjectCard>
       </div>
     </section>
-
   )
 }
-
