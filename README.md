@@ -1,50 +1,39 @@
-<h1 align="center">
-  <a href="">
-    <img src="/react-p.svg" alt="Project Banner Image">
-  </a>
-</h1>
+# Personal Portfolio Website
+This project is a personal portfolio website showcasing the skills, journey, and projects of a developer. It’s built using React and styled with CSS, with a modular structure that makes it easy to maintain and extend. The website provides an overview of the developer’s background, technical skills, and featured projects, as well as an interactive section about their journey.
+# Features & Structure
+## Bio Section:
+This section introduces the developer with a brief bio and a profile image. It uses the BioCard component to display personal information and the BioImage component for the profile picture.
+## Skills Section:
+Displays a list of key skills in the form of cards. The skills are categorized into areas like "Code", "Toolbox", "Upcoming", and "More", and include technologies like HTML5, CSS3, JavaScript, React, and GitHub.
+## Projects Section:
+Highlights featured projects with a scrollable list of project cards. Each card can be clicked to learn more about the respective project.
+## Tech Section:
+Details the tech stack used in the developer's work, including technologies like HTML, CSS, JavaScript, React, Node.js, and development practices like mob-programming and pair-programming.
+## Journey Section:
+A dynamic section showcasing the developer’s professional journey, with a scrolling container that presents key milestones, experiences, and growth over time.
+## Footer Section:
+Contains links to external resources and the developer’s contact information, as well as a footer image and a footer card.
+# Technologies Used
+React: For building the user interface and managing application state.
 
-# Technigo - React Portfolio Project
+CSS: For styling the components, ensuring a visually appealing and responsive design.
 
-Congratulations on completing Sprint 2 of the boot camp! For the final phase, we will now take your skills in React to the next level by building your very own portfolio website using the concepts learned in class
+React Hooks: For managing component state and lifecycle.
 
-## Instructions
-[Check this projects instructions here](https://github.com/Technigo/project-portfolio/blob/main/instructions.md)
+React Components: Modular components are used for each section (Bio, Skills, Projects, etc.), making the codebase scalable and maintainable.
 
-## Set up your own version of your portfolio
+Responsive Design: The website is fully responsive, ensuring a great user experience on desktop, tablet, and mobile devices.
 
-We will use [Vite](https://vitejs.dev/guide/) to setup our project 😉
+# Netlify link:
+https://portfolio-gitte.netlify.app/
 
-```bash
-  npm create vite@latest my-react-portfolio --template
-```
 
-#### Follow this GIF to setup your project
 
-![Alt Text](https://res.cloudinary.com/dfkxydgqg/image/upload/v1691073155/WEB/Sprint-2/week-8/vite-react_vjp0ep.gif)
+# React + Vite
 
-## Installation
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Use the `cd` command to move into the folder
+Currently, two official plugins are available:
 
-```bash
-  cd my-react-portfolio
-```
-
-Install the dependencies
-
-```bash
-  npm i
-```
-
-Open the project in a separate VS Code editor
-
-```bash
-  code .
-```
-
-Open up a terminal inside VS code and lets run the project in a local environment
-
-```bash
-  npm run dev
-```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
