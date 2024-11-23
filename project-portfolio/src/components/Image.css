@@ -7,7 +7,7 @@
     background-color: #000000;
     position: relative;
     margin-top: -64px;
-    ;
+
 }
 
 .image {
@@ -41,4 +41,85 @@
     transform: rotate(4.695deg);
     flex-shrink: 0;
     z-index: 2;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .image-container {
+        display: flex;
+        justify-content: center;
+        /* Center the images horizontally */
+        align-items: center;
+        height: 400px;
+        width: 100%;
+        background-color: #000000;
+        position: relative;
+        margin-top: -64px;
+    }
+
+    .image-left {
+        left: 70px;
+        /* Adjust position for larger screen */
+        /* Adjust size for tablet */
+        height: 340px;
+        width: 320px;
+        /* Maintain aspect ratio */
+        transform: rotate(-4deg);
+        /* Slightly reduce rotation if needed */
+    }
+
+    .image-middle {
+        top: 0;
+        /* Align properly for tablet */
+        width: 320px;
+        /* Adjust size */
+        height: 340px;
+    }
+
+    .image-right {
+        right: 70px;
+        /* Adjust position for larger screen */
+        /* Adjust size */
+        height: 340px;
+        width: 320px;
+        transform: rotate(4deg);
+        /* Slightly reduce rotation */
+    }
+}
+
+@media (min-width: 1024px) {
+    .image-container {
+        display: flex;
+        justify-content: center;
+        /* Center the images horizontally */
+        align-items: center;
+        height: 400px;
+        width: 100%;
+        background-color: #000000;
+        position: relative;
+        margin-top: -64px;
+    }
+
+    .image-left {
+        left: 300px;
+        width: 358px;
+        height: 382px;
+        width: 320px;
+        transform: rotate(-4deg);
+    }
+
+    .image-middle {
+        top: 0;
+        width: 358px;
+        height: 382px;
+        margin-bottom: 64px;
+    }
+
+    .image-right {
+        right: 300px;
+        width: 358px;
+        height: 382px;
+        transform: rotate(4deg);
+    }
+
+
 }

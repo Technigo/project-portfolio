@@ -32,13 +32,14 @@ export const ProjectCard = ({ title, image, description, tags, netlifyUrl, githu
 			<div className="project-image-wrapper">
 				<img src={displayedImage} alt={`${title} screenshot`} className="project-image" />
 			</div>
-			<h3 className="project-title">{title}</h3>
-			<p>{description}</p>
 			<div className="tags-container">
 				{tags.map((tag, index) => (
 					<span key={index} className="tag">{tag}</span>
 				))}
 			</div>
+			<h3 className="project-title">{title}</h3>
+			<p>{description}</p>
+
 			<Buttons buttons={projectButtons} />
 		</div>
 	);

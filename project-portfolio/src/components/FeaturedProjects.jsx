@@ -14,8 +14,8 @@ export const FeaturedProjects = () => {
                         key={index}
                         title={project.name}
                         image={project.image}
-                        description={project.description}
                         tags={project.tags}
+                        description={project.description}
                         netlifyUrl={project.netlify}
                         githubUrl={project.github}
                     />

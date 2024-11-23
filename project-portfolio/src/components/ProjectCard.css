@@ -2,18 +2,14 @@
     color: #000;
     font-family: Poppins;
     font-size: 30px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
 p {
     color: #000;
     font-family: Poppins;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     padding: 16px;
 }
 
@@ -26,13 +22,13 @@ p {
 
 .tag {
     padding: 2px 6px;
-    justify-content: center;
     align-items: flex-start;
     flex: 1 0 0;
     border-radius: 4px;
     border: 1px solid #000;
     background: #FFF;
     text-align: center;
+    margin-top: 32px;
 }
 
 .project-image-wrapper {
@@ -46,5 +42,40 @@ p {
 .project-image {
     height: 479px;
     width: 100%;
-    padding: 0 16px;
+    align-self: stretch;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .project-image {
+        height: 479px;
+        width: 100%;
+        margin: 24px;
+    }
+
+    .tag {
+        border-radius: 4px;
+        border: 1px solid #000;
+        background: #FFF;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .tags-container {
+        margin: 24px;
+        margin-bottom: 16px;
+    }
+
+    .project-title {
+        margin-top: 24px;
+        display: flex;
+        text-align: left;
+        margin-left: 32px;
+        padding: 0;
+    }
+
+    p {
+        margin-top: 6px;
+        margin-left: 24px;
+    }
 }
