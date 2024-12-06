@@ -1,6 +1,6 @@
 import "./LetsTalk.css";
 import profilePicture from "../assets/Icons/Ellipse 1.png";
-import githubIcon from "../assets/icons/Btn - github.svg";
+import githubIcon from "../assets/Icons/Btn - github.svg";
 import linkedinIcon from "../assets/Icons/Btn - linkedin.svg";
 import stackoverflowIcon from "../assets/Icons/Btn - stackoverflow.svg";
 
