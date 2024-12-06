@@ -7,20 +7,23 @@ export const Buttons = ({ buttons }) => {
 
 	return (
 		<div className="button-container">
-			{buttons.map((button, index) => (
-				<button
-					key={index}
-					onClick={() => handleButtonClick(button.url)}
-					className={`button ${button.className || ""}`} // Add dynamic class for button
-				>
-					<img
-						src={button.icon}
-						alt={`${button.text} Icon`}
-						className={`icon ${button.iconClass || ""}`} // Add dynamic class for icon
-					/>
-					{button.text}
-				</button>
-			))}
+			{buttons.map((button, index) => {
+				const isLiveDemo = button.text === "Live Demo"; // Check if this is the "Live Demo" button
+				return (
+					<button
+						key={index}
+						onClick={() => handleButtonClick(button.url)}
+						className={`button ${button.className || ""} ${isLiveDemo ? "live-demo-button" : ""}`}
+					>
+						<img
+							src={button.icon}
+							alt={`${button.text} Icon`}
+							className={`icon ${button.iconClass || ""}`}
+						/>
+						{button.text}
+					</button>
+				);
+			})}
 		</div>
 	);
 };

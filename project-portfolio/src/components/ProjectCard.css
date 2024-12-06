@@ -1,81 +1,161 @@
 .project-title {
-    color: #000;
-    font-family: Poppins;
-    font-size: 30px;
-    font-weight: 500;
+	color: #000;
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: 500;
 }
 
 p {
-    color: #000;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    padding: 16px;
+	color: #000;
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 16px;
 }
 
 .tags-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    padding: 0 16px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	padding: 0 16px;
 }
 
 .tag {
-    padding: 2px 6px;
-    align-items: flex-start;
-    flex: 1 0 0;
-    border-radius: 4px;
-    border: 1px solid #000;
-    background: #FFF;
-    text-align: center;
-    margin-top: 32px;
+	padding: 2px 6px;
+	align-items: flex-start;
+	flex: 1 0 0;
+	border-radius: 4px;
+	border: 1px solid #000;
+	background: #FFF;
+	text-align: center;
+	margin-top: 32px;
 }
 
 .project-image-wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 0 16px;
-    margin-top: 64px;
+	display: flex;
+	justify-content: center;
+	padding: 0 16px;
+	margin-top: 64px;
 
 }
 
-.project-image {
-    height: 479px;
-    width: 100%;
-    align-self: stretch;
+.project-card .live-demo-button .icon {
+	filter: invert(1);
+
 }
+
+
+/* Responsive design*/
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .project-image {
-        height: 479px;
-        width: 100%;
-        margin: 24px;
-    }
+	.project-image {
+		height: 479px;
+		width: 100%;
+		margin: 24px;
+	}
 
-    .tag {
-        border-radius: 4px;
-        border: 1px solid #000;
-        background: #FFF;
-        text-align: center;
-        margin-top: 32px;
-    }
+	.tag {
+		border-radius: 4px;
+		border: 1px solid #000;
+		background: #FFF;
+		text-align: center;
+		margin-top: 32px;
+	}
 
-    .tags-container {
-        margin: 24px;
-        margin-bottom: 16px;
-    }
+	.tags-container {
+		margin: 24px;
+		margin-bottom: 16px;
+	}
 
-    .project-title {
-        margin-top: 24px;
-        display: flex;
-        text-align: left;
-        margin-left: 32px;
-        padding: 0;
-    }
+	.project-title {
+		margin-top: 24px;
+		display: flex;
+		text-align: left;
+		margin-left: 32px;
+		padding: 0;
+	}
 
-    p {
-        margin-top: 6px;
-        margin-left: 24px;
-    }
+	p {
+		margin-top: 6px;
+		margin-left: 24px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.project-card {
+		display: grid;
+		grid-template-columns: 40% 1fr;
+		gap: 16px;
+		align-items: start;
+		width: 100%;
+		margin-bottom: 128px;
+	}
+
+	.project-card:nth-of-type(even) {
+		grid-template-columns: 1fr 40%;
+	}
+
+	.project-image-wrapper {
+		grid-column: 1;
+		grid-row: 1;
+		margin: 0;
+	}
+
+	.project-image {
+		width: 479px;
+		height: 479px;
+	}
+
+	.project-card:nth-of-type(even) .project-image-wrapper {
+		grid-column: 2;
+	}
+
+	/* Margins for images depending on odd/even card */
+	.project-card:nth-of-type(odd) .project-image-wrapper {
+		margin-left: 128px;
+	}
+
+	.project-card:nth-of-type(even) .project-image-wrapper {
+		margin-right: 128px;
+	}
+
+	.project-content {
+		/* Place text in appropriate column */
+		grid-column: 2;
+		grid-row: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+
+		/* Add 125px margin on left and right sides */
+		margin: 0 125px;
+	}
+
+	.project-card:nth-of-type(even) .project-content {
+		grid-column: 1;
+	}
+
+	.project-title {
+		font-size: 24px;
+		font-weight: 600;
+		margin: 0;
+		text-align: left;
+		margin-left: 20px;
+		margin-top: 16px;
+	}
+
+	p {
+		margin: 0;
+		line-height: 1.5;
+	}
+
+	.tags-container {
+		margin: 0;
+	}
+
+	.buttons-container {
+		display: flex;
+		gap: 8px;
+	}
 }

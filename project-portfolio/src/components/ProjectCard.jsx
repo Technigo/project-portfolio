@@ -1,4 +1,3 @@
-
 import "./ProjectCard.css";
 import { Buttons } from "./Buttons";
 import imgLeft from "../assets/project-images/img-one.png";
@@ -13,6 +12,7 @@ export const ProjectCard = ({ title, image, description, tags, netlifyUrl, githu
 			url: netlifyUrl,
 			icon: netlifyIcon,
 			text: "Live Demo",
+			className: "live-demo-button"
 		},
 		{
 			url: githubUrl,
@@ -21,7 +21,7 @@ export const ProjectCard = ({ title, image, description, tags, netlifyUrl, githu
 		},
 	];
 
-	// Mapping images 
+	// Map image filename to the imported image variable
 	let displayedImage;
 	if (image === "img-one.png") displayedImage = imgLeft;
 	if (image === "img-two.png") displayedImage = imgMiddle;
@@ -30,17 +30,23 @@ export const ProjectCard = ({ title, image, description, tags, netlifyUrl, githu
 	return (
 		<div className="project-card">
 			<div className="project-image-wrapper">
-				<img src={displayedImage} alt={`${title} screenshot`} className="project-image" />
+				<img
+					src={displayedImage}
+					alt={`${title} screenshot`}
+					className="project-image"
+				/>
 			</div>
-			<div className="tags-container">
-				{tags.map((tag, index) => (
-					<span key={index} className="tag">{tag}</span>
-				))}
+			{/* New wrapper for all textual and interactive elements */}
+			<div className="project-content">
+				<div className="tags-container">
+					{tags.map((tag, index) => (
+						<span key={index} className="tag">{tag}</span>
+					))}
+				</div>
+				<h3 className="project-title">{title}</h3>
+				<p>{description}</p>
+				<Buttons buttons={projectButtons} />
 			</div>
-			<h3 className="project-title">{title}</h3>
-			<p>{description}</p>
-
-			<Buttons buttons={projectButtons} />
 		</div>
 	);
 };
