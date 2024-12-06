@@ -1,6 +1,6 @@
 
 import "./SeeMoreButton.css";
-import icon from "../assets/icons/arrow_circle_down.svg";
+import icon from "../assets/Icons/arrow_circle_down.svg";
 
 export const SeeMoreButton = ({ text, url, variant }) => {
   return (

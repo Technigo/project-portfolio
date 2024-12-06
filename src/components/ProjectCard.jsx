@@ -3,8 +3,8 @@ import { Buttons } from "./Buttons";
 import imgLeft from "../assets/project-images/img-one.png";
 import imgMiddle from "../assets/project-images/img-two.png";
 import imgRight from "../assets/project-images/img-three.png";
-import netlifyIcon from "../assets/icons/netlify.svg";
-import githubIcon from "../assets/icons/github.svg";
+import netlifyIcon from "../assets/Icons/netlify.svg";
+import githubIcon from "../assets/Icons/github.svg";
 
 export const ProjectCard = ({ title, image, description, tags, netlifyUrl, githubUrl }) => {
 	const projectButtons = [

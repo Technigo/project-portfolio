@@ -3,7 +3,7 @@ import { Buttons } from "./Buttons";
 import imgOne from "../assets/project-images/img-one.png";
 import imgTwo from "../assets/project-images/img-two.png";
 import imgThree from "../assets/project-images/img-three.png";
-import netlifyIcon from "../assets/icons/netlify.svg";
+import netlifyIcon from "../assets/Icons/netlify.svg";
 import { SeeMoreButton } from "./SeeMoreButton";
 
 export const MyWords = () => {
