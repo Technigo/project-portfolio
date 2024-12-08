@@ -15,7 +15,7 @@ function App() {
       < TopSection />
       < TechSection />
       < Project />
-      < Articles />
+      {/* < Articles /> */}
       < Skills />
       < Contact />
       < Footer />
