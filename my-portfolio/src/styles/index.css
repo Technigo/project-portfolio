@@ -1,0 +1,155 @@
+/*Ensure images adapts well to all devices*/
+img {
+  display: block;
+  max-width: 100%;
+}
+:root {
+/* ========== COLORS ========== */
+  --primary-color: #FD6F00;   /* Global primary color */
+  --secondary-color: #202020; /* Global secondary color */
+  --natural-color: #FFFFFF;   /* Global natural color */
+
+  /* H1 */
+  --font-family-h1: 'Urbanist';
+  --color-h1: var(--secondary-color); /* Dark */
+  --font-weight-h1: 700;
+
+  /* H2 */
+  --font-family-h2: 'Urbanist';
+  --color-h2: var(--secondary-color); /* Dark */
+  --font-weight-h2: 700;
+
+  /* H3 */
+  --font-family-h3: 'Poppins'; 
+  --color-h3: var(--secondary-color); /* Dark */
+  --font-weight-h3: 500;
+
+  /* Body */
+  --font-family-body: 'Poppins'; 
+  --color-body: var(--secondary-color); /* Dark */
+
+  /* Text (P tag) */
+  --line-height-text: 2rem;
+  --text-align-text: center;
+}
+
+/* ========== BACKGROUND ========== */
+  
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100%; 
+  overflow-y: scroll;
+  background-color: var(--natural-color);
+}
+
+/* ========== APPLY TYPOGRAPHY STYLES  ========== */
+
+/* Apply the H1 styles */
+h1 {
+  font-family: var(--font-family-h1); /* Urbanist */
+  color: var(--color-h1); /* Dark */
+  font-weight: var(--font-weight-h1);
+}
+
+/* Apply the H2 styles */
+h2 {
+  font-family: var(--font-family-h2); /* Urbanist */;
+  color: var(--color-h2);
+  font-weight: var(--font-weight-h2);
+}
+
+/* Apply the H3 styles */
+h3 {
+  font-family: var(--font-family-h3); /* Poppins */
+  font-style: var(--font-style-h3);
+  color: var(--color-h3);
+  font-weight: var(--font-weight-h3);
+}
+
+/* Apply the Body-text styles */
+.body-text {
+  font-family: var(--font-family-body); /* Poppins */
+  font-size: var(--font-size-body);
+  color: var(--color-body); 
+}
+
+/* Apply the Text / P tag */
+p {
+  font-family: var(--font-family-body); /* Poppins */
+  font-size: var(--font-size-text);
+  text-align: var(--text-align-text);
+  color: var(--color-body); 
+}
+
+
+/* ========== MOBILE ========== */
+
+@media screen and (max-width: 600px) {
+  :root {
+  /* H1 (Mobile) */
+  --font-size-h1: 3.75rem;
+  --line-height-h1: 6.25rem;
+  
+  /* H2 (Mobile) */
+  --font-size-h2: 3.75rem;
+  
+  /* H3 (Mobile) */
+  --font-size-h3: 1.5rem;
+  
+  /* Body text (Mobile) */
+  --font-size-body: 1.125rem;
+  --line-height-body: 2rem;
+  
+  /* Text / Paragraph (Mobile) */
+  --font-size-text: 1.125rem;
+  --line-height-text: 2rem;
+  }
+}
+  
+
+/* ========== TABLET ========== */
+@media screen and (min-width: 501px) and (max-width: 1024px) { 
+  :root {
+
+    /* H1 */
+    --font-size-h1: 5rem;
+    --line-height-h1: 6.25rem;
+
+    /* H2 */
+    --font-size-h2: 3.75rem;
+
+    /* H3 */
+    --font-size-h3: 1.5rem;
+
+    /* Body */
+    --font-size-body: 1.125rem;
+    --line-height-body: 2rem;
+
+    /* Text / Paragraph */
+    --font-size-text: 1.125rem;
+    --line-height-text: 2rem;
+  }
+}
+
+
+/* ========== DESKTOP ========== */
+@media screen and (min-width: 1025px) {
+  :root {
+    /* H1 (Desktop) */
+    --font-size-h1: 6.25rem;
+
+    /* H2 (Desktop) */
+    --font-size-h2: 5rem;
+
+    /* H3 (Desktop) */
+    --font-size-h3: 1.875rem;
+
+    /* Body text (Desktop) */
+    --font-size-body: 1.125rem;
+
+    /* Text / Paragraph (Desktop) */
+    --font-size-text: 1.125rem;
+  }
+}

@@ -1,0 +1,176 @@
+/* ========== CARD SECTION STYLING========== */
+
+/* This component contains stylings for the cards displayed under Featured Projects and My Journey. The cards contain heading, image, body-text, and button/-s. 
+
+The buttons are imported from Button.jsx. Layout for specific buttons can be found further down in this file. 
+
+*/
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+  .card-section h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .cards-container {
+    display: flex;
+    overflow-x: auto;
+		grid-template-columns: repeat(4, 1fr);
+    padding-left: 20px;
+    padding-right: 5px;
+    scroll-snap-type: x mandatory; 
+    scroll-padding-left: 20px;
+    gap: 2rem;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1200px; /* Prevent cards from stretching too much */
+  }
+
+  /* Scroll bar */
+
+  .cards-container::-webkit-scrollbar {
+    height: 20px; 
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .cards-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px; 
+  }
+  
+  .cards-container::-webkit-scrollbar-track {
+    background-color: transparent; 
+  }
+
+  /* cards styling */
+  
+  .project-card, .article-card {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--natural-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+    scroll-snap-align: center;
+  }
+
+  .project-card:first-child, .article-card:first-child {
+    margin-left: 20px;
+  }
+  
+  .project-card:last-child, .article-card:last-child {
+    margin-right: 20px;
+  }
+  
+  .project-card:hover, .article-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-image, .article-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+  }
+  .project-card, .article-card .content {
+    font-size: 0.875rem;
+    text-align: left;
+		align-self: stretch;
+		flex-grow: 1;
+  }
+
+  .article-card h3 {
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden; 
+    text-overflow: ellipsis; /* ... when text it more than two rows */
+    line-height: 1.5; 
+    height: calc(1.5em * 2); /* Force height to always be two rows */
+  }
+	.article-card .body-text {
+		font-size: 1.125rem;
+		align-self: stretch;
+		text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; 
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+	}
+
+  .project-card .body-text {
+    text-align: left;
+    font-size: 1.125rem;
+		align-self: stretch;
+  }
+
+	.article-card .date {
+    font-size: 1.125rem;
+    align-self: stretch;
+    text-align: left;
+}
+
+/* ========== BUTTONS STYLING ========== */
+
+.project-buttons {
+  display: flex;
+  gap: 1rem; /* Space between the buttons */
+  width: 100%; 
+  flex: 1; /* Makes each button take up equal space */
+	margin-top: auto;
+}
+
+.article-card button {
+  margin-top: auto;
+}
+
+/* ========== RESPONSIVENESS TABLET ========== */
+@media (max-width: 768px) {
+  .cards-container {
+    gap: 1rem; 
+    padding: 0 5px; 
+  }
+
+  .project-card, .article-card {
+    width: 220px; 
+  }
+}
+
+/* ========== RESPONSIVENESS MOBILE ========== */
+@media (max-width: 500px) {
+  .cards-container {
+    padding: 0 20px; 
+    scroll-snap-type: x mandatory; 
+    gap: 1rem; 
+    scroll-padding-left: 20px;
+    justify-content: flex-start;
+  }
+
+  .project-card, .article-card {
+    width: 200px;
+    scroll-snap-align: center; 
+  }
+  .project-buttons {
+    flex-direction: column; 
+    gap: 0.5rem; 
+    align-items: stretch; 
+    width: 100%;
+  }
+}
