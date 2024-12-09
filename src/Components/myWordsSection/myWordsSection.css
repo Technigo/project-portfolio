@@ -1,0 +1,144 @@
+/* src/components/myWordsSection/myWordsSection.css 
+*/
+.my-words-section {
+
+    text-align: center;
+    padding: 128px;
+}
+
+.my-words-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.my-words-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 2fr);
+    gap: 20px;
+}
+
+.my-words-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.my-words-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.my-words-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.my-words-info h3 {
+
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.my-words-info p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.my-words-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    gap: 8px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.my-words-btn-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centrar contenido horizontalmente */
+    text-align: center;
+    border: 2px solid #FFF;
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    gap: 8px;
+    margin-top: 20px;
+    width: fit-content;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.button-secondary-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+/* Media queries para MyWordsSection */
+@media (max-width: 480px) {
+    .my-words-section {
+        padding: 20px;
+    }
+
+    .my-words-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-words-section {
+        padding: 30px;
+    }
+
+    .my-words-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .my-words-section {
+        padding: 40px;
+    }
+
+    .my-words-text {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .my-words-section {
+        padding: 50px;
+    }
+
+    .my-words-text {
+        font-size: 20px;
+    }
+}
