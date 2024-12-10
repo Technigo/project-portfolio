@@ -6,7 +6,7 @@ const ProjectCard = ({ project, layout }) => {
     return (
         <div className={`project-card-container ${layout}`}>
             <img src={project.image} alt={project.name} className="project-card-image" />
-            <div className="project-card-content">
+            <div className={`project-card-content ${layout}`}>
                 <div className="project-card-tags">
                     {project.tags.map(tag => (
                         <span key={tag} className="project-card-tag">{tag}</span>
