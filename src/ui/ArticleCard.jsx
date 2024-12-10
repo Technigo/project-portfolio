@@ -24,3 +24,4 @@ export const ArticleCard = ({ image, title, description, link }) => {
     </div>
   )
 }
+

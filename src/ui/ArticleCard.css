@@ -1,21 +1,19 @@
 .article-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Default row layout for desktop */
   padding: 1rem;
   align-self: stretch;
-  width: 74rem;
-  gap: 7.8125rem;
   width: 100%;
-  /* Allow full width */
   max-width: 74rem;
-  /* Limit width for larger screens */
+  gap: 7.8125rem;
   box-sizing: border-box;
 }
 
 .article-image {
-  width: 29.9375rem;
-  height: auto;
+  width: 29.9375rem; /* Adjusted width to avoid excessive stretching */
+  height: 19.4375rem; /* Increased height to give the image more vertical space */
   border-radius: 0.75rem;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
 }
 
 .article-content {
@@ -37,8 +35,7 @@
 .button-icon {
   width: 32px;
   height: 32px;
-  flex-shrink: 0;
-  /* Prevent icon from shrinking */
+  flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
 .button:hover {
@@ -56,56 +53,46 @@
   text-decoration: none; /* Ensure underline is removed on hover */
 }
 
-@media (max-width: 930px) {
+/* Tablet Layout */
+@media (max-width: 1024px) {
   .article-card {
-    width: 100%; /* Ensure the card takes up full width at smaller screen sizes */
-    max-width: 100%;
-    gap: 1.5rem; /* Slightly reduce the gap */
-    flex-direction: column;
+    flex-direction: row; /* Keep the row layout on tablet */
+    gap: 2rem; /* Adjust gap for tablet */
   }
 
   .article-image {
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    margin: 0;
-    padding: 0;
+    width: 15rem; /* Adjust image width */
+    height: 25rem; /* Set fixed height for portrait */
+    aspect-ratio: 3/4; /* Maintain portrait aspect ratio */
+    object-fit: cover; /* Ensure the image doesn't stretch */
   }
 }
 
+/* Mobile Layout */
 @media (max-width: 768px) {
   .article-card {
-    flex-direction: column;
-    /* Stack on smaller screens */
-    align-items: center;
-    /* Center align items */
-    text-align: left;
-    /* Left-align text */
-    gap: 2rem;
-    width: 100%; /* Ensure the card takes up the full width */
-    max-width: 100%; /* Prevent overflow */
+    flex-direction: column; /* Stack the content vertically on mobile */
+    gap: 1.5rem; /* Reduce gap for mobile */
+    padding: 0 1rem; /* Reduce padding on mobile */
   }
 
   .article-image {
-    width: 100%;
-    /* Make the image responsive */
-    height: auto;
-    /* Maintain aspect ratio */
-    margin: 0;
-    /* Remove any default margin */
-    padding: 0;
-    /* Ensure padding is zero */
+    width: 100%; /* Image takes full width on mobile */
+    height: 25rem; /* Set height for horizontal layout */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
   }
 }
 
+/* Very Small Mobile Layout */
 @media (max-width: 480px) {
+  .article-card {
+    gap: 1rem; /* Minimal gap for smaller screens */
+  }
 
   .article-image {
-    width: 100%;        /* Let width adjust based on height */
-    height: 12.5rem;      /* Set a fixed height for a vertical look */
-    align-self: stretch;
-    aspect-ratio: 3/4; /* Makes the image vertically rectangular */
-    display: block;
-    margin: 0 0 1rem;
-    object-fit: cover;  /* Ensure image covers the area without distortion */
+    width: 100%; /* Full width for small devices */
+    height: 12.5rem; /* Adjust the height slightly for smaller screens */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+    margin-bottom: 1rem; /* Space below the image */
   }
 }

@@ -5,10 +5,8 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  overflow: hidden;
-  /* Prevent any overflow on smaller screens */
-  width: 100vw;
-  /* Full viewport width */
+  overflow: hidden; /* Prevent any overflow on smaller screens */
+  width: 100vw; /* Full viewport width */
 }
 
 .skills-heading {
@@ -22,61 +20,72 @@
 
 .skills-list {
   display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 8rem;
-  /* Allows items to wrap to the next row */
+  flex-wrap: wrap; /* Allow items to wrap */
+  padding-bottom: 8rem; /* Space below the list */
+  justify-content: flex-start; /* Default: Items aligned left (desktop behavior) */
 }
 
 .skill-item {
-  flex: 1;
-  /* Adjusts to fill available space */
-  margin: 0.5rem;
-  /* Space between skill items */
-  text-align: center;
-  /* Centers the text */
+  flex: none; /* Prevents items from stretching */
+  margin: 0.5rem; /* Space between skill items */
   display: flex;
-  flex-direction: column;
-  /* Stack the button and list vertically */
-  align-items: flex-start;
-  /* Align items to the start (left) */
+  flex-direction: column; /* Stack button and sub-skills vertically */
+  text-align: left; /* Align text to the left (desktop behavior) */
+  align-items: flex-start; /* Align content to the left (desktop behavior) */
 }
 
 .sub-skills {
   display: flex;
-  flex-direction: column;
-  /* Stacks sub-skills vertically */
-  margin-top: 0.5rem;
-  /* Space between button and sub-skills */
-  list-style-type: none;
-  /* Removes the bullets */
-  text-align: left;
+  flex-direction: column; /* Stacks sub-skills vertically */
+  margin-top: 0.5rem; /* Space between button and sub-skills */
+  list-style-type: none; /* Removes the bullets */
+  text-align: left; /* Align sub-skills to the left */
 }
 
 .sub-skill {
-  margin: 0.25rem 0;
-  /* Space between sub-skills */
+  margin: 0.25rem 0; /* Space between sub-skills */
 }
 
-@media (max-width: 768px) {
-.skills-list {
-flex-direction: column;
+/* Tablet: 768px - 1024px */
+@media (min-width: 480px) and (max-width: 1024px) {
+  .skills-list {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center all skill items */
+    gap: 1rem; /* Add spacing between rows */
+  }
+
+  .skill-item {
+    align-items: center; /* Center content within each skill-item */
+    text-align: center; /* Center text on tablet */
+    margin: 0.5rem auto;
+  }
+
+  .sub-skills {
+    text-align: center; /* Center sub-skills on tablet */
+  }
 }
-}
 
+/* Mobile: Max 480px */
+@media (min-width: 320px) and (max-width: 480px) {
 
-
-@media (max-width: 480px) {
 .skills-heading {
   padding-top: 4rem;
   gap: 1rem;
 }
 
-.skills-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align social links to the left */
-  align-items: flex-start; /* Align the row to the left */
-  padding-bottom: 4rem;
-}
-}
+  .skills-list {
+    flex-direction: column; /* Stack items vertically */
+    align-self: flex-start; /* Align all items to the left */
+    padding-bottom: 4rem;
+  }
 
+  .skill-item {
+    align-items: flex-start; /* Align content to the left */
+    text-align: left; /* Align text within the skill-item to the left */
+    /* margin: 0.5rem 0;  */
+  }
+
+  .sub-skills {
+    text-align: left; /* Align sub-skills to the left */
+  }
+}

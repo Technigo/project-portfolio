@@ -1,148 +1,76 @@
 .project-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Default to row for larger screens */
   gap: 7.8125rem;
   align-self: stretch;
-  width: 74rem;
-  width: 100%; /* Allow full width */
-  max-width: 74rem; /* Limit width for larger screens */
-  box-sizing: border-box; /* Ensure padding is included in width */
-  padding-left: 1.5rem;
+  width: 100%;
+  max-width: 74rem; 
+  box-sizing: border-box; 
+  padding: 0rem 1.5rem;
 }
 
 .project-image {
   width: 29.9375rem;
   height: auto;
   border-radius: 0.75rem;
-  gap: 2rem;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1024px) {
   .project-card {
-    flex-direction: column;
+    flex-direction: column; /* Stack the cards vertically */
+    align-items: flex-start; /* Align content to the start */
     padding: 0 1.5rem;
-    gap: 4rem;
+    gap: 4rem; /* Adjust spacing between sections */
   }
 
   .project-image {
-    width: 43.5rem;
-    height: auto;
-    border-radius: 0.75rem;
-    gap: 2rem;
+    width: 100%; /* Full width for small devices */
+    height: 35rem; /* Adjust the height slightly for smaller screens */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
   }
 }
+
 
 @media (max-width: 768px) {
-  .project-content {
-    flex-direction: column;
-    /* Stack on smaller screens */
-    align-items: center;
-    text-align: left;
+  .project-card {
+    flex-direction: column; /* Ensure stacking continues */
+    align-items: left; 
     gap: 4rem;
   }
 
   .project-image {
-    width: 100%;
-    height: 29.9375rem;
+    width: 100%; /* Make the image fully responsive */
+    height: 25rem; /* Set height for horizontal layout */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
   }
 }
 
 @media (max-width: 480px) {
   .project-card {
     flex-direction: column;
-    /* Stack on smaller screens */
-    align-items: center;
-    text-align: left;
+    align-items: center; 
     gap: 1rem;
     padding: 0;
   }
 
   .project-image {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Ensure padding is zero */
+    width: 21.437rem; /* Adjust image width */
+    height: 29.9375rem; /* Set fixed height for portrait */
+    aspect-ratio: 3/4; /* Maintain portrait aspect ratio */
+    object-fit: cover; /* Ensure the image doesn't stretch */
   }
 }
 
-.project-card {
-  display: flex;
-  flex-direction: row;
-  gap: 7.8125rem;
-  align-self: stretch;
-  width: 74rem;
-  width: 100%; /* Allow full width */
-  max-width: 74rem; /* Limit width for larger screens */
-  box-sizing: border-box; /* Ensure padding is included in width */
-  padding-left: 1.5rem;
-}
-
-.project-image {
-  width: 29.9375rem;
-  height: auto;
-  border-radius: 0.75rem;
-  gap: 2rem;
-}
-
-@media (max-width: 930px) {
+@media (max-width: 360px) {
   .project-card {
-    flex-direction: column;
-    padding: 0 1.5rem;
-    gap: 4rem;
+    padding: 0.5rem; /* Reduce padding for very small screens */
+    gap: 0.5rem; /* Reduce spacing for tight layouts */
   }
 
   .project-image {
-    width: 43.5rem;
-    height: auto;
-    border-radius: 0.75rem;
-    gap: 2rem;
+    width: 18rem; 
+    height: 30rem; /* Maintain aspect ratio */
+    object-fit: cover; /* Prevent stretching or distortion */
   }
-}
-
-@media (max-width: 768px) {
-  .project-content {
-    flex-direction: column;
-    /* Stack on smaller screens */
-    align-items: center;
-    text-align: left;
-    gap: 4rem;
-  }
-
-  .project-image {
-    width: 100%;
-    height: 29.9375rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .project-card {
-    flex-direction: column;
-    /* Stack on smaller screens */
-    align-items: center;
-    text-align: left;
-    gap: 1rem;
-    padding: 0;
-  }
-
-  .project-image {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Ensure padding is zero */
-  }
-}
-
-/* Additional 480px rule for specific height and aspect ratio */
-@media (max-width: 480px) {
-  .project-image {
-    width: auto; /* Let width adjust based on height */
-    height: 29.9375rem; /* Set a fixed height for a vertical look */
-    align-self: stretch;
-    aspect-ratio: 3/4; /* Makes the image vertically rectangular */
-    display: block;
-    margin: 0 0 1rem;
-    object-fit: cover; 
-  }
-}
-  
-  
+} 
+    

@@ -1,12 +1,12 @@
 .tech-card {
   background-color: #000;
-  max-width: 782px;
+  max-width: 900px;
   /* Prevents the card from getting too wide */
   width: 100%;
   /* Responsive width */
   margin: 0 auto;
   /* Center the card */
-  padding: 64px 0px 128px 0px;
+  padding: 128px 0px 128px 0px;
 
 }
 
@@ -17,6 +17,7 @@
 
 .tech-text {
   text-align: center;
+  align-self: stretch;
   font-size: 1.125rem;
   /* Keep your current font size */
   font-style: normal;
@@ -27,3 +28,30 @@
   overflow-wrap: break-word;
 
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .tech-card {
+    padding: 64px 0px 64px 0px;
+  }
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+  .tech-text {
+    padding: 0px 200px;
+  }
+  
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    .tech-text {
+    padding: 0px 100px; 
+  }
+  }
+
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .tech-text {
+    padding: 0px 10px; 
+  }
+  }
+
