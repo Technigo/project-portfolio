@@ -21,7 +21,7 @@ export const ProjectCard = ({
       <div className="project-content">
         <div className="tags">
           {tags.map((tag, index) => (
-            <button key={index} className="tag-button">
+            <button key={index} className="tag-button1">
               {tag}
             </button>
           ))}
