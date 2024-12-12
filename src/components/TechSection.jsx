@@ -19,7 +19,9 @@ function TechSkills() {
     'Zustand',
     'Mongo DB',
     'SQL',
-    'XML/XSD'
+    'XML/XSD',
+    'C#',
+    '.NET'
   ];
 
   // Join the techSkills array into a single string with commas
