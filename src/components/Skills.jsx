@@ -17,7 +17,9 @@ function Skills() {
     'Mongo',
     'SQL',
     'XML',
-    'XSD'
+    'XSD',
+    'C#',
+    '.NET'
   ]);
 
   const toolbox = [
