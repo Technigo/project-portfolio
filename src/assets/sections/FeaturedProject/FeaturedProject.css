@@ -1,0 +1,73 @@
+.project-container {
+  padding: 128px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 100%;
+  align-items: center;
+}
+
+.feature-project-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  color: #0b24f5;
+  margin-bottom: 50px;
+}
+.project-card {
+  width: 80%;
+}
+
+.project-description {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project-container {
+    padding: 128px 32px;
+    margin: 0 auto;
+  }
+
+  .project-list {
+    gap: 32px;
+  }
+
+  .feature-project-title {
+    font-size: 56px;
+    margin-bottom: 30px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project-card {
+    margin: 0 auto;
+    width: 375px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-project-title {
+    font-size: 56px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .project-container {
+    margin: 0 auto;
+  }
+
+  .project-list {
+    align-self: stretch;
+  }
+}
