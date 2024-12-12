@@ -30,7 +30,7 @@ function Skills() {
     'Wordpress',
     'Netlify',
     'Render',
-    'Mongo DB Atlas'
+    'Mongo DB'
   ];
 
   const more = [
