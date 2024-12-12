@@ -30,7 +30,8 @@ function Skills() {
     'Wordpress',
     'Netlify',
     'Render',
-    'Mongo DB'
+    'Mongo DB',
+    'Visual Studio'
   ];
 
   const more = [
