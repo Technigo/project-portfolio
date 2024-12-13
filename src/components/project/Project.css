@@ -34,8 +34,8 @@ body {
 .project-tag {
     background-color: #000000;
 
-    padding: 2px 2px;
-    margin-bottom: 16px;
+    padding: 2px 6px;
+    margin-bottom: 24px;
 
     color: #FFF;
     font-family: Montserrat;
@@ -53,7 +53,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 66px;
-    padding-top: 50px;
+    padding: 128px 0px 64px 0px;
+    margin: 0;
 }
 
 .project-body {
@@ -62,7 +63,8 @@ body {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    margin-top: 10px;
+    padding-bottom: 16px;
+    margin: 0;
 }
 
 
@@ -73,7 +75,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    /* gap: 16px; */
     padding: 0 16px;
 }
 
@@ -84,12 +86,12 @@ body {
 
     background-color: #fff;
     max-width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 64px;
 }
 
 .project-image {
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     border-bottom: var(--blue) solid 10px;
     border-left: var(--blue) solid 10px;
 }
@@ -97,7 +99,7 @@ body {
 .project-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
 
 }
 
@@ -105,12 +107,14 @@ body {
     font-size: 24px;
     color: var(--font-color);
     margin: 0;
+    padding-bottom: 16px;
 }
 
 .project-buttons {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
+    /* margin-bottom: 64px; */
 }
 
 .project-button {
@@ -153,8 +157,8 @@ body {
     .projects-container {
         display: flex;
         flex-direction: column;
-        gap: 32px;
-        padding: 32px 16px;
+
+        padding: 64px 32px;
 
     }
 
@@ -162,7 +166,7 @@ body {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        padding: 16px;
+        padding: 0px 0px 64px 0px;
         gap: 24px;
         margin: 0;
 
@@ -171,9 +175,24 @@ body {
     .featured-title {
 
         text-align: left;
-        padding-left: 18px;
+        padding: 0px 0px 64px 0px;
+
 
     }
+
+    .project-tag {
+        background-color: #000000;
+        padding: 2px 6px;
+        margin: 0px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+
 
     .project-image {
         width: 200px;
@@ -186,7 +205,7 @@ body {
     .project-content {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        /* gap: 16px; */
         width: 100%;
     }
 
@@ -211,6 +230,7 @@ body {
     .project-buttons {
         display: flex;
         flex-direction: row;
+        margin-top: 24px;
         gap: 16px;
 
     }
@@ -230,21 +250,24 @@ body {
 
 @media (min-width: 1024px) {
     .projects-container {
-        max-width: 1200px;
-        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        padding: 128px 0px 0px 0px;
+        margin: 0 a
     }
 
     .project-card {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        padding: 16px;
         gap: 24px;
-        margin: 0;
+        /* margin: 0; */
+        margin-bottom: 128px;
     }
 
     .project-image {
         width: 35%;
+        margin: 0px;
     }
 
     .project-content {
@@ -252,26 +275,39 @@ body {
     }
 
     .project-title {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     .featured-title {
 
         text-align: left;
-        padding-left: 18px;
+
+        padding: 0px 0px 128px 0px;
+        font-size: 80px;
 
     }
 
     .project-body {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .project-buttons {
-        margin-top: 20px;
+        margin-top: 24px;
         display: flex;
         flex-direction: row;
 
     }
+
+    .project-tag {
+
+        padding: 2px 6px;
+        margin: 0px;
+
+
+    }
+
+
+
 }
 
 @media (max-width: 767px) {

@@ -12,7 +12,11 @@ export const TopSection = () => {
           <p className="description">
             Newly graduated web developer with nearly 10 years of experience in e-commerce and digital marketing. Hands-on experience in developing accessible and user-friendly web applications using JavaScript (ES6), React, and Node.js. Passionate about learning and growth, with a strong focus on code quality and user-centered solutions.
           </p>
+          {/* <div className="arrow-box">
+            <VscArrowSmallDown className="arrow" />
+          </div> */}
         </div>
+
       </div>
       <div className="arrow-box">
         <VscArrowSmallDown className="arrow" />
