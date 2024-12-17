@@ -20,7 +20,7 @@ const ProjectInfoCard = ({ project }) => {
     <div className="project-wrapper">
       <div className="project-card">
         <img 
-          src={ImageGrey}
+          src={project.image} 
           alt={`${project.name} screenshot`} 
           className="project-image" 
         />
