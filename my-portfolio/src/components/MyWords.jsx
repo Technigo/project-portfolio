@@ -1,4 +1,3 @@
-import React from "react";
 import "./MyWords.css";
 import ImagePink from "../assets/ImagePink.jpeg";
 import ImageGrey from "../assets/ImageGrey.jpeg";

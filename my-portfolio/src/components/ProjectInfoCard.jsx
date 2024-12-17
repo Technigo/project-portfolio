@@ -1,4 +1,3 @@
-import React from "react";
 import "./ProjectInfoCard.css";
 import ImageGrey from "../assets/ImageGrey.jpeg";
 import GitIconWhite from "../assets/GitIconWhite.svg";
@@ -36,8 +35,7 @@ const ProjectInfoCard = ({ project }) => {
             </div>
             <h3>{project.name}</h3>
             <p className="project-description">
-            The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.
-            </p>
+              {project.description}</p>
           </div>
           <div className="project-links">
             <button 

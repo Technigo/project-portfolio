@@ -1,4 +1,3 @@
-import React from "react";
 import "./Img.css";
 import ImageRed from "../assets/ImageRed.jpeg";
 import ImageGrey from "../assets/ImageGrey.jpeg";

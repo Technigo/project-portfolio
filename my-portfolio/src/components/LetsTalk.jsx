@@ -1,11 +1,10 @@
-import React from "react";
 import "./LetsTalk.css";
 import profilePicture from "../assets/profilepicture.jpg";
 import LinkedinIcon from "../assets/LinkedinIcon.svg";
 import GitIcon from "../assets/GitIcon.svg";
-import StackIcon from "../assets/StackIcon.svg";
-import TwitterIcon from "../assets/TwitterIcon.svg";
-import InstagramIcon from "../assets/InstagramIcon.svg";
+// import StackIcon from "../assets/StackIcon.svg";
+// import TwitterIcon from "../assets/TwitterIcon.svg";
+// import InstagramIcon from "../assets/InstagramIcon.svg";
 
 const LetsTalk = () => {
   // Function to handle link clicks and open in a new tab
@@ -31,33 +30,36 @@ const LetsTalk = () => {
           src={LinkedinIcon} 
           alt="LinkedIn Logo" 
           className="linkedin-logo logo" 
-          onClick={() => handleLinkClick("https://www.linkedin.com")} 
+          onClick={() => handleLinkClick("https://www.linkedin.com/in/elina-eriksson-hult-49712815b/")} 
         />
 
         <img 
           src={GitIcon} 
           alt="GitHub Logo" 
           className="logo" 
-          onClick={() => handleLinkClick("https://github.com")} 
+          onClick={() => handleLinkClick("https://github.com/ElinaEH")} 
         />
-        <img 
+
+         {/* Stack overflow, Twitter and instagram removed */}
+        {/* <img 
           src={StackIcon} 
           alt="Stack Overflow Logo" 
           className="logo" 
           onClick={() => handleLinkClick("https://stackoverflow.com")} 
-        />
-        <img 
+        /> */}
+
+        {/* <img 
           src={TwitterIcon} 
           alt="Twitter Logo" 
           className="logo" 
           onClick={() => handleLinkClick("https://twitter.com")} 
-        />
-        <img 
+        /> */}
+        {/* <img 
           src={InstagramIcon} 
           alt="Instagram Logo" 
           className="logo" 
           onClick={() => handleLinkClick("https://instagram.com")} 
-        />
+        /> */}
       </div>
     </div>
   );

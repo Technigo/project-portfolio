@@ -1,4 +1,3 @@
-import React from "react";
 import "./Skills.css";
 
 const Skills = () => {
@@ -13,6 +12,7 @@ const Skills = () => {
             <li>CSS3</li>
             <li>Javascript ES6</li>
             <li>React</li>
+            <li>Node.js</li>
             <li>Styled Components</li>
             <li>GitHub</li>
           </ul>
@@ -22,23 +22,29 @@ const Skills = () => {
           <h3>Toolbox</h3>
           <ul className="skills-list">
             <li>Postman</li>
+            <li>MongoDB Atlas</li>
             <li>Figma</li>
             <li>Slack</li>
             {/* Add more skills in this category */}
           </ul>
         </div>
-        <div className="skills-category">
+      <div className="skills-category">
           <h3>Upcoming</h3>
           <ul className="skills-list">
-            <li>Node.js</li>
+            <li></li>
             {/* Add more skills in this category */}
           </ul>
-        </div>
+        </div> 
         <div className="skills-category">
           <h3>More</h3>
           <ul className="skills-list">
             <li>Branding</li>
             <li>Strategy</li>
+            <li>Agile Methodologies</li>
+            <li>Creative Processes</li>
+            <li>Music Teaching</li>
+            <li>Creative Workflows</li>
+            <li>Teamwork and Collaboration</li>
             {/* Add more skills in this category */}
           </ul>
         </div>
