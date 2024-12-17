@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import CenteredArrow from '../assets/PinkArrow.svg';
 import OriginalImage from '../assets/original.jpg';
 import './TopSection.css';
 
 function TopSection({ scrollToContact }) { // Accept the scrollToContact prop
-  const [introText, setIntroText] = useState("Hi, I'm Alexandra Meija");
+  const [introText] = useState("Hi, I'm Alexandra Meija");
   const paragraphText =
     "Alexandra identifies herself as a coder with exceptional adjustment skills. She comes from a background in records management and later on project management. In the future, she sees herself combining those skills with her new coding experience.";
 
@@ -21,17 +20,13 @@ function TopSection({ scrollToContact }) { // Accept the scrollToContact prop
             <p className="heading-paragraph-class">{paragraphText}</p>
           </div>
         </div>
-        <img
-          src={CenteredArrow}
-          alt="Downward Arrow"
-          className="centered-arrow"
-          onClick={scrollToContact} // Add the onClick handler
-        />
+        <button className="contact-button" onClick={scrollToContact}>
+          Click here for contact info
+        </button>
       </div>
     </div>
   );
 }
 
 export default TopSection;
-
 
