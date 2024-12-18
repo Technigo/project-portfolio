@@ -1,9 +1,11 @@
 .project-card {
   display: flex;
+  flex-direction: row;
   gap: 3rem;
   width: 80%;
   align-items: center;
   justify-content: space-between;
+  /* gap: 8rem; */
   margin: 0 auto;
 }
 
@@ -16,16 +18,16 @@
 }
 
 .project-image {
-  width: 400px;
-  height: 400px;
+  width: 480px;
+  height: 480px;
   object-fit: cover;
   border-radius: 12px;
   flex-shrink: 0;
-  /* border: 2px solid #000; */
 }
 
 .project-info {
-  max-width: 479px;
+  max-width: 480px;
+  max-height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,6 +67,7 @@
 .project-description {
   margin: 1rem 0;
   text-align: left;
+  max-width: 400px;
 }
 
 .project-links {
@@ -129,4 +132,77 @@ h3 {
   margin: 0;
   font-size: 1.5rem;
   color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .project-wrapper {
+    display: flex;
+    direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .project-wrapper:nth-child(even) .project-card {
+    flex-direction: column; /* Align items in column for even children too */
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3 {
+    display: flex;
+    direction: column;
+    flex-direction: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .project-image {
+    max-width: 300px;
+    max-height: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-content {
+    max-width: 300px;
+    max-height: auto;
+    align-items: center;
+  }
+
+  .project-description {
+    text-align: center;
+    max-width: 300px;
+
+  }
+
+  .project-wrapper .project-card {
+    display: flex;
+    direction: column;
+    flex-direction: center;
+    justify-content: center;
+  }
+
+  .project-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+  }
+
+  .demo-button,
+  .code-button {
+  width: 300px;
+  height: 44px;
+  padding: 0px 12px;
+  gap: 16px;
+}
 }

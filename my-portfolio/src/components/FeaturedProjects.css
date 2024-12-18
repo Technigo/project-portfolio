@@ -12,7 +12,8 @@
 
 .projects-grid {
   display: flex;
-  width: 1184px;
+  max-width: 1200px;
+  width: 100%;
   flex-direction: column;
   align-items: center;  
 }
@@ -49,4 +50,45 @@
 
 .button-icon {
   margin-right: 0.5rem; /* Space between icon and text */
+}
+
+@media screen and (max-width: 480px) {
+  .featured-projects {
+    width: 100%; /* Make sure it takes full width */
+    max-width: none; /* Remove the max-width restriction */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 1rem; /* Add some padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .featured-projects h2 {
+    font-size: 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    max-width: none;
+  }
+
+  .project-wrapper {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .load-more-button {
+    position: relative; /* Ensure it's part of the stacking context */
+    z-index: 10; /* Higher value to bring it on top */
+    padding: 8px;
+    border-radius: 8px;
+  }
 }

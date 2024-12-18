@@ -1,19 +1,17 @@
 import "./App.css";
 import Introduction from "./components/Introduction";
 import Tech from "./components/Tech";
-import Skills from "./components/Skills";
 import FeaturedProjects from "./components/FeaturedProjects";
 import LetsTalk from "./components/LetsTalk";
-import MyWords from "./components/MyWords";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App-container">
       <Introduction />
       <FeaturedProjects />
       <Tech />
-      <Skills />
-      <MyWords />
+      {/* <Skills />
+      <MyWords /> */}
       <LetsTalk />
     </div>
   );

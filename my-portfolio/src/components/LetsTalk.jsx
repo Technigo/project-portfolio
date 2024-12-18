@@ -61,6 +61,7 @@ const LetsTalk = () => {
           onClick={() => handleLinkClick("https://instagram.com")} 
         /> */}
       </div>
+      <footer>© 2024 Elina Eriksson Hult</footer>
     </div>
   );
 };

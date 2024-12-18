@@ -6,7 +6,7 @@
   background-color: var(--primary-color);
   gap: 16px;
   align-self: stretch; 
-  height: 500px;
+  min-height: 500px;
 }
 
 .bio-container h2 {
@@ -16,10 +16,11 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 782px;
+  max-width: 782px;
+  width: 90%
+  padding 0 16px;
 }
 
-/* This one is a bit random here but removing affects other components styling, change later on? */
 body {
   color: var(--secondary-color);
   text-align: center;
@@ -27,7 +28,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 782px;
 }
 
 p {
@@ -37,5 +37,41 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 782px;
+  max-width: 782px;
+  width: 90%;
+  padding: 0 16px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1024px) {
+  .bio-container {
+    padding: 64px 0px;
+    gap: 12px;
+  }
+
+  .bio-container h2 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bio-container {
+    padding: 50px 0px;
+    gap: 8px;
+  }
+
+  .bio-container h2 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 300px;
+  }
 }
