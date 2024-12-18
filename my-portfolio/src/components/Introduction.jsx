@@ -1,7 +1,6 @@
 import Header from "./Header";
 import Img from "./Img";
 import Bio from "./Bio";
-import "./Introduction.css";
 
 const Introduction = () => {
   return (

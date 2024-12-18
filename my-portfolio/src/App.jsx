@@ -10,8 +10,6 @@ function App() {
       <Introduction />
       <FeaturedProjects />
       <Tech />
-      {/* <Skills />
-      <MyWords /> */}
       <LetsTalk />
     </div>
   );

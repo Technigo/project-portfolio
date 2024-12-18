@@ -1,5 +1,4 @@
 import "./ProjectInfoCard.css";
-import ImageGrey from "../assets/ImageGrey.jpeg";
 import GitIconWhite from "../assets/GitIconWhite.svg";
 import WebIconWhite from "../assets/WebIconWhite.svg";
 

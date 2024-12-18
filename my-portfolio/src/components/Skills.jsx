@@ -17,7 +17,6 @@ const Skills = () => {
             <li>GitHub</li>
           </ul>
         </div>
-        {/* Add more skill categories */}
         <div className="skills-category">
           <h3>Toolbox</h3>
           <ul className="skills-list">
@@ -25,28 +24,25 @@ const Skills = () => {
             <li>MongoDB Atlas</li>
             <li>Figma</li>
             <li>Slack</li>
-            {/* Add more skills in this category */}
           </ul>
         </div>
       <div className="skills-category">
           <h3>Upcoming</h3>
-          <ul className="skills-list">
-            <li></li>
-            {/* Add more skills in this category */}
-          </ul>
+            <ul className="skills-list">
+              <li></li>
+            </ul>
         </div> 
         <div className="skills-category">
           <h3>More</h3>
-          <ul className="skills-list">
-            <li>Branding</li>
-            <li>Strategy</li>
-            <li>Agile Methodologies</li>
-            <li>Creative Processes</li>
-            <li>Music Teaching</li>
-            <li>Creative Workflows</li>
-            <li>Teamwork and Collaboration</li>
-            {/* Add more skills in this category */}
-          </ul>
+            <ul className="skills-list">
+              <li>Branding</li>
+              <li>Strategy</li>
+              <li>Agile Methodologies</li>
+              <li>Creative Processes</li>
+              <li>Music Teaching</li>
+              <li>Creative Workflows</li>
+              <li>Teamwork and Collaboration</li>
+            </ul>
         </div>
       </div>
     </section>
