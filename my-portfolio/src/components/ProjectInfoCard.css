@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  width: 80%;
+  max-width: 100%;
   align-items: center;
   justify-content: space-between;
   /* gap: 8rem; */
@@ -29,7 +29,7 @@
 
 .project-info {
   max-width: 480px;
-  max-height: 480px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -137,12 +137,25 @@ h3 {
   color: black;
 }
 
-@media screen and (max-width: 767px) {
+.project-image {
+  max-width: 480px;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 860px) {
   .project-wrapper {
     display: flex;
     direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .project-image {
+    max-width: 100%;
+    height: auto;
   }
   
   .project-card {
@@ -166,13 +179,6 @@ h3 {
     flex-direction: center;
     justify-content: center;
     text-align: center;
-  }
-
-  .project-image {
-    max-width: 300px;
-    max-height: 300px;
-    align-items: center;
-    justify-content: center;
   }
 
   .project-content {
@@ -201,11 +207,12 @@ h3 {
     flex: 1 0 0;
   }
 
+
   .demo-button,
   .code-button {
-  width: 300px;
-  height: 44px;
-  padding: 0px 12px;
-  gap: 16px;
-}
+    width: 100%; /* Make buttons full width */
+    height: 44px;
+    padding: 0px 12px;
+    gap: 16px;
+  }
 }
