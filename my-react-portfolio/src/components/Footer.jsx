@@ -36,12 +36,13 @@ const SocialLinks = styled.div`
   display: flex;
   gap: 16px;
 
+  font-size: 32px;
+
   > a {
     color: #000;
   }
 
   @media (max-width: 768px) {
-    font-size: 32px;
     gap: 32px;
     justify-content: center;
   }
