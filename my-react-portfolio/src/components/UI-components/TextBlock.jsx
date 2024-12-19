@@ -11,6 +11,11 @@ export const TextBlockSection = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    padding: 0px 48px;
+    gap: 16px;
+    p {
+      margin: 0px 24px;
+    }
   }
 `;
 

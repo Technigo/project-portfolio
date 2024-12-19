@@ -47,7 +47,7 @@ export const Projects = ({ src, title, description, leftAligned }) => {
     return (
       <LanguageContainer>
         {languages.map((language) => (
-          <Pill key={language} color="#000">
+          <Pill key={language} color="#000" width="82px">
             {language}
           </Pill>
         ))}

@@ -9,14 +9,13 @@ const ArticleInfo = styled.div`
   width: 580px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 32px;
   margin-bottom: 24px;
 
   @media (max-width: 768px) {
     width: 100%;
     > img {
       width: 100%;
-      
     }
   }
 `;
@@ -25,6 +24,10 @@ const ArticleText = styled.div`
   align-self: stretch;
   text-align: left;
   max-width: 580px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   @media (max-width: 768px) {
     text-align: left;
@@ -45,6 +48,7 @@ export const Articles = ({ src, title, description }) => {
         <LinkButton
           backgroundColor="#ffffff"
           color="#000000"
+          fontWeight="700"
           icon={websiteIcon}
           text="Read Article"
           href=""

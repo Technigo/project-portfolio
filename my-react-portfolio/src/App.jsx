@@ -23,12 +23,25 @@ const SectionWrapper = styled.div`
   color: ${(props) => (props.dark ? "#ffffff" : "#000000")};
 
   @media (max-width: 768px) {
-    padding: 128px 24px;
+    padding: 64px 24px;
+    gap: 32px;
+  }
+`;
+
+const SkillsWrapper = styled(SectionWrapper)`
+  @media (max-width: 768px) {
+    padding: 0px;
+    align-items: flex-start;
+    margin-left: 24px;
+
+    h2 {
+      font-size: 80px;
+      margin-left: 33%;
+    }
   }
 `;
 
 const ButtonWrapper = styled.div`
-  margin-top: 64px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -72,11 +85,11 @@ const App = () => {
           description="HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js, Mongo DB, Web Accessibility, APIs, mob-programming, pair-programming, GitHub."
         />
       </SectionWrapper>
-      <SectionWrapper id="skills">
+      <SkillsWrapper id="skills">
         <AnimatedSection>
           <Skills />
         </AnimatedSection>
-      </SectionWrapper>
+      </SkillsWrapper>
       <SectionWrapper dark id="articles">
         <AnimatedSection>
           <h2>My Words</h2>

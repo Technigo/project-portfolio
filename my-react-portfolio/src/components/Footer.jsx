@@ -5,10 +5,10 @@ const FooterWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 0;
   width: 800px;
   margin: 0 auto;
   text-align: center;
+  gap: 32px;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -16,12 +16,11 @@ const FooterWrapper = styled.div`
 `;
 
 const ProfileImage = styled.img`
-  width: 120px;
-  height: 120px;
+  width: 164px;
+  height: 164px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 24px;
-  margin-top: 64px;
   object-position: center 20%;
 `;
 
@@ -30,6 +29,7 @@ const ContactInfo = styled.div`
   flex-direction: column;
   gap: 8px;
   margin-bottom: 24px;
+  align-items: flex-start;
 `;
 
 const SocialLinks = styled.div`
@@ -39,17 +39,32 @@ const SocialLinks = styled.div`
   > a {
     color: #000;
   }
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    gap: 32px;
+    justify-content: center;
+  }
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 `;
 
 export const Footer = () => {
   return (
     <FooterWrapper>
-      <h2>Let's Talk</h2>
-      <ProfileImage src={profile} alt="Profile" />
+      <Wrapper>
+        <h1>Let's Talk</h1>
+        <ProfileImage src={profile} alt="Profile" />
+      </Wrapper>
       <ContactInfo>
         <h3>Mika Eberstein</h3>
-        <p>+46(0)733 10 60 41</p>
-        <p>mika@sanalabs.com</p>
+        <h3>+46(0)733 10 60 41</h3>
+        <h3>mika@sanalabs.com</h3>
       </ContactInfo>
       <SocialLinks>
         <a href="#">
@@ -57,6 +72,9 @@ export const Footer = () => {
         </a>
         <a href="#">
           <i className="fab fa-github"></i>
+        </a>
+        <a href="#">
+          <i className="fab fa-stack-overflow"></i>
         </a>
         <a href="#">
           <i className="fab fa-twitter"></i>

@@ -7,7 +7,6 @@ export const Pill = styled.div`
   border-radius: 4px;
   border: 1px solid ${(props) => props.color || "#000"};
   background: rgba(0, 0, 0, 0);
-  width: 140px;
   color: ${(props) => props.color || "#000"};
   font-weight: 500;
   font-family: Poppins;
@@ -15,10 +14,11 @@ export const Pill = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  width: ${(props) => props.width || "140px"};
 
   @media (max-width: 768px) {
-    width: 73px;
+    height: 28px;
     margin-top: 8px;
-    font-size: 12px;
+    padding: 0px;
   }
 `;

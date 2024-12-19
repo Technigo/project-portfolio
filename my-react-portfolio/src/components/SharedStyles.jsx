@@ -26,7 +26,6 @@ export const SharedLayout = styled.div`
     > img {
       width: 100%;
       height: auto;
-      margin-bottom: 24px;
     }
   }
 `;

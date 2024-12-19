@@ -7,6 +7,14 @@ const SkillsWrapper = styled.div`
   align-items: center;
   gap: 64px;
   padding: 64px 0;
+
+  @media (max-width: 768px) {
+    gap: 0px;
+
+    h2 {
+      font-size: 80px;
+    }
+  }
 `;
 
 const SkillsGrid = styled.div`
@@ -28,6 +36,7 @@ const StyledPill = styled(Pill)`
 const SkillColumn = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 `;
 
 const skillsData = {
