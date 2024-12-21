@@ -37,7 +37,7 @@ const LetsTalk = () => {
           onClick={() => handleLinkClick("https://github.com/ElinaEH")} 
         />
 
-         {/* Stack overflow, Twitter and instagram removed */}
+         {/* Stack overflow, Twitter and instagram removed add later on */}
         {/* <img 
           src={StackIcon} 
           alt="Stack Overflow Logo" 
