@@ -49,7 +49,7 @@ const FeaturedProjects = () => {
       </div>
       {displayedProjects < projects.length && ( // Show the button only if there are more projects to load
         <button onClick={loadMoreProjects} className="load-more-button">
-          <img src={ArrowIcon} alt="Arrow see more icon" className="button-icon" /> See more projects
+          <img src={ArrowIcon} alt="Arrow see more icon" className="button-icon" /> More Projects
         </button>
       )}
     </section>
