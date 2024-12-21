@@ -15,6 +15,11 @@ import Week10Oceanquiz from "../assets/Week10Oceanquiz.jpg";
 import Week12QR from '../assets/Week12QR.jpg';
 import finalproject from '../assets/Finalproject.jpg';
 import './MyProjects.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
+
 
 
 
@@ -52,37 +57,43 @@ const projectDetails = {
     name: 'Oceanquiz',
     description: 'A an app with an oceanquiz',
     techniques: 'React router, group-project, hooks',
-    thumbnail: Week10Oceanquiz
+    thumbnail: Week10Oceanquiz,
+    githubUrl: "https://github.com/Cocofnas/project-state-management-quiz-vite",
   },
   'project-movies-vite': {
     name: 'Movieapp',
     description: 'A movieapp which displays the most popular movies right now with description and ratings',
     techniques: 'React router, API',
-    thumbnail: Week9Movie
+    thumbnail: Week9Movie,
+    githubUrl: "https://github.com/Cocofnas/project-movies-vite",
   },
   'project-happy-thoughts-vite': {
     name: 'Happy Thoughts',
     description: 'The Happy Thoughts project is an application which can be described as happy and nice twitter. It´s my first fullstack project where we first did the frontend and a few weeks later our own backend',
     techniques: 'React, API, MongoDB',
-    thumbnail: Week7Happy
+    thumbnail: Week7Happy,
+    githubUrl: "https://github.com/Cocofnas/project-happy-thoughts-vite",
   },
   'project-survey-vite': {
     name: 'Christmas Survey App',
     description: 'The Christmas Survey App is a fun and interactive survey about Christmas. It features radio buttons, checkboxes, and a radio handler.',
     techniques: 'React, pair-programming',
-    thumbnail: Week6Christmas
+    thumbnail: Week6Christmas,
+    githubUrl: "https://github.com/Cocofnas/project-survey-vite"
 },
   'project-music-releases-vite': {
     name: 'Music Releases on Spotify',
     description: 'The Music Releases project displays the latest music releases from the time of the API.',
     techniques: 'React, Spotify API, CSS',
-    thumbnail: Week5Music
+    thumbnail: Week5Music,
+    githubUrl: "https://github.com/Cocofnas/project-music-releases-vite",
 },
   'project-weather-app': {
     name: 'Weather App',
     description: 'The Weather App provides current weather information for Stockholm.',
     techniques: 'React, OpenWeather API, CSS, HTML, pair-programming',
-    thumbnail: Week4Weather
+    thumbnail: Week4Weather,
+    githubUrl: "https://github.com/Cocofnas/project-weather-app",
 },
   'guesswhodogs': {
     name: 'Guess Who Game',
@@ -96,11 +107,12 @@ const projectDetails = {
     techniques: 'JavaScript, HTML5, CSS3',
     thumbnail: Week2Chatbot
 },
-  'project-pizza': {
-    name: 'The Pizza App',
-    description: 'The Pizza App allows you to customize and order your favorite pizza using a simple user interface.',
-    techniques: 'HTML5, CSS3, JavaScript',
-    thumbnail: Week1Pizza
+'project-pizza': {
+  name: 'The Pizza App',
+  description: 'The Pizza App allows you to customize and order your favorite pizza using a simple user interface.',
+  techniques: 'HTML5, CSS3, JavaScript',
+  thumbnail: Week1Pizza,
+  githubUrl: 'https://github.com/Cocofnas/project-pizza',
 },
   'project-business-site': {
     name: 'Technigo Precourse Business Website',
@@ -112,7 +124,8 @@ const projectDetails = {
     name: 'News App',
     description: 'The News App displays the latest news from the world of paper flowers.',
     techniques: 'React, News API',
-    thumbnail: paperFlowerNews
+    thumbnail: paperFlowerNews,
+    githubUrl: 'https://github.com/Cocofnas/project-news'
   },
 };
 
@@ -137,11 +150,10 @@ function MyProjects() {
   const githubUsername = 'Cocofnas'; // Replace with your actual GitHub profile name
 
   useEffect(() => {
-    // Fetch your GitHub repositories data using the fetch API
     fetch(`https://api.github.com/users/${githubUsername}/repos`)
       .then((response) => response.json())
       .then((data) => {
-        // Set the repositories data in the state
+        console.log('Fetched repositories:', data); // Check for missing repos
         setRepos(data);
       })
       .catch((error) => {
@@ -149,47 +161,79 @@ function MyProjects() {
       });
   }, [githubUsername]);
 
+  const settings = {
+    dots: true, // Add navigation dots
+    infinite: true, // Infinite loop
+    speed: 500, // Transition speed
+    slidesToShow: 3, // Number of slides visible at a time
+    slidesToScroll: 1, // Slides scrolled at a time
+    responsive: [
+      {
+        breakpoint: 1024, // For tablets
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600, // For mobile
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="my-projects">
-      <h2 className="classh2project">Featured projects</h2>
-      <div className="project-list">
+      <h2 className="classh2project">Featured Projects</h2>
+      <Slider {...settings}>
         {projectOrder.map((repoName) => {
           const repo = repos.find((repo) => repo.name === repoName);
           const project = projectDetails[repoName];
-          const netlifyUrl = netlifyUrls[repoName];
 
-          if (repo && project) {
-            const codeUrl = repo.html_url;
+          if (project) {
+            const githubUrl = repo?.html_url || project.githubUrl; // Use manual URL if `repo` is missing
+            const netlifyUrl = netlifyUrls[repoName];
 
             return (
-              <div key={repo.id} className="project-item">
-              <img src={project.thumbnail} alt={`${project.name} thumbnail`} className="project-thumbnail"/>
-              <div className="project-content">
-                  <h3 className="project-name">{project.name}</h3>
-                  <p className="project-description">{project.description}</p>
+              <div key={repo?.id || repoName} className="project-item">
+                <img
+                  src={project.thumbnail || 'default-thumbnail.jpg'}
+                  alt={`${project.name || 'Unnamed Project'} thumbnail`}
+                  className="project-thumbnail"
+                />
+                <div className="project-content">
+                  <h3 className="project-name">{project.name || 'Unnamed Project'}</h3>
+                  <p className="project-description">
+                    {project.description || 'No description available.'}
+                  </p>
                   <div className="project-techniques">
-                      {project.techniques.split(', ').map((technique, index) => (
-                          <div key={index} className="technique-box">
-                              {technique}
-                          </div>
-                      ))}
+                    {project.techniques
+                      ? project.techniques.split(', ').map((technique, index) => (
+                          <div key={index} className="technique-box">{technique}</div>
+                        ))
+                      : 'No techniques listed.'}
                   </div>
                   <div className="project-links">
-                   <a href={codeUrl} target="_blank" rel="noopener noreferrer" className="btn-view">
-                <img src={ViewCodeButton} alt="View Code Button" />
-                  </a>
-                <a href={netlifyUrl} target="_blank" rel="noopener noreferrer" className="btn-live">
-                <img src={LiveDemoButton} alt="Live Demo Button" />
-                </a>
+                    {githubUrl ? (
+                      <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="btn-view">
+                        <img src={ViewCodeButton} alt="View Code Button" />
+                      </a>
+                    ) : (
+                      <span className="btn-disabled">Code Unavailable</span>
+                    )}
+                    <a href={netlifyUrl || '#'} target="_blank" rel="noopener noreferrer" className="btn-live">
+                      <img src={LiveDemoButton} alt="Live Demo Button" />
+                    </a>
+                  </div>
+                </div>
               </div>
-              </div>
-          </div>
             );
           }
 
           return null;
         })}
-      </div>
+      </Slider>
     </div>
   );
 }

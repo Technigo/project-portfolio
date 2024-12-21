@@ -18,6 +18,9 @@ line-height: normal;
     }
   .project-item {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
   }
   .project-thumbnail {
@@ -36,7 +39,23 @@ height: 280px;
   height: 3,362px;
   padding: 128px 346px 124px 346px;
   }
-  
+ 
+  .slick-prev,
+.slick-next {
+  z-index: 1; /* Ensure buttons are above content */
+  color: #474744; /* Matches your design */
+}
+
+.slick-dots {
+  bottom: -20px; /* Position dots closer to the slider */
+}
+
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   .classh2project {
     color: #474744;;
     font-family: 'Montserrat', sans-serif;
