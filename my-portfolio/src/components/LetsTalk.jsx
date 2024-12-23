@@ -14,7 +14,7 @@ const LetsTalk = () => {
       <h2>Let's Talk</h2>
       <div className="lets-talk-text">
         <div className="profile-picture-container">
-          <img src={profilePicture} alt="Picture of Elina" className="profile-picture" />
+          <img src={profilePicture} alt="Picture of Elina" className="profile-picture" loading="lazy" />
         </div>
         <div className="lets-talk-box">Elina Eriksson Hult</div>
         <div className="lets-talk-box">+46 (0)793 36 64 58</div>

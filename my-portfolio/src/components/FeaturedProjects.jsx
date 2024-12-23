@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectInfoCard from "./ProjectInfoCard";
 import "./FeaturedProjects.css";
 import ArrowIcon from "../assets/ArrowIcon.svg";
@@ -49,7 +49,7 @@ const FeaturedProjects = () => {
       </div>
       {displayedProjects < projects.length && ( // Show the button only if there are more projects to load
         <button onClick={loadMoreProjects} className="load-more-button">
-          <img src={ArrowIcon} alt="Arrow see more icon" className="button-icon" /> More Projects
+          <img src={ArrowIcon} alt="Downward pointing black arrow" className="button-icon" /> More Projects
         </button>
       )}
     </section>
