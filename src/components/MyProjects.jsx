@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import ViewCodeButton from '../assets/View-Code-Button.svg';
 import LiveDemoButton from '../assets/Live-Demo-Button.svg';
 import paperFlowerNews from '../assets/WeekNewsapp.jpg';
@@ -37,13 +37,15 @@ const projectDetails = {
     name: 'Foodie Moodie- Technigo finalproject',
     description: 'Choose a restaurant depending on occasion and mood',
     techniques: 'API, Zustand, styled components, WCAG, MongoDB, React Router',
-    thumbnail: finalproject
+    thumbnail: finalproject,
+    githubUrl: "https://github.com/Cocofnas/final-boiler-plate-monorepo",
   },
   'project-custom-hooks-qr-code-generator-vite': {
     name: 'QR code generator',
     description: 'Make your own qr- code',
     techniques: 'API, Hooks, Lottieanimations, WCAG',
-    thumbnail: Week12QR
+    thumbnail: Week12QR,
+    githubUrl: "https://github.com/Cocofnas/project-custom-hooks-qr-code-generator-vite",
   },
   'project-state-management-quiz-vite': {
     name: 'Oceanquiz',
@@ -91,13 +93,15 @@ const projectDetails = {
     name: 'Guess Who Game',
     description: 'The Guess Who Game is a classic game where you guess the hidden dog.',
     techniques: 'HTML, CSS, JavaScript',
-    thumbnail: Week3GuessWho
+    thumbnail: Week3GuessWho,
+    githubUrl: "https://github.com/Cocofnas/guesswhodogs",
   },
   'project-chatbot': {
     name: 'The order chatbot',
     description: 'The Chatbot app is a conversational AI-powered tool designed to take your food order.',
     techniques: 'JavaScript, HTML5, CSS3',
-    thumbnail: Week2Chatbot
+    thumbnail: Week2Chatbot,
+    githubUrl: "https://github.com/Cocofnas/project-chatbot",
   },
   'project-pizza': {
     name: 'The Pizza App',
@@ -106,12 +110,12 @@ const projectDetails = {
     thumbnail: Week1Pizza,
     githubUrl: 'https://github.com/Cocofnas/project-pizza',
   },
-  'project-business-site': {
-    name: 'Technigo Precourse Business Website',
-    description: 'The Business Website is a simple website for a fictional tattoo parlor.',
-    techniques: 'HTML5, CSS3',
-    thumbnail: Week0Businesswebsite
-  },
+ // 'project-business-site': {//
+    //name: 'Technigo Precourse Business Website',
+   // description: 'The Business Website is a simple website for a fictional tattoo parlor.',
+   // techniques: 'HTML5, CSS3',
+   // thumbnail: Week0Businesswebsite
+ // },
   'project-news': {
     name: 'News App',
     description: 'The News App displays the latest news from the world of paper flowers.',
@@ -139,22 +143,39 @@ const netlifyUrls = {
 
 function MyProjects() {
   const [repos, setRepos] = useState([]);
+  const containerRef = useRef(null);
   const githubUsername = 'Cocofnas';
 
   useEffect(() => {
+    // Fetch GitHub repositories
     fetch(`https://api.github.com/users/${githubUsername}/repos`)
       .then((response) => response.json())
-      .then((data) => {
-        console.log('Fetched repositories:', data);
-        setRepos(data);
-      })
-      .catch((error) => {
-        console.error('Error fetching GitHub repositories:', error);
-      });
+      .then((data) => setRepos(data))
+      .catch((error) => console.error('Error fetching GitHub repositories:', error));
   }, [githubUsername]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the element is visible
+      }
+    );
+
+    const elements = containerRef.current.querySelectorAll('.hidden');
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect(); // Cleanup observer on component unmount
+  }, []);
+
   return (
-    <div className="my-projects">
+    <div className="my-projects" ref={containerRef}>
       <h2 className="classh2project">Featured Projects</h2>
       <div className="project-list">
         {projectOrder.map((repoName) => {
@@ -163,10 +184,10 @@ function MyProjects() {
 
           if (project) {
             const githubUrl = repo?.html_url || project.githubUrl;
-            const netlifyUrl = netlifyUrls[repoName];
+            const netlifyUrl = 'https://example.netlify.app'; // Replace with your actual Netlify URLs
 
             return (
-              <div key={repo?.id || repoName} className="project-item">
+              <div key={repo?.id || repoName} className="project-item hidden">
                 <img
                   src={project.thumbnail || 'default-thumbnail.jpg'}
                   alt={`${project.name || 'Unnamed Project'} thumbnail`}
@@ -186,12 +207,12 @@ function MyProjects() {
                   </div>
                   <div className="project-links">
                     {githubUrl && (
-                      <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="btn-view">
+                      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
                         <img src={ViewCodeButton} alt="View Code Button" />
                       </a>
                     )}
                     {netlifyUrl && (
-                      <a href={netlifyUrl} target="_blank" rel="noopener noreferrer" className="btn-live">
+                      <a href={netlifyUrl} target="_blank" rel="noopener noreferrer">
                         <img src={LiveDemoButton} alt="Live Demo Button" />
                       </a>
                     )}
