@@ -15,13 +15,6 @@ import Week10Oceanquiz from "../assets/Week10Oceanquiz.jpg";
 import Week12QR from '../assets/Week12QR.jpg';
 import finalproject from '../assets/Finalproject.jpg';
 import './MyProjects.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-
-
-
-
 
 const projectOrder = [
   'final-boiler-plate-monorepo',
@@ -46,7 +39,6 @@ const projectDetails = {
     techniques: 'API, Zustand, styled components, WCAG, MongoDB, React Router',
     thumbnail: finalproject
   },
-
   'project-custom-hooks-qr-code-generator-vite': {
     name: 'QR code generator',
     description: 'Make your own qr- code',
@@ -55,14 +47,14 @@ const projectDetails = {
   },
   'project-state-management-quiz-vite': {
     name: 'Oceanquiz',
-    description: 'A an app with an oceanquiz',
+    description: 'An app with an ocean quiz',
     techniques: 'React router, group-project, hooks',
     thumbnail: Week10Oceanquiz,
     githubUrl: "https://github.com/Cocofnas/project-state-management-quiz-vite",
   },
   'project-movies-vite': {
     name: 'Movieapp',
-    description: 'A movieapp which displays the most popular movies right now with description and ratings',
+    description: 'A movie app which displays the most popular movies right now with description and ratings',
     techniques: 'React router, API',
     thumbnail: Week9Movie,
     githubUrl: "https://github.com/Cocofnas/project-movies-vite",
@@ -80,40 +72,40 @@ const projectDetails = {
     techniques: 'React, pair-programming',
     thumbnail: Week6Christmas,
     githubUrl: "https://github.com/Cocofnas/project-survey-vite"
-},
+  },
   'project-music-releases-vite': {
     name: 'Music Releases on Spotify',
     description: 'The Music Releases project displays the latest music releases from the time of the API.',
     techniques: 'React, Spotify API, CSS',
     thumbnail: Week5Music,
     githubUrl: "https://github.com/Cocofnas/project-music-releases-vite",
-},
+  },
   'project-weather-app': {
     name: 'Weather App',
     description: 'The Weather App provides current weather information for Stockholm.',
     techniques: 'React, OpenWeather API, CSS, HTML, pair-programming',
     thumbnail: Week4Weather,
     githubUrl: "https://github.com/Cocofnas/project-weather-app",
-},
+  },
   'guesswhodogs': {
     name: 'Guess Who Game',
     description: 'The Guess Who Game is a classic game where you guess the hidden dog.',
     techniques: 'HTML, CSS, JavaScript',
     thumbnail: Week3GuessWho
-},
+  },
   'project-chatbot': {
     name: 'The order chatbot',
     description: 'The Chatbot app is a conversational AI-powered tool designed to take your food order.',
     techniques: 'JavaScript, HTML5, CSS3',
     thumbnail: Week2Chatbot
-},
-'project-pizza': {
-  name: 'The Pizza App',
-  description: 'The Pizza App allows you to customize and order your favorite pizza using a simple user interface.',
-  techniques: 'HTML5, CSS3, JavaScript',
-  thumbnail: Week1Pizza,
-  githubUrl: 'https://github.com/Cocofnas/project-pizza',
-},
+  },
+  'project-pizza': {
+    name: 'The Pizza App',
+    description: 'The Pizza App allows you to customize and order your favorite pizza using a simple user interface.',
+    techniques: 'HTML5, CSS3, JavaScript',
+    thumbnail: Week1Pizza,
+    githubUrl: 'https://github.com/Cocofnas/project-pizza',
+  },
   'project-business-site': {
     name: 'Technigo Precourse Business Website',
     description: 'The Business Website is a simple website for a fictional tattoo parlor.',
@@ -131,7 +123,7 @@ const projectDetails = {
 
 const netlifyUrls = {
   'final-boiler-plate-monorepo': 'https://foodiemoodie.netlify.app/',
-  'project-custom-hooks-qr-code-generator-vite':'https://cocofnasqrcode.netlify.app/',
+  'project-custom-hooks-qr-code-generator-vite': 'https://cocofnasqrcode.netlify.app/',
   'project-state-management-quiz-vite': 'https://theoceanquiz.netlify.app/',
   'project-movies-vite': 'https://subtle-macaron-96a6c5.netlify.app/',
   'project-happy-thoughts-vite': 'https://cocofnashappythoughts.netlify.app/',
@@ -147,13 +139,13 @@ const netlifyUrls = {
 
 function MyProjects() {
   const [repos, setRepos] = useState([]);
-  const githubUsername = 'Cocofnas'; // Replace with your actual GitHub profile name
+  const githubUsername = 'Cocofnas';
 
   useEffect(() => {
     fetch(`https://api.github.com/users/${githubUsername}/repos`)
       .then((response) => response.json())
       .then((data) => {
-        console.log('Fetched repositories:', data); // Check for missing repos
+        console.log('Fetched repositories:', data);
         setRepos(data);
       })
       .catch((error) => {
@@ -161,38 +153,16 @@ function MyProjects() {
       });
   }, [githubUsername]);
 
-  const settings = {
-    dots: true, // Add navigation dots
-    infinite: true, // Infinite loop
-    speed: 500, // Transition speed
-    slidesToShow: 3, // Number of slides visible at a time
-    slidesToScroll: 1, // Slides scrolled at a time
-    responsive: [
-      {
-        breakpoint: 1024, // For tablets
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 600, // For mobile
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <div className="my-projects">
       <h2 className="classh2project">Featured Projects</h2>
-      <Slider {...settings}>
+      <div className="project-list">
         {projectOrder.map((repoName) => {
           const repo = repos.find((repo) => repo.name === repoName);
           const project = projectDetails[repoName];
 
           if (project) {
-            const githubUrl = repo?.html_url || project.githubUrl; // Use manual URL if `repo` is missing
+            const githubUrl = repo?.html_url || project.githubUrl;
             const netlifyUrl = netlifyUrls[repoName];
 
             return (
@@ -208,23 +178,23 @@ function MyProjects() {
                     {project.description || 'No description available.'}
                   </p>
                   <div className="project-techniques">
-                    {project.techniques
-                      ? project.techniques.split(', ').map((technique, index) => (
-                          <div key={index} className="technique-box">{technique}</div>
-                        ))
-                      : 'No techniques listed.'}
+                    {project.techniques.split(', ').map((technique, index) => (
+                      <div key={index} className="technique-box">
+                        {technique}
+                      </div>
+                    ))}
                   </div>
                   <div className="project-links">
-                    {githubUrl ? (
+                    {githubUrl && (
                       <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="btn-view">
                         <img src={ViewCodeButton} alt="View Code Button" />
                       </a>
-                    ) : (
-                      <span className="btn-disabled">Code Unavailable</span>
                     )}
-                    <a href={netlifyUrl || '#'} target="_blank" rel="noopener noreferrer" className="btn-live">
-                      <img src={LiveDemoButton} alt="Live Demo Button" />
-                    </a>
+                    {netlifyUrl && (
+                      <a href={netlifyUrl} target="_blank" rel="noopener noreferrer" className="btn-live">
+                        <img src={LiveDemoButton} alt="Live Demo Button" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -233,7 +203,7 @@ function MyProjects() {
 
           return null;
         })}
-      </Slider>
+      </div>
     </div>
   );
 }
