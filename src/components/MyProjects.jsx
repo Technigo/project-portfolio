@@ -32,6 +32,22 @@ const projectOrder = [
   'project-news',
 ];
 
+const netlifyUrls = {
+  'final-boiler-plate-monorepo': 'https://foodiemoodie.netlify.app/',
+  'project-custom-hooks-qr-code-generator-vite':'https://cocofnasqrcode.netlify.app/',
+  'project-state-management-quiz-vite': 'https://theoceanquiz.netlify.app/',
+  'project-movies-vite': 'https://subtle-macaron-96a6c5.netlify.app/',
+  'project-happy-thoughts-vite': 'https://cocofnashappythoughts.netlify.app/',
+  'project-survey-vite': 'https://cocofnaschristmassurvey.netlify.app/',
+  'project-music-releases-vite': 'https://cocofnasspotify.netlify.app/',
+  'project-weather-app': 'https://mam-weatherapp.netlify.app/',
+  'guesswhodogs': 'https://guessthedog.netlify.app/',
+  'project-chatbot': 'https://cocofnaschatbot.netlify.app/',
+  'project-pizza': 'https://cocofnaspizza.netlify.app/',
+  'project-business-site': 'https://quiet-maamoul-e254ec.netlify.app/',
+  'project-news': 'https://cute-meringue-8f9187.netlify.app/',
+};
+
 const projectDetails = {
   'final-boiler-plate-monorepo': {
     name: 'Foodie Moodie- Technigo finalproject',
@@ -187,12 +203,17 @@ const MyProjects = () => {
                     ))}
                   </div>
                   <div className="project-links">
-                    {project.githubUrl && (
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <img src={ViewCodeButton} alt="View Code Button" />
-                      </a>
-                    )}
-                  </div>
+  {project.githubUrl && (
+    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+      <img src={ViewCodeButton} alt="View Code Button" />
+    </a>
+  )}
+  {netlifyUrls[repoName] && (
+    <a href={netlifyUrls[repoName]} target="_blank" rel="noopener noreferrer">
+      <img src={LiveDemoButton} alt="Live Demo Button" />
+    </a>
+  )}
+</div>
                 </div>
               </div>
             );
