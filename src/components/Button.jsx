@@ -29,7 +29,7 @@ const ButtonStyle = styled.button`
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: #000000;
         mix-blend-mode: multiply;
         opacity: 0;
         transition: opacity 0.3s;
