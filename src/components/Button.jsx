@@ -34,16 +34,15 @@ const ButtonStyle = styled.button`
         opacity: 0;
         transition: opacity 0.3s;
         border-radius: 25px;
-        background-color: transparent;
     }
 
     &:hover::before {
         opacity: 1;
-        background-color: ${props => props.type === 'btn-live' ? 'pink' : '#5FA8D3;'};
+        background-color: ${props => props.type === 'btn-live' ? 'gray' : '#474744;'};
     }
 
     & svg {
-        fill: ${props => props.type === 'btn-live' ? 'pink' : '#5FA8D3;'};
+        fill: ${props => props.type === 'btn-live' ? 'gray' : '#474744;'};
     }
 
     @media (max-width: 375px) {

@@ -8,7 +8,7 @@ import Button from './Button';
 const Contact = React.forwardRef((props, ref) => {
   const linkedinLink = 'https://se.linkedin.com/in/alexandra-meija-0757403b';
   const githubLink = 'https://github.com/Cocofnas';
-  const cvDownloadLink = '/CV.pdf'; // Update this path with the actual location of your CV file
+  const cvDownloadLink = '/CV.pdf'; // Ensure this file is accessible in your public folder or server
 
   return (
     <div className="contact" ref={ref}>
@@ -20,17 +20,19 @@ const Contact = React.forwardRef((props, ref) => {
           <p className="contact-mail">alexandrameija.tech@gmail.com</p>
         </li>
         <li className="contact-item">
-          <Button
-            type="download-cv"
-            label="Click here to download my CV"
-            onClick={() => window.open(cvDownloadLink, '_blank')}
-          />
+          <div className="CVbutton-container">
+            <Button
+              type="download-cv"
+              label="Click here to download my CV"
+              onClick={() => window.open(cvDownloadLink, '_blank')}
+            />
+          </div>
         </li>
         <li className="contact-item">
           <div className="button-container">
             <Button
-              type="contact-link" 
-              icon={<img src={linkedinIcon} alt="LinkedIn" />} 
+              type="contact-link"
+              icon={<img src={linkedinIcon} alt="LinkedIn" />}
               onClick={() => window.open(linkedinLink, '_blank')}
             />
             <Button
@@ -46,10 +48,3 @@ const Contact = React.forwardRef((props, ref) => {
 });
 
 export default Contact;
-
-
-  
-
-
-
-
