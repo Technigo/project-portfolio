@@ -81,7 +81,17 @@ align-items: flex-start;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);  /* Added box shadow */
 }
 
+.hidden {
+  opacity: 0;
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
 
+/* Final state: visible */
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Reset to original position */
+}
 
 
 @media (min-width: 744px) and (max-width: 1279px) {

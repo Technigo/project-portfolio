@@ -28,7 +28,7 @@ const projectOrder = [
   'guesswhodogs',
   'project-chatbot',
   'project-pizza',
-  'project-business-site',
+  //'project-business-site',
   'project-news',
 ];
 
@@ -110,7 +110,7 @@ const projectDetails = {
     thumbnail: Week1Pizza,
     githubUrl: 'https://github.com/Cocofnas/project-pizza',
   },
- // 'project-business-site': {//
+   // 'project-business-site': {//
     //name: 'Technigo Precourse Business Website',
    // description: 'The Business Website is a simple website for a fictional tattoo parlor.',
    // techniques: 'HTML5, CSS3',
@@ -125,34 +125,18 @@ const projectDetails = {
   },
 };
 
-const netlifyUrls = {
-  'final-boiler-plate-monorepo': 'https://foodiemoodie.netlify.app/',
-  'project-custom-hooks-qr-code-generator-vite': 'https://cocofnasqrcode.netlify.app/',
-  'project-state-management-quiz-vite': 'https://theoceanquiz.netlify.app/',
-  'project-movies-vite': 'https://subtle-macaron-96a6c5.netlify.app/',
-  'project-happy-thoughts-vite': 'https://cocofnashappythoughts.netlify.app/',
-  'project-survey-vite': 'https://cocofnaschristmassurvey.netlify.app/',
-  'project-music-releases-vite': 'https://cocofnasspotify.netlify.app/',
-  'project-weather-app': 'https://mam-weatherapp.netlify.app/',
-  'guesswhodogs': 'https://guessthedog.netlify.app/',
-  'project-chatbot': 'https://cocofnaschatbot.netlify.app/',
-  'project-pizza': 'https://cocofnaspizza.netlify.app/',
-  'project-business-site': 'https://quiet-maamoul-e254ec.netlify.app/',
-  'project-news': 'https://cute-meringue-8f9187.netlify.app/',
-};
-
-function MyProjects() {
+const MyProjects = () => {
   const [repos, setRepos] = useState([]);
   const containerRef = useRef(null);
   const githubUsername = 'Cocofnas';
 
-  useEffect(() => {
-    // Fetch GitHub repositories
-    fetch(`https://api.github.com/users/${githubUsername}/repos`)
-      .then((response) => response.json())
-      .then((data) => setRepos(data))
-      .catch((error) => console.error('Error fetching GitHub repositories:', error));
-  }, [githubUsername]);
+  // This section is commented out for future use:
+  //useEffect(() => {
+  //  fetch(`https://api.github.com/users/${githubUsername}/repos`)
+  //    .then((response) => response.json())
+  //    .then((data) => setRepos(data))
+  //    .catch((error) => console.error('Error fetching GitHub repositories:', error));
+  //}, [githubUsername]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -183,9 +167,6 @@ function MyProjects() {
           const project = projectDetails[repoName];
 
           if (project) {
-            const githubUrl = repo?.html_url || project.githubUrl;
-            const netlifyUrl = 'https://example.netlify.app'; // Replace with your actual Netlify URLs
-
             return (
               <div key={repo?.id || repoName} className="project-item hidden">
                 <img
@@ -206,14 +187,9 @@ function MyProjects() {
                     ))}
                   </div>
                   <div className="project-links">
-                    {githubUrl && (
-                      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                    {project.githubUrl && (
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <img src={ViewCodeButton} alt="View Code Button" />
-                      </a>
-                    )}
-                    {netlifyUrl && (
-                      <a href={netlifyUrl} target="_blank" rel="noopener noreferrer">
-                        <img src={LiveDemoButton} alt="Live Demo Button" />
                       </a>
                     )}
                   </div>
@@ -221,12 +197,11 @@ function MyProjects() {
               </div>
             );
           }
-
           return null;
         })}
       </div>
     </div>
   );
-}
+};
 
 export default MyProjects;
