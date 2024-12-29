@@ -15,6 +15,7 @@ import Week10Oceanquiz from "../assets/Week10Oceanquiz.jpg";
 import Week12QR from '../assets/Week12QR.jpg';
 import finalproject from '../assets/Finalproject.jpg';
 import './MyProjects.css';
+import Button from './Button';
 
 const projectOrder = [
   'final-boiler-plate-monorepo',
@@ -147,12 +148,12 @@ const MyProjects = () => {
   const githubUsername = 'Cocofnas';
 
   // This section is commented out for future use:
-  //useEffect(() => {
-  //  fetch(`https://api.github.com/users/${githubUsername}/repos`)
-  //    .then((response) => response.json())
-  //    .then((data) => setRepos(data))
-  //    .catch((error) => console.error('Error fetching GitHub repositories:', error));
-  //}, [githubUsername]);
+  // useEffect(() => {
+  //   fetch(`https://api.github.com/users/${githubUsername}/repos`)
+  //     .then((response) => response.json())
+  //     .then((data) => setRepos(data))
+  //     .catch((error) => console.error('Error fetching GitHub repositories:', error));
+  // }, [githubUsername]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -204,14 +205,18 @@ const MyProjects = () => {
                   </div>
                   <div className="project-links">
   {project.githubUrl && (
-    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-      <img src={ViewCodeButton} alt="View Code Button" />
-    </a>
+    <Button
+      type="btn-code"
+      icon={<img src={ViewCodeButton} alt="View Code Button" />}
+      onClick={() => window.open(project.githubUrl, '_blank')}
+    />
   )}
   {netlifyUrls[repoName] && (
-    <a href={netlifyUrls[repoName]} target="_blank" rel="noopener noreferrer">
-      <img src={LiveDemoButton} alt="Live Demo Button" />
-    </a>
+    <Button
+      type="btn-live"
+      icon={<img src={LiveDemoButton} alt="Live Demo Button" />}
+      onClick={() => window.open(netlifyUrls[repoName], '_blank')}
+    />
   )}
 </div>
                 </div>

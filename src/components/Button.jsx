@@ -1,20 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-const ProjectLinks = styled.div`
-    display: flex;
-    gap: 16px;
 
-    @media (min-width: 744px) and (max-width: 1279px) {
-        gap: 10px;
-    }
-
-    @media (min-width: 375px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-`;
 
 const ButtonStyle = styled.button`
     position: relative;
