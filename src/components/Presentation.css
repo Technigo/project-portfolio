@@ -3,6 +3,7 @@
     max-height: auto;
     background-color: #000000;
     overflow: hidden; /* Add this to prevent child elements from overflowing */
+    padding-bottom: 50px; /* Add space for the dots */
 }
 
 .presentation-heading {
@@ -12,7 +13,6 @@
     line-height: 97,52px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 143px;
     margin: 0; /* Add this to reset any default margins */
     color: #ffffff;
     padding: 128px 964px 0px 143px;
@@ -32,15 +32,59 @@
     display: flex;
     flex-wrap: wrap; /* Allow articles to wrap to the next row */
     justify-content: space-between; /* Spread articles evenly across the container */
-    padding: 15px 143px; /* Adjust padding as needed */
-    width: 100vw;
+    padding: 15px 100px; /* Adjust padding as needed */
 }
 
 .article-card {
     width: calc(50% - 20px); /* Each article card takes up half of the container width with some spacing */
     margin-bottom: 20px; /* Add space between rows */
 }
-
+/* Center and style the dots */
+.slick-dots {
+    position: absolute;
+    bottom: -30px; /* Adjust this value to position the dots */
+    display: flex !important;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px; /* Add spacing between dots */
+  }
+  
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #b0b0a3; /* Grey background for all dots */
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .slick-dots li button::before {
+    content: '';
+    position: absolute;
+    top: 2px; /* Center the white dot vertically */
+    left: 2px; /* Center the white dot horizontally */
+    width: 8px; /* Size of the inner white dot */
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff; /* White dot center */
+    transition: transform 0.3s ease; /* Add scaling effect */
+  }
+  
+  .slick-dots li.slick-active button::before {
+    transform: scale(1.2); /* Enlarge the active white dot slightly */
+  }
+  
+  
 
 /* Tablet */
 @media (min-width: 744px) and (max-width: 1279px) {
