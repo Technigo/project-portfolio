@@ -1,23 +1,19 @@
 .grid-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
   justify-items: center;
-  padding: 40px 32px;
+  padding: 64px 16px;
 }
 
 .grid-section h1,
 .grid-section h2,
 .grid-section h3 {
   grid-column: span 4;
-  margin: 6px 0 12px 0;
 }
 
 @media (min-width: 640px) {
   .grid-section {
     grid-template-columns: repeat(8, 1fr);
-    padding: 40px 100px;
-
   }
 
   .grid-section h1,
@@ -30,7 +26,6 @@
 @media (min-width: 1024px) {
   .grid-section {
     grid-template-columns: repeat(12, 1fr);
-    padding: 40px 80px;
   }
 
   .grid-section h1,
