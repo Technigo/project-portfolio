@@ -1,8 +1,6 @@
 .tag {
   align-items: flex-start;
-  background-color: #ffffff;
   border: 1px solid;
-  border-color: #000000;
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -10,9 +8,20 @@
   position: relative;
 }
 
-.tag .text-wrapper {
+.tag.white {
+  background-color: #ffffff;
   color: #000000;
-  margin-top: -1.00px;
+  border-color: #000000;
+}
+
+.tag.black {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.tag .text-wrapper {
+  margin-top: -1px;
   position: relative;
   width: fit-content;
 }

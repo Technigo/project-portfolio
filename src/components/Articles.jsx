@@ -17,7 +17,7 @@ export const Articles = () => {
             <img src={article.image} alt={article.title} className="article-image" />
             <div className="article-content">
               <div className="article-date">
-                <Tag text={article.date} />
+                <Tag text={article.date} variant="black" />
               </div>
               <h3>{article.title}</h3>
               <p className="article-description">{article.description}</p>
