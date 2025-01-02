@@ -1,46 +1,74 @@
 .skills-section {
-    background-color: #0041ff; 
-    color: #ffffff; 
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .skills-title {
-    font-size: 3rem;
-    margin-bottom: 40px;
-  }
-  
+  background-color: #0041ff;
+  color: #ffffff;
+  padding: 50px;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 80px; /* Large font size for the title */
+  font-weight: bold;
+  color: #ffffff; /* White title for visibility on blue background */
+  margin: 0; /* Remove default margin */
+}
+
+
+
+.skills-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.skills-category {
+  color: #0041ff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  margin: 20px;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added smooth transitions */
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  color: #FFF;
+  font-family: 'Hind', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
   .skills-grid {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
   }
-  
+
   .skills-category {
-    background: #ffffff;
-    color: #0041ff;
-    padding: 20px;
-    border-radius: 8px;
-    width: 200px;
-    margin: 20px;
+      width: 100%;
+      max-width: 300px;
   }
-  
-  .category-title {
-    font-size: 1.5rem;
-    padding: 10px;
-    color: #ffffff;
-    margin-bottom: 15px;
-    border-radius: 4px;
-  }
-  
-  .skills-list {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .skills-list li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-  }
-  
+}
