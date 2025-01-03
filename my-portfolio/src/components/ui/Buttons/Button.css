@@ -10,6 +10,8 @@
   font-size: 18px;
   border-radius: 12px;
   gap: 16px;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .project-button {
@@ -17,9 +19,18 @@
   color: var(--secondary-color);
 }
 
+.project-button:hover {
+  background-color: var(--accent-color);
+}
+
 .article-button {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+
+.article-button:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .project-view-more-button,
@@ -35,40 +46,54 @@
   border-radius: 12px;
   font-size: 18px;
   margin-top: 64px;
- }
+  text-decoration: none;
+  font-weight: 500;
+}
 
 .project-view-more-button {
   background: var(--secondary-color);
   color: var(--primary-color);
   border: 2px solid #000;
-  }
-  
+}
+
+.project-view-more-button:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
 .article-view-more-button {
   background: var(--primary-color);
   color: var(--secondary-color);
   border: 2px solid #FFF;
-  }
+}
 
-.article-button-icon, 
-.project-button-icon { 
+.article-view-more-button:hover {
+  background-color: var(--accent-color);
+}
+
+.article-button-icon,
+.project-button-icon {
   width: 32px;
   height: 32px;
 }
 
 @media (min-width: 375px) {
+
   .project-button,
-  .article-button{
+  .article-button {
     width: 303px;
   }
+
   .project-view-more-button,
-  .article-view-more-button{
+  .article-view-more-button {
     width: 303px;
   }
 }
 
 @media (min-width: 1024px) {
-.project-view-more-button,
-.article-view-more-button{
-  margin-top: 128px;
-}
+
+  .project-view-more-button,
+  .article-view-more-button {
+    margin-top: 128px;
+  }
 }

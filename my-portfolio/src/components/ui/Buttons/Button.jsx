@@ -1,15 +1,20 @@
 /* eslint-disable react/prop-types */
 import "./Button.css";
 
-export const Button = ({ text, icon, onClick, sectionType = "default", isViewMore }) => {
+export const Button = ({ text, icon, href, target, sectionType = "default", isViewMore }) => {
   const buttonClass = isViewMore
-    ? `${sectionType}-view-more-button`  
-    : `${sectionType}-button`;  
+    ? `${sectionType}-view-more-button`
+    : `${sectionType}-button`;
 
   return (
-    <button className={`button ${buttonClass}`} onClick={onClick}>
+    <a
+      className={`button ${buttonClass}`}
+      href={href}
+      target={target}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
+    >
       {icon && <img src={icon} alt="icon" className={`${sectionType}-button-icon`} />}
       {text}
-    </button>
+    </a>
   );
 };
