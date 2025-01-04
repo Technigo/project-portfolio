@@ -1,0 +1,39 @@
+.projects-container {
+  grid-column: span 4;
+  gap: 64px;
+}
+
+.projects-container h2 {
+  margin-bottom: 64px;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.view-more-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Breakpoint for tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  .projects-container {
+    grid-column: span 8;
+    gap: 64px;
+  }
+}
+
+/* breakpoint for small desktop */
+@media (min-width: 769px) {
+  .projects-container {
+    grid-column: span 12;
+    gap: 64px;
+  }
+
+  .project-wrapper>.project-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
