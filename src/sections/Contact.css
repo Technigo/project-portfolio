@@ -1,0 +1,95 @@
+.contact-section {
+  background-color: #FFF;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Prevent any overflow on smaller screens */
+  width: 100vw;
+  /* Full viewport width */
+}
+
+.contact-heading {
+  color: #000;
+  max-width: 74rem;
+  padding-top: 8rem;
+  flex-direction: column;
+  text-align: center;
+  gap: 8rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  /* Maintain aspect ratio */
+  border-radius: 50%;
+  /* Create ellipse shape */
+  object-fit: cover;
+  /* Ensure the image covers the shape */
+  margin-top: 1rem;
+}
+
+
+.contact-info {
+  color: #000;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 4rem 0rem;
+}
+
+.contact-name {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* Space between icons */
+  margin-bottom: 8rem; 
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  /* Maintain aspect ratio */
+}
+
+@media (max-width: 786px) {
+.contact-info {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 4rem 0rem 2rem;
+ }
+}
+
+@media (max-width: 480px) {
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+ }
+.contact-info {
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+  .social-links {
+    display: flex;
+    flex-direction: row; /* Keep icons in a row */
+    justify-content: flex-start; /* Align icons to the left */
+    align-items: flex-start; /* Align social icons to the left */
+    margin-bottom: 4rem;
+    padding: 0rem 1rem 0rem 1rem;
+ }
+}

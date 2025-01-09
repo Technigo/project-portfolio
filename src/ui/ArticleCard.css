@@ -1,0 +1,99 @@
+.article-card {
+  display: flex;
+  flex-direction: row; /* Default row layout for desktop */
+  padding: 1rem;
+  align-self: stretch;
+  width: 100%;
+  max-width: 74rem;
+  gap: 7.8125rem;
+  box-sizing: border-box;
+}
+
+.article-image {
+  width: 29.9375rem; /* Adjusted width to avoid excessive stretching */
+  height: 19.4375rem; /* Increased height to give the image more vertical space */
+  border-radius: 0.75rem;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.article-content {
+  color: #FFF;
+}
+
+.article-button {
+  border-radius: 0.75rem;
+  background: #FFF;
+  color: #000;
+  display: flex;
+  width: 18.9375rem;
+  height: 3rem;
+  padding: 0rem 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.button:hover {
+  background-color: #5ea7b6;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+/* Ensure that links styled as buttons do not show underlines */
+.article-card a {
+  text-decoration: none; /* Remove underline from link */
+}
+
+.article-card a:hover {
+  text-decoration: none; /* Ensure underline is removed on hover */
+}
+
+/* Tablet Layout */
+@media (max-width: 1024px) {
+  .article-card {
+    flex-direction: row; /* Keep the row layout on tablet */
+    gap: 2rem; /* Adjust gap for tablet */
+  }
+
+  .article-image {
+    width: 15rem; /* Adjust image width */
+    height: 25rem; /* Set fixed height for portrait */
+    aspect-ratio: 3/4; /* Maintain portrait aspect ratio */
+    object-fit: cover; /* Ensure the image doesn't stretch */
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .article-card {
+    flex-direction: column; /* Stack the content vertically on mobile */
+    gap: 1.5rem; /* Reduce gap for mobile */
+    padding: 0 1rem; /* Reduce padding on mobile */
+  }
+
+  .article-image {
+    width: 100%; /* Image takes full width on mobile */
+    height: 25rem; /* Set height for horizontal layout */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+  }
+}
+
+/* Very Small Mobile Layout */
+@media (max-width: 480px) {
+  .article-card {
+    gap: 1rem; /* Minimal gap for smaller screens */
+    padding: 0rem 2rem 0rem 1rem;
+  }
+
+  .article-image {
+    width: 100%; /* Full width for small devices */
+    height: 12.5rem; /* Adjust the height slightly for smaller screens */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+    margin-bottom: 1rem; /* Space below the image */
+  }
+}

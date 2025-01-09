@@ -1,0 +1,70 @@
+.projects-section {
+  background-color: #FFF;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Prevent any overflow on smaller screens */
+  padding-bottom: 128px;
+  /* Full viewport width */
+}
+
+.heading2.projects-heading{
+  color: #000;
+  max-width: 74rem;
+  padding: 8rem 0rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow wrapping of project cards */
+  justify-content: center;
+  /* Center the cards */
+  gap: 8rem;
+  /* Space between cards */
+  width: 100%;
+  /* Full width */
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .project-cards {
+    flex-direction: column; /* Stack project cards vertically */
+    gap: 4rem; /* Adjust gap when stacked */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-cards {
+    flex-direction: column;
+    /* Stack project cards vertically */
+    align-items: center;
+    /* Center cards horizontally */
+    padding: 0rem 1rem 4rem;
+    gap: 4rem; 
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+
+.heading2.projects-heading {
+ padding: 8rem 0rem 4rem;
+}
+}
+
+
+@media (max-width: 767px) {
+  .heading2.projects-heading {
+    font-size: 3.75rem;
+    padding: 4rem 0rem 4rem;
+    /* Adjust size for mobile */
+  }
+
+  .projects-section {
+   padding-bottom:4rem;
+  }
+}

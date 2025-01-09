@@ -1,0 +1,65 @@
+.project-card {
+  display: flex;
+  flex-direction: row; /* Default to row for larger screens */
+  gap: 7.8125rem;
+  align-self: stretch;
+  width: 100%;
+  max-width: 74rem; 
+  box-sizing: border-box; 
+  padding: 0rem 1.5rem;
+}
+
+.project-image {
+  width: 29.9375rem;
+  height: 29.9375rem;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .project-card {
+    flex-direction: column; /* Stack the cards vertically */
+    align-items: flex-start; /* Align content to the start */
+    padding: 0 1.5rem;
+    gap: 4rem; /* Adjust spacing between sections */
+  }
+
+  .project-image {
+    width: 100%; /* Full width for small devices */
+    height: 35rem; /* Adjust the height slightly for smaller screens */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+    object-position: center; /* Ensure the image's top part is visible */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column; /* Ensure stacking continues */
+    align-items: left; 
+  }
+
+  .project-image {
+    width: 100%; /* Make the image fully responsive */
+    height: 25rem; /* Set height for horizontal layout */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    flex-direction: column;
+    align-items: center; 
+    padding: 0;
+    gap: 2rem;
+  }
+
+  .project-image {
+    width: 100%; /* Adjust image width */
+    height: 29.9375rem; /* Set fixed height for portrait */
+    aspect-ratio: 3/4; /* Maintain portrait aspect ratio */
+    object-fit: cover; /* Ensure the image doesn't stretch */
+  }
+}
+
+    
