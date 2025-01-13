@@ -1,7 +1,7 @@
 import "./Img.css";
-import TodoApp from "../../src/assets/todoappimg-min.webp";
-import HappyThoughtImg from "../../src/assets/happythoughtblue-min.webp";
-import FirstAidKit from "../../src/assets/Firstaidkit-min.webp";
+import TodoApp from "/assets/todoappimg-min.webp";
+import HappyThoughtImg from "/assets/happythoughtblue-min.webp";
+import FirstAidKit from "/assets/Firstaidkit-min.webp";
 
 const Img = () => {
   return (
