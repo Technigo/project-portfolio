@@ -3,6 +3,7 @@ import styles from "./ProjectContainer.module.css"
 
 export const ProjectContainer = ({ name, description, created_at, homepage, git_url, topics }) => {
   const imageLink = `https://raw.githubusercontent.com/vidalhuix/${name}/main/src/assets/Featured-image.jpg`
+  
 
   return (
     <div className={styles.project}>
