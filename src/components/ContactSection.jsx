@@ -1,4 +1,4 @@
-import profilePic from "../assets/profile_pic.jpg"
+import profilePic from "../assets/profile_pic.png"
 import githubIcon from "../assets/Icon-github.svg"
 import IconLinkedin from "../assets/Icon-linkedin.svg"
 import IconStackoverflow from "../assets/Icon-stackoverflow.svg"
@@ -10,11 +10,11 @@ export const ContactSection = () => {
     <h1 className="section-title">Let's talk</h1>
     <img className={styles.profilepic} src={profilePic} width="150" alt="profile-picuture"/>
     <h2>Arnau Vidal</h2>
-    <h2>0708927033 Sweden</h2>
+    <h2>+46-708927033 Sweden</h2>
     <h2 className="long-word">arnauvidal@gmail.com</h2>
     <div className={styles.contactIcons}>
       <a href="https://github.com/vidalhuix" target="_blank"><img src={githubIcon} alt="github-icon"/></a>  
-      <a href="https://www.linkedin.com/in/arnau-vidal-i-huix-4266a940/" target="_blank"><img src={IconLinkedin} alt="icon linkedin" /></a>
+      <a href="https://www.linkedin.com/in/arnau-vidal-4266a940/" target="_blank"><img src={IconLinkedin} alt="icon linkedin" /></a>
       <a href="https://stackoverflowteams.com/c/technigo/users/604/?tab=profile" target="_blank"><img src={IconStackoverflow} alt="icon stackoverflow" /></a>
     </div>
   </div>
