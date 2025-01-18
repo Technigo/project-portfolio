@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 60px;
+      padding: 0px 48px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 390px) {
+    h2 {
+      font-size: 50px;
+      padding: 0;
+    }
+  }
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+img {
+  width: 357.97px;
+  height: 381.34px;
+  border-radius: 12px;
+}
+
+.images {
+  position: relative;
+  width: 100%;
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    gap: 0px;
+  }
+}
+
+.images img:nth-child(1) {
+  opacity: 0px;
+  transform: rotate(-6deg) translate(170px, 35px);
+}
+
+.images img:nth-child(2) {
+  transform: rotate(0deg);
+  left: 0;
+  opacity: 0px;
+  z-index: 1;
+  top: -0;
+}
+
+.images img:nth-child(3) {
+  opacity: 0px;
+  transform: rotate(6deg) translate(-170px, 35px);
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 156px;
+    height: 156px;
+  }
+  .images img:nth-child(1) {
+    transform: rotate(-6deg) translate(70px, 35px);
+  }
+
+  .images img:nth-child(2) {
+    left: 0;
+    z-index: 1;
+    top: 0;
+  }
+
+  .images img:nth-child(3) {
+    transform: rotate(6deg) translate(-70px, 35px);
+  }
+}
