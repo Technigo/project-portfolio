@@ -37,6 +37,14 @@ const SkillColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+
+  @media (max-width: 390px) {
+    align-items: flex-start;
+  }
 `;
 
 const skillsData = {

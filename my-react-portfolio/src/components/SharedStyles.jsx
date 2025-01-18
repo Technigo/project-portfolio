@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const SharedLayout = styled.div`
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  width: 1184px;
+  width: 100%;
   justify-content: space-between;
   margin: 0 auto;
   background-color: ${(props) => (props.dark ? "black" : "white")};
@@ -15,17 +16,23 @@ export const SharedLayout = styled.div`
     border-radius: 12px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
-    max-width: 768px;
-    padding: 0 24px;
     gap: 32px;
     box-sizing: border-box;
 
     > img {
       width: 100%;
-      height: auto;
+      height: 479px;
     }
+  }
+`;
+
+export const ProjectLayout = styled(SharedLayout)`
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    align-items: center;
   }
 `;

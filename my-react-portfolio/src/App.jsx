@@ -21,22 +21,38 @@ const SectionWrapper = styled.div`
   gap: ${(props) => (props.tight ? "64px" : "128px")};
   background-color: ${(props) => (props.dark ? "#000000" : "#ffffff")};
   color: ${(props) => (props.dark ? "#ffffff" : "#000000")};
-
+  padding: 64px 24px;
+  box-sizing: border-box;
   @media (max-width: 768px) {
     padding: 64px 24px;
     gap: 32px;
   }
 `;
 
+const ProjectLayout = styled(SectionWrapper)`
+  align-items: stretch;
+
+  @media (max-width: 768px) {
+    h2 {
+      padding: 0;
+    }
+  }
+`;
+
 const SkillsWrapper = styled(SectionWrapper)`
   @media (max-width: 768px) {
     padding: 0px;
-    align-items: flex-start;
-    margin-left: 24px;
-
+    align-items: center;
     h2 {
       font-size: 80px;
-      margin-left: 33%;
+    }
+  }
+
+  @media (max-width: 390px) {
+    align-items: flex-start;
+    margin-left: 24px;
+    h2 {
+      font-size: 60px;
     }
   }
 `;
@@ -53,7 +69,7 @@ const App = () => {
       <SectionWrapper dark tight>
         <Header />
       </SectionWrapper>
-      <SectionWrapper id="projects">
+      <ProjectLayout id="projects">
         <AnimatedSection>
           <h2>Featured Projects</h2>
         </AnimatedSection>
@@ -78,7 +94,7 @@ const App = () => {
             />
           </ButtonWrapper>
         </AnimatedSection>
-      </SectionWrapper>
+      </ProjectLayout>
       <SectionWrapper dark id="tech">
         <TextBlock
           title="Tech"

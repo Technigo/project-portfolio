@@ -12,11 +12,17 @@ const ProjectInfo = styled.div`
   align-items: flex-start;
   gap: 8px;
   margin-bottom: 24px;
+  box-sizing: border-box;
+  img {
+    height: 479px;
+  }
 
   @media (max-width: 768px) {
     width: 100%;
+    max-width: 100%;
     > img {
       width: 100%;
+      height: 479px;
     }
   }
 `;

@@ -21,4 +21,9 @@ export const Pill = styled.div`
     margin-top: 8px;
     padding: 0px;
   }
+
+  @media (max-width: 390px) {
+    width: 65px;
+    font-size: 11px;
+  }
 `;
