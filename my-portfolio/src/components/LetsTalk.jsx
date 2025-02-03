@@ -11,7 +11,7 @@ const LetsTalk = () => {
 
   return (
     <div className="lets-talk-container">
-      <h2>Let's Talk</h2>
+      <h2>Let"s Talk</h2>
       <div className="lets-talk-text">
         <div className="profile-picture-container">
           <img src={profilePicture} alt="Picture of Elina" className="profile-picture" loading="lazy" />
@@ -36,27 +36,6 @@ const LetsTalk = () => {
           className="logo" 
           onClick={() => handleLinkClick("https://github.com/ElinaEH")} 
         />
-
-         {/* Stack overflow, Twitter and instagram removed add later on */}
-        {/* <img 
-          src={StackIcon} 
-          alt="Stack Overflow Logo" 
-          className="logo" 
-          onClick={() => handleLinkClick("https://stackoverflow.com")} 
-        /> */}
-
-        {/* <img 
-          src={TwitterIcon} 
-          alt="Twitter Logo" 
-          className="logo" 
-          onClick={() => handleLinkClick("https://twitter.com")} 
-        /> */}
-        {/* <img 
-          src={InstagramIcon} 
-          alt="Instagram Logo" 
-          className="logo" 
-          onClick={() => handleLinkClick("https://instagram.com")} 
-        /> */}
       </div>
       <footer>© 2024 Elina Eriksson Hult</footer>
     </div>

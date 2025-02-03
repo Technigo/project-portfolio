@@ -6,7 +6,7 @@ const Skills = () => {
       <h2>Skills</h2>
       <div className="skills-grid">
         <div className="skills-category">
-          <h3 className="titel-container">Code</h3>
+          <h3 className="title-container">Code</h3>
           <ul className="skills-list code-skills">
             <li>HTML5</li>
             <li>CSS3</li>
@@ -18,7 +18,7 @@ const Skills = () => {
           </ul>
         </div>
         <div className="skills-category">
-          <h3>Toolbox</h3>
+          <h3 className="title-container">Toolbox</h3>
           <ul className="skills-list">
             <li>Postman</li>
             <li>MongoDB Atlas</li>
@@ -26,14 +26,8 @@ const Skills = () => {
             <li>Slack</li>
           </ul>
         </div>
-      <div className="skills-category">
-          <h3>Upcoming</h3>
-            <ul className="skills-list">
-              <li></li>
-            </ul>
-        </div> 
         <div className="skills-category">
-          <h3>More</h3>
+          <h3 className="title-container">More</h3>
             <ul className="skills-list">
               <li>Branding</li>
               <li>Strategy</li>
