@@ -1,0 +1,104 @@
+h2 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.lets-talk-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 580px;
+  height: 475px;
+  margin: 0 auto;
+  padding-top: 128px;
+  margin-bottom: 100px;
+  color: var(--primary-color);
+}
+
+.lets-talk-box {
+  color: #000;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+}
+
+.profile-picture {
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+}
+
+.profile-picture-container {
+  padding-bottom: 56px; 
+  padding-top: 56px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  cursor: pointer; 
+  transition: transform 0.2s, filter 0.2s;
+  margin-right: 32px;
+}
+
+.logo-container {
+  padding-bottom: 32px;
+}
+
+.logo:last-child {
+  margin-right: 0; 
+}
+
+.logo:hover {
+  transform: scale(1.2); 
+}
+
+footer {
+padding-bottom: 16px;
+padding-top: 24px;
+font-weight: 400;
+font-size: 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 48px;
+  }
+  
+  .lets-talk-container {
+    max-width: 500px;
+    padding: 80px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 32px;
+  }
+  
+  .lets-talk-container {
+    max-width: 300px;
+    padding: 50px;
+    margin-bottom: 30px;
+  }
+
+  .lets-talk-box {
+    font-size: 16px;
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }  
+
+  footer {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}

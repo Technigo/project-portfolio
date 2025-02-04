@@ -1,0 +1,125 @@
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.featured-projects h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: black;
+}
+
+.projects-grid {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.project-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.project-wrapper:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.load-more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.load-more-button:hover {
+  background-color: #f0f0f0;
+}
+
+.button-icon {
+  margin-right: 0.5rem; 
+}
+
+/* Media Queries */
+@media screen and (max-width: 860px) {
+  .featured-projects {
+    padding: 32px 24px;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+  }
+
+  .featured-projects h2 {
+    font-size: 32px;
+    margin: 24px 0 48px 0;
+  }
+
+  .projects-grid {
+    padding: 0 16px;
+  }
+
+  .project-wrapper {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+
+  .project-wrapper:nth-child(even) {
+    justify-content: center;
+  }
+
+  .project-wrapper:last-child {
+    margin-bottom: 24px;
+  }
+
+  .load-more-button {
+    position: relative;
+    z-index: 10;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 24px auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .featured-projects {
+    padding: 24px 16px;
+  }
+
+  .featured-projects h2 {
+    font-size: 28px;
+    margin: 16px 0 32px 0;
+  }
+
+  .projects-grid {
+    padding: 0 8px;
+  }
+
+  .project-wrapper {
+    margin-bottom: 32px;
+  }
+
+  .load-more-button {
+    width: 100%;
+    max-width: 280px;
+    margin: 16px auto;
+  }
+}

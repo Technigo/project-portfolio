@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 64px 0px;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: 100vw; /* Full viewport width */
+  min-width: 100%;
+  height: 425px;
+}
+
+.image-grey, .image-pink, .image-red {
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.image-grey {
+  width: 357.97px;
+  height: 381.335px;
+  transform: rotate(-4.695deg);
+}
+
+.image-pink {
+  width: 358px;
+  height: 382px;
+  position: absolute;
+  z-index: 1;
+}
+
+.image-red {
+  width: 357.97px;
+  height: 381.335px;
+  transform: rotate(4.695deg);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .image-grey, .image-pink, .image-red {
+    width: 250px;
+    height: 267px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-grey, .image-pink, .image-red {
+    width: 200px;
+    height: 214px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-section {
+    max-height: 200px;
+    padding: 2px;
+  }
+
+  .image-grey, .image-pink, .image-red {
+    width: 100px;
+    height: 107px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .image-section {
+    height: 250px;
+  }
+
+  .image-grey, .image-pink, .image-red {
+    width: 120px;
+    height: 120px;
+  }
+}
