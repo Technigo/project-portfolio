@@ -1,45 +1,216 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+}
+
+/* Css for the Introduction component  */
+
+.intro {
+  display: grid;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
+  grid-template-areas:
+    "avatar"
+    "name"
+    "role"
+    "bio"
+    "arrow";
+  padding: 16px;
+}
+
+.name {
+  grid-area: name;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+.role {
+  grid-area: role;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #0b24f5;
+  margin: 0;
+  line-height: 1;
+  margin-bottom: 32px;
+}
+
+.avatar {
+  border-radius: 50%;
+  grid-area: avatar;
+  max-width: 164px;
+  justify-self: center;
+  margin-bottom: 32px;
+}
+
+.bio {
+  grid-area: bio;
+  font-family: Hind, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.2px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.arrow {
+  grid-area: arrow;
+  justify-self: center;
+}
+
+/* Css for the Tech component */
+
+.tech {
+  background: #0b24f5;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 32px;
+  padding: 128px 0;
+}
+
+.tech h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+  line-height: 66px;
+}
+
+.tech p {
+  font-family: Hind, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.2px;
+  margin: 0;
+  padding: 16px;
+  text-shadow: 1px 2px 2px #00000040;
+  max-width: 500px;
+}
+
+
+/* Css for Skills component */
+
+.skills {
+  background-color: hsl(234, 92%, 50%);
+  /* Blue background */
+  color: white;
+  padding: 64px 0;
+  /* Top and bottom padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  margin: 0 0 32px;
+  /* Bottom margin for spacing */
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.skillsCategories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns */
+  gap: 32px;
+  /* Spacing between grid items */
+  max-width: 1200px;
+  /* Limit the total width */
+  width: 100%;
+  text-align: center;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.skillsCategory h3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+  padding: 8px 16px;
+  /* Padding inside the heading */
+  border-radius: 8px;
+  /* Rounded corners */
+  display: inline-block;
+  margin-bottom: 16px;
+  /* Spacing between heading and list */
 }
 
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.skillsCategory:nth-child(1) h3 {
+  background: #eb5577;
+  /* Red for "Code" */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.skillsCategory:nth-child(2) h3 {
+  background: #2483e0;
+  /* Blue for "Toolbox" */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.skillsCategory:nth-child(3) h3 {
+  background: #6db486;
+  /* Green for "Upcoming" */
 }
 
-.card {
-  padding: 2em;
+.skillsCategory:nth-child(4) h3 {
+  background: #ffde30;
+  /* Yellow for "More" */
+  color: #0b24f5;
+  /* Dark blue text */
 }
 
-.read-the-docs {
-  color: #888;
+.skills ul {
+  list-style-type: none;
+  /* Remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  font-family: Hind, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.82px;
+}
+
+
+/* Css for the Marquee text */
+
+.marquee {
+  background: #ff4575;
+  color: white;
+  font-family: Montserrat;
+  font-size: 26.04px;
+  font-weight: 600;
+  line-height: 37.87px;
+  text-align: left;
+  padding: 16px;
+}
+
+.marqueeText {
+  margin-right: 10px;
 }

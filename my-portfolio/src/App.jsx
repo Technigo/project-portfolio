@@ -1,10 +1,11 @@
 import React from "react";
-import { Introduction } from "./Components/Introduction/Introduction";
-import { Tech } from "./Components/Tech/Tech";
-import { Skills } from "./Components/Skills/Skills";
-import { LetsTalk } from "./Components/LetsTalk/LetsTalk";
-import { Footer } from "./Components/Footer/Footer";
-import { Projects } from "./Components/Projects/Projects";
+import "./App.css";
+
+import { Introduction } from "./Components/Introduction";
+import { Tech } from "./Components/Tech";
+import { Skills } from "./Components/Skills";
+import { Marquee } from "./Components/Marquee";
+
 
 
 
@@ -15,9 +16,8 @@ function App() {
       <Introduction />
       <Tech />
       <Skills />
-      <Projects />
-      <LetsTalk />
-      <Footer />
+      <Marquee />
+
 
     </div>
   );
