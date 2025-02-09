@@ -4,7 +4,7 @@ import arrow from "../assets/arrow.svg";
 export const Introduction = () => {
     return (
         <section className="intro">
-            <h1 className="name">Sherry Isola-Gbenla</h1>
+            <h1 className="name"> Hi, I'm Sherry Isola</h1>
             <p className="role">Frontend Developer</p>
             <img className="avatar" src="/sherry.jpg" alt="picture of Sherry Isola" />
             <p className="bio">
