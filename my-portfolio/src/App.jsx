@@ -34,7 +34,51 @@ function App() {
         ]}
       />
 
-      <MyWords />
+      <div className="waves" />
+
+
+      <MyWords
+        posts={[
+          {
+            title: "How to stop being scared: Learning to love code",
+            date: "2025-02-09",
+            image: theWeatherApp,
+            alt: "picture of the weather app project",
+            description:
+              "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
+            url: "",
+          },
+          {
+            title: "How to stop being scared: Learning to love code",
+            date: "2025-02-09",
+            image: theWeatherApp,
+            alt: "picture of the weather app project",
+            description:
+              "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
+            url: "",
+          },
+          {
+            title: "How to stop being scared: Learning to love code",
+            date: "2025-02-09",
+            image: theWeatherApp,
+            alt: "picture of the weather app project",
+            description:
+              "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
+            url: "",
+          },
+          {
+            title: "How to stop being scared: Learning to love code",
+            date: "2025-02-09",
+            image: theWeatherApp,
+            alt: "picture of the weather app project",
+            description:
+              "Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to creative writing in that the author architecting a story must use an assortment of tools and components (i.e., content) in a way to satisfy a particular objective.",
+            url: "",
+          },
+        ]}
+      />
+
+
 
       <Skills />
       <LetsTalk />

@@ -363,3 +363,123 @@ body {
 .projectDemo {}
 
 .projectCode {}
+
+
+/* Css for MyWords Component */
+
+
+/* copied the image with the waves from the figma file, and made at to an repeated background  img.  */
+.waves {
+  max-width: 100%;
+  height: 13px;
+  background-image: url(/waves.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: -6px;
+}
+
+.myWords {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 128px 16px;
+  background-color: #ffecea;
+}
+
+.myWords h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+  color: #ff4575;
+  line-height: 66px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Limit the number of columns to 2 for larger screens */
+@media (min-width: 768px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.post {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.postImage {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 16px;
+  border-bottom-width: 16px;
+  border-style: solid;
+  border-color: #ff4575;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.postDate {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background: black;
+  color: white;
+  padding: 4px 8px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.postTitle {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.postDescription {
+  font-family: Hind, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+}
+
+.postLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 32px;
+  text-decoration: none;
+  color: #333333;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.postLink:hover {
+  background-color: #f8f8f8;
+  transform: scale(1.05);
+}
