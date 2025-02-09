@@ -261,13 +261,20 @@ body {
 .postImage {
   border-top-width: 0px;
   border-right-width: 0px;
-  border-left-width: 16px;
-  border-bottom-width: 16px;
+  border-left-width: 10px;
+  /* Adjust border width if necessary */
+  border-bottom-width: 10px;
+  /* Adjust border width if necessary */
   border-style: solid;
   border-color: #ff4575;
-  grid-area: image;
   width: 100%;
+  height: auto;
+  aspect-ratio: 290 / 181;
+  /* Matches the aspect ratio of "Featured Projects" image */
+  object-fit: cover;
+  display: block;
 }
+
 
 .postDate {
   font-family: Montserrat;
