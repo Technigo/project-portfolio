@@ -1,0 +1,43 @@
+/* Container styles */
+.scrolling-text-container {
+  --marquee-speed: 40s;
+  --direction: scroll-left;
+  background-color: #FF4575;
+  overflow: hidden;
+  height: 114px;
+  display: flex;
+  align-items: center;
+}
+
+/* Inner container styles */
+.scrolling-text-inner {
+  display: flex;
+  white-space: nowrap;
+}
+
+/* Text styles */
+.scrolling-text {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Apply the animation to the text items */
+.scrolling-text-inner>div {
+  animation: scroll-left var(--marquee-speed) linear infinite;
+}
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+
+  }
+
+  100% {
+    transform: translateX(-100%);
+
+  }
+}

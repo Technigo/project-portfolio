@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap');
+
+
+
+:root {
+  --blue: #0B24F5;
+  --midblue: #38419d;
+  --lightblue: #3887be;
+  --green: #52d3d8;
+}
+
+.tech-section {
+  display: flex;
+  /* width: 375px; */
+  padding: 128px 16px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+}
+
+.tech-title {
+  margin: 0;
+  color: white;
+  padding-bottom: 64px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px;
+  /* 117.857% */
+}
+
+.tech-description {
+  color: #FFF;
+  font-family: Hind;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tech-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 256px 64px;
+    background-color: var(--blue);
+
+  }
+
+  .tech-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 64px;
+    color: #fff;
+
+  }
+
+  .tech-description {
+    font-family: Hind, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto;
+    color: #fff;
+
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .tech-section {
+    grid-column: 2 / -2;
+    display: grid;
+    align-items: center;
+    text-align: left;
+    padding: 332px 161px 200px 161px;
+
+  }
+
+
+
+  .tech-title {
+    font-family: Montserrat;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* padding-left: 200px; */
+    color: #fff;
+
+  }
+
+  .tech-description {
+
+    font-family: Hind, sans-serif;
+    color: #FFF;
+    font-family: Hind;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px;
+    padding: 0px 0px 0px 124px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tech-box {
+
+
+    grid-column: 2 / -2;
+    display: flex;
+    align-items: top;
+    text-align: left;
+    margin: 100px 16px;
+  }
+}
